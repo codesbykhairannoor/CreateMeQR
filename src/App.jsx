@@ -199,10 +199,8 @@ function App() {
       <nav className="fixed top-0 w-full bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-zinc-800/50 z-50 transition-colors">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <QrCode className="text-white w-5 h-5" />
-            </div>
-            <span className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight">QRGenerator</span>
+            <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-8 h-8 rounded-lg object-contain" />
+            <span className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight">CreateMy-QR</span>
           </div>
           
           <div className="flex items-center gap-2">
