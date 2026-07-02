@@ -11,15 +11,15 @@ import EmbedWidgetModal from './components/EmbedWidgetModal';
 import './i18n';
 
 const PSEO_ROUTES = {
-  '/': { type: 'url', title: 'Editable QR Code Generator | Custom QR Code With Logo Free', h1: 'Create Custom QR Codes for Free' },
-  '/wifi-qr-code-generator': { type: 'wifi', title: 'Free WiFi QR Code Generator | WPA/WEP Login', h1: 'Create WiFi QR Code' },
-  '/vcard-qr-code-maker': { type: 'vcard', title: 'vCard Plus QR Code Maker | Digital Business Card', h1: 'Generate vCard QR Code' },
-  '/text-qr-code-generator': { type: 'text', title: 'Free Text QR Code Generator', h1: 'Create Text QR Code' },
-  '/email-qr-code-generator': { type: 'email', title: 'Email QR Code Generator | Mailto Link', h1: 'Create Email QR Code' },
-  '/sms-qr-code-generator': { type: 'sms', title: 'SMS Message QR Code Generator', h1: 'Create SMS QR Code' },
-  '/phone-qr-code-generator': { type: 'phone', title: 'Phone Call QR Code Generator', h1: 'Create Phone QR Code' },
-  '/event-qr-code-generator': { type: 'event', title: 'Event vCalendar QR Code Generator', h1: 'Create Event QR Code' },
-  '/google-maps-qr-code': { type: 'location', title: 'Google Maps Location QR Code Generator', h1: 'Create Maps QR Code' },
+  '/': 'url',
+  '/wifi-qr-code-generator': 'wifi',
+  '/vcard-qr-code-maker': 'vcard',
+  '/text-qr-code-generator': 'text',
+  '/email-qr-code-generator': 'email',
+  '/sms-qr-code-generator': 'sms',
+  '/phone-qr-code-generator': 'phone',
+  '/event-qr-code-generator': 'event',
+  '/google-maps-qr-code': 'location',
 };
 
 const LANGS = [
@@ -51,10 +51,22 @@ function App() {
   }
   if (slug === '') slug = '/';
 
-  const currentSeo = PSEO_ROUTES[slug] || PSEO_ROUTES['/'];
+  const currentType = PSEO_ROUTES[slug] || PSEO_ROUTES['/'];
+  const typeName = t(`types.${currentType}`);
+  
+  // Super Partial Lang: Fully localized SEO texts!
+  const currentSeo = currentType === 'url' 
+    ? {
+        title: t('appTitle'),
+        h1: t('appTitle'),
+      }
+    : {
+        title: `${typeName} QR - ${t('appTitle')}`,
+        h1: `${typeName} QR`,
+      };
 
   const [darkMode, setDarkMode] = useState(false);
-  const [qrType, setQrType] = useState(currentSeo.type);
+  const [qrType, setQrType] = useState(currentType);
   const [showEmbedModal, setShowEmbedModal] = useState(false);
   
   const [qrData, setQrData] = useState({});
@@ -73,9 +85,9 @@ function App() {
 
   // Sync route with qrType state
   useEffect(() => {
-    const routeInfo = PSEO_ROUTES[slug];
-    if (routeInfo && routeInfo.type !== qrType) {
-      setQrType(routeInfo.type);
+    const routeType = PSEO_ROUTES[slug];
+    if (routeType && routeType !== qrType) {
+      setQrType(routeType);
     }
   }, [slug]);
 
@@ -90,7 +102,7 @@ function App() {
   // Sync qrType state to route
   const handleTypeChangeRoute = (newType) => {
     setQrType(newType);
-    const entry = Object.entries(PSEO_ROUTES).find(([_, val]) => val.type === newType);
+    const entry = Object.entries(PSEO_ROUTES).find(([_, val]) => val === newType);
     if (entry && entry[0] !== slug) {
       const newPrefix = currentLangCode === 'en' ? '' : `/${currentLangCode}`;
       navigate(`${newPrefix}${entry[0] === '/' ? '' : entry[0]}`, { replace: true });
@@ -142,7 +154,7 @@ function App() {
               "step": [
                 {
                   "@type": "HowToStep",
-                  "text": "Select the ${currentSeo.type} data type."
+                  "text": "Select the ${currentType} data type."
                 },
                 {
                   "@type": "HowToStep",
