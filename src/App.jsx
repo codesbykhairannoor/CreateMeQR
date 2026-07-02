@@ -139,10 +139,10 @@ function App() {
         <meta name="description" content={`Generate ${currentSeo.h1} instantly. Free editable QR code generator with no watermark, custom colors, and SVG download.`} />
         {/* Bidirectional Hreflang Matrix for 10 Languages */}
         {LANGS.map(lang => {
-          const href = `https://qrgenerator.id${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
+          const href = `https://cratemy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
           return <link key={lang.code} rel="alternate" hreflang={lang.code} href={href} />;
         })}
-        <link rel="alternate" hreflang="x-default" href={`https://qrgenerator.id${slug === '/' ? '' : slug}`} />
+        <link rel="alternate" hreflang="x-default" href={`https://cratemy-qr.com${slug === '/' ? '' : slug}`} />
         
         <script type="application/ld+json">
           {`
@@ -181,12 +181,12 @@ function App() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://qrgenerator.id/"
+                "item": "https://cratemy-qr.com/"
               },{
                 "@type": "ListItem",
                 "position": 2,
                 "name": "${currentSeo.h1}",
-                "item": "https://qrgenerator.id${location.pathname}"
+                "item": "https://cratemy-qr.com${location.pathname}"
               }]
             }
           `}
@@ -383,7 +383,7 @@ function App() {
       <footer className="border-t border-zinc-200 dark:border-zinc-800 py-8">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-zinc-500 dark:text-zinc-500 text-sm">
-            © {new Date().getFullYear()} QRGenerator.id. Free Client-Side QR Code Generator.
+            © {new Date().getFullYear()} CreateMy-QR. Free Client-Side QR Code Generator.
           </p>
           <div className="flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
             <button onClick={() => setShowEmbedModal(true)} className="flex items-center gap-2 hover:text-blue-600 transition-colors">

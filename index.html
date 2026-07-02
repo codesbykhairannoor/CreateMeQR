@@ -9,10 +9,20 @@
     <!-- Security Headers (Zero Trust Baseline) -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:;" />
 
-    <!-- Core Web Vitals Preconnects -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L66WVGXRQQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-L66WVGXRQQ');
+    </script>
 
     <!-- PWA Manifest -->
     <link rel="manifest" href="/manifest.json" />
@@ -24,31 +34,22 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://qrgenerator.id/" />
+    <meta property="og:url" content="https://cratemy-qr.com/" />
     <meta property="og:title" content="Editable QR Code Generator | Custom QR Code With Logo Free" />
     <meta property="og:description" content="Create a custom QR code with logo for free. Best editable QR code generator with no watermark for WiFi, vCard, Google Reviews, and URL." />
-    <meta property="og:image" content="https://qrgenerator.id/og-image.png" />
-    <meta property="og:site_name" content="QRGenerator.id" />
+    <meta property="og:image" content="https://cratemy-qr.com/og-image.png" />
+    <meta property="og:site_name" content="CreateMy-QR" />
     <meta property="og:locale" content="en_US" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://qrgenerator.id/" />
+    <meta property="twitter:url" content="https://cratemy-qr.com/" />
     <meta property="twitter:title" content="Editable QR Code Generator | Custom QR Code With Logo Free" />
     <meta property="twitter:description" content="Create a custom QR code with logo for free. Best editable QR code generator with no watermark for WiFi, vCard, Google Reviews, and URL." />
-    <meta property="twitter:image" content="https://qrgenerator.id/og-image.png" />
+    <meta property="twitter:image" content="https://cratemy-qr.com/og-image.png" />
     
-    <!-- Hreflang tags for International SEO (Strict ISO 639-1 & Edge SEO Fallback) -->
-    <link rel="canonical" href="https://qrgenerator.id/" />
-    <link rel="alternate" hreflang="x-default" href="https://qrgenerator.id/" />
-    <link rel="alternate" hreflang="en" href="https://qrgenerator.id/" />
-    <link rel="alternate" hreflang="id" href="https://qrgenerator.id/?lng=id" />
-    <link rel="alternate" hreflang="es" href="https://qrgenerator.id/?lng=es" />
-    <link rel="alternate" hreflang="fr" href="https://qrgenerator.id/?lng=fr" />
-    <link rel="alternate" hreflang="de" href="https://qrgenerator.id/?lng=de" />
-    <link rel="alternate" hreflang="pt" href="https://qrgenerator.id/?lng=pt" />
-    <link rel="alternate" hreflang="zh" href="https://qrgenerator.id/?lng=zh" />
-    <link rel="alternate" hreflang="ja" href="https://qrgenerator.id/?lng=ja" />
+    <!-- Canonical Tag (Dynamic hreflang is handled by React Helmet) -->
+    <link rel="canonical" href="https://cratemy-qr.com/" />
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -57,8 +58,8 @@
       "@graph": [
         {
           "@type": "WebApplication",
-          "name": "QRGenerator.id",
-          "url": "https://qrgenerator.id/",
+          "name": "CreateMy-QR",
+          "url": "https://cratemy-qr.com/",
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "All",
           "offers": {
@@ -73,7 +74,7 @@
           "name": "CreateMeQR - Editable QR Code Generator",
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "Web Browser, Any",
-          "url": "https://qrgenerator.id",
+          "url": "https://cratemy-qr.com",
           "offers": {
             "@type": "Offer",
             "price": "0",

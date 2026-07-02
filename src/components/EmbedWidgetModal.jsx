@@ -5,7 +5,7 @@ import { useState } from 'react';
 export default function EmbedWidgetModal({ onClose }) {
   const [copied, setCopied] = useState(false);
 
-  const embedCode = `<iframe src="https://qrgenerator.id" width="100%" height="800" frameborder="0" scrolling="no" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></iframe>\n<div style="text-align: center; font-size: 11px; margin-top: 8px;">Powered by <a href="https://qrgenerator.id" target="_blank" style="color: #2563eb; text-decoration: none;">CreateMeQR Generator</a></div>`;
+  const embedCode = `<iframe src="https://cratemy-qr.com" width="100%" height="800" frameborder="0" scrolling="no" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></iframe>\n<div style="text-align: center; font-size: 11px; margin-top: 8px;">Powered by <a href="https://cratemy-qr.com" target="_blank" style="color: #2563eb; text-decoration: none;">CreateMy-QR Generator</a></div>`;
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(embedCode);
