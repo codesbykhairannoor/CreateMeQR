@@ -1,17 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { QrCode, Globe, Moon, Sun, Lock, Palette, Zap } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import { QrCode, Globe, Moon, Sun, Lock, Palette, Zap, Code2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import InputForm from './components/InputForm';
 import CustomizationPanel from './components/CustomizationPanel';
 import Preview from './components/Preview';
+import EmbedWidgetModal from './components/EmbedWidgetModal';
 import './i18n';
+
+const PSEO_ROUTES = {
+  '/': { type: 'url', title: 'Editable QR Code Generator | Custom QR Code With Logo Free', h1: 'Create Custom QR Codes for Free' },
+  '/wifi-qr-code-generator': { type: 'wifi', title: 'Free WiFi QR Code Generator | WPA/WEP Login', h1: 'Create WiFi QR Code' },
+  '/vcard-qr-code-maker': { type: 'vcard', title: 'vCard Plus QR Code Maker | Digital Business Card', h1: 'Generate vCard QR Code' },
+  '/text-qr-code-generator': { type: 'text', title: 'Free Text QR Code Generator', h1: 'Create Text QR Code' },
+  '/email-qr-code-generator': { type: 'email', title: 'Email QR Code Generator | Mailto Link', h1: 'Create Email QR Code' },
+  '/sms-qr-code-generator': { type: 'sms', title: 'SMS Message QR Code Generator', h1: 'Create SMS QR Code' },
+  '/phone-qr-code-generator': { type: 'phone', title: 'Phone Call QR Code Generator', h1: 'Create Phone QR Code' },
+  '/event-qr-code-generator': { type: 'event', title: 'Event vCalendar QR Code Generator', h1: 'Create Event QR Code' },
+  '/google-maps-qr-code': { type: 'location', title: 'Google Maps Location QR Code Generator', h1: 'Create Maps QR Code' },
+};
 
 function App() {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
+  const currentSeo = PSEO_ROUTES[location.pathname] || PSEO_ROUTES['/'];
+
   const [darkMode, setDarkMode] = useState(false);
+  const [qrType, setQrType] = useState(currentSeo.type);
+  const [showEmbedModal, setShowEmbedModal] = useState(false);
   
-  const [qrType, setQrType] = useState('url');
   const [qrData, setQrData] = useState({});
   const [hasGenerated, setHasGenerated] = useState(false);
   const [activeTab, setActiveTab] = useState('data');
@@ -25,6 +45,23 @@ function App() {
     cornersDotOptions: { type: 'square', color: '#000000' },
     qrOptions: { errorCorrectionLevel: 'Q' }
   });
+
+  // Sync route with qrType state
+  useEffect(() => {
+    const routeInfo = PSEO_ROUTES[location.pathname];
+    if (routeInfo && routeInfo.type !== qrType) {
+      setQrType(routeInfo.type);
+    }
+  }, [location.pathname]);
+
+  // Sync qrType state to route
+  const handleTypeChangeRoute = (newType) => {
+    setQrType(newType);
+    const entry = Object.entries(PSEO_ROUTES).find(([_, val]) => val.type === newType);
+    if (entry && entry[0] !== location.pathname) {
+      navigate(entry[0], { replace: true });
+    }
+  };
 
   useEffect(() => {
     // Check initial system preference or localStorage for theme
@@ -58,6 +95,61 @@ function App() {
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-300 font-sans selection:bg-blue-500/30">
+      <Helmet>
+        <title>{currentSeo.title}</title>
+        <meta name="title" content={currentSeo.title} />
+        <meta name="description" content={`Generate ${currentSeo.h1} instantly. Free editable QR code generator with no watermark, custom colors, and SVG download.`} />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "HowTo",
+              "name": "How to ${currentSeo.h1}",
+              "description": "Step by step guide to create a ${currentSeo.h1} for free.",
+              "step": [
+                {
+                  "@type": "HowToStep",
+                  "text": "Select the ${currentSeo.type} data type."
+                },
+                {
+                  "@type": "HowToStep",
+                  "text": "Enter your information into the input fields."
+                },
+                {
+                  "@type": "HowToStep",
+                  "text": "Customize the colors, logo, and design."
+                },
+                {
+                  "@type": "HowToStep",
+                  "text": "Download the high-resolution vector SVG or PNG."
+                }
+              ]
+            }
+          `}
+        </script>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://qrgenerator.id/"
+              },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "${currentSeo.h1}",
+                "item": "https://qrgenerator.id${location.pathname}"
+              }]
+            }
+          `}
+        </script>
+      </Helmet>
+      
+      {showEmbedModal && <EmbedWidgetModal onClose={() => setShowEmbedModal(false)} />}
+
       {/* Navbar */}
       <nav className="fixed top-0 w-full bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-zinc-800/50 z-50 transition-colors">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -115,8 +207,11 @@ function App() {
             animate={{ opacity: 1, y: 0 }} 
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
+            <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold text-sm mb-6 border border-blue-200 dark:border-blue-800/50">
+              No 14-Day Trials. No Ads. 100% Free Forever.
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 dark:text-white tracking-tighter mb-4 leading-[1.1]">
-              {t('appTitle')}
+              {currentSeo.h1}
             </h1>
             <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-8">
               {t('tagline')}
@@ -173,7 +268,7 @@ function App() {
                   {activeTab === 'data' ? (
                     <InputForm 
                       qrType={qrType} 
-                      setQrType={setQrType} 
+                      setQrType={handleTypeChangeRoute} 
                       qrData={qrData} 
                       setQrData={setQrData}
                       hasGenerated={hasGenerated}
@@ -246,6 +341,9 @@ function App() {
             © {new Date().getFullYear()} QRGenerator.id. Free Client-Side QR Code Generator.
           </p>
           <div className="flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+            <button onClick={() => setShowEmbedModal(true)} className="flex items-center gap-2 hover:text-blue-600 transition-colors">
+              <Code2 className="w-4 h-4" /> Embed Widget
+            </button>
             <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('footer.privacy')}</a>
             <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('footer.terms')}</a>
           </div>
