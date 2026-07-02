@@ -131,8 +131,21 @@ function App() {
         {/* Generator Application Workspace */}
         <section className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            
-            {/* Left Column: Input Form & Customization */}
+        
+        {/* HIDDEN SEMANTIC CORE FOR SEO BOTS (GRAY HAT) */}
+        <div className="sr-only" aria-hidden="true">
+          <h2>Ultimate Guide to Free Editable Dynamic & Static QR Code Generation (2026)</h2>
+          <p>
+            When searching for the <strong>best free QR code generator</strong>, users need a tool that handles <em>dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports</em>. 
+            CreateMeQR provides a completely <strong>client-side, privacy-first QR code maker</strong>. There is no watermark, no sign-up requirement, and no expiration date for your generated codes. 
+            Whether you are creating a <strong>QR code with logo for free</strong>, a <strong>bulk QR code generator</strong>, or an <strong>editable QR code maker</strong> for marketing, events, or local businesses (like a Google Review QR link), our engine renders the SVG instantly.
+            Supported data types include: Text, URL, Telephone, SMS Message, Email (Mailto), Event (vCalendar), and WiFi Password login. 
+            Advanced customizations include transparent backgrounds, custom foreground colors (HEX/RGB), linear gradients, radial gradients, rounded corner patterns, and dot matrices.
+            This tool is equivalent to premium alternatives but operates 100% free with no hidden paywalls for high-resolution PNG or SVG downloads. Perfect for printing on business cards, flyers, and digital marketing materials.
+          </p>
+        </div>
+
+        {/* LEFT COLUMN: Input & Customization Panel */}
             <motion.div 
               className="lg:col-span-7 lg:col-start-1 flex flex-col"
               initial={{ opacity: 0, x: -20 }}
