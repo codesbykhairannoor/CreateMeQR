@@ -211,6 +211,58 @@ const resources = {
       "preview": { "title": "QRコードプレビュー", "download": "ダウンロード", "scanTest": "スキャンしてテスト" },
       "footer": { "privacy": "プライバシーポリシー", "terms": "利用規約" }
     }
+  },
+  hi: {
+    translation: {
+      "appTitle": "मुफ़्त क्यूआर कोड जनरेटर",
+      "tagline": "लोगो और रंग के साथ क्यूआर कोड बनाएं - कोई साइनअप नहीं, असीमित",
+      "types": {
+        "url": "यूआरएल", "wifi": "वाई-फाई", "vcard": "वी-कार्ड", "text": "टेक्स्ट",
+        "email": "ईमेल", "phone": "फ़ोन", "sms": "एसएमएस", "location": "स्थान", "event": "आयोजन"
+      },
+      "form": {
+        "enterUrl": "अपनी वेबसाइट का यूआरएल दर्ज करें", "networkName": "नेटवर्क का नाम (SSID)", "password": "पासवर्ड",
+        "encryption": "एन्क्रिप्शन", "firstName": "पहला नाम", "lastName": "अंतिम नाम", "phone": "फ़ोन नंबर",
+        "email": "ईमेल पता", "textPlaceholder": "अपना टेक्स्ट यहां दर्ज करें", "emailTo": "को भेजें",
+        "emailSubject": "विषय", "emailBody": "संदेश का मुख्य भाग", "smsMessage": "एसएमएस संदेश",
+        "lat": "अक्षांश", "lng": "देशांतर", "eventTitle": "आयोजन का शीर्षक", "eventLocation": "आयोजन का स्थान",
+        "eventStart": "प्रारंभ समय", "eventEnd": "समाप्ति समय"
+      },
+      "customization": {
+        "colors": "रंग", "logo": "लोगो जोड़ें", "design": "डिज़ाइन पैटर्न", "foreground": "अग्रभूमि रंग",
+        "background": "पृष्ठभूमि रंग", "uploadLogo": "लोगो अपलोड करें", "removeLogo": "लोगो हटाएं",
+        "dotsStyle": "पैटर्न शैली", "cornersStyle": "आंख का आकार", "eyeColor": "आंख का रंग",
+        "gradient": "ग्रेडिएंट का उपयोग करें", "logoSize": "लोगो का आकार", "logoMargin": "लोगो मार्जिन"
+      },
+      "preview": { "title": "क्यूआर कोड पूर्वावलोकन", "download": "डाउनलोड", "scanTest": "परीक्षण के लिए स्कैन करें" },
+      "footer": { "privacy": "गोपनीयता नीति", "terms": "सेवा की शर्तें" }
+    }
+  },
+  ko: {
+    translation: {
+      "appTitle": "무료 QR 코드 생성기",
+      "tagline": "로고와 색상이 있는 QR 코드 만들기 - 가입 없음, 무제한",
+      "types": {
+        "url": "URL", "wifi": "와이파이", "vcard": "명함(vCard)", "text": "텍스트",
+        "email": "이메일", "phone": "전화", "sms": "문자", "location": "위치", "event": "이벤트"
+      },
+      "form": {
+        "enterUrl": "웹사이트 URL 입력", "networkName": "네트워크 이름(SSID)", "password": "비밀번호",
+        "encryption": "암호화", "firstName": "이름", "lastName": "성", "phone": "전화번호",
+        "email": "이메일 주소", "textPlaceholder": "여기에 텍스트 입력", "emailTo": "받는 사람",
+        "emailSubject": "제목", "emailBody": "메시지 본문", "smsMessage": "SMS 메시지",
+        "lat": "위도", "lng": "경도", "eventTitle": "이벤트 제목", "eventLocation": "이벤트 위치",
+        "eventStart": "시작 시간", "eventEnd": "종료 시간"
+      },
+      "customization": {
+        "colors": "색상", "logo": "로고 추가", "design": "디자인 패턴", "foreground": "전경색",
+        "background": "배경색", "uploadLogo": "로고 업로드", "removeLogo": "로고 제거",
+        "dotsStyle": "패턴 스타일", "cornersStyle": "눈 모양", "eyeColor": "눈 색상",
+        "gradient": "그라데이션 사용", "logoSize": "로고 크기", "logoMargin": "로고 여백"
+      },
+      "preview": { "title": "QR 코드 미리보기", "download": "다운로드", "scanTest": "스캔하여 테스트" },
+      "footer": { "privacy": "개인정보 보호정책", "terms": "서비스 약관" }
+    }
   }
 };
 

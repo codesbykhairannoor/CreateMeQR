@@ -22,11 +22,36 @@ const PSEO_ROUTES = {
   '/google-maps-qr-code': { type: 'location', title: 'Google Maps Location QR Code Generator', h1: 'Create Maps QR Code' },
 };
 
+const LANGS = [
+  { code: 'en', label: 'English' },
+  { code: 'id', label: 'Indonesia' },
+  { code: 'es', label: 'Español' },
+  { code: 'fr', label: 'Français' },
+  { code: 'de', label: 'Deutsch' },
+  { code: 'pt', label: 'Português' },
+  { code: 'zh', label: '中文' },
+  { code: 'ja', label: '日本語' },
+  { code: 'hi', label: 'हिन्दी' },
+  { code: 'ko', label: '한국어' }
+];
+
 function App() {
   const { t, i18n } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
-  const currentSeo = PSEO_ROUTES[location.pathname] || PSEO_ROUTES['/'];
+
+  // Super GEO: Parse language prefix from URL Route
+  const pathParts = location.pathname.split('/').filter(Boolean);
+  let currentLangCode = 'en';
+  let slug = location.pathname;
+
+  if (pathParts.length > 0 && LANGS.some(l => l.code === pathParts[0])) {
+    currentLangCode = pathParts[0];
+    slug = '/' + pathParts.slice(1).join('/');
+  }
+  if (slug === '') slug = '/';
+
+  const currentSeo = PSEO_ROUTES[slug] || PSEO_ROUTES['/'];
 
   const [darkMode, setDarkMode] = useState(false);
   const [qrType, setQrType] = useState(currentSeo.type);
@@ -48,18 +73,27 @@ function App() {
 
   // Sync route with qrType state
   useEffect(() => {
-    const routeInfo = PSEO_ROUTES[location.pathname];
+    const routeInfo = PSEO_ROUTES[slug];
     if (routeInfo && routeInfo.type !== qrType) {
       setQrType(routeInfo.type);
     }
-  }, [location.pathname]);
+  }, [slug]);
+
+  // Sync i18n language with route language prefix
+  useEffect(() => {
+    if (i18n.language !== currentLangCode) {
+      i18n.changeLanguage(currentLangCode);
+    }
+    document.documentElement.lang = currentLangCode;
+  }, [currentLangCode, i18n]);
 
   // Sync qrType state to route
   const handleTypeChangeRoute = (newType) => {
     setQrType(newType);
     const entry = Object.entries(PSEO_ROUTES).find(([_, val]) => val.type === newType);
-    if (entry && entry[0] !== location.pathname) {
-      navigate(entry[0], { replace: true });
+    if (entry && entry[0] !== slug) {
+      const newPrefix = currentLangCode === 'en' ? '' : `/${currentLangCode}`;
+      navigate(`${newPrefix}${entry[0] === '/' ? '' : entry[0]}`, { replace: true });
     }
   };
 
@@ -80,25 +114,24 @@ function App() {
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
     setShowLangMenu(false);
+    const newPrefix = lang === 'en' ? '' : `/${lang}`;
+    navigate(`${newPrefix}${slug === '/' ? '' : slug}`, { replace: true });
   };
-
-  const LANGS = [
-    { code: 'en', label: 'English' },
-    { code: 'id', label: 'Indonesia' },
-    { code: 'es', label: 'Español' },
-    { code: 'fr', label: 'Français' },
-    { code: 'de', label: 'Deutsch' },
-    { code: 'pt', label: 'Português' },
-    { code: 'zh', label: '中文' },
-    { code: 'ja', label: '日本語' }
-  ];
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-300 font-sans selection:bg-blue-500/30">
       <Helmet>
+        <html lang={currentLangCode} />
         <title>{currentSeo.title}</title>
         <meta name="title" content={currentSeo.title} />
         <meta name="description" content={`Generate ${currentSeo.h1} instantly. Free editable QR code generator with no watermark, custom colors, and SVG download.`} />
+        {/* Bidirectional Hreflang Matrix for 10 Languages */}
+        {LANGS.map(lang => {
+          const href = `https://qrgenerator.id${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
+          return <link key={lang.code} rel="alternate" hreflang={lang.code} href={href} />;
+        })}
+        <link rel="alternate" hreflang="x-default" href={`https://qrgenerator.id${slug === '/' ? '' : slug}`} />
+        
         <script type="application/ld+json">
           {`
             {
