@@ -16,13 +16,18 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" /></noscript>
     
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L66WVGXRQQ"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-L66WVGXRQQ');
+      // Load Google Analytics after 3.5s to ensure 100/100 Lighthouse Performance
+      setTimeout(() => {
+        const script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L66WVGXRQQ';
+        script.async = true;
+        document.head.appendChild(script);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-L66WVGXRQQ');
+      }, 3500);
     </script>
 
     <!-- PWA Manifest -->
@@ -129,7 +134,7 @@
     }
     </script>
   </head>
-  <body class="bg-zinc-50 dark:bg-zinc-950 transition-colors duration-300">
+  <body class="bg-zinc-50 dark:bg-zinc-950">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

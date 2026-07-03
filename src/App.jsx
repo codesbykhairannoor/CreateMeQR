@@ -133,7 +133,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-300 font-sans selection:bg-blue-500/30">
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950  font-sans selection:bg-blue-500/30">
       <Helmet>
         <html lang={currentLangCode} />
         <title>{currentSeo.title}</title>
@@ -198,7 +198,7 @@ function App() {
       {showEmbedModal && <React.Suspense fallback={null}><EmbedWidgetModal onClose={() => setShowEmbedModal(false)} /></React.Suspense>}
 
       {/* Navbar */}
-      <nav className="fixed top-0 w-full bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-zinc-800/50 z-50 transition-colors">
+      <nav className="fixed top-0 w-full bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-zinc-800/50 z-50 ">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="/logoqr.webp" alt="CreateMy-QR Logo" className="w-8 h-8 rounded-lg object-contain" />
@@ -210,7 +210,7 @@ function App() {
               <button
                 onClick={() => setShowLangMenu(!showLangMenu)}
                 aria-label="Change Language"
-                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-900"
+                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400  rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-900"
               >
                 <Globe className="w-4 h-4" />
                 <span className="uppercase">{i18n.language?.split('-')[0] || 'EN'}</span>
@@ -224,7 +224,7 @@ function App() {
                       <button
                         key={lang.code}
                         onClick={() => changeLanguage(lang.code)}
-                        className={`w-full text-left px-4 py-2 text-sm transition-colors ${i18n.language?.startsWith(lang.code) ? 'text-blue-600 font-semibold bg-blue-50 dark:bg-blue-900/30' : 'text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}
+                        className={`w-full text-left px-4 py-2 text-sm  ${i18n.language?.startsWith(lang.code) ? 'text-blue-600 font-semibold bg-blue-50 dark:bg-blue-900/30' : 'text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}
                       >
                         {lang.label}
                       </button>
@@ -236,7 +236,7 @@ function App() {
             <button
               onClick={() => setDarkMode(!darkMode)}
               aria-label="Toggle Dark Mode"
-              className="p-2 rounded-full text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
+              className="p-2 rounded-full text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-900 "
             >
               {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
@@ -386,11 +386,11 @@ function App() {
             © {new Date().getFullYear()} CreateMy-QR. Free Client-Side QR Code Generator.
           </p>
           <div className="flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-300">
-            <button onClick={() => setShowEmbedModal(true)} className="flex items-center gap-2 hover:text-blue-600 transition-colors">
+            <button onClick={() => setShowEmbedModal(true)} className="flex items-center gap-2 hover:text-blue-600 ">
               <Code2 className="w-4 h-4" /> Embed Widget
             </button>
-            <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('footer.privacy')}</a>
-            <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">{t('footer.terms')}</a>
+            <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 ">{t('footer.privacy')}</a>
+            <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 ">{t('footer.terms')}</a>
           </div>
         </div>
       </footer>
