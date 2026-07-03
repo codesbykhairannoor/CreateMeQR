@@ -5,9 +5,9 @@ import { Helmet } from 'react-helmet-async';
 import { QrCode, Globe, Moon, Sun, Lock, Palette, Zap, Code2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import InputForm from './components/InputForm';
-import CustomizationPanel from './components/CustomizationPanel';
+const CustomizationPanel = React.lazy(() => import('./components/CustomizationPanel'));
 import Preview from './components/Preview';
-import EmbedWidgetModal from './components/EmbedWidgetModal';
+const EmbedWidgetModal = React.lazy(() => import('./components/EmbedWidgetModal'));
 import './i18n';
 
 const PSEO_ROUTES = {
@@ -195,7 +195,7 @@ function App() {
         </script>
       </Helmet>
       
-      {showEmbedModal && <EmbedWidgetModal onClose={() => setShowEmbedModal(false)} />}
+      {showEmbedModal && <React.Suspense fallback={null}><EmbedWidgetModal onClose={() => setShowEmbedModal(false)} /></React.Suspense>}
 
       {/* Navbar */}
       <nav className="fixed top-0 w-full bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-zinc-800/50 z-50 transition-colors">
@@ -302,7 +302,7 @@ function App() {
                 </button>
                 <button
                   onClick={() => hasGenerated && setActiveTab('design')}
-                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all ${activeTab === 'design' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-zinc-200'} ${!hasGenerated ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all ${activeTab === 'design' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-zinc-200'} ${!hasGenerated ? 'cursor-not-allowed opacity-90' : ''}`}
                 >
                   2. Customize Design
                 </button>
@@ -327,7 +327,7 @@ function App() {
                       transition={{ duration: 0.3 }}
                       className="p-2"
                     >
-                      <CustomizationPanel visuals={visuals} setVisuals={setVisuals} />
+                      <React.Suspense fallback={<div className="p-8 text-center text-zinc-600">Loading customization tools...</div>}><CustomizationPanel visuals={visuals} setVisuals={setVisuals} /></React.Suspense>
                     </motion.div>
                   )}
                 </div>
