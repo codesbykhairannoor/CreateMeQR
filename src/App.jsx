@@ -139,10 +139,10 @@ function App() {
         <meta name="description" content={`Generate ${currentSeo.h1} instantly. Free editable QR code generator with no watermark, custom colors, and SVG download.`} />
         {/* Bidirectional Hreflang Matrix for 10 Languages */}
         {LANGS.map(lang => {
-          const href = `https://cratemy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
+          const href = `https://www.cratemy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
           return <link key={lang.code} rel="alternate" hreflang={lang.code} href={href} />;
         })}
-        <link rel="alternate" hreflang="x-default" href={`https://cratemy-qr.com${slug === '/' ? '' : slug}`} />
+        <link rel="alternate" hreflang="x-default" href={`https://www.cratemy-qr.com${slug === '/' ? '' : slug}`} />
         
         <script type="application/ld+json">
           {`
@@ -181,12 +181,12 @@ function App() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://cratemy-qr.com/"
+                "item": "https://www.cratemy-qr.com/"
               },{
                 "@type": "ListItem",
                 "position": 2,
                 "name": "${currentSeo.h1}",
-                "item": "https://cratemy-qr.com${location.pathname}"
+                "item": "https://www.cratemy-qr.com${location.pathname}"
               }]
             }
           `}

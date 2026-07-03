@@ -27,7 +27,7 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
     let dataString = '';
 
     if (qrType === 'url') {
-      dataString = qrData.url || 'https://cratemy-qr.com';
+      dataString = qrData.url || 'https://www.cratemy-qr.com';
     } else if (qrType === 'wifi') {
       const ssid = qrData.ssid || '';
       const pass = qrData.password || '';
