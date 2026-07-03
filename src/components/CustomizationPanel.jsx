@@ -14,7 +14,7 @@ const Accordion = ({ title, icon: Icon, defaultOpen = false, children }) => {
           {Icon && <Icon className="w-5 h-5 mr-2 text-blue-600" />}
           {title}
         </div>
-        {isOpen ? <ChevronUp className="w-5 h-5 text-zinc-500" /> : <ChevronDown className="w-5 h-5 text-zinc-500" />}
+        {isOpen ? <ChevronUp className="w-5 h-5 text-zinc-600" /> : <ChevronDown className="w-5 h-5 text-zinc-600" />}
       </button>
       {isOpen && (
         <div className="p-4 border-t border-zinc-200 dark:border-zinc-700">
@@ -197,7 +197,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
                 type="file"
                 accept="image/*"
                 onChange={handleImageUpload}
-                className="block w-full text-sm text-zinc-500
+                className="block w-full text-sm text-zinc-600
                   file:mr-4 file:py-2 file:px-4
                   file:rounded-md file:border-0
                   file:text-sm file:font-semibold

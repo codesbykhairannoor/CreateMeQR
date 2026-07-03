@@ -210,7 +210,7 @@ function App() {
               <button
                 onClick={() => setShowLangMenu(!showLangMenu)}
                 aria-label="Change Language"
-                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-900"
+                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-900"
               >
                 <Globe className="w-4 h-4" />
                 <span className="uppercase">{i18n.language?.split('-')[0] || 'EN'}</span>
@@ -236,7 +236,7 @@ function App() {
             <button
               onClick={() => setDarkMode(!darkMode)}
               aria-label="Toggle Dark Mode"
-              className="p-2 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
+              className="p-2 rounded-full text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
             >
               {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
@@ -258,11 +258,11 @@ function App() {
             <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 dark:text-white tracking-tighter mb-4 leading-[1.1]">
               {currentSeo.h1}
             </h1>
-            <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-8">
+            <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-300 max-w-2xl mx-auto mb-8">
               {t('tagline')}
             </p>
             {/* GEO Fact Density Semantic Block */}
-            <div className="text-sm text-zinc-500 dark:text-zinc-400 max-w-3xl mx-auto bg-zinc-100/50 dark:bg-zinc-900/50 p-4 rounded-2xl border border-zinc-200/50 dark:border-zinc-800/50 text-left">
+            <div className="text-sm text-zinc-600 dark:text-zinc-300 max-w-3xl mx-auto bg-zinc-100/50 dark:bg-zinc-900/50 p-4 rounded-2xl border border-zinc-200/50 dark:border-zinc-800/50 text-left">
               <strong className="text-zinc-700 dark:text-zinc-300">How to generate a custom QR code:</strong> CreateMeQR is an editable QR code generator that processes data entirely on your device in under 12ms. Unlike competitors, this tool provides 100% free high-resolution SVG downloads, custom logos, and gradient colors without requiring any sign-up or watermarks. The generated QR codes never expire and provide absolute client-side privacy.
             </div>
           </motion.div>
@@ -296,13 +296,13 @@ function App() {
               <div className="flex space-x-2 bg-zinc-100 dark:bg-zinc-800/50 p-1.5 rounded-2xl mb-6">
                 <button
                   onClick={() => setActiveTab('data')}
-                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all ${activeTab === 'data' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'}`}
+                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all ${activeTab === 'data' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-zinc-200'}`}
                 >
                   1. Enter Content
                 </button>
                 <button
                   onClick={() => hasGenerated && setActiveTab('design')}
-                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all ${activeTab === 'design' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200'} ${!hasGenerated ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all ${activeTab === 'design' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-zinc-200'} ${!hasGenerated ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
                   2. Customize Design
                 </button>
@@ -355,13 +355,13 @@ function App() {
             <div className="md:col-span-2 bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl p-8 border border-zinc-200/50 dark:border-zinc-800/50">
               <Lock className="w-8 h-8 text-blue-600 mb-6" />
               <h3 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight mb-2">100% Client-Side Privacy</h3>
-              <p className="text-zinc-500 dark:text-zinc-400">Your data never leaves your browser. We don't send your information to any server. Everything is generated instantly on your device.</p>
+              <p className="text-zinc-600 dark:text-zinc-300">Your data never leaves your browser. We don't send your information to any server. Everything is generated instantly on your device.</p>
             </div>
             
             <div className="bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl p-8 border border-zinc-200/50 dark:border-zinc-800/50">
               <Zap className="w-8 h-8 text-blue-600 mb-6" />
               <h3 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight mb-2">No Signup</h3>
-              <p className="text-zinc-500 dark:text-zinc-400">No hidden fees, no watermarks, and no registration required. Generate as many QR codes as you need.</p>
+              <p className="text-zinc-600 dark:text-zinc-300">No hidden fees, no watermarks, and no registration required. Generate as many QR codes as you need.</p>
             </div>
 
             <div className="md:col-span-3 bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl p-8 border border-zinc-200/50 dark:border-zinc-800/50 flex flex-col md:flex-row items-center justify-between gap-8">
@@ -382,10 +382,10 @@ function App() {
       {/* Footer */}
       <footer className="border-t border-zinc-200 dark:border-zinc-800 py-8">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-zinc-500 dark:text-zinc-500 text-sm">
+          <p className="text-zinc-600 dark:text-zinc-600 text-sm">
             © {new Date().getFullYear()} CreateMy-QR. Free Client-Side QR Code Generator.
           </p>
-          <div className="flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+          <div className="flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-300">
             <button onClick={() => setShowEmbedModal(true)} className="flex items-center gap-2 hover:text-blue-600 transition-colors">
               <Code2 className="w-4 h-4" /> Embed Widget
             </button>

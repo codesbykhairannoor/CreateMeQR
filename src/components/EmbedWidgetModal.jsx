@@ -18,13 +18,13 @@ export default function EmbedWidgetModal({ onClose }) {
       <div className="bg-white dark:bg-zinc-900 rounded-3xl w-full max-w-2xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800">
         <div className="flex justify-between items-center p-6 border-b border-zinc-100 dark:border-zinc-800">
           <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100">Embed Generator on Your Website</h3>
-          <button onClick={onClose} className="p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full transition-colors text-zinc-500 dark:text-zinc-400">
+          <button onClick={onClose} className="p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full transition-colors text-zinc-600 dark:text-zinc-300">
             <X className="w-5 h-5" />
           </button>
         </div>
         
         <div className="p-6">
-          <p className="text-zinc-600 dark:text-zinc-400 mb-6">
+          <p className="text-zinc-600 dark:text-zinc-300 mb-6">
             Want to offer a free QR code generator to your visitors? Copy and paste the HTML snippet below into your website or blog. 
           </p>
 
