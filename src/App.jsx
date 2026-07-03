@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { QrCode, Globe, Moon, Sun, Lock, Palette, Zap, Code2 } from 'lucide-react';
-import { motion } from 'framer-motion';
 import InputForm from './components/InputForm';
 const CustomizationPanel = React.lazy(() => import('./components/CustomizationPanel'));
 import Preview from './components/Preview';
@@ -265,7 +264,7 @@ function App() {
             <div className="text-sm text-zinc-600 dark:text-zinc-300 max-w-3xl mx-auto bg-zinc-100/50 dark:bg-zinc-900/50 p-4 rounded-2xl border border-zinc-200/50 dark:border-zinc-800/50 text-left">
               <strong className="text-zinc-700 dark:text-zinc-300">How to generate a custom QR code:</strong> CreateMeQR is an editable QR code generator that processes data entirely on your device in under 12ms. Unlike competitors, this tool provides 100% free high-resolution SVG downloads, custom logos, and gradient colors without requiring any sign-up or watermarks. The generated QR codes never expire and provide absolute client-side privacy.
             </div>
-          </motion.div>
+          </div>
         </section>
 
         {/* Generator Application Workspace */}
@@ -321,18 +320,13 @@ function App() {
                       setActiveTab={setActiveTab}
                     />
                   ) : (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="p-2"
-                    >
+                    <div className="p-2 animate-fade-in-up-fast">
                       <React.Suspense fallback={<div className="p-8 text-center text-zinc-600">Loading customization tools...</div>}><CustomizationPanel visuals={visuals} setVisuals={setVisuals} /></React.Suspense>
-                    </motion.div>
+                    </div>
                   )}
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* Right Column: Preview Sticky */}
             <motion.div 
@@ -344,7 +338,7 @@ function App() {
               <div className="sticky top-24 w-full">
                 <Preview qrType={qrType} qrData={qrData} visuals={visuals} hasGenerated={hasGenerated} />
               </div>
-            </motion.div>
+            </div>
 
           </div>
         </section>
