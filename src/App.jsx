@@ -59,10 +59,12 @@ function App() {
     ? {
         title: t('appTitle'),
         h1: t('appTitle'),
+        description: t('tagline'),
       }
     : {
         title: `${typeName} QR - ${t('appTitle')}`,
         h1: `${typeName} QR`,
+        description: `${typeName} QR - ${t('tagline')}`,
       };
 
   const [darkMode, setDarkMode] = useState(false);
@@ -136,7 +138,7 @@ function App() {
         <html lang={currentLangCode} />
         <title>{currentSeo.title}</title>
         <meta name="title" content={currentSeo.title} />
-        <meta name="description" content={`Generate ${currentSeo.h1} instantly. Free editable QR code generator with no watermark, custom colors, and SVG download.`} />
+        <meta name="description" content={currentSeo.description} />
         {/* Bidirectional Hreflang Matrix for 10 Languages */}
         {LANGS.map(lang => {
           const href = `https://www.createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
