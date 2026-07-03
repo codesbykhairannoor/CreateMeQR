@@ -246,11 +246,7 @@ function App() {
       <main className="pt-24 pb-20">
         {/* Hero Section */}
         <section className="max-w-4xl mx-auto px-6 text-center mb-16">
-          <motion.div 
-            initial={{ opacity: 0, y: 10 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 0.5, ease: "easeOut" }}
-          >
+          <div className="animate-fade-in-up">
             <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold text-sm mb-6 border border-blue-200 dark:border-blue-800/50">
               No 14-Day Trials. No Ads. 100% Free Forever.
             </div>
@@ -285,12 +281,7 @@ function App() {
         </div>
 
         {/* LEFT COLUMN: Input & Customization Panel */}
-            <motion.div 
-              className="lg:col-span-7 lg:col-start-1 flex flex-col"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
+            <div className="lg:col-span-7 lg:col-start-1 flex flex-col animate-fade-in-right">
               {/* Tabs */}
               <div className="flex space-x-2 bg-zinc-100 dark:bg-zinc-800/50 p-1.5 rounded-2xl mb-6">
                 <button
@@ -329,12 +320,7 @@ function App() {
             </div>
 
             {/* Right Column: Preview Sticky */}
-            <motion.div 
-              className="lg:col-span-5 flex justify-center"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
+            <div className="lg:col-span-5 flex justify-center animate-fade-in-up-delay">
               <div className="sticky top-24 w-full">
                 <Preview qrType={qrType} qrData={qrData} visuals={visuals} hasGenerated={hasGenerated} />
               </div>
