@@ -201,7 +201,7 @@ function App() {
       <nav className="fixed top-0 w-full bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-zinc-800/50 z-50 transition-colors">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-8 h-8 rounded-lg object-contain" />
+            <img src="/logoqr.webp" alt="CreateMy-QR Logo" className="w-8 h-8 rounded-lg object-contain" />
             <span className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight">CreateMy-QR</span>
           </div>
           
@@ -367,8 +367,8 @@ function App() {
             <div className="md:col-span-3 bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl p-8 border border-zinc-200/50 dark:border-zinc-800/50 flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="max-w-xl">
                 <Palette className="w-8 h-8 text-blue-600 mb-6" />
-                <h3 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight mb-2">Unlimited Customization</h3>
-                <p className="text-zinc-500 dark:text-zinc-400">Add custom logos, tweak colors, use gradients, and change the data patterns. Make your QR code match your brand identity perfectly without restrictions.</p>
+                <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">Unlimited Customization</h2>
+                <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed text-sm">Add custom logos, tweak colors, use gradients, and change the data patterns. Make your QR code match your brand identity perfectly without restrictions.</p>
               </div>
               <div className="w-full md:w-1/3 flex justify-center">
                  <div className="w-32 h-32 rounded-2xl bg-gradient-to-tr from-blue-600 to-emerald-400 opacity-80 blur-2xl absolute -z-10 mix-blend-multiply dark:mix-blend-screen"></div>
