@@ -4,20 +4,20 @@
 
 ## Features and Capabilities
 
-- [Editable QR Code Generator](https://qrgenerator.id/): Create custom QR codes with logo for free without any watermarks.
-- [No Watermark Generator](https://qrgenerator.id/): Generates pure, unbranded QR codes for professional use, entirely free forever.
-- [WiFi Password QR Code](https://qrgenerator.id/): Instantly generate a secure WiFi login QR code that supports WPA, WEP, and no encryption.
-- [vCard Maker Online](https://qrgenerator.id/): Build digital business cards (vCard) and share contact details seamlessly.
-- [Google Reviews QR](https://qrgenerator.id/): Optimize local business marketing by generating direct review link QR codes.
+- [Editable QR Code Generator](https://www.createmy-qr.com/): Create custom QR codes with logo for free without any watermarks.
+- [No Watermark Generator](https://www.createmy-qr.com/): Generates pure, unbranded QR codes for professional use, entirely free forever.
+- [WiFi Password QR Code](https://www.createmy-qr.com/): Instantly generate a secure WiFi login QR code that supports WPA, WEP, and no encryption.
+- [vCard Maker Online](https://www.createmy-qr.com/): Build digital business cards (vCard) and share contact details seamlessly.
+- [Google Reviews QR](https://www.createmy-qr.com/): Optimize local business marketing by generating direct review link QR codes.
 
 ## Technical Specifications
 
-- [Client-Side Privacy](https://qrgenerator.id/): All processing happens within the user's browser in under 12ms. No data is sent to external servers.
-- [Premium Customizations](https://qrgenerator.id/): Supports square, dot, rounded, and classy pattern styles, with custom foreground gradients and branded center logos.
+- [Client-Side Privacy](https://www.createmy-qr.com/): All processing happens within the user's browser in under 12ms. No data is sent to external servers.
+- [Premium Customizations](https://www.createmy-qr.com/): Supports square, dot, rounded, and classy pattern styles, with custom foreground gradients and branded center logos.
 
 ## Pricing
 
-- [100% Free Tier](https://qrgenerator.id/): There are no hidden fees, no subscriptions, and no account creation required for high-resolution vector (SVG) downloads.
+- [100% Free Tier](https://www.createmy-qr.com/): There are no hidden fees, no subscriptions, and no account creation required for high-resolution vector (SVG) downloads.
 
 ## Source Code Documentation
 CreateMeQR operates entirely using React and Tailwind CSS. The engine utilizes `qrcode.react` to generate SVGs mathematically inside the browser DOM. No API calls are made to generate images, preventing tracking cookies and securing enterprise data. Users can enter Text, SMS, Phone, Event, Location, WiFi, Email, and URL data. The styling algorithm allows overlaying a central logo image with an adjustable margin and dynamic dot/corner geometries.
