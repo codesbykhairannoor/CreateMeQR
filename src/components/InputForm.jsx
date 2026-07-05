@@ -233,7 +233,7 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
           onClick={handleGenerate}
           className="w-full flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors font-semibold shadow-sm text-lg"
         >
-          {hasGenerated ? 'Update QR Code' : 'Generate QR Code'}
+          {hasGenerated ? t('tabs.update') : t('tabs.generate')}
         </button>
       </div>
     </div>

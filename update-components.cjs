@@ -1,4 +1,118 @@
-import React, { useState, useEffect } from 'react';
+const fs = require('fs');
+
+// 1. Update InputForm.jsx
+let inputForm = fs.readFileSync('src/components/InputForm.jsx', 'utf8');
+inputForm = inputForm.replace(
+  "{hasGenerated ? 'Update QR Code' : 'Generate QR Code'}",
+  "{hasGenerated ? t('tabs.update') : t('tabs.generate')}"
+);
+fs.writeFileSync('src/components/InputForm.jsx', inputForm, 'utf8');
+console.log('Updated InputForm.jsx');
+
+// 2. Update Preview.jsx
+let preview = fs.readFileSync('src/components/Preview.jsx', 'utf8');
+preview = preview.replace(
+  '<h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">Ready to Generate</h2>',
+  '<h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">{t(\'preview.readyTitle\')}</h2>'
+);
+preview = preview.replace(
+  '<p className="text-zinc-600 dark:text-zinc-300 text-sm max-w-[200px]">\n            Fill in your details on the left and click "Generate QR Code" to see your preview here.\n          </p>',
+  '<p className="text-zinc-600 dark:text-zinc-300 text-sm max-w-[200px]">\n            {t(\'preview.readyDesc\')}\n          </p>'
+);
+preview = preview.replace(
+  '<Check className="w-3 h-3 mr-1" /> Client-side generated\n            </span>\n            No data sent to server',
+  '<Check className="w-3 h-3 mr-1" /> {t(\'preview.clientSide\')}\n            </span>\n            {t(\'preview.noServer\')}'
+);
+fs.writeFileSync('src/components/Preview.jsx', preview, 'utf8');
+console.log('Updated Preview.jsx');
+
+// 3. Update EmbedWidgetModal.jsx
+const embedModalContent = `import React, { useState } from 'react';
+import { X, Copy, Check } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+
+export default function EmbedWidgetModal({ onClose }) {
+  const { t, i18n } = useTranslation();
+  const [copied, setCopied] = useState(false);
+  const [anchorText, setAnchorText] = useState('CreateMy-QR Generator');
+
+  const langPrefix = i18n.language && i18n.language !== 'en' ? \`/\${i18n.language}\` : '';
+  const targetUrl = \`https://www.createmy-qr.com\${langPrefix}\`;
+
+  const embedCode = \`<iframe src="\${targetUrl}" width="100%" height="800" frameborder="0" scrolling="no" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></iframe>\\n<div style="text-align: center; font-size: 11px; margin-top: 8px;">Powered by <a href="\${targetUrl}" target="_blank" style="color: #2563eb; text-decoration: none;">\${anchorText}</a></div>\`;
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(embedCode);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+      <div className="bg-white dark:bg-zinc-900 rounded-3xl w-full max-w-2xl overflow-hidden shadow-2xl border border-zinc-200 dark:border-zinc-800">
+        <div className="flex justify-between items-center p-6 border-b border-zinc-100 dark:border-zinc-800">
+          <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-100">{t('embedModal.title')}</h3>
+          <button onClick={onClose} className="p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full transition-colors text-zinc-600 dark:text-zinc-300">
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+        
+        <div className="p-6">
+          <p className="text-zinc-600 dark:text-zinc-300 mb-6">
+            {t('embedModal.desc')}
+          </p>
+
+          <div className="mb-4">
+            <label className="block text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase mb-2">
+              {t('embedModal.anchorLabel')}
+            </label>
+            <select
+              value={anchorText}
+              onChange={(e) => setAnchorText(e.target.value)}
+              className="w-full px-4 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 text-sm focus:ring-2 focus:ring-blue-500 outline-none font-medium"
+            >
+              <option value="CreateMy-QR Generator">CreateMy-QR Generator</option>
+              <option value="Free QR Code Generator">Free QR Code Generator</option>
+              <option value="QR Code Maker Online">QR Code Maker Online</option>
+              <option value="Custom QR Code with Logo">Custom QR Code with Logo</option>
+              <option value={t('appTitle')}>{t('appTitle')}</option>
+            </select>
+          </div>
+
+          <div className="relative">
+            <div className="absolute top-3 right-3 flex space-x-2">
+              <button 
+                onClick={copyToClipboard}
+                className="flex items-center gap-2 px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-white rounded-lg text-sm transition-colors font-semibold shadow-sm"
+              >
+                {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
+                {copied ? t('embedModal.copied') : t('embedModal.copy')}
+              </button>
+            </div>
+            <pre className="bg-zinc-50 dark:bg-zinc-950 p-6 rounded-2xl text-sm text-zinc-800 dark:text-zinc-300 overflow-x-auto border border-zinc-200 dark:border-zinc-800 font-mono">
+              <code>{embedCode}</code>
+            </pre>
+          </div>
+
+          <div className="mt-6 bg-blue-50 dark:bg-blue-900/20 p-4 rounded-xl border border-blue-100 dark:border-blue-800">
+            <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-1">{t('embedModal.whyTitle')}</h4>
+            <ul className="text-sm text-blue-600 dark:text-blue-400 space-y-1 list-disc list-inside">
+              <li>{t('embedModal.why1')}</li>
+              <li>{t('embedModal.why2')}</li>
+              <li>{t('embedModal.why3')}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+`;
+fs.writeFileSync('src/components/EmbedWidgetModal.jsx', embedModalContent, 'utf8');
+console.log('Updated EmbedWidgetModal.jsx');
+
+// 4. Update App.jsx
+const appContent = `import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -73,7 +187,7 @@ function App() {
   if (slug === '') slug = '/';
 
   const currentType = PSEO_ROUTES[slug] || PSEO_ROUTES['/'];
-  const typeName = t(`types.${currentType}`);
+  const typeName = t(\`types.\${currentType}\`);
   
   // Super Partial Lang: Fully localized SEO texts!
   const currentSeo = currentType === 'url' 
@@ -83,9 +197,9 @@ function App() {
         description: t('tagline'),
       }
     : {
-        title: `${typeName} QR - ${t('appTitle')}`,
-        h1: `${typeName} QR`,
-        description: `${typeName} QR - ${t('tagline')}`,
+        title: \`\${typeName} QR - \${t('appTitle')}\`,
+        h1: \`\${typeName} QR\`,
+        description: \`\${typeName} QR - \${t('tagline')}\`,
       };
 
   const [darkMode, setDarkMode] = useState(false);
@@ -157,8 +271,8 @@ function App() {
     setQrType(newType);
     const entry = Object.entries(PSEO_ROUTES).find(([_, val]) => val === newType);
     if (entry && entry[0] !== slug) {
-      const newPrefix = currentLangCode === 'en' ? '' : `/${currentLangCode}`;
-      navigate(`${newPrefix}${entry[0] === '/' ? '' : entry[0]}`, { replace: true });
+      const newPrefix = currentLangCode === 'en' ? '' : \`/\${currentLangCode}\`;
+      navigate(\`\${newPrefix}\${entry[0] === '/' ? '' : entry[0]}\`, { replace: true });
     }
   };
 
@@ -179,8 +293,8 @@ function App() {
     i18n.changeLanguage(lang);
     setShowLangMenu(false);
     setSoftBannerLang(null);
-    const newPrefix = lang === 'en' ? '' : `/${lang}`;
-    navigate(`${newPrefix}${slug === '/' ? '' : slug}`, { replace: true });
+    const newPrefix = lang === 'en' ? '' : \`/\${lang}\`;
+    navigate(\`\${newPrefix}\${slug === '/' ? '' : slug}\`, { replace: true });
   };
 
   return (
@@ -192,22 +306,22 @@ function App() {
         <meta name="description" content={currentSeo.description} />
         {/* Bidirectional Hreflang Matrix for 30 Languages */}
         {LANGS.map(lang => {
-          const href = `https://www.createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
+          const href = \`https://www.createmy-qr.com\${lang.code === 'en' ? '' : '/' + lang.code}\${slug === '/' ? '' : slug}\`;
           return <link key={lang.code} rel="alternate" hreflang={lang.code} href={href} />;
         })}
-        <link rel="alternate" hreflang="x-default" href={`https://www.createmy-qr.com${slug === '/' ? '' : slug}`} />
+        <link rel="alternate" hreflang="x-default" href={\`https://www.createmy-qr.com\${slug === '/' ? '' : slug}\`} />
         
         <script type="application/ld+json">
-          {`
+          {\`
             {
               "@context": "https://schema.org",
               "@type": "HowTo",
-              "name": "How to ${currentSeo.h1}",
-              "description": "${currentSeo.description}",
+              "name": "How to \${currentSeo.h1}",
+              "description": "\${currentSeo.description}",
               "step": [
                 {
                   "@type": "HowToStep",
-                  "text": "Select the ${currentType} data type."
+                  "text": "Select the \${currentType} data type."
                 },
                 {
                   "@type": "HowToStep",
@@ -223,10 +337,10 @@ function App() {
                 }
               ]
             }
-          `}
+          \`}
         </script>
         <script type="application/ld+json">
-          {`
+          {\`
             {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
@@ -238,11 +352,11 @@ function App() {
               },{
                 "@type": "ListItem",
                 "position": 2,
-                "name": "${currentSeo.h1}",
-                "item": "https://www.createmy-qr.com${location.pathname}"
+                "name": "\${currentSeo.h1}",
+                "item": "https://www.createmy-qr.com\${location.pathname}"
               }]
             }
-          `}
+          \`}
         </script>
       </Helmet>
       
@@ -303,7 +417,7 @@ function App() {
                       <button
                         key={lang.code}
                         onClick={() => changeLanguage(lang.code)}
-                        className={`w-full text-left px-4 py-2 text-sm ${i18n.language?.startsWith(lang.code) ? 'text-blue-600 font-semibold bg-blue-50 dark:bg-blue-900/30' : 'text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}
+                        className={\`w-full text-left px-4 py-2 text-sm \${i18n.language?.startsWith(lang.code) ? 'text-blue-600 font-semibold bg-blue-50 dark:bg-blue-900/30' : 'text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700'}\`}
                       >
                         {lang.label}
                       </button>
@@ -359,13 +473,13 @@ function App() {
               <div className="flex space-x-2 bg-zinc-100 dark:bg-zinc-800/50 p-1.5 rounded-2xl mb-6">
                 <button
                   onClick={() => setActiveTab('data')}
-                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all ${activeTab === 'data' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-zinc-200'}`}
+                  className={\`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all \${activeTab === 'data' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-zinc-200'}\`}
                 >
                   {t('tabs.step1')}
                 </button>
                 <button
                   onClick={() => hasGenerated && setActiveTab('design')}
-                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all ${activeTab === 'design' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-zinc-200'} ${!hasGenerated ? 'cursor-not-allowed opacity-90' : ''}`}
+                  className={\`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all \${activeTab === 'design' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-zinc-200'} \${!hasGenerated ? 'cursor-not-allowed opacity-90' : ''}\`}
                 >
                   {t('tabs.step2')}
                 </button>
@@ -452,3 +566,6 @@ function App() {
 }
 
 export default App;
+`;
+fs.writeFileSync('src/App.jsx', appContent, 'utf8');
+console.log('Updated App.jsx with 30 languages, Super GEO banner, and complete translation coverage!');
