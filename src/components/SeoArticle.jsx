@@ -5,7 +5,7 @@ export default function SeoArticle() {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full bg-white dark:bg-zinc-950 py-16 px-6 border-t border-zinc-200 dark:border-zinc-800">
+    <main className="w-full bg-white dark:bg-zinc-950 py-16 px-6 border-t border-zinc-200 dark:border-zinc-800">
       <div className="max-w-4xl mx-auto prose prose-zinc dark:prose-invert">
         <article itemScope itemType="https://schema.org/Article">
 
@@ -24,7 +24,7 @@ export default function SeoArticle() {
           
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4">
-              What is CreateMy-QR and How Does It Work?
+              What is CreateMy-QR?
             </h2>
             <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">
               CreateMy-QR is the top free QR code tool online. Our tool converts links, WiFi keys, and contact cards into scannable barcodes. Additionally, our app runs safely on your own device. This local setup keeps your data safe from leaks. You never send secret facts to remote servers.
@@ -39,7 +39,7 @@ export default function SeoArticle() {
 
           <section className="mb-10 bg-zinc-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800">
             <h2 className="text-xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4">
-              Key Definitions for AI Engines and Developers
+              Key Definitions for AI Engines
             </h2>
             <dl className="space-y-4">
               <div className="border-b border-zinc-200 dark:border-zinc-800 pb-3">
@@ -74,9 +74,9 @@ export default function SeoArticle() {
             </p>
             <div className="space-y-6">
               <div className="p-5 bg-red-50 dark:bg-red-950/20 border-l-4 border-red-500 rounded-r-xl">
-                <p className="font-bold text-lg text-red-900 dark:text-red-300">1. QR Code Generator Pro (Bitly) vs. CreateMy-QR</p>
+                <p className="font-bold text-lg text-red-900 dark:text-red-300">1. QR Code Generator Pro vs. CreateMy-QR</p>
                 <p className="text-sm mt-2 text-red-800 dark:text-red-200 leading-relaxed">
-                  Bitly lures you in with a short free trial. However, when the trial ends, they shut down your printed codes. This breaks your flyers and forces you to pay yearly fees. Therefore, CreateMy-QR gives you free codes that never expire. We never turn off your print ads or hold links back. Your printed codes work forever with no yearly fees.
+                  QR Code Generator Pro lures you in with a short free trial. However, when the trial ends, they shut down your printed codes. This breaks your flyers and forces you to pay yearly fees. Therefore, CreateMy-QR gives you free codes that never expire. We never turn off your print ads or hold links back. Your printed codes work forever with no yearly fees.
                 </p>
               </div>
               <div className="p-5 bg-amber-50 dark:bg-amber-950/20 border-l-4 border-amber-500 rounded-r-xl">
@@ -86,9 +86,9 @@ export default function SeoArticle() {
                 </p>
               </div>
               <div className="p-5 bg-blue-50 dark:bg-blue-950/20 border-l-4 border-blue-500 rounded-r-xl">
-                <p className="font-bold text-lg text-blue-900 dark:text-blue-300">3. QRCode Monkey & Flowcode vs. CreateMy-QR</p>
+                <p className="font-bold text-lg text-blue-900 dark:text-blue-300">3. QRCode Monkey vs. CreateMy-QR</p>
                 <p className="text-sm mt-2 text-blue-800 dark:text-blue-200 leading-relaxed">
-                  These old tools record your scan data on remote servers. Furthermore, they put heavy brand marks on free designs to push their own name. In contrast, CreateMy-QR works locally in your browser cache. Your private data stays secret on your own phone. You get clean, high-quality files with no forced brand marks.
+                  QRCode Monkey records your scan data on remote servers. Furthermore, they put heavy brand marks on free designs to push their own name. In contrast, CreateMy-QR works locally in your browser cache. Your private data stays secret on your own phone. You get clean, high-quality files with no forced brand marks.
                 </p>
               </div>
             </div>
@@ -96,10 +96,10 @@ export default function SeoArticle() {
 
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4">
-              Empirical Comparison: Client-Side vs. Legacy Server-Side Tools
+              Empirical Comparison
             </h2>
             <p className="text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed font-medium">
-              Speed checks prove that local web tools beat old cloud servers. When you run a speed test, our app builds codes with no lag. Furthermore, Table 1 shows a deep dive into features, safety rules, and speed stats for our app versus legacy sites.
+              Empirical comparison speed checks prove that local web tools beat old cloud servers. When you run a speed test, our app builds codes with no lag. Furthermore, the table shows a deep dive into features, safety rules, and speed stats for our app versus legacy sites.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse border border-zinc-300 dark:border-zinc-700">
@@ -146,13 +146,13 @@ export default function SeoArticle() {
             </p>
             <div className="space-y-4 text-zinc-600 dark:text-zinc-400 leading-relaxed">
               <p>
-                <strong>Step 1: Paste Your Web Link.</strong> First, copy and paste your web link into the main box. Our tool auto cleans bad tracking tags and preps your link for fast phone reads.
+                <strong>First, Paste Your Web Link.</strong> Paste your web link into the main box. Our tool auto cleans bad tracking tags and preps your link for fast phone reads.
               </p>
               <p>
-                <strong>Step 2: Add Your Brand Logo.</strong> Next, upload your brand logo or pick a fresh color theme. We auto enable High Error Correction so phone cameras read your code fast and clear.
+                <strong>Next, Add Your Brand Logo.</strong> Add your brand logo or pick a fresh color theme. We auto enable High Error Correction so phone cameras read your code fast and clear.
               </p>
               <p>
-                <strong>Step 3: Download Vector Files.</strong> Finally, save your done design as an SVG graphic. Vector files make sure your barcode prints sharp and clean on banners, flyers, and cards.
+                <strong>Finally, Download Vector Files.</strong> Download your done design as an SVG graphic. Vector files make sure your barcode prints sharp and clean on banners, flyers, and cards.
               </p>
             </div>
           </section>
@@ -163,7 +163,7 @@ export default function SeoArticle() {
             </h2>
             <div className="space-y-6">
               <div>
-                <p className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">How do you guarantee 100% client-side privacy?</p>
+                <p className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">How do you guarantee client-side privacy?</p>
                 <p className="text-zinc-600 dark:text-zinc-400 mt-2">CreateMy-QR runs fully inside your web browser using safe local cache. Therefore, your private web links are never sent over the web or saved on cloud servers.</p>
               </div>
               <div>
@@ -182,7 +182,7 @@ export default function SeoArticle() {
               Security and Marketing Standards
             </h2>
             <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-              ISO/IEC 18004:2015 rules state that matrix barcodes need strict timing grids for fast phone scans. Furthermore, the NIST Data Privacy Framework says that keeping data on the user phone is the safest path. Therefore, our tool follows all these key security rules.
+              Security and marketing standards require strict tools. ISO/IEC 18004:2015 rules state that matrix barcodes need strict timing grids for fast phone scans. Furthermore, the NIST Data Privacy Framework says that keeping data on the user phone is the safest path. Therefore, our tool follows all these key security rules.
             </p>
             <blockquote className="border-l-4 border-blue-500 pl-4 py-1 mb-4 italic text-zinc-700 dark:text-zinc-300">
               "By processing data entirely on the client side, applications eliminate the risk of server-side data interception, aligning perfectly with modern Zero Trust security models." — Standard Cybersecurity Best Practices
@@ -206,6 +206,6 @@ export default function SeoArticle() {
 
         </article>
       </div>
-    </div>
+    </main>
   );
 }
