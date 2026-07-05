@@ -70,7 +70,7 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
   };
 
   return (
-    <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-sm p-8 flex flex-col items-center justify-center min-h-[500px]">
+    <div className="bg-white dark:bg-slate-800 border border-zinc-200 dark:border-slate-700 rounded-3xl shadow-sm p-8 flex flex-col items-center justify-center min-h-[500px]">
       
       {!hasGenerated ? (
         <div className="flex-1 flex flex-col items-center justify-center text-center p-8">
@@ -84,7 +84,7 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
         </div>
       ) : (
         <>
-          <div className="mb-8 p-4 bg-white rounded-2xl shadow-sm border border-zinc-100 dark:border-zinc-800" ref={ref} />
+          <div className="mb-8 p-4 bg-white rounded-2xl shadow-sm border border-zinc-100 dark:border-slate-700" ref={ref} />
           
           <div className="flex w-full gap-3 mt-2">
             <button
@@ -96,7 +96,7 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
             </button>
             <button
               onClick={() => onDownloadClick('svg')}
-              className="flex-1 flex items-center justify-center px-4 py-3 bg-white text-zinc-700 border border-zinc-200 dark:bg-zinc-900 dark:text-zinc-300 dark:border-zinc-700 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors font-medium shadow-sm"
+              className="flex-1 flex items-center justify-center px-4 py-3 bg-white text-zinc-700 border border-zinc-200 dark:bg-slate-800 dark:text-zinc-300 dark:border-zinc-700 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors font-medium shadow-sm"
             >
               <Download className="w-4 h-4 mr-2" />
               SVG

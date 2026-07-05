@@ -57,11 +57,11 @@ function LandingContent() {
         }
 
         html.dark .hq-wrapper {
-          --hq-bg: #09090b;
+          --hq-bg: #0f172a;
           --hq-text: #ffffff;
           --hq-text-muted: #888888;
-          --hq-card: #18181b;
-          --hq-border: #27272a;
+          --hq-card: #1e293b;
+          --hq-border: #334155;
           --hq-accent: #ffffff;
           --hq-accent-glow: rgba(255,255,255,0.1);
           --hq-shadow: 0 10px 40px -10px rgba(255,255,255,0.05);

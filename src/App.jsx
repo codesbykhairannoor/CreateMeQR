@@ -187,7 +187,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 font-sans selection:bg-blue-500/30">
+    <div className="min-h-screen bg-zinc-50 dark:bg-slate-900 font-sans selection:bg-blue-500/30">
       <Helmet>
         <html lang={currentLangCode} dir={currentLangCode === 'ar' ? 'rtl' : 'ltr'} />
         <title>{currentSeo.title}</title>
@@ -283,7 +283,7 @@ function App() {
       )}
 
       {/* Premium Glass Navbar */}
-      <nav className="fixed top-0 w-full bg-white/70 dark:bg-zinc-950/70 backdrop-blur-2xl border-b border-zinc-200 dark:border-zinc-900 z-50 transition-colors duration-500">
+      <nav className="fixed top-0 w-full bg-white/70 dark:bg-slate-900/70 backdrop-blur-2xl border-b border-zinc-200 dark:border-slate-800 z-50 transition-colors duration-500">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="/logoqr.webp" alt="CreateMy-QR Logo - Free Editable QR Code Generator Online" className="w-8 h-8 rounded-xl object-contain shadow-sm" />
@@ -308,8 +308,8 @@ function App() {
                   <div className="fixed inset-0 z-40" onClick={() => setShowLangMenu(false)} />
                   <div className="absolute right-0 mt-2 w-72 bg-white dark:bg-[#18181b] rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] dark:shadow-[0_20px_60px_-15px_rgba(255,255,255,0.05)] border border-zinc-200 dark:border-zinc-800 z-50 overflow-hidden transform origin-top-right transition-all">
                     {/* Search box */}
-                    <div className="p-4 border-b border-zinc-100 dark:border-zinc-900">
-                      <div className="flex items-center gap-3 bg-zinc-100 dark:bg-zinc-900 rounded-2xl px-4 py-3">
+                    <div className="p-4 border-b border-zinc-100 dark:border-slate-800">
+                      <div className="flex items-center gap-3 bg-zinc-100 dark:bg-slate-800 rounded-2xl px-4 py-3">
                         <Globe className="w-4 h-4 text-zinc-400 flex-shrink-0" />
                         <input
                           autoFocus
@@ -335,7 +335,7 @@ function App() {
                             onClick={() => { changeLanguage(lang.code); setLangSearch(''); }}
                             className={`w-full text-left px-5 py-3 text-sm flex items-center gap-4 transition-colors ${
                               isActive
-                                ? 'bg-zinc-100 dark:bg-zinc-900 text-black dark:text-white font-bold'
+                                ? 'bg-zinc-100 dark:bg-slate-800 text-black dark:text-white font-bold'
                                 : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 hover:text-black dark:hover:text-white'
                             }`}
                           >
@@ -373,7 +373,7 @@ function App() {
         {/* Premium Hero Section */}
         <section className="max-w-4xl mx-auto px-6 text-center mb-24">
           <div className="animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-zinc-100 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 font-bold text-xs tracking-widest uppercase mb-8 border border-zinc-200 dark:border-zinc-800 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-zinc-100 dark:bg-slate-800 text-zinc-800 dark:text-zinc-200 font-bold text-xs tracking-widest uppercase mb-8 border border-zinc-200 dark:border-zinc-800 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-zinc-900 dark:bg-white animate-pulse"></span>
               {t('badge')}
             </div>
@@ -392,7 +392,7 @@ function App() {
 
         {/* Generator Application Workspace */}
         <section className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-900 rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-zinc-50 dark:bg-slate-900 border border-zinc-200 dark:border-slate-800 rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
         
         {/* HIDDEN SEMANTIC CORE FOR SEO BOTS (GRAY HAT PSEO) */}
         <div className="sr-only" aria-hidden="true">
@@ -403,7 +403,7 @@ function App() {
         {/* LEFT COLUMN: Input & Customization Panel */}
             <div className="lg:col-span-7 lg:col-start-1 flex flex-col animate-fade-in-right">
               {/* Premium iOS Segmented Tabs */}
-              <div className="flex space-x-2 bg-zinc-200/50 dark:bg-zinc-900/80 p-1.5 rounded-2xl mb-8 border border-zinc-200/50 dark:border-zinc-800/50">
+              <div className="flex space-x-2 bg-zinc-200/50 dark:bg-slate-800/80 p-1.5 rounded-2xl mb-8 border border-zinc-200/50 dark:border-zinc-800/50">
                 <button
                   onClick={() => setActiveTab('data')}
                   className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'data' ? 'bg-blue-600 text-white shadow-md border-transparent' : 'text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white'}`}
@@ -418,7 +418,7 @@ function App() {
                 </button>
               </div>
 
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-900 rounded-3xl shadow-sm overflow-hidden flex flex-col min-h-[500px]">
+              <div className="bg-white dark:bg-slate-800 border border-zinc-200 dark:border-slate-800 rounded-3xl shadow-sm overflow-hidden flex flex-col min-h-[500px]">
                 <div className="flex-1 overflow-y-auto custom-scrollbar">
                   {activeTab === 'data' ? (
                     <InputForm 
@@ -448,7 +448,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-200 dark:border-zinc-900 bg-white dark:bg-zinc-950 py-12 text-center text-zinc-500 dark:text-zinc-600 text-sm">
+      <footer className="border-t border-zinc-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-12 text-center text-zinc-500 dark:text-zinc-600 text-sm">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© {new Date().getFullYear()} CreateMy-QR Technologies. All rights reserved.</p>
           <div className="flex gap-6 font-medium text-black dark:text-white">
