@@ -17,6 +17,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+
+    <!-- Anti-FOUC (Flash of Unstyled Content) Script & Styles -->
+    <style>
+      :root { color-scheme: light dark; }
+      body { background-color: #ffffff; margin: 0; }
+      @media (prefers-color-scheme: dark) { body { background-color: #0f172a; } }
+      .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
+      body:not(.ready) { opacity: 0; visibility: hidden; }
+      body.ready { opacity: 1; visibility: visible; transition: opacity 0.4s ease-out; }
+    </style>
+    <noscript><style>body:not(.ready) { opacity: 1; visibility: visible; }</style></noscript>
     
     <!-- Google tag (gtag.js) -->
     <script>

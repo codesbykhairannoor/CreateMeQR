@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { QrCode, Globe, Moon, Sun, Lock, Palette, Zap, Code2, X } from 'lucide-react';
+import { Globe, Moon, Sun, X } from 'lucide-react';
 import InputForm from './components/InputForm';
 import LandingContent from './components/LandingContent';
 const CustomizationPanel = React.lazy(() => import('./components/CustomizationPanel'));
@@ -118,7 +118,7 @@ function App() {
     if (routeType && routeType !== qrType) {
       setQrType(routeType);
     }
-  }, [slug]);
+  }, [slug, qrType]);
 
   // Sync i18n language with route language prefix
   useEffect(() => {

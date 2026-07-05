@@ -1,8 +1,8 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+
 
 export default function SeoArticle() {
-  const { t } = useTranslation();
+  
 
   return (
     <main className="w-full bg-white dark:bg-zinc-950 py-16 px-6 border-t border-zinc-200 dark:border-zinc-800">
