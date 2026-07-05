@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { QrCode, Globe, Moon, Sun, Lock, Palette, Zap, Code2, X } from 'lucide-react';
 import InputForm from './components/InputForm';
+import LandingContent from './components/LandingContent';
 const CustomizationPanel = React.lazy(() => import('./components/CustomizationPanel'));
 import Preview from './components/Preview';
 const EmbedWidgetModal = React.lazy(() => import('./components/EmbedWidgetModal'));
@@ -405,6 +406,8 @@ function App() {
 
           </div>
         </section>
+
+        <LandingContent />
 
         {/* Features Bento Grid */}
         <section className="max-w-7xl mx-auto px-6 mt-32">
