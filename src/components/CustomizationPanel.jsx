@@ -5,7 +5,7 @@ import { Palette, Image as ImageIcon, LayoutTemplate, ChevronDown, ChevronUp } f
 const Accordion = ({ title, icon: Icon, defaultOpen = false, children }) => {
   const [isOpen, setIsOpen] = React.useState(defaultOpen);
   return (
-    <div className="border border-zinc-200 dark:border-zinc-700 rounded-lg mb-4 bg-white dark:bg-zinc-800 overflow-hidden">
+    <div className="border border-zinc-200 dark:border-zinc-700 rounded-lg mb-4 bg-transparent overflow-hidden">
       <button 
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-4 py-3 flex items-center justify-between bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors"
@@ -105,12 +105,12 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
   };
 
   return (
-    <div className="bg-white dark:bg-zinc-800 rounded-xl shadow-sm border border-zinc-100 dark:border-zinc-700 p-6">
+    <div className="bg-transparent rounded-xl shadow-sm border border-zinc-100 dark:border-zinc-700 p-6">
       
       <Accordion title={t('customization.colors')} icon={Palette} defaultOpen={true}>
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div>
-            <label className="block text-sm font-medium mb-2 text-zinc-700 dark:text-zinc-300">{t('customization.foreground')}</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">{t('customization.foreground')}</label>
             <input
               type="color"
               value={visuals.dotsOptions.color || visuals.dotsOptions.gradient?.colorStops[0]?.color || '#000000'}
@@ -119,7 +119,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium mb-2 text-zinc-700 dark:text-zinc-300">{t('customization.background')}</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">{t('customization.background')}</label>
             <input
               type="color"
               value={visuals.backgroundOptions.color || '#ffffff'}
@@ -128,7 +128,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium mb-2 text-zinc-700 dark:text-zinc-300">{t('customization.eyeColor')}</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">{t('customization.eyeColor')}</label>
             <input
               type="color"
               value={visuals.cornersSquareOptions.color || '#000000'}
@@ -143,9 +143,9 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
             id="useGradient" 
             checked={!!visuals.dotsOptions.gradient}
             onChange={handleGradientToggle}
-            className="w-4 h-4 text-blue-600 rounded border-zinc-300 focus:ring-blue-500"
+            className="w-4 h-4 text-blue-600 rounded border-zinc-300 focus:ring-black dark:focus:ring-white"
           />
-          <label htmlFor="useGradient" className="ml-2 text-sm font-medium text-zinc-700 dark:text-zinc-300">
+          <label htmlFor="useGradient" className="ml-2 text-sm font-medium text-zinc-800 dark:text-zinc-200">
             {t('customization.gradient')}
           </label>
         </div>
@@ -166,7 +166,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-medium mb-1 text-zinc-700 dark:text-zinc-300">{t('customization.logoSize')}</label>
+                  <label className="block text-xs font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('customization.logoSize')}</label>
                   <input 
                     type="range" 
                     min="0.1" 
@@ -178,7 +178,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-medium mb-1 text-zinc-700 dark:text-zinc-300">{t('customization.logoMargin')}</label>
+                  <label className="block text-xs font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('customization.logoMargin')}</label>
                   <input 
                     type="range" 
                     min="0" 
@@ -213,7 +213,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
       <Accordion title={t('customization.design')} icon={LayoutTemplate}>
         <div className="space-y-4">
           <div>
-            <label className="block text-sm font-medium mb-2 text-zinc-700 dark:text-zinc-300">{t('customization.dotsStyle')}</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">{t('customization.dotsStyle')}</label>
             <div className="grid grid-cols-4 gap-2">
               {['square', 'dots', 'rounded', 'classy'].map(style => (
                 <button
@@ -227,7 +227,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium mb-2 text-zinc-700 dark:text-zinc-300">{t('customization.cornersStyle')}</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">{t('customization.cornersStyle')}</label>
             <div className="grid grid-cols-4 gap-2">
               {['square', 'dot', 'extra-rounded'].map(style => (
                 <button
@@ -241,7 +241,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium mb-2 text-zinc-700 dark:text-zinc-300">Error Correction</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">Error Correction</label>
             <div className="grid grid-cols-4 gap-2">
               {['L', 'M', 'Q', 'H'].map(level => (
                 <button

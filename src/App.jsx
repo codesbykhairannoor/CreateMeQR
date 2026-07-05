@@ -377,7 +377,7 @@ function App() {
               <span className="w-2 h-2 rounded-full bg-black dark:bg-white animate-pulse"></span>
               {t('badge')}
             </div>
-            <h1 className="text-[clamp(44px,7vw,80px)] font-extrabold text-black dark:text-white tracking-tighter mb-6 leading-[1.05]">
+            <h1 className="text-[clamp(44px,7vw,80px)] font-bold text-black dark:text-white tracking-tighter mb-6 leading-[1.05]">
               {currentSeo.h1}
             </h1>
             <p className="text-xl md:text-2xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -392,7 +392,7 @@ function App() {
 
         {/* Generator Application Workspace */}
         <section className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-zinc-50 dark:bg-[#0a0a0a] border border-zinc-200 dark:border-zinc-900 rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-zinc-50/50 dark:bg-[#111111] border border-zinc-200 dark:border-zinc-900 rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
         
         {/* HIDDEN SEMANTIC CORE FOR SEO BOTS (GRAY HAT PSEO) */}
         <div className="sr-only" aria-hidden="true">
@@ -418,7 +418,7 @@ function App() {
                 </button>
               </div>
 
-              <div className="bg-white dark:bg-[#111111] border border-zinc-200 dark:border-zinc-900 rounded-3xl shadow-sm overflow-hidden flex flex-col min-h-[500px]">
+              <div className="bg-white dark:bg-transparent border border-zinc-200 dark:border-zinc-900 rounded-3xl shadow-sm overflow-hidden flex flex-col min-h-[500px]">
                 <div className="flex-1 overflow-y-auto custom-scrollbar">
                   {activeTab === 'data' ? (
                     <InputForm 
