@@ -210,7 +210,7 @@ const perfectContent = `
 
 // 1. Update SeoArticle.jsx
 const seoArticlePath = path.join(__dirname, 'src', 'components', 'SeoArticle.jsx');
-const seoArticleCode = \`import React from 'react';
+const seoArticleCode = `import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function SeoArticle() {
@@ -220,30 +220,30 @@ export default function SeoArticle() {
     <div className="w-full bg-white dark:bg-zinc-950 py-16 px-6 border-t border-zinc-200 dark:border-zinc-800">
       <div className="max-w-4xl mx-auto prose prose-zinc dark:prose-invert">
         <article itemScope itemType="https://schema.org/Article">
-\${perfectContent}
+${perfectContent}
         </article>
       </div>
     </div>
   );
 }
-\`;
+`;
 fs.writeFileSync(seoArticlePath, seoArticleCode, 'utf8');
 
 // 2. Update index.html
 const htmlPath = path.join(__dirname, 'index.html');
 let htmlContent = fs.readFileSync(htmlPath, 'utf8');
 
-const staticHtmlPayload = \`
+const staticHtmlPayload = `
     <!-- Static GEO & AI Crawler Semantic Article Block (100% White-Hat Dynamic Replacement) -->
     <div id="static-seo" class="w-full bg-white dark:bg-zinc-950 py-16 px-6 border-t border-zinc-200 dark:border-zinc-800">
       <div class="max-w-4xl mx-auto prose prose-zinc dark:prose-invert">
         <article itemScope itemType="https://schema.org/Article">
-\${perfectContent.replace(/className=/g, 'class=')}
+${perfectContent.replace(/className=/g, 'class=')}
         </article>
       </div>
     </div>
-\`;
+`;
 
-htmlContent = htmlContent.replace(/<div id="static-seo"[\\s\\S]*?<\\/div>\\s*<\\/div>/g, '');
-htmlContent = htmlContent.replace('<nav id="seo-static-nav"', staticHtmlPayload + '\\n    <nav id="seo-static-nav"');
+htmlContent = htmlContent.replace(/<div id="static-seo"[\s\S]*?<\/div>\s*<\/div>/g, '');
+htmlContent = htmlContent.replace('<nav id="seo-static-nav"', staticHtmlPayload + '\n    <nav id="seo-static-nav"');
 fs.writeFileSync(htmlPath, htmlContent, 'utf8');
