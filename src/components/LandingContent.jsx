@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { landingTranslations } from '../landingTranslations';
 
@@ -38,6 +38,14 @@ const IconStar = () => (
 function LandingContent() {
   const { i18n } = useTranslation();
   const langCode = (i18n.language || 'en').split('-')[0];
+
+  // Force re-render when dark class toggles so CSS vars re-apply correctly
+  const [, forceUpdate] = useState(0);
+  useEffect(() => {
+    const obs = new MutationObserver(() => forceUpdate(n => n + 1));
+    obs.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+    return () => obs.disconnect();
+  }, []);
   const t = landingTranslations[langCode] || landingTranslations.en;
   const [openFaq, setOpenFaq] = useState(null);
 
@@ -52,11 +60,11 @@ function LandingContent() {
       }}
     >
       <style>{`
-        :root {
+        :root, html:not(.dark) {
           --lc-bg: #f5f5f7;
           --lc-text: #1d1d1f;
           --lc-text2: #6e6e73;
-          --lc-card: rgba(255,255,255,0.85);
+          --lc-card: rgba(255,255,255,0.88);
           --lc-card-border: rgba(0,0,0,0.08);
           --lc-blue: #0071e3;
           --lc-blue-light: #e8f1ff;
@@ -66,16 +74,16 @@ function LandingContent() {
           --lc-dark-card: #1c1c1e;
           --lc-radius: 20px;
         }
-        .dark {
+        html.dark {
           --lc-bg: #000000;
           --lc-text: #f5f5f7;
           --lc-text2: #98989d;
-          --lc-card: rgba(28,28,30,0.85);
+          --lc-card: rgba(28,28,30,0.9);
           --lc-card-border: rgba(255,255,255,0.1);
           --lc-blue-light: #1a2b45;
           --lc-divider: rgba(255,255,255,0.1);
-          --lc-shadow: 0 2px 20px rgba(0,0,0,0.4);
-          --lc-shadow-hover: 0 8px 40px rgba(0,0,0,0.6);
+          --lc-shadow: 0 2px 20px rgba(0,0,0,0.5);
+          --lc-shadow-hover: 0 8px 40px rgba(0,0,0,0.7);
           --lc-dark-card: #1c1c1e;
         }
         .lc-wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }

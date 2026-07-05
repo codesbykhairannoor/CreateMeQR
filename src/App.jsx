@@ -25,36 +25,36 @@ const PSEO_ROUTES = {
 
 // 30 Languages Simultaneously for Super GEO & Information Gain PSEO
 const LANGS = [
-  { code: 'en', label: 'English' },
-  { code: 'id', label: 'Indonesia' },
-  { code: 'es', label: 'Español' },
-  { code: 'fr', label: 'Français' },
-  { code: 'de', label: 'Deutsch' },
-  { code: 'pt', label: 'Português' },
-  { code: 'zh', label: '中文' },
-  { code: 'ja', label: '日本語' },
-  { code: 'hi', label: 'हिन्दी' },
-  { code: 'ko', label: '한국어' },
-  { code: 'ar', label: 'العربية' },
-  { code: 'ru', label: 'Русский' },
-  { code: 'it', label: 'Italiano' },
-  { code: 'tr', label: 'Türkçe' },
-  { code: 'nl', label: 'Nederlands' },
-  { code: 'pl', label: 'Polski' },
-  { code: 'sv', label: 'Svenska' },
-  { code: 'vi', label: 'Tiếng Việt' },
-  { code: 'th', label: 'ไทย' },
-  { code: 'el', label: 'Ελληνικά' },
-  { code: 'cs', label: 'Čeština' },
-  { code: 'da', label: 'Dansk' },
-  { code: 'fi', label: 'Suomi' },
-  { code: 'no', label: 'Norsk' },
-  { code: 'hu', label: 'Magyar' },
-  { code: 'ro', label: 'Română' },
-  { code: 'uk', label: 'Українська' },
-  { code: 'ms', label: 'Bahasa Melayu' },
-  { code: 'tl', label: 'Filipino' },
-  { code: 'bn', label: 'বাংলা' }
+  { code: 'en', label: 'English',        flag: '🇺🇸' },
+  { code: 'id', label: 'Indonesia',       flag: '🇮🇩' },
+  { code: 'es', label: 'Español',         flag: '🇪🇸' },
+  { code: 'fr', label: 'Français',        flag: '🇫🇷' },
+  { code: 'de', label: 'Deutsch',         flag: '🇩🇪' },
+  { code: 'pt', label: 'Português',       flag: '🇧🇷' },
+  { code: 'zh', label: '中文',            flag: '🇨🇳' },
+  { code: 'ja', label: '日本語',          flag: '🇯🇵' },
+  { code: 'hi', label: 'हिन्दी',          flag: '🇮🇳' },
+  { code: 'ko', label: '한국어',          flag: '🇰🇷' },
+  { code: 'ar', label: 'العربية',         flag: '🇸🇦' },
+  { code: 'ru', label: 'Русский',         flag: '🇷🇺' },
+  { code: 'it', label: 'Italiano',        flag: '🇮🇹' },
+  { code: 'tr', label: 'Türkçe',          flag: '🇹🇷' },
+  { code: 'nl', label: 'Nederlands',      flag: '🇳🇱' },
+  { code: 'pl', label: 'Polski',          flag: '🇵🇱' },
+  { code: 'sv', label: 'Svenska',         flag: '🇸🇪' },
+  { code: 'vi', label: 'Tiếng Việt',      flag: '🇻🇳' },
+  { code: 'th', label: 'ไทย',            flag: '🇹🇭' },
+  { code: 'el', label: 'Ελληνικά',        flag: '🇬🇷' },
+  { code: 'cs', label: 'Čeština',         flag: '🇨🇿' },
+  { code: 'da', label: 'Dansk',           flag: '🇩🇰' },
+  { code: 'fi', label: 'Suomi',           flag: '🇫🇮' },
+  { code: 'no', label: 'Norsk',           flag: '🇳🇴' },
+  { code: 'hu', label: 'Magyar',          flag: '🇭🇺' },
+  { code: 'ro', label: 'Română',          flag: '🇷🇴' },
+  { code: 'uk', label: 'Українська',      flag: '🇺🇦' },
+  { code: 'ms', label: 'Bahasa Melayu',   flag: '🇲🇾' },
+  { code: 'tl', label: 'Filipino',        flag: '🇵🇭' },
+  { code: 'bn', label: 'বাংলা',           flag: '🇧🇩' },
 ];
 
 function App() {
@@ -98,6 +98,7 @@ function App() {
   const [hasGenerated, setHasGenerated] = useState(false);
   const [activeTab, setActiveTab] = useState('data');
   const [showLangMenu, setShowLangMenu] = useState(false);
+  const [langSearch, setLangSearch] = useState('');
   const [softBannerLang, setSoftBannerLang] = useState(null);
   const [dismissBanner, setDismissBanner] = useState(false);
   
@@ -292,27 +293,67 @@ function App() {
           <div className="flex items-center gap-2">
             <div className="relative">
               <button
-                onClick={() => setShowLangMenu(!showLangMenu)}
+                onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }}
                 aria-label="Change Language"
-                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-900"
+                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
               >
-                <Globe className="w-4 h-4" />
-                <span className="uppercase">{i18n.language?.split('-')[0] || 'EN'}</span>
+                <span style={{ fontSize: 18, lineHeight: 1 }}>
+                  {LANGS.find(l => l.code === (i18n.language?.split('-')[0] || 'en'))?.flag || '🌐'}
+                </span>
+                <span className="uppercase text-xs font-bold tracking-wide">{(i18n.language?.split('-')[0] || 'en').toUpperCase()}</span>
               </button>
               
               {showLangMenu && (
                 <>
-                  <div className="fixed inset-0 z-40" onClick={() => setShowLangMenu(false)}></div>
-                  <div className="absolute right-0 mt-2 w-48 max-h-80 overflow-y-auto custom-scrollbar bg-white dark:bg-zinc-800 rounded-xl shadow-xl border border-zinc-200 dark:border-zinc-700 py-2 z-50">
-                    {LANGS.map(lang => (
-                      <button
-                        key={lang.code}
-                        onClick={() => changeLanguage(lang.code)}
-                        className={`w-full text-left px-4 py-2 text-sm ${i18n.language?.startsWith(lang.code) ? 'text-blue-600 font-semibold bg-blue-50 dark:bg-blue-900/30' : 'text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700'}`}
-                      >
-                        {lang.label}
-                      </button>
-                    ))}
+                  <div className="fixed inset-0 z-40" onClick={() => setShowLangMenu(false)} />
+                  <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-zinc-900 rounded-2xl shadow-2xl border border-zinc-200 dark:border-zinc-800 z-50 overflow-hidden" style={{ boxShadow: '0 8px 40px rgba(0,0,0,0.18)' }}>
+                    {/* Search box */}
+                    <div className="p-3 border-b border-zinc-100 dark:border-zinc-800">
+                      <div className="flex items-center gap-2 bg-zinc-100 dark:bg-zinc-800 rounded-xl px-3 py-2">
+                        <Globe className="w-3.5 h-3.5 text-zinc-400 flex-shrink-0" />
+                        <input
+                          autoFocus
+                          type="text"
+                          placeholder="Search language..."
+                          value={langSearch}
+                          onChange={e => setLangSearch(e.target.value)}
+                          className="bg-transparent text-sm text-zinc-700 dark:text-zinc-200 outline-none w-full placeholder:text-zinc-400"
+                        />
+                      </div>
+                    </div>
+                    {/* Language list */}
+                    <div className="overflow-y-auto" style={{ maxHeight: 280 }}>
+                      {LANGS.filter(l =>
+                        langSearch === '' ||
+                        l.label.toLowerCase().includes(langSearch.toLowerCase()) ||
+                        l.code.toLowerCase().includes(langSearch.toLowerCase())
+                      ).map(lang => {
+                        const isActive = i18n.language?.startsWith(lang.code);
+                        return (
+                          <button
+                            key={lang.code}
+                            onClick={() => { changeLanguage(lang.code); setLangSearch(''); }}
+                            className={`w-full text-left px-4 py-2.5 text-sm flex items-center gap-3 transition-colors ${
+                              isActive
+                                ? 'bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-semibold'
+                                : 'text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+                            }`}
+                          >
+                            <span style={{ fontSize: 20, lineHeight: 1, flexShrink: 0 }}>{lang.flag}</span>
+                            <span className="flex-1 truncate">{lang.label}</span>
+                            <span className="text-xs text-zinc-400 dark:text-zinc-500 font-mono">{lang.code.toUpperCase()}</span>
+                            {isActive && <span className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />}
+                          </button>
+                        );
+                      })}
+                      {LANGS.filter(l =>
+                        langSearch !== '' &&
+                        !l.label.toLowerCase().includes(langSearch.toLowerCase()) &&
+                        !l.code.toLowerCase().includes(langSearch.toLowerCase())
+                      ).length === LANGS.length && (
+                        <div className="px-4 py-6 text-center text-sm text-zinc-400">No languages found</div>
+                      )}
+                    </div>
                   </div>
                 </>
               )}
