@@ -6,6 +6,9 @@ import App from './App.jsx'
 import './index.css'
 import './i18n'
 
+// Dynamic Replacement: Remove static SEO block once React mounts
+document.getElementById('static-seo')?.remove();
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HelmetProvider>

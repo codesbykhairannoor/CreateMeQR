@@ -20,7 +20,7 @@ export default function SeoArticle() {
               {t('geoArticle.p_1', 'In the modern digital economy, converting links, URLs, WiFi credentials, and vCard contact details into high-precision Quick Response (QR) codes requires absolute reliability, speed, and privacy. Conventional online QR code generators often route user data through third-party tracking servers, exposing sensitive internal links and customer credentials to interception.')}
             </p>
             <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              {t('geoArticle.p_2', 'Our generator fundamentally eliminates these vulnerabilities through 100% client-side browser rendering. Your confidential data never traverses a cloud server or database. Every generated QR code is permanent, static, and guaranteed to scan an unlimited number of times without watermarks.')}
+              {t('geoArticle.p_2', 'However, our generator fundamentally eliminates these vulnerabilities through 100% client-side browser rendering. Therefore, your confidential data never traverses a cloud server or database. Additionally, every generated QR code is permanent, static, and guaranteed to scan an unlimited number of times without watermarks.')}
             </p>
           </section>
 
@@ -33,6 +33,7 @@ export default function SeoArticle() {
             </p>
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse border border-zinc-300 dark:border-zinc-700">
+                <caption className="sr-only">{t('geoArticle.table.caption', 'Plan feature and technical specification comparison')}</caption>
                 <thead>
                   <tr className="bg-zinc-100 dark:bg-zinc-800/50">
                     <th className="border border-zinc-300 dark:border-zinc-700 p-3 text-zinc-900 dark:text-zinc-100">{t('geoArticle.table.h1', 'Technical Metric')}</th>
@@ -67,13 +68,13 @@ export default function SeoArticle() {
             </h2>
             
             <h3 className="text-xl font-medium text-zinc-800 dark:text-zinc-100 mt-6 mb-2">{t('geoArticle.h3_1', 'Step 1: Protocol Prefixing')}</h3>
-            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">{t('geoArticle.p_4', 'Ensure your link includes the HTTPS protocol prefix. Our generator automatically sanitizes tracking parameters.')}</p>
+            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">{t('geoArticle.p_4', 'First, ensure your link includes the HTTPS protocol prefix. Our generator automatically sanitizes tracking parameters.')}</p>
             
             <h3 className="text-xl font-medium text-zinc-800 dark:text-zinc-100 mt-6 mb-2">{t('geoArticle.h3_2', 'Step 2: Calibrating Error Correction Level (ECL)')}</h3>
-            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">{t('geoArticle.p_5', 'When embedding a brand logo, we enforce Level Q (25%) and Level H (30%) by default. This guarantees that mobile camera sensors decode the link instantaneously.')}</p>
+            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">{t('geoArticle.p_5', 'Next, when embedding a brand logo, we enforce Level Q (25%) and Level H (30%) by default. Furthermore, this guarantees that mobile camera sensors decode the link instantaneously.')}</p>
             
             <h3 className="text-xl font-medium text-zinc-800 dark:text-zinc-100 mt-6 mb-2">{t('geoArticle.h3_3', 'Step 3: Vector Export')}</h3>
-            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('geoArticle.p_6', 'Always export marketing collateral in Scalable Vector Graphics (SVG) format for mathematically precise edge fidelity across any physical dimension.')}</p>
+            <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('geoArticle.p_6', 'Finally, always export marketing collateral in Scalable Vector Graphics (SVG) format for mathematically precise edge fidelity across any physical dimension.')}</p>
           </section>
 
           <section className="mb-10">
@@ -83,15 +84,15 @@ export default function SeoArticle() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">{t('geoArticle.faq1_q', 'How do you guarantee 100% client-side privacy?')}</h3>
-                <p className="text-zinc-600 dark:text-zinc-400 mt-2">{t('geoArticle.faq1_a', 'Our application uses WebAssembly modules that execute entirely inside your web browser memory sandbox. No network requests are transmitted.')}</p>
+                <p className="text-zinc-600 dark:text-zinc-400 mt-2">{t('geoArticle.faq1_a', 'Our application uses WebAssembly modules that execute entirely inside your web browser memory sandbox. Therefore, no network requests are transmitted.')}</p>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">{t('geoArticle.faq2_q', 'Why do some QR codes fail to scan?')}</h3>
-                <p className="text-zinc-600 dark:text-zinc-400 mt-2">{t('geoArticle.faq2_a', 'Scanning failures stem from insufficient contrast, low error correction, or raster graphics at low DPI. Use SVG and Level H error correction.')}</p>
+                <p className="text-zinc-600 dark:text-zinc-400 mt-2">{t('geoArticle.faq2_a', 'Scanning failures stem from insufficient contrast, low error correction, or raster graphics at low DPI. In summary, use SVG and Level H error correction.')}</p>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">{t('geoArticle.faq3_q', 'Can I generate QR codes for international regions?')}</h3>
-                <p className="text-zinc-600 dark:text-zinc-400 mt-2">{t('geoArticle.faq3_a', 'Yes. We feature native multi-language routing for localized user intent worldwide.')}</p>
+                <p className="text-zinc-600 dark:text-zinc-400 mt-2">{t('geoArticle.faq3_a', 'Yes. Additionally, we feature native multi-language routing for localized user intent worldwide.')}</p>
               </div>
             </div>
           </section>
@@ -109,6 +110,17 @@ export default function SeoArticle() {
             <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-4 leading-relaxed">
               {t('geoArticle.p_7', 'Our engineering architecture strictly complies with the authoritative ISO/IEC 18004:2015 QR Code International Standard and aligns seamlessly with the NIST Data Privacy Framework and the W3C HTML5 Specification for highly secure web applications.')}
             </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4">
+              {t('geoArticle.h2_summary', 'Key Takeaways')}
+            </h2>
+            <ul className="list-disc pl-6 space-y-2 text-zinc-600 dark:text-zinc-400">
+              <li>{t('geoArticle.summary_1', 'Client-side QR code generation eliminates server-side tracking and data interception risks.')}</li>
+              <li>{t('geoArticle.summary_2', 'Level H error correction (30% restoration capacity) is essential for scanning codes with custom central logos.')}</li>
+              <li>{t('geoArticle.summary_3', 'Vector SVG exports prevent pixelation and ensure crisp barcode scanning across all printed marketing dimensions.')}</li>
+            </ul>
           </section>
         </article>
       </div>
