@@ -39,18 +39,12 @@ function LandingContent() {
   const { i18n } = useTranslation();
   const langCode = (i18n.language || 'en').split('-')[0];
 
-  // Force re-render when dark class toggles so CSS vars re-apply correctly
-  const [, forceUpdate] = useState(0);
-  useEffect(() => {
-    const obs = new MutationObserver(() => forceUpdate(n => n + 1));
-    obs.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-    return () => obs.disconnect();
-  }, []);
   const t = landingTranslations[langCode] || landingTranslations.en;
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
     <div
+      className="lc-container"
       style={{
         fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif",
         background: 'var(--lc-bg, #f5f5f7)',
@@ -60,7 +54,7 @@ function LandingContent() {
       }}
     >
       <style>{`
-        :root, html:not(.dark) {
+        .lc-container {
           --lc-bg: #f5f5f7;
           --lc-text: #1d1d1f;
           --lc-text2: #6e6e73;
@@ -74,7 +68,7 @@ function LandingContent() {
           --lc-dark-card: #1c1c1e;
           --lc-radius: 20px;
         }
-        html.dark {
+        .dark .lc-container {
           --lc-bg: #000000;
           --lc-text: #f5f5f7;
           --lc-text2: #98989d;
