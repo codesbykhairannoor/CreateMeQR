@@ -283,7 +283,7 @@ function App() {
       )}
 
       {/* Premium Glass Navbar */}
-      <nav className="fixed top-0 w-full bg-white/70 dark:bg-black/70 backdrop-blur-2xl border-b border-zinc-200 dark:border-zinc-900 z-50 transition-colors duration-500">
+      <nav className="fixed top-0 w-full bg-white/70 dark:bg-zinc-950/70 backdrop-blur-2xl border-b border-zinc-200 dark:border-zinc-900 z-50 transition-colors duration-500">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="/logoqr.webp" alt="CreateMy-QR Logo - Free Editable QR Code Generator Online" className="w-8 h-8 rounded-xl object-contain shadow-sm" />
@@ -306,7 +306,7 @@ function App() {
               {showLangMenu && (
                 <>
                   <div className="fixed inset-0 z-40" onClick={() => setShowLangMenu(false)} />
-                  <div className="absolute right-0 mt-2 w-72 bg-white dark:bg-[#0a0a0a] rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] dark:shadow-[0_20px_60px_-15px_rgba(255,255,255,0.05)] border border-zinc-200 dark:border-zinc-800 z-50 overflow-hidden transform origin-top-right transition-all">
+                  <div className="absolute right-0 mt-2 w-72 bg-white dark:bg-[#18181b] rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] dark:shadow-[0_20px_60px_-15px_rgba(255,255,255,0.05)] border border-zinc-200 dark:border-zinc-800 z-50 overflow-hidden transform origin-top-right transition-all">
                     {/* Search box */}
                     <div className="p-4 border-b border-zinc-100 dark:border-zinc-900">
                       <div className="flex items-center gap-3 bg-zinc-100 dark:bg-zinc-900 rounded-2xl px-4 py-3">
@@ -342,7 +342,7 @@ function App() {
                             <span style={{ fontSize: 20, lineHeight: 1, flexShrink: 0 }}>{lang.flag}</span>
                             <span className="flex-1 truncate tracking-tight">{lang.label}</span>
                             <span className="text-[11px] text-zinc-400 dark:text-zinc-600 font-mono font-bold tracking-widest">{lang.code.toUpperCase()}</span>
-                            {isActive && <span className="w-1.5 h-1.5 rounded-full bg-black dark:bg-white flex-shrink-0" />}
+                            {isActive && <span className="w-1.5 h-1.5 rounded-full bg-zinc-900 dark:bg-white flex-shrink-0" />}
                           </button>
                         );
                       })}
@@ -374,7 +374,7 @@ function App() {
         <section className="max-w-4xl mx-auto px-6 text-center mb-24">
           <div className="animate-fade-in-up">
             <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-zinc-100 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 font-bold text-xs tracking-widest uppercase mb-8 border border-zinc-200 dark:border-zinc-800 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-black dark:bg-white animate-pulse"></span>
+              <span className="w-2 h-2 rounded-full bg-zinc-900 dark:bg-white animate-pulse"></span>
               {t('badge')}
             </div>
             <h1 className="text-[clamp(44px,7vw,80px)] font-bold text-black dark:text-white tracking-tighter mb-6 leading-[1.05]">
@@ -448,7 +448,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-200 dark:border-zinc-900 bg-white dark:bg-black py-12 text-center text-zinc-500 dark:text-zinc-600 text-sm">
+      <footer className="border-t border-zinc-200 dark:border-zinc-900 bg-white dark:bg-zinc-950 py-12 text-center text-zinc-500 dark:text-zinc-600 text-sm">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© {new Date().getFullYear()} CreateMy-QR Technologies. All rights reserved.</p>
           <div className="flex gap-6 font-medium text-black dark:text-white">

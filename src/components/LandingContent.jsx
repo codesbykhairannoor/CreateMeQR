@@ -57,11 +57,11 @@ function LandingContent() {
         }
 
         html.dark .hq-wrapper {
-          --hq-bg: #000000;
+          --hq-bg: #09090b;
           --hq-text: #ffffff;
           --hq-text-muted: #888888;
-          --hq-card: #0a0a0a;
-          --hq-border: #222222;
+          --hq-card: #18181b;
+          --hq-border: #27272a;
           --hq-accent: #ffffff;
           --hq-accent-glow: rgba(255,255,255,0.1);
           --hq-shadow: 0 10px 40px -10px rgba(255,255,255,0.05);
@@ -300,7 +300,7 @@ function LandingContent() {
       </section>
 
       {/* 5. TRUST STANDARDS TERMINAL */}
-      <section className="hq-section" style={{ background: '#000000', color: '#ffffff' }}>
+      <section className="hq-section" style={{ background: 'var(--hq-bg)', color: '#ffffff' }}>
         <div className="hq-container" style={{ textAlign: 'center' }}>
           <div className="hq-pill" style={{ background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1px solid rgba(255,255,255,0.2)' }}>
             {t.badgeTrust || 'Security & Compliance'}
