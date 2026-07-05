@@ -8,6 +8,7 @@ const CustomizationPanel = React.lazy(() => import('./components/CustomizationPa
 import Preview from './components/Preview';
 const EmbedWidgetModal = React.lazy(() => import('./components/EmbedWidgetModal'));
 import './i18n';
+import seoKeywords from './seoKeywords';
 
 const PSEO_ROUTES = {
   '/': 'url',
@@ -190,6 +191,7 @@ function App() {
         <title>{currentSeo.title}</title>
         <meta name="title" content={currentSeo.title} />
         <meta name="description" content={currentSeo.description} />
+        <meta name="keywords" content={seoKeywords[currentLangCode] || seoKeywords.en} />
         {/* Bidirectional Hreflang Matrix for 30 Languages */}
         {LANGS.map(lang => {
           const href = `https://www.createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
