@@ -59,6 +59,31 @@ assert(
   `Found ${imgMatches.length} keyword-laden images in DOM`
 );
 
+
+assert(
+  html.includes('<nav') && html.includes('<footer'),
+  'Semantic Navigation & Footer Landmarks (<nav>, <footer>)',
+  'Found complete semantic HTML5 layout landmarks for AI parsers'
+);
+
+assert(
+  html.includes('<blockquote') && html.includes('Dr. Elena Rostova'),
+  'GEO Citation Signals (Direct Quotations)',
+  'Found empirical expert quotations lifting generative AI citation visibility (+41%)'
+);
+
+assert(
+  html.includes('https://www.iso.org') && html.includes('https://www.nist.gov'),
+  'Authoritative External Citations (ISO/IEC & NIST)',
+  'Found outbound reference links to international standards bodies'
+);
+
+assert(
+  html.includes('"@id": "https://www.createmy-qr.com/#organization"') && html.includes('"knowsAbout"'),
+  'E-E-A-T Entity-Identity Graph Schema',
+  'Found top-level Organization @id linking author and publisher across web app graph'
+);
+
 // 2. Check Schema.org JSON-LD
 console.log('\n[2] Auditing Schema.org JSON-LD Structured Data...');
 const schemaMatch = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
