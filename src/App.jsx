@@ -392,7 +392,7 @@ function App() {
 
         {/* Generator Application Workspace */}
         <section className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-zinc-50/50 dark:bg-[#111111] border border-zinc-200 dark:border-zinc-900 rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-900 rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
         
         {/* HIDDEN SEMANTIC CORE FOR SEO BOTS (GRAY HAT PSEO) */}
         <div className="sr-only" aria-hidden="true">
@@ -406,19 +406,19 @@ function App() {
               <div className="flex space-x-2 bg-zinc-200/50 dark:bg-zinc-900/80 p-1.5 rounded-2xl mb-8 border border-zinc-200/50 dark:border-zinc-800/50">
                 <button
                   onClick={() => setActiveTab('data')}
-                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'data' ? 'bg-white dark:bg-[#1a1a1a] text-black dark:text-white shadow-sm border border-zinc-200/50 dark:border-zinc-800' : 'text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white'}`}
+                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'data' ? 'bg-blue-600 text-white shadow-md border-transparent' : 'text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white'}`}
                 >
                   {t('tabs.step1')}
                 </button>
                 <button
                   onClick={() => hasGenerated && setActiveTab('design')}
-                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'design' ? 'bg-white dark:bg-[#1a1a1a] text-black dark:text-white shadow-sm border border-zinc-200/50 dark:border-zinc-800' : 'text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white'} ${!hasGenerated ? 'cursor-not-allowed opacity-50' : ''}`}
+                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'design' ? 'bg-blue-600 text-white shadow-md border-transparent' : 'text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white'} ${!hasGenerated ? 'cursor-not-allowed opacity-50' : ''}`}
                 >
                   {t('tabs.step2')}
                 </button>
               </div>
 
-              <div className="bg-white dark:bg-transparent border border-zinc-200 dark:border-zinc-900 rounded-3xl shadow-sm overflow-hidden flex flex-col min-h-[500px]">
+              <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-900 rounded-3xl shadow-sm overflow-hidden flex flex-col min-h-[500px]">
                 <div className="flex-1 overflow-y-auto custom-scrollbar">
                   {activeTab === 'data' ? (
                     <InputForm 
