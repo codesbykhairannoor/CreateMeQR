@@ -29,7 +29,6 @@ export default function LandingContent() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Card 1 */}
           <div className="bg-white dark:bg-zinc-900/80 p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl group-hover:bg-emerald-500/10 transition-all"></div>
             <div className="flex items-center gap-3 mb-6">
@@ -42,7 +41,6 @@ export default function LandingContent() {
             <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">{t.comp1Desc}</p>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-white dark:bg-zinc-900/80 p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-full blur-2xl group-hover:bg-blue-500/10 transition-all"></div>
             <div className="flex items-center gap-3 mb-6">
@@ -55,7 +53,6 @@ export default function LandingContent() {
             <p className="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">{t.comp2Desc}</p>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-white dark:bg-zinc-900/80 p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full blur-2xl group-hover:bg-purple-500/10 transition-all"></div>
             <div className="flex items-center gap-3 mb-6">
@@ -147,10 +144,10 @@ export default function LandingContent() {
         </div>
         <div className="flex items-center gap-4 shrink-0">
           <div className="px-5 py-3 rounded-2xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 font-bold text-xs text-zinc-800 dark:text-zinc-200 shadow-sm">
-            ISO/IEC 18004:2015
+            Global Barcode Rules
           </div>
           <div className="px-5 py-3 rounded-2xl bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 font-bold text-xs text-zinc-800 dark:text-zinc-200 shadow-sm">
-            NIST Privacy Gold
+            Federal Safety Gold
           </div>
         </div>
       </div>
