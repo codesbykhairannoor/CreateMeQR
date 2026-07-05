@@ -435,6 +435,7 @@ function App() {
                       <React.Suspense fallback={<div className="p-12 text-center text-zinc-500 font-medium tracking-tight">Loading premium tools...</div>}><CustomizationPanel visuals={visuals} setVisuals={setVisuals} /></React.Suspense>
                     </div>
                   )}
+                </div>
               </div>
             </div>
 
