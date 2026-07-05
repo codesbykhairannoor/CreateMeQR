@@ -191,6 +191,8 @@ function App() {
         <title>{currentSeo.title}</title>
         <meta name="title" content={currentSeo.title} />
         <meta name="description" content={currentSeo.description} />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <link rel="canonical" href={`https://www.createmy-qr.com${slug === '/' ? '' : slug}`} />
         <meta name="keywords" content={seoKeywords[currentLangCode] || seoKeywords.en} />
         {/* Bidirectional Hreflang Matrix for 30 Languages */}
         {LANGS.map(lang => {
@@ -282,7 +284,7 @@ function App() {
       <nav className="fixed top-0 w-full bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-zinc-800/50 z-50">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logoqr.webp" alt="CreateMy-QR Logo" className="w-8 h-8 rounded-lg object-contain" />
+            <img src="/logoqr.webp" alt="CreateMy-QR Logo - Free Editable QR Code Generator Online" className="w-8 h-8 rounded-lg object-contain" />
             <span className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight">CreateMy-QR</span>
           </div>
           
@@ -408,20 +410,20 @@ function App() {
         <section className="max-w-7xl mx-auto px-6 mt-32">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="md:col-span-2 bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl p-8 border border-zinc-200/50 dark:border-zinc-800/50">
-              <Lock className="w-8 h-8 text-blue-600 mb-6" />
+              <div class="flex items-center gap-3 mb-6"><img src="/logoqr.webp" alt="Client-Side Privacy QR Code Generator" width="40" height="40" class="object-contain" /><Lock className="w-6 h-6 text-blue-600" /></div>
               <h3 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight mb-2">{t('features.privacyTitle')}</h3>
               <p className="text-zinc-600 dark:text-zinc-300">{t('features.privacyDesc')}</p>
             </div>
             
             <div className="bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl p-8 border border-zinc-200/50 dark:border-zinc-800/50">
-              <Zap className="w-8 h-8 text-blue-600 mb-6" />
+              <div class="flex items-center gap-3 mb-6"><img src="/favicon.svg" alt="Free QR Code Maker Online Without Signup" width="40" height="40" class="object-contain" /><Zap className="w-6 h-6 text-blue-600" /></div>
               <h3 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight mb-2">{t('features.signupTitle')}</h3>
               <p className="text-zinc-600 dark:text-zinc-300">{t('features.signupDesc')}</p>
             </div>
 
             <div className="md:col-span-3 bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl p-8 border border-zinc-200/50 dark:border-zinc-800/50 flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="max-w-xl">
-                <Palette className="w-8 h-8 text-blue-600 mb-6" />
+                <div class="flex items-center gap-3 mb-6"><img src="/logoqr.png" alt="Custom QR Code with Logo and Colors Vector Download" width="40" height="40" class="object-contain" /><Palette className="w-6 h-6 text-blue-600" /></div>
                 <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">{t('features.customTitle')}</h2>
                 <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed text-sm">{t('features.customDesc')}</p>
               </div>
