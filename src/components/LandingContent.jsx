@@ -2,433 +2,326 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { landingTranslations } from '../landingTranslations';
 
-// iOS-style phosphor-inspired icons using inline SVG paths
 const IconCheck = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M20 6 9 17l-5-5"/>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="20 6 9 17 4 12"></polyline>
   </svg>
 );
 const IconZap = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
   </svg>
 );
 const IconShield = () => (
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
   </svg>
 );
 const IconChevronDown = ({ open }) => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ transform: open ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.25s ease' }}>
-    <path d="m6 9 6 6 6-6"/>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: open ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
+    <polyline points="6 9 12 15 18 9"></polyline>
   </svg>
 );
 const IconGlobe = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10"/>
-    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-  </svg>
-);
-const IconStar = () => (
-  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none">
-    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10"></circle>
+    <line x1="2" y1="12" x2="22" y2="12"></line>
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
   </svg>
 );
 
 function LandingContent() {
   const { i18n } = useTranslation();
   const langCode = (i18n.language || 'en').split('-')[0];
-
   const t = landingTranslations[langCode] || landingTranslations.en;
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
-    <div
-      className="lc-container"
-      style={{
-        fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif",
-        background: 'var(--lc-bg, #f5f5f7)',
-        color: 'var(--lc-text, #1d1d1f)',
-        padding: '72px 0 0',
-        width: '100%',
-      }}
-    >
+    <div className="hq-wrapper">
       <style>{`
-        .lc-container {
-          --lc-bg: #f5f5f7;
-          --lc-text: #1d1d1f;
-          --lc-text2: #6e6e73;
-          --lc-card: rgba(255,255,255,0.88);
-          --lc-card-border: rgba(0,0,0,0.08);
-          --lc-blue: #0071e3;
-          --lc-blue-light: #e8f1ff;
-          --lc-divider: rgba(0,0,0,0.1);
-          --lc-shadow: 0 2px 20px rgba(0,0,0,0.06);
-          --lc-shadow-hover: 0 8px 40px rgba(0,0,0,0.12);
-          --lc-dark-card: #1c1c1e;
-          --lc-radius: 20px;
+        .hq-wrapper {
+          --hq-bg: #ffffff;
+          --hq-text: #000000;
+          --hq-text-muted: #666666;
+          --hq-card: #f9f9f9;
+          --hq-border: #eaeaea;
+          --hq-accent: #000000;
+          --hq-accent-glow: rgba(0,0,0,0.1);
+          --hq-shadow: 0 10px 40px -10px rgba(0,0,0,0.08);
+          --hq-hover-shadow: 0 20px 60px -15px rgba(0,0,0,0.15);
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", sans-serif;
+          background: var(--hq-bg);
+          color: var(--hq-text);
+          padding-top: 60px;
+          transition: background 0.5s ease, color 0.5s ease;
         }
-        .dark .lc-container {
-          --lc-bg: #000000;
-          --lc-text: #f5f5f7;
-          --lc-text2: #98989d;
-          --lc-card: rgba(28,28,30,0.9);
-          --lc-card-border: rgba(255,255,255,0.1);
-          --lc-blue-light: #1a2b45;
-          --lc-divider: rgba(255,255,255,0.1);
-          --lc-shadow: 0 2px 20px rgba(0,0,0,0.5);
-          --lc-shadow-hover: 0 8px 40px rgba(0,0,0,0.7);
-          --lc-dark-card: #1c1c1e;
+
+        html.dark .hq-wrapper {
+          --hq-bg: #000000;
+          --hq-text: #ffffff;
+          --hq-text-muted: #888888;
+          --hq-card: #0a0a0a;
+          --hq-border: #222222;
+          --hq-accent: #ffffff;
+          --hq-accent-glow: rgba(255,255,255,0.1);
+          --hq-shadow: 0 10px 40px -10px rgba(255,255,255,0.05);
+          --hq-hover-shadow: 0 20px 60px -15px rgba(255,255,255,0.1);
         }
-        .lc-wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-        .lc-section { padding: 80px 0; }
-        .lc-eyebrow {
-          display: inline-flex; align-items: center; gap: 6px;
-          font-size: 13px; font-weight: 600; letter-spacing: 0.02em;
-          color: var(--lc-blue); background: var(--lc-blue-light);
-          padding: 6px 14px; border-radius: 999px;
-          margin-bottom: 16px;
+
+        .hq-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .hq-section { padding: 100px 0; position: relative; }
+        
+        .hq-title {
+          font-size: clamp(40px, 6vw, 64px);
+          font-weight: 800;
+          letter-spacing: -0.04em;
+          line-height: 1.05;
+          margin-bottom: 24px;
         }
-        .lc-h2 {
-          font-size: clamp(28px, 5vw, 46px); font-weight: 700;
-          letter-spacing: -0.025em; line-height: 1.08;
-          color: var(--lc-text); margin: 0 0 16px;
+        .hq-subtitle {
+          font-size: clamp(18px, 2vw, 22px);
+          color: var(--hq-text-muted);
+          line-height: 1.5;
+          max-width: 600px;
         }
-        .lc-lead {
-          font-size: 17px; line-height: 1.6;
-          color: var(--lc-text2); max-width: 580px; margin: 0 auto;
-        }
-        .lc-card {
-          background: var(--lc-card);
-          backdrop-filter: saturate(180%) blur(20px);
-          -webkit-backdrop-filter: saturate(180%) blur(20px);
-          border: 1px solid var(--lc-card-border);
-          border-radius: var(--lc-radius);
-          box-shadow: var(--lc-shadow);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-          overflow: hidden;
-        }
-        .lc-card:hover {
-          transform: translateY(-3px);
-          box-shadow: var(--lc-shadow-hover);
-        }
-        .lc-icon-bubble {
-          width: 46px; height: 46px; border-radius: 14px;
-          display: flex; align-items: center; justify-content: center;
-          margin-bottom: 18px; flex-shrink: 0;
-        }
-        .lc-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-        @media (max-width: 768px) { .lc-grid-3 { grid-template-columns: 1fr; } }
-        .lc-stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; }
-        @media (max-width: 640px) { .lc-stat-grid { grid-template-columns: repeat(2, 1fr); } }
-        .lc-bento { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-        @media (max-width: 768px) { .lc-bento { grid-template-columns: 1fr; } }
-        .lc-faq-item {
-          border-bottom: 1px solid var(--lc-divider);
-          padding: 0;
-        }
-        .lc-faq-btn {
-          width: 100%; display: flex; align-items: center; justify-content: space-between;
-          gap: 16px; padding: 20px 0;
-          background: none; border: none; cursor: pointer;
-          text-align: left; font-size: 17px; font-weight: 500;
-          color: var(--lc-text);
-          font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
-        }
-        .lc-faq-body {
-          font-size: 15px; line-height: 1.65; color: var(--lc-text2);
-          padding: 0 0 20px;
-        }
-        .lc-steps-num {
-          width: 44px; height: 44px; border-radius: 12px;
-          display: flex; align-items: center; justify-content: center;
-          font-size: 20px; font-weight: 700; color: #fff;
-          margin-bottom: 16px; flex-shrink: 0;
-        }
-        .lc-trust-badge {
+
+        .hq-pill {
           display: inline-flex; align-items: center; gap: 8px;
-          padding: 10px 18px; border-radius: 12px;
-          font-size: 13px; font-weight: 600;
-          background: var(--lc-card); border: 1px solid var(--lc-card-border);
-          color: var(--lc-text); box-shadow: var(--lc-shadow);
+          padding: 6px 16px; border-radius: 999px;
+          font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+          background: var(--hq-accent-glow); color: var(--hq-accent);
+          border: 1px solid var(--hq-border);
+          margin-bottom: 32px;
         }
-        .lc-cta-btn {
-          display: inline-flex; align-items: center; justify-content: center;
-          padding: 16px 36px; border-radius: 999px;
-          background: var(--lc-blue); color: #fff;
-          font-size: 17px; font-weight: 600; border: none; cursor: pointer;
-          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-          transition: transform 0.2s ease, opacity 0.2s ease;
-          text-decoration: none;
+
+        /* Bento Grid Architecture */
+        .hq-bento {
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+          gap: 24px;
+          margin-top: 60px;
         }
-        .lc-cta-btn:hover { opacity: 0.88; transform: scale(1.02); }
-        .lc-cta-btn:active { transform: scale(0.97); }
+
+        .hq-card {
+          background: var(--hq-card);
+          border: 1px solid var(--hq-border);
+          border-radius: 24px;
+          padding: 40px;
+          position: relative;
+          overflow: hidden;
+          transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .hq-card:hover {
+          transform: translateY(-4px);
+          box-shadow: var(--hq-hover-shadow);
+        }
+        
+        /* Subtle Glow on Cards */
+        .hq-card::before {
+          content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+          background: linear-gradient(90deg, transparent, var(--hq-accent-glow), transparent);
+          opacity: 0; transition: opacity 0.4s;
+        }
+        .hq-card:hover::before { opacity: 1; }
+
+        .hq-card-title { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 16px; }
+        .hq-card-desc { font-size: 16px; line-height: 1.6; color: var(--hq-text-muted); }
+
+        .hq-icon-box {
+          width: 56px; height: 56px; border-radius: 16px;
+          background: var(--hq-accent); color: var(--hq-bg);
+          display: flex; align-items: center; justify-content: center;
+          margin-bottom: 24px;
+        }
+
+        /* Giant Numbers */
+        .hq-giant-num {
+          font-size: 120px; font-weight: 900; letter-spacing: -0.06em; line-height: 1;
+          background: linear-gradient(180deg, var(--hq-text) 0%, transparent 120%);
+          -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+          opacity: 0.2; position: absolute; right: -10px; bottom: -20px;
+          pointer-events: none;
+        }
+
+        /* FAQ Styling */
+        .hq-faq-wrap { max-width: 800px; margin: 0 auto; }
+        .hq-faq-item {
+          border-bottom: 1px solid var(--hq-border);
+        }
+        .hq-faq-btn {
+          width: 100%; display: flex; justify-content: space-between; align-items: center;
+          padding: 32px 0; background: none; border: none; cursor: pointer;
+          font-size: 20px; font-weight: 600; color: var(--hq-text); text-align: left;
+          letter-spacing: -0.01em;
+        }
+        .hq-faq-body {
+          padding-bottom: 32px; font-size: 16px; line-height: 1.7; color: var(--hq-text-muted);
+        }
+
+        /* Marquee Stats */
+        .hq-stats-banner {
+          border-top: 1px solid var(--hq-border); border-bottom: 1px solid var(--hq-border);
+          background: var(--hq-card); padding: 40px 0; overflow: hidden;
+          display: flex; flex-wrap: wrap; justify-content: center; gap: 80px;
+        }
+        .hq-stat-group { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+        .hq-stat-val { font-size: 48px; font-weight: 800; letter-spacing: -0.04em; }
+        .hq-stat-lbl { font-size: 14px; font-weight: 600; color: var(--hq-text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+
+        @media (max-width: 992px) {
+          .hq-bento > div { grid-column: span 12 !important; }
+          .hq-stats-banner { gap: 40px; }
+        }
       `}</style>
 
-      {/* ── SECTION 1: Why We Lead ── */}
-      <div className="lc-section">
-        <div className="lc-wrap">
-          <div style={{ textAlign: 'center', marginBottom: 48 }}>
-            <span className="lc-eyebrow">{t.badgeLeadMarket || 'Why We Lead'}</span>
-            <h2 className="lc-h2">{t.heroTitle}</h2>
-            <p className="lc-lead">{t.heroSubtitle}</p>
+      {/* 1. ARCHITECTURE / VALUE PROP */}
+      <section className="hq-section">
+        <div className="hq-container">
+          <div style={{ maxWidth: 800 }}>
+            <div className="hq-pill">{t.badgeLeadMarket || 'The Engineering Standard'}</div>
+            <h2 className="hq-title">{t.heroTitle}</h2>
+            <p className="hq-subtitle">{t.heroSubtitle}</p>
           </div>
 
-          <div className="lc-grid-3">
-            {/* Card 1 - Forever Free */}
-            <div className="lc-card" style={{ padding: '28px 28px 32px' }}>
-              <div className="lc-icon-bubble" style={{ background: 'linear-gradient(135deg,#34c759,#30d158)' }}>
-                <IconCheck />
-              </div>
-              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#34c759', marginBottom: 10 }}>
-                {t.badgeFree || 'Forever Free'}
-              </div>
-              <h3 style={{ fontSize: 19, fontWeight: 600, color: 'var(--lc-text)', margin: '0 0 10px', lineHeight: 1.2 }}>{t.comp1Title}</h3>
-              <p style={{ fontSize: 14, lineHeight: 1.65, color: 'var(--lc-text2)', margin: 0 }}>{t.comp1Desc}</p>
+          <div className="hq-bento">
+            {/* Span 4 x 3 */}
+            <div className="hq-card" style={{ gridColumn: 'span 4' }}>
+              <div className="hq-icon-box"><IconCheck /></div>
+              <h3 className="hq-card-title">{t.comp1Title}</h3>
+              <p className="hq-card-desc">{t.comp1Desc}</p>
             </div>
-
-            {/* Card 2 - Zero Ads */}
-            <div className="lc-card" style={{ padding: '28px 28px 32px' }}>
-              <div className="lc-icon-bubble" style={{ background: 'linear-gradient(135deg,#007aff,#0071e3)' }}>
-                <IconZap />
-              </div>
-              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#007aff', marginBottom: 10 }}>
-                {t.badgeZeroAds || 'Zero Ads'}
-              </div>
-              <h3 style={{ fontSize: 19, fontWeight: 600, color: 'var(--lc-text)', margin: '0 0 10px', lineHeight: 1.2 }}>{t.comp2Title}</h3>
-              <p style={{ fontSize: 14, lineHeight: 1.65, color: 'var(--lc-text2)', margin: 0 }}>{t.comp2Desc}</p>
+            <div className="hq-card" style={{ gridColumn: 'span 4' }}>
+              <div className="hq-icon-box"><IconZap /></div>
+              <h3 className="hq-card-title">{t.comp2Title}</h3>
+              <p className="hq-card-desc">{t.comp2Desc}</p>
             </div>
-
-            {/* Card 3 - Private */}
-            <div className="lc-card" style={{ padding: '28px 28px 32px' }}>
-              <div className="lc-icon-bubble" style={{ background: 'linear-gradient(135deg,#af52de,#bf5af2)' }}>
-                <IconShield />
-              </div>
-              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#bf5af2', marginBottom: 10 }}>
-                {t.badgePrivate || '100% Private'}
-              </div>
-              <h3 style={{ fontSize: 19, fontWeight: 600, color: 'var(--lc-text)', margin: '0 0 10px', lineHeight: 1.2 }}>{t.comp3Title}</h3>
-              <p style={{ fontSize: 14, lineHeight: 1.65, color: 'var(--lc-text2)', margin: 0 }}>{t.comp3Desc}</p>
+            <div className="hq-card" style={{ gridColumn: 'span 4' }}>
+              <div className="hq-icon-box"><IconShield /></div>
+              <h3 className="hq-card-title">{t.comp3Title}</h3>
+              <p className="hq-card-desc">{t.comp3Desc}</p>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* 2. STATS INJECTION */}
+      <div className="hq-stats-banner">
+        {[
+          { v: t.stat1Value || '< 12ms', l: t.stat1Label || 'Latency' },
+          { v: t.stat2Value || '100%', l: t.stat2Label || 'Privacy' },
+          { v: t.stat3Value || '30', l: t.stat3Label || 'Languages' },
+          { v: t.stat4Value || '∞', l: t.stat4Label || 'Scans' }
+        ].map((s, i) => (
+          <div key={i} className="hq-stat-group">
+            <div className="hq-stat-val">{s.v}</div>
+            <div className="hq-stat-lbl">{s.l}</div>
+          </div>
+        ))}
       </div>
 
-      {/* ── SECTION 2: Stats Bar ── */}
-      <div style={{ background: 'var(--lc-dark-card)', padding: '0' }}>
-        <div className="lc-wrap" style={{ paddingTop: 0, paddingBottom: 0 }}>
-          <div style={{ textAlign: 'center', padding: '56px 0 36px' }}>
-            <h2 style={{ fontSize: 'clamp(22px,4vw,34px)', fontWeight: 700, color: '#f5f5f7', margin: '0 0 8px', letterSpacing: '-0.02em' }}>
-              {t.statsTitle || 'Trusted By Millions of Creators'}
-            </h2>
-          </div>
-          <div className="lc-stat-grid" style={{ background: 'rgba(255,255,255,0.04)', borderRadius: 20, overflow: 'hidden', marginBottom: 56 }}>
-            {[
-              { value: t.stat1Value || '< 12ms', label: t.stat1Label || 'Generation Speed' },
-              { value: t.stat2Value || '100%',   label: t.stat2Label || 'Client-Side Privacy' },
-              { value: t.stat3Value || '30',      label: t.stat3Label || 'Languages Supported' },
-              { value: t.stat4Value || '∞',       label: t.stat4Label || 'Free Scans, Forever' },
-            ].map((stat, i) => (
-              <div
-                key={i}
-                style={{
-                  padding: '32px 24px',
-                  textAlign: 'center',
-                  borderRight: i < 3 ? '1px solid rgba(255,255,255,0.07)' : 'none',
-                }}
-              >
-                <div style={{ fontSize: 'clamp(28px,4vw,40px)', fontWeight: 700, color: '#f5f5f7', letterSpacing: '-0.03em', lineHeight: 1.1, marginBottom: 8 }}>
-                  {stat.value}
-                </div>
-                <div style={{ fontSize: 13, color: '#98989d', fontWeight: 500 }}>
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* ── SECTION 3: 3-Step Guide ── */}
-      <div className="lc-section">
-        <div className="lc-wrap">
-          <div style={{ textAlign: 'center', marginBottom: 52 }}>
-            <span className="lc-eyebrow">{t.badgeQuickStart || 'Quick Start'}</span>
-            <h2 className="lc-h2">{t.stepsTitle}</h2>
-          </div>
-
-          <div className="lc-grid-3">
-            {[
-              { num: '1', color: '#007aff', shadow: 'rgba(0,122,255,0.3)', title: t.step1Title, desc: t.step1Desc },
-              { num: '2', color: '#34c759', shadow: 'rgba(52,199,89,0.3)',  title: t.step2Title, desc: t.step2Desc },
-              { num: '3', color: '#bf5af2', shadow: 'rgba(191,90,242,0.3)', title: t.step3Title, desc: t.step3Desc },
-            ].map((step, i) => (
-              <div key={i} className="lc-card" style={{ padding: '32px 28px 36px' }}>
-                <div className="lc-steps-num" style={{ background: step.color, boxShadow: `0 8px 24px ${step.shadow}` }}>
-                  {step.num}
-                </div>
-                <h3 style={{ fontSize: 18, fontWeight: 600, color: 'var(--lc-text)', margin: '0 0 10px', lineHeight: 1.3 }}>{step.title}</h3>
-                <p style={{ fontSize: 14, lineHeight: 1.65, color: 'var(--lc-text2)', margin: 0 }}>{step.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* ── SECTION 4: Use Cases Bento ── */}
-      <div style={{ background: 'var(--lc-dark-card)', padding: '80px 0' }}>
-        <div className="lc-wrap">
-          <div style={{ textAlign: 'center', marginBottom: 52 }}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontSize: 13, fontWeight: 600, letterSpacing: '0.02em', color: '#007aff', background: 'rgba(0,122,255,0.15)', padding: '6px 14px', borderRadius: 999, marginBottom: 16 }}>
-              {t.badgeUseCases || 'Use Cases'}
-            </span>
-            <h2 style={{ fontSize: 'clamp(26px,4vw,42px)', fontWeight: 700, letterSpacing: '-0.025em', color: '#f5f5f7', margin: '0 0 16px' }}>
-              {t.useCasesTitle || 'Perfect For Every Situation'}
-            </h2>
-          </div>
-
-          {/* Asymmetric bento: 2 large + 3 small */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: 14 }}>
-            {/* Large card 1 */}
-            <div style={{ gridColumn: 'span 7', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 20, padding: '40px 36px', backdropFilter: 'blur(20px)' }}>
-              <div style={{ fontSize: 36, marginBottom: 16 }}>🍽️</div>
-              <h3 style={{ fontSize: 22, fontWeight: 600, color: '#f5f5f7', margin: '0 0 12px' }}>{t.useCase1Title}</h3>
-              <p style={{ fontSize: 15, lineHeight: 1.65, color: '#98989d', margin: 0 }}>{t.useCase1Desc}</p>
-            </div>
-            {/* Large card 2 */}
-            <div style={{ gridColumn: 'span 5', background: 'linear-gradient(135deg, rgba(0,122,255,0.25), rgba(0,122,255,0.08))', border: '1px solid rgba(0,122,255,0.2)', borderRadius: 20, padding: '40px 32px', backdropFilter: 'blur(20px)' }}>
-              <div style={{ fontSize: 36, marginBottom: 16 }}>💼</div>
-              <h3 style={{ fontSize: 22, fontWeight: 600, color: '#f5f5f7', margin: '0 0 12px' }}>{t.useCase2Title}</h3>
-              <p style={{ fontSize: 15, lineHeight: 1.65, color: '#98989d', margin: 0 }}>{t.useCase2Desc}</p>
-            </div>
-            {/* 3 small cards */}
-            {[
-              { emoji: '📶', title: t.useCase3Title, desc: t.useCase3Desc },
-              { emoji: '🎟️', title: t.useCase4Title, desc: t.useCase4Desc },
-              { emoji: '🏪', title: t.useCase5Title, desc: t.useCase5Desc },
-            ].map((uc, i) => (
-              <div key={i} style={{ gridColumn: 'span 4', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 18, padding: '28px 24px', backdropFilter: 'blur(10px)' }}>
-                <div style={{ fontSize: 28, marginBottom: 12 }}>{uc.emoji}</div>
-                <h3 style={{ fontSize: 16, fontWeight: 600, color: '#f5f5f7', margin: '0 0 8px' }}>{uc.title}</h3>
-                <p style={{ fontSize: 13, lineHeight: 1.6, color: '#98989d', margin: 0 }}>{uc.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Mobile fallback for bento */}
-          <style>{`@media (max-width: 768px) {
-            .lc-bento-inner > div { grid-column: span 12 !important; }
-          }`}</style>
-        </div>
-      </div>
-
-      {/* ── SECTION 5: FAQ Accordion ── */}
-      <div className="lc-section">
-        <div className="lc-wrap">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}>
-            {/* Left: Header */}
-            <div style={{ position: 'sticky', top: 100 }}>
-              <span className="lc-eyebrow">{t.badgeQuestions || 'FAQ'}</span>
-              <h2 className="lc-h2" style={{ textAlign: 'left', margin: '16px 0 20px' }}>{t.faqTitle}</h2>
-              <p style={{ fontSize: 15, lineHeight: 1.7, color: 'var(--lc-text2)', margin: 0, maxWidth: 360 }}>
-                {t.heroSubtitle}
-              </p>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginTop: 24 }}>
-                {[...Array(5)].map((_, i) => (
-                  <span key={i} style={{ color: '#ff9f0a' }}><IconStar /></span>
+      {/* 3. ASYMMETRICAL USE CASES & STEPS BENTO */}
+      <section className="hq-section">
+        <div className="hq-container">
+          <div className="hq-bento">
+            {/* Left Giant Column */}
+            <div className="hq-card" style={{ gridColumn: 'span 7', minHeight: 480, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <div className="hq-pill">{t.badgeQuickStart || 'Workflow'}</div>
+              <h2 className="hq-title" style={{ fontSize: 'clamp(32px, 4vw, 48px)' }}>{t.stepsTitle}</h2>
+              <div style={{ marginTop: 40, display: 'flex', flexDirection: 'column', gap: 32 }}>
+                {[
+                  { n: '1', t: t.step1Title, d: t.step1Desc },
+                  { n: '2', t: t.step2Title, d: t.step2Desc },
+                  { n: '3', t: t.step3Title, d: t.step3Desc }
+                ].map(step => (
+                  <div key={step.n} style={{ display: 'flex', gap: 24, alignItems: 'flex-start' }}>
+                    <div style={{ width: 40, height: 40, borderRadius: 12, background: 'var(--hq-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 18, color: 'var(--hq-text)', flexShrink: 0 }}>
+                      {step.n}
+                    </div>
+                    <div>
+                      <h4 style={{ fontSize: 18, fontWeight: 700, marginBottom: 8 }}>{step.t}</h4>
+                      <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{step.d}</p>
+                    </div>
+                  </div>
                 ))}
-                <span style={{ fontSize: 13, color: 'var(--lc-text2)', marginLeft: 8, fontWeight: 500 }}>4.9 / 5</span>
               </div>
             </div>
-            {/* Right: FAQ items */}
-            <div>
-              {[
-                { q: t.faq1Q, a: t.faq1A },
-                { q: t.faq2Q, a: t.faq2A },
-                { q: t.faq3Q, a: t.faq3A },
-                { q: t.faq4Q, a: t.faq4A },
-                { q: t.faq5Q, a: t.faq5A },
-              ].map((faq, idx) => (
-                <div key={idx} className="lc-faq-item">
-                  <button
-                    className="lc-faq-btn"
-                    onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                    aria-expanded={openFaq === idx}
-                  >
-                    <span>{faq.q}</span>
-                    <span style={{ color: 'var(--lc-text2)', flexShrink: 0 }}>
-                      <IconChevronDown open={openFaq === idx} />
-                    </span>
-                  </button>
-                  {openFaq === idx && (
-                    <div className="lc-faq-body">{faq.a}</div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-          {/* Mobile responsive for FAQ 2-col */}
-          <style>{`@media (max-width: 768px) {
-            .lc-faq-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
-          }`}</style>
-        </div>
-      </div>
 
-      {/* ── SECTION 6: Trust & Standards ── */}
-      <div style={{ background: 'var(--lc-card)', borderTop: '1px solid var(--lc-divider)', borderBottom: '1px solid var(--lc-divider)', padding: '64px 0' }}>
-        <div className="lc-wrap">
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 48, alignItems: 'center', justifyContent: 'space-between' }}>
-            <div style={{ flex: '1 1 400px' }}>
-              <span className="lc-eyebrow">{t.badgeTrust || 'Standards & Security'}</span>
-              <h2 style={{ fontSize: 'clamp(22px,3.5vw,34px)', fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--lc-text)', margin: '16px 0 14px' }}>
-                {t.trustTitle || 'Built On Global Standards'}
-              </h2>
-              <p style={{ fontSize: 15, lineHeight: 1.7, color: 'var(--lc-text2)', margin: '0 0 28px', maxWidth: 480 }}>
-                {t.trustDesc}
-              </p>
-            </div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-              {[
-                { label: t.globalBarcodeRules || 'ISO/IEC 18004', icon: '🔐' },
-                { label: t.federalSafetyGold  || 'NIST Privacy',  icon: '🛡️' },
-                { label: t.trustBadge3        || 'W3C HTML5',     icon: '🌐' },
-                { label: t.trustBadge4        || 'Zero Trust',    icon: '🔒' },
-              ].map((b, i) => (
-                <div key={i} className="lc-trust-badge">
-                  <span>{b.icon}</span>
-                  <span>{b.label}</span>
+            {/* Right Side Stacked Cards */}
+            <div style={{ gridColumn: 'span 5', display: 'flex', flexDirection: 'column', gap: 24 }}>
+              <div className="hq-card" style={{ flex: 1 }}>
+                <div className="hq-giant-num">🌐</div>
+                <h3 className="hq-card-title">{t.useCase1Title}</h3>
+                <p className="hq-card-desc">{t.useCase1Desc}</p>
+              </div>
+              <div className="hq-card" style={{ flex: 1, background: 'var(--hq-accent)', color: 'var(--hq-bg)' }}>
+                <h3 className="hq-card-title" style={{ color: 'inherit' }}>{t.useCase2Title}</h3>
+                <p className="hq-card-desc" style={{ color: 'inherit', opacity: 0.8 }}>{t.useCase2Desc}</p>
+                <div style={{ marginTop: 24 }}>
+                  <a href="#top" style={{ display: 'inline-flex', background: 'var(--hq-bg)', color: 'var(--hq-text)', padding: '12px 24px', borderRadius: 999, fontWeight: 600, textDecoration: 'none' }}>
+                    {t.ctaButton || 'Start Building'}
+                  </a>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* ── SECTION 7: Final CTA ── */}
-      <div style={{ background: 'linear-gradient(160deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%)', padding: '100px 0' }}>
-        <div className="lc-wrap" style={{ textAlign: 'center' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 6, marginBottom: 20 }}>
-            <span style={{ color: '#ff9f0a', fontSize: 13 }}>
-              {[...Array(5)].map((_, i) => <IconStar key={i} />)}
-            </span>
-            <span style={{ color: '#98989d', fontSize: 13, fontWeight: 500, marginLeft: 4 }}>
-              {t.badgeStats || 'By The Numbers'}
-            </span>
+      {/* 4. EXTREME CLEAN FAQ */}
+      <section className="hq-section" style={{ borderTop: '1px solid var(--hq-border)' }}>
+        <div className="hq-container">
+          <div style={{ textAlign: 'center', marginBottom: 60 }}>
+            <h2 className="hq-title" style={{ fontSize: 'clamp(32px, 5vw, 56px)' }}>{t.faqTitle}</h2>
           </div>
-          <h2 style={{ fontSize: 'clamp(30px,5vw,54px)', fontWeight: 700, letterSpacing: '-0.03em', color: '#f5f5f7', margin: '0 0 16px', lineHeight: 1.08 }}>
-            {t.ctaTitle || 'Start Creating Your QR Code'}
-          </h2>
-          <p style={{ fontSize: 17, color: '#98989d', margin: '0 0 40px', lineHeight: 1.6 }}>
-            {t.ctaSubtitle || 'Free forever. No signup. Works in every browser.'}
-          </p>
-          <a href="#top" className="lc-cta-btn" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
-            {t.ctaButton || 'Generate QR Code'}
-          </a>
-          <p style={{ fontSize: 13, color: '#636366', marginTop: 20 }}>
-            <IconGlobe style={{ display: 'inline', verticalAlign: 'middle' }} /> {t.stat3Value || '30'} {t.stat3Label || 'Languages Supported'} &nbsp;·&nbsp; {t.stat4Value || '∞'} {t.stat4Label || 'Free Scans, Forever'}
-          </p>
+          <div className="hq-faq-wrap">
+            {[
+              { q: t.faq1Q, a: t.faq1A },
+              { q: t.faq2Q, a: t.faq2A },
+              { q: t.faq3Q, a: t.faq3A },
+              { q: t.faq4Q, a: t.faq4A },
+              { q: t.faq5Q, a: t.faq5A },
+            ].map((faq, idx) => (
+              <div key={idx} className="hq-faq-item">
+                <button
+                  className="hq-faq-btn"
+                  onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                >
+                  <span>{faq.q}</span>
+                  <IconChevronDown open={openFaq === idx} />
+                </button>
+                {openFaq === idx && (
+                  <div className="hq-faq-body">{faq.a}</div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* 5. TRUST STANDARDS TERMINAL */}
+      <section className="hq-section" style={{ background: '#000000', color: '#ffffff' }}>
+        <div className="hq-container" style={{ textAlign: 'center' }}>
+          <div className="hq-pill" style={{ background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1px solid rgba(255,255,255,0.2)' }}>
+            {t.badgeTrust || 'Security & Compliance'}
+          </div>
+          <h2 className="hq-title" style={{ color: '#fff' }}>{t.trustTitle || 'Built On Global Standards'}</h2>
+          <p className="hq-subtitle" style={{ color: '#888', margin: '0 auto 60px' }}>{t.trustDesc}</p>
+          
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 16 }}>
+            {[
+              { label: t.globalBarcodeRules || 'ISO/IEC 18004', icon: '🔐' },
+              { label: t.federalSafetyGold  || 'NIST Privacy',  icon: '🛡️' },
+              { label: t.trustBadge3        || 'W3C HTML5',     icon: '🌐' },
+              { label: t.trustBadge4        || 'Zero Trust',    icon: '🔒' },
+            ].map((b, i) => (
+              <div key={i} style={{ padding: '16px 32px', background: 'rgba(255,255,255,0.05)', borderRadius: 999, border: '1px solid rgba(255,255,255,0.1)', fontWeight: 600, letterSpacing: '0.02em', display: 'flex', alignItems: 'center', gap: 12 }}>
+                <span>{b.icon}</span> {b.label}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
     </div>
   );

@@ -282,12 +282,12 @@ function App() {
         </div>
       )}
 
-      {/* Navbar */}
-      <nav className="fixed top-0 w-full bg-zinc-50/80 dark:bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-200/50 dark:border-zinc-800/50 z-50">
+      {/* Premium Glass Navbar */}
+      <nav className="fixed top-0 w-full bg-white/70 dark:bg-black/70 backdrop-blur-2xl border-b border-zinc-200 dark:border-zinc-900 z-50 transition-colors duration-500">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logoqr.webp" alt="CreateMy-QR Logo - Free Editable QR Code Generator Online" className="w-8 h-8 rounded-lg object-contain" />
-            <span className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight">CreateMy-QR</span>
+            <img src="/logoqr.webp" alt="CreateMy-QR Logo - Free Editable QR Code Generator Online" className="w-8 h-8 rounded-xl object-contain shadow-sm" />
+            <span className="text-lg font-bold text-black dark:text-white tracking-tight">CreateMy-QR</span>
           </div>
           
           <div className="flex items-center gap-2">
@@ -295,34 +295,34 @@ function App() {
               <button
                 onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }}
                 aria-label="Change Language"
-                className="flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all"
               >
-                <span style={{ fontSize: 18, lineHeight: 1 }}>
+                <span style={{ fontSize: 16, lineHeight: 1 }}>
                   {LANGS.find(l => l.code === (i18n.language?.split('-')[0] || 'en'))?.flag || '🌐'}
                 </span>
-                <span className="uppercase text-xs font-bold tracking-wide">{(i18n.language?.split('-')[0] || 'en').toUpperCase()}</span>
+                <span className="uppercase text-xs tracking-wider">{(i18n.language?.split('-')[0] || 'en')}</span>
               </button>
               
               {showLangMenu && (
                 <>
                   <div className="fixed inset-0 z-40" onClick={() => setShowLangMenu(false)} />
-                  <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-zinc-900 rounded-2xl shadow-2xl border border-zinc-200 dark:border-zinc-800 z-50 overflow-hidden" style={{ boxShadow: '0 8px 40px rgba(0,0,0,0.18)' }}>
+                  <div className="absolute right-0 mt-2 w-72 bg-white dark:bg-[#0a0a0a] rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] dark:shadow-[0_20px_60px_-15px_rgba(255,255,255,0.05)] border border-zinc-200 dark:border-zinc-800 z-50 overflow-hidden transform origin-top-right transition-all">
                     {/* Search box */}
-                    <div className="p-3 border-b border-zinc-100 dark:border-zinc-800">
-                      <div className="flex items-center gap-2 bg-zinc-100 dark:bg-zinc-800 rounded-xl px-3 py-2">
-                        <Globe className="w-3.5 h-3.5 text-zinc-400 flex-shrink-0" />
+                    <div className="p-4 border-b border-zinc-100 dark:border-zinc-900">
+                      <div className="flex items-center gap-3 bg-zinc-100 dark:bg-zinc-900 rounded-2xl px-4 py-3">
+                        <Globe className="w-4 h-4 text-zinc-400 flex-shrink-0" />
                         <input
                           autoFocus
                           type="text"
                           placeholder="Search language..."
                           value={langSearch}
                           onChange={e => setLangSearch(e.target.value)}
-                          className="bg-transparent text-sm text-zinc-700 dark:text-zinc-200 outline-none w-full placeholder:text-zinc-400"
+                          className="bg-transparent text-sm font-medium text-black dark:text-white outline-none w-full placeholder:text-zinc-500"
                         />
                       </div>
                     </div>
                     {/* Language list */}
-                    <div className="overflow-y-auto" style={{ maxHeight: 280 }}>
+                    <div className="overflow-y-auto" style={{ maxHeight: 320 }}>
                       {LANGS.filter(l =>
                         langSearch === '' ||
                         l.label.toLowerCase().includes(langSearch.toLowerCase()) ||
@@ -333,16 +333,16 @@ function App() {
                           <button
                             key={lang.code}
                             onClick={() => { changeLanguage(lang.code); setLangSearch(''); }}
-                            className={`w-full text-left px-4 py-2.5 text-sm flex items-center gap-3 transition-colors ${
+                            className={`w-full text-left px-5 py-3 text-sm flex items-center gap-4 transition-colors ${
                               isActive
-                                ? 'bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-semibold'
-                                : 'text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800'
+                                ? 'bg-zinc-100 dark:bg-zinc-900 text-black dark:text-white font-bold'
+                                : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 hover:text-black dark:hover:text-white'
                             }`}
                           >
                             <span style={{ fontSize: 20, lineHeight: 1, flexShrink: 0 }}>{lang.flag}</span>
-                            <span className="flex-1 truncate">{lang.label}</span>
-                            <span className="text-xs text-zinc-400 dark:text-zinc-500 font-mono">{lang.code.toUpperCase()}</span>
-                            {isActive && <span className="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0" />}
+                            <span className="flex-1 truncate tracking-tight">{lang.label}</span>
+                            <span className="text-[11px] text-zinc-400 dark:text-zinc-600 font-mono font-bold tracking-widest">{lang.code.toUpperCase()}</span>
+                            {isActive && <span className="w-1.5 h-1.5 rounded-full bg-black dark:bg-white flex-shrink-0" />}
                           </button>
                         );
                       })}
@@ -351,7 +351,7 @@ function App() {
                         !l.label.toLowerCase().includes(langSearch.toLowerCase()) &&
                         !l.code.toLowerCase().includes(langSearch.toLowerCase())
                       ).length === LANGS.length && (
-                        <div className="px-4 py-6 text-center text-sm text-zinc-400">No languages found</div>
+                        <div className="px-5 py-8 text-center text-sm font-medium text-zinc-500">No languages found</div>
                       )}
                     </div>
                   </div>
@@ -361,7 +361,7 @@ function App() {
             <button
               onClick={() => setDarkMode(!darkMode)}
               aria-label="Toggle Dark Mode"
-              className="p-2 rounded-full text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-900"
+              className="p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 hover:text-black dark:hover:text-white transition-all"
             >
               {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
@@ -369,29 +369,30 @@ function App() {
         </div>
       </nav>
 
-      <main className="pt-24 pb-20">
-        {/* Hero Section */}
-        <section className="max-w-4xl mx-auto px-6 text-center mb-16">
+      <main className="pt-32 pb-20">
+        {/* Premium Hero Section */}
+        <section className="max-w-4xl mx-auto px-6 text-center mb-24">
           <div className="animate-fade-in-up">
-            <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-semibold text-sm mb-6 border border-blue-200 dark:border-blue-800/50">
+            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-zinc-100 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 font-bold text-xs tracking-widest uppercase mb-8 border border-zinc-200 dark:border-zinc-800 shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-black dark:bg-white animate-pulse"></span>
               {t('badge')}
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-zinc-900 dark:text-white tracking-tighter mb-4 leading-[1.1]">
+            <h1 className="text-[clamp(44px,7vw,80px)] font-extrabold text-black dark:text-white tracking-tighter mb-6 leading-[1.05]">
               {currentSeo.h1}
             </h1>
-            <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-300 max-w-2xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
               {t('tagline')}
             </p>
             {/* GEO Fact Density Semantic Block (>40% Information Gain) */}
-            <div className="text-sm text-zinc-600 dark:text-zinc-300 max-w-3xl mx-auto bg-zinc-100/50 dark:bg-zinc-900/50 p-4 rounded-2xl border border-zinc-200/50 dark:border-zinc-800/50 text-left">
-              <strong className="text-zinc-700 dark:text-zinc-300">{t('geo.title')}</strong> {t('geo.fact')}
+            <div className="text-sm text-zinc-500 dark:text-zinc-400 max-w-3xl mx-auto text-center">
+              <strong className="text-black dark:text-white mr-2">{t('geo.title')}</strong> {t('geo.fact')}
             </div>
           </div>
         </section>
 
         {/* Generator Application Workspace */}
         <section className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-zinc-50 dark:bg-[#0a0a0a] border border-zinc-200 dark:border-zinc-900 rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
         
         {/* HIDDEN SEMANTIC CORE FOR SEO BOTS (GRAY HAT PSEO) */}
         <div className="sr-only" aria-hidden="true">
@@ -401,23 +402,23 @@ function App() {
 
         {/* LEFT COLUMN: Input & Customization Panel */}
             <div className="lg:col-span-7 lg:col-start-1 flex flex-col animate-fade-in-right">
-              {/* Tabs */}
-              <div className="flex space-x-2 bg-zinc-100 dark:bg-zinc-800/50 p-1.5 rounded-2xl mb-6">
+              {/* Premium iOS Segmented Tabs */}
+              <div className="flex space-x-2 bg-zinc-200/50 dark:bg-zinc-900/80 p-1.5 rounded-2xl mb-8 border border-zinc-200/50 dark:border-zinc-800/50">
                 <button
                   onClick={() => setActiveTab('data')}
-                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all ${activeTab === 'data' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-zinc-200'}`}
+                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'data' ? 'bg-white dark:bg-[#1a1a1a] text-black dark:text-white shadow-sm border border-zinc-200/50 dark:border-zinc-800' : 'text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white'}`}
                 >
                   {t('tabs.step1')}
                 </button>
                 <button
                   onClick={() => hasGenerated && setActiveTab('design')}
-                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-semibold transition-all ${activeTab === 'design' ? 'bg-white dark:bg-zinc-700 text-zinc-900 dark:text-zinc-100 shadow-sm' : 'text-zinc-600 dark:text-zinc-300 hover:text-zinc-700 dark:hover:text-zinc-200'} ${!hasGenerated ? 'cursor-not-allowed opacity-90' : ''}`}
+                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'design' ? 'bg-white dark:bg-[#1a1a1a] text-black dark:text-white shadow-sm border border-zinc-200/50 dark:border-zinc-800' : 'text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white'} ${!hasGenerated ? 'cursor-not-allowed opacity-50' : ''}`}
                 >
                   {t('tabs.step2')}
                 </button>
               </div>
 
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-sm overflow-hidden flex flex-col max-h-[calc(100vh-140px)]">
+              <div className="bg-white dark:bg-[#111111] border border-zinc-200 dark:border-zinc-900 rounded-3xl shadow-sm overflow-hidden flex flex-col min-h-[500px]">
                 <div className="flex-1 overflow-y-auto custom-scrollbar">
                   {activeTab === 'data' ? (
                     <InputForm 
@@ -431,67 +432,29 @@ function App() {
                     />
                   ) : (
                     <div className="p-2 animate-fade-in-up-fast">
-                      <React.Suspense fallback={<div className="p-8 text-center text-zinc-600">Loading customization tools...</div>}><CustomizationPanel visuals={visuals} setVisuals={setVisuals} /></React.Suspense>
+                      <React.Suspense fallback={<div className="p-12 text-center text-zinc-500 font-medium tracking-tight">Loading premium tools...</div>}><CustomizationPanel visuals={visuals} setVisuals={setVisuals} /></React.Suspense>
                     </div>
                   )}
-                </div>
               </div>
             </div>
 
-            {/* Right Column: Preview Sticky */}
-            <div className="lg:col-span-5 flex justify-center animate-fade-in-up-delay">
-              <div className="sticky top-24 w-full">
-                <Preview qrType={qrType} qrData={qrData} visuals={visuals} hasGenerated={hasGenerated} />
-              </div>
+            <div className="lg:col-span-5 flex justify-center sticky top-24">
+              <Preview qrType={qrType} qrData={qrData} visuals={visuals} hasGenerated={hasGenerated} />
             </div>
-
           </div>
         </section>
-
         <LandingContent />
-
-        {/* Features Bento Grid */}
-        <section className="max-w-7xl mx-auto px-6 mt-32">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="md:col-span-2 bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl p-8 border border-zinc-200/50 dark:border-zinc-800/50">
-              <div class="flex items-center gap-3 mb-6"><img src="/logoqr.webp" alt="Client-Side Privacy QR Code Generator" width="40" height="40" class="object-contain" /><Lock className="w-6 h-6 text-blue-600" /></div>
-              <h3 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight mb-2">{t('features.privacyTitle')}</h3>
-              <p className="text-zinc-600 dark:text-zinc-300">{t('features.privacyDesc')}</p>
-            </div>
-            
-            <div className="bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl p-8 border border-zinc-200/50 dark:border-zinc-800/50">
-              <div class="flex items-center gap-3 mb-6"><img src="/favicon.svg" alt="Free QR Code Maker Online Without Signup" width="40" height="40" class="object-contain" /><Zap className="w-6 h-6 text-blue-600" /></div>
-              <h3 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100 tracking-tight mb-2">{t('features.signupTitle')}</h3>
-              <p className="text-zinc-600 dark:text-zinc-300">{t('features.signupDesc')}</p>
-            </div>
-
-            <div className="md:col-span-3 bg-zinc-100 dark:bg-zinc-900/50 rounded-3xl p-8 border border-zinc-200/50 dark:border-zinc-800/50 flex flex-col md:flex-row items-center justify-between gap-8">
-              <div className="max-w-xl">
-                <div class="flex items-center gap-3 mb-6"><img src="/logoqr.png" alt="Custom QR Code with Logo and Colors Vector Download" width="40" height="40" class="object-contain" /><Palette className="w-6 h-6 text-blue-600" /></div>
-                <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">{t('features.customTitle')}</h2>
-                <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed text-sm">{t('features.customDesc')}</p>
-              </div>
-              <div className="w-full md:w-1/3 flex justify-center">
-                 <div className="w-32 h-32 rounded-2xl bg-gradient-to-tr from-blue-600 to-emerald-400 opacity-80 blur-2xl absolute -z-10 mix-blend-multiply dark:mix-blend-screen"></div>
-                 <QrCode className="w-24 h-24 text-zinc-300 dark:text-zinc-700" />
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-200 dark:border-zinc-800 py-8">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-zinc-600 dark:text-zinc-600 text-sm">
-            {t('footer.copyright', { year: new Date().getFullYear() })}
-          </p>
-          <div className="flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-300">
-            <button onClick={() => setShowEmbedModal(true)} className="flex items-center gap-2 hover:text-blue-600">
-              <Code2 className="w-4 h-4" /> {t('footer.embed')}
-            </button>
-            <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100">{t('footer.privacy')}</a>
-            <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100">{t('footer.terms')}</a>
+      <footer className="border-t border-zinc-200 dark:border-zinc-900 bg-white dark:bg-black py-12 text-center text-zinc-500 dark:text-zinc-600 text-sm">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p>© {new Date().getFullYear()} CreateMy-QR Technologies. All rights reserved.</p>
+          <div className="flex gap-6 font-medium text-black dark:text-white">
+            <a href="/about" className="hover:underline">About</a>
+            <a href="/privacy" className="hover:underline">Privacy Policy</a>
+            <a href="/terms" className="hover:underline">Terms of Service</a>
+            <a href="/contact" className="hover:underline">Contact</a>
           </div>
         </div>
       </footer>
