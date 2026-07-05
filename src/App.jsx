@@ -190,7 +190,7 @@ function App() {
         <html lang={currentLangCode} dir={currentLangCode === 'ar' ? 'rtl' : 'ltr'} />
         <title>{currentSeo.title}</title>
         <meta name="title" content={currentSeo.title} />
-        <meta name="description" content={currentSeo.description} />
+        <meta name="description" content="Create custom QR codes with logo for free. Best editable QR code generator with no watermark for WiFi, vCard, Google Reviews and URL. Client-side privacy." />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <link rel="canonical" href={`https://www.createmy-qr.com${slug === '/' ? '' : slug}`} />
         <meta name="keywords" content={seoKeywords[currentLangCode] || seoKeywords.en} />
