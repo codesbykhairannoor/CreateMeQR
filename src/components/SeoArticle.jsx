@@ -6,26 +6,24 @@ export default function SeoArticle({ currentLangCode }) {
   const keywordsString = seoKeywords[currentLangCode] || seoKeywords['en'];
   const keywordsList = keywordsString.split(',').map(k => k.trim());
   
-  // Build a massive dynamic FAQ schema for LSI injection
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    'mainEntity': keywordsList.map((kw) => ({
-      '@type': 'Question',
-      'name': 'How to ' + kw + '?',
-      'acceptedAnswer': {
-        '@type': 'Answer',
-        'text': 'To ' + kw + ', you can use our free and secure QR code generator tool. It operates locally in your browser without tracking.'
-      }
-    }))
+  const tagTitles = {
+    en: "Popular Searches",
+    id: "Pencarian Populer",
+    fr: "Recherches Populaires",
+    es: "Búsquedas Populares",
+    de: "Beliebte Suchanfragen",
+    it: "Ricerche Popolari",
+    pt: "Pesquisas Populares",
+    ja: "人気の検索",
+    ko: "인기 검색어",
+    zh: "热门搜索"
   };
+  const sectionTitle = tagTitles[currentLangCode] || tagTitles['en'];
 
   return (
     <main className="w-full bg-white dark:bg-zinc-950 py-16 px-6 border-t border-zinc-200 dark:border-zinc-800">
       <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
+        <meta name="keywords" content={keywordsString} />
       </Helmet>
       <div className="max-w-4xl mx-auto prose prose-zinc dark:prose-invert">
         <article itemScope itemType="https://schema.org/Article">
@@ -223,6 +221,22 @@ export default function SeoArticle({ currentLangCode }) {
               <li>High error correction gives thirty percent backup so you can add logos safely.</li>
               <li>SVG vector files stop blurry edges on large printed banners, flyers, and posters.</li>
             </ul>
+          </section>
+
+          <section className="mt-16 pt-10 border-t border-zinc-200 dark:border-zinc-800">
+            <h3 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider mb-6">
+              {sectionTitle}
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {keywordsList.map((kw, idx) => (
+                <span 
+                  key={idx}
+                  className="px-3 py-1.5 bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 text-xs font-medium rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
+                >
+                  {kw}
+                </span>
+              ))}
+            </div>
           </section>
 
         </article>
