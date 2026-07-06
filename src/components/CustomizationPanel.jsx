@@ -1,15 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import seoKeywords from '../seoKeywords';
 import { Palette, Image as ImageIcon, LayoutTemplate, ChevronDown, ChevronUp } from 'lucide-react';
 
 const Accordion = ({ title, icon: Icon, defaultOpen = false, children }) => {
   const [isOpen, setIsOpen] = React.useState(defaultOpen);
   
-  const { i18n } = useTranslation();
-  const currentLang = i18n.language || 'en';
-  const keywordString = seoKeywords[currentLang] || seoKeywords['en'];
-  const keywordArray = keywordString.split(',').map(k => k.trim());
+  const { t } = useTranslation();
+  const keywordString = t('seoKeywords', { returnObjects: true });
+  const keywordArray = typeof keywordString === 'string' ? keywordString.split(',').map(k => k.trim()) : [];
   const topKeywords = keywordArray.slice(5, 10).join(', '); // Use different slice than InputForm for variety
 
   return (

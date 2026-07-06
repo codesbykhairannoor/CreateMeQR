@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { landingTranslations } from '../landingTranslations';
 
 const IconCheck = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -25,9 +24,10 @@ const IconChevronDown = ({ open }) => (
 
 
 function LandingContent() {
-  const { i18n } = useTranslation();
-  const langCode = (i18n.language || 'en').split('-')[0];
-  const t = landingTranslations[langCode] || landingTranslations.en;
+  const { t: translate } = useTranslation();
+  const tObj = translate('landing', { returnObjects: true });
+  // Fallback if Suspense is disabled or during transition
+  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
   const [openFaq, setOpenFaq] = useState(null);
 
   return (

@@ -1,25 +1,13 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { PSEO_ROUTES, LANGS } from './src/config/site.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const PSEO_ROUTES = [
-  '/',
-  '/wifi-qr-code-generator',
-  '/vcard-qr-code-maker',
-  '/text-qr-code-generator',
-  '/email-qr-code-generator',
-  '/sms-qr-code-generator',
-  '/phone-qr-code-generator',
-  '/event-qr-code-generator',
-  '/google-maps-qr-code'
-];
-
-const LANGS = [
-  'en', 'id', 'es', 'fr', 'de', 'pt', 'zh', 'ja', 'hi', 'ko', 'ar', 'ru', 'it', 'tr', 'nl', 'pl', 'sv', 'vi', 'th', 'el', 'cs', 'da', 'fi', 'no', 'hu', 'ro', 'uk', 'ms', 'tl', 'bn'
-];
+const routeKeys = Object.keys(PSEO_ROUTES);
+const langCodes = LANGS.map(l => l.code);
 
 const DOMAIN = 'https://www.createmy-qr.com';
 const currentDate = new Date().toISOString().split('T')[0];
@@ -27,8 +15,8 @@ const currentDate = new Date().toISOString().split('T')[0];
 let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
 sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
 
-for (const route of PSEO_ROUTES) {
-  for (const lang of LANGS) {
+for (const route of routeKeys) {
+  for (const lang of langCodes) {
     const langPrefix = lang === 'en' ? '' : `/${lang}`;
     const url = `${DOMAIN}${langPrefix}${route === '/' ? '' : route}`;
     
@@ -39,7 +27,7 @@ for (const route of PSEO_ROUTES) {
     sitemap += `    <priority>${route === '/' ? '1.0' : '0.8'}</priority>\n`;
     
     // Add hreflang links for this specific route across all languages
-    for (const altLang of LANGS) {
+    for (const altLang of langCodes) {
         const altLangPrefix = altLang === 'en' ? '' : `/${altLang}`;
         const altUrl = `${DOMAIN}${altLangPrefix}${route === '/' ? '' : route}`;
         sitemap += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${altUrl}" />\n`;
@@ -58,4 +46,4 @@ if (!fs.existsSync(publicDir)) {
 }
 
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap, 'utf8');
-console.log('✅ sitemap.xml generated with', PSEO_ROUTES.length * LANGS.length, 'URLs and their hreflang maps.');
+console.log('✅ sitemap.xml generated with', routeKeys.length * langCodes.length, 'URLs and their hreflang maps.');

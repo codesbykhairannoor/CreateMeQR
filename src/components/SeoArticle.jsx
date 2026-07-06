@@ -1,10 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { seoKeywords } from '../seoKeywords';
+import { useTranslation } from 'react-i18next';
 
 export default function SeoArticle({ currentLangCode }) {
-  const keywordsString = seoKeywords[currentLangCode] || seoKeywords['en'];
-  const keywordsList = keywordsString.split(',').map(k => k.trim());
+  const { t } = useTranslation();
+  const keywordString = t('seoKeywords', { returnObjects: true });
+  const keywordsStringRaw = typeof keywordString === 'string' ? keywordString : 'qr code generator';
+  const keywordsList = keywordsStringRaw.split(',').map(k => k.trim());
   
   const tagTitles = {
     en: "Popular Searches",
@@ -23,7 +25,7 @@ export default function SeoArticle({ currentLangCode }) {
   return (
     <section className="w-full bg-white dark:bg-zinc-950 py-12 px-6 border-t border-zinc-200 dark:border-zinc-800">
       <Helmet>
-        <meta name="keywords" content={keywordsString} />
+        <meta name="keywords" content={keywordsStringRaw} />
       </Helmet>
       
       <div className="max-w-4xl mx-auto">

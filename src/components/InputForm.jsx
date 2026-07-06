@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, Wifi, Contact, Type, Mail, Phone, MessageSquare, MapPin, Calendar } from 'lucide-react';
-import seoKeywords from '../seoKeywords';
 
 const TABS = [
   { id: 'url', icon: Link, label: 'types.url' },
@@ -16,11 +15,10 @@ const TABS = [
 ];
 
 export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGenerated, setHasGenerated, setActiveTab }) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   
-  const currentLang = i18n.language || 'en';
-  const keywordString = seoKeywords[currentLang] || seoKeywords['en'];
-  const keywordArray = keywordString.split(',').map(k => k.trim());
+  const keywordString = t('seoKeywords', { returnObjects: true });
+  const keywordArray = typeof keywordString === 'string' ? keywordString.split(',').map(k => k.trim()) : [];
   const topKeywords = keywordArray.slice(0, 5).join(', ');
 
   const handleTypeChange = (type) => {
