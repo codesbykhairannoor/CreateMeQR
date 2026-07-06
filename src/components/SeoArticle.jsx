@@ -32,14 +32,16 @@ export default function SeoArticle({ currentLangCode }) {
         <h3 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider mb-6">
           {sectionTitle}
         </h3>
-        <div className="flex flex-wrap gap-2">
+        <div className="text-[11px] leading-relaxed text-zinc-400 dark:text-zinc-500 font-sans">
           {keywordsList.map((kw, idx) => (
-            <span 
-              key={idx}
-              className="px-3 py-1.5 bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 text-xs font-medium rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
-            >
-              {kw}
-            </span>
+            <React.Fragment key={idx}>
+              <span className="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors cursor-default">
+                {kw}
+              </span>
+              {idx < keywordsList.length - 1 && (
+                <span className="mx-2 opacity-30">•</span>
+              )}
+            </React.Fragment>
           ))}
         </div>
       </div>
