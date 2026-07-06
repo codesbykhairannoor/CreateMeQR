@@ -1,11 +1,32 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { seoKeywords } from '../seoKeywords';
 
-
-export default function SeoArticle() {
+export default function SeoArticle({ currentLangCode }) {
+  const keywordsString = seoKeywords[currentLangCode] || seoKeywords['en'];
+  const keywordsList = keywordsString.split(',').map(k => k.trim());
   
+  // Build a massive dynamic FAQ schema for LSI injection
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': keywordsList.map((kw) => ({
+      '@type': 'Question',
+      'name': 'How to ' + kw + '?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'To ' + kw + ', you can use our free and secure QR code generator tool. It operates locally in your browser without tracking.'
+      }
+    }))
+  };
 
   return (
     <main className="w-full bg-white dark:bg-zinc-950 py-16 px-6 border-t border-zinc-200 dark:border-zinc-800">
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
       <div className="max-w-4xl mx-auto prose prose-zinc dark:prose-invert">
         <article itemScope itemType="https://schema.org/Article">
 

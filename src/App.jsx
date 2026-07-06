@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { Globe, Moon, Sun, X } from 'lucide-react';
 import InputForm from './components/InputForm';
 import LandingContent from './components/LandingContent';
+import SeoArticle from './components/SeoArticle';
 const CustomizationPanel = React.lazy(() => import('./components/CustomizationPanel'));
 import Preview from './components/Preview';
 const EmbedWidgetModal = React.lazy(() => import('./components/EmbedWidgetModal'));
@@ -445,6 +446,7 @@ function App() {
           </div>
         </section>
         <LandingContent />
+        <SeoArticle currentLangCode={currentLangCode} />
       </main>
 
       {/* Footer */}
