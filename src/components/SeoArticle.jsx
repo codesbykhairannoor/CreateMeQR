@@ -21,28 +21,26 @@ export default function SeoArticle({ currentLangCode }) {
   const sectionTitle = tagTitles[currentLangCode] || tagTitles['en'];
 
   return (
-    <main className="w-full bg-white dark:bg-zinc-950 py-16 px-6 border-t border-zinc-200 dark:border-zinc-800">
+    <section className="w-full bg-white dark:bg-zinc-950 py-12 px-6 border-t border-zinc-200 dark:border-zinc-800">
       <Helmet>
         <meta name="keywords" content={keywordsString} />
       </Helmet>
-          <section className="mb-10 pt-10">
-            <h3 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider mb-6">
-              {sectionTitle}
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {keywordsList.map((kw, idx) => (
-                <span 
-                  key={idx}
-                  className="px-3 py-1.5 bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 text-xs font-medium rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
-                >
-                  {kw}
-                </span>
-              ))}
-            </div>
-          </section>
-
+      
+      <div className="max-w-4xl mx-auto">
+        <h3 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider mb-6">
+          {sectionTitle}
+        </h3>
+        <div className="flex flex-wrap gap-2">
+          {keywordsList.map((kw, idx) => (
+            <span 
+              key={idx}
+              className="px-3 py-1.5 bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 text-xs font-medium rounded-full border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors"
+            >
+              {kw}
+            </span>
+          ))}
         </div>
       </div>
-    </main>
+    </section>
   );
 }
