@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, Wifi, Contact, Type, Mail, Phone, MessageSquare, MapPin, Calendar } from 'lucide-react';
+import seoKeywords from '../seoKeywords';
 
 const TABS = [
   { id: 'url', icon: Link, label: 'types.url' },
@@ -15,7 +16,12 @@ const TABS = [
 ];
 
 export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGenerated, setHasGenerated, setActiveTab }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  
+  const currentLang = i18n.language || 'en';
+  const keywordString = seoKeywords[currentLang] || seoKeywords['en'];
+  const keywordArray = keywordString.split(',').map(k => k.trim());
+  const topKeywords = keywordArray.slice(0, 5).join(', ');
 
   const handleTypeChange = (type) => {
     setQrType(type);
@@ -47,6 +53,7 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
             <button
               key={tab.id}
               onClick={() => handleTypeChange(tab.id)}
+              aria-label={`${t(tab.label)} - ${topKeywords}`}
               className={`flex items-center px-4 py-2 rounded-lg font-medium transition-colors whitespace-nowrap
                 ${isActive 
                   ? 'bg-blue-600 text-white' 

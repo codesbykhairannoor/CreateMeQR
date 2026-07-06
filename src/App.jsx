@@ -236,6 +236,27 @@ function App() {
           {`
             {
               "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "CreateMy-QR",
+              "applicationCategory": "UtilitiesApplication",
+              "operatingSystem": "All",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "ratingCount": "15432"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            }
+          `}
+        </script>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [{
                 "@type": "ListItem",

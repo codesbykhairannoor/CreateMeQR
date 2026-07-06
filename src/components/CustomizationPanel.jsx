@@ -1,13 +1,22 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import seoKeywords from '../seoKeywords';
 import { Palette, Image as ImageIcon, LayoutTemplate, ChevronDown, ChevronUp } from 'lucide-react';
 
 const Accordion = ({ title, icon: Icon, defaultOpen = false, children }) => {
   const [isOpen, setIsOpen] = React.useState(defaultOpen);
+  
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language || 'en';
+  const keywordString = seoKeywords[currentLang] || seoKeywords['en'];
+  const keywordArray = keywordString.split(',').map(k => k.trim());
+  const topKeywords = keywordArray.slice(5, 10).join(', '); // Use different slice than InputForm for variety
+
   return (
     <div className="border border-zinc-200 dark:border-zinc-700 rounded-lg mb-4 bg-transparent overflow-hidden">
       <button 
         onClick={() => setIsOpen(!isOpen)}
+        aria-label={`${title} - ${topKeywords}`}
         className="w-full px-4 py-3 flex items-center justify-between bg-zinc-50 dark:bg-zinc-800/50 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors"
       >
         <div className="flex items-center text-zinc-900 dark:text-white font-semibold">
