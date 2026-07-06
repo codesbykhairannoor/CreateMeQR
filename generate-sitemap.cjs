@@ -12,7 +12,11 @@ const ROUTES = [
   '/google-maps-qr-code'
 ];
 
-const LANGS = ['en', 'id', 'es', 'fr', 'de', 'pt', 'zh', 'ja', 'hi', 'ko'];
+const LANGS = [
+  'en', 'id', 'es', 'fr', 'de', 'pt', 'zh', 'ja', 'hi', 'ko', 
+  'ar', 'ru', 'it', 'tr', 'nl', 'pl', 'sv', 'vi', 'th', 'el', 
+  'cs', 'da', 'fi', 'no', 'hu', 'ro', 'uk', 'ms', 'tl', 'bn'
+];
 const DOMAIN = 'https://www.createmy-qr.com';
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
 xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
