@@ -73,6 +73,36 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
       };
       const protocol = coinMap[qrData.cryptoCoin || 'bitcoin'];
       dataString = `${protocol}:${qrData.cryptoAddress || ''}${qrData.cryptoAmount ? '?amount=' + qrData.cryptoAmount : ''}`;
+    } else if (qrType === 'facebook') {
+      const u = (qrData.facebookInput || '').replace(/^@/, '').replace(/.*\//, '');
+      dataString = `https://facebook.com/${u}`;
+    } else if (qrType === 'twitter') {
+      const u = (qrData.twitterInput || '').replace(/^@/, '').replace(/.*\//, '');
+      dataString = `https://twitter.com/${u}`;
+    } else if (qrType === 'tiktok') {
+      const u = (qrData.tiktokInput || '').replace(/^@/, '').replace(/.*\//, '');
+      dataString = `https://tiktok.com/@${u}`;
+    } else if (qrType === 'linkedin') {
+      const u = (qrData.linkedinInput || '').replace(/.*\//, '');
+      dataString = `https://linkedin.com/in/${u}`;
+    } else if (qrType === 'telegram') {
+      const u = (qrData.telegramInput || '').replace(/^@/, '').replace(/.*\//, '');
+      dataString = `https://t.me/${u}`;
+    } else if (qrType === 'snapchat') {
+      const u = (qrData.snapchatInput || '').replace(/^@/, '').replace(/.*\//, '');
+      dataString = `https://snapchat.com/add/${u}`;
+    } else if (qrType === 'discord') {
+      const u = (qrData.discordInput || '').replace(/.*\//, '');
+      dataString = `https://discord.gg/${u}`;
+    } else if (qrType === 'spotify') {
+      dataString = qrData.spotifyInput || 'https://open.spotify.com/';
+    } else if (qrType === 'paypal') {
+      const u = (qrData.paypalUsername || '').replace(/^@/, '').replace(/.*\//, '');
+      const a = qrData.paypalAmount || '';
+      dataString = `https://paypal.me/${u}${a ? '/' + a : ''}`;
+    } else if (qrType === 'venmo') {
+      const u = (qrData.venmoInput || '').replace(/^@/, '').replace(/.*\//, '');
+      dataString = `https://venmo.com/${u}`;
     }
 
     qrCode.update({

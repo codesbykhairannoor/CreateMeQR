@@ -13,6 +13,16 @@ import LayoutYouTube from './landing/LayoutYouTube';
 import LayoutInstagram from './landing/LayoutInstagram';
 import LayoutCrypto from './landing/LayoutCrypto';
 import LayoutAppStore from './landing/LayoutAppStore';
+import LayoutFacebook from './landing/LayoutFacebook';
+import LayoutTwitter from './landing/LayoutTwitter';
+import LayoutTikTok from './landing/LayoutTikTok';
+import LayoutLinkedIn from './landing/LayoutLinkedIn';
+import LayoutTelegram from './landing/LayoutTelegram';
+import LayoutSnapchat from './landing/LayoutSnapchat';
+import LayoutDiscord from './landing/LayoutDiscord';
+import LayoutSpotify from './landing/LayoutSpotify';
+import LayoutPaypal from './landing/LayoutPaypal';
+import LayoutVenmo from './landing/LayoutVenmo';
 
 function LandingContent({ qrType = 'url' }) {
   // Return the specific, unique layout for each tool
@@ -45,6 +55,26 @@ function LandingContent({ qrType = 'url' }) {
       return <LayoutCrypto qrType={qrType} />;
     case 'appstore':
       return <LayoutAppStore qrType={qrType} />;
+    case 'facebook':
+      return <LayoutFacebook qrType={qrType} />;
+    case 'twitter':
+      return <LayoutTwitter qrType={qrType} />;
+    case 'tiktok':
+      return <LayoutTikTok qrType={qrType} />;
+    case 'linkedin':
+      return <LayoutLinkedIn qrType={qrType} />;
+    case 'telegram':
+      return <LayoutTelegram qrType={qrType} />;
+    case 'snapchat':
+      return <LayoutSnapchat qrType={qrType} />;
+    case 'discord':
+      return <LayoutDiscord qrType={qrType} />;
+    case 'spotify':
+      return <LayoutSpotify qrType={qrType} />;
+    case 'paypal':
+      return <LayoutPaypal qrType={qrType} />;
+    case 'venmo':
+      return <LayoutVenmo qrType={qrType} />;
     default:
       // Fallback
       return <LayoutURL qrType={qrType} />;

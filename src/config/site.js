@@ -16,8 +16,17 @@ export const PSEO_ROUTES = {
   '/instagram-qr-code-generator': 'instagram',
   '/crypto-qr-code-generator': 'crypto',
   '/app-store-qr-code-generator': 'appstore',
+  '/facebook-qr-code-generator': 'facebook',
+  '/twitter-qr-code-generator': 'twitter',
+  '/tiktok-qr-code-generator': 'tiktok',
+  '/linkedin-qr-code-generator': 'linkedin',
+  '/telegram-qr-code-generator': 'telegram',
+  '/snapchat-qr-code-generator': 'snapchat',
+  '/discord-qr-code-generator': 'discord',
+  '/spotify-qr-code-generator': 'spotify',
+  '/paypal-qr-code-generator': 'paypal',
+  '/venmo-qr-code-generator': 'venmo',
 };
-
 // 30 Languages Supported
 export const LANGS = [
   { code: 'en', label: 'English',        flag: '🇺🇸' },

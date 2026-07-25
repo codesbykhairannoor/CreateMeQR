@@ -1,12 +1,22 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, Wifi, Contact, Type, Mail, Phone, MessageSquare, MapPin, Calendar, MessageCircle, Video, Camera, Bitcoin, Smartphone } from 'lucide-react';
+import { Link, Wifi, Contact, Type, Mail, Phone, MessageSquare, MapPin, Calendar, MessageCircle, Video, Camera, Bitcoin, Smartphone, Users, Hash, Music2, Briefcase, Send, Ghost, Gamepad2, Music, CreditCard, Wallet } from 'lucide-react';
 
 const TABS = [
   { id: 'url', icon: Link, label: 'types.url' },
   { id: 'whatsapp', icon: MessageCircle, label: 'types.whatsapp' },
   { id: 'youtube', icon: Video, label: 'types.youtube' },
   { id: 'instagram', icon: Camera, label: 'types.instagram' },
+  { id: 'facebook', icon: Users, label: 'types.facebook' },
+  { id: 'twitter', icon: Hash, label: 'types.twitter' },
+  { id: 'tiktok', icon: Music2, label: 'types.tiktok' },
+  { id: 'linkedin', icon: Briefcase, label: 'types.linkedin' },
+  { id: 'telegram', icon: Send, label: 'types.telegram' },
+  { id: 'snapchat', icon: Ghost, label: 'types.snapchat' },
+  { id: 'discord', icon: Gamepad2, label: 'types.discord' },
+  { id: 'spotify', icon: Music, label: 'types.spotify' },
+  { id: 'paypal', icon: CreditCard, label: 'types.paypal' },
+  { id: 'venmo', icon: Wallet, label: 'types.venmo' },
   { id: 'appstore', icon: Smartphone, label: 'types.appstore' },
   { id: 'crypto', icon: Bitcoin, label: 'types.crypto' },
   { id: 'text', icon: Type, label: 'types.text' },
@@ -123,6 +133,35 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
                   <option value="nopass">None</option>
                 </select>
               </div>
+            </div>
+          </div>
+        )}
+
+        {['facebook', 'twitter', 'tiktok', 'linkedin', 'telegram', 'snapchat', 'discord', 'spotify', 'venmo'].includes(qrType) && (
+          <div>
+            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">
+              {t(`form.${qrType}Input`)}
+            </label>
+            <input
+              type="text"
+              name={`${qrType}Input`}
+              value={qrData[`${qrType}Input`] || ''}
+              onChange={handleDataChange}
+              placeholder={t(`form.enter_${qrType}`)}
+              className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white"
+            />
+          </div>
+        )}
+
+        {qrType === 'paypal' && (
+          <div className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.paypalUsername')}</label>
+              <input type="text" name="paypalUsername" value={qrData.paypalUsername || ''} onChange={handleDataChange} placeholder="Username" className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white" />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.paypalAmount')}</label>
+              <input type="number" name="paypalAmount" value={qrData.paypalAmount || ''} onChange={handleDataChange} placeholder="0.00" className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white" />
             </div>
           </div>
         )}

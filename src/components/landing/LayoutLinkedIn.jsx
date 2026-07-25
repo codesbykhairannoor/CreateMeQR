@@ -1,0 +1,169 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Briefcase, ShieldCheck, Zap, Lock, ChevronDown, Users, FileText } from 'lucide-react';
+
+function LayoutLinkedIn({ qrType = 'linkedin' }) {
+  const { t: translate } = useTranslation();
+  const typeName = translate(`types.${qrType}`);
+  const tObj = translate('landing', { returnObjects: true });
+  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const [openFaq, setOpenFaq] = React.useState(null);
+
+  return (
+    <div className="hq-layout-linkedin">
+      <style>{`
+        .hq-layout-linkedin {
+          --hq-bg: #f3f2ef;
+          --hq-text: #000000;
+          --hq-text-muted: #666666;
+          --hq-card: #ffffff;
+          --hq-border: #e0dfdc;
+          --hq-accent: #0a66c2;
+          --hq-accent-glow: rgba(10, 102, 194, 0.1);
+          font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+          background: var(--hq-bg);
+          color: var(--hq-text);
+          padding-top: 140px;
+        }
+        html.dark .hq-layout-linkedin {
+          --hq-bg: #000000;
+          --hq-text: #e9e9e9;
+          --hq-text-muted: #8c8c8c;
+          --hq-card: #1d2226;
+          --hq-border: #38434f;
+          --hq-accent: #70b5f9;
+          --hq-accent-glow: rgba(112, 181, 249, 0.15);
+        }
+        
+        .hq-container { max-width: 1128px; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 3fr 1fr; gap: 24px; }
+        
+        .hq-li-main { display: flex; flex-direction: column; gap: 24px; margin-bottom: 80px; }
+        .hq-li-card { background: var(--hq-card); border-radius: 8px; border: 1px solid var(--hq-border); overflow: hidden; }
+        
+        .hq-li-cover { height: 160px; background: linear-gradient(135deg, var(--hq-border), var(--hq-accent-glow)); }
+        .hq-li-profile { padding: 0 24px 24px 24px; position: relative; }
+        .hq-li-avatar { width: 120px; height: 120px; border-radius: 50%; border: 4px solid var(--hq-card); background: var(--hq-accent); position: absolute; top: -60px; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+        .hq-li-profile-info { margin-top: 72px; }
+        .hq-li-profile-info h1 { font-size: 24px; font-weight: 600; margin-bottom: 4px; }
+        .hq-li-profile-info p { font-size: 16px; color: var(--hq-text-muted); }
+        
+        .hq-li-section { padding: 24px; }
+        .hq-li-section h2 { font-size: 20px; font-weight: 600; margin-bottom: 16px; }
+        
+        .hq-li-exp { display: flex; gap: 16px; margin-bottom: 24px; }
+        .hq-li-exp:last-child { margin-bottom: 0; }
+        .hq-li-exp-icon { width: 48px; height: 48px; background: var(--hq-accent-glow); color: var(--hq-accent); display: flex; align-items: center; justify-content: center; border-radius: 4px; }
+        .hq-li-exp-content h3 { font-size: 16px; font-weight: 600; margin-bottom: 2px; }
+        .hq-li-exp-content h4 { font-size: 14px; font-weight: 400; color: var(--hq-text-muted); margin-bottom: 8px; }
+        
+        .hq-li-sidebar { display: flex; flex-direction: column; gap: 24px; }
+        .hq-li-side-card { padding: 16px; }
+        .hq-li-side-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 12px; }
+        
+        @media (max-width: 992px) {
+          .hq-container { grid-template-columns: 1fr; }
+        }
+      `}</style>
+
+      <div className="hq-container">
+        <div className="hq-li-main">
+          <div className="hq-li-card">
+            <div className="hq-li-cover"></div>
+            <div className="hq-li-profile">
+              <div className="hq-li-avatar"><Briefcase size={64} /></div>
+              <div className="hq-li-profile-info">
+                <h1>{t.heroTitle} for {typeName}</h1>
+                <p>{t.heroSubtitle}</p>
+                <div style={{ marginTop: 16, display: 'inline-block', background: 'var(--hq-accent)', color: 'white', padding: '6px 16px', borderRadius: 100, fontWeight: 600, fontSize: 14 }}>
+                  Connect
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="hq-li-card hq-li-section">
+            <h2>About</h2>
+            <p style={{ fontSize: 14, lineHeight: 1.5, color: 'var(--hq-text-muted)' }}>
+              We provide the most robust, privacy-first QR code generation tool in the market. 
+              Our engine processes everything securely in your browser. {t.tagline}
+            </p>
+          </div>
+
+          <div className="hq-li-card hq-li-section">
+            <h2>Experience</h2>
+            <div className="hq-li-exp">
+              <div className="hq-li-exp-icon"><ShieldCheck size={24} /></div>
+              <div className="hq-li-exp-content">
+                <h3>{t.comp1Title}</h3>
+                <h4>Full-time</h4>
+                <p style={{ fontSize: 14, color: 'var(--hq-text-muted)' }}>{t.comp1Desc}</p>
+              </div>
+            </div>
+            <div className="hq-li-exp">
+              <div className="hq-li-exp-icon"><Zap size={24} /></div>
+              <div className="hq-li-exp-content">
+                <h3>{t.comp2Title}</h3>
+                <h4>Full-time</h4>
+                <p style={{ fontSize: 14, color: 'var(--hq-text-muted)' }}>{t.comp2Desc}</p>
+              </div>
+            </div>
+            <div className="hq-li-exp">
+              <div className="hq-li-exp-icon"><Lock size={24} /></div>
+              <div className="hq-li-exp-content">
+                <h3>{t.comp3Title}</h3>
+                <h4>Full-time</h4>
+                <p style={{ fontSize: 14, color: 'var(--hq-text-muted)' }}>{t.comp3Desc}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="hq-li-sidebar">
+          <div className="hq-li-card hq-li-side-card">
+            <h3>People also viewed</h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+              <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'var(--hq-border)' }}></div>
+                <div>
+                  <div style={{ fontSize: 14, fontWeight: 600 }}>URL Generator</div>
+                  <div style={{ fontSize: 12, color: 'var(--hq-text-muted)' }}>CreateMeQR</div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'var(--hq-border)' }}></div>
+                <div>
+                  <div style={{ fontSize: 14, fontWeight: 600 }}>vCard Generator</div>
+                  <div style={{ fontSize: 12, color: 'var(--hq-text-muted)' }}>CreateMeQR</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '80px 0' }}>
+        <div className="hq-container" style={{ display: 'block', maxWidth: 800 }}>
+          <h2 style={{ fontSize: 24, fontWeight: 600, marginBottom: 32 }}>Frequently Asked Questions</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {[
+              { q: t.faq1Q, a: t.faq1A }, { q: t.faq2Q, a: t.faq2A }, { q: t.faq3Q, a: t.faq3A }
+            ].map((faq, i) => (
+              <div key={i} style={{ borderBottom: '1px solid var(--hq-border)', paddingBottom: 16 }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <span style={{ fontSize: 16, fontWeight: 600 }}>{faq.q}</span>
+                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+                </button>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <p style={{ paddingTop: 12, color: 'var(--hq-text-muted)', fontSize: 14, lineHeight: 1.5 }}>{faq.a}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default LayoutLinkedIn;
