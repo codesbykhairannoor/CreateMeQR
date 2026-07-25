@@ -52,9 +52,6 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo }) {
           <p className="text-xl md:text-2xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
             {t('tagline')}
           </p>
-          <div className="text-sm text-zinc-500 dark:text-zinc-400 max-w-3xl mx-auto text-center">
-            <strong className="text-zinc-900 dark:text-white mr-2">{t('geo.title')}</strong> {t('geo.fact')}
-          </div>
         </div>
       </section>
 
