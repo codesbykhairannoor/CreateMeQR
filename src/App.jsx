@@ -144,8 +144,29 @@ function App() {
     navigate(`${newPrefix}${slug === '/' ? '' : slug}`, { replace: true });
   };
 
+  const renderHighlightedTitle = (title) => {
+    if (!title) return null;
+    const match = title.match(/QR(?:[-\s]+[A-Za-z0-9а-яА-Я]+)?/i);
+    const highlightClass = "text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600";
+    
+    if (!match) {
+      const words = title.split(' ');
+      if (words.length <= 2) return <span className={highlightClass}>{title}</span>;
+      return <><span className={highlightClass}>{words.slice(0, 2).join(' ')}</span> {words.slice(2).join(' ')}</>;
+    }
+    
+    const parts = title.split(match[0]);
+    return (
+      <>
+        {parts[0]}
+        <span className={highlightClass}>{match[0]}</span>
+        {parts.slice(1).join(match[0])}
+      </>
+    );
+  };
+
   return (
-    <div className="min-h-screen bg-[#f8fafc] dark:bg-[#040a18] font-sans selection:bg-blue-500/30">
+    <div className="min-h-screen bg-[#f8fafc] dark:bg-[#040a18] font-sans selection:bg-blue-600/30">
       <Helmet>
         <html lang={currentLangCode} dir={currentLangCode === 'ar' ? 'rtl' : 'ltr'} />
         <title>{currentSeo.title}</title>
@@ -352,12 +373,8 @@ function App() {
         {/* Premium Hero Section */}
         <section className="max-w-4xl mx-auto px-6 text-center mb-24">
           <div className="animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-blue-50 dark:bg-[#081226] text-zinc-800 dark:text-zinc-200 font-bold text-xs tracking-widest uppercase mb-8 border border-blue-100 dark:border-[#102040] shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-[#040a18] dark:bg-white animate-pulse"></span>
-              {t('badge')}
-            </div>
             <h1 className="text-[clamp(44px,7vw,80px)] font-bold text-zinc-900 dark:text-white tracking-tighter mb-6 leading-[1.05]">
-              {currentSeo.h1}
+              {renderHighlightedTitle(currentSeo.h1)}
             </h1>
             <p className="text-xl md:text-2xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
               {t('tagline')}
