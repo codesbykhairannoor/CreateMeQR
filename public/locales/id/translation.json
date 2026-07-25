@@ -10,7 +10,12 @@
     "phone": "Telepon",
     "sms": "SMS",
     "location": "Lokasi Maps",
-    "event": "Acara (Event)"
+    "event": "Acara (Event)",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "Masukkan URL website",
@@ -31,7 +36,15 @@
     "eventTitle": "Nama Acara",
     "eventLocation": "Lokasi Acara",
     "eventStart": "Waktu Mulai",
-    "eventEnd": "Waktu Selesai"
+    "eventEnd": "Waktu Selesai",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "Warna",

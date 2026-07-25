@@ -8,6 +8,11 @@ import LayoutSMS from './landing/LayoutSMS';
 import LayoutLocation from './landing/LayoutLocation';
 import LayoutPhone from './landing/LayoutPhone';
 import LayoutEvent from './landing/LayoutEvent';
+import LayoutWhatsApp from './landing/LayoutWhatsApp';
+import LayoutYouTube from './landing/LayoutYouTube';
+import LayoutInstagram from './landing/LayoutInstagram';
+import LayoutCrypto from './landing/LayoutCrypto';
+import LayoutAppStore from './landing/LayoutAppStore';
 
 function LandingContent({ qrType = 'url' }) {
   // Return the specific, unique layout for each tool
@@ -30,6 +35,16 @@ function LandingContent({ qrType = 'url' }) {
       return <LayoutPhone qrType={qrType} />;
     case 'event':
       return <LayoutEvent qrType={qrType} />;
+    case 'whatsapp':
+      return <LayoutWhatsApp qrType={qrType} />;
+    case 'youtube':
+      return <LayoutYouTube qrType={qrType} />;
+    case 'instagram':
+      return <LayoutInstagram qrType={qrType} />;
+    case 'crypto':
+      return <LayoutCrypto qrType={qrType} />;
+    case 'appstore':
+      return <LayoutAppStore qrType={qrType} />;
     default:
       // Fallback
       return <LayoutURL qrType={qrType} />;

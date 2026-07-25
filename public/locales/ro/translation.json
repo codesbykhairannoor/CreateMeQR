@@ -10,7 +10,12 @@
     "phone": "Telefon",
     "sms": "SMS",
     "location": "Locația",
-    "event": "Eveniment"
+    "event": "Eveniment",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "Introduceți adresa URL a site-ului dvs.",
@@ -31,7 +36,15 @@
     "eventTitle": "Titlul evenimentului",
     "eventLocation": "Locația evenimentului",
     "eventStart": "Ora de începere",
-    "eventEnd": "Ora de sfârșit"
+    "eventEnd": "Ora de sfârșit",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "Culori",

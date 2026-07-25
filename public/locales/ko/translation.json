@@ -10,7 +10,12 @@
     "phone": "전화",
     "sms": "문자",
     "location": "위치",
-    "event": "이벤트"
+    "event": "이벤트",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "웹사이트 URL 입력",
@@ -31,7 +36,15 @@
     "eventTitle": "이벤트 제목",
     "eventLocation": "이벤트 위치",
     "eventStart": "시작 시간",
-    "eventEnd": "종료 시간"
+    "eventEnd": "종료 시간",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "색상",

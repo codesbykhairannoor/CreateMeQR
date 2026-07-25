@@ -10,7 +10,12 @@
     "phone": "ফোন",
     "sms": "SMS",
     "location": "অবস্থান",
-    "event": "ঘটনা"
+    "event": "ঘটনা",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "আপনার ওয়েবসাইটের URL লিখুন",
@@ -31,7 +36,15 @@
     "eventTitle": "ইভেন্ট শিরোনাম",
     "eventLocation": "ইভেন্টের অবস্থান",
     "eventStart": "শুরুর সময়",
-    "eventEnd": "শেষ সময়"
+    "eventEnd": "শেষ সময়",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "রং",

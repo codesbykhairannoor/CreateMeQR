@@ -10,7 +10,12 @@
     "phone": "Телефон",
     "sms": "SMS",
     "location": "Розташування",
-    "event": "Подія"
+    "event": "Подія",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "Введіть URL-адресу свого сайту",
@@ -31,7 +36,15 @@
     "eventTitle": "Назва події",
     "eventLocation": "Місце події",
     "eventStart": "Час початку",
-    "eventEnd": "Час закінчення"
+    "eventEnd": "Час закінчення",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "Кольори",

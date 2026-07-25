@@ -10,7 +10,12 @@
     "phone": "Telefon",
     "sms": "SMS",
     "location": "Umístění",
-    "event": "Událost"
+    "event": "Událost",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "Zadejte URL svého webu",
@@ -31,7 +36,15 @@
     "eventTitle": "Název události",
     "eventLocation": "Místo konání",
     "eventStart": "Čas začátku",
-    "eventEnd": "Čas konce"
+    "eventEnd": "Čas konce",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "Barvy",

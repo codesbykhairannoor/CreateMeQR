@@ -10,7 +10,12 @@
     "phone": "Τηλέφωνο",
     "sms": "SMS",
     "location": "Τοποθεσία",
-    "event": "Εκδήλωση"
+    "event": "Εκδήλωση",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "Εισαγάγετε τη διεύθυνση URL του ιστότοπού σας",
@@ -31,7 +36,15 @@
     "eventTitle": "Τίτλος εκδήλωσης",
     "eventLocation": "Τοποθεσία εκδήλωσης",
     "eventStart": "Ώρα έναρξης",
-    "eventEnd": "Ώρα λήξης"
+    "eventEnd": "Ώρα λήξης",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "Χρώματα",

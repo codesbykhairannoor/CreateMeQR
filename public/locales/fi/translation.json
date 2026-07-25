@@ -10,7 +10,12 @@
     "phone": "Puhelin",
     "sms": "SMS",
     "location": "Sijainti",
-    "event": "Tapahtuma"
+    "event": "Tapahtuma",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "Anna verkkosivustosi URL-osoite",
@@ -31,7 +36,15 @@
     "eventTitle": "Tapahtuman nimi",
     "eventLocation": "Tapahtumapaikka",
     "eventStart": "Aloitusaika",
-    "eventEnd": "Päättymisaika"
+    "eventEnd": "Päättymisaika",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "Värit",

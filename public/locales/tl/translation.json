@@ -10,7 +10,12 @@
     "phone": "Telepono",
     "sms": "SMS",
     "location": "Lokasyon",
-    "event": "Kaganapan"
+    "event": "Kaganapan",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "Ilagay ang URL ng iyong website",
@@ -31,7 +36,15 @@
     "eventTitle": "Pamagat ng Kaganapan",
     "eventLocation": "Lokasyon ng Kaganapan",
     "eventStart": "Oras ng Pagsisimula",
-    "eventEnd": "Oras ng Pagtatapos"
+    "eventEnd": "Oras ng Pagtatapos",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "Mga Kulay",

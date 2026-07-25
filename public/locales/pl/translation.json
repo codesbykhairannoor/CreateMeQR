@@ -10,7 +10,12 @@
     "phone": "Telefon",
     "sms": "SMS",
     "location": "Lokalizacja",
-    "event": "Wydarzenie"
+    "event": "Wydarzenie",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "Wpisz adres URL swojej witryny",
@@ -31,7 +36,15 @@
     "eventTitle": "Tytuł wydarzenia",
     "eventLocation": "Miejsce wydarzenia",
     "eventStart": "Czas rozpoczęcia",
-    "eventEnd": "Czas zakończenia"
+    "eventEnd": "Czas zakończenia",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "Kolory",

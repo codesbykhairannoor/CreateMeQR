@@ -10,7 +10,12 @@
     "phone": "फ़ोन",
     "sms": "एसएमएस",
     "location": "स्थान",
-    "event": "आयोजन"
+    "event": "आयोजन",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "अपनी वेबसाइट का यूआरएल दर्ज करें",
@@ -31,7 +36,15 @@
     "eventTitle": "आयोजन का शीर्षक",
     "eventLocation": "आयोजन का स्थान",
     "eventStart": "प्रारंभ समय",
-    "eventEnd": "समाप्ति समय"
+    "eventEnd": "समाप्ति समय",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "रंग",

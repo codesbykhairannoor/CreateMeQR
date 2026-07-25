@@ -49,6 +49,30 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
     } else if (qrType === 'event') {
       const formatTime = (t) => t ? t.replace(/[-:]/g, '') + '00Z' : '';
       dataString = `BEGIN:VEVENT\nSUMMARY:${qrData.eventTitle || ''}\nLOCATION:${qrData.eventLocation || ''}\nDTSTART:${formatTime(qrData.eventStart)}\nDTEND:${formatTime(qrData.eventEnd)}\nEND:VEVENT`;
+    } else if (qrType === 'whatsapp') {
+      // WhatsApp click to chat format: https://wa.me/<number>?text=<url-encoded-message>
+      const cleanNumber = (qrData.waNumber || '').replace(/[^0-9]/g, '');
+      const encodedMsg = encodeURIComponent(qrData.waMessage || '');
+      dataString = `https://wa.me/${cleanNumber}${encodedMsg ? '?text=' + encodedMsg : ''}`;
+    } else if (qrType === 'youtube') {
+      dataString = qrData.youtubeUrl || 'https://youtube.com/';
+    } else if (qrType === 'instagram') {
+      // Instagram URL format
+      const cleanUsername = (qrData.igUsername || '').replace(/^@/, '');
+      dataString = `https://instagram.com/${cleanUsername}`;
+    } else if (qrType === 'appstore') {
+      dataString = qrData.appStoreUrl || 'https://play.google.com/store';
+    } else if (qrType === 'crypto') {
+      // Crypto URI format: bitcoin:<address>?amount=<amount>
+      const coinMap = {
+        bitcoin: 'bitcoin',
+        ethereum: 'ethereum',
+        bitcoincash: 'bitcoincash',
+        litecoin: 'litecoin',
+        dash: 'dash'
+      };
+      const protocol = coinMap[qrData.cryptoCoin || 'bitcoin'];
+      dataString = `${protocol}:${qrData.cryptoAddress || ''}${qrData.cryptoAmount ? '?amount=' + qrData.cryptoAmount : ''}`;
     }
 
     qrCode.update({

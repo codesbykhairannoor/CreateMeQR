@@ -10,7 +10,12 @@
     "phone": "Điện thoại",
     "sms": "SMS",
     "location": "Vị trí",
-    "event": "Sự kiện"
+    "event": "Sự kiện",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "Nhập URL trang web của bạn",
@@ -31,7 +36,15 @@
     "eventTitle": "Tiêu đề sự kiện",
     "eventLocation": "Địa điểm sự kiện",
     "eventStart": "Thời gian bắt đầu",
-    "eventEnd": "Thời Gian Kết Thúc"
+    "eventEnd": "Thời Gian Kết Thúc",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "Màu sắc",

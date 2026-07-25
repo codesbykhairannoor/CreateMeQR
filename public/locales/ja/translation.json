@@ -10,7 +10,12 @@
     "phone": "電話",
     "sms": "SMS",
     "location": "位置情報",
-    "event": "イベント"
+    "event": "イベント",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "ウェブサイトのURLを入力",
@@ -31,7 +36,15 @@
     "eventTitle": "イベント名",
     "eventLocation": "イベントの場所",
     "eventStart": "開始時間",
-    "eventEnd": "終了時間"
+    "eventEnd": "終了時間",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "色",

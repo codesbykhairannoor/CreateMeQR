@@ -1,9 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, Wifi, Contact, Type, Mail, Phone, MessageSquare, MapPin, Calendar } from 'lucide-react';
+import { Link, Wifi, Contact, Type, Mail, Phone, MessageSquare, MapPin, Calendar, MessageCircle, Video, Camera, Bitcoin, Smartphone } from 'lucide-react';
 
 const TABS = [
   { id: 'url', icon: Link, label: 'types.url' },
+  { id: 'whatsapp', icon: MessageCircle, label: 'types.whatsapp' },
+  { id: 'youtube', icon: Video, label: 'types.youtube' },
+  { id: 'instagram', icon: Camera, label: 'types.instagram' },
+  { id: 'appstore', icon: Smartphone, label: 'types.appstore' },
+  { id: 'crypto', icon: Bitcoin, label: 'types.crypto' },
   { id: 'text', icon: Type, label: 'types.text' },
   { id: 'email', icon: Mail, label: 'types.email' },
   { id: 'phone', icon: Phone, label: 'types.phone' },
@@ -228,6 +233,63 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
                 <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.eventEnd')}</label>
                 <input type="datetime-local" name="eventEnd" value={qrData.eventEnd || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
               </div>
+            </div>
+          </div>
+        )}
+
+        {qrType === 'whatsapp' && (
+          <div className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.waNumber')}</label>
+              <input type="tel" name="waNumber" placeholder="e.g. 1234567890" value={qrData.waNumber || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.waMessage')}</label>
+              <textarea name="waMessage" value={qrData.waMessage || ''} onChange={handleDataChange} rows={3} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+            </div>
+          </div>
+        )}
+
+        {qrType === 'youtube' && (
+          <div>
+            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.youtubeUrl')}</label>
+            <input type="url" name="youtubeUrl" placeholder="https://youtube.com/..." value={qrData.youtubeUrl || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+          </div>
+        )}
+
+        {qrType === 'instagram' && (
+          <div>
+            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.igUsername')}</label>
+            <input type="text" name="igUsername" placeholder="@username" value={qrData.igUsername || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+          </div>
+        )}
+
+        {qrType === 'appstore' && (
+          <div>
+            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.appStoreUrl')}</label>
+            <input type="url" name="appStoreUrl" placeholder="https://play.google.com/..." value={qrData.appStoreUrl || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+          </div>
+        )}
+
+        {qrType === 'crypto' && (
+          <div className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.cryptoCoin')}</label>
+              <select name="cryptoCoin" value={qrData.cryptoCoin || 'bitcoin'} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white">
+                <option value="bitcoin">Bitcoin (BTC)</option>
+                <option value="ethereum">Ethereum (ETH)</option>
+                <option value="bitcoincash">Bitcoin Cash (BCH)</option>
+                <option value="litecoin">Litecoin (LTC)</option>
+                <option value="dash">Dash</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.cryptoAddress')}</label>
+              <input type="text" name="cryptoAddress" value={qrData.cryptoAddress || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+            </div>
+            <div>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.cryptoAmount')}</label>
+              <input type="number" step="any" name="cryptoAmount" value={qrData.cryptoAmount || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
           </div>
         )}

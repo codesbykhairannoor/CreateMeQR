@@ -10,7 +10,12 @@
     "phone": "โทรศัพท์",
     "sms": "SMS",
     "location": "ที่ตั้ง",
-    "event": "เหตุการณ์"
+    "event": "เหตุการณ์",
+    "whatsapp": "WhatsApp",
+    "youtube": "YouTube",
+    "instagram": "Instagram",
+    "crypto": "Crypto",
+    "appstore": "App Store"
   },
   "form": {
     "enterUrl": "ป้อน URL เว็บไซต์ของคุณ",
@@ -31,7 +36,15 @@
     "eventTitle": "ชื่อกิจกรรม",
     "eventLocation": "สถานที่จัดงาน",
     "eventStart": "เวลาเริ่มต้น",
-    "eventEnd": "เวลาสิ้นสุด"
+    "eventEnd": "เวลาสิ้นสุด",
+    "waNumber": "WhatsApp Number",
+    "waMessage": "Pre-filled Message",
+    "youtubeUrl": "YouTube URL",
+    "igUsername": "Instagram Username",
+    "cryptoCoin": "Cryptocurrency",
+    "cryptoAddress": "Wallet Address",
+    "cryptoAmount": "Amount",
+    "appStoreUrl": "App URL (iOS/Android)"
   },
   "customization": {
     "colors": "สี",
