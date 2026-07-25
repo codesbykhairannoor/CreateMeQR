@@ -61,12 +61,12 @@ function App() {
   const [dismissBanner, setDismissBanner] = useState(false);
   
   const [visuals, setVisuals] = useState({
-    dotsOptions: { color: '#000000', type: 'square' },
+    dotsOptions: { color: '#0a1930', type: 'square' },
     backgroundOptions: { color: '#ffffff' },
     image: null,
     imageOptions: { hideBackgroundDots: true, imageSize: 0.4, margin: 10 },
-    cornersSquareOptions: { type: 'square', color: '#000000' },
-    cornersDotOptions: { type: 'square', color: '#000000' },
+    cornersSquareOptions: { type: 'square', color: '#0a1930' },
+    cornersDotOptions: { type: 'square', color: '#0a1930' },
     qrOptions: { errorCorrectionLevel: 'Q' }
   });
 
@@ -145,7 +145,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-slate-900 font-sans selection:bg-blue-500/30">
+    <div className="min-h-screen bg-[#f8fafc] dark:bg-[#040a18] font-sans selection:bg-blue-500/30">
       <Helmet>
         <html lang={currentLangCode} dir={currentLangCode === 'ar' ? 'rtl' : 'ltr'} />
         <title>{currentSeo.title}</title>
@@ -235,25 +235,25 @@ function App() {
 
       {/* Super GEO Soft Banner (No Crawler Blindness / Penalty Bypass) */}
       {softBannerLang && (
-        <div className="fixed bottom-4 right-4 left-4 md:left-auto md:w-96 bg-zinc-900/95 dark:bg-zinc-100/95 text-white dark:text-zinc-900 p-4 rounded-2xl shadow-2xl border border-zinc-800 dark:border-zinc-200 z-50 animate-fade-in-up flex flex-col gap-3 backdrop-blur-xl">
+        <div className="fixed bottom-4 right-4 left-4 md:left-auto md:w-96 bg-[#040a18]/95 dark:bg-[#081226]lue-50/95 text-white dark:text-zinc-900 p-4 rounded-2xl shadow-2xl border border-zinc-800 dark:border-blue-100 z-50 animate-fade-in-up flex flex-col gap-3 backdrop-blur-xl">
           <div className="flex items-start justify-between gap-2">
             <span className="text-sm font-medium">
               🌐 {t('softBanner.text', { lang: softBannerLang.label })}
             </span>
-            <button onClick={handleDismissBanner} className="text-zinc-400 hover:text-white dark:hover:text-zinc-900">
+            <button onClick={handleDismissBanner} className="text-blue-400 hover:text-white dark:hover:text-zinc-900">
               <X className="w-4 h-4" />
             </button>
           </div>
           <div className="flex items-center gap-2">
             <button
               onClick={() => changeLanguage(softBannerLang.code)}
-              className="flex-1 py-2 px-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs rounded-xl transition-all shadow-md text-center"
+              className="flex-1 py-2 px-3 bg-gradient-to-br from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-600 text-white font-semibold text-xs rounded-xl transition-all shadow-md text-center"
             >
               {t('softBanner.switch', { lang: softBannerLang.label })}
             </button>
             <button
               onClick={handleDismissBanner}
-              className="py-2 px-3 bg-zinc-800 dark:bg-zinc-200 hover:bg-zinc-700 dark:hover:bg-zinc-300 text-zinc-300 dark:text-zinc-700 font-medium text-xs rounded-xl transition-all"
+              className="py-2 px-3 bg-blue-900 dark:bg-zinc-200 hover:bg-zinc-700 dark:hover:bg-zinc-300 text-zinc-300 dark:text-zinc-700 font-medium text-xs rounded-xl transition-all"
             >
               {t('softBanner.dismiss')}
             </button>
@@ -262,11 +262,11 @@ function App() {
       )}
 
       {/* Premium Glass Navbar */}
-      <nav className="fixed top-0 w-full bg-white/70 dark:bg-slate-900/70 backdrop-blur-2xl border-b border-zinc-200 dark:border-slate-800 z-50 transition-colors duration-500">
+      <nav className="fixed top-0 w-full bg-white/70 dark:bg-[#040a18]/70 backdrop-blur-2xl border-b border-blue-100 dark:border-[#102040] z-50 transition-colors duration-500">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src="/logoqr.webp" alt="CreateMy-QR Logo - Free Editable QR Code Generator Online" className="w-8 h-8 rounded-xl object-contain shadow-sm" />
-            <span className="text-lg font-bold text-black dark:text-white tracking-tight">CreateMy-QR</span>
+            <span className="text-lg font-bold text-[#0a1930] dark:text-white tracking-tight">CreateMy-QR</span>
           </div>
           
           <div className="flex items-center gap-2">
@@ -274,7 +274,7 @@ function App() {
               <button
                 onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }}
                 aria-label="Change Language"
-                className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all"
+                className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all"
               >
                 <span style={{ fontSize: 16, lineHeight: 1 }}>
                   {LANGS.find(l => l.code === (i18n.language?.split('-')[0] || 'en'))?.flag || '🌐'}
@@ -285,18 +285,18 @@ function App() {
               {showLangMenu && (
                 <>
                   <div className="fixed inset-0 z-40" onClick={() => setShowLangMenu(false)} />
-                  <div className="absolute right-0 mt-2 w-72 bg-white dark:bg-[#18181b] rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] dark:shadow-[0_20px_60px_-15px_rgba(255,255,255,0.05)] border border-zinc-200 dark:border-zinc-800 z-50 overflow-hidden transform origin-top-right transition-all">
+                  <div className="absolute right-0 mt-2 w-72 bg-white dark:bg-[#18181b] rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.2)] dark:shadow-[0_20px_60px_-15px_rgba(255,255,255,0.05)] border border-blue-100 dark:border-[#102040] z-50 overflow-hidden transform origin-top-right transition-all">
                     {/* Search box */}
-                    <div className="p-4 border-b border-zinc-100 dark:border-slate-800">
-                      <div className="flex items-center gap-3 bg-zinc-100 dark:bg-slate-800 rounded-2xl px-4 py-3">
-                        <Globe className="w-4 h-4 text-zinc-400 flex-shrink-0" />
+                    <div className="p-4 border-b border-zinc-100 dark:border-[#102040]">
+                      <div className="flex items-center gap-3 bg-blue-50 dark:bg-[#081226] rounded-2xl px-4 py-3">
+                        <Globe className="w-4 h-4 text-blue-400 flex-shrink-0" />
                         <input
                           autoFocus
                           type="text"
                           placeholder="Search language..."
                           value={langSearch}
                           onChange={e => setLangSearch(e.target.value)}
-                          className="bg-transparent text-sm font-medium text-black dark:text-white outline-none w-full placeholder:text-zinc-500"
+                          className="bg-transparent text-sm font-medium text-[#0a1930] dark:text-white outline-none w-full placeholder:text-blue-600/70"
                         />
                       </div>
                     </div>
@@ -314,14 +314,14 @@ function App() {
                             onClick={() => { changeLanguage(lang.code); setLangSearch(''); }}
                             className={`w-full text-left px-5 py-3 text-sm flex items-center gap-4 transition-colors ${
                               isActive
-                                ? 'bg-zinc-100 dark:bg-slate-800 text-black dark:text-white font-bold'
-                                : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 hover:text-black dark:hover:text-white'
+                                ? 'bg-blue-50 dark:bg-[#081226] text-[#0a1930] dark:text-white font-bold'
+                                : 'text-blue-800/70 dark:text-blue-300/70 hover:bg-[#f8fafc] dark:hover:bg-[#040a18]/50 hover:text-black dark:hover:text-white'
                             }`}
                           >
                             <span style={{ fontSize: 20, lineHeight: 1, flexShrink: 0 }}>{lang.flag}</span>
                             <span className="flex-1 truncate tracking-tight">{lang.label}</span>
-                            <span className="text-[11px] text-zinc-400 dark:text-zinc-600 font-mono font-bold tracking-widest">{lang.code.toUpperCase()}</span>
-                            {isActive && <span className="w-1.5 h-1.5 rounded-full bg-zinc-900 dark:bg-white flex-shrink-0" />}
+                            <span className="text-[11px] text-blue-400 dark:text-blue-800/70 font-mono font-bold tracking-widest">{lang.code.toUpperCase()}</span>
+                            {isActive && <span className="w-1.5 h-1.5 rounded-full bg-[#040a18] dark:bg-white flex-shrink-0" />}
                           </button>
                         );
                       })}
@@ -330,7 +330,7 @@ function App() {
                         !l.label.toLowerCase().includes(langSearch.toLowerCase()) &&
                         !l.code.toLowerCase().includes(langSearch.toLowerCase())
                       ).length === LANGS.length && (
-                        <div className="px-5 py-8 text-center text-sm font-medium text-zinc-500">No languages found</div>
+                        <div className="px-5 py-8 text-center text-sm font-medium text-blue-600/70">No languages found</div>
                       )}
                     </div>
                   </div>
@@ -340,7 +340,7 @@ function App() {
             <button
               onClick={() => setDarkMode(!darkMode)}
               aria-label="Toggle Dark Mode"
-              className="p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-900 hover:text-black dark:hover:text-white transition-all"
+              className="p-2.5 rounded-full text-blue-800/70 dark:text-blue-300/70 hover:bg-blue-50 dark:hover:bg-[#040a18] hover:text-black dark:hover:text-white transition-all"
             >
               {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
@@ -352,26 +352,26 @@ function App() {
         {/* Premium Hero Section */}
         <section className="max-w-4xl mx-auto px-6 text-center mb-24">
           <div className="animate-fade-in-up">
-            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-zinc-100 dark:bg-slate-800 text-zinc-800 dark:text-zinc-200 font-bold text-xs tracking-widest uppercase mb-8 border border-zinc-200 dark:border-zinc-800 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-zinc-900 dark:bg-white animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-blue-50 dark:bg-[#081226] text-blue-950 dark:text-blue-100 font-bold text-xs tracking-widest uppercase mb-8 border border-blue-100 dark:border-[#102040] shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-[#040a18] dark:bg-white animate-pulse"></span>
               {t('badge')}
             </div>
-            <h1 className="text-[clamp(44px,7vw,80px)] font-bold text-black dark:text-white tracking-tighter mb-6 leading-[1.05]">
+            <h1 className="text-[clamp(44px,7vw,80px)] font-bold text-[#0a1930] dark:text-white tracking-tighter mb-6 leading-[1.05]">
               {currentSeo.h1}
             </h1>
-            <p className="text-xl md:text-2xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
+            <p className="text-xl md:text-2xl text-blue-600/70 dark:text-blue-300/70 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
               {t('tagline')}
             </p>
             {/* GEO Fact Density Semantic Block (>40% Information Gain) */}
-            <div className="text-sm text-zinc-500 dark:text-zinc-400 max-w-3xl mx-auto text-center">
-              <strong className="text-black dark:text-white mr-2">{t('geo.title')}</strong> {t('geo.fact')}
+            <div className="text-sm text-blue-600/70 dark:text-blue-300/70 max-w-3xl mx-auto text-center">
+              <strong className="text-[#0a1930] dark:text-white mr-2">{t('geo.title')}</strong> {t('geo.fact')}
             </div>
           </div>
         </section>
 
         {/* Generator Application Workspace */}
         <section className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-zinc-50 dark:bg-slate-900 border border-zinc-200 dark:border-slate-800 rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-[#f8fafc] dark:bg-[#040a18] border border-blue-100 dark:border-[#102040] rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
         
         {/* HIDDEN SEMANTIC CORE FOR SEO BOTS (GRAY HAT PSEO) */}
         <div className="sr-only" aria-hidden="true">
@@ -382,22 +382,22 @@ function App() {
         {/* LEFT COLUMN: Input & Customization Panel */}
             <div className="lg:col-span-7 lg:col-start-1 flex flex-col animate-fade-in-right">
               {/* Premium iOS Segmented Tabs */}
-              <div className="flex space-x-2 bg-zinc-200/50 dark:bg-slate-800/80 p-1.5 rounded-2xl mb-8 border border-zinc-200/50 dark:border-zinc-800/50">
+              <div className="flex space-x-2 bg-blue-100/50 dark:bg-[#081226]/80 p-1.5 rounded-2xl mb-8 border border-blue-100/50 dark:border-[#102040]/50">
                 <button
                   onClick={() => setActiveTab('data')}
-                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'data' ? 'bg-blue-600 text-white shadow-md border-transparent' : 'text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white'}`}
+                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'data' ? 'bg-gradient-to-br from-blue-700 to-blue-500 text-white shadow-md border-transparent' : 'text-blue-600/70 dark:text-blue-300/70 hover:text-black dark:hover:text-white'}`}
                 >
                   {t('tabs.step1')}
                 </button>
                 <button
                   onClick={() => hasGenerated && setActiveTab('design')}
-                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'design' ? 'bg-blue-600 text-white shadow-md border-transparent' : 'text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white'} ${!hasGenerated ? 'cursor-not-allowed opacity-50' : ''}`}
+                  className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'design' ? 'bg-gradient-to-br from-blue-700 to-blue-500 text-white shadow-md border-transparent' : 'text-blue-600/70 dark:text-blue-300/70 hover:text-black dark:hover:text-white'} ${!hasGenerated ? 'cursor-not-allowed opacity-50' : ''}`}
                 >
                   {t('tabs.step2')}
                 </button>
               </div>
 
-              <div className="bg-white dark:bg-slate-800 border border-zinc-200 dark:border-slate-800 rounded-3xl shadow-sm overflow-hidden flex flex-col min-h-[500px]">
+              <div className="bg-white dark:bg-[#081226] border border-blue-100 dark:border-[#102040] rounded-3xl shadow-sm overflow-hidden flex flex-col min-h-[500px]">
                 <div className="flex-1 overflow-y-auto custom-scrollbar">
                   {activeTab === 'data' ? (
                     <InputForm 
@@ -411,7 +411,7 @@ function App() {
                     />
                   ) : (
                     <div className="p-2 animate-fade-in-up-fast">
-                      <React.Suspense fallback={<div className="p-12 text-center text-zinc-500 font-medium tracking-tight">Loading premium tools...</div>}><CustomizationPanel visuals={visuals} setVisuals={setVisuals} /></React.Suspense>
+                      <React.Suspense fallback={<div className="p-12 text-center text-blue-600/70 font-medium tracking-tight">Loading premium tools...</div>}><CustomizationPanel visuals={visuals} setVisuals={setVisuals} /></React.Suspense>
                     </div>
                   )}
                 </div>
@@ -428,10 +428,10 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-12 text-center text-zinc-500 dark:text-zinc-600 text-sm">
+      <footer className="border-t border-blue-100 dark:border-[#102040] bg-white dark:bg-[#040a18] py-12 text-center text-blue-600/70 dark:text-blue-800/70 text-sm">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© {new Date().getFullYear()} CreateMy-QR Technologies. All rights reserved.</p>
-          <div className="flex gap-6 font-medium text-black dark:text-white">
+          <div className="flex gap-6 font-medium text-[#0a1930] dark:text-white">
             <a href="/about" className="hover:underline">About</a>
             <a href="/privacy" className="hover:underline">Privacy Policy</a>
             <a href="/terms" className="hover:underline">Terms of Service</a>

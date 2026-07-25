@@ -34,15 +34,15 @@ function LandingContent() {
     <div className="hq-wrapper">
       <style>{`
         .hq-wrapper {
-          --hq-bg: #ffffff;
-          --hq-text: #000000;
-          --hq-text-muted: #666666;
-          --hq-card: #f9f9f9;
-          --hq-border: #eaeaea;
-          --hq-accent: #000000;
-          --hq-accent-glow: rgba(0,0,0,0.1);
+          --hq-bg: #f8fafc;
+          --hq-text: #0a1930;
+          --hq-text-muted: #475569;
+          --hq-card: #ffffff;
+          --hq-border: #e2e8f0;
+          --hq-accent: #1d4ed8;
+          --hq-accent-glow: rgba(29, 78, 216, 0.1);
           --hq-shadow: 0 10px 40px -10px rgba(0,0,0,0.08);
-          --hq-hover-shadow: 0 20px 60px -15px rgba(0,0,0,0.15);
+          --hq-hover-shadow: 0 20px 60px -15px rgba(29, 78, 216, 0.15);
           font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
@@ -51,15 +51,15 @@ function LandingContent() {
         }
 
         html.dark .hq-wrapper {
-          --hq-bg: #0f172a;
-          --hq-text: #ffffff;
-          --hq-text-muted: #888888;
-          --hq-card: #1e293b;
-          --hq-border: #334155;
-          --hq-accent: #ffffff;
-          --hq-accent-glow: rgba(255,255,255,0.1);
-          --hq-shadow: 0 10px 40px -10px rgba(255,255,255,0.05);
-          --hq-hover-shadow: 0 20px 60px -15px rgba(255,255,255,0.1);
+          --hq-bg: #040a18;
+          --hq-text: #f1f5f9;
+          --hq-text-muted: #94a3b8;
+          --hq-card: #081226;
+          --hq-border: #102040;
+          --hq-accent: #3b82f6;
+          --hq-accent-glow: rgba(59, 130, 246, 0.15);
+          --hq-shadow: 0 10px 40px -10px rgba(0,0,0,0.3);
+          --hq-hover-shadow: 0 20px 60px -15px rgba(59, 130, 246, 0.2);
         }
 
         .hq-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }

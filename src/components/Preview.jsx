@@ -70,15 +70,15 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
   };
 
   return (
-    <div className="bg-white dark:bg-slate-800 border border-zinc-200 dark:border-slate-700 rounded-3xl shadow-sm p-8 flex flex-col items-center justify-center min-h-[500px]">
+    <div className="bg-white dark:bg-[#081226] border border-blue-100 dark:border-slate-700 rounded-3xl shadow-sm p-8 flex flex-col items-center justify-center min-h-[500px]">
       
       {!hasGenerated ? (
         <div className="flex-1 flex flex-col items-center justify-center text-center p-8">
-          <div className="w-48 h-48 border-2 border-dashed border-zinc-300 dark:border-zinc-700 rounded-2xl flex items-center justify-center mb-6 bg-zinc-50 dark:bg-zinc-800/50">
+          <div className="w-48 h-48 border-2 border-dashed border-zinc-300 dark:border-zinc-700 rounded-2xl flex items-center justify-center mb-6 bg-[#f8fafc] dark:bg-blue-900/50">
             <QRCodeStylingPlaceholder />
           </div>
-          <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">{t('preview.readyTitle')}</h2>
-          <p className="text-zinc-600 dark:text-zinc-300 text-sm max-w-[200px]">
+          <h2 className="text-xl font-semibold text-[#0a1930] dark:text-blue-50 mb-2">{t('preview.readyTitle')}</h2>
+          <p className="text-blue-800/70 dark:text-zinc-300 text-sm max-w-[200px]">
             {t('preview.readyDesc')}
           </p>
         </div>
@@ -89,21 +89,21 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
           <div className="flex w-full gap-3 mt-2">
             <button
               onClick={() => onDownloadClick('png')}
-              className="flex-1 flex items-center justify-center px-4 py-3 bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 rounded-xl hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors font-semibold shadow-sm"
+              className="flex-1 flex items-center justify-center px-4 py-3 bg-[#040a18] text-white dark:bg-[#081226]lue-50 dark:text-zinc-900 rounded-xl hover:bg-blue-900 dark:hover:bg-zinc-200 transition-colors font-semibold shadow-sm"
             >
               <Download className="w-4 h-4 mr-2" />
               PNG
             </button>
             <button
               onClick={() => onDownloadClick('svg')}
-              className="flex-1 flex items-center justify-center px-4 py-3 bg-white text-zinc-700 border border-zinc-200 dark:bg-slate-800 dark:text-zinc-300 dark:border-zinc-700 rounded-xl hover:bg-zinc-50 dark:hover:bg-zinc-800 transition-colors font-medium shadow-sm"
+              className="flex-1 flex items-center justify-center px-4 py-3 bg-white text-zinc-700 border border-blue-100 dark:bg-[#081226] dark:text-zinc-300 dark:border-zinc-700 rounded-xl hover:bg-[#f8fafc] dark:hover:bg-blue-900 transition-colors font-medium shadow-sm"
             >
               <Download className="w-4 h-4 mr-2" />
               SVG
             </button>
           </div>
 
-          <div className="mt-8 flex items-center justify-center text-xs font-medium text-zinc-600 dark:text-zinc-300">
+          <div className="mt-8 flex items-center justify-center text-xs font-medium text-blue-800/70 dark:text-zinc-300">
             <span className="flex items-center text-emerald-600 bg-emerald-50 dark:bg-emerald-950/50 px-2.5 py-1 rounded-full mr-2">
               <Check className="w-3 h-3 mr-1" /> {t('preview.clientSide')}
             </span>
@@ -117,7 +117,7 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
 
 function QRCodeStylingPlaceholder() {
   return (
-    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="text-zinc-300 dark:text-zinc-600">
+    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="text-zinc-300 dark:text-blue-800/70">
       <rect x="3" y="3" width="7" height="7" rx="1" />
       <rect x="14" y="3" width="7" height="7" rx="1" />
       <rect x="14" y="14" width="7" height="7" rx="1" />

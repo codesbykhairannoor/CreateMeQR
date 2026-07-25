@@ -23,19 +23,19 @@ export default function SeoArticle({ currentLangCode }) {
   const sectionTitle = tagTitles[currentLangCode] || tagTitles['en'];
 
   return (
-    <section className="w-full bg-white dark:bg-zinc-950 py-12 px-6 border-t border-zinc-200 dark:border-zinc-800">
+    <section className="w-full bg-white dark:bg-zinc-950 py-12 px-6 border-t border-blue-100 dark:border-[#102040]">
       <Helmet>
         <meta name="keywords" content={keywordsStringRaw} />
       </Helmet>
       
       <div className="max-w-4xl mx-auto">
-        <h3 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider mb-6">
+        <h3 className="text-sm font-bold text-[#0a1930] dark:text-blue-50 uppercase tracking-wider mb-6">
           {sectionTitle}
         </h3>
-        <div className="text-[11px] leading-relaxed text-zinc-400 dark:text-zinc-500 font-sans">
+        <div className="text-[11px] leading-relaxed text-blue-400 dark:text-blue-600/70 font-sans">
           {keywordsList.map((kw, idx) => (
             <React.Fragment key={idx}>
-              <span className="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors cursor-default">
+              <span className="hover:text-blue-800/70 dark:hover:text-zinc-300 transition-colors cursor-default">
                 {kw}
               </span>
               {idx < keywordsList.length - 1 && (
