@@ -26,7 +26,7 @@
     "emailSubject": "Sujet",
     "emailBody": "Corps du message",
     "smsMessage": "Message SMS",
-    "lat": "Latitude",
+    "lat": "Latitudes",
     "lng": "Longitude",
     "eventTitle": "Titre de l'événement",
     "eventLocation": "Lieu de l'événement",
