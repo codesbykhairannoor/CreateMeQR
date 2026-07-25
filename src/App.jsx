@@ -73,9 +73,9 @@ export default function App() {
         {/* Bidirectional Hreflang Matrix for 30 Languages */}
         {LANGS.map(lang => {
           const href = `https://www.createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
-          return <link key={lang.code} rel="alternate" hreflang={lang.code} href={href} />;
+          return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
         })}
-        <link rel="alternate" hreflang="x-default" href={`https://www.createmy-qr.com${slug === '/' ? '' : slug}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://www.createmy-qr.com${slug === '/' ? '' : slug}`} />
         
         <script type="application/ld+json">
           {`

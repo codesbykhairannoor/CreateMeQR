@@ -49,7 +49,7 @@ function LayoutURL({ qrType = 'url' }) {
           border-radius: 24px;
           padding: 32px;
           transition: transform 0.3s, border-color 0.3s;
-          display: flex; flexDirection: column;
+          display: flex; flex-direction: column;
         }
         .hq-card:hover { border-color: var(--hq-accent); transform: translateY(-2px); }
         .hq-icon-box {

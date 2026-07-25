@@ -11,6 +11,11 @@ export const PSEO_ROUTES = {
   '/phone-qr-code-generator': 'phone',
   '/event-qr-code-generator': 'event',
   '/google-maps-qr-code': 'location',
+  '/whatsapp-qr-code-generator': 'whatsapp',
+  '/youtube-qr-code-generator': 'youtube',
+  '/instagram-qr-code-generator': 'instagram',
+  '/crypto-qr-code-generator': 'crypto',
+  '/app-store-qr-code-generator': 'appstore',
 };
 
 // 30 Languages Supported

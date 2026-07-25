@@ -46,7 +46,7 @@ function LayoutSMS({ qrType = 'sms' }) {
         .hq-chat-hero p { font-size: 20px; color: var(--hq-text-muted); line-height: 1.6; }
         
         .hq-chat-bubbles {
-          display: flex; flexDirection: column; gap: 24px; margin-bottom: 120px;
+          display: flex; flex-direction: column; gap: 24px; margin-bottom: 120px;
         }
         .hq-bubble {
           padding: 24px 32px; border-radius: 32px; max-width: 80%;
