@@ -168,5 +168,10 @@
     "ctaTitle": "Begynn å lage din QR-kode",
     "ctaSubtitle": "Gratis for alltid. Ingen registrering.",
     "ctaButton": "Generer QR-kode"
+  },
+  "seoTool": {
+    "title": "{{tool}} QR Code Generator - Gratis og tilpasset",
+    "h1": "Gratis {{tool}} QR-kodegenerator",
+    "description": "Lag en tilpasset {{tool}} QR-kode med logo, farge og design. 100 % gratis, ingen registrering og ingen utløpsdato."
   }
 }

@@ -168,5 +168,10 @@
     "ctaTitle": "Začněte vytvářet QR kód",
     "ctaSubtitle": "Navždy zdarma. Bez registrace.",
     "ctaButton": "Vytvořit QR kód"
+  },
+  "seoTool": {
+    "title": "{{tool}} generátor QR kódu – zdarma a na míru",
+    "h1": "Zdarma {{tool}} generátor QR kódů",
+    "description": "Vytvořte si vlastní {{tool}} QR kód s logem, barvou a designem. 100% zdarma, bez registrace a bez vypršení platnosti."
   }
 }

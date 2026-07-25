@@ -168,5 +168,10 @@
     "ctaTitle": "Kezdje el QR-kódja létrehozását",
     "ctaSubtitle": "Örökre ingyenes. Regisztráció nélkül.",
     "ctaButton": "QR-kód létrehozása"
+  },
+  "seoTool": {
+    "title": "{{tool}} QR-kód generátor - ingyenes és egyedi",
+    "h1": "Ingyenes {{tool}} QR kód generátor",
+    "description": "Hozzon létre egyéni {{tool}} QR-kódot logóval, színnel és dizájnnal. 100%-ban ingyenes, nincs regisztráció és nincs lejárat."
   }
 }

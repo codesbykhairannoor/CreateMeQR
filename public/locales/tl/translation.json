@@ -168,5 +168,10 @@
     "ctaTitle": "Simulan ang Paglikha ng QR Code",
     "ctaSubtitle": "Libre magpakailanman. Walang signup.",
     "ctaButton": "Gumawa ng QR Code"
+  },
+  "seoTool": {
+    "title": "{{tool}} QR Code Generator - Libre at Custom",
+    "h1": "Libreng {{tool}} QR Code Generator",
+    "description": "Gumawa ng custom na {{tool}} QR Code na may logo, kulay, at disenyo. 100% libre, walang signup, at walang expiration."
   }
 }

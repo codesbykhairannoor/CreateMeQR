@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply bg-[#f8fafc] text-[#0a1930] dark:bg-[#040a18] dark:text-[#f1f5f9] antialiased transition-colors duration-500;
+    @apply bg-[#f8fafc] text-black dark:bg-[#040a18] dark:text-white antialiased transition-colors duration-500;
     font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
   }
   ::selection {

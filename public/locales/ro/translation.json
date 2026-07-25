@@ -168,5 +168,10 @@
     "ctaTitle": "Începeți să creați codul QR",
     "ctaSubtitle": "Gratuit pentru totdeauna. Fără înregistrare.",
     "ctaButton": "Generați codul QR"
+  },
+  "seoTool": {
+    "title": "{{tool}} QR Code Generator - Gratuit și personalizat",
+    "h1": "Generator gratuit de coduri QR {{tool}}",
+    "description": "Creați un cod QR {{tool}} personalizat cu logo, culoare și design. 100% gratuit, fără înscriere și fără expirare."
   }
 }

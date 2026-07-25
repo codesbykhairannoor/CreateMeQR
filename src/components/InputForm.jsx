@@ -54,8 +54,8 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
               aria-label={`${t(tab.label)} - ${topKeywords}`}
               className={`flex items-center px-4 py-2 rounded-lg font-medium transition-colors whitespace-nowrap
                 ${isActive 
-                  ? 'bg-gradient-to-br from-blue-700 to-blue-500 text-white' 
-                  : 'bg-blue-50 text-blue-800/70 hover:bg-zinc-200 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-600'
+                  ? 'bg-gradient-to-br from-slate-900 to-blue-700 dark:from-[#020617] dark:to-blue-600 text-white' 
+                  : 'bg-blue-50 text-zinc-600 hover:bg-zinc-200 dark:bg-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-600'
                 }`}
             >
               <Icon className="w-4 h-4 mr-2" />
@@ -68,7 +68,7 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
       <div className="space-y-4">
         {qrType === 'url' && (
           <div>
-            <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">
+            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">
               {t('types.url')}
             </label>
             <input
@@ -85,7 +85,7 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
         {qrType === 'wifi' && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.networkName')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.networkName')}</label>
               <input
                 type="text"
                 name="ssid"
@@ -96,7 +96,7 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.password')}</label>
+                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.password')}</label>
                 <input
                   type="password"
                   name="password"
@@ -106,7 +106,7 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.encryption')}</label>
+                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.encryption')}</label>
                 <select
                   name="encryption"
                   value={qrData.encryption || 'WPA'}
@@ -126,20 +126,20 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.firstName')}</label>
+                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.firstName')}</label>
                 <input type="text" name="firstName" value={qrData.firstName || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.lastName')}</label>
+                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.lastName')}</label>
                 <input type="text" name="lastName" value={qrData.lastName || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.phone')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.phone')}</label>
               <input type="tel" name="phone" value={qrData.phone || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.email')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.email')}</label>
               <input type="email" name="email" value={qrData.email || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
 
         {qrType === 'text' && (
           <div>
-            <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('types.text')}</label>
+            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('types.text')}</label>
             <textarea
               name="text"
               value={qrData.text || ''}
@@ -162,15 +162,15 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
         {qrType === 'email' && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.emailTo')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.emailTo')}</label>
               <input type="email" name="emailTo" value={qrData.emailTo || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.emailSubject')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.emailSubject')}</label>
               <input type="text" name="emailSubject" value={qrData.emailSubject || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.emailBody')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.emailBody')}</label>
               <textarea name="emailBody" value={qrData.emailBody || ''} onChange={handleDataChange} rows={3} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
 
         {qrType === 'phone' && (
           <div>
-            <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.phone')}</label>
+            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.phone')}</label>
             <input type="tel" name="phoneNumber" value={qrData.phoneNumber || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
           </div>
         )}
@@ -186,11 +186,11 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
         {qrType === 'sms' && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.phone')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.phone')}</label>
               <input type="tel" name="smsNumber" value={qrData.smsNumber || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.smsMessage')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.smsMessage')}</label>
               <textarea name="smsMessage" value={qrData.smsMessage || ''} onChange={handleDataChange} rows={3} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
           </div>
@@ -199,11 +199,11 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
         {qrType === 'location' && (
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.lat')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.lat')}</label>
               <input type="text" name="lat" placeholder="e.g. -6.2088" value={qrData.lat || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.lng')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.lng')}</label>
               <input type="text" name="lng" placeholder="e.g. 106.8456" value={qrData.lng || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
           </div>
@@ -212,20 +212,20 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
         {qrType === 'event' && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.eventTitle')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.eventTitle')}</label>
               <input type="text" name="eventTitle" value={qrData.eventTitle || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.eventLocation')}</label>
+              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.eventLocation')}</label>
               <input type="text" name="eventLocation" value={qrData.eventLocation || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.eventStart')}</label>
+                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.eventStart')}</label>
                 <input type="datetime-local" name="eventStart" value={qrData.eventStart || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1 text-blue-950 dark:text-blue-100">{t('form.eventEnd')}</label>
+                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.eventEnd')}</label>
                 <input type="datetime-local" name="eventEnd" value={qrData.eventEnd || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
               </div>
             </div>
@@ -236,7 +236,7 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
       <div className="mt-8 pt-6 border-t border-zinc-100 dark:border-zinc-700">
         <button
           onClick={handleGenerate}
-          className="w-full flex items-center justify-center px-6 py-3 bg-gradient-to-br from-blue-700 to-blue-500 text-white rounded-xl hover:from-blue-800 hover:to-blue-600 transition-colors font-semibold shadow-sm text-lg"
+          className="w-full flex items-center justify-center px-6 py-3 bg-gradient-to-br from-slate-900 to-blue-700 dark:from-[#020617] dark:to-blue-600 text-white rounded-xl hover:from-slate-800 hover:to-blue-600 dark:hover:from-[#0f172a] dark:hover:to-blue-500 transition-colors font-semibold shadow-sm text-lg"
         >
           {hasGenerated ? t('tabs.update') : t('tabs.generate')}
         </button>

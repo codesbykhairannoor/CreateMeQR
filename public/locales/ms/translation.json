@@ -168,5 +168,10 @@
     "ctaTitle": "Mula Cipta Kod QR Anda",
     "ctaSubtitle": "Percuma selamanya. Tanpa pendaftaran.",
     "ctaButton": "Jana Kod QR"
+  },
+  "seoTool": {
+    "title": "Penjana Kod QR {{tool}} - Percuma & Tersuai",
+    "h1": "Penjana Kod QR {{tool}} Percuma",
+    "description": "Buat Kod QR {{tool}} tersuai dengan logo, warna dan reka bentuk. 100% percuma, tiada pendaftaran dan tiada tamat tempoh."
   }
 }

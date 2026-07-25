@@ -168,5 +168,10 @@
     "ctaTitle": "Bắt Đầu Tạo Mã QR Của Bạn",
     "ctaSubtitle": "Miễn phí mãi mãi. Không cần đăng ký.",
     "ctaButton": "Tạo Mã QR"
+  },
+  "seoTool": {
+    "title": "Trình tạo mã QR {{tool}} - Miễn phí & Tùy chỉnh",
+    "h1": "Trình tạo mã QR {{tool}} miễn phí",
+    "description": "Tạo Mã QR {{tool}} tùy chỉnh với logo, màu sắc và thiết kế. Miễn phí 100%, không cần đăng ký và không hết hạn."
   }
 }

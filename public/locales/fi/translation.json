@@ -168,5 +168,10 @@
     "ctaTitle": "Aloita QR-koodin luominen",
     "ctaSubtitle": "Ilmainen ikuisesti. Ei rekisteröitymistä.",
     "ctaButton": "Luo QR-koodi"
+  },
+  "seoTool": {
+    "title": "{{tool}} QR-koodigeneraattori - ilmainen ja räätälöity",
+    "h1": "Ilmainen {{tool}} QR Code Generator",
+    "description": "Luo mukautettu {{tool}} QR-koodi logolla, värillä ja suunnittelulla. 100 % ilmainen, ei rekisteröitymistä eikä vanhenemista."
   }
 }

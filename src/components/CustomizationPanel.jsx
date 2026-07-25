@@ -21,7 +21,7 @@ const Accordion = ({ title, icon: Icon, defaultOpen = false, children }) => {
           {Icon && <Icon className="w-5 h-5 mr-2 text-blue-600" />}
           {title}
         </div>
-        {isOpen ? <ChevronUp className="w-5 h-5 text-blue-800/70" /> : <ChevronDown className="w-5 h-5 text-blue-800/70" />}
+        {isOpen ? <ChevronUp className="w-5 h-5 text-zinc-600" /> : <ChevronDown className="w-5 h-5 text-zinc-600" />}
       </button>
       {isOpen && (
         <div className="p-4 border-t border-blue-100 dark:border-zinc-700">
@@ -117,7 +117,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
       <Accordion title={t('customization.colors')} icon={Palette} defaultOpen={true}>
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div>
-            <label className="block text-sm font-medium mb-2 text-blue-950 dark:text-blue-100">{t('customization.foreground')}</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">{t('customization.foreground')}</label>
             <input
               type="color"
               value={visuals.dotsOptions.color || visuals.dotsOptions.gradient?.colorStops[0]?.color || '#000000'}
@@ -126,7 +126,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium mb-2 text-blue-950 dark:text-blue-100">{t('customization.background')}</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">{t('customization.background')}</label>
             <input
               type="color"
               value={visuals.backgroundOptions.color || '#ffffff'}
@@ -135,7 +135,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium mb-2 text-blue-950 dark:text-blue-100">{t('customization.eyeColor')}</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">{t('customization.eyeColor')}</label>
             <input
               type="color"
               value={visuals.cornersSquareOptions.color || '#000000'}
@@ -152,7 +152,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
             onChange={handleGradientToggle}
             className="w-4 h-4 text-blue-600 rounded border-zinc-300 focus:ring-black dark:focus:ring-white"
           />
-          <label htmlFor="useGradient" className="ml-2 text-sm font-medium text-blue-950 dark:text-blue-100">
+          <label htmlFor="useGradient" className="ml-2 text-sm font-medium text-zinc-800 dark:text-zinc-200">
             {t('customization.gradient')}
           </label>
         </div>
@@ -173,7 +173,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-medium mb-1 text-blue-950 dark:text-blue-100">{t('customization.logoSize')}</label>
+                  <label className="block text-xs font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('customization.logoSize')}</label>
                   <input 
                     type="range" 
                     min="0.1" 
@@ -185,7 +185,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-medium mb-1 text-blue-950 dark:text-blue-100">{t('customization.logoMargin')}</label>
+                  <label className="block text-xs font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('customization.logoMargin')}</label>
                   <input 
                     type="range" 
                     min="0" 
@@ -204,7 +204,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
                 type="file"
                 accept="image/*"
                 onChange={handleImageUpload}
-                className="block w-full text-sm text-blue-800/70
+                className="block w-full text-sm text-zinc-600
                   file:mr-4 file:py-2 file:px-4
                   file:rounded-md file:border-0
                   file:text-sm file:font-semibold
@@ -220,7 +220,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
       <Accordion title={t('customization.design')} icon={LayoutTemplate}>
         <div className="space-y-4">
           <div>
-            <label className="block text-sm font-medium mb-2 text-blue-950 dark:text-blue-100">{t('customization.dotsStyle')}</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">{t('customization.dotsStyle')}</label>
             <div className="grid grid-cols-4 gap-2">
               {['square', 'dots', 'rounded', 'classy'].map(style => (
                 <button
@@ -234,7 +234,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium mb-2 text-blue-950 dark:text-blue-100">{t('customization.cornersStyle')}</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">{t('customization.cornersStyle')}</label>
             <div className="grid grid-cols-4 gap-2">
               {['square', 'dot', 'extra-rounded'].map(style => (
                 <button
@@ -248,7 +248,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium mb-2 text-blue-950 dark:text-blue-100">Error Correction</label>
+            <label className="block text-sm font-medium mb-2 text-zinc-800 dark:text-zinc-200">Error Correction</label>
             <div className="grid grid-cols-4 gap-2">
               {['L', 'M', 'Q', 'H'].map(level => (
                 <button
