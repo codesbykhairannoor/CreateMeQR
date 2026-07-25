@@ -1,22 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
-const IconCheck = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-    <polyline points="20 6 9 17 4 12"></polyline>
-  </svg>
-);
-const IconChevronDown = ({ open }) => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: open ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)' }}>
-    <polyline points="6 9 12 15 18 9"></polyline>
-  </svg>
-);
-const IconUser = () => (
-  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-    <circle cx="12" cy="7" r="4"></circle>
-  </svg>
-);
+import { UserCircle2, Contact, Phone, CheckCircle2, ChevronDown, ShieldCheck, Zap } from 'lucide-react';
 
 function LayoutC({ qrType = 'vcard' }) {
   const { t: translate } = useTranslation();
@@ -24,6 +8,8 @@ function LayoutC({ qrType = 'vcard' }) {
   const tObj = translate('landing', { returnObjects: true });
   const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
   const [openFaq, setOpenFaq] = useState(null);
+
+  const HeroIcon = qrType === 'phone' ? Phone : Contact;
 
   return (
     <div className="hq-layout-c">
@@ -34,9 +20,9 @@ function LayoutC({ qrType = 'vcard' }) {
           --hq-text-muted: #475569;
           --hq-card: #ffffff;
           --hq-border: #e2e8f0;
-          --hq-accent: #1d4ed8;
-          --hq-accent-glow: rgba(29, 78, 216, 0.1);
-          --hq-grad: linear-gradient(135deg, var(--hq-accent), #3b82f6);
+          --hq-accent: #8b5cf6;
+          --hq-accent-glow: rgba(139, 92, 246, 0.1);
+          --hq-grad: linear-gradient(135deg, var(--hq-accent), #a855f7);
           font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
@@ -48,9 +34,9 @@ function LayoutC({ qrType = 'vcard' }) {
           --hq-text-muted: #94a3b8;
           --hq-card: #081226;
           --hq-border: #102040;
-          --hq-accent: #3b82f6;
-          --hq-accent-glow: rgba(59, 130, 246, 0.15);
-          --hq-grad: linear-gradient(135deg, #1d4ed8, var(--hq-accent));
+          --hq-accent: #a855f7;
+          --hq-accent-glow: rgba(168, 85, 247, 0.15);
+          --hq-grad: linear-gradient(135deg, #8b5cf6, var(--hq-accent));
         }
         
         .hq-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
@@ -62,17 +48,28 @@ function LayoutC({ qrType = 'vcard' }) {
           padding: 80px 40px;
           text-align: center;
           margin-bottom: 80px;
-          box-shadow: 0 20px 80px -20px rgba(0,0,0,0.05);
+          box-shadow: 0 20px 80px -20px rgba(139, 92, 246, 0.05);
+          position: relative;
+          overflow: hidden;
         }
         html.dark .hq-profile-hero { box-shadow: none; }
+        
+        .hq-hero-bg {
+          position: absolute; top: 0; left: 0; right: 0; height: 160px;
+          background: var(--hq-grad); opacity: 0.1;
+        }
         
         .hq-avatar-wrap {
           width: 120px; height: 120px;
           border-radius: 50%;
-          background: var(--hq-accent-glow);
+          background: var(--hq-card);
+          border: 4px solid var(--hq-bg);
           color: var(--hq-accent);
           display: flex; align-items: center; justify-content: center;
-          margin: 0 auto 32px auto;
+          margin: -20px auto 32px auto;
+          position: relative;
+          z-index: 2;
+          box-shadow: 0 10px 30px -10px var(--hq-accent-glow);
         }
         
         .hq-profile-hero h2 {
@@ -80,16 +77,18 @@ function LayoutC({ qrType = 'vcard' }) {
           font-weight: 900;
           letter-spacing: -0.04em;
           margin-bottom: 24px;
+          position: relative; z-index: 2;
         }
         .hq-profile-hero p {
           font-size: 20px;
           color: var(--hq-text-muted);
           max-width: 600px; margin: 0 auto 40px auto;
           line-height: 1.6;
+          position: relative; z-index: 2;
         }
         
         .hq-badge-strip {
-          display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;
+          display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; position: relative; z-index: 2;
         }
         .hq-badge {
           background: var(--hq-bg); border: 1px solid var(--hq-border);
@@ -110,7 +109,7 @@ function LayoutC({ qrType = 'vcard' }) {
           border-radius: 24px; padding: 40px;
           scroll-snap-align: start;
         }
-        .hq-h-card h3 { font-size: 24px; font-weight: 800; margin-bottom: 16px; }
+        .hq-h-card h3 { font-size: 24px; font-weight: 800; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
         .hq-h-card p { color: var(--hq-text-muted); line-height: 1.6; }
         
         .hq-timeline {
@@ -124,13 +123,14 @@ function LayoutC({ qrType = 'vcard' }) {
 
       <div className="hq-container">
         <div className="hq-profile-hero">
-          <div className="hq-avatar-wrap"><IconUser /></div>
+          <div className="hq-hero-bg"></div>
+          <div className="hq-avatar-wrap"><UserCircle2 size={64} strokeWidth={1.5} /></div>
           <h2>{t.heroTitle} <br/><span style={{ color: 'var(--hq-accent)' }}>{typeName}</span></h2>
           <p>{t.heroSubtitle}</p>
           <div className="hq-badge-strip">
-            <div className="hq-badge"><span style={{ color: 'var(--hq-accent)' }}><IconCheck/></span> {t.badgePrivate || 'Private'}</div>
-            <div className="hq-badge"><span style={{ color: 'var(--hq-accent)' }}><IconCheck/></span> {t.badgeZeroAds || 'No Ads'}</div>
-            <div className="hq-badge"><span style={{ color: 'var(--hq-accent)' }}><IconCheck/></span> {t.badgeFree || 'Free'}</div>
+            <div className="hq-badge"><span style={{ color: 'var(--hq-accent)' }}><ShieldCheck size={16}/></span> {t.badgePrivate || 'Private'}</div>
+            <div className="hq-badge"><span style={{ color: 'var(--hq-accent)' }}><CheckCircle2 size={16}/></span> {t.badgeZeroAds || 'No Ads'}</div>
+            <div className="hq-badge"><span style={{ color: 'var(--hq-accent)' }}><Zap size={16}/></span> {t.badgeFree || 'Free'}</div>
           </div>
         </div>
         
@@ -142,15 +142,15 @@ function LayoutC({ qrType = 'vcard' }) {
         
         <div className="hq-horizontal-cards">
           <div className="hq-h-card">
-            <h3>{t.comp1Title}</h3>
+            <h3><ShieldCheck size={28} color="var(--hq-accent)" /> {t.comp1Title}</h3>
             <p>{t.comp1Desc}</p>
           </div>
           <div className="hq-h-card">
-            <h3>{t.comp2Title}</h3>
+            <h3><Zap size={28} color="var(--hq-accent)" /> {t.comp2Title}</h3>
             <p>{t.comp2Desc}</p>
           </div>
           <div className="hq-h-card">
-            <h3>{t.comp3Title}</h3>
+            <h3><HeroIcon size={28} color="var(--hq-accent)" /> {t.comp3Title}</h3>
             <p>{t.comp3Desc}</p>
           </div>
         </div>
@@ -197,7 +197,7 @@ function LayoutC({ qrType = 'vcard' }) {
                   style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left' }}
                 >
                   <span style={{ fontSize: 18, fontWeight: 700, color: 'var(--hq-text)' }}>{faq.q}</span>
-                  <span style={{ color: 'var(--hq-accent)' }}><IconChevronDown open={openFaq === i} /></span>
+                  <span style={{ color: 'var(--hq-accent)' }}><ChevronDown open={openFaq === i} /></span>
                 </button>
                 <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
                   <div style={{ padding: '0 32px 32px 32px', color: 'var(--hq-text-muted)', lineHeight: 1.7 }}>
