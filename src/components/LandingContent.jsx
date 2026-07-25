@@ -23,8 +23,9 @@ const IconChevronDown = ({ open }) => (
 );
 
 
-function LandingContent() {
+function LandingContent({ qrType = 'url' }) {
   const { t: translate } = useTranslation();
+  const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
   // Fallback if Suspense is disabled or during transition
   const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
@@ -174,7 +175,7 @@ function LandingContent() {
         <div className="hq-container">
           <div style={{ maxWidth: 800 }}>
             <div className="hq-pill">{t.badgeLeadMarket || 'The Engineering Standard'}</div>
-            <h2 className="hq-title">{t.heroTitle}</h2>
+            <h2 className="hq-title">{t.heroTitle} <span style={{ color: 'var(--hq-accent)' }}>{typeName}</span></h2>
             <p className="hq-subtitle">{t.heroSubtitle}</p>
           </div>
 
@@ -221,10 +222,10 @@ function LandingContent() {
             {/* Left Giant Column */}
             <div className="hq-card" style={{ gridColumn: 'span 7', minHeight: 480, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <div className="hq-pill">{t.badgeQuickStart || 'Workflow'}</div>
-              <h2 className="hq-title" style={{ fontSize: 'clamp(32px, 4vw, 48px)' }}>{t.stepsTitle}</h2>
+              <h2 className="hq-title" style={{ fontSize: 'clamp(32px, 4vw, 48px)' }}>{t.stepsTitle} {typeName}</h2>
               <div style={{ marginTop: 40, display: 'flex', flexDirection: 'column', gap: 32 }}>
                 {[
-                  { n: '1', t: t.step1Title, d: t.step1Desc },
+                  { n: '1', t: t.step1Title, d: `${t.step1Desc} (${typeName})` },
                   { n: '2', t: t.step2Title, d: t.step2Desc },
                   { n: '3', t: t.step3Title, d: t.step3Desc }
                 ].map(step => (
@@ -265,8 +266,9 @@ function LandingContent() {
       {/* 4. EXTREME CLEAN FAQ */}
       <section className="hq-section" style={{ borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container">
-          <div style={{ textAlign: 'center', marginBottom: 60 }}>
-            <h2 className="hq-title" style={{ fontSize: 'clamp(32px, 5vw, 56px)' }}>{t.faqTitle}</h2>
+          <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center', marginBottom: 60 }}>
+            <div className="hq-pill">{t.badgeFaq || 'Knowledge Base'}</div>
+            <h2 className="hq-title" style={{ fontSize: 'clamp(32px, 5vw, 56px)' }}>{t.faqTitle} {typeName}</h2>
           </div>
           <div className="hq-faq-wrap">
             {[

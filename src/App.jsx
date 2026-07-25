@@ -148,7 +148,7 @@ export default function App() {
       </Helmet>
       
       <QrWorkspace qrType={qrType} setQrTypeRoute={handleTypeChangeRoute} currentSeo={currentSeo} />
-      <LandingContent />
+      <LandingContent qrType={qrType} />
       <SeoArticle currentLangCode={currentLangCode} />
     </MainLayout>
   );
