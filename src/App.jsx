@@ -147,7 +147,7 @@ function App() {
   const renderHighlightedTitle = (title) => {
     if (!title) return null;
     const match = title.match(/QR(?:[-\s]+[A-Za-z0-9а-яА-Я]+)?/i);
-    const highlightClass = "text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600";
+    const highlightClass = "text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]";
     
     if (!match) {
       const words = title.split(' ');
