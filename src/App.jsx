@@ -45,7 +45,7 @@ export default function App() {
   };
 
   const currentType = PSEO_ROUTES[slug] || PSEO_ROUTES['/'];
-  const typeName = t(`types.\${currentType}`);
+  const typeName = t(`types.${currentType}`);
   
   // Super Partial Lang: Fully localized SEO texts!
   const currentSeo = currentType === 'url' 
