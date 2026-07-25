@@ -168,5 +168,10 @@
     "ctaTitle": "QR Kodunuzu Oluşturmaya Başlayın",
     "ctaSubtitle": "Sonsuza kadar ücretsiz. Kayıt gerekmez.",
     "ctaButton": "QR Kod Oluştur"
+  },
+  "seoTool": {
+    "title": "{{tool}} QR Kod Oluşturucu - Ücretsiz ve Özel",
+    "h1": "Ücretsiz {{tool}} QR Kod Oluşturucu",
+    "description": "Logo, renk ve tasarıma sahip özel bir {{tool}} QR Kodu oluşturun. %100 ücretsiz, kayıt yok ve son kullanma tarihi yok."
   }
 }

@@ -168,5 +168,10 @@
     "ctaTitle": "Zacznij Tworzyć Swój Kod QR",
     "ctaSubtitle": "Za darmo na zawsze. Bez rejestracji.",
     "ctaButton": "Generuj Kod QR"
+  },
+  "seoTool": {
+    "title": "Generator kodów QR {{tool}} — bezpłatny i niestandardowy",
+    "h1": "Bezpłatny generator kodów QR {{tool}}",
+    "description": "Utwórz niestandardowy kod QR {{tool}} z logo, kolorem i wzorem. 100% za darmo, bez rejestracji i bez wygaśnięcia."
   }
 }

@@ -168,5 +168,10 @@
     "ctaTitle": "Mulai Buat QR Code Anda",
     "ctaSubtitle": "Gratis selamanya. Tanpa daftar. Bekerja di setiap browser.",
     "ctaButton": "Buat QR Code"
+  },
+  "seoTool": {
+    "title": "{{tool}} Pembuat Kode QR - Gratis & Khusus",
+    "h1": "Pembuat Kode QR {{tool}} Gratis",
+    "description": "Buat Kode QR {{tool}} khusus dengan logo, warna, dan desain. 100% gratis, tanpa pendaftaran, dan tanpa masa berlaku."
   }
 }

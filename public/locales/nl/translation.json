@@ -168,5 +168,10 @@
     "ctaTitle": "Begin met het Maken van Uw QR-code",
     "ctaSubtitle": "Voor altijd gratis. Geen registratie.",
     "ctaButton": "QR-code Genereren"
+  },
+  "seoTool": {
+    "title": "{{tool}} QR-codegenerator - gratis en aangepast",
+    "h1": "Gratis {{tool}} QR-codegenerator",
+    "description": "Maak een aangepaste {{tool}} QR-code met logo, kleur en ontwerp. 100% gratis, geen aanmelding en geen vervaldatum."
   }
 }

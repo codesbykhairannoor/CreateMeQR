@@ -43,9 +43,9 @@ function App() {
         description: t('tagline'),
       }
     : {
-        title: `${typeName} QR - ${t('appTitle')}`,
-        h1: `${typeName} QR`,
-        description: `${typeName} QR - ${t('tagline')}`,
+        title: t('seoTool.title', { tool: typeName }),
+        h1: t('seoTool.h1', { tool: typeName }),
+        description: t('seoTool.description', { tool: typeName }),
       };
 
   const [darkMode, setDarkMode] = useState(false);

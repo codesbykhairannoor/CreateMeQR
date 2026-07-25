@@ -211,5 +211,10 @@
     "ctaTitle": "Start Creating Your QR Code",
     "ctaSubtitle": "Free forever. No signup. Works in every browser.",
     "ctaButton": "Generate QR Code"
+  },
+  "seoTool": {
+    "title": "{{tool}} QR Code Generator - Free & Custom",
+    "h1": "Free {{tool}} QR Code Generator",
+    "description": "Create a custom {{tool}} QR Code with logo, color, and design. 100% free, no signup, and no expiration."
   }
 }

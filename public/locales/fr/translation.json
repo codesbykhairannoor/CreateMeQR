@@ -168,5 +168,10 @@
     "ctaTitle": "Commencez à Créer Votre QR Code",
     "ctaSubtitle": "Gratuit pour toujours. Sans inscription. Fonctionne dans chaque navigateur.",
     "ctaButton": "Générer un QR Code"
+  },
+  "seoTool": {
+    "title": "Générateur de code QR {{tool}} - Gratuit et personnalisé",
+    "h1": "Générateur de code QR {{tool}} gratuit",
+    "description": "Créez un code QR {{tool}} personnalisé avec logo, couleur et design. 100% gratuit, sans inscription et sans expiration."
   }
 }
