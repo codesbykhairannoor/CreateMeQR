@@ -1,42 +1,41 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { UserCircle2, Contact, Phone, CheckCircle2, ChevronDown, ShieldCheck, Zap } from 'lucide-react';
+import { UserCircle2, ShieldCheck, Zap, CheckCircle2, ChevronDown } from 'lucide-react';
 
-function LayoutC({ qrType = 'vcard' }) {
+function LayoutVCard({ qrType = 'vcard' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
   const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
   const [openFaq, setOpenFaq] = useState(null);
 
-  const HeroIcon = qrType === 'phone' ? Phone : Contact;
-
   return (
-    <div className="hq-layout-c">
+    <div className="hq-layout-vcard">
       <style>{`
-        .hq-layout-c {
+        .hq-layout-vcard {
           --hq-bg: #f8fafc;
           --hq-text: #0a1930;
           --hq-text-muted: #475569;
           --hq-card: #ffffff;
           --hq-border: #e2e8f0;
-          --hq-accent: #8b5cf6;
-          --hq-accent-glow: rgba(139, 92, 246, 0.1);
-          --hq-grad: linear-gradient(135deg, var(--hq-accent), #a855f7);
+          /* LOCKED TO BASE PALETTE */
+          --hq-accent: #2563eb;
+          --hq-accent-glow: rgba(37, 99, 235, 0.1);
+          --hq-grad: linear-gradient(135deg, var(--hq-accent), #60a5fa);
           font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
-          padding-top: 60px;
+          padding-top: 160px; /* REQUIRED MASSIVE SPACING */
         }
-        html.dark .hq-layout-c {
+        html.dark .hq-layout-vcard {
           --hq-bg: #040a18;
           --hq-text: #f1f5f9;
           --hq-text-muted: #94a3b8;
           --hq-card: #081226;
-          --hq-border: #102040;
-          --hq-accent: #a855f7;
-          --hq-accent-glow: rgba(168, 85, 247, 0.15);
-          --hq-grad: linear-gradient(135deg, #8b5cf6, var(--hq-accent));
+          --hq-border: #1e293b;
+          --hq-accent: #3b82f6;
+          --hq-accent-glow: rgba(59, 130, 246, 0.15);
+          --hq-grad: linear-gradient(135deg, #1d4ed8, var(--hq-accent));
         }
         
         .hq-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
@@ -48,7 +47,7 @@ function LayoutC({ qrType = 'vcard' }) {
           padding: 80px 40px;
           text-align: center;
           margin-bottom: 80px;
-          box-shadow: 0 20px 80px -20px rgba(139, 92, 246, 0.05);
+          box-shadow: 0 20px 80px -20px rgba(37, 99, 235, 0.05);
           position: relative;
           overflow: hidden;
         }
@@ -150,7 +149,7 @@ function LayoutC({ qrType = 'vcard' }) {
             <p>{t.comp2Desc}</p>
           </div>
           <div className="hq-h-card">
-            <h3><HeroIcon size={28} color="var(--hq-accent)" /> {t.comp3Title}</h3>
+            <h3><CheckCircle2 size={28} color="var(--hq-accent)" /> {t.comp3Title}</h3>
             <p>{t.comp3Desc}</p>
           </div>
         </div>
@@ -213,4 +212,4 @@ function LayoutC({ qrType = 'vcard' }) {
   );
 }
 
-export default LayoutC;
+export default LayoutVCard;

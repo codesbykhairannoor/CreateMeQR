@@ -1,0 +1,183 @@
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Mail, ShieldCheck, Zap, Lock, ChevronDown, MoveRight } from 'lucide-react';
+
+function LayoutEmail({ qrType = 'email' }) {
+  const { t: translate } = useTranslation();
+  const typeName = translate(`types.${qrType}`);
+  const tObj = translate('landing', { returnObjects: true });
+  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const [openFaq, setOpenFaq] = useState(null);
+
+  return (
+    <div className="hq-layout-email">
+      <style>{`
+        .hq-layout-email {
+          --hq-bg: #f8fafc;
+          --hq-text: #0a1930;
+          --hq-text-muted: #475569;
+          --hq-card: #ffffff;
+          --hq-border: #e2e8f0;
+          --hq-accent: #2563eb;
+          --hq-accent-glow: rgba(37, 99, 235, 0.1);
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+          background: var(--hq-bg);
+          color: var(--hq-text);
+          padding-top: 160px; /* REQUIRED MASSIVE SPACING */
+        }
+        html.dark .hq-layout-email {
+          --hq-bg: #040a18;
+          --hq-text: #f1f5f9;
+          --hq-text-muted: #94a3b8;
+          --hq-card: #081226;
+          --hq-border: #1e293b;
+          --hq-accent: #3b82f6;
+          --hq-accent-glow: rgba(59, 130, 246, 0.15);
+        }
+        
+        .hq-container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        
+        .hq-masonry-hero {
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+          grid-auto-rows: 240px;
+          gap: 24px;
+          margin-bottom: 120px;
+        }
+        
+        .hq-m-card {
+          background: var(--hq-card);
+          border: 1px solid var(--hq-border);
+          border-radius: 32px;
+          padding: 40px;
+          display: flex; flex-direction: column; justify-content: center;
+          position: relative; overflow: hidden;
+        }
+        
+        .hq-m-main {
+          grid-column: span 8;
+          grid-row: span 2;
+          background: var(--hq-accent);
+          color: white;
+          border: none;
+        }
+        .hq-m-main h2 {
+          font-size: clamp(48px, 6vw, 80px);
+          font-weight: 900;
+          line-height: 1.05;
+          letter-spacing: -0.04em;
+          margin-bottom: 24px;
+          position: relative; z-index: 2;
+        }
+        .hq-m-main p {
+          font-size: 20px; opacity: 0.9; max-width: 500px;
+          position: relative; z-index: 2;
+        }
+        .hq-m-main-icon {
+          position: absolute; right: -40px; bottom: -60px; opacity: 0.1;
+          color: white;
+        }
+        
+        .hq-m-stat { grid-column: span 4; grid-row: span 1; }
+        .hq-m-stat h3 { font-size: 24px; font-weight: 800; margin-bottom: 12px; }
+        .hq-m-stat p { color: var(--hq-text-muted); line-height: 1.6; }
+        .hq-m-stat-bg { position: absolute; right: -20px; top: -20px; opacity: 0.05; color: var(--hq-accent); }
+        
+        .hq-steps-grid {
+          display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 120px;
+        }
+        .hq-step-masonry {
+          background: var(--hq-bg); padding: 40px 0; border-top: 2px solid var(--hq-border);
+        }
+        .hq-step-masonry h4 { font-size: 24px; font-weight: 800; margin-bottom: 16px; margin-top: 24px; }
+        .hq-step-masonry p { color: var(--hq-text-muted); line-height: 1.7; }
+        
+        @media (max-width: 1024px) {
+          .hq-m-main { grid-column: span 12; }
+          .hq-m-stat { grid-column: span 6; }
+          .hq-steps-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+          .hq-m-stat { grid-column: span 12; }
+        }
+      `}</style>
+
+      <div className="hq-container">
+        <div className="hq-masonry-hero">
+          <div className="hq-m-card hq-m-main">
+            <div className="hq-m-main-icon"><Mail size={320} /></div>
+            <h2>{t.heroTitle} <br/>{typeName}</h2>
+            <p>{t.heroSubtitle}</p>
+          </div>
+          
+          <div className="hq-m-card hq-m-stat">
+            <div className="hq-m-stat-bg"><ShieldCheck size={200}/></div>
+            <div style={{ position: 'relative', zIndex: 2 }}>
+              <h3>{t.comp1Title}</h3>
+              <p>{t.comp1Desc}</p>
+            </div>
+          </div>
+          
+          <div className="hq-m-card hq-m-stat">
+            <div className="hq-m-stat-bg"><Zap size={200}/></div>
+            <div style={{ position: 'relative', zIndex: 2 }}>
+              <h3>{t.comp2Title}</h3>
+              <p>{t.comp2Desc}</p>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ marginBottom: 40 }}>
+          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900 }}>{t.stepsTitle} {typeName}</h2>
+        </div>
+
+        <div className="hq-steps-grid">
+          {[
+            { n: '1', t: t.step1Title, d: `${t.step1Desc} (${typeName})` },
+            { n: '2', t: t.step2Title, d: t.step2Desc },
+            { n: '3', t: t.step3Title, d: t.step3Desc }
+          ].map(step => (
+            <div key={step.n} className="hq-step-masonry">
+              <div style={{ color: 'var(--hq-accent)' }}><MoveRight size={32} strokeWidth={3} /></div>
+              <h4>{step.t}</h4>
+              <p>{step.d}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
+        <div className="hq-container" style={{ maxWidth: 800 }}>
+          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
+            {t.faqTitle} {typeName}
+          </h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {[
+              { q: t.faq1Q, a: t.faq1A },
+              { q: t.faq2Q, a: t.faq2A },
+              { q: t.faq3Q, a: t.faq3A },
+              { q: t.faq4Q, a: t.faq4A }
+            ].map((faq, i) => (
+              <div key={i} style={{ border: '1px solid var(--hq-border)', borderRadius: 24, overflow: 'hidden' }}>
+                <button 
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left' }}
+                >
+                  <span style={{ fontSize: 18, fontWeight: 700, color: 'var(--hq-text)' }}>{faq.q}</span>
+                  <span style={{ color: 'var(--hq-accent)' }}><ChevronDown open={openFaq === i} /></span>
+                </button>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
+                  <div style={{ padding: '0 32px 32px 32px', color: 'var(--hq-text-muted)', lineHeight: 1.7 }}>
+                    {faq.a}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default LayoutEmail;

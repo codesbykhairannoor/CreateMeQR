@@ -2,40 +2,38 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ShieldCheck, Zap, Lock, Map, Wifi, CheckCircle2, ChevronDown } from 'lucide-react';
 
-function LayoutB({ qrType = 'wifi' }) {
+function LayoutWiFi({ qrType = 'wifi' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
   const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
   const [openFaq, setOpenFaq] = useState(null);
 
-  // Determine main icon based on tool
-  const MainIcon = qrType === 'wifi' ? Wifi : Map;
-
   return (
-    <div className="hq-layout-b">
+    <div className="hq-layout-wifi">
       <style>{`
-        .hq-layout-b {
+        .hq-layout-wifi {
           --hq-bg: #f8fafc;
           --hq-text: #0a1930;
           --hq-text-muted: #475569;
           --hq-card: #ffffff;
           --hq-border: #e2e8f0;
-          --hq-accent: #10b981;
-          --hq-accent-glow: rgba(16, 185, 129, 0.1);
+          /* LOCKED TO BASE PALETTE */
+          --hq-accent: #2563eb; 
+          --hq-accent-glow: rgba(37, 99, 235, 0.1);
           font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
-          padding-top: 80px;
+          padding-top: 160px; /* REQUIRED MASSIVE SPACING */
         }
-        html.dark .hq-layout-b {
+        html.dark .hq-layout-wifi {
           --hq-bg: #040a18;
           --hq-text: #f1f5f9;
           --hq-text-muted: #94a3b8;
           --hq-card: #081226;
           --hq-border: #102040;
-          --hq-accent: #10b981;
-          --hq-accent-glow: rgba(16, 185, 129, 0.15);
+          --hq-accent: #3b82f6;
+          --hq-accent-glow: rgba(59, 130, 246, 0.15);
         }
         .hq-container { max-width: 1300px; margin: 0 auto; padding: 0 32px; }
         
@@ -70,24 +68,29 @@ function LayoutB({ qrType = 'wifi' }) {
         }
 
         .hq-split-right { display: flex; justify-content: center; }
-        .hq-glow-orb {
-          position: relative; width: 340px; height: 340px;
-        }
+        .hq-glow-orb { position: relative; width: 340px; height: 340px; }
         .hq-glow-orb-inner {
           position: absolute; inset: 0; border-radius: 50%;
-          border: 2px solid rgba(16,185,129,0.2);
+          border: 2px solid rgba(37, 99, 235, 0.2);
         }
         .hq-glow-orb-mid {
           position: absolute; inset: 40px; border-radius: 50%;
-          border: 2px dashed rgba(16,185,129,0.3);
+          border: 2px dashed rgba(37, 99, 235, 0.3);
           animation: spin 30s linear infinite;
         }
         .hq-glow-orb-core {
           position: absolute; inset: 80px; border-radius: 50%;
-          background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(5,150,105,0.2));
+          background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(29, 78, 216, 0.2));
           display: flex; alignItems: center; justify-content: center;
-          box-shadow: 0 0 80px rgba(16,185,129,0.3);
+          box-shadow: 0 0 80px rgba(37, 99, 235, 0.3);
         }
+        html.dark .hq-glow-orb-inner { border-color: rgba(59, 130, 246, 0.3); }
+        html.dark .hq-glow-orb-mid { border-color: rgba(59, 130, 246, 0.4); }
+        html.dark .hq-glow-orb-core { 
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.3));
+            box-shadow: 0 0 80px rgba(59, 130, 246, 0.4);
+        }
+        
         @keyframes spin { 100% { transform: rotate(360deg); } }
 
         .hq-step-cards {
@@ -137,7 +140,7 @@ function LayoutB({ qrType = 'wifi' }) {
               <div className="hq-glow-orb-inner" />
               <div className="hq-glow-orb-mid" />
               <div className="hq-glow-orb-core">
-                <MainIcon size={80} color="#10b981" />
+                <Wifi size={80} color="var(--hq-accent)" />
               </div>
             </div>
           </div>
@@ -196,4 +199,4 @@ function LayoutB({ qrType = 'wifi' }) {
   );
 }
 
-export default LayoutB;
+export default LayoutWiFi;

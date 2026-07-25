@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ShieldCheck, Zap, Lock, QrCode, Smartphone, CheckCircle2, ChevronDown, Globe, Sparkles } from 'lucide-react';
+import { ShieldCheck, Zap, Lock, QrCode, Smartphone, ChevronDown, Globe, Sparkles } from 'lucide-react';
 
-function LayoutA({ qrType = 'url' }) {
+function LayoutURL({ qrType = 'url' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
@@ -10,22 +10,23 @@ function LayoutA({ qrType = 'url' }) {
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
-    <div className="hq-layout-a">
+    <div className="hq-layout-url">
       <style>{`
-        .hq-layout-a {
+        .hq-layout-url {
           --hq-bg: #f8fafc;
           --hq-text: #0f172a;
           --hq-text-muted: #475569;
           --hq-card: #ffffff;
           --hq-border: #e2e8f0;
+          /* LOCKED TO BASE PALETTE */
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
           font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
-          padding-top: 80px;
+          padding-top: 160px; /* REQUIRED MASSIVE SPACING */
         }
-        html.dark .hq-layout-a {
+        html.dark .hq-layout-url {
           --hq-bg: #040a18;
           --hq-text: #f1f5f9;
           --hq-text-muted: #94a3b8;
@@ -92,13 +93,13 @@ function LayoutA({ qrType = 'url' }) {
           </div>
           
           <div className="hq-card" style={{ gridColumn: 'span 4' }}>
-            <div className="hq-icon-box" style={{ background: 'rgba(16, 185, 129, 0.1)', color: '#10b981' }}><Zap size={28} /></div>
+            <div className="hq-icon-box"><Zap size={28} /></div>
             <h3 className="hq-card-title">{t.comp2Title}</h3>
             <p className="hq-card-desc">{t.comp2Desc}</p>
           </div>
 
           <div className="hq-card" style={{ gridColumn: 'span 4' }}>
-            <div className="hq-icon-box" style={{ background: 'rgba(245, 158, 11, 0.1)', color: '#f59e0b' }}><Lock size={28} /></div>
+            <div className="hq-icon-box"><Lock size={28} /></div>
             <h3 className="hq-card-title">{t.comp3Title}</h3>
             <p className="hq-card-desc">{t.comp3Desc}</p>
           </div>
@@ -169,4 +170,4 @@ function LayoutA({ qrType = 'url' }) {
   );
 }
 
-export default LayoutA;
+export default LayoutURL;
