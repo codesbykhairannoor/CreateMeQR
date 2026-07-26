@@ -102,7 +102,7 @@ function LayoutVenmo({ qrType = 'venmo' }) {
         </div>
 
         <div style={{ paddingBottom: 100 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 24, fontWeight: 700, textAlign: 'center', marginBottom: 32 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 24,  textAlign: 'center', marginBottom: 32 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.venmo.q${num}`);

@@ -97,7 +97,7 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 16px', background: 'var(--hq-accent-glow)', color: 'var(--hq-accent)', borderRadius: 100, fontWeight: 600, marginBottom: 24, fontSize: 14 }}>
               <MessageCircle size={16} /> {typeName} Standard
             </div>
-            <h2>{t.heroTitle} <br/>for {typeName}</h2>
+            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>for {typeName}</h2>
             <p>{t.heroSubtitle}</p>
           </div>
           
@@ -125,17 +125,17 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
         <div className="hq-wa-features">
           <div className="hq-wa-feature-card" style={{ background: '#dcf8c6', borderColor: '#dcf8c6', color: '#075e54', boxShadow: '0 10px 30px rgba(7,94,84,0.1)' }}>
             <div className="hq-wa-feature-icon" style={{ background: '#25d366', color: '#fff' }}><ShieldCheck /></div>
-            <h3 style={{ color: '#075e54' }}>{translate('featTools.whatsapp.t1') || t.comp1Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ color: '#075e54' }}>{translate('featTools.whatsapp.t1') || t.comp1Title}</h3>
             <p style={{ color: '#128c7e' }}>{translate('featTools.whatsapp.d1') || t.comp1Desc}</p>
           </div>
           <div className="hq-wa-feature-card" style={{ background: '#dcf8c6', borderColor: '#dcf8c6', color: '#075e54', boxShadow: '0 10px 30px rgba(7,94,84,0.1)' }}>
             <div className="hq-wa-feature-icon" style={{ background: '#25d366', color: '#fff' }}><Zap /></div>
-            <h3 style={{ color: '#075e54' }}>{translate('featTools.whatsapp.t2') || t.comp2Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ color: '#075e54' }}>{translate('featTools.whatsapp.t2') || t.comp2Title}</h3>
             <p style={{ color: '#128c7e' }}>{translate('featTools.whatsapp.d2') || t.comp2Desc}</p>
           </div>
           <div className="hq-wa-feature-card" style={{ background: '#dcf8c6', borderColor: '#dcf8c6', color: '#075e54', boxShadow: '0 10px 30px rgba(7,94,84,0.1)' }}>
             <div className="hq-wa-feature-icon" style={{ background: '#25d366', color: '#fff' }}><Lock /></div>
-            <h3 style={{ color: '#075e54' }}>{translate('featTools.whatsapp.t3') || t.comp3Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ color: '#075e54' }}>{translate('featTools.whatsapp.t3') || t.comp3Title}</h3>
             <p style={{ color: '#128c7e' }}>{translate('featTools.whatsapp.d3') || t.comp3Desc}</p>
           </div>
         </div>
@@ -143,7 +143,7 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
       
       <div style={{ borderTop: '1px solid var(--hq-border)', background: 'var(--hq-card)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 36, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 36,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.whatsapp.q${num}`);

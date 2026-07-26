@@ -3,7 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import MainLayout from './layouts/MainLayout';
+import ScrollToTop from './components/ScrollToTop';
 import QrWorkspace from './pages/QrWorkspace';
+import About from './pages/About';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import Compare from './pages/Compare';
+import BarcodeGenerator from './pages/BarcodeGenerator';
+import ScanQr from './pages/ScanQr';
 import LandingContent from './components/LandingContent';
 import SeoArticle from './components/SeoArticle';
 import { PSEO_ROUTES, LANGS } from './config/site';
@@ -15,9 +22,10 @@ export default function App() {
   const navigate = useNavigate();
 
   // Super GEO: Parse language prefix from URL Route
-  const pathParts = location.pathname.split('/').filter(Boolean);
+  const decodedPathname = decodeURIComponent(location.pathname);
+  const pathParts = decodedPathname.split('/').filter(Boolean);
   let currentLangCode = 'en';
-  let slug = location.pathname;
+  let slug = decodedPathname;
 
   if (pathParts.length > 0 && LANGS.some(l => l.code === pathParts[0])) {
     currentLangCode = pathParts[0];
@@ -45,6 +53,16 @@ export default function App() {
     }
   };
 
+  
+  const isAbout = slug === '/about';
+  const isPrivacy = slug === '/privacy';
+  const isTerms = slug === '/terms';
+  const isCompare = slug === '/compare';
+  const toolType = routeToToolMap[currentLangCode]?.[slug];
+  const isBarcode = toolType === 'barcode' || slug === '/barcode-generator';
+  const isScanQr = toolType === 'scanqr' || slug === '/scan-qr';
+  const isStaticPage = isAbout || isPrivacy || isTerms || isCompare || isBarcode || isScanQr;
+
   const currentType = routeToToolMap[currentLangCode]?.[slug] || 'url';
   const typeName = t(`types.${currentType}`);
   
@@ -63,6 +81,7 @@ export default function App() {
 
   return (
     <MainLayout>
+      <ScrollToTop />
       <Helmet>
         <title>{currentSeo.title}</title>
         <meta name="title" content={currentSeo.title} />
@@ -155,9 +174,22 @@ export default function App() {
         </script>
       </Helmet>
       
-      <QrWorkspace qrType={qrType} setQrTypeRoute={handleTypeChangeRoute} currentSeo={currentSeo} />
-      <LandingContent qrType={qrType} />
-      <SeoArticle currentLangCode={currentLangCode} />
+      {!isStaticPage ? (
+        <>
+          <QrWorkspace qrType={qrType} setQrTypeRoute={handleTypeChangeRoute} currentSeo={currentSeo} />
+          <LandingContent qrType={qrType} />
+          <SeoArticle currentLangCode={currentLangCode} />
+        </>
+      ) : (
+        <>
+          {isAbout && <About />}
+          {isPrivacy && <PrivacyPolicy />}
+          {isTerms && <TermsOfService />}
+          {isCompare && <Compare />}
+          {isBarcode && <BarcodeGenerator />}
+          {isScanQr && <ScanQr />}
+        </>
+      )}
     </MainLayout>
   );
 }

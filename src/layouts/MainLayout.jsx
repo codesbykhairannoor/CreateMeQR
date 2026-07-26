@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Globe, Moon, Sun, X } from 'lucide-react';
+import { Globe, Moon, Sun, X, Menu } from 'lucide-react';
 import { LANGS } from '../config/site';
 import { localizedRoutes, routeToToolMap } from '../config/localizedRoutes';
+import MegaNav from '../components/nav/MegaNav';
+import MobileNav from '../components/nav/MobileNav';
 
 export default function MainLayout({ children }) {
   const { t, i18n } = useTranslation();
@@ -24,6 +26,7 @@ export default function MainLayout({ children }) {
 
   const [darkMode, setDarkMode] = useState(false);
   const [showLangMenu, setShowLangMenu] = useState(false);
+  const [showMobileNav, setShowMobileNav] = useState(false);
   const [langSearch, setLangSearch] = useState('');
   const [softBannerLang, setSoftBannerLang] = useState(null);
   const [dismissBanner, setDismissBanner] = useState(false);
@@ -105,13 +108,15 @@ export default function MainLayout({ children }) {
       )}
 
       {/* Premium Glass Navbar */}
-      <nav className="fixed top-0 w-full bg-white/70 dark:bg-[#040a18]/70 backdrop-blur-2xl border-b border-blue-100 dark:border-[#102040] z-50 transition-colors duration-500">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <nav className="fixed top-0 w-full bg-white/70 dark:bg-[#040a18]/70 backdrop-blur-2xl z-50 transition-colors duration-500">
+        <div className="relative max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
             <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-8 h-8 rounded-xl object-contain shadow-sm" />
             <span className="text-lg font-bold text-zinc-900 dark:text-white tracking-tight">CreateMy-QR</span>
           </div>
           
+          <MegaNav currentLangCode={currentLangCode} />
+
           <div className="flex items-center gap-2">
             <div className="relative">
               <button onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
@@ -152,7 +157,7 @@ export default function MainLayout({ children }) {
         </div>
       </nav>
 
-      <main className="pt-32 pb-20 flex-1">
+      <main className="flex-1 pb-20">
         {children}
       </main>
 

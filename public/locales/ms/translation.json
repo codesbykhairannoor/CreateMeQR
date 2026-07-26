@@ -930,5 +930,193 @@
       "t3": "Cloud Drive Serasi",
       "d3": "Tampalkan pautan daripada Google Drive, Dropbox atau OneDrive untuk perkongsian fail awan yang lancar."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "Tentang Kami",
+        "subtitle": "Memperkasakan sambungan global melalui teknologi QR yang lancar.",
+        "desc": "Kami membina platform ini untuk memudahkan cara dunia berkongsi maklumat. Cepat, boleh dipercayai dan sepenuhnya peribadi."
+      },
+      "mission": {
+        "title": "Misi Kami",
+        "desc": "Untuk menyediakan penjana kod QR premium yang mengutamakan privasi yang tidak menjejak data anda atau mengunci kod anda di sebalik paywall."
+      },
+      "values": {
+        "title": "Nilai Teras",
+        "v1": "Privasi Diutamakan",
+        "d1": "Penjanaan pihak pelanggan bermakna data anda tidak pernah menyentuh pelayan kami.",
+        "v2": "Percuma Selamanya",
+        "d2": "Ciri teras akan sentiasa kekal percuma tanpa had tersembunyi.",
+        "v3": "Jangkauan Global",
+        "d3": "Dilokalkan dalam 30 bahasa untuk melayani khalayak yang benar-benar antarabangsa."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Dasar Privasi",
+        "subtitle": "Data anda adalah milik anda. Kami mengekalkannya dengan cara itu."
+      },
+      "sections": {
+        "s1": "Pengumpulan Data",
+        "d1": "Kami tidak mengumpul atau menyimpan data yang anda masukkan ke dalam penjana kod QR. Semua generasi berlaku secara setempat pada peranti anda.",
+        "s2": "Kuki & Analitis",
+        "d2": "Kami menggunakan analisis minimum untuk memahami corak trafik agregat. Tiada maklumat yang boleh dikenal pasti secara peribadi dikesan.",
+        "s3": "Perkhidmatan Pihak Ketiga",
+        "d3": "Kami tidak menjual, menyewa atau berkongsi data anda dengan mana-mana pihak ketiga."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Syarat Perkhidmatan",
+        "subtitle": "Peraturan jalan raya untuk menggunakan platform kami."
+      },
+      "sections": {
+        "s1": "Penggunaan yang Boleh Diterima",
+        "d1": "Anda bersetuju untuk tidak menggunakan penjana kami untuk membuat kod QR yang memaut ke kandungan berniat jahat, menyalahi undang-undang atau berbahaya.",
+        "s2": "Ketersediaan Perkhidmatan",
+        "d2": "Kami berusaha untuk 99.9% masa beroperasi tetapi menyediakan perkhidmatan 'seadanya' tanpa jaminan.",
+        "s3": "Harta Intelek",
+        "d3": "Anda mengekalkan semua hak ke atas kandungan yang anda hasilkan. Kod platform dan reka bentuk milik kami."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "Mengapa Memilih Kami?",
+        "subtitle": "Lihat bagaimana kami bersaing dengan persaingan."
+      },
+      "metrics": {
+        "title": "Ciri",
+        "m1": "penetapan harga",
+        "us1": "100% Percuma",
+        "them1": "$15/bulan",
+        "m2": "Privasi",
+        "us2": "Bahagian Pelanggan (Tiada Penjejakan)",
+        "them2": "Pengumpulan Data Sebelah Pelayan",
+        "m3": "Tera air",
+        "us3": "tiada",
+        "them3": "Tera Air Paksa pada Pelan Percuma",
+        "m4": "Tamat tempoh",
+        "us4": "Kod Tidak Pernah Tamat Tempoh",
+        "them4": "Tamat tempoh selepas 14 hari",
+        "m5": "Bahasa",
+        "us5": "30 Bahasa Disokong",
+        "them5": "Bahasa Inggeris Sahaja"
+      }
+    },
+    "nav": {
+      "about": "Tentang Kami",
+      "privacy": "Dasar Privasi",
+      "terms": "Syarat Perkhidmatan",
+      "compare": "Bandingkan"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "Pengimbas Siber V1",
+      "title": "Segera",
+      "titleHighlight": "Pengimbas QR",
+      "desc": "Imbas daripada kamera web anda atau muat naik imej. 100% peribadi, sifar data dihantar ke pelayan kami."
+    },
+    "workspace": {
+      "initCam": "Mulakan Kamera",
+      "initCamDesc": "Imbas kod QR menggunakan kamera peranti anda",
+      "startBtn": "Mula Mengimbas",
+      "cancelBtn": "Batal",
+      "successTitle": "Imbasan Berjaya",
+      "scanAnother": "Imbas Kod Lain",
+      "orUpload": "Atau muat naik imej",
+      "uploadBtn": "Muat Naik Fail Imej QR",
+      "decodedResult": "Keputusan Dinyahkod",
+      "copyBtn": "Salin Data",
+      "copied": "disalin!",
+      "openLink": "Buka Pautan",
+      "notLink": "Bukan pautan",
+      "waiting": "Menunggu imbasan...",
+      "waitingDesc": "Halakan kamera anda pada kod QR atau muat naik imej.",
+      "errCam": "Gagal memulakan kamera. Sila pastikan anda telah memberikan kebenaran kamera.",
+      "errImg": "Tiada kod QR ditemui dalam imej. Sila cuba imej lain."
+    },
+    "features": {
+      "whyTitle": "Mengapa menggunakan Pengimbas kami?",
+      "noAppTitle": "Tiada Apl Diperlukan",
+      "noAppDesc": "Imbas kod QR terus dari penyemak imbas anda tanpa memuat turun sebarang aplikasi yang kembung. Berfungsi dengan sempurna pada iOS, Android dan Desktop.",
+      "secureTitle": "100% Selamat & Peribadi",
+      "secureDesc": "Imej dan suapan kamera anda diproses sepenuhnya pada peranti anda. Kami tidak pernah menghantar data imbasan anda ke mana-mana pelayan luaran.",
+      "fastTitle": "Sepantas Kilat",
+      "fastDesc": "Enjin WASM yang dioptimumkan menyahkod kod QR kompleks serta-merta, walaupun dalam keadaan cahaya malap atau dengan kamera kabur.",
+      "moreTitle": "Lebih Daripada Sekadar URL.",
+      "moreDesc": "Pengimbas lanjutan kami dengan serta-merta mengenali pelbagai jenis muatan. Ia bukan sahaja membaca teks, ia memahami konteksnya.",
+      "moreList1": "Penghuraian Bukti Kelayakan WiFi",
+      "moreList2": "Import Kenalan vCard",
+      "moreList3": "Alamat Kripto",
+      "formatTitle": "Sokongan Format Universal",
+      "formatDesc": "Muat naik imej yang mengandungi mana-mana kod bar 2D ini, dan kami akan menyahkodnya serta-merta dalam penyemak imbas anda."
+    },
+    "seo": {
+      "title": "Pengimbas Kod QR Percuma Dalam Talian - Imbas QR Serta-merta",
+      "desc": "Imbas kod QR serta-merta menggunakan kamera anda atau dengan memuat naik imej. Pemprosesan 100% selamat, peribadi dan pihak pelanggan."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Alat Kod Bar Profesional",
+      "title": "Jana",
+      "titleHighlight": "Kod bar",
+      "titleSuffix": "Serta-merta",
+      "desc": "Buat teg inventori berkualiti tinggi, label penghantaran dan kod runcit dalam beberapa saat."
+    },
+    "workspace": {
+      "dataTitle": "Data Kod Bar",
+      "contentLabel": "Kandungan Kod Bar",
+      "contentPlaceholder": "Masukkan nombor atau teks...",
+      "formatLabel": "Standard / Format Kod Bar",
+      "visualTitle": "Penalaan Visual",
+      "widthLabel": "Lebar Bar",
+      "heightLabel": "Ketinggian Bar",
+      "lineColor": "Warna Garis",
+      "bgColor": "Warna Latar Belakang",
+      "showText": "Tunjukkan Nilai Teks Di Bawah Kod",
+      "liveOutput": "Output Langsung",
+      "enterData": "Masukkan data untuk menjana",
+      "download": "Muat turun PNG Resolusi Tinggi"
+    },
+    "features": {
+      "standardsTitle": "Format Kod Bar yang Disokong",
+      "standardsDesc": "Pilih standard yang sesuai untuk industri anda. Dari daftar keluar runcit hingga logistik gudang.",
+      "c128Desc": "Sangat padat dan serba boleh. Menyokong set aksara ASCII penuh. Ideal untuk inventori am dan sistem penjejakan dalaman.",
+      "itf14Desc": "Direka untuk tahap pembungkusan seperti karton atau palet. Menggunakan sempadan tebal untuk meningkatkan ketepatan pengimbasan pada kadbod beralun.",
+      "upcDesc": "Standard global untuk peruncitan tempat jualan. EAN-13 digunakan di seluruh dunia, manakala UPC-A adalah standard di Amerika Utara.",
+      "mfgTitle": "Dibina untuk Pengeluaran & Logistik",
+      "mfgDesc": "Penjana kami mencipta fail PNG sempurna piksel yang berskala cantik untuk cetakan. Kami tidak menggunakan imej raster kabur—enjin kami memaparkan matematik SVG tulen sebelum menukarnya kepada muat turun PNG resolusi tinggi.",
+      "mfgList1": "Ketepatan Mutlak: Tiada tepi kabur.",
+      "mfgList2": "Pelapik Tersuai: Zon selamat untuk pencetak terma.",
+      "mfgList3": "100% Percuma: Tiada langganan untuk penjanaan asas.",
+      "mfgBadge": "Sedia Kilang",
+      "mfgBadgeDesc": "Kontras tinggi untuk pengimbas laser",
+      "ecoTitle": "Sesuai untuk E-Dagang & Runcit",
+      "ecoDesc": "Sama ada anda menyenaraikan produk baharu di Amazon (FBA) atau menyediakan etalase Shopify anda sendiri, menjana kod UPC dan EAN diperlukan untuk pengedaran global.",
+      "btnUpc": "Jana Kod UPC Sekarang",
+      "btnEan": "Hasilkan Kod EAN-13 Sekarang"
+    },
+    "seo": {
+      "title": "Penjana Kod Bar Percuma Dalam Talian - Cipta Kod Bar 1D",
+      "desc": "Hasilkan kod bar 1D profesional serta-merta. Sokongan untuk Kod-128, UPC, EAN, ITF-14 dan banyak lagi. Percuma, selamat dan sedia untuk dimuat turun dalam PNG resolusi tinggi."
+    }
+  },
+  "nav": {
+    "allTools": "Semua Alat",
+    "generatorDesc": "Buat 34+ Jenis QR",
+    "barcodeDesc": "Kod Bar 1D/2D Pro",
+    "scanDesc": "Baca daripada Kamera",
+    "catSocial": "Sosial & Media",
+    "catBusiness": "Perniagaan & Pautan",
+    "catFinance": "Kewangan & Stor",
+    "catFiles": "Fail & Data",
+    "catRetail": "Peruncitan & Produk",
+    "catIndustrial": "Perindustrian & Data",
+    "company": "Syarikat",
+    "privacy": "Dasar Privasi",
+    "terms": "Syarat Perkhidmatan"
   }
 }

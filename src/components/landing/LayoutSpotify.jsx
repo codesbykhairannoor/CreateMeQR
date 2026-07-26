@@ -104,7 +104,7 @@ function LayoutSpotify({ qrType = 'spotify' }) {
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
                   <div style={{ width: 48, height: 48, background: '#282828', borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ShieldCheck size={24} color="#1DB954" /></div>
                   <div>
-                    <h3 style={{ fontSize: 16, fontWeight: 500, margin: 0, color: 'white' }}>{translate('featTools.spotify.t1') || t.comp1Title}</h3>
+                    <h3 className="font-bold tracking-tighter" style={{ fontSize: 16,  margin: 0, color: 'white' }}>{translate('featTools.spotify.t1') || t.comp1Title}</h3>
                     <p style={{ margin: 0, fontSize: 14, color: 'var(--hq-text-muted)' }}>{translate('featTools.spotify.d1') || t.comp1Desc}</p>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ function LayoutSpotify({ qrType = 'spotify' }) {
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
                   <div style={{ width: 48, height: 48, background: '#282828', borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Zap size={24} color="#1DB954" /></div>
                   <div>
-                    <h3 style={{ fontSize: 16, fontWeight: 500, margin: 0, color: 'white' }}>{translate('featTools.spotify.t2') || t.comp2Title}</h3>
+                    <h3 className="font-bold tracking-tighter" style={{ fontSize: 16,  margin: 0, color: 'white' }}>{translate('featTools.spotify.t2') || t.comp2Title}</h3>
                     <p style={{ margin: 0, fontSize: 14, color: 'var(--hq-text-muted)' }}>{translate('featTools.spotify.d2') || t.comp2Desc}</p>
                   </div>
                 </div>
@@ -132,7 +132,7 @@ function LayoutSpotify({ qrType = 'spotify' }) {
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
                   <div style={{ width: 48, height: 48, background: '#282828', borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Lock size={24} color="#1DB954" /></div>
                   <div>
-                    <h3 style={{ fontSize: 16, fontWeight: 500, margin: 0, color: 'white' }}>{translate('featTools.spotify.t3') || t.comp3Title}</h3>
+                    <h3 className="font-bold tracking-tighter" style={{ fontSize: 16,  margin: 0, color: 'white' }}>{translate('featTools.spotify.t3') || t.comp3Title}</h3>
                     <p style={{ margin: 0, fontSize: 14, color: 'var(--hq-text-muted)' }}>{translate('featTools.spotify.d3') || t.comp3Desc}</p>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ function LayoutSpotify({ qrType = 'spotify' }) {
         </table>
 
         <div style={{ maxWidth: 800 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 24, fontWeight: 700, marginBottom: 24 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 24,  marginBottom: 24 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.spotify.q${num}`);

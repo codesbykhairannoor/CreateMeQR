@@ -930,5 +930,193 @@
       "t3": "Cloud Drive-kompatibel",
       "d3": "Indsæt links fra Google Drev, Dropbox eller OneDrive for problemfri fildeling i skyen."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "Om os",
+        "subtitle": "Styrker globale forbindelser gennem problemfri QR-teknologi.",
+        "desc": "Vi byggede denne platform for at forenkle, hvordan verden deler information. Hurtig, pålidelig og helt privat."
+      },
+      "mission": {
+        "title": "Vores Mission",
+        "desc": "For at levere en førsteklasses QR-kodegenerator, der er den første til privatlivets fred, som ikke sporer dine data eller låser dine koder bag betalingsvægge."
+      },
+      "values": {
+        "title": "Kerneværdier",
+        "v1": "Privatliv først",
+        "d1": "Generering på klientsiden betyder, at dine data aldrig rører vores servere.",
+        "v2": "Gratis for evigt",
+        "d2": "Kernefunktioner vil altid forblive gratis uden skjulte grænser.",
+        "v3": "Global rækkevidde",
+        "d3": "Lokaliseret på 30 sprog for at betjene et virkeligt internationalt publikum."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Privatlivspolitik",
+        "subtitle": "Dine data er dine. Sådan holder vi det."
+      },
+      "sections": {
+        "s1": "Dataindsamling",
+        "d1": "Vi indsamler eller opbevarer ikke de data, du indtaster i QR-kodegeneratoren. Al generation sker lokalt på din enhed.",
+        "s2": "Cookies & Analytics",
+        "d2": "Vi bruger minimale analyser til at forstå aggregerede trafikmønstre. Ingen personligt identificerbare oplysninger spores.",
+        "s3": "Tredjepartstjenester",
+        "d3": "Vi sælger, udlejer eller deler ikke dine data med nogen tredjepart."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Servicevilkår",
+        "subtitle": "Færdselsregler for brug af vores platform."
+      },
+      "sections": {
+        "s1": "Acceptabel brug",
+        "d1": "Du accepterer ikke at bruge vores generator til at oprette QR-koder, der linker til ondsindet, ulovligt eller skadeligt indhold.",
+        "s2": "Servicetilgængelighed",
+        "d2": "Vi stræber efter 99,9 % oppetid, men leverer tjenesten 'som den er' uden garantier.",
+        "s3": "Intellektuel ejendomsret",
+        "d3": "Du beholder alle rettigheder til det indhold, du genererer. Platformkoden og designet tilhører os."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "Hvorfor vælge os?",
+        "subtitle": "Se, hvordan vi klarer os i forhold til konkurrenterne."
+      },
+      "metrics": {
+        "title": "Den ultimative sammenligning",
+        "m1": "Prissætning",
+        "us1": "100 % gratis",
+        "them1": "$15/måned",
+        "m2": "Privatliv",
+        "us2": "Klientside (ingen sporing)",
+        "them2": "Dataindsamling på serversiden",
+        "m3": "Vandmærker",
+        "us3": "Ingen",
+        "them3": "Tvungen vandmærker på gratis planer",
+        "m4": "Udløb",
+        "us4": "Koder udløber aldrig",
+        "them4": "Udløber efter 14 dage",
+        "m5": "Sprog",
+        "us5": "30 understøttede sprog",
+        "them5": "Kun engelsk"
+      }
+    },
+    "nav": {
+      "about": "Om os",
+      "privacy": "Privatliv",
+      "terms": "Vilkår",
+      "compare": "Sammenligne"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "Cyber ​​Scanner V1",
+      "title": "Øjeblikkelig",
+      "titleHighlight": "QR Scanner",
+      "desc": "Scan fra dit webcam eller upload et billede. 100 % privat, ingen data sendes til vores servere."
+    },
+    "workspace": {
+      "initCam": "Initialiser kamera",
+      "initCamDesc": "Scan en QR-kode ved hjælp af din enheds kamera",
+      "startBtn": "Start scanning",
+      "cancelBtn": "Annuller",
+      "successTitle": "Scanning lykkedes",
+      "scanAnother": "Scan en anden kode",
+      "orUpload": "Eller upload et billede",
+      "uploadBtn": "Upload QR-billedfil",
+      "decodedResult": "Afkodet resultat",
+      "copyBtn": "Kopier data",
+      "copied": "Kopieret!",
+      "openLink": "Åbn link",
+      "notLink": "Ikke et link",
+      "waiting": "Venter på scanning...",
+      "waitingDesc": "Ret dit kamera mod en QR-kode, eller upload et billede.",
+      "errCam": "Kameraet kunne ikke startes. Sørg for, at du har givet kameratilladelser.",
+      "errImg": "Ingen QR-kode fundet på billedet. Prøv venligst et andet billede."
+    },
+    "features": {
+      "whyTitle": "Hvorfor bruge vores scanner?",
+      "noAppTitle": "Ingen app påkrævet",
+      "noAppDesc": "Scan QR-koder direkte fra din browser uden at downloade nogle oppustede apps. Fungerer perfekt på iOS, Android og Desktop.",
+      "secureTitle": "100 % sikker og privat",
+      "secureDesc": "Dine billeder og kamerafeed behandles udelukkende på din enhed. Vi sender aldrig dine scanningsdata til nogen eksterne servere.",
+      "fastTitle": "Lynhurtigt",
+      "fastDesc": "Optimeret WASM-motor afkoder komplekse QR-koder øjeblikkeligt, selv under dårlige lysforhold eller med slørede kameraer.",
+      "moreTitle": "Mere end blot URL'er.",
+      "moreDesc": "Vores avancerede scanner genkender øjeblikkeligt forskellige typer nyttelast. Den læser ikke bare teksten, den forstår sammenhængen.",
+      "moreList1": "Parsing af WiFi-legitimationsoplysninger",
+      "moreList2": "vCard Kontakt Import",
+      "moreList3": "Krypto-adresser",
+      "formatTitle": "Universal Format Support",
+      "formatDesc": "Upload et billede, der indeholder en af ​​disse 2D-stregkoder, og vi afkoder det øjeblikkeligt direkte i din browser."
+    },
+    "seo": {
+      "title": "Gratis QR-kodescanner online - Scan QR øjeblikkeligt",
+      "desc": "Scan QR-koder med det samme ved hjælp af dit kamera eller ved at uploade et billede. 100 % sikker, privat og klient-side behandling."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Professionelle stregkodeværktøjer",
+      "title": "Generer",
+      "titleHighlight": "Stregkoder",
+      "titleSuffix": "Øjeblikkeligt",
+      "desc": "Opret lagermærker, forsendelsesetiketter og detailkoder i høj kvalitet på få sekunder."
+    },
+    "workspace": {
+      "dataTitle": "Stregkodedata",
+      "contentLabel": "Stregkodeindhold",
+      "contentPlaceholder": "Indtast tal eller tekst...",
+      "formatLabel": "Stregkode Standard / Format",
+      "visualTitle": "Visuel tuning",
+      "widthLabel": "Søjlebredde",
+      "heightLabel": "Barhøjde",
+      "lineColor": "Linjefarve",
+      "bgColor": "Baggrundsfarve",
+      "showText": "Vis tekstværdi under Kode",
+      "liveOutput": "Live Output",
+      "enterData": "Indtast data for at generere",
+      "download": "Download højopløselig PNG"
+    },
+    "features": {
+      "standardsTitle": "Understøttede stregkodeformater",
+      "standardsDesc": "Vælg den rigtige standard til din branche. Fra detailkasse til lagerlogistik.",
+      "c128Desc": "Meget kompakt og alsidig. Understøtter det fulde ASCII-tegnsæt. Ideel til generel lagerbeholdning og interne sporingssystemer.",
+      "itf14Desc": "Designet til emballeringsniveauer som kartoner eller paller. Bruger tykke kanter til at forbedre scanningsnøjagtigheden på bølgepap.",
+      "upcDesc": "Den globale standard for detailsalg på stedet. EAN-13 bruges over hele verden, mens UPC-A er standard i Nordamerika.",
+      "mfgTitle": "Bygget til produktion og logistik",
+      "mfgDesc": "Vores generator skaber skarpe, pixel-perfekte PNG-filer, der skaleres smukt til print. Vi bruger ikke uklare rasterbilleder – vores motor gengiver ren SVG-matematik, før den konverteres til PNG-downloads i høj opløsning.",
+      "mfgList1": "Absolut præcision: Ingen slørede kanter.",
+      "mfgList2": "Brugerdefineret polstring: Sikre zoner til termiske printere.",
+      "mfgList3": "100 % gratis: Ingen abonnementer for grundlæggende generation.",
+      "mfgBadge": "Fabriksklar",
+      "mfgBadgeDesc": "Høj kontrast til laserscannere",
+      "ecoTitle": "Perfekt til e-handel og detailhandel",
+      "ecoDesc": "Uanset om du annoncerer et nyt produkt på Amazon (FBA) eller opretter din egen Shopify-butik, er generering af UPC- og EAN-koder påkrævet for global distribution.",
+      "btnUpc": "Generer UPC-kode nu",
+      "btnEan": "Generer EAN-13-kode nu"
+    },
+    "seo": {
+      "title": "Gratis stregkodegenerator online - Opret 1D stregkoder",
+      "desc": "Generer professionelle 1D-stregkoder med det samme. Understøttelse af Code-128, UPC, EAN, ITF-14 og mere. Gratis, sikker og klar til download i højopløselig PNG."
+    }
+  },
+  "nav": {
+    "allTools": "Alle værktøjer",
+    "generatorDesc": "Opret 34+ QR-typer",
+    "barcodeDesc": "1D/2D Pro stregkoder",
+    "scanDesc": "Læs fra kamera",
+    "catSocial": "Sociale & Medier",
+    "catBusiness": "Forretning og links",
+    "catFinance": "Finans & Butik",
+    "catFiles": "Filer og data",
+    "catRetail": "Detail & Produkter",
+    "catIndustrial": "Industri & Data",
+    "company": "Selskab",
+    "privacy": "Privatlivspolitik",
+    "terms": "Servicevilkår"
   }
 }

@@ -74,7 +74,7 @@ function LayoutFacebook({ qrType = 'facebook' }) {
               </div>
             </div>
             <div className="hq-fb-post-content">
-              <h2 className="hq-fb-hero-title">{t.heroTitle} for {typeName}</h2>
+              <h2 className="hq-fb-hero-title font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} for {typeName}</h2>
               <p className="hq-fb-hero-subtitle">{t.heroSubtitle}</p>
             </div>
             <div style={{ background: 'var(--hq-bg)', padding: '40px 20px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderTop: '1px solid var(--hq-border)' }}>
@@ -94,21 +94,21 @@ function LayoutFacebook({ qrType = 'facebook' }) {
           <div className="hq-fb-feature" style={{ background: '#fff', border: '1px solid #ddd', borderRadius: 8, padding: 24, boxShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
               <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#e7f3ff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ShieldCheck size={20} color="#1877f2" /></div>
-              <h3 style={{ fontSize: 16, fontWeight: 600, color: '#1c1e21', margin: 0 }}>{translate('featTools.facebook.t1') || t.comp1Title}</h3>
+              <h3 className="font-bold tracking-tighter" style={{ fontSize: 16,  color: '#1c1e21', margin: 0 }}>{translate('featTools.facebook.t1') || t.comp1Title}</h3>
             </div>
             <p style={{ color: '#65676b', fontSize: 14, margin: 0 }}>{translate('featTools.facebook.d1') || t.comp1Desc}</p>
           </div>
           <div className="hq-fb-feature" style={{ background: '#fff', border: '1px solid #ddd', borderRadius: 8, padding: 24, boxShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
               <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#e7f3ff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Zap size={20} color="#1877f2" /></div>
-              <h3 style={{ fontSize: 16, fontWeight: 600, color: '#1c1e21', margin: 0 }}>{translate('featTools.facebook.t2') || t.comp2Title}</h3>
+              <h3 className="font-bold tracking-tighter" style={{ fontSize: 16,  color: '#1c1e21', margin: 0 }}>{translate('featTools.facebook.t2') || t.comp2Title}</h3>
             </div>
             <p style={{ color: '#65676b', fontSize: 14, margin: 0 }}>{translate('featTools.facebook.d2') || t.comp2Desc}</p>
           </div>
           <div className="hq-fb-feature" style={{ background: '#fff', border: '1px solid #ddd', borderRadius: 8, padding: 24, boxShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
               <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#e7f3ff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Lock size={20} color="#1877f2" /></div>
-              <h3 style={{ fontSize: 16, fontWeight: 600, color: '#1c1e21', margin: 0 }}>{translate('featTools.facebook.t3') || t.comp3Title}</h3>
+              <h3 className="font-bold tracking-tighter" style={{ fontSize: 16,  color: '#1c1e21', margin: 0 }}>{translate('featTools.facebook.t3') || t.comp3Title}</h3>
             </div>
             <p style={{ color: '#65676b', fontSize: 14, margin: 0 }}>{translate('featTools.facebook.d3') || t.comp3Desc}</p>
           </div>
@@ -117,7 +117,7 @@ function LayoutFacebook({ qrType = 'facebook' }) {
       
       <div style={{ background: 'var(--hq-card)', padding: '100px 0', borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.facebook.q${num}`);

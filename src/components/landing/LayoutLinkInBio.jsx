@@ -115,21 +115,21 @@ function LayoutLinkInBio({ qrType = 'linkinbio' }) {
             <div className="hq-lib-feat">
               <Layers size={32} />
               <div>
-                <h3 style={{ fontSize: 24, fontWeight: 700, margin: '0 0 8px 0' }}>{getTranslation('featTools', 't', 1)}</h3>
+                <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  margin: '0 0 8px 0' }}>{getTranslation('featTools', 't', 1)}</h3>
                 <p style={{ margin: 0, color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{getTranslation('featTools', 'd', 1)}</p>
               </div>
             </div>
             <div className="hq-lib-feat">
               <Palette size={32} />
               <div>
-                <h3 style={{ fontSize: 24, fontWeight: 700, margin: '0 0 8px 0' }}>{getTranslation('featTools', 't', 2)}</h3>
+                <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  margin: '0 0 8px 0' }}>{getTranslation('featTools', 't', 2)}</h3>
                 <p style={{ margin: 0, color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{getTranslation('featTools', 'd', 2)}</p>
               </div>
             </div>
             <div className="hq-lib-feat">
               <UserCircle size={32} />
               <div>
-                <h3 style={{ fontSize: 24, fontWeight: 700, margin: '0 0 8px 0' }}>{getTranslation('featTools', 't', 3)}</h3>
+                <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  margin: '0 0 8px 0' }}>{getTranslation('featTools', 't', 3)}</h3>
                 <p style={{ margin: 0, color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{getTranslation('featTools', 'd', 3)}</p>
               </div>
             </div>
@@ -149,7 +149,7 @@ function LayoutLinkInBio({ qrType = 'linkinbio' }) {
       </div>
 
       <div style={{ marginTop: 120, maxWidth: 800, marginLeft: 'auto', marginRight: 'auto' }}>
-        <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 48 }}>{t('landing.faqTitle')}</h2>
+        <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 48 }}>{t('landing.faqTitle')}</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           {[1, 2, 3, 4, 5].map((num, i) => {
             const q = getTranslation('faqTools', 'q', num);

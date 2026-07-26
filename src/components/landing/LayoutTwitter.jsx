@@ -67,12 +67,12 @@ function LayoutTwitter({ qrType = 'twitter' }) {
           <div className="hq-tw-content">
             <div className="hq-tw-name">CreateMeQR <span className="hq-tw-handle">@createmyqr · 1h</span></div>
             <div className="hq-tw-body">
-              <h2>{t.heroTitle} for {typeName}</h2>
+              <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} for {typeName}</h2>
               <p>{t.heroSubtitle} 🚀✨</p>
               
               <div className="hq-tw-media">
                 <ShieldCheck size={48} color="var(--hq-accent)" style={{ margin: '0 auto 16px auto' }} />
-                <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 8 }}>{t.comp1Title}</h3>
+                <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 18,  marginBottom: 8 }}>{t.comp1Title}</h3>
                 <p style={{ margin: 0, color: 'var(--hq-text-muted)' }}>{t.comp1Desc}</p>
               </div>
               
@@ -108,7 +108,7 @@ function LayoutTwitter({ qrType = 'twitter' }) {
         </div>
 
         <div style={{ padding: '60px 24px' }}>
-          <h2 style={{ paddingTop: 120, fontSize: 24, fontWeight: 800, marginBottom: 24 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 24,  marginBottom: 24 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.twitter.q${num}`);

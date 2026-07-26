@@ -91,7 +91,7 @@ function LayoutEvent({ qrType = 'event' }) {
         <div className="hq-ticket-hero">
           <div className="hq-ticket-left">
             <div style={{ color: 'var(--hq-accent)', marginBottom: 24 }}><CalendarRange size={48} /></div>
-            <h2>{t.heroTitle} <br/>{typeName}</h2>
+            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>{typeName}</h2>
             <p>{t.heroSubtitle}</p>
           </div>
           <div className="hq-ticket-right">
@@ -104,28 +104,28 @@ function LayoutEvent({ qrType = 'event' }) {
           <div className="hq-e-card" style={{ background: 'var(--hq-bg)', borderTop: '4px solid var(--hq-accent)', borderBottom: '1px solid var(--hq-border)', borderLeft: '1px solid var(--hq-border)', borderRight: '1px solid var(--hq-border)' }}>
             <div className="hq-e-icon" style={{ background: 'var(--hq-card)', border: '1px solid var(--hq-border)' }}><ShieldCheck /></div>
             <div className="hq-e-content">
-              <h3>{translate('featTools.event.t1') || t.comp1Title}</h3>
+              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.event.t1') || t.comp1Title}</h3>
               <p>{translate('featTools.event.d1') || t.comp1Desc}</p>
             </div>
           </div>
           <div className="hq-e-card" style={{ background: 'var(--hq-bg)', borderTop: '4px solid var(--hq-accent)', borderBottom: '1px solid var(--hq-border)', borderLeft: '1px solid var(--hq-border)', borderRight: '1px solid var(--hq-border)' }}>
             <div className="hq-e-icon" style={{ background: 'var(--hq-card)', border: '1px solid var(--hq-border)' }}><Zap /></div>
             <div className="hq-e-content">
-              <h3>{translate('featTools.event.t2') || t.comp2Title}</h3>
+              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.event.t2') || t.comp2Title}</h3>
               <p>{translate('featTools.event.d2') || t.comp2Desc}</p>
             </div>
           </div>
           <div className="hq-e-card" style={{ background: 'var(--hq-bg)', borderTop: '4px solid var(--hq-accent)', borderBottom: '1px solid var(--hq-border)', borderLeft: '1px solid var(--hq-border)', borderRight: '1px solid var(--hq-border)' }}>
             <div className="hq-e-icon" style={{ background: 'var(--hq-card)', border: '1px solid var(--hq-border)' }}><Lock /></div>
             <div className="hq-e-content">
-              <h3>{translate('featTools.event.t3') || t.comp3Title}</h3>
+              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.event.t3') || t.comp3Title}</h3>
               <p>{translate('featTools.event.d3') || t.comp3Desc}</p>
             </div>
           </div>
         </div>
 
         <div className="hq-event-steps">
-          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.stepsTitle} {typeName}
           </h2>
           {[
@@ -146,7 +146,7 @@ function LayoutEvent({ qrType = 'event' }) {
 
       <div style={{ background: 'var(--hq-card)', borderTop: '1px dashed var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

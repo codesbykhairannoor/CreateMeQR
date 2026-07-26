@@ -133,7 +133,7 @@ function LayoutGoogleReview({ qrType = 'greview' }) {
           <div className="hq-gr-card">
             <div className="hq-gr-card-accent"></div>
             <MessageSquareHeart size={32} color="var(--hq-blue)" style={{ marginBottom: 24 }} />
-            <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 16 }}>{getTranslation('featTools', 't', 1)}</h2>
+            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 28,  marginBottom: 16 }}>{getTranslation('featTools', 't', 1)}</h2>
             <p style={{ fontSize: 16, color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{getTranslation('featTools', 'd', 1)}</p>
             
             <div className="hq-gr-review-mock">
@@ -155,19 +155,19 @@ function LayoutGoogleReview({ qrType = 'greview' }) {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
             <div className="hq-gr-card" style={{ padding: 32 }}>
               <TrendingUp size={32} color="#10b981" style={{ marginBottom: 16 }} />
-              <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 12 }}>{getTranslation('featTools', 't', 2)}</h3>
+              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 22,  marginBottom: 12 }}>{getTranslation('featTools', 't', 2)}</h3>
               <p style={{ margin: 0, color: 'var(--hq-text-muted)', lineHeight: 1.5 }}>{getTranslation('featTools', 'd', 2)}</p>
             </div>
             <div className="hq-gr-card" style={{ padding: 32 }}>
               <MapPin size={32} color="#ef4444" style={{ marginBottom: 16 }} />
-              <h3 style={{ fontSize: 22, fontWeight: 700, marginBottom: 12 }}>{getTranslation('featTools', 't', 3)}</h3>
+              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 22,  marginBottom: 12 }}>{getTranslation('featTools', 't', 3)}</h3>
               <p style={{ margin: 0, color: 'var(--hq-text-muted)', lineHeight: 1.5 }}>{getTranslation('featTools', 'd', 3)}</p>
             </div>
           </div>
         </div>
 
         <div style={{ marginTop: 80, maxWidth: 800, marginLeft: 'auto', marginRight: 'auto' }}>
-          <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 48 }}>{t('landing.faqTitle')}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 48 }}>{t('landing.faqTitle')}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = getTranslation('faqTools', 'q', num);

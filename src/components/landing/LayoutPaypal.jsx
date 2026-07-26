@@ -63,30 +63,30 @@ function LayoutPaypal({ qrType = 'paypal' }) {
       <div className="hq-container">
         <div className="hq-pp-checkout">
           <div className="hq-pp-left">
-            <h2 style={{ fontSize: 24, fontWeight: 500, marginBottom: 32 }}>Secure {typeName} Features</h2>
+            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 32 }}>Secure {typeName} Features</h2>
             
               <div className="hq-pp-item" style={{ background: '#f5f7fa', padding: 24, borderRadius: 16, border: '1px solid #e0e6ef', display: 'flex', gap: 16, marginBottom: 16 }}>
                 <div className="hq-pp-item-icon" style={{ background: '#003087', color: '#fff', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ShieldCheck size={24} /></div>
                 <div>
-                  <h3 style={{ fontSize: 18, fontWeight: 600, color: '#001c64', marginBottom: 4 }}>{translate('featTools.paypal.t1') || t.comp1Title}</h3>
+                  <h3 className="font-bold tracking-tighter" style={{ fontSize: 18,  color: '#001c64', marginBottom: 4 }}>{translate('featTools.paypal.t1') || t.comp1Title}</h3>
                   <p style={{ color: '#6a7381', margin: 0 }}>{translate('featTools.paypal.d1') || t.comp1Desc}</p>
                 </div>
               </div>
               <div className="hq-pp-item" style={{ background: '#f5f7fa', padding: 24, borderRadius: 16, border: '1px solid #e0e6ef', display: 'flex', gap: 16, marginBottom: 16 }}>
                 <div className="hq-pp-item-icon" style={{ background: '#0079c1', color: '#fff', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Zap size={24} /></div>
                 <div>
-                  <h3 style={{ fontSize: 18, fontWeight: 600, color: '#001c64', marginBottom: 4 }}>{translate('featTools.paypal.t2') || t.comp2Title}</h3>
+                  <h3 className="font-bold tracking-tighter" style={{ fontSize: 18,  color: '#001c64', marginBottom: 4 }}>{translate('featTools.paypal.t2') || t.comp2Title}</h3>
                   <p style={{ color: '#6a7381', margin: 0 }}>{translate('featTools.paypal.d2') || t.comp2Desc}</p>
                 </div>
               </div>
           </div>
           
           <div className="hq-pp-right">
-            <h2 style={{ fontSize: 24, fontWeight: 500, marginBottom: 32 }}>Privacy Guarantee</h2>
+            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 32 }}>Privacy Guarantee</h2>
               <div className="hq-pp-item" style={{ background: '#f5f7fa', padding: 24, borderRadius: 16, border: '1px solid #e0e6ef', display: 'flex', gap: 16, marginBottom: 16 }}>
                 <div className="hq-pp-item-icon" style={{ background: '#003087', color: '#fff', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Lock size={24} /></div>
                 <div>
-                  <h3 style={{ fontSize: 18, fontWeight: 600, color: '#001c64', marginBottom: 4 }}>{translate('featTools.paypal.t3') || t.comp3Title}</h3>
+                  <h3 className="font-bold tracking-tighter" style={{ fontSize: 18,  color: '#001c64', marginBottom: 4 }}>{translate('featTools.paypal.t3') || t.comp3Title}</h3>
                   <p style={{ color: '#6a7381', margin: 0 }}>{translate('featTools.paypal.d3') || t.comp3Desc}</p>
                 </div>
               </div>
@@ -104,7 +104,7 @@ function LayoutPaypal({ qrType = 'paypal' }) {
         </div>
         
         <div style={{ maxWidth: 800, margin: '0 auto 100px auto' }}>
-          <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 300, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.paypal.q${num}`);

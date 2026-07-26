@@ -930,5 +930,193 @@
       "t3": "Tương thích với ổ đĩa đám mây",
       "d3": "Dán liên kết từ Google Drive, Dropbox hoặc OneDrive để chia sẻ tệp trên đám mây liền mạch."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "Về chúng tôi",
+        "subtitle": "Trao quyền kết nối toàn cầu thông qua công nghệ QR liền mạch.",
+        "desc": "Chúng tôi xây dựng nền tảng này để đơn giản hóa cách thế giới chia sẻ thông tin. Nhanh chóng, đáng tin cậy và hoàn toàn riêng tư."
+      },
+      "mission": {
+        "title": "Sứ mệnh của chúng tôi",
+        "desc": "Để cung cấp trình tạo mã QR cao cấp, ưu tiên quyền riêng tư, không theo dõi dữ liệu của bạn hoặc khóa mã của bạn sau tường phí."
+      },
+      "values": {
+        "title": "Giá trị cốt lõi",
+        "v1": "Quyền riêng tư đầu tiên",
+        "d1": "Tạo phía máy khách có nghĩa là dữ liệu của bạn không bao giờ chạm vào máy chủ của chúng tôi.",
+        "v2": "Miễn phí mãi mãi",
+        "d2": "Các tính năng cốt lõi sẽ luôn miễn phí và không có giới hạn ẩn.",
+        "v3": "Phạm vi tiếp cận toàn cầu",
+        "d3": "Được bản địa hóa bằng 30 ngôn ngữ để phục vụ khán giả quốc tế thực sự."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Chính sách bảo mật",
+        "subtitle": "Dữ liệu của bạn là của bạn. Chúng tôi giữ nó theo cách đó."
+      },
+      "sections": {
+        "s1": "Thu thập dữ liệu",
+        "d1": "Chúng tôi không thu thập hoặc lưu trữ dữ liệu bạn nhập vào trình tạo mã QR. Tất cả thế hệ diễn ra cục bộ trên thiết bị của bạn.",
+        "s2": "Cookie & Phân tích",
+        "d2": "Chúng tôi sử dụng số liệu phân tích tối thiểu để hiểu các mẫu lưu lượng truy cập tổng hợp. Không có thông tin nhận dạng cá nhân được theo dõi.",
+        "s3": "Dịch vụ của bên thứ ba",
+        "d3": "Chúng tôi không bán, cho thuê hoặc chia sẻ dữ liệu của bạn với bất kỳ bên thứ ba nào."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Điều khoản dịch vụ",
+        "subtitle": "Quy tắc sử dụng nền tảng của chúng tôi."
+      },
+      "sections": {
+        "s1": "Sử dụng được chấp nhận",
+        "d1": "Bạn đồng ý không sử dụng trình tạo của chúng tôi để tạo mã QR liên kết đến nội dung độc hại, bất hợp pháp hoặc có hại.",
+        "s2": "Sẵn có dịch vụ",
+        "d2": "Chúng tôi cố gắng đạt được 99,9% thời gian hoạt động nhưng cung cấp dịch vụ 'nguyên trạng' mà không có sự đảm bảo.",
+        "s3": "Sở hữu trí tuệ",
+        "d3": "Bạn giữ mọi quyền đối với nội dung bạn tạo ra. Mã nền tảng và thiết kế thuộc về chúng tôi."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "Tại sao chọn chúng tôi?",
+        "subtitle": "Hãy xem cách chúng tôi vượt qua đối thủ cạnh tranh."
+      },
+      "metrics": {
+        "title": "tính năng",
+        "m1": "Định giá",
+        "us1": "Miễn phí 100%",
+        "them1": "$15/tháng",
+        "m2": "Quyền riêng tư",
+        "us2": "Phía khách hàng (Không theo dõi)",
+        "them2": "Thu thập dữ liệu phía máy chủ",
+        "m3": "Hình mờ",
+        "us3": "không có",
+        "them3": "Hình mờ bắt buộc trên các gói miễn phí",
+        "m4": "Hết hạn",
+        "us4": "Mã không bao giờ hết hạn",
+        "them4": "Hết hạn sau 14 ngày",
+        "m5": "Ngôn ngữ",
+        "us5": "30 ngôn ngữ được hỗ trợ",
+        "them5": "Chỉ tiếng Anh"
+      }
+    },
+    "nav": {
+      "about": "Về chúng tôi",
+      "privacy": "Chính sách bảo mật",
+      "terms": "Điều khoản dịch vụ",
+      "compare": "So sánh"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "Máy quét mạng V1",
+      "title": "Tức thì",
+      "titleHighlight": "Máy quét QR",
+      "desc": "Quét từ webcam của bạn hoặc tải lên một hình ảnh. 100% riêng tư, không có dữ liệu nào được gửi đến máy chủ của chúng tôi."
+    },
+    "workspace": {
+      "initCam": "Khởi tạo Camera",
+      "initCamDesc": "Quét mã QR bằng camera của thiết bị của bạn",
+      "startBtn": "Bắt đầu quét",
+      "cancelBtn": "Hủy",
+      "successTitle": "Quét thành công",
+      "scanAnother": "Quét mã khác",
+      "orUpload": "Hoặc tải lên một hình ảnh",
+      "uploadBtn": "Tải lên tệp hình ảnh QR",
+      "decodedResult": "Kết quả được giải mã",
+      "copyBtn": "Sao chép dữ liệu",
+      "copied": "Đã sao chép!",
+      "openLink": "Mở liên kết",
+      "notLink": "Không phải là một liên kết",
+      "waiting": "Đang chờ quét...",
+      "waitingDesc": "Hướng máy ảnh của bạn vào mã QR hoặc tải hình ảnh lên.",
+      "errCam": "Không khởi động được máy ảnh. Hãy đảm bảo bạn đã cấp quyền cho máy ảnh.",
+      "errImg": "Không tìm thấy mã QR trong hình ảnh. Hãy thử một hình ảnh khác."
+    },
+    "features": {
+      "whyTitle": "Tại sao nên sử dụng Máy quét của chúng tôi?",
+      "noAppTitle": "Không cần ứng dụng",
+      "noAppDesc": "Quét mã QR trực tiếp từ trình duyệt của bạn mà không cần tải xuống bất kỳ ứng dụng cồng kềnh nào. Hoạt động hoàn hảo trên iOS, Android và Máy tính để bàn.",
+      "secureTitle": "100% an toàn & riêng tư",
+      "secureDesc": "Hình ảnh và nguồn cấp dữ liệu máy ảnh của bạn được xử lý hoàn toàn trên thiết bị của bạn. Chúng tôi không bao giờ gửi dữ liệu quét của bạn đến bất kỳ máy chủ bên ngoài nào.",
+      "fastTitle": "Nhanh như chớp",
+      "fastDesc": "Công cụ WASM được tối ưu hóa sẽ giải mã các mã QR phức tạp ngay lập tức, ngay cả trong điều kiện ánh sáng yếu hoặc với camera mờ.",
+      "moreTitle": "Không chỉ là URL.",
+      "moreDesc": "Máy quét tiên tiến của chúng tôi ngay lập tức nhận ra nhiều loại tải trọng khác nhau. Nó không chỉ đọc văn bản mà còn hiểu ngữ cảnh.",
+      "moreList1": "Phân tích thông tin xác thực WiFi",
+      "moreList2": "Nhập liên hệ vCard",
+      "moreList3": "Địa chỉ tiền điện tử",
+      "formatTitle": "Hỗ trợ định dạng phổ quát",
+      "formatDesc": "Tải lên hình ảnh chứa bất kỳ mã vạch 2D nào trong số này và chúng tôi sẽ giải mã nó ngay lập tức ngay trong trình duyệt của bạn."
+    },
+    "seo": {
+      "title": "Máy quét mã QR trực tuyến miễn phí - Quét QR ngay lập tức",
+      "desc": "Quét mã QR ngay lập tức bằng máy ảnh của bạn hoặc bằng cách tải hình ảnh lên. Xử lý 100% an toàn, riêng tư và phía khách hàng."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Công cụ mã vạch chuyên nghiệp",
+      "title": "Tạo",
+      "titleHighlight": "Mã vạch",
+      "titleSuffix": "Ngay lập tức",
+      "desc": "Tạo thẻ kiểm kê, nhãn vận chuyển và mã bán lẻ chất lượng cao chỉ trong vài giây."
+    },
+    "workspace": {
+      "dataTitle": "Dữ liệu mã vạch",
+      "contentLabel": "Nội dung mã vạch",
+      "contentPlaceholder": "Nhập số hoặc văn bản...",
+      "formatLabel": "Tiêu chuẩn / Định dạng mã vạch",
+      "visualTitle": "Điều chỉnh hình ảnh",
+      "widthLabel": "Chiều rộng thanh",
+      "heightLabel": "Chiều cao thanh",
+      "lineColor": "Màu đường",
+      "bgColor": "Màu nền",
+      "showText": "Hiển thị giá trị văn bản bên dưới mã",
+      "liveOutput": "Đầu ra trực tiếp",
+      "enterData": "Nhập dữ liệu để tạo",
+      "download": "Tải xuống PNG độ phân giải cao"
+    },
+    "features": {
+      "standardsTitle": "Các định dạng mã vạch được hỗ trợ",
+      "standardsDesc": "Chọn tiêu chuẩn phù hợp cho ngành của bạn. Từ thanh toán bán lẻ đến hậu cần kho hàng.",
+      "c128Desc": "Rất nhỏ gọn và đa năng. Hỗ trợ bộ ký tự ASCII đầy đủ. Lý tưởng cho hệ thống kiểm kê chung và theo dõi nội bộ.",
+      "itf14Desc": "Được thiết kế cho các cấp độ đóng gói như thùng giấy hoặc pallet. Sử dụng viền dày để cải thiện độ chính xác khi quét trên bìa cứng sóng.",
+      "upcDesc": "Tiêu chuẩn toàn cầu về bán lẻ tại điểm bán hàng. EAN-13 được sử dụng trên toàn thế giới, trong khi UPC-A là tiêu chuẩn ở Bắc Mỹ.",
+      "mfgTitle": "Được xây dựng cho Sản xuất & Hậu cần",
+      "mfgDesc": "Trình tạo của chúng tôi tạo ra các tệp PNG sắc nét, hoàn hảo đến từng pixel và có tỷ lệ đẹp mắt để in. Chúng tôi không sử dụng hình ảnh raster mờ—công cụ của chúng tôi hiển thị phép toán SVG thuần túy trước khi chuyển đổi nó thành các bản tải xuống PNG có độ phân giải cao.",
+      "mfgList1": "Độ chính xác tuyệt đối: Không có cạnh mờ.",
+      "mfgList2": "Đệm tùy chỉnh: Vùng an toàn cho máy in nhiệt.",
+      "mfgList3": "Miễn phí 100%: Không đăng ký cho thế hệ cơ bản.",
+      "mfgBadge": "Nhà máy đã sẵn sàng",
+      "mfgBadgeDesc": "Độ tương phản cao cho máy quét laser",
+      "ecoTitle": "Hoàn hảo cho Thương mại điện tử & Bán lẻ",
+      "ecoDesc": "Cho dù bạn đang niêm yết một sản phẩm mới trên Amazon (FBA) hay thiết lập cửa hàng Shopify của riêng mình thì việc tạo mã UPC và EAN là điều cần thiết để phân phối toàn cầu.",
+      "btnUpc": "Tạo mã UPC ngay bây giờ",
+      "btnEan": "Tạo mã EAN-13 ngay bây giờ"
+    },
+    "seo": {
+      "title": "Trình tạo mã vạch trực tuyến miễn phí - Tạo mã vạch 1D",
+      "desc": "Tạo mã vạch 1D chuyên nghiệp ngay lập tức. Hỗ trợ Code-128, UPC, EAN, ITF-14, v.v. Miễn phí, an toàn và sẵn sàng tải xuống ở định dạng PNG có độ phân giải cao."
+    }
+  },
+  "nav": {
+    "allTools": "Tất cả công cụ",
+    "generatorDesc": "Tạo hơn 34 loại QR",
+    "barcodeDesc": "Mã vạch 1D/2D Pro",
+    "scanDesc": "Đọc từ máy ảnh",
+    "catSocial": "Xã hội & Truyền thông",
+    "catBusiness": "Kinh doanh & Liên kết",
+    "catFinance": "Tài chính & Cửa hàng",
+    "catFiles": "Tệp & Dữ liệu",
+    "catRetail": "Bán lẻ & Sản phẩm",
+    "catIndustrial": "Công nghiệp & Dữ liệu",
+    "company": "Công ty",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản dịch vụ"
   }
 }

@@ -83,7 +83,7 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
           </div>
 
           <div className="hq-li-card hq-li-section">
-            <h2>About</h2>
+            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">About</h2>
             <p style={{ fontSize: 14, lineHeight: 1.5, color: 'var(--hq-text-muted)' }}>
               We provide the most robust, privacy-first QR code generation tool in the market. 
               Our engine processes everything securely in your browser. {t.tagline}
@@ -91,11 +91,11 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
           </div>
 
           <div className="hq-li-card hq-li-section">
-            <h2>Experience</h2>
+            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">Experience</h2>
             <div className="hq-li-exp" style={{ padding: '16px 0', borderBottom: '1px solid var(--hq-border)' }}>
               <div className="hq-li-exp-icon" style={{ background: '#0a66c2', color: 'white' }}><ShieldCheck size={24} /></div>
               <div className="hq-li-exp-content">
-                <h3 style={{ fontSize: 16, fontWeight: 700 }}>{translate('featTools.linkedin.t1') || t.comp1Title}</h3>
+                <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 16 }}>{translate('featTools.linkedin.t1') || t.comp1Title}</h3>
                 <h4 style={{ fontSize: 14, color: '#0a66c2', margin: '4px 0' }}>Security Standard</h4>
                 <p style={{ fontSize: 14, color: 'var(--hq-text-muted)', margin: 0 }}>{translate('featTools.linkedin.d1') || t.comp1Desc}</p>
               </div>
@@ -103,7 +103,7 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
             <div className="hq-li-exp" style={{ padding: '16px 0', borderBottom: '1px solid var(--hq-border)' }}>
               <div className="hq-li-exp-icon" style={{ background: '#0a66c2', color: 'white' }}><Zap size={24} /></div>
               <div className="hq-li-exp-content">
-                <h3 style={{ fontSize: 16, fontWeight: 700 }}>{translate('featTools.linkedin.t2') || t.comp2Title}</h3>
+                <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 16 }}>{translate('featTools.linkedin.t2') || t.comp2Title}</h3>
                 <h4 style={{ fontSize: 14, color: '#0a66c2', margin: '4px 0' }}>Performance Metric</h4>
                 <p style={{ fontSize: 14, color: 'var(--hq-text-muted)', margin: 0 }}>{translate('featTools.linkedin.d2') || t.comp2Desc}</p>
               </div>
@@ -111,7 +111,7 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
             <div className="hq-li-exp" style={{ padding: '16px 0' }}>
               <div className="hq-li-exp-icon" style={{ background: '#0a66c2', color: 'white' }}><Lock size={24} /></div>
               <div className="hq-li-exp-content">
-                <h3 style={{ fontSize: 16, fontWeight: 700 }}>{translate('featTools.linkedin.t3') || t.comp3Title}</h3>
+                <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 16 }}>{translate('featTools.linkedin.t3') || t.comp3Title}</h3>
                 <h4 style={{ fontSize: 14, color: '#0a66c2', margin: '4px 0' }}>Privacy Policy</h4>
                 <p style={{ fontSize: 14, color: 'var(--hq-text-muted)', margin: 0 }}>{translate('featTools.linkedin.d3') || t.comp3Desc}</p>
               </div>
@@ -121,7 +121,7 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
 
         <div className="hq-li-sidebar">
           <div className="hq-li-card hq-li-side-card">
-            <h3>People also viewed</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">People also viewed</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
                 <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'var(--hq-border)' }}></div>
@@ -144,7 +144,7 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
       
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '80px 0' }}>
         <div className="hq-container" style={{ display: 'block', maxWidth: 800 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 600, marginBottom: 32 }}>Frequently Asked Questions</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 32 }}>Frequently Asked Questions</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.linkedin.q${num}`);

@@ -106,7 +106,7 @@ function LayoutEmail({ qrType = 'email' }) {
         <div className="hq-masonry-hero">
           <div className="hq-m-card hq-m-main">
             <div className="hq-m-main-icon"><Mail size={320} /></div>
-            <h2>{t.heroTitle} <br/>{typeName}</h2>
+            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>{typeName}</h2>
             <p>{t.heroSubtitle}</p>
           </div>
           
@@ -114,7 +114,7 @@ function LayoutEmail({ qrType = 'email' }) {
             <div className="hq-m-stat-bg"><ShieldCheck size={200}/></div>
             <div style={{ position: 'relative', zIndex: 2 }}>
               <div style={{ display: 'inline-block', padding: '8px 16px', background: 'var(--hq-bg)', borderRadius: 8, fontSize: 14, fontWeight: 700, marginBottom: 16 }}>FEATURE 1</div>
-              <h3>{translate('featTools.email.t1') || t.comp1Title}</h3>
+              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.email.t1') || t.comp1Title}</h3>
               <p>{translate('featTools.email.d1') || t.comp1Desc}</p>
             </div>
           </div>
@@ -123,7 +123,7 @@ function LayoutEmail({ qrType = 'email' }) {
             <div className="hq-m-stat-bg"><Zap size={200}/></div>
             <div style={{ position: 'relative', zIndex: 2 }}>
               <div style={{ display: 'inline-block', padding: '8px 16px', background: 'var(--hq-bg)', borderRadius: 8, fontSize: 14, fontWeight: 700, marginBottom: 16 }}>FEATURE 2</div>
-              <h3>{translate('featTools.email.t2') || t.comp2Title}</h3>
+              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.email.t2') || t.comp2Title}</h3>
               <p>{translate('featTools.email.d2') || t.comp2Desc}</p>
             </div>
           </div>
@@ -134,14 +134,14 @@ function LayoutEmail({ qrType = 'email' }) {
             <div className="hq-m-stat-bg"><Lock size={200}/></div>
             <div style={{ position: 'relative', zIndex: 2 }}>
               <div style={{ display: 'inline-block', padding: '8px 16px', background: 'var(--hq-bg)', borderRadius: 8, fontSize: 14, fontWeight: 700, marginBottom: 16 }}>FEATURE 3</div>
-              <h3>{translate('featTools.email.t3') || t.comp3Title}</h3>
+              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.email.t3') || t.comp3Title}</h3>
               <p>{translate('featTools.email.d3') || t.comp3Desc}</p>
             </div>
           </div>
         </div>
 
         <div style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900 }}>{t.stepsTitle} {typeName}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(32px, 5vw, 48px)' }}>{t.stepsTitle} {typeName}</h2>
         </div>
 
         <div className="hq-steps-grid">
@@ -161,7 +161,7 @@ function LayoutEmail({ qrType = 'email' }) {
 
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

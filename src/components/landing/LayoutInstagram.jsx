@@ -98,7 +98,7 @@ function LayoutInstagram({ qrType = 'instagram' }) {
             </div>
           </div>
           
-          <h2>{t.heroTitle} <br/>for {typeName}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>for {typeName}</h2>
           <p>{t.heroSubtitle}</p>
         </div>
 
@@ -140,7 +140,7 @@ function LayoutInstagram({ qrType = 'instagram' }) {
             <MessageCircle size={24} />
             <Send size={24} />
           </div>
-          <h2 style={{ paddingTop: 120, fontSize: 36, fontWeight: 800, textAlign: 'center', margin: '0 0 40px 0' }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 36,  textAlign: 'center', margin: '0 0 40px 0' }}>{t.faqTitle}</h2>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {

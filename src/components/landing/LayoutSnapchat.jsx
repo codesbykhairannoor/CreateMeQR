@@ -72,24 +72,24 @@ function LayoutSnapchat({ qrType = 'snapchat' }) {
       <div className="hq-container hq-sc-grid">
         <div className="hq-sc-card" style={{ background: '#FFFC00', border: 'none', color: '#000', borderRadius: 32 }}>
           <div className="hq-sc-icon" style={{ background: '#000', color: '#FFFC00' }}><ShieldCheck size={32} /></div>
-          <h3 style={{ fontWeight: 900, textTransform: 'uppercase' }}>{translate('featTools.snapchat.t1') || t.comp1Title}</h3>
+          <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{  textTransform: 'uppercase' }}>{translate('featTools.snapchat.t1') || t.comp1Title}</h3>
           <p style={{ color: '#333', lineHeight: 1.6, fontWeight: 500 }}>{translate('featTools.snapchat.d1') || t.comp1Desc}</p>
         </div>
         <div className="hq-sc-card" style={{ background: '#FFFC00', border: 'none', color: '#000', borderRadius: 32 }}>
           <div className="hq-sc-icon" style={{ background: '#000', color: '#FFFC00' }}><Zap size={32} /></div>
-          <h3 style={{ fontWeight: 900, textTransform: 'uppercase' }}>{translate('featTools.snapchat.t2') || t.comp2Title}</h3>
+          <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{  textTransform: 'uppercase' }}>{translate('featTools.snapchat.t2') || t.comp2Title}</h3>
           <p style={{ color: '#333', lineHeight: 1.6, fontWeight: 500 }}>{translate('featTools.snapchat.d2') || t.comp2Desc}</p>
         </div>
         <div className="hq-sc-card" style={{ background: '#FFFC00', border: 'none', color: '#000', borderRadius: 32 }}>
           <div className="hq-sc-icon" style={{ background: '#000', color: '#FFFC00' }}><Lock size={32} /></div>
-          <h3 style={{ fontWeight: 900, textTransform: 'uppercase' }}>{translate('featTools.snapchat.t3') || t.comp3Title}</h3>
+          <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{  textTransform: 'uppercase' }}>{translate('featTools.snapchat.t3') || t.comp3Title}</h3>
           <p style={{ color: '#333', lineHeight: 1.6, fontWeight: 500 }}>{translate('featTools.snapchat.d3') || t.comp3Desc}</p>
         </div>
       </div>
       
       <div style={{ background: '#111', padding: '100px 0', paddingBottom: 160 }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 40, color: 'white' }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 40, color: 'white' }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.snapchat.q${num}`);

@@ -88,7 +88,7 @@ function LayoutYouTube({ qrType = 'youtube' }) {
       <div className="hq-container">
         <div className="hq-yt-theater">
           <div className="hq-yt-theater-content">
-            <h2>{typeName} <br/>{t.heroTitle}</h2>
+            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{typeName} <br/>{t.heroTitle}</h2>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: 20 }}>{t.heroSubtitle}</p>
           </div>
           
@@ -114,21 +114,21 @@ function LayoutYouTube({ qrType = 'youtube' }) {
           <div className="hq-yt-card" style={{ background: '#0f0f0f', border: '1px solid #272727', borderRadius: 12, padding: 32 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
               <div style={{ width: 48, height: 48, borderRadius: '50%', background: '#272727', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ShieldCheck size={24} color="#ff0000" /></div>
-              <h3 style={{ fontSize: 20, fontWeight: 700, margin: 0, color: '#fff' }}>{translate('featTools.youtube.t1') || t.comp1Title}</h3>
+              <h3 className="font-bold tracking-tighter" style={{ fontSize: 20,  margin: 0, color: '#fff' }}>{translate('featTools.youtube.t1') || t.comp1Title}</h3>
             </div>
             <p style={{ color: '#aaaaaa', lineHeight: 1.6 }}>{translate('featTools.youtube.d1') || t.comp1Desc}</p>
           </div>
           <div className="hq-yt-card" style={{ background: '#0f0f0f', border: '1px solid #272727', borderRadius: 12, padding: 32 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
               <div style={{ width: 48, height: 48, borderRadius: '50%', background: '#272727', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Zap size={24} color="#ff0000" /></div>
-              <h3 style={{ fontSize: 20, fontWeight: 700, margin: 0, color: '#fff' }}>{translate('featTools.youtube.t2') || t.comp2Title}</h3>
+              <h3 className="font-bold tracking-tighter" style={{ fontSize: 20,  margin: 0, color: '#fff' }}>{translate('featTools.youtube.t2') || t.comp2Title}</h3>
             </div>
             <p style={{ color: '#aaaaaa', lineHeight: 1.6 }}>{translate('featTools.youtube.d2') || t.comp2Desc}</p>
           </div>
           <div className="hq-yt-card" style={{ background: '#0f0f0f', border: '1px solid #272727', borderRadius: 12, padding: 32 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
               <div style={{ width: 48, height: 48, borderRadius: '50%', background: '#272727', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Lock size={24} color="#ff0000" /></div>
-              <h3 style={{ fontSize: 20, fontWeight: 700, margin: 0, color: '#fff' }}>{translate('featTools.youtube.t3') || t.comp3Title}</h3>
+              <h3 className="font-bold tracking-tighter" style={{ fontSize: 20,  margin: 0, color: '#fff' }}>{translate('featTools.youtube.t3') || t.comp3Title}</h3>
             </div>
             <p style={{ color: '#aaaaaa', lineHeight: 1.6 }}>{translate('featTools.youtube.d3') || t.comp3Desc}</p>
           </div>
@@ -137,7 +137,7 @@ function LayoutYouTube({ qrType = 'youtube' }) {
       
       <div style={{ background: 'var(--hq-card)', padding: '120px 0', borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 40, fontWeight: 900, marginBottom: 48, textAlign: 'center' }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 40,  marginBottom: 48, textAlign: 'center' }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.youtube.q${num}`);

@@ -89,22 +89,22 @@ function LayoutTikTok({ qrType = 'tiktok' }) {
         </div>
 
         <div className="hq-tk-content">
-          <h2>Swipe Up for {typeName} QR Code</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">Swipe Up for {typeName} QR Code</h2>
           <p style={{ color: 'var(--hq-text-muted)', fontSize: 18, lineHeight: 1.6 }}>
             {t.heroSubtitle} Generate codes instantly without any tracking or subscription fees.
           </p>
           
           <div className="hq-tk-features">
             <div className="hq-tk-feature" style={{ borderLeft: '4px solid #ff0050', paddingLeft: 16, background: 'rgba(255,255,255,0.02)' }}>
-              <h3 style={{ fontSize: 18, color: '#ff0050', display: 'flex', alignItems: 'center', gap: 8 }}><ShieldCheck size={20} /> {translate('featTools.tiktok.t1') || t.comp1Title}</h3>
+              <h3 className="font-bold tracking-tighter" style={{ fontSize: 18, color: '#ff0050', display: 'flex', alignItems: 'center', gap: 8 }}><ShieldCheck size={20} /> {translate('featTools.tiktok.t1') || t.comp1Title}</h3>
               <p style={{ color: 'var(--hq-text-muted)', fontSize: 15, margin: 0 }}>{translate('featTools.tiktok.d1') || t.comp1Desc}</p>
             </div>
             <div className="hq-tk-feature" style={{ borderLeft: '4px solid #00f2fe', paddingLeft: 16, background: 'rgba(255,255,255,0.02)' }}>
-              <h3 style={{ fontSize: 18, color: '#00f2fe', display: 'flex', alignItems: 'center', gap: 8 }}><Zap size={20} /> {translate('featTools.tiktok.t2') || t.comp2Title}</h3>
+              <h3 className="font-bold tracking-tighter" style={{ fontSize: 18, color: '#00f2fe', display: 'flex', alignItems: 'center', gap: 8 }}><Zap size={20} /> {translate('featTools.tiktok.t2') || t.comp2Title}</h3>
               <p style={{ color: 'var(--hq-text-muted)', fontSize: 15, margin: 0 }}>{translate('featTools.tiktok.d2') || t.comp2Desc}</p>
             </div>
             <div className="hq-tk-feature" style={{ borderLeft: '4px solid #fff', paddingLeft: 16, background: 'rgba(255,255,255,0.02)' }}>
-              <h3 style={{ fontSize: 18, color: '#fff', display: 'flex', alignItems: 'center', gap: 8 }}><Lock size={20} /> {translate('featTools.tiktok.t3') || t.comp3Title}</h3>
+              <h3 className="font-bold tracking-tighter" style={{ fontSize: 18, color: '#fff', display: 'flex', alignItems: 'center', gap: 8 }}><Lock size={20} /> {translate('featTools.tiktok.t3') || t.comp3Title}</h3>
               <p style={{ color: 'var(--hq-text-muted)', fontSize: 15, margin: 0 }}>{translate('featTools.tiktok.d3') || t.comp3Desc}</p>
             </div>
           </div>
@@ -113,7 +113,7 @@ function LayoutTikTok({ qrType = 'tiktok' }) {
       
       <div style={{ background: '#0a0a0a', padding: '100px 0', marginTop: 80, borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800, flexDirection: 'column' }}>
-          <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 900, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.tiktok.q${num}`);

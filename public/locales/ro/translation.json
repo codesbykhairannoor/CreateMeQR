@@ -930,5 +930,193 @@
       "t3": "Compatibil cu Cloud Drive",
       "d3": "Lipiți linkuri din Google Drive, Dropbox sau OneDrive pentru partajarea fără probleme a fișierelor în cloud."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "Despre noi",
+        "subtitle": "Împuternicirea conexiunilor globale prin tehnologia QR fără întreruperi.",
+        "desc": "Am construit această platformă pentru a simplifica modul în care lumea partajează informații. Rapid, fiabil și complet privat."
+      },
+      "mission": {
+        "title": "Misiunea noastră",
+        "desc": "Pentru a oferi un generator de coduri QR premium, pe primul loc pentru confidențialitate, care nu vă urmărește datele și nu vă blochează codurile în spatele pereților de plată."
+      },
+      "values": {
+        "title": "Valorile de bază",
+        "v1": "În primul rând, confidențialitatea",
+        "d1": "Generarea la nivelul clientului înseamnă că datele dumneavoastră nu ating niciodată serverele noastre.",
+        "v2": "Liber pentru totdeauna",
+        "d2": "Funcțiile de bază vor rămâne întotdeauna gratuite, fără limite ascunse.",
+        "v3": "Acoperire globală",
+        "d3": "Localizat în 30 de limbi pentru a servi un public cu adevărat internațional."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Politica de confidențialitate",
+        "subtitle": "Datele tale sunt ale tale. O ținem așa."
+      },
+      "sections": {
+        "s1": "Colectarea datelor",
+        "d1": "Nu colectăm și nu stocăm datele pe care le introduceți în generatorul de coduri QR. Toată generarea are loc local pe dispozitivul dvs.",
+        "s2": "Cookie-uri și analize",
+        "d2": "Folosim analize minime pentru a înțelege modelele de trafic agregate. Nu sunt urmărite informații de identificare personală.",
+        "s3": "Servicii de la terți",
+        "d3": "Nu vindem, închiriem și nu împărtășim datele dumneavoastră cu terțe părți."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Termeni și condiții",
+        "subtitle": "Reguli de parcurs pentru utilizarea platformei noastre."
+      },
+      "sections": {
+        "s1": "Utilizare acceptabilă",
+        "d1": "Sunteți de acord să nu utilizați generatorul nostru pentru a crea coduri QR care leagă la conținut rău intenționat, ilegal sau dăunător.",
+        "s2": "Disponibilitatea serviciului",
+        "d2": "Ne străduim să obținem un timp de funcționare de 99,9%, dar oferim serviciul „ca atare”, fără garanții.",
+        "s3": "Proprietatea intelectuală",
+        "d3": "Vă păstrați toate drepturile asupra conținutului pe care îl generați. Codul platformei și designul ne aparțin."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "De ce să ne alegeți?",
+        "subtitle": "Vedeți cum ne raportăm concurenței."
+      },
+      "metrics": {
+        "title": "Caracteristica",
+        "m1": "Prețuri",
+        "us1": "100% gratuit",
+        "them1": "15 USD/luna",
+        "m2": "Confidențialitate",
+        "us2": "Partea client (fără urmărire)",
+        "them2": "Recoltarea datelor pe partea serverului",
+        "m3": "Filigrane",
+        "us3": "Niciuna",
+        "them3": "Filigrane forțate pe planuri gratuite",
+        "m4": "Expirare",
+        "us4": "Codurile nu expiră niciodată",
+        "them4": "Expiră după 14 zile",
+        "m5": "Limbi",
+        "us5": "30 de limbi acceptate",
+        "them5": "Numai în limba engleză"
+      }
+    },
+    "nav": {
+      "about": "Despre noi",
+      "privacy": "Politica de confidențialitate",
+      "terms": "Termeni și condiții",
+      "compare": "Comparaţie"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "Cyber ​​Scanner V1",
+      "title": "Instantanee",
+      "titleHighlight": "Scaner QR",
+      "desc": "Scanați de pe camera web sau încărcați o imagine. 100% private, zero date sunt trimise la serverele noastre."
+    },
+    "workspace": {
+      "initCam": "Inițializați camera",
+      "initCamDesc": "Scanează un cod QR folosind camera dispozitivului",
+      "startBtn": "Începeți scanarea",
+      "cancelBtn": "Anulează",
+      "successTitle": "Scanare reușită",
+      "scanAnother": "Scanează un alt cod",
+      "orUpload": "Sau încărcați o imagine",
+      "uploadBtn": "Încărcați fișierul imagine QR",
+      "decodedResult": "Rezultat decodificat",
+      "copyBtn": "Copierea datelor",
+      "copied": "Copiat!",
+      "openLink": "Deschide Link",
+      "notLink": "Nu este un link",
+      "waiting": "Se așteaptă scanarea...",
+      "waitingDesc": "Îndreptați camera către un cod QR sau încărcați o imagine.",
+      "errCam": "Nu s-a pornit camera. Asigurați-vă că ați acordat permisiunile camerei.",
+      "errImg": "Nu s-a găsit niciun cod QR în imagine. Vă rugăm să încercați o altă imagine."
+    },
+    "features": {
+      "whyTitle": "De ce să folosiți scanerul nostru?",
+      "noAppTitle": "Nu este necesară nicio aplicație",
+      "noAppDesc": "Scanează codurile QR direct din browser fără a descărca aplicații umflate. Funcționează perfect pe iOS, Android și desktop.",
+      "secureTitle": "100% sigur și privat",
+      "secureDesc": "Imaginile și fluxul camerei sunt procesate în întregime pe dispozitiv. Nu trimitem niciodată datele dvs. de scanare către niciun server extern.",
+      "fastTitle": "Rapid fulger",
+      "fastDesc": "Motorul WASM optimizat decodifică instantaneu coduri QR complexe, chiar și în condiții de lumină scăzută sau cu camere neclare.",
+      "moreTitle": "Mai mult decât adrese URL.",
+      "moreDesc": "Scanerul nostru avansat recunoaște instantaneu diferite tipuri de încărcătură utilă. Nu doar citește textul, ci înțelege contextul.",
+      "moreList1": "Analiza acreditărilor WiFi",
+      "moreList2": "vCard Contact Import",
+      "moreList3": "Adrese criptografice",
+      "formatTitle": "Suport format universal",
+      "formatDesc": "Încărcați o imagine care conține oricare dintre aceste coduri de bare 2D și o vom decoda instantaneu chiar în browser."
+    },
+    "seo": {
+      "title": "Scaner online gratuit de coduri QR - Scanează QR instantaneu",
+      "desc": "Scanează instantaneu codurile QR folosind camera foto sau încărcând o imagine. Procesare 100% sigură, privată și la nivelul clientului."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Instrumente profesionale pentru coduri de bare",
+      "title": "Generați",
+      "titleHighlight": "Codurile de bare",
+      "titleSuffix": "Instantaneu",
+      "desc": "Creați etichete de inventar de înaltă calitate, etichete de expediere și coduri de vânzare cu amănuntul în câteva secunde."
+    },
+    "workspace": {
+      "dataTitle": "Date cod de bare",
+      "contentLabel": "Continut cod de bare",
+      "contentPlaceholder": "Introduceți numere sau text...",
+      "formatLabel": "Cod de bare Standard / Format",
+      "visualTitle": "Reglaj vizual",
+      "widthLabel": "Lățimea barei",
+      "heightLabel": "Înălțimea barei",
+      "lineColor": "Culoare linie",
+      "bgColor": "Culoare de fundal",
+      "showText": "Afișați valoarea textului sub codul",
+      "liveOutput": "Ieșire live",
+      "enterData": "Introduceți datele de generat",
+      "download": "Descărcați PNG de înaltă rezoluție"
+    },
+    "features": {
+      "standardsTitle": "Formate de coduri de bare acceptate",
+      "standardsDesc": "Alegeți standardul potrivit pentru industria dvs. De la casă cu amănuntul până la logistica depozitului.",
+      "c128Desc": "Foarte compact și versatil. Acceptă setul complet de caractere ASCII. Ideal pentru inventarul general și sistemele interne de urmărire.",
+      "itf14Desc": "Proiectat pentru niveluri de ambalare precum cutii de carton sau paleți. Utilizează margini groase pentru a îmbunătăți acuratețea scanării pe carton ondulat.",
+      "upcDesc": "Standardul global pentru comerțul cu amănuntul la punctul de vânzare. EAN-13 este utilizat în întreaga lume, în timp ce UPC-A este standard în America de Nord.",
+      "mfgTitle": "Construit pentru producție și logistică",
+      "mfgDesc": "Generatorul nostru creează fișiere PNG clare, perfecte pentru pixeli, care se scalează frumos pentru imprimare. Nu folosim imagini raster neclare — motorul nostru redă matematică SVG pură înainte de a le converti în descărcări PNG de înaltă rezoluție.",
+      "mfgList1": "Precizie absolută: fără margini neclare.",
+      "mfgList2": "Umplutură personalizată: zone sigure pentru imprimante termice.",
+      "mfgList3": "100% gratuit: fără abonamente pentru generația de bază.",
+      "mfgBadge": "Gata din fabrică",
+      "mfgBadgeDesc": "Contrast ridicat pentru scanerele laser",
+      "ecoTitle": "Perfect pentru comerțul electronic și retail",
+      "ecoDesc": "Indiferent dacă listați un produs nou pe Amazon (FBA) sau vă configurați propria vitrină Shopify, generarea codurilor UPC și EAN este necesară pentru distribuția globală.",
+      "btnUpc": "Generați codul UPC acum",
+      "btnEan": "Generați codul EAN-13 acum"
+    },
+    "seo": {
+      "title": "Generator online gratuit de coduri de bare - Creați coduri de bare 1D",
+      "desc": "Generați instantaneu coduri de bare profesionale 1D. Suport pentru Code-128, UPC, EAN, ITF-14 și multe altele. Gratuit, sigur și gata de descărcat în PNG de înaltă rezoluție."
+    }
+  },
+  "nav": {
+    "allTools": "Toate instrumentele",
+    "generatorDesc": "Creați peste 34 de tipuri QR",
+    "barcodeDesc": "Coduri de bare 1D/2D Pro",
+    "scanDesc": "Citiți de pe cameră",
+    "catSocial": "Social & Media",
+    "catBusiness": "Afaceri și legături",
+    "catFinance": "Finanțe și magazin",
+    "catFiles": "Fișiere și date",
+    "catRetail": "Comerț cu amănuntul și produse",
+    "catIndustrial": "Industrial și de date",
+    "company": "Companie",
+    "privacy": "Politica de confidențialitate",
+    "terms": "Termeni și condiții"
   }
 }

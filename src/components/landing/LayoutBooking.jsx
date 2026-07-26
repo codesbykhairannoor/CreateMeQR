@@ -169,21 +169,21 @@ function LayoutBooking({ qrType = 'booking' }) {
 
             <div className="hq-bk-feat-list">
               <div>
-                <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 24 }}>{getTranslation('featTools', 't', 1)}</h2>
+                <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 24 }}>{getTranslation('featTools', 't', 1)}</h2>
                 <p style={{ color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{getTranslation('featTools', 'd', 1)}</p>
               </div>
               
               <div className="hq-bk-feat">
                 <Check size={24} />
                 <div>
-                  <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 4 }}>{getTranslation('featTools', 't', 2)}</h3>
+                  <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 18,  marginBottom: 4 }}>{getTranslation('featTools', 't', 2)}</h3>
                   <p style={{ margin: 0, color: 'var(--hq-text-muted)', fontSize: 14, lineHeight: 1.5 }}>{getTranslation('featTools', 'd', 2)}</p>
                 </div>
               </div>
               <div className="hq-bk-feat">
                 <Check size={24} />
                 <div>
-                  <h3 style={{ fontSize: 18, fontWeight: 600, marginBottom: 4 }}>{getTranslation('featTools', 't', 3)}</h3>
+                  <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 18,  marginBottom: 4 }}>{getTranslation('featTools', 't', 3)}</h3>
                   <p style={{ margin: 0, color: 'var(--hq-text-muted)', fontSize: 14, lineHeight: 1.5 }}>{getTranslation('featTools', 'd', 3)}</p>
                 </div>
               </div>
@@ -192,7 +192,7 @@ function LayoutBooking({ qrType = 'booking' }) {
         </div>
 
         <div style={{ marginTop: 80 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 28, fontWeight: 700, textAlign: 'center', marginBottom: 40 }}>{t('landing.faqTitle')}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 28,  textAlign: 'center', marginBottom: 40 }}>{t('landing.faqTitle')}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = getTranslation('faqTools', 'q', num);

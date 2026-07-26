@@ -124,7 +124,7 @@ function LayoutVCard({ qrType = 'vcard' }) {
         <div className="hq-profile-hero">
           <div className="hq-hero-bg"></div>
           <div className="hq-avatar-wrap"><UserCircle2 size={64} strokeWidth={1.5} /></div>
-          <h2>{t.heroTitle} <br/><span style={{ color: 'var(--hq-accent)' }}>{typeName}</span></h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/><span style={{ color: 'var(--hq-accent)' }}>{typeName}</span></h2>
           <p>{t.heroSubtitle}</p>
           <div className="hq-badge-strip">
             <div className="hq-badge"><span style={{ color: 'var(--hq-accent)' }}><ShieldCheck size={16}/></span> {t.badgePrivate || 'Private'}</div>
@@ -134,28 +134,28 @@ function LayoutVCard({ qrType = 'vcard' }) {
         </div>
         
         <div style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 800, textAlign: 'center' }}>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(28px, 4vw, 40px)',  textAlign: 'center' }}>
             {t.badgeLeadMarket || 'Why We Lead'}
           </h2>
         </div>
         
         <div className="hq-horizontal-cards">
           <div className="hq-h-card" style={{ background: 'linear-gradient(145deg, var(--hq-bg), var(--hq-card))', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
-            <h3><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><ShieldCheck size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t1') || t.comp1Title}</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white"><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><ShieldCheck size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t1') || t.comp1Title}</h3>
             <p>{translate('featTools.vcard.d1') || t.comp1Desc}</p>
           </div>
           <div className="hq-h-card" style={{ background: 'linear-gradient(145deg, var(--hq-bg), var(--hq-card))', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
-            <h3><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><Zap size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t2') || t.comp2Title}</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white"><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><Zap size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t2') || t.comp2Title}</h3>
             <p>{translate('featTools.vcard.d2') || t.comp2Desc}</p>
           </div>
           <div className="hq-h-card" style={{ background: 'linear-gradient(145deg, var(--hq-bg), var(--hq-card))', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
-            <h3><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><Lock size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t3') || t.comp3Title}</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white"><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><Lock size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t3') || t.comp3Title}</h3>
             <p>{translate('featTools.vcard.d3') || t.comp3Desc}</p>
           </div>
         </div>
 
         <div style={{ marginBottom: 60, marginTop: 40 }}>
-          <h2 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 800, textAlign: 'center' }}>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(28px, 4vw, 40px)',  textAlign: 'center' }}>
             {t.stepsTitle} {typeName}
           </h2>
         </div>
@@ -180,7 +180,7 @@ function LayoutVCard({ qrType = 'vcard' }) {
       {/* FAQ */}
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

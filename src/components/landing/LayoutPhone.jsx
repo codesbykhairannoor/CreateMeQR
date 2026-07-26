@@ -76,31 +76,31 @@ function LayoutPhone({ qrType = 'phone' }) {
 
       <div className="hq-container">
         <div className="hq-swiss-hero">
-          <h2>{typeName} <br/>{t.heroTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{typeName} <br/>{t.heroTitle}</h2>
           <p>{t.heroSubtitle}</p>
         </div>
 
         <div className="hq-swiss-grid">
           <div className="hq-swiss-card" style={{ borderTop: '4px solid var(--hq-text)', borderRadius: 0, background: 'transparent' }}>
             <div style={{ fontSize: 48, fontWeight: 900, marginBottom: 24, opacity: 0.1 }}>01</div>
-            <h3 style={{ fontSize: 24, fontWeight: 900, letterSpacing: '-0.02em', marginBottom: 16 }}>{translate('featTools.phone.t1') || t.comp1Title}</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,   marginBottom: 16 }}>{translate('featTools.phone.t1') || t.comp1Title}</h3>
             <p style={{ fontSize: 16, lineHeight: 1.6 }}>{translate('featTools.phone.d1') || t.comp1Desc}</p>
           </div>
           <div className="hq-swiss-card" style={{ borderTop: '4px solid var(--hq-text)', borderRadius: 0, background: 'transparent' }}>
             <div style={{ fontSize: 48, fontWeight: 900, marginBottom: 24, opacity: 0.1 }}>02</div>
-            <h3 style={{ fontSize: 24, fontWeight: 900, letterSpacing: '-0.02em', marginBottom: 16 }}>{translate('featTools.phone.t2') || t.comp2Title}</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,   marginBottom: 16 }}>{translate('featTools.phone.t2') || t.comp2Title}</h3>
             <p style={{ fontSize: 16, lineHeight: 1.6 }}>{translate('featTools.phone.d2') || t.comp2Desc}</p>
           </div>
           <div className="hq-swiss-card" style={{ borderTop: '4px solid var(--hq-text)', borderRadius: 0, background: 'transparent' }}>
             <div style={{ fontSize: 48, fontWeight: 900, marginBottom: 24, opacity: 0.1 }}>03</div>
-            <h3 style={{ fontSize: 24, fontWeight: 900, letterSpacing: '-0.02em', marginBottom: 16 }}>{translate('featTools.phone.t3') || t.comp3Title}</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,   marginBottom: 16 }}>{translate('featTools.phone.t3') || t.comp3Title}</h3>
             <p style={{ fontSize: 16, lineHeight: 1.6 }}>{translate('featTools.phone.d3') || t.comp3Desc}</p>
           </div>
         </div>
 
         <div className="hq-swiss-steps">
           <div style={{ display: 'flex', alignItems: 'center', gap: 24, marginBottom: 40 }}>
-            <h2 style={{ fontSize: 40, fontWeight: 900 }}>{t.stepsTitle}</h2>
+            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 40 }}>{t.stepsTitle}</h2>
             <ArrowRight size={40} />
           </div>
           {[
@@ -119,7 +119,7 @@ function LayoutPhone({ qrType = 'phone' }) {
 
       <div style={{ background: 'var(--hq-text)', color: 'var(--hq-bg)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 1000 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 'clamp(40px, 6vw, 64px)', fontWeight: 900, marginBottom: 60, letterSpacing: '-0.04em' }}>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(40px, 6vw, 64px)',  marginBottom: 60 }}>
             {t.faqTitle}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

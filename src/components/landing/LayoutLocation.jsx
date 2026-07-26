@@ -110,30 +110,30 @@ function LayoutLocation({ qrType = 'location' }) {
             <div className="hq-radar-circle" />
             <div className="hq-radar-pin"><MapPin size={48} /></div>
           </div>
-          <h2>{t.heroTitle} <br/>{typeName}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>{typeName}</h2>
           <p>{t.heroSubtitle}</p>
         </div>
 
         <div className="hq-map-cards">
           <div className="hq-map-card" style={{ background: 'var(--hq-bg)', border: '1px solid var(--hq-border)', padding: 32, borderRadius: 24, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
             <div style={{ color: 'var(--hq-accent)', background: 'var(--hq-accent-glow)', width: 64, height: 64, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ShieldCheck size={32} /></div>
-            <h3>{translate('featTools.location.t1') || t.comp1Title}</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.location.t1') || t.comp1Title}</h3>
             <p>{translate('featTools.location.d1') || t.comp1Desc}</p>
           </div>
           <div className="hq-map-card" style={{ background: 'var(--hq-bg)', border: '1px solid var(--hq-border)', padding: 32, borderRadius: 24, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
             <div style={{ color: 'var(--hq-accent)', background: 'var(--hq-accent-glow)', width: 64, height: 64, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Zap size={32} /></div>
-            <h3>{translate('featTools.location.t2') || t.comp2Title}</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.location.t2') || t.comp2Title}</h3>
             <p>{translate('featTools.location.d2') || t.comp2Desc}</p>
           </div>
           <div className="hq-map-card" style={{ background: 'var(--hq-bg)', border: '1px solid var(--hq-border)', padding: 32, borderRadius: 24, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
             <div style={{ color: 'var(--hq-accent)', background: 'var(--hq-accent-glow)', width: 64, height: 64, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Lock size={32} /></div>
-            <h3>{translate('featTools.location.t3') || t.comp3Title}</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.location.t3') || t.comp3Title}</h3>
             <p>{translate('featTools.location.d3') || t.comp3Desc}</p>
           </div>
         </div>
 
         <div style={{ textAlign: 'center', marginBottom: 60 }}>
-          <h2 style={{ fontSize: 'clamp(32px, 4vw, 48px)', fontWeight: 900 }}>{t.stepsTitle} {typeName}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(32px, 4vw, 48px)' }}>{t.stepsTitle} {typeName}</h2>
         </div>
 
         <div className="hq-step-list">
@@ -154,7 +154,7 @@ function LayoutLocation({ qrType = 'location' }) {
 
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

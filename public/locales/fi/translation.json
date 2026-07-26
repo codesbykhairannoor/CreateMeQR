@@ -930,5 +930,193 @@
       "t3": "Cloud Drive -yhteensopiva",
       "d3": "Liitä linkkejä Google Drivesta, Dropboxista tai OneDrivesta jakaaksesi saumatonta pilvitiedostojen jakamista."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "Tietoja meistä",
+        "subtitle": "Vahvistaa maailmanlaajuisia yhteyksiä saumattoman QR-tekniikan avulla.",
+        "desc": "Rakensimme tämän alustan yksinkertaistaaksemme tapaa, jolla maailma jakaa tietoja. Nopea, luotettava ja täysin yksityinen."
+      },
+      "mission": {
+        "title": "Tehtävämme",
+        "desc": "Tarjotakseen ensiluokkaisen, yksityisyyttä huomioivan QR-koodigeneraattorin, joka ei seuraa tietojasi tai lukitse koodeja maksumuurin taakse."
+      },
+      "values": {
+        "title": "Perusarvot",
+        "v1": "Yksityisyys ensin",
+        "d1": "Asiakaspuolen luonti tarkoittaa, että tietosi eivät koskaan koske palvelimiimme.",
+        "v2": "Ilmainen ikuisesti",
+        "d2": "Ydinominaisuudet pysyvät aina ilmaisina ilman piilotettuja rajoja.",
+        "v3": "Maailmanlaajuinen kattavuus",
+        "d3": "Lokalisoitu 30 kielelle palvelemaan aidosti kansainvälistä yleisöä."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Tietosuojakäytäntö",
+        "subtitle": "Tietosi ovat sinun. Pidämme sen sellaisena."
+      },
+      "sections": {
+        "s1": "Tiedonkeruu",
+        "d1": "Emme kerää tai tallenna QR-koodigeneraattoriin syöttämiäsi tietoja. Kaikki sukupolvet tapahtuvat paikallisesti laitteellasi.",
+        "s2": "Evästeet & Analytics",
+        "d2": "Käytämme minimaalista analytiikkaa ymmärtääksemme koottuja liikennemalleja. Henkilökohtaisia ​​tunnistetietoja ei seurata.",
+        "s3": "Kolmannen osapuolen palvelut",
+        "d3": "Emme myy, vuokraa tai jaa tietojasi kolmansille osapuolille."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Palveluehdot",
+        "subtitle": "Tiesäännöt alustamme käyttöön."
+      },
+      "sections": {
+        "s1": "Hyväksyttävä käyttö",
+        "d1": "Suostut olemaan käyttämättä generaattoriamme haitalliseen, laittomaan tai haitalliseen sisältöön linkittävien QR-koodien luomiseen.",
+        "s2": "Palvelun saatavuus",
+        "d2": "Pyrimme 99,9 %:n käyttöasteeseen, mutta tarjoamme palvelun sellaisenaan ilman takuita.",
+        "s3": "Immateriaaliomaisuus",
+        "d3": "Säilytät kaikki oikeudet luomaasi sisältöön. Alustakoodi ja suunnittelu kuuluvat meille."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "Miksi valita meidät?",
+        "subtitle": "Katso, kuinka pärjäämme kilpailijoita vastaan."
+      },
+      "metrics": {
+        "title": "Ominaisuus",
+        "m1": "Hinnoittelu",
+        "us1": "100 % ilmainen",
+        "them1": "15 dollaria/kk",
+        "m2": "Yksityisyys",
+        "us2": "Asiakaspuoli (ei seurantaa)",
+        "them2": "Palvelinpuolen tiedonkeruu",
+        "m3": "Vesileimat",
+        "us3": "Ei mitään",
+        "them3": "Pakotetut vesileimat ilmaisissa suunnitelmissa",
+        "m4": "Vanheneminen",
+        "us4": "Koodit eivät vanhene koskaan",
+        "them4": "Vanhenee 14 päivän kuluttua",
+        "m5": "Kielet",
+        "us5": "30 tuettua kieltä",
+        "them5": "Vain englanti"
+      }
+    },
+    "nav": {
+      "about": "Tietoja meistä",
+      "privacy": "Tietosuojakäytäntö",
+      "terms": "Palveluehdot",
+      "compare": "Vertaa"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "Cyber ​​Scanner V1",
+      "title": "Välitön",
+      "titleHighlight": "QR-skanneri",
+      "desc": "Skannaa verkkokamerasta tai lähetä kuva. 100 % yksityistä, nolla dataa lähetetään palvelimillemme."
+    },
+    "workspace": {
+      "initCam": "Alusta kamera",
+      "initCamDesc": "Skannaa QR-koodi laitteesi kameralla",
+      "startBtn": "Aloita skannaus",
+      "cancelBtn": "Peruuta",
+      "successTitle": "Skannaus onnistui",
+      "scanAnother": "Skannaa toinen koodi",
+      "orUpload": "Tai lataa kuva",
+      "uploadBtn": "Lataa QR-kuvatiedosto",
+      "decodedResult": "Dekoodattu tulos",
+      "copyBtn": "Kopioi tiedot",
+      "copied": "Kopioitu!",
+      "openLink": "Avaa linkki",
+      "notLink": "Ei linkki",
+      "waiting": "Odotetaan skannausta...",
+      "waitingDesc": "Osoita kamerallasi QR-koodia tai lataa kuva.",
+      "errCam": "Kameran käynnistys epäonnistui. Varmista, että olet myöntänyt kameran käyttöoikeudet.",
+      "errImg": "Kuvasta ei löytynyt QR-koodia. Kokeile toista kuvaa."
+    },
+    "features": {
+      "whyTitle": "Miksi käyttää skanneria?",
+      "noAppTitle": "Ei sovellusta",
+      "noAppDesc": "Skannaa QR-koodit suoraan selaimesta lataamatta turvonneita sovelluksia. Toimii täydellisesti iOS:ssä, Androidissa ja Desktopissa.",
+      "secureTitle": "100 % suojattu ja yksityinen",
+      "secureDesc": "Kuvasi ja kameran syöte käsitellään kokonaan laitteellasi. Emme koskaan lähetä skannaustietojasi ulkoisille palvelimille.",
+      "fastTitle": "Salamannopeasti",
+      "fastDesc": "Optimoitu WASM-moottori purkaa monimutkaiset QR-koodit välittömästi, jopa heikossa valaistuksessa tai epäselvillä kameroilla.",
+      "moreTitle": "Enemmän kuin pelkät URL-osoitteet.",
+      "moreDesc": "Edistyksellinen skannerimme tunnistaa välittömästi erilaisia ​​hyötykuormatyyppejä. Se ei vain lue tekstiä, se ymmärtää kontekstin.",
+      "moreList1": "WiFi-tunnistetietojen jäsentäminen",
+      "moreList2": "vCard Yhteystiedot Tuo",
+      "moreList3": "Kryptoosoitteet",
+      "formatTitle": "Universal Format Support",
+      "formatDesc": "Lataa kuva, joka sisältää minkä tahansa näistä 2D-viivakoodeista, niin puramme sen välittömästi suoraan selaimessasi."
+    },
+    "seo": {
+      "title": "Ilmainen QR-koodinlukija verkossa - Skannaa QR-koodi heti",
+      "desc": "Skannaa QR-koodit välittömästi kamerallasi tai lataamalla kuva. 100 % turvallinen, yksityinen ja asiakaspuolen käsittely."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Ammattimaiset viivakoodityökalut",
+      "title": "Luo",
+      "titleHighlight": "Viivakoodit",
+      "titleSuffix": "Välittömästi",
+      "desc": "Luo laadukkaita varastotunnisteita, lähetystarroja ja vähittäismyyntikoodeja sekunneissa."
+    },
+    "workspace": {
+      "dataTitle": "Viivakooditiedot",
+      "contentLabel": "Viivakoodisisältö",
+      "contentPlaceholder": "Syötä numeroita tai tekstiä...",
+      "formatLabel": "Viivakoodin standardi / muoto",
+      "visualTitle": "Visuaalinen viritys",
+      "widthLabel": "Tangon leveys",
+      "heightLabel": "Tangon korkeus",
+      "lineColor": "Viivan väri",
+      "bgColor": "Taustaväri",
+      "showText": "Näytä tekstin arvo koodin alla",
+      "liveOutput": "Live-lähtö",
+      "enterData": "Syötä tiedot luodaksesi",
+      "download": "Lataa High-Res PNG"
+    },
+    "features": {
+      "standardsTitle": "Tuetut viivakoodimuodot",
+      "standardsDesc": "Valitse alallesi oikea standardi. Vähittäiskaupan kassalta varastologistiikkaan.",
+      "c128Desc": "Erittäin kompakti ja monipuolinen. Tukee koko ASCII-merkistöä. Ihanteellinen yleiseen varastoon ja sisäisiin seurantajärjestelmiin.",
+      "itf14Desc": "Suunniteltu pakkaustasoille, kuten laatikoille tai lavoille. Käyttää paksuja reunoja parantaakseen aaltopahvin skannaustarkkuutta.",
+      "upcDesc": "Maailmanlaajuinen standardi vähittäismyyntipisteissä. EAN-13 on käytössä maailmanlaajuisesti, kun taas UPC-A on vakiona Pohjois-Amerikassa.",
+      "mfgTitle": "Rakennettu tuotantoa ja logistiikkaa varten",
+      "mfgDesc": "Generaattorimme luo teräviä, pikselin täydellisiä PNG-tiedostoja, jotka skaalautuvat kauniisti tulostettaviksi. Emme käytä sumeita rasterikuvia – koneemme renderöi puhtaan SVG-matematiikan ennen kuin muuntaa sen korkearesoluutioisiksi PNG-latauksiksi.",
+      "mfgList1": "Absoluuttinen tarkkuus: Ei epäselviä reunoja.",
+      "mfgList2": "Mukautettu pehmuste: Turvalliset vyöhykkeet lämpötulostimille.",
+      "mfgList3": "100 % ilmainen: Ei tilauksia perussukupolvelle.",
+      "mfgBadge": "Tehdasvalmis",
+      "mfgBadgeDesc": "Korkea kontrasti laserskannereille",
+      "ecoTitle": "Täydellinen verkkokauppaan ja vähittäiskauppaan",
+      "ecoDesc": "Olitpa listaamassa uutta tuotetta Amazonissa (FBA) tai perustamassa omaa Shopify-myymälää, UPC- ja EAN-koodien luominen vaaditaan maailmanlaajuista jakelua varten.",
+      "btnUpc": "Luo UPC-koodi nyt",
+      "btnEan": "Luo EAN-13-koodi nyt"
+    },
+    "seo": {
+      "title": "Ilmainen viivakoodigeneraattori verkossa - Luo 1D-viivakoodeja",
+      "desc": "Luo ammattimaisia ​​1D-viivakoodeja välittömästi. Tuki Code-128:lle, UPC:lle, EAN:lle, ITF-14:lle ja muille. Ilmainen, turvallinen ja valmis ladattavaksi korkearesoluutioisena PNG-muodossa."
+    }
+  },
+  "nav": {
+    "allTools": "Kaikki työkalut",
+    "generatorDesc": "Luo yli 34 QR-tyyppiä",
+    "barcodeDesc": "1D/2D Pro -viivakoodit",
+    "scanDesc": "Lue kamerasta",
+    "catSocial": "Sosiaalinen ja media",
+    "catBusiness": "Liiketoiminta ja linkit",
+    "catFinance": "Rahoitus ja kauppa",
+    "catFiles": "Tiedostot ja tiedot",
+    "catRetail": "Vähittäiskauppa ja tuotteet",
+    "catIndustrial": "Teollisuus & Data",
+    "company": "Yritys",
+    "privacy": "Tietosuojakäytäntö",
+    "terms": "Palveluehdot"
   }
 }

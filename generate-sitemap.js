@@ -45,6 +45,30 @@ for (const tool of toolKeys) {
   }
 }
 
+
+const staticPages = ['/about', '/privacy', '/terms', '/compare', '/barcode-generator', '/scan-qr'];
+for (const page of staticPages) {
+  for (const lang of langCodes) {
+    const langPrefix = lang === 'en' ? '' : `/${lang}`;
+    const url = `${DOMAIN}${langPrefix}${page}`;
+    
+    sitemap += `  <url>\n`;
+    sitemap += `    <loc>${url}</loc>\n`;
+    sitemap += `    <lastmod>${currentDate}</lastmod>\n`;
+    sitemap += `    <changefreq>monthly</changefreq>\n`;
+    sitemap += `    <priority>0.5</priority>\n`;
+    
+    for (const altLang of langCodes) {
+        const altLangPrefix = altLang === 'en' ? '' : `/${altLang}`;
+        const altUrl = `${DOMAIN}${altLangPrefix}${page}`;
+        sitemap += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${altUrl}" />\n`;
+    }
+    
+    sitemap += `    <xhtml:link rel="alternate" hreflang="x-default" href="${DOMAIN}${page}" />\n`;
+    sitemap += `  </url>\n`;
+  }
+}
+
 sitemap += '</urlset>\n';
 
 const publicDir = path.join(__dirname, 'public');
@@ -53,4 +77,4 @@ if (!fs.existsSync(publicDir)) {
 }
 
 fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap, 'utf8');
-console.log('✅ sitemap.xml generated with', toolKeys.length * langCodes.length, 'URLs and perfectly localized hreflang maps.');
+console.log('✅ sitemap.xml generated with', (toolKeys.length + staticPages.length) * langCodes.length, 'URLs and perfectly localized hreflang maps.');

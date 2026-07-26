@@ -930,5 +930,193 @@
       "t3": "Kompatibel dengan Cloud Drive",
       "d3": "Tempel tautan dari Google Drive, Dropbox, atau OneDrive untuk berbagi file cloud dengan lancar."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "Tentang Kami",
+        "subtitle": "Memberdayakan koneksi global melalui teknologi QR yang lancar.",
+        "desc": "Kami membangun platform ini untuk menyederhanakan cara dunia berbagi informasi. Cepat, andal, dan sepenuhnya pribadi."
+      },
+      "mission": {
+        "title": "Misi kami",
+        "desc": "Untuk menyediakan generator kode QR premium yang mengutamakan privasi yang tidak melacak data Anda atau mengunci kode Anda di balik penghalang berbayar."
+      },
+      "values": {
+        "title": "Nilai Inti",
+        "v1": "Privasi Pertama",
+        "d1": "Pembuatan sisi klien berarti data Anda tidak pernah menyentuh server kami.",
+        "v2": "Gratis Selamanya",
+        "d2": "Fitur inti akan selalu gratis tanpa batasan tersembunyi.",
+        "v3": "Jangkauan Global",
+        "d3": "Dilokalkan dalam 30 bahasa untuk melayani audiens internasional."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Kebijakan Privasi",
+        "subtitle": "Data Anda adalah milik Anda. Kami tetap seperti itu."
+      },
+      "sections": {
+        "s1": "Pengumpulan Data",
+        "d1": "Kami tidak mengumpulkan atau menyimpan data yang Anda masukkan ke dalam pembuat kode QR. Semua generasi terjadi secara lokal di perangkat Anda.",
+        "s2": "Cookie & Analisis",
+        "d2": "Kami menggunakan analisis minimal untuk memahami pola lalu lintas gabungan. Tidak ada informasi identitas pribadi yang dilacak.",
+        "s3": "Layanan Pihak Ketiga",
+        "d3": "Kami tidak menjual, menyewakan, atau membagikan data Anda dengan pihak ketiga mana pun."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Ketentuan Layanan",
+        "subtitle": "Aturan jalan untuk menggunakan platform kami."
+      },
+      "sections": {
+        "s1": "Penggunaan yang Dapat Diterima",
+        "d1": "Anda setuju untuk tidak menggunakan generator kami untuk membuat kode QR yang tertaut ke konten jahat, ilegal, atau berbahaya.",
+        "s2": "Ketersediaan Layanan",
+        "d2": "Kami mengupayakan uptime 99,9% namun memberikan layanan 'sebagaimana adanya' tanpa jaminan.",
+        "s3": "Kekayaan Intelektual",
+        "d3": "Anda memegang semua hak atas konten yang Anda hasilkan. Kode dan desain platform adalah milik kami."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "Mengapa Memilih Kami?",
+        "subtitle": "Lihat bagaimana kami menghadapi persaingan."
+      },
+      "metrics": {
+        "title": "Fitur",
+        "m1": "Harga",
+        "us1": "100% Gratis",
+        "them1": "$15/bulan",
+        "m2": "Privasi",
+        "us2": "Sisi Klien (Tanpa Pelacakan)",
+        "them2": "Pengambilan Data Sisi Server",
+        "m3": "Tanda air",
+        "us3": "Tidak ada",
+        "them3": "Tanda Air Paksa pada Paket Gratis",
+        "m4": "Kedaluwarsa",
+        "us4": "Kode Tidak Pernah Kedaluwarsa",
+        "them4": "Kedaluwarsa setelah 14 hari",
+        "m5": "Bahasa",
+        "us5": "30 Bahasa Didukung",
+        "them5": "Hanya dalam Bahasa Inggris"
+      }
+    },
+    "nav": {
+      "about": "Tentang Kami",
+      "privacy": "Kebijakan Privasi",
+      "terms": "Ketentuan Layanan",
+      "compare": "Membandingkan"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "Pemindai Dunia Maya V1",
+      "title": "Instan",
+      "titleHighlight": "Pemindai QR",
+      "desc": "Pindai dari webcam Anda atau unggah gambar. 100% pribadi, tidak ada data yang dikirim ke server kami."
+    },
+    "workspace": {
+      "initCam": "Inisialisasi Kamera",
+      "initCamDesc": "Pindai kode QR menggunakan kamera perangkat Anda",
+      "startBtn": "Mulai Memindai",
+      "cancelBtn": "Batalkan",
+      "successTitle": "Pemindaian Berhasil",
+      "scanAnother": "Pindai Kode Lain",
+      "orUpload": "Atau unggah gambar",
+      "uploadBtn": "Unggah File Gambar QR",
+      "decodedResult": "Hasil yang Didekodekan",
+      "copyBtn": "Salin Data",
+      "copied": "Disalin!",
+      "openLink": "Buka Tautan",
+      "notLink": "Bukan tautan",
+      "waiting": "Menunggu pemindaian...",
+      "waitingDesc": "Arahkan kamera Anda ke kode QR atau unggah gambar.",
+      "errCam": "Gagal memulai kamera. Harap pastikan Anda telah memberikan izin kamera.",
+      "errImg": "Tidak ada kode QR yang ditemukan pada gambar. Silakan coba gambar lain."
+    },
+    "features": {
+      "whyTitle": "Mengapa menggunakan Pemindai kami?",
+      "noAppTitle": "Tidak Perlu Aplikasi",
+      "noAppDesc": "Pindai kode QR langsung dari browser Anda tanpa mengunduh aplikasi apa pun yang membengkak. Berfungsi sempurna di iOS, Android, dan Desktop.",
+      "secureTitle": "100% Aman & Pribadi",
+      "secureDesc": "Gambar dan umpan kamera Anda diproses seluruhnya di perangkat Anda. Kami tidak pernah mengirimkan data pindaian Anda ke server eksternal mana pun.",
+      "fastTitle": "Secepat Kilat",
+      "fastDesc": "Mesin WASM yang dioptimalkan menerjemahkan kode QR kompleks secara instan, bahkan dalam kondisi cahaya redup atau dengan kamera buram.",
+      "moreTitle": "Lebih Dari Sekadar URL.",
+      "moreDesc": "Pemindai canggih kami langsung mengenali berbagai jenis muatan. Tidak sekedar membaca teks, namun memahami konteksnya.",
+      "moreList1": "Penguraian Kredensial WiFi",
+      "moreList2": "Impor Kontak vCard",
+      "moreList3": "Alamat Kripto",
+      "formatTitle": "Dukungan Format Universal",
+      "formatDesc": "Unggah gambar yang berisi salah satu kode batang 2D ini, dan kami akan langsung memecahkan kodenya langsung di browser Anda."
+    },
+    "seo": {
+      "title": "Pemindai Kode QR Online Gratis - Pindai QR Seketika",
+      "desc": "Pindai kode QR secara instan menggunakan kamera Anda atau dengan mengunggah gambar. Pemrosesan 100% aman, pribadi, dan sisi klien."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Alat Barcode Profesional",
+      "title": "Hasilkan",
+      "titleHighlight": "Barcode",
+      "titleSuffix": "Seketika",
+      "desc": "Buat tag inventaris, label pengiriman, dan kode ritel berkualitas tinggi dalam hitungan detik."
+    },
+    "workspace": {
+      "dataTitle": "Data Kode Batang",
+      "contentLabel": "Konten Barcode",
+      "contentPlaceholder": "Masukkan angka atau teks...",
+      "formatLabel": "Standar / Format Barcode",
+      "visualTitle": "Penyetelan Visual",
+      "widthLabel": "Lebar Batang",
+      "heightLabel": "Tinggi Batang",
+      "lineColor": "Warna Garis",
+      "bgColor": "Warna Latar Belakang",
+      "showText": "Tampilkan Nilai Teks Di Bawah Kode",
+      "liveOutput": "Keluaran Langsung",
+      "enterData": "Masukkan data untuk menghasilkan",
+      "download": "Unduh PNG Resolusi Tinggi"
+    },
+    "features": {
+      "standardsTitle": "Format Kode Batang yang Didukung",
+      "standardsDesc": "Pilih standar yang tepat untuk industri Anda. Dari pembayaran ritel hingga logistik gudang.",
+      "c128Desc": "Sangat kompak dan serbaguna. Mendukung rangkaian karakter ASCII lengkap. Ideal untuk inventaris umum dan sistem pelacakan internal.",
+      "itf14Desc": "Dirancang untuk tingkat pengemasan seperti karton atau palet. Menggunakan pembatas tebal untuk meningkatkan akurasi pemindaian pada karton bergelombang.",
+      "upcDesc": "Standar global untuk ritel point-of-sale. EAN-13 digunakan di seluruh dunia, sedangkan UPC-A merupakan standar di Amerika Utara.",
+      "mfgTitle": "Dibangun untuk Produksi & Logistik",
+      "mfgDesc": "Generator kami menghasilkan file PNG yang tajam dan sempurna dengan piksel yang dapat diskalakan dengan indah untuk dicetak. Kami tidak menggunakan gambar raster fuzzy—mesin kami merender matematika SVG murni sebelum mengonversinya menjadi unduhan PNG beresolusi tinggi.",
+      "mfgList1": "Presisi Mutlak: Tidak ada tepi yang buram.",
+      "mfgList2": "Padding Khusus: Zona aman untuk printer thermal.",
+      "mfgList3": "100% Gratis: Tidak ada langganan untuk generasi dasar.",
+      "mfgBadge": "Siap Pabrik",
+      "mfgBadgeDesc": "Kontras tinggi untuk pemindai laser",
+      "ecoTitle": "Sempurna untuk E-Commerce & Ritel",
+      "ecoDesc": "Baik Anda mencantumkan produk baru di Amazon (FBA) atau menyiapkan etalase Shopify Anda sendiri, pembuatan kode UPC dan EAN diperlukan untuk distribusi global.",
+      "btnUpc": "Hasilkan Kode UPC Sekarang",
+      "btnEan": "Hasilkan Kode EAN-13 Sekarang"
+    },
+    "seo": {
+      "title": "Generator Barcode Online Gratis - Membuat Barcode 1D",
+      "desc": "Hasilkan kode batang 1D profesional secara instan. Dukungan untuk Kode-128, UPC, EAN, ITF-14, dan banyak lagi. Gratis, aman, dan siap diunduh dalam format PNG resolusi tinggi."
+    }
+  },
+  "nav": {
+    "allTools": "Semua Alat",
+    "generatorDesc": "Buat 34+ Jenis QR",
+    "barcodeDesc": "Kode Batang Pro 1D/2D",
+    "scanDesc": "Baca dari Kamera",
+    "catSocial": "Sosial & Media",
+    "catBusiness": "Bisnis & Tautan",
+    "catFinance": "Keuangan & Toko",
+    "catFiles": "File & Data",
+    "catRetail": "Ritel & Produk",
+    "catIndustrial": "Industri & Data",
+    "company": "Perusahaan",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Ketentuan Layanan"
   }
 }

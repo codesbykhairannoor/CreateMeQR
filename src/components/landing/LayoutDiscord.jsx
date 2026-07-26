@@ -114,28 +114,28 @@ function LayoutDiscord({ qrType = 'discord' }) {
               <div className="hq-dc-card" style={{ background: '#2f3136', border: '1px solid #202225', borderRadius: 8, padding: 24 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
                   <div style={{ background: '#5865F2', padding: 8, borderRadius: '50%', color: 'white' }}><ShieldCheck size={20} /></div>
-                  <h3 style={{ margin: 0, fontSize: 16, fontWeight: 600, color: 'white' }}>{translate('featTools.discord.t1') || t.comp1Title}</h3>
+                  <h3 className="font-bold tracking-tighter" style={{ margin: 0, fontSize: 16,  color: 'white' }}>{translate('featTools.discord.t1') || t.comp1Title}</h3>
                 </div>
                 <p style={{ fontSize: 14, lineHeight: 1.5, color: '#dcddde', margin: 0 }}>{translate('featTools.discord.d1') || t.comp1Desc}</p>
               </div>
               <div className="hq-dc-card" style={{ background: '#2f3136', border: '1px solid #202225', borderRadius: 8, padding: 24 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
                   <div style={{ background: '#5865F2', padding: 8, borderRadius: '50%', color: 'white' }}><Zap size={20} /></div>
-                  <h3 style={{ margin: 0, fontSize: 16, fontWeight: 600, color: 'white' }}>{translate('featTools.discord.t2') || t.comp2Title}</h3>
+                  <h3 className="font-bold tracking-tighter" style={{ margin: 0, fontSize: 16,  color: 'white' }}>{translate('featTools.discord.t2') || t.comp2Title}</h3>
                 </div>
                 <p style={{ fontSize: 14, lineHeight: 1.5, color: '#dcddde', margin: 0 }}>{translate('featTools.discord.d2') || t.comp2Desc}</p>
               </div>
               <div className="hq-dc-card" style={{ background: '#2f3136', border: '1px solid #202225', borderRadius: 8, padding: 24 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
                   <div style={{ background: '#5865F2', padding: 8, borderRadius: '50%', color: 'white' }}><Lock size={20} /></div>
-                  <h3 style={{ margin: 0, fontSize: 16, fontWeight: 600, color: 'white' }}>{translate('featTools.discord.t3') || t.comp3Title}</h3>
+                  <h3 className="font-bold tracking-tighter" style={{ margin: 0, fontSize: 16,  color: 'white' }}>{translate('featTools.discord.t3') || t.comp3Title}</h3>
                 </div>
                 <p style={{ fontSize: 14, lineHeight: 1.5, color: '#dcddde', margin: 0 }}>{translate('featTools.discord.d3') || t.comp3Desc}</p>
               </div>
             </div>
             
             <div style={{ marginTop: 80, borderTop: '1px solid var(--hq-border)', paddingTop: 40 }}>
-              <h2 style={{ paddingTop: 120, fontSize: 24, fontWeight: 700, color: 'white', marginBottom: 24 }}>{t.faqTitle}</h2>
+              <h2 className="font-bold tracking-tighter" style={{ paddingTop: 120, fontSize: 24,  color: 'white', marginBottom: 24 }}>{t.faqTitle}</h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.discord.q${num}`);

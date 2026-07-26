@@ -930,5 +930,193 @@
       "t3": "Cloud Drive kompatibilis",
       "d3": "Illesszen be linkeket a Google Drive-ból, a Dropboxból vagy a OneDrive-ból a zökkenőmentes felhőalapú fájlmegosztáshoz."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "Rólunk",
+        "subtitle": "Globális kapcsolatok megerősítése zökkenőmentes QR-technológiával.",
+        "desc": "Ezt a platformot azért hoztuk létre, hogy leegyszerűsítsük a világ információmegosztását. Gyors, megbízható és teljesen privát."
+      },
+      "mission": {
+        "title": "Küldetésünk",
+        "desc": "Prémium minőségű, az adatvédelemmel foglalkozó QR-kód generátor biztosítása, amely nem követi nyomon az adatait, és nem zárolja kódjait a fizetőfalak mögött."
+      },
+      "values": {
+        "title": "Alapvető értékek",
+        "v1": "Első az adatvédelem",
+        "d1": "Az ügyféloldali generálás azt jelenti, hogy az adatok soha nem érintik a szervereinket.",
+        "v2": "Ingyenes Forever",
+        "d2": "Az alapvető funkciók mindig ingyenesek maradnak, rejtett korlátok nélkül.",
+        "v3": "Global Reach",
+        "d3": "30 nyelvre lokalizálva, hogy valóban nemzetközi közönséget szolgáljon ki."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Adatvédelmi szabályzat",
+        "subtitle": "Az Ön adatai a tiéd. Mi így tartjuk."
+      },
+      "sections": {
+        "s1": "Adatgyűjtés",
+        "d1": "Nem gyűjtjük és nem tároljuk a QR kód generátorba bevitt adatokat. Minden generálás helyben történik az eszközön.",
+        "s2": "Cookie-k és elemzések",
+        "d2": "Minimális elemzést használunk az összesített forgalmi minták megértéséhez. A személyazonosításra alkalmas adatokat nem követik nyomon.",
+        "s3": "Harmadik féltől származó szolgáltatások",
+        "d3": "Adatait nem adjuk el, nem adjuk bérbe és nem osztjuk meg harmadik féllel."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Szolgáltatási feltételek",
+        "subtitle": "Platformunk használatára vonatkozó közlekedési szabályok."
+      },
+      "sections": {
+        "s1": "Elfogadható használat",
+        "d1": "Ön beleegyezik, hogy nem használja generátorunkat rosszindulatú, illegális vagy káros tartalomra mutató QR-kódok létrehozására.",
+        "s2": "Szolgáltatás elérhetősége",
+        "d2": "99,9%-os rendelkezésre állásra törekszünk, de a szolgáltatást „ahogy van”, garancia nélkül nyújtjuk.",
+        "s3": "Szellemi tulajdon",
+        "d3": "Ön fenntart minden jogot az Ön által generált tartalomhoz. A platform kódja és kialakítása a miénk."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "Miért válassz minket?",
+        "subtitle": "Nézze meg, hogyan állunk fel a versenytársakkal szemben."
+      },
+      "metrics": {
+        "title": "Funkció",
+        "m1": "Árképzés",
+        "us1": "100% ingyenes",
+        "them1": "15 dollár/hó",
+        "m2": "Adatvédelem",
+        "us2": "Ügyféloldali (nincs követés)",
+        "them2": "Szerveroldali adatgyűjtés",
+        "m3": "Vízjelek",
+        "us3": "Egyik sem",
+        "them3": "Kényszerített vízjelek ingyenes terveken",
+        "m4": "Lejárat",
+        "us4": "A kódok soha nem járnak le",
+        "them4": "14 nap múlva lejár",
+        "m5": "Nyelvek",
+        "us5": "30 támogatott nyelv",
+        "them5": "Csak angol nyelven"
+      }
+    },
+    "nav": {
+      "about": "Rólunk",
+      "privacy": "Adatvédelmi szabályzat",
+      "terms": "Szolgáltatási feltételek",
+      "compare": "Hasonlítsa össze"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "Cyber ​​Scanner V1",
+      "title": "Azonnali",
+      "titleHighlight": "QR-szkenner",
+      "desc": "Szkennelje be webkamerájáról, vagy töltsön fel képet. 100%-ban privát, nulla adatot küldünk szervereinkre."
+    },
+    "workspace": {
+      "initCam": "A kamera inicializálása",
+      "initCamDesc": "Olvasson be QR-kódot eszköze kamerájával",
+      "startBtn": "Szkennelés indítása",
+      "cancelBtn": "Mégse",
+      "successTitle": "A beolvasás sikeres",
+      "scanAnother": "Másik kód beolvasása",
+      "orUpload": "Vagy tölts fel egy képet",
+      "uploadBtn": "QR-képfájl feltöltése",
+      "decodedResult": "Dekódolt eredmény",
+      "copyBtn": "Adatok másolása",
+      "copied": "Másolva!",
+      "openLink": "Link megnyitása",
+      "notLink": "Nem link",
+      "waiting": "Várakozás a beolvasásra...",
+      "waitingDesc": "Irányítsa kameráját egy QR-kódra, vagy töltsön fel egy képet.",
+      "errCam": "Nem sikerült elindítani a kamerát. Kérjük, győződjön meg róla, hogy megadta a kameraengedélyeket.",
+      "errImg": "A képen nem található QR kód. Kérjük, próbálkozzon másik képpel."
+    },
+    "features": {
+      "whyTitle": "Miért használja a szkennerünket?",
+      "noAppTitle": "Nincs szükség alkalmazásra",
+      "noAppDesc": "Olvassa be a QR-kódokat közvetlenül a böngészőből anélkül, hogy letöltene felduzzadt alkalmazásokat. Tökéletesen működik iOS, Android és asztali számítógépen.",
+      "secureTitle": "100%-ban biztonságos és privát",
+      "secureDesc": "A képeket és a kamera feedjét teljes egészében az eszközön dolgozzák fel. A szkennelt adatokat soha nem küldjük el semmilyen külső szerverre.",
+      "fastTitle": "Villámgyors",
+      "fastDesc": "Az optimalizált WASM motor azonnal dekódolja az összetett QR-kódokat, még gyenge fényviszonyok mellett vagy homályos kamerák esetén is.",
+      "moreTitle": "Több, mint egyszerű URL-ek.",
+      "moreDesc": "Fejlett szkennerünk azonnal felismeri a különféle rakománytípusokat. Nemcsak elolvassa a szöveget, megérti a szövegkörnyezetet is.",
+      "moreList1": "WiFi hitelesítő adatok elemzése",
+      "moreList2": "vCard Contact Import",
+      "moreList3": "Kriptocímek",
+      "formatTitle": "Univerzális formátum támogatás",
+      "formatDesc": "Töltsön fel egy képet, amely ezen 2D vonalkódok bármelyikét tartalmazza, és mi azonnal dekódoljuk közvetlenül a böngészőjében."
+    },
+    "seo": {
+      "title": "Ingyenes QR-kód olvasó online - QR-kód azonnali beolvasása",
+      "desc": "A QR-kódok azonnali beolvasása kamerája vagy kép feltöltésével. 100%-ban biztonságos, privát és ügyféloldali feldolgozás."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Professzionális vonalkód eszközök",
+      "title": "",
+      "titleHighlight": "Vonalkódok",
+      "titleSuffix": "Azonnal",
+      "desc": "Hozzon létre kiváló minőségű készletcímkéket, szállítási címkéket és kiskereskedelmi kódokat másodpercek alatt."
+    },
+    "workspace": {
+      "dataTitle": "Vonalkód adatok",
+      "contentLabel": "Vonalkód tartalom",
+      "contentPlaceholder": "Írjon be számokat vagy szöveget...",
+      "formatLabel": "Szabványos vonalkód / formátum",
+      "visualTitle": "Vizuális hangolás",
+      "widthLabel": "Rúd szélessége",
+      "heightLabel": "Rúd magassága",
+      "lineColor": "Vonal színe",
+      "bgColor": "Háttérszín",
+      "showText": "Szövegérték megjelenítése a kód alatt",
+      "liveOutput": "Élő kimenet",
+      "enterData": "Adja meg a generálandó adatokat",
+      "download": "Nagy felbontású PNG letöltése"
+    },
+    "features": {
+      "standardsTitle": "Támogatott vonalkód formátumok",
+      "standardsDesc": "Válassza ki az iparágának megfelelő szabványt. A kiskereskedelmi pénztártól a raktári logisztikáig.",
+      "c128Desc": "Rendkívül kompakt és sokoldalú. Támogatja a teljes ASCII karakterkészletet. Ideális általános leltárhoz és belső nyomkövető rendszerekhez.",
+      "itf14Desc": "Csomagolási szintek, például kartondobozok vagy raklapok számára készült. Vastag szegélyekkel javítja a szkennelési pontosságot hullámkartonon.",
+      "upcDesc": "Az értékesítési pontok kiskereskedelmének globális szabványa. Az EAN-13 világszerte használatos, míg az UPC-A szabvány Észak-Amerikában.",
+      "mfgTitle": "Gyártás és logisztika számára készült",
+      "mfgDesc": "Generátorunk éles, pixel-tökéletes PNG-fájlokat hoz létre, amelyek gyönyörűen méretezhetők a nyomtatáshoz. Nem használunk homályos raszteres képeket – motorunk tiszta SVG matematikát jelenít meg, mielőtt nagy felbontású PNG-letöltésekké konvertálja.",
+      "mfgList1": "Abszolút pontosság: nincsenek elmosódott élek.",
+      "mfgList2": "Egyedi padding: Biztonságos zónák a hőnyomtatókhoz.",
+      "mfgList3": "100% ingyenes: nincs előfizetés az alapgenerációhoz.",
+      "mfgBadge": "Készen áll a gyárra",
+      "mfgBadgeDesc": "Nagy kontraszt lézerszkennerekhez",
+      "ecoTitle": "Tökéletes e-kereskedelemhez és kiskereskedelemhez",
+      "ecoDesc": "Akár egy új terméket hirdet az Amazonon (FBA), akár saját Shopify kirakatot állít fel, a globális terjesztéshez UPC- és EAN-kódok generálása szükséges.",
+      "btnUpc": "UPC kód generálása most",
+      "btnEan": "Hozzon létre EAN-13 kódot most"
+    },
+    "seo": {
+      "title": "Ingyenes vonalkódgenerátor online – 1D vonalkódok létrehozása",
+      "desc": "Azonnal generál professzionális 1D vonalkódokat. A Code-128, UPC, EAN, ITF-14 és egyebek támogatása. Ingyenes, biztonságos és letöltésre kész nagy felbontású PNG-ben."
+    }
+  },
+  "nav": {
+    "allTools": "Minden eszköz",
+    "generatorDesc": "Hozzon létre 34+ QR-típust",
+    "barcodeDesc": "1D/2D Pro vonalkódok",
+    "scanDesc": "Olvasás a kamerából",
+    "catSocial": "Közösségi és média",
+    "catBusiness": "Üzlet és linkek",
+    "catFinance": "Pénzügy és üzlet",
+    "catFiles": "Fájlok és adatok",
+    "catRetail": "Kiskereskedelem és termékek",
+    "catIndustrial": "Ipari és adatok",
+    "company": "Vállalat",
+    "privacy": "Adatvédelmi szabályzat",
+    "terms": "Szolgáltatási feltételek"
   }
 }

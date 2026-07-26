@@ -930,5 +930,193 @@
       "t3": "Kompatibilní s cloudovým diskem",
       "d3": "Vložte odkazy z Disku Google, Dropbox nebo OneDrive pro bezproblémové sdílení souborů v cloudu."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "O nás",
+        "subtitle": "Posílení globálních spojení prostřednictvím bezproblémové technologie QR.",
+        "desc": "Tuto platformu jsme vytvořili, abychom zjednodušili způsob, jakým svět sdílí informace. Rychlé, spolehlivé a zcela soukromé."
+      },
+      "mission": {
+        "title": "Naše poslání",
+        "desc": "Poskytnout prémiový generátor QR kódů s důrazem na soukromí, který nesleduje vaše data ani nezamyká vaše kódy za paywally."
+      },
+      "values": {
+        "title": "Základní hodnoty",
+        "v1": "Soukromí na prvním místě",
+        "d1": "Generování na straně klienta znamená, že se vaše data nikdy nedotknou našich serverů.",
+        "v2": "Navždy zdarma",
+        "d2": "Základní funkce zůstanou vždy zdarma bez skrytých omezení.",
+        "v3": "Globální dosah",
+        "d3": "Lokalizováno do 30 jazyků, aby sloužilo skutečně mezinárodnímu publiku."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Zásady ochrany osobních údajů",
+        "subtitle": "Vaše data jsou vaše. Držíme to tak."
+      },
+      "sections": {
+        "s1": "Sběr dat",
+        "d1": "Neshromažďujeme ani neukládáme data, která vložíte do generátoru QR kódů. Celá generace probíhá lokálně na vašem zařízení.",
+        "s2": "Soubory cookie a analýzy",
+        "d2": "K pochopení agregovaných vzorců návštěvnosti používáme minimální analýzy. Nejsou sledovány žádné osobně identifikovatelné informace.",
+        "s3": "Služby třetích stran",
+        "d3": "Vaše údaje neprodáváme, nepronajímáme ani nesdílíme s žádnými třetími stranami."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Podmínky služby",
+        "subtitle": "Pravidla silničního provozu pro používání naší platformy."
+      },
+      "sections": {
+        "s1": "Přijatelné použití",
+        "d1": "Souhlasíte s tím, že nebudete používat náš generátor k vytváření QR kódů, které odkazují na škodlivý, nezákonný nebo škodlivý obsah.",
+        "s2": "Dostupnost služby",
+        "d2": "Snažíme se o 99,9% dostupnost, ale službu poskytujeme „tak jak jsou“ bez záruk.",
+        "s3": "Duševní vlastnictví",
+        "d3": "Ponecháváte si všechna práva k obsahu, který vytváříte. Kód a design platformy patří nám."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "Proč si vybrat nás?",
+        "subtitle": "Podívejte se, jak jsme na tom s konkurencí."
+      },
+      "metrics": {
+        "title": "Konečné srovnání",
+        "m1": "Ceny",
+        "us1": "100% zdarma",
+        "them1": "15 $/měsíc",
+        "m2": "Soukromí",
+        "us2": "Na straně klienta (bez sledování)",
+        "them2": "Sběr dat na straně serveru",
+        "m3": "Vodoznaky",
+        "us3": "Žádný",
+        "them3": "Vynucené vodoznaky na volných plánech",
+        "m4": "Vypršení platnosti",
+        "us4": "Platnost kódů nikdy nevyprší",
+        "them4": "Vyprší po 14 dnech",
+        "m5": "Jazyky",
+        "us5": "30 podporovaných jazyků",
+        "them5": "Pouze anglicky"
+      }
+    },
+    "nav": {
+      "about": "O nás",
+      "privacy": "Soukromí",
+      "terms": "Podmínky",
+      "compare": "Porovnejte"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "Cyber ​​Scanner V1",
+      "title": "Okamžitě",
+      "titleHighlight": "QR skener",
+      "desc": "Naskenujte z webové kamery nebo nahrajte obrázek. 100% soukromé, na naše servery se neposílají žádná data."
+    },
+    "workspace": {
+      "initCam": "Inicializovat fotoaparát",
+      "initCamDesc": "Naskenujte QR kód pomocí fotoaparátu vašeho zařízení",
+      "startBtn": "Spustit skenování",
+      "cancelBtn": "Zrušit",
+      "successTitle": "Skenování bylo úspěšné",
+      "scanAnother": "Naskenovat další kód",
+      "orUpload": "Nebo nahrajte obrázek",
+      "uploadBtn": "Nahrát soubor QR obrázku",
+      "decodedResult": "Dekódovaný výsledek",
+      "copyBtn": "Kopírovat data",
+      "copied": "Zkopírováno!",
+      "openLink": "Otevřít odkaz",
+      "notLink": "Není odkaz",
+      "waiting": "Čekání na skenování...",
+      "waitingDesc": "Namiřte fotoaparát na QR kód nebo nahrajte obrázek.",
+      "errCam": "Fotoaparát se nepodařilo spustit. Ujistěte se, že jste udělili oprávnění ke kameře.",
+      "errImg": "Na obrázku nebyl nalezen žádný QR kód. Zkuste prosím jiný obrázek."
+    },
+    "features": {
+      "whyTitle": "Proč používat náš skener?",
+      "noAppTitle": "Není vyžadována žádná aplikace",
+      "noAppDesc": "Skenujte QR kódy přímo z vašeho prohlížeče, aniž byste si stahovali nějaké nabubřelé aplikace. Funguje perfektně na iOS, Android a Desktop.",
+      "secureTitle": "100% bezpečné a soukromé",
+      "secureDesc": "Vaše snímky a zdroj z fotoaparátu jsou zpracovávány výhradně ve vašem zařízení. Vaše skenovaná data nikdy neposíláme na žádné externí servery.",
+      "fastTitle": "Bleskově rychlý",
+      "fastDesc": "Optimalizovaný WASM engine okamžitě dekóduje složité QR kódy, a to i za špatných světelných podmínek nebo s rozmazanými kamerami.",
+      "moreTitle": "Více než jen adresy URL.",
+      "moreDesc": "Náš pokročilý skener okamžitě rozpozná různé typy užitečného zatížení. Nejen čte text, ale chápe kontext.",
+      "moreList1": "Analýza přihlašovacích údajů WiFi",
+      "moreList2": "Kontakt vCard Import",
+      "moreList3": "Krypto adresy",
+      "formatTitle": "Podpora univerzálního formátu",
+      "formatDesc": "Nahrajte obrázek obsahující kterýkoli z těchto 2D čárových kódů a my jej okamžitě dekódujeme přímo ve vašem prohlížeči."
+    },
+    "seo": {
+      "title": "Bezplatný skener QR kódů online – naskenujte QR okamžitě",
+      "desc": "Naskenujte QR kódy okamžitě pomocí fotoaparátu nebo nahráním obrázku. 100% bezpečné, soukromé zpracování na straně klienta."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Profesionální nástroje pro čárové kódy",
+      "title": "Vygenerovat",
+      "titleHighlight": "Čárové kódy",
+      "titleSuffix": "Okamžitě",
+      "desc": "Vytvořte vysoce kvalitní inventární štítky, přepravní štítky a maloobchodní kódy během několika sekund."
+    },
+    "workspace": {
+      "dataTitle": "Údaje čárového kódu",
+      "contentLabel": "Obsah čárového kódu",
+      "contentPlaceholder": "Zadejte čísla nebo text...",
+      "formatLabel": "Čárový kód Standardní / Formát",
+      "visualTitle": "Vizuální ladění",
+      "widthLabel": "Šířka pruhu",
+      "heightLabel": "Výška tyče",
+      "lineColor": "Barva čáry",
+      "bgColor": "Barva pozadí",
+      "showText": "Zobrazit textovou hodnotu pod kódem",
+      "liveOutput": "Živý výstup",
+      "enterData": "Zadejte data pro generování",
+      "download": "Stáhnout PNG ve vysokém rozlišení"
+    },
+    "features": {
+      "standardsTitle": "Podporované formáty čárových kódů",
+      "standardsDesc": "Vyberte si ten správný standard pro vaše odvětví. Od maloobchodní pokladny až po skladovou logistiku.",
+      "c128Desc": "Vysoce kompaktní a univerzální. Podporuje úplnou znakovou sadu ASCII. Ideální pro obecný inventář a interní sledovací systémy.",
+      "itf14Desc": "Navrženo pro úrovně balení, jako jsou kartony nebo palety. Používá silné okraje ke zlepšení přesnosti skenování na vlnité lepenky.",
+      "upcDesc": "Globální standard pro maloobchod v místě prodeje. EAN-13 se používá po celém světě, zatímco UPC-A je standardem v Severní Americe.",
+      "mfgTitle": "Postaveno pro výrobu a logistiku",
+      "mfgDesc": "Náš generátor vytváří ostré soubory PNG s dokonalými pixely, které se krásně škálují pro tisk. Nepoužíváme fuzzy rastrové obrázky – náš engine vykresluje čistou matematiku SVG, než ji převede na stahování PNG ve vysokém rozlišení.",
+      "mfgList1": "Absolutní přesnost: Žádné rozmazané okraje.",
+      "mfgList2": "Custom Padding: Bezpečné zóny pro termální tiskárny.",
+      "mfgList3": "100% zdarma: Žádné předplatné pro základní generaci.",
+      "mfgBadge": "Připraveno z výroby",
+      "mfgBadgeDesc": "Vysoký kontrast pro laserové skenery",
+      "ecoTitle": "Ideální pro elektronický obchod a maloobchod",
+      "ecoDesc": "Ať už uvádíte nový produkt na Amazon (FBA) nebo zakládáte svůj vlastní obchod Shopify, pro globální distribuci je vyžadováno generování kódů UPC a EAN.",
+      "btnUpc": "Vygenerovat UPC kód nyní",
+      "btnEan": "Vygenerujte nyní kód EAN-13"
+    },
+    "seo": {
+      "title": "Bezplatný generátor čárových kódů online - Vytvořte 1D čárové kódy",
+      "desc": "Okamžitě generujte profesionální 1D čárové kódy. Podpora pro Code-128, UPC, EAN, ITF-14 a další. Zdarma, bezpečné a připravené ke stažení ve formátu PNG s vysokým rozlišením."
+    }
+  },
+  "nav": {
+    "allTools": "Všechny nástroje",
+    "generatorDesc": "Vytvořte více než 34 typů QR",
+    "barcodeDesc": "1D/2D Pro čárové kódy",
+    "scanDesc": "Čtení z fotoaparátu",
+    "catSocial": "Sociální sítě a média",
+    "catBusiness": "Obchod a odkazy",
+    "catFinance": "Finance a obchod",
+    "catFiles": "Soubory a data",
+    "catRetail": "Maloobchod a produkty",
+    "catIndustrial": "Průmysl a data",
+    "company": "Společnost",
+    "privacy": "Zásady ochrany osobních údajů",
+    "terms": "Podmínky služby"
   }
 }

@@ -34,7 +34,9 @@ export const localizedRoutes = {
     "audio": "/audio-qr-code-generator",
     "amazon": "/amazon-qr-code-generator",
     "booking": "/online-booking-qr-code",
-    "file": "/file-qr-code-generator"
+    "file": "/file-qr-code-generator",
+    "barcode": "/barcode-generator",
+    "scanqr": "/scan-qr"
   },
   "id": {
     "url": "/",
@@ -70,7 +72,9 @@ export const localizedRoutes = {
     "audio": "/audio-generator-qr-code-gratis-online",
     "amazon": "/amazon-generator-qr-code-gratis-online",
     "booking": "/pemesanan-generator-qr-code-gratis-online",
-    "file": "/berkas-generator-qr-code-gratis-online"
+    "file": "/berkas-generator-qr-code-gratis-online",
+    "barcode": "/generator-qr-code-gratis-online",
+    "scanqr": "/generator-qr-code-gratis-online-2"
   },
   "es": {
     "url": "/",
@@ -106,7 +110,9 @@ export const localizedRoutes = {
     "audio": "/audio-generador-de-códigos-qr-gratis-online",
     "amazon": "/amazon-generador-de-códigos-qr-gratis-online",
     "booking": "/reserva-generador-de-códigos-qr-gratis-online",
-    "file": "/archivo-generador-de-códigos-qr-gratis-online"
+    "file": "/archivo-generador-de-códigos-qr-gratis-online",
+    "barcode": "/generador-de-códigos-qr-gratis-online",
+    "scanqr": "/generador-de-códigos-qr-gratis-online-2"
   },
   "fr": {
     "url": "/",
@@ -142,7 +148,9 @@ export const localizedRoutes = {
     "audio": "/audio-générateur-de-code-qr-gratuit-en-ligne",
     "amazon": "/amazon-générateur-de-code-qr-gratuit-en-ligne",
     "booking": "/réservation-générateur-de-code-qr-gratuit-en-ligne",
-    "file": "/fichier-générateur-de-code-qr-gratuit-en-ligne"
+    "file": "/fichier-générateur-de-code-qr-gratuit-en-ligne",
+    "barcode": "/générateur-de-code-qr-gratuit-en-ligne",
+    "scanqr": "/générateur-de-code-qr-gratuit-en-ligne-2"
   },
   "de": {
     "url": "/",
@@ -178,7 +186,9 @@ export const localizedRoutes = {
     "audio": "/audio-kostenloser-qr-code-generator-online",
     "amazon": "/amazon-kostenloser-qr-code-generator-online",
     "booking": "/buchung-kostenloser-qr-code-generator-online",
-    "file": "/datei-kostenloser-qr-code-generator-online"
+    "file": "/datei-kostenloser-qr-code-generator-online",
+    "barcode": "/kostenloser-qr-code-generator-online",
+    "scanqr": "/kostenloser-qr-code-generator-online-2"
   },
   "pt": {
     "url": "/",
@@ -214,7 +224,9 @@ export const localizedRoutes = {
     "audio": "/áudio-gerador-de-código-qr-grátis-online",
     "amazon": "/amazon-gerador-de-código-qr-grátis-online",
     "booking": "/reserva-gerador-de-código-qr-grátis-online",
-    "file": "/arquivo-gerador-de-código-qr-grátis-online"
+    "file": "/arquivo-gerador-de-código-qr-grátis-online",
+    "barcode": "/gerador-de-código-qr-grátis-online",
+    "scanqr": "/gerador-de-código-qr-grátis-online-2"
   },
   "zh": {
     "url": "/",
@@ -250,7 +262,9 @@ export const localizedRoutes = {
     "audio": "/音频-免费在线二维码生成器",
     "amazon": "/amazon-免费在线二维码生成器",
     "booking": "/预订-免费在线二维码生成器",
-    "file": "/文件-免费在线二维码生成器"
+    "file": "/文件-免费在线二维码生成器",
+    "barcode": "/免费在线二维码生成器",
+    "scanqr": "/免费在线二维码生成器-2"
   },
   "ja": {
     "url": "/",
@@ -286,7 +300,9 @@ export const localizedRoutes = {
     "audio": "/オーディオ-無料qrコード作成・ジェネレーター",
     "amazon": "/amazon-無料qrコード作成・ジェネレーター",
     "booking": "/予約-無料qrコード作成・ジェネレーター",
-    "file": "/ファイル-無料qrコード作成・ジェネレーター"
+    "file": "/ファイル-無料qrコード作成・ジェネレーター",
+    "barcode": "/無料qrコード作成・ジェネレーター",
+    "scanqr": "/無料qrコード作成・ジェネレーター-2"
   },
   "hi": {
     "url": "/",
@@ -322,7 +338,9 @@ export const localizedRoutes = {
     "audio": "/ऑडियो-मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर",
     "amazon": "/amazon-मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर",
     "booking": "/बुकिंग-मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर",
-    "file": "/फ़ाइल-मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर"
+    "file": "/फ़ाइल-मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर",
+    "barcode": "/मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर",
+    "scanqr": "/मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर-2"
   },
   "ko": {
     "url": "/",
@@ -358,7 +376,9 @@ export const localizedRoutes = {
     "audio": "/오디오-무료-온라인-qr-코드-생성기",
     "amazon": "/amazon-무료-온라인-qr-코드-생성기",
     "booking": "/예약-무료-온라인-qr-코드-생성기",
-    "file": "/파일-무료-온라인-qr-코드-생성기"
+    "file": "/파일-무료-온라인-qr-코드-생성기",
+    "barcode": "/무료-온라인-qr-코드-생성기",
+    "scanqr": "/무료-온라인-qr-코드-생성기-2"
   },
   "ar": {
     "url": "/",
@@ -394,7 +414,9 @@ export const localizedRoutes = {
     "audio": "/الصوت-تدوين-صوتي-مولد-رمز-الاستجابة-السريعة-مجاني",
     "amazon": "/amazon-مولد-رمز-الاستجابة-السريعة-مجاني",
     "booking": "/الحجز-عبر-الإنترنت-مولد-رمز-الاستجابة-السريعة-مجاني",
-    "file": "/ملف-بركاس-مولد-رمز-الاستجابة-السريعة-مجاني"
+    "file": "/ملف-بركاس-مولد-رمز-الاستجابة-السريعة-مجاني",
+    "barcode": "/مولد-رمز-الاستجابة-السريعة-مجاني",
+    "scanqr": "/مولد-رمز-الاستجابة-السريعة-مجاني-2"
   },
   "ru": {
     "url": "/",
@@ -430,7 +452,9 @@ export const localizedRoutes = {
     "audio": "/аудио-бесплатный-генератор-qr-кодов-онлайн",
     "amazon": "/amazon-бесплатный-генератор-qr-кодов-онлайн",
     "booking": "/бронирование-бесплатный-генератор-qr-кодов-онлайн",
-    "file": "/файл-бесплатный-генератор-qr-кодов-онлайн"
+    "file": "/файл-бесплатный-генератор-qr-кодов-онлайн",
+    "barcode": "/бесплатный-генератор-qr-кодов-онлайн",
+    "scanqr": "/бесплатный-генератор-qr-кодов-онлайн-2"
   },
   "it": {
     "url": "/",
@@ -466,7 +490,9 @@ export const localizedRoutes = {
     "audio": "/audio-generatore-di-codici-qr-gratis-online",
     "amazon": "/amazon-generatore-di-codici-qr-gratis-online",
     "booking": "/prenotazione-generatore-di-codici-qr-gratis-online",
-    "file": "/file-generatore-di-codici-qr-gratis-online"
+    "file": "/file-generatore-di-codici-qr-gratis-online",
+    "barcode": "/generatore-di-codici-qr-gratis-online",
+    "scanqr": "/generatore-di-codici-qr-gratis-online-2"
   },
   "tr": {
     "url": "/",
@@ -502,7 +528,9 @@ export const localizedRoutes = {
     "audio": "/ses-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
     "amazon": "/amazon-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
     "booking": "/rezervasyon-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
-    "file": "/dosya-ücretsiz-çevrimiçi-qr-kod-oluşturucu"
+    "file": "/dosya-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+    "barcode": "/ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+    "scanqr": "/ücretsiz-çevrimiçi-qr-kod-oluşturucu-2"
   },
   "nl": {
     "url": "/",
@@ -538,7 +566,9 @@ export const localizedRoutes = {
     "audio": "/geluid-gratis-qr-code-generator-online",
     "amazon": "/amazon-gratis-qr-code-generator-online",
     "booking": "/boeking-gratis-qr-code-generator-online",
-    "file": "/bestand-gratis-qr-code-generator-online"
+    "file": "/bestand-gratis-qr-code-generator-online",
+    "barcode": "/gratis-qr-code-generator-online",
+    "scanqr": "/gratis-qr-code-generator-online-2"
   },
   "pl": {
     "url": "/",
@@ -574,7 +604,9 @@ export const localizedRoutes = {
     "audio": "/dźwięk-darmowy-generator-kodów-qr-online",
     "amazon": "/amazon-darmowy-generator-kodów-qr-online",
     "booking": "/rezerwacja-darmowy-generator-kodów-qr-online",
-    "file": "/plik-darmowy-generator-kodów-qr-online"
+    "file": "/plik-darmowy-generator-kodów-qr-online",
+    "barcode": "/darmowy-generator-kodów-qr-online",
+    "scanqr": "/darmowy-generator-kodów-qr-online-2"
   },
   "sv": {
     "url": "/",
@@ -610,7 +642,9 @@ export const localizedRoutes = {
     "audio": "/ljud-gratis-qr-kod-generator-online",
     "amazon": "/amazon-gratis-qr-kod-generator-online",
     "booking": "/bokning-gratis-qr-kod-generator-online",
-    "file": "/arkiv-gratis-qr-kod-generator-online"
+    "file": "/arkiv-gratis-qr-kod-generator-online",
+    "barcode": "/gratis-qr-kod-generator-online",
+    "scanqr": "/gratis-qr-kod-generator-online-2"
   },
   "vi": {
     "url": "/",
@@ -646,7 +680,9 @@ export const localizedRoutes = {
     "audio": "/âm-thanh-tạo-mã-qr-miễn-phí-trực-tuyến",
     "amazon": "/amazon-tạo-mã-qr-miễn-phí-trực-tuyến",
     "booking": "/đặt-chỗ-tạo-mã-qr-miễn-phí-trực-tuyến",
-    "file": "/tập-tin-tạo-mã-qr-miễn-phí-trực-tuyến"
+    "file": "/tập-tin-tạo-mã-qr-miễn-phí-trực-tuyến",
+    "barcode": "/tạo-mã-qr-miễn-phí-trực-tuyến",
+    "scanqr": "/tạo-mã-qr-miễn-phí-trực-tuyến-2"
   },
   "th": {
     "url": "/",
@@ -682,7 +718,9 @@ export const localizedRoutes = {
     "audio": "/เสียง-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี",
     "amazon": "/amazon-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี",
     "booking": "/จอง-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี",
-    "file": "/ไฟล์-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี"
+    "file": "/ไฟล์-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี",
+    "barcode": "/เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี",
+    "scanqr": "/เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี-2"
   },
   "el": {
     "url": "/",
@@ -718,7 +756,9 @@ export const localizedRoutes = {
     "audio": "/ήχος-δωρεάν-δημιουργία-qr-code-online",
     "amazon": "/amazon-δωρεάν-δημιουργία-qr-code-online",
     "booking": "/κράτηση-δωρεάν-δημιουργία-qr-code-online",
-    "file": "/αρχείο-δωρεάν-δημιουργία-qr-code-online"
+    "file": "/αρχείο-δωρεάν-δημιουργία-qr-code-online",
+    "barcode": "/δωρεάν-δημιουργία-qr-code-online",
+    "scanqr": "/δωρεάν-δημιουργία-qr-code-online-2"
   },
   "cs": {
     "url": "/",
@@ -754,7 +794,9 @@ export const localizedRoutes = {
     "audio": "/zvuk-podcast-zdarma-online-generátor-qr-kódů",
     "amazon": "/amazon-zdarma-online-generátor-qr-kódů",
     "booking": "/online-rezervace-zdarma-online-generátor-qr-kódů",
-    "file": "/soubor-berkas-zdarma-online-generátor-qr-kódů"
+    "file": "/soubor-berkas-zdarma-online-generátor-qr-kódů",
+    "barcode": "/zdarma-online-generátor-qr-kódů",
+    "scanqr": "/zdarma-online-generátor-qr-kódů-2"
   },
   "da": {
     "url": "/",
@@ -790,7 +832,9 @@ export const localizedRoutes = {
     "audio": "/lyd-gratis-qr-kode-generator-online",
     "amazon": "/amazon-gratis-qr-kode-generator-online",
     "booking": "/booking-gratis-qr-kode-generator-online",
-    "file": "/fil-gratis-qr-kode-generator-online"
+    "file": "/fil-gratis-qr-kode-generator-online",
+    "barcode": "/gratis-qr-kode-generator-online",
+    "scanqr": "/gratis-qr-kode-generator-online-2"
   },
   "fi": {
     "url": "/",
@@ -826,7 +870,9 @@ export const localizedRoutes = {
     "audio": "/ääni-ilmainen-qr-koodigeneraattori-netissä",
     "amazon": "/amazon-ilmainen-qr-koodigeneraattori-netissä",
     "booking": "/varaus-ilmainen-qr-koodigeneraattori-netissä",
-    "file": "/tiedosto-ilmainen-qr-koodigeneraattori-netissä"
+    "file": "/tiedosto-ilmainen-qr-koodigeneraattori-netissä",
+    "barcode": "/ilmainen-qr-koodigeneraattori-netissä",
+    "scanqr": "/ilmainen-qr-koodigeneraattori-netissä-2"
   },
   "no": {
     "url": "/",
@@ -862,7 +908,9 @@ export const localizedRoutes = {
     "audio": "/lyd-gratis-qr-kode-generator-online",
     "amazon": "/amazon-gratis-qr-kode-generator-online",
     "booking": "/bestilling-gratis-qr-kode-generator-online",
-    "file": "/fil-gratis-qr-kode-generator-online"
+    "file": "/fil-gratis-qr-kode-generator-online",
+    "barcode": "/gratis-qr-kode-generator-online",
+    "scanqr": "/gratis-qr-kode-generator-online-2"
   },
   "hu": {
     "url": "/",
@@ -898,7 +946,9 @@ export const localizedRoutes = {
     "audio": "/hang-ingyenes-online-qr-kód-generátor",
     "amazon": "/amazon-ingyenes-online-qr-kód-generátor",
     "booking": "/foglalás-ingyenes-online-qr-kód-generátor",
-    "file": "/fájl-ingyenes-online-qr-kód-generátor"
+    "file": "/fájl-ingyenes-online-qr-kód-generátor",
+    "barcode": "/ingyenes-online-qr-kód-generátor",
+    "scanqr": "/ingyenes-online-qr-kód-generátor-2"
   },
   "ro": {
     "url": "/",
@@ -934,7 +984,9 @@ export const localizedRoutes = {
     "audio": "/audio-generator-de-coduri-qr-gratuit-online",
     "amazon": "/amazon-generator-de-coduri-qr-gratuit-online",
     "booking": "/rezervare-generator-de-coduri-qr-gratuit-online",
-    "file": "/fișier-generator-de-coduri-qr-gratuit-online"
+    "file": "/fișier-generator-de-coduri-qr-gratuit-online",
+    "barcode": "/generator-de-coduri-qr-gratuit-online",
+    "scanqr": "/generator-de-coduri-qr-gratuit-online-2"
   },
   "uk": {
     "url": "/",
@@ -970,7 +1022,9 @@ export const localizedRoutes = {
     "audio": "/аудіо-безкоштовний-генератор-qr-кодів-онлайн",
     "amazon": "/amazon-безкоштовний-генератор-qr-кодів-онлайн",
     "booking": "/бронювання-безкоштовний-генератор-qr-кодів-онлайн",
-    "file": "/файл-безкоштовний-генератор-qr-кодів-онлайн"
+    "file": "/файл-безкоштовний-генератор-qr-кодів-онлайн",
+    "barcode": "/безкоштовний-генератор-qr-кодів-онлайн",
+    "scanqr": "/безкоштовний-генератор-qr-кодів-онлайн-2"
   },
   "ms": {
     "url": "/",
@@ -1006,7 +1060,9 @@ export const localizedRoutes = {
     "audio": "/audio-penjana-kod-qr-percuma-dalam-talian",
     "amazon": "/amazon-penjana-kod-qr-percuma-dalam-talian",
     "booking": "/tempahan-penjana-kod-qr-percuma-dalam-talian",
-    "file": "/fail-penjana-kod-qr-percuma-dalam-talian"
+    "file": "/fail-penjana-kod-qr-percuma-dalam-talian",
+    "barcode": "/penjana-kod-qr-percuma-dalam-talian",
+    "scanqr": "/penjana-kod-qr-percuma-dalam-talian-2"
   },
   "tl": {
     "url": "/",
@@ -1042,7 +1098,9 @@ export const localizedRoutes = {
     "audio": "/audio-libreng-online-qr-code-generator",
     "amazon": "/amazon-libreng-online-qr-code-generator",
     "booking": "/pag-book-libreng-online-qr-code-generator",
-    "file": "/file-libreng-online-qr-code-generator"
+    "file": "/file-libreng-online-qr-code-generator",
+    "barcode": "/libreng-online-qr-code-generator",
+    "scanqr": "/libreng-online-qr-code-generator-2"
   },
   "bn": {
     "url": "/",
@@ -1078,7 +1136,9 @@ export const localizedRoutes = {
     "audio": "/অডিওপডকাস্ট-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
     "amazon": "/amazon-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
     "booking": "/অনলাইন-বুকিং-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
-    "file": "/ফাইলবেরকাস-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর"
+    "file": "/ফাইলবেরকাস-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+    "barcode": "/ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+    "scanqr": "/ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর-2"
   }
 };
 export const routeToToolMap = {
@@ -1116,7 +1176,9 @@ export const routeToToolMap = {
     "/audio-qr-code-generator": "audio",
     "/amazon-qr-code-generator": "amazon",
     "/online-booking-qr-code": "booking",
-    "/file-qr-code-generator": "file"
+    "/file-qr-code-generator": "file",
+    "/barcode-generator": "barcode",
+    "/scan-qr": "scanqr"
   },
   "id": {
     "/": "url",
@@ -1152,7 +1214,9 @@ export const routeToToolMap = {
     "/audio-generator-qr-code-gratis-online": "audio",
     "/amazon-generator-qr-code-gratis-online": "amazon",
     "/pemesanan-generator-qr-code-gratis-online": "booking",
-    "/berkas-generator-qr-code-gratis-online": "file"
+    "/berkas-generator-qr-code-gratis-online": "file",
+    "/generator-qr-code-gratis-online": "barcode",
+    "/generator-qr-code-gratis-online-2": "scanqr"
   },
   "es": {
     "/": "url",
@@ -1188,7 +1252,9 @@ export const routeToToolMap = {
     "/audio-generador-de-códigos-qr-gratis-online": "audio",
     "/amazon-generador-de-códigos-qr-gratis-online": "amazon",
     "/reserva-generador-de-códigos-qr-gratis-online": "booking",
-    "/archivo-generador-de-códigos-qr-gratis-online": "file"
+    "/archivo-generador-de-códigos-qr-gratis-online": "file",
+    "/generador-de-códigos-qr-gratis-online": "barcode",
+    "/generador-de-códigos-qr-gratis-online-2": "scanqr"
   },
   "fr": {
     "/": "url",
@@ -1224,7 +1290,9 @@ export const routeToToolMap = {
     "/audio-générateur-de-code-qr-gratuit-en-ligne": "audio",
     "/amazon-générateur-de-code-qr-gratuit-en-ligne": "amazon",
     "/réservation-générateur-de-code-qr-gratuit-en-ligne": "booking",
-    "/fichier-générateur-de-code-qr-gratuit-en-ligne": "file"
+    "/fichier-générateur-de-code-qr-gratuit-en-ligne": "file",
+    "/générateur-de-code-qr-gratuit-en-ligne": "barcode",
+    "/générateur-de-code-qr-gratuit-en-ligne-2": "scanqr"
   },
   "de": {
     "/": "url",
@@ -1260,7 +1328,9 @@ export const routeToToolMap = {
     "/audio-kostenloser-qr-code-generator-online": "audio",
     "/amazon-kostenloser-qr-code-generator-online": "amazon",
     "/buchung-kostenloser-qr-code-generator-online": "booking",
-    "/datei-kostenloser-qr-code-generator-online": "file"
+    "/datei-kostenloser-qr-code-generator-online": "file",
+    "/kostenloser-qr-code-generator-online": "barcode",
+    "/kostenloser-qr-code-generator-online-2": "scanqr"
   },
   "pt": {
     "/": "url",
@@ -1296,7 +1366,9 @@ export const routeToToolMap = {
     "/áudio-gerador-de-código-qr-grátis-online": "audio",
     "/amazon-gerador-de-código-qr-grátis-online": "amazon",
     "/reserva-gerador-de-código-qr-grátis-online": "booking",
-    "/arquivo-gerador-de-código-qr-grátis-online": "file"
+    "/arquivo-gerador-de-código-qr-grátis-online": "file",
+    "/gerador-de-código-qr-grátis-online": "barcode",
+    "/gerador-de-código-qr-grátis-online-2": "scanqr"
   },
   "zh": {
     "/": "url",
@@ -1332,7 +1404,9 @@ export const routeToToolMap = {
     "/音频-免费在线二维码生成器": "audio",
     "/amazon-免费在线二维码生成器": "amazon",
     "/预订-免费在线二维码生成器": "booking",
-    "/文件-免费在线二维码生成器": "file"
+    "/文件-免费在线二维码生成器": "file",
+    "/免费在线二维码生成器": "barcode",
+    "/免费在线二维码生成器-2": "scanqr"
   },
   "ja": {
     "/": "url",
@@ -1368,7 +1442,9 @@ export const routeToToolMap = {
     "/オーディオ-無料qrコード作成・ジェネレーター": "audio",
     "/amazon-無料qrコード作成・ジェネレーター": "amazon",
     "/予約-無料qrコード作成・ジェネレーター": "booking",
-    "/ファイル-無料qrコード作成・ジェネレーター": "file"
+    "/ファイル-無料qrコード作成・ジェネレーター": "file",
+    "/無料qrコード作成・ジェネレーター": "barcode",
+    "/無料qrコード作成・ジェネレーター-2": "scanqr"
   },
   "hi": {
     "/": "url",
@@ -1404,7 +1480,9 @@ export const routeToToolMap = {
     "/ऑडियो-मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर": "audio",
     "/amazon-मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर": "amazon",
     "/बुकिंग-मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर": "booking",
-    "/फ़ाइल-मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर": "file"
+    "/फ़ाइल-मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर": "file",
+    "/मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर": "barcode",
+    "/मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर-2": "scanqr"
   },
   "ko": {
     "/": "url",
@@ -1440,7 +1518,9 @@ export const routeToToolMap = {
     "/오디오-무료-온라인-qr-코드-생성기": "audio",
     "/amazon-무료-온라인-qr-코드-생성기": "amazon",
     "/예약-무료-온라인-qr-코드-생성기": "booking",
-    "/파일-무료-온라인-qr-코드-생성기": "file"
+    "/파일-무료-온라인-qr-코드-생성기": "file",
+    "/무료-온라인-qr-코드-생성기": "barcode",
+    "/무료-온라인-qr-코드-생성기-2": "scanqr"
   },
   "ar": {
     "/": "url",
@@ -1476,7 +1556,9 @@ export const routeToToolMap = {
     "/الصوت-تدوين-صوتي-مولد-رمز-الاستجابة-السريعة-مجاني": "audio",
     "/amazon-مولد-رمز-الاستجابة-السريعة-مجاني": "amazon",
     "/الحجز-عبر-الإنترنت-مولد-رمز-الاستجابة-السريعة-مجاني": "booking",
-    "/ملف-بركاس-مولد-رمز-الاستجابة-السريعة-مجاني": "file"
+    "/ملف-بركاس-مولد-رمز-الاستجابة-السريعة-مجاني": "file",
+    "/مولد-رمز-الاستجابة-السريعة-مجاني": "barcode",
+    "/مولد-رمز-الاستجابة-السريعة-مجاني-2": "scanqr"
   },
   "ru": {
     "/": "url",
@@ -1512,7 +1594,9 @@ export const routeToToolMap = {
     "/аудио-бесплатный-генератор-qr-кодов-онлайн": "audio",
     "/amazon-бесплатный-генератор-qr-кодов-онлайн": "amazon",
     "/бронирование-бесплатный-генератор-qr-кодов-онлайн": "booking",
-    "/файл-бесплатный-генератор-qr-кодов-онлайн": "file"
+    "/файл-бесплатный-генератор-qr-кодов-онлайн": "file",
+    "/бесплатный-генератор-qr-кодов-онлайн": "barcode",
+    "/бесплатный-генератор-qr-кодов-онлайн-2": "scanqr"
   },
   "it": {
     "/": "url",
@@ -1548,7 +1632,9 @@ export const routeToToolMap = {
     "/audio-generatore-di-codici-qr-gratis-online": "audio",
     "/amazon-generatore-di-codici-qr-gratis-online": "amazon",
     "/prenotazione-generatore-di-codici-qr-gratis-online": "booking",
-    "/file-generatore-di-codici-qr-gratis-online": "file"
+    "/file-generatore-di-codici-qr-gratis-online": "file",
+    "/generatore-di-codici-qr-gratis-online": "barcode",
+    "/generatore-di-codici-qr-gratis-online-2": "scanqr"
   },
   "tr": {
     "/": "url",
@@ -1584,7 +1670,9 @@ export const routeToToolMap = {
     "/ses-ücretsiz-çevrimiçi-qr-kod-oluşturucu": "audio",
     "/amazon-ücretsiz-çevrimiçi-qr-kod-oluşturucu": "amazon",
     "/rezervasyon-ücretsiz-çevrimiçi-qr-kod-oluşturucu": "booking",
-    "/dosya-ücretsiz-çevrimiçi-qr-kod-oluşturucu": "file"
+    "/dosya-ücretsiz-çevrimiçi-qr-kod-oluşturucu": "file",
+    "/ücretsiz-çevrimiçi-qr-kod-oluşturucu": "barcode",
+    "/ücretsiz-çevrimiçi-qr-kod-oluşturucu-2": "scanqr"
   },
   "nl": {
     "/": "url",
@@ -1620,7 +1708,9 @@ export const routeToToolMap = {
     "/geluid-gratis-qr-code-generator-online": "audio",
     "/amazon-gratis-qr-code-generator-online": "amazon",
     "/boeking-gratis-qr-code-generator-online": "booking",
-    "/bestand-gratis-qr-code-generator-online": "file"
+    "/bestand-gratis-qr-code-generator-online": "file",
+    "/gratis-qr-code-generator-online": "barcode",
+    "/gratis-qr-code-generator-online-2": "scanqr"
   },
   "pl": {
     "/": "url",
@@ -1656,7 +1746,9 @@ export const routeToToolMap = {
     "/dźwięk-darmowy-generator-kodów-qr-online": "audio",
     "/amazon-darmowy-generator-kodów-qr-online": "amazon",
     "/rezerwacja-darmowy-generator-kodów-qr-online": "booking",
-    "/plik-darmowy-generator-kodów-qr-online": "file"
+    "/plik-darmowy-generator-kodów-qr-online": "file",
+    "/darmowy-generator-kodów-qr-online": "barcode",
+    "/darmowy-generator-kodów-qr-online-2": "scanqr"
   },
   "sv": {
     "/": "url",
@@ -1692,7 +1784,9 @@ export const routeToToolMap = {
     "/ljud-gratis-qr-kod-generator-online": "audio",
     "/amazon-gratis-qr-kod-generator-online": "amazon",
     "/bokning-gratis-qr-kod-generator-online": "booking",
-    "/arkiv-gratis-qr-kod-generator-online": "file"
+    "/arkiv-gratis-qr-kod-generator-online": "file",
+    "/gratis-qr-kod-generator-online": "barcode",
+    "/gratis-qr-kod-generator-online-2": "scanqr"
   },
   "vi": {
     "/": "url",
@@ -1728,7 +1822,9 @@ export const routeToToolMap = {
     "/âm-thanh-tạo-mã-qr-miễn-phí-trực-tuyến": "audio",
     "/amazon-tạo-mã-qr-miễn-phí-trực-tuyến": "amazon",
     "/đặt-chỗ-tạo-mã-qr-miễn-phí-trực-tuyến": "booking",
-    "/tập-tin-tạo-mã-qr-miễn-phí-trực-tuyến": "file"
+    "/tập-tin-tạo-mã-qr-miễn-phí-trực-tuyến": "file",
+    "/tạo-mã-qr-miễn-phí-trực-tuyến": "barcode",
+    "/tạo-mã-qr-miễn-phí-trực-tuyến-2": "scanqr"
   },
   "th": {
     "/": "url",
@@ -1764,7 +1860,9 @@ export const routeToToolMap = {
     "/เสียง-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี": "audio",
     "/amazon-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี": "amazon",
     "/จอง-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี": "booking",
-    "/ไฟล์-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี": "file"
+    "/ไฟล์-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี": "file",
+    "/เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี": "barcode",
+    "/เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี-2": "scanqr"
   },
   "el": {
     "/": "url",
@@ -1800,7 +1898,9 @@ export const routeToToolMap = {
     "/ήχος-δωρεάν-δημιουργία-qr-code-online": "audio",
     "/amazon-δωρεάν-δημιουργία-qr-code-online": "amazon",
     "/κράτηση-δωρεάν-δημιουργία-qr-code-online": "booking",
-    "/αρχείο-δωρεάν-δημιουργία-qr-code-online": "file"
+    "/αρχείο-δωρεάν-δημιουργία-qr-code-online": "file",
+    "/δωρεάν-δημιουργία-qr-code-online": "barcode",
+    "/δωρεάν-δημιουργία-qr-code-online-2": "scanqr"
   },
   "cs": {
     "/": "url",
@@ -1836,7 +1936,9 @@ export const routeToToolMap = {
     "/zvuk-podcast-zdarma-online-generátor-qr-kódů": "audio",
     "/amazon-zdarma-online-generátor-qr-kódů": "amazon",
     "/online-rezervace-zdarma-online-generátor-qr-kódů": "booking",
-    "/soubor-berkas-zdarma-online-generátor-qr-kódů": "file"
+    "/soubor-berkas-zdarma-online-generátor-qr-kódů": "file",
+    "/zdarma-online-generátor-qr-kódů": "barcode",
+    "/zdarma-online-generátor-qr-kódů-2": "scanqr"
   },
   "da": {
     "/": "url",
@@ -1872,7 +1974,9 @@ export const routeToToolMap = {
     "/lyd-gratis-qr-kode-generator-online": "audio",
     "/amazon-gratis-qr-kode-generator-online": "amazon",
     "/booking-gratis-qr-kode-generator-online": "booking",
-    "/fil-gratis-qr-kode-generator-online": "file"
+    "/fil-gratis-qr-kode-generator-online": "file",
+    "/gratis-qr-kode-generator-online": "barcode",
+    "/gratis-qr-kode-generator-online-2": "scanqr"
   },
   "fi": {
     "/": "url",
@@ -1908,7 +2012,9 @@ export const routeToToolMap = {
     "/ääni-ilmainen-qr-koodigeneraattori-netissä": "audio",
     "/amazon-ilmainen-qr-koodigeneraattori-netissä": "amazon",
     "/varaus-ilmainen-qr-koodigeneraattori-netissä": "booking",
-    "/tiedosto-ilmainen-qr-koodigeneraattori-netissä": "file"
+    "/tiedosto-ilmainen-qr-koodigeneraattori-netissä": "file",
+    "/ilmainen-qr-koodigeneraattori-netissä": "barcode",
+    "/ilmainen-qr-koodigeneraattori-netissä-2": "scanqr"
   },
   "no": {
     "/": "url",
@@ -1944,7 +2050,9 @@ export const routeToToolMap = {
     "/lyd-gratis-qr-kode-generator-online": "audio",
     "/amazon-gratis-qr-kode-generator-online": "amazon",
     "/bestilling-gratis-qr-kode-generator-online": "booking",
-    "/fil-gratis-qr-kode-generator-online": "file"
+    "/fil-gratis-qr-kode-generator-online": "file",
+    "/gratis-qr-kode-generator-online": "barcode",
+    "/gratis-qr-kode-generator-online-2": "scanqr"
   },
   "hu": {
     "/": "url",
@@ -1980,7 +2088,9 @@ export const routeToToolMap = {
     "/hang-ingyenes-online-qr-kód-generátor": "audio",
     "/amazon-ingyenes-online-qr-kód-generátor": "amazon",
     "/foglalás-ingyenes-online-qr-kód-generátor": "booking",
-    "/fájl-ingyenes-online-qr-kód-generátor": "file"
+    "/fájl-ingyenes-online-qr-kód-generátor": "file",
+    "/ingyenes-online-qr-kód-generátor": "barcode",
+    "/ingyenes-online-qr-kód-generátor-2": "scanqr"
   },
   "ro": {
     "/": "url",
@@ -2016,7 +2126,9 @@ export const routeToToolMap = {
     "/audio-generator-de-coduri-qr-gratuit-online": "audio",
     "/amazon-generator-de-coduri-qr-gratuit-online": "amazon",
     "/rezervare-generator-de-coduri-qr-gratuit-online": "booking",
-    "/fișier-generator-de-coduri-qr-gratuit-online": "file"
+    "/fișier-generator-de-coduri-qr-gratuit-online": "file",
+    "/generator-de-coduri-qr-gratuit-online": "barcode",
+    "/generator-de-coduri-qr-gratuit-online-2": "scanqr"
   },
   "uk": {
     "/": "url",
@@ -2052,7 +2164,9 @@ export const routeToToolMap = {
     "/аудіо-безкоштовний-генератор-qr-кодів-онлайн": "audio",
     "/amazon-безкоштовний-генератор-qr-кодів-онлайн": "amazon",
     "/бронювання-безкоштовний-генератор-qr-кодів-онлайн": "booking",
-    "/файл-безкоштовний-генератор-qr-кодів-онлайн": "file"
+    "/файл-безкоштовний-генератор-qr-кодів-онлайн": "file",
+    "/безкоштовний-генератор-qr-кодів-онлайн": "barcode",
+    "/безкоштовний-генератор-qr-кодів-онлайн-2": "scanqr"
   },
   "ms": {
     "/": "url",
@@ -2088,7 +2202,9 @@ export const routeToToolMap = {
     "/audio-penjana-kod-qr-percuma-dalam-talian": "audio",
     "/amazon-penjana-kod-qr-percuma-dalam-talian": "amazon",
     "/tempahan-penjana-kod-qr-percuma-dalam-talian": "booking",
-    "/fail-penjana-kod-qr-percuma-dalam-talian": "file"
+    "/fail-penjana-kod-qr-percuma-dalam-talian": "file",
+    "/penjana-kod-qr-percuma-dalam-talian": "barcode",
+    "/penjana-kod-qr-percuma-dalam-talian-2": "scanqr"
   },
   "tl": {
     "/": "url",
@@ -2124,7 +2240,9 @@ export const routeToToolMap = {
     "/audio-libreng-online-qr-code-generator": "audio",
     "/amazon-libreng-online-qr-code-generator": "amazon",
     "/pag-book-libreng-online-qr-code-generator": "booking",
-    "/file-libreng-online-qr-code-generator": "file"
+    "/file-libreng-online-qr-code-generator": "file",
+    "/libreng-online-qr-code-generator": "barcode",
+    "/libreng-online-qr-code-generator-2": "scanqr"
   },
   "bn": {
     "/": "url",
@@ -2160,6 +2278,8 @@ export const routeToToolMap = {
     "/অডিওপডকাস্ট-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর": "audio",
     "/amazon-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর": "amazon",
     "/অনলাইন-বুকিং-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর": "booking",
-    "/ফাইলবেরকাস-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর": "file"
+    "/ফাইলবেরকাস-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর": "file",
+    "/ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর": "barcode",
+    "/ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর-2": "scanqr"
   }
 };

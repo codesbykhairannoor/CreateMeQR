@@ -73,7 +73,7 @@ function LayoutURL({ qrType = 'url' }) {
           <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--hq-accent-glow)', borderRadius: 100, color: 'var(--hq-accent)', fontWeight: 700, fontSize: '14px', marginBottom: 24, alignItems: 'center', gap: 8 }}>
             <Sparkles size={16} /> {t.badgeLeadMarket || 'The Engineering Standard'}
           </div>
-          <h2 style={{ fontSize: 'clamp(40px, 6vw, 64px)', fontWeight: 900, letterSpacing: '-0.04em', lineHeight: 1.1, marginBottom: 24 }}>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(40px, 6vw, 64px)',   lineHeight: 1.1, marginBottom: 24 }}>
             {t.heroTitle} <span style={{ color: 'var(--hq-accent)' }}>{typeName}</span>
           </h2>
           <p style={{ fontSize: 20, color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{t.heroSubtitle}</p>
@@ -87,7 +87,7 @@ function LayoutURL({ qrType = 'url' }) {
               <div style={{ display: 'inline-block', padding: '12px 24px', background: 'var(--hq-accent)', color: '#fff', borderRadius: 100, fontWeight: 800, marginBottom: 24 }}>
                 URL.01
               </div>
-              <h3 style={{ fontSize: 32, fontWeight: 900, marginBottom: 16 }}>{translate('featTools.url.t1') || t.comp1Title}</h3>
+              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 32,  marginBottom: 16 }}>{translate('featTools.url.t1') || t.comp1Title}</h3>
               <p style={{ fontSize: 18, color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.url.d1') || t.comp1Desc}</p>
             </div>
             <div style={{ position: 'relative', zIndex: 1 }}>
@@ -99,7 +99,7 @@ function LayoutURL({ qrType = 'url' }) {
             <div style={{ width: 64, height: 64, borderRadius: 16, background: 'var(--hq-bg)', border: '1px solid var(--hq-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24, color: 'var(--hq-accent)' }}>
               <Zap size={32} />
             </div>
-            <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 12 }}>{translate('featTools.url.t2') || t.comp2Title}</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 12 }}>{translate('featTools.url.t2') || t.comp2Title}</h3>
             <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.url.d2') || t.comp2Desc}</p>
           </div>
           
@@ -107,14 +107,14 @@ function LayoutURL({ qrType = 'url' }) {
             <div style={{ width: 64, height: 64, borderRadius: 16, background: 'var(--hq-bg)', border: '1px solid var(--hq-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24, color: 'var(--hq-accent)' }}>
               <Lock size={32} />
             </div>
-            <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 12 }}>{translate('featTools.url.t3') || t.comp3Title}</h3>
+            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 12 }}>{translate('featTools.url.t3') || t.comp3Title}</h3>
             <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.url.d3') || t.comp3Desc}</p>
           </div>
         </div>
 
           <div className="hq-card" style={{ gridColumn: 'span 8', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 32 }}>
             <div style={{ flex: 1 }}>
-              <h3 className="hq-card-title" style={{ fontSize: 28 }}>{t.stepsTitle} {typeName}</h3>
+              <h3 className="hq-card-title font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 28 }}>{t.stepsTitle} {typeName}</h3>
               <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 20 }}>
                 {[
                   { n: '1', t: t.step1Title, d: `${t.step1Desc} (${typeName})` },
@@ -145,7 +145,7 @@ function LayoutURL({ qrType = 'url' }) {
             <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--hq-accent-glow)', borderRadius: 100, color: 'var(--hq-accent)', fontWeight: 700, fontSize: '14px', marginBottom: 24, alignItems: 'center', gap: 8 }}>
               <Globe size={16} /> {t.badgeFaq || 'Knowledge Base'}
             </div>
-            <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900 }}>{t.faqTitle} {typeName}</h2>
+            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)' }}>{t.faqTitle} {typeName}</h2>
           </div>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

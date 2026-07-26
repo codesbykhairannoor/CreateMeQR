@@ -930,5 +930,193 @@
       "t3": "Bulut Sürücü Uyumlu",
       "d3": "Sorunsuz bulut dosya paylaşımı için bağlantıları Google Drive, Dropbox veya OneDrive'dan yapıştırın."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "Hakkımızda",
+        "subtitle": "Kesintisiz QR teknolojisiyle küresel bağlantıları güçlendirmek.",
+        "desc": "Bu platformu dünyanın bilgi paylaşımını basitleştirmek için oluşturduk. Hızlı, güvenilir ve tamamen özel."
+      },
+      "mission": {
+        "title": "Misyonumuz",
+        "desc": "Verilerinizi izlemeyen veya kodlarınızı ödeme duvarlarının arkasına kilitlemeyen birinci sınıf, gizliliğe öncelik veren bir QR kodu oluşturucu sağlamak."
+      },
+      "values": {
+        "title": "Temel Değerler",
+        "v1": "Önce Gizlilik",
+        "d1": "İstemci tarafı oluşturma, verilerinizin hiçbir zaman sunucularımıza dokunmayacağı anlamına gelir.",
+        "v2": "Sonsuza Kadar Ücretsiz",
+        "d2": "Temel özellikler hiçbir gizli sınırlama olmaksızın her zaman ücretsiz kalacaktır.",
+        "v3": "Küresel Erişim",
+        "d3": "Gerçek anlamda uluslararası bir kitleye hizmet vermek için 30 dilde yerelleştirilmiştir."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Gizlilik Politikası",
+        "subtitle": "Verileriniz sizindir. Bu şekilde tutuyoruz."
+      },
+      "sections": {
+        "s1": "Veri Toplama",
+        "d1": "QR kod oluşturucuya girdiğiniz verileri toplamıyoruz veya saklamıyoruz. Tüm üretim cihazınızda yerel olarak gerçekleşir.",
+        "s2": "Çerezler ve Analizler",
+        "d2": "Toplu trafik modellerini anlamak için minimum düzeyde analiz kullanıyoruz. Kişisel olarak tanımlanabilir hiçbir bilgi takip edilmez.",
+        "s3": "Üçüncü Taraf Hizmetleri",
+        "d3": "Verilerinizi üçüncü taraflara satmıyor, kiralamıyor veya paylaşmıyoruz."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Hizmet Şartları",
+        "subtitle": "Platformumuzu kullanmanın kuralları."
+      },
+      "sections": {
+        "s1": "Kabul Edilebilir Kullanım",
+        "d1": "Kötü amaçlı, yasa dışı veya zararlı içeriğe bağlantı veren QR kodları oluşturmak için oluşturucumuzu kullanmamayı kabul edersiniz.",
+        "s2": "Hizmet Kullanılabilirliği",
+        "d2": "%99,9 kesintisiz çalışma için çabalıyoruz ancak hizmeti garanti vermeden 'olduğu gibi' sağlıyoruz.",
+        "s3": "Fikri Mülkiyet",
+        "d3": "Oluşturduğunuz içeriğin tüm hakları size aittir. Platform kodu ve tasarımı bize aittir."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "Neden Bizi Seçmelisiniz?",
+        "subtitle": "Rekabete karşı nasıl bir durumda olduğumuzu görün."
+      },
+      "metrics": {
+        "title": "Özellik",
+        "m1": "Fiyatlandırma",
+        "us1": "%100 Ücretsiz",
+        "them1": "15$/ay",
+        "m2": "Gizlilik",
+        "us2": "İstemci Tarafı (İzleme Yok)",
+        "them2": "Sunucu Tarafında Veri Toplama",
+        "m3": "Filigranlar",
+        "us3": "Yok",
+        "them3": "Ücretsiz Planlarda Zorunlu Filigranlar",
+        "m4": "Son kullanma tarihi",
+        "us4": "Kodların Süresi Asla Bitmez",
+        "them4": "14 gün sonra sona erer",
+        "m5": "Diller",
+        "us5": "30 Dil Destekleniyor",
+        "them5": "Yalnızca İngilizce"
+      }
+    },
+    "nav": {
+      "about": "Hakkımızda",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Hizmet Şartları",
+      "compare": "Karşılaştırmak"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "Siber Tarayıcı V1",
+      "title": "Anında",
+      "titleHighlight": "QR Tarayıcı",
+      "desc": "Web kameranızdan tarayın veya bir resim yükleyin. Sunucularımıza %100 özel, sıfır veri gönderilir."
+    },
+    "workspace": {
+      "initCam": "Kamerayı Başlat",
+      "initCamDesc": "Cihazınızın kamerasını kullanarak QR kodunu tarayın",
+      "startBtn": "Taramayı Başlat",
+      "cancelBtn": "İptal",
+      "successTitle": "Tarama Başarılı",
+      "scanAnother": "Başka Bir Kodu Tara",
+      "orUpload": "Veya bir resim yükleyin",
+      "uploadBtn": "QR Görüntü Dosyasını Yükle",
+      "decodedResult": "Şifresi Çözülmüş Sonuç",
+      "copyBtn": "Verileri Kopyala",
+      "copied": "Kopyalandı!",
+      "openLink": "Bağlantıyı Aç",
+      "notLink": "Bağlantı değil",
+      "waiting": "Tarama bekleniyor...",
+      "waitingDesc": "Kameranızı bir QR koduna doğrultun veya bir resim yükleyin.",
+      "errCam": "Kamera başlatılamadı. Lütfen kamera izinlerini verdiğinizden emin olun.",
+      "errImg": "Resimde QR kodu bulunamadı. Lütfen başka bir resim deneyin."
+    },
+    "features": {
+      "whyTitle": "Tarayıcımızı neden kullanmalısınız?",
+      "noAppTitle": "Uygulamaya Gerek Yok",
+      "noAppDesc": "Şişirilmiş uygulamaları indirmeden QR kodlarını doğrudan tarayıcınızdan tarayın. İOS, Android ve Masaüstünde mükemmel çalışır.",
+      "secureTitle": "%100 Güvenli ve Özel",
+      "secureDesc": "Resimleriniz ve kamera yayınınız tamamen cihazınızda işlenir. Tarama verilerinizi hiçbir zaman harici sunuculara göndermeyiz.",
+      "fastTitle": "Yıldırım Hızında",
+      "fastDesc": "Optimize edilmiş WASM motoru, düşük ışık koşullarında veya bulanık kameralarda bile karmaşık QR kodlarının kodunu anında çözer.",
+      "moreTitle": "URL'lerden Daha Fazlası.",
+      "moreDesc": "Gelişmiş tarayıcımız çeşitli yük türlerini anında tanır. Sadece metni okumakla kalmıyor, bağlamı da anlıyor.",
+      "moreList1": "WiFi Kimlik Bilgileri Ayrıştırma",
+      "moreList2": "vCard Kişi İçe Aktarma",
+      "moreList3": "Kripto Adresleri",
+      "formatTitle": "Evrensel Format Desteği",
+      "formatDesc": "Bu 2D barkodlardan herhangi birini içeren bir görsel yükleyin, biz de kodu doğrudan tarayıcınızda anında çözelim."
+    },
+    "seo": {
+      "title": "Ücretsiz Çevrimiçi QR Kod Tarayıcı - QR'yi Anında Tarayın",
+      "desc": "Kameranızı kullanarak veya bir resim yükleyerek QR kodlarını anında tarayın. %100 güvenli, özel ve istemci tarafında işleme."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Profesyonel Barkod Araçları",
+      "title": "Oluştur",
+      "titleHighlight": "Barkodlar",
+      "titleSuffix": "Anında",
+      "desc": "Saniyeler içinde yüksek kaliteli envanter etiketleri, gönderim etiketleri ve perakende kodları oluşturun."
+    },
+    "workspace": {
+      "dataTitle": "Barkod Verileri",
+      "contentLabel": "Barkod İçeriği",
+      "contentPlaceholder": "Sayıları veya metni girin...",
+      "formatLabel": "Barkod Standardı / Formatı",
+      "visualTitle": "Görsel Ayarlama",
+      "widthLabel": "Çubuk Genişliği",
+      "heightLabel": "Çubuk Yüksekliği",
+      "lineColor": "Çizgi Rengi",
+      "bgColor": "Arka Plan Rengi",
+      "showText": "Kodun Altındaki Metin Değerini Göster",
+      "liveOutput": "Canlı Çıktı",
+      "enterData": "Oluşturulacak verileri girin",
+      "download": "Yüksek Çözünürlüklü PNG'yi İndirin"
+    },
+    "features": {
+      "standardsTitle": "Desteklenen Barkod Formatları",
+      "standardsDesc": "Sektörünüz için doğru standardı seçin. Perakende kasadan depo lojistiğine kadar.",
+      "c128Desc": "Son derece kompakt ve çok yönlü. Tam ASCII karakter setini destekler. Genel envanter ve dahili takip sistemleri için idealdir.",
+      "itf14Desc": "Karton veya palet gibi paketleme seviyeleri için tasarlanmıştır. Oluklu mukavva üzerinde tarama doğruluğunu artırmak için kalın kenarlıklar kullanır.",
+      "upcDesc": "Satış noktası perakendesinde küresel standart. EAN-13 dünya çapında kullanılırken, UPC-A Kuzey Amerika'da standarttır.",
+      "mfgTitle": "Üretim ve Lojistik için Tasarlandı",
+      "mfgDesc": "Oluşturucumuz, baskı için güzel bir şekilde ölçeklenen net, piksel açısından mükemmel PNG dosyaları oluşturur. Bulanık raster görüntüler kullanmıyoruz; motorumuz, yüksek çözünürlüklü PNG indirmelerine dönüştürmeden önce saf SVG matematiğini işler.",
+      "mfgList1": "Mutlak Hassasiyet: Bulanık kenarlar yok.",
+      "mfgList2": "Özel Dolgu: Termal yazıcılar için güvenli bölgeler.",
+      "mfgList3": "%100 Ücretsiz: Temel nesil için abonelik yoktur.",
+      "mfgBadge": "Fabrika Hazır",
+      "mfgBadgeDesc": "Lazer tarayıcılar için yüksek kontrast",
+      "ecoTitle": "E-Ticaret ve Perakende için Mükemmel",
+      "ecoDesc": "İster Amazon'da (FBA) yeni bir ürün listeliyor olun, ister kendi Shopify mağazanızı oluşturuyor olun, küresel dağıtım için UPC ve EAN kodları oluşturmak gerekir.",
+      "btnUpc": "Şimdi UPC Kodu Oluşturun",
+      "btnEan": "Şimdi EAN-13 Kodunu Oluşturun"
+    },
+    "seo": {
+      "title": "Ücretsiz Çevrimiçi Barkod Oluşturucu - 1D Barkodlar Oluşturun",
+      "desc": "Anında profesyonel 1D barkodlar oluşturun. Code-128, UPC, EAN, ITF-14 ve daha fazlası için destek. Ücretsiz, güvenli ve yüksek çözünürlüklü PNG formatında indirmeye hazır."
+    }
+  },
+  "nav": {
+    "allTools": "Tüm Araçlar",
+    "generatorDesc": "34+ QR Türü Oluşturun",
+    "barcodeDesc": "1D/2D Pro Barkodlar",
+    "scanDesc": "Kameradan Oku",
+    "catSocial": "Sosyal ve Medya",
+    "catBusiness": "İş ve Bağlantılar",
+    "catFinance": "Finans ve Mağaza",
+    "catFiles": "Dosyalar ve Veriler",
+    "catRetail": "Perakende ve Ürünler",
+    "catIndustrial": "Endüstriyel ve Veri",
+    "company": "Şirket",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Hizmet Şartları"
   }
 }

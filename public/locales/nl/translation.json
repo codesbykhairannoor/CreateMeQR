@@ -930,5 +930,193 @@
       "t3": "Compatibel met clouddrives",
       "d3": "Plak links uit Google Drive, Dropbox of OneDrive voor het naadloos delen van bestanden in de cloud."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "Over ons",
+        "subtitle": "Mondiale verbindingen mogelijk maken via naadloze QR-technologie.",
+        "desc": "We hebben dit platform gebouwd om de manier waarop de wereld informatie deelt te vereenvoudigen. Snel, betrouwbaar en volledig privé."
+      },
+      "mission": {
+        "title": "Onze missie",
+        "desc": "Om een ​​premium, op privacy gerichte QR-codegenerator te bieden die uw gegevens niet bijhoudt en uw codes niet achter betaalmuren vergrendelt."
+      },
+      "values": {
+        "title": "Kernwaarden",
+        "v1": "Privacy eerst",
+        "d1": "Generatie aan de clientzijde betekent dat uw gegevens nooit onze servers raken.",
+        "v2": "Voor altijd gratis",
+        "d2": "Kernfuncties blijven altijd gratis, zonder verborgen limieten.",
+        "v3": "Mondiaal bereik",
+        "d3": "Gelokaliseerd in 30 talen om een ​​echt internationaal publiek te bedienen."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Privacybeleid",
+        "subtitle": "Jouw gegevens zijn van jou. Wij houden het zo."
+      },
+      "sections": {
+        "s1": "Gegevensverzameling",
+        "d1": "Wij verzamelen of bewaren de gegevens die u invoert in de QR-codegenerator niet. Alle generaties gebeuren lokaal op uw apparaat.",
+        "s2": "Cookies en analyses",
+        "d2": "We gebruiken minimale analyses om geaggregeerde verkeerspatronen te begrijpen. Er wordt geen persoonlijk identificeerbare informatie bijgehouden.",
+        "s3": "Diensten van derden",
+        "d3": "Wij verkopen, verhuren of delen uw gegevens niet met derden."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Servicevoorwaarden",
+        "subtitle": "Verkeersregels voor het gebruik van ons platform."
+      },
+      "sections": {
+        "s1": "Aanvaardbaar gebruik",
+        "d1": "U gaat ermee akkoord onze generator niet te gebruiken om QR-codes te maken die linken naar kwaadaardige, illegale of schadelijke inhoud.",
+        "s2": "Beschikbaarheid van diensten",
+        "d2": "Wij streven naar een uptime van 99,9% maar leveren de service ‘as is’ zonder garanties.",
+        "s3": "Intellectueel eigendom",
+        "d3": "U behoudt alle rechten op de inhoud die u genereert. De platformcode en het ontwerp zijn van ons."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "Waarom voor ons kiezen?",
+        "subtitle": "Bekijk hoe wij het doen ten opzichte van de concurrentie."
+      },
+      "metrics": {
+        "title": "Functie",
+        "m1": "Prijzen",
+        "us1": "100% gratis",
+        "them1": "$ 15/maand",
+        "m2": "Privacy",
+        "us2": "Clientzijde (geen tracking)",
+        "them2": "Gegevensverzameling aan de serverzijde",
+        "m3": "Watermerken",
+        "us3": "Geen",
+        "them3": "Geforceerde watermerken op gratis abonnementen",
+        "m4": "Vervaldatum",
+        "us4": "Codes verlopen nooit",
+        "them4": "Verloopt na 14 dagen",
+        "m5": "Talen",
+        "us5": "30 ondersteunde talen",
+        "them5": "Alleen Engels"
+      }
+    },
+    "nav": {
+      "about": "Over ons",
+      "privacy": "Privacybeleid",
+      "terms": "Servicevoorwaarden",
+      "compare": "Vergelijken"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "Cyberscanner V1",
+      "title": "Direct",
+      "titleHighlight": "QR-scanner",
+      "desc": "Scan vanaf uw webcam of upload een afbeelding. 100% privé, er worden geen gegevens naar onze servers verzonden."
+    },
+    "workspace": {
+      "initCam": "Initialiseer camera",
+      "initCamDesc": "Scan een QR-code met de camera van uw apparaat",
+      "startBtn": "Beginnen met scannen",
+      "cancelBtn": "Annuleren",
+      "successTitle": "Scannen geslaagd",
+      "scanAnother": "Scan nog een code",
+      "orUpload": "Of upload een afbeelding",
+      "uploadBtn": "Upload QR-afbeeldingsbestand",
+      "decodedResult": "Gedecodeerd resultaat",
+      "copyBtn": "Gegevens kopiëren",
+      "copied": "Gekopieerd!",
+      "openLink": "Link openen",
+      "notLink": "Geen link",
+      "waiting": "Wachten op scannen...",
+      "waitingDesc": "Richt uw camera op een QR-code of upload een afbeelding.",
+      "errCam": "Kan de camera niet starten. Zorg ervoor dat u camerarechten heeft verleend.",
+      "errImg": "Geen QR-code gevonden in de afbeelding. Probeer een andere afbeelding."
+    },
+    "features": {
+      "whyTitle": "Waarom onze scanner gebruiken?",
+      "noAppTitle": "Geen app vereist",
+      "noAppDesc": "Scan QR-codes rechtstreeks vanuit uw browser zonder opgeblazen apps te downloaden. Werkt perfect op iOS, Android en Desktop.",
+      "secureTitle": "100% veilig en privé",
+      "secureDesc": "Uw afbeeldingen en camerafeed worden volledig op uw apparaat verwerkt. We sturen uw scangegevens nooit naar externe servers.",
+      "fastTitle": "Bliksemsnel",
+      "fastDesc": "De geoptimaliseerde WASM-engine decodeert complexe QR-codes onmiddellijk, zelfs bij weinig licht of met wazige camera's.",
+      "moreTitle": "Meer dan alleen URL's.",
+      "moreDesc": "Onze geavanceerde scanner herkent onmiddellijk verschillende soorten lading. Het leest niet alleen de tekst, het begrijpt de context.",
+      "moreList1": "WiFi-referenties parseren",
+      "moreList2": "vCard-contactpersoon importeren",
+      "moreList3": "Crypto-adressen",
+      "formatTitle": "Ondersteuning voor universeel formaat",
+      "formatDesc": "Upload een afbeelding met een van deze 2D-barcodes en wij decoderen deze onmiddellijk in uw browser."
+    },
+    "seo": {
+      "title": "Gratis QR-codescanner online - Scan QR direct",
+      "desc": "Scan QR-codes direct met uw camera of door een afbeelding te uploaden. 100% veilige, privé- en clientverwerking."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Professionele barcodehulpmiddelen",
+      "title": "Genereer",
+      "titleHighlight": "Streepjescodes",
+      "titleSuffix": "Direct",
+      "desc": "Maak binnen enkele seconden hoogwaardige inventaristags, verzendlabels en winkelcodes."
+    },
+    "workspace": {
+      "dataTitle": "Streepjescodegegevens",
+      "contentLabel": "Streepjescode-inhoud",
+      "contentPlaceholder": "Voer cijfers of tekst in...",
+      "formatLabel": "Barcodestandaard/formaat",
+      "visualTitle": "Visuele afstemming",
+      "widthLabel": "Staafbreedte",
+      "heightLabel": "Staafhoogte",
+      "lineColor": "Lijnkleur",
+      "bgColor": "Achtergrondkleur",
+      "showText": "Toon tekstwaarde onder code",
+      "liveOutput": "Live-uitvoer",
+      "enterData": "Voer gegevens in om",
+      "download": "te genereren PNG in hoge resolutie downloaden"
+    },
+    "features": {
+      "standardsTitle": "Ondersteunde barcodeformaten",
+      "standardsDesc": "Kies de juiste standaard voor uw branche. Van retailkassa tot magazijnlogistiek.",
+      "c128Desc": "Zeer compact en veelzijdig. Ondersteunt de volledige ASCII-tekenset. Ideaal voor algemene inventaris- en interne volgsystemen.",
+      "itf14Desc": "Ontworpen voor verpakkingsniveaus zoals dozen of pallets. Maakt gebruik van dikke randen om de scannauwkeurigheid op golfkarton te verbeteren.",
+      "upcDesc": "De wereldwijde standaard voor verkoop op verkooppunten. EAN-13 wordt wereldwijd gebruikt, terwijl UPC-A standaard is in Noord-Amerika.",
+      "mfgTitle": "Gebouwd voor productie en logistiek",
+      "mfgDesc": "Onze generator creëert scherpe, pixel-perfecte PNG-bestanden die prachtig kunnen worden geschaald voor afdrukken. We gebruiken geen vage rasterafbeeldingen: onze engine geeft pure SVG-wiskunde weer voordat deze wordt geconverteerd naar PNG-downloads met hoge resolutie.",
+      "mfgList1": "Absolute precisie: geen wazige randen.",
+      "mfgList2": "Aangepaste opvulling: veilige zones voor thermische printers.",
+      "mfgList3": "100% gratis: geen abonnementen voor basisopwekking.",
+      "mfgBadge": "Fabrieksklaar",
+      "mfgBadgeDesc": "Hoog contrast voor laserscanners",
+      "ecoTitle": "Perfect voor e-commerce en detailhandel",
+      "ecoDesc": "Of u nu een nieuw product op Amazon (FBA) aanbiedt of uw eigen Shopify-winkel opzet, het genereren van UPC- en EAN-codes is vereist voor wereldwijde distributie.",
+      "btnUpc": "Genereer nu UPC-code",
+      "btnEan": "Genereer nu EAN-13-code"
+    },
+    "seo": {
+      "title": "Gratis barcodegenerator online - Maak 1D-streepjescodes",
+      "desc": "Genereer direct professionele 1D-barcodes. Ondersteuning voor Code-128, UPC, EAN, ITF-14 en meer. Gratis, veilig en klaar om te downloaden in PNG met hoge resolutie."
+    }
+  },
+  "nav": {
+    "allTools": "Alle gereedschappen",
+    "generatorDesc": "Creëer 34+ QR-typen",
+    "barcodeDesc": "1D/2D Pro-streepjescodes",
+    "scanDesc": "Voorlezen vanaf camera",
+    "catSocial": "Sociaal en media",
+    "catBusiness": "Zakelijk en koppelingen",
+    "catFinance": "Financiën & Winkel",
+    "catFiles": "Bestanden en gegevens",
+    "catRetail": "Detailhandel en producten",
+    "catIndustrial": "Industrieel en data",
+    "company": "Bedrijf",
+    "privacy": "Privacybeleid",
+    "terms": "Servicevoorwaarden"
   }
 }

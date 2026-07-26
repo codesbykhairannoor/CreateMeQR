@@ -930,5 +930,193 @@
       "t3": "Compatibile con Cloud Drive",
       "d3": "Incolla collegamenti da Google Drive, Dropbox o OneDrive per una condivisione di file cloud senza interruzioni."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "Chi siamo",
+        "subtitle": "Potenziare le connessioni globali attraverso la tecnologia QR senza soluzione di continuità.",
+        "desc": "Abbiamo creato questa piattaforma per semplificare il modo in cui il mondo condivide le informazioni. Veloce, affidabile e completamente privato."
+      },
+      "mission": {
+        "title": "La nostra missione",
+        "desc": "Fornire un generatore di codici QR premium, attento alla privacy, che non tenga traccia dei tuoi dati né blocchi i tuoi codici dietro paywall."
+      },
+      "values": {
+        "title": "Valori fondamentali",
+        "v1": "La privacy prima di tutto",
+        "d1": "La generazione lato client significa che i tuoi dati non toccano mai i nostri server.",
+        "v2": "Libero per sempre",
+        "d2": "Le funzionalità principali rimarranno sempre gratuite senza limiti nascosti.",
+        "v3": "Portata globale",
+        "d3": "Localizzato in 30 lingue per servire un pubblico veramente internazionale."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Informativa sulla privacy",
+        "subtitle": "I tuoi dati sono tuoi. Lo manteniamo così."
+      },
+      "sections": {
+        "s1": "Raccolta dati",
+        "d1": "Non raccogliamo né archiviamo i dati immessi nel generatore di codici QR. Tutta la generazione avviene localmente sul tuo dispositivo.",
+        "s2": "Cookie e analisi",
+        "d2": "Utilizziamo analisi minime per comprendere i modelli di traffico aggregati. Nessuna informazione di identificazione personale viene tracciata.",
+        "s3": "Servizi di terze parti",
+        "d3": "Non vendiamo, affittiamo o condividiamo i tuoi dati con terze parti."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Termini di servizio",
+        "subtitle": "Regole della strada per l'utilizzo della nostra piattaforma."
+      },
+      "sections": {
+        "s1": "Uso accettabile",
+        "d1": "Accetti di non utilizzare il nostro generatore per creare codici QR che colleghino a contenuti dannosi, illegali o dannosi.",
+        "s2": "Disponibilità del servizio",
+        "d2": "Puntiamo a garantire un tempo di attività del 99,9%, ma forniamo il servizio \"così com'è\" senza garanzie.",
+        "s3": "Proprietà intellettuale",
+        "d3": "Mantieni tutti i diritti sui contenuti che generi. Il codice e il design della piattaforma appartengono a noi."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "Perché sceglierci?",
+        "subtitle": "Scopri come ci confrontiamo con la concorrenza."
+      },
+      "metrics": {
+        "title": "Caratteristica",
+        "m1": "Prezzi",
+        "us1": "100% gratuito",
+        "them1": "$ 15 al mese",
+        "m2": "Privacy",
+        "us2": "Lato client (nessun tracciamento)",
+        "them2": "Raccolta dati lato server",
+        "m3": "Filigrane",
+        "us3": "Nessuno",
+        "them3": "Filigrane forzate sui piani gratuiti",
+        "m4": "Scadenza",
+        "us4": "I codici non scadono mai",
+        "them4": "Scade dopo 14 giorni",
+        "m5": "Lingue",
+        "us5": "30 lingue supportate",
+        "them5": "Solo inglese"
+      }
+    },
+    "nav": {
+      "about": "Chi siamo",
+      "privacy": "Informativa sulla privacy",
+      "terms": "Termini di servizio",
+      "compare": "Confrontare"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "CyberScanner V1",
+      "title": "Istantaneo",
+      "titleHighlight": "Scanner QR",
+      "desc": "Scansiona dalla tua webcam o carica un'immagine. 100% privato, zero dati vengono inviati ai nostri server."
+    },
+    "workspace": {
+      "initCam": "Inizializza fotocamera",
+      "initCamDesc": "Scansiona un codice QR utilizzando la fotocamera del tuo dispositivo",
+      "startBtn": "Avvia la scansione",
+      "cancelBtn": "Annulla",
+      "successTitle": "Scansione riuscita",
+      "scanAnother": "Scansiona un altro codice",
+      "orUpload": "Oppure carica un'immagine",
+      "uploadBtn": "Carica file immagine QR",
+      "decodedResult": "Risultato decodificato",
+      "copyBtn": "Copia dati",
+      "copied": "Copiato!",
+      "openLink": "Apri collegamento",
+      "notLink": "Non è un collegamento",
+      "waiting": "In attesa della scansione...",
+      "waitingDesc": "Punta la fotocamera su un codice QR o carica un'immagine.",
+      "errCam": "Impossibile avviare la fotocamera. Assicurati di aver concesso le autorizzazioni per la fotocamera.",
+      "errImg": "Nessun codice QR trovato nell'immagine. Per favore prova un'altra immagine."
+    },
+    "features": {
+      "whyTitle": "Perché utilizzare il nostro scanner?",
+      "noAppTitle": "Nessuna app richiesta",
+      "noAppDesc": "Scansiona i codici QR direttamente dal tuo browser senza scaricare app eccessive. Funziona perfettamente su iOS, Android e desktop.",
+      "secureTitle": "100% sicuro e privato",
+      "secureDesc": "Le tue immagini e il feed della fotocamera vengono elaborati interamente sul tuo dispositivo. Non inviamo mai i dati di scansione a server esterni.",
+      "fastTitle": "Velocissimo",
+      "fastDesc": "Il motore WASM ottimizzato decodifica istantaneamente codici QR complessi, anche in condizioni di scarsa illuminazione o con fotocamere sfocate.",
+      "moreTitle": "Molto più che semplici URL.",
+      "moreDesc": "Il nostro scanner avanzato riconosce istantaneamente vari tipi di carico utile. Non si limita a leggere il testo, capisce il contesto.",
+      "moreList1": "Analisi delle credenziali WiFi",
+      "moreList2": "Importazione contatti vCard",
+      "moreList3": "Indirizzi crittografici",
+      "formatTitle": "Supporto formato universale",
+      "formatDesc": "Carica un'immagine contenente uno qualsiasi di questi codici a barre 2D e noi la decodificheremo immediatamente direttamente nel tuo browser."
+    },
+    "seo": {
+      "title": "Scanner di codici QR online gratuito: scansiona QR istantaneamente",
+      "desc": "Scansiona istantaneamente i codici QR utilizzando la fotocamera o caricando un'immagine. Elaborazione sicura, privata e lato client al 100%."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Strumenti professionali per codici a barre",
+      "title": "Genera",
+      "titleHighlight": "Codici a barre",
+      "titleSuffix": "Immediatamente",
+      "desc": "Crea tag di inventario, etichette di spedizione e codici di vendita al dettaglio di alta qualità in pochi secondi."
+    },
+    "workspace": {
+      "dataTitle": "Dati del codice a barre",
+      "contentLabel": "Contenuto del codice a barre",
+      "contentPlaceholder": "Inserisci numeri o testo...",
+      "formatLabel": "Codice a barre standard/formato",
+      "visualTitle": "Ottimizzazione visiva",
+      "widthLabel": "Larghezza barra",
+      "heightLabel": "Altezza barra",
+      "lineColor": "Colore linea",
+      "bgColor": "Colore di sfondo",
+      "showText": "Mostra valore testo sotto il codice",
+      "liveOutput": "Uscita in tempo reale",
+      "enterData": "Inserisci i dati per generare",
+      "download": "Scarica PNG ad alta risoluzione"
+    },
+    "features": {
+      "standardsTitle": "Formati di codici a barre supportati",
+      "standardsDesc": "Scegli lo standard giusto per il tuo settore. Dalla cassa al dettaglio alla logistica di magazzino.",
+      "c128Desc": "Estremamente compatto e versatile. Supporta l'intero set di caratteri ASCII. Ideale per inventario generale e sistemi di tracciabilità interna.",
+      "itf14Desc": "Progettato per livelli di imballaggio come cartoni o pallet. Utilizza bordi spessi per migliorare la precisione della scansione su cartone ondulato.",
+      "upcDesc": "Lo standard globale per la vendita al dettaglio nei punti vendita. EAN-13 è utilizzato in tutto il mondo, mentre UPC-A è lo standard in Nord America.",
+      "mfgTitle": "Costruito per la produzione e la logistica",
+      "mfgDesc": "Il nostro generatore crea file PNG nitidi e pixel-perfetti che si adattano magnificamente per la stampa. Non utilizziamo immagini raster sfocate: il nostro motore esegue il rendering della pura matematica SVG prima di convertirla in download PNG ad alta risoluzione.",
+      "mfgList1": "Precisione assoluta: nessun bordo sfocato.",
+      "mfgList2": "Imbottitura personalizzata: zone sicure per stampanti termiche.",
+      "mfgList3": "100% gratuito: nessun abbonamento per la generazione base.",
+      "mfgBadge": "Pronto dalla fabbrica",
+      "mfgBadgeDesc": "Contrasto elevato per scanner laser",
+      "ecoTitle": "Perfetto per l'e-commerce e la vendita al dettaglio",
+      "ecoDesc": "Che tu stia pubblicando un nuovo prodotto su Amazon (FBA) o creando la tua vetrina Shopify, la generazione di codici UPC e EAN è necessaria per la distribuzione globale.",
+      "btnUpc": "Genera ora il codice UPC",
+      "btnEan": "Genera subito il codice EAN-13"
+    },
+    "seo": {
+      "title": "Generatore di codici a barre online gratuito - Crea codici a barre 1D",
+      "desc": "Genera istantaneamente codici a barre 1D professionali. Supporto per Code-128, UPC, EAN, ITF-14 e altro. Gratuito, sicuro e pronto per il download in PNG ad alta risoluzione."
+    }
+  },
+  "nav": {
+    "allTools": "Tutti gli strumenti",
+    "generatorDesc": "Crea oltre 34 tipi di QR",
+    "barcodeDesc": "Codici a barre 1D/2D Pro",
+    "scanDesc": "Leggi dalla fotocamera",
+    "catSocial": "Sociali e media",
+    "catBusiness": "Affari e collegamenti",
+    "catFinance": "Finanza e negozio",
+    "catFiles": "File e dati",
+    "catRetail": "Vendita al dettaglio e prodotti",
+    "catIndustrial": "Industriale e dati",
+    "company": "Azienda",
+    "privacy": "politica sulla riservatezza",
+    "terms": "Termini di servizio"
   }
 }

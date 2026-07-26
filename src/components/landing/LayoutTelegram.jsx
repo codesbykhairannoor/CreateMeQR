@@ -77,7 +77,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
 
       <div className="hq-container">
         <div style={{ textAlign: 'center', marginBottom: 60 }}>
-          <h2 style={{ fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: 800 }}>{t.heroTitle} <br/>for {typeName}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(36px, 5vw, 56px)' }}>{t.heroTitle} <br/>for {typeName}</h2>
           <p style={{ color: 'var(--hq-text-muted)', fontSize: 18 }}>{t.heroSubtitle}</p>
         </div>
 
@@ -121,17 +121,17 @@ function LayoutTelegram({ qrType = 'telegram' }) {
         <div className="hq-tg-grid">
           <div className="hq-tg-card" style={{ background: '#fff', border: '1px solid #e5e5e5', borderRadius: 16, padding: 24, boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
             <div className="hq-tg-icon-wrap" style={{ background: '#e3f2fd', color: '#2481cc', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}><ShieldCheck size={24} /></div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 12px 0', color: '#000' }}>{translate('featTools.telegram.t1') || t.comp1Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ fontSize: 18,  margin: '0 0 12px 0', color: '#000' }}>{translate('featTools.telegram.t1') || t.comp1Title}</h3>
             <p style={{ color: '#707579', fontSize: 14, margin: 0 }}>{translate('featTools.telegram.d1') || t.comp1Desc}</p>
           </div>
           <div className="hq-tg-card" style={{ background: '#fff', border: '1px solid #e5e5e5', borderRadius: 16, padding: 24, boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
             <div className="hq-tg-icon-wrap" style={{ background: '#e3f2fd', color: '#2481cc', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}><Zap size={24} /></div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 12px 0', color: '#000' }}>{translate('featTools.telegram.t2') || t.comp2Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ fontSize: 18,  margin: '0 0 12px 0', color: '#000' }}>{translate('featTools.telegram.t2') || t.comp2Title}</h3>
             <p style={{ color: '#707579', fontSize: 14, margin: 0 }}>{translate('featTools.telegram.d2') || t.comp2Desc}</p>
           </div>
           <div className="hq-tg-card" style={{ background: '#fff', border: '1px solid #e5e5e5', borderRadius: 16, padding: 24, boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
             <div className="hq-tg-icon-wrap" style={{ background: '#e3f2fd', color: '#2481cc', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}><Lock size={24} /></div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 12px 0', color: '#000' }}>{translate('featTools.telegram.t3') || t.comp3Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ fontSize: 18,  margin: '0 0 12px 0', color: '#000' }}>{translate('featTools.telegram.t3') || t.comp3Title}</h3>
             <p style={{ color: '#707579', fontSize: 14, margin: 0 }}>{translate('featTools.telegram.d3') || t.comp3Desc}</p>
           </div>
         </div>
@@ -139,7 +139,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
       
       <div style={{ background: 'var(--hq-card)', padding: '100px 0', borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.telegram.q${num}`);

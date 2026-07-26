@@ -36,6 +36,8 @@ export const PSEO_ROUTES = {
   '/amazon-qr-code-generator': 'amazon',
   '/online-booking-qr-code': 'booking',
   '/file-qr-code-generator': 'file',
+  '/barcode-generator': 'barcode',
+  '/scan-qr': 'scanqr',
 };
 // 30 Languages Supported
 export const LANGS = [

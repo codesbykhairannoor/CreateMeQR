@@ -79,27 +79,27 @@ function LayoutSMS({ qrType = 'sms' }) {
       <div className="hq-container">
         <div className="hq-chat-hero">
           <div style={{ color: 'var(--hq-accent)', marginBottom: 24 }}><MessageSquare size={64} /></div>
-          <h2>{t.heroTitle} <br/>{typeName}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>{typeName}</h2>
           <p>{t.heroSubtitle}</p>
         </div>
 
         <div className="hq-chat-bubbles">
           <div className="hq-bubble left" style={{ background: 'var(--hq-card)', border: 'none', borderBottomLeftRadius: 4 }}>
-            <h3 style={{ color: 'var(--hq-accent)' }}><ShieldCheck size={20}/> {translate('featTools.sms.t1') || t.comp1Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ color: 'var(--hq-accent)' }}><ShieldCheck size={20}/> {translate('featTools.sms.t1') || t.comp1Title}</h3>
             <div>{translate('featTools.sms.d1') || t.comp1Desc}</div>
           </div>
           <div className="hq-bubble right" style={{ background: 'var(--hq-accent)', color: '#fff', border: 'none', borderBottomRightRadius: 4 }}>
-            <h3 style={{ color: '#fff' }}><Zap size={20}/> {translate('featTools.sms.t2') || t.comp2Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ color: '#fff' }}><Zap size={20}/> {translate('featTools.sms.t2') || t.comp2Title}</h3>
             <div style={{ opacity: 0.9 }}>{translate('featTools.sms.d2') || t.comp2Desc}</div>
           </div>
           <div className="hq-bubble left" style={{ background: 'var(--hq-card)', border: 'none', borderBottomLeftRadius: 4 }}>
-            <h3 style={{ color: 'var(--hq-accent)' }}><Lock size={20}/> {translate('featTools.sms.t3') || t.comp3Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ color: 'var(--hq-accent)' }}><Lock size={20}/> {translate('featTools.sms.t3') || t.comp3Title}</h3>
             <div>{translate('featTools.sms.d3') || t.comp3Desc}</div>
           </div>
         </div>
 
         <div style={{ textAlign: 'center', marginBottom: 60 }}>
-          <h2 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 800 }}>{t.stepsTitle} {typeName}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(28px, 4vw, 40px)' }}>{t.stepsTitle} {typeName}</h2>
         </div>
 
         <div style={{ marginBottom: 120 }}>
@@ -121,7 +121,7 @@ function LayoutSMS({ qrType = 'sms' }) {
 
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container">
-          <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

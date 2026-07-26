@@ -84,7 +84,7 @@ function LayoutCrypto({ qrType = 'crypto' }) {
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 12, padding: '8px 16px', background: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)', borderRadius: 100, marginBottom: 24, fontSize: 14, color: 'var(--hq-accent)' }}>
             <Activity size={16} /> Secure Payment Gateway
           </div>
-          <h2>{t.heroTitle} <br/>for {typeName}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>for {typeName}</h2>
           <p>{t.heroSubtitle}</p>
         </div>
 
@@ -134,17 +134,17 @@ function LayoutCrypto({ qrType = 'crypto' }) {
         <div className="hq-cryp-features">
           <div className="hq-cryp-feature" style={{ background: '#111', border: '1px solid #333', borderRadius: 0, padding: 40, borderLeft: '4px solid #f7931a' }}>
             <div style={{ color: '#f7931a', marginBottom: 20 }}><ShieldCheck size={32} /></div>
-            <h3 style={{ color: '#fff', fontSize: 20 }}>{translate('featTools.crypto.t1') || t.comp1Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ color: '#fff', fontSize: 20 }}>{translate('featTools.crypto.t1') || t.comp1Title}</h3>
             <p style={{ color: '#888' }}>{translate('featTools.crypto.d1') || t.comp1Desc}</p>
           </div>
           <div className="hq-cryp-feature" style={{ background: '#111', border: '1px solid #333', borderRadius: 0, padding: 40, borderLeft: '4px solid #627eea' }}>
             <div style={{ color: '#627eea', marginBottom: 20 }}><Zap size={32} /></div>
-            <h3 style={{ color: '#fff', fontSize: 20 }}>{translate('featTools.crypto.t2') || t.comp2Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ color: '#fff', fontSize: 20 }}>{translate('featTools.crypto.t2') || t.comp2Title}</h3>
             <p style={{ color: '#888' }}>{translate('featTools.crypto.d2') || t.comp2Desc}</p>
           </div>
           <div className="hq-cryp-feature" style={{ background: '#111', border: '1px solid #333', borderRadius: 0, padding: 40, borderLeft: '4px solid #14f195' }}>
             <div style={{ color: '#14f195', marginBottom: 20 }}><Lock size={32} /></div>
-            <h3 style={{ color: '#fff', fontSize: 20 }}>{translate('featTools.crypto.t3') || t.comp3Title}</h3>
+            <h3 className="font-bold tracking-tighter" style={{ color: '#fff', fontSize: 20 }}>{translate('featTools.crypto.t3') || t.comp3Title}</h3>
             <p style={{ color: '#888' }}>{translate('featTools.crypto.d3') || t.comp3Desc}</p>
           </div>
         </div>
@@ -152,7 +152,7 @@ function LayoutCrypto({ qrType = 'crypto' }) {
       
       <div style={{ borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800, fontFamily: '-apple-system, sans-serif' }}>
-          <h2 style={{ paddingTop: 120, fontSize: 36, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 36,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.crypto.q${num}`);

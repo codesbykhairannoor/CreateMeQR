@@ -930,5 +930,193 @@
       "t3": "Cloud Drive Compatible",
       "d3": "Mag-paste ng mga link mula sa Google Drive, Dropbox, o OneDrive para sa tuluy-tuloy na pagbabahagi ng cloud file."
     }
+  },
+  "info": {
+    "about": {
+      "hero": {
+        "title": "Tungkol sa Amin",
+        "subtitle": "Pagpapalakas ng mga pandaigdigang koneksyon sa pamamagitan ng tuluy-tuloy na teknolohiyang QR.",
+        "desc": "Binuo namin ang platform na ito para pasimplehin kung paano nagbabahagi ng impormasyon ang mundo. Mabilis, maaasahan, at ganap na pribado."
+      },
+      "mission": {
+        "title": "Ang Aming Misyon",
+        "desc": "Upang magbigay ng isang premium, pang-privacy-first QR code generator na hindi sumusubaybay sa iyong data o nakakandado ng iyong mga code sa likod ng mga paywall."
+      },
+      "values": {
+        "title": "Mga Pangunahing Halaga",
+        "v1": "Privacy Una",
+        "d1": "Ang pagbuo ng panig ng kliyente ay nangangahulugan na ang iyong data ay hindi kailanman naaapektuhan ang aming mga server.",
+        "v2": "Libre Magpakailanman",
+        "d2": "Ang mga pangunahing tampok ay palaging mananatiling libre nang walang mga nakatagong limitasyon.",
+        "v3": "Global na Abot",
+        "d3": "Na-localize sa 30 wika para maghatid ng tunay na internasyonal na madla."
+      }
+    },
+    "privacy": {
+      "hero": {
+        "title": "Patakaran sa Privacy",
+        "subtitle": "Ang iyong data ay sa iyo. Panatilihin namin ito sa ganoong paraan."
+      },
+      "sections": {
+        "s1": "Pangongolekta ng Datos",
+        "d1": "Hindi namin kinokolekta o iniimbak ang data na iyong inilagay sa generator ng QR code. Lahat ng henerasyon ay nangyayari nang lokal sa iyong device.",
+        "s2": "Cookies at Analytics",
+        "d2": "Gumagamit kami ng kaunting analytics upang maunawaan ang pinagsama-samang mga pattern ng trapiko. Walang personal na nakakapagpakilalang impormasyon ang sinusubaybayan.",
+        "s3": "Mga Serbisyo ng Third-Party",
+        "d3": "Hindi namin ibinebenta, inuupahan, o ibinabahagi ang iyong data sa anumang mga third party."
+      }
+    },
+    "terms": {
+      "hero": {
+        "title": "Mga Tuntunin ng Serbisyo",
+        "subtitle": "Mga panuntunan sa kalsada para sa paggamit ng aming platform."
+      },
+      "sections": {
+        "s1": "Katanggap-tanggap na Paggamit",
+        "d1": "Sumasang-ayon ka na huwag gamitin ang aming generator upang lumikha ng mga QR code na nagli-link sa nakakahamak, ilegal, o nakakapinsalang nilalaman.",
+        "s2": "Availability ng Serbisyo",
+        "d2": "Nagsusumikap kami para sa 99.9% uptime ngunit nagbibigay ng serbisyo 'gaya ng dati' nang walang garantiya.",
+        "s3": "Intelektwal na Ari-arian",
+        "d3": "Pinapanatili mo ang lahat ng karapatan sa nilalaman na iyong nabuo. Ang code ng platform at disenyo ay pag-aari namin."
+      }
+    },
+    "compare": {
+      "hero": {
+        "title": "Bakit Kami Piliin?",
+        "subtitle": "Tingnan kung paano tayo nagsasalansan laban sa kumpetisyon."
+      },
+      "metrics": {
+        "title": "Tampok",
+        "m1": "Pagpepresyo",
+        "us1": "100% Libre",
+        "them1": "$15/buwan",
+        "m2": "Pagkapribado",
+        "us2": "Client-Side (Walang Pagsubaybay)",
+        "them2": "Pag-aani ng Data sa Gilid ng Server",
+        "m3": "Mga watermark",
+        "us3": "wala",
+        "them3": "Mga Sapilitang Watermark sa Libreng Plano",
+        "m4": "Expiration",
+        "us4": "Hindi Mag-e-expire ang mga Code",
+        "them4": "Mag-e-expire pagkatapos ng 14 na araw",
+        "m5": "Mga wika",
+        "us5": "30 Mga Wikang Sinusuportahan",
+        "them5": "English Lang"
+      }
+    },
+    "nav": {
+      "about": "Tungkol sa Amin",
+      "privacy": "Patakaran sa Privacy",
+      "terms": "Mga Tuntunin ng Serbisyo",
+      "compare": "Ikumpara"
+    }
+  },
+  "scanqr": {
+    "hero": {
+      "badge": "Cyber ​​Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "QR Scanner",
+      "desc": "Mag-scan mula sa iyong webcam o mag-upload ng larawan. 100% pribado, walang data na ipinapadala sa aming mga server."
+    },
+    "workspace": {
+      "initCam": "Magsimula ng Camera",
+      "initCamDesc": "Mag-scan ng QR code gamit ang camera ng iyong device",
+      "startBtn": "Simulan ang Pag-scan",
+      "cancelBtn": "Kanselahin",
+      "successTitle": "Matagumpay na Pag-scan",
+      "scanAnother": "Mag-scan ng Isa pang Code",
+      "orUpload": "O mag-upload ng larawan",
+      "uploadBtn": "Mag-upload ng QR Image File",
+      "decodedResult": "Na-decode na Resulta",
+      "copyBtn": "Kopyahin ang Data",
+      "copied": "Kinopya!",
+      "openLink": "Buksan ang Link",
+      "notLink": "Hindi isang link",
+      "waiting": "Naghihintay para sa pag-scan...",
+      "waitingDesc": "Ituro ang iyong camera sa isang QR code o mag-upload ng larawan.",
+      "errCam": "Nabigong simulan ang camera. Pakitiyak na nagbigay ka ng mga pahintulot sa camera.",
+      "errImg": "Walang nakitang QR code sa larawan. Mangyaring subukan ang isa pang larawan."
+    },
+    "features": {
+      "whyTitle": "Bakit gagamitin ang aming Scanner?",
+      "noAppTitle": "Walang App na Kinakailangan",
+      "noAppDesc": "Direktang i-scan ang mga QR code mula sa iyong browser nang hindi nagda-download ng anumang mga bloated na app. Perpektong gumagana sa iOS, Android, at Desktop.",
+      "secureTitle": "100% Secure at Pribado",
+      "secureDesc": "Ang iyong mga larawan at feed ng camera ay ganap na pinoproseso sa iyong device. Hindi namin kailanman ipinapadala ang iyong data ng pag-scan sa anumang mga panlabas na server.",
+      "fastTitle": "Mabilis na Kidlat",
+      "fastDesc": "Ang na-optimize na WASM engine ay agad na nagde-decode ng mga kumplikadong QR code, kahit na sa mababang ilaw o may malabong mga camera.",
+      "moreTitle": "Higit pa sa mga URL.",
+      "moreDesc": "Agad na nakikilala ng aming advanced scanner ang iba't ibang uri ng payload. Hindi lamang nito binabasa ang teksto, naiintindihan nito ang konteksto.",
+      "moreList1": "Pag-parse ng Mga Kredensyal ng WiFi",
+      "moreList2": "Pag-import ng Contact sa vCard",
+      "moreList3": "Mga Crypto Address",
+      "formatTitle": "Suporta sa Universal Format",
+      "formatDesc": "Mag-upload ng larawang naglalaman ng alinman sa mga 2D na barcode na ito, at agad naming ide-decode ito mismo sa iyong browser."
+    },
+    "seo": {
+      "title": "Libreng QR Code Scanner Online - I-scan ang QR Agad",
+      "desc": "I-scan kaagad ang mga QR code gamit ang iyong camera o sa pamamagitan ng pag-upload ng larawan. 100% secure, pribado, at pagpoproseso sa panig ng kliyente."
+    }
+  },
+  "barcode": {
+    "hero": {
+      "badge": "Mga Propesyonal na Barcode Tools",
+      "title": "Bumuo",
+      "titleHighlight": "Mga Barcode",
+      "titleSuffix": "Agad-agad",
+      "desc": "Gumawa ng mataas na kalidad na mga tag ng imbentaryo, mga label sa pagpapadala, at mga retail code sa ilang segundo."
+    },
+    "workspace": {
+      "dataTitle": "Data ng Barcode",
+      "contentLabel": "Nilalaman ng Barcode",
+      "contentPlaceholder": "Maglagay ng mga numero o text...",
+      "formatLabel": "Barcode Standard / Format",
+      "visualTitle": "Visual Tuning",
+      "widthLabel": "Lapad ng Bar",
+      "heightLabel": "Taas ng Bar",
+      "lineColor": "Kulay ng Linya",
+      "bgColor": "Kulay ng Background",
+      "showText": "Ipakita ang Halaga ng Teksto sa Ibaba ng Code",
+      "liveOutput": "Live na Output",
+      "enterData": "Maglagay ng data na bubuo",
+      "download": "I-download ang High-Res PNG"
+    },
+    "features": {
+      "standardsTitle": "Mga Sinusuportahang Format ng Barcode",
+      "standardsDesc": "Piliin ang tamang pamantayan para sa iyong industriya. Mula sa retail checkout hanggang sa warehouse logistics.",
+      "c128Desc": "Lubos na compact at maraming nalalaman. Sinusuportahan ang buong hanay ng character na ASCII. Tamang-tama para sa pangkalahatang imbentaryo at panloob na mga sistema ng pagsubaybay.",
+      "itf14Desc": "Idinisenyo para sa mga antas ng packaging tulad ng mga karton o pallet. Gumagamit ng makapal na mga hangganan upang mapabuti ang katumpakan ng pag-scan sa corrugated na karton.",
+      "upcDesc": "Ang pandaigdigang pamantayan para sa point-of-sale retail. Ang EAN-13 ay ginagamit sa buong mundo, habang ang UPC-A ay pamantayan sa North America.",
+      "mfgTitle": "Binuo para sa Produksyon at Logistics",
+      "mfgDesc": "Gumagawa ang aming generator ng malulutong, perpektong pixel na PNG file na maganda ang sukat para sa pag-print. Hindi kami gumagamit ng mga malabo na larawan ng raster—nagre-render ang aming engine ng purong SVG math bago ito i-convert sa mga high-res na PNG na pag-download.",
+      "mfgList1": "Ganap na Katumpakan: Walang malabong mga gilid.",
+      "mfgList2": "Custom Padding: Mga ligtas na zone para sa mga thermal printer.",
+      "mfgList3": "100% Libre: Walang mga subscription para sa pangunahing henerasyon.",
+      "mfgBadge": "Handa sa Pabrika",
+      "mfgBadgeDesc": "Mataas na contrast para sa mga laser scanner",
+      "ecoTitle": "Perpekto para sa E-Commerce at Retail",
+      "ecoDesc": "Naglilista ka man ng bagong produkto sa Amazon (FBA) o nagse-set up ng sarili mong Shopify storefront, ang pagbuo ng mga UPC at EAN code ay kinakailangan para sa pandaigdigang pamamahagi.",
+      "btnUpc": "Bumuo ng UPC Code Ngayon",
+      "btnEan": "Bumuo ng EAN-13 Code Ngayon"
+    },
+    "seo": {
+      "title": "Libreng Barcode Generator Online - Lumikha ng 1D Barcodes",
+      "desc": "Bumuo ng mga propesyonal na 1D barcode kaagad. Suporta para sa Code-128, UPC, EAN, ITF-14, at higit pa. Libre, secure, at handang i-download sa high-res na PNG."
+    }
+  },
+  "nav": {
+    "allTools": "Lahat ng Tools",
+    "generatorDesc": "Gumawa ng 34+ na Uri ng QR",
+    "barcodeDesc": "Mga 1D/2D Pro Barcode",
+    "scanDesc": "Basahin mula sa Camera",
+    "catSocial": "Social at Media",
+    "catBusiness": "Negosyo at Mga Link",
+    "catFinance": "Pananalapi at Tindahan",
+    "catFiles": "Mga File at Data",
+    "catRetail": "Pagtitingi at Mga Produkto",
+    "catIndustrial": "Pang-industriya at Data",
+    "company": "kumpanya",
+    "privacy": "Patakaran sa Privacy",
+    "terms": "Mga Tuntunin ng Serbisyo"
   }
 }
