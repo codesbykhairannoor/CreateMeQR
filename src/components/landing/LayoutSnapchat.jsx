@@ -20,7 +20,7 @@ function LayoutSnapchat({ qrType = 'snapchat' }) {
           --hq-border: #222222;
           --hq-accent: #fffc00; /* snapchat yellow */
           --hq-accent-glow: rgba(255, 252, 0, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
         }
@@ -70,40 +70,47 @@ function LayoutSnapchat({ qrType = 'snapchat' }) {
       </div>
 
       <div className="hq-container hq-sc-grid">
-        <div className="hq-sc-card">
-          <div className="hq-sc-icon"><ShieldCheck size={32} /></div>
-          <h3>{t.comp1Title}</h3>
-          <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{t.comp1Desc}</p>
+        <div className="hq-sc-card" style={{ background: '#FFFC00', border: 'none', color: '#000', borderRadius: 32 }}>
+          <div className="hq-sc-icon" style={{ background: '#000', color: '#FFFC00' }}><ShieldCheck size={32} /></div>
+          <h3 style={{ fontWeight: 900, textTransform: 'uppercase' }}>{translate('featTools.snapchat.t1') || t.comp1Title}</h3>
+          <p style={{ color: '#333', lineHeight: 1.6, fontWeight: 500 }}>{translate('featTools.snapchat.d1') || t.comp1Desc}</p>
         </div>
-        <div className="hq-sc-card">
-          <div className="hq-sc-icon"><Zap size={32} /></div>
-          <h3>{t.comp2Title}</h3>
-          <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{t.comp2Desc}</p>
+        <div className="hq-sc-card" style={{ background: '#FFFC00', border: 'none', color: '#000', borderRadius: 32 }}>
+          <div className="hq-sc-icon" style={{ background: '#000', color: '#FFFC00' }}><Zap size={32} /></div>
+          <h3 style={{ fontWeight: 900, textTransform: 'uppercase' }}>{translate('featTools.snapchat.t2') || t.comp2Title}</h3>
+          <p style={{ color: '#333', lineHeight: 1.6, fontWeight: 500 }}>{translate('featTools.snapchat.d2') || t.comp2Desc}</p>
         </div>
-        <div className="hq-sc-card">
-          <div className="hq-sc-icon"><Lock size={32} /></div>
-          <h3>{t.comp3Title}</h3>
-          <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{t.comp3Desc}</p>
+        <div className="hq-sc-card" style={{ background: '#FFFC00', border: 'none', color: '#000', borderRadius: 32 }}>
+          <div className="hq-sc-icon" style={{ background: '#000', color: '#FFFC00' }}><Lock size={32} /></div>
+          <h3 style={{ fontWeight: 900, textTransform: 'uppercase' }}>{translate('featTools.snapchat.t3') || t.comp3Title}</h3>
+          <p style={{ color: '#333', lineHeight: 1.6, fontWeight: 500 }}>{translate('featTools.snapchat.d3') || t.comp3Desc}</p>
         </div>
       </div>
       
       <div style={{ background: '#111', padding: '100px 0', paddingBottom: 160 }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 40, color: 'white' }}>{t.faqTitle}</h2>
+          <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 40, color: 'white' }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A }, { q: t.faq2Q, a: t.faq2A }, { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 16, border: '1px solid var(--hq-border)' }}>
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '20px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
-                  <span style={{ fontSize: 16, fontWeight: 700 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.snapchat.q${num}`);
+              const a = translate(`faqTools.snapchat.a${num}`);
+              if (!q || q === `faqTools.snapchat.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? '#FFFC00' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? '#FFFC00' : 'var(--hq-border)', color: openFaq === i ? '#000' : 'var(--hq-text-muted)', padding: 8, borderRadius: 12, transition: 'all 0.3s' }}>
+                      <Ghost size={20} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
                 <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
-                  <p style={{ padding: '0 24px 24px 24px', color: 'var(--hq-text-muted)' }}>{faq.a}</p>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

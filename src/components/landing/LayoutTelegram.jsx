@@ -21,7 +21,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
           --hq-accent: #3390ec;
           --hq-accent-glow: rgba(51, 144, 236, 0.1);
           --tg-chat-bg: #8ba3cb;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 140px;
@@ -119,41 +119,48 @@ function LayoutTelegram({ qrType = 'telegram' }) {
         </div>
 
         <div className="hq-tg-grid">
-          <div className="hq-tg-card">
-            <div className="hq-tg-icon-wrap"><ShieldCheck size={32} /></div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 12px 0' }}>{t.comp1Title}</h3>
-            <p style={{ color: 'var(--hq-text-muted)', fontSize: 15 }}>{t.comp1Desc}</p>
+          <div className="hq-tg-card" style={{ background: '#fff', border: '1px solid #e5e5e5', borderRadius: 16, padding: 24, boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
+            <div className="hq-tg-icon-wrap" style={{ background: '#e3f2fd', color: '#2481cc', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}><ShieldCheck size={24} /></div>
+            <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 12px 0', color: '#000' }}>{translate('featTools.telegram.t1') || t.comp1Title}</h3>
+            <p style={{ color: '#707579', fontSize: 14, margin: 0 }}>{translate('featTools.telegram.d1') || t.comp1Desc}</p>
           </div>
-          <div className="hq-tg-card">
-            <div className="hq-tg-icon-wrap"><Zap size={32} /></div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 12px 0' }}>{t.comp2Title}</h3>
-            <p style={{ color: 'var(--hq-text-muted)', fontSize: 15 }}>{t.comp2Desc}</p>
+          <div className="hq-tg-card" style={{ background: '#fff', border: '1px solid #e5e5e5', borderRadius: 16, padding: 24, boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
+            <div className="hq-tg-icon-wrap" style={{ background: '#e3f2fd', color: '#2481cc', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}><Zap size={24} /></div>
+            <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 12px 0', color: '#000' }}>{translate('featTools.telegram.t2') || t.comp2Title}</h3>
+            <p style={{ color: '#707579', fontSize: 14, margin: 0 }}>{translate('featTools.telegram.d2') || t.comp2Desc}</p>
           </div>
-          <div className="hq-tg-card">
-            <div className="hq-tg-icon-wrap"><Lock size={32} /></div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 12px 0' }}>{t.comp3Title}</h3>
-            <p style={{ color: 'var(--hq-text-muted)', fontSize: 15 }}>{t.comp3Desc}</p>
+          <div className="hq-tg-card" style={{ background: '#fff', border: '1px solid #e5e5e5', borderRadius: 16, padding: 24, boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
+            <div className="hq-tg-icon-wrap" style={{ background: '#e3f2fd', color: '#2481cc', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}><Lock size={24} /></div>
+            <h3 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 12px 0', color: '#000' }}>{translate('featTools.telegram.t3') || t.comp3Title}</h3>
+            <p style={{ color: '#707579', fontSize: 14, margin: 0 }}>{translate('featTools.telegram.d3') || t.comp3Desc}</p>
           </div>
         </div>
       </div>
       
       <div style={{ background: 'var(--hq-card)', padding: '100px 0', borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A }, { q: t.faq2Q, a: t.faq2A }, { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 12, padding: 8 }}>
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '16px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.telegram.q${num}`);
+              const a = translate(`faqTools.telegram.a${num}`);
+              if (!q || q === `faqTools.telegram.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? '#24A1DE' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? 'rgba(36,161,222,0.1)' : 'var(--hq-accent-glow)', padding: 8, borderRadius: 12, color: openFaq === i ? '#24A1DE' : 'var(--hq-accent)', transition: 'all 0.3s' }}>
+                      <Send size={20} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
                 <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
-                  <p style={{ padding: '0 24px 24px 24px', color: 'var(--hq-text-muted)' }}>{faq.a}</p>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

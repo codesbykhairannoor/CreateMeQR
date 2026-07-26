@@ -1,4 +1,5 @@
 import React from 'react';
+
 import LayoutURL from './landing/LayoutURL';
 import LayoutWiFi from './landing/LayoutWiFi';
 import LayoutVCard from './landing/LayoutVCard';
@@ -24,61 +25,67 @@ import LayoutSpotify from './landing/LayoutSpotify';
 import LayoutPaypal from './landing/LayoutPaypal';
 import LayoutVenmo from './landing/LayoutVenmo';
 
+// Top 10 new layouts
+import LayoutPDF from './landing/LayoutPDF';
+import LayoutGoogleForms from './landing/LayoutGoogleForms';
+import LayoutGoogleReview from './landing/LayoutGoogleReview';
+import LayoutImage from './landing/LayoutImage';
+import LayoutLinkInBio from './landing/LayoutLinkInBio';
+import LayoutVideo from './landing/LayoutVideo';
+import LayoutAudio from './landing/LayoutAudio';
+import LayoutAmazon from './landing/LayoutAmazon';
+import LayoutBooking from './landing/LayoutBooking';
+import LayoutFile from './landing/LayoutFile';
+
 function LandingContent({ qrType = 'url' }) {
-  // Return the specific, unique layout for each tool
+  let LayoutComponent = LayoutURL;
+
   switch (qrType) {
-    case 'url':
-      return <LayoutURL qrType={qrType} />;
-    case 'wifi':
-      return <LayoutWiFi qrType={qrType} />;
-    case 'vcard':
-      return <LayoutVCard qrType={qrType} />;
-    case 'text':
-      return <LayoutText qrType={qrType} />;
-    case 'email':
-      return <LayoutEmail qrType={qrType} />;
-    case 'sms':
-      return <LayoutSMS qrType={qrType} />;
-    case 'location':
-      return <LayoutLocation qrType={qrType} />;
-    case 'phone':
-      return <LayoutPhone qrType={qrType} />;
-    case 'event':
-      return <LayoutEvent qrType={qrType} />;
-    case 'whatsapp':
-      return <LayoutWhatsApp qrType={qrType} />;
-    case 'youtube':
-      return <LayoutYouTube qrType={qrType} />;
-    case 'instagram':
-      return <LayoutInstagram qrType={qrType} />;
-    case 'crypto':
-      return <LayoutCrypto qrType={qrType} />;
-    case 'appstore':
-      return <LayoutAppStore qrType={qrType} />;
-    case 'facebook':
-      return <LayoutFacebook qrType={qrType} />;
-    case 'twitter':
-      return <LayoutTwitter qrType={qrType} />;
-    case 'tiktok':
-      return <LayoutTikTok qrType={qrType} />;
-    case 'linkedin':
-      return <LayoutLinkedIn qrType={qrType} />;
-    case 'telegram':
-      return <LayoutTelegram qrType={qrType} />;
-    case 'snapchat':
-      return <LayoutSnapchat qrType={qrType} />;
-    case 'discord':
-      return <LayoutDiscord qrType={qrType} />;
-    case 'spotify':
-      return <LayoutSpotify qrType={qrType} />;
-    case 'paypal':
-      return <LayoutPaypal qrType={qrType} />;
-    case 'venmo':
-      return <LayoutVenmo qrType={qrType} />;
-    default:
-      // Fallback
-      return <LayoutURL qrType={qrType} />;
+    case 'url': LayoutComponent = LayoutURL; break;
+    case 'wifi': LayoutComponent = LayoutWiFi; break;
+    case 'vcard': LayoutComponent = LayoutVCard; break;
+    case 'text': LayoutComponent = LayoutText; break;
+    case 'email': LayoutComponent = LayoutEmail; break;
+    case 'sms': LayoutComponent = LayoutSMS; break;
+    case 'location': LayoutComponent = LayoutLocation; break;
+    case 'phone': LayoutComponent = LayoutPhone; break;
+    case 'event': LayoutComponent = LayoutEvent; break;
+    case 'whatsapp': LayoutComponent = LayoutWhatsApp; break;
+    case 'youtube': LayoutComponent = LayoutYouTube; break;
+    case 'instagram': LayoutComponent = LayoutInstagram; break;
+    case 'crypto': LayoutComponent = LayoutCrypto; break;
+    case 'appstore': LayoutComponent = LayoutAppStore; break;
+    case 'facebook': LayoutComponent = LayoutFacebook; break;
+    case 'twitter': LayoutComponent = LayoutTwitter; break;
+    case 'tiktok': LayoutComponent = LayoutTikTok; break;
+    case 'linkedin': LayoutComponent = LayoutLinkedIn; break;
+    case 'telegram': LayoutComponent = LayoutTelegram; break;
+    case 'snapchat': LayoutComponent = LayoutSnapchat; break;
+    case 'discord': LayoutComponent = LayoutDiscord; break;
+    case 'spotify': LayoutComponent = LayoutSpotify; break;
+    case 'paypal': LayoutComponent = LayoutPaypal; break;
+    case 'venmo': LayoutComponent = LayoutVenmo; break;
+    
+    // Top 10 new layouts
+    case 'pdf': LayoutComponent = LayoutPDF; break;
+    case 'gforms': LayoutComponent = LayoutGoogleForms; break;
+    case 'greview': LayoutComponent = LayoutGoogleReview; break;
+    case 'image': LayoutComponent = LayoutImage; break;
+    case 'linkinbio': LayoutComponent = LayoutLinkInBio; break;
+    case 'video': LayoutComponent = LayoutVideo; break;
+    case 'audio': LayoutComponent = LayoutAudio; break;
+    case 'amazon': LayoutComponent = LayoutAmazon; break;
+    case 'booking': LayoutComponent = LayoutBooking; break;
+    case 'file': LayoutComponent = LayoutFile; break;
+    
+    default: LayoutComponent = LayoutURL; break;
   }
+
+  return (
+    
+      <LayoutComponent qrType={qrType} />
+    
+  );
 }
 
 export default LandingContent;

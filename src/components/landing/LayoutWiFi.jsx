@@ -21,7 +21,7 @@ function LayoutWiFi({ qrType = 'wifi' }) {
           /* LOCKED TO BASE PALETTE */
           --hq-accent: #2563eb; 
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -120,18 +120,29 @@ function LayoutWiFi({ qrType = 'wifi' }) {
             </div>
             <h2>{t.heroTitle} <br/><span style={{ color: 'var(--hq-accent)' }}>{typeName}</span></h2>
             <p>{t.heroSubtitle}</p>
-            <div className="hq-feature-list">
-              <div className="hq-feature-item">
-                <div className="hq-feature-icon"><CheckCircle2 /></div>
-                <span>{t.comp1Title}</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
+              <div style={{ background: 'var(--hq-bg)', borderRadius: 32, padding: 48, border: '1px solid var(--hq-border)', position: 'relative', overflow: 'hidden', boxShadow: 'inset 0 0 100px rgba(0,0,0,0.05)' }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'var(--hq-accent)' }} />
+                <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
+                  <div style={{ flex: 1 }}>
+                    <h3 style={{ fontSize: 36, fontWeight: 900, marginBottom: 16 }}>{translate('featTools.wifi.t1') || t.comp1Title}</h3>
+                    <p style={{ fontSize: 20, color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.wifi.d1') || t.comp1Desc}</p>
+                  </div>
+                  <Wifi size={80} style={{ color: 'var(--hq-accent)', opacity: 0.5 }} />
+                </div>
               </div>
-              <div className="hq-feature-item">
-                <div className="hq-feature-icon"><Zap /></div>
-                <span>{t.comp2Title}</span>
-              </div>
-              <div className="hq-feature-item">
-                <div className="hq-feature-icon"><Lock /></div>
-                <span>{t.comp3Title}</span>
+              
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 32 }}>
+                <div style={{ background: 'var(--hq-card)', borderRadius: 32, padding: 48, border: '1px solid var(--hq-border)' }}>
+                  <ShieldCheck size={40} style={{ color: 'var(--hq-accent)', marginBottom: 24 }} />
+                  <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 16 }}>{translate('featTools.wifi.t2') || t.comp2Title}</h3>
+                  <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.wifi.d2') || t.comp2Desc}</p>
+                </div>
+                <div style={{ background: 'var(--hq-card)', borderRadius: 32, padding: 48, border: '1px solid var(--hq-border)' }}>
+                  <Lock size={40} style={{ color: 'var(--hq-accent)', marginBottom: 24 }} />
+                  <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 16 }}>{translate('featTools.wifi.t3') || t.comp3Title}</h3>
+                  <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.wifi.d3') || t.comp3Desc}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -167,31 +178,31 @@ function LayoutWiFi({ qrType = 'wifi' }) {
 
       <div className="hq-faq-section">
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, textAlign: 'center', marginBottom: 60 }}>
+          <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A },
-              { q: t.faq4Q, a: t.faq4A }
-            ].map((faq, i) => (
-              <div key={i} style={{ border: '1px solid var(--hq-border)', borderRadius: 24, overflow: 'hidden' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left' }}
-                >
-                  <span style={{ fontSize: 18, fontWeight: 700, color: 'var(--hq-text)' }}>{faq.q}</span>
-                  <span style={{ color: 'var(--hq-accent)' }}><ChevronDown open={openFaq === i} /></span>
-                </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <div style={{ padding: '0 32px 32px 32px', color: 'var(--hq-text-muted)', lineHeight: 1.7 }}>
-                    {faq.a}
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.wifi.q${num}`);
+              const a = translate(`faqTools.wifi.a${num}`);
+              if (!q || q === `faqTools.wifi.q${num}`) return null;
+              return (
+                <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 20, border: '2px solid', borderColor: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                  <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                      <div style={{ padding: 8, borderRadius: 12, background: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-accent-glow)', color: openFaq === i ? '#fff' : 'var(--hq-accent)', transition: 'all 0.3s' }}>
+                        <Wifi size={20} />
+                      </div>
+                      <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                    </div>
+                    <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+                  </button>
+                  <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                    <p style={{ padding: '0 24px 24px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                   </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </div>

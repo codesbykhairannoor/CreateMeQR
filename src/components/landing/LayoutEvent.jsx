@@ -20,7 +20,7 @@ function LayoutEvent({ qrType = 'event' }) {
           --hq-border: #e2e8f0;
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -101,25 +101,25 @@ function LayoutEvent({ qrType = 'event' }) {
         </div>
 
         <div className="hq-event-grid">
-          <div className="hq-e-card">
-            <div className="hq-e-icon"><ShieldCheck /></div>
+          <div className="hq-e-card" style={{ background: 'var(--hq-bg)', borderTop: '4px solid var(--hq-accent)', borderBottom: '1px solid var(--hq-border)', borderLeft: '1px solid var(--hq-border)', borderRight: '1px solid var(--hq-border)' }}>
+            <div className="hq-e-icon" style={{ background: 'var(--hq-card)', border: '1px solid var(--hq-border)' }}><ShieldCheck /></div>
             <div className="hq-e-content">
-              <h3>{t.comp1Title}</h3>
-              <p>{t.comp1Desc}</p>
+              <h3>{translate('featTools.event.t1') || t.comp1Title}</h3>
+              <p>{translate('featTools.event.d1') || t.comp1Desc}</p>
             </div>
           </div>
-          <div className="hq-e-card">
-            <div className="hq-e-icon"><Zap /></div>
+          <div className="hq-e-card" style={{ background: 'var(--hq-bg)', borderTop: '4px solid var(--hq-accent)', borderBottom: '1px solid var(--hq-border)', borderLeft: '1px solid var(--hq-border)', borderRight: '1px solid var(--hq-border)' }}>
+            <div className="hq-e-icon" style={{ background: 'var(--hq-card)', border: '1px solid var(--hq-border)' }}><Zap /></div>
             <div className="hq-e-content">
-              <h3>{t.comp2Title}</h3>
-              <p>{t.comp2Desc}</p>
+              <h3>{translate('featTools.event.t2') || t.comp2Title}</h3>
+              <p>{translate('featTools.event.d2') || t.comp2Desc}</p>
             </div>
           </div>
-          <div className="hq-e-card">
-            <div className="hq-e-icon"><Lock /></div>
+          <div className="hq-e-card" style={{ background: 'var(--hq-bg)', borderTop: '4px solid var(--hq-accent)', borderBottom: '1px solid var(--hq-border)', borderLeft: '1px solid var(--hq-border)', borderRight: '1px solid var(--hq-border)' }}>
+            <div className="hq-e-icon" style={{ background: 'var(--hq-card)', border: '1px solid var(--hq-border)' }}><Lock /></div>
             <div className="hq-e-content">
-              <h3>{t.comp3Title}</h3>
-              <p>{t.comp3Desc}</p>
+              <h3>{translate('featTools.event.t3') || t.comp3Title}</h3>
+              <p>{translate('featTools.event.d3') || t.comp3Desc}</p>
             </div>
           </div>
         </div>
@@ -146,31 +146,30 @@ function LayoutEvent({ qrType = 'event' }) {
 
       <div style={{ background: 'var(--hq-card)', borderTop: '1px dashed var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
+          <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A },
-              { q: t.faq4Q, a: t.faq4A }
-            ].map((faq, i) => (
-              <div key={i} style={{ border: '1px solid var(--hq-border)', borderRadius: 24, overflow: 'hidden' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left' }}
-                >
-                  <span style={{ fontSize: 18, fontWeight: 700, color: 'var(--hq-text)' }}>{faq.q}</span>
-                  <span style={{ color: 'var(--hq-accent)' }}><ChevronDown open={openFaq === i} /></span>
-                </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <div style={{ padding: '0 32px 32px 32px', color: 'var(--hq-text-muted)', lineHeight: 1.7 }}>
-                    {faq.a}
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.event.q${num}`);
+              const a = translate(`faqTools.event.a${num}`);
+              if (!q || q === `faqTools.event.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: openFaq === i ? 'var(--hq-bg)' : 'transparent', borderRadius: 20, border: '2px solid', borderColor: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ padding: '8px 12px', background: 'var(--hq-accent-glow)', color: 'var(--hq-accent)', borderRadius: 8, fontWeight: 800, fontSize: 14 }}>
+                      Q{num}
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
                   </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+                </button>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <p style={{ padding: '0 32px 32px 80px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

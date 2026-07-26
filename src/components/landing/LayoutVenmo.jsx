@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Wallet, ShieldCheck, Zap, Lock, ChevronDown, Heart, MessageCircle } from 'lucide-react';
+import { Wallet, ShieldCheck, Zap, Lock, ChevronDown, Heart, MessageCircle, Banknote } from 'lucide-react';
 
 function LayoutVenmo({ qrType = 'venmo' }) {
   const { t: translate } = useTranslation();
@@ -20,7 +20,7 @@ function LayoutVenmo({ qrType = 'venmo' }) {
           --hq-border: #e6e6e6;
           --hq-accent: #008cff;
           --hq-accent-glow: rgba(0, 140, 255, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 100px;
@@ -57,11 +57,11 @@ function LayoutVenmo({ qrType = 'venmo' }) {
         <div className="hq-vn-feed">
           <div className="hq-vn-tx">
             <div className="hq-vn-tx-head">
-              <div className="hq-vn-avatar"><ShieldCheck size={28} /></div>
+              <div className="hq-vn-avatar" style={{ boxShadow: '0 0 0 4px rgba(0,140,255,0.2)' }}><ShieldCheck size={28} /></div>
               <div>
-                <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>Security Protocol <span style={{ fontWeight: 400, color: 'var(--hq-text-muted)' }}>paid</span> Privacy</div>
+                <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>{translate('featTools.venmo.t1') || t.comp1Title} <span style={{ fontWeight: 400, color: 'var(--hq-text-muted)' }}>paid</span> Privacy</div>
                 <div style={{ fontSize: 14, color: 'var(--hq-text-muted)', marginBottom: 8 }}>1h ago • 🌎</div>
-                <div style={{ fontSize: 16 }}>{t.comp1Title} 🛡️ {t.comp1Desc}</div>
+                <div style={{ fontSize: 16 }}>{translate('featTools.venmo.d1') || t.comp1Desc}</div>
               </div>
             </div>
             <div className="hq-vn-actions">
@@ -72,11 +72,11 @@ function LayoutVenmo({ qrType = 'venmo' }) {
           
           <div className="hq-vn-tx">
             <div className="hq-vn-tx-head">
-              <div className="hq-vn-avatar" style={{ background: '#f5a623' }}><Zap size={28} /></div>
+              <div className="hq-vn-avatar" style={{ background: '#f5a623', boxShadow: '0 0 0 4px rgba(245,166,35,0.2)' }}><Zap size={28} /></div>
               <div>
-                <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>Generator Engine <span style={{ fontWeight: 400, color: 'var(--hq-text-muted)' }}>charged</span> Time</div>
+                <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>{translate('featTools.venmo.t2') || t.comp2Title} <span style={{ fontWeight: 400, color: 'var(--hq-text-muted)' }}>charged</span> Time</div>
                 <div style={{ fontSize: 14, color: 'var(--hq-text-muted)', marginBottom: 8 }}>2h ago • 🌎</div>
-                <div style={{ fontSize: 16 }}>{t.comp2Title} ⚡ {t.comp2Desc}</div>
+                <div style={{ fontSize: 16 }}>{translate('featTools.venmo.d2') || t.comp2Desc}</div>
               </div>
             </div>
             <div className="hq-vn-actions">
@@ -87,11 +87,11 @@ function LayoutVenmo({ qrType = 'venmo' }) {
           
           <div className="hq-vn-tx">
             <div className="hq-vn-tx-head">
-              <div className="hq-vn-avatar" style={{ background: '#10b981' }}><Lock size={28} /></div>
+              <div className="hq-vn-avatar" style={{ background: '#10b981', boxShadow: '0 0 0 4px rgba(16,185,129,0.2)' }}><Lock size={28} /></div>
               <div>
-                <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>Client-side <span style={{ fontWeight: 400, color: 'var(--hq-text-muted)' }}>paid</span> Servers</div>
+                <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 4 }}>{translate('featTools.venmo.t3') || t.comp3Title} <span style={{ fontWeight: 400, color: 'var(--hq-text-muted)' }}>paid</span> Servers</div>
                 <div style={{ fontSize: 14, color: 'var(--hq-text-muted)', marginBottom: 8 }}>3h ago • 🌎</div>
-                <div style={{ fontSize: 16 }}>{t.comp3Title} 🔒 {t.comp3Desc}</div>
+                <div style={{ fontSize: 16 }}>{translate('featTools.venmo.d3') || t.comp3Desc}</div>
               </div>
             </div>
             <div className="hq-vn-actions">
@@ -102,21 +102,28 @@ function LayoutVenmo({ qrType = 'venmo' }) {
         </div>
 
         <div style={{ paddingBottom: 100 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, textAlign: 'center', marginBottom: 32 }}>{t.faqTitle}</h2>
+          <h2 style={{ paddingTop: 120, fontSize: 24, fontWeight: 700, textAlign: 'center', marginBottom: 32 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A }, { q: t.faq2Q, a: t.faq2A }, { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ background: 'var(--hq-card)', borderRadius: 12, padding: 8 }}>
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '16px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.venmo.q${num}`);
+              const a = translate(`faqTools.venmo.a${num}`);
+              if (!q || q === `faqTools.venmo.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? '#008CFF' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? 'rgba(0,140,255,0.1)' : 'var(--hq-accent-glow)', padding: 8, borderRadius: 12, color: openFaq === i ? '#008CFF' : 'var(--hq-accent)', transition: 'all 0.3s' }}>
+                      <Banknote size={20} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
                 <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
-                  <p style={{ padding: '0 20px 20px 20px', color: 'var(--hq-text-muted)' }}>{faq.a}</p>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

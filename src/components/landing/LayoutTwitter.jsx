@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Hash, ShieldCheck, Zap, Lock, ChevronDown, MessageCircle, Repeat2, Heart, Share } from 'lucide-react';
+import { Hash, ShieldCheck, Zap, Lock, ChevronDown, MessageCircle, Repeat2, Heart, Share, CheckCircle2 } from 'lucide-react';
 
 function LayoutTwitter({ qrType = 'twitter' }) {
   const { t: translate } = useTranslation();
@@ -20,7 +20,7 @@ function LayoutTwitter({ qrType = 'twitter' }) {
           --hq-border: #eff3f4;
           --hq-accent: #1d9bf0;
           --hq-accent-glow: rgba(29, 155, 240, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px;
@@ -77,7 +77,7 @@ function LayoutTwitter({ qrType = 'twitter' }) {
               </div>
               
               <div className="hq-tw-actions">
-                <div className="hq-tw-action"><MessageCircle size={18} /> 4.2K</div>
+                <div className="hq-tw-name">{translate('featTools.twitter.t1') || t.comp1Title} <CheckCircle2 size={16} color="#1da1f2" fill="currentColor" /></div>
                 <div className="hq-tw-action"><Repeat2 size={18} /> 12K</div>
                 <div className="hq-tw-action"><Heart size={18} /> 89K</div>
                 <div className="hq-tw-action"><Share size={18} /></div>
@@ -89,10 +89,9 @@ function LayoutTwitter({ qrType = 'twitter' }) {
         <div className="hq-tw-tweet" style={{ borderBottom: 'none', paddingBottom: 8 }}>
           <div className="hq-tw-avatar" style={{ background: '#f59e0b' }}><Zap size={24} /></div>
           <div className="hq-tw-content">
-            <div className="hq-tw-name">Fast Engine <span className="hq-tw-handle">@speedy · 2h</span></div>
+            <div className="hq-tw-name">{translate('featTools.twitter.t2') || t.comp2Title} <span className="hq-tw-handle">@speedy · 2h</span></div>
             <div className="hq-tw-body">
-              <h3 style={{ fontSize: 18, fontWeight: 700, margin: '4px 0' }}>{t.comp2Title}</h3>
-              <p>{t.comp2Desc}</p>
+              <p>{translate('featTools.twitter.d2') || t.comp2Desc}</p>
             </div>
           </div>
         </div>
@@ -101,30 +100,37 @@ function LayoutTwitter({ qrType = 'twitter' }) {
         <div className="hq-tw-tweet">
           <div className="hq-tw-avatar" style={{ background: '#10b981' }}><Lock size={24} /></div>
           <div className="hq-tw-content">
-            <div className="hq-tw-name">Privacy Guard <span className="hq-tw-handle">@secure · 3h</span></div>
+            <div className="hq-tw-name">{translate('featTools.twitter.t3') || t.comp3Title} <span className="hq-tw-handle">@secure · 3h</span></div>
             <div className="hq-tw-body">
-              <h3 style={{ fontSize: 18, fontWeight: 700, margin: '4px 0' }}>{t.comp3Title}</h3>
-              <p>{t.comp3Desc}</p>
+              <p>{translate('featTools.twitter.d3') || t.comp3Desc}</p>
             </div>
           </div>
         </div>
 
         <div style={{ padding: '60px 24px' }}>
-          <h2 style={{ fontSize: 24, fontWeight: 800, marginBottom: 24 }}>{t.faqTitle}</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A }, { q: t.faq2Q, a: t.faq2A }, { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ borderBottom: '1px solid var(--hq-border)', padding: '16px 0' }}>
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
-                  <span style={{ fontSize: 16, fontWeight: 700 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+          <h2 style={{ paddingTop: 120, fontSize: 24, fontWeight: 800, marginBottom: 24 }}>{t.faqTitle}</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.twitter.q${num}`);
+              const a = translate(`faqTools.twitter.a${num}`);
+              if (!q || q === `faqTools.twitter.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? '#1da1f2' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? 'rgba(29,161,242,0.1)' : 'var(--hq-accent-glow)', padding: 8, borderRadius: 12, color: openFaq === i ? '#1da1f2' : 'var(--hq-accent)', transition: 'all 0.3s' }}>
+                      <Hash size={20} />
+                    </div>
+                    <p style={{ fontSize: 20, lineHeight: 1.5, margin: '16px 0' }}>
+                {translate('featTools.twitter.d1') || t.comp1Desc}
+              </p>    <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+                  </div>
                 </button>
                 <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
-                  <p style={{ paddingTop: 16, color: 'var(--hq-text-muted)' }}>{faq.a}</p>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

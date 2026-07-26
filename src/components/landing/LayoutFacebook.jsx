@@ -20,7 +20,7 @@ function LayoutFacebook({ qrType = 'facebook' }) {
           --hq-border: #ced0d4;
           --hq-accent: #1877f2;
           --hq-accent-glow: rgba(24, 119, 242, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px;
@@ -91,41 +91,54 @@ function LayoutFacebook({ qrType = 'facebook' }) {
         </div>
 
         <div className="hq-fb-features">
-          <div className="hq-fb-feature">
-            <ShieldCheck size={32} color="var(--hq-accent)" />
-            <h3>{t.comp1Title}</h3>
-            <p>{t.comp1Desc}</p>
+          <div className="hq-fb-feature" style={{ background: '#fff', border: '1px solid #ddd', borderRadius: 8, padding: 24, boxShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+              <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#e7f3ff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ShieldCheck size={20} color="#1877f2" /></div>
+              <h3 style={{ fontSize: 16, fontWeight: 600, color: '#1c1e21', margin: 0 }}>{translate('featTools.facebook.t1') || t.comp1Title}</h3>
+            </div>
+            <p style={{ color: '#65676b', fontSize: 14, margin: 0 }}>{translate('featTools.facebook.d1') || t.comp1Desc}</p>
           </div>
-          <div className="hq-fb-feature">
-            <Zap size={32} color="var(--hq-accent)" />
-            <h3>{t.comp2Title}</h3>
-            <p>{t.comp2Desc}</p>
+          <div className="hq-fb-feature" style={{ background: '#fff', border: '1px solid #ddd', borderRadius: 8, padding: 24, boxShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+              <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#e7f3ff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Zap size={20} color="#1877f2" /></div>
+              <h3 style={{ fontSize: 16, fontWeight: 600, color: '#1c1e21', margin: 0 }}>{translate('featTools.facebook.t2') || t.comp2Title}</h3>
+            </div>
+            <p style={{ color: '#65676b', fontSize: 14, margin: 0 }}>{translate('featTools.facebook.d2') || t.comp2Desc}</p>
           </div>
-          <div className="hq-fb-feature">
-            <Lock size={32} color="var(--hq-accent)" />
-            <h3>{t.comp3Title}</h3>
-            <p>{t.comp3Desc}</p>
+          <div className="hq-fb-feature" style={{ background: '#fff', border: '1px solid #ddd', borderRadius: 8, padding: 24, boxShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
+              <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#e7f3ff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Lock size={20} color="#1877f2" /></div>
+              <h3 style={{ fontSize: 16, fontWeight: 600, color: '#1c1e21', margin: 0 }}>{translate('featTools.facebook.t3') || t.comp3Title}</h3>
+            </div>
+            <p style={{ color: '#65676b', fontSize: 14, margin: 0 }}>{translate('featTools.facebook.d3') || t.comp3Desc}</p>
           </div>
         </div>
       </div>
       
       <div style={{ background: 'var(--hq-card)', padding: '100px 0', borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A }, { q: t.faq2Q, a: t.faq2A }, { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ borderBottom: '1px solid var(--hq-border)' }}>
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '20px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.facebook.q${num}`);
+              const a = translate(`faqTools.facebook.a${num}`);
+              if (!q || q === `faqTools.facebook.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? '#1877f2' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? 'rgba(24,119,242,0.1)' : 'var(--hq-accent-glow)', padding: 8, borderRadius: 12, color: openFaq === i ? '#1877f2' : 'var(--hq-accent)', transition: 'all 0.3s' }}>
+                      <Users size={20} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
                 <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
-                  <p style={{ paddingBottom: 20, color: 'var(--hq-text-muted)' }}>{faq.a}</p>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

@@ -26,6 +26,16 @@ export const PSEO_ROUTES = {
   '/spotify-qr-code-generator': 'spotify',
   '/paypal-qr-code-generator': 'paypal',
   '/venmo-qr-code-generator': 'venmo',
+  '/pdf-qr-code-generator': 'pdf',
+  '/google-forms-qr-code-generator': 'gforms',
+  '/google-review-qr-code-generator': 'greview',
+  '/image-qr-code-generator': 'image',
+  '/link-in-bio-qr-code-generator': 'linkinbio',
+  '/video-qr-code-generator': 'video',
+  '/audio-qr-code-generator': 'audio',
+  '/amazon-qr-code-generator': 'amazon',
+  '/online-booking-qr-code': 'booking',
+  '/file-qr-code-generator': 'file',
 };
 // 30 Languages Supported
 export const LANGS = [

@@ -20,7 +20,7 @@ function LayoutAppStore({ qrType = 'appstore' }) {
           --hq-border: #e2e8f0;
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -112,48 +112,60 @@ function LayoutAppStore({ qrType = 'appstore' }) {
         </div>
 
         <div className="hq-app-features">
-          <div className="hq-app-feature">
-            <div className="hq-app-f-icon"><ShieldCheck size={32} /></div>
-            <h3>{t.comp1Title}</h3>
-            <p>{t.comp1Desc}</p>
+          <div className="hq-app-feature" style={{ border: 'none', background: 'var(--hq-bg)', borderBottom: '1px solid var(--hq-border)', borderRadius: 0, paddingBottom: 32, marginBottom: 32 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
+              <div className="hq-app-f-icon" style={{ width: 80, height: 80, borderRadius: 20 }}><ShieldCheck size={40} /></div>
+              <div>
+                <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}>{translate('featTools.appstore.t1') || t.comp1Title}</h3>
+                <p style={{ fontSize: 16, margin: 0 }}>{translate('featTools.appstore.d1') || t.comp1Desc}</p>
+              </div>
+            </div>
           </div>
-          <div className="hq-app-feature">
-            <div className="hq-app-f-icon"><Zap size={32} /></div>
-            <h3>{t.comp2Title}</h3>
-            <p>{t.comp2Desc}</p>
+          <div className="hq-app-feature" style={{ border: 'none', background: 'var(--hq-bg)', borderBottom: '1px solid var(--hq-border)', borderRadius: 0, paddingBottom: 32, marginBottom: 32 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
+              <div className="hq-app-f-icon" style={{ width: 80, height: 80, borderRadius: 20 }}><Zap size={40} /></div>
+              <div>
+                <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}>{translate('featTools.appstore.t2') || t.comp2Title}</h3>
+                <p style={{ fontSize: 16, margin: 0 }}>{translate('featTools.appstore.d2') || t.comp2Desc}</p>
+              </div>
+            </div>
           </div>
-          <div className="hq-app-feature">
-            <div className="hq-app-f-icon"><Lock size={32} /></div>
-            <h3>{t.comp3Title}</h3>
-            <p>{t.comp3Desc}</p>
+          <div className="hq-app-feature" style={{ border: 'none', background: 'var(--hq-bg)', borderRadius: 0 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
+              <div className="hq-app-f-icon" style={{ width: 80, height: 80, borderRadius: 20 }}><Lock size={40} /></div>
+              <div>
+                <h3 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}>{translate('featTools.appstore.t3') || t.comp3Title}</h3>
+                <p style={{ fontSize: 16, margin: 0 }}>{translate('featTools.appstore.d3') || t.comp3Desc}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       
       <div style={{ padding: '100px 0', borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 36, fontWeight: 900, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 style={{ paddingTop: 120, fontSize: 36, fontWeight: 900, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ background: 'var(--hq-card)', borderRadius: 24, padding: '8px' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)', borderRadius: 16 }}
-                >
-                  <span style={{ fontSize: 18, fontWeight: 700 }}>{faq.q}</span>
-                  <div style={{ width: 32, height: 32, borderRadius: 16, background: 'var(--hq-bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.appstore.q${num}`);
+              const a = translate(`faqTools.appstore.a${num}`);
+              if (!q || q === `faqTools.appstore.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? '#0a84ff' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? '#0a84ff' : 'var(--hq-border)', color: openFaq === i ? '#fff' : 'var(--hq-text-muted)', padding: 8, borderRadius: 12, transition: 'all 0.3s' }}>
+                      <Smartphone size={20} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
                   </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <p style={{ padding: '0 32px 32px 32px', color: 'var(--hq-text-muted)', lineHeight: 1.6, fontSize: 16 }}>{faq.a}</p>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

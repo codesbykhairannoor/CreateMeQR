@@ -21,7 +21,7 @@ function LayoutInstagram({ qrType = 'instagram' }) {
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
           --ig-ring: conic-gradient(from 45deg, #2563eb, #60a5fa, #2563eb);
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -103,20 +103,32 @@ function LayoutInstagram({ qrType = 'instagram' }) {
         </div>
 
         <div className="hq-ig-feed">
-          <div className="hq-ig-post">
-            <div className="hq-ig-post-icon"><ShieldCheck size={32} /></div>
-            <h3>{t.comp1Title}</h3>
-            <p>{t.comp1Desc}</p>
+          <div className="hq-ig-post" style={{ background: 'var(--hq-card)', border: 'none', borderRadius: 0, boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '16px 20px', borderBottom: '1px solid var(--hq-border)' }}>
+              <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'linear-gradient(45deg, #f09433, #dc2743)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}><ShieldCheck size={16} /></div>
+              <div style={{ fontWeight: 700, fontSize: 14 }}>{translate('featTools.instagram.t1') || t.comp1Title}</div>
+            </div>
+            <div style={{ padding: 20 }}>
+              <p style={{ margin: 0, fontSize: 14 }}>{translate('featTools.instagram.d1') || t.comp1Desc}</p>
+            </div>
           </div>
-          <div className="hq-ig-post">
-            <div className="hq-ig-post-icon"><Zap size={32} /></div>
-            <h3>{t.comp2Title}</h3>
-            <p>{t.comp2Desc}</p>
+          <div className="hq-ig-post" style={{ background: 'var(--hq-card)', border: 'none', borderRadius: 0, boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '16px 20px', borderBottom: '1px solid var(--hq-border)' }}>
+              <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'linear-gradient(45deg, #e6683c, #cc2366)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}><Zap size={16} /></div>
+              <div style={{ fontWeight: 700, fontSize: 14 }}>{translate('featTools.instagram.t2') || t.comp2Title}</div>
+            </div>
+            <div style={{ padding: 20 }}>
+              <p style={{ margin: 0, fontSize: 14 }}>{translate('featTools.instagram.d2') || t.comp2Desc}</p>
+            </div>
           </div>
-          <div className="hq-ig-post">
-            <div className="hq-ig-post-icon"><Lock size={32} /></div>
-            <h3>{t.comp3Title}</h3>
-            <p>{t.comp3Desc}</p>
+          <div className="hq-ig-post" style={{ background: 'var(--hq-card)', border: 'none', borderRadius: 0, boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '16px 20px', borderBottom: '1px solid var(--hq-border)' }}>
+              <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'linear-gradient(45deg, #cc2366, #bc1888)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}><Lock size={16} /></div>
+              <div style={{ fontWeight: 700, fontSize: 14 }}>{translate('featTools.instagram.t3') || t.comp3Title}</div>
+            </div>
+            <div style={{ padding: 20 }}>
+              <p style={{ margin: 0, fontSize: 14 }}>{translate('featTools.instagram.d3') || t.comp3Desc}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -128,27 +140,30 @@ function LayoutInstagram({ qrType = 'instagram' }) {
             <MessageCircle size={24} />
             <Send size={24} />
           </div>
-          <h2 style={{ fontSize: 36, fontWeight: 800, textAlign: 'center', margin: '0 0 40px 0' }}>{t.faqTitle}</h2>
+          <h2 style={{ paddingTop: 120, fontSize: 36, fontWeight: 800, textAlign: 'center', margin: '0 0 40px 0' }}>{t.faqTitle}</h2>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ border: '1px solid var(--hq-border)', borderRadius: 16, overflow: 'hidden' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '20px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}
-                >
-                  <span style={{ fontSize: 16, fontWeight: 700 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
-                </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <p style={{ padding: '0 24px 24px 24px', color: 'var(--hq-text-muted)', lineHeight: 1.6, fontSize: 15 }}>{faq.a}</p>
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.instagram.q${num}`);
+              const a = translate(`faqTools.instagram.a${num}`);
+              if (!q || q === `faqTools.instagram.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 24, padding: '2px', backgroundClip: 'padding-box', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ position: 'absolute', inset: 0, background: openFaq === i ? 'linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)' : 'var(--hq-border)', zIndex: 0, transition: 'background 0.5s' }} />
+                <div style={{ position: 'relative', zIndex: 1, background: 'var(--hq-bg)', borderRadius: 22, height: '100%' }}>
+                  <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                      <Camera size={20} style={{ color: openFaq === i ? '#dc2743' : 'var(--hq-text-muted)', transition: 'color 0.3s' }} />
+                      <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                    </div>
+                    <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+                  </button>
+                  <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                    <p style={{ padding: '0 32px 32px 68px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
+                  </div>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

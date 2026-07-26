@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Globe, Moon, Sun, X } from 'lucide-react';
 import { LANGS } from '../config/site';
+import { localizedRoutes, routeToToolMap } from '../config/localizedRoutes';
 
 export default function MainLayout({ children }) {
   const { t, i18n } = useTranslation();
@@ -68,8 +69,15 @@ export default function MainLayout({ children }) {
     i18n.changeLanguage(lang);
     setShowLangMenu(false);
     setSoftBannerLang(null);
+    
+    // Look up the current tool based on current lang and slug
+    const currentTool = routeToToolMap[currentLangCode]?.[slug] || 'url';
+    
+    // Get the localized slug for the NEW language
+    const newSlug = localizedRoutes[lang]?.[currentTool] || '/';
+    
     const newPrefix = lang === 'en' ? '' : `/${lang}`;
-    navigate(`${newPrefix}${slug === '/' ? '' : slug}`, { replace: true });
+    navigate(`${newPrefix}${newSlug === '/' ? '' : newSlug}`, { replace: true });
   };
 
   return (

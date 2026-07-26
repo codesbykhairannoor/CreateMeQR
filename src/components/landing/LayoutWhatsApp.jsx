@@ -23,7 +23,7 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
           --wa-chat-bg: #e5ddd5;
           --wa-bubble-out: #dcf8c6;
           --wa-bubble-in: #ffffff;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -123,46 +123,48 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
         </div>
 
         <div className="hq-wa-features">
-          <div className="hq-wa-feature-card">
-            <div className="hq-wa-feature-icon"><ShieldCheck /></div>
-            <h3>{t.comp1Title}</h3>
-            <p>{t.comp1Desc}</p>
+          <div className="hq-wa-feature-card" style={{ background: '#dcf8c6', borderColor: '#dcf8c6', color: '#075e54', boxShadow: '0 10px 30px rgba(7,94,84,0.1)' }}>
+            <div className="hq-wa-feature-icon" style={{ background: '#25d366', color: '#fff' }}><ShieldCheck /></div>
+            <h3 style={{ color: '#075e54' }}>{translate('featTools.whatsapp.t1') || t.comp1Title}</h3>
+            <p style={{ color: '#128c7e' }}>{translate('featTools.whatsapp.d1') || t.comp1Desc}</p>
           </div>
-          <div className="hq-wa-feature-card">
-            <div className="hq-wa-feature-icon"><Zap /></div>
-            <h3>{t.comp2Title}</h3>
-            <p>{t.comp2Desc}</p>
+          <div className="hq-wa-feature-card" style={{ background: '#dcf8c6', borderColor: '#dcf8c6', color: '#075e54', boxShadow: '0 10px 30px rgba(7,94,84,0.1)' }}>
+            <div className="hq-wa-feature-icon" style={{ background: '#25d366', color: '#fff' }}><Zap /></div>
+            <h3 style={{ color: '#075e54' }}>{translate('featTools.whatsapp.t2') || t.comp2Title}</h3>
+            <p style={{ color: '#128c7e' }}>{translate('featTools.whatsapp.d2') || t.comp2Desc}</p>
           </div>
-          <div className="hq-wa-feature-card">
-            <div className="hq-wa-feature-icon"><Lock /></div>
-            <h3>{t.comp3Title}</h3>
-            <p>{t.comp3Desc}</p>
+          <div className="hq-wa-feature-card" style={{ background: '#dcf8c6', borderColor: '#dcf8c6', color: '#075e54', boxShadow: '0 10px 30px rgba(7,94,84,0.1)' }}>
+            <div className="hq-wa-feature-icon" style={{ background: '#25d366', color: '#fff' }}><Lock /></div>
+            <h3 style={{ color: '#075e54' }}>{translate('featTools.whatsapp.t3') || t.comp3Title}</h3>
+            <p style={{ color: '#128c7e' }}>{translate('featTools.whatsapp.d3') || t.comp3Desc}</p>
           </div>
         </div>
       </div>
       
       <div style={{ borderTop: '1px solid var(--hq-border)', background: 'var(--hq-card)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 36, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 style={{ paddingTop: 120, fontSize: 36, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ borderBottom: '1px solid var(--hq-border)' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '24px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}
-                >
-                  <span style={{ fontSize: 18, fontWeight: 600 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.whatsapp.q${num}`);
+              const a = translate(`faqTools.whatsapp.a${num}`);
+              if (!q || q === `faqTools.whatsapp.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: openFaq === i ? 'rgba(37, 211, 102, 0.05)' : 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? '#25d366' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? '#25d366' : 'var(--hq-border)', color: openFaq === i ? '#fff' : 'var(--hq-text-muted)', padding: 8, borderRadius: 12, transition: 'all 0.3s' }}>
+                      <MessageCircle size={20} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <p style={{ paddingBottom: 24, color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{faq.a}</p>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

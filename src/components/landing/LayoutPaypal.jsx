@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { CreditCard, ShieldCheck, Zap, Lock, ChevronDown, CheckCircle2, ArrowRight } from 'lucide-react';
+import { CreditCard, ShieldCheck, Zap, Lock, ChevronDown, CheckCircle2, ArrowRight, DollarSign } from 'lucide-react';
 
 function LayoutPaypal({ qrType = 'paypal' }) {
   const { t: translate } = useTranslation();
@@ -21,7 +21,7 @@ function LayoutPaypal({ qrType = 'paypal' }) {
           --hq-accent: #0070ba;
           --hq-accent-dark: #003087;
           --hq-accent-glow: rgba(0, 112, 186, 0.1);
-          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           min-height: 100vh;
@@ -65,31 +65,31 @@ function LayoutPaypal({ qrType = 'paypal' }) {
           <div className="hq-pp-left">
             <h2 style={{ fontSize: 24, fontWeight: 500, marginBottom: 32 }}>Secure {typeName} Features</h2>
             
-            <div className="hq-pp-item">
-              <div className="hq-pp-item-icon"><ShieldCheck size={24} /></div>
-              <div>
-                <h3 style={{ fontSize: 18, fontWeight: 500, marginBottom: 8 }}>{t.comp1Title}</h3>
-                <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.5 }}>{t.comp1Desc}</p>
+              <div className="hq-pp-item" style={{ background: '#f5f7fa', padding: 24, borderRadius: 16, border: '1px solid #e0e6ef', display: 'flex', gap: 16, marginBottom: 16 }}>
+                <div className="hq-pp-item-icon" style={{ background: '#003087', color: '#fff', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ShieldCheck size={24} /></div>
+                <div>
+                  <h3 style={{ fontSize: 18, fontWeight: 600, color: '#001c64', marginBottom: 4 }}>{translate('featTools.paypal.t1') || t.comp1Title}</h3>
+                  <p style={{ color: '#6a7381', margin: 0 }}>{translate('featTools.paypal.d1') || t.comp1Desc}</p>
+                </div>
               </div>
-            </div>
-            <div className="hq-pp-item">
-              <div className="hq-pp-item-icon"><Zap size={24} /></div>
-              <div>
-                <h3 style={{ fontSize: 18, fontWeight: 500, marginBottom: 8 }}>{t.comp2Title}</h3>
-                <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.5 }}>{t.comp2Desc}</p>
+              <div className="hq-pp-item" style={{ background: '#f5f7fa', padding: 24, borderRadius: 16, border: '1px solid #e0e6ef', display: 'flex', gap: 16, marginBottom: 16 }}>
+                <div className="hq-pp-item-icon" style={{ background: '#0079c1', color: '#fff', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Zap size={24} /></div>
+                <div>
+                  <h3 style={{ fontSize: 18, fontWeight: 600, color: '#001c64', marginBottom: 4 }}>{translate('featTools.paypal.t2') || t.comp2Title}</h3>
+                  <p style={{ color: '#6a7381', margin: 0 }}>{translate('featTools.paypal.d2') || t.comp2Desc}</p>
+                </div>
               </div>
-            </div>
           </div>
           
           <div className="hq-pp-right">
             <h2 style={{ fontSize: 24, fontWeight: 500, marginBottom: 32 }}>Privacy Guarantee</h2>
-            <div className="hq-pp-item">
-              <div className="hq-pp-item-icon"><Lock size={24} /></div>
-              <div>
-                <h3 style={{ fontSize: 18, fontWeight: 500, marginBottom: 8 }}>{t.comp3Title}</h3>
-                <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.5 }}>{t.comp3Desc}</p>
+              <div className="hq-pp-item" style={{ background: '#f5f7fa', padding: 24, borderRadius: 16, border: '1px solid #e0e6ef', display: 'flex', gap: 16, marginBottom: 16 }}>
+                <div className="hq-pp-item-icon" style={{ background: '#003087', color: '#fff', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Lock size={24} /></div>
+                <div>
+                  <h3 style={{ fontSize: 18, fontWeight: 600, color: '#001c64', marginBottom: 4 }}>{translate('featTools.paypal.t3') || t.comp3Title}</h3>
+                  <p style={{ color: '#6a7381', margin: 0 }}>{translate('featTools.paypal.d3') || t.comp3Desc}</p>
+                </div>
               </div>
-            </div>
             
             <div style={{ marginTop: 40, background: 'var(--hq-card)', padding: 24, borderRadius: 8, border: '1px solid var(--hq-border)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 16, fontWeight: 500 }}>
@@ -104,21 +104,28 @@ function LayoutPaypal({ qrType = 'paypal' }) {
         </div>
         
         <div style={{ maxWidth: 800, margin: '0 auto 100px auto' }}>
-          <h2 style={{ fontSize: 32, fontWeight: 300, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 300, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A }, { q: t.faq2Q, a: t.faq2A }, { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ background: 'var(--hq-card)', borderRadius: 8, border: '1px solid var(--hq-border)' }}>
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
-                  <span style={{ fontSize: 16, fontWeight: 500 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.paypal.q${num}`);
+              const a = translate(`faqTools.paypal.a${num}`);
+              if (!q || q === `faqTools.paypal.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? '#003087' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? 'rgba(0,48,135,0.1)' : 'var(--hq-accent-glow)', padding: 8, borderRadius: 12, color: openFaq === i ? '#003087' : 'var(--hq-accent)', transition: 'all 0.3s' }}>
+                      <DollarSign size={20} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
                 <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
-                  <p style={{ padding: '0 24px 24px 24px', color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{faq.a}</p>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

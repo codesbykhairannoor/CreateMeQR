@@ -20,7 +20,7 @@ function LayoutEmail({ qrType = 'email' }) {
           --hq-border: #e2e8f0;
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -110,19 +110,32 @@ function LayoutEmail({ qrType = 'email' }) {
             <p>{t.heroSubtitle}</p>
           </div>
           
-          <div className="hq-m-card hq-m-stat">
+          <div className="hq-m-card hq-m-stat" style={{ background: 'var(--hq-card)', borderLeft: '4px solid var(--hq-accent)', borderRadius: '0 24px 24px 0', padding: 40, position: 'relative', overflow: 'hidden' }}>
             <div className="hq-m-stat-bg"><ShieldCheck size={200}/></div>
             <div style={{ position: 'relative', zIndex: 2 }}>
-              <h3>{t.comp1Title}</h3>
-              <p>{t.comp1Desc}</p>
+              <div style={{ display: 'inline-block', padding: '8px 16px', background: 'var(--hq-bg)', borderRadius: 8, fontSize: 14, fontWeight: 700, marginBottom: 16 }}>FEATURE 1</div>
+              <h3>{translate('featTools.email.t1') || t.comp1Title}</h3>
+              <p>{translate('featTools.email.d1') || t.comp1Desc}</p>
             </div>
           </div>
           
-          <div className="hq-m-card hq-m-stat">
+          <div className="hq-m-card hq-m-stat" style={{ background: 'var(--hq-card)', borderLeft: '4px solid var(--hq-accent)', borderRadius: '0 24px 24px 0', padding: 40, position: 'relative', overflow: 'hidden' }}>
             <div className="hq-m-stat-bg"><Zap size={200}/></div>
             <div style={{ position: 'relative', zIndex: 2 }}>
-              <h3>{t.comp2Title}</h3>
-              <p>{t.comp2Desc}</p>
+              <div style={{ display: 'inline-block', padding: '8px 16px', background: 'var(--hq-bg)', borderRadius: 8, fontSize: 14, fontWeight: 700, marginBottom: 16 }}>FEATURE 2</div>
+              <h3>{translate('featTools.email.t2') || t.comp2Title}</h3>
+              <p>{translate('featTools.email.d2') || t.comp2Desc}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div style={{ marginBottom: 60 }}>
+          <div className="hq-m-card hq-m-stat" style={{ background: 'var(--hq-card)', borderLeft: '4px solid var(--hq-accent)', borderRadius: '0 24px 24px 0', padding: 40, position: 'relative', overflow: 'hidden', width: '100%', maxWidth: 1200, margin: '0 auto' }}>
+            <div className="hq-m-stat-bg"><Lock size={200}/></div>
+            <div style={{ position: 'relative', zIndex: 2 }}>
+              <div style={{ display: 'inline-block', padding: '8px 16px', background: 'var(--hq-bg)', borderRadius: 8, fontSize: 14, fontWeight: 700, marginBottom: 16 }}>FEATURE 3</div>
+              <h3>{translate('featTools.email.t3') || t.comp3Title}</h3>
+              <p>{translate('featTools.email.d3') || t.comp3Desc}</p>
             </div>
           </div>
         </div>
@@ -148,31 +161,28 @@ function LayoutEmail({ qrType = 'email' }) {
 
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
+          <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A },
-              { q: t.faq4Q, a: t.faq4A }
-            ].map((faq, i) => (
-              <div key={i} style={{ border: '1px solid var(--hq-border)', borderRadius: 24, overflow: 'hidden' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left' }}
-                >
-                  <span style={{ fontSize: 18, fontWeight: 700, color: 'var(--hq-text)' }}>{faq.q}</span>
-                  <span style={{ color: 'var(--hq-accent)' }}><ChevronDown open={openFaq === i} /></span>
-                </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <div style={{ padding: '0 32px 32px 32px', color: 'var(--hq-text-muted)', lineHeight: 1.7 }}>
-                    {faq.a}
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.email.q${num}`);
+              const a = translate(`faqTools.email.a${num}`);
+              if (!q || q === `faqTools.email.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-card)', borderRadius: 24, boxShadow: openFaq === i ? 'inset 2px 2px 5px var(--hq-shadow-dark), inset -2px -2px 5px var(--hq-shadow-light)' : '5px 5px 10px var(--hq-shadow-dark), -5px -5px 10px var(--hq-shadow-light)', overflow: 'hidden', transition: 'all 0.3s ease' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <Mail size={20} style={{ color: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-text-muted)' }} />
+                    <span style={{ fontSize: 18, fontWeight: 700, color: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-text)' }}>{q}</span>
                   </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+                </button>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <p style={{ padding: '0 32px 32px 68px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

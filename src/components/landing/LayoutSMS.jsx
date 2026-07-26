@@ -20,7 +20,7 @@ function LayoutSMS({ qrType = 'sms' }) {
           --hq-border: #e2e8f0;
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -84,17 +84,17 @@ function LayoutSMS({ qrType = 'sms' }) {
         </div>
 
         <div className="hq-chat-bubbles">
-          <div className="hq-bubble left">
-            <h3 style={{ color: 'var(--hq-accent)' }}><ShieldCheck size={20}/> {t.comp1Title}</h3>
-            <div>{t.comp1Desc}</div>
+          <div className="hq-bubble left" style={{ background: 'var(--hq-card)', border: 'none', borderBottomLeftRadius: 4 }}>
+            <h3 style={{ color: 'var(--hq-accent)' }}><ShieldCheck size={20}/> {translate('featTools.sms.t1') || t.comp1Title}</h3>
+            <div>{translate('featTools.sms.d1') || t.comp1Desc}</div>
           </div>
-          <div className="hq-bubble right">
-            <h3><Zap size={20}/> {t.comp2Title}</h3>
-            <div style={{ opacity: 0.9 }}>{t.comp2Desc}</div>
+          <div className="hq-bubble right" style={{ background: 'var(--hq-accent)', color: '#fff', border: 'none', borderBottomRightRadius: 4 }}>
+            <h3 style={{ color: '#fff' }}><Zap size={20}/> {translate('featTools.sms.t2') || t.comp2Title}</h3>
+            <div style={{ opacity: 0.9 }}>{translate('featTools.sms.d2') || t.comp2Desc}</div>
           </div>
-          <div className="hq-bubble left">
-            <h3 style={{ color: 'var(--hq-accent)' }}><Lock size={20}/> {t.comp3Title}</h3>
-            <div>{t.comp3Desc}</div>
+          <div className="hq-bubble left" style={{ background: 'var(--hq-card)', border: 'none', borderBottomLeftRadius: 4 }}>
+            <h3 style={{ color: 'var(--hq-accent)' }}><Lock size={20}/> {translate('featTools.sms.t3') || t.comp3Title}</h3>
+            <div>{translate('featTools.sms.d3') || t.comp3Desc}</div>
           </div>
         </div>
 
@@ -121,31 +121,28 @@ function LayoutSMS({ qrType = 'sms' }) {
 
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container">
-          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
+          <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900, textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A },
-              { q: t.faq4Q, a: t.faq4A }
-            ].map((faq, i) => (
-              <div key={i} style={{ border: '1px solid var(--hq-border)', borderRadius: 24, overflow: 'hidden' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left' }}
-                >
-                  <span style={{ fontSize: 18, fontWeight: 700, color: 'var(--hq-text)' }}>{faq.q}</span>
-                  <span style={{ color: 'var(--hq-accent)' }}><ChevronDown open={openFaq === i} /></span>
-                </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <div style={{ padding: '0 32px 32px 32px', color: 'var(--hq-text-muted)', lineHeight: 1.7 }}>
-                    {faq.a}
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.sms.q${num}`);
+              const a = translate(`faqTools.sms.a${num}`);
+              if (!q || q === `faqTools.sms.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s', boxShadow: openFaq === i ? '0 10px 20px rgba(0,0,0,0.1)' : 'none' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: openFaq === i ? '#fff' : 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <MessageSquare size={20} style={{ opacity: 0.8 }} />
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
                   </div>
+                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+                </button>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <p style={{ padding: '0 32px 32px 68px', color: openFaq === i ? 'rgba(255,255,255,0.9)' : 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

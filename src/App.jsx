@@ -7,6 +7,7 @@ import QrWorkspace from './pages/QrWorkspace';
 import LandingContent from './components/LandingContent';
 import SeoArticle from './components/SeoArticle';
 import { PSEO_ROUTES, LANGS } from './config/site';
+import { localizedRoutes, routeToToolMap } from './config/localizedRoutes';
 
 export default function App() {
   const { t } = useTranslation();
@@ -25,11 +26,11 @@ export default function App() {
 
   if (slug === '') slug = '/';
 
-  const [qrType, setQrType] = useState(PSEO_ROUTES[slug] || PSEO_ROUTES['/']);
+  const [qrType, setQrType] = useState(routeToToolMap[currentLangCode]?.[slug] || 'url');
 
   // Sync route with qrType state
   useEffect(() => {
-    const routeType = PSEO_ROUTES[slug];
+    const routeType = routeToToolMap[currentLangCode]?.[slug];
     if (routeType && routeType !== qrType) {
       setQrType(routeType);
     }
@@ -37,14 +38,14 @@ export default function App() {
 
   const handleTypeChangeRoute = (newType) => {
     setQrType(newType);
-    const entry = Object.entries(PSEO_ROUTES).find(([_, val]) => val === newType);
-    if (entry && entry[0] !== slug) {
+    const localizedSlug = localizedRoutes[currentLangCode]?.[newType] || PSEO_ROUTES[newType === 'url' ? '/' : newType] || '/';
+    if (localizedSlug !== slug) {
       const newPrefix = currentLangCode === 'en' ? '' : `/${currentLangCode}`;
-      navigate(`${newPrefix}${entry[0] === '/' ? '' : entry[0]}`, { replace: true });
+      navigate(`${newPrefix}${localizedSlug === '/' ? '' : localizedSlug}`, { replace: true });
     }
   };
 
-  const currentType = PSEO_ROUTES[slug] || PSEO_ROUTES['/'];
+  const currentType = routeToToolMap[currentLangCode]?.[slug] || 'url';
   const typeName = t(`types.${currentType}`);
   
   // Super Partial Lang: Fully localized SEO texts!
@@ -67,7 +68,14 @@ export default function App() {
         <meta name="title" content={currentSeo.title} />
         <meta name="description" content="Create custom QR codes with logo for free. Best editable QR code generator with no watermark for WiFi, vCard, Google Reviews and URL. Client-side privacy." />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <link rel="canonical" href={`https://www.createmy-qr.com${slug === '/' ? '' : slug}`} />
+        <link rel="canonical" href={`https://www.createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${slug === '/' ? '' : slug}`} />
+        {/* pSEO Hreflang Tags for all 30 languages */}
+        <link rel="alternate" hrefLang="x-default" href={`https://www.createmy-qr.com${localizedRoutes['en']?.[currentType] === '/' ? '' : localizedRoutes['en']?.[currentType]}`} />
+        {LANGS.map(lang => {
+          const lSlug = localizedRoutes[lang.code]?.[currentType] || '/';
+          const href = `https://www.createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${lSlug === '/' ? '' : lSlug}`;
+          return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
+        })}
         <meta name="keywords" content={t('seoKeywords')} />
         
         {/* Bidirectional Hreflang Matrix for 30 Languages */}

@@ -22,7 +22,7 @@ function LayoutCrypto({ qrType = 'crypto' }) {
           --hq-accent-glow: rgba(59, 130, 246, 0.15);
           --cryp-green: #10b981;
           --cryp-red: #ef4444;
-          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -31,8 +31,8 @@ function LayoutCrypto({ qrType = 'crypto' }) {
         .hq-container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
         
         .hq-cryp-hero { margin-bottom: 80px; text-align: center; }
-        .hq-cryp-hero h2 { font-size: clamp(32px, 4vw, 56px); font-weight: 800; margin-bottom: 24px; letter-spacing: -0.05em; font-family: -apple-system, sans-serif; }
-        .hq-cryp-hero p { font-size: 18px; color: var(--hq-text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; font-family: -apple-system, sans-serif; }
+        .hq-cryp-hero h2 { font-size: clamp(32px, 4vw, 56px); font-weight: 800; margin-bottom: 24px; letter-spacing: -0.05em; font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif; }
+        .hq-cryp-hero p { font-size: 18px; color: var(--hq-text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif; }
         
         .hq-cryp-dashboard {
           display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 120px;
@@ -63,7 +63,7 @@ function LayoutCrypto({ qrType = 'crypto' }) {
           display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--hq-border); border: 1px solid var(--hq-border); border-radius: 16px; overflow: hidden; margin-bottom: 120px;
         }
         .hq-cryp-feature {
-          background: var(--hq-card); padding: 40px; font-family: -apple-system, sans-serif;
+          background: var(--hq-card); padding: 40px; font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
         }
         .hq-cryp-icon { width: 48px; height: 48px; border: 1px solid var(--hq-border); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--hq-accent); }
         .hq-cryp-feature h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
@@ -132,46 +132,48 @@ function LayoutCrypto({ qrType = 'crypto' }) {
         </div>
 
         <div className="hq-cryp-features">
-          <div className="hq-cryp-feature">
-            <div className="hq-cryp-icon"><ShieldCheck /></div>
-            <h3>{t.comp1Title}</h3>
-            <p>{t.comp1Desc}</p>
+          <div className="hq-cryp-feature" style={{ background: '#111', border: '1px solid #333', borderRadius: 0, padding: 40, borderLeft: '4px solid #f7931a' }}>
+            <div style={{ color: '#f7931a', marginBottom: 20 }}><ShieldCheck size={32} /></div>
+            <h3 style={{ color: '#fff', fontSize: 20 }}>{translate('featTools.crypto.t1') || t.comp1Title}</h3>
+            <p style={{ color: '#888' }}>{translate('featTools.crypto.d1') || t.comp1Desc}</p>
           </div>
-          <div className="hq-cryp-feature">
-            <div className="hq-cryp-icon"><Zap /></div>
-            <h3>{t.comp2Title}</h3>
-            <p>{t.comp2Desc}</p>
+          <div className="hq-cryp-feature" style={{ background: '#111', border: '1px solid #333', borderRadius: 0, padding: 40, borderLeft: '4px solid #627eea' }}>
+            <div style={{ color: '#627eea', marginBottom: 20 }}><Zap size={32} /></div>
+            <h3 style={{ color: '#fff', fontSize: 20 }}>{translate('featTools.crypto.t2') || t.comp2Title}</h3>
+            <p style={{ color: '#888' }}>{translate('featTools.crypto.d2') || t.comp2Desc}</p>
           </div>
-          <div className="hq-cryp-feature">
-            <div className="hq-cryp-icon"><Lock /></div>
-            <h3>{t.comp3Title}</h3>
-            <p>{t.comp3Desc}</p>
+          <div className="hq-cryp-feature" style={{ background: '#111', border: '1px solid #333', borderRadius: 0, padding: 40, borderLeft: '4px solid #14f195' }}>
+            <div style={{ color: '#14f195', marginBottom: 20 }}><Lock size={32} /></div>
+            <h3 style={{ color: '#fff', fontSize: 20 }}>{translate('featTools.crypto.t3') || t.comp3Title}</h3>
+            <p style={{ color: '#888' }}>{translate('featTools.crypto.d3') || t.comp3Desc}</p>
           </div>
         </div>
       </div>
       
       <div style={{ borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800, fontFamily: '-apple-system, sans-serif' }}>
-          <h2 style={{ fontSize: 36, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 style={{ paddingTop: 120, fontSize: 36, fontWeight: 800, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ border: '1px solid var(--hq-border)', borderRadius: 8, background: 'var(--hq-card)' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}
-                >
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.crypto.q${num}`);
+              const a = translate(`faqTools.crypto.a${num}`);
+              if (!q || q === `faqTools.crypto.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 16, border: '1px solid', borderColor: openFaq === i ? '#f7931a' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ color: openFaq === i ? '#f7931a' : 'var(--hq-text-muted)', transition: 'all 0.3s' }}>
+                      <Bitcoin size={24} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700, letterSpacing: '-0.02em', fontFamily: 'monospace' }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <p style={{ padding: '0 24px 24px 24px', color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{faq.a}</p>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

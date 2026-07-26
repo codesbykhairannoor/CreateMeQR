@@ -20,9 +20,12 @@ function LayoutDiscord({ qrType = 'discord' }) {
           --hq-border: #202225;
           --hq-accent: #5865F2;
           --hq-accent-glow: rgba(88, 101, 242, 0.15);
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
+          display: flex;
+          align-items: center;
+          padding: 80px 24px;
           min-height: 100vh;
         }
         
@@ -56,9 +59,19 @@ function LayoutDiscord({ qrType = 'discord' }) {
           .hq-dc-guilds, .hq-dc-sidebar { display: none; }
           .hq-dc-grid { grid-template-columns: 1fr; }
         }
+        
+        .hq-dc-wrapper {
+          max-width: 1100px;
+          margin: 0 auto;
+          border-radius: 12px;
+          overflow: hidden;
+          display: flex;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+          height: 800px;
+        }
       `}</style>
 
-      <div className="hq-dc-app">
+      <div className="hq-dc-wrapper">
         <div className="hq-dc-guilds">
           <div className="hq-dc-guild" style={{ background: '#5865F2', color: 'white' }}><Gamepad2 size={28} /></div>
           <div style={{ width: 32, height: 2, background: '#2f3136', margin: '4px 0' }}></div>
@@ -98,47 +111,53 @@ function LayoutDiscord({ qrType = 'discord' }) {
             </p>
 
             <div className="hq-dc-grid">
-              <div className="hq-dc-card">
-                <ShieldCheck size={28} color="var(--hq-accent)" />
-                <h3>{t.comp1Title}</h3>
-                <p style={{ fontSize: 14, lineHeight: 1.5 }}>{t.comp1Desc}</p>
+              <div className="hq-dc-card" style={{ background: '#2f3136', border: '1px solid #202225', borderRadius: 8, padding: 24 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+                  <div style={{ background: '#5865F2', padding: 8, borderRadius: '50%', color: 'white' }}><ShieldCheck size={20} /></div>
+                  <h3 style={{ margin: 0, fontSize: 16, fontWeight: 600, color: 'white' }}>{translate('featTools.discord.t1') || t.comp1Title}</h3>
+                </div>
+                <p style={{ fontSize: 14, lineHeight: 1.5, color: '#dcddde', margin: 0 }}>{translate('featTools.discord.d1') || t.comp1Desc}</p>
               </div>
-              <div className="hq-dc-card">
-                <Zap size={28} color="var(--hq-accent)" />
-                <h3>{t.comp2Title}</h3>
-                <p style={{ fontSize: 14, lineHeight: 1.5 }}>{t.comp2Desc}</p>
+              <div className="hq-dc-card" style={{ background: '#2f3136', border: '1px solid #202225', borderRadius: 8, padding: 24 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+                  <div style={{ background: '#5865F2', padding: 8, borderRadius: '50%', color: 'white' }}><Zap size={20} /></div>
+                  <h3 style={{ margin: 0, fontSize: 16, fontWeight: 600, color: 'white' }}>{translate('featTools.discord.t2') || t.comp2Title}</h3>
+                </div>
+                <p style={{ fontSize: 14, lineHeight: 1.5, color: '#dcddde', margin: 0 }}>{translate('featTools.discord.d2') || t.comp2Desc}</p>
               </div>
-              <div className="hq-dc-card">
-                <Lock size={28} color="var(--hq-accent)" />
-                <h3>{t.comp3Title}</h3>
-                <p style={{ fontSize: 14, lineHeight: 1.5 }}>{t.comp3Desc}</p>
+              <div className="hq-dc-card" style={{ background: '#2f3136', border: '1px solid #202225', borderRadius: 8, padding: 24 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+                  <div style={{ background: '#5865F2', padding: 8, borderRadius: '50%', color: 'white' }}><Lock size={20} /></div>
+                  <h3 style={{ margin: 0, fontSize: 16, fontWeight: 600, color: 'white' }}>{translate('featTools.discord.t3') || t.comp3Title}</h3>
+                </div>
+                <p style={{ fontSize: 14, lineHeight: 1.5, color: '#dcddde', margin: 0 }}>{translate('featTools.discord.d3') || t.comp3Desc}</p>
               </div>
             </div>
             
             <div style={{ marginTop: 80, borderTop: '1px solid var(--hq-border)', paddingTop: 40 }}>
-              <h2 style={{ fontSize: 24, fontWeight: 700, color: 'white', marginBottom: 24 }}>{t.faqTitle}</h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                {[
-                  { q: t.faq1Q, a: t.faq1A }, { q: t.faq2Q, a: t.faq2A }, { q: t.faq3Q, a: t.faq3A }
-                ].map((faq, i) => (
-                  <div key={i} style={{ background: '#2f3136', borderRadius: 8, padding: '16px 20px' }}>
-                    <div style={{ display: 'flex', gap: 16 }}>
-                      <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'var(--hq-accent)', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
-                        <Bot size={20} />
-                      </div>
-                      <div>
-                        <div style={{ display: 'flex', alignItems: 'baseline', gap: 8, marginBottom: 4 }}>
-                          <span style={{ fontWeight: 600, color: 'white' }}>FAQ Bot</span>
-                          <span style={{ fontSize: 10, background: '#5865F2', color: 'white', padding: '2px 4px', borderRadius: 4, fontWeight: 700 }}>APP</span>
-                          <span style={{ fontSize: 12, color: 'var(--hq-text-muted)' }}>Today at 12:00 PM</span>
-                        </div>
-                        <div style={{ fontWeight: 700, color: 'white', marginBottom: 4 }}>Q: {faq.q}</div>
-                        <div style={{ color: 'var(--hq-text)' }}>A: {faq.a}</div>
-                      </div>
+              <h2 style={{ paddingTop: 120, fontSize: 24, fontWeight: 700, color: 'white', marginBottom: 24 }}>{t.faqTitle}</h2>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.discord.q${num}`);
+              const a = translate(`faqTools.discord.a${num}`);
+              if (!q || q === `faqTools.discord.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 16, border: '1px solid', borderColor: openFaq === i ? '#5865F2' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? '#5865F2' : 'var(--hq-card)', color: openFaq === i ? '#fff' : 'var(--hq-text-muted)', padding: 8, borderRadius: 12, transition: 'all 0.3s' }}>
+                      <Gamepad2 size={20} />
                     </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
                   </div>
-                ))}
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+                </button>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
+                </div>
               </div>
+            )})}
+          </div>
             </div>
           </div>
         </div>

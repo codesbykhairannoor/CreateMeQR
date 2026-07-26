@@ -20,7 +20,7 @@ function LayoutText({ qrType = 'text' }) {
           --hq-border: #e2e8f0;
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
-          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -104,17 +104,17 @@ function LayoutText({ qrType = 'text' }) {
         </div>
 
         <div className="hq-feature-row">
-          <div className="hq-f-card">
-            <h3><ShieldCheck size={20}/> {t.comp1Title}</h3>
-            <p>{t.comp1Desc}</p>
+          <div className="hq-f-card" style={{ background: '#0d1117', border: '1px solid #30363d', borderRadius: 8, padding: 32 }}>
+            <h3 style={{ color: '#58a6ff', fontFamily: 'monospace' }}><ShieldCheck size={20} style={{ verticalAlign: 'middle', marginRight: 8 }}/> {translate('featTools.text.t1') || t.comp1Title}</h3>
+            <p style={{ color: '#8b949e', marginTop: 16 }}>{translate('featTools.text.d1') || t.comp1Desc}</p>
           </div>
-          <div className="hq-f-card">
-            <h3><Zap size={20}/> {t.comp2Title}</h3>
-            <p>{t.comp2Desc}</p>
+          <div className="hq-f-card" style={{ background: '#0d1117', border: '1px solid #30363d', borderRadius: 8, padding: 32 }}>
+            <h3 style={{ color: '#58a6ff', fontFamily: 'monospace' }}><Zap size={20} style={{ verticalAlign: 'middle', marginRight: 8 }}/> {translate('featTools.text.t2') || t.comp2Title}</h3>
+            <p style={{ color: '#8b949e', marginTop: 16 }}>{translate('featTools.text.d2') || t.comp2Desc}</p>
           </div>
-          <div className="hq-f-card">
-            <h3><Lock size={20}/> {t.comp3Title}</h3>
-            <p>{t.comp3Desc}</p>
+          <div className="hq-f-card" style={{ background: '#0d1117', border: '1px solid #30363d', borderRadius: 8, padding: 32 }}>
+            <h3 style={{ color: '#58a6ff', fontFamily: 'monospace' }}><Lock size={20} style={{ verticalAlign: 'middle', marginRight: 8 }}/> {translate('featTools.text.t3') || t.comp3Title}</h3>
+            <p style={{ color: '#8b949e', marginTop: 16 }}>{translate('featTools.text.d3') || t.comp3Desc}</p>
           </div>
         </div>
 
@@ -140,31 +140,30 @@ function LayoutText({ qrType = 'text' }) {
 
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 700, textAlign: 'center', marginBottom: 60 }}>
+          <h2 style={{ paddingTop: 120, fontSize: 'clamp(28px, 4vw, 40px)', fontWeight: 700, textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A },
-              { q: t.faq4Q, a: t.faq4A }
-            ].map((faq, i) => (
-              <div key={i} style={{ border: '1px dashed var(--hq-border)', borderRadius: 8, overflow: 'hidden' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', fontFamily: 'inherit' }}
-                >
-                  <span style={{ fontSize: 16, fontWeight: 700, color: 'var(--hq-text)' }}>{faq.q}</span>
-                  <span style={{ color: 'var(--hq-accent)' }}><ChevronDown open={openFaq === i} /></span>
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.text.q${num}`);
+              const a = translate(`faqTools.text.a${num}`);
+              if (!q || q === `faqTools.text.q${num}`) return null;
+              return (
+              <div key={i} style={{ border: '1px dashed', borderColor: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-border)', borderRadius: 8, overflow: 'hidden', background: openFaq === i ? 'rgba(0,0,0,0.02)' : 'transparent', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', fontFamily: 'inherit' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <span style={{ color: 'var(--hq-accent)', fontWeight: 700 }}>&gt;</span>
+                    <span style={{ fontSize: 16, fontWeight: 700, color: 'var(--hq-text)' }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <div style={{ padding: '0 24px 24px 24px', color: 'var(--hq-text-muted)', lineHeight: 1.7, fontSize: 14 }}>
-                    {faq.a}
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <div style={{ padding: '0 24px 24px 44px', color: 'var(--hq-text-muted)', lineHeight: 1.7, fontSize: 14 }}>
+                    <span style={{ opacity: 0.5 }}># </span>{a}
                   </div>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

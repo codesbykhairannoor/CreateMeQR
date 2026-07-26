@@ -20,7 +20,7 @@ function LayoutPhone({ qrType = 'phone' }) {
           --hq-border: #e2e8f0;
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -81,20 +81,20 @@ function LayoutPhone({ qrType = 'phone' }) {
         </div>
 
         <div className="hq-swiss-grid">
-          <div className="hq-swiss-card">
-            <ShieldCheck size={40} color="var(--hq-accent)" style={{ marginBottom: 20 }} />
-            <h3>{t.comp1Title}</h3>
-            <p>{t.comp1Desc}</p>
+          <div className="hq-swiss-card" style={{ borderTop: '4px solid var(--hq-text)', borderRadius: 0, background: 'transparent' }}>
+            <div style={{ fontSize: 48, fontWeight: 900, marginBottom: 24, opacity: 0.1 }}>01</div>
+            <h3 style={{ fontSize: 24, fontWeight: 900, letterSpacing: '-0.02em', marginBottom: 16 }}>{translate('featTools.phone.t1') || t.comp1Title}</h3>
+            <p style={{ fontSize: 16, lineHeight: 1.6 }}>{translate('featTools.phone.d1') || t.comp1Desc}</p>
           </div>
-          <div className="hq-swiss-card">
-            <Zap size={40} color="var(--hq-accent)" style={{ marginBottom: 20 }} />
-            <h3>{t.comp2Title}</h3>
-            <p>{t.comp2Desc}</p>
+          <div className="hq-swiss-card" style={{ borderTop: '4px solid var(--hq-text)', borderRadius: 0, background: 'transparent' }}>
+            <div style={{ fontSize: 48, fontWeight: 900, marginBottom: 24, opacity: 0.1 }}>02</div>
+            <h3 style={{ fontSize: 24, fontWeight: 900, letterSpacing: '-0.02em', marginBottom: 16 }}>{translate('featTools.phone.t2') || t.comp2Title}</h3>
+            <p style={{ fontSize: 16, lineHeight: 1.6 }}>{translate('featTools.phone.d2') || t.comp2Desc}</p>
           </div>
-          <div className="hq-swiss-card">
-            <Lock size={40} color="var(--hq-accent)" style={{ marginBottom: 20 }} />
-            <h3>{t.comp3Title}</h3>
-            <p>{t.comp3Desc}</p>
+          <div className="hq-swiss-card" style={{ borderTop: '4px solid var(--hq-text)', borderRadius: 0, background: 'transparent' }}>
+            <div style={{ fontSize: 48, fontWeight: 900, marginBottom: 24, opacity: 0.1 }}>03</div>
+            <h3 style={{ fontSize: 24, fontWeight: 900, letterSpacing: '-0.02em', marginBottom: 16 }}>{translate('featTools.phone.t3') || t.comp3Title}</h3>
+            <p style={{ fontSize: 16, lineHeight: 1.6 }}>{translate('featTools.phone.d3') || t.comp3Desc}</p>
           </div>
         </div>
 
@@ -119,31 +119,28 @@ function LayoutPhone({ qrType = 'phone' }) {
 
       <div style={{ background: 'var(--hq-text)', color: 'var(--hq-bg)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 1000 }}>
-          <h2 style={{ fontSize: 'clamp(40px, 6vw, 64px)', fontWeight: 900, marginBottom: 60, letterSpacing: '-0.04em' }}>
+          <h2 style={{ paddingTop: 120, fontSize: 'clamp(40px, 6vw, 64px)', fontWeight: 900, marginBottom: 60, letterSpacing: '-0.04em' }}>
             {t.faqTitle}
           </h2>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A },
-              { q: t.faq4Q, a: t.faq4A }
-            ].map((faq, i) => (
-              <div key={i} style={{ borderBottom: '1px solid rgba(255,255,255,0.2)' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '32px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'inherit' }}
-                >
-                  <span style={{ fontSize: 24, fontWeight: 700 }}>{faq.q}</span>
-                  <span style={{ opacity: 0.5 }}><ChevronDown open={openFaq === i} /></span>
-                </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <div style={{ paddingBottom: 32, fontSize: 18, lineHeight: 1.6, opacity: 0.8 }}>
-                    {faq.a}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.phone.q${num}`);
+              const a = translate(`faqTools.phone.a${num}`);
+              if (!q || q === `faqTools.phone.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-card)', borderRadius: 24, overflow: 'hidden', transition: 'all 0.3s', boxShadow: '0 4px 12px var(--hq-shadow)' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: openFaq === i ? '#fff' : 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ width: 40, height: 40, borderRadius: '50%', background: openFaq === i ? 'rgba(255,255,255,0.2)' : 'var(--hq-accent-glow)', color: openFaq === i ? '#fff' : 'var(--hq-accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: 18 }}>{num}</div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
                   </div>
+                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+                </button>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <p style={{ padding: '0 24px 24px 80px', color: openFaq === i ? 'rgba(255,255,255,0.9)' : 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

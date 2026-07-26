@@ -20,7 +20,7 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
           --hq-border: #e0dfdc;
           --hq-accent: #0a66c2;
           --hq-accent-glow: rgba(10, 102, 194, 0.1);
-          font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 140px;
@@ -92,28 +92,28 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
 
           <div className="hq-li-card hq-li-section">
             <h2>Experience</h2>
-            <div className="hq-li-exp">
-              <div className="hq-li-exp-icon"><ShieldCheck size={24} /></div>
+            <div className="hq-li-exp" style={{ padding: '16px 0', borderBottom: '1px solid var(--hq-border)' }}>
+              <div className="hq-li-exp-icon" style={{ background: '#0a66c2', color: 'white' }}><ShieldCheck size={24} /></div>
               <div className="hq-li-exp-content">
-                <h3>{t.comp1Title}</h3>
-                <h4>Full-time</h4>
-                <p style={{ fontSize: 14, color: 'var(--hq-text-muted)' }}>{t.comp1Desc}</p>
+                <h3 style={{ fontSize: 16, fontWeight: 700 }}>{translate('featTools.linkedin.t1') || t.comp1Title}</h3>
+                <h4 style={{ fontSize: 14, color: '#0a66c2', margin: '4px 0' }}>Security Standard</h4>
+                <p style={{ fontSize: 14, color: 'var(--hq-text-muted)', margin: 0 }}>{translate('featTools.linkedin.d1') || t.comp1Desc}</p>
               </div>
             </div>
-            <div className="hq-li-exp">
-              <div className="hq-li-exp-icon"><Zap size={24} /></div>
+            <div className="hq-li-exp" style={{ padding: '16px 0', borderBottom: '1px solid var(--hq-border)' }}>
+              <div className="hq-li-exp-icon" style={{ background: '#0a66c2', color: 'white' }}><Zap size={24} /></div>
               <div className="hq-li-exp-content">
-                <h3>{t.comp2Title}</h3>
-                <h4>Full-time</h4>
-                <p style={{ fontSize: 14, color: 'var(--hq-text-muted)' }}>{t.comp2Desc}</p>
+                <h3 style={{ fontSize: 16, fontWeight: 700 }}>{translate('featTools.linkedin.t2') || t.comp2Title}</h3>
+                <h4 style={{ fontSize: 14, color: '#0a66c2', margin: '4px 0' }}>Performance Metric</h4>
+                <p style={{ fontSize: 14, color: 'var(--hq-text-muted)', margin: 0 }}>{translate('featTools.linkedin.d2') || t.comp2Desc}</p>
               </div>
             </div>
-            <div className="hq-li-exp">
-              <div className="hq-li-exp-icon"><Lock size={24} /></div>
+            <div className="hq-li-exp" style={{ padding: '16px 0' }}>
+              <div className="hq-li-exp-icon" style={{ background: '#0a66c2', color: 'white' }}><Lock size={24} /></div>
               <div className="hq-li-exp-content">
-                <h3>{t.comp3Title}</h3>
-                <h4>Full-time</h4>
-                <p style={{ fontSize: 14, color: 'var(--hq-text-muted)' }}>{t.comp3Desc}</p>
+                <h3 style={{ fontSize: 16, fontWeight: 700 }}>{translate('featTools.linkedin.t3') || t.comp3Title}</h3>
+                <h4 style={{ fontSize: 14, color: '#0a66c2', margin: '4px 0' }}>Privacy Policy</h4>
+                <p style={{ fontSize: 14, color: 'var(--hq-text-muted)', margin: 0 }}>{translate('featTools.linkedin.d3') || t.comp3Desc}</p>
               </div>
             </div>
           </div>
@@ -146,19 +146,26 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
         <div className="hq-container" style={{ display: 'block', maxWidth: 800 }}>
           <h2 style={{ fontSize: 24, fontWeight: 600, marginBottom: 32 }}>Frequently Asked Questions</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A }, { q: t.faq2Q, a: t.faq2A }, { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ borderBottom: '1px solid var(--hq-border)', paddingBottom: 16 }}>
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.linkedin.q${num}`);
+              const a = translate(`faqTools.linkedin.a${num}`);
+              if (!q || q === `faqTools.linkedin.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 16, border: '1px solid', borderColor: openFaq === i ? '#0a66c2' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? 'rgba(10,102,194,0.1)' : 'var(--hq-accent-glow)', padding: 8, borderRadius: 12, color: openFaq === i ? '#0a66c2' : 'var(--hq-accent)', transition: 'all 0.3s' }}>
+                      <Briefcase size={20} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
                 <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
-                  <p style={{ paddingTop: 12, color: 'var(--hq-text-muted)', fontSize: 14, lineHeight: 1.5 }}>{faq.a}</p>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

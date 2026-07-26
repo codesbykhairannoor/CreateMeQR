@@ -21,7 +21,7 @@ function LayoutURL({ qrType = 'url' }) {
           /* LOCKED TO BASE PALETTE */
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -79,30 +79,38 @@ function LayoutURL({ qrType = 'url' }) {
           <p style={{ fontSize: 20, color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{t.heroSubtitle}</p>
         </div>
 
-        <div className="hq-bento">
-          {/* Large Hero Card */}
-          <div className="hq-card" style={{ gridColumn: 'span 8', minHeight: 320, background: 'linear-gradient(135deg, var(--hq-accent-glow), transparent)', position: 'relative', overflow: 'hidden' }}>
-            <div style={{ position: 'relative', zIndex: 2, maxWidth: '60%' }}>
-              <div className="hq-icon-box"><ShieldCheck size={28} /></div>
-              <h3 className="hq-card-title" style={{ fontSize: 28 }}>{t.comp1Title}</h3>
-              <p className="hq-card-desc" style={{ fontSize: 18 }}>{t.comp1Desc}</p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(12, 1fr)', gap: 24 }}>
+          {/* Main feature - URL Style */}
+          <div style={{ gridColumn: 'span 12', background: 'var(--hq-bg)', border: '2px solid var(--hq-accent)', borderRadius: 24, padding: 48, display: 'flex', alignItems: 'center', justifyContent: 'space-between', position: 'relative', overflow: 'hidden' }}>
+            <div style={{ position: 'absolute', right: -50, top: -50, width: 300, height: 300, background: 'var(--hq-accent-glow)', filter: 'blur(80px)', borderRadius: '50%' }} />
+            <div style={{ position: 'relative', zIndex: 1, maxWidth: '50%' }}>
+              <div style={{ display: 'inline-block', padding: '12px 24px', background: 'var(--hq-accent)', color: '#fff', borderRadius: 100, fontWeight: 800, marginBottom: 24 }}>
+                URL.01
+              </div>
+              <h3 style={{ fontSize: 32, fontWeight: 900, marginBottom: 16 }}>{translate('featTools.url.t1') || t.comp1Title}</h3>
+              <p style={{ fontSize: 18, color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.url.d1') || t.comp1Desc}</p>
             </div>
-            <div style={{ position: 'absolute', right: -40, bottom: -40, opacity: 0.1 }}>
-              <QrCode size={300} />
+            <div style={{ position: 'relative', zIndex: 1 }}>
+              <ShieldCheck size={120} style={{ color: 'var(--hq-accent)' }} />
             </div>
           </div>
           
-          <div className="hq-card" style={{ gridColumn: 'span 4' }}>
-            <div className="hq-icon-box"><Zap size={28} /></div>
-            <h3 className="hq-card-title">{t.comp2Title}</h3>
-            <p className="hq-card-desc">{t.comp2Desc}</p>
+          <div style={{ gridColumn: 'span 6', background: 'var(--hq-card)', borderRadius: 24, padding: 40, boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+            <div style={{ width: 64, height: 64, borderRadius: 16, background: 'var(--hq-bg)', border: '1px solid var(--hq-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24, color: 'var(--hq-accent)' }}>
+              <Zap size={32} />
+            </div>
+            <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 12 }}>{translate('featTools.url.t2') || t.comp2Title}</h3>
+            <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.url.d2') || t.comp2Desc}</p>
           </div>
-
-          <div className="hq-card" style={{ gridColumn: 'span 4' }}>
-            <div className="hq-icon-box"><Lock size={28} /></div>
-            <h3 className="hq-card-title">{t.comp3Title}</h3>
-            <p className="hq-card-desc">{t.comp3Desc}</p>
+          
+          <div style={{ gridColumn: 'span 6', background: 'var(--hq-card)', borderRadius: 24, padding: 40, boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
+            <div style={{ width: 64, height: 64, borderRadius: 16, background: 'var(--hq-bg)', border: '1px solid var(--hq-border)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24, color: 'var(--hq-accent)' }}>
+              <Lock size={32} />
+            </div>
+            <h3 style={{ fontSize: 24, fontWeight: 800, marginBottom: 12 }}>{translate('featTools.url.t3') || t.comp3Title}</h3>
+            <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.url.d3') || t.comp3Desc}</p>
           </div>
+        </div>
 
           <div className="hq-card" style={{ gridColumn: 'span 8', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 32 }}>
             <div style={{ flex: 1 }}>
@@ -130,7 +138,6 @@ function LayoutURL({ qrType = 'url' }) {
             </div>
           </div>
         </div>
-      </div>
 
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
@@ -138,31 +145,30 @@ function LayoutURL({ qrType = 'url' }) {
             <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--hq-accent-glow)', borderRadius: 100, color: 'var(--hq-accent)', fontWeight: 700, fontSize: '14px', marginBottom: 24, alignItems: 'center', gap: 8 }}>
               <Globe size={16} /> {t.badgeFaq || 'Knowledge Base'}
             </div>
-            <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900 }}>{t.faqTitle} {typeName}</h2>
+            <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 900 }}>{t.faqTitle} {typeName}</h2>
           </div>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A },
-              { q: t.faq4Q, a: t.faq4A }
-            ].map((faq, i) => (
-              <div key={i} style={{ border: '1px solid var(--hq-border)', borderRadius: 16, overflow: 'hidden' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left' }}
-                >
-                  <span style={{ fontSize: 18, fontWeight: 700, color: 'var(--hq-text)' }}>{faq.q}</span>
-                  <span style={{ color: 'var(--hq-accent)' }}><ChevronDown open={openFaq === i} /></span>
-                </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <div style={{ padding: '0 24px 24px 24px', color: 'var(--hq-text-muted)', lineHeight: 1.7 }}>
-                    {faq.a}
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.url.q${num}`);
+              const a = translate(`faqTools.url.a${num}`);
+              if (!q || q === `faqTools.url.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 24, border: '1px solid var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s', boxShadow: openFaq === i ? '0 10px 30px rgba(0,0,0,0.05)' : 'none' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ width: 8, height: 8, borderRadius: '50%', background: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-text-muted)', transition: 'background 0.3s' }}></div>
+                    <span style={{ fontSize: 18, fontWeight: 700, color: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-text)' }}>{q}</span>
                   </div>
+                  <div style={{ width: 40, height: 40, borderRadius: 20, background: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-accent-glow)', color: openFaq === i ? '#fff' : 'var(--hq-accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.3s', flexShrink: 0 }}>
+                    <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+                  </div>
+                </button>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <p style={{ padding: '0 32px 32px 56px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { UserCircle2, ShieldCheck, Zap, CheckCircle2, ChevronDown } from 'lucide-react';
+import { UserCircle2, ShieldCheck, Zap, CheckCircle2, ChevronDown, Lock } from 'lucide-react';
 
 function LayoutVCard({ qrType = 'vcard' }) {
   const { t: translate } = useTranslation();
@@ -22,7 +22,7 @@ function LayoutVCard({ qrType = 'vcard' }) {
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
           --hq-grad: linear-gradient(135deg, var(--hq-accent), #60a5fa);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -140,17 +140,17 @@ function LayoutVCard({ qrType = 'vcard' }) {
         </div>
         
         <div className="hq-horizontal-cards">
-          <div className="hq-h-card">
-            <h3><ShieldCheck size={28} color="var(--hq-accent)" /> {t.comp1Title}</h3>
-            <p>{t.comp1Desc}</p>
+          <div className="hq-h-card" style={{ background: 'linear-gradient(145deg, var(--hq-bg), var(--hq-card))', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
+            <h3><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><ShieldCheck size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t1') || t.comp1Title}</h3>
+            <p>{translate('featTools.vcard.d1') || t.comp1Desc}</p>
           </div>
-          <div className="hq-h-card">
-            <h3><Zap size={28} color="var(--hq-accent)" /> {t.comp2Title}</h3>
-            <p>{t.comp2Desc}</p>
+          <div className="hq-h-card" style={{ background: 'linear-gradient(145deg, var(--hq-bg), var(--hq-card))', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
+            <h3><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><Zap size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t2') || t.comp2Title}</h3>
+            <p>{translate('featTools.vcard.d2') || t.comp2Desc}</p>
           </div>
-          <div className="hq-h-card">
-            <h3><CheckCircle2 size={28} color="var(--hq-accent)" /> {t.comp3Title}</h3>
-            <p>{t.comp3Desc}</p>
+          <div className="hq-h-card" style={{ background: 'linear-gradient(145deg, var(--hq-bg), var(--hq-card))', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
+            <h3><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><Lock size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t3') || t.comp3Title}</h3>
+            <p>{translate('featTools.vcard.d3') || t.comp3Desc}</p>
           </div>
         </div>
 
@@ -180,31 +180,27 @@ function LayoutVCard({ qrType = 'vcard' }) {
       {/* FAQ */}
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, textAlign: 'center', marginBottom: 60 }}>
+          <h2 style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A },
-              { q: t.faq4Q, a: t.faq4A }
-            ].map((faq, i) => (
-              <div key={i} style={{ border: '1px solid var(--hq-border)', borderRadius: 24, overflow: 'hidden', background: 'var(--hq-bg)' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left' }}
-                >
-                  <span style={{ fontSize: 18, fontWeight: 700, color: 'var(--hq-text)' }}>{faq.q}</span>
-                  <span style={{ color: 'var(--hq-accent)' }}><ChevronDown open={openFaq === i} /></span>
-                </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <div style={{ padding: '0 32px 32px 32px', color: 'var(--hq-text-muted)', lineHeight: 1.7 }}>
-                    {faq.a}
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.vcard.q${num}`);
+              const a = translate(`faqTools.vcard.a${num}`);
+              if (!q || q === `faqTools.vcard.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'rgba(255,255,255,0.02)', backdropFilter: 'blur(12px)', borderRadius: 16, border: '1px solid', borderColor: openFaq === i ? 'var(--hq-accent)' : 'rgba(255,255,255,0.05)', overflow: 'hidden', transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <span style={{ fontSize: 18, fontWeight: 500, letterSpacing: '-0.02em' }}>{q}</span>
+                  <div style={{ color: openFaq === i ? 'var(--hq-accent)' : 'var(--hq-text-muted)', transition: 'all 0.3s' }}>
+                    <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)' }} />
                   </div>
+                </button>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'opacity 0.4s' }}>
+                  <p style={{ padding: '0 24px 24px 24px', color: 'var(--hq-text-muted)', fontSize: 15, lineHeight: 1.6, borderTop: openFaq === i ? '1px solid rgba(255,255,255,0.05)' : 'none', paddingTop: openFaq === i ? 20 : 0 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

@@ -20,7 +20,7 @@ function LayoutTikTok({ qrType = 'tiktok' }) {
           --hq-border: #222222;
           --hq-accent: #ff0050;
           --hq-accent-secondary: #00f2fe;
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 100px;
@@ -95,17 +95,17 @@ function LayoutTikTok({ qrType = 'tiktok' }) {
           </p>
           
           <div className="hq-tk-features">
-            <div className="hq-tk-feature">
-              <h3><ShieldCheck color="var(--hq-accent)" /> {t.comp1Title}</h3>
-              <p style={{ color: 'var(--hq-text-muted)', fontSize: 15 }}>{t.comp1Desc}</p>
+            <div className="hq-tk-feature" style={{ borderLeft: '4px solid #ff0050', paddingLeft: 16, background: 'rgba(255,255,255,0.02)' }}>
+              <h3 style={{ fontSize: 18, color: '#ff0050', display: 'flex', alignItems: 'center', gap: 8 }}><ShieldCheck size={20} /> {translate('featTools.tiktok.t1') || t.comp1Title}</h3>
+              <p style={{ color: 'var(--hq-text-muted)', fontSize: 15, margin: 0 }}>{translate('featTools.tiktok.d1') || t.comp1Desc}</p>
             </div>
-            <div className="hq-tk-feature">
-              <h3><Zap color="var(--hq-accent-secondary)" /> {t.comp2Title}</h3>
-              <p style={{ color: 'var(--hq-text-muted)', fontSize: 15 }}>{t.comp2Desc}</p>
+            <div className="hq-tk-feature" style={{ borderLeft: '4px solid #00f2fe', paddingLeft: 16, background: 'rgba(255,255,255,0.02)' }}>
+              <h3 style={{ fontSize: 18, color: '#00f2fe', display: 'flex', alignItems: 'center', gap: 8 }}><Zap size={20} /> {translate('featTools.tiktok.t2') || t.comp2Title}</h3>
+              <p style={{ color: 'var(--hq-text-muted)', fontSize: 15, margin: 0 }}>{translate('featTools.tiktok.d2') || t.comp2Desc}</p>
             </div>
-            <div className="hq-tk-feature">
-              <h3><Lock color="var(--hq-text)" /> {t.comp3Title}</h3>
-              <p style={{ color: 'var(--hq-text-muted)', fontSize: 15 }}>{t.comp3Desc}</p>
+            <div className="hq-tk-feature" style={{ borderLeft: '4px solid #fff', paddingLeft: 16, background: 'rgba(255,255,255,0.02)' }}>
+              <h3 style={{ fontSize: 18, color: '#fff', display: 'flex', alignItems: 'center', gap: 8 }}><Lock size={20} /> {translate('featTools.tiktok.t3') || t.comp3Title}</h3>
+              <p style={{ color: 'var(--hq-text-muted)', fontSize: 15, margin: 0 }}>{translate('featTools.tiktok.d3') || t.comp3Desc}</p>
             </div>
           </div>
         </div>
@@ -113,21 +113,28 @@ function LayoutTikTok({ qrType = 'tiktok' }) {
       
       <div style={{ background: '#0a0a0a', padding: '100px 0', marginTop: 80, borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800, flexDirection: 'column' }}>
-          <h2 style={{ fontSize: 32, fontWeight: 900, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16, width: '100%' }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A }, { q: t.faq2Q, a: t.faq2A }, { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ background: 'var(--hq-card)', borderRadius: 12, padding: 8 }}>
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '16px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
-                  <span style={{ fontSize: 16, fontWeight: 700 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+          <h2 style={{ paddingTop: 120, fontSize: 32, fontWeight: 900, textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.tiktok.q${num}`);
+              const a = translate(`faqTools.tiktok.a${num}`);
+              if (!q || q === `faqTools.tiktok.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? '#ff0050' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s', boxShadow: openFaq === i ? '0 4px 20px rgba(255,0,80,0.1)' : 'none' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? 'rgba(255,0,80,0.1)' : 'var(--hq-accent-glow)', padding: 8, borderRadius: 12, color: openFaq === i ? '#ff0050' : 'var(--hq-accent)', transition: 'all 0.3s' }}>
+                      <Music2 size={20} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
                 <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
-                  <p style={{ padding: '0 24px 24px 24px', color: 'var(--hq-text-muted)' }}>{faq.a}</p>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>

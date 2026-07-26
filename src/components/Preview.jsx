@@ -86,23 +86,22 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
       const u = (qrData.linkedinInput || '').replace(/.*\//, '');
       dataString = `https://linkedin.com/in/${u}`;
     } else if (qrType === 'telegram') {
-      const u = (qrData.telegramInput || '').replace(/^@/, '').replace(/.*\//, '');
-      dataString = `https://t.me/${u}`;
+      const cleanUser = (qrData.telegramInput || '').replace(/^@/, '');
+      dataString = `https://t.me/${cleanUser}`;
     } else if (qrType === 'snapchat') {
-      const u = (qrData.snapchatInput || '').replace(/^@/, '').replace(/.*\//, '');
-      dataString = `https://snapchat.com/add/${u}`;
+      const cleanUser = (qrData.snapchatInput || '').replace(/^@/, '');
+      dataString = `https://snapchat.com/add/${cleanUser}`;
     } else if (qrType === 'discord') {
-      const u = (qrData.discordInput || '').replace(/.*\//, '');
-      dataString = `https://discord.gg/${u}`;
+      dataString = qrData.discordInput || 'https://discord.com/';
     } else if (qrType === 'spotify') {
-      dataString = qrData.spotifyInput || 'https://open.spotify.com/';
+      dataString = qrData.spotifyInput || 'https://spotify.com/';
     } else if (qrType === 'paypal') {
-      const u = (qrData.paypalUsername || '').replace(/^@/, '').replace(/.*\//, '');
-      const a = qrData.paypalAmount || '';
-      dataString = `https://paypal.me/${u}${a ? '/' + a : ''}`;
+      dataString = `https://paypal.me/${qrData.paypalUsername || ''}${qrData.paypalAmount ? '/' + qrData.paypalAmount : ''}`;
     } else if (qrType === 'venmo') {
-      const u = (qrData.venmoInput || '').replace(/^@/, '').replace(/.*\//, '');
-      dataString = `https://venmo.com/${u}`;
+      const cleanUser = (qrData.venmoInput || '').replace(/^@/, '');
+      dataString = `venmo://paycharge?txn=pay&recipients=${cleanUser}`;
+    } else if (['pdf', 'gforms', 'greview', 'image', 'linkinbio', 'video', 'audio', 'amazon', 'booking', 'file'].includes(qrType)) {
+      dataString = qrData[`${qrType}Input`] || 'https://www.createmy-qr.com';
     }
 
     qrCode.update({

@@ -1,14 +1,18 @@
 const fs = require('fs');
+const path = require('path');
 
-let app = fs.readFileSync('src/App.jsx', 'utf8');
+const filePath = path.join(__dirname, 'src', 'components', 'LandingContent.jsx');
+let content = fs.readFileSync(filePath, 'utf8');
 
-app = app.replace('import CustomizationPanel from \'./components/CustomizationPanel\';', 'const CustomizationPanel = React.lazy(() => import(\'./components/CustomizationPanel\'));');
-app = app.replace('import EmbedWidgetModal from \'./components/EmbedWidgetModal\';', 'const EmbedWidgetModal = React.lazy(() => import(\'./components/EmbedWidgetModal\'));');
+// Replace React.lazy with standard imports
+content = content.replace(/const (Layout[a-zA-Z0-9]+) = React\.lazy\(\(\) => import\('([^']+)'\)\);/g, "import $1 from '$2';");
 
-app = app.replace('<CustomizationPanel visuals={visuals} setVisuals={setVisuals} />', '<React.Suspense fallback={<div className="p-8 text-center text-zinc-600">Loading customization tools...</div>}><CustomizationPanel visuals={visuals} setVisuals={setVisuals} /></React.Suspense>');
+// Remove Suspense from import
+content = content.replace(/import React, { Suspense } from 'react';/, "import React from 'react';");
 
-app = app.replace('{showEmbedModal && <EmbedWidgetModal onClose={() => setShowEmbedModal(false)} />}', '{showEmbedModal && <React.Suspense fallback={null}><EmbedWidgetModal onClose={() => setShowEmbedModal(false)} /></React.Suspense>}');
+// Remove Suspense wrap
+content = content.replace(/<Suspense fallback=\{<div[^>]*>Loading layout...<\/div>\}>/g, "");
+content = content.replace(/<\/Suspense>/g, "");
 
-app = app.replace('opacity-50 cursor-not-allowed', 'cursor-not-allowed opacity-90');
-
-fs.writeFileSync('src/App.jsx', app);
+fs.writeFileSync(filePath, content);
+console.log("Fixed LandingContent.jsx");

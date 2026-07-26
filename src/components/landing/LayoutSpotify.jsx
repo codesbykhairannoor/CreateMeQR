@@ -20,10 +20,13 @@ function LayoutSpotify({ qrType = 'spotify' }) {
           --hq-card-hover: #282828;
           --hq-border: #282828;
           --hq-accent: #1ed760;
-          font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           min-height: 100vh;
+          padding: 80px 24px;
+          display: flex;
+          align-items: center;
         }
         
         .hq-sp-hero { background: linear-gradient(180deg, #535353 0%, var(--hq-bg) 100%); padding: 80px 32px 32px 32px; display: flex; gap: 24px; align-items: flex-end; }
@@ -51,9 +54,20 @@ function LayoutSpotify({ qrType = 'spotify' }) {
         @media (max-width: 768px) {
           .hq-sp-hero { flex-direction: column; align-items: center; text-align: center; padding-top: 40px; }
         }
+        
+        .hq-sp-wrapper {
+          max-width: 1000px;
+          margin: 0 auto;
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+          background: var(--hq-bg);
+          width: 100%;
+        }
       `}</style>
 
-      <div className="hq-sp-hero">
+      <div className="hq-sp-wrapper">
+        <div className="hq-sp-hero">
         <div className="hq-sp-cover">
           <Music size={80} color="var(--hq-text-muted)" />
         </div>
@@ -84,42 +98,42 @@ function LayoutSpotify({ qrType = 'spotify' }) {
             </tr>
           </thead>
           <tbody>
-            <tr className="hq-sp-row">
+            <tr className="hq-sp-row" style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', transition: 'background 0.2s' }}>
               <td style={{ color: 'var(--hq-text-muted)' }}>1</td>
               <td>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                  <ShieldCheck size={40} color="var(--hq-text-muted)" />
+                  <div style={{ width: 48, height: 48, background: '#282828', borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ShieldCheck size={24} color="#1DB954" /></div>
                   <div>
-                    <h3>{t.comp1Title}</h3>
-                    <p>{t.comp1Desc}</p>
+                    <h3 style={{ fontSize: 16, fontWeight: 500, margin: 0, color: 'white' }}>{translate('featTools.spotify.t1') || t.comp1Title}</h3>
+                    <p style={{ margin: 0, fontSize: 14, color: 'var(--hq-text-muted)' }}>{translate('featTools.spotify.d1') || t.comp1Desc}</p>
                   </div>
                 </div>
               </td>
               <td style={{ color: 'var(--hq-text-muted)', fontSize: 14 }}>Security</td>
               <td style={{ color: 'var(--hq-text-muted)', fontSize: 14, textAlign: 'right' }}>3:45</td>
             </tr>
-            <tr className="hq-sp-row">
+            <tr className="hq-sp-row" style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', transition: 'background 0.2s' }}>
               <td style={{ color: 'var(--hq-text-muted)' }}>2</td>
               <td>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                  <Zap size={40} color="var(--hq-text-muted)" />
+                  <div style={{ width: 48, height: 48, background: '#282828', borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Zap size={24} color="#1DB954" /></div>
                   <div>
-                    <h3>{t.comp2Title}</h3>
-                    <p>{t.comp2Desc}</p>
+                    <h3 style={{ fontSize: 16, fontWeight: 500, margin: 0, color: 'white' }}>{translate('featTools.spotify.t2') || t.comp2Title}</h3>
+                    <p style={{ margin: 0, fontSize: 14, color: 'var(--hq-text-muted)' }}>{translate('featTools.spotify.d2') || t.comp2Desc}</p>
                   </div>
                 </div>
               </td>
               <td style={{ color: 'var(--hq-text-muted)', fontSize: 14 }}>Speed</td>
               <td style={{ color: 'var(--hq-text-muted)', fontSize: 14, textAlign: 'right' }}>2:10</td>
             </tr>
-            <tr className="hq-sp-row">
+            <tr className="hq-sp-row" style={{ borderBottom: '1px solid rgba(255,255,255,0.05)', transition: 'background 0.2s' }}>
               <td style={{ color: 'var(--hq-text-muted)' }}>3</td>
               <td>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                  <Lock size={40} color="var(--hq-text-muted)" />
+                  <div style={{ width: 48, height: 48, background: '#282828', borderRadius: 4, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Lock size={24} color="#1DB954" /></div>
                   <div>
-                    <h3>{t.comp3Title}</h3>
-                    <p>{t.comp3Desc}</p>
+                    <h3 style={{ fontSize: 16, fontWeight: 500, margin: 0, color: 'white' }}>{translate('featTools.spotify.t3') || t.comp3Title}</h3>
+                    <p style={{ margin: 0, fontSize: 14, color: 'var(--hq-text-muted)' }}>{translate('featTools.spotify.d3') || t.comp3Desc}</p>
                   </div>
                 </div>
               </td>
@@ -130,21 +144,29 @@ function LayoutSpotify({ qrType = 'spotify' }) {
         </table>
 
         <div style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 24 }}>{t.faqTitle}</h2>
+          <h2 style={{ paddingTop: 120, fontSize: 24, fontWeight: 700, marginBottom: 24 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A }, { q: t.faq2Q, a: t.faq2A }, { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ borderBottom: '1px solid var(--hq-border)' }}>
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '16px 0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
-                  <span style={{ fontSize: 16, fontWeight: 600 }}>{faq.q}</span>
-                  <ChevronDown size={20} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.spotify.q${num}`);
+              const a = translate(`faqTools.spotify.a${num}`);
+              if (!q || q === `faqTools.spotify.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: openFaq === i ? '#1DB954' : 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? '#1DB954' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: openFaq === i ? '#000' : 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ color: openFaq === i ? '#000' : 'var(--hq-text-muted)', transition: 'color 0.3s' }}>
+                      <Music size={24} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: openFaq === i ? '#000' : 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
                 <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
-                  <p style={{ paddingBottom: 16, color: 'var(--hq-text-muted)' }}>{faq.a}</p>
+                  <p style={{ padding: '0 32px 32px 72px', color: openFaq === i ? 'rgba(0,0,0,0.8)' : 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
+          </div>
           </div>
         </div>
       </div>

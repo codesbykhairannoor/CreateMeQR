@@ -56,7 +56,7 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo }) {
       </section>
 
       {/* Generator Application Workspace */}
-      <section className="max-w-7xl mx-auto px-6">
+      <section className="max-w-7xl mx-auto px-6 mb-32 lg:mb-48">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-[#f8fafc] dark:bg-[#040a18] border border-blue-100 dark:border-[#102040] rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
           <div className="sr-only" aria-hidden="true">
             <h2>{t('seoCore.h2')}</h2>

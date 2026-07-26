@@ -87,3 +87,72 @@
   line-height: 1.6 !important;
   color: var(--hq-text-muted) !important;
 }
+
+/* =========================================================
+   MASSIVE MOBILE OPTIMIZATIONS (SUPER DUPER RESPONSIVE)
+   ========================================================= */
+@media (max-width: 900px) {
+  /* 1. Global Layout Padding */
+  [class^="hq-layout-"] {
+    padding: 32px 16px !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  /* 2. Global Grid & Bento Reset */
+  [class^="hq-layout-"] [style*="grid-template-columns"],
+  [class^="hq-layout-"] [style*="display: grid"],
+  [class^="hq-layout-"] [class*="-grid"],
+  [class^="hq-layout-"] [class*="-bento"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+  
+  [class^="hq-layout-"] [style*="gridColumn"],
+  [class^="hq-layout-"] [style*="grid-column"] {
+    grid-column: span 1 !important;
+    width: 100% !important;
+  }
+
+  /* 3. Typography Clamping for Mobile */
+  [class^="hq-layout-"] h1 {
+    font-size: clamp(32px, 8vw, 48px) !important;
+    line-height: 1.1 !important;
+  }
+  [class^="hq-layout-"] h2 {
+    font-size: clamp(28px, 6vw, 36px) !important;
+    line-height: 1.2 !important;
+  }
+  [class^="hq-layout-"] p {
+    font-size: clamp(14px, 4vw, 16px) !important;
+  }
+
+  /* 4. Fix specific app containers */
+  .hq-dc-wrapper, .hq-sp-wrapper {
+    height: auto !important;
+    min-height: 80vh !important;
+    border-radius: 8px !important;
+    width: 100% !important;
+  }
+  .hq-dc-sidebar, .hq-dc-guilds {
+    display: none !important;
+  }
+
+  /* 5. Fix Flexbox Heroes */
+  .hq-sp-hero, .hq-dc-hero, .hq-tt-profile, .hq-ig-profile, .hq-fb-cover-wrap,
+  .hq-yt-theater-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  /* 6. Fix FAQ Containers */
+  [class^="hq-layout-"] button[style*="padding: '24px 32px'"] {
+    padding: 16px 20px !important;
+  }
+  [class^="hq-layout-"] p[style*="padding: '0 32px 32px 72px'"] {
+    padding: 0 20px 20px 20px !important;
+  }
+}

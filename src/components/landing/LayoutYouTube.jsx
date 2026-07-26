@@ -20,7 +20,7 @@ function LayoutYouTube({ qrType = 'youtube' }) {
           --hq-border: #e2e8f0;
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -111,46 +111,54 @@ function LayoutYouTube({ qrType = 'youtube' }) {
         </div>
 
         <div className="hq-yt-grid">
-          <div className="hq-yt-card">
-            <ShieldCheck size={32} color="var(--hq-accent)" style={{ marginBottom: 16 }} />
-            <h3>{t.comp1Title}</h3>
-            <p>{t.comp1Desc}</p>
+          <div className="hq-yt-card" style={{ background: '#0f0f0f', border: '1px solid #272727', borderRadius: 12, padding: 32 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
+              <div style={{ width: 48, height: 48, borderRadius: '50%', background: '#272727', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ShieldCheck size={24} color="#ff0000" /></div>
+              <h3 style={{ fontSize: 20, fontWeight: 700, margin: 0, color: '#fff' }}>{translate('featTools.youtube.t1') || t.comp1Title}</h3>
+            </div>
+            <p style={{ color: '#aaaaaa', lineHeight: 1.6 }}>{translate('featTools.youtube.d1') || t.comp1Desc}</p>
           </div>
-          <div className="hq-yt-card">
-            <Zap size={32} color="var(--hq-accent)" style={{ marginBottom: 16 }} />
-            <h3>{t.comp2Title}</h3>
-            <p>{t.comp2Desc}</p>
+          <div className="hq-yt-card" style={{ background: '#0f0f0f', border: '1px solid #272727', borderRadius: 12, padding: 32 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
+              <div style={{ width: 48, height: 48, borderRadius: '50%', background: '#272727', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Zap size={24} color="#ff0000" /></div>
+              <h3 style={{ fontSize: 20, fontWeight: 700, margin: 0, color: '#fff' }}>{translate('featTools.youtube.t2') || t.comp2Title}</h3>
+            </div>
+            <p style={{ color: '#aaaaaa', lineHeight: 1.6 }}>{translate('featTools.youtube.d2') || t.comp2Desc}</p>
           </div>
-          <div className="hq-yt-card">
-            <Lock size={32} color="var(--hq-accent)" style={{ marginBottom: 16 }} />
-            <h3>{t.comp3Title}</h3>
-            <p>{t.comp3Desc}</p>
+          <div className="hq-yt-card" style={{ background: '#0f0f0f', border: '1px solid #272727', borderRadius: 12, padding: 32 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
+              <div style={{ width: 48, height: 48, borderRadius: '50%', background: '#272727', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Lock size={24} color="#ff0000" /></div>
+              <h3 style={{ fontSize: 20, fontWeight: 700, margin: 0, color: '#fff' }}>{translate('featTools.youtube.t3') || t.comp3Title}</h3>
+            </div>
+            <p style={{ color: '#aaaaaa', lineHeight: 1.6 }}>{translate('featTools.youtube.d3') || t.comp3Desc}</p>
           </div>
         </div>
       </div>
       
       <div style={{ background: 'var(--hq-card)', padding: '120px 0', borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 style={{ fontSize: 40, fontWeight: 900, marginBottom: 48, textAlign: 'center' }}>{t.faqTitle}</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-            {[
-              { q: t.faq1Q, a: t.faq1A },
-              { q: t.faq2Q, a: t.faq2A },
-              { q: t.faq3Q, a: t.faq3A }
-            ].map((faq, i) => (
-              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 16, padding: '24px 32px' }}>
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}
-                >
-                  <span style={{ fontSize: 20, fontWeight: 700 }}>{faq.q}</span>
-                  <ChevronDown size={24} style={{ transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
+          <h2 style={{ paddingTop: 120, fontSize: 40, fontWeight: 900, marginBottom: 48, textAlign: 'center' }}>{t.faqTitle}</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {[1, 2, 3, 4, 5].map((num, i) => {
+              const q = translate(`faqTools.youtube.q${num}`);
+              const a = translate(`faqTools.youtube.a${num}`);
+              if (!q || q === `faqTools.youtube.q${num}`) return null;
+              return (
+              <div key={i} style={{ background: 'var(--hq-bg)', borderRadius: 24, border: '1px solid', borderColor: openFaq === i ? '#ff0000' : 'var(--hq-border)', overflow: 'hidden', transition: 'all 0.3s' }}>
+                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', padding: '24px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', color: 'var(--hq-text)' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                    <div style={{ background: openFaq === i ? 'rgba(255,0,0,0.1)' : 'var(--hq-accent-glow)', padding: 8, borderRadius: 12, color: openFaq === i ? '#ff0000' : 'var(--hq-accent)', transition: 'all 0.3s' }}>
+                      <Video size={20} />
+                    </div>
+                    <span style={{ fontSize: 18, fontWeight: 700 }}>{q}</span>
+                  </div>
+                  <ChevronDown size={20} style={{ color: 'var(--hq-text-muted)', transform: openFaq === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.3s' }} />
                 </button>
-                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0, transition: 'all 0.3s' }}>
-                  <p style={{ paddingTop: 20, color: 'var(--hq-text-muted)', lineHeight: 1.6, fontSize: 16 }}>{faq.a}</p>
+                <div style={{ height: openFaq === i ? 'auto' : 0, overflow: 'hidden', opacity: openFaq === i ? 1 : 0 }}>
+                  <p style={{ padding: '0 32px 32px 72px', color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{a}</p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </div>
       </div>
