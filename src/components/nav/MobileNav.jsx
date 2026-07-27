@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown, QrCode, ScanLine, Scan, Building2, ChevronUp } from 'lucide-react';
+import { ChevronDown, QrCode, ScanLine, Scan, Building2, ChevronUp, Moon, Sun } from 'lucide-react';
 import { localizedRoutes } from '../../config/localizedRoutes';
 import { QR_CATEGORIES, BARCODE_CATEGORIES } from './MegaNav';
 
-export default function MobileNav({ currentLangCode, onClose }) {
+export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkMode }) {
   const { t } = useTranslation();
   const [openSection, setOpenSection] = useState(null);
 
@@ -89,7 +89,7 @@ export default function MobileNav({ currentLangCode, onClose }) {
       </div>
 
       {/* 4. Company */}
-      <div className="flex flex-col pb-2">
+      <div className="flex flex-col border-b border-zinc-100 dark:border-zinc-800 pb-2">
         <button onClick={() => toggleSection('company')} className="flex items-center justify-between py-3 text-[15px] font-bold text-zinc-800 dark:text-zinc-200">
           <div className="flex items-center gap-2">
             <Building2 className="w-5 h-5 text-purple-600 dark:text-purple-400" />
@@ -105,6 +105,16 @@ export default function MobileNav({ currentLangCode, onClose }) {
             <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}/terms`} onClick={onClose} className="p-2 rounded-xl hover:bg-slate-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 transition-colors">{t('nav.terms', 'Terms of Service')}</a>
           </div>
         )}
+      </div>
+
+      {/* 5. Theme Toggle */}
+      <div className="pb-2 mt-2">
+        <button onClick={() => setDarkMode(!darkMode)} className="w-full flex items-center gap-3 py-3 text-[15px] font-bold text-zinc-800 dark:text-zinc-200">
+          <div className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800">
+            {darkMode ? <Sun className="w-5 h-5 text-amber-500" /> : <Moon className="w-5 h-5 text-indigo-500" />}
+          </div>
+          {darkMode ? 'Light Mode' : 'Dark Mode'}
+        </button>
       </div>
     </div>
   );
