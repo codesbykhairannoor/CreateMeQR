@@ -107,6 +107,8 @@ export default function BarcodeGenerator() {
               </div>
             </div>
 
+            {isMobile && <LivePreviewCard />}
+
             <div className="bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-3xl p-8 shadow-xl flex-1">
               <div className="flex items-center gap-3 mb-8 pb-4 border-b border-slate-100 dark:border-[#1e2d4a]">
                 <Settings2 className="w-6 h-6 text-blue-600 dark:text-blue-500" />
