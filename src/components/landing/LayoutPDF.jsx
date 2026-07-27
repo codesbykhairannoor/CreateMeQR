@@ -25,7 +25,7 @@ function LayoutPDF({ qrType = 'pdf' }) {
           --hq-border: #e0e0e0;
           --hq-accent: #E3242B; /* Adobe Red */
           --hq-accent-glow: rgba(227, 36, 43, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           min-height: 100vh;

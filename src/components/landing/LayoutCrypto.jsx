@@ -40,7 +40,7 @@ function LayoutCrypto({ qrType = 'crypto' }) {
           --hq-accent-glow: rgba(59, 130, 246, 0.15);
           --cryp-green: #10b981;
           --cryp-red: #ef4444;
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */
@@ -49,8 +49,8 @@ function LayoutCrypto({ qrType = 'crypto' }) {
         .hq-container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
         
         .hq-cryp-hero { margin-bottom: 40px; text-align: center; }
-        .hq-cryp-hero h2 { font-size: clamp(32px, 4vw, 56px); font-weight: 800; margin-bottom: 24px; letter-spacing: -0.05em; font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif; }
-        .hq-cryp-hero p { font-size: 18px; color: var(--hq-text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif; }
+        .hq-cryp-hero h2 { font-size: clamp(32px, 4vw, 56px); font-weight: 800; margin-bottom: 24px; letter-spacing: -0.05em; font-family: var(--font-main); }
+        .hq-cryp-hero p { font-size: 18px; color: var(--hq-text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; font-family: var(--font-main); }
         
         .hq-cryp-dashboard {
           display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 60px;
@@ -81,7 +81,7 @@ function LayoutCrypto({ qrType = 'crypto' }) {
           display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--hq-border); border: 1px solid var(--hq-border); border-radius: 16px; overflow: hidden; margin-bottom: 60px;
         }
         .hq-cryp-feature {
-          background: var(--hq-card); padding: 40px; font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          background: var(--hq-card); padding: 40px; font-family: var(--font-main);
         }
         .hq-cryp-icon { width: 48px; height: 48px; border: 1px solid var(--hq-border); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--hq-accent); }
         .hq-cryp-feature h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }

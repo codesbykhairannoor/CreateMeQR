@@ -24,7 +24,7 @@ function LayoutBooking({ qrType = 'booking' }) {
           --hq-text-muted: #71717a;
           --hq-border: #e4e4e7;
           --hq-accent: #10b981; /* Emerald Green */
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           min-height: 100vh;

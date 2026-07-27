@@ -38,7 +38,7 @@ function LayoutFacebook({ qrType = 'facebook' }) {
           --hq-border: #ced0d4;
           --hq-accent: #1877f2;
           --hq-accent-glow: rgba(24, 119, 242, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px;

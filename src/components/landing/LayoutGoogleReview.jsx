@@ -25,7 +25,7 @@ function LayoutGoogleReview({ qrType = 'greview' }) {
           --hq-border: #e5e7eb;
           --hq-accent: #f59e0b; /* Star Yellow */
           --hq-blue: #3b82f6;
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           min-height: 100vh;

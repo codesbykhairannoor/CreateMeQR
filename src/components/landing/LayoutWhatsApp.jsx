@@ -41,7 +41,7 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
           --wa-chat-bg: #e5ddd5;
           --wa-bubble-out: #dcf8c6;
           --wa-bubble-in: #ffffff;
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */

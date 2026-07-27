@@ -38,7 +38,7 @@ function LayoutTwitter({ qrType = 'twitter' }) {
           --hq-border: #eff3f4;
           --hq-accent: #1d9bf0;
           --hq-accent-glow: rgba(29, 155, 240, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px;

@@ -39,7 +39,7 @@ function LayoutPaypal({ qrType = 'paypal' }) {
           --hq-accent: #0070ba;
           --hq-accent-dark: #003087;
           --hq-accent-glow: rgba(0, 112, 186, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           min-height: 100vh;

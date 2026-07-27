@@ -39,7 +39,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
           --hq-accent: #3390ec;
           --hq-accent-glow: rgba(51, 144, 236, 0.1);
           --tg-chat-bg: #8ba3cb;
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 140px;

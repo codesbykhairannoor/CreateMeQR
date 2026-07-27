@@ -38,7 +38,7 @@ function LayoutVenmo({ qrType = 'venmo' }) {
           --hq-border: #e6e6e6;
           --hq-accent: #008cff;
           --hq-accent-glow: rgba(0, 140, 255, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 100px;

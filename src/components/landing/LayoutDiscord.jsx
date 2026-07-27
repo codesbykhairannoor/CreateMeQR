@@ -38,7 +38,7 @@ function LayoutDiscord({ qrType = 'discord' }) {
           --hq-border: #202225;
           --hq-accent: #5865F2;
           --hq-accent-glow: rgba(88, 101, 242, 0.15);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           display: flex;

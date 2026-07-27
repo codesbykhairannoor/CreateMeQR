@@ -38,7 +38,7 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
           --hq-border: #e0dfdc;
           --hq-accent: #0a66c2;
           --hq-accent-glow: rgba(10, 102, 194, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 140px;

@@ -25,7 +25,7 @@ function LayoutAmazon({ qrType = 'amazon' }) {
           --hq-border: #d5d9d9;
           --hq-accent: #ff9900; /* Amazon Orange */
           --hq-blue: #007185;
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           min-height: 100vh;

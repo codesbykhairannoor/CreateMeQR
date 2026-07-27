@@ -25,7 +25,7 @@ function LayoutGoogleForms({ qrType = 'gforms' }) {
           --hq-border: #dadce0;
           --hq-accent: #673ab7; /* Google Forms Purple */
           --hq-accent-glow: rgba(103, 58, 183, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           min-height: 100vh;

@@ -40,7 +40,7 @@ function LayoutVCard({ qrType = 'vcard' }) {
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
           --hq-grad: linear-gradient(135deg, var(--hq-accent), #60a5fa);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */

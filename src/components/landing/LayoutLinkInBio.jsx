@@ -24,7 +24,7 @@ function LayoutLinkInBio({ qrType = 'linkinbio' }) {
           --hq-text-muted: #666666;
           --hq-border: #eaeaea;
           --hq-accent: #000000;
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           min-height: 100vh;

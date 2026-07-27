@@ -38,7 +38,7 @@ function LayoutSnapchat({ qrType = 'snapchat' }) {
           --hq-border: #222222;
           --hq-accent: #fffc00; /* snapchat yellow */
           --hq-accent-glow: rgba(255, 252, 0, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
         }

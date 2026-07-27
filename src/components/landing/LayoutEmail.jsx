@@ -38,7 +38,7 @@ function LayoutEmail({ qrType = 'email' }) {
           --hq-border: #e2e8f0;
           --hq-accent: #2563eb;
           --hq-accent-glow: rgba(37, 99, 235, 0.1);
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           padding-top: 160px; /* REQUIRED MASSIVE SPACING */

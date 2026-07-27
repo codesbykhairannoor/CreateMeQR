@@ -24,7 +24,7 @@ function LayoutAudio({ qrType = 'audio' }) {
           --hq-text-muted: #b3b3b3;
           --hq-border: #282828;
           --hq-accent: #1db954; /* Spotify-ish green/neon */
-          font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
+          font-family: var(--font-main);
           background: var(--hq-bg);
           color: var(--hq-text);
           min-height: 100vh;
