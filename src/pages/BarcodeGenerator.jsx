@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import Barcode from 'react-barcode';
@@ -17,6 +17,13 @@ export default function BarcodeGenerator() {
   const [displayValue, setDisplayValue] = useState(true);
 
   const barcodeRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 1024);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleDownload = () => {
     if (!barcodeRef.current) return;
