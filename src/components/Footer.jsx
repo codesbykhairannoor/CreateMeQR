@@ -8,7 +8,8 @@ export default function Footer() {
   const { t } = useTranslation();
   const location = useLocation();
   
-  const pathParts = location.pathname.split('/').filter(Boolean);
+  const decodedPath = decodeURIComponent(location.pathname);
+  const pathParts = decodedPath.split('/').filter(Boolean);
   let currentLangCode = 'en';
   if (pathParts.length > 0 && LANGS.some(l => l.code === pathParts[0])) {
     currentLangCode = pathParts[0];

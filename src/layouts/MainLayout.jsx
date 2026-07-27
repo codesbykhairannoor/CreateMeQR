@@ -14,9 +14,10 @@ export default function MainLayout({ children }) {
   const navigate = useNavigate();
 
   // Super GEO: Parse language prefix
-  const pathParts = location.pathname.split('/').filter(Boolean);
+  const decodedPath = decodeURIComponent(location.pathname);
+  const pathParts = decodedPath.split('/').filter(Boolean);
   let currentLangCode = 'en';
-  let slug = location.pathname;
+  let slug = decodedPath;
 
   if (pathParts.length > 0 && LANGS.some(l => l.code === pathParts[0])) {
     currentLangCode = pathParts[0];
@@ -138,7 +139,7 @@ export default function MainLayout({ children }) {
                       {LANGS.filter(l => langSearch === '' || l.label.toLowerCase().includes(langSearch.toLowerCase()) || l.code.toLowerCase().includes(langSearch.toLowerCase())).map(lang => {
                         const isActive = i18n.language?.startsWith(lang.code);
                         return (
-                          <button key={lang.code} onClick={() => changeLanguage(lang.code)} className={`w-full text-left px-5 py-3 text-sm flex items-center gap-4 transition-colors ${isActive ? 'bg-blue-50 dark:bg-[#081226] text-zinc-900 dark:text-white font-bold' : 'text-zinc-600 dark:text-zinc-400 hover:bg-[#f8fafc] dark:hover:bg-[#040a18]/50 hover:text-black dark:hover:text-white'}`}>
+                          <button key={lang.code} onMouseEnter={() => i18n.loadLanguages(lang.code)} onClick={() => changeLanguage(lang.code)} className={`w-full text-left px-5 py-3 text-sm flex items-center gap-4 transition-colors ${isActive ? 'bg-blue-50 dark:bg-[#081226] text-zinc-900 dark:text-white font-bold' : 'text-zinc-600 dark:text-zinc-400 hover:bg-[#f8fafc] dark:hover:bg-[#040a18]/50 hover:text-black dark:hover:text-white'}`}>
                             <span style={{ fontSize: 20 }}>{lang.flag}</span>
                             <span className="flex-1 truncate">{lang.label}</span>
                             <span className="text-[11px] font-mono font-bold tracking-widest">{lang.code.toUpperCase()}</span>
