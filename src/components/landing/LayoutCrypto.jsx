@@ -6,7 +6,25 @@ function LayoutCrypto({ qrType = 'crypto' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = React.useState(null);
 
   return (
@@ -30,12 +48,12 @@ function LayoutCrypto({ qrType = 'crypto' }) {
         
         .hq-container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
         
-        .hq-cryp-hero { margin-bottom: 80px; text-align: center; }
+        .hq-cryp-hero { margin-bottom: 40px; text-align: center; }
         .hq-cryp-hero h2 { font-size: clamp(32px, 4vw, 56px); font-weight: 800; margin-bottom: 24px; letter-spacing: -0.05em; font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif; }
         .hq-cryp-hero p { font-size: 18px; color: var(--hq-text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif; }
         
         .hq-cryp-dashboard {
-          display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 120px;
+          display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 60px;
         }
         
         .hq-cryp-ticker {
@@ -60,7 +78,7 @@ function LayoutCrypto({ qrType = 'crypto' }) {
         .negative .hq-cryp-chart svg { stroke: var(--cryp-red); }
         
         .hq-cryp-features {
-          display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--hq-border); border: 1px solid var(--hq-border); border-radius: 16px; overflow: hidden; margin-bottom: 120px;
+          display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--hq-border); border: 1px solid var(--hq-border); border-radius: 16px; overflow: hidden; margin-bottom: 60px;
         }
         .hq-cryp-feature {
           background: var(--hq-card); padding: 40px; font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", "Helvetica Neue", sans-serif;
@@ -84,7 +102,7 @@ function LayoutCrypto({ qrType = 'crypto' }) {
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 12, padding: '8px 16px', background: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.2)', borderRadius: 100, marginBottom: 24, fontSize: 14, color: 'var(--hq-accent)' }}>
             <Activity size={16} /> Secure Payment Gateway
           </div>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>for {typeName}</h2>
+          <h2 className="font-bold tracking-tighter ">{t.heroTitle} <br/>for {typeName}</h2>
           <p>{t.heroSubtitle}</p>
         </div>
 
@@ -150,9 +168,9 @@ function LayoutCrypto({ qrType = 'crypto' }) {
         </div>
       </div>
       
-      <div style={{ borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
+      <div style={{ borderTop: '1px solid var(--hq-border)', padding: '60px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800, fontFamily: '-apple-system, sans-serif' }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 36,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 36,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.crypto.q${num}`);

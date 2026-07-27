@@ -6,7 +6,25 @@ function LayoutPhone({ qrType = 'phone' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
@@ -37,7 +55,7 @@ function LayoutPhone({ qrType = 'phone' }) {
         
         .hq-container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
         
-        .hq-swiss-hero { margin-bottom: 120px; border-bottom: 2px solid var(--hq-text); padding-bottom: 40px; }
+        .hq-swiss-hero { margin-bottom: 60px; border-bottom: 2px solid var(--hq-text); padding-bottom: 40px; }
         .hq-swiss-hero h2 {
           font-size: clamp(60px, 10vw, 140px);
           font-weight: 900;
@@ -51,13 +69,13 @@ function LayoutPhone({ qrType = 'phone' }) {
         }
         
         .hq-swiss-grid {
-          display: grid; grid-template-columns: repeat(3, 1fr); gap: 80px; margin-bottom: 120px;
+          display: grid; grid-template-columns: repeat(3, 1fr); gap: 80px; margin-bottom: 60px;
         }
         .hq-swiss-card { border-top: 4px solid var(--hq-accent); padding-top: 24px; }
         .hq-swiss-card h3 { font-size: 32px; font-weight: 800; margin-bottom: 16px; letter-spacing: -0.04em; }
         .hq-swiss-card p { font-size: 18px; color: var(--hq-text-muted); line-height: 1.6; }
         
-        .hq-swiss-steps { margin-bottom: 120px; }
+        .hq-swiss-steps { margin-bottom: 60px; }
         .hq-swiss-step {
           display: flex; align-items: center; justify-content: space-between;
           padding: 40px 0; border-bottom: 1px solid var(--hq-border);
@@ -76,31 +94,31 @@ function LayoutPhone({ qrType = 'phone' }) {
 
       <div className="hq-container">
         <div className="hq-swiss-hero">
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{typeName} <br/>{t.heroTitle}</h2>
+          <h2 className="font-bold tracking-tighter ">{typeName} <br/>{t.heroTitle}</h2>
           <p>{t.heroSubtitle}</p>
         </div>
 
         <div className="hq-swiss-grid">
           <div className="hq-swiss-card" style={{ borderTop: '4px solid var(--hq-text)', borderRadius: 0, background: 'transparent' }}>
             <div style={{ fontSize: 48, fontWeight: 900, marginBottom: 24, opacity: 0.1 }}>01</div>
-            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,   marginBottom: 16 }}>{translate('featTools.phone.t1') || t.comp1Title}</h3>
+            <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,   marginBottom: 16 }}>{translate('featTools.phone.t1') || t.comp1Title}</h3>
             <p style={{ fontSize: 16, lineHeight: 1.6 }}>{translate('featTools.phone.d1') || t.comp1Desc}</p>
           </div>
           <div className="hq-swiss-card" style={{ borderTop: '4px solid var(--hq-text)', borderRadius: 0, background: 'transparent' }}>
             <div style={{ fontSize: 48, fontWeight: 900, marginBottom: 24, opacity: 0.1 }}>02</div>
-            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,   marginBottom: 16 }}>{translate('featTools.phone.t2') || t.comp2Title}</h3>
+            <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,   marginBottom: 16 }}>{translate('featTools.phone.t2') || t.comp2Title}</h3>
             <p style={{ fontSize: 16, lineHeight: 1.6 }}>{translate('featTools.phone.d2') || t.comp2Desc}</p>
           </div>
           <div className="hq-swiss-card" style={{ borderTop: '4px solid var(--hq-text)', borderRadius: 0, background: 'transparent' }}>
             <div style={{ fontSize: 48, fontWeight: 900, marginBottom: 24, opacity: 0.1 }}>03</div>
-            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,   marginBottom: 16 }}>{translate('featTools.phone.t3') || t.comp3Title}</h3>
+            <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,   marginBottom: 16 }}>{translate('featTools.phone.t3') || t.comp3Title}</h3>
             <p style={{ fontSize: 16, lineHeight: 1.6 }}>{translate('featTools.phone.d3') || t.comp3Desc}</p>
           </div>
         </div>
 
         <div className="hq-swiss-steps">
           <div style={{ display: 'flex', alignItems: 'center', gap: 24, marginBottom: 40 }}>
-            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 40 }}>{t.stepsTitle}</h2>
+            <h2 className="font-bold tracking-tighter " style={{ fontSize: 40 }}>{t.stepsTitle}</h2>
             <ArrowRight size={40} />
           </div>
           {[
@@ -117,9 +135,9 @@ function LayoutPhone({ qrType = 'phone' }) {
         </div>
       </div>
 
-      <div style={{ background: 'var(--hq-text)', color: 'var(--hq-bg)', padding: '100px 0' }}>
+      <div style={{ background: 'var(--hq-text)', color: 'var(--hq-bg)', padding: '60px 0' }}>
         <div className="hq-container" style={{ maxWidth: 1000 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(40px, 6vw, 64px)',  marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 'clamp(40px, 6vw, 64px)',  marginBottom: 60 }}>
             {t.faqTitle}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

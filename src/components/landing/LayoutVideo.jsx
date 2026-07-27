@@ -137,23 +137,23 @@ function LayoutVideo({ qrType = 'video' }) {
       <div className="hq-vid-features">
         <div className="hq-vid-feat">
           <PlayCircle size={40} />
-          <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 16 }}>{getTranslation('featTools', 't', 1)}</h3>
+          <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 16 }}>{getTranslation('featTools', 't', 1)}</h3>
           <p style={{ color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{getTranslation('featTools', 'd', 1)}</p>
         </div>
         <div className="hq-vid-feat">
           <Maximize size={40} />
-          <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 16 }}>{getTranslation('featTools', 't', 2)}</h3>
+          <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 16 }}>{getTranslation('featTools', 't', 2)}</h3>
           <p style={{ color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{getTranslation('featTools', 'd', 2)}</p>
         </div>
         <div className="hq-vid-feat">
           <Smartphone size={40} />
-          <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 16 }}>{getTranslation('featTools', 't', 3)}</h3>
+          <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 16 }}>{getTranslation('featTools', 't', 3)}</h3>
           <p style={{ color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6 }}>{getTranslation('featTools', 'd', 3)}</p>
         </div>
       </div>
 
       <div style={{ maxWidth: 800, margin: '0 auto', padding: '0 24px 120px 24px' }}>
-        <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 48 }}>{t('landing.faqTitle')}</h2>
+        <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 32,  textAlign: 'center', marginBottom: 48 }}>{t('landing.faqTitle')}</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           {[1, 2, 3, 4, 5].map((num, i) => {
             const q = getTranslation('faqTools', 'q', num);

@@ -133,7 +133,7 @@ function LayoutAmazon({ qrType = 'amazon' }) {
           <div className="hq-amz-card" style={{ gridColumn: 'span 2' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
               <TrendingUp size={28} color="var(--hq-accent)" />
-              <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  margin: 0 }}>{getTranslation('featTools', 't', 1)}</h2>
+              <h2 className="font-bold tracking-tighter " style={{ fontSize: 24,  margin: 0 }}>{getTranslation('featTools', 't', 1)}</h2>
             </div>
             <p style={{ fontSize: 16, color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{getTranslation('featTools', 'd', 1)}</p>
             
@@ -154,19 +154,19 @@ function LayoutAmazon({ qrType = 'amazon' }) {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
             <div className="hq-amz-card" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <Package size={28} color="var(--hq-blue)" style={{ marginBottom: 12 }} />
-              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 18,  marginBottom: 8 }}>{getTranslation('featTools', 't', 2)}</h3>
+              <h3 className="font-bold tracking-tighter " style={{ fontSize: 18,  marginBottom: 8 }}>{getTranslation('featTools', 't', 2)}</h3>
               <p style={{ fontSize: 14, color: 'var(--hq-text-muted)', lineHeight: 1.5, margin: 0 }}>{getTranslation('featTools', 'd', 2)}</p>
             </div>
             <div className="hq-amz-card" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <CheckCircle2 size={28} color="#059669" style={{ marginBottom: 12 }} />
-              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 18,  marginBottom: 8 }}>{getTranslation('featTools', 't', 3)}</h3>
+              <h3 className="font-bold tracking-tighter " style={{ fontSize: 18,  marginBottom: 8 }}>{getTranslation('featTools', 't', 3)}</h3>
               <p style={{ fontSize: 14, color: 'var(--hq-text-muted)', lineHeight: 1.5, margin: 0 }}>{getTranslation('featTools', 'd', 3)}</p>
             </div>
           </div>
         </div>
 
         <div style={{ marginTop: 80, maxWidth: 800, marginLeft: 'auto', marginRight: 'auto' }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 28,  textAlign: 'center', marginBottom: 40 }}>{t('landing.faqTitle')}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 28,  textAlign: 'center', marginBottom: 40 }}>{t('landing.faqTitle')}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = getTranslation('faqTools', 'q', num);

@@ -6,7 +6,25 @@ function LayoutInstagram({ qrType = 'instagram' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = React.useState(null);
 
   return (
@@ -41,7 +59,7 @@ function LayoutInstagram({ qrType = 'instagram' }) {
         
         .hq-ig-hero {
           display: flex; flex-direction: column; align-items: center; text-align: center;
-          margin-bottom: 120px;
+          margin-bottom: 60px;
         }
         
         .hq-ig-stories {
@@ -68,7 +86,7 @@ function LayoutInstagram({ qrType = 'instagram' }) {
         .hq-ig-hero h2 { font-size: clamp(36px, 5vw, 64px); font-weight: 900; margin-bottom: 24px; letter-spacing: -0.04em; }
         .hq-ig-hero p { font-size: 20px; color: var(--hq-text-muted); max-width: 600px; line-height: 1.6; }
         
-        .hq-ig-feed { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--hq-border); margin-bottom: 120px; border: 1px solid var(--hq-border); }
+        .hq-ig-feed { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--hq-border); margin-bottom: 60px; border: 1px solid var(--hq-border); }
         .hq-ig-post { aspect-ratio: 1; background: var(--hq-card); display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 24px; text-align: center; transition: background 0.3s; }
         .hq-ig-post:hover { background: var(--hq-accent-glow); }
         .hq-ig-post-icon { margin-bottom: 16px; color: var(--hq-accent); }
@@ -98,7 +116,7 @@ function LayoutInstagram({ qrType = 'instagram' }) {
             </div>
           </div>
           
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>for {typeName}</h2>
+          <h2 className="font-bold tracking-tighter ">{t.heroTitle} <br/>for {typeName}</h2>
           <p>{t.heroSubtitle}</p>
         </div>
 
@@ -133,14 +151,14 @@ function LayoutInstagram({ qrType = 'instagram' }) {
         </div>
       </div>
       
-      <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
+      <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '60px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 40, justifyContent: 'center' }}>
             <Heart size={24} color="var(--hq-accent)" fill="var(--hq-accent)" />
             <MessageCircle size={24} />
             <Send size={24} />
           </div>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 36,  textAlign: 'center', margin: '0 0 40px 0' }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 36,  textAlign: 'center', margin: '0 0 40px 0' }}>{t.faqTitle}</h2>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {

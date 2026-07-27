@@ -6,7 +6,25 @@ function LayoutWiFi({ qrType = 'wifi' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
@@ -42,7 +60,7 @@ function LayoutWiFi({ qrType = 'wifi' }) {
           grid-template-columns: 1fr 1fr;
           gap: 60px;
           align-items: center;
-          margin-bottom: 120px;
+          margin-bottom: 60px;
         }
         
         .hq-split-left h2 {
@@ -94,7 +112,7 @@ function LayoutWiFi({ qrType = 'wifi' }) {
         @keyframes spin { 100% { transform: rotate(360deg); } }
 
         .hq-step-cards {
-          display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 120px;
+          display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 60px;
         }
         .hq-step-card {
           background: var(--hq-bg); border-top: 4px solid var(--hq-border); padding: 40px 0;
@@ -118,14 +136,14 @@ function LayoutWiFi({ qrType = 'wifi' }) {
             <div style={{ display: 'inline-flex', padding: '10px 20px', background: 'var(--hq-accent-glow)', borderRadius: 100, color: 'var(--hq-accent)', fontWeight: 700, fontSize: '14px', marginBottom: 24, gap: 8, alignItems: 'center' }}>
               <ShieldCheck size={16} /> 100% Client-Side Processing
             </div>
-            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/><span style={{ color: 'var(--hq-accent)' }}>{typeName}</span></h2>
+            <h2 className="font-bold tracking-tighter ">{t.heroTitle} <br/><span style={{ color: 'var(--hq-accent)' }}>{typeName}</span></h2>
             <p>{t.heroSubtitle}</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
               <div style={{ background: 'var(--hq-bg)', borderRadius: 32, padding: 48, border: '1px solid var(--hq-border)', position: 'relative', overflow: 'hidden', boxShadow: 'inset 0 0 100px rgba(0,0,0,0.05)' }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, background: 'var(--hq-accent)' }} />
                 <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
                   <div style={{ flex: 1 }}>
-                    <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 36,  marginBottom: 16 }}>{translate('featTools.wifi.t1') || t.comp1Title}</h3>
+                    <h3 className="font-bold tracking-tighter " style={{ fontSize: 36,  marginBottom: 16 }}>{translate('featTools.wifi.t1') || t.comp1Title}</h3>
                     <p style={{ fontSize: 20, color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.wifi.d1') || t.comp1Desc}</p>
                   </div>
                   <Wifi size={80} style={{ color: 'var(--hq-accent)', opacity: 0.5 }} />
@@ -135,12 +153,12 @@ function LayoutWiFi({ qrType = 'wifi' }) {
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 32 }}>
                 <div style={{ background: 'var(--hq-card)', borderRadius: 32, padding: 48, border: '1px solid var(--hq-border)' }}>
                   <ShieldCheck size={40} style={{ color: 'var(--hq-accent)', marginBottom: 24 }} />
-                  <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 16 }}>{translate('featTools.wifi.t2') || t.comp2Title}</h3>
+                  <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 16 }}>{translate('featTools.wifi.t2') || t.comp2Title}</h3>
                   <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.wifi.d2') || t.comp2Desc}</p>
                 </div>
                 <div style={{ background: 'var(--hq-card)', borderRadius: 32, padding: 48, border: '1px solid var(--hq-border)' }}>
                   <Lock size={40} style={{ color: 'var(--hq-accent)', marginBottom: 24 }} />
-                  <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 16 }}>{translate('featTools.wifi.t3') || t.comp3Title}</h3>
+                  <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 16 }}>{translate('featTools.wifi.t3') || t.comp3Title}</h3>
                   <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.wifi.d3') || t.comp3Desc}</p>
                 </div>
               </div>
@@ -157,8 +175,8 @@ function LayoutWiFi({ qrType = 'wifi' }) {
           </div>
         </div>
 
-        <div style={{ textAlign: 'center', marginBottom: 80 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(32px, 4vw, 48px)' }}>{t.stepsTitle} {typeName}</h2>
+        <div style={{ textAlign: 'center', marginBottom: 40 }}>
+          <h2 className="font-bold tracking-tighter " style={{ fontSize: 'clamp(32px, 4vw, 48px)' }}>{t.stepsTitle} {typeName}</h2>
         </div>
 
         <div className="hq-step-cards">
@@ -169,7 +187,7 @@ function LayoutWiFi({ qrType = 'wifi' }) {
           ].map(step => (
             <div key={step.n} className="hq-step-card">
               <div className="hq-step-num">{step.n}</div>
-              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 12 }}>{step.t}</h3>
+              <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 12 }}>{step.t}</h3>
               <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6, fontSize: 16 }}>{step.d}</p>
             </div>
           ))}
@@ -178,7 +196,7 @@ function LayoutWiFi({ qrType = 'wifi' }) {
 
       <div className="hq-faq-section">
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

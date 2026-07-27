@@ -6,7 +6,25 @@ function LayoutPaypal({ qrType = 'paypal' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = React.useState(null);
 
   return (
@@ -63,7 +81,7 @@ function LayoutPaypal({ qrType = 'paypal' }) {
       <div className="hq-container">
         <div className="hq-pp-checkout">
           <div className="hq-pp-left">
-            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 32 }}>Secure {typeName} Features</h2>
+            <h2 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 32 }}>Secure {typeName} Features</h2>
             
               <div className="hq-pp-item" style={{ background: '#f5f7fa', padding: 24, borderRadius: 16, border: '1px solid #e0e6ef', display: 'flex', gap: 16, marginBottom: 16 }}>
                 <div className="hq-pp-item-icon" style={{ background: '#003087', color: '#fff', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ShieldCheck size={24} /></div>
@@ -82,7 +100,7 @@ function LayoutPaypal({ qrType = 'paypal' }) {
           </div>
           
           <div className="hq-pp-right">
-            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  marginBottom: 32 }}>Privacy Guarantee</h2>
+            <h2 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 32 }}>Privacy Guarantee</h2>
               <div className="hq-pp-item" style={{ background: '#f5f7fa', padding: 24, borderRadius: 16, border: '1px solid #e0e6ef', display: 'flex', gap: 16, marginBottom: 16 }}>
                 <div className="hq-pp-item-icon" style={{ background: '#003087', color: '#fff', width: 48, height: 48, borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Lock size={24} /></div>
                 <div>
@@ -104,7 +122,7 @@ function LayoutPaypal({ qrType = 'paypal' }) {
         </div>
         
         <div style={{ maxWidth: 800, margin: '0 auto 100px auto' }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.paypal.q${num}`);

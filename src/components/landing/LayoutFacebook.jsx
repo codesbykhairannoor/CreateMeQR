@@ -6,7 +6,25 @@ function LayoutFacebook({ qrType = 'facebook' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = React.useState(null);
 
   return (
@@ -55,7 +73,7 @@ function LayoutFacebook({ qrType = 'facebook' }) {
         .hq-fb-action { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 0; color: var(--hq-text-muted); font-weight: 600; font-size: 15px; border-radius: 4px; transition: background 0.2s; cursor: pointer; }
         .hq-fb-action:hover { background: var(--hq-accent-glow); }
         
-        .hq-fb-features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 120px; }
+        .hq-fb-features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 60px; }
         .hq-fb-feature { background: var(--hq-card); padding: 32px; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.1); }
         .hq-fb-feature h3 { font-size: 18px; font-weight: 700; margin: 16px 0 8px 0; }
         .hq-fb-feature p { color: var(--hq-text-muted); line-height: 1.5; }
@@ -74,7 +92,7 @@ function LayoutFacebook({ qrType = 'facebook' }) {
               </div>
             </div>
             <div className="hq-fb-post-content">
-              <h2 className="hq-fb-hero-title font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} for {typeName}</h2>
+              <h2 className="hq-fb-hero-title font-bold tracking-tighter ">{t.heroTitle} for {typeName}</h2>
               <p className="hq-fb-hero-subtitle">{t.heroSubtitle}</p>
             </div>
             <div style={{ background: 'var(--hq-bg)', padding: '40px 20px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderTop: '1px solid var(--hq-border)' }}>
@@ -115,9 +133,9 @@ function LayoutFacebook({ qrType = 'facebook' }) {
         </div>
       </div>
       
-      <div style={{ background: 'var(--hq-card)', padding: '100px 0', borderTop: '1px solid var(--hq-border)' }}>
+      <div style={{ background: 'var(--hq-card)', padding: '60px 0', borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.facebook.q${num}`);

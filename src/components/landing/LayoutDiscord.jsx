@@ -6,7 +6,25 @@ function LayoutDiscord({ qrType = 'discord' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = React.useState(null);
 
   return (
@@ -135,7 +153,7 @@ function LayoutDiscord({ qrType = 'discord' }) {
             </div>
             
             <div style={{ marginTop: 80, borderTop: '1px solid var(--hq-border)', paddingTop: 40 }}>
-              <h2 className="font-bold tracking-tighter" style={{ paddingTop: 120, fontSize: 24,  color: 'white', marginBottom: 24 }}>{t.faqTitle}</h2>
+              <h2 className="font-bold tracking-tighter" style={{ paddingTop: 60, fontSize: 24,  color: 'white', marginBottom: 24 }}>{t.faqTitle}</h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.discord.q${num}`);

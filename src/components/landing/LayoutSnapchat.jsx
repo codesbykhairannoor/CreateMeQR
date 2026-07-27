@@ -6,7 +6,25 @@ function LayoutSnapchat({ qrType = 'snapchat' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = React.useState(null);
 
   return (
@@ -72,24 +90,24 @@ function LayoutSnapchat({ qrType = 'snapchat' }) {
       <div className="hq-container hq-sc-grid">
         <div className="hq-sc-card" style={{ background: '#FFFC00', border: 'none', color: '#000', borderRadius: 32 }}>
           <div className="hq-sc-icon" style={{ background: '#000', color: '#FFFC00' }}><ShieldCheck size={32} /></div>
-          <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{  textTransform: 'uppercase' }}>{translate('featTools.snapchat.t1') || t.comp1Title}</h3>
+          <h3 className="font-bold tracking-tighter " style={{  textTransform: 'uppercase' }}>{translate('featTools.snapchat.t1') || t.comp1Title}</h3>
           <p style={{ color: '#333', lineHeight: 1.6, fontWeight: 500 }}>{translate('featTools.snapchat.d1') || t.comp1Desc}</p>
         </div>
         <div className="hq-sc-card" style={{ background: '#FFFC00', border: 'none', color: '#000', borderRadius: 32 }}>
           <div className="hq-sc-icon" style={{ background: '#000', color: '#FFFC00' }}><Zap size={32} /></div>
-          <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{  textTransform: 'uppercase' }}>{translate('featTools.snapchat.t2') || t.comp2Title}</h3>
+          <h3 className="font-bold tracking-tighter " style={{  textTransform: 'uppercase' }}>{translate('featTools.snapchat.t2') || t.comp2Title}</h3>
           <p style={{ color: '#333', lineHeight: 1.6, fontWeight: 500 }}>{translate('featTools.snapchat.d2') || t.comp2Desc}</p>
         </div>
         <div className="hq-sc-card" style={{ background: '#FFFC00', border: 'none', color: '#000', borderRadius: 32 }}>
           <div className="hq-sc-icon" style={{ background: '#000', color: '#FFFC00' }}><Lock size={32} /></div>
-          <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{  textTransform: 'uppercase' }}>{translate('featTools.snapchat.t3') || t.comp3Title}</h3>
+          <h3 className="font-bold tracking-tighter " style={{  textTransform: 'uppercase' }}>{translate('featTools.snapchat.t3') || t.comp3Title}</h3>
           <p style={{ color: '#333', lineHeight: 1.6, fontWeight: 500 }}>{translate('featTools.snapchat.d3') || t.comp3Desc}</p>
         </div>
       </div>
       
-      <div style={{ background: '#111', padding: '100px 0', paddingBottom: 160 }}>
+      <div style={{ background: '#111', padding: '60px 0', paddingBottom: 160 }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 40, color: 'white' }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter" style={{ paddingTop: 60, fontSize: 32,  textAlign: 'center', marginBottom: 40, color: 'white' }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.snapchat.q${num}`);

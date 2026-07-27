@@ -6,7 +6,25 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = React.useState(null);
 
   return (
@@ -44,7 +62,7 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
         .hq-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         
         .hq-wa-hero {
-          display: flex; gap: 60px; align-items: center; margin-bottom: 120px;
+          display: flex; gap: 60px; align-items: center; margin-bottom: 60px;
         }
         
         .hq-wa-content { flex: 1; }
@@ -77,7 +95,7 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
         .hq-wa-bubble-out { background: var(--wa-bubble-out); align-self: flex-end; border-top-right-radius: 4px; display: flex; flex-direction: column; }
         .hq-wa-time { font-size: 11px; color: var(--hq-text-muted); text-align: right; margin-top: 4px; display: flex; justify-content: flex-end; align-items: center; gap: 4px; }
         
-        .hq-wa-features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 120px; }
+        .hq-wa-features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 60px; }
         .hq-wa-feature-card { background: var(--hq-card); padding: 32px; border-radius: 24px; border: 1px solid var(--hq-border); transition: transform 0.3s; }
         .hq-wa-feature-card:hover { transform: translateY(-5px); }
         .hq-wa-feature-icon { width: 48px; height: 48px; background: var(--hq-accent-glow); color: var(--hq-accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
@@ -97,7 +115,7 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 16px', background: 'var(--hq-accent-glow)', color: 'var(--hq-accent)', borderRadius: 100, fontWeight: 600, marginBottom: 24, fontSize: 14 }}>
               <MessageCircle size={16} /> {typeName} Standard
             </div>
-            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>for {typeName}</h2>
+            <h2 className="font-bold tracking-tighter ">{t.heroTitle} <br/>for {typeName}</h2>
             <p>{t.heroSubtitle}</p>
           </div>
           
@@ -141,9 +159,9 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
         </div>
       </div>
       
-      <div style={{ borderTop: '1px solid var(--hq-border)', background: 'var(--hq-card)', padding: '100px 0' }}>
+      <div style={{ borderTop: '1px solid var(--hq-border)', background: 'var(--hq-card)', padding: '60px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 36,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 36,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.whatsapp.q${num}`);

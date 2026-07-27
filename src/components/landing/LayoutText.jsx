@@ -6,7 +6,25 @@ function LayoutText({ qrType = 'text' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
@@ -44,7 +62,7 @@ function LayoutText({ qrType = 'text' }) {
           border: 1px solid var(--hq-border);
           border-radius: 12px;
           overflow: hidden;
-          margin-bottom: 80px;
+          margin-bottom: 40px;
           box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
         }
         html.dark .hq-terminal-hero { box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5); }
@@ -68,7 +86,7 @@ function LayoutText({ qrType = 'text' }) {
         }
         
         .hq-feature-row {
-          display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 80px;
+          display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px;
         }
         .hq-f-card {
           background: var(--hq-card); border: 1px dashed var(--hq-border);
@@ -98,7 +116,7 @@ function LayoutText({ qrType = 'text' }) {
           </div>
           <div className="hq-terminal-body">
             <div style={{ color: 'var(--hq-accent)', marginBottom: 16 }}><Terminal size={40} /></div>
-            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white"><span style={{ color: 'var(--hq-accent)' }}>&gt;</span> {t.heroTitle} <br/> {typeName}</h2>
+            <h2 className="font-bold tracking-tighter "><span style={{ color: 'var(--hq-accent)' }}>&gt;</span> {t.heroTitle} <br/> {typeName}</h2>
             <p>{t.heroSubtitle}</p>
           </div>
         </div>
@@ -119,7 +137,7 @@ function LayoutText({ qrType = 'text' }) {
         </div>
 
         <div className="hq-code-block">
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24, marginBottom: 40, borderBottom: '1px dashed var(--hq-border)', paddingBottom: 20 }}>
+          <h2 className="font-bold tracking-tighter " style={{ fontSize: 24, marginBottom: 40, borderBottom: '1px dashed var(--hq-border)', paddingBottom: 20 }}>
             <span style={{ color: 'var(--hq-accent)' }}>$</span> {t.stepsTitle} {typeName}
           </h2>
           {[
@@ -138,9 +156,9 @@ function LayoutText({ qrType = 'text' }) {
         </div>
       </div>
 
-      <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
+      <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '60px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(28px, 4vw, 40px)',  textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 'clamp(28px, 4vw, 40px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

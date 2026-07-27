@@ -6,7 +6,25 @@ function LayoutSpotify({ qrType = 'spotify' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = React.useState(null);
 
   return (
@@ -42,7 +60,7 @@ function LayoutSpotify({ qrType = 'spotify' }) {
         .hq-sp-play { width: 56px; height: 56px; border-radius: 50%; background: var(--hq-accent); display: flex; align-items: center; justify-content: center; color: black; cursor: pointer; transition: transform 0.2s; }
         .hq-sp-play:hover { transform: scale(1.05); background: #1fdf64; }
         
-        .hq-sp-table { width: 100%; border-collapse: collapse; margin-bottom: 80px; }
+        .hq-sp-table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
         .hq-sp-table th { color: var(--hq-text-muted); font-weight: 400; font-size: 12px; text-transform: uppercase; text-align: left; padding: 8px 16px; border-bottom: 1px solid var(--hq-border); }
         .hq-sp-table td { padding: 16px; }
         .hq-sp-row { transition: background 0.2s; cursor: pointer; border-radius: 4px; }
@@ -144,7 +162,7 @@ function LayoutSpotify({ qrType = 'spotify' }) {
         </table>
 
         <div style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 24,  marginBottom: 24 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 24,  marginBottom: 24 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.spotify.q${num}`);

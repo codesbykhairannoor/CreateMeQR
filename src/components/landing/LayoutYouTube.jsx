@@ -6,7 +6,25 @@ function LayoutYouTube({ qrType = 'youtube' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = React.useState(null);
 
   return (
@@ -41,7 +59,7 @@ function LayoutYouTube({ qrType = 'youtube' }) {
           background: #000;
           border-radius: 24px;
           overflow: hidden;
-          margin-bottom: 80px;
+          margin-bottom: 40px;
           position: relative;
           aspect-ratio: 21/9;
           display: flex; flex-direction: column; justify-content: flex-end;
@@ -73,14 +91,14 @@ function LayoutYouTube({ qrType = 'youtube' }) {
         .hq-yt-buttons { display: flex; justify-content: space-between; align-items: center; }
         .hq-yt-btn-group { display: flex; gap: 24px; align-items: center; }
         
-        .hq-yt-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 120px; }
+        .hq-yt-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 60px; }
         .hq-yt-card { border-left: 4px solid var(--hq-accent); padding-left: 24px; }
         .hq-yt-card h3 { font-size: 24px; font-weight: 800; margin-bottom: 16px; }
         .hq-yt-card p { font-size: 16px; color: var(--hq-text-muted); line-height: 1.6; }
         
         @media (max-width: 992px) {
           .hq-container { padding: 0 20px; }
-          .hq-yt-theater { aspect-ratio: 16/9; }
+          .hq-yt-theater { aspect-ratio: 1/1; }
           .hq-yt-grid { grid-template-columns: 1fr; }
         }
       `}</style>
@@ -88,7 +106,7 @@ function LayoutYouTube({ qrType = 'youtube' }) {
       <div className="hq-container">
         <div className="hq-yt-theater">
           <div className="hq-yt-theater-content">
-            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{typeName} <br/>{t.heroTitle}</h2>
+            <h2 className="font-bold tracking-tighter ">{typeName} <br/>{t.heroTitle}</h2>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: 20 }}>{t.heroSubtitle}</p>
           </div>
           
@@ -135,9 +153,9 @@ function LayoutYouTube({ qrType = 'youtube' }) {
         </div>
       </div>
       
-      <div style={{ background: 'var(--hq-card)', padding: '120px 0', borderTop: '1px solid var(--hq-border)' }}>
+      <div style={{ background: 'var(--hq-card)', padding: '60px 0', borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 40,  marginBottom: 48, textAlign: 'center' }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 40,  marginBottom: 48, textAlign: 'center' }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.youtube.q${num}`);

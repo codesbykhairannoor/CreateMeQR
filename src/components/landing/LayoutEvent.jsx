@@ -6,7 +6,25 @@ function LayoutEvent({ qrType = 'event' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
@@ -38,7 +56,7 @@ function LayoutEvent({ qrType = 'event' }) {
         .hq-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
         
         .hq-ticket-hero {
-          display: flex; margin-bottom: 120px;
+          display: flex; margin-bottom: 60px;
           background: var(--hq-card); border-radius: 24px;
           box-shadow: 0 40px 100px -20px rgba(0,0,0,0.1);
           position: relative; overflow: hidden;
@@ -61,13 +79,13 @@ function LayoutEvent({ qrType = 'event' }) {
         .hq-ticket-left h2 { font-size: clamp(32px, 5vw, 64px); font-weight: 900; margin-bottom: 24px; letter-spacing: -0.04em; }
         .hq-ticket-left p { font-size: 20px; color: var(--hq-text-muted); max-width: 500px; line-height: 1.6; }
         
-        .hq-event-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 120px; }
+        .hq-event-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 60px; }
         .hq-e-card { background: var(--hq-bg); border: 1px solid var(--hq-border); border-radius: 16px; padding: 32px; display: flex; gap: 16px; }
         .hq-e-icon { flex: 0 0 48px; height: 48px; border-radius: 12px; background: var(--hq-accent-glow); color: var(--hq-accent); display: flex; align-items: center; justify-content: center; }
         .hq-e-content h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
         .hq-e-content p { color: var(--hq-text-muted); font-size: 14px; line-height: 1.6; }
         
-        .hq-event-steps { margin-bottom: 120px; }
+        .hq-event-steps { margin-bottom: 60px; }
         .hq-event-step {
           background: var(--hq-card); border: 1px solid var(--hq-border);
           padding: 32px 40px; border-radius: 16px; margin-bottom: 24px;
@@ -91,7 +109,7 @@ function LayoutEvent({ qrType = 'event' }) {
         <div className="hq-ticket-hero">
           <div className="hq-ticket-left">
             <div style={{ color: 'var(--hq-accent)', marginBottom: 24 }}><CalendarRange size={48} /></div>
-            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>{typeName}</h2>
+            <h2 className="font-bold tracking-tighter ">{t.heroTitle} <br/>{typeName}</h2>
             <p>{t.heroSubtitle}</p>
           </div>
           <div className="hq-ticket-right">
@@ -104,28 +122,28 @@ function LayoutEvent({ qrType = 'event' }) {
           <div className="hq-e-card" style={{ background: 'var(--hq-bg)', borderTop: '4px solid var(--hq-accent)', borderBottom: '1px solid var(--hq-border)', borderLeft: '1px solid var(--hq-border)', borderRight: '1px solid var(--hq-border)' }}>
             <div className="hq-e-icon" style={{ background: 'var(--hq-card)', border: '1px solid var(--hq-border)' }}><ShieldCheck /></div>
             <div className="hq-e-content">
-              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.event.t1') || t.comp1Title}</h3>
+              <h3 className="font-bold tracking-tighter ">{translate('featTools.event.t1') || t.comp1Title}</h3>
               <p>{translate('featTools.event.d1') || t.comp1Desc}</p>
             </div>
           </div>
           <div className="hq-e-card" style={{ background: 'var(--hq-bg)', borderTop: '4px solid var(--hq-accent)', borderBottom: '1px solid var(--hq-border)', borderLeft: '1px solid var(--hq-border)', borderRight: '1px solid var(--hq-border)' }}>
             <div className="hq-e-icon" style={{ background: 'var(--hq-card)', border: '1px solid var(--hq-border)' }}><Zap /></div>
             <div className="hq-e-content">
-              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.event.t2') || t.comp2Title}</h3>
+              <h3 className="font-bold tracking-tighter ">{translate('featTools.event.t2') || t.comp2Title}</h3>
               <p>{translate('featTools.event.d2') || t.comp2Desc}</p>
             </div>
           </div>
           <div className="hq-e-card" style={{ background: 'var(--hq-bg)', borderTop: '4px solid var(--hq-accent)', borderBottom: '1px solid var(--hq-border)', borderLeft: '1px solid var(--hq-border)', borderRight: '1px solid var(--hq-border)' }}>
             <div className="hq-e-icon" style={{ background: 'var(--hq-card)', border: '1px solid var(--hq-border)' }}><Lock /></div>
             <div className="hq-e-content">
-              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.event.t3') || t.comp3Title}</h3>
+              <h3 className="font-bold tracking-tighter ">{translate('featTools.event.t3') || t.comp3Title}</h3>
               <p>{translate('featTools.event.d3') || t.comp3Desc}</p>
             </div>
           </div>
         </div>
 
         <div className="hq-event-steps">
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter " style={{ fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.stepsTitle} {typeName}
           </h2>
           {[
@@ -144,9 +162,9 @@ function LayoutEvent({ qrType = 'event' }) {
         </div>
       </div>
 
-      <div style={{ background: 'var(--hq-card)', borderTop: '1px dashed var(--hq-border)', padding: '100px 0' }}>
+      <div style={{ background: 'var(--hq-card)', borderTop: '1px dashed var(--hq-border)', padding: '60px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

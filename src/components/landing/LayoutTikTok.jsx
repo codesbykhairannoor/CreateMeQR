@@ -6,7 +6,25 @@ function LayoutTikTok({ qrType = 'tiktok' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = React.useState(null);
 
   return (
@@ -89,7 +107,7 @@ function LayoutTikTok({ qrType = 'tiktok' }) {
         </div>
 
         <div className="hq-tk-content">
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">Swipe Up for {typeName} QR Code</h2>
+          <h2 className="font-bold tracking-tighter ">Swipe Up for {typeName} QR Code</h2>
           <p style={{ color: 'var(--hq-text-muted)', fontSize: 18, lineHeight: 1.6 }}>
             {t.heroSubtitle} Generate codes instantly without any tracking or subscription fees.
           </p>
@@ -111,9 +129,9 @@ function LayoutTikTok({ qrType = 'tiktok' }) {
         </div>
       </div>
       
-      <div style={{ background: '#0a0a0a', padding: '100px 0', marginTop: 80, borderTop: '1px solid var(--hq-border)' }}>
+      <div style={{ background: '#0a0a0a', padding: '60px 0', marginTop: 80, borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800, flexDirection: 'column' }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.tiktok.q${num}`);

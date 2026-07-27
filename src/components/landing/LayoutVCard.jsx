@@ -6,7 +6,25 @@ function LayoutVCard({ qrType = 'vcard' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
@@ -46,7 +64,7 @@ function LayoutVCard({ qrType = 'vcard' }) {
           border-radius: 40px;
           padding: 80px 40px;
           text-align: center;
-          margin-bottom: 80px;
+          margin-bottom: 40px;
           box-shadow: 0 20px 80px -20px rgba(37, 99, 235, 0.05);
           position: relative;
           overflow: hidden;
@@ -124,7 +142,7 @@ function LayoutVCard({ qrType = 'vcard' }) {
         <div className="hq-profile-hero">
           <div className="hq-hero-bg"></div>
           <div className="hq-avatar-wrap"><UserCircle2 size={64} strokeWidth={1.5} /></div>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/><span style={{ color: 'var(--hq-accent)' }}>{typeName}</span></h2>
+          <h2 className="font-bold tracking-tighter ">{t.heroTitle} <br/><span style={{ color: 'var(--hq-accent)' }}>{typeName}</span></h2>
           <p>{t.heroSubtitle}</p>
           <div className="hq-badge-strip">
             <div className="hq-badge"><span style={{ color: 'var(--hq-accent)' }}><ShieldCheck size={16}/></span> {t.badgePrivate || 'Private'}</div>
@@ -134,28 +152,28 @@ function LayoutVCard({ qrType = 'vcard' }) {
         </div>
         
         <div style={{ marginBottom: 40 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(28px, 4vw, 40px)',  textAlign: 'center' }}>
+          <h2 className="font-bold tracking-tighter " style={{ fontSize: 'clamp(28px, 4vw, 40px)',  textAlign: 'center' }}>
             {t.badgeLeadMarket || 'Why We Lead'}
           </h2>
         </div>
         
         <div className="hq-horizontal-cards">
           <div className="hq-h-card" style={{ background: 'linear-gradient(145deg, var(--hq-bg), var(--hq-card))', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
-            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white"><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><ShieldCheck size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t1') || t.comp1Title}</h3>
+            <h3 className="font-bold tracking-tighter "><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><ShieldCheck size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t1') || t.comp1Title}</h3>
             <p>{translate('featTools.vcard.d1') || t.comp1Desc}</p>
           </div>
           <div className="hq-h-card" style={{ background: 'linear-gradient(145deg, var(--hq-bg), var(--hq-card))', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
-            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white"><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><Zap size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t2') || t.comp2Title}</h3>
+            <h3 className="font-bold tracking-tighter "><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><Zap size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t2') || t.comp2Title}</h3>
             <p>{translate('featTools.vcard.d2') || t.comp2Desc}</p>
           </div>
           <div className="hq-h-card" style={{ background: 'linear-gradient(145deg, var(--hq-bg), var(--hq-card))', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(10px)' }}>
-            <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white"><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><Lock size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t3') || t.comp3Title}</h3>
+            <h3 className="font-bold tracking-tighter "><div style={{ padding: 12, background: 'var(--hq-accent-glow)', borderRadius: 12, display: 'inline-flex', marginRight: 12 }}><Lock size={28} color="var(--hq-accent)" /></div> {translate('featTools.vcard.t3') || t.comp3Title}</h3>
             <p>{translate('featTools.vcard.d3') || t.comp3Desc}</p>
           </div>
         </div>
 
         <div style={{ marginBottom: 60, marginTop: 40 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(28px, 4vw, 40px)',  textAlign: 'center' }}>
+          <h2 className="font-bold tracking-tighter " style={{ fontSize: 'clamp(28px, 4vw, 40px)',  textAlign: 'center' }}>
             {t.stepsTitle} {typeName}
           </h2>
         </div>
@@ -178,9 +196,9 @@ function LayoutVCard({ qrType = 'vcard' }) {
       </div>
 
       {/* FAQ */}
-      <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
+      <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '60px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

@@ -6,7 +6,25 @@ function LayoutEmail({ qrType = 'email' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
@@ -42,7 +60,7 @@ function LayoutEmail({ qrType = 'email' }) {
           grid-template-columns: repeat(12, 1fr);
           grid-auto-rows: 240px;
           gap: 24px;
-          margin-bottom: 120px;
+          margin-bottom: 60px;
         }
         
         .hq-m-card {
@@ -84,7 +102,7 @@ function LayoutEmail({ qrType = 'email' }) {
         .hq-m-stat-bg { position: absolute; right: -20px; top: -20px; opacity: 0.05; color: var(--hq-accent); }
         
         .hq-steps-grid {
-          display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 120px;
+          display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 60px;
         }
         .hq-step-masonry {
           background: var(--hq-bg); padding: 40px 0; border-top: 2px solid var(--hq-border);
@@ -106,7 +124,7 @@ function LayoutEmail({ qrType = 'email' }) {
         <div className="hq-masonry-hero">
           <div className="hq-m-card hq-m-main">
             <div className="hq-m-main-icon"><Mail size={320} /></div>
-            <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{t.heroTitle} <br/>{typeName}</h2>
+            <h2 className="font-bold tracking-tighter ">{t.heroTitle} <br/>{typeName}</h2>
             <p>{t.heroSubtitle}</p>
           </div>
           
@@ -114,7 +132,7 @@ function LayoutEmail({ qrType = 'email' }) {
             <div className="hq-m-stat-bg"><ShieldCheck size={200}/></div>
             <div style={{ position: 'relative', zIndex: 2 }}>
               <div style={{ display: 'inline-block', padding: '8px 16px', background: 'var(--hq-bg)', borderRadius: 8, fontSize: 14, fontWeight: 700, marginBottom: 16 }}>FEATURE 1</div>
-              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.email.t1') || t.comp1Title}</h3>
+              <h3 className="font-bold tracking-tighter ">{translate('featTools.email.t1') || t.comp1Title}</h3>
               <p>{translate('featTools.email.d1') || t.comp1Desc}</p>
             </div>
           </div>
@@ -123,7 +141,7 @@ function LayoutEmail({ qrType = 'email' }) {
             <div className="hq-m-stat-bg"><Zap size={200}/></div>
             <div style={{ position: 'relative', zIndex: 2 }}>
               <div style={{ display: 'inline-block', padding: '8px 16px', background: 'var(--hq-bg)', borderRadius: 8, fontSize: 14, fontWeight: 700, marginBottom: 16 }}>FEATURE 2</div>
-              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.email.t2') || t.comp2Title}</h3>
+              <h3 className="font-bold tracking-tighter ">{translate('featTools.email.t2') || t.comp2Title}</h3>
               <p>{translate('featTools.email.d2') || t.comp2Desc}</p>
             </div>
           </div>
@@ -134,14 +152,14 @@ function LayoutEmail({ qrType = 'email' }) {
             <div className="hq-m-stat-bg"><Lock size={200}/></div>
             <div style={{ position: 'relative', zIndex: 2 }}>
               <div style={{ display: 'inline-block', padding: '8px 16px', background: 'var(--hq-bg)', borderRadius: 8, fontSize: 14, fontWeight: 700, marginBottom: 16 }}>FEATURE 3</div>
-              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white">{translate('featTools.email.t3') || t.comp3Title}</h3>
+              <h3 className="font-bold tracking-tighter ">{translate('featTools.email.t3') || t.comp3Title}</h3>
               <p>{translate('featTools.email.d3') || t.comp3Desc}</p>
             </div>
           </div>
         </div>
 
         <div style={{ marginBottom: 40 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(32px, 5vw, 48px)' }}>{t.stepsTitle} {typeName}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ fontSize: 'clamp(32px, 5vw, 48px)' }}>{t.stepsTitle} {typeName}</h2>
         </div>
 
         <div className="hq-steps-grid">
@@ -159,9 +177,9 @@ function LayoutEmail({ qrType = 'email' }) {
         </div>
       </div>
 
-      <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '100px 0' }}>
+      <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '60px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 60 }}>
             {t.faqTitle} {typeName}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

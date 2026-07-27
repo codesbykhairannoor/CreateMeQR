@@ -142,7 +142,7 @@ function LayoutPDF({ qrType = 'pdf' }) {
           <div className="hq-pdf-card" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
               <CheckCircle2 size={24} color="var(--hq-accent)" />
-              <h3 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 24,  margin: 0 }}>{getTranslation('featTools', 't', 1)}</h3>
+              <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  margin: 0 }}>{getTranslation('featTools', 't', 1)}</h3>
             </div>
             <p style={{ fontSize: 16, color: 'var(--hq-text-muted)', lineHeight: 1.6, margin: 0 }}>
               {getTranslation('featTools', 'd', 1)}
@@ -185,7 +185,7 @@ function LayoutPDF({ qrType = 'pdf' }) {
         </div>
 
         <div style={{ marginTop: 80 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t('landing.faqTitle')}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t('landing.faqTitle')}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 700, margin: '0 auto' }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = getTranslation('faqTools', 'q', num);

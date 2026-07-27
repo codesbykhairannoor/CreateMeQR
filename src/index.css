@@ -90,7 +90,7 @@
 [class^="hq-layout-"] .hq-section-desc {
   font-size: clamp(16px, 2.5vw, 18px) !important;
   line-height: 1.6 !important;
-  color: var(--hq-text-muted) !important;
+  /* color removed so inline styles work */
 }
 
 /* =========================================================

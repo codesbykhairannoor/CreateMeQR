@@ -6,7 +6,25 @@ function LayoutTelegram({ qrType = 'telegram' }) {
   const { t: translate } = useTranslation();
   const typeName = translate(`types.${qrType}`);
   const tObj = translate('landing', { returnObjects: true });
-  const t = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const baseT = typeof tObj === 'object' && tObj !== null ? tObj : {};
+  const t = Object.assign({
+    heroTitle: "Premium QR Codes",
+    heroSubtitle: "No limits, no ads, no tracking. Generate high-quality static codes directly in your browser.",
+    stepsTitle: "How to Create a",
+    step1Title: "Enter Data",
+    step1Desc: "Provide the required details for your",
+    step2Title: "Customize Design",
+    step2Desc: "Adjust colors, patterns, and add logos to match your brand.",
+    step3Title: "Download & Use",
+    step3Desc: "Get your high-res QR code instantly and use it anywhere.",
+    comp1Title: "Secure & Private",
+    comp1Desc: "Everything is generated locally in your browser. No data leaves your device.",
+    comp2Title: "Fast & Reliable",
+    comp2Desc: "High performance rendering with zero loading times.",
+    comp3Title: "Fully Customizable",
+    comp3Desc: "Extensive design options to create the perfect QR code.",
+    faqTitle: "Common Questions"
+  }, baseT);
   const [openFaq, setOpenFaq] = React.useState(null);
 
   return (
@@ -40,7 +58,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
         .hq-container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
         
         .hq-tg-window {
-          display: flex; height: 600px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); margin-bottom: 80px;
+          display: flex; height: 600px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); margin-bottom: 40px;
           border: 1px solid var(--hq-border);
         }
         html.dark .hq-tg-window { box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
@@ -77,7 +95,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
 
       <div className="hq-container">
         <div style={{ textAlign: 'center', marginBottom: 60 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ fontSize: 'clamp(36px, 5vw, 56px)' }}>{t.heroTitle} <br/>for {typeName}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ fontSize: 'clamp(36px, 5vw, 56px)' }}>{t.heroTitle} <br/>for {typeName}</h2>
           <p style={{ color: 'var(--hq-text-muted)', fontSize: 18 }}>{t.heroSubtitle}</p>
         </div>
 
@@ -137,9 +155,9 @@ function LayoutTelegram({ qrType = 'telegram' }) {
         </div>
       </div>
       
-      <div style={{ background: 'var(--hq-card)', padding: '100px 0', borderTop: '1px solid var(--hq-border)' }}>
+      <div style={{ background: 'var(--hq-card)', padding: '60px 0', borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter text-zinc-900 dark:text-white" style={{ paddingTop: 120, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.telegram.q${num}`);
