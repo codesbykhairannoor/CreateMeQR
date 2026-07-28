@@ -101,36 +101,39 @@ function LayoutLinkInBio({ qrType = 'linkinbio' }) {
         
         
               
-        /* STRICTLY SCOPED MOBILE FIXES (Phase 4) */
+              
+        /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-linkinbio .hq-container { padding: 0 16px !important; gap: 24px !important; }
           
-          /* Phone/Player Mockups scaling */
+          /* NATIVE MOCKUP SCALING:
+             Instead of crushing the height (which destroys internal CSS), 
+             we use native transform scale to shrink the mockups proportionally! */
           .hq-layout-linkinbio div[class*="-phone"], .hq-layout-linkinbio div[class*="-player"], .hq-layout-linkinbio div[class*="-mockup"], .hq-layout-linkinbio div[class*="-mock"] {
-            width: 100% !important;
-            max-width: 320px !important;
-            height: auto !important;
-            min-height: 400px !important;
+            transform: scale(0.85) !important;
+            transform-origin: top center !important;
             margin: 0 auto !important;
-            flex: 1 1 auto !important;
+            /* Negative margin to eat up the empty space left by scaling */
+            margin-bottom: -60px !important;
+            /* Do not override height or aspect-ratio so internal CSS stays intact! */
           }
           
-          /* Ensure tall mockups stay in ratio */
-          .hq-layout-linkinbio div[class*="-phone"] { aspect-ratio: 9/18 !important; }
+          /* Fix Hero Stacking safely */
+          .hq-layout-linkinbio div[class*="-hero"], .hq-layout-linkinbio div[class*="-main"], .hq-layout-linkinbio div[class*="-wrapper"], .hq-layout-linkinbio div[class*="main"] {
+            display: flex !important;
+            flex-direction: column !important;
+            padding: 32px 0 !important;
+            gap: 24px !important;
+          }
           
-          /* Specific fix for YouTube player which should be 16:9 */
-          .hq-layout-linkinbio div.hq-yt-player { aspect-ratio: 16/9 !important; min-height: auto !important; }
-          
-          /* Fix Hero Padding */
-          .hq-layout-linkinbio div[class*="-hero"] {
-            padding: 40px 0 !important;
-            gap: 32px !important;
+          /* Fix Grid Squeezing (Video, Image, PDF features) */
+          .hq-layout-linkinbio div[class*="-bento"], .hq-layout-linkinbio div[class*="-features"], .hq-layout-linkinbio div[class*="-grid"], .hq-layout-linkinbio div[class*="-row"], .hq-layout-linkinbio div[class*="bento"], .hq-layout-linkinbio div[class*="features"] {
             display: flex !important;
             flex-direction: column !important;
           }
-          
-          /* Fix LinkedIn & Profile Avatars Overlap */
+
+          /* LinkedIn specific avatar overlaps */
           .hq-layout-linkinbio div.hq-li-avatar, .hq-layout-linkinbio div[class*="-avatar"] {
             width: 80px !important;
             height: 80px !important;
@@ -140,37 +143,13 @@ function LayoutLinkInBio({ qrType = 'linkinbio' }) {
             margin-top: 50px !important;
           }
           .hq-layout-linkinbio div.hq-li-cover { height: 100px !important; }
-          
-          /* Fix Inline Grids (URL, WiFi, etc) that don't use CSS classes */
-          .hq-layout-linkinbio div[style*="gridTemplateColumns"] {
-            display: flex !important;
-            flex-direction: column !important;
-            gap: 24px !important;
-          }
-          .hq-layout-linkinbio div[style*="gridColumn:"] {
-            width: 100% !important;
-            grid-column: span 1 !important;
-          }
-          
-          /* Fix Inline Flex Rows (URL steps) */
-          .hq-layout-linkinbio div[style*="flexDirection: 'row'"], .hq-layout-linkinbio div[style*="flex-direction: row"] {
-            flex-direction: column !important;
-          }
 
-          /* Fix grid column squeezing for ALL bento, features, and grid classes */
-          .hq-layout-linkinbio div[class*="-bento"], .hq-layout-linkinbio div[class*="-features"], .hq-layout-linkinbio div[class*="-grid"], .hq-layout-linkinbio div[class*="-row"], .hq-layout-linkinbio div[class*="bento"], .hq-layout-linkinbio div[class*="features"] {
-            display: flex !important;
-            flex-direction: column !important;
+          /* Ensure text wraps correctly without horizontal scroll */
+          .hq-layout-linkinbio h1, .hq-layout-linkinbio h2, .hq-layout-linkinbio h3, .hq-layout-linkinbio p {
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+            max-width: 100% !important;
           }
-          
-          /* Ensure ALL Main and Wrapper containers stack vertically */
-          .hq-layout-linkinbio div[class*="-main"], .hq-layout-linkinbio div[class*="-wrapper"], .hq-layout-linkinbio div[class*="main"] {
-            display: flex !important;
-            flex-direction: column !important;
-          }
-
-          /* Ensure text wraps nicely */
-          .hq-layout-linkinbio h1, .hq-layout-linkinbio h2, .hq-layout-linkinbio h3 { line-height: 1.2 !important; word-wrap: break-word; }
         }
     
       `}</style>

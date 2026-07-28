@@ -91,36 +91,39 @@ function LayoutDiscord({ qrType = 'discord' }) {
         
         
               
-        /* STRICTLY SCOPED MOBILE FIXES (Phase 4) */
+              
+        /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-discord .hq-container { padding: 0 16px !important; gap: 24px !important; }
           
-          /* Phone/Player Mockups scaling */
+          /* NATIVE MOCKUP SCALING:
+             Instead of crushing the height (which destroys internal CSS), 
+             we use native transform scale to shrink the mockups proportionally! */
           .hq-layout-discord div[class*="-phone"], .hq-layout-discord div[class*="-player"], .hq-layout-discord div[class*="-mockup"], .hq-layout-discord div[class*="-mock"] {
-            width: 100% !important;
-            max-width: 320px !important;
-            height: auto !important;
-            min-height: 400px !important;
+            transform: scale(0.85) !important;
+            transform-origin: top center !important;
             margin: 0 auto !important;
-            flex: 1 1 auto !important;
+            /* Negative margin to eat up the empty space left by scaling */
+            margin-bottom: -60px !important;
+            /* Do not override height or aspect-ratio so internal CSS stays intact! */
           }
           
-          /* Ensure tall mockups stay in ratio */
-          .hq-layout-discord div[class*="-phone"] { aspect-ratio: 9/18 !important; }
+          /* Fix Hero Stacking safely */
+          .hq-layout-discord div[class*="-hero"], .hq-layout-discord div[class*="-main"], .hq-layout-discord div[class*="-wrapper"], .hq-layout-discord div[class*="main"] {
+            display: flex !important;
+            flex-direction: column !important;
+            padding: 32px 0 !important;
+            gap: 24px !important;
+          }
           
-          /* Specific fix for YouTube player which should be 16:9 */
-          .hq-layout-discord div.hq-yt-player { aspect-ratio: 16/9 !important; min-height: auto !important; }
-          
-          /* Fix Hero Padding */
-          .hq-layout-discord div[class*="-hero"] {
-            padding: 40px 0 !important;
-            gap: 32px !important;
+          /* Fix Grid Squeezing (Video, Image, PDF features) */
+          .hq-layout-discord div[class*="-bento"], .hq-layout-discord div[class*="-features"], .hq-layout-discord div[class*="-grid"], .hq-layout-discord div[class*="-row"], .hq-layout-discord div[class*="bento"], .hq-layout-discord div[class*="features"] {
             display: flex !important;
             flex-direction: column !important;
           }
-          
-          /* Fix LinkedIn & Profile Avatars Overlap */
+
+          /* LinkedIn specific avatar overlaps */
           .hq-layout-discord div.hq-li-avatar, .hq-layout-discord div[class*="-avatar"] {
             width: 80px !important;
             height: 80px !important;
@@ -130,37 +133,13 @@ function LayoutDiscord({ qrType = 'discord' }) {
             margin-top: 50px !important;
           }
           .hq-layout-discord div.hq-li-cover { height: 100px !important; }
-          
-          /* Fix Inline Grids (URL, WiFi, etc) that don't use CSS classes */
-          .hq-layout-discord div[style*="gridTemplateColumns"] {
-            display: flex !important;
-            flex-direction: column !important;
-            gap: 24px !important;
-          }
-          .hq-layout-discord div[style*="gridColumn:"] {
-            width: 100% !important;
-            grid-column: span 1 !important;
-          }
-          
-          /* Fix Inline Flex Rows (URL steps) */
-          .hq-layout-discord div[style*="flexDirection: 'row'"], .hq-layout-discord div[style*="flex-direction: row"] {
-            flex-direction: column !important;
-          }
 
-          /* Fix grid column squeezing for ALL bento, features, and grid classes */
-          .hq-layout-discord div[class*="-bento"], .hq-layout-discord div[class*="-features"], .hq-layout-discord div[class*="-grid"], .hq-layout-discord div[class*="-row"], .hq-layout-discord div[class*="bento"], .hq-layout-discord div[class*="features"] {
-            display: flex !important;
-            flex-direction: column !important;
+          /* Ensure text wraps correctly without horizontal scroll */
+          .hq-layout-discord h1, .hq-layout-discord h2, .hq-layout-discord h3, .hq-layout-discord p {
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+            max-width: 100% !important;
           }
-          
-          /* Ensure ALL Main and Wrapper containers stack vertically */
-          .hq-layout-discord div[class*="-main"], .hq-layout-discord div[class*="-wrapper"], .hq-layout-discord div[class*="main"] {
-            display: flex !important;
-            flex-direction: column !important;
-          }
-
-          /* Ensure text wraps nicely */
-          .hq-layout-discord h1, .hq-layout-discord h2, .hq-layout-discord h3 { line-height: 1.2 !important; word-wrap: break-word; }
         }
     
       `}</style>

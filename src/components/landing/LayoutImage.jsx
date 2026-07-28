@@ -113,36 +113,39 @@ function LayoutImage({ qrType = 'image' }) {
         
         
               
-        /* STRICTLY SCOPED MOBILE FIXES (Phase 4) */
+              
+        /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-image .hq-container { padding: 0 16px !important; gap: 24px !important; }
           
-          /* Phone/Player Mockups scaling */
+          /* NATIVE MOCKUP SCALING:
+             Instead of crushing the height (which destroys internal CSS), 
+             we use native transform scale to shrink the mockups proportionally! */
           .hq-layout-image div[class*="-phone"], .hq-layout-image div[class*="-player"], .hq-layout-image div[class*="-mockup"], .hq-layout-image div[class*="-mock"] {
-            width: 100% !important;
-            max-width: 320px !important;
-            height: auto !important;
-            min-height: 400px !important;
+            transform: scale(0.85) !important;
+            transform-origin: top center !important;
             margin: 0 auto !important;
-            flex: 1 1 auto !important;
+            /* Negative margin to eat up the empty space left by scaling */
+            margin-bottom: -60px !important;
+            /* Do not override height or aspect-ratio so internal CSS stays intact! */
           }
           
-          /* Ensure tall mockups stay in ratio */
-          .hq-layout-image div[class*="-phone"] { aspect-ratio: 9/18 !important; }
+          /* Fix Hero Stacking safely */
+          .hq-layout-image div[class*="-hero"], .hq-layout-image div[class*="-main"], .hq-layout-image div[class*="-wrapper"], .hq-layout-image div[class*="main"] {
+            display: flex !important;
+            flex-direction: column !important;
+            padding: 32px 0 !important;
+            gap: 24px !important;
+          }
           
-          /* Specific fix for YouTube player which should be 16:9 */
-          .hq-layout-image div.hq-yt-player { aspect-ratio: 16/9 !important; min-height: auto !important; }
-          
-          /* Fix Hero Padding */
-          .hq-layout-image div[class*="-hero"] {
-            padding: 40px 0 !important;
-            gap: 32px !important;
+          /* Fix Grid Squeezing (Video, Image, PDF features) */
+          .hq-layout-image div[class*="-bento"], .hq-layout-image div[class*="-features"], .hq-layout-image div[class*="-grid"], .hq-layout-image div[class*="-row"], .hq-layout-image div[class*="bento"], .hq-layout-image div[class*="features"] {
             display: flex !important;
             flex-direction: column !important;
           }
-          
-          /* Fix LinkedIn & Profile Avatars Overlap */
+
+          /* LinkedIn specific avatar overlaps */
           .hq-layout-image div.hq-li-avatar, .hq-layout-image div[class*="-avatar"] {
             width: 80px !important;
             height: 80px !important;
@@ -152,37 +155,13 @@ function LayoutImage({ qrType = 'image' }) {
             margin-top: 50px !important;
           }
           .hq-layout-image div.hq-li-cover { height: 100px !important; }
-          
-          /* Fix Inline Grids (URL, WiFi, etc) that don't use CSS classes */
-          .hq-layout-image div[style*="gridTemplateColumns"] {
-            display: flex !important;
-            flex-direction: column !important;
-            gap: 24px !important;
-          }
-          .hq-layout-image div[style*="gridColumn:"] {
-            width: 100% !important;
-            grid-column: span 1 !important;
-          }
-          
-          /* Fix Inline Flex Rows (URL steps) */
-          .hq-layout-image div[style*="flexDirection: 'row'"], .hq-layout-image div[style*="flex-direction: row"] {
-            flex-direction: column !important;
-          }
 
-          /* Fix grid column squeezing for ALL bento, features, and grid classes */
-          .hq-layout-image div[class*="-bento"], .hq-layout-image div[class*="-features"], .hq-layout-image div[class*="-grid"], .hq-layout-image div[class*="-row"], .hq-layout-image div[class*="bento"], .hq-layout-image div[class*="features"] {
-            display: flex !important;
-            flex-direction: column !important;
+          /* Ensure text wraps correctly without horizontal scroll */
+          .hq-layout-image h1, .hq-layout-image h2, .hq-layout-image h3, .hq-layout-image p {
+            word-wrap: break-word !important;
+            overflow-wrap: break-word !important;
+            max-width: 100% !important;
           }
-          
-          /* Ensure ALL Main and Wrapper containers stack vertically */
-          .hq-layout-image div[class*="-main"], .hq-layout-image div[class*="-wrapper"], .hq-layout-image div[class*="main"] {
-            display: flex !important;
-            flex-direction: column !important;
-          }
-
-          /* Ensure text wraps nicely */
-          .hq-layout-image h1, .hq-layout-image h2, .hq-layout-image h3 { line-height: 1.2 !important; word-wrap: break-word; }
         }
     
       `}</style>
@@ -201,18 +180,18 @@ function LayoutImage({ qrType = 'image' }) {
         <div className="hq-img-grid">
           <div className="hq-img-card main" style={{ padding: 40, flexDirection: 'column', textAlign: 'center' }}>
             <ImageIcon size={64} color="var(--hq-text-muted)" style={{ marginBottom: 24 }} />
-            <h2 className="font-bold tracking-tighter " style={{ fontSize: 32,  marginBottom: 16 }}>{getTranslation('featTools', 't', 1)}</h2>
-            <p style={{ fontSize: 18, color: 'var(--hq-text-muted)', maxWidth: 400 }}>{getTranslation('featTools', 'd', 1)}</p>
+            <h2 className="font-bold tracking-tighter " style={{ fontSize: 32,  marginBottom: 16 }}>{translate('landing.comp1Title') || 'High Quality Rendering'}</h2>
+            <p style={{ fontSize: 18, color: 'var(--hq-text-muted)', maxWidth: 400 }}>{translate('landing.comp1Desc') || 'Get pristine quality images with zero compression artifacts.'}</p>
           </div>
           <div className="hq-img-card" style={{ padding: 32, flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-end', textAlign: 'left' }}>
             <ZoomIn size={48} color="var(--hq-text-muted)" style={{ marginBottom: 24 }} />
-            <h3 className="font-bold tracking-tighter" style={{ fontSize: 24, marginBottom: 12, color: 'var(--hq-text)' }}>{getTranslation('featTools', 't', 2)}</h3>
-            <p style={{ color: 'var(--hq-text-muted)', fontSize: 16 }}>{getTranslation('featTools', 'd', 2)}</p>
+            <h3 className="font-bold tracking-tighter" style={{ fontSize: 24, marginBottom: 12, color: 'var(--hq-text)' }}>{translate('landing.comp2Title') || 'Fast & Reliable'}</h3>
+            <p style={{ color: 'var(--hq-text-muted)', fontSize: 16 }}>{translate('landing.comp2Desc') || 'Instant processing and generation right in your browser.'}</p>
           </div>
           <div className="hq-img-card" style={{ padding: 32, flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-end', textAlign: 'left' }}>
             <ImagePlus size={48} color="var(--hq-text-muted)" style={{ marginBottom: 24 }} />
-            <h3 className="font-bold tracking-tighter" style={{ fontSize: 24, marginBottom: 12, color: 'var(--hq-text)' }}>{getTranslation('featTools', 't', 3)}</h3>
-            <p style={{ color: 'var(--hq-text-muted)', fontSize: 16 }}>{getTranslation('featTools', 'd', 3)}</p>
+            <h3 className="font-bold tracking-tighter" style={{ fontSize: 24, marginBottom: 12, color: 'var(--hq-text)' }}>{translate('landing.comp3Title') || 'Fully Customizable'}</h3>
+            <p style={{ color: 'var(--hq-text-muted)', fontSize: 16 }}>{translate('landing.comp3Desc') || 'Personalize colors, frames, and branding to fit your needs.'}</p>
           </div>
         </div>
 
