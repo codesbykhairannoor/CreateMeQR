@@ -139,6 +139,9 @@ function LayoutAudio({ qrType = 'audio' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile Audio Fixes */
+          .hq-aud-hero { grid-template-columns: 1fr !important; gap: 40px !important; margin-bottom: 60px !important; }
         }
     
       `}</style>

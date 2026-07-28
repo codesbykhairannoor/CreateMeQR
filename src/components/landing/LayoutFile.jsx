@@ -126,6 +126,12 @@ function LayoutFile({ qrType = 'file' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile File Fixes */
+          .hq-file-box { flex-direction: column !important; padding: 24px !important; gap: 24px !important; text-align: center !important; }
+          .hq-file-box > div { width: 100% !important; box-sizing: border-box !important; }
+          .hq-file-box > div:first-child > div:last-child { flex-direction: column !important; align-items: center !important; gap: 8px !important; }
+          .hq-file-features { grid-template-columns: 1fr !important; }
         }
     
       `}</style>

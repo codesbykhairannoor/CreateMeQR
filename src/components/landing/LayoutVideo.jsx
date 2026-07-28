@@ -125,6 +125,10 @@ function LayoutVideo({ qrType = 'video' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile Video Fixes */
+          .hq-vid-features { grid-template-columns: 1fr !important; padding: 0 !important; }
+          .hq-vid-player-mock { margin-top: 40px !important; margin-bottom: 40px !important; }
         }
     
       `}</style>

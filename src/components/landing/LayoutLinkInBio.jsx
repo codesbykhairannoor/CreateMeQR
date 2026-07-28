@@ -109,6 +109,10 @@ function LayoutLinkInBio({ qrType = 'linkinbio' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile LinkInBio Fixes */
+          .hq-lib-wrapper { grid-template-columns: 1fr !important; gap: 40px !important; }
+          .hq-lib-mockup-wrap { margin-top: 40px !important; }
         }
     
       `}</style>
