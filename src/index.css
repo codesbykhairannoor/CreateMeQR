@@ -72,29 +72,40 @@
    Ensures consistent sizes for Section Titles, Card Titles, and Descriptions
    ========================================================================== */
 
-/* 1. SECTION TITLES (h2) */
-[class^="hq-layout-"] h2 {
-  font-size: clamp(32px, 5vw, 48px) !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.05em !important;
+/* 1. HERO TITLES (h1) */
+[class^="hq-layout-"] h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem) !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.03em !important;
   line-height: 1.15 !important;
+  font-family: var(--font-display);
 }
 
-/* 2. CARD / FEATURE TITLES (h3) */
+/* 2. SECTION TITLES (h2) */
+[class^="hq-layout-"] h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem) !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.2 !important;
+  font-family: var(--font-display);
+}
+
+/* 3. CARD / FEATURE TITLES (h3) */
 [class^="hq-layout-"] h3,
 [class^="hq-layout-"] .hq-card-title {
-  font-size: clamp(20px, 3vw, 24px) !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.05em !important;
+  font-size: 1.3rem !important;
+  font-weight: 800 !important;
   line-height: 1.3 !important;
   margin-bottom: 12px !important;
+  font-family: var(--font-display);
 }
 
-/* 3. SECTION DESCRIPTIONS / TEXT (p) */
+/* 4. SECTION DESCRIPTIONS / TEXT (p) */
 [class^="hq-layout-"] p,
 [class^="hq-layout-"] .hq-card-desc,
 [class^="hq-layout-"] .hq-section-desc {
-  font-size: clamp(16px, 2.5vw, 18px) !important;
+  font-size: clamp(1.05rem, 2vw, 1.25rem) !important;
+  font-weight: 500 !important;
   line-height: 1.6 !important;
   /* color removed so inline styles work */
 }
@@ -129,15 +140,15 @@
 
   /* 3. Typography Clamping for Mobile */
   [class^="hq-layout-"] h1 {
-    font-size: clamp(32px, 8vw, 48px) !important;
-    line-height: 1.1 !important;
+    font-size: clamp(2rem, 8vw, 2.5rem) !important;
+    line-height: 1.15 !important;
   }
   [class^="hq-layout-"] h2 {
-    font-size: clamp(28px, 6vw, 36px) !important;
+    font-size: clamp(1.6rem, 6vw, 2rem) !important;
     line-height: 1.2 !important;
   }
   [class^="hq-layout-"] p {
-    font-size: clamp(14px, 4vw, 16px) !important;
+    font-size: clamp(0.95rem, 4vw, 1.05rem) !important;
   }
 
   /* 4. Fix specific app containers */
