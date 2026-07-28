@@ -186,7 +186,7 @@ function LayoutTikTok({ qrType = 'tiktok' }) {
       
       <div style={{ background: '#0a0a0a', padding: '60px 0', marginTop: 80, borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800, flexDirection: 'column' }}>
-          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 0, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.tiktok.q${num}`);

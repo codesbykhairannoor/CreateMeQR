@@ -213,7 +213,7 @@ function LayoutInstagram({ qrType = 'instagram' }) {
             <MessageCircle size={24} />
             <Send size={24} />
           </div>
-          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 36,  textAlign: 'center', margin: '0 0 40px 0' }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 0, fontSize: 36,  textAlign: 'center', margin: '0 0 40px 0' }}>{t.faqTitle}</h2>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {

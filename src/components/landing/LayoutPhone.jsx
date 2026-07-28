@@ -192,7 +192,7 @@ function LayoutPhone({ qrType = 'phone' }) {
 
       <div style={{ background: 'var(--hq-text)', color: 'var(--hq-bg)', padding: '60px 0' }}>
         <div className="hq-container" style={{ maxWidth: 1000 }}>
-          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 'clamp(40px, 6vw, 64px)',  marginBottom: 60 }}>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 0, fontSize: 'clamp(40px, 6vw, 64px)',  marginBottom: 60 }}>
             {t.faqTitle}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

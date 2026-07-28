@@ -149,7 +149,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
       `}</style>
 
       <div className="hq-container">
-        <div style={{ textAlign: 'center', marginBottom: 60 }}>
+        <div style={{ textAlign: 'center', marginBottom: 40 }}>
           <h2 className="font-bold tracking-tighter " style={{ fontSize: 'clamp(36px, 5vw, 56px)' }}>{t.heroTitle} <br/>for {typeName}</h2>
           <p style={{ color: 'var(--hq-text-muted)', fontSize: 18 }}>{t.heroSubtitle}</p>
         </div>
@@ -212,7 +212,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
       
       <div style={{ background: 'var(--hq-card)', padding: '60px 0', borderTop: '1px solid var(--hq-border)' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
-          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 0, fontSize: 32,  textAlign: 'center', marginBottom: 40 }}>{t.faqTitle}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = translate(`faqTools.telegram.q${num}`);

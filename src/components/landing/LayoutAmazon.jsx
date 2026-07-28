@@ -221,7 +221,7 @@ function LayoutAmazon({ qrType = 'amazon' }) {
         </div>
 
         <div style={{ marginTop: 80, maxWidth: 800, marginLeft: 'auto', marginRight: 'auto' }}>
-          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 60, fontSize: 28,  textAlign: 'center', marginBottom: 40 }}>{t('landing.faqTitle')}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ paddingTop: 0, fontSize: 28,  textAlign: 'center', marginBottom: 40 }}>{t('landing.faqTitle')}</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {
               const q = getTranslation('faqTools', 'q', num);
