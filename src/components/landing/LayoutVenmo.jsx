@@ -74,31 +74,11 @@ function LayoutVenmo({ qrType = 'venmo' }) {
           /* General Container fixes */
           .hq-layout-venmo .hq-container { padding: 0 16px !important; gap: 24px !important; }
           
-          /* NATIVE MOCKUP SCALING:
-             Instead of crushing the height (which destroys internal CSS), 
-             we use native transform scale to shrink the mockups proportionally! */
-          .hq-layout-venmo div[class*="-phone"], .hq-layout-venmo div[class*="-player"], .hq-layout-venmo div[class*="-mockup"], .hq-layout-venmo div[class*="-mock"] {
-            transform: scale(0.85) !important;
-            transform-origin: top center !important;
-            margin: 0 auto !important;
-            /* Negative margin to eat up the empty space left by scaling */
-            margin-bottom: -60px !important;
-            /* Do not override height or aspect-ratio so internal CSS stays intact! */
-          }
           
-          /* Fix Hero Stacking safely */
-          .hq-layout-venmo div[class*="-hero"], .hq-layout-venmo div[class*="-main"], .hq-layout-venmo div[class*="-wrapper"], .hq-layout-venmo div[class*="main"] {
-            display: flex !important;
-            flex-direction: column !important;
-            padding: 32px 0 !important;
-            gap: 24px !important;
-          }
           
-          /* Fix Grid Squeezing (Video, Image, PDF features) */
-          .hq-layout-venmo div[class*="-bento"], .hq-layout-venmo div[class*="-features"], .hq-layout-venmo div[class*="-grid"], .hq-layout-venmo div[class*="-row"], .hq-layout-venmo div[class*="bento"], .hq-layout-venmo div[class*="features"] {
-            display: flex !important;
-            flex-direction: column !important;
-          }
+          
+          
+          
 
           /* LinkedIn specific avatar overlaps */
           .hq-layout-venmo div.hq-li-avatar, .hq-layout-venmo div[class*="-avatar"] {

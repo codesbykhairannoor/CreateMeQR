@@ -124,31 +124,11 @@ function LayoutFile({ qrType = 'file' }) {
           /* General Container fixes */
           .hq-layout-file .hq-container { padding: 0 16px !important; gap: 24px !important; }
           
-          /* NATIVE MOCKUP SCALING:
-             Instead of crushing the height (which destroys internal CSS), 
-             we use native transform scale to shrink the mockups proportionally! */
-          .hq-layout-file div[class*="-phone"], .hq-layout-file div[class*="-player"], .hq-layout-file div[class*="-mockup"], .hq-layout-file div[class*="-mock"] {
-            transform: scale(0.85) !important;
-            transform-origin: top center !important;
-            margin: 0 auto !important;
-            /* Negative margin to eat up the empty space left by scaling */
-            margin-bottom: -60px !important;
-            /* Do not override height or aspect-ratio so internal CSS stays intact! */
-          }
           
-          /* Fix Hero Stacking safely */
-          .hq-layout-file div[class*="-hero"], .hq-layout-file div[class*="-main"], .hq-layout-file div[class*="-wrapper"], .hq-layout-file div[class*="main"] {
-            display: flex !important;
-            flex-direction: column !important;
-            padding: 32px 0 !important;
-            gap: 24px !important;
-          }
           
-          /* Fix Grid Squeezing (Video, Image, PDF features) */
-          .hq-layout-file div[class*="-bento"], .hq-layout-file div[class*="-features"], .hq-layout-file div[class*="-grid"], .hq-layout-file div[class*="-row"], .hq-layout-file div[class*="bento"], .hq-layout-file div[class*="features"] {
-            display: flex !important;
-            flex-direction: column !important;
-          }
+          
+          
+          
 
           /* LinkedIn specific avatar overlaps */
           .hq-layout-file div.hq-li-avatar, .hq-layout-file div[class*="-avatar"] {

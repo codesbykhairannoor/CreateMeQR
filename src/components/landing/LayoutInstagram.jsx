@@ -107,31 +107,11 @@ function LayoutInstagram({ qrType = 'instagram' }) {
           /* General Container fixes */
           .hq-layout-instagram .hq-container { padding: 0 16px !important; gap: 24px !important; }
           
-          /* NATIVE MOCKUP SCALING:
-             Instead of crushing the height (which destroys internal CSS), 
-             we use native transform scale to shrink the mockups proportionally! */
-          .hq-layout-instagram div[class*="-phone"], .hq-layout-instagram div[class*="-player"], .hq-layout-instagram div[class*="-mockup"], .hq-layout-instagram div[class*="-mock"] {
-            transform: scale(0.85) !important;
-            transform-origin: top center !important;
-            margin: 0 auto !important;
-            /* Negative margin to eat up the empty space left by scaling */
-            margin-bottom: -60px !important;
-            /* Do not override height or aspect-ratio so internal CSS stays intact! */
-          }
           
-          /* Fix Hero Stacking safely */
-          .hq-layout-instagram div[class*="-hero"], .hq-layout-instagram div[class*="-main"], .hq-layout-instagram div[class*="-wrapper"], .hq-layout-instagram div[class*="main"] {
-            display: flex !important;
-            flex-direction: column !important;
-            padding: 32px 0 !important;
-            gap: 24px !important;
-          }
           
-          /* Fix Grid Squeezing (Video, Image, PDF features) */
-          .hq-layout-instagram div[class*="-bento"], .hq-layout-instagram div[class*="-features"], .hq-layout-instagram div[class*="-grid"], .hq-layout-instagram div[class*="-row"], .hq-layout-instagram div[class*="bento"], .hq-layout-instagram div[class*="features"] {
-            display: flex !important;
-            flex-direction: column !important;
-          }
+          
+          
+          
 
           /* LinkedIn specific avatar overlaps */
           .hq-layout-instagram div.hq-li-avatar, .hq-layout-instagram div[class*="-avatar"] {
