@@ -96,6 +96,13 @@ function LayoutURL({ qrType = 'url' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile URL Fixes */
+          div[style*="gridTemplateColumns: 'repeat(12, 1fr)'"] { display: flex !important; flex-direction: column !important; }
+          div[style*="gridColumn: 'span 12'"] { padding: 24px !important; flex-direction: column !important; text-align: center !important; }
+          div[style*="maxWidth: '50%'"] { max-width: 100% !important; }
+          .hq-steps-bento { grid-template-columns: 1fr !important; }
+          div[style*="gridColumn: 'span 6'"] { grid-column: span 12 !important; }
         }
     
       `}</style>

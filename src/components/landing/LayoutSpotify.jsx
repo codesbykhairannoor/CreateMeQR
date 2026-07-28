@@ -94,6 +94,15 @@ function LayoutSpotify({ qrType = 'spotify' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile Table Fixes */
+          .hq-sp-table, .hq-sp-table tbody, .hq-sp-table tr, .hq-sp-table td { display: block; width: 100%; }
+          .hq-sp-table thead { display: none; }
+          .hq-sp-row { border: 1px solid rgba(255,255,255,0.1); margin-bottom: 16px; border-radius: 12px; padding: 16px; background: rgba(255,255,255,0.02); display: flex !important; flex-direction: column; gap: 12px; }
+          .hq-sp-row td { padding: 0 !important; border: none !important; }
+          .hq-sp-row td:first-child { display: none; } /* Hide number */
+          .hq-sp-row td:last-child { display: none; } /* Hide time */
+          .hq-sp-row td:nth-child(3) { color: var(--hq-accent) !important; font-weight: 600; }
         }
     
       `}</style>

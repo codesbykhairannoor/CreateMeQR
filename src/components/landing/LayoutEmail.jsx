@@ -151,6 +151,15 @@ function LayoutEmail({ qrType = 'email' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile Email Fixes */
+          .hq-masonry-hero { display: flex; flex-direction: column; gap: 24px; margin-bottom: 40px; }
+          .hq-m-card { grid-column: auto !important; grid-row: auto !important; padding: 32px 24px !important; border-radius: 24px !important; width: 100% !important; box-sizing: border-box; }
+          .hq-m-main { padding: 40px 24px !important; }
+          .hq-m-main h2 { font-size: 40px !important; }
+          .hq-m-stat-bg { right: -40px; top: -40px; opacity: 0.03; }
+          .hq-m-stat-bg svg { width: 160px; height: 160px; }
+          .hq-m-stat[style*="borderLeft"] { border-left: none !important; border-top: 4px solid var(--hq-accent) !important; }
         }
     
       `}</style>

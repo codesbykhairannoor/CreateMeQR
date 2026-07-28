@@ -109,6 +109,14 @@ function LayoutAppStore({ qrType = 'appstore' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile AppStore Fixes */
+          .hq-app-hero { padding: 40px 16px !important; }
+          .hq-app-icon { width: 100px; height: 100px; border-radius: 24px; }
+          .hq-app-icon svg { width: 48px; height: 48px; }
+          .hq-app-stats { flex-wrap: wrap; gap: 24px !important; padding-bottom: 24px !important; margin-bottom: 24px !important; }
+          .hq-app-stat { align-items: center; }
+          .hq-app-btn { width: 100%; justify-content: center; font-size: 16px; padding: 16px; }
         }
     
       `}</style>
