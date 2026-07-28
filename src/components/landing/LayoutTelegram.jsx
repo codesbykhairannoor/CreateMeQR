@@ -94,13 +94,14 @@ function LayoutTelegram({ qrType = 'telegram' }) {
       
         
         
-        /* GLOBAL MOBILE FIXES (Phase 3) */
+              
+        /* STRICTLY SCOPED MOBILE FIXES (Phase 4) */
         @media (max-width: 768px) {
           /* General Container fixes */
-          .hq-container { padding: 0 16px !important; gap: 24px !important; }
+          .hq-layout-telegram .hq-container { padding: 0 16px !important; gap: 24px !important; }
           
-          /* Phone/Player Mockups scaling (TikTok, Snapchat, WhatsApp, YouTube, etc.) */
-          [class*="-phone"], [class*="-player"], [class*="-mockup"], [class*="-mock"] {
+          /* Phone/Player Mockups scaling */
+          .hq-layout-telegram div[class*="-phone"], .hq-layout-telegram div[class*="-player"], .hq-layout-telegram div[class*="-mockup"], .hq-layout-telegram div[class*="-mock"] {
             width: 100% !important;
             max-width: 320px !important;
             height: auto !important;
@@ -110,13 +111,13 @@ function LayoutTelegram({ qrType = 'telegram' }) {
           }
           
           /* Ensure tall mockups stay in ratio */
-          [class*="-phone"] { aspect-ratio: 9/18 !important; }
+          .hq-layout-telegram div[class*="-phone"] { aspect-ratio: 9/18 !important; }
           
           /* Specific fix for YouTube player which should be 16:9 */
-          .hq-yt-player { aspect-ratio: 16/9 !important; min-height: auto !important; }
+          .hq-layout-telegram div.hq-yt-player { aspect-ratio: 16/9 !important; min-height: auto !important; }
           
           /* Fix Hero Padding */
-          [class*="-hero"] {
+          .hq-layout-telegram div[class*="-hero"] {
             padding: 40px 0 !important;
             gap: 32px !important;
             display: flex !important;
@@ -124,47 +125,46 @@ function LayoutTelegram({ qrType = 'telegram' }) {
           }
           
           /* Fix LinkedIn & Profile Avatars Overlap */
-          .hq-li-avatar, [class*="-avatar"] {
+          .hq-layout-telegram div.hq-li-avatar, .hq-layout-telegram div[class*="-avatar"] {
             width: 80px !important;
             height: 80px !important;
             top: -40px !important;
           }
-          .hq-li-profile-info, [class*="-profile-info"] {
+          .hq-layout-telegram div.hq-li-profile-info, .hq-layout-telegram div[class*="-profile-info"] {
             margin-top: 50px !important;
           }
-          .hq-li-cover { height: 100px !important; }
+          .hq-layout-telegram div.hq-li-cover { height: 100px !important; }
           
           /* Fix Inline Grids (URL, WiFi, etc) that don't use CSS classes */
-          div[style*="gridTemplateColumns"] {
+          .hq-layout-telegram div[style*="gridTemplateColumns"] {
             display: flex !important;
             flex-direction: column !important;
             gap: 24px !important;
           }
-          div[style*="gridColumn:"] {
+          .hq-layout-telegram div[style*="gridColumn:"] {
             width: 100% !important;
             grid-column: span 1 !important;
           }
           
           /* Fix Inline Flex Rows (URL steps) */
-          div[style*="flexDirection: 'row'"], div[style*="flex-direction: row"] {
+          .hq-layout-telegram div[style*="flexDirection: 'row'"], .hq-layout-telegram div[style*="flex-direction: row"] {
             flex-direction: column !important;
           }
 
-          /* Phase 2 & 3: PDF, App Store, WiFi, Link In Bio, Video, Audio, File fixes */
           /* Fix grid column squeezing for ALL bento, features, and grid classes */
-          [class*="-bento"], [class*="-features"], [class*="-grid"], [class*="-row"], [class*="bento"], [class*="features"] {
+          .hq-layout-telegram div[class*="-bento"], .hq-layout-telegram div[class*="-features"], .hq-layout-telegram div[class*="-grid"], .hq-layout-telegram div[class*="-row"], .hq-layout-telegram div[class*="bento"], .hq-layout-telegram div[class*="features"] {
             display: flex !important;
             flex-direction: column !important;
           }
           
           /* Ensure ALL Main and Wrapper containers stack vertically */
-          [class*="-main"], [class*="-wrapper"], [class*="main"] {
+          .hq-layout-telegram div[class*="-main"], .hq-layout-telegram div[class*="-wrapper"], .hq-layout-telegram div[class*="main"] {
             display: flex !important;
             flex-direction: column !important;
           }
 
           /* Ensure text wraps nicely */
-          h1, h2, h3 { line-height: 1.2 !important; word-wrap: break-word; }
+          .hq-layout-telegram h1, .hq-layout-telegram h2, .hq-layout-telegram h3 { line-height: 1.2 !important; word-wrap: break-word; }
         }
     
       `}</style>

@@ -126,13 +126,14 @@ function LayoutPDF({ qrType = 'pdf' }) {
       
         
         
-        /* GLOBAL MOBILE FIXES (Phase 3) */
+              
+        /* STRICTLY SCOPED MOBILE FIXES (Phase 4) */
         @media (max-width: 768px) {
           /* General Container fixes */
-          .hq-container { padding: 0 16px !important; gap: 24px !important; }
+          .hq-layout-pdf .hq-container { padding: 0 16px !important; gap: 24px !important; }
           
-          /* Phone/Player Mockups scaling (TikTok, Snapchat, WhatsApp, YouTube, etc.) */
-          [class*="-phone"], [class*="-player"], [class*="-mockup"], [class*="-mock"] {
+          /* Phone/Player Mockups scaling */
+          .hq-layout-pdf div[class*="-phone"], .hq-layout-pdf div[class*="-player"], .hq-layout-pdf div[class*="-mockup"], .hq-layout-pdf div[class*="-mock"] {
             width: 100% !important;
             max-width: 320px !important;
             height: auto !important;
@@ -142,13 +143,13 @@ function LayoutPDF({ qrType = 'pdf' }) {
           }
           
           /* Ensure tall mockups stay in ratio */
-          [class*="-phone"] { aspect-ratio: 9/18 !important; }
+          .hq-layout-pdf div[class*="-phone"] { aspect-ratio: 9/18 !important; }
           
           /* Specific fix for YouTube player which should be 16:9 */
-          .hq-yt-player { aspect-ratio: 16/9 !important; min-height: auto !important; }
+          .hq-layout-pdf div.hq-yt-player { aspect-ratio: 16/9 !important; min-height: auto !important; }
           
           /* Fix Hero Padding */
-          [class*="-hero"] {
+          .hq-layout-pdf div[class*="-hero"] {
             padding: 40px 0 !important;
             gap: 32px !important;
             display: flex !important;
@@ -156,47 +157,46 @@ function LayoutPDF({ qrType = 'pdf' }) {
           }
           
           /* Fix LinkedIn & Profile Avatars Overlap */
-          .hq-li-avatar, [class*="-avatar"] {
+          .hq-layout-pdf div.hq-li-avatar, .hq-layout-pdf div[class*="-avatar"] {
             width: 80px !important;
             height: 80px !important;
             top: -40px !important;
           }
-          .hq-li-profile-info, [class*="-profile-info"] {
+          .hq-layout-pdf div.hq-li-profile-info, .hq-layout-pdf div[class*="-profile-info"] {
             margin-top: 50px !important;
           }
-          .hq-li-cover { height: 100px !important; }
+          .hq-layout-pdf div.hq-li-cover { height: 100px !important; }
           
           /* Fix Inline Grids (URL, WiFi, etc) that don't use CSS classes */
-          div[style*="gridTemplateColumns"] {
+          .hq-layout-pdf div[style*="gridTemplateColumns"] {
             display: flex !important;
             flex-direction: column !important;
             gap: 24px !important;
           }
-          div[style*="gridColumn:"] {
+          .hq-layout-pdf div[style*="gridColumn:"] {
             width: 100% !important;
             grid-column: span 1 !important;
           }
           
           /* Fix Inline Flex Rows (URL steps) */
-          div[style*="flexDirection: 'row'"], div[style*="flex-direction: row"] {
+          .hq-layout-pdf div[style*="flexDirection: 'row'"], .hq-layout-pdf div[style*="flex-direction: row"] {
             flex-direction: column !important;
           }
 
-          /* Phase 2 & 3: PDF, App Store, WiFi, Link In Bio, Video, Audio, File fixes */
           /* Fix grid column squeezing for ALL bento, features, and grid classes */
-          [class*="-bento"], [class*="-features"], [class*="-grid"], [class*="-row"], [class*="bento"], [class*="features"] {
+          .hq-layout-pdf div[class*="-bento"], .hq-layout-pdf div[class*="-features"], .hq-layout-pdf div[class*="-grid"], .hq-layout-pdf div[class*="-row"], .hq-layout-pdf div[class*="bento"], .hq-layout-pdf div[class*="features"] {
             display: flex !important;
             flex-direction: column !important;
           }
           
           /* Ensure ALL Main and Wrapper containers stack vertically */
-          [class*="-main"], [class*="-wrapper"], [class*="main"] {
+          .hq-layout-pdf div[class*="-main"], .hq-layout-pdf div[class*="-wrapper"], .hq-layout-pdf div[class*="main"] {
             display: flex !important;
             flex-direction: column !important;
           }
 
           /* Ensure text wraps nicely */
-          h1, h2, h3 { line-height: 1.2 !important; word-wrap: break-word; }
+          .hq-layout-pdf h1, .hq-layout-pdf h2, .hq-layout-pdf h3 { line-height: 1.2 !important; word-wrap: break-word; }
         }
     
       `}</style>
