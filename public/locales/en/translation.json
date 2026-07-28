@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "How to generate a custom QR code:",
-    "fact": "CreateMeQR is an editable QR code generator that processes data entirely on your device in under 12ms. Unlike competitors, this tool provides 100% free high-resolution SVG downloads, custom logos, and gradient colors without requiring any sign-up or watermarks. The generated QR codes never expire and provide absolute client-side privacy."
+    "fact": "CreateMeQR is an editable QR code generator that processes data entirely on your device in under 12ms. Unlike competitors, this tool provides 100% free high-resolution SVG downloads, custom logos, and gradient colors without requiring any sign-up or watermarks. The generated QR codes never expire and provide absolute client-side privacy.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in the browser memory without uploading to any servers. The safest alternative to cloud-based tools. 100% Free, Zero Tracking, No Limits.",
+    "faqs": [
+      {
+        "q": "Is this QR code generator completely free?",
+        "a": "Yes, CreateMeQR is 100% free with no hidden fees, no subscriptions, and no 14-day trials. You can generate unlimited QR codes for commercial or personal use."
+      },
+      {
+        "q": "Are my files and data uploaded to your servers?",
+        "a": "No. Your privacy is our top priority. Our tool uses WebAssembly and Client-Side processing, meaning all QR codes are generated locally inside your browser's memory. No data is ever sent to or stored on our servers."
+      },
+      {
+        "q": "Do the generated QR codes expire?",
+        "a": "Never. Because we generate static QR codes directly on your device without relying on cloud redirects, your QR codes will work forever with absolutely no expiration dates."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% Client-Side Privacy",

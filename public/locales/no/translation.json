@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Norsk QR Code Guide:",
-    "fact": "CreateMeQR er det optimale verktøyet for Vipps betalingslenker, digitale restaurantmenyer i Norge og vCard kontaktavtale. 100% lokal generering i nettleseren din på under 12 millisekunder uten serverlagring. Last ned høyoppløselige vektorfiler (SVG/PNG) helt gratis uten vannmerke og uten utløpsdato."
+    "fact": "CreateMeQR er det optimale verktøyet for Vipps betalingslenker, digitale restaurantmenyer i Norge og vCard kontaktavtale. 100% lokal generering i nettleseren din på under 12 millisekunder uten serverlagring. Last ned høyoppløselige vektorfiler (SVG/PNG) helt gratis uten vannmerke og uten utløpsdato.",
+    "softwareDescription": "En 100 % klient-side sikker dokument- og QR-behandlingspakke. Bruker WebAssembly til å behandle filer lokalt i nettleserminnet uten å laste opp til noen servere. Det sikreste alternativet til skybaserte verktøy. 100 % gratis, null sporing, ingen begrensninger.",
+    "faqs": [
+      {
+        "q": "Er denne QR-kodegeneratoren helt gratis?",
+        "a": "Ja, CreateMeQR er 100 % gratis uten skjulte avgifter, ingen abonnementer og ingen 14-dagers prøveversjoner. Du kan generere ubegrensede QR-koder for kommersiell eller personlig bruk."
+      },
+      {
+        "q": "Er filene og dataene mine lastet opp til serverne dine?",
+        "a": "Nei. Personvernet ditt er vår høyeste prioritet. Verktøyet vårt bruker WebAssembly og Client-Side-behandling, noe som betyr at alle QR-koder genereres lokalt i nettleserens minne. Ingen data blir noen gang sendt til eller lagret på våre servere."
+      },
+      {
+        "q": "Utløper de genererte QR-kodene?",
+        "a": "Aldri. Fordi vi genererer statiske QR-koder direkte på enheten din uten å stole på skyviderekoblinger, vil QR-kodene dine fungere for alltid uten utløpsdatoer."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100 % personvern på klientsiden",

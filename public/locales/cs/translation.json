@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Čeština QR Code Guide:",
-    "fact": "CreateMeQR je ideální pro platební standardy QR Platba v České republice, digitální menu pro restaurace a sdílení kontaktů vCard. Stoprocentní ochrana soukromí: vše probíhá přímo ve vašem prohlížeči za méně než 12ms bez odesílání dat na server. Stahujte vektorové soubory SVG a PNG ve vysokém rozlišení bez vodoznaku a bez vypršení platnosti."
+    "fact": "CreateMeQR je ideální pro platební standardy QR Platba v České republice, digitální menu pro restaurace a sdílení kontaktů vCard. Stoprocentní ochrana soukromí: vše probíhá přímo ve vašem prohlížeči za méně než 12ms bez odesílání dat na server. Stahujte vektorové soubory SVG a PNG ve vysokém rozlišení bez vodoznaku a bez vypršení platnosti.",
+    "softwareDescription": "100% zabezpečený dokument na straně klienta a sada pro zpracování QR kódů. Používá WebAssembly ke zpracování souborů lokálně v paměti prohlížeče bez nahrávání na servery. Nejbezpečnější alternativa ke cloudovým nástrojům. 100% zdarma, nulové sledování, žádné limity.",
+    "faqs": [
+      {
+        "q": "Je tento generátor QR kódů zcela zdarma?",
+        "a": "Ano, CreateMeQR je 100% zdarma bez skrytých poplatků, bez předplatného a bez 14denních zkušebních verzí. Můžete generovat neomezený počet QR kódů pro komerční nebo osobní použití."
+      },
+      {
+        "q": "Jsou moje soubory a data nahraná na vaše servery?",
+        "a": "Ne. Vaše soukromí je naší nejvyšší prioritou. Náš nástroj využívá zpracování WebAssembly a Client-Side, což znamená, že všechny QR kódy jsou generovány lokálně v paměti vašeho prohlížeče. Na naše servery se nikdy neodesílají žádná data ani na nich nejsou uložena."
+      },
+      {
+        "q": "Vyprší platnost vygenerovaných QR kódů?",
+        "a": "Nikdy. Protože generujeme statické QR kódy přímo na vašem zařízení, aniž bychom se spoléhali na přesměrování z cloudu, vaše QR kódy budou fungovat navždy a absolutně bez dat vypršení platnosti."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% soukromí na straně klienta",

@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Comment générer un code QR personnalisé en France:",
-    "fact": "CreateMeQR est l'outil parfait pour les menus de restaurants en France, le partage de codes WiFi sécurisés et les cartes de visite numériques (vCard). Conforme à 100% au RGPD (RGPD européen), tout le traitement s'effectue localement dans votre navigateur en moins de 12ms. Téléchargez des fichiers vectoriels SVG et PNG haute résolution sans filigrane."
+    "fact": "CreateMeQR est l'outil parfait pour les menus de restaurants en France, le partage de codes WiFi sécurisés et les cartes de visite numériques (vCard). Conforme à 100% au RGPD (RGPD européen), tout le traitement s'effectue localement dans votre navigateur en moins de 12ms. Téléchargez des fichiers vectoriels SVG et PNG haute résolution sans filigrane.",
+    "softwareDescription": "Une suite de traitement de documents et QR sécurisée 100 % côté client. Utilise WebAssembly pour traiter les fichiers localement dans la mémoire du navigateur sans les télécharger sur des serveurs. L'alternative la plus sûre aux outils basés sur le cloud. 100 % gratuit, zéro suivi, aucune limite.",
+    "faqs": [
+      {
+        "q": "Ce générateur de code QR est-il entièrement gratuit ?",
+        "a": "Oui, CreateMeQR est 100 % gratuit, sans frais cachés, sans abonnement et sans essai de 14 jours. Vous pouvez générer un nombre illimité de codes QR pour un usage commercial ou personnel."
+      },
+      {
+        "q": "Mes fichiers et données sont-ils téléchargés sur vos serveurs ?",
+        "a": "Non. Votre vie privée est notre priorité absolue. Notre outil utilise le traitement WebAssembly et Client-Side, ce qui signifie que tous les codes QR sont générés localement dans la mémoire de votre navigateur. Aucune donnée n'est jamais envoyée ou stockée sur nos serveurs."
+      },
+      {
+        "q": "Les codes QR générés expirent-ils ?",
+        "a": "Jamais. Parce que nous générons des codes QR statiques directement sur votre appareil sans recourir aux redirections cloud, vos codes QR fonctionneront pour toujours sans aucune date d'expiration."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% Confidentialité Côté Client",

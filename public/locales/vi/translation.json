@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Tiếng Việt QR Code Guide:",
-    "fact": "CreateMeQR là công cụ hàng đầu tại Việt Nam cho các liên kết thanh toán VietQR, MoMo, ZaloPay, menu nhà hàng và quán cà phê, cũng như danh thiếp vCard. Xử lý 100% ngay trên trình duyệt của bạn dưới 12ms, bảo mật tuyệt đối không gửi dữ liệu lên máy chủ. Tải xuống tệp vectơ SVG và PNG chất lượng cao miễn phí vĩnh viễn không có hình mờ."
+    "fact": "CreateMeQR là công cụ hàng đầu tại Việt Nam cho các liên kết thanh toán VietQR, MoMo, ZaloPay, menu nhà hàng và quán cà phê, cũng như danh thiếp vCard. Xử lý 100% ngay trên trình duyệt của bạn dưới 12ms, bảo mật tuyệt đối không gửi dữ liệu lên máy chủ. Tải xuống tệp vectơ SVG và PNG chất lượng cao miễn phí vĩnh viễn không có hình mờ.",
+    "softwareDescription": "Bộ xử lý QR và tài liệu bảo mật 100% phía khách hàng. Sử dụng WebAssugging để xử lý tệp cục bộ trong bộ nhớ trình duyệt mà không cần tải lên bất kỳ máy chủ nào. Giải pháp thay thế an toàn nhất cho các công cụ dựa trên đám mây. Miễn phí 100%, không theo dõi, không giới hạn.",
+    "faqs": [
+      {
+        "q": "Trình tạo mã QR này có hoàn toàn miễn phí không?",
+        "a": "Có, CreateMeQR miễn phí 100%, không có phí ẩn, không đăng ký và không dùng thử 14 ngày. Bạn có thể tạo mã QR không giới hạn cho mục đích thương mại hoặc cá nhân."
+      },
+      {
+        "q": "Các tập tin và dữ liệu của tôi có được tải lên máy chủ của bạn không?",
+        "a": "Không. Quyền riêng tư của bạn là ưu tiên hàng đầu của chúng tôi. Công cụ của chúng tôi sử dụng xử lý WebAssembly và phía máy khách, nghĩa là tất cả mã QR được tạo cục bộ bên trong bộ nhớ trình duyệt của bạn. Không có dữ liệu nào được gửi đến hoặc lưu trữ trên máy chủ của chúng tôi."
+      },
+      {
+        "q": "Mã QR được tạo có hết hạn không?",
+        "a": "Không bao giờ. Vì chúng tôi tạo mã QR tĩnh trực tiếp trên thiết bị của bạn mà không dựa vào chuyển hướng đám mây nên mã QR của bạn sẽ hoạt động vĩnh viễn và hoàn toàn không có ngày hết hạn."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% quyền riêng tư phía khách hàng",

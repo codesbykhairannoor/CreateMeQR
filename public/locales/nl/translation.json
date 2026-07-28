@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Nederlands QR Code Guide:",
-    "fact": "CreateMeQR is ideaal voor iDEAL betaallinks, digitale menukaarten in de horeca in Nederland en België, en zakelijke vCard contacten. 100% AVG-proof: alle gegevens worden lokaal in uw browser verwerkt in minder dan 12 milliseconden. Download gratis vecto bestanden (SVG/PNG) in hoge resolutie zonder watermerk of vervaldatum."
+    "fact": "CreateMeQR is ideaal voor iDEAL betaallinks, digitale menukaarten in de horeca in Nederland en België, en zakelijke vCard contacten. 100% AVG-proof: alle gegevens worden lokaal in uw browser verwerkt in minder dan 12 milliseconden. Download gratis vecto bestanden (SVG/PNG) in hoge resolutie zonder watermerk of vervaldatum.",
+    "softwareDescription": "Een 100% client-side beveiligd document- en QR-verwerkingspakket. Gebruikt WebAssembly om bestanden lokaal in het browsergeheugen te verwerken zonder deze naar servers te uploaden. Het veiligste alternatief voor cloudgebaseerde tools. 100% gratis, geen tracking, geen grenzen.",
+    "faqs": [
+      {
+        "q": "Is deze QR-codegenerator volledig gratis?",
+        "a": "Ja, CreateMeQR is 100% gratis, zonder verborgen kosten, zonder abonnementen en zonder proefperiodes van 14 dagen. U kunt onbeperkt QR-codes genereren voor commercieel of persoonlijk gebruik."
+      },
+      {
+        "q": "Worden mijn bestanden en gegevens naar uw servers geüpload?",
+        "a": "Nee. Uw privacy is onze topprioriteit. Onze tool maakt gebruik van WebAssembly en Client-Side-verwerking, wat betekent dat alle QR-codes lokaal in het geheugen van uw browser worden gegenereerd. Er worden nooit gegevens verzonden naar of opgeslagen op onze servers."
+      },
+      {
+        "q": "Verlopen de gegenereerde QR-codes?",
+        "a": "Nooit. Omdat we statische QR-codes rechtstreeks op uw apparaat genereren zonder afhankelijk te zijn van cloud-omleidingen, blijven uw QR-codes voor altijd werken, zonder enige vervaldatum."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% privacy aan de klantzijde",

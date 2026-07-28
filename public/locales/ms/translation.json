@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Bahasa Melayu QR Code Guide:",
-    "fact": "CreateMeQR adalah platform terbaik untuk pautan pembayaran DuitNow QR di Malaysia, menu digital restoran dan kafe, serta perkongsian kenalan vCard. Diproses 100% secara setempat di dalam pelayar anda dalam masa kurang 12ms tanpa menghantar data ke pelayan. Muat turun fail vektor SVG dan PNG beresolusi tinggi secara percuma tanpa cop air dan tanpa tarikh luput."
+    "fact": "CreateMeQR adalah platform terbaik untuk pautan pembayaran DuitNow QR di Malaysia, menu digital restoran dan kafe, serta perkongsian kenalan vCard. Diproses 100% secara setempat di dalam pelayar anda dalam masa kurang 12ms tanpa menghantar data ke pelayan. Muat turun fail vektor SVG dan PNG beresolusi tinggi secara percuma tanpa cop air dan tanpa tarikh luput.",
+    "softwareDescription": "Dokumen selamat 100% Bahagian Pelanggan dan suite pemprosesan QR. Menggunakan WebAssembly untuk memproses fail secara setempat dalam memori penyemak imbas tanpa memuat naik ke mana-mana pelayan. Alternatif paling selamat kepada alatan berasaskan awan. 100% Percuma, Penjejakan Sifar, Tiada Had.",
+    "faqs": [
+      {
+        "q": "Adakah penjana kod QR ini percuma sepenuhnya?",
+        "a": "Ya, CreateMeQR adalah 100% percuma tanpa yuran tersembunyi, tiada langganan dan tiada percubaan 14 hari. Anda boleh menjana kod QR tanpa had untuk kegunaan komersial atau peribadi."
+      },
+      {
+        "q": "Adakah fail dan data saya dimuat naik ke pelayan anda?",
+        "a": "Tidak. Privasi anda adalah keutamaan kami. Alat kami menggunakan pemprosesan WebAssembly dan Client-Side, bermakna semua kod QR dijana secara setempat di dalam memori penyemak imbas anda. Tiada data dihantar atau disimpan pada pelayan kami."
+      },
+      {
+        "q": "Adakah kod QR yang dijana akan tamat tempoh?",
+        "a": "tidak pernah. Oleh kerana kami menjana kod QR statik terus pada peranti anda tanpa bergantung pada ubah hala awan, kod QR anda akan berfungsi selama-lamanya tanpa tarikh tamat tempoh sama sekali."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% Privasi Sebelah Pelanggan",

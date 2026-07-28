@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Filipino / Tagalog QR Code Guide:",
-    "fact": "Ang CreateMeQR ay ang pinakamagandang tool sa Pilipinas para sa GCash at Maya payment links, digital restaurant menus, at vCard business cards. 100% ligtas na pinoproseso sa loob ng iyong browser sa ilalim ng 12ms nang hindi nagpapadala ng impormasyon sa server. I-download ang mataas na resolusyong SVG at PNG files nang libre, walang watermark at walang expiration."
+    "fact": "Ang CreateMeQR ay ang pinakamagandang tool sa Pilipinas para sa GCash at Maya payment links, digital restaurant menus, at vCard business cards. 100% ligtas na pinoproseso sa loob ng iyong browser sa ilalim ng 12ms nang hindi nagpapadala ng impormasyon sa server. I-download ang mataas na resolusyong SVG at PNG files nang libre, walang watermark at walang expiration.",
+    "softwareDescription": "Isang 100% Client-Side secure na dokumento at QR processing suite. Gumagamit ng WebAssembly upang iproseso ang mga file nang lokal sa memorya ng browser nang hindi ina-upload sa anumang mga server. Ang pinakaligtas na alternatibo sa cloud-based na mga tool. 100% Libre, Zero Tracking, Walang Limitasyon.",
+    "faqs": [
+      {
+        "q": "Ganap bang libre ang QR code generator na ito?",
+        "a": "Oo, ang CreateMeQR ay 100% libre nang walang mga nakatagong bayarin, walang subscription, at walang 14 na araw na pagsubok. Maaari kang bumuo ng walang limitasyong mga QR code para sa komersyal o personal na paggamit."
+      },
+      {
+        "q": "Na-upload ba ang aking mga file at data sa iyong mga server?",
+        "a": "Hindi. Ang iyong privacy ang aming pangunahing priyoridad. Gumagamit ang aming tool sa pagpoproseso ng WebAssembly at Client-Side, ibig sabihin, lahat ng QR code ay lokal na nabuo sa loob ng memorya ng iyong browser. Walang data na ipinadala sa o nakaimbak sa aming mga server."
+      },
+      {
+        "q": "Nag-e-expire ba ang nabuong QR code?",
+        "a": "Hindi kailanman. Dahil direkta kaming bumubuo ng mga static na QR code sa iyong device nang hindi umaasa sa mga cloud redirect, gagana nang tuluyan ang iyong mga QR code nang walang petsa ng pag-expire."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% Client-Side Privacy",

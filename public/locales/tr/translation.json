@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Türkçe QR Code Guide:",
-    "fact": "CreateMeQR, Türkiye'deki restoran ve kafe menüleri, IBAN transfer bağlantıları, Wi-Fi paylaşımı ve vCard kartvizitler için en iyi ücretsiz araca sahiptir. Tüm işlemler tarayıcınızın içinde 12 milisaniyede gerçekleşir; hiçbir veri bulut sunucularına iletilmez. Filigransız ve süresiz yüksek çözünürlüklü vektörel SVG ve PNG formatlarını indirin."
+    "fact": "CreateMeQR, Türkiye'deki restoran ve kafe menüleri, IBAN transfer bağlantıları, Wi-Fi paylaşımı ve vCard kartvizitler için en iyi ücretsiz araca sahiptir. Tüm işlemler tarayıcınızın içinde 12 milisaniyede gerçekleşir; hiçbir veri bulut sunucularına iletilmez. Filigransız ve süresiz yüksek çözünürlüklü vektörel SVG ve PNG formatlarını indirin.",
+    "softwareDescription": "%100 İstemci Tarafı güvenli belge ve QR işleme paketi. Dosyaları herhangi bir sunucuya yüklemeden tarayıcı belleğinde yerel olarak işlemek için WebAssembly'ı kullanır. Bulut tabanlı araçlara en güvenli alternatif. %100 Ücretsiz, Sıfır Takip, Sınır Yok.",
+    "faqs": [
+      {
+        "q": "Bu QR kod oluşturucu tamamen ücretsiz mi?",
+        "a": "Evet, CreateMeQR hiçbir gizli ücret, abonelik ve 14 günlük deneme süresi olmadan %100 ücretsizdir. Ticari veya kişisel kullanım için sınırsız QR kodları oluşturabilirsiniz."
+      },
+      {
+        "q": "Dosyalarım ve verilerim sunucularınıza yükleniyor mu?",
+        "a": "Hayır. Gizliliğiniz bizim önceliğimizdir. Aracımız WebAssembly ve İstemci Tarafı işlemeyi kullanır; bu, tüm QR kodlarının tarayıcınızın belleğinde yerel olarak oluşturulduğu anlamına gelir. Hiçbir veri sunucularımıza gönderilmez veya sunucularımızda saklanmaz."
+      },
+      {
+        "q": "Oluşturulan QR kodlarının süresi doluyor mu?",
+        "a": "Asla. Bulut yönlendirmelerine güvenmeden doğrudan cihazınızda statik QR kodları oluşturduğumuz için, QR kodlarınız kesinlikle son kullanma tarihi olmadan sonsuza kadar çalışacaktır."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "%100 İstemci Tarafı Gizliliği",

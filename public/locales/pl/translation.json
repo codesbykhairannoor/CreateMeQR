@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Polski QR Code Guide:",
-    "fact": "CreateMeQR to doskonałe narzędzie do płatności mobilnych BLIK, cyfrowych menu w restauracjach w Polsce oraz udostępniania kontaktów biznesowych vCard. Pełna zgodność z RODO: przetwarzanie danych odbywa się w Twojej przeglądarce w czasie poniżej 12ms. Pobieraj wysokiej rozdzielczości pliki wektorowe SVG i PNG bez znaku wodnego i bez limitu czasu."
+    "fact": "CreateMeQR to doskonałe narzędzie do płatności mobilnych BLIK, cyfrowych menu w restauracjach w Polsce oraz udostępniania kontaktów biznesowych vCard. Pełna zgodność z RODO: przetwarzanie danych odbywa się w Twojej przeglądarce w czasie poniżej 12ms. Pobieraj wysokiej rozdzielczości pliki wektorowe SVG i PNG bez znaku wodnego i bez limitu czasu.",
+    "softwareDescription": "W 100% bezpieczny pakiet do przetwarzania dokumentów i kodów QR po stronie klienta. Używa WebAssembly do przetwarzania plików lokalnie w pamięci przeglądarki bez przesyłania ich na jakiekolwiek serwery. Najbezpieczniejsza alternatywa dla narzędzi opartych na chmurze. 100% za darmo, zero śledzenia, brak ograniczeń.",
+    "faqs": [
+      {
+        "q": "Czy ten generator kodów QR jest całkowicie darmowy?",
+        "a": "Tak, CreateMeQR jest w 100% darmowy, bez ukrytych opłat, bez subskrypcji i bez 14-dniowych wersji próbnych. Możesz generować nieograniczoną liczbę kodów QR do użytku komercyjnego lub osobistego."
+      },
+      {
+        "q": "Czy moje pliki i dane są przesyłane na Wasze serwery?",
+        "a": "Nie. Twoja prywatność jest naszym najwyższym priorytetem. Nasze narzędzie wykorzystuje technologię WebAssembly i przetwarzanie po stronie klienta, co oznacza, że ​​wszystkie kody QR są generowane lokalnie w pamięci przeglądarki. Żadne dane nie są nigdy wysyłane ani przechowywane na naszych serwerach."
+      },
+      {
+        "q": "Czy wygenerowane kody QR tracą ważność?",
+        "a": "Nigdy. Ponieważ generujemy statyczne kody QR bezpośrednio na Twoim urządzeniu, bez polegania na przekierowaniach w chmurze, Twoje kody QR będą działać wiecznie, bez żadnej daty ważności."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% prywatności po stronie klienta",

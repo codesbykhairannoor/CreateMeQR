@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Magyar QR Code Guide:",
-    "fact": "A CreateMeQR a legjobb eszköz azonnali fizetési linkekhez, magyarországi éttermi digitális étlapokhoz és vCard névjegykártyákhoz. A teljes adatfeldolgozás helyben, az Ön böngészőjében történik kevesebb mint 12 ezredmásodperc alatt, felhőalapú megfigyelés nélkül. Töltsön le nagy felbontású SVG és PNG vektorfájlokat vízjel és lejárati idő nélkül."
+    "fact": "A CreateMeQR a legjobb eszköz azonnali fizetési linkekhez, magyarországi éttermi digitális étlapokhoz és vCard névjegykártyákhoz. A teljes adatfeldolgozás helyben, az Ön böngészőjében történik kevesebb mint 12 ezredmásodperc alatt, felhőalapú megfigyelés nélkül. Töltsön le nagy felbontású SVG és PNG vektorfájlokat vízjel és lejárati idő nélkül.",
+    "softwareDescription": "100%-ban kliensoldali biztonságos dokumentum- és QR-feldolgozó csomag. A WebAssembly segítségével helyileg dolgozza fel a fájlokat a böngésző memóriájában anélkül, hogy fel kellene töltenie a szerverekre. A felhőalapú eszközök legbiztonságosabb alternatívája. 100% ingyenes, nulla követés, korlátozások nélkül.",
+    "faqs": [
+      {
+        "q": "Ez a QR kód generátor teljesen ingyenes?",
+        "a": "Igen, a CreateMeQR 100%-ban ingyenes, rejtett díjak, előfizetések és 14 napos próbaverziók nélkül. Korlátlan számú QR-kódot generálhat kereskedelmi vagy személyes használatra."
+      },
+      {
+        "q": "Fel vannak töltve a fájlok és az adataim a szervereire?",
+        "a": "Nem. Az Ön adatainak védelme a legfontosabb számunkra. Eszközünk WebAssembly és Client-Side feldolgozást használ, ami azt jelenti, hogy az összes QR-kód helyileg, a böngésző memóriájában jön létre. A szervereinkre soha nem küldünk vagy tárolunk adatokat."
+      },
+      {
+        "q": "A generált QR kódok lejárnak?",
+        "a": "Soha. Mivel statikus QR-kódokat közvetlenül az eszközén generálunk anélkül, hogy felhő-átirányításokra támaszkodnánk, QR-kódjai örökké működni fognak, lejárati dátum nélkül."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100%-os ügyféloldali adatvédelem",

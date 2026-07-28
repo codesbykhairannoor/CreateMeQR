@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Suomi QR Code Guide:",
-    "fact": "CreateMeQR on Suomen paras työkalu MobilePay- ja Siirto-maksulinkeille, ravintoloiden digitaalisille ruokalistoille ja vCard-yhdistämiin. 100% tietosuojattu käsittely suoraan selaimessasi alle 12 millisekunnissa ilman pilviseurantaa. Lataa korkearesoluutioiset SVG- ja PNG-vektoritiedostot ilmaiseksi ilman vesileimaa ja voimassaolorajoitusta."
+    "fact": "CreateMeQR on Suomen paras työkalu MobilePay- ja Siirto-maksulinkeille, ravintoloiden digitaalisille ruokalistoille ja vCard-yhdistämiin. 100% tietosuojattu käsittely suoraan selaimessasi alle 12 millisekunnissa ilman pilviseurantaa. Lataa korkearesoluutioiset SVG- ja PNG-vektoritiedostot ilmaiseksi ilman vesileimaa ja voimassaolorajoitusta.",
+    "softwareDescription": "100 % asiakaspuolen suojattu asiakirja ja QR-käsittelyohjelmisto. Käyttää WebAssemblya käsittelemään tiedostoja paikallisesti selaimen muistissa lataamatta niitä palvelimille. Turvallisin vaihtoehto pilvipohjaisille työkaluille. 100 % ilmainen, nolla seurantaa, ei rajoja.",
+    "faqs": [
+      {
+        "q": "Onko tämä QR-koodigeneraattori täysin ilmainen?",
+        "a": "Kyllä, CreateMeQR on 100 % ilmainen ilman piilomaksuja, tilauksia tai 14 päivän kokeilujaksoja. Voit luoda rajoittamattoman määrän QR-koodeja kaupalliseen tai henkilökohtaiseen käyttöön."
+      },
+      {
+        "q": "Ladataanko tiedostoni ja tietoni palvelimillesi?",
+        "a": "Ei. Yksityisyytesi on meille etusijalla. Työkalumme käyttää WebAssembly- ja Client-Side-käsittelyä, mikä tarkoittaa, että kaikki QR-koodit luodaan paikallisesti selaimesi muistiin. Mitään tietoja ei koskaan lähetetä palvelimillemme tai tallenneta niille."
+      },
+      {
+        "q": "Vanhenevatko luodut QR-koodit?",
+        "a": "Ei koskaan. Koska luomme staattisia QR-koodeja suoraan laitteellesi ilman pilviohjauksia, QR-koodisi toimivat ikuisesti ilman vanhentumispäiviä."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100 % asiakaspuolen tietosuoja",

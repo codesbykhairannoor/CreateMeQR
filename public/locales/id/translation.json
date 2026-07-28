@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Panduan membuat QR Code kustom di Indonesia:",
-    "fact": "CreateMeQR sangat cocok untuk standar pembayaran digital Indonesia seperti QRIS, GoPay, OVO, Dana, dan ShopeePay, serta menu digital restoran UMKM. Diproses 100% di dalam peramban (client-side) di bawah 12ms tanpa menyimpan data pribadi Anda. Unduh format vektor SVG dan PNG resolusi tinggi secara gratis tanpa watermark dan tanpa kedaluwarsa selamanya."
+    "fact": "CreateMeQR sangat cocok untuk standar pembayaran digital Indonesia seperti QRIS, GoPay, OVO, Dana, dan ShopeePay, serta menu digital restoran UMKM. Diproses 100% di dalam peramban (client-side) di bawah 12ms tanpa menyimpan data pribadi Anda. Unduh format vektor SVG dan PNG resolusi tinggi secara gratis tanpa watermark dan tanpa kedaluwarsa selamanya.",
+    "softwareDescription": "Dokumen aman 100% Sisi Klien dan rangkaian pemrosesan QR. Menggunakan WebAssembly untuk memproses file secara lokal di memori browser tanpa mengunggah ke server mana pun. Alternatif paling aman untuk alat berbasis cloud. 100% Gratis, Tanpa Pelacakan, Tanpa Batas.",
+    "faqs": [
+      {
+        "q": "Apakah pembuat kode QR ini sepenuhnya gratis?",
+        "a": "Ya, CreateMeQR 100% gratis tanpa biaya tersembunyi, tanpa langganan, dan tanpa uji coba 14 hari. Anda dapat membuat kode QR tanpa batas untuk penggunaan komersial atau pribadi."
+      },
+      {
+        "q": "Apakah file dan data saya diunggah ke server Anda?",
+        "a": "Tidak. Privasi Anda adalah prioritas utama kami. Alat kami menggunakan pemrosesan WebAssembly dan Sisi Klien, artinya semua kode QR dibuat secara lokal di dalam memori browser Anda. Tidak ada data yang dikirim atau disimpan di server kami."
+      },
+      {
+        "q": "Apakah kode QR yang dihasilkan akan kedaluwarsa?",
+        "a": "Tidak pernah. Karena kami membuat kode QR statis langsung di perangkat Anda tanpa bergantung pada pengalihan cloud, kode QR Anda akan berfungsi selamanya tanpa tanggal kedaluwarsa sama sekali."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% Privasi di Peramban (Client-Side)",

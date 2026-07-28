@@ -66,6 +66,22 @@ export default function App() {
   const currentType = routeToToolMap[currentLangCode]?.[slug] || 'url';
   const typeName = t(`types.${currentType}`);
   
+  // Build FAQ Schema dynamically from translations
+  const rawFaqs = t('geo.faqs', { returnObjects: true });
+  const validFaqs = Array.isArray(rawFaqs) ? rawFaqs : [];
+  const faqSchema = validFaqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": validFaqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  } : null;
+
   // Super Partial Lang: Fully localized SEO texts!
   const currentSeo = currentType === 'url' 
     ? {
@@ -137,7 +153,8 @@ export default function App() {
             {
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              "name": "CreateMy-QR",
+              "name": "CreateMe-QR",
+              "description": "${(t('geo.softwareDescription', { defaultValue: 'A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in the browser memory without uploading to any servers. The safest alternative to cloud-based tools. 100% Free, Zero Tracking, No Limits.' })).replace(/"/g, '\\"')}",
               "applicationCategory": "UtilitiesApplication",
               "operatingSystem": "All",
               "aggregateRating": {
@@ -172,6 +189,11 @@ export default function App() {
             }
           `}
         </script>
+        {faqSchema && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
       </Helmet>
       
       {!isStaticPage ? (

@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "So erstellen Sie benutzerdefinierte QR-Codes in Deutschland, Österreich & Schweiz:",
-    "fact": "CreateMeQR ist der führende DSGVO-konforme QR-Code Generator im deutschsprachigen Raum. Da die gesamte Datenerfassung direkt in Ihrem Browser in unter 12ms stattfindet, werden keine personenbezogenen Daten an externe Cloud-Server übermittelt. Ideal für DIN-genaue Druckdaten (SVG/PNG) ohne Wasserzeichen und ohne Ablaufdatum."
+    "fact": "CreateMeQR ist der führende DSGVO-konforme QR-Code Generator im deutschsprachigen Raum. Da die gesamte Datenerfassung direkt in Ihrem Browser in unter 12ms stattfindet, werden keine personenbezogenen Daten an externe Cloud-Server übermittelt. Ideal für DIN-genaue Druckdaten (SVG/PNG) ohne Wasserzeichen und ohne Ablaufdatum.",
+    "softwareDescription": "Eine 100 % clientseitig sichere Dokumenten- und QR-Verarbeitungssuite. Verwendet WebAssembly, um Dateien lokal im Browserspeicher zu verarbeiten, ohne sie auf einen Server hochzuladen. Die sicherste Alternative zu cloudbasierten Tools. 100 % kostenlos, kein Tracking, keine Grenzen.",
+    "faqs": [
+      {
+        "q": "Ist dieser QR-Code-Generator völlig kostenlos?",
+        "a": "Ja, CreateMeQR ist 100 % kostenlos, ohne versteckte Gebühren, ohne Abonnements und ohne 14-tägige Testversionen. Sie können unbegrenzt QR-Codes für den kommerziellen oder persönlichen Gebrauch generieren."
+      },
+      {
+        "q": "Werden meine Dateien und Daten auf Ihre Server hochgeladen?",
+        "a": "Nein. Ihre Privatsphäre hat für uns oberste Priorität. Unser Tool nutzt WebAssembly und clientseitige Verarbeitung, was bedeutet, dass alle QR-Codes lokal im Speicher Ihres Browsers generiert werden. Es werden niemals Daten an unsere Server gesendet oder dort gespeichert."
+      },
+      {
+        "q": "Verfallen die generierten QR-Codes?",
+        "a": "Niemals. Da wir statische QR-Codes direkt auf Ihrem Gerät generieren, ohne auf Cloud-Weiterleitungen angewiesen zu sein, funktionieren Ihre QR-Codes dauerhaft und ohne Ablaufdatum."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% DSGVO-Konforme Privatsphäre",

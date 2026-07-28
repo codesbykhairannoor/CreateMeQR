@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Italiano QR Code Guide:",
-    "fact": "CreateMeQR è la soluzione ideale per menu digitali di ristoranti e pizzerie in Italia, condivisione Wi-Fi in hotel e biglietti da visita digitali (vCard). Conforme al 100% al GDPR europeo: l'elaborazione avviene localmente nel tuo browser in meno di 12ms. Scarica file vettoriali SVG e PNG ad alta risoluzione gratis per sempre, senza filigrana né scadenza."
+    "fact": "CreateMeQR è la soluzione ideale per menu digitali di ristoranti e pizzerie in Italia, condivisione Wi-Fi in hotel e biglietti da visita digitali (vCard). Conforme al 100% al GDPR europeo: l'elaborazione avviene localmente nel tuo browser in meno di 12ms. Scarica file vettoriali SVG e PNG ad alta risoluzione gratis per sempre, senza filigrana né scadenza.",
+    "softwareDescription": "Una suite di elaborazione di documenti e QR sicura al 100% lato client. Utilizza WebAssembly per elaborare i file localmente nella memoria del browser senza caricarli su alcun server. L'alternativa più sicura agli strumenti basati su cloud. 100% gratuito, tracciamento zero, nessun limite.",
+    "faqs": [
+      {
+        "q": "Questo generatore di codici QR è completamente gratuito?",
+        "a": "Sì, CreateMeQR è gratuito al 100%, senza costi nascosti, abbonamenti e prove di 14 giorni. Puoi generare codici QR illimitati per uso commerciale o personale."
+      },
+      {
+        "q": "I miei file e dati vengono caricati sui vostri server?",
+        "a": "No. La tua privacy è la nostra massima priorità. Il nostro strumento utilizza WebAssembly e l'elaborazione lato client, il che significa che tutti i codici QR vengono generati localmente nella memoria del browser. Nessun dato viene mai inviato o archiviato sui nostri server."
+      },
+      {
+        "q": "I codici QR generati scadono?",
+        "a": "Mai. Poiché generiamo codici QR statici direttamente sul tuo dispositivo senza fare affidamento sui reindirizzamenti nel cloud, i tuoi codici QR funzioneranno per sempre senza alcuna data di scadenza."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "Privacy lato client al 100%",

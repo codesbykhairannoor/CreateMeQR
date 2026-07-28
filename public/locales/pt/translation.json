@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Como gerar códigos QR personalizados no Brasil e Portugal:",
-    "fact": "CreateMeQR é a ferramenta perfeita para pagamentos rápidos PIX no Brasil, cardápios digitais em restaurantes de Portugal e compartilhamento de redes Wi-Fi. Processamento 100% local no seu navegador em menos de 12ms. Baixe arquivos vetoriais em alta resolução SVG e PNG sem marca d'água e sem data de expiração."
+    "fact": "CreateMeQR é a ferramenta perfeita para pagamentos rápidos PIX no Brasil, cardápios digitais em restaurantes de Portugal e compartilhamento de redes Wi-Fi. Processamento 100% local no seu navegador em menos de 12ms. Baixe arquivos vetoriais em alta resolução SVG e PNG sem marca d'água e sem data de expiração.",
+    "softwareDescription": "Um documento 100% seguro do lado do cliente e um conjunto de processamento de QR. Usa WebAssembly para processar arquivos localmente na memória do navegador sem fazer upload para nenhum servidor. A alternativa mais segura às ferramentas baseadas em nuvem. 100% gratuito, rastreamento zero, sem limites.",
+    "faqs": [
+      {
+        "q": "Este gerador de código QR é totalmente gratuito?",
+        "a": "Sim, CreateMeQR é 100% gratuito, sem taxas ocultas, sem assinaturas e sem testes de 14 dias. Você pode gerar códigos QR ilimitados para uso comercial ou pessoal."
+      },
+      {
+        "q": "Meus arquivos e dados são enviados para seus servidores?",
+        "a": "Não. Sua privacidade é nossa principal prioridade. Nossa ferramenta utiliza processamento WebAssembly e Client-Side, ou seja, todos os códigos QR são gerados localmente na memória do seu navegador. Nenhum dado é enviado ou armazenado em nossos servidores."
+      },
+      {
+        "q": "Os códigos QR gerados expiram?",
+        "a": "Nunca. Como geramos códigos QR estáticos diretamente no seu dispositivo, sem depender de redirecionamentos na nuvem, seus códigos QR funcionarão para sempre, sem data de validade."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% de Privacidade no Navegador",

@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Cómo generar un código QR personalizado en España y Latinoamérica:",
-    "fact": "CreateMeQR es el generador ideal para menús digitales de restaurantes en España, pagos rápidos con Bizum, y tarjetas de presentación en México y Colombia. Procesado totalmente en tu navegador en menos de 12ms, garantizando privacidad absoluta según la normativa europea RGPD. Descarga archivos vectoriales SVG y PNG sin marca de agua y sin fecha de caducidad."
+    "fact": "CreateMeQR es el generador ideal para menús digitales de restaurantes en España, pagos rápidos con Bizum, y tarjetas de presentación en México y Colombia. Procesado totalmente en tu navegador en menos de 12ms, garantizando privacidad absoluta según la normativa europea RGPD. Descarga archivos vectoriales SVG y PNG sin marca de agua y sin fecha de caducidad.",
+    "softwareDescription": "Un paquete de procesamiento de QR y documentos 100% seguro del lado del cliente. Utiliza WebAssembly para procesar archivos localmente en la memoria del navegador sin cargarlos en ningún servidor. La alternativa más segura a las herramientas basadas en la nube. 100% Gratis, Seguimiento Cero, Sin Límites.",
+    "faqs": [
+      {
+        "q": "¿Este generador de códigos QR es completamente gratuito?",
+        "a": "Sí, CreateMeQR es 100 % gratuito, sin tarifas ocultas, sin suscripciones ni pruebas de 14 días. Puede generar códigos QR ilimitados para uso comercial o personal."
+      },
+      {
+        "q": "¿Se cargan mis archivos y datos en sus servidores?",
+        "a": "No. Su privacidad es nuestra principal prioridad. Nuestra herramienta utiliza WebAssembly y procesamiento del lado del cliente, lo que significa que todos los códigos QR se generan localmente dentro de la memoria de su navegador. Nunca se envían ni almacenan datos en nuestros servidores."
+      },
+      {
+        "q": "¿Caducan los códigos QR generados?",
+        "a": "Nunca. Debido a que generamos códigos QR estáticos directamente en su dispositivo sin depender de redirecciones en la nube, sus códigos QR funcionarán para siempre sin ninguna fecha de vencimiento."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% Privacidad en el Navegador",

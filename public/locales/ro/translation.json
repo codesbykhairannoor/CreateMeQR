@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Română QR Code Guide:",
-    "fact": "CreateMeQR este soluția ideală pentru meniuri digitale în restaurantele din România, partajare rapidă Wi-Fi și cărți de vizită vCard. Conform 100% cu GDPR: procesarea se face local în browserul tău în mai puțin de 12ms. Descarcă fișiere vectoriale SVG și PNG de înaltă rezoluție gratuit pentru totdeauna, fără marcaj de apă și fără expirare."
+    "fact": "CreateMeQR este soluția ideală pentru meniuri digitale în restaurantele din România, partajare rapidă Wi-Fi și cărți de vizită vCard. Conform 100% cu GDPR: procesarea se face local în browserul tău în mai puțin de 12ms. Descarcă fișiere vectoriale SVG și PNG de înaltă rezoluție gratuit pentru totdeauna, fără marcaj de apă și fără expirare.",
+    "softwareDescription": "O suită de procesare QR și documente securizate 100% la nivelul clientului. Utilizează WebAssembly pentru a procesa fișiere local în memoria browserului fără a fi încărcate pe niciun server. Cea mai sigură alternativă la instrumentele bazate pe cloud. 100% gratuit, zero urmărire, fără limite.",
+    "faqs": [
+      {
+        "q": "Este acest generator de coduri QR complet gratuit?",
+        "a": "Da, CreateMeQR este 100% gratuit, fără taxe ascunse, fără abonamente și fără încercări de 14 zile. Puteți genera coduri QR nelimitate pentru uz comercial sau personal."
+      },
+      {
+        "q": "Fișierele și datele mele sunt încărcate pe serverele dvs.?",
+        "a": "Nu. Confidențialitatea dvs. este prioritatea noastră principală. Instrumentul nostru folosește procesarea WebAssembly și Client-Side, ceea ce înseamnă că toate codurile QR sunt generate local în memoria browserului dumneavoastră. Nicio dată nu este trimisă sau stocată pe serverele noastre."
+      },
+      {
+        "q": "Codurile QR generate expiră?",
+        "a": "Nu. Deoarece generăm coduri QR statice direct pe dispozitivul dvs., fără a ne baza pe redirecționări în cloud, codurile dvs. QR vor funcționa pentru totdeauna fără date de expirare."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100% confidențialitate la nivelul clientului",

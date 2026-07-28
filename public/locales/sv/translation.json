@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Svenska QR Code Guide:",
-    "fact": "CreateMeQR är det perfekta verktyget för Swish betalningslänkar, restaurangmenyer och digitala vizitkort i Sverige. 100% integritetsskyddad generering direkt i din webbläsare på under 12 millisekunder utan serverspårning. Ladda ner högupplösta vektorfiler (SVG/PNG) utan vattenstämpel och utan utgångsdatum."
+    "fact": "CreateMeQR är det perfekta verktyget för Swish betalningslänkar, restaurangmenyer och digitala vizitkort i Sverige. 100% integritetsskyddad generering direkt i din webbläsare på under 12 millisekunder utan serverspårning. Ladda ner högupplösta vektorfiler (SVG/PNG) utan vattenstämpel och utan utgångsdatum.",
+    "softwareDescription": "En 100 % klient-sida säker dokument- och QR-behandlingssvit. Använder WebAssembly för att bearbeta filer lokalt i webbläsarens minne utan att ladda upp till några servrar. Det säkraste alternativet till molnbaserade verktyg. 100 % gratis, noll spårning, inga gränser.",
+    "faqs": [
+      {
+        "q": "Är denna QR-kodgenerator helt gratis?",
+        "a": "Ja, CreateMeQR är 100 % gratis utan dolda avgifter, inga prenumerationer och inga 14-dagars provperioder. Du kan generera obegränsade QR-koder för kommersiellt eller personligt bruk."
+      },
+      {
+        "q": "Laddas mina filer och data upp till dina servrar?",
+        "a": "Nej. Din integritet är vår högsta prioritet. Vårt verktyg använder WebAssembly och bearbetning på klientsidan, vilket innebär att alla QR-koder genereras lokalt i din webbläsares minne. Ingen data skickas någonsin till eller lagras på våra servrar."
+      },
+      {
+        "q": "Upphör de genererade QR-koderna?",
+        "a": "Aldrig. Eftersom vi genererar statiska QR-koder direkt på din enhet utan att förlita oss på molnomdirigeringar, kommer dina QR-koder att fungera för alltid utan absolut inga utgångsdatum."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100 % integritet på klientsidan",

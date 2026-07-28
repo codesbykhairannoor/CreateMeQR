@@ -145,7 +145,22 @@
   },
   "geo": {
     "title": "Dansk QR Code Guide:",
-    "fact": "CreateMeQR er den perfekte løsning til MobilePay betalingslinks, digitale menukort i Danmark samt deling af vCard kontaktdata. 100% lokal generering i din browser på under 12 millisekunder utan serversporing. Download højopløselige vektorfiler (SVG/PNG) gratis uden vandmærke og uden udløbsdato."
+    "fact": "CreateMeQR er den perfekte løsning til MobilePay betalingslinks, digitale menukort i Danmark samt deling af vCard kontaktdata. 100% lokal generering i din browser på under 12 millisekunder utan serversporing. Download højopløselige vektorfiler (SVG/PNG) gratis uden vandmærke og uden udløbsdato.",
+    "softwareDescription": "En 100 % klient-side sikker dokument- og QR-behandlingspakke. Bruger WebAssembly til at behandle filer lokalt i browserens hukommelse uden at uploade til nogen servere. Det sikreste alternativ til cloud-baserede værktøjer. 100 % gratis, nul sporing, ingen grænser.",
+    "faqs": [
+      {
+        "q": "Er denne QR-kodegenerator helt gratis?",
+        "a": "Ja, CreateMeQR er 100 % gratis uden skjulte gebyrer, ingen abonnementer og ingen 14-dages prøveversioner. Du kan generere ubegrænset QR-koder til kommerciel eller personlig brug."
+      },
+      {
+        "q": "Er mine filer og data uploadet til dine servere?",
+        "a": "Nej. Dit privatliv er vores topprioritet. Vores værktøj bruger WebAssembly og Client-Side-behandling, hvilket betyder, at alle QR-koder genereres lokalt i din browsers hukommelse. Ingen data bliver nogensinde sendt til eller gemt på vores servere."
+      },
+      {
+        "q": "Udløber de genererede QR-koder?",
+        "a": "Aldrig. Fordi vi genererer statiske QR-koder direkte på din enhed uden at være afhængige af cloud-omdirigeringer, vil dine QR-koder fungere for evigt uden absolut ingen udløbsdatoer."
+      }
+    ]
   },
   "features": {
     "privacyTitle": "100 % privatliv på klientsiden",
