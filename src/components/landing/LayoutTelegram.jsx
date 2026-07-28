@@ -92,6 +92,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
           .hq-tg-grid { grid-template-columns: 1fr; }
         }
       
+        
         /* GLOBAL MOBILE FIXES */
         @media (max-width: 768px) {
           /* General Container fixes */
@@ -143,7 +144,18 @@ function LayoutTelegram({ qrType = 'telegram' }) {
           div[style*="flexDirection: 'row'"], div[style*="flex-direction: row"] {
             flex-direction: column !important;
           }
+
+          /* Phase 2: PDF, App Store, WiFi, Link In Bio fixes */
+          /* Fix grid column squeezing */
+          [class*="bento"], [class*="features"], [class*="grid"] {
+            grid-template-columns: 1fr !important;
+          }
           
+          /* Ensure Main containers stack vertically */
+          [class*="main"], .hq-li-main {
+            flex-direction: column !important;
+          }
+
           /* Ensure text wraps nicely */
           h1, h2, h3 { line-height: 1.2 !important; word-wrap: break-word; }
         }

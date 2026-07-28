@@ -51,6 +51,14 @@ function LayoutImage({ qrType = 'image' }) {
 
         .hq-img-grid {
           display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 16px;
+          margin-bottom: 40px;
+        }
+
+        @media (min-width: 768px) {
+          .hq-img-grid {
+          display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 16px;
           margin-bottom: 40px;
@@ -68,6 +76,8 @@ function LayoutImage({ qrType = 'image' }) {
           border: 1px solid var(--hq-border);
         }
         
+        }
+
         .hq-img-card.main {
           grid-column: span 2;
           grid-row: span 2;
@@ -100,6 +110,7 @@ function LayoutImage({ qrType = 'image' }) {
         }
         :global(.light) .hq-img-info { background: #fafafa; }
       
+        
         /* GLOBAL MOBILE FIXES */
         @media (max-width: 768px) {
           /* General Container fixes */
@@ -151,7 +162,18 @@ function LayoutImage({ qrType = 'image' }) {
           div[style*="flexDirection: 'row'"], div[style*="flex-direction: row"] {
             flex-direction: column !important;
           }
+
+          /* Phase 2: PDF, App Store, WiFi, Link In Bio fixes */
+          /* Fix grid column squeezing */
+          [class*="bento"], [class*="features"], [class*="grid"] {
+            grid-template-columns: 1fr !important;
+          }
           
+          /* Ensure Main containers stack vertically */
+          [class*="main"], .hq-li-main {
+            flex-direction: column !important;
+          }
+
           /* Ensure text wraps nicely */
           h1, h2, h3 { line-height: 1.2 !important; word-wrap: break-word; }
         }
@@ -175,28 +197,15 @@ function LayoutImage({ qrType = 'image' }) {
             <h2 className="font-bold tracking-tighter " style={{ fontSize: 32,  marginBottom: 16 }}>{getTranslation('featTools', 't', 1)}</h2>
             <p style={{ fontSize: 18, color: 'var(--hq-text-muted)', maxWidth: 400 }}>{getTranslation('featTools', 'd', 1)}</p>
           </div>
-          <div className="hq-img-card">
-            <div className="hq-img-overlay">
-              <span style={{ color: 'white', fontWeight: 600 }}>{getTranslation('featTools', 't', 2)}</span>
-            </div>
-            <ZoomIn size={48} color="var(--hq-text-muted)" />
+          <div className="hq-img-card" style={{ padding: 32, flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-end', textAlign: 'left' }}>
+            <ZoomIn size={48} color="var(--hq-text-muted)" style={{ marginBottom: 24 }} />
+            <h3 className="font-bold tracking-tighter" style={{ fontSize: 24, marginBottom: 12, color: 'var(--hq-text)' }}>{getTranslation('featTools', 't', 2)}</h3>
+            <p style={{ color: 'var(--hq-text-muted)', fontSize: 16 }}>{getTranslation('featTools', 'd', 2)}</p>
           </div>
-          <div className="hq-img-card">
-            <div className="hq-img-overlay">
-              <span style={{ color: 'white', fontWeight: 600 }}>{getTranslation('featTools', 't', 3)}</span>
-            </div>
-            <ImagePlus size={48} color="var(--hq-text-muted)" />
-          </div>
-        </div>
-
-        <div className="hq-img-info">
-          <div>
-            <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 8 }}>{getTranslation('featTools', 't', 2)}</h3>
-            <p style={{ color: 'var(--hq-text-muted)', fontSize: 16, maxWidth: 400 }}>{getTranslation('featTools', 'd', 2)}</p>
-          </div>
-          <div>
-            <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 8 }}>{getTranslation('featTools', 't', 3)}</h3>
-            <p style={{ color: 'var(--hq-text-muted)', fontSize: 16, maxWidth: 400 }}>{getTranslation('featTools', 'd', 3)}</p>
+          <div className="hq-img-card" style={{ padding: 32, flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-end', textAlign: 'left' }}>
+            <ImagePlus size={48} color="var(--hq-text-muted)" style={{ marginBottom: 24 }} />
+            <h3 className="font-bold tracking-tighter" style={{ fontSize: 24, marginBottom: 12, color: 'var(--hq-text)' }}>{getTranslation('featTools', 't', 3)}</h3>
+            <p style={{ color: 'var(--hq-text-muted)', fontSize: 16 }}>{getTranslation('featTools', 'd', 3)}</p>
           </div>
         </div>
 

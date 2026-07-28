@@ -74,6 +74,7 @@ function LayoutTwitter({ qrType = 'twitter' }) {
         
         .hq-tw-thread { padding-left: 32px; border-left: 2px solid var(--hq-border); margin-left: 40px; margin-top: -16px; padding-top: 16px; }
       
+        
         /* GLOBAL MOBILE FIXES */
         @media (max-width: 768px) {
           /* General Container fixes */
@@ -125,7 +126,18 @@ function LayoutTwitter({ qrType = 'twitter' }) {
           div[style*="flexDirection: 'row'"], div[style*="flex-direction: row"] {
             flex-direction: column !important;
           }
+
+          /* Phase 2: PDF, App Store, WiFi, Link In Bio fixes */
+          /* Fix grid column squeezing */
+          [class*="bento"], [class*="features"], [class*="grid"] {
+            grid-template-columns: 1fr !important;
+          }
           
+          /* Ensure Main containers stack vertically */
+          [class*="main"], .hq-li-main {
+            flex-direction: column !important;
+          }
+
           /* Ensure text wraps nicely */
           h1, h2, h3 { line-height: 1.2 !important; word-wrap: break-word; }
         }

@@ -12,8 +12,7 @@ for (const file of files) {
   const original = content;
 
   // We inject a robust mobile override CSS block INSIDE the template literal!
-  if (content.includes('</style>') && !content.includes('/* GLOBAL MOBILE FIXES */')) {
-    const mobileCSS = `
+  const mobileCSS = `
         /* GLOBAL MOBILE FIXES */
         @media (max-width: 768px) {
           /* General Container fixes */
@@ -65,21 +64,36 @@ for (const file of files) {
           div[style*="flexDirection: 'row'"], div[style*="flex-direction: row"] {
             flex-direction: column !important;
           }
+
+          /* Phase 2: PDF, App Store, WiFi, Link In Bio fixes */
+          /* Fix grid column squeezing */
+          [class*="bento"], [class*="features"], [class*="grid"] {
+            grid-template-columns: 1fr !important;
+          }
           
+          /* Ensure Main containers stack vertically */
+          [class*="main"], .hq-li-main {
+            flex-direction: column !important;
+          }
+
           /* Ensure text wraps nicely */
           h1, h2, h3 { line-height: 1.2 !important; word-wrap: break-word; }
         }
     `;
-    
-    // Replace `}`</style> with mobileCSS + `}</style>
+
+  if (content.includes('/* GLOBAL MOBILE FIXES */')) {
+    // Replace the old block
+    content = content.replace(/\/\* GLOBAL MOBILE FIXES \*\/[\s\S]*?\}\s*\}\s*\n/g, mobileCSS + '\n');
+  } else if (content.includes('</style>')) {
+    // Insert new block
     content = content.replace(/\`\s*\}\s*<\/style>/, mobileCSS + '\n      `}</style>');
   }
   
   if (content !== original) {
     fs.writeFileSync(filePath, content);
     modifiedCount++;
-    console.log(`Injected mobile CSS into ${file}`);
+    console.log(`Injected updated mobile CSS into ${file}`);
   }
 }
 
-console.log(`dY? Mobile CSS fixes injected into ${modifiedCount} files.`);
+console.log(`dY? Updated mobile CSS fixes injected into ${modifiedCount} files.`);
