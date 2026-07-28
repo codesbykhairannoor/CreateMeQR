@@ -135,6 +135,10 @@ function LayoutPDF({ qrType = 'pdf' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile PDF Fixes */
+          .hq-pdf-bento { grid-template-columns: 1fr !important; }
+          .hq-pdf-features { grid-template-columns: 1fr !important; }
         }
     
       `}</style>

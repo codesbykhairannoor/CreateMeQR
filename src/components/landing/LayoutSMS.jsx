@@ -110,7 +110,7 @@ function LayoutSMS({ qrType = 'sms' }) {
 
       <div className="hq-container">
         <div className="hq-chat-hero">
-          <div style={{ color: 'var(--hq-accent)', marginBottom: 24 }}><MessageSquare size={64} /></div>
+          <div style={{ color: 'var(--hq-accent)', marginBottom: 24, display: 'flex', justifyContent: 'center' }}><MessageSquare size={64} /></div>
           <h2 className="font-bold tracking-tighter ">{t.heroTitle} <br/>{typeName}</h2>
           <p>{t.heroSubtitle}</p>
         </div>

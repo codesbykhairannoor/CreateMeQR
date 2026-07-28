@@ -121,6 +121,15 @@ function LayoutImage({ qrType = 'image' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile Image Fixes */
+          .hq-img-card { 
+            align-items: center !important; 
+            text-align: center !important; 
+            justify-content: center !important; 
+            padding: 40px !important; 
+          }
+          .hq-img-card svg { margin-bottom: 24px !important; }
         }
     
       `}</style>
