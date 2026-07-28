@@ -43,6 +43,10 @@ async function run() {
       }
 
       let newHtml = baseHtml.replace(
+        /<html lang="en">/,
+        `<html lang="${lang}">`
+      );
+      newHtml = newHtml.replace(
         /<title>.*?<\/title>/,
         `<title>${title}</title>`
       );
@@ -53,6 +57,22 @@ async function run() {
       newHtml = newHtml.replace(
         /<meta name="description" content=".*?"\s*\/>/,
         `<meta name="description" content="${description}" />`
+      );
+      newHtml = newHtml.replace(
+        /<meta property="og:title" content=".*?"\s*\/>/,
+        `<meta property="og:title" content="${title}" />`
+      );
+      newHtml = newHtml.replace(
+        /<meta property="og:description" content=".*?"\s*\/>/,
+        `<meta property="og:description" content="${description}" />`
+      );
+      newHtml = newHtml.replace(
+        /<meta property="twitter:title" content=".*?"\s*\/>/,
+        `<meta property="twitter:title" content="${title}" />`
+      );
+      newHtml = newHtml.replace(
+        /<meta property="twitter:description" content=".*?"\s*\/>/,
+        `<meta property="twitter:description" content="${description}" />`
       );
 
       const routeDir = lang === 'en' ? 

@@ -6,8 +6,10 @@ import App from './App.jsx'
 import './index.css'
 import './i18n'
 
-// Dynamic Replacement: Remove static SEO block once React mounts
+// Dynamic Replacement: Remove static SEO blocks once React mounts
 document.getElementById('static-seo')?.remove();
+document.getElementById('seo-static-nav')?.remove();
+document.getElementById('seo-static-directory')?.remove();
 
 // Optional Global Loading State
 const LoadingScreen = () => (
