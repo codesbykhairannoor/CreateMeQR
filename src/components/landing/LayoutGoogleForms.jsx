@@ -108,21 +108,24 @@ function LayoutGoogleForms({ qrType = 'gforms' }) {
         }
       
         
-        /* GLOBAL MOBILE FIXES */
+        
+        /* GLOBAL MOBILE FIXES (Phase 3) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-container { padding: 0 16px !important; gap: 24px !important; }
           
           /* Phone/Player Mockups scaling (TikTok, Snapchat, WhatsApp, YouTube, etc.) */
-          [class*="-phone"], [class*="-player"] {
+          [class*="-phone"], [class*="-player"], [class*="-mockup"], [class*="-mock"] {
             width: 100% !important;
             max-width: 320px !important;
             height: auto !important;
-            min-height: 480px !important;
-            aspect-ratio: 9/18 !important;
+            min-height: 400px !important;
             margin: 0 auto !important;
             flex: 1 1 auto !important;
           }
+          
+          /* Ensure tall mockups stay in ratio */
+          [class*="-phone"] { aspect-ratio: 9/18 !important; }
           
           /* Specific fix for YouTube player which should be 16:9 */
           .hq-yt-player { aspect-ratio: 16/9 !important; min-height: auto !important; }
@@ -131,6 +134,8 @@ function LayoutGoogleForms({ qrType = 'gforms' }) {
           [class*="-hero"] {
             padding: 40px 0 !important;
             gap: 32px !important;
+            display: flex !important;
+            flex-direction: column !important;
           }
           
           /* Fix LinkedIn & Profile Avatars Overlap */
@@ -160,14 +165,16 @@ function LayoutGoogleForms({ qrType = 'gforms' }) {
             flex-direction: column !important;
           }
 
-          /* Phase 2: PDF, App Store, WiFi, Link In Bio fixes */
-          /* Fix grid column squeezing */
-          [class*="bento"], [class*="features"], [class*="grid"] {
-            grid-template-columns: 1fr !important;
+          /* Phase 2 & 3: PDF, App Store, WiFi, Link In Bio, Video, Audio, File fixes */
+          /* Fix grid column squeezing for ALL bento, features, and grid classes */
+          [class*="-bento"], [class*="-features"], [class*="-grid"], [class*="-row"], [class*="bento"], [class*="features"] {
+            display: flex !important;
+            flex-direction: column !important;
           }
           
-          /* Ensure Main containers stack vertically */
-          [class*="main"], .hq-li-main {
+          /* Ensure ALL Main and Wrapper containers stack vertically */
+          [class*="-main"], [class*="-wrapper"], [class*="main"] {
+            display: flex !important;
             flex-direction: column !important;
           }
 

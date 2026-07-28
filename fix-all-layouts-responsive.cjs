@@ -13,21 +13,23 @@ for (const file of files) {
 
   // We inject a robust mobile override CSS block INSIDE the template literal!
   const mobileCSS = `
-        /* GLOBAL MOBILE FIXES */
+        /* GLOBAL MOBILE FIXES (Phase 3) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-container { padding: 0 16px !important; gap: 24px !important; }
           
           /* Phone/Player Mockups scaling (TikTok, Snapchat, WhatsApp, YouTube, etc.) */
-          [class*="-phone"], [class*="-player"] {
+          [class*="-phone"], [class*="-player"], [class*="-mockup"], [class*="-mock"] {
             width: 100% !important;
             max-width: 320px !important;
             height: auto !important;
-            min-height: 480px !important;
-            aspect-ratio: 9/18 !important;
+            min-height: 400px !important;
             margin: 0 auto !important;
             flex: 1 1 auto !important;
           }
+          
+          /* Ensure tall mockups stay in ratio */
+          [class*="-phone"] { aspect-ratio: 9/18 !important; }
           
           /* Specific fix for YouTube player which should be 16:9 */
           .hq-yt-player { aspect-ratio: 16/9 !important; min-height: auto !important; }
@@ -36,6 +38,8 @@ for (const file of files) {
           [class*="-hero"] {
             padding: 40px 0 !important;
             gap: 32px !important;
+            display: flex !important;
+            flex-direction: column !important;
           }
           
           /* Fix LinkedIn & Profile Avatars Overlap */
@@ -65,14 +69,16 @@ for (const file of files) {
             flex-direction: column !important;
           }
 
-          /* Phase 2: PDF, App Store, WiFi, Link In Bio fixes */
-          /* Fix grid column squeezing */
-          [class*="bento"], [class*="features"], [class*="grid"] {
-            grid-template-columns: 1fr !important;
+          /* Phase 2 & 3: PDF, App Store, WiFi, Link In Bio, Video, Audio, File fixes */
+          /* Fix grid column squeezing for ALL bento, features, and grid classes */
+          [class*="-bento"], [class*="-features"], [class*="-grid"], [class*="-row"], [class*="bento"], [class*="features"] {
+            display: flex !important;
+            flex-direction: column !important;
           }
           
-          /* Ensure Main containers stack vertically */
-          [class*="main"], .hq-li-main {
+          /* Ensure ALL Main and Wrapper containers stack vertically */
+          [class*="-main"], [class*="-wrapper"], [class*="main"] {
+            display: flex !important;
             flex-direction: column !important;
           }
 
@@ -81,9 +87,9 @@ for (const file of files) {
         }
     `;
 
-  if (content.includes('/* GLOBAL MOBILE FIXES */')) {
+  if (content.includes('/* GLOBAL MOBILE FIXES')) {
     // Replace the old block
-    content = content.replace(/\/\* GLOBAL MOBILE FIXES \*\/[\s\S]*?\}\s*\}\s*\n/g, mobileCSS + '\n');
+    content = content.replace(/\/\* GLOBAL MOBILE FIXES[\s\S]*?\}\s*\}\s*\n/g, mobileCSS + '\n');
   } else if (content.includes('</style>')) {
     // Insert new block
     content = content.replace(/\`\s*\}\s*<\/style>/, mobileCSS + '\n      `}</style>');
@@ -96,4 +102,4 @@ for (const file of files) {
   }
 }
 
-console.log(`dY? Updated mobile CSS fixes injected into ${modifiedCount} files.`);
+console.log(`dY? Updated Phase 3 mobile CSS fixes injected into ${modifiedCount} files.`);
