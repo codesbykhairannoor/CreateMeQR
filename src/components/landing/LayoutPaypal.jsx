@@ -71,32 +71,11 @@ function LayoutPaypal({ qrType = 'paypal' }) {
           .hq-pp-checkout { grid-template-columns: 1fr; }
           .hq-pp-left { border-right: none; border-bottom: 1px solid var(--hq-border); }
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-paypal .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-paypal div.hq-li-avatar, .hq-layout-paypal div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-paypal div.hq-li-profile-info, .hq-layout-paypal div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-paypal div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-paypal h1, .hq-layout-paypal h2, .hq-layout-paypal h3, .hq-layout-paypal p {

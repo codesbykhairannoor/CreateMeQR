@@ -112,32 +112,11 @@ function LayoutGoogleReview({ qrType = 'greview' }) {
           font-weight: bold;
           font-size: 18px;
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-googlereview .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-googlereview div.hq-li-avatar, .hq-layout-googlereview div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-googlereview div.hq-li-profile-info, .hq-layout-googlereview div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-googlereview div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-googlereview h1, .hq-layout-googlereview h2, .hq-layout-googlereview h3, .hq-layout-googlereview p {

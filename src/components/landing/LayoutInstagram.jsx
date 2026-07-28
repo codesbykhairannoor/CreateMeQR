@@ -97,32 +97,11 @@ function LayoutInstagram({ qrType = 'instagram' }) {
           .hq-ig-feed { grid-template-columns: 1fr; gap: 16px; background: transparent; border: none; }
           .hq-ig-post { border: 1px solid var(--hq-border); border-radius: 16px; }
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-instagram .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-instagram div.hq-li-avatar, .hq-layout-instagram div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-instagram div.hq-li-profile-info, .hq-layout-instagram div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-instagram div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-instagram h1, .hq-layout-instagram h2, .hq-layout-instagram h3, .hq-layout-instagram p {

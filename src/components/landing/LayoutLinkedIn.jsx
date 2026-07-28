@@ -82,32 +82,11 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
         @media (max-width: 992px) {
           .hq-container { grid-template-columns: 1fr; }
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-linkedin .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-linkedin div.hq-li-avatar, .hq-layout-linkedin div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-linkedin div.hq-li-profile-info, .hq-layout-linkedin div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-linkedin div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-linkedin h1, .hq-layout-linkedin h2, .hq-layout-linkedin h3, .hq-layout-linkedin p {

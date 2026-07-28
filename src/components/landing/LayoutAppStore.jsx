@@ -97,32 +97,11 @@ function LayoutAppStore({ qrType = 'appstore' }) {
           .hq-app-stats { justify-content: center; }
           .hq-app-features { grid-template-columns: 1fr; }
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-appstore .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-appstore div.hq-li-avatar, .hq-layout-appstore div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-appstore div.hq-li-profile-info, .hq-layout-appstore div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-appstore div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-appstore h1, .hq-layout-appstore h2, .hq-layout-appstore h3, .hq-layout-appstore p {
@@ -164,33 +143,24 @@ function LayoutAppStore({ qrType = 'appstore' }) {
           </div>
         </div>
 
-        <div className="hq-app-features" style={{ textAlign: 'left' }}>
-          <div className="hq-app-feature" style={{ border: 'none', background: 'var(--hq-bg)', borderBottom: '1px solid var(--hq-border)', borderRadius: 0, paddingBottom: 32, marginBottom: 32 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
-              <div className="hq-app-f-icon" style={{ width: 80, height: 80, borderRadius: 20 }}><ShieldCheck size={40} /></div>
-              <div>
-                <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 8 }}>{translate('featTools.appstore.t1') || t.comp1Title}</h3>
-                <p style={{ fontSize: 16, margin: 0 }}>{translate('featTools.appstore.d1') || t.comp1Desc}</p>
-              </div>
-            </div>
+        <div style={{ marginTop: 60, marginBottom: 60 }}>
+          <div style={{ textAlign: 'center', marginBottom: 48 }}>
+            <h2 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(32px, 5vw, 48px)', color: 'var(--hq-text)' }}>{translate('landing.comp1Title') || 'Powerful Features'}</h2>
           </div>
-          <div className="hq-app-feature" style={{ border: 'none', background: 'var(--hq-bg)', borderBottom: '1px solid var(--hq-border)', borderRadius: 0, paddingBottom: 32, marginBottom: 32 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
-              <div className="hq-app-f-icon" style={{ width: 80, height: 80, borderRadius: 20 }}><Zap size={40} /></div>
-              <div>
-                <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 8 }}>{translate('featTools.appstore.t2') || t.comp2Title}</h3>
-                <p style={{ fontSize: 16, margin: 0 }}>{translate('featTools.appstore.d2') || t.comp2Desc}</p>
+          <div className="hq-app-features" style={{ display: 'grid', gap: 24 }}>
+            {[
+              { t: translate('featTools.appstore.t1') || t.comp1Title, d: translate('featTools.appstore.d1') || t.comp1Desc, icon: <ShieldCheck size={32} /> },
+              { t: translate('featTools.appstore.t2') || t.comp2Title, d: translate('featTools.appstore.d2') || t.comp2Desc, icon: <Zap size={32} /> },
+              { t: translate('featTools.appstore.t3') || t.comp3Title, d: translate('featTools.appstore.d3') || t.comp3Desc, icon: <Lock size={32} /> }
+            ].map((feat, i) => (
+              <div key={i} className="hq-app-feature" style={{ background: 'var(--hq-card)', padding: 40, borderRadius: 24, border: '1px solid var(--hq-border)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', transition: 'transform 0.3s' }}>
+                <div style={{ width: 64, height: 64, borderRadius: 20, background: 'var(--hq-accent-glow)', color: 'var(--hq-accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 24 }}>
+                  {feat.icon}
+                </div>
+                <h3 className="font-bold tracking-tighter" style={{ fontSize: 24, marginBottom: 12 }}>{feat.t}</h3>
+                <p style={{ color: 'var(--hq-text-muted)', fontSize: 16, lineHeight: 1.6, margin: 0 }}>{feat.d}</p>
               </div>
-            </div>
-          </div>
-          <div className="hq-app-feature" style={{ border: 'none', background: 'var(--hq-bg)', borderRadius: 0 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
-              <div className="hq-app-f-icon" style={{ width: 80, height: 80, borderRadius: 20 }}><Lock size={40} /></div>
-              <div>
-                <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 8 }}>{translate('featTools.appstore.t3') || t.comp3Title}</h3>
-                <p style={{ fontSize: 16, margin: 0 }}>{translate('featTools.appstore.d3') || t.comp3Desc}</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

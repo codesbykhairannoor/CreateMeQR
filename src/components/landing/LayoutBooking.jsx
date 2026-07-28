@@ -127,32 +127,11 @@ function LayoutBooking({ qrType = 'booking' }) {
           flex-shrink: 0;
           margin-top: 4px;
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-booking .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-booking div.hq-li-avatar, .hq-layout-booking div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-booking div.hq-li-profile-info, .hq-layout-booking div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-booking div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-booking h1, .hq-layout-booking h2, .hq-layout-booking h3, .hq-layout-booking p {

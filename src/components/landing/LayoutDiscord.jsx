@@ -87,32 +87,11 @@ function LayoutDiscord({ qrType = 'discord' }) {
           box-shadow: 0 20px 40px rgba(0,0,0,0.4);
           height: 800px;
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-discord .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-discord div.hq-li-avatar, .hq-layout-discord div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-discord div.hq-li-profile-info, .hq-layout-discord div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-discord div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-discord h1, .hq-layout-discord h2, .hq-layout-discord h3, .hq-layout-discord p {

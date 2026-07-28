@@ -92,32 +92,11 @@ function LayoutSMS({ qrType = 'sms' }) {
         }
         .hq-step-chat h4 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
         .hq-step-chat p { color: var(--hq-text-muted); }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-sms .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-sms div.hq-li-avatar, .hq-layout-sms div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-sms div.hq-li-profile-info, .hq-layout-sms div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-sms div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-sms h1, .hq-layout-sms h2, .hq-layout-sms h3, .hq-layout-sms p {

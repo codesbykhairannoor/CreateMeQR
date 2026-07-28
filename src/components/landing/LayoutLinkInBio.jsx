@@ -97,32 +97,11 @@ function LayoutLinkInBio({ qrType = 'linkinbio' }) {
         }
         
         .hq-lib-feat svg { color: var(--hq-text); }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-linkinbio .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-linkinbio div.hq-li-avatar, .hq-layout-linkinbio div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-linkinbio div.hq-li-profile-info, .hq-layout-linkinbio div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-linkinbio div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-linkinbio h1, .hq-layout-linkinbio h2, .hq-layout-linkinbio h3, .hq-layout-linkinbio p {

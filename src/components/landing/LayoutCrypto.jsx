@@ -95,32 +95,11 @@ function LayoutCrypto({ qrType = 'crypto' }) {
           .hq-cryp-features { grid-template-columns: 1fr; gap: 16px; background: transparent; border: none; }
           .hq-cryp-feature { border: 1px solid var(--hq-border); border-radius: 16px; }
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-crypto .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-crypto div.hq-li-avatar, .hq-layout-crypto div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-crypto div.hq-li-profile-info, .hq-layout-crypto div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-crypto div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-crypto h1, .hq-layout-crypto h2, .hq-layout-crypto h3, .hq-layout-crypto p {

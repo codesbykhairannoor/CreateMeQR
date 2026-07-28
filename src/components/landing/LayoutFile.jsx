@@ -114,32 +114,11 @@ function LayoutFile({ qrType = 'file' }) {
         :global(.dark) .hq-file-feat { background: #1e293b; }
 
         .hq-file-feat svg { color: var(--hq-accent); flex-shrink: 0; }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-file .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-file div.hq-li-avatar, .hq-layout-file div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-file div.hq-li-profile-info, .hq-layout-file div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-file div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-file h1, .hq-layout-file h2, .hq-layout-file h3, .hq-layout-file p {

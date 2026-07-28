@@ -136,32 +136,11 @@ function LayoutVCard({ qrType = 'vcard' }) {
         .hq-t-num { width: 48px; height: 48px; border-radius: 50%; background: var(--hq-grad); color: white; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 20px; flex-shrink: 0; }
         .hq-t-content h4 { font-size: 20px; font-weight: 700; margin-bottom: 8px; margin-top: 8px; }
         .hq-t-content p { color: var(--hq-text-muted); line-height: 1.6; }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-vcard .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-vcard div.hq-li-avatar, .hq-layout-vcard div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-vcard div.hq-li-profile-info, .hq-layout-vcard div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-vcard div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-vcard h1, .hq-layout-vcard h2, .hq-layout-vcard h3, .hq-layout-vcard p {

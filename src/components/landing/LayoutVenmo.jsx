@@ -63,33 +63,11 @@ function LayoutVenmo({ qrType = 'venmo' }) {
         
         .hq-vn-hero { text-align: center; margin-bottom: 40px; }
         .hq-vn-hero h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; margin-bottom: 16px; color: var(--hq-accent); }
-        
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-venmo .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-venmo div.hq-li-avatar, .hq-layout-venmo div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-venmo div.hq-li-profile-info, .hq-layout-venmo div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-venmo div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-venmo h1, .hq-layout-venmo h2, .hq-layout-venmo h3, .hq-layout-venmo p {

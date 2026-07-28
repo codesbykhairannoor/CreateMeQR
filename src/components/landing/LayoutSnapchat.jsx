@@ -71,32 +71,11 @@ function LayoutSnapchat({ qrType = 'snapchat' }) {
         @media (max-width: 768px) {
           .hq-sc-grid { grid-template-columns: 1fr; }
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-snapchat .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-snapchat div.hq-li-avatar, .hq-layout-snapchat div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-snapchat div.hq-li-profile-info, .hq-layout-snapchat div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-snapchat div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-snapchat h1, .hq-layout-snapchat h2, .hq-layout-snapchat h3, .hq-layout-snapchat p {

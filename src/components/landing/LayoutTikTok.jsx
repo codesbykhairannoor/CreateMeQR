@@ -76,32 +76,11 @@ function LayoutTikTok({ qrType = 'tiktok' }) {
           .hq-tk-content { text-align: center; }
           .hq-tk-feature { text-align: left; }
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-tiktok .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-tiktok div.hq-li-avatar, .hq-layout-tiktok div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-tiktok div.hq-li-profile-info, .hq-layout-tiktok div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-tiktok div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-tiktok h1, .hq-layout-tiktok h2, .hq-layout-tiktok h3, .hq-layout-tiktok p {

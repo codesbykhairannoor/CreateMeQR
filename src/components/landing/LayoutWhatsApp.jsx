@@ -107,32 +107,11 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
           .hq-wa-content p { margin: 0 auto 32px auto; }
           .hq-wa-features { grid-template-columns: 1fr; }
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-whatsapp .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-whatsapp div.hq-li-avatar, .hq-layout-whatsapp div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-whatsapp div.hq-li-profile-info, .hq-layout-whatsapp div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-whatsapp div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-whatsapp h1, .hq-layout-whatsapp h2, .hq-layout-whatsapp h3, .hq-layout-whatsapp p {

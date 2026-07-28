@@ -82,32 +82,11 @@ function LayoutSpotify({ qrType = 'spotify' }) {
           background: var(--hq-bg);
           width: 100%;
         }
-      
-        
-        
-              
-              
+
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
           /* General Container fixes */
           .hq-layout-spotify .hq-container { padding: 0 16px !important; gap: 24px !important; }
-          
-          
-          
-          
-          
-          
-
-          /* LinkedIn specific avatar overlaps */
-          .hq-layout-spotify div.hq-li-avatar, .hq-layout-spotify div[class*="-avatar"] {
-            width: 80px !important;
-            height: 80px !important;
-            top: -40px !important;
-          }
-          .hq-layout-spotify div.hq-li-profile-info, .hq-layout-spotify div[class*="-profile-info"] {
-            margin-top: 50px !important;
-          }
-          .hq-layout-spotify div.hq-li-cover { height: 100px !important; }
 
           /* Ensure text wraps correctly without horizontal scroll */
           .hq-layout-spotify h1, .hq-layout-spotify h2, .hq-layout-spotify h3, .hq-layout-spotify p {
