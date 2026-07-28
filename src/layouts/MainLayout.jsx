@@ -75,10 +75,16 @@ export default function MainLayout({ children }) {
     setSoftBannerLang(null);
     
     // Look up the current tool based on current lang and slug
-    const currentTool = routeToToolMap[currentLangCode]?.[slug] || 'url';
+    const currentTool = routeToToolMap[currentLangCode]?.[slug];
     
-    // Get the localized slug for the NEW language
-    const newSlug = localizedRoutes[lang]?.[currentTool] || '/';
+    let newSlug;
+    if (currentTool) {
+      // It's a localized tool route
+      newSlug = localizedRoutes[lang]?.[currentTool] || '/';
+    } else {
+      // It's a non-tool route (like /about, /privacy)
+      newSlug = slug;
+    }
     
     const newPrefix = lang === 'en' ? '' : `/${lang}`;
     navigate(`${newPrefix}${newSlug === '/' ? '' : newSlug}`, { replace: true });
