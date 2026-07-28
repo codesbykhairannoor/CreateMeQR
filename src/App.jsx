@@ -99,10 +99,25 @@ export default function App() {
     <MainLayout>
       <ScrollToTop />
       <Helmet>
+        <html lang={currentLangCode} />
         <title>{currentSeo.title}</title>
         <meta name="title" content={currentSeo.title} />
-        <meta name="description" content="Create custom QR codes with logo for free. Best editable QR code generator with no watermark for WiFi, vCard, Google Reviews and URL. Client-side privacy." />
+        <meta name="description" content={currentSeo.description} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        
+        {/* OpenGraph Tags */}
+        <meta property="og:title" content={currentSeo.title} />
+        <meta property="og:description" content={currentSeo.description} />
+        <meta property="og:locale" content={currentLangCode} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://www.createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${slug === '/' ? '' : slug}`} />
+        <meta property="og:site_name" content="CreateMy-QR" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={currentSeo.title} />
+        <meta name="twitter:description" content={currentSeo.description} />
+        
         <link rel="canonical" href={`https://www.createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${slug === '/' ? '' : slug}`} />
         {/* pSEO Hreflang Tags for all 30 languages */}
         <link rel="alternate" hrefLang="x-default" href={`https://www.createmy-qr.com${localizedRoutes['en']?.[currentType] === '/' ? '' : localizedRoutes['en']?.[currentType]}`} />
