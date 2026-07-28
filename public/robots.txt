@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# Welcome AI Search Engines & LLM Crawlers (Perplexity, ChatGPT Search, Claude, Gemini)
+User-agent: GPTBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot
+Allow: /
+
+# LLMs.txt for AI Agents & Search Overviews
+Allow: /llms.txt
+Allow: /llms-*.txt
+
 Sitemap: https://www.createmy-qr.com/sitemap.xml
