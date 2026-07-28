@@ -119,6 +119,14 @@ function LayoutWhatsApp({ qrType = 'whatsapp' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile Phone Fixes */
+          .hq-wa-phone-container {
+            flex: 0 0 auto !important;
+            width: 100% !important;
+            max-width: 320px !important;
+            margin: 0 auto !important;
+          }
         }
     
       `}</style>

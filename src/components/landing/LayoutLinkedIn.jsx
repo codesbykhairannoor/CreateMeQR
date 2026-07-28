@@ -94,6 +94,13 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile Profile Fixes */
+          .hq-li-cover { height: 100px !important; }
+          .hq-li-avatar { width: 80px !important; height: 80px !important; top: -40px !important; }
+          .hq-li-avatar svg { width: 40px !important; height: 40px !important; }
+          .hq-li-profile-info { margin-top: 56px !important; }
+          .hq-li-profile-info h1 { font-size: 20px !important; }
         }
     
       `}</style>

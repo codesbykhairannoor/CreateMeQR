@@ -70,6 +70,7 @@ function LayoutYouTube({ qrType = 'youtube' }) {
           position: absolute; top: 0; left: 0; right: 0; bottom: 0;
           background: linear-gradient(45deg, rgba(37,99,235,0.2) 0%, rgba(0,0,0,0) 100%);
           display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 24px;
+          padding-bottom: 80px; /* Space for progress bar */
         }
         
         .hq-yt-theater-content h2 {
@@ -113,6 +114,13 @@ function LayoutYouTube({ qrType = 'youtube' }) {
             overflow-wrap: break-word !important;
             max-width: 100% !important;
           }
+
+          /* Native Mobile Theater Fixes */
+          .hq-yt-theater { aspect-ratio: auto !important; min-height: 380px; }
+          .hq-yt-theater-content h2 { font-size: 32px !important; }
+          .hq-yt-theater-content p { font-size: 16px !important; }
+          .hq-yt-buttons { flex-direction: column; gap: 16px; align-items: flex-start; }
+          .hq-yt-controls { padding: 24px 20px 20px 20px; }
         }
     
       `}</style>
