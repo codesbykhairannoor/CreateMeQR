@@ -59,10 +59,10 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
         .hq-li-card { background: var(--hq-card); border-radius: 8px; border: 1px solid var(--hq-border); overflow: hidden; }
         
         .hq-li-cover { height: 160px; background: linear-gradient(135deg, var(--hq-border), var(--hq-accent-glow)); }
-        .hq-li-profile { padding: 0 24px 24px 24px; position: relative; }
-        .hq-li-avatar { width: 120px; height: 120px; border-radius: 50%; border: 4px solid var(--hq-card); background: var(--hq-accent); position: absolute; top: -60px; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .hq-li-profile { padding: 80px 24px 24px 24px; position: relative; }
+        .hq-li-avatar { width: 120px; height: 120px; border-radius: 50%; border: 4px solid var(--hq-card); background: var(--hq-accent); position: absolute; top: -60px; left: 24px; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         
-        .hq-li-profile-info { margin-top: 100px; }
+        .hq-li-profile-info { margin-top: 0; }
         .hq-li-profile-info h1 { font-size: 24px; font-weight: 600; margin-bottom: 4px; }
         .hq-li-profile-info p { font-size: 16px; color: var(--hq-text-muted); }
         
@@ -97,9 +97,10 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
 
           /* Native Mobile Profile Fixes */
           .hq-li-cover { height: 100px !important; }
-          .hq-li-avatar { width: 80px !important; height: 80px !important; top: -40px !important; }
+          .hq-li-profile { padding: 60px 16px 24px 16px !important; }
+          .hq-li-avatar { width: 80px !important; height: 80px !important; top: -40px !important; left: 16px !important; }
           .hq-li-avatar svg { width: 40px !important; height: 40px !important; }
-          .hq-li-profile-info { margin-top: 56px !important; }
+          .hq-li-profile-info { margin-top: 0 !important; }
           .hq-li-profile-info h1 { font-size: 20px !important; }
         }
     
