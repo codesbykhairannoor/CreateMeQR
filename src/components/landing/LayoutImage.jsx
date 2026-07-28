@@ -178,7 +178,7 @@ function LayoutImage({ qrType = 'image' }) {
         </div>
 
         <div className="hq-img-grid">
-          <div className="hq-img-card main" style={{ padding: 40, flexDirection: 'column', textAlign: 'center' }}>
+          <div className="hq-img-card main" style={{ padding: 40, display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
             <ImageIcon size={64} color="var(--hq-text-muted)" style={{ marginBottom: 24 }} />
             <h2 className="font-bold tracking-tighter " style={{ fontSize: 32,  marginBottom: 16 }}>{translate('landing.comp1Title') || 'High Quality Rendering'}</h2>
             <p style={{ fontSize: 18, color: 'var(--hq-text-muted)', maxWidth: 400 }}>{translate('landing.comp1Desc') || 'Get pristine quality images with zero compression artifacts.'}</p>

@@ -184,7 +184,7 @@ function LayoutAppStore({ qrType = 'appstore' }) {
           </div>
         </div>
 
-        <div className="hq-app-features">
+        <div className="hq-app-features" style={{ textAlign: 'left' }}>
           <div className="hq-app-feature" style={{ border: 'none', background: 'var(--hq-bg)', borderBottom: '1px solid var(--hq-border)', borderRadius: 0, paddingBottom: 32, marginBottom: 32 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
               <div className="hq-app-f-icon" style={{ width: 80, height: 80, borderRadius: 20 }}><ShieldCheck size={40} /></div>

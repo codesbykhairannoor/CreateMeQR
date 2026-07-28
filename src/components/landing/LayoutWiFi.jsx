@@ -206,12 +206,12 @@ function LayoutWiFi({ qrType = 'wifi' }) {
               </div>
               
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 32 }}>
-                <div style={{ background: 'var(--hq-card)', borderRadius: 32, padding: 48, border: '1px solid var(--hq-border)' }}>
+                <div style={{ background: 'var(--hq-card)', borderRadius: 32, padding: 48, border: '1px solid var(--hq-border)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                   <ShieldCheck size={40} style={{ color: 'var(--hq-accent)', marginBottom: 24 }} />
                   <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 16 }}>{translate('featTools.wifi.t2') || t.comp2Title}</h3>
                   <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.wifi.d2') || t.comp2Desc}</p>
                 </div>
-                <div style={{ background: 'var(--hq-card)', borderRadius: 32, padding: 48, border: '1px solid var(--hq-border)' }}>
+                <div style={{ background: 'var(--hq-card)', borderRadius: 32, padding: 48, border: '1px solid var(--hq-border)', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
                   <Lock size={40} style={{ color: 'var(--hq-accent)', marginBottom: 24 }} />
                   <h3 className="font-bold tracking-tighter " style={{ fontSize: 24,  marginBottom: 16 }}>{translate('featTools.wifi.t3') || t.comp3Title}</h3>
                   <p style={{ color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>{translate('featTools.wifi.d3') || t.comp3Desc}</p>
