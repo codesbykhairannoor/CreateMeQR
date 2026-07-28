@@ -75,6 +75,24 @@ async function run() {
         `<meta property="twitter:description" content="${description}" />`
       );
 
+      // Construct and inject static hreflang matrix
+      let hreflangMatrix = '\n    <!-- Static pSEO Hreflang Matrix -->';
+      for (const altLang of langCodes) {
+        const altSlug = routeToToolMap[altLang] ? Object.keys(routeToToolMap[altLang]).find(key => routeToToolMap[altLang][key] === toolId) || '/' : '/';
+        // Wait, routeToToolMap maps slug -> toolId. We need toolId -> slug.
+        // Let's use localizedRoutes[altLang][toolId] which maps toolId -> slug!
+        const actualAltSlug = localizedRoutes[altLang]?.[toolId] || '/';
+        const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
+        const altUrl = `https://www.createmy-qr.com${altLangPrefix}${actualAltSlug === '/' ? '' : actualAltSlug}`;
+        hreflangMatrix += `\n    <link rel="alternate" hreflang="${altLang}" href="${altUrl}" />`;
+      }
+      
+      const defaultSlug = localizedRoutes['en']?.[toolId] || '/';
+      const defaultUrl = `https://www.createmy-qr.com${defaultSlug === '/' ? '' : defaultSlug}`;
+      hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />\n`;
+
+      newHtml = newHtml.replace('</head>', hreflangMatrix + '  </head>');
+
       const routeDir = lang === 'en' ? 
         path.join(distDir, localizedSlug === '/' ? '' : localizedSlug.substring(1)) : 
         path.join(distDir, lang, localizedSlug === '/' ? '' : localizedSlug.substring(1));
