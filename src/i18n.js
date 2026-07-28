@@ -3,6 +3,9 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 
+// Preload English to prevent initial network waterfall & layout delay
+import enTranslation from '../public/locales/en/translation.json';
+
 i18n
   .use(HttpApi)
   .use(LanguageDetector)
@@ -12,6 +15,11 @@ i18n
     supportedLngs: [
       'en', 'id', 'es', 'fr', 'de', 'pt', 'zh', 'ja', 'hi', 'ko', 'ar', 'ru', 'it', 'tr', 'nl', 'pl', 'sv', 'vi', 'th', 'el', 'cs', 'da', 'fi', 'no', 'hu', 'ro', 'uk', 'ms', 'tl', 'bn'
     ],
+    resources: {
+      en: {
+        translation: enTranslation
+      }
+    },
     backend: {
       loadPath: '/locales/{{lng}}/translation.json',
     },
@@ -24,7 +32,9 @@ i18n
     },
     react: {
       useSuspense: true,
-    }
+    },
+    // We already have english bundled, so don't try to fetch it again
+    partialBundledLanguages: true
   });
 
 export default i18n;
