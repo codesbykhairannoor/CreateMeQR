@@ -59,8 +59,7 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
         .hq-li-card { background: var(--hq-card); border-radius: 8px; border: 1px solid var(--hq-border); overflow: hidden; }
         
         .hq-li-cover { height: 160px; background: linear-gradient(135deg, var(--hq-border), var(--hq-accent-glow)); }
-        .hq-li-profile { padding: 80px 24px 24px 24px; position: relative; }
-        .hq-li-avatar { width: 120px; height: 120px; border-radius: 50%; border: 4px solid var(--hq-card); background: var(--hq-accent); position: absolute; top: -60px; left: 24px; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .hq-li-profile { padding: 40px 24px 24px 24px; position: relative; }
         
         .hq-li-profile-info { margin-top: 0; }
         .hq-li-profile-info h1 { font-size: 24px; font-weight: 600; margin-bottom: 4px; }
@@ -97,9 +96,7 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
 
           /* Native Mobile Profile Fixes */
           .hq-li-cover { height: 100px !important; }
-          .hq-li-profile { padding: 60px 16px 24px 16px !important; }
-          .hq-li-avatar { width: 80px !important; height: 80px !important; top: -40px !important; left: 16px !important; }
-          .hq-li-avatar svg { width: 40px !important; height: 40px !important; }
+          .hq-li-profile { padding: 40px 16px 24px 16px !important; }
           .hq-li-profile-info { margin-top: 0 !important; }
           .hq-li-profile-info h1 { font-size: 20px !important; }
         }
@@ -111,7 +108,6 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
           <div className="hq-li-card">
             <div className="hq-li-cover"></div>
             <div className="hq-li-profile">
-              <div className="hq-li-avatar"><Briefcase size={64} /></div>
               <div className="hq-li-profile-info">
                 <h1>{t.heroTitle} for {typeName}</h1>
                 <p>{t.heroSubtitle}</p>
