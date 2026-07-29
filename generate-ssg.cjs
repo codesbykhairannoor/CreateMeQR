@@ -75,6 +75,16 @@ async function run() {
         `<meta property="twitter:description" content="${description}" />`
       );
 
+      // Determine the self-referencing canonical URL
+      const canonicalSlug = localizedRoutes[lang]?.[toolId] || '/';
+      const canonicalPrefix = lang === 'en' ? '' : '/' + lang;
+      const canonicalUrl = `https://www.createmy-qr.com${canonicalPrefix}${canonicalSlug === '/' ? '' : canonicalSlug}`;
+
+      newHtml = newHtml.replace(
+        /<link rel="canonical" href=".*?"\s*\/>/,
+        `<link rel="canonical" href="${canonicalUrl}" />`
+      );
+
       // Construct and inject static hreflang matrix
       let hreflangMatrix = '\n    <!-- Static pSEO Hreflang Matrix -->';
       for (const altLang of langCodes) {

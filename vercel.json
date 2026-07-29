@@ -1,17 +1,11 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
         {
-          "key": "X-Robots-Tag",
-          "value": "index, follow"
+          "key": "Link",
+          "value": "<https://www.createmy-qr.com/llms.txt>; rel=\"llms-txt\""
         }
       ]
     }

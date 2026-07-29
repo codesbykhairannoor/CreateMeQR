@@ -1,0 +1,122 @@
+# CreateMy-QR - Comprehensive Developer and AI Documentation
+
+> CreateMy-QR is a 100% Free, Privacy-First, Local-Processing QR Code Suite that operates entirely within the user's browser using advanced WebAssembly (WASM) and local client-side processing.
+
+## Platform Overview
+- **App Title**: Free QR Code Generator Online
+- **Tagline**: Create QR Codes with Logo & Color - No Signup, Unlimited
+- **Privacy Guarantee**: 100% Client-Side. No servers, no tracking, no 14-day trials, no scan limits. QR codes never expire.
+
+## Available QR Code Tools
+### URL / Link (ID: url)
+- Summary: Create a custom URL / Link QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Wi-Fi (ID: wifi)
+- Summary: Create a custom Wi-Fi QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### vCard (ID: vcard)
+- Summary: Create a custom vCard QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Text (ID: text)
+- Summary: Create a custom Text QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Email (ID: email)
+- Summary: Create a custom Email QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Phone (ID: phone)
+- Summary: Create a custom Phone QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### SMS (ID: sms)
+- Summary: Create a custom SMS QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Location (ID: location)
+- Summary: Create a custom Location QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Event (ID: event)
+- Summary: Create a custom Event QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### WhatsApp (ID: whatsapp)
+- Summary: Create a custom WhatsApp QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### YouTube (ID: youtube)
+- Summary: Create a custom YouTube QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Instagram (ID: instagram)
+- Summary: Create a custom Instagram QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Crypto (ID: crypto)
+- Summary: Create a custom Crypto QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### App Store (ID: appstore)
+- Summary: Create a custom App Store QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Facebook (ID: facebook)
+- Summary: Create a custom Facebook QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### X (Twitter) (ID: twitter)
+- Summary: Create a custom X (Twitter) QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### TikTok (ID: tiktok)
+- Summary: Create a custom TikTok QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### LinkedIn (ID: linkedin)
+- Summary: Create a custom LinkedIn QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Telegram (ID: telegram)
+- Summary: Create a custom Telegram QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Snapchat (ID: snapchat)
+- Summary: Create a custom Snapchat QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Discord (ID: discord)
+- Summary: Create a custom Discord QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Spotify (ID: spotify)
+- Summary: Create a custom Spotify QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### PayPal (ID: paypal)
+- Summary: Create a custom PayPal QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Venmo (ID: venmo)
+- Summary: Create a custom Venmo QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### PDF (ID: pdf)
+- Summary: Create a custom PDF QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Google Forms (ID: gforms)
+- Summary: Create a custom Google Forms QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Google Review (ID: greview)
+- Summary: Create a custom Google Review QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Image (ID: image)
+- Summary: Create a custom Image QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Link in Bio (ID: linkinbio)
+- Summary: Create a custom Link in Bio QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Video (ID: video)
+- Summary: Create a custom Video QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Audio (ID: audio)
+- Summary: Create a custom Audio QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Amazon (ID: amazon)
+- Summary: Create a custom Amazon QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### Booking (ID: booking)
+- Summary: Create a custom Booking QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+### File (ID: file)
+- Summary: Create a custom File QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+
+## Advanced Technical FAQs
+**Q: undefined**
+A: undefined
+
+**Q: undefined**
+A: undefined
+
+**Q: undefined**
+A: undefined
+
