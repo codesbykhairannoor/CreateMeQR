@@ -32,7 +32,7 @@ async function run() {
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
 
   // Also include static routes manually
-  const staticRoutes = ['/about', '/privacy', '/terms', '/compare'];
+  const staticRoutes = ['/about', '/privacy', '/terms', '/contact', '/compare', '/barcode-generator', '/scan-qr'];
   
   // 1. Generate URLs for all Tools across all Languages
   for (const toolId of toolIds) {

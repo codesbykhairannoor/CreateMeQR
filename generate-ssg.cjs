@@ -116,6 +116,56 @@ async function run() {
     }
   }
 
+  const staticRoutes = [
+    { path: '/about', title: 'About CreateMy-QR', desc: 'Learn more about CreateMy-QR.' },
+    { path: '/privacy', title: 'Privacy Policy - CreateMy-QR', desc: 'Read our privacy policy.' },
+    { path: '/terms', title: 'Terms of Service - CreateMy-QR', desc: 'Read our terms of service.' },
+    { path: '/contact', title: 'Contact Us - CreateMy-QR', desc: 'Contact the CreateMy-QR team.' },
+    { path: '/compare', title: 'Compare Plans - CreateMy-QR', desc: 'Compare our free features.' },
+    { path: '/barcode-generator', title: 'Free Barcode Generator', desc: 'Generate barcodes instantly.' },
+    { path: '/scan-qr', title: 'Scan QR Code Online', desc: 'Scan QR codes directly from your browser.' }
+  ];
+
+  console.log('dYs? Starting Static Site Generation for static pages...');
+
+  for (const lang of langCodes) {
+    for (const routeObj of staticRoutes) {
+      const { path: routePath, title, desc } = routeObj;
+      let newHtml = baseHtml.replace(/<html lang="en">/, `<html lang="${lang}">`);
+      newHtml = newHtml.replace(/<title>.*?<\/title>/, `<title>${title}</title>`);
+      newHtml = newHtml.replace(/<meta name="title" content=".*?"\s*\/>/, `<meta name="title" content="${title}" />`);
+      newHtml = newHtml.replace(/<meta name="description" content=".*?"\s*\/>/, `<meta name="description" content="${desc}" />`);
+      newHtml = newHtml.replace(/<meta property="og:title" content=".*?"\s*\/>/, `<meta property="og:title" content="${title}" />`);
+      newHtml = newHtml.replace(/<meta property="og:description" content=".*?"\s*\/>/, `<meta property="og:description" content="${desc}" />`);
+      newHtml = newHtml.replace(/<meta property="twitter:title" content=".*?"\s*\/>/, `<meta property="twitter:title" content="${title}" />`);
+      newHtml = newHtml.replace(/<meta property="twitter:description" content=".*?"\s*\/>/, `<meta property="twitter:description" content="${desc}" />`);
+
+      const canonicalPrefix = lang === 'en' ? '' : '/' + lang;
+      const canonicalUrl = `https://www.createmy-qr.com${canonicalPrefix}${routePath}`;
+      newHtml = newHtml.replace(/<link rel="canonical" href=".*?"\s*\/>/, `<link rel="canonical" href="${canonicalUrl}" />`);
+
+      let hreflangMatrix = '\n    <!-- Static pSEO Hreflang Matrix -->';
+      for (const altLang of langCodes) {
+        const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
+        const altUrl = `https://www.createmy-qr.com${altLangPrefix}${routePath}`;
+        hreflangMatrix += `\n    <link rel="alternate" hreflang="${altLang}" href="${altUrl}" />`;
+      }
+      const defaultUrl = `https://www.createmy-qr.com${routePath}`;
+      hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />\n`;
+      newHtml = newHtml.replace('</head>', hreflangMatrix + '  </head>');
+
+      const routeDir = lang === 'en' 
+        ? path.join(distDir, routePath.substring(1)) 
+        : path.join(distDir, lang, routePath.substring(1));
+      
+      if (!fs.existsSync(routeDir)) {
+        fs.mkdirSync(routeDir, { recursive: true });
+      }
+      fs.writeFileSync(path.join(routeDir, 'index.html'), newHtml);
+      generatedCount++;
+    }
+  }
+
   console.log(`dY? SSG Complete! Generated ${generatedCount} statically optimized HTML files for Googlebot.`);
 }
 

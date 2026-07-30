@@ -11,6 +11,7 @@ import TermsOfService from './pages/TermsOfService';
 import Compare from './pages/Compare';
 import BarcodeGenerator from './pages/BarcodeGenerator';
 import ScanQr from './pages/ScanQr';
+import Contact from './pages/Contact';
 import LandingContent from './components/LandingContent';
 import SeoArticle from './components/SeoArticle';
 import { PSEO_ROUTES, LANGS } from './config/site';
@@ -58,10 +59,12 @@ export default function App() {
   const isPrivacy = slug === '/privacy';
   const isTerms = slug === '/terms';
   const isCompare = slug === '/compare';
+  const isContact = slug === '/contact';
+  
   const toolType = routeToToolMap[currentLangCode]?.[slug];
   const isBarcode = toolType === 'barcode' || slug === '/barcode-generator';
   const isScanQr = toolType === 'scanqr' || slug === '/scan-qr';
-  const isStaticPage = isAbout || isPrivacy || isTerms || isCompare || isBarcode || isScanQr;
+  const isStaticPage = isAbout || isPrivacy || isTerms || isCompare || isContact || isBarcode || isScanQr;
 
   const currentType = routeToToolMap[currentLangCode]?.[slug] || 'url';
   const typeName = t(`types.${currentType}`);
@@ -223,6 +226,7 @@ export default function App() {
           {isPrivacy && <PrivacyPolicy />}
           {isTerms && <TermsOfService />}
           {isCompare && <Compare />}
+          {isContact && <Contact />}
           {isBarcode && <BarcodeGenerator />}
           {isScanQr && <ScanQr />}
         </>
