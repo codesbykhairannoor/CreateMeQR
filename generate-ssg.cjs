@@ -78,7 +78,7 @@ async function run() {
       // Determine the self-referencing canonical URL
       const canonicalSlug = localizedRoutes[lang]?.[toolId] || '/';
       const canonicalPrefix = lang === 'en' ? '' : '/' + lang;
-      const canonicalUrl = `https://www.createmy-qr.com${canonicalPrefix}${canonicalSlug === '/' ? '' : canonicalSlug}`;
+      const canonicalUrl = `https://createmy-qr.com${canonicalPrefix}${canonicalSlug === '/' ? '' : canonicalSlug}`;
 
       newHtml = newHtml.replace(
         /<link rel="canonical" href=".*?"\s*\/>/,
@@ -93,12 +93,12 @@ async function run() {
         // Let's use localizedRoutes[altLang][toolId] which maps toolId -> slug!
         const actualAltSlug = localizedRoutes[altLang]?.[toolId] || '/';
         const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
-        const altUrl = `https://www.createmy-qr.com${altLangPrefix}${actualAltSlug === '/' ? '' : actualAltSlug}`;
+        const altUrl = `https://createmy-qr.com${altLangPrefix}${actualAltSlug === '/' ? '' : actualAltSlug}`;
         hreflangMatrix += `\n    <link rel="alternate" hreflang="${altLang}" href="${altUrl}" />`;
       }
       
       const defaultSlug = localizedRoutes['en']?.[toolId] || '/';
-      const defaultUrl = `https://www.createmy-qr.com${defaultSlug === '/' ? '' : defaultSlug}`;
+      const defaultUrl = `https://createmy-qr.com${defaultSlug === '/' ? '' : defaultSlug}`;
       hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />\n`;
 
       newHtml = newHtml.replace('</head>', hreflangMatrix + '  </head>');
@@ -141,16 +141,16 @@ async function run() {
       newHtml = newHtml.replace(/<meta property="twitter:description" content=".*?"\s*\/>/, `<meta property="twitter:description" content="${desc}" />`);
 
       const canonicalPrefix = lang === 'en' ? '' : '/' + lang;
-      const canonicalUrl = `https://www.createmy-qr.com${canonicalPrefix}${routePath}`;
+      const canonicalUrl = `https://createmy-qr.com${canonicalPrefix}${routePath}`;
       newHtml = newHtml.replace(/<link rel="canonical" href=".*?"\s*\/>/, `<link rel="canonical" href="${canonicalUrl}" />`);
 
       let hreflangMatrix = '\n    <!-- Static pSEO Hreflang Matrix -->';
       for (const altLang of langCodes) {
         const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
-        const altUrl = `https://www.createmy-qr.com${altLangPrefix}${routePath}`;
+        const altUrl = `https://createmy-qr.com${altLangPrefix}${routePath}`;
         hreflangMatrix += `\n    <link rel="alternate" hreflang="${altLang}" href="${altUrl}" />`;
       }
-      const defaultUrl = `https://www.createmy-qr.com${routePath}`;
+      const defaultUrl = `https://createmy-qr.com${routePath}`;
       hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />\n`;
       newHtml = newHtml.replace('</head>', hreflangMatrix + '  </head>');
 

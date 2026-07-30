@@ -113,7 +113,7 @@ export default function App() {
         <meta property="og:description" content={currentSeo.description} />
         <meta property="og:locale" content={currentLangCode} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://www.createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${slug === '/' ? '' : slug}`} />
+        <meta property="og:url" content={`https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${slug === '/' ? '' : slug}`} />
         <meta property="og:site_name" content="CreateMy-QR" />
         
         {/* Twitter Card Tags */}
@@ -121,22 +121,22 @@ export default function App() {
         <meta name="twitter:title" content={currentSeo.title} />
         <meta name="twitter:description" content={currentSeo.description} />
         
-        <link rel="canonical" href={`https://www.createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${slug === '/' ? '' : slug}`} />
+        <link rel="canonical" href={`https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${slug === '/' ? '' : slug}`} />
         {/* pSEO Hreflang Tags for all 30 languages */}
-        <link rel="alternate" hrefLang="x-default" href={`https://www.createmy-qr.com${localizedRoutes['en']?.[currentType] === '/' ? '' : localizedRoutes['en']?.[currentType]}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://createmy-qr.com${localizedRoutes['en']?.[currentType] === '/' ? '' : localizedRoutes['en']?.[currentType]}`} />
         {LANGS.map(lang => {
           const lSlug = localizedRoutes[lang.code]?.[currentType] || '/';
-          const href = `https://www.createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${lSlug === '/' ? '' : lSlug}`;
+          const href = `https://createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${lSlug === '/' ? '' : lSlug}`;
           return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
         })}
         <meta name="keywords" content={t('seoKeywords')} />
         
         {/* Bidirectional Hreflang Matrix for 30 Languages */}
         {LANGS.map(lang => {
-          const href = `https://www.createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
+          const href = `https://createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
           return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
         })}
-        <link rel="alternate" hrefLang="x-default" href={`https://www.createmy-qr.com${slug === '/' ? '' : slug}`} />
+        <link rel="alternate" hrefLang="x-default" href={`https://createmy-qr.com${slug === '/' ? '' : slug}`} />
         
         <script type="application/ld+json">
           {`
@@ -197,12 +197,12 @@ export default function App() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://www.createmy-qr.com/"
+                "item": "https://createmy-qr.com/"
               },{
                 "@type": "ListItem",
                 "position": 2,
                 "name": "${currentSeo.h1Title}",
-                "item": "https://www.createmy-qr.com${location.pathname}"
+                "item": "https://createmy-qr.com${location.pathname}"
               }]
             }
           `}

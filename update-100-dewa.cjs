@@ -61,12 +61,12 @@ const newJsonLd = `{
       "@graph": [
         {
           "@type": "Organization",
-          "@id": "https://www.createmy-qr.com/#organization",
+          "@id": "https://createmy-qr.com/#organization",
           "name": "CreateMy-QR Technologies",
-          "url": "https://www.createmy-qr.com/",
+          "url": "https://createmy-qr.com/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.createmy-qr.com/logoqr.png",
+            "url": "https://createmy-qr.com/logoqr.png",
             "width": 512,
             "height": 512
           },
@@ -86,13 +86,13 @@ const newJsonLd = `{
         },
         {
           "@type": "WebApplication",
-          "@id": "https://www.createmy-qr.com/#webapp",
+          "@id": "https://createmy-qr.com/#webapp",
           "name": "CreateMy-QR",
-          "url": "https://www.createmy-qr.com/",
+          "url": "https://createmy-qr.com/",
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "All",
-          "author": { "@id": "https://www.createmy-qr.com/#organization" },
-          "publisher": { "@id": "https://www.createmy-qr.com/#organization" },
+          "author": { "@id": "https://createmy-qr.com/#organization" },
+          "publisher": { "@id": "https://createmy-qr.com/#organization" },
           "offers": {
             "@type": "Offer",
             "price": "0",
@@ -105,9 +105,9 @@ const newJsonLd = `{
           "name": "CreateMy-QR - Editable QR Code Generator",
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "Web Browser, Any",
-          "url": "https://www.createmy-qr.com",
-          "author": { "@id": "https://www.createmy-qr.com/#organization" },
-          "publisher": { "@id": "https://www.createmy-qr.com/#organization" },
+          "url": "https://createmy-qr.com",
+          "author": { "@id": "https://createmy-qr.com/#organization" },
+          "publisher": { "@id": "https://createmy-qr.com/#organization" },
           "offers": {
             "@type": "Offer",
             "price": "0",
@@ -232,7 +232,7 @@ assert(
 );
 
 assert(
-  html.includes('"@id": "https://www.createmy-qr.com/#organization"') && html.includes('"knowsAbout"'),
+  html.includes('"@id": "https://createmy-qr.com/#organization"') && html.includes('"knowsAbout"'),
   'E-E-A-T Entity-Identity Graph Schema',
   'Found top-level Organization @id linking author and publisher across web app graph'
 );`;

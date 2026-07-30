@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://www.createmy-qr.com';
+const DOMAIN = 'https://createmy-qr.com';
 
 async function run() {
   console.log("Reading localizedRoutes.js...");

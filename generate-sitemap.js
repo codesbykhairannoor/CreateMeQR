@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 const toolKeys = Object.values(PSEO_ROUTES);
 const langCodes = LANGS.map(l => l.code);
 
-const DOMAIN = 'https://www.createmy-qr.com';
+const DOMAIN = 'https://createmy-qr.com';
 const currentDate = new Date().toISOString().split('T')[0];
 
 let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';

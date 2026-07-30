@@ -17,4 +17,4 @@ Allow: /
 Allow: /llms.txt
 Allow: /llms-*.txt
 
-Sitemap: https://www.createmy-qr.com/sitemap.xml
+Sitemap: https://createmy-qr.com/sitemap.xml

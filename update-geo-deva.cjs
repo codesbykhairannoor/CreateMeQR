@@ -16,8 +16,8 @@ const newSchema = `"description": "Free online custom QR code generator to creat
           "author": {
             "@type": "Organization",
             "name": "CreateMy-QR Technologies",
-            "url": "https://www.createmy-qr.com/",
-            "logo": "https://www.createmy-qr.com/logoqr.png",
+            "url": "https://createmy-qr.com/",
+            "logo": "https://createmy-qr.com/logoqr.png",
             "sameAs": [
               "https://github.com/codesbykhairannoor/CreateMeQR",
               "https://twitter.com/createmyqr",
@@ -29,7 +29,7 @@ const newSchema = `"description": "Free online custom QR code generator to creat
             "name": "CreateMy-QR Technologies",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://www.createmy-qr.com/logoqr.png"
+              "url": "https://createmy-qr.com/logoqr.png"
             }
           }
         },`;

@@ -329,13 +329,13 @@ const standaloneSchemas = `
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "CreateMy-QR Technologies",
-      "url": "https://www.createmy-qr.com/",
-      "logo": "https://www.createmy-qr.com/logoqr.png",
+      "url": "https://createmy-qr.com/",
+      "logo": "https://createmy-qr.com/logoqr.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer support",
         "email": "support@createmy-qr.com",
-        "url": "https://www.createmy-qr.com/contact"
+        "url": "https://createmy-qr.com/contact"
       }
     }
     </script>

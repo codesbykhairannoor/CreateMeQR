@@ -52,15 +52,15 @@ const newHandleTypeChange = `  const handleTypeChangeRoute = (newType) => {
 content = content.replace(oldHandleTypeChange, newHandleTypeChange);
 
 // 4. Inject hreflang into <Helmet>
-// Find: <link rel="canonical" href={`https://www.createmy-qr.com${slug === '/' ? '' : slug}`} />
+// Find: <link rel="canonical" href={`https://createmy-qr.com${slug === '/' ? '' : slug}`} />
 const oldCanonical = /<link rel="canonical"[^>]+>/;
 if (content.match(oldCanonical) && !content.includes("hreflang=")) {
-  const newCanonicalWithHreflang = `<link rel="canonical" href={\`https://www.createmy-qr.com\${currentLangCode === 'en' ? '' : '/' + currentLangCode}\${slug === '/' ? '' : slug}\`} />
+  const newCanonicalWithHreflang = `<link rel="canonical" href={\`https://createmy-qr.com\${currentLangCode === 'en' ? '' : '/' + currentLangCode}\${slug === '/' ? '' : slug}\`} />
         {/* pSEO Hreflang Tags for all 30 languages */}
-        <link rel="alternate" hrefLang="x-default" href={\`https://www.createmy-qr.com\${localizedRoutes['en']?.[currentType] === '/' ? '' : localizedRoutes['en']?.[currentType]}\`} />
+        <link rel="alternate" hrefLang="x-default" href={\`https://createmy-qr.com\${localizedRoutes['en']?.[currentType] === '/' ? '' : localizedRoutes['en']?.[currentType]}\`} />
         {LANGS.map(lang => {
           const lSlug = localizedRoutes[lang.code]?.[currentType] || '/';
-          const href = \`https://www.createmy-qr.com\${lang.code === 'en' ? '' : '/' + lang.code}\${lSlug === '/' ? '' : lSlug}\`;
+          const href = \`https://createmy-qr.com\${lang.code === 'en' ? '' : '/' + lang.code}\${lSlug === '/' ? '' : lSlug}\`;
           return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
         })}`;
         

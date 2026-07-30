@@ -27,7 +27,7 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
     let dataString = '';
 
     if (qrType === 'url') {
-      dataString = qrData.url || 'https://www.createmy-qr.com';
+      dataString = qrData.url || 'https://createmy-qr.com';
     } else if (qrType === 'wifi') {
       const ssid = qrData.ssid || '';
       const pass = qrData.password || '';
@@ -101,7 +101,7 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
       const cleanUser = (qrData.venmoInput || '').replace(/^@/, '');
       dataString = `venmo://paycharge?txn=pay&recipients=${cleanUser}`;
     } else if (['pdf', 'gforms', 'greview', 'image', 'linkinbio', 'video', 'audio', 'amazon', 'booking', 'file'].includes(qrType)) {
-      dataString = qrData[`${qrType}Input`] || 'https://www.createmy-qr.com';
+      dataString = qrData[`${qrType}Input`] || 'https://createmy-qr.com';
     }
 
     qrCode.update({

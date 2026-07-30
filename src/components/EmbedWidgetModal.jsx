@@ -8,7 +8,7 @@ export default function EmbedWidgetModal({ onClose }) {
   const [anchorText, setAnchorText] = useState('CreateMy-QR Generator');
 
   const langPrefix = i18n.language && i18n.language !== 'en' ? `/${i18n.language}` : '';
-  const targetUrl = `https://www.createmy-qr.com${langPrefix}`;
+  const targetUrl = `https://createmy-qr.com${langPrefix}`;
 
   const embedCode = `<iframe src="${targetUrl}" width="100%" height="800" frameborder="0" scrolling="no" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></iframe>\n<div style="text-align: center; font-size: 11px; margin-top: 8px;">Powered by <a href="${targetUrl}" target="_blank" style="color: #2563eb; text-decoration: none;">${anchorText}</a></div>`;
 

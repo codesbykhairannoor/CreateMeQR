@@ -37,7 +37,7 @@ export default function EmbedWidgetModal({ onClose }) {
   const [anchorText, setAnchorText] = useState('CreateMy-QR Generator');
 
   const langPrefix = i18n.language && i18n.language !== 'en' ? \`/\${i18n.language}\` : '';
-  const targetUrl = \`https://www.createmy-qr.com\${langPrefix}\`;
+  const targetUrl = \`https://createmy-qr.com\${langPrefix}\`;
 
   const embedCode = \`<iframe src="\${targetUrl}" width="100%" height="800" frameborder="0" scrolling="no" style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"></iframe>\\n<div style="text-align: center; font-size: 11px; margin-top: 8px;">Powered by <a href="\${targetUrl}" target="_blank" style="color: #2563eb; text-decoration: none;">\${anchorText}</a></div>\`;
 
@@ -306,10 +306,10 @@ function App() {
         <meta name="description" content={currentSeo.description} />
         {/* Bidirectional Hreflang Matrix for 30 Languages */}
         {LANGS.map(lang => {
-          const href = \`https://www.createmy-qr.com\${lang.code === 'en' ? '' : '/' + lang.code}\${slug === '/' ? '' : slug}\`;
+          const href = \`https://createmy-qr.com\${lang.code === 'en' ? '' : '/' + lang.code}\${slug === '/' ? '' : slug}\`;
           return <link key={lang.code} rel="alternate" hreflang={lang.code} href={href} />;
         })}
-        <link rel="alternate" hreflang="x-default" href={\`https://www.createmy-qr.com\${slug === '/' ? '' : slug}\`} />
+        <link rel="alternate" hreflang="x-default" href={\`https://createmy-qr.com\${slug === '/' ? '' : slug}\`} />
         
         <script type="application/ld+json">
           {\`
@@ -348,12 +348,12 @@ function App() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://www.createmy-qr.com/"
+                "item": "https://createmy-qr.com/"
               },{
                 "@type": "ListItem",
                 "position": 2,
                 "name": "\${currentSeo.h1}",
-                "item": "https://www.createmy-qr.com\${location.pathname}"
+                "item": "https://createmy-qr.com\${location.pathname}"
               }]
             }
           \`}

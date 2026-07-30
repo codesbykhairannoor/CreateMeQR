@@ -46,7 +46,7 @@ try {
   assert(fs.existsSync(enHtmlPath), "English static HTML exists");
   
   let enHtml = fs.readFileSync(enHtmlPath, 'utf8');
-  assert(enHtml.includes('<link rel="canonical" href="https://www.createmy-qr.com/wifi-qr-code-generator" />'), "English HTML has correct self-referencing canonical");
+  assert(enHtml.includes('<link rel="canonical" href="https://createmy-qr.com/wifi-qr-code-generator" />'), "English HTML has correct self-referencing canonical");
   
   const hreflangCountEn = (enHtml.match(/hreflang=/g) || []).length;
   assert(hreflangCountEn === 31, `English HTML has exactly 31 hreflang tags (30 langs + 1 x-default). Found: ${hreflangCountEn}`);
@@ -58,7 +58,7 @@ try {
   assert(fs.existsSync(deHtmlPath), "German static HTML exists");
   
   let deHtml = fs.readFileSync(deHtmlPath, 'utf8');
-  assert(deHtml.includes('<link rel="canonical" href="https://www.createmy-qr.com/de/wi-fi-kostenloser-qr-code-generator-online" />'), "German HTML has correct self-referencing canonical");
+  assert(deHtml.includes('<link rel="canonical" href="https://createmy-qr.com/de/wi-fi-kostenloser-qr-code-generator-online" />'), "German HTML has correct self-referencing canonical");
   
   const hreflangCountDe = (deHtml.match(/hreflang=/g) || []).length;
   assert(hreflangCountDe === 31, `German HTML has exactly 31 hreflang tags (30 langs + 1 x-default). Found: ${hreflangCountDe}`);

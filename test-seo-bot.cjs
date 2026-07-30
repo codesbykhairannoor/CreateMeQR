@@ -2,8 +2,8 @@ const { chromium } = require('playwright');
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  console.log('Googlebot is visiting: https://www.createmy-qr.com/id ...');
-  await page.goto('https://www.createmy-qr.com/id', { waitUntil: 'networkidle' });
+  console.log('Googlebot is visiting: https://createmy-qr.com/id ...');
+  await page.goto('https://createmy-qr.com/id', { waitUntil: 'networkidle' });
   const schemas = await page.evaluate(() => {
     const els = Array.from(document.querySelectorAll('script[type="application/ld+json"]'));
     return els.map(el => JSON.parse(el.textContent));
