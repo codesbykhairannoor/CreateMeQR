@@ -1133,5 +1133,17 @@
     "company": "Společnost",
     "privacy": "Zásady ochrany osobních údajů",
     "terms": "Podmínky služby"
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "desc": "Máte dotazy ohledně našeho bezplatného generátoru QR kódů? Potřebujete pomoci s integrací? Náš tým podpory je tu, aby vám pomohl.",
+    "email_support": "E-mailová podpora",
+    "email_desc": "Naším cílem je odpovědět na všechny dotazy do 24 hodin.",
+    "community": "Společenství",
+    "community_desc": "Připojte se k naší vývojářské komunitě na GitHubu, abyste mohli nahlásit chyby nebo požádat o funkce.",
+    "open_issue": "Otevřít problém",
+    "hq": "HQ",
+    "hq_desc": "CreateMy-QR Technologies, globální vzdálený tým",
+    "availability": "K dispozici 24/7"
   }
 }

@@ -1133,5 +1133,17 @@
     "company": "Firma",
     "privacy": "Polityka prywatności",
     "terms": "Warunki świadczenia usług"
+  },
+  "contact": {
+    "title": "Skontaktuj się z nami",
+    "desc": "Masz pytania dotyczące naszego bezpłatnego generatora kodów QR? Potrzebujesz pomocy przy integracji? Nasz zespół wsparcia jest tutaj, aby Ci pomóc.",
+    "email_support": "Wsparcie e-mailowe",
+    "email_desc": "Staramy się odpowiadać na wszystkie zapytania w ciągu 24 godzin.",
+    "community": "Społeczność",
+    "community_desc": "Dołącz do naszej społeczności programistów w GitHub, aby zgłaszać błędy lub prosić o funkcje.",
+    "open_issue": "Otwórz problem",
+    "hq": "Siedziba",
+    "hq_desc": "Technologie CreateMy-QR, globalny zespół zdalny",
+    "availability": "Dostępny 24 godziny na dobę, 7 dni w tygodniu"
   }
 }

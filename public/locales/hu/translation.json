@@ -1133,5 +1133,17 @@
     "company": "Vállalat",
     "privacy": "Adatvédelmi szabályzat",
     "terms": "Szolgáltatási feltételek"
+  },
+  "contact": {
+    "title": "Lépjen kapcsolatba velünk",
+    "desc": "Kérdése van ingyenes QR kód generátorunkkal kapcsolatban? Segítségre van szüksége az integrációhoz? Ügyfélszolgálati csapatunk készen áll, hogy segítsen Önnek.",
+    "email_support": "Támogatás e-mailben",
+    "email_desc": "Célunk, hogy minden megkeresésre 24 órán belül válaszoljunk.",
+    "community": "Közösség",
+    "community_desc": "Csatlakozzon fejlesztői közösségünkhöz a GitHubon, hogy jelentse a hibákat vagy kérjen funkciókat.",
+    "open_issue": "Nyissa meg a kérdést",
+    "hq": "HQ",
+    "hq_desc": "CreateMy-QR Technologies, globális távoli csapat",
+    "availability": "24/7 elérhető"
   }
 }

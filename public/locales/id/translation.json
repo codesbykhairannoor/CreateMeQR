@@ -1133,5 +1133,17 @@
     "company": "Perusahaan",
     "privacy": "Kebijakan Privasi",
     "terms": "Ketentuan Layanan"
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "desc": "Ada pertanyaan tentang pembuat kode QR gratis kami? Butuh bantuan dengan integrasi? Tim dukungan kami siap membantu Anda.",
+    "email_support": "Dukungan Email",
+    "email_desc": "Kami bertujuan untuk menanggapi semua pertanyaan dalam waktu 24 jam.",
+    "community": "Komunitas",
+    "community_desc": "Bergabunglah dengan komunitas pengembang kami di GitHub untuk melaporkan bug atau meminta fitur.",
+    "open_issue": "Buka Masalah",
+    "hq": "markas besar",
+    "hq_desc": "Teknologi CreateMy-QR, Tim Jarak Jauh Global",
+    "availability": "Tersedia 24/7"
   }
 }

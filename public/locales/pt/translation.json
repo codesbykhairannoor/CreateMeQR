@@ -1133,5 +1133,17 @@
     "company": "Empresa",
     "privacy": "política de Privacidade",
     "terms": "Termos de Serviço"
+  },
+  "contact": {
+    "title": "Contate-nos",
+    "desc": "Tem dúvidas sobre nosso gerador de código QR gratuito? Precisa de ajuda com uma integração? Nossa equipe de suporte está aqui para ajudá-lo.",
+    "email_support": "Suporte por e-mail",
+    "email_desc": "Nosso objetivo é responder a todas as perguntas dentro de 24 horas.",
+    "community": "Comunidade",
+    "community_desc": "Junte-se à nossa comunidade de desenvolvedores no GitHub para relatar bugs ou solicitar recursos.",
+    "open_issue": "Abra um problema",
+    "hq": "Sede",
+    "hq_desc": "CreateMy-QR Technologies, equipe remota global",
+    "availability": "Disponível 24 horas por dia, 7 dias por semana"
   }
 }

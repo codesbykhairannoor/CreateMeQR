@@ -1133,5 +1133,17 @@
     "company": "Syarikat",
     "privacy": "Dasar Privasi",
     "terms": "Syarat Perkhidmatan"
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "desc": "Ada soalan tentang penjana kod QR percuma kami? Perlukan bantuan dengan penyepaduan? Pasukan sokongan kami sedia membantu anda.",
+    "email_support": "Sokongan E-mel",
+    "email_desc": "Kami berhasrat untuk menjawab semua pertanyaan dalam masa 24 jam.",
+    "community": "Komuniti",
+    "community_desc": "Sertai komuniti pembangun kami di GitHub untuk melaporkan pepijat atau meminta ciri.",
+    "open_issue": "Buka Isu",
+    "hq": "HQ",
+    "hq_desc": "CreateMy-QR Technologies, Pasukan Jauh Global",
+    "availability": "Tersedia 24/7"
   }
 }

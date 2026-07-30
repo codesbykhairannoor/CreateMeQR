@@ -1133,5 +1133,17 @@
     "company": "Entreprise",
     "privacy": "politique de confidentialité",
     "terms": "Conditions d'utilisation"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "desc": "Vous avez des questions sur notre générateur de code QR gratuit ? Besoin d'aide pour une intégration ? Notre équipe d'assistance est là pour vous aider.",
+    "email_support": "Assistance par e-mail",
+    "email_desc": "Notre objectif est de répondre à toutes les demandes dans les 24 heures.",
+    "community": "Communauté",
+    "community_desc": "Rejoignez notre communauté de développeurs sur GitHub pour signaler des bugs ou demander des fonctionnalités.",
+    "open_issue": "Ouvrir un problème",
+    "hq": "QG",
+    "hq_desc": "CreateMy-QR Technologies, équipe mondiale à distance",
+    "availability": "Disponible 24h/24 et 7j/7"
   }
 }

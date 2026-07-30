@@ -1133,5 +1133,17 @@
     "company": "Selskab",
     "privacy": "Privatlivspolitik",
     "terms": "Servicevilkår"
+  },
+  "contact": {
+    "title": "Kontakt os",
+    "desc": "Har du spørgsmål om vores gratis QR-kodegenerator? Har du brug for hjælp til en integration? Vores supportteam er her for at hjælpe dig.",
+    "email_support": "E-mail support",
+    "email_desc": "Vi bestræber os på at besvare alle henvendelser inden for 24 timer.",
+    "community": "Fællesskab",
+    "community_desc": "Deltag i vores udviklerfællesskab på GitHub for at rapportere fejl eller anmode om funktioner.",
+    "open_issue": "Åbn et nummer",
+    "hq": "HQ",
+    "hq_desc": "CreateMy-QR Technologies, Global Remote Team",
+    "availability": "Tilgængelig 24/7"
   }
 }

@@ -1133,5 +1133,17 @@
     "company": "Yritys",
     "privacy": "Tietosuojakäytäntö",
     "terms": "Palveluehdot"
+  },
+  "contact": {
+    "title": "Ota yhteyttä",
+    "desc": "Onko sinulla kysyttävää ilmaisesta QR-koodigeneraattoristamme? Tarvitsetko apua integraatiossa? Tukitiimimme on täällä auttamaan sinua.",
+    "email_support": "Sähköpostituki",
+    "email_desc": "Pyrimme vastaamaan kaikkiin tiedusteluihin 24 tunnin sisällä.",
+    "community": "yhteisö",
+    "community_desc": "Liity GitHubin kehittäjäyhteisöömme ilmoittaaksesi virheistä tai pyytääksesi ominaisuuksia.",
+    "open_issue": "Avaa ongelma",
+    "hq": "HQ",
+    "hq_desc": "CreateMy-QR Technologies, Global Remote Team",
+    "availability": "Saatavilla 24/7"
   }
 }

@@ -1133,5 +1133,17 @@
     "company": "Şirket",
     "privacy": "Gizlilik Politikası",
     "terms": "Hizmet Şartları"
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "desc": "Ücretsiz QR kod oluşturucumuz hakkında sorularınız mı var? Entegrasyon konusunda yardıma mı ihtiyacınız var? Destek ekibimiz size yardımcı olmak için burada.",
+    "email_support": "E-posta Desteği",
+    "email_desc": "Tüm sorulara 24 saat içinde yanıt vermeyi hedefliyoruz.",
+    "community": "Topluluk",
+    "community_desc": "Hataları bildirmek veya özellik istemek için GitHub'daki geliştirici topluluğumuza katılın.",
+    "open_issue": "Sayı Açın",
+    "hq": "Genel Merkez",
+    "hq_desc": "CreateMy-QR Teknolojileri, Küresel Uzak Ekip",
+    "availability": "7/24 ulaşılabilir"
   }
 }

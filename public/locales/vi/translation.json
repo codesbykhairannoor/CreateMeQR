@@ -1133,5 +1133,17 @@
     "company": "Công ty",
     "privacy": "Chính sách bảo mật",
     "terms": "Điều khoản dịch vụ"
+  },
+  "contact": {
+    "title": "Liên hệ với chúng tôi",
+    "desc": "Bạn có câu hỏi về trình tạo mã QR miễn phí của chúng tôi không? Cần trợ giúp về việc tích hợp? Nhóm hỗ trợ của chúng tôi sẵn sàng hỗ trợ bạn.",
+    "email_support": "Hỗ trợ qua email",
+    "email_desc": "Chúng tôi mong muốn trả lời mọi thắc mắc trong vòng 24 giờ.",
+    "community": "Cộng đồng",
+    "community_desc": "Tham gia cộng đồng nhà phát triển của chúng tôi trên GitHub để báo cáo lỗi hoặc yêu cầu tính năng.",
+    "open_issue": "Open an Issue",
+    "hq": "Trụ sở chính",
+    "hq_desc": "Công nghệ CreateMy-QR, Nhóm từ xa toàn cầu",
+    "availability": "Có sẵn 24/7"
   }
 }

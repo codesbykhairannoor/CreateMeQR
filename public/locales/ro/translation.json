@@ -1133,5 +1133,17 @@
     "company": "Companie",
     "privacy": "Politica de confidențialitate",
     "terms": "Termeni și condiții"
+  },
+  "contact": {
+    "title": "Contactează-ne",
+    "desc": "Aveți întrebări despre generatorul nostru gratuit de coduri QR? Ai nevoie de ajutor cu o integrare? Echipa noastră de asistență este aici pentru a vă ajuta.",
+    "email_support": "Asistență prin e-mail",
+    "email_desc": "Ne propunem să răspundem la toate întrebările în termen de 24 de ore.",
+    "community": "Comunitate",
+    "community_desc": "Alăturați-vă comunității noastre de dezvoltatori pe GitHub pentru a raporta erori sau pentru a solicita funcții.",
+    "open_issue": "Deschideți o problemă",
+    "hq": "HQ",
+    "hq_desc": "Tehnologii CreateMy-QR, echipa globală de la distanță",
+    "availability": "Disponibil 24/7"
   }
 }

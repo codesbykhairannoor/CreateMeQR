@@ -1115,5 +1115,17 @@
     "company": "Company",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "desc": "Have questions about our free QR code generator? Need help with an integration? Our support team is here to assist you.",
+    "email_support": "Email Support",
+    "email_desc": "We aim to respond to all inquiries within 24 hours.",
+    "community": "Community",
+    "community_desc": "Join our developer community on GitHub to report bugs or request features.",
+    "open_issue": "Open an Issue",
+    "hq": "HQ",
+    "hq_desc": "CreateMy-QR Technologies, Global Remote Team",
+    "availability": "Available 24/7"
   }
 }

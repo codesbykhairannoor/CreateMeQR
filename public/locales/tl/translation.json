@@ -1133,5 +1133,17 @@
     "company": "kumpanya",
     "privacy": "Patakaran sa Privacy",
     "terms": "Mga Tuntunin ng Serbisyo"
+  },
+  "contact": {
+    "title": "Makipag-ugnayan sa Amin",
+    "desc": "May mga tanong tungkol sa aming libreng QR code generator? Kailangan ng tulong sa isang pagsasama? Narito ang aming team ng suporta para tulungan ka.",
+    "email_support": "Suporta sa Email",
+    "email_desc": "Layunin naming tumugon sa lahat ng mga katanungan sa loob ng 24 na oras.",
+    "community": "Komunidad",
+    "community_desc": "Sumali sa aming komunidad ng developer sa GitHub upang mag-ulat ng mga bug o humiling ng mga feature.",
+    "open_issue": "Magbukas ng Isyu",
+    "hq": "HQ",
+    "hq_desc": "CreateMy-QR Technologies, Global Remote Team",
+    "availability": "Available 24/7"
   }
 }

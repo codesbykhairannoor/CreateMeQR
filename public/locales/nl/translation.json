@@ -1133,5 +1133,17 @@
     "company": "Bedrijf",
     "privacy": "Privacybeleid",
     "terms": "Servicevoorwaarden"
+  },
+  "contact": {
+    "title": "Neem contact met ons op",
+    "desc": "Heeft u vragen over onze gratis QR-codegenerator? Hulp nodig bij een integratie? Ons ondersteuningsteam staat klaar om u te helpen.",
+    "email_support": "E-mailondersteuning",
+    "email_desc": "Wij streven ernaar om alle vragen binnen 24 uur te beantwoorden.",
+    "community": "Gemeenschap",
+    "community_desc": "Sluit je aan bij onze ontwikkelaarscommunity op GitHub om bugs te melden of functies aan te vragen.",
+    "open_issue": "Open een probleem",
+    "hq": "Hoofdkantoor",
+    "hq_desc": "CreateMy-QR Technologies, wereldwijd team op afstand",
+    "availability": "24/7 beschikbaar"
   }
 }

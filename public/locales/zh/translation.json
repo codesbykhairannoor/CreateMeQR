@@ -1133,5 +1133,17 @@
     "company": "公司",
     "privacy": "隐私政策",
     "terms": "服务条款"
+  },
+  "contact": {
+    "title": "联系我们",
+    "desc": "对我们的免费二维码生成器有疑问吗？需要集成方面的帮助吗？我们的支持团队随时为您提供帮助。",
+    "email_support": "电子邮件支持",
+    "email_desc": "我们的目标是在 24 小时内回复所有询问。",
+    "community": "社区",
+    "community_desc": "加入我们在 GitHub 上的开发者社区来报告错误或请求功能。",
+    "open_issue": "打开问题",
+    "hq": "总部",
+    "hq_desc": "CreateMy-QR Technologies，全球远程团队",
+    "availability": "24/7 可用"
   }
 }

@@ -1133,5 +1133,17 @@
     "company": "회사",
     "privacy": "개인 정보 보호 정책",
     "terms": "서비스 약관"
+  },
+  "contact": {
+    "title": "문의하기",
+    "desc": "무료 QR 코드 생성기에 대해 질문이 있으신가요? 통합에 도움이 필요하신가요? 우리 지원팀이 당신을 도와드릴 것입니다.",
+    "email_support": "이메일 지원",
+    "email_desc": "우리는 24시간 이내에 모든 문의에 응답하는 것을 목표로 하고 있습니다.",
+    "community": "커뮤니티",
+    "community_desc": "GitHub의 개발자 커뮤니티에 가입하여 버그를 보고하거나 기능을 요청하세요.",
+    "open_issue": "이슈 열기",
+    "hq": "본부",
+    "hq_desc": "CreateMy-QR 기술, 글로벌 원격 팀",
+    "availability": "연중무휴 24시간 이용 가능"
   }
 }
