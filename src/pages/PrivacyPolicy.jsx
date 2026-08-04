@@ -18,10 +18,10 @@ export default function PrivacyPolicy() {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           
-          <h1 className="text-[clamp(44px,7vw,80px)] font-bold text-zinc-900 dark:text-white tracking-tighter mb-6 leading-[1.05]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-white tracking-tighter mb-6 leading-[1.05]">
             {t('info.privacy.hero.title', 'Privacy Policy')}.
           </h1>
-          <p className="text-xl md:text-2xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
+          <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
             {t('info.privacy.hero.subtitle', 'Your data is yours. We keep it that way.')}
           </p>
         </div>

@@ -109,10 +109,10 @@ export default function BarcodeGenerator() {
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 dark:from-blue-900/10 via-slate-50 dark:via-[#020617] to-slate-50 dark:to-[#020617] transition-colors duration-300"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-[clamp(44px,7vw,80px)] font-bold text-zinc-900 dark:text-white tracking-tighter mb-6 leading-[1.05]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-white tracking-tighter mb-6 leading-[1.05]">
             {t("barcode.hero.title", "Generate")} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t("barcode.hero.titleHighlight", "Barcodes")}</span> {t("barcode.hero.titleSuffix", "Instantly")}
           </h1>
-          <p className="text-xl md:text-2xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
+          <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
             {t("barcode.hero.desc", "Create high-quality inventory tags, shipping labels, and retail codes in seconds.")}
           </p>
         </div>
