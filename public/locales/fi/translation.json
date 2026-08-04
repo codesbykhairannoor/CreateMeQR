@@ -1,6 +1,6 @@
 {
-  "appTitle": "Ilmainen QR-koodigeneraattori Netissä",
-  "tagline": "Luo QR-koodeja Logolla ja Värillä - Ei Rekisteröintiä, Rajaton",
+  "appTitle": "Ilmainen QR-koodigeneraattori Netissä - CreateMy-QR (No Signup)",
+  "tagline": "Luo QR-koodeja Logolla ja Värillä - Ei Rekisteröintiä, Rajaton. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
   "types": {
     "url": "URL / Link",
     "wifi": "Wi-Fi",

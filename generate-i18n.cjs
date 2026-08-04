@@ -3,8 +3,8 @@ const fs = require('fs');
 const resources = {
   en: {
     translation: {
-      "appTitle": "Free QR Code Generator Online",
-      "tagline": "Create QR Codes with Logo & Color - No Signup, Unlimited",
+      "appTitle": "Free Custom QR Code Generator Online - CreateMy-QR (No Signup)",
+      "tagline": "Create unlimited custom QR codes with logo, color, and dynamic tracking for free. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
       "types": {
         "url": "URL", "wifi": "WiFi", "vcard": "vCard", "text": "Text",
         "email": "Email", "phone": "Phone", "sms": "SMS", "location": "Location", "event": "Event"
