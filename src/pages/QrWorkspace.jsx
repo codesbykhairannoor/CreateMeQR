@@ -46,7 +46,7 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo }) {
       {/* Premium Hero Section */}
       <section className="max-w-4xl mx-auto px-6 text-center mb-24 pt-32">
         <div className="animate-fade-in-up">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.03em] text-zinc-900 dark:text-white mb-6 leading-[1.05]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-zinc-900 dark:text-white mb-6 leading-[1.05]">
             {renderHighlightedTitle(currentSeo.h1Title)}
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">

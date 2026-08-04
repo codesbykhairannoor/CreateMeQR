@@ -101,7 +101,7 @@ export default function ScanQr() {
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 border-b border-slate-200 dark:border-blue-900/30 transition-colors duration-300">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 dark:from-blue-900/30 via-slate-50 dark:via-[#040814] to-slate-50 dark:to-[#040814] transition-colors duration-300"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.03em] dark:text-white tracking-tighter mb-6 leading-[1.05]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter dark:text-white tracking-tighter mb-6 leading-[1.05]">
             {t("scanqr.hero.title", "Instant")} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t("scanqr.hero.titleHighlight", "QR Scanner")}</span>
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -126,7 +126,7 @@ export default function ScanQr() {
                     <div className="absolute inset-0 bg-blue-400 rounded-full animate-ping opacity-20"></div>
                     <Camera className="w-10 h-10 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
                   </div>
-                  <h3 className="text-2xl font-black tracking-[-0.03em] dark:text-white mb-2">{t("scanqr.workspace.initCam", "Initialize Camera")}</h3>
+                  <h3 className="text-2xl font-bold tracking-tighter dark:text-white mb-2">{t("scanqr.workspace.initCam", "Initialize Camera")}</h3>
                   <p className="text-slate-600 dark:text-slate-400 mb-8">{t("scanqr.workspace.initCamDesc", "Scan a QR code using your device's camera")}</p>
                   
                   <button 
@@ -156,7 +156,7 @@ export default function ScanQr() {
                   <div className="w-20 h-20 bg-green-100 dark:bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                     <ShieldCheck className="w-10 h-10 text-green-600 dark:text-green-400" />
                   </div>
-                  <h3 className="text-2xl font-black tracking-[-0.03em] dark:text-white mb-6">{t("scanqr.workspace.successTitle", "Scan Successful")}</h3>
+                  <h3 className="text-2xl font-bold tracking-tighter dark:text-white mb-6">{t("scanqr.workspace.successTitle", "Scan Successful")}</h3>
                   <button 
                     onClick={() => { setScanResult(''); setIsScanning(true); }}
                     className="w-full py-4 bg-blue-100 dark:bg-blue-500/20 hover:bg-blue-200 dark:hover:bg-blue-500/30 text-blue-700 dark:text-blue-400 font-bold rounded-xl transition-all flex items-center justify-center gap-2"
