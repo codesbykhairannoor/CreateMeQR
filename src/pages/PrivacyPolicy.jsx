@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-white tracking-tighter mb-6 leading-[1.05]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.03em] dark:text-white tracking-tighter mb-6 leading-[1.05]">
             {t('info.privacy.hero.title', 'Privacy Policy')}.
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -59,7 +59,7 @@ export default function PrivacyPolicy() {
               <Server className="w-12 h-12 text-blue-600 dark:text-blue-400" />
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-zinc-900 dark:text-white mb-6 tracking-tighter">
+              <h2 className="text-4xl font-black tracking-[-0.03em] dark:text-white mb-6 tracking-tighter">
                 {t('info.privacy.sections.s1', 'Data Collection')}
               </h2>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xl font-medium">
@@ -73,7 +73,7 @@ export default function PrivacyPolicy() {
               <EyeOff className="w-12 h-12 text-orange-600 dark:text-orange-400" />
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-zinc-900 dark:text-white mb-6 tracking-tighter">
+              <h2 className="text-4xl font-black tracking-[-0.03em] dark:text-white mb-6 tracking-tighter">
                 {t('info.privacy.sections.s2', 'Cookies & Analytics')}
               </h2>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xl font-medium">
@@ -87,7 +87,7 @@ export default function PrivacyPolicy() {
               <Lock className="w-12 h-12 text-rose-600 dark:text-rose-400" />
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-zinc-900 dark:text-white mb-6 tracking-tighter">
+              <h2 className="text-4xl font-black tracking-[-0.03em] dark:text-white mb-6 tracking-tighter">
                 {t('info.privacy.sections.s3', 'Third-Party Services')}
               </h2>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xl font-medium">
@@ -104,7 +104,7 @@ export default function PrivacyPolicy() {
           <div className="absolute -right-20 -bottom-20 opacity-5">
             <Shield className="w-96 h-96" />
           </div>
-          <h2 className="text-4xl font-bold text-zinc-900 dark:text-white mb-10 tracking-tighter relative z-10">
+          <h2 className="text-4xl font-black tracking-[-0.03em] dark:text-white mb-10 tracking-tighter relative z-10">
             {t('info.privacy.rights.title', 'Your Consent & Rights')}
           </h2>
           <ul className="space-y-6 relative z-10">

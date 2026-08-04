@@ -18,7 +18,7 @@ export default function Compare() {
         <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-blue-500/10 dark:bg-blue-600/10 blur-[150px] rounded-full pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-white tracking-tighter mb-6 leading-[1.05]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.03em] dark:text-white tracking-tighter mb-6 leading-[1.05]">
             {t('info.compare.hero.title', 'Why Choose Us?')}
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -91,7 +91,7 @@ export default function Compare() {
       {/* Testimonial/Trust Section */}
       <section className="max-w-4xl mx-auto px-6 py-24">
          <div className="text-center space-y-8 bg-white/50 dark:bg-[#0a1128]/50 p-16 rounded-[4rem] border border-slate-200/50 dark:border-[#1e2d4a]/50 backdrop-blur-xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 dark:text-white tracking-tighter">
+            <h2 className="text-4xl md:text-5xl font-black tracking-[-0.03em] dark:text-white tracking-tighter">
                {t('info.compare.trust.title', 'Trusted Globally')}
             </h2>
             <p className="text-2xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">

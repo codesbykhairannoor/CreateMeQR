@@ -109,7 +109,7 @@ export default function BarcodeGenerator() {
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 dark:from-blue-900/10 via-slate-50 dark:via-[#020617] to-slate-50 dark:to-[#020617] transition-colors duration-300"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-zinc-900 dark:text-white tracking-tighter mb-6 leading-[1.05]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.03em] dark:text-white tracking-tighter mb-6 leading-[1.05]">
             {t("barcode.hero.title", "Generate")} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t("barcode.hero.titleHighlight", "Barcodes")}</span> {t("barcode.hero.titleSuffix", "Instantly")}
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -127,7 +127,7 @@ export default function BarcodeGenerator() {
             <div className="bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-3xl p-8 shadow-xl">
               <div className="flex items-center gap-3 mb-8 pb-4 border-b border-slate-100 dark:border-[#1e2d4a]">
                 <Hash className="w-6 h-6 text-blue-600 dark:text-blue-500" />
-                <h2 className="text-2xl font-bold text-zinc-900 dark:text-white tracking-tighter">{t("barcode.workspace.dataTitle", "Barcode Data")}</h2>
+                <h2 className="text-2xl font-black tracking-[-0.03em] dark:text-white tracking-tighter">{t("barcode.workspace.dataTitle", "Barcode Data")}</h2>
               </div>
               
               <div className="space-y-6">
@@ -165,7 +165,7 @@ export default function BarcodeGenerator() {
             <div className="bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-3xl p-8 shadow-xl flex-1">
               <div className="flex items-center gap-3 mb-8 pb-4 border-b border-slate-100 dark:border-[#1e2d4a]">
                 <Settings2 className="w-6 h-6 text-blue-600 dark:text-blue-500" />
-                <h2 className="text-2xl font-bold text-zinc-900 dark:text-white tracking-tighter">{t("barcode.workspace.visualTitle", "Visual Tuning")}</h2>
+                <h2 className="text-2xl font-black tracking-[-0.03em] dark:text-white tracking-tighter">{t("barcode.workspace.visualTitle", "Visual Tuning")}</h2>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -229,7 +229,7 @@ export default function BarcodeGenerator() {
             <div className="w-16 h-16 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform">
               <ScanLine className="w-8 h-8 text-blue-600 dark:text-blue-400" />
             </div>
-            <h3 className="text-2xl font-bold text-zinc-900 dark:text-white mb-4">CODE-128</h3>
+            <h3 className="text-2xl font-black tracking-[-0.03em] dark:text-white mb-4">CODE-128</h3>
             <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
               {t("barcode.features.c128Desc", "Highly compact and versatile. Supports the full ASCII character set. Ideal for general inventory and internal tracking systems.")}
             </p>
@@ -238,7 +238,7 @@ export default function BarcodeGenerator() {
             <div className="w-16 h-16 bg-indigo-50 dark:bg-indigo-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform">
               <Hash className="w-8 h-8 text-indigo-600 dark:text-indigo-400" />
             </div>
-            <h3 className="text-2xl font-bold text-zinc-900 dark:text-white mb-4">ITF-14</h3>
+            <h3 className="text-2xl font-black tracking-[-0.03em] dark:text-white mb-4">ITF-14</h3>
             <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
               {t("barcode.features.itf14Desc", "Designed for packaging levels like cartons or pallets. Uses thick borders to improve scanning accuracy on corrugated cardboard.")}
             </p>
@@ -247,7 +247,7 @@ export default function BarcodeGenerator() {
             <div className="w-16 h-16 bg-green-50 dark:bg-green-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform">
               <BarChart2 className="w-8 h-8 text-green-600 dark:text-green-400" />
             </div>
-            <h3 className="text-2xl font-bold text-zinc-900 dark:text-white mb-4">UPC / EAN</h3>
+            <h3 className="text-2xl font-black tracking-[-0.03em] dark:text-white mb-4">UPC / EAN</h3>
             <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
               {t("barcode.features.upcDesc", "The global standard for point-of-sale retail. EAN-13 is used worldwide, while UPC-A is standard in North America.")}
             </p>
@@ -280,7 +280,7 @@ export default function BarcodeGenerator() {
             </div>
           </div>
           <div className="flex-1 order-1 lg:order-2 space-y-6">
-            <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 dark:text-white tracking-tighter">{t("barcode.features.mfgTitle", "Built for Production & Logistics")}</h2>
+            <h2 className="text-4xl md:text-5xl font-black tracking-[-0.03em] dark:text-white tracking-tighter">{t("barcode.features.mfgTitle", "Built for Production & Logistics")}</h2>
             <p className="text-lg text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
               {t("barcode.features.mfgDesc", "Our generator creates crisp, pixel-perfect PNG files that scale beautifully for print. We don't use fuzzy raster images—our engine renders pure SVG math before converting it to high-res PNG downloads.")}
             </p>
@@ -309,7 +309,7 @@ export default function BarcodeGenerator() {
             <PackageOpen className="w-64 h-64 text-blue-500" />
           </div>
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-4xl font-bold text-zinc-900 dark:text-white mb-6">{t("barcode.features.ecoTitle", "Perfect for E-Commerce & Retail")}</h2>
+            <h2 className="text-4xl font-black tracking-[-0.03em] dark:text-white mb-6">{t("barcode.features.ecoTitle", "Perfect for E-Commerce & Retail")}</h2>
             <p className="text-xl text-slate-600 dark:text-slate-400 font-medium mb-10 leading-relaxed">
               {t("barcode.features.ecoDesc", "Whether you are listing a new product on Amazon (FBA) or setting up your own Shopify storefront, generating UPC and EAN codes is required for global distribution.")}
             </p>
