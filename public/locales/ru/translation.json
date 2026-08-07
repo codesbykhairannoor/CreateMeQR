@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "Бронирование",
     "file": "Файл",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Сканер штрих-кода"
   },
   "form": {
     "enterUrl": "Введите URL вашего сайта",
@@ -1140,7 +1140,7 @@
     "terms": "Условия использования",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Сканировать штрих-код"
   },
   "contact": {
     "title": "Свяжитесь с нами",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Восстановить"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Бесплатный онлайн-сканер штрих-кодов — сканирование UPC и EAN",
+      "desc": "Сканируйте штрих-коды онлайн бесплатно с помощью камеры вашего устройства или загрузите изображение.Поддерживает UPC, EAN, код 128 и другие.100% конфиденциальность и безопасность."
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "Кибер-сканер V1",
+      "title": "Мгновенный",
+      "titleHighlight": "Сканер штрих-кода",
+      "desc": "Отсканируйте с веб-камеры или загрузите изображение.100% конфиденциальность, на наши серверы не отправляется никаких данных."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Инициализировать камеру",
+      "initCamDesc": "Отсканируйте штрих-код с помощью камеры вашего устройства.",
+      "startBtn": "Начать сканирование",
+      "cancelBtn": "Отмена",
+      "successTitle": "Сканирование успешно",
+      "scanAnother": "Сканировать другой штрих-код",
+      "orUpload": "Или загрузите изображение",
+      "uploadBtn": "Загрузить файл изображения штрих-кода",
+      "errorNoBarcode": "На изображении не найден штрих-код.Пожалуйста, попробуйте другой.",
+      "waiting": "Ожидание сканирования...",
+      "waitingDesc": "Наведите камеру на штрих-код или загрузите изображение.",
+      "notLink": "Не ссылка"
+    },
+    "howto": {
+      "title": "Как сканировать штрих-код",
+      "subtitle": "Три простых шага для мгновенного декодирования любого штрих-кода продукта.",
+      "step1Title": "Разрешить доступ",
+      "step1Desc": "Нажмите «Начать сканирование» и разрешите браузеру доступ к камере вашего устройства.",
+      "step2Title": "Выровнять штрих-код",
+      "step2Desc": "Держите продукт неподвижно и совместите штрих-код с горизонтальным видоискателем.",
+      "step3Title": "Посмотреть результаты",
+      "step3Desc": "Штрих-код будет расшифрован мгновенно.Вы можете скопировать код или найти его в Интернете."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Промышленный процессор штрих-кодов",
+      "retailTitle": "Розничная торговля и складские запасы готовы",
+      "retailDesc": "Мгновенно декодируйте штрих-коды продуктов, такие как UPC, EAN и ISBN, прямо из браузера.Никаких специальных аппаратных сканеров не требуется: камера вашего телефона теперь является инструментом инвентаризации.",
+      "fastTitle": "Высокоскоростное декодирование",
+      "fastDesc": "Наш механизм, основанный на WebAssembly, обрабатывает кадры за миллисекунды для быстрого последовательного сканирования.",
+      "privacyTitle": "100% конфиденциальность",
+      "privacyDesc": "Обработка штрих-кода происходит полностью в вашей локальной памяти.Мы никогда не передаем изображение с вашей камеры."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Универсальная поддержка 1D/2D.",
+      "desc": "Наш механизм изначально распознает наиболее распространенные линейные штрих-коды, используемые в логистике, розничной торговле и здравоохранении, а также сложные 2D-матрицы.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "Розничная торговля",
+        "Logistics": "Логистика",
+        "Industrial": "Промышленный",
+        "Packaging": "Упаковка",
         "2D": "2D"
       }
     }

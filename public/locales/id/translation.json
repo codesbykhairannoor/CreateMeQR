@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "Pemesanan",
     "file": "Berkas",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Pemindai Kode Batang"
   },
   "form": {
     "enterUrl": "Masukkan URL website",
@@ -1140,7 +1140,7 @@
     "terms": "Ketentuan Layanan",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Pindai Kode Batang"
   },
   "contact": {
     "title": "Hubungi Kami",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Memulihkan"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Pemindai Kode Batang Online Gratis - Pindai UPC & EAN",
+      "desc": "Pindai kode batang secara online secara gratis menggunakan kamera perangkat Anda atau unggah gambar.Mendukung UPC, EAN, Kode 128 dan banyak lagi.100% pribadi dan aman."
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "Pemindai Siber V1",
+      "title": "Instan",
+      "titleHighlight": "Pemindai Kode Batang",
+      "desc": "Pindai dari webcam Anda atau unggah gambar.100% pribadi, tidak ada data yang dikirim ke server kami."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Inisialisasi Kamera",
+      "initCamDesc": "Pindai kode batang menggunakan kamera perangkat Anda",
+      "startBtn": "Mulai Memindai",
+      "cancelBtn": "Batalkan",
+      "successTitle": "Pemindaian Berhasil",
+      "scanAnother": "Pindai Barcode Lain",
+      "orUpload": "Atau unggah gambar",
+      "uploadBtn": "Unggah File Gambar Kode Batang",
+      "errorNoBarcode": "Tidak ada kode batang yang ditemukan pada gambar.Silakan coba yang lain.",
+      "waiting": "Menunggu pemindaian...",
+      "waitingDesc": "Arahkan kamera Anda ke kode batang atau unggah gambar.",
+      "notLink": "Bukan tautan"
+    },
+    "howto": {
+      "title": "Cara Memindai Kode Batang",
+      "subtitle": "Tiga langkah sederhana untuk memecahkan kode kode batang produk apa pun secara instan.",
+      "step1Title": "Izinkan Akses",
+      "step1Desc": "Klik 'Mulai Memindai' dan izinkan akses browser ke kamera perangkat Anda.",
+      "step2Title": "Sejajarkan Kode Batang",
+      "step2Desc": "Pegang produk Anda dengan stabil dan sejajarkan kode batang di dalam jendela bidik horizontal.",
+      "step3Title": "Lihat Hasil",
+      "step3Desc": "Kode batang akan langsung diterjemahkan.Anda dapat menyalin kode atau mencarinya secara online."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Mesin Barcode Kelas Industri",
+      "retailTitle": "Ritel & Persediaan Siap",
+      "retailDesc": "Dekode kode batang produk seperti UPC, EAN, dan ISBN secara instan langsung dari browser Anda.Tidak diperlukan pemindai perangkat keras khusus—kamera ponsel Anda kini menjadi alat inventaris.",
+      "fastTitle": "Dekode Berkecepatan Tinggi",
+      "fastDesc": "Didukung oleh WebAssembly, mesin kami memproses frame dalam milidetik untuk pemindaian cepat berturut-turut.",
+      "privacyTitle": "100% Pribadi",
+      "privacyDesc": "Pemrosesan barcode sepenuhnya terjadi di memori lokal Anda.Kami tidak pernah mengirimkan umpan kamera Anda."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Dukungan Universal 1D/2D.",
+      "desc": "Mesin kami mengenali kode batang linier paling umum yang digunakan dalam bidang logistik, ritel, dan layanan kesehatan, serta matriks 2D yang kompleks.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "Ritel",
+        "Logistics": "Logistik",
+        "Industrial": "Industri",
+        "Packaging": "Pengemasan",
         "2D": "2D"
       }
     }

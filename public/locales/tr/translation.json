@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "Rezervasyon",
     "file": "Dosya",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Barkod Tarayıcı"
   },
   "form": {
     "enterUrl": "Web sitenizin URL'sini girin",
@@ -1140,7 +1140,7 @@
     "terms": "Hizmet Şartları",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Barkodu Tara"
   },
   "contact": {
     "title": "Bize Ulaşın",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Eski haline getirmek"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Ücretsiz Çevrimiçi Barkod Tarayıcı - UPC ve EAN'yi tarayın",
+      "desc": "Cihazınızın kamerasını kullanarak barkodları çevrimiçi olarak ücretsiz tarayın veya bir resim yükleyin.UPC, EAN, Code 128 ve daha fazlasını destekler.%100 özel ve güvenli."
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "Siber Tarayıcı V1",
+      "title": "Anında",
+      "titleHighlight": "Barkod Tarayıcı",
+      "desc": "Web kameranızdan tarayın veya bir resim yükleyin.Sunucularımıza %100 özel, sıfır veri gönderilir."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Kamerayı Başlat",
+      "initCamDesc": "Cihazınızın kamerasını kullanarak barkod tarayın",
+      "startBtn": "Taramayı Başlat",
+      "cancelBtn": "İptal",
+      "successTitle": "Tarama Başarılı",
+      "scanAnother": "Başka Bir Barkod Tarayın",
+      "orUpload": "Veya bir resim yükleyin",
+      "uploadBtn": "Barkod Görüntü Dosyasını Yükle",
+      "errorNoBarcode": "Resimde barkod bulunamadı.Lütfen başka bir tane deneyin.",
+      "waiting": "Tarama bekleniyor...",
+      "waitingDesc": "Kameranızı bir barkoda doğrultun veya bir resim yükleyin.",
+      "notLink": "Bir bağlantı değil"
+    },
+    "howto": {
+      "title": "Barkod Nasıl Taranır?",
+      "subtitle": "Herhangi bir ürünün barkodunu anında çözmek için üç basit adım.",
+      "step1Title": "Erişime İzin Ver",
+      "step1Desc": "'Taramayı Başlat'ı tıklayın ve cihazınızın kamerasına tarayıcı erişimine izin verin.",
+      "step2Title": "Barkodu Hizala",
+      "step2Desc": "Ürününüzü sabit tutun ve barkodu yatay vizöre hizalayın.",
+      "step3Title": "Sonuçları Görüntüle",
+      "step3Desc": "Barkod anında çözülecektir.Kodu kopyalayabilir veya çevrimiçi arayabilirsiniz."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Endüstriyel Sınıf Barkod Motoru",
+      "retailTitle": "Perakende ve Envantere Hazır",
+      "retailDesc": "UPC, EAN ve ISBN gibi ürün barkodlarını doğrudan tarayıcınızdan anında çözün.Özel donanım tarayıcılarına gerek yoktur; telefonunuzun kamerası artık bir envanter aracıdır.",
+      "fastTitle": "Yüksek Hızlı Kod Çözme",
+      "fastDesc": "WebAssembly tarafından desteklenen motorumuz, hızlı ardışık tarama için kareleri milisaniyeler içinde işler.",
+      "privacyTitle": "%100 Özel",
+      "privacyDesc": "Barkod işleme tamamen yerel belleğinizde gerçekleşir.Kamera yayınınızı asla aktarmayız."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Evrensel 1D/2D Desteği.",
+      "desc": "Motorumuz, karmaşık 2D matrislerin yanı sıra lojistik, perakende ve sağlık hizmetlerinde kullanılan en yaygın doğrusal barkodları da yerel olarak tanır.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "Perakende",
+        "Logistics": "Lojistik",
+        "Industrial": "Endüstriyel",
+        "Packaging": "Ambalaj",
         "2D": "2D"
       }
     }

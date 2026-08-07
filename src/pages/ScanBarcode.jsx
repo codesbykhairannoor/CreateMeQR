@@ -92,8 +92,8 @@ export default function ScanBarcode() {
   return (
     <div className="font-sans overflow-hidden bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white min-h-screen pb-32 transition-colors duration-300">
       <Helmet>
-        <title>{t("scanbarcode.seo.title", "Free QR Code Scanner Online - Scan QR Instantly")}</title>
-        <meta name="description" content={t("scanbarcode.seo.desc", "Scan QR codes instantly using your camera or by uploading an image. 100% secure, private, and client-side processing.")} />
+        <title>{t("scanbarcode.seo.title", "Free Barcode Scanner Online - Scan UPC & EAN")}</title>
+        <meta name="description" content={t("scanbarcode.seo.desc", "Scan barcodes online for free using your device's camera or upload an image. Supports UPC, EAN, Code 128 and more. 100% private and secure.")} />
       </Helmet>
 
       {/* Hero Header */}
@@ -239,12 +239,50 @@ export default function ScanBarcode() {
                   <div className="flex-1 flex flex-col items-center justify-center text-center opacity-40">
                     <Scan className="w-20 h-20 mb-6 text-blue-500" />
                     <p className="text-xl font-bold mb-2 text-slate-900 dark:text-white">{t("scanbarcode.workspace.waiting", "Waiting for scan...")}</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">{t("scanbarcode.workspace.waitingDesc", "Point your camera at a QR code or upload an image.")}</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">{t("scanbarcode.workspace.waitingDesc", "Point your camera at a barcode or upload an image.")}</p>
                   </div>
                 )}
               </div>
             </div>
             
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="bg-white dark:bg-[#0a1128] py-24 border-t border-slate-200 dark:border-[#1e2d4a]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold tracking-tighter text-zinc-900 dark:text-white mb-4">{t("scanbarcode.howto.title", "How to Scan a Barcode")}</h2>
+            <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">{t("scanbarcode.howto.subtitle", "Three simple steps to decode any product barcode instantly.")}</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+            {/* Connecting Line */}
+            <div className="hidden md:block absolute top-12 left-1/6 right-1/6 h-0.5 bg-gradient-to-r from-blue-100 via-blue-500 to-blue-100 dark:from-blue-900/20 dark:via-blue-500/50 dark:to-blue-900/20 z-0"></div>
+            
+            <div className="relative z-10 flex flex-col items-center text-center">
+              <div className="w-24 h-24 bg-white dark:bg-[#040814] rounded-full border-4 border-blue-100 dark:border-blue-900 flex items-center justify-center mb-6 shadow-xl">
+                <span className="text-3xl font-bold text-blue-600 dark:text-blue-400">1</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.howto.step1Title", "Allow Access")}</h3>
+              <p className="text-slate-600 dark:text-slate-400 font-medium">{t("scanbarcode.howto.step1Desc", "Click 'Start Scanning' and allow browser access to your device's camera.")}</p>
+            </div>
+            
+            <div className="relative z-10 flex flex-col items-center text-center">
+              <div className="w-24 h-24 bg-white dark:bg-[#040814] rounded-full border-4 border-blue-100 dark:border-blue-900 flex items-center justify-center mb-6 shadow-xl">
+                <span className="text-3xl font-bold text-blue-600 dark:text-blue-400">2</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.howto.step2Title", "Align Barcode")}</h3>
+              <p className="text-slate-600 dark:text-slate-400 font-medium">{t("scanbarcode.howto.step2Desc", "Hold your product steady and align the barcode within the horizontal viewfinder.")}</p>
+            </div>
+
+            <div className="relative z-10 flex flex-col items-center text-center">
+              <div className="w-24 h-24 bg-white dark:bg-[#040814] rounded-full border-4 border-blue-100 dark:border-blue-900 flex items-center justify-center mb-6 shadow-xl">
+                <span className="text-3xl font-bold text-blue-600 dark:text-blue-400">3</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.howto.step3Title", "View Results")}</h3>
+              <p className="text-slate-600 dark:text-slate-400 font-medium">{t("scanbarcode.howto.step3Desc", "The barcode will be decoded instantly. You can copy the code or search it online.")}</p>
+            </div>
           </div>
         </div>
       </section>

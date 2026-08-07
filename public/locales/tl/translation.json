@@ -1140,7 +1140,7 @@
     "terms": "Mga Tuntunin ng Serbisyo",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "I-scan ang Barcode"
   },
   "contact": {
     "title": "Makipag-ugnayan sa Amin",
@@ -1211,39 +1211,56 @@
     "loadBtn": "Ibalik"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Libreng Barcode Scanner Online - I-scan ang UPC at EAN",
+      "desc": "I-scan ang mga barcode online nang libre gamit ang camera ng iyong device o mag-upload ng larawan.Sinusuportahan ang UPC, EAN, Code 128 at higit pa.100% pribado at ligtas."
+    },
     "hero": {
       "badge": "Cyber Scanner V1",
       "title": "Instant",
       "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "desc": "Mag-scan mula sa iyong webcam o mag-upload ng larawan.100% pribado, walang data na ipinapadala sa aming mga server."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "I-initialize ang Camera",
+      "initCamDesc": "Mag-scan ng barcode gamit ang camera ng iyong device",
+      "startBtn": "Simulan ang Pag-scan",
+      "cancelBtn": "Kanselahin",
+      "successTitle": "Matagumpay ang Pag-scan",
+      "scanAnother": "Mag-scan ng Isa pang Barcode",
+      "orUpload": "O mag-upload ng larawan",
+      "uploadBtn": "Mag-upload ng Barcode Image File",
+      "errorNoBarcode": "Walang nakitang barcode sa larawan.Mangyaring subukan ang isa pa.",
+      "waiting": "Naghihintay para sa pag-scan...",
+      "waitingDesc": "Ituro ang iyong camera sa isang barcode o mag-upload ng larawan.",
+      "notLink": "Hindi isang link"
+    },
+    "howto": {
+      "title": "Paano Mag-scan ng Barcode",
+      "subtitle": "Tatlong simpleng hakbang upang ma-decode agad ang anumang barcode ng produkto.",
+      "step1Title": "Payagan ang Access",
+      "step1Desc": "I-click ang 'Start Scanning' at payagan ang browser ng access sa camera ng iyong device.",
+      "step2Title": "I-align ang Barcode",
+      "step2Desc": "Panatilihin ang iyong produkto at ihanay ang barcode sa loob ng pahalang na viewfinder.",
+      "step3Title": "Tingnan ang mga Resulta",
+      "step3Desc": "Ang barcode ay made-decode kaagad.Maaari mong kopyahin ang code o hanapin ito online."
     },
     "features": {
       "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
+      "retailTitle": "Retail at Imbentaryo Handa",
+      "retailDesc": "Agad na i-decode ang mga barcode ng produkto tulad ng UPC, EAN, at ISBN nang direkta mula sa iyong browser.Walang nakalaang hardware scanner na kailangan—ang camera ng iyong telepono ay isa na ngayong tool sa imbentaryo.",
       "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "fastDesc": "Pinapatakbo ng WebAssembly, ang aming engine ay nagpoproseso ng mga frame sa millisecond para sa mabilis na magkakasunod na pag-scan.",
+      "privacyTitle": "100% Pribado",
+      "privacyDesc": "Ang pagproseso ng barcode ay ganap na nangyayari sa iyong lokal na memorya.Hindi namin ipinapadala ang iyong feed ng camera."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Pangkalahatang 1D/2D na Suporta.",
+      "desc": "Nakikilala ng aming makina ang pinakakaraniwang mga linear na barcode na ginagamit sa logistik, retail, at pangangalagang pangkalusugan, kasama ng mga kumplikadong 2D matrice.",
       "type": {
-        "Retail": "Retail",
+        "Retail": "Pagtitingi",
         "Logistics": "Logistics",
-        "Industrial": "Industrial",
+        "Industrial": "Pang-industriya",
         "Packaging": "Packaging",
         "2D": "2D"
       }

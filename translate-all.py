@@ -1,14 +1,17 @@
-const fs = require('fs');
-const path = require('path');
-const translate = require('translate-google');
+import os
+import json
+import time
+from googletrans import Translator
 
-const languages = [
+translator = Translator()
+
+languages = [
   'en', 'id', 'es', 'fr', 'de', 'zh', 'ja', 'ko', 'ru', 'ar', 
   'pt', 'it', 'hi', 'bn', 'ur', 'tr', 'vi', 'th', 'nl', 'pl', 
   'sv', 'fi', 'da', 'no', 'cs', 'el', 'he', 'ms', 'tl', 'uk'
-];
+]
 
-const enTexts = {
+en_texts = {
   "seo": {
     "title": "Free Barcode Scanner Online - Scan UPC & EAN",
     "desc": "Scan barcodes online for free using your device's camera or upload an image. Supports UPC, EAN, Code 128 and more. 100% private and secure."
@@ -63,61 +66,59 @@ const enTexts = {
       "2D": "2D"
     }
   }
-};
-
-const navTexts = {
-  "scanbarcode": "Scan Barcode"
-};
-
-const typesTexts = {
-  "scanbarcode": "Barcode Scanner"
-};
-
-async function run() {
-  for (const lang of languages) {
-    if (lang === 'en') continue;
-    let targetLang = lang;
-    if (lang === 'zh') targetLang = 'zh-cn';
-    if (lang === 'he') targetLang = 'iw';
-    
-    const localePath = path.join(__dirname, 'public', 'locales', lang, 'translation.json');
-    if (!fs.existsSync(localePath)) continue;
-    
-    const translation = JSON.parse(fs.readFileSync(localePath, 'utf-8'));
-    console.log(`Translating for ${lang}...`);
-    
-    try {
-      const newScanBarcode = await translate(enTexts, { to: targetLang });
-      const newNav = await translate(navTexts, { to: targetLang });
-      const newTypes = await translate(typesTexts, { to: targetLang });
-      
-      translation.scanbarcode = newScanBarcode;
-      
-      if (!translation.nav) translation.nav = {};
-      Object.assign(translation.nav, newNav);
-      
-      if (!translation.types) translation.types = {};
-      Object.assign(translation.types, newTypes);
-      
-      fs.writeFileSync(localePath, JSON.stringify(translation, null, 2));
-      console.log(`Success ${lang}`);
-    } catch (e) {
-      console.error(`Error translating ${lang}`, e);
-    }
-    
-    // Add a small delay to avoid rate limiting
-    await new Promise(r => setTimeout(r, 1000));
-  }
-  
-  // also ensure EN gets the new texts
-  const enPath = path.join(__dirname, 'public', 'locales', 'en', 'translation.json');
-  const enTranslation = JSON.parse(fs.readFileSync(enPath, 'utf-8'));
-  enTranslation.scanbarcode = enTexts;
-  Object.assign(enTranslation.nav, navTexts);
-  Object.assign(enTranslation.types, typesTexts);
-  fs.writeFileSync(enPath, JSON.stringify(enTranslation, null, 2));
-  
-  console.log("Done translating all languages!");
 }
 
-run();
+nav_texts = {
+  "scanbarcode": "Scan Barcode"
+}
+
+types_texts = {
+  "scanbarcode": "Barcode Scanner"
+}
+
+def translate_obj(obj, lang):
+    if lang == 'en':
+        return obj
+    
+    if lang == 'zh': lang = 'zh-cn'
+    if lang == 'he': lang = 'iw'
+    
+    result = {}
+    for k, v in obj.items():
+        if isinstance(v, dict):
+            result[k] = translate_obj(v, lang)
+        else:
+            try:
+                res = translator.translate(v, dest=lang)
+                result[k] = res.text
+                print(f"[{lang}] {k}: {result[k]}")
+            except Exception as e:
+                print(f"Error translating to {lang}: {e}")
+                result[k] = v
+            time.sleep(0.1)
+    return result
+
+for lang in languages:
+    filepath = os.path.join('public', 'locales', lang, 'translation.json')
+    if not os.path.exists(filepath): continue
+    
+    with open(filepath, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    print(f"\nTranslating for {lang}...")
+    
+    if "scanbarcode" not in data:
+        data["scanbarcode"] = {}
+        
+    data["scanbarcode"] = translate_obj(en_texts, lang)
+    
+    if "nav" not in data: data["nav"] = {}
+    data["nav"].update(translate_obj(nav_texts, lang))
+    
+    if "types" not in data: data["types"] = {}
+    data["types"].update(translate_obj(types_texts, lang))
+    
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+print("Done translating all languages!")

@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "الحجز عبر الإنترنت",
     "file": "ملف / بركاس",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "ماسح الباركود"
   },
   "form": {
     "enterUrl": "أدخل عنوان URL لموقع الويب الخاص بك",
@@ -1140,7 +1140,7 @@
     "terms": "شروط الخدمة",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "مسح الباركود"
   },
   "contact": {
     "title": "اتصل بنا",
@@ -1211,40 +1211,57 @@
     "loadBtn": "يعيد"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "ماسح الباركود المجاني عبر الإنترنت - مسح UPC وEAN",
+      "desc": "قم بمسح الرموز الشريطية ضوئيًا عبر الإنترنت مجانًا باستخدام كاميرا جهازك أو قم بتحميل صورة.يدعم UPC، EAN، رمز 128 وأكثر من ذلك.100% خاص وآمن."
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "سايبر سكانر V1",
+      "title": "فورية",
+      "titleHighlight": "ماسح الباركود",
+      "desc": "قم بالمسح الضوئي من كاميرا الويب الخاصة بك أو قم بتحميل صورة.خصوصية 100%، ولا يتم إرسال أية بيانات إلى خوادمنا."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "تهيئة الكاميرا",
+      "initCamDesc": "قم بمسح الباركود باستخدام كاميرا جهازك",
+      "startBtn": "ابدأ المسح",
+      "cancelBtn": "إلغاء",
+      "successTitle": "تم المسح بنجاح",
+      "scanAnother": "مسح الباركود آخر",
+      "orUpload": "أو تحميل صورة",
+      "uploadBtn": "تحميل ملف صورة الباركود",
+      "errorNoBarcode": "لم يتم العثور على الباركود في الصورة.يرجى تجربة واحدة أخرى.",
+      "waiting": "في انتظار المسح...",
+      "waitingDesc": "قم بتوجيه الكاميرا نحو الرمز الشريطي أو قم بتحميل صورة.",
+      "notLink": "ليس الرابط"
+    },
+    "howto": {
+      "title": "كيفية مسح الباركود",
+      "subtitle": "ثلاث خطوات بسيطة لفك تشفير أي رمز شريطي للمنتج على الفور.",
+      "step1Title": "السماح بالوصول",
+      "step1Desc": "انقر فوق \"بدء المسح\" واسمح للمتصفح بالوصول إلى كاميرا جهازك.",
+      "step2Title": "محاذاة الباركود",
+      "step2Desc": "أمسك منتجك بثبات وقم بمحاذاة الرمز الشريطي داخل عدسة الكاميرا الأفقية.",
+      "step3Title": "عرض النتائج",
+      "step3Desc": "سيتم فك تشفير الباركود على الفور.يمكنك نسخ الكود أو البحث عنه عبر الإنترنت."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "محرك الباركود من الدرجة الصناعية",
+      "retailTitle": "البيع بالتجزئة والمخزون جاهز",
+      "retailDesc": "قم بفك تشفير الرموز الشريطية للمنتج على الفور مثل UPC وEAN وISBN مباشرةً من متصفحك.ليست هناك حاجة إلى ماسحات ضوئية مخصصة للأجهزة، فقد أصبحت كاميرا هاتفك الآن أداة جرد.",
+      "fastTitle": "فك التشفير عالي السرعة",
+      "fastDesc": "مدعومًا بواسطة WebAssembly، يقوم محركنا بمعالجة الإطارات بالمللي ثانية لإجراء مسح سريع ومتتالي.",
+      "privacyTitle": "خاص 100%",
+      "privacyDesc": "تتم معالجة الباركود بالكامل في ذاكرتك المحلية.نحن لا ننقل تغذية الكاميرا الخاصة بك أبدًا."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "دعم عالمي 1D/2D.",
+      "desc": "يتعرف محركنا أصلاً على الرموز الشريطية الخطية الأكثر شيوعًا المستخدمة في الخدمات اللوجستية وتجارة التجزئة والرعاية الصحية، إلى جانب المصفوفات المعقدة ثنائية الأبعاد.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "البيع بالتجزئة",
+        "Logistics": "اللوجستية",
+        "Industrial": "صناعية",
+        "Packaging": "التعبئة والتغليف",
         "2D": "2D"
       }
     }

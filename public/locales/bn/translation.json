@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "অনলাইন বুকিং",
     "file": "ফাইল/বেরকাস",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "বারকোড স্ক্যানার"
   },
   "form": {
     "enterUrl": "আপনার ওয়েবসাইটের URL লিখুন",
@@ -1140,7 +1140,7 @@
     "terms": "পরিষেবার শর্তাবলী",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "বারকোড স্ক্যান করুন"
   },
   "contact": {
     "title": "আমাদের সাথে যোগাযোগ করুন",
@@ -1211,40 +1211,57 @@
     "loadBtn": "পুনরুদ্ধার করুন"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "বিনামূল্যে বারকোড স্ক্যানার অনলাইন - UPC এবং EAN স্ক্যান করুন",
+      "desc": "আপনার ডিভাইসের ক্যামেরা ব্যবহার করে বিনামূল্যে বারকোড অনলাইনে স্ক্যান করুন বা একটি ছবি আপলোড করুন।UPC, EAN, কোড 128 এবং আরও অনেক কিছু সমর্থন করে।100% ব্যক্তিগত এবং নিরাপদ।"
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "সাইবার স্ক্যানার V1",
+      "title": "তাৎক্ষণিক",
+      "titleHighlight": "বারকোড স্ক্যানার",
+      "desc": "আপনার ওয়েবক্যাম থেকে স্ক্যান করুন বা একটি ছবি আপলোড করুন।100% ব্যক্তিগত, শূন্য ডেটা আমাদের সার্ভারে পাঠানো হয়।"
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "ক্যামেরা চালু করুন",
+      "initCamDesc": "আপনার ডিভাইসের ক্যামেরা ব্যবহার করে একটি বারকোড স্ক্যান করুন",
+      "startBtn": "স্ক্যান করা শুরু করুন",
+      "cancelBtn": "বাতিল করুন",
+      "successTitle": "স্ক্যান সফল",
+      "scanAnother": "আরেকটি বারকোড স্ক্যান করুন",
+      "orUpload": "অথবা একটি ছবি আপলোড করুন",
+      "uploadBtn": "বারকোড ইমেজ ফাইল আপলোড করুন",
+      "errorNoBarcode": "ছবিতে কোন বারকোড পাওয়া যায়নি।অন্য একটি চেষ্টা করুন.",
+      "waiting": "স্ক্যানের জন্য অপেক্ষা করা হচ্ছে...",
+      "waitingDesc": "আপনার ক্যামেরাকে বারকোডের দিকে নির্দেশ করুন বা একটি ছবি আপলোড করুন।",
+      "notLink": "একটি লিঙ্ক না"
+    },
+    "howto": {
+      "title": "একটি বারকোড স্ক্যান কিভাবে",
+      "subtitle": "যেকোনো পণ্যের বারকোড অবিলম্বে ডিকোড করার জন্য তিনটি সহজ ধাপ।",
+      "step1Title": "অ্যাক্সেসের অনুমতি দিন",
+      "step1Desc": "'স্টার্ট স্ক্যানিং'-এ ক্লিক করুন এবং আপনার ডিভাইসের ক্যামেরায় ব্রাউজার অ্যাক্সেসের অনুমতি দিন।",
+      "step2Title": "বারকোড সারিবদ্ধ করুন",
+      "step2Desc": "আপনার পণ্যটি স্থিরভাবে ধরে রাখুন এবং অনুভূমিক ভিউফাইন্ডারের মধ্যে বারকোডটি সারিবদ্ধ করুন।",
+      "step3Title": "ফলাফল দেখুন",
+      "step3Desc": "বারকোড অবিলম্বে ডিকোড করা হবে.আপনি কোডটি অনুলিপি করতে পারেন বা এটি অনলাইনে অনুসন্ধান করতে পারেন।"
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "ইন্ডাস্ট্রিয়াল-গ্রেড বারকোড ইঞ্জিন",
+      "retailTitle": "খুচরা এবং ইনভেন্টরি প্রস্তুত",
+      "retailDesc": "অবিলম্বে আপনার ব্রাউজার থেকে সরাসরি UPC, EAN, এবং ISBN এর মতো পণ্য বারকোডগুলি ডিকোড করুন৷কোনো ডেডিকেটেড হার্ডওয়্যার স্ক্যানার প্রয়োজন নেই—আপনার ফোনের ক্যামেরা এখন একটি ইনভেন্টরি টুল।",
+      "fastTitle": "উচ্চ গতির ডিকোডিং",
+      "fastDesc": "WebAssembly দ্বারা চালিত, আমাদের ইঞ্জিন দ্রুত একটানা স্ক্যান করার জন্য মিলিসেকেন্ডে ফ্রেম প্রক্রিয়া করে।",
+      "privacyTitle": "100% ব্যক্তিগত",
+      "privacyDesc": "বারকোড প্রক্রিয়াকরণ সম্পূর্ণরূপে আপনার স্থানীয় স্মৃতিতে ঘটে।আমরা কখনই আপনার ক্যামেরা ফিড প্রেরণ করি না।"
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "ইউনিভার্সাল 1D/2D সমর্থন।",
+      "desc": "আমাদের ইঞ্জিন স্থানীয়ভাবে জটিল 2D ম্যাট্রিক্সের পাশাপাশি লজিস্টিক, খুচরা এবং স্বাস্থ্যসেবায় ব্যবহৃত সবচেয়ে সাধারণ লিনিয়ার বারকোডগুলিকে স্বীকৃতি দেয়।",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "খুচরা",
+        "Logistics": "রসদ",
+        "Industrial": "ইন্ডাস্ট্রিয়াল",
+        "Packaging": "প্যাকেজিং",
         "2D": "2D"
       }
     }

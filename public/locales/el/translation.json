@@ -1140,7 +1140,7 @@
     "terms": "Όροι Παροχής Υπηρεσιών",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Σάρωση γραμμικού κώδικα"
   },
   "contact": {
     "title": "Επικοινωνήστε μαζί μας",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Επαναφέρω"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Δωρεάν Online Scanner Barcode - Σάρωση UPC & EAN",
+      "desc": "Σαρώστε γραμμικούς κώδικες στο διαδίκτυο δωρεάν χρησιμοποιώντας την κάμερα της συσκευής σας ή ανεβάστε μια εικόνα.Υποστηρίζει UPC, EAN, Code 128 και άλλα.100% ιδιωτικό και ασφαλές."
+    },
     "hero": {
       "badge": "Cyber Scanner V1",
-      "title": "Instant",
+      "title": "Στιγμιαία",
       "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "desc": "Σαρώστε από την κάμερα web ή ανεβάστε μια εικόνα.100% ιδιωτικά, μηδενικά δεδομένα αποστέλλονται στους διακομιστές μας."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Εκκίνηση της κάμερας",
+      "initCamDesc": "Σαρώστε έναν γραμμωτό κώδικα χρησιμοποιώντας την κάμερα της συσκευής σας",
+      "startBtn": "Ξεκινήστε τη σάρωση",
+      "cancelBtn": "Ακύρωση",
+      "successTitle": "Η σάρωση ήταν επιτυχής",
+      "scanAnother": "Σάρωση άλλου γραμμικού κώδικα",
+      "orUpload": "Ή ανεβάστε μια εικόνα",
+      "uploadBtn": "Μεταφόρτωση αρχείου εικόνας γραμμικού κώδικα",
+      "errorNoBarcode": "Δεν βρέθηκε γραμμωτός κώδικας στην εικόνα.Δοκιμάστε ένα άλλο.",
+      "waiting": "Αναμονή για σάρωση...",
+      "waitingDesc": "Στρέψτε την κάμερά σας σε έναν γραμμωτό κώδικα ή ανεβάστε μια εικόνα.",
+      "notLink": "Όχι σύνδεσμος"
+    },
+    "howto": {
+      "title": "Πώς να σαρώσετε έναν γραμμωτό κώδικα",
+      "subtitle": "Τρία απλά βήματα για να αποκωδικοποιήσετε αμέσως κάθε γραμμωτό κώδικα προϊόντος.",
+      "step1Title": "Να επιτρέπεται η πρόσβαση",
+      "step1Desc": "Κάντε κλικ στην «Έναρξη σάρωσης» και επιτρέψτε την πρόσβαση του προγράμματος περιήγησης στην κάμερα της συσκευής σας.",
+      "step2Title": "Ευθυγράμμιση γραμμικού κώδικα",
+      "step2Desc": "Κρατήστε το προϊόν σας σταθερό και ευθυγραμμίστε τον γραμμωτό κώδικα μέσα στο οριζόντιο σκόπευτρο.",
+      "step3Title": "Προβολή αποτελεσμάτων",
+      "step3Desc": "Ο γραμμωτός κώδικας θα αποκωδικοποιηθεί αμέσως.Μπορείτε να αντιγράψετε τον κωδικό ή να τον αναζητήσετε στο διαδίκτυο."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Μηχανή γραμμικού κώδικα βιομηχανικής ποιότητας",
+      "retailTitle": "Έτοιμο για λιανική και απογραφή",
+      "retailDesc": "Αποκωδικοποιήστε άμεσα γραμμικούς κώδικες προϊόντων όπως UPC, EAN και ISBN απευθείας από το πρόγραμμα περιήγησής σας.Δεν χρειάζονται αποκλειστικοί σαρωτές υλικού—η κάμερα του τηλεφώνου σας είναι πλέον ένα εργαλείο απογραφής.",
+      "fastTitle": "Αποκωδικοποίηση υψηλής ταχύτητας",
+      "fastDesc": "Με την υποστήριξη του WebAssembly, ο κινητήρας μας επεξεργάζεται καρέ σε χιλιοστά του δευτερολέπτου για γρήγορη διαδοχική σάρωση.",
+      "privacyTitle": "100% Ιδιωτικό",
+      "privacyDesc": "Η επεξεργασία γραμμωτού κώδικα γίνεται εξ ολοκλήρου στην τοπική σας μνήμη.Δεν μεταδίδουμε ποτέ τη ροή της κάμερας σας."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Universal υποστήριξη 1D/2D.",
+      "desc": "Ο κινητήρας μας αναγνωρίζει εγγενώς τους πιο κοινούς γραμμικούς γραμμικούς κώδικες που χρησιμοποιούνται στα logistics, το λιανικό εμπόριο και την υγειονομική περίθαλψη, παράλληλα με πολύπλοκους 2D πίνακες.",
       "type": {
-        "Retail": "Retail",
+        "Retail": "Λιανικό εμπόριο",
         "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Industrial": "Βιομηχανική",
+        "Packaging": "Συσκευασία",
         "2D": "2D"
       }
     }

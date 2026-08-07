@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "Buchung",
     "file": "Datei",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Barcode-Scanner"
   },
   "form": {
     "enterUrl": "Geben Sie Ihre Website-URL ein",
@@ -1140,7 +1140,7 @@
     "terms": "Nutzungsbedingungen",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Barcode scannen"
   },
   "contact": {
     "title": "Kontaktieren Sie uns",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Wiederherstellen"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Kostenloser Barcode-Scanner online – Scannen Sie UPC und EAN",
+      "desc": "Scannen Sie Barcodes kostenlos online mit der Kamera Ihres Geräts oder laden Sie ein Bild hoch.Unterstützt UPC, EAN, Code 128 und mehr.100 % privat und sicher."
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "Cyber-Scanner V1",
+      "title": "Sofort",
+      "titleHighlight": "Barcode-Scanner",
+      "desc": "Scannen Sie von Ihrer Webcam oder laden Sie ein Bild hoch.100 % privat, es werden keine Daten an unsere Server gesendet."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Kamera initialisieren",
+      "initCamDesc": "Scannen Sie einen Barcode mit der Kamera Ihres Geräts",
+      "startBtn": "Starten Sie den Scanvorgang",
+      "cancelBtn": "Abbrechen",
+      "successTitle": "Scan erfolgreich",
+      "scanAnother": "Scannen Sie einen weiteren Barcode",
+      "orUpload": "Oder laden Sie ein Bild hoch",
+      "uploadBtn": "Laden Sie die Barcode-Bilddatei hoch",
+      "errorNoBarcode": "Im Bild wurde kein Barcode gefunden.Bitte versuchen Sie es mit einem anderen.",
+      "waiting": "Warten auf Scan...",
+      "waitingDesc": "Richten Sie Ihre Kamera auf einen Barcode oder laden Sie ein Bild hoch.",
+      "notLink": "Kein Link"
+    },
+    "howto": {
+      "title": "So scannen Sie einen Barcode",
+      "subtitle": "Drei einfache Schritte, um jeden Produktbarcode sofort zu dekodieren.",
+      "step1Title": "Zugriff zulassen",
+      "step1Desc": "Klicken Sie auf „Scannen starten“ und erlauben Sie dem Browser den Zugriff auf die Kamera Ihres Geräts.",
+      "step2Title": "Barcode ausrichten",
+      "step2Desc": "Halten Sie Ihr Produkt ruhig und richten Sie den Barcode im horizontalen Sucher aus.",
+      "step3Title": "Ergebnisse anzeigen",
+      "step3Desc": "Der Barcode wird sofort dekodiert.Sie können den Code kopieren oder online suchen."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Barcode-Engine in Industriequalität",
+      "retailTitle": "Bereit für Einzelhandel und Lagerbestand",
+      "retailDesc": "Dekodieren Sie Produktbarcodes wie UPC, EAN und ISBN sofort direkt in Ihrem Browser.Es sind keine speziellen Hardware-Scanner erforderlich – die Kamera Ihres Telefons dient jetzt als Inventarisierungstool.",
+      "fastTitle": "Hochgeschwindigkeitsdekodierung",
+      "fastDesc": "Unsere Engine basiert auf WebAssembly und verarbeitet Frames in Millisekunden für ein schnelles aufeinanderfolgendes Scannen.",
+      "privacyTitle": "100 % privat",
+      "privacyDesc": "Die Barcode-Verarbeitung erfolgt vollständig in Ihrem lokalen Speicher.Wir übertragen niemals Ihren Kamera-Feed."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Universelle 1D/2D-Unterstützung.",
+      "desc": "Unsere Engine erkennt nativ die gängigsten linearen Barcodes, die in der Logistik, im Einzelhandel und im Gesundheitswesen verwendet werden, sowie komplexe 2D-Matrizen.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "Einzelhandel",
+        "Logistics": "Logistik",
+        "Industrial": "Industriell",
+        "Packaging": "Verpackung",
         "2D": "2D"
       }
     }

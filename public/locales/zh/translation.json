@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "预订",
     "file": "文件",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "条码扫描仪"
   },
   "form": {
     "enterUrl": "输入您的网站URL",
@@ -1140,7 +1140,7 @@
     "terms": "服务条款",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "扫描条码"
   },
   "contact": {
     "title": "联系我们",
@@ -1165,40 +1165,57 @@
     "loadBtn": "恢复"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "免费在线条码扫描仪 - 扫描 UPC 和 EAN",
+      "desc": "使用设备的相机免费在线扫描条形码或上传图像。支持 UPC、EAN、Code 128 等。100% 私密且安全。"
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "网络扫描仪 V1",
+      "title": "即时",
+      "titleHighlight": "条码扫描仪",
+      "desc": "从网络摄像头扫描或上传图像。100% 私密，零数据发送到我们的服务器。"
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "初始化相机",
+      "initCamDesc": "使用设备的相机扫描条形码",
+      "startBtn": "开始扫描",
+      "cancelBtn": "取消",
+      "successTitle": "扫描成功",
+      "scanAnother": "扫描另一个条形码",
+      "orUpload": "或者上传图片",
+      "uploadBtn": "上传条形码图像文件",
+      "errorNoBarcode": "图像中未找到条形码。请尝试另一种。",
+      "waiting": "等待扫描...",
+      "waitingDesc": "将相机对准条形码或上传图像。",
+      "notLink": "不是链接"
+    },
+    "howto": {
+      "title": "如何扫描条形码",
+      "subtitle": "只需三个简单步骤即可立即解码任何产品条形码。",
+      "step1Title": "允许访问",
+      "step1Desc": "单击“开始扫描”并允许浏览器访问您设备的摄像头。",
+      "step2Title": "对齐条形码",
+      "step2Desc": "平稳握住产品并在水平取景器内对齐条形码。",
+      "step3Title": "查看结果",
+      "step3Desc": "条形码将立即被解码。您可以复制代码或在线搜索。"
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "工业级条码引擎",
+      "retailTitle": "零售和库存就绪",
+      "retailDesc": "直接从浏览器即时解码 UPC、EAN 和 ISBN 等产品条形码。无需专用的硬件扫描仪 - 您手机的相机现在是一种库存工具。",
+      "fastTitle": "高速解码",
+      "fastDesc": "在 WebAssembly 的支持下，我们的引擎可以在几毫秒内处理帧，从而实现快速连续扫描。",
+      "privacyTitle": "100% 私人",
+      "privacyDesc": "条形码处理完全发生在您的本地内存中。我们绝不会传输您的摄像头信息。"
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "通用 1D/2D 支持。",
+      "desc": "我们的引擎本身可以识别物流、零售和医疗保健中使用的最常见的线性条形码以及复杂的二维矩阵。",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "零售",
+        "Logistics": "物流",
+        "Industrial": "工业",
+        "Packaging": "包装",
         "2D": "2D"
       }
     }

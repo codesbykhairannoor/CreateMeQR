@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "Bestilling",
     "file": "Fil",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Strekkodeskanner"
   },
   "form": {
     "enterUrl": "Skriv inn nettadressen din",
@@ -1140,7 +1140,7 @@
     "terms": "Vilkår for bruk",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Skann strekkode"
   },
   "contact": {
     "title": "Kontakt oss",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Restaurere"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Gratis strekkodeskanner på nett - Skann UPC og EAN",
+      "desc": "Skann strekkoder online gratis ved å bruke enhetens kamera eller last opp et bilde.Støtter UPC, EAN, Code 128 og mer.100 % privat og sikkert."
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "Cyberskanner v1",
+      "title": "Øyeblikkelig",
+      "titleHighlight": "Strekkodeskanner",
+      "desc": "Skann fra webkameraet ditt eller last opp et bilde.100 % privat, null data sendes til våre servere."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Initialiser kamera",
+      "initCamDesc": "Skann en strekkode med enhetens kamera",
+      "startBtn": "Start skanning",
+      "cancelBtn": "Avbryt",
+      "successTitle": "Skanningen var vellykket",
+      "scanAnother": "Skann en annen strekkode",
+      "orUpload": "Eller last opp et bilde",
+      "uploadBtn": "Last opp strekkode bildefil",
+      "errorNoBarcode": "Ingen strekkode funnet i bildet.Prøv en annen.",
+      "waiting": "Venter på skanning...",
+      "waitingDesc": "Pek kameraet mot en strekkode eller last opp et bilde.",
+      "notLink": "Ikke en lenke"
+    },
+    "howto": {
+      "title": "Hvordan skanne en strekkode",
+      "subtitle": "Tre enkle trinn for å dekode alle produktstrekkoder umiddelbart.",
+      "step1Title": "Tillat tilgang",
+      "step1Desc": "Klikk \"Start skanning\" og gi nettlesertilgang til enhetens kamera.",
+      "step2Title": "Juster strekkoden",
+      "step2Desc": "Hold produktet stødig og juster strekkoden i den horisontale søkeren.",
+      "step3Title": "Se resultater",
+      "step3Desc": "Strekkoden vil bli dekodet umiddelbart.Du kan kopiere koden eller søke den på nettet."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Industriell strekkodemotor",
+      "retailTitle": "Forhandler og inventar klar",
+      "retailDesc": "Dekod produktstrekkoder som UPC, EAN og ISBN umiddelbart fra nettleseren din.Ingen dedikerte maskinvareskannere nødvendig – telefonens kamera er nå et inventarverktøy.",
+      "fastTitle": "Høyhastighets dekoding",
+      "fastDesc": "Drevet av WebAssembly behandler motoren vår bilder i millisekunder for rask påfølgende skanning.",
+      "privacyTitle": "100 % privat",
+      "privacyDesc": "Strekkodebehandling skjer utelukkende i ditt lokale minne.Vi overfører aldri kamerafeeden din."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Universal 1D/2D-støtte.",
+      "desc": "Motoren vår gjenkjenner de vanligste lineære strekkodene som brukes i logistikk, detaljhandel og helsevesen, sammen med komplekse 2D-matriser.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "Detaljhandel",
+        "Logistics": "Logistikk",
+        "Industrial": "Industriell",
+        "Packaging": "Emballasje",
         "2D": "2D"
       }
     }

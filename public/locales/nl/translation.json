@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "Boeking",
     "file": "Bestand",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Barcodescanner"
   },
   "form": {
     "enterUrl": "Voer uw website-URL",
@@ -1140,7 +1140,7 @@
     "terms": "Servicevoorwaarden",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Streepjescode scannen"
   },
   "contact": {
     "title": "Neem contact met ons op",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Herstellen"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Gratis barcodescanner online - Scan UPC en EAN",
+      "desc": "Scan streepjescodes gratis online met de camera van uw apparaat of upload een afbeelding.Ondersteunt UPC, EAN, Code 128 en meer.100% privé en veilig."
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "Cyberscanner V1",
+      "title": "Direct",
+      "titleHighlight": "Barcodescanner",
+      "desc": "Scan vanaf uw webcam of upload een afbeelding.100% privé, er worden geen gegevens naar onze servers verzonden."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Initialiseer de camera",
+      "initCamDesc": "Scan een streepjescode met de camera van uw apparaat",
+      "startBtn": "Begin met scannen",
+      "cancelBtn": "Annuleer",
+      "successTitle": "Scannen geslaagd",
+      "scanAnother": "Scan nog een streepjescode",
+      "orUpload": "Of upload een afbeelding",
+      "uploadBtn": "Upload een streepjescodeafbeeldingsbestand",
+      "errorNoBarcode": "Geen streepjescode gevonden in afbeelding.Probeer een andere.",
+      "waiting": "Wachten op scannen...",
+      "waitingDesc": "Richt uw camera op een streepjescode of upload een afbeelding.",
+      "notLink": "Geen koppeling"
+    },
+    "howto": {
+      "title": "Een streepjescode scannen",
+      "subtitle": "Drie eenvoudige stappen om elke productbarcode onmiddellijk te decoderen.",
+      "step1Title": "Toegang toestaan",
+      "step1Desc": "Klik op 'Scannen starten' en geef browsertoegang tot de camera van uw apparaat.",
+      "step2Title": "Streepjescode uitlijnen",
+      "step2Desc": "Houd uw product stabiel en lijn de streepjescode uit binnen de horizontale zoeker.",
+      "step3Title": "Resultaten bekijken",
+      "step3Desc": "De streepjescode wordt onmiddellijk gedecodeerd.U kunt de code kopiëren of online opzoeken."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Barcode-engine van industriële kwaliteit",
+      "retailTitle": "Klaar voor detailhandel en inventaris",
+      "retailDesc": "Decodeer productbarcodes zoals UPC, EAN en ISBN direct vanuit uw browser.Er zijn geen speciale hardwarescanners nodig: de camera van uw telefoon is nu een inventarisatietool.",
+      "fastTitle": "Snelle decodering",
+      "fastDesc": "Onze engine, aangedreven door WebAssembly, verwerkt frames in milliseconden voor snel opeenvolgend scannen.",
+      "privacyTitle": "100% privé",
+      "privacyDesc": "De verwerking van streepjescodes gebeurt volledig in uw lokale geheugen.Wij verzenden nooit uw camerafeed."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Universele 1D/2D-ondersteuning.",
+      "desc": "Onze engine herkent standaard de meest voorkomende lineaire barcodes die worden gebruikt in de logistiek, detailhandel en gezondheidszorg, naast complexe 2D-matrices.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "Detailhandel",
+        "Logistics": "Logistiek",
+        "Industrial": "Industrieel",
+        "Packaging": "Verpakking",
         "2D": "2D"
       }
     }

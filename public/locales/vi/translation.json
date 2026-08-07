@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "Đặt chỗ",
     "file": "Tập tin",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Máy quét mã vạch"
   },
   "form": {
     "enterUrl": "Nhập URL trang web của bạn",
@@ -1140,7 +1140,7 @@
     "terms": "Điều khoản dịch vụ",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Quét mã vạch"
   },
   "contact": {
     "title": "Liên hệ với chúng tôi",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Khôi phục"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Máy quét mã vạch trực tuyến miễn phí - Quét UPC & EAN",
+      "desc": "Quét mã vạch trực tuyến miễn phí bằng máy ảnh của thiết bị hoặc tải hình ảnh lên.Hỗ trợ UPC, EAN, Mã 128 và hơn thế nữa.100% riêng tư và an toàn."
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "Máy quét mạng V1",
+      "title": "tức thì",
+      "titleHighlight": "Máy quét mã vạch",
+      "desc": "Quét từ webcam của bạn hoặc tải lên một hình ảnh.100% riêng tư, không có dữ liệu nào được gửi đến máy chủ của chúng tôi."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Khởi tạo máy ảnh",
+      "initCamDesc": "Quét mã vạch bằng camera của thiết bị của bạn",
+      "startBtn": "Bắt đầu quét",
+      "cancelBtn": "Hủy bỏ",
+      "successTitle": "Quét thành công",
+      "scanAnother": "Quét mã vạch khác",
+      "orUpload": "Hoặc tải lên một hình ảnh",
+      "uploadBtn": "Tải lên tệp hình ảnh mã vạch",
+      "errorNoBarcode": "Không tìm thấy mã vạch trong hình ảnh.Vui lòng thử cái khác.",
+      "waiting": "Đang chờ quét...",
+      "waitingDesc": "Hướng máy ảnh của bạn vào mã vạch hoặc tải hình ảnh lên.",
+      "notLink": "Không phải là một liên kết"
+    },
+    "howto": {
+      "title": "Cách quét mã vạch",
+      "subtitle": "Ba bước đơn giản để giải mã bất kỳ mã vạch sản phẩm nào ngay lập tức.",
+      "step1Title": "Cho phép truy cập",
+      "step1Desc": "Nhấp vào 'Bắt đầu quét' và cho phép trình duyệt truy cập vào camera trên thiết bị của bạn.",
+      "step2Title": "Căn chỉnh mã vạch",
+      "step2Desc": "Giữ chắc sản phẩm của bạn và căn chỉnh mã vạch trong kính ngắm ngang.",
+      "step3Title": "Xem kết quả",
+      "step3Desc": "Mã vạch sẽ được giải mã ngay lập tức.Bạn có thể sao chép mã hoặc tìm kiếm trực tuyến."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Công cụ mã vạch cấp công nghiệp",
+      "retailTitle": "Bán lẻ & Hàng tồn kho đã sẵn sàng",
+      "retailDesc": "Giải mã ngay lập tức các mã vạch sản phẩm như UPC, EAN và ISBN trực tiếp từ trình duyệt của bạn.Không cần máy quét phần cứng chuyên dụng—máy ảnh trên điện thoại của bạn hiện là công cụ kiểm kê.",
+      "fastTitle": "Giải mã tốc độ cao",
+      "fastDesc": "Được hỗ trợ bởi WebAssugging, công cụ của chúng tôi xử lý các khung hình trong một phần nghìn giây để quét liên tiếp nhanh chóng.",
+      "privacyTitle": "100% riêng tư",
+      "privacyDesc": "Quá trình xử lý mã vạch diễn ra hoàn toàn trong bộ nhớ cục bộ của bạn.Chúng tôi không bao giờ truyền nguồn cấp dữ liệu máy ảnh của bạn."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Hỗ trợ phổ quát 1D/2D.",
+      "desc": "Công cụ của chúng tôi thực sự nhận dạng được các mã vạch tuyến tính phổ biến nhất được sử dụng trong hậu cần, bán lẻ và chăm sóc sức khỏe, cùng với các ma trận 2D phức tạp.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "bán lẻ",
+        "Logistics": "hậu cần",
+        "Industrial": "công nghiệp",
+        "Packaging": "Bao bì",
         "2D": "2D"
       }
     }

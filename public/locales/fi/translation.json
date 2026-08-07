@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "Varaus",
     "file": "Tiedosto",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Viivakoodinlukija"
   },
   "form": {
     "enterUrl": "Anna verkkosivustosi URL-osoite",
@@ -1140,7 +1140,7 @@
     "terms": "Palveluehdot",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Skannaa viivakoodi"
   },
   "contact": {
     "title": "Ota yhteyttä",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Palauttaa"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Ilmainen viivakoodilukija verkossa - Skannaa UPC & EAN",
+      "desc": "Skannaa viivakoodeja verkossa ilmaiseksi laitteesi kameralla tai lataa kuva.Tukee UPC-, EAN-, Code 128- ja muita koodeja.100% yksityinen ja turvallinen."
+    },
     "hero": {
       "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "title": "Välitön",
+      "titleHighlight": "Viivakoodinlukija",
+      "desc": "Skannaa verkkokamerasta tai lähetä kuva.100 % yksityistä, nolla dataa lähetetään palvelimillemme."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Alusta kamera",
+      "initCamDesc": "Skannaa viivakoodi laitteesi kameralla",
+      "startBtn": "Aloita skannaus",
+      "cancelBtn": "Peruuta",
+      "successTitle": "Skannaus onnistui",
+      "scanAnother": "Skannaa toinen viivakoodi",
+      "orUpload": "Tai lataa kuva",
+      "uploadBtn": "Lataa viivakoodikuvatiedosto",
+      "errorNoBarcode": "Kuvasta ei löydy viivakoodia.Kokeile toista.",
+      "waiting": "Odotetaan skannausta...",
+      "waitingDesc": "Osoita kameralla viivakoodia tai lataa kuva.",
+      "notLink": "Ei linkki"
+    },
+    "howto": {
+      "title": "Viivakoodin skannaus",
+      "subtitle": "Kolme yksinkertaista vaihetta minkä tahansa tuotteen viivakoodin purkamiseen välittömästi.",
+      "step1Title": "Salli pääsy",
+      "step1Desc": "Napsauta \"Aloita skannaus\" ja salli selaimen pääsy laitteesi kameraan.",
+      "step2Title": "Kohdista viivakoodi",
+      "step2Desc": "Pidä tuotetta tukevasti paikallaan ja kohdista viivakoodi vaakasuuntaiseen etsimeen.",
+      "step3Title": "Näytä tulokset",
+      "step3Desc": "Viivakoodi puretaan välittömästi.Voit kopioida koodin tai etsiä sitä verkosta."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Teollisuusluokan viivakoodimoottori",
+      "retailTitle": "Vähittäismyynti ja varasto valmiina",
+      "retailDesc": "Pura tuotteen viivakoodit, kuten UPC, EAN ja ISBN, välittömästi suoraan selaimesta.Erillisiä laitteistoskannereita ei tarvita – puhelimesi kamera on nyt inventaariotyökalu.",
+      "fastTitle": "Nopea dekoodaus",
+      "fastDesc": "WebAssembly-moottorimme käsittelee kehyksiä millisekunneissa nopeaa peräkkäistä skannausta varten.",
+      "privacyTitle": "100% yksityinen",
+      "privacyDesc": "Viivakoodin käsittely tapahtuu kokonaan paikallisessa muistissasi.Emme koskaan lähetä kamerasyötettäsi."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Universaali 1D/2D-tuki.",
+      "desc": "Moottorimme tunnistaa natiivisti yleisimmät logistiikassa, vähittäiskaupassa ja terveydenhuollossa käytetyt lineaariset viivakoodit monimutkaisten 2D-matriisien ohella.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "Vähittäiskauppa",
+        "Logistics": "Logistiikka",
+        "Industrial": "Teollinen",
+        "Packaging": "Pakkaus",
         "2D": "2D"
       }
     }

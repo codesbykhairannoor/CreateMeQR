@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "Reserva",
     "file": "Arquivo",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Leitor de código de barras"
   },
   "form": {
     "enterUrl": "Insira o URL do seu site",
@@ -1140,7 +1140,7 @@
     "terms": "Termos de Serviço",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Digitalizar código de barras"
   },
   "contact": {
     "title": "Contate-nos",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Restaurar"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Scanner de código de barras online gratuito - Digitalize UPC e EAN",
+      "desc": "Digitalize códigos de barras online gratuitamente usando a câmera do seu dispositivo ou carregue uma imagem.Suporta UPC, EAN, Código 128 e mais.100% privado e seguro."
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "Scanner cibernético V1",
+      "title": "Instantâneo",
+      "titleHighlight": "Leitor de código de barras",
+      "desc": "Digitalize a partir da sua webcam ou carregue uma imagem.100% privado, nenhum dado é enviado aos nossos servidores."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Inicializar câmera",
+      "initCamDesc": "Digitalize um código de barras usando a câmera do seu dispositivo",
+      "startBtn": "Comece a digitalizar",
+      "cancelBtn": "Cancelar",
+      "successTitle": "Verificação bem-sucedida",
+      "scanAnother": "Digitalize outro código de barras",
+      "orUpload": "Ou carregue uma imagem",
+      "uploadBtn": "Carregar arquivo de imagem de código de barras",
+      "errorNoBarcode": "Nenhum código de barras encontrado na imagem.Por favor, tente outro.",
+      "waiting": "Aguardando digitalização...",
+      "waitingDesc": "Aponte sua câmera para um código de barras ou carregue uma imagem.",
+      "notLink": "Não é um link"
+    },
+    "howto": {
+      "title": "Como digitalizar um código de barras",
+      "subtitle": "Três etapas simples para decodificar instantaneamente qualquer código de barras de produto.",
+      "step1Title": "Permitir acesso",
+      "step1Desc": "Clique em 'Iniciar digitalização' e permita o acesso do navegador à câmera do seu dispositivo.",
+      "step2Title": "Alinhar código de barras",
+      "step2Desc": "Segure o produto com firmeza e alinhe o código de barras no visor horizontal.",
+      "step3Title": "Ver resultados",
+      "step3Desc": "O código de barras será decodificado instantaneamente.Você pode copiar o código ou pesquisá-lo online."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Mecanismo de código de barras de nível industrial",
+      "retailTitle": "Pronto para varejo e estoque",
+      "retailDesc": "Decodifique instantaneamente códigos de barras de produtos como UPC, EAN e ISBN diretamente do seu navegador.Não são necessários scanners de hardware dedicados – a câmera do seu telefone agora é uma ferramenta de inventário.",
+      "fastTitle": "Decodificação de alta velocidade",
+      "fastDesc": "Desenvolvido com WebAssembly, nosso mecanismo processa quadros em milissegundos para varredura consecutiva rápida.",
+      "privacyTitle": "100% Privado",
+      "privacyDesc": "O processamento do código de barras acontece inteiramente na sua memória local.Nunca transmitimos o feed da sua câmera."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Suporte universal 1D/2D.",
+      "desc": "Nosso mecanismo reconhece nativamente os códigos de barras lineares mais comuns usados ​​em logística, varejo e saúde, juntamente com matrizes 2D complexas.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "Varejo",
+        "Logistics": "Logística",
+        "Industrial": "Industriais",
+        "Packaging": "Embalagem",
         "2D": "2D"
       }
     }

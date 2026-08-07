@@ -1193,6 +1193,10 @@
     "loadBtn": "Restore"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Free Barcode Scanner Online - Scan UPC & EAN",
+      "desc": "Scan barcodes online for free using your device's camera or upload an image. Supports UPC, EAN, Code 128 and more. 100% private and secure."
+    },
     "hero": {
       "badge": "Cyber Scanner V1",
       "title": "Instant",
@@ -1208,7 +1212,20 @@
       "scanAnother": "Scan Another Barcode",
       "orUpload": "Or upload an image",
       "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "errorNoBarcode": "No barcode found in image. Please try another one.",
+      "waiting": "Waiting for scan...",
+      "waitingDesc": "Point your camera at a barcode or upload an image.",
+      "notLink": "Not a link"
+    },
+    "howto": {
+      "title": "How to Scan a Barcode",
+      "subtitle": "Three simple steps to decode any product barcode instantly.",
+      "step1Title": "Allow Access",
+      "step1Desc": "Click 'Start Scanning' and allow browser access to your device's camera.",
+      "step2Title": "Align Barcode",
+      "step2Desc": "Hold your product steady and align the barcode within the horizontal viewfinder.",
+      "step3Title": "View Results",
+      "step3Desc": "The barcode will be decoded instantly. You can copy the code or search it online."
     },
     "features": {
       "whyTitle": "Industrial-Grade Barcode Engine",

@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "बुकिंग",
     "file": "फ़ाइल",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "बारकोड स्कैनर"
   },
   "form": {
     "enterUrl": "अपनी वेबसाइट का यूआरएल दर्ज करें",
@@ -1140,7 +1140,7 @@
     "terms": "सेवा की शर्तें",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "बारकोड स्कैन करें"
   },
   "contact": {
     "title": "हमसे संपर्क करें",
@@ -1211,40 +1211,57 @@
     "loadBtn": "पुनर्स्थापित करना"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "मुफ़्त बारकोड स्कैनर ऑनलाइन - यूपीसी और ईएएन स्कैन करें",
+      "desc": "अपने डिवाइस के कैमरे का उपयोग करके बारकोड को निःशुल्क ऑनलाइन स्कैन करें या एक छवि अपलोड करें।यूपीसी, ईएएन, कोड 128 और अधिक का समर्थन करता है।100% निजी और सुरक्षित।"
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "साइबर स्कैनर V1",
+      "title": "तुरंत",
+      "titleHighlight": "बारकोड स्कैनर",
+      "desc": "अपने वेबकैम से स्कैन करें या एक छवि अपलोड करें।100% निजी, शून्य डेटा हमारे सर्वर पर भेजा जाता है।"
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "कैमरा प्रारंभ करें",
+      "initCamDesc": "अपने डिवाइस के कैमरे का उपयोग करके बारकोड को स्कैन करें",
+      "startBtn": "स्कैनिंग प्रारंभ करें",
+      "cancelBtn": "रद्द करें",
+      "successTitle": "स्कैन सफल",
+      "scanAnother": "दूसरे बारकोड को स्कैन करें",
+      "orUpload": "या एक छवि अपलोड करें",
+      "uploadBtn": "बारकोड छवि फ़ाइल अपलोड करें",
+      "errorNoBarcode": "छवि में कोई बारकोड नहीं मिला.कृपया कोई दूसरा प्रयास करें.",
+      "waiting": "स्कैन की प्रतीक्षा है...",
+      "waitingDesc": "अपने कैमरे को बारकोड पर इंगित करें या एक छवि अपलोड करें।",
+      "notLink": "कोई लिंक नहीं"
+    },
+    "howto": {
+      "title": "बारकोड को कैसे स्कैन करें",
+      "subtitle": "किसी भी उत्पाद के बारकोड को तुरंत डिकोड करने के तीन सरल चरण।",
+      "step1Title": "प्रवेश की अनुमति दें",
+      "step1Desc": "'स्कैनिंग प्रारंभ करें' पर क्लिक करें और ब्राउज़र को अपने डिवाइस के कैमरे तक पहुंच की अनुमति दें।",
+      "step2Title": "बारकोड संरेखित करें",
+      "step2Desc": "अपने उत्पाद को स्थिर रखें और बारकोड को क्षैतिज दृश्यदर्शी के भीतर संरेखित करें।",
+      "step3Title": "परिणाम देखें",
+      "step3Desc": "बारकोड तुरंत डिकोड हो जाएगा।आप कोड को कॉपी कर सकते हैं या इसे ऑनलाइन खोज सकते हैं।"
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "औद्योगिक-ग्रेड बारकोड इंजन",
+      "retailTitle": "खुदरा एवं इन्वेंटरी तैयार",
+      "retailDesc": "सीधे अपने ब्राउज़र से यूपीसी, ईएएन और आईएसबीएन जैसे उत्पाद बारकोड को तुरंत डीकोड करें।किसी समर्पित हार्डवेयर स्कैनर की आवश्यकता नहीं है—आपके फ़ोन का कैमरा अब एक इन्वेंट्री टूल है।",
+      "fastTitle": "हाई-स्पीड डिकोडिंग",
+      "fastDesc": "WebAssembly द्वारा संचालित, हमारा इंजन तेजी से लगातार स्कैनिंग के लिए मिलीसेकंड में फ़्रेम संसाधित करता है।",
+      "privacyTitle": "100% निजी",
+      "privacyDesc": "बारकोड प्रोसेसिंग पूरी तरह से आपकी स्थानीय मेमोरी में होती है।हम कभी भी आपका कैमरा फ़ीड प्रसारित नहीं करते।"
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "यूनिवर्सल 1डी/2डी सपोर्ट।",
+      "desc": "हमारा इंजन मूल रूप से जटिल 2डी मैट्रिसेस के साथ-साथ लॉजिस्टिक्स, रिटेल और हेल्थकेयर में उपयोग किए जाने वाले सबसे आम रैखिक बारकोड को पहचानता है।",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "खुदरा",
+        "Logistics": "रसद",
+        "Industrial": "औद्योगिक",
+        "Packaging": "पैकेजिंग",
         "2D": "2D"
       }
     }

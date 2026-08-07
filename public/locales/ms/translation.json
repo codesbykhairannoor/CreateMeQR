@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "Tempahan",
     "file": "Fail",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Pengimbas Kod Bar"
   },
   "form": {
     "enterUrl": "Masukkan URL tapak web anda",
@@ -1140,7 +1140,7 @@
     "terms": "Syarat Perkhidmatan",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Imbas Kod Bar"
   },
   "contact": {
     "title": "Hubungi Kami",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Pulihkan"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Pengimbas Kod Bar Percuma Dalam Talian - Imbas UPC & EAN",
+      "desc": "Imbas kod bar dalam talian secara percuma menggunakan kamera peranti anda atau muat naik imej.Menyokong UPC, EAN, Kod 128 dan banyak lagi.100% peribadi dan selamat."
+    },
     "hero": {
-      "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "badge": "Pengimbas Siber V1",
+      "title": "segera",
+      "titleHighlight": "Pengimbas Kod Bar",
+      "desc": "Imbas daripada kamera web anda atau muat naik imej.100% peribadi, sifar data dihantar ke pelayan kami."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Mulakan Kamera",
+      "initCamDesc": "Imbas kod bar menggunakan kamera peranti anda",
+      "startBtn": "Mula Mengimbas",
+      "cancelBtn": "Batal",
+      "successTitle": "Imbasan Berjaya",
+      "scanAnother": "Imbas Kod Bar Lain",
+      "orUpload": "Atau muat naik imej",
+      "uploadBtn": "Muat Naik Fail Imej Kod Bar",
+      "errorNoBarcode": "Tiada kod bar ditemui dalam imej.Sila cuba yang lain.",
+      "waiting": "Menunggu imbasan...",
+      "waitingDesc": "Halakan kamera anda pada kod bar atau muat naik imej.",
+      "notLink": "Bukan pautan"
+    },
+    "howto": {
+      "title": "Cara Mengimbas Kod Bar",
+      "subtitle": "Tiga langkah mudah untuk menyahkod sebarang kod bar produk serta-merta.",
+      "step1Title": "Benarkan Akses",
+      "step1Desc": "Klik 'Mula Mengimbas' dan benarkan akses penyemak imbas ke kamera peranti anda.",
+      "step2Title": "Selaraskan Kod Bar",
+      "step2Desc": "Pegang produk anda dengan mantap dan selaraskan kod bar dalam pemidang tilik mendatar.",
+      "step3Title": "Lihat Keputusan",
+      "step3Desc": "Kod bar akan dinyahkod serta-merta.Anda boleh menyalin kod atau mencarinya dalam talian."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Enjin Kod Bar Gred Perindustrian",
+      "retailTitle": "Sedia Runcit & Inventori",
+      "retailDesc": "Menyahkod kod bar produk seperti UPC, EAN dan ISBN serta-merta terus daripada penyemak imbas anda.Tiada pengimbas perkakasan khusus diperlukan—kamera telefon anda kini merupakan alat inventori.",
+      "fastTitle": "Penyahkodan Berkelajuan Tinggi",
+      "fastDesc": "Dikuasakan oleh WebAssembly, enjin kami memproses bingkai dalam milisaat untuk pengimbasan berturut-turut yang pantas.",
+      "privacyTitle": "100% Persendirian",
+      "privacyDesc": "Pemprosesan kod bar berlaku sepenuhnya dalam memori tempatan anda.Kami tidak pernah menghantar suapan kamera anda."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Sokongan 1D/2D Universal.",
+      "desc": "Enjin kami mengiktiraf kod bar linear yang paling biasa digunakan dalam logistik, runcit dan penjagaan kesihatan, di samping matriks 2D yang kompleks.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "Runcit",
+        "Logistics": "Logistik",
+        "Industrial": "Perindustrian",
+        "Packaging": "Pembungkusan",
         "2D": "2D"
       }
     }

@@ -36,7 +36,7 @@
     "amazon": "Amazon",
     "booking": "Online rezervace",
     "file": "Soubor / Berkas",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Skener čárových kódů"
   },
   "form": {
     "enterUrl": "Zadejte URL svého webu",
@@ -1140,7 +1140,7 @@
     "terms": "Podmínky služby",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Naskenujte čárový kód"
   },
   "contact": {
     "title": "Kontaktujte nás",
@@ -1211,40 +1211,57 @@
     "loadBtn": "Obnovit"
   },
   "scanbarcode": {
+    "seo": {
+      "title": "Bezplatný skener čárových kódů online – skenování UPC a EAN",
+      "desc": "Naskenujte čárové kódy online zdarma pomocí fotoaparátu vašeho zařízení nebo nahrajte obrázek.Podporuje UPC, EAN, Code 128 a další.100% soukromé a bezpečné."
+    },
     "hero": {
       "badge": "Cyber Scanner V1",
-      "title": "Instant",
-      "titleHighlight": "Barcode Scanner",
-      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+      "title": "Okamžitě",
+      "titleHighlight": "Skener čárových kódů",
+      "desc": "Naskenujte z webové kamery nebo nahrajte obrázek.100% soukromé, na naše servery se neposílají žádná data."
     },
     "workspace": {
-      "initCam": "Initialize Camera",
-      "initCamDesc": "Scan a barcode using your device's camera",
-      "startBtn": "Start Scanning",
-      "cancelBtn": "Cancel",
-      "successTitle": "Scan Successful",
-      "scanAnother": "Scan Another Barcode",
-      "orUpload": "Or upload an image",
-      "uploadBtn": "Upload Barcode Image File",
-      "errorNoBarcode": "No barcode found in image. Please try another one."
+      "initCam": "Inicializujte fotoaparát",
+      "initCamDesc": "Naskenujte čárový kód pomocí fotoaparátu vašeho zařízení",
+      "startBtn": "Spusťte skenování",
+      "cancelBtn": "Zrušit",
+      "successTitle": "Skenování proběhlo úspěšně",
+      "scanAnother": "Naskenujte další čárový kód",
+      "orUpload": "Nebo nahrajte obrázek",
+      "uploadBtn": "Nahrajte soubor obrázku s čárovým kódem",
+      "errorNoBarcode": "Na obrázku nebyl nalezen čárový kód.Zkuste prosím jiný.",
+      "waiting": "Čekání na skenování...",
+      "waitingDesc": "Namiřte fotoaparát na čárový kód nebo nahrajte obrázek.",
+      "notLink": "Ne odkaz"
+    },
+    "howto": {
+      "title": "Jak naskenovat čárový kód",
+      "subtitle": "Tři jednoduché kroky k okamžitému dekódování libovolného čárového kódu produktu.",
+      "step1Title": "Povolit přístup",
+      "step1Desc": "Klikněte na „Spustit skenování“ a povolte prohlížeči přístup k fotoaparátu vašeho zařízení.",
+      "step2Title": "Zarovnat čárový kód",
+      "step2Desc": "Držte produkt pevně a zarovnejte čárový kód v horizontálním hledáčku.",
+      "step3Title": "Zobrazit výsledky",
+      "step3Desc": "Čárový kód bude okamžitě dekódován.Kód můžete zkopírovat nebo vyhledat online."
     },
     "features": {
-      "whyTitle": "Industrial-Grade Barcode Engine",
-      "retailTitle": "Retail & Inventory Ready",
-      "retailDesc": "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.",
-      "fastTitle": "High-Speed Decoding",
-      "fastDesc": "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.",
-      "privacyTitle": "100% Private",
-      "privacyDesc": "Barcode processing happens entirely in your local memory. We never transmit your camera feed."
+      "whyTitle": "Průmyslový stroj s čárovými kódy",
+      "retailTitle": "Připraveno pro maloobchod a inventář",
+      "retailDesc": "Okamžitě dekódujte čárové kódy produktů jako UPC, EAN a ISBN přímo z vašeho prohlížeče.Nejsou potřeba žádné speciální hardwarové skenery – fotoaparát vašeho telefonu je nyní inventárním nástrojem.",
+      "fastTitle": "Vysokorychlostní dekódování",
+      "fastDesc": "Náš engine, založený na WebAssembly, zpracovává snímky v milisekundách pro rychlé po sobě jdoucí skenování.",
+      "privacyTitle": "100% soukromé",
+      "privacyDesc": "Zpracování čárového kódu probíhá výhradně ve vaší lokální paměti.Nikdy nepřenášíme vaši kameru."
     },
     "formats": {
-      "title": "Universal 1D/2D Support.",
-      "desc": "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.",
+      "title": "Univerzální podpora 1D/2D.",
+      "desc": "Náš engine nativně rozpoznává nejběžnější lineární čárové kódy používané v logistice, maloobchodu a zdravotnictví, spolu se složitými 2D maticemi.",
       "type": {
-        "Retail": "Retail",
-        "Logistics": "Logistics",
-        "Industrial": "Industrial",
-        "Packaging": "Packaging",
+        "Retail": "Maloobchod",
+        "Logistics": "Logistika",
+        "Industrial": "Průmyslová",
+        "Packaging": "Balení",
         "2D": "2D"
       }
     }
