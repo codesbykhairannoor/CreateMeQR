@@ -35,7 +35,8 @@
     "audio": "オーディオ",
     "amazon": "Amazon",
     "booking": "予約",
-    "file": "ファイル"
+    "file": "ファイル",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "ウェブサイトのURLを入力",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "産業およびデータ",
     "company": "会社",
     "privacy": "プライバシーポリシー",
-    "terms": "利用規約"
+    "terms": "利用規約",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "お問い合わせ",
@@ -1159,5 +1163,24 @@
     "saved": "履歴に保存されました！",
     "savedAt": "保存場所",
     "loadBtn": "復元する"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }

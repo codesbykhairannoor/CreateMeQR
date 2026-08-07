@@ -35,7 +35,8 @@
     "audio": "Áudio",
     "amazon": "Amazon",
     "booking": "Reserva",
-    "file": "Arquivo"
+    "file": "Arquivo",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "Insira o URL do seu site",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "Industrial e dados",
     "company": "Empresa",
     "privacy": "política de Privacidade",
-    "terms": "Termos de Serviço"
+    "terms": "Termos de Serviço",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "Contate-nos",
@@ -1205,5 +1209,24 @@
     "saved": "Salvo na história!",
     "savedAt": "Salvo em",
     "loadBtn": "Restaurar"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }

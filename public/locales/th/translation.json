@@ -35,7 +35,8 @@
     "audio": "เสียง",
     "amazon": "Amazon",
     "booking": "จอง",
-    "file": "ไฟล์"
+    "file": "ไฟล์",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "ป้อน URL เว็บไซต์ของคุณ",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "อุตสาหกรรมและข้อมูล",
     "company": "บริษัท",
     "privacy": "นโยบายความเป็นส่วนตัว",
-    "terms": "ข้อกำหนดในการให้บริการ"
+    "terms": "ข้อกำหนดในการให้บริการ",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "ติดต่อเรา",
@@ -1205,5 +1209,24 @@
     "saved": "บันทึกเป็นประวัติศาสตร์แล้ว!",
     "savedAt": "บันทึกไว้ที่",
     "loadBtn": "คืนค่า"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }

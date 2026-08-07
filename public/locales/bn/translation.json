@@ -35,7 +35,8 @@
     "audio": "অডিও/পডকাস্ট",
     "amazon": "Amazon",
     "booking": "অনলাইন বুকিং",
-    "file": "ফাইল/বেরকাস"
+    "file": "ফাইল/বেরকাস",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "আপনার ওয়েবসাইটের URL লিখুন",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "শিল্প ও তথ্য",
     "company": "কোম্পানি",
     "privacy": "গোপনীয়তা নীতি",
-    "terms": "পরিষেবার শর্তাবলী"
+    "terms": "পরিষেবার শর্তাবলী",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "আমাদের সাথে যোগাযোগ করুন",
@@ -1205,5 +1209,24 @@
     "saved": "ইতিহাসে সংরক্ষিত!",
     "savedAt": "এ সংরক্ষণ করা হয়েছে",
     "loadBtn": "পুনরুদ্ধার করুন"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }

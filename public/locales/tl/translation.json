@@ -35,7 +35,8 @@
     "audio": "Audio",
     "amazon": "Amazon",
     "booking": "Pag-book",
-    "file": "File"
+    "file": "File",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "Ilagay ang URL ng iyong website",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "Pang-industriya at Data",
     "company": "kumpanya",
     "privacy": "Patakaran sa Privacy",
-    "terms": "Mga Tuntunin ng Serbisyo"
+    "terms": "Mga Tuntunin ng Serbisyo",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "Makipag-ugnayan sa Amin",
@@ -1205,5 +1209,24 @@
     "saved": "Nai-save sa kasaysayan!",
     "savedAt": "Nai-save sa",
     "loadBtn": "Ibalik"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }

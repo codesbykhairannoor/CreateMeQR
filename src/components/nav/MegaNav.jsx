@@ -110,11 +110,26 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
         </div>
       </div>
 
-      {/* 3. Scan QR */}
-      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className="flex items-center gap-1.5 py-2 text-[15px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-        <Scan className="w-4 h-4" />
-        {t('nav.scan', 'Scan QR')}
-      </a>
+      {/* 3. Scanner (Dropdown) */}
+      <div className="relative group">
+        <button className="flex items-center gap-1.5 py-2 text-[15px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          <Scan className="w-4 h-4" />
+          {t('nav.scanGroup', 'Scanner')}
+          <ChevronDown className="w-4 h-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
+        </button>
+        <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+          <div className="bg-white dark:bg-[#081226] rounded-3xl shadow-[0_30px_80px_-15px_rgba(0,0,0,0.3)] border border-blue-100 dark:border-[#102040] overflow-hidden p-2 w-[220px] flex flex-col">
+            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className="px-4 py-3 rounded-xl hover:bg-blue-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors flex items-center gap-3">
+              <Scan className="w-4 h-4 text-blue-600" />
+              {t('nav.scanqr', 'Scan QR Code')}
+            </a>
+            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} className="px-4 py-3 rounded-xl hover:bg-indigo-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-indigo-700 dark:hover:text-indigo-400 transition-colors flex items-center gap-3">
+              <ScanLine className="w-4 h-4 text-indigo-600" />
+              {t('nav.scanbarcode', 'Scan Barcode')}
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* 3. Barcode Maker (Mega Menu) */}
       <div className="relative group">

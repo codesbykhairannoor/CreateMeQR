@@ -35,7 +35,8 @@
     "audio": "音频",
     "amazon": "Amazon",
     "booking": "预订",
-    "file": "文件"
+    "file": "文件",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "输入您的网站URL",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "工业与数据",
     "company": "公司",
     "privacy": "隐私政策",
-    "terms": "服务条款"
+    "terms": "服务条款",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "联系我们",
@@ -1159,5 +1163,24 @@
     "saved": "已被载入史册！",
     "savedAt": "保存于",
     "loadBtn": "恢复"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }

@@ -35,7 +35,8 @@
     "audio": "Ήχος",
     "amazon": "Amazon",
     "booking": "Κράτηση",
-    "file": "Αρχείο"
+    "file": "Αρχείο",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "Εισαγάγετε τη διεύθυνση URL του ιστότοπού σας",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "Βιομηχανικά & Δεδομένα",
     "company": "Εταιρεία",
     "privacy": "Πολιτική Απορρήτου",
-    "terms": "Όροι Παροχής Υπηρεσιών"
+    "terms": "Όροι Παροχής Υπηρεσιών",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "Επικοινωνήστε μαζί μας",
@@ -1205,5 +1209,24 @@
     "saved": "Αποθηκεύτηκε στην ιστορία!",
     "savedAt": "Αποθηκεύτηκε στις",
     "loadBtn": "Επαναφέρω"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }

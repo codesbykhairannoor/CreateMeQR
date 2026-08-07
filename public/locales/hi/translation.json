@@ -35,7 +35,8 @@
     "audio": "ऑडियो",
     "amazon": "Amazon",
     "booking": "बुकिंग",
-    "file": "फ़ाइल"
+    "file": "फ़ाइल",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "अपनी वेबसाइट का यूआरएल दर्ज करें",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "औद्योगिक एवं डेटा",
     "company": "कंपनी",
     "privacy": "गोपनीयता नीति",
-    "terms": "सेवा की शर्तें"
+    "terms": "सेवा की शर्तें",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "हमसे संपर्क करें",
@@ -1205,5 +1209,24 @@
     "saved": "इतिहास में सहेजा गया!",
     "savedAt": "पर सहेजा गया",
     "loadBtn": "पुनर्स्थापित करना"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }

@@ -35,7 +35,8 @@
     "audio": "오디오",
     "amazon": "Amazon",
     "booking": "예약",
-    "file": "파일"
+    "file": "파일",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "웹사이트 URL 입력",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "산업 및 데이터",
     "company": "회사",
     "privacy": "개인 정보 보호 정책",
-    "terms": "서비스 약관"
+    "terms": "서비스 약관",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "문의하기",
@@ -1205,5 +1209,24 @@
     "saved": "기록에 저장되었습니다!",
     "savedAt": "저장 위치",
     "loadBtn": "복원하다"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }

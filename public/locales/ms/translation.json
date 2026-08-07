@@ -35,7 +35,8 @@
     "audio": "Audio",
     "amazon": "Amazon",
     "booking": "Tempahan",
-    "file": "Fail"
+    "file": "Fail",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "Masukkan URL tapak web anda",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "Perindustrian & Data",
     "company": "Syarikat",
     "privacy": "Dasar Privasi",
-    "terms": "Syarat Perkhidmatan"
+    "terms": "Syarat Perkhidmatan",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "Hubungi Kami",
@@ -1205,5 +1209,24 @@
     "saved": "Disimpan dalam sejarah!",
     "savedAt": "Disimpan di",
     "loadBtn": "Pulihkan"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }

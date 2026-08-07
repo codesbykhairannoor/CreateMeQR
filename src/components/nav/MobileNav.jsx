@@ -49,12 +49,27 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
         )}
       </div>
 
-      {/* 2. Scan QR */}
-      <div className="border-b border-zinc-100 dark:border-zinc-800 pb-2">
-        <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} onClick={onClose} className="flex items-center gap-2 py-3 text-[15px] font-bold text-zinc-800 dark:text-zinc-200">
-          <Scan className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
-          {t('nav.scan', 'Scan QR')}
-        </a>
+      {/* 2. Scanner Group */}
+      <div className="flex flex-col border-b border-zinc-100 dark:border-zinc-800 pb-2">
+        <button onClick={() => toggleSection('scanGroup')} className="flex items-center justify-between py-3 text-[15px] font-bold text-zinc-800 dark:text-zinc-200">
+          <div className="flex items-center gap-2">
+            <Scan className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
+            {t('nav.scanGroup', 'Scanner')}
+          </div>
+          {openSection === 'scanGroup' ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+        </button>
+        {openSection === 'scanGroup' && (
+          <div className="flex flex-col gap-2 pl-7 pr-2 pt-2 pb-4 animate-fade-in-up-fast">
+            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-[#102040] transition-colors text-zinc-700 dark:text-zinc-300">
+              <Scan className="w-4 h-4 opacity-70" />
+              <span className="text-[13px] font-bold">{t('nav.scanqr', 'Scan QR Code')}</span>
+            </a>
+            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-indigo-50 dark:hover:bg-[#102040] transition-colors text-zinc-700 dark:text-zinc-300">
+              <ScanLine className="w-4 h-4 opacity-70" />
+              <span className="text-[13px] font-bold">{t('nav.scanbarcode', 'Scan Barcode')}</span>
+            </a>
+          </div>
+        )}
       </div>
 
       {/* 2.5 History */}

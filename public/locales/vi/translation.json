@@ -35,7 +35,8 @@
     "audio": "Âm thanh",
     "amazon": "Amazon",
     "booking": "Đặt chỗ",
-    "file": "Tập tin"
+    "file": "Tập tin",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "Nhập URL trang web của bạn",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "Công nghiệp & Dữ liệu",
     "company": "Công ty",
     "privacy": "Chính sách bảo mật",
-    "terms": "Điều khoản dịch vụ"
+    "terms": "Điều khoản dịch vụ",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "Liên hệ với chúng tôi",
@@ -1205,5 +1209,24 @@
     "saved": "Đã lưu vào lịch sử!",
     "savedAt": "Đã lưu tại",
     "loadBtn": "Khôi phục"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }

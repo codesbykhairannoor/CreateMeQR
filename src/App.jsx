@@ -11,6 +11,7 @@ import TermsOfService from './pages/TermsOfService';
 import Compare from './pages/Compare';
 import BarcodeGenerator from './pages/BarcodeGenerator';
 import ScanQr from './pages/ScanQr';
+import ScanBarcode from './pages/ScanBarcode';
 import Contact from './pages/Contact';
 import LandingContent from './components/LandingContent';
 import SeoArticle from './components/SeoArticle';
@@ -64,7 +65,8 @@ export default function App() {
   const toolType = routeToToolMap[currentLangCode]?.[slug];
   const isBarcode = toolType === 'barcode' || slug === '/barcode-generator';
   const isScanQr = toolType === 'scanqr' || slug === '/scan-qr';
-  const isStaticPage = isAbout || isPrivacy || isTerms || isCompare || isContact || isBarcode || isScanQr;
+  const isScanBarcode = toolType === 'scanbarcode' || slug === '/scan-barcode';
+  const isStaticPage = isAbout || isPrivacy || isTerms || isCompare || isContact || isBarcode || isScanQr || isScanBarcode;
 
   const currentType = routeToToolMap[currentLangCode]?.[slug] || 'url';
   const typeName = t(`types.${currentType}`);
@@ -229,6 +231,7 @@ export default function App() {
           {isContact && <Contact />}
           {isBarcode && <BarcodeGenerator />}
           {isScanQr && <ScanQr />}
+          {isScanBarcode && <ScanBarcode />}
         </>
       )}
     </MainLayout>

@@ -35,7 +35,8 @@
     "audio": "Zvuk / podcast",
     "amazon": "Amazon",
     "booking": "Online rezervace",
-    "file": "Soubor / Berkas"
+    "file": "Soubor / Berkas",
+    "scanbarcode": "Barcode Scanner"
   },
   "form": {
     "enterUrl": "Zadejte URL svého webu",
@@ -1136,7 +1137,10 @@
     "catIndustrial": "Průmysl a data",
     "company": "Společnost",
     "privacy": "Zásady ochrany osobních údajů",
-    "terms": "Podmínky služby"
+    "terms": "Podmínky služby",
+    "scanGroup": "Scanner",
+    "scanqr": "Scan QR Code",
+    "scanbarcode": "Scan Barcode"
   },
   "contact": {
     "title": "Kontaktujte nás",
@@ -1205,5 +1209,24 @@
     "saved": "Uloženo do historie!",
     "savedAt": "Uloženo v",
     "loadBtn": "Obnovit"
+  },
+  "scanbarcode": {
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "Instant",
+      "titleHighlight": "Barcode Scanner",
+      "desc": "Scan from your webcam or upload an image. 100% private, zero data is sent to our servers."
+    },
+    "workspace": {
+      "initCam": "Initialize Camera",
+      "initCamDesc": "Scan a barcode using your device's camera",
+      "startBtn": "Start Scanning",
+      "cancelBtn": "Cancel",
+      "successTitle": "Scan Successful",
+      "scanAnother": "Scan Another Barcode",
+      "orUpload": "Or upload an image",
+      "uploadBtn": "Upload Barcode Image File",
+      "errorNoBarcode": "No barcode found in image. Please try another one."
+    }
   }
 }
