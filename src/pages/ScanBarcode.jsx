@@ -249,104 +249,81 @@ export default function ScanBarcode() {
         </div>
       </section>
 
-      {/* Feature Section 1 */}
+      {/* Feature Section 1 (Bento Box Layout) */}
       <section className="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-[#1e2d4a]">
-        <h2 className="text-4xl font-bold text-center mb-16 tracking-tighter text-zinc-900 dark:text-white">{t("scanbarcode.features.whyTitle", "Why use our Scanner?")}</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white dark:bg-[#0a1128] p-10 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] hover:border-blue-500/30 transition-all group shadow-xl">
-            <div className="w-16 h-16 bg-blue-50 dark:bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <Camera className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 tracking-tighter text-zinc-900 dark:text-white max-w-2xl">{t("scanbarcode.features.whyTitle", "Industrial-Grade Barcode Engine")}</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+          {/* Main Card */}
+          <div className="md:col-span-8 bg-gradient-to-br from-indigo-500 to-indigo-700 p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-white/10 blur-[80px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
+            <div className="relative z-10 flex flex-col h-full justify-between">
+              <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center mb-8">
+                <ScanLine className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <h3 className="text-3xl font-bold mb-4 text-white">{t("scanbarcode.features.retailTitle", "Retail & Inventory Ready")}</h3>
+                <p className="text-indigo-100 font-medium leading-relaxed text-lg max-w-lg">
+                  {t("scanbarcode.features.retailDesc", "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.")}
+                </p>
+              </div>
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">{t("scanbarcode.features.noAppTitle", "No App Required")}</h3>
-            <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
-              {t("scanbarcode.features.noAppDesc", "Scan QR codes directly from your browser without downloading any bloated apps. Works perfectly on iOS, Android, and Desktop.")}
-            </p>
           </div>
-          <div className="bg-white dark:bg-[#0a1128] p-10 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] hover:border-blue-500/30 transition-all group shadow-xl">
-            <div className="w-16 h-16 bg-indigo-50 dark:bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <Lock className="w-8 h-8 text-indigo-600 dark:text-blue-400" />
+
+          {/* Side Cards */}
+          <div className="md:col-span-4 flex flex-col gap-6">
+            <div className="bg-white dark:bg-[#0a1128] p-8 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] hover:border-indigo-500/30 transition-all flex-1 shadow-xl">
+              <Zap className="w-8 h-8 text-indigo-600 dark:text-indigo-400 mb-6" />
+              <h3 className="text-xl font-bold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.features.fastTitle", "High-Speed Decoding")}</h3>
+              <p className="text-slate-600 dark:text-slate-400 font-medium text-sm leading-relaxed">
+                {t("scanbarcode.features.fastDesc", "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.")}
+              </p>
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">{t("scanbarcode.features.secureTitle", "100% Secure & Private")}</h3>
-            <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
-              {t("scanbarcode.features.secureDesc", "Your images and camera feed are processed entirely on your device. We never send your scan data to any external servers.")}
-            </p>
-          </div>
-          <div className="bg-white dark:bg-[#0a1128] p-10 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] hover:border-blue-500/30 transition-all group shadow-xl">
-            <div className="w-16 h-16 bg-purple-50 dark:bg-purple-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <Zap className="w-8 h-8 text-purple-600 dark:text-purple-400" />
+            
+            <div className="bg-white dark:bg-[#0a1128] p-8 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] hover:border-indigo-500/30 transition-all flex-1 shadow-xl">
+              <ShieldCheck className="w-8 h-8 text-teal-600 dark:text-teal-400 mb-6" />
+              <h3 className="text-xl font-bold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.features.privacyTitle", "100% Private")}</h3>
+              <p className="text-slate-600 dark:text-slate-400 font-medium text-sm leading-relaxed">
+                {t("scanbarcode.features.privacyDesc", "Barcode processing happens entirely in your local memory. We never transmit your camera feed.")}
+              </p>
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">{t("scanbarcode.features.fastTitle", "Lightning Fast")}</h3>
-            <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
-              {t("scanbarcode.features.fastDesc", "Optimized WASM engine decodes complex QR codes instantly, even in low light conditions or with blurry cameras.")}
-            </p>
           </div>
         </div>
       </section>
 
-      {/* Feature Section 2 (New Layout) */}
-      <section className="bg-blue-600 dark:bg-blue-900 py-24 mt-12 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/10 blur-[100px] rounded-full"></div>
-        <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-16">
-          <div className="flex-1 space-y-8">
-            <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter">
-              {t("scanbarcode.features.moreTitle", "More Than Just URLs.")}
+      {/* Feature Section 2 (Supported Formats Spec Sheet) */}
+      <section className="bg-zinc-900 dark:bg-black py-24 mt-12 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-indigo-600/10 blur-[100px] rounded-full"></div>
+        <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col lg:flex-row gap-16">
+          <div className="lg:w-1/3">
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-6">
+              {t("scanbarcode.formats.title", "Universal 1D/2D Support.")}
             </h2>
-            <p className="text-xl text-blue-100 font-medium leading-relaxed">
-              {t("scanbarcode.features.moreDesc", "Our advanced scanner instantly recognizes various payload types. It doesn't just read the text, it understands the context.")}
+            <p className="text-lg text-zinc-400 font-medium leading-relaxed mb-8">
+              {t("scanbarcode.formats.desc", "Our engine natively recognizes the most common linear barcodes used in logistics, retail, and healthcare, alongside complex 2D matrices.")}
             </p>
-            <ul className="space-y-4 text-white font-bold text-lg">
-              <li className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center"><ShieldCheck className="w-4 h-4" /></div>
-                {t("scanbarcode.features.moreList1", "WiFi Credentials Parsing")}
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center"><ShieldCheck className="w-4 h-4" /></div>
-                {t("scanbarcode.features.moreList2", "vCard Contact Import")}
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center"><ShieldCheck className="w-4 h-4" /></div>
-                {t("scanbarcode.features.moreList3", "Crypto Addresses")}
-              </li>
-            </ul>
           </div>
-          <div className="flex-1 w-full relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 dark:from-blue-900 to-transparent z-10"></div>
-            <div className="bg-white/10 p-8 rounded-3xl border border-white/20 backdrop-blur-xl transform rotate-3 shadow-2xl">
-              <div className="flex items-center gap-4 mb-6 border-b border-white/20 pb-4">
-                <div className="w-12 h-12 rounded-xl bg-blue-500 flex items-center justify-center">
-                  <Smartphone className="text-white w-6 h-6" />
+          
+          <div className="lg:w-2/3">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+              {[
+                { name: 'EAN-13', type: 'Retail' },
+                { name: 'UPC-A', type: 'Retail' },
+                { name: 'Code 128', type: 'Logistics' },
+                { name: 'Code 39', type: 'Industrial' },
+                { name: 'ITF-14', type: 'Packaging' },
+                { name: 'Codabar', type: 'Logistics' },
+                { name: 'EAN-8', type: 'Retail' },
+                { name: 'UPC-E', type: 'Retail' },
+                { name: 'Data Matrix', type: '2D' }
+              ].map((fmt, i) => (
+                <div key={i} className="bg-zinc-800/50 border border-zinc-700 p-4 rounded-2xl flex flex-col">
+                  <span className="text-zinc-500 text-[10px] uppercase font-bold tracking-widest mb-1">{t(`scanbarcode.formats.type.${fmt.type}`, fmt.type)}</span>
+                  <span className="text-zinc-100 font-bold font-mono">{fmt.name}</span>
                 </div>
-                <div>
-                  <div className="text-white font-bold text-xl">WIFI:S:MyNetwork;T:WPA;P:1234;;</div>
-                  <div className="text-blue-200 text-sm">Decoded in 40ms</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 border-b border-white/20 pb-4 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-green-500 flex items-center justify-center">
-                  <Globe className="text-white w-6 h-6" />
-                </div>
-                <div>
-                  <div className="text-white font-bold text-xl">https://createmy-qr.com/</div>
-                  <div className="text-blue-200 text-sm">Decoded in 35ms</div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Feature Section 3 (Supported Formats Grid) */}
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold tracking-tighter text-zinc-900 dark:text-white">{t("scanbarcode.features.formatTitle", "Universal Format Support")}</h2>
-          <p className="text-xl text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">{t("scanbarcode.features.formatDesc", "Upload an image containing any of these 2D barcodes, and we will decode it instantly right in your browser.")}</p>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {['QR Code', 'Micro QR', 'Aztec Code', 'Data Matrix', 'PDF417', 'MaxiCode', 'DotCode', 'GS1 DataBar'].map(fmt => (
-            <div key={fmt} className="bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] py-6 px-4 rounded-2xl text-center font-bold text-slate-800 dark:text-slate-200 shadow-sm hover:shadow-md transition-shadow">
-              {fmt}
-            </div>
-          ))}
         </div>
       </section>
       
