@@ -1191,5 +1191,15 @@
     "h3_5": "Gebruiksscenario's voor kleine teams",
     "p5_3": "Docenten gebruiken onze tool ook voor klassikale lessen. Ze creëren weblinks voor wetenschappelijke spelletjes en leestaken. Ze plakken de bedrukte vierkantjes op de bureaus van studenten. De leerlingen scannen de codes met schooltablets. Dit maakt leren leuk en zeer snel.",
     "p5_4": "Daarnaast gebruiken evenemententeams onze site voor digitale ticketpoortjes. Ze genereren contactkaarten en kaartlinks voor muziekshows. Ze printen de codes op VIP-passen en podiumposters. Dit helpt duizenden gasten hun zitplaatsen te vinden en de showtijden te lezen zonder om hulp te vragen."
+  },
+  "history": {
+    "title": "Lokale geschiedenis",
+    "empty": "Nog geen QR-codes opgeslagen.",
+    "clear": "Geschiedenis wissen",
+    "disclaimer": "Uw QR-codes worden lokaal op dit apparaat opgeslagen en worden nooit naar onze servers verzonden.",
+    "saveBtn": "Opslaan in browsergeschiedenis",
+    "saved": "Opgeslagen in de geschiedenis!",
+    "savedAt": "Opgeslagen bij",
+    "loadBtn": "Herstellen"
   }
 }

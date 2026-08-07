@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown, QrCode, ScanLine, Scan, Building2, Link, MessageCircle, Video, Camera, Users, Hash, Music2, Briefcase, Send, Ghost, Gamepad2, Music, CreditCard, Wallet, Smartphone, Bitcoin, Type, Mail, Phone, MessageSquare, Contact, MapPin, Calendar, Wifi, FileText, ClipboardList, Star, Image, List, Mic, ShoppingCart, CalendarDays, File } from 'lucide-react';
+import { ChevronDown, QrCode, ScanLine, Scan, Building2, Link, MessageCircle, Video, Camera, Users, Hash, Music2, Briefcase, Send, Ghost, Gamepad2, Music, CreditCard, Wallet, Smartphone, Bitcoin, Type, Mail, Phone, MessageSquare, Contact, MapPin, Calendar, Wifi, FileText, ClipboardList, Star, Image, List, Mic, ShoppingCart, CalendarDays, File, Clock } from 'lucide-react';
 import { localizedRoutes } from '../../config/localizedRoutes';
 
 export const QR_CATEGORIES = [
@@ -71,7 +71,7 @@ export const BARCODE_CATEGORIES = [
   }
 ];
 
-export default function MegaNav({ currentLangCode }) {
+export default function MegaNav({ currentLangCode, onOpenHistory }) {
   const { t } = useTranslation();
 
   return (
@@ -110,7 +110,13 @@ export default function MegaNav({ currentLangCode }) {
         </div>
       </div>
 
-      {/* 2. Scan QR */}
+      {/* 2. History */}
+      <button onClick={onOpenHistory} className="flex items-center gap-1.5 py-2 text-[15px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+        <Clock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+        {t('history.title', 'Local History')}
+      </button>
+
+      {/* 3. Scan QR */}
       <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className="flex items-center gap-1.5 py-2 text-[15px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
         <Scan className="w-4 h-4" />
         {t('nav.scan', 'Scan QR')}

@@ -1191,5 +1191,15 @@
     "h3_5": "Use cases for små teams",
     "p5_3": "Lærere bruger også vores værktøj til klasseundervisning. De laver weblinks til naturvidenskabelige spil og læseopgaver. De klistrer de trykte firkanter på elevborde. Eleverne scanner koderne med skoletablets. Dette gør læring sjovt og meget hurtigt.",
     "p5_4": "Derudover bruger begivenhedshold vores side til digitale billetporte. De genererer kontaktkort og kortlinks til musikshows. De udskriver koderne på VIP-pas og sceneplakater. Dette hjælper tusindvis af gæster med at finde deres pladser og læse showtider uden at bede om hjælp."
+  },
+  "history": {
+    "title": "Lokalhistorie",
+    "empty": "Ingen QR-koder gemt endnu.",
+    "clear": "Ryd historik",
+    "disclaimer": "Dine QR-koder gemmes lokalt på denne enhed og sendes aldrig til vores servere.",
+    "saveBtn": "Gem i browserhistorik",
+    "saved": "Gemt i historikken!",
+    "savedAt": "Gemt kl",
+    "loadBtn": "Gendan"
   }
 }

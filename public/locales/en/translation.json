@@ -1173,5 +1173,15 @@
     "h3_5": "Use cases for small teams",
     "p5_3": "Teachers also use our tool for classroom lessons. They create web links for science games and reading tasks. They stick the printed squares on student desks. The students scan the codes with school tablets. This makes learning fun and very fast.",
     "p5_4": "In addition, event teams use our site for digital ticket gates. They generate contact cards and map links for music shows. They print the codes on VIP passes and stage posters. This helps thousands of guests find their seats and read show times without asking for help."
+  },
+  "history": {
+    "title": "Local History",
+    "empty": "No QR codes saved yet.",
+    "clear": "Clear History",
+    "disclaimer": "Your QR codes are saved locally on this device and are never sent to our servers.",
+    "saveBtn": "Save to Browser History",
+    "saved": "Saved to history!",
+    "savedAt": "Saved at",
+    "loadBtn": "Restore"
   }
 }

@@ -1191,5 +1191,15 @@
     "h3_5": "Gamitin ang mga kaso para sa maliliit na koponan",
     "p5_3": "Ginagamit din ng mga guro ang aming tool para sa mga aralin sa silid-aralan. Lumilikha sila ng mga link sa web para sa mga laro sa agham at mga gawain sa pagbabasa. Idinidikit nila ang mga naka-print na parisukat sa mga mesa ng mga estudyante. Ini-scan ng mga mag-aaral ang mga code gamit ang mga tablet ng paaralan. Ginagawa nitong masaya at napakabilis ang pag-aaral.",
     "p5_4": "Bilang karagdagan, ginagamit ng mga pangkat ng kaganapan ang aming site para sa mga digital ticket gate. Bumubuo sila ng mga contact card at mga link sa mapa para sa mga palabas sa musika. Ini-print nila ang mga code sa mga VIP pass at poster ng entablado. Nakakatulong ito sa libu-libong bisita na mahanap ang kanilang mga upuan at basahin ang mga oras ng palabas nang hindi humihingi ng tulong."
+  },
+  "history": {
+    "title": "Lokal na Kasaysayan",
+    "empty": "Wala pang na-save na QR code.",
+    "clear": "I-clear ang Kasaysayan",
+    "disclaimer": "Ang iyong mga QR code ay lokal na naka-save sa device na ito at hindi kailanman ipinadala sa aming mga server.",
+    "saveBtn": "I-save sa History ng Browser",
+    "saved": "Nai-save sa kasaysayan!",
+    "savedAt": "Nai-save sa",
+    "loadBtn": "Ibalik"
   }
 }

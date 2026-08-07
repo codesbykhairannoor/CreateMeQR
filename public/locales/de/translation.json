@@ -1191,5 +1191,15 @@
     "h3_5": "Anwendungsfälle für kleine Teams",
     "p5_3": "Lehrer nutzen unser Tool auch für den Unterricht im Klassenzimmer. Sie erstellen Weblinks für Wissenschaftsspiele und Leseaufgaben. Sie kleben die bedruckten Quadrate auf Schülertische. Die Schüler scannen die Codes mit Schultablets. So macht das Lernen Spaß und geht sehr schnell.",
     "p5_4": "Darüber hinaus nutzen Veranstaltungsteams unsere Website für digitale Ticketschalter. Sie generieren Kontaktkarten und Kartenlinks für Musikshows. Sie drucken die Codes auf VIP-Pässe und Bühnenplakate. Dies hilft Tausenden von Gästen, ihre Plätze zu finden und die Spielzeiten zu lesen, ohne um Hilfe bitten zu müssen."
+  },
+  "history": {
+    "title": "Lokale Geschichte",
+    "empty": "Noch keine QR-Codes gespeichert.",
+    "clear": "Verlauf löschen",
+    "disclaimer": "Ihre QR-Codes werden lokal auf diesem Gerät gespeichert und niemals an unsere Server gesendet.",
+    "saveBtn": "Im Browserverlauf speichern",
+    "saved": "In der Geschichte gespeichert!",
+    "savedAt": "Gespeichert bei",
+    "loadBtn": "Wiederherstellen"
   }
 }

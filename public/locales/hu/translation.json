@@ -1191,5 +1191,15 @@
     "h3_5": "Use cases for small teams",
     "p5_3": "A tanárok az osztálytermi órákhoz is használják eszközünket. Webhivatkozásokat készítenek tudományos játékokhoz és olvasási feladatokhoz. They stick the printed squares on student desks. The students scan the codes with school tablets. This makes learning fun and very fast.",
     "p5_4": "Ezen túlmenően a rendezvény csapatai a digitális jegykapukhoz használják oldalunkat. Névjegykártyákat és térképhivatkozásokat generálnak zenei műsorokhoz. Kinyomtatják a kódokat VIP-bérletekre és színpadi plakátokra. Ez segít több ezer vendégnek megtalálni a helyet, és segítségkérés nélkül elolvasni az előadások időpontját."
+  },
+  "history": {
+    "title": "Helytörténet",
+    "empty": "Még nem mentett QR-kód.",
+    "clear": "Törölje az előzményeket",
+    "disclaimer": "QR-kódjait a rendszer helyileg menti ezen az eszközön, és soha nem küldi el a szervereinkre.",
+    "saveBtn": "Mentés a böngésző előzményei közé",
+    "saved": "A történelembe mentve!",
+    "savedAt": "Mentve:",
+    "loadBtn": "Visszaállítás"
   }
 }

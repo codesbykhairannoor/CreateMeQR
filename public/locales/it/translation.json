@@ -1191,5 +1191,15 @@
     "h3_5": "Casi d'uso per piccoli team",
     "p5_3": "Gli insegnanti utilizzano il nostro strumento anche per le lezioni in classe. Creano collegamenti Web per giochi scientifici e attività di lettura. Attaccano i quadratini stampati sui banchi degli studenti. Gli studenti scansionano i codici con i tablet scolastici. Questo rende l'apprendimento divertente e molto veloce.",
     "p5_4": "Inoltre, i team degli eventi utilizzano il nostro sito per i cancelli dei biglietti digitali. Generano schede di contatto e collegamenti a mappe per spettacoli musicali. Stampano i codici sui pass VIP e sui manifesti scenici. Ciò aiuta migliaia di ospiti a trovare il proprio posto e a leggere gli orari degli spettacoli senza chiedere aiuto."
+  },
+  "history": {
+    "title": "Storia locale",
+    "empty": "Nessun codice QR ancora salvato.",
+    "clear": "Cancella cronologia",
+    "disclaimer": "I tuoi codici QR vengono salvati localmente su questo dispositivo e non vengono mai inviati ai nostri server.",
+    "saveBtn": "Salva nella cronologia del browser",
+    "saved": "Salvato nella storia!",
+    "savedAt": "Salvato a",
+    "loadBtn": "Ripristinare"
   }
 }

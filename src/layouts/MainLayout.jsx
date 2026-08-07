@@ -7,6 +7,7 @@ import { LANGS } from '../config/site';
 import { localizedRoutes, routeToToolMap } from '../config/localizedRoutes';
 import MegaNav from '../components/nav/MegaNav';
 import MobileNav from '../components/nav/MobileNav';
+import HistoryDrawer from '../components/HistoryDrawer';
 
 export default function MainLayout({ children }) {
   const { t, i18n } = useTranslation();
@@ -28,6 +29,7 @@ export default function MainLayout({ children }) {
   const [darkMode, setDarkMode] = useState(false);
   const [showLangMenu, setShowLangMenu] = useState(false);
   const [showMobileNav, setShowMobileNav] = useState(false);
+  const [showHistory, setShowHistory] = useState(false);
   const [langSearch, setLangSearch] = useState('');
   const [softBannerLang, setSoftBannerLang] = useState(null);
   const [dismissBanner, setDismissBanner] = useState(false);
@@ -122,7 +124,7 @@ export default function MainLayout({ children }) {
             <span className="text-lg font-bold text-zinc-900 dark:text-white tracking-tight">CreateMy-QR</span>
           </div>
           
-          <MegaNav currentLangCode={currentLangCode} />
+          <MegaNav currentLangCode={currentLangCode} onOpenHistory={() => setShowHistory(true)} />
 
           <div className="flex items-center gap-2">
             <div className="relative">
@@ -167,9 +169,25 @@ export default function MainLayout({ children }) {
       {/* Mobile Navigation Overlay */}
       {showMobileNav && (
         <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-white/95 dark:bg-[#040a18]/95 backdrop-blur-3xl overflow-y-auto">
-          <MobileNav currentLangCode={currentLangCode} onClose={() => setShowMobileNav(false)} darkMode={darkMode} setDarkMode={setDarkMode} />
+          <MobileNav 
+            currentLangCode={currentLangCode} 
+            onClose={() => setShowMobileNav(false)} 
+            darkMode={darkMode} 
+            setDarkMode={setDarkMode}
+            onOpenHistory={() => {
+              setShowMobileNav(false);
+              setShowHistory(true);
+            }} 
+          />
         </div>
       )}
+
+      {/* History Drawer Overlay */}
+      <HistoryDrawer 
+        isOpen={showHistory} 
+        onClose={() => setShowHistory(false)} 
+        currentLangCode={currentLangCode} 
+      />
 
       <main className="flex-1 pb-20">
         {children}

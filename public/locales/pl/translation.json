@@ -1191,5 +1191,15 @@
     "h3_5": "Przypadki użycia dla małych zespołów",
     "p5_3": "Nauczyciele korzystają z naszego narzędzia również na lekcjach w klasie. Tworzą linki internetowe do gier naukowych i zadań związanych z czytaniem. Przyklejają wydrukowane kwadraty na biurkach uczniów. Uczniowie skanują kody za pomocą szkolnych tabletów. Dzięki temu nauka staje się przyjemna i bardzo szybka.",
     "p5_4": "Ponadto zespoły eventowe korzystają z naszej witryny w celu obsługi cyfrowych bramek biletowych. Generują karty kontaktowe i linki do map dla programów muzycznych. Drukują kody na karnetach VIP i plakatach scenicznych. Pomaga to tysiącom gości znaleźć swoje miejsca i przeczytać godziny seansów bez proszenia o pomoc."
+  },
+  "history": {
+    "title": "Historia lokalna",
+    "empty": "Nie zapisano jeszcze żadnych kodów QR.",
+    "clear": "Wyczyść historię",
+    "disclaimer": "Twoje kody QR są zapisywane lokalnie na tym urządzeniu i nigdy nie są wysyłane na nasze serwery.",
+    "saveBtn": "Zapisz w Historii przeglądarki",
+    "saved": "Zapisane w historii!",
+    "savedAt": "Zapisano o godz",
+    "loadBtn": "Przywrócić"
   }
 }

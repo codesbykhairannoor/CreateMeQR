@@ -1191,5 +1191,15 @@
     "h3_5": "Küçük ekipler için kullanım örnekleri",
     "p5_3": "Öğretmenler aracımızı sınıf dersleri için de kullanır. Bilim oyunları ve okuma görevleri için web bağlantıları oluştururlar. Basılı kareleri öğrenci sıralarına yapıştırıyorlar. Öğrenciler kodları okul tabletleriyle okutuyor. Bu, öğrenmeyi eğlenceli ve çok hızlı hale getirir.",
     "p5_4": "Ayrıca etkinlik ekipleri dijital bilet kapıları için de sitemizi kullanıyor. Müzik şovları için kişi kartları ve harita bağlantıları oluştururlar. Kodları VIP geçiş kartlarına ve sahne posterlerine basıyorlar. Bu, binlerce misafirin yardım istemeden koltuklarını bulmasına ve gösteri saatlerini okumasına yardımcı oluyor."
+  },
+  "history": {
+    "title": "Yerel Tarih",
+    "empty": "Henüz kayıtlı QR kodu yok.",
+    "clear": "Geçmişi Temizle",
+    "disclaimer": "QR kodlarınız bu cihazda yerel olarak kaydedilir ve hiçbir zaman sunucularımıza gönderilmez.",
+    "saveBtn": "Tarayıcı Geçmişine Kaydet",
+    "saved": "Tarihe kaydedildi!",
+    "savedAt": "Şu tarihte kaydedildi:",
+    "loadBtn": "Eski haline getirmek"
   }
 }

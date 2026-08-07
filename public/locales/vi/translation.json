@@ -1191,5 +1191,15 @@
     "h3_5": "Các trường hợp sử dụng cho các nhóm nhỏ",
     "p5_3": "Giáo viên cũng sử dụng công cụ của chúng tôi cho các bài học trên lớp. Họ tạo các liên kết web cho các trò chơi khoa học và các bài tập đọc. Họ dán các ô vuông đã in lên bàn học sinh. Học sinh quét mã bằng máy tính bảng của trường. Điều này làm cho việc học trở nên thú vị và rất nhanh chóng.",
     "p5_4": "Ngoài ra, các nhóm sự kiện còn sử dụng trang web của chúng tôi làm cổng bán vé kỹ thuật số. Họ tạo thẻ liên hệ và liên kết bản đồ cho các chương trình ca nhạc. Họ in mã trên thẻ VIP và áp phích sân khấu. Điều này giúp hàng ngàn khách tìm được chỗ ngồi và đọc thời gian chiếu mà không cần yêu cầu trợ giúp."
+  },
+  "history": {
+    "title": "Lịch sử địa phương",
+    "empty": "Chưa lưu mã QR nào.",
+    "clear": "Xóa lịch sử",
+    "disclaimer": "Mã QR của bạn được lưu cục bộ trên thiết bị này và không bao giờ được gửi đến máy chủ của chúng tôi.",
+    "saveBtn": "Lưu vào Lịch sử trình duyệt",
+    "saved": "Đã lưu vào lịch sử!",
+    "savedAt": "Đã lưu tại",
+    "loadBtn": "Khôi phục"
   }
 }

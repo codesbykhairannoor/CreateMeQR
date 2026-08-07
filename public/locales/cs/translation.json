@@ -1191,5 +1191,15 @@
     "h3_5": "Případy použití pro malé týmy",
     "p5_3": "Učitelé také využívají náš nástroj pro výuku ve třídě. Vytvářejí webové odkazy na vědecké hry a úkoly ve čtení. Vytištěné čtverečky nalepí na studentské lavice. Studenti skenují kódy školními tablety. Díky tomu je učení zábavné a velmi rychlé.",
     "p5_4": "Kromě toho týmy akcí využívají naše stránky pro digitální brány vstupenek. Vytvářejí kontaktní karty a odkazy na mapy pro hudební pořady. Tisknou kódy na VIP vstupenky a jevištní plakáty. To pomáhá tisícům hostů najít svá místa a přečíst si časy představení, aniž by žádali o pomoc."
+  },
+  "history": {
+    "title": "Místní historie",
+    "empty": "Zatím nejsou uloženy žádné QR kódy.",
+    "clear": "Vymazat historii",
+    "disclaimer": "Vaše QR kódy jsou uloženy lokálně na tomto zařízení a nikdy se neodesílají na naše servery.",
+    "saveBtn": "Uložit do historie prohlížeče",
+    "saved": "Uloženo do historie!",
+    "savedAt": "Uloženo v",
+    "loadBtn": "Obnovit"
   }
 }

@@ -1145,5 +1145,15 @@
     "hq": "总部",
     "hq_desc": "CreateMy-QR Technologies，全球远程团队",
     "availability": "24/7 可用"
+  },
+  "history": {
+    "title": "当地历史",
+    "empty": "尚未保存二维码。",
+    "clear": "清除历史记录",
+    "disclaimer": "您的二维码保存在该设备本地，并且永远不会发送到我们的服务器。",
+    "saveBtn": "保存到浏览器历史记录",
+    "saved": "已被载入史册！",
+    "savedAt": "保存于",
+    "loadBtn": "恢复"
   }
 }

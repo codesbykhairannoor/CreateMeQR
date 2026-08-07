@@ -1191,5 +1191,15 @@
     "h3_5": "Cazuri de utilizare pentru echipe mici",
     "p5_3": "Profesorii folosesc și instrumentul nostru pentru lecțiile de la clasă. Ei creează link-uri web pentru jocuri științifice și sarcini de lectură. Ei lipesc pătratele imprimate pe birourile studenților. Elevii scanează codurile cu tabletele școlare. Acest lucru face ca învățarea să fie distractivă și foarte rapidă.",
     "p5_4": "În plus, echipele evenimentului folosesc site-ul nostru pentru porțile de bilete digitale. Acestea generează cărți de contact și link-uri pentru hărți pentru emisiunile muzicale. Ei imprimă codurile pe permisele VIP și pe afișe de scenă. Acest lucru ajută mii de oaspeți să-și găsească locurile și să citească orele spectacolelor fără a cere ajutor."
+  },
+  "history": {
+    "title": "Istoria locală",
+    "empty": "Nu au fost salvate încă coduri QR.",
+    "clear": "Ștergeți istoricul",
+    "disclaimer": "Codurile dvs. QR sunt salvate local pe acest dispozitiv și nu sunt niciodată trimise la serverele noastre.",
+    "saveBtn": "Salvați în istoricul browserului",
+    "saved": "Salvat în istorie!",
+    "savedAt": "Salvat la",
+    "loadBtn": "Restabili"
   }
 }

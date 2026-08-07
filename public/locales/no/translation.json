@@ -1191,5 +1191,15 @@
     "h3_5": "Brukssaker for små team",
     "p5_3": "Lærere bruker også verktøyet vårt til klasseromstimer. De lager nettlenker for naturvitenskapelige spill og leseoppgaver. De klistrer de trykte rutene på studentpultene. Elevene skanner kodene med skolenettbrett. Dette gjør læring morsom og veldig rask.",
     "p5_4": "I tillegg bruker arrangementsteam siden vår for digitale billettporter. De genererer kontaktkort og kartlenker for musikkshow. De trykker kodene på VIP-pass og sceneplakater. Dette hjelper tusenvis av gjester med å finne sine seter og lese visningstider uten å spørre om hjelp."
+  },
+  "history": {
+    "title": "Lokalhistorie",
+    "empty": "Ingen QR-koder er lagret ennå.",
+    "clear": "Tøm historikk",
+    "disclaimer": "QR-kodene dine lagres lokalt på denne enheten og sendes aldri til våre servere.",
+    "saveBtn": "Lagre i nettleserloggen",
+    "saved": "Lagret i historikken!",
+    "savedAt": "Lagret kl",
+    "loadBtn": "Restaurere"
   }
 }

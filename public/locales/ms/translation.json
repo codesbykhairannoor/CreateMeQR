@@ -1191,5 +1191,15 @@
     "h3_5": "Gunakan kes untuk pasukan kecil",
     "p5_3": "Guru juga menggunakan alat kami untuk pelajaran bilik darjah. Mereka membuat pautan web untuk permainan sains dan tugas membaca. Mereka melekatkan petak bercetak di atas meja pelajar. Pelajar mengimbas kod dengan tablet sekolah. Ini menjadikan pembelajaran menyeronokkan dan sangat cepat.",
     "p5_4": "Selain itu, pasukan acara menggunakan tapak kami untuk pintu tiket digital. Mereka menjana kad kenalan dan pautan peta untuk rancangan muzik. Mereka mencetak kod pada pas VIP dan poster pentas. Ini membantu beribu-ribu tetamu mencari tempat duduk mereka dan membaca masa tayangan tanpa meminta bantuan."
+  },
+  "history": {
+    "title": "Sejarah Tempatan",
+    "empty": "Tiada kod QR disimpan lagi.",
+    "clear": "Kosongkan Sejarah",
+    "disclaimer": "Kod QR anda disimpan secara setempat pada peranti ini dan tidak pernah dihantar ke pelayan kami.",
+    "saveBtn": "Simpan ke Sejarah Penyemak Imbas",
+    "saved": "Disimpan dalam sejarah!",
+    "savedAt": "Disimpan di",
+    "loadBtn": "Pulihkan"
   }
 }

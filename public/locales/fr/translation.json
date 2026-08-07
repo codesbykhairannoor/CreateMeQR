@@ -1191,5 +1191,15 @@
     "h3_5": "Cas d'utilisation pour les petites équipes",
     "p5_3": "Les enseignants utilisent également notre outil pour les cours en classe. Ils créent des liens Web vers des jeux scientifiques et des tâches de lecture. Ils collent les carrés imprimés sur les pupitres des étudiants. Les élèves scannent les codes avec les tablettes scolaires. Cela rend l’apprentissage amusant et très rapide.",
     "p5_4": "De plus, les équipes événementielles utilisent notre site pour les guichets numériques. Ils génèrent des fiches de contact et des liens cartographiques pour les émissions musicales. Ils impriment les codes sur les pass VIP et les affiches de scène. Cela aide des milliers d’invités à trouver leur place et à lire les horaires des spectacles sans demander d’aide."
+  },
+  "history": {
+    "title": "Histoire locale",
+    "empty": "Aucun code QR n'a encore été enregistré.",
+    "clear": "Effacer l'historique",
+    "disclaimer": "Vos codes QR sont enregistrés localement sur cet appareil et ne sont jamais envoyés à nos serveurs.",
+    "saveBtn": "Enregistrer dans l'historique du navigateur",
+    "saved": "Sauvé dans l'histoire!",
+    "savedAt": "Enregistré à",
+    "loadBtn": "Restaurer"
   }
 }

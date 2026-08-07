@@ -1191,5 +1191,15 @@
     "h3_5": "Casos de uso para equipes pequenas",
     "p5_3": "Os professores também usam nossa ferramenta para aulas em sala de aula. Eles criam links da web para jogos científicos e tarefas de leitura. Eles colam os quadrados impressos nas carteiras dos alunos. Os alunos escaneiam os códigos com tablets escolares. Isso torna o aprendizado divertido e muito rápido.",
     "p5_4": "Além disso, as equipes do evento usam nosso site para ingressos digitais. Eles geram cartões de contato e links de mapas para programas musicais. Eles imprimem os códigos em passes VIP e pôsteres de palco. Isso ajuda milhares de convidados a encontrar seus lugares e ler os horários dos shows sem pedir ajuda."
+  },
+  "history": {
+    "title": "História Local",
+    "empty": "Nenhum código QR salvo ainda.",
+    "clear": "Limpar histórico",
+    "disclaimer": "Seus códigos QR são salvos localmente neste dispositivo e nunca são enviados para nossos servidores.",
+    "saveBtn": "Salvar no histórico do navegador",
+    "saved": "Salvo na história!",
+    "savedAt": "Salvo em",
+    "loadBtn": "Restaurar"
   }
 }

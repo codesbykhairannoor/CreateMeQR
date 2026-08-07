@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import Barcode from 'react-barcode';
-import { Download, Share2, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen } from 'lucide-react';
+import { Download, Share2, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen, Clock, Check } from 'lucide-react';
+import { get, set } from 'idb-keyval';
 
 export default function BarcodeGenerator() {
   const { t } = useTranslation();
@@ -18,11 +19,40 @@ export default function BarcodeGenerator() {
 
   const barcodeRef = useRef(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const [isSaved, setIsSaved] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 1024);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    const handleRestore = () => {
+      const savedStr = sessionStorage.getItem('restore_qr_data');
+      if (savedStr) {
+        try {
+          const item = JSON.parse(savedStr);
+          if (item.qrType === 'barcode') {
+            setValue(item.qrData.value);
+            setFormat(item.qrData.format);
+            setLineColor(item.qrData.lineColor);
+            setBackground(item.qrData.background);
+            setWidth(item.qrData.width);
+            setHeight(item.qrData.height);
+            setDisplayValue(item.qrData.displayValue);
+            sessionStorage.removeItem('restore_qr_data');
+          }
+        } catch (e) {
+          console.error(e);
+        }
+      }
+    };
+    
+    window.addEventListener('restore-qr-history', handleRestore);
+    handleRestore();
+    
+    return () => window.removeEventListener('restore-qr-history', handleRestore);
   }, []);
 
   const handleDownload = () => {
@@ -50,6 +80,58 @@ export default function BarcodeGenerator() {
     };
     
     img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgData)));
+  };
+
+  const onSaveHistory = async () => {
+    try {
+      const history = await get('qr-history-store') || [];
+      let thumbnail = '';
+      if (barcodeRef.current) {
+        const svg = barcodeRef.current.querySelector('svg');
+        if (svg) {
+          const svgData = new XMLSerializer().serializeToString(svg);
+          const canvas = document.createElement("canvas");
+          const ctx = canvas.getContext("2d");
+          const img = new Image();
+          await new Promise((resolve) => {
+            img.onload = () => {
+              canvas.width = img.width + 40;
+              canvas.height = img.height + 40;
+              ctx.fillStyle = background;
+              ctx.fillRect(0, 0, canvas.width, canvas.height);
+              ctx.drawImage(img, 20, 20);
+              thumbnail = canvas.toDataURL("image/png", 0.2);
+              resolve();
+            };
+            img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgData)));
+          });
+        }
+      }
+      
+      const newItem = {
+        id: Date.now(),
+        qrType: 'barcode',
+        qrData: {
+          value,
+          format,
+          lineColor,
+          background,
+          width,
+          height,
+          displayValue
+        },
+        visuals: {},
+        timestamp: new Date().toISOString(),
+        thumbnail
+      };
+      
+      const newHistory = [newItem, ...history].slice(0, 10);
+      await set('qr-history-store', newHistory);
+      setIsSaved(true);
+      setTimeout(() => setIsSaved(false), 3000);
+    } catch (e) {
+      console.error('Failed to save to history', e);
+    }
   };
 
 
@@ -87,12 +169,25 @@ export default function BarcodeGenerator() {
         </div>
       </div>
       
-      <div className="mt-8 space-y-4 relative z-10">
+      <div className="mt-8 flex flex-col gap-3 relative z-10">
         <button 
           onClick={handleDownload}
           className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all flex items-center justify-center gap-2 hover:-translate-y-1"
         >
           <Download className="w-5 h-5" /> {t("barcode.workspace.download", "Download High-Res PNG")}
+        </button>
+        
+        <button
+          onClick={onSaveHistory}
+          disabled={isSaved}
+          className={`w-full flex items-center justify-center px-4 py-4 rounded-xl transition-all font-bold shadow-sm text-sm border hover:-translate-y-1 ${
+            isSaved 
+              ? 'bg-green-500/20 text-green-400 border-green-500/30' 
+              : 'bg-white/5 text-blue-200 border-blue-500/30 hover:bg-white/10 hover:border-blue-400/50'
+          }`}
+        >
+          {isSaved ? <Check className="w-5 h-5 mr-2" /> : <Clock className="w-5 h-5 mr-2" />}
+          {isSaved ? t('history.saved', 'Saved to history!') : t('history.saveBtn', 'Save to Browser History')}
         </button>
       </div>
     </div>

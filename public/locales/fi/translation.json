@@ -1191,5 +1191,15 @@
     "h3_5": "Käyttötapauksia pienille ryhmille",
     "p5_3": "Opettajat käyttävät työkaluamme myös luokkahuoneissa. He luovat verkkolinkkejä tiedepeleihin ja lukutehtäviin. He kiinnittävät painetut neliöt opiskelijapöytiin. Oppilaat skannaavat koodit koulutableteilla. Tämä tekee oppimisesta hauskaa ja erittäin nopeaa.",
     "p5_4": "Lisäksi tapahtumatiimit käyttävät sivustoamme digitaalisiin lippuportteihin. He luovat yhteyskortteja ja karttalinkkejä musiikkiesityksiin. He tulostavat koodit VIP-passeihin ja lavajulisteisiin. Tämä auttaa tuhansia vieraita löytämään paikkansa ja lukemaan esitysajat ilman apua."
+  },
+  "history": {
+    "title": "Paikallinen historia",
+    "empty": "QR-koodeja ei ole vielä tallennettu.",
+    "clear": "Tyhjennä historia",
+    "disclaimer": "QR-koodisi tallennetaan paikallisesti tälle laitteelle, eikä niitä koskaan lähetetä palvelimillemme.",
+    "saveBtn": "Tallenna selainhistoriaan",
+    "saved": "Tallennettu historiaan!",
+    "savedAt": "Tallennettu klo",
+    "loadBtn": "Palauttaa"
   }
 }

@@ -1191,5 +1191,15 @@
     "h3_5": "Användningsfall för små team",
     "p5_3": "Lärare använder också vårt verktyg för klassrumslektioner. De skapar webblänkar för vetenskapsspel och läsuppgifter. De klistrar de tryckta rutorna på studentbänken. Eleverna skannar av koderna med läsplattor. Detta gör lärandet roligt och mycket snabbt.",
     "p5_4": "Dessutom använder evenemangsteam vår sida för digitala biljettportar. De genererar kontaktkort och kartlänkar för musikshower. De skriver ut koderna på VIP-pass och scenaffischer. Detta hjälper tusentals gäster att hitta sina platser och läsa programtider utan att be om hjälp."
+  },
+  "history": {
+    "title": "Lokal historia",
+    "empty": "Inga QR-koder sparade än.",
+    "clear": "Rensa historik",
+    "disclaimer": "Dina QR-koder sparas lokalt på den här enheten och skickas aldrig till våra servrar.",
+    "saveBtn": "Spara i webbläsarhistorik",
+    "saved": "Sparad i historiken!",
+    "savedAt": "Sparad kl",
+    "loadBtn": "Återställa"
   }
 }

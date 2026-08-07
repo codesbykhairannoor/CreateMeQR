@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import InputForm from '../components/InputForm';
 const CustomizationPanel = React.lazy(() => import('../components/CustomizationPanel'));
@@ -19,6 +19,30 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo }) {
     cornersDotOptions: { type: 'square', color: '#0a1930' },
     qrOptions: { errorCorrectionLevel: 'Q' }
   });
+
+  useEffect(() => {
+    const handleRestore = () => {
+      const savedStr = sessionStorage.getItem('restore_qr_data');
+      if (savedStr) {
+        try {
+          const item = JSON.parse(savedStr);
+          setQrTypeRoute(item.qrType);
+          setQrData(item.qrData);
+          setVisuals(item.visuals);
+          setHasGenerated(true);
+          sessionStorage.removeItem('restore_qr_data');
+        } catch (e) {
+          console.error('Failed to restore history', e);
+        }
+      }
+    };
+    
+    window.addEventListener('restore-qr-history', handleRestore);
+    // Trigger on mount in case it was set before component loaded
+    handleRestore();
+    
+    return () => window.removeEventListener('restore-qr-history', handleRestore);
+  }, [setQrTypeRoute]);
 
   const renderHighlightedTitle = (title) => {
     if (!title) return null;

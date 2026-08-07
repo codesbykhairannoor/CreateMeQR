@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import QRCodeStyling from 'qr-code-styling';
-import { Download, Check } from 'lucide-react';
+import { Download, Check, Clock } from 'lucide-react';
+import { get, set } from 'idb-keyval';
 import { useTranslation } from 'react-i18next';
 
 export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
   const { t } = useTranslation();
+  const [isSaved, setIsSaved] = useState(false);
   const [qrCode] = useState(new QRCodeStyling({
     width: 300,
     height: 300,
@@ -122,6 +124,36 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
     });
   };
 
+  const onSaveHistory = async () => {
+    try {
+      const history = await get('qr-history-store') || [];
+      let thumbnail = '';
+      if (ref.current) {
+        const canvas = ref.current.querySelector('canvas');
+        if (canvas) {
+          thumbnail = canvas.toDataURL('image/png', 0.2);
+        }
+      }
+      
+      const newItem = {
+        id: Date.now(),
+        qrType,
+        qrData,
+        visuals,
+        timestamp: new Date().toISOString(),
+        thumbnail
+      };
+      
+      // Limit to 10
+      const newHistory = [newItem, ...history].slice(0, 10);
+      await set('qr-history-store', newHistory);
+      setIsSaved(true);
+      setTimeout(() => setIsSaved(false), 3000);
+    } catch (e) {
+      console.error('Failed to save to history', e);
+    }
+  };
+
   return (
     <div className="bg-white dark:bg-[#081226] border border-blue-100 dark:border-slate-700 rounded-3xl shadow-sm p-8 flex flex-col items-center justify-center min-h-[500px]">
       
@@ -153,6 +185,21 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
             >
               <Download className="w-4 h-4 mr-2" />
               SVG
+            </button>
+          </div>
+
+          <div className="mt-4 w-full">
+            <button
+              onClick={onSaveHistory}
+              disabled={isSaved}
+              className={`w-full flex items-center justify-center px-4 py-3 border rounded-xl transition-all font-semibold shadow-sm text-sm ${
+                isSaved 
+                  ? 'bg-green-50 text-green-700 border-green-200 dark:bg-green-900/20 dark:text-green-400 dark:border-green-800' 
+                  : 'bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-900/50 dark:hover:bg-blue-900/40'
+              }`}
+            >
+              {isSaved ? <Check className="w-4 h-4 mr-2" /> : <Clock className="w-4 h-4 mr-2" />}
+              {isSaved ? t('history.saved', 'Saved to history!') : t('history.saveBtn', 'Save to Browser History')}
             </button>
           </div>
 

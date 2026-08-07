@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown, QrCode, ScanLine, Scan, Building2, ChevronUp, Moon, Sun } from 'lucide-react';
+import { ChevronDown, QrCode, ScanLine, Scan, Building2, ChevronUp, Moon, Sun, Clock } from 'lucide-react';
 import { localizedRoutes } from '../../config/localizedRoutes';
 import { QR_CATEGORIES, BARCODE_CATEGORIES } from './MegaNav';
 
-export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkMode }) {
+export default function MobileNav({ currentLangCode, onClose, onOpenHistory, darkMode, setDarkMode }) {
   const { t } = useTranslation();
   const [openSection, setOpenSection] = useState(null);
 
@@ -55,6 +55,14 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
           <Scan className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
           {t('nav.scan', 'Scan QR')}
         </a>
+      </div>
+
+      {/* 2.5 History */}
+      <div className="border-b border-zinc-100 dark:border-zinc-800 pb-2">
+        <button onClick={onOpenHistory} className="w-full flex items-center gap-2 py-3 text-[15px] font-bold text-zinc-800 dark:text-zinc-200">
+          <Clock className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+          {t('history.title', 'Local History')}
+        </button>
       </div>
 
       {/* 3. Barcode Maker */}

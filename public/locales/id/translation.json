@@ -1191,5 +1191,15 @@
     "h3_5": "Kasus penggunaan untuk tim kecil",
     "p5_3": "Guru juga menggunakan alat kami untuk pelajaran di kelas. Mereka membuat tautan web untuk permainan sains dan tugas membaca. Mereka menempelkan kotak-kotak yang sudah dicetak di meja siswa. Para siswa memindai kode dengan tablet sekolah. Hal ini membuat pembelajaran menjadi menyenangkan dan sangat cepat.",
     "p5_4": "Selain itu, tim acara menggunakan situs kami untuk gerbang tiket digital. Mereka menghasilkan kartu kontak dan tautan peta untuk acara musik. Mereka mencetak kode pada tiket VIP dan poster panggung. Ini membantu ribuan tamu menemukan tempat duduk mereka dan membaca waktu pertunjukan tanpa meminta bantuan."
+  },
+  "history": {
+    "title": "Sejarah Lokal",
+    "empty": "Belum ada kode QR yang disimpan.",
+    "clear": "Hapus Riwayat",
+    "disclaimer": "Kode QR Anda disimpan secara lokal di perangkat ini dan tidak pernah dikirim ke server kami.",
+    "saveBtn": "Simpan ke Riwayat Peramban",
+    "saved": "Disimpan ke sejarah!",
+    "savedAt": "Disimpan di",
+    "loadBtn": "Memulihkan"
   }
 }
