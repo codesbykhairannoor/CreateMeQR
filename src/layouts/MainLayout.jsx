@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Globe, Moon, Sun, X, Menu } from 'lucide-react';
+import { Globe, Moon, Sun, X, Menu, Clock } from 'lucide-react';
 import { LANGS } from '../config/site';
 import { localizedRoutes, routeToToolMap } from '../config/localizedRoutes';
 import MegaNav from '../components/nav/MegaNav';
@@ -124,9 +124,15 @@ export default function MainLayout({ children }) {
             <span className="text-lg font-bold text-zinc-900 dark:text-white tracking-tight">CreateMy-QR</span>
           </div>
           
-          <MegaNav currentLangCode={currentLangCode} onOpenHistory={() => setShowHistory(true)} />
+          <MegaNav currentLangCode={currentLangCode} />
 
           <div className="flex items-center gap-2">
+            <button onClick={() => setShowHistory(true)} className="hidden lg:flex items-center gap-2 px-4 py-2 text-sm font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 rounded-full hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+              <Clock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+              {t('history.title', 'Local History')}
+            </button>
+            <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800 mx-1 hidden lg:block"></div>
+            
             <div className="relative">
               <button onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
                 <span style={{ fontSize: 16 }}>{LANGS.find(l => l.code === (i18n.language?.split('-')[0] || 'en'))?.flag || '🌐'}</span>
@@ -159,9 +165,12 @@ export default function MainLayout({ children }) {
                 </>
               )}
             </div>
-              <button onClick={() => setShowMobileNav(!showMobileNav)} className="lg:hidden p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
-                {showMobileNav ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-              </button>
+            <button onClick={() => setDarkMode(!darkMode)} className="hidden lg:block p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+              {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
+            <button onClick={() => setShowMobileNav(!showMobileNav)} className="lg:hidden p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+              {showMobileNav ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
           </div>
         </div>
       </nav>
