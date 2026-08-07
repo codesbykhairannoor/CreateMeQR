@@ -11,6 +11,7 @@ export default function ScanQr() {
   const [scanResult, setScanResult] = useState('');
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
+  const [scanType, setScanType] = useState('qr'); // 'qr' or 'barcode'
   
   const html5QrCode = useRef(null);
   const fileInputRef = useRef(null);
@@ -33,7 +34,7 @@ export default function ScanQr() {
       }
       await html5QrCode.current.start(
         { facingMode: "environment" },
-        { fps: 10, qrbox: { width: 250, height: 250 } },
+        { fps: 10, qrbox: scanType === 'barcode' ? { width: 320, height: 150 } : { width: 250, height: 250 } },
         (decodedText) => {
           setScanResult(decodedText);
           setIsScanning(false);
@@ -118,15 +119,34 @@ export default function ScanQr() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
             {/* Left: Scanner Action Area */}
-            <div className="space-y-8">
+            <div className="space-y-6">
+              
+              {/* Scan Type Toggle */}
               {!isScanning && !scanResult && (
-                <div className="border-2 border-dashed border-blue-300 dark:border-blue-500/30 rounded-3xl p-12 text-center bg-blue-50 dark:bg-blue-500/5 hover:bg-blue-100 dark:hover:bg-blue-500/10 transition-colors">
+                <div className="flex bg-slate-100 dark:bg-blue-900/20 p-1.5 rounded-2xl border border-slate-200 dark:border-[#1e2d4a]">
+                  <button 
+                    onClick={() => setScanType('qr')}
+                    className={`flex-1 py-3 text-sm font-bold rounded-xl flex items-center justify-center gap-2 transition-all ${scanType === 'qr' ? 'bg-white dark:bg-blue-600 text-blue-600 dark:text-white shadow-md' : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'}`}
+                  >
+                    <Scan className="w-4 h-4" /> {t("scanqr.workspace.toggleQR", "QR Code")}
+                  </button>
+                  <button 
+                    onClick={() => setScanType('barcode')}
+                    className={`flex-1 py-3 text-sm font-bold rounded-xl flex items-center justify-center gap-2 transition-all ${scanType === 'barcode' ? 'bg-white dark:bg-blue-600 text-blue-600 dark:text-white shadow-md' : 'text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'}`}
+                  >
+                    <ScanLine className="w-4 h-4" /> {t("scanqr.workspace.toggleBarcode", "Barcode")}
+                  </button>
+                </div>
+              )}
+
+              {!isScanning && !scanResult && (
+                <div className="border-2 border-dashed border-blue-300 dark:border-blue-500/30 rounded-3xl p-10 text-center bg-blue-50 dark:bg-blue-500/5 hover:bg-blue-100 dark:hover:bg-blue-500/10 transition-colors">
                   <div className="w-24 h-24 bg-blue-100 dark:bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6 relative group cursor-pointer" onClick={() => setIsScanning(true)}>
                     <div className="absolute inset-0 bg-blue-400 rounded-full animate-ping opacity-20"></div>
                     <Camera className="w-10 h-10 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
                   </div>
                   <h3 className="text-2xl font-bold tracking-tighter dark:text-white mb-2">{t("scanqr.workspace.initCam", "Initialize Camera")}</h3>
-                  <p className="text-slate-600 dark:text-slate-400 mb-8">{t("scanqr.workspace.initCamDesc", "Scan a QR code using your device's camera")}</p>
+                  <p className="text-slate-600 dark:text-slate-400 mb-8">{scanType === 'barcode' ? t("scanqr.workspace.initCamDescBarcode", "Scan a barcode using your device's camera") : t("scanqr.workspace.initCamDesc", "Scan a QR code using your device's camera")}</p>
                   
                   <button 
                     onClick={() => setIsScanning(true)}
@@ -179,7 +199,7 @@ export default function ScanQr() {
                     onClick={() => fileInputRef.current?.click()}
                     className="w-full py-5 bg-slate-100 dark:bg-[#060b19] hover:bg-slate-200 dark:hover:bg-[#101b38] border border-slate-200 dark:border-[#1e2d4a] hover:border-blue-500/50 text-slate-700 dark:text-slate-300 font-bold rounded-2xl transition-all flex items-center justify-center gap-3"
                   >
-                    <Upload className="w-5 h-5" /> {t("scanqr.workspace.uploadBtn", "Upload QR Image File")}
+                    <Upload className="w-5 h-5" /> {scanType === 'barcode' ? t("scanqr.workspace.uploadBtnBarcode", "Upload Barcode Image File") : t("scanqr.workspace.uploadBtn", "Upload QR Image File")}
                   </button>
                   {/* Hidden div for file scanning */}
                   <div id="reader-hidden" style={{ display: 'none' }}></div>

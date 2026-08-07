@@ -1050,7 +1050,11 @@
       "waiting": "Venter på skanning...",
       "waitingDesc": "Pek kameraet mot en QR-kode eller last opp et bilde.",
       "errCam": "Kunne ikke starte kameraet. Sørg for at du har gitt kameratillatelser.",
-      "errImg": "Finner ingen QR-kode i bildet. Prøv et annet bilde."
+      "errImg": "Finner ingen QR-kode i bildet. Prøv et annet bilde.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Hvorfor bruke vår skanner?",

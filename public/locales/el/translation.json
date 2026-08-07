@@ -1050,7 +1050,11 @@
       "waiting": "Αναμονή για σάρωση...",
       "waitingDesc": "Στρέψτε την κάμερά σας σε έναν κωδικό QR ή ανεβάστε μια εικόνα.",
       "errCam": "Η εκκίνηση της κάμερας απέτυχε. Βεβαιωθείτε ότι έχετε παραχωρήσει άδειες κάμερας.",
-      "errImg": "Δεν βρέθηκε κωδικός QR στην εικόνα. Δοκιμάστε άλλη εικόνα."
+      "errImg": "Δεν βρέθηκε κωδικός QR στην εικόνα. Δοκιμάστε άλλη εικόνα.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Γιατί να χρησιμοποιήσετε το Scanner μας;",

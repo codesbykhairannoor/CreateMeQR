@@ -1050,7 +1050,11 @@
       "waiting": "스캔을 기다리는 중...",
       "waitingDesc": "카메라로 QR 코드를 가리키거나 이미지를 업로드하세요.",
       "errCam": "카메라를 시작하지 못했습니다. 카메라 권한을 부여했는지 확인하세요.",
-      "errImg": "이미지에 QR 코드가 없습니다. 다른 이미지를 시도해 보세요."
+      "errImg": "이미지에 QR 코드가 없습니다. 다른 이미지를 시도해 보세요.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "스캐너를 사용하는 이유는 무엇입니까?",

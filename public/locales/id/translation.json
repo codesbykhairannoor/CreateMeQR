@@ -1050,7 +1050,11 @@
       "waiting": "Menunggu pemindaian...",
       "waitingDesc": "Arahkan kamera Anda ke kode QR atau unggah gambar.",
       "errCam": "Gagal memulai kamera. Harap pastikan Anda telah memberikan izin kamera.",
-      "errImg": "Tidak ada kode QR yang ditemukan pada gambar. Silakan coba gambar lain."
+      "errImg": "Tidak ada kode QR yang ditemukan pada gambar. Silakan coba gambar lain.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Mengapa menggunakan Pemindai kami?",

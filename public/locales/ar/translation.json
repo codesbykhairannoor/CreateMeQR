@@ -1050,7 +1050,11 @@
       "waiting": "في انتظار الفحص...",
       "waitingDesc": "قم بتوجيه الكاميرا نحو رمز الاستجابة السريعة أو قم بتحميل صورة.",
       "errCam": "فشل في تشغيل الكاميرا. يرجى التأكد من أنك منحت أذونات الكاميرا.",
-      "errImg": "لم يتم العثور على رمز QR في الصورة. يرجى تجربة صورة أخرى."
+      "errImg": "لم يتم العثور على رمز QR في الصورة. يرجى تجربة صورة أخرى.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "لماذا نستخدم الماسح الضوئي الخاص بنا؟",

@@ -1050,7 +1050,11 @@
       "waiting": "正在等待扫描...",
       "waitingDesc": "将相机对准二维码或上传图像。",
       "errCam": "无法启动相机。请确保您已授予相机权限。",
-      "errImg": "图片中未找到二维码。请尝试其他图像。"
+      "errImg": "图片中未找到二维码。请尝试其他图像。",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "为什么使用我们的扫描仪？",

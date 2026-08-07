@@ -1050,7 +1050,11 @@
       "waiting": "Tarama bekleniyor...",
       "waitingDesc": "Kameranızı bir QR koduna doğrultun veya bir resim yükleyin.",
       "errCam": "Kamera başlatılamadı. Lütfen kamera izinlerini verdiğinizden emin olun.",
-      "errImg": "Resimde QR kodu bulunamadı. Lütfen başka bir resim deneyin."
+      "errImg": "Resimde QR kodu bulunamadı. Lütfen başka bir resim deneyin.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Tarayıcımızı neden kullanmalısınız?",

@@ -1050,7 +1050,11 @@
       "waiting": "スキャンを待っています...",
       "waitingDesc": "カメラを QR コードに向けるか、画像をアップロードします。",
       "errCam": "カメラの起動に失敗しました。カメラの権限を付与していることを確認してください。",
-      "errImg": "画像内に QR コードが見つかりません。別の画像をお試しください。"
+      "errImg": "画像内に QR コードが見つかりません。別の画像をお試しください。",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "当社のスキャナーを使用する理由",

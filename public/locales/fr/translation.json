@@ -1050,7 +1050,11 @@
       "waiting": "En attente de numérisation...",
       "waitingDesc": "Pointez votre appareil photo vers un code QR ou téléchargez une image.",
       "errCam": "Échec du démarrage de la caméra. Veuillez vous assurer que vous avez accordé les autorisations de caméra.",
-      "errImg": "Aucun code QR trouvé dans l'image. Veuillez essayer une autre image."
+      "errImg": "Aucun code QR trouvé dans l'image. Veuillez essayer une autre image.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Pourquoi utiliser notre scanner ?",

@@ -1050,7 +1050,11 @@
       "waiting": "Esperando escaneo...",
       "waitingDesc": "Apunta tu cámara a un código QR o sube una imagen.",
       "errCam": "No se pudo iniciar la cámara. Asegúrese de haber otorgado permisos de cámara.",
-      "errImg": "No se encontró ningún código QR en la imagen. Por favor prueba con otra imagen."
+      "errImg": "No se encontró ningún código QR en la imagen. Por favor prueba con otra imagen.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "¿Por qué utilizar nuestro escáner?",

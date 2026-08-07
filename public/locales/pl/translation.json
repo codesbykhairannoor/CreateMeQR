@@ -1050,7 +1050,11 @@
       "waiting": "Czekam na skan...",
       "waitingDesc": "Skieruj aparat na kod QR lub prześlij zdjęcie.",
       "errCam": "Nie udało się uruchomić aparatu. Upewnij się, że udzieliłeś uprawnień do kamery.",
-      "errImg": "Na obrazie nie znaleziono kodu QR. Spróbuj użyć innego obrazu."
+      "errImg": "Na obrazie nie znaleziono kodu QR. Spróbuj użyć innego obrazu.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Dlaczego warto korzystać z naszego skanera?",

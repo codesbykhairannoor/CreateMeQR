@@ -1050,7 +1050,11 @@
       "waiting": "In attesa della scansione...",
       "waitingDesc": "Punta la fotocamera su un codice QR o carica un'immagine.",
       "errCam": "Impossibile avviare la fotocamera. Assicurati di aver concesso le autorizzazioni per la fotocamera.",
-      "errImg": "Nessun codice QR trovato nell'immagine. Per favore prova un'altra immagine."
+      "errImg": "Nessun codice QR trovato nell'immagine. Per favore prova un'altra immagine.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Perché utilizzare il nostro scanner?",

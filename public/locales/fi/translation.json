@@ -1050,7 +1050,11 @@
       "waiting": "Odotetaan skannausta...",
       "waitingDesc": "Osoita kamerallasi QR-koodia tai lataa kuva.",
       "errCam": "Kameran käynnistys epäonnistui. Varmista, että olet myöntänyt kameran käyttöoikeudet.",
-      "errImg": "Kuvasta ei löytynyt QR-koodia. Kokeile toista kuvaa."
+      "errImg": "Kuvasta ei löytynyt QR-koodia. Kokeile toista kuvaa.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Miksi käyttää skanneria?",

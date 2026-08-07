@@ -1050,7 +1050,11 @@
       "waiting": "স্ক্যানের জন্য অপেক্ষা করছি...",
       "waitingDesc": "একটি QR কোডে আপনার ক্যামেরা নির্দেশ করুন বা একটি ছবি আপলোড করুন।",
       "errCam": "ক্যামেরা চালু করা যায়নি। আপনি ক্যামেরা অনুমতি মঞ্জুর করেছেন তা নিশ্চিত করুন.",
-      "errImg": "ছবিতে কোন QR কোড পাওয়া যায়নি। অন্য ইমেজ চেষ্টা করুন."
+      "errImg": "ছবিতে কোন QR কোড পাওয়া যায়নি। অন্য ইমেজ চেষ্টা করুন.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "কেন আমাদের স্ক্যানার ব্যবহার করবেন?",

@@ -1050,7 +1050,11 @@
       "waiting": "Čekání na skenování...",
       "waitingDesc": "Namiřte fotoaparát na QR kód nebo nahrajte obrázek.",
       "errCam": "Fotoaparát se nepodařilo spustit. Ujistěte se, že jste udělili oprávnění ke kameře.",
-      "errImg": "Na obrázku nebyl nalezen žádný QR kód. Zkuste prosím jiný obrázek."
+      "errImg": "Na obrázku nebyl nalezen žádný QR kód. Zkuste prosím jiný obrázek.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Proč používat náš skener?",

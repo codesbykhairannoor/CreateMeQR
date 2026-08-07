@@ -1050,7 +1050,11 @@
       "waiting": "Warten auf Scan...",
       "waitingDesc": "Richten Sie Ihre Kamera auf einen QR-Code oder laden Sie ein Bild hoch.",
       "errCam": "Kamera konnte nicht gestartet werden. Bitte stellen Sie sicher, dass Sie Kameraberechtigungen erteilt haben.",
-      "errImg": "Im Bild wurde kein QR-Code gefunden. Bitte versuchen Sie es mit einem anderen Bild."
+      "errImg": "Im Bild wurde kein QR-Code gefunden. Bitte versuchen Sie es mit einem anderen Bild.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Warum unseren Scanner verwenden?",

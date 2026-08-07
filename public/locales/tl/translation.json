@@ -1050,7 +1050,11 @@
       "waiting": "Naghihintay para sa pag-scan...",
       "waitingDesc": "Ituro ang iyong camera sa isang QR code o mag-upload ng larawan.",
       "errCam": "Nabigong simulan ang camera. Pakitiyak na nagbigay ka ng mga pahintulot sa camera.",
-      "errImg": "Walang nakitang QR code sa larawan. Mangyaring subukan ang isa pang larawan."
+      "errImg": "Walang nakitang QR code sa larawan. Mangyaring subukan ang isa pang larawan.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Bakit gagamitin ang aming Scanner?",

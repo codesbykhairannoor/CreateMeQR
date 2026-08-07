@@ -1050,7 +1050,11 @@
       "waiting": "Wachten op scannen...",
       "waitingDesc": "Richt uw camera op een QR-code of upload een afbeelding.",
       "errCam": "Kan de camera niet starten. Zorg ervoor dat u camerarechten heeft verleend.",
-      "errImg": "Geen QR-code gevonden in de afbeelding. Probeer een andere afbeelding."
+      "errImg": "Geen QR-code gevonden in de afbeelding. Probeer een andere afbeelding.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Waarom onze scanner gebruiken?",

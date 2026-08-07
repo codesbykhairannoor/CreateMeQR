@@ -1050,7 +1050,11 @@
       "waiting": "Menunggu imbasan...",
       "waitingDesc": "Halakan kamera anda pada kod QR atau muat naik imej.",
       "errCam": "Gagal memulakan kamera. Sila pastikan anda telah memberikan kebenaran kamera.",
-      "errImg": "Tiada kod QR ditemui dalam imej. Sila cuba imej lain."
+      "errImg": "Tiada kod QR ditemui dalam imej. Sila cuba imej lain.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Mengapa menggunakan Pengimbas kami?",

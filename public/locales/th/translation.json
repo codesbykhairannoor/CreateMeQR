@@ -1050,7 +1050,11 @@
       "waiting": "กำลังรอสแกน...",
       "waitingDesc": "เล็งกล้องไปที่โค้ด QR หรืออัปโหลดรูปภาพ",
       "errCam": "ไม่สามารถเริ่มกล้องได้ โปรดตรวจสอบให้แน่ใจว่าคุณได้ให้สิทธิ์ในการใช้กล้องแล้ว",
-      "errImg": "ไม่พบรหัส QR ในภาพ โปรดลองภาพอื่น"
+      "errImg": "ไม่พบรหัส QR ในภาพ โปรดลองภาพอื่น",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "ทำไมต้องใช้เครื่องสแกนของเรา?",

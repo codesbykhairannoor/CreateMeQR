@@ -1050,7 +1050,11 @@
       "waiting": "Đang chờ quét...",
       "waitingDesc": "Hướng máy ảnh của bạn vào mã QR hoặc tải hình ảnh lên.",
       "errCam": "Không khởi động được máy ảnh. Hãy đảm bảo bạn đã cấp quyền cho máy ảnh.",
-      "errImg": "Không tìm thấy mã QR trong hình ảnh. Hãy thử một hình ảnh khác."
+      "errImg": "Không tìm thấy mã QR trong hình ảnh. Hãy thử một hình ảnh khác.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "Tại sao nên sử dụng Máy quét của chúng tôi?",

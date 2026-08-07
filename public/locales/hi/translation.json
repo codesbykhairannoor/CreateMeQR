@@ -1050,7 +1050,11 @@
       "waiting": "स्कैन की प्रतीक्षा में...",
       "waitingDesc": "अपने कैमरे को क्यूआर कोड पर इंगित करें या एक छवि अपलोड करें।",
       "errCam": "कैमरा प्रारंभ करने में विफल. कृपया सुनिश्चित करें कि आपने कैमरे की अनुमति दे दी है।",
-      "errImg": "छवि में कोई क्यूआर कोड नहीं मिला. कृपया कोई अन्य छवि आज़माएँ."
+      "errImg": "छवि में कोई क्यूआर कोड नहीं मिला. कृपया कोई अन्य छवि आज़माएँ.",
+      "toggleQR": "QR Code",
+      "toggleBarcode": "Barcode",
+      "initCamDescBarcode": "Scan a barcode using your device's camera",
+      "uploadBtnBarcode": "Upload Barcode Image File"
     },
     "features": {
       "whyTitle": "हमारे स्कैनर का उपयोग क्यों करें?",
