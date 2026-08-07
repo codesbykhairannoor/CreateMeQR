@@ -110,12 +110,6 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
         </div>
       </div>
 
-      {/* 2. History */}
-      <button onClick={onOpenHistory} className="flex items-center gap-1.5 py-2 text-[15px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-        <Clock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-        {t('history.title', 'Local History')}
-      </button>
-
       {/* 3. Scan QR */}
       <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className="flex items-center gap-1.5 py-2 text-[15px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
         <Scan className="w-4 h-4" />
