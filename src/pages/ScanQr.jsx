@@ -44,7 +44,7 @@ export default function ScanQr() {
         }
       );
     } catch (err) {
-      setError("", t("scanqr.workspace.errCam", "Failed to start camera. Please ensure you have granted camera permissions."), "");
+      setError(t("scanqr.workspace.errCam", "Failed to start camera. Please ensure you have granted camera permissions."));
       setIsScanning(false);
     }
   };
@@ -60,14 +60,13 @@ export default function ScanQr() {
     if (!file) return;
     
     try {
-      if (!html5QrCode.current) {
-        html5QrCode.current = new Html5Qrcode("reader-hidden");
-      }
-      const decodedText = await html5QrCode.current.scanFile(file, true);
+      // Create a fresh instance for file uploads to avoid conflicts with camera scanner state
+      const fileScanner = new Html5Qrcode("reader-hidden");
+      const decodedText = await fileScanner.scanFile(file, true);
       setScanResult(decodedText);
       setError('');
     } catch (err) {
-      setError("", t("scanqr.workspace.errImg", "No QR code found in the image. Please try another image."), "");
+      setError(t("scanqr.workspace.errImg", "No QR code found in the image. Please try another image."));
       setScanResult('');
     }
     
