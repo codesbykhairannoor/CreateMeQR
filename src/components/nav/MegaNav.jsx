@@ -145,22 +145,7 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
         </div>
       </div>
 
-      {/* 4. Company (Dropdown) */}
-      <div className="relative group">
-        <button className="flex items-center gap-1.5 py-2 text-[15px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-          <Building2 className="w-4 h-4" />
-          {t('nav.company', 'Company')}
-          <ChevronDown className="w-4 h-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
-        </button>
-        <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-          <div className="bg-white dark:bg-[#081226] rounded-3xl shadow-[0_30px_80px_-15px_rgba(0,0,0,0.3)] border border-blue-100 dark:border-[#102040] overflow-hidden p-2 w-[200px] flex flex-col">
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}/about`} className="px-4 py-3 rounded-xl hover:bg-slate-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white transition-colors">{t('nav.about', 'About Us')}</a>
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}/compare`} className="px-4 py-3 rounded-xl hover:bg-slate-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white transition-colors">{t('nav.compare', 'Compare')}</a>
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}/privacy`} className="px-4 py-3 rounded-xl hover:bg-slate-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white transition-colors">{t('nav.privacy', 'Privacy Policy')}</a>
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}/terms`} className="px-4 py-3 rounded-xl hover:bg-slate-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white transition-colors">{t('nav.terms', 'Terms of Service')}</a>
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 }

@@ -96,24 +96,6 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
         )}
       </div>
 
-      {/* 4. Company */}
-      <div className="flex flex-col border-b border-zinc-100 dark:border-zinc-800 pb-2">
-        <button onClick={() => toggleSection('company')} className="flex items-center justify-between py-3 text-[15px] font-bold text-zinc-800 dark:text-zinc-200">
-          <div className="flex items-center gap-2">
-            <Building2 className="w-5 h-5 text-purple-600 dark:text-purple-400" />
-            {t('nav.company', 'Company')}
-          </div>
-          {openSection === 'company' ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-        </button>
-        {openSection === 'company' && (
-          <div className="flex flex-col gap-1 pl-7 pr-2 pt-2 pb-4 animate-fade-in-up-fast">
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}/about`} onClick={onClose} className="p-2 rounded-xl hover:bg-slate-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 transition-colors">{t('nav.about', 'About Us')}</a>
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}/compare`} onClick={onClose} className="p-2 rounded-xl hover:bg-slate-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 transition-colors">{t('nav.compare', 'Compare')}</a>
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}/privacy`} onClick={onClose} className="p-2 rounded-xl hover:bg-slate-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 transition-colors">{t('nav.privacy', 'Privacy Policy')}</a>
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}/terms`} onClick={onClose} className="p-2 rounded-xl hover:bg-slate-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 transition-colors">{t('nav.terms', 'Terms of Service')}</a>
-          </div>
-        )}
-      </div>
 
       {/* 5. Theme Toggle */}
       <div className="pb-2 mt-2">
