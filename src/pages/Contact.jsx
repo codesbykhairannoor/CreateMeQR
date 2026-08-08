@@ -17,13 +17,7 @@ export default function Contact() {
         <div className="absolute top-0 right-1/2 translate-x-1/2 w-full h-[500px] bg-blue-500/10 dark:bg-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <h1 className="font-black text-zinc-900 dark:text-white mb-6"
-            style={{
-              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
-              fontWeight: 900,
-              letterSpacing: '-0.03em',
-              lineHeight: 1.15
-            }}>
+          <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.1]">
             {t('info.contact.hero.title', 'Contact')} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t('info.contact.hero.titleHighlight', 'Us')}</span>.
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -38,7 +32,7 @@ export default function Contact() {
             <div className="w-20 h-20 bg-blue-50 dark:bg-blue-900/30 rounded-[2rem] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
               <Mail className="w-10 h-10 text-blue-600 dark:text-blue-400" />
             </div>
-            <h3 className="text-2xl font-bold tracking-tighter dark:text-white mb-4">{t('contact.email_support', 'Email Support')}</h3>
+            <h3 className="text-2xl font-extrabold tracking-tight dark:text-white mb-4">{t('contact.email_support', 'Email Support')}</h3>
             <p className="text-slate-600 dark:text-slate-400 mb-8 text-lg font-medium leading-relaxed">
               {t('contact.email_desc', 'For general inquiries and support, drop us an email.')}
             </p>
@@ -51,7 +45,7 @@ export default function Contact() {
             <div className="w-20 h-20 bg-emerald-50 dark:bg-emerald-900/30 rounded-[2rem] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
               <MessageSquare className="w-10 h-10 text-emerald-600 dark:text-emerald-400" />
             </div>
-            <h3 className="text-2xl font-bold tracking-tighter dark:text-white mb-4">{t('contact.community', 'Community')}</h3>
+            <h3 className="text-2xl font-extrabold tracking-tight dark:text-white mb-4">{t('contact.community', 'Community')}</h3>
             <p className="text-slate-600 dark:text-slate-400 mb-8 text-lg font-medium leading-relaxed">
               {t('contact.community_desc', 'Have a feature request or found a bug? Join the discussion.')}
             </p>
@@ -64,7 +58,7 @@ export default function Contact() {
             <div className="w-20 h-20 bg-purple-50 dark:bg-purple-900/30 rounded-[2rem] flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
               <MapPin className="w-10 h-10 text-purple-600 dark:text-purple-400" />
             </div>
-            <h3 className="text-2xl font-bold tracking-tighter dark:text-white mb-4">{t('contact.hq', 'Headquarters')}</h3>
+            <h3 className="text-2xl font-extrabold tracking-tight dark:text-white mb-4">{t('contact.hq', 'Headquarters')}</h3>
             <p className="text-slate-600 dark:text-slate-400 mb-8 text-lg font-medium leading-relaxed">
               {t('contact.hq_desc', 'Our remote team spans across the globe, working asynchronously.')}
             </p>

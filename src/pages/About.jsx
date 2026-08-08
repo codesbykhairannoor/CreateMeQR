@@ -22,13 +22,7 @@ export default function About() {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           
-          <h1 className="font-black text-zinc-900 dark:text-white mb-6"
-            style={{
-              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
-              fontWeight: 900,
-              letterSpacing: '-0.03em',
-              lineHeight: 1.15
-            }}>
+          <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.1]">
             {t('info.about.hero.title', 'About')} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t('info.about.hero.titleHighlight', 'Us')}</span>.
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -44,7 +38,7 @@ export default function About() {
           <div className="w-24 h-24 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900/40 dark:to-blue-800/40 rounded-[2rem] flex items-center justify-center mx-auto mb-10 shadow-inner transform -rotate-3 group-hover:rotate-0 transition-transform duration-500">
             <Heart className="w-12 h-12 text-blue-600 dark:text-blue-400" />
           </div>
-          <h2 className="text-4xl font-bold tracking-tighter dark:text-white mb-8 tracking-tighter">
+          <h2 className="text-4xl font-extrabold tracking-tight dark:text-white mb-8 tracking-tight">
             {t('info.about.mission.title', 'Our Mission')}
           </h2>
           <p className="text-2xl text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
@@ -55,7 +49,7 @@ export default function About() {
 
       {/* Core Values Section */}
       <section className="max-w-7xl mx-auto px-6 py-24 relative z-10">
-        <h2 className="text-5xl font-bold tracking-tighter dark:text-white text-center mb-20 tracking-tighter">
+        <h2 className="text-5xl font-extrabold tracking-tight dark:text-white text-center mb-20 tracking-tight">
           {t('info.about.values.title', 'Core Values')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -63,7 +57,7 @@ export default function About() {
             <div className="w-20 h-20 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
               <Shield className="w-10 h-10 text-blue-600 dark:text-blue-400" />
             </div>
-            <h3 className="text-3xl font-bold tracking-tighter dark:text-white mb-4 tracking-tighter">
+            <h3 className="text-3xl font-extrabold tracking-tight dark:text-white mb-4 tracking-tight">
               {t('info.about.values.v1', 'Privacy First')}
             </h3>
             <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed font-medium">
@@ -75,7 +69,7 @@ export default function About() {
             <div className="w-20 h-20 bg-emerald-50 dark:bg-emerald-900/30 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
               <Zap className="w-10 h-10 text-emerald-600 dark:text-emerald-400" />
             </div>
-            <h3 className="text-3xl font-bold tracking-tighter dark:text-white mb-4 tracking-tighter">
+            <h3 className="text-3xl font-extrabold tracking-tight dark:text-white mb-4 tracking-tight">
               {t('info.about.values.v2', 'Free Forever')}
             </h3>
             <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed font-medium">
@@ -87,7 +81,7 @@ export default function About() {
             <div className="w-20 h-20 bg-purple-50 dark:bg-purple-900/30 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
               <Globe className="w-10 h-10 text-purple-600 dark:text-purple-400" />
             </div>
-            <h3 className="text-3xl font-bold tracking-tighter dark:text-white mb-4 tracking-tighter">
+            <h3 className="text-3xl font-extrabold tracking-tight dark:text-white mb-4 tracking-tight">
               {t('info.about.values.v3', 'Global Reach')}
             </h3>
             <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed font-medium">
@@ -121,7 +115,7 @@ export default function About() {
 
       {/* Origin Story Section */}
       <section className="max-w-4xl mx-auto px-6 py-32 text-center">
-        <h2 className="text-5xl font-bold tracking-tighter dark:text-white mb-16 tracking-tighter">
+        <h2 className="text-5xl font-extrabold tracking-tight dark:text-white mb-16 tracking-tight">
           {t('info.about.story.title', 'Our Story')}
         </h2>
         <div className="prose prose-xl md:prose-2xl dark:prose-invert mx-auto text-slate-600 dark:text-slate-300">
@@ -138,7 +132,7 @@ export default function About() {
       <section className="max-w-5xl mx-auto px-6 pb-32">
         <div className="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-900 rounded-[3rem] p-16 md:p-24 text-center text-white shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-10 tracking-tighter relative z-10">
+          <h2 className="text-4xl md:text-6xl font-extrabold mb-10 tracking-tight relative z-10">
             {t('info.about.cta.title', 'Ready to create your first QR code?')}
           </h2>
           <Link to="/" className="relative z-10 inline-flex items-center gap-3 bg-white text-blue-900 px-10 py-5 rounded-2xl font-black text-xl hover:bg-blue-50 hover:scale-105 transition-all shadow-xl">

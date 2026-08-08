@@ -100,13 +100,7 @@ export default function ScanQr() {
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 border-b border-slate-200 dark:border-blue-900/30 transition-colors duration-300">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 dark:from-blue-900/30 via-slate-50 dark:via-[#040814] to-slate-50 dark:to-[#040814] transition-colors duration-300"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <h1 className="font-black text-zinc-900 dark:text-white mb-6"
-            style={{
-              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
-              fontWeight: 900,
-              letterSpacing: '-0.03em',
-              lineHeight: 1.15
-            }}>
+          <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.1]">
             {t("scanqr.hero.title", "Instant")} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t("scanqr.hero.titleHighlight", "QR Scanner")}</span>
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -131,7 +125,7 @@ export default function ScanQr() {
                     <div className="absolute inset-0 bg-blue-400 rounded-full animate-ping opacity-20"></div>
                     <Camera className="w-10 h-10 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
                   </div>
-                  <h3 className="text-2xl font-bold tracking-tighter dark:text-white mb-2">{t("scanqr.workspace.initCam", "Initialize Camera")}</h3>
+                  <h3 className="text-2xl font-extrabold tracking-tight dark:text-white mb-2">{t("scanqr.workspace.initCam", "Initialize Camera")}</h3>
                   <p className="text-slate-600 dark:text-slate-400 mb-8">{t("scanqr.workspace.initCamDesc", "Scan a QR code using your device's camera")}</p>
                   
                   <button 
@@ -161,7 +155,7 @@ export default function ScanQr() {
                   <div className="w-20 h-20 bg-green-100 dark:bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                     <ShieldCheck className="w-10 h-10 text-green-600 dark:text-green-400" />
                   </div>
-                  <h3 className="text-2xl font-bold tracking-tighter dark:text-white mb-6">{t("scanqr.workspace.successTitle", "Scan Successful")}</h3>
+                  <h3 className="text-2xl font-extrabold tracking-tight dark:text-white mb-6">{t("scanqr.workspace.successTitle", "Scan Successful")}</h3>
                   <button 
                     onClick={() => { setScanResult(''); setIsScanning(true); }}
                     className="w-full py-4 bg-blue-100 dark:bg-blue-500/20 hover:bg-blue-200 dark:hover:bg-blue-500/30 text-blue-700 dark:text-blue-400 font-bold rounded-xl transition-all flex items-center justify-center gap-2"
@@ -198,7 +192,7 @@ export default function ScanQr() {
               <div className="bg-slate-50 dark:bg-[#02040a] rounded-3xl p-8 border border-slate-200 dark:border-[#1e2d4a] min-h-[400px] flex flex-col relative overflow-hidden transition-colors duration-300">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100 dark:bg-blue-500/10 blur-[50px] rounded-full pointer-events-none"></div>
                 
-                <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 border-b border-slate-200 dark:border-[#1e2d4a] pb-4 text-zinc-900 dark:text-white">
+                <h3 className="text-2xl font-extrabold mb-6 flex items-center gap-3 border-b border-slate-200 dark:border-[#1e2d4a] pb-4 text-zinc-900 dark:text-white">
                   <ScanLine className="w-6 h-6 text-blue-600 dark:text-blue-400" /> Decoded Result
                 </h3>
 
@@ -257,13 +251,13 @@ export default function ScanQr() {
 
       {/* Feature Section 1 */}
       <section className="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-[#1e2d4a]">
-        <h2 className="text-4xl font-bold text-center mb-16 tracking-tighter text-zinc-900 dark:text-white">{t("scanqr.features.whyTitle", "Why use our Scanner?")}</h2>
+        <h2 className="text-4xl font-extrabold text-center mb-16 tracking-tight text-zinc-900 dark:text-white">{t("scanqr.features.whyTitle", "Why use our Scanner?")}</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white dark:bg-[#0a1128] p-10 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] hover:border-blue-500/30 transition-all group shadow-xl">
             <div className="w-16 h-16 bg-blue-50 dark:bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Camera className="w-8 h-8 text-blue-600 dark:text-blue-400" />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">{t("scanqr.features.noAppTitle", "No App Required")}</h3>
+            <h3 className="text-2xl font-extrabold mb-4 text-zinc-900 dark:text-white">{t("scanqr.features.noAppTitle", "No App Required")}</h3>
             <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
               {t("scanqr.features.noAppDesc", "Scan QR codes directly from your browser without downloading any bloated apps. Works perfectly on iOS, Android, and Desktop.")}
             </p>
@@ -272,7 +266,7 @@ export default function ScanQr() {
             <div className="w-16 h-16 bg-indigo-50 dark:bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Lock className="w-8 h-8 text-indigo-600 dark:text-blue-400" />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">{t("scanqr.features.secureTitle", "100% Secure & Private")}</h3>
+            <h3 className="text-2xl font-extrabold mb-4 text-zinc-900 dark:text-white">{t("scanqr.features.secureTitle", "100% Secure & Private")}</h3>
             <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
               {t("scanqr.features.secureDesc", "Your images and camera feed are processed entirely on your device. We never send your scan data to any external servers.")}
             </p>
@@ -281,7 +275,7 @@ export default function ScanQr() {
             <div className="w-16 h-16 bg-purple-50 dark:bg-purple-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <Zap className="w-8 h-8 text-purple-600 dark:text-purple-400" />
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">{t("scanqr.features.fastTitle", "Lightning Fast")}</h3>
+            <h3 className="text-2xl font-extrabold mb-4 text-zinc-900 dark:text-white">{t("scanqr.features.fastTitle", "Lightning Fast")}</h3>
             <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
               {t("scanqr.features.fastDesc", "Optimized WASM engine decodes complex QR codes instantly, even in low light conditions or with blurry cameras.")}
             </p>
@@ -294,7 +288,7 @@ export default function ScanQr() {
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/10 blur-[100px] rounded-full"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-16">
           <div className="flex-1 space-y-8">
-            <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter">
+            <h2 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
               {t("scanqr.features.moreTitle", "More Than Just URLs.")}
             </h2>
             <p className="text-xl text-blue-100 font-medium leading-relaxed">
@@ -344,7 +338,7 @@ export default function ScanQr() {
       {/* Feature Section 3 (Supported Formats Grid) */}
       <section className="max-w-7xl mx-auto px-6 py-24">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold tracking-tighter text-zinc-900 dark:text-white">{t("scanqr.features.formatTitle", "Universal Format Support")}</h2>
+          <h2 className="text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-white">{t("scanqr.features.formatTitle", "Universal Format Support")}</h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">{t("scanqr.features.formatDesc", "Upload an image containing any of these 2D barcodes, and we will decode it instantly right in your browser.")}</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

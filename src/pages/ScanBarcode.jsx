@@ -100,13 +100,7 @@ export default function ScanBarcode() {
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 border-b border-slate-200 dark:border-blue-900/30 transition-colors duration-300">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 dark:from-blue-900/30 via-slate-50 dark:via-[#040814] to-slate-50 dark:to-[#040814] transition-colors duration-300"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-          <h1 className="font-black text-zinc-900 dark:text-white mb-6"
-            style={{
-              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
-              fontWeight: 900,
-              letterSpacing: '-0.03em',
-              lineHeight: 1.15
-            }}>
+          <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.1]">
             {t("scanbarcode.hero.title", "Instant")} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t("scanbarcode.hero.titleHighlight", "Barcode Scanner")}</span>
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -131,7 +125,7 @@ export default function ScanBarcode() {
                     <div className="absolute inset-0 bg-blue-400 rounded-full animate-ping opacity-20"></div>
                     <Camera className="w-10 h-10 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
                   </div>
-                  <h3 className="text-2xl font-bold tracking-tighter dark:text-white mb-2">{t("scanbarcode.workspace.initCam", "Initialize Camera")}</h3>
+                  <h3 className="text-2xl font-extrabold tracking-tight dark:text-white mb-2">{t("scanbarcode.workspace.initCam", "Initialize Camera")}</h3>
                   <p className="text-slate-600 dark:text-slate-400 mb-8">{t("scanbarcode.workspace.initCamDesc", "Scan a QR code using your device's camera")}</p>
                   
                   <button 
@@ -161,7 +155,7 @@ export default function ScanBarcode() {
                   <div className="w-20 h-20 bg-green-100 dark:bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                     <ShieldCheck className="w-10 h-10 text-green-600 dark:text-green-400" />
                   </div>
-                  <h3 className="text-2xl font-bold tracking-tighter dark:text-white mb-6">{t("scanbarcode.workspace.successTitle", "Scan Successful")}</h3>
+                  <h3 className="text-2xl font-extrabold tracking-tight dark:text-white mb-6">{t("scanbarcode.workspace.successTitle", "Scan Successful")}</h3>
                   <button 
                     onClick={() => { setScanResult(''); setIsScanning(true); }}
                     className="w-full py-4 bg-blue-100 dark:bg-blue-500/20 hover:bg-blue-200 dark:hover:bg-blue-500/30 text-blue-700 dark:text-blue-400 font-bold rounded-xl transition-all flex items-center justify-center gap-2"
@@ -198,7 +192,7 @@ export default function ScanBarcode() {
               <div className="bg-slate-50 dark:bg-[#02040a] rounded-3xl p-8 border border-slate-200 dark:border-[#1e2d4a] min-h-[400px] flex flex-col relative overflow-hidden transition-colors duration-300">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100 dark:bg-blue-500/10 blur-[50px] rounded-full pointer-events-none"></div>
                 
-                <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 border-b border-slate-200 dark:border-[#1e2d4a] pb-4 text-zinc-900 dark:text-white">
+                <h3 className="text-2xl font-extrabold mb-6 flex items-center gap-3 border-b border-slate-200 dark:border-[#1e2d4a] pb-4 text-zinc-900 dark:text-white">
                   <ScanLine className="w-6 h-6 text-blue-600 dark:text-blue-400" /> Decoded Result
                 </h3>
 
@@ -259,7 +253,7 @@ export default function ScanBarcode() {
       <section className="bg-white dark:bg-[#0a1128] py-24 border-t border-slate-200 dark:border-[#1e2d4a]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold tracking-tighter text-zinc-900 dark:text-white mb-4">{t("scanbarcode.howto.title", "How to Scan a Barcode")}</h2>
+            <h2 className="text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-white mb-4">{t("scanbarcode.howto.title", "How to Scan a Barcode")}</h2>
             <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">{t("scanbarcode.howto.subtitle", "Three simple steps to decode any product barcode instantly.")}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
@@ -270,7 +264,7 @@ export default function ScanBarcode() {
               <div className="w-24 h-24 bg-white dark:bg-[#040814] rounded-full border-4 border-blue-100 dark:border-blue-900 flex items-center justify-center mb-6 shadow-xl">
                 <span className="text-3xl font-bold text-blue-600 dark:text-blue-400">1</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.howto.step1Title", "Allow Access")}</h3>
+              <h3 className="text-2xl font-extrabold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.howto.step1Title", "Allow Access")}</h3>
               <p className="text-slate-600 dark:text-slate-400 font-medium">{t("scanbarcode.howto.step1Desc", "Click 'Start Scanning' and allow browser access to your device's camera.")}</p>
             </div>
             
@@ -278,7 +272,7 @@ export default function ScanBarcode() {
               <div className="w-24 h-24 bg-white dark:bg-[#040814] rounded-full border-4 border-blue-100 dark:border-blue-900 flex items-center justify-center mb-6 shadow-xl">
                 <span className="text-3xl font-bold text-blue-600 dark:text-blue-400">2</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.howto.step2Title", "Align Barcode")}</h3>
+              <h3 className="text-2xl font-extrabold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.howto.step2Title", "Align Barcode")}</h3>
               <p className="text-slate-600 dark:text-slate-400 font-medium">{t("scanbarcode.howto.step2Desc", "Hold your product steady and align the barcode within the horizontal viewfinder.")}</p>
             </div>
 
@@ -286,7 +280,7 @@ export default function ScanBarcode() {
               <div className="w-24 h-24 bg-white dark:bg-[#040814] rounded-full border-4 border-blue-100 dark:border-blue-900 flex items-center justify-center mb-6 shadow-xl">
                 <span className="text-3xl font-bold text-blue-600 dark:text-blue-400">3</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.howto.step3Title", "View Results")}</h3>
+              <h3 className="text-2xl font-extrabold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.howto.step3Title", "View Results")}</h3>
               <p className="text-slate-600 dark:text-slate-400 font-medium">{t("scanbarcode.howto.step3Desc", "The barcode will be decoded instantly. You can copy the code or search it online.")}</p>
             </div>
           </div>
@@ -295,7 +289,7 @@ export default function ScanBarcode() {
 
       {/* Feature Section 1 (Bento Box Layout) */}
       <section className="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-[#1e2d4a]">
-        <h2 className="text-4xl md:text-5xl font-bold mb-16 tracking-tighter text-zinc-900 dark:text-white max-w-2xl">{t("scanbarcode.features.whyTitle", "Industrial-Grade Barcode Engine")}</h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-16 tracking-tight text-zinc-900 dark:text-white max-w-2xl">{t("scanbarcode.features.whyTitle", "Industrial-Grade Barcode Engine")}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* Main Card */}
@@ -306,7 +300,7 @@ export default function ScanBarcode() {
                 <ScanLine className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h3 className="text-3xl font-bold mb-4 text-white">{t("scanbarcode.features.retailTitle", "Retail & Inventory Ready")}</h3>
+                <h3 className="text-3xl font-extrabold mb-4 text-white">{t("scanbarcode.features.retailTitle", "Retail & Inventory Ready")}</h3>
                 <p className="text-indigo-100 font-medium leading-relaxed text-lg max-w-lg">
                   {t("scanbarcode.features.retailDesc", "Instantly decode product barcodes like UPC, EAN, and ISBN directly from your browser. No dedicated hardware scanners needed—your phone's camera is now an inventory tool.")}
                 </p>
@@ -318,7 +312,7 @@ export default function ScanBarcode() {
           <div className="md:col-span-4 flex flex-col gap-6">
             <div className="bg-white dark:bg-[#0a1128] p-8 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] hover:border-indigo-500/30 transition-all flex-1 shadow-xl">
               <Zap className="w-8 h-8 text-indigo-600 dark:text-indigo-400 mb-6" />
-              <h3 className="text-xl font-bold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.features.fastTitle", "High-Speed Decoding")}</h3>
+              <h3 className="text-xl font-extrabold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.features.fastTitle", "High-Speed Decoding")}</h3>
               <p className="text-slate-600 dark:text-slate-400 font-medium text-sm leading-relaxed">
                 {t("scanbarcode.features.fastDesc", "Powered by WebAssembly, our engine processes frames in milliseconds for rapid consecutive scanning.")}
               </p>
@@ -326,7 +320,7 @@ export default function ScanBarcode() {
             
             <div className="bg-white dark:bg-[#0a1128] p-8 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] hover:border-indigo-500/30 transition-all flex-1 shadow-xl">
               <ShieldCheck className="w-8 h-8 text-teal-600 dark:text-teal-400 mb-6" />
-              <h3 className="text-xl font-bold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.features.privacyTitle", "100% Private")}</h3>
+              <h3 className="text-xl font-extrabold mb-3 text-zinc-900 dark:text-white">{t("scanbarcode.features.privacyTitle", "100% Private")}</h3>
               <p className="text-slate-600 dark:text-slate-400 font-medium text-sm leading-relaxed">
                 {t("scanbarcode.features.privacyDesc", "Barcode processing happens entirely in your local memory. We never transmit your camera feed.")}
               </p>
@@ -340,7 +334,7 @@ export default function ScanBarcode() {
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-indigo-600/10 blur-[100px] rounded-full"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col lg:flex-row gap-16">
           <div className="lg:w-1/3">
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-6">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-6">
               {t("scanbarcode.formats.title", "Universal 1D/2D Support.")}
             </h2>
             <p className="text-lg text-zinc-400 font-medium leading-relaxed mb-8">

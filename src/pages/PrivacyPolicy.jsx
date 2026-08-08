@@ -19,13 +19,7 @@ export default function PrivacyPolicy() {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           
-          <h1 className="font-black text-zinc-900 dark:text-white mb-6"
-            style={{
-              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
-              fontWeight: 900,
-              letterSpacing: '-0.03em',
-              lineHeight: 1.15
-            }}>
+          <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.1]">
             {t('info.privacy.hero.title', 'Privacy')} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t('info.privacy.hero.titleHighlight', 'Policy')}</span>.
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -40,19 +34,19 @@ export default function PrivacyPolicy() {
           <div className="bg-slate-950 dark:bg-[#0a1128] p-12 rounded-[3rem] text-center shadow-2xl relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 border border-slate-800 dark:border-[#1e2d4a]">
             <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <Fingerprint className="w-16 h-16 text-emerald-400 mx-auto mb-8" />
-            <h3 className="text-white font-bold text-3xl mb-4 tracking-tighter">{t('info.privacy.p1.title', 'Zero Tracking')}</h3>
+            <h3 className="text-white font-extrabold text-3xl mb-4 tracking-tight">{t('info.privacy.p1.title', 'Zero Tracking')}</h3>
             <p className="text-slate-400 text-lg font-medium">{t('info.privacy.p1.desc', 'We don\'t use invasive trackers.')}</p>
           </div>
           <div className="bg-emerald-600 dark:bg-emerald-900/60 p-12 rounded-[3rem] text-center shadow-2xl relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 border border-emerald-500 dark:border-emerald-700/50">
             <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <Database className="w-16 h-16 text-white mx-auto mb-8" />
-            <h3 className="text-white font-bold text-3xl mb-4 tracking-tighter">{t('info.privacy.p2.title', 'Client-Side Only')}</h3>
+            <h3 className="text-white font-extrabold text-3xl mb-4 tracking-tight">{t('info.privacy.p2.title', 'Client-Side Only')}</h3>
             <p className="text-emerald-100 text-lg font-medium">{t('info.privacy.p2.desc', 'QR codes are generated in your browser.')}</p>
           </div>
           <div className="bg-slate-950 dark:bg-[#0a1128] p-12 rounded-[3rem] text-center shadow-2xl relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 border border-slate-800 dark:border-[#1e2d4a]">
             <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <ShieldCheck className="w-16 h-16 text-emerald-400 mx-auto mb-8" />
-            <h3 className="text-white font-bold text-3xl mb-4 tracking-tighter">{t('info.privacy.p3.title', 'SSL Encrypted')}</h3>
+            <h3 className="text-white font-extrabold text-3xl mb-4 tracking-tight">{t('info.privacy.p3.title', 'SSL Encrypted')}</h3>
             <p className="text-slate-400 text-lg font-medium">{t('info.privacy.p3.desc', 'All traffic is securely encrypted.')}</p>
           </div>
         </div>
@@ -66,7 +60,7 @@ export default function PrivacyPolicy() {
               <Server className="w-12 h-12 text-blue-600 dark:text-blue-400" />
             </div>
             <div>
-              <h2 className="text-4xl font-bold tracking-tighter dark:text-white mb-6 tracking-tighter">
+              <h2 className="text-4xl font-extrabold tracking-tight dark:text-white mb-6 tracking-tight">
                 {t('info.privacy.sections.s1', 'Data Collection')}
               </h2>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xl font-medium">
@@ -80,7 +74,7 @@ export default function PrivacyPolicy() {
               <EyeOff className="w-12 h-12 text-orange-600 dark:text-orange-400" />
             </div>
             <div>
-              <h2 className="text-4xl font-bold tracking-tighter dark:text-white mb-6 tracking-tighter">
+              <h2 className="text-4xl font-extrabold tracking-tight dark:text-white mb-6 tracking-tight">
                 {t('info.privacy.sections.s2', 'Cookies & Analytics')}
               </h2>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xl font-medium">
@@ -94,7 +88,7 @@ export default function PrivacyPolicy() {
               <Lock className="w-12 h-12 text-rose-600 dark:text-rose-400" />
             </div>
             <div>
-              <h2 className="text-4xl font-bold tracking-tighter dark:text-white mb-6 tracking-tighter">
+              <h2 className="text-4xl font-extrabold tracking-tight dark:text-white mb-6 tracking-tight">
                 {t('info.privacy.sections.s3', 'Third-Party Services')}
               </h2>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xl font-medium">
@@ -111,7 +105,7 @@ export default function PrivacyPolicy() {
           <div className="absolute -right-20 -bottom-20 opacity-5">
             <Shield className="w-96 h-96" />
           </div>
-          <h2 className="text-4xl font-bold tracking-tighter dark:text-white mb-10 tracking-tighter relative z-10">
+          <h2 className="text-4xl font-extrabold tracking-tight dark:text-white mb-10 tracking-tight relative z-10">
             {t('info.privacy.rights.title', 'Your Consent & Rights')}
           </h2>
           <ul className="space-y-6 relative z-10">

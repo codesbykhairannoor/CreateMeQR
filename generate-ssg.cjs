@@ -147,30 +147,30 @@ async function run() {
               </header>
 
               <section class="mb-10 p-6 bg-emerald-50 dark:bg-emerald-900/20 rounded-2xl border border-emerald-100 dark:border-emerald-800/30">
-                <h2 class="text-xl font-semibold text-emerald-800 dark:text-emerald-400 mb-4 mt-0">${geo.certTitle || geoEn.certTitle}</h2>
+                <h2 class="text-2xl font-extrabold tracking-tight text-emerald-900 dark:text-emerald-300 mb-6 mt-0">${geo.certTitle || geoEn.certTitle}</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <h3 class="text-sm font-bold text-zinc-800 dark:text-zinc-200 mb-1">${geo.cert1_t || geoEn.cert1_t}</h3>
+                    <h3 class="text-base font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-2">${geo.cert1_t || geoEn.cert1_t}</h3>
                     <p class="text-sm text-zinc-600 dark:text-zinc-400 m-0">${geo.cert1_d || geoEn.cert1_d}</p>
                   </div>
                   <div>
-                    <h3 class="text-sm font-bold text-zinc-800 dark:text-zinc-200 mb-1">${geo.cert2_t || geoEn.cert2_t}</h3>
+                    <h3 class="text-base font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-2">${geo.cert2_t || geoEn.cert2_t}</h3>
                     <p class="text-sm text-zinc-600 dark:text-zinc-400 m-0">${geo.cert2_d || geoEn.cert2_d}</p>
                   </div>
                   <div class="md:col-span-2 mt-2">
-                    <h3 class="text-sm font-bold text-zinc-800 dark:text-zinc-200 mb-1">${geo.cert3_t || geoEn.cert3_t}</h3>
+                    <h3 class="text-base font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-2">${geo.cert3_t || geoEn.cert3_t}</h3>
                     <p class="text-sm text-zinc-600 dark:text-zinc-400 m-0 italic">${geo.cert3_d || geoEn.cert3_d}</p>
                   </div>
                 </div>
               </section>
               
               <section class="mb-10">
-                <h2 class="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4 mt-10">${geo.h2_1 || geoEn.h2_1}</h2>
+                <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 mt-12">${geo.h2_1 || geoEn.h2_1}</h2>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">${geo.p1_1 || geoEn.p1_1}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p1_2 || geoEn.p1_2}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p1_3 || geoEn.p1_3}</p>
 
-                <h3 class="text-lg font-medium text-zinc-800 dark:text-zinc-200 mt-6 mb-2">${geo.h3_1 || geoEn.h3_1}</h3>
+                <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-3">${geo.h3_1 || geoEn.h3_1}</h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p1_4 || geoEn.p1_4}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p1_5 || geoEn.p1_5}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">${geo.p1_6 || geoEn.p1_6}</p>
@@ -181,11 +181,11 @@ async function run() {
               </section>
 
               <section class="mb-10">
-                <h2 class="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4 mt-10">${geo.h2_2 || geoEn.h2_2}</h2>
+                <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 mt-12">${geo.h2_2 || geoEn.h2_2}</h2>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">${geo.p2_1 || geoEn.p2_1}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p2_2 || geoEn.p2_2}</p>
                 
-                <h3 class="text-lg font-medium text-zinc-800 dark:text-zinc-200 mt-6 mb-2">${geo.h3_2 || geoEn.h3_2}</h3>
+                <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-3">${geo.h3_2 || geoEn.h3_2}</h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p2_3 || geoEn.p2_3}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">${geo.p2_4 || geoEn.p2_4}</p>
                 
@@ -196,11 +196,11 @@ async function run() {
               </section>
 
               <section class="mb-10">
-                <h2 class="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4 mt-10">${geo.h2_3 || geoEn.h2_3}</h2>
+                <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 mt-12">${geo.h2_3 || geoEn.h2_3}</h2>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">${geo.p3_1 || geoEn.p3_1}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p3_2 || geoEn.p3_2}</p>
                 
-                <h3 class="text-lg font-medium text-zinc-800 dark:text-zinc-200 mt-6 mb-2">${geo.h3_3 || geoEn.h3_3}</h3>
+                <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-3">${geo.h3_3 || geoEn.h3_3}</h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p3_3 || geoEn.p3_3}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">${geo.p3_4 || geoEn.p3_4}</p>
                 
@@ -241,19 +241,19 @@ async function run() {
               </section>
 
               <section class="mb-10">
-                <h2 class="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4 mt-10">${geo.h2_4 || geoEn.h2_4}</h2>
+                <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 mt-12">${geo.h2_4 || geoEn.h2_4}</h2>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">${geo.p4_1 || geoEn.p4_1}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p4_2 || geoEn.p4_2}</p>
-                <h3 class="text-lg font-medium text-zinc-800 dark:text-zinc-200 mt-6 mb-2">${geo.h3_4 || geoEn.h3_4}</h3>
+                <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-3">${geo.h3_4 || geoEn.h3_4}</h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p4_3 || geoEn.p4_3}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p4_4 || geoEn.p4_4}</p>
               </section>
 
               <section class="mb-10">
-                <h2 class="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4 mt-10">${geo.h2_5 || geoEn.h2_5}</h2>
+                <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 mt-12">${geo.h2_5 || geoEn.h2_5}</h2>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">${geo.p5_1 || geoEn.p5_1}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p5_2 || geoEn.p5_2}</p>
-                <h3 class="text-lg font-medium text-zinc-800 dark:text-zinc-200 mt-6 mb-2">${geo.h3_5 || geoEn.h3_5}</h3>
+                <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-3">${geo.h3_5 || geoEn.h3_5}</h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p5_3 || geoEn.p5_3}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p5_4 || geoEn.p5_4}</p>
               </section>
@@ -355,30 +355,30 @@ async function run() {
               </header>
 
               <section class="mb-10 p-6 bg-emerald-50 dark:bg-emerald-900/20 rounded-2xl border border-emerald-100 dark:border-emerald-800/30">
-                <h2 class="text-xl font-semibold text-emerald-800 dark:text-emerald-400 mb-4 mt-0">${geo.certTitle || geoEn.certTitle}</h2>
+                <h2 class="text-2xl font-extrabold tracking-tight text-emerald-900 dark:text-emerald-300 mb-6 mt-0">${geo.certTitle || geoEn.certTitle}</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <h3 class="text-sm font-bold text-zinc-800 dark:text-zinc-200 mb-1">${geo.cert1_t || geoEn.cert1_t}</h3>
+                    <h3 class="text-base font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-2">${geo.cert1_t || geoEn.cert1_t}</h3>
                     <p class="text-sm text-zinc-600 dark:text-zinc-400 m-0">${geo.cert1_d || geoEn.cert1_d}</p>
                   </div>
                   <div>
-                    <h3 class="text-sm font-bold text-zinc-800 dark:text-zinc-200 mb-1">${geo.cert2_t || geoEn.cert2_t}</h3>
+                    <h3 class="text-base font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-2">${geo.cert2_t || geoEn.cert2_t}</h3>
                     <p class="text-sm text-zinc-600 dark:text-zinc-400 m-0">${geo.cert2_d || geoEn.cert2_d}</p>
                   </div>
                   <div class="md:col-span-2 mt-2">
-                    <h3 class="text-sm font-bold text-zinc-800 dark:text-zinc-200 mb-1">${geo.cert3_t || geoEn.cert3_t}</h3>
+                    <h3 class="text-base font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-2">${geo.cert3_t || geoEn.cert3_t}</h3>
                     <p class="text-sm text-zinc-600 dark:text-zinc-400 m-0 italic">${geo.cert3_d || geoEn.cert3_d}</p>
                   </div>
                 </div>
               </section>
               
               <section class="mb-10">
-                <h2 class="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4 mt-10">${geo.h2_1 || geoEn.h2_1}</h2>
+                <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 mt-12">${geo.h2_1 || geoEn.h2_1}</h2>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">${geo.p1_1 || geoEn.p1_1}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p1_2 || geoEn.p1_2}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p1_3 || geoEn.p1_3}</p>
 
-                <h3 class="text-lg font-medium text-zinc-800 dark:text-zinc-200 mt-6 mb-2">${geo.h3_1 || geoEn.h3_1}</h3>
+                <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-3">${geo.h3_1 || geoEn.h3_1}</h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p1_4 || geoEn.p1_4}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p1_5 || geoEn.p1_5}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">${geo.p1_6 || geoEn.p1_6}</p>
@@ -389,11 +389,11 @@ async function run() {
               </section>
 
               <section class="mb-10">
-                <h2 class="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4 mt-10">${geo.h2_2 || geoEn.h2_2}</h2>
+                <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 mt-12">${geo.h2_2 || geoEn.h2_2}</h2>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">${geo.p2_1 || geoEn.p2_1}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p2_2 || geoEn.p2_2}</p>
                 
-                <h3 class="text-lg font-medium text-zinc-800 dark:text-zinc-200 mt-6 mb-2">${geo.h3_2 || geoEn.h3_2}</h3>
+                <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-3">${geo.h3_2 || geoEn.h3_2}</h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p2_3 || geoEn.p2_3}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed">${geo.p2_4 || geoEn.p2_4}</p>
                 
@@ -404,11 +404,11 @@ async function run() {
               </section>
 
               <section class="mb-10">
-                <h2 class="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4 mt-10">${geo.h2_3 || geoEn.h2_3}</h2>
+                <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 mt-12">${geo.h2_3 || geoEn.h2_3}</h2>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">${geo.p3_1 || geoEn.p3_1}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p3_2 || geoEn.p3_2}</p>
                 
-                <h3 class="text-lg font-medium text-zinc-800 dark:text-zinc-200 mt-6 mb-2">${geo.h3_3 || geoEn.h3_3}</h3>
+                <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-3">${geo.h3_3 || geoEn.h3_3}</h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p3_3 || geoEn.p3_3}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-6 leading-relaxed">${geo.p3_4 || geoEn.p3_4}</p>
                 
@@ -449,19 +449,19 @@ async function run() {
               </section>
 
               <section class="mb-10">
-                <h2 class="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4 mt-10">${geo.h2_4 || geoEn.h2_4}</h2>
+                <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 mt-12">${geo.h2_4 || geoEn.h2_4}</h2>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">${geo.p4_1 || geoEn.p4_1}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p4_2 || geoEn.p4_2}</p>
-                <h3 class="text-lg font-medium text-zinc-800 dark:text-zinc-200 mt-6 mb-2">${geo.h3_4 || geoEn.h3_4}</h3>
+                <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-3">${geo.h3_4 || geoEn.h3_4}</h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p4_3 || geoEn.p4_3}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p4_4 || geoEn.p4_4}</p>
               </section>
 
               <section class="mb-10">
-                <h2 class="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-4 mt-10">${geo.h2_5 || geoEn.h2_5}</h2>
+                <h2 class="text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-6 mt-12">${geo.h2_5 || geoEn.h2_5}</h2>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">${geo.p5_1 || geoEn.p5_1}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p5_2 || geoEn.p5_2}</p>
-                <h3 class="text-lg font-medium text-zinc-800 dark:text-zinc-200 mt-6 mb-2">${geo.h3_5 || geoEn.h3_5}</h3>
+                <h3 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-3">${geo.h3_5 || geoEn.h3_5}</h3>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p5_3 || geoEn.p5_3}</p>
                 <p class="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">${geo.p5_4 || geoEn.p5_4}</p>
               </section>

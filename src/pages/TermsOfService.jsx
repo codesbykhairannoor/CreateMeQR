@@ -20,13 +20,7 @@ export default function TermsOfService() {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           
-          <h1 className="font-black text-zinc-900 dark:text-white mb-6"
-            style={{
-              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
-              fontWeight: 900,
-              letterSpacing: '-0.03em',
-              lineHeight: 1.15
-            }}>
+          <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.1]">
             {t('info.terms.hero.title', 'Terms of')} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t('info.terms.hero.titleHighlight', 'Service')}</span>.
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
@@ -56,7 +50,7 @@ export default function TermsOfService() {
               <div className="p-5 bg-red-50 dark:bg-red-900/30 rounded-2xl">
                 <AlertTriangle className="w-10 h-10 text-red-600 dark:text-red-400" />
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter dark:text-white tracking-tighter">
+              <h2 className="text-3xl font-extrabold tracking-tight dark:text-white tracking-tight">
                 {t('info.terms.sections.s1', 'Acceptable Use')}
               </h2>
             </div>
@@ -70,7 +64,7 @@ export default function TermsOfService() {
               <div className="p-5 bg-blue-50 dark:bg-blue-900/30 rounded-2xl">
                 <Scale className="w-10 h-10 text-blue-600 dark:text-blue-400" />
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter dark:text-white tracking-tighter">
+              <h2 className="text-3xl font-extrabold tracking-tight dark:text-white tracking-tight">
                 {t('info.terms.sections.s2', 'Service Availability')}
               </h2>
             </div>
@@ -85,7 +79,7 @@ export default function TermsOfService() {
               <Copyright className="w-12 h-12 text-purple-600 dark:text-purple-400" />
             </div>
             <div>
-              <h2 className="text-4xl font-bold tracking-tighter dark:text-white mb-6 tracking-tighter">
+              <h2 className="text-4xl font-extrabold tracking-tight dark:text-white mb-6 tracking-tight">
                 {t('info.terms.sections.s3', 'Intellectual Property')}
               </h2>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-xl font-medium mb-6">
@@ -109,7 +103,7 @@ export default function TermsOfService() {
               <RefreshCcw className="w-12 h-12 text-orange-400" />
             </div>
             <div className="relative z-10">
-              <h2 className="text-4xl font-bold text-white mb-6 tracking-tighter">
+              <h2 className="text-4xl font-extrabold text-white mb-6 tracking-tight">
                 {t('info.terms.updates.title', 'Changes to Terms')}
               </h2>
               <p className="text-slate-300 leading-relaxed text-xl font-medium">
