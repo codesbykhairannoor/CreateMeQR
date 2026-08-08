@@ -127,10 +127,10 @@ export default function MainLayout({ children }) {
           <MegaNav currentLangCode={currentLangCode} />
 
           <div className="flex items-center gap-2">
-            <button onClick={() => setShowHistory(true)} title={t('history.title', 'Local History')} className="hidden lg:flex p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+            <button onClick={() => setShowHistory(true)} title={t('history.title', 'Local History')} className="hidden xl:flex p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
               <Clock className="w-5 h-5" />
             </button>
-            <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800 mx-1 hidden lg:block"></div>
+            <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800 mx-1 hidden xl:block"></div>
             
             <div className="relative">
               <button onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
@@ -164,10 +164,10 @@ export default function MainLayout({ children }) {
                 </>
               )}
             </div>
-            <button onClick={() => setDarkMode(!darkMode)} className="hidden lg:block p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+            <button onClick={() => setDarkMode(!darkMode)} className="hidden xl:block p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
               {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
-            <button onClick={() => setShowMobileNav(!showMobileNav)} className="lg:hidden p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+            <button onClick={() => setShowMobileNav(!showMobileNav)} className="xl:hidden p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
               {showMobileNav ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
@@ -176,7 +176,7 @@ export default function MainLayout({ children }) {
 
       {/* Mobile Navigation Overlay */}
       {showMobileNav && (
-        <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-white/95 dark:bg-[#040a18]/95 backdrop-blur-3xl overflow-y-auto">
+        <div className="xl:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-white/95 dark:bg-[#040a18]/95 backdrop-blur-3xl overflow-y-auto">
           <MobileNav 
             currentLangCode={currentLangCode} 
             onClose={() => setShowMobileNav(false)} 
