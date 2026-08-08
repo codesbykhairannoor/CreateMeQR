@@ -7,9 +7,10 @@ export default function TermsOfService() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-[#020617] font-sans overflow-hidden">
+    <div className="min-h-screen bg-slate-50 dark:bg-[#040814] font-sans overflow-hidden">
       <Helmet>
         <title>{t('info.terms.hero.title', 'Terms of Service')} - CreateMyQR</title>
+        <meta name="description" content={t('info.terms.hero.subtitle', 'Rules of the road for using our platform.')} />
       </Helmet>
 
       {/* Hero Section with Premium Design */}

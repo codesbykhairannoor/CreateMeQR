@@ -8,9 +8,10 @@ export default function About() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-[#020617] font-sans overflow-hidden">
+    <div className="min-h-screen bg-slate-50 dark:bg-[#040814] font-sans overflow-hidden">
       <Helmet>
         <title>{t('info.about.hero.title', 'About Us')} - CreateMyQR</title>
+        <meta name="description" content={t('info.about.hero.subtitle', 'Empowering global connections through seamless QR technology.')} />
       </Helmet>
 
       {/* Hero Section with Premium Design */}

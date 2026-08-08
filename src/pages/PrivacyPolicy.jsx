@@ -7,9 +7,10 @@ export default function PrivacyPolicy() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-[#020617] font-sans overflow-hidden">
+    <div className="min-h-screen bg-slate-50 dark:bg-[#040814] font-sans overflow-hidden">
       <Helmet>
         <title>{t('info.privacy.hero.title', 'Privacy Policy')} - CreateMyQR</title>
+        <meta name="description" content={t('info.privacy.hero.subtitle', 'Your data is yours. We keep it that way.')} />
       </Helmet>
 
       {/* Hero Section with Premium Design */}
