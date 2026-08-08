@@ -2,8 +2,32 @@ const fs = require('fs');
 const path = require('path');
 
 async function run() {
+  // Polyfills for SSR
+  global.window = { location: { pathname: '/', search: '', hash: '' } };
+  global.document = {
+    documentElement: { dir: 'ltr' },
+    querySelector: () => null,
+    createElement: () => ({}),
+    cookie: '',
+  };
+  global.location = global.window.location;
+  global.localStorage = { getItem: () => null, setItem: () => {} };
+  global.navigator = { language: 'en' };
+
   // Use dynamic import for ES modules
   const { localizedRoutes, routeToToolMap } = await import('./src/config/localizedRoutes.js');
+  
+  let serverRender = null;
+  try {
+    const serverEntryPath = path.join(__dirname, 'dist', 'server', 'entry-server.js');
+    if (fs.existsSync(serverEntryPath)) {
+      const serverModule = await import('file://' + serverEntryPath.replace(/\\/g, '/'));
+      serverRender = serverModule.render;
+      console.log('✅ Loaded React Server-Side Rendering (SSR) bundle.');
+    }
+  } catch (e) {
+    console.error('Failed to load SSR bundle:', e);
+  }
 
   // Helper to get languages
   const langsDir = path.join(__dirname, 'public', 'locales');
@@ -109,28 +133,33 @@ async function run() {
 
       newHtml = newHtml.replace('</head>', hreflangMatrix + '  </head>');
 
-      // Load fallback English geoOptimized for missing ones (zh, ja, etc)
-      {
-        let localTranslations = {};
+      const urlPath = lang === 'en' ? localizedSlug : `/${lang}${localizedSlug === '/' ? '' : localizedSlug}`;
+      let ssrHtml = '';
+      if (serverRender) {
         try {
-          if (typeof translations !== 'undefined') {
-            localTranslations = translations;
-          } else {
-            const transPath = path.join(langsDir, lang, 'translation.json');
-            if (fs.existsSync(transPath)) {
-              localTranslations = JSON.parse(fs.readFileSync(transPath, 'utf8'));
-            }
+          // Update location for this route
+          global.window.location = { pathname: urlPath, search: '', hash: '' };
+          global.location = global.window.location;
+          
+          const helmetContext = {};
+          ssrHtml = serverRender(urlPath, helmetContext);
+          
+          if (helmetContext.helmet) {
+            newHtml = newHtml.replace(
+              /<title>.*?<\/title>/,
+              helmetContext.helmet.title.toString()
+            );
+            newHtml = newHtml.replace(
+              /<meta name="description".*?>/,
+              helmetContext.helmet.meta.toString()
+            );
           }
-        } catch (e) {}
-
-        const enTransPath = path.join(langsDir, 'en', 'translation.json');
-        const enTrans = JSON.parse(fs.readFileSync(enTransPath, 'utf8'));
-        const geoEn = enTrans.geoOptimized;
-        const geo = localTranslations.geoOptimized || geoEn;
-
-        // Construct localized static-seo block
-        
+        } catch (e) {
+          console.error(`Error SSR rendering ${urlPath}:`, e);
+        }
       }
+      
+      newHtml = newHtml.replace('<!--ssr-outlet-->', ssrHtml);
 
 
       const routeDir = lang === 'en' ? 
@@ -143,6 +172,9 @@ async function run() {
       
       fs.writeFileSync(path.join(routeDir, 'index.html'), newHtml);
       generatedCount++;
+      if (generatedCount % 100 === 0) {
+        console.log(`Generated ${generatedCount} pages... (Latest: ${urlPath})`);
+      }
     }
   }
 
