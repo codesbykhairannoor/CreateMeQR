@@ -140,7 +140,7 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
               <div key={colIdx} className="flex flex-col">
                 {column.map((cat, catIdx) => (
                   <React.Fragment key={catIdx}>
-                    <h4 className={`text-[11px] font-extrabold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3 ${catIdx > 0 ? 'mt-4' : ''}`}>{t(cat.title)}</h4>
+                    <h4 className={`text-[12px] font-extrabold uppercase text-blue-600 dark:text-blue-400 mb-3 ${catIdx > 0 ? 'mt-4' : ''}`}>{t(cat.title)}</h4>
                     <div className="flex flex-col gap-1">
                       {cat.items.map(item => {
                         const Icon = item.icon;
