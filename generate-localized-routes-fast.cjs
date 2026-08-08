@@ -46,14 +46,16 @@ const LANGS = [
   'fi', 'no', 'hu', 'ro', 'uk', 'ms', 'tl', 'bn'
 ];
 
+const { slugify } = require('transliteration');
+
 function robustSlugify(text) {
   if (!text) return '';
-  return text.toString().toLowerCase()
-    .replace(/\s+/g, '-')
-    // Remove characters that could break URLs, but preserve standard foreign letters
-    .replace(/[^a-z0-9\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF\-]+/g, '')
-    .replace(/\-\-+/g, '-')
-    .replace(/^-+|-+$/g, '');
+  // Use transliteration to convert cyrillic, arabic, kanji, etc to Latin A-Z
+  return slugify(text.toString(), {
+    lowercase: true,
+    separator: '-',
+    ignore: []
+  });
 }
 
 async function run() {
@@ -107,7 +109,8 @@ async function run() {
       // So the slug would just be "/wifi". Which is OK, but for SEO we want "wifi-qr-code-generator".
       // But we can append the translation of "QR Code Generator".
       
-      const qrCodeGeneratorStr = data?.appTitle || "QR Code Generator";
+      let qrCodeGeneratorStr = data?.appTitle || "QR Code Generator";
+      qrCodeGeneratorStr = qrCodeGeneratorStr.replace(/-?\s*CreateMy-QR \(No Signup\)/i, '').trim();
       let finalSlug = robustSlugify(translatedTitle + ' ' + qrCodeGeneratorStr);
       
       const theSlug = '/' + finalSlug;
