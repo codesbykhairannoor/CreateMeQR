@@ -1139,14 +1139,16 @@
     "privacy": "سياسة الخصوصية",
     "terms": "شروط الخدمة",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "مسح رمز الاستجابة السريعة",
     "scanbarcode": "مسح الباركود",
     "catMessage": "المراسلة",
     "catContact": "اتصال",
     "catWeb": "الروابط والويب",
     "catPlaces": "الأماكن والأحداث",
     "catMedia": "وسائل الإعلام والترفيه",
-    "catData": "الملفات والبيانات"
+    "catData": "الملفات والبيانات",
+    "generator": "جميع أدوات QR",
+    "barcode": "صانع الباركود"
   },
   "contact": {
     "title": "اتصل بنا",

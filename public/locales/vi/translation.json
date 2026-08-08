@@ -1139,14 +1139,16 @@
     "privacy": "Chính sách bảo mật",
     "terms": "Điều khoản dịch vụ",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "Quét mã QR",
     "scanbarcode": "Quét mã vạch",
     "catMessage": "Nhắn tin",
     "catContact": "Liên hệ",
     "catWeb": "Liên kết & Web",
     "catPlaces": "Địa điểm & Sự kiện",
     "catMedia": "Truyền thông & Giải trí",
-    "catData": "Tệp & Dữ liệu"
+    "catData": "Tệp & Dữ liệu",
+    "generator": "TẤT CẢ CÔNG CỤ QR",
+    "barcode": "Máy tạo mã vạch"
   },
   "contact": {
     "title": "Liên hệ với chúng tôi",

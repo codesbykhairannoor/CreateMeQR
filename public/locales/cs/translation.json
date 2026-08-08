@@ -1139,14 +1139,16 @@
     "privacy": "Zásady ochrany osobních údajů",
     "terms": "Podmínky služby",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "Naskenujte QR kód",
     "scanbarcode": "Naskenujte čárový kód",
     "catMessage": "Zprávy",
     "catContact": "Kontakt",
     "catWeb": "Odkazy a web",
     "catPlaces": "Místa a události",
     "catMedia": "Média a zábava",
-    "catData": "Soubory a data"
+    "catData": "Soubory a data",
+    "generator": "VŠECHNY QR NÁSTROJE",
+    "barcode": "Tvůrce čárových kódů"
   },
   "contact": {
     "title": "Kontaktujte nás",

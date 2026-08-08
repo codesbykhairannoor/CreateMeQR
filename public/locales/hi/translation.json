@@ -1139,14 +1139,16 @@
     "privacy": "गोपनीयता नीति",
     "terms": "सेवा की शर्तें",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "स्कैन क्यू आर कोड",
     "scanbarcode": "बारकोड स्कैन करें",
     "catMessage": "संदेश",
     "catContact": "संपर्क",
     "catWeb": "लिंक और वेब",
     "catPlaces": "स्थान एवं घटनाएँ",
     "catMedia": "मीडिया एवं मनोरंजन",
-    "catData": "फ़ाइलें और डेटा"
+    "catData": "फ़ाइलें और डेटा",
+    "generator": "सभी क्यूआर उपकरण",
+    "barcode": "बारकोड निर्माता"
   },
   "contact": {
     "title": "हमसे संपर्क करें",

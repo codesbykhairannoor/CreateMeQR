@@ -1139,14 +1139,16 @@
     "privacy": "политика конфиденциальности",
     "terms": "Условия использования",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "Сканировать QR-код",
     "scanbarcode": "Сканировать штрих-код",
     "catMessage": "Обмен сообщениями",
     "catContact": "Контакт",
     "catWeb": "Ссылки и Интернет",
     "catPlaces": "Места и события",
     "catMedia": "СМИ и развлечения",
-    "catData": "Файлы и данные"
+    "catData": "Файлы и данные",
+    "generator": "ВСЕ QR-ИНСТРУМЕНТЫ",
+    "barcode": "Создатель штрих-кода"
   },
   "contact": {
     "title": "Свяжитесь с нами",

@@ -1138,7 +1138,11 @@
     "catWeb": "Link-uri și web",
     "catPlaces": "Locuri și evenimente",
     "catMedia": "Media și divertisment",
-    "catData": "Fișiere și date"
+    "catData": "Fișiere și date",
+    "generator": "TOATE INSTRUMENTELE QR",
+    "barcode": "Creator de coduri de bare",
+    "scanqr": "Scanați codul QR",
+    "scanbarcode": "Scanați codul de bare"
   },
   "contact": {
     "title": "Contactează-ne",

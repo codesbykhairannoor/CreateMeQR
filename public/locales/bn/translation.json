@@ -1139,14 +1139,16 @@
     "privacy": "গোপনীয়তা নীতি",
     "terms": "পরিষেবার শর্তাবলী",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "QR কোড স্ক্যান করুন",
     "scanbarcode": "বারকোড স্ক্যান করুন",
     "catMessage": "মেসেজিং",
     "catContact": "যোগাযোগ",
     "catWeb": "লিঙ্ক এবং ওয়েব",
     "catPlaces": "স্থান এবং ঘটনা",
     "catMedia": "মিডিয়া এবং বিনোদন",
-    "catData": "ফাইল এবং ডেটা"
+    "catData": "ফাইল এবং ডেটা",
+    "generator": "সমস্ত QR টুল",
+    "barcode": "বারকোড মেকার"
   },
   "contact": {
     "title": "আমাদের সাথে যোগাযোগ করুন",

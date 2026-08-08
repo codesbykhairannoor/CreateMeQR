@@ -1139,14 +1139,16 @@
     "privacy": "Gizlilik Politikası",
     "terms": "Hizmet Şartları",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "QR Kodunu Tara",
     "scanbarcode": "Barkodu Tara",
     "catMessage": "Mesajlaşma",
     "catContact": "Temas etmek",
     "catWeb": "Bağlantılar ve Web",
     "catPlaces": "Yerler ve Etkinlikler",
     "catMedia": "Medya ve Eğlence",
-    "catData": "Dosyalar ve Veriler"
+    "catData": "Dosyalar ve Veriler",
+    "generator": "TÜM QR ARAÇLARI",
+    "barcode": "Barkod Oluşturucu"
   },
   "contact": {
     "title": "Bize Ulaşın",

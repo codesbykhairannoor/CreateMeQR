@@ -121,7 +121,7 @@ export default function MainLayout({ children }) {
         <div className="relative max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
             <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-8 h-8 rounded-xl object-contain shadow-sm" />
-            <span className="text-lg font-bold text-zinc-900 dark:text-white tracking-tight">CreateMy-QR</span>
+            <span className="text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight">CreateMy-QR</span>
           </div>
           
           <MegaNav currentLangCode={currentLangCode} />

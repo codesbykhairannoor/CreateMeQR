@@ -1128,7 +1128,9 @@
     "catWeb": "Links & Web",
     "catPlaces": "Places & Events",
     "catMedia": "Media & Entertainment",
-    "catData": "Files & Data"
+    "catData": "Files & Data",
+    "generator": "ALL QR TOOLS",
+    "barcode": "Barcode Maker"
   },
   "contact": {
     "title": "Contact Us",

@@ -1139,14 +1139,16 @@
     "privacy": "นโยบายความเป็นส่วนตัว",
     "terms": "ข้อกำหนดในการให้บริการ",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "สแกนรหัส QR",
     "scanbarcode": "สแกนบาร์โค้ด",
     "catMessage": "การส่งข้อความ",
     "catContact": "ติดต่อ",
     "catWeb": "ลิงค์และเว็บ",
     "catPlaces": "สถานที่และกิจกรรม",
     "catMedia": "สื่อและความบันเทิง",
-    "catData": "ไฟล์และข้อมูล"
+    "catData": "ไฟล์และข้อมูล",
+    "generator": "เครื่องมือ QR ทั้งหมด",
+    "barcode": "เครื่องสร้างบาร์โค้ด"
   },
   "contact": {
     "title": "ติดต่อเรา",

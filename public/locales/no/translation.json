@@ -1139,14 +1139,16 @@
     "privacy": "Personvernerklæring",
     "terms": "Vilkår for bruk",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "Skann QR-kode",
     "scanbarcode": "Skann strekkode",
     "catMessage": "Meldinger",
     "catContact": "Kontakt",
     "catWeb": "Lenker og nett",
     "catPlaces": "Steder og hendelser",
     "catMedia": "Media og underholdning",
-    "catData": "Filer og data"
+    "catData": "Filer og data",
+    "generator": "ALLE QR-VERKTØY",
+    "barcode": "Strekkodemaker"
   },
   "contact": {
     "title": "Kontakt oss",

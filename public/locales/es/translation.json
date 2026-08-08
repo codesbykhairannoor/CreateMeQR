@@ -1139,14 +1139,16 @@
     "privacy": "política de privacidad",
     "terms": "Términos de servicio",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "Escanear código QR",
     "scanbarcode": "Escanear código de barras",
     "catMessage": "Mensajería",
     "catContact": "Contacto",
     "catWeb": "Enlaces y Web",
     "catPlaces": "Lugares y Eventos",
     "catMedia": "Medios y entretenimiento",
-    "catData": "Archivos y datos"
+    "catData": "Archivos y datos",
+    "generator": "TODAS LAS HERRAMIENTAS QR",
+    "barcode": "Creador de códigos de barras"
   },
   "contact": {
     "title": "Contáctenos",

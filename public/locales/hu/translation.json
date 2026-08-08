@@ -1138,7 +1138,11 @@
     "catWeb": "Linkek és web",
     "catPlaces": "Helyek és események",
     "catMedia": "Média és szórakoztatás",
-    "catData": "Fájlok és adatok"
+    "catData": "Fájlok és adatok",
+    "generator": "ÖSSZES QR-SZERSZÁM",
+    "barcode": "Vonalkód készítő",
+    "scanqr": "QR-kód beolvasása",
+    "scanbarcode": "Vonalkód beolvasása"
   },
   "contact": {
     "title": "Lépjen kapcsolatba velünk",

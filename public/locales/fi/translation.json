@@ -1139,14 +1139,16 @@
     "privacy": "Tietosuojakäytäntö",
     "terms": "Palveluehdot",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "Skannaa QR-koodi",
     "scanbarcode": "Skannaa viivakoodi",
     "catMessage": "Viestit",
     "catContact": "Ota yhteyttä",
     "catWeb": "Linkit & Web",
     "catPlaces": "Paikat & Tapahtumat",
     "catMedia": "Media ja viihde",
-    "catData": "Tiedostot ja tiedot"
+    "catData": "Tiedostot ja tiedot",
+    "generator": "KAIKKI QR-TYÖKALUT",
+    "barcode": "Viivakoodin valmistaja"
   },
   "contact": {
     "title": "Ota yhteyttä",

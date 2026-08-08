@@ -1139,14 +1139,16 @@
     "privacy": "Sekretesspolicy",
     "terms": "Användarvillkor",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "Skanna QR-koden",
     "scanbarcode": "Skanna streckkod",
     "catMessage": "Meddelanden",
     "catContact": "Kontakta",
     "catWeb": "Länkar & webb",
     "catPlaces": "Platser & evenemang",
     "catMedia": "Media & Underhållning",
-    "catData": "Filer och data"
+    "catData": "Filer och data",
+    "generator": "ALLA QR-VERKTYG",
+    "barcode": "Streckkodstillverkare"
   },
   "contact": {
     "title": "Kontakta oss",

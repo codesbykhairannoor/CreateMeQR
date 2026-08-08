@@ -1139,14 +1139,16 @@
     "privacy": "Dasar Privasi",
     "terms": "Syarat Perkhidmatan",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "Imbas Kod QR",
     "scanbarcode": "Imbas Kod Bar",
     "catMessage": "Pemesejan",
     "catContact": "Kenalan",
     "catWeb": "Pautan & Web",
     "catPlaces": "Tempat & Acara",
     "catMedia": "Media & Hiburan",
-    "catData": "Fail & Data"
+    "catData": "Fail & Data",
+    "generator": "SEMUA ALAT QR",
+    "barcode": "Pembuat Kod Bar"
   },
   "contact": {
     "title": "Hubungi Kami",

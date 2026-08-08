@@ -1139,14 +1139,16 @@
     "privacy": "Patakaran sa Privacy",
     "terms": "Mga Tuntunin ng Serbisyo",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "I-scan ang QR Code",
     "scanbarcode": "I-scan ang Barcode",
     "catMessage": "Pagmemensahe",
     "catContact": "Makipag-ugnayan",
     "catWeb": "Mga Link at Web",
     "catPlaces": "Mga Lugar at Kaganapan",
     "catMedia": "Media at Libangan",
-    "catData": "Mga File at Data"
+    "catData": "Mga File at Data",
+    "generator": "LAHAT NG QR TOOLS",
+    "barcode": "Tagagawa ng Barcode"
   },
   "contact": {
     "title": "Makipag-ugnayan sa Amin",

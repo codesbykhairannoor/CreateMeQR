@@ -1139,14 +1139,16 @@
     "privacy": "Πολιτική Απορρήτου",
     "terms": "Όροι Παροχής Υπηρεσιών",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "Σάρωση κωδικού QR",
     "scanbarcode": "Σάρωση γραμμικού κώδικα",
     "catMessage": "Μηνύματα",
     "catContact": "Επαφή",
     "catWeb": "Σύνδεσμοι & Ιστός",
     "catPlaces": "Μέρη & Εκδηλώσεις",
     "catMedia": "Μέσα & Ψυχαγωγία",
-    "catData": "Αρχεία & Δεδομένα"
+    "catData": "Αρχεία & Δεδομένα",
+    "generator": "ΟΛΑ ΤΑ ΕΡΓΑΛΕΙΑ QR",
+    "barcode": "Δημιουργός Barcode"
   },
   "contact": {
     "title": "Επικοινωνήστε μαζί μας",

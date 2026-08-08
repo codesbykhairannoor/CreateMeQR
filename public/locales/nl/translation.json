@@ -1139,14 +1139,16 @@
     "privacy": "Privacybeleid",
     "terms": "Servicevoorwaarden",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "QR-code scannen",
     "scanbarcode": "Streepjescode scannen",
     "catMessage": "Berichten",
     "catContact": "Contact",
     "catWeb": "Links en internet",
     "catPlaces": "Plaatsen en evenementen",
     "catMedia": "Media en entertainment",
-    "catData": "Bestanden en gegevens"
+    "catData": "Bestanden en gegevens",
+    "generator": "ALLE QR-HULPMIDDELEN",
+    "barcode": "Barcodemaker"
   },
   "contact": {
     "title": "Neem contact met ons op",

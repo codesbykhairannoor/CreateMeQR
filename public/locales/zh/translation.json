@@ -1139,14 +1139,16 @@
     "privacy": "隐私政策",
     "terms": "服务条款",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "扫描二维码",
     "scanbarcode": "扫描条码",
     "catMessage": "消息传递",
     "catContact": "接触",
     "catWeb": "链接和网页",
     "catPlaces": "地点和活动",
     "catMedia": "媒体与娱乐",
-    "catData": "文件和数据"
+    "catData": "文件和数据",
+    "generator": "所有二维码工具",
+    "barcode": "条码制作工具"
   },
   "contact": {
     "title": "联系我们",

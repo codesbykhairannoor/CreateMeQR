@@ -1139,14 +1139,16 @@
     "privacy": "Kebijakan Privasi",
     "terms": "Ketentuan Layanan",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "Pindai Kode QR",
     "scanbarcode": "Pindai Kode Batang",
     "catMessage": "Pesan",
     "catContact": "Kontak",
     "catWeb": "Tautan & Web",
     "catPlaces": "Tempat & Acara",
     "catMedia": "Media & Hiburan",
-    "catData": "File & Data"
+    "catData": "File & Data",
+    "generator": "SEMUA ALAT QR",
+    "barcode": "Pembuat Kode Batang"
   },
   "contact": {
     "title": "Hubungi Kami",

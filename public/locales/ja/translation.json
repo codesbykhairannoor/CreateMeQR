@@ -1139,14 +1139,16 @@
     "privacy": "プライバシーポリシー",
     "terms": "利用規約",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "QRコードをスキャン",
     "scanbarcode": "バーコードをスキャンする",
     "catMessage": "メッセージング",
     "catContact": "接触",
     "catWeb": "リンクとウェブ",
     "catPlaces": "場所とイベント",
     "catMedia": "メディアとエンターテイメント",
-    "catData": "ファイルとデータ"
+    "catData": "ファイルとデータ",
+    "generator": "すべての QR ツール",
+    "barcode": "バーコードメーカー"
   },
   "contact": {
     "title": "お問い合わせ",

@@ -1139,14 +1139,16 @@
     "privacy": "politica sulla riservatezza",
     "terms": "Termini di servizio",
     "scanGroup": "Scanner",
-    "scanqr": "Scan QR Code",
+    "scanqr": "Scansiona il codice QR",
     "scanbarcode": "Scansiona il codice a barre",
     "catMessage": "Messaggistica",
     "catContact": "Contatto",
     "catWeb": "Collegamenti e Web",
     "catPlaces": "Luoghi ed eventi",
     "catMedia": "Media e intrattenimento",
-    "catData": "File e dati"
+    "catData": "File e dati",
+    "generator": "TUTTI GLI STRUMENTI QR",
+    "barcode": "Creatore di codici a barre"
   },
   "contact": {
     "title": "Contattaci",
