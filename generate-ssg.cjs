@@ -38,8 +38,14 @@ async function run() {
         description = translations.tagline || 'Generate high-quality static QR codes directly in your browser.';
       } else {
         const toolName = translations.types?.[toolId] || toolId;
-        title = translations.seoTool?.title?.replace('{{tool}}', toolName) || `${toolName} Generator`;
-        description = translations.seoTool?.description?.replace('{{tool}}', toolName) || `Free ${toolName} generator`;
+        
+        // Build a professional, flawless title like "Wi-Fi - Free QR Code Generator | CreateMy-QR"
+        let baseAppTitle = translations.appTitle || 'CreateMy-QR | Free Custom QR Code Generator';
+        // Clean up "(No Signup)" for cleaner tool titles
+        baseAppTitle = baseAppTitle.replace(/\s*\([^)]*\)/g, ''); 
+        
+        title = `${toolName} - ${baseAppTitle}`;
+        description = translations.seoTool?.description?.replace('{{tool}}', toolName) || translations.tagline || `Free ${toolName} generator`;
       }
 
       let newHtml = baseHtml.replace(
