@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
 import { ChevronDown, QrCode, ScanLine, Scan, Building2, Link, MessageCircle, Video, Camera, Users, Hash, Music2, Briefcase, Send, Ghost, Gamepad2, Music, CreditCard, Wallet, Smartphone, Bitcoin, Type, Mail, Phone, MessageSquare, Contact, MapPin, Calendar, Wifi, FileText, ClipboardList, Star, Image, List, Mic, ShoppingCart, CalendarDays, File, Clock } from 'lucide-react';
 import { localizedRoutes } from '../../config/localizedRoutes';
 
@@ -73,6 +74,7 @@ export const BARCODE_CATEGORIES = [
 
 export default function MegaNav({ currentLangCode, onOpenHistory }) {
   const { t } = useTranslation();
+  const location = useLocation();
 
   return (
     <div className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
@@ -95,10 +97,11 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
                     const path = item.id === 'url' ? '/' : `/${item.id}`;
                     const localizedPath = localizedRoutes[currentLangCode]?.[item.id] || path;
                     const finalUrl = `${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedPath}`;
+                    const isActive = location.pathname === finalUrl || (location.pathname === '/' && finalUrl === `/${currentLangCode}`);
                     
                     return (
-                      <a key={item.id} href={finalUrl} className="flex items-center gap-3 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-[#102040] transition-colors group/item text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400">
-                        <Icon className="w-4 h-4 opacity-70 group-hover/item:opacity-100" />
+                      <a key={item.id} href={finalUrl} className={`flex items-center gap-3 p-2 rounded-xl transition-colors group/item ${isActive ? 'bg-blue-50 dark:bg-[#102040] text-blue-600 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-blue-50 dark:hover:bg-[#102040] hover:text-blue-600 dark:hover:text-blue-400'}`}>
+                        <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
                         <span className="text-[13px] font-bold">{item.label}</span>
                       </a>
                     );
@@ -110,56 +113,23 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
         </div>
       </div>
 
-      {/* 3. Scanner (Dropdown) */}
-      <div className="relative group">
-        <button className="flex items-center gap-1.5 py-2 text-[15px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-          <Scan className="w-4 h-4" />
-          {t('nav.scanGroup', 'Scanner')}
-          <ChevronDown className="w-4 h-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
-        </button>
-        <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-          <div className="bg-white dark:bg-[#081226] rounded-3xl shadow-[0_30px_80px_-15px_rgba(0,0,0,0.3)] border border-blue-100 dark:border-[#102040] overflow-hidden p-2 w-[220px] flex flex-col">
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className="px-4 py-3 rounded-xl hover:bg-blue-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors flex items-center gap-3">
-              <Scan className="w-4 h-4 text-blue-600" />
-              {t('nav.scanqr', 'Scan QR Code')}
-            </a>
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} className="px-4 py-3 rounded-xl hover:bg-indigo-50 dark:hover:bg-[#102040] text-[14px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-indigo-700 dark:hover:text-indigo-400 transition-colors flex items-center gap-3">
-              <ScanLine className="w-4 h-4 text-indigo-600" />
-              {t('nav.scanbarcode', 'Scan Barcode')}
-            </a>
-          </div>
-        </div>
-      </div>
+      {/* 2. Scan QR (Static Link) */}
+      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className={`flex items-center gap-1.5 py-2 px-3 rounded-lg text-[15px] font-bold transition-all ${location.pathname.includes('/scan-qr') ? 'bg-blue-50 dark:bg-[#102040] text-blue-600 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-blue-50/50 dark:hover:bg-[#102040]/50 hover:text-blue-600 dark:hover:text-blue-400'}`}>
+        <Scan className="w-4 h-4" />
+        {t('nav.scanqr', 'Scan QR')}
+      </a>
 
-      {/* 3. Barcode Maker (Mega Menu) */}
-      <div className="relative group">
-        <button className="flex items-center gap-1.5 py-2 text-[15px] font-bold text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-          <ScanLine className="w-4 h-4" />
-          {t('nav.barcode', 'Barcode Maker')}
-          <ChevronDown className="w-4 h-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
-        </button>
-        <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-          <div className="bg-white dark:bg-[#081226] rounded-3xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.3)] border border-blue-100 dark:border-[#102040] overflow-hidden p-6 w-[400px] grid grid-cols-2 gap-6">
-            {BARCODE_CATEGORIES.map((cat, i) => (
-              <div key={i} className="flex flex-col">
-                <h4 className="text-[11px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-4">{t(cat.title)}</h4>
-                <div className="flex flex-col gap-1">
-                  {cat.items.map(format => {
-                    const barcodePath = localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator';
-                    const finalUrl = `${currentLangCode === 'en' ? '' : '/' + currentLangCode}${barcodePath}?format=${format}`;
-                    return (
-                      <a key={format} href={finalUrl} className="flex items-center gap-3 p-2 rounded-xl hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400">
-                        <span className="text-[13px] font-bold font-mono">{format}</span>
-                      </a>
-                    );
-                  })}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* 3. Scan Barcode (Static Link) */}
+      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} className={`flex items-center gap-1.5 py-2 px-3 rounded-lg text-[15px] font-bold transition-all ${location.pathname.includes('/scan-barcode') ? 'bg-indigo-50 dark:bg-[#102040] text-indigo-600 dark:text-indigo-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-indigo-50/50 dark:hover:bg-[#102040]/50 hover:text-indigo-600 dark:hover:text-indigo-400'}`}>
+        <ScanLine className="w-4 h-4" />
+        {t('nav.scanbarcode', 'Scan Barcode')}
+      </a>
 
+      {/* 4. Barcode Maker (Static Link) */}
+      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} className={`flex items-center gap-1.5 py-2 px-3 rounded-lg text-[15px] font-bold transition-all ${location.pathname.includes('/barcode') ? 'bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-purple-50/50 dark:hover:bg-purple-900/20 hover:text-purple-600 dark:hover:text-purple-400'}`}>
+        <QrCode className="w-4 h-4" />
+        {t('nav.barcode', 'Barcode Maker')}
+      </a>
 
     </div>
   );

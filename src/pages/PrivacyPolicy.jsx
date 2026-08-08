@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter dark:text-white tracking-tighter mb-6 leading-[1.05]">
-            {t('info.privacy.hero.title', 'Privacy Policy')}.
+            {t('info.privacy.hero.title', 'Privacy')} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t('info.privacy.hero.titleHighlight', 'Policy')}</span>.
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
             {t('info.privacy.hero.subtitle', 'Your data is yours. We keep it that way.')}

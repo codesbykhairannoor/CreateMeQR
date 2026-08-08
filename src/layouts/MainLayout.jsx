@@ -127,9 +127,8 @@ export default function MainLayout({ children }) {
           <MegaNav currentLangCode={currentLangCode} />
 
           <div className="flex items-center gap-2">
-            <button onClick={() => setShowHistory(true)} className="hidden lg:flex items-center gap-2 px-4 py-2 text-[13px] font-bold text-blue-700 dark:text-blue-300 bg-blue-50 hover:bg-blue-100 dark:bg-blue-900/30 dark:hover:bg-blue-900/50 rounded-full transition-all border border-blue-100 dark:border-blue-800 shadow-sm hover:shadow">
-              <Clock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-              {t('history.title', 'Local History')}
+            <button onClick={() => setShowHistory(true)} title={t('history.title', 'Local History')} className="hidden lg:flex p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+              <Clock className="w-5 h-5" />
             </button>
             <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800 mx-1 hidden lg:block"></div>
             
