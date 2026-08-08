@@ -1140,7 +1140,13 @@
     "terms": "Điều khoản dịch vụ",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Quét mã vạch"
+    "scanbarcode": "Quét mã vạch",
+    "catMessage": "Nhắn tin",
+    "catContact": "Liên hệ",
+    "catWeb": "Liên kết & Web",
+    "catPlaces": "Địa điểm & Sự kiện",
+    "catMedia": "Truyền thông & Giải trí",
+    "catData": "Tệp & Dữ liệu"
   },
   "contact": {
     "title": "Liên hệ với chúng tôi",

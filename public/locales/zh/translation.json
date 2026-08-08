@@ -1140,7 +1140,13 @@
     "terms": "服务条款",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "扫描条码"
+    "scanbarcode": "扫描条码",
+    "catMessage": "消息传递",
+    "catContact": "接触",
+    "catWeb": "链接和网页",
+    "catPlaces": "地点和活动",
+    "catMedia": "媒体与娱乐",
+    "catData": "文件和数据"
   },
   "contact": {
     "title": "联系我们",

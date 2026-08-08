@@ -1140,7 +1140,13 @@
     "terms": "利用規約",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "バーコードをスキャンする"
+    "scanbarcode": "バーコードをスキャンする",
+    "catMessage": "メッセージング",
+    "catContact": "接触",
+    "catWeb": "リンクとウェブ",
+    "catPlaces": "場所とイベント",
+    "catMedia": "メディアとエンターテイメント",
+    "catData": "ファイルとデータ"
   },
   "contact": {
     "title": "お問い合わせ",

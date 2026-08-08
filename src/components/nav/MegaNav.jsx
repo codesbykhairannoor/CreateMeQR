@@ -4,61 +4,93 @@ import { useLocation } from 'react-router-dom';
 import { ChevronDown, QrCode, ScanLine, Scan, Building2, Link, MessageCircle, Video, Camera, Users, Hash, Music2, Briefcase, Send, Ghost, Gamepad2, Music, CreditCard, Wallet, Smartphone, Bitcoin, Type, Mail, Phone, MessageSquare, Contact, MapPin, Calendar, Wifi, FileText, ClipboardList, Star, Image, List, Mic, ShoppingCart, CalendarDays, File, Clock } from 'lucide-react';
 import { localizedRoutes } from '../../config/localizedRoutes';
 
-export const QR_CATEGORIES = [
-  {
-    title: 'nav.catSocial',
-    items: [
-      { id: 'whatsapp', icon: MessageCircle, label: 'WhatsApp' },
-      { id: 'youtube', icon: Video, label: 'YouTube' },
-      { id: 'instagram', icon: Camera, label: 'Instagram' },
-      { id: 'facebook', icon: Users, label: 'Facebook' },
-      { id: 'twitter', icon: Hash, label: 'X (Twitter)' },
-      { id: 'tiktok', icon: Music2, label: 'TikTok' },
-      { id: 'linkedin', icon: Briefcase, label: 'LinkedIn' },
-      { id: 'snapchat', icon: Ghost, label: 'Snapchat' },
-      { id: 'telegram', icon: Send, label: 'Telegram' },
-      { id: 'discord', icon: Gamepad2, label: 'Discord' }
-    ]
-  },
-  {
-    title: 'nav.catBusiness',
-    items: [
-      { id: 'url', icon: Link, label: 'URL / Link' },
-      { id: 'vcard', icon: Contact, label: 'vCard' },
-      { id: 'email', icon: Mail, label: 'Email' },
-      { id: 'phone', icon: Phone, label: 'Phone' },
-      { id: 'sms', icon: MessageSquare, label: 'SMS' },
-      { id: 'location', icon: MapPin, label: 'Location' },
-      { id: 'event', icon: Calendar, label: 'Event' },
-      { id: 'gforms', icon: ClipboardList, label: 'Google Forms' },
-      { id: 'greview', icon: Star, label: 'Google Review' },
-      { id: 'linkinbio', icon: List, label: 'Link in Bio' }
-    ]
-  },
-  {
-    title: 'nav.catFinance',
-    items: [
-      { id: 'paypal', icon: CreditCard, label: 'PayPal' },
-      { id: 'venmo', icon: Wallet, label: 'Venmo' },
-      { id: 'crypto', icon: Bitcoin, label: 'Crypto' },
-      { id: 'appstore', icon: Smartphone, label: 'App Store' },
-      { id: 'amazon', icon: ShoppingCart, label: 'Amazon' },
-      { id: 'booking', icon: CalendarDays, label: 'Booking' }
-    ]
-  },
-  {
-    title: 'nav.catFiles',
-    items: [
-      { id: 'pdf', icon: FileText, label: 'PDF' },
-      { id: 'image', icon: Image, label: 'Image' },
-      { id: 'video', icon: Video, label: 'Video' },
-      { id: 'audio', icon: Mic, label: 'Audio' },
-      { id: 'file', icon: File, label: 'File' },
-      { id: 'text', icon: Type, label: 'Text' },
-      { id: 'wifi', icon: Wifi, label: 'Wi-Fi' },
-      { id: 'spotify', icon: Music, label: 'Spotify' }
-    ]
-  }
+export const QR_MENU_COLUMNS = [
+  // Column 1
+  [
+    {
+      title: 'nav.catSocial',
+      items: [
+        { id: 'instagram', icon: Camera, label: 'Instagram' },
+        { id: 'facebook', icon: Users, label: 'Facebook' },
+        { id: 'twitter', icon: Hash, label: 'X (Twitter)' },
+        { id: 'tiktok', icon: Music2, label: 'TikTok' },
+        { id: 'linkedin', icon: Briefcase, label: 'LinkedIn' },
+        { id: 'snapchat', icon: Ghost, label: 'Snapchat' }
+      ]
+    },
+    {
+      title: 'nav.catMessage',
+      items: [
+        { id: 'whatsapp', icon: MessageCircle, label: 'WhatsApp' },
+        { id: 'telegram', icon: Send, label: 'Telegram' },
+        { id: 'discord', icon: Gamepad2, label: 'Discord' }
+      ]
+    }
+  ],
+  // Column 2
+  [
+    {
+      title: 'nav.catWeb',
+      items: [
+        { id: 'url', icon: Link, label: 'URL / Link' },
+        { id: 'gforms', icon: ClipboardList, label: 'Google Forms' },
+        { id: 'greview', icon: Star, label: 'Google Review' },
+        { id: 'linkinbio', icon: List, label: 'Link in Bio' }
+      ]
+    },
+    {
+      title: 'nav.catContact',
+      items: [
+        { id: 'vcard', icon: Contact, label: 'vCard' },
+        { id: 'email', icon: Mail, label: 'Email' },
+        { id: 'phone', icon: Phone, label: 'Phone' },
+        { id: 'sms', icon: MessageSquare, label: 'SMS' }
+      ]
+    }
+  ],
+  // Column 3
+  [
+    {
+      title: 'nav.catFinance',
+      items: [
+        { id: 'paypal', icon: CreditCard, label: 'PayPal' },
+        { id: 'venmo', icon: Wallet, label: 'Venmo' },
+        { id: 'crypto', icon: Bitcoin, label: 'Crypto' },
+        { id: 'appstore', icon: Smartphone, label: 'App Store' },
+        { id: 'amazon', icon: ShoppingCart, label: 'Amazon' }
+      ]
+    },
+    {
+      title: 'nav.catPlaces',
+      items: [
+        { id: 'location', icon: MapPin, label: 'Location' },
+        { id: 'event', icon: Calendar, label: 'Event' },
+        { id: 'booking', icon: CalendarDays, label: 'Booking' }
+      ]
+    }
+  ],
+  // Column 4
+  [
+    {
+      title: 'nav.catMedia',
+      items: [
+        { id: 'youtube', icon: Video, label: 'YouTube' },
+        { id: 'spotify', icon: Music, label: 'Spotify' },
+        { id: 'image', icon: Image, label: 'Image' },
+        { id: 'video', icon: Video, label: 'Video' },
+        { id: 'audio', icon: Mic, label: 'Audio' }
+      ]
+    },
+    {
+      title: 'nav.catData',
+      items: [
+        { id: 'pdf', icon: FileText, label: 'PDF' },
+        { id: 'file', icon: File, label: 'File' },
+        { id: 'text', icon: Type, label: 'Text' },
+        { id: 'wifi', icon: Wifi, label: 'Wi-Fi' }
+      ]
+    }
+  ]
 ];
 
 export const BARCODE_CATEGORIES = [
@@ -104,25 +136,29 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
         {/* Full-width fixed Dropdown */}
         <div className="fixed top-16 left-0 w-full bg-white dark:bg-[#081226] border-b border-blue-100 dark:border-[#102040] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.25)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
           <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-4 gap-x-12">
-            {QR_CATEGORIES.map((cat, i) => (
-              <div key={i} className="flex flex-col">
-                <h4 className="text-[11px] font-extrabold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-4 border-b border-zinc-100 dark:border-zinc-800/50 pb-2">{t(cat.title)}</h4>
-                <div className="flex flex-col gap-1">
-                  {cat.items.map(item => {
-                    const Icon = item.icon;
-                    const path = item.id === 'url' ? '/' : `/${item.id}`;
-                    const localizedPath = localizedRoutes[currentLangCode]?.[item.id] || path;
-                    const finalUrl = `${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedPath}`;
-                    const isActive = location.pathname === finalUrl || (location.pathname === '/' && finalUrl === `/${currentLangCode}`);
-                    
-                    return (
-                      <a key={item.id} href={finalUrl} className={`flex items-center gap-3 py-1.5 px-2 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
-                        <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
-                        <span className="text-[13px] font-bold">{item.label}</span>
-                      </a>
-                    );
-                  })}
-                </div>
+            {QR_MENU_COLUMNS.map((column, colIdx) => (
+              <div key={colIdx} className="flex flex-col gap-8">
+                {column.map((cat, catIdx) => (
+                  <div key={catIdx} className="flex flex-col">
+                    <h4 className="text-[11px] font-extrabold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-4 border-b border-zinc-100 dark:border-zinc-800/50 pb-2">{t(cat.title)}</h4>
+                    <div className="flex flex-col gap-1">
+                      {cat.items.map(item => {
+                        const Icon = item.icon;
+                        const path = item.id === 'url' ? '/' : `/${item.id}`;
+                        const localizedPath = localizedRoutes[currentLangCode]?.[item.id] || path;
+                        const finalUrl = `${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedPath}`;
+                        const isActive = location.pathname === finalUrl || (location.pathname === '/' && finalUrl === `/${currentLangCode}`);
+                        
+                        return (
+                          <a key={item.id} href={finalUrl} className={`flex items-center gap-3 py-1.5 px-2 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
+                            <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
+                            <span className="text-[13px] font-bold">{item.label}</span>
+                          </a>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
               </div>
             ))}
           </div>

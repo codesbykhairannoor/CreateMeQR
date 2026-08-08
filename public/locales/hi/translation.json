@@ -1140,7 +1140,13 @@
     "terms": "सेवा की शर्तें",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "बारकोड स्कैन करें"
+    "scanbarcode": "बारकोड स्कैन करें",
+    "catMessage": "संदेश",
+    "catContact": "संपर्क",
+    "catWeb": "लिंक और वेब",
+    "catPlaces": "स्थान एवं घटनाएँ",
+    "catMedia": "मीडिया एवं मनोरंजन",
+    "catData": "फ़ाइलें और डेटा"
   },
   "contact": {
     "title": "हमसे संपर्क करें",

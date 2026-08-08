@@ -1140,7 +1140,13 @@
     "terms": "Palveluehdot",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Skannaa viivakoodi"
+    "scanbarcode": "Skannaa viivakoodi",
+    "catMessage": "Viestit",
+    "catContact": "Ota yhteyttä",
+    "catWeb": "Linkit & Web",
+    "catPlaces": "Paikat & Tapahtumat",
+    "catMedia": "Media ja viihde",
+    "catData": "Tiedostot ja tiedot"
   },
   "contact": {
     "title": "Ota yhteyttä",

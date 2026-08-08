@@ -1140,7 +1140,13 @@
     "terms": "Servicevoorwaarden",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Streepjescode scannen"
+    "scanbarcode": "Streepjescode scannen",
+    "catMessage": "Berichten",
+    "catContact": "Contact",
+    "catWeb": "Links en internet",
+    "catPlaces": "Plaatsen en evenementen",
+    "catMedia": "Media en entertainment",
+    "catData": "Bestanden en gegevens"
   },
   "contact": {
     "title": "Neem contact met ons op",

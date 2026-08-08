@@ -1132,7 +1132,13 @@
     "catIndustrial": "Industrial și de date",
     "company": "Companie",
     "privacy": "Politica de confidențialitate",
-    "terms": "Termeni și condiții"
+    "terms": "Termeni și condiții",
+    "catMessage": "Mesaje",
+    "catContact": "Contact",
+    "catWeb": "Link-uri și web",
+    "catPlaces": "Locuri și evenimente",
+    "catMedia": "Media și divertisment",
+    "catData": "Fișiere și date"
   },
   "contact": {
     "title": "Contactează-ne",

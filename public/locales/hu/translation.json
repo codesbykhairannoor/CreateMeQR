@@ -1132,7 +1132,13 @@
     "catIndustrial": "Ipari és adatok",
     "company": "Vállalat",
     "privacy": "Adatvédelmi szabályzat",
-    "terms": "Szolgáltatási feltételek"
+    "terms": "Szolgáltatási feltételek",
+    "catMessage": "Üzenetküldés",
+    "catContact": "Érintkezés",
+    "catWeb": "Linkek és web",
+    "catPlaces": "Helyek és események",
+    "catMedia": "Média és szórakoztatás",
+    "catData": "Fájlok és adatok"
   },
   "contact": {
     "title": "Lépjen kapcsolatba velünk",

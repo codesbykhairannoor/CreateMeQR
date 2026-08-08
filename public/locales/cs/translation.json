@@ -1140,7 +1140,13 @@
     "terms": "Podmínky služby",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Naskenujte čárový kód"
+    "scanbarcode": "Naskenujte čárový kód",
+    "catMessage": "Zprávy",
+    "catContact": "Kontakt",
+    "catWeb": "Odkazy a web",
+    "catPlaces": "Místa a události",
+    "catMedia": "Média a zábava",
+    "catData": "Soubory a data"
   },
   "contact": {
     "title": "Kontaktujte nás",

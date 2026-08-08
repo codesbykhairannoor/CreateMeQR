@@ -1140,7 +1140,13 @@
     "terms": "شروط الخدمة",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "مسح الباركود"
+    "scanbarcode": "مسح الباركود",
+    "catMessage": "المراسلة",
+    "catContact": "اتصال",
+    "catWeb": "الروابط والويب",
+    "catPlaces": "الأماكن والأحداث",
+    "catMedia": "وسائل الإعلام والترفيه",
+    "catData": "الملفات والبيانات"
   },
   "contact": {
     "title": "اتصل بنا",

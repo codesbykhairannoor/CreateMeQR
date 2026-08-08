@@ -1140,7 +1140,13 @@
     "terms": "Warunki świadczenia usług",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Zeskanuj kod kreskowy"
+    "scanbarcode": "Zeskanuj kod kreskowy",
+    "catMessage": "Wiadomości",
+    "catContact": "Kontakt",
+    "catWeb": "Linki i Internet",
+    "catPlaces": "Miejsca i wydarzenia",
+    "catMedia": "Media i rozrywka",
+    "catData": "Pliki i dane"
   },
   "contact": {
     "title": "Skontaktuj się z nami",

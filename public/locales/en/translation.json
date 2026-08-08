@@ -1111,7 +1111,7 @@
     "generatorDesc": "Create 34+ QR Types",
     "barcodeDesc": "1D/2D Pro Barcodes",
     "scanDesc": "Read from Camera",
-    "catSocial": "Social & Media",
+    "catSocial": "Social Media",
     "catBusiness": "Business & Links",
     "catFinance": "Finance & Store",
     "catFiles": "Files & Data",
@@ -1122,7 +1122,13 @@
     "terms": "Terms of Service",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scan Barcode"
+    "scanbarcode": "Scan Barcode",
+    "catMessage": "Messaging",
+    "catContact": "Contact",
+    "catWeb": "Links & Web",
+    "catPlaces": "Places & Events",
+    "catMedia": "Media & Entertainment",
+    "catData": "Files & Data"
   },
   "contact": {
     "title": "Contact Us",

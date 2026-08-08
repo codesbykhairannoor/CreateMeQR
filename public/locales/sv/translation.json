@@ -1140,7 +1140,13 @@
     "terms": "Användarvillkor",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Skanna streckkod"
+    "scanbarcode": "Skanna streckkod",
+    "catMessage": "Meddelanden",
+    "catContact": "Kontakta",
+    "catWeb": "Länkar & webb",
+    "catPlaces": "Platser & evenemang",
+    "catMedia": "Media & Underhållning",
+    "catData": "Filer och data"
   },
   "contact": {
     "title": "Kontakta oss",

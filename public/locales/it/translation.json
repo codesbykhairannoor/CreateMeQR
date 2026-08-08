@@ -1140,7 +1140,13 @@
     "terms": "Termini di servizio",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Scansiona il codice a barre"
+    "scanbarcode": "Scansiona il codice a barre",
+    "catMessage": "Messaggistica",
+    "catContact": "Contatto",
+    "catWeb": "Collegamenti e Web",
+    "catPlaces": "Luoghi ed eventi",
+    "catMedia": "Media e intrattenimento",
+    "catData": "File e dati"
   },
   "contact": {
     "title": "Contattaci",

@@ -1140,7 +1140,13 @@
     "terms": "Умови обслуговування",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Сканувати штрих-код"
+    "scanbarcode": "Сканувати штрих-код",
+    "catMessage": "Обмін повідомленнями",
+    "catContact": "контакт",
+    "catWeb": "Посилання та Інтернет",
+    "catPlaces": "Місця та події",
+    "catMedia": "Медіа та розваги",
+    "catData": "Файли та дані"
   },
   "contact": {
     "title": "Зв'яжіться з нами",

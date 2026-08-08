@@ -1140,7 +1140,13 @@
     "terms": "Όροι Παροχής Υπηρεσιών",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Σάρωση γραμμικού κώδικα"
+    "scanbarcode": "Σάρωση γραμμικού κώδικα",
+    "catMessage": "Μηνύματα",
+    "catContact": "Επαφή",
+    "catWeb": "Σύνδεσμοι & Ιστός",
+    "catPlaces": "Μέρη & Εκδηλώσεις",
+    "catMedia": "Μέσα & Ψυχαγωγία",
+    "catData": "Αρχεία & Δεδομένα"
   },
   "contact": {
     "title": "Επικοινωνήστε μαζί μας",

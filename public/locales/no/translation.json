@@ -1140,7 +1140,13 @@
     "terms": "Vilkår for bruk",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Skann strekkode"
+    "scanbarcode": "Skann strekkode",
+    "catMessage": "Meldinger",
+    "catContact": "Kontakt",
+    "catWeb": "Lenker og nett",
+    "catPlaces": "Steder og hendelser",
+    "catMedia": "Media og underholdning",
+    "catData": "Filer og data"
   },
   "contact": {
     "title": "Kontakt oss",

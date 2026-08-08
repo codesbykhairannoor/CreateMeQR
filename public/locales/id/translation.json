@@ -1140,7 +1140,13 @@
     "terms": "Ketentuan Layanan",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Pindai Kode Batang"
+    "scanbarcode": "Pindai Kode Batang",
+    "catMessage": "Pesan",
+    "catContact": "Kontak",
+    "catWeb": "Tautan & Web",
+    "catPlaces": "Tempat & Acara",
+    "catMedia": "Media & Hiburan",
+    "catData": "File & Data"
   },
   "contact": {
     "title": "Hubungi Kami",

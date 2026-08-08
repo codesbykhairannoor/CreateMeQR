@@ -1140,7 +1140,13 @@
     "terms": "Syarat Perkhidmatan",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Imbas Kod Bar"
+    "scanbarcode": "Imbas Kod Bar",
+    "catMessage": "Pemesejan",
+    "catContact": "Kenalan",
+    "catWeb": "Pautan & Web",
+    "catPlaces": "Tempat & Acara",
+    "catMedia": "Media & Hiburan",
+    "catData": "Fail & Data"
   },
   "contact": {
     "title": "Hubungi Kami",

@@ -1140,7 +1140,13 @@
     "terms": "Hizmet Şartları",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Barkodu Tara"
+    "scanbarcode": "Barkodu Tara",
+    "catMessage": "Mesajlaşma",
+    "catContact": "Temas etmek",
+    "catWeb": "Bağlantılar ve Web",
+    "catPlaces": "Yerler ve Etkinlikler",
+    "catMedia": "Medya ve Eğlence",
+    "catData": "Dosyalar ve Veriler"
   },
   "contact": {
     "title": "Bize Ulaşın",

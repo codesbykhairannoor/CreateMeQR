@@ -1140,7 +1140,13 @@
     "terms": "Nutzungsbedingungen",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "Barcode scannen"
+    "scanbarcode": "Barcode scannen",
+    "catMessage": "Nachrichten",
+    "catContact": "Kontakt",
+    "catWeb": "Links & Web",
+    "catPlaces": "Orte und Ereignisse",
+    "catMedia": "Medien und Unterhaltung",
+    "catData": "Dateien und Daten"
   },
   "contact": {
     "title": "Kontaktieren Sie uns",

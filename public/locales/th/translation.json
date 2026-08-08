@@ -1140,7 +1140,13 @@
     "terms": "ข้อกำหนดในการให้บริการ",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "สแกนบาร์โค้ด"
+    "scanbarcode": "สแกนบาร์โค้ด",
+    "catMessage": "การส่งข้อความ",
+    "catContact": "ติดต่อ",
+    "catWeb": "ลิงค์และเว็บ",
+    "catPlaces": "สถานที่และกิจกรรม",
+    "catMedia": "สื่อและความบันเทิง",
+    "catData": "ไฟล์และข้อมูล"
   },
   "contact": {
     "title": "ติดต่อเรา",

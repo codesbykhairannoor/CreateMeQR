@@ -1140,7 +1140,13 @@
     "terms": "서비스 약관",
     "scanGroup": "Scanner",
     "scanqr": "Scan QR Code",
-    "scanbarcode": "바코드 스캔"
+    "scanbarcode": "바코드 스캔",
+    "catMessage": "메시징",
+    "catContact": "연락하다",
+    "catWeb": "링크 및 웹",
+    "catPlaces": "장소 및 이벤트",
+    "catMedia": "미디어 및 엔터테인먼트",
+    "catData": "파일 및 데이터"
   },
   "contact": {
     "title": "문의하기",
