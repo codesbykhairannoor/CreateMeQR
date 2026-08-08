@@ -151,8 +151,8 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
                         
                         return (
                           <a key={item.id} href={finalUrl} className={`flex items-center gap-3 py-1.5 px-3 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
-                            <Icon className={`w-3.5 h-3.5 ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
-                            <span className="text-[10px] font-bold tracking-tight">{item.label}</span>
+                            <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
+                            <span className="text-[12px] font-bold tracking-tight">{item.label}</span>
                           </a>
                         );
                       })}
