@@ -135,7 +135,7 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
         </button>
         {/* Full-width fixed Dropdown */}
         <div className="fixed top-16 left-0 w-full bg-white dark:bg-[#081226] border-b border-blue-100 dark:border-[#102040] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.25)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-          <div className="max-w-5xl mx-auto px-6 py-8 grid grid-cols-4 gap-x-8">
+          <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-4 gap-x-8">
             {QR_MENU_COLUMNS.map((column, colIdx) => (
               <div key={colIdx} className="flex flex-col">
                 {column.map((cat, catIdx) => (
@@ -151,8 +151,8 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
                         
                         return (
                           <a key={item.id} href={finalUrl} className={`flex items-center gap-3 py-2 px-3 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
-                            <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
-                            <span className="text-[14px] font-bold">{item.label}</span>
+                            <Icon className={`w-[18px] h-[18px] ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
+                            <span className="text-[15px] font-bold">{item.label}</span>
                           </a>
                         );
                       })}
