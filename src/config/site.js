@@ -38,6 +38,7 @@ export const PSEO_ROUTES = {
   '/file-qr-code-generator': 'file',
   '/barcode-generator': 'barcode',
   '/scan-qr': 'scanqr',
+  '/scan-barcode': 'scanbarcode',
 };
 // 30 Languages Supported
 export const LANGS = [

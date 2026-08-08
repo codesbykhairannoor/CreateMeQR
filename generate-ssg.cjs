@@ -185,7 +185,8 @@ async function run() {
     { path: '/contact', title: 'Contact Us - CreateMy-QR', desc: 'Contact the CreateMy-QR team.' },
     { path: '/compare', title: 'Compare Plans - CreateMy-QR', desc: 'Compare our free features.' },
     { path: '/barcode-generator', title: 'Free Barcode Generator', desc: 'Generate barcodes instantly.' },
-    { path: '/scan-qr', title: 'Scan QR Code Online', desc: 'Scan QR codes directly from your browser.' }
+    { path: '/scan-qr', title: 'Scan QR Code Online', desc: 'Scan QR codes directly from your browser.' },
+    { path: '/scan-barcode', title: 'Scan Barcode Online', desc: 'Scan Barcodes directly from your browser.' }
   ];
 
   console.log('dYs? Starting Static Site Generation for static pages...');

@@ -38,6 +38,7 @@ const PSEO_ROUTES = {
   '/file-qr-code-generator': 'file',
   '/barcode-generator': 'barcode',
   '/scan-qr': 'scanqr',
+  '/scan-barcode': 'scanbarcode',
 };
 
 const LANGS = [
