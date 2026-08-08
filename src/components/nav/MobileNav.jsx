@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown, QrCode, ScanLine, Scan, Building2, ChevronUp, Moon, Sun, Clock } from 'lucide-react';
 import { localizedRoutes } from '../../config/localizedRoutes';
-import { QR_CATEGORIES, BARCODE_CATEGORIES } from './MegaNav';
+import { QR_MENU_COLUMNS, BARCODE_CATEGORIES } from './MegaNav';
 
 export default function MobileNav({ currentLangCode, onClose, onOpenHistory, darkMode, setDarkMode }) {
   const { t } = useTranslation();
@@ -25,7 +25,7 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
         </button>
         {openSection === 'qr' && (
           <div className="flex flex-col gap-4 pl-7 pr-2 pt-2 pb-4 animate-fade-in-up-fast">
-            {QR_CATEGORIES.map((cat, i) => (
+            {QR_MENU_COLUMNS.flat().map((cat, i) => (
               <div key={i} className="flex flex-col">
                 <h4 className="text-[11px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">{t(cat.title)}</h4>
                 <div className="grid grid-cols-1 gap-1">
