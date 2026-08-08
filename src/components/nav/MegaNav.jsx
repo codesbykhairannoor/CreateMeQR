@@ -137,11 +137,11 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
         <div className="fixed top-16 left-0 w-full bg-white dark:bg-[#081226] border-b border-blue-100 dark:border-[#102040] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.25)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
           <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-4 gap-x-12">
             {QR_MENU_COLUMNS.map((column, colIdx) => (
-              <div key={colIdx} className="flex flex-col gap-4">
+              <div key={colIdx} className="flex flex-col">
                 {column.map((cat, catIdx) => (
-                  <div key={catIdx} className="flex flex-col">
-                    <h4 className={`text-[11px] font-extrabold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2 pb-1 ${catIdx > 0 ? 'border-t border-zinc-100 dark:border-zinc-800/50 pt-3 mt-1' : 'border-b border-zinc-100 dark:border-zinc-800/50'}`}>{t(cat.title)}</h4>
-                    <div className="flex flex-col gap-0.5">
+                  <React.Fragment key={catIdx}>
+                    <h4 className={`text-[11px] font-extrabold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-3 ${catIdx > 0 ? 'mt-4' : ''}`}>{t(cat.title)}</h4>
+                    <div className="flex flex-col gap-1">
                       {cat.items.map(item => {
                         const Icon = item.icon;
                         const path = item.id === 'url' ? '/' : `/${item.id}`;
@@ -150,14 +150,14 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
                         const isActive = location.pathname === finalUrl || (location.pathname === '/' && finalUrl === `/${currentLangCode}`);
                         
                         return (
-                          <a key={item.id} href={finalUrl} className={`flex items-center gap-2.5 py-1.5 px-2 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
+                          <a key={item.id} href={finalUrl} className={`flex items-center gap-3 py-2 px-3 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
                             <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
-                            <span className="text-[13px] font-bold">{item.label}</span>
+                            <span className="text-[14px] font-bold">{item.label}</span>
                           </a>
                         );
                       })}
                     </div>
-                  </div>
+                  </React.Fragment>
                 ))}
               </div>
             ))}
