@@ -112,23 +112,23 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
     <div className="hidden lg:flex flex-1 justify-center items-center gap-6">
       
       {/* 1. Scan QR (Static Link) */}
-      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className={`py-2 px-3 rounded-lg text-[11px] font-bold tracking-wide uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-qr') ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400'}`}>
+      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className={`py-2 px-3 rounded-lg text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-qr') ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400'}`}>
         {t('nav.scanqr', 'Scan QR')}
       </a>
 
       {/* 2. Scan Barcode (Static Link) */}
-      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} className={`py-2 px-3 rounded-lg text-[11px] font-bold tracking-wide uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-barcode') ? 'text-indigo-600 dark:text-indigo-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400'}`}>
+      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} className={`py-2 px-3 rounded-lg text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-barcode') ? 'text-indigo-600 dark:text-indigo-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400'}`}>
         {t('nav.scanbarcode', 'Scan Barcode')}
       </a>
 
       {/* 3. Barcode Maker (Static Link) */}
-      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} className={`py-2 px-3 rounded-lg text-[11px] font-bold tracking-wide uppercase whitespace-nowrap transition-all ${location.pathname.includes('/barcode') ? 'text-purple-600 dark:text-purple-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400'}`}>
+      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} className={`py-2 px-3 rounded-lg text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/barcode') ? 'text-purple-600 dark:text-purple-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400'}`}>
         {t('nav.barcode', 'Barcode Maker')}
       </a>
 
       {/* 4. Generate QR (Mega Menu Button) */}
       <div className="relative group">
-        <button className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 hover:from-slate-800 hover:to-blue-600 text-white text-[11px] font-bold tracking-wide uppercase whitespace-nowrap transition-all shadow-md hover:shadow-lg">
+        <button className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 hover:from-slate-800 hover:to-blue-600 text-white text-[11px] font-bold uppercase whitespace-nowrap transition-all shadow-md hover:shadow-lg">
           <QrCode className="w-4 h-4" />
           {t('nav.generator', 'ALL QR TOOLS')}
           <ChevronDown className="w-4 h-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
@@ -150,9 +150,9 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
                         const isActive = location.pathname === finalUrl || (location.pathname === '/' && finalUrl === `/${currentLangCode}`);
                         
                         return (
-                          <a key={item.id} href={finalUrl} className={`flex items-center gap-3 py-2 px-3 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
-                            <Icon className={`w-[18px] h-[18px] ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
-                            <span className="text-[15px] font-bold">{item.label}</span>
+                          <a key={item.id} href={finalUrl} className={`flex items-center gap-3 py-1.5 px-3 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
+                            <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
+                            <span className="text-[12px] font-bold">{item.label}</span>
                           </a>
                         );
                       })}
