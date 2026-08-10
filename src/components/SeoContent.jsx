@@ -9,9 +9,18 @@ export default function SeoContent() {
       <div className="max-w-4xl mx-auto prose prose-zinc dark:prose-invert">
         <article itemScope itemType="https://schema.org/Article">
 
-          <header className="mb-8 border-b border-zinc-200 dark:border-zinc-800 pb-6">
-            <h1 itemProp="headline" className="text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-3">
-              {t('geoOptimized.h1', 'Free Custom QR Code Generator Online')}
+          <details className="group marker:content-['']">
+            <summary className="flex items-center justify-between w-full p-4 mb-4 text-left font-bold text-zinc-700 dark:text-zinc-300 bg-zinc-50 dark:bg-zinc-900 rounded-xl cursor-pointer hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
+              <span>{t('geoOptimized.readMoreGuide', 'Read Technical Documentation & SEO Guide')}</span>
+              <span className="transition group-open:rotate-180">
+                <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+              </span>
+            </summary>
+            
+            <div className="pt-4 animate-fade-in-up">
+              <header className="mb-8 border-b border-zinc-200 dark:border-zinc-800 pb-6">
+                <h1 itemProp="headline" className="text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-3">
+                  {t('geoOptimized.h1', 'Free Custom QR Code Generator Online')}
             </h1>
             <div className="flex items-center gap-4 text-xs text-zinc-500 dark:text-zinc-400">
               <span>By <strong itemProp="author">{t('geoOptimized.author', 'CreateMy-QR Team')}</strong></span>
@@ -130,7 +139,8 @@ export default function SeoContent() {
             <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">{t('geoOptimized.p5_3', 'It is completely free to generate your first code.')}</p>
             <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">{t('geoOptimized.p5_4', 'Try out all the customization features today.')}</p>
           </section>
-          
+            </div>
+          </details>
         </article>
       </div>
     </main>
