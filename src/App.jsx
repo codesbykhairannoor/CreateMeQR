@@ -15,7 +15,6 @@ import ScanBarcode from './pages/ScanBarcode';
 import Contact from './pages/Contact';
 import LandingContent from './components/LandingContent';
 import SeoArticle from './components/SeoArticle';
-import SeoContent from './components/SeoContent';
 import { PSEO_ROUTES, LANGS } from './config/site';
 import { localizedRoutes, routeToToolMap } from './config/localizedRoutes';
 
@@ -222,7 +221,6 @@ export default function App() {
           <QrWorkspace qrType={qrType} setQrTypeRoute={handleTypeChangeRoute} currentSeo={currentSeo} />
           <LandingContent qrType={qrType} />
           <SeoArticle currentLangCode={currentLangCode} />
-          <SeoContent />
         </>
       ) : (
         <>
@@ -234,19 +232,16 @@ export default function App() {
           {isBarcode && (
             <>
               <BarcodeGenerator />
-              <SeoContent />
             </>
           )}
           {isScanQr && (
             <>
               <ScanQr />
-              <SeoContent />
             </>
           )}
           {isScanBarcode && (
             <>
               <ScanBarcode />
-              <SeoContent />
             </>
           )}
         </>
