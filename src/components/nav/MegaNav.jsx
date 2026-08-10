@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link as RouterLink } from 'react-router-dom';
 import { ChevronDown, QrCode, ScanLine, Scan, Building2, Link, MessageCircle, Video, Camera, Users, Hash, Music2, Briefcase, Send, Ghost, Gamepad2, Music, CreditCard, Wallet, Smartphone, Bitcoin, Type, Mail, Phone, MessageSquare, Contact, MapPin, Calendar, Wifi, FileText, ClipboardList, Star, Image, List, Mic, ShoppingCart, CalendarDays, File, Clock } from 'lucide-react';
 import { localizedRoutes } from '../../config/localizedRoutes';
 
@@ -112,19 +112,19 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
     <div className="hidden xl:flex flex-1 justify-center items-center gap-3 xl:gap-6">
       
       {/* 1. Scan QR (Static Link) */}
-      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-qr') ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400'}`}>
+      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-qr') ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400'}`}>
         {t('nav.scanqr', 'Scan QR')}
-      </a>
+      </RouterLink>
 
       {/* 2. Scan Barcode (Static Link) */}
-      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-barcode') ? 'text-indigo-600 dark:text-indigo-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400'}`}>
+      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-barcode') ? 'text-indigo-600 dark:text-indigo-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400'}`}>
         {t('nav.scanbarcode', 'Scan Barcode')}
-      </a>
+      </RouterLink>
 
       {/* 3. Barcode Maker (Static Link) */}
-      <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/barcode') ? 'text-purple-600 dark:text-purple-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400'}`}>
+      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/barcode') ? 'text-purple-600 dark:text-purple-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400'}`}>
         {t('nav.barcode', 'Barcode Maker')}
-      </a>
+      </RouterLink>
 
       {/* 4. Generate QR (Mega Menu Button) */}
       <div className="relative group">
@@ -150,10 +150,10 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
                         const isActive = location.pathname === finalUrl || (location.pathname === '/' && finalUrl === `/${currentLangCode}`);
                         
                         return (
-                          <a key={item.id} href={finalUrl} className={`flex items-center gap-3 py-1.5 px-3 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
+                          <RouterLink key={item.id} to={finalUrl} className={`flex items-center gap-3 py-1.5 px-3 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
                             <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
                             <span className="text-[12px] font-bold tracking-tight">{item.label}</span>
-                          </a>
+                          </RouterLink>
                         );
                       })}
                     </div>

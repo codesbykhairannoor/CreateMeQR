@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link as RouterLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Globe, Moon, Sun, X, Menu, Clock } from 'lucide-react';
 import { LANGS } from '../config/site';
@@ -206,10 +206,10 @@ export default function MainLayout({ children }) {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© {new Date().getFullYear()} CreateMy-QR Technologies. All rights reserved.</p>
           <div className="flex gap-6 font-medium text-zinc-900 dark:text-white">
-            <a href="/about" className="hover:underline">About</a>
-            <a href="/privacy" className="hover:underline">Privacy Policy</a>
-            <a href="/terms" className="hover:underline">Terms of Service</a>
-            <a href="/contact" className="hover:underline">Contact</a>
+            <RouterLink to="/about" className="hover:underline">About</RouterLink>
+            <RouterLink to="/privacy" className="hover:underline">Privacy Policy</RouterLink>
+            <RouterLink to="/terms" className="hover:underline">Terms of Service</RouterLink>
+            <RouterLink to="/contact" className="hover:underline">Contact</RouterLink>
           </div>
         </div>
       </footer>

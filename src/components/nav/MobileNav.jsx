@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown, QrCode, ScanLine, Scan, Building2, ChevronUp, Moon, Sun, Clock } from 'lucide-react';
+import { Link as RouterLink } from 'react-router-dom';
 import { localizedRoutes } from '../../config/localizedRoutes';
 import { QR_MENU_COLUMNS, BARCODE_CATEGORIES } from './MegaNav';
 
@@ -36,10 +37,10 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
                     const finalUrl = `${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedPath}`;
                     
                     return (
-                      <a key={item.id} href={finalUrl} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-[#102040] transition-colors text-zinc-700 dark:text-zinc-300">
+                      <RouterLink key={item.id} to={finalUrl} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-[#102040] transition-colors text-zinc-700 dark:text-zinc-300">
                         <Icon className="w-4 h-4 opacity-70" />
                         <span className="text-[13px] font-bold">{item.label}</span>
-                      </a>
+                      </RouterLink>
                     );
                   })}
                 </div>
@@ -60,14 +61,14 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
         </button>
         {openSection === 'scanGroup' && (
           <div className="flex flex-col gap-2 pl-7 pr-2 pt-2 pb-4 animate-fade-in-up-fast">
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-[#102040] transition-colors text-zinc-700 dark:text-zinc-300">
+            <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-[#102040] transition-colors text-zinc-700 dark:text-zinc-300">
               <Scan className="w-4 h-4 opacity-70" />
               <span className="text-[13px] font-bold">{t('nav.scanqr', 'Scan QR Code')}</span>
-            </a>
-            <a href={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-indigo-50 dark:hover:bg-[#102040] transition-colors text-zinc-700 dark:text-zinc-300">
+            </RouterLink>
+            <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-indigo-50 dark:hover:bg-[#102040] transition-colors text-zinc-700 dark:text-zinc-300">
               <ScanLine className="w-4 h-4 opacity-70" />
               <span className="text-[13px] font-bold">{t('nav.scanbarcode', 'Scan Barcode')}</span>
-            </a>
+            </RouterLink>
           </div>
         )}
       </div>
@@ -99,9 +100,9 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
                     const barcodePath = localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator';
                     const finalUrl = `${currentLangCode === 'en' ? '' : '/' + currentLangCode}${barcodePath}?format=${format}`;
                     return (
-                      <a key={format} href={finalUrl} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors text-zinc-700 dark:text-zinc-300">
+                      <RouterLink key={format} to={finalUrl} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors text-zinc-700 dark:text-zinc-300">
                         <span className="text-[13px] font-bold font-mono">{format}</span>
-                      </a>
+                      </RouterLink>
                     );
                   })}
                 </div>
