@@ -193,30 +193,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
 
       {/* ═══════ SECTION 1: HERO ═══════ */}
       <section style={{ position: 'relative', paddingTop: 'clamp(56px, 9vw, 96px)', paddingBottom: '56px', textAlign: 'center' }}>
-        {/* Ambient blue glow */}
-        <div style={{
-          position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)',
-          width: '120%', height: '100%',
-          background: 'radial-gradient(ellipse 70% 55% at 50% 0%, rgba(37,99,235,0.09), transparent)',
-          pointerEvents: 'none', zIndex: 0,
-        }} />
-
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
-
-          {/* ISO trust badge */}
-          <div style={{
-            display: 'inline-flex', alignItems: 'center', gap: 8,
-            padding: '8px 18px', borderRadius: 9999,
-            border: '1px solid rgba(37,99,235,0.22)',
-            background: 'rgba(37,99,235,0.06)',
-            marginBottom: 28,
-            fontSize: '0.78rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase',
-          }}>
-            <ShieldCheck size={13} style={{ color: '#2563EB' }} />
-            <span style={{ color: '#2563EB' }}>
-              {t('home.badge', 'ISO/IEC 18004 · 100% Free · Zero Tracking · No Signup')}
-            </span>
-          </div>
+        <div style={{ maxWidth: 1440, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
 
           {/* Monumental headline — class matches audiovideo .hero-title pattern */}
           <h1
@@ -227,15 +204,10 @@ export default function HomePage({ currentLangCode = 'en' }) {
               margin: '0 auto 24px',
             }}
           >
-            {t('home.heroTitle')}{' '}
-            <span style={{
-              background: 'linear-gradient(135deg, #1e40af 0%, #2563EB 45%, #7C3AED 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-            }}>
-              {t('home.heroTitleHighlight')}
-            </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-1">
+              {t('home.heroTitle')}
+            </span>{' '}
+            {t('home.heroTitleHighlight')}
           </h1>
 
           {/* Subtitle */}
