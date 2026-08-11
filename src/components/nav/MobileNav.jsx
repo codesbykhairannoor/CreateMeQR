@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown, QrCode, ScanLine, Scan, Building2, ChevronUp, Moon, Sun, Clock } from 'lucide-react';
+import { ChevronDown, QrCode, ScanLine, Scan, Building2, ChevronUp, Moon, Sun, Clock, Link, Wifi } from 'lucide-react';
 import { Link as RouterLink } from 'react-router-dom';
 import { localizedRoutes } from '../../config/localizedRoutes';
 import { QR_MENU_COLUMNS, BARCODE_CATEGORIES } from './MegaNav';
