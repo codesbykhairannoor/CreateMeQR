@@ -250,6 +250,16 @@
   "landing": {
     "heroTitle": "Premium QR Codes",
     "heroSubtitle": "No 14-day limits, no forced ads, no tracking. Generate high-quality static codes directly in your browser that work forever.",
+    "badgeFree": "Free Forever",
+    "comp1Title": "No 14-Day Expiry Trap",
+    "comp1Desc": "Competitors will deactivate your printed QR codes after 14 days unless you pay. Our static QR codes work forever.",
+    "badgeZeroAds": "Zero Ads",
+    "comp2Title": "No Forced Ads or Redirects",
+    "comp2Desc": "Other tools inject ads before opening your link. Ours goes straight to the destination, instantly.",
+    "badgePrivate": "100% Private",
+    "comp3Title": "Full Local Privacy",
+    "comp3Desc": "Your links never touch our servers. Everything is processed in your browser — zero tracking.",
+    "badgeStats": "Data Speaks",
     "faqTitle": "Common Questions"
   },
   "seoTool": {
