@@ -211,7 +211,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
 
           {/* Subtitle */}
           <p className="text-zinc-600 dark:text-zinc-400" style={{
-            fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
+            fontSize: 'clamp(2.2rem, 5vw, 3.8rem) !important',
             lineHeight: 1.6,
             maxWidth: 780,
             margin: '0 auto 40px',
@@ -219,21 +219,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
           }}>
             {t('home.heroSubtitle')}
           </p>
-
-          {/* Official ISO citation box */}
-          <div style={{
-            display: 'inline-flex', alignItems: 'flex-start', gap: 14,
-            padding: '16px 22px', borderRadius: 18,
-            border: '1px solid rgba(37,99,235,0.15)',
-            background: 'rgba(37,99,235,0.04)',
-            marginBottom: 52, maxWidth: 740, textAlign: 'left',
-          }}>
-            <ShieldCheck size={18} style={{ color: '#2563EB', flexShrink: 0, marginTop: 2 }} />
-            <p style={{ fontSize: '0.87rem', lineHeight: 1.65, opacity: 0.72, margin: 0, fontStyle: 'italic' }}>
-              {t('home.citation', '"The QR Code is an international standard (ISO/IEC 18004:2015). Matrix barcodes require clean module grids for reliable scanning across all compliant readers worldwide."')}{' '}
-              <strong style={{ fontStyle: 'normal', opacity: 1 }}>— ISO/IEC 18004:2015</strong>
-            </p>
-          </div>
+        </div>
 
           {/* Search */}
           <div style={{ maxWidth: 600, margin: '0 auto 44px', position: 'relative' }}>

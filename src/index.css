@@ -100,19 +100,19 @@
    Prevents collision with [class^="hq-layout-"] h1/h2 rules below.
    ========================================================================== */
 
-/* Hero h1 — same values as audiovideo src/index.css .hero-title */
+/* Hero h1 */
 .homepage-hero-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(2.5rem, 6vw, 4.0rem) !important;
+  font-size: clamp(2rem, 5vw, 3.6rem) !important;
   font-weight: 800 !important;
   letter-spacing: -0.03em !important;
   line-height: 1.15 !important;
 }
 
-/* Section h2 \u2014 same approach, slightly smaller */
+/* Section h2 */
 .homepage-section-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(1.6rem, 3.5vw, 2.2rem) !important;
+  font-size: clamp(1.3rem, 3.5vw, 2rem) !important;
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
   line-height: 1.25 !important;
@@ -228,5 +228,52 @@
   }
   [class^="hq-layout-"] p[style*="padding: '0 32px 32px 72px'"] {
     padding: 0 20px 20px 20px !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE TYPOGRAPHY OVERRIDES (≤640px)
+   Reduces all section titles and descriptions by ~3-4px on small screens
+   ========================================================================== */
+@media (max-width: 640px) {
+  /* Home hero */
+  .homepage-hero-title {
+    font-size: clamp(1.7rem, 8vw, 2.4rem) !important;
+  }
+  .homepage-section-title {
+    font-size: clamp(1.1rem, 6vw, 1.6rem) !important;
+  }
+
+  /* All pages h1 (Privacy, Terms, About, etc.) */
+  .text-\[clamp\(2\.2rem\,5vw\,4\.5rem\)\],
+  .text-\[clamp\(2\.2rem\,5vw\,4\.1rem\)\],
+  .text-\[clamp\(2rem\,5vw\,4rem\)\] {
+    font-size: clamp(1.6rem, 7vw, 2.2rem) !important;
+  }
+
+  /* All pages h2 section titles */
+  .text-\[clamp\(1\.8rem\,4vw\,2\.5rem\)\],
+  .text-\[clamp\(1\.6rem\,4vw\,2\.5rem\)\],
+  .text-\[clamp\(1\.8rem\,4vw\,2\.3rem\)\],
+  .text-\[clamp\(1\.6rem\,4vw\,2\.3rem\)\] {
+    font-size: clamp(1.1rem, 5vw, 1.5rem) !important;
+  }
+
+  /* Secondary section titles */
+  .text-\[clamp\(2\.2rem\,5vw\,3\.5rem\)\],
+  .text-\[clamp\(2rem\,5vw\,3\.3rem\)\] {
+    font-size: clamp(1.4rem, 6vw, 1.9rem) !important;
+  }
+
+  /* hq-layout pages h1/h2 */
+  [class^="hq-layout-"] h1 {
+    font-size: clamp(1.5rem, 7vw, 2rem) !important;
+  }
+  [class^="hq-layout-"] h2 {
+    font-size: clamp(1.1rem, 5vw, 1.5rem) !important;
+  }
+  [class^="hq-layout-"] p,
+  [class^="hq-layout-"] .hq-section-desc {
+    font-size: clamp(0.82rem, 3.5vw, 0.95rem) !important;
   }
 }
