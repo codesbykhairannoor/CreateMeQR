@@ -8,8 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 const LANGS = [
-  'id', 'es', 'fr', 'de', 'pt', 'zh', 'ja', 'hi', 'ko',
-  'ar', 'ru', 'it', 'tr', 'nl', 'pl', 'sv', 'vi', 'th', 'el',
+  'ko', 'ar', 'ru', 'it', 'tr', 'nl', 'pl', 'sv', 'vi', 'th', 'el',
   'cs', 'da', 'fi', 'no', 'hu', 'ro', 'uk', 'ms', 'tl', 'bn'
 ];
 
