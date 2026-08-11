@@ -89,11 +89,9 @@ const FAQS_DEFAULT = [
     q: 'Are the QR codes free to use forever?',
     a: 'Yes. All QR codes generated are static and free forever. There are no limits, no watermarks, no expiry dates, and no subscription required. Ever.',
   },
-  {
-    q: 'Is my data secure when generating a QR code?',
-    a: 'Absolutely. All encoding happens inside your browser. Your data never leaves your device and is never transmitted to any server. The platform is fully GDPR and CCPA compliant.',
-  },
 ];
+// Note: FAQS_DEFAULT no longer needed — keys are in translation.json
+
 
 function FaqItem({ faq }) {
   const [open, setOpen] = useState(false);
@@ -140,7 +138,8 @@ export default function HomePage({ currentLangCode = 'en' }) {
   const filtered = ALL_TOOLS.filter((tool) => {
     const matchCat = activeCat === 'all' || tool.category === activeCat;
     const q = search.toLowerCase();
-    const matchSearch = !q || tool.label.toLowerCase().includes(q) || tool.id.includes(q);
+    const translatedLabel = t(`types.${tool.id}`, tool.label).toLowerCase();
+    const matchSearch = !q || translatedLabel.includes(q) || tool.label.toLowerCase().includes(q) || tool.id.includes(q);
     return matchCat && matchSearch;
   });
 
@@ -148,20 +147,11 @@ export default function HomePage({ currentLangCode = 'en' }) {
   const seoDesc = t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO/IEC 18004-compliant, available in 30 languages.');
   const canonicalBase = `https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}`;
 
-  // Translated FAQ, fallback to English
+  // Translated FAQ — now from translation JSON
   const FAQS = [
-    {
-      q: t('home.faq1q', FAQS_DEFAULT[0].q),
-      a: t('home.faq1a', FAQS_DEFAULT[0].a),
-    },
-    {
-      q: t('home.faq2q', FAQS_DEFAULT[1].q),
-      a: t('home.faq2a', FAQS_DEFAULT[1].a),
-    },
-    {
-      q: t('home.faq3q', FAQS_DEFAULT[2].q),
-      a: t('home.faq3a', FAQS_DEFAULT[2].a),
-    },
+    { q: t('home.faq1q'), a: t('home.faq1a') },
+    { q: t('home.faq2q'), a: t('home.faq2a') },
+    { q: t('home.faq3q'), a: t('home.faq3a') },
   ];
 
   return (
@@ -422,9 +412,9 @@ export default function HomePage({ currentLangCode = 'en' }) {
                         </span>
                       </div>
 
-                      {/* Label */}
+                      {/* Label — translated via types.* key */}
                       <h3 style={{ fontSize: '1.1rem', fontWeight: 800, lineHeight: 1.3, margin: 0, flexGrow: 1 }}>
-                        {tool.label}
+                        {t(`types.${tool.id}`, tool.label)}
                       </h3>
 
                       {/* CTA */}
