@@ -54,10 +54,35 @@ async function run() {
     const translations = JSON.parse(fs.readFileSync(transPath, 'utf8'));
     const toolMap = routeToToolMap[lang] || {};
     
-    for (const [localizedSlug, toolId] of Object.entries(toolMap)) {
+    // Inject static pages into the generation loop
+    const staticPages = {
+      '/about': 'about',
+      '/privacy': 'privacy',
+      '/terms': 'terms',
+      '/compare': 'compare',
+      '/contact': 'contact'
+    };
+    const allPages = { ...toolMap, ...staticPages };
+    
+    for (const [localizedSlug, toolId] of Object.entries(allPages)) {
       let title, description;
       
-      if (toolId === 'url' || toolId === '/') {
+      if (['about', 'privacy', 'terms', 'compare', 'contact'].includes(toolId)) {
+        // Fallback or exact titles for static pages
+        const staticTitles = {
+          'about': 'About Us',
+          'privacy': 'Privacy Policy',
+          'terms': 'Terms of Service',
+          'contact': 'Contact Support',
+          'compare': 'Compare Tools'
+        };
+        title = `${staticTitles[toolId]} | CreateMy-QR`;
+        description = `Learn more about CreateMy-QR ${staticTitles[toolId].toLowerCase()}.`;
+        // Helper to grab deep nested translations if needed
+        if (translations[toolId] && translations[toolId].title) {
+           title = `${translations[toolId].title} | CreateMy-QR`;
+        }
+      } else if (toolId === 'url' || toolId === '/') {
         title = translations.appTitle || 'CreateMy-QR | Free Custom QR Code Generator';
         description = translations.tagline || 'Generate high-quality static QR codes directly in your browser.';
       } else {
