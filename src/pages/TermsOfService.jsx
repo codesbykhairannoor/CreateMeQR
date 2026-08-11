@@ -21,7 +21,13 @@ export default function TermsOfService() {
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           
           <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.1]">
-            {t('info.terms.hero.title', 'Terms of')} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t('info.terms.hero.titleHighlight', 'Service')}</span>.
+            {(() => {
+              const str = t('info.terms.hero.title', 'Terms of Service');
+              const words = str.split(' ');
+              if (words.length <= 1) return str;
+              const last = words.pop();
+              return <>{words.join(' ')} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{last}</span></>;
+            })()}.
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
             {t('info.terms.hero.subtitle', 'Rules of the road for using our platform.')}
