@@ -10,7 +10,8 @@ export default function Compare() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#020617] font-sans overflow-hidden">
       <Helmet>
-        <title>{t('info.compare.hero.title', 'Why Choose Us?')} - CreateMyQR</title>
+        <title>{`${t('info.compare.hero.title', 'Why Choose Us?')} | CreateMy-QR`}</title>
+        <meta name="description" content={t('info.compare.hero.subtitle', 'The fastest, 100% client-side secure QR code generator. Zero tracking, zero ads, infinite possibilities.')} />
       </Helmet>
 
       {/* Hero Section with Premium Design */}

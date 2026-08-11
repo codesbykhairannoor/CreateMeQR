@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#040814] font-sans overflow-hidden">
       <Helmet>
-        <title>{t('info.about.hero.title', 'About Us')} - CreateMyQR</title>
+        <title>{`${t('info.about.hero.title', 'About Us')} | CreateMy-QR`}</title>
         <meta name="description" content={t('info.about.hero.subtitle', 'Empowering global connections through seamless QR technology.')} />
       </Helmet>
 

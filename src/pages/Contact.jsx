@@ -9,8 +9,8 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#040814] font-sans overflow-hidden">
       <Helmet>
-        <title>{t('contact.title', 'Contact Us')} - CreateMyQR</title>
-        <meta name="description" content={t('contact.desc', 'Get in touch with the CreateMyQR team.')} />
+        <title>{`${t('info.contact.hero.title', 'Contact Us')} | CreateMy-QR`}</title>
+        <meta name="description" content={t('contact.desc', 'We\'d love to hear from you. Here\'s how you can reach us.')} />
       </Helmet>
 
       <section className="relative pt-32 pb-24 lg:pb-32 overflow-hidden">

@@ -9,7 +9,7 @@ export default function TermsOfService() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#040814] font-sans overflow-hidden">
       <Helmet>
-        <title>{t('info.terms.hero.title', 'Terms of Service')} - CreateMyQR</title>
+        <title>{`${t('info.terms.hero.title', 'Terms of Service')} | CreateMy-QR`}</title>
         <meta name="description" content={t('info.terms.hero.subtitle', 'Rules of the road for using our platform.')} />
       </Helmet>
 

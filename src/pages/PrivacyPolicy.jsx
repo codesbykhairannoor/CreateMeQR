@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#040814] font-sans overflow-hidden">
       <Helmet>
-        <title>{t('info.privacy.hero.title', 'Privacy Policy')} - CreateMyQR</title>
+        <title>{`${t('info.privacy.hero.title', 'Privacy Policy')} | CreateMy-QR`}</title>
         <meta name="description" content={t('info.privacy.hero.subtitle', 'Your data is yours. We keep it that way.')} />
       </Helmet>
 
