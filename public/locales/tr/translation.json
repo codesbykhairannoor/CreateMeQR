@@ -2,33 +2,33 @@
   "appTitle": "Ücretsiz Çevrimiçi QR Kod Oluşturucu - CreateMy-QR (No Signup)",
   "tagline": "Logo ve Renkli QR Kodlar Üretin - Kayıt Yok, Sınırsız ve Bedava. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
   "types": {
-    "url": "URL / Link",
+    "url": "URL / Bağlantı",
     "wifi": "Wi-Fi",
     "vcard": "vCard",
     "text": "Metin",
-    "email": "Email",
+    "email": "E-posta",
     "phone": "Telefon",
     "sms": "SMS",
     "location": "Konum",
     "event": "Etkinlik",
     "whatsapp": "WhatsApp",
-    "youtube": "YouTube",
-    "instagram": "Instagram",
-    "crypto": "Crypto",
-    "appstore": "App Store",
+    "youtube": "Youtube",
+    "instagram": "instagram",
+    "crypto": "Kripto",
+    "appstore": "Uygulama Mağazası",
     "facebook": "Facebook",
     "twitter": "X (Twitter)",
     "tiktok": "TikTok",
     "linkedin": "LinkedIn",
-    "telegram": "Telegram",
+    "telegram": "Telgraf",
     "snapchat": "Snapchat",
-    "discord": "Discord",
+    "discord": "Anlaşmazlık",
     "spotify": "Spotify",
     "paypal": "PayPal",
     "venmo": "Venmo",
     "pdf": "PDF",
-    "gforms": "Google Forms",
-    "greview": "Google Review",
+    "gforms": "Google Formları",
+    "greview": "Google İncelemesi",
     "image": "Resim",
     "linkinbio": "Bağlantı Bio'da",
     "video": "Video",
@@ -64,7 +64,7 @@
     "igUsername": "Instagram Kullanıcı Adı",
     "cryptoCoin": "Kripto para birimi",
     "cryptoAddress": "Cüzdan Adresi",
-    "cryptoAmount": "Amount",
+    "cryptoAmount": "Tutar",
     "appStoreUrl": "Uygulama URL'si (iOS/Android)",
     "facebookInput": "Facebook Kullanıcı Adı",
     "twitterInput": "Twitter Kullanıcı Adı",
@@ -75,7 +75,7 @@
     "discordInput": "Discord Davet Kodu",
     "spotifyInput": "Spotify URL'si / URI'si",
     "paypalUsername": "PayPal Kullanıcı Adı",
-    "paypalAmount": "Amount",
+    "paypalAmount": "Tutar",
     "venmoInput": "Venmo Kullanıcı Adı",
     "enter_facebook": "Kullanıcı adını girin (ör. markzuckerberg)",
     "enter_twitter": "Kullanıcı adını girin (ör. elonmusk)",
@@ -272,8 +272,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR Kod Oluşturucu - Ücretsiz ve Özel",
-    "h1": "{{tool}} QR Code",
-    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
+    "h1": "{{araç}} QR Kodu",
+    "description": "{{tool}} verilerinizi doğrudan tarayıcınızda özel bir QR koduna dönüştürün. Mutlak gizlilik için %100 çevrimdışı işlenir. Ücretsiz, sınırsız ve son derece güvenli."
   },
   "faqTools": {
     "url": {
@@ -1064,10 +1064,10 @@
       "waitingDesc": "Kameranızı bir QR koduna doğrultun veya bir resim yükleyin.",
       "errCam": "Kamera başlatılamadı. Lütfen kamera izinlerini verdiğinizden emin olun.",
       "errImg": "Resimde QR kodu bulunamadı. Lütfen başka bir resim deneyin.",
-      "toggleQR": "QR Code",
-      "toggleBarcode": "Barcode",
-      "initCamDescBarcode": "Scan a barcode using your device's camera",
-      "uploadBtnBarcode": "Upload Barcode Image File"
+      "toggleQR": "QR Kodu",
+      "toggleBarcode": "Barkod",
+      "initCamDescBarcode": "Cihazınızın kamerasını kullanarak barkod tarayın",
+      "uploadBtnBarcode": "Barkod Görüntü Dosyasını Yükle"
     },
     "features": {
       "whyTitle": "Tarayıcımızı neden kullanmalısınız?",
@@ -1283,7 +1283,7 @@
         "Logistics": "Lojistik",
         "Industrial": "Endüstriyel",
         "Packaging": "Ambalaj",
-        "2D": "2D"
+        "2D": "2 boyutlu"
       }
     }
   },

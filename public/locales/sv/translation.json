@@ -2,11 +2,11 @@
   "appTitle": "Gratis QR-kod Generator Online - CreateMy-QR (No Signup)",
   "tagline": "Skapa QR-koder med Logotyp & Färg - Utan Registrering, Obegränsat. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
   "types": {
-    "url": "URL / Link",
+    "url": "URL/länk",
     "wifi": "Wi-Fi",
     "vcard": "vCard",
     "text": "Text",
-    "email": "Email",
+    "email": "E-post",
     "phone": "Telefon",
     "sms": "SMS",
     "location": "Plats",
@@ -14,7 +14,7 @@
     "whatsapp": "WhatsApp",
     "youtube": "YouTube",
     "instagram": "Instagram",
-    "crypto": "Crypto",
+    "crypto": "Krypto",
     "appstore": "App Store",
     "facebook": "Facebook",
     "twitter": "X (Twitter)",
@@ -27,7 +27,7 @@
     "paypal": "PayPal",
     "venmo": "Venmo",
     "pdf": "PDF",
-    "gforms": "Google Forms",
+    "gforms": "Google Formulär",
     "greview": "Google Review",
     "image": "Bild",
     "linkinbio": "Länk i bio",
@@ -64,7 +64,7 @@
     "igUsername": "Instagram användarnamn",
     "cryptoCoin": "Kryptovaluta",
     "cryptoAddress": "Plånboksadress",
-    "cryptoAmount": "Amount",
+    "cryptoAmount": "Belopp",
     "appStoreUrl": "Appens URL (iOS/Android)",
     "facebookInput": "Facebook Användarnamn",
     "twitterInput": "Twitter-handtag",
@@ -75,7 +75,7 @@
     "discordInput": "Discord inbjudningskod",
     "spotifyInput": "Spotify URL / URI",
     "paypalUsername": "PayPal Användarnamn",
-    "paypalAmount": "Amount",
+    "paypalAmount": "Belopp",
     "venmoInput": "Venmo Användarnamn",
     "enter_facebook": "Ange användarnamn (t.ex. markzuckerberg)",
     "enter_twitter": "Ange användarnamn (t.ex. elonmusk)",
@@ -272,8 +272,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR Code Generator - Gratis & anpassad",
-    "h1": "{{tool}} QR Code",
-    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
+    "h1": "{{verktyg}} QR-kod",
+    "description": "Konvertera dina {{tool}}-data till en anpassad QR-kod direkt i din webbläsare. 100 % bearbetad offline för absolut integritet. Gratis, inga gränser och mycket säker."
   },
   "faqTools": {
     "url": {
@@ -988,7 +988,7 @@
       "sections": {
         "s1": "Datainsamling",
         "d1": "Vi samlar inte in eller lagrar data som du matar in i QR-kodgeneratorn. All generation sker lokalt på din enhet.",
-        "s2": "Cookies & Analytics",
+        "s2": "Cookies och analys",
         "d2": "Vi använder minimal analys för att förstå aggregerade trafikmönster. Ingen personligt identifierbar information spåras.",
         "s3": "Tredjepartstjänster",
         "d3": "Vi säljer, hyr ut eller delar inte dina uppgifter med någon tredje part."
@@ -1064,10 +1064,10 @@
       "waitingDesc": "Rikta kameran mot en QR-kod eller ladda upp en bild.",
       "errCam": "Det gick inte att starta kameran. Se till att du har beviljat kameratillstånd.",
       "errImg": "Ingen QR-kod hittades i bilden. Försök med en annan bild.",
-      "toggleQR": "QR Code",
-      "toggleBarcode": "Barcode",
-      "initCamDescBarcode": "Scan a barcode using your device's camera",
-      "uploadBtnBarcode": "Upload Barcode Image File"
+      "toggleQR": "QR-kod",
+      "toggleBarcode": "Streckkod",
+      "initCamDescBarcode": "Skanna en streckkod med enhetens kamera",
+      "uploadBtnBarcode": "Ladda upp streckkodsbildfil"
     },
     "features": {
       "whyTitle": "Varför använda vår skanner?",
@@ -1237,7 +1237,7 @@
       "desc": "Skanna streckkoder online gratis med enhetens kamera eller ladda upp en bild.Stöder UPC, EAN, Code 128 och mer.100 % privat och säkert."
     },
     "hero": {
-      "badge": "Cyber Scanner V1",
+      "badge": "Cyber ​​Scanner V1",
       "title": "Omedelbar",
       "titleHighlight": "Streckkodsläsare",
       "desc": "Skanna från din webbkamera eller ladda upp en bild.100 % privat, noll data skickas till våra servrar."
