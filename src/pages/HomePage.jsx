@@ -193,7 +193,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
 
       {/* ═══════ SECTION 1: HERO ═══════ */}
       <section style={{ position: 'relative', paddingTop: 'clamp(56px, 9vw, 96px)', paddingBottom: '56px', textAlign: 'center' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
 
           {/* Monumental headline — class matches audiovideo .hero-title pattern */}
           <h1
@@ -296,8 +296,8 @@ export default function HomePage({ currentLangCode = 'en' }) {
       </section>
 
       {/* ═══════ SECTION 2: TOOLS GRID ═══════ */}
-      <section style={{ padding: '16px 24px 80px' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+      <section style={{ padding: '16px 0 80px' }}>
+        <div className="max-w-7xl mx-auto px-6">
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 32 }}>
             <h2 style={{
@@ -408,8 +408,8 @@ export default function HomePage({ currentLangCode = 'en' }) {
       </section>
 
       {/* ═══════ SECTION 3: TRUST / ZERO TRACKING ═══════ */}
-      <section style={{ padding: '80px 24px' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+      <section style={{ padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto px-6">
           <div style={{
             borderRadius: 44, padding: 'clamp(36px, 7vw, 68px)',
             position: 'relative', overflow: 'hidden',
@@ -478,9 +478,8 @@ export default function HomePage({ currentLangCode = 'en' }) {
       </section>
 
       {/* ═══════ SECTION 4: WHAT IS / WHY SECURE (GEO) ═══════ */}
-      <section style={{ padding: '80px 24px', borderTop: '1px solid rgba(37,99,235,0.08)' }}>
-        <div style={{
-          maxWidth: 1200, margin: '0 auto',
+      <section style={{ padding: '80px 0', borderTop: '1px solid rgba(37,99,235,0.08)' }}>
+        <div className="max-w-7xl mx-auto px-6" style={{
           display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
           gap: 60, alignItems: 'start',
         }}>
@@ -557,8 +556,8 @@ export default function HomePage({ currentLangCode = 'en' }) {
       </section>
 
       {/* ═══════ SECTION 5: FAQ ═══════ */}
-      <section style={{ padding: '80px 24px', borderTop: '1px solid rgba(37,99,235,0.08)' }}>
-        <div style={{ maxWidth: 800, margin: '0 auto' }}>
+      <section style={{ padding: '80px 0', borderTop: '1px solid rgba(37,99,235,0.08)' }}>
+        <div className="max-w-[800px] mx-auto px-6">
 
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <div style={{
