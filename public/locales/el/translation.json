@@ -2,7 +2,7 @@
   "appTitle": "Δωρεάν Δημιουργία QR Code Online - CreateMy-QR (No Signup)",
   "tagline": "Φτιάξτε QR Code με Λογότυπο & Χρώμα - Χωρίς Εγγραφή, Απεριόριστα. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
   "types": {
-    "url": "URL / Link",
+    "url": "URL / Σύνδεσμος",
     "wifi": "Wi-Fi",
     "vcard": "vCard",
     "text": "Κείμενο",
@@ -20,15 +20,15 @@
     "twitter": "X (Twitter)",
     "tiktok": "TikTok",
     "linkedin": "LinkedIn",
-    "telegram": "Telegram",
+    "telegram": "Τηλεγράφημα",
     "snapchat": "Snapchat",
-    "discord": "Discord",
+    "discord": "Διχόνοια",
     "spotify": "Spotify",
     "paypal": "PayPal",
     "venmo": "Venmo",
     "pdf": "PDF",
-    "gforms": "Google Forms",
-    "greview": "Google Review",
+    "gforms": "Φόρμες Google",
+    "greview": "Αναθεώρηση Google",
     "image": "Εικόνα",
     "linkinbio": "Σύνδεσμος στο Bio",
     "video": "Βίντεο",
@@ -64,7 +64,7 @@
     "igUsername": "Όνομα χρήστη Instagram",
     "cryptoCoin": "Κρυπτονόμισμα",
     "cryptoAddress": "Διεύθυνση Πορτοφολιού",
-    "cryptoAmount": "Amount",
+    "cryptoAmount": "Ποσό",
     "appStoreUrl": "URL εφαρμογής (iOS/Android)",
     "facebookInput": "Όνομα χρήστη Facebook",
     "twitterInput": "Twitter Handle",
@@ -75,7 +75,7 @@
     "discordInput": "Discord Κωδικός Πρόσκλησης",
     "spotifyInput": "Διεύθυνση URL / URI Spotify",
     "paypalUsername": "Όνομα χρήστη PayPal",
-    "paypalAmount": "Amount",
+    "paypalAmount": "Ποσό",
     "venmoInput": "Venmo Όνομα χρήστη",
     "enter_facebook": "Εισαγάγετε όνομα χρήστη (π.χ. Markzuckerberg)",
     "enter_twitter": "Εισαγάγετε όνομα χρήστη (π.χ. elonmusk)",
@@ -272,8 +272,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR Code Generator - Δωρεάν & Προσαρμοσμένο",
-    "h1": "{{tool}} QR Code",
-    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
+    "h1": "{{εργαλείο}} Κωδικός QR",
+    "description": "Μετατρέψτε τα δεδομένα σας {{tool}} σε προσαρμοσμένο κωδικό QR απευθείας στο πρόγραμμα περιήγησής σας. 100% επεξεργασία εκτός σύνδεσης για απόλυτη προστασία της ιδιωτικής ζωής. Δωρεάν, χωρίς όρια και εξαιρετικά ασφαλές."
   },
   "faqTools": {
     "url": {
@@ -1064,10 +1064,10 @@
       "waitingDesc": "Στρέψτε την κάμερά σας σε έναν κωδικό QR ή ανεβάστε μια εικόνα.",
       "errCam": "Η εκκίνηση της κάμερας απέτυχε. Βεβαιωθείτε ότι έχετε παραχωρήσει άδειες κάμερας.",
       "errImg": "Δεν βρέθηκε κωδικός QR στην εικόνα. Δοκιμάστε άλλη εικόνα.",
-      "toggleQR": "QR Code",
+      "toggleQR": "Κωδικός QR",
       "toggleBarcode": "Barcode",
-      "initCamDescBarcode": "Scan a barcode using your device's camera",
-      "uploadBtnBarcode": "Upload Barcode Image File"
+      "initCamDescBarcode": "Σαρώστε έναν γραμμωτό κώδικα χρησιμοποιώντας την κάμερα της συσκευής σας",
+      "uploadBtnBarcode": "Μεταφόρτωση αρχείου εικόνας γραμμικού κώδικα"
     },
     "features": {
       "whyTitle": "Γιατί να χρησιμοποιήσετε το Scanner μας;",
@@ -1237,7 +1237,7 @@
       "desc": "Σαρώστε γραμμικούς κώδικες στο διαδίκτυο δωρεάν χρησιμοποιώντας την κάμερα της συσκευής σας ή ανεβάστε μια εικόνα.Υποστηρίζει UPC, EAN, Code 128 και άλλα.100% ιδιωτικό και ασφαλές."
     },
     "hero": {
-      "badge": "Cyber Scanner V1",
+      "badge": "Cyber ​​Scanner V1",
       "title": "Στιγμιαία",
       "titleHighlight": "Barcode Scanner",
       "desc": "Σαρώστε από την κάμερα web ή ανεβάστε μια εικόνα.100% ιδιωτικά, μηδενικά δεδομένα αποστέλλονται στους διακομιστές μας."

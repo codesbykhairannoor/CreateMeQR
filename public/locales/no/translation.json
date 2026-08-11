@@ -6,7 +6,7 @@
     "wifi": "Wi-Fi",
     "vcard": "vCard",
     "text": "Tekst",
-    "email": "Email",
+    "email": "E-post",
     "phone": "Telefon",
     "sms": "SMS",
     "location": "Plassering",
@@ -14,7 +14,7 @@
     "whatsapp": "WhatsApp",
     "youtube": "YouTube",
     "instagram": "Instagram",
-    "crypto": "Crypto",
+    "crypto": "Krypto",
     "appstore": "App Store",
     "facebook": "Facebook",
     "twitter": "X (Twitter)",
@@ -27,8 +27,8 @@
     "paypal": "PayPal",
     "venmo": "Venmo",
     "pdf": "PDF",
-    "gforms": "Google Forms",
-    "greview": "Google Review",
+    "gforms": "Google Skjemaer",
+    "greview": "Google-anmeldelse",
     "image": "Bilde",
     "linkinbio": "Link i bio",
     "video": "Video",
@@ -64,7 +64,7 @@
     "igUsername": "Instagram-brukernavn",
     "cryptoCoin": "Kryptovaluta",
     "cryptoAddress": "Lommebokadresse",
-    "cryptoAmount": "Amount",
+    "cryptoAmount": "Beløp",
     "appStoreUrl": "App-URL (iOS/Android)",
     "facebookInput": "Facebook-brukernavn",
     "twitterInput": "Twitter-håndtak",
@@ -75,7 +75,7 @@
     "discordInput": "Discord-invitasjonskode",
     "spotifyInput": "Spotify URL / URI",
     "paypalUsername": "PayPal-brukernavn",
-    "paypalAmount": "Amount",
+    "paypalAmount": "Beløp",
     "venmoInput": "Venmo Brukernavn",
     "enter_facebook": "Skriv inn brukernavn (f.eks. markzuckerberg)",
     "enter_twitter": "Skriv inn brukernavn (f.eks. elonmusk)",
@@ -272,8 +272,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR Code Generator - Gratis og tilpasset",
-    "h1": "{{tool}} QR Code",
-    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
+    "h1": "{{verktøy}} QR-kode",
+    "description": "Konverter {{tool}}-dataene dine til en tilpasset QR-kode direkte i nettleseren din. 100 % behandlet offline for absolutt personvern. Gratis, ingen grenser og svært sikker."
   },
   "faqTools": {
     "url": {
@@ -1064,10 +1064,10 @@
       "waitingDesc": "Pek kameraet mot en QR-kode eller last opp et bilde.",
       "errCam": "Kunne ikke starte kameraet. Sørg for at du har gitt kameratillatelser.",
       "errImg": "Finner ingen QR-kode i bildet. Prøv et annet bilde.",
-      "toggleQR": "QR Code",
-      "toggleBarcode": "Barcode",
-      "initCamDescBarcode": "Scan a barcode using your device's camera",
-      "uploadBtnBarcode": "Upload Barcode Image File"
+      "toggleQR": "QR-kode",
+      "toggleBarcode": "Strekkode",
+      "initCamDescBarcode": "Skann en strekkode med enhetens kamera",
+      "uploadBtnBarcode": "Last opp strekkode bildefil"
     },
     "features": {
       "whyTitle": "Hvorfor bruke vår skanner?",

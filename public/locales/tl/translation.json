@@ -64,7 +64,7 @@
     "igUsername": "Instagram Username",
     "cryptoCoin": "Cryptocurrency",
     "cryptoAddress": "Address ng Wallet",
-    "cryptoAmount": "Amount",
+    "cryptoAmount": "Halaga",
     "appStoreUrl": "URL ng App (iOS/Android)",
     "facebookInput": "Username ng Facebook",
     "twitterInput": "Twitter Handle",
@@ -75,7 +75,7 @@
     "discordInput": "Discord Invite Code",
     "spotifyInput": "Spotify URL / URI",
     "paypalUsername": "PayPal Username",
-    "paypalAmount": "Amount",
+    "paypalAmount": "Halaga",
     "venmoInput": "Venmo Username",
     "enter_facebook": "Ilagay ang username (hal., markzuckerberg)",
     "enter_twitter": "Ilagay ang username (hal., elonmusk)",
@@ -273,7 +273,7 @@
   "seoTool": {
     "title": "{{tool}} QR Code Generator - Libre at Custom",
     "h1": "{{tool}} QR Code",
-    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
+    "description": "I-convert ang iyong {{tool}} data sa isang custom na QR code nang direkta sa iyong browser. 100% na naproseso offline para sa ganap na privacy. Libre, walang limitasyon, at lubos na secure."
   },
   "faqTools": {
     "url": {
@@ -745,7 +745,7 @@
     "location": {
       "t1": "Pinpoint GPS Accuracy",
       "d1": "Gabayan ang mga user sa eksaktong mga coordinate ng latitude at longitude, perpekto para sa mga walang marka o malalayong lokasyon.",
-      "t2": "Native Map Integration",
+      "t2": "Pagsasama ng Katutubong Mapa",
       "d2": "Awtomatikong binubuksan ang Google Maps o Apple Maps depende sa ecosystem ng smartphone ng user.",
       "t3": "Wayfinding ng Kaganapan",
       "d3": "Tulungan ang mga dadalo na madaling mahanap ang mga partikular na pasukan, parking lot, o outdoor meeting point."
@@ -1066,8 +1066,8 @@
       "errImg": "Walang nakitang QR code sa larawan. Mangyaring subukan ang isa pang larawan.",
       "toggleQR": "QR Code",
       "toggleBarcode": "Barcode",
-      "initCamDescBarcode": "Scan a barcode using your device's camera",
-      "uploadBtnBarcode": "Upload Barcode Image File"
+      "initCamDescBarcode": "Mag-scan ng barcode gamit ang camera ng iyong device",
+      "uploadBtnBarcode": "Mag-upload ng Barcode Image File"
     },
     "features": {
       "whyTitle": "Bakit gagamitin ang aming Scanner?",
@@ -1237,7 +1237,7 @@
       "desc": "I-scan ang mga barcode online nang libre gamit ang camera ng iyong device o mag-upload ng larawan.Sinusuportahan ang UPC, EAN, Code 128 at higit pa.100% pribado at ligtas."
     },
     "hero": {
-      "badge": "Cyber Scanner V1",
+      "badge": "Cyber ​​Scanner V1",
       "title": "Instant",
       "titleHighlight": "Barcode Scanner",
       "desc": "Mag-scan mula sa iyong webcam o mag-upload ng larawan.100% pribado, walang data na ipinapadala sa aming mga server."
@@ -1270,7 +1270,7 @@
       "whyTitle": "Industrial-Grade Barcode Engine",
       "retailTitle": "Retail at Imbentaryo Handa",
       "retailDesc": "Agad na i-decode ang mga barcode ng produkto tulad ng UPC, EAN, at ISBN nang direkta mula sa iyong browser.Walang nakalaang hardware scanner na kailangan—ang camera ng iyong telepono ay isa na ngayong tool sa imbentaryo.",
-      "fastTitle": "High-Speed Decoding",
+      "fastTitle": "High-Speed ​​Decoding",
       "fastDesc": "Pinapatakbo ng WebAssembly, ang aming engine ay nagpoproseso ng mga frame sa millisecond para sa mabilis na magkakasunod na pag-scan.",
       "privacyTitle": "100% Pribado",
       "privacyDesc": "Ang pagproseso ng barcode ay ganap na nangyayari sa iyong lokal na memorya.Hindi namin ipinapadala ang iyong feed ng camera."

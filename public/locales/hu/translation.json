@@ -20,7 +20,7 @@
     "twitter": "X / Twitter",
     "tiktok": "TikTok",
     "linkedin": "LinkedIn",
-    "telegram": "Telegram",
+    "telegram": "Távirat",
     "snapchat": "Snapchat",
     "discord": "Discord",
     "spotify": "Spotify",
@@ -63,7 +63,7 @@
     "igUsername": "Instagram felhasználónév",
     "cryptoCoin": "Kriptovaluta",
     "cryptoAddress": "Pénztárca címe",
-    "cryptoAmount": "Amount",
+    "cryptoAmount": "Összeg",
     "appStoreUrl": "Alkalmazás URL-je (iOS/Android)",
     "facebookInput": "Facebook felhasználónév",
     "twitterInput": "Twitter Handle",
@@ -74,7 +74,7 @@
     "discordInput": "Discord meghívó kód",
     "spotifyInput": "Spotify URL / URI",
     "paypalUsername": "PayPal felhasználónév",
-    "paypalAmount": "Amount",
+    "paypalAmount": "Összeg",
     "venmoInput": "Venmo felhasználónév",
     "enter_facebook": "Adja meg a felhasználónevet (pl. markzuckerberg)",
     "enter_twitter": "Adja meg a felhasználónevet (pl. elonmusk)",
@@ -271,8 +271,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR-kód generátor - ingyenes és egyedi",
-    "h1": "{{tool}} QR Code",
-    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
+    "h1": "{{eszköz}} QR-kód",
+    "description": "Alakítsa át {{tool}} adatait egyéni QR-kóddá közvetlenül a böngészőjében. 100%-ban offline feldolgozva az abszolút adatvédelem érdekében. Ingyenes, korlátok nélkül és rendkívül biztonságos."
   },
   "faqTools": {
     "url": {
@@ -975,7 +975,7 @@
         "d1": "Az ügyféloldali generálás azt jelenti, hogy az adatok soha nem érintik a szervereinket.",
         "v2": "Ingyenes Forever",
         "d2": "Az alapvető funkciók mindig ingyenesek maradnak, rejtett korlátok nélkül.",
-        "v3": "Global Reach",
+        "v3": "Globális elérés",
         "d3": "30 nyelvre lokalizálva, hogy valóban nemzetközi közönséget szolgáljon ki."
       }
     },
@@ -1188,14 +1188,14 @@
     "p1_5": "Alkalmazásunk helyileg fut az eszközén a linkek biztonságának megőrzése érdekében. Azáltal, hogy a feladatokat közvetlenül a webböngészőjében futtatja, mérnöki elrendezésünk biztosítja, hogy privát üzleti kapcsolatai soha ne keresztezzék a nyilvános internetes vonalakat. Ennek eredményeként ez eltávolítja a felhőalapú adatbázis-szivárgások kockázatát, és leállítja a harmadik féltől származó nyomkövetőket.",
     "p1_6": "A felhasználói adatok védelme mellett a helyi böngészőfeladatok sokkal gyorsabban futnak, mint a régebbi távoli felhőszerverek. Amikor feltölt egy vállalati logót vagy kiválaszt egy egyedi színtémát, eszközünk azonnal frissíti a tervezési mátrixot a képernyőn. Végső soron helyi böngészőmotorunk csúcssebességet, teljes adatvédelmet és teljes megbízhatóságot biztosít minden egyes nap díjak nélkül.",
     "quote1": "\"Azáltal, hogy a feladatokat helyileg futtatják a telefonon, a webalkalmazások megállítják a felhő szivárgását. Ez az út nagyon jól illeszkedik a modern, nulla bizalomra vonatkozó biztonsági szabályokhoz.\"",
-    "h2_2": "What are the Key Definitions?",
+    "h2_2": "Mik a legfontosabb definíciók?",
     "p2_1": "It is very helpful to learn the main tech words. Mi az a mátrix kód? A mátrix vonalkód egy lapos négyzet szimbólum, amely webhivatkozásokat tárol a gyors kamerakereséshez. Ezenkívül a kliensoldali feldolgozás egy olyan biztonságos módszerre utal, ahol a szoftverfeladatok teljes mértékben a webböngészőn belül futnak.",
     "p2_2": "Nincsenek távoli szerverhivatkozások vagy felhőalapú adatbázis-hívások. A modern webes szabványok szerint a helyi memóriafeladatok leállítják a nem kívánt hálózati követést. Következésképpen ezen egyértelmű kifejezések ismerete segít a cégtulajdonosoknak okos döntéseket hozni napi marketingkampányaikhoz.",
-    "h3_2": "Technical terms explained",
+    "h3_2": "A technikai kifejezések magyarázata",
     "p2_3": "Ez az oka annak, hogy a technológiai kifejezések tanulása segít megvédeni a digitális értékesítést. A hibajavítási szint azt jelenti, hogy a biztonsági mentés védi a kódrácsokat, lehetővé téve a vonalkód megfelelő beolvasását, még akkor is, ha logó fedi annak egy részét. Ezenkívül a statikus kód egy állandó vonalkód, amely a webes hivatkozást a rácsába helyezi, így az örökké működik.",
     "p2_4": "A vektorgrafikát olyan méretezhető képformátumként írják le, amely élesen nyomtat nagy szalaghirdetésekre. Ezenkívül a statikus és dinamikus kódok közötti különbség megértése megmenti a vállalkozásokat a számlázási csapdáktól. Mivel a statikus hivatkozások a nyomtatott rácson belül élnek, soha nincs szükségük útválasztó szerverre a látogatók átirányításához.",
     "fig1": "1. ábra: A helyi böngészőmotor azonnal feldolgozza a vonalkódokat távoli felhőkiszolgálók nélkül.",
-    "h2_3": "How does it compare to competitors?",
+    "h2_3": "Hogyan viszonyul a versenytársakhoz?",
     "p3_1": "Kedvezően hasonlítják össze őket, mivel gyorsak, biztonságosak és ingyenesek. A fejlesztői sebességtesztek szerint a helyi böngészőfeladatok tizenkét ezredmásodperc alatt futnak le. A régebbi felhőeszközök azonban rövid próbaidőszakkal és rejtett költségekkel csábítják a felhasználókat.",
     "p3_2": "Például a fizetős versenytársak tizennégy napos próbaverziót kínálnak. A próbaidőszak végén kikapcsolják a nyomtatott kódokat, ami tönkreteszi a nyomtatott marketing szórólapjait. Ezért eszközünk ingyenes kódokat biztosít, amelyek örökké díjak nélkül működnek, gyorsaságban és biztonságban felülmúlva a régebbi felhőeszközöket.",
     "h3_3": "Teljesítmény szerinti bontás",
@@ -1211,7 +1211,7 @@
     "h2_5": "Ki használja ezt az eszközt?",
     "p5_1": "Ki épít itt kódokat? Sok különböző ember. Az étteremtulajdonosok eszközünket használják biztonságos, érintésmentes digitális menük elkészítéséhez. They place the printed codes on dining tables. Amikor a vendégek beolvassák az asztal kódját, saját mobil képernyőjükön olvashatják a napi ételmenüt.",
     "p5_2": "Ezenkívül az ingatlanügynökök eszközünket használják házfotók megosztására. They print a large code on the front yard sign. Amikor az emberek elhaladnak a ház mellett, átnézik a táblát. A link azonnal megmutatja nekik a konyhát és a hálószobákat bemutató videót. Ez gyorsan felkelti a vásárlói érdeklődést.",
-    "h3_5": "Use cases for small teams",
+    "h3_5": "Használati esetek kis csapatokhoz",
     "p5_3": "A tanárok az osztálytermi órákhoz is használják eszközünket. Webhivatkozásokat készítenek tudományos játékokhoz és olvasási feladatokhoz. They stick the printed squares on student desks. The students scan the codes with school tablets. This makes learning fun and very fast.",
     "p5_4": "Ezen túlmenően a rendezvény csapatai a digitális jegykapukhoz használják oldalunkat. Névjegykártyákat és térképhivatkozásokat generálnak zenei műsorokhoz. Kinyomtatják a kódokat VIP-bérletekre és színpadi plakátokra. Ez segít több ezer vendégnek megtalálni a helyet, és segítségkérés nélkül elolvasni az előadások időpontját."
   },

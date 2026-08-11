@@ -2,7 +2,7 @@
   "appTitle": "Zdarma Online Generátor QR Kódů - CreateMy-QR (No Signup)",
   "tagline": "Vytvářejte QR Kódy s Logem a Barvou - Bez Registrace, Neomezeně. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
   "types": {
-    "url": "URL / Link",
+    "url": "URL / odkaz",
     "wifi": "Wi-Fi",
     "vcard": "vCard",
     "text": "Text",
@@ -14,7 +14,7 @@
     "whatsapp": "WhatsApp",
     "youtube": "YouTube",
     "instagram": "Instagram",
-    "crypto": "Crypto",
+    "crypto": "Krypto",
     "appstore": "App Store",
     "facebook": "Facebook",
     "twitter": "X (Twitter)",
@@ -22,13 +22,13 @@
     "linkedin": "LinkedIn",
     "telegram": "Telegram",
     "snapchat": "Snapchat",
-    "discord": "Discord",
+    "discord": "Rozpor",
     "spotify": "Spotify",
     "paypal": "PayPal",
     "venmo": "Venmo",
     "pdf": "PDF",
-    "gforms": "Google Forms",
-    "greview": "Google Review",
+    "gforms": "Formuláře Google",
+    "greview": "Recenze Google",
     "image": "Galerie obrázků",
     "linkinbio": "Odkaz v Biu",
     "video": "Video",
@@ -64,7 +64,7 @@
     "igUsername": "Uživatelské jméno na Instagramu",
     "cryptoCoin": "Kryptoměna",
     "cryptoAddress": "Adresa peněženky",
-    "cryptoAmount": "Amount",
+    "cryptoAmount": "Částka",
     "appStoreUrl": "Adresa URL aplikace (iOS/Android)",
     "facebookInput": "Uživatelské jméno na Facebooku",
     "twitterInput": "Twitter Handle",
@@ -75,7 +75,7 @@
     "discordInput": "Discord zvací kód",
     "spotifyInput": "Spotify URL / URI",
     "paypalUsername": "Uživatelské jméno PayPal",
-    "paypalAmount": "Amount",
+    "paypalAmount": "Částka",
     "venmoInput": "Venmo Uživatelské jméno",
     "enter_facebook": "Zadejte uživatelské jméno (např. markzuckerberg)",
     "enter_twitter": "Zadejte uživatelské jméno (např. elonmusk)",
@@ -272,8 +272,8 @@
   },
   "seoTool": {
     "title": "{{tool}} generátor QR kódu – zdarma a na míru",
-    "h1": "{{tool}} QR Code",
-    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
+    "h1": "{{tool}} QR kód",
+    "description": "Převeďte svá data {{tool}} na vlastní QR kód přímo ve vašem prohlížeči. 100% zpracováno offline pro absolutní soukromí. Zdarma, bez omezení a vysoce bezpečné."
   },
   "faqTools": {
     "url": {
@@ -1064,10 +1064,10 @@
       "waitingDesc": "Namiřte fotoaparát na QR kód nebo nahrajte obrázek.",
       "errCam": "Fotoaparát se nepodařilo spustit. Ujistěte se, že jste udělili oprávnění ke kameře.",
       "errImg": "Na obrázku nebyl nalezen žádný QR kód. Zkuste prosím jiný obrázek.",
-      "toggleQR": "QR Code",
-      "toggleBarcode": "Barcode",
-      "initCamDescBarcode": "Scan a barcode using your device's camera",
-      "uploadBtnBarcode": "Upload Barcode Image File"
+      "toggleQR": "QR kód",
+      "toggleBarcode": "Čárový kód",
+      "initCamDescBarcode": "Naskenujte čárový kód pomocí fotoaparátu vašeho zařízení",
+      "uploadBtnBarcode": "Nahrát soubor obrázku s čárovým kódem"
     },
     "features": {
       "whyTitle": "Proč používat náš skener?",
@@ -1237,7 +1237,7 @@
       "desc": "Naskenujte čárové kódy online zdarma pomocí fotoaparátu vašeho zařízení nebo nahrajte obrázek.Podporuje UPC, EAN, Code 128 a další.100% soukromé a bezpečné."
     },
     "hero": {
-      "badge": "Cyber Scanner V1",
+      "badge": "Cyber ​​Scanner V1",
       "title": "Okamžitě",
       "titleHighlight": "Skener čárových kódů",
       "desc": "Naskenujte z webové kamery nebo nahrajte obrázek.100% soukromé, na naše servery se neposílají žádná data."
@@ -1538,7 +1538,7 @@
       "popularEvents": "Oblíbené nástroje:",
       "toolEvent": "QR kód události",
       "toolVcard": "vCard / Kontaktní QR",
-      "toolLocation": "Google Maps QR",
+      "toolLocation": "QR mapy Google",
       "popularResto": "Oblíbené nástroje:",
       "toolWifi": "Wi-Fi QR kód",
       "toolPdf": "Nabídka PDF QR",

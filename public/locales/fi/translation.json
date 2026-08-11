@@ -2,11 +2,11 @@
   "appTitle": "Ilmainen QR-koodigeneraattori Netissä - CreateMy-QR (No Signup)",
   "tagline": "Luo QR-koodeja Logolla ja Värillä - Ei Rekisteröintiä, Rajaton. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
   "types": {
-    "url": "URL / Link",
+    "url": "URL / linkki",
     "wifi": "Wi-Fi",
     "vcard": "vCard",
     "text": "Teksti",
-    "email": "Email",
+    "email": "Sähköposti",
     "phone": "Puhelin",
     "sms": "SMS",
     "location": "Sijainti",
@@ -14,7 +14,7 @@
     "whatsapp": "WhatsApp",
     "youtube": "YouTube",
     "instagram": "Instagram",
-    "crypto": "Crypto",
+    "crypto": "Krypto",
     "appstore": "App Store",
     "facebook": "Facebook",
     "twitter": "X (Twitter)",
@@ -22,13 +22,13 @@
     "linkedin": "LinkedIn",
     "telegram": "Telegram",
     "snapchat": "Snapchat",
-    "discord": "Discord",
+    "discord": "Erimielisyys",
     "spotify": "Spotify",
     "paypal": "PayPal",
     "venmo": "Venmo",
     "pdf": "PDF",
     "gforms": "Google Forms",
-    "greview": "Google Review",
+    "greview": "Google-arvostelu",
     "image": "Kuva",
     "linkinbio": "Linkki Biossa",
     "video": "Video",
@@ -64,7 +64,7 @@
     "igUsername": "Instagram-käyttäjänimi",
     "cryptoCoin": "Kryptovaluutta",
     "cryptoAddress": "Lompakon osoite",
-    "cryptoAmount": "Amount",
+    "cryptoAmount": "Määrä",
     "appStoreUrl": "Sovelluksen URL-osoite (iOS/Android)",
     "facebookInput": "Facebook-käyttäjänimi",
     "twitterInput": "Twitter-kahva",
@@ -75,7 +75,7 @@
     "discordInput": "Discord-kutsukoodi",
     "spotifyInput": "Spotify URL / URI",
     "paypalUsername": "PayPal-käyttäjänimi",
-    "paypalAmount": "Amount",
+    "paypalAmount": "Määrä",
     "venmoInput": "Venmo käyttäjätunnus",
     "enter_facebook": "Anna käyttäjänimi (esim. markzuckerberg)",
     "enter_twitter": "Anna käyttäjänimi (esim. elonmusk)",
@@ -92,11 +92,11 @@
     "enter_gforms": "https://docs.google.com/forms/...",
     "greviewInput": "Googlen arvostelulinkki",
     "enter_greview": "https://g.page/r/...",
-    "imageInput": "Image URL",
+    "imageInput": "Kuvan URL-osoite",
     "enter_image": "https://.../image.jpg",
     "linkinbioInput": "Linkki bioprofiilissa",
     "enter_linkinbio": "https://linktr.ee/...",
-    "videoInput": "Video URL",
+    "videoInput": "Videon URL-osoite",
     "enter_video": "https://vimeo.com/...",
     "audioInput": "Äänen/podcastin URL-osoite",
     "enter_audio": "https://soundcloud.com/...",
@@ -272,8 +272,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR-koodigeneraattori - ilmainen ja räätälöity",
-    "h1": "{{tool}} QR Code",
-    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
+    "h1": "{{työkalu}} QR-koodi",
+    "description": "Muunna {{tool}}-tietosi mukautetuksi QR-koodiksi suoraan selaimessasi. 100 % käsitelty offline-tilassa täydellisen yksityisyyden takaamiseksi. Ilmainen, ei rajoituksia ja erittäin turvallinen."
   },
   "faqTools": {
     "url": {
@@ -1064,10 +1064,10 @@
       "waitingDesc": "Osoita kamerallasi QR-koodia tai lataa kuva.",
       "errCam": "Kameran käynnistys epäonnistui. Varmista, että olet myöntänyt kameran käyttöoikeudet.",
       "errImg": "Kuvasta ei löytynyt QR-koodia. Kokeile toista kuvaa.",
-      "toggleQR": "QR Code",
-      "toggleBarcode": "Barcode",
-      "initCamDescBarcode": "Scan a barcode using your device's camera",
-      "uploadBtnBarcode": "Upload Barcode Image File"
+      "toggleQR": "QR-koodi",
+      "toggleBarcode": "Viivakoodi",
+      "initCamDescBarcode": "Skannaa viivakoodi laitteesi kameralla",
+      "uploadBtnBarcode": "Lataa viivakoodikuvatiedosto"
     },
     "features": {
       "whyTitle": "Miksi käyttää skanneria?",
@@ -1237,7 +1237,7 @@
       "desc": "Skannaa viivakoodeja verkossa ilmaiseksi laitteesi kameralla tai lataa kuva.Tukee UPC-, EAN-, Code 128- ja muita koodeja.100% yksityinen ja turvallinen."
     },
     "hero": {
-      "badge": "Cyber Scanner V1",
+      "badge": "Cyber ​​Scanner V1",
       "title": "Välitön",
       "titleHighlight": "Viivakoodinlukija",
       "desc": "Skannaa verkkokamerasta tai lähetä kuva.100 % yksityistä, nolla dataa lähetetään palvelimillemme."

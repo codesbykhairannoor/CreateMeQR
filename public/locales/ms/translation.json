@@ -2,11 +2,11 @@
   "appTitle": "Penjana Kod QR Percuma Dalam Talian - CreateMy-QR (No Signup)",
   "tagline": "Cipta Kod QR dengan Logo & Warna - Tanpa Pendaftaran, Tanpa Had. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
   "types": {
-    "url": "URL / Link",
+    "url": "URL / Pautan",
     "wifi": "Wi-Fi",
     "vcard": "vCard",
     "text": "Teks",
-    "email": "Email",
+    "email": "E-mel",
     "phone": "Telefon",
     "sms": "SMS",
     "location": "Lokasi",
@@ -14,7 +14,7 @@
     "whatsapp": "WhatsApp",
     "youtube": "YouTube",
     "instagram": "Instagram",
-    "crypto": "Crypto",
+    "crypto": "Kripto",
     "appstore": "App Store",
     "facebook": "Facebook",
     "twitter": "X (Twitter)",
@@ -22,13 +22,13 @@
     "linkedin": "LinkedIn",
     "telegram": "Telegram",
     "snapchat": "Snapchat",
-    "discord": "Discord",
+    "discord": "Perselisihan",
     "spotify": "Spotify",
     "paypal": "PayPal",
     "venmo": "Venmo",
     "pdf": "PDF",
-    "gforms": "Google Forms",
-    "greview": "Google Review",
+    "gforms": "Borang Google",
+    "greview": "Ulasan Google",
     "image": "Imej",
     "linkinbio": "Pautan di Bio",
     "video": "Video",
@@ -64,7 +64,7 @@
     "igUsername": "Nama Pengguna Instagram",
     "cryptoCoin": "Mata wang kripto",
     "cryptoAddress": "Alamat Dompet",
-    "cryptoAmount": "Amount",
+    "cryptoAmount": "Jumlah",
     "appStoreUrl": "URL apl (iOS/Android)",
     "facebookInput": "Nama Pengguna Facebook",
     "twitterInput": "Pengendali Twitter",
@@ -75,7 +75,7 @@
     "discordInput": "Kod Jemputan Perselisihan",
     "spotifyInput": "URL / URI Spotify",
     "paypalUsername": "Nama Pengguna PayPal",
-    "paypalAmount": "Amount",
+    "paypalAmount": "Jumlah",
     "venmoInput": "Nama Pengguna Venmo",
     "enter_facebook": "Masukkan nama pengguna (cth., markzuckerberg)",
     "enter_twitter": "Masukkan nama pengguna (cth., elonmusk)",
@@ -272,8 +272,8 @@
   },
   "seoTool": {
     "title": "Penjana Kod QR {{tool}} - Percuma & Tersuai",
-    "h1": "{{tool}} QR Code",
-    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
+    "h1": "{{alat}} Kod QR",
+    "description": "Tukar data {{tool}} anda kepada kod QR tersuai terus dalam penyemak imbas anda. 100% diproses di luar talian untuk privasi mutlak. Percuma, tiada had dan sangat selamat."
   },
   "faqTools": {
     "url": {
@@ -1064,10 +1064,10 @@
       "waitingDesc": "Halakan kamera anda pada kod QR atau muat naik imej.",
       "errCam": "Gagal memulakan kamera. Sila pastikan anda telah memberikan kebenaran kamera.",
       "errImg": "Tiada kod QR ditemui dalam imej. Sila cuba imej lain.",
-      "toggleQR": "QR Code",
-      "toggleBarcode": "Barcode",
-      "initCamDescBarcode": "Scan a barcode using your device's camera",
-      "uploadBtnBarcode": "Upload Barcode Image File"
+      "toggleQR": "Kod QR",
+      "toggleBarcode": "Kod bar",
+      "initCamDescBarcode": "Imbas kod bar menggunakan kamera peranti anda",
+      "uploadBtnBarcode": "Muat Naik Fail Imej Kod Bar"
     },
     "features": {
       "whyTitle": "Mengapa menggunakan Pengimbas kami?",

@@ -2,11 +2,11 @@
   "appTitle": "Безкоштовний Генератор QR-кодів Онлайн - CreateMy-QR (No Signup)",
   "tagline": "Створюйте QR-коди з Логотипом і Кольором - Без Реєстрації, Безлімітно. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
   "types": {
-    "url": "URL / Link",
+    "url": "URL / Посилання",
     "wifi": "Wi-Fi",
     "vcard": "vCard",
     "text": "Текст",
-    "email": "Email",
+    "email": "Електронна пошта",
     "phone": "Телефон",
     "sms": "SMS",
     "location": "Розташування",
@@ -14,21 +14,21 @@
     "whatsapp": "WhatsApp",
     "youtube": "YouTube",
     "instagram": "Instagram",
-    "crypto": "Crypto",
+    "crypto": "Крипто",
     "appstore": "App Store",
     "facebook": "Facebook",
     "twitter": "X (Твіттер)",
     "tiktok": "TikTok",
     "linkedin": "LinkedIn",
-    "telegram": "Telegram",
+    "telegram": "Телеграма",
     "snapchat": "Snapchat",
-    "discord": "Discord",
+    "discord": "Розлад",
     "spotify": "Spotify",
     "paypal": "PayPal",
-    "venmo": "Venmo",
+    "venmo": "Венмо",
     "pdf": "PDF",
-    "gforms": "Google Forms",
-    "greview": "Google Review",
+    "gforms": "Форми Google",
+    "greview": "Огляд Google",
     "image": "Зображення",
     "linkinbio": "Посилання в біо",
     "video": "Відео",
@@ -64,7 +64,7 @@
     "igUsername": "Ім'я користувача Instagram",
     "cryptoCoin": "Криптовалюта",
     "cryptoAddress": "Адреса гаманця",
-    "cryptoAmount": "Amount",
+    "cryptoAmount": "Сума",
     "appStoreUrl": "URL-адреса програми (iOS/Android)",
     "facebookInput": "Ім'я користувача Facebook",
     "twitterInput": "Twitter Handle",
@@ -75,7 +75,7 @@
     "discordInput": "Код запрошення Discord",
     "spotifyInput": "Spotify URL/URI",
     "paypalUsername": "Ім'я користувача PayPal",
-    "paypalAmount": "Amount",
+    "paypalAmount": "Сума",
     "venmoInput": "Ім'я користувача Venmo",
     "enter_facebook": "Введіть ім’я користувача (наприклад, markzuckerberg)",
     "enter_twitter": "Введіть ім’я користувача (наприклад, elonmusk)",
@@ -272,8 +272,8 @@
   },
   "seoTool": {
     "title": "Генератор QR-коду {{tool}} – безкоштовний і користувацький",
-    "h1": "{{tool}} QR Code",
-    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
+    "h1": "{{інструмент}} QR-код",
+    "description": "Перетворіть свої дані {{tool}} на власний QR-код безпосередньо у своєму браузері. 100% обробка офлайн для повної конфіденційності. Безкоштовно, без обмежень і дуже безпечно."
   },
   "faqTools": {
     "url": {
@@ -1064,10 +1064,10 @@
       "waitingDesc": "Наведіть камеру на QR-код або завантажте зображення.",
       "errCam": "Не вдалося запустити камеру. Будь ласка, переконайтеся, що ви надали дозвіл камері.",
       "errImg": "На зображенні не знайдено QR-коду. Спробуйте інше зображення.",
-      "toggleQR": "QR Code",
-      "toggleBarcode": "Barcode",
-      "initCamDescBarcode": "Scan a barcode using your device's camera",
-      "uploadBtnBarcode": "Upload Barcode Image File"
+      "toggleQR": "QR-код",
+      "toggleBarcode": "Штрих-код",
+      "initCamDescBarcode": "Відскануйте штрих-код за допомогою камери вашого пристрою",
+      "uploadBtnBarcode": "Завантажте файл зображення штрих-коду"
     },
     "features": {
       "whyTitle": "Навіщо використовувати наш сканер?",
@@ -1237,7 +1237,7 @@
       "desc": "Скануйте штрих-коди онлайн безкоштовно за допомогою камери свого пристрою або завантажте зображення.Підтримує UPC, EAN, Code 128 тощо.100% конфіденційність і безпека."
     },
     "hero": {
-      "badge": "Cyber Scanner V1",
+      "badge": "Cyber ​​Scanner V1",
       "title": "Миттєво",
       "titleHighlight": "Сканер штрих-кодів",
       "desc": "Скануйте з веб-камери або завантажте зображення.100% конфіденційність, нульові дані надсилаються на наші сервери."

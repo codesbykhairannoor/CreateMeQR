@@ -6,7 +6,7 @@
     "wifi": "Wi-Fi",
     "vcard": "vCard",
     "text": "Tekst",
-    "email": "Email",
+    "email": "E-mail",
     "phone": "Telefon",
     "sms": "SMS",
     "location": "Beliggenhed",
@@ -14,7 +14,7 @@
     "whatsapp": "WhatsApp",
     "youtube": "YouTube",
     "instagram": "Instagram",
-    "crypto": "Crypto",
+    "crypto": "Krypto",
     "appstore": "App Store",
     "facebook": "Facebook",
     "twitter": "X (Twitter)",
@@ -28,7 +28,7 @@
     "venmo": "Venmo",
     "pdf": "PDF",
     "gforms": "Google Forms",
-    "greview": "Google Review",
+    "greview": "Google anmeldelse",
     "image": "Billede",
     "linkinbio": "Link i bio",
     "video": "Video",
@@ -64,8 +64,8 @@
     "igUsername": "Instagram brugernavn",
     "cryptoCoin": "Kryptovaluta",
     "cryptoAddress": "Tegnebogsadresse",
-    "cryptoAmount": "Amount",
-    "appStoreUrl": "App URL (iOS/Android)",
+    "cryptoAmount": "Beløb",
+    "appStoreUrl": "App-URL (iOS/Android)",
     "facebookInput": "Facebook Brugernavn",
     "twitterInput": "Twitter-håndtag",
     "tiktokInput": "TikTok Brugernavn",
@@ -75,7 +75,7 @@
     "discordInput": "Discord invitationskode",
     "spotifyInput": "Spotify URL / URI",
     "paypalUsername": "PayPal-brugernavn",
-    "paypalAmount": "Amount",
+    "paypalAmount": "Beløb",
     "venmoInput": "Venmo Brugernavn",
     "enter_facebook": "Indtast brugernavn (f.eks. markzuckerberg)",
     "enter_twitter": "Indtast brugernavn (f.eks. elonmusk)",
@@ -272,8 +272,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR Code Generator - Gratis og brugerdefineret",
-    "h1": "{{tool}} QR Code",
-    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
+    "h1": "{{værktøj}} QR-kode",
+    "description": "Konverter dine {{værktøj}}-data til en tilpasset QR-kode direkte i din browser. 100 % behandlet offline for absolut privatliv. Gratis, ingen grænser og meget sikker."
   },
   "faqTools": {
     "url": {
@@ -988,7 +988,7 @@
       "sections": {
         "s1": "Dataindsamling",
         "d1": "Vi indsamler eller opbevarer ikke de data, du indtaster i QR-kodegeneratoren. Al generation sker lokalt på din enhed.",
-        "s2": "Cookies & Analytics",
+        "s2": "Cookies og analyse",
         "d2": "Vi bruger minimale analyser til at forstå aggregerede trafikmønstre. Ingen personligt identificerbare oplysninger spores.",
         "s3": "Tredjepartstjenester",
         "d3": "Vi sælger, udlejer eller deler ikke dine data med nogen tredjepart."
@@ -1064,10 +1064,10 @@
       "waitingDesc": "Ret dit kamera mod en QR-kode, eller upload et billede.",
       "errCam": "Kameraet kunne ikke startes. Sørg for, at du har givet kameratilladelser.",
       "errImg": "Ingen QR-kode fundet på billedet. Prøv venligst et andet billede.",
-      "toggleQR": "QR Code",
-      "toggleBarcode": "Barcode",
-      "initCamDescBarcode": "Scan a barcode using your device's camera",
-      "uploadBtnBarcode": "Upload Barcode Image File"
+      "toggleQR": "QR-kode",
+      "toggleBarcode": "Stregkode",
+      "initCamDescBarcode": "Scan en stregkode ved hjælp af din enheds kamera",
+      "uploadBtnBarcode": "Upload stregkode billedfil"
     },
     "features": {
       "whyTitle": "Hvorfor bruge vores scanner?",
