@@ -1388,7 +1388,16 @@
       "expertQuote": "Doğrulanmamış bulut API'leri aracılığıyla veri oluşturmak büyük bir siber güvenlik açığıdır. CreateMy-QR gibi istemci tarafı işleme araçları, gizli bağlantıların yönetimine uygun tek sıfır güven mimarisini temsil eder.",
       "expertRole": "Baş Siber Güvenlik Araştırmacısı",
       "ctaTitle": "Bugün Geçiş Yapın.",
-      "ctaDesc": "Hız, gizlilik ve maliyetten ödün vermeyi bırakın. Halihazırda en hızlı çevrimdışı QR araç setine geçiş yapmış olan binlerce profesyonele katılın."
+      "ctaDesc": "Hız, gizlilik ve maliyetten ödün vermeyi bırakın. Halihazırda en hızlı çevrimdışı QR araç setine geçiş yapmış olan binlerce profesyonele katılın.",
+      "tr3val1": "ile yapıldı Katı Günlük Limitler",
+      "tr3val2": "Sınırsız",
+      "tr5val1": "Ücretsiz Katman + 20 ABD Doları/ay",
+      "tr5val2": "Sonsuza Kadar %100 Ücretsiz",
+      "tr6val1": "Gerekli",
+      "tr6val2": "Hiçbir Zaman Gerekli Değil",
+      "tr7val1": "Ağa Bağlı",
+      "tr7val2": "Anında (Yerel CPU)",
+      "expertAuthor": "Bağımsız Güvenlik Denetimi"
     },
     "languages": {
       "seoTitle": "Desteklenen Diller",

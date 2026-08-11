@@ -1388,7 +1388,16 @@
       "expertQuote": "A geração de dados por meio de APIs de nuvem não verificadas é uma grande vulnerabilidade de segurança cibernética. Ferramentas de processamento do lado do cliente, como CreateMy-QR, representam a única arquitetura de confiança zero adequada para lidar com links confidenciais.",
       "expertRole": "Pesquisador líder em segurança cibernética",
       "ctaTitle": "Mude hoje.",
-      "ctaDesc": "Pare de comprometer a velocidade, a privacidade e os custos. Junte-se a milhares de profissionais que já migraram para o kit de ferramentas QR off-line mais rápido."
+      "ctaDesc": "Pare de comprometer a velocidade, a privacidade e os custos. Junte-se a milhares de profissionais que já migraram para o kit de ferramentas QR off-line mais rápido.",
+      "tr3val1": "Limites diários rigorosos",
+      "tr3val2": "Ilimitado",
+      "tr5val1": "Nível gratuito + US$ 20/mês",
+      "tr5val2": "100% grátis para sempre",
+      "tr6val1": "Obrigatório",
+      "tr6val2": "Nunca é obrigatório",
+      "tr7val1": "Dependente da Rede",
+      "tr7val2": "Instantâneo (CPU Local)",
+      "expertAuthor": "Auditoria de segurança independente"
     },
     "languages": {
       "seoTitle": "Idiomas Suportados",
@@ -1426,7 +1435,7 @@
       "heroBadge": "Radicalmente Grátis",
       "compTitle": "Ferramentas tradicionais de nuvem",
       "compCost": "US$ 20",
-      "compPeriod": "/mo",
+      "compPeriod": "/ mês",
       "comp1": "Dados enviados para seus servidores",
       "comp2": "Limites de tamanho de arquivo no nível gratuito",
       "comp3": "Requer registro por e-mail",

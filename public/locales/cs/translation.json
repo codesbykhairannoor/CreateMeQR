@@ -1388,7 +1388,16 @@
       "expertQuote": "Generování dat prostřednictvím neověřených cloudových API je hlavní slabinou kybernetické bezpečnosti. Nástroje pro zpracování na straně klienta, jako je CreateMy-QR, představují jedinou architekturu s nulovou důvěrou vhodnou pro zpracování důvěrných odkazů.",
       "expertRole": "Vedoucí výzkumník v oblasti kybernetické bezpečnosti",
       "ctaTitle": "Přepnout ještě dnes.",
-      "ctaDesc": "Přestaňte dělat kompromisy v rychlosti, soukromí a ceně. Připojte se k tisícům profesionálů, kteří již přešli na nejrychlejší offline QR sadu nástrojů."
+      "ctaDesc": "Přestaňte dělat kompromisy v rychlosti, soukromí a ceně. Připojte se k tisícům profesionálů, kteří již přešli na nejrychlejší offline QR sadu nástrojů.",
+      "tr3val1": "Přísné denní limity",
+      "tr3val2": "Neomezené",
+      "tr5val1": "Bezplatná úroveň + 20 $/měsíc",
+      "tr5val2": "100% zdarma navždy",
+      "tr6val1": "Povinné",
+      "tr6val2": "Nikdy nevyžadováno",
+      "tr7val1": "Závisí na síti",
+      "tr7val2": "Okamžité (místní CPU)",
+      "expertAuthor": "Nezávislý bezpečnostní audit"
     },
     "languages": {
       "seoTitle": "Podporované jazyky",
@@ -1532,7 +1541,7 @@
       "toolLocation": "Google Maps QR",
       "popularResto": "Oblíbené nástroje:",
       "toolWifi": "Wi-Fi QR kód",
-      "toolPdf": "PDF Menu QR",
+      "toolPdf": "Nabídka PDF QR",
       "toolReview": "QR recenze Google",
       "ctaTitle": "Najděte si svůj vlastní případ použití",
       "ctaDesc": "Bez ohledu na vaše odvětví je CreateMy-QR nejbezpečnější a nejrychlejší způsob generování kódů. Vyzkoušejte naši úplnou sadu 20+ nástrojů ještě dnes."

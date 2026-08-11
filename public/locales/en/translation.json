@@ -1370,7 +1370,16 @@
       "expertQuote": "Generating data via unverified cloud APIs is a major cybersecurity vulnerability. Client-side processing tools like CreateMy-QR represent the only zero-trust architecture suitable for handling confidential links.",
       "expertRole": "Lead Cybersecurity Researcher",
       "ctaTitle": "Switch Today.",
-      "ctaDesc": "Stop compromising on speed, privacy, and cost. Join thousands of professionals who have already switched to the fastest offline QR toolkit."
+      "ctaDesc": "Stop compromising on speed, privacy, and cost. Join thousands of professionals who have already switched to the fastest offline QR toolkit.",
+      "tr3val1": "Strict Daily Limits",
+      "tr3val2": "Unlimited",
+      "tr5val1": "Free Tier + $20/mo",
+      "tr5val2": "100% Free Forever",
+      "tr6val1": "Required",
+      "tr6val2": "Never Required",
+      "tr7val1": "Dependent on Network",
+      "tr7val2": "Instant (Local CPU)",
+      "expertAuthor": "Independent Security Audit"
     },
     "languages": {
       "seoTitle": "Supported Languages",

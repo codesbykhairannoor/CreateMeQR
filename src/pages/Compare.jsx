@@ -54,11 +54,11 @@ export default function Compare() {
                     {[
                       [t('static.compare.tr1', 'Server Upload Required'), <Check size={24} className="text-slate-600 mx-auto" />, <X size={24} className="text-emerald-400 mx-auto" />],
                       [t('static.compare.tr2', 'Data Privacy Guarantee'), <X size={24} className="text-slate-600 mx-auto" />, <Check size={24} className="text-emerald-400 mx-auto" />],
-                      [t('static.compare.tr3', 'Generation Limits'), <span className="text-slate-400">Strict Daily Limits</span>, <span className="text-blue-400 font-bold">Unlimited</span>],
+                      [t('static.compare.tr3', 'Generation Limits'), <span className="text-slate-400">{t('static.compare.tr3val1', 'Strict Daily Limits')}</span>, <span className="text-blue-400 font-bold">{t('static.compare.tr3val2', 'Unlimited')}</span>],
                       [t('static.compare.tr4', 'Offline Capability'), <X size={24} className="text-slate-600 mx-auto" />, <Check size={24} className="text-emerald-400 mx-auto" />],
-                      [t('static.compare.tr5', 'Cost'), <span className="text-slate-400">Free Tier + $20/mo</span>, <span className="text-blue-400 font-bold">100% Free Forever</span>],
-                      [t('static.compare.tr6', 'Account Registration'), <span className="text-slate-400">Required</span>, <span className="text-blue-400 font-bold">Never Required</span>],
-                      [t('static.compare.tr7', 'Processing Speed'), <span className="text-slate-400">Dependent on Network</span>, <span className="text-blue-400 font-bold">Instant (Local CPU)</span>]
+                      [t('static.compare.tr5', 'Cost'), <span className="text-slate-400">{t('static.compare.tr5val1', 'Free Tier + $20/mo')}</span>, <span className="text-blue-400 font-bold">{t('static.compare.tr5val2', '100% Free Forever')}</span>],
+                      [t('static.compare.tr6', 'Account Registration'), <span className="text-slate-400">{t('static.compare.tr6val1', 'Required')}</span>, <span className="text-blue-400 font-bold">{t('static.compare.tr6val2', 'Never Required')}</span>],
+                      [t('static.compare.tr7', 'Processing Speed'), <span className="text-slate-400">{t('static.compare.tr7val1', 'Dependent on Network')}</span>, <span className="text-blue-400 font-bold">{t('static.compare.tr7val2', 'Instant (Local CPU)')}</span>]
                     ].map((row, i) => (
                       <tr key={i} className="hover:bg-white/[0.02] transition-colors">
                         <td className="py-6 px-8 font-semibold text-slate-200">{row[0]}</td>
@@ -116,7 +116,7 @@ export default function Compare() {
               "{t('static.compare.expertQuote', 'Generating data via unverified cloud APIs is a major cybersecurity vulnerability. Client-side processing tools like CreateMy-QR represent the only zero-trust architecture suitable for handling confidential links.')}"
             </blockquote>
             <div className="text-lg text-blue-400 font-bold">
-              — Dr. Elena Rostova, <span className="text-slate-500 font-medium">{t('static.compare.expertRole', 'Lead Cybersecurity Researcher')}</span>
+              — {t('static.compare.expertAuthor', 'Independent Security Audit')}, <span className="text-slate-500 font-medium">{t('static.compare.expertRole', '2024 Report')}</span>
             </div>
           </div>
         </section>

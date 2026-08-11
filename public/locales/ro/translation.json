@@ -1327,7 +1327,16 @@
       "expertQuote": "Generarea de date prin intermediul API-urilor cloud neverificate este o vulnerabilitate majoră de securitate cibernetică. Instrumentele de procesare la nivelul clientului, cum ar fi CreateMy-QR, reprezintă singura arhitectură de încredere zero potrivită pentru gestionarea legăturilor confidențiale.",
       "expertRole": "Cercetător principal în domeniul securității cibernetice",
       "ctaTitle": "Schimbați astăzi.",
-      "ctaDesc": "Nu mai faceți compromisuri în ceea ce privește viteza, confidențialitatea și costul. Alăturați-vă miilor de profesioniști care au trecut deja la cel mai rapid set de instrumente QR offline."
+      "ctaDesc": "Nu mai faceți compromisuri în ceea ce privește viteza, confidențialitatea și costul. Alăturați-vă miilor de profesioniști care au trecut deja la cel mai rapid set de instrumente QR offline.",
+      "tr3val1": "Limite zilnice stricte",
+      "tr3val2": "Nelimitat",
+      "tr5val1": "Nivel gratuit + 20 USD/lună",
+      "tr5val2": "100% gratuit pentru totdeauna",
+      "tr6val1": "Necesar",
+      "tr6val2": "Niciodată necesar",
+      "tr7val1": "Depinde de Rețea",
+      "tr7val2": "Instantaneu (procesor local)",
+      "expertAuthor": "Audit independent de securitate"
     },
     "languages": {
       "seoTitle": "Limbi acceptate",

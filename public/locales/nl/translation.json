@@ -1388,7 +1388,16 @@
       "expertQuote": "Het genereren van gegevens via niet-geverifieerde cloud-API's is een groot cyberbeveiligingsprobleem. Verwerkingstools aan de clientzijde, zoals CreateMy-QR, vertegenwoordigen de enige zero-trust-architectuur die geschikt is voor het verwerken van vertrouwelijke links.",
       "expertRole": "Hoofdonderzoeker cyberbeveiliging",
       "ctaTitle": "Schakel vandaag nog.",
-      "ctaDesc": "Stop met het compromitteren op snelheid, privacy en kosten. Sluit u aan bij duizenden professionals die al zijn overgestapt op de snelste offline QR-toolkit."
+      "ctaDesc": "Stop met het compromitteren op snelheid, privacy en kosten. Sluit u aan bij duizenden professionals die al zijn overgestapt op de snelste offline QR-toolkit.",
+      "tr3val1": "Strenge dagelijkse limieten",
+      "tr3val2": "Onbeperkt",
+      "tr5val1": "Gratis niveau + $ 20/maand",
+      "tr5val2": "100% voor altijd gratis",
+      "tr6val1": "Vereist",
+      "tr6val2": "Nooit vereist",
+      "tr7val1": "Afhankelijk van netwerk",
+      "tr7val2": "Direct (lokale CPU)",
+      "expertAuthor": "Onafhankelijke beveiligingsaudit"
     },
     "languages": {
       "seoTitle": "Ondersteunde talen",

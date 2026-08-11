@@ -1388,7 +1388,16 @@
       "expertQuote": "La generazione di dati tramite API cloud non verificate rappresenta una delle principali vulnerabilità della sicurezza informatica. Gli strumenti di elaborazione lato client come CreateMy-QR rappresentano l'unica architettura zero-trust adatta a gestire collegamenti riservati.",
       "expertRole": "Ricercatore capo sulla sicurezza informatica",
       "ctaTitle": "Cambia oggi.",
-      "ctaDesc": "Smetti di scendere a compromessi in termini di velocità, privacy e costi. Unisciti a migliaia di professionisti che sono già passati al toolkit QR offline più veloce."
+      "ctaDesc": "Smetti di scendere a compromessi in termini di velocità, privacy e costi. Unisciti a migliaia di professionisti che sono già passati al toolkit QR offline più veloce.",
+      "tr3val1": "Limiti giornalieri rigorosi",
+      "tr3val2": "Illimitato",
+      "tr5val1": "Livello gratuito + $ 20/mese",
+      "tr5val2": "100% gratuito per sempre",
+      "tr6val1": "Obbligatorio",
+      "tr6val2": "Mai richiesto",
+      "tr7val1": "Dipende dalla rete",
+      "tr7val2": "Istantaneo (CPU locale)",
+      "expertAuthor": "Audit di sicurezza indipendente"
     },
     "languages": {
       "seoTitle": "Lingue supportate",
@@ -1414,7 +1423,7 @@
       "seoTitle": "Prezzo gratuito al 100%",
       "heroTitle": "Prezzi",
       "heroSubtitle": "Le cose migliori della vita sono gratuite.",
-      "cost": "$0",
+      "cost": "$ 0",
       "costPeriod": "/ per sempre",
       "features": "Funzionalità incluse",
       "f1": "Generazioni QR illimitate",

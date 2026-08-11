@@ -1327,7 +1327,16 @@
       "expertQuote": "A nem ellenőrzött felhő API-kon keresztüli adatok generálása jelentős kiberbiztonsági rés. Az olyan kliensoldali feldolgozóeszközök, mint a CreateMy-QR, az egyetlen zéró-bizalom-architektúra, amely alkalmas bizalmas hivatkozások kezelésére.",
       "expertRole": "Vezető kiberbiztonsági kutató",
       "ctaTitle": "Váltson még ma.",
-      "ctaDesc": "Ne kockáztasson a sebesség, a magánélet és a költségek terén. Csatlakozzon több ezer szakemberhez, akik már átváltottak a leggyorsabb offline QR-eszközkészletre."
+      "ctaDesc": "Ne kockáztasson a sebesség, a magánélet és a költségek terén. Csatlakozzon több ezer szakemberhez, akik már átváltottak a leggyorsabb offline QR-eszközkészletre.",
+      "tr3val1": "Szigorú napi limitek",
+      "tr3val2": "Korlátlan",
+      "tr5val1": "Ingyenes szint + 20 USD/hó",
+      "tr5val2": "100% Free Forever",
+      "tr6val1": "Kötelező",
+      "tr6val2": "Soha nem szükséges",
+      "tr7val1": "Hálózatfüggő",
+      "tr7val2": "Azonnali (helyi CPU)",
+      "expertAuthor": "Független biztonsági audit"
     },
     "languages": {
       "seoTitle": "Támogatott nyelvek",

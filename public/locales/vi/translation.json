@@ -1388,7 +1388,16 @@
       "expertQuote": "Tạo dữ liệu thông qua API đám mây chưa được xác minh là một lỗ hổng an ninh mạng lớn. Các công cụ xử lý phía máy khách như CreateMy-QR đại diện cho kiến ​​trúc không tin cậy duy nhất phù hợp để xử lý các liên kết bí mật.",
       "expertRole": "Trưởng nhóm nghiên cứu an ninh mạng",
       "ctaTitle": "Chuyển đổi ngay hôm nay.",
-      "ctaDesc": "Hãy ngừng thỏa hiệp về tốc độ, quyền riêng tư và chi phí. Tham gia cùng hàng nghìn chuyên gia đã chuyển sang bộ công cụ QR ngoại tuyến nhanh nhất."
+      "ctaDesc": "Hãy ngừng thỏa hiệp về tốc độ, quyền riêng tư và chi phí. Tham gia cùng hàng nghìn chuyên gia đã chuyển sang bộ công cụ QR ngoại tuyến nhanh nhất.",
+      "tr3val1": "Giới hạn nghiêm ngặt hàng ngày",
+      "tr3val2": "Không giới hạn",
+      "tr5val1": "Bậc miễn phí + $20/tháng",
+      "tr5val2": "Miễn phí 100% mãi mãi",
+      "tr6val1": "Bắt buộc",
+      "tr6val2": "Không bao giờ cần thiết",
+      "tr7val1": "Phụ thuộc vào Mạng",
+      "tr7val2": "Tức thì (CPU cục bộ)",
+      "expertAuthor": "Kiểm toán an ninh độc lập"
     },
     "languages": {
       "seoTitle": "Ngôn ngữ được hỗ trợ",
@@ -1529,7 +1538,7 @@
       "popularEvents": "Công cụ phổ biến:",
       "toolEvent": "Mã QR sự kiện",
       "toolVcard": "vCard / Liên hệ QR",
-      "toolLocation": "Google Maps QR",
+      "toolLocation": "Mã QR của Google Maps",
       "popularResto": "Công cụ phổ biến:",
       "toolWifi": "Mã QR Wi-Fi",
       "toolPdf": "Thực đơn PDF QR",

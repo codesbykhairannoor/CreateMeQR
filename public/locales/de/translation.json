@@ -1388,7 +1388,16 @@
       "expertQuote": "Die Generierung von Daten über nicht verifizierte Cloud-APIs stellt eine große Sicherheitslücke im Cybersicherheitssektor dar. Clientseitige Verarbeitungstools wie CreateMy-QR stellen die einzige Zero-Trust-Architektur dar, die für den Umgang mit vertraulichen Links geeignet ist.",
       "expertRole": "Leitender Cybersicherheitsforscher",
       "ctaTitle": "Wechseln Sie noch heute.",
-      "ctaDesc": "Machen Sie keine Kompromisse mehr bei Geschwindigkeit, Datenschutz und Kosten. Schließen Sie sich Tausenden von Fachleuten an, die bereits auf das schnellste Offline-QR-Toolkit umgestiegen sind."
+      "ctaDesc": "Machen Sie keine Kompromisse mehr bei Geschwindigkeit, Datenschutz und Kosten. Schließen Sie sich Tausenden von Fachleuten an, die bereits auf das schnellste Offline-QR-Toolkit umgestiegen sind.",
+      "tr3val1": "Strenge Tageslimits",
+      "tr3val2": "Unbegrenzt",
+      "tr5val1": "Kostenloses Kontingent + 20 $/Monat",
+      "tr5val2": "100 % für immer kostenlos",
+      "tr6val1": "Erforderlich",
+      "tr6val2": "Nie erforderlich",
+      "tr7val1": "Abhängig vom Netzwerk",
+      "tr7val2": "Sofort (Lokale CPU)",
+      "expertAuthor": "Unabhängiges Sicherheitsaudit"
     },
     "languages": {
       "seoTitle": "Unterstützte Sprachen",

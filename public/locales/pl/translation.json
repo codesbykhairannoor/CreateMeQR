@@ -1388,7 +1388,16 @@
       "expertQuote": "Generowanie danych za pośrednictwem niezweryfikowanych interfejsów API w chmurze stanowi główną lukę w zabezpieczeniach cyberbezpieczeństwa. Narzędzia do przetwarzania po stronie klienta, takie jak CreateMy-QR, reprezentują jedyną architekturę zerowego zaufania odpowiednią do obsługi poufnych łączy.",
       "expertRole": "Główny badacz cyberbezpieczeństwa",
       "ctaTitle": "Zmień już dziś.",
-      "ctaDesc": "Przestań iść na kompromis w zakresie szybkości, prywatności i kosztów. Dołącz do tysięcy profesjonalistów, którzy już przeszli na najszybszy zestaw narzędzi QR offline."
+      "ctaDesc": "Przestań iść na kompromis w zakresie szybkości, prywatności i kosztów. Dołącz do tysięcy profesjonalistów, którzy już przeszli na najszybszy zestaw narzędzi QR offline.",
+      "tr3val1": "Ścisłe limity dzienne",
+      "tr3val2": "Nieograniczony",
+      "tr5val1": "Bezpłatny poziom + 20 USD/mies.",
+      "tr5val2": "100% za darmo na zawsze",
+      "tr6val1": "Wymagane",
+      "tr6val2": "Nigdy nie wymagane",
+      "tr7val1": "Zależnie od sieci",
+      "tr7val2": "Natychmiastowe (lokalny procesor)",
+      "expertAuthor": "Niezależny audyt bezpieczeństwa"
     },
     "languages": {
       "seoTitle": "Obsługiwane języki",
@@ -1532,7 +1541,7 @@
       "toolLocation": "QR Mapy Google",
       "popularResto": "Popularne narzędzia:",
       "toolWifi": "Kod QR Wi-Fi",
-      "toolPdf": "PDF Menu QR",
+      "toolPdf": "PDFMenu QR",
       "toolReview": "QR recenzja Google",
       "ctaTitle": "Znajdź swój własny przypadek użycia",
       "ctaDesc": "Bez względu na branżę, CreateMy-QR to najbezpieczniejszy i najszybszy sposób generowania kodów. Wypróbuj nasz pełny zestaw ponad 20 narzędzi już dziś."

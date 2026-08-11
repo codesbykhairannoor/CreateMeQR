@@ -1388,7 +1388,16 @@
       "expertQuote": "La génération de données via des API cloud non vérifiées constitue une vulnérabilité majeure en matière de cybersécurité. Les outils de traitement côté client comme CreateMy-QR représentent la seule architecture Zero Trust adaptée à la gestion des liens confidentiels.",
       "expertRole": "Chercheur principal en cybersécurité",
       "ctaTitle": "Changez aujourd'hui.",
-      "ctaDesc": "Arrêtez de faire des compromis sur la vitesse, la confidentialité et le coût. Rejoignez des milliers de professionnels qui sont déjà passés à la boîte à outils QR hors ligne la plus rapide."
+      "ctaDesc": "Arrêtez de faire des compromis sur la vitesse, la confidentialité et le coût. Rejoignez des milliers de professionnels qui sont déjà passés à la boîte à outils QR hors ligne la plus rapide.",
+      "tr3val1": "Limites quotidiennes strictes",
+      "tr3val2": "Illimité",
+      "tr5val1": "Niveau gratuit + 20 $/mois",
+      "tr5val2": "100% gratuit pour toujours",
+      "tr6val1": "Obligatoire",
+      "tr6val2": "Jamais requis",
+      "tr7val1": "Dépend du réseau",
+      "tr7val2": "Instantané (CPU local)",
+      "expertAuthor": "Audit de sécurité indépendant"
     },
     "languages": {
       "seoTitle": "Langues prises en charge",
@@ -1529,7 +1538,7 @@
       "popularEvents": "Outils populaires :",
       "toolEvent": "Code QR de l'événement",
       "toolVcard": "vCard / Contact QR",
-      "toolLocation": "Google Maps QR",
+      "toolLocation": "Google Maps QR",
       "popularResto": "Outils populaires :",
       "toolWifi": "Code QR Wi-Fi",
       "toolPdf": "Menu PDF QR",

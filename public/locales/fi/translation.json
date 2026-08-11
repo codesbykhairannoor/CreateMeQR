@@ -1388,7 +1388,16 @@
       "expertQuote": "Tietojen luominen vahvistamattomien pilvisovellusliittymien kautta on suuri kyberturvallisuuden haavoittuvuus. Asiakaspuolen käsittelytyökalut, kuten CreateMy-QR, edustavat ainoaa luottamuksellista arkkitehtuuria, joka sopii luottamuksellisten linkkien käsittelyyn.",
       "expertRole": "Johtava kyberturvallisuustutkija",
       "ctaTitle": "Vaihda tänään.",
-      "ctaDesc": "Älä tee kompromisseja nopeudesta, yksityisyydestä ja kustannuksista. Liity tuhansien ammattilaisten joukkoon, jotka ovat jo vaihtaneet nopeimpaan offline-QR-työkalupakettiin."
+      "ctaDesc": "Älä tee kompromisseja nopeudesta, yksityisyydestä ja kustannuksista. Liity tuhansien ammattilaisten joukkoon, jotka ovat jo vaihtaneet nopeimpaan offline-QR-työkalupakettiin.",
+      "tr3val1": "Tiukat päivärajat",
+      "tr3val2": "Rajoittamaton",
+      "tr5val1": "Ilmainen taso + 20 dollaria/kk",
+      "tr5val2": "100% ilmainen ikuisesti",
+      "tr6val1": "Pakollinen",
+      "tr6val2": "Ei koskaan vaadittu",
+      "tr7val1": "Riippuu verkosta",
+      "tr7val2": "Instant (paikallinen suoritin)",
+      "expertAuthor": "Riippumaton turvatarkastus"
     },
     "languages": {
       "seoTitle": "Tuetut kielet",
@@ -1531,7 +1540,7 @@
       "toolVcard": "vCard / Yhteystiedot QR",
       "toolLocation": "Google Maps QR",
       "popularResto": "Suositut työkalut:",
-      "toolWifi": "Wi-Fi QR Code",
+      "toolWifi": "Wi-Fi QR-koodi",
       "toolPdf": "PDF-valikko QR",
       "toolReview": "Google-arvostelu QR",
       "ctaTitle": "Löydä oma käyttötapasi",

@@ -1388,7 +1388,16 @@
       "expertQuote": "Menghasilkan data melalui API cloud yang belum terverifikasi merupakan kerentanan keamanan siber yang besar. Alat pemrosesan sisi klien seperti CreateMy-QR mewakili satu-satunya arsitektur tanpa kepercayaan yang cocok untuk menangani tautan rahasia.",
       "expertRole": "Peneliti Keamanan Siber Utama",
       "ctaTitle": "Beralih Hari Ini.",
-      "ctaDesc": "Berhenti berkompromi pada kecepatan, privasi, dan biaya. Bergabunglah dengan ribuan profesional yang telah beralih ke perangkat QR offline tercepat."
+      "ctaDesc": "Berhenti berkompromi pada kecepatan, privasi, dan biaya. Bergabunglah dengan ribuan profesional yang telah beralih ke perangkat QR offline tercepat.",
+      "tr3val1": "Batas Harian Ketat",
+      "tr3val2": "Tidak terbatas",
+      "tr5val1": "Tingkat Gratis + $20/bln",
+      "tr5val2": "100% Gratis Selamanya",
+      "tr6val1": "Diperlukan",
+      "tr6val2": "Tidak Pernah Diperlukan",
+      "tr7val1": "Bergantung pada Jaringan",
+      "tr7val2": "Instan (CPU Lokal)",
+      "expertAuthor": "Audit Keamanan Independen"
     },
     "languages": {
       "seoTitle": "Bahasa yang Didukung",
@@ -1529,7 +1538,7 @@
       "popularEvents": "Alat Populer:",
       "toolEvent": "Kode QR Acara",
       "toolVcard": "vCard / Hubungi QR",
-      "toolLocation": "Google Maps QR",
+      "toolLocation": "QR Google Peta",
       "popularResto": "Alat Populer:",
       "toolWifi": "Kode QR WiFi",
       "toolPdf": "QR Menu PDF",

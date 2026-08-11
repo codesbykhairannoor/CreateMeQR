@@ -1388,7 +1388,16 @@
       "expertQuote": "Menjana data melalui API awan yang tidak disahkan ialah kelemahan keselamatan siber utama. Alat pemprosesan sebelah pelanggan seperti CreateMy-QR mewakili satu-satunya seni bina amanah sifar yang sesuai untuk mengendalikan pautan sulit.",
       "expertRole": "Ketua Penyelidik Keselamatan Siber",
       "ctaTitle": "Tukar Hari Ini.",
-      "ctaDesc": "Berhenti berkompromi pada kelajuan, privasi dan kos. Sertai beribu-ribu profesional yang telah bertukar kepada kit alat QR luar talian terpantas."
+      "ctaDesc": "Berhenti berkompromi pada kelajuan, privasi dan kos. Sertai beribu-ribu profesional yang telah bertukar kepada kit alat QR luar talian terpantas.",
+      "tr3val1": "Had Harian yang Ketat",
+      "tr3val2": "Tanpa had",
+      "tr5val1": "Peringkat Percuma + $20/bln",
+      "tr5val2": "100% Percuma Selamanya",
+      "tr6val1": "Diperlukan",
+      "tr6val2": "Tidak Pernah Diperlukan",
+      "tr7val1": "Bergantung pada Rangkaian",
+      "tr7val2": "Segera (CPU Tempatan)",
+      "expertAuthor": "Audit Keselamatan Bebas"
     },
     "languages": {
       "seoTitle": "Bahasa yang Disokong",

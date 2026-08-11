@@ -1388,7 +1388,16 @@
       "expertQuote": "Att generera data via overifierade moln-API:er är en stor cybersäkerhetssårbarhet. Bearbetningsverktyg på klientsidan som CreateMy-QR representerar den enda nollförtroendearkitekturen som är lämplig för att hantera konfidentiella länkar.",
       "expertRole": "Ledande cybersäkerhetsforskare",
       "ctaTitle": "Byt idag.",
-      "ctaDesc": "Sluta kompromissa med hastighet, integritet och kostnad. Gå med tusentals proffs som redan har bytt till den snabbaste offline QR-verktygslådan."
+      "ctaDesc": "Sluta kompromissa med hastighet, integritet och kostnad. Gå med tusentals proffs som redan har bytt till den snabbaste offline QR-verktygslådan.",
+      "tr3val1": "Strikta dagliga gränser",
+      "tr3val2": "Obegränsad",
+      "tr5val1": "Gratis nivå + $20/månad",
+      "tr5val2": "100 % gratis för alltid",
+      "tr6val1": "Obligatorisk",
+      "tr6val2": "Krävs aldrig",
+      "tr7val1": "Beroende på nätverk",
+      "tr7val2": "Omedelbar (lokal CPU)",
+      "expertAuthor": "Oberoende säkerhetsrevision"
     },
     "languages": {
       "seoTitle": "Språk som stöds",
@@ -1533,7 +1542,7 @@
       "popularResto": "Populära verktyg:",
       "toolWifi": "Wi-Fi QR-kod",
       "toolPdf": "PDF Meny QR",
-      "toolReview": "Google Review QR",
+      "toolReview": "Google Recension QR",
       "ctaTitle": "Hitta ditt eget användningsfall",
       "ctaDesc": "No matter your industry, CreateMy-QR is the safest and fastest way to generate codes. Prova vår kompletta uppsättning av 20+ verktyg idag."
     }

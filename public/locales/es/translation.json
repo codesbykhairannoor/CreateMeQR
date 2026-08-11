@@ -1388,7 +1388,16 @@
       "expertQuote": "La generación de datos a través de API en la nube no verificadas es una importante vulnerabilidad de ciberseguridad. Las herramientas de procesamiento del lado del cliente como CreateMy-QR representan la única arquitectura de confianza cero adecuada para manejar enlaces confidenciales.",
       "expertRole": "Investigador principal en ciberseguridad",
       "ctaTitle": "Cambie hoy.",
-      "ctaDesc": "Deje de comprometer la velocidad, la privacidad y el costo. Únase a miles de profesionales que ya han cambiado al kit de herramientas QR sin conexión más rápido."
+      "ctaDesc": "Deje de comprometer la velocidad, la privacidad y el costo. Únase a miles de profesionales que ya han cambiado al kit de herramientas QR sin conexión más rápido.",
+      "tr3val1": "Límites diarios estrictos",
+      "tr3val2": "Ilimitado",
+      "tr5val1": "Nivel gratuito + $20/mes",
+      "tr5val2": "100% gratis para siempre",
+      "tr6val1": "Requerido",
+      "tr6val2": "Nunca requerido",
+      "tr7val1": "Dependiente de la red",
+      "tr7val2": "Instantáneo (CPU local)",
+      "expertAuthor": "Auditoría de seguridad independiente"
     },
     "languages": {
       "seoTitle": "Idiomas admitidos",

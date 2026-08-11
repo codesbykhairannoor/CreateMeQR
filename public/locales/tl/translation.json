@@ -1388,7 +1388,16 @@
       "expertQuote": "Ang pagbuo ng data sa pamamagitan ng mga hindi na-verify na cloud API ay isang pangunahing kahinaan sa cybersecurity. Ang mga tool sa pagpoproseso sa panig ng kliyente tulad ng CreateMy-QR ay kumakatawan sa tanging zero-trust na arkitektura na angkop para sa paghawak ng mga kumpidensyal na link.",
       "expertRole": "Nangunguna sa Cybersecurity Researcher",
       "ctaTitle": "Lumipat Ngayon.",
-      "ctaDesc": "Itigil ang pagkompromiso sa bilis, privacy, at gastos. Sumali sa libu-libong propesyonal na lumipat na sa pinakamabilis na offline na QR toolkit."
+      "ctaDesc": "Itigil ang pagkompromiso sa bilis, privacy, at gastos. Sumali sa libu-libong propesyonal na lumipat na sa pinakamabilis na offline na QR toolkit.",
+      "tr3val1": "Mahigpit na Pang-araw-araw na Limitasyon",
+      "tr3val2": "Walang limitasyong",
+      "tr5val1": "Libreng Tier + $20/buwan",
+      "tr5val2": "100% Libre Magpakailanman",
+      "tr6val1": "Kinakailangan",
+      "tr6val2": "Hindi kailanman Kinakailangan",
+      "tr7val1": "Depende sa Network",
+      "tr7val2": "Instant (Lokal na CPU)",
+      "expertAuthor": "Independent Security Audit"
     },
     "languages": {
       "seoTitle": "Mga Sinusuportahang Wika",

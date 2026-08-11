@@ -1388,7 +1388,16 @@
       "expertQuote": "Generering af data via ubekræftede cloud-API'er er en stor cybersikkerhedssårbarhed. Behandlingsværktøjer på klientsiden som CreateMy-QR repræsenterer den eneste nul-tillidsarkitektur, der er egnet til at håndtere fortrolige links.",
       "expertRole": "Ledende cybersikkerhedsforsker",
       "ctaTitle": "Skift i dag.",
-      "ctaDesc": "Stop med at gå på kompromis med hastighed, privatliv og omkostninger. Slut dig til tusindvis af fagfolk, der allerede har skiftet til det hurtigste offline QR-værktøjssæt."
+      "ctaDesc": "Stop med at gå på kompromis med hastighed, privatliv og omkostninger. Slut dig til tusindvis af fagfolk, der allerede har skiftet til det hurtigste offline QR-værktøjssæt.",
+      "tr3val1": "Strenge daglige grænser",
+      "tr3val2": "Ubegrænset",
+      "tr5val1": "Gratis niveau + $20/md.",
+      "tr5val2": "100 % gratis for evigt",
+      "tr6val1": "Påkrævet",
+      "tr6val2": "Aldrig påkrævet",
+      "tr7val1": "Afhængig af netværk",
+      "tr7val2": "Øjeblikkelig (lokal CPU)",
+      "expertAuthor": "Uafhængig sikkerhedsrevision"
     },
     "languages": {
       "seoTitle": "Understøttede sprog",
@@ -1425,7 +1434,7 @@
       "whyFreeDesc": "Fordi vi ikke behandler dine filer på vores servere, har vi ikke store serverregninger. Din enhed klarer det tunge løft via WebAssembly.",
       "heroBadge": "Radikalt fri",
       "compTitle": "Traditionelle skyværktøjer",
-      "compCost": "$20",
+      "compCost": "20 USD",
       "compPeriod": "/mo",
       "comp1": "Data uploadet til deres servere",
       "comp2": "Filstørrelsesgrænser på gratis niveau",

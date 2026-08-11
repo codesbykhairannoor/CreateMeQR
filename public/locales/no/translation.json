@@ -1388,7 +1388,16 @@
       "expertQuote": "Generering av data via ubekreftede sky-APIer er et stort sikkerhetsproblem. Behandlingsverktøy på klientsiden som CreateMy-QR representerer den eneste null-tillit-arkitekturen som er egnet for håndtering av konfidensielle lenker.",
       "expertRole": "Ledende cybersikkerhetsforsker",
       "ctaTitle": "Bytt i dag.",
-      "ctaDesc": "Slutt å gå på akkord med hastighet, personvern og kostnader. Bli med tusenvis av fagfolk som allerede har byttet til det raskeste offline QR-verktøysettet."
+      "ctaDesc": "Slutt å gå på akkord med hastighet, personvern og kostnader. Bli med tusenvis av fagfolk som allerede har byttet til det raskeste offline QR-verktøysettet.",
+      "tr3val1": "Strenge daglige grenser",
+      "tr3val2": "Ubegrenset",
+      "tr5val1": "Gratis nivå + $20/md",
+      "tr5val2": "100 % gratis for alltid",
+      "tr6val1": "Obligatorisk",
+      "tr6val2": "Aldri nødvendig",
+      "tr7val1": "Avhengig av nettverk",
+      "tr7val2": "Øyeblikkelig (lokal CPU)",
+      "expertAuthor": "Uavhengig sikkerhetsrevisjon"
     },
     "languages": {
       "seoTitle": "Støttede språk",
@@ -1533,7 +1542,7 @@
       "popularResto": "Populære verktøy:",
       "toolWifi": "Wi-Fi QR-kode",
       "toolPdf": "PDF-meny QR",
-      "toolReview": "Google Review QR",
+      "toolReview": "Google anmeldelse QR",
       "ctaTitle": "Finn din egen brukssak",
       "ctaDesc": "Uansett bransje er CreateMy-QR den sikreste og raskeste måten å generere koder på. Prøv hele pakken vår med over 20 verktøy i dag."
     }
