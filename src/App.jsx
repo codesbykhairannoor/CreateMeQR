@@ -103,12 +103,12 @@ export default function App() {
       }
     : effectiveType === 'url'
     ? {
-        title: t('appTitle'), // Keep main SEO title for the URL tool (homepage fallback)
+        title: `${t('appTitle')} | CreateMy-QR`, // Keep main SEO title for the URL tool (homepage fallback)
         h1Title: t('seoTool.h1', { tool: typeName }),
         description: t('seoTool.description', { tool: typeName }),
       }
     : {
-        title: t('seoTool.title', { tool: typeName }),
+        title: `${t('seoTool.title', { tool: typeName })} | CreateMy-QR`,
         h1Title: t('seoTool.h1', { tool: typeName }),
         description: t('seoTool.description', { tool: typeName }),
       };
