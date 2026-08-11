@@ -218,17 +218,15 @@ export default function HomePage({ currentLangCode = 'en' }) {
             </span>
           </div>
 
-          {/* Monumental headline — matched to helpmyfile/audiovideo reference */}
-          <h1 style={{
-            fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
-            fontWeight: 800,
-            letterSpacing: '-0.03em',
-            lineHeight: 1.15,
-            marginBottom: 24,
-            maxWidth: 900,
-            margin: '0 auto 24px',
-            textWrap: 'balance',
-          }}>
+          {/* Monumental headline — class matches audiovideo .hero-title pattern */}
+          <h1
+            className="homepage-hero-title"
+            style={{
+              marginBottom: 24,
+              maxWidth: 900,
+              margin: '0 auto 24px',
+            }}
+          >
             {t('home.heroTitle')}{' '}
             <span style={{
               background: 'linear-gradient(135deg, #1e40af 0%, #2563EB 45%, #7C3AED 100%)',
@@ -466,11 +464,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
                 <span style={{ color: '#2563EB' }}>{t('home.privacyPill', '100% Private & Secure')}</span>
               </div>
 
-              <h2 style={{
-                fontSize: 'clamp(1.6rem, 3.5vw, 2.2rem)',
-                fontWeight: 700, lineHeight: 1.25, letterSpacing: '-0.02em', marginBottom: 18,
-                textWrap: 'balance',
-              }}>
+              <h2 className="homepage-section-title" style={{ marginBottom: 18 }}>
                 {t('home.trustTitle', 'Zero Upload. Zero Tracking. Zero Compromise.')}
               </h2>
               <p style={{ fontSize: '1.1rem', lineHeight: 1.8, opacity: 0.62, maxWidth: 820, marginBottom: 40 }}>
@@ -531,7 +525,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
             }}>
               Key Facts
             </div>
-            <h2 style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.2rem)', fontWeight: 700, lineHeight: 1.25, letterSpacing: '-0.02em', marginBottom: 20, textWrap: 'balance' }}>
+            <h2 className="homepage-section-title" style={{ marginBottom: 20 }}>
               {t('home.whatIsTitle', 'What is CreateMy-QR?')}
             </h2>
             <p style={{ fontSize: '1.1rem', lineHeight: 1.8, opacity: 0.63, marginBottom: 28 }}>
@@ -568,7 +562,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
             }}>
               Trust & Security
             </div>
-            <h2 style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.2rem)', fontWeight: 700, lineHeight: 1.25, letterSpacing: '-0.02em', marginBottom: 20, textWrap: 'balance' }}>
+            <h2 className="homepage-section-title" style={{ marginBottom: 20 }}>
               {t('home.whySecureTitle', 'Why is it 100% Secure?')}
             </h2>
             <p style={{ fontSize: '1.1rem', lineHeight: 1.8, opacity: 0.63, marginBottom: 24 }}>
@@ -605,11 +599,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
             }}>
               FAQ
             </div>
-            <h2 style={{
-              fontSize: 'clamp(1.6rem, 3.5vw, 2.2rem)',
-              fontWeight: 700, lineHeight: 1.25, letterSpacing: '-0.02em', marginBottom: 10,
-              textWrap: 'balance',
-            }}>
+            <h2 className="homepage-section-title" style={{ marginBottom: 10 }}>
               {t('home.faqTitle', 'Frequently Asked Questions')}
             </h2>
             <p style={{ fontSize: '1.1rem', lineHeight: 1.8, opacity: 0.52 }}>

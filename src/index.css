@@ -16,26 +16,36 @@
 @layer base {
   html {
     /* Base for mobile */
-    font-size: 16px; 
+    font-size: 16px;
   }
   
   /* Scale down everything by ~15% on desktop to simulate a zoomed-out, more compact/premium layout */
   @media (min-width: 1024px) {
     html {
-      font-size: 13.5px; 
+      font-size: 13.5px;
     }
   }
 
   @media (min-width: 1280px) {
     html {
-      font-size: 14px; 
+      font-size: 14px;
     }
   }
 
   body {
     @apply bg-[#f8fafc] text-black dark:bg-[#040a18] dark:text-white antialiased transition-colors duration-500;
     font-family: var(--font-main);
+    /* Match helpmyfile/audiovideo font rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
   }
+
+  /* Inherit font on all form elements — matches helpmyfile/audiovideo pattern */
+  button, input, select, textarea {
+    font-family: inherit;
+  }
+
   ::selection {
     @apply bg-blue-600/30 text-blue-900 dark:text-blue-100;
   }
@@ -83,6 +93,31 @@
 }
 .animate-fade-in-up-fast {
   animation: fadeInUpFast 0.3s ease-out forwards;
+}
+
+/* ==========================================================================
+   HOMEPAGE TYPOGRAPHY \u2014 matches helpmyfile/audiovideo .hero-title pattern
+   Prevents collision with [class^="hq-layout-"] h1/h2 rules below.
+   ========================================================================== */
+
+/* Hero h1 \u2014 same values as audiovideo src/index.css .hero-title */
+.homepage-hero-title {
+  font-family: var(--font-display) !important;
+  font-size: clamp(2.5rem, 6vw, 4.5rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.15 !important;
+  text-wrap: balance;
+}
+
+/* Section h2 \u2014 same approach, slightly smaller */
+.homepage-section-title {
+  font-family: var(--font-display) !important;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.25 !important;
+  text-wrap: balance;
 }
 
 /* ==========================================================================
