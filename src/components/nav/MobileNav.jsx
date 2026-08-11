@@ -17,17 +17,14 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
     <div className="lg:hidden flex flex-col p-4 bg-zinc-50 dark:bg-[#030914] min-h-screen pb-32">
       
       {/* Quick 3 buttons (Static Pages) */}
-      <div className="flex flex-col gap-2 mb-4">
-        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} onClick={onClose} className="flex items-center gap-3 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-bold text-blue-600 dark:text-blue-400 text-[11.5px] uppercase transition-colors hover:border-blue-400 shadow-sm">
-          <Scan className="w-4 h-4" />
+      <div className="grid grid-cols-3 gap-2 mb-4">
+        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} onClick={onClose} className="flex flex-col items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-extrabold text-blue-600 dark:text-blue-400 text-[10px] md:text-[11px] uppercase transition-colors hover:border-blue-400 shadow-sm text-center tracking-tight">
           {t('nav.scanqr', 'Scan QR Code')}
         </RouterLink>
-        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} onClick={onClose} className="flex items-center gap-3 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-bold text-emerald-600 dark:text-emerald-400 text-[11.5px] uppercase transition-colors hover:border-emerald-400 shadow-sm">
-          <ScanLine className="w-4 h-4" />
+        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} onClick={onClose} className="flex flex-col items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-extrabold text-emerald-600 dark:text-emerald-400 text-[10px] md:text-[11px] uppercase transition-colors hover:border-emerald-400 shadow-sm text-center tracking-tight">
           {t('nav.scanbarcode', 'Scan Barcode')}
         </RouterLink>
-        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} onClick={onClose} className="flex items-center gap-3 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-bold text-purple-600 dark:text-purple-400 text-[11.5px] uppercase transition-colors hover:border-purple-400 shadow-sm">
-          <QrCode className="w-4 h-4" />
+        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} onClick={onClose} className="flex flex-col items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-extrabold text-purple-600 dark:text-purple-400 text-[10px] md:text-[11px] uppercase transition-colors hover:border-purple-400 shadow-sm text-center tracking-tight">
           {t('nav.barcode', 'Barcode Maker')}
         </RouterLink>
       </div>
@@ -87,23 +84,6 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
               </div>
             </div>
           ))}
-
-          {/* Scanners */}
-          <div>
-            <div className="text-[10px] md:text-[11px] font-extrabold text-indigo-600 dark:text-indigo-400 tracking-wider mb-2.5 pb-2 border-b border-dashed border-zinc-300 dark:border-zinc-700 uppercase">
-              {t('nav.scanGroup', 'Scanners')}
-            </div>
-            <div className="grid grid-cols-2 gap-2">
-              <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} onClick={onClose} className="flex items-center gap-2.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg hover:border-indigo-400 dark:hover:border-indigo-500 transition-colors text-zinc-700 dark:text-zinc-300 shadow-sm group">
-                <Scan className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="text-[10px] font-bold uppercase truncate">{t('nav.scanqr', 'Scan QR Code')}</span>
-              </RouterLink>
-              <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} onClick={onClose} className="flex items-center gap-2.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg hover:border-indigo-400 dark:hover:border-indigo-500 transition-colors text-zinc-700 dark:text-zinc-300 shadow-sm group">
-                <ScanLine className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="text-[10px] font-bold uppercase truncate">{t('nav.scanbarcode', 'Scan Barcode')}</span>
-              </RouterLink>
-            </div>
-          </div>
 
         </div>
       )}

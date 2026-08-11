@@ -174,7 +174,7 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
           <div className="flex w-full gap-3 mt-2">
             <button
               onClick={() => onDownloadClick('png')}
-              className="flex-1 flex items-center justify-center px-4 py-3 bg-[#040a18] text-white dark:bg-[#081226]lue-50 dark:text-zinc-900 rounded-xl hover:bg-blue-900 dark:hover:bg-zinc-200 transition-colors font-semibold shadow-sm"
+              className="flex-1 flex items-center justify-center px-4 py-3 bg-[#040a18] text-white dark:bg-blue-50 dark:text-zinc-900 rounded-xl hover:bg-blue-900 dark:hover:bg-zinc-200 transition-colors font-semibold shadow-sm"
             >
               <Download className="w-4 h-4 mr-2" />
               PNG
