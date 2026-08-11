@@ -107,6 +107,21 @@ export const BARCODE_CATEGORIES = [
 export default function MegaNav({ currentLangCode, onOpenHistory }) {
   const { t } = useTranslation();
   const location = useLocation();
+  const [isMegaOpen, setIsMegaOpen] = React.useState(false);
+  const megaTimerRef = React.useRef(null);
+
+  const handleMegaEnter = () => {
+    if (megaTimerRef.current) clearTimeout(megaTimerRef.current);
+    setIsMegaOpen(true);
+  };
+
+  const handleMegaLeave = () => {
+    megaTimerRef.current = setTimeout(() => setIsMegaOpen(false), 120);
+  };
+
+  const handleLinkClick = () => {
+    setIsMegaOpen(false);
+  };
 
   return (
     <div className="hidden xl:flex flex-1 justify-center items-center gap-3 xl:gap-6">
@@ -127,14 +142,22 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
       </RouterLink>
 
       {/* 4. Generate QR (Mega Menu Button) */}
-      <div className="relative group">
+      <div 
+        className="relative"
+        onMouseEnter={handleMegaEnter}
+        onMouseLeave={handleMegaLeave}
+      >
         <button className="flex items-center gap-1.5 xl:gap-2 px-3 xl:px-4 py-1.5 xl:py-2 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 hover:from-slate-800 hover:to-blue-600 text-white text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all shadow-md hover:shadow-lg">
           <QrCode className="w-4 h-4" />
           {t('nav.generator', 'ALL QR TOOLS')}
-          <ChevronDown className="w-3 h-3 xl:w-4 xl:h-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" />
+          <ChevronDown className={`w-3 h-3 xl:w-4 xl:h-4 opacity-70 transition-transform duration-300 ${isMegaOpen ? 'rotate-180' : ''}`} />
         </button>
         {/* Full-width fixed Dropdown */}
-        <div className="fixed top-16 left-0 w-full bg-white dark:bg-[#081226] border-b border-blue-100 dark:border-[#102040] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.25)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+        <div 
+          className={`fixed top-16 left-0 w-full bg-white dark:bg-[#081226] border-b border-blue-100 dark:border-[#102040] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.25)] transition-all duration-300 z-50 ${
+            isMegaOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+          }`}
+        >
           <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-4 gap-x-8">
             {QR_MENU_COLUMNS.map((column, colIdx) => (
               <div key={colIdx} className="flex flex-col">
@@ -150,9 +173,9 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
                         const isActive = location.pathname === finalUrl || (location.pathname === '/' && finalUrl === `/${currentLangCode}`);
                         
                         return (
-                          <RouterLink key={item.id} to={finalUrl} className={`flex items-center gap-3 py-1.5 px-3 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
+                          <RouterLink key={item.id} to={finalUrl} onClick={handleLinkClick} className={`flex items-center gap-3 py-1.5 px-3 rounded-xl transition-colors group/item ${isActive ? 'bg-slate-100 dark:bg-[#102040] text-blue-700 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'}`}>
                             <Icon className={`w-4 h-4 ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
-                            <span className="text-[12px] font-bold tracking-tight">{item.label}</span>
+                            <span className="text-[12px] font-bold tracking-tight uppercase">{item.label}</span>
                           </RouterLink>
                         );
                       })}

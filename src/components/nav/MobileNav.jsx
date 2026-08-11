@@ -29,7 +29,7 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
             {QR_MENU_COLUMNS.flat().map((cat, i) => (
               <div key={i} className="flex flex-col">
                 <h4 className="text-[11px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">{t(cat.title)}</h4>
-                <div className="grid grid-cols-1 gap-1">
+                <div className="grid grid-cols-2 gap-2">
                   {cat.items.map(item => {
                     const Icon = item.icon;
                     const path = item.id === 'url' ? '/' : `/${item.id}`;
@@ -37,9 +37,9 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
                     const finalUrl = `${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedPath}`;
                     
                     return (
-                      <RouterLink key={item.id} to={finalUrl} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-[#102040] transition-colors text-zinc-700 dark:text-zinc-300">
-                        <Icon className="w-4 h-4 opacity-70" />
-                        <span className="text-[13px] font-bold">{item.label}</span>
+                      <RouterLink key={item.id} to={finalUrl} onClick={onClose} className="flex items-center gap-2 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg hover:border-blue-300 dark:hover:border-blue-700 transition-colors text-zinc-700 dark:text-zinc-300 shadow-sm">
+                        <Icon className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
+                        <span className="text-[10.5px] font-bold uppercase truncate">{item.label}</span>
                       </RouterLink>
                     );
                   })}
@@ -60,14 +60,14 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
           {openSection === 'scanGroup' ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
         </button>
         {openSection === 'scanGroup' && (
-          <div className="flex flex-col gap-2 pl-7 pr-2 pt-2 pb-4 animate-fade-in-up-fast">
-            <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-[#102040] transition-colors text-zinc-700 dark:text-zinc-300">
-              <Scan className="w-4 h-4 opacity-70" />
-              <span className="text-[13px] font-bold">{t('nav.scanqr', 'Scan QR Code')}</span>
+          <div className="grid grid-cols-2 gap-2 pl-7 pr-2 pt-2 pb-4 animate-fade-in-up-fast">
+            <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} onClick={onClose} className="flex items-center gap-2 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors text-zinc-700 dark:text-zinc-300 shadow-sm">
+              <Scan className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 flex-shrink-0" />
+              <span className="text-[10.5px] font-bold uppercase truncate">{t('nav.scanqr', 'Scan QR Code')}</span>
             </RouterLink>
-            <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-indigo-50 dark:hover:bg-[#102040] transition-colors text-zinc-700 dark:text-zinc-300">
-              <ScanLine className="w-4 h-4 opacity-70" />
-              <span className="text-[13px] font-bold">{t('nav.scanbarcode', 'Scan Barcode')}</span>
+            <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} onClick={onClose} className="flex items-center gap-2 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg hover:border-indigo-300 dark:hover:border-indigo-700 transition-colors text-zinc-700 dark:text-zinc-300 shadow-sm">
+              <ScanLine className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 flex-shrink-0" />
+              <span className="text-[10.5px] font-bold uppercase truncate">{t('nav.scanbarcode', 'Scan Barcode')}</span>
             </RouterLink>
           </div>
         )}
@@ -95,13 +95,13 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
             {BARCODE_CATEGORIES.map((cat, i) => (
               <div key={i} className="flex flex-col">
                 <h4 className="text-[11px] font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">{t(cat.title)}</h4>
-                <div className="grid grid-cols-2 gap-1">
+                <div className="grid grid-cols-3 gap-2">
                   {cat.items.map(format => {
                     const barcodePath = localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator';
                     const finalUrl = `${currentLangCode === 'en' ? '' : '/' + currentLangCode}${barcodePath}?format=${format}`;
                     return (
-                      <RouterLink key={format} to={finalUrl} onClick={onClose} className="flex items-center gap-3 p-2 rounded-xl hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors text-zinc-700 dark:text-zinc-300">
-                        <span className="text-[13px] font-bold font-mono">{format}</span>
+                      <RouterLink key={format} to={finalUrl} onClick={onClose} className="flex items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg hover:border-emerald-300 dark:hover:border-emerald-700 transition-colors text-zinc-700 dark:text-zinc-300 shadow-sm">
+                        <span className="text-[10px] font-bold font-mono uppercase truncate">{format}</span>
                       </RouterLink>
                     );
                   })}
