@@ -127,17 +127,17 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
     <div className="hidden xl:flex flex-1 justify-center items-center gap-3 xl:gap-6">
       
       {/* 1. Scan QR (Static Link) */}
-      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-qr') ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400'}`}>
-        {t('nav.scanqr', 'Scan QR')}
+      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[10.5px] xl:text-[12px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-qr') ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400'}`}>
+        {t('nav.scanqr', 'Scan QR Code')}
       </RouterLink>
 
       {/* 2. Scan Barcode (Static Link) */}
-      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-barcode') ? 'text-indigo-600 dark:text-indigo-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400'}`}>
+      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[10.5px] xl:text-[12px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-barcode') ? 'text-emerald-600 dark:text-emerald-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400'}`}>
         {t('nav.scanbarcode', 'Scan Barcode')}
       </RouterLink>
 
       {/* 3. Barcode Maker (Static Link) */}
-      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/barcode') ? 'text-purple-600 dark:text-purple-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400'}`}>
+      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[10.5px] xl:text-[12px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/barcode') ? 'text-purple-600 dark:text-purple-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400'}`}>
         {t('nav.barcode', 'Barcode Maker')}
       </RouterLink>
 
