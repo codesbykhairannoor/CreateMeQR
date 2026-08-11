@@ -1,21 +1,37 @@
 {
-  "name": "CreateMeQR - Free QR Code Generator",
-  "short_name": "CreateMeQR",
-  "description": "100% Free Editable QR Code Generator with Custom Logos and Colors.",
+  "name": "CreateMy-QR - Free QR Code Generator",
+  "short_name": "CreateMy-QR",
+  "description": "100% Free QR Code Generator with Custom Logo, Colors, and 46+ tools. No signup, no expiry, no watermark. Fully offline-capable.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#040814",
   "theme_color": "#09090b",
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "any",
+  "categories": ["utilities", "productivity", "developer"],
+  "scope": "/",
+  "id": "createmy-qr",
   "icons": [
     {
       "src": "/favicon.svg",
-      "sizes": "192x192",
-      "type": "image/svg+xml"
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     },
     {
-      "src": "/favicon.svg",
+      "src": "/logoqr.png",
       "sizes": "512x512",
-      "type": "image/svg+xml"
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "CreateMy-QR — Free QR Code Generator"
     }
   ]
 }

@@ -1,20 +1,46 @@
 User-agent: *
 Allow: /
 
-# Welcome AI Search Engines & LLM Crawlers (Perplexity, ChatGPT Search, Claude, Gemini)
+# LLMs.txt for AI Agents & Search Overviews
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /llms-*.txt
+
+# Welcome AI Search Engines & LLM Crawlers
 User-agent: GPTBot
 Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
+
 User-agent: ClaudeBot
 Allow: /
+
 User-agent: Google-Extended
 Allow: /
+
 User-agent: Applebot
 Allow: /
 
-# LLMs.txt for AI Agents & Search Overviews
-Allow: /llms.txt
-Allow: /llms-*.txt
+User-agent: Bytespider
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
 
 Sitemap: https://createmy-qr.com/sitemap.xml

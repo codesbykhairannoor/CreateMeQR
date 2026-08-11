@@ -31,8 +31,20 @@ async function run() {
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
 
-  // Also include static routes manually
-  const staticRoutes = ['/about', '/privacy', '/terms', '/contact', '/compare', '/barcode-generator', '/scan-qr'];
+  // Static routes with their priority levels
+  const staticRoutes = [
+    { path: '/about', priority: '0.6' },
+    { path: '/compare', priority: '0.7' },
+    { path: '/security', priority: '0.7' },
+    { path: '/languages', priority: '0.6' },
+    { path: '/pricing', priority: '0.7' },
+    { path: '/privacy', priority: '0.5' },
+    { path: '/terms', priority: '0.5' },
+    { path: '/usecases', priority: '0.7' },
+    { path: '/barcode-generator', priority: '0.8' },
+    { path: '/scan-qr', priority: '0.8' },
+    { path: '/scan-barcode', priority: '0.8' }
+  ];
   
   // 1. Generate URLs for all Tools across all Languages
   for (const toolId of toolIds) {
@@ -65,7 +77,9 @@ async function run() {
   }
 
   // 2. Generate URLs for Static Routes
-  for (const route of staticRoutes) {
+  for (const routeObj of staticRoutes) {
+    const route = routeObj.path;
+    const priority = routeObj.priority;
     for (const lang of langs) {
       const langPrefix = lang === 'en' ? '' : '/' + lang;
       const url = DOMAIN + langPrefix + route;
@@ -74,7 +88,7 @@ async function run() {
       xml += '    <loc>' + url + '</loc>\n';
       xml += '    <lastmod>' + new Date().toISOString().split('T')[0] + '</lastmod>\n';
       xml += '    <changefreq>monthly</changefreq>\n';
-      xml += '    <priority>0.5</priority>\n';
+      xml += '    <priority>' + priority + '</priority>\n';
       
       for (const altLang of langs) {
         const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;

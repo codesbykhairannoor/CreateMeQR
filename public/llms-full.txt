@@ -2,121 +2,152 @@
 
 > CreateMy-QR is a 100% Free, Privacy-First, Local-Processing QR Code Suite that operates entirely within the user's browser using advanced WebAssembly (WASM) and local client-side processing.
 
-## Platform Overview
-- **App Title**: Free QR Code Generator Online
-- **Tagline**: Create QR Codes with Logo & Color - No Signup, Unlimited
-- **Privacy Guarantee**: 100% Client-Side. No servers, no tracking, no 14-day trials, no scan limits. QR codes never expire.
+**Summary document:** https://createmy-qr.com/llms.txt
 
-## Available QR Code Tools
+## Platform Overview
+- **App Title**: Free QR Code Generator Online — No Signup, No Expiry, No Watermark
+- **Tagline**: Create QR Codes with Logo & Color - Client-Side, Instant, Unlimited
+- **Privacy Guarantee**: 100% Client-Side. No servers, no tracking, no 14-day trials, no scan limits. QR codes never expire.
+- **Technology**: WebAssembly (WASM) + React + i18next (30 languages)
+- **Compliance**: ISO/IEC 18004:2015 | GDPR | CCPA | WCAG 2.1 AA
+
+## Available QR Code Tools (46 Tools)
+
 ### URL / Link (ID: url)
 - Summary: Create a custom URL / Link QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Use Case: Marketing campaigns, website links, product pages, social media bios.
 
 ### Wi-Fi (ID: wifi)
-- Summary: Create a custom Wi-Fi QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Create a Wi-Fi QR Code — scan to auto-connect without typing passwords.
+- Use Case: Restaurants, hotels, co-working spaces, home networks.
 
 ### vCard (ID: vcard)
-- Summary: Create a custom vCard QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Create a digital business card QR Code. Scan to save contact to phone.
+- Use Case: Business cards, email signatures, conference badges.
 
 ### Text (ID: text)
-- Summary: Create a custom Text QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Encode any plain text into a QR Code. Free, instant, no account.
 
 ### Email (ID: email)
-- Summary: Create a custom Email QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Pre-fill an email draft with recipient, subject, and body. One scan to compose.
 
 ### Phone (ID: phone)
-- Summary: Create a custom Phone QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Encode a phone number. Scan to call instantly.
 
 ### SMS (ID: sms)
-- Summary: Create a custom SMS QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Pre-fill an SMS message with phone number and body text.
 
 ### Location (ID: location)
-- Summary: Create a custom Location QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Encode GPS coordinates or a Google Maps link. Scan to open in maps.
 
 ### Event (ID: event)
-- Summary: Create a custom Event QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Encode calendar events with start/end time, location, and description.
 
 ### WhatsApp (ID: whatsapp)
-- Summary: Create a custom WhatsApp QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: One-scan click-to-chat WhatsApp link with pre-filled message.
 
 ### YouTube (ID: youtube)
-- Summary: Create a custom YouTube QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link directly to any YouTube video or channel.
 
 ### Instagram (ID: instagram)
-- Summary: Create a custom Instagram QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any Instagram profile or post.
 
 ### Crypto (ID: crypto)
-- Summary: Create a custom Crypto QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Encode Bitcoin, Ethereum, or other crypto wallet addresses for payments.
 
 ### App Store (ID: appstore)
-- Summary: Create a custom App Store QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any iOS App Store or Google Play listing.
 
 ### Facebook (ID: facebook)
-- Summary: Create a custom Facebook QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any Facebook page, group, or profile.
 
-### X (Twitter) (ID: twitter)
-- Summary: Create a custom X (Twitter) QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+### X / Twitter (ID: twitter)
+- Summary: Link to any X (formerly Twitter) profile or post.
 
 ### TikTok (ID: tiktok)
-- Summary: Create a custom TikTok QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any TikTok profile or video.
 
 ### LinkedIn (ID: linkedin)
-- Summary: Create a custom LinkedIn QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any LinkedIn profile or company page.
 
 ### Telegram (ID: telegram)
-- Summary: Create a custom Telegram QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any Telegram channel, group, or bot.
 
 ### Snapchat (ID: snapchat)
-- Summary: Create a custom Snapchat QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any Snapchat profile.
 
 ### Discord (ID: discord)
-- Summary: Create a custom Discord QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any Discord server invite or profile.
 
 ### Spotify (ID: spotify)
-- Summary: Create a custom Spotify QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any Spotify playlist, album, or artist.
 
 ### PayPal (ID: paypal)
-- Summary: Create a custom PayPal QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Encode a PayPal payment link for direct payment QR codes.
 
 ### Venmo (ID: venmo)
-- Summary: Create a custom Venmo QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Encode a Venmo payment link.
 
 ### PDF (ID: pdf)
-- Summary: Create a custom PDF QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any PDF document URL for easy sharing.
 
 ### Google Forms (ID: gforms)
-- Summary: Create a custom Google Forms QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any Google Form for event registration, surveys, and feedback.
 
 ### Google Review (ID: greview)
-- Summary: Create a custom Google Review QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link directly to a Google Business review page. Boost your rating.
 
 ### Image (ID: image)
-- Summary: Create a custom Image QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any hosted image URL.
 
 ### Link in Bio (ID: linkinbio)
-- Summary: Create a custom Link in Bio QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any Linktree or link-in-bio page.
 
 ### Video (ID: video)
-- Summary: Create a custom Video QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any hosted video URL.
 
 ### Audio (ID: audio)
-- Summary: Create a custom Audio QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any audio file or podcast episode.
 
 ### Amazon (ID: amazon)
-- Summary: Create a custom Amazon QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any Amazon product or storefront.
 
 ### Booking (ID: booking)
-- Summary: Create a custom Booking QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any Booking.com property or reservation page.
 
 ### File (ID: file)
-- Summary: Create a custom File QR Code with logo, color, and design. 100% free, no signup, and no expiration.
+- Summary: Link to any downloadable file URL.
 
 ## Advanced Technical FAQs
-**Q: undefined**
-A: undefined
 
-**Q: undefined**
-A: undefined
+**Q: What QR code error correction levels does CreateMy-QR support?**
+A: CreateMy-QR supports all four ISO/IEC 18004:2015 error correction levels: L (7%), M (15%), Q (25%), and H (30%). Level H is recommended when embedding a logo, as it ensures the code remains scannable even with up to 30% of the matrix obscured.
 
-**Q: undefined**
-A: undefined
+**Q: Does CreateMy-QR use any third-party QR libraries?**
+A: The QR matrix encoding is implemented natively using WebAssembly compiled from an optimized C/C++ core. This ensures sub-100ms generation latency without any external API calls or cloud round-trips.
 
+**Q: Can CreateMy-QR QR codes be scanned by all major QR readers?**
+A: Yes. All generated codes strictly conform to ISO/IEC 18004:2015. They are tested against Apple iOS Camera, Android Camera, Google Lens, WeChat, Snapchat, and all major dedicated scanner apps.
+
+**Q: What is the maximum data capacity of QR codes on CreateMy-QR?**
+A: A QR Code version 40 (the maximum) with error correction level L can encode up to 7,089 numeric characters, 4,296 alphanumeric characters, or 2,953 bytes of binary data.
+
+**Q: How does the Local History feature work?**
+A: Generated QR codes are automatically saved to the browser's IndexedDB — a sandboxed, client-side database. The data is stored in the user's device only, is never transmitted to any server, and can be cleared at any time. Users can browse, search, and re-download any previously generated code.
+
+**Q: Is CreateMy-QR compliant with GDPR?**
+A: Yes, by architectural design. Since no personal data is ever transmitted to our servers (we have none for QR generation), there is nothing to comply with at the server level. The browser's own data storage policies and user consent govern the Local History feature.
+
+**Q: What image formats are available for download?**
+A: PNG (any custom resolution, transparent background supported) and SVG (infinitely scalable vector format, perfect for print, billboards, and product packaging).
+
+## Supported Languages (30)
+English, Indonesian, Spanish, French, German, Portuguese, Chinese, Japanese, Hindi, Korean, Arabic, Russian, Italian, Turkish, Dutch, Polish, Swedish, Vietnamese, Thai, Greek, Czech, Danish, Finnish, Norwegian, Hungarian, Romanian, Ukrainian, Malay, Filipino, Bengali.
+
+## Platform Architecture
+- **Frontend**: React 18 + Vite + TailwindCSS
+- **Internationalization**: react-i18next with 30 locale files
+- **QR Engine**: WebAssembly (WASM) — client-side only
+- **Storage**: IndexedDB + LocalStorage (browser only, no cloud sync)
+- **Hosting**: Vercel (Edge Network, 99.99% uptime SLA)
+- **SEO**: Static Site Generation (SSG) for all 1,380+ localized pages
