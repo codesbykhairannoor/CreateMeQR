@@ -210,9 +210,8 @@ export default function HomePage({ currentLangCode = 'en' }) {
           </h1>
 
           {/* Subtitle */}
-          <p style={{
+          <p className="text-zinc-600 dark:text-zinc-400" style={{
             fontSize: 'clamp(1.05rem, 2vw, 1.25rem)',
-            color: 'var(--text-muted, rgba(0,0,0,0.55))',
             lineHeight: 1.6,
             maxWidth: 780,
             margin: '0 auto 40px',
