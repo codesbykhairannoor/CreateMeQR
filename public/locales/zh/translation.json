@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR 代码生成器 - 免费和自定义",
-    "h1": "免费 {{tool}} 二维码生成器",
-    "description": "创建带有徽标、颜色和设计的自定义 {{tool}} 二维码。 100% 免费，无需注册，也不会过期。"
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

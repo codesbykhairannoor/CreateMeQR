@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "Générateur de code QR {{tool}} - Gratuit et personnalisé",
-    "h1": "Générateur de code QR {{tool}} gratuit",
-    "description": "Créez un code QR {{tool}} personnalisé avec logo, couleur et design. 100% gratuit, sans inscription et sans expiration."
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

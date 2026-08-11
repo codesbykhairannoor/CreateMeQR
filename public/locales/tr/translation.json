@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR Kod Oluşturucu - Ücretsiz ve Özel",
-    "h1": "Ücretsiz {{tool}} QR Kod Oluşturucu",
-    "description": "Logo, renk ve tasarıma sahip özel bir {{tool}} QR Kodu oluşturun. %100 ücretsiz, kayıt yok ve son kullanma tarihi yok."
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

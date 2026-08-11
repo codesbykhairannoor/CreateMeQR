@@ -259,8 +259,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR Code Generator - Gratuit și personalizat",
-    "h1": "Generator gratuit de coduri QR {{tool}}",
-    "description": "Creați un cod QR {{tool}} personalizat cu logo, culoare și design. 100% gratuit, fără înscriere și fără expirare."
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

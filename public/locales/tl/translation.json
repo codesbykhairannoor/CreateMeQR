@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR Code Generator - Libre at Custom",
-    "h1": "Libreng {{tool}} QR Code Generator",
-    "description": "Gumawa ng custom na {{tool}} QR Code na may logo, kulay, at disenyo. 100% libre, walang signup, at walang expiration."
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

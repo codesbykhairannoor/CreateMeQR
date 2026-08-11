@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR-codegenerator - gratis en aangepast",
-    "h1": "Gratis {{tool}} QR-codegenerator",
-    "description": "Maak een aangepaste {{tool}} QR-code met logo, kleur en ontwerp. 100% gratis, geen aanmelding en geen vervaldatum."
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

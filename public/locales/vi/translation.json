@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "Trình tạo mã QR {{tool}} - Miễn phí & Tùy chỉnh",
-    "h1": "Trình tạo mã QR {{tool}} miễn phí",
-    "description": "Tạo Mã QR {{tool}} tùy chỉnh với logo, màu sắc và thiết kế. Miễn phí 100%, không cần đăng ký và không hết hạn."
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

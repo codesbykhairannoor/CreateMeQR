@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "Генератор QR-коду {{tool}} – безкоштовний і користувацький",
-    "h1": "Безкоштовний генератор QR-кодів {{tool}}",
-    "description": "Створіть власний QR-код {{tool}} із логотипом, кольором і дизайном. 100% безкоштовно, без реєстрації та терміну дії."
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

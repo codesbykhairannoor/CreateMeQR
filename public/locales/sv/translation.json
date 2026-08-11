@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR Code Generator - Gratis & anpassad",
-    "h1": "Gratis {{tool}} QR-kodgenerator",
-    "description": "Skapa en anpassad {{tool}} QR-kod med logotyp, färg och design. 100 % gratis, ingen registrering och inget utgångsdatum."
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

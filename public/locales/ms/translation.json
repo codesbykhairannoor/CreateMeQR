@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "Penjana Kod QR {{tool}} - Percuma & Tersuai",
-    "h1": "Penjana Kod QR {{tool}} Percuma",
-    "description": "Buat Kod QR {{tool}} tersuai dengan logo, warna dan reka bentuk. 100% percuma, tiada pendaftaran dan tiada tamat tempoh."
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

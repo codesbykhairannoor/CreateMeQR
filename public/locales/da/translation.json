@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR Code Generator - Gratis og brugerdefineret",
-    "h1": "Gratis {{tool}} QR Code Generator",
-    "description": "Opret en brugerdefineret {{tool}} QR-kode med logo, farve og design. 100% gratis, ingen tilmelding og ingen udløb."
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR কোড জেনারেটর - বিনামূল্যে এবং কাস্টম",
-    "h1": "বিনামূল্যে {{tool}} QR কোড জেনারেটর",
-    "description": "লোগো, রঙ এবং ডিজাইন সহ একটি কাস্টম {{tool}} QR কোড তৈরি করুন৷ 100% বিনামূল্যে, কোন সাইনআপ নেই, এবং কোন মেয়াদ শেষ হয় না।"
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

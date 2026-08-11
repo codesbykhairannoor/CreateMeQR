@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "{{tool}} เครื่องสร้างโค้ด QR - ฟรีและกำหนดเอง",
-    "h1": "ฟรี {{tool}} เครื่องสร้างโค้ด QR",
-    "description": "สร้างโค้ด QR {{tool}} แบบกำหนดเองพร้อมโลโก้ สี และการออกแบบ ฟรี 100% ไม่มีการสมัครและไม่มีวันหมดอายุ"
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

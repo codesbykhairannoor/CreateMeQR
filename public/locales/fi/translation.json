@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "{{tool}} QR-koodigeneraattori - ilmainen ja räätälöity",
-    "h1": "Ilmainen {{tool}} QR Code Generator",
-    "description": "Luo mukautettu {{tool}} QR-koodi logolla, värillä ja suunnittelulla. 100 % ilmainen, ei rekisteröitymistä eikä vanhenemista."
+    "h1": "{{tool}} QR Code",
+    "description": "Convert your {{tool}} data into a custom QR code directly in your browser. 100% processed offline for absolute privacy. Free, no limits, and highly secure."
   },
   "faqTools": {
     "url": {

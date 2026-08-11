@@ -260,8 +260,8 @@
   },
   "seoTool": {
     "title": "{{tool}} Pembuat Kode QR - Gratis & Khusus",
-    "h1": "Pembuat Kode QR {{tool}} Gratis",
-    "description": "Buat Kode QR {{tool}} khusus dengan logo, warna, dan desain. 100% gratis, tanpa pendaftaran, dan tanpa masa berlaku."
+    "h1": "QR Code {{tool}}",
+    "description": "Ubah data {{tool}} Anda menjadi QR code kustom langsung di browser. 100% diproses offline untuk privasi absolut. Gratis, tanpa batas, dan sangat aman."
   },
   "faqTools": {
     "url": {
