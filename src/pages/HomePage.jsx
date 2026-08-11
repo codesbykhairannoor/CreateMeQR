@@ -193,14 +193,13 @@ export default function HomePage({ currentLangCode = 'en' }) {
 
       {/* ═══════ SECTION 1: HERO ═══════ */}
       <section style={{ position: 'relative', paddingTop: 'clamp(56px, 9vw, 96px)', paddingBottom: '56px', textAlign: 'center' }}>
-        <div style={{ maxWidth: 1440, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
 
           {/* Monumental headline — class matches audiovideo .hero-title pattern */}
           <h1
             className="homepage-hero-title"
             style={{
               marginBottom: 24,
-              maxWidth: 900,
               margin: '0 auto 24px',
             }}
           >

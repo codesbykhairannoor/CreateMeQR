@@ -118,7 +118,7 @@ export default function MainLayout({ children }) {
 
       {/* Premium Glass Navbar */}
       <nav className="fixed top-0 w-full bg-white/70 dark:bg-[#040a18]/70 backdrop-blur-2xl z-50 transition-colors duration-500">
-        <div className="relative max-w-[1440px] mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="relative max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
             <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-7 h-7 md:w-8 md:h-8 rounded-xl object-contain shadow-sm" />
             <span className="text-lg md:text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight hidden sm:block">CreateMy-QR</span>
