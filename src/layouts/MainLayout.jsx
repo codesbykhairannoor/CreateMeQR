@@ -178,7 +178,7 @@ export default function MainLayout({ children }) {
 
       {/* Mobile Navigation Overlay */}
       {showMobileNav && (
-        <div className="xl:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-white/95 dark:bg-[#040a18]/95 backdrop-blur-3xl overflow-y-auto">
+        <div className="xl:hidden fixed inset-x-0 top-16 z-40 max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain bg-transparent">
           <MobileNav 
             currentLangCode={currentLangCode} 
             onClose={() => setShowMobileNav(false)} 

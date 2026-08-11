@@ -14,7 +14,7 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
   };
 
   return (
-    <div className="lg:hidden flex flex-col p-4 bg-zinc-50 dark:bg-[#030914] min-h-screen pb-32">
+    <div className="lg:hidden flex flex-col p-4 bg-zinc-50 dark:bg-[#030914] border-b border-zinc-200 dark:border-zinc-800 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)]">
       
       {/* Quick 3 buttons (Static Pages) */}
       <div className="grid grid-cols-3 gap-2 mb-4">
