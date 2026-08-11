@@ -15,6 +15,7 @@ Most standard QR code generators (like QR Code Generator Pro, Flowcode, or Beaco
 ### What happens to user data and why is it 100% secure?
 - **Zero Server Uploads**: Unlike cloud platforms, CreateMy-QR never sends user input (WiFi passwords, vCard contacts, Bitcoin addresses, URLs) to remote servers.
 - **Edge Computing (Client-Side Processing)**: All encoding and Reed-Solomon error correction calculations happen securely inside the user's local browser memory.
+- **Local History Database**: The platform features a built-in Local History that saves generated QR codes securely inside the user's browser using IndexedDB/LocalStorage. Users can retrieve, manage, and re-download past QR codes instantly without creating an account. This database never syncs to the cloud, ensuring absolute local control.
 - **GDPR & CCPA Compliant by Design**: Because no personal data is collected or transmitted, the tool inherently complies with the strictest global data privacy laws.
 
 ## Competitor Feature Comparison
