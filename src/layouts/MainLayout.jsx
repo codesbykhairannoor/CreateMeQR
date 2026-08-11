@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate, Link as RouterLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Globe, Moon, Sun, X, Menu, Clock } from 'lucide-react';
+import { Globe, Moon, Sun, X, Menu, Clock, Heart } from 'lucide-react';
 import { LANGS } from '../config/site';
 import { localizedRoutes, routeToToolMap } from '../config/localizedRoutes';
 import MegaNav from '../components/nav/MegaNav';
@@ -118,8 +118,8 @@ export default function MainLayout({ children }) {
 
       {/* Premium Glass Navbar */}
       <nav className="fixed top-0 w-full bg-white/70 dark:bg-[#040a18]/70 backdrop-blur-2xl z-50 transition-colors duration-500">
-        <div className="relative w-full max-w-7xl xl:max-w-none xl:w-[max(80rem,max-content)] mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2 cursor-pointer whitespace-nowrap" onClick={() => navigate(currentLangCode === 'en' ? '/' : `/${currentLangCode}`)}>
+        <div className="relative w-full max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+          <div className="flex items-center gap-2 cursor-pointer whitespace-nowrap flex-shrink-0" onClick={() => navigate(currentLangCode === 'en' ? '/' : `/${currentLangCode}`)}>
             <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-7 h-7 md:w-8 md:h-8 rounded-xl object-contain shadow-sm" />
             <span className="text-lg md:text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight hidden sm:block">
               CreateMy-<span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-blue-500">QR</span>
@@ -128,7 +128,7 @@ export default function MainLayout({ children }) {
           
           <MegaNav currentLangCode={currentLangCode} />
 
-          <div className="flex items-center gap-1 md:gap-2">
+          <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
             <button onClick={() => setShowHistory(true)} title={t('history.title', 'Local History')} className="flex p-1.5 md:p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
               <Clock className="w-5 h-5 md:w-5 md:h-5" />
             </button>
@@ -203,15 +203,53 @@ export default function MainLayout({ children }) {
         {children}
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-blue-100 dark:border-[#102040] bg-white dark:bg-[#040a18] py-12 text-center text-zinc-500 dark:text-zinc-600 text-sm mt-auto">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>© {new Date().getFullYear()} CreateMy-QR Technologies. All rights reserved.</p>
-          <div className="flex gap-6 font-medium text-zinc-900 dark:text-white">
-            <RouterLink to="/about" className="hover:underline">About</RouterLink>
-            <RouterLink to="/privacy" className="hover:underline">Privacy Policy</RouterLink>
-            <RouterLink to="/terms" className="hover:underline">Terms of Service</RouterLink>
-            <RouterLink to="/contact" className="hover:underline">Contact</RouterLink>
+      {/* Premium Minimalist Footer */}
+      <footer className="border-t border-zinc-200 dark:border-[#102040] bg-[#f8fafc] dark:bg-[#040a18] pt-16 pb-12 mt-auto">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+            <div className="lg:col-span-1">
+              <div className="flex items-center gap-2 mb-4">
+                <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-8 h-8 rounded-xl object-contain shadow-sm" />
+                <span className="text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight">
+                  CreateMy-<span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-blue-500">QR</span>
+                </span>
+              </div>
+              <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed mb-6">
+                The world's fastest, 100% free, privacy-first QR Code generator. Powered by client-side WebAssembly.
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="font-bold text-zinc-900 dark:text-white mb-4">Product</h4>
+              <ul className="flex flex-col gap-3 text-sm text-zinc-500 dark:text-zinc-400">
+                <li><RouterLink to="/pricing" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Pricing</RouterLink></li>
+                <li><RouterLink to="/security" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Security</RouterLink></li>
+                <li><RouterLink to="/compare" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Compare Tools</RouterLink></li>
+                <li><RouterLink to="/use-cases" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Use Cases</RouterLink></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-bold text-zinc-900 dark:text-white mb-4">Company</h4>
+              <ul className="flex flex-col gap-3 text-sm text-zinc-500 dark:text-zinc-400">
+                <li><RouterLink to="/about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Us</RouterLink></li>
+                <li><RouterLink to="/languages" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Supported Languages</RouterLink></li>
+                <li><a href="mailto:support@createmy-qr.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact Support</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-bold text-zinc-900 dark:text-white mb-4">Legal</h4>
+              <ul className="flex flex-col gap-3 text-sm text-zinc-500 dark:text-zinc-400">
+                <li><RouterLink to="/privacy" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Privacy Policy</RouterLink></li>
+                <li><RouterLink to="/terms" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Terms of Service</RouterLink></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="pt-8 border-t border-zinc-200 dark:border-[#102040] flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-zinc-500 dark:text-zinc-500">
+            <p>© {new Date().getFullYear()} CreateMy-QR Technologies. All rights reserved. ISO/IEC 18004:2015 Compliant.</p>
+            <p>Made with <Heart className="inline w-3 h-3 text-red-500 mx-1" /> for a private web.</p>
           </div>
         </div>
       </footer>

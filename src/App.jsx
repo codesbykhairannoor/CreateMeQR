@@ -6,14 +6,17 @@ import MainLayout from './layouts/MainLayout';
 import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import QrWorkspace from './pages/QrWorkspace';
-import About from './pages/About';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfService from './pages/TermsOfService';
+import AboutUs from './pages/AboutUs';
 import Compare from './pages/Compare';
+import Languages from './pages/Languages';
+import Pricing from './pages/Pricing';
+import Privacy from './pages/Privacy';
+import Security from './pages/Security';
+import Terms from './pages/Terms';
+import UseCases from './pages/UseCases';
 import BarcodeGenerator from './pages/BarcodeGenerator';
 import ScanQr from './pages/ScanQr';
 import ScanBarcode from './pages/ScanBarcode';
-import Contact from './pages/Contact';
 import LandingContent from './components/LandingContent';
 import SeoArticle from './components/SeoArticle';
 import { PSEO_ROUTES, LANGS } from './config/site';
@@ -60,10 +63,13 @@ export default function App() {
 
   
   const isAbout = slug === '/about';
-  const isPrivacy = slug === '/privacy';
-  const isTerms = slug === '/terms';
   const isCompare = slug === '/compare';
-  const isContact = slug === '/contact';
+  const isLanguages = slug === '/languages';
+  const isPricing = slug === '/pricing';
+  const isPrivacy = slug === '/privacy';
+  const isSecurity = slug === '/security';
+  const isTerms = slug === '/terms';
+  const isUseCases = slug === '/use-cases';
   // Home landing page: '/' means the new HomePage (not the URL QR tool)
   const isHome = slug === '/' || slug === '';
   
@@ -71,7 +77,7 @@ export default function App() {
   const isBarcode = toolType === 'barcode' || slug === '/barcode-generator';
   const isScanQr = toolType === 'scanqr' || slug === '/scan-qr';
   const isScanBarcode = toolType === 'scanbarcode' || slug === '/scan-barcode';
-  const isStaticPage = isHome || isAbout || isPrivacy || isTerms || isCompare || isContact || isBarcode || isScanQr || isScanBarcode;
+  const isStaticPage = isHome || isAbout || isCompare || isLanguages || isPricing || isPrivacy || isSecurity || isTerms || isUseCases || isBarcode || isScanQr || isScanBarcode;
 
   const currentType = routeToToolMap[currentLangCode]?.[slug] || 'url';
   // For home page, use 'url' as fallback tool type for SEO meta
@@ -239,11 +245,14 @@ export default function App() {
         </>
       ) : (
         <>
-          {isAbout && <About />}
-          {isPrivacy && <PrivacyPolicy />}
-          {isTerms && <TermsOfService />}
+          {isAbout && <AboutUs />}
           {isCompare && <Compare />}
-          {isContact && <Contact />}
+          {isLanguages && <Languages />}
+          {isPricing && <Pricing />}
+          {isPrivacy && <Privacy />}
+          {isSecurity && <Security />}
+          {isTerms && <Terms />}
+          {isUseCases && <UseCases />}
           {isBarcode && (
             <>
               <BarcodeGenerator />

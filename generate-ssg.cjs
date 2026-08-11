@@ -57,24 +57,30 @@ async function run() {
     // Inject static pages into the generation loop
     const staticPages = {
       '/about': 'about',
-      '/privacy': 'privacy',
-      '/terms': 'terms',
       '/compare': 'compare',
-      '/contact': 'contact'
+      '/languages': 'languages',
+      '/pricing': 'pricing',
+      '/privacy': 'privacy',
+      '/security': 'security',
+      '/terms': 'terms',
+      '/use-cases': 'use-cases'
     };
     const allPages = { ...toolMap, ...staticPages };
     
     for (const [localizedSlug, toolId] of Object.entries(allPages)) {
       let title, description;
       
-      if (['about', 'privacy', 'terms', 'compare', 'contact'].includes(toolId)) {
+      if (['about', 'compare', 'languages', 'pricing', 'privacy', 'security', 'terms', 'use-cases'].includes(toolId)) {
         // Fallback or exact titles for static pages
         const staticTitles = {
           'about': 'About Us',
+          'compare': 'Compare Tools',
+          'languages': 'Supported Languages',
+          'pricing': '100% Free Pricing',
           'privacy': 'Privacy Policy',
+          'security': 'Security Architecture',
           'terms': 'Terms of Service',
-          'contact': 'Contact Support',
-          'compare': 'Compare Tools'
+          'use-cases': 'Use Cases'
         };
         title = `${staticTitles[toolId]} | CreateMy-QR`;
         description = `Learn more about CreateMy-QR ${staticTitles[toolId].toLowerCase()}.`;
