@@ -11,7 +11,7 @@ export default function UseCases() {
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.usecases.seoTitle', 'Use Cases')}</title>
+        <title>{`${t('appTitle', 'CreateMy-QR')} | ${t('static.usecases.seoTitle', 'Use Cases')}`}</title>
       </Helmet>
       
       <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">

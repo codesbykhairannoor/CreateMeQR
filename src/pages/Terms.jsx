@@ -9,7 +9,7 @@ export default function Terms() {
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.terms.seoTitle', 'Terms of Service')}</title>
+        <title>{`${t('appTitle', 'CreateMy-QR')} | ${t('static.terms.seoTitle', 'Terms of Service')}`}</title>
       </Helmet>
       
       <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">

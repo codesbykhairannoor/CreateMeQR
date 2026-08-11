@@ -134,7 +134,19 @@
     "privacy": "Adatvédelmi szabályzat",
     "terms": "Szolgáltatási feltételek",
     "copyright": "© {{year}} CreateMy-QR. Ingyenes Online QR-kód Generátor.",
-    "embed": "Widget beágyazása"
+    "embed": "Widget beágyazása",
+    "product": "Termék",
+    "pricing": "Árképzés",
+    "security": "Biztonság",
+    "compare": "Eszközök összehasonlítása",
+    "useCases": "Használati esetek",
+    "company": "Vállalat",
+    "aboutUs": "Rólunk",
+    "languages": "Támogatott nyelvek",
+    "contact": "Kapcsolatfelvétel az ügyfélszolgálattal",
+    "legal": "Jogi",
+    "madewith": "Készült:",
+    "forprivateweb": "privát webhez."
   },
   "badge": "100% Free Forever. No Ads. No Signup.",
   "tabs": {
@@ -1142,7 +1154,8 @@
     "generator": "ÖSSZES QR-SZERSZÁM",
     "barcode": "Vonalkód készítő",
     "scanqr": "QR-kód beolvasása",
-    "scanbarcode": "Vonalkód beolvasása"
+    "scanbarcode": "Vonalkód beolvasása",
+    "scanGroup": "Szkenner"
   },
   "contact": {
     "title": "Lépjen kapcsolatba velünk",
@@ -1210,7 +1223,8 @@
     "saveBtn": "Mentés a böngésző előzményei közé",
     "saved": "A történelembe mentve!",
     "savedAt": "Mentve:",
-    "loadBtn": "Visszaállítás"
+    "loadBtn": "Visszaállítás",
+    "cleared": "Törölve!"
   },
   "home": {
     "seoTitle": "CreateMy-QR — Ingyenes QR-kód- és vonalkódgenerátor |37 Online eszközök",
@@ -1293,7 +1307,27 @@
       "speed": "Azonnali (Nincs hálózati késleltetés)",
       "speedThem": "Lassú (feltöltés/letöltés várakozás)",
       "offline": "Offline módban működik",
-      "offlineThem": "Gyors internet szükséges"
+      "offlineThem": "Gyors internet szükséges",
+      "heroBadge": "Az okos alternatíva",
+      "matrixTitle": "Funkciók összehasonlítása",
+      "th1": "Funkció",
+      "th2": "Tipikus felhő API",
+      "th3": "CreateMy-QR",
+      "tr1": "Szerverfeltöltés szükséges",
+      "tr2": "Adatvédelmi garancia",
+      "tr3": "Generációs korlátok",
+      "tr4": "Offline képesség",
+      "tr5": "Költség",
+      "tr6": "Számla regisztráció",
+      "tr7": "Feldolgozási sebesség",
+      "speedTitle": "Ne várjon a felhő API-kra",
+      "speedDesc": "A régebbi felhőeszközökkel megvárja, amíg a hálózat kommunikál a felduzzadt szervereikkel. A CreateMy-QR a WebAssembly segítségével azonnal összetett kódokat generál a helyi lemezen. A tervezésnél alapvetően gyorsabb.",
+      "privacyTitle": "Az adatvédelem jog, nem szolgáltatás",
+      "expertTitle": "Iparági szakértők egyetértenek",
+      "expertQuote": "A nem ellenőrzött felhő API-kon keresztüli adatok generálása jelentős kiberbiztonsági rés. Az olyan kliensoldali feldolgozóeszközök, mint a CreateMy-QR, az egyetlen zéró-bizalom-architektúra, amely alkalmas bizalmas hivatkozások kezelésére.",
+      "expertRole": "Vezető kiberbiztonsági kutató",
+      "ctaTitle": "Váltson még ma.",
+      "ctaDesc": "Ne kockáztasson a sebesség, a magánélet és a költségek terén. Csatlakozzon több ezer szakemberhez, akik már átváltottak a leggyorsabb offline QR-eszközkészletre."
     },
     "languages": {
       "seoTitle": "Támogatott nyelvek",
@@ -1303,7 +1337,17 @@
       "globalVisionDesc": "A hozzáférhetőség emberi jog. Az egész lakosztályunkat gondosan lefordítottuk, így kényelmesen dolgozhat anyanyelvén.",
       "listTitle": "Válassza ki a nyelvet",
       "localHistory": "Helyi tárolás engedélyezve",
-      "nativeSupport": "Natív karaktertámogatás"
+      "nativeSupport": "Natív karaktertámogatás",
+      "heroBadge": "Globális platform",
+      "gridTitle": "Válassza ki régióját",
+      "universalTitle": "Univerzális interfész",
+      "universalDesc": "A CreateMy-QR minden eszköze, gombja, hibaüzenete és útmutatója lokalizálva van. Szigorú fordítási mátrixot tartunk fenn annak biztosítása érdekében, hogy az Ön élménye natív és intuitív legyen.",
+      "fastTitle": "Nulla késleltetés, bárhol",
+      "fastDesc": "Mivel a CreateMy-QR a WebAssembly feldolgozásra támaszkodik felhőszerverek helyett, nem számít, hogy New Yorkban vagy Jakartában tartózkodik. Pontosan ugyanazt az azonnali dokumentumfeldolgozási sebességet fogja tapasztalni hálózati késleltetés nélkül.",
+      "communityTitle": "Közösségvezérelt",
+      "communityDesc": "Észrevesz egy olyan fordítást, amely kissé rossznak tűnik? Globális felhasználói bázisunkra támaszkodunk lokalizációink finomításában és tökéletesítésében. Forduljon hozzánk, és javasoljon fejlesztéseket az anyanyelvéhez.",
+      "ctaTitle": "Feldolgozásra kész?",
+      "ctaDesc": "Válassza ki az alábbi eszközt a biztonságos és ingyenes kezdéshez."
     },
     "pricing": {
       "seoTitle": "100% ingyenes ár",
@@ -1317,7 +1361,23 @@
       "f3": "Ügyféloldali feldolgozás",
       "f4": "Helytörténeti Adatbázis",
       "whyFree": "Hogyan ingyenes?",
-      "whyFreeDesc": "Mivel nem dolgozzuk fel fájljait a szervereinken, nincsenek hatalmas szerverszámláink. Az Ön készüléke a WebAssembly segítségével végzi a nehéz teherbírást."
+      "whyFreeDesc": "Mivel nem dolgozzuk fel fájljait a szervereinken, nincsenek hatalmas szerverszámláink. Az Ön készüléke a WebAssembly segítségével végzi a nehéz teherbírást.",
+      "heroBadge": "Radical Free",
+      "compTitle": "Hagyományos felhőeszközök",
+      "compCost": "20 USD",
+      "compPeriod": "/hó",
+      "comp1": "A szervereikre feltöltött adatok",
+      "comp2": "Fájlméret-korlátozások az ingyenes rétegben",
+      "comp3": "E-mail regisztráció szükséges",
+      "comp4": "Lassú hálózati feldolgozás",
+      "recommended": "AJÁNLOTT",
+      "ent1": "Vállalatnak megfelelő",
+      "ent2": "Nulla adatmegőrzés",
+      "ent3": "GDPR- és CCPA-barát",
+      "bizTitle": "Ingyenes üzleti használatra",
+      "bizDesc": "Igen, használhatja a CreateMy-QR-t cége számára. Valójában a helyi feldolgozási architektúra révén mi vagyunk az egyetlen elég biztonságos platform a szigorú vállalati környezetek, a jogi csapatok és az egészségügyi szakemberek számára.",
+      "supportTitle": "A projekt támogatása",
+      "supportDesc": "Nem számítunk fel előfizetést, de a domain és a fejlesztés életben tartása időbe telik. Ha a CreateMy-QR megmentette a napod, fontold meg, hogy megosztod a csapatoddal. A szóbeszéd az egyetlen marketingstratégiánk."
     },
     "privacy": {
       "seoTitle": "Adatvédelmi szabályzat",
@@ -1341,7 +1401,33 @@
       "noServers": "Nincs szerverfeltöltés",
       "noServersDesc": "Az Ön adatai fizikailag nem sérülhetnek fel szervereinkről, mert soha nem érnek hozzájuk.",
       "iso": "ISO-kompatibilis",
-      "isoDesc": "QR generációink megfelelnek a szigorú ISO/IEC 18004:2015 globális szabványoknak."
+      "isoDesc": "QR generációink megfelelnek a szigorú ISO/IEC 18004:2015 globális szabványoknak.",
+      "heroBadge": "Bizalmi központ",
+      "wasmTitle": "A WebAssembly forradalom",
+      "step1Title": "1. Helyi kiválasztás",
+      "step1Desc": "Kiválaszt egy fájlt. A böngésző zárolja a fájlt a helyi memóriában. Nincs hálózati kérés kezdeményezve.",
+      "step2Title": "2. Wasm motor",
+      "step2Desc": "Motorunk a lefordított WebAssembly-t közvetlenül a CPU-n futtatja a kód offline feldolgozásához.",
+      "step3Title": "3. Közvetlen mentés",
+      "step3Desc": "A feldolgozott kódot a rendszer rekonstruálja a memóriában, és közvetlenül a merevlemezre menti.",
+      "analyticsTitle": "Az Ön dokumentumai vakok számunkra",
+      "analyticsDesc": "Miközben szabványos elemzéseket használunk webhelyünk élményének javítására, szkriptjeink soha nem érintik a dokumentumokat. Nem gyűjtünk ki metaadatokat, szöveges tartalmakat vagy képeket. A homokozó teljesen önálló.",
+      "complianceTitle": "Alapértelmezés szerinti megfelelőség",
+      "complianceDesc": "Mivel a CreateMy-QR nem fér hozzá az Ön fájljaihoz, eszközeink használata automatikusan megfelel a világ legszigorúbb adatvédelmi törvényeinek.",
+      "comp1": "HIPAA (egészségügyi adatok)",
+      "comp2": "GDPR (európai adatvédelem)",
+      "comp3": "CCPA (California Privacy)",
+      "comp4": "NDA védett fájlok",
+      "verifyTitle": "Ne bízzon bennünk. Ellenőrizze.",
+      "verifyDesc": "Nem kell szót fogadnod. 3 egyszerű lépésben igazolhatja offline garanciánkat:",
+      "step1": "1. lépés",
+      "verify1": "Töltse be a CreateMy-QR.com webhelyet a böngészőjébe.",
+      "step2": "2. lépés",
+      "verify2": "Kapcsolja ki a Wi-Fi-t, vagy húzza ki az internetet.",
+      "step3": "3. lépés",
+      "verify3": "Generáljon bármilyen QR-kódot. Tökéletesen működik, bizonyítva, hogy nincs szükség szerverre.",
+      "missionTitle": "A jövő helyi",
+      "missionDesc": "Olyan webet képzelünk el, ahol a segédalkalmazások tiszteletben tartják az Ön hardverét és adatait. Üdvözöljük az ügyféloldali számítástechnika új korszakában."
     },
     "terms": {
       "seoTitle": "Szolgáltatási feltételek",
@@ -1352,7 +1438,17 @@
       "liability": "Nincs felelősség",
       "liabilityDesc": "A szerszámokat „ahogy vannak”, garancia nélkül biztosítjuk. Nem vállalunk felelősséget a generált kódokból eredő problémákért.",
       "localData": "Helyi adatok",
-      "localDataDesc": "Az előzményeket a saját böngészőjében tárolja az IndexedDB segítségével. Ha törli a böngésző adatait, az előzmények véglegesen törlődnek."
+      "localDataDesc": "Az előzményeket a saját böngészőjében tárolja az IndexedDB segítségével. Ha törli a böngésző adatait, az előzmények véglegesen törlődnek.",
+      "lastUpdated": "Utolsó frissítés: 2024. október",
+      "sec1Title": "Feltételek elfogadása",
+      "sec1Desc": "A CreateMy-QR elérésével és használatával Ön elfogadja a jelen Szolgáltatási feltételek betartását. Ha nem ért egyet a feltételek bármely részével, nincs engedélye a Szolgáltatás elérésére. Platformunkat teljesen ingyenesen biztosítjuk személyes és kereskedelmi használatra egyaránt.",
+      "sec2Title": "Helyi feldolgozási garancia",
+      "sec2Desc": "A CreateMy-QR olyan eszközöket biztosít, amelyek szigorúan a helyi böngészőkörnyezetben futnak a WebAssembly segítségével. Garantáljuk, hogy:",
+      "sec2Bul1": "A fájlokat soha nem töltjük fel szervereinkre vagy harmadik fél infrastruktúrájára.",
+      "sec2Bul2": "Nem őrizzük meg az Ön adatainak, metaadatainak vagy feldolgozott dokumentumainak másolatait.",
+      "sec4Title": "Szellemi tulajdon",
+      "sec4Desc": "A CreateMy-QR segítségével feldolgozott dokumentumok 100%-os tulajdonjoga és minden szellemi tulajdonjog Ön marad. Semmilyen jogot, licencet vagy tulajdonjogot követelünk a tartalmaddal kapcsolatban.",
+      "sec5Title": "Jogi nyilatkozatok és felelősség"
     },
     "usecases": {
       "seoTitle": "Használati esetek",
@@ -1363,7 +1459,22 @@
       "events": "Rendezvények és jegyértékesítés",
       "eventsDesc": "Hozzon létre vCard és esemény QR-kódokat a jelvényekhez, amelyek hibátlanul szkennelnek több ezer résztvevőt.",
       "restaurants": "Éttermek",
-      "restaurantsDesc": "Készítsen gyönyörű, nagy kontrasztú WiFi- és Menü PDF-fájlokat, amelyek tökéletesen beolvashatók gyenge fényviszonyok mellett is."
+      "restaurantsDesc": "Készítsen gyönyörű, nagy kontrasztú WiFi- és Menü PDF-fájlokat, amelyek tökéletesen beolvashatók gyenge fényviszonyok mellett is.",
+      "heroBadge": "Ipari megoldások",
+      "popularRetail": "Népszerű eszközök:",
+      "toolBarcode": "Vonalkód generátor",
+      "toolUrl": "URL link QR Code",
+      "toolSms": "SMS QR-kód (promóciók)",
+      "popularEvents": "Népszerű eszközök:",
+      "toolEvent": "Esemény QR Code",
+      "toolVcard": "vCard / Contact QR",
+      "toolLocation": "Google Térkép QR",
+      "popularResto": "Népszerű eszközök:",
+      "toolWifi": "Wi-Fi QR-kód",
+      "toolPdf": "PDF menü QR",
+      "toolReview": "Google Review QR",
+      "ctaTitle": "Találja meg saját használati esetét",
+      "ctaDesc": "Iparágától függetlenül a CreateMy-QR a legbiztonságosabb és leggyorsabb módja a kódok generálásának. Próbálja ki 20+ eszközkészletünket még ma."
     }
   }
 }

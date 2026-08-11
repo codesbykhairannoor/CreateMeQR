@@ -11,7 +11,7 @@ export default function Compare() {
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.compare.seoTitle', 'Compare Tools')}</title>
+        <title>{`${t('appTitle', 'CreateMy-QR')} | ${t('static.compare.seoTitle', 'Compare Tools')}`}</title>
       </Helmet>
       
       <main className="w-full flex-1 bg-[#040814] text-white overflow-hidden">

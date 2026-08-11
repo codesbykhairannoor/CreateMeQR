@@ -12,7 +12,7 @@ export default function Languages() {
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.languages.seoTitle', 'Supported Languages')}</title>
+        <title>{`${t('appTitle', 'CreateMy-QR')} | ${t('static.languages.seoTitle', 'Supported Languages')}`}</title>
       </Helmet>
       
       <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">

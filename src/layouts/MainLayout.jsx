@@ -215,41 +215,41 @@ export default function MainLayout({ children }) {
                 </span>
               </div>
               <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed mb-6">
-                The world's fastest, 100% free, privacy-first QR Code generator. Powered by client-side WebAssembly.
+                {t('footer.desc', "The world's fastest, 100% free, privacy-first QR Code generator. Powered by client-side WebAssembly.")}
               </p>
             </div>
             
             <div>
-              <h4 className="font-bold text-zinc-900 dark:text-white mb-4">Product</h4>
+              <h4 className="font-bold text-zinc-900 dark:text-white mb-4">{t('footer.product', 'Product')}</h4>
               <ul className="flex flex-col gap-3 text-sm text-zinc-500 dark:text-zinc-400">
-                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.pricing || '/pricing'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Pricing</RouterLink></li>
-                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.security || '/security'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Security</RouterLink></li>
-                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.compare || '/compare'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Compare Tools</RouterLink></li>
-                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.usecases || '/use-cases'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Use Cases</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.pricing || '/pricing'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer.pricing', 'Pricing')}</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.security || '/security'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer.security', 'Security')}</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.compare || '/compare'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer.compare', 'Compare Tools')}</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.usecases || '/use-cases'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer.useCases', 'Use Cases')}</RouterLink></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-bold text-zinc-900 dark:text-white mb-4">Company</h4>
+              <h4 className="font-bold text-zinc-900 dark:text-white mb-4">{t('footer.company', 'Company')}</h4>
               <ul className="flex flex-col gap-3 text-sm text-zinc-500 dark:text-zinc-400">
-                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.about || '/about'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Us</RouterLink></li>
-                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.languages || '/languages'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Supported Languages</RouterLink></li>
-                <li><a href="mailto:support@createmy-qr.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact Support</a></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.about || '/about'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer.aboutUs', 'About Us')}</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.languages || '/languages'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer.languages', 'Supported Languages')}</RouterLink></li>
+                <li><a href="mailto:support@createmy-qr.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer.contact', 'Contact Support')}</a></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-bold text-zinc-900 dark:text-white mb-4">Legal</h4>
+              <h4 className="font-bold text-zinc-900 dark:text-white mb-4">{t('footer.legal', 'Legal')}</h4>
               <ul className="flex flex-col gap-3 text-sm text-zinc-500 dark:text-zinc-400">
-                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.privacy || '/privacy'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Privacy Policy</RouterLink></li>
-                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.terms || '/terms'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Terms of Service</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.privacy || '/privacy'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer.privacy', 'Privacy Policy')}</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.terms || '/terms'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">{t('footer.terms', 'Terms of Service')}</RouterLink></li>
               </ul>
             </div>
           </div>
           
           <div className="pt-8 border-t border-zinc-200 dark:border-[#102040] flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-zinc-500 dark:text-zinc-500">
-            <p>© {new Date().getFullYear()} CreateMy-QR Technologies. All rights reserved. ISO/IEC 18004:2015 Compliant.</p>
-            <p>Made with <Heart className="inline w-3 h-3 text-red-500 mx-1" /> for a private web.</p>
+            <p>© {new Date().getFullYear()} {t('footer.copyright', 'CreateMy-QR Technologies. All rights reserved. ISO/IEC 18004:2015 Compliant.')}</p>
+            <p>{t('footer.madewith', 'Made with')} <Heart className="inline w-3 h-3 text-red-500 mx-1" /> {t('footer.forprivateweb', 'for a private web.')}</p>
           </div>
         </div>
       </footer>

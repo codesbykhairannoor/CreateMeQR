@@ -9,7 +9,7 @@ export default function Security() {
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.security.seoTitle', 'Security Architecture')}</title>
+        <title>{`${t('appTitle', 'CreateMy-QR')} | ${t('static.security.seoTitle', 'Security Architecture')}`}</title>
       </Helmet>
       
       <main className="w-full flex-1 bg-[#040814] text-white overflow-hidden">

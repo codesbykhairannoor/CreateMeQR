@@ -134,7 +134,19 @@
     "privacy": "Politica de confidențialitate",
     "terms": "Termeni și condiții",
     "copyright": "© {{year}} CreateMy-QR. Generator de Coduri QR Gratuit Online.",
-    "embed": "Încorporați widgetul"
+    "embed": "Încorporați widgetul",
+    "product": "Produs",
+    "pricing": "Prețuri",
+    "security": "Securitate",
+    "compare": "Instrumente de comparare",
+    "useCases": "Cazuri de utilizare",
+    "company": "Compania",
+    "aboutUs": "Despre noi",
+    "languages": "Limbi acceptate",
+    "contact": "Contactați asistența",
+    "legal": "Legal",
+    "madewith": "Realizat cu",
+    "forprivateweb": "pentru un web privat."
   },
   "badge": "100% Free Forever. No Ads. No Signup.",
   "tabs": {
@@ -1142,7 +1154,8 @@
     "generator": "TOATE INSTRUMENTELE QR",
     "barcode": "Creator de coduri de bare",
     "scanqr": "Scanați codul QR",
-    "scanbarcode": "Scanați codul de bare"
+    "scanbarcode": "Scanați codul de bare",
+    "scanGroup": "Scaner"
   },
   "contact": {
     "title": "Contactează-ne",
@@ -1210,7 +1223,8 @@
     "saveBtn": "Salvați în istoricul browserului",
     "saved": "Salvat în istorie!",
     "savedAt": "Salvat la",
-    "loadBtn": "Restabili"
+    "loadBtn": "Restabili",
+    "cleared": "Eliberat!"
   },
   "home": {
     "seoTitle": "CreateMy-QR — Generator gratuit de coduri QR și coduri de bare |37 Instrumente online",
@@ -1293,7 +1307,27 @@
       "speed": "Instantaneu (Fără întârziere în rețea)",
       "speedThem": "Lent (Încărcare/Descărcare așteptați)",
       "offline": "Funcționează offline",
-      "offlineThem": "Necesită internet rapid"
+      "offlineThem": "Necesită internet rapid",
+      "heroBadge": "Alternativa inteligentă",
+      "matrixTitle": "Comparație de caracteristici",
+      "th1": "Caracteristica",
+      "th2": "API-ul Cloud tipic",
+      "th3": "CreateMy-QR",
+      "tr1": "Încărcarea serverului este necesară",
+      "tr2": "Garanția de confidențialitate a datelor",
+      "tr3": "Limite de generație",
+      "tr4": "Capacitate offline",
+      "tr5": "Cost",
+      "tr6": "Înregistrarea contului",
+      "tr7": "Viteza de procesare",
+      "speedTitle": "Nu mai așteptați pe API-urile Cloud",
+      "speedDesc": "Cu instrumentele cloud vechi, așteptați ca rețeaua dvs. să comunice cu serverele lor umflate. CreateMy-QR generează coduri complexe instantaneu pe discul tău local folosind WebAssembly. Este fundamental mai rapid prin proiectare.",
+      "privacyTitle": "Confidențialitatea este un drept, nu o caracteristică",
+      "expertTitle": "Experții din industrie sunt de acord",
+      "expertQuote": "Generarea de date prin intermediul API-urilor cloud neverificate este o vulnerabilitate majoră de securitate cibernetică. Instrumentele de procesare la nivelul clientului, cum ar fi CreateMy-QR, reprezintă singura arhitectură de încredere zero potrivită pentru gestionarea legăturilor confidențiale.",
+      "expertRole": "Cercetător principal în domeniul securității cibernetice",
+      "ctaTitle": "Schimbați astăzi.",
+      "ctaDesc": "Nu mai faceți compromisuri în ceea ce privește viteza, confidențialitatea și costul. Alăturați-vă miilor de profesioniști care au trecut deja la cel mai rapid set de instrumente QR offline."
     },
     "languages": {
       "seoTitle": "Limbi acceptate",
@@ -1303,7 +1337,17 @@
       "globalVisionDesc": "Accesibilitatea este un drept al omului. Am tradus cu atenție întreaga noastră suită, astfel încât să puteți lucra confortabil în limba maternă.",
       "listTitle": "Selectați limba dvs.",
       "localHistory": "Stocare locală activată",
-      "nativeSupport": "Suport pentru caractere native"
+      "nativeSupport": "Suport pentru caractere native",
+      "heroBadge": "Platformă globală",
+      "gridTitle": "Selectați regiunea dvs.",
+      "universalTitle": "Interfață universală",
+      "universalDesc": "Fiecare instrument, buton, mesaj de eroare și ghid de pe CreateMy-QR a fost localizat. Menținem o matrice strictă de traducere pentru a ne asigura că experiența dumneavoastră este nativă și intuitivă.",
+      "fastTitle": "Latență zero, oriunde",
+      "fastDesc": "Deoarece CreateMy-QR se bazează pe procesarea WebAssembly în loc de serverele cloud, nu contează dacă vă aflați în New York sau Jakarta. Veți experimenta exact aceleași viteze instantanee de procesare a documentelor fără latența rețelei.",
+      "communityTitle": "Condus de comunitate",
+      "communityDesc": "Observați o traducere care se simte ușor neplăcută? Ne bazăm pe baza noastră globală de utilizatori pentru a ne rafina și perfecționa localizările. Contactează-ne pentru a sugera îmbunătățiri pentru limba ta maternă.",
+      "ctaTitle": "Gata de procesat?",
+      "ctaDesc": "Alegeți un instrument de mai jos pentru a începe în siguranță și gratuit."
     },
     "pricing": {
       "seoTitle": "Preț 100% gratuit",
@@ -1317,7 +1361,23 @@
       "f3": "Procesare pe partea client",
       "f4": "Baza de date de istorie locală",
       "whyFree": "Cum este gratuit?",
-      "whyFreeDesc": "Deoarece nu procesăm fișierele dvs. pe serverele noastre, nu avem facturi masive de server. Dispozitivul dvs. face munca grea prin WebAssembly."
+      "whyFreeDesc": "Deoarece nu procesăm fișierele dvs. pe serverele noastre, nu avem facturi masive de server. Dispozitivul dvs. face munca grea prin WebAssembly.",
+      "heroBadge": "Radical Liber",
+      "compTitle": "Instrumente cloud tradiționale",
+      "compCost": "20 USD",
+      "compPeriod": "/lună",
+      "comp1": "Datele încărcate pe serverele lor",
+      "comp2": "Limitele de dimensiune a fișierelor la nivelul gratuit",
+      "comp3": "Necesită înregistrare prin e-mail",
+      "comp4": "Procesare lentă a rețelei",
+      "recommended": "RECOMANDAT",
+      "ent1": "Conform companiei",
+      "ent2": "Reținerea datelor zero",
+      "ent3": "GDPR și CCPA Friendly",
+      "bizTitle": "Gratuit pentru utilizare în afaceri",
+      "bizDesc": "Da, puteți utiliza CreateMy-QR pentru compania dvs. De fapt, arhitectura noastră locală de procesare ne face singura platformă suficient de sigură pentru medii corporative stricte, echipe juridice și profesioniști din domeniul sănătății.",
+      "supportTitle": "Susține proiectul",
+      "supportDesc": "Nu percepem un abonament, dar menținerea domeniului și a dezvoltării în viață necesită timp. Dacă CreateMy-QR v-a salvat ziua, luați în considerare să o distribuiți echipei dvs. Vorba în gură este singura noastră strategie de marketing."
     },
     "privacy": {
       "seoTitle": "Politica de confidențialitate",
@@ -1341,7 +1401,33 @@
       "noServers": "Fără încărcări de server",
       "noServersDesc": "Datele dumneavoastră fizic nu pot fi încălcate de pe serverele noastre, deoarece nu le atinge niciodată.",
       "iso": "Conform ISO",
-      "isoDesc": "Generațiile noastre QR respectă standardele globale stricte ISO/IEC 18004:2015."
+      "isoDesc": "Generațiile noastre QR respectă standardele globale stricte ISO/IEC 18004:2015.",
+      "heroBadge": "Centrul de încredere",
+      "wasmTitle": "Revoluția WebAssembly",
+      "step1Title": "1. Selecția locală",
+      "step1Desc": "Selectați un fișier. Browserul blochează fișierul în memoria locală. Nu este inițiată nicio solicitare de rețea.",
+      "step2Title": "2. Motor Wasm",
+      "step2Desc": "Motorul nostru rulează WebAssembly compilat direct pe CPU pentru a procesa codul offline.",
+      "step3Title": "3. Salvare directă",
+      "step3Desc": "Codul procesat este reconstruit în memorie și salvat direct pe hard disk.",
+      "analyticsTitle": "Documentele dvs. sunt oarbe pentru noi",
+      "analyticsDesc": "În timp ce folosim analize standard pentru a ne îmbunătăți experiența pe site-ul nostru, scripturile noastre nu ating niciodată documentele dvs. Nu extragem metadate, conținut text sau imagini. Cutia de nisip este complet autonomă.",
+      "complianceTitle": "Conformitate implicită",
+      "complianceDesc": "Deoarece CreateMy-QR nu poate accesa fișierele dvs., utilizarea instrumentelor noastre respectă automat cele mai stricte legi privind protecția datelor din întreaga lume.",
+      "comp1": "HIPAA (Date de asistență medicală)",
+      "comp2": "GDPR (Confidențialitate europeană)",
+      "comp3": "CCPA (Confidențialitatea California)",
+      "comp4": "Fișiere protejate NDA",
+      "verifyTitle": "Nu aveți încredere în noi. Verificați-l.",
+      "verifyDesc": "Nu trebuie să ne credeți pe cuvânt. Puteți dovedi garanția noastră offline în 3 pași simpli:",
+      "step1": "Pasul 1",
+      "verify1": "Încărcați CreateMy-QR.com în browser.",
+      "step2": "Pasul 2",
+      "verify2": "Opriți conexiunea Wi-Fi sau deconectați-vă internetul.",
+      "step3": "Pasul 3",
+      "verify3": "Generați orice QR. Funcționează perfect, dovedind că nu este necesar un server.",
+      "missionTitle": "Viitorul este local",
+      "missionDesc": "Ne imaginăm un web în care aplicațiile utilitare vă respectă hardware-ul și confidențialitatea. Bine ați venit în noua eră a calculatoarelor la nivelul clientului."
     },
     "terms": {
       "seoTitle": "Termeni și condiții",
@@ -1352,7 +1438,17 @@
       "liability": "Fără răspundere",
       "liabilityDesc": "Instrumentele sunt furnizate „ca atare”, fără garanții. Nu suntem răspunzători pentru nicio problemă care decurge din codurile generate.",
       "localData": "Date locale",
-      "localDataDesc": "Istoricul dumneavoastră este stocat în propriul browser prin IndexedDB. Dacă ștergeți datele din browser, istoricul dvs. este șters definitiv."
+      "localDataDesc": "Istoricul dumneavoastră este stocat în propriul browser prin IndexedDB. Dacă ștergeți datele din browser, istoricul dvs. este șters definitiv.",
+      "lastUpdated": "Ultima actualizare: octombrie 2024",
+      "sec1Title": "Acordul cu Termenii",
+      "sec1Desc": "Prin accesarea și utilizarea CreateMy-QR, sunteți de acord să respectați acești Termeni și condiții. Dacă nu sunteți de acord cu orice parte a termenilor, nu aveți permisiunea de a accesa Serviciul. Platforma noastră este oferită complet gratuit atât pentru uz personal, cât și pentru uz comercial.",
+      "sec2Title": "Garanția locală de procesare",
+      "sec2Desc": "CreateMy-QR oferă instrumente care se execută strict în mediul dvs. local de browser prin WebAssembly. Vă garantăm că:",
+      "sec2Bul1": "Fișierele dumneavoastră nu sunt niciodată încărcate pe serverele noastre sau pe orice infrastructură terță parte.",
+      "sec2Bul2": "Nu păstrăm copii ale datelor, metadatelor sau documentelor procesate.",
+      "sec4Title": "Proprietatea intelectuală",
+      "sec4Desc": "Vă păstrați proprietatea 100% și toate drepturile de proprietate intelectuală asupra documentelor pe care le procesați folosind CreateMy-QR. Revendicăm zero drepturi, licențe sau drepturi de proprietate asupra conținutului dvs.",
+      "sec5Title": "Declinări și răspundere"
     },
     "usecases": {
       "seoTitle": "Cazuri de utilizare",
@@ -1363,7 +1459,22 @@
       "events": "Evenimente și bilete",
       "eventsDesc": "Creați vCard și QR-uri pentru evenimente pentru insigne care scanează perfect mii de participanți.",
       "restaurants": "Restaurante",
-      "restaurantsDesc": "Generați PDF-uri WiFi și Meniu frumoase, cu contrast ridicat, care pot fi scanate perfect în medii cu lumină scăzută."
+      "restaurantsDesc": "Generați PDF-uri WiFi și Meniu frumoase, cu contrast ridicat, care pot fi scanate perfect în medii cu lumină scăzută.",
+      "heroBadge": "Soluții industriale",
+      "popularRetail": "Instrumente populare:",
+      "toolBarcode": "Generator de coduri de bare",
+      "toolUrl": "URL Link QR Code",
+      "toolSms": "Cod QR SMS (Promoții)",
+      "popularEvents": "Instrumente populare:",
+      "toolEvent": "Cod QR eveniment",
+      "toolVcard": "vCard / Contact QR",
+      "toolLocation": "Google Maps QR",
+      "popularResto": "Instrumente populare:",
+      "toolWifi": "Cod QR Wi-Fi",
+      "toolPdf": "Meniu PDF QR",
+      "toolReview": "Google Review QR",
+      "ctaTitle": "Găsește-ți propriul caz de utilizare",
+      "ctaDesc": "Indiferent de industria dvs., CreateMy-QR este cea mai sigură și rapidă modalitate de a genera coduri. Încercați suita noastră completă de peste 20 de instrumente astăzi."
     }
   }
 }

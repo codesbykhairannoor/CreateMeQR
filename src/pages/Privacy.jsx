@@ -9,7 +9,7 @@ export default function Privacy() {
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.privacy.seoTitle', 'Privacy Policy')}</title>
+        <title>{`${t('appTitle', 'CreateMy-QR')} | ${t('static.privacy.seoTitle', 'Privacy Policy')}`}</title>
       </Helmet>
       
       <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
