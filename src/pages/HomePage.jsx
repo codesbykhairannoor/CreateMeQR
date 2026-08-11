@@ -143,7 +143,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
     return matchCat && matchSearch;
   });
 
-  const seoTitle = t('home.seoTitle', 'CreateMy-QR — Free QR Code & Barcode Generator | 37 Tools Online');
+  const seoTitle = `CreateMy-QR | ${t('home.heroTitle')} ${t('home.heroTitleHighlight')}`;
   const seoDesc = t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO/IEC 18004-compliant, available in 30 languages.');
   const canonicalBase = `https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}`;
 
@@ -192,7 +192,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
       </Helmet>
 
       {/* ═══════ SECTION 1: HERO ═══════ */}
-      <section style={{ position: 'relative', paddingTop: 'clamp(56px, 9vw, 96px)', paddingBottom: '56px', textAlign: 'center' }}>
+      <section style={{ position: 'relative', paddingTop: 'clamp(128px, 14vw, 160px)', paddingBottom: '56px', textAlign: 'center' }}>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
 
           {/* Monumental headline — class matches audiovideo .hero-title pattern */}

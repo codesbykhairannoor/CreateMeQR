@@ -103,7 +103,7 @@
 /* Hero h1 — same values as audiovideo src/index.css .hero-title */
 .homepage-hero-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(2.5rem, 6vw, 4.15rem) !important;
+  font-size: clamp(2.5rem, 6vw, 4.0rem) !important;
   font-weight: 800 !important;
   letter-spacing: -0.03em !important;
   line-height: 1.15 !important;
