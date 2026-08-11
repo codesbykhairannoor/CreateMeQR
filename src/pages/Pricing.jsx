@@ -24,7 +24,7 @@ export default function Pricing() {
             <div className="inline-flex items-center gap-2 px-6 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full font-bold text-sm mb-8 tracking-wider border border-purple-200 dark:border-purple-500/20 backdrop-blur-md">
               <Zap size={16} /> {t('static.pricing.heroBadge', 'Radically Free')}
             </div>
-            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1]">
+            <h1 className="text-[clamp(2.2rem,5vw,4.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1]">
               {t('static.pricing.heroTitle', 'Pricing')}
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
@@ -96,7 +96,7 @@ export default function Pricing() {
         <section className="w-full py-32 px-6 bg-slate-950 text-white mt-12 border-y border-[#1e2d4a]">
           <div className="max-w-4xl mx-auto text-center">
             <ServerOff size={64} className="mx-auto mb-10 text-purple-400" />
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
               {t('static.pricing.whyFree', 'How is it free?')}
             </h2>
             <p className="text-xl text-slate-400 leading-relaxed font-medium">
@@ -125,7 +125,7 @@ export default function Pricing() {
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+              <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
                 {t('static.pricing.bizTitle', 'Free for Business Use')}
               </h2>
               <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
@@ -139,7 +139,7 @@ export default function Pricing() {
         <section className="w-full py-32 px-6 bg-gradient-to-br from-purple-900 to-indigo-950 text-white text-center border-t border-purple-800">
           <div className="max-w-3xl mx-auto">
             <Coffee size={64} className="mx-auto mb-8 text-purple-300 animate-pulse" />
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
               {t('static.pricing.supportTitle', 'Support the Project')}
             </h2>
             <p className="text-xl text-purple-200 leading-relaxed mb-12 font-medium">

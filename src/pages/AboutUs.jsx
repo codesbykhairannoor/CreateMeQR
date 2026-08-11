@@ -22,7 +22,7 @@ export default function AboutUs() {
             <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-white dark:bg-[#0a1128] text-blue-600 dark:text-blue-400 mb-8 shadow-2xl border border-blue-100 dark:border-[#1e2d4a]">
               <Globe2 size={40} />
             </div>
-            <h1 className="text-[clamp(3rem,6vw,5rem)] font-extrabold mb-6 tracking-tight leading-[1.1]">
+            <h1 className="text-[clamp(2.2rem,5vw,4.5rem)] font-extrabold mb-6 tracking-tight leading-[1.1]">
               {t('static.about.heroTitle', 'About Us')}
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
@@ -74,7 +74,7 @@ export default function AboutUs() {
             <div className="inline-flex px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full font-bold text-sm mb-8 tracking-wider">
               01 &mdash; {t('static.about.origin', 'The Origin')}
             </div>
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-10 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-10 leading-[1.1]">
               {t('static.about.originTitle', 'The Origin Story')}
             </h2>
             <div className="pl-8 border-l-4 border-blue-600 dark:border-blue-500 py-2">
@@ -92,7 +92,7 @@ export default function AboutUs() {
             <div className="inline-flex px-4 py-2 bg-white/10 text-white rounded-full font-bold text-sm mb-8 tracking-wider backdrop-blur-md">
               02 &mdash; {t('static.about.architecture', 'Architecture')}
             </div>
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-10 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-10 leading-[1.1]">
               {t('static.about.architectureTitle', 'Technology Stack')}
             </h2>
             <div className="bg-white/5 backdrop-blur-2xl p-10 md:p-16 rounded-[3rem] border border-white/10 shadow-2xl">
@@ -107,7 +107,7 @@ export default function AboutUs() {
         <section className="w-full py-32 px-6 text-center">
           <div className="max-w-3xl mx-auto">
             <Heart size={64} className="mx-auto mb-8 text-blue-600 dark:text-blue-400 animate-pulse" />
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
               {t('static.about.join', 'Join the Movement')}
             </h2>
             <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-12 font-medium">

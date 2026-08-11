@@ -21,7 +21,7 @@ export default function Terms() {
           
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <Scale size={80} className="text-slate-700 dark:text-slate-400 mx-auto mb-8 animate-[pulse_3s_ease-in-out_infinite]" />
-            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1] text-slate-900 dark:text-white">
+            <h1 className="text-[clamp(2.2rem,5vw,4.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1] text-slate-900 dark:text-white">
               {t('static.terms.heroTitle', 'Terms of Service')}
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
@@ -38,7 +38,7 @@ export default function Terms() {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-6 mb-8">
               <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 text-white font-extrabold text-2xl shadow-xl">1</div>
-              <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+              <h2 className="text-[clamp(1.6rem,4vw,2.5rem)] font-extrabold leading-[1.1]">
                 {t('static.terms.sec1Title', 'Agreement to Terms')}
               </h2>
             </div>
@@ -55,7 +55,7 @@ export default function Terms() {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-6 mb-8">
               <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 text-white font-extrabold text-2xl shadow-xl">2</div>
-              <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+              <h2 className="text-[clamp(1.6rem,4vw,2.5rem)] font-extrabold leading-[1.1]">
                 {t('static.terms.sec2Title', 'Local Processing Guarantee')}
               </h2>
             </div>
@@ -86,7 +86,7 @@ export default function Terms() {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-6 mb-8">
               <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 text-white font-extrabold text-2xl shadow-xl">3</div>
-              <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+              <h2 className="text-[clamp(1.6rem,4vw,2.5rem)] font-extrabold leading-[1.1]">
                 {t('static.terms.usage', 'Acceptable Use Policy')}
               </h2>
             </div>
@@ -103,7 +103,7 @@ export default function Terms() {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-6 mb-8">
               <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 text-white font-extrabold text-2xl shadow-xl">4</div>
-              <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+              <h2 className="text-[clamp(1.6rem,4vw,2.5rem)] font-extrabold leading-[1.1]">
                 {t('static.terms.sec4Title', 'Intellectual Property')}
               </h2>
             </div>
@@ -120,7 +120,7 @@ export default function Terms() {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-6 mb-12">
               <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 text-white font-extrabold text-2xl shadow-xl">5</div>
-              <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+              <h2 className="text-[clamp(1.6rem,4vw,2.5rem)] font-extrabold leading-[1.1]">
                 {t('static.terms.sec5Title', 'Disclaimers & Liability')}
               </h2>
             </div>

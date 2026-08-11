@@ -21,7 +21,7 @@ export default function Privacy() {
             <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-white dark:bg-[#0a1128] border-2 border-emerald-500/50 text-emerald-600 dark:text-emerald-400 mb-8 shadow-[0_0_50px_rgba(16,185,129,0.3)]">
               <ShieldAlert size={48} />
             </div>
-            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-6 tracking-tight leading-[1.1] text-slate-900 dark:text-white">
+            <h1 className="text-[clamp(2.2rem,5vw,4.5rem)] font-extrabold mb-6 tracking-tight leading-[1.1] text-slate-900 dark:text-white">
               {t('static.privacy.heroTitle', 'Privacy Policy')}
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
@@ -36,7 +36,7 @@ export default function Privacy() {
             <div className="inline-flex px-4 py-2 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-full font-bold text-sm mb-8 tracking-wider">
               01 &mdash; {t('static.privacy.policyTitle', 'The Zero-Upload Commitment')}
             </div>
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-10 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-10 leading-[1.1]">
               {t('static.privacy.zeroTracking', 'Zero Tracking')}
             </h2>
             <div className="bg-white dark:bg-[#0a1128] p-10 md:p-14 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] shadow-xl border-l-8 border-l-emerald-500">
@@ -82,7 +82,7 @@ export default function Privacy() {
             <div className="inline-flex px-4 py-2 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-full font-bold text-sm mb-8 tracking-wider">
               02 &mdash; {t('static.about.architecture', 'Architecture')}
             </div>
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-10 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-10 leading-[1.1]">
               {t('static.privacy.clientSide', 'Client-Side Only')}
             </h2>
             <div className="bg-gradient-to-br from-emerald-500 to-teal-700 text-white p-12 md:p-16 rounded-[3rem] shadow-[0_20px_50px_rgba(16,185,129,0.3)]">

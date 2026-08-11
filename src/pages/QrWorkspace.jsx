@@ -71,7 +71,7 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo }) {
       <section className="max-w-[1440px] mx-auto px-6 text-center mb-24 pt-32">
         <div className="animate-fade-in-up">
           <h1 
-            className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.15] text-balance"
+            className="text-[clamp(2rem,5vw,4rem)] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.15] text-balance"
           >
             {renderHighlightedTitle(currentSeo.h1Title)}
           </h1>

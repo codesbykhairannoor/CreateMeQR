@@ -271,7 +271,7 @@
   },
   "seoTool": {
     "title": "{{tool}} QR-kód generátor - ingyenes és egyedi",
-    "h1": "{{eszköz}} QR-kód",
+    "h1": "{{tool}} QR-kód",
     "description": "Alakítsa át {{tool}} adatait egyéni QR-kóddá közvetlenül a böngészőjében. 100%-ban offline feldolgozva az abszolút adatvédelem érdekében. Ingyenes, korlátok nélkül és rendkívül biztonságos."
   },
   "faqTools": {

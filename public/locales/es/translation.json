@@ -272,7 +272,7 @@
   },
   "seoTool": {
     "title": "Generador de códigos QR {{tool}}: gratuito y personalizado",
-    "h1": "{{herramienta}} Código QR",
+    "h1": "{{tool}} Código QR",
     "description": "Convierta sus datos de {{tool}} en un código QR personalizado directamente en su navegador. 100% procesado fuera de línea para absoluta privacidad. Gratis, sin límites y muy seguro."
   },
   "faqTools": {

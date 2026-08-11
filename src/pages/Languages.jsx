@@ -24,7 +24,7 @@ export default function Languages() {
             <div className="inline-flex items-center gap-2 px-6 py-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-full font-bold text-sm mb-8 tracking-wider border border-emerald-200 dark:border-emerald-500/20 backdrop-blur-md">
               <Globe size={16} /> {t('static.languages.heroBadge', 'Global Platform')}
             </div>
-            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1]">
+            <h1 className="text-[clamp(2.2rem,5vw,4.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1]">
               {t('static.languages.heroTitle', 'Available Worldwide')}
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
@@ -36,7 +36,7 @@ export default function Languages() {
         {/* Section 2: Massive Language Grid */}
         <section className="w-full py-32 px-6 relative z-20">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold text-center mb-16 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-center mb-16 leading-[1.1]">
               {t('static.languages.gridTitle', 'Select Your Region')}
             </h2>
             
@@ -67,7 +67,7 @@ export default function Languages() {
               </div>
             </div>
             <div className="md:order-1">
-              <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+              <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
                 {t('static.languages.universalTitle', 'Universal Interface')}
               </h2>
               <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
@@ -84,7 +84,7 @@ export default function Languages() {
               <Globe2 size={160} strokeWidth={1} className="text-slate-300 dark:text-slate-800" />
             </div>
             <div>
-              <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+              <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
                 {t('static.languages.fastTitle', 'Zero Latency, Anywhere')}
               </h2>
               <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
@@ -98,7 +98,7 @@ export default function Languages() {
         <section className="w-full py-32 px-6 bg-slate-900 dark:bg-slate-950 text-white border-t border-slate-800 dark:border-[#1e2d4a]">
           <div className="max-w-3xl mx-auto text-center">
             <CheckCircle2 size={64} className="mx-auto mb-8 text-emerald-400" />
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
               {t('static.languages.communityTitle', 'Community Driven')}
             </h2>
             <p className="text-xl text-slate-300 leading-relaxed mb-12 font-medium">
@@ -110,7 +110,7 @@ export default function Languages() {
         {/* Section 6: Try it Now */}
         <section className="w-full py-32 px-6 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-[clamp(3rem,5vw,4.5rem)] font-extrabold mb-8 leading-[1.1]">
+            <h2 className="text-[clamp(2.2rem,5vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
               {t('static.languages.ctaTitle', 'Ready to Process?')}
             </h2>
             <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-12 font-medium">

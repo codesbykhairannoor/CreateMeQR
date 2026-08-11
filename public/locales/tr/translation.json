@@ -272,7 +272,7 @@
   },
   "seoTool": {
     "title": "{{tool}} QR Kod Oluşturucu - Ücretsiz ve Özel",
-    "h1": "{{araç}} QR Kodu",
+    "h1": "{{tool}} QR Kodu",
     "description": "{{tool}} verilerinizi doğrudan tarayıcınızda özel bir QR koduna dönüştürün. Mutlak gizlilik için %100 çevrimdışı işlenir. Ücretsiz, sınırsız ve son derece güvenli."
   },
   "faqTools": {

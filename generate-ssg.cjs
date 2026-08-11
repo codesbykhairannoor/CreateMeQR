@@ -164,7 +164,7 @@ async function run() {
           global.location = global.window.location;
           
           const helmetContext = {};
-          ssrHtml = serverRender(urlPath, helmetContext);
+          ssrHtml = serverRender(urlPath, helmetContext, lang, translations);
           
           if (helmetContext.helmet) {
             newHtml = newHtml.replace(
@@ -238,6 +238,31 @@ async function run() {
       const defaultUrl = `https://createmy-qr.com${routePath}`;
       hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />\n`;
       newHtml = newHtml.replace('</head>', hreflangMatrix + '  </head>');
+
+      if (serverRender) {
+        try {
+          const urlPath = lang === 'en' ? routePath : `/${lang}${routePath}`;
+          global.window.location = { pathname: urlPath, search: '', hash: '' };
+          global.location = global.window.location;
+          
+          let localTranslations = {};
+          if (typeof translations !== 'undefined') {
+            localTranslations = translations;
+          } else {
+            const transPath = path.join(langsDir, lang, 'translation.json');
+            if (fs.existsSync(transPath)) {
+              localTranslations = JSON.parse(fs.readFileSync(transPath, 'utf8'));
+            }
+          }
+          
+          const helmetContext = {};
+          const ssrHtml = serverRender(urlPath, helmetContext, lang, localTranslations);
+          newHtml = newHtml.replace('<!--ssr-outlet-->', ssrHtml);
+        } catch (e) {
+          console.error(`Error SSR rendering static ${routePath}:`, e);
+        }
+      }
+
 
       // Load fallback English geoOptimized for missing ones (zh, ja, etc)
       {

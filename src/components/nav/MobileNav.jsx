@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { ChevronDown, QrCode, ScanLine, Scan, Building2, ChevronUp, Moon, Sun, Clock, Link, Wifi } from 'lucide-react';
 import { Link as RouterLink } from 'react-router-dom';
 import { localizedRoutes } from '../../config/localizedRoutes';
-import { QR_MENU_COLUMNS, BARCODE_CATEGORIES } from './MegaNav';
+import { QR_MENU_COLUMNS } from './MegaNav';
 
 export default function MobileNav({ currentLangCode, onClose, onOpenHistory, darkMode, setDarkMode }) {
   const { t } = useTranslation();
@@ -18,13 +18,13 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
       
       {/* Quick 3 buttons (Static Pages) */}
       <div className="grid grid-cols-3 gap-2 mb-4">
-        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} onClick={onClose} className="flex flex-col items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-extrabold text-slate-800 dark:text-slate-200 text-[10px] md:text-[11px] uppercase transition-colors hover:border-blue-400 shadow-sm text-center tracking-tight">
+        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} onClick={onClose} className="flex flex-col items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-extrabold text-slate-800 dark:text-slate-200 text-[11.5px] md:text-[12.5px] uppercase transition-colors hover:border-blue-400 shadow-sm text-center tracking-tight">
           {t('nav.scanqr', 'Scan QR Code')}
         </RouterLink>
-        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} onClick={onClose} className="flex flex-col items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-extrabold text-slate-800 dark:text-slate-200 text-[10px] md:text-[11px] uppercase transition-colors hover:border-emerald-400 shadow-sm text-center tracking-tight">
+        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} onClick={onClose} className="flex flex-col items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-extrabold text-slate-800 dark:text-slate-200 text-[11.5px] md:text-[12.5px] uppercase transition-colors hover:border-emerald-400 shadow-sm text-center tracking-tight">
           {t('nav.scanbarcode', 'Scan Barcode')}
         </RouterLink>
-        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} onClick={onClose} className="flex flex-col items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-extrabold text-slate-800 dark:text-slate-200 text-[10px] md:text-[11px] uppercase transition-colors hover:border-purple-400 shadow-sm text-center tracking-tight">
+        <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} onClick={onClose} className="flex flex-col items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-lg font-extrabold text-slate-800 dark:text-slate-200 text-[11.5px] md:text-[12.5px] uppercase transition-colors hover:border-purple-400 shadow-sm text-center tracking-tight">
           {t('nav.barcode', 'Barcode Maker')}
         </RouterLink>
       </div>
@@ -32,7 +32,7 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
       {/* Accordion: All Tools */}
       <button
         onClick={() => setOpenSection(openSection === 'all' ? null : 'all')}
-        className="w-full bg-gradient-to-r from-slate-900 to-blue-600 dark:from-blue-600 dark:to-blue-800 text-white border-none py-3 px-4 rounded-xl font-extrabold text-[10px] md:text-[11px] flex items-center justify-between cursor-pointer mb-2 shadow-md uppercase tracking-wide transition-all"
+        className="w-full bg-gradient-to-r from-slate-900 to-blue-600 dark:from-blue-600 dark:to-blue-800 text-white border-none py-3 px-4 rounded-xl font-extrabold text-[12px] md:text-[13px] flex items-center justify-between cursor-pointer mb-2 shadow-md uppercase tracking-wide transition-all"
       >
         <span>{t('nav.generator', 'ALL QR & BARCODE TOOLS')}</span>
         {openSection === 'all' ? <ChevronUp size={18} /> : <ChevronDown size={18} />}

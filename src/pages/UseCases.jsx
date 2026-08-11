@@ -25,7 +25,7 @@ export default function UseCases() {
             <div className="inline-flex items-center gap-2 px-6 py-2 bg-rose-100 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400 rounded-full font-bold text-sm mb-8 tracking-wider border border-rose-200 dark:border-rose-500/20 backdrop-blur-md">
               <Briefcase size={16} /> {t('static.usecases.heroBadge', 'Industry Solutions')}
             </div>
-            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1]">
+            <h1 className="text-[clamp(2.2rem,5vw,4.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1]">
               {t('static.usecases.heroTitle', 'Built for Every Profession')}
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
@@ -42,7 +42,7 @@ export default function UseCases() {
                 <div className="p-4 bg-rose-100 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400 rounded-2xl shadow-xl shadow-rose-500/20">
                   <Building2 size={32} />
                 </div>
-                <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+                <h2 className="text-[clamp(1.6rem,4vw,2.5rem)] font-extrabold leading-[1.1]">
                   {t('static.usecases.retail', 'Retail & E-Commerce')}
                 </h2>
               </div>
@@ -81,7 +81,7 @@ export default function UseCases() {
                 <div className="p-4 bg-orange-100 dark:bg-orange-900/30 text-orange-500 rounded-2xl shadow-xl shadow-orange-500/20">
                   <Users size={32} />
                 </div>
-                <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+                <h2 className="text-[clamp(1.6rem,4vw,2.5rem)] font-extrabold leading-[1.1]">
                   {t('static.usecases.events', 'Events & Ticketing')}
                 </h2>
               </div>
@@ -100,7 +100,7 @@ export default function UseCases() {
                 <div className="p-4 bg-amber-100 dark:bg-amber-900/30 text-amber-500 rounded-2xl shadow-xl shadow-amber-500/20">
                   <Briefcase size={32} />
                 </div>
-                <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+                <h2 className="text-[clamp(1.6rem,4vw,2.5rem)] font-extrabold leading-[1.1]">
                   {t('static.usecases.restaurants', 'Restaurants')}
                 </h2>
               </div>
@@ -125,7 +125,7 @@ export default function UseCases() {
         <section className="w-full py-32 px-6 bg-slate-950 text-white text-center border-t border-[#1e2d4a]">
           <div className="max-w-3xl mx-auto">
             <Lightbulb size={64} className="mx-auto mb-8 text-rose-400 animate-pulse" />
-            <h2 className="text-[clamp(3rem,5vw,4.5rem)] font-extrabold mb-8 leading-[1.1]">
+            <h2 className="text-[clamp(2.2rem,5vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
               {t('static.usecases.ctaTitle', 'Find Your Own Use Case')}
             </h2>
             <p className="text-xl text-slate-400 leading-relaxed mb-12 font-medium">

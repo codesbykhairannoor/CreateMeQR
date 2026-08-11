@@ -21,7 +21,7 @@ export default function Security() {
             <div className="inline-flex items-center gap-2 px-6 py-2 bg-emerald-900/30 text-emerald-400 rounded-full font-bold text-sm mb-8 tracking-wider border border-emerald-500/20 backdrop-blur-md">
               <ShieldCheck size={16} /> {t('static.security.heroBadge', 'Trust Center')}
             </div>
-            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1] bg-gradient-to-b from-white to-slate-400 bg-clip-text text-transparent">
+            <h1 className="text-[clamp(2.2rem,5vw,4.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1] bg-gradient-to-b from-white to-slate-400 bg-clip-text text-transparent">
               {t('static.security.heroTitle', 'Security Architecture')}
             </h1>
             <p className="text-xl md:text-2xl text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
@@ -33,7 +33,7 @@ export default function Security() {
         {/* Section 2: Architecture Diagram (Visual) */}
         <section className="w-full py-32 px-6 relative">
           <div className="max-w-6xl mx-auto relative z-10">
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold text-center mb-16 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-center mb-16 leading-[1.1]">
               {t('static.security.wasmTitle', 'The WebAssembly Revolution')}
             </h2>
             
@@ -78,7 +78,7 @@ export default function Security() {
         <section className="w-full py-32 px-6 bg-[#0a1128]/50 border-y border-[#1e2d4a]">
           <div className="max-w-4xl mx-auto text-center">
             <EyeOff size={64} className="mx-auto mb-8 text-slate-500" />
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
               {t('static.security.analyticsTitle', 'Your Documents Are Blind To Us')}
             </h2>
             <p className="text-xl text-slate-400 leading-relaxed font-medium">
@@ -91,7 +91,7 @@ export default function Security() {
         <section className="w-full py-32 px-6">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+              <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
                 {t('static.security.complianceTitle', 'Compliance by Default')}
               </h2>
               <p className="text-xl text-slate-400 leading-relaxed font-medium mb-8">
@@ -121,7 +121,7 @@ export default function Security() {
         {/* Section 5: Verify Yourself */}
         <section className="w-full py-32 px-6 bg-slate-950 border-y border-[#1e2d4a]">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 text-center leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 text-center leading-[1.1]">
               {t('static.security.verifyTitle', 'Don\'t Trust Us. Verify It.')}
             </h2>
             <p className="text-xl text-slate-400 leading-relaxed text-center mb-16 font-medium">
@@ -148,7 +148,7 @@ export default function Security() {
         <section className="w-full py-32 px-6 text-center">
           <div className="max-w-3xl mx-auto">
             <Lock size={64} className="mx-auto mb-8 text-slate-500" />
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
               {t('static.security.missionTitle', 'The Future is Local')}
             </h2>
             <p className="text-xl text-slate-400 leading-relaxed font-medium">

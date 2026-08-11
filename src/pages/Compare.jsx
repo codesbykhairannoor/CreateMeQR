@@ -23,7 +23,7 @@ export default function Compare() {
             <div className="inline-flex items-center gap-2 px-6 py-2 bg-blue-900/30 text-blue-400 rounded-full font-bold text-sm mb-8 tracking-wider border border-blue-500/20 backdrop-blur-md">
               <Award size={16} /> {t('static.compare.heroBadge', 'The Smart Alternative')}
             </div>
-            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1] bg-gradient-to-br from-white to-slate-400 bg-clip-text text-transparent">
+            <h1 className="text-[clamp(2.2rem,5vw,4.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1] bg-gradient-to-br from-white to-slate-400 bg-clip-text text-transparent">
               {t('static.compare.heroTitle', 'CreateMy-QR vs The Rest')}
             </h1>
             <p className="text-xl md:text-2xl text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
@@ -36,7 +36,7 @@ export default function Compare() {
         <section className="w-full py-32 px-6 relative">
           <div className="absolute -left-40 top-40 w-[500px] h-[500px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none" />
           <div className="max-w-5xl mx-auto relative z-10">
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold text-center mb-16 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-center mb-16 leading-[1.1]">
               {t('static.compare.matrixTitle', 'Feature Comparison')}
             </h2>
             
@@ -77,7 +77,7 @@ export default function Compare() {
         <section className="w-full py-32 px-6 bg-[#0a1128]/50 border-y border-[#1e2d4a]">
           <div className="max-w-4xl mx-auto text-center">
             <Zap size={64} className="text-blue-500 mx-auto mb-8 animate-pulse" />
-            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
               {t('static.compare.speedTitle', 'Stop Waiting on Cloud APIs')}
             </h2>
             <p className="text-xl text-slate-400 leading-relaxed font-medium">
@@ -96,7 +96,7 @@ export default function Compare() {
               </div>
             </div>
             <div className="md:order-1">
-              <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+              <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 leading-[1.1]">
                 {t('static.compare.privacyTitle', 'Privacy is a Right, Not a Feature')}
               </h2>
               <p className="text-xl text-slate-400 leading-relaxed font-medium border-l-4 border-blue-500 pl-6">
@@ -125,7 +125,7 @@ export default function Compare() {
         <section className="w-full py-32 px-6 text-center">
           <div className="max-w-3xl mx-auto">
             <ArrowRight size={64} className="mx-auto mb-8 text-blue-500" />
-            <h2 className="text-[clamp(3rem,5vw,4.5rem)] font-extrabold mb-8 leading-[1.1]">
+            <h2 className="text-[clamp(2.2rem,5vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
               {t('static.compare.ctaTitle', 'Switch Today.')}
             </h2>
             <p className="text-xl text-slate-400 leading-relaxed mb-12 font-medium">

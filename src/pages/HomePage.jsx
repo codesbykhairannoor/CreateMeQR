@@ -211,7 +211,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
 
           {/* Subtitle */}
           <p className="text-zinc-600 dark:text-zinc-400" style={{
-            fontSize: 'clamp(1.05rem, 2vw, 1.25rem)',
+            fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
             lineHeight: 1.6,
             maxWidth: 780,
             margin: '0 auto 40px',
@@ -299,8 +299,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
         <div className="max-w-7xl mx-auto px-6">
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 32 }}>
-            <h2 style={{
-              fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
+            <h2 className="text-[clamp(2rem,5vw,4.1rem)]" style={{
               fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.2,
             }}>
               {activeCat === 'all'
