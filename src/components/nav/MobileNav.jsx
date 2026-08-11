@@ -110,19 +110,6 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
         </div>
       )}
 
-      {/* History & Theme Group at Bottom */}
-      <div className="mt-4 pt-4 border-t border-zinc-200 dark:border-zinc-800 flex flex-col gap-2">
-        <button onClick={onOpenHistory} className="w-full flex items-center gap-3 py-3 px-4 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 rounded-xl text-[13px] font-bold text-zinc-800 dark:text-zinc-200 shadow-sm hover:border-blue-400 transition-colors">
-          <Clock className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-          {t('history.title', 'Local History')}
-        </button>
-        
-        <button onClick={() => setDarkMode(!darkMode)} className="w-full flex items-center gap-3 py-3 px-4 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 rounded-xl text-[13px] font-bold text-zinc-800 dark:text-zinc-200 shadow-sm hover:border-amber-400 transition-colors">
-          {darkMode ? <Sun className="w-4 h-4 text-amber-500" /> : <Moon className="w-4 h-4 text-indigo-500" />}
-          {darkMode ? 'Light Mode' : 'Dark Mode'}
-        </button>
-      </div>
-
     </div>
   );
 }

@@ -119,23 +119,23 @@ export default function MainLayout({ children }) {
       {/* Premium Glass Navbar */}
       <nav className="fixed top-0 w-full bg-white/70 dark:bg-[#040a18]/70 backdrop-blur-2xl z-50 transition-colors duration-500">
         <div className="relative max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('/')}>
-            <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-8 h-8 rounded-xl object-contain shadow-sm" />
-            <span className="text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight">CreateMy-QR</span>
+          <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
+            <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-7 h-7 md:w-8 md:h-8 rounded-xl object-contain shadow-sm" />
+            <span className="text-lg md:text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight hidden sm:block">CreateMy-QR</span>
           </div>
           
           <MegaNav currentLangCode={currentLangCode} />
 
-          <div className="flex items-center gap-2">
-            <button onClick={() => setShowHistory(true)} title={t('history.title', 'Local History')} className="hidden xl:flex p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
-              <Clock className="w-5 h-5" />
+          <div className="flex items-center gap-1 md:gap-2">
+            <button onClick={() => setShowHistory(true)} title={t('history.title', 'Local History')} className="flex p-1.5 md:p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+              <Clock className="w-5 h-5 md:w-5 md:h-5" />
             </button>
-            <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800 mx-1 hidden xl:block"></div>
+            <div className="w-px h-4 md:h-5 bg-zinc-200 dark:bg-zinc-800 mx-0.5 md:mx-1"></div>
             
             <div className="relative">
-              <button onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+              <button onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} className="flex items-center gap-1.5 md:gap-2 px-2 md:px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
                 <span style={{ fontSize: 16 }}>{LANGS.find(l => l.code === (i18n.language?.split('-')[0] || 'en'))?.flag || '🌐'}</span>
-                <span className="uppercase text-xs tracking-wider">{(i18n.language?.split('-')[0] || 'en')}</span>
+                <span className="uppercase text-[10px] md:text-xs tracking-wider">{(i18n.language?.split('-')[0] || 'en')}</span>
               </button>
               
               {showLangMenu && (
@@ -164,11 +164,11 @@ export default function MainLayout({ children }) {
                 </>
               )}
             </div>
-            <button onClick={() => setDarkMode(!darkMode)} className="hidden xl:block p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
-              {darkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            <button onClick={() => setDarkMode(!darkMode)} className="block p-1.5 md:p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+              {darkMode ? <Sun className="w-5 h-5 md:w-5 md:h-5" /> : <Moon className="w-5 h-5 md:w-5 md:h-5" />}
             </button>
-            <button onClick={() => setShowMobileNav(!showMobileNav)} className="xl:hidden p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
-              {showMobileNav ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            <button onClick={() => setShowMobileNav(!showMobileNav)} className="xl:hidden p-1.5 md:p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+              {showMobileNav ? <X className="w-5 h-5 md:w-5 md:h-5" /> : <Menu className="w-5 h-5 md:w-5 md:h-5" />}
             </button>
           </div>
         </div>
