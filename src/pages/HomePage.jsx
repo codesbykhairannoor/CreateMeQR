@@ -218,35 +218,38 @@ export default function HomePage({ currentLangCode = 'en' }) {
             </span>
           </div>
 
-          {/* Monumental headline */}
+          {/* Monumental headline — matched to helpmyfile/audiovideo reference */}
           <h1 style={{
-            fontSize: 'clamp(2.5rem, 6.5vw, 5rem)',
-            fontWeight: 900,
-            letterSpacing: '-0.04em',
-            lineHeight: 1.08,
+            fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
+            fontWeight: 800,
+            letterSpacing: '-0.03em',
+            lineHeight: 1.15,
             marginBottom: 24,
+            maxWidth: 900,
+            margin: '0 auto 24px',
+            textWrap: 'balance',
           }}>
-            {t('home.heroTitle', 'All QR & Barcode')}{' '}
+            {t('home.heroTitle')}{' '}
             <span style={{
               background: 'linear-gradient(135deg, #1e40af 0%, #2563EB 45%, #7C3AED 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
             }}>
-              {t('home.heroTitleHighlight', 'Tools in One Place')}
+              {t('home.heroTitleHighlight')}
             </span>
           </h1>
 
           {/* Subtitle */}
           <p style={{
-            fontSize: 'clamp(1.05rem, 2vw, 1.22rem)',
-            lineHeight: 1.65,
-            maxWidth: 700,
+            fontSize: 'clamp(1.05rem, 2vw, 1.25rem)',
+            color: 'var(--text-muted, rgba(0,0,0,0.55))',
+            lineHeight: 1.6,
+            maxWidth: 780,
             margin: '0 auto 40px',
-            opacity: 0.62,
             fontWeight: 500,
           }}>
-            {t('home.heroSubtitle', 'Generate 37+ types of QR codes and barcodes instantly. No signup, no limits, no data uploaded — ever. Export as SVG or PNG, completely free.')}
+            {t('home.heroSubtitle')}
           </p>
 
           {/* Official ISO citation box */}
@@ -464,8 +467,9 @@ export default function HomePage({ currentLangCode = 'en' }) {
               </div>
 
               <h2 style={{
-                fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
-                fontWeight: 800, lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 18,
+                fontSize: 'clamp(1.6rem, 3.5vw, 2.2rem)',
+                fontWeight: 700, lineHeight: 1.25, letterSpacing: '-0.02em', marginBottom: 18,
+                textWrap: 'balance',
               }}>
                 {t('home.trustTitle', 'Zero Upload. Zero Tracking. Zero Compromise.')}
               </h2>
@@ -527,7 +531,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
             }}>
               Key Facts
             </div>
-            <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 20 }}>
+            <h2 style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.2rem)', fontWeight: 700, lineHeight: 1.25, letterSpacing: '-0.02em', marginBottom: 20, textWrap: 'balance' }}>
               {t('home.whatIsTitle', 'What is CreateMy-QR?')}
             </h2>
             <p style={{ fontSize: '1.1rem', lineHeight: 1.8, opacity: 0.63, marginBottom: 28 }}>
@@ -564,7 +568,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
             }}>
               Trust & Security
             </div>
-            <h2 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 20 }}>
+            <h2 style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.2rem)', fontWeight: 700, lineHeight: 1.25, letterSpacing: '-0.02em', marginBottom: 20, textWrap: 'balance' }}>
               {t('home.whySecureTitle', 'Why is it 100% Secure?')}
             </h2>
             <p style={{ fontSize: '1.1rem', lineHeight: 1.8, opacity: 0.63, marginBottom: 24 }}>
@@ -602,8 +606,9 @@ export default function HomePage({ currentLangCode = 'en' }) {
               FAQ
             </div>
             <h2 style={{
-              fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
-              fontWeight: 800, lineHeight: 1.2, letterSpacing: '-0.02em', marginBottom: 10,
+              fontSize: 'clamp(1.6rem, 3.5vw, 2.2rem)',
+              fontWeight: 700, lineHeight: 1.25, letterSpacing: '-0.02em', marginBottom: 10,
+              textWrap: 'balance',
             }}>
               {t('home.faqTitle', 'Frequently Asked Questions')}
             </h2>
