@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import MainLayout from './layouts/MainLayout';
 import ScrollToTop from './components/ScrollToTop';
+import HomePage from './pages/HomePage';
 import QrWorkspace from './pages/QrWorkspace';
 import About from './pages/About';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -48,12 +49,14 @@ export default function App() {
 
   const handleTypeChangeRoute = (newType) => {
     setQrType(newType);
-    const localizedSlug = localizedRoutes[currentLangCode]?.[newType] || PSEO_ROUTES[newType === 'url' ? '/' : newType] || '/';
+    // localizedRoutes now maps 'url' -> '/url-qr-code-generator' (not '/')
+    const localizedSlug = localizedRoutes[currentLangCode]?.[newType] || `/${newType}`;
     if (localizedSlug !== slug) {
       const newPrefix = currentLangCode === 'en' ? '' : `/${currentLangCode}`;
       navigate(`${newPrefix}${localizedSlug === '/' ? '' : localizedSlug}`, { replace: true });
     }
   };
+
 
   
   const isAbout = slug === '/about';
@@ -61,15 +64,19 @@ export default function App() {
   const isTerms = slug === '/terms';
   const isCompare = slug === '/compare';
   const isContact = slug === '/contact';
+  // Home landing page: '/' means the new HomePage (not the URL QR tool)
+  const isHome = slug === '/' || slug === '';
   
   const toolType = routeToToolMap[currentLangCode]?.[slug];
   const isBarcode = toolType === 'barcode' || slug === '/barcode-generator';
   const isScanQr = toolType === 'scanqr' || slug === '/scan-qr';
   const isScanBarcode = toolType === 'scanbarcode' || slug === '/scan-barcode';
-  const isStaticPage = isAbout || isPrivacy || isTerms || isCompare || isContact || isBarcode || isScanQr || isScanBarcode;
+  const isStaticPage = isHome || isAbout || isPrivacy || isTerms || isCompare || isContact || isBarcode || isScanQr || isScanBarcode;
 
   const currentType = routeToToolMap[currentLangCode]?.[slug] || 'url';
-  const typeName = t(`types.${currentType}`);
+  // For home page, use 'url' as fallback tool type for SEO meta
+  const effectiveType = isHome ? 'url' : currentType;
+  const typeName = t(`types.${effectiveType}`);
   
   // Build FAQ Schema dynamically from translations
   const rawFaqs = t('geo.faqs', { returnObjects: true });
@@ -88,10 +95,16 @@ export default function App() {
   } : null;
 
   // Super Partial Lang: Fully localized SEO texts!
-  const currentSeo = currentType === 'url' 
+  const currentSeo = isHome
+    ? {
+        title: t('home.seoTitle', 'CreateMy-QR — Free QR Code & Barcode Generator | 37 Tools Online'),
+        h1Title: t('home.heroTitle', 'All QR & Barcode Tools in One Place'),
+        description: t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO-compliant, 30 languages.'),
+      }
+    : effectiveType === 'url'
     ? {
         title: t('appTitle'),
-        h1Title: t('appTitle'), // Changed h1 to h1Title because renderHighlightedTitle returns JSX now, but wait, QrWorkspace renders it! 
+        h1Title: t('appTitle'),
         description: t('tagline'),
       }
     : {
@@ -216,7 +229,9 @@ export default function App() {
         )}
       </Helmet>
       
-      {!isStaticPage ? (
+      {isHome ? (
+        <HomePage currentLangCode={currentLangCode} />
+      ) : !isStaticPage ? (
         <>
           <QrWorkspace qrType={qrType} setQrTypeRoute={handleTypeChangeRoute} currentSeo={currentSeo} />
           <LandingContent qrType={qrType} />

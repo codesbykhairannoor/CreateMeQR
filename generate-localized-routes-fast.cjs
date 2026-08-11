@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 const PSEO_ROUTES = {
-  '/': 'url',
+  '/': 'home',
+  '/url-qr-code-generator': 'url',
   '/wifi-qr-code-generator': 'wifi',
   '/vcard-qr-code-maker': 'vcard',
   '/text-qr-code-generator': 'text',
