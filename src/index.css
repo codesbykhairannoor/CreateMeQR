@@ -231,41 +231,32 @@
   }
 }
 
+
 /* ==========================================================================
-   MOBILE TYPOGRAPHY OVERRIDES (≤640px)
-   Reduces all section titles and descriptions by ~3-4px on small screens
+   MOBILE TYPOGRAPHY OVERRIDES (<=640px)
+   Reduces all section titles and descriptions on small screens
    ========================================================================== */
 @media (max-width: 640px) {
-  /* Home hero */
+  /* Home hero h1 */
   .homepage-hero-title {
     font-size: clamp(1.7rem, 8vw, 2.4rem) !important;
   }
+  /* Home section h2 */
   .homepage-section-title {
     font-size: clamp(1.1rem, 6vw, 1.6rem) !important;
   }
 
-  /* All pages h1 (Privacy, Terms, About, etc.) */
-  .text-\[clamp\(2\.2rem\,5vw\,4\.5rem\)\],
-  .text-\[clamp\(2\.2rem\,5vw\,4\.1rem\)\],
-  .text-\[clamp\(2rem\,5vw\,4rem\)\] {
+  /* All static pages h1 (About, Privacy, Terms, Pricing, etc.) */
+  section h1 {
     font-size: clamp(1.6rem, 7vw, 2.2rem) !important;
   }
 
-  /* All pages h2 section titles */
-  .text-\[clamp\(1\.8rem\,4vw\,2\.5rem\)\],
-  .text-\[clamp\(1\.6rem\,4vw\,2\.5rem\)\],
-  .text-\[clamp\(1\.8rem\,4vw\,2\.3rem\)\],
-  .text-\[clamp\(1\.6rem\,4vw\,2\.3rem\)\] {
+  /* All static pages h2 section titles */
+  section h2 {
     font-size: clamp(1.1rem, 5vw, 1.5rem) !important;
   }
 
-  /* Secondary section titles */
-  .text-\[clamp\(2\.2rem\,5vw\,3\.5rem\)\],
-  .text-\[clamp\(2rem\,5vw\,3\.3rem\)\] {
-    font-size: clamp(1.4rem, 6vw, 1.9rem) !important;
-  }
-
-  /* hq-layout pages h1/h2 */
+  /* hq-layout pages h1/h2/p */
   [class^="hq-layout-"] h1 {
     font-size: clamp(1.5rem, 7vw, 2rem) !important;
   }
