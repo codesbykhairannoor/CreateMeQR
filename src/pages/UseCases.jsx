@@ -1,153 +1,144 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
-
-import { Briefcase, Scale, GraduationCap, Building2, Users, Lightbulb } from 'lucide-react';
-
-
+import { Briefcase, Scale, GraduationCap, Building2, Users, Lightbulb, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function UseCases() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const langPrefix = i18n.language.startsWith('en') ? '' : `/${i18n.language.split('-')[0]}`;
 
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | ${t.footerUseCases || 'Use Cases'} - CreateMy-QR</title>
+        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.usecases.seoTitle', 'Use Cases')}</title>
       </Helmet>
       
-      <main style={{ width: '100%', flex: 1, background: 'var(--bg-app)' }}>
-        
+      <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero */}
-        <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 16px', background: 'var(--brand-glow)', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 700, fontSize: '0.9rem', marginBottom: 24 }}>
-              <Briefcase size={16} /> {t.pageUseCasesBadge || 'Industry Solutions'}
+        <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">
+          <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-rose-500/10 dark:bg-rose-600/10 blur-[150px] rounded-full pointer-events-none" />
+          <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-orange-500/10 dark:bg-orange-600/10 blur-[150px] rounded-full pointer-events-none" />
+          
+          <div className="max-w-4xl mx-auto text-center relative z-10">
+            <div className="inline-flex items-center gap-2 px-6 py-2 bg-rose-100 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400 rounded-full font-bold text-sm mb-8 tracking-wider border border-rose-200 dark:border-rose-500/20 backdrop-blur-md">
+              <Briefcase size={16} /> {t('static.usecases.heroBadge', 'Industry Solutions')}
             </div>
-            <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 24, letterSpacing: '-0.03em', color: 'var(--text-main)', lineHeight: 1.1 }}>
-              {t.pageUseCasesHero || 'Built for Every Profession'}
+            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1]">
+              {t('static.usecases.heroTitle', 'Built for Every Profession')}
             </h1>
-            <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.6, maxWidth: 700, margin: '0 auto' }}>
-              {t.pageUseCasesHeroSub || 'From strict legal environments to creative agencies, discover why professionals trust our client-side processing architecture.'}
+            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
+              {t('static.usecases.heroSubtitle', 'From strict legal environments to creative agencies, discover why professionals trust our architecture.')}
             </p>
           </div>
         </section>
 
-        {/* Section 2: Legal & Law Firms */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', gap: 64, alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ flex: '1 1 400px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
-                <div style={{ padding: 12, background: 'var(--brand-glow)', borderRadius: 16, color: 'var(--brand-primary)' }}>
-                  <Scale size={32} />
-                </div>
-                <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>{t.pageUseCasesSec2Title || 'Legal & Law Firms'}</h2>
-              </div>
-              <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pageUseCasesSec2Desc || 'Attorneys handle highly confidential NDAs, contracts, and court filings. Uploading these documents to random cloud APIs is a major liability. With CreateMy-QR, legal teams can redact, merge, and split PDF case files entirely offline, ensuring absolute client confidentiality.'}
-              </p>
-            </div>
-            <div style={{ flex: '1 1 400px', padding: 40, background: 'var(--bg-card)', borderRadius: 24, border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
-              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>Popular Tools for Legal:</h4>
-              <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Combine Exhibits (Merge PDF)</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Blackout Text (Redact PDF)</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Add Passwords (Protect PDF)</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 3: Human Resources */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', gap: 64, alignItems: 'center', flexWrap: 'wrap-reverse' }}>
-            <div style={{ flex: '1 1 400px', padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
-              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>Popular Tools for HR:</h4>
-              <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Extract Resume Pages (Split PDF)</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Compress Offer Letters</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Excel to PDF (Salary tables)</li>
-              </ul>
-            </div>
-            <div style={{ flex: '1 1 400px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
-                <div style={{ padding: 12, background: 'var(--brand-glow)', borderRadius: 16, color: 'var(--brand-primary)' }}>
-                  <Users size={32} />
-                </div>
-                <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>{t.pageUseCasesSec3Title || 'Human Resources (HR)'}</h2>
-              </div>
-              <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pageUseCasesSec3Desc || 'HR departments deal with PII (Personally Identifiable Information) on a daily basis. Scanning IDs, handling payroll spreadsheets, and managing offer letters requires strict GDPR/CCPA compliance. CreateMy-QR lets HR professionals manage these files without violating internal IT security policies.'}
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 4: Students & Education */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', gap: 64, alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ flex: '1 1 400px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
-                <div style={{ padding: 12, background: 'var(--brand-glow)', borderRadius: 16, color: 'var(--brand-primary)' }}>
-                  <GraduationCap size={32} />
-                </div>
-                <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>{t.pageUseCasesSec4Title || 'Students & Education'}</h2>
-              </div>
-              <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pageUseCasesSec4Desc || 'Students shouldn\'t have to pay $20/month just to merge their group project assignments or compress a presentation to fit the university portal\'s 5MB upload limit. CreateMy-QR provides unlimited access to premium tools for free, with zero file size limits.'}
-              </p>
-            </div>
-            <div style={{ flex: '1 1 400px', padding: 40, background: 'var(--bg-card)', borderRadius: 24, border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
-              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>Popular Tools for Students:</h4>
-              <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Merge Assignments</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Compress Presentations (PPTX to PDF)</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-app)', borderRadius: 8, fontWeight: 500 }}>Image to PDF (Scanner apps)</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 5: Real Estate */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', gap: 64, alignItems: 'center', flexWrap: 'wrap-reverse' }}>
-            <div style={{ flex: '1 1 400px', padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0,0,0,0.05)' }}>
-              <h4 style={{ fontWeight: 800, marginBottom: 16 }}>Popular Tools for Real Estate:</h4>
-              <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Sign Leases (Sign PDF)</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Watermark Property Photos</li>
-                <li style={{ padding: '12px 16px', background: 'var(--bg-card)', borderRadius: 8, fontWeight: 500 }}>Compress High-Res Brochures</li>
-              </ul>
-            </div>
-            <div style={{ flex: '1 1 400px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
-                <div style={{ padding: 12, background: 'var(--brand-glow)', borderRadius: 16, color: 'var(--brand-primary)' }}>
+        {/* Section 2: Retail */}
+        <section className="w-full py-24 px-6 relative z-20">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="order-2 md:order-1">
+              <div className="flex items-center gap-6 mb-8">
+                <div className="p-4 bg-rose-100 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400 rounded-2xl shadow-xl shadow-rose-500/20">
                   <Building2 size={32} />
                 </div>
-                <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>{t.pageUseCasesSec5Title || 'Real Estate & Agents'}</h2>
+                <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+                  {t('static.usecases.retail', 'Retail & E-Commerce')}
+                </h2>
               </div>
-              <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pageUseCasesSec5Desc || 'Real estate agents handle massive property brochures packed with high-resolution images that are too large to email to clients. They also need to quickly watermark property plans and sign lease agreements. CreateMy-QR handles 100MB+ files instantly.'}
+              <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium mb-8">
+                {t('static.usecases.retailDesc', 'Generate product-specific barcodes or discount QR codes instantly at the POS without waiting on a slow network.')}
+              </p>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="bg-white dark:bg-[#0a1128] p-10 rounded-[2rem] border border-slate-200 dark:border-[#1e2d4a] shadow-xl hover:-translate-y-2 transition-transform duration-500">
+                <h4 className="text-xl font-extrabold mb-6 text-slate-800 dark:text-slate-200">{t('static.usecases.popularRetail', 'Popular Tools:')}</h4>
+                <ul className="space-y-4">
+                  <li className="px-6 py-4 bg-slate-50 dark:bg-[#0f172a] rounded-xl font-bold text-rose-600 dark:text-rose-400">{t('static.usecases.toolBarcode', 'Barcode Generator')}</li>
+                  <li className="px-6 py-4 bg-slate-50 dark:bg-[#0f172a] rounded-xl font-bold text-rose-600 dark:text-rose-400">{t('static.usecases.toolUrl', 'URL Link QR Code')}</li>
+                  <li className="px-6 py-4 bg-slate-50 dark:bg-[#0f172a] rounded-xl font-bold text-rose-600 dark:text-rose-400">{t('static.usecases.toolSms', 'SMS QR Code (Promos)')}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 3: Events & Ticketing */}
+        <section className="w-full py-24 px-6 bg-white/50 dark:bg-[#060c1c]/50 backdrop-blur-xl border-y border-slate-200 dark:border-[#102040]">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="bg-white dark:bg-[#0a1128] p-10 rounded-[2rem] border border-slate-200 dark:border-[#1e2d4a] shadow-xl hover:-translate-y-2 transition-transform duration-500">
+                <h4 className="text-xl font-extrabold mb-6 text-slate-800 dark:text-slate-200">{t('static.usecases.popularEvents', 'Popular Tools:')}</h4>
+                <ul className="space-y-4">
+                  <li className="px-6 py-4 bg-slate-50 dark:bg-[#0f172a] rounded-xl font-bold text-orange-500">{t('static.usecases.toolEvent', 'Event QR Code')}</li>
+                  <li className="px-6 py-4 bg-slate-50 dark:bg-[#0f172a] rounded-xl font-bold text-orange-500">{t('static.usecases.toolVcard', 'vCard / Contact QR')}</li>
+                  <li className="px-6 py-4 bg-slate-50 dark:bg-[#0f172a] rounded-xl font-bold text-orange-500">{t('static.usecases.toolLocation', 'Google Maps QR')}</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div className="flex items-center gap-6 mb-8">
+                <div className="p-4 bg-orange-100 dark:bg-orange-900/30 text-orange-500 rounded-2xl shadow-xl shadow-orange-500/20">
+                  <Users size={32} />
+                </div>
+                <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+                  {t('static.usecases.events', 'Events & Ticketing')}
+                </h2>
+              </div>
+              <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                {t('static.usecases.eventsDesc', 'Create vCard and Event QRs for badges that scan flawlessly across thousands of attendees.')}
               </p>
             </div>
           </div>
         </section>
 
-        {/* Section 6: Try it Out */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--brand-gradient)', color: '#fff', textAlign: 'center' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <Lightbulb size={48} style={{ margin: '0 auto 24px', opacity: 0.9 }} />
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: 24 }}>{t.pageUseCasesSec6Title || 'Find Your Own Use Case'}</h2>
-            <p style={{ fontSize: '1.25rem', opacity: 0.9, lineHeight: 1.8, marginBottom: 40 }}>
-              {t.pageUseCasesSec6Desc || 'No matter your industry, if you work with documents, CreateMy-QR is the safest and fastest way to get the job done. Try our full suite of 20+ tools today.'}
+        {/* Section 4: Restaurants */}
+        <section className="w-full py-24 px-6 relative z-20">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="order-2 md:order-1">
+              <div className="flex items-center gap-6 mb-8">
+                <div className="p-4 bg-amber-100 dark:bg-amber-900/30 text-amber-500 rounded-2xl shadow-xl shadow-amber-500/20">
+                  <Briefcase size={32} />
+                </div>
+                <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+                  {t('static.usecases.restaurants', 'Restaurants')}
+                </h2>
+              </div>
+              <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium mb-8">
+                {t('static.usecases.restaurantsDesc', 'Generate beautiful, high-contrast WiFi and Menu PDFs that are perfectly scannable in low-light environments.')}
+              </p>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="bg-white dark:bg-[#0a1128] p-10 rounded-[2rem] border border-slate-200 dark:border-[#1e2d4a] shadow-xl hover:-translate-y-2 transition-transform duration-500">
+                <h4 className="text-xl font-extrabold mb-6 text-slate-800 dark:text-slate-200">{t('static.usecases.popularResto', 'Popular Tools:')}</h4>
+                <ul className="space-y-4">
+                  <li className="px-6 py-4 bg-slate-50 dark:bg-[#0f172a] rounded-xl font-bold text-amber-500">{t('static.usecases.toolWifi', 'Wi-Fi QR Code')}</li>
+                  <li className="px-6 py-4 bg-slate-50 dark:bg-[#0f172a] rounded-xl font-bold text-amber-500">{t('static.usecases.toolPdf', 'PDF Menu QR')}</li>
+                  <li className="px-6 py-4 bg-slate-50 dark:bg-[#0f172a] rounded-xl font-bold text-amber-500">{t('static.usecases.toolReview', 'Google Review QR')}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 5: Try it Out */}
+        <section className="w-full py-32 px-6 bg-slate-950 text-white text-center border-t border-[#1e2d4a]">
+          <div className="max-w-3xl mx-auto">
+            <Lightbulb size={64} className="mx-auto mb-8 text-rose-400 animate-pulse" />
+            <h2 className="text-[clamp(3rem,5vw,4.5rem)] font-extrabold mb-8 leading-[1.1]">
+              {t('static.usecases.ctaTitle', 'Find Your Own Use Case')}
+            </h2>
+            <p className="text-xl text-slate-400 leading-relaxed mb-12 font-medium">
+              {t('static.usecases.ctaDesc', 'No matter your industry, CreateMy-QR is the safest and fastest way to generate codes. Try our full suite of 20+ tools today.')}
             </p>
-            <button style={{ background: '#fff', color: 'var(--brand-primary)', border: 'none', padding: '16px 32px', borderRadius: 100, fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              {t.allTools || 'View All Tools'}
-            </button>
+            <Link to={langPrefix || '/'} className="inline-flex items-center gap-3 px-12 py-6 bg-white text-slate-900 hover:bg-slate-200 rounded-full font-extrabold text-xl transition-transform hover:scale-105 shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+              <span>{t('landing.ctaButton', 'Use Tools Now')}</span>
+              <ArrowRight size={24} />
+            </Link>
           </div>
         </section>
 
       </main>
     </>
   );
-};
+}

@@ -1,64 +1,91 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
-
-import { Check, X, ShieldCheck, Zap, ServerOff, Coffee } from 'lucide-react';
-
-
+import { Check, X, ShieldCheck, Zap, ServerOff, Coffee, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Pricing() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const langPrefix = i18n.language.startsWith('en') ? '' : `/${i18n.language.split('-')[0]}`;
 
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | ${t.footerPricing || 'Pricing'} - CreateMy-QR</title>
+        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.pricing.seoTitle', '100% Free Pricing')}</title>
       </Helmet>
       
-      <main style={{ width: '100%', flex: 1, background: 'var(--bg-app)' }}>
-        
+      <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero */}
-        <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 16px', background: 'var(--brand-glow)', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 700, fontSize: '0.9rem', marginBottom: 24 }}>
-              <Zap size={16} /> {t.pagePricingBadge || 'Radically Free'}
+        <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-500/10 dark:bg-purple-600/10 blur-[150px] rounded-full pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-500/10 dark:bg-blue-600/10 blur-[150px] rounded-full pointer-events-none" />
+          <div className="max-w-4xl mx-auto text-center relative z-10">
+            <div className="inline-flex items-center gap-2 px-6 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full font-bold text-sm mb-8 tracking-wider border border-purple-200 dark:border-purple-500/20 backdrop-blur-md">
+              <Zap size={16} /> {t('static.pricing.heroBadge', 'Radically Free')}
             </div>
-            <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 24, letterSpacing: '-0.03em', color: 'var(--text-main)', lineHeight: 1.1 }}>
-              {t.pagePricingHero || 'Zero Subscriptions. Zero Limits.'}
+            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1]">
+              {t('static.pricing.heroTitle', 'Pricing')}
             </h1>
-            <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.6, maxWidth: 700, margin: '0 auto' }}>
-              {t.pagePricingHeroSub || 'Enterprise-grade QR Code tools usually cost $20/month. We believe privacy and utility should be a fundamental human right. CreateMy-QR is completely free.'}
+            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
+              {t('static.pricing.heroSubtitle', 'The best things in life are free. Zero Subscriptions. Zero Limits.')}
             </p>
           </div>
         </section>
 
         {/* Section 2: Pricing Table */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 32 }}>
+        <section className="w-full py-24 px-6 relative z-20">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
               {/* Competitor */}
-              <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 48, border: '1px solid var(--border-color)' }}>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-muted)', marginBottom: 16 }}>{t.pagePricingComp || 'Traditional Cloud Tools'}</h3>
-                <div style={{ fontSize: '3rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 32 }}>$20<span style={{ fontSize: '1rem', color: 'var(--text-muted)', fontWeight: 500 }}>/mo</span></div>
-                <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 16 }}>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> Data uploaded to their servers</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> File size limits on free tier</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> Requires email registration</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-muted)' }}><X size={20} /> Slow network processing</li>
+              <div className="bg-white dark:bg-[#0a1128] rounded-[2.5rem] p-10 lg:p-12 border border-slate-200 dark:border-[#1e2d4a] shadow-xl opacity-90 hover:opacity-100 transition-opacity">
+                <h3 className="text-2xl font-extrabold text-slate-500 mb-6">{t('static.pricing.compTitle', 'Traditional Cloud Tools')}</h3>
+                <div className="text-5xl font-extrabold mb-10 text-slate-800 dark:text-slate-200">
+                  {t('static.pricing.compCost', '$20')}
+                  <span className="text-xl text-slate-500 font-medium">{t('static.pricing.compPeriod', '/mo')}</span>
+                </div>
+                <ul className="space-y-6">
+                  <li className="flex gap-4 items-center text-slate-500 font-medium">
+                    <X size={24} className="text-rose-500 shrink-0" /> {t('static.pricing.comp1', 'Data uploaded to their servers')}
+                  </li>
+                  <li className="flex gap-4 items-center text-slate-500 font-medium">
+                    <X size={24} className="text-rose-500 shrink-0" /> {t('static.pricing.comp2', 'File size limits on free tier')}
+                  </li>
+                  <li className="flex gap-4 items-center text-slate-500 font-medium">
+                    <X size={24} className="text-rose-500 shrink-0" /> {t('static.pricing.comp3', 'Requires email registration')}
+                  </li>
+                  <li className="flex gap-4 items-center text-slate-500 font-medium">
+                    <X size={24} className="text-rose-500 shrink-0" /> {t('static.pricing.comp4', 'Slow network processing')}
+                  </li>
                 </ul>
               </div>
               
               {/* CreateMy-QR */}
-              <div style={{ background: 'var(--bg-card)', borderRadius: 24, padding: 48, border: '2px solid var(--brand-primary)', position: 'relative', boxShadow: '0 20px 40px var(--brand-glow)' }}>
-                <div style={{ position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)', background: 'var(--brand-gradient)', color: '#fff', padding: '4px 16px', borderRadius: 100, fontWeight: 800, fontSize: '0.85rem' }}>RECOMMENDED</div>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--brand-primary)', marginBottom: 16 }}>CreateMy-QR</h3>
-                <div style={{ fontSize: '3.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 32, lineHeight: 1 }}>$0<span style={{ fontSize: '1rem', color: 'var(--text-muted)', fontWeight: 500 }}>/forever</span></div>
-                <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 16 }}>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> 100% Client-side processing</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> Unlimited file sizes & usage</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> No accounts or logins needed</li>
-                  <li style={{ display: 'flex', gap: 12, alignItems: 'center', color: 'var(--text-main)', fontWeight: 500 }}><Check size={20} color="var(--brand-primary)" /> Instant WebAssembly speed</li>
+              <div className="relative bg-white dark:bg-[#0a1128] rounded-[2.5rem] p-10 lg:p-12 border-2 border-purple-500 shadow-2xl shadow-purple-500/20 hover:-translate-y-2 transition-transform duration-500 group">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-1.5 rounded-full font-bold text-sm tracking-widest shadow-lg">
+                  {t('static.pricing.recommended', 'RECOMMENDED')}
+                </div>
+                <h3 className="text-2xl font-extrabold text-purple-600 dark:text-purple-400 mb-6">CreateMy-QR</h3>
+                <div className="text-6xl font-extrabold mb-10 text-slate-900 dark:text-white flex items-baseline gap-2">
+                  {t('static.pricing.cost', '$0')}
+                  <span className="text-xl text-slate-500 font-medium">{t('static.pricing.costPeriod', '/ forever')}</span>
+                </div>
+                <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">
+                  {t('static.pricing.features', 'Included Features')}
+                </h4>
+                <ul className="space-y-6">
+                  <li className="flex gap-4 items-center text-slate-700 dark:text-slate-200 font-bold">
+                    <Check size={24} className="text-purple-500 shrink-0" /> {t('static.pricing.f1', 'Unlimited QR Generations')}
+                  </li>
+                  <li className="flex gap-4 items-center text-slate-700 dark:text-slate-200 font-bold">
+                    <Check size={24} className="text-purple-500 shrink-0" /> {t('static.pricing.f2', 'Zero Tracking & Zero Ads')}
+                  </li>
+                  <li className="flex gap-4 items-center text-slate-700 dark:text-slate-200 font-bold">
+                    <Check size={24} className="text-purple-500 shrink-0" /> {t('static.pricing.f3', 'Client-Side Processing')}
+                  </li>
+                  <li className="flex gap-4 items-center text-slate-700 dark:text-slate-200 font-bold">
+                    <Check size={24} className="text-purple-500 shrink-0" /> {t('static.pricing.f4', 'Local History Database')}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -66,76 +93,66 @@ export default function Pricing() {
         </section>
 
         {/* Section 3: Why Free */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
-            <ServerOff size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>{t.pagePricingSec3Title || 'How is this possible?'}</h2>
-            <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-              {t.pagePricingSec3Desc || 'Traditional tools have expensive server bills because they process your files on their cloud. We ported C++ and Rust engines to run inside your browser. Your computer does the heavy lifting, meaning our server costs are near zero. We pass those savings directly to you.'}
+        <section className="w-full py-32 px-6 bg-slate-950 text-white mt-12 border-y border-[#1e2d4a]">
+          <div className="max-w-4xl mx-auto text-center">
+            <ServerOff size={64} className="mx-auto mb-10 text-purple-400" />
+            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+              {t('static.pricing.whyFree', 'How is it free?')}
+            </h2>
+            <p className="text-xl text-slate-400 leading-relaxed font-medium">
+              {t('static.pricing.whyFreeDesc', 'Because we don\'t process your files on our servers, we don\'t have massive server bills. Your device does the heavy lifting via WebAssembly.')}
             </p>
           </div>
         </section>
 
-        {/* Section 4: Transparent & Sustainable */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', gap: 48, alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ flex: '1 1 400px' }}>
-              <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>{t.pagePricingSec4Title || 'Sustainable & Transparent'}</h2>
-              <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pagePricingSec4Desc || 'To keep CreateMy-QR 100% free forever, we rely on non-intrusive advertisements and standard web analytics. However, your privacy is our top priority. We never scan, extract, or sell the contents of your files. What happens in the editor, stays in the editor.'}
-              </p>
-            </div>
-            <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
-              <div style={{ width: 120, height: 120, borderRadius: 60, background: 'var(--brand-glow)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <ShieldCheck size={64} color="var(--brand-primary)" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 5: Enterprise Ready */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', gap: 48, alignItems: 'center', flexWrap: 'wrap-reverse' }}>
-            <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
-              <div style={{ padding: 32, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', width: '100%' }}>
-                <div style={{ display: 'flex', gap: 16, alignItems: 'center', marginBottom: 24 }}>
-                  <div style={{ width: 12, height: 12, borderRadius: 6, background: 'var(--brand-primary)' }}></div>
-                  <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>Enterprise Compliant</span>
+        {/* Section 4: Enterprise Ready */}
+        <section className="w-full py-32 px-6 bg-white dark:bg-[#040814]">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="order-2 md:order-1 flex justify-center">
+              <div className="p-10 bg-slate-50 dark:bg-[#0a1128] rounded-[2rem] border border-slate-200 dark:border-[#1e2d4a] w-full shadow-2xl">
+                <div className="flex gap-6 items-center mb-8">
+                  <div className="w-4 h-4 rounded-full bg-purple-500 shadow-[0_0_15px_rgba(168,85,247,0.8)]"></div>
+                  <span className="font-extrabold text-xl">{t('static.pricing.ent1', 'Enterprise Compliant')}</span>
                 </div>
-                <div style={{ display: 'flex', gap: 16, alignItems: 'center', marginBottom: 24 }}>
-                  <div style={{ width: 12, height: 12, borderRadius: 6, background: 'var(--brand-primary)' }}></div>
-                  <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>Zero-Data Retention</span>
+                <div className="flex gap-6 items-center mb-8">
+                  <div className="w-4 h-4 rounded-full bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.8)]"></div>
+                  <span className="font-extrabold text-xl">{t('static.pricing.ent2', 'Zero-Data Retention')}</span>
                 </div>
-                <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
-                  <div style={{ width: 12, height: 12, borderRadius: 6, background: 'var(--brand-primary)' }}></div>
-                  <span style={{ fontWeight: 700, color: 'var(--text-main)' }}>GDPR & CCPA Friendly</span>
+                <div className="flex gap-6 items-center">
+                  <div className="w-4 h-4 rounded-full bg-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.8)]"></div>
+                  <span className="font-extrabold text-xl">{t('static.pricing.ent3', 'GDPR & CCPA Friendly')}</span>
                 </div>
               </div>
             </div>
-            <div style={{ flex: '1 1 400px' }}>
-              <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>{t.pagePricingSec5Title || 'Free for Business Use'}</h2>
-              <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pagePricingSec5Desc || 'Yes, you can use CreateMy-QR for your company. In fact, our local processing architecture makes us the only platform safe enough for strict corporate environments, legal teams, and healthcare professionals.'}
+            <div className="order-1 md:order-2">
+              <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+                {t('static.pricing.bizTitle', 'Free for Business Use')}
+              </h2>
+              <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                {t('static.pricing.bizDesc', 'Yes, you can use CreateMy-QR for your company. In fact, our local processing architecture makes us the only platform safe enough for strict corporate environments, legal teams, and healthcare professionals.')}
               </p>
             </div>
           </div>
         </section>
 
-        {/* Section 6: Support Us */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--brand-gradient)', color: '#fff', textAlign: 'center' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <Coffee size={48} style={{ margin: '0 auto 24px', opacity: 0.9 }} />
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: 24 }}>{t.pagePricingSec6Title || 'Support the Project'}</h2>
-            <p style={{ fontSize: '1.25rem', opacity: 0.9, lineHeight: 1.8, marginBottom: 40 }}>
-              {t.pagePricingSec6Desc || 'We don\'t charge a subscription, but keeping the domain and development alive takes time. If CreateMy-QR saved your day, consider sharing it with your team. Word of mouth is our only marketing strategy.'}
+        {/* Section 5: Support Us */}
+        <section className="w-full py-32 px-6 bg-gradient-to-br from-purple-900 to-indigo-950 text-white text-center border-t border-purple-800">
+          <div className="max-w-3xl mx-auto">
+            <Coffee size={64} className="mx-auto mb-8 text-purple-300 animate-pulse" />
+            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+              {t('static.pricing.supportTitle', 'Support the Project')}
+            </h2>
+            <p className="text-xl text-purple-200 leading-relaxed mb-12 font-medium">
+              {t('static.pricing.supportDesc', 'We don\'t charge a subscription, but keeping the domain and development alive takes time. If CreateMy-QR saved your day, consider sharing it with your team. Word of mouth is our only marketing strategy.')}
             </p>
-            <button style={{ background: '#fff', color: 'var(--brand-primary)', border: 'none', padding: '16px 32px', borderRadius: 100, fontSize: '1.1rem', fontWeight: 800, cursor: 'pointer', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
-              {t.shareBtn || 'Share CreateMy-QR'}
-            </button>
+            <Link to={langPrefix || '/'} className="inline-flex items-center gap-3 px-10 py-5 bg-white text-purple-900 rounded-full font-extrabold text-lg shadow-2xl hover:bg-slate-100 transition-transform hover:scale-105">
+              <span>{t('landing.ctaButton', 'Use Tools Now')}</span>
+              <ArrowRight size={24} />
+            </Link>
           </div>
         </section>
 
       </main>
     </>
   );
-};
+}

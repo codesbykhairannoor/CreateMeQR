@@ -62,18 +62,20 @@ export default function App() {
 
 
   
-  const isAbout = slug === '/about';
-  const isCompare = slug === '/compare';
-  const isLanguages = slug === '/languages';
-  const isPricing = slug === '/pricing';
-  const isPrivacy = slug === '/privacy';
-  const isSecurity = slug === '/security';
-  const isTerms = slug === '/terms';
-  const isUseCases = slug === '/use-cases';
   // Home landing page: '/' means the new HomePage (not the URL QR tool)
   const isHome = slug === '/' || slug === '';
   
   const toolType = routeToToolMap[currentLangCode]?.[slug];
+  
+  const isAbout = toolType === 'about' || slug === '/about';
+  const isCompare = toolType === 'compare' || slug === '/compare';
+  const isLanguages = toolType === 'languages' || slug === '/languages';
+  const isPricing = toolType === 'pricing' || slug === '/pricing';
+  const isPrivacy = toolType === 'privacy' || slug === '/privacy';
+  const isSecurity = toolType === 'security' || slug === '/security';
+  const isTerms = toolType === 'terms' || slug === '/terms';
+  const isUseCases = toolType === 'usecases' || slug === '/use-cases';
+  
   const isBarcode = toolType === 'barcode' || slug === '/barcode-generator';
   const isScanQr = toolType === 'scanqr' || slug === '/scan-qr';
   const isScanBarcode = toolType === 'scanbarcode' || slug === '/scan-barcode';

@@ -38,7 +38,15 @@ export const localizedRoutes = {
     "file": "/file-qr-code-generator",
     "barcode": "/barcode-generator",
     "scanqr": "/scan-qr",
-    "scanbarcode": "/scan-barcode"
+    "scanbarcode": "/scan-barcode",
+    "about": "/about",
+    "compare": "/compare",
+    "languages": "/languages",
+    "pricing": "/pricing",
+    "privacy": "/privacy",
+    "security": "/security",
+    "terms": "/terms",
+    "usecases": "/use-cases"
   },
   "id": {
     "home": "/",
@@ -78,7 +86,15 @@ export const localizedRoutes = {
     "file": "/berkas-generator-qr-code-gratis-online",
     "barcode": "/generator-qr-code-gratis-online",
     "scanqr": "/generator-qr-code-gratis-online-2",
-    "scanbarcode": "/pemindai-kode-batang-generator-qr-code-gratis-online"
+    "scanbarcode": "/pemindai-kode-batang-generator-qr-code-gratis-online",
+    "about": "/tentang-kami",
+    "compare": "/bandingkan-alat",
+    "languages": "/bahasa-yang-didukung",
+    "pricing": "/100-harga-gratis",
+    "privacy": "/kebijakan-privasi",
+    "security": "/arsitektur-keamanan",
+    "terms": "/ketentuan-layanan",
+    "usecases": "/kasus-penggunaan"
   },
   "es": {
     "home": "/",
@@ -118,7 +134,15 @@ export const localizedRoutes = {
     "file": "/archivo-generador-de-codigos-qr-gratis-online",
     "barcode": "/generador-de-codigos-qr-gratis-online",
     "scanqr": "/generador-de-codigos-qr-gratis-online-2",
-    "scanbarcode": "/escaner-de-codigo-de-barras-generador-de-codigos-qr-gratis-online"
+    "scanbarcode": "/escaner-de-codigo-de-barras-generador-de-codigos-qr-gratis-online",
+    "about": "/sobre-nosotros",
+    "compare": "/comparar-herramientas",
+    "languages": "/idiomas-admitidos",
+    "pricing": "/precios-100-gratuitos",
+    "privacy": "/politica-de-privacidad",
+    "security": "/arquitectura-de-seguridad",
+    "terms": "/terminos-de-servicio",
+    "usecases": "/casos-de-uso"
   },
   "fr": {
     "home": "/",
@@ -158,7 +182,15 @@ export const localizedRoutes = {
     "file": "/fichier-generateur-de-code-qr-gratuit-en-ligne",
     "barcode": "/generateur-de-code-qr-gratuit-en-ligne",
     "scanqr": "/generateur-de-code-qr-gratuit-en-ligne-2",
-    "scanbarcode": "/lecteur-de-codes-a-barres-generateur-de-code-qr-gratuit-en-ligne"
+    "scanbarcode": "/lecteur-de-codes-a-barres-generateur-de-code-qr-gratuit-en-ligne",
+    "about": "/a-propos-de-nous",
+    "compare": "/comparer-les-outils",
+    "languages": "/langues-prises-en-charge",
+    "pricing": "/tarif-100-gratuit",
+    "privacy": "/politique-de-confidentialite",
+    "security": "/architecture-de-securite",
+    "terms": "/conditions-d-utilisation",
+    "usecases": "/cas-d-utilisation"
   },
   "de": {
     "home": "/",
@@ -198,7 +230,15 @@ export const localizedRoutes = {
     "file": "/datei-kostenloser-qr-code-generator-online",
     "barcode": "/kostenloser-qr-code-generator-online",
     "scanqr": "/kostenloser-qr-code-generator-online-2",
-    "scanbarcode": "/barcode-scanner-kostenloser-qr-code-generator-online"
+    "scanbarcode": "/barcode-scanner-kostenloser-qr-code-generator-online",
+    "about": "/uber-uns",
+    "compare": "/tools-vergleichen",
+    "languages": "/unterstutzte-sprachen",
+    "pricing": "/100-kostenlose-preisgestaltung",
+    "privacy": "/datenschutzrichtlinie",
+    "security": "/sicherheitsarchitektur",
+    "terms": "/nutzungsbedingungen",
+    "usecases": "/anwendungsfalle"
   },
   "pt": {
     "home": "/",
@@ -238,7 +278,15 @@ export const localizedRoutes = {
     "file": "/arquivo-gerador-de-codigo-qr-gratis-online",
     "barcode": "/gerador-de-codigo-qr-gratis-online",
     "scanqr": "/gerador-de-codigo-qr-gratis-online-2",
-    "scanbarcode": "/leitor-de-codigo-de-barras-gerador-de-codigo-qr-gratis-online"
+    "scanbarcode": "/leitor-de-codigo-de-barras-gerador-de-codigo-qr-gratis-online",
+    "about": "/sobre-nos",
+    "compare": "/comparar-ferramentas",
+    "languages": "/idiomas-suportados",
+    "pricing": "/preco-100-gratuito",
+    "privacy": "/politica-de-privacidade",
+    "security": "/arquitetura-de-seguranca",
+    "terms": "/termos-de-servico",
+    "usecases": "/casos-de-uso"
   },
   "zh": {
     "home": "/",
@@ -278,7 +326,15 @@ export const localizedRoutes = {
     "file": "/wen-jian-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
     "barcode": "/mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
     "scanqr": "/mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi-2",
-    "scanbarcode": "/tiao-ma-sao-miao-yi-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi"
+    "scanbarcode": "/tiao-ma-sao-miao-yi-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+    "about": "/guan-yu-wo-men",
+    "compare": "/bi-jiao-gong-ju",
+    "languages": "/zhi-chi-de-yu-yan",
+    "pricing": "/100-mian-fei-ding-jie",
+    "privacy": "/yin-si-zheng-ce",
+    "security": "/an-quan-jia-gou",
+    "terms": "/fu-wu-tiao-kuan",
+    "usecases": "/yong-li"
   },
   "ja": {
     "home": "/",
@@ -318,7 +374,15 @@ export const localizedRoutes = {
     "file": "/huairu-wu-liao-qrkodozuo-cheng-zienereta",
     "barcode": "/wu-liao-qrkodozuo-cheng-zienereta",
     "scanqr": "/wu-liao-qrkodozuo-cheng-zienereta-2",
-    "scanbarcode": "/bakodosukiyana-wu-liao-qrkodozuo-cheng-zienereta"
+    "scanbarcode": "/bakodosukiyana-wu-liao-qrkodozuo-cheng-zienereta",
+    "about": "/si-tatinituite",
+    "compare": "/bi-jiao-turu",
+    "languages": "/sapotosareteiruyan-yu",
+    "pricing": "/wan-quan-wu-liao-nojia-ge",
+    "privacy": "/puraibasi-porisi",
+    "security": "/sekiyuritei-akitekutiya",
+    "terms": "/li-yong-gui-yue",
+    "usecases": "/shi-yong-li"
   },
   "hi": {
     "home": "/",
@@ -358,7 +422,15 @@ export const localizedRoutes = {
     "file": "/ph-aail-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
     "barcode": "/muph-t-onnlaain-kyuuaar-kodd-jnrettr",
     "scanqr": "/muph-t-onnlaain-kyuuaar-kodd-jnrettr-2",
-    "scanbarcode": "/baarkodd-skainr-muph-t-onnlaain-kyuuaar-kodd-jnrettr"
+    "scanbarcode": "/baarkodd-skainr-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+    "about": "/hmaare-baare-men",
+    "compare": "/ttuuls-kii-tulnaa-kren",
+    "languages": "/smrthit-bhaassaaen",
+    "pricing": "/100-nihshulk-muuly-nirdhaarnn",
+    "privacy": "/gopniiytaa-niiti",
+    "security": "/surkssaa-vaastuklaa",
+    "terms": "/sevaa-kii-shrten",
+    "usecases": "/kes-kaa-pryog-kren"
   },
   "ko": {
     "home": "/",
@@ -398,7 +470,15 @@ export const localizedRoutes = {
     "file": "/pail-muryo-onrain-qr-kodeu-saengseonggi",
     "barcode": "/muryo-onrain-qr-kodeu-saengseonggi",
     "scanqr": "/muryo-onrain-qr-kodeu-saengseonggi-2",
-    "scanbarcode": "/bakodeu-seukaeneo-muryo-onrain-qr-kodeu-saengseonggi"
+    "scanbarcode": "/bakodeu-seukaeneo-muryo-onrain-qr-kodeu-saengseonggi",
+    "about": "/hoesa-sogae",
+    "compare": "/dogu-bigyo",
+    "languages": "/jiweondoeneun-eoneo",
+    "pricing": "/100-muryo-gagyeog",
+    "privacy": "/gaein-jeongbo-boho-jeongcaeg",
+    "security": "/boan-akitegceo",
+    "terms": "/seobiseu-yaggwan",
+    "usecases": "/sayong-sarye"
   },
   "ar": {
     "home": "/",
@@ -438,7 +518,15 @@ export const localizedRoutes = {
     "file": "/mlf-brks-mwld-rmz-lstjb-lsryaa-mjny",
     "barcode": "/mwld-rmz-lstjb-lsryaa-mjny",
     "scanqr": "/mwld-rmz-lstjb-lsryaa-mjny-2",
-    "scanbarcode": "/msh-lbrkwd-mwld-rmz-lstjb-lsryaa-mjny"
+    "scanbarcode": "/msh-lbrkwd-mwld-rmz-lstjb-lsryaa-mjny",
+    "about": "/mn-nhn",
+    "compare": "/dwt-lmqrn",
+    "languages": "/llgt-lmdaawm",
+    "pricing": "/saar-mjny-100",
+    "privacy": "/sys-lkhswsy",
+    "security": "/laamr-l-mny",
+    "terms": "/shrwt-lkhdm",
+    "usecases": "/hlt-lstkhdm"
   },
   "ru": {
     "home": "/",
@@ -478,7 +566,15 @@ export const localizedRoutes = {
     "file": "/fayl-besplatnyy-generator-qr-kodov-onlayn",
     "barcode": "/besplatnyy-generator-qr-kodov-onlayn",
     "scanqr": "/besplatnyy-generator-qr-kodov-onlayn-2",
-    "scanbarcode": "/skaner-shtrih-koda-besplatnyy-generator-qr-kodov-onlayn"
+    "scanbarcode": "/skaner-shtrih-koda-besplatnyy-generator-qr-kodov-onlayn",
+    "about": "/o-nas",
+    "compare": "/sravnit-instrumenty",
+    "languages": "/podderzhivaemye-yazyki",
+    "pricing": "/100-besplatnye-ceny",
+    "privacy": "/politika-konfidencialnosti",
+    "security": "/arhitektura-bezopasnosti",
+    "terms": "/usloviya-obsluzhivaniya",
+    "usecases": "/varianty-ispolzovaniya"
   },
   "it": {
     "home": "/",
@@ -518,7 +614,15 @@ export const localizedRoutes = {
     "file": "/file-generatore-di-codici-qr-gratis-online",
     "barcode": "/generatore-di-codici-qr-gratis-online",
     "scanqr": "/generatore-di-codici-qr-gratis-online-2",
-    "scanbarcode": "/lettore-di-codici-a-barre-generatore-di-codici-qr-gratis-online"
+    "scanbarcode": "/lettore-di-codici-a-barre-generatore-di-codici-qr-gratis-online",
+    "about": "/chi-siamo",
+    "compare": "/confronta-strumenti",
+    "languages": "/lingue-supportate",
+    "pricing": "/prezzo-gratuito-al-100",
+    "privacy": "/informativa-sulla-privacy",
+    "security": "/architettura-di-sicurezza",
+    "terms": "/termini-di-servizio",
+    "usecases": "/casi-d-uso"
   },
   "tr": {
     "home": "/",
@@ -558,7 +662,15 @@ export const localizedRoutes = {
     "file": "/dosya-ucretsiz-cevrimici-qr-kod-olusturucu",
     "barcode": "/ucretsiz-cevrimici-qr-kod-olusturucu",
     "scanqr": "/ucretsiz-cevrimici-qr-kod-olusturucu-2",
-    "scanbarcode": "/barkod-tarayici-ucretsiz-cevrimici-qr-kod-olusturucu"
+    "scanbarcode": "/barkod-tarayici-ucretsiz-cevrimici-qr-kod-olusturucu",
+    "about": "/hakkimizda",
+    "compare": "/araclari-karsilastir",
+    "languages": "/desteklenen-diller",
+    "pricing": "/100-ucretsiz-fiyatlandirma",
+    "privacy": "/gizlilik-politikasi",
+    "security": "/guvenlik-mimarisi",
+    "terms": "/hizmet-sartlari",
+    "usecases": "/kullanim-durumlari"
   },
   "nl": {
     "home": "/",
@@ -598,7 +710,15 @@ export const localizedRoutes = {
     "file": "/bestand-gratis-qr-code-generator-online",
     "barcode": "/gratis-qr-code-generator-online",
     "scanqr": "/gratis-qr-code-generator-online-2",
-    "scanbarcode": "/barcodescanner-gratis-qr-code-generator-online"
+    "scanbarcode": "/barcodescanner-gratis-qr-code-generator-online",
+    "about": "/over-ons",
+    "compare": "/hulpmiddelen-vergelijken",
+    "languages": "/ondersteunde-talen",
+    "pricing": "/100-gratis-prijzen",
+    "privacy": "/privacybeleid",
+    "security": "/beveiligingsarchitectuur",
+    "terms": "/servicevoorwaarden",
+    "usecases": "/gebruiksscenario-s"
   },
   "pl": {
     "home": "/",
@@ -638,7 +758,15 @@ export const localizedRoutes = {
     "file": "/plik-darmowy-generator-kodow-qr-online",
     "barcode": "/darmowy-generator-kodow-qr-online",
     "scanqr": "/darmowy-generator-kodow-qr-online-2",
-    "scanbarcode": "/skaner-kodow-kreskowych-darmowy-generator-kodow-qr-online"
+    "scanbarcode": "/skaner-kodow-kreskowych-darmowy-generator-kodow-qr-online",
+    "about": "/o-nas",
+    "compare": "/porownaj-narzedzia",
+    "languages": "/obslugiwane-jezyki",
+    "pricing": "/100-darmowe-ceny",
+    "privacy": "/polityka-prywatnosci",
+    "security": "/architektura-bezpieczenstwa",
+    "terms": "/warunki-swiadczenia-uslug",
+    "usecases": "/przypadki-uzycia"
   },
   "sv": {
     "home": "/",
@@ -678,7 +806,15 @@ export const localizedRoutes = {
     "file": "/arkiv-gratis-qr-kod-generator-online",
     "barcode": "/gratis-qr-kod-generator-online",
     "scanqr": "/gratis-qr-kod-generator-online-2",
-    "scanbarcode": "/streckkodslasare-gratis-qr-kod-generator-online"
+    "scanbarcode": "/streckkodslasare-gratis-qr-kod-generator-online",
+    "about": "/om-oss",
+    "compare": "/jamfor-verktyg",
+    "languages": "/sprak-som-stods",
+    "pricing": "/100-gratis-prissattning",
+    "privacy": "/sekretesspolicy",
+    "security": "/sakerhetsarkitektur",
+    "terms": "/anvandarvillkor",
+    "usecases": "/anvandningsfall"
   },
   "vi": {
     "home": "/",
@@ -718,7 +854,15 @@ export const localizedRoutes = {
     "file": "/tap-tin-tao-ma-qr-mien-phi-truc-tuyen",
     "barcode": "/tao-ma-qr-mien-phi-truc-tuyen",
     "scanqr": "/tao-ma-qr-mien-phi-truc-tuyen-2",
-    "scanbarcode": "/may-quet-ma-vach-tao-ma-qr-mien-phi-truc-tuyen"
+    "scanbarcode": "/may-quet-ma-vach-tao-ma-qr-mien-phi-truc-tuyen",
+    "about": "/ve-chung-toi",
+    "compare": "/cong-cu-so-sanh",
+    "languages": "/ngon-ngu-duoc-ho-tro",
+    "pricing": "/dinh-gia-mien-phi-100",
+    "privacy": "/chinh-sach-bao-mat",
+    "security": "/kien-truc-bao-mat",
+    "terms": "/dieu-khoan-dich-vu",
+    "usecases": "/truong-hop-su-dung"
   },
   "th": {
     "home": "/",
@@ -758,7 +902,15 @@ export const localizedRoutes = {
     "file": "/aifl-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
     "barcode": "/ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
     "scanqr": "/ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii-2",
-    "scanbarcode": "/ekhruue-ngsaeknbaarokhd-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii"
+    "scanbarcode": "/ekhruue-ngsaeknbaarokhd-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+    "about": "/ekiiywkaberaa",
+    "compare": "/epriiybethiiybekhruue-ngmuue",
+    "languages": "/phaasaathiir-ngrab",
+    "pricing": "/raakhaafrii-100",
+    "privacy": "/noybaaykhwaamepnswntaw",
+    "security": "/sthaapatykrrmkaarraksaakhwaampl-dphay",
+    "terms": "/kh-kamhndainkaaraihbrikaar",
+    "usecases": "/aichkrnii"
   },
   "el": {
     "home": "/",
@@ -798,7 +950,15 @@ export const localizedRoutes = {
     "file": "/arheio-dorean-dimioyrgia-qr-code-online",
     "barcode": "/dorean-dimioyrgia-qr-code-online",
     "scanqr": "/dorean-dimioyrgia-qr-code-online-2",
-    "scanbarcode": "/barcode-scanner-dorean-dimioyrgia-qr-code-online"
+    "scanbarcode": "/barcode-scanner-dorean-dimioyrgia-qr-code-online",
+    "about": "/shetika-me-emas",
+    "compare": "/ergaleia-sygkrisis",
+    "languages": "/ypostirizomenes-glosses",
+    "pricing": "/100-dorean-timologisi",
+    "privacy": "/politiki-aporritoy",
+    "security": "/arhitektoniki-asfaleias",
+    "terms": "/oroi-parohis-ypiresion",
+    "usecases": "/periptoseis-hrisis"
   },
   "cs": {
     "home": "/",
@@ -838,7 +998,15 @@ export const localizedRoutes = {
     "file": "/soubor-berkas-zdarma-online-generator-qr-kodu",
     "barcode": "/zdarma-online-generator-qr-kodu",
     "scanqr": "/zdarma-online-generator-qr-kodu-2",
-    "scanbarcode": "/skener-carovych-kodu-zdarma-online-generator-qr-kodu"
+    "scanbarcode": "/skener-carovych-kodu-zdarma-online-generator-qr-kodu",
+    "about": "/o-nas",
+    "compare": "/nastroje-pro-porovnani",
+    "languages": "/podporovane-jazyky",
+    "pricing": "/100-bezplatna-cena",
+    "privacy": "/zasady-ochrany-osobnich-udaju",
+    "security": "/bezpecnostni-architektura",
+    "terms": "/podminky-sluzby",
+    "usecases": "/pripady-pouziti"
   },
   "da": {
     "home": "/",
@@ -878,7 +1046,15 @@ export const localizedRoutes = {
     "file": "/fil-gratis-qr-kode-generator-online",
     "barcode": "/gratis-qr-kode-generator-online",
     "scanqr": "/gratis-qr-kode-generator-online-2",
-    "scanbarcode": "/stregkodescanner-gratis-qr-kode-generator-online"
+    "scanbarcode": "/stregkodescanner-gratis-qr-kode-generator-online",
+    "about": "/om-os",
+    "compare": "/sammenlign-vaerktojer",
+    "languages": "/understottede-sprog",
+    "pricing": "/100-gratis-pris",
+    "privacy": "/privatlivspolitik",
+    "security": "/sikkerhedsarkitektur",
+    "terms": "/servicevilkar",
+    "usecases": "/use-cases"
   },
   "fi": {
     "home": "/",
@@ -918,7 +1094,15 @@ export const localizedRoutes = {
     "file": "/tiedosto-ilmainen-qr-koodigeneraattori-netissa",
     "barcode": "/ilmainen-qr-koodigeneraattori-netissa",
     "scanqr": "/ilmainen-qr-koodigeneraattori-netissa-2",
-    "scanbarcode": "/viivakoodinlukija-ilmainen-qr-koodigeneraattori-netissa"
+    "scanbarcode": "/viivakoodinlukija-ilmainen-qr-koodigeneraattori-netissa",
+    "about": "/meista",
+    "compare": "/vertaa-tyokaluja",
+    "languages": "/tuetut-kielet",
+    "pricing": "/100-ilmainen-hinnoittelu",
+    "privacy": "/tietosuojakaytanto",
+    "security": "/turvallisuusarkkitehtuuri",
+    "terms": "/palveluehdot",
+    "usecases": "/kayttotapaukset"
   },
   "no": {
     "home": "/",
@@ -958,7 +1142,15 @@ export const localizedRoutes = {
     "file": "/fil-gratis-qr-kode-generator-online",
     "barcode": "/gratis-qr-kode-generator-online",
     "scanqr": "/gratis-qr-kode-generator-online-2",
-    "scanbarcode": "/strekkodeskanner-gratis-qr-kode-generator-online"
+    "scanbarcode": "/strekkodeskanner-gratis-qr-kode-generator-online",
+    "about": "/om-oss",
+    "compare": "/sammenlign-verktoy",
+    "languages": "/stottede-sprak",
+    "pricing": "/100-gratis-priser",
+    "privacy": "/personvernerklaering",
+    "security": "/sikkerhetsarkitektur",
+    "terms": "/vilkar-for-bruk",
+    "usecases": "/brukstilfeller"
   },
   "hu": {
     "home": "/",
@@ -998,7 +1190,15 @@ export const localizedRoutes = {
     "file": "/fajl-ingyenes-online-qr-kod-generator",
     "barcode": "/ingyenes-online-qr-kod-generator",
     "scanqr": "/ingyenes-online-qr-kod-generator-2",
-    "scanbarcode": "/ingyenes-online-qr-kod-generator-3"
+    "scanbarcode": "/ingyenes-online-qr-kod-generator-3",
+    "about": "/rolunk",
+    "compare": "/eszkozok-osszehasonlitasa",
+    "languages": "/tamogatott-nyelvek",
+    "pricing": "/100-ingyenes-ar",
+    "privacy": "/adatvedelmi-szabalyzat",
+    "security": "/biztonsagi-architektura",
+    "terms": "/szolgaltatasi-feltetelek",
+    "usecases": "/hasznalati-esetek"
   },
   "ro": {
     "home": "/",
@@ -1038,7 +1238,15 @@ export const localizedRoutes = {
     "file": "/fisier-generator-de-coduri-qr-gratuit-online",
     "barcode": "/generator-de-coduri-qr-gratuit-online",
     "scanqr": "/generator-de-coduri-qr-gratuit-online-2",
-    "scanbarcode": "/generator-de-coduri-qr-gratuit-online-3"
+    "scanbarcode": "/generator-de-coduri-qr-gratuit-online-3",
+    "about": "/despre-noi",
+    "compare": "/instrumente-de-comparare",
+    "languages": "/limbi-acceptate",
+    "pricing": "/pret-100-gratuit",
+    "privacy": "/politica-de-confidentialitate",
+    "security": "/arhitectura-de-securitate",
+    "terms": "/termeni-si-conditii",
+    "usecases": "/cazuri-de-utilizare"
   },
   "uk": {
     "home": "/",
@@ -1078,7 +1286,15 @@ export const localizedRoutes = {
     "file": "/fayl-bezkoshtovniy-generator-qr-kodiv-onlayn",
     "barcode": "/bezkoshtovniy-generator-qr-kodiv-onlayn",
     "scanqr": "/bezkoshtovniy-generator-qr-kodiv-onlayn-2",
-    "scanbarcode": "/skaner-shtrih-kodiv-bezkoshtovniy-generator-qr-kodiv-onlayn"
+    "scanbarcode": "/skaner-shtrih-kodiv-bezkoshtovniy-generator-qr-kodiv-onlayn",
+    "about": "/pro-nas",
+    "compare": "/instrumenti-porivnyannya",
+    "languages": "/pidtrimuvani-movi",
+    "pricing": "/100-bezkoshtovni-cini",
+    "privacy": "/politika-konfidenciynosti",
+    "security": "/arhitektura-bezpeki",
+    "terms": "/umovi-nadannya-poslug",
+    "usecases": "/vipadki-vikoristannya"
   },
   "ms": {
     "home": "/",
@@ -1118,7 +1334,15 @@ export const localizedRoutes = {
     "file": "/fail-penjana-kod-qr-percuma-dalam-talian",
     "barcode": "/penjana-kod-qr-percuma-dalam-talian",
     "scanqr": "/penjana-kod-qr-percuma-dalam-talian-2",
-    "scanbarcode": "/pengimbas-kod-bar-penjana-kod-qr-percuma-dalam-talian"
+    "scanbarcode": "/pengimbas-kod-bar-penjana-kod-qr-percuma-dalam-talian",
+    "about": "/mengenai-kami",
+    "compare": "/bandingkan-alat",
+    "languages": "/bahasa-yang-disokong",
+    "pricing": "/100-harga-percuma",
+    "privacy": "/dasar-privasi",
+    "security": "/seni-bina-keselamatan",
+    "terms": "/syarat-perkhidmatan",
+    "usecases": "/kes-penggunaan"
   },
   "tl": {
     "home": "/",
@@ -1158,7 +1382,15 @@ export const localizedRoutes = {
     "file": "/file-libreng-online-qr-code-generator",
     "barcode": "/libreng-online-qr-code-generator",
     "scanqr": "/libreng-online-qr-code-generator-2",
-    "scanbarcode": "/barcode-scanner-libreng-online-qr-code-generator"
+    "scanbarcode": "/barcode-scanner-libreng-online-qr-code-generator",
+    "about": "/tungkol-sa-amin",
+    "compare": "/paghambingin-ang-mga-tool",
+    "languages": "/mga-sinusuportahang-wika",
+    "pricing": "/100-libreng-pagpepresyo",
+    "privacy": "/patakaran-sa-privacy",
+    "security": "/arkitektura-ng-seguridad",
+    "terms": "/mga-tuntunin-ng-serbisyo",
+    "usecases": "/use-cases"
   },
   "bn": {
     "home": "/",
@@ -1198,7 +1430,15 @@ export const localizedRoutes = {
     "file": "/phaail-berkaas-phri-anlaain-kiuaar-kodd-jenaarettr",
     "barcode": "/phri-anlaain-kiuaar-kodd-jenaarettr",
     "scanqr": "/phri-anlaain-kiuaar-kodd-jenaarettr-2",
-    "scanbarcode": "/baarkodd-skyaanaar-phri-anlaain-kiuaar-kodd-jenaarettr"
+    "scanbarcode": "/baarkodd-skyaanaar-phri-anlaain-kiuaar-kodd-jenaarettr",
+    "about": "/aamaader-smprke",
+    "compare": "/ttul-tulnaa-krun",
+    "languages": "/smrthit-bhaassaasmuuh",
+    "pricing": "/100-binaamuulye-muuly",
+    "privacy": "/gopniiy-taa-niiti",
+    "security": "/niraapttaa-aarkittekcaar",
+    "terms": "/prissebaar-shrtaablii",
+    "usecases": "/kes-bybhaar-krun"
   }
 };
 export const routeToToolMap = {
@@ -1240,7 +1480,15 @@ export const routeToToolMap = {
     "/file-qr-code-generator": "file",
     "/barcode-generator": "barcode",
     "/scan-qr": "scanqr",
-    "/scan-barcode": "scanbarcode"
+    "/scan-barcode": "scanbarcode",
+    "/about": "about",
+    "/compare": "compare",
+    "/languages": "languages",
+    "/pricing": "pricing",
+    "/privacy": "privacy",
+    "/security": "security",
+    "/terms": "terms",
+    "/use-cases": "usecases"
   },
   "id": {
     "/": "home",
@@ -1280,7 +1528,15 @@ export const routeToToolMap = {
     "/berkas-generator-qr-code-gratis-online": "file",
     "/generator-qr-code-gratis-online": "barcode",
     "/generator-qr-code-gratis-online-2": "scanqr",
-    "/pemindai-kode-batang-generator-qr-code-gratis-online": "scanbarcode"
+    "/pemindai-kode-batang-generator-qr-code-gratis-online": "scanbarcode",
+    "/tentang-kami": "about",
+    "/bandingkan-alat": "compare",
+    "/bahasa-yang-didukung": "languages",
+    "/100-harga-gratis": "pricing",
+    "/kebijakan-privasi": "privacy",
+    "/arsitektur-keamanan": "security",
+    "/ketentuan-layanan": "terms",
+    "/kasus-penggunaan": "usecases"
   },
   "es": {
     "/": "home",
@@ -1320,7 +1576,15 @@ export const routeToToolMap = {
     "/archivo-generador-de-codigos-qr-gratis-online": "file",
     "/generador-de-codigos-qr-gratis-online": "barcode",
     "/generador-de-codigos-qr-gratis-online-2": "scanqr",
-    "/escaner-de-codigo-de-barras-generador-de-codigos-qr-gratis-online": "scanbarcode"
+    "/escaner-de-codigo-de-barras-generador-de-codigos-qr-gratis-online": "scanbarcode",
+    "/sobre-nosotros": "about",
+    "/comparar-herramientas": "compare",
+    "/idiomas-admitidos": "languages",
+    "/precios-100-gratuitos": "pricing",
+    "/politica-de-privacidad": "privacy",
+    "/arquitectura-de-seguridad": "security",
+    "/terminos-de-servicio": "terms",
+    "/casos-de-uso": "usecases"
   },
   "fr": {
     "/": "home",
@@ -1360,7 +1624,15 @@ export const routeToToolMap = {
     "/fichier-generateur-de-code-qr-gratuit-en-ligne": "file",
     "/generateur-de-code-qr-gratuit-en-ligne": "barcode",
     "/generateur-de-code-qr-gratuit-en-ligne-2": "scanqr",
-    "/lecteur-de-codes-a-barres-generateur-de-code-qr-gratuit-en-ligne": "scanbarcode"
+    "/lecteur-de-codes-a-barres-generateur-de-code-qr-gratuit-en-ligne": "scanbarcode",
+    "/a-propos-de-nous": "about",
+    "/comparer-les-outils": "compare",
+    "/langues-prises-en-charge": "languages",
+    "/tarif-100-gratuit": "pricing",
+    "/politique-de-confidentialite": "privacy",
+    "/architecture-de-securite": "security",
+    "/conditions-d-utilisation": "terms",
+    "/cas-d-utilisation": "usecases"
   },
   "de": {
     "/": "home",
@@ -1400,7 +1672,15 @@ export const routeToToolMap = {
     "/datei-kostenloser-qr-code-generator-online": "file",
     "/kostenloser-qr-code-generator-online": "barcode",
     "/kostenloser-qr-code-generator-online-2": "scanqr",
-    "/barcode-scanner-kostenloser-qr-code-generator-online": "scanbarcode"
+    "/barcode-scanner-kostenloser-qr-code-generator-online": "scanbarcode",
+    "/uber-uns": "about",
+    "/tools-vergleichen": "compare",
+    "/unterstutzte-sprachen": "languages",
+    "/100-kostenlose-preisgestaltung": "pricing",
+    "/datenschutzrichtlinie": "privacy",
+    "/sicherheitsarchitektur": "security",
+    "/nutzungsbedingungen": "terms",
+    "/anwendungsfalle": "usecases"
   },
   "pt": {
     "/": "home",
@@ -1440,7 +1720,15 @@ export const routeToToolMap = {
     "/arquivo-gerador-de-codigo-qr-gratis-online": "file",
     "/gerador-de-codigo-qr-gratis-online": "barcode",
     "/gerador-de-codigo-qr-gratis-online-2": "scanqr",
-    "/leitor-de-codigo-de-barras-gerador-de-codigo-qr-gratis-online": "scanbarcode"
+    "/leitor-de-codigo-de-barras-gerador-de-codigo-qr-gratis-online": "scanbarcode",
+    "/sobre-nos": "about",
+    "/comparar-ferramentas": "compare",
+    "/idiomas-suportados": "languages",
+    "/preco-100-gratuito": "pricing",
+    "/politica-de-privacidade": "privacy",
+    "/arquitetura-de-seguranca": "security",
+    "/termos-de-servico": "terms",
+    "/casos-de-uso": "usecases"
   },
   "zh": {
     "/": "home",
@@ -1480,7 +1768,15 @@ export const routeToToolMap = {
     "/wen-jian-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi": "file",
     "/mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi": "barcode",
     "/mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi-2": "scanqr",
-    "/tiao-ma-sao-miao-yi-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi": "scanbarcode"
+    "/tiao-ma-sao-miao-yi-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi": "scanbarcode",
+    "/guan-yu-wo-men": "about",
+    "/bi-jiao-gong-ju": "compare",
+    "/zhi-chi-de-yu-yan": "languages",
+    "/100-mian-fei-ding-jie": "pricing",
+    "/yin-si-zheng-ce": "privacy",
+    "/an-quan-jia-gou": "security",
+    "/fu-wu-tiao-kuan": "terms",
+    "/yong-li": "usecases"
   },
   "ja": {
     "/": "home",
@@ -1520,7 +1816,15 @@ export const routeToToolMap = {
     "/huairu-wu-liao-qrkodozuo-cheng-zienereta": "file",
     "/wu-liao-qrkodozuo-cheng-zienereta": "barcode",
     "/wu-liao-qrkodozuo-cheng-zienereta-2": "scanqr",
-    "/bakodosukiyana-wu-liao-qrkodozuo-cheng-zienereta": "scanbarcode"
+    "/bakodosukiyana-wu-liao-qrkodozuo-cheng-zienereta": "scanbarcode",
+    "/si-tatinituite": "about",
+    "/bi-jiao-turu": "compare",
+    "/sapotosareteiruyan-yu": "languages",
+    "/wan-quan-wu-liao-nojia-ge": "pricing",
+    "/puraibasi-porisi": "privacy",
+    "/sekiyuritei-akitekutiya": "security",
+    "/li-yong-gui-yue": "terms",
+    "/shi-yong-li": "usecases"
   },
   "hi": {
     "/": "home",
@@ -1560,7 +1864,15 @@ export const routeToToolMap = {
     "/ph-aail-muph-t-onnlaain-kyuuaar-kodd-jnrettr": "file",
     "/muph-t-onnlaain-kyuuaar-kodd-jnrettr": "barcode",
     "/muph-t-onnlaain-kyuuaar-kodd-jnrettr-2": "scanqr",
-    "/baarkodd-skainr-muph-t-onnlaain-kyuuaar-kodd-jnrettr": "scanbarcode"
+    "/baarkodd-skainr-muph-t-onnlaain-kyuuaar-kodd-jnrettr": "scanbarcode",
+    "/hmaare-baare-men": "about",
+    "/ttuuls-kii-tulnaa-kren": "compare",
+    "/smrthit-bhaassaaen": "languages",
+    "/100-nihshulk-muuly-nirdhaarnn": "pricing",
+    "/gopniiytaa-niiti": "privacy",
+    "/surkssaa-vaastuklaa": "security",
+    "/sevaa-kii-shrten": "terms",
+    "/kes-kaa-pryog-kren": "usecases"
   },
   "ko": {
     "/": "home",
@@ -1600,7 +1912,15 @@ export const routeToToolMap = {
     "/pail-muryo-onrain-qr-kodeu-saengseonggi": "file",
     "/muryo-onrain-qr-kodeu-saengseonggi": "barcode",
     "/muryo-onrain-qr-kodeu-saengseonggi-2": "scanqr",
-    "/bakodeu-seukaeneo-muryo-onrain-qr-kodeu-saengseonggi": "scanbarcode"
+    "/bakodeu-seukaeneo-muryo-onrain-qr-kodeu-saengseonggi": "scanbarcode",
+    "/hoesa-sogae": "about",
+    "/dogu-bigyo": "compare",
+    "/jiweondoeneun-eoneo": "languages",
+    "/100-muryo-gagyeog": "pricing",
+    "/gaein-jeongbo-boho-jeongcaeg": "privacy",
+    "/boan-akitegceo": "security",
+    "/seobiseu-yaggwan": "terms",
+    "/sayong-sarye": "usecases"
   },
   "ar": {
     "/": "home",
@@ -1640,7 +1960,15 @@ export const routeToToolMap = {
     "/mlf-brks-mwld-rmz-lstjb-lsryaa-mjny": "file",
     "/mwld-rmz-lstjb-lsryaa-mjny": "barcode",
     "/mwld-rmz-lstjb-lsryaa-mjny-2": "scanqr",
-    "/msh-lbrkwd-mwld-rmz-lstjb-lsryaa-mjny": "scanbarcode"
+    "/msh-lbrkwd-mwld-rmz-lstjb-lsryaa-mjny": "scanbarcode",
+    "/mn-nhn": "about",
+    "/dwt-lmqrn": "compare",
+    "/llgt-lmdaawm": "languages",
+    "/saar-mjny-100": "pricing",
+    "/sys-lkhswsy": "privacy",
+    "/laamr-l-mny": "security",
+    "/shrwt-lkhdm": "terms",
+    "/hlt-lstkhdm": "usecases"
   },
   "ru": {
     "/": "home",
@@ -1680,7 +2008,15 @@ export const routeToToolMap = {
     "/fayl-besplatnyy-generator-qr-kodov-onlayn": "file",
     "/besplatnyy-generator-qr-kodov-onlayn": "barcode",
     "/besplatnyy-generator-qr-kodov-onlayn-2": "scanqr",
-    "/skaner-shtrih-koda-besplatnyy-generator-qr-kodov-onlayn": "scanbarcode"
+    "/skaner-shtrih-koda-besplatnyy-generator-qr-kodov-onlayn": "scanbarcode",
+    "/o-nas": "about",
+    "/sravnit-instrumenty": "compare",
+    "/podderzhivaemye-yazyki": "languages",
+    "/100-besplatnye-ceny": "pricing",
+    "/politika-konfidencialnosti": "privacy",
+    "/arhitektura-bezopasnosti": "security",
+    "/usloviya-obsluzhivaniya": "terms",
+    "/varianty-ispolzovaniya": "usecases"
   },
   "it": {
     "/": "home",
@@ -1720,7 +2056,15 @@ export const routeToToolMap = {
     "/file-generatore-di-codici-qr-gratis-online": "file",
     "/generatore-di-codici-qr-gratis-online": "barcode",
     "/generatore-di-codici-qr-gratis-online-2": "scanqr",
-    "/lettore-di-codici-a-barre-generatore-di-codici-qr-gratis-online": "scanbarcode"
+    "/lettore-di-codici-a-barre-generatore-di-codici-qr-gratis-online": "scanbarcode",
+    "/chi-siamo": "about",
+    "/confronta-strumenti": "compare",
+    "/lingue-supportate": "languages",
+    "/prezzo-gratuito-al-100": "pricing",
+    "/informativa-sulla-privacy": "privacy",
+    "/architettura-di-sicurezza": "security",
+    "/termini-di-servizio": "terms",
+    "/casi-d-uso": "usecases"
   },
   "tr": {
     "/": "home",
@@ -1760,7 +2104,15 @@ export const routeToToolMap = {
     "/dosya-ucretsiz-cevrimici-qr-kod-olusturucu": "file",
     "/ucretsiz-cevrimici-qr-kod-olusturucu": "barcode",
     "/ucretsiz-cevrimici-qr-kod-olusturucu-2": "scanqr",
-    "/barkod-tarayici-ucretsiz-cevrimici-qr-kod-olusturucu": "scanbarcode"
+    "/barkod-tarayici-ucretsiz-cevrimici-qr-kod-olusturucu": "scanbarcode",
+    "/hakkimizda": "about",
+    "/araclari-karsilastir": "compare",
+    "/desteklenen-diller": "languages",
+    "/100-ucretsiz-fiyatlandirma": "pricing",
+    "/gizlilik-politikasi": "privacy",
+    "/guvenlik-mimarisi": "security",
+    "/hizmet-sartlari": "terms",
+    "/kullanim-durumlari": "usecases"
   },
   "nl": {
     "/": "home",
@@ -1800,7 +2152,15 @@ export const routeToToolMap = {
     "/bestand-gratis-qr-code-generator-online": "file",
     "/gratis-qr-code-generator-online": "barcode",
     "/gratis-qr-code-generator-online-2": "scanqr",
-    "/barcodescanner-gratis-qr-code-generator-online": "scanbarcode"
+    "/barcodescanner-gratis-qr-code-generator-online": "scanbarcode",
+    "/over-ons": "about",
+    "/hulpmiddelen-vergelijken": "compare",
+    "/ondersteunde-talen": "languages",
+    "/100-gratis-prijzen": "pricing",
+    "/privacybeleid": "privacy",
+    "/beveiligingsarchitectuur": "security",
+    "/servicevoorwaarden": "terms",
+    "/gebruiksscenario-s": "usecases"
   },
   "pl": {
     "/": "home",
@@ -1840,7 +2200,15 @@ export const routeToToolMap = {
     "/plik-darmowy-generator-kodow-qr-online": "file",
     "/darmowy-generator-kodow-qr-online": "barcode",
     "/darmowy-generator-kodow-qr-online-2": "scanqr",
-    "/skaner-kodow-kreskowych-darmowy-generator-kodow-qr-online": "scanbarcode"
+    "/skaner-kodow-kreskowych-darmowy-generator-kodow-qr-online": "scanbarcode",
+    "/o-nas": "about",
+    "/porownaj-narzedzia": "compare",
+    "/obslugiwane-jezyki": "languages",
+    "/100-darmowe-ceny": "pricing",
+    "/polityka-prywatnosci": "privacy",
+    "/architektura-bezpieczenstwa": "security",
+    "/warunki-swiadczenia-uslug": "terms",
+    "/przypadki-uzycia": "usecases"
   },
   "sv": {
     "/": "home",
@@ -1880,7 +2248,15 @@ export const routeToToolMap = {
     "/arkiv-gratis-qr-kod-generator-online": "file",
     "/gratis-qr-kod-generator-online": "barcode",
     "/gratis-qr-kod-generator-online-2": "scanqr",
-    "/streckkodslasare-gratis-qr-kod-generator-online": "scanbarcode"
+    "/streckkodslasare-gratis-qr-kod-generator-online": "scanbarcode",
+    "/om-oss": "about",
+    "/jamfor-verktyg": "compare",
+    "/sprak-som-stods": "languages",
+    "/100-gratis-prissattning": "pricing",
+    "/sekretesspolicy": "privacy",
+    "/sakerhetsarkitektur": "security",
+    "/anvandarvillkor": "terms",
+    "/anvandningsfall": "usecases"
   },
   "vi": {
     "/": "home",
@@ -1920,7 +2296,15 @@ export const routeToToolMap = {
     "/tap-tin-tao-ma-qr-mien-phi-truc-tuyen": "file",
     "/tao-ma-qr-mien-phi-truc-tuyen": "barcode",
     "/tao-ma-qr-mien-phi-truc-tuyen-2": "scanqr",
-    "/may-quet-ma-vach-tao-ma-qr-mien-phi-truc-tuyen": "scanbarcode"
+    "/may-quet-ma-vach-tao-ma-qr-mien-phi-truc-tuyen": "scanbarcode",
+    "/ve-chung-toi": "about",
+    "/cong-cu-so-sanh": "compare",
+    "/ngon-ngu-duoc-ho-tro": "languages",
+    "/dinh-gia-mien-phi-100": "pricing",
+    "/chinh-sach-bao-mat": "privacy",
+    "/kien-truc-bao-mat": "security",
+    "/dieu-khoan-dich-vu": "terms",
+    "/truong-hop-su-dung": "usecases"
   },
   "th": {
     "/": "home",
@@ -1960,7 +2344,15 @@ export const routeToToolMap = {
     "/aifl-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii": "file",
     "/ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii": "barcode",
     "/ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii-2": "scanqr",
-    "/ekhruue-ngsaeknbaarokhd-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii": "scanbarcode"
+    "/ekhruue-ngsaeknbaarokhd-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii": "scanbarcode",
+    "/ekiiywkaberaa": "about",
+    "/epriiybethiiybekhruue-ngmuue": "compare",
+    "/phaasaathiir-ngrab": "languages",
+    "/raakhaafrii-100": "pricing",
+    "/noybaaykhwaamepnswntaw": "privacy",
+    "/sthaapatykrrmkaarraksaakhwaampl-dphay": "security",
+    "/kh-kamhndainkaaraihbrikaar": "terms",
+    "/aichkrnii": "usecases"
   },
   "el": {
     "/": "home",
@@ -2000,7 +2392,15 @@ export const routeToToolMap = {
     "/arheio-dorean-dimioyrgia-qr-code-online": "file",
     "/dorean-dimioyrgia-qr-code-online": "barcode",
     "/dorean-dimioyrgia-qr-code-online-2": "scanqr",
-    "/barcode-scanner-dorean-dimioyrgia-qr-code-online": "scanbarcode"
+    "/barcode-scanner-dorean-dimioyrgia-qr-code-online": "scanbarcode",
+    "/shetika-me-emas": "about",
+    "/ergaleia-sygkrisis": "compare",
+    "/ypostirizomenes-glosses": "languages",
+    "/100-dorean-timologisi": "pricing",
+    "/politiki-aporritoy": "privacy",
+    "/arhitektoniki-asfaleias": "security",
+    "/oroi-parohis-ypiresion": "terms",
+    "/periptoseis-hrisis": "usecases"
   },
   "cs": {
     "/": "home",
@@ -2040,7 +2440,15 @@ export const routeToToolMap = {
     "/soubor-berkas-zdarma-online-generator-qr-kodu": "file",
     "/zdarma-online-generator-qr-kodu": "barcode",
     "/zdarma-online-generator-qr-kodu-2": "scanqr",
-    "/skener-carovych-kodu-zdarma-online-generator-qr-kodu": "scanbarcode"
+    "/skener-carovych-kodu-zdarma-online-generator-qr-kodu": "scanbarcode",
+    "/o-nas": "about",
+    "/nastroje-pro-porovnani": "compare",
+    "/podporovane-jazyky": "languages",
+    "/100-bezplatna-cena": "pricing",
+    "/zasady-ochrany-osobnich-udaju": "privacy",
+    "/bezpecnostni-architektura": "security",
+    "/podminky-sluzby": "terms",
+    "/pripady-pouziti": "usecases"
   },
   "da": {
     "/": "home",
@@ -2080,7 +2488,15 @@ export const routeToToolMap = {
     "/fil-gratis-qr-kode-generator-online": "file",
     "/gratis-qr-kode-generator-online": "barcode",
     "/gratis-qr-kode-generator-online-2": "scanqr",
-    "/stregkodescanner-gratis-qr-kode-generator-online": "scanbarcode"
+    "/stregkodescanner-gratis-qr-kode-generator-online": "scanbarcode",
+    "/om-os": "about",
+    "/sammenlign-vaerktojer": "compare",
+    "/understottede-sprog": "languages",
+    "/100-gratis-pris": "pricing",
+    "/privatlivspolitik": "privacy",
+    "/sikkerhedsarkitektur": "security",
+    "/servicevilkar": "terms",
+    "/use-cases": "usecases"
   },
   "fi": {
     "/": "home",
@@ -2120,7 +2536,15 @@ export const routeToToolMap = {
     "/tiedosto-ilmainen-qr-koodigeneraattori-netissa": "file",
     "/ilmainen-qr-koodigeneraattori-netissa": "barcode",
     "/ilmainen-qr-koodigeneraattori-netissa-2": "scanqr",
-    "/viivakoodinlukija-ilmainen-qr-koodigeneraattori-netissa": "scanbarcode"
+    "/viivakoodinlukija-ilmainen-qr-koodigeneraattori-netissa": "scanbarcode",
+    "/meista": "about",
+    "/vertaa-tyokaluja": "compare",
+    "/tuetut-kielet": "languages",
+    "/100-ilmainen-hinnoittelu": "pricing",
+    "/tietosuojakaytanto": "privacy",
+    "/turvallisuusarkkitehtuuri": "security",
+    "/palveluehdot": "terms",
+    "/kayttotapaukset": "usecases"
   },
   "no": {
     "/": "home",
@@ -2160,7 +2584,15 @@ export const routeToToolMap = {
     "/fil-gratis-qr-kode-generator-online": "file",
     "/gratis-qr-kode-generator-online": "barcode",
     "/gratis-qr-kode-generator-online-2": "scanqr",
-    "/strekkodeskanner-gratis-qr-kode-generator-online": "scanbarcode"
+    "/strekkodeskanner-gratis-qr-kode-generator-online": "scanbarcode",
+    "/om-oss": "about",
+    "/sammenlign-verktoy": "compare",
+    "/stottede-sprak": "languages",
+    "/100-gratis-priser": "pricing",
+    "/personvernerklaering": "privacy",
+    "/sikkerhetsarkitektur": "security",
+    "/vilkar-for-bruk": "terms",
+    "/brukstilfeller": "usecases"
   },
   "hu": {
     "/": "home",
@@ -2200,7 +2632,15 @@ export const routeToToolMap = {
     "/fajl-ingyenes-online-qr-kod-generator": "file",
     "/ingyenes-online-qr-kod-generator": "barcode",
     "/ingyenes-online-qr-kod-generator-2": "scanqr",
-    "/ingyenes-online-qr-kod-generator-3": "scanbarcode"
+    "/ingyenes-online-qr-kod-generator-3": "scanbarcode",
+    "/rolunk": "about",
+    "/eszkozok-osszehasonlitasa": "compare",
+    "/tamogatott-nyelvek": "languages",
+    "/100-ingyenes-ar": "pricing",
+    "/adatvedelmi-szabalyzat": "privacy",
+    "/biztonsagi-architektura": "security",
+    "/szolgaltatasi-feltetelek": "terms",
+    "/hasznalati-esetek": "usecases"
   },
   "ro": {
     "/": "home",
@@ -2240,7 +2680,15 @@ export const routeToToolMap = {
     "/fisier-generator-de-coduri-qr-gratuit-online": "file",
     "/generator-de-coduri-qr-gratuit-online": "barcode",
     "/generator-de-coduri-qr-gratuit-online-2": "scanqr",
-    "/generator-de-coduri-qr-gratuit-online-3": "scanbarcode"
+    "/generator-de-coduri-qr-gratuit-online-3": "scanbarcode",
+    "/despre-noi": "about",
+    "/instrumente-de-comparare": "compare",
+    "/limbi-acceptate": "languages",
+    "/pret-100-gratuit": "pricing",
+    "/politica-de-confidentialitate": "privacy",
+    "/arhitectura-de-securitate": "security",
+    "/termeni-si-conditii": "terms",
+    "/cazuri-de-utilizare": "usecases"
   },
   "uk": {
     "/": "home",
@@ -2280,7 +2728,15 @@ export const routeToToolMap = {
     "/fayl-bezkoshtovniy-generator-qr-kodiv-onlayn": "file",
     "/bezkoshtovniy-generator-qr-kodiv-onlayn": "barcode",
     "/bezkoshtovniy-generator-qr-kodiv-onlayn-2": "scanqr",
-    "/skaner-shtrih-kodiv-bezkoshtovniy-generator-qr-kodiv-onlayn": "scanbarcode"
+    "/skaner-shtrih-kodiv-bezkoshtovniy-generator-qr-kodiv-onlayn": "scanbarcode",
+    "/pro-nas": "about",
+    "/instrumenti-porivnyannya": "compare",
+    "/pidtrimuvani-movi": "languages",
+    "/100-bezkoshtovni-cini": "pricing",
+    "/politika-konfidenciynosti": "privacy",
+    "/arhitektura-bezpeki": "security",
+    "/umovi-nadannya-poslug": "terms",
+    "/vipadki-vikoristannya": "usecases"
   },
   "ms": {
     "/": "home",
@@ -2320,7 +2776,15 @@ export const routeToToolMap = {
     "/fail-penjana-kod-qr-percuma-dalam-talian": "file",
     "/penjana-kod-qr-percuma-dalam-talian": "barcode",
     "/penjana-kod-qr-percuma-dalam-talian-2": "scanqr",
-    "/pengimbas-kod-bar-penjana-kod-qr-percuma-dalam-talian": "scanbarcode"
+    "/pengimbas-kod-bar-penjana-kod-qr-percuma-dalam-talian": "scanbarcode",
+    "/mengenai-kami": "about",
+    "/bandingkan-alat": "compare",
+    "/bahasa-yang-disokong": "languages",
+    "/100-harga-percuma": "pricing",
+    "/dasar-privasi": "privacy",
+    "/seni-bina-keselamatan": "security",
+    "/syarat-perkhidmatan": "terms",
+    "/kes-penggunaan": "usecases"
   },
   "tl": {
     "/": "home",
@@ -2360,7 +2824,15 @@ export const routeToToolMap = {
     "/file-libreng-online-qr-code-generator": "file",
     "/libreng-online-qr-code-generator": "barcode",
     "/libreng-online-qr-code-generator-2": "scanqr",
-    "/barcode-scanner-libreng-online-qr-code-generator": "scanbarcode"
+    "/barcode-scanner-libreng-online-qr-code-generator": "scanbarcode",
+    "/tungkol-sa-amin": "about",
+    "/paghambingin-ang-mga-tool": "compare",
+    "/mga-sinusuportahang-wika": "languages",
+    "/100-libreng-pagpepresyo": "pricing",
+    "/patakaran-sa-privacy": "privacy",
+    "/arkitektura-ng-seguridad": "security",
+    "/mga-tuntunin-ng-serbisyo": "terms",
+    "/use-cases": "usecases"
   },
   "bn": {
     "/": "home",
@@ -2400,6 +2872,14 @@ export const routeToToolMap = {
     "/phaail-berkaas-phri-anlaain-kiuaar-kodd-jenaarettr": "file",
     "/phri-anlaain-kiuaar-kodd-jenaarettr": "barcode",
     "/phri-anlaain-kiuaar-kodd-jenaarettr-2": "scanqr",
-    "/baarkodd-skyaanaar-phri-anlaain-kiuaar-kodd-jenaarettr": "scanbarcode"
+    "/baarkodd-skyaanaar-phri-anlaain-kiuaar-kodd-jenaarettr": "scanbarcode",
+    "/aamaader-smprke": "about",
+    "/ttul-tulnaa-krun": "compare",
+    "/smrthit-bhaassaasmuuh": "languages",
+    "/100-binaamuulye-muuly": "pricing",
+    "/gopniiy-taa-niiti": "privacy",
+    "/niraapttaa-aarkittekcaar": "security",
+    "/prissebaar-shrtaablii": "terms",
+    "/kes-bybhaar-krun": "usecases"
   }
 };

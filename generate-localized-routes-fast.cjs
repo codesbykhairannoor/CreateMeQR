@@ -42,6 +42,17 @@ const PSEO_ROUTES = {
   '/scan-barcode': 'scanbarcode',
 };
 
+const STATIC_ROUTES = {
+  '/about': 'about',
+  '/compare': 'compare',
+  '/languages': 'languages',
+  '/pricing': 'pricing',
+  '/privacy': 'privacy',
+  '/security': 'security',
+  '/terms': 'terms',
+  '/use-cases': 'usecases',
+};
+
 const LANGS = [
   'en', 'id', 'es', 'fr', 'de', 'pt', 'zh', 'ja', 'hi', 'ko', 'ar', 
   'ru', 'it', 'tr', 'nl', 'pl', 'sv', 'vi', 'th', 'el', 'cs', 'da', 
@@ -122,6 +133,34 @@ async function run() {
       let counter = 2;
       while (routeToToolMap[lang][safeSlug]) {
         safeSlug = theSlug + '-' + counter;
+        counter++;
+      }
+      
+      localizedRoutes[lang][type] = safeSlug;
+      routeToToolMap[lang][safeSlug] = type;
+    }
+
+    // Now do the same for static routes
+    for (const [slug, type] of Object.entries(STATIC_ROUTES)) {
+      if (lang === 'en') {
+        localizedRoutes[lang][type] = slug;
+        routeToToolMap[lang][slug] = type;
+        continue;
+      }
+      
+      const translatedTitle = data?.static?.[type]?.seoTitle || slug.substring(1);
+      let translatedSlug = robustSlugify(translatedTitle);
+      
+      if (!translatedSlug || translatedSlug.length < 2) {
+        translatedSlug = slug.substring(1);
+      }
+      
+      const finalSlug = '/' + translatedSlug;
+      
+      let safeSlug = finalSlug;
+      let counter = 2;
+      while (routeToToolMap[lang][safeSlug]) {
+        safeSlug = finalSlug + '-' + counter;
         counter++;
       }
       

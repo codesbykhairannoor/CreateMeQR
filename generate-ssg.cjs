@@ -54,23 +54,12 @@ async function run() {
     const translations = JSON.parse(fs.readFileSync(transPath, 'utf8'));
     const toolMap = routeToToolMap[lang] || {};
     
-    // Inject static pages into the generation loop
-    const staticPages = {
-      '/about': 'about',
-      '/compare': 'compare',
-      '/languages': 'languages',
-      '/pricing': 'pricing',
-      '/privacy': 'privacy',
-      '/security': 'security',
-      '/terms': 'terms',
-      '/use-cases': 'use-cases'
-    };
-    const allPages = { ...toolMap, ...staticPages };
+    const allPages = { ...toolMap };
     
     for (const [localizedSlug, toolId] of Object.entries(allPages)) {
       let title, description;
       
-      if (['about', 'compare', 'languages', 'pricing', 'privacy', 'security', 'terms', 'use-cases'].includes(toolId)) {
+      if (['about', 'compare', 'languages', 'pricing', 'privacy', 'security', 'terms', 'usecases'].includes(toolId)) {
         // Fallback or exact titles for static pages
         const staticTitles = {
           'about': 'About Us',
@@ -80,14 +69,16 @@ async function run() {
           'privacy': 'Privacy Policy',
           'security': 'Security Architecture',
           'terms': 'Terms of Service',
-          'use-cases': 'Use Cases'
+          'usecases': 'Use Cases'
         };
-        title = `${staticTitles[toolId]} | CreateMy-QR`;
-        description = `Learn more about CreateMy-QR ${staticTitles[toolId].toLowerCase()}.`;
-        // Helper to grab deep nested translations if needed
-        if (translations[toolId] && translations[toolId].title) {
-           title = `${translations[toolId].title} | CreateMy-QR`;
+        
+        let translatedTitle = staticTitles[toolId];
+        if (translations.static && translations.static[toolId] && translations.static[toolId].seoTitle) {
+          translatedTitle = translations.static[toolId].seoTitle;
         }
+        
+        title = `${translatedTitle} | CreateMy-QR`;
+        description = `Learn more about CreateMy-QR ${staticTitles[toolId].toLowerCase()}.`;
       } else if (toolId === 'url' || toolId === '/') {
         title = translations.appTitle || 'CreateMy-QR | Free Custom QR Code Generator';
         description = translations.tagline || 'Generate high-quality static QR codes directly in your browser.';

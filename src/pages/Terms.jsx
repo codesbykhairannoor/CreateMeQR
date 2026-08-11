@@ -1,10 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
-
 import { Scale, CheckCircle2, ShieldCheck } from 'lucide-react';
-
-
 
 export default function Terms() {
   const { t } = useTranslation();
@@ -12,60 +9,72 @@ export default function Terms() {
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | ${t.footerTos || 'Terms of Service'} - CreateMy-QR</title>
+        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.terms.seoTitle', 'Terms of Service')}</title>
       </Helmet>
       
-      <main style={{ width: '100%', flex: 1, background: 'var(--bg-app)' }}>
-        
+      <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero Ledger */}
-        <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>
-            <Scale size={64} className="text-brand-primary" style={{ margin: '0 auto 32px' }} />
-            <h1 style={{ fontSize: 'clamp(3rem, 6vw, 4.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 24, letterSpacing: '-0.03em', color: 'var(--text-main)', lineHeight: 1.1 }}>
-              {t.pageTosHero || 'Terms of Service'}
+        <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-slate-400/20 dark:bg-slate-700/20 blur-[150px] rounded-full pointer-events-none" />
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-slate-400/20 dark:bg-slate-700/20 blur-[150px] rounded-full pointer-events-none" />
+          
+          <div className="max-w-4xl mx-auto text-center relative z-10">
+            <Scale size={80} className="text-slate-700 dark:text-slate-400 mx-auto mb-8 animate-[pulse_3s_ease-in-out_infinite]" />
+            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1] text-slate-900 dark:text-white">
+              {t('static.terms.heroTitle', 'Terms of Service')}
             </h1>
-            <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.6, maxWidth: 700, margin: '0 auto' }}>
-              {t.pageTosSub || 'Clear, transparent, and fair. Read the terms that govern the usage of the CreateMy-QR platform.'}
+            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
+              {t('static.terms.heroSubtitle', 'Simple, transparent, and fair. Read the terms that govern the usage of the CreateMy-QR platform.')}
             </p>
-            <div style={{ marginTop: 40, display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 16px', background: 'var(--brand-glow)', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 700, fontSize: '0.9rem' }}>
-              <CheckCircle2 size={16} /> Last Updated: October 2024
+            <div className="mt-12 inline-flex items-center gap-2 px-6 py-3 bg-white dark:bg-[#0a1128] text-slate-700 dark:text-slate-400 rounded-full font-bold text-sm tracking-wider border border-slate-200 dark:border-[#1e2d4a] shadow-xl">
+              <CheckCircle2 size={16} /> {t('static.terms.lastUpdated', 'Last Updated: October 2024')}
             </div>
           </div>
         </section>
 
         {/* Section 2: Agreement & Accessibility */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 48, height: 48, borderRadius: 12, background: 'var(--brand-gradient)', color: '#fff', fontWeight: 900, fontSize: '1.5rem' }}>1</div>
-              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>Agreement to Terms</h2>
+        <section className="w-full py-24 px-6 relative z-20">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-6 mb-8">
+              <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 text-white font-extrabold text-2xl shadow-xl">1</div>
+              <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+                {t('static.terms.sec1Title', 'Agreement to Terms')}
+              </h2>
             </div>
-            <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, paddingLeft: 64 }}>
-              By accessing and using CreateMy-QR, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you do not have permission to access the Service. Our platform is provided completely free of charge for both personal and commercial use.
-            </p>
+            <div className="pl-24">
+              <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                {t('static.terms.sec1Desc', 'By accessing and using CreateMy-QR, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you do not have permission to access the Service. Our platform is provided completely free of charge for both personal and commercial use.')}
+              </p>
+            </div>
           </div>
         </section>
 
         {/* Section 3: Local Processing Guarantee */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 48, height: 48, borderRadius: 12, background: 'var(--brand-gradient)', color: '#fff', fontWeight: 900, fontSize: '1.5rem' }}>2</div>
-              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>Local Processing Guarantee</h2>
+        <section className="w-full py-24 px-6 bg-white/50 dark:bg-[#060c1c]/50 backdrop-blur-xl border-y border-slate-200 dark:border-[#102040]">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-6 mb-8">
+              <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 text-white font-extrabold text-2xl shadow-xl">2</div>
+              <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+                {t('static.terms.sec2Title', 'Local Processing Guarantee')}
+              </h2>
             </div>
-            <div style={{ paddingLeft: 64 }}>
-              <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 24 }}>
-                CreateMy-QR provides document manipulation tools that execute strictly within your local browser environment via WebAssembly. We guarantee that:
+            <div className="pl-24">
+              <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium mb-8">
+                {t('static.terms.sec2Desc', 'CreateMy-QR provides tools that execute strictly within your local browser environment via WebAssembly. We guarantee that:')}
               </p>
-              <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 16 }}>
-                <li style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-                  <ShieldCheck color="var(--brand-primary)" size={24} style={{ marginTop: 2, flexShrink: 0 }} />
-                  <span style={{ fontSize: '1.1rem', color: 'var(--text-main)', lineHeight: 1.6 }}>Your files are never uploaded to our servers or any third-party infrastructure.</span>
+              <ul className="space-y-6">
+                <li className="flex gap-4 items-start">
+                  <ShieldCheck size={28} className="text-emerald-500 shrink-0 mt-1" />
+                  <span className="text-xl text-slate-700 dark:text-slate-300 font-medium">
+                    {t('static.terms.sec2Bul1', 'Your files are never uploaded to our servers or any third-party infrastructure.')}
+                  </span>
                 </li>
-                <li style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-                  <ShieldCheck color="var(--brand-primary)" size={24} style={{ marginTop: 2, flexShrink: 0 }} />
-                  <span style={{ fontSize: '1.1rem', color: 'var(--text-main)', lineHeight: 1.6 }}>We do not retain copies of your data, metadata, or processed documents.</span>
+                <li className="flex gap-4 items-start">
+                  <ShieldCheck size={28} className="text-emerald-500 shrink-0 mt-1" />
+                  <span className="text-xl text-slate-700 dark:text-slate-300 font-medium">
+                    {t('static.terms.sec2Bul2', 'We do not retain copies of your data, metadata, or processed documents.')}
+                  </span>
                 </li>
               </ul>
             </div>
@@ -73,49 +82,59 @@ export default function Terms() {
         </section>
 
         {/* Section 4: Acceptable Use Policy */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 48, height: 48, borderRadius: 12, background: 'var(--brand-gradient)', color: '#fff', fontWeight: 900, fontSize: '1.5rem' }}>3</div>
-              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>{t.pageTosSec1Title || 'Acceptable Use Policy'}</h2>
+        <section className="w-full py-24 px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-6 mb-8">
+              <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 text-white font-extrabold text-2xl shadow-xl">3</div>
+              <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+                {t('static.terms.usage', 'Acceptable Use Policy')}
+              </h2>
             </div>
-            <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, paddingLeft: 64 }}>
-              {t.pageTosSec1Desc || 'You agree to use CreateMy-QR only for lawful purposes. You must not use our tools to forge, manipulate, or falsify legal documents, government IDs, or any materials for fraudulent activities.'}
-            </p>
+            <div className="pl-24">
+              <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                {t('static.terms.usageDesc', 'You agree to use CreateMy-QR only for lawful purposes. You must not use our tools to forge, manipulate, or falsify legal documents, government IDs, or any materials for fraudulent activities.')}
+              </p>
+            </div>
           </div>
         </section>
 
         {/* Section 5: Intellectual Property */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 48, height: 48, borderRadius: 12, background: 'var(--brand-gradient)', color: '#fff', fontWeight: 900, fontSize: '1.5rem' }}>4</div>
-              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>{t.pageTosSec2Title || 'Intellectual Property'}</h2>
+        <section className="w-full py-24 px-6 bg-white/50 dark:bg-[#060c1c]/50 backdrop-blur-xl border-y border-slate-200 dark:border-[#102040]">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-6 mb-8">
+              <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 text-white font-extrabold text-2xl shadow-xl">4</div>
+              <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+                {t('static.terms.sec4Title', 'Intellectual Property')}
+              </h2>
             </div>
-            <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, paddingLeft: 64 }}>
-              {t.pageTosSec2Desc || 'You retain 100% ownership and all intellectual property rights to the documents you process using CreateMy-QR. We claim zero rights, licenses, or ownership over your content.'}
-            </p>
+            <div className="pl-24">
+              <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                {t('static.terms.sec4Desc', 'You retain 100% ownership and all intellectual property rights to the documents you process using CreateMy-QR. We claim zero rights, licenses, or ownership over your content.')}
+              </p>
+            </div>
           </div>
         </section>
 
         {/* Section 6: Limitations & Modifications */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24 }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 48, height: 48, borderRadius: 12, background: 'var(--brand-gradient)', color: '#fff', fontWeight: 900, fontSize: '1.5rem' }}>5</div>
-              <h2 style={{ fontSize: '2rem', fontWeight: 900, color: 'var(--text-main)' }}>Disclaimers & Liability</h2>
+        <section className="w-full py-32 px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-6 mb-12">
+              <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 text-white font-extrabold text-2xl shadow-xl">5</div>
+              <h2 className="text-[clamp(2rem,4vw,3rem)] font-extrabold leading-[1.1]">
+                {t('static.terms.sec5Title', 'Disclaimers & Liability')}
+              </h2>
             </div>
-            <div style={{ paddingLeft: 64, display: 'flex', flexDirection: 'column', gap: 32 }}>
+            <div className="pl-24 space-y-12">
               <div>
-                <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 12 }}>{t.pageTosSec3Title || 'Service Modifications'}</h3>
-                <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>
-                  {t.pageTosSec3Desc || 'We reserve the right to modify, suspend, or discontinue any part of the Service at any time without prior notice. As an entirely client-side platform, we cannot guarantee compatibility with all browser versions.'}
+                <h3 className="text-2xl font-extrabold mb-4">{t('static.terms.liability', 'No Liability')}</h3>
+                <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                  {t('static.terms.liabilityDesc', 'The tools are provided "as is" without warranties. We are not liable for any issues arising from generated codes.')}
                 </p>
               </div>
               <div>
-                <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: 12 }}>{t.pageTosSec4Title || 'Limitation of Liability'}</h3>
-                <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', lineHeight: 1.7 }}>
-                  {t.pageTosSec4Desc || 'Under no circumstances shall CreateMy-QR, its creators, or contributors be liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use our tools.'}
+                <h3 className="text-2xl font-extrabold mb-4">{t('static.terms.localData', 'Local Data')}</h3>
+                <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                  {t('static.terms.localDataDesc', 'Your history is stored in your own browser via IndexedDB. If you clear your browser data, your history is permanently deleted.')}
                 </p>
               </div>
             </div>
@@ -125,4 +144,4 @@ export default function Terms() {
       </main>
     </>
   );
-};
+}

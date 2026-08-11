@@ -222,18 +222,18 @@ export default function MainLayout({ children }) {
             <div>
               <h4 className="font-bold text-zinc-900 dark:text-white mb-4">Product</h4>
               <ul className="flex flex-col gap-3 text-sm text-zinc-500 dark:text-zinc-400">
-                <li><RouterLink to="/pricing" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Pricing</RouterLink></li>
-                <li><RouterLink to="/security" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Security</RouterLink></li>
-                <li><RouterLink to="/compare" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Compare Tools</RouterLink></li>
-                <li><RouterLink to="/use-cases" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Use Cases</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.pricing || '/pricing'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Pricing</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.security || '/security'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Security</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.compare || '/compare'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Compare Tools</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.usecases || '/use-cases'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Use Cases</RouterLink></li>
               </ul>
             </div>
             
             <div>
               <h4 className="font-bold text-zinc-900 dark:text-white mb-4">Company</h4>
               <ul className="flex flex-col gap-3 text-sm text-zinc-500 dark:text-zinc-400">
-                <li><RouterLink to="/about" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Us</RouterLink></li>
-                <li><RouterLink to="/languages" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Supported Languages</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.about || '/about'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About Us</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.languages || '/languages'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Supported Languages</RouterLink></li>
                 <li><a href="mailto:support@createmy-qr.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact Support</a></li>
               </ul>
             </div>
@@ -241,8 +241,8 @@ export default function MainLayout({ children }) {
             <div>
               <h4 className="font-bold text-zinc-900 dark:text-white mb-4">Legal</h4>
               <ul className="flex flex-col gap-3 text-sm text-zinc-500 dark:text-zinc-400">
-                <li><RouterLink to="/privacy" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Privacy Policy</RouterLink></li>
-                <li><RouterLink to="/terms" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Terms of Service</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.privacy || '/privacy'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Privacy Policy</RouterLink></li>
+                <li><RouterLink to={`${currentLangCode === 'en' ? '' : `/${currentLangCode}`}${localizedRoutes[currentLangCode]?.terms || '/terms'}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Terms of Service</RouterLink></li>
               </ul>
             </div>
           </div>

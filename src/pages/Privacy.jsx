@@ -1,10 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
-
 import { ShieldAlert, Lock, Database, EyeOff, Cpu } from 'lucide-react';
-
-
 
 export default function Privacy() {
   const { t } = useTranslation();
@@ -12,103 +9,92 @@ export default function Privacy() {
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | ${t.footerPrivacy || 'Privacy Policy'} - CreateMy-QR</title>
+        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.privacy.seoTitle', 'Privacy Policy')}</title>
       </Helmet>
-      <main style={{ width: '100%', flex: 1, background: 'var(--bg-app)' }}>
-        
+      
+      <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero Vault */}
-        <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', top: -100, left: '50%', transform: 'translateX(-50%)', width: 600, height: 400, background: 'var(--brand-glow)', filter: 'blur(150px)', opacity: 0.5, pointerEvents: 'none' }} />
-          <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 100, height: 100, borderRadius: '50%', background: 'var(--bg-app)', border: '2px solid var(--brand-primary)', color: 'var(--brand-primary)', marginBottom: 40, boxShadow: '0 0 40px var(--brand-glow)' }}>
-              <ShieldAlert size={50} />
+        <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">
+          <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-emerald-500/20 dark:bg-emerald-600/20 blur-[150px] opacity-60 rounded-full pointer-events-none" />
+          <div className="max-w-4xl mx-auto text-center relative z-10">
+            <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-white dark:bg-[#0a1128] border-2 border-emerald-500/50 text-emerald-600 dark:text-emerald-400 mb-8 shadow-[0_0_50px_rgba(16,185,129,0.3)]">
+              <ShieldAlert size={48} />
             </div>
-            <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 24, letterSpacing: '-0.02em', color: 'var(--text-main)' }}>
-              {t.pagePrivacyHero || 'The Secure Vault'}
+            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-6 tracking-tight leading-[1.1] text-slate-900 dark:text-white">
+              {t('static.privacy.heroTitle', 'Privacy Policy')}
             </h1>
-            <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.7, maxWidth: 700, margin: '0 auto' }}>
-              {t.pagePrivacySub || 'Your files never leave your device. Our 100% offline Wasm architecture guarantees absolute data privacy and security.'}
+            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
+              {t('static.privacy.heroSubtitle', 'Your data is yours. We keep it that way.')}
             </p>
           </div>
         </section>
 
         {/* Section 2: Data Handling Matrix */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--brand-glow)', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 800, fontSize: '0.9rem', marginBottom: 24 }}>01 &mdash; THE MATRIX</div>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: 32, color: 'var(--text-main)', lineHeight: 1.2 }}>{t.pagePrivacySec1Title || 'Data Handling Matrix'}</h2>
-            <div style={{ background: 'var(--bg-card)', padding: 48, borderRadius: 32, border: '1px solid var(--border-color)', borderLeft: '4px solid var(--brand-primary)' }}>
-              <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pagePrivacySec1Desc || 'We do not collect IP addresses. We do not store your files. We do not require email registrations. Every single bit of your document data remains exclusively on your physical device at all times.'}
+        <section className="w-full py-24 px-6 relative z-20">
+          <div className="max-w-4xl mx-auto">
+            <div className="inline-flex px-4 py-2 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-full font-bold text-sm mb-8 tracking-wider">
+              01 &mdash; {t('static.privacy.policyTitle', 'The Zero-Upload Commitment')}
+            </div>
+            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-10 leading-[1.1]">
+              {t('static.privacy.zeroTracking', 'Zero Tracking')}
+            </h2>
+            <div className="bg-white dark:bg-[#0a1128] p-10 md:p-14 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] shadow-xl border-l-8 border-l-emerald-500">
+              <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                {t('static.privacy.policyDesc', 'Unlike other platforms, CreateMy-QR operates entirely on the client-side. When you generate a QR code, the process happens locally on your machine.')}
               </p>
             </div>
           </div>
         </section>
 
         {/* Section 3: Zero Data Collection */}
-        <section style={{ width: '100%', padding: '80px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 32 }}>
-              <div className="hover-lift" style={{ padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', borderTop: '4px solid var(--brand-primary)' }}>
-                <Lock size={32} className="text-brand-primary" style={{ marginBottom: 20 }} />
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 16 }}>Zero Data Collection</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>We do not collect, store, or transmit your documents. CreateMy-QR does not even have a database for user files. Processing occurs entirely within your browser's memory.</p>
+        <section className="w-full py-32 px-6 bg-white/50 dark:bg-[#060c1c]/50 backdrop-blur-xl border-y border-slate-200 dark:border-[#102040]">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="p-10 rounded-[2rem] bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] border-t-4 border-t-emerald-500 shadow-xl hover:-translate-y-2 transition-transform duration-500 group">
+                <Lock size={40} className="text-emerald-600 dark:text-emerald-400 mb-6 group-hover:scale-110 transition-transform" />
+                <h3 className="text-2xl font-extrabold mb-4">{t('static.privacy.zeroTracking', 'Zero Tracking')}</h3>
+                <p className="text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+                  {t('static.privacy.zeroTrackingDesc', 'We don\'t use invasive trackers or log your generated contents.')}
+                </p>
               </div>
-              <div className="hover-lift" style={{ padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', borderTop: '4px solid var(--brand-primary)' }}>
-                <Database size={32} className="text-brand-primary" style={{ marginBottom: 20 }} />
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 16 }}>No Cloud Uploads</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>Traditional tools force you to upload sensitive PDFs to foreign servers. We utilize WebAssembly to bring the server to you. Your network tab will prove no files are sent.</p>
+              <div className="p-10 rounded-[2rem] bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] border-t-4 border-t-emerald-500 shadow-xl hover:-translate-y-2 transition-transform duration-500 group">
+                <Database size={40} className="text-emerald-600 dark:text-emerald-400 mb-6 group-hover:scale-110 transition-transform" />
+                <h3 className="text-2xl font-extrabold mb-4">{t('static.privacy.clientSide', 'Client-Side Only')}</h3>
+                <p className="text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+                  {t('static.privacy.clientSideDesc', 'All QR codes are generated directly inside your browser memory.')}
+                </p>
               </div>
-              <div className="hover-lift" style={{ padding: 40, background: 'var(--bg-app)', borderRadius: 24, border: '1px solid var(--border-color)', borderTop: '4px solid var(--brand-primary)' }}>
-                <EyeOff size={32} className="text-brand-primary" style={{ marginBottom: 20 }} />
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: 16 }}>Anonymous Usage</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.7 }}>We do not require accounts, logins, or email registrations. You remain completely anonymous while using the CreateMy-QR platform.</p>
+              <div className="p-10 rounded-[2rem] bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] border-t-4 border-t-emerald-500 shadow-xl hover:-translate-y-2 transition-transform duration-500 group">
+                <EyeOff size={40} className="text-emerald-600 dark:text-emerald-400 mb-6 group-hover:scale-110 transition-transform" />
+                <h3 className="text-2xl font-extrabold mb-4">{t('static.privacy.ssl', 'SSL Encrypted')}</h3>
+                <p className="text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+                  {t('static.privacy.sslDesc', 'Even though nothing is uploaded, our site is served over strict HTTPS.')}
+                </p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Section 4: How Client-Side Works */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', textAlign: 'center' }}>
-            <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--brand-glow)', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 800, fontSize: '0.9rem', marginBottom: 24 }}>02 &mdash; ARCHITECTURE</div>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: 32, color: 'var(--text-main)', lineHeight: 1.2 }}>{t.pagePrivacySec2Title || 'How Client-Side Works'}</h2>
-            <div style={{ position: 'relative', background: 'var(--brand-gradient)', color: '#fff', padding: 48, borderRadius: 32, boxShadow: '0 20px 40px var(--brand-glow)' }}>
-              <Cpu size={64} style={{ margin: '0 auto 24px' }} />
-              <p style={{ fontSize: '1.15rem', lineHeight: 1.8, maxWidth: 700, margin: '0 auto', fontWeight: 500 }}>
-                {t.pagePrivacySec2Desc || 'When you select a file on CreateMy-QR, it is loaded directly into your browser\'s RAM. The WebAssembly engine processes the file locally and prompts a download directly from memory. The file never travels across the internet.'}
+        <section className="w-full py-32 px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex px-4 py-2 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 rounded-full font-bold text-sm mb-8 tracking-wider">
+              02 &mdash; {t('static.about.architecture', 'Architecture')}
+            </div>
+            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-10 leading-[1.1]">
+              {t('static.privacy.clientSide', 'Client-Side Only')}
+            </h2>
+            <div className="bg-gradient-to-br from-emerald-500 to-teal-700 text-white p-12 md:p-16 rounded-[3rem] shadow-[0_20px_50px_rgba(16,185,129,0.3)]">
+              <Cpu size={80} className="mx-auto mb-8 opacity-90" />
+              <p className="text-xl md:text-2xl leading-relaxed font-medium max-w-2xl mx-auto">
+                {t('static.privacy.clientSideDesc', 'All QR codes are generated directly inside your browser memory.')}
               </p>
             </div>
-          </div>
-        </section>
-
-        {/* Section 5: Third-Party Integrations */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--brand-glow)', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 800, fontSize: '0.9rem', marginBottom: 24 }}>03 &mdash; INDEPENDENCE</div>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: 32, color: 'var(--text-main)', lineHeight: 1.2 }}>{t.pagePrivacySec3Title || 'Third-Party Integrations'}</h2>
-            <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, borderLeft: '4px solid var(--brand-primary)', paddingLeft: 32, fontStyle: 'italic' }}>
-              {t.pagePrivacySec3Desc || 'We are fiercely independent. We do not embed hidden analytics trackers, advertising networks, or third-party cookies that could compromise your privacy. What happens on CreateMy-QR stays on CreateMy-QR.'}
-            </p>
-          </div>
-        </section>
-
-        {/* Section 6: Global Compliance */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)', textAlign: 'center' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: 16, marginBottom: 32 }}>
-              <div style={{ background: 'var(--brand-glow)', color: 'var(--brand-primary)', padding: '12px 24px', borderRadius: 100, fontWeight: 900, fontSize: '1.2rem', border: '2px solid var(--brand-primary)' }}>GDPR</div>
-              <div style={{ background: 'var(--brand-glow)', color: 'var(--brand-primary)', padding: '12px 24px', borderRadius: 100, fontWeight: 900, fontSize: '1.2rem', border: '2px solid var(--brand-primary)' }}>CCPA</div>
-            </div>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: 24, color: 'var(--text-main)', lineHeight: 1.2 }}>{t.pagePrivacySec4Title || 'Global Compliance'}</h2>
-            <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 40 }}>
-              {t.pagePrivacySec4Desc || 'Because our architecture mathematically prevents us from accessing your files, CreateMy-QR inherently exceeds the privacy requirements of GDPR, CCPA, and other global data protection regulations.'}
-            </p>
           </div>
         </section>
 
       </main>
     </>
   );
-};
+}

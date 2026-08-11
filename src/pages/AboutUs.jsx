@@ -1,113 +1,126 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
-
 import { Users, Globe2, ShieldCheck, Zap, ArrowRight, Heart } from 'lucide-react';
-
-
+import { Link } from 'react-router-dom';
 
 export default function AboutUs() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const langPrefix = i18n.language.startsWith('en') ? '' : `/${i18n.language.split('-')[0]}`;
 
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | ${t.footerAbout || 'About Us'} - CreateMy-QR</title>
+        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.about.seoTitle', 'About Us')}</title>
       </Helmet>
-      <main style={{ width: '100%', flex: 1 }}>
-        
+      <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero */}
-        <section style={{ position: 'relative', width: '100%', padding: '120px 24px', background: 'var(--bg-app)', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', top: -100, left: '50%', transform: 'translateX(-50%)', width: 800, height: 400, background: 'var(--brand-glow)', filter: 'blur(150px)', opacity: 0.3, pointerEvents: 'none' }} />
-          <div style={{ maxWidth: 1000, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 80, height: 80, borderRadius: 24, background: 'var(--brand-glow)', color: 'var(--brand-primary)', marginBottom: 32, boxShadow: '0 10px 30px var(--brand-glow)' }}>
+        <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">
+          <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-500/20 dark:bg-blue-600/20 blur-[120px] opacity-60 rounded-full pointer-events-none" />
+          <div className="max-w-4xl mx-auto text-center relative z-10">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-white dark:bg-[#0a1128] text-blue-600 dark:text-blue-400 mb-8 shadow-2xl border border-blue-100 dark:border-[#1e2d4a]">
               <Globe2 size={40} />
             </div>
-            <h1 style={{ fontSize: 'clamp(3rem, 6vw, 5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 24, letterSpacing: '-0.03em', color: 'var(--text-main)', lineHeight: 1.1 }}>
-              {t.pageAboutHero || 'Democratizing QR Code tools'}
+            <h1 className="text-[clamp(3rem,6vw,5rem)] font-extrabold mb-6 tracking-tight leading-[1.1]">
+              {t('static.about.heroTitle', 'About Us')}
             </h1>
-            <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.6, maxWidth: 800, margin: '0 auto' }}>
-              {t.pageAboutSub || 'We believe premium QR Code and Barcode utilities should be completely free, private, and accessible to everyone. CreateMy-QR is powered entirely by client-side WebAssembly.'}
+            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
+              {t('static.about.heroSubtitle', 'Democratizing Document & QR Tools')}
             </p>
           </div>
         </section>
 
         {/* Section 2: Core Philosophy */}
-        <section style={{ width: '100%', padding: '80px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 32 }}>
-              <div className="hover-lift" style={{ padding: 40, borderRadius: 24, background: 'var(--bg-app)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
-                <ShieldCheck size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16 }}>Absolute Privacy</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>We fundamentally redesigned how QR Code tools work. By processing everything locally in your browser, your files never touch a server.</p>
+        <section className="w-full py-24 px-6 bg-white/50 dark:bg-[#060c1c]/50 backdrop-blur-xl border-y border-slate-200 dark:border-[#102040]">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="p-10 rounded-[2rem] bg-white dark:bg-[#0a1128] border border-slate-100 dark:border-[#1e2d4a] shadow-xl hover:-translate-y-2 transition-transform duration-500 text-center group">
+                <div className="w-20 h-20 mx-auto mb-8 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                  <ShieldCheck size={40} className="text-blue-600 dark:text-blue-400" />
+                </div>
+                <h3 className="text-2xl font-extrabold mb-4">{t('static.about.privacy', 'Absolute Privacy')}</h3>
+                <p className="text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+                  {t('static.about.privacyDesc', 'Everything is processed locally in your browser. Your files never touch a server.')}
+                </p>
               </div>
-              <div className="hover-lift" style={{ padding: 40, borderRadius: 24, background: 'var(--bg-app)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
-                <Zap size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16 }}>Lightning Fast</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>WebAssembly allows CreateMy-QR to run complex QR code generations directly on your device CPU, bypassing upload and download bottlenecks.</p>
+              
+              <div className="p-10 rounded-[2rem] bg-white dark:bg-[#0a1128] border border-slate-100 dark:border-[#1e2d4a] shadow-xl hover:-translate-y-2 transition-transform duration-500 text-center group">
+                <div className="w-20 h-20 mx-auto mb-8 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                  <Zap size={40} className="text-blue-600 dark:text-blue-400" />
+                </div>
+                <h3 className="text-2xl font-extrabold mb-4">{t('static.about.fast', 'Lightning Fast')}</h3>
+                <p className="text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+                  {t('static.about.fastDesc', 'WebAssembly allows CreateMy-QR to run directly on your device CPU, bypassing upload bottlenecks.')}
+                </p>
               </div>
-              <div className="hover-lift" style={{ padding: 40, borderRadius: 24, background: 'var(--bg-app)', border: '1px solid var(--border-color)', textAlign: 'center' }}>
-                <Users size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
-                <h3 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 16 }}>For Everyone</h3>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.6 }}>We translated our entire platform into 30 languages. No subscriptions, no hidden fees, just world-class tools available globally.</p>
+
+              <div className="p-10 rounded-[2rem] bg-white dark:bg-[#0a1128] border border-slate-100 dark:border-[#1e2d4a] shadow-xl hover:-translate-y-2 transition-transform duration-500 text-center group">
+                <div className="w-20 h-20 mx-auto mb-8 bg-blue-50 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                  <Users size={40} className="text-blue-600 dark:text-blue-400" />
+                </div>
+                <h3 className="text-2xl font-extrabold mb-4">{t('static.about.global', 'For Everyone')}</h3>
+                <p className="text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+                  {t('static.about.globalDesc', 'Translated into 30 languages. No subscriptions, no hidden fees. Just world-class tools.')}
+                </p>
               </div>
             </div>
           </div>
         </section>
 
         {/* Section 3: The Origin Story */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--brand-glow)', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 800, fontSize: '0.9rem', marginBottom: 24 }}>01 &mdash; THE ORIGIN</div>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: 32, color: 'var(--text-main)', lineHeight: 1.2 }}>{t.pageAboutSec1Title || 'The Origin Story'}</h2>
-            <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, borderLeft: '4px solid var(--brand-primary)', paddingLeft: 32, fontStyle: 'italic' }}>
-              {t.pageAboutSec1Desc || 'We were frustrated by the constant paywalls and privacy leaks of traditional online QR Code tools. Uploading sensitive files to random servers felt inherently wrong. We built CreateMy-QR to prove that enterprise-grade tools could be free, fast, and fully secure.'}
-            </p>
-          </div>
-        </section>
-
-        {/* Section 4: Technology Stack */}
-        <section style={{ width: '100%', padding: '100px 24px', background: '#0f172a', color: '#fff', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ position: 'absolute', bottom: -200, right: -200, width: 600, height: 600, background: 'var(--brand-primary)', filter: 'blur(200px)', opacity: 0.15, borderRadius: '50%' }} />
-          <div style={{ maxWidth: 1000, margin: '0 auto', position: 'relative', zIndex: 10 }}>
-            <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'rgba(255,255,255,0.1)', color: '#fff', borderRadius: 100, fontWeight: 800, fontSize: '0.9rem', marginBottom: 24 }}>02 &mdash; ARCHITECTURE</div>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: 32, lineHeight: 1.2 }}>{t.pageAboutSec2Title || 'Technology Stack'}</h2>
-            <div style={{ background: 'rgba(255,255,255,0.05)', padding: 48, borderRadius: 32, border: '1px solid rgba(255,255,255,0.1)' }}>
-              <p style={{ fontSize: '1.15rem', color: '#cbd5e1', lineHeight: 1.8 }}>
-                {t.pageAboutSec2Desc || 'By leveraging the power of WebAssembly (Wasm), we took complex server-side C++ and Rust libraries and ported them to run directly inside your web browser. This means the server is brought to your device, entirely eliminating the need for network uploads.'}
+        <section className="w-full py-32 px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="inline-flex px-4 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full font-bold text-sm mb-8 tracking-wider">
+              01 &mdash; {t('static.about.origin', 'The Origin')}
+            </div>
+            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-10 leading-[1.1]">
+              {t('static.about.originTitle', 'The Origin Story')}
+            </h2>
+            <div className="pl-8 border-l-4 border-blue-600 dark:border-blue-500 py-2">
+              <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed italic font-medium">
+                {t('static.about.missionDesc', 'We believe premium QR utilities should be completely free, private, and accessible to everyone.')}
               </p>
             </div>
           </div>
         </section>
 
-        {/* Section 5: Our Guarantee */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--brand-gradient)', color: '#fff', textAlign: 'center' }}>
-          <div style={{ maxWidth: 900, margin: '0 auto' }}>
-            <ShieldCheck size={64} style={{ margin: '0 auto 32px', opacity: 0.9 }} />
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3.5rem)', fontWeight: 900, marginBottom: 32, lineHeight: 1.1 }}>{t.pageAboutSec3Title || 'Our Guarantee'}</h2>
-            <p style={{ fontSize: '1.3rem', opacity: 0.9, lineHeight: 1.7, fontWeight: 500 }}>
-              {t.pageAboutSec3Desc || 'CreateMy-QR is built to remain completely free. Our mission is to democratize QR code utilities for everyone, everywhere.'}
-            </p>
+        {/* Section 4: Technology Stack */}
+        <section className="relative w-full py-32 px-6 bg-slate-950 text-white overflow-hidden">
+          <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-blue-600 blur-[150px] opacity-20 rounded-full pointer-events-none" />
+          <div className="max-w-4xl mx-auto relative z-10">
+            <div className="inline-flex px-4 py-2 bg-white/10 text-white rounded-full font-bold text-sm mb-8 tracking-wider backdrop-blur-md">
+              02 &mdash; {t('static.about.architecture', 'Architecture')}
+            </div>
+            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-10 leading-[1.1]">
+              {t('static.about.architectureTitle', 'Technology Stack')}
+            </h2>
+            <div className="bg-white/5 backdrop-blur-2xl p-10 md:p-16 rounded-[3rem] border border-white/10 shadow-2xl">
+              <p className="text-xl text-slate-300 leading-relaxed font-medium">
+                {t('static.about.fastDesc', 'WebAssembly allows CreateMy-QR to run directly on your device CPU, bypassing upload bottlenecks.')}
+              </p>
+            </div>
           </div>
         </section>
 
-        {/* Section 6: Join the Movement */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)', textAlign: 'center' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <Heart size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 900, marginBottom: 24, color: 'var(--text-main)', lineHeight: 1.2 }}>{t.pageAboutSec4Title || 'Join the Movement'}</h2>
-            <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: 40 }}>
-              {t.pageAboutSec4Desc || 'We rely on our community to keep this project alive. Share CreateMy-QR with your friends, family, and coworkers. Together, we can build a safer, faster, and more accessible web.'}
+        {/* Section 5: Join the Movement */}
+        <section className="w-full py-32 px-6 text-center">
+          <div className="max-w-3xl mx-auto">
+            <Heart size={64} className="mx-auto mb-8 text-blue-600 dark:text-blue-400 animate-pulse" />
+            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+              {t('static.about.join', 'Join the Movement')}
+            </h2>
+            <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-12 font-medium">
+              {t('static.about.joinDesc', 'Experience the fastest, safest, and most advanced QR suite on the web.')}
             </p>
-            <button onClick={() => window.scrollTo(0, 0)} className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 12, padding: '16px 32px', fontSize: '1.1rem', fontWeight: 800, background: 'var(--brand-gradient)', color: '#fff', border: 'none', borderRadius: 100, cursor: 'pointer', boxShadow: '0 10px 30px var(--brand-glow)' }}>
-              <span>Use Tools Now</span>
-              <ArrowRight size={20} />
-            </button>
+            <Link to={langPrefix || '/'} className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-br from-blue-600 to-indigo-700 hover:from-blue-500 hover:to-indigo-600 text-white rounded-full font-extrabold text-lg shadow-2xl hover:shadow-blue-500/25 transition-all hover:scale-105">
+              <span>{t('landing.ctaButton', 'Use Tools Now')}</span>
+              <ArrowRight size={24} />
+            </Link>
           </div>
         </section>
 
       </main>
     </>
   );
-};
+}

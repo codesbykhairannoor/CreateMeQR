@@ -1,76 +1,56 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
-
-import { Globe, Globe2, Languages as LanguagesIcon, MapPin, CheckCircle2 } from 'lucide-react';
+import { Globe, Globe2, Languages as LanguagesIcon, MapPin, CheckCircle2, ArrowRight } from 'lucide-react';
 import { LANGS as SUPPORTED_LANGUAGES } from '../config/site';
-
-
+import { Link } from 'react-router-dom';
 
 export default function Languages() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const langPrefix = i18n.language.startsWith('en') ? '' : `/${i18n.language.split('-')[0]}`;
 
   return (
     <>
       <Helmet>
-        <title>{t('appTitle', 'CreateMy-QR')} | ${t.footerLanguages || 'Supported Languages'} - CreateMy-QR</title>
+        <title>{t('appTitle', 'CreateMy-QR')} | {t('static.languages.seoTitle', 'Supported Languages')}</title>
       </Helmet>
       
-      <main style={{ width: '100%', flex: 1, background: 'var(--bg-app)' }}>
-        
+      <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero */}
-        <section style={{ width: '100%', padding: '120px 24px', background: 'var(--bg-card)', borderBottom: '1px solid var(--border-color)', position: 'relative', overflow: 'hidden' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 10 }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 16px', background: 'var(--brand-glow)', color: 'var(--brand-primary)', borderRadius: 100, fontWeight: 700, fontSize: '0.9rem', marginBottom: 24 }}>
-              <Globe size={16} /> {t.pageLangBadge || 'Global Platform'}
+        <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-emerald-500/10 dark:bg-emerald-600/10 blur-[150px] rounded-full pointer-events-none" />
+          <div className="max-w-4xl mx-auto text-center relative z-10">
+            <div className="inline-flex items-center gap-2 px-6 py-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-full font-bold text-sm mb-8 tracking-wider border border-emerald-200 dark:border-emerald-500/20 backdrop-blur-md">
+              <Globe size={16} /> {t('static.languages.heroBadge', 'Global Platform')}
             </div>
-            <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', fontWeight: 900, fontFamily: 'var(--font-display)', marginBottom: 24, letterSpacing: '-0.03em', color: 'var(--text-main)', lineHeight: 1.1 }}>
-              {t.pageLangHero || 'Available Worldwide'}
+            <h1 className="text-[clamp(3rem,6vw,5.5rem)] font-extrabold mb-8 tracking-tight leading-[1.1]">
+              {t('static.languages.heroTitle', 'Available Worldwide')}
             </h1>
-            <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.6, maxWidth: 700, margin: '0 auto' }}>
-              {t.pageLangHeroSub || 'QR code utilities should be accessible to everyone, regardless of what language you speak. We currently support 30 localized versions of CreateMy-QR.'}
+            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 leading-relaxed max-w-3xl mx-auto font-medium">
+              {t('static.languages.heroSubtitle', 'QR code utilities should be accessible to everyone, regardless of what language you speak. We support 30 localized versions.')}
             </p>
           </div>
         </section>
 
         {/* Section 2: Massive Language Grid */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 48, textAlign: 'center' }}>{t.pageLangSec2Title || 'Select Your Region'}</h2>
+        <section className="w-full py-32 px-6 relative z-20">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold text-center mb-16 leading-[1.1]">
+              {t('static.languages.gridTitle', 'Select Your Region')}
+            </h2>
             
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 16 }}>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {SUPPORTED_LANGUAGES.map(lang => (
                 <a 
                   key={lang.code}
                   href={`/${lang.code}`}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: 12,
-                    padding: '16px 20px',
-                    background: 'var(--bg-card)',
-                    border: '1px solid var(--border-color)',
-                    borderRadius: 16,
-                    textDecoration: 'none',
-                    color: 'var(--text-main)',
-                    fontWeight: 600,
-                    transition: 'all 0.2s',
-                    boxShadow: '0 4px 12px rgba(0,0,0,0.02)'
-                  }}
-                  onMouseOver={(e) => {
-                    e.currentTarget.style.borderColor = 'var(--brand-primary)';
-                    e.currentTarget.style.transform = 'translateY(-2px)';
-                    e.currentTarget.style.boxShadow = '0 10px 20px var(--brand-glow)';
-                  }}
-                  onMouseOut={(e) => {
-                    e.currentTarget.style.borderColor = 'var(--border-color)';
-                    e.currentTarget.style.transform = 'translateY(0)';
-                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.02)';
-                  }}
+                  className="flex items-center gap-3 p-5 bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-2xl hover:border-emerald-500 dark:hover:border-emerald-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 group"
                 >
-                  <MapPin size={18} color="var(--brand-primary)" />
-                  {lang.nativeName}
+                  <span className="text-2xl filter drop-shadow-sm">{lang.flag}</span>
+                  <span className="font-bold text-slate-700 dark:text-slate-200 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                    {lang.nativeName}
+                  </span>
                 </a>
               ))}
             </div>
@@ -78,59 +58,72 @@ export default function Languages() {
         </section>
 
         {/* Section 3: Universal Design */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', gap: 64, alignItems: 'center', flexWrap: 'wrap-reverse' }}>
-            <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
-              <div style={{ width: 120, height: 120, borderRadius: 60, background: 'var(--brand-glow)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <LanguagesIcon size={64} color="var(--brand-primary)" />
+        <section className="w-full py-32 px-6 bg-white/50 dark:bg-[#060c1c]/50 backdrop-blur-xl border-y border-slate-200 dark:border-[#102040]">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="flex justify-center md:order-2">
+              <div className="w-48 h-48 rounded-full bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center relative">
+                <div className="absolute inset-0 border-2 border-emerald-500/30 rounded-full animate-ping opacity-20"></div>
+                <LanguagesIcon size={80} className="text-emerald-600 dark:text-emerald-400 relative z-10" />
               </div>
             </div>
-            <div style={{ flex: '1 1 400px' }}>
-              <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>{t.pageLangSec3Title || 'Universal Interface'}</h2>
-              <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pageLangSec3Desc || 'Every tool, button, error message, and guide on CreateMy-QR has been localized. We maintain a strict translation matrix to ensure your experience feels native and intuitive.'}
+            <div className="md:order-1">
+              <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+                {t('static.languages.universalTitle', 'Universal Interface')}
+              </h2>
+              <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                {t('static.languages.universalDesc', 'Every tool, button, error message, and guide on CreateMy-QR has been localized. We maintain a strict translation matrix to ensure your experience feels native and intuitive.')}
               </p>
             </div>
           </div>
         </section>
 
         {/* Section 4: Fast Loading Globally */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-app)' }}>
-          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', gap: 64, alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ flex: '1 1 400px' }}>
-              <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>{t.pageLangSec4Title || 'Zero Latency, Anywhere'}</h2>
-              <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-                {t.pageLangSec4Desc || 'Because CreateMy-QR relies on WebAssembly processing instead of cloud servers, it doesn\'t matter if you are in New York or Jakarta. You will experience the exact same instant document processing speeds without network latency.'}
-              </p>
+        <section className="w-full py-32 px-6">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="flex justify-center">
+              <Globe2 size={160} strokeWidth={1} className="text-slate-300 dark:text-slate-800" />
             </div>
-            <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center' }}>
-              <Globe2 size={120} color="var(--border-color)" strokeWidth={1} />
+            <div>
+              <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+                {t('static.languages.fastTitle', 'Zero Latency, Anywhere')}
+              </h2>
+              <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                {t('static.languages.fastDesc', 'Because CreateMy-QR relies on WebAssembly processing instead of cloud servers, it doesn\'t matter if you are in New York or Jakarta. You will experience the exact same instant document processing speeds without network latency.')}
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Section 5: Accuracy & Community */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--bg-card)', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
-            <CheckCircle2 size={48} className="text-brand-primary" style={{ margin: '0 auto 24px' }} />
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: 24 }}>{t.pageLangSec5Title || 'Community Driven'}</h2>
-            <p style={{ fontSize: '1.25rem', color: 'var(--text-muted)', lineHeight: 1.8 }}>
-              {t.pageLangSec5Desc || 'Notice a translation that feels slightly off? We rely on our global user base to help refine and perfect our localizations. Contact us to suggest improvements for your native language.'}
+        {/* Section 5: Community Driven */}
+        <section className="w-full py-32 px-6 bg-slate-900 dark:bg-slate-950 text-white border-t border-slate-800 dark:border-[#1e2d4a]">
+          <div className="max-w-3xl mx-auto text-center">
+            <CheckCircle2 size={64} className="mx-auto mb-8 text-emerald-400" />
+            <h2 className="text-[clamp(2.5rem,4vw,3.5rem)] font-extrabold mb-8 leading-[1.1]">
+              {t('static.languages.communityTitle', 'Community Driven')}
+            </h2>
+            <p className="text-xl text-slate-300 leading-relaxed mb-12 font-medium">
+              {t('static.languages.communityDesc', 'Notice a translation that feels slightly off? We rely on our global user base to help refine and perfect our localizations. Reach out to us to suggest improvements for your native language.')}
             </p>
           </div>
         </section>
 
         {/* Section 6: Try it Now */}
-        <section style={{ width: '100%', padding: '100px 24px', background: 'var(--brand-gradient)', color: '#fff', textAlign: 'center' }}>
-          <div style={{ maxWidth: 800, margin: '0 auto' }}>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: 24 }}>{t.pageLangSec6Title || 'Ready to Process?'}</h2>
-            <p style={{ fontSize: '1.25rem', opacity: 0.9, lineHeight: 1.8, marginBottom: 40 }}>
-              {t.pageLangSec6Desc || 'Choose a tool below to get started securely and for free.'}
+        <section className="w-full py-32 px-6 text-center">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-[clamp(3rem,5vw,4.5rem)] font-extrabold mb-8 leading-[1.1]">
+              {t('static.languages.ctaTitle', 'Ready to Process?')}
+            </h2>
+            <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed mb-12 font-medium">
+              {t('static.languages.ctaDesc', 'Choose a tool below to get started securely and for free.')}
             </p>
+            <Link to={langPrefix || '/'} className="inline-flex items-center gap-3 px-12 py-6 bg-gradient-to-br from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white rounded-full font-extrabold text-xl transition-transform hover:scale-105 shadow-2xl hover:shadow-emerald-500/25">
+              <span>{t('landing.ctaButton', 'Use Tools Now')}</span>
+              <ArrowRight size={24} />
+            </Link>
           </div>
         </section>
 
       </main>
     </>
   );
-};
+}
