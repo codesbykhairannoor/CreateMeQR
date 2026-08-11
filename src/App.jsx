@@ -97,7 +97,7 @@ export default function App() {
   // Super Partial Lang: Fully localized SEO texts!
   const currentSeo = isHome
     ? {
-        title: t('home.seoTitle', 'CreateMy-QR | All QR & Barcode Tools in One Place'),
+        title: `CreateMy-QR | ${t('home.heroTitle')} ${t('home.heroTitleHighlight')}`,
         h1Title: `${t('home.heroTitle')} ${t('home.heroTitleHighlight')}`,
         description: t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO-compliant, 30 languages.'),
       }
