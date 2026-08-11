@@ -124,20 +124,20 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
   };
 
   return (
-    <div className="hidden xl:flex flex-1 justify-center items-center gap-3 xl:gap-6">
+    <div className="hidden xl:flex flex-1 justify-center items-center gap-2 xl:gap-4 min-w-0 px-2">
       
       {/* 1. Scan QR (Static Link) */}
-      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[10.5px] xl:text-[12px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-qr') ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400'}`}>
+      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} className={`py-1.5 xl:py-2 px-2 xl:px-2.5 rounded-lg text-[10.5px] xl:text-[11.5px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-qr') ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400'}`}>
         {t('nav.scanqr', 'Scan QR Code')}
       </RouterLink>
 
       {/* 2. Scan Barcode (Static Link) */}
-      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[10.5px] xl:text-[12px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-barcode') ? 'text-emerald-600 dark:text-emerald-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400'}`}>
+      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} className={`py-1.5 xl:py-2 px-2 xl:px-2.5 rounded-lg text-[10.5px] xl:text-[11.5px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/scan-barcode') ? 'text-emerald-600 dark:text-emerald-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-emerald-600 dark:hover:text-emerald-400'}`}>
         {t('nav.scanbarcode', 'Scan Barcode')}
       </RouterLink>
 
       {/* 3. Barcode Maker (Static Link) */}
-      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} className={`py-1.5 xl:py-2 px-2 xl:px-3 rounded-lg text-[10.5px] xl:text-[12px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/barcode') ? 'text-purple-600 dark:text-purple-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400'}`}>
+      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} className={`py-1.5 xl:py-2 px-2 xl:px-2.5 rounded-lg text-[10.5px] xl:text-[11.5px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/barcode') ? 'text-purple-600 dark:text-purple-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400'}`}>
         {t('nav.barcode', 'Barcode Maker')}
       </RouterLink>
 
@@ -147,7 +147,7 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
         onMouseEnter={handleMegaEnter}
         onMouseLeave={handleMegaLeave}
       >
-        <button className="flex items-center gap-1.5 xl:gap-2 px-3 xl:px-4 py-1.5 xl:py-2 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 hover:from-slate-800 hover:to-blue-600 text-white text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all shadow-md hover:shadow-lg">
+        <button className="flex items-center gap-1.5 xl:gap-2 px-3 xl:px-3 py-1.5 xl:py-2 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 hover:from-slate-800 hover:to-blue-600 text-white text-[9.5px] xl:text-[11px] font-bold uppercase whitespace-nowrap transition-all shadow-md hover:shadow-lg">
           <QrCode className="w-4 h-4" />
           {t('nav.generator', 'ALL QR TOOLS')}
           <ChevronDown className={`w-3 h-3 xl:w-4 xl:h-4 opacity-70 transition-transform duration-300 ${isMegaOpen ? 'rotate-180' : ''}`} />
