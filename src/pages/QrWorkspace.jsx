@@ -68,14 +68,14 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo }) {
   return (
     <>
       {/* Premium Hero Section */}
-      <section className="max-w-4xl mx-auto px-6 text-center mb-24 pt-32">
+      <section className="max-w-[1440px] mx-auto px-6 text-center mb-24 pt-32">
         <div className="animate-fade-in-up">
           <h1 
-            className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.1] text-balance"
+            className="text-[clamp(2.5rem,5vw,4rem)] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.15] text-balance"
           >
             {renderHighlightedTitle(currentSeo.h1Title)}
           </h1>
-          <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
+          <p className="text-[1.1rem] text-zinc-500 dark:text-zinc-400 max-w-[800px] mx-auto mb-10 font-normal leading-[1.6]">
             {currentSeo.description || t('tagline')}
           </p>
         </div>
