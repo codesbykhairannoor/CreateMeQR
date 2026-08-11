@@ -211,7 +211,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
 
           {/* Subtitle */}
           <p className="text-zinc-600 dark:text-zinc-400" style={{
-            fontSize: 'clamp(2.2rem, 5vw, 3.8rem) !important',
+            fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
             lineHeight: 1.6,
             maxWidth: 780,
             margin: '0 auto 40px',
@@ -219,7 +219,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
           }}>
             {t('home.heroSubtitle')}
           </p>
-        </div>
+
 
           {/* Search */}
           <div style={{ maxWidth: 600, margin: '0 auto 44px', position: 'relative' }}>
