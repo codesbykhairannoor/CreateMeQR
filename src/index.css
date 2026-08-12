@@ -281,7 +281,7 @@
   /* All static pages h1 — boosted to be consistent and premium */
   body section h1,
   body main h1 {
-    font-size: clamp(2.15rem, 8vw, 2.75rem) !important;
+    font-size: clamp(2.3rem, 8vw, 2.95rem) !important;
   }
 
   /* All static pages h2 */
@@ -292,7 +292,7 @@
 
   /* hq-layout tool pages h1/h2/p */
   body [class^="hq-layout-"] h1 {
-    font-size: clamp(2.05rem, 8vw, 2.55rem) !important;
+    font-size: clamp(2.2rem, 8vw, 2.75rem) !important;
   }
   body [class^="hq-layout-"] h2 {
     font-size: clamp(1.6rem, 6.5vw, 2rem) !important;

@@ -199,6 +199,10 @@ export default function HomePage({ currentLangCode = 'en' }) {
           <h1
             className="homepage-hero-title"
             style={{
+              fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', 
+              fontWeight: 900, 
+              letterSpacing: '-0.03em', 
+              lineHeight: 1.15,
               marginBottom: 24,
               margin: '0 auto 24px',
             }}
@@ -211,7 +215,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
 
           {/* Subtitle */}
           <p className="homepage-hero-subtitle text-zinc-600 dark:text-zinc-400" style={{
-            fontSize: 'clamp(1rem, 2vw, 1.15rem)',
+            fontSize: 'clamp(1.1rem, 2.5vw, 1.3rem)',
             lineHeight: 1.65,
             maxWidth: 780,
             margin: '0 auto 40px',
