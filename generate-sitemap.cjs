@@ -4,23 +4,18 @@ const path = require('path');
 const DOMAIN = 'https://createmy-qr.com';
 
 async function run() {
-  console.log("Reading localizedRoutes.js...");
-  const routesPath = path.join(__dirname, 'src', 'config', 'localizedRoutes.js');
-  let routesContent = fs.readFileSync(routesPath, 'utf-8');
-  
-  // Extract the JSON part
-  const match = routesContent.match(/export const localizedRoutes = (\{[\s\S]*?\n\});/);
-  if (!match) {
-    console.error("Failed to parse localizedRoutes.js");
-    process.exit(1);
-  }
-  
-  let localizedRoutes;
-  try {
-    localizedRoutes = JSON.parse(match[1]);
-  } catch (e) {
-    console.error("Failed to parse JSON", e);
-    process.exit(1);
+  const { localizedRoutes } = await import('./src/config/localizedRoutes.js');
+
+  const pseoLocalesDir = path.join(__dirname, 'src', 'config', 'pseo-locales');
+  const pseoDataByLang = {};
+  if (fs.existsSync(pseoLocalesDir)) {
+    const files = fs.readdirSync(pseoLocalesDir);
+    for (const file of files) {
+      if (file.endsWith('.json')) {
+        const lang = file.replace('.json', '');
+        pseoDataByLang[lang] = JSON.parse(fs.readFileSync(path.join(pseoLocalesDir, file), 'utf8'));
+      }
+    }
   }
 
   const langs = Object.keys(localizedRoutes);
@@ -98,6 +93,46 @@ async function run() {
       
       const defaultUrl = DOMAIN + route;
       xml += '    <xhtml:link rel="alternate" hreflang="x-default" href="' + defaultUrl + '" />\n';
+      
+      xml += '  </url>\n';
+    }
+  }
+
+  // 3. Generate URLs for pSEO Industry Use Cases across all Languages
+  const pseoIds = pseoDataByLang['en'] ? pseoDataByLang['en'].map(uc => uc.id) : [];
+  for (const pId of pseoIds) {
+    for (const lang of langs) {
+      const langPseoList = pseoDataByLang[lang] || [];
+      const uc = langPseoList.find(item => item.id === pId);
+      if (!uc) continue;
+      
+      const langPrefix = lang === 'en' ? '' : '/' + lang;
+      const safeSlug = uc.slug.startsWith('/') ? uc.slug : '/' + uc.slug;
+      const url = DOMAIN + langPrefix + safeSlug;
+      
+      xml += '  <url>\n';
+      xml += '    <loc>' + url + '</loc>\n';
+      xml += '    <lastmod>' + new Date().toISOString().split('T')[0] + '</lastmod>\n';
+      xml += '    <changefreq>weekly</changefreq>\n';
+      xml += '    <priority>0.9</priority>\n';
+      
+      for (const altLang of langs) {
+        const altPseoList = pseoDataByLang[altLang] || [];
+        const altUc = altPseoList.find(item => item.id === pId);
+        if (altUc) {
+          const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
+          const safeAltSlug = altUc.slug.startsWith('/') ? altUc.slug : '/' + altUc.slug;
+          const altUrl = DOMAIN + altLangPrefix + safeAltSlug;
+          xml += '    <xhtml:link rel="alternate" hreflang="' + altLang + '" href="' + altUrl + '" />\n';
+        }
+      }
+      
+      const defaultUc = (pseoDataByLang['en'] || []).find(item => item.id === pId);
+      if (defaultUc) {
+        const safeDefaultSlug = defaultUc.slug.startsWith('/') ? defaultUc.slug : '/' + defaultUc.slug;
+        const defaultUrl = DOMAIN + safeDefaultSlug;
+        xml += '    <xhtml:link rel="alternate" hreflang="x-default" href="' + defaultUrl + '" />\n';
+      }
       
       xml += '  </url>\n';
     }

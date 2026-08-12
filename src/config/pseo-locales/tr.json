@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "Restoran Menüleri için PDF QR Kodu",
+    "seoDesc": "Kağıt menüleri temassız dijital deneyimle değiştirin. Restoran menünüz için anında ücretsiz, güvenli bir PDF QR kodu oluşturun.",
+    "infoGain": "Restoranlar için Profesyonel İpucu: QR kodlarınızı masa çadırlarına veya bardak altlıklarına yazdırırken yüksek bir hata düzeltme düzeyi (Seviye H) kullanın. Bu, QR kodunun hafif hasar görse, ıslansa veya yiyecek dökülmesinden dolayı kirlense bile müşteriler tarafından taranabilir kalmasını sağlar.",
+    "faqs": [
+      {
+        "q": "Menüler için PDF QR kodlarının süresi dolar mı?",
+        "a": "Hayır, sistemimiz süresi dolmayan statik PDF QR kodları oluşturur. Ancak statik bir QR kodu kullanıyorsanız temel PDF dosyasını daha sonra değiştiremezsiniz. Menünüz sık sık değişiyorsa, PDF'yi web sitenizde barındırmayı ve bunun yerine URL QR Kodu oluşturucumuzu kullanmayı düşünün."
+      },
+      {
+        "q": "QR kodlarını yeniden yazdırmadan restoran menümü nasıl güncelleyebilirim?",
+        "a": "Masa çadırlarını yeniden yazdırmadan bir menüyü güncellemek için, restoranınızın web sitesindeki bir menü sayfasına bağlantı veren bir URL QR Kodu oluşturmalısınız (ör., restoranınız.com/menu.pdf). Menünüz değiştiğinde, yeni PDF'yi web sitenize yüklemeniz yeterlidir; mevcut QR kodu mükemmel çalışmaya devam edecektir."
+      },
+      {
+        "q": "Müşterilerimin PDF QR kodlarını taraması güvenli mi?",
+        "a": "Evet! CreateMy-QR cihazınızda %100 yerel olarak çalıştığı için müşterilerinizi izlemiyoruz veya tarama deneyimine üçüncü taraf reklamları eklemiyoruz. Müşteriler kodunuzu taradıklarında güvenli bir şekilde doğrudan menünüze yönlendirilirler."
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "Kafeler ve Oteller için WiFi QR Kodu",
+    "seoDesc": "Misafirlerinizin şifre yazmadan WiFi ağınıza anında bağlanmasını sağlayın. Kafeniz veya oteliniz için ücretsiz bir WiFi QR kodu oluşturun.",
+    "infoGain": "Misafirperverlik İpucu: WiFi QR kodunuzu yazdırın ve resepsiyon masasındaki güzel bir çerçeveye veya bireysel kafe masalarına yerleştirin. Misafirler, personelden şifre istemeden ağa anında katılmanın sorunsuz deneyiminden memnun kalacaklar.",
+    "faqs": [
+      {
+        "q": "Birisi QR kodunu taradığında WiFi şifresi görünüyor mu?",
+        "a": "Konuklar, yerel akıllı telefon kameralarını (iOS veya Android) kullanarak QR kodunu taradıklarında, cihazları, şifreyi düz metin olarak açıklamadan otomatik olarak ağa katılmayı isteyecektir. Ancak özel QR tarayıcı uygulamaları ham metin verilerini görüntüleyebilir."
+      },
+      {
+        "q": "WiFi ağımı (Gizli SSID) gizleyip yine de bir QR kodu kullanabilir miyim?",
+        "a": "Evet! WiFi QR Kodunuzu oluştururken 'Gizli Ağ' seçeneğini işaretlemeniz yeterlidir. Bu, yönlendiriciniz SSID'sini yayınlamayacak şekilde yapılandırılmış olsa bile konukların sorunsuz bir şekilde bağlanabilmesini sağlar."
+      },
+      {
+        "q": "WiFi QR kodu hem iPhone hem de Android'de çalışır mı?",
+        "a": "Kesinlikle. WiFi QR kodu standardı (WPA/WPA2/WEP), hem Apple iOS hem de Android işletim sistemleri tarafından evrensel olarak tanınmaktadır. Kullanıcıların bağlanmak için varsayılan kamera uygulamalarını koda yönlendirmeleri yeterlidir."
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "Yerel İşletmeler için Google İnceleme QR Kodu",
+    "seoDesc": "Müşterilerin 5 yıldızlı derecelendirme bırakmasını zahmetsiz hale getirerek yerel SEO'nuzu hızlandırın. Ücretsiz bir Google İncelemesi QR kodu oluşturun.",
+    "infoGain": "Pazarlama İpucu: İnceleme istemek için en iyi zaman, müşteri memnuniyetinin zirvede olduğu zamandır. Mükemmel hizmeti sağladıktan hemen sonra bu QR kodunu makbuzlarınıza, çıkış kapılarınıza ekleyin veya personelin bunu bir tablet üzerinden sunmasını sağlayın.",
+    "faqs": [
+      {
+        "q": "Google Benim İşletmem inceleme bağlantımı nasıl bulurum?",
+        "a": "Google İşletme Profili kontrol panelinize giriş yapın, ana sayfa sekmesinde \"Daha fazla yorum alın\" veya \"Yorum isteyin\" düğmesini bulun ve orada sağlanan kısa URL'yi kopyalayın. Bu URL'yi doğrudan oluşturucumuza yapıştırın."
+      },
+      {
+        "q": "Bu QR kodu işletmeme otomatik olarak 5 yıldız verecek mi?",
+        "a": "Hayır, Google politikaları yıldız derecelendirmesinin önceden doldurulmasını yasaklar. QR kodu, inceleme iletişim kutusunu doğrudan müşterinin telefonunda açacaktır ancak müşterinin yıldız derecelendirmesini manuel olarak seçmesi ve geri bildirimini yazması gerekir."
+      },
+      {
+        "q": "Bunun yerine bunu Yelp veya TripAdvisor incelemeleri için kullanabilir miyim?",
+        "a": "Evet! Bu sayfa Google İncelemelerine odaklanırken, standart URL QR Kodu oluşturucumuzu kullanabilir ve Yelp, TripAdvisor veya Trustpilot profiliniz için doğrudan inceleme bağlantısını yapıştırabilirsiniz."
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "Emlakçılar için vCard QR Kodu",
+    "seoDesc": "Bir daha asla liderliği kaybetmeyin. Gayrimenkul kartvizitleriniz ve açık ev broşürleriniz için dijital bir vCard QR kodu oluşturun.",
+    "infoGain": "Ağ İletişimi İpucu: vCard QR kodunuzu 'Satılık' tabelalarına ve açık ilanlara yerleştirin. Potansiyel alıcılar iletişim bilgilerinizi, fotoğrafınızı ve web sitenizi tek bir taramayla anında telefon rehberine kaydedebilir.",
+    "faqs": [
+      {
+        "q": "Bir müşteri vCard QR kodunu taradığında ne olur?",
+        "a": "vCard QR kodunun taranması otomatik olarak kullanıcının telefonundan adınız, telefon numaranız, e-posta adresiniz ve şirket ayrıntılarınızla önceden doldurulmuş yeni bir kişi girişi oluşturmasını ister. Sadece 'Kaydet'e dokunuyorlar."
+      },
+      {
+        "q": "vCard QR kodu internet bağlantısı gerektiriyor mu?",
+        "a": "HAYIR! Tüm iletişim bilgileriniz doğrudan QR kodunun piksellerine kodlanır. Müşterileriniz hücresel sinyalin sıfır olduğu bir bölgede olsalar bile bilgilerinizi tarayıp kaydedebilirler."
+      },
+      {
+        "q": "Profesyonel vesikalık fotoğrafımı vCard'a ekleyebilir miyim?",
+        "a": "Standart vCard QR kodları gömülü görüntüleri desteklemez çünkü görüntüler veri yükünü çok büyük hale getirir ve bu da QR kodunun kolayca taranamayacak kadar yoğun olmasına neden olur. Maksimum tarama güvenilirliği için verileri metin tabanlı tutmanızı öneririz."
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "Etkinlik Biletleri ve Kayıt için URL QR Kodu",
+    "seoDesc": "Fiziksel el ilanlarını dijital bilet sayfanıza bağlayarak etkinliğe katılımı artırın. Etkinlik kaydı için hızlı, ücretsiz bir URL QR kodu oluşturun.",
+    "infoGain": "Etkinlik Planlama İpucu: QR kodunu oluşturmadan önce UTM etiketli bir URL (ör. ?utm_source=flyer&utm_campaign=summer_fest) kullanarak broşür performansınızı izleyin. Bu, fiziksel taramalardan tam olarak kaç bilet satışının geldiğini görmenizi sağlar.",
+    "faqs": [
+      {
+        "q": "Broşürleri bastırdıktan sonra bilet bağlantısını değiştirebilir miyim?",
+        "a": "CreateMy-QR statik QR kodları oluşturur; bu, bağlantının kalıcı olarak kodlandığı anlamına gelir. Değiştirilebilir bir bağlantıya ihtiyacınız varsa kısa bir bağlantı oluşturmak için bir URL kısaltma hizmeti (Bitly gibi) kullanmanızı ve ardından bu kısa bağlantı için QR kodunu oluşturmanızı öneririz."
+      },
+      {
+        "q": "Etkinlik posterimdeki QR kodunu ne kadar büyük yazdırmalıyım?",
+        "a": "Uzaktan görüntülenen etkinlik posterleri için QR kodunu büyütün. 10:1 oranı iyi bir genel kuraldır; eğer bir kişi 10 fit uzaktan tarama yapıyorsa, QR kodu en az 1 fit (12 inç) genişliğinde olmalıdır."
+      },
+      {
+        "q": "Etkinlik QR kodumu kaç kişinin tarayabileceği konusunda bir sınır var mı?",
+        "a": "Kesinlikle tarama sınırı yoktur! QR kodu, sunucularımızdan geçmeden doğrudan biletleme URL'nize yönlendirdiğinden, sınırsız sayıda kişi herhangi bir darboğaz olmadan aynı anda onu tarayabilir."
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "Müşteri Desteği için WhatsApp QR Kodu",
+    "seoDesc": "Anında müşteri hizmeti sağlayın. Destek ekibinizle doğrudan sohbeti başlatan ve önceden doldurulmuş bir mesajla tamamlanan bir WhatsApp QR kodu oluşturun.",
+    "infoGain": "Destek Stratejisi: WhatsApp mesajını 'Merhaba, son siparişimle ilgili yardıma ihtiyacım var' gibi bağlamsal bir metinle önceden doldurun. Bu, sürtünmeyi ortadan kaldırır ve müşterinin anında ilgilenildiğini hissetmesini sağlar.",
+    "faqs": [
+      {
+        "q": "Müşterinin önce numaramı kaydetmesi gerekiyor mu?",
+        "a": "Hayır, bu WhatsApp QR kodunun büyüsü! WhatsApp 'Sohbet için Tıkla' özelliğini kullanır. Kodun taranması, müşterinin bunu adres defterine kaydetmesine gerek kalmadan işletme numaranızı içeren bir sohbet penceresi açar."
+      },
+      {
+        "q": "Bunu WhatsApp Business için kullanabilir miyim?",
+        "a": "Evet, bu hem standart WhatsApp hem de WhatsApp Business hesapları için mükemmel şekilde çalışır. Temel derin bağlantı yapısı (wa.me) her iki platform için de aynıdır."
+      },
+      {
+        "q": "Masaüstü bilgisayarda tararlarsa ne olur?",
+        "a": "Masaüstünde taranırsa veya bir bağlantı aracılığıyla tıklanırsa, konuşmaya sorunsuz bir şekilde devam etmek için kullanıcıdan WhatsApp Web'i veya WhatsApp Masaüstü uygulamasını açması istenecektir."
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "Kâr Amacı Gütmeyen Kuruluşlar ve Bağışlar için PayPal QR Kodu",
+    "seoDesc": "Bağış toplamayı sorunsuz hale getirin. Yardım etkinliklerinde, kilise ayinlerinde veya topluluk toplantılarında anında bağış kabul etmek için bir PayPal QR kodu oluşturun.",
+    "infoGain": "Bağış Toplama İpucu: QR kodunu '5 $ Bağış yapmak için Tarayın' gibi net bir Harekete Geçirici Mesaj (CTA) ile birleştirin. Belirli, küçük bir miktarın tanımlanması karar yorgunluğunu azaltır ve bağış dönüşüm oranlarını önemli ölçüde artırır.",
+    "faqs": [
+      {
+        "q": "Bağışları bu şekilde kabul etmenin herhangi bir gizli ücreti var mı?",
+        "a": "CreateMy-QR %100 ücretsizdir ve sıfır komisyon alır. Ancak para almaya ilişkin standart PayPal işlem ücretleri, PayPal hesap türünüze göre geçerli olmaya devam edecektir."
+      },
+      {
+        "q": "Bağışçılar bağış tutarlarını kendileri seçebilirler mi?",
+        "a": "Evet, QR kodunu oluştururken 'Tutar' alanını boş bırakırsanız, bağışçıdan istenen bağış tutarını PayPal uygulamasına manuel olarak girmesi istenecektir."
+      },
+      {
+        "q": "Bu, finansal işlemleri gerçekleştirmek için güvenli mi?",
+        "a": "Evet. Aracımız kesinlikle standart bir PayPal 'Hemen Satın Al' URL'si oluşturur. Gerçek finansal işlem tamamen PayPal'ın son derece güvenli, şifreli ortamında gerçekleşir. Ödeme verilerine asla dokunmayız veya bunları görmeyiz."
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "Bülten Kayıtları için QR Kodunu E-postayla Gönder",
+    "seoDesc": "E-posta listenizi fiziksel konumlardan büyütün. Posta listenize bir abonelik isteğini önceden dolduran bir E-posta QR kodu oluşturun.",
+    "infoGain": "Büyüme Hack'i: Bu QR kodunu kartvizitlerinizin arkasına veya perakende kasanıza yerleştirin. Abone olmanız karşılığında %10 indirim kodu sunarak taramaları teşvik edin.",
+    "faqs": [
+      {
+        "q": "E-posta QR Kodu nasıl çalışır?",
+        "a": "Tarandığında, kullanıcının telefonunda otomatik olarak varsayılan e-posta uygulamasını (Apple Mail veya Gmail gibi) açan ve önceden tanımlanmış e-posta adresiniz, konu ve gövde metninizle yeni bir e-posta taslağı hazırlayan bir 'mailto:' protokolünü tetikler."
+      },
+      {
+        "q": "E-posta otomatik olarak gönderilecek mi?",
+        "a": "Hayır, bir güvenlik önlemi olarak mobil işletim sistemleri, e-posta taslağı açıldıktan sonra kullanıcının manuel olarak 'Gönder' düğmesine basmasını gerektirir. Bu onlara mesajı gözden geçirme şansı verir."
+      },
+      {
+        "q": "QR kodundaki diğer adresleri CC veya BCC yapabilir miyim?",
+        "a": "Çekirdek 'mailto' protokolü CC ve BCC'yi desteklerken, eski e-posta istemcileri ve belirli Android cihazları arasında maksimum uyumluluk sağlamak için şu anda birincil alıcı alanına odaklanıyoruz."
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "Mobil Oyun İndirmeleri için App Store QR Kodu",
+    "seoDesc": "Uygulama yüklemelerini doğrudan ev dışı reklamlardan artırın. Doğrudan iOS App Store veya Google Play'deki oyununuza bağlanan bir QR kodu oluşturun.",
+    "infoGain": "Kullanıcı Edinimi İpucu: Bir kongrede veya bir reklam panosunda bir mobil oyunun reklamını yapıyorsanız, App Store QR kodu fiziksel-dijital arasındaki boşluğu doldurur ve kullanıcı oyunun adını unutmadan hızlı indirmeleri yakalar.",
+    "faqs": [
+      {
+        "q": "Bir QR kodu hem iOS hem de Android mağazalarına yönlendirebilir mi?",
+        "a": "Bunu düzgün bir şekilde yapmak için kullanıcının işletim sistemini algılayan dinamik bir yönlendirme bağlantısına (Firebase Dinamik Bağlantısı veya sunucunuzdaki özel bir yönlendirme komut dosyası gibi) ihtiyacınız vardır. Daha sonra bu dinamik bağlantıyı alıp burada standart bir URL QR Kodu oluşturabilirsiniz."
+      },
+      {
+        "q": "Neden URL yerine App Store'a özel bir QR kodu kullanmalısınız?",
+        "a": "Bir App Store QR kodu genellikle yerel App Store veya Google Play uygulamasını, web tarayıcısını atlayarak doğrudan kullanıcının cihazında açılacak şekilde tetikler. Bu, çok daha sorunsuz, daha yüksek dönüşüm sağlayan bir kurulum deneyimiyle sonuçlanır."
+      },
+      {
+        "q": "Bu, uygulama yükleme ölçümlerimi izleyecek mi?",
+        "a": "QR kodunun kendisi metrikleri izlemez. Ancak, hedef URL olarak bir ilişkilendirme bağlantısı (AppsFlyer,Adjust vb.'den) kullanırsanız bu hizmetler yükleme verilerini sorunsuz bir şekilde izleyecektir."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "Ürün Kılavuzları için YouTube Video QR Kodu",
+    "seoDesc": "Kafa karıştırıcı kağıt kılavuzlarını video eğitimleriyle değiştirin. Ürünleriniz için anında görsel talimatlar sağlamak üzere bir YouTube QR kodu oluşturun.",
+    "infoGain": "Müşteri Başarısı İpucu: Bir video eğitimi QR kodunu doğrudan ürününüzün ambalajına veya makinesine yazdırmak, müşterilerin sorunları görsel olarak gidermelerine yardımcı olur ve bu da maliyetli müşteri destek biletleri ve iadelerini büyük ölçüde azaltabilir.",
+    "faqs": [
+      {
+        "q": "YouTube videosu tarandığında otomatik olarak oynatılıyor mu?",
+        "a": "Kullanıcı kodu taradığında, cihazı genellikle yerel YouTube uygulamasını açar ve videoyu hemen yükler. Cihaz ayarlarına bağlı olarak otomatik oynatmaya başlayabilir."
+      },
+      {
+        "q": "Videodaki belirli bir zaman damgasına bağlantı verebilir miyim?",
+        "a": "Evet! YouTube bağlantınızı kopyaladığınızda, oluşturucuya yapıştırmadan önce zaman parametresini (ör. ?t=1m30s) eklemeniz yeterlidir. QR kodu daha sonra videoyu tam o andan başlayarak başlatacaktır."
+      },
+      {
+        "q": "YouTube videosu liste dışıysa ne olur?",
+        "a": "Liste dışı YouTube videoları QR kodlarıyla mükemmel çalışır. Video genel arama sonuçlarında görünmeyecek, ancak fiziksel QR kodunu tarayan herkes eğitim videosunu sorunsuz bir şekilde görüntüleyebilecek."
+      }
+    ]
+  }
+]

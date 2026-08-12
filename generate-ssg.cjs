@@ -17,6 +17,19 @@ async function run() {
   // Use dynamic import for ES modules
   const { localizedRoutes, routeToToolMap } = await import('./src/config/localizedRoutes.js');
   
+  // Load all pSEO locales
+  const pseoLocalesDir = path.join(__dirname, 'src', 'config', 'pseo-locales');
+  const pseoDataByLang = {};
+  if (fs.existsSync(pseoLocalesDir)) {
+    const files = fs.readdirSync(pseoLocalesDir);
+    for (const file of files) {
+      if (file.endsWith('.json')) {
+        const lang = file.replace('.json', '');
+        pseoDataByLang[lang] = JSON.parse(fs.readFileSync(path.join(pseoLocalesDir, file), 'utf8'));
+      }
+    }
+  }
+  
   let serverRender = null;
   try {
     const serverEntryPath = path.join(__dirname, 'dist', 'server', 'entry-server.js');
@@ -56,10 +69,24 @@ async function run() {
     
     const allPages = { ...toolMap };
     
+    // Inject pSEO routes for this language
+    const langPseo = pseoDataByLang[lang] || [];
+    langPseo.forEach(uc => {
+      const safeSlug = uc.slug.startsWith('/') ? uc.slug : '/' + uc.slug;
+      allPages[safeSlug] = 'pseo_' + uc.id; // use unique ID to map later
+    });
+    
     for (const [localizedSlug, toolId] of Object.entries(allPages)) {
       let title, description;
       
-      if (['about', 'compare', 'languages', 'pricing', 'privacy', 'security', 'terms', 'usecases'].includes(toolId)) {
+      const useCase = toolId.startsWith('pseo_') 
+        ? langPseo.find(uc => uc.id === toolId.replace('pseo_', '')) 
+        : null;
+
+      if (useCase) {
+        title = `${useCase.h1Title} | CreateMy-QR`;
+        description = useCase.seoDesc;
+      } else if (['about', 'compare', 'languages', 'pricing', 'privacy', 'security', 'terms', 'usecases'].includes(toolId)) {
         // Fallback or exact titles for static pages
         const staticTitles = {
           'about': 'About Us',
@@ -128,7 +155,7 @@ async function run() {
       );
 
       // Determine the self-referencing canonical URL
-      const canonicalSlug = localizedRoutes[lang]?.[toolId] || '/';
+      const canonicalSlug = toolId.startsWith('pseo_') ? localizedSlug : (localizedRoutes[lang]?.[toolId] || '/');
       const canonicalPrefix = lang === 'en' ? '' : '/' + lang;
       const canonicalUrl = `https://createmy-qr.com${canonicalPrefix}${canonicalSlug === '/' ? '' : canonicalSlug}`;
 
@@ -138,20 +165,36 @@ async function run() {
       );
 
       // Construct and inject static hreflang matrix
-      let hreflangMatrix = '\n    <!-- Static pSEO Hreflang Matrix -->';
-      for (const altLang of langCodes) {
-        const altSlug = routeToToolMap[altLang] ? Object.keys(routeToToolMap[altLang]).find(key => routeToToolMap[altLang][key] === toolId) || '/' : '/';
-        // Wait, routeToToolMap maps slug -> toolId. We need toolId -> slug.
-        // Let's use localizedRoutes[altLang][toolId] which maps toolId -> slug!
-        const actualAltSlug = localizedRoutes[altLang]?.[toolId] || '/';
-        const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
-        const altUrl = `https://createmy-qr.com${altLangPrefix}${actualAltSlug === '/' ? '' : actualAltSlug}`;
-        hreflangMatrix += `\n    <link rel="alternate" hreflang="${altLang}" href="${altUrl}" />`;
-      }
+      let hreflangMatrix = '\n    <!-- Static Hreflang Matrix -->';
       
-      const defaultSlug = localizedRoutes['en']?.[toolId] || '/';
-      const defaultUrl = `https://createmy-qr.com${defaultSlug === '/' ? '' : defaultSlug}`;
-      hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />\n`;
+      if (toolId.startsWith('pseo_')) {
+        const pId = toolId.replace('pseo_', '');
+        for (const altLang of langCodes) {
+          const altPseoList = pseoDataByLang[altLang] || [];
+          const altUseCase = altPseoList.find(uc => uc.id === pId);
+          if (altUseCase) {
+            const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
+            const altUrl = `https://createmy-qr.com${altLangPrefix}/${altUseCase.slug}`;
+            hreflangMatrix += `\n    <link rel="alternate" hreflang="${altLang}" href="${altUrl}" />`;
+          }
+        }
+        const defaultUseCase = (pseoDataByLang['en'] || []).find(uc => uc.id === pId);
+        if (defaultUseCase) {
+          const defaultUrl = `https://createmy-qr.com/${defaultUseCase.slug}`;
+          hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />\n`;
+        }
+      } else {
+        for (const altLang of langCodes) {
+          const actualAltSlug = localizedRoutes[altLang]?.[toolId] || '/';
+          const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
+          const altUrl = `https://createmy-qr.com${altLangPrefix}${actualAltSlug === '/' ? '' : actualAltSlug}`;
+          hreflangMatrix += `\n    <link rel="alternate" hreflang="${altLang}" href="${altUrl}" />`;
+        }
+        
+        const defaultSlug = localizedRoutes['en']?.[toolId] || '/';
+        const defaultUrl = `https://createmy-qr.com${defaultSlug === '/' ? '' : defaultSlug}`;
+        hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />\n`;
+      }
 
       newHtml = newHtml.replace('</head>', hreflangMatrix + '  </head>');
 

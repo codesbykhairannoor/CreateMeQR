@@ -5,7 +5,7 @@ import InputForm from '../components/InputForm';
 const CustomizationPanel = React.lazy(() => import('../components/CustomizationPanel'));
 import Preview from '../components/Preview';
 
-export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo }) {
+export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUseCase }) {
   const { t } = useTranslation();
   const [qrData, setQrData] = useState({});
   const [hasGenerated, setHasGenerated] = useState(false);
@@ -71,7 +71,7 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo }) {
       <section className="max-w-[1440px] mx-auto px-6 text-center mb-24 pt-32">
         <div className="animate-fade-in-up">
           <h1 
-            className="text-[clamp(2rem,5vw,4rem)] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.15] text-balance"
+            className="text-[clamp(2rem,5vw,4rem)] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.15] text-balance max-w-[900px] mx-auto"
           >
             {renderHighlightedTitle(currentSeo.h1Title)}
           </h1>
@@ -112,12 +112,46 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo }) {
                 )}
               </div>
             </div>
+            {pseoUseCase && pseoUseCase.infoGain && (
+              <div className="mt-8 bg-blue-50/50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-900/30 rounded-2xl p-6 shadow-sm animate-fade-in-up">
+                <div className="flex items-start gap-4">
+                  <div className="bg-blue-100 dark:bg-blue-900/50 p-2 rounded-xl shrink-0 mt-1">
+                    <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">Use Case Insight</h3>
+                    <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-[0.95rem]">{pseoUseCase.infoGain}</p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
           <div className="lg:col-span-5 flex justify-center sticky top-24">
             <Preview qrType={qrType} qrData={qrData} visuals={visuals} hasGenerated={hasGenerated} />
           </div>
         </div>
       </section>
+
+      {/* pSEO Unique FAQs */}
+      {pseoUseCase && pseoUseCase.faqs && pseoUseCase.faqs.length > 0 && (
+        <section className="max-w-[800px] mx-auto px-6 mb-32">
+          <div className="text-center mb-12">
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-[800] tracking-tight text-zinc-900 dark:text-white leading-[1.2]">
+              {t('faq.title', 'Frequently Asked Questions')}
+            </h2>
+          </div>
+          <div className="flex flex-col gap-[32px]">
+            {pseoUseCase.faqs.map((faq, idx) => (
+              <div key={idx} className="bg-white dark:bg-[#081226] border border-zinc-200 dark:border-[#102040] rounded-2xl p-6 md:p-8 shadow-sm">
+                <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-4">{faq.q}</h3>
+                <p className="text-[1.1rem] text-zinc-500 dark:text-zinc-400 leading-[1.8]">
+                  {faq.a}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
     </>
   );
 }

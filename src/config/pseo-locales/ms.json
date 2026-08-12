@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "Kod QR PDF untuk Menu Restoran",
+    "seoDesc": "Gantikan menu kertas dengan pengalaman digital tanpa sentuhan. Cipta kod QR PDF percuma dan selamat untuk menu restoran anda serta-merta.",
+    "infoGain": "Petua Pro untuk Restoran: Gunakan tahap pembetulan ralat yang tinggi (Tahap H) apabila mencetak kod QR anda pada khemah meja atau coaster. Ini memastikan kod QR kekal boleh diimbas oleh pelanggan walaupun ia rosak sedikit, basah atau kotor akibat tumpahan makanan.",
+    "faqs": [
+      {
+        "q": "Adakah kod QR PDF untuk menu tamat tempoh?",
+        "a": "Tidak, sistem kami menjana kod QR PDF statik yang tidak pernah tamat tempoh. Walau bagaimanapun, jika anda menggunakan kod QR statik, anda tidak boleh menukar fail PDF asas kemudian. Jika menu anda sering berubah, pertimbangkan untuk mengehos PDF di tapak web anda dan sebaliknya menggunakan penjana Kod QR URL kami."
+      },
+      {
+        "q": "Bagaimanakah saya boleh mengemas kini menu restoran saya tanpa mencetak semula kod QR?",
+        "a": "Untuk mengemas kini menu tanpa mencetak semula khemah meja, anda harus menjana Kod QR URL yang memaut ke halaman menu di tapak web restoran anda (mis., your-restaurant.com/menu.pdf). Setiap kali menu anda berubah, anda hanya memuat naik PDF baharu ke tapak web anda dan kod QR sedia ada akan terus berfungsi dengan sempurna."
+      },
+      {
+        "q": "Adakah kod QR PDF selamat untuk diimbas oleh pelanggan saya?",
+        "a": "Ya! Oleh kerana CreateMy-QR beroperasi 100% secara setempat pada peranti anda, kami tidak menjejaki pelanggan anda atau menyuntik iklan pihak ketiga ke dalam pengalaman pengimbasan. Apabila pelanggan mengimbas kod anda, mereka diarahkan terus ke menu anda dengan selamat."
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "Kod QR WiFi untuk Kafe & Hotel",
+    "seoDesc": "Benarkan tetamu anda menyambung ke rangkaian WiFi anda serta-merta tanpa menaip kata laluan. Jana kod QR WiFi percuma untuk kafe atau hotel anda.",
+    "infoGain": "Petua Hospitaliti: Cetak kod QR WiFi anda dan letakkannya dalam bingkai yang cantik di kaunter penerimaan tetamu atau di atas meja kafe individu. Tetamu menghargai pengalaman tanpa geseran menyertai rangkaian serta-merta tanpa meminta kata laluan daripada kakitangan.",
+    "faqs": [
+      {
+        "q": "Adakah kata laluan WiFi kelihatan apabila seseorang mengimbas kod QR?",
+        "a": "Apabila tetamu mengimbas kod QR menggunakan kamera telefon pintar asli mereka (iOS atau Android), peranti mereka secara automatik akan meminta untuk menyertai rangkaian tanpa mendedahkan kata laluan dalam teks biasa. Walau bagaimanapun, aplikasi pengimbas QR khusus mungkin memaparkan data teks mentah."
+      },
+      {
+        "q": "Bolehkah saya menyembunyikan rangkaian WiFi saya (SSID Tersembunyi) dan masih menggunakan kod QR?",
+        "a": "Ya! Apabila membuat Kod QR WiFi anda, semak pilihan 'Rangkaian Tersembunyi'. Ini memastikan tetamu boleh menyambung dengan lancar walaupun penghala anda dikonfigurasikan untuk tidak menyiarkan SSIDnya."
+      },
+      {
+        "q": "Adakah kod QR WiFi berfungsi untuk kedua-dua iPhone dan Android?",
+        "a": "betul-betul. Standard kod QR WiFi (WPA/WPA2/WEP) diiktiraf secara universal oleh kedua-dua sistem pengendalian Apple iOS dan Android. Pengguna hanya menghalakan apl kamera lalai mereka pada kod untuk disambungkan."
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "Google Semak Kod QR untuk Perniagaan Tempatan",
+    "seoDesc": "Tingkatkan SEO tempatan anda dengan menjadikannya mudah untuk pelanggan meninggalkan penarafan 5 bintang. Buat kod QR Ulasan Google percuma.",
+    "infoGain": "Petua Pemasaran: Masa terbaik untuk meminta semakan adalah pada kemuncak kepuasan pelanggan. Tambahkan kod QR ini pada resit anda, pintu keluar atau minta kakitangan membentangkannya pada tablet sejurus selepas memberikan perkhidmatan yang cemerlang.",
+    "faqs": [
+      {
+        "q": "Bagaimanakah saya boleh mencari pautan ulasan Perniagaan Saya di Google saya?",
+        "a": "Log masuk ke papan pemuka Profil Perniagaan Google anda, cari butang 'Dapatkan lebih banyak ulasan' atau 'Minta ulasan' pada tab utama dan salin URL pendek yang disediakan di sana. Tampalkan URL itu terus ke penjana kami."
+      },
+      {
+        "q": "Adakah kod QR ini akan memberikan perniagaan saya 5 bintang secara automatik?",
+        "a": "Tidak, dasar Google melarang pra-pengisian rating bintang. Kod QR akan membuka dialog ulasan terus pada telefon pelanggan, tetapi mereka mesti memilih rating bintang secara manual dan menaip maklum balas mereka."
+      },
+      {
+        "q": "Bolehkah saya menggunakan ini untuk ulasan Yelp atau TripAdvisor?",
+        "a": "Ya! Walaupun halaman ini memfokuskan pada Ulasan Google, anda hanya boleh menggunakan penjana Kod QR URL standard kami dan tampal pautan ulasan terus untuk profil Yelp, TripAdvisor atau Trustpilot anda."
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "Kod QR vCard untuk Ejen Hartanah",
+    "seoDesc": "Jangan kehilangan petunjuk lagi. Cipta kod QR vCard digital untuk kad perniagaan hartanah dan brosur rumah terbuka anda.",
+    "infoGain": "Petua Rangkaian: Letakkan kod QR vCard anda pada papan tanda 'Untuk Dijual' dan risalah rumah terbuka. Bakal pembeli boleh menyimpan butiran hubungan, foto dan tapak web anda dengan serta-merta ke kenalan telefon mereka dengan satu imbasan.",
+    "faqs": [
+      {
+        "q": "Apakah yang berlaku apabila pelanggan mengimbas kod QR vCard?",
+        "a": "Mengimbas kod QR vCard secara automatik menggesa telefon pengguna untuk membuat entri kenalan baharu yang dipraisi dengan nama, nombor telefon, e-mel dan butiran syarikat anda. Mereka hanya ketik 'Simpan'."
+      },
+      {
+        "q": "Adakah kod QR vCard memerlukan sambungan internet?",
+        "a": "Tidak! Semua maklumat hubungan anda dikodkan terus ke dalam piksel kod QR itu sendiri. Pelanggan anda boleh mengimbas dan menyimpan butiran anda walaupun mereka berada di kawasan dengan penerimaan selular sifar."
+      },
+      {
+        "q": "Bolehkah saya menambah tangkapan kepala profesional saya pada vCard?",
+        "a": "Kod QR vCard standard tidak menyokong imej terbenam kerana imej menjadikan muatan data terlalu besar, menyebabkan kod QR terlalu padat untuk diimbas dengan mudah. Kami mengesyorkan menyimpan data berasaskan teks untuk kebolehpercayaan imbasan maksimum."
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "Kod QR URL untuk Tiket Acara & Pendaftaran",
+    "seoDesc": "Tingkatkan kehadiran acara dengan memautkan risalah fizikal ke halaman tiket digital anda. Hasilkan kod QR URL percuma yang pantas untuk pendaftaran acara.",
+    "infoGain": "Petua Perancangan Acara: Jejak prestasi risalah anda dengan menggunakan URL berteg UTM (cth., ?utm_source=flyer&utm_campaign=summer_fest) sebelum menjana kod QR. Ini membolehkan anda melihat dengan tepat jumlah jualan tiket yang diperoleh daripada imbasan fizikal.",
+    "faqs": [
+      {
+        "q": "Bolehkah saya menukar pautan tiket selepas mencetak risalah?",
+        "a": "CreateMy-QR menjana kod QR statik, yang bermaksud pautan dikod keras secara kekal. Jika anda memerlukan pautan yang boleh ditukar, kami mengesyorkan menggunakan perkhidmatan pemendek URL (seperti Bitly) untuk membuat pautan pendek, dan kemudian menjana kod QR untuk pautan pendek itu."
+      },
+      {
+        "q": "Seberapa besar saya harus mencetak kod QR pada poster acara saya?",
+        "a": "Untuk poster acara yang dilihat dari jauh, tingkatkan kod QR. Peraturan praktikal yang baik ialah nisbah 10:1—jika seseorang mengimbas dari jarak 10 kaki, kod QR hendaklah sekurang-kurangnya 1 kaki (12 inci) lebar."
+      },
+      {
+        "q": "Adakah terdapat had kepada bilangan orang yang boleh mengimbas kod QR acara saya?",
+        "a": "Tiada had imbasan sama sekali! Oleh kerana kod QR hanya menghala terus ke URL tiket anda tanpa melalui pelayan kami, bilangan orang yang tidak terhad boleh mengimbasnya secara serentak tanpa sebarang kesesakan."
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "Kod QR WhatsApp untuk Sokongan Pelanggan",
+    "seoDesc": "Menyediakan perkhidmatan pelanggan segera. Hasilkan kod QR WhatsApp yang membuka sembang terus dengan pasukan sokongan anda, lengkap dengan mesej yang telah diisi sebelumnya.",
+    "infoGain": "Strategi Sokongan: Praisi mesej WhatsApp dengan teks kontekstual seperti 'Helo, saya perlukan bantuan dengan pesanan terbaru saya.' Ini menghilangkan geseran dan membuatkan pelanggan berasa segera diberi perhatian.",
+    "faqs": [
+      {
+        "q": "Adakah pelanggan perlu menyimpan nombor saya dahulu?",
+        "a": "Tidak, itulah keajaiban kod QR WhatsApp! Ia menggunakan ciri WhatsApp 'Click to Chat'. Mengimbas kod serta-merta membuka tetingkap sembang dengan nombor perniagaan anda tanpa memerlukan pelanggan menyimpannya ke buku alamat mereka."
+      },
+      {
+        "q": "Bolehkah saya menggunakan ini untuk Perniagaan WhatsApp?",
+        "a": "Ya, ini berfungsi dengan sempurna untuk kedua-dua akaun WhatsApp dan WhatsApp Business standard. Struktur pautan dalam yang mendasari (wa.me) adalah sama untuk kedua-dua platform."
+      },
+      {
+        "q": "Apakah yang berlaku jika mereka mengimbasnya pada komputer meja?",
+        "a": "Jika diimbas pada desktop atau diklik melalui pautan, ia akan menggesa pengguna untuk membuka WhatsApp Web atau aplikasi Desktop WhatsApp untuk meneruskan perbualan dengan lancar."
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "Kod QR PayPal untuk Bukan Untung & Derma",
+    "seoDesc": "Jadikan pengumpulan dana tanpa geseran. Jana kod QR PayPal untuk menerima sumbangan segera di acara amal, perkhidmatan gereja atau perhimpunan komuniti.",
+    "infoGain": "Petua Pengumpulan Dana: Gabungkan kod QR dengan Seruan Tindakan (CTA) yang jelas seperti 'Imbas untuk Menderma $5'. Menentukan jumlah tertentu yang kecil mengurangkan keletihan membuat keputusan dan meningkatkan kadar penukaran derma dengan ketara.",
+    "faqs": [
+      {
+        "q": "Adakah terdapat sebarang bayaran tersembunyi untuk menerima sumbangan dengan cara ini?",
+        "a": "CreateMy-QR adalah 100% percuma dan mengambil komisen sifar. Walau bagaimanapun, yuran transaksi PayPal standard untuk menerima wang masih akan dikenakan mengikut jenis akaun PayPal khusus anda."
+      },
+      {
+        "q": "Bolehkah penderma memilih jumlah derma mereka sendiri?",
+        "a": "Ya, jika anda membiarkan medan 'Jumlah' kosong semasa menjana kod QR, penderma akan digesa untuk memasukkan amaun derma yang mereka kehendaki secara manual dalam apl PayPal."
+      },
+      {
+        "q": "Adakah ini selamat untuk mengendalikan transaksi kewangan?",
+        "a": "ya. Alat kami dengan ketat menjana URL 'Beli Sekarang' PayPal standard. Transaksi kewangan sebenar berlaku sepenuhnya dalam persekitaran PayPal yang sangat selamat dan disulitkan. Kami tidak pernah menyentuh atau melihat data pembayaran."
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "E-mel Kod QR untuk Pendaftaran Surat Berita",
+    "seoDesc": "Kembangkan senarai e-mel anda dari lokasi fizikal. Jana kod QR E-mel yang pra-mengisi permintaan langganan ke senarai mel anda.",
+    "infoGain": "Growth Hack: Letakkan kod QR ini di belakang kad perniagaan anda atau di kaunter pembayaran runcit anda. Insentifkan imbasan dengan menawarkan kod diskaun 10% sebagai pertukaran untuk melanggan.",
+    "faqs": [
+      {
+        "q": "Bagaimanakah Kod QR E-mel berfungsi?",
+        "a": "Apabila diimbas, ia mencetuskan protokol 'mailto:' pada telefon pengguna, yang secara automatik membuka apl e-mel lalai mereka (seperti Apple Mail atau Gmail) dan mendraf e-mel baharu dengan alamat e-mel, subjek dan teks kandungan anda yang dipratakrifkan."
+      },
+      {
+        "q": "Adakah e-mel akan dihantar secara automatik?",
+        "a": "Tidak, sebagai langkah keselamatan, sistem pengendalian mudah alih memerlukan pengguna menekan butang 'Hantar' secara manual selepas draf e-mel dibuka. Ini memberi mereka peluang untuk menyemak mesej."
+      },
+      {
+        "q": "Bolehkah saya CC atau BCC alamat lain dalam kod QR?",
+        "a": "Walaupun protokol 'mailto' teras menyokong CC dan BCC, pada masa ini kami menumpukan pada medan penerima utama untuk memastikan keserasian maksimum merentas klien e-mel lama dan peranti Android tertentu."
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "Kod QR App Store untuk Muat Turun Permainan Mudah Alih",
+    "seoDesc": "Dorong pemasangan apl terus daripada pengiklanan luar rumah. Buat kod QR yang memaut terus ke permainan anda di Gedung Apl iOS atau Google Play.",
+    "infoGain": "Petua Pemerolehan Pengguna: Jika anda mengiklankan permainan mudah alih di konvensyen atau di papan iklan, kod QR App Store merapatkan jurang fizikal-ke-digital, menangkap muat turun impuls sebelum pengguna terlupa nama permainan itu.",
+    "faqs": [
+      {
+        "q": "Bolehkah satu kod QR mengarahkan ke kedai iOS dan Android?",
+        "a": "Untuk melakukan ini dengan betul, anda memerlukan pautan penghalaan dinamik (seperti Pautan Dinamik Firebase atau skrip ubah hala tersuai pada pelayan anda) yang mengesan OS pengguna. Anda kemudian boleh mengambil pautan dinamik itu dan menjana Kod QR URL standard di sini."
+      },
+      {
+        "q": "Mengapa menggunakan kod QR khusus App Store dan bukannya URL?",
+        "a": "Kod QR App Store sering mencetuskan App Store asli atau apl Google Play untuk dibuka terus pada peranti pengguna, memintas penyemak imbas web. Ini menghasilkan pengalaman pemasangan yang lebih lancar dan penukaran yang lebih tinggi."
+      },
+      {
+        "q": "Adakah ini akan menjejaki metrik pemasangan apl saya?",
+        "a": "Kod QR itu sendiri tidak menjejaki metrik. Walau bagaimanapun, jika anda menggunakan pautan atribusi (daripada AppsFlyer, Adjust, dll.) sebagai URL destinasi, perkhidmatan tersebut akan menjejak data pemasangan dengan lancar."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "Kod QR Video YouTube untuk Manual Produk",
+    "seoDesc": "Gantikan manual kertas yang mengelirukan dengan tutorial video. Buat kod QR YouTube untuk memberikan arahan visual segera untuk produk anda.",
+    "infoGain": "Petua Kejayaan Pelanggan: Mencetak kod QR tutorial video terus pada pembungkusan atau mesin produk anda membantu pelanggan menyelesaikan masalah secara visual, yang boleh mengurangkan tiket sokongan pelanggan yang mahal dan pemulangan secara drastik.",
+    "faqs": [
+      {
+        "q": "Adakah video YouTube dimainkan secara automatik apabila diimbas?",
+        "a": "Apabila pengguna mengimbas kod, peranti mereka biasanya akan membuka apl YouTube asli dan memuatkan video dengan serta-merta. Bergantung pada tetapan peranti mereka, peranti itu mungkin mula dimainkan secara automatik."
+      },
+      {
+        "q": "Bolehkah saya memautkan ke cap masa tertentu dalam video?",
+        "a": "Ya! Apabila anda menyalin pautan YouTube anda, cuma tambahkan parameter masa (cth., ?t=1m30s) sebelum menampalnya ke dalam penjana. Kod QR kemudiannya akan melancarkan video bermula tepat pada masa itu."
+      },
+      {
+        "q": "Bagaimana jika video YouTube tidak tersenarai?",
+        "a": "Video YouTube tidak tersenarai berfungsi dengan sempurna dengan kod QR. Video itu tidak akan muncul dalam hasil carian awam, tetapi sesiapa sahaja yang mengimbas kod QR fizikal akan dapat melihat video pengajaran tanpa masalah."
+      }
+    ]
+  }
+]

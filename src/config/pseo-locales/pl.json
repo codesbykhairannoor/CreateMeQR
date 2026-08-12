@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "Kod QR w formacie PDF dla menu restauracji",
+    "seoDesc": "Zamień papierowe menu na bezdotykowe cyfrowe menu. Natychmiast utwórz bezpłatny i bezpieczny kod QR w formacie PDF do menu swojej restauracji.",
+    "infoGain": "Wskazówka dla restauracji: Podczas drukowania kodów QR na namiotach stołowych lub podstawkach stosuj wysoki poziom korekcji błędów (poziom H). Dzięki temu klienci będą mogli zeskanować kod QR, nawet jeśli zostanie lekko uszkodzony, zamoczony lub zabrudzony w wyniku rozlania jedzenia.",
+    "faqs": [
+      {
+        "q": "Czy kody QR PDF do menu tracą ważność?",
+        "a": "Nie, nasz system generuje statyczne kody QR w formacie PDF, które nigdy nie wygasają. Jeśli jednak użyjesz statycznego kodu QR, nie będziesz mógł później zmienić bazowego pliku PDF. Jeśli Twoje menu często się zmienia, rozważ umieszczenie pliku PDF na swojej stronie internetowej i zamiast tego skorzystaj z naszego generatora kodów QR URL."
+      },
+      {
+        "q": "Jak mogę zaktualizować menu mojej restauracji bez ponownego drukowania kodów QR?",
+        "a": "Aby zaktualizować menu bez ponownego drukowania namiotów stołowych, należy wygenerować kod QR URL, który prowadzi do strony menu w witrynie Twojej restauracji (np. twoja-restauracja.com/menu.pdf). Za każdym razem, gdy zmieni się Twoje menu, po prostu prześlij nowy plik PDF na swoją stronę internetową, a istniejący kod QR będzie nadal działał idealnie."
+      },
+      {
+        "q": "Czy skanowanie kodów QR w formacie PDF jest bezpieczne dla moich klientów?",
+        "a": "Tak! Ponieważ CreateMy-QR działa w 100% lokalnie na Twoim urządzeniu, nie śledzimy Twoich klientów ani nie umieszczamy reklam innych firm w procesie skanowania. Gdy klienci skanują Twój kod, są bezpiecznie kierowani bezpośrednio do Twojego menu."
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "Kod QR Wi-Fi dla kawiarni i hoteli",
+    "seoDesc": "Pozwól swoim gościom natychmiastowo połączyć się z Twoją siecią Wi-Fi, bez konieczności wpisywania haseł. Wygeneruj bezpłatny kod QR Wi-Fi dla swojej kawiarni lub hotelu.",
+    "infoGain": "Wskazówka dla gości: Wydrukuj kod QR Wi-Fi i umieść go w pięknej ramce w recepcji lub na poszczególnych stolikach w kawiarni. Goście doceniają bezproblemowe i natychmiastowe dołączenie do sieci, bez konieczności pytania personelu o hasło.",
+    "faqs": [
+      {
+        "q": "Czy hasło WiFi jest widoczne, gdy ktoś zeskanuje kod QR?",
+        "a": "Gdy goście zeskanują kod QR za pomocą natywnego aparatu w smartfonie (iOS lub Android), ich urządzenie automatycznie poprosi o dołączenie do sieci bez ujawniania hasła w postaci zwykłego tekstu. Jednak wyspecjalizowane aplikacje do skanowania kodów QR mogą wyświetlać nieprzetworzone dane tekstowe."
+      },
+      {
+        "q": "Czy mogę ukryć moją sieć Wi-Fi (ukryty identyfikator SSID) i nadal korzystać z kodu QR?",
+        "a": "Tak! Tworząc kod QR Wi-Fi, po prostu zaznacz opcję „Ukryta sieć”. Dzięki temu goście będą mogli bezproblemowo łączyć się, nawet jeśli router jest skonfigurowany tak, aby nie rozgłaszał swojego identyfikatora SSID."
+      },
+      {
+        "q": "Czy kod QR Wi-Fi działa zarówno na iPhonie, jak i na Androidzie?",
+        "a": "Absolutnie. Standard kodu QR Wi-Fi (WPA/WPA2/WEP) jest powszechnie rozpoznawany przez systemy operacyjne Apple iOS i Android. Użytkownicy po prostu kierują domyślną aplikację aparatu na kod, aby się połączyć."
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "Google Sprawdź kod QR dla lokalnych firm",
+    "seoDesc": "Podnieś swoje lokalne SEO, ułatwiając klientom pozostawienie 5 gwiazdek. Utwórz bezpłatny kod QR Przeglądu Google.",
+    "infoGain": "Wskazówka marketingowa: Najlepszy moment, aby poprosić o recenzję, to szczyt zadowolenia klienta. Dodaj ten kod QR do paragonów, drzwi wyjściowych lub poproś personel o pokazanie go na tablecie zaraz po zapewnieniu doskonałej obsługi.",
+    "faqs": [
+      {
+        "q": "Jak znaleźć link do recenzji w Google Moja Firma?",
+        "a": "Zaloguj się do panelu Profilu Firmy w Google, poszukaj przycisku „Uzyskaj więcej recenzji” lub „Zapytaj o opinię” na karcie głównej i skopiuj podany tam krótki adres URL. Wklej ten adres URL bezpośrednio do naszego generatora."
+      },
+      {
+        "q": "Czy ten kod QR automatycznie przyzna mojej firmie 5 gwiazdek?",
+        "a": "Nie, zasady Google zabraniają wstępnego podawania liczby gwiazdek. Kod QR otworzy okno dialogowe z recenzją bezpośrednio na telefonie klienta, ale musi on ręcznie wybrać liczbę gwiazdek i wpisać swoją opinię."
+      },
+      {
+        "q": "Czy mogę zamiast tego użyć tego do recenzji na Yelp lub w serwisie TripAdvisor?",
+        "a": "Tak! Chociaż ta strona koncentruje się na recenzjach Google, możesz po prostu skorzystać z naszego standardowego generatora kodów QR URL i wkleić link do bezpośredniej recenzji w swoim profilu Yelp, TripAdvisor lub Trustpilot."
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "Kod QR vCard dla agentów nieruchomości",
+    "seoDesc": "Nigdy więcej nie trać przewagi. Utwórz cyfrowy kod QR vCard dla swoich wizytówek dotyczących nieruchomości i broszur dni otwartych.",
+    "infoGain": "Wskazówka dotycząca networkingu: umieść kod QR vCard na tabliczkach „Na sprzedaż” i ulotkach dni otwartych. Potencjalni kupujący mogą natychmiast zapisać Twoje dane kontaktowe, zdjęcie i stronę internetową w kontaktach w telefonie za pomocą jednego skanu.",
+    "faqs": [
+      {
+        "q": "Co się stanie, gdy klient zeskanuje kod QR vCard?",
+        "a": "Zeskanowanie kodu QR vCard automatycznie powoduje, że telefon użytkownika tworzy nowy wpis kontaktowy, wstępnie wypełniony Twoim imieniem i nazwiskiem, numerem telefonu, adresem e-mail i danymi firmy. Po prostu klikają „Zapisz”."
+      },
+      {
+        "q": "Czy kod QR vCard wymaga połączenia z Internetem?",
+        "a": "NIE! Wszystkie Twoje dane kontaktowe są kodowane bezpośrednio w pikselach samego kodu QR. Twoi klienci mogą skanować i zapisywać Twoje dane, nawet jeśli znajdują się w obszarze o zerowym zasięgu sieci komórkowej."
+      },
+      {
+        "q": "Czy mogę dodać moje profesjonalne zdjęcie głowy do karty vCard?",
+        "a": "Standardowe kody QR vCard nie obsługują osadzonych obrazów, ponieważ obrazy powodują, że ładunek danych jest zbyt duży, co powoduje, że kod QR jest zbyt gęsty, aby można go było łatwo zeskanować. W celu zapewnienia maksymalnej niezawodności skanowania zalecamy przechowywanie danych w formie tekstowej."
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "Kod QR URL dla biletów na wydarzenia i rejestracji",
+    "seoDesc": "Zwiększ frekwencję na wydarzeniach, łącząc fizyczne ulotki ze swoją cyfrową stroną z biletami. Wygeneruj szybki, bezpłatny kod QR URL do rejestracji na wydarzenie.",
+    "infoGain": "Wskazówka dotycząca planowania wydarzeń: śledź skuteczność swojej ulotki, korzystając z adresu URL ze znacznikiem UTM (np. ?utm_source=flyer&utm_campaign=summer_fest) przed wygenerowaniem kodu QR. Dzięki temu możesz dokładnie sprawdzić, ile biletów sprzedano na podstawie fizycznych skanów.",
+    "faqs": [
+      {
+        "q": "Czy mogę zmienić link do biletu po wydrukowaniu ulotek?",
+        "a": "CreateMy-QR generuje statyczne kody QR, co oznacza, że ​​link jest trwale zakodowany. Jeśli potrzebujesz zmiennego linku, zalecamy skorzystanie z usługi skracania adresów URL (np. Bitly) w celu utworzenia krótkiego linku, a następnie wygenerowania kodu QR dla tego krótkiego linku."
+      },
+      {
+        "q": "Jak duży powinienem wydrukować kod QR na plakacie wydarzenia?",
+        "a": "W przypadku plakatów wydarzeń oglądanych z daleka powiększ kod QR. Dobrą zasadą jest stosunek 10:1 — jeśli osoba skanuje z odległości 3 stóp, kod QR powinien mieć co najmniej 1 stopę (12 cali) szerokości."
+      },
+      {
+        "q": "Czy istnieje ograniczenie liczby osób, które mogą zeskanować kod QR mojego wydarzenia?",
+        "a": "Nie ma absolutnie żadnych ograniczeń skanowania! Ponieważ kod QR po prostu wskazuje bezpośrednio adres URL Twojego biletu bez konieczności przechodzenia przez nasze serwery, nieograniczona liczba osób może go skanować jednocześnie bez żadnych wąskich gardeł."
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "Kod QR WhatsApp do obsługi klienta",
+    "seoDesc": "Zapewnij natychmiastową obsługę klienta. Wygeneruj kod QR WhatsApp, który otworzy bezpośredni czat z zespołem pomocy technicznej wraz ze wstępnie wypełnioną wiadomością.",
+    "infoGain": "Strategia wsparcia: Wypełnij wiadomość WhatsApp tekstem kontekstowym, np. „Witam, potrzebuję pomocy przy moim ostatnim zamówieniu”. Eliminuje to tarcia i sprawia, że ​​klient czuje się natychmiast zaopiekowany.",
+    "faqs": [
+      {
+        "q": "Czy klient musi najpierw zapisać mój numer?",
+        "a": "Nie, to magia kodu QR WhatsApp! Wykorzystuje funkcję WhatsApp „Kliknij, aby porozmawiać”. Zeskanowanie kodu natychmiast otwiera okno czatu z numerem Twojej firmy, bez konieczności zapisywania go przez klienta w książce adresowej."
+      },
+      {
+        "q": "Czy mogę tego używać w WhatsApp Business?",
+        "a": "Tak, działa to doskonale zarówno w przypadku standardowych kont WhatsApp, jak i WhatsApp Business. Podstawowa struktura głębokich linków (wa.me) jest identyczna dla obu platform."
+      },
+      {
+        "q": "Co się stanie, jeśli zeskanują go na komputerze stacjonarnym?",
+        "a": "Jeśli zostanie zeskanowany na komputerze lub kliknięty za pomocą łącza, wyświetli monit o otwarcie WhatsApp Web lub aplikacji WhatsApp Desktop, aby móc bezproblemowo kontynuować rozmowę."
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "Kod QR PayPal dla organizacji non-profit i darowizn",
+    "seoDesc": "Spraw, aby zbieranie funduszy przebiegało bezproblemowo. Wygeneruj kod QR PayPal, aby przyjmować natychmiastowe datki podczas wydarzeń charytatywnych, nabożeństw lub zgromadzeń społecznych.",
+    "infoGain": "Wskazówka dotycząca zbiórki pieniędzy: Połącz kod QR z wyraźnym wezwaniem do działania (CTA), np. „Skanuj, aby przekazać 5 USD”. Zdefiniowanie konkretnej, niewielkiej kwoty zmniejsza zmęczenie decyzyjne i znacząco zwiększa współczynnik konwersji darowizn.",
+    "faqs": [
+      {
+        "q": "Czy są jakieś ukryte opłaty za przyjmowanie darowizn w ten sposób?",
+        "a": "CreateMy-QR jest w 100% darmowy i nie pobiera prowizji. Jednakże standardowe opłaty transakcyjne PayPal za otrzymanie pieniędzy będą nadal obowiązywać w zależności od konkretnego typu konta PayPal."
+      },
+      {
+        "q": "Czy darczyńcy mogą sami wybrać kwotę darowizny?",
+        "a": "Tak, jeśli podczas generowania kodu QR pozostawisz puste pole „Kwota”, darczyńca zostanie poproszony o ręczne wprowadzenie żądanej kwoty darowizny w aplikacji PayPal."
+      },
+      {
+        "q": "Czy jest to bezpieczne w przypadku transakcji finansowych?",
+        "a": "Tak. Nasze narzędzie generuje wyłącznie standardowy adres URL „Kup teraz” w systemie PayPal. Rzeczywista transakcja finansowa odbywa się całkowicie w wysoce bezpiecznym, zaszyfrowanym środowisku PayPal. Nigdy nie dotykamy ani nie widzimy danych dotyczących płatności."
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "Wyślij e-mail z kodem QR umożliwiającym subskrypcję biuletynu",
+    "seoDesc": "Rozwijaj swoją listę e-mailową z lokalizacji fizycznych. Wygeneruj e-mailowy kod QR, który wstępnie wypełni żądanie subskrypcji Twojej listy mailingowej.",
+    "infoGain": "Growth Hack: umieść ten kod QR na odwrocie wizytówek lub przy kasie detalicznej. Motywuj do skanowania, oferując 10% kod rabatowy w zamian za subskrypcję.",
+    "faqs": [
+      {
+        "q": "Jak działa e-mailowy kod QR?",
+        "a": "Po zeskanowaniu uruchamia protokół „mailto:” na telefonie użytkownika, który automatycznie otwiera domyślną aplikację pocztową (np. Apple Mail lub Gmail) i tworzy nową wiadomość e-mail zawierającą wcześniej zdefiniowany adres e-mail, temat i treść wiadomości."
+      },
+      {
+        "q": "Czy wiadomość e-mail zostanie wysłana automatycznie?",
+        "a": "Nie, ze względów bezpieczeństwa mobilne systemy operacyjne wymagają od użytkownika ręcznego naciśnięcia przycisku „Wyślij” po otwarciu wersji roboczej wiadomości e-mail. Dzięki temu mają szansę zapoznać się z wiadomością."
+      },
+      {
+        "q": "Czy mogę CC lub BCC inne adresy w kodzie QR?",
+        "a": "Chociaż podstawowy protokół „mailto” obsługuje CC i BCC, obecnie skupiamy się na polu głównego odbiorcy, aby zapewnić maksymalną kompatybilność ze starszymi klientami poczty e-mail i określonymi urządzeniami z Androidem."
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "Kod QR App Store do pobierania gier na urządzenia mobilne",
+    "seoDesc": "Zwiększ liczbę instalacji aplikacji bezpośrednio z reklam zewnętrznych. Utwórz kod QR prowadzący bezpośrednio do Twojej gry w sklepie iOS App Store lub Google Play.",
+    "infoGain": "Wskazówka dotycząca pozyskiwania użytkowników: jeśli reklamujesz grę mobilną na konwencji lub na billboardzie, kod QR ze sklepu App Store wypełnia lukę między technologią fizyczną a cyfrową, rejestrując impulsowe pobrania, zanim użytkownik zapomni nazwę gry.",
+    "faqs": [
+      {
+        "q": "Czy jeden kod QR może prowadzić do sklepów z systemem iOS i Android?",
+        "a": "Aby zrobić to poprawnie, potrzebujesz dynamicznego łącza routingowego (takiego jak łącze dynamiczne Firebase lub niestandardowy skrypt przekierowujący na serwerze), które wykrywa system operacyjny użytkownika. Następnie możesz skorzystać z tego linku dynamicznego i wygenerować tutaj standardowy kod QR URL."
+      },
+      {
+        "q": "Po co używać kodu QR specyficznego dla App Store zamiast kodu URL?",
+        "a": "Kod QR App Store często powoduje otwarcie natywnej aplikacji App Store lub Google Play bezpośrednio na urządzeniu użytkownika, z pominięciem przeglądarki internetowej. Dzięki temu instalacja przebiega znacznie płynniej i zapewnia wyższą konwersję."
+      },
+      {
+        "q": "Czy to będzie śledzić wskaźniki instalacji mojej aplikacji?",
+        "a": "Sam kod QR nie śledzi danych. Jeśli jednak użyjesz linku atrybucyjnego (z AppsFlyer, Apply itp.) jako docelowego adresu URL, usługi te będą bezproblemowo śledzić dane dotyczące instalacji."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "Kod QR filmu YouTube dla instrukcji obsługi produktów",
+    "seoDesc": "Zamień mylące instrukcje papierowe na samouczki wideo. Utwórz kod QR YouTube, aby uzyskać natychmiastowe instrukcje wizualne dotyczące swoich produktów.",
+    "infoGain": "Wskazówka dotycząca sukcesu klienta: wydrukowanie kodu QR z samouczkiem wideo bezpośrednio na opakowaniu lub maszynie produktu pomaga klientom wizualnie rozwiązywać problemy, co może drastycznie zmniejszyć kosztowne zgłoszenia do obsługi klienta i zwroty.",
+    "faqs": [
+      {
+        "q": "Czy film z YouTube odtwarza się automatycznie po zeskanowaniu?",
+        "a": "Gdy użytkownik zeskanuje kod, jego urządzenie zazwyczaj otworzy natywną aplikację YouTube i natychmiast załaduje film. W zależności od ustawień urządzenia może rozpocząć się automatyczne odtwarzanie."
+      },
+      {
+        "q": "Czy mogę umieścić link do konkretnego znacznika czasu w filmie?",
+        "a": "Tak! Kopiując link do YouTube, po prostu dołącz parametr czasu (np. ?t=1m30s) przed wklejeniem go do generatora. Kod QR uruchomi wideo rozpoczynające się dokładnie w tym momencie."
+      },
+      {
+        "q": "Co się stanie, jeśli film w YouTube jest niepubliczny?",
+        "a": "Niepubliczne filmy z YouTube doskonale współpracują z kodami QR. Film nie pojawi się w publicznych wynikach wyszukiwania, ale każdy, kto zeskanuje fizyczny kod QR, będzie mógł bez problemów obejrzeć film instruktażowy."
+      }
+    ]
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "PDF-QR-Code für Restaurantmenüs",
+    "seoDesc": "Ersetzen Sie Papiermenüs durch ein kontaktloses digitales Erlebnis. Erstellen Sie sofort einen kostenlosen, sicheren PDF-QR-Code für Ihre Restaurantkarte.",
+    "infoGain": "Profi-Tipp für Restaurants: Verwenden Sie beim Drucken Ihrer QR-Codes auf Tischaufstellern oder Untersetzern eine hohe Fehlerkorrekturstufe (Stufe H). Dadurch wird sichergestellt, dass der QR-Code von Kunden auch dann gescannt werden kann, wenn er durch verschüttete Lebensmittel leicht beschädigt, nass oder verschmutzt ist.",
+    "faqs": [
+      {
+        "q": "Laufen PDF-QR-Codes für Speisekarten ab?",
+        "a": "Nein, unser System generiert statische PDF-QR-Codes, die niemals ablaufen. Wenn Sie jedoch einen statischen QR-Code verwenden, können Sie die zugrunde liegende PDF-Datei nachträglich nicht ändern. Wenn sich Ihre Speisekarte häufig ändert, sollten Sie erwägen, das PDF auf Ihrer Website zu hosten und stattdessen unseren URL-QR-Code-Generator zu verwenden."
+      },
+      {
+        "q": "Wie kann ich meine Restaurantkarte aktualisieren, ohne die QR-Codes erneut zu drucken?",
+        "a": "Um eine Speisekarte zu aktualisieren, ohne Tischzelte erneut zu drucken, sollten Sie einen URL-QR-Code generieren, der auf eine Menüseite auf der Website Ihres Restaurants verweist (z. B. Ihr-restaurant.com/menü.pdf). Wenn sich Ihre Speisekarte ändert, laden Sie einfach das neue PDF auf Ihre Website hoch und der bestehende QR-Code funktioniert weiterhin einwandfrei."
+      },
+      {
+        "q": "Ist das Scannen von PDF-QR-Codes für meine Kunden sicher?",
+        "a": "Ja! Da CreateMy-QR zu 100 % lokal auf Ihrem Gerät ausgeführt wird, verfolgen wir Ihre Kunden nicht und fügen keine Werbung von Drittanbietern in das Scan-Erlebnis ein. Wenn Kunden Ihren Code scannen, werden sie sicher direkt zu Ihrer Speisekarte weitergeleitet."
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "WLAN-QR-Code für Cafés und Hotels",
+    "seoDesc": "Ermöglichen Sie Ihren Gästen, sich sofort mit Ihrem WLAN-Netzwerk zu verbinden, ohne Passwörter eingeben zu müssen. Generieren Sie einen kostenlosen WLAN-QR-Code für Ihr Café oder Hotel.",
+    "infoGain": "Gastronomie-Tipp: Drucken Sie Ihren WLAN-QR-Code aus und platzieren Sie ihn in einem schönen Rahmen an der Rezeption oder auf einzelnen Cafétischen. Gäste schätzen das reibungslose Erlebnis, sich sofort dem Netzwerk anzuschließen, ohne das Personal nach dem Passwort fragen zu müssen.",
+    "faqs": [
+      {
+        "q": "Ist das WLAN-Passwort sichtbar, wenn jemand den QR-Code scannt?",
+        "a": "Wenn Gäste den QR-Code mit ihrer nativen Smartphone-Kamera (iOS oder Android) scannen, fordert ihr Gerät automatisch zum Beitritt zum Netzwerk auf, ohne das Passwort im Klartext preiszugeben. Allerdings können spezielle QR-Scanner-Apps die Rohtextdaten anzeigen."
+      },
+      {
+        "q": "Kann ich mein WLAN-Netzwerk verbergen (versteckte SSID) und trotzdem einen QR-Code verwenden?",
+        "a": "Ja! Aktivieren Sie beim Erstellen Ihres WLAN-QR-Codes einfach die Option „Verstecktes Netzwerk“. Dadurch wird sichergestellt, dass Gäste nahtlos eine Verbindung herstellen können, auch wenn Ihr Router so konfiguriert ist, dass er seine SSID nicht sendet."
+      },
+      {
+        "q": "Funktioniert ein WLAN-QR-Code sowohl für iPhone als auch für Android?",
+        "a": "Absolut. Der WiFi-QR-Code-Standard (WPA/WPA2/WEP) wird sowohl von Apple iOS- als auch von Android-Betriebssystemen allgemein anerkannt. Benutzer richten einfach ihre Standardkamera-App auf den Code, um eine Verbindung herzustellen."
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "Google Review QR-Code für lokale Unternehmen",
+    "seoDesc": "Steigern Sie Ihre lokale SEO, indem Sie es Ihren Kunden leicht machen, eine 5-Sterne-Bewertung abzugeben. Erstellen Sie einen kostenlosen Google-Bewertungs-QR-Code.",
+    "infoGain": "Marketing-Tipp: Der beste Zeitpunkt, um eine Bewertung anzufordern, ist der Höhepunkt der Kundenzufriedenheit. Fügen Sie diesen QR-Code zu Ihren Quittungen, Ausgangstüren hinzu oder lassen Sie ihn direkt nach der Erbringung eines hervorragenden Service vom Personal auf einem Tablet vorzeigen.",
+    "faqs": [
+      {
+        "q": "Wie finde ich meinen Bewertungslink für Google My Business?",
+        "a": "Melden Sie sich bei Ihrem Google Business Profile-Dashboard an, suchen Sie auf der Registerkarte „Startseite“ nach der Schaltfläche „Weitere Bewertungen erhalten“ oder „Nach Bewertungen fragen“ und kopieren Sie die dort bereitgestellte Kurz-URL. Fügen Sie diese URL direkt in unseren Generator ein."
+      },
+      {
+        "q": "Verleiht dieser QR-Code meinem Unternehmen automatisch 5 Sterne?",
+        "a": "Nein, die Google-Richtlinien verbieten das Vorausfüllen der Sternebewertung. Der QR-Code öffnet den Bewertungsdialog direkt auf dem Telefon des Kunden, er muss jedoch die Sternebewertung manuell auswählen und sein Feedback eingeben."
+      },
+      {
+        "q": "Kann ich dies stattdessen für Yelp- oder TripAdvisor-Bewertungen verwenden?",
+        "a": "Ja! Während sich diese Seite auf Google-Bewertungen konzentriert, können Sie einfach unseren Standard-URL-QR-Code-Generator verwenden und den direkten Bewertungslink für Ihr Yelp-, TripAdvisor- oder Trustpilot-Profil einfügen."
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "vCard-QR-Code für Immobilienmakler",
+    "seoDesc": "Verlieren Sie nie wieder einen Vorsprung. Erstellen Sie einen digitalen vCard-QR-Code für Ihre Immobilien-Visitenkarten und Broschüren zum Tag der offenen Tür.",
+    "infoGain": "Networking-Tipp: Platzieren Sie Ihren vCard-QR-Code auf „Zu verkaufen“-Schildern und Flyern zum Tag der offenen Tür. Potenzielle Käufer können Ihre Kontaktdaten, Ihr Foto und Ihre Website mit einem einzigen Scan sofort in ihren Telefonkontakten speichern.",
+    "faqs": [
+      {
+        "q": "Was passiert, wenn ein Kunde den vCard-QR-Code scannt?",
+        "a": "Durch das Scannen des vCard-QR-Codes wird das Telefon des Benutzers automatisch aufgefordert, einen neuen Kontakteintrag zu erstellen, der bereits mit Ihrem Namen, Ihrer Telefonnummer, Ihrer E-Mail-Adresse und Ihren Firmendaten gefüllt ist. Sie tippen einfach auf „Speichern“."
+      },
+      {
+        "q": "Benötigt ein vCard-QR-Code eine Internetverbindung?",
+        "a": "NEIN! Alle Ihre Kontaktinformationen werden direkt in den Pixeln des QR-Codes selbst kodiert. Ihre Kunden können Ihre Daten scannen und speichern, auch wenn sie sich in einem Gebiet ohne Mobilfunkempfang befinden."
+      },
+      {
+        "q": "Kann ich mein professionelles Porträt zur vCard hinzufügen?",
+        "a": "Standard-vCard-QR-Codes unterstützen keine eingebetteten Bilder, da Bilder die Datennutzlast zu groß machen, was zu einem QR-Code führt, der zu dicht ist, um einfach gescannt zu werden. Für maximale Scan-Zuverlässigkeit empfehlen wir, die Daten textbasiert zu halten."
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "URL-QR-Code für Veranstaltungstickets und Registrierung",
+    "seoDesc": "Steigern Sie die Teilnahme an Veranstaltungen, indem Sie physische Flyer mit Ihrer digitalen Ticketseite verknüpfen. Generieren Sie einen schnellen, kostenlosen URL-QR-Code für die Veranstaltungsregistrierung.",
+    "infoGain": "Tipp zur Veranstaltungsplanung: Verfolgen Sie die Leistung Ihres Flyers mithilfe einer UTM-getaggten URL (z. B. ?utm_source=flyer&utm_campaign=summer_fest), bevor Sie den QR-Code generieren. Dadurch können Sie genau sehen, wie viele Ticketverkäufe durch physische Scans erzielt wurden.",
+    "faqs": [
+      {
+        "q": "Kann ich den Ticketlink nach dem Drucken der Flyer ändern?",
+        "a": "CreateMy-QR generiert statische QR-Codes, was bedeutet, dass der Link dauerhaft fest codiert ist. Wenn Sie einen veränderbaren Link benötigen, empfehlen wir die Verwendung eines URL-Shortener-Dienstes (wie Bitly), um einen Kurzlink zu erstellen und dann den QR-Code für diesen Kurzlink zu generieren."
+      },
+      {
+        "q": "Wie groß soll ich den QR-Code auf mein Veranstaltungsplakat drucken?",
+        "a": "Für Veranstaltungsplakate, die aus der Ferne betrachtet werden, vergrößern Sie den QR-Code. Eine gute Faustregel ist ein Verhältnis von 10:1 – wenn eine Person aus einer Entfernung von 10 Fuß scannt, sollte der QR-Code mindestens 1 Fuß (12 Zoll) breit sein."
+      },
+      {
+        "q": "Gibt es eine Grenze dafür, wie viele Personen meinen Event-QR-Code scannen können?",
+        "a": "Es gibt absolut keine Scan-Limits! Da der QR-Code einfach direkt auf Ihre Ticket-URL verweist, ohne unsere Server zu durchlaufen, kann ihn eine unbegrenzte Anzahl von Personen gleichzeitig scannen, ohne dass es zu Engpässen kommt."
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "WhatsApp-QR-Code für den Kundensupport",
+    "seoDesc": "Bieten Sie sofortigen Kundenservice. Generieren Sie einen WhatsApp-QR-Code, der einen direkten Chat mit Ihrem Support-Team öffnet, komplett mit einer vorausgefüllten Nachricht.",
+    "infoGain": "Support-Strategie: Füllen Sie die WhatsApp-Nachricht mit kontextbezogenem Text wie „Hallo, ich brauche Hilfe bei meiner letzten Bestellung“ aus. Dies beseitigt Reibungsverluste und gibt dem Kunden das Gefühl, sofort betreut zu werden.",
+    "faqs": [
+      {
+        "q": "Muss der Kunde meine Nummer zuerst speichern?",
+        "a": "Nein, das ist die Magie des WhatsApp QR-Codes! Es nutzt die WhatsApp-Funktion „Click to Chat“. Durch das Scannen des Codes wird sofort ein Chatfenster mit Ihrer Geschäftsnummer geöffnet, ohne dass der Kunde diese in seinem Adressbuch speichern muss."
+      },
+      {
+        "q": "Kann ich dies für WhatsApp Business verwenden?",
+        "a": "Ja, das funktioniert perfekt sowohl für Standard-WhatsApp- als auch für WhatsApp Business-Konten. Die zugrunde liegende Deep-Link-Struktur (wa.me) ist für beide Plattformen identisch."
+      },
+      {
+        "q": "Was passiert, wenn sie es auf einem Desktop-Computer scannen?",
+        "a": "Wenn es auf einem Desktop gescannt oder über einen Link angeklickt wird, wird der Benutzer aufgefordert, WhatsApp Web oder die WhatsApp Desktop-Anwendung zu öffnen, um die Konversation nahtlos fortzusetzen."
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "PayPal-QR-Code für gemeinnützige Organisationen und Spenden",
+    "seoDesc": "Machen Sie das Sammeln von Spenden reibungslos. Generieren Sie einen PayPal-QR-Code, um Sofortspenden bei Wohltätigkeitsveranstaltungen, Gottesdiensten oder Gemeindeversammlungen anzunehmen.",
+    "infoGain": "Fundraising-Tipp: Kombinieren Sie den QR-Code mit einem klaren Call-to-Action (CTA) wie „Scannen, um 5 $ zu spenden“. Die Festlegung eines konkreten, kleinen Betrags verringert die Entscheidungsermüdung und erhöht die Spendenumwandlungsrate deutlich.",
+    "faqs": [
+      {
+        "q": "Gibt es versteckte Gebühren für die Annahme von Spenden auf diese Weise?",
+        "a": "CreateMy-QR ist 100 % kostenlos und erfordert keine Provision. Es fallen jedoch weiterhin die standardmäßigen PayPal-Transaktionsgebühren für den Empfang von Geld an, abhängig von Ihrem spezifischen PayPal-Kontotyp."
+      },
+      {
+        "q": "Können Spender ihren Spendenbetrag selbst wählen?",
+        "a": "Ja, wenn Sie beim Generieren des QR-Codes das Feld „Betrag“ leer lassen, wird der Spender aufgefordert, seinen gewünschten Spendenbetrag manuell in der PayPal-App einzugeben."
+      },
+      {
+        "q": "Ist dies sicher für die Abwicklung von Finanztransaktionen?",
+        "a": "Ja. Unser Tool generiert ausschließlich eine standardmäßige PayPal-URL „Jetzt kaufen“. Die eigentliche Finanztransaktion findet vollständig in der hochsicheren, verschlüsselten Umgebung von PayPal statt. Wir berühren oder sehen die Zahlungsdaten niemals."
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "E-Mail-QR-Code für Newsletter-Anmeldungen",
+    "seoDesc": "Erweitern Sie Ihre E-Mail-Liste von physischen Standorten aus. Generieren Sie einen E-Mail-QR-Code, der eine Abonnementanfrage für Ihre Mailingliste vorab ausfüllt.",
+    "infoGain": "Wachstums-Hack: Platzieren Sie diesen QR-Code auf der Rückseite Ihrer Visitenkarten oder an der Kasse Ihres Einzelhandels. Schaffen Sie Anreize für Scans, indem Sie als Gegenleistung für Ihr Abonnement einen Rabattcode von 10 % anbieten.",
+    "faqs": [
+      {
+        "q": "Wie funktioniert ein E-Mail-QR-Code?",
+        "a": "Beim Scannen löst es ein „mailto:“-Protokoll auf dem Telefon des Benutzers aus, das automatisch seine Standard-E-Mail-App (wie Apple Mail oder Gmail) öffnet und eine neue E-Mail mit Ihrer vordefinierten E-Mail-Adresse, dem Betreff und dem Textkörper erstellt."
+      },
+      {
+        "q": "Wird die E-Mail automatisch versendet?",
+        "a": "Nein, aus Sicherheitsgründen verlangen mobile Betriebssysteme, dass der Benutzer nach dem Öffnen des E-Mail-Entwurfs manuell auf die Schaltfläche „Senden“ klickt. Dies gibt ihnen die Möglichkeit, die Nachricht zu überprüfen."
+      },
+      {
+        "q": "Kann ich andere Adressen im QR-Code mit CC oder BCC versehen?",
+        "a": "Während das Kernprotokoll „mailto“ CC und BCC unterstützt, konzentrieren wir uns derzeit auf das primäre Empfängerfeld, um maximale Kompatibilität mit älteren E-Mail-Clients und bestimmten Android-Geräten sicherzustellen."
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "App Store-QR-Code für Handyspiel-Downloads",
+    "seoDesc": "Fördern Sie App-Installationen direkt aus der Außenwerbung. Erstellen Sie einen QR-Code, der direkt auf Ihr Spiel im iOS App Store oder bei Google Play verweist.",
+    "infoGain": "Tipp zur Benutzerakquise: Wenn Sie auf einer Tagung oder auf einer Werbetafel für ein Handyspiel werben, überbrückt ein App Store-QR-Code die Lücke zwischen physischem und digitalem Spiel und erfasst spontane Downloads, bevor der Benutzer den Namen des Spiels vergisst.",
+    "faqs": [
+      {
+        "q": "Kann ein QR-Code sowohl zu iOS- als auch zu Android-Stores weitergeleitet werden?",
+        "a": "Um dies richtig zu machen, benötigen Sie einen dynamischen Routing-Link (wie einen Firebase Dynamic Link oder ein benutzerdefiniertes Umleitungsskript auf Ihrem Server), der das Betriebssystem des Benutzers erkennt. Anschließend können Sie über diesen dynamischen Link hier einen Standard-URL-QR-Code generieren."
+      },
+      {
+        "q": "Warum einen App Store-spezifischen QR-Code anstelle eines URL-Codes verwenden?",
+        "a": "Ein App Store-QR-Code löst häufig aus, dass die native App Store- oder Google Play-App direkt auf dem Gerät des Benutzers geöffnet wird und der Webbrowser umgangen wird. Dies führt zu einem viel reibungsloseren Installationserlebnis mit höherer Konvertierung."
+      },
+      {
+        "q": "Werden dadurch meine App-Installationsmetriken erfasst?",
+        "a": "Der QR-Code selbst erfasst keine Metriken. Wenn Sie jedoch einen Attributionslink (von AppsFlyer, Adjust usw.) als Ziel-URL verwenden, verfolgen diese Dienste die Installationsdaten nahtlos."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "YouTube-Video-QR-Code für Produkthandbücher",
+    "seoDesc": "Ersetzen Sie verwirrende Papierhandbücher durch Video-Tutorials. Erstellen Sie einen YouTube-QR-Code, um sofort visuelle Anweisungen für Ihre Produkte bereitzustellen.",
+    "infoGain": "Tipp für den Kundenerfolg: Das Drucken eines Video-Tutorial-QR-Codes direkt auf die Verpackung oder Maschine Ihres Produkts hilft Kunden bei der visuellen Fehlerbehebung, wodurch kostspielige Kundensupport-Tickets und Retouren drastisch reduziert werden können.",
+    "faqs": [
+      {
+        "q": "Wird das YouTube-Video beim Scannen automatisch abgespielt?",
+        "a": "Wenn der Nutzer den Code scannt, öffnet sein Gerät normalerweise die native YouTube-App und lädt das Video sofort. Abhängig von den Geräteeinstellungen kann es sein, dass die automatische Wiedergabe beginnt."
+      },
+      {
+        "q": "Kann ich im Video auf einen bestimmten Zeitstempel verlinken?",
+        "a": "Ja! Wenn Sie Ihren YouTube-Link kopieren, fügen Sie einfach den Zeitparameter (z. B. ?t=1m30s) hinzu, bevor Sie ihn in den Generator einfügen. Der QR-Code startet dann genau in diesem Moment das Video."
+      },
+      {
+        "q": "Was passiert, wenn das YouTube-Video nicht gelistet ist?",
+        "a": "Nicht gelistete YouTube-Videos funktionieren perfekt mit QR-Codes. Das Video wird nicht in den öffentlichen Suchergebnissen angezeigt, aber jeder, der den physischen QR-Code scannt, kann das Anleitungsvideo problemlos ansehen."
+      }
+    ]
+  }
+]

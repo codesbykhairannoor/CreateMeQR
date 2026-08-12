@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "PDF QR-kod för restaurangmenyer",
+    "seoDesc": "Ersätt pappersmenyer med en kontaktlös digital upplevelse. Skapa en gratis, säker PDF QR-kod för din restaurangmeny direkt.",
+    "infoGain": "Proffstips för restauranger: Använd en hög felkorrigeringsnivå (nivå H) när du skriver ut dina QR-koder på bordstält eller glasunderlägg. Detta säkerställer att QR-koden förblir skanningsbar av kunder även om den blir något skadad, blöt eller smutsig av matspill.",
+    "faqs": [
+      {
+        "q": "Upphör PDF QR-koder för menyer?",
+        "a": "Nej, vårt system genererar statiska PDF QR-koder som aldrig upphör att gälla. Men om du använder en statisk QR-kod kan du inte ändra den underliggande PDF-filen senare. Om din meny ändras ofta, överväg att vara värd för PDF-filen på din webbplats och använd vår URL QR-kodgenerator istället."
+      },
+      {
+        "q": "Hur kan jag uppdatera min restaurangmeny utan att skriva ut QR-koderna igen?",
+        "a": "För att uppdatera en meny utan att trycka om bordstält bör du skapa en URL QR-kod som länkar till en menysida på din restaurangs webbplats (t.ex. din-restaurant.com/menu.pdf). Närhelst din meny ändras laddar du helt enkelt upp den nya PDF-filen till din webbplats, och den befintliga QR-koden kommer att fortsätta att fungera perfekt."
+      },
+      {
+        "q": "Är PDF QR-koder säkra för mina kunder att skanna?",
+        "a": "Ja! Eftersom CreateMy-QR fungerar 100 % lokalt på din enhet, spårar vi inte dina kunder eller injicerar tredjepartsannonser i skanningsupplevelsen. När kunder skannar din kod dirigeras de direkt till din meny på ett säkert sätt."
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "WiFi QR-kod för kaféer och hotell",
+    "seoDesc": "Låt dina gäster ansluta till ditt WiFi-nätverk direkt utan att skriva lösenord. Generera en gratis WiFi QR-kod för ditt café eller hotell.",
+    "infoGain": "Hotelltips: Skriv ut din WiFi QR-kod och placera den i en vacker ram i receptionen eller på enskilda kafébord. Gästerna uppskattar den friktionsfria upplevelsen av att ansluta sig till nätverket direkt utan att fråga personalen om lösenordet.",
+    "faqs": [
+      {
+        "q": "Syns WiFi-lösenordet när någon skannar QR-koden?",
+        "a": "När gästerna skannar QR-koden med sin inhemska smartphonekamera (iOS eller Android), kommer deras enhet automatiskt att be om att få gå med i nätverket utan att avslöja lösenordet i vanlig text. Men specialiserade QR-skannerappar kan visa råtextdata."
+      },
+      {
+        "q": "Kan jag dölja mitt WiFi-nätverk (Hidden SSID) och fortfarande använda en QR-kod?",
+        "a": "Ja! När du skapar din WiFi QR-kod, markera helt enkelt alternativet \"Hidden Network\". Detta säkerställer att gästerna kan ansluta sömlöst även om din router är konfigurerad att inte sända sitt SSID."
+      },
+      {
+        "q": "Fungerar en WiFi QR-kod för både iPhone och Android?",
+        "a": "Absolut. WiFi QR-kodstandard (WPA/WPA2/WEP) är allmänt erkänd av både Apple iOS och Android operativsystem. Användare pekar helt enkelt sin standardkameraapp mot koden för att ansluta."
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "Google Granska QR-kod för lokala företag",
+    "seoDesc": "Skjut upp din lokala SEO genom att göra det enkelt för kunder att lämna ett 5-stjärnigt betyg. Skapa en gratis QR-kod för Google Review.",
+    "infoGain": "Marknadsföringstips: Den bästa tiden att be om en recension är på toppen av kundnöjdheten. Lägg till den här QR-koden på dina kvitton, utgångsdörrar eller låt personalen presentera den på en surfplatta direkt efter att ha tillhandahållit utmärkt service.",
+    "faqs": [
+      {
+        "q": "Hur hittar jag min recensionslänk för Google My Business?",
+        "a": "Logga in på din Googles företagsprofils instrumentpanel, leta efter knappen \"Få fler recensioner\" eller \"Be om recensioner\" på fliken Hem och kopiera den korta webbadressen som anges där. Klistra in webbadressen direkt i vår generator."
+      },
+      {
+        "q": "Kommer denna QR-kod automatiskt att ge mitt företag fem stjärnor?",
+        "a": "Nej, Googles policyer förbjuder att i förväg fylla i stjärnklassificeringen. QR-koden öppnar recensionsdialogrutan direkt på kundens telefon, men de måste manuellt välja stjärnbetyg och skriva sin feedback."
+      },
+      {
+        "q": "Kan jag använda detta för Yelp- eller TripAdvisor-recensioner istället?",
+        "a": "Ja! Även om den här sidan fokuserar på Google Recensioner kan du helt enkelt använda vår vanliga URL QR-kodgenerator och klistra in den direkta recensionslänken för din Yelp-, TripAdvisor- eller Trustpilot-profil."
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "vCard QR-kod för fastighetsmäklare",
+    "seoDesc": "Tappa aldrig en ledning igen. Skapa en digital vCard QR-kod för dina fastighetsvisitkort och öppet hus-broschyrer.",
+    "infoGain": "Nätverkstips: Placera din vCard QR-kod på \"Till salu\"-skyltar och flygblad med öppet hus. Potentiella köpare kan omedelbart spara dina kontaktuppgifter, foto och webbplats till sina telefonkontakter med en enda skanning.",
+    "faqs": [
+      {
+        "q": "Vad händer när en klient skannar vCard QR-koden?",
+        "a": "Genom att skanna vCard QR-koden uppmanas användaren automatiskt att skapa en ny kontaktpost med ditt namn, telefonnummer, e-post och företagsinformation. De trycker bara på \"Spara\"."
+      },
+      {
+        "q": "Kräver en vCard QR-kod en internetanslutning?",
+        "a": "Inga! All din kontaktinformation kodas direkt i pixlarna i själva QR-koden. Dina kunder kan skanna och spara dina uppgifter även om de befinner sig i ett område med noll cellulär mottagning."
+      },
+      {
+        "q": "Kan jag lägga till min professionella headshot till vCard?",
+        "a": "Standard vCard QR-koder stöder inte inbäddade bilder eftersom bilder gör datanyttolasten för stor, vilket resulterar i en QR-kod som är för tät för att lätt kunna skannas. Vi rekommenderar att du håller informationen textbaserad för maximal tillförlitlighet i skanningen."
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "URL QR-kod för evenemangsbiljetter och registrering",
+    "seoDesc": "Öka evenemangsdeltagandet genom att länka fysiska flygblad till din digitala biljettsida. Skapa en snabb, gratis URL QR-kod för evenemangsregistrering.",
+    "infoGain": "Eventplaneringstips: Spåra ditt flygblads prestanda genom att använda en UTM-taggad URL (t.ex. ?utm_source=flyer&utm_campaign=summer_fest) innan du genererar QR-koden. Detta låter dig se exakt hur många biljettförsäljningar som kom från fysiska skanningar.",
+    "faqs": [
+      {
+        "q": "Kan jag ändra biljettlänken efter att ha skrivit ut flygbladen?",
+        "a": "CreateMy-QR genererar statiska QR-koder, vilket innebär att länken är permanent hårdkodad. Om du behöver en föränderlig länk rekommenderar vi att du använder en URL-förkortningstjänst (som Bitly) för att skapa en kort länk och sedan genererar QR-koden för den korta länken."
+      },
+      {
+        "q": "Hur stor ska jag skriva ut QR-koden på min eventaffisch?",
+        "a": "För eventaffischer som ses på avstånd, skala upp QR-koden. En bra tumregel är förhållandet 10:1 – om en person skannar på 10 fots avstånd bör QR-koden vara minst 1 fot (12 tum) bred."
+      },
+      {
+        "q": "Finns det en gräns för hur många personer som kan skanna min QR-kod för evenemanget?",
+        "a": "Det finns absolut inga skanningsgränser! Eftersom QR-koden helt enkelt pekar direkt till din biljettadress utan att passera våra servrar, kan ett obegränsat antal personer skanna den samtidigt utan några flaskhalsar."
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "WhatsApp QR-kod för kundsupport",
+    "seoDesc": "Ge omedelbar kundservice. Generera en WhatsApp QR-kod som öppnar en direkt chatt med ditt supportteam, komplett med ett förifyllt meddelande.",
+    "infoGain": "Supportstrategi: Förfyll WhatsApp-meddelandet med kontextuell text som \"Hej, jag behöver hjälp med min senaste beställning.\" Detta tar bort friktion och gör att kunden känner sig omedelbart bemött.",
+    "faqs": [
+      {
+        "q": "Behöver kunden spara mitt nummer först?",
+        "a": "Nej, det är magin med WhatsApp QR-koden! Den använder WhatsApp-funktionen \"Klicka för att chatta\". Genom att skanna koden öppnas omedelbart ett chattfönster med ditt företagsnummer utan att kunden behöver spara den i sin adressbok."
+      },
+      {
+        "q": "Kan jag använda detta för WhatsApp Business?",
+        "a": "Ja, detta fungerar perfekt för både vanliga WhatsApp- och WhatsApp Business-konton. Den underliggande djuplänksstrukturen (wa.me) är identisk för båda plattformarna."
+      },
+      {
+        "q": "Vad händer om de skannar det på en stationär dator?",
+        "a": "Om den skannas på ett skrivbord eller klickas via en länk, kommer det att uppmana användaren att öppna WhatsApp Web eller WhatsApp Desktop-applikationen för att fortsätta konversationen sömlöst."
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "PayPal QR-kod för ideella organisationer och donationer",
+    "seoDesc": "Gör insamlingen friktionsfri. Generera en PayPal QR-kod för att ta emot omedelbara donationer vid välgörenhetsevenemang, gudstjänster eller samhällssammankomster.",
+    "infoGain": "Insamlingstips: Kombinera QR-koden med en tydlig Call to Action (CTA) som \"Skanna för att donera $5\". Att definiera en specifik, liten mängd minskar beslutströttheten och ökar avsevärt konverteringsfrekvensen för donationer.",
+    "faqs": [
+      {
+        "q": "Finns det några dolda avgifter för att ta emot donationer på detta sätt?",
+        "a": "CreateMy-QR är 100 % gratis och tar noll i provision. Standardtransaktionsavgifter för PayPal för att ta emot pengar kommer dock fortfarande att gälla enligt din specifika PayPal-kontotyp."
+      },
+      {
+        "q": "Kan donatorer välja sitt eget donationsbelopp?",
+        "a": "Ja, om du lämnar \"Belopp\"-fältet tomt när du genererar QR-koden, kommer givaren att uppmanas att manuellt ange sitt önskade donationsbelopp i PayPal-appen."
+      },
+      {
+        "q": "Är detta säkert för hantering av finansiella transaktioner?",
+        "a": "Ja. Vårt verktyg genererar strikt en standard PayPal \"Köp nu\" URL. Den faktiska finansiella transaktionen sker helt och hållet inom PayPals mycket säkra, krypterade miljö. Vi rör eller ser aldrig betalningsdata."
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "E-posta QR-kod för nyhetsbrevsregistreringar",
+    "seoDesc": "Utöka din e-postlista från fysiska platser. Generera en QR-kod via e-post som förfyller en prenumerationsförfrågan till din e-postlista.",
+    "infoGain": "Growth Hack: Placera den här QR-koden på baksidan av dina visitkort eller vid din kassadisk. Uppmuntra skanningar genom att erbjuda en rabattkod på 10 % i utbyte mot att prenumerera.",
+    "faqs": [
+      {
+        "q": "Hur fungerar en QR-kod via e-post?",
+        "a": "När den skannas utlöser den ett 'mailto:'-protokoll på användarens telefon, som automatiskt öppnar deras standardapp för e-post (som Apple Mail eller Gmail) och skapar ett nytt e-postmeddelande med din fördefinierade e-postadress, ämne och brödtext."
+      },
+      {
+        "q": "Kommer e-postmeddelandet att skickas automatiskt?",
+        "a": "Nej, som en säkerhetsåtgärd kräver mobila operativsystem att användaren manuellt trycker på \"Skicka\"-knappen efter att e-postutkastet har öppnats. Detta ger dem en chans att granska meddelandet."
+      },
+      {
+        "q": "Kan jag CC eller BCC andra adresser i QR-koden?",
+        "a": "Medan det centrala \"mailto\"-protokollet stöder CC och BCC, fokuserar vi för närvarande på det primära mottagarfältet för att säkerställa maximal kompatibilitet mellan äldre e-postklienter och specifika Android-enheter."
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "App Store QR-kod för nedladdning av mobilspel",
+    "seoDesc": "Få appinstallationer direkt från reklam utanför hemmet. Skapa en QR-kod som länkar direkt till ditt spel på iOS App Store eller Google Play.",
+    "infoGain": "Tips för användarförvärv: Om du gör reklam för ett mobilspel på en kongress eller på en skylt, överbryggar en QR-kod från App Store det fysiska-till-digitala gapet och fångar impulsnedladdningar innan användaren glömmer spelets namn.",
+    "faqs": [
+      {
+        "q": "Kan en QR-kod dirigera till både iOS- och Android-butiker?",
+        "a": "För att göra detta korrekt behöver du en dynamisk routinglänk (som en Firebase Dynamic Link eller ett anpassat omdirigeringsskript på din server) som upptäcker användarens operativsystem. Du kan sedan ta den dynamiska länken och generera en standard URL QR-kod här."
+      },
+      {
+        "q": "Varför använda en App Store-specifik QR-kod istället för en URL-kod?",
+        "a": "En QR-kod från App Store utlöser ofta den inbyggda App Store eller Google Play-appen att öppnas direkt på användarens enhet och går förbi webbläsaren. Detta resulterar i en mycket smidigare installationsupplevelse med högre konvertering."
+      },
+      {
+        "q": "Kommer detta att spåra mina appinstallationsstatistik?",
+        "a": "QR-koden i sig spårar inte mätvärden. Men om du använder en attributionslänk (från AppsFlyer, Adjust, etc.) som måladress, kommer dessa tjänster att spåra installationsdata sömlöst."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "YouTube Video QR-kod för produktmanualer",
+    "seoDesc": "Ersätt förvirrande pappersmanualer med videohandledningar. Skapa en YouTube QR-kod för att ge omedelbara visuella instruktioner för dina produkter.",
+    "infoGain": "Kundtips: Att skriva ut en QR-kod för videoinstruktioner direkt på din produkts förpackning eller maskiner hjälper kunderna att felsöka visuellt, vilket drastiskt kan minska kostsamma kundsupportbiljetter och returer.",
+    "faqs": [
+      {
+        "q": "Spelas YouTube-videon upp automatiskt när den skannas?",
+        "a": "När användaren skannar koden kommer deras enhet vanligtvis att öppna den inbyggda YouTube-appen och ladda videon direkt. Beroende på deras enhetsinställningar kan den börja spelas upp automatiskt."
+      },
+      {
+        "q": "Kan jag länka till en specifik tidsstämpel i videon?",
+        "a": "Ja! När du kopierar din YouTube-länk lägger du bara till tidsparametern (t.ex. ?t=1m30s) innan du klistrar in den i generatorn. QR-koden kommer sedan att starta videon med start exakt i det ögonblicket."
+      },
+      {
+        "q": "Vad händer om YouTube-videon är olistad?",
+        "a": "Olistade YouTube-videor fungerar perfekt med QR-koder. Videon kommer inte att visas i offentliga sökresultat, men alla som skannar den fysiska QR-koden kommer att kunna se instruktionsvideon utan problem."
+      }
+    ]
+  }
+]

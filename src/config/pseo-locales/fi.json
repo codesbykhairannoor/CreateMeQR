@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "PDF QR-koodi ravintolamenuille",
+    "seoDesc": "Korvaa paperivalikot kontaktittomalla digitaalisella kokemuksella. Luo ilmainen, turvallinen PDF QR-koodi ravintolan ruokalistallesi välittömästi.",
+    "infoGain": "Ammattilaisen vinkki ravintoloihin: Käytä korkeaa virheenkorjaustasoa (taso H), kun tulostat QR-koodeja pöytätelttoihin tai lasialustaan. Tämä varmistaa, että QR-koodi pysyy asiakkaiden luettavissa, vaikka se olisi hieman vaurioitunut, kastunut tai likaantunut ruoan roiskumisesta.",
+    "faqs": [
+      {
+        "q": "Vanhenevatko valikoiden PDF QR-koodit?",
+        "a": "Ei, järjestelmämme luo staattisia PDF QR-koodeja, jotka eivät koskaan vanhene. Jos kuitenkin käytät staattista QR-koodia, et voi muuttaa taustalla olevaa PDF-tiedostoa myöhemmin. Jos ruokalistasi muuttuu usein, harkitse PDF-tiedoston isännöimistä verkkosivustollasi ja käytä sen sijaan URL QR Code -generaattoriamme."
+      },
+      {
+        "q": "Kuinka voin päivittää ravintolan ruokalistani tulostamatta uudelleen QR-koodeja?",
+        "a": "Jos haluat päivittää ruokalistan ilman pöytätelttojen uudelleentulostamista, sinun tulee luoda URL-QR-koodi, joka linkittää ravintolasi verkkosivuston ruokalistasivulle (esim. your-restaurant.com/menu.pdf). Aina kun valikko muuttuu, lataat vain uuden PDF-tiedoston verkkosivustollesi, ja nykyinen QR-koodi toimii edelleen täydellisesti."
+      },
+      {
+        "q": "Ovatko PDF QR-koodit turvallista asiakkaideni skannata?",
+        "a": "Kyllä! Koska CreateMy-QR toimii 100-prosenttisesti paikallisesti laitteellasi, emme seuraa asiakkaitasi tai lisää kolmannen osapuolen mainoksia skannauskokemukseen. Kun asiakkaat skannaavat koodisi, heidät ohjataan suoraan ruokalistallesi turvallisesti."
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "WiFi QR-koodi kahviloita ja hotelleja varten",
+    "seoDesc": "Anna vieraidesi muodostaa yhteys WiFi-verkkoosi välittömästi ilman salasanoja. Luo ilmainen WiFi QR-koodi kahvilallesi tai hotellillesi.",
+    "infoGain": "Vieraanvaraisuusvinkki: Tulosta WiFi QR-koodisi ja aseta se kauniiseen kehykseen vastaanottotiskillä tai yksittäisille kahvilan pöydille. Vieraat arvostavat kitkatonta kokemusta verkkoon liittymisestä välittömästi kysymättä henkilökunnalta salasanaa.",
+    "faqs": [
+      {
+        "q": "Näkyykö WiFi-salasana, kun joku skannaa QR-koodin?",
+        "a": "Kun vieraat skannaavat QR-koodin älypuhelimen alkuperäisellä kameralla (iOS tai Android), heidän laitteensa pyytää automaattisesti lupaa liittyä verkkoon paljastamatta salasanaa pelkkänä tekstinä. Erikoistuneet QR-skannerisovellukset voivat kuitenkin näyttää raakatekstidataa."
+      },
+      {
+        "q": "Voinko piilottaa WiFi-verkkoni (piilotettu SSID) ja silti käyttää QR-koodia?",
+        "a": "Kyllä! Kun luot WiFi QR-koodia, valitse \"Piilotettu verkko\" -vaihtoehto. Tämä varmistaa, että vieraat voivat muodostaa yhteyden saumattomasti, vaikka reitittimesi on määritetty olemaan lähettämättä SSID:ään."
+      },
+      {
+        "q": "Toimiiko WiFi QR-koodi sekä iPhonessa että Androidissa?",
+        "a": "Täysin. WiFi QR-koodistandardi (WPA/WPA2/WEP) on yleisesti tunnustettu sekä Applen iOS- että Android-käyttöjärjestelmissä. Käyttäjät yksinkertaisesti osoittavat oletuskamerasovelluksensa koodiin muodostaakseen yhteyden."
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "Google Review QR Code paikallisille yrityksille",
+    "seoDesc": "Nosta paikallista hakukoneoptimointiasi räjähdysmäisesti tekemällä asiakkaiden 5 tähden luokituksen jättämisestä vaivatonta. Luo ilmainen Google Review QR-koodi.",
+    "infoGain": "Markkinointivinkki: Paras aika pyytää arvostelua on asiakastyytyväisyyden huipulla. Lisää tämä QR-koodi kuitteihisi, uloskäyntioviin tai pyydä henkilökuntaa esittämään se tabletilla heti erinomaisen palvelun jälkeen.",
+    "faqs": [
+      {
+        "q": "Miten löydän Google My Business -arvostelulinkin?",
+        "a": "Kirjaudu Google-yritysprofiilisi hallintapaneeliin, etsi Etusivu-välilehdeltä Hanki lisää arvosteluja- tai Pyydä arvosteluja -painike ja kopioi siellä oleva lyhyt URL-osoite. Liitä URL-osoite suoraan generaattoriimme."
+      },
+      {
+        "q": "Antaako tämä QR-koodi yritykselleni automaattisesti 5 tähteä?",
+        "a": "Ei, Googlen käytännöt kieltävät tähtiluokituksen esitäytön. QR-koodi avaa arvosteluikkunan suoraan asiakkaan puhelimeen, mutta hänen on valittava manuaalisesti tähtiluokitus ja kirjoitettava palaute."
+      },
+      {
+        "q": "Voinko käyttää tätä Yelp- tai TripAdvisor-arvosteluihin sen sijaan?",
+        "a": "Kyllä! Vaikka tämä sivu keskittyy Google-arvosteluihin, voit käyttää tavallista URL-osoitteen QR-koodigeneraattoriamme ja liittää suoran arvostelulinkin Yelp-, TripAdvisor- tai Trustpilot-profiiliisi."
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "vCard QR-koodi kiinteistönvälittäjille",
+    "seoDesc": "Älä koskaan menetä johtoa enää. Luo digitaalinen vCard QR-koodi kiinteistöjen käyntikorteillesi ja avoimien ovien esitteillesi.",
+    "infoGain": "Verkkovinkki: Aseta vCard QR-koodi Myytävänä-kyltteihin ja avoimien ovien lehtisiin. Potentiaaliset ostajat voivat tallentaa yhteystietosi, valokuvasi ja verkkosivustosi välittömästi puhelimen yhteystietoihin yhdellä skannauksella.",
+    "faqs": [
+      {
+        "q": "Mitä tapahtuu, kun asiakas skannaa vCard QR-koodin?",
+        "a": "VCard QR-koodin skannaus kehottaa käyttäjää automaattisesti luomaan uuden yhteystietomerkinnän, johon on esitäytetty nimesi, puhelinnumerosi, sähköpostiosoitteesi ja yritystietosi. He vain napauttavat \"Tallenna\"."
+      },
+      {
+        "q": "Vaatiiko vCard QR-koodi Internet-yhteyden?",
+        "a": "Ei! Kaikki yhteystietosi on koodattu suoraan itse QR-koodin pikseleihin. Asiakkaasi voivat skannata ja tallentaa tietosi, vaikka he olisivat alueella, jossa matkapuhelinverkon vastaanottoa ei ole."
+      },
+      {
+        "q": "Voinko lisätä ammattikuvani vCardiin?",
+        "a": "Vakiomuotoiset vCard QR-koodit eivät tue upotettuja kuvia, koska kuvat tekevät datasta liian suuren, mikä johtaa QR-koodiin, joka on liian tiheä skannattavaksi. Suosittelemme pitämään tiedot tekstipohjaisina parhaan mahdollisen skannausvarmuuden takaamiseksi."
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "URL QR-koodi tapahtumalippuja ja ilmoittautumista varten",
+    "seoDesc": "Lisää tapahtumaan osallistumista linkittämällä fyysiset lentolehtiset digitaaliselle lippusivullesi. Luo nopea, ilmainen URL-QR-koodi tapahtuman rekisteröintiä varten.",
+    "infoGain": "Tapahtumasuunnitteluvinkki: Seuraa lentolehtesi tehokkuutta käyttämällä UTM-tagattua URL-osoitetta (esim. ?utm_source=flyer&utm_campaign=summer_fest) ennen QR-koodin luomista. Näin näet tarkalleen, kuinka monta lippumyyntiä tuli fyysisistä skannauksista.",
+    "faqs": [
+      {
+        "q": "Voinko vaihtaa lippulinkkiä lentolehtisten tulostamisen jälkeen?",
+        "a": "CreateMy-QR luo staattisia QR-koodeja, mikä tarkoittaa, että linkki on pysyvästi koodattu. Jos tarvitset vaihdettavan linkin, suosittelemme käyttämään URL-lyhennyspalvelua (kuten Bitlyä) lyhyen linkin luomiseen ja luomaan sitten QR-koodin kyseiselle lyhyelle linkille."
+      },
+      {
+        "q": "Kuinka suureksi minun tulee tulostaa QR-koodi tapahtumajulisteeseeni?",
+        "a": "Suurenna QR-koodia kaukaa katsottavien tapahtumajulisteiden kohdalla. Hyvä peukalosääntö on 10:1-suhde – jos henkilö skannaa 10 metrin etäisyydeltä, QR-koodin tulee olla vähintään 12 tuumaa leveä."
+      },
+      {
+        "q": "Onko rajoitettu kuinka monta henkilöä voi skannata tapahtumani QR-koodin?",
+        "a": "Skannausrajoituksia ei ole lainkaan! Koska QR-koodi yksinkertaisesti osoittaa suoraan lippusi URL-osoitteeseen kulkematta palvelimiemme läpi, rajaton määrä ihmisiä voi skannata sen samanaikaisesti ilman pullonkauloja."
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "WhatsApp QR-koodi asiakastuelle",
+    "seoDesc": "Tarjoa välitöntä asiakaspalvelua. Luo WhatsApp QR-koodi, joka avaa suoran chatin tukitiimisi kanssa ja esitäytetyn viestin.",
+    "infoGain": "Tukistrategia: Esitäytä WhatsApp-viesti kontekstuaalisella tekstillä, kuten \"Hei, tarvitsen apua äskettäisessä tilauksessani.\" Tämä poistaa kitkan ja saa asiakkaan tuntemaan olonsa välittömäksi.",
+    "faqs": [
+      {
+        "q": "Pitääkö asiakkaan tallentaa numeroni ensin?",
+        "a": "Ei, se on WhatsApp QR-koodin taika! Se käyttää WhatsAppin \"Click to Chat\" -ominaisuutta. Koodin skannaus avaa välittömästi chat-ikkunan yrityksesi numerolla ilman, että asiakkaan tarvitsee tallentaa sitä osoitekirjaansa."
+      },
+      {
+        "q": "Voinko käyttää tätä WhatsApp Businessissa?",
+        "a": "Kyllä, tämä toimii täydellisesti sekä tavallisilla WhatsApp- että WhatsApp Business -tileillä. Taustalla oleva syvälinkkirakenne (wa.me) on identtinen molemmilla alustoilla."
+      },
+      {
+        "q": "Mitä tapahtuu, jos he skannaavat sen pöytätietokoneella?",
+        "a": "Jos se skannataan työpöydällä tai klikataan linkin kautta, se kehottaa käyttäjää avaamaan WhatsApp Web- tai WhatsApp Desktop -sovelluksen jatkaaksesi keskustelua saumattomasti."
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "PayPal QR-koodi voittoa tavoitteleville ja lahjoituksille",
+    "seoDesc": "Tee varainhankinnasta kitkaton. Luo PayPal QR-koodi hyväksyäksesi välittömiä lahjoituksia hyväntekeväisyystapahtumissa, jumalanpalveluksissa tai yhteisötapaamisissa.",
+    "infoGain": "Varainhankintavinkki: Yhdistä QR-koodi selkeään toimintakehotukseen (CTA), kuten \"Scan to Donate $5\". Tietyn, pienen määrän määrittäminen vähentää päätöksentekoväsymystä ja lisää merkittävästi luovutusten muuntoprosentteja.",
+    "faqs": [
+      {
+        "q": "Onko lahjoitusten vastaanottamisesta tällä tavalla piilomaksuja?",
+        "a": "CreateMy-QR on 100% ilmainen, eikä siitä veloiteta palkkiota. Tavallisia PayPal-tapahtumamaksuja rahojen vastaanottamisesta sovelletaan kuitenkin edelleen tietyn PayPal-tilisi tyypin mukaan."
+      },
+      {
+        "q": "Voivatko lahjoittajat valita itse lahjoitussummansa?",
+        "a": "Kyllä, jos jätät Summa-kentän tyhjäksi luodessasi QR-koodia, lahjoittajaa pyydetään syöttämään haluamansa lahjoitussumma manuaalisesti PayPal-sovelluksessa."
+      },
+      {
+        "q": "Onko tämä turvallista rahoitustapahtumien käsittelyssä?",
+        "a": "Kyllä. Työkalumme luo tiukasti tavallisen PayPalin \"Osta nyt\" -URL-osoitteen. Varsinainen rahoitustapahtuma tapahtuu kokonaan PayPalin erittäin turvallisessa, salatussa ympäristössä. Emme koskaan koske tai näe maksutietoja."
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "Sähköposti QR-koodi uutiskirjeen tilaamista varten",
+    "seoDesc": "Kasvata sähköpostilistaasi fyysisistä paikoista. Luo sähköpostin QR-koodi, joka esitäyttää postituslistallesi liittymispyynnön.",
+    "infoGain": "Growth Hack: Aseta tämä QR-koodi käyntikorttiesi taakse tai vähittäiskaupan kassalle. Kannusta skannauksia tarjoamalla 10 %:n alennuskoodi vastineeksi tilauksesta.",
+    "faqs": [
+      {
+        "q": "Kuinka sähköpostin QR-koodi toimii?",
+        "a": "Kun se skannataan, se laukaisee käyttäjän puhelimessa \"mailto:\"-protokollan, joka avaa automaattisesti hänen oletussähköpostisovelluksensa (kuten Apple Mail tai Gmail) ja laatii uuden sähköpostin, jossa on ennalta määritetty sähköpostiosoitteesi, aihe ja leipäteksti."
+      },
+      {
+        "q": "Lähetetäänkö sähköposti automaattisesti?",
+        "a": "Ei. Mobiilikäyttöjärjestelmät vaativat turvatoimenpiteenä, että käyttäjä painaa manuaalisesti Lähetä-painiketta sähköpostiluonnoksen avaamisen jälkeen. Tämä antaa heille mahdollisuuden tarkastella viestiä."
+      },
+      {
+        "q": "Voinko kopioida QR-koodiin muita osoitteita?",
+        "a": "Vaikka mailto-protokolla tukee CC- ja BCC-protokollaa, keskitymme tällä hetkellä ensisijaiseen vastaanottajakenttään varmistaaksemme parhaan mahdollisen yhteensopivuuden vanhempien sähköpostiohjelmien ja tiettyjen Android-laitteiden välillä."
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "App Storen QR-koodi mobiilipelien lataamiseen",
+    "seoDesc": "Lisää sovellusasennuksia suoraan kodin ulkopuolelta tulevasta mainonnasta. Luo QR-koodi, joka linkittää suoraan peliisi iOS App Storessa tai Google Playssa.",
+    "infoGain": "Käyttäjähankintavinkki: Jos mainostat mobiilipeliä vuosikongressissa tai mainostaululla, App Storen QR-koodi kaataa fyysisen ja digitaalisen kuilun ja vangitsee impulssilataukset ennen kuin käyttäjä unohtaa pelin nimen.",
+    "faqs": [
+      {
+        "q": "Voiko yksi QR-koodi reitittää sekä iOS- että Android-kauppoihin?",
+        "a": "Tehdäksesi tämän oikein, tarvitset dynaamisen reitityslinkin (kuten Firebase Dynamic Linkin tai mukautetun uudelleenohjauskomentosarjan palvelimellasi), joka tunnistaa käyttäjän käyttöjärjestelmän. Voit sitten ottaa dynaamisen linkin ja luoda standardin URL-QR-koodin täällä."
+      },
+      {
+        "q": "Miksi käyttää App Store -kohtaista QR-koodia URL-osoitteen sijaan?",
+        "a": "App Storen QR-koodi käynnistää usein alkuperäisen App Store- tai Google Play -sovelluksen avautumaan suoraan käyttäjän laitteelle verkkoselaimen ohittamiseen. Tämä johtaa paljon sujuvampaan ja tehokkaampaan asennuskokemukseen."
+      },
+      {
+        "q": "Seuraako tämä sovellukseni asennustietoja?",
+        "a": "QR-koodi itsessään ei seuraa mittareita. Jos kuitenkin käytät kohde-URL-osoitteena attribuutiolinkkiä (mm. AppsFlyeristä, Adjustista), kyseiset palvelut seuraavat asennustietoja saumattomasti."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "YouTube-videon QR-koodi tuoteoppaita varten",
+    "seoDesc": "Korvaa hämmentävät paperioppaat video-opetusohjelmilla. Luo YouTuben QR-koodi tarjotaksesi välittömiä visuaalisia ohjeita tuotteillesi.",
+    "infoGain": "Asiakkaan menestysvinkki: Opetusvideon QR-koodin tulostaminen suoraan tuotteesi pakkaukseen tai koneeseen auttaa asiakkaita visuaalisessa vianmäärityksessä, mikä voi vähentää huomattavasti kalliita asiakastuen lippuja ja palautuksia.",
+    "faqs": [
+      {
+        "q": "Toistuuko YouTube-video automaattisesti skannattaessa?",
+        "a": "Kun käyttäjä skannaa koodin, hänen laitteensa yleensä avaa alkuperäisen YouTube-sovelluksen ja lataa videon välittömästi. Laitteen asetuksista riippuen se voi alkaa toistaa automaattisesti."
+      },
+      {
+        "q": "Voinko linkittää videossa tiettyyn aikaleimaan?",
+        "a": "Kyllä! Kun kopioit YouTube-linkin, lisää vain aikaparametri (esim. ?t=1m30s) ennen kuin liität sen generaattoriin. QR-koodi käynnistää sitten videon, joka alkaa juuri sillä hetkellä."
+      },
+      {
+        "q": "Entä jos YouTube-video on piilotettu?",
+        "a": "Piilotetut YouTube-videot toimivat täydellisesti QR-koodien kanssa. Video ei näy julkisissa hakutuloksissa, mutta jokainen, joka skannaa fyysisen QR-koodin, voi katsoa ohjevideon ilman ongelmia."
+      }
+    ]
+  }
+]

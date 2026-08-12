@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "PDF QR-code voor restaurantmenu's",
+    "seoDesc": "Vervang papieren menukaarten door een contactloze digitale ervaring. Maak direct een gratis, veilige PDF QR-code voor uw restaurantmenu.",
+    "infoGain": "Pro-tip voor restaurants: Gebruik een hoog foutcorrectieniveau (niveau H) bij het afdrukken van uw QR-codes op tafeltenten of onderzetters. Dit zorgt ervoor dat de QR-code door klanten kan worden gescand, zelfs als deze licht beschadigd, nat of vuil wordt door gemorst voedsel.",
+    "faqs": [
+      {
+        "q": "Verlopen PDF QR-codes voor menu's?",
+        "a": "Nee, ons systeem genereert statische PDF QR-codes die nooit verlopen. Als u echter een statische QR-code gebruikt, kunt u het onderliggende PDF-bestand later niet wijzigen. Als uw menu vaak verandert, overweeg dan om de PDF op uw website te hosten en in plaats daarvan onze URL QR-codegenerator te gebruiken."
+      },
+      {
+        "q": "Hoe kan ik mijn restaurantmenu bijwerken zonder de QR-codes opnieuw af te drukken?",
+        "a": "Als u een menu wilt bijwerken zonder tafeltenten opnieuw af te drukken, moet u een URL QR-code genereren die linkt naar een menupagina op de website van uw restaurant (bijvoorbeeld uw-restaurant.com/menu.pdf). Wanneer uw menu verandert, uploadt u eenvoudig de nieuwe PDF naar uw website en blijft de bestaande QR-code perfect werken."
+      },
+      {
+        "q": "Zijn PDF QR-codes veilig voor mijn klanten om te scannen?",
+        "a": "Ja! Omdat CreateMy-QR 100% lokaal op uw apparaat werkt, volgen we uw klanten niet en voegen we geen advertenties van derden toe aan de scanervaring. Wanneer klanten uw code scannen, worden ze veilig rechtstreeks naar uw menu geleid."
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "WiFi QR-code voor cafés en hotels",
+    "seoDesc": "Laat uw gasten direct verbinding maken met uw WiFi-netwerk zonder wachtwoorden te typen. Genereer een gratis WiFi QR-code voor uw café of hotel.",
+    "infoGain": "Hospitality Tip: Print uw WiFi QR-code en plaats deze in een mooi kader bij de receptie of op individuele cafétafels. Gasten waarderen de probleemloze ervaring om direct verbinding te maken met het netwerk zonder het personeel om het wachtwoord te vragen.",
+    "faqs": [
+      {
+        "q": "Is het wifi-wachtwoord zichtbaar als iemand de QR-code scant?",
+        "a": "Wanneer gasten de QR-code scannen met hun eigen smartphonecamera (iOS of Android), vraagt ​​hun apparaat automatisch om verbinding te maken met het netwerk zonder het wachtwoord in platte tekst te onthullen. Gespecialiseerde QR-scanner-apps kunnen echter de onbewerkte tekstgegevens weergeven."
+      },
+      {
+        "q": "Kan ik mijn WiFi-netwerk (verborgen SSID) verbergen en toch een QR-code gebruiken?",
+        "a": "Ja! Wanneer u uw WiFi QR-code aanmaakt, vinkt u eenvoudigweg de optie 'Verborgen netwerk' aan. Dit zorgt ervoor dat gasten naadloos verbinding kunnen maken, zelfs als uw router zo is geconfigureerd dat hij zijn SSID niet uitzendt."
+      },
+      {
+        "q": "Werkt een WiFi QR-code voor zowel iPhone als Android?",
+        "a": "Absoluut. De WiFi QR-codestandaard (WPA/WPA2/WEP) wordt universeel herkend door zowel Apple iOS- als Android-besturingssystemen. Gebruikers richten eenvoudigweg hun standaardcamera-app op de code om verbinding te maken."
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "Google Review QR-code voor lokale bedrijven",
+    "seoDesc": "Geef uw lokale SEO een boost door het voor klanten moeiteloos te maken om een ​​beoordeling van 5 sterren achter te laten. Maak een gratis QR-code voor Google Review.",
+    "infoGain": "Marketingtip: Het beste moment om een ​​beoordeling te vragen is op het hoogtepunt van de klanttevredenheid. Voeg deze QR-code toe aan uw kassabonnen, ga de deur uit of laat het personeel hem op een tablet presenteren zodra u een uitstekende service heeft verleend.",
+    "faqs": [
+      {
+        "q": "Hoe vind ik mijn Google Mijn Bedrijf-reviewlink?",
+        "a": "Log in op uw Google Bedrijfsprofiel-dashboard, zoek naar de knop 'Meer recensies ontvangen' of 'Vraag om recensies' op het starttabblad en kopieer de korte URL die daar wordt verstrekt. Plak die URL rechtstreeks in onze generator."
+      },
+      {
+        "q": "Geeft deze QR-code mijn bedrijf automatisch 5 sterren?",
+        "a": "Nee, het beleid van Google verbiedt het vooraf invullen van de sterbeoordeling. De QR-code opent het beoordelingsvenster rechtstreeks op de telefoon van de klant, maar hij moet handmatig de sterbeoordeling selecteren en zijn feedback typen."
+      },
+      {
+        "q": "Kan ik dit in plaats daarvan gebruiken voor beoordelingen op Yelp of TripAdvisor?",
+        "a": "Ja! Hoewel deze pagina zich richt op Google Reviews, kunt u eenvoudigweg onze standaard URL QR-codegenerator gebruiken en de directe beoordelingslink voor uw Yelp-, TripAdvisor- of Trustpilot-profiel plakken."
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "vCard QR-code voor makelaars in onroerend goed",
+    "seoDesc": "Verlies nooit meer een voorsprong. Maak een digitale vCard QR-code voor uw vastgoedvisitekaartjes en openhuisbrochures.",
+    "infoGain": "Netwerktip: Plaats uw vCard QR-code op 'Te koop'-borden en openhuisflyers. Potentiële kopers kunnen uw contactgegevens, foto en website met één enkele scan direct opslaan in hun telefooncontacten.",
+    "faqs": [
+      {
+        "q": "Wat gebeurt er als een klant de vCard QR-code scant?",
+        "a": "Door de vCard QR-code te scannen, wordt de telefoon van de gebruiker automatisch gevraagd een nieuw contactitem te maken, vooraf ingevuld met uw naam, telefoonnummer, e-mailadres en bedrijfsgegevens. Ze tikken gewoon op 'Opslaan'."
+      },
+      {
+        "q": "Heeft een vCard QR-code een internetverbinding nodig?",
+        "a": "Nee! Al uw contactgegevens worden rechtstreeks gecodeerd in de pixels van de QR-code zelf. Uw klanten kunnen uw gegevens scannen en opslaan, zelfs als ze zich in een gebied bevinden waar geen mobiele ontvangst is."
+      },
+      {
+        "q": "Kan ik mijn professionele portretfoto aan de vCard toevoegen?",
+        "a": "Standaard vCard QR-codes ondersteunen geen ingebedde afbeeldingen omdat afbeeldingen de datalading te groot maken, wat resulteert in een QR-code die te compact is om gemakkelijk te scannen. Voor maximale scanbetrouwbaarheid raden wij u aan de gegevens tekstgebaseerd te houden."
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "URL QR-code voor evenementtickets en registratie",
+    "seoDesc": "Verhoog de bezoekersaantallen bij evenementen door fysieke flyers aan uw digitale ticketpagina te koppelen. Genereer een snelle, gratis URL-QR-code voor evenementregistratie.",
+    "infoGain": "Tip voor evenementenplanning: houd de prestaties van uw flyer bij door een UTM-getagde URL te gebruiken (bijvoorbeeld ?utm_source=flyer&utm_campaign=summer_fest) voordat u de QR-code genereert. Hiermee kun je precies zien hoeveel kaartverkoop er uit fysieke scans kwam.",
+    "faqs": [
+      {
+        "q": "Kan ik de ticketlink wijzigen nadat ik de flyers heb afgedrukt?",
+        "a": "CreateMy-QR genereert statische QR-codes, wat betekent dat de link permanent hardgecodeerd is. Als u een veranderlijke link nodig heeft, raden we u aan een URL-verkortingsservice (zoals Bitly) te gebruiken om een ​​korte link te maken en vervolgens de QR-code voor die korte link te genereren."
+      },
+      {
+        "q": "Hoe groot moet ik de QR-code op mijn evenementposter afdrukken?",
+        "a": "Voor evenementenposters die vanaf een afstand worden bekeken, schaalt u de QR-code op. Een goede vuistregel is een verhouding van 10:1: als een persoon vanaf 3 meter afstand scant, moet de QR-code minimaal 1 voet (12 inch) breed zijn."
+      },
+      {
+        "q": "Is er een limiet aan het aantal mensen dat de QR-code van mijn evenement kan scannen?",
+        "a": "Er zijn absoluut geen scanlimieten! Omdat de QR-code eenvoudigweg rechtstreeks naar uw ticketing-URL verwijst zonder langs onze servers te gaan, kan een onbeperkt aantal mensen deze tegelijkertijd scannen zonder dat er knelpunten optreden."
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "WhatsApp QR-code voor klantenondersteuning",
+    "seoDesc": "Bied directe klantenservice. Genereer een WhatsApp QR-code die een directe chat met uw ondersteuningsteam opent, compleet met een vooraf ingevuld bericht.",
+    "infoGain": "Ondersteuningsstrategie: Vul het WhatsApp-bericht vooraf in met contextuele tekst zoals 'Hallo, ik heb hulp nodig bij mijn recente bestelling.' Dit neemt wrijving weg en zorgt ervoor dat de klant zich onmiddellijk geholpen voelt.",
+    "faqs": [
+      {
+        "q": "Moet de klant mijn nummer eerst opslaan?",
+        "a": "Nee, dat is de magie van de WhatsApp QR-code! Het maakt gebruik van de WhatsApp 'Click to Chat'-functie. Als u de code scant, wordt er direct een chatvenster met uw bedrijfsnummer geopend, zonder dat de klant dit in zijn adresboek hoeft op te slaan."
+      },
+      {
+        "q": "Kan ik dit gebruiken voor WhatsApp Business?",
+        "a": "Ja, dit werkt perfect voor zowel standaard WhatsApp- als WhatsApp Business-accounts. De onderliggende deeplinkstructuur (wa.me) is voor beide platforms identiek."
+      },
+      {
+        "q": "Wat gebeurt er als ze het op een desktopcomputer scannen?",
+        "a": "Als het op een desktop wordt gescand of via een link wordt aangeklikt, wordt de gebruiker gevraagd WhatsApp Web of de WhatsApp Desktop-applicatie te openen om het gesprek naadloos voort te zetten."
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "PayPal QR-code voor non-profitorganisaties en donaties",
+    "seoDesc": "Maak fondsenwerving probleemloos. Genereer een PayPal QR-code om directe donaties te accepteren bij liefdadigheidsevenementen, kerkdiensten of gemeenschapsbijeenkomsten.",
+    "infoGain": "Tip voor fondsenwerving: Combineer de QR-code met een duidelijke Call to Action (CTA), zoals 'Scan om $ 5 te doneren'. Het definiëren van een specifiek, klein bedrag vermindert de beslissingsmoeheid en verhoogt de donatieconversie aanzienlijk.",
+    "faqs": [
+      {
+        "q": "Zijn er verborgen kosten voor het accepteren van donaties op deze manier?",
+        "a": "CreateMy-QR is 100% gratis en kost geen commissie. De standaard PayPal-transactiekosten voor het ontvangen van geld zijn echter nog steeds van toepassing, afhankelijk van uw specifieke PayPal-rekeningtype."
+      },
+      {
+        "q": "Kunnen donateurs zelf hun donatiebedrag kiezen?",
+        "a": "Ja, als u het veld 'Bedrag' leeg laat bij het genereren van de QR-code, wordt de donateur gevraagd om handmatig het gewenste donatiebedrag in de PayPal-app in te voeren."
+      },
+      {
+        "q": "Is dit veilig voor het afhandelen van financiële transacties?",
+        "a": "Ja. Onze tool genereert strikt een standaard PayPal 'Koop nu'-URL. De daadwerkelijke financiële transactie vindt volledig plaats binnen de uiterst veilige, gecodeerde omgeving van PayPal. Wij raken of zien de betaalgegevens nooit."
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "E-mail QR-code voor aanmeldingen voor de nieuwsbrief",
+    "seoDesc": "Breid uw e-maillijst uit vanaf fysieke locaties. Genereer een e-mail-QR-code waarmee u vooraf een abonnementsaanvraag voor uw mailinglijst invult.",
+    "infoGain": "Growth Hack: plaats deze QR-code op de achterkant van uw visitekaartjes of bij de kassa van uw winkel. Stimuleer scans door een kortingscode van 10% aan te bieden in ruil voor een abonnement.",
+    "faqs": [
+      {
+        "q": "Hoe werkt een e-mail-QR-code?",
+        "a": "Wanneer het wordt gescand, activeert het een 'mailto:'-protocol op de telefoon van de gebruiker, dat automatisch de standaard e-mailapp (zoals Apple Mail of Gmail) opent en een nieuwe e-mail opstelt met uw vooraf gedefinieerde e-mailadres, onderwerp en hoofdtekst."
+      },
+      {
+        "q": "Wordt de e-mail automatisch verzonden?",
+        "a": "Nee, uit veiligheidsoverwegingen vereisen mobiele besturingssystemen dat de gebruiker handmatig op de knop 'Verzenden' drukt nadat het e-mailconcept is geopend. Dit geeft hen de kans om het bericht te beoordelen."
+      },
+      {
+        "q": "Kan ik andere adressen CC of BCC in de QR-code gebruiken?",
+        "a": "Hoewel het kernprotocol 'mailto' CC en BCC ondersteunt, concentreren we ons momenteel op het veld van de primaire ontvanger om maximale compatibiliteit tussen oudere e-mailclients en specifieke Android-apparaten te garanderen."
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "App Store QR-code voor mobiele gamedownloads",
+    "seoDesc": "Genereer app-installaties rechtstreeks via buitenreclame. Maak een QR-code die rechtstreeks naar uw game linkt in de iOS App Store of Google Play.",
+    "infoGain": "Tip voor gebruikersacquisitie: Als u op een congres of op een reclamebord reclame maakt voor een mobiele game, overbrugt een QR-code in de App Store de kloof tussen fysiek en digitaal, waardoor impulsdownloads worden geregistreerd voordat de gebruiker de naam van de game vergeet.",
+    "faqs": [
+      {
+        "q": "Kan één QR-code naar zowel iOS- als Android-winkels leiden?",
+        "a": "Om dit goed te kunnen doen, heeft u een dynamische routeringslink nodig (zoals een Firebase Dynamic Link of een aangepast omleidingsscript op uw server) die het besturingssysteem van de gebruiker detecteert. U kunt vervolgens die dynamische link gebruiken en hier een standaard URL-QR-code genereren."
+      },
+      {
+        "q": "Waarom een ​​App Store-specifieke QR-code gebruiken in plaats van een URL-code?",
+        "a": "Een App Store QR-code zorgt er vaak voor dat de eigen App Store- of Google Play-app rechtstreeks op het apparaat van de gebruiker wordt geopend, waarbij de webbrowser wordt omzeild. Dit resulteert in een veel soepelere, hoger converterende installatie-ervaring."
+      },
+      {
+        "q": "Worden hiermee mijn app-installatiestatistieken bijgehouden?",
+        "a": "De QR-code zelf houdt geen statistieken bij. Als u echter een attributielink (van AppsFlyer, Adjust, enz.) als bestemmings-URL gebruikt, zullen deze services de installatiegegevens naadloos bijhouden."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "YouTube Video QR-code voor producthandleidingen",
+    "seoDesc": "Vervang verwarrende papieren handleidingen door videotutorials. Maak een YouTube QR-code om direct visuele instructies voor uw producten te geven.",
+    "infoGain": "Klantsuccestip: Door een QR-code met een video-tutorial rechtstreeks op de verpakking of machine van uw product af te drukken, kunnen klanten problemen visueel oplossen, waardoor kostbare klantenondersteuningstickets en retourzendingen drastisch kunnen worden verminderd.",
+    "faqs": [
+      {
+        "q": "Wordt de YouTube-video automatisch afgespeeld wanneer deze wordt gescand?",
+        "a": "Wanneer de gebruiker de code scant, opent zijn apparaat doorgaans de native YouTube-app en wordt de video onmiddellijk geladen. Afhankelijk van de apparaatinstellingen kan het automatisch afspelen beginnen."
+      },
+      {
+        "q": "Kan ik naar een specifieke tijdstempel in de video linken?",
+        "a": "Ja! Wanneer u uw YouTube-link kopieert, voegt u eenvoudigweg de tijdparameter toe (bijvoorbeeld ?t=1m30s) voordat u deze in de generator plakt. De QR-code start vervolgens de video die precies op dat moment begint."
+      },
+      {
+        "q": "Wat moet ik doen als de YouTube-video verborgen is?",
+        "a": "Verborgen YouTube-video's werken perfect met QR-codes. De video verschijnt niet in de openbare zoekresultaten, maar wie de fysieke QR-code scant, kan de instructievideo zonder problemen bekijken."
+      }
+    ]
+  }
+]

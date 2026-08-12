@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "PDF QR-kód az éttermi menükhöz",
+    "seoDesc": "Cserélje ki a papír menüt érintésmentes digitális élménnyel. Hozzon létre azonnal ingyenes, biztonságos PDF QR-kódot éttermi menüjéhez.",
+    "infoGain": "Profi tipp éttermeknek: Használjon magas hibajavítási szintet (H szint), amikor QR-kódjait asztalsátrakra vagy alátétekre nyomtatja. Ez biztosítja, hogy a QR-kód továbbra is beolvasható maradjon az ügyfelek számára, még akkor is, ha kissé megsérül, nedves vagy beszennyeződik a kiömlött étel miatt.",
+    "faqs": [
+      {
+        "q": "Lejárnak a menük PDF QR-kódjai?",
+        "a": "Nem, rendszerünk statikus PDF QR-kódokat generál, amelyek soha nem járnak le. Ha azonban statikus QR-kódot használ, később nem módosíthatja az alapul szolgáló PDF-fájlt. Ha a menü gyakran változik, fontolja meg a PDF-fájl elhelyezését webhelyén, és használja helyette URL QR-kód generátorunkat."
+      },
+      {
+        "q": "Hogyan frissíthetem éttermi étlapomat a QR-kódok újranyomtatása nélkül?",
+        "a": "Ha frissíteni szeretne egy menüt az asztalsátrak újranyomtatása nélkül, akkor létre kell hoznia egy URL QR-kódot, amely az étterem webhelyének menüoldalára mutat (pl. your-restaurant.com/menu.pdf). Amikor a menü megváltozik, egyszerűen csak töltse fel az új PDF-fájlt a webhelyére, és a meglévő QR-kód továbbra is tökéletesen fog működni."
+      },
+      {
+        "q": "Biztonságosak a PDF QR-kódok beolvasása ügyfeleim számára?",
+        "a": "Igen! Mivel a CreateMy-QR 100%-ban helyileg működik az eszközén, nem követjük nyomon ügyfeleit, és nem iktatunk be harmadik féltől származó hirdetéseket a szkennelési élménybe. Amikor az ügyfelek beolvassák a kódot, biztonságosan közvetlenül az Ön menüjéhez irányítják őket."
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "WiFi QR-kód kávézók és szállodák számára",
+    "seoDesc": "Hagyja, hogy vendégei azonnal, jelszavak beírása nélkül csatlakozzanak WiFi hálózatához. Készítsen ingyenes WiFi QR-kódot kávézója vagy szállodája számára.",
+    "infoGain": "Vendéglátási tipp: Nyomtassa ki WiFi QR-kódját, és helyezze el egy gyönyörű keretben a recepción vagy az egyes kávézóasztalokon. A vendégek értékelik azt a súrlódásmentes élményt, hogy azonnal csatlakozhatnak a hálózathoz anélkül, hogy jelszót kérnének a személyzettől.",
+    "faqs": [
+      {
+        "q": "Látható a WiFi jelszó, amikor valaki beolvassa a QR-kódot?",
+        "a": "Amikor a vendégek beolvassák a QR-kódot natív okostelefonjuk kamerájával (iOS vagy Android), eszközük automatikusan kérni fogja a csatlakozást a hálózathoz anélkül, hogy a jelszót egyszerű szövegben felfedné. A speciális QR-szkenner-alkalmazások azonban megjeleníthetik a nyers szöveges adatokat."
+      },
+      {
+        "q": "Elrejthetem a WiFi hálózatomat (Rejtett SSID), és továbbra is használhatok QR-kódot?",
+        "a": "Igen! A WiFi QR-kód létrehozásakor egyszerűen jelölje be a „Rejtett hálózat” opciót. Ez biztosítja, hogy a vendégek akkor is zökkenőmentesen csatlakozhassanak, ha az útválasztó úgy van beállítva, hogy ne sugározza az SSID-jét."
+      },
+      {
+        "q": "Működik a WiFi QR-kód iPhone és Android rendszeren is?",
+        "a": "Teljesen. A WiFi QR-kód szabványt (WPA/WPA2/WEP) az Apple iOS és Android operációs rendszerek egyaránt elismerik. A felhasználók egyszerűen rámutatnak alapértelmezett kameraalkalmazásukra a kódra a csatlakozáshoz."
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "Google Review QR-kód helyi vállalkozások számára",
+    "seoDesc": "Az egekbe szökkentheti a helyi keresőoptimalizálást azáltal, hogy az ügyfelek könnyedén meghagyhatják az 5 csillagos értékelést. Hozzon létre egy ingyenes Google Review QR-kódot.",
+    "infoGain": "Marketingtipp: Az értékelés kérésének legalkalmasabb időpontja a vevői elégedettség csúcspontja. Adja hozzá ezt a QR-kódot a nyugtákhoz, a kijárati ajtókhoz, vagy kérje meg, hogy a személyzet azonnal mutassa be egy táblagépen, miután kiváló szolgáltatást nyújtott.",
+    "faqs": [
+      {
+        "q": "Hogyan találhatom meg a Google Cégem véleményezési linkjét?",
+        "a": "Jelentkezzen be Google vállalkozásprofiljának irányítópultjára, keresse meg a „További vélemény” vagy „Vélemények kérése” gombot a kezdőlapon, és másolja ki az ott található rövid URL-t. Illessze be az URL-t közvetlenül a generátorunkba."
+      },
+      {
+        "q": "Ez a QR-kód automatikusan 5 csillagot ad a vállalkozásomnak?",
+        "a": "Nem, a Google irányelvei tiltják a csillagos értékelés előzetes kitöltését. A QR-kód közvetlenül az ügyfél telefonján nyitja meg a felülvizsgálati párbeszédpanelt, de manuálisan kell kiválasztania a csillagos értékelést, és be kell írnia visszajelzését."
+      },
+      {
+        "q": "Használhatom ezt a Yelp vagy TripAdvisor értékelésekhez?",
+        "a": "Igen! Bár ez az oldal a Google Véleményekre összpontosít, egyszerűen használhatja szabványos URL QR-kód generátorunkat, és beillesztheti a közvetlen véleményezési linket Yelp-, TripAdvisor- vagy Trustpilot-profiljához."
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "vCard QR-kód ingatlanügynökök számára",
+    "seoDesc": "Soha többé ne veszítsen előnyt. Hozzon létre egy digitális vCard QR-kódot ingatlanos névjegykártyáihoz és nyitott házprospektusaihoz.",
+    "infoGain": "Hálózati tipp: Helyezze el vCard QR-kódját az „Eladó” táblákra és a nyílt napi szórólapokra. A potenciális vásárlók egyetlen szkenneléssel azonnal elmenthetik kapcsolatfelvételi adatait, fényképét és webhelyét telefonos kapcsolataikra.",
+    "faqs": [
+      {
+        "q": "Mi történik, ha az ügyfél beolvassa a vCard QR-kódját?",
+        "a": "A vCard QR-kód beolvasása automatikusan felszólítja a felhasználót, hogy hozzon létre egy új kapcsolatfelvételi bejegyzést, előre kitöltve az Ön nevével, telefonszámával, e-mail címével és cégadataival. Csak megérintik a „Mentés” gombot."
+      },
+      {
+        "q": "A vCard QR-kódhoz internetkapcsolat szükséges?",
+        "a": "Nem! Az összes elérhetőségi információ közvetlenül a QR-kód képpontjaiba van kódolva. Ügyfelei akkor is beolvashatják és elmenthetik adatait, ha olyan területen tartózkodnak, ahol nincs mobil vétel."
+      },
+      {
+        "q": "Hozzáadhatom a professzionális fejlövést a vCardhoz?",
+        "a": "A szabványos vCard QR-kódok nem támogatják a beágyazott képeket, mert a képek túl nagyra teszik az adatmennyiséget, ami túl sűrű QR-kódot eredményez a könnyű beolvasáshoz. Javasoljuk, hogy az adatok szövegalapúak legyenek a maximális szkennelési megbízhatóság érdekében."
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "URL QR-kód rendezvényjegyekhez és regisztrációhoz",
+    "seoDesc": "Növelje az események látogatottságát azáltal, hogy fizikai szórólapokat kapcsol össze digitális jegyértékesítő oldalával. Gyors, ingyenes URL QR-kód létrehozása az események regisztrációjához.",
+    "infoGain": "Eseménytervezési tipp: Kövesse nyomon szórólapja teljesítményét egy UTM-címkével ellátott URL használatával (pl. ?utm_source=flyer&utm_campaign=summer_fest) a QR-kód generálása előtt. Így pontosan láthatja, hogy hány jegyeladás származott a fizikai szkennelésekből.",
+    "faqs": [
+      {
+        "q": "A szórólapok kinyomtatása után módosíthatom a jegylinket?",
+        "a": "A CreateMy-QR statikus QR-kódokat generál, ami azt jelenti, hogy a hivatkozás tartósan kódolt. Ha módosítható hivatkozásra van szüksége, javasoljuk, hogy használjon egy URL-rövidítő szolgáltatást (például a Bitly-t) egy rövid hivatkozás létrehozásához, majd állítsa elő a QR-kódot a rövid hivatkozáshoz."
+      },
+      {
+        "q": "Mekkora méretűre kell nyomtatnom a QR-kódot az esemény plakátjára?",
+        "a": "A távolról megtekintett eseményplakátok esetén növelje a QR-kódot. Jó hüvelykujjszabály a 10:1 arány – ha egy személy 10 láb távolságból szkennel, a QR-kódnak legalább 1 láb (12 hüvelyk) szélesnek kell lennie."
+      },
+      {
+        "q": "Van korlátozás arra, hogy hány ember szkennelheti be az esemény QR-kódját?",
+        "a": "Egyáltalán nincsenek szkennelési korlátok! Mivel a QR-kód egyszerűen közvetlenül a jegyvásárlási URL-re mutat anélkül, hogy áthaladna a szervereinken, korlátlan számú ember szkennelheti le egyidejűleg, szűk keresztmetszetek nélkül."
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "WhatsApp QR-kód az ügyfélszolgálathoz",
+    "seoDesc": "Azonnali ügyfélszolgálat biztosítása. Hozzon létre egy WhatsApp QR-kódot, amely közvetlen csevegést indít az ügyfélszolgálati csapattal, kiegészítve egy előre kitöltött üzenettel.",
+    "infoGain": "Támogatási stratégia: Előre töltse ki a WhatsApp-üzenetet kontextuális szöveggel, például „Helló, segítségre van szükségem a legutóbbi rendelésemhez”. Ez megszünteti a súrlódást, és az ügyfél úgy érzi, hogy azonnal gondoskodnak róla.",
+    "faqs": [
+      {
+        "q": "Az ügyfélnek először el kell mentenie a számomat?",
+        "a": "Nem, ez a WhatsApp QR-kód varázsa! A WhatsApp „Click to Chat” funkcióját használja. A kód beolvasásával azonnal megnyílik egy csevegőablak a cégszámmal anélkül, hogy az ügyfélnek el kellene mentenie azt a címjegyzékébe."
+      },
+      {
+        "q": "Használhatom ezt a WhatsApp Business számára?",
+        "a": "Igen, ez tökéletesen működik mind a szokásos WhatsApp, mind a WhatsApp Business fiókoknál. Az alapul szolgáló mélyhivatkozási struktúra (wa.me) mindkét platformon azonos."
+      },
+      {
+        "q": "Mi történik, ha asztali számítógépen szkennelik?",
+        "a": "Ha beolvassa az asztalon, vagy rákattint egy hivatkozáson keresztül, akkor a beszélgetés zökkenőmentes folytatásához nyissa meg a WhatsApp Web vagy a WhatsApp Desktop alkalmazást."
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "PayPal QR-kód non-profit szervezetekhez és adományokhoz",
+    "seoDesc": "Tedd zökkenőmentessé az adománygyűjtést. Hozzon létre egy PayPal QR-kódot, amellyel azonnali adományokat fogadhat jótékonysági eseményeken, istentiszteleteken vagy közösségi összejöveteleken.",
+    "infoGain": "Adománygyűjtési tipp: Kombinálja a QR-kódot egy egyértelmű cselekvésre ösztönzővel (CTA), például „Scan to Donate $5”. Egy konkrét, kis összeg meghatározása csökkenti a döntési fáradtságot, és jelentősen megnöveli az adományok átváltási arányát.",
+    "faqs": [
+      {
+        "q": "Vannak rejtett díjak az adományok ilyen módon történő elfogadásáért?",
+        "a": "A CreateMy-QR 100%-ban ingyenes, és nulla jutalékot igényel. A pénz fogadására vonatkozó szokásos PayPal-tranzakciós díjak azonban továbbra is érvényesek az adott PayPal-számla típusának megfelelően."
+      },
+      {
+        "q": "Az adományozók maguk választhatják meg az adomány összegét?",
+        "a": "Igen, ha a QR-kód generálásakor üresen hagyja az „Összeg” mezőt, az adományozót a rendszer felkéri, hogy manuálisan adja meg a kívánt adomány összegét a PayPal alkalmazásban."
+      },
+      {
+        "q": "Biztonságos ez a pénzügyi tranzakciók kezeléséhez?",
+        "a": "Igen. Eszközünk szigorúan szabványos PayPal „Vásárlás most” URL-t generál. A tényleges pénzügyi tranzakció teljes egészében a PayPal rendkívül biztonságos, titkosított környezetében történik. Soha nem érintjük meg és nem látjuk a fizetési adatokat."
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "QR-kód e-mailben a hírlevélre való feliratkozáshoz",
+    "seoDesc": "Növelje e-mail listáját fizikai helyekről. Hozzon létre egy e-mail QR-kódot, amely előre kitölti a levelezőlistára való feliratkozási kérelmet.",
+    "infoGain": "Growth Hack: Helyezze el ezt a QR-kódot névjegykártyái hátulján vagy a kiskereskedelmi pénztárnál. Ösztönözze a szkennelést azáltal, hogy 10%-os kedvezményes kódot kínál az előfizetésért cserébe.",
+    "faqs": [
+      {
+        "q": "Hogyan működik az e-mail QR-kód?",
+        "a": "Beolvasáskor egy „mailto:” protokollt indít el a felhasználó telefonján, amely automatikusan megnyitja az alapértelmezett levelezőalkalmazást (például az Apple Mail vagy a Gmail), és új e-mailt készít az Ön előre meghatározott e-mail címével, tárgyával és törzsszövegével."
+      },
+      {
+        "q": "Automatikusan elküldi az e-mailt?",
+        "a": "Nem, biztonsági intézkedésként a mobil operációs rendszerek megkövetelik, hogy a felhasználó manuálisan nyomja meg a „Küldés” gombot az e-mail piszkozat megnyitása után. Ez lehetőséget ad számukra az üzenet áttekintésére."
+      },
+      {
+        "q": "Más címeket is megadhatok a QR-kódban?",
+        "a": "Míg az alapvető „mailto” protokoll támogatja a CC-t és a BCC-t, jelenleg az elsődleges címzett mezőre összpontosítunk, hogy maximális kompatibilitást biztosítsunk a régebbi e-mail kliensekkel és bizonyos Android-eszközökkel."
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "App Store QR-kód mobiljátékok letöltéséhez",
+    "seoDesc": "Növelje az alkalmazástelepítéseket közvetlenül az otthonon kívüli hirdetésekből. Hozzon létre egy QR-kódot, amely közvetlenül a játékára mutat az iOS App Store vagy a Google Play áruházban.",
+    "infoGain": "Felhasználószerzési tipp: Ha mobiljátékot hirdet egy kongresszuson vagy egy óriásplakáton, az App Store QR-kódja áthidalja a fizikai és a digitális közötti szakadékot, és rögzíti az impulzusos letöltéseket, mielőtt a felhasználó elfelejtené a játék nevét.",
+    "faqs": [
+      {
+        "q": "Egy QR-kód az iOS és az Android üzletekhez is eljuthat?",
+        "a": "Ennek megfelelő végrehajtásához szüksége van egy dinamikus útválasztási hivatkozásra (például Firebase Dynamic Linkre vagy egyéni átirányítási szkriptre a kiszolgálón), amely észleli a felhasználó operációs rendszerét. Ezután használhatja ezt a dinamikus linket, és itt létrehozhat egy szabványos URL QR-kódot."
+      },
+      {
+        "q": "Miért érdemes App Store-specifikus QR-kódot használni az URL helyett?",
+        "a": "Az App Store QR-kódja gyakran elindítja a natív App Store vagy Google Play alkalmazás közvetlen megnyitását a felhasználó eszközén, a webböngésző megkerülésével. Ez sokkal gördülékenyebb, nagyobb konverziót igénylő telepítési élményt eredményez."
+      },
+      {
+        "q": "Ez nyomon fogja követni az alkalmazástelepítési mutatóimat?",
+        "a": "Maga a QR-kód nem követi a mutatókat. Ha azonban hozzárendelési hivatkozást használ (az AppsFlyerből, az Adjustból stb.) cél URL-ként, akkor ezek a szolgáltatások zökkenőmentesen követik a telepítési adatokat."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "YouTube-videó QR-kód a termékkézikönyvekhez",
+    "seoDesc": "Cserélje le a zavaros papír kézikönyveket oktatóvideókkal. Hozz létre egy YouTube QR-kódot, amely azonnali vizuális útmutatást nyújt a termékeidhez.",
+    "infoGain": "Ügyfél-sikertipp: Ha közvetlenül a termék csomagolására vagy gépére nyomtat oktatóvideós QR-kódot, az segít az ügyfeleknek a vizuális hibaelhárításban, ami drasztikusan csökkentheti a költséges ügyfélszolgálati jegyek és visszaküldések költségeit.",
+    "faqs": [
+      {
+        "q": "Beolvasáskor automatikusan lejátszik a YouTube-videót?",
+        "a": "Amikor a felhasználó beolvassa a kódot, eszköze általában megnyitja a natív YouTube alkalmazást, és azonnal betölti a videót. Az eszköz beállításaitól függően előfordulhat, hogy az automatikus lejátszás elindul."
+      },
+      {
+        "q": "Linkelhetek egy adott időbélyeget a videóban?",
+        "a": "Igen! Amikor másolja a YouTube-linket, egyszerűen adja hozzá az időparamétert (pl. ?t=1m30s), mielőtt beilleszti a generátorba. A QR-kód ezután elindítja a videót pontosan abban a pillanatban."
+      },
+      {
+        "q": "Mi van, ha a YouTube-videó nem nyilvános?",
+        "a": "A nem listázott YouTube-videók tökéletesen működnek QR-kóddal. A videó nem jelenik meg a nyilvános keresési eredmények között, de bárki, aki beolvassa a fizikai QR-kódot, gond nélkül megtekintheti az oktatóvideót."
+      }
+    ]
+  }
+]

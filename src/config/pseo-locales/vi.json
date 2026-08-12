@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "Mã QR PDF cho thực đơn nhà hàng",
+    "seoDesc": "Thay thế menu giấy bằng trải nghiệm kỹ thuật số không tiếp xúc. Tạo mã QR PDF miễn phí, an toàn cho thực đơn nhà hàng của bạn ngay lập tức.",
+    "infoGain": "Mẹo chuyên nghiệp dành cho nhà hàng: Sử dụng mức sửa lỗi cao (Cấp H) khi in mã QR của bạn trên lều để bàn hoặc đế lót ly. Điều này đảm bảo khách hàng vẫn có thể quét được mã QR ngay cả khi mã bị hư hỏng nhẹ, ướt hoặc bẩn do đổ thực phẩm.",
+    "faqs": [
+      {
+        "q": "Mã QR PDF cho menu có hết hạn không?",
+        "a": "Không, hệ thống của chúng tôi tạo mã QR PDF tĩnh không bao giờ hết hạn. Tuy nhiên, nếu bạn sử dụng mã QR tĩnh thì sau này bạn không thể thay đổi tệp PDF cơ bản. Nếu menu của bạn thay đổi thường xuyên, hãy cân nhắc việc lưu trữ tệp PDF trên trang web của bạn và thay vào đó sử dụng trình tạo Mã QR URL của chúng tôi."
+      },
+      {
+        "q": "Làm cách nào để cập nhật thực đơn nhà hàng mà không cần in lại mã QR?",
+        "a": "Để cập nhật thực đơn mà không in lại lều bàn, bạn nên tạo Mã QR URL liên kết đến trang thực đơn trên trang web của nhà hàng (ví dụ: your-restaurant.com/menu.pdf). Bất cứ khi nào menu của bạn thay đổi, bạn chỉ cần tải tệp PDF mới lên trang web của mình và mã QR hiện tại sẽ tiếp tục hoạt động hoàn hảo."
+      },
+      {
+        "q": "Mã QR PDF có an toàn cho khách hàng của tôi quét không?",
+        "a": "Đúng! Vì CreateMy-QR hoạt động cục bộ 100% trên thiết bị của bạn nên chúng tôi không theo dõi khách hàng của bạn hoặc đưa quảng cáo của bên thứ ba vào trải nghiệm quét. Khi khách hàng quét mã của bạn, họ sẽ được chuyển thẳng đến thực đơn của bạn một cách an toàn."
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "Mã QR WiFi cho quán cà phê & khách sạn",
+    "seoDesc": "Hãy để khách của bạn kết nối với mạng WiFi của bạn ngay lập tức mà không cần nhập mật khẩu. Tạo mã QR WiFi miễn phí cho quán cà phê hoặc khách sạn của bạn.",
+    "infoGain": "Mẹo chiêu đãi: In mã QR WiFi của bạn và đặt vào khung đẹp ở quầy lễ tân hoặc trên bàn cafe cá nhân. Khách đánh giá cao trải nghiệm dễ dàng khi tham gia mạng ngay lập tức mà không cần hỏi mật khẩu của nhân viên.",
+    "faqs": [
+      {
+        "q": "Mật khẩu WiFi có hiển thị khi ai đó quét mã QR không?",
+        "a": "Khi khách quét mã QR bằng camera gốc của điện thoại thông minh (iOS hoặc Android), thiết bị của họ sẽ tự động yêu cầu tham gia mạng mà không tiết lộ mật khẩu ở dạng văn bản thuần túy. Tuy nhiên, các ứng dụng quét QR chuyên dụng có thể hiển thị dữ liệu văn bản thô."
+      },
+      {
+        "q": "Tôi có thể ẩn mạng WiFi (SSID ẩn) mà vẫn sử dụng mã QR được không?",
+        "a": "Đúng! Khi tạo Mã QR WiFi của bạn, chỉ cần chọn tùy chọn 'Mạng ẩn'. Điều này đảm bảo rằng khách có thể kết nối liền mạch ngay cả khi bộ định tuyến của bạn được định cấu hình không phát SSID."
+      },
+      {
+        "q": "Mã QR WiFi có hoạt động cho cả iPhone và Android không?",
+        "a": "Tuyệt đối. Chuẩn mã WiFi QR (WPA/WPA2/WEP) được cả hệ điều hành Apple iOS và Android công nhận rộng rãi. Người dùng chỉ cần trỏ ứng dụng camera mặc định của họ vào mã để kết nối."
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "Google Review Mã QR dành cho doanh nghiệp địa phương",
+    "seoDesc": "Tăng vọt SEO địa phương của bạn bằng cách giúp khách hàng dễ dàng để lại xếp hạng 5 sao. Tạo mã QR Google Review miễn phí.",
+    "infoGain": "Mẹo tiếp thị: Thời điểm tốt nhất để yêu cầu đánh giá là lúc khách hàng hài lòng nhất. Thêm mã QR này vào biên lai, cửa thoát hiểm của bạn hoặc yêu cầu nhân viên xuất trình mã này trên máy tính bảng ngay sau khi cung cấp dịch vụ xuất sắc.",
+    "faqs": [
+      {
+        "q": "Làm cách nào để tìm thấy liên kết đánh giá Google Doanh nghiệp của tôi?",
+        "a": "Đăng nhập vào trang tổng quan Hồ sơ doanh nghiệp trên Google của bạn, tìm nút 'Nhận thêm đánh giá' hoặc 'Yêu cầu đánh giá' trên tab trang chủ và sao chép URL ngắn được cung cấp ở đó. Dán URL đó trực tiếp vào trình tạo của chúng tôi."
+      },
+      {
+        "q": "Mã QR này có tự động mang lại cho doanh nghiệp của tôi 5 sao không?",
+        "a": "Không, chính sách của Google cấm điền trước xếp hạng theo sao. Mã QR sẽ mở hộp thoại đánh giá trực tiếp trên điện thoại của khách hàng nhưng họ phải chọn xếp hạng sao theo cách thủ công và nhập phản hồi của mình."
+      },
+      {
+        "q": "Thay vào đó, tôi có thể sử dụng thông tin này để đánh giá trên Yelp hoặc TripAdvisor không?",
+        "a": "Đúng! Mặc dù trang này tập trung vào Bài đánh giá trên Google nhưng bạn chỉ cần sử dụng trình tạo Mã QR URL tiêu chuẩn của chúng tôi và dán liên kết đánh giá trực tiếp cho hồ sơ Yelp, TripAdvisor hoặc Trustpilot của bạn."
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "Mã QR vCard dành cho đại lý bất động sản",
+    "seoDesc": "Không bao giờ mất vị trí dẫn đầu nữa. Tạo mã QR vCard kỹ thuật số cho danh thiếp bất động sản và tài liệu quảng cáo khai trương của bạn.",
+    "infoGain": "Mẹo kết nối mạng: Đặt mã QR vCard của bạn trên biển hiệu 'Bán' và tờ rơi quảng cáo khai trương. Người mua tiềm năng có thể lưu ngay chi tiết liên hệ, ảnh và trang web của bạn vào danh bạ điện thoại của họ chỉ bằng một lần quét.",
+    "faqs": [
+      {
+        "q": "Điều gì xảy ra khi khách hàng quét mã QR vCard?",
+        "a": "Quét mã QR vCard sẽ tự động nhắc điện thoại của người dùng tạo mục nhập liên hệ mới được điền sẵn tên, số điện thoại, email và thông tin chi tiết về công ty của bạn. Họ chỉ cần nhấn vào 'Lưu'."
+      },
+      {
+        "q": "Mã QR vCard có yêu cầu kết nối internet không?",
+        "a": "KHÔNG! Tất cả thông tin liên hệ của bạn được mã hóa trực tiếp vào các pixel của mã QR. Khách hàng của bạn có thể quét và lưu thông tin chi tiết của bạn ngay cả khi họ ở trong khu vực không có sóng di động."
+      },
+      {
+        "q": "Tôi có thể thêm ảnh chân dung chuyên nghiệp của mình vào vCard không?",
+        "a": "Mã QR vCard tiêu chuẩn không hỗ trợ hình ảnh nhúng vì hình ảnh khiến tải trọng dữ liệu quá lớn, dẫn đến mã QR quá dày đặc nên không thể quét dễ dàng. Chúng tôi khuyên bạn nên giữ dữ liệu dựa trên văn bản để có độ tin cậy quét tối đa."
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "Mã QR URL cho vé sự kiện và đăng ký",
+    "seoDesc": "Tăng cường số lượng người tham dự sự kiện bằng cách liên kết các tờ rơi truyền thống với trang bán vé kỹ thuật số của bạn. Tạo mã QR URL nhanh, miễn phí để đăng ký sự kiện.",
+    "infoGain": "Mẹo lập kế hoạch sự kiện: Theo dõi hiệu suất tờ rơi của bạn bằng cách sử dụng URL được gắn thẻ UTM (ví dụ: ?utm_source=flyer&utm_campaign=summer_fest) trước khi tạo mã QR. Điều này cho phép bạn biết chính xác số lượng vé bán ra từ các lần quét vật lý.",
+    "faqs": [
+      {
+        "q": "Tôi có thể thay đổi liên kết vé sau khi in tờ rơi không?",
+        "a": "CreateMy-QR tạo mã QR tĩnh, có nghĩa là liên kết được mã hóa cứng vĩnh viễn. Nếu bạn cần một liên kết có thể thay đổi, chúng tôi khuyên bạn nên sử dụng dịch vụ rút ngắn URL (như Bitly) để tạo một liên kết ngắn, sau đó tạo mã QR cho liên kết ngắn đó."
+      },
+      {
+        "q": "Tôi nên in mã QR trên áp phích sự kiện của mình với kích thước bao nhiêu?",
+        "a": "Đối với các áp phích sự kiện được xem từ xa, hãy mở rộng mã QR. Nguyên tắc chung là tỷ lệ 10:1—nếu một người đang quét từ khoảng cách 10 feet thì mã QR phải rộng ít nhất 1 foot (12 inch)."
+      },
+      {
+        "q": "Có giới hạn số lượng người có thể quét mã QR sự kiện của tôi không?",
+        "a": "Hoàn toàn không có giới hạn quét! Vì mã QR chỉ đơn giản trỏ trực tiếp đến URL bán vé của bạn mà không cần thông qua máy chủ của chúng tôi nên không giới hạn số lượng người có thể quét mã cùng lúc mà không gặp bất kỳ trở ngại nào."
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "Mã QR WhatsApp để hỗ trợ khách hàng",
+    "seoDesc": "Cung cấp dịch vụ khách hàng ngay lập tức. Tạo mã QR WhatsApp để mở cuộc trò chuyện trực tiếp với nhóm hỗ trợ của bạn, hoàn chỉnh bằng tin nhắn điền sẵn.",
+    "infoGain": "Chiến lược hỗ trợ: Điền trước tin nhắn WhatsApp bằng văn bản theo ngữ cảnh như 'Xin chào, tôi cần trợ giúp về đơn đặt hàng gần đây của mình'. Điều này giúp loại bỏ xích mích và khiến khách hàng cảm thấy được quan tâm ngay lập tức.",
+    "faqs": [
+      {
+        "q": "Khách hàng có cần lưu số của tôi trước không?",
+        "a": "Không, đó là điều kỳ diệu của mã QR WhatsApp! Nó sử dụng tính năng 'Nhấp để trò chuyện' của WhatsApp. Quét mã ngay lập tức sẽ mở ra một cửa sổ trò chuyện với số điện thoại doanh nghiệp của bạn mà không yêu cầu khách hàng lưu mã đó vào sổ địa chỉ của họ."
+      },
+      {
+        "q": "Tôi có thể sử dụng tính năng này cho WhatsApp Business không?",
+        "a": "Có, tính năng này hoạt động hoàn hảo cho cả tài khoản WhatsApp tiêu chuẩn và WhatsApp Business. Cấu trúc liên kết sâu cơ bản (wa.me) giống hệt nhau cho cả hai nền tảng."
+      },
+      {
+        "q": "Điều gì xảy ra nếu họ quét nó trên máy tính để bàn?",
+        "a": "Nếu được quét trên máy tính để bàn hoặc nhấp qua liên kết, nó sẽ nhắc người dùng mở WhatsApp Web hoặc ứng dụng WhatsApp Desktop để tiếp tục cuộc trò chuyện một cách liền mạch."
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "Mã QR PayPal dành cho tổ chức phi lợi nhuận và quyên góp",
+    "seoDesc": "Làm cho việc gây quỹ trở nên suôn sẻ. Tạo mã QR PayPal để chấp nhận quyên góp ngay lập tức tại các sự kiện từ thiện, dịch vụ nhà thờ hoặc họp mặt cộng đồng.",
+    "infoGain": "Mẹo gây quỹ: Kết hợp mã QR với Lời kêu gọi hành động (CTA) rõ ràng như 'Quét để quyên góp $5'. Việc xác định một số tiền nhỏ, cụ thể giúp giảm bớt sự mệt mỏi khi đưa ra quyết định và tăng đáng kể tỷ lệ chuyển đổi khoản quyên góp.",
+    "faqs": [
+      {
+        "q": "Có bất kỳ khoản phí ẩn nào khi nhận quyên góp theo cách này không?",
+        "a": "CreateMy-QR miễn phí 100% và không mất phí hoa hồng. Tuy nhiên, phí giao dịch PayPal tiêu chuẩn để nhận tiền vẫn sẽ được áp dụng tùy theo loại tài khoản PayPal cụ thể của bạn."
+      },
+      {
+        "q": "Các nhà tài trợ có thể tự chọn số tiền quyên góp của mình không?",
+        "a": "Có, nếu bạn để trống trường 'Số tiền' khi tạo mã QR, nhà tài trợ sẽ được nhắc nhập số tiền quyên góp mong muốn của họ theo cách thủ công vào ứng dụng PayPal."
+      },
+      {
+        "q": "Điều này có an toàn để xử lý các giao dịch tài chính không?",
+        "a": "Đúng. Công cụ của chúng tôi tạo ra URL 'Mua ngay' tiêu chuẩn của PayPal. Giao dịch tài chính thực tế diễn ra hoàn toàn trong môi trường mã hóa, bảo mật cao của PayPal. Chúng tôi không bao giờ chạm hoặc xem dữ liệu thanh toán."
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "Mã QR qua email để đăng ký bản tin",
+    "seoDesc": "Phát triển danh sách email của bạn từ các địa điểm thực tế. Tạo mã QR Email để điền trước yêu cầu đăng ký vào danh sách gửi thư của bạn.",
+    "infoGain": "Mẹo tăng trưởng: Đặt mã QR này ở mặt sau danh thiếp hoặc tại quầy thanh toán bán lẻ của bạn. Khuyến khích quét bằng cách cung cấp mã giảm giá 10% để đổi lấy việc đăng ký.",
+    "faqs": [
+      {
+        "q": "Mã QR Email hoạt động như thế nào?",
+        "a": "Khi được quét, nó sẽ kích hoạt giao thức 'mailto:' trên điện thoại của người dùng, giao thức này sẽ tự động mở ứng dụng email mặc định của họ (như Apple Mail hoặc Gmail) và soạn thảo một email mới với địa chỉ email, chủ đề và nội dung được xác định trước của bạn."
+      },
+      {
+        "q": "Email có được gửi tự động không?",
+        "a": "Không, như một biện pháp bảo mật, hệ điều hành di động yêu cầu người dùng nhấn nút 'Gửi' theo cách thủ công sau khi mở bản nháp email. Điều này giúp họ có cơ hội xem lại tin nhắn."
+      },
+      {
+        "q": "Tôi có thể CC hoặc BCC các địa chỉ khác trong mã QR không?",
+        "a": "Mặc dù giao thức 'mailto' cốt lõi hỗ trợ CC và BCC, nhưng chúng tôi hiện tập trung vào trường người nhận chính để đảm bảo khả năng tương thích tối đa trên các ứng dụng email cũ hơn và các thiết bị Android cụ thể."
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "Mã QR App Store để tải xuống trò chơi di động",
+    "seoDesc": "Thúc đẩy lượt cài đặt ứng dụng trực tiếp từ quảng cáo bên ngoài nhà. Tạo mã QR liên kết thẳng đến trò chơi của bạn trên App Store iOS hoặc Google Play.",
+    "infoGain": "Mẹo thu hút người dùng: Nếu bạn đang quảng cáo một trò chơi di động tại một hội nghị hoặc trên bảng quảng cáo, mã QR của App Store sẽ thu hẹp khoảng cách giữa vật lý và kỹ thuật số, thu hút lượt tải xuống nhanh chóng trước khi người dùng quên tên trò chơi.",
+    "faqs": [
+      {
+        "q": "Một mã QR có thể định tuyến đến cả cửa hàng iOS và Android không?",
+        "a": "Để thực hiện việc này đúng cách, bạn cần có liên kết định tuyến động (như Liên kết động Firebase hoặc tập lệnh chuyển hướng tùy chỉnh trên máy chủ của bạn) để phát hiện hệ điều hành của người dùng. Sau đó, bạn có thể lấy liên kết động đó và tạo Mã QR URL tiêu chuẩn tại đây."
+      },
+      {
+        "q": "Tại sao nên sử dụng mã QR cụ thể của App Store thay vì URL?",
+        "a": "Mã QR của App Store thường kích hoạt ứng dụng App Store hoặc Google Play gốc mở trực tiếp trên thiết bị của người dùng, bỏ qua trình duyệt web. Điều này mang lại trải nghiệm cài đặt mượt mà hơn, có khả năng chuyển đổi cao hơn."
+      },
+      {
+        "q": "Điều này có theo dõi số liệu cài đặt ứng dụng của tôi không?",
+        "a": "Bản thân mã QR không theo dõi số liệu. Tuy nhiên, nếu bạn sử dụng liên kết phân bổ (từ AppsFlyer, Điều chỉnh, v.v.) làm URL đích thì các dịch vụ đó sẽ theo dõi dữ liệu cài đặt một cách liền mạch."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "Mã QR Video YouTube dành cho Hướng dẫn sử dụng sản phẩm",
+    "seoDesc": "Thay thế những hướng dẫn bằng giấy lộn xộn bằng những hướng dẫn bằng video. Tạo mã QR YouTube để cung cấp hướng dẫn trực quan tức thì cho sản phẩm của bạn.",
+    "infoGain": "Mẹo thành công cho khách hàng: In mã QR hướng dẫn bằng video trực tiếp trên bao bì hoặc máy móc sản phẩm của bạn sẽ giúp khách hàng khắc phục sự cố một cách trực quan, điều này có thể giảm đáng kể các yêu cầu hỗ trợ khách hàng tốn kém và trả lại.",
+    "faqs": [
+      {
+        "q": "Video YouTube có tự động phát khi được quét không?",
+        "a": "Khi người dùng quét mã, thiết bị của họ thường sẽ mở ứng dụng YouTube gốc và tải video ngay lập tức. Tùy thuộc vào cài đặt thiết bị của họ, nó có thể bắt đầu tự động phát."
+      },
+      {
+        "q": "Tôi có thể liên kết đến dấu thời gian cụ thể trong video không?",
+        "a": "Đúng! Khi bạn sao chép liên kết YouTube của mình, chỉ cần thêm tham số thời gian (ví dụ: ?t=1m30s) trước khi dán nó vào trình tạo. Mã QR sau đó sẽ khởi chạy video bắt đầu chính xác vào thời điểm đó."
+      },
+      {
+        "q": "Điều gì xảy ra nếu video YouTube không được liệt kê?",
+        "a": "Các video YouTube không công khai hoạt động hoàn hảo với mã QR. Video sẽ không xuất hiện trong kết quả tìm kiếm công khai nhưng bất kỳ ai quét mã QR vật lý đều có thể xem video hướng dẫn mà không gặp vấn đề gì."
+      }
+    ]
+  }
+]

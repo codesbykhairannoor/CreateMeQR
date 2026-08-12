@@ -1,0 +1,228 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "PDF QR kód pro jídelní lístky restaurací",
+    "seoDesc": "Vyměňte papírové menu za bezkontaktní digitální zážitek. Okamžitě vytvořte bezplatný a bezpečný PDF QR kód pro menu vaší restaurace.",
+    "infoGain": "Profesionální tip pro restaurace: Při tisku QR kódů na stolní stany nebo podtácky použijte vysokou úroveň opravy chyb (úroveň H). To zajišťuje, že QR kód zůstane naskenovatelný zákazníky, i když se mírně poškodí, namočí nebo zašpiní rozlitým jídlem.",
+    "faqs": [
+      {
+        "q": "Vyprší platnost PDF QR kódů pro menu?",
+        "a": "Ne, náš systém generuje statické PDF QR kódy, jejichž platnost nikdy nevyprší. Pokud však použijete statický QR kód, nemůžete později změnit podkladový soubor PDF. Pokud se vaše menu často mění, zvažte hostování PDF na vašem webu a místo toho použijte náš generátor URL QR kódů."
+      },
+      {
+        "q": "Jak mohu aktualizovat své menu restaurace bez opětovného tisku QR kódů?",
+        "a": "Chcete-li aktualizovat menu bez přetištění stanů, měli byste vygenerovat URL QR kód, který odkazuje na stránku menu na webu vaší restaurace (např. your-restaurant.com/menu.pdf). Kdykoli se změní vaše menu, jednoduše nahrajete nové PDF na svůj web a stávající QR kód bude nadále perfektně fungovat."
+      },
+      {
+        "q": "Jsou QR kódy PDF bezpečné pro skenování mých zákazníků?",
+        "a": "Ano! Protože CreateMy-QR funguje 100% lokálně na vašem zařízení, nesledujeme vaše zákazníky ani nevkládáme reklamy třetích stran do prostředí skenování. Když zákazníci naskenují váš kód, jsou bezpečně přesměrováni přímo do vašeho menu."
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "WiFi QR kód pro kavárny a hotely",
+    "seoDesc": "Umožněte svým hostům připojit se k vaší WiFi síti okamžitě bez zadávání hesel. Vygenerujte si bezplatný WiFi QR kód pro svou kavárnu nebo hotel.",
+    "infoGain": "Tip pro pohostinství: Vytiskněte si svůj WiFi QR kód a umístěte jej do krásného rámu na recepci nebo na jednotlivé kavárenské stolky. Hosté oceňují bezproblémovou zkušenost s okamžitým připojením k síti, aniž by museli personál žádat o heslo.",
+    "faqs": [
+      {
+        "q": "Je heslo WiFi viditelné, když někdo naskenuje QR kód?",
+        "a": "Když hosté naskenují QR kód pomocí svého nativního fotoaparátu smartphonu (iOS nebo Android), jejich zařízení automaticky požádá o připojení k síti, aniž by prozradilo heslo jako prostý text. Specializované aplikace pro skenování QR kódů však mohou zobrazit nezpracovaná textová data."
+      },
+      {
+        "q": "Mohu skrýt svou WiFi síť (Hidden SSID) a přesto používat QR kód?",
+        "a": "Ano! Při vytváření vašeho WiFi QR kódu jednoduše zaškrtněte volbu 'Skrytá síť'. To zajišťuje, že se hosté mohou bez problémů připojit, i když je váš router nakonfigurován tak, aby nevysílal své SSID."
+      },
+      {
+        "q": "Funguje QR kód WiFi pro iPhone i Android?",
+        "a": "Absolutně. Standard WiFi QR kódu (WPA/WPA2/WEP) je všeobecně uznáván operačními systémy Apple iOS i Android. Uživatelé jednoduše namíří svou výchozí aplikaci fotoaparátu na kód pro připojení."
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "QR kód recenze Google pro místní firmy",
+    "seoDesc": "Zvyšte své místní SEO raketově tím, že zákazníkům usnadníte zanechat 5hvězdičkové hodnocení. Vytvořte si bezplatný QR kód recenze Google.",
+    "infoGain": "Marketingový tip: Nejlepší čas požádat o recenzi je na vrcholu spokojenosti zákazníků. Přidejte tento QR kód na své účtenky, únikové dveře nebo jej požádejte personál, aby jej předložil na tabletu ihned po poskytnutí vynikající služby.",
+    "faqs": [
+      {
+        "q": "Jak najdu odkaz na recenzi ve službě Moje firma na Googlu?",
+        "a": "Přihlaste se na hlavní panel svého firemního profilu Google, na domovské kartě vyhledejte tlačítko „Získat další recenze“ nebo „Požádat o recenze“ a zkopírujte uvedenou krátkou adresu URL. Vložte tuto adresu URL přímo do našeho generátoru."
+      },
+      {
+        "q": "Dá tento QR kód automaticky mé firmě 5 hvězdiček?",
+        "a": "Ne, zásady společnosti Google zakazují předvyplnění hodnocení hvězdičkami. QR kód otevře dialogové okno recenze přímo v telefonu zákazníka, ale musí ručně vybrat hodnocení hvězdičkami a napsat zpětnou vazbu."
+      },
+      {
+        "q": "Mohu to místo toho použít pro recenze Yelp nebo TripAdvisor?",
+        "a": "Ano! I když se tato stránka zaměřuje na Recenze Google, můžete jednoduše použít náš standardní generátor QR kódů URL a vložit přímý odkaz na recenzi pro svůj profil Yelp, TripAdvisor nebo Trustpilot."
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "vCard QR kód pro realitní kanceláře",
+    "seoDesc": "Už nikdy neztratit náskok. Vytvořte digitální QR kód vCard pro své vizitky nemovitostí a brožury o dnech otevřených dveří.",
+    "infoGain": "Tip pro práci v síti: Umístěte svůj QR kód vCard na cedulky „Na prodej“ a letáky na den otevřených dveří. Potenciální kupující si mohou jediným skenováním okamžitě uložit vaše kontaktní údaje, fotografii a webové stránky do svých telefonních kontaktů.",
+    "faqs": [
+      {
+        "q": "Co se stane, když klient naskenuje QR kód vCard?",
+        "a": "Naskenování QR kódu vCard automaticky vyzve telefon uživatele k vytvoření nového záznamu kontaktu předem vyplněného vaším jménem, ​​telefonním číslem, e-mailem a údaji o společnosti. Stačí klepnout na „Uložit“."
+      },
+      {
+        "q": "Vyžaduje QR kód vCard připojení k internetu?",
+        "a": "Žádný! Všechny vaše kontaktní informace jsou zakódovány přímo do pixelů samotného QR kódu. Vaši klienti mohou skenovat a ukládat vaše údaje, i když se nacházejí v oblasti s nulovým mobilním příjmem."
+      },
+      {
+        "q": "Mohu do vCard přidat svůj profesionální headshot?",
+        "a": "Standardní kódy vCard QR nepodporují vložené obrázky, protože obrázky způsobují příliš velký objem dat, což má za následek, že kód QR je příliš hustý, aby jej bylo možné snadno naskenovat. Pro maximální spolehlivost skenování doporučujeme zachovat textová data."
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "URL QR kód pro vstupenky na akce a registraci",
+    "seoDesc": "Zvyšte návštěvnost akcí tím, že propojíte fyzické letáky s vaší digitální stránkou pro vstupenky. Vygenerujte rychlý, bezplatný URL QR kód pro registraci události.",
+    "infoGain": "Tip pro plánování události: Před vygenerováním QR kódu sledujte výkon svého letáku pomocí adresy URL označené UTM (např. ?utm_source=flyer&utm_campaign=summer_fest). To vám umožní přesně vidět, kolik prodejů vstupenek pochází z fyzických skenů.",
+    "faqs": [
+      {
+        "q": "Mohu po vytištění letáků změnit odkaz na vstupenku?",
+        "a": "CreateMy-QR generuje statické QR kódy, což znamená, že odkaz je trvale pevně zakódován. Pokud potřebujete vyměnitelný odkaz, doporučujeme použít službu zkracování adres URL (jako Bitly) k vytvoření krátkého odkazu a poté vygenerovat QR kód pro tento krátký odkaz."
+      },
+      {
+        "q": "Jak velký mám vytisknout QR kód na plakát události?",
+        "a": "U plakátů na události z dálky zvětšete QR kód. Dobrým pravidlem je poměr 10:1 – pokud osoba skenuje ze vzdálenosti 10 stop, měl by být QR kód široký alespoň 12 palců."
+      },
+      {
+        "q": "Existuje nějaký limit, kolik lidí může naskenovat můj QR kód události?",
+        "a": "Neexistují absolutně žádné limity skenování! Protože QR kód jednoduše ukazuje přímo na adresu URL vašeho lístku, aniž by procházel našimi servery, neomezený počet lidí jej může naskenovat současně bez jakýchkoli překážek."
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "WhatsApp QR kód pro zákaznickou podporu",
+    "seoDesc": "Poskytujte okamžitý zákaznický servis. Vygenerujte WhatsApp QR kód, který otevře přímý chat s vaším týmem podpory, doplněný o předvyplněnou zprávu.",
+    "infoGain": "Strategie podpory: Předvyplňte zprávu WhatsApp kontextovým textem jako „Dobrý den, potřebuji pomoc s mou nedávnou objednávkou“. Tím se odstraní tření a zákazník se cítí okamžitě obsluhován.",
+    "faqs": [
+      {
+        "q": "Musí si zákazník nejprve uložit moje číslo?",
+        "a": "Ne, v tom je kouzlo QR kódu WhatsApp! Využívá funkci WhatsApp 'Click to Chat'. Naskenováním kódu se okamžitě otevře chatovací okno s vaším firemním číslem, aniž by si zákazník musel toto číslo uložit do svého adresáře."
+      },
+      {
+        "q": "Mohu to použít pro WhatsApp Business?",
+        "a": "Ano, funguje to perfektně pro standardní účty WhatsApp i WhatsApp Business. Základní struktura přímých odkazů (wa.me) je identická pro obě platformy."
+      },
+      {
+        "q": "Co se stane, když to naskenují na stolním počítači?",
+        "a": "Pokud naskenujete na ploše nebo kliknete na odkaz, vyzve uživatele, aby otevřel WhatsApp Web nebo aplikaci WhatsApp Desktop a plynule pokračoval v konverzaci."
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "PayPal QR Code for Non-Profits & Donations",
+    "seoDesc": "Make fundraising frictionless. Generate a PayPal QR code to accept instant donations at charity events, church services, or community gatherings.",
+    "infoGain": "Fundraising Tip: Combine the QR code with a clear Call to Action (CTA) like 'Scan to Donate $5'. Defining a specific, small amount reduces decision fatigue and significantly increases donation conversion rates.",
+    "placeholderOverrides": {
+      "email": "donations@your-charity.org",
+      "itemName": "Community Support Fund",
+      "amount": "5.00",
+      "currency": "USD"
+    },
+    "faqs": [
+      {
+        "q": "Are there any hidden fees for accepting donations this way?",
+        "a": "CreateMy-QR is 100% free and takes zero commission. However, standard PayPal transaction fees for receiving money will still apply according to your specific PayPal account type."
+      },
+      {
+        "q": "Can donors choose their own donation amount?",
+        "a": "Yes, if you leave the 'Amount' field blank when generating the QR code, the donor will be prompted to manually enter their desired donation amount in the PayPal app."
+      },
+      {
+        "q": "Is this secure for handling financial transactions?",
+        "a": "Yes. Our tool strictly generates a standard PayPal 'Buy Now' URL. The actual financial transaction happens entirely within PayPal's highly secure, encrypted environment. We never touch or see the payment data."
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "E-mail QR kód pro přihlášení k odběru newsletteru",
+    "seoDesc": "Rozšiřte svůj e-mailový seznam z fyzických míst. Vygenerujte e-mailový QR kód, který předvyplní žádost o předplatné do vašeho seznamu adresátů.",
+    "infoGain": "Growth Hack: Tento QR kód umístěte na zadní stranu svých vizitek nebo u pokladny. Motivujte skenování nabídkou 10% slevového kódu výměnou za předplatné.",
+    "faqs": [
+      {
+        "q": "Jak funguje e-mailový QR kód?",
+        "a": "Po naskenování spustí v telefonu uživatele protokol „mailto:“, který automaticky otevře jeho výchozí e-mailovou aplikaci (jako je Apple Mail nebo Gmail) a vytvoří koncept nového e-mailu s vaší předdefinovanou e-mailovou adresou, předmětem a hlavním textem."
+      },
+      {
+        "q": "Odešle se e-mail automaticky?",
+        "a": "Ne, jako bezpečnostní opatření vyžadují mobilní operační systémy, aby uživatel po otevření konceptu e-mailu ručně stiskl tlačítko Odeslat. To jim dává možnost si zprávu prohlédnout."
+      },
+      {
+        "q": "Mohu v QR kódu kopírovat nebo kopírovat další adresy?",
+        "a": "Zatímco základní protokol 'mailto' podporuje CC a BCC, v současné době se zaměřujeme na pole primárního příjemce, abychom zajistili maximální kompatibilitu mezi staršími e-mailovými klienty a konkrétními zařízeními Android."
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "QR kód App Store pro stahování mobilních her",
+    "seoDesc": "Zvyšte počet instalací aplikací přímo z reklamy mimo domov. Vytvořte QR kód, který bude odkazovat přímo na vaši hru v iOS App Store nebo Google Play.",
+    "infoGain": "Tip pro akvizici uživatelů: Pokud inzerujete mobilní hru na sjezdu nebo na billboardu, QR kód App Store překlene mezeru mezi fyzickými a digitálními zařízeními a zachytí impulzní stahování dříve, než uživatel zapomene název hry.",
+    "faqs": [
+      {
+        "q": "Může jeden QR kód směrovat do obchodů iOS i Android?",
+        "a": "Chcete-li to provést správně, potřebujete odkaz dynamického směrování (jako je dynamické propojení Firebase nebo vlastní skript přesměrování na vašem serveru), který detekuje operační systém uživatele. Poté můžete vzít tento dynamický odkaz a vygenerovat zde standardní URL QR kód."
+      },
+      {
+        "q": "Proč používat QR kód specifický pro App Store namísto kódu URL?",
+        "a": "QR kód z App Store často spouští otevření nativní aplikace App Store nebo Google Play přímo v zařízení uživatele a obchází webový prohlížeč. Výsledkem je mnohem hladší instalace s vyšší konverzí."
+      },
+      {
+        "q": "Bude to sledovat mé metriky instalací aplikace?",
+        "a": "Samotný QR kód nesleduje metriky. Pokud však jako cílovou adresu URL použijete atribuční odkaz (z AppsFlyer, Adjust atd.), budou tyto služby plynule sledovat data o instalaci."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "YouTube Video QR kód pro produktové manuály",
+    "seoDesc": "Nahraďte matoucí papírové příručky videonávody. Vytvořte si QR kód YouTube, který vám poskytne okamžité vizuální pokyny pro vaše produkty.",
+    "infoGain": "Tip pro úspěch zákazníka: Tisk QR kódu s výukovým videonávodem přímo na obal vašeho produktu nebo strojní zařízení pomáhá zákazníkům vizuálně řešit problémy, což může drasticky snížit nákladné vstupenky na zákaznickou podporu a vrácení.",
+    "faqs": [
+      {
+        "q": "Přehrává se video YouTube při skenování automaticky?",
+        "a": "Když uživatel naskenuje kód, jeho zařízení obvykle otevře nativní aplikaci YouTube a okamžitě načte video. V závislosti na jejich nastavení zařízení se může začít automaticky přehrávat."
+      },
+      {
+        "q": "Mohu odkazovat na konkrétní časové razítko ve videu?",
+        "a": "Ano! Když zkopírujete svůj odkaz na YouTube, před vložením do generátoru jednoduše připojte parametr času (např. ?t=1m30s). QR kód pak spustí video, které začíná přesně v tu chvíli."
+      },
+      {
+        "q": "Co když video YouTube není v seznamu?",
+        "a": "Neveřejná videa na YouTube dokonale fungují s QR kódy. Video se nezobrazí ve výsledcích veřejného vyhledávání, ale kdokoli, kdo naskenuje fyzický QR kód, bude moci bez problémů zhlédnout instruktážní video."
+      }
+    ]
+  }
+]

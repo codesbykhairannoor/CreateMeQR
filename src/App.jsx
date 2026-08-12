@@ -21,6 +21,7 @@ import LandingContent from './components/LandingContent';
 import SeoArticle from './components/SeoArticle';
 import { PSEO_ROUTES, LANGS } from './config/site';
 import { localizedRoutes, routeToToolMap } from './config/localizedRoutes';
+import { getPseoUseCase } from './config/pseo-usecases';
 
 export default function App() {
   const { t } = useTranslation();
@@ -40,15 +41,18 @@ export default function App() {
 
   if (slug === '') slug = '/';
 
-  const [qrType, setQrType] = useState(routeToToolMap[currentLangCode]?.[slug] || 'url');
+  const pseoUseCase = getPseoUseCase(slug);
+  const resolvedToolType = pseoUseCase ? pseoUseCase.baseTool : (routeToToolMap[currentLangCode]?.[slug] || 'url');
+
+  const [qrType, setQrType] = useState(resolvedToolType);
 
   // Sync route with qrType state
   useEffect(() => {
-    const routeType = routeToToolMap[currentLangCode]?.[slug];
-    if (routeType && routeType !== qrType) {
-      setQrType(routeType);
+    const rType = pseoUseCase ? pseoUseCase.baseTool : routeToToolMap[currentLangCode]?.[slug];
+    if (rType && rType !== qrType) {
+      setQrType(rType);
     }
-  }, [slug, qrType]);
+  }, [slug, qrType, pseoUseCase]);
 
   const handleTypeChangeRoute = (newType) => {
     setQrType(newType);
@@ -103,7 +107,13 @@ export default function App() {
   } : null;
 
   // Super Partial Lang: Fully localized SEO texts!
-  const currentSeo = isHome
+  const currentSeo = pseoUseCase
+    ? {
+        title: `${pseoUseCase.h1Title} | CreateMy-QR`,
+        h1Title: pseoUseCase.h1Title,
+        description: pseoUseCase.seoDesc,
+      }
+    : isHome
     ? {
         title: `CreateMy-QR | ${t('home.heroTitle', 'All QR & Barcode')} ${t('home.heroTitleHighlight', 'Tools in One Place')}`,
         h1Title: `${t('home.heroTitle', 'All QR & Barcode')} ${t('home.heroTitleHighlight', 'Tools in One Place')}`,
@@ -256,7 +266,7 @@ export default function App() {
         <HomePage currentLangCode={currentLangCode} />
       ) : !isStaticPage ? (
         <>
-          <QrWorkspace qrType={qrType} setQrTypeRoute={handleTypeChangeRoute} currentSeo={currentSeo} />
+          <QrWorkspace qrType={qrType} setQrTypeRoute={handleTypeChangeRoute} currentSeo={currentSeo} pseoUseCase={pseoUseCase} />
           <LandingContent qrType={qrType} />
           <SeoArticle currentLangCode={currentLangCode} />
         </>

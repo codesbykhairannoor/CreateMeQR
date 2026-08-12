@@ -1,0 +1,225 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "レストランメニューのPDF QRコード",
+    "seoDesc": "紙のメニューを非接触のデジタル体験に置き換えます。レストランのメニュー用の無料で安全な PDF QR コードを即座に作成します。",
+    "infoGain": "レストラン向けのプロによるヒント: テーブル テントやコースターに QR コードを印刷する場合は、高いエラー修正レベル (レベル H) を使用してください。これにより、QR コードがわずかに損傷したり、濡れたり、食べこぼしで汚れたりした場合でも、顧客は QR コードをスキャンできる状態を維持できます。",
+    "faqs": [
+      {
+        "q": "メニューの PDF QR コードには有効期限がありますか?",
+        "a": "いいえ、当社のシステムは有効期限のない静的な PDF QR コードを生成します。ただし、静的 QR コードを使用する場合は、基になる PDF ファイルを後で変更することはできません。メニューが頻繁に変更される場合は、Web サイトで PDF をホストし、代わりに URL QR コード ジェネレーターを使用することを検討してください。"
+      },
+      {
+        "q": "QR コードを再印刷せずにレストランのメニューを更新するにはどうすればよいですか?",
+        "a": "テーブル テントを再印刷せずにメニューを更新するには、レストランの Web サイト (例: your-restaurant.com/menu.pdf) のメニュー ページにリンクする URL QR コードを生成する必要があります。メニューが変更されるたびに、新しい PDF を Web サイトにアップロードするだけで、既存の QR コードは引き続き完全に機能します。"
+      },
+      {
+        "q": "PDF QR コードは顧客が安全にスキャンできますか?",
+        "a": "はい！ CreateMy-QR はデバイス上で 100% ローカルに動作するため、顧客を追跡したり、スキャン エクスペリエンスにサードパーティの広告を挿入したりすることはありません。顧客がコードをスキャンすると、安全にメニューに直接誘導されます。"
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "カフェとホテルの WiFi QR コード",
+    "seoDesc": "ゲストはパスワードを入力せずにすぐに WiFi ネットワークに接続できます。カフェやホテルの無料 WiFi QR コードを生成します。",
+    "infoGain": "おもてなしのヒント: WiFi QR コードを印刷し、美しいフレームに入れて受付デスクまたは各カフェのテーブルに置きます。ゲストは、スタッフにパスワードを尋ねることなく、即座にネットワークに参加できるスムーズなエクスペリエンスを高く評価しています。",
+    "faqs": [
+      {
+        "q": "QR コードをスキャンすると WiFi パスワードが表示されますか?",
+        "a": "ゲストがネイティブのスマートフォン カメラ (iOS または Android) を使用して QR コードをスキャンすると、デバイスはパスワードを平文で公開することなく、ネットワークへの参加を自動的に要求します。ただし、特殊な QR スキャナ アプリでは生のテキスト データが表示される場合があります。"
+      },
+      {
+        "q": "WiFi ネットワークを非表示にして (SSID を非表示)、QR コードを使用することはできますか?",
+        "a": "はい！ WiFi QR コードを作成するときは、「非表示のネットワーク」オプションにチェックを入れるだけです。これにより、ルーターが SSID をブロードキャストしないように構成されている場合でも、ゲストはシームレスに接続できます。"
+      },
+      {
+        "q": "WiFi QR コードは iPhone と Android の両方で機能しますか?",
+        "a": "絶対に。 WiFi QR コード規格 (WPA/WPA2/WEP) は、Apple iOS と Android オペレーティング システムの両方で広く認識されています。ユーザーは、デフォルトのカメラ アプリに接続するコードを指定するだけです。"
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "Google がローカル ビジネス向けの QR コードをレビューする",
+    "seoDesc": "顧客が簡単に 5 つ星の評価を残せるようにすることで、ローカル SEO を飛躍的に高めます。無料の Google レビュー QR コードを作成します。",
+    "infoGain": "マーケティングのヒント: レビューを依頼するのに最適な時期は、顧客満足度がピークに達しているときです。この QR コードをレシートや出口のドアに追加するか、優れたサービスを提供した直後にスタッフにタブレットで提示してもらいます。",
+    "faqs": [
+      {
+        "q": "Google マイ ビジネスのレビュー リンクを見つけるにはどうすればよいですか?",
+        "a": "Google ビジネス プロフィール ダッシュボードにログインし、ホーム タブで [レビューをもっと見る] または [レビューを依頼する] ボタンを探し、そこに表示される短縮 URL をコピーします。その URL をジェネレーターに直接貼り付けます。"
+      },
+      {
+        "q": "この QR コードは私のビジネスに自動的に 5 つ星を与えますか?",
+        "a": "いいえ、Google のポリシーでは、星の評価を事前に入力することを禁止しています。 QR コードを使用すると、顧客の携帯電話でレビュー ダイアログが直接開きますが、星評価を手動で選択し、フィードバックを入力する必要があります。"
+      },
+      {
+        "q": "代わりに、これを Yelp または TripAdvisor のレビューに使用できますか?",
+        "a": "はい！このページは Google レビューに焦点を当てていますが、標準の URL QR コード ジェネレーターを使用して、Yelp、TripAdvisor、または Trustpilot プロフィールの直接レビュー リンクを貼り付けるだけで済みます。"
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "不動産業者向け vCard QR コード",
+    "seoDesc": "もうリードを失うことはありません。不動産の名刺やオープンハウスのパンフレット用のデジタル vCard QR コードを作成します。",
+    "infoGain": "ネットワーキングのヒント: vCard QR コードを「販売中」の看板やオープンハウスのチラシに貼り付けてください。潜在的な購入者は、1 回のスキャンであなたの連絡先の詳細、写真、ウェブサイトを電話の連絡先に即座に保存できます。",
+    "faqs": [
+      {
+        "q": "クライアントが vCard QR コードをスキャンするとどうなりますか?",
+        "a": "vCard QR コードをスキャンすると、ユーザーの電話機に、名前、電話番号、電子メール、および会社の詳細が事前に入力された新しい連絡先エントリを作成するよう自動的に求められます。 「保存」をタップするだけです。"
+      },
+      {
+        "q": "vCard QR コードにはインターネット接続が必要ですか?",
+        "a": "いいえ！すべての連絡先情報は、QR コード自体のピクセルに直接エンコードされます。クライアントは、携帯電話の電波が届かないエリアにいる場合でも、あなたの詳細をスキャンして保存できます。"
+      },
+      {
+        "q": "プロの顔写真を vCard に追加できますか?",
+        "a": "標準の vCard QR コードは埋め込み画像をサポートしていません。これは、画像によってデータ ペイロードが大きくなりすぎて、QR コードが密度が高くなりすぎて簡単にスキャンできないためです。スキャンの信頼性を最大限に高めるために、データをテキストベースに保つことをお勧めします。"
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "イベントチケット＆登録用URL QRコード",
+    "seoDesc": "物理的なチラシをデジタル チケット ページにリンクすることで、イベントの参加者数を増やします。イベント登録用の高速かつ無料の URL QR コードを生成します。",
+    "infoGain": "Event Planning Tip: Track your flyer performance by using a UTM-tagged URL (e.g., ?utm_source=flyer&utm_campaign=summer_fest) before generating the QR code.これにより、物理スキャンによるチケット販売数を正確に確認できます。",
+    "faqs": [
+      {
+        "q": "チラシを印刷した後にチケットリンクを変更できますか?",
+        "a": "CreateMy-QR は静的 QR コードを生成します。これは、リンクが永続的にハードコーディングされることを意味します。変更可能なリンクが必要な場合は、URL 短縮サービス (Bitly など) を使用して短いリンクを作成し、その短いリンクの QR コードを生成することをお勧めします。"
+      },
+      {
+        "q": "イベントポスターに QR コードをどのくらいの大きさで印刷すればよいですか?",
+        "a": "イベントポスターを遠くから見る場合は、QRコードを拡大してご覧ください。経験則としては、比率は 10:1 です。人が 10 フィート離れた場所からスキャンする場合、QR コードの幅は少なくとも 1 フィート (12 インチ) である必要があります。"
+      },
+      {
+        "q": "イベント QR コードをスキャンできる人数に制限はありますか?",
+        "a": "スキャン制限はまったくありません。 QR コードは当社のサーバーを経由せずにチケット発行 URL を直接指すため、ボトルネックなく無制限の数の人が同時に QR コードをスキャンできます。"
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "カスタマーサポート用のWhatsApp QRコード",
+    "seoDesc": "即時の顧客サービスを提供します。サポート チームとの直接チャットを開始する WhatsApp QR コードを生成し、事前に入力されたメッセージを入力します。",
+    "infoGain": "サポート戦略: WhatsApp メッセージに「こんにちは、最近の注文についてサポートが必要です」などのコンテキスト テキストを事前に入力します。これにより摩擦がなくなり、顧客はすぐに対応されていると感じることができます。",
+    "faqs": [
+      {
+        "q": "顧客は最初に私の番号を保存する必要がありますか?",
+        "a": "いいえ、それが WhatsApp QR コードの魔法です。 WhatsApp の「クリックしてチャット」機能を利用します。コードをスキャンすると、顧客が電話番号をアドレス帳に保存することなく、すぐに会社番号を含むチャット ウィンドウが開きます。"
+      },
+      {
+        "q": "これをWhatsAppビジネスに使用できますか?",
+        "a": "はい、これは標準の WhatsApp アカウントと WhatsApp Business アカウントの両方で完全に機能します。基礎となるディープリンク構造 (wa.me) は、両方のプラットフォームで同一です。"
+      },
+      {
+        "q": "デスクトップ コンピュータでスキャンするとどうなるでしょうか?",
+        "a": "デスクトップ上でスキャンするか、リンクをクリックすると、ユーザーは WhatsApp Web または WhatsApp デスクトップ アプリケーションを開いてシームレスに会話を続けるよう求められます。"
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "非営利および寄付用の PayPal QR コード",
+    "seoDesc": "資金調達をスムーズに行います。 PayPal QR コードを生成して、慈善イベント、教会の礼拝、地域の集まりで即時寄付を受け付けます。",
+    "infoGain": "募金活動のヒント: QR コードを、「スキャンして $5 を寄付」などの明確な行動喚起 (CTA) と組み合わせます。特定の少額を定義すると、意思決定の疲れが軽減され、寄付の変換率が大幅に向上します。",
+    "faqs": [
+      {
+        "q": "この方法で寄付を受け入れる場合、隠れた手数料はありますか?",
+        "a": "CreateMy-QR は完全に無料で、手数料はかかりません。ただし、特定の PayPal アカウントの種類に応じて、送金を受け取るための標準の PayPal 取引手数料が引き続き適用されます。"
+      },
+      {
+        "q": "寄付者は自分で寄付金額を選択できますか?",
+        "a": "はい、QR コードを生成するときに「金額」フィールドを空白のままにすると、寄付者は PayPal アプリに希望する寄付金額を手動で入力するよう求められます。"
+      },
+      {
+        "q": "これは金融取引を処理する上で安全ですか?",
+        "a": "はい。私たちのツールは、標準の PayPal の「今すぐ購入」URL を厳密に生成します。実際の金融取引はすべて、PayPal の非常に安全な暗号化された環境内で行われます。私たちが支払いデータに触れたり見たりすることはありません。"
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "ニュースレター登録用の電子メール QR コード",
+    "seoDesc": "物理的な場所からメール リストを増やします。メーリング リストへの購読リクエストを事前に入力する電子メール QR コードを生成します。",
+    "infoGain": "グロースハック: この QR コードを名刺の裏または小売店のレジに貼り付けてください。購読と引き換えに 10% 割引コードを提供することで、スキャンを奨励します。",
+    "faqs": [
+      {
+        "q": "電子メール QR コードはどのように機能しますか?",
+        "a": "スキャンされると、ユーザーの携帯電話で「mailto:」プロトコルがトリガーされ、デフォルトの電子メール アプリ (Apple Mail や Gmail など) が自動的に開き、事前定義された電子メール アドレス、件名、本文を含む新しい電子メールの下書きが作成されます。"
+      },
+      {
+        "q": "メールは自動的に送信されますか?",
+        "a": "いいえ、セキュリティ対策として、モバイル オペレーティング システムでは、電子メールの下書きを開いた後、ユーザーが手動で [送信] ボタンを押す必要があります。これにより、メッセージを確認する機会が得られます。"
+      },
+      {
+        "q": "QR コード内の他のアドレスを CC または BCC できますか?",
+        "a": "コアの「mailto」プロトコルは CC と BCC をサポートしていますが、現在、古い電子メール クライアントと特定の Android デバイス間で最大限の互換性を確保するために、プライマリ受信者フィールドに重点を置いています。"
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "App Store QR Code for Mobile Game Downloads",
+    "seoDesc": "Drive app installs directly from out-of-home advertising. Create a QR code that links straight to your game on the iOS App Store or Google Play.",
+    "infoGain": "User Acquisition Tip: If you are advertising a mobile game at a convention or on a billboard, an App Store QR code bridges the physical-to-digital gap, capturing impulse downloads before the user forgets the game's name.",
+    "placeholderOverrides": {
+      "url": "https://apps.apple.com/app/id1234567890"
+    },
+    "faqs": [
+      {
+        "q": "Can one QR code route to both iOS and Android stores?",
+        "a": "To do this properly, you need a dynamic routing link (like a Firebase Dynamic Link or a custom redirect script on your server) that detects the user's OS. You can then take that dynamic link and generate a standard URL QR Code here."
+      },
+      {
+        "q": "Why use an App Store specific QR code instead of a URL one?",
+        "a": "An App Store QR code often triggers the native App Store or Google Play app to open directly on the user's device, bypassing the web browser. This results in a much smoother, higher-converting installation experience."
+      },
+      {
+        "q": "Will this track my app install metrics?",
+        "a": "The QR code itself does not track metrics. However, if you use an attribution link (from AppsFlyer, Adjust, etc.) as the destination URL, those services will track the install data seamlessly."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "製品マニュアルの YouTube ビデオ QR コード",
+    "seoDesc": "紛らわしい紙のマニュアルをビデオチュートリアルに置き換えます。 YouTube QR コードを作成して、商品の視覚的な説明を即座に提供します。",
+    "infoGain": "顧客成功のヒント: ビデオ チュートリアルの QR コードを製品のパッケージまたは機械に直接印刷すると、顧客が視覚的にトラブルシューティングを行うのに役立ち、コストのかかるカスタマー サポート チケットと返品を大幅に削減できます。",
+    "faqs": [
+      {
+        "q": "YouTube ビデオはスキャン時に自動的に再生されますか?",
+        "a": "ユーザーがコードをスキャンすると、通常、デバイスはネイティブ YouTube アプリを開き、すぐにビデオを読み込みます。デバイスの設定によっては、自動再生が開始される場合があります。"
+      },
+      {
+        "q": "ビデオ内の特定のタイムスタンプにリンクできますか?",
+        "a": "はい！ YouTube リンクをコピーするときは、ジェネレーターに貼り付ける前に時間パラメーター (例: ?t=1m30s) を追加するだけです。 QR コードにより、まさにその瞬間から始まるビデオが起動されます。"
+      },
+      {
+        "q": "YouTube 動画が限定公開されている場合はどうなりますか?",
+        "a": "限定公開の YouTube ビデオは QR コードと完全に連携します。このビデオは一般の検索結果には表示されませんが、物理的な QR コードをスキャンすれば誰でも問題なく説明ビデオを視聴できます。"
+      }
+    ]
+  }
+]

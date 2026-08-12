@@ -1,0 +1,222 @@
+[
+  {
+    "id": "pdf-restaurant-menu",
+    "slug": "pdf-qr-code-for-restaurant-menu",
+    "baseTool": "pdf",
+    "h1Title": "Kode QR PDF untuk Menu Restoran",
+    "seoDesc": "Gantikan menu kertas dengan pengalaman digital tanpa kontak. Buat kode QR PDF gratis dan aman untuk menu restoran Anda secara instan.",
+    "infoGain": "Tip Pro untuk Restoran: Gunakan tingkat koreksi kesalahan yang tinggi (Level H) saat mencetak kode QR Anda di tenda meja atau tatakan gelas. Hal ini memastikan kode QR tetap dapat dipindai oleh pelanggan meskipun sedikit rusak, basah, atau kotor karena tumpahan makanan.",
+    "faqs": [
+      {
+        "q": "Apakah kode QR PDF untuk menu kedaluwarsa?",
+        "a": "Tidak, sistem kami menghasilkan kode QR PDF statis yang tidak pernah kedaluwarsa. Namun, jika Anda menggunakan kode QR statis, Anda tidak dapat mengubah file PDF yang mendasarinya nanti. Jika menu Anda sering berubah, pertimbangkan untuk menghosting PDF di situs web Anda dan gunakan pembuat Kode QR URL kami."
+      },
+      {
+        "q": "Bagaimana cara memperbarui menu restoran saya tanpa mencetak ulang kode QR?",
+        "a": "Untuk memperbarui menu tanpa mencetak ulang tenda meja, Anda harus membuat URL Kode QR yang tertaut ke halaman menu di situs web restoran Anda (misalnya, restoran-anda.com/menu.pdf). Setiap kali menu Anda berubah, Anda cukup mengunggah PDF baru ke situs web Anda, dan kode QR yang ada akan terus berfungsi dengan sempurna."
+      },
+      {
+        "q": "Apakah kode QR PDF aman untuk dipindai oleh pelanggan saya?",
+        "a": "Ya! Karena CreateMy-QR beroperasi 100% secara lokal di perangkat Anda, kami tidak melacak pelanggan Anda atau memasukkan iklan pihak ketiga ke dalam pengalaman pemindaian. Saat pelanggan memindai kode Anda, mereka diarahkan langsung ke menu Anda dengan aman."
+      }
+    ]
+  },
+  {
+    "id": "wifi-cafe-hotel",
+    "slug": "wifi-qr-code-for-cafe-hotel",
+    "baseTool": "wifi",
+    "h1Title": "Kode QR WiFi untuk Kafe & Hotel",
+    "seoDesc": "Biarkan tamu Anda terhubung ke jaringan WiFi Anda secara instan tanpa mengetikkan kata sandi. Hasilkan kode QR WiFi gratis untuk kafe atau hotel Anda.",
+    "infoGain": "Tip Perhotelan: Cetak kode QR WiFi Anda dan letakkan dalam bingkai yang indah di meja resepsionis atau di meja kafe individu. Para tamu menghargai pengalaman mudah bergabung dengan jaringan secara instan tanpa meminta kata sandi dari staf.",
+    "faqs": [
+      {
+        "q": "Apakah kata sandi WiFi terlihat ketika seseorang memindai kode QR?",
+        "a": "Saat tamu memindai kode QR menggunakan kamera smartphone asli mereka (iOS atau Android), perangkat mereka akan secara otomatis meminta untuk bergabung dengan jaringan tanpa mengungkapkan kata sandi dalam teks biasa. Namun, aplikasi pemindai QR khusus mungkin menampilkan data teks mentah."
+      },
+      {
+        "q": "Bisakah saya menyembunyikan jaringan WiFi saya (SSID Tersembunyi) dan masih menggunakan kode QR?",
+        "a": "Ya! Saat membuat Kode QR WiFi Anda, cukup centang opsi 'Jaringan Tersembunyi'. Hal ini memastikan bahwa tamu dapat terhubung dengan lancar meskipun router Anda dikonfigurasi untuk tidak menyiarkan SSID-nya."
+      },
+      {
+        "q": "Apakah kode QR WiFi berfungsi untuk iPhone dan Android?",
+        "a": "Sangat. Standar kode QR WiFi (WPA/WPA2/WEP) diakui secara universal oleh sistem operasi Apple iOS dan Android. Pengguna cukup mengarahkan aplikasi kamera default mereka ke kode untuk terhubung."
+      }
+    ]
+  },
+  {
+    "id": "google-review-local-business",
+    "slug": "google-review-qr-code-for-local-business",
+    "baseTool": "greview",
+    "h1Title": "Google Tinjau Kode QR untuk Bisnis Lokal",
+    "seoDesc": "Tingkatkan SEO lokal Anda dengan memudahkan pelanggan memberikan peringkat bintang 5. Buat kode QR Ulasan Google gratis.",
+    "infoGain": "Tip Pemasaran: Waktu terbaik untuk meminta review adalah saat puncak kepuasan pelanggan. Tambahkan kode QR ini ke kuitansi, pintu keluar, atau minta staf menunjukkannya di tablet segera setelah memberikan layanan terbaik.",
+    "faqs": [
+      {
+        "q": "Bagaimana cara menemukan tautan ulasan Google Bisnisku?",
+        "a": "Masuk ke dasbor Google Profil Bisnis Anda, cari tombol 'Dapatkan lebih banyak ulasan' atau 'Minta ulasan' di tab beranda, dan salin URL singkat yang tersedia di sana. Rekatkan URL itu langsung ke generator kami."
+      },
+      {
+        "q": "Akankah kode QR ini secara otomatis memberi bisnis saya 5 bintang?",
+        "a": "Tidak, kebijakan Google melarang pengisian peringkat bintang terlebih dahulu. Kode QR akan membuka dialog ulasan langsung di ponsel pelanggan, tetapi mereka harus memilih peringkat bintang secara manual dan mengetikkan tanggapan mereka."
+      },
+      {
+        "q": "Bisakah saya menggunakan ini untuk ulasan Yelp atau TripAdvisor?",
+        "a": "Ya! Meskipun halaman ini berfokus pada Ulasan Google, Anda cukup menggunakan pembuat Kode QR URL standar kami dan menempelkan tautan ulasan langsung untuk profil Yelp, TripAdvisor, atau Trustpilot Anda."
+      }
+    ]
+  },
+  {
+    "id": "vcard-real-estate",
+    "slug": "vcard-qr-code-for-real-estate-agents",
+    "baseTool": "vcard",
+    "h1Title": "Kode QR vCard untuk Agen Real Estat",
+    "seoDesc": "Jangan pernah kehilangan keunggulan lagi. Buat kode QR vCard digital untuk kartu nama real estat dan brosur open house Anda.",
+    "infoGain": "Tip Jaringan: Tempatkan kode QR vCard Anda pada tanda 'Dijual' dan selebaran open house. Calon pembeli dapat langsung menyimpan detail kontak, foto, dan situs web Anda ke kontak telepon mereka dengan sekali pemindaian.",
+    "faqs": [
+      {
+        "q": "Apa yang terjadi ketika klien memindai kode QR vCard?",
+        "a": "Memindai kode QR vCard secara otomatis meminta ponsel pengguna untuk membuat entri kontak baru yang telah diisi sebelumnya dengan nama, nomor telepon, email, dan detail perusahaan Anda. Mereka cukup mengetuk 'Simpan'."
+      },
+      {
+        "q": "Apakah kode QR vCard memerlukan koneksi internet?",
+        "a": "TIDAK! Semua informasi kontak Anda dikodekan langsung ke dalam piksel kode QR itu sendiri. Klien Anda dapat memindai dan menyimpan detail Anda meskipun mereka berada di area tanpa penerimaan seluler."
+      },
+      {
+        "q": "Bisakah saya menambahkan foto profesional saya ke vCard?",
+        "a": "Kode QR vCard standar tidak mendukung gambar yang disematkan karena gambar membuat muatan data terlalu besar, sehingga menghasilkan kode QR yang terlalu padat untuk dipindai dengan mudah. Kami menyarankan agar data tetap berbasis teks untuk keandalan pemindaian maksimum."
+      }
+    ]
+  },
+  {
+    "id": "url-event-tickets",
+    "slug": "url-qr-code-for-event-tickets-registration",
+    "baseTool": "url",
+    "h1Title": "URL Kode QR untuk Tiket Acara & Pendaftaran",
+    "seoDesc": "Tingkatkan kehadiran acara dengan menautkan brosur fisik ke halaman tiket digital Anda. Hasilkan kode QR URL yang cepat dan gratis untuk pendaftaran acara.",
+    "infoGain": "Tip Perencanaan Acara: Lacak kinerja pamflet Anda dengan menggunakan URL yang diberi tag UTM (misalnya, ?utm_source=flyer&utm_campaign=summer_fest) sebelum membuat kode QR. Ini memungkinkan Anda melihat dengan tepat berapa banyak penjualan tiket yang berasal dari pemindaian fisik.",
+    "faqs": [
+      {
+        "q": "Bisakah saya mengubah tautan tiket setelah mencetak brosur?",
+        "a": "CreateMy-QR menghasilkan kode QR statis, yang berarti tautan tersebut di-hardcode secara permanen. Jika Anda memerlukan tautan yang dapat diubah, sebaiknya gunakan layanan pemendek URL (seperti Bitly) untuk membuat tautan pendek, lalu buat kode QR untuk tautan pendek tersebut."
+      },
+      {
+        "q": "Seberapa besar saya harus mencetak kode QR pada poster acara saya?",
+        "a": "Untuk poster acara yang dilihat dari jarak jauh, perbesar kode QR. Aturan praktis yang baik adalah rasio 10:1—jika seseorang memindai dari jarak 10 kaki, kode QR harus memiliki lebar minimal 1 kaki (12 inci)."
+      },
+      {
+        "q": "Apakah ada batasan berapa banyak orang yang dapat memindai kode QR acara saya?",
+        "a": "Sama sekali tidak ada batasan pemindaian! Karena kode QR hanya menunjuk langsung ke URL tiket Anda tanpa melewati server kami, orang dalam jumlah tidak terbatas dapat memindainya secara bersamaan tanpa hambatan apa pun."
+      }
+    ]
+  },
+  {
+    "id": "whatsapp-customer-support",
+    "slug": "whatsapp-qr-code-for-customer-support",
+    "baseTool": "whatsapp",
+    "h1Title": "Kode QR WhatsApp untuk Dukungan Pelanggan",
+    "seoDesc": "Menyediakan layanan pelanggan instan. Hasilkan kode QR WhatsApp yang membuka obrolan langsung dengan tim dukungan Anda, lengkap dengan pesan yang sudah diisi sebelumnya.",
+    "infoGain": "Strategi Dukungan: Isi terlebih dahulu pesan WhatsApp dengan teks kontekstual seperti 'Halo, saya butuh bantuan dengan pesanan terbaru saya.' Hal ini menghilangkan gesekan dan membuat pelanggan merasa segera diperhatikan.",
+    "faqs": [
+      {
+        "q": "Apakah pelanggan perlu menyimpan nomor saya terlebih dahulu?",
+        "a": "Tidak, itulah keajaiban kode QR WhatsApp! Ini menggunakan fitur 'Klik untuk Mengobrol' WhatsApp. Memindai kode secara instan membuka jendela obrolan dengan nomor bisnis Anda tanpa mengharuskan pelanggan menyimpannya ke buku alamat mereka."
+      },
+      {
+        "q": "Bisakah saya menggunakan ini untuk WhatsApp Business?",
+        "a": "Ya, ini berfungsi sempurna untuk akun WhatsApp standar dan WhatsApp Business. Struktur tautan dalam (wa.me) yang mendasarinya identik untuk kedua platform."
+      },
+      {
+        "q": "Apa yang terjadi jika mereka memindainya di komputer desktop?",
+        "a": "Jika dipindai di desktop atau diklik melalui tautan, pengguna akan diminta membuka WhatsApp Web atau aplikasi WhatsApp Desktop untuk melanjutkan percakapan dengan lancar."
+      }
+    ]
+  },
+  {
+    "id": "payment-paypal-donation",
+    "slug": "paypal-qr-code-for-donations",
+    "baseTool": "paypal",
+    "h1Title": "Kode QR PayPal untuk Nirlaba & Donasi",
+    "seoDesc": "Jadikan penggalangan dana tanpa hambatan. Hasilkan kode QR PayPal untuk menerima donasi instan di acara amal, layanan gereja, atau pertemuan komunitas.",
+    "infoGain": "Tip Penggalangan Dana: Gabungkan kode QR dengan Ajakan Bertindak (CTA) yang jelas seperti 'Pindai untuk Mendonasikan $5'. Menentukan jumlah yang spesifik dan kecil akan mengurangi kelelahan pengambilan keputusan dan secara signifikan meningkatkan tingkat konversi donasi.",
+    "faqs": [
+      {
+        "q": "Apakah ada biaya tersembunyi untuk menerima sumbangan dengan cara ini?",
+        "a": "CreateMy-QR 100% gratis dan tidak dikenakan komisi. Namun, biaya transaksi PayPal standar untuk menerima uang akan tetap berlaku sesuai dengan jenis akun PayPal spesifik Anda."
+      },
+      {
+        "q": "Bisakah donatur memilih sendiri jumlah donasinya?",
+        "a": "Ya, jika Anda mengosongkan kolom 'Jumlah' saat membuat kode QR, donatur akan diminta memasukkan secara manual jumlah donasi yang diinginkan di aplikasi PayPal."
+      },
+      {
+        "q": "Apakah ini aman untuk menangani transaksi keuangan?",
+        "a": "Ya. Alat kami secara ketat menghasilkan URL 'Beli Sekarang' PayPal standar. Transaksi finansial sebenarnya terjadi sepenuhnya dalam lingkungan PayPal yang sangat aman dan terenkripsi. Kami tidak pernah menyentuh atau melihat data pembayaran."
+      }
+    ]
+  },
+  {
+    "id": "email-newsletter-signup",
+    "slug": "email-qr-code-for-newsletter-signup",
+    "baseTool": "email",
+    "h1Title": "Email Kode QR untuk Pendaftaran Buletin",
+    "seoDesc": "Kembangkan daftar email Anda dari lokasi fisik. Hasilkan kode QR Email yang mengisi terlebih dahulu permintaan berlangganan ke milis Anda.",
+    "infoGain": "Peretasan Pertumbuhan: Tempatkan kode QR ini di bagian belakang kartu nama Anda atau di meja kasir ritel Anda. Berikan insentif pada pemindaian dengan menawarkan kode diskon 10% sebagai imbalan berlangganan.",
+    "faqs": [
+      {
+        "q": "Bagaimana cara kerja Kode QR Email?",
+        "a": "Saat dipindai, ini memicu protokol 'mailto:' di ponsel pengguna, yang secara otomatis membuka aplikasi email default mereka (seperti Apple Mail atau Gmail) dan membuat draf email baru dengan alamat email, subjek, dan teks isi yang telah Anda tentukan sebelumnya."
+      },
+      {
+        "q": "Apakah email akan terkirim secara otomatis?",
+        "a": "Tidak, sebagai tindakan pengamanan, sistem operasi seluler mengharuskan pengguna menekan tombol 'Kirim' secara manual setelah draf email dibuka. Ini memberi mereka kesempatan untuk meninjau pesan tersebut."
+      },
+      {
+        "q": "Bisakah saya CC atau BCC alamat lain di kode QR?",
+        "a": "Meskipun protokol inti 'mailto' mendukung CC dan BCC, saat ini kami fokus pada bidang penerima utama untuk memastikan kompatibilitas maksimum di klien email lama dan perangkat Android tertentu."
+      }
+    ]
+  },
+  {
+    "id": "appstore-game-download",
+    "slug": "app-store-qr-code-for-game-downloads",
+    "baseTool": "appstore",
+    "h1Title": "Kode QR App Store untuk Unduhan Game Seluler",
+    "seoDesc": "Dorong pemasangan aplikasi langsung dari iklan di luar rumah. Buat kode QR yang tertaut langsung ke game Anda di iOS App Store atau Google Play.",
+    "infoGain": "Kiat Akuisisi Pengguna: Jika Anda mengiklankan game seluler di konvensi atau di papan reklame, kode QR App Store menjembatani kesenjangan fisik-ke-digital, menangkap unduhan impulsif sebelum pengguna lupa nama game tersebut.",
+    "faqs": [
+      {
+        "q": "Bisakah satu kode QR dirutekan ke toko iOS dan Android?",
+        "a": "Untuk melakukannya dengan benar, Anda memerlukan link perutean dinamis (seperti Firebase Dynamic Link atau skrip pengalihan khusus di server Anda) yang mendeteksi OS pengguna. Anda kemudian dapat mengambil tautan dinamis itu dan membuat Kode QR URL standar di sini."
+      },
+      {
+        "q": "Mengapa menggunakan kode QR khusus App Store dan bukan kode URL?",
+        "a": "Kode QR App Store sering kali memicu aplikasi App Store atau Google Play asli untuk terbuka langsung di perangkat pengguna, melewati browser web. Hal ini menghasilkan pengalaman instalasi yang lebih lancar dan konversi lebih tinggi."
+      },
+      {
+        "q": "Apakah ini akan melacak metrik pemasangan aplikasi saya?",
+        "a": "Kode QR itu sendiri tidak melacak metrik. Namun, jika Anda menggunakan tautan atribusi (dari AppsFlyer, Adjust, dll.) sebagai URL tujuan, layanan tersebut akan melacak data pemasangan dengan lancar."
+      }
+    ]
+  },
+  {
+    "id": "youtube-product-manual",
+    "slug": "youtube-qr-code-for-product-manuals",
+    "baseTool": "youtube",
+    "h1Title": "Kode QR Video YouTube untuk Manual Produk",
+    "seoDesc": "Gantikan manual kertas yang membingungkan dengan tutorial video. Buat kode QR YouTube untuk memberikan petunjuk visual instan untuk produk Anda.",
+    "infoGain": "Tip Sukses Pelanggan: Mencetak kode QR tutorial video langsung pada kemasan atau mesin produk Anda membantu pelanggan memecahkan masalah secara visual, yang secara drastis dapat mengurangi biaya tiket dan pengembalian dukungan pelanggan yang mahal.",
+    "faqs": [
+      {
+        "q": "Apakah video YouTube diputar secara otomatis saat dipindai?",
+        "a": "Saat pengguna memindai kode, perangkat mereka biasanya akan membuka aplikasi YouTube asli dan segera memuat video. Tergantung pada pengaturan perangkatnya, ini mungkin mulai diputar otomatis."
+      },
+      {
+        "q": "Bisakah saya menautkan ke stempel waktu tertentu di video?",
+        "a": "Ya! Saat Anda menyalin tautan YouTube, cukup tambahkan parameter waktu (misalnya, ?t=1m30s) sebelum menempelkannya ke generator. Kode QR kemudian akan meluncurkan video tepat pada saat itu."
+      },
+      {
+        "q": "Bagaimana jika video YouTube tidak terdaftar?",
+        "a": "Video YouTube yang tidak terdaftar berfungsi sempurna dengan kode QR. Video tersebut tidak akan muncul di hasil pencarian publik, tetapi siapa pun yang memindai kode QR fisik akan dapat melihat video instruksi tersebut tanpa masalah."
+      }
+    ]
+  }
+]
