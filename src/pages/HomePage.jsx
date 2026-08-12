@@ -286,7 +286,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
         <div className="max-w-7xl mx-auto px-6">
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 32 }}>
-            <h2 className="homepage-section-title text-zinc-900 dark:text-white" style={{
+            <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] text-zinc-900 dark:text-white" style={{
               fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.2,
             }}>
               {activeCat === 'all'
