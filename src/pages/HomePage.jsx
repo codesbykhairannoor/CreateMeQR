@@ -192,7 +192,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
       </Helmet>
 
       {/* ═══════ SECTION 1: HERO ═══════ */}
-      <section style={{ position: 'relative', paddingTop: 'clamp(96px, 10vw, 120px)', paddingBottom: '56px', textAlign: 'center' }}>
+      <section style={{ position: 'relative', paddingTop: 'clamp(80px, 10vw, 120px)', paddingBottom: '56px', textAlign: 'center' }}>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
 
           {/* Monumental headline — class matches audiovideo .hero-title pattern */}
@@ -222,13 +222,14 @@ export default function HomePage({ currentLangCode = 'en' }) {
 
 
           {/* Search */}
-          <div style={{ maxWidth: 600, margin: '0 auto 44px', position: 'relative' }}>
+          <div className="hero-search-wrapper" style={{ maxWidth: 600, margin: '0 auto 44px', position: 'relative' }}>
             <Search size={20} style={{ position: 'absolute', left: 22, top: '50%', transform: 'translateY(-50%)', opacity: 0.38, zIndex: 2 }} />
             <input
               type="text"
               value={search}
               onChange={e => setSearch(e.target.value)}
               placeholder={t('home.searchPlaceholder', 'Search tools — WhatsApp, WiFi, vCard, PDF...')}
+              className="hero-search-input"
               style={{
                 width: '100%', padding: '18px 24px 18px 56px', borderRadius: 9999,
                 border: '1.5px solid rgba(37,99,235,0.18)',

@@ -233,11 +233,39 @@
 
 
 /* ==========================================================================
-   MOBILE TYPOGRAPHY OVERRIDES (<=640px)
-   Reduces all section titles and descriptions on small screens
+   MOBILE TYPOGRAPHY & LAYOUT OVERRIDES (<=640px)
+   Approach: zoom: 0.87 on main content (like helpmyfile/audiovideo) +
+   targeted overrides for search bar, navbar, and section titles.
    ========================================================================== */
 @media (max-width: 640px) {
-  /* Home hero h1 — bumped ~1-1.5px */
+  /* Zoom main content slightly — like helpmyfile zoom:0.8 approach */
+  /* But NOT on nav (fixed) — only on page content */
+  body main,
+  body > div > main {
+    zoom: 0.9;
+  }
+
+  /* Navbar icon buttons — tighten on mobile */
+  nav button {
+    padding: 6px !important;
+  }
+  nav svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  /* Hero search bar — compact on mobile */
+  .hero-search-input {
+    padding: 12px 18px 12px 46px !important;
+    font-size: 0.875rem !important;
+  }
+  .hero-search-wrapper svg {
+    left: 14px !important;
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  /* Home hero h1 */
   body .homepage-hero-title {
     font-size: clamp(1.85rem, 8.5vw, 2.6rem) !important;
   }
@@ -246,19 +274,19 @@
     font-size: clamp(1.35rem, 5.5vw, 1.75rem) !important;
   }
 
-  /* All static pages h1 — stronger selector beats Tailwind class specificity */
+  /* All static pages h1 — body prefix beats Tailwind class specificity (0,1,0) */
   body section h1,
   body main h1 {
     font-size: clamp(1.75rem, 7vw, 2.3rem) !important;
   }
 
-  /* All static pages h2 section titles — proportional to hero */
+  /* All static pages h2 — proportional to hero */
   body section h2,
   body main h2 {
     font-size: clamp(1.35rem, 5.5vw, 1.75rem) !important;
   }
 
-  /* hq-layout pages h1/h2/p */
+  /* hq-layout tool pages h1/h2/p */
   body [class^="hq-layout-"] h1 {
     font-size: clamp(1.6rem, 7vw, 2.1rem) !important;
   }
