@@ -1,42 +1,51 @@
 // pseo-usecases.js
-// Dynamically loads all 30 languages from pseo-locales
+// Dynamically loads all locale files using Vite's import.meta.glob (static analysis required)
 
-let pseoDataByLang = {};
+// Must be called at TOP LEVEL - Vite needs to statically analyze this at compile time
+const modules = import.meta.glob('./pseo-locales/*.json', { eager: true });
 
-// When running in Vite (Browser/Client)
-if (typeof import.meta !== 'undefined' && import.meta.glob) {
-  const modules = import.meta.glob('./pseo-locales/*.json', { eager: true });
-  for (const path in modules) {
-    const lang = path.replace('./pseo-locales/', '').replace('.json', '');
-    pseoDataByLang[lang] = modules[path].default || modules[path];
-  }
-} else {
-  // When running in Node (SSG Build)
-  // We do not need this in generate-ssg.cjs anymore since it loads it manually,
-  // but just in case, we mock it empty so it doesn't crash.
+const pseoDataByLang = {};
+for (const filePath in modules) {
+  const lang = filePath.replace('./pseo-locales/', '').replace('.json', '');
+  pseoDataByLang[lang] = modules[filePath].default || modules[filePath];
 }
 
 /**
  * Get the pSEO use case by slug.
- * Since slugs are unique across all languages, we search all languages for a matching slug.
+ * Searches across all loaded locale files for a matching slug.
+ * @param {string} slug - the URL slug (e.g. '/pdf-qr-code-for-restaurant-menu')
+ * @returns {object|null} the use case object (with a `lang` field injected) or null
  */
 export function getPseoUseCase(slug) {
-  const cleanSlug = slug.replace(/^\/+/, ''); // remove leading slash
-  
+  if (!slug) return null;
+  const cleanSlug = slug.replace(/^\/+/, ''); // strip leading slash
+
   for (const lang in pseoDataByLang) {
     const cases = pseoDataByLang[lang] || [];
-    // We check both absolute /slug and clean slug
-    const found = cases.find(uc => uc.slug === cleanSlug || uc.slug === slug || '/' + uc.slug === slug);
+    const found = cases.find(
+      uc => uc.slug === cleanSlug || uc.slug === slug || '/' + uc.slug === slug
+    );
     if (found) {
-      return { ...found, lang }; // inject language context
+      return { ...found, lang };
     }
   }
   return null;
 }
 
 /**
- * Returns all use cases for a specific language
+ * Returns all use cases for a specific language.
+ * @param {string} lang - e.g. 'en', 'fr', 'id'
  */
 export function getUseCasesForLang(lang = 'en') {
   return pseoDataByLang[lang] || [];
 }
+
+/**
+ * Returns the full map of all languages and their use cases.
+ */
+export function getAllPseoData() {
+  return pseoDataByLang;
+}
+
+// Legacy export for any code that still imports pseoUseCases directly
+export const pseoUseCases = pseoDataByLang['en'] || [];
