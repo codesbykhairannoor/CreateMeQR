@@ -237,35 +237,38 @@
    Reduces all section titles and descriptions on small screens
    ========================================================================== */
 @media (max-width: 640px) {
-  /* Home hero h1 — bumped 1-1.5px per user request */
-  .homepage-hero-title {
-    font-size: clamp(1.8rem, 8vw, 2.55rem) !important;
+  /* Home hero h1 — bumped ~1-1.5px */
+  body .homepage-hero-title {
+    font-size: clamp(1.85rem, 8.5vw, 2.6rem) !important;
   }
   /* Home section h2 */
-  .homepage-section-title {
+  body .homepage-section-title {
     font-size: clamp(1.35rem, 5.5vw, 1.75rem) !important;
   }
 
-  /* All static pages h1 (About, Privacy, Terms, Pricing, etc.) */
-  section h1 {
+  /* All static pages h1 — stronger selector beats Tailwind class specificity */
+  body section h1,
+  body main h1 {
     font-size: clamp(1.75rem, 7vw, 2.3rem) !important;
   }
 
-  /* All static pages h2 section titles — proportional to hero, not tiny */
-  section h2 {
+  /* All static pages h2 section titles — proportional to hero */
+  body section h2,
+  body main h2 {
     font-size: clamp(1.35rem, 5.5vw, 1.75rem) !important;
   }
 
   /* hq-layout pages h1/h2/p */
-  [class^="hq-layout-"] h1 {
+  body [class^="hq-layout-"] h1 {
     font-size: clamp(1.6rem, 7vw, 2.1rem) !important;
   }
-  [class^="hq-layout-"] h2 {
+  body [class^="hq-layout-"] h2 {
     font-size: clamp(1.3rem, 5.5vw, 1.7rem) !important;
   }
-  [class^="hq-layout-"] p,
-  [class^="hq-layout-"] .hq-section-desc {
+  body [class^="hq-layout-"] p,
+  body [class^="hq-layout-"] .hq-section-desc {
     font-size: clamp(0.82rem, 3.5vw, 0.95rem) !important;
   }
 }
+
 
