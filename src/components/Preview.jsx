@@ -25,97 +25,33 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
     }
   }, [hasGenerated, qrCode]);
 
+  // Use worker for heavy string parsing (INP optimization)
   useEffect(() => {
-    let dataString = '';
+    const worker = new Worker(new URL('../workers/data.worker.js', import.meta.url), { type: 'module' });
+    
+    worker.onmessage = (e) => {
+      if (e.data.success) {
+        const dataString = e.data.dataString;
+        
+        // Defer the heavy DOM canvas drawing to yield the main thread (INP fix)
+        setTimeout(() => {
+          qrCode.update({
+            data: dataString,
+            dotsOptions: visuals.dotsOptions,
+            backgroundOptions: visuals.backgroundOptions,
+            image: visuals.image,
+            imageOptions: visuals.imageOptions || { crossOrigin: "anonymous", margin: 10 },
+            qrOptions: visuals.qrOptions || { errorCorrectionLevel: 'Q' },
+            cornersSquareOptions: visuals.cornersSquareOptions,
+            cornersDotOptions: visuals.cornersDotOptions,
+          });
+        }, 0);
+      }
+    };
 
-    if (qrType === 'url') {
-      dataString = qrData.url || 'https://createmy-qr.com';
-    } else if (qrType === 'wifi') {
-      const ssid = qrData.ssid || '';
-      const pass = qrData.password || '';
-      const enc = qrData.encryption || 'WPA';
-      dataString = `WIFI:T:${enc};S:${ssid};P:${pass};;`;
-    } else if (qrType === 'vcard') {
-      const { firstName = '', lastName = '', phone = '', email = '' } = qrData;
-      dataString = `BEGIN:VCARD\nVERSION:3.0\nN:${lastName};${firstName}\nFN:${firstName} ${lastName}\nTEL;TYPE=CELL:${phone}\nEMAIL;TYPE=WORK:${email}\nEND:VCARD`;
-    } else if (qrType === 'text') {
-      dataString = qrData.text || 'Hello World';
-    } else if (qrType === 'email') {
-      dataString = `MATMSG:TO:${qrData.emailTo || ''};SUB:${qrData.emailSubject || ''};BODY:${qrData.emailBody || ''};;`;
-    } else if (qrType === 'phone') {
-      dataString = `tel:${qrData.phoneNumber || ''}`;
-    } else if (qrType === 'sms') {
-      dataString = `smsto:${qrData.smsNumber || ''}:${qrData.smsMessage || ''}`;
-    } else if (qrType === 'location') {
-      dataString = `geo:${qrData.lat || '0'},${qrData.lng || '0'}`;
-    } else if (qrType === 'event') {
-      const formatTime = (t) => t ? t.replace(/[-:]/g, '') + '00Z' : '';
-      dataString = `BEGIN:VEVENT\nSUMMARY:${qrData.eventTitle || ''}\nLOCATION:${qrData.eventLocation || ''}\nDTSTART:${formatTime(qrData.eventStart)}\nDTEND:${formatTime(qrData.eventEnd)}\nEND:VEVENT`;
-    } else if (qrType === 'whatsapp') {
-      // WhatsApp click to chat format: https://wa.me/<number>?text=<url-encoded-message>
-      const cleanNumber = (qrData.waNumber || '').replace(/[^0-9]/g, '');
-      const encodedMsg = encodeURIComponent(qrData.waMessage || '');
-      dataString = `https://wa.me/${cleanNumber}${encodedMsg ? '?text=' + encodedMsg : ''}`;
-    } else if (qrType === 'youtube') {
-      dataString = qrData.youtubeUrl || 'https://youtube.com/';
-    } else if (qrType === 'instagram') {
-      // Instagram URL format
-      const cleanUsername = (qrData.igUsername || '').replace(/^@/, '');
-      dataString = `https://instagram.com/${cleanUsername}`;
-    } else if (qrType === 'appstore') {
-      dataString = qrData.appStoreUrl || 'https://play.google.com/store';
-    } else if (qrType === 'crypto') {
-      // Crypto URI format: bitcoin:<address>?amount=<amount>
-      const coinMap = {
-        bitcoin: 'bitcoin',
-        ethereum: 'ethereum',
-        bitcoincash: 'bitcoincash',
-        litecoin: 'litecoin',
-        dash: 'dash'
-      };
-      const protocol = coinMap[qrData.cryptoCoin || 'bitcoin'];
-      dataString = `${protocol}:${qrData.cryptoAddress || ''}${qrData.cryptoAmount ? '?amount=' + qrData.cryptoAmount : ''}`;
-    } else if (qrType === 'facebook') {
-      const u = (qrData.facebookInput || '').replace(/^@/, '').replace(/.*\//, '');
-      dataString = `https://facebook.com/${u}`;
-    } else if (qrType === 'twitter') {
-      const u = (qrData.twitterInput || '').replace(/^@/, '').replace(/.*\//, '');
-      dataString = `https://twitter.com/${u}`;
-    } else if (qrType === 'tiktok') {
-      const u = (qrData.tiktokInput || '').replace(/^@/, '').replace(/.*\//, '');
-      dataString = `https://tiktok.com/@${u}`;
-    } else if (qrType === 'linkedin') {
-      const u = (qrData.linkedinInput || '').replace(/.*\//, '');
-      dataString = `https://linkedin.com/in/${u}`;
-    } else if (qrType === 'telegram') {
-      const cleanUser = (qrData.telegramInput || '').replace(/^@/, '');
-      dataString = `https://t.me/${cleanUser}`;
-    } else if (qrType === 'snapchat') {
-      const cleanUser = (qrData.snapchatInput || '').replace(/^@/, '');
-      dataString = `https://snapchat.com/add/${cleanUser}`;
-    } else if (qrType === 'discord') {
-      dataString = qrData.discordInput || 'https://discord.com/';
-    } else if (qrType === 'spotify') {
-      dataString = qrData.spotifyInput || 'https://spotify.com/';
-    } else if (qrType === 'paypal') {
-      dataString = `https://paypal.me/${qrData.paypalUsername || ''}${qrData.paypalAmount ? '/' + qrData.paypalAmount : ''}`;
-    } else if (qrType === 'venmo') {
-      const cleanUser = (qrData.venmoInput || '').replace(/^@/, '');
-      dataString = `venmo://paycharge?txn=pay&recipients=${cleanUser}`;
-    } else if (['pdf', 'gforms', 'greview', 'image', 'linkinbio', 'video', 'audio', 'amazon', 'booking', 'file'].includes(qrType)) {
-      dataString = qrData[`${qrType}Input`] || 'https://createmy-qr.com';
-    }
+    worker.postMessage({ qrType, qrData });
 
-    qrCode.update({
-      data: dataString,
-      dotsOptions: visuals.dotsOptions,
-      backgroundOptions: visuals.backgroundOptions,
-      image: visuals.image,
-      imageOptions: visuals.imageOptions || { crossOrigin: "anonymous", margin: 10 },
-      qrOptions: visuals.qrOptions || { errorCorrectionLevel: 'Q' },
-      cornersSquareOptions: visuals.cornersSquareOptions,
-      cornersDotOptions: visuals.cornersDotOptions,
-    });
+    return () => worker.terminate();
   }, [qrType, qrData, visuals, qrCode]);
 
   const onDownloadClick = (extension) => {

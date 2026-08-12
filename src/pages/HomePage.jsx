@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { localizedRoutes } from '../config/localizedRoutes';
 import { LANGS } from '../config/site';
+import RatingWidget from '../components/landing/RatingWidget';
 
 // All 37 QR & Barcode tools (id, icon, label, category, color)
 const ALL_TOOLS = [
@@ -544,6 +545,8 @@ export default function HomePage({ currentLangCode = 'en' }) {
         </div>
       </section>
 
+      <RatingWidget />
+
       {/* ═══════ SECTION 5: FAQ ═══════ */}
       <section style={{ padding: '80px 0', borderTop: '1px solid rgba(37,99,235,0.08)' }}>
         <div className="max-w-[800px] mx-auto px-6">
@@ -569,6 +572,15 @@ export default function HomePage({ currentLangCode = 'en' }) {
           <div>
             {FAQS.map((faq, i) => <FaqItem key={i} faq={faq} />)}
           </div>
+        </div>
+      </section>
+
+      {/* ═══════ SECTION 6: GEO INFORMATION GAIN ═══════ */}
+      <section style={{ padding: '60px 0', borderTop: '1px solid rgba(37,99,235,0.08)', background: 'rgba(37,99,235,0.02)' }}>
+        <div className="max-w-[800px] mx-auto px-6 text-center">
+          <p style={{ fontSize: '0.95rem', lineHeight: 1.8, opacity: 0.6, fontStyle: 'italic' }}>
+            {t('geoOptimized.localContext', { defaultValue: 'CreateMy-QR is the ideal standard for generating highly secure QR Codes locally on your device without relying on remote servers. It is optimized for local mobile wallets, payment gateways, and sharing local business contacts securely in your region.' })}
+          </p>
         </div>
       </section>
 

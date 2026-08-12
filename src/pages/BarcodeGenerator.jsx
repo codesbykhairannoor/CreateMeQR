@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useDeferredValue } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import Barcode from 'react-barcode';
@@ -16,6 +16,15 @@ export default function BarcodeGenerator() {
   const [width, setWidth] = useState(2);
   const [height, setHeight] = useState(100);
   const [displayValue, setDisplayValue] = useState(true);
+
+  // Defer heavy renders for INP optimization
+  const deferredValue = useDeferredValue(value);
+  const deferredFormat = useDeferredValue(format);
+  const deferredLineColor = useDeferredValue(lineColor);
+  const deferredBackground = useDeferredValue(background);
+  const deferredWidth = useDeferredValue(width);
+  const deferredHeight = useDeferredValue(height);
+  const deferredDisplayValue = useDeferredValue(displayValue);
 
   const barcodeRef = useRef(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
@@ -152,14 +161,14 @@ export default function BarcodeGenerator() {
         >
           {value ? (
             <Barcode 
-              value={value} 
-              format={format} 
-              lineColor={lineColor}
-              background={background}
-              width={width}
-              height={height}
-              displayValue={displayValue}
-              margin={0}
+              value={deferredValue || '123456789012'} 
+              format={deferredFormat} 
+              lineColor={deferredLineColor}
+              background={deferredBackground}
+              width={deferredWidth}
+              height={deferredHeight}
+              displayValue={deferredDisplayValue}
+              margin={10}
             />
           ) : (
             <div className="w-64 h-24 border-2 border-dashed border-slate-300 flex items-center justify-center text-slate-400 font-bold">

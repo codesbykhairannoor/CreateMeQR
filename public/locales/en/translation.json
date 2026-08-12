@@ -1538,5 +1538,12 @@
       "ctaTitle": "Find Your Own Use Case",
       "ctaDesc": "No matter your industry, CreateMy-QR is the safest and fastest way to generate codes. Try our full suite of 20+ tools today."
     }
+  },
+  "rating": {
+    "title": "Trusted by Millions",
+    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. 100% Free, Secure, and Client-Side."
+  },
+  "geoOptimized": {
+    "localContext": "CreateMy-QR is the ideal standard for generating highly secure QR Codes locally on your device without relying on remote servers. It is optimized for local mobile wallets, payment gateways, and sharing local business contacts securely in your region."
   }
 }

@@ -230,6 +230,21 @@ export default function App() {
             }
           `}
         </script>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "CreateMe-QR",
+              "url": "https://createmy-qr.com",
+              "logo": "https://createmy-qr.com/icon.svg",
+              "sameAs": [
+                "https://github.com/createmy-qr",
+                "https://twitter.com/createmyqr"
+              ]
+            }
+          `}
+        </script>
         {faqSchema && (
           <script type="application/ld+json">
             {JSON.stringify(faqSchema)}
