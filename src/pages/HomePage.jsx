@@ -559,7 +559,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
               fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.15em',
               textTransform: 'uppercase', color: '#2563EB',
             }}>
-              FAQ
+              {t('home.faqPill', 'FAQ')}
             </div>
             <h2 className="homepage-section-title" style={{ marginBottom: 10 }}>
               {t('home.faqTitle', 'Frequently Asked Questions')}
