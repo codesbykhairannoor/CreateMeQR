@@ -143,7 +143,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
     return matchCat && matchSearch;
   });
 
-  const seoTitle = t('home.seoTitle', 'CreateMy-QR — Free QR Code & Barcode Generator | 37 Tools Online');
+  const seoTitle = `CreateMy-QR | ${t('home.heroTitle', 'All QR & Barcode')} ${t('home.heroTitleHighlight', 'Tools in One Place')}`;
   const seoDesc = t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO/IEC 18004-compliant, available in 30 languages.');
   const canonicalBase = `https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}`;
 
@@ -286,7 +286,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
         <div className="max-w-7xl mx-auto px-6">
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 32 }}>
-            <h2 className="text-[clamp(2rem,5vw,4.1rem)]" style={{
+            <h2 className="homepage-section-title text-zinc-900 dark:text-white" style={{
               fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.2,
             }}>
               {activeCat === 'all'
