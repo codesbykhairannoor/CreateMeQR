@@ -147,7 +147,7 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
         onMouseEnter={handleMegaEnter}
         onMouseLeave={handleMegaLeave}
       >
-        <button className="flex items-center gap-1.5 xl:gap-2 px-3 xl:px-3 py-1.5 xl:py-2 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 hover:from-slate-800 hover:to-blue-600 text-white text-[10.5px] xl:text-[11.5px] font-bold uppercase whitespace-nowrap transition-all shadow-md hover:shadow-lg">
+        <button className="flex items-center gap-1.5 xl:gap-2 px-3 xl:px-3 py-1.5 xl:py-2 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 hover:from-slate-800 hover:to-blue-600 text-white text-[11.5px] xl:text-[12.5px] font-bold uppercase whitespace-nowrap transition-all shadow-md hover:shadow-lg">
           <QrCode className="w-4 h-4" />
           {t('nav.generator', 'ALL QR TOOLS')}
           <ChevronDown className={`w-3 h-3 xl:w-4 xl:h-4 opacity-70 transition-transform duration-300 ${isMegaOpen ? 'rotate-180' : ''}`} />
