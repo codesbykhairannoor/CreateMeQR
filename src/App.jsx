@@ -63,7 +63,7 @@ export default function App() {
 
   
   // Home landing page: '/' means the new HomePage (not the URL QR tool)
-  const isHome = slug === '/' || slug === '';
+  const isHome = slug === '/' || slug === '' || slug === '/home';
   
   const toolType = routeToToolMap[currentLangCode]?.[slug];
   
