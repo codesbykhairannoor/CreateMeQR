@@ -41,7 +41,7 @@ export default function App() {
 
   if (slug === '') slug = '/';
 
-  const pseoUseCase = getPseoUseCase(slug);
+  const pseoUseCase = getPseoUseCase(slug, currentLangCode);
   const resolvedToolType = pseoUseCase ? pseoUseCase.baseTool : (routeToToolMap[currentLangCode]?.[slug] || 'url');
 
   const [qrType, setQrType] = useState(resolvedToolType);

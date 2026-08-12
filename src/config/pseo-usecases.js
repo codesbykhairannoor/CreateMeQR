@@ -16,18 +16,32 @@ for (const filePath in modules) {
  * @param {string} slug - the URL slug (e.g. '/pdf-qr-code-for-restaurant-menu')
  * @returns {object|null} the use case object (with a `lang` field injected) or null
  */
-export function getPseoUseCase(slug) {
+export function getPseoUseCase(slug, preferredLang = 'en') {
   if (!slug) return null;
   const cleanSlug = slug.replace(/^\/+/, ''); // strip leading slash
 
+  // 1. Try the preferred language first (e.g. 'id' when visiting /id/...)
+  const preferredCases = pseoDataByLang[preferredLang] || [];
+  const preferredFound = preferredCases.find(
+    uc => uc.slug === cleanSlug || uc.slug === slug || '/' + uc.slug === slug
+  );
+  if (preferredFound) return { ...preferredFound, lang: preferredLang };
+
+  // 2. Fallback to English
+  const enCases = pseoDataByLang['en'] || [];
+  const enFound = enCases.find(
+    uc => uc.slug === cleanSlug || uc.slug === slug || '/' + uc.slug === slug
+  );
+  if (enFound) return { ...enFound, lang: 'en' };
+
+  // 3. Search all other languages as a last resort
   for (const lang in pseoDataByLang) {
+    if (lang === preferredLang || lang === 'en') continue;
     const cases = pseoDataByLang[lang] || [];
     const found = cases.find(
       uc => uc.slug === cleanSlug || uc.slug === slug || '/' + uc.slug === slug
     );
-    if (found) {
-      return { ...found, lang };
-    }
+    if (found) return { ...found, lang };
   }
   return null;
 }
