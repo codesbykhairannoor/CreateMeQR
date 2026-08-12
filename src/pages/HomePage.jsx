@@ -143,7 +143,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
     return matchCat && matchSearch;
   });
 
-  const seoTitle = `CreateMy-QR | ${t('home.heroTitle')} ${t('home.heroTitleHighlight')}`;
+  const seoTitle = t('home.seoTitle', 'CreateMy-QR — Free QR Code & Barcode Generator | 37 Tools Online');
   const seoDesc = t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO/IEC 18004-compliant, available in 30 languages.');
   const canonicalBase = `https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}`;
 
