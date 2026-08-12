@@ -103,7 +103,7 @@
 /* Hero h1 */
 .homepage-hero-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(2rem, 5vw, 3.6rem) !important;
+  font-size: clamp(2.15rem, 5vw, 3.6rem) !important;
   font-weight: 800 !important;
   letter-spacing: -0.03em !important;
   line-height: 1.15 !important;
@@ -112,7 +112,7 @@
 /* Section h2 */
 .homepage-section-title {
   font-family: var(--font-display) !important;
-  font-size: clamp(1.3rem, 3.5vw, 2rem) !important;
+  font-size: clamp(1.4rem, 3.5vw, 2rem) !important;
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
   line-height: 1.25 !important;
@@ -234,12 +234,11 @@
 
 /* ==========================================================================
    MOBILE TYPOGRAPHY & LAYOUT OVERRIDES (<=640px)
-   Approach: zoom: 0.87 on main content (like helpmyfile/audiovideo) +
+   Approach: zoom: 0.9 on main content (like helpmyfile/audiovideo) +
    targeted overrides for search bar, navbar, and section titles.
    ========================================================================== */
 @media (max-width: 640px) {
   /* Zoom main content slightly — like helpmyfile zoom:0.8 approach */
-  /* But NOT on nav (fixed) — only on page content */
   body main,
   body > div > main {
     zoom: 0.9;
@@ -265,37 +264,42 @@
     height: 16px !important;
   }
 
-  /* Home hero h1 */
+  /* Home hero h1 — bumped +2-3px from previous 1.85rem */
   body .homepage-hero-title {
-    font-size: clamp(1.85rem, 8.5vw, 2.6rem) !important;
+    font-size: clamp(2.05rem, 9vw, 2.8rem) !important;
   }
-  /* Home section h2 */
+  /* Home hero subtitle */
+  body .homepage-hero-subtitle,
+  body section > p:first-of-type {
+    font-size: clamp(0.92rem, 3.5vw, 1.05rem) !important;
+  }
+  /* Home section h2 — bumped +2px */
   body .homepage-section-title {
-    font-size: clamp(1.35rem, 5.5vw, 1.75rem) !important;
+    font-size: clamp(1.5rem, 6vw, 1.9rem) !important;
   }
 
-  /* All static pages h1 — body prefix beats Tailwind class specificity (0,1,0) */
+  /* All static pages h1 — bumped +2-3px, beats Tailwind specificity */
   body section h1,
   body main h1 {
-    font-size: clamp(1.75rem, 7vw, 2.3rem) !important;
+    font-size: clamp(1.95rem, 7.5vw, 2.5rem) !important;
   }
 
-  /* All static pages h2 — proportional to hero */
+  /* All static pages h2 — bumped +2px */
   body section h2,
   body main h2 {
-    font-size: clamp(1.35rem, 5.5vw, 1.75rem) !important;
+    font-size: clamp(1.5rem, 6vw, 1.9rem) !important;
   }
 
-  /* hq-layout tool pages h1/h2/p */
+  /* hq-layout tool pages h1/h2 — bumped +2px */
   body [class^="hq-layout-"] h1 {
-    font-size: clamp(1.6rem, 7vw, 2.1rem) !important;
+    font-size: clamp(1.8rem, 7.5vw, 2.3rem) !important;
   }
   body [class^="hq-layout-"] h2 {
-    font-size: clamp(1.3rem, 5.5vw, 1.7rem) !important;
+    font-size: clamp(1.45rem, 6vw, 1.85rem) !important;
   }
   body [class^="hq-layout-"] p,
   body [class^="hq-layout-"] .hq-section-desc {
-    font-size: clamp(0.82rem, 3.5vw, 0.95rem) !important;
+    font-size: clamp(0.88rem, 3.5vw, 1rem) !important;
   }
 }
 

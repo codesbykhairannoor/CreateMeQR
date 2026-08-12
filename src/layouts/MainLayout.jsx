@@ -121,7 +121,7 @@ export default function MainLayout({ children }) {
         <div className="relative w-full max-w-7xl mx-auto px-4 md:px-6 h-12 md:h-16 flex items-center justify-between">
           <div className="flex items-center gap-1.5 md:gap-2 cursor-pointer whitespace-nowrap flex-shrink-0" onClick={() => navigate(currentLangCode === 'en' ? '/' : `/${currentLangCode}`)}>
             <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-6 h-6 md:w-8 md:h-8 rounded-xl object-contain shadow-sm" />
-            <span className="text-base md:text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight hidden sm:block">
+            <span className="text-sm md:text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight">
               CreateMy-<span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600">QR</span>
             </span>
           </div>
