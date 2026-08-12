@@ -32,10 +32,10 @@ export default function MobileNav({ currentLangCode, onClose, onOpenHistory, dar
       {/* Accordion: All Tools */}
       <button
         onClick={() => setOpenSection(openSection === 'all' ? null : 'all')}
-        className="w-full bg-gradient-to-r from-slate-900 to-blue-600 dark:from-blue-600 dark:to-blue-800 text-white border-none py-2.5 px-3 rounded-xl font-extrabold text-[11px] flex items-center justify-between cursor-pointer mb-2 shadow-md uppercase tracking-wide transition-all"
+        className="w-full bg-gradient-to-r from-slate-900 to-blue-600 dark:from-blue-600 dark:to-blue-800 text-white border-none py-2 px-3 rounded-lg font-extrabold text-[10px] flex items-center justify-between cursor-pointer mb-2 shadow-md uppercase tracking-wide transition-all"
       >
         <span>{t('nav.generator', 'ALL QR & BARCODE TOOLS')}</span>
-        {openSection === 'all' ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
+        {openSection === 'all' ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
       </button>
 
       {openSection === 'all' && (

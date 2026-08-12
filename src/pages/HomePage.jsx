@@ -192,7 +192,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
       </Helmet>
 
       {/* ═══════ SECTION 1: HERO ═══════ */}
-      <section style={{ position: 'relative', paddingTop: 'clamp(85px, 10vw, 120px)', paddingBottom: '56px', textAlign: 'center' }}>
+      <section style={{ position: 'relative', paddingTop: 'clamp(100px, 10vw, 124px)', paddingBottom: '56px', textAlign: 'center' }}>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
 
           {/* Monumental headline — class matches audiovideo .hero-title pattern */}
@@ -211,8 +211,8 @@ export default function HomePage({ currentLangCode = 'en' }) {
 
           {/* Subtitle */}
           <p className="homepage-hero-subtitle text-zinc-600 dark:text-zinc-400" style={{
-            fontSize: 'clamp(0.95rem, 2vw, 1.1rem)',
-            lineHeight: 1.6,
+            fontSize: 'clamp(1rem, 2vw, 1.15rem)',
+            lineHeight: 1.65,
             maxWidth: 780,
             margin: '0 auto 40px',
             fontWeight: 500,
