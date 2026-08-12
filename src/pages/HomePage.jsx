@@ -199,7 +199,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
           <h1
             className="homepage-hero-title"
             style={{
-              fontSize: 'clamp(2.75rem, 6.5vw, 4.75rem)', 
+              fontSize: 'clamp(2.4rem, 5.2vw, 4.0rem)', 
               fontWeight: 900, 
               letterSpacing: '-0.03em', 
               lineHeight: 1.15,
