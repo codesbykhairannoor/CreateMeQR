@@ -192,7 +192,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
       </Helmet>
 
       {/* ═══════ SECTION 1: HERO ═══════ */}
-      <section style={{ position: 'relative', paddingTop: 'clamp(100px, 10vw, 124px)', paddingBottom: '56px', textAlign: 'center' }}>
+      <section style={{ position: 'relative', paddingTop: 'clamp(115px, 12vw, 135px)', paddingBottom: '56px', textAlign: 'center' }}>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
 
           {/* Monumental headline — class matches audiovideo .hero-title pattern */}

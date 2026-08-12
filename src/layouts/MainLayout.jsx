@@ -118,10 +118,10 @@ export default function MainLayout({ children }) {
 
       {/* Premium Glass Navbar */}
       <nav className="fixed top-0 w-full bg-white/70 dark:bg-[#040a18]/70 backdrop-blur-2xl z-50 transition-colors duration-500">
-        <div className="relative w-full max-w-7xl mx-auto px-4 md:px-6 h-12 md:h-16 flex items-center justify-between">
-          <div className="flex items-center gap-1.5 md:gap-2 cursor-pointer whitespace-nowrap flex-shrink-0" onClick={() => navigate(currentLangCode === 'en' ? '/' : `/${currentLangCode}`)}>
-            <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-7 h-7 md:w-8 md:h-8 rounded-xl object-contain shadow-sm" />
-            <span className="text-[15px] md:text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight">
+        <div className="relative w-full max-w-7xl mx-auto px-4 md:px-6 h-14 md:h-16 flex items-center justify-between">
+          <div className="flex items-center gap-2 cursor-pointer whitespace-nowrap flex-shrink-0" onClick={() => navigate(currentLangCode === 'en' ? '/' : `/${currentLangCode}`)}>
+            <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-8 h-8 rounded-xl object-contain shadow-sm" />
+            <span className="text-base md:text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight">
               CreateMy-<span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600">QR</span>
             </span>
           </div>
@@ -178,7 +178,7 @@ export default function MainLayout({ children }) {
 
       {/* Mobile Navigation Overlay */}
       {showMobileNav && (
-        <div className="xl:hidden absolute inset-x-0 top-12 md:top-16 z-40 bg-white dark:bg-[#040a18] border-b border-zinc-200 dark:border-zinc-800 shadow-xl max-h-[calc(100vh-3rem)] md:max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain">
+        <div className="xl:hidden absolute inset-x-0 top-14 md:top-16 z-40 bg-white dark:bg-[#040a18] border-b border-zinc-200 dark:border-zinc-800 shadow-xl max-h-[calc(100vh-3.5rem)] md:max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain">
           <MobileNav 
             currentLangCode={currentLangCode} 
             onClose={() => setShowMobileNav(false)} 
