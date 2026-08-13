@@ -21,7 +21,7 @@ import LandingContent from './components/LandingContent';
 import SeoArticle from './components/SeoArticle';
 import { PSEO_ROUTES, LANGS } from './config/site';
 import { localizedRoutes, routeToToolMap } from './config/localizedRoutes';
-import { getPseoUseCase } from './config/pseo-usecases';
+import { getPseoUseCase, getAllPseoData } from './config/pseo-usecases';
 
 export default function App() {
   const { t } = useTranslation();
@@ -166,10 +166,33 @@ export default function App() {
         
         {/* Bidirectional Hreflang Matrix for 30 Languages */}
         {LANGS.map(lang => {
-          const href = `https://createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${slug === '/' ? '' : slug}`;
+          let targetSlug = slug;
+          // If this is a pSEO page, lookup the translated slug for this specific language
+          if (pseoUseCase) {
+            const allPseo = getAllPseoData();
+            const langCases = allPseo[lang.code] || [];
+            const matchingUc = langCases.find(uc => uc.id === pseoUseCase.id);
+            if (matchingUc) {
+              const uSlug = matchingUc.translatedSlug || matchingUc.slug;
+              targetSlug = uSlug.startsWith('/') ? uSlug : '/' + uSlug;
+            }
+          }
+          const href = `https://createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${targetSlug === '/' ? '' : targetSlug}`;
           return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
         })}
-        <link rel="alternate" hrefLang="x-default" href={`https://createmy-qr.com${slug === '/' ? '' : slug}`} />
+        {(() => {
+          let defaultSlug = slug;
+          if (pseoUseCase) {
+            const allPseo = getAllPseoData();
+            const enCases = allPseo['en'] || [];
+            const matchingUc = enCases.find(uc => uc.id === pseoUseCase.id);
+            if (matchingUc) {
+              const uSlug = matchingUc.translatedSlug || matchingUc.slug;
+              defaultSlug = uSlug.startsWith('/') ? uSlug : '/' + uSlug;
+            }
+          }
+          return <link rel="alternate" hrefLang="x-default" href={`https://createmy-qr.com${defaultSlug === '/' ? '' : defaultSlug}`} />;
+        })()}
         
         <script type="application/ld+json">
           {`
