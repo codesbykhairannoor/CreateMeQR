@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Des millions de personnes font confiance",
     "subtitle": "Noté 4,9/5 sur la base de 15 432 avis dans plus de 30 pays. 100% gratuit, sécurisé et côté client."
+  },
+  "pseo": {
+    "insights_badge": "GUIDE PRO",
+    "insights_title": "Points de vue d'experts et meilleures pratiques"
   }
 }

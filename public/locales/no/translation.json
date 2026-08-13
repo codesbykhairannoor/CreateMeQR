@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Stolt på av millioner",
     "subtitle": "Vurdert 4,9/5 basert på 15 432 anmeldelser i over 30 land. 100 % gratis, sikker og klientside."
+  },
+  "pseo": {
+    "insights_badge": "PROGUIDE",
+    "insights_title": "Ekspertinnsikt og beste praksis"
   }
 }

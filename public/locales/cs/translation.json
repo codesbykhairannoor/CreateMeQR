@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Důvěryhodné miliony",
     "subtitle": "Hodnocení 4,9/5 na základě 15 432 recenzí ve více než 30 zemích. 100% zdarma, zabezpečené a na straně klienta."
+  },
+  "pseo": {
+    "insights_badge": "PRŮVODCE PRO",
+    "insights_title": "Odborné poznatky a osvědčené postupy"
   }
 }

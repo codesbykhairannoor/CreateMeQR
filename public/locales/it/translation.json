@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Scelto da milioni di persone",
     "subtitle": "Voto 4,9/5 sulla base di 15.432 recensioni in oltre 30 paesi. 100% gratuito, sicuro e lato client."
+  },
+  "pseo": {
+    "insights_badge": "GUIDA PRO",
+    "insights_title": "Approfondimenti degli esperti e migliori pratiche"
   }
 }

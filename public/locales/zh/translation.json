@@ -1507,5 +1507,9 @@
   },
   "geoOptimized": {
     "localContext": "CreateMy-QR 是在设备上本地生成高度安全的 QR 码而不依赖远程服务器的理想标准。它针对本地移动钱包、支付网关以及在您所在地区安全地共享本地业务联系人进行了优化。"
+  },
+  "pseo": {
+    "insights_badge": "专业指南",
+    "insights_title": "专家见解和最佳实践"
   }
 }

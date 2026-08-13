@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Milyonlarca Kişinin Güvendiği",
     "subtitle": "30'dan fazla ülkede 15.432 yoruma göre 4,9/5 puan aldı. %100 Ücretsiz, Güvenli ve İstemci Taraflı."
+  },
+  "pseo": {
+    "insights_badge": "PRO KILAVUZU",
+    "insights_title": "Uzman Görüşleri ve En İyi Uygulamalar"
   }
 }

@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Miljoonien luottama",
     "subtitle": "Arvioitu 4,9/5 15 432 arvostelun perusteella yli 30 maassa. 100 % ilmainen, turvallinen ja asiakaspuoli."
+  },
+  "pseo": {
+    "insights_badge": "PRO OPAS",
+    "insights_title": "Asiantuntijan näkemyksiä ja parhaita käytäntöjä"
   }
 }

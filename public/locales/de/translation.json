@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Millionen vertrauen darauf",
     "subtitle": "Bewertet mit 4,9/5 basierend auf 15.432 Bewertungen in über 30 Ländern. 100 % kostenlos, sicher und clientseitig."
+  },
+  "pseo": {
+    "insights_badge": "PROFI-GUIDE",
+    "insights_title": "Experteneinblicke und Best Practices"
   }
 }

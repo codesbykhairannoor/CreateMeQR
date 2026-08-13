@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Betrodd av miljoner",
     "subtitle": "Betygsatt 4,9/5 baserat på 15 432 recensioner i över 30 länder. 100 % gratis, säkert och klientsidan."
+  },
+  "pseo": {
+    "insights_badge": "PRO GUIDE",
+    "insights_title": "Expertinsikter och bästa praxis"
   }
 }

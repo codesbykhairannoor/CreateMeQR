@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Vertrouwd door miljoenen",
     "subtitle": "Beoordeeld 4,9/5 op basis van 15.432 beoordelingen in meer dan 30 landen. 100% gratis, veilig en aan de clientzijde."
+  },
+  "pseo": {
+    "insights_badge": "PRO-GIDS",
+    "insights_title": "Deskundige inzichten en beste praktijken"
   }
 }

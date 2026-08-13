@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Confiado por milhões",
     "subtitle": "Classificado em 4,9/5 com base em 15.432 avaliações em mais de 30 países. 100% gratuito, seguro e do lado do cliente."
+  },
+  "pseo": {
+    "insights_badge": "GUIA PRO",
+    "insights_title": "Insights de especialistas e práticas recomendadas"
   }
 }

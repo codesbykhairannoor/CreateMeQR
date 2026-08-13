@@ -1446,5 +1446,9 @@
   "rating": {
     "title": "Milliók megbíznak benne",
     "subtitle": "4,9/5-re értékelték 15 432 értékelés alapján, több mint 30 országban. 100%-ban ingyenes, biztonságos és ügyféloldali."
+  },
+  "pseo": {
+    "insights_badge": "PRO GUIDE",
+    "insights_title": "Szakértői betekintések és bevált gyakorlatok"
   }
 }

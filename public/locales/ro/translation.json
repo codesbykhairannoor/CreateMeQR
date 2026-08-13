@@ -1446,5 +1446,9 @@
   "rating": {
     "title": "De încredere de milioane",
     "subtitle": "Evaluat 4,9/5 pe baza a 15.432 de recenzii din peste 30 de țări. 100% gratuit, sigur și pe partea clientului."
+  },
+  "pseo": {
+    "insights_badge": "GHID PRO",
+    "insights_title": "Perspective și bune practici ale experților"
   }
 }

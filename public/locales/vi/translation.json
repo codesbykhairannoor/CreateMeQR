@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Được hàng triệu người tin cậy",
     "subtitle": "Được xếp hạng 4,9/5 dựa trên 15.432 đánh giá trên hơn 30 quốc gia. 100% miễn phí, an toàn và phía khách hàng."
+  },
+  "pseo": {
+    "insights_badge": "HƯỚNG DẪN CHUYÊN NGHIỆP",
+    "insights_title": "Thông tin chuyên sâu và phương pháp thực hành tốt nhất"
   }
 }

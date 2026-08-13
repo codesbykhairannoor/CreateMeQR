@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Betroet af millioner",
     "subtitle": "Vurderet 4,9/5 baseret på 15.432 anmeldelser på tværs af 30+ lande. 100 % gratis, sikker og klient-side."
+  },
+  "pseo": {
+    "insights_badge": "PRO GUIDE",
+    "insights_title": "Ekspertindsigt og bedste praksis"
   }
 }

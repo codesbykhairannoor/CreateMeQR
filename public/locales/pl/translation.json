@@ -1507,5 +1507,9 @@
   "rating": {
     "title": "Zaufały miliony",
     "subtitle": "Ocena 4,9/5 na podstawie 15 432 recenzji z ponad 30 krajów. 100% darmowy, bezpieczny i po stronie klienta."
+  },
+  "pseo": {
+    "insights_badge": "PRZEWODNIK PRO",
+    "insights_title": "Opinie ekspertów i najlepsze praktyki"
   }
 }
