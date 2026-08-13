@@ -19,7 +19,8 @@
         "q": "Apakah kode QR PDF aman untuk dipindai oleh pelanggan saya?",
         "a": "Ya! Karena CreateMy-QR beroperasi 100% secara lokal di perangkat Anda, kami tidak melacak pelanggan Anda atau memasukkan iklan pihak ketiga ke dalam pengalaman pemindaian. Saat pelanggan memindai kode Anda, mereka diarahkan langsung ke menu Anda dengan aman."
       }
-    ]
+    ],
+    "translatedSlug": "kode-qr-pdf-untuk-menu-restoran"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "Apakah kode QR WiFi berfungsi untuk iPhone dan Android?",
         "a": "Sangat. Standar kode QR WiFi (WPA/WPA2/WEP) diakui secara universal oleh sistem operasi Apple iOS dan Android. Pengguna cukup mengarahkan aplikasi kamera default mereka ke kode untuk terhubung."
       }
-    ]
+    ],
+    "translatedSlug": "kode-qr-wifi-untuk-kafe-hotel"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "Bisakah saya menggunakan ini untuk ulasan Yelp atau TripAdvisor?",
         "a": "Ya! Meskipun halaman ini berfokus pada Ulasan Google, Anda cukup menggunakan pembuat Kode QR URL standar kami dan menempelkan tautan ulasan langsung untuk profil Yelp, TripAdvisor, atau Trustpilot Anda."
       }
-    ]
+    ],
+    "translatedSlug": "google-meninjau-kode-qr-untuk-bisnis-lokal"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "Bisakah saya menambahkan foto profesional saya ke vCard?",
         "a": "Kode QR vCard standar tidak mendukung gambar yang disematkan karena gambar membuat muatan data terlalu besar, sehingga menghasilkan kode QR yang terlalu padat untuk dipindai dengan mudah. Kami menyarankan agar data tetap berbasis teks untuk keandalan pemindaian maksimum."
       }
-    ]
+    ],
+    "translatedSlug": "kode-qr-vcard-untuk-agen-real-estat"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "Apakah ada batasan berapa banyak orang yang dapat memindai kode QR acara saya?",
         "a": "Sama sekali tidak ada batasan pemindaian! Karena kode QR hanya menunjuk langsung ke URL tiket Anda tanpa melewati server kami, orang dalam jumlah tidak terbatas dapat memindainya secara bersamaan tanpa hambatan apa pun."
       }
-    ]
+    ],
+    "translatedSlug": "url-kode-qr-untuk-pendaftaran-tiket-acara"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "Apa yang terjadi jika mereka memindainya di komputer desktop?",
         "a": "Jika dipindai di desktop atau diklik melalui tautan, pengguna akan diminta membuka WhatsApp Web atau aplikasi WhatsApp Desktop untuk melanjutkan percakapan dengan lancar."
       }
-    ]
+    ],
+    "translatedSlug": "kode-qr-whatsapp-untuk-dukungan-pelanggan"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "Apakah ini aman untuk menangani transaksi keuangan?",
         "a": "Ya. Alat kami secara ketat menghasilkan URL 'Beli Sekarang' PayPal standar. Transaksi finansial sebenarnya terjadi sepenuhnya dalam lingkungan PayPal yang sangat aman dan terenkripsi. Kami tidak pernah menyentuh atau melihat data pembayaran."
       }
-    ]
+    ],
+    "translatedSlug": "kode-qr-paypal-untuk-donasi"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "Bisakah saya CC atau BCC alamat lain di kode QR?",
         "a": "Meskipun protokol inti 'mailto' mendukung CC dan BCC, saat ini kami fokus pada bidang penerima utama untuk memastikan kompatibilitas maksimum di klien email lama dan perangkat Android tertentu."
       }
-    ]
+    ],
+    "translatedSlug": "kode-qr-email-untuk-pendaftaran-buletin"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "Apakah ini akan melacak metrik pemasangan aplikasi saya?",
         "a": "Kode QR itu sendiri tidak melacak metrik. Namun, jika Anda menggunakan tautan atribusi (dari AppsFlyer, Adjust, dll.) sebagai URL tujuan, layanan tersebut akan melacak data pemasangan dengan lancar."
       }
-    ]
+    ],
+    "translatedSlug": "kode-qr-toko-aplikasi-untuk-unduhan-game"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "Bagaimana jika video YouTube tidak terdaftar?",
         "a": "Video YouTube yang tidak terdaftar berfungsi sempurna dengan kode QR. Video tersebut tidak akan muncul di hasil pencarian publik, tetapi siapa pun yang memindai kode QR fisik akan dapat melihat video instruksi tersebut tanpa masalah."
       }
-    ]
+    ],
+    "translatedSlug": "kode-qr-youtube-untuk-manual-produk"
   }
 ]

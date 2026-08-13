@@ -19,7 +19,8 @@
         "q": "Codurile QR PDF sunt sigure pentru ca clienții mei să le scaneze?",
         "a": "Da! Deoarece CreateMy-QR funcționează 100% local pe dispozitivul dvs., nu vă urmărim clienții și nu injectăm reclame de la terți în experiența de scanare. Când clienții vă scanează codul, aceștia sunt direcționați direct către meniul dvs. în siguranță."
       }
-    ]
+    ],
+    "translatedSlug": "cod-qr-pdf-pentru-meniul-restaurantului"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "Funcționează un cod QR WiFi atât pentru iPhone, cât și pentru Android?",
         "a": "Absolut. Standardul de cod QR WiFi (WPA/WPA2/WEP) este universal recunoscut atât de sistemele de operare Apple iOS, cât și de Android. Utilizatorii pur și simplu îndreaptă aplicația lor implicită pentru cameră către codul de conectare."
       }
-    ]
+    ],
+    "translatedSlug": "cod-qr-wifi-pentru-cafenea-hotel"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "Pot folosi acest lucru pentru recenziile Yelp sau TripAdvisor?",
         "a": "Da! Deși această pagină se concentrează pe recenzii Google, puteți pur și simplu să utilizați generatorul nostru standard de coduri QR URL și să lipiți linkul direct de recenzie pentru profilul dvs. Yelp, TripAdvisor sau Trustpilot."
       }
-    ]
+    ],
+    "translatedSlug": "google-review-qr-code-pentru-afaceri-locale"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "Pot să adaug fotografia mea profesională la vCard?",
         "a": "Codurile QR standard vCard nu acceptă imagini încorporate, deoarece imaginile fac volumul de date prea mare, rezultând un cod QR prea dens pentru a fi scanat cu ușurință. Vă recomandăm să păstrați datele bazate pe text pentru o fiabilitate maximă a scanării."
       }
-    ]
+    ],
+    "translatedSlug": "cod-qr-vcard-pentru-agentii-imobiliari"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "Există o limită la câte persoane pot scana codul QR al evenimentului meu?",
         "a": "Nu există absolut nicio limită de scanare! Deoarece codul QR pur și simplu indică direct la adresa URL de emitere a biletelor, fără a trece prin serverele noastre, un număr nelimitat de persoane îl pot scana simultan fără blocaje."
       }
-    ]
+    ],
+    "translatedSlug": "cod-qr-url-pentru-inregistrarea-biletelor-la-eveniment"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "Ce se întâmplă dacă îl scanează pe un computer desktop?",
         "a": "Dacă este scanat pe un desktop sau dați clic printr-un link, acesta va solicita utilizatorului să deschidă WhatsApp Web sau aplicația WhatsApp Desktop pentru a continua conversația fără probleme."
       }
-    ]
+    ],
+    "translatedSlug": "cod-qr-whatsapp-pentru-asistenta-clienti"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "Este acest lucru sigur pentru gestionarea tranzacțiilor financiare?",
         "a": "Da. Instrumentul nostru generează strict o adresă URL standard „Cumpărați acum” PayPal. Tranzacția financiară reală are loc în întregime în mediul foarte sigur, criptat al PayPal. Nu atingem și nu vedem niciodată datele de plată."
       }
-    ]
+    ],
+    "translatedSlug": "cod-qr-paypal-pentru-donatii"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "Pot CC sau BCC alte adrese din codul QR?",
         "a": "În timp ce protocolul de bază „mailto” acceptă CC și BCC, în prezent ne concentrăm pe câmpul destinatarului principal pentru a asigura compatibilitatea maximă între clienții de e-mail mai vechi și anumite dispozitive Android."
       }
-    ]
+    ],
+    "translatedSlug": "e-mail-cod-qr-pentru-inscrierea-la-newsletter"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "Aceasta va urmări valorile mele privind instalarea aplicației?",
         "a": "Codul QR în sine nu urmărește valorile. Cu toate acestea, dacă utilizați un link de atribuire (de la AppsFlyer, Adjust etc.) ca adresă URL de destinație, acele servicii vor urmări datele de instalare fără probleme."
       }
-    ]
+    ],
+    "translatedSlug": "cod-qr-din-magazinul-de-aplicatii-pentru-descarcari-de-jocuri"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "Ce se întâmplă dacă videoclipul YouTube nu este listat?",
         "a": "Videoclipurile YouTube nelistate funcționează perfect cu codurile QR. Videoclipul nu va apărea în rezultatele căutării publice, dar oricine scanează codul QR fizic va putea vedea videoclipul cu instrucțiuni fără probleme."
       }
-    ]
+    ],
+    "translatedSlug": "cod-qr-youtube-pentru-manualele-produselor"
   }
 ]

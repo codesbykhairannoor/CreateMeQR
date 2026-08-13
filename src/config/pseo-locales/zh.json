@@ -19,7 +19,8 @@
         "q": "我的客户扫描 PDF 二维码是否安全？",
         "a": "是的！由于 CreateMy-QR 100% 在您的设备上本地运行，因此我们不会跟踪您的客户或在扫描体验中注入第三方广告。当顾客扫描您的代码时，他们会安全地直接进入您的菜单。"
       }
-    ]
+    ],
+    "translatedSlug": "pdf-qr-code-for-restaurant-menu"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "WiFi 二维码适用于 iPhone 和 Android 吗？",
         "a": "绝对地。 WiFi QR 码标准 (WPA/WPA2/WEP) 得到 Apple iOS 和 Android 操作系统的普遍认可。用户只需将默认相机应用程序指向代码即可进行连接。"
       }
-    ]
+    ],
+    "translatedSlug": "wifi-qr-code-for-cafe-hotel"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "我可以用它来发表 Yelp 或 TripAdvisor 评论吗？",
         "a": "是的！虽然此页面重点关注 Google 评论，但您只需使用我们的标准 URL QR 代码生成器并粘贴您的 Yelp、TripAdvisor 或 Trustpilot 个人资料的直接评论链接即可。"
       }
-    ]
+    ],
+    "translatedSlug": "google-review-qr-code-for-local-business"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "我可以将我的专业头像添加到 vCard 中吗？",
         "a": "标准 vCard QR 码不支持嵌入图像，因为图像使数据负载过大，导致 QR 码过于密集而难以扫描。我们建议保持数据基于文本，以获得最大的扫描可靠性。"
       }
-    ]
+    ],
+    "translatedSlug": "vcard-qr-code-for-real-estate-agents"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "扫描我的活动二维码的人数有限制吗？",
         "a": "绝对没有扫描限制！由于二维码直接指向您的票务 URL，而无需经过我们的服务器，因此无限数量的人可以同时扫描它，而不会出现任何瓶颈。"
       }
-    ]
+    ],
+    "translatedSlug": "url-qr-code-for-event-tickets-registration"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "如果他们在台式计算机上扫描会发生什么？",
         "a": "如果在桌面上扫描或通过链接单击，它将提示用户打开 WhatsApp Web 或 WhatsApp Desktop 应用程序以继续无缝对话。"
       }
-    ]
+    ],
+    "translatedSlug": "whatsapp-qr-code-for-customer-support"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "这对于处理金融交易安全吗？",
         "a": "是的。我们的工具严格生成标准 PayPal“立即购买”URL。实际的金融交易完全发生在 PayPal 高度安全的加密环境中。我们永远不会接触或看到支付数据。"
       }
-    ]
+    ],
+    "translatedSlug": "paypal-qr-code-for-donations"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "我可以抄送或密送二维码中的其他地址吗？",
         "a": "虽然核心“mailto”协议支持抄送和密件抄送，但我们目前专注于主要收件人字段，以确保旧版电子邮件客户端和特定 Android 设备之间的最大兼容性。"
       }
-    ]
+    ],
+    "translatedSlug": "email-qr-code-for-newsletter-signup"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "这会跟踪我的应用安装指标吗？",
         "a": "QR 码本身不跟踪指标。但是，如果您使用归因链接（来自 AppsFlyer、Adjust 等）作为目标 URL，这些服务将无缝跟踪安装数据。"
       }
-    ]
+    ],
+    "translatedSlug": "app-store-qr-code-for-game-downloads"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "如果 YouTube 视频不公开怎么办？",
         "a": "不公开的 YouTube 视频与二维码完美配合。该视频不会出现在公共搜索结果中，但任何扫描物理二维码的人都可以毫无问题地观看教学视频。"
       }
-    ]
+    ],
+    "translatedSlug": "youtube-qr-code-for-product-manuals"
   }
 ]

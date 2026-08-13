@@ -19,7 +19,8 @@
         "q": "我的客戶掃描 PDF 二維碼是否安全？",
         "a": "是的！由於 CreateMy-QR 100% 在您的裝置上本地運行，因此我們不會追蹤您的客戶或在掃描體驗中註入第三方廣告。當顧客掃描您的代碼時，他們會安全地直接進入您的選單。"
       }
-    ]
+    ],
+    "translatedSlug": "pdf-qr-code-for-restaurant-menu"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "WiFi 二維碼適用於 iPhone 和 Android 嗎？",
         "a": "絕對地。 WiFi QR 碼標準 (WPA/WPA2/WEP) 獲得 Apple iOS 和 Android 作業系統的普遍認可。用戶只需將預設相機應用程式指向代碼即可進行連接。"
       }
-    ]
+    ],
+    "translatedSlug": "wifi-qr-code-for-cafe-hotel"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "我可以用它來發表 Yelp 或 TripAdvisor 評論嗎？",
         "a": "是的！雖然此頁面重點關注 Google 評論，但您只需使用我們的標準 URL QR 代碼產生器並貼上您的 Yelp、TripAdvisor 或 Trustpilot 個人資料的直接評論連結即可。"
       }
-    ]
+    ],
+    "translatedSlug": "google-review-qr-code-for-local-business"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "我可以將我的專業頭像添加到 vCard 中嗎？",
         "a": "標準 vCard QR 碼不支援嵌入影像，因為影像使資料負載過大，導致 QR 碼過於密集而難以掃描。我們建議保持數據基於文本，以獲得最大的掃描可靠性。"
       }
-    ]
+    ],
+    "translatedSlug": "vcard-qr-code-for-real-estate-agents"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "掃描我的活動二維碼的人數有限制嗎？",
         "a": "絕對沒有掃描限制！由於二維碼直接指向您的票務 URL，而無需經過我們的伺服器，因此無限數量的人可以同時掃描它，而不會出現任何瓶頸。"
       }
-    ]
+    ],
+    "translatedSlug": "url-qr-code-for-event-tickets-registration"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "如果他們在桌上型電腦上掃描會發生什麼事？",
         "a": "如果在桌面上掃描或透過連結點擊，它將提示使用者開啟 WhatsApp Web 或 WhatsApp Desktop 應用程式以繼續無縫對話。"
       }
-    ]
+    ],
+    "translatedSlug": "whatsapp-qr-code-for-customer-support"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "這對於處理金融交易安全嗎？",
         "a": "是的。我們的工具嚴格產生標準 PayPal「立即購買」URL。實際的金融交易完全發生在 PayPal 高度安全的加密環境中。我們永遠不會接觸或看到支付數據。"
       }
-    ]
+    ],
+    "translatedSlug": "paypal-qr-code-for-donations"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "我可以抄送或密送二維碼中的其他位址嗎？",
         "a": "雖然核心「mailto」協定支援抄送和密件抄送，但我們目前專注於主要收件者字段，以確保舊版電子郵件用戶端和特定 Android 裝置之間的最大相容性。"
       }
-    ]
+    ],
+    "translatedSlug": "email-qr-code-for-newsletter-signup"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "這會追蹤我的應用程式安裝指標嗎？",
         "a": "QR 碼本身不追蹤指標。但是，如果您使用歸因連結（來自 AppsFlyer、Adjust 等）作為目標 URL，這些服務將無縫追蹤安裝資料。"
       }
-    ]
+    ],
+    "translatedSlug": "app-store-qr-code-for-game-downloads"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "如果 YouTube 影片不公開怎麼辦？",
         "a": "不公開的 YouTube 影片與二維碼完美配合。該影片不會出現在公共搜尋結果中，但任何掃描實體二維碼的人都可以毫無問題地觀看教學影片。"
       }
-    ]
+    ],
+    "translatedSlug": "youtube-qr-code-for-product-manuals"
   }
 ]

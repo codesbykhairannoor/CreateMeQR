@@ -19,7 +19,8 @@
         "q": "Les codes QR PDF peuvent-ils être scannés en toute sécurité par mes clients ?",
         "a": "Oui! Étant donné que CreateMy-QR fonctionne 100 % localement sur votre appareil, nous ne suivons pas vos clients et n'injectons pas de publicités tierces dans l'expérience de numérisation. Lorsque les clients scannent votre code, ils sont dirigés directement vers votre menu en toute sécurité."
       }
-    ]
+    ],
+    "translatedSlug": "code-qr-pdf-pour-le-menu-du-restaurant"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "Un code QR WiFi fonctionne-t-il pour iPhone et Android ?",
         "a": "Absolument. La norme de code QR WiFi (WPA/WPA2/WEP) est universellement reconnue par les systèmes d'exploitation Apple iOS et Android. Les utilisateurs pointent simplement leur application de caméra par défaut vers le code pour se connecter."
       }
-    ]
+    ],
+    "translatedSlug": "code-qr-wifi-pour-cafe-hotel"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "Puis-je l'utiliser à la place pour les avis Yelp ou TripAdvisor ?",
         "a": "Oui! Bien que cette page se concentre sur les avis Google, vous pouvez simplement utiliser notre générateur de code QR URL standard et coller le lien d'avis direct pour votre profil Yelp, TripAdvisor ou Trustpilot."
       }
-    ]
+    ],
+    "translatedSlug": "google-examine-le-code-qr-pour-une-entreprise-locale"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "Puis-je ajouter ma photo professionnelle à la vCard ?",
         "a": "Les codes QR vCard standard ne prennent pas en charge les images intégrées, car les images rendent la charge utile de données trop volumineuse, ce qui donne un code QR trop dense pour être numérisé facilement. Nous vous recommandons de conserver les données sous forme de texte pour une fiabilité d'analyse maximale."
       }
-    ]
+    ],
+    "translatedSlug": "code-qr-vcard-pour-les-agents-immobiliers"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "Y a-t-il une limite au nombre de personnes pouvant scanner le code QR de mon événement ?",
         "a": "Il n'y a absolument aucune limite de numérisation ! Parce que le code QR pointe simplement directement vers l'URL de votre billetterie sans passer par nos serveurs, un nombre illimité de personnes peuvent le scanner simultanément sans aucun goulot d'étranglement."
       }
-    ]
+    ],
+    "translatedSlug": "url-code-qr-pour-linscription-des-billets-devenement"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "Que se passe-t-il s'ils le scannent sur un ordinateur de bureau ?",
         "a": "S'il est numérisé sur un ordinateur de bureau ou cliqué via un lien, l'utilisateur sera invité à ouvrir WhatsApp Web ou l'application WhatsApp Desktop pour poursuivre la conversation de manière transparente."
       }
-    ]
+    ],
+    "translatedSlug": "code-qr-whatsapp-pour-le-support-client"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "Est-ce sécurisé pour le traitement des transactions financières ?",
         "a": "Oui. Notre outil génère strictement une URL PayPal « Acheter maintenant » standard. La transaction financière proprement dite s'effectue entièrement dans l'environnement crypté et hautement sécurisé de PayPal. Nous ne touchons ni ne voyons jamais les données de paiement."
       }
-    ]
+    ],
+    "translatedSlug": "code-qr-paypal-pour-les-dons"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "Puis-je mettre en CC ou en BCC d'autres adresses dans le code QR ?",
         "a": "Bien que le protocole principal « mailto » prenne en charge CC et BCC, nous nous concentrons actuellement sur le champ du destinataire principal pour garantir une compatibilité maximale entre les anciens clients de messagerie et les appareils Android spécifiques."
       }
-    ]
+    ],
+    "translatedSlug": "envoyer-le-code-qr-par-e-mail-pour-linscription-a-la-newsletter"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "Cela permettra-t-il de suivre les statistiques d'installation de mon application ?",
         "a": "Le code QR lui-même ne suit pas les mesures. Cependant, si vous utilisez un lien d'attribution (depuis AppsFlyer, Adjust, etc.) comme URL de destination, ces services suivront les données d'installation de manière transparente."
       }
-    ]
+    ],
+    "translatedSlug": "code-qr-de-lapp-store-pour-les-telechargements-de-jeux"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "Que faire si la vidéo YouTube n'est pas répertoriée ?",
         "a": "Les vidéos YouTube non répertoriées fonctionnent parfaitement avec les codes QR. La vidéo n'apparaîtra pas dans les résultats de recherche publics, mais toute personne scannant le code QR physique pourra visionner la vidéo d'instructions sans problème."
       }
-    ]
+    ],
+    "translatedSlug": "code-qr-youtube-pour-les-manuels-des-produits"
   }
 ]

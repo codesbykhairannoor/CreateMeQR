@@ -107,7 +107,9 @@ async function run() {
       if (!uc) continue;
       
       const langPrefix = lang === 'en' ? '' : '/' + lang;
-      const safeSlug = uc.slug.startsWith('/') ? uc.slug : '/' + uc.slug;
+      // Use translatedSlug if available, fallback to English slug
+      const ucUrlSlug = uc.translatedSlug || uc.slug;
+      const safeSlug = ucUrlSlug.startsWith('/') ? ucUrlSlug : '/' + ucUrlSlug;
       const url = DOMAIN + langPrefix + safeSlug;
       
       xml += '  <url>\n';
@@ -121,7 +123,8 @@ async function run() {
         const altUc = altPseoList.find(item => item.id === pId);
         if (altUc) {
           const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
-          const safeAltSlug = altUc.slug.startsWith('/') ? altUc.slug : '/' + altUc.slug;
+          const altUrlSlug = altUc.translatedSlug || altUc.slug;
+          const safeAltSlug = altUrlSlug.startsWith('/') ? altUrlSlug : '/' + altUrlSlug;
           const altUrl = DOMAIN + altLangPrefix + safeAltSlug;
           xml += '    <xhtml:link rel="alternate" hreflang="' + altLang + '" href="' + altUrl + '" />\n';
         }
@@ -129,7 +132,8 @@ async function run() {
       
       const defaultUc = (pseoDataByLang['en'] || []).find(item => item.id === pId);
       if (defaultUc) {
-        const safeDefaultSlug = defaultUc.slug.startsWith('/') ? defaultUc.slug : '/' + defaultUc.slug;
+        const defaultUrlSlug = defaultUc.translatedSlug || defaultUc.slug;
+        const safeDefaultSlug = defaultUrlSlug.startsWith('/') ? defaultUrlSlug : '/' + defaultUrlSlug;
         const defaultUrl = DOMAIN + safeDefaultSlug;
         xml += '    <xhtml:link rel="alternate" hreflang="x-default" href="' + defaultUrl + '" />\n';
       }

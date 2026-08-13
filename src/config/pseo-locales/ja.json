@@ -19,7 +19,8 @@
         "q": "PDF QR コードは顧客が安全にスキャンできますか?",
         "a": "はい！ CreateMy-QR はデバイス上で 100% ローカルに動作するため、顧客を追跡したり、スキャン エクスペリエンスにサードパーティの広告を挿入したりすることはありません。顧客がコードをスキャンすると、安全にメニューに直接誘導されます。"
       }
-    ]
+    ],
+    "translatedSlug": "pdf-qr-code-for-restaurant-menu"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "WiFi QR コードは iPhone と Android の両方で機能しますか?",
         "a": "絶対に。 WiFi QR コード規格 (WPA/WPA2/WEP) は、Apple iOS と Android オペレーティング システムの両方で広く認識されています。ユーザーは、デフォルトのカメラ アプリに接続するコードを指定するだけです。"
       }
-    ]
+    ],
+    "translatedSlug": "wifi-qr-code-for-cafe-hotel"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "代わりに、これを Yelp または TripAdvisor のレビューに使用できますか?",
         "a": "はい！このページは Google レビューに焦点を当てていますが、標準の URL QR コード ジェネレーターを使用して、Yelp、TripAdvisor、または Trustpilot プロフィールの直接レビュー リンクを貼り付けるだけで済みます。"
       }
-    ]
+    ],
+    "translatedSlug": "google-review-qr-code-for-local-business"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "プロの顔写真を vCard に追加できますか?",
         "a": "標準の vCard QR コードは埋め込み画像をサポートしていません。これは、画像によってデータ ペイロードが大きくなりすぎて、QR コードが密度が高くなりすぎて簡単にスキャンできないためです。スキャンの信頼性を最大限に高めるために、データをテキストベースに保つことをお勧めします。"
       }
-    ]
+    ],
+    "translatedSlug": "vcard-qr-code-for-real-estate-agents"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "イベント QR コードをスキャンできる人数に制限はありますか?",
         "a": "スキャン制限はまったくありません。 QR コードは当社のサーバーを経由せずにチケット発行 URL を直接指すため、ボトルネックなく無制限の数の人が同時に QR コードをスキャンできます。"
       }
-    ]
+    ],
+    "translatedSlug": "url-qr-code-for-event-tickets-registration"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "デスクトップ コンピュータでスキャンするとどうなるでしょうか?",
         "a": "デスクトップ上でスキャンするか、リンクをクリックすると、ユーザーは WhatsApp Web または WhatsApp デスクトップ アプリケーションを開いてシームレスに会話を続けるよう求められます。"
       }
-    ]
+    ],
+    "translatedSlug": "whatsapp-qr-code-for-customer-support"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "これは金融取引を処理する上で安全ですか?",
         "a": "はい。私たちのツールは、標準の PayPal の「今すぐ購入」URL を厳密に生成します。実際の金融取引はすべて、PayPal の非常に安全な暗号化された環境内で行われます。私たちが支払いデータに触れたり見たりすることはありません。"
       }
-    ]
+    ],
+    "translatedSlug": "paypal-qr-code-for-donations"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "QR コード内の他のアドレスを CC または BCC できますか?",
         "a": "コアの「mailto」プロトコルは CC と BCC をサポートしていますが、現在、古い電子メール クライアントと特定の Android デバイス間で最大限の互換性を確保するために、プライマリ受信者フィールドに重点を置いています。"
       }
-    ]
+    ],
+    "translatedSlug": "email-qr-code-for-newsletter-signup"
   },
   {
     "id": "appstore-game-download",
@@ -198,7 +206,8 @@
         "q": "Will this track my app install metrics?",
         "a": "The QR code itself does not track metrics. However, if you use an attribution link (from AppsFlyer, Adjust, etc.) as the destination URL, those services will track the install data seamlessly."
       }
-    ]
+    ],
+    "translatedSlug": "app-store-qr-code-for-game-downloads"
   },
   {
     "id": "youtube-product-manual",
@@ -220,6 +229,7 @@
         "q": "YouTube 動画が限定公開されている場合はどうなりますか?",
         "a": "限定公開の YouTube ビデオは QR コードと完全に連携します。このビデオは一般の検索結果には表示されませんが、物理的な QR コードをスキャンすれば誰でも問題なく説明ビデオを視聴できます。"
       }
-    ]
+    ],
+    "translatedSlug": "youtube-qr-code-for-product-manuals"
   }
 ]

@@ -19,7 +19,8 @@
         "q": "Ovatko PDF QR-koodit turvallista asiakkaideni skannata?",
         "a": "Kyllä! Koska CreateMy-QR toimii 100-prosenttisesti paikallisesti laitteellasi, emme seuraa asiakkaitasi tai lisää kolmannen osapuolen mainoksia skannauskokemukseen. Kun asiakkaat skannaavat koodisi, heidät ohjataan suoraan ruokalistallesi turvallisesti."
       }
-    ]
+    ],
+    "translatedSlug": "pdf-qr-koodi-ravintolamenulle"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "Toimiiko WiFi QR-koodi sekä iPhonessa että Androidissa?",
         "a": "Täysin. WiFi QR-koodistandardi (WPA/WPA2/WEP) on yleisesti tunnustettu sekä Applen iOS- että Android-käyttöjärjestelmissä. Käyttäjät yksinkertaisesti osoittavat oletuskamerasovelluksensa koodiin muodostaakseen yhteyden."
       }
-    ]
+    ],
+    "translatedSlug": "wifi-qr-koodi-kahvilahotellille"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "Voinko käyttää tätä Yelp- tai TripAdvisor-arvosteluihin sen sijaan?",
         "a": "Kyllä! Vaikka tämä sivu keskittyy Google-arvosteluihin, voit käyttää tavallista URL-osoitteen QR-koodigeneraattoriamme ja liittää suoran arvostelulinkin Yelp-, TripAdvisor- tai Trustpilot-profiiliisi."
       }
-    ]
+    ],
+    "translatedSlug": "google-arvostelun-qr-koodi-paikallisille-yrityksille"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "Voinko lisätä ammattikuvani vCardiin?",
         "a": "Vakiomuotoiset vCard QR-koodit eivät tue upotettuja kuvia, koska kuvat tekevät datasta liian suuren, mikä johtaa QR-koodiin, joka on liian tiheä skannattavaksi. Suosittelemme pitämään tiedot tekstipohjaisina parhaan mahdollisen skannausvarmuuden takaamiseksi."
       }
-    ]
+    ],
+    "translatedSlug": "vcard-qr-koodi-kiinteistonvalittajille"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "Onko rajoitettu kuinka monta henkilöä voi skannata tapahtumani QR-koodin?",
         "a": "Skannausrajoituksia ei ole lainkaan! Koska QR-koodi yksinkertaisesti osoittaa suoraan lippusi URL-osoitteeseen kulkematta palvelimiemme läpi, rajaton määrä ihmisiä voi skannata sen samanaikaisesti ilman pullonkauloja."
       }
-    ]
+    ],
+    "translatedSlug": "url-qr-koodi-tapahtumalippujen-rekisterointia-varten"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "Mitä tapahtuu, jos he skannaavat sen pöytätietokoneella?",
         "a": "Jos se skannataan työpöydällä tai klikataan linkin kautta, se kehottaa käyttäjää avaamaan WhatsApp Web- tai WhatsApp Desktop -sovelluksen jatkaaksesi keskustelua saumattomasti."
       }
-    ]
+    ],
+    "translatedSlug": "whatsapp-qr-koodi-asiakastukea-varten"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "Onko tämä turvallista rahoitustapahtumien käsittelyssä?",
         "a": "Kyllä. Työkalumme luo tiukasti tavallisen PayPalin \"Osta nyt\" -URL-osoitteen. Varsinainen rahoitustapahtuma tapahtuu kokonaan PayPalin erittäin turvallisessa, salatussa ympäristössä. Emme koskaan koske tai näe maksutietoja."
       }
-    ]
+    ],
+    "translatedSlug": "paypal-qr-koodi-lahjoituksia-varten"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "Voinko kopioida QR-koodiin muita osoitteita?",
         "a": "Vaikka mailto-protokolla tukee CC- ja BCC-protokollaa, keskitymme tällä hetkellä ensisijaiseen vastaanottajakenttään varmistaaksemme parhaan mahdollisen yhteensopivuuden vanhempien sähköpostiohjelmien ja tiettyjen Android-laitteiden välillä."
       }
-    ]
+    ],
+    "translatedSlug": "sahkoposti-qr-koodi-uutiskirjeen-tilaamista-varten"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "Seuraako tämä sovellukseni asennustietoja?",
         "a": "QR-koodi itsessään ei seuraa mittareita. Jos kuitenkin käytät kohde-URL-osoitteena attribuutiolinkkiä (mm. AppsFlyeristä, Adjustista), kyseiset palvelut seuraavat asennustietoja saumattomasti."
       }
-    ]
+    ],
+    "translatedSlug": "app-storen-qr-koodi-pelien-lataamista-varten"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "Entä jos YouTube-video on piilotettu?",
         "a": "Piilotetut YouTube-videot toimivat täydellisesti QR-koodien kanssa. Video ei näy julkisissa hakutuloksissa, mutta jokainen, joka skannaa fyysisen QR-koodin, voi katsoa ohjevideon ilman ongelmia."
       }
-    ]
+    ],
+    "translatedSlug": "youtube-qr-koodi-tuoteoppaita-varten"
   }
 ]

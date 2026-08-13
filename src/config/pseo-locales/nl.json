@@ -19,7 +19,8 @@
         "q": "Zijn PDF QR-codes veilig voor mijn klanten om te scannen?",
         "a": "Ja! Omdat CreateMy-QR 100% lokaal op uw apparaat werkt, volgen we uw klanten niet en voegen we geen advertenties van derden toe aan de scanervaring. Wanneer klanten uw code scannen, worden ze veilig rechtstreeks naar uw menu geleid."
       }
-    ]
+    ],
+    "translatedSlug": "pdf-qr-code-voor-restaurantmenu"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "Werkt een WiFi QR-code voor zowel iPhone als Android?",
         "a": "Absoluut. De WiFi QR-codestandaard (WPA/WPA2/WEP) wordt universeel herkend door zowel Apple iOS- als Android-besturingssystemen. Gebruikers richten eenvoudigweg hun standaardcamera-app op de code om verbinding te maken."
       }
-    ]
+    ],
+    "translatedSlug": "wifi-qr-code-voor-cafehotel"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "Kan ik dit in plaats daarvan gebruiken voor beoordelingen op Yelp of TripAdvisor?",
         "a": "Ja! Hoewel deze pagina zich richt op Google Reviews, kunt u eenvoudigweg onze standaard URL QR-codegenerator gebruiken en de directe beoordelingslink voor uw Yelp-, TripAdvisor- of Trustpilot-profiel plakken."
       }
-    ]
+    ],
+    "translatedSlug": "google-review-qr-code-voor-lokaal-bedrijf"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "Kan ik mijn professionele portretfoto aan de vCard toevoegen?",
         "a": "Standaard vCard QR-codes ondersteunen geen ingebedde afbeeldingen omdat afbeeldingen de datalading te groot maken, wat resulteert in een QR-code die te compact is om gemakkelijk te scannen. Voor maximale scanbetrouwbaarheid raden wij u aan de gegevens tekstgebaseerd te houden."
       }
-    ]
+    ],
+    "translatedSlug": "vcard-qr-code-voor-makelaars-in-onroerend-goed"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "Is er een limiet aan het aantal mensen dat de QR-code van mijn evenement kan scannen?",
         "a": "Er zijn absoluut geen scanlimieten! Omdat de QR-code eenvoudigweg rechtstreeks naar uw ticketing-URL verwijst zonder langs onze servers te gaan, kan een onbeperkt aantal mensen deze tegelijkertijd scannen zonder dat er knelpunten optreden."
       }
-    ]
+    ],
+    "translatedSlug": "url-qr-code-voor-registratie-van-evenemententickets"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "Wat gebeurt er als ze het op een desktopcomputer scannen?",
         "a": "Als het op een desktop wordt gescand of via een link wordt aangeklikt, wordt de gebruiker gevraagd WhatsApp Web of de WhatsApp Desktop-applicatie te openen om het gesprek naadloos voort te zetten."
       }
-    ]
+    ],
+    "translatedSlug": "whatsapp-qr-code-voor-klantenondersteuning"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "Is dit veilig voor het afhandelen van financiële transacties?",
         "a": "Ja. Onze tool genereert strikt een standaard PayPal 'Koop nu'-URL. De daadwerkelijke financiële transactie vindt volledig plaats binnen de uiterst veilige, gecodeerde omgeving van PayPal. Wij raken of zien de betaalgegevens nooit."
       }
-    ]
+    ],
+    "translatedSlug": "paypal-qr-code-voor-donaties"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "Kan ik andere adressen CC of BCC in de QR-code gebruiken?",
         "a": "Hoewel het kernprotocol 'mailto' CC en BCC ondersteunt, concentreren we ons momenteel op het veld van de primaire ontvanger om maximale compatibiliteit tussen oudere e-mailclients en specifieke Android-apparaten te garanderen."
       }
-    ]
+    ],
+    "translatedSlug": "e-mail-qr-code-voor-aanmelding-op-de-nieuwsbrief"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "Worden hiermee mijn app-installatiestatistieken bijgehouden?",
         "a": "De QR-code zelf houdt geen statistieken bij. Als u echter een attributielink (van AppsFlyer, Adjust, enz.) als bestemmings-URL gebruikt, zullen deze services de installatiegegevens naadloos bijhouden."
       }
-    ]
+    ],
+    "translatedSlug": "app-store-qr-code-voor-gamedownloads"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "Wat moet ik doen als de YouTube-video verborgen is?",
         "a": "Verborgen YouTube-video's werken perfect met QR-codes. De video verschijnt niet in de openbare zoekresultaten, maar wie de fysieke QR-code scant, kan de instructievideo zonder problemen bekijken."
       }
-    ]
+    ],
+    "translatedSlug": "youtube-qr-code-voor-producthandleidingen"
   }
 ]

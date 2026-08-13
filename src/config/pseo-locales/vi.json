@@ -19,7 +19,8 @@
         "q": "Mã QR PDF có an toàn cho khách hàng của tôi quét không?",
         "a": "Đúng! Vì CreateMy-QR hoạt động cục bộ 100% trên thiết bị của bạn nên chúng tôi không theo dõi khách hàng của bạn hoặc đưa quảng cáo của bên thứ ba vào trải nghiệm quét. Khi khách hàng quét mã của bạn, họ sẽ được chuyển thẳng đến thực đơn của bạn một cách an toàn."
       }
-    ]
+    ],
+    "translatedSlug": "ma-qr-pdf-cho-thuc-on-nha-hang"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "Mã QR WiFi có hoạt động cho cả iPhone và Android không?",
         "a": "Tuyệt đối. Chuẩn mã WiFi QR (WPA/WPA2/WEP) được cả hệ điều hành Apple iOS và Android công nhận rộng rãi. Người dùng chỉ cần trỏ ứng dụng camera mặc định của họ vào mã để kết nối."
       }
-    ]
+    ],
+    "translatedSlug": "ma-qr-wifi-cho-quan-ca-phe-khach-san"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "Thay vào đó, tôi có thể sử dụng thông tin này để đánh giá trên Yelp hoặc TripAdvisor không?",
         "a": "Đúng! Mặc dù trang này tập trung vào Bài đánh giá trên Google nhưng bạn chỉ cần sử dụng trình tạo Mã QR URL tiêu chuẩn của chúng tôi và dán liên kết đánh giá trực tiếp cho hồ sơ Yelp, TripAdvisor hoặc Trustpilot của bạn."
       }
-    ]
+    ],
+    "translatedSlug": "google-anh-gia-ma-qr-cho-doanh-nghiep-ia-phuong"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "Tôi có thể thêm ảnh chân dung chuyên nghiệp của mình vào vCard không?",
         "a": "Mã QR vCard tiêu chuẩn không hỗ trợ hình ảnh nhúng vì hình ảnh khiến tải trọng dữ liệu quá lớn, dẫn đến mã QR quá dày đặc nên không thể quét dễ dàng. Chúng tôi khuyên bạn nên giữ dữ liệu dựa trên văn bản để có độ tin cậy quét tối đa."
       }
-    ]
+    ],
+    "translatedSlug": "ma-qr-vcard-danh-cho-ai-ly-bat-ong-san"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "Có giới hạn số lượng người có thể quét mã QR sự kiện của tôi không?",
         "a": "Hoàn toàn không có giới hạn quét! Vì mã QR chỉ đơn giản trỏ trực tiếp đến URL bán vé của bạn mà không cần thông qua máy chủ của chúng tôi nên không giới hạn số lượng người có thể quét mã cùng lúc mà không gặp bất kỳ trở ngại nào."
       }
-    ]
+    ],
+    "translatedSlug": "url-qr-code-e-ang-ky-ve-su-kien"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "Điều gì xảy ra nếu họ quét nó trên máy tính để bàn?",
         "a": "Nếu được quét trên máy tính để bàn hoặc nhấp qua liên kết, nó sẽ nhắc người dùng mở WhatsApp Web hoặc ứng dụng WhatsApp Desktop để tiếp tục cuộc trò chuyện một cách liền mạch."
       }
-    ]
+    ],
+    "translatedSlug": "ma-qr-whatsapp-e-ho-tro-khach-hang"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "Điều này có an toàn để xử lý các giao dịch tài chính không?",
         "a": "Đúng. Công cụ của chúng tôi tạo ra URL 'Mua ngay' tiêu chuẩn của PayPal. Giao dịch tài chính thực tế diễn ra hoàn toàn trong môi trường mã hóa, bảo mật cao của PayPal. Chúng tôi không bao giờ chạm hoặc xem dữ liệu thanh toán."
       }
-    ]
+    ],
+    "translatedSlug": "ma-qr-paypal-e-quyen-gop"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "Tôi có thể CC hoặc BCC các địa chỉ khác trong mã QR không?",
         "a": "Mặc dù giao thức 'mailto' cốt lõi hỗ trợ CC và BCC, nhưng chúng tôi hiện tập trung vào trường người nhận chính để đảm bảo khả năng tương thích tối đa trên các ứng dụng email cũ hơn và các thiết bị Android cụ thể."
       }
-    ]
+    ],
+    "translatedSlug": "email-ma-qr-e-ang-ky-ban-tin"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "Điều này có theo dõi số liệu cài đặt ứng dụng của tôi không?",
         "a": "Bản thân mã QR không theo dõi số liệu. Tuy nhiên, nếu bạn sử dụng liên kết phân bổ (từ AppsFlyer, Điều chỉnh, v.v.) làm URL đích thì các dịch vụ đó sẽ theo dõi dữ liệu cài đặt một cách liền mạch."
       }
-    ]
+    ],
+    "translatedSlug": "ma-qr-cua-hang-ung-dung-e-tai-xuong-tro-choi"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "Điều gì xảy ra nếu video YouTube không được liệt kê?",
         "a": "Các video YouTube không công khai hoạt động hoàn hảo với mã QR. Video sẽ không xuất hiện trong kết quả tìm kiếm công khai nhưng bất kỳ ai quét mã QR vật lý đều có thể xem video hướng dẫn mà không gặp vấn đề gì."
       }
-    ]
+    ],
+    "translatedSlug": "ma-qr-youtube-cho-huong-dan-su-dung-san-pham"
   }
 ]

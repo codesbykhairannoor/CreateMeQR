@@ -19,7 +19,8 @@
         "q": "Biztonságosak a PDF QR-kódok beolvasása ügyfeleim számára?",
         "a": "Igen! Mivel a CreateMy-QR 100%-ban helyileg működik az eszközén, nem követjük nyomon ügyfeleit, és nem iktatunk be harmadik féltől származó hirdetéseket a szkennelési élménybe. Amikor az ügyfelek beolvassák a kódot, biztonságosan közvetlenül az Ön menüjéhez irányítják őket."
       }
-    ]
+    ],
+    "translatedSlug": "pdf-qr-kod-az-etterem-menujehez"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "Működik a WiFi QR-kód iPhone és Android rendszeren is?",
         "a": "Teljesen. A WiFi QR-kód szabványt (WPA/WPA2/WEP) az Apple iOS és Android operációs rendszerek egyaránt elismerik. A felhasználók egyszerűen rámutatnak alapértelmezett kameraalkalmazásukra a kódra a csatlakozáshoz."
       }
-    ]
+    ],
+    "translatedSlug": "wifi-qr-kod-a-kavezo-szallodahoz"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "Használhatom ezt a Yelp vagy TripAdvisor értékelésekhez?",
         "a": "Igen! Bár ez az oldal a Google Véleményekre összpontosít, egyszerűen használhatja szabványos URL QR-kód generátorunkat, és beillesztheti a közvetlen véleményezési linket Yelp-, TripAdvisor- vagy Trustpilot-profiljához."
       }
-    ]
+    ],
+    "translatedSlug": "google-ertekeles-qr-kod-a-helyi-vallalkozasok-szamara"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "Hozzáadhatom a professzionális fejlövést a vCardhoz?",
         "a": "A szabványos vCard QR-kódok nem támogatják a beágyazott képeket, mert a képek túl nagyra teszik az adatmennyiséget, ami túl sűrű QR-kódot eredményez a könnyű beolvasáshoz. Javasoljuk, hogy az adatok szövegalapúak legyenek a maximális szkennelési megbízhatóság érdekében."
       }
-    ]
+    ],
+    "translatedSlug": "vcard-qr-kod-ingatlanugynokok-szamara"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "Van korlátozás arra, hogy hány ember szkennelheti be az esemény QR-kódját?",
         "a": "Egyáltalán nincsenek szkennelési korlátok! Mivel a QR-kód egyszerűen közvetlenül a jegyvásárlási URL-re mutat anélkül, hogy áthaladna a szervereinken, korlátlan számú ember szkennelheti le egyidejűleg, szűk keresztmetszetek nélkül."
       }
-    ]
+    ],
+    "translatedSlug": "url-qr-kod-az-esemenyjegyek-regisztraciojahoz"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "Mi történik, ha asztali számítógépen szkennelik?",
         "a": "Ha beolvassa az asztalon, vagy rákattint egy hivatkozáson keresztül, akkor a beszélgetés zökkenőmentes folytatásához nyissa meg a WhatsApp Web vagy a WhatsApp Desktop alkalmazást."
       }
-    ]
+    ],
+    "translatedSlug": "whatsapp-qr-kod-az-ugyfelszolgalathoz"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "Biztonságos ez a pénzügyi tranzakciók kezeléséhez?",
         "a": "Igen. Eszközünk szigorúan szabványos PayPal „Vásárlás most” URL-t generál. A tényleges pénzügyi tranzakció teljes egészében a PayPal rendkívül biztonságos, titkosított környezetében történik. Soha nem érintjük meg és nem látjuk a fizetési adatokat."
       }
-    ]
+    ],
+    "translatedSlug": "paypal-qr-kod-adomanyokhoz"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "Más címeket is megadhatok a QR-kódban?",
         "a": "Míg az alapvető „mailto” protokoll támogatja a CC-t és a BCC-t, jelenleg az elsődleges címzett mezőre összpontosítunk, hogy maximális kompatibilitást biztosítsunk a régebbi e-mail kliensekkel és bizonyos Android-eszközökkel."
       }
-    ]
+    ],
+    "translatedSlug": "e-mailben-qr-kodot-a-hirlevelre-valo-feliratkozashoz"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "Ez nyomon fogja követni az alkalmazástelepítési mutatóimat?",
         "a": "Maga a QR-kód nem követi a mutatókat. Ha azonban hozzárendelési hivatkozást használ (az AppsFlyerből, az Adjustból stb.) cél URL-ként, akkor ezek a szolgáltatások zökkenőmentesen követik a telepítési adatokat."
       }
-    ]
+    ],
+    "translatedSlug": "app-store-qr-kod-a-jatekok-letoltesehez"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "Mi van, ha a YouTube-videó nem nyilvános?",
         "a": "A nem listázott YouTube-videók tökéletesen működnek QR-kóddal. A videó nem jelenik meg a nyilvános keresési eredmények között, de bárki, aki beolvassa a fizikai QR-kódot, gond nélkül megtekintheti az oktatóvideót."
       }
-    ]
+    ],
+    "translatedSlug": "youtube-qr-kod-a-termek-kezikonyvehez"
   }
 ]

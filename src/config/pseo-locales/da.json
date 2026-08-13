@@ -19,7 +19,8 @@
         "q": "Er PDF QR-koder sikre for mine kunder at scanne?",
         "a": "Ja! Fordi CreateMy-QR fungerer 100 % lokalt på din enhed, sporer vi ikke dine kunder eller injicerer tredjepartsannoncer i scanningsoplevelsen. Når kunder scanner din kode, ledes de sikkert direkte til din menu."
       }
-    ]
+    ],
+    "translatedSlug": "pdf-qr-kode-til-restaurantmenu"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "Virker en WiFi QR-kode til både iPhone og Android?",
         "a": "Absolut. WiFi QR-kodestandarden (WPA/WPA2/WEP) er universelt anerkendt af både Apple iOS- og Android-operativsystemer. Brugere peger simpelthen deres standardkamera-app mod koden for at oprette forbindelse."
       }
-    ]
+    ],
+    "translatedSlug": "wifi-qr-kode-til-cafehotel"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "Kan jeg bruge dette til Yelp- eller TripAdvisor-anmeldelser i stedet?",
         "a": "Ja! Mens denne side fokuserer på Google Anmeldelser, kan du blot bruge vores standard URL QR-kodegenerator og indsætte det direkte anmeldelseslink til din Yelp-, TripAdvisor- eller Trustpilot-profil."
       }
-    ]
+    ],
+    "translatedSlug": "google-review-qr-kode-til-lokal-virksomhed"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "Kan jeg tilføje mit professionelle headshot til vCard'et?",
         "a": "Standard vCard QR-koder understøtter ikke indlejrede billeder, fordi billeder gør databelastningen for stor, hvilket resulterer i en QR-kode, der er for tæt til let at scanne. Vi anbefaler at holde dataene tekstbaserede for maksimal scanningspålidelighed."
       }
-    ]
+    ],
+    "translatedSlug": "vcard-qr-kode-til-ejendomsmglere"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "Er der en grænse for, hvor mange personer der kan scanne min begivenheds QR-kode?",
         "a": "Der er absolut ingen scanningsgrænser! Fordi QR-koden blot peger direkte til din billet-URL uden at gå gennem vores servere, kan et ubegrænset antal personer scanne den samtidigt uden flaskehalse."
       }
-    ]
+    ],
+    "translatedSlug": "url-qr-kode-til-registrering-af-arrangementsbilletter"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "Hvad sker der, hvis de scanner det på en stationær computer?",
         "a": "Hvis den scannes på et skrivebord eller klikkes via et link, vil det bede brugeren om at åbne WhatsApp Web eller WhatsApp Desktop-applikationen for at fortsætte samtalen problemfrit."
       }
-    ]
+    ],
+    "translatedSlug": "whatsapp-qr-kode-til-kundesupport"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "Er dette sikkert til håndtering af finansielle transaktioner?",
         "a": "Ja. Vores værktøj genererer strengt taget en standard PayPal 'Køb nu' URL. Den faktiske finansielle transaktion sker udelukkende inden for PayPals meget sikre, krypterede miljø. Vi rører eller ser aldrig betalingsdataene."
       }
-    ]
+    ],
+    "translatedSlug": "paypal-qr-kode-til-donationer"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "Kan jeg CC eller BCC andre adresser i QR-koden?",
         "a": "Mens kerne-'mailto'-protokollen understøtter CC og BCC, fokuserer vi i øjeblikket på det primære modtagerfelt for at sikre maksimal kompatibilitet på tværs af ældre e-mail-klienter og specifikke Android-enheder."
       }
-    ]
+    ],
+    "translatedSlug": "e-mail-qr-kode-for-tilmelding-til-nyhedsbrev"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "Vil dette spore mine appinstallationsmetrics?",
         "a": "QR-koden i sig selv sporer ikke målinger. Men hvis du bruger et tilskrivningslink (fra AppsFlyer, Adjust osv.) som destinations-URL, vil disse tjenester spore installationsdataene problemfrit."
       }
-    ]
+    ],
+    "translatedSlug": "app-store-qr-kode-til-spildownloads"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "Hvad hvis YouTube-videoen er skjult?",
         "a": "Unoterede YouTube-videoer fungerer perfekt med QR-koder. Videoen vises ikke i offentlige søgeresultater, men alle, der scanner den fysiske QR-kode, vil uden problemer kunne se instruktionsvideoen."
       }
-    ]
+    ],
+    "translatedSlug": "youtube-qr-kode-til-produktmanualer"
   }
 ]

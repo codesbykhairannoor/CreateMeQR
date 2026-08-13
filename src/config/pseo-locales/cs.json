@@ -19,7 +19,8 @@
         "q": "Jsou QR kódy PDF bezpečné pro skenování mých zákazníků?",
         "a": "Ano! Protože CreateMy-QR funguje 100% lokálně na vašem zařízení, nesledujeme vaše zákazníky ani nevkládáme reklamy třetích stran do prostředí skenování. Když zákazníci naskenují váš kód, jsou bezpečně přesměrováni přímo do vašeho menu."
       }
-    ]
+    ],
+    "translatedSlug": "pdf-qr-kod-pro-menu-restaurace"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "Funguje QR kód WiFi pro iPhone i Android?",
         "a": "Absolutně. Standard WiFi QR kódu (WPA/WPA2/WEP) je všeobecně uznáván operačními systémy Apple iOS i Android. Uživatelé jednoduše namíří svou výchozí aplikaci fotoaparátu na kód pro připojení."
       }
-    ]
+    ],
+    "translatedSlug": "wifi-qr-kod-pro-kavarnu-hotelu"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "Mohu to místo toho použít pro recenze Yelp nebo TripAdvisor?",
         "a": "Ano! I když se tato stránka zaměřuje na Recenze Google, můžete jednoduše použít náš standardní generátor QR kódů URL a vložit přímý odkaz na recenzi pro svůj profil Yelp, TripAdvisor nebo Trustpilot."
       }
-    ]
+    ],
+    "translatedSlug": "google-recenze-qr-kod-pro-mistni-firmu"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "Mohu do vCard přidat svůj profesionální headshot?",
         "a": "Standardní kódy vCard QR nepodporují vložené obrázky, protože obrázky způsobují příliš velký objem dat, což má za následek, že kód QR je příliš hustý, aby jej bylo možné snadno naskenovat. Pro maximální spolehlivost skenování doporučujeme zachovat textová data."
       }
-    ]
+    ],
+    "translatedSlug": "vcard-qr-kod-pro-realitni-maklere"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "Existuje nějaký limit, kolik lidí může naskenovat můj QR kód události?",
         "a": "Neexistují absolutně žádné limity skenování! Protože QR kód jednoduše ukazuje přímo na adresu URL vašeho lístku, aniž by procházel našimi servery, neomezený počet lidí jej může naskenovat současně bez jakýchkoli překážek."
       }
-    ]
+    ],
+    "translatedSlug": "url-qr-kod-pro-registraci-vstupenek-na-akci"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "Co se stane, když to naskenují na stolním počítači?",
         "a": "Pokud naskenujete na ploše nebo kliknete na odkaz, vyzve uživatele, aby otevřel WhatsApp Web nebo aplikaci WhatsApp Desktop a plynule pokračoval v konverzaci."
       }
-    ]
+    ],
+    "translatedSlug": "whatsapp-qr-kod-pro-zakaznickou-podporu"
   },
   {
     "id": "payment-paypal-donation",
@@ -157,7 +163,8 @@
         "q": "Is this secure for handling financial transactions?",
         "a": "Yes. Our tool strictly generates a standard PayPal 'Buy Now' URL. The actual financial transaction happens entirely within PayPal's highly secure, encrypted environment. We never touch or see the payment data."
       }
-    ]
+    ],
+    "translatedSlug": "paypal-qr-kod-pro-dary"
   },
   {
     "id": "email-newsletter-signup",
@@ -179,7 +186,8 @@
         "q": "Mohu v QR kódu kopírovat nebo kopírovat další adresy?",
         "a": "Zatímco základní protokol 'mailto' podporuje CC a BCC, v současné době se zaměřujeme na pole primárního příjemce, abychom zajistili maximální kompatibilitu mezi staršími e-mailovými klienty a konkrétními zařízeními Android."
       }
-    ]
+    ],
+    "translatedSlug": "e-mailem-qr-kod-pro-prihlaseni-k-odberu-newsletteru"
   },
   {
     "id": "appstore-game-download",
@@ -201,7 +209,8 @@
         "q": "Bude to sledovat mé metriky instalací aplikace?",
         "a": "Samotný QR kód nesleduje metriky. Pokud však jako cílovou adresu URL použijete atribuční odkaz (z AppsFlyer, Adjust atd.), budou tyto služby plynule sledovat data o instalaci."
       }
-    ]
+    ],
+    "translatedSlug": "qr-kod-obchodu-s-aplikacemi-pro-stahovani-her"
   },
   {
     "id": "youtube-product-manual",
@@ -223,6 +232,7 @@
         "q": "Co když video YouTube není v seznamu?",
         "a": "Neveřejná videa na YouTube dokonale fungují s QR kódy. Video se nezobrazí ve výsledcích veřejného vyhledávání, ale kdokoli, kdo naskenuje fyzický QR kód, bude moci bez problémů zhlédnout instruktážní video."
       }
-    ]
+    ],
+    "translatedSlug": "youtube-qr-kod-pro-produktove-manualy"
   }
 ]

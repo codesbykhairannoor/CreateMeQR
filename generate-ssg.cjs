@@ -69,10 +69,11 @@ async function run() {
     
     const allPages = { ...toolMap };
     
-    // Inject pSEO routes for this language
+    // Inject pSEO routes for this language (use translatedSlug if available)
     const langPseo = pseoDataByLang[lang] || [];
     langPseo.forEach(uc => {
-      const safeSlug = uc.slug.startsWith('/') ? uc.slug : '/' + uc.slug;
+      const urlSlug = uc.translatedSlug || uc.slug;
+      const safeSlug = urlSlug.startsWith('/') ? urlSlug : '/' + urlSlug;
       allPages[safeSlug] = 'pseo_' + uc.id; // use unique ID to map later
     });
     

@@ -19,7 +19,8 @@
         "q": "Adakah kod QR PDF selamat untuk diimbas oleh pelanggan saya?",
         "a": "Ya! Oleh kerana CreateMy-QR beroperasi 100% secara setempat pada peranti anda, kami tidak menjejaki pelanggan anda atau menyuntik iklan pihak ketiga ke dalam pengalaman pengimbasan. Apabila pelanggan mengimbas kod anda, mereka diarahkan terus ke menu anda dengan selamat."
       }
-    ]
+    ],
+    "translatedSlug": "kod-qr-pdf-untuk-menu-restoran"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "Adakah kod QR WiFi berfungsi untuk kedua-dua iPhone dan Android?",
         "a": "betul-betul. Standard kod QR WiFi (WPA/WPA2/WEP) diiktiraf secara universal oleh kedua-dua sistem pengendalian Apple iOS dan Android. Pengguna hanya menghalakan apl kamera lalai mereka pada kod untuk disambungkan."
       }
-    ]
+    ],
+    "translatedSlug": "kod-qr-wifi-untuk-hotel-kafe"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "Bolehkah saya menggunakan ini untuk ulasan Yelp atau TripAdvisor?",
         "a": "Ya! Walaupun halaman ini memfokuskan pada Ulasan Google, anda hanya boleh menggunakan penjana Kod QR URL standard kami dan tampal pautan ulasan terus untuk profil Yelp, TripAdvisor atau Trustpilot anda."
       }
-    ]
+    ],
+    "translatedSlug": "ulasan-google-kod-qr-untuk-perniagaan-tempatan"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "Bolehkah saya menambah tangkapan kepala profesional saya pada vCard?",
         "a": "Kod QR vCard standard tidak menyokong imej terbenam kerana imej menjadikan muatan data terlalu besar, menyebabkan kod QR terlalu padat untuk diimbas dengan mudah. Kami mengesyorkan menyimpan data berasaskan teks untuk kebolehpercayaan imbasan maksimum."
       }
-    ]
+    ],
+    "translatedSlug": "kod-qr-vcard-untuk-ejen-hartanah"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "Adakah terdapat had kepada bilangan orang yang boleh mengimbas kod QR acara saya?",
         "a": "Tiada had imbasan sama sekali! Oleh kerana kod QR hanya menghala terus ke URL tiket anda tanpa melalui pelayan kami, bilangan orang yang tidak terhad boleh mengimbasnya secara serentak tanpa sebarang kesesakan."
       }
-    ]
+    ],
+    "translatedSlug": "kod-qr-url-untuk-pendaftaran-tiket-acara"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "Apakah yang berlaku jika mereka mengimbasnya pada komputer meja?",
         "a": "Jika diimbas pada desktop atau diklik melalui pautan, ia akan menggesa pengguna untuk membuka WhatsApp Web atau aplikasi Desktop WhatsApp untuk meneruskan perbualan dengan lancar."
       }
-    ]
+    ],
+    "translatedSlug": "whatsapp-kod-qr-untuk-sokongan-pelanggan"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "Adakah ini selamat untuk mengendalikan transaksi kewangan?",
         "a": "ya. Alat kami dengan ketat menjana URL 'Beli Sekarang' PayPal standard. Transaksi kewangan sebenar berlaku sepenuhnya dalam persekitaran PayPal yang sangat selamat dan disulitkan. Kami tidak pernah menyentuh atau melihat data pembayaran."
       }
-    ]
+    ],
+    "translatedSlug": "kod-qr-paypal-untuk-derma"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "Bolehkah saya CC atau BCC alamat lain dalam kod QR?",
         "a": "Walaupun protokol 'mailto' teras menyokong CC dan BCC, pada masa ini kami menumpukan pada medan penerima utama untuk memastikan keserasian maksimum merentas klien e-mel lama dan peranti Android tertentu."
       }
-    ]
+    ],
+    "translatedSlug": "e-mel-kod-qr-untuk-pendaftaran-surat-berita"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "Adakah ini akan menjejaki metrik pemasangan apl saya?",
         "a": "Kod QR itu sendiri tidak menjejaki metrik. Walau bagaimanapun, jika anda menggunakan pautan atribusi (daripada AppsFlyer, Adjust, dll.) sebagai URL destinasi, perkhidmatan tersebut akan menjejak data pemasangan dengan lancar."
       }
-    ]
+    ],
+    "translatedSlug": "kedai-aplikasi-kod-qr-untuk-muat-turun-permainan"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "Bagaimana jika video YouTube tidak tersenarai?",
         "a": "Video YouTube tidak tersenarai berfungsi dengan sempurna dengan kod QR. Video itu tidak akan muncul dalam hasil carian awam, tetapi sesiapa sahaja yang mengimbas kod QR fizikal akan dapat melihat video pengajaran tanpa masalah."
       }
-    ]
+    ],
+    "translatedSlug": "kod-qr-youtube-untuk-manual-produk"
   }
 ]

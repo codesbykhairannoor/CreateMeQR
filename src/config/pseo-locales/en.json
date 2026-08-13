@@ -22,7 +22,8 @@
         "q": "Are PDF QR codes safe for my customers to scan?",
         "a": "Yes! Because CreateMy-QR operates 100% locally on your device, we don't track your customers or inject third-party ads into the scanning experience. When customers scan your code, they are directed straight to your menu safely."
       }
-    ]
+    ],
+    "translatedSlug": "pdf-qr-code-for-restaurant-menu"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -48,7 +49,8 @@
         "q": "Does a WiFi QR code work for both iPhone and Android?",
         "a": "Absolutely. The WiFi QR code standard (WPA/WPA2/WEP) is universally recognized by both Apple iOS and Android operating systems. Users simply point their default camera app at the code to connect."
       }
-    ]
+    ],
+    "translatedSlug": "wifi-qr-code-for-cafe-hotel"
   },
   {
     "id": "google-review-local-business",
@@ -73,7 +75,8 @@
         "q": "Can I use this for Yelp or TripAdvisor reviews instead?",
         "a": "Yes! While this page focuses on Google Reviews, you can simply use our standard URL QR Code generator and paste the direct review link for your Yelp, TripAdvisor, or Trustpilot profile."
       }
-    ]
+    ],
+    "translatedSlug": "google-review-qr-code-for-local-business"
   },
   {
     "id": "vcard-real-estate",
@@ -101,7 +104,8 @@
         "q": "Can I add my professional headshot to the vCard?",
         "a": "Standard vCard QR codes do not support embedded images because images make the data payload too large, resulting in a QR code that is too dense to scan easily. We recommend keeping the data text-based for maximum scan reliability."
       }
-    ]
+    ],
+    "translatedSlug": "vcard-qr-code-for-real-estate-agents"
   },
   {
     "id": "url-event-tickets",
@@ -126,7 +130,8 @@
         "q": "Is there a limit to how many people can scan my event QR code?",
         "a": "There are absolutely no scan limits! Because the QR code simply points directly to your ticketing URL without passing through our servers, an unlimited number of people can scan it simultaneously without any bottlenecks."
       }
-    ]
+    ],
+    "translatedSlug": "url-qr-code-for-event-tickets-registration"
   },
   {
     "id": "whatsapp-customer-support",
@@ -152,7 +157,8 @@
         "q": "What happens if they scan it on a desktop computer?",
         "a": "If scanned on a desktop or clicked via a link, it will prompt the user to open WhatsApp Web or the WhatsApp Desktop application to continue the conversation seamlessly."
       }
-    ]
+    ],
+    "translatedSlug": "whatsapp-qr-code-for-customer-support"
   },
   {
     "id": "payment-paypal-donation",
@@ -180,7 +186,8 @@
         "q": "Is this secure for handling financial transactions?",
         "a": "Yes. Our tool strictly generates a standard PayPal 'Buy Now' URL. The actual financial transaction happens entirely within PayPal's highly secure, encrypted environment. We never touch or see the payment data."
       }
-    ]
+    ],
+    "translatedSlug": "paypal-qr-code-for-donations"
   },
   {
     "id": "email-newsletter-signup",
@@ -207,7 +214,8 @@
         "q": "Can I CC or BCC other addresses in the QR code?",
         "a": "While the core 'mailto' protocol supports CC and BCC, we currently focus on the primary recipient field to ensure maximum compatibility across older email clients and specific Android devices."
       }
-    ]
+    ],
+    "translatedSlug": "email-qr-code-for-newsletter-signup"
   },
   {
     "id": "appstore-game-download",
@@ -232,7 +240,8 @@
         "q": "Will this track my app install metrics?",
         "a": "The QR code itself does not track metrics. However, if you use an attribution link (from AppsFlyer, Adjust, etc.) as the destination URL, those services will track the install data seamlessly."
       }
-    ]
+    ],
+    "translatedSlug": "app-store-qr-code-for-game-downloads"
   },
   {
     "id": "youtube-product-manual",
@@ -257,6 +266,7 @@
         "q": "What if the YouTube video is unlisted?",
         "a": "Unlisted YouTube videos work perfectly with QR codes. The video won't appear in public search results, but anyone who scans the physical QR code will be able to view the instructional video without issues."
       }
-    ]
+    ],
+    "translatedSlug": "youtube-qr-code-for-product-manuals"
   }
 ]

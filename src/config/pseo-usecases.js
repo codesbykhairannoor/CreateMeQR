@@ -24,6 +24,7 @@ export function getPseoUseCase(slug, preferredLang = 'en') {
   const preferredCases = pseoDataByLang[preferredLang] || [];
   const preferredFound = preferredCases.find(
     uc => uc.slug === cleanSlug || uc.slug === slug || '/' + uc.slug === slug
+       || uc.translatedSlug === cleanSlug || uc.translatedSlug === slug || '/' + (uc.translatedSlug || '') === slug
   );
   if (preferredFound) return { ...preferredFound, lang: preferredLang };
 
@@ -31,6 +32,7 @@ export function getPseoUseCase(slug, preferredLang = 'en') {
   const enCases = pseoDataByLang['en'] || [];
   const enFound = enCases.find(
     uc => uc.slug === cleanSlug || uc.slug === slug || '/' + uc.slug === slug
+       || uc.translatedSlug === cleanSlug || uc.translatedSlug === slug
   );
   if (enFound) return { ...enFound, lang: 'en' };
 
@@ -40,6 +42,7 @@ export function getPseoUseCase(slug, preferredLang = 'en') {
     const cases = pseoDataByLang[lang] || [];
     const found = cases.find(
       uc => uc.slug === cleanSlug || uc.slug === slug || '/' + uc.slug === slug
+         || uc.translatedSlug === cleanSlug || uc.translatedSlug === slug
     );
     if (found) return { ...found, lang };
   }

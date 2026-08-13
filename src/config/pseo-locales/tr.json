@@ -19,7 +19,8 @@
         "q": "Müşterilerimin PDF QR kodlarını taraması güvenli mi?",
         "a": "Evet! CreateMy-QR cihazınızda %100 yerel olarak çalıştığı için müşterilerinizi izlemiyoruz veya tarama deneyimine üçüncü taraf reklamları eklemiyoruz. Müşteriler kodunuzu taradıklarında güvenli bir şekilde doğrudan menünüze yönlendirilirler."
       }
-    ]
+    ],
+    "translatedSlug": "restoran-menusu-icin-pdf-qr-kodu"
   },
   {
     "id": "wifi-cafe-hotel",
@@ -41,7 +42,8 @@
         "q": "WiFi QR kodu hem iPhone hem de Android'de çalışır mı?",
         "a": "Kesinlikle. WiFi QR kodu standardı (WPA/WPA2/WEP), hem Apple iOS hem de Android işletim sistemleri tarafından evrensel olarak tanınmaktadır. Kullanıcıların bağlanmak için varsayılan kamera uygulamalarını koda yönlendirmeleri yeterlidir."
       }
-    ]
+    ],
+    "translatedSlug": "kafe-otel-icin-wifi-qr-kodu"
   },
   {
     "id": "google-review-local-business",
@@ -63,7 +65,8 @@
         "q": "Bunun yerine bunu Yelp veya TripAdvisor incelemeleri için kullanabilir miyim?",
         "a": "Evet! Bu sayfa Google İncelemelerine odaklanırken, standart URL QR Kodu oluşturucumuzu kullanabilir ve Yelp, TripAdvisor veya Trustpilot profiliniz için doğrudan inceleme bağlantısını yapıştırabilirsiniz."
       }
-    ]
+    ],
+    "translatedSlug": "google-yerel-isletmeler-icin-qr-kodunu-gozden-geciriyor"
   },
   {
     "id": "vcard-real-estate",
@@ -85,7 +88,8 @@
         "q": "Profesyonel vesikalık fotoğrafımı vCard'a ekleyebilir miyim?",
         "a": "Standart vCard QR kodları gömülü görüntüleri desteklemez çünkü görüntüler veri yükünü çok büyük hale getirir ve bu da QR kodunun kolayca taranamayacak kadar yoğun olmasına neden olur. Maksimum tarama güvenilirliği için verileri metin tabanlı tutmanızı öneririz."
       }
-    ]
+    ],
+    "translatedSlug": "emlakclar-icin-vcard-qr-kodu"
   },
   {
     "id": "url-event-tickets",
@@ -107,7 +111,8 @@
         "q": "Etkinlik QR kodumu kaç kişinin tarayabileceği konusunda bir sınır var mı?",
         "a": "Kesinlikle tarama sınırı yoktur! QR kodu, sunucularımızdan geçmeden doğrudan biletleme URL'nize yönlendirdiğinden, sınırsız sayıda kişi herhangi bir darboğaz olmadan aynı anda onu tarayabilir."
       }
-    ]
+    ],
+    "translatedSlug": "etkinlik-biletleri-kayd-icin-url-qr-kodu"
   },
   {
     "id": "whatsapp-customer-support",
@@ -129,7 +134,8 @@
         "q": "Masaüstü bilgisayarda tararlarsa ne olur?",
         "a": "Masaüstünde taranırsa veya bir bağlantı aracılığıyla tıklanırsa, konuşmaya sorunsuz bir şekilde devam etmek için kullanıcıdan WhatsApp Web'i veya WhatsApp Masaüstü uygulamasını açması istenecektir."
       }
-    ]
+    ],
+    "translatedSlug": "musteri-destegi-icin-whatsapp-qr-kodu"
   },
   {
     "id": "payment-paypal-donation",
@@ -151,7 +157,8 @@
         "q": "Bu, finansal işlemleri gerçekleştirmek için güvenli mi?",
         "a": "Evet. Aracımız kesinlikle standart bir PayPal 'Hemen Satın Al' URL'si oluşturur. Gerçek finansal işlem tamamen PayPal'ın son derece güvenli, şifreli ortamında gerçekleşir. Ödeme verilerine asla dokunmayız veya bunları görmeyiz."
       }
-    ]
+    ],
+    "translatedSlug": "bagslar-icin-paypal-qr-kodu"
   },
   {
     "id": "email-newsletter-signup",
@@ -173,7 +180,8 @@
         "q": "QR kodundaki diğer adresleri CC veya BCC yapabilir miyim?",
         "a": "Çekirdek 'mailto' protokolü CC ve BCC'yi desteklerken, eski e-posta istemcileri ve belirli Android cihazları arasında maksimum uyumluluk sağlamak için şu anda birincil alıcı alanına odaklanıyoruz."
       }
-    ]
+    ],
+    "translatedSlug": "bulten-kayd-icin-qr-kodunu-e-postayla-gonderin"
   },
   {
     "id": "appstore-game-download",
@@ -195,7 +203,8 @@
         "q": "Bu, uygulama yükleme ölçümlerimi izleyecek mi?",
         "a": "QR kodunun kendisi metrikleri izlemez. Ancak, hedef URL olarak bir ilişkilendirme bağlantısı (AppsFlyer,Adjust vb.'den) kullanırsanız bu hizmetler yükleme verilerini sorunsuz bir şekilde izleyecektir."
       }
-    ]
+    ],
+    "translatedSlug": "oyun-indirmeleri-icin-uygulama-magazas-qr-kodu"
   },
   {
     "id": "youtube-product-manual",
@@ -217,6 +226,7 @@
         "q": "YouTube videosu liste dışıysa ne olur?",
         "a": "Liste dışı YouTube videoları QR kodlarıyla mükemmel çalışır. Video genel arama sonuçlarında görünmeyecek, ancak fiziksel QR kodunu tarayan herkes eğitim videosunu sorunsuz bir şekilde görüntüleyebilecek."
       }
-    ]
+    ],
+    "translatedSlug": "urun-klavuzlar-icin-youtube-qr-kodu"
   }
 ]
