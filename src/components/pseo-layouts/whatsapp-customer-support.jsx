@@ -44,8 +44,8 @@ export default function WhatsappCustomerSupport({ pseoUseCase }) {
                 <div className="leading-relaxed">
                   {faq.a}
                 </div>
-                <div className="text-[0.65rem] text-slate-400 text-right mt-2 font-mono">
-                  Read ✓✓
+                <div className="text-[0.65rem] text-slate-400 text-right mt-2">
+                  ✓✓
                 </div>
               </div>
             </div>

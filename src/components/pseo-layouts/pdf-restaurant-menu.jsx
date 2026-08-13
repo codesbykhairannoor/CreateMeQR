@@ -19,11 +19,11 @@ export default function PdfRestaurantMenu({ pseoUseCase }) {
             </svg>
             {t('pseo.insights_badge', 'PRO GUIDE')}
           </div>
-          <h2 className="text-4xl lg:text-5xl font-serif text-[#2C241B] dark:text-[#E8E1D5] mb-6 leading-tight">
+          <h2 className="text-4xl lg:text-5xl text-[#2C241B] dark:text-[#E8E1D5] mb-6 leading-tight font-bold">
             {t('pseo.insights_title', 'Expert Insights & Best Practices')}
           </h2>
           <p className="text-[#6B5D4D] dark:text-[#A39887] text-lg">
-            Essential strategies to ensure your digital menu is always accessible, scannable, and up-to-date.
+            {pseoUseCase.seoDesc}
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export default function PdfRestaurantMenu({ pseoUseCase }) {
           {pseoUseCase.faqs.map((faq, idx) => (
             <div key={idx} className="bg-white dark:bg-[#23201B] p-6 lg:p-8 rounded-2xl border border-[#E8E1D5] dark:border-[#3A362D] shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-4">
-                <span className="text-2xl font-serif text-amber-500 italic mt-1">0{idx + 1}.</span>
+                <span className="text-2xl text-amber-500 italic mt-1 font-bold">0{idx + 1}.</span>
                 <div>
                   <h3 className="text-xl font-medium text-[#2C241B] dark:text-[#E8E1D5] mb-3">{faq.q}</h3>
                   <p className="text-[#6B5D4D] dark:text-[#A39887] leading-relaxed">{faq.a}</p>

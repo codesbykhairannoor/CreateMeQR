@@ -31,7 +31,7 @@ export default function VcardRealEstate({ pseoUseCase }) {
             {pseoUseCase.faqs.map((faq, idx) => (
               <div key={idx} className="flex gap-8 relative group">
                 <div className="w-14 h-14 rounded-full bg-slate-800 border-2 border-slate-700 group-hover:border-yellow-500 flex items-center justify-center shrink-0 z-10 transition-colors duration-300 hidden md:flex text-slate-400 group-hover:text-yellow-500">
-                  <span className="font-serif italic text-xl">{idx + 1}</span>
+                  <span className="italic text-xl font-bold">{idx + 1}</span>
                 </div>
                 <div>
                   <h3 className="text-xl md:text-2xl font-semibold text-slate-100 mb-4 tracking-wide group-hover:text-white transition-colors">

@@ -19,7 +19,7 @@ export default function AppstoreGameDownload({ pseoUseCase }) {
                 {t('pseo.insights_title', 'Expert Insights')}
               </h2>
             </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-lg font-mono text-cyan-400 text-sm tracking-widest font-bold">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-lg text-cyan-400 text-sm tracking-widest font-bold">
               [{t('pseo.insights_badge', 'PRO GUIDE')}]
             </div>
           </div>
@@ -28,7 +28,7 @@ export default function AppstoreGameDownload({ pseoUseCase }) {
             {pseoUseCase.faqs.map((faq, idx) => (
               <div key={idx} className="bg-black/40 border border-white/5 p-6 rounded-2xl hover:border-cyan-500/50 transition-colors group relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500/20 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-cyan-500/30 transition-colors"></div>
-                <div className="text-cyan-400 font-mono text-xs mb-4 uppercase tracking-widest opacity-80">
+                <div className="text-cyan-400 text-xs mb-4 uppercase tracking-widest opacity-80 font-bold">
                   // FAQ_0{idx + 1}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4 leading-snug">

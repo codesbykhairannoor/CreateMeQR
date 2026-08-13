@@ -25,7 +25,7 @@ export default function UrlEventTickets({ pseoUseCase }) {
             {/* Left stub of the ticket */}
             <div className="w-16 md:w-24 bg-pink-500 text-white flex flex-col items-center justify-center rounded-l-2xl border-r-2 border-dashed border-pink-700/30 relative">
               <span className="rotate-[-90deg] font-bold tracking-widest uppercase text-sm md:text-base whitespace-nowrap">
-                INFO {idx + 1}
+                FAQ {idx + 1}
               </span>
               <div className="absolute top-0 -mt-2 w-4 h-4 bg-white dark:bg-[#0B1120] rounded-full"></div>
               <div className="absolute bottom-0 -mb-2 w-4 h-4 bg-white dark:bg-[#0B1120] rounded-full"></div>

@@ -45,7 +45,7 @@ export default function EmailNewsletterSignup({ pseoUseCase }) {
                       {faq.q}
                     </span>
                   </div>
-                  <div className="text-xs text-zinc-400 font-mono">
+                  <div className="text-xs text-zinc-400 font-bold">
                     10:0{idx + 1} AM
                   </div>
                 </div>

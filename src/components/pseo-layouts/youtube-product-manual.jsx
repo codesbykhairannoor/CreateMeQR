@@ -30,7 +30,7 @@ export default function YoutubeProductManual({ pseoUseCase }) {
         {/* Chapters / Insights below player */}
         <div className="p-6 md:p-10">
           <h3 className="text-[#aaaaaa] font-medium mb-6 uppercase tracking-wider text-sm">
-            Video Chapters & FAQs
+            {t('pseo.insights_title', 'Expert Insights')}
           </h3>
           <div className="flex flex-col gap-6">
             {pseoUseCase.faqs.map((faq, idx) => (
