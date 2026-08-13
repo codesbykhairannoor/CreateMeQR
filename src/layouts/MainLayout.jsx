@@ -8,6 +8,7 @@ import { localizedRoutes, routeToToolMap } from '../config/localizedRoutes';
 import MegaNav from '../components/nav/MegaNav';
 import MobileNav from '../components/nav/MobileNav';
 import HistoryDrawer from '../components/HistoryDrawer';
+import { getPseoUseCase, getAllPseoData } from '../config/pseo-usecases';
 
 export default function MainLayout({ children }) {
   const { t, i18n } = useTranslation();
@@ -79,8 +80,23 @@ export default function MainLayout({ children }) {
     // Look up the current tool based on current lang and slug
     const currentTool = routeToToolMap[currentLangCode]?.[slug];
     
+    // Check if it's a pSEO page
+    const pseoUseCase = getPseoUseCase(slug, currentLangCode);
+    
     let newSlug;
-    if (currentTool) {
+    if (pseoUseCase) {
+      // Look up the pSEO use case in the target language
+      const allPseo = getAllPseoData();
+      const targetLangCases = allPseo[lang] || [];
+      const targetUc = targetLangCases.find(uc => uc.id === pseoUseCase.id);
+      
+      if (targetUc) {
+        newSlug = targetUc.translatedSlug || targetUc.slug;
+        newSlug = newSlug.startsWith('/') ? newSlug : '/' + newSlug;
+      } else {
+        newSlug = slug; // Fallback
+      }
+    } else if (currentTool) {
       // It's a localized tool route
       newSlug = localizedRoutes[lang]?.[currentTool] || '/';
     } else {

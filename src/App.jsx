@@ -154,18 +154,33 @@ export default function App() {
         <meta name="twitter:title" content={currentSeo.title} />
         <meta name="twitter:description" content={currentSeo.description} />
         
-        <link rel="canonical" href={`https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${slug === '/' ? '' : slug}`} />
-        {/* pSEO Hreflang Tags for all 30 languages */}
-        <link rel="alternate" hrefLang="x-default" href={`https://createmy-qr.com${localizedRoutes['en']?.[currentType] === '/' ? '' : localizedRoutes['en']?.[currentType]}`} />
-        {LANGS.map(lang => {
-          const lSlug = localizedRoutes[lang.code]?.[currentType] || '/';
-          const href = `https://createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${lSlug === '/' ? '' : lSlug}`;
-          return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
-        })}
+        <link rel="canonical" href={`https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${(() => {
+          if (pseoUseCase) {
+            const allPseo = getAllPseoData();
+            const langCases = allPseo[currentLangCode] || [];
+            const matchingUc = langCases.find(uc => uc.id === pseoUseCase.id);
+            if (matchingUc) {
+              const uSlug = matchingUc.translatedSlug || matchingUc.slug;
+              return uSlug.startsWith('/') ? uSlug : '/' + uSlug;
+            }
+          }
+          return slug === '/' ? '' : slug;
+        })()}`} />
+        {/* Standard Tool Hreflang Tags for all 30 languages (only if NOT a pSEO page) */}
+        {!pseoUseCase && (
+          <>
+            <link rel="alternate" hrefLang="x-default" href={`https://createmy-qr.com${localizedRoutes['en']?.[currentType] === '/' ? '' : localizedRoutes['en']?.[currentType]}`} />
+            {LANGS.map(lang => {
+              const lSlug = localizedRoutes[lang.code]?.[currentType] || '/';
+              const href = `https://createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${lSlug === '/' ? '' : lSlug}`;
+              return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
+            })}
+          </>
+        )}
         <meta name="keywords" content={t('seoKeywords')} />
         
-        {/* Bidirectional Hreflang Matrix for 30 Languages */}
-        {LANGS.map(lang => {
+        {/* pSEO Bidirectional Hreflang Matrix for 30 Languages (only if IS a pSEO page) */}
+        {pseoUseCase && LANGS.map(lang => {
           let targetSlug = slug;
           // If this is a pSEO page, lookup the translated slug for this specific language
           if (pseoUseCase) {
@@ -180,7 +195,7 @@ export default function App() {
           const href = `https://createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${targetSlug === '/' ? '' : targetSlug}`;
           return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
         })}
-        {(() => {
+        {pseoUseCase && (() => {
           let defaultSlug = slug;
           if (pseoUseCase) {
             const allPseo = getAllPseoData();
