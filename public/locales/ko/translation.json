@@ -1510,6 +1510,7 @@
   },
   "pseo": {
     "insights_badge": "프로 가이드",
-    "insights_title": "전문가 통찰력 및 모범 사례"
+    "insights_title": "전문가 인사이트 및 모범 사례",
+    "insights_desc": "디지털 워크플로에 항상 액세스할 수 있고 스캔할 수 있으며 최신 상태를 유지하기 위한 필수 전략입니다."
   }
 }

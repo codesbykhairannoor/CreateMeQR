@@ -1509,7 +1509,8 @@
     "subtitle": "Calificado con 4.9/5 según 15,432 reseñas en más de 30 países. 100% gratuito, seguro y del lado del cliente."
   },
   "pseo": {
-    "insights_badge": "GUÍA PROFESIONAL",
-    "insights_title": "Perspectivas de expertos y mejores prácticas"
+    "insights_badge": "GUÍA PRO",
+    "insights_title": "Perspectivas de Expertos y Mejores Prácticas",
+    "insights_desc": "Estrategias esenciales para garantizar que su flujo de trabajo digital sea siempre accesible, escaneable y actualizado."
   }
 }

@@ -1509,7 +1509,8 @@
     "subtitle": "Betygsatt 4,9/5 baserat på 15 432 recensioner i över 30 länder. 100 % gratis, säkert och klientsidan."
   },
   "pseo": {
-    "insights_badge": "PRO GUIDE",
-    "insights_title": "Expertinsikter och bästa praxis"
+    "insights_badge": "PRO-GUIDE",
+    "insights_title": "Expertinsikter och Bästa Praxis",
+    "insights_desc": "Viktiga strategier för att säkerställa att ditt digitala arbetsflöde alltid är tillgängligt, skanningsbart och uppdaterat."
   }
 }

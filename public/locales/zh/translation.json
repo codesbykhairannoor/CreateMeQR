@@ -1510,6 +1510,7 @@
   },
   "pseo": {
     "insights_badge": "专业指南",
-    "insights_title": "专家见解和最佳实践"
+    "insights_title": "专家见解与最佳实践",
+    "insights_desc": "确保您的数字工作流始终可访问、可扫描和最新的基本策略。"
   }
 }
