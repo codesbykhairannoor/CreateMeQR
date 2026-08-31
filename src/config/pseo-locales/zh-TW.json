@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "餐廳菜單 PDF 二維碼",
     "seoDesc": "用非接觸式數位體驗取代紙本菜單。立即為您的餐廳菜單建立免費、安全的 PDF 二維碼。",
     "infoGain": "餐廳專業提示：在餐桌帳篷或杯墊上列印二維碼時，請使用較高的糾錯等級（H 級）。這可以確保二維碼仍然可以被顧客掃描，即使它因食物溢出而輕微損壞、弄濕或弄髒。",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "咖啡館與飯店 WiFi 二維碼",
     "seoDesc": "讓您的房客無需輸入密碼即可立即連接到您的 WiFi 網路。為您的咖啡館或飯店產生免費 WiFi 二維碼。",
     "infoGain": "接待提示：列印您的 WiFi 二維碼，並將其放在接待處或單獨咖啡桌上的漂亮框架中。客人無需向工作人員詢問密碼即可立即加入網絡，享受無摩擦的體驗。",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google 審核本地企業的二維碼",
     "seoDesc": "讓客戶輕鬆留下 5 星評級，從而大幅提升您的本地 SEO。建立免費的 Google 評論二維碼。",
     "infoGain": "行銷提示：要求評論的最佳時機是在顧客滿意度最高的時候。將此二維碼添加到您的收據、出口門上，或讓工作人員在提供優質服務後立即將其顯示在平板電腦上。",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "房地產經紀人 vCard 二維碼",
     "seoDesc": "永遠不會再失去領先優勢。為您的房地產名片和開放參觀手冊建立數位 vCard 二維碼。",
     "infoGain": "社交提示：將您的 vCard 二維碼放在「待售」標誌和開放日傳單上。潛在買家只需掃描一次即可立即將您的聯絡資訊、照片和網站儲存到他們的手機聯絡人中。",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "活動門票和註冊的 URL 二維碼",
     "seoDesc": "透過將實體傳單連結到數位票務頁面來提高活動出席率。產生快速、免費的 URL 二維碼以進行活動註冊。",
     "infoGain": "活動策劃提示：在產生 QR 碼之前，使用 UTM 標記的 URL（例如 ?utm_source=flyer&utm_campaign=summer_fest）追蹤傳單效果。這可以讓您準確地看到有多少門票銷售來自實體掃描。",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "WhatsApp 二維碼用於客戶支持",
     "seoDesc": "提供即時客戶服務。產生 WhatsApp 二維碼，用於開啟與您的支援團隊的直接聊天，並附有預先填寫的訊息。",
     "infoGain": "支援策略：在 WhatsApp 訊息中預先填寫上下文文本，例如「您好，我需要有關最近訂單的幫助。」這消除了摩擦，讓客戶感到立即受到關注。",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "用於非營利組織和捐贈的 PayPal 二維碼",
     "seoDesc": "讓籌款變得順暢。產生 PayPal 二維碼以接受慈善活動、教會服務或社區聚會的即時捐款。",
     "infoGain": "募款小秘訣：將二維碼與明確的號召性用語 (CTA) 結合起來，例如「掃描捐款 5 美元」。確定具體的小額金額可減少決策疲勞並顯著提高捐贈轉換率。",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "透過電子郵件發送 QR 碼以進行新聞通訊註冊",
     "seoDesc": "從實際位置增加您的電子郵件清單。產生電子郵件二維碼，將訂閱請求預先填寫到您的郵件清單中。",
     "infoGain": "成長駭客：將此二維碼放在名片背面或零售收銀台上。透過提供 10% 的折扣代碼來獎勵掃描以換取訂閱。",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "App Store 手遊二維碼下載",
     "seoDesc": "直接透過戶外廣告推動應用程式安裝。建立一個直接連結到您在 iOS App Store 或 Google Play 上的遊戲的二維碼。",
     "infoGain": "用戶獲取提示：如果您在會議或廣告看板上為手機遊戲做廣告，App Store 二維碼可以彌合物理與數字之間的差距，在用戶忘記遊戲名稱之前捕獲衝動下載。",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "產品手冊的 YouTube 影片二維碼",
     "seoDesc": "用影片教學取代令人困惑的紙本手冊。建立 YouTube 二維碼，為您的產品提供即時視覺說明。",
     "infoGain": "客戶成功提示：直接在產品包裝或機械上列印影片教學二維碼可幫助客戶直觀地排除故障，從而大大減少昂貴的客戶支援票和退貨。",

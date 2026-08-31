@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "Restoran Menüleri için PDF QR Kodu",
     "seoDesc": "Kağıt menüleri temassız dijital deneyimle değiştirin. Restoran menünüz için anında ücretsiz, güvenli bir PDF QR kodu oluşturun.",
     "infoGain": "Restoranlar için Profesyonel İpucu: QR kodlarınızı masa çadırlarına veya bardak altlıklarına yazdırırken yüksek bir hata düzeltme düzeyi (Seviye H) kullanın. Bu, QR kodunun hafif hasar görse, ıslansa veya yiyecek dökülmesinden dolayı kirlense bile müşteriler tarafından taranabilir kalmasını sağlar.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "Kafeler ve Oteller için WiFi QR Kodu",
     "seoDesc": "Misafirlerinizin şifre yazmadan WiFi ağınıza anında bağlanmasını sağlayın. Kafeniz veya oteliniz için ücretsiz bir WiFi QR kodu oluşturun.",
     "infoGain": "Misafirperverlik İpucu: WiFi QR kodunuzu yazdırın ve resepsiyon masasındaki güzel bir çerçeveye veya bireysel kafe masalarına yerleştirin. Misafirler, personelden şifre istemeden ağa anında katılmanın sorunsuz deneyiminden memnun kalacaklar.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Yerel İşletmeler için Google İnceleme QR Kodu",
     "seoDesc": "Müşterilerin 5 yıldızlı derecelendirme bırakmasını zahmetsiz hale getirerek yerel SEO'nuzu hızlandırın. Ücretsiz bir Google İncelemesi QR kodu oluşturun.",
     "infoGain": "Pazarlama İpucu: İnceleme istemek için en iyi zaman, müşteri memnuniyetinin zirvede olduğu zamandır. Mükemmel hizmeti sağladıktan hemen sonra bu QR kodunu makbuzlarınıza, çıkış kapılarınıza ekleyin veya personelin bunu bir tablet üzerinden sunmasını sağlayın.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "Emlakçılar için vCard QR Kodu",
     "seoDesc": "Bir daha asla liderliği kaybetmeyin. Gayrimenkul kartvizitleriniz ve açık ev broşürleriniz için dijital bir vCard QR kodu oluşturun.",
     "infoGain": "Ağ İletişimi İpucu: vCard QR kodunuzu 'Satılık' tabelalarına ve açık ilanlara yerleştirin. Potansiyel alıcılar iletişim bilgilerinizi, fotoğrafınızı ve web sitenizi tek bir taramayla anında telefon rehberine kaydedebilir.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "Etkinlik Biletleri ve Kayıt için URL QR Kodu",
     "seoDesc": "Fiziksel el ilanlarını dijital bilet sayfanıza bağlayarak etkinliğe katılımı artırın. Etkinlik kaydı için hızlı, ücretsiz bir URL QR kodu oluşturun.",
     "infoGain": "Etkinlik Planlama İpucu: QR kodunu oluşturmadan önce UTM etiketli bir URL (ör. ?utm_source=flyer&utm_campaign=summer_fest) kullanarak broşür performansınızı izleyin. Bu, fiziksel taramalardan tam olarak kaç bilet satışının geldiğini görmenizi sağlar.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "Müşteri Desteği için WhatsApp QR Kodu",
     "seoDesc": "Anında müşteri hizmeti sağlayın. Destek ekibinizle doğrudan sohbeti başlatan ve önceden doldurulmuş bir mesajla tamamlanan bir WhatsApp QR kodu oluşturun.",
     "infoGain": "Destek Stratejisi: WhatsApp mesajını 'Merhaba, son siparişimle ilgili yardıma ihtiyacım var' gibi bağlamsal bir metinle önceden doldurun. Bu, sürtünmeyi ortadan kaldırır ve müşterinin anında ilgilenildiğini hissetmesini sağlar.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "Kâr Amacı Gütmeyen Kuruluşlar ve Bağışlar için PayPal QR Kodu",
     "seoDesc": "Bağış toplamayı sorunsuz hale getirin. Yardım etkinliklerinde, kilise ayinlerinde veya topluluk toplantılarında anında bağış kabul etmek için bir PayPal QR kodu oluşturun.",
     "infoGain": "Bağış Toplama İpucu: QR kodunu '5 $ Bağış yapmak için Tarayın' gibi net bir Harekete Geçirici Mesaj (CTA) ile birleştirin. Belirli, küçük bir miktarın tanımlanması karar yorgunluğunu azaltır ve bağış dönüşüm oranlarını önemli ölçüde artırır.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "Bülten Kayıtları için QR Kodunu E-postayla Gönder",
     "seoDesc": "E-posta listenizi fiziksel konumlardan büyütün. Posta listenize bir abonelik isteğini önceden dolduran bir E-posta QR kodu oluşturun.",
     "infoGain": "Büyüme Hack'i: Bu QR kodunu kartvizitlerinizin arkasına veya perakende kasanıza yerleştirin. Abone olmanız karşılığında %10 indirim kodu sunarak taramaları teşvik edin.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "Mobil Oyun İndirmeleri için App Store QR Kodu",
     "seoDesc": "Uygulama yüklemelerini doğrudan ev dışı reklamlardan artırın. Doğrudan iOS App Store veya Google Play'deki oyununuza bağlanan bir QR kodu oluşturun.",
     "infoGain": "Kullanıcı Edinimi İpucu: Bir kongrede veya bir reklam panosunda bir mobil oyunun reklamını yapıyorsanız, App Store QR kodu fiziksel-dijital arasındaki boşluğu doldurur ve kullanıcı oyunun adını unutmadan hızlı indirmeleri yakalar.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "Ürün Kılavuzları için YouTube Video QR Kodu",
     "seoDesc": "Kafa karıştırıcı kağıt kılavuzlarını video eğitimleriyle değiştirin. Ürünleriniz için anında görsel talimatlar sağlamak üzere bir YouTube QR kodu oluşturun.",
     "infoGain": "Müşteri Başarısı İpucu: Bir video eğitimi QR kodunu doğrudan ürününüzün ambalajına veya makinesine yazdırmak, müşterilerin sorunları görsel olarak gidermelerine yardımcı olur ve bu da maliyetli müşteri destek biletleri ve iadelerini büyük ölçüde azaltabilir.",

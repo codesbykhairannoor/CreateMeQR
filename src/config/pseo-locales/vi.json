@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "Mã QR PDF cho thực đơn nhà hàng",
     "seoDesc": "Thay thế menu giấy bằng trải nghiệm kỹ thuật số không tiếp xúc. Tạo mã QR PDF miễn phí, an toàn cho thực đơn nhà hàng của bạn ngay lập tức.",
     "infoGain": "Mẹo chuyên nghiệp dành cho nhà hàng: Sử dụng mức sửa lỗi cao (Cấp H) khi in mã QR của bạn trên lều để bàn hoặc đế lót ly. Điều này đảm bảo khách hàng vẫn có thể quét được mã QR ngay cả khi mã bị hư hỏng nhẹ, ướt hoặc bẩn do đổ thực phẩm.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "Mã QR WiFi cho quán cà phê & khách sạn",
     "seoDesc": "Hãy để khách của bạn kết nối với mạng WiFi của bạn ngay lập tức mà không cần nhập mật khẩu. Tạo mã QR WiFi miễn phí cho quán cà phê hoặc khách sạn của bạn.",
     "infoGain": "Mẹo chiêu đãi: In mã QR WiFi của bạn và đặt vào khung đẹp ở quầy lễ tân hoặc trên bàn cafe cá nhân. Khách đánh giá cao trải nghiệm dễ dàng khi tham gia mạng ngay lập tức mà không cần hỏi mật khẩu của nhân viên.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google Review Mã QR dành cho doanh nghiệp địa phương",
     "seoDesc": "Tăng vọt SEO địa phương của bạn bằng cách giúp khách hàng dễ dàng để lại xếp hạng 5 sao. Tạo mã QR Google Review miễn phí.",
     "infoGain": "Mẹo tiếp thị: Thời điểm tốt nhất để yêu cầu đánh giá là lúc khách hàng hài lòng nhất. Thêm mã QR này vào biên lai, cửa thoát hiểm của bạn hoặc yêu cầu nhân viên xuất trình mã này trên máy tính bảng ngay sau khi cung cấp dịch vụ xuất sắc.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "Mã QR vCard dành cho đại lý bất động sản",
     "seoDesc": "Không bao giờ mất vị trí dẫn đầu nữa. Tạo mã QR vCard kỹ thuật số cho danh thiếp bất động sản và tài liệu quảng cáo khai trương của bạn.",
     "infoGain": "Mẹo kết nối mạng: Đặt mã QR vCard của bạn trên biển hiệu 'Bán' và tờ rơi quảng cáo khai trương. Người mua tiềm năng có thể lưu ngay chi tiết liên hệ, ảnh và trang web của bạn vào danh bạ điện thoại của họ chỉ bằng một lần quét.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "Mã QR URL cho vé sự kiện và đăng ký",
     "seoDesc": "Tăng cường số lượng người tham dự sự kiện bằng cách liên kết các tờ rơi truyền thống với trang bán vé kỹ thuật số của bạn. Tạo mã QR URL nhanh, miễn phí để đăng ký sự kiện.",
     "infoGain": "Mẹo lập kế hoạch sự kiện: Theo dõi hiệu suất tờ rơi của bạn bằng cách sử dụng URL được gắn thẻ UTM (ví dụ: ?utm_source=flyer&utm_campaign=summer_fest) trước khi tạo mã QR. Điều này cho phép bạn biết chính xác số lượng vé bán ra từ các lần quét vật lý.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "Mã QR WhatsApp để hỗ trợ khách hàng",
     "seoDesc": "Cung cấp dịch vụ khách hàng ngay lập tức. Tạo mã QR WhatsApp để mở cuộc trò chuyện trực tiếp với nhóm hỗ trợ của bạn, hoàn chỉnh bằng tin nhắn điền sẵn.",
     "infoGain": "Chiến lược hỗ trợ: Điền trước tin nhắn WhatsApp bằng văn bản theo ngữ cảnh như 'Xin chào, tôi cần trợ giúp về đơn đặt hàng gần đây của mình'. Điều này giúp loại bỏ xích mích và khiến khách hàng cảm thấy được quan tâm ngay lập tức.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "Mã QR PayPal dành cho tổ chức phi lợi nhuận và quyên góp",
     "seoDesc": "Làm cho việc gây quỹ trở nên suôn sẻ. Tạo mã QR PayPal để chấp nhận quyên góp ngay lập tức tại các sự kiện từ thiện, dịch vụ nhà thờ hoặc họp mặt cộng đồng.",
     "infoGain": "Mẹo gây quỹ: Kết hợp mã QR với Lời kêu gọi hành động (CTA) rõ ràng như 'Quét để quyên góp $5'. Việc xác định một số tiền nhỏ, cụ thể giúp giảm bớt sự mệt mỏi khi đưa ra quyết định và tăng đáng kể tỷ lệ chuyển đổi khoản quyên góp.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "Mã QR qua email để đăng ký bản tin",
     "seoDesc": "Phát triển danh sách email của bạn từ các địa điểm thực tế. Tạo mã QR Email để điền trước yêu cầu đăng ký vào danh sách gửi thư của bạn.",
     "infoGain": "Mẹo tăng trưởng: Đặt mã QR này ở mặt sau danh thiếp hoặc tại quầy thanh toán bán lẻ của bạn. Khuyến khích quét bằng cách cung cấp mã giảm giá 10% để đổi lấy việc đăng ký.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "Mã QR App Store để tải xuống trò chơi di động",
     "seoDesc": "Thúc đẩy lượt cài đặt ứng dụng trực tiếp từ quảng cáo bên ngoài nhà. Tạo mã QR liên kết thẳng đến trò chơi của bạn trên App Store iOS hoặc Google Play.",
     "infoGain": "Mẹo thu hút người dùng: Nếu bạn đang quảng cáo một trò chơi di động tại một hội nghị hoặc trên bảng quảng cáo, mã QR của App Store sẽ thu hẹp khoảng cách giữa vật lý và kỹ thuật số, thu hút lượt tải xuống nhanh chóng trước khi người dùng quên tên trò chơi.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "Mã QR Video YouTube dành cho Hướng dẫn sử dụng sản phẩm",
     "seoDesc": "Thay thế những hướng dẫn bằng giấy lộn xộn bằng những hướng dẫn bằng video. Tạo mã QR YouTube để cung cấp hướng dẫn trực quan tức thì cho sản phẩm của bạn.",
     "infoGain": "Mẹo thành công cho khách hàng: In mã QR hướng dẫn bằng video trực tiếp trên bao bì hoặc máy móc sản phẩm của bạn sẽ giúp khách hàng khắc phục sự cố một cách trực quan, điều này có thể giảm đáng kể các yêu cầu hỗ trợ khách hàng tốn kém và trả lại.",

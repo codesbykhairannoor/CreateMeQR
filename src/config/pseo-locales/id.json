@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "Kode QR PDF untuk Menu Restoran",
     "seoDesc": "Gantikan menu kertas dengan pengalaman digital tanpa kontak. Buat kode QR PDF gratis dan aman untuk menu restoran Anda secara instan.",
     "infoGain": "Tip Pro untuk Restoran: Gunakan tingkat koreksi kesalahan yang tinggi (Level H) saat mencetak kode QR Anda di tenda meja atau tatakan gelas. Hal ini memastikan kode QR tetap dapat dipindai oleh pelanggan meskipun sedikit rusak, basah, atau kotor karena tumpahan makanan.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "Kode QR WiFi untuk Kafe & Hotel",
     "seoDesc": "Biarkan tamu Anda terhubung ke jaringan WiFi Anda secara instan tanpa mengetikkan kata sandi. Hasilkan kode QR WiFi gratis untuk kafe atau hotel Anda.",
     "infoGain": "Tip Perhotelan: Cetak kode QR WiFi Anda dan letakkan dalam bingkai yang indah di meja resepsionis atau di meja kafe individu. Para tamu menghargai pengalaman mudah bergabung dengan jaringan secara instan tanpa meminta kata sandi dari staf.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google Tinjau Kode QR untuk Bisnis Lokal",
     "seoDesc": "Tingkatkan SEO lokal Anda dengan memudahkan pelanggan memberikan peringkat bintang 5. Buat kode QR Ulasan Google gratis.",
     "infoGain": "Tip Pemasaran: Waktu terbaik untuk meminta review adalah saat puncak kepuasan pelanggan. Tambahkan kode QR ini ke kuitansi, pintu keluar, atau minta staf menunjukkannya di tablet segera setelah memberikan layanan terbaik.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "Kode QR vCard untuk Agen Real Estat",
     "seoDesc": "Jangan pernah kehilangan keunggulan lagi. Buat kode QR vCard digital untuk kartu nama real estat dan brosur open house Anda.",
     "infoGain": "Tip Jaringan: Tempatkan kode QR vCard Anda pada tanda 'Dijual' dan selebaran open house. Calon pembeli dapat langsung menyimpan detail kontak, foto, dan situs web Anda ke kontak telepon mereka dengan sekali pemindaian.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "URL Kode QR untuk Tiket Acara & Pendaftaran",
     "seoDesc": "Tingkatkan kehadiran acara dengan menautkan brosur fisik ke halaman tiket digital Anda. Hasilkan kode QR URL yang cepat dan gratis untuk pendaftaran acara.",
     "infoGain": "Tip Perencanaan Acara: Lacak kinerja pamflet Anda dengan menggunakan URL yang diberi tag UTM (misalnya, ?utm_source=flyer&utm_campaign=summer_fest) sebelum membuat kode QR. Ini memungkinkan Anda melihat dengan tepat berapa banyak penjualan tiket yang berasal dari pemindaian fisik.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "Kode QR WhatsApp untuk Dukungan Pelanggan",
     "seoDesc": "Menyediakan layanan pelanggan instan. Hasilkan kode QR WhatsApp yang membuka obrolan langsung dengan tim dukungan Anda, lengkap dengan pesan yang sudah diisi sebelumnya.",
     "infoGain": "Strategi Dukungan: Isi terlebih dahulu pesan WhatsApp dengan teks kontekstual seperti 'Halo, saya butuh bantuan dengan pesanan terbaru saya.' Hal ini menghilangkan gesekan dan membuat pelanggan merasa segera diperhatikan.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "Kode QR PayPal untuk Nirlaba & Donasi",
     "seoDesc": "Jadikan penggalangan dana tanpa hambatan. Hasilkan kode QR PayPal untuk menerima donasi instan di acara amal, layanan gereja, atau pertemuan komunitas.",
     "infoGain": "Tip Penggalangan Dana: Gabungkan kode QR dengan Ajakan Bertindak (CTA) yang jelas seperti 'Pindai untuk Mendonasikan $5'. Menentukan jumlah yang spesifik dan kecil akan mengurangi kelelahan pengambilan keputusan dan secara signifikan meningkatkan tingkat konversi donasi.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "Email Kode QR untuk Pendaftaran Buletin",
     "seoDesc": "Kembangkan daftar email Anda dari lokasi fisik. Hasilkan kode QR Email yang mengisi terlebih dahulu permintaan berlangganan ke milis Anda.",
     "infoGain": "Peretasan Pertumbuhan: Tempatkan kode QR ini di bagian belakang kartu nama Anda atau di meja kasir ritel Anda. Berikan insentif pada pemindaian dengan menawarkan kode diskon 10% sebagai imbalan berlangganan.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "Kode QR App Store untuk Unduhan Game Seluler",
     "seoDesc": "Dorong pemasangan aplikasi langsung dari iklan di luar rumah. Buat kode QR yang tertaut langsung ke game Anda di iOS App Store atau Google Play.",
     "infoGain": "Kiat Akuisisi Pengguna: Jika Anda mengiklankan game seluler di konvensi atau di papan reklame, kode QR App Store menjembatani kesenjangan fisik-ke-digital, menangkap unduhan impulsif sebelum pengguna lupa nama game tersebut.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "Kode QR Video YouTube untuk Manual Produk",
     "seoDesc": "Gantikan manual kertas yang membingungkan dengan tutorial video. Buat kode QR YouTube untuk memberikan petunjuk visual instan untuk produk Anda.",
     "infoGain": "Tip Sukses Pelanggan: Mencetak kode QR tutorial video langsung pada kemasan atau mesin produk Anda membantu pelanggan memecahkan masalah secara visual, yang secara drastis dapat mengurangi biaya tiket dan pengembalian dukungan pelanggan yang mahal.",

@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "Kod QR w formacie PDF dla menu restauracji",
     "seoDesc": "Zamień papierowe menu na bezdotykowe cyfrowe menu. Natychmiast utwórz bezpłatny i bezpieczny kod QR w formacie PDF do menu swojej restauracji.",
     "infoGain": "Wskazówka dla restauracji: Podczas drukowania kodów QR na namiotach stołowych lub podstawkach stosuj wysoki poziom korekcji błędów (poziom H). Dzięki temu klienci będą mogli zeskanować kod QR, nawet jeśli zostanie lekko uszkodzony, zamoczony lub zabrudzony w wyniku rozlania jedzenia.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "Kod QR Wi-Fi dla kawiarni i hoteli",
     "seoDesc": "Pozwól swoim gościom natychmiastowo połączyć się z Twoją siecią Wi-Fi, bez konieczności wpisywania haseł. Wygeneruj bezpłatny kod QR Wi-Fi dla swojej kawiarni lub hotelu.",
     "infoGain": "Wskazówka dla gości: Wydrukuj kod QR Wi-Fi i umieść go w pięknej ramce w recepcji lub na poszczególnych stolikach w kawiarni. Goście doceniają bezproblemowe i natychmiastowe dołączenie do sieci, bez konieczności pytania personelu o hasło.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google Sprawdź kod QR dla lokalnych firm",
     "seoDesc": "Podnieś swoje lokalne SEO, ułatwiając klientom pozostawienie 5 gwiazdek. Utwórz bezpłatny kod QR Przeglądu Google.",
     "infoGain": "Wskazówka marketingowa: Najlepszy moment, aby poprosić o recenzję, to szczyt zadowolenia klienta. Dodaj ten kod QR do paragonów, drzwi wyjściowych lub poproś personel o pokazanie go na tablecie zaraz po zapewnieniu doskonałej obsługi.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "Kod QR vCard dla agentów nieruchomości",
     "seoDesc": "Nigdy więcej nie trać przewagi. Utwórz cyfrowy kod QR vCard dla swoich wizytówek dotyczących nieruchomości i broszur dni otwartych.",
     "infoGain": "Wskazówka dotycząca networkingu: umieść kod QR vCard na tabliczkach „Na sprzedaż” i ulotkach dni otwartych. Potencjalni kupujący mogą natychmiast zapisać Twoje dane kontaktowe, zdjęcie i stronę internetową w kontaktach w telefonie za pomocą jednego skanu.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "Kod QR URL dla biletów na wydarzenia i rejestracji",
     "seoDesc": "Zwiększ frekwencję na wydarzeniach, łącząc fizyczne ulotki ze swoją cyfrową stroną z biletami. Wygeneruj szybki, bezpłatny kod QR URL do rejestracji na wydarzenie.",
     "infoGain": "Wskazówka dotycząca planowania wydarzeń: śledź skuteczność swojej ulotki, korzystając z adresu URL ze znacznikiem UTM (np. ?utm_source=flyer&utm_campaign=summer_fest) przed wygenerowaniem kodu QR. Dzięki temu możesz dokładnie sprawdzić, ile biletów sprzedano na podstawie fizycznych skanów.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "Kod QR WhatsApp do obsługi klienta",
     "seoDesc": "Zapewnij natychmiastową obsługę klienta. Wygeneruj kod QR WhatsApp, który otworzy bezpośredni czat z zespołem pomocy technicznej wraz ze wstępnie wypełnioną wiadomością.",
     "infoGain": "Strategia wsparcia: Wypełnij wiadomość WhatsApp tekstem kontekstowym, np. „Witam, potrzebuję pomocy przy moim ostatnim zamówieniu”. Eliminuje to tarcia i sprawia, że ​​klient czuje się natychmiast zaopiekowany.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "Kod QR PayPal dla organizacji non-profit i darowizn",
     "seoDesc": "Spraw, aby zbieranie funduszy przebiegało bezproblemowo. Wygeneruj kod QR PayPal, aby przyjmować natychmiastowe datki podczas wydarzeń charytatywnych, nabożeństw lub zgromadzeń społecznych.",
     "infoGain": "Wskazówka dotycząca zbiórki pieniędzy: Połącz kod QR z wyraźnym wezwaniem do działania (CTA), np. „Skanuj, aby przekazać 5 USD”. Zdefiniowanie konkretnej, niewielkiej kwoty zmniejsza zmęczenie decyzyjne i znacząco zwiększa współczynnik konwersji darowizn.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "Wyślij e-mail z kodem QR umożliwiającym subskrypcję biuletynu",
     "seoDesc": "Rozwijaj swoją listę e-mailową z lokalizacji fizycznych. Wygeneruj e-mailowy kod QR, który wstępnie wypełni żądanie subskrypcji Twojej listy mailingowej.",
     "infoGain": "Growth Hack: umieść ten kod QR na odwrocie wizytówek lub przy kasie detalicznej. Motywuj do skanowania, oferując 10% kod rabatowy w zamian za subskrypcję.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "Kod QR App Store do pobierania gier na urządzenia mobilne",
     "seoDesc": "Zwiększ liczbę instalacji aplikacji bezpośrednio z reklam zewnętrznych. Utwórz kod QR prowadzący bezpośrednio do Twojej gry w sklepie iOS App Store lub Google Play.",
     "infoGain": "Wskazówka dotycząca pozyskiwania użytkowników: jeśli reklamujesz grę mobilną na konwencji lub na billboardzie, kod QR ze sklepu App Store wypełnia lukę między technologią fizyczną a cyfrową, rejestrując impulsowe pobrania, zanim użytkownik zapomni nazwę gry.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "Kod QR filmu YouTube dla instrukcji obsługi produktów",
     "seoDesc": "Zamień mylące instrukcje papierowe na samouczki wideo. Utwórz kod QR YouTube, aby uzyskać natychmiastowe instrukcje wizualne dotyczące swoich produktów.",
     "infoGain": "Wskazówka dotycząca sukcesu klienta: wydrukowanie kodu QR z samouczkiem wideo bezpośrednio na opakowaniu lub maszynie produktu pomaga klientom wizualnie rozwiązywać problemy, co może drastycznie zmniejszyć kosztowne zgłoszenia do obsługi klienta i zwroty.",

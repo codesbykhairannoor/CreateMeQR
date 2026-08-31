@@ -1450,6 +1450,28 @@
   "pseo": {
     "insights_badge": "GHID PRO",
     "insights_title": "Perspective de Experți & Cele mai bune Practici",
-    "insights_desc": "Strategii esențiale pentru a asigura că fluxul dvs. de lucru digital este întotdeauna accesibil, scanabil și actualizat."
+    "insights_desc": "Strategii esențiale pentru a asigura că fluxul dvs. de lucru digital este întotdeauna accesibil, scanabil și actualizat.",
+    "restaurantmenu": {
+      "badge": "Pentru restaurante și cafenele",
+      "heroTitle": "Generator de coduri QR pentru meniul restaurantului PDF",
+      "heroSubtitle": "Creează instantaneu un meniu digital fără contact pentru restaurantul tău. Încărcați PDF-ul și generați un cod QR editabil care nu expiră niciodată.",
+      "featTitle1": "Meniuri fără contact",
+      "featDesc1": "Asigurați siguranță și confort pentru oaspeții dvs. cu meniuri digitale fără atingere.",
+      "featTitle2": "Optimizat pentru mobil",
+      "featDesc2": "PDF-ul încărcat este frumos prezentat și ușor de citit pe orice smartphone.",
+      "featTitle3": "Ușor de actualizat",
+      "featDesc3": "Actualizați-vă articolele de meniu de sezon fără a fi nevoie să reimprimați codurile QR pe ​​mesele dvs.",
+      "faqTitle": "Întrebări comune",
+      "faqQ1": "Pot folosi asta pentru mai multe mese?",
+      "faqA1": "Da, puteți imprima același cod QR și îl puteți plasa pe fiecare masă. Toți clienții vor vedea același meniu digital.",
+      "faqQ2": "Ce se întâmplă dacă meniul meu se schimbă?",
+      "faqA2": "Dacă utilizați un cod QR URL dinamic, puteți actualiza oricând destinația linkului. Pentru încărcările PDF statice, veți avea nevoie de un nou cod QR dacă fișierul se modifică.",
+      "faqQ3": "Funcționează fără aplicație?",
+      "faqA3": "Absolut! Toate smartphone-urile moderne iOS și Android au scanere QR încorporate chiar în aplicațiile lor implicite pentru cameră.",
+      "faqQ4": "Există o limită pentru scanări?",
+      "faqA4": "Nu! Codurile dvs. QR au scanări nelimitate pentru totdeauna.",
+      "faqQ5": "Pot adăuga sigla restaurantului meu?",
+      "faqA5": "Da, puteți încărca propriul logo personalizat și îl puteți plasa chiar în centrul codului QR."
+    }
   }
 }

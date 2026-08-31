@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "PDF-QR-Code für Restaurantmenüs",
     "seoDesc": "Ersetzen Sie Papiermenüs durch ein kontaktloses digitales Erlebnis. Erstellen Sie sofort einen kostenlosen, sicheren PDF-QR-Code für Ihre Restaurantkarte.",
     "infoGain": "Profi-Tipp für Restaurants: Verwenden Sie beim Drucken Ihrer QR-Codes auf Tischaufstellern oder Untersetzern eine hohe Fehlerkorrekturstufe (Stufe H). Dadurch wird sichergestellt, dass der QR-Code von Kunden auch dann gescannt werden kann, wenn er durch verschüttete Lebensmittel leicht beschädigt, nass oder verschmutzt ist.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "WLAN-QR-Code für Cafés und Hotels",
     "seoDesc": "Ermöglichen Sie Ihren Gästen, sich sofort mit Ihrem WLAN-Netzwerk zu verbinden, ohne Passwörter eingeben zu müssen. Generieren Sie einen kostenlosen WLAN-QR-Code für Ihr Café oder Hotel.",
     "infoGain": "Gastronomie-Tipp: Drucken Sie Ihren WLAN-QR-Code aus und platzieren Sie ihn in einem schönen Rahmen an der Rezeption oder auf einzelnen Cafétischen. Gäste schätzen das reibungslose Erlebnis, sich sofort dem Netzwerk anzuschließen, ohne das Personal nach dem Passwort fragen zu müssen.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google Review QR-Code für lokale Unternehmen",
     "seoDesc": "Steigern Sie Ihre lokale SEO, indem Sie es Ihren Kunden leicht machen, eine 5-Sterne-Bewertung abzugeben. Erstellen Sie einen kostenlosen Google-Bewertungs-QR-Code.",
     "infoGain": "Marketing-Tipp: Der beste Zeitpunkt, um eine Bewertung anzufordern, ist der Höhepunkt der Kundenzufriedenheit. Fügen Sie diesen QR-Code zu Ihren Quittungen, Ausgangstüren hinzu oder lassen Sie ihn direkt nach der Erbringung eines hervorragenden Service vom Personal auf einem Tablet vorzeigen.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "vCard-QR-Code für Immobilienmakler",
     "seoDesc": "Verlieren Sie nie wieder einen Vorsprung. Erstellen Sie einen digitalen vCard-QR-Code für Ihre Immobilien-Visitenkarten und Broschüren zum Tag der offenen Tür.",
     "infoGain": "Networking-Tipp: Platzieren Sie Ihren vCard-QR-Code auf „Zu verkaufen“-Schildern und Flyern zum Tag der offenen Tür. Potenzielle Käufer können Ihre Kontaktdaten, Ihr Foto und Ihre Website mit einem einzigen Scan sofort in ihren Telefonkontakten speichern.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "URL-QR-Code für Veranstaltungstickets und Registrierung",
     "seoDesc": "Steigern Sie die Teilnahme an Veranstaltungen, indem Sie physische Flyer mit Ihrer digitalen Ticketseite verknüpfen. Generieren Sie einen schnellen, kostenlosen URL-QR-Code für die Veranstaltungsregistrierung.",
     "infoGain": "Tipp zur Veranstaltungsplanung: Verfolgen Sie die Leistung Ihres Flyers mithilfe einer UTM-getaggten URL (z. B. ?utm_source=flyer&utm_campaign=summer_fest), bevor Sie den QR-Code generieren. Dadurch können Sie genau sehen, wie viele Ticketverkäufe durch physische Scans erzielt wurden.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "WhatsApp-QR-Code für den Kundensupport",
     "seoDesc": "Bieten Sie sofortigen Kundenservice. Generieren Sie einen WhatsApp-QR-Code, der einen direkten Chat mit Ihrem Support-Team öffnet, komplett mit einer vorausgefüllten Nachricht.",
     "infoGain": "Support-Strategie: Füllen Sie die WhatsApp-Nachricht mit kontextbezogenem Text wie „Hallo, ich brauche Hilfe bei meiner letzten Bestellung“ aus. Dies beseitigt Reibungsverluste und gibt dem Kunden das Gefühl, sofort betreut zu werden.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "PayPal-QR-Code für gemeinnützige Organisationen und Spenden",
     "seoDesc": "Machen Sie das Sammeln von Spenden reibungslos. Generieren Sie einen PayPal-QR-Code, um Sofortspenden bei Wohltätigkeitsveranstaltungen, Gottesdiensten oder Gemeindeversammlungen anzunehmen.",
     "infoGain": "Fundraising-Tipp: Kombinieren Sie den QR-Code mit einem klaren Call-to-Action (CTA) wie „Scannen, um 5 $ zu spenden“. Die Festlegung eines konkreten, kleinen Betrags verringert die Entscheidungsermüdung und erhöht die Spendenumwandlungsrate deutlich.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "E-Mail-QR-Code für Newsletter-Anmeldungen",
     "seoDesc": "Erweitern Sie Ihre E-Mail-Liste von physischen Standorten aus. Generieren Sie einen E-Mail-QR-Code, der eine Abonnementanfrage für Ihre Mailingliste vorab ausfüllt.",
     "infoGain": "Wachstums-Hack: Platzieren Sie diesen QR-Code auf der Rückseite Ihrer Visitenkarten oder an der Kasse Ihres Einzelhandels. Schaffen Sie Anreize für Scans, indem Sie als Gegenleistung für Ihr Abonnement einen Rabattcode von 10 % anbieten.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "App Store-QR-Code für Handyspiel-Downloads",
     "seoDesc": "Fördern Sie App-Installationen direkt aus der Außenwerbung. Erstellen Sie einen QR-Code, der direkt auf Ihr Spiel im iOS App Store oder bei Google Play verweist.",
     "infoGain": "Tipp zur Benutzerakquise: Wenn Sie auf einer Tagung oder auf einer Werbetafel für ein Handyspiel werben, überbrückt ein App Store-QR-Code die Lücke zwischen physischem und digitalem Spiel und erfasst spontane Downloads, bevor der Benutzer den Namen des Spiels vergisst.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "YouTube-Video-QR-Code für Produkthandbücher",
     "seoDesc": "Ersetzen Sie verwirrende Papierhandbücher durch Video-Tutorials. Erstellen Sie einen YouTube-QR-Code, um sofort visuelle Anweisungen für Ihre Produkte bereitzustellen.",
     "infoGain": "Tipp für den Kundenerfolg: Das Drucken eines Video-Tutorial-QR-Codes direkt auf die Verpackung oder Maschine Ihres Produkts hilft Kunden bei der visuellen Fehlerbehebung, wodurch kostspielige Kundensupport-Tickets und Retouren drastisch reduziert werden können.",

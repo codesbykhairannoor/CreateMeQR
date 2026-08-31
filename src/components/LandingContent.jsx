@@ -36,8 +36,18 @@ import LayoutAudio from './landing/LayoutAudio';
 import LayoutAmazon from './landing/LayoutAmazon';
 import LayoutBooking from './landing/LayoutBooking';
 import LayoutFile from './landing/LayoutFile';
+import LayoutRestaurantMenu from './landing/LayoutRestaurantMenu';
+import LayoutWiFiCafe from './landing/LayoutWiFiCafe';
+import LayoutGoogleReviewLocal from './landing/LayoutGoogleReviewLocal';
+import LayoutVCardRealEstate from './landing/LayoutVCardRealEstate';
+import LayoutURLEventTickets from './landing/LayoutURLEventTickets';
+import LayoutWhatsAppSupport from './landing/LayoutWhatsAppSupport';
+import LayoutPayPalDonation from './landing/LayoutPayPalDonation';
+import LayoutEmailSignup from './landing/LayoutEmailSignup';
+import LayoutAppStoreGame from './landing/LayoutAppStoreGame';
+import LayoutYouTubeManual from './landing/LayoutYouTubeManual';
 
-function LandingContent({ qrType = 'url' }) {
+function LandingContent({ qrType = 'url', pseoUseCase = null }) {
   let LayoutComponent = LayoutURL;
 
   switch (qrType) {
@@ -77,13 +87,23 @@ function LandingContent({ qrType = 'url' }) {
     case 'amazon': LayoutComponent = LayoutAmazon; break;
     case 'booking': LayoutComponent = LayoutBooking; break;
     case 'file': LayoutComponent = LayoutFile; break;
+    case 'restaurantmenu': LayoutComponent = LayoutRestaurantMenu; break;
+    case 'wificafe': LayoutComponent = LayoutWiFiCafe; break;
+    case 'googlereviewlocal': LayoutComponent = LayoutGoogleReviewLocal; break;
+    case 'vcardrealestate': LayoutComponent = LayoutVCardRealEstate; break;
+    case 'urleventtickets': LayoutComponent = LayoutURLEventTickets; break;
+    case 'whatsappsupport': LayoutComponent = LayoutWhatsAppSupport; break;
+    case 'paypaldonation': LayoutComponent = LayoutPayPalDonation; break;
+    case 'emailsignup': LayoutComponent = LayoutEmailSignup; break;
+    case 'appstoregame': LayoutComponent = LayoutAppStoreGame; break;
+    case 'youtubemanual': LayoutComponent = LayoutYouTubeManual; break;
     
     default: LayoutComponent = LayoutURL; break;
   }
 
   return (
     
-      <LayoutComponent qrType={qrType} />
+      <LayoutComponent qrType={qrType} pseoUseCase={pseoUseCase} />
     
   );
 }

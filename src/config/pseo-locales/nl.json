@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "PDF QR-code voor restaurantmenu's",
     "seoDesc": "Vervang papieren menukaarten door een contactloze digitale ervaring. Maak direct een gratis, veilige PDF QR-code voor uw restaurantmenu.",
     "infoGain": "Pro-tip voor restaurants: Gebruik een hoog foutcorrectieniveau (niveau H) bij het afdrukken van uw QR-codes op tafeltenten of onderzetters. Dit zorgt ervoor dat de QR-code door klanten kan worden gescand, zelfs als deze licht beschadigd, nat of vuil wordt door gemorst voedsel.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "WiFi QR-code voor cafés en hotels",
     "seoDesc": "Laat uw gasten direct verbinding maken met uw WiFi-netwerk zonder wachtwoorden te typen. Genereer een gratis WiFi QR-code voor uw café of hotel.",
     "infoGain": "Hospitality Tip: Print uw WiFi QR-code en plaats deze in een mooi kader bij de receptie of op individuele cafétafels. Gasten waarderen de probleemloze ervaring om direct verbinding te maken met het netwerk zonder het personeel om het wachtwoord te vragen.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google Review QR-code voor lokale bedrijven",
     "seoDesc": "Geef uw lokale SEO een boost door het voor klanten moeiteloos te maken om een ​​beoordeling van 5 sterren achter te laten. Maak een gratis QR-code voor Google Review.",
     "infoGain": "Marketingtip: Het beste moment om een ​​beoordeling te vragen is op het hoogtepunt van de klanttevredenheid. Voeg deze QR-code toe aan uw kassabonnen, ga de deur uit of laat het personeel hem op een tablet presenteren zodra u een uitstekende service heeft verleend.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "vCard QR-code voor makelaars in onroerend goed",
     "seoDesc": "Verlies nooit meer een voorsprong. Maak een digitale vCard QR-code voor uw vastgoedvisitekaartjes en openhuisbrochures.",
     "infoGain": "Netwerktip: Plaats uw vCard QR-code op 'Te koop'-borden en openhuisflyers. Potentiële kopers kunnen uw contactgegevens, foto en website met één enkele scan direct opslaan in hun telefooncontacten.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "URL QR-code voor evenementtickets en registratie",
     "seoDesc": "Verhoog de bezoekersaantallen bij evenementen door fysieke flyers aan uw digitale ticketpagina te koppelen. Genereer een snelle, gratis URL-QR-code voor evenementregistratie.",
     "infoGain": "Tip voor evenementenplanning: houd de prestaties van uw flyer bij door een UTM-getagde URL te gebruiken (bijvoorbeeld ?utm_source=flyer&utm_campaign=summer_fest) voordat u de QR-code genereert. Hiermee kun je precies zien hoeveel kaartverkoop er uit fysieke scans kwam.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "WhatsApp QR-code voor klantenondersteuning",
     "seoDesc": "Bied directe klantenservice. Genereer een WhatsApp QR-code die een directe chat met uw ondersteuningsteam opent, compleet met een vooraf ingevuld bericht.",
     "infoGain": "Ondersteuningsstrategie: Vul het WhatsApp-bericht vooraf in met contextuele tekst zoals 'Hallo, ik heb hulp nodig bij mijn recente bestelling.' Dit neemt wrijving weg en zorgt ervoor dat de klant zich onmiddellijk geholpen voelt.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "PayPal QR-code voor non-profitorganisaties en donaties",
     "seoDesc": "Maak fondsenwerving probleemloos. Genereer een PayPal QR-code om directe donaties te accepteren bij liefdadigheidsevenementen, kerkdiensten of gemeenschapsbijeenkomsten.",
     "infoGain": "Tip voor fondsenwerving: Combineer de QR-code met een duidelijke Call to Action (CTA), zoals 'Scan om $ 5 te doneren'. Het definiëren van een specifiek, klein bedrag vermindert de beslissingsmoeheid en verhoogt de donatieconversie aanzienlijk.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "E-mail QR-code voor aanmeldingen voor de nieuwsbrief",
     "seoDesc": "Breid uw e-maillijst uit vanaf fysieke locaties. Genereer een e-mail-QR-code waarmee u vooraf een abonnementsaanvraag voor uw mailinglijst invult.",
     "infoGain": "Growth Hack: plaats deze QR-code op de achterkant van uw visitekaartjes of bij de kassa van uw winkel. Stimuleer scans door een kortingscode van 10% aan te bieden in ruil voor een abonnement.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "App Store QR-code voor mobiele gamedownloads",
     "seoDesc": "Genereer app-installaties rechtstreeks via buitenreclame. Maak een QR-code die rechtstreeks naar uw game linkt in de iOS App Store of Google Play.",
     "infoGain": "Tip voor gebruikersacquisitie: Als u op een congres of op een reclamebord reclame maakt voor een mobiele game, overbrugt een QR-code in de App Store de kloof tussen fysiek en digitaal, waardoor impulsdownloads worden geregistreerd voordat de gebruiker de naam van de game vergeet.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "YouTube Video QR-code voor producthandleidingen",
     "seoDesc": "Vervang verwarrende papieren handleidingen door videotutorials. Maak een YouTube QR-code om direct visuele instructies voor uw producten te geven.",
     "infoGain": "Klantsuccestip: Door een QR-code met een video-tutorial rechtstreeks op de verpakking of machine van uw product af te drukken, kunnen klanten problemen visueel oplossen, waardoor kostbare klantenondersteuningstickets en retourzendingen drastisch kunnen worden verminderd.",

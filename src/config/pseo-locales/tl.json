@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "tl-pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "[TL] PDF QR Code for Restaurant Menus",
     "seoDesc": "[TL] Replace paper menus with a contactless digital experience. Create a free, secure PDF QR code for your restaurant menu instantly.",
     "infoGain": "[TL] Pro Tip for Restaurants: Use a high error correction level (Level H) when printing your QR codes on table tents or coasters. This ensures the QR code remains scannable by customers even if it gets slightly damaged, wet, or dirty from food spills.",
@@ -28,7 +28,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "tl-wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "[TL] WiFi QR Code for Cafes & Hotels",
     "seoDesc": "[TL] Let your guests connect to your WiFi network instantly without typing passwords. Generate a free WiFi QR code for your cafe or hotel.",
     "infoGain": "[TL] Hospitality Tip: Print your WiFi QR code and place it in a beautiful frame at the reception desk or on individual cafe tables. Guests appreciate the friction-less experience of joining the network instantly without asking staff for the password.",
@@ -55,7 +55,7 @@
   {
     "id": "google-review-local-business",
     "slug": "tl-google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "[TL] Google Review QR Code for Local Businesses",
     "seoDesc": "[TL] Skyrocket your local SEO by making it effortless for customers to leave a 5-star rating. Create a free Google Review QR code.",
     "infoGain": "[TL] Marketing Tip: The best time to ask for a review is at the peak of customer satisfaction. Add this QR code to your receipts, exit doors, or have staff present it on a tablet right after providing excellent service.",
@@ -81,7 +81,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "tl-vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "[TL] vCard QR Code for Real Estate Agents",
     "seoDesc": "[TL] Never lose a lead again. Create a digital vCard QR code for your real estate business cards and open house brochures.",
     "infoGain": "[TL] Networking Tip: Place your vCard QR code on 'For Sale' signs and open house flyers. Potential buyers can instantly save your contact details, photo, and website to their phone contacts with a single scan.",
@@ -110,7 +110,7 @@
   {
     "id": "url-event-tickets",
     "slug": "tl-url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "[TL] URL QR Code for Event Tickets & Registration",
     "seoDesc": "[TL] Boost event attendance by linking physical flyers to your digital ticketing page. Generate a fast, free URL QR code for event registration.",
     "infoGain": "[TL] Event Planning Tip: Track your flyer performance by using a UTM-tagged URL (e.g., ?utm_source=flyer&utm_campaign=summer_fest) before generating the QR code. This lets you see exactly how many ticket sales came from physical scans.",
@@ -136,7 +136,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "tl-whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "[TL] WhatsApp QR Code for Customer Support",
     "seoDesc": "[TL] Provide instant customer service. Generate a WhatsApp QR code that opens a direct chat with your support team, complete with a pre-filled message.",
     "infoGain": "[TL] Support Strategy: Pre-fill the WhatsApp message with contextual text like 'Hello, I need help with my recent order.' This removes friction and makes the customer feel immediately attended to.",
@@ -163,7 +163,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "tl-paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "[TL] PayPal QR Code for Non-Profits & Donations",
     "seoDesc": "[TL] Make fundraising frictionless. Generate a PayPal QR code to accept instant donations at charity events, church services, or community gatherings.",
     "infoGain": "[TL] Fundraising Tip: Combine the QR code with a clear Call to Action (CTA) like 'Scan to Donate $5'. Defining a specific, small amount reduces decision fatigue and significantly increases donation conversion rates.",
@@ -192,7 +192,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "tl-email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "[TL] Email QR Code for Newsletter Signups",
     "seoDesc": "[TL] Grow your email list from physical locations. Generate an Email QR code that pre-fills a subscription request to your mailing list.",
     "infoGain": "[TL] Growth Hack: Place this QR code on the back of your business cards or at your retail checkout counter. Incentivize scans by offering a 10% discount code in exchange for subscribing.",
@@ -220,7 +220,7 @@
   {
     "id": "appstore-game-download",
     "slug": "tl-app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "[TL] App Store QR Code for Mobile Game Downloads",
     "seoDesc": "[TL] Drive app installs directly from out-of-home advertising. Create a QR code that links straight to your game on the iOS App Store or Google Play.",
     "infoGain": "[TL] User Acquisition Tip: If you are advertising a mobile game at a convention or on a billboard, an App Store QR code bridges the physical-to-digital gap, capturing impulse downloads before the user forgets the game's name.",
@@ -246,7 +246,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "tl-youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "[TL] YouTube Video QR Code for Product Manuals",
     "seoDesc": "[TL] Replace confusing paper manuals with video tutorials. Create a YouTube QR code to provide instant visual instructions for your products.",
     "infoGain": "[TL] Customer Success Tip: Printing a video tutorial QR code directly on your product's packaging or machinery helps customers troubleshoot visually, which can drastically reduce costly customer support tickets and returns.",

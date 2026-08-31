@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "PDF QR kód pro jídelní lístky restaurací",
     "seoDesc": "Vyměňte papírové menu za bezkontaktní digitální zážitek. Okamžitě vytvořte bezplatný a bezpečný PDF QR kód pro menu vaší restaurace.",
     "infoGain": "Profesionální tip pro restaurace: Při tisku QR kódů na stolní stany nebo podtácky použijte vysokou úroveň opravy chyb (úroveň H). To zajišťuje, že QR kód zůstane naskenovatelný zákazníky, i když se mírně poškodí, namočí nebo zašpiní rozlitým jídlem.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "WiFi QR kód pro kavárny a hotely",
     "seoDesc": "Umožněte svým hostům připojit se k vaší WiFi síti okamžitě bez zadávání hesel. Vygenerujte si bezplatný WiFi QR kód pro svou kavárnu nebo hotel.",
     "infoGain": "Tip pro pohostinství: Vytiskněte si svůj WiFi QR kód a umístěte jej do krásného rámu na recepci nebo na jednotlivé kavárenské stolky. Hosté oceňují bezproblémovou zkušenost s okamžitým připojením k síti, aniž by museli personál žádat o heslo.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "QR kód recenze Google pro místní firmy",
     "seoDesc": "Zvyšte své místní SEO raketově tím, že zákazníkům usnadníte zanechat 5hvězdičkové hodnocení. Vytvořte si bezplatný QR kód recenze Google.",
     "infoGain": "Marketingový tip: Nejlepší čas požádat o recenzi je na vrcholu spokojenosti zákazníků. Přidejte tento QR kód na své účtenky, únikové dveře nebo jej požádejte personál, aby jej předložil na tabletu ihned po poskytnutí vynikající služby.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "vCard QR kód pro realitní kanceláře",
     "seoDesc": "Už nikdy neztratit náskok. Vytvořte digitální QR kód vCard pro své vizitky nemovitostí a brožury o dnech otevřených dveří.",
     "infoGain": "Tip pro práci v síti: Umístěte svůj QR kód vCard na cedulky „Na prodej“ a letáky na den otevřených dveří. Potenciální kupující si mohou jediným skenováním okamžitě uložit vaše kontaktní údaje, fotografii a webové stránky do svých telefonních kontaktů.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "URL QR kód pro vstupenky na akce a registraci",
     "seoDesc": "Zvyšte návštěvnost akcí tím, že propojíte fyzické letáky s vaší digitální stránkou pro vstupenky. Vygenerujte rychlý, bezplatný URL QR kód pro registraci události.",
     "infoGain": "Tip pro plánování události: Před vygenerováním QR kódu sledujte výkon svého letáku pomocí adresy URL označené UTM (např. ?utm_source=flyer&utm_campaign=summer_fest). To vám umožní přesně vidět, kolik prodejů vstupenek pochází z fyzických skenů.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "WhatsApp QR kód pro zákaznickou podporu",
     "seoDesc": "Poskytujte okamžitý zákaznický servis. Vygenerujte WhatsApp QR kód, který otevře přímý chat s vaším týmem podpory, doplněný o předvyplněnou zprávu.",
     "infoGain": "Strategie podpory: Předvyplňte zprávu WhatsApp kontextovým textem jako „Dobrý den, potřebuji pomoc s mou nedávnou objednávkou“. Tím se odstraní tření a zákazník se cítí okamžitě obsluhován.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "PayPal QR Code for Non-Profits & Donations",
     "seoDesc": "Make fundraising frictionless. Generate a PayPal QR code to accept instant donations at charity events, church services, or community gatherings.",
     "infoGain": "Fundraising Tip: Combine the QR code with a clear Call to Action (CTA) like 'Scan to Donate $5'. Defining a specific, small amount reduces decision fatigue and significantly increases donation conversion rates.",
@@ -169,7 +169,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "E-mail QR kód pro přihlášení k odběru newsletteru",
     "seoDesc": "Rozšiřte svůj e-mailový seznam z fyzických míst. Vygenerujte e-mailový QR kód, který předvyplní žádost o předplatné do vašeho seznamu adresátů.",
     "infoGain": "Growth Hack: Tento QR kód umístěte na zadní stranu svých vizitek nebo u pokladny. Motivujte skenování nabídkou 10% slevového kódu výměnou za předplatné.",
@@ -192,7 +192,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "QR kód App Store pro stahování mobilních her",
     "seoDesc": "Zvyšte počet instalací aplikací přímo z reklamy mimo domov. Vytvořte QR kód, který bude odkazovat přímo na vaši hru v iOS App Store nebo Google Play.",
     "infoGain": "Tip pro akvizici uživatelů: Pokud inzerujete mobilní hru na sjezdu nebo na billboardu, QR kód App Store překlene mezeru mezi fyzickými a digitálními zařízeními a zachytí impulzní stahování dříve, než uživatel zapomene název hry.",
@@ -215,7 +215,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "YouTube Video QR kód pro produktové manuály",
     "seoDesc": "Nahraďte matoucí papírové příručky videonávody. Vytvořte si QR kód YouTube, který vám poskytne okamžité vizuální pokyny pro vaše produkty.",
     "infoGain": "Tip pro úspěch zákazníka: Tisk QR kódu s výukovým videonávodem přímo na obal vašeho produktu nebo strojní zařízení pomáhá zákazníkům vizuálně řešit problémy, což může drasticky snížit nákladné vstupenky na zákaznickou podporu a vrácení.",

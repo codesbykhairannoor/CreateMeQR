@@ -305,8 +305,8 @@ export default function App() {
       ) : !isStaticPage ? (
         <>
           <QrWorkspace qrType={qrType} setQrTypeRoute={handleTypeChangeRoute} currentSeo={currentSeo} pseoUseCase={pseoUseCase} />
-          <LandingContent qrType={qrType} />
-          <SeoArticle currentLangCode={currentLangCode} />
+          <LandingContent qrType={qrType} pseoUseCase={pseoUseCase} />
+          {['url','vcard','text','email','sms','wifi','bitcoin','twitter','epc','pdf','appstore','image','video','audio','paypal','whatsapp','instagram','facebook','viber','telegram','skype','line','spotify','snapchat','tiktok','github','discord','twitch','linkedin','pinterest','reddit','zoom','teams'].includes(qrType) && <SeoArticle currentLangCode={currentLangCode} />}
         </>
       ) : (
         <>

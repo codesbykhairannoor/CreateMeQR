@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "Cod QR PDF pentru meniurile restaurantelor",
     "seoDesc": "Înlocuiți meniurile de hârtie cu o experiență digitală fără contact. Creează instantaneu un cod QR PDF gratuit și securizat pentru meniul restaurantului tău.",
     "infoGain": "Sfat profesionist pentru restaurante: utilizați un nivel ridicat de corectare a erorilor (Nivel H) atunci când imprimați codurile QR pe ​​corturi de masă sau subțire. Acest lucru asigură că codul QR rămâne scanat de către clienți, chiar dacă este ușor deteriorat, umed sau murdar din cauza vărsărilor de alimente.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "Cod QR WiFi pentru cafenele și hoteluri",
     "seoDesc": "Lăsați-vă invitații să se conecteze la rețeaua WiFi instantaneu, fără a introduce parole. Generați un cod QR WiFi gratuit pentru cafeneaua sau hotelul dvs.",
     "infoGain": "Sfat pentru ospitalitate: imprimați-vă codul QR WiFi și plasați-l într-un cadru frumos la recepție sau pe mese individuale de cafenea. Oaspeții apreciază experiența fără fricțiuni de a se alătura rețelei instantaneu fără a cere personalului parola.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Codul QR Google Review pentru companiile locale",
     "seoDesc": "Creșteți vertiginos SEO local, făcându-le clienților posibilitatea de a lăsa fără efort o evaluare de 5 stele. Creați un cod QR gratuit Google Review.",
     "infoGain": "Sfat de marketing: cel mai bun moment pentru a cere o recenzie este în vârful satisfacției clienților. Adăugați acest cod QR la chitanțe, la ușile de ieșire sau solicitați personalului să îl prezinte pe o tabletă imediat după ce a furnizat servicii excelente.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "Cod QR vCard pentru agenții imobiliari",
     "seoDesc": "Nu mai pierde niciodată un avantaj. Creați un cod QR digital vCard pentru cărțile dvs. de vizită imobiliare și pentru broșurile cu casele deschise.",
     "infoGain": "Sfat de rețea: plasați codul dvs. QR vCard pe panourile „De vânzare” și pe fluturașii cu casele deschise. Cumpărătorii potențiali pot salva instantaneu detaliile dvs. de contact, fotografia și site-ul web în contactele de pe telefon cu o singură scanare.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "Cod QR URL pentru bilete la eveniment și înregistrare",
     "seoDesc": "Sporiți participarea la eveniment prin conectarea fluturașilor fizici la pagina dvs. digitală de bilete. Generați un cod QR URL rapid și gratuit pentru înregistrarea evenimentului.",
     "infoGain": "Sfat de planificare a evenimentelor: Urmăriți performanța fluturașului utilizând o adresă URL etichetată cu UTM (de exemplu, ?utm_source=flyer&utm_campaign=summer_fest) înainte de a genera codul QR. Acest lucru vă permite să vedeți exact câte vânzări de bilete au venit din scanările fizice.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "Cod QR WhatsApp pentru asistență clienți",
     "seoDesc": "Oferiți servicii instant pentru clienți. Generați un cod QR WhatsApp care deschide un chat direct cu echipa dvs. de asistență, completat cu un mesaj precompletat.",
     "infoGain": "Strategie de asistență: completați în prealabil mesajul WhatsApp cu text contextual precum „Bună ziua, am nevoie de ajutor pentru comanda mea recentă”. Acest lucru elimină frecarea și face clientul să se simtă imediat atent.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "Cod QR PayPal pentru organizații nonprofit și donații",
     "seoDesc": "Faceți strângerea de fonduri fără fricțiuni. Generați un cod QR PayPal pentru a accepta donații instantanee la evenimente caritabile, slujbe bisericești sau adunări comunitare.",
     "infoGain": "Sfat de strângere de fonduri: combinați codul QR cu un îndemn la acțiune (CTA) clar, cum ar fi „Scanați pentru a dona 5 USD”. Definirea unei anumite sume mici reduce oboseala decizională și crește semnificativ ratele de conversie a donațiilor.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "Cod QR prin e-mail pentru înscrieri la buletine informative",
     "seoDesc": "Creșteți-vă lista de e-mail din locații fizice. Generați un cod QR de e-mail care completează în prealabil o solicitare de abonare la lista dvs. de corespondență.",
     "infoGain": "Growth Hack: plasați acest cod QR pe ​​spatele cărților de vizită sau la ghișeul de casă. Stimulează scanările oferind un cod de reducere de 10% în schimbul abonării.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "Cod QR App Store pentru descărcări de jocuri mobile",
     "seoDesc": "Aplicația Drive se instalează direct din publicitate în afara casei. Creați un cod QR care se leagă direct la jocul dvs. în iOS App Store sau Google Play.",
     "infoGain": "Sfat pentru achiziția utilizatorului: dacă faceți publicitate unui joc mobil la o convenție sau pe un panou publicitar, un cod QR din App Store face o punte între decalajul fizic și digital, captând descărcări de impuls înainte ca utilizatorul să uite numele jocului.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "Codul QR video YouTube pentru manualele de produse",
     "seoDesc": "Înlocuiți manualele de hârtie confuze cu tutoriale video. Creați un cod QR YouTube pentru a oferi instrucțiuni vizuale instantanee pentru produsele dvs.",
     "infoGain": "Sfat pentru succesul clienților: imprimarea unui cod QR de tutorial video direct pe ambalajul produsului sau pe utilajul dvs. ajută clienții să remedieze vizual problemele, ceea ce poate reduce drastic costurile de asistență pentru clienți și returnările.",

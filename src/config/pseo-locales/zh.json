@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "餐厅菜单 PDF 二维码",
     "seoDesc": "用非接触式数字体验取代纸质菜单。立即为您的餐厅菜单创建免费、安全的 PDF 二维码。",
     "infoGain": "餐厅专业提示：在餐桌帐篷或杯垫上打印二维码时，请使用较高的纠错级别（H 级）。这可以确保二维码仍然可以被顾客扫描，即使它因食物溢出而轻微损坏、弄湿或弄脏。",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "咖啡馆和酒店 WiFi 二维码",
     "seoDesc": "让您的客人无需输入密码即可立即连接到您的 WiFi 网络。为您的咖啡馆或酒店生成免费 WiFi 二维码。",
     "infoGain": "接待提示：打印您的 WiFi 二维码，并将其放在接待处或单独咖啡桌上的漂亮框架中。客人无需向工作人员询问密码即可立即加入网络，享受无摩擦的体验。",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google 审核本地企业的二维码",
     "seoDesc": "让客户轻松留下 5 星评级，从而大幅提升您的本地 SEO。创建免费的 Google 评论二维码。",
     "infoGain": "营销提示：要求评论的最佳时机是在客户满意度最高的时候。将此二维码添加到您的收据、出口门上，或者让工作人员在提供优质服务后立即将其显示在平板电脑上。",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "房地产经纪人 vCard 二维码",
     "seoDesc": "永远不会再失去领先优势。为您的房地产名片和开放参观手册创建数字 vCard 二维码。",
     "infoGain": "社交提示：将您的 vCard 二维码放在“待售”标志和开放日传单上。潜在买家只需扫描一次即可立即将您的联系方式、照片和网站保存到他们的手机联系人中。",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "活动门票和注册的 URL 二维码",
     "seoDesc": "通过将实体传单链接到数字票务页面来提高活动出席率。生成快速、免费的 URL 二维码以进行活动注册。",
     "infoGain": "活动策划提示：在生成 QR 码之前，使用 UTM 标记的 URL（例如 ?utm_source=flyer&utm_campaign=summer_fest）跟踪传单效果。这可以让您准确地看到有多少门票销售来自物理扫描。",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "WhatsApp 二维码用于客户支持",
     "seoDesc": "提供即时客户服务。生成 WhatsApp 二维码，用于打开与您的支持团队的直接聊天，并附有预先填写的消息。",
     "infoGain": "支持策略：在 WhatsApp 消息中预先填写上下文文本，例如“您好，我需要有关最近订单的帮助。”这消除了摩擦，让客户感到立即受到关注。",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "用于非营利组织和捐赠的 PayPal 二维码",
     "seoDesc": "让筹款变得顺畅。生成 PayPal 二维码以接受慈善活动、教堂服务或社区聚会的即时捐款。",
     "infoGain": "筹款提示：将二维码与明确的号召性用语 (CTA) 结合起来，例如“扫描捐赠 5 美元”。确定具体的小额金额可减少决策疲劳并显着提高捐赠转化率。",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "通过电子邮件发送 QR 码以进行新闻通讯注册",
     "seoDesc": "从实际位置增加您的电子邮件列表。生成电子邮件二维码，将订阅请求预先填写到您的邮件列表中。",
     "infoGain": "增长黑客：将此二维码放在名片背面或零售收银台上。通过提供 10% 的折扣代码来奖励扫描以换取订阅。",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "App Store 手游二维码下载",
     "seoDesc": "直接通过户外广告推动应用安装。创建一个直接链接到您在 iOS App Store 或 Google Play 上的游戏的二维码。",
     "infoGain": "用户获取提示：如果您在会议或广告牌上为手机游戏做广告，App Store 二维码可以弥合物理与数字之间的差距，在用户忘记游戏名称之前捕获冲动下载。",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "产品手册的 YouTube 视频二维码",
     "seoDesc": "用视频教程取代令人困惑的纸质手册。创建 YouTube 二维码，为您的产品提供即时视觉说明。",
     "infoGain": "客户成功提示：直接在产品包装或机械上打印视频教程二维码可帮助客户直观地排除故障，从而大大减少昂贵的客户支持票和退货。",

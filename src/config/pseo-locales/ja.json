@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "レストランメニューのPDF QRコード",
     "seoDesc": "紙のメニューを非接触のデジタル体験に置き換えます。レストランのメニュー用の無料で安全な PDF QR コードを即座に作成します。",
     "infoGain": "レストラン向けのプロによるヒント: テーブル テントやコースターに QR コードを印刷する場合は、高いエラー修正レベル (レベル H) を使用してください。これにより、QR コードがわずかに損傷したり、濡れたり、食べこぼしで汚れたりした場合でも、顧客は QR コードをスキャンできる状態を維持できます。",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "カフェとホテルの WiFi QR コード",
     "seoDesc": "ゲストはパスワードを入力せずにすぐに WiFi ネットワークに接続できます。カフェやホテルの無料 WiFi QR コードを生成します。",
     "infoGain": "おもてなしのヒント: WiFi QR コードを印刷し、美しいフレームに入れて受付デスクまたは各カフェのテーブルに置きます。ゲストは、スタッフにパスワードを尋ねることなく、即座にネットワークに参加できるスムーズなエクスペリエンスを高く評価しています。",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google がローカル ビジネス向けの QR コードをレビューする",
     "seoDesc": "顧客が簡単に 5 つ星の評価を残せるようにすることで、ローカル SEO を飛躍的に高めます。無料の Google レビュー QR コードを作成します。",
     "infoGain": "マーケティングのヒント: レビューを依頼するのに最適な時期は、顧客満足度がピークに達しているときです。この QR コードをレシートや出口のドアに追加するか、優れたサービスを提供した直後にスタッフにタブレットで提示してもらいます。",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "不動産業者向け vCard QR コード",
     "seoDesc": "もうリードを失うことはありません。不動産の名刺やオープンハウスのパンフレット用のデジタル vCard QR コードを作成します。",
     "infoGain": "ネットワーキングのヒント: vCard QR コードを「販売中」の看板やオープンハウスのチラシに貼り付けてください。潜在的な購入者は、1 回のスキャンであなたの連絡先の詳細、写真、ウェブサイトを電話の連絡先に即座に保存できます。",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "イベントチケット＆登録用URL QRコード",
     "seoDesc": "物理的なチラシをデジタル チケット ページにリンクすることで、イベントの参加者数を増やします。イベント登録用の高速かつ無料の URL QR コードを生成します。",
     "infoGain": "Event Planning Tip: Track your flyer performance by using a UTM-tagged URL (e.g., ?utm_source=flyer&utm_campaign=summer_fest) before generating the QR code.これにより、物理スキャンによるチケット販売数を正確に確認できます。",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "カスタマーサポート用のWhatsApp QRコード",
     "seoDesc": "即時の顧客サービスを提供します。サポート チームとの直接チャットを開始する WhatsApp QR コードを生成し、事前に入力されたメッセージを入力します。",
     "infoGain": "サポート戦略: WhatsApp メッセージに「こんにちは、最近の注文についてサポートが必要です」などのコンテキスト テキストを事前に入力します。これにより摩擦がなくなり、顧客はすぐに対応されていると感じることができます。",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "非営利および寄付用の PayPal QR コード",
     "seoDesc": "資金調達をスムーズに行います。 PayPal QR コードを生成して、慈善イベント、教会の礼拝、地域の集まりで即時寄付を受け付けます。",
     "infoGain": "募金活動のヒント: QR コードを、「スキャンして $5 を寄付」などの明確な行動喚起 (CTA) と組み合わせます。特定の少額を定義すると、意思決定の疲れが軽減され、寄付の変換率が大幅に向上します。",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "ニュースレター登録用の電子メール QR コード",
     "seoDesc": "物理的な場所からメール リストを増やします。メーリング リストへの購読リクエストを事前に入力する電子メール QR コードを生成します。",
     "infoGain": "グロースハック: この QR コードを名刺の裏または小売店のレジに貼り付けてください。購読と引き換えに 10% 割引コードを提供することで、スキャンを奨励します。",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "App Store QR Code for Mobile Game Downloads",
     "seoDesc": "Drive app installs directly from out-of-home advertising. Create a QR code that links straight to your game on the iOS App Store or Google Play.",
     "infoGain": "User Acquisition Tip: If you are advertising a mobile game at a convention or on a billboard, an App Store QR code bridges the physical-to-digital gap, capturing impulse downloads before the user forgets the game's name.",
@@ -212,7 +212,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "製品マニュアルの YouTube ビデオ QR コード",
     "seoDesc": "紛らわしい紙のマニュアルをビデオチュートリアルに置き換えます。 YouTube QR コードを作成して、商品の視覚的な説明を即座に提供します。",
     "infoGain": "顧客成功のヒント: ビデオ チュートリアルの QR コードを製品のパッケージまたは機械に直接印刷すると、顧客が視覚的にトラブルシューティングを行うのに役立ち、コストのかかるカスタマー サポート チケットと返品を大幅に削減できます。",

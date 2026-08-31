@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "레스토랑 메뉴용 PDF QR 코드",
     "seoDesc": "종이 메뉴를 비접촉식 디지털 경험으로 바꾸세요. 레스토랑 메뉴에 대한 무료 보안 PDF QR 코드를 즉시 생성하세요.",
     "infoGain": "레스토랑을 위한 전문가 팁: 테이블 텐트나 컵받침에 QR 코드를 인쇄할 때 높은 오류 수정 수준(레벨 H)을 사용하세요. 이를 통해 QR 코드가 약간 손상되거나, 젖거나, 음식을 흘려 더러워진 경우에도 고객이 QR 코드를 스캔할 수 있습니다.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "카페 및 호텔용 WiFi QR 코드",
     "seoDesc": "손님이 비밀번호를 입력하지 않고도 즉시 Wi-Fi 네트워크에 연결할 수 있습니다. 카페나 호텔에 대한 무료 WiFi QR 코드를 생성하세요.",
     "infoGain": "숙박 팁: Wi-Fi QR 코드를 인쇄하여 리셉션 데스크나 개별 카페 테이블의 아름다운 액자에 걸어두세요. 고객은 직원에게 비밀번호를 묻지 않고도 즉시 네트워크에 접속할 수 있는 원활한 경험을 높이 평가합니다.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google은 지역 비즈니스를 위한 QR 코드를 검토합니다.",
     "seoDesc": "고객이 쉽게 별 5개 평점을 남길 수 있도록 하여 지역 SEO를 급상승시키세요. 무료 Google 리뷰 QR 코드를 만드세요.",
     "infoGain": "마케팅 팁: 리뷰를 요청하기 가장 좋은 시기는 고객 만족도가 최고조에 달할 때입니다. 탁월한 서비스를 제공한 후 영수증, 출구에 이 QR 코드를 추가하거나 태블릿에 직원이 제시하도록 하세요.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "부동산 중개인을 위한 vCard QR 코드",
     "seoDesc": "다시는 선두를 잃지 마십시오. 부동산 명함 및 오픈 하우스 브로셔용 디지털 vCard QR 코드를 만드세요.",
     "infoGain": "네트워킹 팁: vCard QR 코드를 '판매용' 표지판과 오픈 하우스 전단지에 배치하세요. 잠재 구매자는 한 번의 스캔으로 귀하의 연락처 세부 정보, 사진 및 웹사이트를 즉시 휴대폰 연락처에 저장할 수 있습니다.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "이벤트 티켓 및 등록을 위한 URL QR 코드",
     "seoDesc": "실제 전단지를 디지털 티켓팅 페이지에 연결하여 이벤트 참석률을 높여보세요. 이벤트 등록을 위한 빠르고 무료 URL QR 코드를 생성하세요.",
     "infoGain": "이벤트 계획 팁: QR 코드를 생성하기 전에 UTM 태그가 지정된 URL(예: ?utm_source=flyer&utm_campaign=summer_fest)을 사용하여 전단지 성과를 추적하세요. 이를 통해 실제 스캔을 통해 정확히 얼마나 많은 티켓이 판매되었는지 확인할 수 있습니다.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "고객 지원을 위한 WhatsApp QR 코드",
     "seoDesc": "즉각적인 고객 서비스를 제공하세요. 미리 채워진 메시지가 포함된 지원팀과의 직접 채팅을 여는 WhatsApp QR 코드를 생성하세요.",
     "infoGain": "지원 전략: '안녕하세요. 최근 주문에 도움이 필요합니다.'와 같은 상황별 텍스트로 WhatsApp 메시지를 미리 입력하세요. 이는 마찰을 제거하고 고객이 즉시 주의를 기울인다는 느낌을 갖게 합니다.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "비영리 및 기부를 위한 PayPal QR 코드",
     "seoDesc": "모금 활동을 원활하게 진행하세요. 자선 행사, 교회 서비스 또는 지역 사회 모임에서 즉시 기부를 받으려면 PayPal QR 코드를 생성하세요.",
     "infoGain": "모금 팁: QR 코드를 '5달러 기부 스캔'과 같은 명확한 CTA(Call to Action)와 결합하세요. 구체적이고 적은 금액을 정의하면 의사결정 피로도가 줄어들고 기부 전환율이 크게 높아집니다.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "뉴스레터 가입을 위한 이메일 QR 코드",
     "seoDesc": "실제 위치에서 이메일 목록을 확장하세요. 메일링 리스트에 대한 구독 요청을 미리 채우는 이메일 QR 코드를 생성하세요.",
     "infoGain": "성장 해킹: 이 QR 코드를 명함 뒷면이나 소매점 계산대에 배치하세요. 구독하는 대가로 10% 할인 코드를 제공하여 스캔에 대한 인센티브를 제공하세요.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "모바일 게임 다운로드를 위한 App Store QR 코드",
     "seoDesc": "옥외 광고에서 직접 앱 설치를 유도합니다. iOS App Store 또는 Google Play의 게임으로 바로 연결되는 QR 코드를 생성하세요.",
     "infoGain": "사용자 확보 팁: 컨벤션이나 광고판에서 모바일 게임을 광고하는 경우 App Store QR 코드는 실제와 디지털 간의 격차를 해소하여 사용자가 게임 이름을 잊어버리기 전에 충동적인 다운로드를 포착합니다.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "제품 설명서용 YouTube 비디오 QR 코드",
     "seoDesc": "혼란스러운 종이 매뉴얼을 비디오 튜토리얼로 교체하세요. 제품에 대한 즉각적인 시각적 지침을 제공하려면 YouTube QR 코드를 만드세요.",
     "infoGain": "고객 성공 팁: 제품 포장이나 기계에 직접 비디오 튜토리얼 QR 코드를 인쇄하면 고객이 시각적으로 문제를 해결하는 데 도움이 되며 비용이 많이 드는 고객 지원 티켓과 반품을 대폭 줄일 수 있습니다.",

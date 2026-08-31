@@ -1450,6 +1450,52 @@
   "pseo": {
     "insights_badge": "PRO ÚTMUTATÓ",
     "insights_title": "Szakértői Meglátások és Legjobb Gyakorlatok",
-    "insights_desc": "Alapvető stratégiák annak biztosítására, hogy digitális munkafolyamata mindig elérhető, beolvasható és naprakész legyen."
+    "insights_desc": "Alapvető stratégiák annak biztosítására, hogy digitális munkafolyamata mindig elérhető, beolvasható és naprakész legyen.",
+    "restaurantmenu": {
+      "badge": "Éttermek és kávézók számára",
+      "heroTitle": "QR-kód generátor az étterem menüjéhez PDF",
+      "heroSubtitle": "Készítsen azonnal érintésmentes digitális menüt éttermének. Töltse fel PDF-jét, és hozzon létre egy szerkeszthető QR-kódot, amely soha nem jár le.",
+      "featTitle1": "Érintés nélküli menük",
+      "featDesc1": "Gondoskodjon a vendégek biztonságáról és kényelméről érintésmentes digitális menükkel.",
+      "featTitle2": "Mobilra optimalizálva",
+      "featDesc2": "A feltöltött PDF-fájl gyönyörűen jelenik meg, és bármely okostelefonon könnyen olvasható.",
+      "featTitle3": "Könnyen frissíthető",
+      "featDesc3": "Frissítse szezonális menüelemeit anélkül, hogy újra ki kellene nyomtatnia az asztalokon lévő QR-kódokat.",
+      "faqTitle": "Gyakori kérdések",
+      "faqQ1": "Használhatom ezt több asztalhoz is?",
+      "faqA1": "Igen, kinyomtathatja ugyanazt a QR-kódot, és minden asztalra elhelyezheti. Minden ügyfél ugyanazt a digitális menüt fogja látni.",
+      "faqQ2": "Mi van, ha megváltozik a menüm?",
+      "faqA2": "Ha dinamikus URL QR-kódot használ, bármikor frissítheti a link célját. Statikus PDF-feltöltés esetén új QR-kódra lesz szüksége, ha a fájl megváltozik.",
+      "faqQ3": "Működik alkalmazás nélkül?",
+      "faqA3": "Teljesen! Minden modern iOS és Android okostelefon beépített QR-szkennerrel rendelkezik, közvetlenül az alapértelmezett kameraalkalmazásaiban.",
+      "faqQ4": "Van-e korlátozás a szkennelésre?",
+      "faqA4": "Nem! A QR-kódok örökre korlátlanul leolvashatók.",
+      "faqQ5": "Hozzáadhatom az éttermem logóját?",
+      "faqA5": "Igen, feltöltheti saját egyéni logóját, és közvetlenül a QR-kód közepére helyezheti."
+    },
+    "wificafe": {
+      "badge": "Kávézóknak és szállodáknak",
+      "heroTitle": "WiFi QR-kód kávézók és szállodák számára",
+      "heroSubtitle": "Hagyja, hogy vendégei azonnal, jelszavak beírása nélkül csatlakozzanak WiFi hálózatához. Készítsen ingyenes WiFi QR-kódot kávézója vagy szállodája számára.",
+      "featTitle1": "Azonnali kapcsolat",
+      "featDesc1": "A vendégek csak beolvassák a kódot, és eszközük automatikusan csatlakozik a hálózathoz. Nincsenek bosszantó jelszó-elírások.",
+      "featTitle2": "Biztonságos és privát",
+      "featDesc2": "Jelszava soha nem kerül elküldésre szervereinkre. Közvetlenül és biztonságosan beágyazódik a helyi QR-kód mintába.",
+      "featTitle3": "Minden eszközön működik",
+      "featDesc3": "A modern iOS és Android okostelefonok natívan támogatják a WiFi hálózatokhoz való csatlakozást QR kódon keresztül.",
+      "faqTitle": "Gyakori kérdések"
+    },
+    "googlereviewlocal": {
+      "badge": "Helyi vállalkozások számára",
+      "heroTitle": "Google Review QR-kód helyi vállalkozások számára",
+      "heroSubtitle": "Fokozza a helyi keresőoptimalizálást az 5 csillagos Google-vélemények könnyű összegyűjtésével. Hozzon létre egy QR-kódot, amely az ügyfeleket közvetlenül az értékelési oldalra küldi.",
+      "featTitle1": "Helyi SEO Boost",
+      "featDesc1": "További 5 csillagos értékelések közvetlenül javítják a helyezést a Google Maps és a Local Pack keresési eredményei között.",
+      "featTitle2": "Súrlódásmentes élmény",
+      "featDesc2": "Az ügyfeleknek nem kell manuálisan keresniük az Ön vállalkozását. A QR-kód azonnal megnyitja a Google Review modált.",
+      "featTitle3": "Nyomtatás bárhol",
+      "featDesc3": "Exportáljon nagy felbontású vektoros SVG formátumban, hogy nyugtákra, asztalsátrakra, névjegykártyákra vagy kirakatablakra nyomtathasson.",
+      "faqTitle": "Gyakori kérdések"
+    }
   }
 }

@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "PDF QR-kód az éttermi menükhöz",
     "seoDesc": "Cserélje ki a papír menüt érintésmentes digitális élménnyel. Hozzon létre azonnal ingyenes, biztonságos PDF QR-kódot éttermi menüjéhez.",
     "infoGain": "Profi tipp éttermeknek: Használjon magas hibajavítási szintet (H szint), amikor QR-kódjait asztalsátrakra vagy alátétekre nyomtatja. Ez biztosítja, hogy a QR-kód továbbra is beolvasható maradjon az ügyfelek számára, még akkor is, ha kissé megsérül, nedves vagy beszennyeződik a kiömlött étel miatt.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "WiFi QR-kód kávézók és szállodák számára",
     "seoDesc": "Hagyja, hogy vendégei azonnal, jelszavak beírása nélkül csatlakozzanak WiFi hálózatához. Készítsen ingyenes WiFi QR-kódot kávézója vagy szállodája számára.",
     "infoGain": "Vendéglátási tipp: Nyomtassa ki WiFi QR-kódját, és helyezze el egy gyönyörű keretben a recepción vagy az egyes kávézóasztalokon. A vendégek értékelik azt a súrlódásmentes élményt, hogy azonnal csatlakozhatnak a hálózathoz anélkül, hogy jelszót kérnének a személyzettől.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google Review QR-kód helyi vállalkozások számára",
     "seoDesc": "Az egekbe szökkentheti a helyi keresőoptimalizálást azáltal, hogy az ügyfelek könnyedén meghagyhatják az 5 csillagos értékelést. Hozzon létre egy ingyenes Google Review QR-kódot.",
     "infoGain": "Marketingtipp: Az értékelés kérésének legalkalmasabb időpontja a vevői elégedettség csúcspontja. Adja hozzá ezt a QR-kódot a nyugtákhoz, a kijárati ajtókhoz, vagy kérje meg, hogy a személyzet azonnal mutassa be egy táblagépen, miután kiváló szolgáltatást nyújtott.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "vCard QR-kód ingatlanügynökök számára",
     "seoDesc": "Soha többé ne veszítsen előnyt. Hozzon létre egy digitális vCard QR-kódot ingatlanos névjegykártyáihoz és nyitott házprospektusaihoz.",
     "infoGain": "Hálózati tipp: Helyezze el vCard QR-kódját az „Eladó” táblákra és a nyílt napi szórólapokra. A potenciális vásárlók egyetlen szkenneléssel azonnal elmenthetik kapcsolatfelvételi adatait, fényképét és webhelyét telefonos kapcsolataikra.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "URL QR-kód rendezvényjegyekhez és regisztrációhoz",
     "seoDesc": "Növelje az események látogatottságát azáltal, hogy fizikai szórólapokat kapcsol össze digitális jegyértékesítő oldalával. Gyors, ingyenes URL QR-kód létrehozása az események regisztrációjához.",
     "infoGain": "Eseménytervezési tipp: Kövesse nyomon szórólapja teljesítményét egy UTM-címkével ellátott URL használatával (pl. ?utm_source=flyer&utm_campaign=summer_fest) a QR-kód generálása előtt. Így pontosan láthatja, hogy hány jegyeladás származott a fizikai szkennelésekből.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "WhatsApp QR-kód az ügyfélszolgálathoz",
     "seoDesc": "Azonnali ügyfélszolgálat biztosítása. Hozzon létre egy WhatsApp QR-kódot, amely közvetlen csevegést indít az ügyfélszolgálati csapattal, kiegészítve egy előre kitöltött üzenettel.",
     "infoGain": "Támogatási stratégia: Előre töltse ki a WhatsApp-üzenetet kontextuális szöveggel, például „Helló, segítségre van szükségem a legutóbbi rendelésemhez”. Ez megszünteti a súrlódást, és az ügyfél úgy érzi, hogy azonnal gondoskodnak róla.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "PayPal QR-kód non-profit szervezetekhez és adományokhoz",
     "seoDesc": "Tedd zökkenőmentessé az adománygyűjtést. Hozzon létre egy PayPal QR-kódot, amellyel azonnali adományokat fogadhat jótékonysági eseményeken, istentiszteleteken vagy közösségi összejöveteleken.",
     "infoGain": "Adománygyűjtési tipp: Kombinálja a QR-kódot egy egyértelmű cselekvésre ösztönzővel (CTA), például „Scan to Donate $5”. Egy konkrét, kis összeg meghatározása csökkenti a döntési fáradtságot, és jelentősen megnöveli az adományok átváltási arányát.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "QR-kód e-mailben a hírlevélre való feliratkozáshoz",
     "seoDesc": "Növelje e-mail listáját fizikai helyekről. Hozzon létre egy e-mail QR-kódot, amely előre kitölti a levelezőlistára való feliratkozási kérelmet.",
     "infoGain": "Growth Hack: Helyezze el ezt a QR-kódot névjegykártyái hátulján vagy a kiskereskedelmi pénztárnál. Ösztönözze a szkennelést azáltal, hogy 10%-os kedvezményes kódot kínál az előfizetésért cserébe.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "App Store QR-kód mobiljátékok letöltéséhez",
     "seoDesc": "Növelje az alkalmazástelepítéseket közvetlenül az otthonon kívüli hirdetésekből. Hozzon létre egy QR-kódot, amely közvetlenül a játékára mutat az iOS App Store vagy a Google Play áruházban.",
     "infoGain": "Felhasználószerzési tipp: Ha mobiljátékot hirdet egy kongresszuson vagy egy óriásplakáton, az App Store QR-kódja áthidalja a fizikai és a digitális közötti szakadékot, és rögzíti az impulzusos letöltéseket, mielőtt a felhasználó elfelejtené a játék nevét.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "YouTube-videó QR-kód a termékkézikönyvekhez",
     "seoDesc": "Cserélje le a zavaros papír kézikönyveket oktatóvideókkal. Hozz létre egy YouTube QR-kódot, amely azonnali vizuális útmutatást nyújt a termékeidhez.",
     "infoGain": "Ügyfél-sikertipp: Ha közvetlenül a termék csomagolására vagy gépére nyomtat oktatóvideós QR-kódot, az segít az ügyfeleknek a vizuális hibaelhárításban, ami drasztikusan csökkentheti a költséges ügyfélszolgálati jegyek és visszaküldések költségeit.",

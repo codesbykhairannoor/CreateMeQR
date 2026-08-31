@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "PDF QR-kod för restaurangmenyer",
     "seoDesc": "Ersätt pappersmenyer med en kontaktlös digital upplevelse. Skapa en gratis, säker PDF QR-kod för din restaurangmeny direkt.",
     "infoGain": "Proffstips för restauranger: Använd en hög felkorrigeringsnivå (nivå H) när du skriver ut dina QR-koder på bordstält eller glasunderlägg. Detta säkerställer att QR-koden förblir skanningsbar av kunder även om den blir något skadad, blöt eller smutsig av matspill.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "WiFi QR-kod för kaféer och hotell",
     "seoDesc": "Låt dina gäster ansluta till ditt WiFi-nätverk direkt utan att skriva lösenord. Generera en gratis WiFi QR-kod för ditt café eller hotell.",
     "infoGain": "Hotelltips: Skriv ut din WiFi QR-kod och placera den i en vacker ram i receptionen eller på enskilda kafébord. Gästerna uppskattar den friktionsfria upplevelsen av att ansluta sig till nätverket direkt utan att fråga personalen om lösenordet.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google Granska QR-kod för lokala företag",
     "seoDesc": "Skjut upp din lokala SEO genom att göra det enkelt för kunder att lämna ett 5-stjärnigt betyg. Skapa en gratis QR-kod för Google Review.",
     "infoGain": "Marknadsföringstips: Den bästa tiden att be om en recension är på toppen av kundnöjdheten. Lägg till den här QR-koden på dina kvitton, utgångsdörrar eller låt personalen presentera den på en surfplatta direkt efter att ha tillhandahållit utmärkt service.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "vCard QR-kod för fastighetsmäklare",
     "seoDesc": "Tappa aldrig en ledning igen. Skapa en digital vCard QR-kod för dina fastighetsvisitkort och öppet hus-broschyrer.",
     "infoGain": "Nätverkstips: Placera din vCard QR-kod på \"Till salu\"-skyltar och flygblad med öppet hus. Potentiella köpare kan omedelbart spara dina kontaktuppgifter, foto och webbplats till sina telefonkontakter med en enda skanning.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "URL QR-kod för evenemangsbiljetter och registrering",
     "seoDesc": "Öka evenemangsdeltagandet genom att länka fysiska flygblad till din digitala biljettsida. Skapa en snabb, gratis URL QR-kod för evenemangsregistrering.",
     "infoGain": "Eventplaneringstips: Spåra ditt flygblads prestanda genom att använda en UTM-taggad URL (t.ex. ?utm_source=flyer&utm_campaign=summer_fest) innan du genererar QR-koden. Detta låter dig se exakt hur många biljettförsäljningar som kom från fysiska skanningar.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "WhatsApp QR-kod för kundsupport",
     "seoDesc": "Ge omedelbar kundservice. Generera en WhatsApp QR-kod som öppnar en direkt chatt med ditt supportteam, komplett med ett förifyllt meddelande.",
     "infoGain": "Supportstrategi: Förfyll WhatsApp-meddelandet med kontextuell text som \"Hej, jag behöver hjälp med min senaste beställning.\" Detta tar bort friktion och gör att kunden känner sig omedelbart bemött.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "PayPal QR-kod för ideella organisationer och donationer",
     "seoDesc": "Gör insamlingen friktionsfri. Generera en PayPal QR-kod för att ta emot omedelbara donationer vid välgörenhetsevenemang, gudstjänster eller samhällssammankomster.",
     "infoGain": "Insamlingstips: Kombinera QR-koden med en tydlig Call to Action (CTA) som \"Skanna för att donera $5\". Att definiera en specifik, liten mängd minskar beslutströttheten och ökar avsevärt konverteringsfrekvensen för donationer.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "E-posta QR-kod för nyhetsbrevsregistreringar",
     "seoDesc": "Utöka din e-postlista från fysiska platser. Generera en QR-kod via e-post som förfyller en prenumerationsförfrågan till din e-postlista.",
     "infoGain": "Growth Hack: Placera den här QR-koden på baksidan av dina visitkort eller vid din kassadisk. Uppmuntra skanningar genom att erbjuda en rabattkod på 10 % i utbyte mot att prenumerera.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "App Store QR-kod för nedladdning av mobilspel",
     "seoDesc": "Få appinstallationer direkt från reklam utanför hemmet. Skapa en QR-kod som länkar direkt till ditt spel på iOS App Store eller Google Play.",
     "infoGain": "Tips för användarförvärv: Om du gör reklam för ett mobilspel på en kongress eller på en skylt, överbryggar en QR-kod från App Store det fysiska-till-digitala gapet och fångar impulsnedladdningar innan användaren glömmer spelets namn.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "YouTube Video QR-kod för produktmanualer",
     "seoDesc": "Ersätt förvirrande pappersmanualer med videohandledningar. Skapa en YouTube QR-kod för att ge omedelbara visuella instruktioner för dina produkter.",
     "infoGain": "Kundtips: Att skriva ut en QR-kod för videoinstruktioner direkt på din produkts förpackning eller maskiner hjälper kunderna att felsöka visuellt, vilket drastiskt kan minska kostsamma kundsupportbiljetter och returer.",

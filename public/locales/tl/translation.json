@@ -1511,6 +1511,114 @@
   "pseo": {
     "insights_badge": "PRO GABAY",
     "insights_title": "Mga Insight ng Eksperto at Pinakamahusay na Kasanayan",
-    "insights_desc": "Mahahalagang diskarte para matiyak na ang iyong digital workflow ay palaging naa-access, na-scan, at up-to-date."
+    "insights_desc": "Mahahalagang diskarte para matiyak na ang iyong digital workflow ay palaging naa-access, na-scan, at up-to-date.",
+    "wificafe": {
+      "badge": "Para sa Mga Cafe at Hotel",
+      "heroTitle": "WiFi QR Code para sa Mga Cafe at Hotel",
+      "heroSubtitle": "Hayaan ang iyong mga bisita na kumonekta kaagad sa iyong WiFi network nang hindi nagta-type ng mga password.Bumuo ng libreng WiFi QR code para sa iyong cafe o hotel.",
+      "featTitle1": "Instant na Koneksyon",
+      "featDesc1": "I-scan lang ng mga bisita ang code at awtomatikong sasali sa network ang kanilang device.Walang nakakadismaya na mga typo ng password.",
+      "featTitle2": "Secure at Pribado",
+      "featDesc2": "Ang iyong password ay hindi kailanman ipinadala sa aming mga server.Direkta at ligtas itong naka-embed sa pattern ng QR code nang lokal.",
+      "featTitle3": "Gumagana sa Lahat ng Mga Device",
+      "featDesc3": "Ang mga modernong iOS at Android na smartphone ay katutubong sumusuporta sa pagkonekta sa mga WiFi network sa pamamagitan ng QR code.",
+      "faqTitle": "Mga Karaniwang Tanong"
+    },
+    "googlereviewlocal": {
+      "badge": "Para sa mga Lokal na Negosyo",
+      "heroTitle": "Google Review QR Code para sa Lokal na Negosyo",
+      "heroSubtitle": "Palakasin ang iyong lokal na SEO sa pamamagitan ng pagkolekta ng 5-star na Google Reviews nang walang kahirap-hirap.Bumuo ng QR code na nagpapadala ng mga customer nang diretso sa iyong pahina ng pagsusuri.",
+      "featTitle1": "Lokal na SEO Boost",
+      "featDesc1": "Higit pang mga 5-star na review na direktang nagpapabuti sa iyong ranggo sa Google Maps at mga resulta ng paghahanap sa Local Pack.",
+      "featTitle2": "Walang Friction na Karanasan",
+      "featDesc2": "Hindi kailangang manual na hanapin ng mga customer ang iyong negosyo.Agad na bubuksan ng QR code ang iyong Google Review modal.",
+      "featTitle3": "I-print Kahit Saan",
+      "featDesc3": "I-export sa high-resolution na vector SVG para mag-print sa mga resibo, table tent, business card, o storefront window.",
+      "faqTitle": "Mga Karaniwang Tanong"
+    },
+    "vcardrealestate": {
+      "badge": "Para sa Real Estate",
+      "heroTitle": "vCard QR Code para sa Mga Ahente ng Real Estate",
+      "heroSubtitle": "Huwag kailanman mawalan ng lead muli.Gumawa ng digital vCard QR code para sa iyong real estate business card at open house brochure.",
+      "featTitle1": "Mga Instant na Contact",
+      "featDesc1": "Ini-scan ng mga kliyente ang iyong code at agad na i-save ang iyong mga detalye sa pakikipag-ugnayan sa kanilang telepono.",
+      "featTitle2": "Offline na Handa",
+      "featDesc2": "Ang iyong impormasyon sa pakikipag-ugnayan ay naka-embed sa QR mismo, walang kinakailangang koneksyon sa internet.",
+      "featTitle3": "Mataas na Conversion",
+      "featDesc3": "Gawin itong walang problema para sa mga bisita sa open-house na makipag-ugnayan sa iyo sa ibang pagkakataon.",
+      "faqTitle": "Mga Karaniwang Tanong"
+    },
+    "urleventtickets": {
+      "badge": "Para sa mga Kaganapan",
+      "heroTitle": "URL QR Code para sa Mga Ticket ng Kaganapan at Pagpaparehistro",
+      "heroSubtitle": "Palakasin ang pagdalo sa kaganapan sa pamamagitan ng pag-link ng mga pisikal na flyer sa iyong digital ticketing page.",
+      "featTitle1": "Palakasin ang Benta",
+      "featDesc1": "Gawing instant online na benta ang mga offline na flyer.",
+      "featTitle2": "Subaybayan ang Attendance",
+      "featDesc2": "Gumamit ng mga tag ng UTM upang subaybayan kung aling mga poster ang bumubuo ng pinakamaraming pag-scan.",
+      "featTitle3": "Walang Limitasyon",
+      "featDesc3": "Walang limitasyong pag-scan, ganap na libre, walang mga petsa ng pag-expire.",
+      "faqTitle": "Mga Karaniwang Tanong"
+    },
+    "whatsappsupport": {
+      "badge": "Para sa mga Kaganapan",
+      "heroTitle": "URL QR Code para sa Mga Ticket ng Kaganapan at Pagpaparehistro",
+      "heroSubtitle": "Palakasin ang pagdalo sa kaganapan sa pamamagitan ng pag-link ng mga pisikal na flyer sa iyong digital ticketing page.",
+      "featTitle1": "Palakasin ang Benta",
+      "featDesc1": "Gawing instant online na benta ang mga offline na flyer.",
+      "featTitle2": "Subaybayan ang Attendance",
+      "featDesc2": "Gumamit ng mga tag ng UTM upang subaybayan kung aling mga poster ang bumubuo ng pinakamaraming pag-scan.",
+      "featTitle3": "Walang Limitasyon",
+      "featDesc3": "Walang limitasyong pag-scan, ganap na libre, walang mga petsa ng pag-expire.",
+      "faqTitle": "Mga Karaniwang Tanong"
+    },
+    "paypaldonation": {
+      "badge": "Para sa mga Kaganapan",
+      "heroTitle": "URL QR Code para sa Mga Ticket ng Kaganapan at Pagpaparehistro",
+      "heroSubtitle": "Palakasin ang pagdalo sa kaganapan sa pamamagitan ng pag-link ng mga pisikal na flyer sa iyong digital ticketing page.",
+      "featTitle1": "Palakasin ang Benta",
+      "featDesc1": "Gawing instant online na benta ang mga offline na flyer.",
+      "featTitle2": "Subaybayan ang Attendance",
+      "featDesc2": "Gumamit ng mga tag ng UTM upang subaybayan kung aling mga poster ang bumubuo ng pinakamaraming pag-scan.",
+      "featTitle3": "Walang Limitasyon",
+      "featDesc3": "Walang limitasyong pag-scan, ganap na libre, walang mga petsa ng pag-expire.",
+      "faqTitle": "Mga Karaniwang Tanong"
+    },
+    "emailsignup": {
+      "badge": "Para sa mga Kaganapan",
+      "heroTitle": "URL QR Code para sa Mga Ticket ng Kaganapan at Pagpaparehistro",
+      "heroSubtitle": "Palakasin ang pagdalo sa kaganapan sa pamamagitan ng pag-link ng mga pisikal na flyer sa iyong digital ticketing page.",
+      "featTitle1": "Palakasin ang Benta",
+      "featDesc1": "Gawing instant online na benta ang mga offline na flyer.",
+      "featTitle2": "Subaybayan ang Attendance",
+      "featDesc2": "Gumamit ng mga tag ng UTM upang subaybayan kung aling mga poster ang bumubuo ng pinakamaraming pag-scan.",
+      "featTitle3": "Walang Limitasyon",
+      "featDesc3": "Walang limitasyong pag-scan, ganap na libre, walang mga petsa ng pag-expire.",
+      "faqTitle": "Mga Karaniwang Tanong"
+    },
+    "appstoregame": {
+      "badge": "Para sa mga Kaganapan",
+      "heroTitle": "URL QR Code para sa Mga Ticket ng Kaganapan at Pagpaparehistro",
+      "heroSubtitle": "Palakasin ang pagdalo sa kaganapan sa pamamagitan ng pag-link ng mga pisikal na flyer sa iyong digital ticketing page.",
+      "featTitle1": "Palakasin ang Benta",
+      "featDesc1": "Gawing instant online na benta ang mga offline na flyer.",
+      "featTitle2": "Subaybayan ang Attendance",
+      "featDesc2": "Gumamit ng mga tag ng UTM upang subaybayan kung aling mga poster ang bumubuo ng pinakamaraming pag-scan.",
+      "featTitle3": "Walang Limitasyon",
+      "featDesc3": "Walang limitasyong pag-scan, ganap na libre, walang mga petsa ng pag-expire.",
+      "faqTitle": "Mga Karaniwang Tanong"
+    },
+    "youtubemanual": {
+      "badge": "Para sa mga Kaganapan",
+      "heroTitle": "URL QR Code para sa Mga Ticket ng Kaganapan at Pagpaparehistro",
+      "heroSubtitle": "Palakasin ang pagdalo sa kaganapan sa pamamagitan ng pag-link ng mga pisikal na flyer sa iyong digital ticketing page.",
+      "featTitle1": "Palakasin ang Benta",
+      "featDesc1": "Gawing instant online na benta ang mga offline na flyer.",
+      "featTitle2": "Subaybayan ang Attendance",
+      "featDesc2": "Gumamit ng mga tag ng UTM upang subaybayan kung aling mga poster ang bumubuo ng pinakamaraming pag-scan.",
+      "featTitle3": "Walang Limitasyon",
+      "featDesc3": "Walang limitasyong pag-scan, ganap na libre, walang mga petsa ng pag-expire.",
+      "faqTitle": "Mga Karaniwang Tanong"
+    }
   }
 }

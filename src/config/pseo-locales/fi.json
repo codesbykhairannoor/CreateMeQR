@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "PDF QR-koodi ravintolamenuille",
     "seoDesc": "Korvaa paperivalikot kontaktittomalla digitaalisella kokemuksella. Luo ilmainen, turvallinen PDF QR-koodi ravintolan ruokalistallesi välittömästi.",
     "infoGain": "Ammattilaisen vinkki ravintoloihin: Käytä korkeaa virheenkorjaustasoa (taso H), kun tulostat QR-koodeja pöytätelttoihin tai lasialustaan. Tämä varmistaa, että QR-koodi pysyy asiakkaiden luettavissa, vaikka se olisi hieman vaurioitunut, kastunut tai likaantunut ruoan roiskumisesta.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "WiFi QR-koodi kahviloita ja hotelleja varten",
     "seoDesc": "Anna vieraidesi muodostaa yhteys WiFi-verkkoosi välittömästi ilman salasanoja. Luo ilmainen WiFi QR-koodi kahvilallesi tai hotellillesi.",
     "infoGain": "Vieraanvaraisuusvinkki: Tulosta WiFi QR-koodisi ja aseta se kauniiseen kehykseen vastaanottotiskillä tai yksittäisille kahvilan pöydille. Vieraat arvostavat kitkatonta kokemusta verkkoon liittymisestä välittömästi kysymättä henkilökunnalta salasanaa.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google Review QR Code paikallisille yrityksille",
     "seoDesc": "Nosta paikallista hakukoneoptimointiasi räjähdysmäisesti tekemällä asiakkaiden 5 tähden luokituksen jättämisestä vaivatonta. Luo ilmainen Google Review QR-koodi.",
     "infoGain": "Markkinointivinkki: Paras aika pyytää arvostelua on asiakastyytyväisyyden huipulla. Lisää tämä QR-koodi kuitteihisi, uloskäyntioviin tai pyydä henkilökuntaa esittämään se tabletilla heti erinomaisen palvelun jälkeen.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "vCard QR-koodi kiinteistönvälittäjille",
     "seoDesc": "Älä koskaan menetä johtoa enää. Luo digitaalinen vCard QR-koodi kiinteistöjen käyntikorteillesi ja avoimien ovien esitteillesi.",
     "infoGain": "Verkkovinkki: Aseta vCard QR-koodi Myytävänä-kyltteihin ja avoimien ovien lehtisiin. Potentiaaliset ostajat voivat tallentaa yhteystietosi, valokuvasi ja verkkosivustosi välittömästi puhelimen yhteystietoihin yhdellä skannauksella.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "URL QR-koodi tapahtumalippuja ja ilmoittautumista varten",
     "seoDesc": "Lisää tapahtumaan osallistumista linkittämällä fyysiset lentolehtiset digitaaliselle lippusivullesi. Luo nopea, ilmainen URL-QR-koodi tapahtuman rekisteröintiä varten.",
     "infoGain": "Tapahtumasuunnitteluvinkki: Seuraa lentolehtesi tehokkuutta käyttämällä UTM-tagattua URL-osoitetta (esim. ?utm_source=flyer&utm_campaign=summer_fest) ennen QR-koodin luomista. Näin näet tarkalleen, kuinka monta lippumyyntiä tuli fyysisistä skannauksista.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "WhatsApp QR-koodi asiakastuelle",
     "seoDesc": "Tarjoa välitöntä asiakaspalvelua. Luo WhatsApp QR-koodi, joka avaa suoran chatin tukitiimisi kanssa ja esitäytetyn viestin.",
     "infoGain": "Tukistrategia: Esitäytä WhatsApp-viesti kontekstuaalisella tekstillä, kuten \"Hei, tarvitsen apua äskettäisessä tilauksessani.\" Tämä poistaa kitkan ja saa asiakkaan tuntemaan olonsa välittömäksi.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "PayPal QR-koodi voittoa tavoitteleville ja lahjoituksille",
     "seoDesc": "Tee varainhankinnasta kitkaton. Luo PayPal QR-koodi hyväksyäksesi välittömiä lahjoituksia hyväntekeväisyystapahtumissa, jumalanpalveluksissa tai yhteisötapaamisissa.",
     "infoGain": "Varainhankintavinkki: Yhdistä QR-koodi selkeään toimintakehotukseen (CTA), kuten \"Scan to Donate $5\". Tietyn, pienen määrän määrittäminen vähentää päätöksentekoväsymystä ja lisää merkittävästi luovutusten muuntoprosentteja.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "Sähköposti QR-koodi uutiskirjeen tilaamista varten",
     "seoDesc": "Kasvata sähköpostilistaasi fyysisistä paikoista. Luo sähköpostin QR-koodi, joka esitäyttää postituslistallesi liittymispyynnön.",
     "infoGain": "Growth Hack: Aseta tämä QR-koodi käyntikorttiesi taakse tai vähittäiskaupan kassalle. Kannusta skannauksia tarjoamalla 10 %:n alennuskoodi vastineeksi tilauksesta.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "App Storen QR-koodi mobiilipelien lataamiseen",
     "seoDesc": "Lisää sovellusasennuksia suoraan kodin ulkopuolelta tulevasta mainonnasta. Luo QR-koodi, joka linkittää suoraan peliisi iOS App Storessa tai Google Playssa.",
     "infoGain": "Käyttäjähankintavinkki: Jos mainostat mobiilipeliä vuosikongressissa tai mainostaululla, App Storen QR-koodi kaataa fyysisen ja digitaalisen kuilun ja vangitsee impulssilataukset ennen kuin käyttäjä unohtaa pelin nimen.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "YouTube-videon QR-koodi tuoteoppaita varten",
     "seoDesc": "Korvaa hämmentävät paperioppaat video-opetusohjelmilla. Luo YouTuben QR-koodi tarjotaksesi välittömiä visuaalisia ohjeita tuotteillesi.",
     "infoGain": "Asiakkaan menestysvinkki: Opetusvideon QR-koodin tulostaminen suoraan tuotteesi pakkaukseen tai koneeseen auttaa asiakkaita visuaalisessa vianmäärityksessä, mikä voi vähentää huomattavasti kalliita asiakastuen lippuja ja palautuksia.",

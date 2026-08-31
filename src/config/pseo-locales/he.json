@@ -2,7 +2,7 @@
   {
     "id": "pdf-restaurant-menu",
     "slug": "pdf-qr-code-for-restaurant-menu",
-    "baseTool": "pdf",
+    "baseTool": "restaurantmenu",
     "h1Title": "PDF QR Code עבור תפריטי מסעדות",
     "seoDesc": "החלף תפריטי נייר בחוויה דיגיטלית ללא מגע. צור קוד QR QR בחינם ומאובטח עבור תפריט המסעדה שלך באופן מיידי.",
     "infoGain": "טיפ מקצועי למסעדות: השתמש ברמת תיקון שגיאות גבוהה (רמה H) בעת הדפסת קודי ה-QR שלך על אוהלי שולחן או תחתיות. זה מבטיח שקוד ה-QR נשאר ניתן לסריקה על ידי הלקוחות גם אם הוא ניזוק קלות, נרטב או מלוכלך משפיכת מזון.",
@@ -25,7 +25,7 @@
   {
     "id": "wifi-cafe-hotel",
     "slug": "wifi-qr-code-for-cafe-hotel",
-    "baseTool": "wifi",
+    "baseTool": "wificafe",
     "h1Title": "קוד QR WiFi לבתי קפה ובתי מלון",
     "seoDesc": "תן לאורחים שלך להתחבר לרשת ה-WiFi שלך באופן מיידי מבלי להקליד סיסמאות. צור קוד QR WiFi בחינם לבית הקפה או למלון שלך.",
     "infoGain": "טיפ לאירוח: הדפס את קוד ה-QR של WiFi והצב אותו במסגרת יפה בדלפק הקבלה או על שולחנות בית קפה בודדים. אורחים מעריכים את החוויה נטולת החיכוכים של הצטרפות מיידית לרשת מבלי לבקש מהצוות את הסיסמה.",
@@ -48,7 +48,7 @@
   {
     "id": "google-review-local-business",
     "slug": "google-review-qr-code-for-local-business",
-    "baseTool": "greview",
+    "baseTool": "googlereviewlocal",
     "h1Title": "Google סקירת QR Code לעסקים מקומיים",
     "seoDesc": "הרקיע שחקים את SEO המקומי שלך על ידי כך שלקוחות יוכלו להשאיר דירוג של 5 כוכבים ללא מאמץ. צור קוד QR בחינם של Google Review.",
     "infoGain": "טיפ שיווקי: הזמן הטוב ביותר לבקש ביקורת הוא בשיא שביעות רצון הלקוחות. הוסף את קוד ה-QR הזה לקבלות שלך, לדלתות היציאה, או בקש מהצוות להציג אותו בטאבלט מיד לאחר מתן שירות מעולה.",
@@ -71,7 +71,7 @@
   {
     "id": "vcard-real-estate",
     "slug": "vcard-qr-code-for-real-estate-agents",
-    "baseTool": "vcard",
+    "baseTool": "vcardrealestate",
     "h1Title": "קוד QR של vCard לסוכני נדל\"ן",
     "seoDesc": "לעולם אל תאבד יתרון שוב. צור קוד QR דיגיטלי vCard עבור כרטיסי הביקור שלך בנדל\"ן וחוברות הבית הפתוח.",
     "infoGain": "טיפ לרשת: הצב את קוד ה-VCard QR שלך על שלטי 'למכירה' ועלוני בית פתוח. קונים פוטנציאליים יכולים לשמור באופן מיידי את פרטי הקשר, התמונה והאתר שלך באנשי הקשר בטלפון שלהם בסריקה אחת.",
@@ -94,7 +94,7 @@
   {
     "id": "url-event-tickets",
     "slug": "url-qr-code-for-event-tickets-registration",
-    "baseTool": "url",
+    "baseTool": "urleventtickets",
     "h1Title": "קוד QR QR עבור כרטיסים ורישום לאירועים",
     "seoDesc": "שפר את הנוכחות באירועים על ידי קישור פליירים פיזיים לעמוד הכרטיסים הדיגיטליים שלך. צור קוד QR QR מהיר וחינמי של כתובת אתר להרשמה לאירוע.",
     "infoGain": "טיפ לתכנון אירועים: עקוב אחר ביצועי העלון שלך באמצעות כתובת URL מתויגת UTM (למשל, ?utm_source=flyer&utm_campaign=summer_fest) לפני יצירת קוד ה-QR. זה מאפשר לך לראות בדיוק כמה מכירת כרטיסים הגיעה מסריקות פיזיות.",
@@ -117,7 +117,7 @@
   {
     "id": "whatsapp-customer-support",
     "slug": "whatsapp-qr-code-for-customer-support",
-    "baseTool": "whatsapp",
+    "baseTool": "whatsappsupport",
     "h1Title": "קוד QR של WhatsApp לתמיכת לקוחות",
     "seoDesc": "לספק שירות לקוחות מיידי. צור קוד QR של WhatsApp שפותח צ'אט ישיר עם צוות התמיכה שלך, עם הודעה מלאה מראש.",
     "infoGain": "אסטרטגיית תמיכה: מלאו מראש את הודעת WhatsApp בטקסט קונטקסטואלי כמו 'שלום, אני צריך עזרה בהזמנה האחרונה שלי'. זה מסיר חיכוכים וגורם ללקוח להרגיש מטופל מיידית.",
@@ -140,7 +140,7 @@
   {
     "id": "payment-paypal-donation",
     "slug": "paypal-qr-code-for-donations",
-    "baseTool": "paypal",
+    "baseTool": "paypaldonation",
     "h1Title": "קוד QR של PayPal עבור מלכ\"רים ותרומות",
     "seoDesc": "הפוך את גיוס הכספים ללא חיכוך. צור קוד QR של PayPal כדי לקבל תרומות מיידיות באירועי צדקה, שירותי כנסייה או התכנסויות קהילתיות.",
     "infoGain": "טיפ לגיוס כספים: שלב את קוד ה-QR עם קריאה לפעולה ברורה (CTA) כמו 'סרוק כדי לתרום $5'. הגדרת כמות מסוימת וקטן מפחיתה את עייפות ההחלטות ומגדילה משמעותית את שיעורי ההמרה לתרומות.",
@@ -163,7 +163,7 @@
   {
     "id": "email-newsletter-signup",
     "slug": "email-qr-code-for-newsletter-signup",
-    "baseTool": "email",
+    "baseTool": "emailsignup",
     "h1Title": "דוא\"ל QR Code עבור הרשמות לניוזלטר",
     "seoDesc": "הגדל את רשימת הדוא\"ל שלך ממיקומים פיזיים. צור קוד QR באימייל שממלא מראש בקשת מנוי לרשימת התפוצה שלך.",
     "infoGain": "פריצת צמיחה: הצב את קוד ה-QR הזה בגב כרטיסי הביקור שלך או בדלפק התשלום הקמעונאי שלך. תמריץ סריקות על ידי הצעת קוד הנחה של 10% בתמורה למנוי.",
@@ -186,7 +186,7 @@
   {
     "id": "appstore-game-download",
     "slug": "app-store-qr-code-for-game-downloads",
-    "baseTool": "appstore",
+    "baseTool": "appstoregame",
     "h1Title": "קוד QR של App Store להורדות משחקים לנייד",
     "seoDesc": "עודד התקנות אפליקציה ישירות מפרסום חוץ-ביתי. צור קוד QR שמקשר ישירות למשחק שלך ב-iOS App Store או ב-Google Play.",
     "infoGain": "טיפ לרכישת משתמשים: אם אתה מפרסם משחק נייד בכנס או על שלט חוצות, קוד QR של App Store מגשר על הפער הפיזי לדיגיטלי, לוכד הורדות דחף לפני שהמשתמש שוכח את שם המשחק.",
@@ -209,7 +209,7 @@
   {
     "id": "youtube-product-manual",
     "slug": "youtube-qr-code-for-product-manuals",
-    "baseTool": "youtube",
+    "baseTool": "youtubemanual",
     "h1Title": "קוד QR של סרטון YouTube עבור מדריכים למוצר",
     "seoDesc": "החלף את מדריכי הנייר המבלבלים במדריכי וידאו. צור קוד QR של YouTube כדי לספק הוראות חזותיות מיידיות למוצרים שלך.",
     "infoGain": "טיפ להצלחת הלקוח: הדפסת קוד QR של סרטון הדרכה ישירות על האריזה או המכונות של המוצר שלך מסייעת ללקוחות לפתור בעיות ויזואלית, מה שיכול להפחית באופן דרסטי את הכרטיסים וההחזרות היקרים של תמיכת לקוחות.",
