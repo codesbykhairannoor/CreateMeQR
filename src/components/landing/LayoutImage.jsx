@@ -137,9 +137,9 @@ function LayoutImage({ qrType = 'image' }) {
       <div className="hq-img-wrapper">
         <div className="hq-img-hero">
           <Camera size={48} color="var(--hq-text-muted)" style={{ margin: '0 auto 24px auto' }} />
-          <h1 style={{ fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: 800, marginBottom: 24, letterSpacing: '-0.04em' }}>
+          <h2 style={{ fontSize: 'clamp(40px, 6vw, 72px)', fontWeight: 800, marginBottom: 24, letterSpacing: '-0.04em' }}>
             {t('landing.heroTitle', { type: t(`types.${qrType}`) })}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 24px)', color: 'var(--hq-text-muted)', maxWidth: 600, margin: '0 auto' }}>
             {t('landing.heroSubtitle')}
           </p>

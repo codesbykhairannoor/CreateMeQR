@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import { ShieldCheck, Lock, Cpu, EyeOff, GlobeLock, CheckCircle2 } from 'lucide-react';
 
 export default function Security() {
@@ -8,11 +7,7 @@ export default function Security() {
 
   return (
     <>
-      <Helmet>
-        <title>{`${t('appTitle', 'CreateMy-QR')} | ${t('static.security.seoTitle', 'Security Architecture')}`}</title>
-      </Helmet>
-      
-      <main className="w-full flex-1 bg-[#040814] text-white overflow-hidden">
+<main className="w-full flex-1 bg-[#040814] text-white overflow-hidden">
         
         {/* Section 1: Hero */}
         <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden bg-slate-950 border-b border-[#1e2d4a]">

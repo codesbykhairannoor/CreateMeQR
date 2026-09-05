@@ -127,9 +127,9 @@ function LayoutGoogleForms({ qrType = 'gforms' }) {
           <div className="hq-gf-icon-box">
             <ClipboardList size={48} />
           </div>
-          <h1 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 500, marginBottom: 16 }}>
+          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 500, marginBottom: 16 }}>
             {t('landing.heroTitle', { type: t(`types.${qrType}`) })}
-          </h1>
+          </h2>
           <p style={{ fontSize: 18, color: 'var(--hq-text-muted)' }}>
             {t('landing.heroSubtitle')}
           </p>

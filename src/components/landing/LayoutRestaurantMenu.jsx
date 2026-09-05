@@ -135,9 +135,9 @@ function LayoutRestaurantMenu({ qrType = 'restaurantmenu', pseoUseCase = null })
           <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--hq-accent-glow)', borderRadius: 100, color: 'var(--hq-accent)', fontWeight: 700, fontSize: '14px', marginBottom: 24, alignItems: 'center', gap: 8 }}>
             <Utensils size={16} /> {getTranslation('badge', '', '') || 'For Restaurants & Cafes'}
           </div>
-          <h1 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
+          <h2 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
             {getUcText('h1Title') || getTranslation('hero', 'Title', '') || 'QR Code Generator for Restaurant Menu PDF'}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 20px)', color: 'var(--hq-text-muted)', lineHeight: 1.6, marginBottom: 32 }}>
             {getUcText('seoDesc') || getTranslation('hero', 'Subtitle', '') || 'Create a contactless digital menu for your restaurant instantly. Upload your PDF and generate an editable QR code that never expires.'}
           </p>

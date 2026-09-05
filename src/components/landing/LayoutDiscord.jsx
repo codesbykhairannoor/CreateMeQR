@@ -137,7 +137,7 @@ function LayoutDiscord({ qrType = 'discord' }) {
           
           <div className="hq-dc-content">
             <div className="hq-dc-hero-icon"><Hash size={40} color="white" /></div>
-            <h1>Welcome to #welcome!</h1>
+            <h2>Welcome to #welcome!</h2>
             <p style={{ fontSize: 16, color: 'var(--hq-text-muted)', lineHeight: 1.5, maxWidth: 600 }}>
               This is the start of the #welcome channel. {t.heroSubtitle} Generate invites for your server effortlessly.
             </p>

@@ -150,9 +150,9 @@ function LayoutAudio({ qrType = 'audio' }) {
         <div className="hq-aud-hero">
           <div>
             <Headphones size={48} color="var(--hq-accent)" style={{ marginBottom: 24 }} />
-            <h1 style={{ fontSize: 'clamp(40px, 5vw, 64px)', fontWeight: 800, marginBottom: 24, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+            <h2 style={{ fontSize: 'clamp(40px, 5vw, 64px)', fontWeight: 800, marginBottom: 24, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
               {t('landing.heroTitle', { type: t(`types.${qrType}`) })}
-            </h1>
+            </h2>
             <p style={{ fontSize: 'clamp(18px, 2.5vw, 24px)', color: 'var(--hq-text-muted)' }}>
               {t('landing.heroSubtitle')}
             </p>

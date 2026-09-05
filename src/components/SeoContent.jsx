@@ -19,9 +19,9 @@ export default function SeoContent() {
             
             <div className="pt-4 animate-fade-in-up">
               <header className="mb-8 border-b border-zinc-200 dark:border-zinc-800 pb-6">
-                <h1 itemProp="headline" className="text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-3">
+                <h2 itemProp="headline" className="text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50 mb-3">
                   {t('geoOptimized.h1', 'Free Custom QR Code Generator Online')}
-            </h1>
+            </h2>
             <div className="flex items-center gap-4 text-xs text-zinc-500 dark:text-zinc-400">
               <span>By <strong itemProp="author">{t('geoOptimized.author', 'CreateMy-QR Team')}</strong></span>
               <span>•</span>

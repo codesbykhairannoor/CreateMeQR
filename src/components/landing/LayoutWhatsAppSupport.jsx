@@ -28,9 +28,9 @@ function LayoutWhatsAppSupport({ qrType = 'whatsappsupport', pseoUseCase = null 
       <div className="hq-wa-hero">
         <div>
           <div className="hq-wa-badge"><MessageCircle size={16} /> {getTranslation('badge', '', '') || 'For Support Teams'}</div>
-          <h1 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
+          <h2 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
             {getUcText('h1Title') || getTranslation('hero', 'Title', '') || 'WhatsApp QR Code for Customer Support'}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 20px)', color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>
             {getUcText('seoDesc') || getTranslation('hero', 'Subtitle', '') || 'Generate a WhatsApp QR code that opens a direct chat with your support team.'}
           </p>

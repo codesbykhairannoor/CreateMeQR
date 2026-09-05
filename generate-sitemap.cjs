@@ -21,84 +21,49 @@ async function run() {
   const langs = Object.keys(localizedRoutes);
   const toolIds = Object.keys(localizedRoutes['en']);
 
-  console.log(`Found ${langs.length} languages and ${toolIds.length} tools. Generating sitemap...`);
+  console.log(`Found ${langs.length} languages and ${toolIds.length} tools/static routes. Generating sitemap...`);
 
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
 
-  // Static routes with their priority levels
-  const staticRoutes = [
-    { path: '/about', priority: '0.6' },
-    { path: '/compare', priority: '0.7' },
-    { path: '/security', priority: '0.7' },
-    { path: '/languages', priority: '0.6' },
-    { path: '/pricing', priority: '0.7' },
-    { path: '/privacy', priority: '0.5' },
-    { path: '/terms', priority: '0.5' },
-    { path: '/usecases', priority: '0.7' },
-    { path: '/barcode-generator', priority: '0.8' },
-    { path: '/scan-qr', priority: '0.8' },
-    { path: '/scan-barcode', priority: '0.8' }
-  ];
-  
-  // 1. Generate URLs for all Tools across all Languages
+  let totalUrlCount = 0;
+
+  // 1. Generate URLs for all Tools & Static Pages across all 30 Languages
   for (const toolId of toolIds) {
     for (const lang of langs) {
-      const slug = localizedRoutes[lang][toolId] || '/';
+      const slug = localizedRoutes[lang]?.[toolId] || '/';
       const langPrefix = lang === 'en' ? '' : '/' + lang;
       const url = DOMAIN + langPrefix + (slug === '/' ? '' : slug);
       
+      const isHome = toolId === 'home' || (toolId === 'url' && slug === '/');
+      const priority = isHome ? '1.0' : (['about', 'privacy', 'terms'].includes(toolId) ? '0.6' : '0.8');
+      const changefreq = isHome ? 'daily' : 'weekly';
+
       xml += '  <url>\n';
-      xml += '    <loc>' + url + '</loc>\n';
-      xml += '    <lastmod>' + new Date().toISOString().split('T')[0] + '</lastmod>\n';
-      xml += '    <changefreq>weekly</changefreq>\n';
-      xml += '    <priority>' + (toolId === 'url' ? '1.0' : '0.8') + '</priority>\n';
+      xml += `    <loc>${url}</loc>\n`;
+      xml += `    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>\n`;
+      xml += `    <changefreq>${changefreq}</changefreq>\n`;
+      xml += `    <priority>${priority}</priority>\n`;
       
-      // Hreflang tags
+      // Hreflang alternate tags
       for (const altLang of langs) {
-        const altSlug = localizedRoutes[altLang][toolId] || '/';
+        const altSlug = localizedRoutes[altLang]?.[toolId] || '/';
         const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
         const altUrl = DOMAIN + altLangPrefix + (altSlug === '/' ? '' : altSlug);
-        xml += '    <xhtml:link rel="alternate" hreflang="' + altLang + '" href="' + altUrl + '" />\n';
+        xml += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${altUrl}" />\n`;
       }
       
-      // x-default
-      const defaultSlug = localizedRoutes['en'][toolId] || '/';
+      // x-default tag
+      const defaultSlug = localizedRoutes['en']?.[toolId] || '/';
       const defaultUrl = DOMAIN + (defaultSlug === '/' ? '' : defaultSlug);
-      xml += '    <xhtml:link rel="alternate" hreflang="x-default" href="' + defaultUrl + '" />\n';
+      xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${defaultUrl}" />\n`;
       
       xml += '  </url>\n';
+      totalUrlCount++;
     }
   }
 
-  // 2. Generate URLs for Static Routes
-  for (const routeObj of staticRoutes) {
-    const route = routeObj.path;
-    const priority = routeObj.priority;
-    for (const lang of langs) {
-      const langPrefix = lang === 'en' ? '' : '/' + lang;
-      const url = DOMAIN + langPrefix + route;
-      
-      xml += '  <url>\n';
-      xml += '    <loc>' + url + '</loc>\n';
-      xml += '    <lastmod>' + new Date().toISOString().split('T')[0] + '</lastmod>\n';
-      xml += '    <changefreq>monthly</changefreq>\n';
-      xml += '    <priority>' + priority + '</priority>\n';
-      
-      for (const altLang of langs) {
-        const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
-        const altUrl = DOMAIN + altLangPrefix + route;
-        xml += '    <xhtml:link rel="alternate" hreflang="' + altLang + '" href="' + altUrl + '" />\n';
-      }
-      
-      const defaultUrl = DOMAIN + route;
-      xml += '    <xhtml:link rel="alternate" hreflang="x-default" href="' + defaultUrl + '" />\n';
-      
-      xml += '  </url>\n';
-    }
-  }
-
-  // 3. Generate URLs for pSEO Industry Use Cases across all Languages
+  // 2. Generate URLs for pSEO Industry Use Cases across all 30 Languages
   const pseoIds = pseoDataByLang['en'] ? pseoDataByLang['en'].map(uc => uc.id) : [];
   for (const pId of pseoIds) {
     for (const lang of langs) {
@@ -107,14 +72,13 @@ async function run() {
       if (!uc) continue;
       
       const langPrefix = lang === 'en' ? '' : '/' + lang;
-      // Use translatedSlug if available, fallback to English slug
       const ucUrlSlug = uc.translatedSlug || uc.slug;
       const safeSlug = ucUrlSlug.startsWith('/') ? ucUrlSlug : '/' + ucUrlSlug;
       const url = DOMAIN + langPrefix + safeSlug;
       
       xml += '  <url>\n';
-      xml += '    <loc>' + url + '</loc>\n';
-      xml += '    <lastmod>' + new Date().toISOString().split('T')[0] + '</lastmod>\n';
+      xml += `    <loc>${url}</loc>\n`;
+      xml += `    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>\n`;
       xml += '    <changefreq>weekly</changefreq>\n';
       xml += '    <priority>0.9</priority>\n';
       
@@ -126,7 +90,7 @@ async function run() {
           const altUrlSlug = altUc.translatedSlug || altUc.slug;
           const safeAltSlug = altUrlSlug.startsWith('/') ? altUrlSlug : '/' + altUrlSlug;
           const altUrl = DOMAIN + altLangPrefix + safeAltSlug;
-          xml += '    <xhtml:link rel="alternate" hreflang="' + altLang + '" href="' + altUrl + '" />\n';
+          xml += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${altUrl}" />\n`;
         }
       }
       
@@ -135,17 +99,25 @@ async function run() {
         const defaultUrlSlug = defaultUc.translatedSlug || defaultUc.slug;
         const safeDefaultSlug = defaultUrlSlug.startsWith('/') ? defaultUrlSlug : '/' + defaultUrlSlug;
         const defaultUrl = DOMAIN + safeDefaultSlug;
-        xml += '    <xhtml:link rel="alternate" hreflang="x-default" href="' + defaultUrl + '" />\n';
+        xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${defaultUrl}" />\n`;
       }
       
       xml += '  </url>\n';
+      totalUrlCount++;
     }
   }
 
   xml += '</urlset>';
 
-  fs.writeFileSync(path.join(__dirname, 'public', 'sitemap.xml'), xml);
-  console.log("✅ Successfully generated public/sitemap.xml");
+  const publicSitemapPath = path.join(__dirname, 'public', 'sitemap.xml');
+  fs.writeFileSync(publicSitemapPath, xml);
+  
+  const distSitemapPath = path.join(__dirname, 'dist', 'sitemap.xml');
+  if (fs.existsSync(path.join(__dirname, 'dist'))) {
+    fs.writeFileSync(distSitemapPath, xml);
+  }
+
+  console.log(`✅ Successfully generated sitemap.xml with ${totalUrlCount} URLs.`);
 }
 
 run();

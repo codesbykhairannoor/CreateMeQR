@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import { Briefcase, Scale, GraduationCap, Building2, Users, Lightbulb, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -10,11 +9,7 @@ export default function UseCases() {
 
   return (
     <>
-      <Helmet>
-        <title>{`${t('appTitle', 'CreateMy-QR')} | ${t('static.usecases.seoTitle', 'Use Cases')}`}</title>
-      </Helmet>
-      
-      <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
+<main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero */}
         <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">

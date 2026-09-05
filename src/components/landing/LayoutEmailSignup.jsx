@@ -33,9 +33,9 @@ function LayoutEmailSignup({ qrType = 'emailsignup', pseoUseCase = null }) {
       <div className="hq-email-hero">
         <div>
           <div className="hq-email-badge"><Mail size={16} /> {getTranslation('badge', '', '') || 'For Marketing'}</div>
-          <h1 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
+          <h2 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
             {getUcText('h1Title') || getTranslation('hero', 'Title', '') || 'Email QR Code for Newsletter Signups'}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 20px)', color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>
             {getUcText('seoDesc') || getTranslation('hero', 'Subtitle', '') || 'Grow your email list from physical locations. Generate an Email QR code that pre-fills a subscription request.'}
           </p>

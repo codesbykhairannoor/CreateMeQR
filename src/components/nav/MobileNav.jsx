@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown, QrCode, ScanLine, Scan, Building2, ChevronUp, Moon, Sun, Clock, Link, Wifi } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Link as RouterLink } from 'react-router-dom';
 import { localizedRoutes } from '../../config/localizedRoutes';
 import { QR_MENU_COLUMNS } from './MegaNav';
 
-export default function MobileNav({ currentLangCode, onClose, onOpenHistory, darkMode, setDarkMode }) {
+export default function MobileNav({ currentLangCode, onClose }) {
   const { t } = useTranslation();
   const [openSection, setOpenSection] = useState(null);
-
-  const toggleSection = (section) => {
-    setOpenSection(openSection === section ? null : section);
-  };
 
   return (
     <div className="lg:hidden flex flex-col p-3 bg-zinc-50 dark:bg-[#030914] border-b border-zinc-200 dark:border-zinc-800 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)]">

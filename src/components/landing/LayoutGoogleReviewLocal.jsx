@@ -124,9 +124,9 @@ function LayoutGoogleReviewLocal({ qrType = 'googlereviewlocal', pseoUseCase = n
           <div className="hq-review-badge">
             <Star size={16} className="hq-star" style={{ color: '#000', fill: '#000' }} /> {getTranslation('badge', '', '') || 'For Local Businesses'}
           </div>
-          <h1 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
+          <h2 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
             {getUcText('h1Title') || getTranslation('hero', 'Title', '') || 'Google Review QR Code for Local Business'}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 20px)', color: 'var(--hq-text-muted)', lineHeight: 1.6, marginBottom: 32 }}>
             {getUcText('seoDesc') || getTranslation('hero', 'Subtitle', '') || 'Boost your local SEO by collecting 5-star Google Reviews effortlessly. Generate a QR code that sends customers straight to your review page.'}
           </p>

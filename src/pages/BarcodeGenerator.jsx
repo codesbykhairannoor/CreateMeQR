@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect, useDeferredValue } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import Barcode from 'react-barcode';
 import { Download, Share2, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen, Clock, Check } from 'lucide-react';
 import { get, set } from 'idb-keyval';
@@ -204,12 +203,7 @@ export default function BarcodeGenerator() {
 
   return (
     <div className="font-sans overflow-hidden bg-slate-50 dark:bg-[#020617] min-h-screen pb-32 transition-colors duration-300">
-      <Helmet>
-        <title>{t("barcode.seo.title", "Free Barcode Generator Online - Create 1D Barcodes")}</title>
-        <meta name="description" content={t("barcode.seo.desc", "Generate high-quality 1D Barcodes like CODE128, EAN, UPC, and more instantly for free. Download in PNG.")} />
-      </Helmet>
-
-      {/* Hero Header */}
+{/* Hero Header */}
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 dark:from-blue-900/10 via-slate-50 dark:via-[#020617] to-slate-50 dark:to-[#020617] transition-colors duration-300"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">

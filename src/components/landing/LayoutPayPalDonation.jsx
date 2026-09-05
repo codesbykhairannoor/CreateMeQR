@@ -28,9 +28,9 @@ function LayoutPayPalDonation({ qrType = 'paypaldonation', pseoUseCase = null })
       <div className="hq-pp-hero">
         <div>
           <div className="hq-pp-badge"><Heart size={16} /> {getTranslation('badge', '', '') || 'For Charities'}</div>
-          <h1 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
+          <h2 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
             {getUcText('h1Title') || getTranslation('hero', 'Title', '') || 'PayPal QR Code for Non-Profits & Donations'}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 20px)', color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>
             {getUcText('seoDesc') || getTranslation('hero', 'Subtitle', '') || 'Make fundraising frictionless. Generate a PayPal QR code to accept instant donations at charity events.'}
           </p>

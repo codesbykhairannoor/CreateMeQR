@@ -148,9 +148,9 @@ function LayoutPDF({ qrType = 'pdf' }) {
           <div className="hq-pdf-icon-wrap">
             <FileText size={40} />
           </div>
-          <h1 style={{ fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: 800, marginBottom: 24, letterSpacing: '-0.03em' }}>
+          <h2 style={{ fontSize: 'clamp(36px, 5vw, 56px)', fontWeight: 800, marginBottom: 24, letterSpacing: '-0.03em' }}>
             {t('landing.heroTitle', { type: t(`types.${qrType}`) })}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 24px)', color: 'var(--hq-text-muted)', maxWidth: 600, margin: '0 auto' }}>
             {t('landing.heroSubtitle')}
           </p>

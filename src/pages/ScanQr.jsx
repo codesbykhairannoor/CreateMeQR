@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import { Html5Qrcode } from 'html5-qrcode';
 import { Scan, ScanLine, Upload, Copy, ExternalLink, RefreshCw, AlertCircle, Camera, Smartphone, Globe, ShieldCheck, Zap, Lock } from 'lucide-react';
 
@@ -91,12 +90,7 @@ export default function ScanQr() {
 
   return (
     <div className="font-sans overflow-hidden bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white min-h-screen pb-32 transition-colors duration-300">
-      <Helmet>
-        <title>{t("scanqr.seo.title", "Free QR Code Scanner Online - Scan QR Instantly")}</title>
-        <meta name="description" content={t("scanqr.seo.desc", "Scan QR codes instantly using your camera or by uploading an image. 100% secure, private, and client-side processing.")} />
-      </Helmet>
-
-      {/* Hero Header */}
+{/* Hero Header */}
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 border-b border-slate-200 dark:border-blue-900/30 transition-colors duration-300">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 dark:from-blue-900/30 via-slate-50 dark:via-[#040814] to-slate-50 dark:to-[#040814] transition-colors duration-300"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">

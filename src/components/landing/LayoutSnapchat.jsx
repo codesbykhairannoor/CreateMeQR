@@ -50,7 +50,7 @@ function LayoutSnapchat({ qrType = 'snapchat' }) {
         .hq-sc-ghost-bg { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0.03; z-index: 1; pointer-events: none; }
         .hq-sc-content { position: relative; z-index: 2; }
         
-        .hq-sc-hero h1 { font-size: clamp(48px, 8vw, 80px); font-weight: 900; margin-bottom: 24px; letter-spacing: -0.05em; line-height: 1; color: var(--hq-accent); }
+        .hq-sc-hero h2 { font-size: clamp(48px, 8vw, 80px); font-weight: 900; margin-bottom: 24px; letter-spacing: -0.05em; line-height: 1; color: var(--hq-accent); }
         .hq-sc-hero p { font-size: clamp(18px, 3vw, 24px); max-width: 600px; margin: 0 auto 40px auto; color: rgba(255,255,255,0.9); }
         
         .hq-sc-camera-btn { display: inline-flex; align-items: center; justify-content: center; width: 80px; height: 80px; border-radius: 50%; border: 4px solid var(--hq-accent); background: transparent; cursor: pointer; transition: transform 0.2s; }
@@ -93,7 +93,7 @@ function LayoutSnapchat({ qrType = 'snapchat' }) {
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'var(--hq-card)', padding: '8px 16px', borderRadius: 100, marginBottom: 24, fontSize: 14, fontWeight: 700, border: '1px solid var(--hq-border)' }}>
             <Ghost size={16} color="var(--hq-accent)" /> @createmyqr
           </div>
-          <h1>{t.heroTitle}</h1>
+          <h2>{t.heroTitle}</h2>
           <p>{t.heroSubtitle}</p>
           <div className="hq-sc-camera-btn">
             <div className="hq-sc-camera-btn-inner"></div>

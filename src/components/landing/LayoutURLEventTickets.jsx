@@ -29,9 +29,9 @@ function LayoutURLEventTickets({ qrType = 'urleventtickets', pseoUseCase = null 
       <div className="hq-evt-hero">
         <div>
           <div className="hq-evt-badge"><Ticket size={16} /> {getTranslation('badge', '', '') || 'For Events'}</div>
-          <h1 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
+          <h2 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
             {getUcText('h1Title') || getTranslation('hero', 'Title', '') || 'URL QR Code for Event Tickets & Registration'}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 20px)', color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>
             {getUcText('seoDesc') || getTranslation('hero', 'Subtitle', '') || 'Boost event attendance by linking physical flyers to your digital ticketing page.'}
           </p>

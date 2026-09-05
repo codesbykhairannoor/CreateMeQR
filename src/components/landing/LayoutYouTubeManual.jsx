@@ -29,9 +29,9 @@ function LayoutYouTubeManual({ qrType = 'youtubemanual', pseoUseCase = null }) {
       <div className="hq-yt-hero">
         <div>
           <div className="hq-yt-badge"><Video size={16} /> {getTranslation('badge', '', '') || 'For Products'}</div>
-          <h1 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
+          <h2 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
             {getUcText('h1Title') || getTranslation('hero', 'Title', '') || 'YouTube Video QR Code for Product Manuals'}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 20px)', color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>
             {getUcText('seoDesc') || getTranslation('hero', 'Subtitle', '') || 'Replace confusing paper manuals with video tutorials.'}
           </p>

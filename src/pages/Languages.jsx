@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import { Globe, Globe2, Languages as LanguagesIcon, MapPin, CheckCircle2, ArrowRight } from 'lucide-react';
 import { LANGS as SUPPORTED_LANGUAGES } from '../config/site';
 import { Link } from 'react-router-dom';
@@ -11,11 +10,7 @@ export default function Languages() {
 
   return (
     <>
-      <Helmet>
-        <title>{`${t('appTitle', 'CreateMy-QR')} | ${t('static.languages.seoTitle', 'Supported Languages')}`}</title>
-      </Helmet>
-      
-      <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
+<main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero */}
         <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">

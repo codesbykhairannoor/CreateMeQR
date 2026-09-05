@@ -141,9 +141,9 @@ function LayoutFile({ qrType = 'file' }) {
           <div className="hq-file-icon">
             <FileUp size={40} />
           </div>
-          <h1 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, marginBottom: 16 }}>
+          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, marginBottom: 16 }}>
             {t('landing.heroTitle', { type: t(`types.${qrType}`) })}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(16px, 2vw, 20px)', color: 'var(--hq-text-muted)', maxWidth: 600, margin: '0 auto' }}>
             {t('landing.heroSubtitle')}
           </p>

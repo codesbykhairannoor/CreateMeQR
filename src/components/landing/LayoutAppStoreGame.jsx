@@ -31,9 +31,9 @@ function LayoutAppStoreGame({ qrType = 'appstoregame', pseoUseCase = null }) {
       <div className="hq-app-hero">
         <div>
           <div className="hq-app-badge"><Smartphone size={16} /> {getTranslation('badge', '', '') || 'For Game Devs'}</div>
-          <h1 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
+          <h2 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(40px, 6vw, 64px)', lineHeight: 1.1, marginBottom: 24 }}>
             {getUcText('h1Title') || getTranslation('hero', 'Title', '') || 'App Store QR Code for Mobile Games'}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 20px)', color: 'var(--hq-text-muted)', lineHeight: 1.6 }}>
             {getUcText('seoDesc') || getTranslation('hero', 'Subtitle', '') || 'Drive app installs directly from out-of-home advertising. Link straight to the App Store.'}
           </p>

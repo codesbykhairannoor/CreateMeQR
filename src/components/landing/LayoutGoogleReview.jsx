@@ -135,9 +135,9 @@ function LayoutGoogleReview({ qrType = 'greview' }) {
               <Star key={i} size={48} className="hq-gr-star" style={{ animationDelay: `${i * 0.1}s` }} />
             ))}
           </div>
-          <h1 style={{ fontSize: 'clamp(36px, 5vw, 64px)', fontWeight: 800, marginBottom: 24, letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontSize: 'clamp(36px, 5vw, 64px)', fontWeight: 800, marginBottom: 24, letterSpacing: '-0.02em' }}>
             {t('landing.heroTitle', { type: t(`types.${qrType}`) })}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 24px)', color: 'var(--hq-text-muted)', maxWidth: 600, margin: '0 auto' }}>
             {t('landing.heroSubtitle')}
           </p>

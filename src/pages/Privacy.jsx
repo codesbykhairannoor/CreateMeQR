@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import { ShieldAlert, Lock, Database, EyeOff, Cpu } from 'lucide-react';
 
 export default function Privacy() {
@@ -8,11 +7,7 @@ export default function Privacy() {
 
   return (
     <>
-      <Helmet>
-        <title>{`${t('appTitle', 'CreateMy-QR')} | ${t('static.privacy.seoTitle', 'Privacy Policy')}`}</title>
-      </Helmet>
-      
-      <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
+<main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero Vault */}
         <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">

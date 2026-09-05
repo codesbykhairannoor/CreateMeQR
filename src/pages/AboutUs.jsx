@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
 import { Users, Globe2, ShieldCheck, Zap, ArrowRight, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -10,10 +9,7 @@ export default function AboutUs() {
 
   return (
     <>
-      <Helmet>
-        <title>{`${t('appTitle', 'CreateMy-QR')} | ${t('static.about.seoTitle', 'About Us')}`}</title>
-      </Helmet>
-      <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
+<main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero */}
         <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">

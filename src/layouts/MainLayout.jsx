@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate, Link as RouterLink } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { Globe, Moon, Sun, X, Menu, Clock, Heart } from 'lucide-react';
 import { LANGS } from '../config/site';
 import { localizedRoutes, routeToToolMap } from '../config/localizedRoutes';
@@ -110,11 +109,7 @@ export default function MainLayout({ children }) {
 
   return (
     <div className="min-h-screen bg-[#f8fafc] dark:bg-[#040a18] font-sans selection:bg-blue-600/30 flex flex-col">
-      <Helmet>
-        <html lang={currentLangCode} dir={currentLangCode === 'ar' ? 'rtl' : 'ltr'} />
-      </Helmet>
-
-      {/* Super GEO Soft Banner */}
+{/* Super GEO Soft Banner */}
       {softBannerLang && (
         <div className="fixed bottom-4 right-4 left-4 md:left-auto md:w-96 bg-[#040a18]/95 dark:bg-[#081226]/95 text-white p-4 rounded-2xl shadow-2xl border border-zinc-800 dark:border-blue-100 z-50 animate-fade-in-up flex flex-col gap-3 backdrop-blur-xl">
           <div className="flex items-start justify-between gap-2">

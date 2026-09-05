@@ -62,7 +62,7 @@ function LayoutVenmo({ qrType = 'venmo' }) {
         .hq-vn-action { display: flex; align-items: center; gap: 6px; cursor: pointer; }
         
         .hq-vn-hero { text-align: center; margin-bottom: 40px; }
-        .hq-vn-hero h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; margin-bottom: 16px; color: var(--hq-accent); }
+        .hq-vn-hero h2 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; margin-bottom: 16px; color: var(--hq-accent); }
 
         /* DEEP MOBILE FIXES (Phase 5) */
         @media (max-width: 768px) {
@@ -81,7 +81,7 @@ function LayoutVenmo({ qrType = 'venmo' }) {
 
       <div className="hq-container">
         <div className="hq-vn-hero">
-          <h1>{t.heroTitle}</h1>
+          <h2>{t.heroTitle}</h2>
           <p style={{ fontSize: 18, color: 'var(--hq-text-muted)' }}>{t.heroSubtitle}</p>
         </div>
 

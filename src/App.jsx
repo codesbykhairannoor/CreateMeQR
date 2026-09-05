@@ -119,17 +119,98 @@ export default function App() {
         h1Title: `${t('home.heroTitle', 'All QR & Barcode')} ${t('home.heroTitleHighlight', 'Tools in One Place')}`,
         description: t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO-compliant, 30 languages.'),
       }
+    : isAbout
+    ? {
+        title: `${t('static.about.seoTitle', 'About Us')} | CreateMy-QR`,
+        h1Title: t('static.about.heroTitle', 'About Us'),
+        description: t('static.about.seoDesc', 'Democratizing document and QR tools with 100% client-side security and privacy.'),
+      }
+    : isCompare
+    ? {
+        title: `${t('static.compare.seoTitle', 'Compare Tools')} | CreateMy-QR`,
+        h1Title: t('static.compare.heroTitle', 'CreateMy-QR vs The Rest'),
+        description: t('static.compare.seoDesc', 'Discover why professionals choose CreateMy-QR for private, client-side generation without API limits.'),
+      }
+    : isLanguages
+    ? {
+        title: `${t('static.languages.seoTitle', 'Supported Languages')} | CreateMy-QR`,
+        h1Title: t('static.languages.heroTitle', '30 Supported Languages'),
+        description: t('static.languages.seoDesc', 'Create and scan QR codes and barcodes in 30 languages worldwide with instant client-side generation.'),
+      }
+    : isPricing
+    ? {
+        title: `${t('static.pricing.seoTitle', '100% Free Pricing')} | CreateMy-QR`,
+        h1Title: t('static.pricing.heroTitle', '100% Free Forever'),
+        description: t('static.pricing.seoDesc', 'CreateMy-QR is 100% free with unlimited scans, high-resolution vector downloads, and zero limits.'),
+      }
+    : isPrivacy
+    ? {
+        title: `${t('static.privacy.seoTitle', 'Privacy Policy')} | CreateMy-QR`,
+        h1Title: t('static.privacy.heroTitle', 'Privacy Policy'),
+        description: t('static.privacy.seoDesc', 'Zero-tracking privacy policy. All data processing occurs locally in your browser memory.'),
+      }
+    : isSecurity
+    ? {
+        title: `${t('static.security.seoTitle', 'Security Architecture')} | CreateMy-QR`,
+        h1Title: t('static.security.heroTitle', 'Security Architecture'),
+        description: t('static.security.seoDesc', 'Explore our zero-trust security model: 100% client-side cryptography, zero cloud transmission, zero data storage.'),
+      }
+    : isTerms
+    ? {
+        title: `${t('static.terms.seoTitle', 'Terms of Service')} | CreateMy-QR`,
+        h1Title: t('static.terms.heroTitle', 'Terms of Service'),
+        description: t('static.terms.seoDesc', 'Terms and conditions for using CreateMy-QR free online generator and scanner tools.'),
+      }
+    : isUseCases
+    ? {
+        title: `${t('static.usecases.seoTitle', 'Industry Use Cases')} | CreateMy-QR`,
+        h1Title: t('static.usecases.heroTitle', 'QR Code Industry Use Cases'),
+        description: t('static.usecases.seoDesc', 'Explore real-world QR code use cases for restaurants, retail, events, payments, and enterprise operations.'),
+      }
+    : isBarcode
+    ? {
+        title: `${t('static.barcode.seoTitle', 'Free Barcode Generator')} | CreateMy-QR`,
+        h1Title: t('static.barcode.heroTitle', 'Free Barcode Generator Online'),
+        description: t('static.barcode.seoDesc', 'Generate linear barcodes (EAN, UPC, Code 128, Code 39) instantly in your browser with high-res download.'),
+      }
+    : isScanQr
+    ? {
+        title: `${t('static.scanqr.seoTitle', 'Scan QR Code Online')} | CreateMy-QR`,
+        h1Title: t('static.scanqr.heroTitle', 'Scan QR Code Online'),
+        description: t('static.scanqr.seoDesc', 'Scan and decode QR codes from webcam or image files securely in your browser with instant client-side decoding.'),
+      }
+    : isScanBarcode
+    ? {
+        title: `${t('static.scanbarcode.seoTitle', 'Scan Barcode Online')} | CreateMy-QR`,
+        h1Title: t('static.scanbarcode.heroTitle', 'Scan Barcode Online'),
+        description: t('static.scanbarcode.seoDesc', 'Scan barcodes from camera or uploaded image files securely in your browser with zero server uploads.'),
+      }
     : effectiveType === 'url'
     ? {
-        title: `${t('appTitle')} | CreateMy-QR`, // Keep main SEO title for the URL tool (homepage fallback)
-        h1Title: t('seoTool.h1', { tool: typeName }),
-        description: t('seoTool.description', { tool: typeName }),
+        title: `${t('appTitle', 'CreateMy-QR')} | Free Custom QR Code Generator`,
+        h1Title: t('seoTool.h1', { tool: typeName, defaultValue: 'Free QR Code Generator' }),
+        description: t('seoTool.description', { tool: typeName, defaultValue: 'Create custom QR codes with logo for free. Best editable QR code generator with no watermark.' }),
       }
     : {
-        title: `${t('seoTool.title', { tool: typeName })} | CreateMy-QR`,
-        h1Title: t('seoTool.h1', { tool: typeName }),
-        description: t('seoTool.description', { tool: typeName }),
+        title: `${t('seoTool.title', { tool: typeName, defaultValue: typeName + ' QR Code Generator' })} | CreateMy-QR`,
+        h1Title: t('seoTool.h1', { tool: typeName, defaultValue: typeName + ' QR Code Generator' }),
+        description: t('seoTool.description', { tool: typeName, defaultValue: 'Create custom ' + typeName + ' QR codes with logo for free. Best editable QR code generator with no watermark.' }),
       };
+
+  const canonicalPath = (() => {
+    if (pseoUseCase) {
+      const allPseo = getAllPseoData();
+      const langCases = allPseo[currentLangCode] || [];
+      const matchingUc = langCases.find(uc => uc.id === pseoUseCase.id);
+      if (matchingUc) {
+        const uSlug = matchingUc.translatedSlug || matchingUc.slug;
+        return uSlug.startsWith('/') ? uSlug : '/' + uSlug;
+      }
+    }
+    return slug === '/' ? '' : slug;
+  })();
+
+  const canonicalUrl = `https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${canonicalPath}`;
 
   return (
     <MainLayout>
@@ -146,26 +227,16 @@ export default function App() {
         <meta property="og:description" content={currentSeo.description} />
         <meta property="og:locale" content={currentLangCode} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${slug === '/' ? '' : slug}`} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content="CreateMy-QR" />
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={currentSeo.title} />
         <meta name="twitter:description" content={currentSeo.description} />
+        <meta name="twitter:url" content={canonicalUrl} />
         
-        <link rel="canonical" href={`https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${(() => {
-          if (pseoUseCase) {
-            const allPseo = getAllPseoData();
-            const langCases = allPseo[currentLangCode] || [];
-            const matchingUc = langCases.find(uc => uc.id === pseoUseCase.id);
-            if (matchingUc) {
-              const uSlug = matchingUc.translatedSlug || matchingUc.slug;
-              return uSlug.startsWith('/') ? uSlug : '/' + uSlug;
-            }
-          }
-          return slug === '/' ? '' : slug;
-        })()}`} />
+        <link rel="canonical" href={canonicalUrl} />
         {/* Standard Tool Hreflang Tags for all 30 languages (only if NOT a pSEO page) */}
         {!pseoUseCase && (
           <>

@@ -135,9 +135,9 @@ function LayoutAmazon({ qrType = 'amazon' }) {
           <div className="hq-amz-icon">
             <ShoppingCart size={40} color="var(--hq-text)" />
           </div>
-          <h1 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, marginBottom: 20 }}>
+          <h2 style={{ fontSize: 'clamp(32px, 5vw, 48px)', fontWeight: 800, marginBottom: 20 }}>
             {t('landing.heroTitle', { type: t(`types.${qrType}`) })}
-          </h1>
+          </h2>
           <p style={{ fontSize: 'clamp(18px, 2.5vw, 20px)', color: 'var(--hq-text-muted)', maxWidth: 600 }}>
             {t('landing.heroSubtitle')}
           </p>

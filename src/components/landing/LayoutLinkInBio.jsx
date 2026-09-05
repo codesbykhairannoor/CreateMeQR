@@ -121,9 +121,9 @@ function LayoutLinkInBio({ qrType = 'linkinbio' }) {
         <div>
           <div className="hq-lib-hero">
             <Link2 size={48} style={{ marginBottom: 24 }} />
-            <h1 style={{ fontSize: 'clamp(40px, 5vw, 64px)', fontWeight: 800, marginBottom: 24, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+            <h2 style={{ fontSize: 'clamp(40px, 5vw, 64px)', fontWeight: 800, marginBottom: 24, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
               {t('landing.heroTitle', { type: t(`types.${qrType}`) })}
-            </h1>
+            </h2>
             <p style={{ fontSize: 'clamp(18px, 2.5vw, 24px)', color: 'var(--hq-text-muted)' }}>
               {t('landing.heroSubtitle')}
             </p>

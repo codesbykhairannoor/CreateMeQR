@@ -57,7 +57,7 @@ function LayoutPaypal({ qrType = 'paypal' }) {
         .hq-container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
         
         .hq-pp-hero { background: var(--hq-accent-dark); color: white; padding: 120px 24px; text-align: center; }
-        .hq-pp-hero h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 300; margin-bottom: 24px; }
+        .hq-pp-hero h2 { font-size: clamp(36px, 5vw, 56px); font-weight: 300; margin-bottom: 24px; }
         .hq-pp-hero p { font-size: 20px; font-weight: 300; max-width: 600px; margin: 0 auto; line-height: 1.5; }
         
         .hq-pp-checkout { max-width: 800px; margin: -60px auto 80px auto; background: var(--hq-card); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; }
@@ -88,7 +88,7 @@ function LayoutPaypal({ qrType = 'paypal' }) {
       `}</style>
 
       <div className="hq-pp-hero">
-        <h1>{t.heroTitle}</h1>
+        <h2>{t.heroTitle}</h2>
         <p>{t.heroSubtitle}</p>
       </div>
 

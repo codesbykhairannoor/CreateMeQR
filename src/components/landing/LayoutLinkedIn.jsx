@@ -109,7 +109,7 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
             <div className="hq-li-cover"></div>
             <div className="hq-li-profile">
               <div className="hq-li-profile-info">
-                <h1>{t.heroTitle} for {typeName}</h1>
+                <h2>{t.heroTitle} for {typeName}</h2>
                 <p>{t.heroSubtitle}</p>
                 <div style={{ marginTop: 16, display: 'inline-block', background: 'var(--hq-accent)', color: 'white', padding: '6px 16px', borderRadius: 100, fontWeight: 600, fontSize: 14 }}>
                   Connect

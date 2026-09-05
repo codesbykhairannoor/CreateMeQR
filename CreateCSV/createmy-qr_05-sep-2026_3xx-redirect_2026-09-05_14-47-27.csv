@@ -1,0 +1,6 @@
+PR,URL,Title,Content type,Is rendered page,HTTP status code,Organic traffic,Redirect URL,Redirect URL code,Redirect URL patch,Redirect URL patch status,Redirect chain URLs,Redirect chain URLs codes,Is redirect loop,No. of all inlinks,No. of redirect inlinks,First found at
+0,http://www.createmy-qr.com/,,text/plain,false,308,0,https://www.createmy-qr.com/,308,,,"https://www.createmy-qr.com/
+https://createmy-qr.com/","308
+200",false,0,0,
+0,http://createmy-qr.com/,,text/plain,false,308,0,https://createmy-qr.com/,200,,,https://createmy-qr.com/,200,false,0,0,
+0,https://www.createmy-qr.com/,,text/plain,false,308,0,https://createmy-qr.com/,200,,,https://createmy-qr.com/,200,false,1,1,

@@ -91,7 +91,7 @@ function LayoutTwitter({ qrType = 'twitter' }) {
 
       <div className="hq-container">
         <div className="hq-tw-header">
-          <h1>{typeName} Explorer</h1>
+          <h2>{typeName} Explorer</h2>
         </div>
 
         <div className="hq-tw-tweet">

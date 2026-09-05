@@ -105,9 +105,9 @@ function LayoutVCardRealEstate({ qrType = 'vcardrealestate', pseoUseCase = null 
         <div className="hq-vcard-badge">
           <Building2 size={16} /> {getTranslation('badge', '', '') || 'For Real Estate'}
         </div>
-        <h1 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(36px, 5vw, 64px)', lineHeight: 1.1, marginBottom: 24, textAlign: 'center', maxWidth: 800 }}>
+        <h2 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(36px, 5vw, 64px)', lineHeight: 1.1, marginBottom: 24, textAlign: 'center', maxWidth: 800 }}>
           {getUcText('h1Title') || getTranslation('hero', 'Title', '') || 'vCard QR Code for Real Estate Agents'}
-        </h1>
+        </h2>
         <p style={{ fontSize: 'clamp(18px, 2.5vw, 20px)', color: 'var(--hq-text-muted)', lineHeight: 1.6, maxWidth: 600, textAlign: 'center' }}>
           {getUcText('seoDesc') || getTranslation('hero', 'Subtitle', '') || 'Never lose a lead again. Create a digital vCard QR code for your real estate business cards and open house brochures.'}
         </p>

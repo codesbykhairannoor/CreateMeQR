@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 
 export default function SeoArticle({ currentLangCode }) {
@@ -24,11 +23,7 @@ export default function SeoArticle({ currentLangCode }) {
 
   return (
     <section className="w-full bg-white dark:bg-zinc-950 py-12 px-6 border-t border-blue-100 dark:border-[#102040]">
-      <Helmet>
-        <meta name="keywords" content={keywordsStringRaw} />
-      </Helmet>
-      
-      <div className="max-w-4xl mx-auto">
+<div className="max-w-4xl mx-auto">
         <h3 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider mb-6">
           {sectionTitle}
         </h3>
