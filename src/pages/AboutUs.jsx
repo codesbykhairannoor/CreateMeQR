@@ -104,13 +104,13 @@ export default function AboutUs() {
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <div className="inline-flex items-center gap-2 px-5 py-2 bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 rounded-full font-bold text-xs uppercase tracking-widest mb-6 border border-blue-200 dark:border-blue-500/30">
-                <History size={14} /> {t('research.aboutHeritage.badge', 'Historical Foundations & Open Standards')}
+                <History size={14} /> {t('research.aboutHeritage.badge', 'Technological Heritage & Open Standards')}
               </div>
               <h2 className="text-[clamp(1.8rem,4vw,2.75rem)] font-extrabold tracking-tight leading-[1.15] text-slate-900 dark:text-white mb-6">
-                {t('research.aboutHeritage.title', 'Technological Heritage & The Open Standard Movement')}
+                {t('research.aboutHeritage.title', 'Historical Foundations of the QR Specification')}
               </h2>
               <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
-                {t('research.aboutHeritage.subtitle', 'QR technology was born out of an open-patent commitment by Denso Wave in 1994. CreateMeQR honors that legacy.')}
+                {t('research.aboutHeritage.subtitle', 'Created in 1994 and released as an open standard, QR technology was engineered for universal, unencumbered utility.')}
               </p>
             </div>
 
@@ -122,14 +122,14 @@ export default function AboutUs() {
                     '94
                   </div>
                   <h3 className="text-xl font-extrabold text-slate-900 dark:text-white mb-4">
-                    {t('research.aboutHeritage.card1Title', '1994: The Invention by Masahiro Hara')}
+                    {t('research.aboutHeritage.card1Title', '1994: The Invention by Masahiro Hara (Denso Wave)')}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
-                    {t('research.aboutHeritage.card1Desc', 'Developed at Denso Wave to track automotive parts with 10x speed and 360-degree high-speed reading via position detection patterns.')}
+                    {t('research.aboutHeritage.card1Desc', 'Developed at Denso Wave to solve the 20-character limitation of 1D barcodes through high-speed 2D matrix symbology.')}
                   </p>
                 </div>
                 <div className="mt-8 pt-4 border-t border-slate-100 dark:border-[#1e2d4a] text-xs font-mono text-slate-500 dark:text-slate-400">
-                  Origin: Denso Wave / Toyota Group
+                  Origin: Denso Wave (1994)
                 </div>
               </div>
 
@@ -143,32 +143,32 @@ export default function AboutUs() {
                     ISO
                   </div>
                   <h3 className="text-xl font-extrabold text-slate-900 dark:text-white mb-4">
-                    {t('research.aboutHeritage.card2Title', 'The Free-Standard Commitment')}
+                    {t('research.aboutHeritage.card2Title', 'Open Standard & Patent Waiver')}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
-                    {t('research.aboutHeritage.card2Desc', 'Denso Wave elected not to exercise its patent rights, granting the world unrestricted access to open, unencumbered 2D symbology.')}
+                    {t('research.aboutHeritage.card2Desc', 'Denso Wave elected not to exercise its patent rights, allowing the QR specification to become an open international standard (ISO/IEC 18004).')}
                   </p>
                 </div>
                 <div className="mt-8 pt-4 border-t border-slate-100 dark:border-[#1e2d4a] text-xs font-mono text-blue-600 dark:text-blue-400 font-bold">
-                  Patent Waiver: Free Worldwide Use
+                  Specification: ISO/IEC 18004 Open Spec
                 </div>
               </div>
 
-              {/* Card 3: Our Mission */}
+              {/* Card 3: Client-Side Implementation */}
               <div className="bg-white dark:bg-[#0a1128] p-8 md:p-10 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-mono font-extrabold text-sm mb-6 border border-emerald-100 dark:border-emerald-800">
-                    2026+
+                    Wasm
                   </div>
                   <h3 className="text-xl font-extrabold text-slate-900 dark:text-white mb-4">
-                    {t('research.aboutHeritage.card3Title', 'Our Mission: Open Client-Side Tools')}
+                    {t('research.aboutHeritage.card3Title', 'Client-Side Implementation')}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
-                    {t('research.aboutHeritage.card3Desc', 'Preserving the original promise of unhindered, serverless utility for millions of creators, businesses, and developers.')}
+                    {t('research.aboutHeritage.card3Desc', 'CreateMeQR implements standard ISO/IEC 18004 matrix generation algorithms directly in local browser memory without intermediary servers.')}
                   </p>
                 </div>
                 <div className="mt-8 pt-4 border-t border-slate-100 dark:border-[#1e2d4a] text-xs font-mono text-slate-500 dark:text-slate-400">
-                  Execution: 100% In-Browser Wasm
+                  Architecture: 100% In-Browser Wasm
                 </div>
               </div>
             </div>
