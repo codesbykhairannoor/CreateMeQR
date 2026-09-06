@@ -1682,5 +1682,72 @@
     "homeSeoDesc": "Genereer gratis 37 soorten QR-codes en barcodes. Geen aanmelding. Direct downloaden. 100% client-side, ISO-compatibel, 30 talen.",
     "homeHeroTitle": "Alle QR- en barcodehulpmiddelen",
     "homeHeroTitleHighlight": "op één plek"
+  },
+  "research": {
+    "homeStandards": {
+      "badge": "Wetenschappelijke en technische grondslagen",
+      "title": "Gebouwd op geverifieerde mondiale standaarden en academisch onderzoek",
+      "subtitle": "CreateMy-QR implementeert open specificaties van ISO, IEEE en NIST om wiskundige precisie en zero-trust-beveiliging aan de clientzijde te leveren.",
+      "card1Title": "ISO/IEC 18004:2015-specificatie",
+      "card1Desc": "Volledige naleving van de internationale QR-codematrixsymboliekstandaard met 1:1:3:1:1 zoekpatronen en stille zones met 4 modules.",
+      "card1Meta": "Internationale Organisatie voor Standaardisatie",
+      "card2Title": "Reed-Solomon-foutcorrectie",
+      "card2Desc": "Polynomiale Galois-veldalgoritmen (Reed & Solomon, SIAM 1960) maken tot 30% herstel van visuele gegevens en het insluiten van aangepaste logo's mogelijk.",
+      "card2Meta": "SIAM Journal of Toegepaste Wiskunde",
+      "card3Title": "NIST SP 800-207 Zero-Trust-architectuur",
+      "card3Desc": "Pure geheugenuitvoering in de browser die het risico van tussenpersonen in clouddatabases elimineert en QR-phishing-bedreigingen beperkt (IEEE ARES 2015).",
+      "card3Meta": "Nationaal Instituut voor Standaarden en Technologie",
+      "card4Title": "ISO/IEC 15415 Optisch contrast",
+      "card4Desc": "Real-time symboolmodulatie en contrastcontrole in lijn met W3C WCAG 2.1-standaarden voor universele 360° cameraleesbaarheid.",
+      "card4Meta": "Standaard voor optische symboliek en toegankelijkheid"
+    },
+    "securityResearch": {
+      "badge": "Peer-reviewed beveiligingsliteratuur",
+      "title": "Architecturale afstemming met academisch cybersecurityonderzoek",
+      "subtitle": "Ons zero-knowledge client-side model is gebaseerd op gepubliceerde kwetsbaarheidsanalyses op dynamische QR-servers en cloudtracking.",
+      "paper1Title": "Quishing- en server-side redirect-kwetsbaarheden",
+      "paper1Cite": "Krombholz et al., IEEE Internationale Conferentie over Beschikbaarheid, Betrouwbaarheid en Beveiliging (ARES 2015)",
+      "paper1Desc": "Onderzoek toont aan dat gecentraliseerde dynamische QR-servers single-point-of-failure-risico's, URL-kaping en ongeoorloofde telemetrie met zich meebrengen. CreateMy-QR lost dit op door 100% statische vectorbestanden aan de clientzijde te genereren.",
+      "paper1Doi": "DOI: 10.1109/ARES.2015.39",
+      "paper2Title": "Zero-Knowledge in-browser-cryptografie",
+      "paper2Cite": "NIST SP 800-207 Zero Trust Architecture & W3C Webcryptografie-werkgroep",
+      "paper2Desc": "Door alle payload-codering binnen de WebAssembly-sandbox van de browser te isoleren, komen ongecodeerde inloggegevens, WiFi-sleutels of vCard-identiteiten nooit in aanraking met een netwerkkabel.",
+      "paper2Doi": "Speciale NIST-publicatie 800-207"
+    },
+    "aboutHeritage": {
+      "badge": "Technologisch erfgoed",
+      "title": "Ter ere van de Open-Standaarduitvinding uit 1994",
+      "subtitle": "De QR-code is uitgevonden om snelle, betrouwbare informatie-uitwisseling te democratiseren zonder eigen betaalmuren.",
+      "card1Title": "Masahiro Hara & Denso Wave (1994)",
+      "card1Desc": "De QR-code, uitgevonden door Masahiro Hara, overwon de beperking van 20 tekens van 1D-barcodes. Denso Wave maakte het patent open en gratis voor de wereld, wat ons 100% gratis ethos inspireerde.",
+      "card2Title": "Mondiale standaardisatiemijlpalen",
+      "card2Desc": "Gestandaardiseerd als AIM ITS in 1997, JIS X 0510 in 1999 en ISO/IEC 18004 in 2000. We handhaven strikte achterwaartse en voorwaartse compatibiliteit met elke versie.",
+      "card3Title": "Europese uitvindersprijs (2014)",
+      "card3Desc": "Wereldwijd erkend voor het transformeren van logistiek, gezondheidszorg en digitale interactie. We zetten deze missie voort door middel van client-side tooling met hoge resolutie."
+    },
+    "compareEvidence": {
+      "badge": "Empirische architectuuranalyse",
+      "title": "Waarom client-side cloudgehoste generatoren verslaat",
+      "subtitle": "Vergelijking van de architectonische verschillen tussen traditionele op omleidingen gebaseerde generatoren en het lokale uitvoeringsmodel van CreateMy-QR.",
+      "col1Title": "Cloud Redirect-modellen (concurrenten)",
+      "col1Point1": "Door serverdowntime worden uw afgedrukte QR-codes permanent verbroken.",
+      "col1Point2": "Gebruikersscangegevens en IP-adressen ingelogd in commerciële databases.",
+      "col1Point3": "Abonnementskosten zijn vereist om het verlopen van de link te voorkomen.",
+      "col2Title": "Direct client-side model (CreateMy-QR)",
+      "col2Point1": "Directe codering: QR-codes werken voor altijd zonder enige serverafhankelijkheid.",
+      "col2Point2": "Geen tracking: scans worden rechtstreeks van camera naar bestemming verbonden.",
+      "col2Point3": "Voor altijd 100% gratis: geen betaalmuren, geen scanlimieten, geen verlopen links."
+    },
+    "barcodePhysics": {
+      "badge": "Optische verificatie",
+      "title": "ISO/IEC 15416 Afdrukkwaliteit en contrastnormen",
+      "subtitle": "Ontworpen om te voldoen aan industriële barcodeverificatienormen voor detailhandel, magazijnen en gezondheidszorg.",
+      "feat1Title": "Symboolcontrast en reflectie",
+      "feat1Desc": "Voldoet aan het minimale reflectieverschil (Rmin/Rmax) van ISO/IEC 15416 om verspreiding van de laserstraal van de scanner te voorkomen.",
+      "feat2Title": "Modulatie en randbepaling",
+      "feat2Desc": "Vector SVG-rendering garandeert haarscherpe staafranden met subpixelprecisie op thermische en laserprinters.",
+      "feat3Title": "Integriteit van stille zones",
+      "feat3Desc": "Dwingt verplichte witruimten voor en achter af, vereist door GS1- en EAN/UPC-specificaties."
+    }
   }
 }

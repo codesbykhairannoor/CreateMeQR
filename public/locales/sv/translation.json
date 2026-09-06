@@ -1682,5 +1682,72 @@
     "homeSeoDesc": "Generera 37 typer av QR-koder och streckkoder gratis. Ingen registrering. Omedelbar nedladdning. 100 % klientsida, ISO-kompatibel, 30 språk.",
     "homeHeroTitle": "Alla QR- och streckkodsverktyg",
     "homeHeroTitleHighlight": "på ett ställe"
+  },
+  "research": {
+    "homeStandards": {
+      "badge": "Scientific & Engineering Foundations",
+      "title": "Byggd på verifierade globala standarder och akademisk forskning",
+      "subtitle": "CreateMy-QR implementerar öppna specifikationer från ISO, IEEE och NIST för att leverera matematisk precision och nollförtroendesäkerhet på klientsidan.",
+      "card1Title": "ISO/IEC 18004:2015-specifikation",
+      "card1Desc": "Full överensstämmelse med den internationella QR-kodmatrissymbologistandarden med 1:1:3:1:1 sökmönster och 4-modulers tysta zoner.",
+      "card1Meta": "Internationella standardiseringsorganisationen",
+      "card2Title": "Reed-Solomon felkorrigering",
+      "card2Desc": "Polynomial Galois-fältalgoritmer (Reed & Solomon, SIAM 1960) som tillåter upp till 30 % visuell dataåterställning och anpassad logotyp inbäddning.",
+      "card2Meta": "SIAM Journal of Applied Mathematics",
+      "card3Title": "NIST SP 800-207 Zero-Trust Architecture",
+      "card3Desc": "Ren minnesexekvering i webbläsaren som eliminerar risken för molndatabasmellanhänder och mildrar QR-nätfiskehot (IEEE ARES 2015).",
+      "card3Meta": "National Institute of Standards & Technology",
+      "card4Title": "ISO/IEC 15415 optisk kontrast",
+      "card4Desc": "Symbolmodulering och kontrastkontroll i realtid i linje med W3C WCAG 2.1-standarder för universell 360° kameraläsbarhet.",
+      "card4Meta": "Optisk symbolik och tillgänglighetsstandard"
+    },
+    "securityResearch": {
+      "badge": "Peer-reviewed säkerhetslitteratur",
+      "title": "Arkitektonisk anpassning till akademisk cybersäkerhetsforskning",
+      "subtitle": "Vår nollkunskapsmodell på klientsidan är informerad av publicerade sårbarhetsanalyser på dynamiska QR-servrar och molnspårning.",
+      "paper1Title": "Quishing & Server-Side Redirect Sårbarheter",
+      "paper1Cite": "Krombholz et al., IEEE International Conference on Availability, Reliability and Security (ARES 2015)",
+      "paper1Desc": "Forskning visar att centraliserade dynamiska QR-servrar introducerar risker för enkelpunktsfel, URL-kapning och telemetri utan samtycke. CreateMy-QR löser detta genom att generera 100 % statiska vektorfiler på klientsidan.",
+      "paper1Doi": "DOI: 10.1109/ARES.2015.39",
+      "paper2Title": "Zero-Knowledge In-Browser Kryptografi",
+      "paper2Cite": "NIST SP 800-207 Zero Trust Architecture & W3C Web Cryptography Working Group",
+      "paper2Desc": "Genom att isolera all nyttolastkodning i webbläsarens WebAssembly-sandlåda, vidrör inga okrypterade autentiseringsuppgifter, WiFi-nycklar eller vCard-identiteter någonsin en nätverksledning.",
+      "paper2Doi": "NIST specialpublikation 800-207"
+    },
+    "aboutHeritage": {
+      "badge": "Tekniskt arv",
+      "title": "Hedrar 1994 års Open-Standard-uppfinning",
+      "subtitle": "QR-koden uppfanns för att demokratisera snabbt och tillförlitligt informationsutbyte utan egna betalväggar.",
+      "card1Title": "Masahiro Hara & Denso Wave (1994)",
+      "card1Desc": "Uppfann av Masahiro Hara, QR-koden övervann begränsningen på 20 tecken för 1D-streckkoder. Denso Wave gjorde patentet öppet och fritt för världen, vilket inspirerade vårt 100 % fria etos.",
+      "card2Title": "Globala standardiseringsmilstolpar",
+      "card2Desc": "Standardiserad som AIM ITS 1997, JIS X 0510 1999 och ISO/IEC 18004 2000. Vi upprätthåller strikt bakåt- och framåtkompatibilitet med varje version.",
+      "card3Title": "European Inventor Award (2014)",
+      "card3Desc": "Erkänt globalt för att transformera logistik, hälsovård och digital interaktion. Vi för vidare detta uppdrag genom högupplösta verktyg på klientsidan."
+    },
+    "compareEvidence": {
+      "badge": "Empirisk arkitekturanalys",
+      "title": "Varför klientsidan slår molnbaserade generatorer",
+      "subtitle": "Jämför de arkitektoniska skillnaderna mellan traditionella omdirigeringsbaserade generatorer och CreateMy-QR:s lokala exekveringsmodell.",
+      "col1Title": "Molnomdirigeringsmodeller (konkurrenter)",
+      "col1Point1": "Serverns stilleståndstid bryter dina utskrivna QR-koder permanent.",
+      "col1Point2": "Användaren skannar data och IP-adresser inloggade i kommersiella databaser.",
+      "col1Point3": "Prenumerationsavgifter krävs för att förhindra att länken löper ut.",
+      "col2Title": "Modell direkt på klientsidan (CreateMy-QR)",
+      "col2Point1": "Direktkodning: QR-koder fungerar för alltid utan något serverberoende.",
+      "col2Point2": "Nollspårning: Skanningar ansluts direkt från kamera till destination.",
+      "col2Point3": "100 % gratis för alltid: Inga betalväggar, inga skanningsgränser, inga utgångna länkar."
+    },
+    "barcodePhysics": {
+      "badge": "Optisk verifiering",
+      "title": "ISO/IEC 15416 Standarder för utskriftskvalitet och kontrast",
+      "subtitle": "Konstruerad för att uppfylla industriella streckkodsverifieringsstandarder för detaljhandel, lager och hälsovård.",
+      "feat1Title": "Symbol Kontrast & Reflexion",
+      "feat1Desc": "Uppfyller ISO/IEC 15416 minsta reflektansskillnad (Rmin/Rmax) för att förhindra spridning av skannerlaserstrålen.",
+      "feat2Title": "Modulering och kantbestämning",
+      "feat2Desc": "Vector SVG-rendering garanterar knivskarpa kanter med subpixelprecision över termiska skrivare och laserskrivare.",
+      "feat3Title": "Tyst zon integritet",
+      "feat3Desc": "Genomför obligatoriska ledande och efterföljande blanksteg som krävs av GS1- och EAN/UPC-specifikationer."
+    }
   }
 }

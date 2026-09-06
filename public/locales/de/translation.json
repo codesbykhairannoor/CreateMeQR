@@ -1682,5 +1682,72 @@
     "homeSeoDesc": "Generieren Sie kostenlos 37 Arten von QR-Codes und Barcodes. Keine Anmeldung. Sofortiger Download. 100 % clientseitig, ISO-konform, 30 Sprachen.",
     "homeHeroTitle": "Alle QR- und Barcode-Tools",
     "homeHeroTitleHighlight": "An einem Ort"
+  },
+  "research": {
+    "homeStandards": {
+      "badge": "Wissenschaftliche und technische Grundlagen",
+      "title": "Basierend auf verifizierten globalen Standards und akademischer Forschung",
+      "subtitle": "CreateMy-QR implementiert offene Spezifikationen von ISO, IEEE und NIST, um mathematische Präzision und clientseitige Zero-Trust-Sicherheit zu bieten.",
+      "card1Title": "ISO/IEC 18004:2015 Spezifikation",
+      "card1Desc": "Vollständige Einhaltung des internationalen QR-Code-Matrix-Symbologiestandards mit 1:1:3:1:1-Suchmustern und 4-Modul-Ruhezonen.",
+      "card1Meta": "Internationale Organisation für Normung",
+      "card2Title": "Reed-Solomon-Fehlerkorrektur",
+      "card2Desc": "Polynomiale Galois-Feldalgorithmen (Reed & Solomon, SIAM 1960), die eine visuelle Datenwiederherstellung von bis zu 30 % und die Einbettung eines benutzerdefinierten Logos ermöglichen.",
+      "card2Meta": "SIAM Journal of Applied Mathematics",
+      "card3Title": "NIST SP 800-207 Zero-Trust-Architektur",
+      "card3Desc": "Reine In-Browser-Speicherausführung, die das Risiko von Zwischenhändlern in der Cloud-Datenbank eliminiert und QR-Phishing-Bedrohungen mindert (IEEE ARES 2015).",
+      "card3Meta": "Nationales Institut für Standards und Technologie",
+      "card4Title": "ISO/IEC 15415 Optischer Kontrast",
+      "card4Desc": "Echtzeit-Symbolmodulation und Kontrastprüfung gemäß W3C WCAG 2.1-Standards für universelle 360°-Kameralesbarkeit.",
+      "card4Meta": "Standard für optische Symbologie und Barrierefreiheit"
+    },
+    "securityResearch": {
+      "badge": "Von Experten begutachtete Sicherheitsliteratur",
+      "title": "Architektonische Ausrichtung mit akademischer Cybersicherheitsforschung",
+      "subtitle": "Unser clientseitiges Zero-Knowledge-Modell basiert auf veröffentlichten Schwachstellenanalysen auf dynamischen QR-Servern und Cloud-Tracking.",
+      "paper1Title": "Quishing- und serverseitige Redirect-Schwachstellen",
+      "paper1Cite": "Krombholz et al., IEEE International Conference on Availability, Reliability and Security (ARES 2015)",
+      "paper1Desc": "Untersuchungen zeigen, dass zentralisierte dynamische QR-Server Single-Point-of-Failure-Risiken, URL-Hijacking und nicht genehmigte Telemetrie mit sich bringen. CreateMy-QR löst dieses Problem, indem es zu 100 % statische, clientseitige Vektordateien generiert.",
+      "paper1Doi": "DOI: 10.1109/ARES.2015.39",
+      "paper2Title": "Wissensfreie In-Browser-Kryptografie",
+      "paper2Cite": "NIST SP 800-207 Zero Trust Architecture & W3C Web Cryptography Working Group",
+      "paper2Desc": "Durch die Isolierung der gesamten Payload-Codierung innerhalb der WebAssembly-Sandbox des Browsers gelangen keine unverschlüsselten Anmeldeinformationen, WLAN-Schlüssel oder vCard-Identitäten jemals in Kontakt mit einem Netzwerkkabel.",
+      "paper2Doi": "NIST-Sonderpublikation 800-207"
+    },
+    "aboutHeritage": {
+      "badge": "Technologisches Erbe",
+      "title": "Ehrung der Open-Standard-Erfindung von 1994",
+      "subtitle": "Der QR-Code wurde erfunden, um einen schnellen und zuverlässigen Informationsaustausch ohne proprietäre Paywalls zu demokratisieren.",
+      "card1Title": "Masahiro Hara & Denso Wave (1994)",
+      "card1Desc": "Der von Masahiro Hara erfundene QR-Code überwand die 20-Zeichen-Beschränkung von 1D-Barcodes. Denso Wave machte das Patent der Welt zugänglich und kostenlos und inspirierte so unser 100 % freies Ethos.",
+      "card2Title": "Meilensteine ​​der globalen Standardisierung",
+      "card2Desc": "Standardisiert als AIM ITS im Jahr 1997, JIS",
+      "card3Title": "Europäischer Erfinderpreis (2014)",
+      "card3Desc": "Weltweit anerkannt für die Transformation von Logistik, Gesundheitswesen und digitaler Interaktion. Wir setzen diese Mission durch hochauflösende kundenseitige Tools fort."
+    },
+    "compareEvidence": {
+      "badge": "Empirische Architekturanalyse",
+      "title": "Warum die Client-Seite Cloud-gehostete Generatoren übertrifft",
+      "subtitle": "Vergleich der architektonischen Unterschiede zwischen herkömmlichen umleitungsbasierten Generatoren und dem lokalen Ausführungsmodell von CreateMy-QR.",
+      "col1Title": "Cloud-Redirect-Modelle (Mitbewerber)",
+      "col1Point1": "Durch einen Serverausfall werden Ihre gedruckten QR-Codes dauerhaft beschädigt.",
+      "col1Point2": "In kommerziellen Datenbanken protokollierte Benutzerscandaten und IP-Adressen.",
+      "col1Point3": "Abonnementgebühren sind erforderlich, um das Ablaufen des Links zu verhindern.",
+      "col2Title": "Direktes clientseitiges Modell (CreateMy-QR)",
+      "col2Point1": "Direkte Kodierung: QR-Codes funktionieren dauerhaft ohne Serverabhängigkeit.",
+      "col2Point2": "Kein Tracking: Die Scans werden direkt von der Kamera zum Zielort übertragen.",
+      "col2Point3": "Für immer 100 % kostenlos: Keine Paywalls, keine Scan-Limits, keine abgelaufenen Links."
+    },
+    "barcodePhysics": {
+      "badge": "Optische Überprüfung",
+      "title": "ISO/IEC 15416 Druckqualitäts- und Kontraststandards",
+      "subtitle": "Entwickelt, um die industriellen Barcode-Verifizierungsstandards für Einzelhandel, Lagerhaltung und Gesundheitswesen zu erfüllen.",
+      "feat1Title": "Symbolkontrast und Reflexion",
+      "feat1Desc": "Entspricht der Mindestreflexionsdifferenz (Rmin/Rmax) nach ISO/IEC 15416, um eine Streuung des Scanner-Laserstrahls zu verhindern.",
+      "feat2Title": "Modulation und Kantenbestimmung",
+      "feat2Desc": "Das Vektor-SVG-Rendering garantiert gestochen scharfe Balkenkanten mit Subpixel-Präzision auf Thermo- und Laserdruckern.",
+      "feat3Title": "Integrität der Ruhezone",
+      "feat3Desc": "Erzwingt obligatorische führende und nachfolgende Leerzeichen, die in den GS1- und EAN/UPC-Spezifikationen erforderlich sind."
+    }
   }
 }

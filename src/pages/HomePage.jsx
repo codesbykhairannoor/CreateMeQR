@@ -545,6 +545,131 @@ export default function HomePage({ currentLangCode = 'en' }) {
         </div>
       </section>
 
+      {/* ═══════ SECTION: SCIENTIFIC & ENGINEERING STANDARDS BENTO GRID ═══════ */}
+      <section style={{ padding: '90px 0', borderTop: '1px solid rgba(37,99,235,0.08)', background: 'linear-gradient(180deg, rgba(37,99,235,0.02) 0%, rgba(124,58,237,0.02) 100%)' }}>
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div style={{ textAlign: 'center', maxWidth: 800, margin: '0 auto 60px' }}>
+            <div style={{
+              display: 'inline-flex', alignItems: 'center', gap: 8, padding: '6px 18px',
+              borderRadius: 9999, border: '1px solid rgba(37,99,235,0.25)',
+              background: 'rgba(37,99,235,0.06)', marginBottom: 18,
+              fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.15em',
+              textTransform: 'uppercase', color: '#2563EB',
+            }}>
+              <span>📜</span> {t('research.homeStandards.badge', 'Scientific & Engineering Foundations')}
+            </div>
+            <h2 className="homepage-section-title" style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.6rem)', fontWeight: 800, lineHeight: 1.25, marginBottom: 16 }}>
+              {t('research.homeStandards.title', 'Built on Verified Global Standards & Academic Research')}
+            </h2>
+            <p style={{ fontSize: '1.05rem', lineHeight: 1.75, opacity: 0.65 }}>
+              {t('research.homeStandards.subtitle', 'CreateMy-QR implements open specifications from ISO, IEEE, and NIST to deliver mathematical precision and client-side zero-trust security.')}
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24 }}>
+            {/* Card 1: ISO 18004 */}
+            <div style={{
+              padding: '28px 24px', borderRadius: 24,
+              border: '1px solid rgba(37,99,235,0.15)',
+              background: 'rgba(255,255,255,0.6)',
+              backdropFilter: 'blur(12px)',
+              display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
+              boxShadow: '0 10px 30px -10px rgba(37,99,235,0.05)'
+            }} className="dark:!bg-[#0c1831]/60 dark:!border-blue-900/40">
+              <div>
+                <div style={{ display: 'inline-block', padding: '4px 10px', borderRadius: 8, background: 'rgba(37,99,235,0.1)', color: '#2563EB', fontSize: '0.72rem', fontWeight: 800, marginBottom: 16 }}>
+                  ISO/IEC 18004
+                </div>
+                <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: 10, lineHeight: 1.35 }}>
+                  {t('research.homeStandards.card1Title', 'ISO/IEC 18004:2015 Specification')}
+                </h3>
+                <p style={{ fontSize: '0.9rem', lineHeight: 1.65, opacity: 0.7, margin: 0 }}>
+                  {t('research.homeStandards.card1Desc', 'Full adherence to the international QR Code matrix symbology standard with 1:1:3:1:1 finder patterns and 4-module quiet zones.')}
+                </p>
+              </div>
+              <div style={{ marginTop: 20, paddingTop: 14, borderTop: '1px solid rgba(37,99,235,0.1)', fontSize: '0.75rem', fontWeight: 700, opacity: 0.5 }}>
+                🏛️ {t('research.homeStandards.card1Meta', 'International Organization for Standardization')}
+              </div>
+            </div>
+
+            {/* Card 2: Reed-Solomon */}
+            <div style={{
+              padding: '28px 24px', borderRadius: 24,
+              border: '1px solid rgba(124,58,237,0.15)',
+              background: 'rgba(255,255,255,0.6)',
+              backdropFilter: 'blur(12px)',
+              display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
+              boxShadow: '0 10px 30px -10px rgba(124,58,237,0.05)'
+            }} className="dark:!bg-[#0c1831]/60 dark:!border-purple-900/40">
+              <div>
+                <div style={{ display: 'inline-block', padding: '4px 10px', borderRadius: 8, background: 'rgba(124,58,237,0.1)', color: '#7C3AED', fontSize: '0.72rem', fontWeight: 800, marginBottom: 16 }}>
+                  SIAM (1960)
+                </div>
+                <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: 10, lineHeight: 1.35 }}>
+                  {t('research.homeStandards.card2Title', 'Reed-Solomon Error Correction')}
+                </h3>
+                <p style={{ fontSize: '0.9rem', lineHeight: 1.65, opacity: 0.7, margin: 0 }}>
+                  {t('research.homeStandards.card2Desc', 'Polynomial Galois field algorithms (Reed & Solomon, SIAM 1960) allowing up to 30% visual data restoration and custom logo embedding.')}
+                </p>
+              </div>
+              <div style={{ marginTop: 20, paddingTop: 14, borderTop: '1px solid rgba(124,58,237,0.1)', fontSize: '0.75rem', fontWeight: 700, opacity: 0.5 }}>
+                📐 {t('research.homeStandards.card2Meta', 'SIAM Journal of Applied Mathematics')}
+              </div>
+            </div>
+
+            {/* Card 3: NIST 800-207 */}
+            <div style={{
+              padding: '28px 24px', borderRadius: 24,
+              border: '1px solid rgba(16,185,129,0.15)',
+              background: 'rgba(255,255,255,0.6)',
+              backdropFilter: 'blur(12px)',
+              display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
+              boxShadow: '0 10px 30px -10px rgba(16,185,129,0.05)'
+            }} className="dark:!bg-[#0c1831]/60 dark:!border-emerald-900/40">
+              <div>
+                <div style={{ display: 'inline-block', padding: '4px 10px', borderRadius: 8, background: 'rgba(16,185,129,0.1)', color: '#059669', fontSize: '0.72rem', fontWeight: 800, marginBottom: 16 }}>
+                  NIST SP 800-207
+                </div>
+                <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: 10, lineHeight: 1.35 }}>
+                  {t('research.homeStandards.card3Title', 'NIST SP 800-207 Zero-Trust Architecture')}
+                </h3>
+                <p style={{ fontSize: '0.9rem', lineHeight: 1.65, opacity: 0.7, margin: 0 }}>
+                  {t('research.homeStandards.card3Desc', 'Pure in-browser memory execution that eliminates cloud database middleman risk and mitigates QR phishing threats (IEEE ARES 2015).')}
+                </p>
+              </div>
+              <div style={{ marginTop: 20, paddingTop: 14, borderTop: '1px solid rgba(16,185,129,0.1)', fontSize: '0.75rem', fontWeight: 700, opacity: 0.5 }}>
+                🛡️ {t('research.homeStandards.card3Meta', 'National Institute of Standards & Technology')}
+              </div>
+            </div>
+
+            {/* Card 4: ISO 15415 */}
+            <div style={{
+              padding: '28px 24px', borderRadius: 24,
+              border: '1px solid rgba(245,158,11,0.15)',
+              background: 'rgba(255,255,255,0.6)',
+              backdropFilter: 'blur(12px)',
+              display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
+              boxShadow: '0 10px 30px -10px rgba(245,158,11,0.05)'
+            }} className="dark:!bg-[#0c1831]/60 dark:!border-amber-900/40">
+              <div>
+                <div style={{ display: 'inline-block', padding: '4px 10px', borderRadius: 8, background: 'rgba(245,158,11,0.1)', color: '#D97706', fontSize: '0.72rem', fontWeight: 800, marginBottom: 16 }}>
+                  ISO/IEC 15415
+                </div>
+                <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: 10, lineHeight: 1.35 }}>
+                  {t('research.homeStandards.card4Title', 'ISO/IEC 15415 Optical Contrast')}
+                </h3>
+                <p style={{ fontSize: '0.9rem', lineHeight: 1.65, opacity: 0.7, margin: 0 }}>
+                  {t('research.homeStandards.card4Desc', 'Real-time symbol modulation and contrast checking aligning with W3C WCAG 2.1 standards for universal 360° camera readability.')}
+                </p>
+              </div>
+              <div style={{ marginTop: 20, paddingTop: 14, borderTop: '1px solid rgba(245,158,11,0.1)', fontSize: '0.75rem', fontWeight: 700, opacity: 0.5 }}>
+                🔍 {t('research.homeStandards.card4Meta', 'Optical Symbology & Accessibility Standard')}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <RatingWidget />
 
       {/* ═══════ SECTION 5: FAQ ═══════ */}

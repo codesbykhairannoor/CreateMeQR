@@ -1682,5 +1682,72 @@
     "homeSeoDesc": "Luo 37 erilaista QR-koodia ja viivakoodia ilmaiseksi. Ei ilmoittautumista. Välitön lataus. 100 % asiakaspuoli, ISO-yhteensopiva, 30 kieltä.",
     "homeHeroTitle": "Kaikki QR- ja viivakoodityökalut",
     "homeHeroTitleHighlight": "yhdessä paikassa"
+  },
+  "research": {
+    "homeStandards": {
+      "badge": "Tieteelliset ja tekniset säätiöt",
+      "title": "Rakennettu vahvistettuihin globaaleihin standardeihin ja akateemiseen tutkimukseen",
+      "subtitle": "CreateMy-QR toteuttaa ISO:n, IEEE:n ja NIST:n avoimet spesifikaatiot matemaattisen tarkkuuden ja asiakaspuolen nollaluottamuksen turvaamiseksi.",
+      "card1Title": "ISO/IEC 18004:2015 -spesifikaatio",
+      "card1Desc": "Täysin kansainvälisten QR Code matriisi symboliikkastandardien noudattaminen 1:1:3:1:1 etsinkuvioilla ja 4-moduulin hiljaisilla vyöhykkeillä.",
+      "card1Meta": "Kansainvälinen standardointijärjestö",
+      "card2Title": "Reed-Solomon -virheen korjaus",
+      "card2Desc": "Polynomiaaliset Galois-kenttäalgoritmit (Reed & Solomon, SIAM 1960), jotka mahdollistavat jopa 30 % visuaalisen datan palauttamisen ja mukautetun logon upotuksen.",
+      "card2Meta": "SIAM Journal of Applied Mathematics",
+      "card3Title": "NIST SP 800-207 Zero-Trust -arkkitehtuuri",
+      "card3Desc": "Puhdas selaimen muistin suoritus, joka eliminoi pilvitietokannan välittäjän riskin ja vähentää QR-tietojenkalasteluuhkia (IEEE ARES 2015).",
+      "card3Meta": "National Institute of Standards & Technology",
+      "card4Title": "ISO/IEC 15415 optinen kontrasti",
+      "card4Desc": "Reaaliaikainen symbolimodulaatio ja kontrastin tarkistus linjaus W3C WCAG 2.1 -standardien kanssa yleisen 360° kameran luettavuuden takaamiseksi.",
+      "card4Meta": "Optinen symboliikka ja saavutettavuusstandardi"
+    },
+    "securityResearch": {
+      "badge": "Vertaisarvioitu turvallisuuskirjallisuus",
+      "title": "Arkkitehtoninen linjaus akateemisen kyberturvallisuustutkimuksen kanssa",
+      "subtitle": "Nolla-tietoinen asiakaspuolen mallimme perustuu julkaistuihin haavoittuvuusanalyyseihin dynaamisista QR-palvelimista ja pilvi-seurannasta.",
+      "paper1Title": "Quishing ja palvelinpuolen uudelleenohjaushaavoittuvuudet",
+      "paper1Cite": "Krombholz et al., IEEE International Conference on Availability, Reliability and Security (ARES 2015)",
+      "paper1Desc": "Tutkimukset osoittavat, että keskitetyt dynaamiset QR-palvelimet tuovat mukanaan yhden vikakohdan riskit, URL-osoitteen kaappauksen ja ilman suostumusta tapahtuvaa telemetriaa. CreateMy-QR ratkaisee tämän luomalla 100 % staattisia asiakaspuolen vektoritiedostoja.",
+      "paper1Doi": "DOI: 10.1109/ARES.2015.39",
+      "paper2Title": "Nollatietoinen selaimen salaus",
+      "paper2Cite": "NIST SP 800-207 Zero Trust Architecture & W3C Web Cryptography Working Group",
+      "paper2Desc": "Eristämällä kaikki hyötykuorman koodaukset selaimen WebAssembly-hiekkalaatikossa, salaamattomat tunnistetiedot, WiFi-avaimet tai vCard-tunnisteet eivät koskaan kosketa verkkojohtoa.",
+      "paper2Doi": "NIST-erikoisjulkaisu 800-207"
+    },
+    "aboutHeritage": {
+      "badge": "Teknologinen perintö",
+      "title": "Vuoden 1994 avoimen standardikeksinnön kunniaksi",
+      "subtitle": "QR-koodi keksittiin nopean ja luotettavan tiedonvaihdon demokratisoimiseksi ilman maksumuureja.",
+      "card1Title": "Masahiro Hara & Denso Wave (1994)",
+      "card1Desc": "Masahiro Haran keksimä QR-koodi ylitti 1D-viivakoodien 20 merkin rajoituksen. Denso Wave teki patentista avoimen ja ilmaisen maailmalle inspiroimalla 100 % vapaata eetostamme.",
+      "card2Title": "Globaalit standardoinnin virstanpylväät",
+      "card2Desc": "Standardoitu AIM ITS:ksi vuonna 1997, JIS X 0510:ksi vuonna 1999 ja ISO/IEC 18004:ksi vuonna 2000. Ylläpidämme tiukkaa taaksepäin ja eteenpäin yhteensopivuutta jokaisen version kanssa.",
+      "card3Title": "Euroopan keksijäpalkinto (2014)",
+      "card3Desc": "Maailmanlaajuisesti tunnustettu logistiikan, terveydenhuollon ja digitaalisen vuorovaikutuksen muuttamisesta. Jatkamme tätä tehtävää korkean resoluution asiakaspuolen työkaluilla."
+    },
+    "compareEvidence": {
+      "badge": "Empiirinen arkkitehtuurianalyysi",
+      "title": "Miksi asiakaspuoli päihittää pilvipalvelussa toimivat generaattorit",
+      "subtitle": "Perinteisten uudelleenohjauspohjaisten generaattorien ja CreateMy-QR:n paikallisen suoritusmallin arkkitehtonisten erojen vertailu.",
+      "col1Title": "Pilven uudelleenohjausmallit (kilpailijat)",
+      "col1Point1": "Palvelimen seisokki rikkoo tulostetut QR-koodit pysyvästi.",
+      "col1Point2": "Käyttäjät skannaavat tiedot ja IP-osoitteet kirjautuneena kaupallisiin tietokantoihin.",
+      "col1Point3": "Tilausmaksut vaaditaan linkin vanhenemisen estämiseksi.",
+      "col2Title": "Suora asiakaspuolen malli (CreateMy-QR)",
+      "col2Point1": "Suora koodaus: QR-koodit toimivat ikuisesti ilman palvelinriippuvuutta.",
+      "col2Point2": "Nollan seuranta: Skannaukset yhdistävät suoraan kamerasta määränpäähän.",
+      "col2Point3": "100% ilmainen ikuisesti: Ei maksumuureja, ei skannausrajoja, ei vanhentuneita linkkejä."
+    },
+    "barcodePhysics": {
+      "badge": "Optinen vahvistus",
+      "title": "ISO/IEC 15416 -tulostuslaatu- ja kontrastistandardit",
+      "subtitle": "Suunniteltu täyttämään vähittäiskaupan, varastoinnin ja terveydenhuollon teolliset viivakoodin tarkistusstandardit.",
+      "feat1Title": "Symbolin kontrasti ja heijastus",
+      "feat1Desc": "Täyttää ISO/IEC 15416 vähimmäisheijastuseron (Rmin/Rmax) skannerin lasersäteen hajaantumisen estämiseksi.",
+      "feat2Title": "Modulaatio ja reunan määritys",
+      "feat2Desc": "Vector SVG -renderöinti takaa veitsenterävät tangon reunat osapikselin tarkkuudella lämpö- ja lasertulostimissa.",
+      "feat3Title": "Hiljaisen alueen eheys",
+      "feat3Desc": "Pakottaa GS1- ja EAN/UPC-spesifikaatioiden edellyttämät pakolliset välilyönnit edessä ja lopussa."
+    }
   }
 }

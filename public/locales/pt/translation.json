@@ -1682,5 +1682,72 @@
     "homeSeoDesc": "Gere 37 tipos de códigos QR e códigos de barras gratuitamente. Sem inscrição. Download instantâneo. 100% do lado do cliente, compatível com ISO, 30 idiomas.",
     "homeHeroTitle": "Todas as ferramentas de QR e código de barras",
     "homeHeroTitleHighlight": "em um só lugar"
+  },
+  "research": {
+    "homeStandards": {
+      "badge": "Fundações Científicas e de Engenharia",
+      "title": "Construído com base em padrões globais verificados e pesquisas acadêmicas",
+      "subtitle": "CreateMy-QR implementa especificações abertas da ISO, IEEE e NIST para fornecer precisão matemática e segurança de confiança zero do lado do cliente.",
+      "card1Title": "Especificação ISO/IEC 18004:2015",
+      "card1Desc": "Aderência total ao padrão internacional de simbologia de matriz QR Code com padrões de localização 1:1:3:1:1 e zonas silenciosas de 4 módulos.",
+      "card1Meta": "Organização Internacional de Padronização",
+      "card2Title": "Correção de erro Reed-Solomon",
+      "card2Desc": "Algoritmos de campo polinomial Galois (Reed & Solomon, SIAM 1960) permitindo até 30% de restauração de dados visuais e incorporação de logotipo personalizado.",
+      "card2Meta": "Revista SIAM de Matemática Aplicada",
+      "card3Title": "Arquitetura de confiança zero NIST SP 800-207",
+      "card3Desc": "Execução pura de memória no navegador que elimina o risco de intermediários de banco de dados em nuvem e mitiga ameaças de phishing QR (IEEE ARES 2015).",
+      "card3Meta": "Instituto Nacional de Padrões e Tecnologia",
+      "card4Title": "Contraste óptico ISO/IEC 15415",
+      "card4Desc": "Modulação de símbolos em tempo real e verificação de contraste alinhadas com os padrões W3C WCAG 2.1 para legibilidade universal da câmera em 360°.",
+      "card4Meta": "Simbologia óptica e padrão de acessibilidade"
+    },
+    "securityResearch": {
+      "badge": "Literatura de segurança revisada por pares",
+      "title": "Alinhamento arquitetônico com pesquisa acadêmica em segurança cibernética",
+      "subtitle": "Nosso modelo de conhecimento zero do lado do cliente é informado por análises de vulnerabilidade publicadas em servidores QR dinâmicos e rastreamento em nuvem.",
+      "paper1Title": "Vulnerabilidades de encerramento e redirecionamento do lado do servidor",
+      "paper1Cite": "Krombholz et al., Conferência Internacional IEEE sobre Disponibilidade, Confiabilidade e Segurança (ARES 2015)",
+      "paper1Desc": "A pesquisa demonstra que servidores QR dinâmicos centralizados apresentam riscos de ponto único de falha, sequestro de URL e telemetria não consentida. CreateMy-QR resolve isso gerando arquivos vetoriais 100% estáticos do lado do cliente.",
+      "paper1Doi": "DOI: 10.1109/ARES.2015.39",
+      "paper2Title": "Criptografia no navegador com conhecimento zero",
+      "paper2Cite": "NIST SP 800-207 Zero Trust Architecture e Grupo de Trabalho de Criptografia Web W3C",
+      "paper2Desc": "Ao isolar toda a codificação de carga útil na sandbox WebAssembly do navegador, nenhuma credencial não criptografada, chave WiFi ou identidade vCard jamais toca um fio de rede.",
+      "paper2Doi": "Publicação Especial NIST 800-207"
+    },
+    "aboutHeritage": {
+      "badge": "Patrimônio Tecnológico",
+      "title": "Homenagem à invenção de padrão aberto de 1994",
+      "subtitle": "O código QR foi inventado para democratizar a troca rápida e confiável de informações sem acesso pago proprietário.",
+      "card1Title": "Masahiro Hara e Denso Wave (1994)",
+      "card1Desc": "Inventado por Masahiro Hara, o código QR superou a limitação de 20 caracteres dos códigos de barras 1D. A Denso Wave tornou a patente aberta e gratuita para o mundo, inspirando nosso espírito 100% gratuito.",
+      "card2Title": "Marcos de padronização global",
+      "card2Desc": "Padronizado como AIM ITS em 1997, JIS X 0510 em 1999 e ISO/IEC 18004 em 2000. Mantemos estrita compatibilidade retroativa e futura com todas as versões.",
+      "card3Title": "Prémio Inventor Europeu (2014)",
+      "card3Desc": "Reconhecida globalmente por transformar logística, saúde e interação digital. Levamos adiante essa missão por meio de ferramentas de alta resolução do lado do cliente."
+    },
+    "compareEvidence": {
+      "badge": "Análise de Arquitetura Empírica",
+      "title": "Por que o lado do cliente supera os geradores hospedados na nuvem",
+      "subtitle": "Comparando as diferenças arquitetônicas entre geradores tradicionais baseados em redirecionamento e o modelo de execução local do CreateMy-QR.",
+      "col1Title": "Modelos de redirecionamento de nuvem (concorrentes)",
+      "col1Point1": "O tempo de inatividade do servidor interrompe permanentemente seus códigos QR impressos.",
+      "col1Point2": "Dados de varredura do usuário e endereços IP registrados em bancos de dados comerciais.",
+      "col1Point3": "Taxas de assinatura necessárias para evitar a expiração do link.",
+      "col2Title": "Modelo direto do lado do cliente (CreateMy-QR)",
+      "col2Point1": "Codificação direta: os códigos QR funcionam para sempre, sem qualquer dependência do servidor.",
+      "col2Point2": "Rastreamento zero: as varreduras se conectam diretamente da câmera ao destino.",
+      "col2Point3": "100% gratuito para sempre: sem acesso pago, sem limites de varredura, sem links expirados."
+    },
+    "barcodePhysics": {
+      "badge": "Verificação óptica",
+      "title": "Padrões de qualidade de impressão e contraste ISO/IEC 15416",
+      "subtitle": "Projetado para atender aos padrões industriais de verificação de código de barras para varejo, armazenamento e saúde.",
+      "feat1Title": "Contraste e refletância do símbolo",
+      "feat1Desc": "Está em conformidade com a diferença mínima de refletância ISO/IEC 15416 (Rmin/Rmax) para evitar a dispersão do feixe de laser do scanner.",
+      "feat2Title": "Modulação e determinação de borda",
+      "feat2Desc": "A renderização vetorial SVG garante bordas de barra nítidas com precisão de subpixel em impressoras térmicas e a laser.",
+      "feat3Title": "Integridade da Zona Silenciosa",
+      "feat3Desc": "Aplica espaços em branco obrigatórios à esquerda e à direita exigidos pelas especificações GS1 e EAN/UPC."
+    }
   }
 }

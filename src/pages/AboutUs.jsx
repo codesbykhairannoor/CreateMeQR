@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Users, Globe2, ShieldCheck, Zap, ArrowRight, Heart } from 'lucide-react';
+import { Users, Globe2, ShieldCheck, Zap, ArrowRight, Heart, History, Sparkles, BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function AboutUs() {
@@ -99,7 +99,83 @@ export default function AboutUs() {
           </div>
         </section>
 
-        {/* Section 5: Join the Movement */}
+        {/* Section 5: Technological Heritage */}
+        <section className="w-full py-32 px-6 bg-slate-100/60 dark:bg-[#060d1f] border-t border-slate-200 dark:border-[#1e2d4a] relative">
+          <div className="max-w-6xl mx-auto relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <div className="inline-flex items-center gap-2 px-5 py-2 bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 rounded-full font-bold text-xs uppercase tracking-widest mb-6 border border-blue-200 dark:border-blue-500/30">
+                <History size={14} /> {t('research.aboutHeritage.badge', 'Historical Foundations & Open Standards')}
+              </div>
+              <h2 className="text-[clamp(1.8rem,4vw,2.75rem)] font-extrabold tracking-tight leading-[1.15] text-slate-900 dark:text-white mb-6">
+                {t('research.aboutHeritage.title', 'Technological Heritage & The Open Standard Movement')}
+              </h2>
+              <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+                {t('research.aboutHeritage.subtitle', 'QR technology was born out of an open-patent commitment by Denso Wave in 1994. CreateMeQR honors that legacy.')}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Card 1: 1994 Invention */}
+              <div className="bg-white dark:bg-[#0a1128] p-8 md:p-10 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center font-mono font-extrabold text-sm mb-6 border border-blue-100 dark:border-blue-800">
+                    '94
+                  </div>
+                  <h3 className="text-xl font-extrabold text-slate-900 dark:text-white mb-4">
+                    {t('research.aboutHeritage.card1Title', '1994: The Invention by Masahiro Hara')}
+                  </h3>
+                  <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
+                    {t('research.aboutHeritage.card1Desc', 'Developed at Denso Wave to track automotive parts with 10x speed and 360-degree high-speed reading via position detection patterns.')}
+                  </p>
+                </div>
+                <div className="mt-8 pt-4 border-t border-slate-100 dark:border-[#1e2d4a] text-xs font-mono text-slate-500 dark:text-slate-400">
+                  Origin: Denso Wave / Toyota Group
+                </div>
+              </div>
+
+              {/* Card 2: Free Patent */}
+              <div className="bg-white dark:bg-[#0a1128] p-8 md:p-10 rounded-[2.5rem] border-2 border-blue-500/40 dark:border-blue-500/50 shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between relative">
+                <div className="absolute -top-3 right-8 px-3 py-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-[11px] font-extrabold rounded-full tracking-wider uppercase shadow-md">
+                  Open Standard
+                </div>
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center font-mono font-extrabold text-sm mb-6 border border-indigo-100 dark:border-indigo-800">
+                    ISO
+                  </div>
+                  <h3 className="text-xl font-extrabold text-slate-900 dark:text-white mb-4">
+                    {t('research.aboutHeritage.card2Title', 'The Free-Standard Commitment')}
+                  </h3>
+                  <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
+                    {t('research.aboutHeritage.card2Desc', 'Denso Wave elected not to exercise its patent rights, granting the world unrestricted access to open, unencumbered 2D symbology.')}
+                  </p>
+                </div>
+                <div className="mt-8 pt-4 border-t border-slate-100 dark:border-[#1e2d4a] text-xs font-mono text-blue-600 dark:text-blue-400 font-bold">
+                  Patent Waiver: Free Worldwide Use
+                </div>
+              </div>
+
+              {/* Card 3: Our Mission */}
+              <div className="bg-white dark:bg-[#0a1128] p-8 md:p-10 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-mono font-extrabold text-sm mb-6 border border-emerald-100 dark:border-emerald-800">
+                    2026+
+                  </div>
+                  <h3 className="text-xl font-extrabold text-slate-900 dark:text-white mb-4">
+                    {t('research.aboutHeritage.card3Title', 'Our Mission: Open Client-Side Tools')}
+                  </h3>
+                  <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
+                    {t('research.aboutHeritage.card3Desc', 'Preserving the original promise of unhindered, serverless utility for millions of creators, businesses, and developers.')}
+                  </p>
+                </div>
+                <div className="mt-8 pt-4 border-t border-slate-100 dark:border-[#1e2d4a] text-xs font-mono text-slate-500 dark:text-slate-400">
+                  Execution: 100% In-Browser Wasm
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 6: Join the Movement */}
         <section className="w-full py-32 px-6 text-center">
           <div className="max-w-3xl mx-auto">
             <Heart size={64} className="mx-auto mb-8 text-blue-600 dark:text-blue-400 animate-pulse" />

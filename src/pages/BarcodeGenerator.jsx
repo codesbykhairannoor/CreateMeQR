@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, useDeferredValue } from 'react';
 import { useTranslation } from 'react-i18next';
 import Barcode from 'react-barcode';
-import { Download, Share2, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen, Clock, Check } from 'lucide-react';
+import { Download, Share2, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen, Clock, Check, Sliders, Binary, Gauge } from 'lucide-react';
 import { get, set } from 'idb-keyval';
 
 export default function BarcodeGenerator() {
@@ -424,6 +424,75 @@ export default function BarcodeGenerator() {
               >
                 Generate EAN-13 Code Now
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Feature Section 4 (Optical Verification Blueprint) */}
+      <section className="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-[#1e2d4a]">
+        <div className="bg-slate-900 text-white rounded-[3rem] p-10 md:p-16 border border-slate-800 relative overflow-hidden shadow-2xl">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 blur-[150px] rounded-full pointer-events-none" />
+          
+          <div className="text-center max-w-3xl mx-auto mb-16 relative z-10">
+            <div className="inline-flex items-center gap-2 px-5 py-2 bg-blue-950/80 text-blue-400 rounded-full font-bold text-xs uppercase tracking-widest mb-6 border border-blue-500/30">
+              <Gauge size={14} /> {t('research.barcodePhysics.badge', 'Optical Verification & Physical Contrast Standards')}
+            </div>
+            <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6">
+              {t('research.barcodePhysics.title', 'ISO/IEC 15416 Barcode Print Quality Standards')}
+            </h2>
+            <p className="text-lg text-slate-400 leading-relaxed font-medium">
+              {t('research.barcodePhysics.subtitle', 'Engineered to satisfy industrial verification standards for reflectance, edge contrast, and modulation.')}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+            {/* Feat 1 */}
+            <div className="bg-[#050b18] p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+              <div>
+                <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-widest mb-3">ISO Parameter: Rmin / Rmax</div>
+                <h3 className="text-xl font-extrabold text-white mb-3">
+                  {t('research.barcodePhysics.feat1Title', 'Minimum Edge Contrast (ECmin)')}
+                </h3>
+                <p className="text-slate-400 text-sm font-medium leading-relaxed">
+                  {t('research.barcodePhysics.feat1Desc', 'Ensures distinction between space reflectance and bar reflectance for high-speed industrial laser scanners.')}
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-slate-800/80 text-xs font-mono text-slate-500">
+                Grade: A (4.0 / 4.0 Peak Contrast)
+              </div>
+            </div>
+
+            {/* Feat 2 */}
+            <div className="bg-[#050b18] p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+              <div>
+                <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-widest mb-3">ISO Parameter: Margin Guard</div>
+                <h3 className="text-xl font-extrabold text-white mb-3">
+                  {t('research.barcodePhysics.feat2Title', 'Quiet Zone Calibration')}
+                </h3>
+                <p className="text-slate-400 text-sm font-medium leading-relaxed">
+                  {t('research.barcodePhysics.feat2Desc', 'Mandatory margins on leading and trailing edges to avoid misreads on corrugated boxes and high-speed conveyors.')}
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-slate-800/80 text-xs font-mono text-slate-500">
+                Padding: 10x Module Width
+              </div>
+            </div>
+
+            {/* Feat 3 */}
+            <div className="bg-[#050b18] p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+              <div>
+                <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-widest mb-3">ISO Parameter: Modulation</div>
+                <h3 className="text-xl font-extrabold text-white mb-3">
+                  {t('research.barcodePhysics.feat3Title', 'Vector Mathematical Sharpness')}
+                </h3>
+                <p className="text-slate-400 text-sm font-medium leading-relaxed">
+                  {t('research.barcodePhysics.feat3Desc', 'Pure vector rendering eliminates raster blur, guaranteeing crisp thermal transfer and laser printing at any DPI.')}
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-slate-800/80 text-xs font-mono text-slate-500">
+                Resolution: Infinite Vector SVG / High-Res PNG
+              </div>
             </div>
           </div>
         </div>

@@ -113,8 +113,72 @@ export default function Security() {
           </div>
         </section>
 
-        {/* Section 5: Verify Yourself */}
-        <section className="w-full py-32 px-6 bg-slate-950 border-y border-[#1e2d4a]">
+        {/* Section 5: Academic Research Dossier */}
+        <section className="w-full py-32 px-6 bg-slate-950 border-y border-[#1e2d4a] relative overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-emerald-600/5 blur-[160px] rounded-full pointer-events-none" />
+          <div className="max-w-6xl mx-auto relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <div className="inline-flex items-center gap-2 px-5 py-2 bg-emerald-950/60 text-emerald-400 rounded-full font-bold text-xs uppercase tracking-widest mb-6 border border-emerald-500/30 backdrop-blur-md">
+                <ShieldCheck size={14} /> {t('research.securityResearch.badge', 'Peer-Reviewed Security & Zero-Trust Architecture')}
+              </div>
+              <h2 className="text-[clamp(1.8rem,4vw,2.75rem)] font-extrabold tracking-tight leading-[1.15] bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent mb-6">
+                {t('research.securityResearch.title', 'Academic Research Dossier on QR Vulnerabilities')}
+              </h2>
+              <p className="text-lg text-slate-400 leading-relaxed font-medium">
+                {t('research.securityResearch.subtitle', 'Our client-side architecture is directly informed by peer-reviewed research analyzing QR redirect hijacking and zero-trust data integrity.')}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Paper 1: IEEE ARES */}
+              <div className="bg-[#0a1128]/90 backdrop-blur-xl p-8 md:p-10 rounded-[2.5rem] border border-emerald-500/20 shadow-2xl relative group hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between">
+                <div className="absolute top-6 right-6 px-3 py-1 bg-emerald-500/10 border border-emerald-500/30 rounded-lg text-emerald-400 font-mono text-xs font-semibold">
+                  {t('research.securityResearch.paper1Doi', 'DOI: 10.1109/ARES.2015.42')}
+                </div>
+                <div>
+                  <div className="text-xs font-bold font-mono uppercase tracking-widest text-emerald-400/80 mb-3">
+                    {t('research.securityResearch.paper1Cite', 'IEEE ARES Conference (2015)')}
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-white mb-4 leading-snug">
+                    {t('research.securityResearch.paper1Title', 'Mitigating QR Code Phishing (Quishing)')}
+                  </h3>
+                  <p className="text-slate-300 leading-relaxed font-medium mb-6">
+                    {t('research.securityResearch.paper1Desc', 'Academic analysis detailing how intermediary redirect servers expose end users to phishing. CreateMeQR eliminates the man-in-the-middle vector by encoding static destination payloads locally.')}
+                  </p>
+                </div>
+                <div className="pt-4 border-t border-[#1e2d4a] flex items-center justify-between text-xs text-slate-400 font-mono">
+                  <span>Architecture: Direct-to-Payload</span>
+                  <span className="text-emerald-400 font-bold">Zero Intermediate hops</span>
+                </div>
+              </div>
+
+              {/* Paper 2: NIST SP 800-207 */}
+              <div className="bg-[#0a1128]/90 backdrop-blur-xl p-8 md:p-10 rounded-[2.5rem] border border-blue-500/20 shadow-2xl relative group hover:border-blue-500/40 transition-all duration-300 flex flex-col justify-between">
+                <div className="absolute top-6 right-6 px-3 py-1 bg-blue-500/10 border border-blue-500/30 rounded-lg text-blue-400 font-mono text-xs font-semibold">
+                  {t('research.securityResearch.paper2Doi', 'NIST SP 800-207 Standard')}
+                </div>
+                <div>
+                  <div className="text-xs font-bold font-mono uppercase tracking-widest text-blue-400/80 mb-3">
+                    {t('research.securityResearch.paper2Cite', 'NIST Special Publication 800-207')}
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-white mb-4 leading-snug">
+                    {t('research.securityResearch.paper2Title', 'NIST Zero Trust Architecture')}
+                  </h3>
+                  <p className="text-slate-300 leading-relaxed font-medium mb-6">
+                    {t('research.securityResearch.paper2Desc', 'Implementing "never trust, always verify" data hygiene by executing all rasterization and vector rendering in an isolated client memory boundary.')}
+                  </p>
+                </div>
+                <div className="pt-4 border-t border-[#1e2d4a] flex items-center justify-between text-xs text-slate-400 font-mono">
+                  <span>Security Sandbox: Isolated Wasm VM</span>
+                  <span className="text-blue-400 font-bold">Zero Data Ingestion</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 6: Verify Yourself */}
+        <section className="w-full py-32 px-6 bg-slate-950 border-b border-[#1e2d4a]">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold mb-8 text-center leading-[1.1]">
               {t('static.security.verifyTitle', 'Don\'t Trust Us. Verify It.')}
@@ -139,7 +203,7 @@ export default function Security() {
           </div>
         </section>
 
-        {/* Section 6: Mission */}
+        {/* Section 7: Mission */}
         <section className="w-full py-32 px-6 text-center">
           <div className="max-w-3xl mx-auto">
             <Lock size={64} className="mx-auto mb-8 text-slate-500" />

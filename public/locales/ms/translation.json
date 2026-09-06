@@ -1682,5 +1682,72 @@
     "homeSeoDesc": "Hasilkan 37 jenis kod QR dan kod bar secara percuma. Tiada pendaftaran. Muat turun segera. 100% bahagian pelanggan, mematuhi ISO, 30 bahasa.",
     "homeHeroTitle": "Semua Alat QR & Kod Bar",
     "homeHeroTitleHighlight": "di Satu Tempat"
+  },
+  "research": {
+    "homeStandards": {
+      "badge": "Asas Saintifik & Kejuruteraan",
+      "title": "Dibina pada Piawaian Global & Penyelidikan Akademik yang Disahkan",
+      "subtitle": "CreateMy-QR melaksanakan spesifikasi terbuka daripada ISO, IEEE dan NIST untuk menyampaikan ketepatan matematik dan keselamatan sifar amanah sisi pelanggan.",
+      "card1Title": "Spesifikasi ISO/IEC 18004:2015",
+      "card1Desc": "Pematuhan penuh kepada piawaian simbol matriks matriks QR antarabangsa dengan corak pencari 1:1:3:1:1 dan zon tenang 4 modul.",
+      "card1Meta": "Pertubuhan Antarabangsa untuk Standardisasi",
+      "card2Title": "Pembetulan Ralat Reed-Solomon",
+      "card2Desc": "Algoritma medan Polinomial Galois (Reed & Solomon, SIAM 1960) membenarkan sehingga 30% pemulihan data visual dan pembenaman logo tersuai.",
+      "card2Meta": "Jurnal Matematik Gunaan SIAM",
+      "card3Title": "NIST SP 800-207 Seni Bina Sifar Amanah",
+      "card3Desc": "Pelaksanaan memori dalam penyemak imbas tulen yang menghapuskan risiko orang tengah pangkalan data awan dan mengurangkan ancaman pancingan data QR (IEEE ARES 2015).",
+      "card3Meta": "Institut Piawaian & Teknologi Negara",
+      "card4Title": "Kontras Optik ISO/IEC 15415",
+      "card4Desc": "Modulasi simbol masa nyata dan semakan kontras sejajar dengan piawaian W3C WCAG 2.1 untuk kebolehbacaan kamera 360° universal.",
+      "card4Meta": "Simbolologi Optik & Standard Kebolehcapaian"
+    },
+    "securityResearch": {
+      "badge": "Literatur Keselamatan yang Disemak Rakan Sebaya",
+      "title": "Penjajaran Seni Bina dengan Penyelidikan Keselamatan Siber Akademik",
+      "subtitle": "Model sisi pelanggan pengetahuan sifar kami dimaklumkan oleh analisis kerentanan yang diterbitkan pada pelayan QR dinamik dan penjejakan awan.",
+      "paper1Title": "Quishing & Kerentanan Ubah Hala Sebelah Pelayan",
+      "paper1Cite": "Krombholz et al., Persidangan Antarabangsa IEEE mengenai Ketersediaan, Kebolehpercayaan dan Keselamatan (ARES 2015)",
+      "paper1Desc": "Penyelidikan menunjukkan bahawa pelayan QR dinamik berpusat memperkenalkan risiko satu titik kegagalan, rampasan URL dan telemetri tanpa persetujuan. CreateMy-QR menyelesaikan masalah ini dengan menjana 100% statik, fail vektor sisi klien.",
+      "paper1Doi": "DOI: 10.1109/ARES.2015.39",
+      "paper2Title": "Kriptografi Dalam Pelayar Berpengetahuan Sifar",
+      "paper2Cite": "NIST SP 800-207 Zero Trust Architecture & Kumpulan Kerja Kriptografi Web W3C",
+      "paper2Desc": "Dengan mengasingkan semua pengekodan muatan dalam kotak pasir WebAssembly penyemak imbas, tiada bukti kelayakan yang tidak disulitkan, kunci WiFi atau identiti vCard yang pernah menyentuh wayar rangkaian.",
+      "paper2Doi": "Penerbitan Khas NIST 800-207"
+    },
+    "aboutHeritage": {
+      "badge": "Warisan Teknologi",
+      "title": "Menghormati Ciptaan Standard Terbuka 1994",
+      "subtitle": "Kod QR dicipta untuk mendemokrasikan pertukaran maklumat yang pantas dan boleh dipercayai tanpa paywall proprietari.",
+      "card1Title": "Masahiro Hara & Denso Wave (1994)",
+      "card1Desc": "Dicipta oleh Masahiro Hara, kod QR mengatasi had 20 aksara kod bar 1D. Denso Wave menjadikan paten terbuka dan percuma kepada dunia, memberi inspirasi kepada 100% etos percuma kami.",
+      "card2Title": "Pencapaian Standardisasi Global",
+      "card2Desc": "Dipiawaikan sebagai AIM ITS pada tahun 1997, JIS X 0510 pada tahun 1999, dan ISO/IEC 18004 pada tahun 2000. Kami mengekalkan keserasian ke belakang dan ke hadapan yang ketat dengan setiap versi.",
+      "card3Title": "Anugerah Pencipta Eropah (2014)",
+      "card3Desc": "Diiktiraf secara global untuk mengubah logistik, penjagaan kesihatan dan interaksi digital. Kami meneruskan misi ini melalui perkakas sisi klien resolusi tinggi."
+    },
+    "compareEvidence": {
+      "badge": "Analisis Seni Bina Empirikal",
+      "title": "Mengapa Sisi Pelanggan Mengatasi Penjana Dihoskan Awan",
+      "subtitle": "Membandingkan perbezaan seni bina antara penjana berasaskan ubah hala tradisional dan model pelaksanaan tempatan CreateMy-QR.",
+      "col1Title": "Model Cloud Redirect (Pesaing)",
+      "col1Point1": "Masa henti pelayan memecahkan kod QR anda yang dicetak secara kekal.",
+      "col1Point2": "Data imbasan pengguna dan alamat IP yang dilog masuk dalam pangkalan data komersial.",
+      "col1Point3": "Yuran langganan diperlukan untuk mengelakkan tamat tempoh pautan.",
+      "col2Title": "Model Sisi Pelanggan Langsung (CreateMy-QR)",
+      "col2Point1": "Pengekodan terus: Kod QR berfungsi selama-lamanya tanpa sebarang pergantungan pelayan.",
+      "col2Point2": "Penjejakan sifar: Imbasan bersambung terus dari kamera ke destinasi.",
+      "col2Point3": "100% percuma selamanya: Tiada paywall, tiada had imbasan, tiada pautan tamat tempoh."
+    },
+    "barcodePhysics": {
+      "badge": "Pengesahan Optik",
+      "title": "Piawaian Kualiti Cetakan & Kontras ISO/IEC 15416",
+      "subtitle": "Direka untuk memenuhi piawaian pengesahan kod bar industri untuk runcit, pergudangan dan penjagaan kesihatan.",
+      "feat1Title": "Kontras Simbol & Pantulan",
+      "feat1Desc": "Mematuhi perbezaan pemantulan minimum ISO/IEC 15416 (Rmin/Rmax) untuk mengelakkan penyebaran pancaran laser pengimbas.",
+      "feat2Title": "Modulasi & Penentuan Tepi",
+      "feat2Desc": "Paparan SVG vektor menjamin tepi bar tajam dengan ketepatan sub-piksel merentas pencetak terma dan laser.",
+      "feat3Title": "Integriti Zon Tenang",
+      "feat3Desc": "Menguatkuasakan ruang putih pendahuluan dan pengekoran mandatori yang diperlukan oleh spesifikasi GS1 dan EAN/UPC."
+    }
   }
 }

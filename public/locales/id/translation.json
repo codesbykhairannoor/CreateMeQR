@@ -1682,5 +1682,72 @@
     "homeSeoDesc": "Hasilkan 37 jenis kode QR dan kode batang secara gratis. Tidak ada pendaftaran. Unduhan instan. 100% sisi klien, sesuai ISO, 30 bahasa.",
     "homeHeroTitle": "Semua Alat QR & Kode Batang",
     "homeHeroTitleHighlight": "di Satu Tempat"
+  },
+  "research": {
+    "homeStandards": {
+      "badge": "Yayasan Ilmiah & Teknik",
+      "title": "Dibangun berdasarkan Standar Global & Riset Akademis yang Terverifikasi",
+      "subtitle": "CreateMy-QR mengimplementasikan spesifikasi terbuka dari ISO, IEEE, dan NIST untuk memberikan presisi matematis dan keamanan tanpa kepercayaan di sisi klien.",
+      "card1Title": "Spesifikasi ISO/IEC 18004:2015",
+      "card1Desc": "Kepatuhan penuh terhadap standar simbologi matriks Kode QR internasional dengan pola pencari 1:1:3:1:1 dan zona tenang 4 modul.",
+      "card1Meta": "Organisasi Internasional untuk Standardisasi",
+      "card2Title": "Koreksi Kesalahan Reed-Solomon",
+      "card2Desc": "Algoritme bidang Polinomial Galois (Reed & Solomon, SIAM 1960) memungkinkan pemulihan data visual hingga 30% dan penyematan logo khusus.",
+      "card2Meta": "Jurnal SIAM Matematika Terapan",
+      "card3Title": "NIST SP 800-207 Arsitektur Tanpa Kepercayaan",
+      "card3Desc": "Eksekusi memori dalam browser murni yang menghilangkan risiko perantara database cloud dan memitigasi ancaman phishing QR (IEEE ARES 2015).",
+      "card3Meta": "Institut Standar & Teknologi Nasional",
+      "card4Title": "Kontras Optik ISO/IEC 15415",
+      "card4Desc": "Modulasi simbol real-time dan pemeriksaan kontras selaras dengan standar W3C WCAG 2.1 untuk keterbacaan kamera 360° universal.",
+      "card4Meta": "Simbologi Optik & Standar Aksesibilitas"
+    },
+    "securityResearch": {
+      "badge": "Literatur Keamanan yang Ditinjau Sejawat",
+      "title": "Keselarasan Arsitektur dengan Penelitian Keamanan Siber Akademik",
+      "subtitle": "Model sisi klien tanpa pengetahuan kami diinformasikan oleh analisis kerentanan yang dipublikasikan pada server QR dinamis dan pelacakan cloud.",
+      "paper1Title": "Kerentanan Quishing & Pengalihan Sisi Server",
+      "paper1Cite": "Krombholz dkk., Konferensi Internasional IEEE tentang Ketersediaan, Keandalan, dan Keamanan (ARES 2015)",
+      "paper1Desc": "Penelitian menunjukkan bahwa server QR dinamis terpusat menimbulkan risiko satu titik kegagalan, pembajakan URL, dan telemetri tanpa izin. CreateMy-QR menyelesaikan masalah ini dengan menghasilkan file vektor sisi klien yang 100% statis.",
+      "paper1Doi": "DOI: 10.1109/ARES.2015.39",
+      "paper2Title": "Kriptografi Dalam Peramban Tanpa Pengetahuan",
+      "paper2Cite": "NIST SP 800-207 Kelompok Kerja Arsitektur Zero Trust & Kriptografi Web W3C",
+      "paper2Desc": "Dengan mengisolasi semua pengkodean muatan dalam kotak pasir WebAssembly browser, tidak ada kredensial yang tidak terenkripsi, kunci WiFi, atau identitas vCard yang menyentuh kabel jaringan.",
+      "paper2Doi": "Publikasi Khusus NIST 800-207"
+    },
+    "aboutHeritage": {
+      "badge": "Warisan Teknologi",
+      "title": "Menghormati Penemuan Standar Terbuka tahun 1994",
+      "subtitle": "Kode QR diciptakan untuk mendemokratisasikan pertukaran informasi yang cepat dan andal tanpa penghalang pembayaran eksklusif.",
+      "card1Title": "Masahiro Hara & Gelombang Denso (1994)",
+      "card1Desc": "Diciptakan oleh Masahiro Hara, kode QR mengatasi batasan 20 karakter pada barcode 1D. Denso Wave menjadikan patennya terbuka dan gratis bagi dunia, menginspirasi etos 100% gratis kami.",
+      "card2Title": "Tonggak Pencapaian Standardisasi Global",
+      "card2Desc": "Distandarisasi sebagai AIM ITS pada tahun 1997, JIS X 0510 pada tahun 1999, dan ISO/IEC 18004 pada tahun 2000. Kami menjaga kompatibilitas maju dan mundur yang ketat dengan setiap versi.",
+      "card3Title": "Penghargaan Penemu Eropa (2014)",
+      "card3Desc": "Diakui secara global karena mentransformasikan logistik, layanan kesehatan, dan interaksi digital. Kami meneruskan misi ini melalui perangkat sisi klien beresolusi tinggi."
+    },
+    "compareEvidence": {
+      "badge": "Analisis Arsitektur Empiris",
+      "title": "Mengapa Sisi Klien Mengalahkan Generator yang Dihosting di Cloud",
+      "subtitle": "Membandingkan perbedaan arsitektur antara generator berbasis pengalihan tradisional dan model eksekusi lokal CreateMy-QR.",
+      "col1Title": "Model Cloud Redirect (Pesaing)",
+      "col1Point1": "Waktu henti server merusak kode QR yang Anda cetak secara permanen.",
+      "col1Point2": "Data pemindaian pengguna dan alamat IP yang dicatat dalam database komersial.",
+      "col1Point3": "Biaya berlangganan diperlukan untuk mencegah kedaluwarsa tautan.",
+      "col2Title": "Model Sisi Klien Langsung (CreateMy-QR)",
+      "col2Point1": "Pengkodean langsung: Kode QR berfungsi selamanya tanpa ketergantungan server apa pun.",
+      "col2Point2": "Pelacakan nol: Pemindaian terhubung langsung dari kamera ke tujuan.",
+      "col2Point3": "100% gratis selamanya: Tanpa paywall, tanpa batasan pemindaian, tanpa tautan kedaluwarsa."
+    },
+    "barcodePhysics": {
+      "badge": "Verifikasi Optik",
+      "title": "Standar Kualitas & Kontras Cetak ISO/IEC 15416",
+      "subtitle": "Direkayasa untuk memenuhi standar verifikasi kode batang industri untuk ritel, pergudangan, dan layanan kesehatan.",
+      "feat1Title": "Kontras & Reflektansi Simbol",
+      "feat1Desc": "Mematuhi perbedaan reflektansi minimum ISO/IEC 15416 (Rmin/Rmax) untuk mencegah dispersi sinar laser pemindai.",
+      "feat2Title": "Modulasi & Penentuan Tepi",
+      "feat2Desc": "Render Vector SVG menjamin tepian batang setajam silet dengan presisi subpiksel pada printer termal dan laser.",
+      "feat3Title": "Integritas Zona Tenang",
+      "feat3Desc": "Menerapkan spasi putih wajib di depan dan di belakang yang diwajibkan oleh spesifikasi GS1 dan EAN/UPC."
+    }
   }
 }

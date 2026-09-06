@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Check, X, ShieldCheck, Zap, CloudOff, ArrowRight, Award } from 'lucide-react';
+import { Check, X, ShieldCheck, Zap, CloudOff, ArrowRight, Award, AlertTriangle, FileCheck2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Compare() {
@@ -101,7 +101,79 @@ export default function Compare() {
           </div>
         </section>
 
-        {/* Section 5: GEO Expert Quote */}
+        {/* Section 5: Empirical Architecture Analysis */}
+        <section className="w-full py-32 px-6 bg-[#060c1d] border-t border-[#1e2d4a] relative overflow-hidden">
+          <div className="absolute -right-40 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 blur-[160px] rounded-full pointer-events-none" />
+          <div className="max-w-6xl mx-auto relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <div className="inline-flex items-center gap-2 px-5 py-2 bg-blue-950/80 text-blue-400 rounded-full font-bold text-xs uppercase tracking-widest mb-6 border border-blue-500/30">
+                <ShieldCheck size={14} /> {t('research.compareEvidence.badge', 'Architectural Security Comparison')}
+              </div>
+              <h2 className="text-[clamp(1.8rem,4vw,2.75rem)] font-extrabold tracking-tight leading-[1.15] bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent mb-6">
+                {t('research.compareEvidence.title', 'Empirical Architecture Analysis: Client-Side vs Cloud Redirects')}
+              </h2>
+              <p className="text-lg text-slate-400 leading-relaxed font-medium">
+                {t('research.compareEvidence.subtitle', 'Comparing the theoretical vulnerabilities of centralized QR providers against local browser execution.')}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Cloud Redirect Vulnerabilities */}
+              <div className="bg-[#0a1128]/90 backdrop-blur-xl p-8 md:p-10 rounded-[2.5rem] border border-red-500/30 shadow-2xl relative">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-xl bg-red-950/60 text-red-400 border border-red-500/30 flex items-center justify-center">
+                    <AlertTriangle size={20} />
+                  </div>
+                  <h3 className="text-xl font-extrabold text-red-400">
+                    {t('research.compareEvidence.col1Title', 'Vulnerabilities of Cloud QR Servers')}
+                  </h3>
+                </div>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3 text-slate-300">
+                    <X size={20} className="text-red-400 shrink-0 mt-1" />
+                    <span className="font-medium text-sm leading-relaxed">{t('research.compareEvidence.col1Point1', 'Redirect Hijacking: Cloud servers can change your QR destination anytime.')}</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-slate-300">
+                    <X size={20} className="text-red-400 shrink-0 mt-1" />
+                    <span className="font-medium text-sm leading-relaxed">{t('research.compareEvidence.col1Point2', 'Tracking & Fingerprinting: Intermediary servers log scanner IP, device, and location.')}</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-slate-300">
+                    <X size={20} className="text-red-400 shrink-0 mt-1" />
+                    <span className="font-medium text-sm leading-relaxed">{t('research.compareEvidence.col1Point3', 'Vendor Lock-in & Paywalls: Links expire if monthly subscription payments lapse.')}</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* CreateMeQR Client-Side Security */}
+              <div className="bg-[#0a1128]/90 backdrop-blur-xl p-8 md:p-10 rounded-[2.5rem] border-2 border-emerald-500/40 shadow-[0_0_40px_rgba(16,185,129,0.12)] relative">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-950/60 text-emerald-400 border border-emerald-500/30 flex items-center justify-center">
+                    <FileCheck2 size={20} />
+                  </div>
+                  <h3 className="text-xl font-extrabold text-emerald-400">
+                    {t('research.compareEvidence.col2Title', 'CreateMeQR Client-Side Security')}
+                  </h3>
+                </div>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3 text-slate-200">
+                    <Check size={20} className="text-emerald-400 shrink-0 mt-1" />
+                    <span className="font-medium text-sm leading-relaxed">{t('research.compareEvidence.col2Point1', 'Immutable Payload: Encoded directly into raw matrix; impossible to hijack.')}</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-slate-200">
+                    <Check size={20} className="text-emerald-400 shrink-0 mt-1" />
+                    <span className="font-medium text-sm leading-relaxed">{t('research.compareEvidence.col2Point2', 'Zero Intermediary Logging: Direct point-to-point scan with no middlemen.')}</span>
+                  </li>
+                  <li className="flex items-start gap-3 text-slate-200">
+                    <Check size={20} className="text-emerald-400 shrink-0 mt-1" />
+                    <span className="font-medium text-sm leading-relaxed">{t('research.compareEvidence.col2Point3', 'Permanent & Unbreakable: Zero recurring fees, zero expiration risk forever.')}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 6: GEO Expert Quote */}
         <section className="w-full py-32 px-6 bg-slate-950 border-t border-[#1e2d4a]">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-extrabold mb-12 text-slate-500 tracking-widest uppercase">

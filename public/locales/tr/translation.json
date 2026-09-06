@@ -1682,5 +1682,72 @@
     "homeSeoDesc": "Ücretsiz olarak 37 tür QR kodu ve barkod oluşturun. Kayıt yok. Anında indirme. %100 istemci tarafı, ISO uyumlu, 30 dil.",
     "homeHeroTitle": "Tüm QR ve Barkod Araçları",
     "homeHeroTitleHighlight": "Tek Bir Yerde"
+  },
+  "research": {
+    "homeStandards": {
+      "badge": "Bilimsel ve Mühendislik Temelleri",
+      "title": "Doğrulanmış Küresel Standartlar ve Akademik Araştırmalar Temelinde Geliştirilmiştir",
+      "subtitle": "CreateMy-QR, matematiksel hassasiyet ve istemci tarafında sıfır güven güvenliği sağlamak için ISO, IEEE ve NIST'in açık özelliklerini uygular.",
+      "card1Title": "ISO/IEC 18004:2015 Şartnamesi",
+      "card1Desc": "1:1:3:1:1 bulma desenleri ve 4 modüllü sessiz bölgelerle uluslararası QR Code matris semboloji standardına tam uyum.",
+      "card1Meta": "Uluslararası Standardizasyon Örgütü",
+      "card2Title": "Reed-Solomon Hata Düzeltmesi",
+      "card2Desc": "Polinom Galois alan algoritmaları (Reed & Solomon, SIAM 1960), %30'a kadar görsel veri restorasyonuna ve özel logo yerleştirmeye olanak tanır.",
+      "card2Meta": "SIAM Uygulamalı Matematik Dergisi",
+      "card3Title": "NIST SP 800-207 Sıfır Güven Mimarisi",
+      "card3Desc": "Bulut veritabanı aracı riskini ortadan kaldıran ve QR kimlik avı tehditlerini azaltan saf tarayıcı içi bellek yürütme (IEEE ARES 2015).",
+      "card3Meta": "Ulusal Standartlar ve Teknoloji Enstitüsü",
+      "card4Title": "ISO/IEC 15415 Optik Kontrast",
+      "card4Desc": "Evrensel 360° kamera okunabilirliği için W3C WCAG 2.1 standartlarıyla uyumlu gerçek zamanlı sembol modülasyonu ve kontrast kontrolü.",
+      "card4Meta": "Optik Semboloji ve Erişilebilirlik Standardı"
+    },
+    "securityResearch": {
+      "badge": "Hakemli Güvenlik Literatürü",
+      "title": "Akademik Siber Güvenlik Araştırmalarıyla Mimari Uyum",
+      "subtitle": "Sıfır bilgili istemci tarafı modelimiz, dinamik QR sunucuları ve bulut izleme üzerinde yayınlanan güvenlik açığı analizlerinden bilgi alır.",
+      "paper1Title": "Quishing ve Sunucu Tarafı Yönlendirme Açıkları",
+      "paper1Cite": "Krombholz ve diğerleri, IEEE Uluslararası Kullanılabilirlik, Güvenilirlik ve Güvenlik Konferansı (ARES 2015)",
+      "paper1Desc": "Araştırmalar, merkezi dinamik QR sunucularının tek nokta hata riskleri, URL ele geçirme ve izinsiz telemetri getirdiğini gösteriyor. CreateMy-QR, %100 statik, istemci tarafı vektör dosyaları oluşturarak bu sorunu çözer.",
+      "paper1Doi": "DOI: 10.1109/ARES.2015.39",
+      "paper2Title": "Sıfır Bilgi Tarayıcı İçi Şifreleme",
+      "paper2Cite": "NIST SP 800-207 Sıfır Güven Mimarisi ve W3C Web Şifreleme Çalışma Grubu",
+      "paper2Desc": "Tarayıcının WebAssembly korumalı alanı içindeki tüm yük kodlamasını yalıtarak, şifrelenmemiş kimlik bilgileri, WiFi anahtarları veya vCard kimlikleri hiçbir zaman bir ağ kablosuna dokunmaz.",
+      "paper2Doi": "NIST Özel Yayını 800-207"
+    },
+    "aboutHeritage": {
+      "badge": "Teknolojik Miras",
+      "title": "1994 Açık Standart Buluşunun Onurlandırılması",
+      "subtitle": "QR kodu, özel ödeme duvarları olmadan hızlı, güvenilir bilgi alışverişini demokratikleştirmek için icat edildi.",
+      "card1Title": "Masahiro Hara ve Denso Dalgası (1994)",
+      "card1Desc": "Masahiro Hara tarafından icat edilen QR kodu, 1D barkodların 20 karakter sınırlamasını aştı. Denso Wave, %100 özgür anlayışımıza ilham vererek patenti dünyaya açık ve ücretsiz hale getirdi.",
+      "card2Title": "Küresel Standardizasyon Kilometre Taşları",
+      "card2Desc": "1997'de AIM ITS, 1999'da JIS X 0510 ve 2000'de ISO/IEC 18004 olarak standartlaştırıldı. Her sürümle sıkı bir şekilde geriye ve ileriye dönük uyumluluğu sürdürüyoruz.",
+      "card3Title": "Avrupalı ​​Mucit Ödülü (2014)",
+      "card3Desc": "Lojistik, sağlık hizmetleri ve dijital etkileşimi dönüştürmesiyle dünya çapında tanınıyor. Bu misyonu yüksek çözünürlüklü istemci tarafı araçlarıyla sürdürüyoruz."
+    },
+    "compareEvidence": {
+      "badge": "Ampirik Mimari Analizi",
+      "title": "İstemci Tarafı Neden Bulutta Barındırılan Jeneratörlerden Daha İyi?",
+      "subtitle": "Geleneksel yönlendirme tabanlı oluşturucular ile CreateMy-QR'nin yerel yürütme modeli arasındaki mimari farklılıkların karşılaştırılması.",
+      "col1Title": "Bulut Yönlendirme Modelleri (Rakipler)",
+      "col1Point1": "Sunucunun kapalı kalması, yazdırılan QR kodlarınızı kalıcı olarak bozar.",
+      "col1Point2": "Ticari veritabanlarında kayıtlı kullanıcı tarama verileri ve IP adresleri.",
+      "col1Point3": "Bağlantı süresinin dolmasını önlemek için gerekli abonelik ücretleri.",
+      "col2Title": "Doğrudan İstemci Tarafı Modeli (CreateMy-QR)",
+      "col2Point1": "Doğrudan kodlama: QR kodları herhangi bir sunucu bağımlılığı olmadan sonsuza kadar çalışır.",
+      "col2Point2": "Sıfır izleme: Taramalar doğrudan kameradan hedefe bağlanır.",
+      "col2Point3": "Sonsuza kadar %100 ücretsiz: Ödeme duvarı yok, tarama sınırı yok, süresi dolmuş bağlantı yok."
+    },
+    "barcodePhysics": {
+      "badge": "Optik Doğrulama",
+      "title": "ISO/IEC 15416 Baskı Kalitesi ve Kontrast Standartları",
+      "subtitle": "Perakende, depolama ve sağlık hizmetlerine yönelik endüstriyel barkod doğrulama standartlarını karşılamak üzere tasarlanmıştır.",
+      "feat1Title": "Sembol Kontrastı ve Yansıması",
+      "feat1Desc": "Tarayıcı lazer ışınının dağılmasını önlemek için ISO/IEC 15416 minimum yansıma farkı (Rmin/Rmax) ile uyumludur.",
+      "feat2Title": "Modülasyon ve Kenar Belirleme",
+      "feat2Desc": "Vektör SVG işleme, termal ve lazer yazıcılarda alt piksel hassasiyetiyle jilet gibi keskin çubuk kenarları garanti eder.",
+      "feat3Title": "Sessiz Bölge Bütünlüğü",
+      "feat3Desc": "GS1 ve EAN/UPC spesifikasyonlarının gerektirdiği zorunlu ön ve sondaki boşlukları zorunlu kılar."
+    }
   }
 }

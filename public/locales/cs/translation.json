@@ -1682,5 +1682,72 @@
     "homeSeoDesc": "Vygenerujte si zdarma 37 typů QR kódů a čárových kódů. Žádná registrace. Okamžité stažení. 100% na straně klienta, v souladu s ISO, 30 jazyků.",
     "homeHeroTitle": "Všechny nástroje QR a čárových kódů",
     "homeHeroTitleHighlight": "na jednom místě"
+  },
+  "research": {
+    "homeStandards": {
+      "badge": "Vědecké a inženýrské základy",
+      "title": "Postaveno na ověřených globálních standardech a akademickém výzkumu",
+      "subtitle": "CreateMy-QR implementuje otevřené specifikace ISO, IEEE a NIST pro zajištění matematické přesnosti a zabezpečení nulové důvěryhodnosti na straně klienta.",
+      "card1Title": "Specifikace ISO/IEC 18004:2015",
+      "card1Desc": "Plné dodržování mezinárodního standardu symboliky matice QR Code s vyhledávacími vzory 1:1:3:1:1 a 4modulovými tichými zónami.",
+      "card1Meta": "Mezinárodní organizace pro normalizaci",
+      "card2Title": "Oprava chyb Reed-Solomon",
+      "card2Desc": "Polynomiální algoritmy pole Galois (Reed & Solomon, SIAM 1960) umožňující až 30% obnovu vizuálních dat a vlastní vkládání loga.",
+      "card2Meta": "SIAM Journal of Applied Mathematics",
+      "card3Title": "NIST SP 800-207 Architektura s nulovou důvěrou",
+      "card3Desc": "Čisté spouštění paměti v prohlížeči, které eliminuje riziko zprostředkovatele cloudové databáze a zmírňuje hrozby QR phishingu (IEEE ARES 2015).",
+      "card3Meta": "Národní institut pro standardy a technologie",
+      "card4Title": "ISO/IEC 15415 Optický kontrast",
+      "card4Desc": "Modulace symbolů v reálném čase a kontrola kontrastu v souladu se standardy W3C WCAG 2.1 pro univerzální 360° čitelnost kamery.",
+      "card4Meta": "Optická symbolika a standard přístupnosti"
+    },
+    "securityResearch": {
+      "badge": "Recenzovaná bezpečnostní literatura",
+      "title": "Architektonické sladění s akademickým výzkumem kybernetické bezpečnosti",
+      "subtitle": "Náš model na straně klienta s nulovými znalostmi je založen na publikovaných analýzách zranitelnosti na dynamických QR serverech a cloudovém sledování.",
+      "paper1Title": "Chyby zabezpečení Quishing a přesměrování na straně serveru",
+      "paper1Cite": "Krombholz et al., IEEE International Conference on Availability, Reliability and Security (ARES 2015)",
+      "paper1Desc": "Výzkum ukazuje, že centralizované dynamické servery QR představují rizika selhání jednoho bodu, únosy URL a nesouhlasnou telemetrii. CreateMy-QR to řeší generováním 100% statických vektorových souborů na straně klienta.",
+      "paper1Doi": "DOI: 10.1109/ARES.2015.39",
+      "paper2Title": "Zero-Knowledge In-Browser Cryptography",
+      "paper2Cite": "Pracovní skupina NIST SP 800-207 Zero Trust Architecture & W3C Web Cryptography",
+      "paper2Desc": "Díky izolaci veškerého kódování datové části v karanténě WebAssembly prohlížeče se žádné nešifrované přihlašovací údaje, klíče WiFi nebo identity vCard nikdy nedotknou síťového kabelu.",
+      "paper2Doi": "Zvláštní publikace NIST 800-207"
+    },
+    "aboutHeritage": {
+      "badge": "Technologické dědictví",
+      "title": "Pocta Open-Standard Invention z roku 1994",
+      "subtitle": "QR kód byl vynalezen za účelem demokratizace rychlé a spolehlivé výměny informací bez proprietárních paywallů.",
+      "card1Title": "Masahiro Hara a Denso Wave (1994)",
+      "card1Desc": "QR kód, který vynalezl Masahiro Hara, překonal omezení 1D čárových kódů na 20 znaků. Denso Wave učinil patent otevřeným a svobodným světu a inspiroval náš 100% bezplatný étos.",
+      "card2Title": "Globální milníky normalizace",
+      "card2Desc": "Standardizováno jako AIM ITS v roce 1997, JIS X 0510 v roce 1999 a ISO/IEC 18004 v roce 2000. Zachováváme přísnou zpětnou a dopřednou kompatibilitu s každou verzí.",
+      "card3Title": "European Inventor Award (2014)",
+      "card3Desc": "Celosvětově uznávaná pro transformaci logistiky, zdravotnictví a digitální interakce. V tomto poslání pokračujeme prostřednictvím nástrojů na straně klienta s vysokým rozlišením."
+    },
+    "compareEvidence": {
+      "badge": "Analýza empirické architektury",
+      "title": "Proč na straně klienta překonávají generátory hostované v cloudu",
+      "subtitle": "Porovnání architektonických rozdílů mezi tradičními generátory založenými na přesměrování a místním modelem provádění CreateMy-QR.",
+      "col1Title": "Cloudové modely přesměrování (konkurenti)",
+      "col1Point1": "Odstávka serveru trvale naruší vaše vytištěné QR kódy.",
+      "col1Point2": "Uživatelská data skenování a IP adresy přihlášené do komerčních databází.",
+      "col1Point3": "Aby se zabránilo vypršení platnosti odkazu, jsou vyžadovány poplatky za předplatné.",
+      "col2Title": "Přímý model na straně klienta (CreateMy-QR)",
+      "col2Point1": "Přímé kódování: QR kódy fungují navždy bez jakékoli závislosti na serveru.",
+      "col2Point2": "Zero tracking: Skenování se připojuje přímo z fotoaparátu k cíli.",
+      "col2Point3": "100% zdarma navždy: Žádné paywally, žádné limity skenování, žádné odkazy, jejichž platnost vypršela."
+    },
+    "barcodePhysics": {
+      "badge": "Optické ověření",
+      "title": "Normy kvality tisku a kontrastu ISO/IEC 15416",
+      "subtitle": "Navrženo tak, aby splňovalo průmyslové standardy ověřování čárových kódů pro maloobchod, skladování a zdravotnictví.",
+      "feat1Title": "Kontrast a odraz symbolů",
+      "feat1Desc": "Vyhovuje normě ISO/IEC 15416 minimálního rozdílu odrazivosti (Rmin/Rmax), aby se zabránilo rozptylu laserového paprsku skeneru.",
+      "feat2Title": "Modulace a určování hran",
+      "feat2Desc": "Vektorové vykreslování SVG zaručuje okraje pruhů ostré jako břitva se subpixelovou přesností na termálních a laserových tiskárnách.",
+      "feat3Title": "Integrita tiché zóny",
+      "feat3Desc": "Vynucuje povinné mezery na začátku a na konci požadované specifikacemi GS1 a EAN/UPC."
+    }
   }
 }

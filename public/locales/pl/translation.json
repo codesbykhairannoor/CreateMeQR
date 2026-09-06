@@ -1682,5 +1682,72 @@
     "homeSeoDesc": "Wygeneruj za darmo 37 rodzajów kodów QR i kodów kreskowych. Brak rejestracji. Natychmiastowe pobieranie. 100% po stronie klienta, zgodne z ISO, 30 języków.",
     "homeHeroTitle": "Wszystkie narzędzia QR i kodów kreskowych",
     "homeHeroTitleHighlight": "w jednym miejscu"
+  },
+  "research": {
+    "homeStandards": {
+      "badge": "Podstawy naukowe i inżynieryjne",
+      "title": "Zbudowany w oparciu o zweryfikowane światowe standardy i badania akademickie",
+      "subtitle": "CreateMy-QR implementuje otwarte specyfikacje ISO, IEEE i NIST, aby zapewnić matematyczną precyzję i bezpieczeństwo zerowego zaufania po stronie klienta.",
+      "card1Title": "Specyfikacja ISO/IEC 18004:2015",
+      "card1Desc": "Pełna zgodność z międzynarodowym standardem symboliki matrycy QR Code z wzorami szukacza 1:1:3:1:1 i 4-modułowymi cichymi strefami.",
+      "card1Meta": "Międzynarodowa Organizacja Normalizacyjna",
+      "card2Title": "Korekcja błędów Reeda-Solomona",
+      "card2Desc": "Algorytmy pola wielomianowego Galois (Reed & Solomon, SIAM 1960) umożliwiające przywracanie do 30% danych wizualnych i osadzanie niestandardowego logo.",
+      "card2Meta": "SIAM Journal of Matematyki Stosowanej",
+      "card3Title": "NIST SP 800-207 Architektura zerowego zaufania",
+      "card3Desc": "Wykonywanie wyłącznie pamięci w przeglądarce, co eliminuje ryzyko pośrednictwa w bazach danych w chmurze i ogranicza zagrożenia typu phishing QR (IEEE ARES 2015).",
+      "card3Meta": "Narodowy Instytut Standardów i Technologii",
+      "card4Title": "Kontrast optyczny ISO/IEC 15415",
+      "card4Desc": "Modulacja symboli w czasie rzeczywistym i sprawdzanie kontrastu zgodnie ze standardami W3C WCAG 2.1 dla uniwersalnej czytelności kamery 360°.",
+      "card4Meta": "Standard symboliki optycznej i dostępności"
+    },
+    "securityResearch": {
+      "badge": "Recenzowana literatura dotycząca bezpieczeństwa",
+      "title": "Dostosowanie architektury do akademickich badań nad cyberbezpieczeństwem",
+      "subtitle": "Nasz model po stronie klienta oparty na wiedzy zerowej opiera się na opublikowanych analizach podatności na dynamicznych serwerach QR i śledzeniu w chmurze.",
+      "paper1Title": "Luki w zabezpieczeniach Quishing i przekierowań po stronie serwera",
+      "paper1Cite": "Krombholz i in., Międzynarodowa konferencja IEEE na temat dostępności, niezawodności i bezpieczeństwa (ARES 2015)",
+      "paper1Desc": "Badania pokazują, że scentralizowane dynamiczne serwery QR stwarzają ryzyko związane z pojedynczym punktem awarii, przejmowaniem adresów URL i telemetrią bez zgody. CreateMy-QR rozwiązuje ten problem, generując w 100% statyczne pliki wektorowe po stronie klienta.",
+      "paper1Doi": "DOI: 10.1109/ARES.2015.39",
+      "paper2Title": "Kryptografia w przeglądarce oparta na wiedzy zerowej",
+      "paper2Cite": "Grupa robocza NIST SP 800-207 Zero Trust Architecture i W3C Web Cryptography",
+      "paper2Desc": "Izolując całe kodowanie ładunku w piaskownicy WebAssembly przeglądarki, żadne niezaszyfrowane dane uwierzytelniające, klucze Wi-Fi ani tożsamości vCard nigdy nie dotkną przewodu sieciowego.",
+      "paper2Doi": "Publikacja specjalna NIST 800-207"
+    },
+    "aboutHeritage": {
+      "badge": "Dziedzictwo technologiczne",
+      "title": "Uhonorowanie wynalazku Open-Standard z 1994 r",
+      "subtitle": "Kod QR został wynaleziony, aby zdemokratyzować szybką i niezawodną wymianę informacji bez zastrzeżonych zapór płatniczych.",
+      "card1Title": "Masahiro Hara i fala Denso (1994)",
+      "card1Desc": "Wynaleziony przez Masahiro Harę kod QR pokonał ograniczenie 20 znaków stosowane w kodach kreskowych 1D. Denso Wave uczyniło patent otwartym i darmowym dla świata, inspirując nasz etos 100% wolności.",
+      "card2Title": "Kamienie milowe globalnej standaryzacji",
+      "card2Desc": "Standaryzowane jako AIM ITS w 1997 r., JIS X 0510 w 1999 r. i ISO/IEC 18004 w 2000 r. Zachowujemy ścisłą kompatybilność wsteczną i nowszą z każdą wersją.",
+      "card3Title": "Nagroda Europejskiego Wynalazcy (2014)",
+      "card3Desc": "Uznany na całym świecie za transformację logistyki, opieki zdrowotnej i interakcji cyfrowych. Kontynuujemy tę misję za pomocą narzędzi po stronie klienta o wysokiej rozdzielczości."
+    },
+    "compareEvidence": {
+      "badge": "Empiryczna analiza architektury",
+      "title": "Dlaczego po stronie klienta przewyższa generatory hostowane w chmurze",
+      "subtitle": "Porównanie różnic architektonicznych między tradycyjnymi generatorami opartymi na przekierowaniach a lokalnym modelem wykonania CreateMy-QR.",
+      "col1Title": "Modele Cloud Redirect (konkurencja)",
+      "col1Point1": "Przestój serwera powoduje trwałe uszkodzenie wydrukowanych kodów QR.",
+      "col1Point2": "Dane skanowania użytkowników i adresy IP rejestrowane w komercyjnych bazach danych.",
+      "col1Point3": "Opłaty abonamentowe wymagane, aby zapobiec wygaśnięciu łącza.",
+      "col2Title": "Model bezpośredni po stronie klienta (CreateMy-QR)",
+      "col2Point1": "Kodowanie bezpośrednie: kody QR działają wiecznie i nie są zależne od serwera.",
+      "col2Point2": "Śledzenie zera: skany łączą się bezpośrednio z aparatu do miejsca docelowego.",
+      "col2Point3": "100% za darmo na zawsze: bez zapór, bez limitów skanowania, bez wygasłych linków."
+    },
+    "barcodePhysics": {
+      "badge": "Weryfikacja optyczna",
+      "title": "Normy jakości druku i kontrastu ISO/IEC 15416",
+      "subtitle": "Zaprojektowane, aby spełniać standardy przemysłowej weryfikacji kodów kreskowych w handlu detalicznym, magazynowaniu i służbie zdrowia.",
+      "feat1Title": "Kontrast i odbicie symboli",
+      "feat1Desc": "Zgodny z minimalną różnicą współczynnika odbicia ISO/IEC 15416 (Rmin/Rmax), aby zapobiec rozproszeniu wiązki lasera skanera.",
+      "feat2Title": "Modulacja i wyznaczanie krawędzi",
+      "feat2Desc": "Renderowanie Vector SVG gwarantuje ostre jak brzytwa krawędzie pasków z subpikselową precyzją w drukarkach termicznych i laserowych.",
+      "feat3Title": "Integralność cichej strefy",
+      "feat3Desc": "Wymusza obowiązkowe początkowe i końcowe białe znaki wymagane przez specyfikacje GS1 i EAN/UPC."
+    }
   }
 }
