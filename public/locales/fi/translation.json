@@ -1246,10 +1246,10 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Ilmainen QR-koodi- ja viivakoodigeneraattori |37 Työkalut verkossa",
-    "seoDesc": "Luo 37 erilaista QR-koodia ja viivakoodia ilmaiseksi.Ei ilmoittautumista.Välitön lataus.100 % asiakaspuolen, ISO/IEC 18004 -yhteensopiva, saatavana 30 kielellä.",
+    "seoDesc": "Luo 37 erilaista QR-koodia ja viivakoodia ilmaiseksi. Ei ilmoittautumista. Välitön lataus. 100 % asiakaspuoli, ISO-yhteensopiva, 30 kieltä.",
     "badge": "ISO/IEC 18004 · 100 % ilmainen · Nollaseuranta · Ei rekisteröitymistä",
-    "heroTitle": "Kaikki QR ja viivakoodi",
-    "heroTitleHighlight": "Työkalut yhdessä paikassa",
+    "heroTitle": "Kaikki QR- ja viivakoodityökalut",
+    "heroTitleHighlight": "yhdessä paikassa",
     "heroSubtitle": "Luo 37+ tyyppistä QR-koodia ja viivakoodia välittömästi.Ei rekisteröitymistä, ei rajoituksia, ei ladattuja tietoja – koskaan.Vie SVG- tai PNG-muodossa, täysin ilmainen.",
     "citation": "\"QR-koodi on kansainvälinen standardi (ISO/IEC 18004:2015). Matriisiviivakoodit vaativat puhtaat moduuliruudukot luotettavaa skannausta varten kaikissa yhteensopivissa lukijoissa ympäri maailmaa.\"",
     "searchPlaceholder": "Hakutyökalut - WhatsApp, WiFi, vCard, PDF...",
@@ -1286,7 +1286,7 @@
   },
   "static": {
     "about": {
-      "seoTitle": "Meistä",
+      "seoTitle": "Tietoja meistä",
       "heroTitle": "Meistä",
       "heroSubtitle": "Demokratisoiva asiakirja- ja QR-työkalut",
       "mission": "Missiomme",
@@ -1304,7 +1304,9 @@
       "guarantee": "Takuumme",
       "guaranteeDesc": "CreateMy-QR on rakennettu pysymään täysin ilmainen. Missiomme on demokratisoida yleishyödylliset palvelut kaikille.",
       "join": "Liity liikkeeseen",
-      "joinDesc": "Koe verkon nopein, turvallisin ja edistynein QR-paketti."
+      "joinDesc": "Koe verkon nopein, turvallisin ja edistynein QR-paketti.",
+      "seoDesc": "Demokratisoivat asiakirja- ja QR-työkalut 100 % asiakaspuolen suojauksella ja yksityisyydellä.",
+      "desc": "Demokratisoivat asiakirja- ja QR-työkalut 100 % asiakaspuolen suojauksella ja yksityisyydellä."
     },
     "compare": {
       "seoTitle": "Vertaa työkaluja",
@@ -1354,7 +1356,9 @@
       "tr6val2": "Ei koskaan vaadittu",
       "tr7val1": "Riippuu verkosta",
       "tr7val2": "Instant (paikallinen suoritin)",
-      "expertAuthor": "Riippumaton turvatarkastus"
+      "expertAuthor": "Riippumaton turvatarkastus",
+      "seoDesc": "Ota selvää, miksi ammattilaiset valitsevat CreateMy-QR:n yksityiseen asiakaspuolen luomiseen ilman API-rajoituksia.",
+      "desc": "Ota selvää, miksi ammattilaiset valitsevat CreateMy-QR:n yksityiseen asiakaspuolen luomiseen ilman API-rajoituksia."
     },
     "languages": {
       "seoTitle": "Tuetut kielet",
@@ -1374,10 +1378,12 @@
       "communityTitle": "Yhteisölähtöinen",
       "communityDesc": "Huomaatko käännöksen, joka tuntuu hieman väärältä? Luotamme maailmanlaajuiseen käyttäjäkuntaamme, joka auttaa tarkentamaan ja viimeistelemään lokalisointejamme. Ota yhteyttä ja ehdota parannuksia äidinkielellesi.",
       "ctaTitle": "Oletko valmis käsittelemään?",
-      "ctaDesc": "Aloita turvallisesti ja ilmaiseksi valitsemalla alta työkalu."
+      "ctaDesc": "Aloita turvallisesti ja ilmaiseksi valitsemalla alta työkalu.",
+      "seoDesc": "Luo ja skannaa QR-koodeja ja viivakoodeja 30 kielellä maailmanlaajuisesti välittömän asiakaspuolen luonnin avulla.",
+      "desc": "Luo ja skannaa QR-koodeja ja viivakoodeja 30 kielellä maailmanlaajuisesti välittömän asiakaspuolen luonnin avulla."
     },
     "pricing": {
-      "seoTitle": "100 % ilmainen hinnoittelu",
+      "seoTitle": "100% ilmainen hinnoittelu",
       "heroTitle": "Hinnoittelu",
       "heroSubtitle": "Parhaat asiat elämässä ovat ilmaisia.",
       "cost": "$0",
@@ -1404,7 +1410,9 @@
       "bizTitle": "Ilmainen yrityskäyttöön",
       "bizDesc": "Kyllä, voit käyttää CreateMy-QR:ää yrityksellesi. Itse asiassa paikallinen käsittelyarkkitehtuurimme tekee meistä ainoan tarpeeksi turvallisen alustan tiukoille yritysympäristöille, lakitiimeille ja terveydenhuollon ammattilaisille.",
       "supportTitle": "Tue hanketta",
-      "supportDesc": "Emme veloita tilausta, mutta verkkotunnuksen ja kehityksen hengissä pitäminen vie aikaa. Jos CreateMy-QR pelasti päiväsi, harkitse sen jakamista tiimillesi. Word of mouth on ainoa markkinointistrategiamme."
+      "supportDesc": "Emme veloita tilausta, mutta verkkotunnuksen ja kehityksen hengissä pitäminen vie aikaa. Jos CreateMy-QR pelasti päiväsi, harkitse sen jakamista tiimillesi. Word of mouth on ainoa markkinointistrategiamme.",
+      "seoDesc": "CreateMy-QR on 100 % ilmainen, ja siinä on rajoittamaton skannaus, korkearesoluutioinen vektorilataus ja nollarajoja.",
+      "desc": "CreateMy-QR on 100 % ilmainen, ja siinä on rajoittamaton skannaus, korkearesoluutioinen vektorilataus ja nollarajoja."
     },
     "privacy": {
       "seoTitle": "Tietosuojakäytäntö",
@@ -1417,7 +1425,9 @@
       "ssl": "SSL-salattu",
       "sslDesc": "Vaikka mitään ei ole ladattu, sivustoamme palvellaan tiukan HTTPS:n kautta.",
       "policyTitle": "Nollalataussitoumus",
-      "policyDesc": "Toisin kuin muut alustat, CreateMy-QR toimii täysin asiakaspuolella. Kun luot QR-koodin, prosessi tapahtuu paikallisesti koneellasi."
+      "policyDesc": "Toisin kuin muut alustat, CreateMy-QR toimii täysin asiakaspuolella. Kun luot QR-koodin, prosessi tapahtuu paikallisesti koneellasi.",
+      "seoDesc": "Nollaseurannan tietosuojakäytäntö. Kaikki tietojenkäsittely tapahtuu paikallisesti selaimesi muistissa.",
+      "desc": "Nollaseurannan tietosuojakäytäntö. Kaikki tietojenkäsittely tapahtuu paikallisesti selaimesi muistissa."
     },
     "security": {
       "seoTitle": "Turvallisuusarkkitehtuuri",
@@ -1454,7 +1464,9 @@
       "step3": "Vaihe 3",
       "verify3": "Luo mikä tahansa QR. Se toimii täydellisesti, mikä osoittaa, että palvelinta ei tarvita.",
       "missionTitle": "Tulevaisuus on paikallinen",
-      "missionDesc": "Kuvittelemme verkkoa, jossa apuohjelmat kunnioittavat laitteistoasi ja yksityisyyttäsi. Tervetuloa asiakaspuolen tietojenkäsittelyn uuteen aikakauteen."
+      "missionDesc": "Kuvittelemme verkkoa, jossa apuohjelmat kunnioittavat laitteistoasi ja yksityisyyttäsi. Tervetuloa asiakaspuolen tietojenkäsittelyn uuteen aikakauteen.",
+      "seoDesc": "Tutustu nollaluottamustietoturvamalliimme: 100 % asiakaspuolen salaus, nolla pilvisiirtoa, nolla tietojen tallennusta.",
+      "desc": "Tutustu nollaluottamustietoturvamalliimme: 100 % asiakaspuolen salaus, nolla pilvisiirtoa, nolla tietojen tallennusta."
     },
     "terms": {
       "seoTitle": "Palveluehdot",
@@ -1475,10 +1487,12 @@
       "sec2Bul2": "Emme säilytä kopioita tiedoistasi, metatiedoistasi tai käsitellyistä asiakirjoistasi.",
       "sec4Title": "Immateriaaliomaisuus",
       "sec4Desc": "Säilytät 100 %:n omistusoikeuden ja kaikki immateriaalioikeudet asiakirjoihin, joita käsittelet CreateMy-QR:n avulla. Vaadimme, että sisältöösi ei ole oikeuksia, lisenssejä tai omistajuutta.",
-      "sec5Title": "Vastuuvapauslausekkeet ja vastuu"
+      "sec5Title": "Vastuuvapauslausekkeet ja vastuu",
+      "seoDesc": "CreateMy-QR:n ilmaisten online-generaattori- ja skannerityökalujen käyttöehdot.",
+      "desc": "CreateMy-QR:n ilmaisten online-generaattori- ja skannerityökalujen käyttöehdot."
     },
     "usecases": {
-      "seoTitle": "Käyttötapaukset",
+      "seoTitle": "Teollisuuden käyttötapaukset",
       "heroTitle": "Käyttötapaukset",
       "heroSubtitle": "Tutustu siihen, kuinka teollisuus hyödyntää suojattua QR-pakettiamme.",
       "retail": "Vähittäiskauppa ja sähköinen kaupankäynti",
@@ -1501,7 +1515,24 @@
       "toolPdf": "PDF-valikko QR",
       "toolReview": "Google-arvostelu QR",
       "ctaTitle": "Löydä oma käyttötapasi",
-      "ctaDesc": "Toimialastasi riippumatta CreateMy-QR on turvallisin ja nopein tapa luoda koodeja. Kokeile täyttä 20+ työkaluvalikoimaamme jo tänään."
+      "ctaDesc": "Toimialastasi riippumatta CreateMy-QR on turvallisin ja nopein tapa luoda koodeja. Kokeile täyttä 20+ työkaluvalikoimaamme jo tänään.",
+      "seoDesc": "Tutustu todellisiin QR-koodien käyttötapauksiin ravintoloissa, vähittäiskaupassa, tapahtumissa, maksuissa ja yritystoiminnoissa.",
+      "desc": "Tutustu todellisiin QR-koodien käyttötapauksiin ravintoloissa, vähittäiskaupassa, tapahtumissa, maksuissa ja yritystoiminnoissa."
+    },
+    "barcode": {
+      "seoTitle": "Ilmainen viivakoodigeneraattori",
+      "seoDesc": "Luo lineaarisia viivakoodeja (EAN, UPC, Code 128, Code 39) välittömästi selaimessasi korkearesoluutioisella latauksella.",
+      "desc": "Luo lineaarisia viivakoodeja (EAN, UPC, Code 128, Code 39) välittömästi selaimessasi korkearesoluutioisella latauksella."
+    },
+    "scanqr": {
+      "seoTitle": "Skannaa QR-koodi verkossa",
+      "seoDesc": "Skannaa ja purkaa QR-koodeja verkkokamerasta tai kuvatiedostoista turvallisesti selaimessasi välittömällä asiakaspuolen dekoodauksella.",
+      "desc": "Skannaa ja purkaa QR-koodeja verkkokamerasta tai kuvatiedostoista turvallisesti selaimessasi välittömällä asiakaspuolen dekoodauksella."
+    },
+    "scanbarcode": {
+      "seoTitle": "Skannaa viivakoodi verkossa",
+      "seoDesc": "Skannaa kameran viivakoodit tai ladatut kuvatiedostot turvallisesti selaimessasi ilman palvelinlatauksia.",
+      "desc": "Skannaa kameran viivakoodit tai ladatut kuvatiedostot turvallisesti selaimessasi ilman palvelinlatauksia."
     }
   },
   "rating": {
@@ -1642,5 +1673,14 @@
       "featDesc3": "Rajoittamaton skannaus, täysin ilmainen, ei vanhenemispäiviä.",
       "faqTitle": "Yleisiä kysymyksiä"
     }
+  },
+  "templates": {
+    "toolTitleSuffix": "Ilmainen QR-koodigeneraattori",
+    "toolDescTemplate": "Luo mukautettuja {{toolName}} QR-koodeja logolla ilmaiseksi. Paras muokattava QR-koodigeneraattori ilman vesileimaa. 100 % yksityinen, asiakaspuolen sukupolvi.",
+    "barcodeTitleSuffix": "Ilmainen viivakoodigeneraattori",
+    "barcodeDescTemplate": "Luo mukautettuja lineaarisia {{toolName}} viivakoodeja ilmaiseksi. Välitön SVG- ja PNG-lataus korkeatiheyksisellä viivakoodikoodauksella.",
+    "homeSeoDesc": "Luo 37 erilaista QR-koodia ja viivakoodia ilmaiseksi. Ei ilmoittautumista. Välitön lataus. 100 % asiakaspuoli, ISO-yhteensopiva, 30 kieltä.",
+    "homeHeroTitle": "Kaikki QR- ja viivakoodityökalut",
+    "homeHeroTitleHighlight": "yhdessä paikassa"
   }
 }

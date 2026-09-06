@@ -1246,10 +1246,10 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Libreng QR Code at Barcode Generator |37 Mga Tool Online",
-    "seoDesc": "Bumuo ng 37 uri ng QR code at barcode nang libre.Walang signup.Instant download.100% client-side, ISO/IEC 18004-compliant, available sa 30 wika.",
+    "seoDesc": "Bumuo ng 37 uri ng QR code at barcode nang libre. Walang signup. Instant download. 100% client-side, ISO-compliant, 30 wika.",
     "badge": "ISO/IEC 18004 · 100% Libre · Zero Tracking · Walang Signup",
-    "heroTitle": "Lahat ng QR at Barcode",
-    "heroTitleHighlight": "Mga Tool sa Isang Lugar",
+    "heroTitle": "Lahat ng QR at Barcode Tools",
+    "heroTitleHighlight": "sa Isang Lugar",
     "heroSubtitle": "Bumuo ng 37+ uri ng QR code at barcode kaagad.Walang pag-signup, walang limitasyon, walang data na na-upload — kailanman.I-export bilang SVG o PNG, ganap na libre.",
     "citation": "\"Ang QR Code ay isang internasyonal na pamantayan (ISO/IEC 18004:2015). Ang mga matrix barcode ay nangangailangan ng malinis na module grids para sa maaasahang pag-scan sa lahat ng sumusunod na mga mambabasa sa buong mundo.\"",
     "searchPlaceholder": "Mga tool sa paghahanap — WhatsApp, WiFi, vCard, PDF...",
@@ -1304,7 +1304,9 @@
       "guarantee": "Ang Aming Garantiya",
       "guaranteeDesc": "Ang CreateMy-QR ay binuo upang manatiling ganap na libre. Ang aming misyon ay gawing demokrasya ang mga kagamitan para sa lahat.",
       "join": "Sumali sa Kilusan",
-      "joinDesc": "Damhin ang pinakamabilis, pinakaligtas, at pinaka-advanced na QR suite sa web."
+      "joinDesc": "Damhin ang pinakamabilis, pinakaligtas, at pinaka-advanced na QR suite sa web.",
+      "seoDesc": "Pagdemokrata ng dokumento at mga QR tool na may 100% na seguridad at privacy sa panig ng kliyente.",
+      "desc": "Pagdemokrata ng dokumento at mga QR tool na may 100% na seguridad at privacy sa panig ng kliyente."
     },
     "compare": {
       "seoTitle": "Paghambingin ang Mga Tool",
@@ -1354,7 +1356,9 @@
       "tr6val2": "Hindi kailanman Kinakailangan",
       "tr7val1": "Depende sa Network",
       "tr7val2": "Instant (Lokal na CPU)",
-      "expertAuthor": "Independent Security Audit"
+      "expertAuthor": "Independent Security Audit",
+      "seoDesc": "Tuklasin kung bakit pinipili ng mga propesyonal ang CreateMy-QR para sa pribado, pagbuo ng panig ng kliyente nang walang mga limitasyon sa API.",
+      "desc": "Tuklasin kung bakit pinipili ng mga propesyonal ang CreateMy-QR para sa pribado, pagbuo ng panig ng kliyente nang walang mga limitasyon sa API."
     },
     "languages": {
       "seoTitle": "Mga Sinusuportahang Wika",
@@ -1374,7 +1378,9 @@
       "communityTitle": "Hinimok ng Komunidad",
       "communityDesc": "Pansinin ang isang pagsasalin na medyo off? Umaasa kami sa aming pandaigdigang base ng gumagamit upang makatulong na pinuhin at gawing perpekto ang aming mga lokalisasyon. Makipag-ugnayan sa amin upang magmungkahi ng mga pagpapabuti para sa iyong katutubong wika.",
       "ctaTitle": "Handa nang iproseso?",
-      "ctaDesc": "Pumili ng tool sa ibaba upang makapagsimula nang ligtas at libre."
+      "ctaDesc": "Pumili ng tool sa ibaba upang makapagsimula nang ligtas at libre.",
+      "seoDesc": "Lumikha at mag-scan ng mga QR code at barcode sa 30 wika sa buong mundo na may instant na pagbuo ng panig ng kliyente.",
+      "desc": "Lumikha at mag-scan ng mga QR code at barcode sa 30 wika sa buong mundo na may instant na pagbuo ng panig ng kliyente."
     },
     "pricing": {
       "seoTitle": "100% Libreng Pagpepresyo",
@@ -1404,7 +1410,9 @@
       "bizTitle": "Libre para sa Paggamit ng Negosyo",
       "bizDesc": "Oo, maaari mong gamitin ang CreateMy-QR para sa iyong kumpanya. Sa katunayan, ang aming lokal na arkitektura sa pagpoproseso ay ginagawa kaming ang tanging platform na sapat na ligtas para sa mahigpit na kapaligiran ng korporasyon, mga legal na koponan, at mga propesyonal sa pangangalagang pangkalusugan.",
       "supportTitle": "Suportahan ang Proyekto",
-      "supportDesc": "Hindi kami naniningil ng subscription, ngunit ang pagpapanatiling buhay ng domain at development ay nangangailangan ng oras. Kung na-save ng CreateMy-QR ang iyong araw, isaalang-alang ang pagbabahagi nito sa iyong team. Word of mouth lang ang marketing strategy namin."
+      "supportDesc": "Hindi kami naniningil ng subscription, ngunit ang pagpapanatiling buhay ng domain at development ay nangangailangan ng oras. Kung na-save ng CreateMy-QR ang iyong araw, isaalang-alang ang pagbabahagi nito sa iyong team. Word of mouth lang ang marketing strategy namin.",
+      "seoDesc": "Ang CreateMy-QR ay 100% libre na may walang limitasyong mga pag-scan, pag-download ng vector na may mataas na resolution, at mga zero na limitasyon.",
+      "desc": "Ang CreateMy-QR ay 100% libre na may walang limitasyong mga pag-scan, pag-download ng vector na may mataas na resolution, at mga zero na limitasyon."
     },
     "privacy": {
       "seoTitle": "Patakaran sa Privacy",
@@ -1417,7 +1425,9 @@
       "ssl": "Naka-encrypt ang SSL",
       "sslDesc": "Kahit na walang na-upload, ang aming site ay inihahatid sa pamamagitan ng mahigpit na HTTPS.",
       "policyTitle": "Ang Zero-Upload Commitment",
-      "policyDesc": "Hindi tulad ng ibang mga platform, ang CreateMy-QR ay ganap na gumagana sa panig ng kliyente. Kapag nakabuo ka ng QR code, nangyayari ang proseso nang lokal sa iyong makina."
+      "policyDesc": "Hindi tulad ng ibang mga platform, ang CreateMy-QR ay ganap na gumagana sa panig ng kliyente. Kapag nakabuo ka ng QR code, nangyayari ang proseso nang lokal sa iyong makina.",
+      "seoDesc": "Patakaran sa privacy ng zero-tracking. Ang lahat ng pagproseso ng data ay nangyayari nang lokal sa memorya ng iyong browser.",
+      "desc": "Patakaran sa privacy ng zero-tracking. Ang lahat ng pagproseso ng data ay nangyayari nang lokal sa memorya ng iyong browser."
     },
     "security": {
       "seoTitle": "Arkitektura ng Seguridad",
@@ -1454,7 +1464,9 @@
       "step3": "Hakbang 3",
       "verify3": "Bumuo ng anumang QR. Ito ay gumagana nang perpekto, na nagpapatunay na walang server ang kinakailangan.",
       "missionTitle": "Ang Kinabukasan ay Lokal",
-      "missionDesc": "Naiisip namin ang isang web kung saan nirerespeto ng mga utility app ang iyong hardware at ang iyong privacy. Maligayang pagdating sa bagong panahon ng client-side computing."
+      "missionDesc": "Naiisip namin ang isang web kung saan nirerespeto ng mga utility app ang iyong hardware at ang iyong privacy. Maligayang pagdating sa bagong panahon ng client-side computing.",
+      "seoDesc": "I-explore ang aming zero-trust security model: 100% client-side cryptography, zero cloud transmission, zero data storage.",
+      "desc": "I-explore ang aming zero-trust security model: 100% client-side cryptography, zero cloud transmission, zero data storage."
     },
     "terms": {
       "seoTitle": "Mga Tuntunin ng Serbisyo",
@@ -1475,10 +1487,12 @@
       "sec2Bul2": "Hindi kami nagpapanatili ng mga kopya ng iyong data, metadata, o mga naprosesong dokumento.",
       "sec4Title": "Intellectual Property",
       "sec4Desc": "Pinapanatili mo ang 100% na pagmamay-ari at lahat ng karapatan sa intelektwal na ari-arian sa mga dokumentong pinoproseso mo gamit ang CreateMy-QR. Wala kaming karapatan, lisensya, o pagmamay-ari sa iyong content.",
-      "sec5Title": "Mga Disclaimer at Pananagutan"
+      "sec5Title": "Mga Disclaimer at Pananagutan",
+      "seoDesc": "Mga tuntunin at kundisyon para sa paggamit ng CreateMy-QR na libreng online na generator at mga tool sa scanner.",
+      "desc": "Mga tuntunin at kundisyon para sa paggamit ng CreateMy-QR na libreng online na generator at mga tool sa scanner."
     },
     "usecases": {
-      "seoTitle": "Use Cases",
+      "seoTitle": "Mga Kaso ng Paggamit sa Industriya",
       "heroTitle": "Use Cases",
       "heroSubtitle": "Tuklasin kung paano ginagamit ng mga industriya ang aming secure na QR suite.",
       "retail": "Retail at E-Commerce",
@@ -1501,7 +1515,24 @@
       "toolPdf": "PDF Menu QR",
       "toolReview": "QR ng Google Review",
       "ctaTitle": "Hanapin ang Iyong Sariling Use Case",
-      "ctaDesc": "Anuman ang iyong industriya, ang CreateMy-QR ay ang pinakaligtas at pinakamabilis na paraan upang makabuo ng mga code. Subukan ang aming buong suite ng 20+ tool ngayon."
+      "ctaDesc": "Anuman ang iyong industriya, ang CreateMy-QR ay ang pinakaligtas at pinakamabilis na paraan upang makabuo ng mga code. Subukan ang aming buong suite ng 20+ tool ngayon.",
+      "seoDesc": "I-explore ang real-world na mga kaso ng paggamit ng QR code para sa mga restaurant, retail, event, pagbabayad, at pagpapatakbo ng enterprise.",
+      "desc": "I-explore ang real-world na mga kaso ng paggamit ng QR code para sa mga restaurant, retail, event, pagbabayad, at pagpapatakbo ng enterprise."
+    },
+    "barcode": {
+      "seoTitle": "Libreng Barcode Generator",
+      "seoDesc": "Bumuo ng mga linear na barcode (EAN, UPC, Code 128, Code 39) kaagad sa iyong browser na may high-res na pag-download.",
+      "desc": "Bumuo ng mga linear na barcode (EAN, UPC, Code 128, Code 39) kaagad sa iyong browser na may high-res na pag-download."
+    },
+    "scanqr": {
+      "seoTitle": "I-scan ang QR Code Online",
+      "seoDesc": "I-scan at i-decode ang mga QR code mula sa webcam o mga image file nang secure sa iyong browser gamit ang instant client-side decoding.",
+      "desc": "I-scan at i-decode ang mga QR code mula sa webcam o mga image file nang secure sa iyong browser gamit ang instant client-side decoding."
+    },
+    "scanbarcode": {
+      "seoTitle": "I-scan ang Barcode Online",
+      "seoDesc": "I-scan ang mga barcode mula sa camera o mga na-upload na file ng imahe nang secure sa iyong browser na walang mga pag-upload ng server.",
+      "desc": "I-scan ang mga barcode mula sa camera o mga na-upload na file ng imahe nang secure sa iyong browser na walang mga pag-upload ng server."
     }
   },
   "rating": {
@@ -1620,5 +1651,14 @@
       "featDesc3": "Walang limitasyong pag-scan, ganap na libre, walang mga petsa ng pag-expire.",
       "faqTitle": "Mga Karaniwang Tanong"
     }
+  },
+  "templates": {
+    "toolTitleSuffix": "Libreng QR Code Generator",
+    "toolDescTemplate": "Lumikha ng custom na {{toolName}} QR code na may logo nang libre. Pinakamahusay na nae-edit na QR code generator na walang watermark. 100% pribado, pagbuo ng panig ng kliyente.",
+    "barcodeTitleSuffix": "Libreng Barcode Generator",
+    "barcodeDescTemplate": "Bumuo ng mga custom na {{toolName}} linear barcode nang libre. Instant na pag-download ng SVG at PNG na may high-density na barcode encoding.",
+    "homeSeoDesc": "Bumuo ng 37 uri ng QR code at barcode nang libre. Walang signup. Instant download. 100% client-side, ISO-compliant, 30 wika.",
+    "homeHeroTitle": "Lahat ng QR at Barcode Tools",
+    "homeHeroTitleHighlight": "sa Isang Lugar"
   }
 }

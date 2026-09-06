@@ -1,0 +1,272 @@
+{
+  "en": {
+    "toolTitleSuffix": "Free QR Code Generator",
+    "toolDescTemplate": "Create custom {{toolName}} QR codes with logo for free. Best editable QR code generator with no watermark. 100% private, client-side generation.",
+    "barcodeTitleSuffix": "Free Barcode Generator",
+    "barcodeDescTemplate": "Generate custom {{toolName}} linear barcodes for free. Instant SVG and PNG download with high-density barcode encoding.",
+    "homeSeoDesc": "Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO-compliant, 30 languages.",
+    "homeHeroTitle": "All QR & Barcode Tools",
+    "homeHeroTitleHighlight": "in One Place"
+  },
+  "id": {
+    "toolTitleSuffix": "Pembuat Kode QR Gratis",
+    "toolDescTemplate": "Buat kode QR {{toolName}} khusus dengan logo secara gratis. Generator kode QR terbaik yang dapat diedit tanpa tanda air. 100% pribadi, generasi sisi klien.",
+    "barcodeTitleSuffix": "Generator Kode Batang Gratis",
+    "barcodeDescTemplate": "Hasilkan kode batang linier {{toolName}} khusus secara gratis. Unduhan SVG dan PNG instan dengan pengkodean kode batang kepadatan tinggi.",
+    "homeSeoDesc": "Hasilkan 37 jenis kode QR dan kode batang secara gratis. Tidak ada pendaftaran. Unduhan instan. 100% sisi klien, sesuai ISO, 30 bahasa.",
+    "homeHeroTitle": "Semua Alat QR & Kode Batang",
+    "homeHeroTitleHighlight": "di Satu Tempat"
+  },
+  "es": {
+    "toolTitleSuffix": "Generador de códigos QR gratuito",
+    "toolDescTemplate": "Cree códigos QR personalizados {{toolName}} con logotipo de forma gratuita. El mejor generador de códigos QR editables sin marca de agua. 100% privado, generación del lado del cliente.",
+    "barcodeTitleSuffix": "Generador de códigos de barras gratuito",
+    "barcodeDescTemplate": "Genere códigos de barras lineales {{toolName}} personalizados de forma gratuita. Descarga instantánea de SVG y PNG con codificación de códigos de barras de alta densidad.",
+    "homeSeoDesc": "Genera 37 tipos de códigos QR y códigos de barras gratis. Sin registro. Descarga instantánea. 100% del lado del cliente, compatible con ISO, 30 idiomas.",
+    "homeHeroTitle": "Todas las herramientas de códigos de barras y QR",
+    "homeHeroTitleHighlight": "en un solo lugar"
+  },
+  "fr": {
+    "toolTitleSuffix": "Générateur de codes QR gratuit",
+    "toolDescTemplate": "Créez gratuitement des codes QR {{toolName}} personnalisés avec logo. Meilleur générateur de code QR modifiable sans filigrane. Génération 100% privée côté client.",
+    "barcodeTitleSuffix": "Générateur de codes-barres gratuit",
+    "barcodeDescTemplate": "Générez gratuitement des codes-barres linéaires {{toolName}} personnalisés. Téléchargement instantané SVG et PNG avec encodage de codes-barres haute densité.",
+    "homeSeoDesc": "Générez gratuitement 37 types de codes QR et de codes-barres. Aucune inscription. Téléchargement instantané. 100% côté client, conforme ISO, 30 langues.",
+    "homeHeroTitle": "Tous les outils QR et codes-barres",
+    "homeHeroTitleHighlight": "en un seul endroit"
+  },
+  "de": {
+    "toolTitleSuffix": "Kostenloser QR-Code-Generator",
+    "toolDescTemplate": "Erstellen Sie kostenlos benutzerdefinierte {{toolName}}-QR-Codes mit Logo. Bester bearbeitbarer QR-Code-Generator ohne Wasserzeichen. 100 % private, kundenseitige Generierung.",
+    "barcodeTitleSuffix": "Kostenloser Barcode-Generator",
+    "barcodeDescTemplate": "Generieren Sie kostenlos benutzerdefinierte lineare {{toolName}}-Barcodes. Sofortiger SVG- und PNG-Download mit High-Density-Barcode-Kodierung.",
+    "homeSeoDesc": "Generieren Sie kostenlos 37 Arten von QR-Codes und Barcodes. Keine Anmeldung. Sofortiger Download. 100 % clientseitig, ISO-konform, 30 Sprachen.",
+    "homeHeroTitle": "Alle QR- und Barcode-Tools",
+    "homeHeroTitleHighlight": "An einem Ort"
+  },
+  "pt": {
+    "toolTitleSuffix": "Gerador de código QR grátis",
+    "toolDescTemplate": "Crie códigos QR {{toolName}} personalizados com logotipo gratuitamente. Melhor gerador de código QR editável sem marca d'água. Geração 100% privada do lado do cliente.",
+    "barcodeTitleSuffix": "Gerador de código de barras grátis",
+    "barcodeDescTemplate": "Gere códigos de barras lineares personalizados {{toolName}} gratuitamente. Download instantâneo de SVG e PNG com codificação de código de barras de alta densidade.",
+    "homeSeoDesc": "Gere 37 tipos de códigos QR e códigos de barras gratuitamente. Sem inscrição. Download instantâneo. 100% do lado do cliente, compatível com ISO, 30 idiomas.",
+    "homeHeroTitle": "Todas as ferramentas de QR e código de barras",
+    "homeHeroTitleHighlight": "em um só lugar"
+  },
+  "zh": {
+    "toolTitleSuffix": "免费二维码生成器",
+    "toolDescTemplate": "免费创建带有徽标的自定义 {{toolName}} 二维码。 最好的可编辑无水印二维码生成器。 100% 私有的客户端生成。",
+    "barcodeTitleSuffix": "免费条形码生成器",
+    "barcodeDescTemplate": "免费生成自定义 {{toolName}} 线性条形码。 使用高密度条形码编码即时下载 SVG 和 PNG。",
+    "homeSeoDesc": "免费生成37种二维码和条形码。 没有注册。 即时下载。 100% 客户端，符合 ISO 标准，30 种语言。",
+    "homeHeroTitle": "所有二维码和条形码工具",
+    "homeHeroTitleHighlight": "在一处"
+  },
+  "ja": {
+    "toolTitleSuffix": "無料のQRコードジェネレーター",
+    "toolDescTemplate": "ロゴ付きのカスタム {{toolName}} QR コードを無料で作成します。 透かしのない、編集可能な最高の QR コード ジェネレーター。 100% プライベート、クライアント側で生成。",
+    "barcodeTitleSuffix": "無料のバーコードジェネレーター",
+    "barcodeDescTemplate": "カスタムの {{toolName}} リニア バーコードを無料で生成します。 高密度バーコードエンコーディングによる SVG および PNG の即時ダウンロード。",
+    "homeSeoDesc": "37種類のQRコード・バーコードを無料で生成します。 サインアップはありません。 インスタントダウンロード。 100% クライアント側、ISO 準拠、30 言語。",
+    "homeHeroTitle": "すべての QR およびバーコード ツール",
+    "homeHeroTitleHighlight": "一か所で"
+  },
+  "hi": {
+    "toolTitleSuffix": "निःशुल्क क्यूआर कोड जेनरेटर",
+    "toolDescTemplate": "लोगो के साथ निःशुल्क कस्टम {{toolName}} क्यूआर कोड बनाएं। बिना वॉटरमार्क वाला सर्वश्रेष्ठ संपादन योग्य क्यूआर कोड जनरेटर। 100% निजी, क्लाइंट-साइड जेनरेशन।",
+    "barcodeTitleSuffix": "निःशुल्क बारकोड जेनरेटर",
+    "barcodeDescTemplate": "निःशुल्क कस्टम {{toolName}} लीनियर बारकोड जेनरेट करें। उच्च-घनत्व बारकोड एन्कोडिंग के साथ त्वरित एसवीजी और पीएनजी डाउनलोड।",
+    "homeSeoDesc": "37 प्रकार के क्यूआर कोड और बारकोड निःशुल्क जेनरेट करें। कोई साइनअप नहीं. तुरंत डाउनलोड करें. 100% क्लाइंट-साइड, आईएसओ-अनुपालक, 30 भाषाएँ।",
+    "homeHeroTitle": "सभी क्यूआर और बारकोड उपकरण",
+    "homeHeroTitleHighlight": "एक ही स्थान पर"
+  },
+  "ko": {
+    "toolTitleSuffix": "무료 QR 코드 생성기",
+    "toolDescTemplate": "로고가 포함된 맞춤형 {{toolName}} QR 코드를 무료로 생성하세요. 워터마크가 없는 최고의 편집 가능한 QR 코드 생성기입니다. 100% 비공개, 클라이언트측 생성.",
+    "barcodeTitleSuffix": "무료 바코드 생성기",
+    "barcodeDescTemplate": "맞춤형 {{toolName}} 선형 바코드를 무료로 생성하세요. 고밀도 바코드 인코딩을 통해 즉시 SVG 및 PNG를 다운로드할 수 있습니다.",
+    "homeSeoDesc": "37가지 유형의 QR 코드 및 바코드를 무료로 생성하세요. 가입이 없습니다. 즉시 다운로드. 100% 클라이언트 측, ISO 준수, 30개 언어.",
+    "homeHeroTitle": "모든 QR 및 바코드 도구",
+    "homeHeroTitleHighlight": "한 곳에서"
+  },
+  "ar": {
+    "toolTitleSuffix": "مولد رمز الاستجابة السريعة المجاني",
+    "toolDescTemplate": "قم بإنشاء رموز QR {{toolName}} مخصصة مع الشعار مجانًا. أفضل مولد رمز QR قابل للتحرير بدون علامة مائية. إنشاء خاص بنسبة 100% من جانب العميل.",
+    "barcodeTitleSuffix": "مولد الباركود المجاني",
+    "barcodeDescTemplate": "قم بإنشاء رموز شريطية خطية {{toolName}} مخصصة مجانًا. تنزيل فوري بتنسيق SVG وPNG باستخدام تشفير باركود عالي الكثافة.",
+    "homeSeoDesc": "قم بإنشاء 37 نوعًا من رموز QR والرموز الشريطية مجانًا. لا الاشتراك. تحميل فوري. 100% من جانب العميل، متوافق مع ISO، 30 لغة.",
+    "homeHeroTitle": "جميع أدوات QR والباركود",
+    "homeHeroTitleHighlight": "في مكان واحد"
+  },
+  "ru": {
+    "toolTitleSuffix": "Бесплатный генератор QR-кодов",
+    "toolDescTemplate": "Создавайте собственные QR-коды {{toolName}} с логотипом бесплатно. Лучший генератор редактируемых QR-кодов без водяных знаков. 100% частная генерация на стороне клиента.",
+    "barcodeTitleSuffix": "Бесплатный генератор штрих-кодов",
+    "barcodeDescTemplate": "Создавайте собственные линейные штрих-коды {{toolName}} бесплатно. Мгновенная загрузка SVG и PNG с кодированием штрих-кода высокой плотности.",
+    "homeSeoDesc": "Создавайте 37 типов QR-кодов и штрих-кодов бесплатно. Нет регистрации. Мгновенная загрузка. 100% клиентская часть, соответствует стандарту ISO, 30 языков.",
+    "homeHeroTitle": "Все инструменты QR и штрих-кодов",
+    "homeHeroTitleHighlight": "в одном месте"
+  },
+  "it": {
+    "toolTitleSuffix": "Generatore di codici QR gratuito",
+    "toolDescTemplate": "Crea gratuitamente codici QR {{toolName}} personalizzati con logo. Il miglior generatore di codici QR modificabili senza filigrana. Generazione lato client privata al 100%.",
+    "barcodeTitleSuffix": "Generatore di codici a barre gratuito",
+    "barcodeDescTemplate": "Genera codici a barre lineari {{toolName}} personalizzati gratuitamente. Download istantaneo di SVG e PNG con codifica di codici a barre ad alta densità.",
+    "homeSeoDesc": "Genera gratuitamente 37 tipi di codici QR e codici a barre. Nessuna registrazione. Download istantaneo. 100% lato client, conforme ISO, 30 lingue.",
+    "homeHeroTitle": "Tutti gli strumenti QR e codici a barre",
+    "homeHeroTitleHighlight": "in un posto"
+  },
+  "tr": {
+    "toolTitleSuffix": "Ücretsiz QR Kod Oluşturucu",
+    "toolDescTemplate": "Logolu özel {{toolName}} QR kodlarını ücretsiz oluşturun. Filigran içermeyen en iyi düzenlenebilir QR kod oluşturucu. %100 özel, istemci tarafı oluşturma.",
+    "barcodeTitleSuffix": "Ücretsiz Barkod Oluşturucu",
+    "barcodeDescTemplate": "Ücretsiz olarak özel {{toolName}} doğrusal barkod oluşturun. Yüksek yoğunluklu barkod kodlamasıyla anında SVG ve PNG indirme.",
+    "homeSeoDesc": "Ücretsiz olarak 37 tür QR kodu ve barkod oluşturun. Kayıt yok. Anında indirme. %100 istemci tarafı, ISO uyumlu, 30 dil.",
+    "homeHeroTitle": "Tüm QR ve Barkod Araçları",
+    "homeHeroTitleHighlight": "Tek Bir Yerde"
+  },
+  "nl": {
+    "toolTitleSuffix": "Gratis QR-codegenerator",
+    "toolDescTemplate": "Maak gratis aangepaste {{toolName}} QR-codes met logo. Beste bewerkbare QR-codegenerator zonder watermerk. 100% privé, generatie aan de klantzijde.",
+    "barcodeTitleSuffix": "Gratis barcodegenerator",
+    "barcodeDescTemplate": "Genereer gratis aangepaste {{toolName}} lineaire streepjescodes. Directe SVG- en PNG-download met barcodecodering met hoge dichtheid.",
+    "homeSeoDesc": "Genereer gratis 37 soorten QR-codes en barcodes. Geen aanmelding. Direct downloaden. 100% client-side, ISO-compatibel, 30 talen.",
+    "homeHeroTitle": "Alle QR- en barcodehulpmiddelen",
+    "homeHeroTitleHighlight": "op één plek"
+  },
+  "pl": {
+    "toolTitleSuffix": "Darmowy generator kodów QR",
+    "toolDescTemplate": "Twórz bezpłatnie niestandardowe kody QR {{toolName}} z logo. Najlepszy edytowalny generator kodów QR bez znaku wodnego. Generowanie w 100% prywatne, po stronie klienta.",
+    "barcodeTitleSuffix": "Darmowy generator kodów kreskowych",
+    "barcodeDescTemplate": "Wygeneruj bezpłatnie niestandardowe liniowe kody kreskowe {{toolName}}. Natychmiastowe pobieranie plików SVG i PNG z kodowaniem kodów kreskowych o dużej gęstości.",
+    "homeSeoDesc": "Wygeneruj za darmo 37 rodzajów kodów QR i kodów kreskowych. Brak rejestracji. Natychmiastowe pobieranie. 100% po stronie klienta, zgodne z ISO, 30 języków.",
+    "homeHeroTitle": "Wszystkie narzędzia QR i kodów kreskowych",
+    "homeHeroTitleHighlight": "w jednym miejscu"
+  },
+  "vi": {
+    "toolTitleSuffix": "Trình tạo mã QR miễn phí",
+    "toolDescTemplate": "Tạo miễn phí mã QR {{toolName}} tùy chỉnh có biểu tượng. Trình tạo mã QR có thể chỉnh sửa tốt nhất không có hình mờ. 100% riêng tư, tạo ra phía khách hàng.",
+    "barcodeTitleSuffix": "Trình tạo mã vạch miễn phí",
+    "barcodeDescTemplate": "Tạo miễn phí mã vạch tuyến tính {{toolName}} tùy chỉnh. Tải xuống SVG và PNG ngay lập tức với mã hóa mã vạch mật độ cao.",
+    "homeSeoDesc": "Tạo 37 loại mã QR và mã vạch miễn phí. Không đăng ký. Tải xuống ngay lập tức. 100% phía khách hàng, tuân thủ ISO, 30 ngôn ngữ.",
+    "homeHeroTitle": "Tất cả các công cụ QR & mã vạch",
+    "homeHeroTitleHighlight": "ở một nơi"
+  },
+  "th": {
+    "toolTitleSuffix": "เครื่องสร้างรหัส QR ฟรี",
+    "toolDescTemplate": "สร้างโค้ด QR {{toolName}} ที่กำหนดเองพร้อมโลโก้ได้ฟรี เครื่องสร้างโค้ด QR ที่แก้ไขได้ดีที่สุดโดยไม่มีลายน้ำ การสร้างส่วนตัวฝั่งไคลเอ็นต์ 100%",
+    "barcodeTitleSuffix": "เครื่องสร้างบาร์โค้ดฟรี",
+    "barcodeDescTemplate": "สร้างบาร์โค้ดเชิงเส้น {{toolName}} แบบกำหนดเองได้ฟรี ดาวน์โหลด SVG และ PNG ทันทีพร้อมการเข้ารหัสบาร์โค้ดความหนาแน่นสูง",
+    "homeSeoDesc": "สร้างรหัส QR และบาร์โค้ด 37 ประเภทฟรี ไม่มีการลงทะเบียน ดาวน์โหลดทันที ฝั่งไคลเอ็นต์ 100% เป็นไปตามมาตรฐาน ISO 30 ภาษา",
+    "homeHeroTitle": "เครื่องมือ QR และบาร์โค้ดทั้งหมด",
+    "homeHeroTitleHighlight": "ในที่เดียว"
+  },
+  "sv": {
+    "toolTitleSuffix": "Gratis QR-kodgenerator",
+    "toolDescTemplate": "Skapa anpassade {{toolName}} QR-koder med logotyp gratis. Bästa redigerbara QR-kodgenerator utan vattenstämpel. 100 % privat generation på klientsidan.",
+    "barcodeTitleSuffix": "Gratis streckkodsgenerator",
+    "barcodeDescTemplate": "Generera anpassade {{toolName}} linjära streckkoder gratis. Omedelbar SVG- och PNG-nedladdning med högdensitetsstreckkodskodning.",
+    "homeSeoDesc": "Generera 37 typer av QR-koder och streckkoder gratis. Ingen registrering. Omedelbar nedladdning. 100 % klientsida, ISO-kompatibel, 30 språk.",
+    "homeHeroTitle": "Alla QR- och streckkodsverktyg",
+    "homeHeroTitleHighlight": "på ett ställe"
+  },
+  "da": {
+    "toolTitleSuffix": "Gratis QR-kodegenerator",
+    "toolDescTemplate": "Opret brugerdefinerede {{toolName}} QR-koder med logo gratis. Bedste redigerbare QR-kodegenerator uden vandmærke. 100 % privat generation på klientsiden.",
+    "barcodeTitleSuffix": "Gratis stregkodegenerator",
+    "barcodeDescTemplate": "Generer tilpassede {{toolName}} lineære stregkoder gratis. Øjeblikkelig SVG- og PNG-download med stregkodekodning med høj tæthed.",
+    "homeSeoDesc": "Generer 37 typer QR-koder og stregkoder gratis. Ingen tilmelding. Øjeblikkelig download. 100 % klientside, ISO-kompatibel, 30 sprog.",
+    "homeHeroTitle": "Alle QR- og stregkodeværktøjer",
+    "homeHeroTitleHighlight": "på ét sted"
+  },
+  "fi": {
+    "toolTitleSuffix": "Ilmainen QR-koodigeneraattori",
+    "toolDescTemplate": "Luo mukautettuja {{toolName}} QR-koodeja logolla ilmaiseksi. Paras muokattava QR-koodigeneraattori ilman vesileimaa. 100 % yksityinen, asiakaspuolen sukupolvi.",
+    "barcodeTitleSuffix": "Ilmainen viivakoodigeneraattori",
+    "barcodeDescTemplate": "Luo mukautettuja lineaarisia {{toolName}} viivakoodeja ilmaiseksi. Välitön SVG- ja PNG-lataus korkeatiheyksisellä viivakoodikoodauksella.",
+    "homeSeoDesc": "Luo 37 erilaista QR-koodia ja viivakoodia ilmaiseksi. Ei ilmoittautumista. Välitön lataus. 100 % asiakaspuoli, ISO-yhteensopiva, 30 kieltä.",
+    "homeHeroTitle": "Kaikki QR- ja viivakoodityökalut",
+    "homeHeroTitleHighlight": "yhdessä paikassa"
+  },
+  "el": {
+    "toolTitleSuffix": "Δωρεάν δημιουργία κωδικών QR",
+    "toolDescTemplate": "Δημιουργήστε δωρεάν προσαρμοσμένους κωδικούς QR {{toolName}} με λογότυπο. Καλύτερη επεξεργάσιμη γεννήτρια κωδικών QR χωρίς υδατογράφημα. 100% ιδιωτική παραγωγή από την πλευρά του πελάτη.",
+    "barcodeTitleSuffix": "Δωρεάν Γεννήτρια Barcode",
+    "barcodeDescTemplate": "Δημιουργήστε δωρεάν προσαρμοσμένους γραμμικούς γραμμικούς κώδικες {{toolName}}. Άμεση λήψη SVG και PNG με κωδικοποίηση barcode υψηλής πυκνότητας.",
+    "homeSeoDesc": "Δημιουργήστε 37 τύπους κωδικών QR και barcodes δωρεάν. Καμία εγγραφή. Άμεση λήψη. 100% πελάτη, συμβατό με ISO, 30 γλώσσες.",
+    "homeHeroTitle": "Όλα τα Εργαλεία QR & Barcode",
+    "homeHeroTitleHighlight": "σε Ένα μέρος"
+  },
+  "cs": {
+    "toolTitleSuffix": "Zdarma generátor QR kódů",
+    "toolDescTemplate": "Vytvořte si zdarma vlastní QR kódy {{toolName}} s logem. Nejlepší upravitelný generátor QR kódu bez vodoznaku. 100% soukromá generace na straně klienta.",
+    "barcodeTitleSuffix": "Bezplatný generátor čárových kódů",
+    "barcodeDescTemplate": "Vygenerujte si zdarma vlastní lineární čárové kódy {{toolName}}. Okamžité stahování SVG a PNG s kódováním čárových kódů s vysokou hustotou.",
+    "homeSeoDesc": "Vygenerujte si zdarma 37 typů QR kódů a čárových kódů. Žádná registrace. Okamžité stažení. 100% na straně klienta, v souladu s ISO, 30 jazyků.",
+    "homeHeroTitle": "Všechny nástroje QR a čárových kódů",
+    "homeHeroTitleHighlight": "na jednom místě"
+  },
+  "hu": {
+    "toolTitleSuffix": "Ingyenes QR kód generátor",
+    "toolDescTemplate": "Ingyenes egyéni {{toolName}} QR-kódok létrehozása logóval. A legjobb szerkeszthető QR-kód generátor vízjel nélkül. 100%-ban privát, ügyféloldali generálás.",
+    "barcodeTitleSuffix": "Ingyenes vonalkód generátor",
+    "barcodeDescTemplate": "Ingyenes egyéni {{toolName}} lineáris vonalkódok létrehozása. Azonnali SVG és PNG letöltés nagy sűrűségű vonalkód kódolással.",
+    "homeSeoDesc": "Generáljon ingyenesen 37 féle QR-kódot és vonalkódot. Nincs regisztráció. Azonnali letöltés. 100%-ban ügyféloldali, ISO-kompatibilis, 30 nyelv.",
+    "homeHeroTitle": "Minden QR és vonalkód eszköz",
+    "homeHeroTitleHighlight": "egy helyen"
+  },
+  "ro": {
+    "toolTitleSuffix": "Generator gratuit de coduri QR",
+    "toolDescTemplate": "Creați coduri QR personalizate {{toolName}} cu logo gratuit. Cel mai bun generator de coduri QR editabil fără filigran. 100% privat, generare pe partea clientului.",
+    "barcodeTitleSuffix": "Generator gratuit de coduri de bare",
+    "barcodeDescTemplate": "Generați gratuit coduri de bare liniare personalizate {{toolName}}. Descărcare instantanee SVG și PNG cu codare de coduri de bare de mare densitate.",
+    "homeSeoDesc": "Generați 37 de tipuri de coduri QR și coduri de bare gratuit. Fără înscriere. Descărcare instantanee. 100% la nivelul clientului, conform ISO, 30 de limbi.",
+    "homeHeroTitle": "Toate instrumentele QR și coduri de bare",
+    "homeHeroTitleHighlight": "într-un singur loc"
+  },
+  "uk": {
+    "toolTitleSuffix": "Безкоштовний генератор QR-кодів",
+    "toolDescTemplate": "Створюйте власні QR-коди {{toolName}} із логотипом безкоштовно. Найкращий генератор QR-кодів без водяних знаків, який можна редагувати. 100% приватна генерація на стороні клієнта.",
+    "barcodeTitleSuffix": "Безкоштовний генератор штрих-кодів",
+    "barcodeDescTemplate": "Створюйте власні лінійні штрих-коди {{toolName}} безкоштовно. Миттєве завантаження SVG і PNG із кодуванням штрих-кодів високої щільності.",
+    "homeSeoDesc": "Згенеруйте 37 типів QR-кодів і штрих-кодів безкоштовно. Без реєстрації. Миттєве завантаження. 100% на стороні клієнта, ISO-сумісність, 30 мов.",
+    "homeHeroTitle": "Усі інструменти QR і штрих-кодів",
+    "homeHeroTitleHighlight": "в одному місці"
+  },
+  "ms": {
+    "toolTitleSuffix": "Penjana Kod QR Percuma",
+    "toolDescTemplate": "Cipta kod QR {{toolName}} tersuai dengan logo secara percuma. Penjana kod QR boleh diedit terbaik tanpa tera air. 100% persendirian, generasi pihak pelanggan.",
+    "barcodeTitleSuffix": "Penjana Kod Bar Percuma",
+    "barcodeDescTemplate": "Hasilkan kod bar linear {{toolName}} tersuai secara percuma. Muat turun SVG dan PNG segera dengan pengekodan kod bar berketumpatan tinggi.",
+    "homeSeoDesc": "Hasilkan 37 jenis kod QR dan kod bar secara percuma. Tiada pendaftaran. Muat turun segera. 100% bahagian pelanggan, mematuhi ISO, 30 bahasa.",
+    "homeHeroTitle": "Semua Alat QR & Kod Bar",
+    "homeHeroTitleHighlight": "di Satu Tempat"
+  },
+  "tl": {
+    "toolTitleSuffix": "Libreng QR Code Generator",
+    "toolDescTemplate": "Lumikha ng custom na {{toolName}} QR code na may logo nang libre. Pinakamahusay na nae-edit na QR code generator na walang watermark. 100% pribado, pagbuo ng panig ng kliyente.",
+    "barcodeTitleSuffix": "Libreng Barcode Generator",
+    "barcodeDescTemplate": "Bumuo ng mga custom na {{toolName}} linear barcode nang libre. Instant na pag-download ng SVG at PNG na may high-density na barcode encoding.",
+    "homeSeoDesc": "Bumuo ng 37 uri ng QR code at barcode nang libre. Walang signup. Instant download. 100% client-side, ISO-compliant, 30 wika.",
+    "homeHeroTitle": "Lahat ng QR at Barcode Tools",
+    "homeHeroTitleHighlight": "sa Isang Lugar"
+  },
+  "bn": {
+    "toolTitleSuffix": "বিনামূল্যে QR কোড জেনারেটর",
+    "toolDescTemplate": "বিনামূল্যে লোগো সহ কাস্টম {{toolName}} QR কোড তৈরি করুন৷ কোন ওয়াটারমার্ক ছাড়াই সেরা সম্পাদনাযোগ্য QR কোড জেনারেটর। 100% ব্যক্তিগত, ক্লায়েন্ট-সাইড জেনারেশন।",
+    "barcodeTitleSuffix": "ফ্রি বারকোড জেনারেটর",
+    "barcodeDescTemplate": "বিনামূল্যে কাস্টম {{toolName}} লিনিয়ার বারকোড তৈরি করুন৷ উচ্চ-ঘনত্বের বারকোড এনকোডিং সহ তাত্ক্ষণিক SVG এবং PNG ডাউনলোড।",
+    "homeSeoDesc": "বিনামূল্যে 37 ধরনের QR কোড এবং বারকোড তৈরি করুন। সাইন আপ নেই। তাত্ক্ষণিক ডাউনলোড। 100% ক্লায়েন্ট-সাইড, ISO-সঙ্গত, 30টি ভাষা।",
+    "homeHeroTitle": "সমস্ত QR এবং বারকোড সরঞ্জাম",
+    "homeHeroTitleHighlight": "এক জায়গায়"
+  },
+  "no": {
+    "toolTitleSuffix": "Gratis QR-kodegenerator",
+    "toolDescTemplate": "Lag egendefinerte {{toolName}} QR-koder med logo gratis. Beste redigerbare QR-kodegenerator uten vannmerke. 100 % privat generasjon på klientsiden.",
+    "barcodeTitleSuffix": "Gratis strekkodegenerator",
+    "barcodeDescTemplate": "Generer egendefinerte {{toolName}} lineære strekkoder gratis. Umiddelbar SVG- og PNG-nedlasting med strekkodekoding med høy tetthet.",
+    "homeSeoDesc": "Generer 37 typer QR-koder og strekkoder gratis. Ingen påmelding. Øyeblikkelig nedlasting. 100 % klientside, ISO-kompatibel, 30 språk.",
+    "homeHeroTitle": "Alle QR- og strekkodeverktøy",
+    "homeHeroTitleHighlight": "på ett sted"
+  }
+}

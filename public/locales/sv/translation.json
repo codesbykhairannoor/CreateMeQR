@@ -1246,10 +1246,10 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Gratis QR-kod- och streckkodsgenerator | 37 Verktyg online",
-    "seoDesc": "Generera 37 typer av QR-koder och streckkoder gratis. Ingen registrering. Omedelbar nedladdning. 100 % klientsida, ISO/IEC 18004-kompatibel, tillgänglig på 30 språk.",
+    "seoDesc": "Generera 37 typer av QR-koder och streckkoder gratis. Ingen registrering. Omedelbar nedladdning. 100 % klientsida, ISO-kompatibel, 30 språk.",
     "badge": "ISO/IEC 18004 · 100 % gratis · Noll spårning · Ingen registrering",
-    "heroTitle": "Alla QR & streckkoder",
-    "heroTitleHighlight": "Verktyg på ett ställe",
+    "heroTitle": "Alla QR- och streckkodsverktyg",
+    "heroTitleHighlight": "på ett ställe",
     "heroSubtitle": "Generera 37+ typer av QR-koder och streckkoder direkt. Ingen registrering, inga gränser, ingen data uppladdad – någonsin. Exportera som SVG eller PNG, helt gratis.",
     "citation": "\"QR-koden är en internationell standard (ISO/IEC 18004:2015). Matrisstreckkoder kräver rena modulrutnät för pålitlig skanning över alla kompatibla läsare över hela världen.\"",
     "searchPlaceholder": "Sökverktyg — WhatsApp, WiFi, vCard, PDF...",
@@ -1304,7 +1304,9 @@
       "guarantee": "Vår garanti",
       "guaranteeDesc": "CreateMy-QR är byggd för att förbli helt gratis. Vårt uppdrag är att demokratisera nyttigheter för alla.",
       "join": "Gå med i rörelsen",
-      "joinDesc": "Upplev den snabbaste, säkraste och mest avancerade QR-sviten på webben."
+      "joinDesc": "Upplev den snabbaste, säkraste och mest avancerade QR-sviten på webben.",
+      "seoDesc": "Demokratisering av dokument- och QR-verktyg med 100 % säkerhet och integritet på klientsidan.",
+      "desc": "Demokratisering av dokument- och QR-verktyg med 100 % säkerhet och integritet på klientsidan."
     },
     "compare": {
       "seoTitle": "Jämför verktyg",
@@ -1354,7 +1356,9 @@
       "tr6val2": "Krävs aldrig",
       "tr7val1": "Beroende på nätverk",
       "tr7val2": "Omedelbar (lokal CPU)",
-      "expertAuthor": "Oberoende säkerhetsrevision"
+      "expertAuthor": "Oberoende säkerhetsrevision",
+      "seoDesc": "Upptäck varför proffs väljer CreateMy-QR för privat generering på klientsidan utan API-gränser.",
+      "desc": "Upptäck varför proffs väljer CreateMy-QR för privat generering på klientsidan utan API-gränser."
     },
     "languages": {
       "seoTitle": "Språk som stöds",
@@ -1374,7 +1378,9 @@
       "communityTitle": "Gemenskapsdriven",
       "communityDesc": "Lägger du märke till en översättning som känns lite avig? Vi litar på att vår globala användarbas hjälper till att förfina och perfekta våra lokaliseringar. Kontakta oss för att föreslå förbättringar för ditt modersmål.",
       "ctaTitle": "Redo att bearbeta?",
-      "ctaDesc": "Välj ett verktyg nedan för att komma igång säkert och gratis."
+      "ctaDesc": "Välj ett verktyg nedan för att komma igång säkert och gratis.",
+      "seoDesc": "Skapa och skanna QR-koder och streckkoder på 30 språk över hela världen med omedelbar generering på klientsidan.",
+      "desc": "Skapa och skanna QR-koder och streckkoder på 30 språk över hela världen med omedelbar generering på klientsidan."
     },
     "pricing": {
       "seoTitle": "100 % gratis prissättning",
@@ -1404,7 +1410,9 @@
       "bizTitle": "Gratis för företagsbruk",
       "bizDesc": "Ja, du kan använda CreateMy-QR för ditt företag. Faktum är att vår lokala bearbetningsarkitektur gör oss till den enda plattformen som är säker nog för strikta företagsmiljöer, juridiska team och vårdpersonal.",
       "supportTitle": "Stöd projektet",
-      "supportDesc": "Vi tar inte betalt för ett abonnemang, men att hålla domänen och utvecklingen vid liv tar tid. Om CreateMy-QR räddade din dag, överväg att dela den med ditt team. Mun till mun är vår enda marknadsföringsstrategi."
+      "supportDesc": "Vi tar inte betalt för ett abonnemang, men att hålla domänen och utvecklingen vid liv tar tid. Om CreateMy-QR räddade din dag, överväg att dela den med ditt team. Mun till mun är vår enda marknadsföringsstrategi.",
+      "seoDesc": "CreateMy-QR är 100 % gratis med obegränsade skanningar, högupplösta vektornedladdningar och noll gränser.",
+      "desc": "CreateMy-QR är 100 % gratis med obegränsade skanningar, högupplösta vektornedladdningar och noll gränser."
     },
     "privacy": {
       "seoTitle": "Sekretesspolicy",
@@ -1417,7 +1425,9 @@
       "ssl": "SSL-krypterad",
       "sslDesc": "Även om ingenting laddas upp, serveras vår sida över strikt HTTPS.",
       "policyTitle": "Åtagandet om noll uppladdning",
-      "policyDesc": "Till skillnad från andra plattformar fungerar CreateMy-QR helt på klientsidan. När du genererar en QR-kod sker processen lokalt på din maskin."
+      "policyDesc": "Till skillnad från andra plattformar fungerar CreateMy-QR helt på klientsidan. När du genererar en QR-kod sker processen lokalt på din maskin.",
+      "seoDesc": "Integritetspolicy för nollspårning. All databehandling sker lokalt i din webbläsares minne.",
+      "desc": "Integritetspolicy för nollspårning. All databehandling sker lokalt i din webbläsares minne."
     },
     "security": {
       "seoTitle": "Säkerhetsarkitektur",
@@ -1454,7 +1464,9 @@
       "step3": "Steg 3",
       "verify3": "Generera vilken QR som helst. Det fungerar perfekt, vilket bevisar att ingen server krävs.",
       "missionTitle": "Framtiden är lokal",
-      "missionDesc": "Vi föreställer oss en webb där verktygsappar respekterar din hårdvara och din integritet. Välkommen till den nya eran av datoranvändning på klientsidan."
+      "missionDesc": "Vi föreställer oss en webb där verktygsappar respekterar din hårdvara och din integritet. Välkommen till den nya eran av datoranvändning på klientsidan.",
+      "seoDesc": "Utforska vår nollförtroendesäkerhetsmodell: 100 % kryptografi på klientsidan, noll molnöverföring, noll datalagring.",
+      "desc": "Utforska vår nollförtroendesäkerhetsmodell: 100 % kryptografi på klientsidan, noll molnöverföring, noll datalagring."
     },
     "terms": {
       "seoTitle": "Användarvillkor",
@@ -1475,10 +1487,12 @@
       "sec2Bul2": "Vi behåller inte kopior av dina data, metadata eller bearbetade dokument.",
       "sec4Title": "Immateriella rättigheter",
       "sec4Desc": "Du behåller 100 % ägande och alla immateriella rättigheter till de dokument du bearbetar med CreateMy-QR. Vi hävdar noll rättigheter, licenser eller äganderätt över ditt innehåll.",
-      "sec5Title": "Friskrivningar och ansvar"
+      "sec5Title": "Friskrivningar och ansvar",
+      "seoDesc": "Regler och villkor för att använda CreateMy-QR gratis online-generator- och skannerverktyg.",
+      "desc": "Regler och villkor för att använda CreateMy-QR gratis online-generator- och skannerverktyg."
     },
     "usecases": {
-      "seoTitle": "Användningsfall",
+      "seoTitle": "Användningsfall för industrin",
       "heroTitle": "Användningsfall",
       "heroSubtitle": "Upptäck hur industrier utnyttjar vår säkra QR-svit.",
       "retail": "Detaljhandel och e-handel",
@@ -1501,7 +1515,24 @@
       "toolPdf": "PDF Meny QR",
       "toolReview": "Google Recension QR",
       "ctaTitle": "Hitta ditt eget användningsfall",
-      "ctaDesc": "No matter your industry, CreateMy-QR is the safest and fastest way to generate codes. Prova vår kompletta uppsättning av 20+ verktyg idag."
+      "ctaDesc": "No matter your industry, CreateMy-QR is the safest and fastest way to generate codes. Prova vår kompletta uppsättning av 20+ verktyg idag.",
+      "seoDesc": "Utforska verkliga QR-koder för restauranger, detaljhandel, evenemang, betalningar och företagsverksamhet.",
+      "desc": "Utforska verkliga QR-koder för restauranger, detaljhandel, evenemang, betalningar och företagsverksamhet."
+    },
+    "barcode": {
+      "seoTitle": "Gratis streckkodsgenerator",
+      "seoDesc": "Generera linjära streckkoder (EAN, UPC, Code 128, Code 39) direkt i din webbläsare med högupplöst nedladdning.",
+      "desc": "Generera linjära streckkoder (EAN, UPC, Code 128, Code 39) direkt i din webbläsare med högupplöst nedladdning."
+    },
+    "scanqr": {
+      "seoTitle": "Skanna QR-kod online",
+      "seoDesc": "Skanna och avkoda QR-koder från webbkamera eller bildfiler säkert i din webbläsare med omedelbar avkodning på klientsidan.",
+      "desc": "Skanna och avkoda QR-koder från webbkamera eller bildfiler säkert i din webbläsare med omedelbar avkodning på klientsidan."
+    },
+    "scanbarcode": {
+      "seoTitle": "Skanna streckkod online",
+      "seoDesc": "Skanna streckkoder från kameran eller uppladdade bildfiler säkert i din webbläsare utan serveruppladdningar.",
+      "desc": "Skanna streckkoder från kameran eller uppladdade bildfiler säkert i din webbläsare utan serveruppladdningar."
     }
   },
   "rating": {
@@ -1642,5 +1673,14 @@
       "featDesc3": "Obegränsade skanningar, helt gratis, inga utgångsdatum.",
       "faqTitle": "Vanliga frågor"
     }
+  },
+  "templates": {
+    "toolTitleSuffix": "Gratis QR-kodgenerator",
+    "toolDescTemplate": "Skapa anpassade {{toolName}} QR-koder med logotyp gratis. Bästa redigerbara QR-kodgenerator utan vattenstämpel. 100 % privat generation på klientsidan.",
+    "barcodeTitleSuffix": "Gratis streckkodsgenerator",
+    "barcodeDescTemplate": "Generera anpassade {{toolName}} linjära streckkoder gratis. Omedelbar SVG- och PNG-nedladdning med högdensitetsstreckkodskodning.",
+    "homeSeoDesc": "Generera 37 typer av QR-koder och streckkoder gratis. Ingen registrering. Omedelbar nedladdning. 100 % klientsida, ISO-kompatibel, 30 språk.",
+    "homeHeroTitle": "Alla QR- och streckkodsverktyg",
+    "homeHeroTitleHighlight": "på ett ställe"
   }
 }

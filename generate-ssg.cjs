@@ -86,11 +86,18 @@ async function run() {
 
   let generatedCount = 0;
 
+  // Load localized master templates
+  const templatesPath = path.join(__dirname, 'src', 'config', 'localizedTemplates.json');
+  const localizedTemplates = fs.existsSync(templatesPath) 
+    ? JSON.parse(fs.readFileSync(templatesPath, 'utf8')) 
+    : {};
+
   for (const lang of langCodes) {
     const transPath = path.join(langsDir, lang, 'translation.json');
     if (!fs.existsSync(transPath)) continue;
     
     const translations = JSON.parse(fs.readFileSync(transPath, 'utf8'));
+    const langTemplates = localizedTemplates[lang] || localizedTemplates['en'] || {};
     const toolMap = routeToToolMap[lang] || {};
     
     const allPages = { ...toolMap };
@@ -114,63 +121,24 @@ async function run() {
         title = `${useCase.h1Title} | CreateMy-QR`;
         description = useCase.seoDesc;
       } else if (['about', 'compare', 'languages', 'pricing', 'privacy', 'security', 'terms', 'usecases', 'barcode', 'scanqr', 'scanbarcode'].includes(toolId)) {
-        const staticMeta = {
-          'about': {
-            title: translations.static?.about?.seoTitle || 'About Us',
-            desc: 'Democratizing document and QR tools with 100% client-side security and privacy.'
-          },
-          'compare': {
-            title: translations.static?.compare?.seoTitle || 'Compare Tools',
-            desc: 'Discover why professionals choose CreateMy-QR for private, client-side generation without API limits.'
-          },
-          'languages': {
-            title: translations.static?.languages?.seoTitle || 'Supported Languages',
-            desc: 'Create and scan QR codes and barcodes in 30 languages worldwide with instant client-side generation.'
-          },
-          'pricing': {
-            title: translations.static?.pricing?.seoTitle || '100% Free Pricing',
-            desc: 'CreateMy-QR is 100% free with unlimited scans, high-resolution vector downloads, and zero limits.'
-          },
-          'privacy': {
-            title: translations.static?.privacy?.seoTitle || 'Privacy Policy',
-            desc: 'Zero-tracking privacy policy. All data processing occurs locally in your browser memory.'
-          },
-          'security': {
-            title: translations.static?.security?.seoTitle || 'Security Architecture',
-            desc: 'Explore our zero-trust security model: 100% client-side cryptography, zero cloud transmission, zero data storage.'
-          },
-          'terms': {
-            title: translations.static?.terms?.seoTitle || 'Terms of Service',
-            desc: 'Terms and conditions for using CreateMy-QR free online generator and scanner tools.'
-          },
-          'usecases': {
-            title: translations.static?.usecases?.seoTitle || 'Industry Use Cases',
-            desc: 'Explore real-world QR code use cases for restaurants, retail, events, payments, and enterprise operations.'
-          },
-          'barcode': {
-            title: translations.static?.barcode?.seoTitle || 'Free Barcode Generator',
-            desc: 'Generate linear barcodes (EAN, UPC, Code 128, Code 39) instantly in your browser with high-res download.'
-          },
-          'scanqr': {
-            title: translations.static?.scanqr?.seoTitle || 'Scan QR Code Online',
-            desc: 'Scan and decode QR codes from webcam or image files securely in your browser with instant client-side decoding.'
-          },
-          'scanbarcode': {
-            title: translations.static?.scanbarcode?.seoTitle || 'Scan Barcode Online',
-            desc: 'Scan barcodes from camera or uploaded image files securely in your browser with zero server uploads.'
-          }
-        };
+        const staticMeta = translations.static?.[toolId] || {};
+        const fallbackTitle = translations.types?.[toolId] || toolId;
+        const pageTitle = staticMeta.seoTitle || staticMeta.title || fallbackTitle;
+        const pageDesc = staticMeta.seoDesc || staticMeta.desc || langTemplates.toolDescTemplate?.replace(/\{\{toolName\}\}/g, fallbackTitle) || '100% private, client-side generation.';
         
-        const meta = staticMeta[toolId] || { title: 'Tools', desc: 'Free online tools.' };
-        title = `${meta.title} | CreateMy-QR`;
-        description = meta.desc;
+        title = `${pageTitle} | CreateMy-QR`;
+        description = pageDesc;
       } else if (toolId === 'url' || toolId === 'home' || toolId === '/' || localizedSlug === '/') {
-        title = `CreateMy-QR | ${translations.home?.heroTitle || 'All QR & Barcode'} ${translations.home?.heroTitleHighlight || 'Tools in One Place'}`;
-        description = translations.home?.seoDesc || translations.tagline || 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO-compliant, 30 languages.';
+        const heroTitle = translations.home?.heroTitle || langTemplates.homeHeroTitle || 'All QR & Barcode';
+        const heroHighlight = translations.home?.heroTitleHighlight || langTemplates.homeHeroTitleHighlight || 'Tools in One Place';
+        title = `CreateMy-QR | ${heroTitle} ${heroHighlight}`;
+        description = translations.home?.seoDesc || langTemplates.homeSeoDesc || 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO-compliant, 30 languages.';
       } else {
         const toolName = translations.types?.[toolId] || toolId;
-        title = `${toolName} - Free QR Code Generator | CreateMy-QR`;
-        description = `Create custom ${toolName} QR codes with logo for free. Best editable QR code generator with no watermark. 100% private, client-side generation.`;
+        const suffix = langTemplates.toolTitleSuffix || 'Free QR Code Generator';
+        title = `${toolName} - ${suffix} | CreateMy-QR`;
+        const descTpl = langTemplates.toolDescTemplate || 'Create custom {{toolName}} QR codes with logo for free. Best editable QR code generator with no watermark. 100% private, client-side generation.';
+        description = descTpl.replace(/\{\{toolName\}\}/g, toolName);
       }
 
       function formatSeoTitle(rawTitle, brandSuffix = ' | CreateMy-QR') {
@@ -325,6 +293,17 @@ async function run() {
     fs.writeFileSync(
       path.join(rootLegacyUseCases, 'index.html'),
       `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=https://createmy-qr.com/use-cases" /><link rel="canonical" href="https://createmy-qr.com/use-cases" /><meta name="robots" content="noindex,follow" /></head><body><p>Redirecting to <a href="https://createmy-qr.com/use-cases">https://createmy-qr.com/use-cases</a>...</p></body></html>`
+    );
+    aliasCount++;
+  }
+
+  // Root /en -> /
+  const rootLegacyEn = path.join(distDir, 'en');
+  if (!fs.existsSync(rootLegacyEn)) {
+    fs.mkdirSync(rootLegacyEn, { recursive: true });
+    fs.writeFileSync(
+      path.join(rootLegacyEn, 'index.html'),
+      `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=https://createmy-qr.com/" /><link rel="canonical" href="https://createmy-qr.com/" /><meta name="robots" content="noindex,follow" /></head><body><p>Redirecting to <a href="https://createmy-qr.com/">https://createmy-qr.com/</a>...</p></body></html>`
     );
     aliasCount++;
   }

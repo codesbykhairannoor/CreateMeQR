@@ -1246,10 +1246,10 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Penjana Kod QR & Kod Bar Percuma |37 Alat Dalam Talian",
-    "seoDesc": "Hasilkan 37 jenis kod QR dan kod bar secara percuma.Tiada pendaftaran.Muat turun segera.100% bahagian pelanggan, mematuhi ISO/IEC 18004, tersedia dalam 30 bahasa.",
+    "seoDesc": "Hasilkan 37 jenis kod QR dan kod bar secara percuma. Tiada pendaftaran. Muat turun segera. 100% bahagian pelanggan, mematuhi ISO, 30 bahasa.",
     "badge": "ISO/IEC 18004 · 100% Percuma · Penjejakan Sifar · Tiada Pendaftaran",
-    "heroTitle": "Semua QR & Kod Bar",
-    "heroTitleHighlight": "Alat di Satu Tempat",
+    "heroTitle": "Semua Alat QR & Kod Bar",
+    "heroTitleHighlight": "di Satu Tempat",
     "heroSubtitle": "Hasilkan 37+ jenis kod QR dan kod bar serta-merta.Tiada pendaftaran, tiada had, tiada data dimuat naik — pernah.Eksport sebagai SVG atau PNG, percuma sepenuhnya.",
     "citation": "\"Kod QR ialah piawaian antarabangsa (ISO/IEC 18004:2015). Kod bar matriks memerlukan grid modul yang bersih untuk pengimbasan yang boleh dipercayai merentas semua pembaca yang patuh di seluruh dunia.\"",
     "searchPlaceholder": "Alat carian — WhatsApp, WiFi, vCard, PDF...",
@@ -1286,7 +1286,7 @@
   },
   "static": {
     "about": {
-      "seoTitle": "Mengenai Kami",
+      "seoTitle": "Tentang Kami",
       "heroTitle": "Mengenai Kami",
       "heroSubtitle": "Mendemokrasikan Dokumen & Alat QR",
       "mission": "Misi Kami",
@@ -1304,7 +1304,9 @@
       "guarantee": "Jaminan Kami",
       "guaranteeDesc": "CreateMy-QR dibina untuk kekal bebas sepenuhnya. Misi kami adalah untuk mendemokrasikan utiliti untuk semua orang.",
       "join": "Sertai Pergerakan",
-      "joinDesc": "Alami suite QR terpantas, paling selamat dan paling maju di web."
+      "joinDesc": "Alami suite QR terpantas, paling selamat dan paling maju di web.",
+      "seoDesc": "Mendemokrasikan dokumen dan alatan QR dengan keselamatan dan privasi pihak pelanggan 100%.",
+      "desc": "Mendemokrasikan dokumen dan alatan QR dengan keselamatan dan privasi pihak pelanggan 100%."
     },
     "compare": {
       "seoTitle": "Bandingkan Alat",
@@ -1354,7 +1356,9 @@
       "tr6val2": "Tidak Pernah Diperlukan",
       "tr7val1": "Bergantung pada Rangkaian",
       "tr7val2": "Segera (CPU Tempatan)",
-      "expertAuthor": "Audit Keselamatan Bebas"
+      "expertAuthor": "Audit Keselamatan Bebas",
+      "seoDesc": "Temui sebab profesional memilih CreateMy-QR untuk penjanaan peribadi, pihak pelanggan tanpa had API.",
+      "desc": "Temui sebab profesional memilih CreateMy-QR untuk penjanaan peribadi, pihak pelanggan tanpa had API."
     },
     "languages": {
       "seoTitle": "Bahasa yang Disokong",
@@ -1374,7 +1378,9 @@
       "communityTitle": "Didorong Komuniti",
       "communityDesc": "Perhatikan terjemahan yang terasa sedikit tidak jelas? Kami bergantung pada pangkalan pengguna global kami untuk membantu memperhalusi dan menyempurnakan penyetempatan kami. Hubungi kami untuk mencadangkan penambahbaikan untuk bahasa ibunda anda.",
       "ctaTitle": "Sedia untuk Memproses?",
-      "ctaDesc": "Pilih alat di bawah untuk bermula dengan selamat dan percuma."
+      "ctaDesc": "Pilih alat di bawah untuk bermula dengan selamat dan percuma.",
+      "seoDesc": "Cipta dan imbas kod QR dan kod bar dalam 30 bahasa di seluruh dunia dengan penjanaan pihak pelanggan segera.",
+      "desc": "Cipta dan imbas kod QR dan kod bar dalam 30 bahasa di seluruh dunia dengan penjanaan pihak pelanggan segera."
     },
     "pricing": {
       "seoTitle": "100% Harga Percuma",
@@ -1404,7 +1410,9 @@
       "bizTitle": "Percuma untuk Kegunaan Perniagaan",
       "bizDesc": "Ya, anda boleh menggunakan CreateMy-QR untuk syarikat anda. Malah, seni bina pemprosesan tempatan kami menjadikan kami satu-satunya platform yang cukup selamat untuk persekitaran korporat yang ketat, pasukan undang-undang dan profesional penjagaan kesihatan.",
       "supportTitle": "Sokong Projek",
-      "supportDesc": "Kami tidak mengenakan bayaran langganan, tetapi memastikan domain dan pembangunan terus hidup memerlukan masa. Jika CreateMy-QR menyelamatkan hari anda, pertimbangkan untuk berkongsi dengan pasukan anda. Dari mulut ke mulut adalah satu-satunya strategi pemasaran kami."
+      "supportDesc": "Kami tidak mengenakan bayaran langganan, tetapi memastikan domain dan pembangunan terus hidup memerlukan masa. Jika CreateMy-QR menyelamatkan hari anda, pertimbangkan untuk berkongsi dengan pasukan anda. Dari mulut ke mulut adalah satu-satunya strategi pemasaran kami.",
+      "seoDesc": "CreateMy-QR adalah 100% percuma dengan imbasan tanpa had, muat turun vektor resolusi tinggi dan had sifar.",
+      "desc": "CreateMy-QR adalah 100% percuma dengan imbasan tanpa had, muat turun vektor resolusi tinggi dan had sifar."
     },
     "privacy": {
       "seoTitle": "Dasar Privasi",
@@ -1417,7 +1425,9 @@
       "ssl": "SSL Disulitkan",
       "sslDesc": "Walaupun tiada apa-apa yang dimuat naik, tapak kami disediakan melalui HTTPS yang ketat.",
       "policyTitle": "Komitmen Sifar Muat Naik",
-      "policyDesc": "Tidak seperti platform lain, CreateMy-QR beroperasi sepenuhnya pada bahagian pelanggan. Apabila anda menjana kod QR, proses itu berlaku secara setempat pada mesin anda."
+      "policyDesc": "Tidak seperti platform lain, CreateMy-QR beroperasi sepenuhnya pada bahagian pelanggan. Apabila anda menjana kod QR, proses itu berlaku secara setempat pada mesin anda.",
+      "seoDesc": "Dasar privasi penjejakan sifar. Semua pemprosesan data berlaku secara setempat dalam memori penyemak imbas anda.",
+      "desc": "Dasar privasi penjejakan sifar. Semua pemprosesan data berlaku secara setempat dalam memori penyemak imbas anda."
     },
     "security": {
       "seoTitle": "Seni Bina Keselamatan",
@@ -1454,7 +1464,9 @@
       "step3": "Langkah 3",
       "verify3": "Jana mana-mana QR. Ia berfungsi dengan sempurna, membuktikan tiada pelayan diperlukan.",
       "missionTitle": "Masa Depan adalah Tempatan",
-      "missionDesc": "Kami membayangkan web di mana apl utiliti menghormati perkakasan anda dan privasi anda. Selamat datang ke era baharu pengkomputeran pihak pelanggan."
+      "missionDesc": "Kami membayangkan web di mana apl utiliti menghormati perkakasan anda dan privasi anda. Selamat datang ke era baharu pengkomputeran pihak pelanggan.",
+      "seoDesc": "Terokai model keselamatan sifar amanah kami: 100% kriptografi sisi pelanggan, penghantaran awan sifar, storan data sifar.",
+      "desc": "Terokai model keselamatan sifar amanah kami: 100% kriptografi sisi pelanggan, penghantaran awan sifar, storan data sifar."
     },
     "terms": {
       "seoTitle": "Syarat Perkhidmatan",
@@ -1475,10 +1487,12 @@
       "sec2Bul2": "Kami tidak menyimpan salinan data, metadata atau dokumen yang diproses anda.",
       "sec4Title": "Harta Intelek",
       "sec4Desc": "Anda mengekalkan 100% pemilikan dan semua hak harta intelek terhadap dokumen yang anda proses menggunakan CreateMy-QR. Kami menuntut sifar hak, lesen atau pemilikan ke atas kandungan anda.",
-      "sec5Title": "Penafian & Liabiliti"
+      "sec5Title": "Penafian & Liabiliti",
+      "seoDesc": "Terma dan syarat untuk menggunakan alat penjana dan pengimbas dalam talian percuma CreateMy-QR.",
+      "desc": "Terma dan syarat untuk menggunakan alat penjana dan pengimbas dalam talian percuma CreateMy-QR."
     },
     "usecases": {
-      "seoTitle": "Kes Penggunaan",
+      "seoTitle": "Kes Penggunaan Industri",
       "heroTitle": "Kes Penggunaan",
       "heroSubtitle": "Temui cara industri memanfaatkan suite QR selamat kami.",
       "retail": "Runcit & E-Dagang",
@@ -1501,7 +1515,24 @@
       "toolPdf": "Menu PDF QR",
       "toolReview": "QR Semakan Google",
       "ctaTitle": "Cari Kes Penggunaan Anda Sendiri",
-      "ctaDesc": "Tidak kira industri anda, CreateMy-QR ialah cara paling selamat dan terpantas untuk menjana kod. Cuba suite penuh kami yang mengandungi 20+ alatan hari ini."
+      "ctaDesc": "Tidak kira industri anda, CreateMy-QR ialah cara paling selamat dan terpantas untuk menjana kod. Cuba suite penuh kami yang mengandungi 20+ alatan hari ini.",
+      "seoDesc": "Terokai kes penggunaan kod QR dunia sebenar untuk restoran, runcit, acara, pembayaran dan operasi perusahaan.",
+      "desc": "Terokai kes penggunaan kod QR dunia sebenar untuk restoran, runcit, acara, pembayaran dan operasi perusahaan."
+    },
+    "barcode": {
+      "seoTitle": "Penjana Kod Bar Percuma",
+      "seoDesc": "Hasilkan kod bar linear (EAN, UPC, Kod 128, Kod 39) serta-merta dalam penyemak imbas anda dengan muat turun beresolusi tinggi.",
+      "desc": "Hasilkan kod bar linear (EAN, UPC, Kod 128, Kod 39) serta-merta dalam penyemak imbas anda dengan muat turun beresolusi tinggi."
+    },
+    "scanqr": {
+      "seoTitle": "Imbas Kod QR Dalam Talian",
+      "seoDesc": "Imbas dan nyahkod kod QR daripada kamera web atau fail imej dengan selamat dalam penyemak imbas anda dengan penyahkodan sebelah pelanggan segera.",
+      "desc": "Imbas dan nyahkod kod QR daripada kamera web atau fail imej dengan selamat dalam penyemak imbas anda dengan penyahkodan sebelah pelanggan segera."
+    },
+    "scanbarcode": {
+      "seoTitle": "Imbas Kod Bar Dalam Talian",
+      "seoDesc": "Imbas kod bar daripada kamera atau fail imej yang dimuat naik dengan selamat dalam penyemak imbas anda dengan sifar muat naik pelayan.",
+      "desc": "Imbas kod bar daripada kamera atau fail imej yang dimuat naik dengan selamat dalam penyemak imbas anda dengan sifar muat naik pelayan."
     }
   },
   "rating": {
@@ -1642,5 +1673,14 @@
       "featDesc3": "Imbasan tanpa had, percuma sepenuhnya, tiada tarikh luput.",
       "faqTitle": "Soalan Lazim"
     }
+  },
+  "templates": {
+    "toolTitleSuffix": "Penjana Kod QR Percuma",
+    "toolDescTemplate": "Cipta kod QR {{toolName}} tersuai dengan logo secara percuma. Penjana kod QR boleh diedit terbaik tanpa tera air. 100% persendirian, generasi pihak pelanggan.",
+    "barcodeTitleSuffix": "Penjana Kod Bar Percuma",
+    "barcodeDescTemplate": "Hasilkan kod bar linear {{toolName}} tersuai secara percuma. Muat turun SVG dan PNG segera dengan pengekodan kod bar berketumpatan tinggi.",
+    "homeSeoDesc": "Hasilkan 37 jenis kod QR dan kod bar secara percuma. Tiada pendaftaran. Muat turun segera. 100% bahagian pelanggan, mematuhi ISO, 30 bahasa.",
+    "homeHeroTitle": "Semua Alat QR & Kod Bar",
+    "homeHeroTitleHighlight": "di Satu Tempat"
   }
 }

@@ -39,7 +39,7 @@ export default function Languages() {
               {SUPPORTED_LANGUAGES.map(lang => (
                 <a 
                   key={lang.code}
-                  href={`/${lang.code}`}
+                  href={lang.code === 'en' ? '/' : `/${lang.code}`}
                   className="flex items-center gap-3 p-5 bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-2xl hover:border-emerald-500 dark:hover:border-emerald-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 group"
                 >
                   <span className="text-2xl filter drop-shadow-sm">{lang.flag}</span>

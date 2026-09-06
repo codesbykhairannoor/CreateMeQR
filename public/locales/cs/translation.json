@@ -1246,10 +1246,10 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Bezplatný generátor QR kódů a čárových kódů |37 Nástroje online",
-    "seoDesc": "Vygenerujte si zdarma 37 typů QR kódů a čárových kódů.Žádná registrace.Okamžité stažení.100% na straně klienta, v souladu s ISO/IEC 18004, k dispozici ve 30 jazycích.",
+    "seoDesc": "Vygenerujte si zdarma 37 typů QR kódů a čárových kódů. Žádná registrace. Okamžité stažení. 100% na straně klienta, v souladu s ISO, 30 jazyků.",
     "badge": "ISO/IEC 18004 · 100% zdarma · Zero Tracking · Bez registrace",
-    "heroTitle": "Všechny QR a čárové kódy",
-    "heroTitleHighlight": "Nástroje na jednom místě",
+    "heroTitle": "Všechny nástroje QR a čárových kódů",
+    "heroTitleHighlight": "na jednom místě",
     "heroSubtitle": "Okamžitě vygenerujte více než 37 typů QR kódů a čárových kódů.Žádná registrace, žádné limity, žádná data nahraná – nikdy.Exportujte jako SVG nebo PNG, zcela zdarma.",
     "citation": "\"QR kód je mezinárodní standard (ISO/IEC 18004:2015). Maticové čárové kódy vyžadují čisté modulové mřížky pro spolehlivé skenování napříč všemi kompatibilními čtečkami po celém světě.\"",
     "searchPlaceholder": "Vyhledávací nástroje — WhatsApp, WiFi, vCard, PDF...",
@@ -1304,10 +1304,12 @@
       "guarantee": "Naše záruka",
       "guaranteeDesc": "CreateMy-QR je vytvořen tak, aby zůstal zcela zdarma. Naším posláním je demokratizovat veřejné služby pro každého.",
       "join": "Připojte se k hnutí",
-      "joinDesc": "Vyzkoušejte nejrychlejší, nejbezpečnější a nejpokročilejší QR sadu na webu."
+      "joinDesc": "Vyzkoušejte nejrychlejší, nejbezpečnější a nejpokročilejší QR sadu na webu.",
+      "seoDesc": "Demokratizace dokumentů a nástrojů QR se 100% zabezpečením a soukromím na straně klienta.",
+      "desc": "Demokratizace dokumentů a nástrojů QR se 100% zabezpečením a soukromím na straně klienta."
     },
     "compare": {
-      "seoTitle": "Nástroje pro porovnání",
+      "seoTitle": "Porovnat nástroje",
       "heroTitle": "Nástroje pro porovnání",
       "heroSubtitle": "Podívejte se, jak jsme na tom s konkurencí.",
       "why": "Proč CreateMy-QR?",
@@ -1354,7 +1356,9 @@
       "tr6val2": "Nikdy nevyžadováno",
       "tr7val1": "Závisí na síti",
       "tr7val2": "Okamžité (místní CPU)",
-      "expertAuthor": "Nezávislý bezpečnostní audit"
+      "expertAuthor": "Nezávislý bezpečnostní audit",
+      "seoDesc": "Zjistěte, proč si profesionálové vybírají CreateMy-QR pro soukromé generování na straně klienta bez omezení API.",
+      "desc": "Zjistěte, proč si profesionálové vybírají CreateMy-QR pro soukromé generování na straně klienta bez omezení API."
     },
     "languages": {
       "seoTitle": "Podporované jazyky",
@@ -1374,10 +1378,12 @@
       "communityTitle": "Komunitou",
       "communityDesc": "Všimli jste si překladu, který vám připadá trochu mimo? Spoléháme na naši globální uživatelskou základnu, která nám pomůže vylepšit a zdokonalit naše lokalizace. Obraťte se na nás a navrhneme vylepšení pro váš rodný jazyk.",
       "ctaTitle": "Připraveni ke zpracování?",
-      "ctaDesc": "Vyberte si nástroj níže a začněte bezpečně a zdarma."
+      "ctaDesc": "Vyberte si nástroj níže a začněte bezpečně a zdarma.",
+      "seoDesc": "Vytvářejte a skenujte QR kódy a čárové kódy ve 30 jazycích po celém světě s okamžitým generováním na straně klienta.",
+      "desc": "Vytvářejte a skenujte QR kódy a čárové kódy ve 30 jazycích po celém světě s okamžitým generováním na straně klienta."
     },
     "pricing": {
-      "seoTitle": "100% bezplatná cena",
+      "seoTitle": "100% cena zdarma",
       "heroTitle": "Ceny",
       "heroSubtitle": "Nejlepší věci v životě jsou zdarma.",
       "cost": "$0",
@@ -1404,7 +1410,9 @@
       "bizTitle": "Zdarma pro firemní použití",
       "bizDesc": "Ano, můžete použít CreateMy-QR pro vaši společnost. Naše místní architektura zpracování z nás dělá jedinou platformu dostatečně bezpečnou pro přísná firemní prostředí, právní týmy a zdravotnické profesionály.",
       "supportTitle": "Podpořte projekt",
-      "supportDesc": "Neúčtujeme předplatné, ale udržet doménu a vývoj při životě nějakou dobu trvá. Pokud vám CreateMy-QR zachránil den, zvažte sdílení se svým týmem. Ústní sdělení je naší jedinou marketingovou strategií."
+      "supportDesc": "Neúčtujeme předplatné, ale udržet doménu a vývoj při životě nějakou dobu trvá. Pokud vám CreateMy-QR zachránil den, zvažte sdílení se svým týmem. Ústní sdělení je naší jedinou marketingovou strategií.",
+      "seoDesc": "CreateMy-QR je 100% zdarma s neomezeným skenováním, stahováním vektorů ve vysokém rozlišení a nulovými limity.",
+      "desc": "CreateMy-QR je 100% zdarma s neomezeným skenováním, stahováním vektorů ve vysokém rozlišení a nulovými limity."
     },
     "privacy": {
       "seoTitle": "Zásady ochrany osobních údajů",
@@ -1417,7 +1425,9 @@
       "ssl": "SSL šifrováno",
       "sslDesc": "I když se nic nenahrává, naše stránky jsou zobrazovány přes přísný HTTPS.",
       "policyTitle": "Závazek nulového nahrávání",
-      "policyDesc": "Na rozdíl od jiných platforem funguje CreateMy-QR výhradně na straně klienta. Když vygenerujete QR kód, proces proběhne lokálně na vašem počítači."
+      "policyDesc": "Na rozdíl od jiných platforem funguje CreateMy-QR výhradně na straně klienta. Když vygenerujete QR kód, proces proběhne lokálně na vašem počítači.",
+      "seoDesc": "Zásady ochrany osobních údajů nulového sledování. Veškeré zpracování dat probíhá lokálně v paměti vašeho prohlížeče.",
+      "desc": "Zásady ochrany osobních údajů nulového sledování. Veškeré zpracování dat probíhá lokálně v paměti vašeho prohlížeče."
     },
     "security": {
       "seoTitle": "Bezpečnostní architektura",
@@ -1454,7 +1464,9 @@
       "step3": "Krok 3",
       "verify3": "Vygenerujte libovolný QR kód. Funguje perfektně, což dokazuje, že není potřeba žádný server.",
       "missionTitle": "Budoucnost je místní",
-      "missionDesc": "Představujeme si web, kde obslužné aplikace respektují váš hardware a vaše soukromí. Vítejte v nové éře počítačů na straně klienta."
+      "missionDesc": "Představujeme si web, kde obslužné aplikace respektují váš hardware a vaše soukromí. Vítejte v nové éře počítačů na straně klienta.",
+      "seoDesc": "Prozkoumejte náš model zabezpečení s nulovou důvěrou: 100% kryptografie na straně klienta, nulový cloudový přenos, nulové úložiště dat.",
+      "desc": "Prozkoumejte náš model zabezpečení s nulovou důvěrou: 100% kryptografie na straně klienta, nulový cloudový přenos, nulové úložiště dat."
     },
     "terms": {
       "seoTitle": "Podmínky služby",
@@ -1475,10 +1487,12 @@
       "sec2Bul2": "Neuchováváme kopie vašich dat, metadat nebo zpracovávaných dokumentů.",
       "sec4Title": "Duševní vlastnictví",
       "sec4Desc": "Zachováváte si 100% vlastnictví a všechna práva duševního vlastnictví k dokumentům, které zpracováváte pomocí CreateMy-QR. Nárokujeme si nulová práva, licence nebo vlastnictví k vašemu obsahu.",
-      "sec5Title": "Vyloučení odpovědnosti a odpovědnost"
+      "sec5Title": "Vyloučení odpovědnosti a odpovědnost",
+      "seoDesc": "Podmínky používání bezplatného online generátoru a skeneru CreateMy-QR.",
+      "desc": "Podmínky používání bezplatného online generátoru a skeneru CreateMy-QR."
     },
     "usecases": {
-      "seoTitle": "Případy použití",
+      "seoTitle": "Případy průmyslového použití",
       "heroTitle": "Případy použití",
       "heroSubtitle": "Zjistěte, jak průmyslová odvětví využívají naši zabezpečenou sadu QR.",
       "retail": "Maloobchod a elektronický obchod",
@@ -1501,7 +1515,24 @@
       "toolPdf": "Nabídka PDF QR",
       "toolReview": "QR recenze Google",
       "ctaTitle": "Najděte si svůj vlastní případ použití",
-      "ctaDesc": "Bez ohledu na vaše odvětví je CreateMy-QR nejbezpečnější a nejrychlejší způsob generování kódů. Vyzkoušejte naši úplnou sadu 20+ nástrojů ještě dnes."
+      "ctaDesc": "Bez ohledu na vaše odvětví je CreateMy-QR nejbezpečnější a nejrychlejší způsob generování kódů. Vyzkoušejte naši úplnou sadu 20+ nástrojů ještě dnes.",
+      "seoDesc": "Prozkoumejte skutečné případy použití QR kódu pro restaurace, maloobchod, akce, platby a podnikové operace.",
+      "desc": "Prozkoumejte skutečné případy použití QR kódu pro restaurace, maloobchod, akce, platby a podnikové operace."
+    },
+    "barcode": {
+      "seoTitle": "Bezplatný generátor čárových kódů",
+      "seoDesc": "Generujte lineární čárové kódy (EAN, UPC, Code 128, Code 39) okamžitě ve svém prohlížeči pomocí stahování ve vysokém rozlišení.",
+      "desc": "Generujte lineární čárové kódy (EAN, UPC, Code 128, Code 39) okamžitě ve svém prohlížeči pomocí stahování ve vysokém rozlišení."
+    },
+    "scanqr": {
+      "seoTitle": "Naskenujte QR kód online",
+      "seoDesc": "Skenujte a dekódujte QR kódy z webové kamery nebo obrazových souborů bezpečně ve svém prohlížeči pomocí okamžitého dekódování na straně klienta.",
+      "desc": "Skenujte a dekódujte QR kódy z webové kamery nebo obrazových souborů bezpečně ve svém prohlížeči pomocí okamžitého dekódování na straně klienta."
+    },
+    "scanbarcode": {
+      "seoTitle": "Skenujte čárový kód online",
+      "seoDesc": "Skenujte čárové kódy z fotoaparátu nebo nahrané obrazové soubory bezpečně ve svém prohlížeči s nulovým nahráváním na server.",
+      "desc": "Skenujte čárové kódy z fotoaparátu nebo nahrané obrazové soubory bezpečně ve svém prohlížeči s nulovým nahráváním na server."
     }
   },
   "rating": {
@@ -1642,5 +1673,14 @@
       "featDesc3": "Neomezené skenování, zcela zdarma, bez dat vypršení platnosti.",
       "faqTitle": "Běžné otázky"
     }
+  },
+  "templates": {
+    "toolTitleSuffix": "Zdarma generátor QR kódů",
+    "toolDescTemplate": "Vytvořte si zdarma vlastní QR kódy {{toolName}} s logem. Nejlepší upravitelný generátor QR kódu bez vodoznaku. 100% soukromá generace na straně klienta.",
+    "barcodeTitleSuffix": "Bezplatný generátor čárových kódů",
+    "barcodeDescTemplate": "Vygenerujte si zdarma vlastní lineární čárové kódy {{toolName}}. Okamžité stahování SVG a PNG s kódováním čárových kódů s vysokou hustotou.",
+    "homeSeoDesc": "Vygenerujte si zdarma 37 typů QR kódů a čárových kódů. Žádná registrace. Okamžité stažení. 100% na straně klienta, v souladu s ISO, 30 jazyků.",
+    "homeHeroTitle": "Všechny nástroje QR a čárových kódů",
+    "homeHeroTitleHighlight": "na jednom místě"
   }
 }

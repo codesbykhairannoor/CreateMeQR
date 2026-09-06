@@ -1248,7 +1248,7 @@
     "heroTitle": "Tüm QR ve Barkod Araçları",
     "heroTitleHighlight": "Tek Bir Yerde",
     "seoTitle": "CreateMy-QR — Ücretsiz QR Kod & Barkod Oluşturucu | 37 Çevrimiçi Araç",
-    "seoDesc": "37 tür QR kodu ve barkodu ücretsiz oluşturun. Kayıt gerekmez. Anında indirme. ISO/IEC 18004 uyumlu, 30 dilde mevcut.",
+    "seoDesc": "Ücretsiz olarak 37 tür QR kodu ve barkod oluşturun. Kayıt yok. Anında indirme. %100 istemci tarafı, ISO uyumlu, 30 dil.",
     "badge": "ISO/IEC 18004 · %100 Ücretsiz · İzleme Yok · Kayıt Yok",
     "heroSubtitle": "37'den fazla QR kodu ve barkodu anında oluşturun. Kayıt yok, limit yok, veri yükleme yok — asla. SVG veya PNG olarak tamamen ücretsiz dışa aktarın.",
     "citation": "\"QR Kodu, uluslararası bir standarttır (ISO/IEC 18004:2015). Matris barkodlar, tüm uyumlu okuyucularda güvenilir tarama için temiz modül ızgaraları gerektirir.\"",
@@ -1304,7 +1304,9 @@
       "guarantee": "Garantimiz",
       "guaranteeDesc": "CreateMy-QR tamamen ücretsiz kalacak şekilde tasarlandı. Misyonumuz kamu hizmetlerini herkes için demokratikleştirmektir.",
       "join": "Harekete Katılın",
-      "joinDesc": "Web'deki en hızlı, en güvenli ve en gelişmiş QR paketini deneyimleyin."
+      "joinDesc": "Web'deki en hızlı, en güvenli ve en gelişmiş QR paketini deneyimleyin.",
+      "seoDesc": "Belge ve QR araçlarını %100 istemci tarafı güvenlik ve gizlilikle demokratikleştirme.",
+      "desc": "Belge ve QR araçlarını %100 istemci tarafı güvenlik ve gizlilikle demokratikleştirme."
     },
     "compare": {
       "seoTitle": "Araçları Karşılaştır",
@@ -1354,7 +1356,9 @@
       "tr6val2": "Hiçbir Zaman Gerekli Değil",
       "tr7val1": "Ağa Bağlı",
       "tr7val2": "Anında (Yerel CPU)",
-      "expertAuthor": "Bağımsız Güvenlik Denetimi"
+      "expertAuthor": "Bağımsız Güvenlik Denetimi",
+      "seoDesc": "Profesyonellerin neden API sınırları olmaksızın özel, istemci tarafı oluşturma için CreateMy-QR'ı seçtiklerini keşfedin.",
+      "desc": "Profesyonellerin neden API sınırları olmaksızın özel, istemci tarafı oluşturma için CreateMy-QR'ı seçtiklerini keşfedin."
     },
     "languages": {
       "seoTitle": "Desteklenen Diller",
@@ -1374,7 +1378,9 @@
       "communityTitle": "Topluluk Odaklı",
       "communityDesc": "Biraz kötü hissettiren bir çeviri fark ettiniz mi? Yerelleştirmelerimizi iyileştirmemize ve mükemmelleştirmemize yardımcı olması için küresel kullanıcı tabanımıza güveniyoruz. Ana dilinize yönelik iyileştirmeler önermek için bize ulaşın.",
       "ctaTitle": "İşleme Hazır mısınız?",
-      "ctaDesc": "Güvenli ve ücretsiz bir başlangıç ​​yapmak için aşağıdan bir araç seçin."
+      "ctaDesc": "Güvenli ve ücretsiz bir başlangıç ​​yapmak için aşağıdan bir araç seçin.",
+      "seoDesc": "Anında istemci tarafında oluşturma özelliğiyle dünya çapında 30 dilde QR kodları ve barkodlar oluşturun ve tarayın.",
+      "desc": "Anında istemci tarafında oluşturma özelliğiyle dünya çapında 30 dilde QR kodları ve barkodlar oluşturun ve tarayın."
     },
     "pricing": {
       "seoTitle": "%100 Ücretsiz Fiyatlandırma",
@@ -1404,7 +1410,9 @@
       "bizTitle": "Ticari Kullanım için Ücretsiz",
       "bizDesc": "Evet, şirketiniz için CreateMy-QR'ı kullanabilirsiniz. Aslında yerel işleme mimarimiz bizi katı kurumsal ortamlar, hukuk ekipleri ve sağlık profesyonelleri için yeterince güvenli tek platform haline getiriyor.",
       "supportTitle": "Projeyi Destekleyin",
-      "supportDesc": "Abonelik ücreti almıyoruz ancak alanı ve geliştirmeyi canlı tutmak zaman alır. CreateMy-QR gününüzü kurtardıysa bunu ekibinizle paylaşmayı düşünün. Ağızdan ağza pazarlama bizim tek pazarlama stratejimizdir."
+      "supportDesc": "Abonelik ücreti almıyoruz ancak alanı ve geliştirmeyi canlı tutmak zaman alır. CreateMy-QR gününüzü kurtardıysa bunu ekibinizle paylaşmayı düşünün. Ağızdan ağza pazarlama bizim tek pazarlama stratejimizdir.",
+      "seoDesc": "CreateMy-QR sınırsız tarama, yüksek çözünürlüklü vektör indirme ve sıfır limitle %100 ücretsizdir.",
+      "desc": "CreateMy-QR sınırsız tarama, yüksek çözünürlüklü vektör indirme ve sıfır limitle %100 ücretsizdir."
     },
     "privacy": {
       "seoTitle": "Gizlilik Politikası",
@@ -1417,7 +1425,9 @@
       "ssl": "SSL Şifreli",
       "sslDesc": "Hiçbir şey yüklenmemiş olsa da sitemiz katı HTTPS üzerinden hizmet vermektedir.",
       "policyTitle": "Sıfır Yükleme Taahhüdü",
-      "policyDesc": "CreateMy-QR, diğer platformlardan farklı olarak tamamen istemci tarafında çalışır. Bir QR kodu oluşturduğunuzda işlem makinenizde yerel olarak gerçekleşir."
+      "policyDesc": "CreateMy-QR, diğer platformlardan farklı olarak tamamen istemci tarafında çalışır. Bir QR kodu oluşturduğunuzda işlem makinenizde yerel olarak gerçekleşir.",
+      "seoDesc": "Sıfır izleme gizlilik politikası. Tüm veri işlemleri yerel olarak tarayıcınızın belleğinde gerçekleşir.",
+      "desc": "Sıfır izleme gizlilik politikası. Tüm veri işlemleri yerel olarak tarayıcınızın belleğinde gerçekleşir."
     },
     "security": {
       "seoTitle": "Güvenlik Mimarisi",
@@ -1454,7 +1464,9 @@
       "step3": "Adım 3",
       "verify3": "Herhangi bir QR oluşturun. Mükemmel çalışıyor ve hiçbir sunucuya gerek olmadığını kanıtlıyor.",
       "missionTitle": "Gelecek Yerel",
-      "missionDesc": "Yardımcı uygulamaların donanımınıza ve gizliliğinize saygı duyduğu bir web hayal ediyoruz. İstemci tarafı bilgi işlemin yeni çağına hoş geldiniz."
+      "missionDesc": "Yardımcı uygulamaların donanımınıza ve gizliliğinize saygı duyduğu bir web hayal ediyoruz. İstemci tarafı bilgi işlemin yeni çağına hoş geldiniz.",
+      "seoDesc": "Sıfır güven güvenlik modelimizi keşfedin: %100 istemci tarafı şifreleme, sıfır bulut iletimi, sıfır veri depolama.",
+      "desc": "Sıfır güven güvenlik modelimizi keşfedin: %100 istemci tarafı şifreleme, sıfır bulut iletimi, sıfır veri depolama."
     },
     "terms": {
       "seoTitle": "Hizmet Şartları",
@@ -1475,10 +1487,12 @@
       "sec2Bul2": "Verilerinizin, meta verilerinizin veya işlenmiş belgelerinizin kopyalarını saklamayız.",
       "sec4Title": "Fikri Mülkiyet",
       "sec4Desc": "CreateMy-QR kullanarak işlediğiniz belgelerin %100 mülkiyetini ve tüm fikri mülkiyet haklarını saklı tutarsınız. İçeriğiniz üzerinde hiçbir hak, lisans veya sahiplik talep etmiyoruz.",
-      "sec5Title": "Sorumluluk Reddi ve Sorumluluk"
+      "sec5Title": "Sorumluluk Reddi ve Sorumluluk",
+      "seoDesc": "CreateMy-QR ücretsiz çevrimiçi oluşturucu ve tarayıcı araçlarını kullanmaya ilişkin hüküm ve koşullar.",
+      "desc": "CreateMy-QR ücretsiz çevrimiçi oluşturucu ve tarayıcı araçlarını kullanmaya ilişkin hüküm ve koşullar."
     },
     "usecases": {
-      "seoTitle": "Kullanım Durumları",
+      "seoTitle": "Endüstri Kullanım Durumları",
       "heroTitle": "Kullanım Durumları",
       "heroSubtitle": "Sektörlerin güvenli QR paketimizden nasıl yararlandığını keşfedin.",
       "retail": "Perakende ve E-Ticaret",
@@ -1501,7 +1515,24 @@
       "toolPdf": "PDF Menüsü QR",
       "toolReview": "Google İnceleme QR'si",
       "ctaTitle": "Kendi Kullanım Alanınızı Bulun",
-      "ctaDesc": "Sektörünüz ne olursa olsun, CreateMy-QR kod oluşturmanın en güvenli ve hızlı yoludur. 20'den fazla araçtan oluşan tam paketimizi bugün deneyin."
+      "ctaDesc": "Sektörünüz ne olursa olsun, CreateMy-QR kod oluşturmanın en güvenli ve hızlı yoludur. 20'den fazla araçtan oluşan tam paketimizi bugün deneyin.",
+      "seoDesc": "Restoranlar, perakende satış, etkinlikler, ödemeler ve kurumsal operasyonlar için gerçek dünyadaki QR kodu kullanım örneklerini keşfedin.",
+      "desc": "Restoranlar, perakende satış, etkinlikler, ödemeler ve kurumsal operasyonlar için gerçek dünyadaki QR kodu kullanım örneklerini keşfedin."
+    },
+    "barcode": {
+      "seoTitle": "Ücretsiz Barkod Oluşturucu",
+      "seoDesc": "Yüksek çözünürlüklü indirmeyle tarayıcınızda anında doğrusal barkodlar (EAN, UPC, Code 128, Code 39) oluşturun.",
+      "desc": "Yüksek çözünürlüklü indirmeyle tarayıcınızda anında doğrusal barkodlar (EAN, UPC, Code 128, Code 39) oluşturun."
+    },
+    "scanqr": {
+      "seoTitle": "QR Kodunu Çevrimiçi Tarayın",
+      "seoDesc": "Anında istemci tarafı kod çözme özelliğiyle web kamerasındaki veya görüntü dosyalarındaki QR kodlarını tarayıcınızda güvenli bir şekilde tarayın ve kodunu çözün.",
+      "desc": "Anında istemci tarafı kod çözme özelliğiyle web kamerasındaki veya görüntü dosyalarındaki QR kodlarını tarayıcınızda güvenli bir şekilde tarayın ve kodunu çözün."
+    },
+    "scanbarcode": {
+      "seoTitle": "Barkodu Çevrimiçi Tarayın",
+      "seoDesc": "Sıfır sunucu yüklemesiyle kameranızdaki barkodları veya yüklenen görüntü dosyalarını tarayıcınızda güvenli bir şekilde tarayın.",
+      "desc": "Sıfır sunucu yüklemesiyle kameranızdaki barkodları veya yüklenen görüntü dosyalarını tarayıcınızda güvenli bir şekilde tarayın."
     }
   },
   "rating": {
@@ -1642,5 +1673,14 @@
       "featDesc3": "Sınırsız tarama, tamamen ücretsiz, son kullanma tarihi yok.",
       "faqTitle": "Sık Sorulan Sorular"
     }
+  },
+  "templates": {
+    "toolTitleSuffix": "Ücretsiz QR Kod Oluşturucu",
+    "toolDescTemplate": "Logolu özel {{toolName}} QR kodlarını ücretsiz oluşturun. Filigran içermeyen en iyi düzenlenebilir QR kod oluşturucu. %100 özel, istemci tarafı oluşturma.",
+    "barcodeTitleSuffix": "Ücretsiz Barkod Oluşturucu",
+    "barcodeDescTemplate": "Ücretsiz olarak özel {{toolName}} doğrusal barkod oluşturun. Yüksek yoğunluklu barkod kodlamasıyla anında SVG ve PNG indirme.",
+    "homeSeoDesc": "Ücretsiz olarak 37 tür QR kodu ve barkod oluşturun. Kayıt yok. Anında indirme. %100 istemci tarafı, ISO uyumlu, 30 dil.",
+    "homeHeroTitle": "Tüm QR ve Barkod Araçları",
+    "homeHeroTitleHighlight": "Tek Bir Yerde"
   }
 }

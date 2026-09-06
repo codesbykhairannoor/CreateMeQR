@@ -1185,10 +1185,10 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Generator gratuit de coduri QR și coduri de bare |37 Instrumente online",
-    "seoDesc": "Generați 37 de tipuri de coduri QR și coduri de bare gratuit.Fără înscriere.Descărcare instantanee.100% partea clientului, conform ISO/IEC 18004, disponibil în 30 de limbi.",
+    "seoDesc": "Generați 37 de tipuri de coduri QR și coduri de bare gratuit. Fără înscriere. Descărcare instantanee. 100% la nivelul clientului, conform ISO, 30 de limbi.",
     "badge": "ISO/IEC 18004 · 100% gratuit · Urmărire zero · Fără înregistrare",
-    "heroTitle": "Toate QR și coduri de bare",
-    "heroTitleHighlight": "Instrumente într-un singur loc",
+    "heroTitle": "Toate instrumentele QR și coduri de bare",
+    "heroTitleHighlight": "într-un singur loc",
     "heroSubtitle": "Generați peste 37 de tipuri de coduri QR și coduri de bare instantaneu.Fără înscriere, fără limite, fără date încărcate — niciodată.Exportați ca SVG sau PNG, complet gratuit.",
     "citation": "„Codul QR este un standard internațional (ISO/IEC 18004:2015). Codurile de bare Matrix necesită grile de module curate pentru scanare fiabilă pentru toți cititorii conformi din întreaga lume.”",
     "searchPlaceholder": "Instrumente de căutare — WhatsApp, WiFi, vCard, PDF...",
@@ -1243,10 +1243,12 @@
       "guarantee": "Garanția noastră",
       "guaranteeDesc": "CreateMy-QR este creat pentru a rămâne complet gratuit. Misiunea noastră este de a democratiza utilitățile pentru toată lumea.",
       "join": "Alăturați-vă Mișcării",
-      "joinDesc": "Experimentați cea mai rapidă, mai sigură și mai avansată suită QR de pe web."
+      "joinDesc": "Experimentați cea mai rapidă, mai sigură și mai avansată suită QR de pe web.",
+      "seoDesc": "Democratizarea documentelor și instrumentelor QR cu securitate și confidențialitate 100% la nivelul clientului.",
+      "desc": "Democratizarea documentelor și instrumentelor QR cu securitate și confidențialitate 100% la nivelul clientului."
     },
     "compare": {
-      "seoTitle": "Instrumente de comparare",
+      "seoTitle": "Comparați instrumente",
       "heroTitle": "Instrumente de comparare",
       "heroSubtitle": "Vedeți cum ne raportăm concurenței.",
       "why": "De ce CreateMy-QR?",
@@ -1293,7 +1295,9 @@
       "tr6val2": "Niciodată necesar",
       "tr7val1": "Depinde de Rețea",
       "tr7val2": "Instantaneu (procesor local)",
-      "expertAuthor": "Audit independent de securitate"
+      "expertAuthor": "Audit independent de securitate",
+      "seoDesc": "Descoperiți de ce profesioniștii aleg CreateMy-QR pentru generarea privată, pe partea clientului, fără limite API.",
+      "desc": "Descoperiți de ce profesioniștii aleg CreateMy-QR pentru generarea privată, pe partea clientului, fără limite API."
     },
     "languages": {
       "seoTitle": "Limbi acceptate",
@@ -1313,7 +1317,9 @@
       "communityTitle": "Condus de comunitate",
       "communityDesc": "Observați o traducere care se simte ușor neplăcută? Ne bazăm pe baza noastră globală de utilizatori pentru a ne rafina și perfecționa localizările. Contactează-ne pentru a sugera îmbunătățiri pentru limba ta maternă.",
       "ctaTitle": "Gata de procesat?",
-      "ctaDesc": "Alegeți un instrument de mai jos pentru a începe în siguranță și gratuit."
+      "ctaDesc": "Alegeți un instrument de mai jos pentru a începe în siguranță și gratuit.",
+      "seoDesc": "Creați și scanați coduri QR și coduri de bare în 30 de limbi în întreaga lume, cu generare instantanee de partea clientului.",
+      "desc": "Creați și scanați coduri QR și coduri de bare în 30 de limbi în întreaga lume, cu generare instantanee de partea clientului."
     },
     "pricing": {
       "seoTitle": "Preț 100% gratuit",
@@ -1343,7 +1349,9 @@
       "bizTitle": "Gratuit pentru utilizare în afaceri",
       "bizDesc": "Da, puteți utiliza CreateMy-QR pentru compania dvs. De fapt, arhitectura noastră locală de procesare ne face singura platformă suficient de sigură pentru medii corporative stricte, echipe juridice și profesioniști din domeniul sănătății.",
       "supportTitle": "Susține proiectul",
-      "supportDesc": "Nu percepem un abonament, dar menținerea domeniului și a dezvoltării în viață necesită timp. Dacă CreateMy-QR v-a salvat ziua, luați în considerare să o distribuiți echipei dvs. Vorba în gură este singura noastră strategie de marketing."
+      "supportDesc": "Nu percepem un abonament, dar menținerea domeniului și a dezvoltării în viață necesită timp. Dacă CreateMy-QR v-a salvat ziua, luați în considerare să o distribuiți echipei dvs. Vorba în gură este singura noastră strategie de marketing.",
+      "seoDesc": "CreateMy-QR este 100% gratuit, cu scanări nelimitate, descărcări vectoriale de înaltă rezoluție și limite zero.",
+      "desc": "CreateMy-QR este 100% gratuit, cu scanări nelimitate, descărcări vectoriale de înaltă rezoluție și limite zero."
     },
     "privacy": {
       "seoTitle": "Politica de confidențialitate",
@@ -1356,7 +1364,9 @@
       "ssl": "Cript SSL",
       "sslDesc": "Chiar dacă nu este încărcat nimic, site-ul nostru este servit prin HTTPS strict.",
       "policyTitle": "Angajamentul de încărcare zero",
-      "policyDesc": "Spre deosebire de alte platforme, CreateMy-QR operează în întregime pe partea clientului. Când generați un cod QR, procesul are loc local pe computer."
+      "policyDesc": "Spre deosebire de alte platforme, CreateMy-QR operează în întregime pe partea clientului. Când generați un cod QR, procesul are loc local pe computer.",
+      "seoDesc": "Politica de confidențialitate zero-tracking. Toată prelucrarea datelor are loc local în memoria browserului dumneavoastră.",
+      "desc": "Politica de confidențialitate zero-tracking. Toată prelucrarea datelor are loc local în memoria browserului dumneavoastră."
     },
     "security": {
       "seoTitle": "Arhitectura de securitate",
@@ -1393,7 +1403,9 @@
       "step3": "Pasul 3",
       "verify3": "Generați orice QR. Funcționează perfect, dovedind că nu este necesar un server.",
       "missionTitle": "Viitorul este local",
-      "missionDesc": "Ne imaginăm un web în care aplicațiile utilitare vă respectă hardware-ul și confidențialitatea. Bine ați venit în noua eră a calculatoarelor la nivelul clientului."
+      "missionDesc": "Ne imaginăm un web în care aplicațiile utilitare vă respectă hardware-ul și confidențialitatea. Bine ați venit în noua eră a calculatoarelor la nivelul clientului.",
+      "seoDesc": "Explorați modelul nostru de securitate fără încredere: criptografie 100% pe partea clientului, zero transmisie în cloud, zero stocare de date.",
+      "desc": "Explorați modelul nostru de securitate fără încredere: criptografie 100% pe partea clientului, zero transmisie în cloud, zero stocare de date."
     },
     "terms": {
       "seoTitle": "Termeni și condiții",
@@ -1414,10 +1426,12 @@
       "sec2Bul2": "Nu păstrăm copii ale datelor, metadatelor sau documentelor procesate.",
       "sec4Title": "Proprietatea intelectuală",
       "sec4Desc": "Vă păstrați proprietatea 100% și toate drepturile de proprietate intelectuală asupra documentelor pe care le procesați folosind CreateMy-QR. Revendicăm zero drepturi, licențe sau drepturi de proprietate asupra conținutului dvs.",
-      "sec5Title": "Declinări și răspundere"
+      "sec5Title": "Declinări și răspundere",
+      "seoDesc": "Termeni și condiții pentru utilizarea generatorului și a instrumentelor de scanare online gratuite CreateMy-QR.",
+      "desc": "Termeni și condiții pentru utilizarea generatorului și a instrumentelor de scanare online gratuite CreateMy-QR."
     },
     "usecases": {
-      "seoTitle": "Cazuri de utilizare",
+      "seoTitle": "Cazuri de utilizare în industrie",
       "heroTitle": "Cazuri de utilizare",
       "heroSubtitle": "Descoperiți cum industriile profită de suita noastră QR securizată.",
       "retail": "Retail & E-Commerce",
@@ -1440,7 +1454,24 @@
       "toolPdf": "Meniu PDF QR",
       "toolReview": "Google Review QR",
       "ctaTitle": "Găsește-ți propriul caz de utilizare",
-      "ctaDesc": "Indiferent de industria dvs., CreateMy-QR este cea mai sigură și rapidă modalitate de a genera coduri. Încercați suita noastră completă de peste 20 de instrumente astăzi."
+      "ctaDesc": "Indiferent de industria dvs., CreateMy-QR este cea mai sigură și rapidă modalitate de a genera coduri. Încercați suita noastră completă de peste 20 de instrumente astăzi.",
+      "seoDesc": "Explorați cazurile de utilizare a codurilor QR din lumea reală pentru restaurante, retail, evenimente, plăți și operațiuni de întreprindere.",
+      "desc": "Explorați cazurile de utilizare a codurilor QR din lumea reală pentru restaurante, retail, evenimente, plăți și operațiuni de întreprindere."
+    },
+    "barcode": {
+      "seoTitle": "Generator gratuit de coduri de bare",
+      "seoDesc": "Generați coduri de bare liniare (EAN, UPC, Cod 128, Cod 39) instantaneu în browser, cu descărcare de înaltă rezoluție.",
+      "desc": "Generați coduri de bare liniare (EAN, UPC, Cod 128, Cod 39) instantaneu în browser, cu descărcare de înaltă rezoluție."
+    },
+    "scanqr": {
+      "seoTitle": "Scanați codul QR online",
+      "seoDesc": "Scanați și decodificați codurile QR din webcam sau fișierele imagine în siguranță în browser, cu decodare instantanee pe partea clientului.",
+      "desc": "Scanați și decodificați codurile QR din webcam sau fișierele imagine în siguranță în browser, cu decodare instantanee pe partea clientului."
+    },
+    "scanbarcode": {
+      "seoTitle": "Scanați codul de bare online",
+      "seoDesc": "Scanați codurile de bare de pe cameră sau fișierele de imagine încărcate în siguranță în browser, fără încărcări de server.",
+      "desc": "Scanați codurile de bare de pe cameră sau fișierele de imagine încărcate în siguranță în browser, fără încărcări de server."
     }
   },
   "rating": {
@@ -1473,5 +1504,14 @@
       "faqQ5": "Pot adăuga sigla restaurantului meu?",
       "faqA5": "Da, puteți încărca propriul logo personalizat și îl puteți plasa chiar în centrul codului QR."
     }
+  },
+  "templates": {
+    "toolTitleSuffix": "Generator gratuit de coduri QR",
+    "toolDescTemplate": "Creați coduri QR personalizate {{toolName}} cu logo gratuit. Cel mai bun generator de coduri QR editabil fără filigran. 100% privat, generare pe partea clientului.",
+    "barcodeTitleSuffix": "Generator gratuit de coduri de bare",
+    "barcodeDescTemplate": "Generați gratuit coduri de bare liniare personalizate {{toolName}}. Descărcare instantanee SVG și PNG cu codare de coduri de bare de mare densitate.",
+    "homeSeoDesc": "Generați 37 de tipuri de coduri QR și coduri de bare gratuit. Fără înscriere. Descărcare instantanee. 100% la nivelul clientului, conform ISO, 30 de limbi.",
+    "homeHeroTitle": "Toate instrumentele QR și coduri de bare",
+    "homeHeroTitleHighlight": "într-un singur loc"
   }
 }
