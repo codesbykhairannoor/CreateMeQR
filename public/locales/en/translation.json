@@ -1296,7 +1296,9 @@
       "guarantee": "Our Guarantee",
       "guaranteeDesc": "CreateMy-QR is built to remain completely free. Our mission is to democratize utilities for everyone.",
       "join": "Join the Movement",
-      "joinDesc": "Experience the fastest, safest, and most advanced QR suite on the web."
+      "joinDesc": "Experience the fastest, safest, and most advanced QR suite on the web.",
+      "seoDesc": "Democratizing document and QR tools with 100% client-side security and privacy.",
+      "desc": "Democratizing document and QR tools with 100% client-side security and privacy."
     },
     "compare": {
       "seoTitle": "Compare Tools",
@@ -1346,7 +1348,9 @@
       "tr6val2": "Never Required",
       "tr7val1": "Dependent on Network",
       "tr7val2": "Instant (Local CPU)",
-      "expertAuthor": "Independent Security Audit"
+      "expertAuthor": "Independent Security Audit",
+      "seoDesc": "Discover why professionals choose CreateMy-QR for private, client-side generation without API limits.",
+      "desc": "Discover why professionals choose CreateMy-QR for private, client-side generation without API limits."
     },
     "languages": {
       "seoTitle": "Supported Languages",
@@ -1366,7 +1370,9 @@
       "communityTitle": "Community Driven",
       "communityDesc": "Notice a translation that feels slightly off? We rely on our global user base to help refine and perfect our localizations. Reach out to us to suggest improvements for your native language.",
       "ctaTitle": "Ready to Process?",
-      "ctaDesc": "Choose a tool below to get started securely and for free."
+      "ctaDesc": "Choose a tool below to get started securely and for free.",
+      "seoDesc": "Create and scan QR codes and barcodes in 30 languages worldwide with instant client-side generation.",
+      "desc": "Create and scan QR codes and barcodes in 30 languages worldwide with instant client-side generation."
     },
     "pricing": {
       "seoTitle": "100% Free Pricing",
@@ -1396,7 +1402,9 @@
       "bizTitle": "Free for Business Use",
       "bizDesc": "Yes, you can use CreateMy-QR for your company. In fact, our local processing architecture makes us the only platform safe enough for strict corporate environments, legal teams, and healthcare professionals.",
       "supportTitle": "Support the Project",
-      "supportDesc": "We don\\'t charge a subscription, but keeping the domain and development alive takes time. If CreateMy-QR saved your day, consider sharing it with your team. Word of mouth is our only marketing strategy."
+      "supportDesc": "We don\\'t charge a subscription, but keeping the domain and development alive takes time. If CreateMy-QR saved your day, consider sharing it with your team. Word of mouth is our only marketing strategy.",
+      "seoDesc": "CreateMy-QR is 100% free with unlimited scans, high-resolution vector downloads, and zero limits.",
+      "desc": "CreateMy-QR is 100% free with unlimited scans, high-resolution vector downloads, and zero limits."
     },
     "privacy": {
       "seoTitle": "Privacy Policy",
@@ -1409,7 +1417,9 @@
       "ssl": "SSL Encrypted",
       "sslDesc": "Even though nothing is uploaded, our site is served over strict HTTPS.",
       "policyTitle": "The Zero-Upload Commitment",
-      "policyDesc": "Unlike other platforms, CreateMy-QR operates entirely on the client-side. When you generate a QR code, the process happens locally on your machine."
+      "policyDesc": "Unlike other platforms, CreateMy-QR operates entirely on the client-side. When you generate a QR code, the process happens locally on your machine.",
+      "seoDesc": "Zero-tracking privacy policy. All data processing occurs locally in your browser memory.",
+      "desc": "Zero-tracking privacy policy. All data processing occurs locally in your browser memory."
     },
     "security": {
       "seoTitle": "Security Architecture",
@@ -1446,7 +1456,9 @@
       "step3": "Step 3",
       "verify3": "Generate any QR. It works perfectly, proving no server is required.",
       "missionTitle": "The Future is Local",
-      "missionDesc": "We envision a web where utility apps respect your hardware and your privacy. Welcome to the new era of client-side computing."
+      "missionDesc": "We envision a web where utility apps respect your hardware and your privacy. Welcome to the new era of client-side computing.",
+      "seoDesc": "Explore our zero-trust security model: 100% client-side cryptography, zero cloud transmission, zero data storage.",
+      "desc": "Explore our zero-trust security model: 100% client-side cryptography, zero cloud transmission, zero data storage."
     },
     "terms": {
       "seoTitle": "Terms of Service",
@@ -1467,10 +1479,12 @@
       "sec2Bul2": "We do not retain copies of your data, metadata, or processed documents.",
       "sec4Title": "Intellectual Property",
       "sec4Desc": "You retain 100% ownership and all intellectual property rights to the documents you process using CreateMy-QR. We claim zero rights, licenses, or ownership over your content.",
-      "sec5Title": "Disclaimers & Liability"
+      "sec5Title": "Disclaimers & Liability",
+      "seoDesc": "Terms and conditions for using CreateMy-QR free online generator and scanner tools.",
+      "desc": "Terms and conditions for using CreateMy-QR free online generator and scanner tools."
     },
     "usecases": {
-      "seoTitle": "Use Cases",
+      "seoTitle": "Industry Use Cases",
       "heroTitle": "Use Cases",
       "heroSubtitle": "Discover how industries leverage our secure QR suite.",
       "retail": "Retail & E-Commerce",
@@ -1493,7 +1507,24 @@
       "toolPdf": "PDF Menu QR",
       "toolReview": "Google Review QR",
       "ctaTitle": "Find Your Own Use Case",
-      "ctaDesc": "No matter your industry, CreateMy-QR is the safest and fastest way to generate codes. Try our full suite of 20+ tools today."
+      "ctaDesc": "No matter your industry, CreateMy-QR is the safest and fastest way to generate codes. Try our full suite of 20+ tools today.",
+      "seoDesc": "Explore real-world QR code use cases for restaurants, retail, events, payments, and enterprise operations.",
+      "desc": "Explore real-world QR code use cases for restaurants, retail, events, payments, and enterprise operations."
+    },
+    "barcode": {
+      "seoTitle": "Free Barcode Generator",
+      "seoDesc": "Generate linear barcodes (EAN, UPC, Code 128, Code 39) instantly in your browser with high-res download.",
+      "desc": "Generate linear barcodes (EAN, UPC, Code 128, Code 39) instantly in your browser with high-res download."
+    },
+    "scanqr": {
+      "seoTitle": "Scan QR Code Online",
+      "seoDesc": "Scan and decode QR codes from webcam or image files securely in your browser with instant client-side decoding.",
+      "desc": "Scan and decode QR codes from webcam or image files securely in your browser with instant client-side decoding."
+    },
+    "scanbarcode": {
+      "seoTitle": "Scan Barcode Online",
+      "seoDesc": "Scan barcodes from camera or uploaded image files securely in your browser with zero server uploads.",
+      "desc": "Scan barcodes from camera or uploaded image files securely in your browser with zero server uploads."
     }
   },
   "rating": {
@@ -1634,5 +1665,14 @@
       "featDesc3": "Works perfectly with private or unlisted instructional videos.",
       "faqTitle": "Common Questions"
     }
+  },
+  "templates": {
+    "toolTitleSuffix": "Free QR Code Generator",
+    "toolDescTemplate": "Create custom {{toolName}} QR codes with logo for free. Best editable QR code generator with no watermark. 100% private, client-side generation.",
+    "barcodeTitleSuffix": "Free Barcode Generator",
+    "barcodeDescTemplate": "Generate custom {{toolName}} linear barcodes for free. Instant SVG and PNG download with high-density barcode encoding.",
+    "homeSeoDesc": "Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO-compliant, 30 languages.",
+    "homeHeroTitle": "All QR & Barcode Tools",
+    "homeHeroTitleHighlight": "in One Place"
   }
 }
