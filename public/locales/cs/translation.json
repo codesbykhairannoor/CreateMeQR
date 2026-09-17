@@ -1305,8 +1305,8 @@
       "guaranteeDesc": "CreateMy-QR je vytvořen tak, aby zůstal zcela zdarma. Naším posláním je demokratizovat veřejné služby pro každého.",
       "join": "Připojte se k hnutí",
       "joinDesc": "Vyzkoušejte nejrychlejší, nejbezpečnější a nejpokročilejší QR sadu na webu.",
-      "seoDesc": "Demokratizace dokumentů a nástrojů QR se 100% zabezpečením a soukromím na straně klienta.",
-      "desc": "Demokratizace dokumentů a nástrojů QR se 100% zabezpečením a soukromím na straně klienta."
+      "seoDesc": "Objevte poslání CreateMy-QR demokratizovat nástroje čárových kódů a QR kódů po celém světě se 100% soukromím na straně klienta, nulovým protokolováním dat a offline zabezpečením.",
+      "desc": "Objevte poslání CreateMy-QR demokratizovat nástroje čárových kódů a QR kódů po celém světě se 100% soukromím na straně klienta, nulovým protokolováním dat a offline zabezpečením."
     },
     "compare": {
       "seoTitle": "Porovnat nástroje",
@@ -1357,8 +1357,8 @@
       "tr7val1": "Závisí na síti",
       "tr7val2": "Okamžité (místní CPU)",
       "expertAuthor": "Nezávislý bezpečnostní audit",
-      "seoDesc": "Zjistěte, proč si profesionálové vybírají CreateMy-QR pro soukromé generování na straně klienta bez omezení API.",
-      "desc": "Zjistěte, proč si profesionálové vybírají CreateMy-QR pro soukromé generování na straně klienta bez omezení API."
+      "seoDesc": "Porovnejte CreateMy-QR s tradičními generátory QR. Zjistěte, proč si profesionálové vybírají naše soukromé nástroje na straně klienta bez plateb nebo limitů skenování.",
+      "desc": "Porovnejte CreateMy-QR s tradičními generátory QR. Zjistěte, proč si profesionálové vybírají naše soukromé nástroje na straně klienta bez plateb nebo limitů skenování."
     },
     "languages": {
       "seoTitle": "Podporované jazyky",
@@ -1379,8 +1379,8 @@
       "communityDesc": "Všimli jste si překladu, který vám připadá trochu mimo? Spoléháme na naši globální uživatelskou základnu, která nám pomůže vylepšit a zdokonalit naše lokalizace. Obraťte se na nás a navrhneme vylepšení pro váš rodný jazyk.",
       "ctaTitle": "Připraveni ke zpracování?",
       "ctaDesc": "Vyberte si nástroj níže a začněte bezpečně a zdarma.",
-      "seoDesc": "Vytvářejte a skenujte QR kódy a čárové kódy ve 30 jazycích po celém světě s okamžitým generováním na straně klienta.",
-      "desc": "Vytvářejte a skenujte QR kódy a čárové kódy ve 30 jazycích po celém světě s okamžitým generováním na straně klienta."
+      "seoDesc": "Generujte a skenujte vlastní QR kódy a čárové kódy ve 30 jazycích po celém světě. Okamžité generování na straně klienta s plnou lokalizací a podporou UTF-8.",
+      "desc": "Generujte a skenujte vlastní QR kódy a čárové kódy ve 30 jazycích po celém světě. Okamžité generování na straně klienta s plnou lokalizací a podporou UTF-8."
     },
     "pricing": {
       "seoTitle": "100% cena zdarma",
@@ -1411,8 +1411,8 @@
       "bizDesc": "Ano, můžete použít CreateMy-QR pro vaši společnost. Naše místní architektura zpracování z nás dělá jedinou platformu dostatečně bezpečnou pro přísná firemní prostředí, právní týmy a zdravotnické profesionály.",
       "supportTitle": "Podpořte projekt",
       "supportDesc": "Neúčtujeme předplatné, ale udržet doménu a vývoj při životě nějakou dobu trvá. Pokud vám CreateMy-QR zachránil den, zvažte sdílení se svým týmem. Ústní sdělení je naší jedinou marketingovou strategií.",
-      "seoDesc": "CreateMy-QR je 100% zdarma s neomezeným skenováním, stahováním vektorů ve vysokém rozlišení a nulovými limity.",
-      "desc": "CreateMy-QR je 100% zdarma s neomezeným skenováním, stahováním vektorů ve vysokém rozlišení a nulovými limity."
+      "seoDesc": "CreateMy-QR je navždy 100% zdarma s neomezeným generováním QR kódu, vektorovými exporty SVG/PNG ve vysokém rozlišení, nulovými vodoznaky a bez nutnosti registrace.",
+      "desc": "CreateMy-QR je navždy 100% zdarma s neomezeným generováním QR kódu, vektorovými exporty SVG/PNG ve vysokém rozlišení, nulovými vodoznaky a bez nutnosti registrace."
     },
     "privacy": {
       "seoTitle": "Zásady ochrany osobních údajů",
@@ -1426,8 +1426,8 @@
       "sslDesc": "I když se nic nenahrává, naše stránky jsou zobrazovány přes přísný HTTPS.",
       "policyTitle": "Závazek nulového nahrávání",
       "policyDesc": "Na rozdíl od jiných platforem funguje CreateMy-QR výhradně na straně klienta. Když vygenerujete QR kód, proces proběhne lokálně na vašem počítači.",
-      "seoDesc": "Zásady ochrany osobních údajů nulového sledování. Veškeré zpracování dat probíhá lokálně v paměti vašeho prohlížeče.",
-      "desc": "Zásady ochrany osobních údajů nulového sledování. Veškeré zpracování dat probíhá lokálně v paměti vašeho prohlížeče."
+      "seoDesc": "Přečtěte si naše přísné zásady ochrany osobních údajů s nulovým sledováním. Veškeré zpracování dat QR kódů a čárových kódů probíhá lokálně v paměti vašeho prohlížeče bez nutnosti nahrávání na server.",
+      "desc": "Přečtěte si naše přísné zásady ochrany osobních údajů s nulovým sledováním. Veškeré zpracování dat QR kódů a čárových kódů probíhá lokálně v paměti vašeho prohlížeče bez nutnosti nahrávání na server."
     },
     "security": {
       "seoTitle": "Bezpečnostní architektura",
@@ -1465,8 +1465,8 @@
       "verify3": "Vygenerujte libovolný QR kód. Funguje perfektně, což dokazuje, že není potřeba žádný server.",
       "missionTitle": "Budoucnost je místní",
       "missionDesc": "Představujeme si web, kde obslužné aplikace respektují váš hardware a vaše soukromí. Vítejte v nové éře počítačů na straně klienta.",
-      "seoDesc": "Prozkoumejte náš model zabezpečení s nulovou důvěrou: 100% kryptografie na straně klienta, nulový cloudový přenos, nulové úložiště dat.",
-      "desc": "Prozkoumejte náš model zabezpečení s nulovou důvěrou: 100% kryptografie na straně klienta, nulový cloudový přenos, nulové úložiště dat."
+      "seoDesc": "Prozkoumejte naši architekturu zabezpečení s nulovou důvěrou: 100% kryptografie WebAssembly na straně klienta, přenos dat serveru s nulovým cloudem a dodržování standardů ISO.",
+      "desc": "Prozkoumejte naši architekturu zabezpečení s nulovou důvěrou: 100% kryptografie WebAssembly na straně klienta, přenos dat serveru s nulovým cloudem a dodržování standardů ISO."
     },
     "terms": {
       "seoTitle": "Podmínky služby",
@@ -1488,8 +1488,8 @@
       "sec4Title": "Duševní vlastnictví",
       "sec4Desc": "Zachováváte si 100% vlastnictví a všechna práva duševního vlastnictví k dokumentům, které zpracováváte pomocí CreateMy-QR. Nárokujeme si nulová práva, licence nebo vlastnictví k vašemu obsahu.",
       "sec5Title": "Vyloučení odpovědnosti a odpovědnost",
-      "seoDesc": "Podmínky používání bezplatného online generátoru a skeneru CreateMy-QR.",
-      "desc": "Podmínky používání bezplatného online generátoru a skeneru CreateMy-QR."
+      "seoDesc": "Přečtěte si naše transparentní podmínky služby CreateMy-QR. Zdarma pro osobní a komerční použití s ​​nulovými licenčními poplatky a 100% bezpečností dat na straně klienta.",
+      "desc": "Přečtěte si naše transparentní podmínky služby CreateMy-QR. Zdarma pro osobní a komerční použití s ​​nulovými licenčními poplatky a 100% bezpečností dat na straně klienta."
     },
     "usecases": {
       "seoTitle": "Případy průmyslového použití",
@@ -1516,23 +1516,23 @@
       "toolReview": "QR recenze Google",
       "ctaTitle": "Najděte si svůj vlastní případ použití",
       "ctaDesc": "Bez ohledu na vaše odvětví je CreateMy-QR nejbezpečnější a nejrychlejší způsob generování kódů. Vyzkoušejte naši úplnou sadu 20+ nástrojů ještě dnes.",
-      "seoDesc": "Prozkoumejte skutečné případy použití QR kódu pro restaurace, maloobchod, akce, platby a podnikové operace.",
-      "desc": "Prozkoumejte skutečné případy použití QR kódu pro restaurace, maloobchod, akce, platby a podnikové operace."
+      "seoDesc": "Prozkoumejte aplikace QR kódů v reálném světě v maloobchodě, restauracích, událostech, platbách a logistice s okamžitým generováním na straně klienta a nulovými limity.",
+      "desc": "Prozkoumejte aplikace QR kódů v reálném světě v maloobchodě, restauracích, událostech, platbách a logistice s okamžitým generováním na straně klienta a nulovými limity."
     },
     "barcode": {
       "seoTitle": "Bezplatný generátor čárových kódů",
-      "seoDesc": "Generujte lineární čárové kódy (EAN, UPC, Code 128, Code 39) okamžitě ve svém prohlížeči pomocí stahování ve vysokém rozlišení.",
-      "desc": "Generujte lineární čárové kódy (EAN, UPC, Code 128, Code 39) okamžitě ve svém prohlížeči pomocí stahování ve vysokém rozlišení."
+      "seoDesc": "Vytvářejte zdarma lineární čárové kódy včetně EAN-13, UPC-A, Code 128 a Code 39. Okamžité stahování SVG a PNG ve vysokém rozlišení přímo ve vašem prohlížeči.",
+      "desc": "Vytvářejte zdarma lineární čárové kódy včetně EAN-13, UPC-A, Code 128 a Code 39. Okamžité stahování SVG a PNG ve vysokém rozlišení přímo ve vašem prohlížeči."
     },
     "scanqr": {
       "seoTitle": "Naskenujte QR kód online",
-      "seoDesc": "Skenujte a dekódujte QR kódy z webové kamery nebo obrazových souborů bezpečně ve svém prohlížeči pomocí okamžitého dekódování na straně klienta.",
-      "desc": "Skenujte a dekódujte QR kódy z webové kamery nebo obrazových souborů bezpečně ve svém prohlížeči pomocí okamžitého dekódování na straně klienta."
+      "seoDesc": "Okamžitě skenujte a dekódujte QR kódy z webové kamery nebo nahraných obrazových souborů bezpečně ve vašem prohlížeči se 100% soukromím na straně klienta a nulovým serverovým přenosem.",
+      "desc": "Okamžitě skenujte a dekódujte QR kódy z webové kamery nebo nahraných obrazových souborů bezpečně ve vašem prohlížeči se 100% soukromím na straně klienta a nulovým serverovým přenosem."
     },
     "scanbarcode": {
       "seoTitle": "Skenujte čárový kód online",
-      "seoDesc": "Skenujte čárové kódy z fotoaparátu nebo nahrané obrazové soubory bezpečně ve svém prohlížeči s nulovým nahráváním na server.",
-      "desc": "Skenujte čárové kódy z fotoaparátu nebo nahrané obrazové soubory bezpečně ve svém prohlížeči s nulovým nahráváním na server."
+      "seoDesc": "Skenujte 1D a 2D čárové kódy přímo z fotoaparátu nebo místních obrazových souborů bezpečně v paměti prohlížeče pomocí rychlého soukromého dekódování na straně klienta.",
+      "desc": "Skenujte 1D a 2D čárové kódy přímo z fotoaparátu nebo místních obrazových souborů bezpečně v paměti prohlížeče pomocí rychlého soukromého dekódování na straně klienta."
     }
   },
   "rating": {

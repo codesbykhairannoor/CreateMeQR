@@ -1305,8 +1305,8 @@
       "guaranteeDesc": "CreateMy-QR dibuat agar tetap sepenuhnya gratis. Misi kami adalah mendemokratisasi utilitas untuk semua orang.",
       "join": "Bergabunglah dengan Gerakan",
       "joinDesc": "Nikmati rangkaian QR tercepat, teraman, dan tercanggih di web.",
-      "seoDesc": "Mendemokratisasikan dokumen dan alat QR dengan keamanan dan privasi sisi klien 100%.",
-      "desc": "Mendemokratisasikan dokumen dan alat QR dengan keamanan dan privasi sisi klien 100%."
+      "seoDesc": "Temukan misi CreateMy-QR untuk mendemokratisasikan alat kode batang dan kode QR di seluruh dunia dengan privasi sisi klien 100%, tanpa pencatatan data, dan keamanan offline.",
+      "desc": "Temukan misi CreateMy-QR untuk mendemokratisasikan alat kode batang dan kode QR di seluruh dunia dengan privasi sisi klien 100%, tanpa pencatatan data, dan keamanan offline."
     },
     "compare": {
       "seoTitle": "Bandingkan Alat",
@@ -1357,8 +1357,8 @@
       "tr7val1": "Bergantung pada Jaringan",
       "tr7val2": "Instan (CPU Lokal)",
       "expertAuthor": "Audit Keamanan Independen",
-      "seoDesc": "Temukan mengapa para profesional memilih CreateMy-QR untuk pembuatan sisi klien pribadi tanpa batasan API.",
-      "desc": "Temukan mengapa para profesional memilih CreateMy-QR untuk pembuatan sisi klien pribadi tanpa batasan API."
+      "seoDesc": "Bandingkan CreateMy-QR dengan generator QR tradisional. Temukan alasan para profesional memilih alat pribadi sisi klien kami tanpa batasan pembayaran atau pemindaian.",
+      "desc": "Bandingkan CreateMy-QR dengan generator QR tradisional. Temukan alasan para profesional memilih alat pribadi sisi klien kami tanpa batasan pembayaran atau pemindaian."
     },
     "languages": {
       "seoTitle": "Bahasa yang Didukung",
@@ -1379,8 +1379,8 @@
       "communityDesc": "Perhatikan terjemahan yang terasa agak aneh? Kami mengandalkan basis pengguna global untuk membantu menyempurnakan dan menyempurnakan pelokalan kami. Hubungi kami untuk menyarankan perbaikan pada bahasa ibu Anda.",
       "ctaTitle": "Siap Memproses?",
       "ctaDesc": "Pilih alat di bawah untuk memulai dengan aman dan gratis.",
-      "seoDesc": "Buat dan pindai kode QR dan kode batang dalam 30 bahasa di seluruh dunia dengan pembuatan sisi klien instan.",
-      "desc": "Buat dan pindai kode QR dan kode batang dalam 30 bahasa di seluruh dunia dengan pembuatan sisi klien instan."
+      "seoDesc": "Hasilkan dan pindai kode QR dan kode batang khusus dalam 30 bahasa di seluruh dunia. Pembuatan sisi klien instan dengan lokalisasi penuh dan dukungan UTF-8.",
+      "desc": "Hasilkan dan pindai kode QR dan kode batang khusus dalam 30 bahasa di seluruh dunia. Pembuatan sisi klien instan dengan lokalisasi penuh dan dukungan UTF-8."
     },
     "pricing": {
       "seoTitle": "100% Harga Gratis",
@@ -1411,8 +1411,8 @@
       "bizDesc": "Ya, Anda dapat menggunakan CreateMy-QR untuk perusahaan Anda. Faktanya, arsitektur pemrosesan lokal kami menjadikan kami satu-satunya platform yang cukup aman untuk lingkungan perusahaan yang ketat, tim hukum, dan profesional kesehatan.",
       "supportTitle": "Mendukung Proyek",
       "supportDesc": "Kami tidak mengenakan biaya berlangganan, namun menjaga domain dan pengembangan tetap berjalan membutuhkan waktu. Jika CreateMy-QR menyelamatkan hari Anda, pertimbangkan untuk membagikannya dengan tim Anda. Promosi mulut ke mulut adalah satu-satunya strategi pemasaran kami.",
-      "seoDesc": "CreateMy-QR 100% gratis dengan pemindaian tanpa batas, unduhan vektor resolusi tinggi, dan tanpa batas.",
-      "desc": "CreateMy-QR 100% gratis dengan pemindaian tanpa batas, unduhan vektor resolusi tinggi, dan tanpa batas."
+      "seoDesc": "CreateMy-QR 100% gratis selamanya dengan pembuatan kode QR tanpa batas, ekspor vektor SVG/PNG resolusi tinggi, tanpa tanda air, dan tidak perlu registrasi.",
+      "desc": "CreateMy-QR 100% gratis selamanya dengan pembuatan kode QR tanpa batas, ekspor vektor SVG/PNG resolusi tinggi, tanpa tanda air, dan tidak perlu registrasi."
     },
     "privacy": {
       "seoTitle": "Kebijakan Privasi",
@@ -1426,8 +1426,8 @@
       "sslDesc": "Meskipun tidak ada yang diunggah, situs kami disajikan melalui HTTPS yang ketat.",
       "policyTitle": "Komitmen Tanpa Upload",
       "policyDesc": "Tidak seperti platform lain, CreateMy-QR beroperasi sepenuhnya di sisi klien. Saat Anda membuat kode QR, prosesnya terjadi secara lokal di mesin Anda.",
-      "seoDesc": "Kebijakan privasi tanpa pelacakan. Semua pemrosesan data terjadi secara lokal di memori browser Anda.",
-      "desc": "Kebijakan privasi tanpa pelacakan. Semua pemrosesan data terjadi secara lokal di memori browser Anda."
+      "seoDesc": "Baca kebijakan privasi nol-pelacakan kami yang ketat. Semua pemrosesan data kode QR dan kode batang terjadi secara lokal di memori browser Anda tanpa unggahan server.",
+      "desc": "Baca kebijakan privasi nol-pelacakan kami yang ketat. Semua pemrosesan data kode QR dan kode batang terjadi secara lokal di memori browser Anda tanpa unggahan server."
     },
     "security": {
       "seoTitle": "Arsitektur Keamanan",
@@ -1465,8 +1465,8 @@
       "verify3": "Hasilkan QR apa pun. Ini berfungsi dengan sempurna, membuktikan tidak diperlukan server.",
       "missionTitle": "Masa Depan adalah Lokal",
       "missionDesc": "Kami membayangkan sebuah web di mana aplikasi utilitas menghormati perangkat keras dan privasi Anda. Selamat datang di era baru komputasi sisi klien.",
-      "seoDesc": "Jelajahi model keamanan tanpa kepercayaan kami: kriptografi sisi klien 100%, tanpa transmisi cloud, tanpa penyimpanan data.",
-      "desc": "Jelajahi model keamanan tanpa kepercayaan kami: kriptografi sisi klien 100%, tanpa transmisi cloud, tanpa penyimpanan data."
+      "seoDesc": "Jelajahi arsitektur keamanan tanpa kepercayaan kami: kriptografi WebAssembly 100% sisi klien, transmisi data server cloud nol, dan kepatuhan standar ISO.",
+      "desc": "Jelajahi arsitektur keamanan tanpa kepercayaan kami: kriptografi WebAssembly 100% sisi klien, transmisi data server cloud nol, dan kepatuhan standar ISO."
     },
     "terms": {
       "seoTitle": "Ketentuan Layanan",
@@ -1488,8 +1488,8 @@
       "sec4Title": "Kekayaan Intelektual",
       "sec4Desc": "Anda memegang 100% kepemilikan dan semua hak kekayaan intelektual atas dokumen yang Anda proses menggunakan CreateMy-QR. Kami tidak mengklaim hak, lisensi, atau kepemilikan atas konten Anda.",
       "sec5Title": "Penafian & Tanggung Jawab",
-      "seoDesc": "Syarat dan ketentuan untuk menggunakan alat generator dan pemindai online gratis CreateMy-QR.",
-      "desc": "Syarat dan ketentuan untuk menggunakan alat generator dan pemindai online gratis CreateMy-QR."
+      "seoDesc": "Tinjau persyaratan layanan transparan kami untuk CreateMy-QR. Gratis untuk penggunaan pribadi dan komersial tanpa biaya lisensi dan 100% keamanan data sisi klien.",
+      "desc": "Tinjau persyaratan layanan transparan kami untuk CreateMy-QR. Gratis untuk penggunaan pribadi dan komersial tanpa biaya lisensi dan 100% keamanan data sisi klien."
     },
     "usecases": {
       "seoTitle": "Kasus Penggunaan Industri",
@@ -1516,23 +1516,23 @@
       "toolReview": "Ulasan Google QR",
       "ctaTitle": "Temukan Kasus Penggunaan Anda Sendiri",
       "ctaDesc": "Apa pun industri Anda, CreateMy-QR adalah cara teraman dan tercepat untuk menghasilkan kode. Coba rangkaian lengkap 20+ alat kami hari ini.",
-      "seoDesc": "Jelajahi kasus penggunaan kode QR di dunia nyata untuk restoran, ritel, acara, pembayaran, dan operasi perusahaan.",
-      "desc": "Jelajahi kasus penggunaan kode QR di dunia nyata untuk restoran, ritel, acara, pembayaran, dan operasi perusahaan."
+      "seoDesc": "Jelajahi aplikasi kode QR dunia nyata di seluruh ritel, restoran, acara, pembayaran, dan logistik dengan pembuatan sisi klien instan dan tanpa batas.",
+      "desc": "Jelajahi aplikasi kode QR dunia nyata di seluruh ritel, restoran, acara, pembayaran, dan logistik dengan pembuatan sisi klien instan dan tanpa batas."
     },
     "barcode": {
       "seoTitle": "Generator Kode Batang Gratis",
-      "seoDesc": "Hasilkan kode batang linier (EAN, UPC, Kode 128, Kode 39) langsung di browser Anda dengan unduhan resolusi tinggi.",
-      "desc": "Hasilkan kode batang linier (EAN, UPC, Kode 128, Kode 39) langsung di browser Anda dengan unduhan resolusi tinggi."
+      "seoDesc": "Hasilkan kode batang linier termasuk EAN-13, UPC-A, Kode 128, dan Kode 39 secara gratis. SVG dan PNG resolusi tinggi instan diunduh langsung di browser Anda.",
+      "desc": "Hasilkan kode batang linier termasuk EAN-13, UPC-A, Kode 128, dan Kode 39 secara gratis. SVG dan PNG resolusi tinggi instan diunduh langsung di browser Anda."
     },
     "scanqr": {
       "seoTitle": "Pindai Kode QR Secara Online",
-      "seoDesc": "Pindai dan dekode kode QR dari webcam atau file gambar dengan aman di browser Anda dengan decoding sisi klien instan.",
-      "desc": "Pindai dan dekode kode QR dari webcam atau file gambar dengan aman di browser Anda dengan decoding sisi klien instan."
+      "seoDesc": "Pindai dan dekode kode QR langsung dari webcam atau unggah file gambar dengan aman di browser Anda dengan privasi sisi klien 100% dan tanpa transmisi server.",
+      "desc": "Pindai dan dekode kode QR langsung dari webcam atau unggah file gambar dengan aman di browser Anda dengan privasi sisi klien 100% dan tanpa transmisi server."
     },
     "scanbarcode": {
       "seoTitle": "Pindai Kode Batang Secara Online",
-      "seoDesc": "Pindai kode batang dari kamera atau file gambar yang diunggah dengan aman di browser Anda tanpa perlu mengunggah server.",
-      "desc": "Pindai kode batang dari kamera atau file gambar yang diunggah dengan aman di browser Anda tanpa perlu mengunggah server."
+      "seoDesc": "Pindai kode batang 1D dan 2D langsung dari kamera atau file gambar lokal dengan aman di memori browser Anda dengan decoding sisi klien yang cepat dan pribadi.",
+      "desc": "Pindai kode batang 1D dan 2D langsung dari kamera atau file gambar lokal dengan aman di memori browser Anda dengan decoding sisi klien yang cepat dan pribadi."
     }
   },
   "rating": {

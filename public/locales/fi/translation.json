@@ -1305,8 +1305,8 @@
       "guaranteeDesc": "CreateMy-QR on rakennettu pysymään täysin ilmainen. Missiomme on demokratisoida yleishyödylliset palvelut kaikille.",
       "join": "Liity liikkeeseen",
       "joinDesc": "Koe verkon nopein, turvallisin ja edistynein QR-paketti.",
-      "seoDesc": "Demokratisoivat asiakirja- ja QR-työkalut 100 % asiakaspuolen suojauksella ja yksityisyydellä.",
-      "desc": "Demokratisoivat asiakirja- ja QR-työkalut 100 % asiakaspuolen suojauksella ja yksityisyydellä."
+      "seoDesc": "Tutustu CreateMy-QR:n tehtävään demokratisoida viivakoodi- ja QR-koodityökalut maailmanlaajuisesti 100 % asiakaspuolen yksityisyydellä, nollalla tiedonkeruulla ja offline-suojauksella.",
+      "desc": "Tutustu CreateMy-QR:n tehtävään demokratisoida viivakoodi- ja QR-koodityökalut maailmanlaajuisesti 100 % asiakaspuolen yksityisyydellä, nollalla tiedonkeruulla ja offline-suojauksella."
     },
     "compare": {
       "seoTitle": "Vertaa työkaluja",
@@ -1357,8 +1357,8 @@
       "tr7val1": "Riippuu verkosta",
       "tr7val2": "Instant (paikallinen suoritin)",
       "expertAuthor": "Riippumaton turvatarkastus",
-      "seoDesc": "Ota selvää, miksi ammattilaiset valitsevat CreateMy-QR:n yksityiseen asiakaspuolen luomiseen ilman API-rajoituksia.",
-      "desc": "Ota selvää, miksi ammattilaiset valitsevat CreateMy-QR:n yksityiseen asiakaspuolen luomiseen ilman API-rajoituksia."
+      "seoDesc": "Vertaa CreateMy-QR:ää perinteisiin QR-generaattoreihin. Ota selvää, miksi ammattilaiset valitsevat yksityiset asiakaspuolen työkalumme ilman maksumuureja tai skannausrajoja.",
+      "desc": "Vertaa CreateMy-QR:ää perinteisiin QR-generaattoreihin. Ota selvää, miksi ammattilaiset valitsevat yksityiset asiakaspuolen työkalumme ilman maksumuureja tai skannausrajoja."
     },
     "languages": {
       "seoTitle": "Tuetut kielet",
@@ -1379,8 +1379,8 @@
       "communityDesc": "Huomaatko käännöksen, joka tuntuu hieman väärältä? Luotamme maailmanlaajuiseen käyttäjäkuntaamme, joka auttaa tarkentamaan ja viimeistelemään lokalisointejamme. Ota yhteyttä ja ehdota parannuksia äidinkielellesi.",
       "ctaTitle": "Oletko valmis käsittelemään?",
       "ctaDesc": "Aloita turvallisesti ja ilmaiseksi valitsemalla alta työkalu.",
-      "seoDesc": "Luo ja skannaa QR-koodeja ja viivakoodeja 30 kielellä maailmanlaajuisesti välittömän asiakaspuolen luonnin avulla.",
-      "desc": "Luo ja skannaa QR-koodeja ja viivakoodeja 30 kielellä maailmanlaajuisesti välittömän asiakaspuolen luonnin avulla."
+      "seoDesc": "Luo ja skannaa mukautettuja QR-koodeja ja viivakoodeja 30 kielellä maailmanlaajuisesti. Välitön asiakaspuolen sukupolvi täydellä lokalisoinnilla ja UTF-8-tuella.",
+      "desc": "Luo ja skannaa mukautettuja QR-koodeja ja viivakoodeja 30 kielellä maailmanlaajuisesti. Välitön asiakaspuolen sukupolvi täydellä lokalisoinnilla ja UTF-8-tuella."
     },
     "pricing": {
       "seoTitle": "100% ilmainen hinnoittelu",
@@ -1411,8 +1411,8 @@
       "bizDesc": "Kyllä, voit käyttää CreateMy-QR:ää yrityksellesi. Itse asiassa paikallinen käsittelyarkkitehtuurimme tekee meistä ainoan tarpeeksi turvallisen alustan tiukoille yritysympäristöille, lakitiimeille ja terveydenhuollon ammattilaisille.",
       "supportTitle": "Tue hanketta",
       "supportDesc": "Emme veloita tilausta, mutta verkkotunnuksen ja kehityksen hengissä pitäminen vie aikaa. Jos CreateMy-QR pelasti päiväsi, harkitse sen jakamista tiimillesi. Word of mouth on ainoa markkinointistrategiamme.",
-      "seoDesc": "CreateMy-QR on 100 % ilmainen, ja siinä on rajoittamaton skannaus, korkearesoluutioinen vektorilataus ja nollarajoja.",
-      "desc": "CreateMy-QR on 100 % ilmainen, ja siinä on rajoittamaton skannaus, korkearesoluutioinen vektorilataus ja nollarajoja."
+      "seoDesc": "CreateMy-QR on 100 % ilmainen ikuisesti, ja siinä on rajoittamaton QR-koodin luonti, korkearesoluutioinen SVG/PNG-vektorivienti, nolla vesileimoa eikä rekisteröintiä vaadita.",
+      "desc": "CreateMy-QR on 100 % ilmainen ikuisesti, ja siinä on rajoittamaton QR-koodin luonti, korkearesoluutioinen SVG/PNG-vektorivienti, nolla vesileimoa eikä rekisteröintiä vaadita."
     },
     "privacy": {
       "seoTitle": "Tietosuojakäytäntö",
@@ -1426,8 +1426,8 @@
       "sslDesc": "Vaikka mitään ei ole ladattu, sivustoamme palvellaan tiukan HTTPS:n kautta.",
       "policyTitle": "Nollalataussitoumus",
       "policyDesc": "Toisin kuin muut alustat, CreateMy-QR toimii täysin asiakaspuolella. Kun luot QR-koodin, prosessi tapahtuu paikallisesti koneellasi.",
-      "seoDesc": "Nollaseurannan tietosuojakäytäntö. Kaikki tietojenkäsittely tapahtuu paikallisesti selaimesi muistissa.",
-      "desc": "Nollaseurannan tietosuojakäytäntö. Kaikki tietojenkäsittely tapahtuu paikallisesti selaimesi muistissa."
+      "seoDesc": "Lue tiukka nollaseurannan tietosuojakäytäntömme. Kaikki QR-koodin ja viivakoodin tietojen käsittely tapahtuu paikallisesti selaimesi muistissa ilman, että palvelimelle ladataan.",
+      "desc": "Lue tiukka nollaseurannan tietosuojakäytäntömme. Kaikki QR-koodin ja viivakoodin tietojen käsittely tapahtuu paikallisesti selaimesi muistissa ilman, että palvelimelle ladataan."
     },
     "security": {
       "seoTitle": "Turvallisuusarkkitehtuuri",
@@ -1465,8 +1465,8 @@
       "verify3": "Luo mikä tahansa QR. Se toimii täydellisesti, mikä osoittaa, että palvelinta ei tarvita.",
       "missionTitle": "Tulevaisuus on paikallinen",
       "missionDesc": "Kuvittelemme verkkoa, jossa apuohjelmat kunnioittavat laitteistoasi ja yksityisyyttäsi. Tervetuloa asiakaspuolen tietojenkäsittelyn uuteen aikakauteen.",
-      "seoDesc": "Tutustu nollaluottamustietoturvamalliimme: 100 % asiakaspuolen salaus, nolla pilvisiirtoa, nolla tietojen tallennusta.",
-      "desc": "Tutustu nollaluottamustietoturvamalliimme: 100 % asiakaspuolen salaus, nolla pilvisiirtoa, nolla tietojen tallennusta."
+      "seoDesc": "Tutustu nollaluottamustietoturva-arkkitehtuuriimme: 100 % asiakaspuolen WebAssembly-salaus, nolla pilvipalvelimen tiedonsiirto ja ISO-standardien noudattaminen.",
+      "desc": "Tutustu nollaluottamustietoturva-arkkitehtuuriimme: 100 % asiakaspuolen WebAssembly-salaus, nolla pilvipalvelimen tiedonsiirto ja ISO-standardien noudattaminen."
     },
     "terms": {
       "seoTitle": "Palveluehdot",
@@ -1488,8 +1488,8 @@
       "sec4Title": "Immateriaaliomaisuus",
       "sec4Desc": "Säilytät 100 %:n omistusoikeuden ja kaikki immateriaalioikeudet asiakirjoihin, joita käsittelet CreateMy-QR:n avulla. Vaadimme, että sisältöösi ei ole oikeuksia, lisenssejä tai omistajuutta.",
       "sec5Title": "Vastuuvapauslausekkeet ja vastuu",
-      "seoDesc": "CreateMy-QR:n ilmaisten online-generaattori- ja skannerityökalujen käyttöehdot.",
-      "desc": "CreateMy-QR:n ilmaisten online-generaattori- ja skannerityökalujen käyttöehdot."
+      "seoDesc": "Tutustu CreateMy-QR:n läpinäkyviin käyttöehtoihimme. Ilmainen henkilökohtaiseen ja kaupalliseen käyttöön ilman lisenssimaksuja ja 100 % asiakaspuolen tietoturvaa.",
+      "desc": "Tutustu CreateMy-QR:n läpinäkyviin käyttöehtoihimme. Ilmainen henkilökohtaiseen ja kaupalliseen käyttöön ilman lisenssimaksuja ja 100 % asiakaspuolen tietoturvaa."
     },
     "usecases": {
       "seoTitle": "Teollisuuden käyttötapaukset",
@@ -1516,23 +1516,23 @@
       "toolReview": "Google-arvostelu QR",
       "ctaTitle": "Löydä oma käyttötapasi",
       "ctaDesc": "Toimialastasi riippumatta CreateMy-QR on turvallisin ja nopein tapa luoda koodeja. Kokeile täyttä 20+ työkaluvalikoimaamme jo tänään.",
-      "seoDesc": "Tutustu todellisiin QR-koodien käyttötapauksiin ravintoloissa, vähittäiskaupassa, tapahtumissa, maksuissa ja yritystoiminnoissa.",
-      "desc": "Tutustu todellisiin QR-koodien käyttötapauksiin ravintoloissa, vähittäiskaupassa, tapahtumissa, maksuissa ja yritystoiminnoissa."
+      "seoDesc": "Tutustu reaalimaailman QR-koodisovelluksiin vähittäiskaupassa, ravintoloissa, tapahtumissa, maksuissa ja logistiikassa välittömällä asiakaspuolen generoinnilla ja nollarajoilla.",
+      "desc": "Tutustu reaalimaailman QR-koodisovelluksiin vähittäiskaupassa, ravintoloissa, tapahtumissa, maksuissa ja logistiikassa välittömällä asiakaspuolen generoinnilla ja nollarajoilla."
     },
     "barcode": {
       "seoTitle": "Ilmainen viivakoodigeneraattori",
-      "seoDesc": "Luo lineaarisia viivakoodeja (EAN, UPC, Code 128, Code 39) välittömästi selaimessasi korkearesoluutioisella latauksella.",
-      "desc": "Luo lineaarisia viivakoodeja (EAN, UPC, Code 128, Code 39) välittömästi selaimessasi korkearesoluutioisella latauksella."
+      "seoDesc": "Luo lineaarisia viivakoodeja, mukaan lukien EAN-13, UPC-A, Code 128 ja Code 39 ilmaiseksi. Välittömät korkearesoluutioiset SVG- ja PNG-lataukset suoraan selaimessasi.",
+      "desc": "Luo lineaarisia viivakoodeja, mukaan lukien EAN-13, UPC-A, Code 128 ja Code 39 ilmaiseksi. Välittömät korkearesoluutioiset SVG- ja PNG-lataukset suoraan selaimessasi."
     },
     "scanqr": {
       "seoTitle": "Skannaa QR-koodi verkossa",
-      "seoDesc": "Skannaa ja purkaa QR-koodeja verkkokamerasta tai kuvatiedostoista turvallisesti selaimessasi välittömällä asiakaspuolen dekoodauksella.",
-      "desc": "Skannaa ja purkaa QR-koodeja verkkokamerasta tai kuvatiedostoista turvallisesti selaimessasi välittömällä asiakaspuolen dekoodauksella."
+      "seoDesc": "Skannaa ja pura QR-koodit välittömästi verkkokamerasta tai ladatuista kuvatiedostoista turvallisesti selaimessasi 100 % asiakaspuolen tietosuojalla ja nolla palvelinlähetystä.",
+      "desc": "Skannaa ja pura QR-koodit välittömästi verkkokamerasta tai ladatuista kuvatiedostoista turvallisesti selaimessasi 100 % asiakaspuolen tietosuojalla ja nolla palvelinlähetystä."
     },
     "scanbarcode": {
       "seoTitle": "Skannaa viivakoodi verkossa",
-      "seoDesc": "Skannaa kameran viivakoodit tai ladatut kuvatiedostot turvallisesti selaimessasi ilman palvelinlatauksia.",
-      "desc": "Skannaa kameran viivakoodit tai ladatut kuvatiedostot turvallisesti selaimessasi ilman palvelinlatauksia."
+      "seoDesc": "Skannaa 1D- ja 2D-viivakoodeja suoraan kamerasta tai paikallisista kuvatiedostoista turvallisesti selaimesi muistiin nopealla, yksityisellä asiakaspuolen dekoodauksella.",
+      "desc": "Skannaa 1D- ja 2D-viivakoodeja suoraan kamerasta tai paikallisista kuvatiedostoista turvallisesti selaimesi muistiin nopealla, yksityisellä asiakaspuolen dekoodauksella."
     }
   },
   "rating": {

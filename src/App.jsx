@@ -123,67 +123,67 @@ export default function App() {
     ? {
         title: `${t('static.about.seoTitle', 'About Us')} | CreateMy-QR`,
         h1Title: t('static.about.heroTitle', 'About Us'),
-        description: t('static.about.seoDesc', 'Democratizing document and QR tools with 100% client-side security and privacy.'),
+        description: t('static.about.seoDesc', 'Discover CreateMy-QR\'s mission to democratize barcode and QR code tools worldwide with 100% client-side privacy, zero data logging, and offline security.'),
       }
     : isCompare
     ? {
         title: `${t('static.compare.seoTitle', 'Compare Tools')} | CreateMy-QR`,
         h1Title: t('static.compare.heroTitle', 'CreateMy-QR vs The Rest'),
-        description: t('static.compare.seoDesc', 'Discover why professionals choose CreateMy-QR for private, client-side generation without API limits.'),
+        description: t('static.compare.seoDesc', 'Compare CreateMy-QR with traditional QR generators. Discover why professionals choose our private, client-side tools with no paywalls or scan limits.'),
       }
     : isLanguages
     ? {
         title: `${t('static.languages.seoTitle', 'Supported Languages')} | CreateMy-QR`,
         h1Title: t('static.languages.heroTitle', '30 Supported Languages'),
-        description: t('static.languages.seoDesc', 'Create and scan QR codes and barcodes in 30 languages worldwide with instant client-side generation.'),
+        description: t('static.languages.seoDesc', 'Generate and scan custom QR codes and barcodes in 30 languages worldwide. Instant client-side generation with full localization and UTF-8 support.'),
       }
     : isPricing
     ? {
         title: `${t('static.pricing.seoTitle', '100% Free Pricing')} | CreateMy-QR`,
         h1Title: t('static.pricing.heroTitle', '100% Free Forever'),
-        description: t('static.pricing.seoDesc', 'CreateMy-QR is 100% free with unlimited scans, high-resolution vector downloads, and zero limits.'),
+        description: t('static.pricing.seoDesc', 'CreateMy-QR is 100% free forever with unlimited QR code generation, high-resolution vector SVG/PNG exports, zero watermarks, and no registration required.'),
       }
     : isPrivacy
     ? {
         title: `${t('static.privacy.seoTitle', 'Privacy Policy')} | CreateMy-QR`,
         h1Title: t('static.privacy.heroTitle', 'Privacy Policy'),
-        description: t('static.privacy.seoDesc', 'Zero-tracking privacy policy. All data processing occurs locally in your browser memory.'),
+        description: t('static.privacy.seoDesc', 'Read our strict zero-tracking privacy policy. All QR code and barcode data processing occurs locally in your browser memory with zero server uploads.'),
       }
     : isSecurity
     ? {
         title: `${t('static.security.seoTitle', 'Security Architecture')} | CreateMy-QR`,
         h1Title: t('static.security.heroTitle', 'Security Architecture'),
-        description: t('static.security.seoDesc', 'Explore our zero-trust security model: 100% client-side cryptography, zero cloud transmission, zero data storage.'),
+        description: t('static.security.seoDesc', 'Explore our zero-trust security architecture: 100% client-side WebAssembly cryptography, zero cloud server data transmission, and ISO standard compliance.'),
       }
     : isTerms
     ? {
         title: `${t('static.terms.seoTitle', 'Terms of Service')} | CreateMy-QR`,
         h1Title: t('static.terms.heroTitle', 'Terms of Service'),
-        description: t('static.terms.seoDesc', 'Terms and conditions for using CreateMy-QR free online generator and scanner tools.'),
+        description: t('static.terms.seoDesc', 'Review our transparent terms of service for CreateMy-QR. Free for personal and commercial use with zero licensing fees and 100% client-side data safety.'),
       }
     : isUseCases
     ? {
         title: `${t('static.usecases.seoTitle', 'Industry Use Cases')} | CreateMy-QR`,
         h1Title: t('static.usecases.heroTitle', 'QR Code Industry Use Cases'),
-        description: t('static.usecases.seoDesc', 'Explore real-world QR code use cases for restaurants, retail, events, payments, and enterprise operations.'),
+        description: t('static.usecases.seoDesc', 'Explore real-world QR code applications across retail, restaurants, events, payments, and logistics with instant client-side generation and zero limits.'),
       }
     : isBarcode
     ? {
         title: `${t('static.barcode.seoTitle', 'Free Barcode Generator')} | CreateMy-QR`,
         h1Title: t('static.barcode.heroTitle', 'Free Barcode Generator Online'),
-        description: t('static.barcode.seoDesc', 'Generate linear barcodes (EAN, UPC, Code 128, Code 39) instantly in your browser with high-res download.'),
+        description: t('static.barcode.seoDesc', 'Generate linear barcodes including EAN-13, UPC-A, Code 128, and Code 39 for free. Instant high-resolution SVG and PNG downloads directly in your browser.'),
       }
     : isScanQr
     ? {
         title: `${t('static.scanqr.seoTitle', 'Scan QR Code Online')} | CreateMy-QR`,
         h1Title: t('static.scanqr.heroTitle', 'Scan QR Code Online'),
-        description: t('static.scanqr.seoDesc', 'Scan and decode QR codes from webcam or image files securely in your browser with instant client-side decoding.'),
+        description: t('static.scanqr.seoDesc', 'Scan and decode QR codes instantly from webcam or uploaded image files securely in your browser with 100% client-side privacy and zero server transmission.'),
       }
     : isScanBarcode
     ? {
         title: `${t('static.scanbarcode.seoTitle', 'Scan Barcode Online')} | CreateMy-QR`,
         h1Title: t('static.scanbarcode.heroTitle', 'Scan Barcode Online'),
-        description: t('static.scanbarcode.seoDesc', 'Scan barcodes from camera or uploaded image files securely in your browser with zero server uploads.'),
+        description: t('static.scanbarcode.seoDesc', 'Scan 1D and 2D barcodes directly from your camera or local image files securely in your browser memory with fast, private client-side decoding.'),
       }
     : effectiveType === 'url'
     ? {

@@ -1305,8 +1305,8 @@
       "guaranteeDesc": "CreateMy-QR được xây dựng để hoàn toàn miễn phí. Sứ mệnh của chúng tôi là dân chủ hóa các tiện ích cho mọi người.",
       "join": "Tham gia Phong trào",
       "joinDesc": "Trải nghiệm bộ QR nhanh nhất, an toàn nhất và tiên tiến nhất trên web.",
-      "seoDesc": "Dân chủ hóa các công cụ tài liệu và QR với 100% bảo mật và quyền riêng tư phía khách hàng.",
-      "desc": "Dân chủ hóa các công cụ tài liệu và QR với 100% bảo mật và quyền riêng tư phía khách hàng."
+      "seoDesc": "Khám phá sứ mệnh của CreateMy-QR nhằm dân chủ hóa các công cụ mã vạch và mã QR trên toàn thế giới với 100% quyền riêng tư phía khách hàng, không ghi nhật ký dữ liệu và bảo mật ngoại tuyến.",
+      "desc": "Khám phá sứ mệnh của CreateMy-QR nhằm dân chủ hóa các công cụ mã vạch và mã QR trên toàn thế giới với 100% quyền riêng tư phía khách hàng, không ghi nhật ký dữ liệu và bảo mật ngoại tuyến."
     },
     "compare": {
       "seoTitle": "Công cụ so sánh",
@@ -1357,8 +1357,8 @@
       "tr7val1": "Phụ thuộc vào Mạng",
       "tr7val2": "Tức thì (CPU cục bộ)",
       "expertAuthor": "Kiểm toán an ninh độc lập",
-      "seoDesc": "Khám phá lý do tại sao các chuyên gia chọn CreateMy-QR để tạo riêng tư, phía khách hàng mà không có giới hạn API.",
-      "desc": "Khám phá lý do tại sao các chuyên gia chọn CreateMy-QR để tạo riêng tư, phía khách hàng mà không có giới hạn API."
+      "seoDesc": "So sánh CreateMy-QR với các trình tạo QR truyền thống. Khám phá lý do tại sao các chuyên gia chọn các công cụ riêng tư, phía khách hàng của chúng tôi mà không có tường phí hoặc giới hạn quét.",
+      "desc": "So sánh CreateMy-QR với các trình tạo QR truyền thống. Khám phá lý do tại sao các chuyên gia chọn các công cụ riêng tư, phía khách hàng của chúng tôi mà không có tường phí hoặc giới hạn quét."
     },
     "languages": {
       "seoTitle": "Ngôn ngữ được hỗ trợ",
@@ -1379,8 +1379,8 @@
       "communityDesc": "Bạn có nhận thấy bản dịch hơi khác một chút không? Chúng tôi dựa vào cơ sở người dùng toàn cầu để giúp tinh chỉnh và hoàn thiện bản địa hóa của mình. Hãy liên hệ với chúng tôi để đề xuất những cải tiến cho ngôn ngữ mẹ đẻ của bạn.",
       "ctaTitle": "Sẵn sàng để xử lý?",
       "ctaDesc": "Hãy chọn một công cụ bên dưới để bắt đầu một cách an toàn và miễn phí.",
-      "seoDesc": "Tạo và quét mã QR và mã vạch bằng 30 ngôn ngữ trên toàn thế giới với khả năng tạo phía máy khách ngay lập tức.",
-      "desc": "Tạo và quét mã QR và mã vạch bằng 30 ngôn ngữ trên toàn thế giới với khả năng tạo phía máy khách ngay lập tức."
+      "seoDesc": "Tạo và quét mã QR và mã vạch tùy chỉnh bằng 30 ngôn ngữ trên toàn thế giới. Tạo phía máy khách ngay lập tức với khả năng bản địa hóa đầy đủ và hỗ trợ UTF-8.",
+      "desc": "Tạo và quét mã QR và mã vạch tùy chỉnh bằng 30 ngôn ngữ trên toàn thế giới. Tạo phía máy khách ngay lập tức với khả năng bản địa hóa đầy đủ và hỗ trợ UTF-8."
     },
     "pricing": {
       "seoTitle": "Định giá miễn phí 100%",
@@ -1411,8 +1411,8 @@
       "bizDesc": "Có, bạn có thể sử dụng CreateMy-QR cho công ty của mình. Trên thực tế, kiến ​​trúc xử lý cục bộ của chúng tôi khiến chúng tôi trở thành nền tảng duy nhất đủ an toàn cho các môi trường doanh nghiệp, nhóm pháp lý và chuyên gia chăm sóc sức khỏe nghiêm ngặt.",
       "supportTitle": "Hỗ trợ dự án",
       "supportDesc": "Chúng tôi không tính phí đăng ký nhưng việc duy trì miền và quá trình phát triển cần có thời gian. Nếu CreateMy-QR đã giúp ích cho bạn một ngày, hãy cân nhắc việc chia sẻ nó với nhóm của bạn. Truyền miệng là chiến lược tiếp thị duy nhất của chúng tôi.",
-      "seoDesc": "CreateMy-QR miễn phí 100% với số lần quét không giới hạn, tải xuống vectơ có độ phân giải cao và không giới hạn.",
-      "desc": "CreateMy-QR miễn phí 100% với số lần quét không giới hạn, tải xuống vectơ có độ phân giải cao và không giới hạn."
+      "seoDesc": "CreateMy-QR miễn phí 100% mãi mãi với khả năng tạo mã QR không giới hạn, xuất vectơ SVG/PNG có độ phân giải cao, không có hình mờ và không cần đăng ký.",
+      "desc": "CreateMy-QR miễn phí 100% mãi mãi với khả năng tạo mã QR không giới hạn, xuất vectơ SVG/PNG có độ phân giải cao, không có hình mờ và không cần đăng ký."
     },
     "privacy": {
       "seoTitle": "Chính sách bảo mật",
@@ -1426,8 +1426,8 @@
       "sslDesc": "Mặc dù không có gì được tải lên nhưng trang web của chúng tôi được cung cấp qua HTTPS nghiêm ngặt.",
       "policyTitle": "Cam kết không tải lên",
       "policyDesc": "Không giống như các nền tảng khác, CreateMy-QR hoạt động hoàn toàn ở phía máy khách. Khi bạn tạo mã QR, quá trình này sẽ diễn ra cục bộ trên máy của bạn.",
-      "seoDesc": "Chính sách quyền riêng tư không theo dõi. Tất cả quá trình xử lý dữ liệu diễn ra cục bộ trong bộ nhớ trình duyệt của bạn.",
-      "desc": "Chính sách quyền riêng tư không theo dõi. Tất cả quá trình xử lý dữ liệu diễn ra cục bộ trong bộ nhớ trình duyệt của bạn."
+      "seoDesc": "Đọc chính sách quyền riêng tư không theo dõi nghiêm ngặt của chúng tôi. Tất cả quá trình xử lý dữ liệu mã QR và mã vạch diễn ra cục bộ trong bộ nhớ trình duyệt của bạn mà không cần tải lên máy chủ.",
+      "desc": "Đọc chính sách quyền riêng tư không theo dõi nghiêm ngặt của chúng tôi. Tất cả quá trình xử lý dữ liệu mã QR và mã vạch diễn ra cục bộ trong bộ nhớ trình duyệt của bạn mà không cần tải lên máy chủ."
     },
     "security": {
       "seoTitle": "Kiến trúc bảo mật",
@@ -1465,8 +1465,8 @@
       "verify3": "Tạo bất kỳ QR nào. Nó hoạt động hoàn hảo, chứng tỏ không cần máy chủ.",
       "missionTitle": "Tương lai là địa phương",
       "missionDesc": "Chúng tôi hình dung một trang web nơi các ứng dụng tiện ích tôn trọng phần cứng và quyền riêng tư của bạn. Chào mừng đến với kỷ nguyên mới của điện toán phía máy khách.",
-      "seoDesc": "Khám phá mô hình bảo mật không tin cậy của chúng tôi: mật mã phía máy khách 100%, truyền tải không qua đám mây, không lưu trữ dữ liệu.",
-      "desc": "Khám phá mô hình bảo mật không tin cậy của chúng tôi: mật mã phía máy khách 100%, truyền tải không qua đám mây, không lưu trữ dữ liệu."
+      "seoDesc": "Khám phá kiến ​​trúc bảo mật không tin cậy của chúng tôi: mật mã WebAssembly 100% phía máy khách, truyền dữ liệu máy chủ không đám mây và tuân thủ tiêu chuẩn ISO.",
+      "desc": "Khám phá kiến ​​trúc bảo mật không tin cậy của chúng tôi: mật mã WebAssembly 100% phía máy khách, truyền dữ liệu máy chủ không đám mây và tuân thủ tiêu chuẩn ISO."
     },
     "terms": {
       "seoTitle": "Điều khoản dịch vụ",
@@ -1488,8 +1488,8 @@
       "sec4Title": "Sở hữu trí tuệ",
       "sec4Desc": "Bạn giữ 100% quyền sở hữu và tất cả các quyền sở hữu trí tuệ đối với tài liệu bạn xử lý bằng CreateMy-QR. Chúng tôi yêu cầu không có quyền, giấy phép hoặc quyền sở hữu đối với nội dung của bạn.",
       "sec5Title": "Tuyên bố miễn trừ trách nhiệm & trách nhiệm pháp lý",
-      "seoDesc": "Các điều khoản và điều kiện để sử dụng các công cụ tạo và quét trực tuyến miễn phí CreateMy-QR.",
-      "desc": "Các điều khoản và điều kiện để sử dụng các công cụ tạo và quét trực tuyến miễn phí CreateMy-QR."
+      "seoDesc": "Xem lại các điều khoản dịch vụ minh bạch của chúng tôi dành cho CreateMy-QR. Miễn phí cho mục đích sử dụng cá nhân và thương mại với phí cấp phép bằng 0 và an toàn dữ liệu phía khách hàng 100%.",
+      "desc": "Xem lại các điều khoản dịch vụ minh bạch của chúng tôi dành cho CreateMy-QR. Miễn phí cho mục đích sử dụng cá nhân và thương mại với phí cấp phép bằng 0 và an toàn dữ liệu phía khách hàng 100%."
     },
     "usecases": {
       "seoTitle": "Các trường hợp sử dụng trong ngành",
@@ -1516,23 +1516,23 @@
       "toolReview": "Google Đánh giá QR",
       "ctaTitle": "Tìm trường hợp sử dụng của riêng bạn",
       "ctaDesc": "Bất kể ngành nghề của bạn là gì, CreateMy-QR là cách an toàn nhất và nhanh nhất để tạo mã. Hãy thử bộ đầy đủ hơn 20 công cụ của chúng tôi ngay hôm nay.",
-      "seoDesc": "Khám phá các trường hợp sử dụng mã QR trong thế giới thực cho nhà hàng, bán lẻ, sự kiện, thanh toán và hoạt động doanh nghiệp.",
-      "desc": "Khám phá các trường hợp sử dụng mã QR trong thế giới thực cho nhà hàng, bán lẻ, sự kiện, thanh toán và hoạt động doanh nghiệp."
+      "seoDesc": "Khám phá các ứng dụng mã QR trong thế giới thực trên khắp các cửa hàng bán lẻ, nhà hàng, sự kiện, thanh toán và hậu cần với khả năng tạo phía khách hàng ngay lập tức và không có giới hạn.",
+      "desc": "Khám phá các ứng dụng mã QR trong thế giới thực trên khắp các cửa hàng bán lẻ, nhà hàng, sự kiện, thanh toán và hậu cần với khả năng tạo phía khách hàng ngay lập tức và không có giới hạn."
     },
     "barcode": {
       "seoTitle": "Trình tạo mã vạch miễn phí",
-      "seoDesc": "Tạo mã vạch tuyến tính (EAN, UPC, Mã 128, Mã 39) ngay lập tức trong trình duyệt của bạn với bản tải xuống có độ phân giải cao.",
-      "desc": "Tạo mã vạch tuyến tính (EAN, UPC, Mã 128, Mã 39) ngay lập tức trong trình duyệt của bạn với bản tải xuống có độ phân giải cao."
+      "seoDesc": "Tạo mã vạch tuyến tính bao gồm EAN-13, UPC-A, Mã 128 và Mã 39 miễn phí. Tải xuống SVG và PNG độ phân giải cao ngay lập tức trực tiếp trong trình duyệt của bạn.",
+      "desc": "Tạo mã vạch tuyến tính bao gồm EAN-13, UPC-A, Mã 128 và Mã 39 miễn phí. Tải xuống SVG và PNG độ phân giải cao ngay lập tức trực tiếp trong trình duyệt của bạn."
     },
     "scanqr": {
       "seoTitle": "Quét mã QR trực tuyến",
-      "seoDesc": "Quét và giải mã mã QR từ webcam hoặc tệp hình ảnh một cách an toàn trong trình duyệt của bạn bằng tính năng giải mã tức thì phía máy khách.",
-      "desc": "Quét và giải mã mã QR từ webcam hoặc tệp hình ảnh một cách an toàn trong trình duyệt của bạn bằng tính năng giải mã tức thì phía máy khách."
+      "seoDesc": "Quét và giải mã mã QR ngay lập tức từ webcam hoặc tệp hình ảnh đã tải lên một cách an toàn trong trình duyệt của bạn với 100% quyền riêng tư phía máy khách và không cần truyền qua máy chủ.",
+      "desc": "Quét và giải mã mã QR ngay lập tức từ webcam hoặc tệp hình ảnh đã tải lên một cách an toàn trong trình duyệt của bạn với 100% quyền riêng tư phía máy khách và không cần truyền qua máy chủ."
     },
     "scanbarcode": {
       "seoTitle": "Quét mã vạch trực tuyến",
-      "seoDesc": "Quét mã vạch từ máy ảnh hoặc tệp hình ảnh được tải lên một cách an toàn trong trình duyệt của bạn mà không cần tải lên máy chủ.",
-      "desc": "Quét mã vạch từ máy ảnh hoặc tệp hình ảnh được tải lên một cách an toàn trong trình duyệt của bạn mà không cần tải lên máy chủ."
+      "seoDesc": "Quét mã vạch 1D và 2D trực tiếp từ máy ảnh hoặc tệp hình ảnh cục bộ của bạn một cách an toàn trong bộ nhớ trình duyệt của bạn với khả năng giải mã phía máy khách riêng tư, nhanh chóng.",
+      "desc": "Quét mã vạch 1D và 2D trực tiếp từ máy ảnh hoặc tệp hình ảnh cục bộ của bạn một cách an toàn trong bộ nhớ trình duyệt của bạn với khả năng giải mã phía máy khách riêng tư, nhanh chóng."
     }
   },
   "rating": {

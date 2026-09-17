@@ -1305,8 +1305,8 @@
       "guaranteeDesc": "CreateMy-QR is gebouwd om volledig gratis te blijven. Onze missie is om nutsvoorzieningen voor iedereen te democratiseren.",
       "join": "Sluit je aan bij de beweging",
       "joinDesc": "Ervaar de snelste, veiligste en meest geavanceerde QR-suite op internet.",
-      "seoDesc": "Democratisering van document- en QR-tools met 100% beveiliging en privacy aan de clientzijde.",
-      "desc": "Democratisering van document- en QR-tools met 100% beveiliging en privacy aan de clientzijde."
+      "seoDesc": "Ontdek de missie van CreateMy-QR om barcode- en QR-codetools wereldwijd te democratiseren met 100% privacy aan de clientzijde, geen gegevensregistratie en offline beveiliging.",
+      "desc": "Ontdek de missie van CreateMy-QR om barcode- en QR-codetools wereldwijd te democratiseren met 100% privacy aan de clientzijde, geen gegevensregistratie en offline beveiliging."
     },
     "compare": {
       "seoTitle": "Vergelijk hulpmiddelen",
@@ -1357,8 +1357,8 @@
       "tr7val1": "Afhankelijk van netwerk",
       "tr7val2": "Direct (lokale CPU)",
       "expertAuthor": "Onafhankelijke beveiligingsaudit",
-      "seoDesc": "Ontdek waarom professionals CreateMy-QR kiezen voor privégeneratie aan de clientzijde zonder API-limieten.",
-      "desc": "Ontdek waarom professionals CreateMy-QR kiezen voor privégeneratie aan de clientzijde zonder API-limieten."
+      "seoDesc": "Vergelijk CreateMy-QR met traditionele QR-generatoren. Ontdek waarom professionals kiezen voor onze privétools aan de clientzijde, zonder betaalmuren of scanlimieten.",
+      "desc": "Vergelijk CreateMy-QR met traditionele QR-generatoren. Ontdek waarom professionals kiezen voor onze privétools aan de clientzijde, zonder betaalmuren of scanlimieten."
     },
     "languages": {
       "seoTitle": "Ondersteunde talen",
@@ -1379,8 +1379,8 @@
       "communityDesc": "Merk je een vertaling op die enigszins afwijkend aanvoelt? We vertrouwen op ons wereldwijde gebruikersbestand om onze lokalisaties te verfijnen en te perfectioneren. Neem contact met ons op om verbeteringen voor uw moedertaal voor te stellen.",
       "ctaTitle": "Klaar om te verwerken?",
       "ctaDesc": "Kies hieronder een tool om veilig en gratis aan de slag te gaan.",
-      "seoDesc": "Creëer en scan QR-codes en barcodes in 30 talen wereldwijd met onmiddellijke generatie aan de clientzijde.",
-      "desc": "Creëer en scan QR-codes en barcodes in 30 talen wereldwijd met onmiddellijke generatie aan de clientzijde."
+      "seoDesc": "Genereer en scan aangepaste QR-codes en barcodes in 30 talen wereldwijd. Directe generatie aan de clientzijde met volledige lokalisatie en UTF-8-ondersteuning.",
+      "desc": "Genereer en scan aangepaste QR-codes en barcodes in 30 talen wereldwijd. Directe generatie aan de clientzijde met volledige lokalisatie en UTF-8-ondersteuning."
     },
     "pricing": {
       "seoTitle": "100% gratis prijzen",
@@ -1411,8 +1411,8 @@
       "bizDesc": "Ja, u kunt CreateMy-QR gebruiken voor uw bedrijf. Onze lokale verwerkingsarchitectuur maakt ons zelfs het enige platform dat veilig genoeg is voor strikte bedrijfsomgevingen, juridische teams en professionals in de gezondheidszorg.",
       "supportTitle": "Steun het project",
       "supportDesc": "We rekenen geen abonnement, maar het levend houden van het domein en de ontwikkeling kost tijd. Als CreateMy-QR uw dag heeft gered, overweeg dan om deze met uw team te delen. Mond-tot-mondreclame is onze enige marketingstrategie.",
-      "seoDesc": "CreateMy-QR is 100% gratis met onbeperkte scans, vectordownloads in hoge resolutie en nullimieten.",
-      "desc": "CreateMy-QR is 100% gratis met onbeperkte scans, vectordownloads in hoge resolutie en nullimieten."
+      "seoDesc": "CreateMy-QR is voor altijd 100% gratis met onbeperkte generatie van QR-codes, vector-SVG/PNG-exports met hoge resolutie, geen watermerken en geen registratie vereist.",
+      "desc": "CreateMy-QR is voor altijd 100% gratis met onbeperkte generatie van QR-codes, vector-SVG/PNG-exports met hoge resolutie, geen watermerken en geen registratie vereist."
     },
     "privacy": {
       "seoTitle": "Privacybeleid",
@@ -1426,8 +1426,8 @@
       "sslDesc": "Ook al wordt er niets geüpload, onze site wordt bediend via strikte HTTPS.",
       "policyTitle": "De nul-uploadverplichting",
       "policyDesc": "In tegenstelling tot andere platforms werkt CreateMy-QR volledig aan de clientzijde. Wanneer u een QR-code genereert, gebeurt het proces lokaal op uw machine.",
-      "seoDesc": "Zero-tracking privacybeleid. Alle gegevensverwerking vindt lokaal in uw browsergeheugen plaats.",
-      "desc": "Zero-tracking privacybeleid. Alle gegevensverwerking vindt lokaal in uw browsergeheugen plaats."
+      "seoDesc": "Lees ons strikte zero-tracking privacybeleid. Alle verwerking van QR-code- en barcodegegevens vindt lokaal in uw browsergeheugen plaats, zonder serveruploads.",
+      "desc": "Lees ons strikte zero-tracking privacybeleid. Alle verwerking van QR-code- en barcodegegevens vindt lokaal in uw browsergeheugen plaats, zonder serveruploads."
     },
     "security": {
       "seoTitle": "Beveiligingsarchitectuur",
@@ -1465,8 +1465,8 @@
       "verify3": "Genereer een QR. Het werkt perfect en bewijst dat er geen server nodig is.",
       "missionTitle": "De toekomst is lokaal",
       "missionDesc": "We stellen ons een web voor waarin hulpprogramma's uw hardware en uw privacy respecteren. Welkom in het nieuwe tijdperk van client-side computing.",
-      "seoDesc": "Ontdek ons ​​zero-trust beveiligingsmodel: 100% cryptografie aan de clientzijde, geen cloudtransmissie, geen gegevensopslag.",
-      "desc": "Ontdek ons ​​zero-trust beveiligingsmodel: 100% cryptografie aan de clientzijde, geen cloudtransmissie, geen gegevensopslag."
+      "seoDesc": "Ontdek onze zero-trust beveiligingsarchitectuur: 100% client-side WebAssembly-cryptografie, datatransmissie zonder cloudserver en naleving van de ISO-standaard.",
+      "desc": "Ontdek onze zero-trust beveiligingsarchitectuur: 100% client-side WebAssembly-cryptografie, datatransmissie zonder cloudserver en naleving van de ISO-standaard."
     },
     "terms": {
       "seoTitle": "Servicevoorwaarden",
@@ -1488,8 +1488,8 @@
       "sec4Title": "Intellectuele eigendom",
       "sec4Desc": "U behoudt 100% het eigendom en alle intellectuele eigendomsrechten op de documenten die u verwerkt met CreateMy-QR. We claimen geen rechten, licenties of eigendom over uw inhoud.",
       "sec5Title": "Disclaimers en aansprakelijkheid",
-      "seoDesc": "Algemene voorwaarden voor het gebruik van de gratis online generator- en scannertools van CreateMy-QR.",
-      "desc": "Algemene voorwaarden voor het gebruik van de gratis online generator- en scannertools van CreateMy-QR."
+      "seoDesc": "Bekijk onze transparante servicevoorwaarden voor CreateMy-QR. Gratis voor persoonlijk en commercieel gebruik, zonder licentiekosten en 100% gegevensveiligheid aan de clientzijde.",
+      "desc": "Bekijk onze transparante servicevoorwaarden voor CreateMy-QR. Gratis voor persoonlijk en commercieel gebruik, zonder licentiekosten en 100% gegevensveiligheid aan de clientzijde."
     },
     "usecases": {
       "seoTitle": "Gebruiksscenario's in de industrie",
@@ -1516,23 +1516,23 @@
       "toolReview": "Google-recensie QR",
       "ctaTitle": "Vind uw eigen gebruiksscenario",
       "ctaDesc": "Ongeacht uw branche, CreateMy-QR is de veiligste en snelste manier om codes te genereren. Probeer vandaag nog ons volledige pakket met meer dan 20 tools.",
-      "seoDesc": "Ontdek praktijkvoorbeelden van QR-codes voor restaurants, winkels, evenementen, betalingen en bedrijfsactiviteiten.",
-      "desc": "Ontdek praktijkvoorbeelden van QR-codes voor restaurants, winkels, evenementen, betalingen en bedrijfsactiviteiten."
+      "seoDesc": "Ontdek real-world QR-codetoepassingen in de detailhandel, restaurants, evenementen, betalingen en logistiek met onmiddellijke generatie aan de klantzijde en nullimieten.",
+      "desc": "Ontdek real-world QR-codetoepassingen in de detailhandel, restaurants, evenementen, betalingen en logistiek met onmiddellijke generatie aan de klantzijde en nullimieten."
     },
     "barcode": {
       "seoTitle": "Gratis barcodegenerator",
-      "seoDesc": "Genereer direct lineaire barcodes (EAN, UPC, Code 128, Code 39) in uw browser met download in hoge resolutie.",
-      "desc": "Genereer direct lineaire barcodes (EAN, UPC, Code 128, Code 39) in uw browser met download in hoge resolutie."
+      "seoDesc": "Genereer gratis lineaire barcodes, waaronder EAN-13, UPC-A, Code 128 en Code 39. Directe SVG- en PNG-downloads met hoge resolutie rechtstreeks in uw browser.",
+      "desc": "Genereer gratis lineaire barcodes, waaronder EAN-13, UPC-A, Code 128 en Code 39. Directe SVG- en PNG-downloads met hoge resolutie rechtstreeks in uw browser."
     },
     "scanqr": {
       "seoTitle": "QR-code online scannen",
-      "seoDesc": "Scan en decodeer QR-codes van webcam- of afbeeldingsbestanden veilig in uw browser met onmiddellijke decodering aan de clientzijde.",
-      "desc": "Scan en decodeer QR-codes van webcam- of afbeeldingsbestanden veilig in uw browser met onmiddellijke decodering aan de clientzijde."
+      "seoDesc": "Scan en decodeer QR-codes direct vanaf de webcam of upload afbeeldingsbestanden veilig in uw browser met 100% client-side privacy en geen servertransmissie.",
+      "desc": "Scan en decodeer QR-codes direct vanaf de webcam of upload afbeeldingsbestanden veilig in uw browser met 100% client-side privacy en geen servertransmissie."
     },
     "scanbarcode": {
       "seoTitle": "Scan streepjescode online",
-      "seoDesc": "Scan streepjescodes van camera's of geüploade afbeeldingsbestanden veilig in uw browser zonder serveruploads.",
-      "desc": "Scan streepjescodes van camera's of geüploade afbeeldingsbestanden veilig in uw browser zonder serveruploads."
+      "seoDesc": "Scan 1D- en 2D-barcodes rechtstreeks vanaf uw camera of lokale afbeeldingsbestanden veilig in uw browsergeheugen met snelle, particuliere decodering aan de clientzijde.",
+      "desc": "Scan 1D- en 2D-barcodes rechtstreeks vanaf uw camera of lokale afbeeldingsbestanden veilig in uw browsergeheugen met snelle, particuliere decodering aan de clientzijde."
     }
   },
   "rating": {

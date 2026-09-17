@@ -1305,8 +1305,8 @@
       "guaranteeDesc": "CreateMy-QR est conçu pour rester totalement gratuit. Notre mission est de démocratiser les services publics pour tous.",
       "join": "Rejoignez le mouvement",
       "joinDesc": "Découvrez la suite QR la plus rapide, la plus sûre et la plus avancée du Web.",
-      "seoDesc": "Démocratiser les documents et les outils QR avec une sécurité et une confidentialité 100 % côté client.",
-      "desc": "Démocratiser les documents et les outils QR avec une sécurité et une confidentialité 100 % côté client."
+      "seoDesc": "Découvrez la mission de CreateMy-QR visant à démocratiser les outils de codes-barres et de codes QR dans le monde entier avec une confidentialité 100 % côté client, aucune journalisation des données et une sécurité hors ligne.",
+      "desc": "Découvrez la mission de CreateMy-QR visant à démocratiser les outils de codes-barres et de codes QR dans le monde entier avec une confidentialité 100 % côté client, aucune journalisation des données et une sécurité hors ligne."
     },
     "compare": {
       "seoTitle": "Comparer les outils",
@@ -1357,8 +1357,8 @@
       "tr7val1": "Dépend du réseau",
       "tr7val2": "Instantané (CPU local)",
       "expertAuthor": "Audit de sécurité indépendant",
-      "seoDesc": "Découvrez pourquoi les professionnels choisissent CreateMy-QR pour une génération privée côté client sans limites d'API.",
-      "desc": "Découvrez pourquoi les professionnels choisissent CreateMy-QR pour une génération privée côté client sans limites d'API."
+      "seoDesc": "Comparez CreateMy-QR avec les générateurs QR traditionnels. Découvrez pourquoi les professionnels choisissent nos outils privés côté client, sans paywall ni limite d'analyse.",
+      "desc": "Comparez CreateMy-QR avec les générateurs QR traditionnels. Découvrez pourquoi les professionnels choisissent nos outils privés côté client, sans paywall ni limite d'analyse."
     },
     "languages": {
       "seoTitle": "Langues prises en charge",
@@ -1379,8 +1379,8 @@
       "communityDesc": "Vous remarquez une traduction qui semble légèrement erronée ? Nous comptons sur notre base d’utilisateurs mondiale pour nous aider à affiner et perfectionner nos localisations. Contactez-nous pour suggérer des améliorations pour votre langue maternelle.",
       "ctaTitle": "Prêt à traiter ?",
       "ctaDesc": "Choisissez un outil ci-dessous pour démarrer en toute sécurité et gratuitement.",
-      "seoDesc": "Créez et numérisez des codes QR et des codes-barres dans 30 langues dans le monde entier avec une génération instantanée côté client.",
-      "desc": "Créez et numérisez des codes QR et des codes-barres dans 30 langues dans le monde entier avec une génération instantanée côté client."
+      "seoDesc": "Générez et numérisez des codes QR et des codes-barres personnalisés dans 30 langues dans le monde entier. Génération instantanée côté client avec localisation complète et prise en charge UTF-8.",
+      "desc": "Générez et numérisez des codes QR et des codes-barres personnalisés dans 30 langues dans le monde entier. Génération instantanée côté client avec localisation complète et prise en charge UTF-8."
     },
     "pricing": {
       "seoTitle": "Tarif 100% gratuit",
@@ -1411,8 +1411,8 @@
       "bizDesc": "Oui, vous pouvez utiliser CreateMy-QR pour votre entreprise. En fait, notre architecture de traitement locale fait de nous la seule plateforme suffisamment sûre pour les environnements d'entreprise stricts, les équipes juridiques et les professionnels de la santé.",
       "supportTitle": "Soutenez le projet",
       "supportDesc": "Nous ne facturons pas d'abonnement, mais maintenir le domaine et le développement en vie prend du temps. Si CreateMy-QR vous a sauvé la journée, pensez à le partager avec votre équipe. Le bouche à oreille est notre seule stratégie marketing.",
-      "seoDesc": "CreateMy-QR est 100 % gratuit avec des analyses illimitées, des téléchargements vectoriels haute résolution et des limites nulles.",
-      "desc": "CreateMy-QR est 100 % gratuit avec des analyses illimitées, des téléchargements vectoriels haute résolution et des limites nulles."
+      "seoDesc": "CreateMy-QR est 100 % gratuit pour toujours avec une génération illimitée de codes QR, des exportations SVG/PNG vectorielles haute résolution, aucun filigrane et aucune inscription requise.",
+      "desc": "CreateMy-QR est 100 % gratuit pour toujours avec une génération illimitée de codes QR, des exportations SVG/PNG vectorielles haute résolution, aucun filigrane et aucune inscription requise."
     },
     "privacy": {
       "seoTitle": "politique de confidentialité",
@@ -1426,8 +1426,8 @@
       "sslDesc": "Même si rien n'est téléchargé, notre site est servi via HTTPS strict.",
       "policyTitle": "L'engagement zéro téléchargement",
       "policyDesc": "Contrairement à d'autres plateformes, CreateMy-QR fonctionne entièrement côté client. Lorsque vous générez un code QR, le processus se déroule localement sur votre machine.",
-      "seoDesc": "Politique de confidentialité sans suivi. Tout le traitement des données a lieu localement dans la mémoire de votre navigateur.",
-      "desc": "Politique de confidentialité sans suivi. Tout le traitement des données a lieu localement dans la mémoire de votre navigateur."
+      "seoDesc": "Lisez notre politique de confidentialité stricte sans suivi zéro. Tous les traitements de données de codes QR et de codes-barres s'effectuent localement dans la mémoire de votre navigateur, sans aucun téléchargement sur le serveur.",
+      "desc": "Lisez notre politique de confidentialité stricte sans suivi zéro. Tous les traitements de données de codes QR et de codes-barres s'effectuent localement dans la mémoire de votre navigateur, sans aucun téléchargement sur le serveur."
     },
     "security": {
       "seoTitle": "Architecture de sécurité",
@@ -1465,8 +1465,8 @@
       "verify3": "Générez n'importe quel QR. Cela fonctionne parfaitement, prouvant qu'aucun serveur n'est requis.",
       "missionTitle": "L'avenir est local",
       "missionDesc": "Nous envisageons un Web où les applications utilitaires respectent votre matériel et votre vie privée. Bienvenue dans la nouvelle ère de l'informatique côté client.",
-      "seoDesc": "Découvrez notre modèle de sécurité Zero Trust : cryptographie 100 % côté client, zéro transmission dans le cloud, zéro stockage de données.",
-      "desc": "Découvrez notre modèle de sécurité Zero Trust : cryptographie 100 % côté client, zéro transmission dans le cloud, zéro stockage de données."
+      "seoDesc": "Découvrez notre architecture de sécurité Zero Trust : cryptographie WebAssembly 100 % côté client, transmission de données sans serveur cloud et conformité à la norme ISO.",
+      "desc": "Découvrez notre architecture de sécurité Zero Trust : cryptographie WebAssembly 100 % côté client, transmission de données sans serveur cloud et conformité à la norme ISO."
     },
     "terms": {
       "seoTitle": "Conditions d'utilisation",
@@ -1488,8 +1488,8 @@
       "sec4Title": "Propriété intellectuelle",
       "sec4Desc": "Vous conservez la propriété à 100 % et tous les droits de propriété intellectuelle sur les documents que vous traitez à l'aide de CreateMy-QR. Nous ne revendiquons aucun droit, licence ou propriété sur votre contenu.",
       "sec5Title": "Avis de non-responsabilité et responsabilité",
-      "seoDesc": "Conditions générales d'utilisation des outils de génération et de numérisation en ligne gratuits CreateMy-QR.",
-      "desc": "Conditions générales d'utilisation des outils de génération et de numérisation en ligne gratuits CreateMy-QR."
+      "seoDesc": "Consultez nos conditions d’utilisation transparentes pour CreateMy-QR. Gratuit pour un usage personnel et commercial, sans frais de licence et 100 % de sécurité des données côté client.",
+      "desc": "Consultez nos conditions d’utilisation transparentes pour CreateMy-QR. Gratuit pour un usage personnel et commercial, sans frais de licence et 100 % de sécurité des données côté client."
     },
     "usecases": {
       "seoTitle": "Cas d'utilisation de l'industrie",
@@ -1516,23 +1516,23 @@
       "toolReview": "QR de révision Google",
       "ctaTitle": "Trouvez votre propre cas d'utilisation",
       "ctaDesc": "Quel que soit votre secteur d'activité, CreateMy-QR est le moyen le plus sûr et le plus rapide de générer des codes. Essayez notre suite complète de plus de 20 outils dès aujourd'hui.",
-      "seoDesc": "Explorez des cas d'utilisation réels des codes QR pour les restaurants, les commerces de détail, les événements, les paiements et les opérations d'entreprise.",
-      "desc": "Explorez des cas d'utilisation réels des codes QR pour les restaurants, les commerces de détail, les événements, les paiements et les opérations d'entreprise."
+      "seoDesc": "Explorez des applications de codes QR réelles dans les domaines de la vente au détail, des restaurants, des événements, des paiements et de la logistique avec une génération instantanée côté client et sans limite.",
+      "desc": "Explorez des applications de codes QR réelles dans les domaines de la vente au détail, des restaurants, des événements, des paiements et de la logistique avec une génération instantanée côté client et sans limite."
     },
     "barcode": {
       "seoTitle": "Générateur de codes-barres gratuit",
-      "seoDesc": "Générez instantanément des codes-barres linéaires (EAN, UPC, Code 128, Code 39) dans votre navigateur avec téléchargement haute résolution.",
-      "desc": "Générez instantanément des codes-barres linéaires (EAN, UPC, Code 128, Code 39) dans votre navigateur avec téléchargement haute résolution."
+      "seoDesc": "Générez gratuitement des codes à barres linéaires, notamment EAN-13, UPC-A, Code 128 et Code 39. Téléchargements instantanés SVG et PNG haute résolution directement dans votre navigateur.",
+      "desc": "Générez gratuitement des codes à barres linéaires, notamment EAN-13, UPC-A, Code 128 et Code 39. Téléchargements instantanés SVG et PNG haute résolution directement dans votre navigateur."
     },
     "scanqr": {
       "seoTitle": "Scanner le code QR en ligne",
-      "seoDesc": "Scannez et décodez les codes QR de la webcam ou des fichiers image en toute sécurité dans votre navigateur avec un décodage instantané côté client.",
-      "desc": "Scannez et décodez les codes QR de la webcam ou des fichiers image en toute sécurité dans votre navigateur avec un décodage instantané côté client."
+      "seoDesc": "Scannez et décodez instantanément les codes QR à partir d'une webcam ou de fichiers image téléchargés en toute sécurité dans votre navigateur avec une confidentialité 100 % côté client et aucune transmission vers le serveur.",
+      "desc": "Scannez et décodez instantanément les codes QR à partir d'une webcam ou de fichiers image téléchargés en toute sécurité dans votre navigateur avec une confidentialité 100 % côté client et aucune transmission vers le serveur."
     },
     "scanbarcode": {
       "seoTitle": "Scanner le code-barres en ligne",
-      "seoDesc": "Scannez les codes-barres de l'appareil photo ou les fichiers image téléchargés en toute sécurité dans votre navigateur sans aucun téléchargement sur le serveur.",
-      "desc": "Scannez les codes-barres de l'appareil photo ou les fichiers image téléchargés en toute sécurité dans votre navigateur sans aucun téléchargement sur le serveur."
+      "seoDesc": "Scannez les codes-barres 1D et 2D directement à partir de votre appareil photo ou de fichiers d'images locaux en toute sécurité dans la mémoire de votre navigateur avec un décodage rapide et privé côté client.",
+      "desc": "Scannez les codes-barres 1D et 2D directement à partir de votre appareil photo ou de fichiers d'images locaux en toute sécurité dans la mémoire de votre navigateur avec un décodage rapide et privé côté client."
     }
   },
   "rating": {

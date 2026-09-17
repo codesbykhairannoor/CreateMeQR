@@ -1244,8 +1244,8 @@
       "guaranteeDesc": "A CreateMy-QR teljesen ingyenes marad. Küldetésünk, hogy mindenki számára demokratizáljuk a közműveket.",
       "join": "Csatlakozz a mozgalomhoz",
       "joinDesc": "Tapasztalja meg az internet leggyorsabb, legbiztonságosabb és legfejlettebb QR-csomagját.",
-      "seoDesc": "Demokratikusabb dokumentum- és QR-eszközök 100%-os ügyféloldali biztonsággal és adatvédelemmel.",
-      "desc": "Demokratikusabb dokumentum- és QR-eszközök 100%-os ügyféloldali biztonsággal és adatvédelemmel."
+      "seoDesc": "Fedezze fel a CreateMy-QR küldetését a vonalkód és QR-kód eszközök demokratizálására világszerte, 100%-os ügyféloldali adatvédelemmel, nulla adatnaplózással és offline biztonsággal.",
+      "desc": "Fedezze fel a CreateMy-QR küldetését a vonalkód és QR-kód eszközök demokratizálására világszerte, 100%-os ügyféloldali adatvédelemmel, nulla adatnaplózással és offline biztonsággal."
     },
     "compare": {
       "seoTitle": "Eszközök összehasonlítása",
@@ -1296,8 +1296,8 @@
       "tr7val1": "Hálózatfüggő",
       "tr7val2": "Azonnali (helyi CPU)",
       "expertAuthor": "Független biztonsági audit",
-      "seoDesc": "Fedezze fel, miért választják a szakemberek a CreateMy-QR-t privát, ügyféloldali generáláshoz API-korlátozások nélkül.",
-      "desc": "Fedezze fel, miért választják a szakemberek a CreateMy-QR-t privát, ügyféloldali generáláshoz API-korlátozások nélkül."
+      "seoDesc": "Hasonlítsa össze a CreateMy-QR-t a hagyományos QR-generátorokkal. Fedezze fel, miért választják a szakemberek privát, ügyféloldali eszközeinket fizetési falak vagy szkennelési korlátok nélkül.",
+      "desc": "Hasonlítsa össze a CreateMy-QR-t a hagyományos QR-generátorokkal. Fedezze fel, miért választják a szakemberek privát, ügyféloldali eszközeinket fizetési falak vagy szkennelési korlátok nélkül."
     },
     "languages": {
       "seoTitle": "Támogatott nyelvek",
@@ -1318,8 +1318,8 @@
       "communityDesc": "Észrevesz egy olyan fordítást, amely kissé rossznak tűnik? Globális felhasználói bázisunkra támaszkodunk lokalizációink finomításában és tökéletesítésében. Forduljon hozzánk, és javasoljon fejlesztéseket az anyanyelvéhez.",
       "ctaTitle": "Feldolgozásra kész?",
       "ctaDesc": "Válassza ki az alábbi eszközt a biztonságos és ingyenes kezdéshez.",
-      "seoDesc": "Készítsen és szkenneljen QR-kódokat és vonalkódokat világszerte 30 nyelven az azonnali ügyféloldali generálással.",
-      "desc": "Készítsen és szkenneljen QR-kódokat és vonalkódokat világszerte 30 nyelven az azonnali ügyféloldali generálással."
+      "seoDesc": "Generáljon és olvasson be egyedi QR-kódokat és vonalkódokat világszerte 30 nyelven. Azonnali kliensoldali generálás teljes lokalizációval és UTF-8 támogatással.",
+      "desc": "Generáljon és olvasson be egyedi QR-kódokat és vonalkódokat világszerte 30 nyelven. Azonnali kliensoldali generálás teljes lokalizációval és UTF-8 támogatással."
     },
     "pricing": {
       "seoTitle": "100% ingyenes ár",
@@ -1350,8 +1350,8 @@
       "bizDesc": "Igen, használhatja a CreateMy-QR-t cége számára. Valójában a helyi feldolgozási architektúra révén mi vagyunk az egyetlen elég biztonságos platform a szigorú vállalati környezetek, a jogi csapatok és az egészségügyi szakemberek számára.",
       "supportTitle": "A projekt támogatása",
       "supportDesc": "Nem számítunk fel előfizetést, de a domain és a fejlesztés életben tartása időbe telik. Ha a CreateMy-QR megmentette a napod, fontold meg, hogy megosztod a csapatoddal. A szóbeszéd az egyetlen marketingstratégiánk.",
-      "seoDesc": "A CreateMy-QR 100%-ban ingyenes, korlátlan szkenneléssel, nagy felbontású vektorletöltéssel és nulla korláttal.",
-      "desc": "A CreateMy-QR 100%-ban ingyenes, korlátlan szkenneléssel, nagy felbontású vektorletöltéssel és nulla korláttal."
+      "seoDesc": "A CreateMy-QR örökké 100%-ban ingyenes, korlátlan QR-kód generálással, nagy felbontású vektoros SVG/PNG exporttal, nulla vízjellel és regisztráció nélkül.",
+      "desc": "A CreateMy-QR örökké 100%-ban ingyenes, korlátlan QR-kód generálással, nagy felbontású vektoros SVG/PNG exporttal, nulla vízjellel és regisztráció nélkül."
     },
     "privacy": {
       "seoTitle": "Adatvédelmi szabályzat",
@@ -1365,8 +1365,8 @@
       "sslDesc": "Annak ellenére, hogy semmi nincs feltöltve, oldalunk szigorú HTTPS-en keresztül működik.",
       "policyTitle": "A nulla feltöltés kötelezettségvállalása",
       "policyDesc": "Más platformoktól eltérően a CreateMy-QR teljes mértékben a kliens oldalon működik. Amikor létrehoz egy QR-kódot, a folyamat helyileg megy végbe a gépén.",
-      "seoDesc": "Zero-tracking adatvédelmi szabályzat. Minden adatfeldolgozás helyileg, a böngésző memóriájában történik.",
-      "desc": "Zero-tracking adatvédelmi szabályzat. Minden adatfeldolgozás helyileg, a böngésző memóriájában történik."
+      "seoDesc": "Olvassa el szigorú, nulla nyomon követési adatvédelmi szabályzatunkat. Az összes QR-kód és vonalkód adatfeldolgozás helyben, a böngésző memóriájában történik, szerverfeltöltés nélkül.",
+      "desc": "Olvassa el szigorú, nulla nyomon követési adatvédelmi szabályzatunkat. Az összes QR-kód és vonalkód adatfeldolgozás helyben, a böngésző memóriájában történik, szerverfeltöltés nélkül."
     },
     "security": {
       "seoTitle": "Biztonsági architektúra",
@@ -1404,8 +1404,8 @@
       "verify3": "Generáljon bármilyen QR-kódot. Tökéletesen működik, bizonyítva, hogy nincs szükség szerverre.",
       "missionTitle": "A jövő helyi",
       "missionDesc": "Olyan webet képzelünk el, ahol a segédalkalmazások tiszteletben tartják az Ön hardverét és adatait. Üdvözöljük az ügyféloldali számítástechnika új korszakában.",
-      "seoDesc": "Fedezze fel a zéró bizalmi biztonsági modellünket: 100%-ban kliensoldali kriptográfia, zéró felhőátvitel, nulla adattárolás.",
-      "desc": "Fedezze fel a zéró bizalmi biztonsági modellünket: 100%-ban kliensoldali kriptográfia, zéró felhőátvitel, nulla adattárolás."
+      "seoDesc": "Fedezze fel zéró-bizalom-biztonsági architektúránkat: 100%-ban kliensoldali WebAssembly kriptográfia, nulla felhőalapú szerver adatátvitel és ISO szabványnak való megfelelés.",
+      "desc": "Fedezze fel zéró-bizalom-biztonsági architektúránkat: 100%-ban kliensoldali WebAssembly kriptográfia, nulla felhőalapú szerver adatátvitel és ISO szabványnak való megfelelés."
     },
     "terms": {
       "seoTitle": "Szolgáltatási feltételek",
@@ -1427,8 +1427,8 @@
       "sec4Title": "Szellemi tulajdon",
       "sec4Desc": "A CreateMy-QR segítségével feldolgozott dokumentumok 100%-os tulajdonjoga és minden szellemi tulajdonjog Ön marad. Semmilyen jogot, licencet vagy tulajdonjogot követelünk a tartalmaddal kapcsolatban.",
       "sec5Title": "Jogi nyilatkozatok és felelősség",
-      "seoDesc": "A CreateMy-QR ingyenes online generátor és szkenner eszközök használatának feltételei.",
-      "desc": "A CreateMy-QR ingyenes online generátor és szkenner eszközök használatának feltételei."
+      "seoDesc": "Tekintse át a CreateMy-QR átlátható szolgáltatási feltételeinket. Ingyenes személyes és kereskedelmi használatra, nulla licencdíjjal és 100%-os ügyféloldali adatbiztonsággal.",
+      "desc": "Tekintse át a CreateMy-QR átlátható szolgáltatási feltételeinket. Ingyenes személyes és kereskedelmi használatra, nulla licencdíjjal és 100%-os ügyféloldali adatbiztonsággal."
     },
     "usecases": {
       "seoTitle": "Ipari felhasználási esetek",
@@ -1455,23 +1455,23 @@
       "toolReview": "Google Review QR",
       "ctaTitle": "Találja meg saját használati esetét",
       "ctaDesc": "Iparágától függetlenül a CreateMy-QR a legbiztonságosabb és leggyorsabb módja a kódok generálásának. Próbálja ki 20+ eszközkészletünket még ma.",
-      "seoDesc": "Fedezze fel a valós QR-kód használati eseteit éttermek, kiskereskedelem, rendezvények, fizetések és vállalati műveletek számára.",
-      "desc": "Fedezze fel a valós QR-kód használati eseteit éttermek, kiskereskedelem, rendezvények, fizetések és vállalati műveletek számára."
+      "seoDesc": "Fedezze fel a valós QR-kód alkalmazásokat kiskereskedelemben, éttermekben, eseményeken, fizetéseken és logisztikán az azonnali ügyféloldali generálással és nulla korlátokkal.",
+      "desc": "Fedezze fel a valós QR-kód alkalmazásokat kiskereskedelemben, éttermekben, eseményeken, fizetéseken és logisztikán az azonnali ügyféloldali generálással és nulla korlátokkal."
     },
     "barcode": {
       "seoTitle": "Ingyenes vonalkód generátor",
-      "seoDesc": "Létrehozzon lineáris vonalkódokat (EAN, UPC, Code 128, Code 39) azonnal a böngészőjében nagy felbontású letöltéssel.",
-      "desc": "Létrehozzon lineáris vonalkódokat (EAN, UPC, Code 128, Code 39) azonnal a böngészőjében nagy felbontású letöltéssel."
+      "seoDesc": "Ingyenes lineáris vonalkódok létrehozása, beleértve az EAN-13, UPC-A, 128-as és 39-es kódot. Azonnali nagy felbontású SVG és PNG letöltések közvetlenül a böngészőben.",
+      "desc": "Ingyenes lineáris vonalkódok létrehozása, beleértve az EAN-13, UPC-A, 128-as és 39-es kódot. Azonnali nagy felbontású SVG és PNG letöltések közvetlenül a böngészőben."
     },
     "scanqr": {
       "seoTitle": "QR-kód beolvasása online",
-      "seoDesc": "Az azonnali kliensoldali dekódolással biztonságosan szkennelje be és dekódolja a webkamerából vagy képfájlokból származó QR-kódokat a böngészőjében.",
-      "desc": "Az azonnali kliensoldali dekódolással biztonságosan szkennelje be és dekódolja a webkamerából vagy képfájlokból származó QR-kódokat a böngészőjében."
+      "seoDesc": "Olvassa be és dekódolja azonnal a QR-kódokat webkameráról vagy feltöltött képfájlokról biztonságosan a böngészőjében, 100%-os kliensoldali adatvédelemmel és nulla szerverátvitellel.",
+      "desc": "Olvassa be és dekódolja azonnal a QR-kódokat webkameráról vagy feltöltött képfájlokról biztonságosan a böngészőjében, 100%-os kliensoldali adatvédelemmel és nulla szerverátvitellel."
     },
     "scanbarcode": {
       "seoTitle": "Vonalkód beolvasása online",
-      "seoDesc": "Olvassa be biztonságosan a kamera vonalkódjait vagy a feltöltött képfájlokat a böngészőjében, és nincs szerverfeltöltés.",
-      "desc": "Olvassa be biztonságosan a kamera vonalkódjait vagy a feltöltött képfájlokat a böngészőjében, és nincs szerverfeltöltés."
+      "seoDesc": "Szkennelje be az 1D és 2D vonalkódokat közvetlenül a fényképezőgépéről vagy a helyi képfájlokat biztonságosan a böngésző memóriájában a gyors, privát kliensoldali dekódolással.",
+      "desc": "Szkennelje be az 1D és 2D vonalkódokat közvetlenül a fényképezőgépéről vagy a helyi képfájlokat biztonságosan a böngésző memóriájában a gyors, privát kliensoldali dekódolással."
     }
   },
   "rating": {
