@@ -1,23 +1,27 @@
 const fs = require('fs');
+const path = require('path');
 const https = require('https');
 
 async function submitToIndexNow() {
-  console.log('Reading sitemap...');
-  const sitemapXml = fs.readFileSync('public/sitemap.xml', 'utf8');
+  console.log('Reading all language sitemaps...');
+  const publicDir = 'public';
+  const sitemapFiles = fs.readdirSync(publicDir).filter(f => f.startsWith('sitemap-') && f.endsWith('.xml'));
   
-  // Extract all <loc> tags using regex
-  const locRegex = /<loc>(.*?)<\/loc>/g;
-  let match;
   const urls = new Set();
-  
-  while ((match = locRegex.exec(sitemapXml)) !== null) {
-    if (match[1]) {
-      urls.add(match[1].trim());
+  const locRegex = /<loc>(.*?)<\/loc>/g;
+
+  for (const file of sitemapFiles) {
+    const content = fs.readFileSync(path.join(publicDir, file), 'utf8');
+    let match;
+    while ((match = locRegex.exec(content)) !== null) {
+      if (match[1] && !match[1].endsWith('.xml')) {
+        urls.add(match[1].trim());
+      }
     }
   }
 
   const urlList = Array.from(urls);
-  console.log(`Found ${urlList.length} unique URLs to submit.`);
+  console.log(`Found ${urlList.length} unique URLs across ${sitemapFiles.length} language sitemaps.`);
   
   if (urlList.length === 0) {
     console.error('No URLs found to submit.');

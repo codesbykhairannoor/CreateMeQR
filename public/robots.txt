@@ -43,4 +43,37 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
+# Sitemaps & Feeds for Instant Crawling
+Sitemap: https://createmy-qr.com/sitemap_index.xml
 Sitemap: https://createmy-qr.com/sitemap.xml
+Sitemap: https://createmy-qr.com/feed.xml
+Sitemap: https://createmy-qr.com/sitemap-en.xml
+Sitemap: https://createmy-qr.com/sitemap-id.xml
+Sitemap: https://createmy-qr.com/sitemap-es.xml
+Sitemap: https://createmy-qr.com/sitemap-fr.xml
+Sitemap: https://createmy-qr.com/sitemap-de.xml
+Sitemap: https://createmy-qr.com/sitemap-pt.xml
+Sitemap: https://createmy-qr.com/sitemap-zh.xml
+Sitemap: https://createmy-qr.com/sitemap-ja.xml
+Sitemap: https://createmy-qr.com/sitemap-hi.xml
+Sitemap: https://createmy-qr.com/sitemap-ko.xml
+Sitemap: https://createmy-qr.com/sitemap-ar.xml
+Sitemap: https://createmy-qr.com/sitemap-ru.xml
+Sitemap: https://createmy-qr.com/sitemap-it.xml
+Sitemap: https://createmy-qr.com/sitemap-tr.xml
+Sitemap: https://createmy-qr.com/sitemap-nl.xml
+Sitemap: https://createmy-qr.com/sitemap-pl.xml
+Sitemap: https://createmy-qr.com/sitemap-sv.xml
+Sitemap: https://createmy-qr.com/sitemap-vi.xml
+Sitemap: https://createmy-qr.com/sitemap-th.xml
+Sitemap: https://createmy-qr.com/sitemap-el.xml
+Sitemap: https://createmy-qr.com/sitemap-cs.xml
+Sitemap: https://createmy-qr.com/sitemap-da.xml
+Sitemap: https://createmy-qr.com/sitemap-fi.xml
+Sitemap: https://createmy-qr.com/sitemap-no.xml
+Sitemap: https://createmy-qr.com/sitemap-hu.xml
+Sitemap: https://createmy-qr.com/sitemap-ro.xml
+Sitemap: https://createmy-qr.com/sitemap-uk.xml
+Sitemap: https://createmy-qr.com/sitemap-ms.xml
+Sitemap: https://createmy-qr.com/sitemap-tl.xml
+Sitemap: https://createmy-qr.com/sitemap-bn.xml
