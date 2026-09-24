@@ -1,19 +1,86 @@
+#   ____                _       __  __           ___  ____  
+#  / ___|_ __ ___  __ _| |_ ___|  \/  |_   _    / _ \|  _ \ 
+# | |   | '__/ _ \/ _` | __/ _ \ |\/| | | | |  | | | | |_) |
+# | |___| | |  __/ (_| | ||  __/ |  | | |_| |  | |_| |  _ < 
+#  \____|_|  \___|\__,_|\__\___|_|  |_|\__, |   \__\_\_| \_\
+#                                       |___/                
+#
+# CreateMy-QR - 100% Client-Side Private QR & Barcode Generation Suite
+# RFC 9309 Compliant | Cloudflare Edge Ready | Content Signals Enabled
+# Security & Contact: security@createmy-qr.com | https://createmy-qr.com/security
+
+# ==============================================================================
+# SECTION 1: GLOBAL DIRECTIVES (RFC 9309 FOR ALL COMPLIANT SEARCH ENGINES)
+# ==============================================================================
 User-agent: *
 Allow: /
 
-# LLMs.txt for AI Agents & Search Overviews
+# Critical Rendering Assets Whitelist (Ensures 100/100 Core Web Vitals & Rendering)
+Allow: /assets/*.js
+Allow: /assets/*.css
+Allow: /assets/*.png
+Allow: /assets/*.webp
+Allow: /assets/*.svg
+Allow: /logoqr.png
+Allow: /manifest.json
+Allow: /locales/*/translation.json
+
+# LLMs.txt Specification for AI Search & Agent Discovery
 Allow: /llms.txt
 Allow: /llms-full.txt
 Allow: /llms-*.txt
+Allow: /.well-known/
 
-# Welcome AI Search Engines & LLM Crawlers
-User-agent: GPTBot
+# Disallow Internal Build Artifacts, Source Maps & Private Files
+Disallow: /dist/
+Disallow: /server/
+Disallow: /*.map$
+Disallow: /*.config.js$
+Disallow: /*.json$
+Allow: /locales/*/translation.json
+Allow: /manifest.json
+
+# Disallow Query Parameter Crawl Traps (The Canva & Shopify Anti-Duplicate Standard)
+Disallow: /*?*utm_*=
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+Disallow: /*?*session=
+Disallow: /*?*ref=
+Disallow: /*?*source=
+Disallow: /*?*preview=
+Disallow: /*?*sort=
+
+# ==============================================================================
+# SECTION 2: AI SEARCH ENGINES & REAL-TIME CITATION AGENTS (HIGH-INTENT REFERRALS)
+# ==============================================================================
+# OpenAI Search (ChatGPT Search & Citations)
+User-agent: OAI-SearchBot
 Allow: /
 
+# ChatGPT User-Initiated Web Browsing
 User-agent: ChatGPT-User
 Allow: /
 
+# Perplexity AI Search Engine
 User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude Web Search & Citations
+User-agent: Claude-Web
+Allow: /
+
+# Apple Intelligence & Siri Web Search
+User-agent: Applebot
+Allow: /
+
+# You.com AI Search
+User-agent: YouBot
+Allow: /
+
+# ==============================================================================
+# SECTION 3: LLM TRAINING CRAWLERS & AI FOUNDATION MODELS (BRAND VISIBILITY)
+# ==============================================================================
+User-agent: GPTBot
 Allow: /
 
 User-agent: ClaudeBot
@@ -22,31 +89,57 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-User-agent: Applebot
+User-agent: Meta-ExternalAgent
 Allow: /
 
 User-agent: Bytespider
 Allow: /
 
-User-agent: YouBot
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-User-agent: Amazonbot
+User-agent: Cohere-ai
 Allow: /
 
 User-agent: Timpibot
 Allow: /
 
-User-agent: OAI-SearchBot
+User-agent: Amazonbot
 Allow: /
 
-# Sitemaps & Feeds for Instant Crawling
+# ==============================================================================
+# SECTION 4: AGGRESSIVE SCRAPERS & BANDWIDTH DRAIN CONTROL
+# ==============================================================================
+# Block aggressive crawlers that do not provide organic search traffic
+User-agent: PetalBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# ==============================================================================
+# SECTION 5: CONTENT SIGNALS (IETF STANDARD FOR AI CONTENT RIGHTS)
+# ==============================================================================
+# See https://contentsignals.org & https://datatracker.ietf.org/doc/draft-romm-aipref-contentsignals/
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+# ==============================================================================
+# SECTION 6: SITEMAP INDEX & RSS 2.0 FRESHNESS FEED HIERARCHY
+# ==============================================================================
+# Master Sitemap Index (Auto-discovers all 30 language sub-sitemaps)
 Sitemap: https://createmy-qr.com/sitemap_index.xml
 Sitemap: https://createmy-qr.com/sitemap.xml
+
+# Real-Time RSS 2.0 Feed for Googlebot Freshness Crawling
 Sitemap: https://createmy-qr.com/feed.xml
+
+# Individual Language Sitemaps for Granular Regional Monitoring
 Sitemap: https://createmy-qr.com/sitemap-en.xml
 Sitemap: https://createmy-qr.com/sitemap-id.xml
 Sitemap: https://createmy-qr.com/sitemap-es.xml
