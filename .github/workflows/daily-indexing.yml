@@ -1,0 +1,32 @@
+name: Daily Search Engine & Google Indexing Automation
+
+on:
+  schedule:
+    # Runs daily at 02:00 UTC (09:00 AM WIB)
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions UI
+
+jobs:
+  index-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci || npm install
+
+      - name: Ping IndexNow (Bing, Yandex, Seznam, Naver)
+        run: npm run indexnow
+
+      - name: Submit Daily Batch to Google Indexing API
+        if: env.GCP_SA_KEY != ''
+        env:
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+        run: npm run index:google -- --limit=200

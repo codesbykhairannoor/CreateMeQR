@@ -8,12 +8,14 @@
     "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist/server && node generate-ssg.cjs && node generate-sitemap.cjs && node generate-feed.cjs && node fast-super-test.cjs",
     "test:seo": "node fast-super-test.cjs && node audit-30-csvs.cjs",
     "indexnow": "node submit-indexnow.cjs",
+    "index:google": "node scripts/submit-google-indexing.cjs",
     "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.1",
     "glob": "^13.0.6",
+    "google-auth-library": "^10.9.1",
     "google-translate-api-x": "^10.7.2",
     "html5-qrcode": "^2.3.8",
     "i18next": "^26.3.2",

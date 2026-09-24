@@ -31,4 +31,5 @@ createmyqr-*.json
 *.pem
 *.key
 google-key.json
+google-indexing-state.json
 
