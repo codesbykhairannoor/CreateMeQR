@@ -24,3 +24,11 @@ test-gemini.js
 *.njsproj
 *.sln
 *.sw?
+
+# Google Cloud Service Account Keys & Secrets
+createmyqr-*.json
+*service-account*.json
+*.pem
+*.key
+google-key.json
+
