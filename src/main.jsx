@@ -26,4 +26,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </HelmetProvider>
   </StrictMode>,
 )
-setTimeout(() => document.body.classList.add('ready'), 50); 
