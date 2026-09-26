@@ -99,10 +99,6 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUs
       {/* Generator Application Workspace */}
       <section className="max-w-7xl mx-auto px-6 mb-32 lg:mb-48">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-[#f8fafc] dark:bg-[#040a18] border border-blue-100 dark:border-[#102040] rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
-          <div className="sr-only" aria-hidden="true">
-            <h2>{t('seoCore.h2')}</h2>
-            <p>{t('seoCore.body')}</p>
-          </div>
           <div className="lg:col-span-7 lg:col-start-1 flex flex-col animate-fade-in-right">
             <div className="flex space-x-2 bg-blue-100/50 dark:bg-[#081226]/80 p-1.5 rounded-2xl mb-8 border border-blue-100/50 dark:border-[#102040]/50">
               <button onClick={() => setActiveTab('data')} className={`flex-1 py-3 px-4 rounded-xl text-sm font-bold transition-all ${activeTab === 'data' ? 'bg-gradient-to-br from-slate-900 to-blue-700 dark:from-[#020617] dark:to-blue-600 text-white shadow-md border-transparent' : 'text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white'}`}>
