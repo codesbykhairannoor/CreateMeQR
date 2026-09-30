@@ -25,11 +25,11 @@ test-gemini.js
 *.sln
 *.sw?
 
-# Google Cloud Service Account Keys & Secrets
+# Google Cloud Service Account Keys & Secrets (STRICTLY PRIVATE)
 createmyqr-*.json
 *service-account*.json
 *.pem
 *.key
 google-key.json
-google-indexing-state.json
+
 
