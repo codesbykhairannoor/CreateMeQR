@@ -1,186 +1,543 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/webp" href="/logoqr.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#09090b" />
-    <meta name="author" content="CreateMy-QR Technologies" />
-    <meta name="publisher" content="CreateMy-QR Technologies" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    
-    <!-- Security Headers (Zero Trust Baseline) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:;" />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
-
-    <!-- Anti-FOUC (Flash of Unstyled Content) Script & Styles -->
-    <style>
-      :root { color-scheme: light dark; }
-      body { background-color: #ffffff; margin: 0; }
-      @media (prefers-color-scheme: dark) { body { background-color: #0f172a; } }
-      .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
-    </style>
-    
-    <!-- Google tag (gtag.js) -->
-    <script>
-      // Load Google Analytics after 3.5s to ensure 100/100 Lighthouse Performance
-      setTimeout(() => {
-        const script = document.createElement('script');
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L66WVGXRQQ';
-        script.async = true;
-        document.head.appendChild(script);
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-L66WVGXRQQ');
-      }, 3500);
-    </script>
-
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="/manifest.json" />
-
-    <title>CreateMy-QR | All QR & Barcode Tools in One Place</title>
-    <meta name="title" content="Editable QR Code Generator | Custom QR Code With Logo Free" />
-    <meta name="description" content="Create custom QR codes with logo for free. Best editable QR code generator with no watermark for WiFi, vCard, Google Reviews and URL. Client-side privacy." />
-    
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://createmy-qr.com/" />
-    <meta property="og:title" content="CreateMy-QR | Free QR Code Generator Online With Logo" />
-    <meta property="og:description" content="Create a custom QR code with logo for free. Best editable QR code generator with no watermark for WiFi, vCard, Google Reviews, and URL." />
-    <meta property="og:image" content="https://createmy-qr.com/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="CreateMy-QR — Free QR Code Generator" />
-    <meta property="og:site_name" content="CreateMy-QR" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="article:published_time" content="2026-07-05T00:00:00Z" />
-    <meta property="article:modified_time" content="2026-08-11T00:00:00Z" />
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://createmy-qr.com/" />
-    <meta property="twitter:title" content="CreateMy-QR | Free QR Code Generator Online With Logo" />
-    <meta property="twitter:description" content="Create a custom QR code with logo for free. Best editable QR code generator with no watermark for WiFi, vCard, Google Reviews, and URL." />
-    <meta property="twitter:image" content="https://createmy-qr.com/og-image.png" />
-    
-    <!-- Canonical Tag (Dynamic hreflang is handled by React Helmet) -->
-    <link rel="canonical" href="https://createmy-qr.com/" />
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://createmy-qr.com/#organization",
-          "name": "CreateMy-QR Technologies",
-          "url": "https://createmy-qr.com/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://createmy-qr.com/logoqr.png",
-            "width": 512,
-            "height": 512
-          },
-          "sameAs": [
-            "https://github.com/codesbykhairannoor/CreateMeQR",
-            "https://twitter.com/createmyqr",
-            "https://www.linkedin.com/company/createmyqr",
-            "https://www.crunchbase.com/organization/createmyqr"
-          ],
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer support",
-            "email": "support@createmy-qr.com",
-            "availableLanguage": ["English", "Indonesian", "Spanish", "French", "German", "Chinese", "Japanese"]
-          },
-          "knowsAbout": ["QR Code Generation", "Client-Side Cryptography", "Vector Graphics", "Data Privacy", "URL Shortening & Encoding"]
-        },
-        {
-          "@type": ["WebApplication", "SoftwareApplication"],
-          "@id": "https://createmy-qr.com/#webapp",
-          "name": "CreateMy-QR - Editable QR Code Generator",
-          "url": "https://createmy-qr.com/",
-          "applicationCategory": "UtilitiesApplication",
-          "operatingSystem": "Web Browser, Any",
-          "author": { "@id": "https://createmy-qr.com/#organization" },
-          "publisher": { "@id": "https://createmy-qr.com/#organization" },
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
-          },
-          "description": "Free online custom QR code generator to create QR codes with logos, colors, and specific data formats.",
-          "featureList": [
-            "Dynamic URL QR Code Generation",
-            "High Resolution Vector SVG and EPS Export",
-            "Real-time Client Side Processing",
-            "No Expiry Date on QR Codes",
-            "Custom Logo Injection and Color Gradients"
-          ],
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "85400",
-            "bestRating": "5"
-          }
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://createmy-qr.com/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Is this editable QR code generator really free?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, our generator is 100% free with no watermarks and no sign-up required. You can download high-resolution SVG and PNG formats indefinitely."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can I add a logo to my QR code?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Absolutely. Our custom QR code with logo free tool allows you to upload any image, adjust its size, and seamlessly blend it into the center of the QR code."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Does the QR code expire?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. The static QR codes generated here never expire. Dynamic generation via client-side ensures your code works forever."
-              }
-            }
-          ]
-        },
-        {
-          "@type": "Article",
-          "@id": "https://createmy-qr.com/#article",
-          "headline": "Editable QR Code Generator | Custom QR Code With Logo Free",
-          "description": "Create custom QR codes with logo for free. Best editable QR code generator with no watermark for WiFi, vCard, Google Reviews and URL.",
-          "author": { "@id": "https://createmy-qr.com/#organization" },
-          "publisher": { "@id": "https://createmy-qr.com/#organization" },
-          "datePublished": "2026-07-05",
-          "dateModified": "2026-08-11"
-        }
-      ]
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreateMyQR | Official Open Source Developer Hub &amp; Architecture Showcase</title>
+  <meta name="description" content="Official developer documentation and open-source architectural hub for CreateMyQR. 100% client-side, zero-tracking QR code and barcode engine supporting 37 data formats with instant vector SVG downloads.">
+  <link rel="canonical" href="https://codesbykhairannoor.github.io/CreateMeQR/">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://codesbykhairannoor.github.io/CreateMeQR/">
+  <meta property="og:title" content="CreateMyQR — Open Source Architecture &amp; Developer Hub">
+  <meta property="og:description" content="Explore the client-side architecture behind CreateMyQR. 37 data formats, zero redirect servers, permanent ISO/IEC 18004 codes.">
+  <meta property="og:image" content="https://createmy-qr.com/og-image.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "CreateMyQR",
+    "codeRepository": "https://github.com/codesbykhairannoor/CreateMeQR",
+    "programmingLanguage": "JavaScript",
+    "runtimePlatform": "Web Browser",
+    "description": "100% client-side, privacy-first QR code and barcode suite supporting 37 formats with vector SVG exports.",
+    "isBasedOn": "https://createmy-qr.com/",
+    "sameAs": [
+      "https://createmy-qr.com/",
+      "https://github.com/codesbykhairannoor/CreateMeQR"
+    ],
+    "author": {
+      "@type": "Person",
+      "name": "Khairan Noor"
     }
-    </script>
+  }
+  </script>
 
+  <style>
+    :root {
+      --bg: #030712;
+      --card-bg: rgba(15, 23, 42, 0.75);
+      --card-border: rgba(56, 189, 248, 0.15);
+      --primary: #38bdf8;
+      --primary-hover: #0284c7;
+      --accent: #6366f1;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+      background-attachment: fixed;
+      padding-bottom: 80px;
+    }
+    header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(3, 7, 18, 0.85);
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .brand span {
+      background: linear-gradient(135deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    .btn-launch {
+      background: linear-gradient(135deg, #0284c7, #4f46e5);
+      color: #fff !important;
+      padding: 8px 18px;
+      border-radius: 9999px;
+      font-weight: 600 !important;
+      box-shadow: 0 4px 20px rgba(2, 132, 199, 0.35);
+      transition: transform 0.2s, box-shadow 0.2s !important;
+    }
+    .btn-launch:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(2, 132, 199, 0.5);
+    }
+    .hero {
+      max-width: 1100px;
+      margin: 80px auto 60px;
+      padding: 0 24px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: #38bdf8;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+    h1 .gradient {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 780px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .hero-ctas {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #0284c7, #4f46e5);
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 30px rgba(2, 132, 199, 0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(2, 132, 199, 0.6);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .section-desc {
+      text-align: center;
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 48px;
+    }
+    .grid-tools {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 80px;
+    }
+    .tool-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 24px;
+      backdrop-filter: blur(8px);
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .tool-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.4);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+    }
+    .tool-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .tool-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    .tool-desc {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      line-height: 1.55;
+    }
+    .tool-link {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s, gap 0.2s;
+    }
+    .tool-link:hover {
+      color: #7dd3fc;
+      gap: 10px;
+    }
+    .arch-box {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 27, 75, 0.4));
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 24px;
+      padding: 48px;
+      margin-bottom: 80px;
+    }
+    .arch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 36px;
+      margin-top: 36px;
+    }
+    .arch-item h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .arch-item p {
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 40px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
 
-  </head>
-  <body class="bg-zinc-50 dark:bg-zinc-950">
-    <div id="root"><!--ssr-outlet--></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <header>
+    <div class="nav-container">
+      <a href="https://codesbykhairannoor.github.io/CreateMeQR/" class="brand">
+        <span>CreateMyQR</span> Developer Hub
+      </a>
+      <div class="nav-links">
+        <a href="#tools">Tools Index</a>
+        <a href="#architecture">Architecture</a>
+        <a href="https://github.com/codesbykhairannoor/CreateMeQR" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://createmy-qr.com/" class="btn-launch" title="Launch CreateMyQR Production Web App">Launch Web App &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">
+        <span>⚡</span> High-Authority Developer Showcase &amp; Open Source Hub
+      </div>
+      <h1>
+        Next-Generation <span class="gradient">Client-Side QR Code</span> &amp; Barcode Architecture
+      </h1>
+      <p class="hero-desc">
+        Welcome to the official developer hub for <a href="https://createmy-qr.com/" style="color:#38bdf8; text-decoration:underline; font-weight:600;">CreateMyQR</a>. Built to eliminate the predatory $40/month QR code subscription ransom model through 100% private in-browser WebAssembly and HTML5 Canvas computation.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://createmy-qr.com/" class="btn-primary" title="Launch CreateMyQR Application">
+          <span>🚀</span> Launch CreateMyQR (Free Forever)
+        </a>
+        <a href="https://github.com/codesbykhairannoor/CreateMeQR" class="btn-secondary" target="_blank" rel="noopener">
+          <span>⭐</span> Star on GitHub
+        </a>
+      </div>
+    </section>
+
+    <div class="container" id="tools">
+      <h2 class="section-title">37 Dedicated Client-Side Utilities</h2>
+      <p class="section-desc">
+        Every tool compiles directly into permanent static ISO/IEC 18004 symbols without external redirect proxies or expiration timers.
+      </p>
+
+      <div class="grid-tools">
+        <!-- Tool 1: WiFi -->
+        <div class="tool-card">
+          <div>
+            <div class="tool-icon">📶</div>
+            <h3 class="tool-name">Instant WiFi Auto-Connect</h3>
+            <p class="tool-desc">
+              Generate WPA, WPA2, and WPA3 network credential codes that let guests connect with a single camera tap without typing passwords.
+            </p>
+          </div>
+          <a href="https://createmy-qr.com/wifi-qr-code-generator" class="tool-link" title="WiFi QR Code Generator">
+            Generate WiFi QR Code &rarr;
+          </a>
+        </div>
+
+        <!-- Tool 2: vCard -->
+        <div class="tool-card">
+          <div>
+            <div class="tool-icon">📇</div>
+            <h3 class="tool-name">vCard Digital Business Card</h3>
+            <p class="tool-desc">
+              One-tap contact cards encoding name, phone, email, organization, and address directly into iOS and Android Contacts apps.
+            </p>
+          </div>
+          <a href="https://createmy-qr.com/vcard-qr-code-maker" class="tool-link" title="vCard QR Code Maker">
+            Generate vCard QR Code &rarr;
+          </a>
+        </div>
+
+        <!-- Tool 3: WhatsApp -->
+        <div class="tool-card">
+          <div>
+            <div class="tool-icon">💬</div>
+            <h3 class="tool-name">WhatsApp Direct Chat</h3>
+            <p class="tool-desc">
+              Pre-fill recipient phone numbers and custom greeting messages for customer support, ordering, and inquiries.
+            </p>
+          </div>
+          <a href="https://createmy-qr.com/whatsapp-qr-code-generator" class="tool-link" title="WhatsApp QR Code Generator">
+            Generate WhatsApp QR Code &rarr;
+          </a>
+        </div>
+
+        <!-- Tool 4: Barcode Suite -->
+        <div class="tool-card">
+          <div>
+            <div class="tool-icon">📊</div>
+            <h3 class="tool-name">Linear Barcode Generator</h3>
+            <p class="tool-desc">
+              Generate retail-ready Code 128, EAN-13, and UPC barcodes with sharp vector SVG and high-resolution PNG outputs for inventory.
+            </p>
+          </div>
+          <a href="https://createmy-qr.com/barcode-generator" class="tool-link" title="Barcode Generator">
+            Generate Barcodes &rarr;
+          </a>
+        </div>
+
+        <!-- Tool 5: Restaurant Menu PDF -->
+        <div class="tool-card">
+          <div>
+            <div class="tool-icon">📄</div>
+            <h3 class="tool-name">Restaurant Menu PDF</h3>
+            <p class="tool-desc">
+              Replace physical paper menus with contactless permanent digital experiences that never expire or show paywalls.
+            </p>
+          </div>
+          <a href="https://createmy-qr.com/pdf-qr-code-generator" class="tool-link" title="PDF QR Code Generator">
+            Generate Menu PDF QR &rarr;
+          </a>
+        </div>
+
+        <!-- Tool 6: Google Review -->
+        <div class="tool-card">
+          <div>
+            <div class="tool-icon">⭐</div>
+            <h3 class="tool-name">Google 5-Star Review</h3>
+            <p class="tool-desc">
+              Send customers directly to your Google Business review box with pre-selected 5-star rating prompts for local business growth.
+            </p>
+          </div>
+          <a href="https://createmy-qr.com/google-review-qr-code-generator" class="tool-link" title="Google Review QR Code Generator">
+            Generate Review QR &rarr;
+          </a>
+        </div>
+
+        <!-- Tool 7: Crypto Wallets -->
+        <div class="tool-card">
+          <div>
+            <div class="tool-icon">🪙</div>
+            <h3 class="tool-name">Crypto Wallet Payment</h3>
+            <p class="tool-desc">
+              Generate QR codes for Bitcoin (BTC), Ethereum (ETH), and Solana (SOL) public addresses with embedded transfer amounts.
+            </p>
+          </div>
+          <a href="https://createmy-qr.com/crypto-qr-code-generator" class="tool-link" title="Crypto QR Code Generator">
+            Generate Crypto QR &rarr;
+          </a>
+        </div>
+
+        <!-- Tool 8: PayPal & Venmo -->
+        <div class="tool-card">
+          <div>
+            <div class="tool-icon">💳</div>
+            <h3 class="tool-name">PayPal &amp; Venmo Instant Pay</h3>
+            <p class="tool-desc">
+              Trigger seamless point-of-sale tipping, donations, and invoices without custom POS hardware terminals.
+            </p>
+          </div>
+          <a href="https://createmy-qr.com/paypal-qr-code-generator" class="tool-link" title="PayPal QR Code Generator">
+            Generate Payment QR &rarr;
+          </a>
+        </div>
+
+        <!-- Tool 9: Social Media -->
+        <div class="tool-card">
+          <div>
+            <div class="tool-icon">📱</div>
+            <h3 class="tool-name">Social Profiles (Instagram / TikTok)</h3>
+            <p class="tool-desc">
+              Boost your follower acquisition on Instagram, TikTok, LinkedIn, YouTube, and X (Twitter) with brand-color matched matrixes.
+            </p>
+          </div>
+          <a href="https://createmy-qr.com/instagram-qr-code-generator" class="tool-link" title="Instagram QR Code Generator">
+            Generate Social QR &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Architectural Deep Dive -->
+      <section class="arch-box" id="architecture">
+        <h2 class="section-title" style="text-align: left; margin-bottom: 8px;">
+          Engine Architecture: Why Client-Side Wins
+        </h2>
+        <p style="color: #94a3b8; font-size: 1.1rem;">
+          How <a href="https://createmy-qr.com/" style="color:#38bdf8; text-decoration:none; font-weight:600;">CreateMyQR</a> eliminates the vulnerabilities of conventional online generators.
+        </p>
+
+        <div class="arch-grid">
+          <div class="arch-item">
+            <h3><span>🛡️</span> Zero-Trust Privacy Baseline</h3>
+            <p>
+              Traditional QR generators route private links, WiFi passwords, and employee contacts through remote third-party databases. CreateMyQR processes 100% of the payload directly in the browser thread via WebAssembly and Canvas.
+            </p>
+          </div>
+          <div class="arch-item">
+            <h3><span>💎</span> Immutable Physical Longevity</h3>
+            <p>
+              Predatory SaaS platforms use temporary dynamic redirects that break printed assets after trial periods. Our static ISO/IEC 18004 codes encode the destination URL directly into binary modules. Once printed, it works forever.
+            </p>
+          </div>
+          <div class="arch-item">
+            <h3><span>📐</span> Production-Grade Vector SVG</h3>
+            <p>
+              While competitors gate scalable vector exports behind expensive enterprise sales tiers, CreateMyQR provides infinite-resolution vector SVG exports with automated Level Q error correction for brand logo placement.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center;">
+          <a href="https://createmy-qr.com/compare" class="btn-primary" title="Compare CreateMyQR vs Competitors">
+            Read Full Competitor Comparison on Main Platform &rarr;
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p style="margin-bottom: 12px;">
+        <strong>CreateMyQR Developer Hub</strong> — Maintained with pride for the global open web community.
+      </p>
+      <p>
+        Official Application: <a href="https://createmy-qr.com/">https://createmy-qr.com/</a> | Source Code: <a href="https://github.com/codesbykhairannoor/CreateMeQR" target="_blank" rel="noopener">GitHub Repository</a> | <a href="https://createmy-qr.com/about">About Us</a> | <a href="https://createmy-qr.com/privacy">Privacy Architecture</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
 </html>
