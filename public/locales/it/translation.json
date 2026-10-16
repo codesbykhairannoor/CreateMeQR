@@ -1245,12 +1245,12 @@
     }
   },
   "home": {
-    "heroTitle": "Tutti gli strumenti QR e codici a barre",
-    "heroTitleHighlight": "in un posto",
+    "heroTitle": "Il Generatore di QR Code Che",
+    "heroTitleHighlight": "Non Scade Mai.",
     "seoTitle": "CreateMy-QR — Generatore QR Code & Barcode Gratuito | 37 Strumenti Online",
     "seoDesc": "Genera gratuitamente 37 tipi di codici QR e codici a barre. Nessuna registrazione. Download istantaneo. 100% lato client, conforme ISO, 30 lingue.",
     "badge": "ISO/IEC 18004 · 100% Gratuito · Zero Tracciamento · Senza Registrazione",
-    "heroSubtitle": "Genera 37+ tipi di QR code e barcode istantaneamente. Senza registrazione, senza limiti, nessun dato caricato — mai. Esporta in SVG o PNG, completamente gratuito.",
+    "heroSubtitle": "Crea codici QR e codici a barre permanenti pronti per la stampa direttamente nel tuo browser. 100% gratuito, senza registrazione e senza costi nascosti dopo la stampa.",
     "citation": "\"Il QR Code è uno standard internazionale (ISO/IEC 18004:2015). I codici a barre matriciali richiedono griglie di moduli pulite per una scansione affidabile su tutti i lettori conformi.\"",
     "searchPlaceholder": "Cerca strumenti — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Tutti gli Strumenti",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Nitidezza matematica vettoriale",
       "feat3Desc": "Il rendering vettoriale puro elimina la sfocatura raster, garantendo un trasferimento termico nitido e una stampa laser a qualsiasi DPI."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

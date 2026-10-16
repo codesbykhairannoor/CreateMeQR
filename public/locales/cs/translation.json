@@ -1248,9 +1248,9 @@
     "seoTitle": "CreateMy-QR — Bezplatný generátor QR kódů a čárových kódů |37 Nástroje online",
     "seoDesc": "Vygenerujte si zdarma 37 typů QR kódů a čárových kódů. Žádná registrace. Okamžité stažení. 100% na straně klienta, v souladu s ISO, 30 jazyků.",
     "badge": "ISO/IEC 18004 · 100% zdarma · Zero Tracking · Bez registrace",
-    "heroTitle": "Všechny nástroje QR a čárových kódů",
-    "heroTitleHighlight": "na jednom místě",
-    "heroSubtitle": "Okamžitě vygenerujte více než 37 typů QR kódů a čárových kódů.Žádná registrace, žádné limity, žádná data nahraná – nikdy.Exportujte jako SVG nebo PNG, zcela zdarma.",
+    "heroTitle": "Generátor QR Kódů, Který",
+    "heroTitleHighlight": "Nikdy Nevyprší.",
+    "heroSubtitle": "Vytvářejte trvalé QR kódy a čárové kódy připravené k tisku přímo ve svém prohlížeči. 100% zdarma, bez registrace a bez skrytých poplatków po vytištění.",
     "citation": "\"QR kód je mezinárodní standard (ISO/IEC 18004:2015). Maticové čárové kódy vyžadují čisté modulové mřížky pro spolehlivé skenování napříč všemi kompatibilními čtečkami po celém světě.\"",
     "searchPlaceholder": "Vyhledávací nástroje — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Všechny nástroje",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Vektorová matematická ostrost",
       "feat3Desc": "Čisté vektorové vykreslování eliminuje rozmazání rastru a zaručuje ostrý tepelný přenos a laserový tisk v jakémkoli DPI."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

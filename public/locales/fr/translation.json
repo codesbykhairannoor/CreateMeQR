@@ -1248,9 +1248,9 @@
     "seoTitle": "CreateMy-QR — Générateur de QR Code & Codes-Barres Gratuit | 37 Outils en Ligne",
     "seoDesc": "Générez gratuitement 37 types de codes QR et de codes-barres. Aucune inscription. Téléchargement instantané. 100% côté client, conforme ISO, 30 langues.",
     "badge": "ISO/IEC 18004 · 100% Gratuit · Sans Suivi · Sans Inscription",
-    "heroTitle": "Tous les outils QR et codes-barres",
-    "heroTitleHighlight": "en un seul endroit",
-    "heroSubtitle": "Générez plus de 37 types de QR codes et codes-barres instantanément. Sans inscription, sans limites, aucune donnée téléversée — jamais. Exportez en SVG ou PNG, entièrement gratuit.",
+    "heroTitle": "Le Générateur de QR Codes Qui",
+    "heroTitleHighlight": "N'Expire Jamais.",
+    "heroSubtitle": "Créez des QR codes et codes-barres permanents prêts à imprimer directement dans votre navigateur. 100% gratuit, sans inscription et sans frais cachés après impression.",
     "citation": "\"Le QR Code est une norme internationale (ISO/IEC 18004:2015). Les codes-barres matriciels nécessitent des grilles de modules propres pour une lecture fiable sur tous les lecteurs conformes.\"",
     "searchPlaceholder": "Rechercher des outils — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Tous les Outils",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Netteté mathématique du vecteur",
       "feat3Desc": "Le rendu vectoriel pur élimine le flou tramé, garantissant un transfert thermique net et une impression laser à n'importe quel DPI."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

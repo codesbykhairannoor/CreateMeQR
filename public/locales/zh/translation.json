@@ -1245,9 +1245,9 @@
     "seoTitle": "CreateMy-QR — 免费在线二维码和条形码生成器 | 37个工具",
     "seoDesc": "免费生成37种二维码和条形码。 没有注册。 即时下载。 100% 客户端，符合 ISO 标准，30 种语言。",
     "badge": "ISO/IEC 18004 · 100%免费 · 零追踪 · 无需注册",
-    "heroTitle": "所有二维码和条形码工具",
-    "heroTitleHighlight": "在一处",
-    "heroSubtitle": "即时生成37种以上的二维码和条形码。无需注册，无限制，数据永不上传。可导出为SVG或PNG，完全免费。",
+    "heroTitle": "永不失效的",
+    "heroTitleHighlight": "专业二维码生成器。",
+    "heroSubtitle": "在浏览器中直接生成永久、随时可打印的二维码与条形码。100% 免费，无需注册，打印后绝无收费限制。",
     "citation": "\"二维码是国际标准（ISO/IEC 18004:2015）。矩阵条形码需要清洁的模块网格，以确保所有符合标准的读取器能可靠扫描。\"",
     "searchPlaceholder": "搜索工具 — WhatsApp、WiFi、vCard、PDF...",
     "allToolsHeading": "所有工具",
@@ -1749,5 +1749,11 @@
       "feat3Title": "矢量数学清晰度",
       "feat3Desc": "纯矢量渲染消除了光栅模糊，保证在任何 DPI 下都能实现清晰的热转印和激光打印。"
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

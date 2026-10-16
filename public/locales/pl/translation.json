@@ -1248,9 +1248,9 @@
     "seoTitle": "CreateMy-QR — bezpłatny generator kodów QR i kreskowych | 37 Narzędzia online",
     "seoDesc": "Wygeneruj za darmo 37 rodzajów kodów QR i kodów kreskowych. Brak rejestracji. Natychmiastowe pobieranie. 100% po stronie klienta, zgodne z ISO, 30 języków.",
     "badge": "ISO/IEC 18004 · 100% za darmo · Zerowe śledzenie · Brak rejestracji",
-    "heroTitle": "Wszystkie narzędzia QR i kodów kreskowych",
-    "heroTitleHighlight": "w jednym miejscu",
-    "heroSubtitle": "Błyskawicznie generuj ponad 37 typów kodów QR i kodów kreskowych. Bez rejestracji, bez ograniczeń, bez przesyłania danych – kiedykolwiek. Eksportuj jako SVG lub PNG, całkowicie za darmo.",
+    "heroTitle": "Generator Kodów QR, Który",
+    "heroTitleHighlight": "Nigdy Nie Wygasa.",
+    "heroSubtitle": "Twórz trwałe, gotowe do druku kody QR i kody kreskowe bezpośrednio w przeglądarce. W 100% za darmo, bez rejestracji i bez ukrytych opłat po wydrukowaniu.",
     "citation": "„Kod QR to międzynarodowy standard (ISO/IEC 18004:2015). Matrycowe kody kreskowe wymagają czystych siatek modułów w celu niezawodnego skanowania we wszystkich zgodnych czytnikach na całym świecie”.",
     "searchPlaceholder": "Narzędzia wyszukiwania — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Wszystkie narzędzia",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Wektorowa ostrość matematyczna",
       "feat3Desc": "Renderowanie czystego wektora eliminuje rozmycie rastrowe, gwarantując wyraźny druk termotransferowy i laserowy przy dowolnej rozdzielczości DPI."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

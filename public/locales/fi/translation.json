@@ -1248,9 +1248,9 @@
     "seoTitle": "CreateMy-QR — Ilmainen QR-koodi- ja viivakoodigeneraattori |37 Työkalut verkossa",
     "seoDesc": "Luo 37 erilaista QR-koodia ja viivakoodia ilmaiseksi. Ei ilmoittautumista. Välitön lataus. 100 % asiakaspuoli, ISO-yhteensopiva, 30 kieltä.",
     "badge": "ISO/IEC 18004 · 100 % ilmainen · Nollaseuranta · Ei rekisteröitymistä",
-    "heroTitle": "Kaikki QR- ja viivakoodityökalut",
-    "heroTitleHighlight": "yhdessä paikassa",
-    "heroSubtitle": "Luo 37+ tyyppistä QR-koodia ja viivakoodia välittömästi.Ei rekisteröitymistä, ei rajoituksia, ei ladattuja tietoja – koskaan.Vie SVG- tai PNG-muodossa, täysin ilmainen.",
+    "heroTitle": "QR-koodigeneraattori Joka",
+    "heroTitleHighlight": "Ei Koskaan Vanhene.",
+    "heroSubtitle": "Luo pysyviä, tulostusvalmiita QR-koodeja ja viivakoodeja suoraan selaimessasi. 100% ilmainen, ei rekisteröitymistä eikä piilokuluja tulostuksen jälkeen.",
     "citation": "\"QR-koodi on kansainvälinen standardi (ISO/IEC 18004:2015). Matriisiviivakoodit vaativat puhtaat moduuliruudukot luotettavaa skannausta varten kaikissa yhteensopivissa lukijoissa ympäri maailmaa.\"",
     "searchPlaceholder": "Hakutyökalut - WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Kaikki työkalut",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Vektorin matemaattinen terävyys",
       "feat3Desc": "Puhdas vektorirenderöinti eliminoi rasterin epäterävyyden, mikä takaa terävän lämmönsiirron ja lasertulostuksen millä tahansa DPI:llä."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

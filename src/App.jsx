@@ -115,8 +115,8 @@ export default function App() {
       }
     : isHome
     ? {
-        title: `CreateMy-QR | ${t('home.heroTitle', 'All QR & Barcode')} ${t('home.heroTitleHighlight', 'Tools in One Place')}`,
-        h1Title: `${t('home.heroTitle', 'All QR & Barcode')} ${t('home.heroTitleHighlight', 'Tools in One Place')}`,
+        title: `CreateMy-QR | ${t('home.heroTitle', 'The QR Code Generator That')} ${t('home.heroTitleHighlight', 'Never Expires.')}`,
+        h1Title: `${t('home.heroTitle', 'The QR Code Generator That')} ${t('home.heroTitleHighlight', 'Never Expires.')}`,
         description: t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO-compliant, 30 languages.'),
       }
     : isAbout

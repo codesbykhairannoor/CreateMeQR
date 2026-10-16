@@ -1245,9 +1245,9 @@
     "seoTitle": "CreateMy-QR — 無料QRコード・バーコードジェネレーター | 37ツール オンライン",
     "seoDesc": "37種類のQRコード・バーコードを無料で生成します。 サインアップはありません。 インスタントダウンロード。 100% クライアント側、ISO 準拠、30 言語。",
     "badge": "ISO/IEC 18004 · 100%無料 · トラッキングなし · 登録不要",
-    "heroTitle": "すべての QR およびバーコード ツール",
-    "heroTitleHighlight": "一か所で",
-    "heroSubtitle": "37種類以上のQRコードとバーコードを即座に生成。登録不要、制限なし、データのアップロード一切なし。SVGまたはPNGとして完全無料でエクスポート。",
+    "heroTitle": "有効期限のない",
+    "heroTitleHighlight": "永久QRコード作成ツール。",
+    "heroSubtitle": "ブラウザ上で印刷用QRコードとバーコードを直接作成。100%無料、会員登録不要、印刷後の課金トラップも一切ありません。",
     "citation": "「QRコードは国際規格（ISO/IEC 18004:2015）です。マトリックスバーコードは、対応するすべてのリーダーで信頼性の高いスキャンを行うために、クリーンなモジュールグリッドが必要です。」",
     "searchPlaceholder": "ツールを検索 — WhatsApp、WiFi、vCard、PDF...",
     "allToolsHeading": "すべてのツール",
@@ -1749,5 +1749,11 @@
       "feat3Title": "ベクトルの数学的シャープネス",
       "feat3Desc": "純粋なベクター レンダリングによりラスターのぼやけが排除され、あらゆる DPI での鮮明な熱転写とレーザー印刷が保証されます。"
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

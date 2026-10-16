@@ -1248,9 +1248,9 @@
     "seoTitle": "CreateMy-QR — Generator QR Code & Barcode Gratis | 37 Alat Online",
     "seoDesc": "Hasilkan 37 jenis kode QR dan kode batang secara gratis. Tidak ada pendaftaran. Unduhan instan. 100% sisi klien, sesuai ISO, 30 bahasa.",
     "badge": "ISO/IEC 18004 · 100% Gratis · Tanpa Pelacakan · Tanpa Daftar",
-    "heroTitle": "Semua Alat QR & Kode Batang",
-    "heroTitleHighlight": "di Satu Tempat",
-    "heroSubtitle": "Buat 37+ jenis QR code dan barcode secara instan. Tanpa daftar, tanpa batas, tidak ada data yang diunggah — selamanya. Ekspor sebagai SVG atau PNG, sepenuhnya gratis.",
+    "heroTitle": "Generator QR Code yang",
+    "heroTitleHighlight": "Tidak Akan Pernah Kadaluarsa.",
+    "heroSubtitle": "Buat QR code & barcode permanen siap cetak langsung di browsermu. 100% gratis, tanpa login, dan tanpa biaya siluman setelah dicetak.",
     "citation": "\"QR Code adalah standar internasional (ISO/IEC 18004:2015). Barcode matriks memerlukan kisi modul yang bersih untuk pemindaian andal di semua pembaca yang sesuai di seluruh dunia.\"",
     "searchPlaceholder": "Cari alat — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Semua Alat",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Ketajaman Matematika Vektor",
       "feat3Desc": "Render vektor murni menghilangkan kekaburan raster, menjamin transfer termal yang tajam dan pencetakan laser pada DPI apa pun."
     }
+  },
+  "theme": {
+    "dark": "Mode Gelap",
+    "light": "Mode Terang",
+    "darkDesc": "Tema gelap hemat daya",
+    "lightDesc": "Tema terang bersih"
   }
 }

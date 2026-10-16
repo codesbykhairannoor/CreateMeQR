@@ -1245,12 +1245,12 @@
     }
   },
   "home": {
-    "heroTitle": "Alle QR- en barcodehulpmiddelen",
-    "heroTitleHighlight": "op één plek",
+    "heroTitle": "De QR-code Generator Die",
+    "heroTitleHighlight": "Nooit Verloopt.",
     "seoTitle": "CreateMy-QR — Gratis QR-code & Barcode Generator | 37 Online Tools",
     "seoDesc": "Genereer gratis 37 soorten QR-codes en barcodes. Geen aanmelding. Direct downloaden. 100% client-side, ISO-compatibel, 30 talen.",
     "badge": "ISO/IEC 18004 · 100% Gratis · Geen Tracking · Geen Registratie",
-    "heroSubtitle": "Genereer 37+ soorten QR-codes en barcodes direct. Geen registratie, geen limieten, geen gegevens geüpload — ooit. Exporteer als SVG of PNG, volledig gratis.",
+    "heroSubtitle": "Maak permanente, printklare QR-codes en barcodes direct in je browser. 100% gratis, zonder registratie en zonder verborgen kosten na het afdrukken.",
     "citation": "\"De QR-code is een internationale standaard (ISO/IEC 18004:2015). Matrixbarcodes vereisen schone modulerasters voor betrouwbaar scannen op alle conforme lezers.\"",
     "searchPlaceholder": "Tools zoeken — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Alle Tools",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Vector wiskundige scherpte",
       "feat3Desc": "Pure vectorweergave elimineert rastervervaging en garandeert scherpe thermische overdracht en laserprinten bij elke DPI."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

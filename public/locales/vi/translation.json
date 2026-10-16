@@ -1248,9 +1248,9 @@
     "seoTitle": "CreateMy-QR — Trình tạo mã vạch và mã QR miễn phí | 37 Công cụ trực tuyến",
     "seoDesc": "Tạo 37 loại mã QR và mã vạch miễn phí. Không đăng ký. Tải xuống ngay lập tức. 100% phía khách hàng, tuân thủ ISO, 30 ngôn ngữ.",
     "badge": "ISO/IEC 18004 · Miễn phí 100% · Không theo dõi · Không cần đăng ký",
-    "heroTitle": "Tất cả các công cụ QR & mã vạch",
-    "heroTitleHighlight": "ở một nơi",
-    "heroSubtitle": "Tạo hơn 37 loại mã QR và mã vạch ngay lập tức. Không cần đăng ký, không giới hạn, không tải lên dữ liệu — chưa bao giờ. Xuất dưới dạng SVG hoặc PNG, hoàn toàn miễn phí.",
+    "heroTitle": "Trình Tạo Mã QR",
+    "heroTitleHighlight": "Không Bao Giờ Hết Hạn.",
+    "heroSubtitle": "Tạo mã QR và mã vạch vĩnh viễn sẵn sàng in ấn trực tiếp trên trình duyệt. Miễn phí 100%, không cần đăng ký và không thu phí sau khi in.",
     "citation": "\"Mã QR là tiêu chuẩn quốc tế (ISO/IEC 18004:2015). Mã vạch ma trận yêu cầu lưới mô-đun sạch để quét đáng tin cậy trên tất cả các đầu đọc tuân thủ trên toàn thế giới.\"",
     "searchPlaceholder": "Công cụ tìm kiếm - WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Tất cả công cụ",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Độ Sắc Nét Toán Học Vector",
       "feat3Desc": "Kết xuất vector thuần túy giúp loại bỏ hiện tượng mờ raster, đảm bảo truyền nhiệt và in laze sắc nét ở bất kỳ mức dpi nào."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

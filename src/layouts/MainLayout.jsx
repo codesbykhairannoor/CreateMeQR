@@ -129,26 +129,26 @@ export default function MainLayout({ children }) {
 
       {/* Premium Glass Navbar */}
       <nav className="fixed top-0 w-full bg-white/70 dark:bg-[#040a18]/70 backdrop-blur-2xl z-50 transition-colors duration-500">
-        <div className="relative w-full max-w-7xl mx-auto px-4 md:px-6 h-14 md:h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2 cursor-pointer whitespace-nowrap flex-shrink-0" onClick={() => navigate(currentLangCode === 'en' ? '/' : `/${currentLangCode}`)}>
-            <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-8 h-8 rounded-xl object-contain shadow-sm" />
-            <span className="text-base md:text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight">
+        <div className="relative w-full max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+          <div className="flex items-center gap-2.5 cursor-pointer whitespace-nowrap flex-shrink-0" onClick={() => navigate(currentLangCode === 'en' ? '/' : `/${currentLangCode}`)}>
+            <img src="/logoqr.png" alt="CreateMy-QR Logo" className="w-8 h-8 md:w-9 md:h-9 rounded-xl object-contain shadow-sm" />
+            <span className="text-lg md:text-xl font-extrabold text-zinc-900 dark:text-white tracking-tight">
               CreateMy-<span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600">QR</span>
             </span>
           </div>
           
           <MegaNav currentLangCode={currentLangCode} />
 
-          <div className="flex items-center gap-1 md:gap-2 flex-shrink-0">
-            <button onClick={() => setShowHistory(true)} title={t('history.title', 'Local History')} className="flex p-1.5 md:p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
-              <Clock className="w-5 h-5 md:w-5 md:h-5" />
+          <div className="flex items-center gap-1.5 md:gap-2 flex-shrink-0">
+            <button onClick={() => setShowHistory(true)} title={t('history.title', 'Local History')} className="flex items-center justify-center w-9 h-9 md:w-10 md:h-10 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all">
+              <Clock className="w-5 h-5" />
             </button>
-            <div className="w-px h-4 md:h-5 bg-zinc-200 dark:bg-zinc-800 mx-0.5 md:mx-1"></div>
+            <div className="w-px h-5 bg-zinc-200 dark:bg-zinc-800 mx-0.5 md:mx-1"></div>
             
             <div className="relative">
-              <button onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} className="flex items-center gap-1.5 md:gap-2 px-2 md:px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
+              <button onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} className="flex items-center gap-1.5 md:gap-2 px-2.5 md:px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all">
                 <span style={{ fontSize: 16 }}>{LANGS.find(l => l.code === (i18n.language?.split('-')[0] || 'en'))?.flag || '🌐'}</span>
-                <span className="uppercase text-[10px] md:text-xs tracking-wider">{(i18n.language?.split('-')[0] || 'en')}</span>
+                <span className="uppercase text-[11px] md:text-xs tracking-wider">{(i18n.language?.split('-')[0] || 'en')}</span>
               </button>
               
               {showLangMenu && (
@@ -177,11 +177,19 @@ export default function MainLayout({ children }) {
                 </>
               )}
             </div>
-            <button onClick={() => setDarkMode(!darkMode)} className="block p-1.5 md:p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
-              {darkMode ? <Sun className="w-5 h-5 md:w-5 md:h-5" /> : <Moon className="w-5 h-5 md:w-5 md:h-5" />}
+
+            {/* Dark Mode toggle on Desktop (On Mobile it is placed conveniently inside the drawer) */}
+            <button onClick={() => setDarkMode(!darkMode)} title="Toggle Dark/Light Mode" className="hidden xl:flex items-center justify-center w-10 h-10 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all">
+              {darkMode ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5" />}
             </button>
-            <button onClick={() => setShowMobileNav(!showMobileNav)} className="xl:hidden p-1.5 md:p-2.5 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#040a18] transition-all">
-              {showMobileNav ? <X className="w-5 h-5 md:w-5 md:h-5" /> : <Menu className="w-5 h-5 md:w-5 md:h-5" />}
+
+            {/* Comfortable Mobile Hamburger Button */}
+            <button 
+              onClick={() => setShowMobileNav(!showMobileNav)} 
+              aria-label="Toggle Navigation Menu"
+              className="xl:hidden flex items-center justify-center w-11 h-11 rounded-2xl bg-zinc-100/90 dark:bg-[#0c1831] text-zinc-800 dark:text-zinc-200 hover:bg-blue-50 dark:hover:bg-blue-900/30 active:scale-95 transition-all border border-zinc-200/80 dark:border-zinc-700/60 shadow-xs ml-1"
+            >
+              {showMobileNav ? <X className="w-5 h-5 text-blue-600 dark:text-blue-400" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -189,7 +197,7 @@ export default function MainLayout({ children }) {
 
       {/* Mobile Navigation Overlay */}
       {showMobileNav && (
-        <div className="xl:hidden absolute inset-x-0 top-14 md:top-16 z-40 bg-white dark:bg-[#040a18] border-b border-zinc-200 dark:border-zinc-800 shadow-xl max-h-[calc(100vh-3.5rem)] md:max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain">
+        <div className="xl:hidden absolute inset-x-0 top-16 z-40 bg-white dark:bg-[#040a18] border-b border-zinc-200 dark:border-zinc-800 shadow-xl max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain">
           <MobileNav 
             currentLangCode={currentLangCode} 
             onClose={() => setShowMobileNav(false)} 

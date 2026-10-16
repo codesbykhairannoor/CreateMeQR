@@ -1248,9 +1248,9 @@
     "seoTitle": "CreateMy-QR — 무료 QR 코드 & 바코드 생성기 | 37가지 온라인 도구",
     "seoDesc": "37가지 유형의 QR 코드 및 바코드를 무료로 생성하세요. 가입이 없습니다. 즉시 다운로드. 100% 클라이언트 측, ISO 준수, 30개 언어.",
     "badge": "ISO/IEC 18004 · 100% 무료 · 추적 없음 · 가입 불필요",
-    "heroTitle": "모든 QR 및 바코드 도구",
-    "heroTitleHighlight": "한 곳에서",
-    "heroSubtitle": "37가지 이상의 QR 코드와 바코드를 즉시 생성하세요. 가입 불필요, 제한 없음, 데이터 업로드 없음 — 영원히. SVG 또는 PNG로 완전 무료로 내보내기.",
+    "heroTitle": "만료되지 않는",
+    "heroTitleHighlight": "영구 QR 코드 생성기.",
+    "heroSubtitle": "브라우저에서 직접 인쇄 가능한 영구 QR 코드와 바코드를 생성하세요. 100% 무료, 회원가입 없음, 인쇄 후 결제 유도 없음.",
     "citation": "\"QR 코드는 국제 표준(ISO/IEC 18004:2015)입니다. 매트릭스 바코드는 모든 규격 판독기에서 신뢰할 수 있는 스캔을 위해 깨끗한 모듈 그리드가 필요합니다.\"",
     "searchPlaceholder": "도구 검색 — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "모든 도구",
@@ -1749,5 +1749,11 @@
       "feat3Title": "벡터 수학적 선명도",
       "feat3Desc": "순수 벡터 렌더링은 래스터 흐림을 제거하여 모든 DPI에서 선명한 열 전달 및 레이저 인쇄를 보장합니다."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

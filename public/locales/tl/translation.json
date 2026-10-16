@@ -1248,9 +1248,9 @@
     "seoTitle": "CreateMy-QR — Libreng QR Code at Barcode Generator |37 Mga Tool Online",
     "seoDesc": "Bumuo ng 37 uri ng QR code at barcode nang libre. Walang signup. Instant download. 100% client-side, ISO-compliant, 30 wika.",
     "badge": "ISO/IEC 18004 · 100% Libre · Zero Tracking · Walang Signup",
-    "heroTitle": "Lahat ng QR at Barcode Tools",
-    "heroTitleHighlight": "sa Isang Lugar",
-    "heroSubtitle": "Bumuo ng 37+ uri ng QR code at barcode kaagad.Walang pag-signup, walang limitasyon, walang data na na-upload — kailanman.I-export bilang SVG o PNG, ganap na libre.",
+    "heroTitle": "Ang QR Code Generator Na",
+    "heroTitleHighlight": "Hindi Kailanman Nag-e-expire.",
+    "heroSubtitle": "Gumawa ng permanenteng QR code at barcode na handang i-print nang direkta sa iyong browser. 100% libre, walang signup, at walang bayad pagkatapos i-print.",
     "citation": "\"Ang QR Code ay isang internasyonal na pamantayan (ISO/IEC 18004:2015). Ang mga matrix barcode ay nangangailangan ng malinis na module grids para sa maaasahang pag-scan sa lahat ng sumusunod na mga mambabasa sa buong mundo.\"",
     "searchPlaceholder": "Mga tool sa paghahanap — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Lahat ng Tools",
@@ -1727,5 +1727,11 @@
       "feat3Title": "Vector Mathematical Sharpness",
       "feat3Desc": "Inaalis ng purong vector rendering ang raster blur, na ginagarantiyahan ang malulutong na thermal transfer at laser printing sa anumang DPI."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

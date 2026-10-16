@@ -1248,9 +1248,9 @@
     "seoTitle": "CreateMy-QR — Penjana Kod QR & Kod Bar Percuma |37 Alat Dalam Talian",
     "seoDesc": "Hasilkan 37 jenis kod QR dan kod bar secara percuma. Tiada pendaftaran. Muat turun segera. 100% bahagian pelanggan, mematuhi ISO, 30 bahasa.",
     "badge": "ISO/IEC 18004 · 100% Percuma · Penjejakan Sifar · Tiada Pendaftaran",
-    "heroTitle": "Semua Alat QR & Kod Bar",
-    "heroTitleHighlight": "di Satu Tempat",
-    "heroSubtitle": "Hasilkan 37+ jenis kod QR dan kod bar serta-merta.Tiada pendaftaran, tiada had, tiada data dimuat naik — pernah.Eksport sebagai SVG atau PNG, percuma sepenuhnya.",
+    "heroTitle": "Penjana Kod QR yang",
+    "heroTitleHighlight": "Tidak Pernah Luput.",
+    "heroSubtitle": "Cipta kod QR dan kod bar kekal sedia cetak terus dalam pelayar anda. 100% percuma, tanpa pendaftaran, dan tiada caj tersembunyi selepas dicetak.",
     "citation": "\"Kod QR ialah piawaian antarabangsa (ISO/IEC 18004:2015). Kod bar matriks memerlukan grid modul yang bersih untuk pengimbasan yang boleh dipercayai merentas semua pembaca yang patuh di seluruh dunia.\"",
     "searchPlaceholder": "Alat carian — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Semua Alat",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Ketajaman Matematik Vektor",
       "feat3Desc": "Penyajian vektor tulen menghapuskan kabur raster, menjamin pemindahan haba yang jelas dan pencetakan laser pada mana-mana DPI."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

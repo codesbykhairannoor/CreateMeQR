@@ -1245,12 +1245,12 @@
     }
   },
   "home": {
-    "heroTitle": "Tüm QR ve Barkod Araçları",
-    "heroTitleHighlight": "Tek Bir Yerde",
+    "heroTitle": "Süresi Asla Dolmayan",
+    "heroTitleHighlight": "Kalıcı QR Kod Oluşturucu.",
     "seoTitle": "CreateMy-QR — Ücretsiz QR Kod & Barkod Oluşturucu | 37 Çevrimiçi Araç",
     "seoDesc": "Ücretsiz olarak 37 tür QR kodu ve barkod oluşturun. Kayıt yok. Anında indirme. %100 istemci tarafı, ISO uyumlu, 30 dil.",
     "badge": "ISO/IEC 18004 · %100 Ücretsiz · İzleme Yok · Kayıt Yok",
-    "heroSubtitle": "37'den fazla QR kodu ve barkodu anında oluşturun. Kayıt yok, limit yok, veri yükleme yok — asla. SVG veya PNG olarak tamamen ücretsiz dışa aktarın.",
+    "heroSubtitle": "Doğrudan tarayıcınızda baskıya hazır kalıcı QR kodlar ve barkodlar oluşturun. %100 ücretsiz, kayıt yok, yazdırdıktan sonra gizli ücret yok.",
     "citation": "\"QR Kodu, uluslararası bir standarttır (ISO/IEC 18004:2015). Matris barkodlar, tüm uyumlu okuyucularda güvenilir tarama için temiz modül ızgaraları gerektirir.\"",
     "searchPlaceholder": "Araç ara — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Tüm Araçlar",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Vektör Matematiksel Keskinlik",
       "feat3Desc": "Saf vektör işleme, raster bulanıklığını ortadan kaldırarak her DPI'da net termal aktarım ve lazer baskıyı garanti eder."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

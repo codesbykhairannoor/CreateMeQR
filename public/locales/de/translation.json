@@ -1248,9 +1248,9 @@
     "seoTitle": "CreateMy-QR — Kostenloser QR-Code & Barcode-Generator | 37 Tools Online",
     "seoDesc": "Generieren Sie kostenlos 37 Arten von QR-Codes und Barcodes. Keine Anmeldung. Sofortiger Download. 100 % clientseitig, ISO-konform, 30 Sprachen.",
     "badge": "ISO/IEC 18004 · 100% Kostenlos · Kein Tracking · Keine Anmeldung",
-    "heroTitle": "Alle QR- und Barcode-Tools",
-    "heroTitleHighlight": "An einem Ort",
-    "heroSubtitle": "Erstelle 37+ Arten von QR-Codes und Barcodes sofort. Keine Anmeldung, keine Limits, keine hochgeladenen Daten — niemals. Exportiere als SVG oder PNG, völlig kostenlos.",
+    "heroTitle": "Der QR-Code Generator Der",
+    "heroTitleHighlight": "Niemals Ablaufend Ist.",
+    "heroSubtitle": "Erstellen Sie dauerhafte, druckfertige QR-Codes und Barcodes direkt im Browser. 100% kostenlos, ohne Registrierung und ohne versteckte Abokosten nach dem Druck.",
     "citation": "\"Der QR-Code ist ein internationaler Standard (ISO/IEC 18004:2015). Matrix-Barcodes erfordern saubere Modulraster für zuverlässiges Scannen mit allen konformen Lesegeräten.\"",
     "searchPlaceholder": "Tools suchen — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Alle Tools",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Vektormathematische Schärfe",
       "feat3Desc": "Die reine Vektorwiedergabe eliminiert Rasterunschärfe und garantiert einen gestochen scharfen Thermotransfer- und Laserdruck bei jeder DPI."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

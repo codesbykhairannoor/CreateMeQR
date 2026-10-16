@@ -1187,9 +1187,9 @@
     "seoTitle": "CreateMy-QR — Generator gratuit de coduri QR și coduri de bare |37 Instrumente online",
     "seoDesc": "Generați 37 de tipuri de coduri QR și coduri de bare gratuit. Fără înscriere. Descărcare instantanee. 100% la nivelul clientului, conform ISO, 30 de limbi.",
     "badge": "ISO/IEC 18004 · 100% gratuit · Urmărire zero · Fără înregistrare",
-    "heroTitle": "Toate instrumentele QR și coduri de bare",
-    "heroTitleHighlight": "într-un singur loc",
-    "heroSubtitle": "Generați peste 37 de tipuri de coduri QR și coduri de bare instantaneu.Fără înscriere, fără limite, fără date încărcate — niciodată.Exportați ca SVG sau PNG, complet gratuit.",
+    "heroTitle": "Generatorul de Coduri QR Care",
+    "heroTitleHighlight": "Nu Expiră Niciodată.",
+    "heroSubtitle": "Creați coduri QR și coduri de bare permanente, gata de tipar, direct în browser. 100% gratuit, fără înregistrare și fără taxe ascunse după imprimare.",
     "citation": "„Codul QR este un standard internațional (ISO/IEC 18004:2015). Codurile de bare Matrix necesită grile de module curate pentru scanare fiabilă pentru toți cititorii conformi din întreaga lume.”",
     "searchPlaceholder": "Instrumente de căutare — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Toate instrumentele",
@@ -1580,5 +1580,11 @@
       "feat3Title": "Claritate matematică vectorială",
       "feat3Desc": "Redarea vectorială pură elimină neclaritatea raster, garantând transfer termic clar și imprimare laser la orice DPI."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

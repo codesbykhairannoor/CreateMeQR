@@ -1187,9 +1187,9 @@
     "seoTitle": "CreateMy-QR — Ingyenes QR-kód- és vonalkódgenerátor |37 Online eszközök",
     "seoDesc": "Generáljon ingyenesen 37 féle QR-kódot és vonalkódot. Nincs regisztráció. Azonnali letöltés. 100%-ban ügyféloldali, ISO-kompatibilis, 30 nyelv.",
     "badge": "ISO/IEC 18004 · 100% ingyenes · Nulla követés · Nincs regisztráció",
-    "heroTitle": "Minden QR és vonalkód eszköz",
-    "heroTitleHighlight": "egy helyen",
-    "heroSubtitle": "37+ típusú QR-kódot és vonalkódot generálhat azonnal.Nincs regisztráció, nincsenek korlátozások, nincsenek feltöltött adatok – soha.Exportálás SVG vagy PNG formátumban, teljesen ingyenes.",
+    "heroTitle": "A QR-kód Generátor, Ami",
+    "heroTitleHighlight": "Soha Nem Jár Le.",
+    "heroSubtitle": "Hozzon létre állandó, nyomtatásra kész QR-kódokat és vonalkódokat közvetlenül a böngészőjében. 100% ingyenes, regisztráció nélkül, rejtett költségek nélkül a nyomtatás után.",
     "citation": "\"A QR-kód egy nemzetközi szabvány (ISO/IEC 18004:2015). A mátrix vonalkódok tiszta modulrácsokat igényelnek a megbízható szkennelés érdekében az összes megfelelő olvasón világszerte.\"",
     "searchPlaceholder": "Keresőeszközök – WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Minden eszköz",
@@ -1604,5 +1604,11 @@
       "feat3Title": "Vektor matematikai élesség",
       "feat3Desc": "A tiszta vektoros renderelés kiküszöböli a raszteres elmosódást, garantálva az éles hőátvitelt és a lézernyomtatást bármely DPI-vel."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }

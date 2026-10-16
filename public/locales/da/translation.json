@@ -1248,9 +1248,9 @@
     "seoTitle": "CreateMy-QR — Gratis QR-kode- og stregkodegenerator |37 Værktøjer online",
     "seoDesc": "Generer 37 typer QR-koder og stregkoder gratis. Ingen tilmelding. Øjeblikkelig download. 100 % klientside, ISO-kompatibel, 30 sprog.",
     "badge": "ISO/IEC 18004 · 100 % gratis · Nul sporing · Ingen tilmelding",
-    "heroTitle": "Alle QR- og stregkodeværktøjer",
-    "heroTitleHighlight": "på ét sted",
-    "heroSubtitle": "Generer 37+ typer QR-koder og stregkoder med det samme.Ingen tilmelding, ingen begrænsninger, ingen data uploadet - nogensinde.Eksporter som SVG eller PNG, helt gratis.",
+    "heroTitle": "QR-kodegeneratoren Der",
+    "heroTitleHighlight": "Aldrig Udløber.",
+    "heroSubtitle": "Opret permanente, printklare QR-koder og stregkoder direkte i din browser. 100% gratis, uden tilmelding og uden gebyrer efter print.",
     "citation": "\"QR-koden er en international standard (ISO/IEC 18004:2015). Matrixstregkoder kræver rene modulgitter for pålidelig scanning på tværs af alle kompatible læsere i hele verden.\"",
     "searchPlaceholder": "Søgeværktøjer - WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Alle værktøjer",
@@ -1749,5 +1749,11 @@
       "feat3Title": "Vektor matematisk skarphed",
       "feat3Desc": "Ren vektorgengivelse eliminerer rastersløring, hvilket garanterer sprød termisk overførsel og laserprint ved enhver DPI."
     }
+  },
+  "theme": {
+    "dark": "Dark Mode",
+    "light": "Light Mode",
+    "darkDesc": "Dark OLED theme",
+    "lightDesc": "Clean daylight view"
   }
 }
