@@ -12,30 +12,31 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
   return (
     <div className="xl:hidden flex flex-col p-4 bg-zinc-50 dark:bg-[#030914] border-b border-zinc-200 dark:border-zinc-800 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
       
-      {/* 1. Dark Mode & Appearance Card in Drawer */}
-      <div className="flex items-center justify-between p-3.5 mb-3 bg-white dark:bg-[#0c1831] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl shadow-xs">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-xl flex items-center justify-center bg-blue-50 dark:bg-[#081226] text-blue-600 dark:text-blue-400">
-            {darkMode ? <Moon size={18} /> : <Sun size={18} className="text-amber-500" />}
-          </div>
-          <div>
-            <div className="text-xs font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider">
-              {darkMode ? t('theme.dark', 'Dark Mode') : t('theme.light', 'Light Mode')}
-            </div>
-            <div className="text-[11px] text-zinc-500 dark:text-zinc-400">
-              {darkMode ? t('theme.darkDesc', 'Dark OLED theme') : t('theme.lightDesc', 'Light daylight theme')}
-            </div>
-          </div>
-        </div>
+      {/* 1. Sleek Segmented Theme Switcher */}
+      <div className="grid grid-cols-2 p-1 mb-3 bg-zinc-200/70 dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 rounded-xl">
         <button
-          onClick={() => setDarkMode(!darkMode)}
           type="button"
-          className={`relative inline-flex h-7 w-12 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${darkMode ? 'bg-blue-600' : 'bg-zinc-300 dark:bg-zinc-700'}`}
-          aria-label="Toggle dark mode"
+          onClick={() => setDarkMode(false)}
+          className={`flex items-center justify-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${
+            !darkMode
+              ? 'bg-white text-zinc-900 shadow-xs'
+              : 'text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200'
+          }`}
         >
-          <span
-            className={`pointer-events-none inline-block h-6 w-6 transform rounded-full bg-white shadow-md ring-0 transition duration-200 ease-in-out ${darkMode ? 'translate-x-5' : 'translate-x-0'}`}
-          />
+          <Sun size={14} className={!darkMode ? 'text-amber-500' : ''} />
+          <span>{t('theme.light', 'Light Mode')}</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => setDarkMode(true)}
+          className={`flex items-center justify-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${
+            darkMode
+              ? 'bg-blue-600 text-white shadow-xs'
+              : 'text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200'
+          }`}
+        >
+          <Moon size={14} />
+          <span>{t('theme.dark', 'Dark Mode')}</span>
         </button>
       </div>
 
