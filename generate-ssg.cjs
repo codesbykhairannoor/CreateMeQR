@@ -342,6 +342,78 @@ async function run() {
       );
       aliasCount++;
     }
+
+    // Additional alias for /contact -> /about
+    const locAboutSlug = localizedRoutes[lang]?.['about'] || '/about';
+    const legacyContactDir = path.join(distDir, lang, 'contact');
+    if (!fs.existsSync(legacyContactDir)) {
+      fs.mkdirSync(legacyContactDir, { recursive: true });
+      const targetUrl = `https://createmy-qr.com/${lang}${locAboutSlug === '/' ? '' : locAboutSlug}`;
+      fs.writeFileSync(
+        path.join(legacyContactDir, 'index.html'),
+        `<!DOCTYPE html><html lang="${lang}"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><script>window.location.replace("${targetUrl}");</script></head><body><p>Redirecting to <a href="${targetUrl}">${targetUrl}</a>...</p></body></html>`
+      );
+      aliasCount++;
+    }
+
+    // Short tool ID aliases (e.g. /ja/wifi -> /ja/wi-fi-...)
+    for (const [toolId, locSlug] of Object.entries(localizedRoutes[lang] || {})) {
+      if (toolId !== 'home' && locSlug !== `/${toolId}`) {
+        const shortDir = path.join(distDir, lang, toolId);
+        if (!fs.existsSync(shortDir)) {
+          fs.mkdirSync(shortDir, { recursive: true });
+          const targetUrl = `https://createmy-qr.com/${lang}${locSlug === '/' ? '' : locSlug}`;
+          fs.writeFileSync(
+            path.join(shortDir, 'index.html'),
+            `<!DOCTYPE html><html lang="${lang}"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><script>window.location.replace("${targetUrl}");</script></head><body><p>Redirecting to <a href="${targetUrl}">${targetUrl}</a>...</p></body></html>`
+          );
+          aliasCount++;
+        }
+      }
+    }
+  }
+
+  // 4. Known Legacy Crawled URLs from Google Search Console
+  console.log('🔄 Generating static alias pages for known legacy GSC URLs...');
+  const knownLegacyGscRoutes = [
+    { from: 'tr/google-review-ücretsiz-çevrimiçi-qr-kod-oluşturucu', to: `tr${localizedRoutes['tr']?.greview || '/google-review-ucretsiz-cevrimici-qr-kod-olusturucu'}` },
+    { from: 'ar/contact', to: `ar${localizedRoutes['ar']?.about || '/mn-nhn'}` },
+    { from: 'ar/مولد-رمز-الاستجابة-السريعة-مجاني', to: `ar${localizedRoutes['ar']?.barcode || '/mwld-rmz-lstjb-lsryaa-mjny'}` },
+    { from: 'ar/gratis-qr-kode-generator-online', to: `ar${localizedRoutes['ar']?.barcode || '/mwld-rmz-lstjb-lsryaa-mjny'}` },
+    { from: 'ar/google-review-gratis-qr-kode-generator-online', to: `ar${localizedRoutes['ar']?.greview || '/google-review-mwld-rmz-lstjb-lsryaa-mjny'}` },
+    { from: 'el/δωρεάν-δημιουργία-qr-code-online', to: `el${localizedRoutes['el']?.barcode || '/dorean-dimioyrgia-qr-code-online'}` },
+    { from: 'zh/discord-免费在线二维码生成器', to: `zh${localizedRoutes['zh']?.discord || '/discord-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi'}` },
+    { from: 'zh/免费在线二维码生成器', to: `zh${localizedRoutes['zh']?.barcode || '/mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi'}` },
+    { from: 'sv/linkedin-مولد-رمز-الاستجابة-السريعة-مجاني', to: `sv${localizedRoutes['sv']?.linkedin || '/linkedin-gratis-qr-kod-generator-online'}` },
+    { from: 'sv/amazon-zdarma-online-generátor-qr-kódů', to: `sv${localizedRoutes['sv']?.amazon || '/amazon-gratis-qr-kod-generator-online'}` },
+    { from: 'ms/venmo-ücretsiz-çevrimiçi-qr-kod-oluşturucu', to: `ms${localizedRoutes['ms']?.venmo || '/venmo-penjana-kod-qr-percuma-dalam-talian'}` },
+    { from: 'ms/pautan-di-bio-penjana-kod-qr-percuma-dalam-talian', to: `ms${localizedRoutes['ms']?.linkinbio || '/tautan-di-bio-penjana-kod-qr-percuma-dalam-talian'}` },
+    { from: 'da/vcard-zdarma-online-generátor-qr-kódů', to: `da${localizedRoutes['da']?.vcard || '/vcard-gratis-online-qr-kode-generator'}` },
+    { from: 'es/vcard-zdarma-online-generátor-qr-kódů', to: `es${localizedRoutes['es']?.vcard || '/vcard-generador-de-codigos-qr-gratis-online'}` },
+    { from: 'ro/google-review-generador-de-códigos-qr-gratis-online', to: `ro${localizedRoutes['ro']?.greview || '/google-review-generator-de-coduri-qr-gratuit-online'}` },
+    { from: 'uk/подія-безкоштовний-генератор-qr-кодів-онлайн', to: `uk${localizedRoutes['uk']?.event || '/podiya-bezkoshtovniy-generator-qr-kodiv-onlayn'}` },
+    { from: 'fr/snapchat-générateur-de-code-qr-gratuit-en-ligne', to: `fr${localizedRoutes['fr']?.snapchat || '/snapchat-generateur-de-code-qr-gratuit-en-ligne'}` },
+    { from: 'fr/lokasyon-libreng-online-qr-code-generator', to: `fr${localizedRoutes['fr']?.location || '/localisation-generateur-de-code-qr-gratuit-en-ligne'}` },
+    { from: 'bn/linkedin-tạo-mã-qr-miễn-phí-trực-tuyến', to: `bn${localizedRoutes['bn']?.linkedin || '/linkedin-phri-anlaain-kiuaar-kodd-jenaarettr'}` },
+    { from: 'id/link-in-bio-kostenloser-qr-code-generator-online', to: `id${localizedRoutes['id']?.linkinbio || '/tautan-di-bio-generator-qr-code-gratis-online'}` },
+    { from: 'vi/resim-ücretsiz-çevrimiçi-qr-kod-oluşturucu', to: `vi${localizedRoutes['vi']?.image || '/hinh-anh-tao-ma-qr-mien-phi-truc-tuyen'}` }
+  ];
+
+  for (const item of knownLegacyGscRoutes) {
+    try {
+      const aliasDir = path.join(distDir, item.from);
+      if (!fs.existsSync(aliasDir)) {
+        fs.mkdirSync(aliasDir, { recursive: true });
+      }
+      const targetUrl = `https://createmy-qr.com/${item.to.startsWith('/') ? item.to.substring(1) : item.to}`;
+      fs.writeFileSync(
+        path.join(aliasDir, 'index.html'),
+        `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><script>window.location.replace("${targetUrl}");</script></head><body><p>Redirecting to <a href="${targetUrl}">${targetUrl}</a>...</p></body></html>`
+      );
+      aliasCount++;
+    } catch (e) {
+      console.warn(`Could not create legacy alias for ${item.from}:`, e.message);
+    }
   }
 
   console.log(`✨ SSG Complete! Generated ${generatedCount} primary static pages and ${aliasCount} alias redirect pages.`);
