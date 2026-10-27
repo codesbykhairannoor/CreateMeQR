@@ -186,7 +186,17 @@ export default function App() {
       ['compare', 'compare'],
       ['languages', 'languages'],
       ['usecases', 'usecases'],
-      ['use-cases', 'usecases']
+      ['use-cases', 'usecases'],
+      // Generic QR Generator phrases (Arabic, Greek, Chinese, Spanish, Norwegian, Malay)
+      ['مولد', 'barcode'],
+      ['رمز-الاستجابة', 'barcode'],
+      ['δημιουργία', 'barcode'],
+      ['δωρεάν', 'barcode'],
+      ['二维码', 'barcode'],
+      ['免费在线', 'barcode'],
+      ['generador-de-codigos', 'barcode'],
+      ['gratis-qr-kode', 'barcode'],
+      ['penjana-kod-qr', 'barcode']
     ];
 
     for (const [kw, tool] of keywordMap) {
