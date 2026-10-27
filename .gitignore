@@ -32,4 +32,6 @@ createmyqr-*.json
 *.key
 google-key.json
 
-
+# Playwright artifacts
+test-results/
+playwright-report/

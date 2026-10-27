@@ -9,7 +9,7 @@ test.describe('CreateMeQR E2E Core Flow', () => {
     await expect(page.locator('h1').first()).toBeVisible();
 
     // Search bar should be visible
-    await expect(page.locator('.hero-search-input')).toBeVisible();
+    await expect(page.locator('.hero-search-input').first()).toBeVisible();
   });
 
   test('should render the tool workspace and generate a QR code successfully', async ({ page }) => {
@@ -25,17 +25,17 @@ test.describe('CreateMeQR E2E Core Flow', () => {
     await urlInput.fill('https://example.com/secure-qr');
 
     // Click Generate Button
-    const generateButton = page.locator('button:has-text("Generate")');
+    const generateButton = page.locator('button:has-text("Generate")').first();
     await expect(generateButton).toBeVisible();
     await generateButton.click();
 
     // Verify if QR code canvas is rendered in preview
-    await expect(page.locator('canvas')).toBeVisible();
+    await expect(page.locator('canvas').first()).toBeVisible();
 
     // Verify PNG download button is visible
-    await expect(page.locator('button:has-text("PNG")')).toBeVisible();
+    await expect(page.locator('button:has-text("PNG")').first()).toBeVisible();
 
     // Ensure the tab switched to "Customize"
-    await expect(page.locator('text=Customize')).toBeVisible();
+    await expect(page.locator('button:has-text("Customize")').first()).toBeVisible();
   });
 });

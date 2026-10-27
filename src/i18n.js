@@ -4,7 +4,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 
 // Preload English to prevent initial network waterfall & layout delay
-import enTranslation from '../public/locales/en/translation.json';
+import enTranslation from './locales/en/translation.json';
 
 i18n
   .use(HttpApi)
