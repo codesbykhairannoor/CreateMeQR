@@ -1,4 +1,6 @@
 {
+  "trailingSlash": false,
+  "cleanUrls": true,
   "redirects": [
     {
       "source": "/(.*)",
@@ -10,7 +12,58 @@
       ],
       "destination": "https://createmy-qr.com/$1",
       "statusCode": 301
-    }
+    },
+    {
+      "source": "/usecases",
+      "destination": "/use-cases",
+      "statusCode": 301
+    },
+    {
+      "source": "/en",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/(.*)",
+      "destination": "/$1",
+      "statusCode": 301
+    },
+    { "source": "/wifi", "destination": "/wifi-qr-code-generator", "statusCode": 301 },
+    { "source": "/vcard", "destination": "/vcard-qr-code-maker", "statusCode": 301 },
+    { "source": "/whatsapp", "destination": "/whatsapp-qr-code-generator", "statusCode": 301 },
+    { "source": "/barcode", "destination": "/barcode-generator", "statusCode": 301 },
+    { "source": "/location", "destination": "/google-maps-qr-code", "statusCode": 301 },
+    { "source": "/booking", "destination": "/online-booking-qr-code", "statusCode": 301 },
+    { "source": "/pdf", "destination": "/pdf-qr-code-generator", "statusCode": 301 },
+    { "source": "/crypto", "destination": "/crypto-qr-code-generator", "statusCode": 301 },
+    { "source": "/paypal", "destination": "/paypal-qr-code-generator", "statusCode": 301 },
+    { "source": "/venmo", "destination": "/venmo-qr-code-generator", "statusCode": 301 },
+    { "source": "/instagram", "destination": "/instagram-qr-code-generator", "statusCode": 301 },
+    { "source": "/facebook", "destination": "/facebook-qr-code-generator", "statusCode": 301 },
+    { "source": "/twitter", "destination": "/twitter-qr-code-generator", "statusCode": 301 },
+    { "source": "/tiktok", "destination": "/tiktok-qr-code-generator", "statusCode": 301 },
+    { "source": "/linkedin", "destination": "/linkedin-qr-code-generator", "statusCode": 301 },
+    { "source": "/youtube", "destination": "/youtube-qr-code-generator", "statusCode": 301 },
+    { "source": "/spotify", "destination": "/spotify-qr-code-generator", "statusCode": 301 },
+    { "source": "/telegram", "destination": "/telegram-qr-code-generator", "statusCode": 301 },
+    { "source": "/snapchat", "destination": "/snapchat-qr-code-generator", "statusCode": 301 },
+    { "source": "/discord", "destination": "/discord-qr-code-generator", "statusCode": 301 },
+    { "source": "/scanqr", "destination": "/scan-qr", "statusCode": 301 },
+    { "source": "/scanbarcode", "destination": "/scan-barcode", "statusCode": 301 },
+    { "source": "/text", "destination": "/text-qr-code-generator", "statusCode": 301 },
+    { "source": "/email", "destination": "/email-qr-code-generator", "statusCode": 301 },
+    { "source": "/phone", "destination": "/phone-qr-code-generator", "statusCode": 301 },
+    { "source": "/sms", "destination": "/sms-qr-code-generator", "statusCode": 301 },
+    { "source": "/event", "destination": "/event-qr-code-generator", "statusCode": 301 },
+    { "source": "/image", "destination": "/image-qr-code-generator", "statusCode": 301 },
+    { "source": "/video", "destination": "/video-qr-code-generator", "statusCode": 301 },
+    { "source": "/audio", "destination": "/audio-qr-code-generator", "statusCode": 301 },
+    { "source": "/file", "destination": "/file-qr-code-generator", "statusCode": 301 },
+    { "source": "/gforms", "destination": "/google-forms-qr-code-generator", "statusCode": 301 },
+    { "source": "/greview", "destination": "/google-review-qr-code-generator", "statusCode": 301 },
+    { "source": "/linkinbio", "destination": "/link-in-bio-qr-code-generator", "statusCode": 301 },
+    { "source": "/amazon", "destination": "/amazon-qr-code-generator", "statusCode": 301 },
+    { "source": "/appstore", "destination": "/app-store-qr-code-generator", "statusCode": 301 }
   ],
   "headers": [
     {
@@ -81,7 +134,6 @@
       ]
     }
   ],
-  "cleanUrls": true,
   "rewrites": [
     {
       "source": "/(.*)",

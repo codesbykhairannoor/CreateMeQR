@@ -292,7 +292,7 @@ async function run() {
     fs.mkdirSync(rootLegacyUseCases, { recursive: true });
     fs.writeFileSync(
       path.join(rootLegacyUseCases, 'index.html'),
-      `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=https://createmy-qr.com/use-cases" /><link rel="canonical" href="https://createmy-qr.com/use-cases" /><meta name="robots" content="noindex,follow" /></head><body><p>Redirecting to <a href="https://createmy-qr.com/use-cases">https://createmy-qr.com/use-cases</a>...</p></body></html>`
+      `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=https://createmy-qr.com/use-cases" /><link rel="canonical" href="https://createmy-qr.com/use-cases" /><script>window.location.replace("https://createmy-qr.com/use-cases");</script></head><body><p>Redirecting to <a href="https://createmy-qr.com/use-cases">https://createmy-qr.com/use-cases</a>...</p></body></html>`
     );
     aliasCount++;
   }
@@ -303,7 +303,7 @@ async function run() {
     fs.mkdirSync(rootLegacyEn, { recursive: true });
     fs.writeFileSync(
       path.join(rootLegacyEn, 'index.html'),
-      `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=https://createmy-qr.com/" /><link rel="canonical" href="https://createmy-qr.com/" /><meta name="robots" content="noindex,follow" /></head><body><p>Redirecting to <a href="https://createmy-qr.com/">https://createmy-qr.com/</a>...</p></body></html>`
+      `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=https://createmy-qr.com" /><link rel="canonical" href="https://createmy-qr.com" /><script>window.location.replace("https://createmy-qr.com");</script></head><body><p>Redirecting to <a href="https://createmy-qr.com">https://createmy-qr.com</a>...</p></body></html>`
     );
     aliasCount++;
   }
@@ -323,7 +323,7 @@ async function run() {
           const targetUrl = `https://createmy-qr.com/${lang}${locSlug === '/' ? '' : locSlug}`;
           fs.writeFileSync(
             path.join(aliasDir, 'index.html'),
-            `<!DOCTYPE html><html lang="${lang}"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><meta name="robots" content="noindex,follow" /></head><body><p>Redirecting to <a href="${targetUrl}">${targetUrl}</a>...</p></body></html>`
+            `<!DOCTYPE html><html lang="${lang}"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><script>window.location.replace("${targetUrl}");</script></head><body><p>Redirecting to <a href="${targetUrl}">${targetUrl}</a>...</p></body></html>`
           );
           aliasCount++;
         }
@@ -338,7 +338,7 @@ async function run() {
       const targetUrl = `https://createmy-qr.com/${lang}${locUseCaseSlug === '/' ? '' : locUseCaseSlug}`;
       fs.writeFileSync(
         path.join(legacyUcDir, 'index.html'),
-        `<!DOCTYPE html><html lang="${lang}"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><meta name="robots" content="noindex,follow" /></head><body><p>Redirecting to <a href="${targetUrl}">${targetUrl}</a>...</p></body></html>`
+        `<!DOCTYPE html><html lang="${lang}"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><script>window.location.replace("${targetUrl}");</script></head><body><p>Redirecting to <a href="${targetUrl}">${targetUrl}</a>...</p></body></html>`
       );
       aliasCount++;
     }

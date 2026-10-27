@@ -146,7 +146,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
 
   const seoTitle = `CreateMy-QR | ${t('home.heroTitle', 'The QR Code Generator That')} ${t('home.heroTitleHighlight', 'Never Expires.')}`;
   const seoDesc = t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO/IEC 18004-compliant, available in 30 languages.');
-  const canonicalBase = `https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}`;
+  const canonicalBase = currentLangCode === 'en' ? 'https://createmy-qr.com' : `https://createmy-qr.com/${currentLangCode}`;
 
   // Translated FAQ — now from translation JSON
   const FAQS = [
@@ -163,13 +163,13 @@ export default function HomePage({ currentLangCode = 'en' }) {
         <meta property="og:title" content={seoTitle} />
         <meta property="og:description" content={seoDesc} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`${canonicalBase}/`} />
-        <link rel="canonical" href={`${canonicalBase}/`} />
+        <meta property="og:url" content={canonicalBase} />
+        <link rel="canonical" href={canonicalBase} />
         {LANGS.map(lang => {
-          const href = `https://createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}/`;
+          const href = lang.code === 'en' ? 'https://createmy-qr.com' : `https://createmy-qr.com/${lang.code}`;
           return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
         })}
-        <link rel="alternate" hrefLang="x-default" href="https://createmy-qr.com/" />
+        <link rel="alternate" hrefLang="x-default" href="https://createmy-qr.com" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",

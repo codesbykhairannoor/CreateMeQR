@@ -72,8 +72,8 @@ for (const filePath of htmlFiles) {
 
   if (isRedirectStub) {
     redirectPages++;
-    const hasCanonical = /<link\s+rel="canonical"\s+href="https:\/\/createmy-qr\.com\/[^"]*"\s*\/?>/i.test(content);
-    const hasRefresh = /<meta\s+http-equiv="refresh"\s+content="0;\s*url=https:\/\/createmy-qr\.com\/[^"]*"\s*\/?>/i.test(content);
+    const hasCanonical = /<link\s+rel="canonical"\s+href="https:\/\/createmy-qr\.com(?:\/[^"]*)?"\s*\/?>/i.test(content);
+    const hasRefresh = /<meta\s+http-equiv="refresh"\s+content="0;\s*url=https:\/\/createmy-qr\.com(?:\/[^"]*)?"\s*\/?>/i.test(content);
     if (hasCanonical && hasRefresh) {
       stats.validRedirectStubs++;
     } else {
