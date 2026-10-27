@@ -6,30 +6,62 @@ const crypto = require('crypto');
 const STATE_FILE = path.join(__dirname, '../google-indexing-state.json');
 const PUBLIC_DIR = path.join(__dirname, '../public');
 
-// Find Google Service Account Key
-function findKeyFile() {
-  if (process.env.GCP_SA_KEY) {
+// 1. Multi-Service Account Key Discovery and Pooling
+function findKeyFiles() {
+  const keys = [];
+
+  // Check GCP_SA_KEYS (JSON array of accounts)
+  if (process.env.GCP_SA_KEYS) {
     try {
-      return JSON.parse(process.env.GCP_SA_KEY);
+      const parsed = JSON.parse(process.env.GCP_SA_KEYS);
+      if (Array.isArray(parsed)) {
+        for (const k of parsed) {
+          if (k.client_email && k.private_key) keys.push(k);
+        }
+      } else if (parsed.client_email) {
+        keys.push(parsed);
+      }
     } catch (e) {
-      console.error('Error parsing GCP_SA_KEY environment variable:', e.message);
+      console.warn('Could not parse GCP_SA_KEYS JSON array:', e.message);
     }
   }
 
-  const rootDir = path.join(__dirname, '..');
-  const files = fs.readdirSync(rootDir);
-  const keyFile = files.find(f => f.startsWith('createmyqr-') && f.endsWith('.json')) 
-               || files.find(f => f.includes('serviceaccount') && f.endsWith('.json'));
-
-  if (keyFile) {
-    const fullPath = path.join(rootDir, keyFile);
-    return JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+  // Check GCP_SA_KEY (Single JSON account)
+  if (process.env.GCP_SA_KEY) {
+    try {
+      const parsed = JSON.parse(process.env.GCP_SA_KEY);
+      if (parsed.client_email && !keys.some(k => k.client_email === parsed.client_email)) {
+        keys.push(parsed);
+      }
+    } catch (e) {
+      console.warn('Could not parse GCP_SA_KEY JSON:', e.message);
+    }
   }
 
-  throw new Error('Google Cloud Service Account key JSON file not found in root directory or GCP_SA_KEY env.');
+  // Check local JSON service account files in root
+  const rootDir = path.join(__dirname, '..');
+  const files = fs.readdirSync(rootDir);
+  for (const file of files) {
+    if (file.endsWith('.json') && (file.startsWith('createmyqr-') || file.includes('serviceaccount') || file.includes('google-key'))) {
+      try {
+        const content = JSON.parse(fs.readFileSync(path.join(rootDir, file), 'utf8'));
+        if (content.client_email && content.private_key) {
+          if (!keys.some(k => k.client_email === content.client_email)) {
+            keys.push(content);
+          }
+        }
+      } catch (e) {}
+    }
+  }
+
+  if (keys.length === 0) {
+    throw new Error('No valid Google Cloud Service Account keys found in environment or local files.');
+  }
+
+  return keys;
 }
 
-// Generate Google OAuth2 Access Token via JWT
+// 2. Generate Google OAuth2 Access Token via JWT
 async function getAccessToken(key) {
   const now = Math.floor(Date.now() / 1000);
   const header = { alg: 'RS256', typ: 'JWT' };
@@ -81,7 +113,7 @@ async function getAccessToken(key) {
   });
 }
 
-// Publish a single URL to Google Indexing API
+// 3. Publish a single URL to Google Indexing API
 async function publishUrl(url, token) {
   const payload = JSON.stringify({
     url: url,
@@ -118,16 +150,124 @@ async function publishUrl(url, token) {
   });
 }
 
-// Sleep helper
+// 4. Verify URL Metadata from Google Indexing API
+async function getUrlMetadata(url, token) {
+  return new Promise((resolve) => {
+    const encodedUrl = encodeURIComponent(url);
+    const req = https.request({
+      hostname: 'indexing.googleapis.com',
+      path: `/v3/urlNotifications/metadata?url=${encodedUrl}`,
+      method: 'GET',
+      headers: {
+        'Authorization': 'Bearer ' + token
+      }
+    }, (res) => {
+      let body = '';
+      res.on('data', chunk => body += chunk);
+      res.on('end', () => {
+        try {
+          resolve({ status: res.statusCode, data: JSON.parse(body) });
+        } catch (e) {
+          resolve({ status: res.statusCode, data: body });
+        }
+      });
+    });
+    req.on('error', (err) => resolve({ status: 500, data: err.message }));
+    req.end();
+  });
+}
+
+// 5. Intelligent Priority Score Algorithm
+function calculatePriorityScore(url, lastSubmittedTime) {
+  let score = 100;
+  
+  // A. Root domain / Homepage has top priority
+  if (url === 'https://createmy-qr.com' || url === 'https://createmy-qr.com/') {
+    return 100000;
+  }
+
+  // B. High Priority Languages
+  const pathOnly = url.replace('https://createmy-qr.com', '');
+  const segments = pathOnly.split('/').filter(Boolean);
+  const lang = segments.length > 0 && segments[0].length === 2 ? segments[0] : 'en';
+
+  const langWeights = {
+    'en': 500,
+    'id': 450,
+    'es': 400,
+    'de': 350,
+    'fr': 300,
+    'ja': 300,
+    'pt': 300,
+    'tr': 250,
+    'ar': 250,
+    'vi': 200,
+    'it': 200,
+    'nl': 200
+  };
+  score += (langWeights[lang] || 100);
+
+  // C. Core "Money" Tools
+  const toolWeights = [
+    { kw: 'url', weight: 400 },
+    { kw: 'wifi', weight: 400 },
+    { kw: 'wi-fi', weight: 400 },
+    { kw: 'vcard', weight: 400 },
+    { kw: 'barcode', weight: 350 },
+    { kw: 'link-in-bio', weight: 300 },
+    { kw: 'google-review', weight: 300 },
+    { kw: 'whatsapp', weight: 300 },
+    { kw: 'instagram', weight: 250 },
+    { kw: 'facebook', weight: 250 },
+    { kw: 'pdf', weight: 250 },
+    { kw: 'image', weight: 200 },
+    { kw: 'sms', weight: 200 },
+    { kw: 'email', weight: 200 },
+    { kw: 'location', weight: 200 }
+  ];
+
+  const lowerUrl = url.toLowerCase();
+  for (const item of toolWeights) {
+    if (lowerUrl.includes(item.kw)) {
+      score += item.weight;
+      break;
+    }
+  }
+
+  // D. Fixed Legacy GSC URLs (prioritize re-crawling fixed 404s and duplicates)
+  const gscTargetTokens = [
+    'google-review', 'contact', 'about', 'discord', 'event', 'tapahtuma', 'ibento',
+    'podiya', 'resim', 'snapchat', 'amazon', 'pautan-di-bio', 'tautan-di-bio'
+  ];
+  for (const token of gscTargetTokens) {
+    if (lowerUrl.includes(token)) {
+      score += 150;
+      break;
+    }
+  }
+
+  // If already submitted, decay score based on freshness (older submissions get higher urgency to refresh)
+  if (lastSubmittedTime) {
+    const hoursSince = (Date.now() - new Date(lastSubmittedTime).getTime()) / (1000 * 60 * 60);
+    score = score * (hoursSince / 24);
+  } else {
+    // Brand new unsubmitted URLs get a massive boost
+    score += 5000;
+  }
+
+  return score;
+}
+
 const sleep = (ms) => new Promise(res => setTimeout(res, ms));
 
 async function main() {
   console.log('='.repeat(75));
-  console.log('🚀 GOOGLE INDEXING API AUTOMATION (DAILY BATCH SUBMITTER)');
+  console.log('⚡ SUPERCHARGED GOOGLE INDEXING API AUTOMATION (MULTI-POOL & SMART QUEUE)');
   console.log('='.repeat(75));
 
-  const key = findKeyFile();
-  console.log(`🔑 Service Account: ${key.client_email}`);
+  const keyPool = findKeyFiles();
+  console.log(`🔑 Service Account Pool: ${keyPool.length} active account(s) detected.`);
+  keyPool.forEach((k, idx) => console.log(`   [${idx + 1}] ${k.client_email}`));
 
   // 1. Collect all URLs from 30 language sitemaps
   const sitemapFiles = fs.readdirSync(PUBLIC_DIR).filter(f => f.startsWith('sitemap-') && f.endsWith('.xml'));
@@ -157,53 +297,74 @@ async function main() {
     }
   }
 
-  // 3. Filter URLs: pending ones first
-  const pendingUrls = allUrls.filter(u => !state.submitted[u]);
-  console.log(`⏳ Pending URLs never submitted: ${pendingUrls.length}`);
+  // 3. Smart Priority Sorting
+  const rankedUrls = allUrls.map(url => ({
+    url,
+    score: calculatePriorityScore(url, state.submitted[url]),
+    submittedAt: state.submitted[url] || null
+  })).sort((a, b) => b.score - a.score);
 
-  // If all are submitted, reset cycle to keep refreshing
-  let targetQueue = pendingUrls;
-  if (targetQueue.length === 0) {
-    console.log('🔄 All URLs have been submitted at least once! Starting refresh cycle on oldest URLs.');
-    targetQueue = allUrls.sort((a, b) => {
-      const timeA = state.submitted[a] ? new Date(state.submitted[a]).getTime() : 0;
-      const timeB = state.submitted[b] ? new Date(state.submitted[b]).getTime() : 0;
-      return timeA - timeB;
-    });
-  }
+  const pendingCount = rankedUrls.filter(u => !u.submittedAt).length;
+  console.log(`⏳ Unsubmitted URLs in queue: ${pendingCount}`);
+  console.log(`🌟 Top Priority URL in queue: ${rankedUrls[0].url} (Score: ${Math.round(rankedUrls[0].score)})`);
 
-  // Daily quota limit: Google Indexing API default is 200 URLs/day
+  // Target limit from CLI or default 200 * number of service accounts
   const limitArg = process.argv.find(a => a.startsWith('--limit='));
-  const DAILY_LIMIT = limitArg ? parseInt(limitArg.split('=')[1], 10) : 200;
-  const batch = targetQueue.slice(0, DAILY_LIMIT);
+  const DAILY_LIMIT = limitArg ? parseInt(limitArg.split('=')[1], 10) : (200 * keyPool.length);
+  const batch = rankedUrls.slice(0, DAILY_LIMIT).map(u => u.url);
 
-  console.log(`🎯 Submitting batch of ${batch.length} URLs to Google Indexing API today (Limit: ${DAILY_LIMIT})...\n`);
+  console.log(`🎯 Submitting batch of ${batch.length} URLs across pool (Target: ${DAILY_LIMIT})...\n`);
 
-  const token = await getAccessToken(key);
-  console.log('✅ Google OAuth2 Bearer Token successfully generated.\n');
+  let currentKeyIdx = 0;
+  let currentKey = keyPool[currentKeyIdx];
+  let currentToken = await getAccessToken(currentKey);
+  console.log(`⚡ Authenticated via Account [1/${keyPool.length}]: ${currentKey.client_email}\n`);
 
   let successCount = 0;
   let failCount = 0;
+  const verifiedSamples = [];
 
   for (let i = 0; i < batch.length; i++) {
     const url = batch[i];
-    const res = await publishUrl(url, token);
+    let res = await publishUrl(url, currentToken);
+
+    // If quota 429 hit, attempt failover to next Service Account in pool
+    if (res.status === 429 && currentKeyIdx < keyPool.length - 1) {
+      currentKeyIdx++;
+      currentKey = keyPool[currentKeyIdx];
+      console.log(`\n🔄 Quota 429 hit. Switching to next Service Account [${currentKeyIdx + 1}/${keyPool.length}]: ${currentKey.client_email}`);
+      currentToken = await getAccessToken(currentKey);
+      res = await publishUrl(url, currentToken);
+    }
 
     if (res.status === 200) {
       successCount++;
       state.submitted[url] = new Date().toISOString();
       console.log(`[${i + 1}/${batch.length}] ✅ 200 OK: ${url}`);
+
+      // Sample verification on first 2 successful submissions
+      if (verifiedSamples.length < 2) {
+        try {
+          const meta = await getUrlMetadata(url, currentToken);
+          if (meta.status === 200 && meta.data?.latestUpdate) {
+            verifiedSamples.push({
+              url,
+              notifyTime: meta.data.latestUpdate.notifyTime
+            });
+            console.log(`   🔍 Google Acknowledged Notification at: ${meta.data.latestUpdate.notifyTime}`);
+          }
+        } catch (e) {}
+      }
     } else {
       failCount++;
       console.warn(`[${i + 1}/${batch.length}] ❌ ${res.status}: ${url} -> ${res.data}`);
       if (res.status === 429) {
-        console.error('⚠️ Quota 429 reached for today. Stopping batch to avoid penalty.');
+        console.error('⚠️ All Service Accounts in pool have reached daily quota (429). Halting gracefully.');
         break;
       }
     }
 
-    // Polite rate limit (100ms between requests)
-    await sleep(100);
+    await sleep(80); // Polite rate limit
   }
 
   state.lastRun = new Date().toISOString();
@@ -212,11 +373,30 @@ async function main() {
   console.log('\n' + '='.repeat(75));
   console.log(`📊 BATCH SUMMARY:`);
   console.log(`   - Successful Submissions: ${successCount}`);
-  console.log(`   - Failed Submissions:     ${failCount}`);
-  console.log(`   - Total URLs in History:  ${Object.keys(state.submitted).length} / ${allUrls.length}`);
-  console.log(`   - Next Batch Ready:       ${Math.max(0, allUrls.length - Object.keys(state.submitted).length)} pending`);
+  console.log(`   - Failed / Quota Exceeded: ${failCount}`);
+  console.log(`   - Total URLs in State:     ${Object.keys(state.submitted).length} / ${allUrls.length}`);
+  console.log(`   - Active Service Accounts: ${keyPool.length}`);
   console.log(`💾 State saved to: ${STATE_FILE}`);
   console.log('='.repeat(75));
+
+  // Write GitHub Actions Step Summary if running in CI
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    const summaryMd = `
+### ⚡ Google Indexing API Daily Run Summary
+
+- **Status**: Completed at \`${state.lastRun}\`
+- **Total Published (200 OK)**: **${successCount} URLs**
+- **Quota Exceeded / Failed**: ${failCount}
+- **Service Account Pool**: ${keyPool.length} active account(s)
+- **Total URLs Cataloged**: ${Object.keys(state.submitted).length} / ${allUrls.length}
+
+#### 🔍 Verified Acknowledgment Samples:
+${verifiedSamples.length > 0 
+  ? verifiedSamples.map(v => `- [${v.url}](${v.url}) → Notified: \`${v.notifyTime}\``).join('\n')
+  : '- All quota submissions recorded.'}
+`;
+    fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summaryMd, 'utf8');
+  }
 }
 
 main().catch(err => {

@@ -2,14 +2,16 @@ name: Daily Search Engine & Google Indexing Automation
 
 on:
   schedule:
-    # Runs daily at 02:00 UTC (09:00 AM WIB)
-    - cron: '0 2 * * *'
+    # Runs twice daily at 02:00 UTC (09:00 AM WIB) and 14:00 UTC (21:00 WIB)
+    - cron: '0 2,14 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub Actions UI
   push:
     branches:
       - main
     paths:
       - '.github/workflows/**'
+      - 'scripts/submit-google-indexing.cjs'
+      - 'submit-indexnow.cjs'
 
 jobs:
   index-pages:
@@ -18,6 +20,7 @@ jobs:
       contents: write
     env:
       GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+      GCP_SA_KEYS: ${{ secrets.GCP_SA_KEYS }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -37,8 +40,8 @@ jobs:
         run: npm run indexnow
 
       - name: Submit Daily Batch to Google Indexing API
-        if: env.GCP_SA_KEY != ''
-        run: npm run index:google -- --limit=200
+        if: env.GCP_SA_KEY != '' || env.GCP_SA_KEYS != ''
+        run: npm run index:google
 
       - name: Commit and Push Queue State
         if: always()
