@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -23,6 +23,173 @@ import { PSEO_ROUTES, LANGS } from './config/site';
 import { localizedRoutes, routeToToolMap } from './config/localizedRoutes';
 import { getPseoUseCase, getAllPseoData } from './config/pseo-usecases';
 
+// Universal Slug to Tool Resolver (Module-level singleton: Handles cross-language URLs, legacy URLs, unicode/accents, and aliases)
+const resolveToolFromAnySlug = (rawSlug, lang) => {
+  if (!rawSlug || rawSlug === '/') return 'home';
+  if (routeToToolMap[lang]?.[rawSlug]) return routeToToolMap[lang][rawSlug];
+
+  let decoded = rawSlug;
+  try {
+    decoded = decodeURIComponent(rawSlug);
+  } catch (e) {}
+
+  const clean = decoded.toLowerCase();
+  const stripped = clean.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+  // 1. Direct and normalized check across all language routes
+  for (const l of Object.keys(routeToToolMap)) {
+    if (routeToToolMap[l]?.[rawSlug]) return routeToToolMap[l][rawSlug];
+    if (routeToToolMap[l]?.[clean]) return routeToToolMap[l][clean];
+    if (routeToToolMap[l]?.[stripped]) return routeToToolMap[l][stripped];
+
+    for (const [s, tool] of Object.entries(routeToToolMap[l])) {
+      const sLower = s.toLowerCase();
+      if (sLower === clean || sLower === stripped) return tool;
+      const sStripped = sLower.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      if (sStripped === stripped) return tool;
+    }
+  }
+
+  // 2. Legacy aliases & static routes
+  const legacyAliases = {
+    '/contact': 'about',
+    '/about': 'about',
+    '/privacy': 'privacy',
+    '/terms': 'terms',
+    '/security': 'security',
+    '/pricing': 'pricing',
+    '/compare': 'compare',
+    '/languages': 'languages',
+    '/usecases': 'usecases',
+    '/use-cases': 'usecases',
+    '/scanqr': 'scanqr',
+    '/scan-qr': 'scanqr',
+    '/scanbarcode': 'scanbarcode',
+    '/scan-barcode': 'scanbarcode',
+    '/barcode': 'barcode',
+    '/barcode-generator': 'barcode',
+    '/wifi': 'wifi',
+    '/vcard': 'vcard',
+    '/whatsapp': 'whatsapp',
+    '/pdf': 'pdf',
+    '/location': 'location',
+    '/booking': 'booking',
+    '/crypto': 'crypto',
+    '/paypal': 'paypal',
+    '/venmo': 'venmo',
+    '/instagram': 'instagram',
+    '/facebook': 'facebook',
+    '/twitter': 'twitter',
+    '/tiktok': 'tiktok',
+    '/linkedin': 'linkedin',
+    '/youtube': 'youtube',
+    '/spotify': 'spotify',
+    '/telegram': 'telegram',
+    '/snapchat': 'snapchat',
+    '/discord': 'discord',
+    '/text': 'text',
+    '/email': 'email',
+    '/phone': 'phone',
+    '/sms': 'sms',
+    '/event': 'event',
+    '/image': 'image',
+    '/video': 'video',
+    '/audio': 'audio',
+    '/file': 'file',
+    '/gforms': 'gforms',
+    '/greview': 'greview',
+    '/linkinbio': 'linkinbio',
+    '/amazon': 'amazon',
+    '/appstore': 'appstore'
+  };
+  if (legacyAliases[clean] || legacyAliases[stripped]) return legacyAliases[clean] || legacyAliases[stripped];
+
+  // 3. Keyword heuristic for malformed or cross-language mixed slugs
+  const keywordMap = [
+    ['linkedin', 'linkedin'],
+    ['snapchat', 'snapchat'],
+    ['instagram', 'instagram'],
+    ['facebook', 'facebook'],
+    ['twitter', 'twitter'],
+    ['tiktok', 'tiktok'],
+    ['youtube', 'youtube'],
+    ['spotify', 'spotify'],
+    ['telegram', 'telegram'],
+    ['discord', 'discord'],
+    ['whatsapp', 'whatsapp'],
+    ['paypal', 'paypal'],
+    ['venmo', 'venmo'],
+    ['amazon', 'amazon'],
+    ['appstore', 'appstore'],
+    ['app-store', 'appstore'],
+    ['google-forms', 'gforms'],
+    ['gforms', 'gforms'],
+    ['google-review', 'greview'],
+    ['greview', 'greview'],
+    ['link-in-bio', 'linkinbio'],
+    ['linkinbio', 'linkinbio'],
+    ['pautan-di-bio', 'linkinbio'],
+    ['tautan-di-bio', 'linkinbio'],
+    ['wifi', 'wifi'],
+    ['wi-fi', 'wifi'],
+    ['vcard', 'vcard'],
+    ['scan-barcode', 'scanbarcode'],
+    ['scanbarcode', 'scanbarcode'],
+    ['scan-qr', 'scanqr'],
+    ['scanqr', 'scanqr'],
+    ['barcode', 'barcode'],
+    ['maps', 'location'],
+    ['location', 'location'],
+    ['lokasyon', 'location'],
+    ['booking', 'booking'],
+    ['crypto', 'crypto'],
+    ['email', 'email'],
+    ['sms', 'sms'],
+    ['phone', 'phone'],
+    ['event', 'event'],
+    ['tapahtuma', 'event'],
+    ['ibento', 'event'],
+    ['подія', 'event'],
+    ['podia', 'event'],
+    ['resim', 'image'],
+    ['image', 'image'],
+    ['gambar', 'image'],
+    ['video', 'video'],
+    ['audio', 'audio'],
+    ['file', 'file'],
+    ['text', 'text'],
+    ['teks', 'text'],
+    ['url', 'url'],
+    ['contact', 'about'],
+    ['privacy', 'privacy'],
+    ['terms', 'terms'],
+    ['security', 'security'],
+    ['pricing', 'pricing'],
+    ['compare', 'compare'],
+    ['languages', 'languages'],
+    ['usecases', 'usecases'],
+    ['use-cases', 'usecases'],
+    // Generic QR Generator phrases (Arabic, Greek, Chinese, Spanish, Norwegian, Malay)
+    ['مولد', 'barcode'],
+    ['رمز-الاستجابة', 'barcode'],
+    ['δημιουργία', 'barcode'],
+    ['δωρεάν', 'barcode'],
+    ['二维码', 'barcode'],
+    ['免费在线', 'barcode'],
+    ['generador-de-codigos', 'barcode'],
+    ['gratis-qr-kode', 'barcode'],
+    ['penjana-kod-qr', 'barcode']
+  ];
+
+  for (const [kw, tool] of keywordMap) {
+    if (clean.includes(kw) || stripped.includes(kw)) {
+      return tool;
+    }
+  }
+
+  return null;
+};
+
 export default function App() {
   const { t } = useTranslation();
   const location = useLocation();
@@ -41,181 +208,16 @@ export default function App() {
 
   if (slug === '') slug = '/';
 
-  // Universal Slug to Tool Resolver (Handles cross-language URLs, legacy URLs, unicode/accents, and aliases)
-  const resolveToolFromAnySlug = (rawSlug, lang) => {
-    if (!rawSlug || rawSlug === '/') return 'home';
-    if (routeToToolMap[lang]?.[rawSlug]) return routeToToolMap[lang][rawSlug];
-
-    let decoded = rawSlug;
-    try {
-      decoded = decodeURIComponent(rawSlug);
-    } catch (e) {}
-
-    const clean = decoded.toLowerCase();
-    const stripped = clean.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-
-    // 1. Direct and normalized check across all language routes
-    for (const l of Object.keys(routeToToolMap)) {
-      if (routeToToolMap[l]?.[rawSlug]) return routeToToolMap[l][rawSlug];
-      if (routeToToolMap[l]?.[clean]) return routeToToolMap[l][clean];
-      if (routeToToolMap[l]?.[stripped]) return routeToToolMap[l][stripped];
-
-      for (const [s, tool] of Object.entries(routeToToolMap[l])) {
-        const sLower = s.toLowerCase();
-        if (sLower === clean || sLower === stripped) return tool;
-        const sStripped = sLower.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        if (sStripped === stripped) return tool;
-      }
-    }
-
-    // 2. Legacy aliases & static routes
-    const legacyAliases = {
-      '/contact': 'about',
-      '/about': 'about',
-      '/privacy': 'privacy',
-      '/terms': 'terms',
-      '/security': 'security',
-      '/pricing': 'pricing',
-      '/compare': 'compare',
-      '/languages': 'languages',
-      '/usecases': 'usecases',
-      '/use-cases': 'usecases',
-      '/scanqr': 'scanqr',
-      '/scan-qr': 'scanqr',
-      '/scanbarcode': 'scanbarcode',
-      '/scan-barcode': 'scanbarcode',
-      '/barcode': 'barcode',
-      '/barcode-generator': 'barcode',
-      '/wifi': 'wifi',
-      '/vcard': 'vcard',
-      '/whatsapp': 'whatsapp',
-      '/pdf': 'pdf',
-      '/location': 'location',
-      '/booking': 'booking',
-      '/crypto': 'crypto',
-      '/paypal': 'paypal',
-      '/venmo': 'venmo',
-      '/instagram': 'instagram',
-      '/facebook': 'facebook',
-      '/twitter': 'twitter',
-      '/tiktok': 'tiktok',
-      '/linkedin': 'linkedin',
-      '/youtube': 'youtube',
-      '/spotify': 'spotify',
-      '/telegram': 'telegram',
-      '/snapchat': 'snapchat',
-      '/discord': 'discord',
-      '/text': 'text',
-      '/email': 'email',
-      '/phone': 'phone',
-      '/sms': 'sms',
-      '/event': 'event',
-      '/image': 'image',
-      '/video': 'video',
-      '/audio': 'audio',
-      '/file': 'file',
-      '/gforms': 'gforms',
-      '/greview': 'greview',
-      '/linkinbio': 'linkinbio',
-      '/amazon': 'amazon',
-      '/appstore': 'appstore'
-    };
-    if (legacyAliases[clean] || legacyAliases[stripped]) return legacyAliases[clean] || legacyAliases[stripped];
-
-    // 3. Keyword heuristic for malformed or cross-language mixed slugs
-    const keywordMap = [
-      ['linkedin', 'linkedin'],
-      ['snapchat', 'snapchat'],
-      ['instagram', 'instagram'],
-      ['facebook', 'facebook'],
-      ['twitter', 'twitter'],
-      ['tiktok', 'tiktok'],
-      ['youtube', 'youtube'],
-      ['spotify', 'spotify'],
-      ['telegram', 'telegram'],
-      ['discord', 'discord'],
-      ['whatsapp', 'whatsapp'],
-      ['paypal', 'paypal'],
-      ['venmo', 'venmo'],
-      ['amazon', 'amazon'],
-      ['appstore', 'appstore'],
-      ['app-store', 'appstore'],
-      ['google-forms', 'gforms'],
-      ['gforms', 'gforms'],
-      ['google-review', 'greview'],
-      ['greview', 'greview'],
-      ['link-in-bio', 'linkinbio'],
-      ['linkinbio', 'linkinbio'],
-      ['pautan-di-bio', 'linkinbio'],
-      ['tautan-di-bio', 'linkinbio'],
-      ['wifi', 'wifi'],
-      ['wi-fi', 'wifi'],
-      ['vcard', 'vcard'],
-      ['scan-barcode', 'scanbarcode'],
-      ['scanbarcode', 'scanbarcode'],
-      ['scan-qr', 'scanqr'],
-      ['scanqr', 'scanqr'],
-      ['barcode', 'barcode'],
-      ['maps', 'location'],
-      ['location', 'location'],
-      ['lokasyon', 'location'],
-      ['booking', 'booking'],
-      ['crypto', 'crypto'],
-      ['email', 'email'],
-      ['sms', 'sms'],
-      ['phone', 'phone'],
-      ['event', 'event'],
-      ['tapahtuma', 'event'],
-      ['ibento', 'event'],
-      ['подія', 'event'],
-      ['podia', 'event'],
-      ['resim', 'image'],
-      ['image', 'image'],
-      ['gambar', 'image'],
-      ['video', 'video'],
-      ['audio', 'audio'],
-      ['file', 'file'],
-      ['text', 'text'],
-      ['teks', 'text'],
-      ['url', 'url'],
-      ['contact', 'about'],
-      ['privacy', 'privacy'],
-      ['terms', 'terms'],
-      ['security', 'security'],
-      ['pricing', 'pricing'],
-      ['compare', 'compare'],
-      ['languages', 'languages'],
-      ['usecases', 'usecases'],
-      ['use-cases', 'usecases'],
-      // Generic QR Generator phrases (Arabic, Greek, Chinese, Spanish, Norwegian, Malay)
-      ['مولد', 'barcode'],
-      ['رمز-الاستجابة', 'barcode'],
-      ['δημιουργία', 'barcode'],
-      ['δωρεάν', 'barcode'],
-      ['二维码', 'barcode'],
-      ['免费在线', 'barcode'],
-      ['generador-de-codigos', 'barcode'],
-      ['gratis-qr-kode', 'barcode'],
-      ['penjana-kod-qr', 'barcode']
-    ];
-
-    for (const [kw, tool] of keywordMap) {
-      if (clean.includes(kw) || stripped.includes(kw)) {
-        return tool;
-      }
-    }
-
-    return null;
-  };
-
+  const foundTool = useMemo(() => resolveToolFromAnySlug(slug, currentLangCode), [slug, currentLangCode]);
   const pseoUseCase = getPseoUseCase(slug, currentLangCode);
-  const foundTool = resolveToolFromAnySlug(slug, currentLangCode);
   const resolvedToolType = pseoUseCase ? pseoUseCase.baseTool : (foundTool || 'url');
 
   const [qrType, setQrType] = useState(resolvedToolType);
 
   const isHome = slug === '/' || slug === '' || slug === '/home';
-  const correctExpectedSlug = foundTool ? (localizedRoutes[currentLangCode]?.[foundTool] || `/${foundTool}`) : slug;
+  const correctExpectedSlug = useMemo(() => {
+    return foundTool ? (localizedRoutes[currentLangCode]?.[foundTool] || `/${foundTool}`) : slug;
+  }, [foundTool, currentLangCode, slug]);
 
   // Auto-redirect cross-language or legacy URLs on client-side
   useEffect(() => {
