@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate, Link as RouterLink } from 'react-router-dom';
-import { Globe, Moon, Sun, X, Menu, Clock, Heart } from 'lucide-react';
+import { Globe, Moon, Sun, X, Menu, Clock, Heart, ShieldCheck, Cpu, Lock } from 'lucide-react';
 import { LANGS } from '../config/site';
 import { localizedRoutes, routeToToolMap } from '../config/localizedRoutes';
 import MegaNav from '../components/nav/MegaNav';
@@ -233,9 +233,20 @@ export default function MainLayout({ children }) {
                   CreateMy-<span className="text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-blue-500">QR</span>
                 </span>
               </div>
-              <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed mb-6">
+              <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed mb-4 speakable-summary">
                 {t('footer.desc', "The world's fastest, 100% free, privacy-first QR Code generator. Powered by client-side WebAssembly.")}
               </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">
+                  <Cpu className="w-3 h-3" /> 100% WASM
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-500/10 text-blue-700 dark:text-blue-400 border border-blue-500/20">
+                  <Lock className="w-3 h-3" /> Zero Server Uploads
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-purple-500/10 text-purple-700 dark:text-purple-400 border border-purple-500/20">
+                  <ShieldCheck className="w-3 h-3" /> ISO/IEC 18004
+                </span>
+              </div>
             </div>
             
             <div>

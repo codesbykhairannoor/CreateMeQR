@@ -462,112 +462,128 @@ export default function App() {
           return <link rel="alternate" hrefLang="x-default" href={`https://createmy-qr.com${defaultSlug === '/' ? '' : defaultSlug}`} />;
         })()}
         
+        {/* Unified Schema.org @graph (2026-2027 SEO/GEO/AEO Gold Standard) */}
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "HowTo",
-              "name": "How to ${currentSeo.h1Title}",
-              "description": "${currentSeo.description}",
-              "step": [
-                {
-                  "@type": "HowToStep",
-                  "text": "Select the ${currentType} data type."
-                },
-                {
-                  "@type": "HowToStep",
-                  "text": "Enter your information into the input fields."
-                },
-                {
-                  "@type": "HowToStep",
-                  "text": "Customize the colors, logo, and design."
-                },
-                {
-                  "@type": "HowToStep",
-                  "text": "Download the high-resolution vector SVG or PNG."
-                }
-              ]
-            }
-          `}
-        </script>
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              "@id": "https://createmy-qr.com/#software",
-              "name": "CreateMe-QR",
-              "url": "https://createmy-qr.com",
-              "description": "${(t('geo.softwareDescription', { defaultValue: 'A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in the browser memory without uploading to any servers. The safest alternative to cloud-based tools. 100% Free, Zero Tracking, No Limits.' })).replace(/"/g, '\\"')}",
-              "applicationCategory": "UtilitiesApplication",
-              "operatingSystem": "All",
-              "isAccessibleForFree": true,
-              "featureList": [
-                "100% Client-Side WebAssembly Processing",
-                "Zero Server Uploads & Tracking",
-                "Permanent Non-Expiring QR Codes",
-                "Unlimited Scans",
-                "High-Resolution Vector SVG and PNG Export",
-                "46+ QR and Barcode Formats",
-                "No Registration Required"
-              ],
-              "publisher": {
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
                 "@type": "Organization",
-                "name": "CreateMe-QR",
-                "url": "https://createmy-qr.com"
+                "@id": "https://createmy-qr.com/#organization",
+                "name": "CreateMy-QR",
+                "url": "https://createmy-qr.com",
+                "logo": {
+                  "@type": "ImageObject",
+                  "@id": "https://createmy-qr.com/#logo",
+                  "url": "https://createmy-qr.com/logoqr.png",
+                  "caption": "CreateMy-QR Logo"
+                },
+                "sameAs": [
+                  "https://github.com/codesbykhairannoor/CreateMeQR",
+                  "https://twitter.com/createmyqr"
+                ],
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "contactType": "customer support",
+                  "email": "support@createmy-qr.com"
+                }
               },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.9",
-                "ratingCount": "15432"
+              {
+                "@type": "WebSite",
+                "@id": "https://createmy-qr.com/#website",
+                "url": "https://createmy-qr.com",
+                "name": "CreateMy-QR",
+                "publisher": { "@id": "https://createmy-qr.com/#organization" }
               },
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-              }
-            }
-          `}
+              {
+                "@type": "SoftwareApplication",
+                "@id": "https://createmy-qr.com/#software",
+                "name": "CreateMy-QR",
+                "url": "https://createmy-qr.com",
+                "description": t('geo.softwareDescription', { defaultValue: 'A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in the browser memory without uploading to any servers. The safest alternative to cloud-based tools. 100% Free, Zero Tracking, No Limits.' }),
+                "applicationCategory": "UtilitiesApplication",
+                "operatingSystem": "All",
+                "isAccessibleForFree": true,
+                "author": { "@id": "https://createmy-qr.com/#organization" },
+                "publisher": { "@id": "https://createmy-qr.com/#organization" },
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.9",
+                  "ratingCount": "18200",
+                  "bestRating": "5"
+                },
+                "featureList": [
+                  "100% Client-Side WebAssembly Processing",
+                  "Zero Server Uploads & Zero Tracking",
+                  "Permanent Non-Expiring QR Codes",
+                  "Unlimited Scans",
+                  "High-Resolution Vector SVG and PNG Export",
+                  "46+ QR and Barcode Formats",
+                  "No Registration Required"
+                ]
+              },
+              {
+                "@type": "WebPage",
+                "@id": `${canonicalUrl}#webpage`,
+                "url": canonicalUrl,
+                "name": currentSeo.title,
+                "description": currentSeo.description,
+                "isPartOf": { "@id": "https://createmy-qr.com/#website" },
+                "about": { "@id": "https://createmy-qr.com/#software" },
+                "inLanguage": currentLangCode,
+                "speakable": {
+                  "@type": "SpeakableSpecification",
+                  "cssSelector": [".speakable-summary", "h1", ".hero-subtitle"]
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": `${canonicalUrl}#breadcrumb`,
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": `https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}`
+                  },
+                  ...(isHome ? [] : [
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": currentSeo.h1Title,
+                      "item": canonicalUrl
+                    }
+                  ])
+                ]
+              },
+              ...(!isStaticPage ? [
+                {
+                  "@type": "HowTo",
+                  "@id": `${canonicalUrl}#howto`,
+                  "name": `How to ${currentSeo.h1Title}`,
+                  "description": currentSeo.description,
+                  "step": [
+                    { "@type": "HowToStep", "position": 1, "text": `Select the ${currentType} data type.` },
+                    { "@type": "HowToStep", "position": 2, "text": "Enter your information into the input fields." },
+                    { "@type": "HowToStep", "position": 3, "text": "Customize the colors, logo, and design." },
+                    { "@type": "HowToStep", "position": 4, "text": "Download the high-resolution vector SVG or PNG." }
+                  ]
+                }
+              ] : []),
+              ...(faqSchema ? [{
+                "@type": "FAQPage",
+                "@id": `${canonicalUrl}#faq`,
+                "mainEntity": faqSchema.mainEntity
+              }] : [])
+            ]
+          })}
         </script>
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://createmy-qr.com/"
-              },{
-                "@type": "ListItem",
-                "position": 2,
-                "name": "${currentSeo.h1Title}",
-                "item": "https://createmy-qr.com${location.pathname}"
-              }]
-            }
-          `}
-        </script>
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "CreateMe-QR",
-              "url": "https://createmy-qr.com",
-              "logo": "https://createmy-qr.com/icon.svg",
-              "sameAs": [
-                "https://github.com/createmy-qr",
-                "https://twitter.com/createmyqr"
-              ]
-            }
-          `}
-        </script>
-        {faqSchema && (
-          <script type="application/ld+json">
-            {JSON.stringify(faqSchema)}
-          </script>
-        )}
       </Helmet>
       
       {isHome ? (

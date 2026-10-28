@@ -79,6 +79,7 @@ async function run() {
     cleanHead = cleanHead.replace(/<meta\s+(?:property|name)="twitter:(?:title|description|url|card|image)"[^>]*\/?>/gi, '');
     cleanHead = cleanHead.replace(/<link\s+rel="canonical"[^>]*\/?>/gi, '');
     cleanHead = cleanHead.replace(/<link\s+rel="alternate"\s+hreflang="[^"]*"\s+href="[^"]*"\s*\/?>/gi, '');
+    cleanHead = cleanHead.replace(/<script\s+type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi, '');
     baseHtml = baseHtml.replace(/<head>[\s\S]*?<\/head>/i, `<head>${cleanHead}</head>`);
   }
 

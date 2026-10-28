@@ -170,26 +170,6 @@ export default function HomePage({ currentLangCode = 'en' }) {
           return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
         })}
         <link rel="alternate" hrefLang="x-default" href="https://createmy-qr.com" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "SoftwareApplication",
-          "name": "CreateMy-QR",
-          "description": seoDesc,
-          "url": "https://createmy-qr.com",
-          "applicationCategory": "UtilitiesApplication",
-          "operatingSystem": "All",
-          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "18200" }
-        })}</script>
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": FAQS.map(f => ({
-            "@type": "Question",
-            "name": f.q,
-            "acceptedAnswer": { "@type": "Answer", "text": f.a }
-          }))
-        })}</script>
       </Helmet>
 
       {/* ═══════ SECTION 1: HERO ═══════ */}
@@ -214,8 +194,8 @@ export default function HomePage({ currentLangCode = 'en' }) {
             {t('home.heroTitleHighlight')}
           </h1>
 
-          {/* Subtitle */}
-          <p className="homepage-hero-subtitle text-zinc-600 dark:text-zinc-400" style={{
+          {/* Subtitle with speakable-summary for voice & AI assistants */}
+          <p className="homepage-hero-subtitle speakable-summary text-zinc-600 dark:text-zinc-400" style={{
             fontSize: 'clamp(1.1rem, 2.5vw, 1.3rem)',
             lineHeight: 1.65,
             maxWidth: 780,

@@ -73,7 +73,7 @@
     <!-- Canonical Tag (Dynamic hreflang is handled by React Helmet) -->
     <link rel="canonical" href="https://createmy-qr.com" />
 
-    <!-- Schema.org JSON-LD -->
+    <!-- Schema.org JSON-LD (Unified @graph) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -81,35 +81,39 @@
         {
           "@type": "Organization",
           "@id": "https://createmy-qr.com/#organization",
-          "name": "CreateMy-QR Technologies",
+          "name": "CreateMy-QR",
           "url": "https://createmy-qr.com",
           "logo": {
             "@type": "ImageObject",
+            "@id": "https://createmy-qr.com/#logo",
             "url": "https://createmy-qr.com/logoqr.png",
-            "width": 512,
-            "height": 512
+            "caption": "CreateMy-QR Logo"
           },
           "sameAs": [
             "https://github.com/codesbykhairannoor/CreateMeQR",
-            "https://twitter.com/createmyqr",
-            "https://www.linkedin.com/company/createmyqr",
-            "https://www.crunchbase.com/organization/createmyqr"
+            "https://twitter.com/createmyqr"
           ],
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "customer support",
-            "email": "support@createmy-qr.com",
-            "availableLanguage": ["English", "Indonesian", "Spanish", "French", "German", "Chinese", "Japanese"]
-          },
-          "knowsAbout": ["QR Code Generation", "Client-Side Cryptography", "Vector Graphics", "Data Privacy", "URL Shortening & Encoding"]
+            "email": "support@createmy-qr.com"
+          }
         },
         {
-          "@type": ["WebApplication", "SoftwareApplication"],
-          "@id": "https://createmy-qr.com/#webapp",
-          "name": "CreateMy-QR - Editable QR Code Generator",
+          "@type": "WebSite",
+          "@id": "https://createmy-qr.com/#website",
+          "url": "https://createmy-qr.com",
+          "name": "CreateMy-QR",
+          "publisher": { "@id": "https://createmy-qr.com/#organization" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://createmy-qr.com/#software",
+          "name": "CreateMy-QR",
           "url": "https://createmy-qr.com",
           "applicationCategory": "UtilitiesApplication",
-          "operatingSystem": "Web Browser, Any",
+          "operatingSystem": "All",
+          "isAccessibleForFree": true,
           "author": { "@id": "https://createmy-qr.com/#organization" },
           "publisher": { "@id": "https://createmy-qr.com/#organization" },
           "offers": {
@@ -118,19 +122,32 @@
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock"
           },
-          "description": "Free online custom QR code generator to create QR codes with logos, colors, and specific data formats.",
-          "featureList": [
-            "Dynamic URL QR Code Generation",
-            "High Resolution Vector SVG and EPS Export",
-            "Real-time Client Side Processing",
-            "No Expiry Date on QR Codes",
-            "Custom Logo Injection and Color Gradients"
-          ],
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
-            "reviewCount": "85400",
+            "ratingCount": "18200",
             "bestRating": "5"
+          },
+          "featureList": [
+            "100% Client-Side WebAssembly Processing",
+            "Zero Server Uploads & Zero Tracking",
+            "Permanent Non-Expiring QR Codes",
+            "Unlimited Scans",
+            "High-Resolution Vector SVG and PNG Export",
+            "46+ QR and Barcode Formats",
+            "No Registration Required"
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://createmy-qr.com/#webpage",
+          "url": "https://createmy-qr.com",
+          "name": "CreateMy-QR | Free Custom QR Code Generator",
+          "isPartOf": { "@id": "https://createmy-qr.com/#website" },
+          "about": { "@id": "https://createmy-qr.com/#software" },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".speakable-summary", "h1", ".hero-subtitle"]
           }
         },
         {
@@ -162,16 +179,6 @@
               }
             }
           ]
-        },
-        {
-          "@type": "Article",
-          "@id": "https://createmy-qr.com/#article",
-          "headline": "Editable QR Code Generator | Custom QR Code With Logo Free",
-          "description": "Create custom QR codes with logo for free. Best editable QR code generator with no watermark for WiFi, vCard, Google Reviews and URL.",
-          "author": { "@id": "https://createmy-qr.com/#organization" },
-          "publisher": { "@id": "https://createmy-qr.com/#organization" },
-          "datePublished": "2026-07-05",
-          "dateModified": "2026-08-11"
         }
       ]
     }
