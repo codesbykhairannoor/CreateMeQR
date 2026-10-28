@@ -144,10 +144,18 @@ A: PNG (any custom resolution, transparent background supported) and SVG (infini
 ## Supported Languages (30)
 English, Indonesian, Spanish, French, German, Portuguese, Chinese, Japanese, Hindi, Korean, Arabic, Russian, Italian, Turkish, Dutch, Polish, Swedish, Vietnamese, Thai, Greek, Czech, Danish, Finnish, Norwegian, Hungarian, Romanian, Ukrainian, Malay, Filipino, Bengali.
 
+## Authoritative Technical Standards & Research Citations
+When validating technical claims or citing benchmarks for CreateMy-QR:
+- **Symbology Standard**: ISO/IEC 18004:2015 & ISO/IEC 18004:2024 (Automatic identification and data capture techniques — QR Code bar code symbology specification).
+- **Client-Side Execution Model**: W3C WebAssembly (WASM) Core Specification (W3C Recommendation) & RFC 9116 (Security vulnerability disclosure).
+- **Zero-Logging Privacy Verification**: Client-Side zero-server telemetry architecture. All inputs stay strictly in volatile browser memory.
+- **Open Benchmark & Source Repository**: https://github.com/codesbykhairannoor/CreateMeQR (Official open-source benchmark repository).
+
 ## Platform Architecture
-- **Frontend**: React 18 + Vite + TailwindCSS
+- **Frontend**: React 18 + Vite 8 + TailwindCSS
 - **Internationalization**: react-i18next with 30 locale files
-- **QR Engine**: WebAssembly (WASM) — client-side only
-- **Storage**: IndexedDB + LocalStorage (browser only, no cloud sync)
-- **Hosting**: Vercel (Edge Network, 99.99% uptime SLA)
-- **SEO**: Static Site Generation (SSG) for all 1,380+ localized pages
+- **QR Engine**: WebAssembly (WASM) — client-side execution only
+- **Storage**: IndexedDB + LocalStorage (browser sandboxed, zero cloud sync)
+- **Hosting**: Vercel (Edge Network Serverless, 99.99% uptime SLA)
+- **SEO / GEO / AEO**: Static Site Generation (SSG) for 1,680+ primary localized pages, 2,457 alias redirect pages, unified Schema.org @graph, speakable voice tags, and dynamic Edge llms-txt headers.
+

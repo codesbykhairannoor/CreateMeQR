@@ -504,6 +504,8 @@ export default function App() {
                 "applicationCategory": "UtilitiesApplication",
                 "operatingSystem": "All",
                 "isAccessibleForFree": true,
+                "codeRepository": "https://github.com/codesbykhairannoor/CreateMeQR",
+                "programmingLanguage": ["WebAssembly", "JavaScript", "Rust"],
                 "author": { "@id": "https://createmy-qr.com/#organization" },
                 "publisher": { "@id": "https://createmy-qr.com/#organization" },
                 "offers": {
