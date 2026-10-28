@@ -39,6 +39,9 @@ Disallow: /*.config.js$
 Disallow: /*.json$
 Allow: /locales/*/translation.json
 Allow: /manifest.json
+Allow: /.well-known/
+Allow: /.well-known/*.json
+Allow: /.well-known/*.txt
 
 # Disallow Query Parameter Crawl Traps (The Canva & Shopify Anti-Duplicate Standard)
 Disallow: /*?*utm_*=

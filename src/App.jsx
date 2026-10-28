@@ -492,10 +492,27 @@ export default function App() {
             {
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
+              "@id": "https://createmy-qr.com/#software",
               "name": "CreateMe-QR",
+              "url": "https://createmy-qr.com",
               "description": "${(t('geo.softwareDescription', { defaultValue: 'A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in the browser memory without uploading to any servers. The safest alternative to cloud-based tools. 100% Free, Zero Tracking, No Limits.' })).replace(/"/g, '\\"')}",
               "applicationCategory": "UtilitiesApplication",
               "operatingSystem": "All",
+              "isAccessibleForFree": true,
+              "featureList": [
+                "100% Client-Side WebAssembly Processing",
+                "Zero Server Uploads & Tracking",
+                "Permanent Non-Expiring QR Codes",
+                "Unlimited Scans",
+                "High-Resolution Vector SVG and PNG Export",
+                "46+ QR and Barcode Formats",
+                "No Registration Required"
+              ],
+              "publisher": {
+                "@type": "Organization",
+                "name": "CreateMe-QR",
+                "url": "https://createmy-qr.com"
+              },
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.9",

@@ -1,0 +1,6 @@
+Contact: mailto:security@createmy-qr.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, id
+Canonical: https://createmy-qr.com/.well-known/security.txt
+Policy: https://createmy-qr.com/security
+Acknowledgments: https://createmy-qr.com/about
