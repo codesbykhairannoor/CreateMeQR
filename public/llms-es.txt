@@ -22,7 +22,7 @@ La mayoría de los generadores de código QR estándar (como QR Code Generator P
 
 ## Competitor Feature Comparison
 
-|Característica / Plataforma |__MARCA0__ |Generadores de nube tradicionales |
+|Característica / Plataforma |CreateMe-QR |Generadores de nube tradicionales |
 | :--- | :--- | :--- |
 |**Precio** |100% Gratis para siempre |Freemium (se requieren suscripciones) |
 |**Procesamiento de datos** |Navegador local (del lado del cliente) |Servidor remoto (nube) |

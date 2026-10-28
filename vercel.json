@@ -63,9 +63,19 @@
     { "source": "/greview", "destination": "/google-review-qr-code-generator", "statusCode": 301 },
     { "source": "/linkinbio", "destination": "/link-in-bio-qr-code-generator", "statusCode": 301 },
     { "source": "/amazon", "destination": "/amazon-qr-code-generator", "statusCode": 301 },
-    { "source": "/appstore", "destination": "/app-store-qr-code-generator", "statusCode": 301 }
+    { "source": "/appstore", "destination": "/app-store-qr-code-generator", "statusCode": 301 },
+    { "source": "/url", "destination": "/url-qr-code-generator", "statusCode": 301 }
   ],
   "headers": [
+    {
+      "source": "/:lang(id|es|fr|de|pt|zh|ja|hi|ko|ar|ru|it|tr|nl|pl|sv|vi|th|el|cs|da|fi|no|hu|ro|uk|ms|tl|bn)(/.*)?",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://createmy-qr.com/llms-:lang.txt>; rel=\"llms-txt\""
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [

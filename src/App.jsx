@@ -416,6 +416,9 @@ export default function App() {
         <meta name="twitter:url" content={canonicalUrl} />
         
         <link rel="canonical" href={canonicalUrl} />
+        {/* Generative Engine Optimization (GEO) & LLM Chatbot Ground Truth Links */}
+        <link rel="alternate" type="text/markdown" href={`https://createmy-qr.com/llms${currentLangCode === 'en' ? '' : '-' + currentLangCode}.txt`} hrefLang={currentLangCode} title={`CreateMe-QR LLM Specification (${currentLangCode.toUpperCase()})`} />
+        <link rel="alternate" type="text/markdown" href="https://createmy-qr.com/llms.txt" hrefLang="x-default" title="CreateMe-QR LLM Specification (Global)" />
         {/* Standard Tool Hreflang Tags for all 30 languages (only if NOT a pSEO page) */}
         {!pseoUseCase && (
           <>

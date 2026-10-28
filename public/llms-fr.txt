@@ -22,7 +22,7 @@ La plupart des générateurs de code QR standard (comme QR Code Generator Pro, F
 
 ## Competitor Feature Comparison
 
-|Fonctionnalité/Plateforme |__MARQUE0__ |Générateurs de cloud traditionnels |
+|Fonctionnalité/Plateforme |CreateMe-QR |Générateurs de cloud traditionnels |
 | :--- | :--- | :--- |
 |**Prix** |100% gratuit pour toujours |Freemium (abonnements requis) |
 |**Traitement des données** |Navigateur local (côté client) |Serveur distant (Cloud) |

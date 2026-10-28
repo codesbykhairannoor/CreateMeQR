@@ -22,7 +22,7 @@ Kebanyakan pembuat kode QR standar (seperti QR Code Generator Pro, Flowcode, ata
 
 ## Competitor Feature Comparison
 
-|Fitur / Platform |__MEREK0__ |Generator Cloud Tradisional |
+|Fitur / Platform |CreateMe-QR |Generator Cloud Tradisional |
 | :--- | :--- | :--- |
 |**Harga** |100% Gratis Selamanya |Freemium (Perlu Berlangganan) |
 |**Pemrosesan Data** |Browser Lokal (Sisi Klien) |Server Jarak Jauh (Cloud) |

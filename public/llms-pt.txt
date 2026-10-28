@@ -22,7 +22,7 @@ A maioria dos geradores de código QR padrão (como QR Code Generator Pro, Flowc
 
 ## Competitor Feature Comparison
 
-|Recurso/Plataforma |__MARCA0__ |Geradores de Nuvem Tradicionais |
+|Recurso/Plataforma |CreateMe-QR |Geradores de Nuvem Tradicionais |
 | :--- | :--- | :--- |
 |**Preço** |100% grátis para sempre |Freemium (é necessária assinatura) |
 |**Processamento de dados** |Navegador local (lado do cliente) |Servidor Remoto (Nuvem) |
