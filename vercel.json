@@ -28,43 +28,1776 @@
       "destination": "/$1",
       "statusCode": 301
     },
-    { "source": "/wifi", "destination": "/wifi-qr-code-generator", "statusCode": 301 },
-    { "source": "/vcard", "destination": "/vcard-qr-code-maker", "statusCode": 301 },
-    { "source": "/whatsapp", "destination": "/whatsapp-qr-code-generator", "statusCode": 301 },
-    { "source": "/barcode", "destination": "/barcode-generator", "statusCode": 301 },
-    { "source": "/location", "destination": "/google-maps-qr-code", "statusCode": 301 },
-    { "source": "/booking", "destination": "/online-booking-qr-code", "statusCode": 301 },
-    { "source": "/pdf", "destination": "/pdf-qr-code-generator", "statusCode": 301 },
-    { "source": "/crypto", "destination": "/crypto-qr-code-generator", "statusCode": 301 },
-    { "source": "/paypal", "destination": "/paypal-qr-code-generator", "statusCode": 301 },
-    { "source": "/venmo", "destination": "/venmo-qr-code-generator", "statusCode": 301 },
-    { "source": "/instagram", "destination": "/instagram-qr-code-generator", "statusCode": 301 },
-    { "source": "/facebook", "destination": "/facebook-qr-code-generator", "statusCode": 301 },
-    { "source": "/twitter", "destination": "/twitter-qr-code-generator", "statusCode": 301 },
-    { "source": "/tiktok", "destination": "/tiktok-qr-code-generator", "statusCode": 301 },
-    { "source": "/linkedin", "destination": "/linkedin-qr-code-generator", "statusCode": 301 },
-    { "source": "/youtube", "destination": "/youtube-qr-code-generator", "statusCode": 301 },
-    { "source": "/spotify", "destination": "/spotify-qr-code-generator", "statusCode": 301 },
-    { "source": "/telegram", "destination": "/telegram-qr-code-generator", "statusCode": 301 },
-    { "source": "/snapchat", "destination": "/snapchat-qr-code-generator", "statusCode": 301 },
-    { "source": "/discord", "destination": "/discord-qr-code-generator", "statusCode": 301 },
-    { "source": "/scanqr", "destination": "/scan-qr", "statusCode": 301 },
-    { "source": "/scanbarcode", "destination": "/scan-barcode", "statusCode": 301 },
-    { "source": "/text", "destination": "/text-qr-code-generator", "statusCode": 301 },
-    { "source": "/email", "destination": "/email-qr-code-generator", "statusCode": 301 },
-    { "source": "/phone", "destination": "/phone-qr-code-generator", "statusCode": 301 },
-    { "source": "/sms", "destination": "/sms-qr-code-generator", "statusCode": 301 },
-    { "source": "/event", "destination": "/event-qr-code-generator", "statusCode": 301 },
-    { "source": "/image", "destination": "/image-qr-code-generator", "statusCode": 301 },
-    { "source": "/video", "destination": "/video-qr-code-generator", "statusCode": 301 },
-    { "source": "/audio", "destination": "/audio-qr-code-generator", "statusCode": 301 },
-    { "source": "/file", "destination": "/file-qr-code-generator", "statusCode": 301 },
-    { "source": "/gforms", "destination": "/google-forms-qr-code-generator", "statusCode": 301 },
-    { "source": "/greview", "destination": "/google-review-qr-code-generator", "statusCode": 301 },
-    { "source": "/linkinbio", "destination": "/link-in-bio-qr-code-generator", "statusCode": 301 },
-    { "source": "/amazon", "destination": "/amazon-qr-code-generator", "statusCode": 301 },
-    { "source": "/appstore", "destination": "/app-store-qr-code-generator", "statusCode": 301 },
-    { "source": "/url", "destination": "/url-qr-code-generator", "statusCode": 301 }
+    {
+      "source": "/wifi",
+      "destination": "/wifi-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/vcard",
+      "destination": "/vcard-qr-code-maker",
+      "statusCode": 301
+    },
+    {
+      "source": "/whatsapp",
+      "destination": "/whatsapp-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/barcode",
+      "destination": "/barcode-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/location",
+      "destination": "/google-maps-qr-code",
+      "statusCode": 301
+    },
+    {
+      "source": "/booking",
+      "destination": "/online-booking-qr-code",
+      "statusCode": 301
+    },
+    {
+      "source": "/pdf",
+      "destination": "/pdf-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/crypto",
+      "destination": "/crypto-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/paypal",
+      "destination": "/paypal-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/venmo",
+      "destination": "/venmo-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/instagram",
+      "destination": "/instagram-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/facebook",
+      "destination": "/facebook-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/twitter",
+      "destination": "/twitter-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tiktok",
+      "destination": "/tiktok-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/linkedin",
+      "destination": "/linkedin-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/youtube",
+      "destination": "/youtube-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/spotify",
+      "destination": "/spotify-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/telegram",
+      "destination": "/telegram-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/snapchat",
+      "destination": "/snapchat-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/discord",
+      "destination": "/discord-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/scanqr",
+      "destination": "/scan-qr",
+      "statusCode": 301
+    },
+    {
+      "source": "/scanbarcode",
+      "destination": "/scan-barcode",
+      "statusCode": 301
+    },
+    {
+      "source": "/text",
+      "destination": "/text-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/email",
+      "destination": "/email-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/phone",
+      "destination": "/phone-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/sms",
+      "destination": "/sms-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/event",
+      "destination": "/event-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/image",
+      "destination": "/image-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/video",
+      "destination": "/video-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/audio",
+      "destination": "/audio-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/file",
+      "destination": "/file-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/gforms",
+      "destination": "/google-forms-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/greview",
+      "destination": "/google-review-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/linkinbio",
+      "destination": "/link-in-bio-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/amazon",
+      "destination": "/amazon-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/appstore",
+      "destination": "/app-store-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/url",
+      "destination": "/url-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/acara-penjana-kod-qr-percuma-dalam-talian",
+      "destination": "/ms/acara-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/amazon-免费在线二维码生成器",
+      "destination": "/zh/amazon-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/app-store-免费在线二维码生成器",
+      "destination": "/zh/app-store-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/amazon-免费在线二维码生成器",
+      "destination": "/ar/amazon-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/app-store-kostenloser-qr-code-generator-online",
+      "destination": "/ar/app-store-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/app-store-libreng-online-qr-code-generator",
+      "destination": "/ar/app-store-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/app-store-免费在线二维码生成器",
+      "destination": "/ar/app-store-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/audio-generator-de-coduri-qr-gratuit-online",
+      "destination": "/ar/lswt-tdwyn-swty-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/contact",
+      "destination": "/ar/mn-nhn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/crypto-ingyenes-online-qr-kód-generátor",
+      "destination": "/ar/crypto-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/crypto-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/crypto-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/crypto-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/ar/crypto-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/crypto-免费在线二维码生成器",
+      "destination": "/ar/crypto-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/discord-gratis-qr-kode-generator-online",
+      "destination": "/ar/discord-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/discord-penjana-kod-qr-percuma-dalam-talian",
+      "destination": "/ar/discord-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/discord-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/discord-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/facebook-libreng-online-qr-code-generator",
+      "destination": "/ar/facebook-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/facebook-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/facebook-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/google-forms-generator-de-coduri-qr-gratuit-online",
+      "destination": "/ar/google-forms-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/google-forms-penjana-kod-qr-percuma-dalam-talian",
+      "destination": "/ar/google-forms-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/google-forms-zdarma-online-generátor-qr-kódů",
+      "destination": "/ar/google-forms-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/google-forms-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/google-forms-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/google-maps-qr-code",
+      "destination": "/ar/lmwqaa-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/google-review-gratis-qr-kode-generator-online",
+      "destination": "/ar/google-review-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/google-review-penjana-kod-qr-percuma-dalam-talian",
+      "destination": "/ar/google-review-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/google-review-免费在线二维码生成器",
+      "destination": "/ar/google-review-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/gratis-qr-kode-generator-online",
+      "destination": "/ar",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/instagram-qr-code-generator",
+      "destination": "/ar/instagram-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/instagram-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/instagram-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/instagram-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/ar/instagram-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/instagram-免费在线二维码生成器",
+      "destination": "/ar/instagram-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/linkedin-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/linkedin-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/odkaz-v-biu-zdarma-online-generátor-qr-kódů",
+      "destination": "/ar/lrbt-fy-lsyr-ldhty-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/online-rezervace-zdarma-online-generátor-qr-kódů",
+      "destination": "/ar/lhjz-aabr-lntrnt-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/paypal-penjana-kod-qr-percuma-dalam-talian",
+      "destination": "/ar/paypal-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/paypal-δωρεάν-δημιουργία-qr-code-online",
+      "destination": "/ar/paypal-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/paypal-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/paypal-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/réservation-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/ar/lhjz-aabr-lntrnt-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/sms-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/sms-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/sms-免费在线二维码生成器",
+      "destination": "/ar/sms-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/snapchat-generator-de-coduri-qr-gratuit-online",
+      "destination": "/ar/snapchat-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/snapchat-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/snapchat-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/snapchat-免费在线二维码生成器",
+      "destination": "/ar/snapchat-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/spotify-gratis-qr-kod-generator-online",
+      "destination": "/ar/spotify-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/spotify-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/spotify-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/spotify-免费在线二维码生成器",
+      "destination": "/ar/spotify-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/telegram-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/telegram-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/telegram-मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर",
+      "destination": "/ar/telegram-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/telegram-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/ar/telegram-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/telegram-免费在线二维码生成器",
+      "destination": "/ar/telegram-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/tiktok-libreng-online-qr-code-generator",
+      "destination": "/ar/tiktok-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/tiktok-免费在线二维码生成器",
+      "destination": "/ar/tiktok-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/venmo-generator-de-coduri-qr-gratuit-online",
+      "destination": "/ar/venmo-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/venmo-penjana-kod-qr-percuma-dalam-talian",
+      "destination": "/ar/venmo-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/venmo-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/venmo-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/venmo-免费在线二维码生成器",
+      "destination": "/ar/venmo-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/whatsapp-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/whatsapp-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/wi-fi-libreng-online-qr-code-generator",
+      "destination": "/ar/wi-fi-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/wi-fi-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/wi-fi-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/wi-fi-免费在线二维码生成器",
+      "destination": "/ar/wi-fi-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/x-twitter-penjana-kod-qr-percuma-dalam-talian",
+      "destination": "/ar/ks-twytr-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/x-twitter-zdarma-online-generátor-qr-kódů",
+      "destination": "/ar/ks-twytr-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/youtube-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/ar/youtube-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/youtube-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/youtube-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/youtube-免费在线二维码生成器",
+      "destination": "/ar/youtube-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/zdarma-online-generátor-qr-kódů",
+      "destination": "/ar",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/відео-безкоштовний-генератор-qr-кодів-онлайн",
+      "destination": "/ar/fydyw-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/الحجز-عبر-الإنترنت-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/lhjz-aabr-lntrnt-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/الحدث-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/lhdth-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/الموقع-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/lmwqaa-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/الهاتف-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/lhtf-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/مولد-رمز-الاستجابة-السريعة-مجاني-2",
+      "destination": "/ar",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/অডিওপডকাস্ট-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/ar/lswt-tdwyn-swty-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/পাঠ্য-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/ar",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/予約-無料qrコード作成・ジェネレーター",
+      "destination": "/ar/lhjz-aabr-lntrnt-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/位置-免费在线二维码生成器",
+      "destination": "/ar/lmwqaa-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/免费在线二维码生成器",
+      "destination": "/ar",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/免费在线二维码生成器-2",
+      "destination": "/ar",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/文件-免费在线二维码生成器",
+      "destination": "/ar/mlf-brks-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/文本-免费在线二维码生成器",
+      "destination": "/ar/ns-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/活动-免费在线二维码生成器",
+      "destination": "/ar/lhdth-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/生物链接-免费在线二维码生成器",
+      "destination": "/ar/lrbt-fy-lsyr-ldhty-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/电话-免费在线二维码生成器",
+      "destination": "/ar/lhtf-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/音频-免费在线二维码生成器",
+      "destination": "/ar/lswt-tdwyn-swty-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/预订-免费在线二维码生成器",
+      "destination": "/ar/lhjz-aabr-lntrnt-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/audio-generator-de-coduri-qr-gratuit-online",
+      "destination": "/ro/audio-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/audio-penjana-kod-qr-percuma-dalam-talian",
+      "destination": "/ms/audio-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/app-store-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/bn/app-store-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/discord-gratis-qr-kode-generator-online",
+      "destination": "/bn/discord-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/google-forms-generator-de-coduri-qr-gratuit-online",
+      "destination": "/bn/google-forms-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/google-forms-libreng-online-qr-code-generator",
+      "destination": "/bn/google-forms-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/google-review-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/bn/google-review-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/gratis-qr-kod-generator-online",
+      "destination": "/bn",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/rezerwacja-darmowy-generator-kodów-qr-online",
+      "destination": "/bn/anlaain-bukin-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/sms-darmowy-generator-kodów-qr-online",
+      "destination": "/bn/sms-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/sms-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/bn/sms-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/spotify-generator-de-coduri-qr-gratuit-online",
+      "destination": "/bn/spotify-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/spotify-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/bn/spotify-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/spotify-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/bn/spotify-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/spotify-無料qrコード作成・ジェネレーター",
+      "destination": "/bn/spotify-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/telegram-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/bn/telegram-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/telegram-免费在线二维码生成器",
+      "destination": "/bn/telegram-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/tempahan-penjana-kod-qr-percuma-dalam-talian",
+      "destination": "/bn/anlaain-bukin-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/tiktok-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/bn/tiktok-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/tiktok-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/bn/tiktok-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/twitter-qr-code-generator",
+      "destination": "/bn/eks-ttuittaar-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/umístění-zdarma-online-generátor-qr-kódů",
+      "destination": "/bn/absthaan-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/wi-fi-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/bn/wi-fi-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/youtube-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/bn/youtube-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/অনলাইন-বুকিং-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/bn",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/ফোন-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/bn",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact",
+      "destination": "/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/crypto-ingyenes-online-qr-kód-generátor",
+      "destination": "/hu/crypto-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/contact",
+      "destination": "/cs/o-nas",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/discord-gratis-qr-kode-generator-online",
+      "destination": "/cs/discord-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/email-zdarma-online-generátor-qr-kódů",
+      "destination": "/cs/email-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/google-forms-zdarma-online-generátor-qr-kódů",
+      "destination": "/cs/google-forms-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/google-forms-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/cs/google-forms-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/google-review-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/cs/google-review-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/instagram-zdarma-online-generátor-qr-kódů",
+      "destination": "/cs/instagram-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/instagram-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/cs/instagram-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/lokasyon-libreng-online-qr-code-generator",
+      "destination": "/cs/umisteni-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/paypal-zdarma-online-generátor-qr-kódů",
+      "destination": "/cs/paypal-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/spotify-qr-code-generator",
+      "destination": "/cs/spotify-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/telegram-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/cs/telegram-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/telegram-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/cs/telegram-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/telegram-免费在线二维码生成器",
+      "destination": "/cs/telegram-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/vcard-libreng-online-qr-code-generator",
+      "destination": "/cs/vcard-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/venmo-ilmainen-qr-koodigeneraattori-netissä",
+      "destination": "/cs/venmo-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/venmo-ingyenes-online-qr-kód-generátor",
+      "destination": "/cs/venmo-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/whatsapp-免费在线二维码生成器",
+      "destination": "/cs/whatsapp-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/zdarma-online-generátor-qr-kódů-2",
+      "destination": "/cs",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/zvuk-podcast-zdarma-online-generátor-qr-kódů",
+      "destination": "/cs/zvuk-podcast-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/অডিওপডকাস্ট-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/cs/zvuk-podcast-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/পাঠ্য-ফ্রি-অনলাইন-কিউআর-কোড-জেনারেটর",
+      "destination": "/cs",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/email-qr-code-generator",
+      "destination": "/de/email-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/event-qr-code-generator",
+      "destination": "/de/ereignis-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/lokasyon-libreng-online-qr-code-generator",
+      "destination": "/de/standort-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/text-qr-code-generator",
+      "destination": "/de/text-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/video-zdarma-online-generátor-qr-kódů",
+      "destination": "/de/video-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/wifi-qr-code-generator",
+      "destination": "/de/wi-fi-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/discord-δωρεάν-δημιουργία-qr-code-online",
+      "destination": "/el/discord-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/vcard-qr-code-maker",
+      "destination": "/el/vcard-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/wi-fi-δωρεάν-δημιουργία-qr-code-online",
+      "destination": "/el/wi-fi-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/δωρεάν-δημιουργία-qr-code-online",
+      "destination": "/el",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/app-store-generador-de-códigos-qr-gratis-online",
+      "destination": "/es/app-store-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/email-qr-code-generator",
+      "destination": "/es/email-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/event-qr-code-generator",
+      "destination": "/es/evento-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/google-maps-qr-code",
+      "destination": "/es/ubicacion-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/google-review-generador-de-códigos-qr-gratis-online",
+      "destination": "/es/google-review-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/imagen-generador-de-códigos-qr-gratis-online",
+      "destination": "/es/imagen-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/sms-qr-code-generator",
+      "destination": "/es/sms-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/snapchat-generador-de-códigos-qr-gratis-online",
+      "destination": "/es/snapchat-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/vcard-qr-code-maker",
+      "destination": "/es/vcard-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/wi-fi-generador-de-códigos-qr-gratis-online",
+      "destination": "/es/wi-fi-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/wifi-qr-code-generator",
+      "destination": "/es/wi-fi-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/youtube-generador-de-códigos-qr-gratis-online",
+      "destination": "/es/youtube-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/contact",
+      "destination": "/fi/meista",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/generatore-di-codici-qr-gratis-online",
+      "destination": "/fi",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/google-review-ilmainen-qr-koodigeneraattori-netissä",
+      "destination": "/fi/google-review-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/penjana-kod-qr-percuma-dalam-talian-2",
+      "destination": "/fi",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/wi-fi-ilmainen-qr-koodigeneraattori-netissä",
+      "destination": "/fi/wi-fi-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/audio-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/audio-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/crypto-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/crypto-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/discord-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/discord-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/email-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/email-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/email-qr-code-generator",
+      "destination": "/fr/email-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/event-qr-code-generator",
+      "destination": "/fr/evenement-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/fichier-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/fichier-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/générateur-de-code-qr-gratuit-en-ligne-2",
+      "destination": "/fr",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/images-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/images-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/instagram-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/instagram-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/phone-qr-code-generator",
+      "destination": "/fr/telephone-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/sms-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/sms-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/snapchat-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/snapchat-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/téléphone-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/telephone-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/vcard-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/vcard-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/wi-fi-generador-de-códigos-qr-gratis-online",
+      "destination": "/fr/wi-fi-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/wi-fi-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/wi-fi-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/wifi-qr-code-generator",
+      "destination": "/fr/wi-fi-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/x-twitter-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/x-twitter-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/youtube-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/youtube-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/événement-générateur-de-code-qr-gratuit-en-ligne",
+      "destination": "/fr/evenement-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/generatore-di-codici-qr-gratis-online",
+      "destination": "/it",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/text-qr-code-generator",
+      "destination": "/hi/ttekstt-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/मुफ़्त-ऑनलाइन-क्यूआर-कोड-जनरेटर",
+      "destination": "/hi",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/ingyenes-online-qr-kód-generátor",
+      "destination": "/hu",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/spotify-ingyenes-online-qr-kód-generátor",
+      "destination": "/hu/spotify-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/venmo-ingyenes-online-qr-kód-generátor",
+      "destination": "/hu/venmo-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/wifi-ingyenes-online-qr-kód-generátor",
+      "destination": "/hu/wifi-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/email-qr-code-generator",
+      "destination": "/id/email-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/event-qr-code-generator",
+      "destination": "/id/acara-event-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/lokasyon-libreng-online-qr-code-generator",
+      "destination": "/id/lokasi-maps-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/phone-qr-code-generator",
+      "destination": "/id/telepon-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/privacy",
+      "destination": "/id",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/vcard-qr-code-maker",
+      "destination": "/id/vcard-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/wifi-qr-code-generator",
+      "destination": "/id/wi-fi-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/event-qr-code-generator",
+      "destination": "/it/evento-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/vcard-qr-code-maker",
+      "destination": "/it/vcard-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/venmo-zdarma-online-generátor-qr-kódů",
+      "destination": "/it/venmo-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/email-qr-code-generator",
+      "destination": "/ja/email-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/event-qr-code-generator",
+      "destination": "/ja/ibento-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/fil-gratis-qr-kode-generator-online",
+      "destination": "/ja/huairu-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/instagram-無料qrコード作成・ジェネレーター",
+      "destination": "/ja/instagram-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/phone-qr-code-generator",
+      "destination": "/ja/dian-hua-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/sms-無料qrコード作成・ジェネレーター",
+      "destination": "/ja/sms-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/spotify-無料qrコード作成・ジェネレーター",
+      "destination": "/ja/spotify-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/text-qr-code-generator",
+      "destination": "/ja/tekisuto-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/tiktok-無料qrコード作成・ジェネレーター",
+      "destination": "/ja/tiktok-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/vcard-qr-code-maker",
+      "destination": "/ja/vcard-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/wifi-qr-code-generator",
+      "destination": "/ja/wi-fi-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/予約-無料qrコード作成・ジェネレーター",
+      "destination": "/ja/yu-yue-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ko/phone-qr-code-generator",
+      "destination": "/ko/jeonhwa-muryo-onrain-qr-kodeu-saengseonggi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/google-maps-qr-code",
+      "destination": "/ms/lokasi-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/spotify-gratis-qr-kod-generator-online",
+      "destination": "/ms/spotify-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/venmo-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/ms/venmo-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/event-qr-code-generator",
+      "destination": "/nl/evenement-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/vcard-qr-code-maker",
+      "destination": "/nl/vcard-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/wifi-qr-code-generator",
+      "destination": "/nl/wi-fi-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/contact",
+      "destination": "/no/om-oss",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/event-qr-code-generator",
+      "destination": "/no/arrangement-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/wi-fi-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/no/wi-fi-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/event-qr-code-generator",
+      "destination": "/pl/wydarzenie-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/rezerwacja-darmowy-generator-kodów-qr-online",
+      "destination": "/pl/rezerwacja-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/snapchat-libreng-online-qr-code-generator",
+      "destination": "/pl/snapchat-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/text-qr-code-generator",
+      "destination": "/pl/tekst-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/vcard-qr-code-maker",
+      "destination": "/pl/vcard-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/amazon-gerador-de-código-qr-grátis-online",
+      "destination": "/pt/amazon-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/app-store-gerador-de-código-qr-grátis-online",
+      "destination": "/pt/app-store-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/event-qr-code-generator",
+      "destination": "/pt/evento-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/gerador-de-código-qr-grátis-online-2",
+      "destination": "/pt",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/google-maps-qr-code",
+      "destination": "/pt/localizacao-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/imagem-gerador-de-código-qr-grátis-online",
+      "destination": "/pt/imagem-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/paypal-gerador-de-código-qr-grátis-online",
+      "destination": "/pt/paypal-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/phone-qr-code-generator",
+      "destination": "/pt/telefone-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/vcard-gerador-de-código-qr-grátis-online",
+      "destination": "/pt/vcard-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/vcard-qr-code-maker",
+      "destination": "/pt/vcard-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/wifi-qr-code-generator",
+      "destination": "/pt/wi-fi-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/about",
+      "destination": "/ro/despre-noi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/event-qr-code-generator",
+      "destination": "/ro/eveniment-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/phone-qr-code-generator",
+      "destination": "/ro/telefon-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/event-qr-code-generator",
+      "destination": "/ru/sobytie-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/text-qr-code-generator",
+      "destination": "/ru/tekst-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/vcard-zdarma-online-generátor-qr-kódů",
+      "destination": "/ru/vcard-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/wifi-qr-code-generator",
+      "destination": "/ru/wi-fi-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/бесплатный-генератор-qr-кодов-онлайн",
+      "destination": "/ru",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/contact",
+      "destination": "/sv/om-oss",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/linkedin-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/sv/linkedin-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/email-qr-code-generator",
+      "destination": "/th/email-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/event-qr-code-generator",
+      "destination": "/th/ehtukaarn-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/google-forms-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี",
+      "destination": "/th/google-forms-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/sms-qr-code-generator",
+      "destination": "/th/sms-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/text-qr-code-generator",
+      "destination": "/th/kh-khwaam-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/whatsapp-เครื่องมือสร้างคิวอาร์โค้ดออนไลน์ฟรี",
+      "destination": "/th/whatsapp-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/wifi-qr-code-generator",
+      "destination": "/th/wi-fi-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/app-store-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/app-store-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/crypto-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/crypto-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/discord-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/discord-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/dosya-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/dosya-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/email-qr-code-generator",
+      "destination": "/tr/email-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/etkinlik-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/etkinlik-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/event-qr-code-generator",
+      "destination": "/tr/etkinlik-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/google-review-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/google-review-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/konum-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/konum-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/metin-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/metin-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/paypal-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/paypal-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/resim-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/resim-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/telegram-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/telegram-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/vcard-ücretsiz-çevrimiçi-qr-kod-oluşturucu",
+      "destination": "/tr/vcard-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/wifi-qr-code-generator",
+      "destination": "/tr/wi-fi-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/event-qr-code-generator",
+      "destination": "/uk/podiya-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/vcard-qr-code-maker",
+      "destination": "/uk/vcard-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/відео-безкоштовний-генератор-qr-кодів-онлайн",
+      "destination": "/uk/video-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/подія-безкоштовний-генератор-qr-кодів-онлайн",
+      "destination": "/uk/podiya-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/acara-penjana-kod-qr-percuma-dalam-talian",
+      "destination": "/vi/su-kien-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/event-qr-code-generator",
+      "destination": "/vi/su-kien-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/linkedin-tạo-mã-qr-miễn-phí-trực-tuyến",
+      "destination": "/vi/linkedin-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/phone-qr-code-generator",
+      "destination": "/vi/dien-thoai-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/telegram-tạo-mã-qr-miễn-phí-trực-tuyến",
+      "destination": "/vi/telegram-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/vcard-qr-code-maker",
+      "destination": "/vi/vcard-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/wifi-qr-code-generator",
+      "destination": "/vi/wi-fi-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/video-penjana-kod-qr-percuma-dalam-talian",
+      "destination": "/ms/video-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/crypto-免费在线二维码生成器",
+      "destination": "/zh/crypto-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/discord-免费在线二维码生成器",
+      "destination": "/zh/discord-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/google-review-免费在线二维码生成器",
+      "destination": "/zh/google-review-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/instagram-免费在线二维码生成器",
+      "destination": "/zh/instagram-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/phone-qr-code-generator",
+      "destination": "/zh/dian-hua-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/snapchat-免费在线二维码生成器",
+      "destination": "/zh/snapchat-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/spotify-免费在线二维码生成器",
+      "destination": "/zh/spotify-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/telegram-免费在线二维码生成器",
+      "destination": "/zh/telegram-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/terms",
+      "destination": "/zh",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/vcard-免费在线二维码生成器",
+      "destination": "/zh/vcard-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/venmo-免费在线二维码生成器",
+      "destination": "/zh/venmo-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/whatsapp-免费在线二维码生成器",
+      "destination": "/zh/whatsapp-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/wi-fi-免费在线二维码生成器",
+      "destination": "/zh/wi-fi-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/youtube-免费在线二维码生成器",
+      "destination": "/zh/youtube-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/位置-免费在线二维码生成器",
+      "destination": "/zh/wei-zhi-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/免费在线二维码生成器",
+      "destination": "/zh",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/免费在线二维码生成器-2",
+      "destination": "/zh",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/活动-免费在线二维码生成器",
+      "destination": "/zh/huo-dong-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/生物链接-免费在线二维码生成器",
+      "destination": "/zh/sheng-wu-lian-jie-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/电话-免费在线二维码生成器",
+      "destination": "/zh/dian-hua-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/预订-免费在线二维码生成器",
+      "destination": "/zh/yu-ding-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/βίντεο-δωρεάν-δημιουργία-qr-code-online",
+      "destination": "/el",
+      "statusCode": 301
+    },
+    {
+      "source": "/الحجز-عبر-الإنترنت-مولد-رمز-الاستجابة-السريعة-مجاني",
+      "destination": "/ar/lhjz-aabr-lntrnt-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/免费在线二维码生成器",
+      "destination": "/zh",
+      "statusCode": 301
+    },
+    {
+      "source": "/免费在线二维码生成器-2",
+      "destination": "/zh",
+      "statusCode": 301
+    },
+    {
+      "source": "/文件-免费在线二维码生成器",
+      "destination": "/zh/wen-jian-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/文本-免费在线二维码生成器",
+      "destination": "/zh/wen-ben-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/活动-免费在线二维码生成器",
+      "destination": "/zh/huo-dong-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/無料qrコード作成・ジェネレーター",
+      "destination": "/zh",
+      "statusCode": 301
+    },
+    {
+      "source": "/生物链接-免费在线二维码生成器",
+      "destination": "/zh/sheng-wu-lian-jie-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/电话-免费在线二维码生成器",
+      "destination": "/zh/dian-hua-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/音频-免费在线二维码生成器",
+      "destination": "/zh/yin-pin-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/预订-免费在线二维码生成器",
+      "destination": "/zh/yu-ding-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    }
   ],
   "headers": [
     {

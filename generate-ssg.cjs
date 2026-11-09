@@ -11,12 +11,12 @@ async function run() {
     cookie: '',
   };
   global.location = global.window.location;
-  global.localStorage = { getItem: () => null, setItem: () => {} };
+  global.localStorage = { getItem: () => null, setItem: () => { } };
   global.navigator = { language: 'en' };
 
   // Use dynamic import for ES modules
   const { localizedRoutes, routeToToolMap } = await import('./src/config/localizedRoutes.js');
-  
+
   // Load all pSEO locales
   const pseoLocalesDir = path.join(__dirname, 'src', 'config', 'pseo-locales');
   const pseoDataByLang = {};
@@ -29,7 +29,7 @@ async function run() {
       }
     }
   }
-  
+
   let serverRender = null;
   try {
     const serverEntryPath = path.join(__dirname, 'dist', 'server', 'entry-server.js');
@@ -89,20 +89,20 @@ async function run() {
 
   // Load localized master templates
   const templatesPath = path.join(__dirname, 'src', 'config', 'localizedTemplates.json');
-  const localizedTemplates = fs.existsSync(templatesPath) 
-    ? JSON.parse(fs.readFileSync(templatesPath, 'utf8')) 
+  const localizedTemplates = fs.existsSync(templatesPath)
+    ? JSON.parse(fs.readFileSync(templatesPath, 'utf8'))
     : {};
 
   for (const lang of langCodes) {
     const transPath = path.join(langsDir, lang, 'translation.json');
     if (!fs.existsSync(transPath)) continue;
-    
+
     const translations = JSON.parse(fs.readFileSync(transPath, 'utf8'));
     const langTemplates = localizedTemplates[lang] || localizedTemplates['en'] || {};
     const toolMap = routeToToolMap[lang] || {};
-    
+
     const allPages = { ...toolMap };
-    
+
     // Inject pSEO routes for this language
     const langPseo = pseoDataByLang[lang] || [];
     langPseo.forEach(uc => {
@@ -110,12 +110,12 @@ async function run() {
       const safeSlug = urlSlug.startsWith('/') ? urlSlug : '/' + urlSlug;
       allPages[safeSlug] = 'pseo_' + uc.id;
     });
-    
+
     for (const [localizedSlug, toolId] of Object.entries(allPages)) {
       let title, description;
-      
-      const useCase = toolId.startsWith('pseo_') 
-        ? langPseo.find(uc => uc.id === toolId.replace('pseo_', '')) 
+
+      const useCase = toolId.startsWith('pseo_')
+        ? langPseo.find(uc => uc.id === toolId.replace('pseo_', ''))
         : null;
 
       if (useCase) {
@@ -126,7 +126,7 @@ async function run() {
         const fallbackTitle = translations.types?.[toolId] || toolId;
         const pageTitle = staticMeta.seoTitle || staticMeta.title || fallbackTitle;
         const pageDesc = staticMeta.seoDesc || staticMeta.desc || langTemplates.toolDescTemplate?.replace(/\{\{toolName\}\}/g, fallbackTitle) || '100% private, client-side generation.';
-        
+
         title = `${pageTitle} | CreateMy-QR`;
         description = pageDesc;
       } else if (toolId === 'url' || toolId === 'home' || toolId === '/' || localizedSlug === '/') {
@@ -203,7 +203,7 @@ async function run() {
 
       // Construct and inject static hreflang matrix
       let hreflangMatrix = '\n    <!-- Static Hreflang Matrix -->';
-      
+
       if (toolId.startsWith('pseo_')) {
         const pId = toolId.replace('pseo_', '');
         for (const altLang of langCodes) {
@@ -231,7 +231,7 @@ async function run() {
           const altUrl = `https://createmy-qr.com${altLangPrefix}${actualAltSlug === '/' ? '' : actualAltSlug}`;
           hreflangMatrix += `\n    <link rel="alternate" hreflang="${altLang}" href="${altUrl}" />`;
         }
-        
+
         const defaultSlug = localizedRoutes['en']?.[toolId] || '/';
         const defaultUrl = `https://createmy-qr.com${defaultSlug === '/' ? '' : defaultSlug}`;
         hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />`;
@@ -248,10 +248,10 @@ async function run() {
           // Update location for this route
           global.window.location = { pathname: urlPath, search: '', hash: '' };
           global.location = global.window.location;
-          
+
           const helmetContext = {};
           ssrHtml = serverRender(urlPath, helmetContext, lang, translations);
-          
+
           // Strip any head tags that React 19 / Helmet leaked into the body markup
           if (ssrHtml) {
             ssrHtml = ssrHtml
@@ -265,13 +265,13 @@ async function run() {
           console.error(`Error SSR rendering ${urlPath}:`, e);
         }
       }
-      
+
       newHtml = newHtml.replace('<!--ssr-outlet-->', ssrHtml);
 
-      const routeDir = lang === 'en' ? 
-        path.join(distDir, localizedSlug === '/' ? '' : localizedSlug.substring(1)) : 
+      const routeDir = lang === 'en' ?
+        path.join(distDir, localizedSlug === '/' ? '' : localizedSlug.substring(1)) :
         path.join(distDir, lang, localizedSlug === '/' ? '' : localizedSlug.substring(1));
-      
+
       if (!fs.existsSync(routeDir)) {
         fs.mkdirSync(routeDir, { recursive: true });
       }
@@ -286,7 +286,7 @@ async function run() {
   // 3. Generate legacy alias / fallback redirect pages for unmatched English slugs in other languages
   console.log('🔄 Generating legacy fallback redirect pages...');
   let aliasCount = 0;
-  
+
   // Root /usecases -> /use-cases
   const rootLegacyUseCases = path.join(distDir, 'usecases');
   if (!fs.existsSync(rootLegacyUseCases)) {
@@ -312,7 +312,7 @@ async function run() {
   for (const lang of langCodes) {
     if (lang === 'en') continue;
     const toolMap = routeToToolMap[lang] || {};
-    
+
     // Check static routes and tools
     const enRoutes = localizedRoutes['en'] || {};
     for (const [toolId, enSlug] of Object.entries(enRoutes)) {
@@ -376,41 +376,24 @@ async function run() {
 
   // 4. Known Legacy Crawled URLs from Google Search Console
   console.log('🔄 Generating static alias pages for known legacy GSC URLs...');
-  const knownLegacyGscRoutes = [
-    { from: 'tr/google-review-ücretsiz-çevrimiçi-qr-kod-oluşturucu', to: `tr${localizedRoutes['tr']?.greview || '/google-review-ucretsiz-cevrimici-qr-kod-olusturucu'}` },
-    { from: 'ar/contact', to: `ar${localizedRoutes['ar']?.about || '/mn-nhn'}` },
-    { from: 'ar/مولد-رمز-الاستجابة-السريعة-مجاني', to: `ar${localizedRoutes['ar']?.barcode || '/mwld-rmz-lstjb-lsryaa-mjny'}` },
-    { from: 'ar/gratis-qr-kode-generator-online', to: `ar${localizedRoutes['ar']?.barcode || '/mwld-rmz-lstjb-lsryaa-mjny'}` },
-    { from: 'ar/google-review-gratis-qr-kode-generator-online', to: `ar${localizedRoutes['ar']?.greview || '/google-review-mwld-rmz-lstjb-lsryaa-mjny'}` },
-    { from: 'el/δωρεάν-δημιουργία-qr-code-online', to: `el${localizedRoutes['el']?.barcode || '/dorean-dimioyrgia-qr-code-online'}` },
-    { from: 'zh/discord-免费在线二维码生成器', to: `zh${localizedRoutes['zh']?.discord || '/discord-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi'}` },
-    { from: 'zh/免费在线二维码生成器', to: `zh${localizedRoutes['zh']?.barcode || '/mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi'}` },
-    { from: 'sv/linkedin-مولد-رمز-الاستجابة-السريعة-مجاني', to: `sv${localizedRoutes['sv']?.linkedin || '/linkedin-gratis-qr-kod-generator-online'}` },
-    { from: 'sv/amazon-zdarma-online-generátor-qr-kódů', to: `sv${localizedRoutes['sv']?.amazon || '/amazon-gratis-qr-kod-generator-online'}` },
-    { from: 'ms/venmo-ücretsiz-çevrimiçi-qr-kod-oluşturucu', to: `ms${localizedRoutes['ms']?.venmo || '/venmo-penjana-kod-qr-percuma-dalam-talian'}` },
-    { from: 'ms/pautan-di-bio-penjana-kod-qr-percuma-dalam-talian', to: `ms${localizedRoutes['ms']?.linkinbio || '/tautan-di-bio-penjana-kod-qr-percuma-dalam-talian'}` },
-    { from: 'da/vcard-zdarma-online-generátor-qr-kódů', to: `da${localizedRoutes['da']?.vcard || '/vcard-gratis-online-qr-kode-generator'}` },
-    { from: 'es/vcard-zdarma-online-generátor-qr-kódů', to: `es${localizedRoutes['es']?.vcard || '/vcard-generador-de-codigos-qr-gratis-online'}` },
-    { from: 'ro/google-review-generador-de-códigos-qr-gratis-online', to: `ro${localizedRoutes['ro']?.greview || '/google-review-generator-de-coduri-qr-gratuit-online'}` },
-    { from: 'uk/подія-безкоштовний-генератор-qr-кодів-онлайн', to: `uk${localizedRoutes['uk']?.event || '/podiya-bezkoshtovniy-generator-qr-kodiv-onlayn'}` },
-    { from: 'fr/snapchat-générateur-de-code-qr-gratuit-en-ligne', to: `fr${localizedRoutes['fr']?.snapchat || '/snapchat-generateur-de-code-qr-gratuit-en-ligne'}` },
-    { from: 'fr/lokasyon-libreng-online-qr-code-generator', to: `fr${localizedRoutes['fr']?.location || '/localisation-generateur-de-code-qr-gratuit-en-ligne'}` },
-    { from: 'bn/linkedin-tạo-mã-qr-miễn-phí-trực-tuyến', to: `bn${localizedRoutes['bn']?.linkedin || '/linkedin-phri-anlaain-kiuaar-kodd-jenaarettr'}` },
-    { from: 'id/link-in-bio-kostenloser-qr-code-generator-online', to: `id${localizedRoutes['id']?.linkinbio || '/tautan-di-bio-generator-qr-code-gratis-online'}` },
-    { from: 'vi/resim-ücretsiz-çevrimiçi-qr-kod-oluşturucu', to: `vi${localizedRoutes['vi']?.image || '/hinh-anh-tao-ma-qr-mien-phi-truc-tuyen'}` }
-  ];
+  let knownLegacyGscRoutes = [];
+  try {
+    knownLegacyGscRoutes = require('./src/config/legacyGscRedirects.cjs');
+  } catch (e) {
+    console.warn('Could not load legacyGscRedirects.cjs:', e.message);
+  }
 
   for (const item of knownLegacyGscRoutes) {
     try {
+      const targetUrl = `https://createmy-qr.com/${item.to.startsWith('/') ? item.to.substring(1) : item.to}`;
+      const htmlContent = `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><script>window.location.replace("${targetUrl}");</script></head><body><p>Redirecting to <a href="${targetUrl}">${targetUrl}</a>...</p></body></html>`;
+
+      // Decoded directory
       const aliasDir = path.join(distDir, item.from);
       if (!fs.existsSync(aliasDir)) {
         fs.mkdirSync(aliasDir, { recursive: true });
       }
-      const targetUrl = `https://createmy-qr.com/${item.to.startsWith('/') ? item.to.substring(1) : item.to}`;
-      fs.writeFileSync(
-        path.join(aliasDir, 'index.html'),
-        `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><script>window.location.replace("${targetUrl}");</script></head><body><p>Redirecting to <a href="${targetUrl}">${targetUrl}</a>...</p></body></html>`
-      );
+      fs.writeFileSync(path.join(aliasDir, 'index.html'), htmlContent);
       aliasCount++;
     } catch (e) {
       console.warn(`Could not create legacy alias for ${item.from}:`, e.message);
