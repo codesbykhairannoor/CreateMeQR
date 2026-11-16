@@ -4,10 +4,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useTranslation } from 'react-i18next';
-import { User, LogOut, Sparkles, Crown, ChevronDown } from 'lucide-react';
+import { User, LogOut, Sparkles, Crown, ChevronDown, Clock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
-export default function UserMenu({ currentLangCode }) {
+export default function UserMenu({ currentLangCode, onOpenHistory }) {
   const { user, isPro, signOut, openAuthModal } = useAuth();
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -120,6 +120,23 @@ export default function UserMenu({ currentLangCode }) {
               </button>
             </div>
           )}
+
+          {/* Saved QR History Item */}
+          <div className="p-1 border-b border-slate-100 dark:border-[#102040]">
+            <button
+              onClick={() => {
+                setIsOpen(false);
+                onOpenHistory?.();
+              }}
+              className="w-full flex items-center justify-between px-3 py-2 text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-[#102040] rounded-xl transition-colors cursor-pointer"
+            >
+              <div className="flex items-center gap-2.5">
+                <Clock className="w-3.5 h-3.5 text-blue-500" />
+                <span>{t('history.title', 'Saved QR History')}</span>
+              </div>
+              <span className="text-[10px] text-slate-400 font-mono">Local</span>
+            </button>
+          </div>
 
           {/* Actions */}
           <div className="p-1">
