@@ -1422,7 +1422,7 @@
       "liabilityDesc": "Instrumentele sunt furnizate „ca atare”, fără garanții. Nu suntem răspunzători pentru nicio problemă care decurge din codurile generate.",
       "localData": "Date locale",
       "localDataDesc": "Istoricul dumneavoastră este stocat în propriul browser prin IndexedDB. Dacă ștergeți datele din browser, istoricul dvs. este șters definitiv.",
-      "lastUpdated": "Ultima actualizare: octombrie 2024",
+      "lastUpdated": "Ultima actualizare: Noiembrie 2026",
       "sec1Title": "Acordul cu Termenii",
       "sec1Desc": "Prin accesarea și utilizarea CreateMy-QR, sunteți de acord să respectați acești Termeni și condiții. Dacă nu sunteți de acord cu orice parte a termenilor, nu aveți permisiunea de a accesa Serviciul. Platforma noastră este oferită complet gratuit atât pentru uz personal, cât și pentru uz comercial.",
       "sec2Title": "Garanția locală de procesare",
@@ -1433,7 +1433,14 @@
       "sec4Desc": "Vă păstrați proprietatea 100% și toate drepturile de proprietate intelectuală asupra documentelor pe care le procesați folosind CreateMy-QR. Revendicăm zero drepturi, licențe sau drepturi de proprietate asupra conținutului dvs.",
       "sec5Title": "Declinări și răspundere",
       "seoDesc": "Consultați termenii noștri transparente de serviciu pentru CreateMy-QR. Gratuit pentru uz personal și comercial, cu zero taxe de licență și 100% siguranță a datelor la nivelul clientului.",
-      "desc": "Consultați termenii noștri transparente de serviciu pentru CreateMy-QR. Gratuit pentru uz personal și comercial, cu zero taxe de licență și 100% siguranță a datelor la nivelul clientului."
+      "desc": "Consultați termenii noștri transparente de serviciu pentru CreateMy-QR. Gratuit pentru uz personal și comercial, cu zero taxe de licență și 100% siguranță a datelor la nivelul clientului.",
+      "sec6Title": "Continuitatea Serviciului, Domeniul Accesului 'Pe Viață' și Încetarea Neanticipată a Activității",
+      "sec6LifetimeTitle": "Definirea Accesului 'Pe Viață' (Lifetime)",
+      "sec6LifetimeDesc": "'Accesul pe Viață' se referă strict la durata de funcționare comercială și operațională a serviciului CreateMy-QR, nu la durata biologică a cumpărătorului și nici la o garanție nelimitată de veșnicie. Deși depunem toate eforturile pentru a menține platforma activă cât mai mult timp, produsele digitale depind de infrastructura web și de sustenabilitatea operațională.",
+      "sec6CessationTitle": "Incapacitatea Fondatorului, Decesul, Încetarea Activității și Forța Majoră",
+      "sec6CessationDesc": "CreateMy-QR este un proiect software independent. În cazul în care menținerea operațiunilor devine imposibilă, sau în caz de incapacitate permanentă ori deces al fondatorului, platforma poate fi închisă definitiv. Utilizatorii acceptă că nicio răspundere financiară sau juridică nu revine fondatorului sau moștenitorilor acestuia.",
+      "sec6StaticGuaranteeTitle": "Independența Permanentă a Codurilor QR Statice Generate",
+      "sec6StaticGuaranteeDesc": "Deoarece CreateMy-QR funcționează 100% pe partea de client prin WebAssembly și codifică direct datele conform standardului ISO/IEC 18004 fără servere intermediare de redirecționare, fiecare cod QR, cod de bare, imagine (PNG/SVG) sau coală tipărită va funcționa pentru totdeauna. Chiar dacă acest site s-ar închide în viitor, codurile dvs. imprimate nu vor expira niciodată."
     },
     "usecases": {
       "seoTitle": "Cazuri de utilizare în industrie",

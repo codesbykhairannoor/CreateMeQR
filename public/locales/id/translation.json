@@ -1483,7 +1483,7 @@
       "liabilityDesc": "Alat disediakan 'sebagaimana adanya' tanpa jaminan. Kami tidak bertanggung jawab atas masalah apa pun yang timbul dari kode yang dihasilkan.",
       "localData": "Data Lokal",
       "localDataDesc": "Riwayat Anda disimpan di browser Anda sendiri melalui IndexedDB. Jika Anda menghapus data browser, riwayat Anda akan dihapus secara permanen.",
-      "lastUpdated": "Terakhir Diperbarui: Oktober 2024",
+      "lastUpdated": "Terakhir Diperbarui: November 2026",
       "sec1Title": "Persetujuan Persyaratan",
       "sec1Desc": "Dengan mengakses dan menggunakan CreateMy-QR, Anda setuju untuk terikat dengan Ketentuan Layanan ini. Jika Anda tidak setuju dengan bagian mana pun dari ketentuan ini, Anda tidak memiliki izin untuk mengakses Layanan. Platform kami disediakan sepenuhnya gratis untuk penggunaan pribadi dan komersial.",
       "sec2Title": "Jaminan Pengolahan Lokal",
@@ -1494,7 +1494,14 @@
       "sec4Desc": "Anda memegang 100% kepemilikan dan semua hak kekayaan intelektual atas dokumen yang Anda proses menggunakan CreateMy-QR. Kami tidak mengklaim hak, lisensi, atau kepemilikan atas konten Anda.",
       "sec5Title": "Penafian & Tanggung Jawab",
       "seoDesc": "Tinjau persyaratan layanan transparan kami untuk CreateMy-QR. Gratis untuk penggunaan pribadi dan komersial tanpa biaya lisensi dan 100% keamanan data sisi klien.",
-      "desc": "Tinjau persyaratan layanan transparan kami untuk CreateMy-QR. Gratis untuk penggunaan pribadi dan komersial tanpa biaya lisensi dan 100% keamanan data sisi klien."
+      "desc": "Tinjau persyaratan layanan transparan kami untuk CreateMy-QR. Gratis untuk penggunaan pribadi dan komersial tanpa biaya lisensi dan 100% keamanan data sisi klien.",
+      "sec6Title": "Kelangsungan Layanan, Batasan Akses 'Lifetime' & Penghentian Operasional",
+      "sec6LifetimeTitle": "Definisi Hak Akses 'Lifetime' (Seumur Hidup)",
+      "sec6LifetimeDesc": "Hak Akses 'Lifetime' merujuk secara khusus pada masa operasional dan keberadaan komersial dari layanan CreateMy-QR, bukan umur biologis dari pembeli dan bukan jaminan mutlak tanpa batas waktu hingga akhir zaman. Meskipun kami berkomitmen menjaga platform ini tetap berjalan selama mungkin, setiap produk digital terikat pada ketersediaan domain, pemeliharaan teknis, dan keberlanjutan operasional.",
+      "sec6CessationTitle": "Ketidakmampuan Pendiri, Kematian, Penutupan Layanan & Keadaan Kahar",
+      "sec6CessationDesc": "CreateMy-QR adalah proyek perangkat lunak yang dikembangkan dan dikelola secara mandiri. Dalam situasi tak terduga di mana layanan tidak lagi layak secara operasional, infrastruktur teknis terhenti, atau pendiri/pengelola mengalami ketidakmampuan fisik permanen, sakit parah, maupun meninggal dunia, layanan dapat dihentikan, diarsipkan, atau ditutup secara permanen. Pengguna dan pembeli menyetujui bahwa tidak ada tuntutan hukum, kewajiban pengembalian dana, atau kewajiban pemeliharaan berkelanjutan yang dapat ditimpakan kepada pendiri, keluarga, maupun ahli warisnya.",
+      "sec6StaticGuaranteeTitle": "Jaminan Independensi & Keabadian Kode Statis yang Telah Dibuat",
+      "sec6StaticGuaranteeDesc": "Karena CreateMy-QR beroperasi 100% di sisi klien menggunakan WebAssembly dan secara langsung mengenkode data ke dalam standar ISO/IEC 18004 tanpa melalui server redirect perantara, setiap kode QR, barcode, file gambar (PNG/SVG), maupun lembar stiker cetak yang pernah Anda unduh akan tetap berfungsi selamanya di dunia nyata. Meskipun website atau domain ini di masa depan tidak lagi aktif, cetakan fisik dan kode Anda tidak akan pernah mati atau berhenti terpindai."
     },
     "usecases": {
       "seoTitle": "Kasus Penggunaan Industri",

@@ -1483,7 +1483,7 @@
       "liabilityDesc": "Työkalut toimitetaan \"sellaisenaan\" ilman takuita. Emme ole vastuussa luoduista koodeista aiheutuvista ongelmista.",
       "localData": "Paikalliset tiedot",
       "localDataDesc": "Historia tallennetaan omaan selaimeesi IndexedDB:n kautta. Jos tyhjennät selaimesi tiedot, historiasi poistetaan pysyvästi.",
-      "lastUpdated": "Viimeksi päivitetty: lokakuu 2024",
+      "lastUpdated": "Viimeksi päivitetty: Marraskuu 2026",
       "sec1Title": "Ehtojen hyväksyminen",
       "sec1Desc": "Kun käytät CreateMy-QR:ää ja käytät sitä, sitoudut noudattamaan näitä käyttöehtoja. Jos et hyväksy jotakin ehtojen osaa, sinulla ei ole lupaa käyttää Palvelua. Alustamme tarjotaan täysin ilmaiseksi sekä henkilökohtaiseen että kaupalliseen käyttöön.",
       "sec2Title": "Paikallinen käsittelytakuu",
@@ -1494,7 +1494,14 @@
       "sec4Desc": "Säilytät 100 %:n omistusoikeuden ja kaikki immateriaalioikeudet asiakirjoihin, joita käsittelet CreateMy-QR:n avulla. Vaadimme, että sisältöösi ei ole oikeuksia, lisenssejä tai omistajuutta.",
       "sec5Title": "Vastuuvapauslausekkeet ja vastuu",
       "seoDesc": "Tutustu CreateMy-QR:n läpinäkyviin käyttöehtoihimme. Ilmainen henkilökohtaiseen ja kaupalliseen käyttöön ilman lisenssimaksuja ja 100 % asiakaspuolen tietoturvaa.",
-      "desc": "Tutustu CreateMy-QR:n läpinäkyviin käyttöehtoihimme. Ilmainen henkilökohtaiseen ja kaupalliseen käyttöön ilman lisenssimaksuja ja 100 % asiakaspuolen tietoturvaa."
+      "desc": "Tutustu CreateMy-QR:n läpinäkyviin käyttöehtoihimme. Ilmainen henkilökohtaiseen ja kaupalliseen käyttöön ilman lisenssimaksuja ja 100 % asiakaspuolen tietoturvaa.",
+      "sec6Title": "Palvelun Jatkuvuus, 'Elinikäisen' Pääsyn Määritelmä ja Odottamaton Toiminnan Lopettaminen",
+      "sec6LifetimeTitle": "'Elinikäisen' Pääsyn Määritelmä",
+      "sec6LifetimeDesc": "'Elinikäinen pääsy' viittaa nimenomaan CreateMy-QR-palvelun kaupalliseen ja toiminnalliseen elinkaareen, ei ostajan biologiseen elinikään tai ikuiseen takuuseen. Vaikka pyrimme pitämään alustan verkossa mahdollisimman pitkään, digitaaliset palvelut ovat riippuvaisia verkkoinfrastruktuurista ja toiminnan jatkuvuudesta.",
+      "sec6CessationTitle": "Perustajan Toimintakyvyttömyys, Kuolema ja Ylivoimainen Este",
+      "sec6CessationDesc": "CreateMy-QR on itsenäisesti ylläpidetty ohjelmisto. Mikäli ylläpito käy mahdottomaksi tai perustaja kohtaa pysyvän toimintakyvyttömyyden tai kuoleman, palvelu voidaan sulkea pysyvästi. Käyttäjät hyväksyvät, ettei perustajalle tai tämän perillisille koidu tällaisissa tilanteissa taloudellista tai oikeudellista vastuuta.",
+      "sec6StaticGuaranteeTitle": "Luotujen Staattisten QR-koodien Pysyvä Riippumattomuus",
+      "sec6StaticGuaranteeDesc": "Koska CreateMy-QR toimii 100-prosenttisesti selaimessa WebAssemblyn avulla ja koodaa tiedot suoraan ISO/IEC 18004 -standardin mukaisesti ilman uudelleenohjauspalvelimia, jokainen viety QR-koodi, viivakoodi, kuva (PNG/SVG) tai tulostettu arkki toimii ikuisesti. Vaikka tämä sivusto suljettaisiin tulevaisuudessa, tulostetut koodisi eivät koskaan vanhene."
     },
     "usecases": {
       "seoTitle": "Teollisuuden käyttötapaukset",

@@ -1483,7 +1483,7 @@
       "liabilityDesc": "Ang mga tool ay ibinigay 'as is' nang walang mga garantiya. Hindi kami mananagot para sa anumang mga isyu na nagmumula sa mga nabuong code.",
       "localData": "Lokal na Data",
       "localDataDesc": "Ang iyong kasaysayan ay naka-imbak sa iyong sariling browser sa pamamagitan ng IndexedDB. Kung iki-clear mo ang data ng iyong browser, permanenteng made-delete ang iyong history.",
-      "lastUpdated": "Huling Na-update: Oktubre 2024",
+      "lastUpdated": "Huling Na-update: Nobyembre 2026",
       "sec1Title": "Kasunduan sa Mga Tuntunin",
       "sec1Desc": "Sa pamamagitan ng pag-access at paggamit ng CreateMy-QR, sumasang-ayon kang sumailalim sa Mga Tuntunin ng Serbisyong ito. Kung hindi ka sumasang-ayon sa anumang bahagi ng mga tuntunin, wala kang pahintulot na i-access ang Serbisyo. Ang aming platform ay ganap na walang bayad para sa parehong personal at komersyal na paggamit.",
       "sec2Title": "Garantiya sa Lokal na Pagproseso",
@@ -1494,7 +1494,14 @@
       "sec4Desc": "Pinapanatili mo ang 100% na pagmamay-ari at lahat ng karapatan sa intelektwal na ari-arian sa mga dokumentong pinoproseso mo gamit ang CreateMy-QR. Wala kaming karapatan, lisensya, o pagmamay-ari sa iyong content.",
       "sec5Title": "Mga Disclaimer at Pananagutan",
       "seoDesc": "Suriin ang aming malinaw na mga tuntunin ng serbisyo para sa CreateMy-QR. Libre para sa personal at komersyal na paggamit na walang bayad sa paglilisensya at 100% kaligtasan ng data sa panig ng kliyente.",
-      "desc": "Suriin ang aming malinaw na mga tuntunin ng serbisyo para sa CreateMy-QR. Libre para sa personal at komersyal na paggamit na walang bayad sa paglilisensya at 100% kaligtasan ng data sa panig ng kliyente."
+      "desc": "Suriin ang aming malinaw na mga tuntunin ng serbisyo para sa CreateMy-QR. Libre para sa personal at komersyal na paggamit na walang bayad sa paglilisensya at 100% kaligtasan ng data sa panig ng kliyente.",
+      "sec6Title": "Pagpapatuloy ng Serbisyo, Kahulugan ng 'Lifetime' Access at Hindi Inaasahang Pagtigil ng Operasyon",
+      "sec6LifetimeTitle": "Kahulugan ng 'Lifetime' Access",
+      "sec6LifetimeDesc": "Ang 'Lifetime Access' ay partikular na tumutukoy sa komersyal at operasyonal na itatagal ng serbisyong CreateMy-QR, hindi sa biyolohikal na buhay ng bumili o garantiya ng pananatili magpakailanman. Bagama't layunin naming panatilihing online ang platform hangga't maaari, ang mga digital na produkto ay nakasalalay sa internet infrastructure at kakayahang magpatuloy.",
+      "sec6CessationTitle": "Kamatayan o Pagkawala ng Kakayahan ng May-ari, Pagsasara at Force Majeure",
+      "sec6CessationDesc": "Ang CreateMy-QR ay malayang binuo at pinamamahalaan. Sakaling maging imposible nang ituloy ang operasyon, o sa hindi inaasahang pagkakasakit, pagkawala ng kakayahan o pagpanaw ng may-ari, ang serbisyo ay maaaring permanenteng isara nang walang anumang pananagutang pinansyal o legal sa may-ari o sa kanyang mga tagapagmana.",
+      "sec6StaticGuaranteeTitle": "Permanenteng Kalayaan ng mga Nagawang Static QR Code",
+      "sec6StaticGuaranteeDesc": "Dahil ang CreateMy-QR ay 100% tumatakbo sa client-side gamit ang WebAssembly at direktang nag-e-encode ng data ayon sa ISO/IEC 18004 standard nang walang redirect server, ang bawat QR code, barcode, image (PNG/SVG), o sticker print na ginawa mo ay gagana magpakailanman. Kahit mawala o magsara ang website na ito balang araw, ang iyong mga naka-print na code ay hindi kailanman mag-e-expire."
     },
     "usecases": {
       "seoTitle": "Mga Kaso ng Paggamit sa Industriya",

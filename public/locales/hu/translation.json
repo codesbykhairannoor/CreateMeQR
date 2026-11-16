@@ -1422,7 +1422,7 @@
       "liabilityDesc": "A szerszámokat „ahogy vannak”, garancia nélkül biztosítjuk. Nem vállalunk felelősséget a generált kódokból eredő problémákért.",
       "localData": "Helyi adatok",
       "localDataDesc": "Az előzményeket a saját böngészőjében tárolja az IndexedDB segítségével. Ha törli a böngésző adatait, az előzmények véglegesen törlődnek.",
-      "lastUpdated": "Utolsó frissítés: 2024. október",
+      "lastUpdated": "Utoljára frissítve: 2026. november",
       "sec1Title": "Feltételek elfogadása",
       "sec1Desc": "A CreateMy-QR elérésével és használatával Ön elfogadja a jelen Szolgáltatási feltételek betartását. Ha nem ért egyet a feltételek bármely részével, nincs engedélye a Szolgáltatás elérésére. Platformunkat teljesen ingyenesen biztosítjuk személyes és kereskedelmi használatra egyaránt.",
       "sec2Title": "Helyi feldolgozási garancia",
@@ -1433,7 +1433,14 @@
       "sec4Desc": "A CreateMy-QR segítségével feldolgozott dokumentumok 100%-os tulajdonjoga és minden szellemi tulajdonjog Ön marad. Semmilyen jogot, licencet vagy tulajdonjogot követelünk a tartalmaddal kapcsolatban.",
       "sec5Title": "Jogi nyilatkozatok és felelősség",
       "seoDesc": "Tekintse át a CreateMy-QR átlátható szolgáltatási feltételeinket. Ingyenes személyes és kereskedelmi használatra, nulla licencdíjjal és 100%-os ügyféloldali adatbiztonsággal.",
-      "desc": "Tekintse át a CreateMy-QR átlátható szolgáltatási feltételeinket. Ingyenes személyes és kereskedelmi használatra, nulla licencdíjjal és 100%-os ügyféloldali adatbiztonsággal."
+      "desc": "Tekintse át a CreateMy-QR átlátható szolgáltatási feltételeinket. Ingyenes személyes és kereskedelmi használatra, nulla licencdíjjal és 100%-os ügyféloldali adatbiztonsággal.",
+      "sec6Title": "A Szolgáltatás Folytonossága, az 'Élethosszig Tartó' Hozzáférés Hatálya és a Működés Váratlan Megszűnése",
+      "sec6LifetimeTitle": "Az 'Élethosszig Tartó' Hozzáférés Meghatározása",
+      "sec6LifetimeDesc": "Az 'Élethosszig tartó hozzáférés' kifejezetten a CreateMy-QR szolgáltatás működési és piaci élettartamára vonatkozik, nem pedig a vásárló biológiai élettartamára vagy egy korlátlan örökkévalósági garanciára. Bár törekszünk az oldal lehető leghosszabb üzemeltetésére, a digitális eszközök függenek az internetes infrastruktúrától és a fenntarthatóságtól.",
+      "sec6CessationTitle": "Az Alapító Cselekvőképtelensége, Halála, Megszűnés és Vis Maior",
+      "sec6CessationDesc": "A CreateMy-QR függetlenül fenntartott szoftver. Amennyiben az üzemeltetés ellehetetlenül, vagy az alapító tartós cselekvőképtelensége, súlyos betegsége vagy halála következik be, a szolgáltatás véglegesen leállhat. A felhasználók elfogadják, hogy ilyen esetben semmilyen anyagi kártérítési felelősség nem hárítható az alapítóra vagy örököseire.",
+      "sec6StaticGuaranteeTitle": "A Létrehozott Statikus QR-kódok Végleges Függetlensége",
+      "sec6StaticGuaranteeDesc": "Mivel a CreateMy-QR 100%-ban kliensoldalon fut a WebAssembly segítségével, és az adatokat közvetlenül az ISO/IEC 18004 szabvány szerint kódolja átirányító szerverek nélkül, minden exportált QR-kód, vonalkód, képfájl (PNG/SVG) vagy nyomtatott matrica örökre működőképes marad. Még ha ez a weboldal a jövőben meg is szűnne, a kinyomtatott kódjai soha nem járnak le."
     },
     "usecases": {
       "seoTitle": "Ipari felhasználási esetek",

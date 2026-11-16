@@ -1483,7 +1483,7 @@
       "liabilityDesc": "Nástroje jsou poskytovány „tak jak jsou“ bez záruk. Neneseme odpovědnost za žádné problémy vyplývající z generovaných kódů.",
       "localData": "Místní údaje",
       "localDataDesc": "Vaše historie je uložena ve vašem vlastním prohlížeči prostřednictvím IndexedDB. Pokud vymažete data prohlížeče, vaše historie bude trvale smazána.",
-      "lastUpdated": "Poslední aktualizace: říjen 2024",
+      "lastUpdated": "Poslední aktualizace: Listopad 2026",
       "sec1Title": "Souhlas s podmínkami",
       "sec1Desc": "Přístupem a používáním CreateMy-QR souhlasíte s tím, že budete vázáni těmito Podmínkami služby. Pokud nesouhlasíte s jakoukoli částí podmínek, nemáte oprávnění k přístupu ke Službě. Naše platforma je poskytována zcela zdarma pro osobní i komerční použití.",
       "sec2Title": "Záruka místního zpracování",
@@ -1494,7 +1494,14 @@
       "sec4Desc": "Zachováváte si 100% vlastnictví a všechna práva duševního vlastnictví k dokumentům, které zpracováváte pomocí CreateMy-QR. Nárokujeme si nulová práva, licence nebo vlastnictví k vašemu obsahu.",
       "sec5Title": "Vyloučení odpovědnosti a odpovědnost",
       "seoDesc": "Přečtěte si naše transparentní podmínky služby CreateMy-QR. Zdarma pro osobní a komerční použití s ​​nulovými licenčními poplatky a 100% bezpečností dat na straně klienta.",
-      "desc": "Přečtěte si naše transparentní podmínky služby CreateMy-QR. Zdarma pro osobní a komerční použití s ​​nulovými licenčními poplatky a 100% bezpečností dat na straně klienta."
+      "desc": "Přečtěte si naše transparentní podmínky služby CreateMy-QR. Zdarma pro osobní a komerční použití s ​​nulovými licenčními poplatky a 100% bezpečností dat na straně klienta.",
+      "sec6Title": "Kontinuita Služby, Rozsah 'Doživotního' Přístupu a Nepředvídané Ukončení Provozu",
+      "sec6LifetimeTitle": "Definice 'Doživotního' Přístupu",
+      "sec6LifetimeDesc": "'Doživotní přístup' se výslovně vztahuje k provozní a komerční životnosti samotné služby CreateMy-QR, nikoli k biologickému věku kupujícího ani k neomezené záruce věčnosti. Ačkoli usilujeme o co nejdelší provozování platformy, digitální nástroje podléhají internetové infrastruktuře a možnostem údržby.",
+      "sec6CessationTitle": "Nezpůsobilost Zakladatele, Úmrtí, Ukončení Provozu a Vyšší Moc",
+      "sec6CessationDesc": "CreateMy-QR je nezávisle spravovaný software. Pokud se provoz stane neudržitelným, nebo v případě trvalé nezpůsobilosti či úmrtí zakladatele, může být služba trvale ukončena. Uživatelé výslovně souhlasí, že v takovém případě nevzniká žádná finanční ani právní odpovědnost vůči zakladateli či jeho dědicům.",
+      "sec6StaticGuaranteeTitle": "Trvalá Nezávislost Vygenerovaných Statických QR Kódů",
+      "sec6StaticGuaranteeDesc": "Vzhledem k tomu, že CreateMy-QR funguje 100% na straně klienta pomocí WebAssembly a kóduje data přímo podle standardu ISO/IEC 18004 bez přesměrovacích serverů, každý vygenerovaný QR kód, čárový kód, obrázek (PNG/SVG) či vytištěný arch bude navždy funkční. I kdyby tento web v budoucnu zanikl, vaše vytištěné kódy nikdy nepřestanou fungovat."
     },
     "usecases": {
       "seoTitle": "Případy průmyslového použití",

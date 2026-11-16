@@ -1483,7 +1483,7 @@
       "liabilityDesc": "Các công cụ được cung cấp 'nguyên trạng' mà không có bảo hành. Chúng tôi không chịu trách nhiệm về bất kỳ vấn đề nào phát sinh từ mã được tạo.",
       "localData": "Dữ liệu cục bộ",
       "localDataDesc": "Lịch sử của bạn được lưu trữ trong trình duyệt của riêng bạn thông qua IndexedDB. Nếu bạn xóa dữ liệu trình duyệt của mình, lịch sử của bạn sẽ bị xóa vĩnh viễn.",
-      "lastUpdated": "Cập nhật lần cuối: Tháng 10 năm 2024",
+      "lastUpdated": "Cập nhật lần cuối: Tháng 11 năm 2026",
       "sec1Title": "Thỏa thuận các điều khoản",
       "sec1Desc": "Bằng cách truy cập và sử dụng CreateMy-QR, bạn đồng ý bị ràng buộc bởi các Điều khoản dịch vụ này. Nếu bạn không đồng ý với bất kỳ phần nào của điều khoản, bạn không có quyền truy cập Dịch vụ. Nền tảng của chúng tôi được cung cấp hoàn toàn miễn phí cho cả mục đích sử dụng cá nhân và thương mại.",
       "sec2Title": "Đảm bảo xử lý cục bộ",
@@ -1494,7 +1494,14 @@
       "sec4Desc": "Bạn giữ 100% quyền sở hữu và tất cả các quyền sở hữu trí tuệ đối với tài liệu bạn xử lý bằng CreateMy-QR. Chúng tôi yêu cầu không có quyền, giấy phép hoặc quyền sở hữu đối với nội dung của bạn.",
       "sec5Title": "Tuyên bố miễn trừ trách nhiệm & trách nhiệm pháp lý",
       "seoDesc": "Xem lại các điều khoản dịch vụ minh bạch của chúng tôi dành cho CreateMy-QR. Miễn phí cho mục đích sử dụng cá nhân và thương mại với phí cấp phép bằng 0 và an toàn dữ liệu phía khách hàng 100%.",
-      "desc": "Xem lại các điều khoản dịch vụ minh bạch của chúng tôi dành cho CreateMy-QR. Miễn phí cho mục đích sử dụng cá nhân và thương mại với phí cấp phép bằng 0 và an toàn dữ liệu phía khách hàng 100%."
+      "desc": "Xem lại các điều khoản dịch vụ minh bạch của chúng tôi dành cho CreateMy-QR. Miễn phí cho mục đích sử dụng cá nhân và thương mại với phí cấp phép bằng 0 và an toàn dữ liệu phía khách hàng 100%.",
+      "sec6Title": "Tính Liên Tục Của Dịch Vụ, Phạm Vi 'Trọn Đời' và Ngừng Hoạt Động Bất Khả Kháng",
+      "sec6LifetimeTitle": "Định Nghĩa Quyền Truy Cập 'Trọn Đời'",
+      "sec6LifetimeDesc": "'Truy Cập Trọn Đời' đề cập cụ thể đến vòng đời vận hành và thương mại của dịch vụ CreateMy-QR, không phải là tuổi thọ sinh học của người mua cũng như không phải là sự đảm bảo vĩnh cửu không điều kiện. Mặc dù chúng tôi nỗ lực duy trì dịch vụ lâu nhất có thể, các công cụ kỹ thuật số vẫn phụ thuộc vào hạ tầng mạng và tính bền vững khi vận hành.",
+      "sec6CessationTitle": "Trường Hợp Người Sáng Lập Mất Năng Lực, Qua Đời và Bất Khả Kháng",
+      "sec6CessationDesc": "CreateMy-QR là dự án phần mềm do cá nhân phát triển độc lập. Trong trường hợp dịch vụ không còn khả thi, hoặc người sáng lập mất năng lực hành vi vĩnh viễn, bệnh nặng hay qua đời, dịch vụ có thể bị tạm ngưng hoặc đóng vĩnh viễn. Người dùng đồng ý rằng không có trách nhiệm bồi thường tài chính nào được áp đặt lên người sáng lập hoặc người thừa kế.",
+      "sec6StaticGuaranteeTitle": "Tính Độc Lập Vĩnh Viễn Của Mã QR Tĩnh Đã Tạo",
+      "sec6StaticGuaranteeDesc": "Vì CreateMy-QR hoạt động 100% phía trình duyệt bằng WebAssembly và mã hóa dữ liệu trực tiếp theo tiêu chuẩn ISO/IEC 18004 mà không qua máy chủ chuyển hướng trung gian, mọi mã QR, mã vạch, tệp hình ảnh (PNG/SVG) hoặc nhãn dán in bạn đã xuất sẽ hoạt động mãi mãi. Ngay cả khi trang web này ngừng hoạt động trong tương lai, mã in của bạn sẽ không bao giờ hết hạn."
     },
     "usecases": {
       "seoTitle": "Các trường hợp sử dụng trong ngành",

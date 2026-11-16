@@ -1483,7 +1483,7 @@
       "liabilityDesc": "De gereedschappen worden geleverd 'as is' zonder garanties. Wij zijn niet aansprakelijk voor problemen die voortvloeien uit gegenereerde codes.",
       "localData": "Lokale gegevens",
       "localDataDesc": "Uw geschiedenis wordt via IndexedDB in uw eigen browser opgeslagen. Als u uw browsergegevens wist, wordt uw geschiedenis permanent verwijderd.",
-      "lastUpdated": "Laatst bijgewerkt: oktober 2024",
+      "lastUpdated": "Laatst bijgewerkt: November 2026",
       "sec1Title": "Akkoord met de voorwaarden",
       "sec1Desc": "Door CreateMy-QR te openen en te gebruiken, gaat u ermee akkoord gebonden te zijn aan deze Servicevoorwaarden. Als u het niet eens bent met enig onderdeel van de voorwaarden, heeft u geen toestemming om toegang te krijgen tot de Dienst. Ons platform wordt volledig gratis ter beschikking gesteld voor zowel persoonlijk als commercieel gebruik.",
       "sec2Title": "Lokale verwerkingsgarantie",
@@ -1494,7 +1494,14 @@
       "sec4Desc": "U behoudt 100% het eigendom en alle intellectuele eigendomsrechten op de documenten die u verwerkt met CreateMy-QR. We claimen geen rechten, licenties of eigendom over uw inhoud.",
       "sec5Title": "Disclaimers en aansprakelijkheid",
       "seoDesc": "Bekijk onze transparante servicevoorwaarden voor CreateMy-QR. Gratis voor persoonlijk en commercieel gebruik, zonder licentiekosten en 100% gegevensveiligheid aan de clientzijde.",
-      "desc": "Bekijk onze transparante servicevoorwaarden voor CreateMy-QR. Gratis voor persoonlijk en commercieel gebruik, zonder licentiekosten en 100% gegevensveiligheid aan de clientzijde."
+      "desc": "Bekijk onze transparante servicevoorwaarden voor CreateMy-QR. Gratis voor persoonlijk en commercieel gebruik, zonder licentiekosten en 100% gegevensveiligheid aan de clientzijde.",
+      "sec6Title": "Dienstcontinuïteit, 'Lifetime' Toegang en Onvoorziene Beëindiging van Activiteiten",
+      "sec6LifetimeTitle": "Definitie van 'Lifetime' Toegang",
+      "sec6LifetimeDesc": "'Lifetime Toegang' verwijst specifiek naar de operationele en commerciële levensduur van de CreateMy-QR-dienst, niet naar de biologische levensduur van de koper noch naar een garantie van eeuwigheid. Hoewel we ernaar streven het platform zo lang mogelijk online te houden, zijn digitale tools afhankelijk van internetinfrastructuur en operationele haalbaarheid.",
+      "sec6CessationTitle": "Onbekwaamheid van de Oprichter, Beëindiging van Activiteiten en Overmacht",
+      "sec6CessationDesc": "CreateMy-QR is een onafhankelijk ontwikkeld softwareproject. In het onvoorziene geval dat de exploitatie niet langer haalbaar is, of bij blijvende arbeidsongeschiktheid of overlijden van de oprichter, kan de dienst worden opgeschort of permanent beëindigd. Gebruikers stemmen ermee in dat er in dergelijke gevallen geen enkele aansprakelijkheid of verplichting tot terugbetaling overgaat op de oprichter of diens erfgenamen.",
+      "sec6StaticGuaranteeTitle": "Permanente Onafhankelijkheid van Gegenereerde Statische QR-codes",
+      "sec6StaticGuaranteeDesc": "Omdat CreateMy-QR 100% client-side werkt via WebAssembly en gegevens rechtstreeks codeert volgens de ISO/IEC 18004-norm zonder omleidingsservers, blijft elke geëxporteerde QR-code, barcode, afbeelding (PNG/SVG) of printvel voor altijd werken. Zelfs als deze website ooit zou stoppen, blijven uw afgedrukte codes gewoon scanbaar."
     },
     "usecases": {
       "seoTitle": "Gebruiksscenario's in de industrie",

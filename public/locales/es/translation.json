@@ -1483,7 +1483,7 @@
       "liabilityDesc": "Las herramientas se proporcionan \"tal cual\" sin garantías. No somos responsables de ningún problema que surja de los códigos generados.",
       "localData": "Datos locales",
       "localDataDesc": "Su historial se almacena en su propio navegador a través de IndexedDB. Si borra los datos de su navegador, su historial se elimina permanentemente.",
-      "lastUpdated": "Última actualización: octubre de 2024",
+      "lastUpdated": "Última actualización: Noviembre 2026",
       "sec1Title": "Acuerdo de términos",
       "sec1Desc": "Al acceder y utilizar CreateMy-QR, usted acepta estar sujeto a estos Términos de servicio. Si no está de acuerdo con alguna parte de los términos, no tiene permiso para acceder al Servicio. Nuestra plataforma se proporciona de forma totalmente gratuita para uso personal y comercial.",
       "sec2Title": "Garantía de procesamiento local",
@@ -1494,7 +1494,14 @@
       "sec4Desc": "Usted conserva el 100% de la propiedad y todos los derechos de propiedad intelectual de los documentos que procesa con CreateMy-QR. Reclamamos cero derechos, licencias o propiedad sobre su contenido.",
       "sec5Title": "Descargos de responsabilidad y responsabilidad",
       "seoDesc": "Revise nuestros términos de servicio transparentes para CreateMy-QR. Gratis para uso personal y comercial sin tarifas de licencia y 100% de seguridad de datos del lado del cliente.",
-      "desc": "Revise nuestros términos de servicio transparentes para CreateMy-QR. Gratis para uso personal y comercial sin tarifas de licencia y 100% de seguridad de datos del lado del cliente."
+      "desc": "Revise nuestros términos de servicio transparentes para CreateMy-QR. Gratis para uso personal y comercial sin tarifas de licencia y 100% de seguridad de datos del lado del cliente.",
+      "sec6Title": "Continuidad del Servicio, Acceso 'Lifetime' y Cese Operativo Imprevisto",
+      "sec6LifetimeTitle": "Definición del Acceso 'Lifetime' (Vitalicio)",
+      "sec6LifetimeDesc": "El 'Acceso Vitalicio' se refiere estrictamente a la vida comercial y operativa del servicio CreateMy-QR, no a la vida biológica del comprador ni a una garantía incondicional de eternidad. Aunque nos esforzamos por mantener el servicio activo el mayor tiempo posible, los productos digitales dependen de la infraestructura de internet, los navegadores y la sostenibilidad operativa.",
+      "sec6CessationTitle": "Incapacidad del Fundador, Cese de Operaciones y Fuerza Mayor",
+      "sec6CessationDesc": "CreateMy-QR es un proyecto de software desarrollado de forma independiente. En caso de que el servicio deje de ser viable, cese la infraestructura o el fundador sufra incapacidad permanente, enfermedad grave o fallecimiento, la plataforma podrá suspenderse o cerrarse definitivamente. Los usuarios aceptan que no existirá responsabilidad legal, financiera ni obligación de reembolso o mantenimiento exigible al fundador, su familia o sus herederos.",
+      "sec6StaticGuaranteeTitle": "Independencia Permanente de los Códigos QR Estáticos Generados",
+      "sec6StaticGuaranteeDesc": "Dado que CreateMy-QR opera 100% en el navegador del cliente mediante WebAssembly y codifica datos directos según el estándar ISO/IEC 18004 sin servidores intermediarios de redirección, cada código QR, código de barras, imagen (PNG/SVG) o lámina de stickers que exportes funcionará para siempre. Aunque este sitio web o dominio dejara de existir en el futuro, tus códigos impresos nunca vencerán ni dejarán de escanearse."
     },
     "usecases": {
       "seoTitle": "Casos de uso de la industria",

@@ -1483,7 +1483,7 @@
       "liabilityDesc": "Verktygen tillhandahålls \"i befintligt skick\" utan garantier. Vi är inte ansvariga för några problem som uppstår från genererade koder.",
       "localData": "Lokala data",
       "localDataDesc": "Din historik lagras i din egen webbläsare via IndexedDB. Om du rensar din webbläsardata raderas din historik permanent.",
-      "lastUpdated": "Senast uppdaterad: oktober 2024",
+      "lastUpdated": "Senast uppdaterad: November 2026",
       "sec1Title": "Överenskommelse om villkor",
       "sec1Desc": "Genom att komma åt och använda CreateMy-QR samtycker du till att vara bunden av dessa användarvillkor. Om du inte håller med om någon del av villkoren har du inte behörighet att få tillgång till tjänsten. Vår plattform tillhandahålls helt gratis för både personlig och kommersiell användning.",
       "sec2Title": "Lokal bearbetningsgaranti",
@@ -1494,7 +1494,14 @@
       "sec4Desc": "Du behåller 100 % ägande och alla immateriella rättigheter till de dokument du bearbetar med CreateMy-QR. Vi hävdar noll rättigheter, licenser eller äganderätt över ditt innehåll.",
       "sec5Title": "Friskrivningar och ansvar",
       "seoDesc": "Läs våra transparenta användarvillkor för CreateMy-QR. Gratis för personlig och kommersiell användning med noll licensavgifter och 100 % datasäkerhet på klientsidan.",
-      "desc": "Läs våra transparenta användarvillkor för CreateMy-QR. Gratis för personlig och kommersiell användning med noll licensavgifter och 100 % datasäkerhet på klientsidan."
+      "desc": "Läs våra transparenta användarvillkor för CreateMy-QR. Gratis för personlig och kommersiell användning med noll licensavgifter och 100 % datasäkerhet på klientsidan.",
+      "sec6Title": "Tjänstekontinuitet, 'Livstidsåtkomst' och Oförutsett Driftsavbrott",
+      "sec6LifetimeTitle": "Definition av 'Livstidsåtkomst'",
+      "sec6LifetimeDesc": "'Livstidsåtkomst' avser specifikt den kommersiella och operativa livslängden för tjänsten CreateMy-QR, inte köparens biologiska livslängd eller en evighetsgaranti. Även om vår avsikt är att hålla plattformen igång så länge som möjligt, är digitala produkter beroende av internetinfrastruktur och driftsmässig genomförbarhet.",
+      "sec6CessationTitle": "Grundarens Förhinder, Avveckling och Force Majeure",
+      "sec6CessationDesc": "CreateMy-QR är ett oberoende mjukvaruprojekt. Om driften blir omöjlig eller vid grundarens permanenta arbetsoförmåga eller frånfälle kan tjänsten stängas permanent. Användare godkänner att inga ekonomiska eller juridiska anspråk kan riktas mot grundaren eller dennes arvingar.",
+      "sec6StaticGuaranteeTitle": "Permanent Oberoende för Genererade Statiska QR-koder",
+      "sec6StaticGuaranteeDesc": "Eftersom CreateMy-QR körs 100% på klientsidan via WebAssembly och kodar data direkt enligt ISO/IEC 18004-standarden utan omdirigeringsservrar, kommer varje exporterad QR-kod, streckkod, bild (PNG/SVG) eller utskriven etikett att fungera för alltid. Även om denna webbplats skulle stängas i framtiden kommer dina tryckta koder aldrig att sluta fungera."
     },
     "usecases": {
       "seoTitle": "Användningsfall för industrin",

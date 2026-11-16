@@ -1483,7 +1483,7 @@
       "liabilityDesc": "Alat disediakan 'seadanya' tanpa jaminan. Kami tidak bertanggungjawab untuk sebarang isu yang timbul daripada kod yang dijana.",
       "localData": "Data Tempatan",
       "localDataDesc": "Sejarah anda disimpan dalam pelayar anda sendiri melalui IndexedDB. Jika anda mengosongkan data penyemak imbas anda, sejarah anda akan dipadamkan secara kekal.",
-      "lastUpdated": "Kemas Kini Terakhir: Oktober 2024",
+      "lastUpdated": "Terakhir Dikemas Kini: November 2026",
       "sec1Title": "Perjanjian kepada Syarat",
       "sec1Desc": "Dengan mengakses dan menggunakan CreateMy-QR, anda bersetuju untuk terikat dengan Syarat Perkhidmatan ini. Jika anda tidak bersetuju dengan mana-mana bahagian terma, anda tidak mempunyai kebenaran untuk mengakses Perkhidmatan. Platform kami disediakan sepenuhnya secara percuma untuk kegunaan peribadi dan komersial.",
       "sec2Title": "Jaminan Pemprosesan Tempatan",
@@ -1494,7 +1494,14 @@
       "sec4Desc": "Anda mengekalkan 100% pemilikan dan semua hak harta intelek terhadap dokumen yang anda proses menggunakan CreateMy-QR. Kami menuntut sifar hak, lesen atau pemilikan ke atas kandungan anda.",
       "sec5Title": "Penafian & Liabiliti",
       "seoDesc": "Semak syarat perkhidmatan telus kami untuk CreateMy-QR. Percuma untuk kegunaan peribadi dan komersial dengan sifar yuran pelesenan dan 100% keselamatan data pihak pelanggan.",
-      "desc": "Semak syarat perkhidmatan telus kami untuk CreateMy-QR. Percuma untuk kegunaan peribadi dan komersial dengan sifar yuran pelesenan dan 100% keselamatan data pihak pelanggan."
+      "desc": "Semak syarat perkhidmatan telus kami untuk CreateMy-QR. Percuma untuk kegunaan peribadi dan komersial dengan sifar yuran pelesenan dan 100% keselamatan data pihak pelanggan.",
+      "sec6Title": "Kesinambungan Perkhidmatan, Skop Akses 'Seumur Hidup' & Penamatan Operasi Luar Jangka",
+      "sec6LifetimeTitle": "Definisi Hak Akses 'Seumur Hidup' (Lifetime)",
+      "sec6LifetimeDesc": "Hak Akses 'Seumur Hidup' merujuk khusus kepada jangka hayat operasi dan komersial perkhidmatan CreateMy-QR, bukan jangka hayat biologi pembeli mahupun jaminan mutlak tanpa had masa. Walaupun kami komited memastikan platform ini terus berfungsi selama mungkin, perkhidmatan digital bergantung kepada domain dan kesinambungan operasi.",
+      "sec6CessationTitle": "Ketidakupayaan Pengasas, Kematian, Penutupan Operasi & Keadaan Kahar",
+      "sec6CessationDesc": "CreateMy-QR ialah projek perisian yang diuruskan secara bebas. Sekiranya operasi tidak lagi berdaya maju, atau pengasas mengalami ketidakupayaan kekal, sakit tenat atau meninggal dunia, perkhidmatan boleh ditutup selama-lamanya. Pengguna bersetuju bahawa tiada liabiliti kewangan atau tuntutan ganti rugi boleh dikenakan kepada pengasas atau warisnya.",
+      "sec6StaticGuaranteeTitle": "Jaminan Keabadian & Kebebasan Kod QR Statik yang Dihasilkan",
+      "sec6StaticGuaranteeDesc": "Oleh kerana CreateMy-QR beroperasi 100% di sisi klien melalui WebAssembly dan mengekod data terus mengikut piawaian ISO/IEC 18004 tanpa pelayan lencongan perantara, semua kod QR, kod bar, fail imej (PNG/SVG) atau helaian pelekat yang dimuat turun akan kekal berfungsi selama-lamanya. Walaupun laman web ini ditutup pada masa hadapan, cetakan fizikal kod anda tidak akan pernah luput."
     },
     "usecases": {
       "seoTitle": "Kes Penggunaan Industri",

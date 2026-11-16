@@ -1483,7 +1483,7 @@
       "liabilityDesc": "Araçlar herhangi bir garanti olmaksızın 'olduğu gibi' sağlanır. Oluşturulan kodlardan kaynaklanan sorunlardan sorumlu değiliz.",
       "localData": "Yerel Veriler",
       "localDataDesc": "Geçmişiniz IndexedDB aracılığıyla kendi tarayıcınızda saklanır. Tarayıcı verilerinizi temizlerseniz geçmişiniz kalıcı olarak silinir.",
-      "lastUpdated": "Son Güncelleme: Ekim 2024",
+      "lastUpdated": "Son Güncelleme: Kasım 2026",
       "sec1Title": "Şartlar Anlaşması",
       "sec1Desc": "CreateMy-QR'a erişerek ve onu kullanarak bu Hizmet Koşullarına bağlı kalmayı kabul edersiniz. Koşulların herhangi bir bölümünü kabul etmiyorsanız Hizmete erişim izniniz yoktur. Platformumuz hem kişisel hem de ticari kullanım için tamamen ücretsiz olarak sunulmaktadır.",
       "sec2Title": "Yerel İşleme Garantisi",
@@ -1494,7 +1494,14 @@
       "sec4Desc": "CreateMy-QR kullanarak işlediğiniz belgelerin %100 mülkiyetini ve tüm fikri mülkiyet haklarını saklı tutarsınız. İçeriğiniz üzerinde hiçbir hak, lisans veya sahiplik talep etmiyoruz.",
       "sec5Title": "Sorumluluk Reddi ve Sorumluluk",
       "seoDesc": "CreateMy-QR için şeffaf hizmet şartlarımızı inceleyin. Sıfır lisans ücreti ve %100 istemci tarafı veri güvenliği ile kişisel ve ticari kullanım için ücretsizdir.",
-      "desc": "CreateMy-QR için şeffaf hizmet şartlarımızı inceleyin. Sıfır lisans ücreti ve %100 istemci tarafı veri güvenliği ile kişisel ve ticari kullanım için ücretsizdir."
+      "desc": "CreateMy-QR için şeffaf hizmet şartlarımızı inceleyin. Sıfır lisans ücreti ve %100 istemci tarafı veri güvenliği ile kişisel ve ticari kullanım için ücretsizdir.",
+      "sec6Title": "Hizmet Sürekliliği, 'Ömür Boyu' Erişim Kapsamı ve Öngörülemeyen Faaliyet Durdurma",
+      "sec6LifetimeTitle": "'Ömür Boyu' (Lifetime) Erişim Tanımı",
+      "sec6LifetimeDesc": "'Ömür Boyu Erişim', satın alan kişinin biyolojik ömrünü veya sonsuza kadar kesintisiz hizmet garantisini değil, CreateMy-QR hizmetinin ticari ve operasyonel varlık süresini ifade eder. Platformu mümkün olan en uzun süre yayında tutmayı hedeflesek de, dijital hizmetler sunucu altyapısına ve operasyonel sürdürülebilirliğe tabidir.",
+      "sec6CessationTitle": "Kurucunun Durumu, Vefat, Faaliyetin Durdurulması ve Mücbir Sebepler",
+      "sec6CessationDesc": "CreateMy-QR bağımsız olarak geliştirilen bir projedir. Hizmetin sürdürülemez hale gelmesi, teknik altyapının sona ermesi veya kurucunun kalıcı iş göremezliği, ağır hastalığı ya da vefatı durumunda platform kapatılabilir. Kullanıcılar, kurucuya veya mirasçılarına hiçbir mali sorumluluk veya geri ödeme talebi yüklenemeyeceğini kabul eder.",
+      "sec6StaticGuaranteeTitle": "Oluşturulan Statik QR Kodların Kalıcı Bağımsızlığı",
+      "sec6StaticGuaranteeDesc": "CreateMy-QR, WebAssembly kullanarak %100 istemci tarafında çalıştığı ve verileri yönlendirme sunucuları olmadan doğrudan ISO/IEC 18004 standardında kodladığı için, dışa aktardığınız tüm QR kodlar, barkodlar, görseller (PNG/SVG) veya etiket baskıları sonsuza kadar çalışmaya devam eder. İleride bu web sitesi kapansa dahi basılı kodlarınız asla geçersiz kalmaz."
     },
     "usecases": {
       "seoTitle": "Endüstri Kullanım Durumları",
