@@ -195,7 +195,7 @@ export default async function handler(req, res) {
           <tr>
             <td style="padding-bottom: 20px;">
               <img src="https://createmy-qr.com/logoqr.png" alt="CreateMy-QR" width="36" height="36" style="border-radius: 8px;" />
-              <span style="font-size: 20px; font-weight: 700; color: #0f172a; margin-left: 10px; vertical-align: middle;">CreateMy<span style="color: #9333ea;">-QR</span></span>
+              <span style="font-size: 20px; font-weight: 700; color: #0f172a; margin-left: 10px; vertical-align: middle;">CreateMy<span style="color: #2563eb;">-QR</span></span>
             </td>
           </tr>
           <tr>
@@ -204,11 +204,11 @@ export default async function handler(req, res) {
               <p style="font-size: 14px; line-height: 1.6; color: #475569;">
                 Thank you for purchasing the <strong>Founder Lifetime Pass</strong>. Your lifetime access is now fully activated across the Privacy Suite!
               </p>
-              <div style="background-color: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 10px; padding: 16px; margin: 20px 0;">
-                <p style="margin: 0; font-size: 13px; font-weight: 600; color: #6b21a8;">
+              <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; padding: 16px; margin: 20px 0;">
+                <p style="margin: 0; font-size: 13px; font-weight: 600; color: #1e40af;">
                   ✨ Included in your All-In-One Privacy Suite:
                 </p>
-                <ul style="margin: 8px 0 0 16px; padding: 0; font-size: 13px; color: #7e22ce; line-height: 1.6;">
+                <ul style="margin: 8px 0 0 16px; padding: 0; font-size: 13px; color: #1d4ed8; line-height: 1.6;">
                   <li><strong>CreateMy-QR</strong> — Custom Vector QR & Barcode Studio (Bulk & Print PDF)</li>
                   <li><strong>HelpMyIMG</strong> — In-Browser AI Image Studio (Unlimited 4K)</li>
                   <li><strong>HandleMyFile</strong> — Privacy-First PDF & Document Tools</li>
@@ -219,7 +219,7 @@ export default async function handler(req, res) {
                 All tools run 100% locally in your browser with zero server uploads. Your privacy is permanently protected.
               </p>
               <div style="padding-top: 16px;">
-                <a href="https://createmy-qr.com" style="display: inline-block; padding: 12px 28px; background-color: #9333ea; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 14px; border-radius: 10px;">
+                <a href="https://createmy-qr.com" style="display: inline-block; padding: 12px 28px; background-color: #0f172a; color: #ffffff; text-decoration: none; font-weight: 600; font-size: 14px; border-radius: 10px;">
                   Open Studio &rarr;
                 </a>
               </div>

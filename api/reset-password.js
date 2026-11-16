@@ -237,7 +237,7 @@ export default async function handler(req, res) {
                     <img src="https://createmy-qr.com/logoqr.png" alt="CreateMy-QR" width="36" height="36" style="display: block; width: 36px; height: 36px; border-radius: 8px; object-fit: contain;" />
                   </td>
                   <td style="vertical-align: middle;">
-                    <span style="font-size: 19px; font-weight: 700; color: #0f172a; letter-spacing: -0.3px;">CreateMy<span style="color: #9333ea;">-QR</span></span>
+                    <span style="font-size: 19px; font-weight: 700; color: #0f172a; letter-spacing: -0.3px;">CreateMy<span style="color: #2563eb;">-QR</span></span>
                   </td>
                 </tr>
               </table>
@@ -265,8 +265,8 @@ export default async function handler(req, res) {
             <td style="padding-bottom: 32px;">
               <table role="presentation" cellspacing="0" cellpadding="0">
                 <tr>
-                  <td align="center" style="border-radius: 10px; background-color: #9333ea;">
-                    <a href="${directResetLink}" target="_blank" style="display: inline-block; padding: 12px 28px; font-size: 14px; font-weight: 600; color: #ffffff; text-decoration: none; border-radius: 10px; background-color: #9333ea; letter-spacing: -0.1px;">
+                  <td align="center" style="border-radius: 10px; background-color: #0f172a;">
+                    <a href="${directResetLink}" target="_blank" style="display: inline-block; padding: 12px 28px; font-size: 14px; font-weight: 600; color: #ffffff; text-decoration: none; border-radius: 10px; background-color: #0f172a; letter-spacing: -0.1px;">
                       Reset password
                     </a>
                   </td>
@@ -280,7 +280,7 @@ export default async function handler(req, res) {
             <td style="padding-bottom: 24px; font-size: 12px; line-height: 1.5; color: #64748b;">
               If the button doesn't work, copy and paste this link into your browser:
               <br>
-              <a href="${directResetLink}" target="_blank" style="color: #9333ea; word-break: break-all; text-decoration: underline;">
+              <a href="${directResetLink}" target="_blank" style="color: #2563eb; word-break: break-all; text-decoration: underline;">
                 ${directResetLink}
               </a>
             </td>
