@@ -197,9 +197,9 @@ export default function MegaNav({ currentLangCode }) {
             setIsMegaOpen(!isMegaOpen);
             setIsScannerOpen(false);
           }}
-          className={`flex items-center gap-1.5 px-3 py-1.5 xl:py-2 rounded-xl text-[11px] xl:text-[12px] font-bold uppercase whitespace-nowrap transition-all cursor-pointer ${
+          className={`flex items-center gap-1.5 px-3 py-1.5 xl:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
             isMegaOpen || isGeneratorActive
-              ? 'bg-blue-50/80 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-black'
+              ? 'bg-blue-50/80 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-semibold'
               : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#0c1831]'
           }`}
           aria-expanded={isMegaOpen}
@@ -231,14 +231,14 @@ export default function MegaNav({ currentLangCode }) {
                   </div>
                   <div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-tight">
+                      <span className="text-xs font-semibold text-slate-900 dark:text-white">
                         {t('nav.bulkTitle', 'Bulk QR & Barcode Generator')}
                       </span>
-                      <span className="px-1.5 py-0.5 rounded text-[9px] font-black uppercase tracking-wider bg-blue-600 text-white shadow-xs">
+                      <span className="px-1.5 py-0.5 rounded text-[9.5px] font-semibold uppercase tracking-wide bg-blue-600 text-white shadow-xs">
                         PRO BATCH
                       </span>
                     </div>
-                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 font-normal">
                       {t('nav.bulkDesc', 'Import CSV or Excel, generate 1,000+ codes in memory & export ZIP')}
                     </p>
                   </div>
@@ -258,14 +258,14 @@ export default function MegaNav({ currentLangCode }) {
                   </div>
                   <div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xs font-black text-slate-900 dark:text-white uppercase tracking-tight">
+                      <span className="text-xs font-semibold text-slate-900 dark:text-white">
                         {t('nav.barcodeTitle', '1D Barcode Generator')}
                       </span>
-                      <span className="px-1.5 py-0.5 rounded text-[9px] font-black uppercase tracking-wider bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                      <span className="px-1.5 py-0.5 rounded text-[9.5px] font-semibold uppercase tracking-wide bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
                         RETAIL & LOGISTICS
                       </span>
                     </div>
-                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
+                    <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 font-normal">
                       {t('nav.barcodeDesc', 'Code 128, EAN-13, UPC-A, ITF-14 vector barcode symbologies')}
                     </p>
                   </div>
@@ -281,7 +281,7 @@ export default function MegaNav({ currentLangCode }) {
                 <div key={colIdx} className="flex flex-col">
                   {column.map((cat, catIdx) => (
                     <React.Fragment key={catIdx}>
-                      <h4 className={`text-[11.5px] font-extrabold uppercase text-blue-600 dark:text-blue-400 mb-2.5 ${catIdx > 0 ? 'mt-3.5' : ''}`}>
+                      <h4 className={`text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2 ${catIdx > 0 ? 'mt-3.5' : ''}`}>
                         {t(cat.title)}
                       </h4>
                       <div className="flex flex-col gap-0.5">
@@ -299,12 +299,12 @@ export default function MegaNav({ currentLangCode }) {
                               onClick={handleLinkClick} 
                               className={`flex items-center gap-2.5 py-1.5 px-2.5 rounded-xl transition-colors group/item ${
                                 isActive 
-                                  ? 'bg-blue-50 dark:bg-[#102040] text-blue-700 dark:text-blue-400 font-bold' 
-                                  : 'text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'
+                                  ? 'bg-blue-50 dark:bg-[#102040] text-blue-700 dark:text-blue-400 font-semibold' 
+                                  : 'text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'
                               }`}
                             >
-                              <Icon className={`w-3.5 h-3.5 ${isActive ? 'opacity-100' : 'opacity-70 group-hover/item:opacity-100'}`} />
-                              <span className="text-[11.5px] font-semibold tracking-tight uppercase">{item.label}</span>
+                              <Icon className={`w-3.5 h-3.5 ${isActive ? 'opacity-100 text-blue-600 dark:text-blue-400' : 'opacity-60 group-hover/item:opacity-100'}`} />
+                              <span className="text-xs font-normal tracking-normal">{item.label}</span>
                             </RouterLink>
                           );
                         })}
@@ -329,9 +329,9 @@ export default function MegaNav({ currentLangCode }) {
             setIsScannerOpen(!isScannerOpen);
             setIsMegaOpen(false);
           }}
-          className={`flex items-center gap-1.5 px-3 py-1.5 xl:py-2 rounded-xl text-[11px] xl:text-[12px] font-bold uppercase whitespace-nowrap transition-all cursor-pointer ${
+          className={`flex items-center gap-1.5 px-3 py-1.5 xl:py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
             isScannerOpen || isScannerActive
-              ? 'bg-blue-50/80 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-black'
+              ? 'bg-blue-50/80 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-semibold'
               : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#0c1831]'
           }`}
           aria-expanded={isScannerOpen}
@@ -364,10 +364,10 @@ export default function MegaNav({ currentLangCode }) {
                   <QrCode className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-tight">
+                  <div className="text-xs font-semibold text-slate-900 dark:text-white">
                     {t('nav.scanqr', 'Scan QR Code')}
                   </div>
-                  <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                  <div className="text-[11px] text-slate-500 dark:text-slate-400 font-normal">
                     {t('nav.scanQrDesc', 'Camera scanner & image decoder')}
                   </div>
                 </div>
@@ -387,10 +387,10 @@ export default function MegaNav({ currentLangCode }) {
                   <Scan className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-tight">
+                  <div className="text-xs font-semibold text-slate-900 dark:text-white">
                     {t('nav.scanbarcode', 'Scan Barcode')}
                   </div>
-                  <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                  <div className="text-[11px] text-slate-500 dark:text-slate-400 font-normal">
                     {t('nav.scanBarcodeDesc', 'UPC, EAN, Code 128 laser reader')}
                   </div>
                 </div>
@@ -404,9 +404,9 @@ export default function MegaNav({ currentLangCode }) {
       {/* 3. Pricing (Direct Link) */}
       <RouterLink
         to={pricingUrl}
-        className={`py-1.5 xl:py-2 px-3 xl:px-3.5 rounded-xl text-[11px] xl:text-[12px] font-bold uppercase whitespace-nowrap transition-all flex items-center gap-1.5 cursor-pointer ${
+        className={`py-1.5 xl:py-2 px-3 xl:px-3.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 cursor-pointer ${
           isPricingActive
-            ? 'bg-blue-500/10 text-blue-600 dark:text-blue-400 font-black'
+            ? 'bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold'
             : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#0c1831]'
         }`}
       >

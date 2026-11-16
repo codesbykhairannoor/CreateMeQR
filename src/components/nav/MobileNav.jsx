@@ -26,14 +26,14 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
               </div>
             )}
             <div className="min-w-0">
-              <p className="text-xs font-bold text-zinc-900 dark:text-white truncate">{user.displayName || user.email}</p>
+              <p className="text-xs font-semibold text-zinc-900 dark:text-white truncate">{user.displayName || user.email}</p>
               <div className="flex items-center gap-1.5 mt-0.5">
                 {isPro ? (
-                  <span className="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 text-[10px] font-black uppercase tracking-wider">
+                  <span className="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 text-[10px] font-semibold uppercase tracking-wider">
                     <Crown size={10} /> PRO
                   </span>
                 ) : (
-                  <span className="text-[10px] font-semibold text-zinc-400">Free Tier</span>
+                  <span className="text-[10px] font-medium text-zinc-400">Free Tier</span>
                 )}
               </div>
             </div>
@@ -55,7 +55,7 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
             onClose();
             openAuthModal();
           }}
-          className="w-full mb-3 py-2.5 px-4 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-900/20 cursor-pointer"
+          className="w-full mb-3 py-2.5 px-4 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-semibold text-xs flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-900/20 cursor-pointer"
         >
           <User size={16} />
           <span>{t('auth.signInBtn', 'Sign In / Create Account')}</span>
@@ -67,7 +67,7 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
         <button
           type="button"
           onClick={() => setDarkMode(false)}
-          className={`flex items-center justify-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${
+          className={`flex items-center justify-center gap-1.5 py-2 text-xs font-medium rounded-lg transition-all ${
             !darkMode
               ? 'bg-white text-zinc-900 shadow-xs'
               : 'text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200'
@@ -79,7 +79,7 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
         <button
           type="button"
           onClick={() => setDarkMode(true)}
-          className={`flex items-center justify-center gap-1.5 py-2 text-xs font-bold rounded-lg transition-all ${
+          className={`flex items-center justify-center gap-1.5 py-2 text-xs font-medium rounded-lg transition-all ${
             darkMode
               ? 'bg-blue-600 text-white shadow-xs'
               : 'text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200'
@@ -95,14 +95,14 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
         <RouterLink 
           to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} 
           onClick={onClose} 
-          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-slate-800 dark:text-slate-200 text-[11px] uppercase transition-colors hover:border-blue-400 shadow-xs text-center tracking-tight leading-tight"
+          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-2.5 px-2 rounded-xl font-medium text-slate-800 dark:text-slate-200 text-xs transition-colors hover:border-blue-400 shadow-xs text-center leading-tight"
         >
           {t('nav.scanqr', 'Scan QR Code')}
         </RouterLink>
         <RouterLink 
           to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} 
           onClick={onClose} 
-          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-slate-800 dark:text-slate-200 text-[11px] uppercase transition-colors hover:border-emerald-400 shadow-xs text-center tracking-tight leading-tight"
+          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-2.5 px-2 rounded-xl font-medium text-slate-800 dark:text-slate-200 text-xs transition-colors hover:border-emerald-400 shadow-xs text-center leading-tight"
         >
           {t('nav.scanbarcode', 'Scan Barcode')}
         </RouterLink>
@@ -110,7 +110,7 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
         <RouterLink 
           to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} 
           onClick={onClose} 
-          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-slate-800 dark:text-slate-200 text-[11px] uppercase transition-colors hover:border-blue-400 shadow-xs text-center tracking-tight leading-tight"
+          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-2.5 px-2 rounded-xl font-medium text-slate-800 dark:text-slate-200 text-xs transition-colors hover:border-blue-400 shadow-xs text-center leading-tight"
         >
           {t('nav.barcode', 'Barcode Maker')}
         </RouterLink>
@@ -118,7 +118,7 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
         <RouterLink 
           to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['pricing'] || '/pricing'}`} 
           onClick={onClose} 
-          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-blue-600 dark:text-blue-400 text-[11px] uppercase transition-colors hover:border-blue-400 shadow-xs text-center tracking-tight leading-tight"
+          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-2.5 px-2 rounded-xl font-medium text-blue-600 dark:text-blue-400 text-xs transition-colors hover:border-blue-400 shadow-xs text-center leading-tight"
         >
           <Sparkles size={12} className="text-blue-500" />
           <span>{t('nav.pricing', 'Pricing & PRO')}</span>
@@ -129,7 +129,7 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
       <RouterLink 
         to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['bulk'] || '/bulk-qr-generator'}`} 
         onClick={onClose} 
-        className="w-full mb-3 flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600/10 to-indigo-600/10 border border-blue-500/30 py-2.5 px-3 rounded-xl font-black text-blue-700 dark:text-blue-300 text-[11px] uppercase transition-all shadow-xs"
+        className="w-full mb-3 flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600/10 to-indigo-600/10 border border-blue-500/30 py-2.5 px-3 rounded-xl font-semibold text-blue-700 dark:text-blue-300 text-xs transition-all shadow-xs"
       >
         <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
         {t('nav.bulk', 'Bulk Batch')} (CSV / Excel)
@@ -138,9 +138,9 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
       {/* 3. Accordion: All Tools */}
       <button
         onClick={() => setOpenSection(openSection === 'all' ? null : 'all')}
-        className="w-full bg-gradient-to-r from-slate-900 to-blue-600 dark:from-blue-600 dark:to-blue-800 text-white border-none py-3 px-4 rounded-xl font-extrabold text-xs flex items-center justify-between cursor-pointer mb-2 shadow-md uppercase tracking-wide transition-all active:scale-[0.99]"
+        className="w-full bg-gradient-to-r from-slate-900 to-blue-600 dark:from-blue-600 dark:to-blue-800 text-white border-none py-2.5 px-4 rounded-xl font-semibold text-xs flex items-center justify-between cursor-pointer mb-2 shadow-md tracking-wide transition-all active:scale-[0.99]"
       >
-        <span>{t('nav.generator', 'ALL QR & BARCODE TOOLS (37)')}</span>
+        <span>{t('nav.generator', 'All QR & Barcode Tools (37)')}</span>
         {openSection === 'all' ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
       </button>
 
@@ -148,7 +148,7 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
         <div className="flex flex-col gap-5 pt-3 pb-6 px-1 animate-fade-in-up-fast">
           {QR_MENU_COLUMNS.flat().map((cat, i) => (
             <div key={`qr-${i}`}>
-              <div className="text-[11px] font-extrabold text-blue-600 dark:text-blue-400 tracking-wider mb-2.5 pb-2 border-b border-dashed border-zinc-300 dark:border-zinc-700 uppercase">
+              <div className="text-[11px] font-semibold text-blue-600 dark:text-blue-400 tracking-wider mb-2.5 pb-2 border-b border-dashed border-zinc-200 dark:border-zinc-800 uppercase">
                 {t(cat.title)}
               </div>
               <div className="grid grid-cols-2 gap-2">

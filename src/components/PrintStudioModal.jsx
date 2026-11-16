@@ -343,10 +343,10 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="text-lg font-black text-slate-900 dark:text-white">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white">
                   {t('printStudio.modalTitle', 'Print & Sticker Sheet Studio')}
                 </h3>
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700/50">
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wide bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700/50">
                   {t('printStudio.proBadge', 'Pro Engine')}
                 </span>
               </div>
@@ -374,7 +374,7 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
             
             {/* 1. Sheet Preset Selector */}
             <div>
-              <label className="block text-xs font-black uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2 flex items-center gap-1.5">
+              <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2 flex items-center gap-1.5">
                 <Grid className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" /> {t('printStudio.presetLabel', 'Sticker Sheet Preset')}
               </label>
               <select
@@ -452,7 +452,7 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
 
             {/* 3. Distribution & Offset Mode */}
             <div className="space-y-3">
-              <label className="block text-xs font-black uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+              <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
                 <Layers className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" /> {t('printStudio.allocation', 'Sticker Allocation')}
               </label>
 
@@ -460,7 +460,7 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
                 <div>
                   <div className="flex items-center justify-between text-xs mb-1.5">
                     <span className="text-slate-600 dark:text-slate-400 font-medium">{t('printStudio.quantity', 'Quantity to Print:')}</span>
-                    <span className="font-black text-blue-600 dark:text-blue-400">{t('printStudio.stickersCount', '{{count}} stickers', { count: singleCopyCount })}</span>
+                    <span className="font-semibold text-blue-600 dark:text-blue-400">{t('printStudio.stickersCount', '{{count}} stickers', { count: singleCopyCount })}</span>
                   </div>
                   <input
                     type="range"
@@ -513,7 +513,7 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
 
             {/* 4. Print Quality & Guide Controls */}
             <div className="space-y-2.5 pt-2 border-t border-slate-200 dark:border-[#1e2d4a]">
-              <label className="block text-xs font-black uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+              <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
                 <Sliders className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" /> {t('printStudio.guidesAndInks', 'Print Guides & Inks')}
               </label>
 
@@ -717,7 +717,7 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
                 <button
                   disabled={isExporting}
                   onClick={handleDownloadPdf}
-                  className="px-5 py-2.5 bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white rounded-xl text-xs font-black shadow-lg shadow-blue-500/25 transition-all flex items-center gap-1.5 disabled:opacity-50"
+                  className="px-5 py-2.5 bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white rounded-xl text-xs font-semibold shadow-md shadow-blue-500/20 transition-all flex items-center gap-1.5 disabled:opacity-50"
                 >
                   <Download className="w-4 h-4" />
                   {isExporting ? t('printStudio.generatingPdf', 'Generating PDF...') : t('printStudio.downloadPdf', 'Download Printable PDF')}

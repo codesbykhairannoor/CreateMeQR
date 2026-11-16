@@ -365,15 +365,15 @@ export default function BulkGenerator() {
             <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400" /> {t('bulk.badge', 'Pro Batch Engine • 100% Client-Side')}
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-black tracking-tight mb-6 leading-[1.1]">
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 leading-[1.15]">
             {t('bulk.heroTitle', 'Bulk QR Code & Barcode Generator')}
           </h1>
 
-          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto font-medium leading-relaxed mb-8">
+          <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-normal leading-relaxed mb-8">
             {t('bulk.heroSubtitle', 'Import spreadsheets or CSV files and generate hundreds or thousands of high-resolution QR codes and barcodes in seconds. Zero data tracking — every code is compiled directly in your browser memory.')}
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-bold text-slate-600 dark:text-slate-300">
+          <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-slate-600 dark:text-slate-300">
             <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800">
               <ShieldCheck className="w-4 h-4" /> {t('bulk.featPrivate', '100% Private (No Server Uploads)')}
             </span>
@@ -394,10 +394,10 @@ export default function BulkGenerator() {
         <div className="bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-[2.5rem] p-8 md:p-10 shadow-xl">
           <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-200 dark:border-[#1e2d4a]">
             <div className="flex items-center gap-3">
-              <span className="w-8 h-8 rounded-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-black flex items-center justify-center text-sm shadow-sm">
+              <span className="w-7 h-7 rounded-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-semibold flex items-center justify-center text-xs shadow-sm">
                 1
               </span>
-              <h2 className="text-xl font-black text-slate-900 dark:text-white">
+              <h2 className="text-lg font-bold text-slate-900 dark:text-white">
                 {t('bulk.step1Title', 'Provide Your Data (CSV or Spreadsheets)')}
               </h2>
             </div>
@@ -405,13 +405,13 @@ export default function BulkGenerator() {
             <div className="flex items-center gap-2">
               <button
                 onClick={handleDownloadSample}
-                className="text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1"
+                className="text-xs font-medium text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1"
               >
                 <Download className="w-3.5 h-3.5" /> {t('bulk.templateCsv', 'Template.csv')}
               </button>
               <button
                 onClick={handleLoadSample}
-                className="px-3 py-1 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-xs font-bold transition-all"
+                className="px-3 py-1 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg text-xs font-medium transition-all"
               >
                 {t('bulk.loadSample', 'Load Sample Data')}
               </button>
@@ -422,20 +422,20 @@ export default function BulkGenerator() {
           <div className="flex gap-2 mb-6">
             <button
               onClick={() => setInputTab('upload')}
-              className={`flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 ${
+              className={`flex-1 py-2.5 px-4 rounded-xl font-semibold text-xs transition-all flex items-center justify-center gap-2 ${
                 inputTab === 'upload'
-                  ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-md'
-                  : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400'
+                  ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                  : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium'
               }`}
             >
               <Upload className="w-4 h-4" /> {t('bulk.tabUpload', 'Upload CSV / TSV File')}
             </button>
             <button
               onClick={() => setInputTab('paste')}
-              className={`flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 ${
+              className={`flex-1 py-2.5 px-4 rounded-xl font-semibold text-xs transition-all flex items-center justify-center gap-2 ${
                 inputTab === 'paste'
-                  ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-md'
-                  : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400'
+                  ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                  : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium'
               }`}
             >
               <FileSpreadsheet className="w-4 h-4" /> {t('bulk.tabPaste', 'Paste From Excel / Google Sheets')}
@@ -455,13 +455,13 @@ export default function BulkGenerator() {
                 onChange={handleFileUpload}
                 className="hidden"
               />
-              <div className="w-16 h-16 rounded-2xl bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                <Upload className="w-8 h-8" />
+              <div className="w-14 h-14 rounded-2xl bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center mx-auto mb-3.5 group-hover:scale-105 transition-transform">
+                <Upload className="w-7 h-7" />
               </div>
-              <h3 className="text-lg font-black mb-1 text-slate-900 dark:text-white">
+              <h3 className="text-base font-semibold mb-1 text-slate-900 dark:text-white">
                 {fileName ? t('bulk.dropLoaded', 'Loaded: {{fileName}}', { fileName }) : t('bulk.dropTitle', 'Choose or Drag & Drop CSV / TSV File')}
               </h3>
-              <p className="text-xs text-slate-500 dark:text-slate-400">
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-normal">
                 {t('bulk.dropDesc', 'Supports Comma, Semicolon, or Tab delimited files. No file size limits.')}
               </p>
             </div>
@@ -481,18 +481,18 @@ export default function BulkGenerator() {
           {parsedData.rows.length > 0 && (
             <div className="mt-8 pt-6 border-t border-slate-200 dark:border-[#1e2d4a]">
               <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
-                <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
                   {t('bulk.detectedSummary', 'Detected {{rows}} rows and {{cols}} columns', { rows: parsedData.rows.length, cols: parsedData.headers.length })}
                 </span>
 
                 <div className="flex flex-wrap items-center gap-4">
                   {/* Data Column Selector */}
                   <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold text-slate-700 dark:text-slate-300">{t('bulk.colData', 'Data / URL Column:')}</span>
+                    <span className="text-xs font-medium text-slate-700 dark:text-slate-300">{t('bulk.colData', 'Data / URL Column:')}</span>
                     <select
                       value={dataCol}
                       onChange={(e) => setDataCol(e.target.value)}
-                      className="px-3 py-1.5 bg-slate-50 dark:bg-[#060b19] border border-blue-300 dark:border-blue-600 rounded-xl text-xs font-bold text-blue-700 dark:text-blue-300 focus:outline-none"
+                      className="px-3 py-1.5 bg-slate-50 dark:bg-[#060b19] border border-blue-300 dark:border-blue-600 rounded-xl text-xs font-semibold text-blue-700 dark:text-blue-300 focus:outline-none"
                     >
                       {parsedData.headers.map((h) => (
                         <option key={h} value={h}>{h}</option>
@@ -502,11 +502,11 @@ export default function BulkGenerator() {
 
                   {/* Label Column Selector */}
                   <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold text-slate-700 dark:text-slate-300">{t('bulk.colLabel', 'Label / Filename:')}</span>
+                    <span className="text-xs font-medium text-slate-700 dark:text-slate-300">{t('bulk.colLabel', 'Label / Filename:')}</span>
                     <select
                       value={labelCol}
                       onChange={(e) => setLabelCol(e.target.value)}
-                      className="px-3 py-1.5 bg-slate-50 dark:bg-[#060b19] border border-slate-200 dark:border-[#1e2d4a] rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 focus:outline-none"
+                      className="px-3 py-1.5 bg-slate-50 dark:bg-[#060b19] border border-slate-200 dark:border-[#1e2d4a] rounded-xl text-xs font-medium text-slate-700 dark:text-slate-300 focus:outline-none"
                     >
                       <option value="">{t('bulk.colLabelNone', 'None (Auto Numbering)')}</option>
                       {parsedData.headers.map((h) => (
@@ -520,12 +520,12 @@ export default function BulkGenerator() {
               {/* Mini Table Preview (First 5 Rows) */}
               <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-[#1e2d4a]">
                 <table className="w-full text-left text-xs text-slate-700 dark:text-slate-300">
-                  <thead className="bg-slate-100 dark:bg-slate-800 text-[11px] font-black uppercase text-slate-500 dark:text-slate-400">
+                  <thead className="bg-slate-100 dark:bg-slate-800 text-[11px] font-semibold uppercase text-slate-500 dark:text-slate-400">
                     <tr>
                       <th className="py-2.5 px-4 w-12">#</th>
                       {parsedData.headers.map((h) => (
                         <th key={h} className="py-2.5 px-4">
-                          <span className={h === dataCol ? 'text-blue-600 dark:text-blue-400 underline decoration-2 font-black' : ''}>
+                          <span className={h === dataCol ? 'text-blue-600 dark:text-blue-400 underline decoration-2 font-semibold' : ''}>
                             {h} {h === dataCol ? '★' : ''}
                           </span>
                         </th>
@@ -535,9 +535,9 @@ export default function BulkGenerator() {
                   <tbody className="divide-y divide-slate-200 dark:divide-slate-800">
                     {parsedData.rows.slice(0, 5).map((row, rIdx) => (
                       <tr key={rIdx} className="hover:bg-slate-50 dark:hover:bg-slate-900/40">
-                        <td className="py-2 px-4 font-bold text-slate-400">{rIdx + 1}</td>
+                        <td className="py-2 px-4 font-medium text-slate-400">{rIdx + 1}</td>
                         {parsedData.headers.map((h) => (
-                          <td key={h} className="py-2 px-4 truncate max-w-xs font-mono">
+                          <td key={h} className="py-2 px-4 truncate max-w-xs font-mono font-normal">
                             {row[h] || <span className="text-slate-400 italic">empty</span>}
                           </td>
                         ))}
@@ -547,7 +547,7 @@ export default function BulkGenerator() {
                 </table>
               </div>
               {parsedData.rows.length > 5 && (
-                <p className="text-[11px] text-slate-400 mt-2 text-right">
+                <p className="text-[11px] text-slate-400 mt-2 text-right font-normal">
                   {t('bulk.moreRecords', '+ {{count}} more records will be processed.', { count: parsedData.rows.length - 5 })}
                 </p>
               )}
@@ -558,10 +558,10 @@ export default function BulkGenerator() {
         {/* Step 2: Styling & Options Card */}
         <div className="bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-[2.5rem] p-8 md:p-10 shadow-xl">
           <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-200 dark:border-[#1e2d4a]">
-            <span className="w-8 h-8 rounded-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-black flex items-center justify-center text-sm shadow-sm">
+            <span className="w-7 h-7 rounded-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-semibold flex items-center justify-center text-xs shadow-sm">
               2
             </span>
-            <h2 className="text-xl font-black text-slate-900 dark:text-white">
+            <h2 className="text-lg font-bold text-slate-900 dark:text-white">
               {t('bulk.step2Title', 'Configure Code Style & Format')}
             </h2>
           </div>
@@ -570,26 +570,26 @@ export default function BulkGenerator() {
             
             {/* Code Type */}
             <div>
-              <label className="block text-xs font-black uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-2">
+              <label className="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1.5">
                 {t('bulk.codeType', 'Code Type')}
               </label>
               <div className="flex gap-2">
                 <button
                   onClick={() => setCodeType('qr')}
-                  className={`flex-1 py-2.5 rounded-xl text-xs font-bold transition-all ${
+                  className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${
                     codeType === 'qr'
-                      ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-md'
-                      : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
+                      ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                      : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
                   }`}
                 >
                   {t('bulk.typeQr', 'QR Code (2D)')}
                 </button>
                 <button
                   onClick={() => setCodeType('barcode')}
-                  className={`flex-1 py-2.5 rounded-xl text-xs font-bold transition-all ${
+                  className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${
                     codeType === 'barcode'
-                      ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-md'
-                      : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
+                      ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                      : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
                   }`}
                 >
                   {t('bulk.typeBarcode', 'Barcode (1D)')}
@@ -601,13 +601,13 @@ export default function BulkGenerator() {
             {codeType === 'qr' ? (
               <>
                 <div>
-                  <label className="block text-xs font-black uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-2">
+                  <label className="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1.5">
                     {t('bulk.dotPattern', 'Dot Pattern')}
                   </label>
                   <select
                     value={qrShape}
                     onChange={(e) => setQrShape(e.target.value)}
-                    className="w-full px-3 py-2.5 bg-slate-50 dark:bg-[#060b19] border border-slate-200 dark:border-[#1e2d4a] rounded-xl text-xs font-semibold text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    className="w-full px-3 py-2.5 bg-slate-50 dark:bg-[#060b19] border border-slate-200 dark:border-[#1e2d4a] rounded-xl text-xs font-medium text-slate-800 dark:text-slate-200 focus:outline-none"
                   >
                     <option value="square">{t('bulk.patternSquare', 'Classic Square')}</option>
                     <option value="rounded">{t('bulk.patternRounded', 'Smooth Rounded')}</option>
@@ -616,13 +616,13 @@ export default function BulkGenerator() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-black uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-2">
+                  <label className="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1.5">
                     {t('bulk.eccLevel', 'Error Correction Level')}
                   </label>
                   <select
                     value={qrErrorCorrection}
                     onChange={(e) => setQrErrorCorrection(e.target.value)}
-                    className="w-full px-3 py-2.5 bg-slate-50 dark:bg-[#060b19] border border-slate-200 dark:border-[#1e2d4a] rounded-xl text-xs font-semibold text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    className="w-full px-3 py-2.5 bg-slate-50 dark:bg-[#060b19] border border-slate-200 dark:border-[#1e2d4a] rounded-xl text-xs font-medium text-slate-800 dark:text-slate-200 focus:outline-none"
                   >
                     <option value="L">{t('bulk.eccL', 'L — 7% Restoration')}</option>
                     <option value="M">{t('bulk.eccM', 'M — 15% Standard')}</option>
@@ -634,13 +634,13 @@ export default function BulkGenerator() {
             ) : (
               <>
                 <div>
-                  <label className="block text-xs font-black uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-2">
+                  <label className="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1.5">
                     {t('bulk.barcodeStd', 'Barcode Standard')}
                   </label>
                   <select
                     value={barcodeFormat}
                     onChange={(e) => setBarcodeFormat(e.target.value)}
-                    className="w-full px-3 py-2.5 bg-slate-50 dark:bg-[#060b19] border border-slate-200 dark:border-[#1e2d4a] rounded-xl text-xs font-semibold text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    className="w-full px-3 py-2.5 bg-slate-50 dark:bg-[#060b19] border border-slate-200 dark:border-[#1e2d4a] rounded-xl text-xs font-medium text-slate-800 dark:text-slate-200 focus:outline-none"
                   >
                     <option value="CODE128">Code 128 (Universal)</option>
                     <option value="EAN13">EAN-13 (Retail Product)</option>
@@ -651,26 +651,26 @@ export default function BulkGenerator() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-black uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-2">
+                  <label className="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1.5">
                     {t('bulk.exportImgFormat', 'Export Image Format')}
                   </label>
                   <div className="flex gap-2">
                     <button
                       onClick={() => setExportFormat('png')}
-                      className={`flex-1 py-2.5 rounded-xl text-xs font-bold transition-all ${
+                      className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${
                         exportFormat === 'png'
-                          ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-md'
-                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
+                          ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
                       }`}
                     >
                       {t('bulk.formatPng', 'PNG (High DPI)')}
                     </button>
                     <button
                       onClick={() => setExportFormat('svg')}
-                      className={`flex-1 py-2.5 rounded-xl text-xs font-bold transition-all ${
+                      className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${
                         exportFormat === 'svg'
-                          ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-md'
-                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
+                          ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
                       }`}
                     >
                       {t('bulk.formatSvg', 'SVG (Vector)')}
@@ -685,20 +685,20 @@ export default function BulkGenerator() {
         {/* Step 3: Trigger & Progress */}
         <div className="bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-[2.5rem] p-8 md:p-10 shadow-xl">
           <div className="flex items-center gap-3 mb-6 pb-4 border-b border-slate-200 dark:border-[#1e2d4a]">
-            <span className="w-8 h-8 rounded-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-black flex items-center justify-center text-sm shadow-sm">
+            <span className="w-7 h-7 rounded-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-semibold flex items-center justify-center text-xs shadow-sm">
               3
             </span>
-            <h2 className="text-xl font-black text-slate-900 dark:text-white">
+            <h2 className="text-lg font-bold text-slate-900 dark:text-white">
               {t('bulk.step3Title', 'Generate & Download')}
             </h2>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-              <p className="text-sm font-bold text-slate-800 dark:text-slate-200 mb-1">
+              <p className="text-sm font-semibold text-slate-800 dark:text-slate-200 mb-1">
                 {t('bulk.readySummary', 'Ready to generate {{count}} codes', { count: parsedData.rows.length })}
               </p>
-              <p className="text-xs text-slate-500 dark:text-slate-400">
+              <p className="text-xs text-slate-500 dark:text-slate-400 font-normal">
                 {t('bulk.asyncNotice', 'Processed asynchronously in memory. No network bandwidth consumed.')}
               </p>
             </div>
@@ -706,17 +706,17 @@ export default function BulkGenerator() {
             <button
               disabled={isProcessing || parsedData.rows.length === 0}
               onClick={handleGenerateBatch}
-              className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white font-black rounded-2xl shadow-xl shadow-blue-500/25 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-3 disabled:opacity-50"
+              className="w-full md:w-auto px-7 py-3.5 bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white font-semibold rounded-2xl shadow-lg shadow-blue-500/20 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 disabled:opacity-50 text-sm cursor-pointer"
             >
               {isProcessing ? (
                 <>
-                  <RefreshCw className="w-5 h-5 animate-spin" />
-                  {t('bulk.btnGenerating', 'Generating ({{percent}}%)', { percent: progress })}
+                  <RefreshCw className="w-4 h-4 animate-spin" />
+                  <span>{t('bulk.btnGenerating', 'Generating ({{percent}}%)', { percent: progress })}</span>
                 </>
               ) : (
                 <>
-                  <Play className="w-5 h-5 fill-current" />
-                  {t('bulk.btnGenerate', 'Generate {{count}} Codes', { count: parsedData.rows.length })}
+                  <Play className="w-4 h-4 fill-current" />
+                  <span>{t('bulk.btnGenerate', 'Generate {{count}} Codes', { count: parsedData.rows.length })}</span>
                 </>
               )}
             </button>
@@ -725,13 +725,13 @@ export default function BulkGenerator() {
           {/* Progress Bar */}
           {isProcessing && (
             <div className="mt-8 space-y-2">
-              <div className="flex justify-between text-xs font-bold">
+              <div className="flex justify-between text-xs font-medium">
                 <span className="text-blue-600 dark:text-blue-400">
                   {t('bulk.progressSummary', 'Processed {{current}} of {{total}} items...', { current: processedCount, total: parsedData.rows.length })}
                 </span>
-                <span className="text-slate-500">{progress}%</span>
+                <span className="text-slate-500 font-normal">{progress}%</span>
               </div>
-              <div className="w-full h-3 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+              <div className="w-full h-2.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
                 <div
                   className="h-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-500 transition-all duration-150 rounded-full"
                   style={{ width: `${progress}%` }}
@@ -743,29 +743,29 @@ export default function BulkGenerator() {
           {/* Results Action Bar */}
           {generatedResults.length > 0 && !isProcessing && (
             <div className="mt-8 pt-6 border-t border-slate-200 dark:border-[#1e2d4a] flex flex-wrap items-center justify-between gap-4">
-              <div className="flex items-center gap-2 text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                <CheckCircle2 className="w-5 h-5" />
-                {t('bulk.successCompile', 'Successfully compiled {{count}} codes in browser memory!', { count: generatedResults.length })}
+              <div className="flex items-center gap-2 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
+                <CheckCircle2 className="w-4 h-4" />
+                <span>{t('bulk.successCompile', 'Successfully compiled {{count}} codes in browser memory!', { count: generatedResults.length })}</span>
               </div>
 
               <div className="flex flex-wrap items-center gap-3">
                 {/* Print Sheet Trigger */}
                 <button
                   onClick={() => setIsPrintModalOpen(true)}
-                  className="px-5 py-3 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-xl text-xs font-extrabold transition-all flex items-center gap-2 border border-slate-200 dark:border-slate-700 shadow-sm"
+                  className="px-4 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-xl text-xs font-semibold transition-all flex items-center gap-2 border border-slate-200 dark:border-slate-700 shadow-xs cursor-pointer"
                 >
                   <Printer className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-                  {t('bulk.btnPrintPdf', 'Print A4 Sticker Sheet PDF')}
+                  <span>{t('bulk.btnPrintPdf', 'Print A4 Sticker Sheet PDF')}</span>
                 </button>
 
                 {/* Download ZIP Trigger */}
                 <button
                   disabled={isZipping}
                   onClick={handleDownloadZip}
-                  className="px-6 py-3 bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white rounded-xl text-xs font-black shadow-lg shadow-blue-500/25 transition-all flex items-center gap-2"
+                  className="px-5 py-2.5 bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white rounded-xl text-xs font-semibold shadow-md shadow-blue-500/20 transition-all flex items-center gap-2 cursor-pointer"
                 >
                   <FileArchive className="w-4 h-4" />
-                  {isZipping ? t('bulk.btnCompressing', 'Compressing ZIP...') : t('bulk.btnDownloadZip', 'Download All ({{count}} items) as ZIP', { count: generatedResults.length })}
+                  <span>{isZipping ? t('bulk.btnCompressing', 'Compressing ZIP...') : t('bulk.btnDownloadZip', 'Download All ({{count}} items) as ZIP', { count: generatedResults.length })}</span>
                 </button>
               </div>
             </div>
@@ -775,11 +775,12 @@ export default function BulkGenerator() {
         {/* Step 4: Live Results Grid Gallery */}
         {generatedResults.length > 0 && (
           <div className="bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-[2.5rem] p-8 md:p-10 shadow-xl">
-            <h3 className="text-xl font-black mb-6 text-slate-900 dark:text-white flex items-center gap-2">
-              <Eye className="w-5 h-5 text-blue-600 dark:text-blue-400" /> {t('bulk.galleryTitle', 'Generated Code Gallery')}
+            <h3 className="text-lg font-bold mb-5 text-slate-900 dark:text-white flex items-center gap-2">
+              <Eye className="w-4 h-4 text-blue-600 dark:text-blue-400" />
+              <span>{t('bulk.galleryTitle', 'Generated Code Gallery')}</span>
             </h3>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5">
               {generatedResults.slice(0, 48).map((item) => (
                 <div
                   key={item.id}
@@ -793,16 +794,16 @@ export default function BulkGenerator() {
                     )}
                   </div>
 
-                  <span className="text-[11px] font-bold text-slate-800 dark:text-slate-200 truncate w-full mb-1">
+                  <span className="text-xs font-medium text-slate-800 dark:text-slate-200 truncate w-full mb-0.5">
                     {item.title}
                   </span>
-                  <span className="text-[9px] text-slate-400 truncate w-full font-mono mb-2">
+                  <span className="text-[10px] text-slate-400 truncate w-full font-mono font-normal mb-2">
                     {item.value}
                   </span>
 
                   <button
                     onClick={() => handleDownloadSingle(item)}
-                    className="w-full py-1 bg-white dark:bg-slate-800 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 text-slate-700 dark:text-slate-300 text-[10px] font-bold rounded-lg border border-slate-200 dark:border-slate-700 transition-colors flex items-center justify-center gap-1"
+                    className="w-full py-1 bg-white dark:bg-slate-800 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 text-slate-700 dark:text-slate-300 text-[10px] font-medium rounded-lg border border-slate-200 dark:border-slate-700 transition-colors flex items-center justify-center gap-1 cursor-pointer"
                   >
                     <Download className="w-3 h-3" /> {t('bulk.btnSave', 'Save')}
                   </button>
@@ -811,7 +812,7 @@ export default function BulkGenerator() {
             </div>
 
             {generatedResults.length > 48 && (
-              <p className="text-xs text-slate-400 mt-6 text-center">
+              <p className="text-xs text-slate-400 mt-6 text-center font-normal">
                 {t('bulk.galleryLimitNotice', 'Showing first 48 items. All {{count}} items will be included in the downloaded ZIP.', { count: generatedResults.length })}
               </p>
             )}

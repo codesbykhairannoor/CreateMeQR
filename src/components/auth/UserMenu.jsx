@@ -77,7 +77,7 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
         )}
 
         {isPro && (
-          <span className="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 text-[10px] font-black tracking-wider uppercase shadow-xs">
+          <span className="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 text-[10px] font-semibold tracking-wider uppercase shadow-xs">
             <Crown className="w-3 h-3" /> PRO
           </span>
         )}
@@ -95,13 +95,13 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
             <p className="text-xs text-slate-500 dark:text-slate-400 truncate">{user.email}</p>
             
             <div className="mt-2.5 flex items-center justify-between">
-              <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Plan</span>
+              <span className="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Plan</span>
               {isPro ? (
-                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
-                  <Crown className="w-3 h-3" /> PRO Lifetime
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+                  <Crown className="w-3 h-3" /> PRO Active
                 </span>
               ) : (
-                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
                   Free Tier
                 </span>
               )}
@@ -113,10 +113,10 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
             <div className="p-2 border-b border-slate-100 dark:border-[#102040]">
               <button
                 onClick={handleUpgrade}
-                className="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-xs shadow-md shadow-blue-900/20 transition-all cursor-pointer"
+                className="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-semibold text-xs shadow-md shadow-blue-900/20 transition-all cursor-pointer"
               >
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>Upgrade to PRO Lifetime</span>
+                <span>Upgrade to PRO</span>
               </button>
             </div>
           )}
