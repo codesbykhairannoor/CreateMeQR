@@ -146,7 +146,7 @@ export default function MainLayout({ children }) {
             <div className="relative">
               <button onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} className="flex items-center gap-1.5 md:gap-2 px-2.5 md:px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all">
                 <span style={{ fontSize: 16 }}>{LANGS.find(l => l.code === (i18n.language?.split('-')[0] || 'en'))?.flag || '🌐'}</span>
-                <span className="uppercase text-[11px] md:text-xs tracking-wider">{(i18n.language?.split('-')[0] || 'en')}</span>
+                <span className="uppercase text-xs md:text-sm tracking-wider font-semibold">{(i18n.language?.split('-')[0] || 'en')}</span>
               </button>
               
               {showLangMenu && (

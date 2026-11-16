@@ -29,9 +29,9 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
     return (
       <button
         onClick={openAuthModal}
-        className="flex items-center gap-1.5 px-3.5 py-1.5 md:px-4 md:py-2 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-xs transition-all shadow-md shadow-blue-900/20 active:scale-95 cursor-pointer whitespace-nowrap"
+        className="flex items-center gap-2 px-3.5 py-1.5 md:px-4 md:py-2 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-semibold text-xs md:text-sm transition-all shadow-md shadow-blue-900/20 active:scale-95 cursor-pointer whitespace-nowrap"
       >
-        <User className="w-3.5 h-3.5" />
+        <User className="w-4 h-4" />
         <span>{t('auth.signInBtn', 'Sign In')}</span>
       </button>
     );
