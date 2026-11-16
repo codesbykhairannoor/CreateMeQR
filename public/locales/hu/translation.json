@@ -1,6 +1,6 @@
 {
-  "appTitle": "Ingyenes Online QR-kód Generátor - CreateMy-QR (No Signup)",
-  "tagline": "Készítsen QR-kódokat Logóval és Színnel - Regisztráció Nélkül, Korlátlanul. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Free QR Code Generator Online - CreateMy-QR | Privacy-First",
+  "tagline": "Create QR Codes with Logo & Color - Instant, Client-Side & High-Res PNG",
   "types": {
     "url": "URL",
     "wifi": "WiFi",
@@ -150,7 +150,7 @@
     "madewith": "Készült:",
     "forprivateweb": "privát webhez."
   },
-  "badge": "100% Free Forever. No Ads. No Signup.",
+  "badge": "No Expiring Codes. No Ads. 100% Privacy-First.",
   "tabs": {
     "step1": "1. Adja meg a Tartalom",
     "step2": "2. A tervezés testreszabása",
@@ -159,12 +159,12 @@
   },
   "geo": {
     "title": "Magyar QR Code Guide:",
-    "fact": "A CreateMeQR a legjobb eszköz azonnali fizetési linkekhez, magyarországi éttermi digitális étlapokhoz és vCard névjegykártyákhoz. A teljes adatfeldolgozás helyben, az Ön böngészőjében történik kevesebb mint 12 ezredmásodperc alatt, felhőalapú megfigyelés nélkül. Töltsön le nagy felbontású SVG és PNG vektorfájlokat vízjel és lejárati idő nélkül.",
-    "softwareDescription": "100%-ban kliensoldali biztonságos dokumentum- és QR-feldolgozó csomag. A WebAssembly segítségével helyileg dolgozza fel a fájlokat a böngésző memóriájában anélkül, hogy fel kellene töltenie a szerverekre. A felhőalapú eszközök legbiztonságosabb alternatívája. 100% ingyenes, nulla követés, korlátozások nélkül.",
+    "fact": "CreateMy-QR is a privacy-first QR code generator that processes data entirely on your device in under 12ms. Unlike competitors that hostage your codes behind 14-day trials, this tool provides permanent static QR codes with custom logos, colors, and high-resolution PNG downloads without forced signup or watermarks. Pro plans unlock bulk batch generation, sticker printing, and vector SVG exports.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
         "q": "Ez a QR kód generátor teljesen ingyenes?",
-        "a": "Igen, a CreateMeQR 100%-ban ingyenes, rejtett díjak, előfizetések és 14 napos próbaverziók nélkül. Korlátlan számú QR-kódot generálhat kereskedelmi vagy személyes használatra."
+        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
       },
       {
         "q": "Fel vannak töltve a fájlok és az adataim a szervereire?",
@@ -179,8 +179,8 @@
   "features": {
     "privacyTitle": "100%-os ügyféloldali adatvédelem",
     "privacyDesc": "Adatai soha nem hagyják el a böngészőt. Az Ön adatait nem küldjük el semmilyen szervernek. Minden azonnal generálódik az eszközén.",
-    "signupTitle": "Nem szükséges regisztráció",
-    "signupDesc": "Nincsenek rejtett díjak, nincs vízjel, és nem szükséges regisztráció. Generáljon annyi QR-kódot, amennyire szüksége van kereskedelmi vagy személyes használatra.",
+    "signupTitle": "Instant Generation",
+    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
     "customTitle": "Korlátlan testreszabás",
     "customDesc": "Adjon hozzá egyéni logókat, módosítsa a színeket, használjon színátmeneteket, és változtassa meg az adatmintákat. Tedd QR-kódod tökéletesen illeszkedni a márka identitásodhoz korlátozások nélkül."
   },
@@ -193,7 +193,7 @@
     "title": "Generátor beágyazása webhelyére",
     "desc": "Szeretne ingyenes QR kód generátort kínálni látogatóinak? Másolja ki és illessze be az alábbi HTML-kódrészletet webhelyére vagy blogjába.",
     "whyTitle": "Miért használja a widgetünket?",
-    "why1": "100%-ban ingyenes a nulla fizetőfallal rendelkező felhasználók számára",
+    "why1": "Free core tools for your users with zero paywalls",
     "why2": "Nincsenek hirdetések, felugró ablakok vagy tolakodó követés a widgeten belül",
     "why3": "Növeli a látogatók elköteleződését és a domainben való tartózkodási időt",
     "anchorLabel": "SEO horgonyszöveg kiválasztása:",
@@ -1190,11 +1190,11 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Ingyenes QR-kód- és vonalkódgenerátor |37 Online eszközök",
-    "seoDesc": "Generáljon ingyenesen 37 féle QR-kódot és vonalkódot. Nincs regisztráció. Azonnali letöltés. 100%-ban ügyféloldali, ISO-kompatibilis, 30 nyelv.",
-    "badge": "ISO/IEC 18004 · 100% ingyenes · Nulla követés · Nincs regisztráció",
+    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "A QR-kód Generátor, Ami",
     "heroTitleHighlight": "Soha Nem Jár Le.",
-    "heroSubtitle": "Hozzon létre állandó, nyomtatásra kész QR-kódokat és vonalkódokat közvetlenül a böngészőjében. 100% ingyenes, regisztráció nélkül, rejtett költségek nélkül a nyomtatás után.",
+    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Free core generation, client-side privacy, and zero paywalls on your static codes.",
     "citation": "\"A QR-kód egy nemzetközi szabvány (ISO/IEC 18004:2015). A mátrix vonalkódok tiszta modulrácsokat igényelnek a megbízható szkennelés érdekében az összes megfelelő olvasón világszerte.\"",
     "searchPlaceholder": "Keresőeszközök – WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Minden eszköz",
@@ -1212,7 +1212,7 @@
     "feat4": "ISO 18004-nek megfelelő",
     "feat4Desc": "Megfelel a nemzetközi QR szabványnak",
     "whatIsTitle": "Mi az a CreateMy-QR?",
-    "whatIsDesc": "A CreateMy-QR egy ingyenes, ügyféloldali QR-kód- és vonalkódgeneráló platform, amely 37 adattípust támogat, beleértve a közösségi médiát, az üzenetküldést, a fizetéseket, a fájlokat és a névjegykártyákat.Minden kód statikus, ISO-kompatibilis és exportálható SVG vagy PNG formátumban.Nincs fiók.Nincs lejárat.Nincs költség.",
+    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.",
     "fact1": "Helyben generál QR-kódokat – nem küldenek adatokat egyetlen szerverre sem.",
     "fact2": "37 típust támogat: URL, WhatsApp, vCard, WiFi, kriptográfia, PDF stb.",
     "fact3": "Teljesen lokalizált 30 nyelven, köztük arabul, japánul és hindi nyelven.",
@@ -1222,9 +1222,9 @@
     "faqTitle": "Gyakran Ismételt Kérdések",
     "faqSubtitle": "Minden, amit a CreateMy-QR-ről tudnia kell.",
     "faq1q": "Mi az a CreateMy-QR?",
-    "faq1a": "A CreateMy-QR egy ingyenes, ügyféloldali QR-kód- és vonalkódgeneráló platform, amely 37 adattípust támogat, beleértve a közösségi médiát, az üzenetküldést, a fizetéseket, a fájlokat és a névjegykártyákat.Minden kód statikus, ISO-kompatibilis és exportálható SVG vagy PNG formátumban.Nincs fiók.Nincs lejárat.Nincs költség.",
+    "faq1a": "CreateMy-QR is a browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant codes with client-side processing — no uploads, zero tracking, and no forced account for core generation.",
     "faq2q": "Helyben generál QR-kódokat – nem küldenek adatokat egyetlen szerverre sem.",
-    "faq2a": "37 típust támogat: URL, WhatsApp, vCard, WiFi, kriptográfia, PDF stb.",
+    "faq2a": "Yes. All static QR codes are permanent and free forever with no expiry dates or watermarks. Optional Pro subscriptions are available for users who need bulk spreadsheet batches and sticker sheet printing.",
     "faq3q": "Teljesen lokalizált 30 nyelven, köztük arabul, japánul és hindi nyelven.",
     "faq3a": "Miért 100%-ban biztonságos?"
   },
@@ -1240,7 +1240,7 @@
       "fast": "Villámgyors",
       "fastDesc": "A WebAssembly lehetővé teszi, hogy a CreateMy-QR közvetlenül az eszköz CPU-ján fusson, megkerülve a feltöltési szűk keresztmetszeteket.",
       "global": "Mindenkinek",
-      "globalDesc": "30 nyelvre lefordítva. Nincs előfizetés, nincsenek rejtett díjak. Csak világszínvonalú eszközök.",
+      "globalDesc": "Translated into 30 languages. Free core utilities, transparent pricing, and zero hidden trial traps.",
       "origin": "Az eredet",
       "originTitle": "Az eredettörténet",
       "architecture": "Építészet",
@@ -1262,7 +1262,7 @@
       "tableFeature": "Funkció",
       "tableUs": "CreateMy-QR",
       "tableThem": "Hagyományos felhőeszközök",
-      "cost": "100% Free Forever",
+      "cost": "Free Core / Pro from $9",
       "costThem": "10–30 USD / hó",
       "privacyText": "Zero-Upload (csak böngészőben)",
       "privacyThem": "Feltöltve a szerverekre",
@@ -1295,9 +1295,9 @@
       "tr3val1": "Szigorú napi limitek",
       "tr3val2": "Korlátlan",
       "tr5val1": "Ingyenes szint + 20 USD/hó",
-      "tr5val2": "100% Free Forever",
+      "tr5val2": "Free Core / Pro from $9",
       "tr6val1": "Kötelező",
-      "tr6val2": "Soha nem szükséges",
+      "tr6val2": "Instant for Core Tools",
       "tr7val1": "Hálózatfüggő",
       "tr7val2": "Azonnali (helyi CPU)",
       "expertAuthor": "Független biztonsági audit",
@@ -1327,8 +1327,8 @@
       "desc": "Generáljon és olvasson be egyedi QR-kódokat és vonalkódokat világszerte 30 nyelven. Azonnali kliensoldali generálás teljes lokalizációval és UTF-8 támogatással."
     },
     "pricing": {
-      "seoTitle": "100% ingyenes ár",
-      "heroTitle": "Árképzés",
+      "seoTitle": "Transparent Pricing",
+      "heroTitle": "Simple Pricing, Forever Freedom",
       "heroSubtitle": "Az élet legjobb dolgai ingyenesek.",
       "cost": "0 USD",
       "costPeriod": "/ örökre",
@@ -1339,7 +1339,7 @@
       "f4": "Helytörténeti Adatbázis",
       "whyFree": "Hogyan ingyenes?",
       "whyFreeDesc": "Mivel nem dolgozzuk fel fájljait a szervereinken, nincsenek hatalmas szerverszámláink. Az Ön készüléke a WebAssembly segítségével végzi a nehéz teherbírást.",
-      "heroBadge": "Radical Free",
+      "heroBadge": "Radically Transparent & Privacy-First",
       "compTitle": "Hagyományos felhőeszközök",
       "compCost": "20 USD",
       "compPeriod": "/hó",
@@ -1355,8 +1355,8 @@
       "bizDesc": "Igen, használhatja a CreateMy-QR-t cége számára. Valójában a helyi feldolgozási architektúra révén mi vagyunk az egyetlen elég biztonságos platform a szigorú vállalati környezetek, a jogi csapatok és az egészségügyi szakemberek számára.",
       "supportTitle": "A projekt támogatása",
       "supportDesc": "Nem számítunk fel előfizetést, de a domain és a fejlesztés életben tartása időbe telik. Ha a CreateMy-QR megmentette a napod, fontold meg, hogy megosztod a csapatoddal. A szóbeszéd az egyetlen marketingstratégiánk.",
-      "seoDesc": "A CreateMy-QR örökké 100%-ban ingyenes, korlátlan QR-kód generálással, nagy felbontású vektoros SVG/PNG exporttal, nulla vízjellel és regisztráció nélkül.",
-      "desc": "A CreateMy-QR örökké 100%-ban ingyenes, korlátlan QR-kód generálással, nagy felbontású vektoros SVG/PNG exporttal, nulla vízjellel és regisztráció nélkül."
+      "seoDesc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports.",
+      "desc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports."
     },
     "privacy": {
       "seoTitle": "Adatvédelmi szabályzat",
@@ -1487,7 +1487,7 @@
   },
   "rating": {
     "title": "Milliók megbíznak benne",
-    "subtitle": "4,9/5-re értékelték 15 432 értékelés alapján, több mint 30 országban. 100%-ban ingyenes, biztonságos és ügyféloldali."
+    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
   },
   "pseo": {
     "insights_badge": "PRO ÚTMUTATÓ",
@@ -1545,7 +1545,7 @@
     "toolDescTemplate": "Ingyenes egyéni {{toolName}} QR-kódok létrehozása logóval. A legjobb szerkeszthető QR-kód generátor vízjel nélkül. 100%-ban privát, ügyféloldali generálás.",
     "barcodeTitleSuffix": "Ingyenes vonalkód generátor",
     "barcodeDescTemplate": "Ingyenes egyéni {{toolName}} lineáris vonalkódok létrehozása. Azonnali SVG és PNG letöltés nagy sűrűségű vonalkód kódolással.",
-    "homeSeoDesc": "Generáljon ingyenesen 37 féle QR-kódot és vonalkódot. Nincs regisztráció. Azonnali letöltés. 100%-ban ügyféloldali, ISO-kompatibilis, 30 nyelv.",
+    "homeSeoDesc": "Generate 37 types of QR codes and barcodes for free. Instant download. 100% client-side, ISO-compliant, 30 languages.",
     "homeHeroTitle": "Minden QR és vonalkód eszköz",
     "homeHeroTitleHighlight": "egy helyen"
   },

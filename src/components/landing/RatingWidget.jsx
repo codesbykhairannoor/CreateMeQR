@@ -16,7 +16,7 @@ export default function RatingWidget() {
         {t('rating.title', { defaultValue: 'Trusted by Millions' })}
       </h3>
       <p className="text-lg text-slate-400 max-w-2xl">
-        {t('rating.subtitle', { defaultValue: 'Rated 4.9/5 based on 15,432 reviews across 30+ countries. 100% Free, Secure, and Client-Side.' })}
+        {t('rating.subtitle', { defaultValue: 'Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side.' })}
       </p>
     </div>
   );

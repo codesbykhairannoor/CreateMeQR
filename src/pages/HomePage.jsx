@@ -84,11 +84,11 @@ const CATEGORIES = [
 const FAQS_DEFAULT = [
   {
     q: 'What is CreateMy-QR?',
-    a: 'CreateMy-QR is a free, browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant QR codes with 100% client-side processing — no uploads, no tracking, no account required.',
+    a: 'CreateMy-QR is a privacy-first browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant QR codes with client-side processing — no uploads, no tracking, and no forced account for core generation.',
   },
   {
     q: 'Are the QR codes free to use forever?',
-    a: 'Yes. All QR codes generated are static and free forever. There are no limits, no watermarks, no expiry dates, and no subscription required. Ever.',
+    a: 'Yes. All QR codes generated are static and free forever. There are no limits, no watermarks, and no expiry dates on static codes. Optional Pro plans are available for bulk generation and sticker sheet printing.',
   },
 ];
 // Note: FAQS_DEFAULT no longer needed — keys are in translation.json
@@ -145,7 +145,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
   });
 
   const seoTitle = `CreateMy-QR | ${t('home.heroTitle', 'The QR Code Generator That')} ${t('home.heroTitleHighlight', 'Never Expires.')}`;
-  const seoDesc = t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO/IEC 18004-compliant, available in 30 languages.');
+  const seoDesc = t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.');
   const canonicalBase = currentLangCode === 'en' ? 'https://createmy-qr.com' : `https://createmy-qr.com/${currentLangCode}`;
 
   // Translated FAQ — now from translation JSON
@@ -469,7 +469,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
               {t('home.whatIsTitle', 'What is CreateMy-QR?')}
             </h2>
             <p style={{ fontSize: '1.1rem', lineHeight: 1.8, opacity: 0.63, marginBottom: 28 }}>
-              {t('home.whatIsDesc', 'CreateMy-QR is a free, client-side QR code and barcode generation platform supporting 37 data types including social media, messaging apps, payments, files, and contact cards. All codes are static, ISO/IEC 18004-compliant, and export-ready as high-resolution SVG or PNG. No account. No expiry. No cost.')}
+              {t('home.whatIsDesc', 'CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.')}
             </p>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 14 }}>
               {[

@@ -57,7 +57,7 @@ export default function AboutUs() {
                 </div>
                 <h3 className="text-2xl font-extrabold mb-4">{t('static.about.global', 'For Everyone')}</h3>
                 <p className="text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
-                  {t('static.about.globalDesc', 'Translated into 30 languages. No subscriptions, no hidden fees. Just world-class tools.')}
+                  {t('static.about.globalDesc', 'Translated into 30 languages. Free core utilities, transparent pricing, and zero hidden trial traps.')}
                 </p>
               </div>
             </div>

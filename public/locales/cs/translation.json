@@ -1,6 +1,6 @@
 {
-  "appTitle": "Zdarma Online Generátor QR Kódů - CreateMy-QR (No Signup)",
-  "tagline": "Vytvářejte QR Kódy s Logem a Barvou - Bez Registrace, Neomezeně. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Free QR Code Generator Online - CreateMy-QR | Privacy-First",
+  "tagline": "Create QR Codes with Logo & Color - Instant, Client-Side & High-Res PNG",
   "types": {
     "url": "URL / odkaz",
     "wifi": "Wi-Fi",
@@ -151,7 +151,7 @@
     "madewith": "Vyrobeno s",
     "forprivateweb": "pro soukromý web."
   },
-  "badge": "100% Free Forever. No Ads. No Signup.",
+  "badge": "No Expiring Codes. No Ads. 100% Privacy-First.",
   "tabs": {
     "step1": "1. Zadejte obsah",
     "step2": "2. Přizpůsobení designu",
@@ -160,12 +160,12 @@
   },
   "geo": {
     "title": "Čeština QR Code Guide:",
-    "fact": "CreateMeQR je ideální pro platební standardy QR Platba v České republice, digitální menu pro restaurace a sdílení kontaktů vCard. Stoprocentní ochrana soukromí: vše probíhá přímo ve vašem prohlížeči za méně než 12ms bez odesílání dat na server. Stahujte vektorové soubory SVG a PNG ve vysokém rozlišení bez vodoznaku a bez vypršení platnosti.",
-    "softwareDescription": "100% zabezpečený dokument na straně klienta a sada pro zpracování QR kódů. Používá WebAssembly ke zpracování souborů lokálně v paměti prohlížeče bez nahrávání na servery. Nejbezpečnější alternativa ke cloudovým nástrojům. 100% zdarma, nulové sledování, žádné limity.",
+    "fact": "CreateMy-QR is a privacy-first QR code generator that processes data entirely on your device in under 12ms. Unlike competitors that hostage your codes behind 14-day trials, this tool provides permanent static QR codes with custom logos, colors, and high-resolution PNG downloads without forced signup or watermarks. Pro plans unlock bulk batch generation, sticker printing, and vector SVG exports.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
         "q": "Je tento generátor QR kódů zcela zdarma?",
-        "a": "Ano, CreateMeQR je 100% zdarma bez skrytých poplatků, bez předplatného a bez 14denních zkušebních verzí. Můžete generovat neomezený počet QR kódů pro komerční nebo osobní použití."
+        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
       },
       {
         "q": "Jsou moje soubory a data nahraná na vaše servery?",
@@ -180,8 +180,8 @@
   "features": {
     "privacyTitle": "100% soukromí na straně klienta",
     "privacyDesc": "Vaše data nikdy neopustí váš prohlížeč. Vaše informace neposíláme na žádný server. Vše se generuje okamžitě na vašem zařízení.",
-    "signupTitle": "Není nutná registrace",
-    "signupDesc": "Žádné skryté poplatky, žádné vodoznaky a není nutná žádná registrace. Vygenerujte tolik QR kódů, kolik potřebujete pro komerční nebo osobní použití.",
+    "signupTitle": "Instant Generation",
+    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
     "customTitle": "Neomezené přizpůsobení",
     "customDesc": "Přidejte vlastní loga, upravte barvy, použijte přechody a změňte vzory dat. Zajistěte, aby váš QR kód dokonale odpovídal identitě vaší značky bez omezení."
   },
@@ -194,7 +194,7 @@
     "title": "Vložit generátor na svůj web",
     "desc": "Chcete svým návštěvníkům nabídnout bezplatný generátor QR kódů? Zkopírujte a vložte níže uvedený úryvek HTML na svůj web nebo blog.",
     "whyTitle": "Proč používat náš widget?",
-    "why1": "100% zdarma pro vaše uživatele s nulovými paywally",
+    "why1": "Free core tools for your users with zero paywalls",
     "why2": "Žádné reklamy, vyskakovací okna nebo rušivé sledování uvnitř widgetu",
     "why3": "Zvyšuje zapojení návštěvníků a čas strávený na vaší doméně",
     "anchorLabel": "Vyberte text kotvy SEO:",
@@ -1251,11 +1251,11 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Bezplatný generátor QR kódů a čárových kódů |37 Nástroje online",
-    "seoDesc": "Vygenerujte si zdarma 37 typů QR kódů a čárových kódů. Žádná registrace. Okamžité stažení. 100% na straně klienta, v souladu s ISO, 30 jazyků.",
-    "badge": "ISO/IEC 18004 · 100% zdarma · Zero Tracking · Bez registrace",
+    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "Generátor QR Kódů, Který",
     "heroTitleHighlight": "Nikdy Nevyprší.",
-    "heroSubtitle": "Vytvářejte trvalé QR kódy a čárové kódy připravené k tisku přímo ve svém prohlížeči. 100% zdarma, bez registrace a bez skrytých poplatków po vytištění.",
+    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Free core generation, client-side privacy, and zero paywalls on your static codes.",
     "citation": "\"QR kód je mezinárodní standard (ISO/IEC 18004:2015). Maticové čárové kódy vyžadují čisté modulové mřížky pro spolehlivé skenování napříč všemi kompatibilními čtečkami po celém světě.\"",
     "searchPlaceholder": "Vyhledávací nástroje — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Všechny nástroje",
@@ -1273,7 +1273,7 @@
     "feat4": "Vyhovuje normě ISO 18004",
     "feat4Desc": "Splňuje mezinárodní standard QR",
     "whatIsTitle": "Co je CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR je bezplatná platforma pro generování QR kódů a čárových kódů na straně klienta, která podporuje 37 typů dat včetně sociálních médií, zpráv, plateb, souborů a kontaktních karet.Všechny kódy jsou statické, vyhovují ISO a jsou připraveny na export jako SVG nebo PNG.Žádný účet.Žádné vypršení platnosti.Žádné náklady.",
+    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.",
     "fact1": "Generuje QR kódy lokálně – žádná data se neodesílají na žádný server.",
     "fact2": "Podporuje 37 typů: URL, WhatsApp, vCard, WiFi, Crypto, PDF a další.",
     "fact3": "Plně lokalizováno do 30 jazyků včetně arabštiny, japonštiny a hindštiny.",
@@ -1283,9 +1283,9 @@
     "faqTitle": "Často kladené otázky",
     "faqSubtitle": "Vše, co potřebujete vědět o CreateMy-QR.",
     "faq1q": "Co je CreateMy-QR?",
-    "faq1a": "CreateMy-QR je bezplatná platforma pro generování QR kódů a čárových kódů na straně klienta, která podporuje 37 typů dat včetně sociálních médií, zpráv, plateb, souborů a kontaktních karet.Všechny kódy jsou statické, vyhovují ISO a jsou připraveny na export jako SVG nebo PNG.Žádný účet.Žádné vypršení platnosti.Žádné náklady.",
+    "faq1a": "CreateMy-QR is a browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant codes with client-side processing — no uploads, zero tracking, and no forced account for core generation.",
     "faq2q": "Generuje QR kódy lokálně – žádná data se neodesílají na žádný server.",
-    "faq2a": "Podporuje 37 typů: URL, WhatsApp, vCard, WiFi, Crypto, PDF a další.",
+    "faq2a": "Yes. All static QR codes are permanent and free forever with no expiry dates or watermarks. Optional Pro subscriptions are available for users who need bulk spreadsheet batches and sticker sheet printing.",
     "faq3q": "Plně lokalizováno do 30 jazyků včetně arabštiny, japonštiny a hindštiny.",
     "faq3a": "Proč je 100% bezpečný?"
   },
@@ -1301,7 +1301,7 @@
       "fast": "Bleskově rychlý",
       "fastDesc": "WebAssembly umožňuje, aby CreateMy-QR běžel přímo na CPU vašeho zařízení a obešel tak úzká hrdla při nahrávání.",
       "global": "Pro všechny",
-      "globalDesc": "Přeloženo do 30 jazyků. Žádné předplatné, žádné skryté poplatky. Prostě nástroje světové třídy.",
+      "globalDesc": "Translated into 30 languages. Free core utilities, transparent pricing, and zero hidden trial traps.",
       "origin": "Původ",
       "originTitle": "Příběh původu",
       "architecture": "Architektura",
@@ -1323,7 +1323,7 @@
       "tableFeature": "Funkce",
       "tableUs": "CreateMy-QR",
       "tableThem": "Tradiční cloudové nástroje",
-      "cost": "100% zdarma navždy",
+      "cost": "Free Core / Pro from $9",
       "costThem": "10–30 USD měsíčně",
       "privacyText": "Zero-Upload (pouze prohlížeč)",
       "privacyThem": "Nahráno na servery",
@@ -1356,9 +1356,9 @@
       "tr3val1": "Přísné denní limity",
       "tr3val2": "Neomezené",
       "tr5val1": "Bezplatná úroveň + 20 $/měsíc",
-      "tr5val2": "100% zdarma navždy",
+      "tr5val2": "Free Core / Pro from $9",
       "tr6val1": "Povinné",
-      "tr6val2": "Nikdy nevyžadováno",
+      "tr6val2": "Instant for Core Tools",
       "tr7val1": "Závisí na síti",
       "tr7val2": "Okamžité (místní CPU)",
       "expertAuthor": "Nezávislý bezpečnostní audit",
@@ -1388,8 +1388,8 @@
       "desc": "Generujte a skenujte vlastní QR kódy a čárové kódy ve 30 jazycích po celém světě. Okamžité generování na straně klienta s plnou lokalizací a podporou UTF-8."
     },
     "pricing": {
-      "seoTitle": "100% cena zdarma",
-      "heroTitle": "Ceny",
+      "seoTitle": "Transparent Pricing",
+      "heroTitle": "Simple Pricing, Forever Freedom",
       "heroSubtitle": "Nejlepší věci v životě jsou zdarma.",
       "cost": "$0",
       "costPeriod": "/ navždy",
@@ -1400,7 +1400,7 @@
       "f4": "Databáze místní historie",
       "whyFree": "Jak je to zdarma?",
       "whyFreeDesc": "Protože nezpracováváme vaše soubory na našich serverech, nemáme obrovské účty za servery. Vaše zařízení dělá těžkou práci přes WebAssembly.",
-      "heroBadge": "Radikálně zdarma",
+      "heroBadge": "Radically Transparent & Privacy-First",
       "compTitle": "Tradiční cloudové nástroje",
       "compCost": "20 $",
       "compPeriod": "/měsíc",
@@ -1416,8 +1416,8 @@
       "bizDesc": "Ano, můžete použít CreateMy-QR pro vaši společnost. Naše místní architektura zpracování z nás dělá jedinou platformu dostatečně bezpečnou pro přísná firemní prostředí, právní týmy a zdravotnické profesionály.",
       "supportTitle": "Podpořte projekt",
       "supportDesc": "Neúčtujeme předplatné, ale udržet doménu a vývoj při životě nějakou dobu trvá. Pokud vám CreateMy-QR zachránil den, zvažte sdílení se svým týmem. Ústní sdělení je naší jedinou marketingovou strategií.",
-      "seoDesc": "CreateMy-QR je navždy 100% zdarma s neomezeným generováním QR kódu, vektorovými exporty SVG/PNG ve vysokém rozlišení, nulovými vodoznaky a bez nutnosti registrace.",
-      "desc": "CreateMy-QR je navždy 100% zdarma s neomezeným generováním QR kódu, vektorovými exporty SVG/PNG ve vysokém rozlišení, nulovými vodoznaky a bez nutnosti registrace."
+      "seoDesc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports.",
+      "desc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports."
     },
     "privacy": {
       "seoTitle": "Zásady ochrany osobních údajů",
@@ -1548,7 +1548,7 @@
   },
   "rating": {
     "title": "Důvěryhodné miliony",
-    "subtitle": "Hodnocení 4,9/5 na základě 15 432 recenzí ve více než 30 zemích. 100% zdarma, zabezpečené a na straně klienta."
+    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
   },
   "pseo": {
     "insights_badge": "PRO PRŮVODCE",
@@ -1690,7 +1690,7 @@
     "toolDescTemplate": "Vytvořte si zdarma vlastní QR kódy {{toolName}} s logem. Nejlepší upravitelný generátor QR kódu bez vodoznaku. 100% soukromá generace na straně klienta.",
     "barcodeTitleSuffix": "Bezplatný generátor čárových kódů",
     "barcodeDescTemplate": "Vygenerujte si zdarma vlastní lineární čárové kódy {{toolName}}. Okamžité stahování SVG a PNG s kódováním čárových kódů s vysokou hustotou.",
-    "homeSeoDesc": "Vygenerujte si zdarma 37 typů QR kódů a čárových kódů. Žádná registrace. Okamžité stažení. 100% na straně klienta, v souladu s ISO, 30 jazyků.",
+    "homeSeoDesc": "Generate 37 types of QR codes and barcodes for free. Instant download. 100% client-side, ISO-compliant, 30 languages.",
     "homeHeroTitle": "Všechny nástroje QR a čárových kódů",
     "homeHeroTitleHighlight": "na jednom místě"
   },

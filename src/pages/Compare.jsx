@@ -51,8 +51,8 @@ export default function Compare() {
                       [t('static.compare.tr2', 'Data Privacy Guarantee'), <X size={24} className="text-slate-600 mx-auto" />, <Check size={24} className="text-emerald-400 mx-auto" />],
                       [t('static.compare.tr3', 'Generation Limits'), <span className="text-slate-400">{t('static.compare.tr3val1', 'Strict Daily Limits')}</span>, <span className="text-blue-400 font-bold">{t('static.compare.tr3val2', 'Unlimited')}</span>],
                       [t('static.compare.tr4', 'Offline Capability'), <X size={24} className="text-slate-600 mx-auto" />, <Check size={24} className="text-emerald-400 mx-auto" />],
-                      [t('static.compare.tr5', 'Cost'), <span className="text-slate-400">{t('static.compare.tr5val1', 'Free Tier + $20/mo')}</span>, <span className="text-blue-400 font-bold">{t('static.compare.tr5val2', '100% Free Forever')}</span>],
-                      [t('static.compare.tr6', 'Account Registration'), <span className="text-slate-400">{t('static.compare.tr6val1', 'Required')}</span>, <span className="text-blue-400 font-bold">{t('static.compare.tr6val2', 'Never Required')}</span>],
+                      [t('static.compare.tr5', 'Cost'), <span className="text-slate-400">{t('static.compare.tr5val1', 'Free Tier + $20/mo')}</span>, <span className="text-blue-400 font-bold">{t('static.compare.tr5val2', 'Free Core / Pro from $9')}</span>],
+                      [t('static.compare.tr6', 'Account Registration'), <span className="text-slate-400">{t('static.compare.tr6val1', 'Required')}</span>, <span className="text-blue-400 font-bold">{t('static.compare.tr6val2', 'Instant for Core Tools')}</span>],
                       [t('static.compare.tr7', 'Processing Speed'), <span className="text-slate-400">{t('static.compare.tr7val1', 'Dependent on Network')}</span>, <span className="text-blue-400 font-bold">{t('static.compare.tr7val2', 'Instant (Local CPU)')}</span>]
                     ].map((row, i) => (
                       <tr key={i} className="hover:bg-white/[0.02] transition-colors">

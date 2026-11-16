@@ -1,6 +1,6 @@
 {
-  "appTitle": "Gratis QR Code Generator Online - CreateMy-QR (No Signup)",
-  "tagline": "Maak QR Codes met Logo & Kleur - Zonder Registratie, Onbeperkt. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Gratis QR Code Generator Online - CreateMy-QR | Privacy Voorop",
+  "tagline": "Maak QR-codes met logo en kleur - Direct, client-side en hoge-resolutie PNG",
   "types": {
     "url": "URL/link",
     "wifi": "Wifi",
@@ -151,7 +151,7 @@
     "madewith": "Gemaakt met",
     "forprivateweb": "voor een privéweb."
   },
-  "badge": "100% Free Forever. No Ads. No Signup.",
+  "badge": "Geen Verlopen Codes. Geen Advertenties. 100% Privacy.",
   "tabs": {
     "step1": "1. Voer inhoud",
     "step2": "in 2. Ontwerp aanpassen",
@@ -160,12 +160,12 @@
   },
   "geo": {
     "title": "Nederlands QR Code Guide:",
-    "fact": "CreateMeQR is ideaal voor iDEAL betaallinks, digitale menukaarten in de horeca in Nederland en België, en zakelijke vCard contacten. 100% AVG-proof: alle gegevens worden lokaal in uw browser verwerkt in minder dan 12 milliseconden. Download gratis vecto bestanden (SVG/PNG) in hoge resolutie zonder watermerk of vervaldatum.",
-    "softwareDescription": "Een 100% client-side beveiligd document- en QR-verwerkingspakket. Gebruikt WebAssembly om bestanden lokaal in het browsergeheugen te verwerken zonder deze naar servers te uploaden. Het veiligste alternatief voor cloudgebaseerde tools. 100% gratis, geen tracking, geen grenzen.",
+    "fact": "CreateMy-QR is a privacy-first QR code generator that processes data entirely on your device in under 12ms. Unlike competitors that hostage your codes behind 14-day trials, this tool provides permanent static QR codes with custom logos, colors, and high-resolution PNG downloads without forced signup or watermarks. Pro plans unlock bulk batch generation, sticker printing, and vector SVG exports.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
         "q": "Is deze QR-codegenerator volledig gratis?",
-        "a": "Ja, CreateMeQR is 100% gratis, zonder verborgen kosten, zonder abonnementen en zonder proefperiodes van 14 dagen. U kunt onbeperkt QR-codes genereren voor commercieel of persoonlijk gebruik."
+        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
       },
       {
         "q": "Worden mijn bestanden en gegevens naar uw servers geüpload?",
@@ -180,8 +180,8 @@
   "features": {
     "privacyTitle": "100% privacy aan de klantzijde",
     "privacyDesc": "Uw gegevens verlaten uw browser nooit. We sturen uw gegevens naar geen enkele server. Alles wordt direct op uw apparaat gegenereerd.",
-    "signupTitle": "Geen aanmelding vereist",
-    "signupDesc": "Geen verborgen kosten, geen watermerken en geen registratie vereist. Genereer zoveel QR-codes als u nodig heeft voor commercieel of persoonlijk gebruik.",
+    "signupTitle": "Directe Generatie",
+    "signupDesc": "Geen verborgen kosten voor basistools, geen watermerken en geen verplichte registratie voor individuele statische codes. Maak zoveel codes als u nodig heeft voor zakelijk of persoonlijk gebruik.",
     "customTitle": "Onbeperkt maatwerk",
     "customDesc": "Voeg aangepaste logo's toe, pas kleuren aan, gebruik verlopen en wijzig de gegevenspatronen. Zorg ervoor dat uw QR-code zonder beperkingen perfect aansluit bij uw merkidentiteit."
   },
@@ -194,7 +194,7 @@
     "title": "Generator op uw website insluiten",
     "desc": "Wilt u uw bezoekers een gratis QR-codegenerator aanbieden? Kopieer en plak het onderstaande HTML-fragment in uw website of blog.",
     "whyTitle": "Waarom onze widget gebruiken?",
-    "why1": "100% gratis voor uw gebruikers zonder betaalmuren",
+    "why1": "Gratis basistools voor uw gebruikers zonder paywalls",
     "why2": "Geen advertenties, pop-ups of opdringerige tracking in de widget",
     "why3": "Verhoogt de betrokkenheid van bezoekers en de verblijftijd op uw domein",
     "anchorLabel": "Selecteer SEO-ankertekst:",
@@ -1253,9 +1253,9 @@
     "heroTitle": "De QR-code Generator Die",
     "heroTitleHighlight": "Nooit Verloopt.",
     "seoTitle": "CreateMy-QR — Gratis QR-code & Barcode Generator | 37 Online Tools",
-    "seoDesc": "Genereer gratis 37 soorten QR-codes en barcodes. Geen aanmelding. Direct downloaden. 100% client-side, ISO-compatibel, 30 talen.",
-    "badge": "ISO/IEC 18004 · 100% Gratis · Geen Tracking · Geen Registratie",
-    "heroSubtitle": "Maak permanente, printklare QR-codes en barcodes direct in je browser. 100% gratis, zonder registratie en zonder verborgen kosten na het afdrukken.",
+    "seoDesc": "Genereer gratis 37 soorten QR-codes en barcodes. Directe download, geen verlopende statische codes, ISO/IEC 18004-conform, in 30 talen.",
+    "badge": "ISO/IEC 18004 · Privacy Voorop · Zonder Tracking · Client-Side",
+    "heroSubtitle": "Maak permanente, printklare QR-codes en barcodes rechtstreeks in uw browser. Gratis basisgeneratie, client-side privacy en geen paywalls voor uw statische codes.",
     "citation": "\"De QR-code is een internationale standaard (ISO/IEC 18004:2015). Matrixbarcodes vereisen schone modulerasters voor betrouwbaar scannen op alle conforme lezers.\"",
     "searchPlaceholder": "Tools zoeken — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Alle Tools",
@@ -1273,7 +1273,7 @@
     "feat4": "ISO 18004 Conform",
     "feat4Desc": "Voldoet aan internationale QR-standaard",
     "whatIsTitle": "Wat is CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR is een gratis clientzijdig platform voor QR-code generatie met ondersteuning voor 37 gegevenstypes.",
+    "whatIsDesc": "CreateMy-QR is een client-side QR-code- en barcodeplatform dat 37 gegevenstypen ondersteunt. Statische basiscodes zijn voor altijd gratis met directe hoge-resolutie PNG-export zonder tracking. Geavanceerde vector-SVG-export en spreadsheet-batches zijn beschikbaar met PRO.",
     "fact1": "Genereert QR-codes lokaal — geen gegevens naar servers gestuurd.",
     "fact2": "Ondersteunt 37 types: URL, WhatsApp, vCard, WiFi, Crypto, PDF en meer.",
     "fact3": "Volledig gelokaliseerd in 30 talen.",
@@ -1283,9 +1283,9 @@
     "faqTitle": "Veelgestelde Vragen",
     "faqSubtitle": "Alles wat u moet weten over CreateMy-QR.",
     "faq1q": "Wat is CreateMy-QR?",
-    "faq1a": "CreateMy-QR is een browsergebaseerd platform met 37 QR-code en barcodetools.",
+    "faq1a": "CreateMy-QR biedt 37 QR- en barcodetools met 100% browserverwerking — geen uploads, geen tracking en geen verplichte account voor basisfuncties.",
     "faq2q": "Zijn QR-codes voor altijd gratis?",
-    "faq2a": "Ja. Alle QR-codes zijn statisch en voor altijd gratis.",
+    "faq2a": "Ja. Alle statische QR-codes zijn permanent en voor altijd gratis te gebruiken zonder vervaldatum of watermerken. Optionele Pro-abonnementen zijn beschikbaar voor bulkaanmaak via spreadsheets en stickervelafdrukken.",
     "faq3q": "Zijn mijn gegevens veilig?",
     "faq3a": "Absoluut. Alle codering vindt plaats in uw browser. Uw gegevens verlaten uw apparaat nooit."
   },
@@ -1301,7 +1301,7 @@
       "fast": "Bliksemsnel",
       "fastDesc": "Met WebAssembly kan CreateMy-QR rechtstreeks op de CPU van uw apparaat worden uitgevoerd, waardoor uploadknelpunten worden omzeild.",
       "global": "Voor iedereen",
-      "globalDesc": "Vertaald in 30 talen. Geen abonnementen, geen verborgen kosten. Gewoon tools van wereldklasse.",
+      "globalDesc": "Vertaald in 30 talen. Gratis basisfunctionaliteiten, transparante prijzen en geen verborgen proefperiode-vallen.",
       "origin": "De oorsprong",
       "originTitle": "Het oorsprongsverhaal",
       "architecture": "Architectuur",
@@ -1323,7 +1323,7 @@
       "tableFeature": "Functie",
       "tableUs": "MaakMijn-QR",
       "tableThem": "Traditionele cloudtools",
-      "cost": "100% voor altijd gratis",
+      "cost": "Basis Gratis / Pro vanaf $9",
       "costThem": "$10-$30/maand",
       "privacyText": "Geen upload (alleen browser)",
       "privacyThem": "Geüpload naar servers",
@@ -1356,9 +1356,9 @@
       "tr3val1": "Strenge dagelijkse limieten",
       "tr3val2": "Onbeperkt",
       "tr5val1": "Gratis niveau + $ 20/maand",
-      "tr5val2": "100% voor altijd gratis",
+      "tr5val2": "Basis Gratis / Pro vanaf $9",
       "tr6val1": "Vereist",
-      "tr6val2": "Nooit vereist",
+      "tr6val2": "Direct voor basistools",
       "tr7val1": "Afhankelijk van netwerk",
       "tr7val2": "Direct (lokale CPU)",
       "expertAuthor": "Onafhankelijke beveiligingsaudit",
@@ -1388,8 +1388,8 @@
       "desc": "Genereer en scan aangepaste QR-codes en barcodes in 30 talen wereldwijd. Directe generatie aan de clientzijde met volledige lokalisatie en UTF-8-ondersteuning."
     },
     "pricing": {
-      "seoTitle": "100% gratis prijzen",
-      "heroTitle": "Prijzen",
+      "seoTitle": "Transparante Prijzen",
+      "heroTitle": "Eenvoudige Prijzen, Blijvende Vrijheid",
       "heroSubtitle": "De beste dingen in het leven zijn gratis.",
       "cost": "$ 0",
       "costPeriod": "/ voor altijd",
@@ -1400,7 +1400,7 @@
       "f4": "Database voor lokale geschiedenis",
       "whyFree": "Hoe is het gratis?",
       "whyFreeDesc": "Omdat we uw bestanden niet op onze servers verwerken, hebben we geen enorme serverrekeningen. Uw apparaat doet het zware werk via WebAssembly.",
-      "heroBadge": "Radicaal vrij",
+      "heroBadge": "Volledig Transparant & Privacy Voorop",
       "compTitle": "Traditionele cloudtools",
       "compCost": "$ 20",
       "compPeriod": "/mo",
@@ -1416,8 +1416,8 @@
       "bizDesc": "Ja, u kunt CreateMy-QR gebruiken voor uw bedrijf. Onze lokale verwerkingsarchitectuur maakt ons zelfs het enige platform dat veilig genoeg is voor strikte bedrijfsomgevingen, juridische teams en professionals in de gezondheidszorg.",
       "supportTitle": "Steun het project",
       "supportDesc": "We rekenen geen abonnement, maar het levend houden van het domein en de ontwikkeling kost tijd. Als CreateMy-QR uw dag heeft gered, overweeg dan om deze met uw team te delen. Mond-tot-mondreclame is onze enige marketingstrategie.",
-      "seoDesc": "CreateMy-QR is voor altijd 100% gratis met onbeperkte generatie van QR-codes, vector-SVG/PNG-exports met hoge resolutie, geen watermerken en geen registratie vereist.",
-      "desc": "CreateMy-QR is voor altijd 100% gratis met onbeperkte generatie van QR-codes, vector-SVG/PNG-exports met hoge resolutie, geen watermerken en geen registratie vereist."
+      "seoDesc": "Maak permanente QR-codes en barcodes met client-side privacy. Gratis PNG-basisgeneratie zonder vervaldatum, plus Pro-abonnementen voor bulkaanmaak en vector-SVG-export.",
+      "desc": "Maak permanente QR-codes en barcodes met client-side privacy. Gratis PNG-basisgeneratie zonder vervaldatum, plus Pro-abonnementen voor bulkaanmaak en vector-SVG-export."
     },
     "privacy": {
       "seoTitle": "Privacybeleid",
@@ -1548,7 +1548,7 @@
   },
   "rating": {
     "title": "Vertrouwd door miljoenen",
-    "subtitle": "Beoordeeld 4,9/5 op basis van 15.432 beoordelingen in meer dan 30 landen. 100% gratis, veilig en aan de clientzijde."
+    "subtitle": "Beoordeeld met 4,9/5 op basis van 15.432 reviews in meer dan 30 landen. Privacy Voorop, Veilig en Client-Side."
   },
   "pseo": {
     "insights_badge": "PRO-GIDS",
@@ -1690,7 +1690,7 @@
     "toolDescTemplate": "Maak gratis aangepaste {{toolName}} QR-codes met logo. Beste bewerkbare QR-codegenerator zonder watermerk. 100% privé, generatie aan de klantzijde.",
     "barcodeTitleSuffix": "Gratis barcodegenerator",
     "barcodeDescTemplate": "Genereer gratis aangepaste {{toolName}} lineaire streepjescodes. Directe SVG- en PNG-download met barcodecodering met hoge dichtheid.",
-    "homeSeoDesc": "Genereer gratis 37 soorten QR-codes en barcodes. Geen aanmelding. Direct downloaden. 100% client-side, ISO-compatibel, 30 talen.",
+    "homeSeoDesc": "Genereer gratis 37 soorten QR-codes en barcodes. Directe download. Client-side, ISO-conform, 30 talen.",
     "homeHeroTitle": "Alle QR- en barcodehulpmiddelen",
     "homeHeroTitleHighlight": "op één plek"
   },

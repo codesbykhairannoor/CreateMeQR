@@ -8,7 +8,7 @@ import { User, LogOut, Sparkles, Crown, ChevronDown, Clock } from 'lucide-react'
 import { useNavigate } from 'react-router-dom';
 
 export default function UserMenu({ currentLangCode, onOpenHistory }) {
-  const { user, isPro, signOut, openAuthModal } = useAuth();
+  const { user, isPro, isLifetime, signOut, openAuthModal } = useAuth();
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -78,7 +78,7 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
 
         {isPro && (
           <span className="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 text-[10px] font-semibold tracking-wider uppercase shadow-xs">
-            <Crown className="w-3 h-3" /> PRO
+            <Crown className="w-3 h-3" /> {isLifetime ? 'Lifetime' : 'PRO'}
           </span>
         )}
 
@@ -98,7 +98,7 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
               <span className="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Plan</span>
               {isPro ? (
                 <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
-                  <Crown className="w-3 h-3" /> PRO Active
+                  <Crown className="w-3 h-3" /> {isLifetime ? 'PRO Lifetime' : 'PRO Monthly'}
                 </span>
               ) : (
                 <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">

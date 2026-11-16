@@ -9,7 +9,7 @@ import { useAuth } from '../context/AuthContext';
 
 export default function Pricing() {
   const { t, i18n } = useTranslation();
-  const { user, isPro, openAuthModal } = useAuth();
+  const { user, isPro, isLifetime, openAuthModal } = useAuth();
   const langPrefix = i18n.language.startsWith('en') ? '' : `/${i18n.language.split('-')[0]}`;
   const isIndo = i18n.language?.startsWith('id');
 
@@ -19,7 +19,11 @@ export default function Pricing() {
       return;
     }
 
-    if (isPro) {
+    if (isLifetime) {
+      return;
+    }
+
+    if (isPro && planType === 'monthly') {
       return;
     }
 
@@ -187,10 +191,15 @@ export default function Pricing() {
                 </ul>
               </div>
 
-              {isPro ? (
+              {isLifetime ? (
                 <div className="w-full py-3 px-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-medium text-xs text-center flex items-center justify-center gap-1.5">
                   <Check size={16} />
-                  <span>Pro Plan Active</span>
+                  <span>Covered by Lifetime Pass</span>
+                </div>
+              ) : isPro ? (
+                <div className="w-full py-3 px-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-medium text-xs text-center flex items-center justify-center gap-1.5">
+                  <Check size={16} />
+                  <span>Monthly Subscription Active</span>
                 </div>
               ) : (
                 <button
@@ -250,7 +259,7 @@ export default function Pricing() {
                 </ul>
               </div>
 
-              {isPro ? (
+              {isLifetime ? (
                 <div className="w-full py-3.5 px-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-medium text-xs text-center flex items-center justify-center gap-1.5">
                   <Check size={16} />
                   <span>Lifetime Pass Active</span>
@@ -261,7 +270,13 @@ export default function Pricing() {
                   className="w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-semibold text-xs text-center shadow-lg shadow-blue-900/20 active:scale-[0.99] transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Sparkles size={14} />
-                  <span>{user ? 'Get Lifetime Access ($39)' : 'Sign In for Lifetime Access'}</span>
+                  <span>
+                    {isPro
+                      ? 'Upgrade to Lifetime Pass ($39)'
+                      : user
+                      ? 'Get Lifetime Access ($39)'
+                      : 'Sign In for Lifetime Access'}
+                  </span>
                   <ArrowRight size={14} />
                 </button>
               )}

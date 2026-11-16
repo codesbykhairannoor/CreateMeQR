@@ -1,6 +1,6 @@
 {
-  "appTitle": "Ücretsiz Çevrimiçi QR Kod Oluşturucu - CreateMy-QR (No Signup)",
-  "tagline": "Logo ve Renkli QR Kodlar Üretin - Kayıt Yok, Sınırsız ve Bedava. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Ücretsiz Çevrimiçi QR Kod Oluşturucu - CreateMy-QR | Gizlilik Odaklı",
+  "tagline": "Logo ve Renkli QR Kodlar Oluşturun - Anında, İstemci Tarafında ve Yüksek Çözünürlüklü PNG",
   "types": {
     "url": "URL / Bağlantı",
     "wifi": "Wi-Fi",
@@ -151,7 +151,7 @@
     "madewith": "",
     "forprivateweb": "ile yapıldı özel bir web için."
   },
-  "badge": "100% Free Forever. No Ads. No Signup.",
+  "badge": "Süresi Dolmayan Kodlar. Reklamsız. %100 Gizlilik Odaklı.",
   "tabs": {
     "step1": "1. İçeriği Girin",
     "step2": "2. Tasarımı Özelleştirin",
@@ -160,12 +160,12 @@
   },
   "geo": {
     "title": "Türkçe QR Code Guide:",
-    "fact": "CreateMeQR, Türkiye'deki restoran ve kafe menüleri, IBAN transfer bağlantıları, Wi-Fi paylaşımı ve vCard kartvizitler için en iyi ücretsiz araca sahiptir. Tüm işlemler tarayıcınızın içinde 12 milisaniyede gerçekleşir; hiçbir veri bulut sunucularına iletilmez. Filigransız ve süresiz yüksek çözünürlüklü vektörel SVG ve PNG formatlarını indirin.",
-    "softwareDescription": "%100 İstemci Tarafı güvenli belge ve QR işleme paketi. Dosyaları herhangi bir sunucuya yüklemeden tarayıcı belleğinde yerel olarak işlemek için WebAssembly'ı kullanır. Bulut tabanlı araçlara en güvenli alternatif. %100 Ücretsiz, Sıfır Takip, Sınır Yok.",
+    "fact": "CreateMy-QR is a privacy-first QR code generator that processes data entirely on your device in under 12ms. Unlike competitors that hostage your codes behind 14-day trials, this tool provides permanent static QR codes with custom logos, colors, and high-resolution PNG downloads without forced signup or watermarks. Pro plans unlock bulk batch generation, sticker printing, and vector SVG exports.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
         "q": "Bu QR kod oluşturucu tamamen ücretsiz mi?",
-        "a": "Evet, CreateMeQR hiçbir gizli ücret, abonelik ve 14 günlük deneme süresi olmadan %100 ücretsizdir. Ticari veya kişisel kullanım için sınırsız QR kodları oluşturabilirsiniz."
+        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
       },
       {
         "q": "Dosyalarım ve verilerim sunucularınıza yükleniyor mu?",
@@ -180,8 +180,8 @@
   "features": {
     "privacyTitle": "%100 İstemci Tarafı Gizliliği",
     "privacyDesc": "Verileriniz tarayıcınızdan asla ayrılmaz. Bilgilerinizi hiçbir sunucuya göndermiyoruz. Her şey cihazınızda anında oluşturulur.",
-    "signupTitle": "Kayıt Olmanıza Gerek Yok",
-    "signupDesc": "Gizli ücret yok, filigran yok ve kayıt gerekli değil. Ticari veya kişisel kullanım için ihtiyaç duyduğunuz kadar QR kodu oluşturun.",
+    "signupTitle": "Anında Oluşturma",
+    "signupDesc": "Temel araçlarda gizli ücret yok, filigran yok ve bireysel statik kodlar için zorunlu kayıt gerekmez. Ticari veya kişisel kullanımınız için dilediğiniz kadar kod oluşturun.",
     "customTitle": "Sınırsız Özelleştirme",
     "customDesc": "Özel logolar ekleyin, renkleri değiştirin, degradeler kullanın ve veri modellerini değiştirin. QR kodunuzun kısıtlama olmaksızın marka kimliğinizle mükemmel şekilde eşleşmesini sağlayın."
   },
@@ -194,7 +194,7 @@
     "title": "Jeneratörü Web Sitenize Yerleştirin",
     "desc": "Ziyaretçilerinize ücretsiz bir QR kod oluşturucu sunmak ister misiniz? Aşağıdaki HTML pasajını kopyalayıp web sitenize veya blogunuza yapıştırın.",
     "whyTitle": "Widget'ımızı neden kullanmalısınız?",
-    "why1": "Sıfır ödeme duvarına sahip kullanıcılarınız için %100 Ücretsiz",
+    "why1": "Kullanıcılarınız için ödeme duvarı olmayan ücretsiz temel araçlar",
     "why2": "Widget'ın içinde reklam, pop-up veya izinsiz izleme yok",
     "why3": "Ziyaretçi katılımını ve alanınızda kalma süresini artırır",
     "anchorLabel": "SEO Bağlantı Metnini seçin:",
@@ -1253,9 +1253,9 @@
     "heroTitle": "Süresi Asla Dolmayan",
     "heroTitleHighlight": "Kalıcı QR Kod Oluşturucu.",
     "seoTitle": "CreateMy-QR — Ücretsiz QR Kod & Barkod Oluşturucu | 37 Çevrimiçi Araç",
-    "seoDesc": "Ücretsiz olarak 37 tür QR kodu ve barkod oluşturun. Kayıt yok. Anında indirme. %100 istemci tarafı, ISO uyumlu, 30 dil.",
-    "badge": "ISO/IEC 18004 · %100 Ücretsiz · İzleme Yok · Kayıt Yok",
-    "heroSubtitle": "Doğrudan tarayıcınızda baskıya hazır kalıcı QR kodlar ve barkodlar oluşturun. %100 ücretsiz, kayıt yok, yazdırdıktan sonra gizli ücret yok.",
+    "seoDesc": "Ücretsiz olarak 37 türde QR kod ve barkod oluşturun. Anında indirme, süresi dolmayan statik kodlar, 30 dilde ISO/IEC 18004 uyumlu.",
+    "badge": "ISO/IEC 18004 · Gizlilik Öncelikli · Sıfır Takip · İstemci Tarafı",
+    "heroSubtitle": "Doğrudan tarayıcınızda kalıcı, baskıya hazır QR kodları ve barkodlar oluşturun. Ücretsiz temel oluşturma, istemci tarafı gizliliği ve statik kodlarınızda ödeme duvarı yok.",
     "citation": "\"QR Kodu, uluslararası bir standarttır (ISO/IEC 18004:2015). Matris barkodlar, tüm uyumlu okuyucularda güvenilir tarama için temiz modül ızgaraları gerektirir.\"",
     "searchPlaceholder": "Araç ara — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Tüm Araçlar",
@@ -1273,7 +1273,7 @@
     "feat4": "ISO 18004 Uyumlu",
     "feat4Desc": "Uluslararası QR standardını karşılar",
     "whatIsTitle": "CreateMy-QR nedir?",
-    "whatIsDesc": "CreateMy-QR, 37 veri türünü destekleyen ücretsiz istemci taraflı bir QR kodu ve barkod oluşturma platformudur.",
+    "whatIsDesc": "CreateMy-QR, 37 veri türünü destekleyen istemci tarafı bir QR kod ve barkod platformudur. Temel statik kodlar, anında yüksek çözünürlüklü PNG dışa aktarma ve sıfır takip ile sonsuza kadar ücretsizdir. Gelişmiş vektörel SVG dışa aktarma ve toplu e-tablo paketleri PRO ile açılır.",
     "fact1": "QR kodları yerel olarak oluşturur — sunucuya veri gönderilmez.",
     "fact2": "37 türü destekler: URL, WhatsApp, vCard, WiFi, Kripto, PDF ve daha fazlası.",
     "fact3": "Arapça, Japonca ve Hintçe dahil 30 dilde tam yerelleştirilmiş.",
@@ -1283,9 +1283,9 @@
     "faqTitle": "Sıkça Sorulan Sorular",
     "faqSubtitle": "CreateMy-QR hakkında bilmeniz gereken her şey.",
     "faq1q": "CreateMy-QR nedir?",
-    "faq1a": "CreateMy-QR, 37 QR kodu ve barkod aracı sunan tarayıcı tabanlı bir platformdur.",
+    "faq1a": "CreateMy-QR tarayıcıda çalışan 37 araç sunar — sunucuya dosya yükleme yok, izleme yok ve temel özellikler için hesap zorunluluğu yoktur.",
     "faq2q": "QR kodları sonsuza kadar ücretsiz mi?",
-    "faq2a": "Evet. Tüm QR kodları statiktir ve sonsuza kadar ücretsizdir.",
+    "faq2a": "Evet. Tüm statik QR kodları kalıcıdır ve son kullanma tarihi veya filigran olmadan sonsuza kadar ücretsizdir. E-tablolardan toplu üretim ve çıkartma sayfası baskısı için isteğe bağlı Pro abonelikleri mevcuttur.",
     "faq3q": "Verilerim güvende mi?",
     "faq3a": "Kesinlikle. Tüm kodlama tarayıcınızda gerçekleşir. Verileriniz asla cihazınızı terk etmez."
   },
@@ -1301,7 +1301,7 @@
       "fast": "Yıldırım Hızında",
       "fastDesc": "WebAssembly, CreateMy-QR'ın yükleme darboğazlarını aşarak doğrudan cihazınızın CPU'su üzerinde çalışmasına olanak tanır.",
       "global": "Herkes İçin",
-      "globalDesc": "30 dile çevrildi. Abonelik yok, gizli ücret yok. Sadece birinci sınıf araçlar.",
+      "globalDesc": "30 dile çevrilmiştir. Ücretsiz temel araçlar, şeffaf fiyatlandırma ve gizli deneme tuzağı yok.",
       "origin": "Kökeni",
       "originTitle": "Köken Hikayesi",
       "architecture": "Mimarlık",
@@ -1323,7 +1323,7 @@
       "tableFeature": "Özellik",
       "tableUs": "QR'mi Oluştur",
       "tableThem": "Geleneksel Bulut Araçları",
-      "cost": "Sonsuza Kadar %100 Ücretsiz",
+      "cost": "Temel Ücretsiz / Pro 9$'dan başlayan",
       "costThem": "Aylık 10$-30$",
       "privacyText": "Sıfır Yükleme (Yalnızca Tarayıcı)",
       "privacyThem": "Sunuculara yüklendi",
@@ -1356,9 +1356,9 @@
       "tr3val1": "ile yapıldı Katı Günlük Limitler",
       "tr3val2": "Sınırsız",
       "tr5val1": "Ücretsiz Katman + 20 ABD Doları/ay",
-      "tr5val2": "Sonsuza Kadar %100 Ücretsiz",
+      "tr5val2": "Temel Ücretsiz / Pro 9$'dan başlayan",
       "tr6val1": "Gerekli",
-      "tr6val2": "Hiçbir Zaman Gerekli Değil",
+      "tr6val2": "Temel Araçlar İçin Anında",
       "tr7val1": "Ağa Bağlı",
       "tr7val2": "Anında (Yerel CPU)",
       "expertAuthor": "Bağımsız Güvenlik Denetimi",
@@ -1388,8 +1388,8 @@
       "desc": "Dünya çapında 30 dilde özel QR kodları ve barkodlar oluşturun ve tarayın. Tam yerelleştirme ve UTF-8 desteğiyle anında istemci tarafı oluşturma."
     },
     "pricing": {
-      "seoTitle": "%100 Ücretsiz Fiyatlandırma",
-      "heroTitle": "Fiyatlandırma",
+      "seoTitle": "Şeffaf Fiyatlandırma",
+      "heroTitle": "Basit Fiyatlandırma, Özgür Kullanım",
       "heroSubtitle": "Hayattaki en iyi şeyler bedavadır.",
       "cost": "0$",
       "costPeriod": "/ sonsuza kadar",
@@ -1400,7 +1400,7 @@
       "f4": "Yerel Tarih Veritabanı",
       "whyFree": "Nasıl bedava?",
       "whyFreeDesc": "Dosyalarınızı sunucularımızda işlemediğimiz için büyük sunucu faturalarımız olmuyor. Cihazınız ağır işleri WebAssembly aracılığıyla yapar.",
-      "heroBadge": "Tamamen Özgür",
+      "heroBadge": "Tamamen Şeffaf ve Gizlilik Öncelikli",
       "compTitle": "Geleneksel Bulut Araçları",
       "compCost": "20$",
       "compPeriod": "/ay",
@@ -1416,8 +1416,8 @@
       "bizDesc": "Evet, şirketiniz için CreateMy-QR'ı kullanabilirsiniz. Aslında yerel işleme mimarimiz bizi katı kurumsal ortamlar, hukuk ekipleri ve sağlık profesyonelleri için yeterince güvenli tek platform haline getiriyor.",
       "supportTitle": "Projeyi Destekleyin",
       "supportDesc": "Abonelik ücreti almıyoruz ancak alanı ve geliştirmeyi canlı tutmak zaman alır. CreateMy-QR gününüzü kurtardıysa bunu ekibinizle paylaşmayı düşünün. Ağızdan ağza pazarlama bizim tek pazarlama stratejimizdir.",
-      "seoDesc": "CreateMy-QR, sınırsız QR kodu oluşturma, yüksek çözünürlüklü vektör SVG/PNG dışa aktarma, sıfır filigran ve kayıt gerektirme özellikleriyle sonsuza kadar %100 ücretsizdir.",
-      "desc": "CreateMy-QR, sınırsız QR kodu oluşturma, yüksek çözünürlüklü vektör SVG/PNG dışa aktarma, sıfır filigran ve kayıt gerektirme özellikleriyle sonsuza kadar %100 ücretsizdir."
+      "seoDesc": "İstemci tarafı gizliliğiyle kalıcı QR kodları ve barkodlar oluşturun. Süresi dolmayan ücretsiz temel PNG oluşturma ve toplu işlemler ile vektörel SVG için Pro planları.",
+      "desc": "İstemci tarafı gizliliğiyle kalıcı QR kodları ve barkodlar oluşturun. Süresi dolmayan ücretsiz temel PNG oluşturma ve toplu işlemler ile vektörel SVG için Pro planları."
     },
     "privacy": {
       "seoTitle": "Gizlilik Politikası",
@@ -1548,7 +1548,7 @@
   },
   "rating": {
     "title": "Milyonlarca Kişinin Güvendiği",
-    "subtitle": "30'dan fazla ülkede 15.432 yoruma göre 4,9/5 puan aldı. %100 Ücretsiz, Güvenli ve İstemci Taraflı."
+    "subtitle": "30'dan fazla ülkede 15.432 incelemeye göre 4.9/5 puan. Gizlilik Öncelikli, Güvenli ve İstemci Tarafında."
   },
   "pseo": {
     "insights_badge": "PRO REHBER",
@@ -1690,7 +1690,7 @@
     "toolDescTemplate": "Logolu özel {{toolName}} QR kodlarını ücretsiz oluşturun. Filigran içermeyen en iyi düzenlenebilir QR kod oluşturucu. %100 özel, istemci tarafı oluşturma.",
     "barcodeTitleSuffix": "Ücretsiz Barkod Oluşturucu",
     "barcodeDescTemplate": "Ücretsiz olarak özel {{toolName}} doğrusal barkod oluşturun. Yüksek yoğunluklu barkod kodlamasıyla anında SVG ve PNG indirme.",
-    "homeSeoDesc": "Ücretsiz olarak 37 tür QR kodu ve barkod oluşturun. Kayıt yok. Anında indirme. %100 istemci tarafı, ISO uyumlu, 30 dil.",
+    "homeSeoDesc": "Ücretsiz olarak 37 türde QR kod ve barkod oluşturun. Anında indirme. İstemci tarafı, ISO uyumlu, 30 dil.",
     "homeHeroTitle": "Tüm QR ve Barkod Araçları",
     "homeHeroTitleHighlight": "Tek Bir Yerde"
   },

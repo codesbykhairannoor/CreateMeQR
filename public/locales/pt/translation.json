@@ -1,6 +1,6 @@
 {
-  "appTitle": "Gerador de Código QR Grátis Online - CreateMy-QR (No Signup)",
-  "tagline": "Crie Códigos QR com Logotipo e Cor - Sem Registro, Ilimitado. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Gerador de Código QR Grátis Online - CreateMy-QR | Privacidade Garantida",
+  "tagline": "Crie Códigos QR com Logo e Cores - Instantâneo, no Navegador e PNG de Alta Resolução",
   "types": {
     "url": "URL/Link",
     "wifi": "Wi-Fi",
@@ -151,7 +151,7 @@
     "madewith": "Feito com",
     "forprivateweb": "para uma web privada."
   },
-  "badge": "Sem testes de 14 dias. Sem anúncios. 100% Grátis para sempre.",
+  "badge": "Códigos Sem Expiração. Sem Anúncios. 100% Foco na Privacidade.",
   "tabs": {
     "step1": "1. Inserir Conteúdo",
     "step2": "2. Personalizar Design",
@@ -160,12 +160,12 @@
   },
   "geo": {
     "title": "Como gerar códigos QR personalizados no Brasil e Portugal:",
-    "fact": "CreateMeQR é a ferramenta perfeita para pagamentos rápidos PIX no Brasil, cardápios digitais em restaurantes de Portugal e compartilhamento de redes Wi-Fi. Processamento 100% local no seu navegador em menos de 12ms. Baixe arquivos vetoriais em alta resolução SVG e PNG sem marca d'água e sem data de expiração.",
-    "softwareDescription": "Um documento 100% seguro do lado do cliente e um conjunto de processamento de QR. Usa WebAssembly para processar arquivos localmente na memória do navegador sem fazer upload para nenhum servidor. A alternativa mais segura às ferramentas baseadas em nuvem. 100% gratuito, rastreamento zero, sem limites.",
+    "fact": "CreateMy-QR processa dados localmente em menos de 12ms. Sem códigos bloqueados após 14 dias: códigos estáticos permanentes com logos e PNG em alta definição sem cadastro forçado.",
+    "softwareDescription": "Suíte segura de QR e documentos 100% no cliente via WebAssembly, sem envio para servidores. Privacidade absoluta e códigos permanentes.",
     "faqs": [
       {
         "q": "Este gerador de código QR é totalmente gratuito?",
-        "a": "Sim, CreateMeQR é 100% gratuito, sem taxas ocultas, sem assinaturas e sem testes de 14 dias. Você pode gerar códigos QR ilimitados para uso comercial ou pessoal."
+        "a": "A geração de códigos estáticos é gratuita para sempre sem validade nem cobranças ocultas. Planos Pro opcionais atendem processamento em massa e arquivos SVG."
       },
       {
         "q": "Meus arquivos e dados são enviados para seus servidores?",
@@ -180,8 +180,8 @@
   "features": {
     "privacyTitle": "100% de Privacidade no Navegador",
     "privacyDesc": "Seus dados nunca saem do seu navegador. Não enviamos suas informações para nenhum servidor na nuvem. Tudo é gerado instantaneamente no seu dispositivo.",
-    "signupTitle": "Sem Necessidade de Cadastro",
-    "signupDesc": "Sem taxas ocultas, sem marca d'água e sem necessidade de criar conta. Gere códigos QR ilimitados para suas campanhas comerciais ou pessoais.",
+    "signupTitle": "Geração Instantânea",
+    "signupDesc": "Sem taxas ocultas nas ferramentas básicas, sem marcas d'água e sem registro obrigatório para códigos estáticos individuais. Crie quantos códigos precisar para uso pessoal ou comercial.",
     "customTitle": "Personalização Ilimitada",
     "customDesc": "Adicione o logotipo da sua marca, ajuste cores com gradientes modernos e mude os padrões de matriz para combinar com sua identidade visual."
   },
@@ -194,7 +194,7 @@
     "title": "Incorpore o Gerador QR no Seu Site",
     "desc": "Quer oferecer uma ferramenta gratuita de código QR para seus visitantes? Copie e cole o código HTML abaixo no seu site ou blog.",
     "whyTitle": "Por que usar nosso widget?",
-    "why1": "100% Grátis para seus usuários sem cobranças ocultas",
+    "why1": "Ferramentas básicas gratuitas para seus usuários sem barreiras pagas",
     "why2": "Sem anúncios, popups ou rastreamento invasivo",
     "why3": "Aumenta o tempo de permanência e engajamento no seu domínio",
     "anchorLabel": "Selecione o texto de ancoragem (SEO Anchor Text):",
@@ -1251,11 +1251,11 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Gerador de QR Code & Código de Barras Grátis | 37 Ferramentas Online",
-    "seoDesc": "Gere 37 tipos de códigos QR e códigos de barras gratuitamente. Sem inscrição. Download instantâneo. 100% do lado do cliente, compatível com ISO, 30 idiomas.",
-    "badge": "ISO/IEC 18004 · 100% Grátis · Sem Rastreamento · Sem Cadastro",
+    "seoDesc": "Gere 37 tipos de códigos QR e códigos de barras grátis. Download instantâneo no navegador, códigos estáticos sem expiração, padrão ISO/IEC 18004 em 30 idiomas.",
+    "badge": "ISO/IEC 18004 · Privacidade em Primeiro Lugar · Zero Rastreamento · No Navegador",
     "heroTitle": "O Gerador de QR Code Que",
     "heroTitleHighlight": "Nunca Expira.",
-    "heroSubtitle": "Crie códigos QR e códigos de barras permanentes prontos para impressão direto no navegador. 100% gratuito, sem cadastro e sem cobranças após imprimir.",
+    "heroSubtitle": "Crie códigos QR e códigos de barras permanentes e prontos para impressão diretamente no seu navegador. Geração básica gratuita, privacidade no navegador e sem taxas nos seus códigos estáticos.",
     "citation": "\"O QR Code é um padrão internacional (ISO/IEC 18004:2015). Códigos de barras matriciais exigem grades de módulos limpas para leitura confiável em todos os leitores conformes.\"",
     "searchPlaceholder": "Buscar ferramentas — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Todas as Ferramentas",
@@ -1273,7 +1273,7 @@
     "feat4": "Conforme ISO 18004",
     "feat4Desc": "Atende ao padrão QR internacional",
     "whatIsTitle": "O que é CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR é uma plataforma gratuita de geração de QR code no lado do cliente que suporta 37 tipos de dados. Todos os códigos são estáticos, conformes com ISO e prontos para exportação.",
+    "whatIsDesc": "CreateMy-QR é uma plataforma de códigos QR e códigos de barras no navegador com suporte a 37 tipos de dados. Os códigos estáticos básicos são gratuitos para sempre com exportação PNG em alta resolução e zero rastreamento. Exportações em SVG vetorial e lotes por planilha são liberados no PRO.",
     "fact1": "Gera QR codes localmente — nenhum dado enviado a qualquer servidor.",
     "fact2": "Suporta 37 tipos: URL, WhatsApp, vCard, WiFi, Crypto, PDF e mais.",
     "fact3": "Totalmente localizado em 30 idiomas incluindo árabe, japonês e hindi.",
@@ -1283,9 +1283,9 @@
     "faqTitle": "Perguntas Frequentes",
     "faqSubtitle": "Tudo o que você precisa saber sobre CreateMy-QR.",
     "faq1q": "O que é CreateMy-QR?",
-    "faq1a": "CreateMy-QR é uma plataforma baseada em navegador com 37 ferramentas de QR code e código de barras. Gera códigos em conformidade com ISO/IEC 18004:2015 com processamento 100% no lado do cliente.",
+    "faq1a": "CreateMy-QR é uma plataforma web que oferece 37 ferramentas de códigos QR e de barras com processamento local — sem uploads, sem rastreamento e sem conta obrigatória.",
     "faq2q": "Os QR codes são gratuitos para sempre?",
-    "faq2a": "Sim. Todos os QR codes são estáticos e gratuitos para sempre. Sem limites, marcas d'água, datas de expiração ou assinaturas.",
+    "faq2a": "Sim. Todos os códigos QR estáticos são permanentes e gratuitos para sempre, sem data de expiração ou marcas d'água. Assinaturas Pro opcionais estão disponíveis para geração em lote por planilhas e impressão de folhas de etiquetas.",
     "faq3q": "Meus dados estão seguros ao gerar um QR code?",
     "faq3a": "Com certeza. Toda a codificação ocorre no seu navegador. Seus dados nunca saem do seu dispositivo e nunca são transmitidos a qualquer servidor."
   },
@@ -1301,7 +1301,7 @@
       "fast": "Rápido como um relâmpago",
       "fastDesc": "O WebAssembly permite que o CreateMy-QR seja executado diretamente na CPU do seu dispositivo, contornando gargalos de upload.",
       "global": "Para Todos",
-      "globalDesc": "Traduzido para 30 idiomas. Sem assinaturas, sem taxas ocultas. Apenas ferramentas de classe mundial.",
+      "globalDesc": "Traduzido para 30 idiomas. Recursos básicos gratuitos, preços transparentes e sem pegadinhas de testes pagos.",
       "origin": "A Origem",
       "originTitle": "A História da Origem",
       "architecture": "Arquitetura",
@@ -1323,7 +1323,7 @@
       "tableFeature": "Recurso",
       "tableUs": "CriarMeu-QR",
       "tableThem": "Ferramentas tradicionais de nuvem",
-      "cost": "100% grátis para sempre",
+      "cost": "Básico Grátis / Pro a partir de $9",
       "costThem": "US$ 10 a US$ 30 / mês",
       "privacyText": "Zero-Upload (somente navegador)",
       "privacyThem": "Carregado nos servidores",
@@ -1356,9 +1356,9 @@
       "tr3val1": "Limites diários rigorosos",
       "tr3val2": "Ilimitado",
       "tr5val1": "Nível gratuito + US$ 20/mês",
-      "tr5val2": "100% grátis para sempre",
+      "tr5val2": "Básico Grátis / Pro a partir de $9",
       "tr6val1": "Obrigatório",
-      "tr6val2": "Nunca é obrigatório",
+      "tr6val2": "Instantâneo para ferramentas básicas",
       "tr7val1": "Dependente da Rede",
       "tr7val2": "Instantâneo (CPU Local)",
       "expertAuthor": "Auditoria de segurança independente",
@@ -1388,8 +1388,8 @@
       "desc": "Gere e digitalize códigos QR e códigos de barras personalizados em 30 idiomas em todo o mundo. Geração instantânea do lado do cliente com localização completa e suporte a UTF-8."
     },
     "pricing": {
-      "seoTitle": "Preço 100% gratuito",
-      "heroTitle": "Preços",
+      "seoTitle": "Preços Transparentes",
+      "heroTitle": "Preços Simples, Liberdade Total",
       "heroSubtitle": "As melhores coisas da vida são gratuitas.",
       "cost": "US$ 0",
       "costPeriod": "/ para sempre",
@@ -1400,7 +1400,7 @@
       "f4": "Banco de dados de histórico local",
       "whyFree": "Como é grátis?",
       "whyFreeDesc": "Como não processamos seus arquivos em nossos servidores, não temos contas enormes de servidores. Seu dispositivo faz o trabalho pesado via WebAssembly.",
-      "heroBadge": "Radicalmente Grátis",
+      "heroBadge": "Radicalmente Transparente e com Foco em Privacidade",
       "compTitle": "Ferramentas tradicionais de nuvem",
       "compCost": "US$ 20",
       "compPeriod": "/ mês",
@@ -1416,8 +1416,8 @@
       "bizDesc": "Sim, você pode usar CreateMy-QR para sua empresa. Na verdade, nossa arquitetura de processamento local nos torna a única plataforma segura o suficiente para ambientes corporativos rigorosos, equipes jurídicas e profissionais de saúde.",
       "supportTitle": "Apoie o Projeto",
       "supportDesc": "Não cobramos assinatura, mas manter o domínio e o desenvolvimento vivos leva tempo. Se o CreateMy-QR salvou o seu dia, considere compartilhá-lo com sua equipe. O boca a boca é nossa única estratégia de marketing.",
-      "seoDesc": "CreateMy-QR é 100% gratuito para sempre, com geração ilimitada de códigos QR, exportações SVG/PNG vetoriais de alta resolução, zero marcas d’água e nenhum registro necessário.",
-      "desc": "CreateMy-QR é 100% gratuito para sempre, com geração ilimitada de códigos QR, exportações SVG/PNG vetoriais de alta resolução, zero marcas d’água e nenhum registro necessário."
+      "seoDesc": "Crie códigos QR e de barras permanentes com foco em privacidade. Geração básica gratuita em PNG sem expiração, além de planos Pro para lotes e exportações em SVG vetorial.",
+      "desc": "Crie códigos QR e de barras permanentes com foco em privacidade. Geração básica gratuita em PNG sem expiração, além de planos Pro para lotes e exportações em SVG vetorial."
     },
     "privacy": {
       "seoTitle": "política de Privacidade",
@@ -1548,7 +1548,7 @@
   },
   "rating": {
     "title": "Confiado por milhões",
-    "subtitle": "Classificado em 4,9/5 com base em 15.432 avaliações em mais de 30 países. 100% gratuito, seguro e do lado do cliente."
+    "subtitle": "Avaliado em 4.9/5 com base em 15.432 avaliações em mais de 30 países. Foco em Privacidade, Seguro e no Navegador."
   },
   "pseo": {
     "insights_badge": "GUIA PRO",
@@ -1690,7 +1690,7 @@
     "toolDescTemplate": "Crie códigos QR {{toolName}} personalizados com logotipo gratuitamente. Melhor gerador de código QR editável sem marca d'água. Geração 100% privada do lado do cliente.",
     "barcodeTitleSuffix": "Gerador de código de barras grátis",
     "barcodeDescTemplate": "Gere códigos de barras lineares personalizados {{toolName}} gratuitamente. Download instantâneo de SVG e PNG com codificação de código de barras de alta densidade.",
-    "homeSeoDesc": "Gere 37 tipos de códigos QR e códigos de barras gratuitamente. Sem inscrição. Download instantâneo. 100% do lado do cliente, compatível com ISO, 30 idiomas.",
+    "homeSeoDesc": "Gere 37 tipos de códigos QR e códigos de barras grátis. Download instantâneo. No navegador, padrão ISO, 30 idiomas.",
     "homeHeroTitle": "Todas as ferramentas de QR e código de barras",
     "homeHeroTitleHighlight": "em um só lugar"
   },

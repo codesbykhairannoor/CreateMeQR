@@ -232,7 +232,7 @@ export default function MainLayout({ children }) {
                 </span>
               </div>
               <p className="text-zinc-500 dark:text-zinc-400 text-sm leading-relaxed mb-4 speakable-summary">
-                {t('footer.desc', "The world's fastest, 100% free, privacy-first QR Code generator. Powered by client-side WebAssembly.")}
+                {t('footer.desc', "The world's fastest privacy-first QR & barcode studio. Free core tools powered by client-side WebAssembly.")}
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20">

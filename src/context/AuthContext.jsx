@@ -48,8 +48,10 @@ export const AuthProvider = ({ children }) => {
         let currentPlan = data.plan || 'free';
         let currentStatus = data.subscriptionStatus || 'inactive';
 
-        // Check expiration if set
-        if (data.plan === 'pro' && data.expiresAt && Date.now() > data.expiresAt) {
+        const isLifetime = data.planType === 'lifetime' || data.subscriptionType === 'lifetime';
+
+        // Check expiration if set (Lifetime plans never expire)
+        if (data.plan === 'pro' && !isLifetime && data.expiresAt && Date.now() > data.expiresAt) {
           currentPlan = 'free';
           currentStatus = 'inactive';
           await updateDoc(userDocRef, {
@@ -233,10 +235,17 @@ export const AuthProvider = ({ children }) => {
   const openAuthModal = () => setIsAuthModalOpen(true);
   const closeAuthModal = () => setIsAuthModalOpen(false);
 
-  const isPro = Boolean(
+  const isLifetime = Boolean(
     profile?.plan === 'pro' &&
-    profile?.subscriptionStatus === 'active' &&
-    (!profile.expiresAt || profile.expiresAt > Date.now())
+    (profile?.planType === 'lifetime' || profile?.subscriptionType === 'lifetime')
+  );
+
+  const isPro = Boolean(
+    profile?.plan === 'pro' && (
+      isLifetime ||
+      profile?.suiteAccess === 'all_access' ||
+      (profile?.subscriptionStatus === 'active' && (!profile.expiresAt || profile.expiresAt > Date.now()))
+    )
   );
 
   return (
@@ -246,6 +255,7 @@ export const AuthProvider = ({ children }) => {
         profile,
         loading,
         isPro,
+        isLifetime,
         signInWithGoogle,
         signInWithEmail,
         signUpWithEmail,
@@ -271,6 +281,7 @@ export const useAuth = () => {
       profile: null,
       loading: false,
       isPro: false,
+      isLifetime: false,
       signInWithGoogle: async () => {},
       signInWithEmail: async () => {},
       signUpWithEmail: async () => {},

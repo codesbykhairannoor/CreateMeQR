@@ -1,6 +1,6 @@
 {
-  "appTitle": "Gratis QR-kod Generator Online - CreateMy-QR (No Signup)",
-  "tagline": "Skapa QR-koder med Logotyp & Färg - Utan Registrering, Obegränsat. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Free QR Code Generator Online - CreateMy-QR | Privacy-First",
+  "tagline": "Create QR Codes with Logo & Color - Instant, Client-Side & High-Res PNG",
   "types": {
     "url": "URL/länk",
     "wifi": "Wi-Fi",
@@ -151,7 +151,7 @@
     "madewith": "Tillverkad med",
     "forprivateweb": "för en privat webb."
   },
-  "badge": "100% Free Forever. No Ads. No Signup.",
+  "badge": "No Expiring Codes. No Ads. 100% Privacy-First.",
   "tabs": {
     "step1": "1. Ange innehåll",
     "step2": "2. Anpassa design",
@@ -160,12 +160,12 @@
   },
   "geo": {
     "title": "Svenska QR Code Guide:",
-    "fact": "CreateMeQR är det perfekta verktyget för Swish betalningslänkar, restaurangmenyer och digitala vizitkort i Sverige. 100% integritetsskyddad generering direkt i din webbläsare på under 12 millisekunder utan serverspårning. Ladda ner högupplösta vektorfiler (SVG/PNG) utan vattenstämpel och utan utgångsdatum.",
-    "softwareDescription": "En 100 % klient-sida säker dokument- och QR-behandlingssvit. Använder WebAssembly för att bearbeta filer lokalt i webbläsarens minne utan att ladda upp till några servrar. Det säkraste alternativet till molnbaserade verktyg. 100 % gratis, noll spårning, inga gränser.",
+    "fact": "CreateMy-QR is a privacy-first QR code generator that processes data entirely on your device in under 12ms. Unlike competitors that hostage your codes behind 14-day trials, this tool provides permanent static QR codes with custom logos, colors, and high-resolution PNG downloads without forced signup or watermarks. Pro plans unlock bulk batch generation, sticker printing, and vector SVG exports.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
         "q": "Är denna QR-kodgenerator helt gratis?",
-        "a": "Ja, CreateMeQR är 100 % gratis utan dolda avgifter, inga prenumerationer och inga 14-dagars provperioder. Du kan generera obegränsade QR-koder för kommersiellt eller personligt bruk."
+        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
       },
       {
         "q": "Laddas mina filer och data upp till dina servrar?",
@@ -180,8 +180,8 @@
   "features": {
     "privacyTitle": "100 % integritet på klientsidan",
     "privacyDesc": "Dina data lämnar aldrig din webbläsare. Vi skickar inte din information till någon server. Allt genereras omedelbart på din enhet.",
-    "signupTitle": "Ingen registrering krävs",
-    "signupDesc": "Inga dolda avgifter, inga vattenstämplar och ingen registrering krävs. Generera så många QR-koder du behöver för kommersiellt eller personligt bruk.",
+    "signupTitle": "Instant Generation",
+    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
     "customTitle": "Obegränsad anpassning",
     "customDesc": "Lägg till anpassade logotyper, justera färger, använd övertoningar och ändra datamönstren. Få din QR-kod att matcha din varumärkesidentitet perfekt utan begränsningar."
   },
@@ -194,7 +194,7 @@
     "title": "Bädda in Generator på din webbplats",
     "desc": "Vill du erbjuda en gratis QR-kodgenerator till dina besökare? Kopiera och klistra in HTML-kodavsnittet nedan på din webbplats eller blogg.",
     "whyTitle": "Varför använda vår widget?",
-    "why1": "100 % gratis för dina användare med noll betalväggar",
+    "why1": "Free core tools for your users with zero paywalls",
     "why2": "Inga annonser, popup-fönster eller påträngande spårning inuti widgeten",
     "why3": "Ökar besökarnas engagemang och uppehållstid på din domän",
     "anchorLabel": "Välj SEO Anchor Text:",
@@ -1251,11 +1251,11 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Gratis QR-kod- och streckkodsgenerator | 37 Verktyg online",
-    "seoDesc": "Generera 37 typer av QR-koder och streckkoder gratis. Ingen registrering. Omedelbar nedladdning. 100 % klientsida, ISO-kompatibel, 30 språk.",
-    "badge": "ISO/IEC 18004 · 100 % gratis · Noll spårning · Ingen registrering",
+    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "QR-kodgeneratorn Som",
     "heroTitleHighlight": "Aldrig Upphör Att Fungera.",
-    "heroSubtitle": "Skapa permanenta, tryckfärdiga QR-koder och streckkoder direkt i webbläsaren. 100% gratis, ingen registrering och inga dolda kostnader efter utskrift.",
+    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Free core generation, client-side privacy, and zero paywalls on your static codes.",
     "citation": "\"QR-koden är en internationell standard (ISO/IEC 18004:2015). Matrisstreckkoder kräver rena modulrutnät för pålitlig skanning över alla kompatibla läsare över hela världen.\"",
     "searchPlaceholder": "Sökverktyg — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Alla verktyg",
@@ -1273,7 +1273,7 @@
     "feat4": "ISO 18004-kompatibel",
     "feat4Desc": "Uppfyller internationell QR-standard",
     "whatIsTitle": "Vad är CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR är en gratis plattform för generering av QR-koder och streckkoder på klientsidan som stöder 37 datatyper inklusive sociala medier, meddelanden, betalningar, filer och kontaktkort. Alla koder är statiska, ISO-kompatibla och exportklara som SVG eller PNG. Inget konto. Inget utgångsdatum. Ingen kostnad.",
+    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.",
     "fact1": "Genererar QR-koder lokalt — ingen data skickas till någon server.",
     "fact2": "Stöder 37 typer: URL, WhatsApp, vCard, WiFi, Crypto, PDF och mer.",
     "fact3": "Fullt lokaliserad på 30 språk inklusive arabiska, japanska och hindi.",
@@ -1283,9 +1283,9 @@
     "faqTitle": "Vanliga frågor",
     "faqSubtitle": "Allt du behöver veta om CreateMy-QR.",
     "faq1q": "Vad är CreateMy-QR?",
-    "faq1a": "CreateMy-QR är en gratis webbläsarbaserad plattform som erbjuder 37 QR-koder och streckkodsverktyg. Den genererar ISO/IEC 18004:2015-kompatibla koder med 100 % bearbetning på klientsidan – inga uppladdningar, ingen spårning, inget konto krävs.",
+    "faq1a": "CreateMy-QR is a browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant codes with client-side processing — no uploads, zero tracking, and no forced account for core generation.",
     "faq2q": "Är QR-koderna gratis att använda för alltid?",
-    "faq2a": "Ja. Alla QR-koder är statiska och gratis för alltid. Inga gränser, inga vattenstämplar, inga utgångsdatum och inget abonnemang krävs. Någonsin.",
+    "faq2a": "Yes. All static QR codes are permanent and free forever with no expiry dates or watermarks. Optional Pro subscriptions are available for users who need bulk spreadsheet batches and sticker sheet printing.",
     "faq3q": "Är min data säker när jag genererar en QR-kod?",
     "faq3a": "Absolut. All kodning sker i din webbläsare. Din data lämnar aldrig din enhet och överförs aldrig till någon server. Plattformen är helt GDPR- och CCPA-kompatibel."
   },
@@ -1301,7 +1301,7 @@
       "fast": "Blixtsnabb",
       "fastDesc": "WebAssembly låter CreateMy-QR köras direkt på din enhets processor och kringgår uppladdningsflaskhalsar.",
       "global": "För alla",
-      "globalDesc": "Översatt till 30 språk. Inga abonnemang, inga dolda avgifter. Bara verktyg i världsklass.",
+      "globalDesc": "Translated into 30 languages. Free core utilities, transparent pricing, and zero hidden trial traps.",
       "origin": "Ursprunget",
       "originTitle": "Ursprungsberättelsen",
       "architecture": "Arkitektur",
@@ -1323,7 +1323,7 @@
       "tableFeature": "Funktion",
       "tableUs": "CreateMy-QR",
       "tableThem": "Traditionella molnverktyg",
-      "cost": "100 % gratis för alltid",
+      "cost": "Free Core / Pro from $9",
       "costThem": "$10-$30 / månad",
       "privacyText": "Noll-uppladdning (endast webbläsare)",
       "privacyThem": "Uppladdad till servrar",
@@ -1356,9 +1356,9 @@
       "tr3val1": "Strikta dagliga gränser",
       "tr3val2": "Obegränsad",
       "tr5val1": "Gratis nivå + $20/månad",
-      "tr5val2": "100 % gratis för alltid",
+      "tr5val2": "Free Core / Pro from $9",
       "tr6val1": "Obligatorisk",
-      "tr6val2": "Krävs aldrig",
+      "tr6val2": "Instant for Core Tools",
       "tr7val1": "Beroende på nätverk",
       "tr7val2": "Omedelbar (lokal CPU)",
       "expertAuthor": "Oberoende säkerhetsrevision",
@@ -1388,8 +1388,8 @@
       "desc": "Generera och skanna anpassade QR-koder och streckkoder på 30 språk över hela världen. Omedelbar generering på klientsidan med full lokalisering och UTF-8-stöd."
     },
     "pricing": {
-      "seoTitle": "100 % gratis prissättning",
-      "heroTitle": "Prissättning",
+      "seoTitle": "Transparent Pricing",
+      "heroTitle": "Simple Pricing, Forever Freedom",
       "heroSubtitle": "De bästa sakerna i livet är gratis.",
       "cost": "$0",
       "costPeriod": "/ för alltid",
@@ -1400,7 +1400,7 @@
       "f4": "Lokalhistorisk databas",
       "whyFree": "Hur är det gratis?",
       "whyFreeDesc": "Eftersom vi inte behandlar dina filer på våra servrar har vi inga stora serverräkningar. Din enhet gör det tunga lyftet via WebAssembly.",
-      "heroBadge": "Radikalt gratis",
+      "heroBadge": "Radically Transparent & Privacy-First",
       "compTitle": "Traditionella molnverktyg",
       "compCost": "20 $",
       "compPeriod": "/mo",
@@ -1416,8 +1416,8 @@
       "bizDesc": "Ja, du kan använda CreateMy-QR för ditt företag. Faktum är att vår lokala bearbetningsarkitektur gör oss till den enda plattformen som är säker nog för strikta företagsmiljöer, juridiska team och vårdpersonal.",
       "supportTitle": "Stöd projektet",
       "supportDesc": "Vi tar inte betalt för ett abonnemang, men att hålla domänen och utvecklingen vid liv tar tid. Om CreateMy-QR räddade din dag, överväg att dela den med ditt team. Mun till mun är vår enda marknadsföringsstrategi.",
-      "seoDesc": "CreateMy-QR är 100 % gratis för alltid med obegränsad generering av QR-koder, högupplöst vektor SVG/PNG-export, noll vattenstämplar och ingen registrering krävs.",
-      "desc": "CreateMy-QR är 100 % gratis för alltid med obegränsad generering av QR-koder, högupplöst vektor SVG/PNG-export, noll vattenstämplar och ingen registrering krävs."
+      "seoDesc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports.",
+      "desc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports."
     },
     "privacy": {
       "seoTitle": "Sekretesspolicy",
@@ -1548,7 +1548,7 @@
   },
   "rating": {
     "title": "Betrodd av miljoner",
-    "subtitle": "Betygsatt 4,9/5 baserat på 15 432 recensioner i över 30 länder. 100 % gratis, säkert och klientsidan."
+    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
   },
   "pseo": {
     "insights_badge": "PRO-GUIDE",
@@ -1690,7 +1690,7 @@
     "toolDescTemplate": "Skapa anpassade {{toolName}} QR-koder med logotyp gratis. Bästa redigerbara QR-kodgenerator utan vattenstämpel. 100 % privat generation på klientsidan.",
     "barcodeTitleSuffix": "Gratis streckkodsgenerator",
     "barcodeDescTemplate": "Generera anpassade {{toolName}} linjära streckkoder gratis. Omedelbar SVG- och PNG-nedladdning med högdensitetsstreckkodskodning.",
-    "homeSeoDesc": "Generera 37 typer av QR-koder och streckkoder gratis. Ingen registrering. Omedelbar nedladdning. 100 % klientsida, ISO-kompatibel, 30 språk.",
+    "homeSeoDesc": "Generate 37 types of QR codes and barcodes for free. Instant download. 100% client-side, ISO-compliant, 30 languages.",
     "homeHeroTitle": "Alla QR- och streckkodsverktyg",
     "homeHeroTitleHighlight": "på ett ställe"
   },

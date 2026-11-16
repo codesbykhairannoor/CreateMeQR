@@ -1,6 +1,6 @@
 {
-  "appTitle": "Darmowy Generator Kodów QR Online - CreateMy-QR (No Signup)",
-  "tagline": "Twórz Kody QR z Logo i Kolorem - Bez Rejestracji, Nielimitowane. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Darmowy Generator Kodów QR Online - CreateMy-QR | Pełna Prywatność",
+  "tagline": "Twórz kody QR z logo i kolorem - Błyskawicznie, po stronie klienta i PNG w wysokiej rozdzielczości",
   "types": {
     "url": "Adres URL / Link",
     "wifi": "Wi-Fi",
@@ -151,7 +151,7 @@
     "madewith": "Wykonane z",
     "forprivateweb": "dla prywatnej sieci."
   },
-  "badge": "100% Free Forever. No Ads. No Signup.",
+  "badge": "Kody Bez Daty Ważności. Bez Reklam. 100% Prywatności.",
   "tabs": {
     "step1": "1. Wprowadź treść",
     "step2": "2. Dostosuj projekt",
@@ -160,12 +160,12 @@
   },
   "geo": {
     "title": "Polski QR Code Guide:",
-    "fact": "CreateMeQR to doskonałe narzędzie do płatności mobilnych BLIK, cyfrowych menu w restauracjach w Polsce oraz udostępniania kontaktów biznesowych vCard. Pełna zgodność z RODO: przetwarzanie danych odbywa się w Twojej przeglądarce w czasie poniżej 12ms. Pobieraj wysokiej rozdzielczości pliki wektorowe SVG i PNG bez znaku wodnego i bez limitu czasu.",
-    "softwareDescription": "W 100% bezpieczny pakiet do przetwarzania dokumentów i kodów QR po stronie klienta. Używa WebAssembly do przetwarzania plików lokalnie w pamięci przeglądarki bez przesyłania ich na jakiekolwiek serwery. Najbezpieczniejsza alternatywa dla narzędzi opartych na chmurze. 100% za darmo, zero śledzenia, brak ograniczeń.",
+    "fact": "CreateMy-QR is a privacy-first QR code generator that processes data entirely on your device in under 12ms. Unlike competitors that hostage your codes behind 14-day trials, this tool provides permanent static QR codes with custom logos, colors, and high-resolution PNG downloads without forced signup or watermarks. Pro plans unlock bulk batch generation, sticker printing, and vector SVG exports.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
         "q": "Czy ten generator kodów QR jest całkowicie darmowy?",
-        "a": "Tak, CreateMeQR jest w 100% darmowy, bez ukrytych opłat, bez subskrypcji i bez 14-dniowych wersji próbnych. Możesz generować nieograniczoną liczbę kodów QR do użytku komercyjnego lub osobistego."
+        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
       },
       {
         "q": "Czy moje pliki i dane są przesyłane na Wasze serwery?",
@@ -180,8 +180,8 @@
   "features": {
     "privacyTitle": "100% prywatności po stronie klienta",
     "privacyDesc": "Twoje dane nigdy nie opuszczają przeglądarki. Nie wysyłamy Twoich danych na żaden serwer. Wszystko jest generowane natychmiast na Twoim urządzeniu.",
-    "signupTitle": "Rejestracja nie jest wymagana",
-    "signupDesc": "Żadnych ukrytych opłat, znaków wodnych i wymaganej rejestracji. Wygeneruj tyle kodów QR, ile potrzebujesz do użytku komercyjnego lub osobistego.",
+    "signupTitle": "Błyskawiczne Generowanie",
+    "signupDesc": "Brak ukrytych opłat za podstawowe narzędzia, brak znaków wodnych i brak wymogu rejestracji dla pojedynczych kodów statycznych. Generuj tyle kodów, ile potrzebujesz do celów prywatnych lub komercyjnych.",
     "customTitle": "Nieograniczona personalizacja",
     "customDesc": "Dodaj niestandardowe logo, dostosowuj kolory, używaj gradientów i zmieniaj wzorce danych. Spraw, aby Twój kod QR idealnie pasował do tożsamości Twojej marki, bez ograniczeń."
   },
@@ -194,7 +194,7 @@
     "title": "Umieść generator na swojej stronie internetowej",
     "desc": "Chcesz zaoferować swoim gościom darmowy generator kodów QR? Skopiuj i wklej poniższy fragment kodu HTML na swoją witrynę lub blog.",
     "whyTitle": "Dlaczego warto korzystać z naszego widgetu?",
-    "why1": "100% darmowy dla Twoich użytkowników z zerowymi paywallami",
+    "why1": "Darmowe narzędzia podstawowe dla Twoich użytkowników bez ograniczeń",
     "why2": "Brak reklam, wyskakujących okienek i natrętnego śledzenia w widżecie",
     "why3": "Zwiększa zaangażowanie odwiedzających i czas przebywania w Twojej domenie",
     "anchorLabel": "Wybierz tekst zakotwiczenia SEO:",
@@ -1251,11 +1251,11 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — bezpłatny generator kodów QR i kreskowych | 37 Narzędzia online",
-    "seoDesc": "Wygeneruj za darmo 37 rodzajów kodów QR i kodów kreskowych. Brak rejestracji. Natychmiastowe pobieranie. 100% po stronie klienta, zgodne z ISO, 30 języków.",
-    "badge": "ISO/IEC 18004 · 100% za darmo · Zerowe śledzenie · Brak rejestracji",
+    "seoDesc": "Generuj 37 typów kodów QR i kodów kreskowych za darmo. Błyskawiczne pobieranie, brak wygasających kodów statycznych, zgodność z ISO/IEC 18004 w 30 językach.",
+    "badge": "ISO/IEC 18004 · Pełna Prywatność · Bez Śledzenia · Po Stronie Klienta",
     "heroTitle": "Generator Kodów QR, Który",
     "heroTitleHighlight": "Nigdy Nie Wygasa.",
-    "heroSubtitle": "Twórz trwałe, gotowe do druku kody QR i kody kreskowe bezpośrednio w przeglądarce. W 100% za darmo, bez rejestracji i bez ukrytych opłat po wydrukowaniu.",
+    "heroSubtitle": "Twórz trwałe, gotowe do druku kody QR i kody kreskowe bezpośrednio w przeglądarce. Bezpłatne narzędzia podstawowe, pełna prywatność i brak ukrytych opłat za kody statyczne.",
     "citation": "„Kod QR to międzynarodowy standard (ISO/IEC 18004:2015). Matrycowe kody kreskowe wymagają czystych siatek modułów w celu niezawodnego skanowania we wszystkich zgodnych czytnikach na całym świecie”.",
     "searchPlaceholder": "Narzędzia wyszukiwania — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Wszystkie narzędzia",
@@ -1273,7 +1273,7 @@
     "feat4": "Zgodny z ISO 18004",
     "feat4Desc": "Spełnia międzynarodowy standard QR",
     "whatIsTitle": "Co to jest CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR to bezpłatna platforma do generowania kodów QR i kreskowych po stronie klienta, obsługująca 37 typów danych, w tym media społecznościowe, wiadomości, płatności, pliki i karty kontaktowe. Wszystkie kody są statyczne, zgodne z ISO i gotowe do eksportu w formacie SVG lub PNG. Brak konta. Brak wygaśnięcia. Bez kosztów.",
+    "whatIsDesc": "CreateMy-QR to platforma kodów QR i kreskowych po stronie klienta, obsługująca 37 typów danych. Podstawowe kody statyczne są bezpłatne na zawsze z natychmiastowym eksportem PNG w wysokiej rozdzielczości i bez śledzenia. Eksport wektorowy SVG oraz pakiety z arkuszy kalkulacyjnych odblokowuje plan PRO.",
     "fact1": "Generuje kody QR lokalnie — żadne dane nie są wysyłane do żadnego serwera.",
     "fact2": "Obsługuje 37 typów: URL, WhatsApp, vCard, WiFi, Crypto, PDF i inne.",
     "fact3": "W pełni zlokalizowane w 30 językach, w tym w języku arabskim, japońskim i hindi.",
@@ -1283,9 +1283,9 @@
     "faqTitle": "Często zadawane pytania",
     "faqSubtitle": "Wszystko, co musisz wiedzieć o CreateMy-QR.",
     "faq1q": "Co to jest CreateMy-QR?",
-    "faq1a": "CreateMy-QR to bezpłatna platforma oparta na przeglądarce oferująca 37 narzędzi do kodów QR i kodów kreskowych. Generuje kody zgodne z normą ISO/IEC 18004:2015 przy przetwarzaniu w 100% po stronie klienta — bez przesyłania, bez śledzenia i bez konieczności zakładania konta.",
+    "faq1a": "CreateMy-QR oferuje 37 narzędzi QR i kodów kreskowych działających bezpośrednio w przeglądarce — zero wysyłania plików na serwer, zero śledzenia i bez wymogu rejestracji dla bazy.",
     "faq2q": "Czy kody QR można używać bezpłatnie przez zawsze?",
-    "faq2a": "Tak. Wszystkie kody QR są statyczne i bezpłatne na zawsze. Bez ograniczeń, bez znaków wodnych, bez dat wygaśnięcia i bez konieczności subskrypcji. Kiedykolwiek.",
+    "faq2a": "Tak. Wszystkie statyczne kody QR są trwałe i bezpłatne na zawsze, bez dat ważności i znaków wodnych. Opcjonalne subskrypcje Pro są dostępne dla osób potrzebujących masowego generowania z arkuszy kalkulacyjnych i drukowania arkuszy naklejek.",
     "faq3q": "Czy moje dane są bezpieczne podczas generowania kodu QR?",
     "faq3a": "Absolutnie. Całe kodowanie odbywa się w przeglądarce. Twoje dane nigdy nie opuszczają Twojego urządzenia i nie są przesyłane na żaden serwer. Platforma jest w pełni zgodna z RODO i CCPA."
   },
@@ -1301,7 +1301,7 @@
       "fast": "Błyskawicznie",
       "fastDesc": "WebAssembly umożliwia działanie CreateMy-QR bezpośrednio na procesorze urządzenia, omijając wąskie gardła podczas przesyłania.",
       "global": "Dla każdego",
-      "globalDesc": "Przetłumaczone na 30 języków. Żadnych subskrypcji, żadnych ukrytych opłat. Po prostu narzędzia światowej klasy.",
+      "globalDesc": "Przetłumaczone na 30 języków. Darmowe narzędzia podstawowe, przejrzysty cennik i brak pułapek okresów próbnych.",
       "origin": "Pochodzenie",
       "originTitle": "Historia pochodzenia",
       "architecture": "Architektura",
@@ -1323,7 +1323,7 @@
       "tableFeature": "Funkcja",
       "tableUs": "UtwórzMój-QR",
       "tableThem": "Tradycyjne narzędzia w chmurze",
-      "cost": "100% za darmo na zawsze",
+      "cost": "Baza Za Darmo / Pro od 9$",
       "costThem": "10–30 USD miesięcznie",
       "privacyText": "Przesyłanie zerowe (tylko przeglądarka)",
       "privacyThem": "Przesłane na serwery",
@@ -1356,9 +1356,9 @@
       "tr3val1": "Ścisłe limity dzienne",
       "tr3val2": "Nieograniczony",
       "tr5val1": "Bezpłatny poziom + 20 USD/mies.",
-      "tr5val2": "100% za darmo na zawsze",
+      "tr5val2": "Baza Za Darmo / Pro od 9$",
       "tr6val1": "Wymagane",
-      "tr6val2": "Nigdy nie wymagane",
+      "tr6val2": "Błyskawicznie dla narzędzi podstawowych",
       "tr7val1": "Zależnie od sieci",
       "tr7val2": "Natychmiastowe (lokalny procesor)",
       "expertAuthor": "Niezależny audyt bezpieczeństwa",
@@ -1388,8 +1388,8 @@
       "desc": "Generuj i skanuj niestandardowe kody QR i kody kreskowe w 30 językach na całym świecie. Natychmiastowe generowanie po stronie klienta z pełną lokalizacją i obsługą UTF-8."
     },
     "pricing": {
-      "seoTitle": "100% darmowe ceny",
-      "heroTitle": "Ceny",
+      "seoTitle": "Przejrzysty Cennik",
+      "heroTitle": "Prosty Cennik, Trwała Swoboda",
       "heroSubtitle": "Najlepsze rzeczy w życiu są darmowe.",
       "cost": "0 dolarów",
       "costPeriod": "/ na zawsze",
@@ -1400,7 +1400,7 @@
       "f4": "Baza danych historii lokalnej",
       "whyFree": "Jak to jest darmowe?",
       "whyFreeDesc": "Ponieważ nie przetwarzamy Twoich plików na naszych serwerach, nie mamy ogromnych rachunków za serwer. Twoje urządzenie wykonuje całą pracę za pośrednictwem WebAssembly.",
-      "heroBadge": "Radykalnie bezpłatny",
+      "heroBadge": "Całkowicie Przejrzyste & Prywatność na 1. Miejscu",
       "compTitle": "Tradycyjne narzędzia w chmurze",
       "compCost": "20 dolarów",
       "compPeriod": "/mies",
@@ -1416,8 +1416,8 @@
       "bizDesc": "Tak, możesz używać CreateMy-QR w swojej firmie. W rzeczywistości nasza lokalna architektura przetwarzania sprawia, że ​​jesteśmy jedyną platformą wystarczająco bezpieczną dla rygorystycznych środowisk korporacyjnych, zespołów prawnych i pracowników służby zdrowia.",
       "supportTitle": "Wesprzyj projekt",
       "supportDesc": "Nie pobieramy abonamentu, ale utrzymanie domeny i jej rozwój wymaga czasu. Jeśli CreateMy-QR uratował Twój dzień, rozważ udostępnienie go swojemu zespołowi. Poczta pantoflowa to nasza jedyna strategia marketingowa.",
-      "seoDesc": "CreateMy-QR jest w 100% darmowy na zawsze z nieograniczoną możliwością generowania kodów QR, eksportem wektorów SVG/PNG w wysokiej rozdzielczości, zerową liczbą znaków wodnych i nie wymaga rejestracji.",
-      "desc": "CreateMy-QR jest w 100% darmowy na zawsze z nieograniczoną możliwością generowania kodów QR, eksportem wektorów SVG/PNG w wysokiej rozdzielczości, zerową liczbą znaków wodnych i nie wymaga rejestracji."
+      "seoDesc": "Twórz trwałe kody QR i kreskowe z zachowaniem pełnej prywatności. Bezpłatne generowanie PNG bez terminu ważności oraz plany Pro do przetwarzania masowego i eksportu wektorowego SVG.",
+      "desc": "Twórz trwałe kody QR i kreskowe z zachowaniem pełnej prywatności. Bezpłatne generowanie PNG bez terminu ważności oraz plany Pro do przetwarzania masowego i eksportu wektorowego SVG."
     },
     "privacy": {
       "seoTitle": "Polityka prywatności",
@@ -1548,7 +1548,7 @@
   },
   "rating": {
     "title": "Zaufały miliony",
-    "subtitle": "Ocena 4,9/5 na podstawie 15 432 recenzji z ponad 30 krajów. 100% darmowy, bezpieczny i po stronie klienta."
+    "subtitle": "Ocena 4.9/5 na podstawie 15 432 opinii z ponad 30 krajów. Pełna Prywatność, Bezpieczeństwo i Praca po Stronie Klienta."
   },
   "pseo": {
     "insights_badge": "PRZEWODNIK PRO",
@@ -1690,7 +1690,7 @@
     "toolDescTemplate": "Twórz bezpłatnie niestandardowe kody QR {{toolName}} z logo. Najlepszy edytowalny generator kodów QR bez znaku wodnego. Generowanie w 100% prywatne, po stronie klienta.",
     "barcodeTitleSuffix": "Darmowy generator kodów kreskowych",
     "barcodeDescTemplate": "Wygeneruj bezpłatnie niestandardowe liniowe kody kreskowe {{toolName}}. Natychmiastowe pobieranie plików SVG i PNG z kodowaniem kodów kreskowych o dużej gęstości.",
-    "homeSeoDesc": "Wygeneruj za darmo 37 rodzajów kodów QR i kodów kreskowych. Brak rejestracji. Natychmiastowe pobieranie. 100% po stronie klienta, zgodne z ISO, 30 języków.",
+    "homeSeoDesc": "Generuj 37 typów kodów QR i kreskowych za darmo. Błyskawiczne pobieranie. Po stronie klienta, zgodność z ISO, 30 języków.",
     "homeHeroTitle": "Wszystkie narzędzia QR i kodów kreskowych",
     "homeHeroTitleHighlight": "w jednym miejscu"
   },

@@ -1,6 +1,6 @@
 {
-  "appTitle": "Penjana Kod QR Percuma Dalam Talian - CreateMy-QR (No Signup)",
-  "tagline": "Cipta Kod QR dengan Logo & Warna - Tanpa Pendaftaran, Tanpa Had. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Penjana Kod QR Percuma Dalam Talian - CreateMy-QR | Privasi Diutamakan",
+  "tagline": "Cipta Kod QR dengan Logo & Warna - Segera, Sisi Klien & PNG Resolusi Tinggi",
   "types": {
     "url": "URL / Pautan",
     "wifi": "Wi-Fi",
@@ -151,7 +151,7 @@
     "madewith": "Dibuat dengan",
     "forprivateweb": "untuk web peribadi."
   },
-  "badge": "100% Free Forever. No Ads. No Signup.",
+  "badge": "Kod Tanpa Tamat Tempoh. Tiada Iklan. 100% Privasi Terjamin.",
   "tabs": {
     "step1": "1. Masukkan Kandungan",
     "step2": "2. Sesuaikan Reka Bentuk",
@@ -160,12 +160,12 @@
   },
   "geo": {
     "title": "Bahasa Melayu QR Code Guide:",
-    "fact": "CreateMeQR adalah platform terbaik untuk pautan pembayaran DuitNow QR di Malaysia, menu digital restoran dan kafe, serta perkongsian kenalan vCard. Diproses 100% secara setempat di dalam pelayar anda dalam masa kurang 12ms tanpa menghantar data ke pelayan. Muat turun fail vektor SVG dan PNG beresolusi tinggi secara percuma tanpa cop air dan tanpa tarikh luput.",
-    "softwareDescription": "Dokumen selamat 100% Bahagian Pelanggan dan suite pemprosesan QR. Menggunakan WebAssembly untuk memproses fail secara setempat dalam memori penyemak imbas tanpa memuat naik ke mana-mana pelayan. Alternatif paling selamat kepada alatan berasaskan awan. 100% Percuma, Penjejakan Sifar, Tiada Had.",
+    "fact": "CreateMy-QR is a privacy-first QR code generator that processes data entirely on your device in under 12ms. Unlike competitors that hostage your codes behind 14-day trials, this tool provides permanent static QR codes with custom logos, colors, and high-resolution PNG downloads without forced signup or watermarks. Pro plans unlock bulk batch generation, sticker printing, and vector SVG exports.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
         "q": "Adakah penjana kod QR ini percuma sepenuhnya?",
-        "a": "Ya, CreateMeQR adalah 100% percuma tanpa yuran tersembunyi, tiada langganan dan tiada percubaan 14 hari. Anda boleh menjana kod QR tanpa had untuk kegunaan komersial atau peribadi."
+        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
       },
       {
         "q": "Adakah fail dan data saya dimuat naik ke pelayan anda?",
@@ -180,8 +180,8 @@
   "features": {
     "privacyTitle": "100% Privasi Sebelah Pelanggan",
     "privacyDesc": "Data anda tidak pernah meninggalkan penyemak imbas anda. Kami tidak menghantar maklumat anda ke mana-mana pelayan. Semuanya dijana serta-merta pada peranti anda.",
-    "signupTitle": "Tiada Pendaftaran Diperlukan",
-    "signupDesc": "Tiada yuran tersembunyi, tiada tera air, dan tiada pendaftaran diperlukan. Hasilkan seberapa banyak kod QR yang anda perlukan untuk kegunaan komersial atau peribadi.",
+    "signupTitle": "Penjanaan Segera",
+    "signupDesc": "Tiada caj tersembunyi untuk alatan teras, tiada tera air dan tiada pendaftaran paksa untuk kod statik individu. Hasilkan seberapa banyak kod yang anda perlukan untuk kegunaan peribadi atau komersial.",
     "customTitle": "Penyesuaian Tanpa Had",
     "customDesc": "Tambahkan logo tersuai, tweak warna, gunakan kecerunan dan tukar corak data. Jadikan kod QR anda sepadan dengan identiti jenama anda dengan sempurna tanpa sekatan."
   },
@@ -194,7 +194,7 @@
     "title": "Benamkan Penjana pada Tapak Web Anda",
     "desc": "Ingin menawarkan penjana kod QR percuma kepada pelawat anda? Salin dan tampal coretan HTML di bawah ke dalam tapak web atau blog anda.",
     "whyTitle": "Mengapa menggunakan widget kami?",
-    "why1": "100% Percuma untuk pengguna anda dengan dinding berbayar sifar",
+    "why1": "Alatan asas percuma untuk pengguna anda tanpa halangan bayaran",
     "why2": "Tiada iklan, pop timbul atau penjejakan mengganggu dalam widget",
     "why3": "Meningkatkan penglibatan pelawat dan masa tinggal di domain anda",
     "anchorLabel": "Pilih Teks Sauh SEO:",
@@ -1251,11 +1251,11 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Penjana Kod QR & Kod Bar Percuma |37 Alat Dalam Talian",
-    "seoDesc": "Hasilkan 37 jenis kod QR dan kod bar secara percuma. Tiada pendaftaran. Muat turun segera. 100% bahagian pelanggan, mematuhi ISO, 30 bahasa.",
-    "badge": "ISO/IEC 18004 · 100% Percuma · Penjejakan Sifar · Tiada Pendaftaran",
+    "seoDesc": "Hasilkan 37 jenis kod QR dan kod bar secara percuma. Muat turun segera, kod statik tanpa tarikh luput, mematuhi ISO/IEC 18004 dalam 30 bahasa.",
+    "badge": "ISO/IEC 18004 · Privasi Diutamakan · Sifar Penjejakan · Sisi Klien",
     "heroTitle": "Penjana Kod QR yang",
     "heroTitleHighlight": "Tidak Pernah Luput.",
-    "heroSubtitle": "Cipta kod QR dan kod bar kekal sedia cetak terus dalam pelayar anda. 100% percuma, tanpa pendaftaran, dan tiada caj tersembunyi selepas dicetak.",
+    "heroSubtitle": "Cipta kod QR dan kod bar kekal sedia cetak terus dalam penyemak imbas anda. Penjanaan asas percuma, privasi sisi klien dan tiada sekatan bayaran pada kod statik anda.",
     "citation": "\"Kod QR ialah piawaian antarabangsa (ISO/IEC 18004:2015). Kod bar matriks memerlukan grid modul yang bersih untuk pengimbasan yang boleh dipercayai merentas semua pembaca yang patuh di seluruh dunia.\"",
     "searchPlaceholder": "Alat carian — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Semua Alat",
@@ -1273,7 +1273,7 @@
     "feat4": "Mematuhi ISO 18004",
     "feat4Desc": "Memenuhi standard QR antarabangsa",
     "whatIsTitle": "Apakah itu CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR ialah platform penjanaan kod QR dan kod bar sisi pelanggan percuma yang menyokong 37 jenis data termasuk media sosial, pemesejan, pembayaran, fail dan kad kenalan.Semua kod adalah statik, mematuhi ISO dan sedia eksport sebagai SVG atau PNG.Tiada akaun.Tiada tamat tempoh.Tiada kos.",
+    "whatIsDesc": "CreateMy-QR ialah platform kod QR dan kod bar sisi klien yang menyokong 37 jenis data. Kod statik teras adalah percuma selama-lamanya dengan eksport PNG resolusi tinggi segera tanpa penjejakan. Eksport SVG vektor lanjutan dan kelompok hamparan dibuka dengan PRO.",
     "fact1": "Menjana kod QR secara setempat — tiada data dihantar ke mana-mana pelayan.",
     "fact2": "Menyokong 37 jenis: URL, WhatsApp, vCard, WiFi, Crypto, PDF dan banyak lagi.",
     "fact3": "Dilokalkan sepenuhnya dalam 30 bahasa termasuk Arab, Jepun dan Hindi.",
@@ -1283,9 +1283,9 @@
     "faqTitle": "Soalan Lazim",
     "faqSubtitle": "Semua yang anda perlu tahu tentang CreateMy-QR.",
     "faq1q": "Apakah itu CreateMy-QR?",
-    "faq1a": "CreateMy-QR ialah platform penjanaan kod QR dan kod bar sisi pelanggan percuma yang menyokong 37 jenis data termasuk media sosial, pemesejan, pembayaran, fail dan kad kenalan.Semua kod adalah statik, mematuhi ISO dan sedia eksport sebagai SVG atau PNG.Tiada akaun.Tiada tamat tempoh.Tiada kos.",
+    "faq1a": "CreateMy-QR menyediakan 37 alat kod QR dan kod bar berasaskan pelayar — tanpa muat naik ke pelayan, sifar penjejakan dan tiada kewajipan akaun untuk ciri asas.",
     "faq2q": "Menjana kod QR secara setempat — tiada data dihantar ke mana-mana pelayan.",
-    "faq2a": "Menyokong 37 jenis: URL, WhatsApp, vCard, WiFi, Crypto, PDF dan banyak lagi.",
+    "faq2a": "Ya. Semua kod QR statik kekal dan percuma selama-lamanya tanpa tarikh luput atau tera air. Langganan Pro pilihan disediakan untuk penjanaan pukal hamparan dan cetakan helaian pelekat.",
     "faq3q": "Dilokalkan sepenuhnya dalam 30 bahasa termasuk Arab, Jepun dan Hindi.",
     "faq3a": "Mengapa ia 100% Selamat?"
   },
@@ -1301,7 +1301,7 @@
       "fast": "Sepantas Kilat",
       "fastDesc": "WebAssembly membenarkan CreateMy-QR berjalan terus pada CPU peranti anda, memintas kesesakan muat naik.",
       "global": "Untuk Semua",
-      "globalDesc": "Diterjemah ke dalam 30 bahasa. Tiada langganan, tiada yuran tersembunyi. Hanya alat bertaraf dunia.",
+      "globalDesc": "Diterjemahkan ke dalam 30 bahasa. Utiliti asas percuma, harga telus dan tiada perangkap tempoh percubaan tersembunyi.",
       "origin": "Asal usul",
       "originTitle": "Kisah Asal",
       "architecture": "Seni Bina",
@@ -1323,7 +1323,7 @@
       "tableFeature": "Ciri",
       "tableUs": "CreateMy-QR",
       "tableThem": "Alat Awan Tradisional",
-      "cost": "100% Percuma Selamanya",
+      "cost": "Asas Percuma / Pro dari $9",
       "costThem": "$10-$30 / bulan",
       "privacyText": "Sifar-Muat Naik (Pelayar sahaja)",
       "privacyThem": "Dimuat naik ke pelayan",
@@ -1356,9 +1356,9 @@
       "tr3val1": "Had Harian yang Ketat",
       "tr3val2": "Tanpa had",
       "tr5val1": "Peringkat Percuma + $20/bln",
-      "tr5val2": "100% Percuma Selamanya",
+      "tr5val2": "Asas Percuma / Pro dari $9",
       "tr6val1": "Diperlukan",
-      "tr6val2": "Tidak Pernah Diperlukan",
+      "tr6val2": "Segera untuk alatan asas",
       "tr7val1": "Bergantung pada Rangkaian",
       "tr7val2": "Segera (CPU Tempatan)",
       "expertAuthor": "Audit Keselamatan Bebas",
@@ -1388,8 +1388,8 @@
       "desc": "Jana dan imbas kod QR tersuai dan kod bar dalam 30 bahasa di seluruh dunia. Penjanaan pihak pelanggan segera dengan penyetempatan penuh dan sokongan UTF-8."
     },
     "pricing": {
-      "seoTitle": "100% Harga Percuma",
-      "heroTitle": "Harga",
+      "seoTitle": "Harga Telus",
+      "heroTitle": "Harga Mudah, Kebebasan Selamanya",
       "heroSubtitle": "Perkara terbaik dalam hidup adalah percuma.",
       "cost": "$0",
       "costPeriod": "/ selamanya",
@@ -1400,7 +1400,7 @@
       "f4": "Pangkalan Data Sejarah Tempatan",
       "whyFree": "Bagaimana ia percuma?",
       "whyFreeDesc": "Oleh kerana kami tidak memproses fail anda pada pelayan kami, kami tidak mempunyai bil pelayan yang besar. Peranti anda melakukan pengangkatan berat melalui WebAssembly.",
-      "heroBadge": "Percuma secara radikal",
+      "heroBadge": "Sangat Telus & Mengutamakan Privasi",
       "compTitle": "Alat Awan Tradisional",
       "compCost": "$20",
       "compPeriod": "/bln",
@@ -1416,8 +1416,8 @@
       "bizDesc": "Ya, anda boleh menggunakan CreateMy-QR untuk syarikat anda. Malah, seni bina pemprosesan tempatan kami menjadikan kami satu-satunya platform yang cukup selamat untuk persekitaran korporat yang ketat, pasukan undang-undang dan profesional penjagaan kesihatan.",
       "supportTitle": "Sokong Projek",
       "supportDesc": "Kami tidak mengenakan bayaran langganan, tetapi memastikan domain dan pembangunan terus hidup memerlukan masa. Jika CreateMy-QR menyelamatkan hari anda, pertimbangkan untuk berkongsi dengan pasukan anda. Dari mulut ke mulut adalah satu-satunya strategi pemasaran kami.",
-      "seoDesc": "CreateMy-QR adalah 100% percuma selama-lamanya dengan penjanaan kod QR tanpa had, eksport SVG/PNG vektor resolusi tinggi, tera air sifar dan tiada pendaftaran diperlukan.",
-      "desc": "CreateMy-QR adalah 100% percuma selama-lamanya dengan penjanaan kod QR tanpa had, eksport SVG/PNG vektor resolusi tinggi, tera air sifar dan tiada pendaftaran diperlukan."
+      "seoDesc": "Cipta kod QR dan kod bar kekal dengan privasi sisi klien. Penjanaan asas PNG percuma tanpa tamat tempoh, serta pelan Pro untuk kelompok pukal dan eksport SVG vektor.",
+      "desc": "Cipta kod QR dan kod bar kekal dengan privasi sisi klien. Penjanaan asas PNG percuma tanpa tamat tempoh, serta pelan Pro untuk kelompok pukal dan eksport SVG vektor."
     },
     "privacy": {
       "seoTitle": "Dasar Privasi",
@@ -1548,7 +1548,7 @@
   },
   "rating": {
     "title": "Dipercayai oleh Jutaan",
-    "subtitle": "Dinilai 4.9/5 berdasarkan 15,432 ulasan merentas 30+ negara. 100% Percuma, Selamat dan Berpihak kepada Pelanggan."
+    "subtitle": "Dinilai 4.9/5 berdasarkan 15,432 ulasan di lebih 30 negara. Privasi Diutamakan, Selamat dan Beroperasi di Sisi Klien."
   },
   "pseo": {
     "insights_badge": "PANDUAN PRO",
@@ -1690,7 +1690,7 @@
     "toolDescTemplate": "Cipta kod QR {{toolName}} tersuai dengan logo secara percuma. Penjana kod QR boleh diedit terbaik tanpa tera air. 100% persendirian, generasi pihak pelanggan.",
     "barcodeTitleSuffix": "Penjana Kod Bar Percuma",
     "barcodeDescTemplate": "Hasilkan kod bar linear {{toolName}} tersuai secara percuma. Muat turun SVG dan PNG segera dengan pengekodan kod bar berketumpatan tinggi.",
-    "homeSeoDesc": "Hasilkan 37 jenis kod QR dan kod bar secara percuma. Tiada pendaftaran. Muat turun segera. 100% bahagian pelanggan, mematuhi ISO, 30 bahasa.",
+    "homeSeoDesc": "Hasilkan 37 jenis kod QR dan kod bar secara percuma. Muat turun segera. Sisi klien, patuh ISO, 30 bahasa.",
     "homeHeroTitle": "Semua Alat QR & Kod Bar",
     "homeHeroTitleHighlight": "di Satu Tempat"
   },

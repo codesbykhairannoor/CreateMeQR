@@ -1,6 +1,6 @@
 {
-  "appTitle": "Generator de Coduri QR Gratuit Online - CreateMy-QR (No Signup)",
-  "tagline": "Creează Coduri QR cu Logo și Culoare - Fără Înregistrare, Nelimitat. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Free QR Code Generator Online - CreateMy-QR | Privacy-First",
+  "tagline": "Create QR Codes with Logo & Color - Instant, Client-Side & High-Res PNG",
   "types": {
     "url": "URL / Link",
     "wifi": "Wi-Fi",
@@ -150,7 +150,7 @@
     "madewith": "Realizat cu",
     "forprivateweb": "pentru un web privat."
   },
-  "badge": "100% Free Forever. No Ads. No Signup.",
+  "badge": "No Expiring Codes. No Ads. 100% Privacy-First.",
   "tabs": {
     "step1": "1. Introduceți conținut",
     "step2": "2. Personalizați designul",
@@ -159,12 +159,12 @@
   },
   "geo": {
     "title": "Română QR Code Guide:",
-    "fact": "CreateMeQR este soluția ideală pentru meniuri digitale în restaurantele din România, partajare rapidă Wi-Fi și cărți de vizită vCard. Conform 100% cu GDPR: procesarea se face local în browserul tău în mai puțin de 12ms. Descarcă fișiere vectoriale SVG și PNG de înaltă rezoluție gratuit pentru totdeauna, fără marcaj de apă și fără expirare.",
-    "softwareDescription": "O suită de procesare QR și documente securizate 100% la nivelul clientului. Utilizează WebAssembly pentru a procesa fișiere local în memoria browserului fără a fi încărcate pe niciun server. Cea mai sigură alternativă la instrumentele bazate pe cloud. 100% gratuit, zero urmărire, fără limite.",
+    "fact": "CreateMy-QR is a privacy-first QR code generator that processes data entirely on your device in under 12ms. Unlike competitors that hostage your codes behind 14-day trials, this tool provides permanent static QR codes with custom logos, colors, and high-resolution PNG downloads without forced signup or watermarks. Pro plans unlock bulk batch generation, sticker printing, and vector SVG exports.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
         "q": "Este acest generator de coduri QR complet gratuit?",
-        "a": "Da, CreateMeQR este 100% gratuit, fără taxe ascunse, fără abonamente și fără încercări de 14 zile. Puteți genera coduri QR nelimitate pentru uz comercial sau personal."
+        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
       },
       {
         "q": "Fișierele și datele mele sunt încărcate pe serverele dvs.?",
@@ -179,8 +179,8 @@
   "features": {
     "privacyTitle": "100% confidențialitate la nivelul clientului",
     "privacyDesc": "Datele tale nu ies niciodată din browser. Nu trimitem informațiile dumneavoastră către niciun server. Totul este generat instantaneu pe dispozitivul dvs.",
-    "signupTitle": "Nu este necesară înregistrarea",
-    "signupDesc": "Fără taxe ascunse, fără filigrane și nu este necesară înregistrarea. Generați câte coduri QR aveți nevoie pentru uz comercial sau personal.",
+    "signupTitle": "Instant Generation",
+    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
     "customTitle": "Personalizare nelimitată",
     "customDesc": "Adăugați sigle personalizate, modificați culorile, utilizați degrade și modificați modelele de date. Faceți codul dvs. QR să se potrivească perfect cu identitatea mărcii dvs., fără restricții."
   },
@@ -193,7 +193,7 @@
     "title": "Încorporați generatorul pe site-ul dvs.",
     "desc": "Doriți să oferiți vizitatorilor dvs. un generator de coduri QR gratuit? Copiați și inserați fragmentul HTML de mai jos pe site-ul sau blogul dvs.",
     "whyTitle": "De ce să folosiți widget-ul nostru?",
-    "why1": "100% gratuit pentru utilizatorii tăi cu zero paywall",
+    "why1": "Free core tools for your users with zero paywalls",
     "why2": "Fără reclame, ferestre pop-up sau urmărire intruzivă în interiorul widget-ului",
     "why3": "Îmbunătățește implicarea vizitatorilor și timpul de odihnă pe domeniul dvs.",
     "anchorLabel": "Selectați SEO Anchor Text:",
@@ -1190,11 +1190,11 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Generator gratuit de coduri QR și coduri de bare |37 Instrumente online",
-    "seoDesc": "Generați 37 de tipuri de coduri QR și coduri de bare gratuit. Fără înscriere. Descărcare instantanee. 100% la nivelul clientului, conform ISO, 30 de limbi.",
-    "badge": "ISO/IEC 18004 · 100% gratuit · Urmărire zero · Fără înregistrare",
+    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "Generatorul de Coduri QR Care",
     "heroTitleHighlight": "Nu Expiră Niciodată.",
-    "heroSubtitle": "Creați coduri QR și coduri de bare permanente, gata de tipar, direct în browser. 100% gratuit, fără înregistrare și fără taxe ascunse după imprimare.",
+    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Free core generation, client-side privacy, and zero paywalls on your static codes.",
     "citation": "„Codul QR este un standard internațional (ISO/IEC 18004:2015). Codurile de bare Matrix necesită grile de module curate pentru scanare fiabilă pentru toți cititorii conformi din întreaga lume.”",
     "searchPlaceholder": "Instrumente de căutare — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Toate instrumentele",
@@ -1212,7 +1212,7 @@
     "feat4": "Conform ISO 18004",
     "feat4Desc": "Îndeplinește standardul internațional QR",
     "whatIsTitle": "Ce este CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR este o platformă gratuită de generare de coduri QR și coduri de bare la nivelul clientului, care acceptă 37 de tipuri de date, inclusiv rețele sociale, mesagerie, plăți, fișiere și carduri de contact.Toate codurile sunt statice, conforme cu ISO și gata de export ca SVG sau PNG.Niciun cont.Fără expirare.Fără costuri.",
+    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.",
     "fact1": "Generează coduri QR local - nu sunt trimise date către niciun server.",
     "fact2": "Suporta 37 de tipuri: URL, WhatsApp, vCard, WiFi, Crypto, PDF și multe altele.",
     "fact3": "Complet localizat în 30 de limbi, inclusiv arabă, japoneză și hindi.",
@@ -1222,9 +1222,9 @@
     "faqTitle": "Întrebări frecvente",
     "faqSubtitle": "Tot ce trebuie să știți despre CreateMy-QR.",
     "faq1q": "Ce este CreateMy-QR?",
-    "faq1a": "CreateMy-QR este o platformă gratuită de generare de coduri QR și coduri de bare la nivelul clientului, care acceptă 37 de tipuri de date, inclusiv rețele sociale, mesagerie, plăți, fișiere și carduri de contact.Toate codurile sunt statice, conforme cu ISO și gata de export ca SVG sau PNG.Niciun cont.Fără expirare.Fără costuri.",
+    "faq1a": "CreateMy-QR is a browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant codes with client-side processing — no uploads, zero tracking, and no forced account for core generation.",
     "faq2q": "Generează coduri QR local - nu sunt trimise date către niciun server.",
-    "faq2a": "Suporta 37 de tipuri: URL, WhatsApp, vCard, WiFi, Crypto, PDF și multe altele.",
+    "faq2a": "Yes. All static QR codes are permanent and free forever with no expiry dates or watermarks. Optional Pro subscriptions are available for users who need bulk spreadsheet batches and sticker sheet printing.",
     "faq3q": "Complet localizat în 30 de limbi, inclusiv arabă, japoneză și hindi.",
     "faq3a": "De ce este 100% sigur?"
   },
@@ -1240,7 +1240,7 @@
       "fast": "Rapid fulger",
       "fastDesc": "WebAssembly permite CreateMy-QR să ruleze direct pe procesorul dispozitivului dvs., ocolind blocajele de încărcare.",
       "global": "Pentru toată lumea",
-      "globalDesc": "Tradus în 30 de limbi. Fără abonamente, fără taxe ascunse. Doar instrumente de clasă mondială.",
+      "globalDesc": "Translated into 30 languages. Free core utilities, transparent pricing, and zero hidden trial traps.",
       "origin": "Originea",
       "originTitle": "Povestea originii",
       "architecture": "Arhitectura",
@@ -1262,7 +1262,7 @@
       "tableFeature": "Caracteristica",
       "tableUs": "CreateMy-QR",
       "tableThem": "Instrumente cloud tradiționale",
-      "cost": "100% gratuit pentru totdeauna",
+      "cost": "Free Core / Pro from $9",
       "costThem": "10 $-30 $ / lună",
       "privacyText": "Încărcare zero (numai pentru browser)",
       "privacyThem": "Încărcat pe servere",
@@ -1295,9 +1295,9 @@
       "tr3val1": "Limite zilnice stricte",
       "tr3val2": "Nelimitat",
       "tr5val1": "Nivel gratuit + 20 USD/lună",
-      "tr5val2": "100% gratuit pentru totdeauna",
+      "tr5val2": "Free Core / Pro from $9",
       "tr6val1": "Necesar",
-      "tr6val2": "Niciodată necesar",
+      "tr6val2": "Instant for Core Tools",
       "tr7val1": "Depinde de Rețea",
       "tr7val2": "Instantaneu (procesor local)",
       "expertAuthor": "Audit independent de securitate",
@@ -1327,8 +1327,8 @@
       "desc": "Generați și scanați coduri QR și coduri de bare personalizate în 30 de limbi din întreaga lume. Generare instantanee pe partea clientului cu localizare completă și suport UTF-8."
     },
     "pricing": {
-      "seoTitle": "Preț 100% gratuit",
-      "heroTitle": "Prețuri",
+      "seoTitle": "Transparent Pricing",
+      "heroTitle": "Simple Pricing, Forever Freedom",
       "heroSubtitle": "Cele mai bune lucruri din viață sunt gratuite.",
       "cost": "$0",
       "costPeriod": "/ pentru totdeauna",
@@ -1339,7 +1339,7 @@
       "f4": "Baza de date de istorie locală",
       "whyFree": "Cum este gratuit?",
       "whyFreeDesc": "Deoarece nu procesăm fișierele dvs. pe serverele noastre, nu avem facturi masive de server. Dispozitivul dvs. face munca grea prin WebAssembly.",
-      "heroBadge": "Radical Liber",
+      "heroBadge": "Radically Transparent & Privacy-First",
       "compTitle": "Instrumente cloud tradiționale",
       "compCost": "20 USD",
       "compPeriod": "/lună",
@@ -1355,8 +1355,8 @@
       "bizDesc": "Da, puteți utiliza CreateMy-QR pentru compania dvs. De fapt, arhitectura noastră locală de procesare ne face singura platformă suficient de sigură pentru medii corporative stricte, echipe juridice și profesioniști din domeniul sănătății.",
       "supportTitle": "Susține proiectul",
       "supportDesc": "Nu percepem un abonament, dar menținerea domeniului și a dezvoltării în viață necesită timp. Dacă CreateMy-QR v-a salvat ziua, luați în considerare să o distribuiți echipei dvs. Vorba în gură este singura noastră strategie de marketing.",
-      "seoDesc": "CreateMy-QR este 100% gratuit pentru totdeauna, cu generare nelimitată de coduri QR, exporturi vector SVG/PNG de înaltă rezoluție, zero filigrane și nu este necesară înregistrarea.",
-      "desc": "CreateMy-QR este 100% gratuit pentru totdeauna, cu generare nelimitată de coduri QR, exporturi vector SVG/PNG de înaltă rezoluție, zero filigrane și nu este necesară înregistrarea."
+      "seoDesc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports.",
+      "desc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports."
     },
     "privacy": {
       "seoTitle": "Politica de confidențialitate",
@@ -1487,7 +1487,7 @@
   },
   "rating": {
     "title": "De încredere de milioane",
-    "subtitle": "Evaluat 4,9/5 pe baza a 15.432 de recenzii din peste 30 de țări. 100% gratuit, sigur și pe partea clientului."
+    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
   },
   "pseo": {
     "insights_badge": "GHID PRO",
@@ -1521,7 +1521,7 @@
     "toolDescTemplate": "Creați coduri QR personalizate {{toolName}} cu logo gratuit. Cel mai bun generator de coduri QR editabil fără filigran. 100% privat, generare pe partea clientului.",
     "barcodeTitleSuffix": "Generator gratuit de coduri de bare",
     "barcodeDescTemplate": "Generați gratuit coduri de bare liniare personalizate {{toolName}}. Descărcare instantanee SVG și PNG cu codare de coduri de bare de mare densitate.",
-    "homeSeoDesc": "Generați 37 de tipuri de coduri QR și coduri de bare gratuit. Fără înscriere. Descărcare instantanee. 100% la nivelul clientului, conform ISO, 30 de limbi.",
+    "homeSeoDesc": "Generate 37 types of QR codes and barcodes for free. Instant download. 100% client-side, ISO-compliant, 30 languages.",
     "homeHeroTitle": "Toate instrumentele QR și coduri de bare",
     "homeHeroTitleHighlight": "într-un singur loc"
   },

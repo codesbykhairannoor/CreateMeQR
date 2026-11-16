@@ -143,21 +143,48 @@ export default async function handler(req, res) {
 
     console.log(`[LemonSqueezy Webhook] Event: ${eventName}, User: ${userId || customerEmail}, Status: ${orderStatus}`);
 
-    // Check if event signifies a successful payment or subscription activation
     const isSuccess =
       eventName === 'order_created' ||
       eventName === 'subscription_created' ||
       eventName === 'subscription_payment_success';
 
+    const isCancellationOrExpiry =
+      eventName === 'subscription_expired' ||
+      (eventName === 'subscription_cancelled' && (orderStatus === 'expired' || orderStatus === 'unpaid')) ||
+      orderStatus === 'expired' ||
+      orderStatus === 'unpaid';
+
+    const serviceAccount = getServiceAccount();
+
     if (isSuccess && (orderStatus === 'paid' || orderStatus === 'active' || !orderStatus)) {
-      const serviceAccount = getServiceAccount();
+      const planType = customData.plan_type || (eventName === 'order_created' ? 'lifetime' : 'monthly');
+      const isLifetime = planType === 'lifetime';
 
       if (serviceAccount && userId) {
         const accessToken = await getGoogleAccessToken(serviceAccount);
         const projectId = serviceAccount.project_id || 'thismyown';
 
-        // Update Firestore users/{userId} document
-        const updateUrl = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/users/${userId}?updateMask.fieldPaths=plan&updateMask.fieldPaths=subscriptionStatus&updateMask.fieldPaths=suiteAccess`;
+        const fields = {
+          plan: { stringValue: 'pro' },
+          subscriptionStatus: { stringValue: 'active' },
+          planType: { stringValue: planType },
+          suiteAccess: { stringValue: 'all_access' },
+          updatedAt: { integerValue: String(Date.now()) },
+        };
+
+        let updateMask = 'updateMask.fieldPaths=plan&updateMask.fieldPaths=subscriptionStatus&updateMask.fieldPaths=planType&updateMask.fieldPaths=suiteAccess&updateMask.fieldPaths=updatedAt';
+
+        if (!isLifetime && attributes.renews_at) {
+          // Grace period: renews_at + 2 days
+          const expiresAt = new Date(attributes.renews_at).getTime() + (2 * 24 * 60 * 60 * 1000);
+          fields.expiresAt = { integerValue: String(expiresAt) };
+          updateMask += '&updateMask.fieldPaths=expiresAt';
+        } else if (isLifetime) {
+          fields.expiresAt = { nullValue: null };
+          updateMask += '&updateMask.fieldPaths=expiresAt';
+        }
+
+        const updateUrl = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/users/${userId}?${updateMask}`;
 
         await fetch(updateUrl, {
           method: 'PATCH',
@@ -165,27 +192,26 @@ export default async function handler(req, res) {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${accessToken}`,
           },
-          body: JSON.stringify({
-            fields: {
-              plan: { stringValue: 'pro' },
-              subscriptionStatus: { stringValue: 'active' },
-              suiteAccess: { stringValue: 'all_access' },
-            },
-          }),
+          body: JSON.stringify({ fields }),
         });
 
-        console.log(`[LemonSqueezy Webhook] Successfully activated PRO status for user ${userId}`);
+        console.log(`[LemonSqueezy Webhook] Successfully activated PRO (${planType}) status for user ${userId}`);
       }
 
       // Send thank you confirmation email via Resend if email is available
       const resendApiKey = process.env.RESEND_API_KEY;
       if (resendApiKey && customerEmail) {
+        const emailTitle = isLifetime ? '🎉 You are now a PRO Lifetime Member!' : '🎉 You are now a PRO Member!';
+        const emailPlanDesc = isLifetime
+          ? 'Thank you for purchasing the <strong>Founder Lifetime Pass</strong>. Your lifetime access is now fully activated across the Privacy Suite — zero recurring bills forever!'
+          : 'Thank you for subscribing to <strong>CreateMy-QR Pro Monthly</strong> ($9/mo). Your Pro access is now fully activated with unlimited bulk batch generation and sticker PDF export!';
+
         const emailHtml = `
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Welcome to CreateMy-QR Pro Lifetime</title>
+  <title>${isLifetime ? 'Welcome to CreateMy-QR Pro Lifetime' : 'Welcome to CreateMy-QR Pro Monthly'}</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1e293b;">
   <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="padding: 40px 16px;">
@@ -200,16 +226,17 @@ export default async function handler(req, res) {
           </tr>
           <tr>
             <td>
-              <h1 style="font-size: 22px; font-weight: 800; color: #0f172a; margin-top: 0;">🎉 You are now a PRO Member!</h1>
+              <h1 style="font-size: 22px; font-weight: 800; color: #0f172a; margin-top: 0;">${emailTitle}</h1>
               <p style="font-size: 14px; line-height: 1.6; color: #475569;">
-                Thank you for purchasing the <strong>Founder Lifetime Pass</strong>. Your lifetime access is now fully activated across the Privacy Suite!
+                ${emailPlanDesc}
               </p>
               <div style="background-color: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; padding: 16px; margin: 20px 0;">
                 <p style="margin: 0; font-size: 13px; font-weight: 600; color: #1e40af;">
-                  ✨ Included in your All-In-One Privacy Suite:
+                  ✨ Included in your PRO Access:
                 </p>
                 <ul style="margin: 8px 0 0 16px; padding: 0; font-size: 13px; color: #1d4ed8; line-height: 1.6;">
-                  <li><strong>CreateMy-QR</strong> — Custom Vector QR & Barcode Studio (Bulk & Print PDF)</li>
+                  <li><strong>CreateMy-QR</strong> — Bulk Spreadsheet (CSV/Excel) & A4/Letter Sticker PDF Studio</li>
+                  <li><strong>Vector SVG & 4K Exports</strong> — Infinite scaling without pixelation</li>
                   <li><strong>HelpMyIMG</strong> — In-Browser AI Image Studio (Unlimited 4K)</li>
                   <li><strong>HandleMyFile</strong> — Privacy-First PDF & Document Tools</li>
                   <li><strong>SolveMyMedia</strong> — Zero-Upload Video & Audio Compressor</li>
@@ -242,10 +269,37 @@ export default async function handler(req, res) {
           body: JSON.stringify({
             from: 'CreateMy-QR <onboarding@resend.dev>',
             to: [customerEmail],
-            subject: '🎉 Welcome to CreateMy-QR Pro (All-Access Lifetime Pass Active!)',
+            subject: isLifetime
+              ? '🎉 Welcome to CreateMy-QR Pro (All-Access Lifetime Pass Active!)'
+              : '🎉 Welcome to CreateMy-QR Pro Monthly (Active)',
             html: emailHtml,
           }),
         }).catch((e) => console.error('[LemonSqueezy Webhook] Failed to send welcome email:', e));
+      }
+    } else if (isCancellationOrExpiry && userId && serviceAccount) {
+      // Downgrade expired subscription to free
+      try {
+        const accessToken = await getGoogleAccessToken(serviceAccount);
+        const projectId = serviceAccount.project_id || 'thismyown';
+        const downgradeUrl = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/users/${userId}?updateMask.fieldPaths=plan&updateMask.fieldPaths=subscriptionStatus&updateMask.fieldPaths=suiteAccess&updateMask.fieldPaths=updatedAt`;
+        await fetch(downgradeUrl, {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${accessToken}`,
+          },
+          body: JSON.stringify({
+            fields: {
+              plan: { stringValue: 'free' },
+              subscriptionStatus: { stringValue: orderStatus || 'expired' },
+              suiteAccess: { stringValue: 'free' },
+              updatedAt: { integerValue: String(Date.now()) },
+            },
+          }),
+        });
+        console.log(`[LemonSqueezy Webhook] Successfully downgraded user ${userId} to free due to ${eventName} (${orderStatus})`);
+      } catch (err) {
+        console.error('[LemonSqueezy Webhook] Downgrade error:', err);
       }
     }
 

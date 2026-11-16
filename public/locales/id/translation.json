@@ -1,6 +1,6 @@
 {
-  "appTitle": "Generator QR Code Gratis Online - CreateMy-QR (No Signup)",
-  "tagline": "Buat QR Code dengan Logo & Warna - Tanpa Daftar, Unlimited. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Generator QR Code Online Gratis - CreateMy-QR | Privasi Terjamin",
+  "tagline": "Buat QR Code dengan Logo & Warna - Instan, Sisi Klien & PNG Resolusi Tinggi",
   "types": {
     "url": "URL / Tautan",
     "wifi": "Wi-Fi",
@@ -151,7 +151,7 @@
     "madewith": "Dibuat dengan",
     "forprivateweb": "untuk web pribadi."
   },
-  "badge": "Tanpa Uji Coba 14 Hari. Tanpa Iklan. 100% Gratis Selamanya.",
+  "badge": "Kode Tanpa Kedaluwarsa. Tanpa Iklan. 100% Privasi Terjaga.",
   "tabs": {
     "step1": "1. Isi Konten",
     "step2": "2. Kustomisasi Desain",
@@ -160,12 +160,12 @@
   },
   "geo": {
     "title": "Panduan membuat QR Code kustom di Indonesia:",
-    "fact": "CreateMeQR sangat cocok untuk standar pembayaran digital Indonesia seperti QRIS, GoPay, OVO, Dana, dan ShopeePay, serta menu digital restoran UMKM. Diproses 100% di dalam peramban (client-side) di bawah 12ms tanpa menyimpan data pribadi Anda. Unduh format vektor SVG dan PNG resolusi tinggi secara gratis tanpa watermark dan tanpa kedaluwarsa selamanya.",
-    "softwareDescription": "Dokumen aman 100% Sisi Klien dan rangkaian pemrosesan QR. Menggunakan WebAssembly untuk memproses file secara lokal di memori browser tanpa mengunggah ke server mana pun. Alternatif paling aman untuk alat berbasis cloud. 100% Gratis, Tanpa Pelacakan, Tanpa Batas.",
+    "fact": "CreateMy-QR adalah pembuat QR code yang memproses data langsung di perangkat Anda dalam waktu di bawah 12 milidetik. Tidak seperti kompetitor yang mengunci kode dengan uji coba 14 hari, alat ini menyediakan QR code statis permanen dengan logo khusus, warna, dan unduhan PNG resolusi tinggi tanpa paksaan mendaftar atau watermark. Paket Pro membuka pembuatan massal, pencetakan stiker, dan ekspor vektor SVG.",
+    "softwareDescription": "Rangkaian alat QR dan dokumen aman 100% sisi klien. Menggunakan WebAssembly untuk memproses file secara lokal di memori browser tanpa unggah ke server. Kode statis aman tanpa batas waktu dengan alat massal Pro.",
     "faqs": [
       {
         "q": "Apakah pembuat kode QR ini sepenuhnya gratis?",
-        "a": "Ya, CreateMeQR 100% gratis tanpa biaya tersembunyi, tanpa langganan, dan tanpa uji coba 14 hari. Anda dapat membuat kode QR tanpa batas untuk penggunaan komersial atau pribadi."
+        "a": "Pembuatan QR code dan barcode dasar gratis selamanya tanpa batas waktu kedaluwarsa, tanpa iklan, dan tanpa jebakan uji coba. Langganan Pro opsional ($9/bln atau $39 Seumur Hidup) tersedia untuk pemrosesan spreadsheet massal, cetak stiker, dan ekspor vektor SVG."
       },
       {
         "q": "Apakah file dan data saya diunggah ke server Anda?",
@@ -180,8 +180,8 @@
   "features": {
     "privacyTitle": "100% Privasi di Peramban (Client-Side)",
     "privacyDesc": "Data Anda tidak pernah keluar dari peramban. Kami tidak mengirimkan informasi Anda ke server mana pun. Semuanya dibuat seketika di perangkat Anda.",
-    "signupTitle": "Tanpa Perlu Daftar / Login",
-    "signupDesc": "Tanpa biaya tersembunyi, tanpa watermark, dan tidak perlu registrasi akun. Buat sebanyak mungkin QR Code untuk kebutuhan bisnis UMKM maupun komersial.",
+    "signupTitle": "Pembuatan Instan",
+    "signupDesc": "Tanpa biaya tersembunyi untuk fitur dasar, tanpa watermark, dan tanpa paksaan registrasi untuk kode statis perorangan. Buat kode sebanyak yang Anda butuhkan untuk komersial maupun pribadi.",
     "customTitle": "Kustomisasi Tanpa Batas",
     "customDesc": "Tambahkan logo merek atau toko Anda, sesuaikan warna gradasi, dan ubah pola matriks QR agar pas dengan identitas branding bisnis Anda di Indonesia."
   },
@@ -194,7 +194,7 @@
     "title": "Pasang Generator QR di Website / Blog Anda",
     "desc": "Ingin menyediakan fitur pembuat QR Code gratis untuk pengunjung website atau blog Anda? Salin dan tempel kode HTML di bawah ini.",
     "whyTitle": "Mengapa menggunakan widget kami?",
-    "why1": "100% Gratis untuk pengunjung website Anda tanpa paywall",
+    "why1": "Fitur dasar gratis untuk pengunjung Anda tanpa paywall",
     "why2": "Tanpa iklan, tanpa popup, dan tanpa pelacakan yang mengganggu",
     "why3": "Meningkatkan interaksi dan durasi kunjungan pengguna di domain Anda",
     "anchorLabel": "Pilih Teks Jangkar (SEO Anchor Text):",
@@ -1251,11 +1251,11 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Generator QR Code & Barcode Gratis | 37 Alat Online",
-    "seoDesc": "Hasilkan 37 jenis kode QR dan kode batang secara gratis. Tidak ada pendaftaran. Unduhan instan. 100% sisi klien, sesuai ISO, 30 bahasa.",
-    "badge": "ISO/IEC 18004 · 100% Gratis · Tanpa Pelacakan · Tanpa Daftar",
+    "seoDesc": "Buat 37 jenis QR code dan barcode gratis. Unduh instan sisi klien, kode statis tanpa kedaluwarsa, standar ISO/IEC 18004, tersedia dalam 30 bahasa.",
+    "badge": "ISO/IEC 18004 · Privasi Terjaga · Tanpa Pelacakan · Sisi Klien",
     "heroTitle": "Generator QR Code yang",
     "heroTitleHighlight": "Tidak Akan Pernah Kadaluarsa.",
-    "heroSubtitle": "Buat QR code & barcode permanen siap cetak langsung di browsermu. 100% gratis, tanpa login, dan tanpa biaya siluman setelah dicetak.",
+    "heroSubtitle": "Buat QR code dan barcode permanen siap cetak langsung di browser Anda. Pembuatan dasar gratis, privasi terjaga di sisi klien, dan tanpa paywall pada kode statis Anda.",
     "citation": "\"QR Code adalah standar internasional (ISO/IEC 18004:2015). Barcode matriks memerlukan kisi modul yang bersih untuk pemindaian andal di semua pembaca yang sesuai di seluruh dunia.\"",
     "searchPlaceholder": "Cari alat — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Semua Alat",
@@ -1273,7 +1273,7 @@
     "feat4": "Sesuai ISO 18004",
     "feat4Desc": "Memenuhi standar QR internasional",
     "whatIsTitle": "Apa itu CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR adalah platform pembuatan QR code dan barcode sisi klien gratis yang mendukung 37 jenis data. Semua kode bersifat statis, sesuai ISO, dan siap diekspor sebagai SVG atau PNG.",
+    "whatIsDesc": "CreateMy-QR adalah platform QR code dan barcode sisi klien yang mendukung 37 jenis data. Kode statis dasar gratis selamanya dengan ekspor PNG resolusi tinggi instan dan bebas pelacakan. Ekspor vektor SVG tingkat lanjut dan batch spreadsheet massal tersedia dengan PRO.",
     "fact1": "Membuat QR code secara lokal — tidak ada data yang dikirim ke server.",
     "fact2": "Mendukung 37 jenis: URL, WhatsApp, vCard, WiFi, Crypto, PDF, dan lainnya.",
     "fact3": "Terlokalisasi penuh dalam 30 bahasa termasuk Arab, Jepang, dan Hindi.",
@@ -1283,9 +1283,9 @@
     "faqTitle": "Pertanyaan yang Sering Diajukan",
     "faqSubtitle": "Semua yang perlu Anda ketahui tentang CreateMy-QR.",
     "faq1q": "Apa itu CreateMy-QR?",
-    "faq1a": "CreateMy-QR adalah platform berbasis browser gratis yang menawarkan 37 alat QR code dan barcode. Menghasilkan kode sesuai ISO/IEC 18004:2015 dengan pemrosesan 100% sisi klien.",
+    "faq1a": "CreateMy-QR adalah platform berbasis browser yang menyediakan 37 alat QR code dan barcode. Menghasilkan kode standar ISO/IEC 18004:2015 dengan pemrosesan sisi klien — tanpa unggahan, bebas pelacakan, dan tanpa kewajiban memiliki akun untuk fitur dasar.",
     "faq2q": "Apakah QR code gratis selamanya?",
-    "faq2a": "Ya. Semua QR code bersifat statis dan gratis selamanya. Tidak ada batas, watermark, tanggal kedaluwarsa, atau langganan yang diperlukan.",
+    "faq2a": "Ya. Semua QR code statis bersifat permanen dan gratis digunakan selamanya tanpa batas waktu kedaluwarsa atau watermark. Langganan Pro opsional tersedia bagi yang membutuhkan pembuatan massal dari spreadsheet dan pencetakan lembar stiker.",
     "faq3q": "Apakah data saya aman saat membuat QR code?",
     "faq3a": "Tentu. Semua pengkodean terjadi di dalam browser Anda. Data Anda tidak pernah meninggalkan perangkat dan tidak pernah dikirim ke server mana pun."
   },
@@ -1301,7 +1301,7 @@
       "fast": "Secepat Kilat",
       "fastDesc": "WebAssembly memungkinkan CreateMy-QR berjalan langsung di CPU perangkat Anda, melewati kemacetan unggahan.",
       "global": "Untuk Semua Orang",
-      "globalDesc": "Diterjemahkan ke dalam 30 bahasa. Tanpa langganan, tanpa biaya tersembunyi. Hanya alat kelas dunia.",
+      "globalDesc": "Diterjemahkan ke dalam 30 bahasa. Fitur dasar gratis, harga transparan, dan tanpa jebakan masa uji coba tersembunyi.",
       "origin": "Asal Usul",
       "originTitle": "Kisah Asal Usul",
       "architecture": "Arsitektur",
@@ -1323,7 +1323,7 @@
       "tableFeature": "Fitur",
       "tableUs": "Buat-QR Saya",
       "tableThem": "Alat Cloud Tradisional",
-      "cost": "100% Gratis Selamanya",
+      "cost": "Fitur Dasar Gratis / Pro mulai $9",
       "costThem": "$10-$30 / bulan",
       "privacyText": "Zero-Upload (Khusus Browser)",
       "privacyThem": "Diunggah ke server",
@@ -1356,9 +1356,9 @@
       "tr3val1": "Batas Harian Ketat",
       "tr3val2": "Tidak terbatas",
       "tr5val1": "Tingkat Gratis + $20/bln",
-      "tr5val2": "100% Gratis Selamanya",
+      "tr5val2": "Fitur Dasar Gratis / Pro mulai $9",
       "tr6val1": "Diperlukan",
-      "tr6val2": "Tidak Pernah Diperlukan",
+      "tr6val2": "Instan untuk Fitur Dasar",
       "tr7val1": "Bergantung pada Jaringan",
       "tr7val2": "Instan (CPU Lokal)",
       "expertAuthor": "Audit Keamanan Independen",
@@ -1388,8 +1388,8 @@
       "desc": "Hasilkan dan pindai kode QR dan kode batang khusus dalam 30 bahasa di seluruh dunia. Pembuatan sisi klien instan dengan lokalisasi penuh dan dukungan UTF-8."
     },
     "pricing": {
-      "seoTitle": "100% Harga Gratis",
-      "heroTitle": "Harga",
+      "seoTitle": "Harga Transparan",
+      "heroTitle": "Harga Sederhana, Kebebasan Selamanya",
       "heroSubtitle": "Hal terbaik dalam hidup itu gratis.",
       "cost": "$0",
       "costPeriod": "/ selamanya",
@@ -1400,7 +1400,7 @@
       "f4": "Basis Data Sejarah Lokal",
       "whyFree": "Bagaimana cara gratisnya?",
       "whyFreeDesc": "Karena kami tidak memproses file Anda di server kami, kami tidak memiliki tagihan server yang besar. Perangkat Anda melakukan pekerjaan berat melalui WebAssembly.",
-      "heroBadge": "Gratis Secara Radikal",
+      "heroBadge": "Sangat Transparan & Mengutamakan Privasi",
       "compTitle": "Alat Cloud Tradisional",
       "compCost": "$20",
       "compPeriod": "/bln",
@@ -1416,8 +1416,8 @@
       "bizDesc": "Ya, Anda dapat menggunakan CreateMy-QR untuk perusahaan Anda. Faktanya, arsitektur pemrosesan lokal kami menjadikan kami satu-satunya platform yang cukup aman untuk lingkungan perusahaan yang ketat, tim hukum, dan profesional kesehatan.",
       "supportTitle": "Mendukung Proyek",
       "supportDesc": "Kami tidak mengenakan biaya berlangganan, namun menjaga domain dan pengembangan tetap berjalan membutuhkan waktu. Jika CreateMy-QR menyelamatkan hari Anda, pertimbangkan untuk membagikannya dengan tim Anda. Promosi mulut ke mulut adalah satu-satunya strategi pemasaran kami.",
-      "seoDesc": "CreateMy-QR 100% gratis selamanya dengan pembuatan kode QR tanpa batas, ekspor vektor SVG/PNG resolusi tinggi, tanpa tanda air, dan tidak perlu registrasi.",
-      "desc": "CreateMy-QR 100% gratis selamanya dengan pembuatan kode QR tanpa batas, ekspor vektor SVG/PNG resolusi tinggi, tanpa tanda air, dan tidak perlu registrasi."
+      "seoDesc": "Buat QR code dan barcode permanen dengan privasi di sisi klien. Pembuatan dasar gratis berformat PNG tanpa kedaluwarsa, serta paket Pro untuk pemrosesan massal dan ekspor vektor SVG.",
+      "desc": "Buat QR code dan barcode permanen dengan privasi di sisi klien. Pembuatan dasar gratis berformat PNG tanpa kedaluwarsa, serta paket Pro untuk pemrosesan massal dan ekspor vektor SVG."
     },
     "privacy": {
       "seoTitle": "Kebijakan Privasi",
@@ -1548,7 +1548,7 @@
   },
   "rating": {
     "title": "Dipercaya oleh Jutaan Orang",
-    "subtitle": "Dinilai 4,9/5 berdasarkan 15.432 ulasan di 30+ negara. 100% Gratis, Aman, dan Sisi Klien."
+    "subtitle": "Dinilai 4.9/5 berdasarkan 15.432 ulasan di lebih dari 30 negara. Mengutamakan Privasi, Aman, dan Berjalan di Sisi Klien."
   },
   "pseo": {
     "insights_badge": "PANDUAN PRO",
@@ -1690,7 +1690,7 @@
     "toolDescTemplate": "Buat kode QR {{toolName}} khusus dengan logo secara gratis. Generator kode QR terbaik yang dapat diedit tanpa tanda air. 100% pribadi, generasi sisi klien.",
     "barcodeTitleSuffix": "Generator Kode Batang Gratis",
     "barcodeDescTemplate": "Hasilkan kode batang linier {{toolName}} khusus secara gratis. Unduhan SVG dan PNG instan dengan pengkodean kode batang kepadatan tinggi.",
-    "homeSeoDesc": "Hasilkan 37 jenis kode QR dan kode batang secara gratis. Tidak ada pendaftaran. Unduhan instan. 100% sisi klien, sesuai ISO, 30 bahasa.",
+    "homeSeoDesc": "Buat 37 jenis QR code dan barcode gratis. Unduh instan. 100% sisi klien, standar ISO, 30 bahasa.",
     "homeHeroTitle": "Semua Alat QR & Kode Batang",
     "homeHeroTitleHighlight": "di Satu Tempat"
   },

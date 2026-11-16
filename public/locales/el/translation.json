@@ -1,6 +1,6 @@
 {
-  "appTitle": "Δωρεάν Δημιουργία QR Code Online - CreateMy-QR (No Signup)",
-  "tagline": "Φτιάξτε QR Code με Λογότυπο & Χρώμα - Χωρίς Εγγραφή, Απεριόριστα. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Free QR Code Generator Online - CreateMy-QR | Privacy-First",
+  "tagline": "Create QR Codes with Logo & Color - Instant, Client-Side & High-Res PNG",
   "types": {
     "url": "URL / Σύνδεσμος",
     "wifi": "Wi-Fi",
@@ -151,7 +151,7 @@
     "madewith": "Φτιαγμένο με",
     "forprivateweb": "για έναν ιδιωτικό ιστό."
   },
-  "badge": "100% Free Forever. No Ads. No Signup.",
+  "badge": "No Expiring Codes. No Ads. 100% Privacy-First.",
   "tabs": {
     "step1": "1. Εισαγάγετε Περιεχόμενο",
     "step2": "2. Προσαρμογή σχεδίασης",
@@ -160,12 +160,12 @@
   },
   "geo": {
     "title": "Ελληνικά QR Code Guide:",
-    "fact": "Το CreateMeQR είναι το ιδανικό εργαλείο για ψηφιακούς καταλόγους εστιατορίων και ξενοδοχείων στην Ελλάδα, κοινοποίηση Wi-Fi και κάρτες vCard. 100% συμμόρφωση με το GDPR: η επεξεργασία γίνεται τοπικά στον browser σας σε λιγότερο από 12ms. Κατεβάστε αρχεία διανυσματικών γραφικών SVG και PNG υψηλής ανάλυσης δωρεάν, χωρίς υδατογράφημα και χωρίς ημερομηνία λήξης.",
-    "softwareDescription": "Ένα 100% ασφαλές έγγραφο και σουίτα επεξεργασίας QR από την πλευρά του πελάτη. Χρησιμοποιεί το WebAssembly για να επεξεργάζεται αρχεία τοπικά στη μνήμη του προγράμματος περιήγησης χωρίς να τα φορτώνει σε διακομιστές. Η ασφαλέστερη εναλλακτική λύση στα εργαλεία που βασίζονται σε σύννεφο. 100% Δωρεάν, Μηδενική Παρακολούθηση, Χωρίς Όρια.",
+    "fact": "CreateMy-QR is a privacy-first QR code generator that processes data entirely on your device in under 12ms. Unlike competitors that hostage your codes behind 14-day trials, this tool provides permanent static QR codes with custom logos, colors, and high-resolution PNG downloads without forced signup or watermarks. Pro plans unlock bulk batch generation, sticker printing, and vector SVG exports.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
         "q": "Είναι αυτό το πρόγραμμα δημιουργίας κωδικών QR εντελώς δωρεάν;",
-        "a": "Ναι, το CreateMeQR είναι 100% δωρεάν χωρίς κρυφές χρεώσεις, χωρίς συνδρομές και δοκιμές 14 ημερών. Μπορείτε να δημιουργήσετε απεριόριστους κωδικούς QR για εμπορική ή προσωπική χρήση."
+        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
       },
       {
         "q": "Τα αρχεία και τα δεδομένα μου ανεβαίνουν στους διακομιστές σας;",
@@ -180,8 +180,8 @@
   "features": {
     "privacyTitle": "100% Απόρρητο από την πλευρά του πελάτη",
     "privacyDesc": "Τα δεδομένα σας δεν φεύγουν ποτέ από το πρόγραμμα περιήγησής σας. Δεν στέλνουμε τις πληροφορίες σας σε κανένα διακομιστή. Όλα δημιουργούνται άμεσα στη συσκευή σας.",
-    "signupTitle": "Δεν απαιτείται εγγραφή",
-    "signupDesc": "Χωρίς κρυφές χρεώσεις, χωρίς υδατογραφήματα και χωρίς εγγραφή. Δημιουργήστε όσους κωδικούς QR χρειάζεστε για εμπορική ή προσωπική χρήση.",
+    "signupTitle": "Instant Generation",
+    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
     "customTitle": "Απεριόριστη προσαρμογή",
     "customDesc": "Προσθέστε προσαρμοσμένα λογότυπα, τροποποιήστε τα χρώματα, χρησιμοποιήστε διαβαθμίσεις και αλλάξτε τα μοτίβα δεδομένων. Κάντε τον κωδικό QR σας να ταιριάζει τέλεια με την ταυτότητα της επωνυμίας σας χωρίς περιορισμούς."
   },
@@ -194,7 +194,7 @@
     "title": "Ενσωματώστε το Generator στον ιστότοπό σας",
     "desc": "Θέλετε να προσφέρετε ένα δωρεάν πρόγραμμα δημιουργίας κωδικών QR στους επισκέπτες σας; Αντιγράψτε και επικολλήστε το παρακάτω απόσπασμα HTML στον ιστότοπο ή το ιστολόγιό σας.",
     "whyTitle": "Γιατί να χρησιμοποιήσετε το widget μας;",
-    "why1": "100% δωρεάν για τους χρήστες σας με μηδενικά paywalls",
+    "why1": "Free core tools for your users with zero paywalls",
     "why2": "Δεν υπάρχουν διαφημίσεις, αναδυόμενα παράθυρα ή παρεμβατική παρακολούθηση μέσα στο γραφικό στοιχείο",
     "why3": "Ενισχύει την αφοσίωση των επισκεπτών και τον χρόνο παραμονής στον τομέα σας",
     "anchorLabel": "Επιλέξτε SEO Anchor Text:",
@@ -1251,11 +1251,11 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Δωρεάν δημιουργία κωδικών QR & Barcode |37 Εργαλεία Online",
-    "seoDesc": "Δημιουργήστε 37 τύπους κωδικών QR και barcodes δωρεάν. Καμία εγγραφή. Άμεση λήψη. 100% πελάτη, συμβατό με ISO, 30 γλώσσες.",
-    "badge": "ISO/IEC 18004 · 100% δωρεάν · Μηδενική παρακολούθηση · Χωρίς εγγραφή",
+    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "Η Γεννήτρια QR Code Που",
     "heroTitleHighlight": "Δεν Λήγει Ποτέ.",
-    "heroSubtitle": "Δημιουργήστε μόνιμα QR codes και barcodes έτοιμα για εκτύπωση απευθείας στον περιηγητή σας. 100% δωρεάν, χωρίς εγγραφή και χωρίς κρυφές χρεώσεις.",
+    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Free core generation, client-side privacy, and zero paywalls on your static codes.",
     "citation": "\"Ο κώδικας QR είναι ένα διεθνές πρότυπο (ISO/IEC 18004:2015). Οι γραμμικοί κώδικες Matrix απαιτούν καθαρά πλέγματα μονάδων για αξιόπιστη σάρωση σε όλους τους συμβατούς αναγνώστες παγκοσμίως.\"",
     "searchPlaceholder": "Εργαλεία αναζήτησης — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Όλα τα εργαλεία",
@@ -1273,7 +1273,7 @@
     "feat4": "Συμβατό με το ISO 18004",
     "feat4Desc": "Πληροί το διεθνές πρότυπο QR",
     "whatIsTitle": "Τι είναι το CreateMy-QR;",
-    "whatIsDesc": "Το CreateMy-QR είναι μια δωρεάν πλατφόρμα δημιουργίας κωδικών QR και barcode από την πλευρά του πελάτη που υποστηρίζει 37 τύπους δεδομένων, συμπεριλαμβανομένων των μέσων κοινωνικής δικτύωσης, των μηνυμάτων, των πληρωμών, των αρχείων και των καρτών επικοινωνίας.Όλοι οι κωδικοί είναι στατικοί, συμβατοί με ISO και έτοιμοι για εξαγωγή ως SVG ή PNG.Χωρίς λογαριασμό.Χωρίς λήξη.Χωρίς κόστος.",
+    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.",
     "fact1": "Δημιουργεί τοπικά κωδικούς QR — δεν αποστέλλονται δεδομένα σε κανένα διακομιστή.",
     "fact2": "Υποστηρίζει 37 τύπους: URL, WhatsApp, vCard, WiFi, Crypto, PDF και πολλά άλλα.",
     "fact3": "Πλήρως προσαρμοσμένο σε 30 γλώσσες, συμπεριλαμβανομένων των αραβικών, ιαπωνικών και χίντι.",
@@ -1283,9 +1283,9 @@
     "faqTitle": "Συχνές Ερωτήσεις",
     "faqSubtitle": "Όλα όσα πρέπει να γνωρίζετε για το CreateMy-QR.",
     "faq1q": "Τι είναι το CreateMy-QR;",
-    "faq1a": "Το CreateMy-QR είναι μια δωρεάν πλατφόρμα δημιουργίας κωδικών QR και barcode από την πλευρά του πελάτη που υποστηρίζει 37 τύπους δεδομένων, συμπεριλαμβανομένων των μέσων κοινωνικής δικτύωσης, των μηνυμάτων, των πληρωμών, των αρχείων και των καρτών επικοινωνίας.Όλοι οι κωδικοί είναι στατικοί, συμβατοί με ISO και έτοιμοι για εξαγωγή ως SVG ή PNG.Χωρίς λογαριασμό.Χωρίς λήξη.Χωρίς κόστος.",
+    "faq1a": "CreateMy-QR is a browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant codes with client-side processing — no uploads, zero tracking, and no forced account for core generation.",
     "faq2q": "Δημιουργεί τοπικά κωδικούς QR — δεν αποστέλλονται δεδομένα σε κανένα διακομιστή.",
-    "faq2a": "Υποστηρίζει 37 τύπους: URL, WhatsApp, vCard, WiFi, Crypto, PDF και πολλά άλλα.",
+    "faq2a": "Yes. All static QR codes are permanent and free forever with no expiry dates or watermarks. Optional Pro subscriptions are available for users who need bulk spreadsheet batches and sticker sheet printing.",
     "faq3q": "Πλήρως προσαρμοσμένο σε 30 γλώσσες, συμπεριλαμβανομένων των αραβικών, ιαπωνικών και χίντι.",
     "faq3a": "Γιατί είναι 100% ασφαλές;"
   },
@@ -1301,7 +1301,7 @@
       "fast": "Αστραπιαία",
       "fastDesc": "Το WebAssembly επιτρέπει στο CreateMy-QR να εκτελείται απευθείας στην CPU της συσκευής σας, παρακάμπτοντας τα σημεία συμφόρησης μεταφόρτωσης.",
       "global": "Για Όλους",
-      "globalDesc": "Μεταφράστηκε σε 30 γλώσσες. Χωρίς συνδρομές, χωρίς κρυφές χρεώσεις. Απλά εργαλεία παγκόσμιας κλάσης.",
+      "globalDesc": "Translated into 30 languages. Free core utilities, transparent pricing, and zero hidden trial traps.",
       "origin": "Η καταγωγή",
       "originTitle": "The Origin Story",
       "architecture": "Αρχιτεκτονική",
@@ -1323,7 +1323,7 @@
       "tableFeature": "Χαρακτηριστικό",
       "tableUs": "CreateMy-QR",
       "tableThem": "Παραδοσιακά Εργαλεία Cloud",
-      "cost": "100% δωρεάν για πάντα",
+      "cost": "Free Core / Pro from $9",
       "costThem": "$10-$30 / μήνα",
       "privacyText": "Μηδενική μεταφόρτωση (μόνο πρόγραμμα περιήγησης)",
       "privacyThem": "Μεταφορτώθηκε στους διακομιστές",
@@ -1356,9 +1356,9 @@
       "tr3val1": "Αυστηρά Ημερήσια Όρια",
       "tr3val2": "Απεριόριστο",
       "tr5val1": "Δωρεάν Επίπεδο + 20 $/μήνα",
-      "tr5val2": "100% δωρεάν για πάντα",
+      "tr5val2": "Free Core / Pro from $9",
       "tr6val1": "Απαιτείται",
-      "tr6val2": "Δεν απαιτείται ποτέ",
+      "tr6val2": "Instant for Core Tools",
       "tr7val1": "Εξαρτάται από το Δίκτυο",
       "tr7val2": "Instant (Τοπική CPU)",
       "expertAuthor": "Ανεξάρτητος Έλεγχος Ασφαλείας",
@@ -1388,8 +1388,8 @@
       "desc": "Δημιουργήστε και σαρώστε προσαρμοσμένους κωδικούς QR και γραμμωτούς κώδικες σε 30 γλώσσες παγκοσμίως. Άμεση δημιουργία από την πλευρά του πελάτη με πλήρη εντοπισμό και υποστήριξη UTF-8."
     },
     "pricing": {
-      "seoTitle": "100% Δωρεάν Τιμολόγηση",
-      "heroTitle": "Τιμολόγηση",
+      "seoTitle": "Transparent Pricing",
+      "heroTitle": "Simple Pricing, Forever Freedom",
       "heroSubtitle": "Τα καλύτερα πράγματα στη ζωή είναι δωρεάν.",
       "cost": "$0",
       "costPeriod": "/ για πάντα",
@@ -1400,7 +1400,7 @@
       "f4": "Βάση Δεδομένων Τοπικής Ιστορίας",
       "whyFree": "Πώς είναι δωρεάν;",
       "whyFreeDesc": "Επειδή δεν επεξεργαζόμαστε τα αρχεία σας στους διακομιστές μας, δεν έχουμε τεράστιους λογαριασμούς διακομιστή. Η συσκευή σας κάνει τη βαριά ανύψωση μέσω WebAssembly.",
-      "heroBadge": "Ριζικά Ελεύθερος",
+      "heroBadge": "Radically Transparent & Privacy-First",
       "compTitle": "Παραδοσιακά Εργαλεία Cloud",
       "compCost": "$20",
       "compPeriod": "/mo",
@@ -1416,8 +1416,8 @@
       "bizDesc": "Ναι, μπορείτε να χρησιμοποιήσετε το CreateMy-QR για την εταιρεία σας. Στην πραγματικότητα, η τοπική αρχιτεκτονική επεξεργασίας μας καθιστά τη μόνη πλατφόρμα αρκετά ασφαλή για αυστηρά εταιρικά περιβάλλοντα, νομικές ομάδες και επαγγελματίες υγείας.",
       "supportTitle": "Υποστήριξη του Έργου",
       "supportDesc": "Δεν χρεώνουμε συνδρομή, αλλά η διατήρηση του τομέα και της ανάπτυξης ζωντανές απαιτεί χρόνο. Εάν το CreateMy-QR σας έσωσε την ημέρα, σκεφτείτε να το μοιραστείτε με την ομάδα σας. Από στόμα σε στόμα είναι η μόνη μας στρατηγική μάρκετινγκ.",
-      "seoDesc": "Το CreateMy-QR είναι 100% δωρεάν για πάντα με απεριόριστη δημιουργία κώδικα QR, εξαγωγές διανυσματικών SVG/PNG υψηλής ανάλυσης, μηδενικά υδατογραφήματα και δεν απαιτείται εγγραφή.",
-      "desc": "Το CreateMy-QR είναι 100% δωρεάν για πάντα με απεριόριστη δημιουργία κώδικα QR, εξαγωγές διανυσματικών SVG/PNG υψηλής ανάλυσης, μηδενικά υδατογραφήματα και δεν απαιτείται εγγραφή."
+      "seoDesc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports.",
+      "desc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports."
     },
     "privacy": {
       "seoTitle": "Πολιτική Απορρήτου",
@@ -1548,7 +1548,7 @@
   },
   "rating": {
     "title": "Εμπιστευμένο από εκατομμύρια",
-    "subtitle": "Βαθμολογήθηκε με 4,9/5 με βάση 15.432 κριτικές σε 30+ χώρες. 100% Δωρεάν, Ασφαλής και από την πλευρά του πελάτη."
+    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
   },
   "pseo": {
     "insights_badge": "ΟΔΗΓΟΣ PRO",
@@ -1690,7 +1690,7 @@
     "toolDescTemplate": "Δημιουργήστε δωρεάν προσαρμοσμένους κωδικούς QR {{toolName}} με λογότυπο. Καλύτερη επεξεργάσιμη γεννήτρια κωδικών QR χωρίς υδατογράφημα. 100% ιδιωτική παραγωγή από την πλευρά του πελάτη.",
     "barcodeTitleSuffix": "Δωρεάν Γεννήτρια Barcode",
     "barcodeDescTemplate": "Δημιουργήστε δωρεάν προσαρμοσμένους γραμμικούς γραμμικούς κώδικες {{toolName}}. Άμεση λήψη SVG και PNG με κωδικοποίηση barcode υψηλής πυκνότητας.",
-    "homeSeoDesc": "Δημιουργήστε 37 τύπους κωδικών QR και barcodes δωρεάν. Καμία εγγραφή. Άμεση λήψη. 100% πελάτη, συμβατό με ISO, 30 γλώσσες.",
+    "homeSeoDesc": "Generate 37 types of QR codes and barcodes for free. Instant download. 100% client-side, ISO-compliant, 30 languages.",
     "homeHeroTitle": "Όλα τα Εργαλεία QR & Barcode",
     "homeHeroTitleHighlight": "σε Ένα μέρος"
   },

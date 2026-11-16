@@ -1,6 +1,6 @@
 {
-  "appTitle": "Ilmainen QR-koodigeneraattori Netissä - CreateMy-QR (No Signup)",
-  "tagline": "Luo QR-koodeja Logolla ja Värillä - Ei Rekisteröintiä, Rajaton. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Free QR Code Generator Online - CreateMy-QR | Privacy-First",
+  "tagline": "Create QR Codes with Logo & Color - Instant, Client-Side & High-Res PNG",
   "types": {
     "url": "URL / linkki",
     "wifi": "Wi-Fi",
@@ -151,7 +151,7 @@
     "madewith": "Valmistettu",
     "forprivateweb": "yksityistä verkkoa varten."
   },
-  "badge": "100% Free Forever. No Ads. No Signup.",
+  "badge": "No Expiring Codes. No Ads. 100% Privacy-First.",
   "tabs": {
     "step1": "1. Kirjoita sisältö",
     "step2": "2. Mukauta suunnittelua",
@@ -160,12 +160,12 @@
   },
   "geo": {
     "title": "Suomi QR Code Guide:",
-    "fact": "CreateMeQR on Suomen paras työkalu MobilePay- ja Siirto-maksulinkeille, ravintoloiden digitaalisille ruokalistoille ja vCard-yhdistämiin. 100% tietosuojattu käsittely suoraan selaimessasi alle 12 millisekunnissa ilman pilviseurantaa. Lataa korkearesoluutioiset SVG- ja PNG-vektoritiedostot ilmaiseksi ilman vesileimaa ja voimassaolorajoitusta.",
-    "softwareDescription": "100 % asiakaspuolen suojattu asiakirja ja QR-käsittelyohjelmisto. Käyttää WebAssemblya käsittelemään tiedostoja paikallisesti selaimen muistissa lataamatta niitä palvelimille. Turvallisin vaihtoehto pilvipohjaisille työkaluille. 100 % ilmainen, nolla seurantaa, ei rajoja.",
+    "fact": "CreateMy-QR is a privacy-first QR code generator that processes data entirely on your device in under 12ms. Unlike competitors that hostage your codes behind 14-day trials, this tool provides permanent static QR codes with custom logos, colors, and high-resolution PNG downloads without forced signup or watermarks. Pro plans unlock bulk batch generation, sticker printing, and vector SVG exports.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
         "q": "Onko tämä QR-koodigeneraattori täysin ilmainen?",
-        "a": "Kyllä, CreateMeQR on 100 % ilmainen ilman piilomaksuja, tilauksia tai 14 päivän kokeilujaksoja. Voit luoda rajoittamattoman määrän QR-koodeja kaupalliseen tai henkilökohtaiseen käyttöön."
+        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
       },
       {
         "q": "Ladataanko tiedostoni ja tietoni palvelimillesi?",
@@ -180,8 +180,8 @@
   "features": {
     "privacyTitle": "100 % asiakaspuolen tietosuoja",
     "privacyDesc": "Tietosi eivät koskaan poistu selaimeltasi. Emme lähetä tietojasi millekään palvelimelle. Kaikki luodaan välittömästi laitteellesi.",
-    "signupTitle": "Ei rekisteröitymistä",
-    "signupDesc": "Ei piilomaksuja, ei vesileimoja eikä rekisteröintiä vaadita. Luo niin monta QR-koodia kuin tarvitset kaupalliseen tai henkilökohtaiseen käyttöön.",
+    "signupTitle": "Instant Generation",
+    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
     "customTitle": "Rajoittamaton räätälöinti",
     "customDesc": "Lisää mukautettuja logoja, säädä värejä, käytä liukuvärejä ja muuta datakuvioita. Tee QR-koodisi vastaamaan brändi-identiteettiäsi täydellisesti ilman rajoituksia."
   },
@@ -194,7 +194,7 @@
     "title": "Upota generaattori verkkosivustollesi",
     "desc": "Haluatko tarjota vierailijoillesi ilmaisen QR-koodigeneraattorin? Kopioi ja liitä alla oleva HTML-koodinpätkä verkkosivustoosi tai blogiisi.",
     "whyTitle": "Miksi käyttää widgettiämme?",
-    "why1": "100 % ilmainen käyttäjillesi ilman maksumuureja",
+    "why1": "Free core tools for your users with zero paywalls",
     "why2": "Ei mainoksia, ponnahdusikkunoita tai häiritsevää seurantaa widgetin sisällä",
     "why3": "Parantaa vierailijoiden sitoutumista ja viipymäaikaa verkkotunnuksessasi",
     "anchorLabel": "Valitse SEO-ankkuriteksti:",
@@ -1251,11 +1251,11 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Ilmainen QR-koodi- ja viivakoodigeneraattori |37 Työkalut verkossa",
-    "seoDesc": "Luo 37 erilaista QR-koodia ja viivakoodia ilmaiseksi. Ei ilmoittautumista. Välitön lataus. 100 % asiakaspuoli, ISO-yhteensopiva, 30 kieltä.",
-    "badge": "ISO/IEC 18004 · 100 % ilmainen · Nollaseuranta · Ei rekisteröitymistä",
+    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "QR-koodigeneraattori Joka",
     "heroTitleHighlight": "Ei Koskaan Vanhene.",
-    "heroSubtitle": "Luo pysyviä, tulostusvalmiita QR-koodeja ja viivakoodeja suoraan selaimessasi. 100% ilmainen, ei rekisteröitymistä eikä piilokuluja tulostuksen jälkeen.",
+    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Free core generation, client-side privacy, and zero paywalls on your static codes.",
     "citation": "\"QR-koodi on kansainvälinen standardi (ISO/IEC 18004:2015). Matriisiviivakoodit vaativat puhtaat moduuliruudukot luotettavaa skannausta varten kaikissa yhteensopivissa lukijoissa ympäri maailmaa.\"",
     "searchPlaceholder": "Hakutyökalut - WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Kaikki työkalut",
@@ -1273,7 +1273,7 @@
     "feat4": "ISO 18004 -yhteensopiva",
     "feat4Desc": "Täyttää kansainvälisen QR-standardin",
     "whatIsTitle": "Mikä on CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR on ilmainen asiakaspuolen QR-koodin ja viivakoodin luontialusta, joka tukee 37 tietotyyppiä, mukaan lukien sosiaalinen media, viestit, maksut, tiedostot ja yhteystiedot.Kaikki koodit ovat staattisia, ISO-yhteensopivia ja vientivalmiita SVG- tai PNG-muodossa.Ei tiliä.Ei voimassaoloaikaa.Ei kuluja.",
+    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.",
     "fact1": "Luo QR-koodeja paikallisesti – tietoja ei lähetetä millekään palvelimelle.",
     "fact2": "Tukee 37 tyyppiä: URL, WhatsApp, vCard, WiFi, krypto, PDF ja paljon muuta.",
     "fact3": "Täysin lokalisoitu 30 kielelle, mukaan lukien arabia, japani ja hindi.",
@@ -1283,9 +1283,9 @@
     "faqTitle": "Usein kysytyt kysymykset",
     "faqSubtitle": "Kaikki mitä sinun tulee tietää kohteesta CreateMy-QR.",
     "faq1q": "Mikä on CreateMy-QR?",
-    "faq1a": "CreateMy-QR on ilmainen asiakaspuolen QR-koodin ja viivakoodin luontialusta, joka tukee 37 tietotyyppiä, mukaan lukien sosiaalinen media, viestit, maksut, tiedostot ja yhteystiedot.Kaikki koodit ovat staattisia, ISO-yhteensopivia ja vientivalmiita SVG- tai PNG-muodossa.Ei tiliä.Ei voimassaoloaikaa.Ei kuluja.",
+    "faq1a": "CreateMy-QR is a browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant codes with client-side processing — no uploads, zero tracking, and no forced account for core generation.",
     "faq2q": "Luo QR-koodeja paikallisesti – tietoja ei lähetetä millekään palvelimelle.",
-    "faq2a": "Tukee 37 tyyppiä: URL, WhatsApp, vCard, WiFi, krypto, PDF ja paljon muuta.",
+    "faq2a": "Yes. All static QR codes are permanent and free forever with no expiry dates or watermarks. Optional Pro subscriptions are available for users who need bulk spreadsheet batches and sticker sheet printing.",
     "faq3q": "Täysin lokalisoitu 30 kielelle, mukaan lukien arabia, japani ja hindi.",
     "faq3a": "Miksi se on 100% turvallinen?"
   },
@@ -1301,7 +1301,7 @@
       "fast": "Salamannopeasti",
       "fastDesc": "WebAssembly antaa CreateMy-QR:n toimia suoraan laitteesi suorittimessa ohittaen lähetyspullonkaulat.",
       "global": "Kaikille",
-      "globalDesc": "Käännetty 30 kielelle. Ei tilauksia, ei piilotettuja maksuja. Vain maailmanluokan työkaluja.",
+      "globalDesc": "Translated into 30 languages. Free core utilities, transparent pricing, and zero hidden trial traps.",
       "origin": "Alkuperä",
       "originTitle": "Alkuperätarina",
       "architecture": "Arkkitehtuuri",
@@ -1323,7 +1323,7 @@
       "tableFeature": "Ominaisuus",
       "tableUs": "CreateMy-QR",
       "tableThem": "Perinteiset pilvityökalut",
-      "cost": "100% ilmainen ikuisesti",
+      "cost": "Free Core / Pro from $9",
       "costThem": "$10-$30/kk",
       "privacyText": "Zero-Upload (vain selain)",
       "privacyThem": "Lähetetty palvelimille",
@@ -1356,9 +1356,9 @@
       "tr3val1": "Tiukat päivärajat",
       "tr3val2": "Rajoittamaton",
       "tr5val1": "Ilmainen taso + 20 dollaria/kk",
-      "tr5val2": "100% ilmainen ikuisesti",
+      "tr5val2": "Free Core / Pro from $9",
       "tr6val1": "Pakollinen",
-      "tr6val2": "Ei koskaan vaadittu",
+      "tr6val2": "Instant for Core Tools",
       "tr7val1": "Riippuu verkosta",
       "tr7val2": "Instant (paikallinen suoritin)",
       "expertAuthor": "Riippumaton turvatarkastus",
@@ -1388,8 +1388,8 @@
       "desc": "Luo ja skannaa mukautettuja QR-koodeja ja viivakoodeja 30 kielellä maailmanlaajuisesti. Välitön asiakaspuolen sukupolvi täydellä lokalisoinnilla ja UTF-8-tuella."
     },
     "pricing": {
-      "seoTitle": "100% ilmainen hinnoittelu",
-      "heroTitle": "Hinnoittelu",
+      "seoTitle": "Transparent Pricing",
+      "heroTitle": "Simple Pricing, Forever Freedom",
       "heroSubtitle": "Parhaat asiat elämässä ovat ilmaisia.",
       "cost": "$0",
       "costPeriod": "/ ikuisesti",
@@ -1400,7 +1400,7 @@
       "f4": "Paikallishistoriatietokanta",
       "whyFree": "Miten se on ilmainen?",
       "whyFreeDesc": "Koska emme käsittele tiedostojasi palvelimillamme, meillä ei ole valtavia palvelinlaskuja. Laitteesi hoitaa raskaan noston WebAssemblyn kautta.",
-      "heroBadge": "Radally Free",
+      "heroBadge": "Radically Transparent & Privacy-First",
       "compTitle": "Perinteiset pilvityökalut",
       "compCost": "20 dollaria",
       "compPeriod": "/kk",
@@ -1416,8 +1416,8 @@
       "bizDesc": "Kyllä, voit käyttää CreateMy-QR:ää yrityksellesi. Itse asiassa paikallinen käsittelyarkkitehtuurimme tekee meistä ainoan tarpeeksi turvallisen alustan tiukoille yritysympäristöille, lakitiimeille ja terveydenhuollon ammattilaisille.",
       "supportTitle": "Tue hanketta",
       "supportDesc": "Emme veloita tilausta, mutta verkkotunnuksen ja kehityksen hengissä pitäminen vie aikaa. Jos CreateMy-QR pelasti päiväsi, harkitse sen jakamista tiimillesi. Word of mouth on ainoa markkinointistrategiamme.",
-      "seoDesc": "CreateMy-QR on 100 % ilmainen ikuisesti, ja siinä on rajoittamaton QR-koodin luonti, korkearesoluutioinen SVG/PNG-vektorivienti, nolla vesileimoa eikä rekisteröintiä vaadita.",
-      "desc": "CreateMy-QR on 100 % ilmainen ikuisesti, ja siinä on rajoittamaton QR-koodin luonti, korkearesoluutioinen SVG/PNG-vektorivienti, nolla vesileimoa eikä rekisteröintiä vaadita."
+      "seoDesc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports.",
+      "desc": "Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports."
     },
     "privacy": {
       "seoTitle": "Tietosuojakäytäntö",
@@ -1548,7 +1548,7 @@
   },
   "rating": {
     "title": "Miljoonien luottama",
-    "subtitle": "Arvioitu 4,9/5 15 432 arvostelun perusteella yli 30 maassa. 100 % ilmainen, turvallinen ja asiakaspuoli."
+    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
   },
   "pseo": {
     "insights_badge": "PRO-OPAS",
@@ -1690,7 +1690,7 @@
     "toolDescTemplate": "Luo mukautettuja {{toolName}} QR-koodeja logolla ilmaiseksi. Paras muokattava QR-koodigeneraattori ilman vesileimaa. 100 % yksityinen, asiakaspuolen sukupolvi.",
     "barcodeTitleSuffix": "Ilmainen viivakoodigeneraattori",
     "barcodeDescTemplate": "Luo mukautettuja lineaarisia {{toolName}} viivakoodeja ilmaiseksi. Välitön SVG- ja PNG-lataus korkeatiheyksisellä viivakoodikoodauksella.",
-    "homeSeoDesc": "Luo 37 erilaista QR-koodia ja viivakoodia ilmaiseksi. Ei ilmoittautumista. Välitön lataus. 100 % asiakaspuoli, ISO-yhteensopiva, 30 kieltä.",
+    "homeSeoDesc": "Generate 37 types of QR codes and barcodes for free. Instant download. 100% client-side, ISO-compliant, 30 languages.",
     "homeHeroTitle": "Kaikki QR- ja viivakoodityökalut",
     "homeHeroTitleHighlight": "yhdessä paikassa"
   },

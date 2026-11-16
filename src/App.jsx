@@ -324,9 +324,9 @@ export default function App() {
       }
     : isPricing
     ? {
-        title: `${t('static.pricing.seoTitle', '100% Free Pricing')} | CreateMy-QR`,
-        h1Title: t('static.pricing.heroTitle', '100% Free Forever'),
-        description: t('static.pricing.seoDesc', 'CreateMy-QR is 100% free forever with unlimited QR code generation, high-resolution vector SVG/PNG exports, zero watermarks, and no registration required.'),
+        title: `${t('static.pricing.seoTitle', 'Transparent Pricing')} | CreateMy-QR`,
+        h1Title: t('static.pricing.heroTitle', 'Simple Pricing, Forever Freedom'),
+        description: t('static.pricing.seoDesc', 'Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports.'),
       }
     : isPrivacy
     ? {
@@ -540,11 +540,12 @@ export default function App() {
                 "featureList": [
                   "100% Client-Side WebAssembly Processing",
                   "Zero Server Uploads & Zero Tracking",
-                  "Permanent Non-Expiring QR Codes",
+                  "Permanent Non-Expiring Static QR Codes",
                   "Unlimited Scans",
-                  "High-Resolution Vector SVG and PNG Export",
-                  "46+ QR and Barcode Formats",
-                  "No Registration Required"
+                  "Instant High-Resolution PNG Downloads",
+                  "37 QR and Barcode Formats",
+                  "No Forced Registration for Core Tools",
+                  "Pro Bulk Spreadsheet Batch & Sticker Sheet Studio"
                 ]
               },
               {

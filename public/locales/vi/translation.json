@@ -1,6 +1,6 @@
 {
-  "appTitle": "Tạo Mã QR Miễn Phí Trực Tuyến - CreateMy-QR (No Signup)",
-  "tagline": "Tạo Mã QR Có Logo & Màu Sắc - Không Cần Đăng Ký, Không Giới Hạn. 100% privacy-safe, client-side generation without signup. Try CreateMy-QR today.",
+  "appTitle": "Trình Tạo Mã QR Miễn Phí Trực Tuyến - CreateMy-QR | Bảo Mật Riêng Tư",
+  "tagline": "Tạo Mã QR có Logo và Màu Sắc - Tức Thì, Phía Trình Duyệt và PNG Độ Phân Giải Cao",
   "types": {
     "url": "URL / Liên kết",
     "wifi": "Wi-Fi",
@@ -151,7 +151,7 @@
     "madewith": "Được làm bằng",
     "forprivateweb": "cho một trang web riêng tư."
   },
-  "badge": "100% Free Forever. No Ads. No Signup.",
+  "badge": "Mã Vĩnh Viễn Không Hết Hạn. Không Quảng Cáo. 100% Bảo Mật Riêng Tư.",
   "tabs": {
     "step1": "1. Nhập nội dung",
     "step2": "2. Tùy chỉnh thiết kế",
@@ -160,12 +160,12 @@
   },
   "geo": {
     "title": "Tiếng Việt QR Code Guide:",
-    "fact": "CreateMeQR là công cụ hàng đầu tại Việt Nam cho các liên kết thanh toán VietQR, MoMo, ZaloPay, menu nhà hàng và quán cà phê, cũng như danh thiếp vCard. Xử lý 100% ngay trên trình duyệt của bạn dưới 12ms, bảo mật tuyệt đối không gửi dữ liệu lên máy chủ. Tải xuống tệp vectơ SVG và PNG chất lượng cao miễn phí vĩnh viễn không có hình mờ.",
-    "softwareDescription": "Bộ xử lý QR và tài liệu bảo mật 100% phía khách hàng. Sử dụng WebAssugging để xử lý tệp cục bộ trong bộ nhớ trình duyệt mà không cần tải lên bất kỳ máy chủ nào. Giải pháp thay thế an toàn nhất cho các công cụ dựa trên đám mây. Miễn phí 100%, không theo dõi, không giới hạn.",
+    "fact": "CreateMy-QR is a privacy-first QR code generator that processes data entirely on your device in under 12ms. Unlike competitors that hostage your codes behind 14-day trials, this tool provides permanent static QR codes with custom logos, colors, and high-resolution PNG downloads without forced signup or watermarks. Pro plans unlock bulk batch generation, sticker printing, and vector SVG exports.",
+    "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
         "q": "Trình tạo mã QR này có hoàn toàn miễn phí không?",
-        "a": "Có, CreateMeQR miễn phí 100%, không có phí ẩn, không đăng ký và không dùng thử 14 ngày. Bạn có thể tạo mã QR không giới hạn cho mục đích thương mại hoặc cá nhân."
+        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
       },
       {
         "q": "Các tập tin và dữ liệu của tôi có được tải lên máy chủ của bạn không?",
@@ -180,8 +180,8 @@
   "features": {
     "privacyTitle": "100% quyền riêng tư phía khách hàng",
     "privacyDesc": "Dữ liệu của bạn không bao giờ rời khỏi trình duyệt của bạn. Chúng tôi không gửi thông tin của bạn đến bất kỳ máy chủ nào. Mọi thứ được tạo ngay lập tức trên thiết bị của bạn.",
-    "signupTitle": "Không cần đăng ký",
-    "signupDesc": "Không có phí ẩn, không có hình mờ và không cần đăng ký. Tạo bao nhiêu mã QR tùy thích cho mục đích thương mại hoặc cá nhân.",
+    "signupTitle": "Tạo Mã Tức Thì",
+    "signupDesc": "Không có phí ẩn cho công cụ cốt lõi, không gắn watermark và không bắt buộc đăng ký cho mã tĩnh đơn lẻ. Tạo bao nhiêu mã tùy thích cho mục đích cá nhân hoặc thương mại.",
     "customTitle": "Tùy chỉnh không giới hạn",
     "customDesc": "Thêm logo tùy chỉnh, điều chỉnh màu sắc, sử dụng độ dốc và thay đổi mẫu dữ liệu. Làm cho mã QR của bạn khớp hoàn toàn với nhận diện thương hiệu của bạn mà không bị hạn chế."
   },
@@ -194,7 +194,7 @@
     "title": "Nhúng Trình tạo vào trang web của bạn",
     "desc": "Bạn muốn cung cấp trình tạo mã QR miễn phí cho khách truy cập? Sao chép và dán đoạn mã HTML bên dưới vào trang web hoặc blog của bạn.",
     "whyTitle": "Tại sao nên sử dụng tiện ích của chúng tôi?",
-    "why1": "Miễn phí 100% cho người dùng của bạn không có tường phí",
+    "why1": "Công cụ cơ bản miễn phí cho người dùng của bạn mà không có rào cản thanh toán",
     "why2": "Không có quảng cáo, cửa sổ bật lên hoặc theo dõi xâm nhập bên trong tiện ích",
     "why3": "Tăng mức độ tương tác của khách truy cập và thời gian lưu lại trên miền của bạn",
     "anchorLabel": "Chọn văn bản neo SEO:",
@@ -1251,11 +1251,11 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Trình tạo mã vạch và mã QR miễn phí | 37 Công cụ trực tuyến",
-    "seoDesc": "Tạo 37 loại mã QR và mã vạch miễn phí. Không đăng ký. Tải xuống ngay lập tức. 100% phía khách hàng, tuân thủ ISO, 30 ngôn ngữ.",
-    "badge": "ISO/IEC 18004 · Miễn phí 100% · Không theo dõi · Không cần đăng ký",
+    "seoDesc": "Tạo 37 loại mã QR và mã vạch miễn phí. Tải xuống tức thì phía trình duyệt, mã tĩnh không bao giờ hết hạn, chuẩn ISO/IEC 18004 bằng 30 ngôn ngữ.",
+    "badge": "ISO/IEC 18004 · Ưu Tiên Riêng Tư · Không Theo Dõi · Xử Lý Phía Khách",
     "heroTitle": "Trình Tạo Mã QR",
     "heroTitleHighlight": "Không Bao Giờ Hết Hạn.",
-    "heroSubtitle": "Tạo mã QR và mã vạch vĩnh viễn sẵn sàng in ấn trực tiếp trên trình duyệt. Miễn phí 100%, không cần đăng ký và không thu phí sau khi in.",
+    "heroSubtitle": "Tạo mã QR và mã vạch vĩnh viễn, sẵn sàng in ấn trực tiếp trong trình duyệt của bạn. Tính năng cơ bản miễn phí, bảo mật trên máy khách và không thu phí mã tĩnh.",
     "citation": "\"Mã QR là tiêu chuẩn quốc tế (ISO/IEC 18004:2015). Mã vạch ma trận yêu cầu lưới mô-đun sạch để quét đáng tin cậy trên tất cả các đầu đọc tuân thủ trên toàn thế giới.\"",
     "searchPlaceholder": "Công cụ tìm kiếm - WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Tất cả công cụ",
@@ -1273,7 +1273,7 @@
     "feat4": "Tuân thủ ISO 18004",
     "feat4Desc": "Đạt tiêu chuẩn QR quốc tế",
     "whatIsTitle": "CreateMy-QR là gì?",
-    "whatIsDesc": "CreateMy-QR là nền tảng tạo mã vạch và mã QR miễn phí phía khách hàng, hỗ trợ 37 loại dữ liệu bao gồm mạng xã hội, tin nhắn, thanh toán, tệp và thẻ liên hệ. Tất cả các mã đều ở dạng tĩnh, tuân thủ ISO và sẵn sàng xuất dưới dạng SVG hoặc PNG. Không có tài khoản. Không hết hạn. Không có chi phí.",
+    "whatIsDesc": "CreateMy-QR là nền tảng mã QR và mã vạch phía trình duyệt hỗ trợ 37 loại dữ liệu. Các mã tĩnh cơ bản được miễn phí mãi mãi với tính năng xuất PNG độ phân giải cao tức thì và không theo dõi. Xuất vector SVG nâng cao và tạo hàng loạt từ bảng tính được mở khóa với gói PRO.",
     "fact1": "Tạo mã QR cục bộ - không có dữ liệu nào được gửi đến bất kỳ máy chủ nào.",
     "fact2": "Hỗ trợ 37 loại: URL, WhatsApp, vCard, WiFi, Crypto, PDF, v.v.",
     "fact3": "Bản địa hóa hoàn toàn bằng 30 ngôn ngữ bao gồm tiếng Ả Rập, tiếng Nhật và tiếng Hindi.",
@@ -1283,9 +1283,9 @@
     "faqTitle": "Câu hỏi thường gặp",
     "faqSubtitle": "Mọi thứ bạn cần biết về CreateMy-QR.",
     "faq1q": "CreateMy-QR là gì?",
-    "faq1a": "CreateMy-QR là nền tảng dựa trên trình duyệt miễn phí cung cấp 37 công cụ mã vạch và mã QR. Nó tạo ra các mã tuân thủ ISO/IEC 18004:2015 với 100% xử lý phía khách hàng — không tải lên, không theo dõi, không cần tài khoản.",
+    "faq1a": "CreateMy-QR là nền tảng trên trình duyệt với 37 công cụ — không tải lên máy chủ, không theo dõi và không bắt buộc tài khoản cho công cụ cơ bản.",
     "faq2q": "Mã QR có được sử dụng miễn phí mãi mãi không?",
-    "faq2a": "Đúng. Tất cả các mã QR đều tĩnh và miễn phí mãi mãi. Không có giới hạn, không có hình mờ, không có ngày hết hạn và không cần đăng ký. Bao giờ.",
+    "faq2a": "Đúng vậy. Tất cả mã QR tĩnh đều có giá trị vĩnh viễn và miễn phí trọn đời mà không có ngày hết hạn hay watermark. Các gói Pro tùy chọn có sẵn cho những ai cần tạo hàng loạt từ bảng tính và in trang nhãn dán.",
     "faq3q": "Dữ liệu của tôi có an toàn khi tạo mã QR không?",
     "faq3a": "Tuyệt đối. Tất cả mã hóa xảy ra bên trong trình duyệt của bạn. Dữ liệu của bạn không bao giờ rời khỏi thiết bị của bạn và không bao giờ được truyền đến bất kỳ máy chủ nào. Nền tảng này hoàn toàn tuân thủ GDPR và CCPA."
   },
@@ -1301,7 +1301,7 @@
       "fast": "Nhanh như chớp",
       "fastDesc": "WebAssugging cho phép CreateMy-QR chạy trực tiếp trên CPU thiết bị của bạn, bỏ qua các tắc nghẽn tải lên.",
       "global": "Dành cho mọi người",
-      "globalDesc": "Được dịch sang 30 ngôn ngữ. Không có đăng ký, không có phí ẩn. Chỉ cần các công cụ đẳng cấp thế giới.",
+      "globalDesc": "Được dịch sang 30 ngôn ngữ. Tiện ích cơ bản miễn phí, giá cả minh bạch và không có bẫy dùng thử trá hình.",
       "origin": "Nguồn gốc",
       "originTitle": "Câu Chuyện Nguồn Gốc",
       "architecture": "Kiến trúc",
@@ -1323,7 +1323,7 @@
       "tableFeature": "Tính năng",
       "tableUs": "TạoMy-QR",
       "tableThem": "Công cụ đám mây truyền thống",
-      "cost": "Miễn phí 100% mãi mãi",
+      "cost": "Cơ Bản Miễn Phí / Pro từ $9",
       "costThem": "$10-$30 / tháng",
       "privacyText": "Không tải lên (Chỉ trình duyệt)",
       "privacyThem": "Đã tải lên máy chủ",
@@ -1356,9 +1356,9 @@
       "tr3val1": "Giới hạn nghiêm ngặt hàng ngày",
       "tr3val2": "Không giới hạn",
       "tr5val1": "Bậc miễn phí + $20/tháng",
-      "tr5val2": "Miễn phí 100% mãi mãi",
+      "tr5val2": "Cơ Bản Miễn Phí / Pro từ $9",
       "tr6val1": "Bắt buộc",
-      "tr6val2": "Không bao giờ cần thiết",
+      "tr6val2": "Tức thì cho công cụ cơ bản",
       "tr7val1": "Phụ thuộc vào Mạng",
       "tr7val2": "Tức thì (CPU cục bộ)",
       "expertAuthor": "Kiểm toán an ninh độc lập",
@@ -1388,8 +1388,8 @@
       "desc": "Tạo và quét mã QR và mã vạch tùy chỉnh bằng 30 ngôn ngữ trên toàn thế giới. Tạo phía máy khách ngay lập tức với khả năng bản địa hóa đầy đủ và hỗ trợ UTF-8."
     },
     "pricing": {
-      "seoTitle": "Định giá miễn phí 100%",
-      "heroTitle": "Định giá",
+      "seoTitle": "Bảng Giá Minh Bạch",
+      "heroTitle": "Bảng Giá Đơn Giản, Tự Do Trọn Đời",
       "heroSubtitle": "Những điều tốt nhất trong cuộc sống là miễn phí.",
       "cost": "$0",
       "costPeriod": "/ mãi mãi",
@@ -1400,7 +1400,7 @@
       "f4": "Cơ sở dữ liệu lịch sử địa phương",
       "whyFree": "Làm thế nào nó miễn phí?",
       "whyFreeDesc": "Vì chúng tôi không xử lý tệp của bạn trên máy chủ của mình nên chúng tôi không có hóa đơn máy chủ lớn. Thiết bị của bạn thực hiện công việc nặng nhọc thông qua WebAssembly.",
-      "heroBadge": "Hoàn toàn miễn phí",
+      "heroBadge": "Hoàn Toàn Minh Bạch & Ưu Tiên Riêng Tư",
       "compTitle": "Công cụ đám mây truyền thống",
       "compCost": "$20",
       "compPeriod": "/tháng",
@@ -1416,8 +1416,8 @@
       "bizDesc": "Có, bạn có thể sử dụng CreateMy-QR cho công ty của mình. Trên thực tế, kiến ​​trúc xử lý cục bộ của chúng tôi khiến chúng tôi trở thành nền tảng duy nhất đủ an toàn cho các môi trường doanh nghiệp, nhóm pháp lý và chuyên gia chăm sóc sức khỏe nghiêm ngặt.",
       "supportTitle": "Hỗ trợ dự án",
       "supportDesc": "Chúng tôi không tính phí đăng ký nhưng việc duy trì miền và quá trình phát triển cần có thời gian. Nếu CreateMy-QR đã giúp ích cho bạn một ngày, hãy cân nhắc việc chia sẻ nó với nhóm của bạn. Truyền miệng là chiến lược tiếp thị duy nhất của chúng tôi.",
-      "seoDesc": "CreateMy-QR miễn phí 100% mãi mãi với khả năng tạo mã QR không giới hạn, xuất vectơ SVG/PNG có độ phân giải cao, không có hình mờ và không cần đăng ký.",
-      "desc": "CreateMy-QR miễn phí 100% mãi mãi với khả năng tạo mã QR không giới hạn, xuất vectơ SVG/PNG có độ phân giải cao, không có hình mờ và không cần đăng ký."
+      "seoDesc": "Tạo mã QR và mã vạch vĩnh viễn với quyền riêng tư phía máy khách. Tạo PNG cơ bản miễn phí không bao giờ hết hạn, cùng các gói Pro cho xử lý hàng loạt và xuất vector SVG.",
+      "desc": "Tạo mã QR và mã vạch vĩnh viễn với quyền riêng tư phía máy khách. Tạo PNG cơ bản miễn phí không bao giờ hết hạn, cùng các gói Pro cho xử lý hàng loạt và xuất vector SVG."
     },
     "privacy": {
       "seoTitle": "Chính sách bảo mật",
@@ -1548,7 +1548,7 @@
   },
   "rating": {
     "title": "Được hàng triệu người tin cậy",
-    "subtitle": "Được xếp hạng 4,9/5 dựa trên 15.432 đánh giá trên hơn 30 quốc gia. 100% miễn phí, an toàn và phía khách hàng."
+    "subtitle": "Được xếp hạng 4.9/5 dựa trên 15.432 đánh giá tại hơn 30 quốc gia. Ưu Tiên Riêng Tư, An Toàn và Phía Máy Khách."
   },
   "pseo": {
     "insights_badge": "HƯỚNG DẪN PRO",
@@ -1690,7 +1690,7 @@
     "toolDescTemplate": "Tạo miễn phí mã QR {{toolName}} tùy chỉnh có biểu tượng. Trình tạo mã QR có thể chỉnh sửa tốt nhất không có hình mờ. 100% riêng tư, tạo ra phía khách hàng.",
     "barcodeTitleSuffix": "Trình tạo mã vạch miễn phí",
     "barcodeDescTemplate": "Tạo miễn phí mã vạch tuyến tính {{toolName}} tùy chỉnh. Tải xuống SVG và PNG ngay lập tức với mã hóa mã vạch mật độ cao.",
-    "homeSeoDesc": "Tạo 37 loại mã QR và mã vạch miễn phí. Không đăng ký. Tải xuống ngay lập tức. 100% phía khách hàng, tuân thủ ISO, 30 ngôn ngữ.",
+    "homeSeoDesc": "Tạo 37 loại mã QR và mã vạch miễn phí. Tải xuống tức thì. Phía trình duyệt, chuẩn ISO, 30 ngôn ngữ.",
     "homeHeroTitle": "Tất cả các công cụ QR & mã vạch",
     "homeHeroTitleHighlight": "ở một nơi"
   },
