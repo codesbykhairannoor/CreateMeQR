@@ -29,10 +29,10 @@ export default function UserMenu({ currentLangCode }) {
     return (
       <button
         onClick={openAuthModal}
-        className="flex items-center gap-1.5 px-3 py-1.5 md:px-3.5 md:py-2 rounded-xl bg-purple-50 hover:bg-purple-100 dark:bg-purple-950/40 dark:hover:bg-purple-900/50 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800/50 text-xs font-bold transition-all shadow-xs cursor-pointer"
+        className="flex items-center gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-extrabold text-xs transition-all shadow-md shadow-purple-500/20 active:scale-95 cursor-pointer whitespace-nowrap"
       >
-        <User className="w-4 h-4" />
-        <span className="hidden sm:inline">{t('auth.signInBtn', 'Sign In')}</span>
+        <User className="w-3.5 h-3.5" />
+        <span>{t('auth.signInBtn', 'Sign In')}</span>
       </button>
     );
   }
