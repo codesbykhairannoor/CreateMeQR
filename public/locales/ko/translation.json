@@ -36,7 +36,8 @@
     "amazon": "아마존",
     "booking": "예약",
     "file": "파일",
-    "scanbarcode": "바코드 스캐너"
+    "scanbarcode": "바코드 스캐너",
+    "bulk": "대량 QR 및 바코드"
   },
   "form": {
     "enterUrl": "웹사이트 URL 입력",
@@ -129,7 +130,8 @@
     "readyTitle": "생성 준비 완료",
     "readyDesc": "왼쪽에 정보를 입력하고 \"QR 코드 생성\"을 클릭하면 여기에 미리보기가 표시됩니다.",
     "clientSide": "브라우저에서 로컬로 생성됨",
-    "noServer": "서버로 전송되는 데이터 없음"
+    "noServer": "서버로 전송되는 데이터 없음",
+    "printStudioBtn": "인쇄 / A4 스티커 시트 PDF"
   },
   "footer": {
     "privacy": "개인정보 처리방침",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "온라인 무료 바코드 생성기 - 1D 바코드 생성",
       "desc": "전문적인 1D 바코드를 즉시 생성하세요. Code-128, UPC, EAN, ITF-14 등을 지원합니다. 무료이고 안전하며 고해상도 PNG로 다운로드할 수 있습니다."
-    }
+    },
+    "printStudioBtn": "인쇄 / A4 스티커 시트 PDF"
   },
   "nav": {
     "allTools": "모든 도구",
@@ -1160,7 +1163,9 @@
     "catMedia": "미디어 및 엔터테인먼트",
     "catData": "파일 및 데이터",
     "generator": "모든 QR 도구",
-    "barcode": "바코드 메이커"
+    "barcode": "바코드 메이커",
+    "bulk": "대량 배치",
+    "bulkDesc": "CSV / Excel에서 ZIP으로"
   },
   "contact": {
     "title": "문의하기",
@@ -1533,6 +1538,12 @@
       "seoTitle": "온라인으로 바코드 스캔",
       "seoDesc": "빠른 개인 클라이언트 측 디코딩을 통해 브라우저 메모리에 안전하게 카메라 또는 로컬 이미지 파일에서 직접 1D 및 2D 바코드를 스캔합니다.",
       "desc": "빠른 개인 클라이언트 측 디코딩을 통해 브라우저 메모리에 안전하게 카메라 또는 로컬 이미지 파일에서 직접 1D 및 2D 바코드를 스캔합니다."
+    },
+    "bulk": {
+      "seoTitle": "대량 QR 및 바코드 생성기",
+      "heroTitle": "대량 QR 코드 및 바코드 생성기",
+      "seoDesc": "즉각적인 ZIP 내보내기 및 A4 스티커 시트 인쇄를 통해 스프레드시트 CSV 데이터에서 맞춤형 QR 코드 및 표준 바코드 배치를 동시에 생성합니다.",
+      "desc": "즉각적인 ZIP 내보내기 및 A4 스티커 시트 인쇄를 통해 스프레드시트 CSV 데이터에서 맞춤형 QR 코드 및 표준 바코드 배치를 동시에 생성합니다."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "대량 QR 코드가 필요합니까? CSV 가져오기 및 즉시 ZIP 내보내기가 가능한 Pro Bulk Batch Engine을 사용해 보세요.",
+    "bulkBannerLink": "벌크 생성기 바로가기 →"
+  },
+  "bulk": {
+    "badge": "Pro 배치 엔진 • 100% 클라이언트측",
+    "heroTitle": "대량 QR 코드 및 바코드 생성기",
+    "heroSubtitle": "스프레드시트 또는 CSV 파일을 가져오고 몇 초 만에 수백 또는 수천 개의 고해상도 QR 코드 및 바코드를 생성합니다. 제로 데이터 추적 — 모든 코드는 브라우저 메모리에서 직접 컴파일됩니다.",
+    "featPrivate": "100% 비공개(서버 업로드 없음)",
+    "featZip": "즉시 ZIP 내보내기",
+    "featPrint": "A4 스티커 시트 PDF 인쇄",
+    "step1Title": "데이터 제공(CSV 또는 스프레드시트)",
+    "templateCsv": "템플릿.csv",
+    "loadSample": "샘플 데이터 로드",
+    "tabUpload": "CSV/TSV 파일 업로드",
+    "tabPaste": "Excel/Google 스프레드시트에서 붙여넣기",
+    "dropTitle": "CSV/TSV 파일 선택 또는 드래그 앤 드롭",
+    "dropLoaded": "로드됨: {{fileName}}",
+    "dropDesc": "쉼표, 세미콜론 또는 탭으로 구분된 파일을 지원합니다. 파일 크기 제한이 없습니다.",
+    "pastePlaceholder": "여기에 행을 붙여넣으세요(예: Excel 또는 Google Sheets에서)...",
+    "detectedSummary": "{{rows}} 행과 {{cols}} 열이 감지되었습니다.",
+    "colData": "데이터/URL 열:",
+    "colLabel": "라벨/파일 이름:",
+    "colLabelNone": "없음(자동 번호 매기기)",
+    "moreRecords": "+ {{_count}} 더 많은 기록이 처리됩니다.",
+    "step2Title": "코드 스타일 및 형식 구성",
+    "codeType": "코드 유형",
+    "typeQr": "QR 코드(2D)",
+    "typeBarcode": "바코드(1D)",
+    "dotPattern": "도트 패턴",
+    "patternSquare": "클래식 스퀘어",
+    "patternRounded": "부드러운 둥근",
+    "patternDots": "모던 도트",
+    "eccLevel": "오류 수정 수준",
+    "eccL": "L - 7% 회복",
+    "eccM": "M - 15% 표준",
+    "eccQ": "Q — 25% 높은 신뢰성",
+    "eccH": "H — 최대 견고성 30%",
+    "barcodeStd": "바코드 표준",
+    "exportImgFormat": "이미지 형식 내보내기",
+    "formatPng": "PNG(높은 DPI)",
+    "formatSvg": "SVG(벡터)",
+    "step3Title": "생성 및 다운로드",
+    "readySummary": "{{_count}} 코드 생성 준비 완료",
+    "asyncNotice": "메모리에서 비동기적으로 처리됩니다. 네트워크 대역폭이 소비되지 않습니다.",
+    "btnGenerating": "생성 중(___퍼센트___%)",
+    "btnGenerate": "{{_count}} 코드 생성",
+    "progressSummary": "{{total}} 항목 중 ___현재___을(를) 처리했습니다...",
+    "successCompile": "브라우저 메모리에 {{count}}개의 코드를 성공적으로 컴파일했습니다!",
+    "btnPrintPdf": "A4 스티커 시트 PDF 인쇄",
+    "btnDownloadZip": "모두({{count}} 항목)를 ZIP으로 다운로드",
+    "btnCompressing": "ZIP 압축 중...",
+    "galleryTitle": "생성된 코드 갤러리",
+    "btnSave": "구하다",
+    "galleryLimitNotice": "처음 48개 항목을 표시합니다. 모든 {{_count}}개 항목이 다운로드된 ZIP에 포함됩니다."
+  },
+  "printStudio": {
+    "modalTitle": "인쇄 및 스티커 시트 스튜디오",
+    "proBadge": "프로 엔진",
+    "modalSubtitle": "A4 및 Letter Avery/Tom & Jerry 스티커 시트를 위한 100% 클라이언트측 벡터 레이아웃",
+    "presetLabel": "스티커 시트 사전 설정",
+    "paperFormat": "종이 형식:",
+    "gridStructure": "그리드 구조:",
+    "colsRowsSummary": "__cols___ 열 × {{rows}} 행({{total}}/시트)",
+    "cols": "열:",
+    "rows": "행:",
+    "labelWidth": "라벨 폭(mm):",
+    "labelHeight": "라벨 높이(mm):",
+    "allocation": "스티커 할당",
+    "quantity": "인쇄할 수량:",
+    "stickersCount": "{{_count}} 스티커",
+    "fill1Page": "1페이지 채우기({{count}})",
+    "fill2Pages": "2페이지 채우기({{count}})",
+    "bulkSequencing": "___페이지___ 페이지에 걸쳐 대량 목록의 {{count}}개 항목을 시퀀싱합니다.",
+    "skipPeels": "이전에 벗겨낸 스티커 건너뛰기:",
+    "skipSlots": "{{_count}} 슬롯",
+    "skipDesc": "일부 사용한 스티커 시트를 재사용하여 종이를 절약하세요!",
+    "guidesAndInks": "인쇄 가이드 및 잉크",
+    "k100": "K:100% 블랙",
+    "k100Desc": "선명한 흑백",
+    "cropMarks": "자르기 표시",
+    "cropMarksDesc": "단두대 가이드",
+    "dottedOutlines": "점선 윤곽선",
+    "dottedDesc": "라벨 경계",
+    "labelTitle": "라벨 제목",
+    "labelTitleDesc": "상단 캡션",
+    "labelHeading": "라벨 제목 텍스트:",
+    "labelPlaceholder": "예를 들어 메뉴/표 1 검색",
+    "pageOf": "___전체___ 페이지 중 ___현재___ 페이지",
+    "totalStickers": "총 스티커: {{count}}(___페이지___ 페이지)",
+    "directPrint": "직접 인쇄",
+    "downloadPdf": "인쇄 가능한 PDF 다운로드",
+    "generatingPdf": "PDF 생성 중...",
+    "emptySlot": "비어 있는"
   }
 }

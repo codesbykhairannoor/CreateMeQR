@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Tempahan",
     "file": "Fail",
-    "scanbarcode": "Pengimbas Kod Bar"
+    "scanbarcode": "Pengimbas Kod Bar",
+    "bulk": "QR & Kod Bar Pukal"
   },
   "form": {
     "enterUrl": "Masukkan URL tapak web anda",
@@ -129,7 +130,8 @@
     "readyTitle": "Penjana Kod QR Percuma Dalam Talian",
     "readyDesc": "Cipta Kod QR dengan Logo & Warna - Tanpa Pendaftaran, Tanpa Had",
     "clientSide": "Dihasilkan pihak pelanggan",
-    "noServer": "Tiada data dihantar ke pelayan"
+    "noServer": "Tiada data dihantar ke pelayan",
+    "printStudioBtn": "Cetak / Lembaran Pelekat A4 PDF"
   },
   "footer": {
     "privacy": "Dasar Privasi",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Penjana Kod Bar Percuma Dalam Talian - Cipta Kod Bar 1D",
       "desc": "Hasilkan kod bar 1D profesional serta-merta. Sokongan untuk Kod-128, UPC, EAN, ITF-14 dan banyak lagi. Percuma, selamat dan sedia untuk dimuat turun dalam PNG resolusi tinggi."
-    }
+    },
+    "printStudioBtn": "Cetak / Lembaran Pelekat A4 PDF"
   },
   "nav": {
     "allTools": "Semua Alat",
@@ -1160,7 +1163,9 @@
     "catMedia": "Media & Hiburan",
     "catData": "Fail & Data",
     "generator": "SEMUA ALAT QR",
-    "barcode": "Pembuat Kod Bar"
+    "barcode": "Pembuat Kod Bar",
+    "bulk": "Kumpulan Pukal",
+    "bulkDesc": "CSV / Excel ke ZIP"
   },
   "contact": {
     "title": "Hubungi Kami",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Imbas Kod Bar Dalam Talian",
       "seoDesc": "Imbas kod bar 1D dan 2D terus daripada kamera atau fail imej tempatan anda dengan selamat dalam memori penyemak imbas anda dengan penyahkodan sisi pelanggan yang pantas dan peribadi.",
       "desc": "Imbas kod bar 1D dan 2D terus daripada kamera atau fail imej tempatan anda dengan selamat dalam memori penyemak imbas anda dengan penyahkodan sisi pelanggan yang pantas dan peribadi."
+    },
+    "bulk": {
+      "seoTitle": "Penjana QR & Kod Bar Pukal",
+      "heroTitle": "Kod QR Pukal & Penjana Kod Bar",
+      "seoDesc": "Hasilkan kelompok kod QR tersuai dan kod bar standard secara serentak daripada data CSV hamparan dengan eksport ZIP segera dan cetakan helaian pelekat A4.",
+      "desc": "Hasilkan kelompok kod QR tersuai dan kod bar standard secara serentak daripada data CSV hamparan dengan eksport ZIP segera dan cetakan helaian pelekat A4."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Perlukan kod QR pukal? Cuba Enjin Kumpulan Pukal Pro kami dengan import CSV dan eksport ZIP segera.",
+    "bulkBannerLink": "Pergi ke Penjana Pukal →"
+  },
+  "bulk": {
+    "badge": "Enjin Kumpulan Pro • 100% Bahagian Pelanggan",
+    "heroTitle": "Kod QR Pukal & Penjana Kod Bar",
+    "heroSubtitle": "Import hamparan atau fail CSV dan jana ratusan atau ribuan kod QR dan kod bar resolusi tinggi dalam beberapa saat. Penjejakan data sifar — setiap kod disusun terus dalam memori penyemak imbas anda.",
+    "featPrivate": "100% Peribadi (Tiada Muat Naik Pelayan)",
+    "featZip": "Eksport ZIP Segera",
+    "featPrint": "Cetakan PDF Lembaran Pelekat A4",
+    "step1Title": "Sediakan Data Anda (CSV atau Hamparan)",
+    "templateCsv": "Template.csv",
+    "loadSample": "Muatkan Data Contoh",
+    "tabUpload": "Muat naik Fail CSV / TSV",
+    "tabPaste": "Tampal Dari Excel / Helaian Google",
+    "dropTitle": "Pilih atau Seret & Lepas Fail CSV / TSV",
+    "dropLoaded": "Dimuatkan: ___Nama fail___",
+    "dropDesc": "Menyokong fail yang dipisahkan koma, koma bertitik atau Tab. Tiada had saiz fail.",
+    "pastePlaceholder": "Tampalkan baris di sini (cth. daripada Excel atau Helaian Google)...",
+    "detectedSummary": "{{baris}} baris dan lajur {{cols}} dikesan",
+    "colData": "Lajur Data / URL:",
+    "colLabel": "Label / Nama fail:",
+    "colLabelNone": "Tiada (Penomboran Auto)",
+    "moreRecords": "+ {{kira}} lagi rekod akan diproses.",
+    "step2Title": "Konfigurasi Gaya & Format Kod",
+    "codeType": "Jenis Kod",
+    "typeQr": "Kod QR (2D)",
+    "typeBarcode": "Kod Bar (1D)",
+    "dotPattern": "Corak Titik",
+    "patternSquare": "Dataran Klasik",
+    "patternRounded": "Bulat halus",
+    "patternDots": "Titik Moden",
+    "eccLevel": "Tahap Pembetulan Ralat",
+    "eccL": "L — 7% Pemulihan",
+    "eccM": "M — 15% Standard",
+    "eccQ": "S — 25% Kebolehpercayaan Tinggi",
+    "eccH": "H — 30% Kekasaran Maksimum",
+    "barcodeStd": "Standard Kod Bar",
+    "exportImgFormat": "Eksport Format Imej",
+    "formatPng": "PNG (DPI Tinggi)",
+    "formatSvg": "SVG (Vektor)",
+    "step3Title": "Jana & Muat Turun",
+    "readySummary": "Bersedia untuk menjana {{kira}} kod",
+    "asyncNotice": "Diproses secara tak segerak dalam ingatan. Tiada lebar jalur rangkaian digunakan.",
+    "btnGenerating": "Menjana ({{peratus}}%)",
+    "btnGenerate": "Hasilkan {{kira}} Kod",
+    "progressSummary": "Diproses {{semasa}} daripada {{jumlah}} item...",
+    "successCompile": "Berjaya menyusun {{count}} kod dalam memori penyemak imbas!",
+    "btnPrintPdf": "Cetak PDF Helaian Pelekat A4",
+    "btnDownloadZip": "Muat turun Semua ({{kira}} item) sebagai ZIP",
+    "btnCompressing": "Memampatkan ZIP...",
+    "galleryTitle": "Galeri Kod Dijana",
+    "btnSave": "Jimat",
+    "galleryLimitNotice": "Menunjukkan 48 item pertama. Semua {{kira}} item akan dimasukkan ke dalam ZIP yang dimuat turun."
+  },
+  "printStudio": {
+    "modalTitle": "Studio Lembaran Cetak & Pelekat",
+    "proBadge": "Enjin Pro",
+    "modalSubtitle": "Reka letak vektor 100% Bahagian Pelanggan untuk helaian pelekat A4 & Letter Avery / Tom & Jerry",
+    "presetLabel": "Pratetap Helaian Pelekat",
+    "paperFormat": "Format Kertas:",
+    "gridStructure": "Struktur Grid:",
+    "colsRowsSummary": "{{cols}} lajur × {{baris}} baris ({{jumlah}}/helaian)",
+    "cols": "Lajur:",
+    "rows": "baris:",
+    "labelWidth": "Lebar Label (mm):",
+    "labelHeight": "Ketinggian Label (mm):",
+    "allocation": "Peruntukan Pelekat",
+    "quantity": "Kuantiti untuk Dicetak:",
+    "stickersCount": "{{kira}} pelekat",
+    "fill1Page": "Isi 1 Halaman ({{kira}})",
+    "fill2Pages": "Isi 2 Halaman ({{kira}})",
+    "bulkSequencing": "Menjujukan {{kira}} item daripada senarai pukal merentas {{halaman}} halaman.",
+    "skipPeels": "Langkau Pelekat yang Dikupas Sebelum ini:",
+    "skipSlots": "{{kira}} slot",
+    "skipDesc": "Simpan kertas dengan menggunakan semula helaian pelekat yang telah digunakan separa!",
+    "guidesAndInks": "Panduan Cetak & Dakwat",
+    "k100": "K:100% Hitam",
+    "k100Desc": "monokrom rangup",
+    "cropMarks": "Tanda Tanaman",
+    "cropMarksDesc": "Panduan Guillotine",
+    "dottedOutlines": "Garis Besar Bertitik",
+    "dottedDesc": "Sempadan label",
+    "labelTitle": "Tajuk Label",
+    "labelTitleDesc": "Kapsyen teratas",
+    "labelHeading": "Teks Tajuk Label:",
+    "labelPlaceholder": "cth. Imbas Menu / Jadual 1",
+    "pageOf": "Halaman {{semasa}} daripada {{jumlah}}",
+    "totalStickers": "Jumlah pelekat: {{kira}} ({{halaman}} halaman)",
+    "directPrint": "Cetakan Terus",
+    "downloadPdf": "Muat turun PDF Boleh Cetak",
+    "generatingPdf": "Menjana PDF...",
+    "emptySlot": "kosong"
   }
 }

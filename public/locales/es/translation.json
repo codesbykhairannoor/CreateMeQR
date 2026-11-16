@@ -36,7 +36,8 @@
     "amazon": "Amazonas",
     "booking": "Reserva",
     "file": "Archivo",
-    "scanbarcode": "Escáner de código de barras"
+    "scanbarcode": "Escáner de código de barras",
+    "bulk": "QR y código de barras masivos"
   },
   "form": {
     "enterUrl": "Introduce la URL de tu sitio web",
@@ -129,7 +130,8 @@
     "readyTitle": "Listo para Generar",
     "readyDesc": "Rellena tus datos a la izquierda y haz clic en \"Generar Código QR\" para ver tu vista previa.",
     "clientSide": "Generado en tu navegador",
-    "noServer": "Sin datos enviados al servidor"
+    "noServer": "Sin datos enviados al servidor",
+    "printStudioBtn": "Imprimir / Hoja de pegatinas A4 PDF"
   },
   "footer": {
     "privacy": "Política de Privacidad",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Generador de códigos de barras gratuito en línea: cree códigos de barras 1D",
       "desc": "Genere códigos de barras 1D profesionales al instante. Soporte para Code-128, UPC, EAN, ITF-14 y más. Gratis, seguro y listo para descargar en PNG de alta resolución."
-    }
+    },
+    "printStudioBtn": "Imprimir / Hoja de pegatinas A4 PDF"
   },
   "nav": {
     "allTools": "Todas las herramientas",
@@ -1160,7 +1163,9 @@
     "catMedia": "Medios y entretenimiento",
     "catData": "Archivos y datos",
     "generator": "TODAS LAS HERRAMIENTAS QR",
-    "barcode": "Creador de códigos de barras"
+    "barcode": "Creador de códigos de barras",
+    "bulk": "Lote a granel",
+    "bulkDesc": "CSV/Excel a ZIP"
   },
   "contact": {
     "title": "Contáctenos",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Escanear código de barras en línea",
       "seoDesc": "Escanee códigos de barras 1D y 2D directamente desde su cámara o archivos de imágenes locales de forma segura en la memoria de su navegador con una decodificación rápida y privada del lado del cliente.",
       "desc": "Escanee códigos de barras 1D y 2D directamente desde su cámara o archivos de imágenes locales de forma segura en la memoria de su navegador con una decodificación rápida y privada del lado del cliente."
+    },
+    "bulk": {
+      "seoTitle": "Generador de códigos de barras y QR a granel",
+      "heroTitle": "Generador de códigos QR y códigos de barras a granel",
+      "seoDesc": "Genere lotes de códigos QR personalizados y códigos de barras estándar simultáneamente a partir de datos CSV de hojas de cálculo con exportación ZIP instantánea e impresión de hojas de pegatinas A4.",
+      "desc": "Genere lotes de códigos QR personalizados y códigos de barras estándar simultáneamente a partir de datos CSV de hojas de cálculo con exportación ZIP instantánea e impresión de hojas de pegatinas A4."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "¿Necesita códigos QR masivos? Pruebe nuestro Pro Bulk Batch Engine con importación CSV y exportación ZIP instantánea.",
+    "bulkBannerLink": "Ir al generador masivo →"
+  },
+  "bulk": {
+    "badge": "Motor por lotes profesional • 100% del lado del cliente",
+    "heroTitle": "Generador de códigos QR y códigos de barras a granel",
+    "heroSubtitle": "Importe hojas de cálculo o archivos CSV y genere cientos o miles de códigos QR y códigos de barras de alta resolución en segundos. Seguimiento de datos cero: cada código se compila directamente en la memoria de su navegador.",
+    "featPrivate": "100% privado (sin cargas de servidor)",
+    "featZip": "Exportación ZIP instantánea",
+    "featPrint": "Hoja de pegatinas A4 PDF Imprimir",
+    "step1Title": "Proporcione sus datos (CSV u hojas de cálculo)",
+    "templateCsv": "Plantilla.csv",
+    "loadSample": "Cargar datos de muestra",
+    "tabUpload": "Cargar archivo CSV/TSV",
+    "tabPaste": "Pegar desde Excel/Hojas de Google",
+    "dropTitle": "Elija o arrastre y suelte el archivo CSV/TSV",
+    "dropLoaded": "Cargado: {{nombredearchivo}}",
+    "dropDesc": "Admite archivos delimitados por comas, punto y coma o tabulaciones. Sin límites de tamaño de archivo.",
+    "pastePlaceholder": "Pegue filas aquí (por ejemplo, de Excel o Google Sheets)...",
+    "detectedSummary": "Se detectaron {{rows}} filas y {{cols}} columnas",
+    "colData": "Columna de datos/URL:",
+    "colLabel": "Etiqueta / Nombre de archivo:",
+    "colLabelNone": "Ninguno (numeración automática)",
+    "moreRecords": "+ {{count}} se procesarán más registros.",
+    "step2Title": "Configurar estilo y formato de código",
+    "codeType": "Tipo de código",
+    "typeQr": "Código QR (2D)",
+    "typeBarcode": "Código de barras (1D)",
+    "dotPattern": "Patrón de puntos",
+    "patternSquare": "Plaza clásica",
+    "patternRounded": "Suave Redondeado",
+    "patternDots": "Puntos modernos",
+    "eccLevel": "Nivel de corrección de errores",
+    "eccL": "L — 7% Restauración",
+    "eccM": "M — 15% Estándar",
+    "eccQ": "Q: 25% de alta confiabilidad",
+    "eccH": "H — 30 % de robustez máxima",
+    "barcodeStd": "Estándar de código de barras",
+    "exportImgFormat": "Exportar formato de imagen",
+    "formatPng": "PNG (DPI alto)",
+    "formatSvg": "SVG (Vector)",
+    "step3Title": "Generar y descargar",
+    "readySummary": "Listo para generar {{count}} códigos",
+    "asyncNotice": "Procesado de forma asincrónica en la memoria. No se consume ancho de banda de red.",
+    "btnGenerating": "Generando ({{porcent}}%)",
+    "btnGenerate": "Generar {{count}} códigos",
+    "progressSummary": "{{Current}} procesada de {{total}} elementos ...",
+    "successCompile": "¡Códigos {{count}} compilados exitosamente en la memoria del navegador!",
+    "btnPrintPdf": "Imprimir hoja de pegatinas A4 en PDF",
+    "btnDownloadZip": "Descargar todo ({{count}} elementos) como ZIP",
+    "btnCompressing": "Comprimiendo ZIP...",
+    "galleryTitle": "Galería de código generado",
+    "btnSave": "Ahorrar",
+    "galleryLimitNotice": "Mostrando los primeros 48 artículos. Todos los {{count}} elementos se incluirán en el ZIP descargado."
+  },
+  "printStudio": {
+    "modalTitle": "Estudio de hojas de impresión y pegatinas",
+    "proBadge": "Motor profesional",
+    "modalSubtitle": "Diseño vectorial 100 % del lado del cliente para hojas de pegatinas A4 y Letter Avery/Tom & Jerry",
+    "presetLabel": "Preestablecido de hoja de pegatinas",
+    "paperFormat": "Formato de papel:",
+    "gridStructure": "Estructura de cuadrícula:",
+    "colsRowsSummary": "{{cols}} columnas × {{rows}} filas ({{total}}/hoja)",
+    "cols": "Columnas:",
+    "rows": "Filas:",
+    "labelWidth": "Ancho de etiqueta (mm):",
+    "labelHeight": "Altura de la etiqueta (mm):",
+    "allocation": "Asignación de pegatinas",
+    "quantity": "Cantidad a imprimir:",
+    "stickersCount": "{{contar}} pegatinas",
+    "fill1Page": "Llenar 1 página ({{count}})",
+    "fill2Pages": "Llene 2 páginas ({{count}})",
+    "bulkSequencing": "Secuenciar {{contar}} elementos de la lista masiva en ___páginas___ páginas.",
+    "skipPeels": "Saltar pegatinas previamente retiradas:",
+    "skipSlots": "{{contar}} espacios",
+    "skipDesc": "¡Ahorre papel reutilizando hojas de pegatinas parcialmente usadas!",
+    "guidesAndInks": "Guías de impresión y tintas",
+    "k100": "K:100% negro",
+    "k100Desc": "Crujiente monocroma",
+    "cropMarks": "Marcas de cultivos",
+    "cropMarksDesc": "guías de guillotina",
+    "dottedOutlines": "Contornos punteados",
+    "dottedDesc": "Límite de etiqueta",
+    "labelTitle": "Título de la etiqueta",
+    "labelTitleDesc": "Título superior",
+    "labelHeading": "Texto del encabezado de la etiqueta:",
+    "labelPlaceholder": "p.ej. Buscar menú/tabla 1",
+    "pageOf": "Página {{actual}} de {{total}}",
+    "totalStickers": "Total de pegatinas: {{count}} (___páginas___ páginas)",
+    "directPrint": "Impresión directa",
+    "downloadPdf": "Descargar PDF imprimible",
+    "generatingPdf": "Generando PDF...",
+    "emptySlot": "Vacía"
   }
 }

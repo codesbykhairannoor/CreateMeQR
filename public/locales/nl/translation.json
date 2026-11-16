@@ -36,7 +36,8 @@
     "amazon": "Amazone",
     "booking": "Boeking",
     "file": "Bestand",
-    "scanbarcode": "Barcodescanner"
+    "scanbarcode": "Barcodescanner",
+    "bulk": "Bulk-QR en streepjescode"
   },
   "form": {
     "enterUrl": "Voer uw website-URL",
@@ -129,7 +130,8 @@
     "readyTitle": "Gratis QR Code Generator Online",
     "readyDesc": "Maak QR Codes met Logo & Kleur - Zonder Registratie, Onbeperkt",
     "clientSide": "Aan de clientzijde gegenereerd",
-    "noServer": "Geen gegevens verzonden naar server"
+    "noServer": "Geen gegevens verzonden naar server",
+    "printStudioBtn": "Afdrukken / A4 stickervel PDF"
   },
   "footer": {
     "privacy": "Privacybeleid",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Gratis barcodegenerator online - Maak 1D-streepjescodes",
       "desc": "Genereer direct professionele 1D-barcodes. Ondersteuning voor Code-128, UPC, EAN, ITF-14 en meer. Gratis, veilig en klaar om te downloaden in PNG met hoge resolutie."
-    }
+    },
+    "printStudioBtn": "Afdrukken / A4 stickervel PDF"
   },
   "nav": {
     "allTools": "Alle gereedschappen",
@@ -1160,7 +1163,9 @@
     "catMedia": "Media en entertainment",
     "catData": "Bestanden en gegevens",
     "generator": "ALLE QR-HULPMIDDELEN",
-    "barcode": "Barcodemaker"
+    "barcode": "Barcodemaker",
+    "bulk": "Bulkbatch",
+    "bulkDesc": "CSV/Excel naar ZIP"
   },
   "contact": {
     "title": "Neem contact met ons op",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Scan streepjescode online",
       "seoDesc": "Scan 1D- en 2D-barcodes rechtstreeks vanaf uw camera of lokale afbeeldingsbestanden veilig in uw browsergeheugen met snelle, particuliere decodering aan de clientzijde.",
       "desc": "Scan 1D- en 2D-barcodes rechtstreeks vanaf uw camera of lokale afbeeldingsbestanden veilig in uw browsergeheugen met snelle, particuliere decodering aan de clientzijde."
+    },
+    "bulk": {
+      "seoTitle": "Bulk QR- en barcodegenerator",
+      "heroTitle": "Bulk QR-code en barcodegenerator",
+      "seoDesc": "Genereer tegelijkertijd batches aangepaste QR-codes en standaardbarcodes uit CSV-spreadsheetgegevens met directe ZIP-export en afdrukken van A4-stickervellen.",
+      "desc": "Genereer tegelijkertijd batches aangepaste QR-codes en standaardbarcodes uit CSV-spreadsheetgegevens met directe ZIP-export en afdrukken van A4-stickervellen."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Bulk-QR-codes nodig? Probeer onze Pro Bulk Batch Engine met CSV-import en directe ZIP-export.",
+    "bulkBannerLink": "Ga naar Bulkgenerator →"
+  },
+  "bulk": {
+    "badge": "Pro Batch-engine • 100% clientzijde",
+    "heroTitle": "Bulk QR-code en barcodegenerator",
+    "heroSubtitle": "Importeer spreadsheets of CSV-bestanden en genereer binnen enkele seconden honderden of duizenden QR-codes en barcodes met hoge resolutie. Geen gegevensregistratie: elke code wordt rechtstreeks in uw browsergeheugen samengesteld.",
+    "featPrivate": "100% privé (geen serveruploads)",
+    "featZip": "Directe ZIP-export",
+    "featPrint": "A4 stickervel PDF afdrukken",
+    "step1Title": "Geef uw gegevens op (CSV of spreadsheets)",
+    "templateCsv": "Sjabloon.csv",
+    "loadSample": "Voorbeeldgegevens laden",
+    "tabUpload": "Upload CSV/TSV-bestand",
+    "tabPaste": "Plakken vanuit Excel/Google Spreadsheets",
+    "dropTitle": "Kies of versleep een CSV-/TSV-bestand",
+    "dropLoaded": "Geladen: {{bestandsnaam}}",
+    "dropDesc": "Ondersteunt door komma's, puntkomma's of door tabs gescheiden bestanden. Geen limieten voor de bestandsgrootte.",
+    "pastePlaceholder": "Plak hier rijen (bijvoorbeeld vanuit Excel of Google Spreadsheets)...",
+    "detectedSummary": "Er zijn {{rows}} rijen en {{cols}} kolommen gedetecteerd",
+    "colData": "Gegevens-/URL-kolom:",
+    "colLabel": "Label / Bestandsnaam:",
+    "colLabelNone": "Geen (automatische nummering)",
+    "moreRecords": "+ {{count}} meer records worden verwerkt.",
+    "step2Title": "Configureer codestijl en -indeling",
+    "codeType": "Codetype",
+    "typeQr": "QR-code (2D)",
+    "typeBarcode": "Streepjescode (1D)",
+    "dotPattern": "Puntpatroon",
+    "patternSquare": "Klassiek Vierkant",
+    "patternRounded": "Glad afgerond",
+    "patternDots": "Moderne stippen",
+    "eccLevel": "Foutcorrectieniveau",
+    "eccL": "L — 7% restauratie",
+    "eccM": "M — 15% Standaard",
+    "eccQ": "Q — 25% hoge betrouwbaarheid",
+    "eccH": "H — 30% Maximale robuustheid",
+    "barcodeStd": "Streepjescode standaard",
+    "exportImgFormat": "Afbeeldingsformaat exporteren",
+    "formatPng": "PNG (hoge DPI)",
+    "formatSvg": "SVG-bestand (vector)",
+    "step3Title": "Genereer en download",
+    "readySummary": "Klaar om {{count}} codes te genereren",
+    "asyncNotice": "Asynchroon verwerkt in het geheugen. Er wordt geen netwerkbandbreedte verbruikt.",
+    "btnGenerating": "Genereren ({{procent}}%)",
+    "btnGenerate": "Genereer {{count}}-codes",
+    "progressSummary": "{{huidige}} van {{totaal}} artikelen verwerkt...",
+    "successCompile": "Met succes {{count}} codes in het browsergeheugen gecompileerd!",
+    "btnPrintPdf": "A4 stickervel PDF afdrukken",
+    "btnDownloadZip": "Download alles ({{count}} items) als ZIP",
+    "btnCompressing": "ZIP comprimeren...",
+    "galleryTitle": "Gegenereerde codegalerij",
+    "btnSave": "Redden",
+    "galleryLimitNotice": "Toont de eerste 48 items. Alle {{count}} items worden opgenomen in de gedownloade ZIP."
+  },
+  "printStudio": {
+    "modalTitle": "Print- en stickervelstudio",
+    "proBadge": "Pro-motor",
+    "modalSubtitle": "100% Client-Side vectorlay-out voor A4- en Letter Avery- / Tom & Jerry-stickervellen",
+    "presetLabel": "Voorinstelling stickervel",
+    "paperFormat": "Papierformaat:",
+    "gridStructure": "Rasterstructuur:",
+    "colsRowsSummary": "{{kolen}} kolommen × {{rijen}} rijen ({{totaal}}/blad)",
+    "cols": "Kolommen:",
+    "rows": "Rijen:",
+    "labelWidth": "Etiketbreedte (mm):",
+    "labelHeight": "Etikethoogte (mm):",
+    "allocation": "Stickertoewijzing",
+    "quantity": "Aantal om af te drukken:",
+    "stickersCount": "{{tel}} stickers",
+    "fill1Page": "Vul 1 pagina ({{count}})",
+    "fill2Pages": "Vul 2 pagina's ({{count}})",
+    "bulkSequencing": "Sortering van {{count}} items uit de bulklijst over ___pagina's___ pagina('s).",
+    "skipPeels": "Sla eerder verwijderde stickers over:",
+    "skipSlots": "{{tel}} slots",
+    "skipDesc": "Bespaar papier door gedeeltelijk gebruikte stickervellen te hergebruiken!",
+    "guidesAndInks": "Handleidingen en inkten afdrukken",
+    "k100": "K:100% zwart",
+    "k100Desc": "Helder zwart-wit",
+    "cropMarks": "Snijtekens",
+    "cropMarksDesc": "Guillotine-gidsen",
+    "dottedOutlines": "Gestippelde contouren",
+    "dottedDesc": "Labelgrens",
+    "labelTitle": "Labeltitel",
+    "labelTitleDesc": "Bovenste bijschrift",
+    "labelHeading": "Labelkoptekst:",
+    "labelPlaceholder": "bijv. Scannen naar menu / tabel 1",
+    "pageOf": "Pagina {{huidige}} van {{totaal}}",
+    "totalStickers": "Totaal aantal stickers: {{count}} (___pagina's___ pagina's)",
+    "directPrint": "Direct afdrukken",
+    "downloadPdf": "Afdrukbare PDF downloaden",
+    "generatingPdf": "PDF genereren...",
+    "emptySlot": "Leeg"
   }
 }

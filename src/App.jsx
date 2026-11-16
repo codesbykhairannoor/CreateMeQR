@@ -17,8 +17,11 @@ import UseCases from './pages/UseCases';
 import BarcodeGenerator from './pages/BarcodeGenerator';
 import ScanQr from './pages/ScanQr';
 import ScanBarcode from './pages/ScanBarcode';
+import BulkGenerator from './pages/BulkGenerator';
 import LandingContent from './components/LandingContent';
 import SeoArticle from './components/SeoArticle';
+import { AuthProvider } from './context/AuthContext';
+import AuthModal from './components/auth/AuthModal';
 import { PSEO_ROUTES, LANGS } from './config/site';
 import { localizedRoutes, routeToToolMap } from './config/localizedRoutes';
 import { getPseoUseCase, getAllPseoData } from './config/pseo-usecases';
@@ -68,6 +71,10 @@ const resolveToolFromAnySlug = (rawSlug, lang) => {
     '/scan-barcode': 'scanbarcode',
     '/barcode': 'barcode',
     '/barcode-generator': 'barcode',
+    '/bulk': 'bulk',
+    '/batch': 'bulk',
+    '/bulk-qr-generator': 'bulk',
+    '/bulk-qr-code-generator': 'bulk',
     '/wifi': 'wifi',
     '/vcard': 'vcard',
     '/whatsapp': 'whatsapp',
@@ -138,6 +145,8 @@ const resolveToolFromAnySlug = (rawSlug, lang) => {
     ['scan-qr', 'scanqr'],
     ['scanqr', 'scanqr'],
     ['barcode', 'barcode'],
+    ['bulk', 'bulk'],
+    ['batch', 'bulk'],
     ['maps', 'location'],
     ['location', 'location'],
     ['lokasyon', 'location'],
@@ -258,7 +267,8 @@ export default function App() {
   const isBarcode = toolType === 'barcode' || slug === '/barcode-generator';
   const isScanQr = toolType === 'scanqr' || slug === '/scan-qr';
   const isScanBarcode = toolType === 'scanbarcode' || slug === '/scan-barcode';
-  const isStaticPage = isHome || isAbout || isCompare || isLanguages || isPricing || isPrivacy || isSecurity || isTerms || isUseCases || isBarcode || isScanQr || isScanBarcode;
+  const isBulk = toolType === 'bulk' || slug === '/bulk-qr-generator' || slug === '/bulk' || slug === '/batch' || slug === '/bulk-qr-code-generator';
+  const isStaticPage = isHome || isAbout || isCompare || isLanguages || isPricing || isPrivacy || isSecurity || isTerms || isUseCases || isBarcode || isScanQr || isScanBarcode || isBulk;
 
   const currentType = toolType || 'url';
   // For home page, use 'url' as fallback tool type for SEO meta
@@ -360,6 +370,12 @@ export default function App() {
         h1Title: t('static.scanbarcode.heroTitle', 'Scan Barcode Online'),
         description: t('static.scanbarcode.seoDesc', 'Scan 1D and 2D barcodes directly from your camera or local image files securely in your browser memory with fast, private client-side decoding.'),
       }
+    : isBulk
+    ? {
+        title: 'Bulk QR Code & Barcode Generator (Free, Offline, CSV to ZIP) | CreateMy-QR',
+        h1Title: 'Bulk QR Code & Barcode Generator',
+        description: 'Generate hundreds or thousands of vector QR codes and barcodes from CSV or Excel data in seconds. 100% private and client-side with ZIP and A4 sticker PDF export.',
+      }
     : effectiveType === 'url'
     ? {
         title: `${t('appTitle', 'CreateMy-QR')} | Free Custom QR Code Generator`,
@@ -392,7 +408,8 @@ export default function App() {
   const canonicalUrl = `https://createmy-qr.com${currentLangCode === 'en' ? '' : '/' + currentLangCode}${canonicalPath}`;
 
   return (
-    <MainLayout>
+    <AuthProvider>
+      <MainLayout>
       <ScrollToTop />
       <Helmet>
         <html lang={currentLangCode} />
@@ -621,8 +638,13 @@ export default function App() {
               <ScanBarcode />
             </>
           )}
+          {isBulk && (
+            <BulkGenerator />
+          )}
         </>
       )}
     </MainLayout>
-  );
+    <AuthModal />
+  </AuthProvider>
+);
 }

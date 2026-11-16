@@ -36,7 +36,8 @@
     "amazon": "Amazonka",
     "booking": "Rezerwacja",
     "file": "Plik",
-    "scanbarcode": "Skaner kodów kreskowych"
+    "scanbarcode": "Skaner kodów kreskowych",
+    "bulk": "Zbiorczy kod QR i kod kreskowy"
   },
   "form": {
     "enterUrl": "Wpisz adres URL swojej witryny",
@@ -129,7 +130,8 @@
     "readyTitle": "Darmowy Generator Kodów QR Online",
     "readyDesc": "Twórz Kody QR z Logo i Kolorem - Bez Rejestracji, Nielimitowane",
     "clientSide": "Wygenerowane po stronie klienta",
-    "noServer": "Brak danych wysłanych do serwera"
+    "noServer": "Brak danych wysłanych do serwera",
+    "printStudioBtn": "Wydrukuj / arkusz naklejek A4 w formacie PDF"
   },
   "footer": {
     "privacy": "Polityka prywatności",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Darmowy generator kodów kreskowych online — twórz kody kreskowe 1D",
       "desc": "Błyskawicznie generuj profesjonalne kody kreskowe 1D. Obsługa Code-128, UPC, EAN, ITF-14 i innych. Bezpłatny, bezpieczny i gotowy do pobrania w formacie PNG o wysokiej rozdzielczości."
-    }
+    },
+    "printStudioBtn": "Wydrukuj / arkusz naklejek A4 w formacie PDF"
   },
   "nav": {
     "allTools": "Wszystkie narzędzia",
@@ -1160,7 +1163,9 @@
     "catMedia": "Media i rozrywka",
     "catData": "Pliki i dane",
     "generator": "WSZYSTKIE NARZĘDZIA QR",
-    "barcode": "Kreator kodów kreskowych"
+    "barcode": "Kreator kodów kreskowych",
+    "bulk": "Partia zbiorcza",
+    "bulkDesc": "CSV/Excel do ZIP"
   },
   "contact": {
     "title": "Skontaktuj się z nami",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Zeskanuj kod kreskowy online",
       "seoDesc": "Skanuj bezpiecznie kody kreskowe 1D i 2D bezpośrednio z aparatu lub lokalne pliki obrazów w pamięci przeglądarki dzięki szybkiemu, prywatnemu dekodowaniu po stronie klienta.",
       "desc": "Skanuj bezpiecznie kody kreskowe 1D i 2D bezpośrednio z aparatu lub lokalne pliki obrazów w pamięci przeglądarki dzięki szybkiemu, prywatnemu dekodowaniu po stronie klienta."
+    },
+    "bulk": {
+      "seoTitle": "Masowy generator kodów QR i kreskowych",
+      "heroTitle": "Masowy generator kodów QR i kodów kreskowych",
+      "seoDesc": "Generuj jednocześnie partie niestandardowych kodów QR i standardowych kodów kreskowych z danych CSV arkusza kalkulacyjnego z natychmiastowym eksportem ZIP i drukowaniem arkusza naklejek A4.",
+      "desc": "Generuj jednocześnie partie niestandardowych kodów QR i standardowych kodów kreskowych z danych CSV arkusza kalkulacyjnego z natychmiastowym eksportem ZIP i drukowaniem arkusza naklejek A4."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Potrzebujesz zbiorczych kodów QR? Wypróbuj nasz Pro Bulk Batch Engine z importem CSV i natychmiastowym eksportem ZIP.",
+    "bulkBannerLink": "Przejdź do Generatora masowego →"
+  },
+  "bulk": {
+    "badge": "Pro Batch Engine • 100% po stronie klienta",
+    "heroTitle": "Masowy generator kodów QR i kodów kreskowych",
+    "heroSubtitle": "Importuj arkusze kalkulacyjne lub pliki CSV i generuj setki lub tysiące kodów QR i kreskowych o wysokiej rozdzielczości w ciągu kilku sekund. Zerowe śledzenie danych — każdy kod jest kompilowany bezpośrednio w pamięci Twojej przeglądarki.",
+    "featPrivate": "100% prywatny (bez przesyłania na serwer)",
+    "featZip": "Natychmiastowy eksport ZIP",
+    "featPrint": "Arkusz naklejek A4 do wydruku w formacie PDF",
+    "step1Title": "Podaj swoje dane (CSV lub arkusze kalkulacyjne)",
+    "templateCsv": "Szablon.csv",
+    "loadSample": "Załaduj przykładowe dane",
+    "tabUpload": "Prześlij plik CSV/TSV",
+    "tabPaste": "Wklej z Excela/Arkuszy Google",
+    "dropTitle": "Wybierz lub przeciągnij i upuść plik CSV / TSV",
+    "dropLoaded": "Załadowano: ___nazwa pliku___",
+    "dropDesc": "Obsługuje pliki rozdzielane przecinkami, średnikami i tabulatorami. Brak ograniczeń rozmiaru pliku.",
+    "pastePlaceholder": "Wklej tutaj wiersze (np. z Excela lub Arkuszy Google)...",
+    "detectedSummary": "Wykryto {{rows}} wierszy i {{cols}} kolumn",
+    "colData": "Kolumna Dane/adres URL:",
+    "colLabel": "Etykieta/nazwa pliku:",
+    "colLabelNone": "Brak (automatyczne numerowanie)",
+    "moreRecords": "+ {{count}} więcej rekordów zostanie przetworzonych.",
+    "step2Title": "Skonfiguruj styl i format kodu",
+    "codeType": "Typ kodu",
+    "typeQr": "Kod QR (2D)",
+    "typeBarcode": "Kod kreskowy (1D)",
+    "dotPattern": "Wzór kropki",
+    "patternSquare": "Klasyczny kwadrat",
+    "patternRounded": "Gładkie zaokrąglone",
+    "patternDots": "Nowoczesne kropki",
+    "eccLevel": "Poziom korekcji błędów",
+    "eccL": "L — 7% Przywrócenie",
+    "eccM": "M — 15% standardowy",
+    "eccQ": "Q — 25% Wysoka niezawodność",
+    "eccH": "H — 30% maksymalnej wytrzymałości",
+    "barcodeStd": "Norma kodów kreskowych",
+    "exportImgFormat": "Eksportuj format obrazu",
+    "formatPng": "PNG (wysoka rozdzielczość)",
+    "formatSvg": "SVG (wektor)",
+    "step3Title": "Wygeneruj i pobierz",
+    "readySummary": "Gotowy do wygenerowania {{count}} kodów",
+    "asyncNotice": "Przetwarzane asynchronicznie w pamięci. Brak zużycia przepustowości sieci.",
+    "btnGenerating": "Generowanie ({{procent}}%)",
+    "btnGenerate": "Wygeneruj {{_count}} kodów",
+    "progressSummary": "Przetworzono ___bieżący{{z}}łącznie___ elementów...",
+    "successCompile": "Pomyślnie skompilowano {{count}} kodów w pamięci przeglądarki!",
+    "btnPrintPdf": "Wydrukuj arkusz naklejek w formacie A4 w formacie PDF",
+    "btnDownloadZip": "Pobierz wszystko (____liczba_elementów) w formacie ZIP",
+    "btnCompressing": "Kompresja ZIP-a...",
+    "galleryTitle": "Wygenerowana galeria kodów",
+    "btnSave": "Ratować",
+    "galleryLimitNotice": "Wyświetlanie pierwszych 48 elementów. Wszystkie {{count}} elementy zostaną uwzględnione w pobranym pliku ZIP."
+  },
+  "printStudio": {
+    "modalTitle": "Studio drukowania i naklejek",
+    "proBadge": "Silnik profesjonalny",
+    "modalSubtitle": "Układ wektorowy w 100% po stronie klienta dla arkuszy naklejek A4 i Letter Avery / Tom i Jerry",
+    "presetLabel": "Wstępnie ustawiony arkusz naklejek",
+    "paperFormat": "Format papieru:",
+    "gridStructure": "Struktura siatki:",
+    "colsRowsSummary": "{{kolumny}} kolumny × {{wiersze}} wiersze (___łącznie___/arkusz)",
+    "cols": "Kolumny:",
+    "rows": "Wydziwianie:",
+    "labelWidth": "Szerokość etykiety (mm):",
+    "labelHeight": "Wysokość etykiety (mm):",
+    "allocation": "Przydział naklejek",
+    "quantity": "Ilość do wydrukowania:",
+    "stickersCount": "{{liczba}} naklejek",
+    "fill1Page": "Wypełnij 1 stronę ({{liczba}})",
+    "fill2Pages": "Wypełnij 2 strony ({{liczba}})",
+    "bulkSequencing": "Kolejność {{liczby}} elementów z listy zbiorczej na {{stronach}} stronach.",
+    "skipPeels": "Pomiń wcześniej obrane naklejki:",
+    "skipSlots": "{{liczba}} miejsc",
+    "skipDesc": "Oszczędzaj papier, ponownie wykorzystując częściowo zużyte arkusze naklejek!",
+    "guidesAndInks": "Drukuj przewodniki i atramenty",
+    "k100": "K: 100% czarny",
+    "k100Desc": "Wyraźny monochromatyczny",
+    "cropMarks": "Znaki upraw",
+    "cropMarksDesc": "Prowadnice gilotynowe",
+    "dottedOutlines": "Kropkowane kontury",
+    "dottedDesc": "Granica etykiety",
+    "labelTitle": "Tytuł etykiety",
+    "labelTitleDesc": "Górny napis",
+    "labelHeading": "Tekst nagłówka etykiety:",
+    "labelPlaceholder": "np. Wyszukaj menu/tabelę 1",
+    "pageOf": "Strona ___bieżąca{{z}}łącznie___",
+    "totalStickers": "Łączna liczba naklejek: {{liczba}} ({{stron}} stron)",
+    "directPrint": "Druk bezpośredni",
+    "downloadPdf": "Pobierz plik PDF do druku",
+    "generatingPdf": "Generowanie pliku PDF...",
+    "emptySlot": "Pusty"
   }
 }

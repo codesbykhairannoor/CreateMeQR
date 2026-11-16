@@ -7,6 +7,7 @@ import { localizedRoutes, routeToToolMap } from '../config/localizedRoutes';
 import MegaNav from '../components/nav/MegaNav';
 import MobileNav from '../components/nav/MobileNav';
 import HistoryDrawer from '../components/HistoryDrawer';
+import UserMenu from '../components/auth/UserMenu';
 import { getPseoUseCase, getAllPseoData } from '../config/pseo-usecases';
 
 export default function MainLayout({ children }) {
@@ -140,6 +141,8 @@ export default function MainLayout({ children }) {
           <MegaNav currentLangCode={currentLangCode} />
 
           <div className="flex items-center gap-1.5 md:gap-2 flex-shrink-0">
+            <UserMenu currentLangCode={currentLangCode} />
+
             <button onClick={() => setShowHistory(true)} title={t('history.title', 'Local History')} className="flex items-center justify-center w-9 h-9 md:w-10 md:h-10 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all">
               <Clock className="w-5 h-5" />
             </button>

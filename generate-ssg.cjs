@@ -121,7 +121,7 @@ async function run() {
       if (useCase) {
         title = `${useCase.h1Title} | CreateMy-QR`;
         description = useCase.seoDesc;
-      } else if (['about', 'compare', 'languages', 'pricing', 'privacy', 'security', 'terms', 'usecases', 'barcode', 'scanqr', 'scanbarcode'].includes(toolId)) {
+      } else if (['about', 'compare', 'languages', 'pricing', 'privacy', 'security', 'terms', 'usecases', 'barcode', 'bulk', 'scanqr', 'scanbarcode'].includes(toolId)) {
         const staticMeta = translations.static?.[toolId] || {};
         const fallbackTitle = translations.types?.[toolId] || toolId;
         const pageTitle = staticMeta.seoTitle || staticMeta.title || fallbackTitle;

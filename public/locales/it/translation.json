@@ -36,7 +36,8 @@
     "amazon": "Amazzonia",
     "booking": "Prenotazione",
     "file": "File",
-    "scanbarcode": "Lettore di codici a barre"
+    "scanbarcode": "Lettore di codici a barre",
+    "bulk": "QR e codici a barre in blocco"
   },
   "form": {
     "enterUrl": "Inserisci l'URL del tuo sito web",
@@ -129,7 +130,8 @@
     "readyTitle": "Generatore di Codici QR Gratis Online",
     "readyDesc": "Crea Codici QR con Logo e Colore - Senza Registrazione, Illimitato",
     "clientSide": "Generato lato client",
-    "noServer": "Nessun dato inviato al server"
+    "noServer": "Nessun dato inviato al server",
+    "printStudioBtn": "Stampa/Foglio di adesivi A4 PDF"
   },
   "footer": {
     "privacy": "Informativa sulla privacy",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Generatore di codici a barre online gratuito - Crea codici a barre 1D",
       "desc": "Genera istantaneamente codici a barre 1D professionali. Supporto per Code-128, UPC, EAN, ITF-14 e altro. Gratuito, sicuro e pronto per il download in PNG ad alta risoluzione."
-    }
+    },
+    "printStudioBtn": "Stampa/Foglio di adesivi A4 PDF"
   },
   "nav": {
     "allTools": "Tutti gli strumenti",
@@ -1160,7 +1163,9 @@
     "catMedia": "Media e intrattenimento",
     "catData": "File e dati",
     "generator": "TUTTI GLI STRUMENTI QR",
-    "barcode": "Creatore di codici a barre"
+    "barcode": "Creatore di codici a barre",
+    "bulk": "Lotto sfuso",
+    "bulkDesc": "CSV/Excel in ZIP"
   },
   "contact": {
     "title": "Contattaci",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Scansiona il codice a barre online",
       "seoDesc": "Scansiona codici a barre 1D e 2D direttamente dalla tua fotocamera o file di immagine locali in modo sicuro nella memoria del tuo browser con una decodifica veloce e privata lato client.",
       "desc": "Scansiona codici a barre 1D e 2D direttamente dalla tua fotocamera o file di immagine locali in modo sicuro nella memoria del tuo browser con una decodifica veloce e privata lato client."
+    },
+    "bulk": {
+      "seoTitle": "Generatore di codici QR e codici a barre in blocco",
+      "heroTitle": "Generatore di codici QR e codici a barre in blocco",
+      "seoDesc": "Genera simultaneamente batch di codici QR personalizzati e codici a barre standard dai dati CSV del foglio di calcolo con esportazione ZIP istantanea e stampa di fogli adesivi A4.",
+      "desc": "Genera simultaneamente batch di codici QR personalizzati e codici a barre standard dai dati CSV del foglio di calcolo con esportazione ZIP istantanea e stampa di fogli adesivi A4."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Hai bisogno di codici QR in blocco? Prova il nostro motore Pro Bulk Batch con importazione CSV ed esportazione ZIP istantanea.",
+    "bulkBannerLink": "Vai a Generatore di massa →"
+  },
+  "bulk": {
+    "badge": "Motore Batch Pro • 100% lato client",
+    "heroTitle": "Generatore di codici QR e codici a barre in blocco",
+    "heroSubtitle": "Importa fogli di calcolo o file CSV e genera centinaia o migliaia di codici QR e codici a barre ad alta risoluzione in pochi secondi. Nessun tracciamento dei dati: ogni codice viene compilato direttamente nella memoria del tuo browser.",
+    "featPrivate": "Privato al 100% (nessun caricamento sul server)",
+    "featZip": "Esportazione ZIP istantanea",
+    "featPrint": "Foglio di adesivi A4 Stampa PDF",
+    "step1Title": "Fornisci i tuoi dati (CSV o fogli di calcolo)",
+    "templateCsv": "Modello.csv",
+    "loadSample": "Carica dati di esempio",
+    "tabUpload": "Carica file CSV/TSV",
+    "tabPaste": "Incolla da Fogli Excel/Google",
+    "dropTitle": "Scegli o trascina e rilascia file CSV/TSV",
+    "dropLoaded": "Caricato: {{nomefile}}",
+    "dropDesc": "Supporta file delimitati da virgole, punti e virgola o tabulazioni. Nessun limite alla dimensione del file.",
+    "pastePlaceholder": "Incolla qui le righe (ad esempio da Excel o Fogli Google)...",
+    "detectedSummary": "Rilevate {{rows}} righe e {{cols}} colonne",
+    "colData": "Colonna dati/URL:",
+    "colLabel": "Etichetta/nome file:",
+    "colLabelNone": "Nessuno (numerazione automatica)",
+    "moreRecords": "+ {{conta}} verranno elaborati altri record.",
+    "step2Title": "Configura stile e formato del codice",
+    "codeType": "Tipo di codice",
+    "typeQr": "Codice QR (2D)",
+    "typeBarcode": "Codice a barre (1D)",
+    "dotPattern": "Modello a punti",
+    "patternSquare": "Piazza Classica",
+    "patternRounded": "Liscio Arrotondato",
+    "patternDots": "Punti moderni",
+    "eccLevel": "Livello di correzione degli errori",
+    "eccL": "L — 7% Restauro",
+    "eccM": "M — 15% standard",
+    "eccQ": "Q: affidabilità elevata al 25%.",
+    "eccH": "H: robustezza massima del 30%.",
+    "barcodeStd": "Norma del codice a barre",
+    "exportImgFormat": "Esporta formato immagine",
+    "formatPng": "PNG (DPI elevato)",
+    "formatSvg": "SVG (vettoriale)",
+    "step3Title": "Genera e scarica",
+    "readySummary": "Pronto per generare {{count}} codici",
+    "asyncNotice": "Elaborato in modo asincrono in memoria. Nessuna larghezza di banda di rete consumata.",
+    "btnGenerating": "Generazione ({{percent}}%)",
+    "btnGenerate": "Genera {{count}} codici",
+    "progressSummary": "Elaborato {{attuale}} di {{totale}} elementi...",
+    "successCompile": "Compilati con successo i codici {{count}} nella memoria del browser!",
+    "btnPrintPdf": "Stampa il foglio di adesivi A4 PDF",
+    "btnDownloadZip": "Scarica tutto ({{count}} elementi) come ZIP",
+    "btnCompressing": "Compressione ZIP...",
+    "galleryTitle": "Galleria di codici generati",
+    "btnSave": "Salva",
+    "galleryLimitNotice": "Visualizzazione dei primi 48 articoli. Tutti gli {{count}} elementi verranno inclusi nello ZIP scaricato."
+  },
+  "printStudio": {
+    "modalTitle": "Studio di fogli di stampa e adesivi",
+    "proBadge": "Motore Pro",
+    "modalSubtitle": "Layout vettoriale lato client al 100% per fogli adesivi A4 e Letter Avery / Tom & Jerry",
+    "presetLabel": "Preimpostazione del foglio di adesivi",
+    "paperFormat": "Formato carta:",
+    "gridStructure": "Struttura della griglia:",
+    "colsRowsSummary": "{{cols}} colonne × {{righe}} righe ({{totale}}/foglio)",
+    "cols": "Colonne:",
+    "rows": "Righe:",
+    "labelWidth": "Larghezza etichetta (mm):",
+    "labelHeight": "Altezza etichetta (mm):",
+    "allocation": "Assegnazione degli adesivi",
+    "quantity": "Quantità da stampare:",
+    "stickersCount": "{{conta}} adesivi",
+    "fill1Page": "Riempi 1 pagina ({{count}})",
+    "fill2Pages": "Riempi 2 pagine ({{count}})",
+    "bulkSequencing": "Sequenza di {{conta}} elementi dall'elenco in blocco su {{pagine}} pagina/e.",
+    "skipPeels": "Salta gli adesivi staccati in precedenza:",
+    "skipSlots": "{{conta}} slot",
+    "skipDesc": "Risparmia carta riutilizzando fogli adesivi parzialmente usati!",
+    "guidesAndInks": "Guide di stampa e inchiostri",
+    "k100": "K:100% nero",
+    "k100Desc": "Monocromia nitida",
+    "cropMarks": "Segni di ritaglio",
+    "cropMarksDesc": "Guide a ghigliottina",
+    "dottedOutlines": "Contorni punteggiati",
+    "dottedDesc": "Confine dell'etichetta",
+    "labelTitle": "Titolo dell'etichetta",
+    "labelTitleDesc": "Didascalia in alto",
+    "labelHeading": "Testo intestazione etichetta:",
+    "labelPlaceholder": "per esempio. Cerca il menu/tabella 1",
+    "pageOf": "Pagina {{attuale}} di {{totale}}",
+    "totalStickers": "Adesivi totali: {{conteggio}} ({{pagine}} pagine)",
+    "directPrint": "Stampa diretta",
+    "downloadPdf": "Scarica il PDF stampabile",
+    "generatingPdf": "Generazione PDF...",
+    "emptySlot": "Vuota"
   }
 }

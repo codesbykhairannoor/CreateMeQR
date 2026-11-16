@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Booking",
     "file": "Fil",
-    "scanbarcode": "Stregkodescanner"
+    "scanbarcode": "Stregkodescanner",
+    "bulk": "Bulk QR & stregkode"
   },
   "form": {
     "enterUrl": "Indtast dit websteds URL",
@@ -129,7 +130,8 @@
     "readyTitle": "Gratis QR Kode Generator Online",
     "readyDesc": "Lav QR Koder med Logo & Farve - Uden Registrering, Ubegrænset",
     "clientSide": "Klient-side genereret",
-    "noServer": "Ingen data sendt til serveren"
+    "noServer": "Ingen data sendt til serveren",
+    "printStudioBtn": "Udskriv / A4 klistermærkeark PDF"
   },
   "footer": {
     "privacy": "Privatlivspolitik",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Gratis stregkodegenerator online - Opret 1D stregkoder",
       "desc": "Generer professionelle 1D-stregkoder med det samme. Understøttelse af Code-128, UPC, EAN, ITF-14 og mere. Gratis, sikker og klar til download i højopløselig PNG."
-    }
+    },
+    "printStudioBtn": "Udskriv / A4 klistermærkeark PDF"
   },
   "nav": {
     "allTools": "Alle værktøjer",
@@ -1160,7 +1163,9 @@
     "catMedia": "Medier og underholdning",
     "catData": "Filer og data",
     "generator": "ALLE QR-VÆRKTØJER",
-    "barcode": "Stregkode maker"
+    "barcode": "Stregkode maker",
+    "bulk": "Bulk Batch",
+    "bulkDesc": "CSV / Excel til ZIP"
   },
   "contact": {
     "title": "Kontakt os",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Scan stregkode online",
       "seoDesc": "Scan 1D- og 2D-stregkoder direkte fra dit kamera eller lokale billedfiler sikkert i din browserhukommelse med hurtig privat afkodning på klientsiden.",
       "desc": "Scan 1D- og 2D-stregkoder direkte fra dit kamera eller lokale billedfiler sikkert i din browserhukommelse med hurtig privat afkodning på klientsiden."
+    },
+    "bulk": {
+      "seoTitle": "Bulk QR & stregkodegenerator",
+      "heroTitle": "Bulk QR-kode og stregkodegenerator",
+      "seoDesc": "Generer partier af brugerdefinerede QR-koder og standardstregkoder samtidigt fra regnearks CSV-data med øjeblikkelig ZIP-eksport og udskrivning af A4-mærkatark.",
+      "desc": "Generer partier af brugerdefinerede QR-koder og standardstregkoder samtidigt fra regnearks CSV-data med øjeblikkelig ZIP-eksport og udskrivning af A4-mærkatark."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Har du brug for bulk QR-koder? Prøv vores Pro Bulk Batch Engine med CSV-import og øjeblikkelig ZIP-eksport.",
+    "bulkBannerLink": "Gå til Bulk Generator →"
+  },
+  "bulk": {
+    "badge": "Pro Batch Engine • 100 % klientside",
+    "heroTitle": "Bulk QR-kode og stregkodegenerator",
+    "heroSubtitle": "Importer regneark eller CSV-filer og generer hundredvis eller tusindvis af QR-koder og stregkoder i høj opløsning på få sekunder. Nul datasporing - hver kode kompileres direkte i din browserhukommelse.",
+    "featPrivate": "100 % privat (ingen serveruploads)",
+    "featZip": "Øjeblikkelig ZIP-eksport",
+    "featPrint": "A4 klistermærkeark PDF print",
+    "step1Title": "Angiv dine data (CSV eller regneark)",
+    "templateCsv": "Skabelon.csv",
+    "loadSample": "Indlæs prøvedata",
+    "tabUpload": "Upload CSV/TSV-fil",
+    "tabPaste": "Indsæt fra Excel / Google Sheets",
+    "dropTitle": "Vælg eller træk og slip CSV/TSV-fil",
+    "dropLoaded": "Indlæst: {{filnavn}}",
+    "dropDesc": "Understøtter komma-, semikolon- eller tabulatorseparerede filer. Ingen filstørrelsesbegrænsninger.",
+    "pastePlaceholder": "Indsæt rækker her (f.eks. fra Excel eller Google Sheets)...",
+    "detectedSummary": "Registrerede ___rækker___ rækker og {{kolonner}} kolonner",
+    "colData": "Data / URL-kolonne:",
+    "colLabel": "Etiket/filnavn:",
+    "colLabelNone": "Ingen (automatisk nummerering)",
+    "moreRecords": "+ {{antal}} flere poster vil blive behandlet.",
+    "step2Title": "Konfigurer kodestil og format",
+    "codeType": "Kodetype",
+    "typeQr": "QR-kode (2D)",
+    "typeBarcode": "Stregkode (1D)",
+    "dotPattern": "Prik mønster",
+    "patternSquare": "Klassisk firkant",
+    "patternRounded": "Glat afrundet",
+    "patternDots": "Moderne prikker",
+    "eccLevel": "Fejlkorrektionsniveau",
+    "eccL": "L — 7 % Restaurering",
+    "eccM": "M — 15% Standard",
+    "eccQ": "Q — 25 % høj pålidelighed",
+    "eccH": "H — 30 % maksimal robusthed",
+    "barcodeStd": "Stregkode standard",
+    "exportImgFormat": "Eksporter billedformat",
+    "formatPng": "PNG (Høj DPI)",
+    "formatSvg": "SVG (vektor)",
+    "step3Title": "Generer og download",
+    "readySummary": "Klar til at generere {{count}}-koder",
+    "asyncNotice": "Behandles asynkront i hukommelsen. Ingen netværksbåndbredde forbrugt.",
+    "btnGenerating": "Genererer ({{procent}}%)",
+    "btnGenerate": "Generer {{_count_}} koder",
+    "progressSummary": "Behandlede {{aktuelle}} af ___i alt___ varer...",
+    "successCompile": "Succesfuldt kompileret {{count}} koder i browserhukommelsen!",
+    "btnPrintPdf": "Udskriv A4-klistermærkeark PDF",
+    "btnDownloadZip": "Download alle ({{count}} items) som ZIP",
+    "btnCompressing": "Komprimerer ZIP...",
+    "galleryTitle": "Genereret kodegalleri",
+    "btnSave": "Spare",
+    "galleryLimitNotice": "Viser de første 48 varer. Alle {{count}} elementer vil blive inkluderet i den downloadede ZIP."
+  },
+  "printStudio": {
+    "modalTitle": "Print & Sticker Sheet Studio",
+    "proBadge": "Pro motor",
+    "modalSubtitle": "100 % Client-Side vektor layout til A4 & Letter Avery / Tom & Jerry klistermærkeark",
+    "presetLabel": "Forudindstillet klistermærkeark",
+    "paperFormat": "Papirformat:",
+    "gridStructure": "Gitterstruktur:",
+    "colsRowsSummary": "{{kolonner}} kolonner × ___rækker___ rækker ({{total}}/ark)",
+    "cols": "Kolonner:",
+    "rows": "Rækker:",
+    "labelWidth": "Etiketbredde (mm):",
+    "labelHeight": "Etikethøjde (mm):",
+    "allocation": "Klistermærketildeling",
+    "quantity": "Antal til udskrivning:",
+    "stickersCount": "___tæl___ klistermærker",
+    "fill1Page": "Udfyld 1 side ({{antal}})",
+    "fill2Pages": "Fyld 2 sider ({{antal}})",
+    "bulkSequencing": "Sekvensering af {{antal}} elementer fra masseliste på tværs af {{sider}} side(r).",
+    "skipPeels": "Spring tidligere skrællede klistermærker over:",
+    "skipSlots": "{{count}} slots",
+    "skipDesc": "Spar papir ved at genbruge delvist brugte klistermærkeark!",
+    "guidesAndInks": "Udskriv guider og blæk",
+    "k100": "K: 100 % sort",
+    "k100Desc": "Sprød monokrom",
+    "cropMarks": "Skæremærker",
+    "cropMarksDesc": "Guillotine guider",
+    "dottedOutlines": "Stiplede omrids",
+    "dottedDesc": "Etiket grænse",
+    "labelTitle": "Etiket titel",
+    "labelTitleDesc": "Øverste billedtekst",
+    "labelHeading": "Etiketoverskrift:",
+    "labelPlaceholder": "f.eks. Scan efter menu / tabel 1",
+    "pageOf": "Side {{aktuel}} af {{total}}",
+    "totalStickers": "Samlet antal klistermærker: {{antal}} ({{sider}} sider)",
+    "directPrint": "Direkte print",
+    "downloadPdf": "Download printbar PDF",
+    "generatingPdf": "Genererer PDF...",
+    "emptySlot": "Tom"
   }
 }

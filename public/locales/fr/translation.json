@@ -36,7 +36,8 @@
     "amazon": "Amazone",
     "booking": "Réservation",
     "file": "Fichier",
-    "scanbarcode": "Lecteur de codes à barres"
+    "scanbarcode": "Lecteur de codes à barres",
+    "bulk": "QR et codes-barres en masse"
   },
   "form": {
     "enterUrl": "Entrez l'URL de votre site",
@@ -129,7 +130,8 @@
     "readyTitle": "Prêt à générer",
     "readyDesc": "Remplissez vos détails à gauche et cliquez sur \"Générer le code QR\" pour voir l'aperçu.",
     "clientSide": "Généré côté navigateur",
-    "noServer": "Aucune donnée envoyée au serveur"
+    "noServer": "Aucune donnée envoyée au serveur",
+    "printStudioBtn": "Imprimer / Feuille d'autocollants A4 PDF"
   },
   "footer": {
     "privacy": "Politique de confidentialité",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Générateur de codes-barres gratuit en ligne - Créez des codes-barres 1D",
       "desc": "Générez instantanément des codes-barres 1D professionnels. Prise en charge du Code-128, UPC, EAN, ITF-14 et plus encore. Gratuit, sécurisé et prêt à être téléchargé en PNG haute résolution."
-    }
+    },
+    "printStudioBtn": "Imprimer / Feuille d'autocollants A4 PDF"
   },
   "nav": {
     "allTools": "Tous les outils",
@@ -1160,7 +1163,9 @@
     "catMedia": "Médias et divertissement",
     "catData": "Fichiers et données",
     "generator": "TOUS LES OUTILS QR",
-    "barcode": "Créateur de codes-barres"
+    "barcode": "Créateur de codes-barres",
+    "bulk": "Lot en vrac",
+    "bulkDesc": "CSV / Excel vers ZIP"
   },
   "contact": {
     "title": "Contactez-nous",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Scanner le code-barres en ligne",
       "seoDesc": "Scannez les codes-barres 1D et 2D directement à partir de votre appareil photo ou de fichiers d'images locaux en toute sécurité dans la mémoire de votre navigateur avec un décodage rapide et privé côté client.",
       "desc": "Scannez les codes-barres 1D et 2D directement à partir de votre appareil photo ou de fichiers d'images locaux en toute sécurité dans la mémoire de votre navigateur avec un décodage rapide et privé côté client."
+    },
+    "bulk": {
+      "seoTitle": "Générateur de QR et de codes-barres en masse",
+      "heroTitle": "Générateur de codes QR et de codes-barres en masse",
+      "seoDesc": "Générez simultanément des lots de codes QR personnalisés et de codes-barres standard à partir des données CSV d'une feuille de calcul avec exportation ZIP instantanée et impression de feuilles d'autocollants A4.",
+      "desc": "Générez simultanément des lots de codes QR personnalisés et de codes-barres standard à partir des données CSV d'une feuille de calcul avec exportation ZIP instantanée et impression de feuilles d'autocollants A4."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Besoin de codes QR en masse ? Essayez notre moteur Pro Bulk Batch avec importation CSV et exportation ZIP instantanée.",
+    "bulkBannerLink": "Accédez au générateur de masse →"
+  },
+  "bulk": {
+    "badge": "Moteur Batch Pro • 100 % côté client",
+    "heroTitle": "Générateur de codes QR et de codes-barres en masse",
+    "heroSubtitle": "Importez des feuilles de calcul ou des fichiers CSV et générez des centaines ou des milliers de codes QR et de codes-barres haute résolution en quelques secondes. Zéro suivi de données : chaque code est compilé directement dans la mémoire de votre navigateur.",
+    "featPrivate": "100 % privé (aucun téléchargement sur le serveur)",
+    "featZip": "Exportation ZIP instantanée",
+    "featPrint": "Feuille d’autocollants A4 Impression PDF",
+    "step1Title": "Fournissez vos données (CSV ou feuilles de calcul)",
+    "templateCsv": "Modèle.csv",
+    "loadSample": "Charger des exemples de données",
+    "tabUpload": "Télécharger un fichier CSV/TSV",
+    "tabPaste": "Coller depuis Excel/Google Sheets",
+    "dropTitle": "Choisissez ou glissez-déposez un fichier CSV / TSV",
+    "dropLoaded": "Chargé : {{fileName}}",
+    "dropDesc": "Prend en charge les fichiers délimités par des virgules, des points-virgules ou des tabulations. Aucune limite de taille de fichier.",
+    "pastePlaceholder": "Collez les lignes ici (par exemple à partir d'Excel ou de Google Sheets)...",
+    "detectedSummary": "{{rows}} lignes et {{cols}} colonnes détectées",
+    "colData": "Colonne Données/URL :",
+    "colLabel": "Étiquette/Nom du fichier :",
+    "colLabelNone": "Aucun (numérotation automatique)",
+    "moreRecords": "+ {{count}} enregistrements supplémentaires seront traités.",
+    "step2Title": "Configurer le style et le format du code",
+    "codeType": "Type de code",
+    "typeQr": "Code QR (2D)",
+    "typeBarcode": "Code à barres (1D)",
+    "dotPattern": "Motif de points",
+    "patternSquare": "Carré Classique",
+    "patternRounded": "Lisse Arrondi",
+    "patternDots": "Points modernes",
+    "eccLevel": "Niveau de correction des erreurs",
+    "eccL": "L — 7% Restauration",
+    "eccM": "M – 15 % Norme",
+    "eccQ": "Q — 25 % de fiabilité élevée",
+    "eccH": "H — 30 % de robustesse maximale",
+    "barcodeStd": "Norme de code à barres",
+    "exportImgFormat": "Format d'image d'exportation",
+    "formatPng": "PNG (haute résolution)",
+    "formatSvg": "SVG (Vecteur)",
+    "step3Title": "Générer et télécharger",
+    "readySummary": "Prêt à générer {{count}} codes",
+    "asyncNotice": "Traité de manière asynchrone en mémoire. Aucune bande passante réseau consommée.",
+    "btnGenerating": "Génération ({{pourcent}}%)",
+    "btnGenerate": "Générer {{count}} codes",
+    "progressSummary": "{{current}} traité sur {{total}} éléments...",
+    "successCompile": "Compilation réussie de {{count}} codes dans la mémoire du navigateur !",
+    "btnPrintPdf": "Imprimer une feuille d'autocollants A4 PDF",
+    "btnDownloadZip": "Téléchargez tous ({{count}} éléments) au format ZIP",
+    "btnCompressing": "Compression du ZIP...",
+    "galleryTitle": "Galerie de codes générés",
+    "btnSave": "Sauvegarder",
+    "galleryLimitNotice": "Affichage des 48 premiers éléments. Tous les éléments {{count}} seront inclus dans le ZIP téléchargé."
+  },
+  "printStudio": {
+    "modalTitle": "Studio de feuilles d’impression et d’autocollants",
+    "proBadge": "Moteur professionnel",
+    "modalSubtitle": "Disposition vectorielle 100 % côté client pour les feuilles d'autocollants A4 et Lettre Avery / Tom & Jerry",
+    "presetLabel": "Feuille d’autocollants prédéfinie",
+    "paperFormat": "Format papier :",
+    "gridStructure": "Structure de la grille :",
+    "colsRowsSummary": "{{cols}} colonnes × {{rows}} lignes ({{total}}/feuille)",
+    "cols": "Colonnes :",
+    "rows": "Lignes :",
+    "labelWidth": "Largeur de l'étiquette (mm) :",
+    "labelHeight": "Hauteur de l'étiquette (mm) :",
+    "allocation": "Attribution des autocollants",
+    "quantity": "Quantité à imprimer :",
+    "stickersCount": "{{count}} autocollants",
+    "fill1Page": "Remplir 1 page ({{count}})",
+    "fill2Pages": "Remplir 2 pages ({{count}})",
+    "bulkSequencing": "Séquencement de {{count}} éléments de la liste groupée sur {{pages}} page(s).",
+    "skipPeels": "Ignorer les autocollants précédemment décollés :",
+    "skipSlots": "{{count}} emplacements",
+    "skipDesc": "Économisez du papier en réutilisant les feuilles d’autocollants partiellement utilisées !",
+    "guidesAndInks": "Guides d'impression et encres",
+    "k100": "K:100% noir",
+    "k100Desc": "Monochrome net",
+    "cropMarks": "Marques de coupe",
+    "cropMarksDesc": "Guides-guillotines",
+    "dottedOutlines": "Contours en pointillés",
+    "dottedDesc": "Limite de l'étiquette",
+    "labelTitle": "Titre de l'étiquette",
+    "labelTitleDesc": "Légende du haut",
+    "labelHeading": "Texte du titre de l'étiquette :",
+    "labelPlaceholder": "par ex. Rechercher le menu / Tableau 1",
+    "pageOf": "Page {{actuelle}} sur {{total}}",
+    "totalStickers": "Nombre total d'autocollants : {{count}} ({{pages}} pages)",
+    "directPrint": "Impression directe",
+    "downloadPdf": "Télécharger le PDF imprimable",
+    "generatingPdf": "Génération de PDF...",
+    "emptySlot": "Vide"
   }
 }

@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Pag-book",
     "file": "File",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Barcode Scanner",
+    "bulk": "Maramihang QR at Barcode"
   },
   "form": {
     "enterUrl": "Ilagay ang URL ng iyong website",
@@ -129,7 +130,8 @@
     "readyTitle": "Libreng Online QR Code Generator",
     "readyDesc": "Gumawa ng QR Code na may Logo at Kulay - Walang Signup, Walang Limitasyon",
     "clientSide": "Nabuo sa panig ng kliyente",
-    "noServer": "Walang data na ipinadala sa server"
+    "noServer": "Walang data na ipinadala sa server",
+    "printStudioBtn": "Print / A4 Sticker Sheet PDF"
   },
   "footer": {
     "privacy": "Patakaran sa Privacy",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Libreng Barcode Generator Online - Lumikha ng 1D Barcodes",
       "desc": "Bumuo ng mga propesyonal na 1D barcode kaagad. Suporta para sa Code-128, UPC, EAN, ITF-14, at higit pa. Libre, secure, at handang i-download sa high-res na PNG."
-    }
+    },
+    "printStudioBtn": "Print / A4 Sticker Sheet PDF"
   },
   "nav": {
     "allTools": "Lahat ng Tools",
@@ -1160,7 +1163,9 @@
     "catMedia": "Media at Libangan",
     "catData": "Mga File at Data",
     "generator": "LAHAT NG QR TOOLS",
-    "barcode": "Tagagawa ng Barcode"
+    "barcode": "Tagagawa ng Barcode",
+    "bulk": "Bulk Batch",
+    "bulkDesc": "CSV / Excel sa ZIP"
   },
   "contact": {
     "title": "Makipag-ugnayan sa Amin",
@@ -1533,6 +1538,12 @@
       "seoTitle": "I-scan ang Barcode Online",
       "seoDesc": "I-scan ang mga 1D at 2D na barcode nang direkta mula sa iyong camera o mga lokal na file ng imahe nang secure sa memorya ng iyong browser na may mabilis, pribadong client-side decoding.",
       "desc": "I-scan ang mga 1D at 2D na barcode nang direkta mula sa iyong camera o mga lokal na file ng imahe nang secure sa memorya ng iyong browser na may mabilis, pribadong client-side decoding."
+    },
+    "bulk": {
+      "seoTitle": "Bulk QR at Barcode Generator",
+      "heroTitle": "Bulk QR Code at Barcode Generator",
+      "seoDesc": "Bumuo ng mga batch ng custom na QR code at karaniwang barcode nang sabay-sabay mula sa spreadsheet CSV data na may instant ZIP export at A4 sticker sheet printing.",
+      "desc": "Bumuo ng mga batch ng custom na QR code at karaniwang barcode nang sabay-sabay mula sa spreadsheet CSV data na may instant ZIP export at A4 sticker sheet printing."
     }
   },
   "rating": {
@@ -1733,5 +1744,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Kailangan ng maramihang QR code? Subukan ang aming Pro Bulk Batch Engine na may CSV import at instant ZIP export.",
+    "bulkBannerLink": "Pumunta sa Bulk Generator →"
+  },
+  "bulk": {
+    "badge": "Pro Batch Engine • 100% Client-Side",
+    "heroTitle": "Bulk QR Code at Barcode Generator",
+    "heroSubtitle": "Mag-import ng mga spreadsheet o CSV file at bumuo ng daan-daan o libu-libong mga QR code at barcode na may mataas na resolution sa ilang segundo. Zero data tracking — bawat code ay direktang pinagsama-sama sa memorya ng iyong browser.",
+    "featPrivate": "100% Pribado (Walang Mga Pag-upload ng Server)",
+    "featZip": "Instant ZIP Export",
+    "featPrint": "A4 Sticker Sheet PDF Print",
+    "step1Title": "Ibigay ang Iyong Data (CSV o Spreadsheets)",
+    "templateCsv": "Template.csv",
+    "loadSample": "Mag-load ng Sample na Data",
+    "tabUpload": "Mag-upload ng CSV / TSV File",
+    "tabPaste": "I-paste Mula sa Excel / Google Sheets",
+    "dropTitle": "Pumili o I-drag at I-drop ang CSV / TSV File",
+    "dropLoaded": "Na-load: {{fileName}}",
+    "dropDesc": "Sinusuportahan ang Comma, Semicolon, o Tab delimited na mga file. Walang mga limitasyon sa laki ng file.",
+    "pastePlaceholder": "I-paste ang mga row dito (hal. mula sa Excel o Google Sheets)...",
+    "detectedSummary": "Nakakita ng {{rows}} row at {{cols}} column",
+    "colData": "Column ng Data / URL:",
+    "colLabel": "Label / Filename:",
+    "colLabelNone": "Wala (Auto Numbering)",
+    "moreRecords": "+ {{bilang}} pang mga tala ang ipoproseso.",
+    "step2Title": "I-configure ang Estilo at Format ng Code",
+    "codeType": "Uri ng Code",
+    "typeQr": "QR Code (2D)",
+    "typeBarcode": "Barcode (1D)",
+    "dotPattern": "Pattern ng Tuldok",
+    "patternSquare": "Classic Square",
+    "patternRounded": "Makinis na Bilugan",
+    "patternDots": "Mga Modernong Dots",
+    "eccLevel": "Antas ng Pagwawasto ng Error",
+    "eccL": "L — 7% Pagpapanumbalik",
+    "eccM": "M — 15% na Pamantayan",
+    "eccQ": "Q — 25% Mataas na Pagkakaaasahan",
+    "eccH": "H — 30% Maximum Ruggedness",
+    "barcodeStd": "Pamantayan ng Barcode",
+    "exportImgFormat": "I-export ang Format ng Larawan",
+    "formatPng": "PNG (Mataas na DPI)",
+    "formatSvg": "SVG (Vector)",
+    "step3Title": "Bumuo at Mag-download",
+    "readySummary": "Handa nang bumuo ng {{count}} code",
+    "asyncNotice": "Naproseso nang asynchronous sa memorya. Walang nagamit na bandwidth ng network.",
+    "btnGenerating": "Bumubuo ({{percent}}%)",
+    "btnGenerate": "Bumuo ng {{count}} Code",
+    "progressSummary": "Naproseso ang {{kasalukuyang}} ng {{kabuuang}} mga item...",
+    "successCompile": "Matagumpay na naipon ang {{count}} code sa memorya ng browser!",
+    "btnPrintPdf": "I-print ang A4 Sticker Sheet PDF",
+    "btnDownloadZip": "I-download ang Lahat ({{count}} item) bilang ZIP",
+    "btnCompressing": "Kino-compress ang ZIP...",
+    "galleryTitle": "Binuo na Code Gallery",
+    "btnSave": "I-save",
+    "galleryLimitNotice": "Ipinapakita ang unang 48 aytem. Lahat ng {{count}} item ay isasama sa na-download na ZIP."
+  },
+  "printStudio": {
+    "modalTitle": "Print & Sticker Sheet Studio",
+    "proBadge": "Pro Engine",
+    "modalSubtitle": "100% Client-Side vector layout para sa A4 at Letter Avery / Tom & Jerry sticker sheet",
+    "presetLabel": "Preset ng Sticker Sheet",
+    "paperFormat": "Format ng Papel:",
+    "gridStructure": "Istraktura ng Grid:",
+    "colsRowsSummary": "{{cols}} column × {{rows}} row ({{total}}/sheet)",
+    "cols": "Mga hanay:",
+    "rows": "Mga hilera:",
+    "labelWidth": "Lapad ng Label (mm):",
+    "labelHeight": "Taas ng Label (mm):",
+    "allocation": "Paglalaan ng Sticker",
+    "quantity": "Dami ng Ipi-print:",
+    "stickersCount": "{{magbilang}} ng mga sticker",
+    "fill1Page": "Punan ang 1 Pahina ({{bilang}})",
+    "fill2Pages": "Punan ang 2 Pahina ({{bilang}})",
+    "bulkSequencing": "Pagsusunod-sunod ng {{bilang}}na item mula sa maramihang listahan sa {{pahina}}(mga) pahina.",
+    "skipPeels": "Laktawan ang Mga Naunang Binalatan na Sticker:",
+    "skipSlots": "{{bilang}}na puwang",
+    "skipDesc": "Makatipid ng papel sa pamamagitan ng muling paggamit ng mga sticker sheet na bahagyang ginagamit!",
+    "guidesAndInks": "Mga Gabay sa Pag-print at Mga Tinta",
+    "k100": "K:100% Itim",
+    "k100Desc": "Malutong na monochrome",
+    "cropMarks": "Mga marka ng pananim",
+    "cropMarksDesc": "Mga gabay sa guillotine",
+    "dottedOutlines": "Mga may tuldok na balangkas",
+    "dottedDesc": "Hangganan ng label",
+    "labelTitle": "Pamagat ng Label",
+    "labelTitleDesc": "Nangungunang caption",
+    "labelHeading": "Teksto ng Pamagat ng Label:",
+    "labelPlaceholder": "hal. I-scan para sa Menu / Talahanayan 1",
+    "pageOf": "Pahina {{kasalukuyan}} ng {{kabuuan}}",
+    "totalStickers": "Kabuuang mga sticker: {{bilang}} ({{pahina}} pahina)",
+    "directPrint": "Direktang Pag-print",
+    "downloadPdf": "I-download ang Napi-print na PDF",
+    "generatingPdf": "Bumubuo ng PDF...",
+    "emptySlot": "Walang laman"
   }
 }

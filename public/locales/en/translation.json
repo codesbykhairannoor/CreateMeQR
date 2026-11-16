@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Booking",
     "file": "File",
-    "scanbarcode": "Barcode Scanner"
+    "scanbarcode": "Barcode Scanner",
+    "bulk": "Bulk QR & Barcode"
   },
   "form": {
     "enterUrl": "Enter your website URL",
@@ -129,7 +130,8 @@
     "readyTitle": "Ready to Generate",
     "readyDesc": "Fill in your details on the left and click \"Generate QR Code\" to see your preview here.",
     "clientSide": "Client-side generated",
-    "noServer": "No data sent to server"
+    "noServer": "No data sent to server",
+    "printStudioBtn": "Print / A4 Sticker Sheet PDF"
   },
   "footer": {
     "privacy": "Privacy Policy",
@@ -1126,7 +1128,8 @@
     "seo": {
       "title": "Free Barcode Generator Online - Create 1D Barcodes",
       "desc": "Generate professional 1D barcodes instantly. Support for Code-128, UPC, EAN, ITF-14, and more. Free, secure, and ready to download in high-res PNG."
-    }
+    },
+    "printStudioBtn": "Print / A4 Sticker Sheet PDF"
   },
   "nav": {
     "allTools": "All Tools",
@@ -1152,7 +1155,9 @@
     "catMedia": "Media & Entertainment",
     "catData": "Files & Data",
     "generator": "ALL QR TOOLS",
-    "barcode": "Barcode Maker"
+    "barcode": "Barcode Maker",
+    "bulk": "Bulk Batch",
+    "bulkDesc": "CSV / Excel to ZIP"
   },
   "contact": {
     "title": "Contact Us",
@@ -1525,6 +1530,12 @@
       "seoTitle": "Scan Barcode Online",
       "seoDesc": "Scan 1D and 2D barcodes directly from your camera or local image files securely in your browser memory with fast, private client-side decoding.",
       "desc": "Scan 1D and 2D barcodes directly from your camera or local image files securely in your browser memory with fast, private client-side decoding."
+    },
+    "bulk": {
+      "seoTitle": "Bulk QR & Barcode Generator",
+      "heroTitle": "Bulk QR Code & Barcode Generator",
+      "seoDesc": "Generate batches of custom QR codes and standard barcodes simultaneously from spreadsheet CSV data with instant ZIP export and A4 sticker sheet printing.",
+      "desc": "Generate batches of custom QR codes and standard barcodes simultaneously from spreadsheet CSV data with instant ZIP export and A4 sticker sheet printing."
     }
   },
   "rating": {
@@ -1747,5 +1758,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Need bulk QR codes? Try our Pro Bulk Batch Engine with CSV import and instant ZIP export.",
+    "bulkBannerLink": "Go to Bulk Generator →"
+  },
+  "bulk": {
+    "badge": "Pro Batch Engine • 100% Client-Side",
+    "heroTitle": "Bulk QR Code & Barcode Generator",
+    "heroSubtitle": "Import spreadsheets or CSV files and generate hundreds or thousands of high-resolution QR codes and barcodes in seconds. Zero data tracking — every code is compiled directly in your browser memory.",
+    "featPrivate": "100% Private (No Server Uploads)",
+    "featZip": "Instant ZIP Export",
+    "featPrint": "A4 Sticker Sheet PDF Print",
+    "step1Title": "Provide Your Data (CSV or Spreadsheets)",
+    "templateCsv": "Template.csv",
+    "loadSample": "Load Sample Data",
+    "tabUpload": "Upload CSV / TSV File",
+    "tabPaste": "Paste From Excel / Google Sheets",
+    "dropTitle": "Choose or Drag & Drop CSV / TSV File",
+    "dropLoaded": "Loaded: {{fileName}}",
+    "dropDesc": "Supports Comma, Semicolon, or Tab delimited files. No file size limits.",
+    "pastePlaceholder": "Paste rows here (e.g. from Excel or Google Sheets)...",
+    "detectedSummary": "Detected {{rows}} rows and {{cols}} columns",
+    "colData": "Data / URL Column:",
+    "colLabel": "Label / Filename:",
+    "colLabelNone": "None (Auto Numbering)",
+    "moreRecords": "+ {{count}} more records will be processed.",
+    "step2Title": "Configure Code Style & Format",
+    "codeType": "Code Type",
+    "typeQr": "QR Code (2D)",
+    "typeBarcode": "Barcode (1D)",
+    "dotPattern": "Dot Pattern",
+    "patternSquare": "Classic Square",
+    "patternRounded": "Smooth Rounded",
+    "patternDots": "Modern Dots",
+    "eccLevel": "Error Correction Level",
+    "eccL": "L — 7% Restoration",
+    "eccM": "M — 15% Standard",
+    "eccQ": "Q — 25% High Reliability",
+    "eccH": "H — 30% Maximum Ruggedness",
+    "barcodeStd": "Barcode Standard",
+    "exportImgFormat": "Export Image Format",
+    "formatPng": "PNG (High DPI)",
+    "formatSvg": "SVG (Vector)",
+    "step3Title": "Generate & Download",
+    "readySummary": "Ready to generate {{count}} codes",
+    "asyncNotice": "Processed asynchronously in memory. No network bandwidth consumed.",
+    "btnGenerating": "Generating ({{percent}}%)",
+    "btnGenerate": "Generate {{count}} Codes",
+    "progressSummary": "Processed {{current}} of {{total}} items...",
+    "successCompile": "Successfully compiled {{count}} codes in browser memory!",
+    "btnPrintPdf": "Print A4 Sticker Sheet PDF",
+    "btnDownloadZip": "Download All ({{count}} items) as ZIP",
+    "btnCompressing": "Compressing ZIP...",
+    "galleryTitle": "Generated Code Gallery",
+    "btnSave": "Save",
+    "galleryLimitNotice": "Showing first 48 items. All {{count}} items will be included in the downloaded ZIP."
+  },
+  "printStudio": {
+    "modalTitle": "Print & Sticker Sheet Studio",
+    "proBadge": "Pro Engine",
+    "modalSubtitle": "100% Client-Side vector layout for A4 & Letter Avery / Tom & Jerry sticker sheets",
+    "presetLabel": "Sticker Sheet Preset",
+    "paperFormat": "Paper Format:",
+    "gridStructure": "Grid Structure:",
+    "colsRowsSummary": "{{cols}} columns × {{rows}} rows ({{total}}/sheet)",
+    "cols": "Columns:",
+    "rows": "Rows:",
+    "labelWidth": "Label Width (mm):",
+    "labelHeight": "Label Height (mm):",
+    "allocation": "Sticker Allocation",
+    "quantity": "Quantity to Print:",
+    "stickersCount": "{{count}} stickers",
+    "fill1Page": "Fill 1 Page ({{count}})",
+    "fill2Pages": "Fill 2 Pages ({{count}})",
+    "bulkSequencing": "Sequencing {{count}} items from bulk list across {{pages}} page(s).",
+    "skipPeels": "Skip Previously Peeled Stickers:",
+    "skipSlots": "{{count}} slots",
+    "skipDesc": "Save paper by reusing partially used sticker sheets!",
+    "guidesAndInks": "Print Guides & Inks",
+    "k100": "K:100% Black",
+    "k100Desc": "Crisp monochrome",
+    "cropMarks": "Crop Marks",
+    "cropMarksDesc": "Guillotine guides",
+    "dottedOutlines": "Dotted Outlines",
+    "dottedDesc": "Label boundary",
+    "labelTitle": "Label Title",
+    "labelTitleDesc": "Top caption",
+    "labelHeading": "Label Heading Text:",
+    "labelPlaceholder": "e.g. Scan for Menu / Table 1",
+    "pageOf": "Page {{current}} of {{total}}",
+    "totalStickers": "Total stickers: {{count}} ({{pages}} pages)",
+    "directPrint": "Direct Print",
+    "downloadPdf": "Download Printable PDF",
+    "generatingPdf": "Generating PDF...",
+    "emptySlot": "Empty"
   }
 }

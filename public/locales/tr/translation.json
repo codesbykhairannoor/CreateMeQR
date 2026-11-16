@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Rezervasyon",
     "file": "Dosya",
-    "scanbarcode": "Barkod Tarayıcı"
+    "scanbarcode": "Barkod Tarayıcı",
+    "bulk": "Toplu QR ve Barkod"
   },
   "form": {
     "enterUrl": "Web sitenizin URL'sini girin",
@@ -129,7 +130,8 @@
     "readyTitle": "Ücretsiz Çevrimiçi QR Kod Oluşturucu",
     "readyDesc": "Logo ve Renkli QR Kodlar Üretin - Kayıt Yok, Sınırsız ve Bedava",
     "clientSide": "İstemci tarafında oluşturuldu",
-    "noServer": "Sunucuya veri gönderilmedi"
+    "noServer": "Sunucuya veri gönderilmedi",
+    "printStudioBtn": "Yazdır / A4 Çıkartma Sayfası PDF"
   },
   "footer": {
     "privacy": "Gizlilik Politikası",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Ücretsiz Çevrimiçi Barkod Oluşturucu - 1D Barkodlar Oluşturun",
       "desc": "Anında profesyonel 1D barkodlar oluşturun. Code-128, UPC, EAN, ITF-14 ve daha fazlası için destek. Ücretsiz, güvenli ve yüksek çözünürlüklü PNG formatında indirmeye hazır."
-    }
+    },
+    "printStudioBtn": "Yazdır / A4 Çıkartma Sayfası PDF"
   },
   "nav": {
     "allTools": "Tüm Araçlar",
@@ -1160,7 +1163,9 @@
     "catMedia": "Medya ve Eğlence",
     "catData": "Dosyalar ve Veriler",
     "generator": "TÜM QR ARAÇLARI",
-    "barcode": "Barkod Oluşturucu"
+    "barcode": "Barkod Oluşturucu",
+    "bulk": "Toplu Toplu",
+    "bulkDesc": "CSV / Excel'den ZIP'e"
   },
   "contact": {
     "title": "Bize Ulaşın",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Barkodu Çevrimiçi Tarayın",
       "seoDesc": "Hızlı, özel istemci tarafı kod çözme ile 1D ve 2D barkodları doğrudan kameranızdan veya yerel görüntü dosyalarınızdan tarayıcınızın belleğinde güvenli bir şekilde tarayın.",
       "desc": "Hızlı, özel istemci tarafı kod çözme ile 1D ve 2D barkodları doğrudan kameranızdan veya yerel görüntü dosyalarınızdan tarayıcınızın belleğinde güvenli bir şekilde tarayın."
+    },
+    "bulk": {
+      "seoTitle": "Toplu QR ve Barkod Oluşturucu",
+      "heroTitle": "Toplu QR Kodu ve Barkod Oluşturucu",
+      "seoDesc": "Anında ZIP dışa aktarma ve A4 etiket sayfası yazdırma özellikleriyle elektronik tablo CSV verilerinden aynı anda özel QR kodları ve standart barkodlardan oluşan gruplar oluşturun.",
+      "desc": "Anında ZIP dışa aktarma ve A4 etiket sayfası yazdırma özellikleriyle elektronik tablo CSV verilerinden aynı anda özel QR kodları ve standart barkodlardan oluşan gruplar oluşturun."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Toplu QR kodlarına mı ihtiyacınız var? CSV içe aktarma ve anında ZIP dışa aktarma özellikli Pro Toplu Toplu Motorumuzu deneyin.",
+    "bulkBannerLink": "Toplu Oluşturucuya Git →"
+  },
+  "bulk": {
+    "badge": "Pro Toplu Motor • %100 İstemci Tarafı",
+    "heroTitle": "Toplu QR Kodu ve Barkod Oluşturucu",
+    "heroSubtitle": "Elektronik tabloları veya CSV dosyalarını içe aktarın ve saniyeler içinde yüzlerce veya binlerce yüksek çözünürlüklü QR kodu ve barkod oluşturun. Sıfır veri izleme — her kod doğrudan tarayıcınızın belleğinde derlenir.",
+    "featPrivate": "%100 Özel (Sunucuya Yükleme Yok)",
+    "featZip": "Anında ZIP Dışa Aktarımı",
+    "featPrint": "A4 Etiket Sayfası PDF Yazdır",
+    "step1Title": "Verilerinizi Sağlayın (CSV veya E-Tablolar)",
+    "templateCsv": "Şablon.csv",
+    "loadSample": "Örnek Verileri Yükle",
+    "tabUpload": "CSV / TSV Dosyasını Yükle",
+    "tabPaste": "Excel'den / Google E-Tablolardan Yapıştır",
+    "dropTitle": "CSV / TSV Dosyasını Seçin veya Sürükleyip Bırakın",
+    "dropLoaded": "Yüklendi: {{fileName}}",
+    "dropDesc": "Virgül, Noktalı Virgül veya Sekmeyle ayrılmış dosyaları destekler. Dosya boyutu sınırı yok.",
+    "pastePlaceholder": "Satırları buraya yapıştırın (ör. Excel veya Google E-Tablolardan)...",
+    "detectedSummary": "{{rows}} satır ve {{cols}} sütun algılandı",
+    "colData": "Veri / URL Sütunu:",
+    "colLabel": "Etiket / Dosya Adı:",
+    "colLabelNone": "Yok (Otomatik Numaralandırma)",
+    "moreRecords": "+ {{count}} daha fazla kayıt işlenecek.",
+    "step2Title": "Kod Stilini ve Formatını Yapılandırma",
+    "codeType": "Kod Türü",
+    "typeQr": "QR Kodu (2D)",
+    "typeBarcode": "Barkod (1D)",
+    "dotPattern": "Nokta Deseni",
+    "patternSquare": "Klasik Kare",
+    "patternRounded": "Pürüzsüz Yuvarlak",
+    "patternDots": "Modern Noktalar",
+    "eccLevel": "Hata Düzeltme Düzeyi",
+    "eccL": "L — %7 Yenileme",
+    "eccM": "M — %15 Standart",
+    "eccQ": "S — %25 Yüksek Güvenilirlik",
+    "eccH": "H — %30 Maksimum Sağlamlık",
+    "barcodeStd": "Barkod Standardı",
+    "exportImgFormat": "Görüntü Formatını Dışa Aktar",
+    "formatPng": "PNG (Yüksek DPI)",
+    "formatSvg": "SVG (Vektör)",
+    "step3Title": "Oluştur ve İndir",
+    "readySummary": "{{count}} kod oluşturmaya hazır",
+    "asyncNotice": "Bellekte eşzamansız olarak işlenir. Ağ bant genişliği tüketilmedi.",
+    "btnGenerating": "Oluşturuluyor (___yüzde___%)",
+    "btnGenerate": "{{count}} Kod Oluştur",
+    "progressSummary": "{{toplam}} öğeden ___şu anki___ tanesi işlendi...",
+    "successCompile": "{{count}} kodları tarayıcı belleğinde başarıyla derlendi!",
+    "btnPrintPdf": "A4 Etiket Sayfası PDF'sini yazdır",
+    "btnDownloadZip": "Tümünü ({{count}} öğeleri) ZIP olarak indir",
+    "btnCompressing": "ZIP sıkıştırılıyor...",
+    "galleryTitle": "Oluşturulan Kod Galerisi",
+    "btnSave": "Kaydetmek",
+    "galleryLimitNotice": "İlk 48 öğe gösteriliyor. Tüm {{count}} öğeler indirilen ZIP'e dahil edilecektir."
+  },
+  "printStudio": {
+    "modalTitle": "Baskı ve Çıkartma Sayfası Stüdyosu",
+    "proBadge": "Profesyonel Motor",
+    "modalSubtitle": "A4 ve Letter Avery / Tom ve Jerry çıkartma sayfaları için %100 İstemci Tarafı vektör düzeni",
+    "presetLabel": "Etiket Sayfası Ön Ayarı",
+    "paperFormat": "Kağıt Formatı:",
+    "gridStructure": "Izgara Yapısı:",
+    "colsRowsSummary": "___sütunlar___ sütunlar × ___satırlar___ satırlar ({{toplam_}}/sayfa)",
+    "cols": "Sütunlar:",
+    "rows": "Satırlar:",
+    "labelWidth": "Etiket Genişliği (mm):",
+    "labelHeight": "Etiket Yüksekliği (mm):",
+    "allocation": "Çıkartma Tahsisi",
+    "quantity": "Basılacak Adet:",
+    "stickersCount": "___sayım___ çıkartmalar",
+    "fill1Page": "1 Sayfayı Doldur ({{count}})",
+    "fill2Pages": "2 Sayfayı Doldurun ({{count}})",
+    "bulkSequencing": "Toplu listedeki {{count}} öğe {{sayfa_}} sayfa(lar) arasında sıralanıyor.",
+    "skipPeels": "Önceden Soyulmuş Çıkartmaları Atla:",
+    "skipSlots": "{{count}} yuva",
+    "skipDesc": "Kısmen kullanılmış çıkartma sayfalarını yeniden kullanarak kağıttan tasarruf edin!",
+    "guidesAndInks": "Yazdırma Kılavuzları ve Mürekkepler",
+    "k100": "K:%100 Siyah",
+    "k100Desc": "Net monokrom",
+    "cropMarks": "Kırpma İşaretleri",
+    "cropMarksDesc": "Giyotin kılavuzları",
+    "dottedOutlines": "Noktalı Anahatlar",
+    "dottedDesc": "Etiket sınırı",
+    "labelTitle": "Etiket Başlığı",
+    "labelTitleDesc": "Üst başlık",
+    "labelHeading": "Etiket Başlık Metni:",
+    "labelPlaceholder": "örneğin Menü / Tablo 1'i Tara",
+    "pageOf": "{{toplam}} sayfanın ___güncel___ sayfası",
+    "totalStickers": "Toplam çıkartma: {{count}} ({{pages}} sayfa)",
+    "directPrint": "Doğrudan Baskı",
+    "downloadPdf": "Yazdırılabilir PDF'yi İndir",
+    "generatingPdf": "PDF oluşturuluyor...",
+    "emptySlot": "Boş"
   }
 }

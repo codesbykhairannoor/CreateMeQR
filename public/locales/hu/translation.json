@@ -35,7 +35,8 @@
     "audio": "Hang",
     "amazon": "Amazon",
     "booking": "Foglalás",
-    "file": "Fájl"
+    "file": "Fájl",
+    "bulk": "Tömeges QR és vonalkód"
   },
   "form": {
     "enterUrl": "Adja meg webhelyének URL-jét",
@@ -128,7 +129,8 @@
     "readyTitle": "Ingyenes Online QR-kód Generátor",
     "readyDesc": "Készítsen QR-kódokat Logóval és Színnel - Regisztráció Nélkül, Korlátlanul",
     "clientSide": "Ügyféloldali generált",
-    "noServer": "Nincs adat küldve a szerverre"
+    "noServer": "Nincs adat küldve a szerverre",
+    "printStudioBtn": "Nyomtatás / A4-es matricalap PDF"
   },
   "footer": {
     "privacy": "Adatvédelmi szabályzat",
@@ -1129,7 +1131,8 @@
     "seo": {
       "title": "Ingyenes vonalkódgenerátor online – 1D vonalkódok létrehozása",
       "desc": "Azonnal generál professzionális 1D vonalkódokat. A Code-128, UPC, EAN, ITF-14 és egyebek támogatása. Ingyenes, biztonságos és letöltésre kész nagy felbontású PNG-ben."
-    }
+    },
+    "printStudioBtn": "Nyomtatás / A4-es matricalap PDF"
   },
   "nav": {
     "allTools": "Minden eszköz",
@@ -1155,7 +1158,9 @@
     "barcode": "Vonalkód készítő",
     "scanqr": "QR-kód beolvasása",
     "scanbarcode": "Vonalkód beolvasása",
-    "scanGroup": "Szkenner"
+    "scanGroup": "Szkenner",
+    "bulk": "Tömeges tétel",
+    "bulkDesc": "CSV-ből / Excelből ZIP-be"
   },
   "contact": {
     "title": "Lépjen kapcsolatba velünk",
@@ -1472,6 +1477,12 @@
       "seoTitle": "Vonalkód beolvasása online",
       "seoDesc": "Szkennelje be az 1D és 2D vonalkódokat közvetlenül a fényképezőgépéről vagy a helyi képfájlokat biztonságosan a böngésző memóriájában a gyors, privát kliensoldali dekódolással.",
       "desc": "Szkennelje be az 1D és 2D vonalkódokat közvetlenül a fényképezőgépéről vagy a helyi képfájlokat biztonságosan a böngésző memóriájában a gyors, privát kliensoldali dekódolással."
+    },
+    "bulk": {
+      "seoTitle": "Tömeges QR és vonalkód generátor",
+      "heroTitle": "Tömeges QR kód és vonalkód generátor",
+      "seoDesc": "Egyedi QR-kódok és szabványos vonalkódok kötegeinek létrehozása egyidejűleg táblázatos CSV-adatokból azonnali ZIP-exportálással és A4-es matricalap nyomtatással.",
+      "desc": "Egyedi QR-kódok és szabványos vonalkódok kötegeinek létrehozása egyidejűleg táblázatos CSV-adatokból azonnali ZIP-exportálással és A4-es matricalap nyomtatással."
     }
   },
   "rating": {
@@ -1610,5 +1621,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Tömeges QR-kódokra van szüksége? Próbálja ki Pro Bulk Batch Engine-ünket CSV-importálással és azonnali ZIP-exportálással.",
+    "bulkBannerLink": "Nyissa meg a Tömeges generátor → lehetőséget"
+  },
+  "bulk": {
+    "badge": "Pro Batch Engine • 100% ügyféloldali",
+    "heroTitle": "Tömeges QR kód és vonalkód generátor",
+    "heroSubtitle": "Importálhat táblázatokat vagy CSV-fájlokat, és másodpercek alatt több száz vagy több ezer nagy felbontású QR-kódot és vonalkódot hozhat létre. Nulla adatkövetés – minden kód közvetlenül a böngésző memóriájában van lefordítva.",
+    "featPrivate": "100%-ban privát (nincs szerverfeltöltés)",
+    "featZip": "Azonnali ZIP-exportálás",
+    "featPrint": "A4-es matricalap PDF nyomtatása",
+    "step1Title": "Adja meg adatait (CSV vagy táblázatok)",
+    "templateCsv": "Sablon.csv",
+    "loadSample": "Mintaadatok betöltése",
+    "tabUpload": "CSV/TSV fájl feltöltése",
+    "tabPaste": "Beillesztés az Excelből / Google Táblázatokból",
+    "dropTitle": "Válassza ki vagy húzza át a CSV-/TSV-fájlt",
+    "dropLoaded": "Betöltve: {{fileName}}",
+    "dropDesc": "Támogatja a vesszővel, pontosvesszővel vagy tabulátorral tagolt fájlokat. Nincs fájlméret-korlátozás.",
+    "pastePlaceholder": "Illessze be ide a sorokat (pl. Excelből vagy Google Táblázatokból)...",
+    "detectedSummary": "{{rows}} sor és {{cols}} oszlop észlelve",
+    "colData": "Adat/URL oszlop:",
+    "colLabel": "Címke/fájlnév:",
+    "colLabelNone": "Nincs (automatikus számozás)",
+    "moreRecords": "+ {{count}} további rekord feldolgozásra kerül.",
+    "step2Title": "Konfigurálja a kódstílust és -formátumot",
+    "codeType": "Kód típusa",
+    "typeQr": "QR-kód (2D)",
+    "typeBarcode": "Vonalkód (1D)",
+    "dotPattern": "Pontminta",
+    "patternSquare": "Klasszikus tér",
+    "patternRounded": "Sima lekerekített",
+    "patternDots": "Modern Dots",
+    "eccLevel": "Hibajavítási szint",
+    "eccL": "L — 7% restaurálás",
+    "eccM": "M – 15% Standard",
+    "eccQ": "Q – 25% magas megbízhatóság",
+    "eccH": "H – 30% maximális robusztusság",
+    "barcodeStd": "Vonalkód szabvány",
+    "exportImgFormat": "Képformátum exportálása",
+    "formatPng": "PNG (nagy DPI)",
+    "formatSvg": "SVG (vektor)",
+    "step3Title": "Generálás és letöltés",
+    "readySummary": "Készen áll {{count}} kód generálására",
+    "asyncNotice": "Aszinkron módon feldolgozva a memóriában. Nem használt fel hálózati sávszélességet.",
+    "btnGenerating": "Generál (___százalék___%)",
+    "btnGenerate": "{{count}} kód generálása",
+    "progressSummary": "{{jelenlegi}}/___összesen___ elem feldolgozva...",
+    "successCompile": "{{count}} kód sikeresen lefordítva a böngésző memóriájában!",
+    "btnPrintPdf": "Nyomtasson A4-es PDF matricalapot",
+    "btnDownloadZip": "Az összes ({{count}} elem) letöltése ZIP formátumban",
+    "btnCompressing": "ZIP tömörítés...",
+    "galleryTitle": "Generált kódgaléria",
+    "btnSave": "Megtakarítás",
+    "galleryLimitNotice": "Az első 48 elem megjelenítése. Minden {{count}} elem szerepelni fog a letöltött ZIP-ben."
+  },
+  "printStudio": {
+    "modalTitle": "Print & Sticker Sheet Studio",
+    "proBadge": "Pro Engine",
+    "modalSubtitle": "100%-ban kliensoldali vektoros elrendezés A4-es és Letter Avery/Tom & Jerry matricalapokhoz",
+    "presetLabel": "Előre beállított matricalap",
+    "paperFormat": "Papír formátum:",
+    "gridStructure": "Rács szerkezete:",
+    "colsRowsSummary": "{{cols}} oszlop × {{sor}} sor (___összesen___/lap)",
+    "cols": "Oszlopok:",
+    "rows": "Sorok:",
+    "labelWidth": "Címke szélessége (mm):",
+    "labelHeight": "Címke magasság (mm):",
+    "allocation": "Matricák kiosztása",
+    "quantity": "Nyomtatandó mennyiség:",
+    "stickersCount": "{{count}} matricák",
+    "fill1Page": "1 oldal kitöltése ({{count}})",
+    "fill2Pages": "2 oldal kitöltése ({{count}})",
+    "bulkSequencing": "{{count}} elem sorba rendezése a tömeges listából {{oldalon}} oldalon.",
+    "skipPeels": "A korábban lehúzott matricák kihagyása:",
+    "skipSlots": "___szám___ hely",
+    "skipDesc": "Takarítson meg papírt a részben használt matricalapok újrafelhasználásával!",
+    "guidesAndInks": "Nyomtatási útmutatók és tinták",
+    "k100": "K: 100% fekete",
+    "k100Desc": "Éles monokróm",
+    "cropMarks": "Termésjelek",
+    "cropMarksDesc": "Guillotine útmutatók",
+    "dottedOutlines": "Pontozott körvonalak",
+    "dottedDesc": "Címkehatár",
+    "labelTitle": "Címke címe",
+    "labelTitleDesc": "Felső felirat",
+    "labelHeading": "Címkefejléc szövege:",
+    "labelPlaceholder": "például Menü/1. táblázat keresése",
+    "pageOf": "___aktuális___ oldal / ___összes___",
+    "totalStickers": "Összes matrica: {{count}} ({{oldal}} oldal)",
+    "directPrint": "Közvetlen nyomtatás",
+    "downloadPdf": "Nyomtatható PDF letöltése",
+    "generatingPdf": "PDF generálása...",
+    "emptySlot": "Üres"
   }
 }

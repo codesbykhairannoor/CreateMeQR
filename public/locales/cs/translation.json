@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Online rezervace",
     "file": "Soubor / Berkas",
-    "scanbarcode": "Skener čárových kódů"
+    "scanbarcode": "Skener čárových kódů",
+    "bulk": "Hromadné QR a čárové kódy"
   },
   "form": {
     "enterUrl": "Zadejte URL svého webu",
@@ -129,7 +130,8 @@
     "readyTitle": "Zdarma Online Generátor QR Kódů",
     "readyDesc": "Vytvářejte QR Kódy s Logem a Barvou - Bez Registrace, Neomezeně",
     "clientSide": "Vygenerováno na straně klienta",
-    "noServer": "Na server nejsou odeslána žádná data"
+    "noServer": "Na server nejsou odeslána žádná data",
+    "printStudioBtn": "Tisk / A4 samolepka PDF"
   },
   "footer": {
     "privacy": "Zásady ochrany osobních údajů",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Bezplatný generátor čárových kódů online - Vytvořte 1D čárové kódy",
       "desc": "Okamžitě generujte profesionální 1D čárové kódy. Podpora pro Code-128, UPC, EAN, ITF-14 a další. Zdarma, bezpečné a připravené ke stažení ve formátu PNG s vysokým rozlišením."
-    }
+    },
+    "printStudioBtn": "Tisk / A4 samolepka PDF"
   },
   "nav": {
     "allTools": "Všechny nástroje",
@@ -1160,7 +1163,9 @@
     "catMedia": "Média a zábava",
     "catData": "Soubory a data",
     "generator": "VŠECHNY QR NÁSTROJE",
-    "barcode": "Tvůrce čárových kódů"
+    "barcode": "Tvůrce čárových kódů",
+    "bulk": "Hromadná dávka",
+    "bulkDesc": "CSV / Excel do ZIP"
   },
   "contact": {
     "title": "Kontaktujte nás",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Skenujte čárový kód online",
       "seoDesc": "Skenujte 1D a 2D čárové kódy přímo z fotoaparátu nebo místních obrazových souborů bezpečně v paměti prohlížeče pomocí rychlého soukromého dekódování na straně klienta.",
       "desc": "Skenujte 1D a 2D čárové kódy přímo z fotoaparátu nebo místních obrazových souborů bezpečně v paměti prohlížeče pomocí rychlého soukromého dekódování na straně klienta."
+    },
+    "bulk": {
+      "seoTitle": "Hromadný generátor QR a čárových kódů",
+      "heroTitle": "Hromadný generátor QR kódů a čárových kódů",
+      "seoDesc": "Generujte dávky vlastních QR kódů a standardních čárových kódů současně z tabulkových CSV dat s okamžitým exportem ZIP a tiskem archů samolepek A4.",
+      "desc": "Generujte dávky vlastních QR kódů a standardních čárových kódů současně z tabulkových CSV dat s okamžitým exportem ZIP a tiskem archů samolepek A4."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Potřebujete hromadné QR kódy? Vyzkoušejte náš Pro Bulk Batch Engine s importem CSV a okamžitým exportem ZIP.",
+    "bulkBannerLink": "Přejděte na Generátor hromadného →"
+  },
+  "bulk": {
+    "badge": "Pro Batch Engine • 100% na straně klienta",
+    "heroTitle": "Hromadný generátor QR kódů a čárových kódů",
+    "heroSubtitle": "Importujte tabulky nebo soubory CSV a generujte stovky nebo tisíce QR kódů a čárových kódů ve vysokém rozlišení během několika sekund. Sledování nulových dat – každý kód je kompilován přímo v paměti vašeho prohlížeče.",
+    "featPrivate": "100% soukromé (žádné nahrávání na server)",
+    "featZip": "Okamžitý export ZIP",
+    "featPrint": "A4 samolepka PDF tisk",
+    "step1Title": "Poskytněte svá data (CSV nebo tabulky)",
+    "templateCsv": "Šablona.csv",
+    "loadSample": "Načíst ukázková data",
+    "tabUpload": "Nahrajte soubor CSV / TSV",
+    "tabPaste": "Vložit z Excelu / Tabulek Google",
+    "dropTitle": "Vyberte nebo přetáhněte soubor CSV / TSV",
+    "dropLoaded": "Načteno: {{fileName}}",
+    "dropDesc": "Podporuje soubory oddělené čárkou, středníkem nebo tabulátorem. Žádné omezení velikosti souboru.",
+    "pastePlaceholder": "Sem vložte řádky (např. z Excelu nebo Tabulek Google)...",
+    "detectedSummary": "Bylo zjištěno {{rows}} řádků a ___sloupců___ sloupců",
+    "colData": "Sloupec data / URL:",
+    "colLabel": "Štítek / název souboru:",
+    "colLabelNone": "Žádné (automatické číslování)",
+    "moreRecords": "+ {{count}} další záznamy budou zpracovány.",
+    "step2Title": "Konfigurace stylu a formátu kódu",
+    "codeType": "Typ kódu",
+    "typeQr": "QR kód (2D)",
+    "typeBarcode": "Čárový kód (1D)",
+    "dotPattern": "Bodový vzor",
+    "patternSquare": "Klasické náměstí",
+    "patternRounded": "Hladké zaoblené",
+    "patternDots": "Moderní tečky",
+    "eccLevel": "Úroveň opravy chyb",
+    "eccL": "L — 7 % Obnova",
+    "eccM": "M — 15 % Standardní",
+    "eccQ": "Q – 25% vysoká spolehlivost",
+    "eccH": "H — 30 % Maximální robustnost",
+    "barcodeStd": "Standardní čárový kód",
+    "exportImgFormat": "Exportovat formát obrázku",
+    "formatPng": "PNG (vysoké DPI)",
+    "formatSvg": "SVG (vektor)",
+    "step3Title": "Vygenerovat a stáhnout",
+    "readySummary": "Připraveno ke generování {{count}} kódů",
+    "asyncNotice": "Zpracováno asynchronně v paměti. Není spotřebována žádná šířka pásma sítě.",
+    "btnGenerating": "Generování ({{percent}}%)",
+    "btnGenerate": "Vygenerujte {{count}} kódů",
+    "progressSummary": "Zpracováno ___aktuálních{{z}}celkem___ položek...",
+    "successCompile": "Úspěšně zkompilováno {{count}} kódů v paměti prohlížeče!",
+    "btnPrintPdf": "Vytiskněte list s nálepkami A4 ve formátu PDF",
+    "btnDownloadZip": "Stáhnout vše ({{count}} položek) jako ZIP",
+    "btnCompressing": "Komprese ZIP...",
+    "galleryTitle": "Galerie generovaných kódů",
+    "btnSave": "Uložit",
+    "galleryLimitNotice": "Zobrazeno prvních 48 položek. Všechny {{count}} položky budou zahrnuty do staženého ZIP."
+  },
+  "printStudio": {
+    "modalTitle": "Print & Sticker Sheet Studio",
+    "proBadge": "Pro motor",
+    "modalSubtitle": "100% vektorové rozložení na straně klienta pro archy nálepek A4 a Letter Avery / Tom & Jerry",
+    "presetLabel": "Předvolba listu nálepek",
+    "paperFormat": "Formát papíru:",
+    "gridStructure": "Struktura mřížky:",
+    "colsRowsSummary": "___sloupců___ sloupců × ___řádků___ řádků ({{celkem}}/list)",
+    "cols": "Sloupce:",
+    "rows": "Řádky:",
+    "labelWidth": "Šířka štítku (mm):",
+    "labelHeight": "Výška štítku (mm):",
+    "allocation": "Přidělení nálepek",
+    "quantity": "Množství k tisku:",
+    "stickersCount": "___počítat___ samolepek",
+    "fill1Page": "Vyplnit 1 stránku (___počet___)",
+    "fill2Pages": "Vyplnit 2 stránky (___počet___)",
+    "bulkSequencing": "Seřazení {{count}} položek z hromadného seznamu na ___stránkách___ stránkách.",
+    "skipPeels": "Přeskočit dříve oloupané nálepky:",
+    "skipSlots": "___počet___ slotů",
+    "skipDesc": "Šetřete papír opětovným použitím částečně použitých archů samolepek!",
+    "guidesAndInks": "Tisk vodítek a inkoustů",
+    "k100": "K: 100% černá",
+    "k100Desc": "Ostrý monochromatický",
+    "cropMarks": "Ořezové značky",
+    "cropMarksDesc": "Gilotinové vodítka",
+    "dottedOutlines": "Tečkované obrysy",
+    "dottedDesc": "Hranice štítku",
+    "labelTitle": "Název štítku",
+    "labelTitleDesc": "Horní titulek",
+    "labelHeading": "Text nadpisu štítku:",
+    "labelPlaceholder": "např. Vyhledat nabídku / tabulku 1",
+    "pageOf": "Stránka ___aktuální{{z}}celkem___",
+    "totalStickers": "Celkový počet nálepek: {{count}} (___stránek___ stránek)",
+    "directPrint": "Přímý tisk",
+    "downloadPdf": "Stáhnout PDF pro tisk",
+    "generatingPdf": "Generování PDF...",
+    "emptySlot": "Prázdný"
   }
 }

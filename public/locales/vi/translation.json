@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Đặt chỗ",
     "file": "Tập tin",
-    "scanbarcode": "Máy quét mã vạch"
+    "scanbarcode": "Máy quét mã vạch",
+    "bulk": "Mã QR & mã vạch số lượng lớn"
   },
   "form": {
     "enterUrl": "Nhập URL trang web của bạn",
@@ -129,7 +130,8 @@
     "readyTitle": "Tạo Mã QR Miễn Phí Trực Tuyến",
     "readyDesc": "Tạo Mã QR Có Logo & Màu Sắc - Không Cần Đăng Ký, Không Giới Hạn",
     "clientSide": "Phía khách hàng được tạo",
-    "noServer": "Không có dữ liệu được gửi đến máy chủ"
+    "noServer": "Không có dữ liệu được gửi đến máy chủ",
+    "printStudioBtn": "In / Tờ nhãn dán A4 PDF"
   },
   "footer": {
     "privacy": "Chính sách bảo mật",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Trình tạo mã vạch trực tuyến miễn phí - Tạo mã vạch 1D",
       "desc": "Tạo mã vạch 1D chuyên nghiệp ngay lập tức. Hỗ trợ Code-128, UPC, EAN, ITF-14, v.v. Miễn phí, an toàn và sẵn sàng tải xuống ở định dạng PNG có độ phân giải cao."
-    }
+    },
+    "printStudioBtn": "In / Tờ nhãn dán A4 PDF"
   },
   "nav": {
     "allTools": "Tất cả công cụ",
@@ -1160,7 +1163,9 @@
     "catMedia": "Truyền thông & Giải trí",
     "catData": "Tệp & Dữ liệu",
     "generator": "TẤT CẢ CÔNG CỤ QR",
-    "barcode": "Máy tạo mã vạch"
+    "barcode": "Máy tạo mã vạch",
+    "bulk": "Lô số lượng lớn",
+    "bulkDesc": "CSV / Excel sang ZIP"
   },
   "contact": {
     "title": "Liên hệ với chúng tôi",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Quét mã vạch trực tuyến",
       "seoDesc": "Quét mã vạch 1D và 2D trực tiếp từ máy ảnh hoặc tệp hình ảnh cục bộ của bạn một cách an toàn trong bộ nhớ trình duyệt của bạn với khả năng giải mã phía máy khách riêng tư, nhanh chóng.",
       "desc": "Quét mã vạch 1D và 2D trực tiếp từ máy ảnh hoặc tệp hình ảnh cục bộ của bạn một cách an toàn trong bộ nhớ trình duyệt của bạn với khả năng giải mã phía máy khách riêng tư, nhanh chóng."
+    },
+    "bulk": {
+      "seoTitle": "Trình tạo mã vạch và mã QR số lượng lớn",
+      "heroTitle": "Trình tạo mã vạch & mã vạch số lượng lớn",
+      "seoDesc": "Tạo đồng thời hàng loạt mã QR tùy chỉnh và mã vạch tiêu chuẩn từ dữ liệu CSV của bảng tính với tính năng xuất ZIP ngay lập tức và in tờ nhãn dán A4.",
+      "desc": "Tạo đồng thời hàng loạt mã QR tùy chỉnh và mã vạch tiêu chuẩn từ dữ liệu CSV của bảng tính với tính năng xuất ZIP ngay lập tức và in tờ nhãn dán A4."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Cần mã QR số lượng lớn? Hãy dùng thử Công cụ hàng loạt chuyên nghiệp của chúng tôi với tính năng nhập CSV và xuất ZIP ngay lập tức.",
+    "bulkBannerLink": "Đi đến Trình tạo số lượng lớn →"
+  },
+  "bulk": {
+    "badge": "Pro Batch Engine • 100% phía khách hàng",
+    "heroTitle": "Trình tạo mã vạch & mã vạch số lượng lớn",
+    "heroSubtitle": "Nhập bảng tính hoặc tệp CSV và tạo hàng trăm hoặc hàng nghìn mã QR và mã vạch có độ phân giải cao trong vài giây. Không theo dõi dữ liệu - mọi mã được biên dịch trực tiếp trong bộ nhớ trình duyệt của bạn.",
+    "featPrivate": "100% riêng tư (Không tải lên máy chủ)",
+    "featZip": "Xuất ZIP tức thì",
+    "featPrint": "In PDF tờ nhãn dán A4",
+    "step1Title": "Cung cấp dữ liệu của bạn (CSV hoặc Bảng tính)",
+    "templateCsv": "Mẫu.csv",
+    "loadSample": "Tải dữ liệu mẫu",
+    "tabUpload": "Tải lên tệp CSV / TSV",
+    "tabPaste": "Dán từ Excel/Google Trang tính",
+    "dropTitle": "Chọn hoặc kéo và thả tệp CSV / TSV",
+    "dropLoaded": "Đã tải: {{fileName}}",
+    "dropDesc": "Hỗ trợ các tệp được phân cách bằng dấu phẩy, dấu chấm phẩy hoặc tab. Không có giới hạn kích thước tập tin.",
+    "pastePlaceholder": "Dán các hàng ở đây (ví dụ: từ Excel hoặc Google Trang tính)...",
+    "detectedSummary": "Đã phát hiện ___hàng___ hàng và ___cột___ cột",
+    "colData": "Cột dữ liệu/URL:",
+    "colLabel": "Nhãn/Tên tệp:",
+    "colLabelNone": "Không có (Đánh số tự động)",
+    "moreRecords": "+ {{count}} nhiều hồ sơ hơn sẽ được xử lý.",
+    "step2Title": "Định cấu hình kiểu và định dạng mã",
+    "codeType": "Loại mã",
+    "typeQr": "Mã QR (2D)",
+    "typeBarcode": "Mã vạch (1D)",
+    "dotPattern": "Mẫu chấm",
+    "patternSquare": "Quảng trường cổ điển",
+    "patternRounded": "tròn mịn",
+    "patternDots": "Dấu chấm hiện đại",
+    "eccLevel": "Mức độ sửa lỗi",
+    "eccL": "L - Phục hồi 7%",
+    "eccM": "M - Tiêu chuẩn 15%",
+    "eccQ": "Q - Độ tin cậy cao 25%",
+    "eccH": "H - Độ chắc chắn tối đa 30%",
+    "barcodeStd": "Tiêu chuẩn mã vạch",
+    "exportImgFormat": "Xuất định dạng hình ảnh",
+    "formatPng": "PNG (DPI cao)",
+    "formatSvg": "SVG (Vectơ)",
+    "step3Title": "Tạo và tải xuống",
+    "readySummary": "Sẵn sàng tạo mã {{count}}",
+    "asyncNotice": "Được xử lý không đồng bộ trong bộ nhớ. Không tiêu tốn băng thông mạng.",
+    "btnGenerating": "Đang tạo ra (___ phần trăm__%)",
+    "btnGenerate": "Tạo {{count}} Mã",
+    "progressSummary": "Đã xử lý ___hiện tại___ trong tổng số ___ mục...",
+    "successCompile": "Đã biên dịch thành công {{count}} mã trong bộ nhớ trình duyệt!",
+    "btnPrintPdf": "In PDF tờ nhãn dán A4",
+    "btnDownloadZip": "Tải xuống tất cả (___đếm___ mục) dưới dạng ZIP",
+    "btnCompressing": "Đang nén ZIP...",
+    "galleryTitle": "Thư viện mã được tạo",
+    "btnSave": "Cứu",
+    "galleryLimitNotice": "Hiển thị 48 mục đầu tiên Tất cả {{count}} mục sẽ được bao gồm trong ZIP đã tải xuống."
+  },
+  "printStudio": {
+    "modalTitle": "Studio in & dán nhãn",
+    "proBadge": "Động cơ chuyên nghiệp",
+    "modalSubtitle": "Bố cục vector 100% phía máy khách cho các tờ nhãn dán A4 & Letter Avery / Tom & Jerry",
+    "presetLabel": "Đặt trước tấm dán",
+    "paperFormat": "Định dạng giấy:",
+    "gridStructure": "Cấu trúc lưới:",
+    "colsRowsSummary": "___cột___ cột × ___hàng___ hàng (___tổng__/trang)",
+    "cols": "Cột:",
+    "rows": "Hàng:",
+    "labelWidth": "Chiều rộng nhãn (mm):",
+    "labelHeight": "Chiều cao nhãn (mm):",
+    "allocation": "Phân bổ nhãn dán",
+    "quantity": "Số lượng cần in:",
+    "stickersCount": "___đếm___ nhãn dán",
+    "fill1Page": "Điền vào 1 trang (___đếm___)",
+    "fill2Pages": "Điền vào 2 trang (___đếm___)",
+    "bulkSequencing": "Sắp xếp ___đếm___ mục từ danh sách hàng loạt trên {{trang}} trang.",
+    "skipPeels": "Bỏ qua các nhãn dán đã bóc trước đó:",
+    "skipSlots": "___đếm___ vị trí",
+    "skipDesc": "Tiết kiệm giấy bằng cách tái sử dụng các tờ nhãn dán đã sử dụng một phần!",
+    "guidesAndInks": "Hướng dẫn in & mực",
+    "k100": "K:Đen 100%",
+    "k100Desc": "Đơn sắc sắc nét",
+    "cropMarks": "Cắt dấu",
+    "cropMarksDesc": "Hướng dẫn chém",
+    "dottedOutlines": "Đường viền chấm",
+    "dottedDesc": "Ranh giới nhãn",
+    "labelTitle": "Tiêu đề nhãn",
+    "labelTitleDesc": "Chú thích hàng đầu",
+    "labelHeading": "Văn bản tiêu đề nhãn:",
+    "labelPlaceholder": "ví dụ. Quét tìm Menu / Bảng 1",
+    "pageOf": "Trang ___hiện tại___ trong tổng số ___",
+    "totalStickers": "Tổng số nhãn dán: {{count}} ({{trang}} trang)",
+    "directPrint": "In trực tiếp",
+    "downloadPdf": "Tải xuống bản PDF có thể in được",
+    "generatingPdf": "Đang tạo PDF...",
+    "emptySlot": "Trống"
   }
 }

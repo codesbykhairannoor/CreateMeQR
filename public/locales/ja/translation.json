@@ -36,7 +36,8 @@
     "amazon": "アマゾン",
     "booking": "予約",
     "file": "ファイル",
-    "scanbarcode": "バーコードスキャナー"
+    "scanbarcode": "バーコードスキャナー",
+    "bulk": "一括 QR およびバーコード"
   },
   "form": {
     "enterUrl": "ウェブサイトのURLを入力",
@@ -129,7 +130,8 @@
     "readyTitle": "作成準備完了",
     "readyDesc": "左側の詳細を入力し、「QRコードを作成」をクリックすると、ここにプレビューが表示されます。",
     "clientSide": "ブラウザ内で安全に生成",
-    "noServer": "サーバーへのデータ送信なし"
+    "noServer": "サーバーへのデータ送信なし",
+    "printStudioBtn": "印刷・A4ステッカーシートPDF"
   },
   "footer": {
     "privacy": "プライバシーポリシー",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "無料のオンライン バーコード ジェネレーター - 1D バーコードを作成",
       "desc": "プロフェッショナルな 1D バーコードを瞬時に生成します。 Code-128、UPC、EAN、ITF-14 などのサポート。無料、安全、高解像度の PNG でダウンロードできます。"
-    }
+    },
+    "printStudioBtn": "印刷・A4ステッカーシートPDF"
   },
   "nav": {
     "allTools": "すべてのツール",
@@ -1160,7 +1163,9 @@
     "catMedia": "メディアとエンターテイメント",
     "catData": "ファイルとデータ",
     "generator": "すべての QR ツール",
-    "barcode": "バーコードメーカー"
+    "barcode": "バーコードメーカー",
+    "bulk": "バルクバッチ",
+    "bulkDesc": "CSV/ExcelからZIPへ"
   },
   "contact": {
     "title": "お問い合わせ",
@@ -1530,6 +1535,12 @@
       "seoTitle": "オンラインでバーコードをスキャン",
       "seoDesc": "高速でプライベートなクライアント側デコード機能を使用して、カメラまたはブラウザのメモリ内のローカル画像ファイルから 1D および 2D バーコードを直接スキャンし、安全にスキャンします。",
       "desc": "高速でプライベートなクライアント側デコード機能を使用して、カメラまたはブラウザのメモリ内のローカル画像ファイルから 1D および 2D バーコードを直接スキャンし、安全にスキャンします。"
+    },
+    "bulk": {
+      "seoTitle": "一括 QR およびバーコード ジェネレーター",
+      "heroTitle": "バルク QR コードおよびバーコード ジェネレーター",
+      "seoDesc": "インスタント ZIP エクスポートと A4 ステッカー シート印刷により、スプレッドシートの CSV データからカスタム QR コードと標準バーコードのバッチを同時に生成します。",
+      "desc": "インスタント ZIP エクスポートと A4 ステッカー シート印刷により、スプレッドシートの CSV データからカスタム QR コードと標準バーコードのバッチを同時に生成します。"
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "一括 QR コードが必要ですか? CSV インポートとインスタント ZIP エクスポートを備えた Pro Bulk Batch Engine をお試しください。",
+    "bulkBannerLink": "バルクジェネレーターに移動→"
+  },
+  "bulk": {
+    "badge": "Pro Batch Engine • 100% クライアント側",
+    "heroTitle": "バルク QR コードおよびバーコード ジェネレーター",
+    "heroSubtitle": "スプレッドシートまたは CSV ファイルをインポートし、数百または数千の高解像度 QR コードやバーコードを数秒で生成します。 データ追跡ゼロ — すべてのコードはブラウザのメモリ内で直接コンパイルされます。",
+    "featPrivate": "100% プライベート (サーバーへのアップロードなし)",
+    "featZip": "インスタント ZIP エクスポート",
+    "featPrint": "A4ステッカーシートPDF印刷",
+    "step1Title": "データを提供します (CSV またはスプレッドシート)",
+    "templateCsv": "テンプレート.csv",
+    "loadSample": "サンプルデータのロード",
+    "tabUpload": "CSV / TSV ファイルをアップロードする",
+    "tabPaste": "Excel / Google スプレッドシートから貼り付け",
+    "dropTitle": "CSV / TSV ファイルを選択またはドラッグ アンド ドロップ",
+    "dropLoaded": "ロード済み: ___ファイル名___",
+    "dropDesc": "カンマ、セミコロン、またはタブ区切りのファイルをサポートします。 ファイルサイズの制限はありません。",
+    "pastePlaceholder": "ここに行を貼り付けます (例: Excel または Google スプレッドシートから)...",
+    "detectedSummary": "{{rows}} 行と {{cols}} 列が検出されました",
+    "colData": "データ/URL列:",
+    "colLabel": "ラベル/ファイル名:",
+    "colLabelNone": "なし (自動番号付け)",
+    "moreRecords": "+ {{count}} 件以上のレコードが処理されます。",
+    "step2Title": "コードのスタイルと形式を構成する",
+    "codeType": "コードの種類",
+    "typeQr": "QRコード(2次元)",
+    "typeBarcode": "バーコード(1D)",
+    "dotPattern": "ドットパターン",
+    "patternSquare": "クラシックスクエア",
+    "patternRounded": "滑らかな丸み",
+    "patternDots": "モダンドット",
+    "eccLevel": "誤り訂正レベル",
+    "eccL": "L — 7% 回復",
+    "eccM": "M — 15% 標準",
+    "eccQ": "Q — 25% の高い信頼性",
+    "eccH": "H — 最大 30% の耐久性",
+    "barcodeStd": "バーコード規格",
+    "exportImgFormat": "エクスポート画像フォーマット",
+    "formatPng": "PNG (高 DPI)",
+    "formatSvg": "SVG（ベクター）",
+    "step3Title": "生成してダウンロード",
+    "readySummary": "{{count}} コードを生成する準備ができました",
+    "asyncNotice": "メモリ内で非同期に処理されます。 ネットワーク帯域幅は消費されません。",
+    "btnGenerating": "生成中 (___パーセント___%)",
+    "btnGenerate": "{{count}} コードを生成する",
+    "progressSummary": "{{total}} 件中 {{current}} を処理しました...",
+    "successCompile": "{{count}} 個のコードがブラウザのメモリに正常にコンパイルされました。",
+    "btnPrintPdf": "A4ステッカーシートPDFを印刷",
+    "btnDownloadZip": "すべて ({{count}} アイテム) を ZIP 形式でダウンロード",
+    "btnCompressing": "ZIPを圧縮中...",
+    "galleryTitle": "生成されたコードギャラリー",
+    "btnSave": "保存",
+    "galleryLimitNotice": "最初の 48 件を表示しています。 すべての {{count}} アイテムがダウンロードされた ZIP に含まれます。"
+  },
+  "printStudio": {
+    "modalTitle": "プリント＆ステッカーシート工房",
+    "proBadge": "プロエンジン",
+    "modalSubtitle": "A4 およびレター用の 100% クライアント側ベクトル レイアウト Avery / トムとジェリー ステッカー シート",
+    "presetLabel": "ステッカーシートプリセット",
+    "paperFormat": "用紙フォーマット:",
+    "gridStructure": "グリッド構造:",
+    "colsRowsSummary": "{{cols}} 列 × {{rows}} 行 (___合計___/シート)",
+    "cols": "列:",
+    "rows": "行:",
+    "labelWidth": "ラベル幅(mm):",
+    "labelHeight": "ラベルの高さ (mm):",
+    "allocation": "ステッカーの割り当て",
+    "quantity": "印刷する枚数:",
+    "stickersCount": "___枚___ステッカー",
+    "fill1Page": "1 ページを埋める ({{count}})",
+    "fill2Pages": "2 ページを埋める ({{count}})",
+    "bulkSequencing": "{{pages}} ページにわたる一括リストから {{count}} 項目を順序付けします。",
+    "skipPeels": "以前に剥がしたステッカーをスキップする:",
+    "skipSlots": "___カウント___スロット",
+    "skipDesc": "使いかけのシールシートを再利用して紙を節約！",
+    "guidesAndInks": "プリントガイドとインク",
+    "k100": "K:100%ブラック",
+    "k100Desc": "くっきりとしたモノクロ",
+    "cropMarks": "トンボ",
+    "cropMarksDesc": "ギロチンガイド",
+    "dottedOutlines": "点線の輪郭",
+    "dottedDesc": "ラベル境界",
+    "labelTitle": "レーベルタイトル",
+    "labelTitleDesc": "トップキャプション",
+    "labelHeading": "ラベルの見出しテキスト:",
+    "labelPlaceholder": "例えば メニュー/表 1 をスキャン",
+    "pageOf": "ページ ___現在____/合計____",
+    "totalStickers": "ステッカーの総数: ___数___ (___ページ___ ページ)",
+    "directPrint": "ダイレクトプリント",
+    "downloadPdf": "印刷可能な PDF をダウンロード",
+    "generatingPdf": "PDF を生成中...",
+    "emptySlot": "空の"
   }
 }

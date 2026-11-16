@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Barcode from 'react-barcode';
 import { Download, Share2, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen, Clock, Check, Sliders, Binary, Gauge } from 'lucide-react';
 import { get, set } from 'idb-keyval';
+const PrintStudioModal = React.lazy(() => import('../components/PrintStudioModal'));
 
 export default function BarcodeGenerator() {
   const { t } = useTranslation();
@@ -15,6 +16,8 @@ export default function BarcodeGenerator() {
   const [width, setWidth] = useState(2);
   const [height, setHeight] = useState(100);
   const [displayValue, setDisplayValue] = useState(true);
+  const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
+  const [currentBarcodeDataUrl, setCurrentBarcodeDataUrl] = useState('');
 
   // Defer heavy renders for INP optimization
   const deferredValue = useDeferredValue(value);
@@ -183,6 +186,33 @@ export default function BarcodeGenerator() {
           className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all flex items-center justify-center gap-2 hover:-translate-y-1"
         >
           <Download className="w-5 h-5" /> {t("barcode.workspace.download", "Download High-Res PNG")}
+        </button>
+
+        <button 
+          onClick={() => {
+            if (barcodeRef.current) {
+              const svg = barcodeRef.current.querySelector('svg');
+              if (svg) {
+                const svgData = new XMLSerializer().serializeToString(svg);
+                const canvas = document.createElement("canvas");
+                const ctx = canvas.getContext("2d");
+                const img = new Image();
+                img.onload = () => {
+                  canvas.width = img.width + 40;
+                  canvas.height = img.height + 40;
+                  ctx.fillStyle = background;
+                  ctx.fillRect(0, 0, canvas.width, canvas.height);
+                  ctx.drawImage(img, 20, 20);
+                  setCurrentBarcodeDataUrl(canvas.toDataURL("image/png"));
+                  setIsPrintModalOpen(true);
+                };
+                img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgData)));
+              }
+            }
+          }}
+          className="w-full bg-purple-600 hover:bg-purple-500 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all flex items-center justify-center gap-2 hover:-translate-y-1"
+        >
+          <Printer className="w-5 h-5" /> {t('barcode.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}
         </button>
         
         <button
@@ -497,6 +527,26 @@ export default function BarcodeGenerator() {
           </div>
         </div>
       </section>
+
+      {/* Print Studio Modal */}
+      {isPrintModalOpen && (
+        <React.Suspense fallback={null}>
+          <PrintStudioModal
+            isOpen={isPrintModalOpen}
+            onClose={() => setIsPrintModalOpen(false)}
+            items={[
+              {
+                id: 1,
+                value: value || '123456789012',
+                title: `Barcode (${format})`,
+                dataUrl: currentBarcodeDataUrl,
+                type: 'barcode'
+              }
+            ]}
+            defaultTitle={`Barcode ${value}`}
+          />
+        </React.Suspense>
+      )}
 
     </div>
   );

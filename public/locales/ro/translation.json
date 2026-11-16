@@ -35,7 +35,8 @@
     "audio": "Audio",
     "amazon": "Amazon",
     "booking": "Rezervare",
-    "file": "Fișier"
+    "file": "Fișier",
+    "bulk": "QR și coduri de bare în vrac"
   },
   "form": {
     "enterUrl": "Introduceți adresa URL a site-ului dvs.",
@@ -128,7 +129,8 @@
     "readyTitle": "Generator de Coduri QR Gratuit Online",
     "readyDesc": "Creează Coduri QR cu Logo și Culoare - Fără Înregistrare, Nelimitat",
     "clientSide": "Client generat",
-    "noServer": "Nu au fost trimise date către server"
+    "noServer": "Nu au fost trimise date către server",
+    "printStudioBtn": "Imprimare / Foaie de autocolante A4 PDF"
   },
   "footer": {
     "privacy": "Politica de confidențialitate",
@@ -1129,7 +1131,8 @@
     "seo": {
       "title": "Generator online gratuit de coduri de bare - Creați coduri de bare 1D",
       "desc": "Generați instantaneu coduri de bare profesionale 1D. Suport pentru Code-128, UPC, EAN, ITF-14 și multe altele. Gratuit, sigur și gata de descărcat în PNG de înaltă rezoluție."
-    }
+    },
+    "printStudioBtn": "Imprimare / Foaie de autocolante A4 PDF"
   },
   "nav": {
     "allTools": "Toate instrumentele",
@@ -1155,7 +1158,9 @@
     "barcode": "Creator de coduri de bare",
     "scanqr": "Scanați codul QR",
     "scanbarcode": "Scanați codul de bare",
-    "scanGroup": "Scaner"
+    "scanGroup": "Scaner",
+    "bulk": "Lot în vrac",
+    "bulkDesc": "CSV/Excel în ZIP"
   },
   "contact": {
     "title": "Contactează-ne",
@@ -1472,6 +1477,12 @@
       "seoTitle": "Scanați codul de bare online",
       "seoDesc": "Scanați coduri de bare 1D și 2D direct de pe camera dvs. sau fișierele de imagine locale în siguranță în memoria browserului dvs., cu o decodare rapidă și privată pe partea clientului.",
       "desc": "Scanați coduri de bare 1D și 2D direct de pe camera dvs. sau fișierele de imagine locale în siguranță în memoria browserului dvs., cu o decodare rapidă și privată pe partea clientului."
+    },
+    "bulk": {
+      "seoTitle": "QR în vrac și generator de coduri de bare",
+      "heroTitle": "Generator de coduri QR și coduri de bare în vrac",
+      "seoDesc": "Generați simultan loturi de coduri QR personalizate și coduri de bare standard din datele CSV ale foii de calcul, cu export instantaneu ZIP și imprimare pe foi de autocolante A4.",
+      "desc": "Generați loturi de coduri QR personalizate și coduri de bare standard simultan din datele CSV ale foii de calcul, cu export instantaneu ZIP și imprimare pe foi de autocolante A4."
     }
   },
   "rating": {
@@ -1586,5 +1597,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Aveți nevoie de coduri QR în bloc? Încercați motorul nostru Pro Bulk Batch cu import CSV și export ZIP instant.",
+    "bulkBannerLink": "Accesați Generatorul în vrac →"
+  },
+  "bulk": {
+    "badge": "Motor Batch Pro • 100% partea client",
+    "heroTitle": "Generator de coduri QR și coduri de bare în vrac",
+    "heroSubtitle": "Importați foi de calcul sau fișiere CSV și generați sute sau mii de coduri QR și coduri de bare de înaltă rezoluție în câteva secunde. Urmărirea datelor zero - fiecare cod este compilat direct în memoria browserului dvs.",
+    "featPrivate": "100% privat (fără încărcări de server)",
+    "featZip": "Export instantaneu ZIP",
+    "featPrint": "Foaie de autocolante A4 Imprimare PDF",
+    "step1Title": "Furnizați datele dvs. (CSV sau foi de calcul)",
+    "templateCsv": "Template.csv",
+    "loadSample": "Încărcați date eșantion",
+    "tabUpload": "Încărcați fișierul CSV/TSV",
+    "tabPaste": "Lipiți din Excel / Foi de calcul Google",
+    "dropTitle": "Alegeți sau trageți și plasați fișierul CSV / TSV",
+    "dropLoaded": "Încărcat: {{fileName}}",
+    "dropDesc": "Suportă fișiere delimitate prin virgulă, punct și virgulă sau tabulatori. Fără limite de dimensiune a fișierului.",
+    "pastePlaceholder": "Lipiți rânduri aici (de exemplu, din Excel sau Foi de calcul Google)...",
+    "detectedSummary": "S-au detectat ___rânduri___ rânduri și {{coloane}}",
+    "colData": "Coloana Date/URL:",
+    "colLabel": "Etichetă / Nume fișier:",
+    "colLabelNone": "Niciunul (Numerare automată)",
+    "moreRecords": "+ {{count}} vor fi procesate mai multe înregistrări.",
+    "step2Title": "Configurați stilul și formatul codului",
+    "codeType": "Tip cod",
+    "typeQr": "Cod QR (2D)",
+    "typeBarcode": "Cod de bare (1D)",
+    "dotPattern": "Model de puncte",
+    "patternSquare": "Piața clasică",
+    "patternRounded": "Netedă rotunjită",
+    "patternDots": "Puncte moderne",
+    "eccLevel": "Nivel de corectare a erorilor",
+    "eccL": "L — 7% Restaurare",
+    "eccM": "M — 15% Standard",
+    "eccQ": "Q — 25% Fiabilitate ridicată",
+    "eccH": "H — 30% Rezistență maximă",
+    "barcodeStd": "Cod de bare Standard",
+    "exportImgFormat": "Exportați formatul imaginii",
+    "formatPng": "PNG (DPI ridicat)",
+    "formatSvg": "SVG (vector)",
+    "step3Title": "Generați și descărcați",
+    "readySummary": "Gata să genereze coduri {{count}}",
+    "asyncNotice": "Procesat asincron în memorie. Nu este consumată lățimea de bandă a rețelei.",
+    "btnGenerating": "Se generează ({{procent}}%)",
+    "btnGenerate": "Generați {{count}} coduri",
+    "progressSummary": "Procesat {{actual}} din {{total}} articole...",
+    "successCompile": "S-au compilat cu succes {{count}} coduri în memoria browserului!",
+    "btnPrintPdf": "Tipăriți PDF Foaie de autocolante A4",
+    "btnDownloadZip": "Descărcați toate ({{count}} articole) ca ZIP",
+    "btnCompressing": "Se comprimă ZIP...",
+    "galleryTitle": "Galeria de coduri generate",
+    "btnSave": "Salva",
+    "galleryLimitNotice": "Se afișează primele 48 de articole. Toate {{count}} articole vor fi incluse în ZIP descărcat."
+  },
+  "printStudio": {
+    "modalTitle": "Print & Sticker Sheet Studio",
+    "proBadge": "Motor Pro",
+    "modalSubtitle": "Aspect vectorial 100% pe partea clientului pentru foile de autocolante A4 și Letter Avery / Tom & Jerry",
+    "presetLabel": "Foaie de autocolante presetate",
+    "paperFormat": "Format hârtie:",
+    "gridStructure": "Structura grilei:",
+    "colsRowsSummary": "{{coloane}} coloane × ___rânduri___ rânduri ({{total}}/foaie)",
+    "cols": "Coloane:",
+    "rows": "Rânduri:",
+    "labelWidth": "Lățimea etichetei (mm):",
+    "labelHeight": "Înălțimea etichetei (mm):",
+    "allocation": "Alocarea autocolantului",
+    "quantity": "Cantitatea de imprimat:",
+    "stickersCount": "___numărați___ autocolante",
+    "fill1Page": "Completați 1 pagină ({{count}})",
+    "fill2Pages": "Completați 2 pagini ({{count}})",
+    "bulkSequencing": "Secvențierea ___număr___ articole din lista în bloc pe {{pagini}} pagini(e).",
+    "skipPeels": "Omiteți autocolantele decojite anterior:",
+    "skipSlots": "___numărați___ sloturi",
+    "skipDesc": "Economisiți hârtie prin reutilizarea foilor de autocolante parțial folosite!",
+    "guidesAndInks": "Ghiduri de imprimare și cerneluri",
+    "k100": "K: 100% negru",
+    "k100Desc": "Monocrom clar",
+    "cropMarks": "Semne de decupare",
+    "cropMarksDesc": "Ghilotine ghiduri",
+    "dottedOutlines": "Contururi punctate",
+    "dottedDesc": "Limita etichetei",
+    "labelTitle": "Titlul etichetei",
+    "labelTitleDesc": "Subtitrare de sus",
+    "labelHeading": "Textul titlului etichetei:",
+    "labelPlaceholder": "de ex. Scanează pentru meniu / tabelul 1",
+    "pageOf": "Pagina {{actual}} din {{total}}",
+    "totalStickers": "Total autocolante: ___număr___ ({{pagini}} pagini)",
+    "directPrint": "Imprimare directă",
+    "downloadPdf": "Descărcați PDF imprimabil",
+    "generatingPdf": "Se generează PDF...",
+    "emptySlot": "Gol"
   }
 }

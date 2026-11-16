@@ -21,7 +21,8 @@ const CustomizationPanel = React.lazy(() => import('../components/CustomizationP
 import Preview from '../components/Preview';
 
 export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUseCase }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const langPrefix = i18n.language && i18n.language !== 'en' ? '/' + i18n.language : '';
   const [qrData, setQrData] = useState({});
   const [hasGenerated, setHasGenerated] = useState(false);
   const [activeTab, setActiveTab] = useState('data');
@@ -98,6 +99,22 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUs
 
       {/* Generator Application Workspace */}
       <section className="max-w-7xl mx-auto px-6 mb-32 lg:mb-48">
+        {/* Bulk Batch Callout Banner */}
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-purple-500/10 via-indigo-500/10 to-blue-500/10 border border-purple-500/30 text-xs shadow-sm">
+          <div className="flex items-center gap-2.5">
+            <span className="flex h-2.5 w-2.5 rounded-full bg-purple-500 animate-pulse"></span>
+            <span className="font-extrabold text-slate-800 dark:text-slate-200">
+              {t('workspace.bulkBannerTitle', 'Need to generate hundreds of QR codes from an Excel or CSV file?')}
+            </span>
+          </div>
+          <a
+            href={`${langPrefix}/bulk-qr-generator`}
+            className="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-black text-xs transition-all shadow-sm flex items-center gap-1.5"
+          >
+            {t('workspace.bulkBannerLink', 'Launch Bulk CSV Generator →')}
+          </a>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start bg-[#f8fafc] dark:bg-[#040a18] border border-blue-100 dark:border-[#102040] rounded-[40px] p-4 lg:p-8 shadow-[0_20px_80px_-20px_rgba(0,0,0,0.1)] dark:shadow-none">
           <div className="lg:col-span-7 lg:col-start-1 flex flex-col animate-fade-in-right">
             <div className="flex space-x-2 bg-blue-100/50 dark:bg-[#081226]/80 p-1.5 rounded-2xl mb-8 border border-blue-100/50 dark:border-[#102040]/50">

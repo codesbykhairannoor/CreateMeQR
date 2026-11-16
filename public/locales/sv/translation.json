@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Bokning",
     "file": "Arkiv",
-    "scanbarcode": "Streckkodsläsare"
+    "scanbarcode": "Streckkodsläsare",
+    "bulk": "Bulk QR & streckkod"
   },
   "form": {
     "enterUrl": "Ange din webbadress",
@@ -129,7 +130,8 @@
     "readyTitle": "Gratis QR-kod Generator Online",
     "readyDesc": "Skapa QR-koder med Logotyp & Färg - Utan Registrering, Obegränsat",
     "clientSide": "Genererad på klientsidan",
-    "noServer": "Ingen data skickas till servern"
+    "noServer": "Ingen data skickas till servern",
+    "printStudioBtn": "Skriv ut / A4 klistermärke PDF"
   },
   "footer": {
     "privacy": "Sekretesspolicy",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Gratis streckkodsgenerator online - Skapa 1D streckkoder",
       "desc": "Generera professionella 1D-streckkoder direkt. Stöd för Code-128, UPC, EAN, ITF-14 och mer. Gratis, säker och redo att laddas ner i högupplöst PNG."
-    }
+    },
+    "printStudioBtn": "Skriv ut / A4 klistermärke PDF"
   },
   "nav": {
     "allTools": "Alla verktyg",
@@ -1160,7 +1163,9 @@
     "catMedia": "Media & Underhållning",
     "catData": "Filer och data",
     "generator": "ALLA QR-VERKTYG",
-    "barcode": "Streckkodstillverkare"
+    "barcode": "Streckkodstillverkare",
+    "bulk": "Bulk Batch",
+    "bulkDesc": "CSV / Excel till ZIP"
   },
   "contact": {
     "title": "Kontakta oss",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Skanna streckkod online",
       "seoDesc": "Skanna 1D- och 2D-streckkoder direkt från din kamera eller lokala bildfiler säkert i webbläsarens minne med snabb, privat avkodning på klientsidan.",
       "desc": "Skanna 1D- och 2D-streckkoder direkt från din kamera eller lokala bildfiler säkert i webbläsarens minne med snabb, privat avkodning på klientsidan."
+    },
+    "bulk": {
+      "seoTitle": "Bulk QR & streckkodsgenerator",
+      "heroTitle": "Bulk QR-kod & streckkodsgenerator",
+      "seoDesc": "Generera partier av anpassade QR-koder och standardstreckkoder samtidigt från kalkylarks CSV-data med omedelbar ZIP-export och utskrift av A4-klistermärken.",
+      "desc": "Generera partier av anpassade QR-koder och standardstreckkoder samtidigt från kalkylarks CSV-data med omedelbar ZIP-export och utskrift av A4-klistermärken."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Behöver du massa QR-koder? Prova vår Pro Bulk Batch Engine med CSV-import och omedelbar ZIP-export.",
+    "bulkBannerLink": "Gå till Bulk Generator →"
+  },
+  "bulk": {
+    "badge": "Pro Batch Engine • 100 % klientsida",
+    "heroTitle": "Bulk QR-kod & streckkodsgenerator",
+    "heroSubtitle": "Importera kalkylblad eller CSV-filer och generera hundratals eller tusentals högupplösta QR-koder och streckkoder på några sekunder. Noll dataspårning – varje kod kompileras direkt i din webbläsares minne.",
+    "featPrivate": "100 % privat (inga serveruppladdningar)",
+    "featZip": "Omedelbar ZIP-export",
+    "featPrint": "A4 klistermärke PDF-utskrift",
+    "step1Title": "Ange dina data (CSV eller kalkylblad)",
+    "templateCsv": "Mall.csv",
+    "loadSample": "Ladda provdata",
+    "tabUpload": "Ladda upp CSV/TSV-fil",
+    "tabPaste": "Klistra in från Excel / Google Sheets",
+    "dropTitle": "Välj eller dra och släpp CSV/TSV-fil",
+    "dropLoaded": "Laddat: {{filnamn}}",
+    "dropDesc": "Stöder komma-, semikolon- eller tabbavgränsade filer. Inga filstorleksbegränsningar.",
+    "pastePlaceholder": "Klistra in rader här (t.ex. från Excel eller Google Sheets)...",
+    "detectedSummary": "Upptäckte {{rader}} rader och {{kolumner}} kolumner",
+    "colData": "Data/URL-kolumn:",
+    "colLabel": "Etikett/filnamn:",
+    "colLabelNone": "Ingen (automatisk numrering)",
+    "moreRecords": "+ {{count}} fler poster kommer att behandlas.",
+    "step2Title": "Konfigurera kodstil och format",
+    "codeType": "Kodtyp",
+    "typeQr": "QR-kod (2D)",
+    "typeBarcode": "Streckkod (1D)",
+    "dotPattern": "Punktmönster",
+    "patternSquare": "Klassisk fyrkant",
+    "patternRounded": "Smidig rundad",
+    "patternDots": "Moderna prickar",
+    "eccLevel": "Felkorrigeringsnivå",
+    "eccL": "L — 7 % Restaurering",
+    "eccM": "M — 15 % Standard",
+    "eccQ": "Q — 25 % hög tillförlitlighet",
+    "eccH": "H — 30 % maximal robusthet",
+    "barcodeStd": "Streckkodsstandard",
+    "exportImgFormat": "Exportera bildformat",
+    "formatPng": "PNG (Hög DPI)",
+    "formatSvg": "SVG (vektor)",
+    "step3Title": "Generera och ladda ner",
+    "readySummary": "Redo att generera {{_count}} koder",
+    "asyncNotice": "Bearbetas asynkront i minnet. Ingen nätverksbandbredd förbrukas.",
+    "btnGenerating": "Genererar ({{procent}}%)",
+    "btnGenerate": "Generera {{count}} koder",
+    "progressSummary": "Bearbetade {{aktuella}} av {{totalt}} artiklar...",
+    "successCompile": "Framgångsrikt kompilerade {{count}} koder i webbläsarens minne!",
+    "btnPrintPdf": "Skriv ut A4 klistermärkesark PDF",
+    "btnDownloadZip": "Ladda ner alla ({{count}} objekt) som ZIP",
+    "btnCompressing": "Komprimerar ZIP...",
+    "galleryTitle": "Genererat kodgalleri",
+    "btnSave": "Spara",
+    "galleryLimitNotice": "Visar de första 48 objekten. Alla {{count}} objekt kommer att inkluderas i den nedladdade ZIP-filen."
+  },
+  "printStudio": {
+    "modalTitle": "Print & Sticker Sheet Studio",
+    "proBadge": "Pro motor",
+    "modalSubtitle": "100 % vektorlayout på klientsidan för A4 & Letter Avery / Tom & Jerry dekalark",
+    "presetLabel": "Förinställd dekalark",
+    "paperFormat": "Pappersformat:",
+    "gridStructure": "Rutnätsstruktur:",
+    "colsRowsSummary": "{{kolumner}} kolumner × {{rader}} rader ({{totalt}}/ark)",
+    "cols": "Kolumner:",
+    "rows": "Rader:",
+    "labelWidth": "Etikettbredd (mm):",
+    "labelHeight": "Etiketthöjd (mm):",
+    "allocation": "Tilldelning av klistermärken",
+    "quantity": "Antal att skriva ut:",
+    "stickersCount": "{{count}} klistermärken",
+    "fill1Page": "Fyll 1 sida ({{antal}})",
+    "fill2Pages": "Fyll 2 sidor ({{antal}})",
+    "bulkSequencing": "Sekvensera {{antal}} objekt från masslistan över {{sidor}} sidor.",
+    "skipPeels": "Hoppa över tidigare skalade klistermärken:",
+    "skipSlots": "{{count}} platser",
+    "skipDesc": "Spara papper genom att återanvända delvis använda klistermärken!",
+    "guidesAndInks": "Skriv ut guider och bläck",
+    "k100": "K:100 % svart",
+    "k100Desc": "Skarp monokrom",
+    "cropMarks": "Skärmärken",
+    "cropMarksDesc": "Giljotinguider",
+    "dottedOutlines": "Prickade konturer",
+    "dottedDesc": "Etikettgräns",
+    "labelTitle": "Etiketttitel",
+    "labelTitleDesc": "Översta bildtext",
+    "labelHeading": "Etikettrubrik:",
+    "labelPlaceholder": "till exempel Sök efter meny / tabell 1",
+    "pageOf": "Sida {{aktuell}} av {{totalt}}",
+    "totalStickers": "Totalt antal klistermärken: {{antal}} ({{sidor}} sidor)",
+    "directPrint": "Direktutskrift",
+    "downloadPdf": "Ladda ner utskrivbar PDF",
+    "generatingPdf": "Skapar PDF...",
+    "emptySlot": "Tömma"
   }
 }

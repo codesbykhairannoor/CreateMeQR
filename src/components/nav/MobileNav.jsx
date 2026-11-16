@@ -1,17 +1,67 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown, ChevronUp, Sun, Moon, History } from 'lucide-react';
+import { ChevronDown, ChevronUp, Sun, Moon, History, User, LogOut, Crown, Sparkles } from 'lucide-react';
 import { Link as RouterLink } from 'react-router-dom';
 import { localizedRoutes } from '../../config/localizedRoutes';
 import { QR_MENU_COLUMNS } from './MegaNav';
+import { useAuth } from '../../context/AuthContext';
 
 export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkMode, onOpenHistory }) {
   const { t } = useTranslation();
+  const { user, isPro, signOut, openAuthModal } = useAuth();
   const [openSection, setOpenSection] = useState(null);
 
   return (
     <div className="xl:hidden flex flex-col p-4 bg-zinc-50 dark:bg-[#030914] border-b border-zinc-200 dark:border-zinc-800 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)]">
       
+      {/* 0. User Profile / Sign In Status Bar */}
+      {user ? (
+        <div className="p-3 mb-3 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 rounded-2xl flex items-center justify-between shadow-xs">
+          <div className="flex items-center gap-2.5 min-w-0">
+            {user.photoURL ? (
+              <img src={user.photoURL} alt={user.displayName || 'User'} className="w-8 h-8 rounded-full object-cover border border-purple-400" />
+            ) : (
+              <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-purple-600 to-indigo-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+                {(user.displayName?.[0] || user.email?.[0] || 'U').toUpperCase()}
+              </div>
+            )}
+            <div className="min-w-0">
+              <p className="text-xs font-bold text-zinc-900 dark:text-white truncate">{user.displayName || user.email}</p>
+              <div className="flex items-center gap-1.5 mt-0.5">
+                {isPro ? (
+                  <span className="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 text-[10px] font-black uppercase tracking-wider">
+                    <Crown size={10} /> PRO
+                  </span>
+                ) : (
+                  <span className="text-[10px] font-semibold text-zinc-400">Free Tier</span>
+                )}
+              </div>
+            </div>
+          </div>
+          <button
+            onClick={() => {
+              signOut();
+              onClose();
+            }}
+            className="p-1.5 text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/40 rounded-xl transition-colors cursor-pointer"
+            title="Sign Out"
+          >
+            <LogOut size={16} />
+          </button>
+        </div>
+      ) : (
+        <button
+          onClick={() => {
+            onClose();
+            openAuthModal();
+          }}
+          className="w-full mb-3 py-2.5 px-4 rounded-xl bg-purple-50 hover:bg-purple-100 dark:bg-purple-950/40 dark:hover:bg-purple-900/50 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800/50 text-xs font-bold flex items-center justify-center gap-2 transition-all shadow-xs cursor-pointer"
+        >
+          <User size={16} />
+          <span>{t('auth.signInBtn', 'Sign In / Create Account')}</span>
+        </button>
+      )}
+
       {/* 1. Sleek Segmented Theme Switcher */}
       <div className="grid grid-cols-2 p-1 mb-3 bg-zinc-200/70 dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 rounded-xl">
         <button
@@ -41,7 +91,7 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
       </div>
 
       {/* 2. Quick Action Buttons (Scan QR, Scan Barcode, Barcode Maker) */}
-      <div className="grid grid-cols-3 gap-2 mb-3">
+      <div className="grid grid-cols-3 gap-2 mb-2">
         <RouterLink 
           to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} 
           onClick={onClose} 
@@ -64,6 +114,16 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
           {t('nav.barcode', 'Barcode Maker')}
         </RouterLink>
       </div>
+
+      {/* 2.5 Bulk Batch Generator Button */}
+      <RouterLink 
+        to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['bulk'] || '/bulk-qr-generator'}`} 
+        onClick={onClose} 
+        className="w-full mb-3 flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600/10 to-indigo-600/10 border border-purple-500/40 py-2.5 px-3 rounded-xl font-black text-purple-700 dark:text-purple-300 text-[11px] uppercase transition-all shadow-xs"
+      >
+        <span className="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
+        {t('nav.bulk', 'Bulk Batch')} (CSV / Excel)
+      </RouterLink>
 
       {/* 3. Accordion: All Tools */}
       <button

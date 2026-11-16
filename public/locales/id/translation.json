@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Pemesanan",
     "file": "Berkas",
-    "scanbarcode": "Pemindai Kode Batang"
+    "scanbarcode": "Pemindai Kode Batang",
+    "bulk": "QR & Kode Batang Massal"
   },
   "form": {
     "enterUrl": "Masukkan URL website",
@@ -129,7 +130,8 @@
     "readyTitle": "Siap untuk Membuat",
     "readyDesc": "Isi detail Anda di sebelah kiri dan klik \"Buat QR Code\" untuk melihat pratinjau di sini.",
     "clientSide": "Diproses di peramban Anda",
-    "noServer": "Tanpa pengiriman data ke server"
+    "noServer": "Tanpa pengiriman data ke server",
+    "printStudioBtn": "Cetak / Lembar Stiker A4 PDF"
   },
   "footer": {
     "privacy": "Kebijakan Privasi",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Generator Barcode Online Gratis - Membuat Barcode 1D",
       "desc": "Hasilkan kode batang 1D profesional secara instan. Dukungan untuk Kode-128, UPC, EAN, ITF-14, dan banyak lagi. Gratis, aman, dan siap diunduh dalam format PNG resolusi tinggi."
-    }
+    },
+    "printStudioBtn": "Cetak / Lembar Stiker A4 PDF"
   },
   "nav": {
     "allTools": "Semua Alat",
@@ -1160,7 +1163,9 @@
     "catMedia": "Media & Hiburan",
     "catData": "File & Data",
     "generator": "SEMUA ALAT QR",
-    "barcode": "Pembuat Kode Batang"
+    "barcode": "Pembuat Kode Batang",
+    "bulk": "Batch Massal",
+    "bulkDesc": "CSV / Excel ke ZIP"
   },
   "contact": {
     "title": "Hubungi Kami",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Pindai Kode Batang Secara Online",
       "seoDesc": "Pindai kode batang 1D dan 2D langsung dari kamera atau file gambar lokal dengan aman di memori browser Anda dengan decoding sisi klien yang cepat dan pribadi.",
       "desc": "Pindai kode batang 1D dan 2D langsung dari kamera atau file gambar lokal dengan aman di memori browser Anda dengan decoding sisi klien yang cepat dan pribadi."
+    },
+    "bulk": {
+      "seoTitle": "Generator QR & Kode Batang Massal",
+      "heroTitle": "Kode QR Massal & Generator Kode Batang",
+      "seoDesc": "Hasilkan kumpulan kode QR khusus dan kode batang standar secara bersamaan dari data CSV spreadsheet dengan ekspor ZIP instan dan pencetakan lembar stiker A4.",
+      "desc": "Hasilkan kumpulan kode QR khusus dan kode batang standar secara bersamaan dari data CSV spreadsheet dengan ekspor ZIP instan dan pencetakan lembar stiker A4."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Mode Terang",
     "darkDesc": "Tema gelap hemat daya",
     "lightDesc": "Tema terang bersih"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Butuh kode QR massal? Coba Mesin Batch Pro Massal kami dengan impor CSV dan ekspor ZIP instan.",
+    "bulkBannerLink": "Buka Generator Massal →"
+  },
+  "bulk": {
+    "badge": "Mesin Batch Pro • 100% Sisi Klien",
+    "heroTitle": "Kode QR Massal & Generator Kode Batang",
+    "heroSubtitle": "Impor spreadsheet atau file CSV dan hasilkan ratusan atau ribuan kode QR dan kode batang resolusi tinggi dalam hitungan detik. Tanpa pelacakan data — setiap kode dikompilasi langsung di memori browser Anda.",
+    "featPrivate": "100% Pribadi (Tanpa Upload Server)",
+    "featZip": "Ekspor ZIP Instan",
+    "featPrint": "Cetak PDF Lembar Stiker A4",
+    "step1Title": "Berikan Data Anda (CSV atau Spreadsheet)",
+    "templateCsv": "Templat.csv",
+    "loadSample": "Muat Data Sampel",
+    "tabUpload": "Unggah File CSV / TSV",
+    "tabPaste": "Tempel Dari Excel / Google Spreadsheet",
+    "dropTitle": "Pilih atau Tarik & Jatuhkan File CSV / TSV",
+    "dropLoaded": "Dimuat: {{namafile}}",
+    "dropDesc": "Mendukung file yang dibatasi koma, titik koma, atau Tab. Tidak ada batasan ukuran file.",
+    "pastePlaceholder": "Tempel baris di sini (misalnya dari Excel atau Google Spreadsheet)...",
+    "detectedSummary": "Terdeteksi {{rows}} baris dan {{cols}} kolom",
+    "colData": "Kolom Data/URL:",
+    "colLabel": "Label / Nama File:",
+    "colLabelNone": "Tidak Ada (Penomoran Otomatis)",
+    "moreRecords": "+ {{count}} catatan lainnya akan diproses.",
+    "step2Title": "Konfigurasikan Gaya & Format Kode",
+    "codeType": "Jenis Kode",
+    "typeQr": "Kode QR (2D)",
+    "typeBarcode": "Kode Batang (1D)",
+    "dotPattern": "Pola Titik",
+    "patternSquare": "Kotak Klasik",
+    "patternRounded": "Bulat Halus",
+    "patternDots": "Titik Modern",
+    "eccLevel": "Tingkat Koreksi Kesalahan",
+    "eccL": "L — 7% Restorasi",
+    "eccM": "M — 15% Standar",
+    "eccQ": "Q — 25% Keandalan Tinggi",
+    "eccH": "H — 30% Kekasaran Maksimum",
+    "barcodeStd": "Standar Kode Batang",
+    "exportImgFormat": "Ekspor Format Gambar",
+    "formatPng": "PNG (DPI Tinggi)",
+    "formatSvg": "SVG (Vektor)",
+    "step3Title": "Hasilkan & Unduh",
+    "readySummary": "Siap menghasilkan kode {{count}}",
+    "asyncNotice": "Diproses secara asinkron dalam memori. Tidak ada bandwidth jaringan yang dikonsumsi.",
+    "btnGenerating": "Menghasilkan ({{persen}}%)",
+    "btnGenerate": "Hasilkan {{count}} Kode",
+    "progressSummary": "Memproses ___saat ini{{dari}}total___ item...",
+    "successCompile": "Berhasil mengkompilasi kode {{count}} di memori browser!",
+    "btnPrintPdf": "Cetak PDF Lembar Stiker A4",
+    "btnDownloadZip": "Unduh Semua ({{count}} item) sebagai ZIP",
+    "btnCompressing": "Mengompresi ZIP...",
+    "galleryTitle": "Galeri Kode yang Dihasilkan",
+    "btnSave": "Menyimpan",
+    "galleryLimitNotice": "Menampilkan 48 item pertama. Semua {{count}} item akan disertakan dalam ZIP yang diunduh."
+  },
+  "printStudio": {
+    "modalTitle": "Studio Cetak & Lembar Stiker",
+    "proBadge": "Mesin Pro",
+    "modalSubtitle": "100% tata letak vektor Sisi Klien untuk lembar stiker A4 & Letter Avery / Tom & Jerry",
+    "presetLabel": "Preset Lembar Stiker",
+    "paperFormat": "Format Kertas:",
+    "gridStructure": "Struktur Kotak:",
+    "colsRowsSummary": "{{cols}} kolom × {{baris}} baris ({{total}}/lembar)",
+    "cols": "Kolom:",
+    "rows": "Baris:",
+    "labelWidth": "Lebar Label (mm):",
+    "labelHeight": "Tinggi Label (mm):",
+    "allocation": "Alokasi Stiker",
+    "quantity": "Jumlah yang akan Dicetak:",
+    "stickersCount": "{{count}} stiker",
+    "fill1Page": "Isi 1 Halaman ({{count}})",
+    "fill2Pages": "Isi 2 Halaman ({{count}})",
+    "bulkSequencing": "Mengurutkan {{count}} item dari daftar massal di {{pages}} halaman.",
+    "skipPeels": "Lewati Stiker yang Sebelumnya Dikupas:",
+    "skipSlots": "{{count}} slot",
+    "skipDesc": "Hemat kertas dengan menggunakan kembali lembaran stiker yang sudah terpakai sebagian!",
+    "guidesAndInks": "Panduan Cetak & Tinta",
+    "k100": "K:100% Hitam",
+    "k100Desc": "Monokrom yang tajam",
+    "cropMarks": "Tanda Pangkas",
+    "cropMarksDesc": "Panduan guillotine",
+    "dottedOutlines": "Garis Besar Bertitik",
+    "dottedDesc": "Batas label",
+    "labelTitle": "Judul Label",
+    "labelTitleDesc": "Judul teratas",
+    "labelHeading": "Teks Judul Label:",
+    "labelPlaceholder": "misalnya Pindai Menu / Tabel 1",
+    "pageOf": "Halaman ___saat ini{{dari}}total___",
+    "totalStickers": "Total stiker: {{count}} ({{halaman}} halaman)",
+    "directPrint": "Cetak Langsung",
+    "downloadPdf": "Unduh PDF yang Dapat Dicetak",
+    "generatingPdf": "Menghasilkan PDF...",
+    "emptySlot": "Kosong"
   }
 }

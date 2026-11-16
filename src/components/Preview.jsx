@@ -1,12 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 import QRCodeStyling from 'qr-code-styling';
-import { Download, Check, Clock } from 'lucide-react';
+import { Download, Check, Clock, Printer } from 'lucide-react';
 import { get, set } from 'idb-keyval';
 import { useTranslation } from 'react-i18next';
+const PrintStudioModal = React.lazy(() => import('./PrintStudioModal'));
 
 export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
   const { t } = useTranslation();
   const [isSaved, setIsSaved] = useState(false);
+  const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
+  const [currentCanvasUrl, setCurrentCanvasUrl] = useState('');
   const [qrCode] = useState(new QRCodeStyling({
     width: 300,
     height: 300,
@@ -124,7 +127,25 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
             </button>
           </div>
 
-          <div className="mt-4 w-full">
+          <div className="mt-3 w-full">
+            <button
+              onClick={() => {
+                if (ref.current) {
+                  const canvas = ref.current.querySelector('canvas');
+                  if (canvas) {
+                    setCurrentCanvasUrl(canvas.toDataURL('image/png'));
+                  }
+                }
+                setIsPrintModalOpen(true);
+              }}
+              className="w-full flex items-center justify-center px-4 py-3 bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800/50 hover:bg-purple-100 dark:hover:bg-purple-900/40 rounded-xl transition-all font-semibold shadow-xs text-sm"
+            >
+              <Printer className="w-4 h-4 mr-2 text-purple-600 dark:text-purple-400" />
+              {t('preview.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}
+            </button>
+          </div>
+
+          <div className="mt-3 w-full">
             <button
               onClick={onSaveHistory}
               disabled={isSaved}
@@ -146,6 +167,26 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
             {t('preview.noServer')}
           </div>
         </>
+      )}
+
+      {/* Print Studio Modal */}
+      {isPrintModalOpen && (
+        <React.Suspense fallback={null}>
+          <PrintStudioModal
+            isOpen={isPrintModalOpen}
+            onClose={() => setIsPrintModalOpen(false)}
+            items={[
+              {
+                id: 1,
+                value: qrData?.url || qrData?.text || 'https://createmy-qr.com',
+                title: t(`types.${qrType}`) || 'CreateMy-QR',
+                dataUrl: currentCanvasUrl,
+                type: 'qr'
+              }
+            ]}
+            defaultTitle={t(`types.${qrType}`) || 'QR Code'}
+          />
+        </React.Suspense>
       )}
     </div>
   );

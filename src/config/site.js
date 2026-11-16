@@ -38,6 +38,7 @@ export const PSEO_ROUTES = {
   '/online-booking-qr-code': 'booking',
   '/file-qr-code-generator': 'file',
   '/barcode-generator': 'barcode',
+  '/bulk-qr-generator': 'bulk',
   '/scan-qr': 'scanqr',
   '/scan-barcode': 'scanbarcode',
 };

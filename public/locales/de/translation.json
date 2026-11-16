@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Buchung",
     "file": "Datei",
-    "scanbarcode": "Barcode-Scanner"
+    "scanbarcode": "Barcode-Scanner",
+    "bulk": "Massen-QR und Barcode"
   },
   "form": {
     "enterUrl": "Geben Sie Ihre Website-URL ein",
@@ -129,7 +130,8 @@
     "readyTitle": "Bereit zum Erstellen",
     "readyDesc": "Füllen Sie Ihre Details links aus und klicken Sie auf \"QR-Code erstellen\".",
     "clientSide": "Im Browser generiert",
-    "noServer": "Keine Daten an Server gesendet"
+    "noServer": "Keine Daten an Server gesendet",
+    "printStudioBtn": "Drucken / A4-Aufkleberblatt PDF"
   },
   "footer": {
     "privacy": "Datenschutz",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Kostenloser Online-Barcode-Generator – Erstellen Sie 1D-Barcodes",
       "desc": "Generieren Sie sofort professionelle 1D-Barcodes. Unterstützung für Code-128, UPC, EAN, ITF-14 und mehr. Kostenlos, sicher und bereit zum Download in hochauflösendem PNG."
-    }
+    },
+    "printStudioBtn": "Drucken / A4-Aufkleberblatt PDF"
   },
   "nav": {
     "allTools": "Alle Werkzeuge",
@@ -1160,7 +1163,9 @@
     "catMedia": "Medien und Unterhaltung",
     "catData": "Dateien und Daten",
     "generator": "ALLE QR-TOOLS",
-    "barcode": "Barcode-Ersteller"
+    "barcode": "Barcode-Ersteller",
+    "bulk": "Massencharge",
+    "bulkDesc": "CSV/Excel in ZIP"
   },
   "contact": {
     "title": "Kontaktieren Sie uns",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Barcode online scannen",
       "seoDesc": "Scannen Sie 1D- und 2D-Barcodes direkt von Ihrer Kamera oder lokalen Bilddateien sicher in Ihrem Browserspeicher mit schneller, privater clientseitiger Dekodierung.",
       "desc": "Scannen Sie 1D- und 2D-Barcodes direkt von Ihrer Kamera oder lokalen Bilddateien sicher in Ihrem Browserspeicher mit schneller, privater clientseitiger Dekodierung."
+    },
+    "bulk": {
+      "seoTitle": "Massen-QR- und Barcode-Generator",
+      "heroTitle": "Massen-QR-Code- und Barcode-Generator",
+      "seoDesc": "Generieren Sie Stapel benutzerdefinierter QR-Codes und Standard-Barcodes gleichzeitig aus CSV-Tabellendaten mit sofortigem ZIP-Export und Drucken von A4-Aufkleberbögen.",
+      "desc": "Generieren Sie Stapel benutzerdefinierter QR-Codes und Standard-Barcodes gleichzeitig aus CSV-Tabellendaten mit sofortigem ZIP-Export und Drucken von A4-Aufkleberbögen."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Benötigen Sie Massen-QR-Codes? Testen Sie unsere Pro Bulk Batch Engine mit CSV-Import und sofortigem ZIP-Export.",
+    "bulkBannerLink": "Gehen Sie zu Bulk Generator →"
+  },
+  "bulk": {
+    "badge": "Pro Batch Engine • 100 % clientseitig",
+    "heroTitle": "Massen-QR-Code- und Barcode-Generator",
+    "heroSubtitle": "Importieren Sie Tabellenkalkulationen oder CSV-Dateien und generieren Sie in Sekundenschnelle Hunderte oder Tausende hochauflösender QR-Codes und Barcodes. Keine Datenverfolgung – jeder Code wird direkt in Ihrem Browserspeicher kompiliert.",
+    "featPrivate": "100 % privat (keine Server-Uploads)",
+    "featZip": "Sofortiger ZIP-Export",
+    "featPrint": "A4-Aufkleberblatt PDF-Druck",
+    "step1Title": "Stellen Sie Ihre Daten bereit (CSV oder Tabellenkalkulation)",
+    "templateCsv": "Vorlage.csv",
+    "loadSample": "Beispieldaten laden",
+    "tabUpload": "Laden Sie die CSV-/TSV-Datei hoch",
+    "tabPaste": "Aus Excel/Google Sheets einfügen",
+    "dropTitle": "Wählen Sie eine CSV-/TSV-Datei aus oder ziehen Sie sie per Drag & Drop",
+    "dropLoaded": "Geladen: {{Dateiname}}",
+    "dropDesc": "Unterstützt durch Komma, Semikolon oder Tabulator getrennte Dateien. Keine Dateigrößenbeschränkungen.",
+    "pastePlaceholder": "Fügen Sie hier Zeilen ein (z. B. aus Excel oder Google Sheets) ...",
+    "detectedSummary": "Es wurden {{rows}} Zeilen und {{cols}} Spalten erkannt",
+    "colData": "Daten-/URL-Spalte:",
+    "colLabel": "Label/Dateiname:",
+    "colLabelNone": "Keine (automatische Nummerierung)",
+    "moreRecords": "+ {{count}} weitere Datensätze werden verarbeitet.",
+    "step2Title": "Konfigurieren Sie Codestil und -format",
+    "codeType": "Codetyp",
+    "typeQr": "QR-Code (2D)",
+    "typeBarcode": "Barcode (1D)",
+    "dotPattern": "Punktmuster",
+    "patternSquare": "Klassisches Quadrat",
+    "patternRounded": "Glatt abgerundet",
+    "patternDots": "Moderne Punkte",
+    "eccLevel": "Fehlerkorrekturstufe",
+    "eccL": "L – 7 % Wiederherstellung",
+    "eccM": "M – 15 % Standard",
+    "eccQ": "F – 25 % hohe Zuverlässigkeit",
+    "eccH": "H – 30 % maximale Robustheit",
+    "barcodeStd": "Barcode-Standard",
+    "exportImgFormat": "Bildformat exportieren",
+    "formatPng": "PNG (hohe DPI)",
+    "formatSvg": "SVG (Vektor)",
+    "step3Title": "Generieren und herunterladen",
+    "readySummary": "Bereit, {{count}} Codes zu generieren",
+    "asyncNotice": "Asynchron im Speicher verarbeitet. Keine Netzwerkbandbreite verbraucht.",
+    "btnGenerating": "Generieren ({{Prozent}}%)",
+    "btnGenerate": "Generieren Sie {{count}} Codes",
+    "progressSummary": "{{aktuelle}} von {{total}} Elementen verarbeitet...",
+    "successCompile": "{{count}} Codes im Browserspeicher erfolgreich kompiliert!",
+    "btnPrintPdf": "Drucken Sie den A4-Aufkleberbogen als PDF",
+    "btnDownloadZip": "Laden Sie alle ({{count}} Elemente) als ZIP herunter",
+    "btnCompressing": "ZIP komprimieren...",
+    "galleryTitle": "Generierte Code-Galerie",
+    "btnSave": "Speichern",
+    "galleryLimitNotice": "Die ersten 48 Artikel werden angezeigt. Alle {{count}} Elemente werden in der heruntergeladenen ZIP-Datei enthalten sein."
+  },
+  "printStudio": {
+    "modalTitle": "Druck- und Aufkleberbogenstudio",
+    "proBadge": "Pro Engine",
+    "modalSubtitle": "100 % kundenseitiges Vektorlayout für Avery/Tom & Jerry-Aufkleberbögen im A4- und Letter-Format",
+    "presetLabel": "Aufkleberblatt-Voreinstellung",
+    "paperFormat": "Papierformat:",
+    "gridStructure": "Gitterstruktur:",
+    "colsRowsSummary": "{{cols}} Spalten × {{rows}} Zeilen ({{total}}/Blatt)",
+    "cols": "Spalten:",
+    "rows": "Zeilen:",
+    "labelWidth": "Etikettenbreite (mm):",
+    "labelHeight": "Etikettenhöhe (mm):",
+    "allocation": "Aufkleberzuordnung",
+    "quantity": "Zu druckende Menge:",
+    "stickersCount": "{{count}} Aufkleber",
+    "fill1Page": "1 Seite füllen ({{count}})",
+    "fill2Pages": "Füllen Sie 2 Seiten ({{count}})",
+    "bulkSequencing": "Reihenfolge von {{count}} Elementen aus der Massenliste über {{pages}} Seite(n).",
+    "skipPeels": "Zuvor abgezogene Aufkleber überspringen:",
+    "skipSlots": "{{count}} Slots",
+    "skipDesc": "Sparen Sie Papier, indem Sie teilweise gebrauchte Aufkleberbögen wiederverwenden!",
+    "guidesAndInks": "Druckanleitungen und Tinten",
+    "k100": "K: 100 % Schwarz",
+    "k100Desc": "Klares Monochrom",
+    "cropMarks": "Schnittmarken",
+    "cropMarksDesc": "Guillotine-Führer",
+    "dottedOutlines": "Gepunktete Umrisse",
+    "dottedDesc": "Beschriftungsgrenze",
+    "labelTitle": "Etikettentitel",
+    "labelTitleDesc": "Obere Bildunterschrift",
+    "labelHeading": "Text der Beschriftungsüberschrift:",
+    "labelPlaceholder": "z.B. Suchen Sie nach Menü/Tabelle 1",
+    "pageOf": "Seite {{aktuell}} von {{total}}",
+    "totalStickers": "Gesamtzahl der Sticker: {{count}} ({{pages}} Seiten)",
+    "directPrint": "Direktdruck",
+    "downloadPdf": "Druckbares PDF herunterladen",
+    "generatingPdf": "PDF wird erstellt...",
+    "emptySlot": "Leer"
   }
 }

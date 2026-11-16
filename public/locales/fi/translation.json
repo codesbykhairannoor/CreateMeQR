@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Varaus",
     "file": "Tiedosto",
-    "scanbarcode": "Viivakoodinlukija"
+    "scanbarcode": "Viivakoodinlukija",
+    "bulk": "Joukko QR ja viivakoodi"
   },
   "form": {
     "enterUrl": "Anna verkkosivustosi URL-osoite",
@@ -129,7 +130,8 @@
     "readyTitle": "Ilmainen QR-koodigeneraattori Netissä",
     "readyDesc": "Luo QR-koodeja Logolla ja Värillä - Ei Rekisteröintiä, Rajaton",
     "clientSide": "Asiakaspuolen luotu",
-    "noServer": "Palvelimelle ei lähetetty tietoja"
+    "noServer": "Palvelimelle ei lähetetty tietoja",
+    "printStudioBtn": "Tulosta / A4-tarra-arkki PDF"
   },
   "footer": {
     "privacy": "Tietosuojakäytäntö",
@@ -1134,7 +1136,8 @@
     "seo": {
       "title": "Ilmainen viivakoodigeneraattori verkossa - Luo 1D-viivakoodeja",
       "desc": "Luo ammattimaisia ​​1D-viivakoodeja välittömästi. Tuki Code-128:lle, UPC:lle, EAN:lle, ITF-14:lle ja muille. Ilmainen, turvallinen ja valmis ladattavaksi korkearesoluutioisena PNG-muodossa."
-    }
+    },
+    "printStudioBtn": "Tulosta / A4-tarra-arkki PDF"
   },
   "nav": {
     "allTools": "Kaikki työkalut",
@@ -1160,7 +1163,9 @@
     "catMedia": "Media ja viihde",
     "catData": "Tiedostot ja tiedot",
     "generator": "KAIKKI QR-TYÖKALUT",
-    "barcode": "Viivakoodin valmistaja"
+    "barcode": "Viivakoodin valmistaja",
+    "bulk": "Bulkkierä",
+    "bulkDesc": "CSV / Excel ZIP: ksi"
   },
   "contact": {
     "title": "Ota yhteyttä",
@@ -1533,6 +1538,12 @@
       "seoTitle": "Skannaa viivakoodi verkossa",
       "seoDesc": "Skannaa 1D- ja 2D-viivakoodeja suoraan kamerasta tai paikallisista kuvatiedostoista turvallisesti selaimesi muistiin nopealla, yksityisellä asiakaspuolen dekoodauksella.",
       "desc": "Skannaa 1D- ja 2D-viivakoodeja suoraan kamerasta tai paikallisista kuvatiedostoista turvallisesti selaimesi muistiin nopealla, yksityisellä asiakaspuolen dekoodauksella."
+    },
+    "bulk": {
+      "seoTitle": "Bulkki QR- ja viivakoodigeneraattori",
+      "heroTitle": "Bulk QR-koodi ja viivakoodigeneraattori",
+      "seoDesc": "Luo eriä mukautettuja QR-koodeja ja tavallisia viivakoodeja samanaikaisesti laskentataulukon CSV-tiedoista nopealla ZIP-viennillä ja A4-tarra-arkkitulostuksella.",
+      "desc": "Luo eriä mukautettuja QR-koodeja ja tavallisia viivakoodeja samanaikaisesti laskentataulukon CSV-tiedoista nopealla ZIP-viennillä ja A4-tarra-arkkitulostuksella."
     }
   },
   "rating": {
@@ -1755,5 +1766,100 @@
     "light": "Light Mode",
     "darkDesc": "Dark OLED theme",
     "lightDesc": "Clean daylight view"
+  },
+  "workspace": {
+    "bulkBannerTitle": "Tarvitsetko joukko QR-koodeja? Kokeile Pro Bulk Batch Engine -ohjelmaamme, jossa on CSV-tuonti ja välitön ZIP-vienti.",
+    "bulkBannerLink": "Siirry kohtaan Bulk Generator →"
+  },
+  "bulk": {
+    "badge": "Pro Batch Engine • 100 % asiakaspuoli",
+    "heroTitle": "Bulk QR-koodi ja viivakoodigeneraattori",
+    "heroSubtitle": "Tuo laskentataulukoita tai CSV-tiedostoja ja luo satoja tai tuhansia korkearesoluutioisia QR-koodeja ja viivakoodeja sekunneissa. Nollatietojen seurantaa — jokainen koodi käännetään suoraan selaimesi muistiin.",
+    "featPrivate": "100 % yksityinen (ei palvelinlatauksia)",
+    "featZip": "Välitön ZIP-vienti",
+    "featPrint": "A4-tarraarkki PDF-tulostus",
+    "step1Title": "Anna tietosi (CSV tai laskentataulukot)",
+    "templateCsv": "Malli.csv",
+    "loadSample": "Lataa näytetiedot",
+    "tabUpload": "Lataa CSV/TSV-tiedosto",
+    "tabPaste": "Liitä Excelistä / Google Sheetsistä",
+    "dropTitle": "Valitse tai vedä ja pudota CSV-/TSV-tiedosto",
+    "dropLoaded": "Ladattu: {{fileName}}",
+    "dropDesc": "Tukee pilkulla, puolipisteellä tai sarkaimella eroteltuja tiedostoja. Ei tiedostokokorajoituksia.",
+    "pastePlaceholder": "Liitä rivit tähän (esim. Excelistä tai Google Sheetsistä)...",
+    "detectedSummary": "Havaittu {{rows}} riviä ja {{cols}} saraketta",
+    "colData": "Data/URL-sarake:",
+    "colLabel": "Tunniste/tiedostonimi:",
+    "colLabelNone": "Ei mitään (automaattinen numerointi)",
+    "moreRecords": "+ {{count}} lisää tietueita käsitellään.",
+    "step2Title": "Määritä koodin tyyli ja muoto",
+    "codeType": "Koodityyppi",
+    "typeQr": "QR-koodi (2D)",
+    "typeBarcode": "Viivakoodi (1D)",
+    "dotPattern": "Pistekuvio",
+    "patternSquare": "Klassinen neliö",
+    "patternRounded": "Tasainen pyöristetty",
+    "patternDots": "Modernit pisteet",
+    "eccLevel": "Virheenkorjaustaso",
+    "eccL": "L - 7 % restaurointi",
+    "eccM": "M - 15 % Vakio",
+    "eccQ": "Q – 25 % korkea luotettavuus",
+    "eccH": "H – 30 % suurin lujuus",
+    "barcodeStd": "Viivakoodi standardi",
+    "exportImgFormat": "Vie kuvamuoto",
+    "formatPng": "PNG (korkea DPI)",
+    "formatSvg": "SVG (vektori)",
+    "step3Title": "Luo ja lataa",
+    "readySummary": "Valmiina luomaan {{count}} koodia",
+    "asyncNotice": "Käsitelty asynkronisesti muistissa. Ei kulutettu verkon kaistanleveyttä.",
+    "btnGenerating": "Luodaan ({{prosenttia}}%)",
+    "btnGenerate": "Luo {{count}} koodia",
+    "progressSummary": "Käsitelty {{nykyinen}} / ___yhteensä___ kohdetta...",
+    "successCompile": "Onnistuneesti käännetty {{count}} koodia selaimen muistiin!",
+    "btnPrintPdf": "Tulosta A4-tarra-arkki PDF",
+    "btnDownloadZip": "Lataa kaikki ({{count}} kohdetta) ZIP-muodossa",
+    "btnCompressing": "Pakkaaminen ZIP...",
+    "galleryTitle": "Luotu koodigalleria",
+    "btnSave": "Tallentaa",
+    "galleryLimitNotice": "Näytetään 48 ensimmäistä kohdetta. Kaikki {{count}} kohdetta sisällytetään ladattavaan ZIP-pakettiin."
+  },
+  "printStudio": {
+    "modalTitle": "Print & Sticker Sheet Studio",
+    "proBadge": "Pro Engine",
+    "modalSubtitle": "100 % asiakaspuolen vektoriasettelu A4- ja Letter Avery/Tom & Jerry -tarraarkeille",
+    "presetLabel": "Tarra-arkki valmiiksi asetettu",
+    "paperFormat": "Paperimuoto:",
+    "gridStructure": "Verkkorakenne:",
+    "colsRowsSummary": "{{saraketta}} saraketta × ___riviä___ riviä (___yhteensä___/arkki)",
+    "cols": "Sarakkeet:",
+    "rows": "Rivit:",
+    "labelWidth": "Tarran leveys (mm):",
+    "labelHeight": "Tarran korkeus (mm):",
+    "allocation": "Tarran jako",
+    "quantity": "Tulostettava määrä:",
+    "stickersCount": "{{count}} tarroja",
+    "fill1Page": "Täytä 1 sivu ({{count}})",
+    "fill2Pages": "Täytä 2 sivua ({{count}})",
+    "bulkSequencing": "Järjestetään {{count}} kohdetta joukkoluettelosta {{sivuilla}} sivuilla.",
+    "skipPeels": "Ohita aiemmin irrotetut tarrat:",
+    "skipSlots": "{{count}} paikkaa",
+    "skipDesc": "Säästä paperia käyttämällä uudelleen osittain käytettyjä tarra-arkkeja!",
+    "guidesAndInks": "Tulostusoppaat ja musteet",
+    "k100": "K: 100 % musta",
+    "k100Desc": "Raikas yksivärinen",
+    "cropMarks": "Rajausmerkit",
+    "cropMarksDesc": "Giljotiinioppaat",
+    "dottedOutlines": "Pisteviivaiset ääriviivat",
+    "dottedDesc": "Tunnisteen raja",
+    "labelTitle": "Label Otsikko",
+    "labelTitleDesc": "Ylin kuvateksti",
+    "labelHeading": "Tunnisteen otsikkoteksti:",
+    "labelPlaceholder": "esim. Etsi valikko / taulukko 1",
+    "pageOf": "Sivu {{nykyinen}} / ___yhteensä___",
+    "totalStickers": "Tarroja yhteensä: {{count}} ({{sivua}} sivua)",
+    "directPrint": "Suoratulostus",
+    "downloadPdf": "Lataa tulostettava PDF",
+    "generatingPdf": "Luodaan PDF...",
+    "emptySlot": "Tyhjä"
   }
 }
