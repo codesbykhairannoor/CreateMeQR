@@ -1,9 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import {
   Upload, FileSpreadsheet, Download, Printer, CheckCircle2,
   AlertCircle, Sparkles, RefreshCw, Layers, Sliders, Play,
-  FileArchive, ShieldCheck, Zap, ArrowRight, Eye, Trash2, Plus, Copy
+  FileArchive, ShieldCheck, Zap, ArrowRight, Eye, Trash2, Plus, Copy,
+  Crown, Lock
 } from 'lucide-react';
 const PrintStudioModal = React.lazy(() => import('../components/PrintStudioModal'));
 
@@ -70,7 +73,10 @@ Conference Room,https://createmy-qr.com/room/conf-a,CR-101,Office
 Product Sample,https://createmy-qr.com/item/482019,SKU-482019,Retail`;
 
 export default function BulkGenerator() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const { user, isPro, openAuthModal } = useAuth();
+  const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
 
   // Tab & Input States
   const [inputTab, setInputTab] = useState('upload'); // 'upload' | 'paste'
@@ -165,6 +171,15 @@ export default function BulkGenerator() {
   // Generate All in Bulk (Micro-batched for zero-lag UI)
   const handleGenerateBatch = async () => {
     if (!dataCol || parsedData.rows.length === 0) return;
+
+    if (!isPro) {
+      if (!user) {
+        openAuthModal();
+      } else {
+        navigate(`${langPrefix}/pricing`);
+      }
+      return;
+    }
 
     setIsProcessing(true);
     setProgress(0);
@@ -289,6 +304,16 @@ export default function BulkGenerator() {
   // Bundle into a Single ZIP Archive
   const handleDownloadZip = async () => {
     if (generatedResults.length === 0) return;
+
+    if (!isPro) {
+      if (!user) {
+        openAuthModal();
+      } else {
+        navigate(`${langPrefix}/pricing`);
+      }
+      return;
+    }
+
     setIsZipping(true);
 
     try {
@@ -693,6 +718,41 @@ export default function BulkGenerator() {
             </h2>
           </div>
 
+          {/* PRO Guard Banner for Free / Non-logged in Users */}
+          {!isPro && (
+            <div className="mb-6 p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                  <Crown className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-semibold text-slate-900 dark:text-white">
+                      {t('bulk.proGateTitle', 'PRO Batch Processing')}
+                    </span>
+                    <span className="px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wider bg-amber-500 text-slate-900">
+                      PRO Feature
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-600 dark:text-slate-400 mt-0.5 font-normal">
+                    {user
+                      ? t('bulk.proGateDescUser', 'Bulk CSV batch compilation and ZIP download require an active PRO membership.')
+                      : t('bulk.proGateDescGuest', 'Please sign in to your PRO account to generate bulk QR code batches.')}
+                  </p>
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  if (!user) openAuthModal();
+                  else navigate(`${langPrefix}/pricing`);
+                }}
+                className="px-4 py-2 bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-semibold text-xs rounded-xl shadow-md transition-all whitespace-nowrap cursor-pointer hover:opacity-90"
+              >
+                {user ? t('bulk.upgradeBtn', 'Upgrade to PRO') : t('bulk.signInBtn', 'Sign In to Unlock')}
+              </button>
+            </div>
+          )}
+
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <p className="text-sm font-semibold text-slate-800 dark:text-slate-200 mb-1">
@@ -712,6 +772,11 @@ export default function BulkGenerator() {
                 <>
                   <RefreshCw className="w-4 h-4 animate-spin" />
                   <span>{t('bulk.btnGenerating', 'Generating ({{percent}}%)', { percent: progress })}</span>
+                </>
+              ) : !isPro ? (
+                <>
+                  <Crown className="w-4 h-4 text-amber-400" />
+                  <span>{user ? t('bulk.btnUpgradeToGen', 'Upgrade to PRO to Generate') : t('bulk.btnSignInToGen', 'Sign In to Generate Batch')}</span>
                 </>
               ) : (
                 <>
@@ -751,11 +816,23 @@ export default function BulkGenerator() {
               <div className="flex flex-wrap items-center gap-3">
                 {/* Print Sheet Trigger */}
                 <button
-                  onClick={() => setIsPrintModalOpen(true)}
+                  onClick={() => {
+                    if (!isPro) {
+                      if (!user) openAuthModal();
+                      else navigate(`${langPrefix}/pricing`);
+                      return;
+                    }
+                    setIsPrintModalOpen(true);
+                  }}
                   className="px-4 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-xl text-xs font-semibold transition-all flex items-center gap-2 border border-slate-200 dark:border-slate-700 shadow-xs cursor-pointer"
                 >
                   <Printer className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                   <span>{t('bulk.btnPrintPdf', 'Print A4 Sticker Sheet PDF')}</span>
+                  {!isPro && (
+                    <span className="px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 uppercase flex items-center gap-0.5">
+                      <Crown size={9} /> PRO
+                    </span>
+                  )}
                 </button>
 
                 {/* Download ZIP Trigger */}
@@ -766,6 +843,11 @@ export default function BulkGenerator() {
                 >
                   <FileArchive className="w-4 h-4" />
                   <span>{isZipping ? t('bulk.btnCompressing', 'Compressing ZIP...') : t('bulk.btnDownloadZip', 'Download All ({{count}} items) as ZIP', { count: generatedResults.length })}</span>
+                  {!isPro && (
+                    <span className="px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30 uppercase flex items-center gap-0.5">
+                      <Crown size={9} /> PRO
+                    </span>
+                  )}
                 </button>
               </div>
             </div>

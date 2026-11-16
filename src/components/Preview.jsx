@@ -1,12 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import QRCodeStyling from 'qr-code-styling';
-import { Download, Check, Clock, Printer } from 'lucide-react';
+import { Download, Check, Clock, Printer, Crown } from 'lucide-react';
 import { get, set } from 'idb-keyval';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 const PrintStudioModal = React.lazy(() => import('./PrintStudioModal'));
 
 export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const { user, isPro, openAuthModal } = useAuth();
+  const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
   const [isSaved, setIsSaved] = useState(false);
   const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
   const [currentCanvasUrl, setCurrentCanvasUrl] = useState('');
@@ -58,6 +63,15 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
   }, [qrType, qrData, visuals, qrCode]);
 
   const onDownloadClick = (extension) => {
+    if (extension === 'svg' && !isPro) {
+      if (!user) {
+        openAuthModal();
+      } else {
+        navigate(`${langPrefix}/pricing`);
+      }
+      return;
+    }
+
     qrCode.download({
       extension: extension
     });
@@ -120,16 +134,30 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
             </button>
             <button
               onClick={() => onDownloadClick('svg')}
-              className="flex-1 flex items-center justify-center px-4 py-3 bg-white text-zinc-700 border border-blue-100 dark:bg-[#081226] dark:text-zinc-300 dark:border-zinc-700 rounded-xl hover:bg-[#f8fafc] dark:hover:bg-blue-900 transition-colors font-medium shadow-sm"
+              className="flex-1 flex items-center justify-center px-4 py-3 bg-white text-zinc-700 border border-blue-100 dark:bg-[#081226] dark:text-zinc-300 dark:border-zinc-700 rounded-xl hover:bg-[#f8fafc] dark:hover:bg-blue-900 transition-colors font-medium shadow-sm cursor-pointer"
             >
-              <Download className="w-4 h-4 mr-2" />
-              SVG
+              <Download className="w-4 h-4 mr-1.5" />
+              <span>SVG</span>
+              {!isPro && (
+                <span className="ml-1.5 px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 uppercase flex items-center gap-0.5">
+                  <Crown size={9} /> PRO
+                </span>
+              )}
             </button>
           </div>
 
           <div className="mt-3 w-full">
             <button
               onClick={() => {
+                if (!isPro) {
+                  if (!user) {
+                    openAuthModal();
+                    return;
+                  } else {
+                    navigate(`${langPrefix}/pricing`);
+                    return;
+                  }
+                }
                 if (ref.current) {
                   const canvas = ref.current.querySelector('canvas');
                   if (canvas) {
@@ -138,10 +166,15 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
                 }
                 setIsPrintModalOpen(true);
               }}
-              className="w-full flex items-center justify-center px-4 py-3 bg-blue-50/70 dark:bg-blue-950/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/50 hover:bg-blue-100/80 dark:hover:bg-blue-900/40 rounded-xl transition-all font-semibold shadow-xs text-sm"
+              className="w-full flex items-center justify-center px-4 py-3 bg-blue-50/70 dark:bg-blue-950/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/50 hover:bg-blue-100/80 dark:hover:bg-blue-900/40 rounded-xl transition-all font-semibold shadow-xs text-sm cursor-pointer"
             >
               <Printer className="w-4 h-4 mr-2 text-blue-600 dark:text-blue-400" />
-              {t('preview.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}
+              <span>{t('preview.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}</span>
+              {!isPro && (
+                <span className="ml-2 px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 uppercase flex items-center gap-0.5">
+                  <Crown size={9} /> PRO
+                </span>
+              )}
             </button>
           </div>
 

@@ -1,12 +1,17 @@
 import React, { useState, useRef, useEffect, useDeferredValue } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import Barcode from 'react-barcode';
-import { Download, Share2, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen, Clock, Check, Sliders, Binary, Gauge } from 'lucide-react';
+import { Download, Share2, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen, Clock, Check, Sliders, Binary, Gauge, Crown } from 'lucide-react';
 import { get, set } from 'idb-keyval';
 const PrintStudioModal = React.lazy(() => import('../components/PrintStudioModal'));
 
 export default function BarcodeGenerator() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const { user, isPro, openAuthModal } = useAuth();
+  const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
   
   // Barcode states
   const [value, setValue] = useState('123456789012');
@@ -190,6 +195,15 @@ export default function BarcodeGenerator() {
 
         <button 
           onClick={() => {
+            if (!isPro) {
+              if (!user) {
+                openAuthModal();
+                return;
+              } else {
+                navigate(`${langPrefix}/pricing`);
+                return;
+              }
+            }
             if (barcodeRef.current) {
               const svg = barcodeRef.current.querySelector('svg');
               if (svg) {
@@ -210,9 +224,15 @@ export default function BarcodeGenerator() {
               }
             }
           }}
-          className="w-full bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all flex items-center justify-center gap-2 hover:-translate-y-1"
+          className="w-full bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all flex items-center justify-center gap-2 hover:-translate-y-1 cursor-pointer"
         >
-          <Printer className="w-5 h-5" /> {t('barcode.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}
+          <Printer className="w-5 h-5" />
+          <span>{t('barcode.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}</span>
+          {!isPro && (
+            <span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30 uppercase flex items-center gap-1">
+              <Crown size={10} /> PRO
+            </span>
+          )}
         </button>
         
         <button

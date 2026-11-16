@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { X, Printer, Download, Settings, Grid, FileText, Check, ChevronLeft, ChevronRight, Sliders, Sparkles, Layers } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
+import { X, Printer, Download, Settings, Grid, FileText, Check, ChevronLeft, ChevronRight, Sliders, Sparkles, Layers, Crown, Lock } from 'lucide-react';
 
 // Standard Paper Dimensions in mm
 const PAPERS = {
@@ -125,7 +127,10 @@ const PRESETS = [
 ];
 
 export default function PrintStudioModal({ isOpen, onClose, items = [], defaultTitle = '' }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const { user, isPro, openAuthModal } = useAuth();
+  const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
 
   // Grid Configuration States
   const [selectedPreset, setSelectedPreset] = useState('a4_24');
@@ -214,6 +219,16 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
 
   // Generate and Download Vector PDF via jsPDF
   const handleDownloadPdf = async () => {
+    if (!isPro) {
+      onClose();
+      if (!user) {
+        openAuthModal();
+      } else {
+        navigate(`${langPrefix}/pricing`);
+      }
+      return;
+    }
+
     setIsExporting(true);
     try {
       const { jsPDF } = await import('jspdf');
@@ -327,6 +342,16 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
 
   // Direct Browser Print
   const handleDirectPrint = () => {
+    if (!isPro) {
+      onClose();
+      if (!user) {
+        openAuthModal();
+      } else {
+        navigate(`${langPrefix}/pricing`);
+      }
+      return;
+    }
+
     window.print();
   };
 
@@ -372,6 +397,37 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
           {/* Left Column: Settings Panel (5 cols) */}
           <div className="lg:col-span-5 p-6 overflow-y-auto border-r border-slate-200 dark:border-[#1e2d4a] space-y-6">
             
+            {/* PRO Gate Warning if User is Free or Not Logged In */}
+            {!isPro && (
+              <div className="p-3.5 bg-amber-500/10 border border-amber-500/30 rounded-2xl flex items-center justify-between gap-3 text-xs">
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <div className="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                    <Crown className="w-4 h-4" />
+                  </div>
+                  <div className="min-w-0">
+                    <div className="font-semibold text-slate-900 dark:text-white truncate">
+                      {t('printStudio.proNoticeTitle', 'Print Studio is a PRO Feature')}
+                    </div>
+                    <div className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
+                      {user
+                        ? t('printStudio.proNoticeDescUser', 'Upgrade to PRO to download vector PDF and print sticker sheets.')
+                        : t('printStudio.proNoticeDescGuest', 'Sign in to PRO to export printable sticker sheets.')}
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onClick={() => {
+                    onClose();
+                    if (!user) openAuthModal();
+                    else navigate(`${langPrefix}/pricing`);
+                  }}
+                  className="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold rounded-xl text-xs whitespace-nowrap shadow-xs cursor-pointer transition-colors shrink-0"
+                >
+                  {user ? t('printStudio.upgradeBtn', 'Upgrade') : t('printStudio.signInBtn', 'Sign In')}
+                </button>
+              </div>
+            )}
+
             {/* 1. Sheet Preset Selector */}
             <div>
               <label className="block text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2 flex items-center gap-1.5">
@@ -709,18 +765,25 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
               <div className="flex items-center gap-2">
                 <button
                   onClick={handleDirectPrint}
-                  className="px-4 py-2.5 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-white rounded-xl text-xs font-bold transition-all flex items-center gap-1.5"
+                  className="px-4 py-2.5 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-white rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer"
                 >
-                  <Printer className="w-4 h-4" /> {t('printStudio.directPrint', 'Direct Print')}
+                  {!isPro ? <Crown className="w-4 h-4 text-amber-500" /> : <Printer className="w-4 h-4" />}
+                  <span>{!isPro ? (user ? 'Upgrade to Print' : 'Sign In to Print') : t('printStudio.directPrint', 'Direct Print')}</span>
                 </button>
 
                 <button
                   disabled={isExporting}
                   onClick={handleDownloadPdf}
-                  className="px-5 py-2.5 bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white rounded-xl text-xs font-semibold shadow-md shadow-blue-500/20 transition-all flex items-center gap-1.5 disabled:opacity-50"
+                  className="px-5 py-2.5 bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white rounded-xl text-xs font-semibold shadow-md shadow-blue-500/20 transition-all flex items-center gap-1.5 disabled:opacity-50 cursor-pointer"
                 >
-                  <Download className="w-4 h-4" />
-                  {isExporting ? t('printStudio.generatingPdf', 'Generating PDF...') : t('printStudio.downloadPdf', 'Download Printable PDF')}
+                  {!isPro ? <Crown className="w-4 h-4 text-amber-300" /> : <Download className="w-4 h-4" />}
+                  <span>
+                    {isExporting 
+                      ? t('printStudio.generatingPdf', 'Generating PDF...') 
+                      : !isPro 
+                        ? (user ? 'Upgrade to Download PDF' : 'Sign In to Download PDF') 
+                        : t('printStudio.downloadPdf', 'Download Printable PDF')}
+                  </span>
                 </button>
               </div>
             </div>
