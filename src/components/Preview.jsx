@@ -138,9 +138,9 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
                 }
                 setIsPrintModalOpen(true);
               }}
-              className="w-full flex items-center justify-center px-4 py-3 bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800/50 hover:bg-purple-100 dark:hover:bg-purple-900/40 rounded-xl transition-all font-semibold shadow-xs text-sm"
+              className="w-full flex items-center justify-center px-4 py-3 bg-blue-50/70 dark:bg-blue-950/30 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/50 hover:bg-blue-100/80 dark:hover:bg-blue-900/40 rounded-xl transition-all font-semibold shadow-xs text-sm"
             >
-              <Printer className="w-4 h-4 mr-2 text-purple-600 dark:text-purple-400" />
+              <Printer className="w-4 h-4 mr-2 text-blue-600 dark:text-blue-400" />
               {t('preview.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}
             </button>
           </div>

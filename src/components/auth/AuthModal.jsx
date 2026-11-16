@@ -1,5 +1,5 @@
 // src/components/auth/AuthModal.jsx
-// Beautiful authentication modal for CreateMy-QR (Login, Register, Forgot Password, Google Auth)
+// Clean authentication modal for CreateMy-QR (Login, Register, Forgot Password, Google Auth)
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { X, Loader2, AlertCircle, CheckCircle2, ShieldCheck, Mail, Lock, ArrowLeft, KeyRound } from 'lucide-react';
@@ -217,14 +217,14 @@ export default function AuthModal() {
           resetForm();
           closeAuthModal();
         }}
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm animate-fade-in"
+        className="fixed inset-0 bg-slate-950/70 backdrop-blur-sm animate-fade-in"
       />
 
       {/* Modal Window */}
-      <div className="relative w-full max-w-md bg-white dark:bg-[#0c1831] rounded-3xl shadow-2xl border border-zinc-200 dark:border-[#1e2d4a] p-6 md:p-8 z-10 overflow-hidden animate-fade-in-up">
-        {/* Decorative ambient glow */}
-        <div className="absolute top-0 right-0 w-48 h-48 bg-purple-500/10 dark:bg-purple-600/15 blur-3xl pointer-events-none rounded-full" />
-        <div className="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/10 dark:bg-blue-600/15 blur-3xl pointer-events-none rounded-full" />
+      <div className="relative w-full max-w-md bg-white dark:bg-[#081226] rounded-3xl shadow-2xl border border-slate-200 dark:border-[#102040] p-6 md:p-8 z-10 overflow-hidden animate-fade-in-up">
+        {/* Subtle Brand Ambient Glow */}
+        <div className="absolute top-0 right-0 w-48 h-48 bg-blue-600/10 dark:bg-blue-500/15 blur-3xl pointer-events-none rounded-full" />
+        <div className="absolute bottom-0 left-0 w-48 h-48 bg-slate-900/10 dark:bg-blue-700/10 blur-3xl pointer-events-none rounded-full" />
 
         {/* Close button */}
         <button
@@ -232,7 +232,7 @@ export default function AuthModal() {
             resetForm();
             closeAuthModal();
           }}
-          className="absolute top-4 right-4 p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+          className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 rounded-full hover:bg-slate-100 dark:hover:bg-[#0c1831] transition-colors cursor-pointer"
           aria-label="Close"
         >
           <X className="w-5 h-5" />
@@ -240,16 +240,16 @@ export default function AuthModal() {
 
         {/* Header */}
         <div className="text-center mb-6 relative z-10">
-          <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 mb-3 border border-purple-100 dark:border-purple-800/40 shadow-sm">
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-blue-50 dark:bg-blue-950/50 text-blue-600 dark:text-blue-400 mb-3 border border-blue-100 dark:border-blue-900/50 shadow-sm">
             {mode === 'forgot' || mode === 'reset' ? <KeyRound className="w-6 h-6" /> : <ShieldCheck className="w-6 h-6" />}
           </div>
-          <h3 className="text-2xl font-black text-zinc-900 dark:text-white tracking-tight">
+          <h3 className="text-2xl font-black text-slate-900 dark:text-white tracking-tight">
             {mode === 'signin' && t('auth.signInTitle', { defaultValue: 'Sign In to CreateMy-QR' })}
             {mode === 'signup' && t('auth.signUpTitle', { defaultValue: 'Create an Account' })}
             {mode === 'forgot' && t('auth.forgotPasswordTitle', { defaultValue: 'Reset Password' })}
             {mode === 'reset' && t('auth.resetNewPasswordTitle', { defaultValue: 'Set New Password' })}
           </h3>
-          <p className="text-xs md:text-sm text-zinc-500 dark:text-zinc-400 mt-1.5 leading-relaxed">
+          <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
             {mode === 'signin' &&
               t('auth.signInSubtitle', {
                 defaultValue: 'Access your account, sync history, and unlock PRO Lifetime features.',
@@ -289,18 +289,18 @@ export default function AuthModal() {
         <form onSubmit={handleEmailAuth} className="space-y-4 mb-4 relative z-10">
           {mode !== 'reset' && (
             <div>
-              <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-1.5 uppercase tracking-wider">
+              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">
                 {t('auth.emailLabel', { defaultValue: 'Email Address' })}
               </label>
               <div className="relative">
-                <Mail className="w-4 h-4 text-zinc-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                 <input
                   type="email"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder={t('auth.emailPlaceholder', { defaultValue: 'you@domain.com' })}
-                  className="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-zinc-200 dark:border-[#1e2d4a] bg-zinc-50 dark:bg-[#081226] text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all font-medium"
+                  className="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-[#102040] bg-slate-50 dark:bg-[#040a18] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-600 transition-all font-medium"
                 />
               </div>
             </div>
@@ -309,7 +309,7 @@ export default function AuthModal() {
           {mode !== 'forgot' && (
             <div>
               <div className="flex items-center justify-between mb-1.5">
-                <label className="block text-xs font-bold text-zinc-700 dark:text-zinc-300 uppercase tracking-wider">
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">
                   {mode === 'reset'
                     ? t('auth.newPasswordLabel', { defaultValue: 'New Password' })
                     : t('auth.passwordLabel', { defaultValue: 'Password' })}
@@ -318,14 +318,14 @@ export default function AuthModal() {
                   <button
                     type="button"
                     onClick={() => handleSwitchMode('forgot')}
-                    className="text-xs text-purple-600 dark:text-purple-400 hover:underline cursor-pointer font-semibold"
+                    className="text-xs text-blue-600 dark:text-blue-400 hover:underline cursor-pointer font-semibold"
                   >
                     {t('auth.forgotPasswordLink', { defaultValue: 'Forgot password?' })}
                   </button>
                 )}
               </div>
               <div className="relative">
-                <Lock className="w-4 h-4 text-zinc-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                 <input
                   type="password"
                   required
@@ -333,7 +333,7 @@ export default function AuthModal() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder={t('auth.passwordPlaceholder', { defaultValue: '••••••••' })}
-                  className="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-zinc-200 dark:border-[#1e2d4a] bg-zinc-50 dark:bg-[#081226] text-zinc-900 dark:text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all font-medium"
+                  className="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-[#102040] bg-slate-50 dark:bg-[#040a18] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-600 transition-all font-medium"
                 />
               </div>
             </div>
@@ -342,7 +342,7 @@ export default function AuthModal() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 px-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-sm rounded-xl shadow-lg shadow-purple-500/20 active:scale-[0.99] transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+            className="w-full py-3 px-4 bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-900/20 active:scale-[0.99] transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
           >
             {loading ? (
               <>
@@ -371,7 +371,7 @@ export default function AuthModal() {
             <button
               type="button"
               onClick={() => handleSwitchMode('signin')}
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-zinc-600 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors cursor-pointer uppercase tracking-wider"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer uppercase tracking-wider"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
               <span>{t('auth.backToSignIn', { defaultValue: 'Back to Sign In' })}</span>
@@ -384,8 +384,8 @@ export default function AuthModal() {
           <div className="relative z-10">
             {/* Divider */}
             <div className="relative flex items-center justify-center my-4">
-              <div className="border-t border-zinc-200 dark:border-zinc-800 w-full" />
-              <span className="bg-white dark:bg-[#0c1831] px-3 text-[11px] font-bold text-zinc-400 uppercase tracking-widest shrink-0">
+              <div className="border-t border-slate-200 dark:border-[#102040] w-full" />
+              <span className="bg-white dark:bg-[#081226] px-3 text-[11px] font-bold text-slate-400 uppercase tracking-widest shrink-0">
                 {t('auth.orDivider', { defaultValue: 'OR' })}
               </span>
             </div>
@@ -396,7 +396,7 @@ export default function AuthModal() {
                 type="button"
                 onClick={handleGoogleSignIn}
                 disabled={loading}
-                className="w-full flex items-center justify-center gap-3 px-4 py-2.5 bg-white hover:bg-zinc-50 dark:bg-[#081226] dark:hover:bg-[#102040] text-zinc-800 dark:text-zinc-100 font-bold text-sm rounded-xl border border-zinc-200 dark:border-[#1e2d4a] shadow-sm hover:shadow transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+                className="w-full flex items-center justify-center gap-3 px-4 py-2.5 bg-white hover:bg-slate-50 dark:bg-[#0c1831] dark:hover:bg-[#102040] text-slate-800 dark:text-slate-100 font-bold text-sm rounded-xl border border-slate-200 dark:border-[#102040] shadow-sm hover:shadow transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
               >
                 <svg className="w-4 h-4" viewBox="0 0 24 24">
                   <path
@@ -420,14 +420,14 @@ export default function AuthModal() {
               </button>
 
               {/* Mode switch */}
-              <div className="text-center text-xs text-zinc-500 dark:text-zinc-400">
+              <div className="text-center text-xs text-slate-500 dark:text-slate-400">
                 {mode === 'signin' ? (
                   <>
                     <span>{t('auth.noAccount', { defaultValue: "Don't have an account?" })}{' '}</span>
                     <button
                       type="button"
                       onClick={() => handleSwitchMode('signup')}
-                      className="font-bold text-purple-600 dark:text-purple-400 hover:underline cursor-pointer"
+                      className="font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
                     >
                       {t('auth.switchToSignUp', { defaultValue: 'Sign up free' })}
                     </button>
@@ -438,7 +438,7 @@ export default function AuthModal() {
                     <button
                       type="button"
                       onClick={() => handleSwitchMode('signin')}
-                      className="font-bold text-purple-600 dark:text-purple-400 hover:underline cursor-pointer"
+                      className="font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
                     >
                       {t('auth.switchToSignIn', { defaultValue: 'Sign in' })}
                     </button>
@@ -447,7 +447,7 @@ export default function AuthModal() {
               </div>
 
               {/* Note on security */}
-              <p className="text-center text-[10px] text-zinc-400 dark:text-zinc-500 leading-relaxed px-2 pt-2 border-t border-zinc-100 dark:border-zinc-800/80">
+              <p className="text-center text-[10px] text-slate-400 dark:text-slate-500 leading-relaxed px-2 pt-2 border-t border-slate-100 dark:border-[#102040]">
                 {t('auth.privacyNote', {
                   defaultValue: '100% Client-Side Privacy. Your QR data and history never leave your browser.',
                 })}

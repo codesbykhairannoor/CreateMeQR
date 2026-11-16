@@ -19,9 +19,9 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
         <div className="p-3 mb-3 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 rounded-2xl flex items-center justify-between shadow-xs">
           <div className="flex items-center gap-2.5 min-w-0">
             {user.photoURL ? (
-              <img src={user.photoURL} alt={user.displayName || 'User'} className="w-8 h-8 rounded-full object-cover border border-purple-400" />
+              <img src={user.photoURL} alt={user.displayName || 'User'} className="w-8 h-8 rounded-full object-cover border border-blue-500" />
             ) : (
-              <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-purple-600 to-indigo-600 text-white font-bold text-xs flex items-center justify-center shrink-0">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white font-bold text-xs flex items-center justify-center shrink-0">
                 {(user.displayName?.[0] || user.email?.[0] || 'U').toUpperCase()}
               </div>
             )}
@@ -29,7 +29,7 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
               <p className="text-xs font-bold text-zinc-900 dark:text-white truncate">{user.displayName || user.email}</p>
               <div className="flex items-center gap-1.5 mt-0.5">
                 {isPro ? (
-                  <span className="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 text-[10px] font-black uppercase tracking-wider">
+                  <span className="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 text-[10px] font-black uppercase tracking-wider">
                     <Crown size={10} /> PRO
                   </span>
                 ) : (
@@ -55,7 +55,7 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
             onClose();
             openAuthModal();
           }}
-          className="w-full mb-3 py-2.5 px-4 rounded-xl bg-purple-50 hover:bg-purple-100 dark:bg-purple-950/40 dark:hover:bg-purple-900/50 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800/50 text-xs font-bold flex items-center justify-center gap-2 transition-all shadow-xs cursor-pointer"
+          className="w-full mb-3 py-2.5 px-4 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-md shadow-blue-900/20 cursor-pointer"
         >
           <User size={16} />
           <span>{t('auth.signInBtn', 'Sign In / Create Account')}</span>
@@ -109,7 +109,7 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
         <RouterLink 
           to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} 
           onClick={onClose} 
-          className="flex items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-slate-800 dark:text-slate-200 text-[11px] uppercase transition-colors hover:border-purple-400 shadow-xs text-center tracking-tight leading-tight"
+          className="flex items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-slate-800 dark:text-slate-200 text-[11px] uppercase transition-colors hover:border-blue-400 shadow-xs text-center tracking-tight leading-tight"
         >
           {t('nav.barcode', 'Barcode Maker')}
         </RouterLink>
@@ -119,9 +119,9 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
       <RouterLink 
         to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['bulk'] || '/bulk-qr-generator'}`} 
         onClick={onClose} 
-        className="w-full mb-3 flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600/10 to-indigo-600/10 border border-purple-500/40 py-2.5 px-3 rounded-xl font-black text-purple-700 dark:text-purple-300 text-[11px] uppercase transition-all shadow-xs"
+        className="w-full mb-3 flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600/10 to-indigo-600/10 border border-blue-500/30 py-2.5 px-3 rounded-xl font-black text-blue-700 dark:text-blue-300 text-[11px] uppercase transition-all shadow-xs"
       >
-        <span className="w-2 h-2 rounded-full bg-purple-500 animate-pulse"></span>
+        <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
         {t('nav.bulk', 'Bulk Batch')} (CSV / Excel)
       </RouterLink>
 

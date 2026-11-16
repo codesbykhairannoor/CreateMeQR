@@ -100,16 +100,16 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUs
       {/* Generator Application Workspace */}
       <section className="max-w-7xl mx-auto px-6 mb-32 lg:mb-48">
         {/* Bulk Batch Callout Banner */}
-        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-purple-500/10 via-indigo-500/10 to-blue-500/10 border border-purple-500/30 text-xs shadow-sm">
+        <div className="mb-6 flex flex-wrap items-center justify-between gap-3 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-blue-600/10 via-sky-600/10 to-blue-600/10 border border-blue-500/30 text-xs shadow-sm">
           <div className="flex items-center gap-2.5">
-            <span className="flex h-2.5 w-2.5 rounded-full bg-purple-500 animate-pulse"></span>
+            <span className="flex h-2.5 w-2.5 rounded-full bg-blue-600 animate-pulse"></span>
             <span className="font-extrabold text-slate-800 dark:text-slate-200">
               {t('workspace.bulkBannerTitle', 'Need to generate hundreds of QR codes from an Excel or CSV file?')}
             </span>
           </div>
           <a
             href={`${langPrefix}/bulk-qr-generator`}
-            className="px-3.5 py-1.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-black text-xs transition-all shadow-sm flex items-center gap-1.5"
+            className="px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white font-black text-xs transition-all shadow-sm flex items-center gap-1.5"
           >
             {t('workspace.bulkBannerLink', 'Launch Bulk CSV Generator →')}
           </a>

@@ -266,8 +266,8 @@ export default function ScanQr() {
             </p>
           </div>
           <div className="bg-white dark:bg-[#0a1128] p-10 rounded-[2.5rem] border border-slate-200 dark:border-[#1e2d4a] hover:border-blue-500/30 transition-all group shadow-xl">
-            <div className="w-16 h-16 bg-purple-50 dark:bg-purple-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <Zap className="w-8 h-8 text-purple-600 dark:text-purple-400" />
+            <div className="w-16 h-16 bg-blue-50 dark:bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <Zap className="w-8 h-8 text-blue-600 dark:text-blue-400" />
             </div>
             <h3 className="text-2xl font-extrabold mb-4 text-zinc-900 dark:text-white">{t("scanqr.features.fastTitle", "Lightning Fast")}</h3>
             <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">

@@ -137,7 +137,7 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
       </RouterLink>
 
       {/* 3. Barcode Maker (Static Link) */}
-      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} className={`py-1.5 xl:py-2 px-2 xl:px-2.5 rounded-lg text-[10.5px] xl:text-[11.5px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/barcode') ? 'text-purple-600 dark:text-purple-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-purple-600 dark:hover:text-purple-400'}`}>
+      <RouterLink to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} className={`py-1.5 xl:py-2 px-2 xl:px-2.5 rounded-lg text-[10.5px] xl:text-[11.5px] font-bold uppercase whitespace-nowrap transition-all ${location.pathname.includes('/barcode') ? 'text-blue-600 dark:text-blue-400' : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400'}`}>
         {t('nav.barcode', 'Barcode Maker')}
       </RouterLink>
 
@@ -146,11 +146,11 @@ export default function MegaNav({ currentLangCode, onOpenHistory }) {
         to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['bulk'] || '/bulk-qr-generator'}`} 
         className={`flex items-center gap-1.5 py-1.5 xl:py-2 px-2.5 xl:px-3 rounded-lg text-[10.5px] xl:text-[11.5px] font-black uppercase whitespace-nowrap transition-all border ${
           location.pathname.includes('/bulk') 
-            ? 'bg-purple-500/10 border-purple-500 text-purple-600 dark:text-purple-400' 
-            : 'border-purple-200 dark:border-purple-800/40 text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/30'
+            ? 'bg-blue-500/10 border-blue-500 text-blue-600 dark:text-blue-400' 
+            : 'border-blue-200 dark:border-blue-800/40 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30'
         }`}
       >
-        <span className="w-1.5 h-1.5 rounded-full bg-purple-500 animate-pulse"></span>
+        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
         {t('nav.bulk', 'Bulk Batch')}
       </RouterLink>
 

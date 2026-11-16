@@ -575,14 +575,14 @@ export default function HomePage({ currentLangCode = 'en' }) {
             {/* Card 2: Reed-Solomon */}
             <div style={{
               padding: '28px 24px', borderRadius: 24,
-              border: '1px solid rgba(124,58,237,0.15)',
+              border: '1px solid rgba(14,165,233,0.15)',
               background: 'rgba(255,255,255,0.6)',
               backdropFilter: 'blur(12px)',
               display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
-              boxShadow: '0 10px 30px -10px rgba(124,58,237,0.05)'
-            }} className="dark:!bg-[#0c1831]/60 dark:!border-purple-900/40">
+              boxShadow: '0 10px 30px -10px rgba(14,165,233,0.05)'
+            }} className="dark:!bg-[#0c1831]/60 dark:!border-sky-900/40">
               <div>
-                <div style={{ display: 'inline-block', padding: '4px 10px', borderRadius: 8, background: 'rgba(124,58,237,0.1)', color: '#7C3AED', fontSize: '0.72rem', fontWeight: 800, marginBottom: 16 }}>
+                <div style={{ display: 'inline-block', padding: '4px 10px', borderRadius: 8, background: 'rgba(14,165,233,0.1)', color: '#0284c7', fontSize: '0.72rem', fontWeight: 800, marginBottom: 16 }}>
                   SIAM (1960)
                 </div>
                 <h3 style={{ fontSize: '1.15rem', fontWeight: 800, marginBottom: 10, lineHeight: 1.35 }}>
@@ -592,7 +592,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
                   {t('research.homeStandards.card2Desc', 'Polynomial Galois field algorithms (Reed & Solomon, SIAM 1960) allowing up to 30% visual data restoration and custom logo embedding.')}
                 </p>
               </div>
-              <div style={{ marginTop: 20, paddingTop: 14, borderTop: '1px solid rgba(124,58,237,0.1)', fontSize: '0.75rem', fontWeight: 700, opacity: 0.5 }}>
+              <div style={{ marginTop: 20, paddingTop: 14, borderTop: '1px solid rgba(14,165,233,0.1)', fontSize: '0.75rem', fontWeight: 700, opacity: 0.5 }}>
                 📐 {t('research.homeStandards.card2Meta', 'SIAM Journal of Applied Mathematics')}
               </div>
             </div>

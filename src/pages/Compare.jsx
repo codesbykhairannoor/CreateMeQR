@@ -29,7 +29,7 @@ export default function Compare() {
 
         {/* Section 2: Feature Matrix */}
         <section className="w-full py-32 px-6 relative">
-          <div className="absolute -left-40 top-40 w-[500px] h-[500px] bg-purple-600/10 blur-[150px] rounded-full pointer-events-none" />
+          <div className="absolute -left-40 top-40 w-[500px] h-[500px] bg-blue-600/10 blur-[150px] rounded-full pointer-events-none" />
           <div className="max-w-5xl mx-auto relative z-10">
             <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-center mb-16 leading-[1.1]">
               {t('static.compare.matrixTitle', 'Feature Comparison')}

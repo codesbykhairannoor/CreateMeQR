@@ -1,14 +1,14 @@
 // src/components/auth/UserMenu.jsx
-// User Avatar, Pro status indicator, and Authentication Dropdown
+// User Avatar, Pro status indicator, and Authentication Dropdown (CreateMy-QR Blue/Slate Brand)
 
 import React, { useState, useRef, useEffect } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useTranslation } from 'react-i18next';
-import { User, LogOut, Sparkles, Crown, Check, ChevronDown } from 'lucide-react';
+import { User, LogOut, Sparkles, Crown, ChevronDown } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export default function UserMenu({ currentLangCode }) {
-  const { user, profile, isPro, signOut, openAuthModal } = useAuth();
+  const { user, isPro, signOut, openAuthModal } = useAuth();
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,7 @@ export default function UserMenu({ currentLangCode }) {
     return (
       <button
         onClick={openAuthModal}
-        className="flex items-center gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-extrabold text-xs transition-all shadow-md shadow-purple-500/20 active:scale-95 cursor-pointer whitespace-nowrap"
+        className="flex items-center gap-1.5 px-3.5 py-1.5 md:px-4 md:py-2 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-xs transition-all shadow-md shadow-blue-900/20 active:scale-95 cursor-pointer whitespace-nowrap"
       >
         <User className="w-3.5 h-3.5" />
         <span>{t('auth.signInBtn', 'Sign In')}</span>
@@ -61,23 +61,23 @@ export default function UserMenu({ currentLangCode }) {
     <div className="relative" ref={menuRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1.5 p-1 md:pr-2.5 rounded-full hover:bg-zinc-100 dark:hover:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 transition-all cursor-pointer"
+        className="flex items-center gap-1.5 p-1 md:pr-2.5 rounded-full hover:bg-slate-100 dark:hover:bg-[#0c1831] border border-slate-200 dark:border-[#102040] transition-all cursor-pointer"
         aria-label="User Menu"
       >
         {user.photoURL ? (
           <img
             src={user.photoURL}
             alt={user.displayName || 'User'}
-            className="w-7 h-7 md:w-8 md:h-8 rounded-full object-cover border border-purple-400"
+            className="w-7 h-7 md:w-8 md:h-8 rounded-full object-cover border border-blue-500"
           />
         ) : (
-          <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-gradient-to-tr from-purple-600 to-indigo-600 text-white font-bold text-xs flex items-center justify-center shadow-xs">
+          <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white font-bold text-xs flex items-center justify-center shadow-xs">
             {initials}
           </div>
         )}
 
         {isPro && (
-          <span className="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-gradient-to-r from-amber-500 to-orange-500 text-white text-[10px] font-black tracking-wider uppercase shadow-xs">
+          <span className="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 text-[10px] font-black tracking-wider uppercase shadow-xs">
             <Crown className="w-3 h-3" /> PRO
           </span>
         )}
@@ -86,22 +86,22 @@ export default function UserMenu({ currentLangCode }) {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-[#0c1831] rounded-2xl shadow-2xl border border-zinc-200 dark:border-[#1e2d4a] py-2 z-50 animate-fade-in-up">
+        <div className="absolute right-0 mt-2 w-64 bg-white dark:bg-[#081226] rounded-2xl shadow-2xl border border-slate-200 dark:border-[#102040] py-2 z-50 animate-fade-in-up">
           {/* User Info Header */}
-          <div className="px-4 py-3 border-b border-zinc-100 dark:border-[#1e2d4a]">
-            <p className="text-sm font-bold text-zinc-900 dark:text-white truncate">
+          <div className="px-4 py-3 border-b border-slate-100 dark:border-[#102040]">
+            <p className="text-sm font-bold text-slate-900 dark:text-white truncate">
               {user.displayName || 'QR Creator'}
             </p>
-            <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">{user.email}</p>
+            <p className="text-xs text-slate-500 dark:text-slate-400 truncate">{user.email}</p>
             
             <div className="mt-2.5 flex items-center justify-between">
-              <span className="text-[11px] font-semibold text-zinc-400 uppercase tracking-wider">Plan</span>
+              <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Plan</span>
               {isPro ? (
                 <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
                   <Crown className="w-3 h-3" /> PRO Lifetime
                 </span>
               ) : (
-                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
                   Free Tier
                 </span>
               )}
@@ -110,10 +110,10 @@ export default function UserMenu({ currentLangCode }) {
 
           {/* Upgrade CTA if Free */}
           {!isPro && (
-            <div className="p-2 border-b border-zinc-100 dark:border-[#1e2d4a]">
+            <div className="p-2 border-b border-slate-100 dark:border-[#102040]">
               <button
                 onClick={handleUpgrade}
-                className="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold text-xs shadow-md shadow-purple-500/20 transition-all cursor-pointer"
+                className="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-xs shadow-md shadow-blue-900/20 transition-all cursor-pointer"
               >
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Upgrade to PRO Lifetime</span>

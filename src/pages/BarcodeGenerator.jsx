@@ -210,7 +210,7 @@ export default function BarcodeGenerator() {
               }
             }
           }}
-          className="w-full bg-purple-600 hover:bg-purple-500 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all flex items-center justify-center gap-2 hover:-translate-y-1"
+          className="w-full bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all flex items-center justify-center gap-2 hover:-translate-y-1"
         >
           <Printer className="w-5 h-5" /> {t('barcode.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}
         </button>
