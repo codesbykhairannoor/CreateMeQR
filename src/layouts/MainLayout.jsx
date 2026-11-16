@@ -182,7 +182,7 @@ export default function MainLayout({ children }) {
             </div>
 
             {/* Dark Mode toggle on Desktop (On Mobile it is placed conveniently inside the drawer) */}
-            <button onClick={() => setDarkMode(!darkMode)} title="Toggle Dark/Light Mode" className="hidden xl:flex items-center justify-center w-10 h-10 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all">
+            <button onClick={() => setDarkMode(!darkMode)} title="Toggle Dark/Light Mode" className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all">
               {darkMode ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5" />}
             </button>
 
@@ -190,7 +190,7 @@ export default function MainLayout({ children }) {
             <button 
               onClick={() => setShowMobileNav(!showMobileNav)} 
               aria-label="Toggle Navigation Menu"
-              className="xl:hidden flex items-center justify-center w-11 h-11 rounded-2xl bg-zinc-100/90 dark:bg-[#0c1831] text-zinc-800 dark:text-zinc-200 hover:bg-blue-50 dark:hover:bg-blue-900/30 active:scale-95 transition-all border border-zinc-200/80 dark:border-zinc-700/60 shadow-xs ml-1"
+              className="lg:hidden flex items-center justify-center w-11 h-11 rounded-2xl bg-zinc-100/90 dark:bg-[#0c1831] text-zinc-800 dark:text-zinc-200 hover:bg-blue-50 dark:hover:bg-blue-900/30 active:scale-95 transition-all border border-zinc-200/80 dark:border-zinc-700/60 shadow-xs ml-1"
             >
               {showMobileNav ? <X className="w-5 h-5 text-blue-600 dark:text-blue-400" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -200,7 +200,7 @@ export default function MainLayout({ children }) {
 
       {/* Mobile Navigation Overlay */}
       {showMobileNav && (
-        <div className="xl:hidden absolute inset-x-0 top-16 z-40 bg-white dark:bg-[#040a18] border-b border-zinc-200 dark:border-zinc-800 shadow-xl max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain">
+        <div className="lg:hidden absolute inset-x-0 top-16 z-40 bg-white dark:bg-[#040a18] border-b border-zinc-200 dark:border-zinc-800 shadow-xl max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain">
           <MobileNav 
             currentLangCode={currentLangCode} 
             onClose={() => setShowMobileNav(false)} 

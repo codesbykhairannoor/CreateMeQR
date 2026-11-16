@@ -90,28 +90,38 @@ export default function MobileNav({ currentLangCode, onClose, darkMode, setDarkM
         </button>
       </div>
 
-      {/* 2. Quick Action Buttons (Scan QR, Scan Barcode, Barcode Maker) */}
-      <div className="grid grid-cols-3 gap-2 mb-2">
+      {/* 2. Quick Action Grid (Scanners, Barcode & Pricing) */}
+      <div className="grid grid-cols-2 gap-2 mb-2">
         <RouterLink 
           to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`} 
           onClick={onClose} 
-          className="flex items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-slate-800 dark:text-slate-200 text-[11px] uppercase transition-colors hover:border-blue-400 shadow-xs text-center tracking-tight leading-tight"
+          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-slate-800 dark:text-slate-200 text-[11px] uppercase transition-colors hover:border-blue-400 shadow-xs text-center tracking-tight leading-tight"
         >
           {t('nav.scanqr', 'Scan QR Code')}
         </RouterLink>
         <RouterLink 
           to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`} 
           onClick={onClose} 
-          className="flex items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-slate-800 dark:text-slate-200 text-[11px] uppercase transition-colors hover:border-emerald-400 shadow-xs text-center tracking-tight leading-tight"
+          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-slate-800 dark:text-slate-200 text-[11px] uppercase transition-colors hover:border-emerald-400 shadow-xs text-center tracking-tight leading-tight"
         >
           {t('nav.scanbarcode', 'Scan Barcode')}
         </RouterLink>
+
         <RouterLink 
           to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`} 
           onClick={onClose} 
-          className="flex items-center justify-center bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-slate-800 dark:text-slate-200 text-[11px] uppercase transition-colors hover:border-blue-400 shadow-xs text-center tracking-tight leading-tight"
+          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-slate-800 dark:text-slate-200 text-[11px] uppercase transition-colors hover:border-blue-400 shadow-xs text-center tracking-tight leading-tight"
         >
           {t('nav.barcode', 'Barcode Maker')}
+        </RouterLink>
+
+        <RouterLink 
+          to={`${currentLangCode === 'en' ? '' : '/' + currentLangCode}${localizedRoutes[currentLangCode]?.['pricing'] || '/pricing'}`} 
+          onClick={onClose} 
+          className="flex items-center justify-center gap-1.5 bg-white dark:bg-[#0c1831] border border-zinc-200 dark:border-zinc-800 py-3 px-2 rounded-xl font-extrabold text-blue-600 dark:text-blue-400 text-[11px] uppercase transition-colors hover:border-blue-400 shadow-xs text-center tracking-tight leading-tight"
+        >
+          <Sparkles size={12} className="text-blue-500" />
+          <span>{t('nav.pricing', 'Pricing & PRO')}</span>
         </RouterLink>
       </div>
 
