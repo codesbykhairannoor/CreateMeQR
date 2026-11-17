@@ -142,16 +142,13 @@ export default function MainLayout({ children }) {
           <MegaNav currentLangCode={currentLangCode} />
 
           <div className="flex items-center gap-1.5 md:gap-2 flex-shrink-0">
-            <UserMenu currentLangCode={currentLangCode} onOpenHistory={() => setShowHistory(true)} />
-            
-            {/* 9-Dots 4-in-1 Ecosystem Menu (Desktop only - matching image_2.png) */}
-            <div className="hidden lg:flex">
-              <EcosystemMenu currentLangCode={currentLangCode} darkMode={darkMode} setDarkMode={setDarkMode} />
-            </div>
-
-            {/* Language Selector (Desktop only - on Mobile it sits neatly at the bottom of the drawer) */}
+            {/* Language Selector (Desktop only - positioned to the left of Sign In / UserMenu) */}
             <div className="relative hidden lg:block">
-              <button onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} className="flex items-center gap-1.5 md:gap-2 px-2.5 md:px-3.5 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all">
+              <button 
+                onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} 
+                className="flex items-center gap-1.5 md:gap-2 px-2.5 md:px-3 py-1.5 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all"
+                title="Select Language"
+              >
                 <span style={{ fontSize: 16 }}>{LANGS.find(l => l.code === (i18n.language?.split('-')[0] || 'en'))?.flag || '🌐'}</span>
                 <span className="uppercase text-xs md:text-sm tracking-wider font-semibold">{(i18n.language?.split('-')[0] || 'en')}</span>
               </button>
@@ -183,10 +180,13 @@ export default function MainLayout({ children }) {
               )}
             </div>
 
-            {/* Dark Mode toggle on Desktop (On Mobile it is placed conveniently inside the drawer) */}
-            <button onClick={() => setDarkMode(!darkMode)} title="Toggle Dark/Light Mode" className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full text-zinc-600 dark:text-zinc-400 hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all">
-              {darkMode ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5" />}
-            </button>
+            {/* Sign In / User Profile */}
+            <UserMenu currentLangCode={currentLangCode} onOpenHistory={() => setShowHistory(true)} />
+            
+            {/* 9-Dots 4-in-1 Ecosystem Menu (Desktop only - includes Dark/Light mode toggle inside) */}
+            <div className="hidden lg:flex">
+              <EcosystemMenu currentLangCode={currentLangCode} darkMode={darkMode} setDarkMode={setDarkMode} />
+            </div>
 
             {/* Mobile Hamburger Button (Logo + Sign In + Hamburger on mobile - matching image_3.png) */}
             <button 

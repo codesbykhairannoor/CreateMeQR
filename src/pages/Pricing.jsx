@@ -145,24 +145,24 @@ export default function Pricing() {
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-blue-600/10 dark:bg-blue-500/10 blur-[140px] rounded-full pointer-events-none" />
         <div className="absolute top-20 left-1/4 w-[500px] h-[500px] bg-purple-500/10 dark:bg-purple-600/10 blur-[140px] rounded-full pointer-events-none" />
         
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full font-semibold text-xs uppercase tracking-widest mb-5 border border-blue-200 dark:border-blue-500/30 backdrop-blur-md shadow-xs">
+        <div className="max-w-5xl mx-auto text-center relative z-10">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full font-semibold text-xs uppercase tracking-widest mb-6 border border-blue-200 dark:border-blue-500/30 backdrop-blur-md shadow-xs">
             <Layers size={14} className="text-blue-600 dark:text-blue-400" />
             <span>{t('static.pricing.heroBadge', '4 Web Apps Ecosystem')}</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4 text-slate-900 dark:text-white leading-[1.15]">
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-200 dark:to-blue-500">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight mb-6 text-slate-900 dark:text-white leading-[1.08]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 via-blue-800 to-blue-600 dark:from-white dark:via-blue-200 dark:to-blue-500">
               {t('static.pricing.heroTitle', 'Transparent Pricing & Plans')}
             </span>
           </h1>
 
-          <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl mx-auto font-normal mb-5">
+          <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto font-normal mb-8">
             {t('static.pricing.heroSubtitle', 'One unified platform. All 4 Web Apps connected seamlessly with zero hidden fees and transparent USD pricing.')}
           </p>
 
-          <div className="inline-flex items-center gap-2 text-xs font-semibold px-4 py-1.5 rounded-full bg-slate-200/70 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-300/50 dark:border-slate-700/60">
-            <Globe size={13} className="text-blue-500" />
+          <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold px-5 py-2 rounded-full bg-slate-200/70 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-300/50 dark:border-slate-700/60 shadow-xs">
+            <Globe size={14} className="text-blue-500" />
             <span>{t('static.pricing.currencyNote', 'All prices are in USD ($) globally across all regions.')}</span>
           </div>
         </div>
