@@ -75,7 +75,7 @@ Product Sample,https://createmy-qr.com/item/482019,SKU-482019,Retail`;
 export default function BulkGenerator() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const { user, isPro, openAuthModal } = useAuth();
+  const { user, isPro, openAuthModal, openProModal } = useAuth();
   const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
 
   // Tab & Input States
@@ -173,11 +173,7 @@ export default function BulkGenerator() {
     if (!dataCol || parsedData.rows.length === 0) return;
 
     if (!isPro) {
-      if (!user) {
-        openAuthModal();
-      } else {
-        navigate(`${langPrefix}/pricing`);
-      }
+      openProModal(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'));
       return;
     }
 
@@ -306,11 +302,7 @@ export default function BulkGenerator() {
     if (generatedResults.length === 0) return;
 
     if (!isPro) {
-      if (!user) {
-        openAuthModal();
-      } else {
-        navigate(`${langPrefix}/pricing`);
-      }
+      openProModal(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'));
       return;
     }
 
@@ -742,11 +734,8 @@ export default function BulkGenerator() {
                 </div>
               </div>
               <button
-                onClick={() => {
-                  if (!user) openAuthModal();
-                  else navigate(`${langPrefix}/pricing`);
-                }}
-                className="px-4 py-2 bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-semibold text-xs rounded-xl shadow-md transition-all whitespace-nowrap cursor-pointer hover:opacity-90"
+                onClick={() => openProModal(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'))}
+                className="px-4 py-2 bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-semibold text-xs rounded-xl shadow-md transition-all whitespace-nowrap cursor-pointer hover:opacity-90 capitalize"
               >
                 {user ? t('bulk.upgradeBtn', 'Upgrade to PRO') : t('bulk.signInBtn', 'Sign In to Unlock')}
               </button>
@@ -818,8 +807,7 @@ export default function BulkGenerator() {
                 <button
                   onClick={() => {
                     if (!isPro) {
-                      if (!user) openAuthModal();
-                      else navigate(`${langPrefix}/pricing`);
+                      openProModal(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
                       return;
                     }
                     setIsPrintModalOpen(true);

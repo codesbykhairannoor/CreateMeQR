@@ -22,6 +22,7 @@ import LandingContent from './components/LandingContent';
 import SeoArticle from './components/SeoArticle';
 import { AuthProvider } from './context/AuthContext';
 import AuthModal from './components/auth/AuthModal';
+import ProAlertModal from './components/modals/ProAlertModal';
 import { PSEO_ROUTES, LANGS } from './config/site';
 import { localizedRoutes, routeToToolMap } from './config/localizedRoutes';
 import { getPseoUseCase, getAllPseoData } from './config/pseo-usecases';
@@ -646,6 +647,7 @@ export default function App() {
       )}
     </MainLayout>
     <AuthModal />
+    <ProAlertModal />
   </AuthProvider>
 );
 }

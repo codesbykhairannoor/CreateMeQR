@@ -10,7 +10,7 @@ const PrintStudioModal = React.lazy(() => import('../components/PrintStudioModal
 export default function BarcodeGenerator() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const { user, isPro, openAuthModal } = useAuth();
+  const { user, isPro, openAuthModal, openProModal } = useAuth();
   const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
   
   // Barcode states
@@ -196,13 +196,8 @@ export default function BarcodeGenerator() {
         <button 
           onClick={() => {
             if (!isPro) {
-              if (!user) {
-                openAuthModal();
-                return;
-              } else {
-                navigate(`${langPrefix}/pricing`);
-                return;
-              }
+              openProModal(t('proAlert.barcodeSvgFeature', 'Vector Barcode SVG Export'));
+              return;
             }
             if (barcodeRef.current) {
               const svg = barcodeRef.current.querySelector('svg');

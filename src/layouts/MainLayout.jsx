@@ -6,6 +6,7 @@ import { LANGS } from '../config/site';
 import { localizedRoutes, routeToToolMap } from '../config/localizedRoutes';
 import MegaNav from '../components/nav/MegaNav';
 import MobileNav from '../components/nav/MobileNav';
+import EcosystemMenu from '../components/nav/EcosystemMenu';
 import HistoryDrawer from '../components/HistoryDrawer';
 import UserMenu from '../components/auth/UserMenu';
 import { getPseoUseCase, getAllPseoData } from '../config/pseo-usecases';
@@ -143,8 +144,14 @@ export default function MainLayout({ children }) {
           <div className="flex items-center gap-1.5 md:gap-2 flex-shrink-0">
             <UserMenu currentLangCode={currentLangCode} onOpenHistory={() => setShowHistory(true)} />
             
-            <div className="relative">
-              <button onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} className="flex items-center gap-1.5 md:gap-2 px-2.5 md:px-4 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all">
+            {/* 9-Dots 4-in-1 Ecosystem Menu (Desktop only - matching image_2.png) */}
+            <div className="hidden lg:flex">
+              <EcosystemMenu currentLangCode={currentLangCode} darkMode={darkMode} setDarkMode={setDarkMode} />
+            </div>
+
+            {/* Language Selector (Desktop only - on Mobile it sits neatly at the bottom of the drawer) */}
+            <div className="relative hidden lg:block">
+              <button onClick={() => { setShowLangMenu(!showLangMenu); setLangSearch(''); }} className="flex items-center gap-1.5 md:gap-2 px-2.5 md:px-3.5 py-2 text-sm font-semibold text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white rounded-full hover:bg-blue-50 dark:hover:bg-[#0c1831] transition-all">
                 <span style={{ fontSize: 16 }}>{LANGS.find(l => l.code === (i18n.language?.split('-')[0] || 'en'))?.flag || '🌐'}</span>
                 <span className="uppercase text-xs md:text-sm tracking-wider font-semibold">{(i18n.language?.split('-')[0] || 'en')}</span>
               </button>
@@ -181,11 +188,11 @@ export default function MainLayout({ children }) {
               {darkMode ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5" />}
             </button>
 
-            {/* Comfortable Mobile Hamburger Button */}
+            {/* Mobile Hamburger Button (Logo + Sign In + Hamburger on mobile - matching image_3.png) */}
             <button 
               onClick={() => setShowMobileNav(!showMobileNav)} 
               aria-label="Toggle Navigation Menu"
-              className="lg:hidden flex items-center justify-center w-11 h-11 rounded-2xl bg-zinc-100/90 dark:bg-[#0c1831] text-zinc-800 dark:text-zinc-200 hover:bg-blue-50 dark:hover:bg-blue-900/30 active:scale-95 transition-all border border-zinc-200/80 dark:border-zinc-700/60 shadow-xs ml-1"
+              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-2xl bg-zinc-100/90 dark:bg-[#0c1831] text-zinc-800 dark:text-zinc-200 hover:bg-blue-50 dark:hover:bg-blue-900/30 active:scale-95 transition-all border border-zinc-200/80 dark:border-zinc-700/60 shadow-xs ml-1"
             >
               {showMobileNav ? <X className="w-5 h-5 text-blue-600 dark:text-blue-400" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -193,14 +200,15 @@ export default function MainLayout({ children }) {
         </div>
       </nav>
 
-      {/* Mobile Navigation Overlay */}
+      {/* Mobile Navigation Drawer Overlay (matching image_3.png) */}
       {showMobileNav && (
-        <div className="lg:hidden absolute inset-x-0 top-16 z-40 bg-white dark:bg-[#040a18] border-b border-zinc-200 dark:border-zinc-800 shadow-xl max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain">
+        <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 bg-white dark:bg-[#040a18] border-b border-zinc-200 dark:border-zinc-800 shadow-2xl overflow-y-auto overscroll-contain">
           <MobileNav 
             currentLangCode={currentLangCode} 
             onClose={() => setShowMobileNav(false)} 
             darkMode={darkMode} 
             setDarkMode={setDarkMode}
+            onChangeLanguage={changeLanguage}
             onOpenHistory={() => {
               setShowMobileNav(false);
               setShowHistory(true);

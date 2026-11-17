@@ -10,7 +10,7 @@ const PrintStudioModal = React.lazy(() => import('./PrintStudioModal'));
 export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const { user, isPro, openAuthModal } = useAuth();
+  const { user, isPro, openAuthModal, openProModal } = useAuth();
   const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
   const [isSaved, setIsSaved] = useState(false);
   const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
@@ -64,11 +64,7 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
 
   const onDownloadClick = (extension) => {
     if (extension === 'svg' && !isPro) {
-      if (!user) {
-        openAuthModal();
-      } else {
-        navigate(`${langPrefix}/pricing`);
-      }
+      openProModal(t('proAlert.svgFeature', 'Vector SVG Export'));
       return;
     }
 
@@ -150,13 +146,8 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
             <button
               onClick={() => {
                 if (!isPro) {
-                  if (!user) {
-                    openAuthModal();
-                    return;
-                  } else {
-                    navigate(`${langPrefix}/pricing`);
-                    return;
-                  }
+                  openProModal(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
+                  return;
                 }
                 if (ref.current) {
                   const canvas = ref.current.querySelector('canvas');

@@ -23,7 +23,11 @@ import {
   Barcode, 
   ScanLine, 
   FileCheck,
-  CheckCircle2
+  CheckCircle2,
+  FileText,
+  Image,
+  Video,
+  ExternalLink
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
@@ -86,27 +90,31 @@ export default function Pricing() {
   const ecosystemApps = [
     {
       icon: QrCode,
-      name: t('static.pricing.app1Name', 'QR Code Studio'),
-      desc: t('static.pricing.app1Desc', 'Static & vector QR generator with 37+ formats & custom design'),
-      badge: 'App 1'
+      name: 'CreateMy-QR.com',
+      desc: t('static.pricing.app1Desc', 'Flagship vector QR & barcode studio (100% private client-side)'),
+      badge: 'Active App',
+      url: 'https://createmy-qr.com'
     },
     {
-      icon: Barcode,
-      name: t('static.pricing.app2Name', 'Barcode Engine'),
-      desc: t('static.pricing.app2Desc', 'EAN-13, UPC, Code 128, ITF, and industrial barcode suite'),
-      badge: 'App 2'
+      icon: FileText,
+      name: 'HandleMyFile.com',
+      desc: t('static.pricing.app2Desc', 'PDF & document studio with zero-server client-side WebAssembly'),
+      badge: 'Web App 2',
+      url: 'https://handlemyfile.com'
     },
     {
-      icon: ScanLine,
-      name: t('static.pricing.app3Name', 'Hardware Scanner'),
-      desc: t('static.pricing.app3Desc', 'High-speed camera decoder for QR codes and barcodes'),
-      badge: 'App 3'
+      icon: Image,
+      name: 'HelpMyIMG.com',
+      desc: t('static.pricing.app3Desc', 'AI photo, vector image enhancer & local lossless compressor'),
+      badge: 'Web App 3',
+      url: 'https://helpmyimg.com'
     },
     {
-      icon: FileCheck,
-      name: t('static.pricing.app4Name', 'Media & Doc Tools'),
-      desc: t('static.pricing.app4Desc', 'High-DPI vector SVG exporter, PDF generator & batch manager'),
-      badge: 'App 4'
+      icon: Video,
+      name: 'SolveMyMedia.com',
+      desc: t('static.pricing.app4Desc', 'Lossless video, audio converter & offline media toolkit'),
+      badge: 'Web App 4',
+      url: 'https://solvemymedia.com'
     }
   ];
 
@@ -117,7 +125,7 @@ export default function Pricing() {
     },
     {
       q: t('static.pricing.faq2Q', 'How does the connection to all 4 Web Apps work?'),
-      a: t('static.pricing.faq2A', 'Your plan credentials or license key instantly unlock full access across our 4 connected web apps: QR Code Studio, Barcode Engine, Hardware Scanner, and Media & Doc Tools.')
+      a: t('static.pricing.faq2A', 'Your Pro or Founder subscription credentials automatically detect and unlock full Pro access across all 4 connected web apps: CreateMy-QR.com, HandleMyFile.com, HelpMyIMG.com, and SolveMyMedia.com without separate payments.')
     },
     {
       q: t('static.pricing.faq3Q', 'What is included with the Windows App and Mobile APK in the Founder Pass?'),
@@ -172,36 +180,59 @@ export default function Pricing() {
                 <div>
                   <h3 className="text-base md:text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
                     {t('static.pricing.ecoTitle', 'Connected 4-in-1 Web Ecosystem')}
-                    <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300">
-                      {t('static.pricing.ecoBadge', 'Unified Suite')}
+                    <span className="text-[10px] capitalize font-bold tracking-normal px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300">
+                      {t('static.pricing.ecoBadge', 'Auto License Sync')}
                     </span>
                   </h3>
                   <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400">
-                    {t('static.pricing.ecoDesc', 'Every plan connects seamlessly across our entire 4-web productivity network.')}
+                    {t('static.pricing.ecoDesc', 'Your Pro or Founder subscription is automatically recognized across all 4 platforms with zero extra fees.')}
                   </p>
                 </div>
               </div>
-              <div className="text-xs font-semibold text-slate-400 dark:text-slate-500 flex items-center gap-1.5 self-start md:self-auto">
+              <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 flex items-center gap-1.5 self-start md:self-auto">
                 <ShieldCheck size={16} className="text-emerald-500" />
-                <span>Synchronized Cross-App Access</span>
+                <span>Synchronized Cross-Domain Access</span>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {ecosystemApps.map((app, idx) => {
                 const Icon = app.icon;
+                const isCurrent = app.badge === 'Active App';
                 return (
-                  <div key={idx} className="p-4 rounded-2xl bg-slate-50/70 dark:bg-[#040814]/60 border border-slate-200/60 dark:border-[#102040] flex flex-col justify-between hover:border-blue-400/50 dark:hover:border-blue-500/50 transition-colors">
+                  <div 
+                    key={idx} 
+                    className={`p-4 rounded-2xl border transition-all flex flex-col justify-between ${
+                      isCurrent
+                        ? 'bg-blue-50/70 dark:bg-[#0c1831] border-blue-200 dark:border-blue-800/80 shadow-xs'
+                        : 'bg-slate-50/70 dark:bg-[#040814]/60 border-slate-200/60 dark:border-[#102040] hover:border-blue-400/50'
+                    }`}
+                  >
                     <div>
                       <div className="flex items-center justify-between mb-3">
-                        <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center shadow-xs">
+                        <div className={`w-8 h-8 rounded-lg flex items-center justify-center shadow-xs ${
+                          isCurrent 
+                            ? 'bg-blue-600 text-white' 
+                            : 'bg-slate-900 dark:bg-slate-800 text-white'
+                        }`}>
                           <Icon size={16} />
                         </div>
-                        <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                        <span className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded capitalize ${
+                          isCurrent 
+                            ? 'bg-blue-600 text-white' 
+                            : 'bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300'
+                        }`}>
                           {app.badge}
                         </span>
                       </div>
-                      <h4 className="text-sm font-bold text-slate-900 dark:text-white mb-1">{app.name}</h4>
+                      <div className="flex items-center gap-1.5 mb-1">
+                        <h4 className="text-sm font-bold text-slate-900 dark:text-white">{app.name}</h4>
+                        {!isCurrent && (
+                          <a href={app.url} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-blue-500 transition-colors">
+                            <ExternalLink size={12} />
+                          </a>
+                        )}
+                      </div>
                       <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{app.desc}</p>
                     </div>
                   </div>

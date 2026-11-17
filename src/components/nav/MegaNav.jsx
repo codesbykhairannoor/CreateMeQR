@@ -39,9 +39,9 @@ import {
   ShoppingCart,
   CalendarDays,
   File,
-  Sparkles,
   FileSpreadsheet,
-  ArrowRight
+  ArrowRight,
+  Barcode
 } from 'lucide-react';
 import { localizedRoutes } from '../../config/localizedRoutes';
 
@@ -50,6 +50,7 @@ export const QR_MENU_COLUMNS = [
   [
     {
       title: 'nav.catSocial',
+      fallback: 'Social Media',
       items: [
         { id: 'instagram', icon: Camera, label: 'Instagram' },
         { id: 'facebook', icon: Users, label: 'Facebook' },
@@ -61,6 +62,7 @@ export const QR_MENU_COLUMNS = [
     },
     {
       title: 'nav.catMessage',
+      fallback: 'Messaging',
       items: [
         { id: 'whatsapp', icon: MessageCircle, label: 'WhatsApp' },
         { id: 'telegram', icon: Send, label: 'Telegram' },
@@ -72,6 +74,7 @@ export const QR_MENU_COLUMNS = [
   [
     {
       title: 'nav.catWeb',
+      fallback: 'Links & Web',
       items: [
         { id: 'url', icon: Link, label: 'URL / Link' },
         { id: 'gforms', icon: ClipboardList, label: 'Google Forms' },
@@ -81,6 +84,7 @@ export const QR_MENU_COLUMNS = [
     },
     {
       title: 'nav.catContact',
+      fallback: 'Contact',
       items: [
         { id: 'vcard', icon: Contact, label: 'vCard' },
         { id: 'email', icon: Mail, label: 'Email' },
@@ -93,6 +97,7 @@ export const QR_MENU_COLUMNS = [
   [
     {
       title: 'nav.catFinance',
+      fallback: 'Finance & Store',
       items: [
         { id: 'paypal', icon: CreditCard, label: 'PayPal' },
         { id: 'venmo', icon: Wallet, label: 'Venmo' },
@@ -103,6 +108,7 @@ export const QR_MENU_COLUMNS = [
     },
     {
       title: 'nav.catPlaces',
+      fallback: 'Places & Events',
       items: [
         { id: 'location', icon: MapPin, label: 'Location' },
         { id: 'event', icon: Calendar, label: 'Event' },
@@ -114,6 +120,7 @@ export const QR_MENU_COLUMNS = [
   [
     {
       title: 'nav.catMedia',
+      fallback: 'Media & Entertainment',
       items: [
         { id: 'youtube', icon: Video, label: 'YouTube' },
         { id: 'spotify', icon: Music, label: 'Spotify' },
@@ -124,6 +131,7 @@ export const QR_MENU_COLUMNS = [
     },
     {
       title: 'nav.catData',
+      fallback: 'Files & Data',
       items: [
         { id: 'pdf', icon: FileText, label: 'PDF' },
         { id: 'file', icon: File, label: 'File' },
@@ -173,20 +181,35 @@ export default function MegaNav({ currentLangCode }) {
 
   const langPrefix = currentLangCode === 'en' ? '' : `/${currentLangCode}`;
 
+  const linkUrl = currentLangCode === 'en' ? '/' : `/${currentLangCode}`;
   const scanQrUrl = `${langPrefix}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`;
   const scanBarcodeUrl = `${langPrefix}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`;
   const barcodeUrl = `${langPrefix}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`;
   const bulkUrl = `${langPrefix}${localizedRoutes[currentLangCode]?.['bulk'] || '/bulk-qr-generator'}`;
-  const pricingUrl = `${langPrefix}${localizedRoutes[currentLangCode]?.['pricing'] || '/pricing'}`;
 
+  const isLinkActive = location.pathname === '/' || location.pathname === `/${currentLangCode}`;
+  const isBarcodeActive = location.pathname.includes('/barcode');
   const isScannerActive = location.pathname.includes('/scan-qr') || location.pathname.includes('/scan-barcode');
-  const isPricingActive = location.pathname.includes('/pricing');
-  const isGeneratorActive = !isScannerActive && !isPricingActive && (location.pathname === '/' || location.pathname === `/${currentLangCode}` || location.pathname.includes('/barcode') || location.pathname.includes('/bulk'));
+  const isBulkActive = location.pathname.includes('/bulk');
+  const isGeneratorActive = !isLinkActive && !isBarcodeActive && !isScannerActive && !location.pathname.includes('/pricing') && !location.pathname.includes('/about') && !location.pathname.includes('/privacy') && !location.pathname.includes('/security') && !location.pathname.includes('/terms');
 
   return (
-    <div className="hidden lg:flex flex-1 justify-center items-center gap-2 lg:gap-3 min-w-0 px-2">
+    <div className="hidden lg:flex flex-1 justify-center items-center gap-1.5 xl:gap-2.5 min-w-0 px-2">
       
-      {/* 1. Generators Dropdown (Mega Menu) */}
+      {/* 1. Link (Direct Link) */}
+      <RouterLink
+        to={linkUrl}
+        className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${
+          isLinkActive
+            ? 'bg-blue-50/90 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-bold'
+            : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#0c1831]'
+        }`}
+      >
+        <Link className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
+        <span>{t('nav.link', 'Link')}</span>
+      </RouterLink>
+
+      {/* 2. Generator Dropdown (Mega Menu) */}
       <div 
         className="relative"
         onMouseEnter={handleMegaEnter}
@@ -197,15 +220,15 @@ export default function MegaNav({ currentLangCode }) {
             setIsMegaOpen(!isMegaOpen);
             setIsScannerOpen(false);
           }}
-          className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-semibold whitespace-nowrap transition-all cursor-pointer ${
-            isMegaOpen || isGeneratorActive
-              ? 'bg-blue-50/80 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400'
+          className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${
+            isMegaOpen || isGeneratorActive || isBulkActive
+              ? 'bg-blue-50/90 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-bold'
               : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#0c1831]'
           }`}
           aria-expanded={isMegaOpen}
         >
           <QrCode className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
-          <span>{t('nav.generators', 'Generators')}</span>
+          <span>{t('nav.generators', 'Generator')}</span>
           <ChevronDown className={`w-3.5 h-3.5 opacity-60 transition-transform duration-200 ${isMegaOpen ? 'rotate-180 text-blue-600 dark:text-blue-400' : ''}`} />
         </button>
 
@@ -216,73 +239,15 @@ export default function MegaNav({ currentLangCode }) {
           }`}
         >
           <div className="max-w-7xl mx-auto px-6 py-6">
-            {/* Featured Pro Tools Header Strip */}
-            <div className="grid grid-cols-2 gap-4 pb-5 mb-5 border-b border-slate-100 dark:border-[#102040]">
-              
-              {/* Bulk Batch Generator */}
-              <RouterLink
-                to={bulkUrl}
-                onClick={handleLinkClick}
-                className="flex items-center justify-between p-3.5 rounded-2xl bg-blue-50/60 dark:bg-[#0c1831] border border-blue-200/80 dark:border-[#1e2d4a] hover:border-blue-500 dark:hover:border-blue-400 transition-all group shadow-xs"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-sm">
-                    <FileSpreadsheet className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm font-semibold text-slate-900 dark:text-white">
-                        {t('nav.bulkTitle', 'Bulk QR & Barcode Generator')}
-                      </span>
-                      <span className="px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wide bg-blue-600 text-white shadow-xs">
-                        PRO BATCH
-                      </span>
-                    </div>
-                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-normal">
-                      {t('nav.bulkDesc', 'Import CSV or Excel, generate 1,000+ codes in memory & export ZIP')}
-                    </p>
-                  </div>
-                </div>
-                <ArrowRight className="w-4 h-4 text-blue-600 dark:text-blue-400 opacity-60 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-              </RouterLink>
-
-              {/* Barcode Maker */}
-              <RouterLink
-                to={barcodeUrl}
-                onClick={handleLinkClick}
-                className="flex items-center justify-between p-3.5 rounded-2xl bg-slate-50 dark:bg-[#0c1831] border border-slate-200 dark:border-[#1e2d4a] hover:border-blue-500 dark:hover:border-blue-400 transition-all group shadow-xs"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-slate-900 dark:bg-[#102040] text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-sm">
-                    <ScanLine className="w-5 h-5 text-blue-400" />
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm font-semibold text-slate-900 dark:text-white">
-                        {t('nav.barcodeTitle', '1D Barcode Generator')}
-                      </span>
-                      <span className="px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wide bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
-                        RETAIL & LOGISTICS
-                      </span>
-                    </div>
-                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-normal">
-                      {t('nav.barcodeDesc', 'Code 128, EAN-13, UPC-A, ITF-14 vector barcode symbologies')}
-                    </p>
-                  </div>
-                </div>
-                <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-blue-500 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-              </RouterLink>
-
-            </div>
-
+            
             {/* 4 Column QR Matrix */}
             <div className="grid grid-cols-4 gap-x-8">
               {QR_MENU_COLUMNS.map((column, colIdx) => (
                 <div key={colIdx} className="flex flex-col">
                   {column.map((cat, catIdx) => (
                     <React.Fragment key={catIdx}>
-                      <h4 className={`text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2 ${catIdx > 0 ? 'mt-3.5' : ''}`}>
-                        {t(cat.title)}
+                      <h4 className={`text-xs font-semibold capitalize tracking-normal text-blue-600 dark:text-blue-400 mb-2 ${catIdx > 0 ? 'mt-4' : ''}`}>
+                        {t(cat.title, cat.fallback)}
                       </h4>
                       <div className="flex flex-col gap-0.5">
                         {cat.items.map(item => {
@@ -304,7 +269,7 @@ export default function MegaNav({ currentLangCode }) {
                               }`}
                             >
                               <Icon className={`w-4 h-4 ${isActive ? 'opacity-100 text-blue-600 dark:text-blue-400' : 'opacity-65 group-hover/item:opacity-100'}`} />
-                              <span className="text-[13px] font-medium tracking-normal">{item.label}</span>
+                              <span className="text-[13px] font-medium tracking-normal capitalize">{item.label}</span>
                             </RouterLink>
                           );
                         })}
@@ -314,11 +279,44 @@ export default function MegaNav({ currentLangCode }) {
                 </div>
               ))}
             </div>
+
+            {/* Bulk Batch Generator placed at bottom */}
+            <div className="mt-6 pt-5 border-t border-slate-100 dark:border-[#102040]">
+              <RouterLink
+                to={bulkUrl}
+                onClick={handleLinkClick}
+                className="flex items-center justify-between p-3.5 rounded-2xl bg-blue-50/60 dark:bg-[#0c1831] border border-blue-200/80 dark:border-[#1e2d4a] hover:border-blue-500 dark:hover:border-blue-400 transition-all group shadow-xs"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-sm">
+                    <FileSpreadsheet className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm font-semibold text-slate-900 dark:text-white capitalize">
+                        {t('nav.bulkTitle', 'Bulk QR & Barcode Generator')}
+                      </span>
+                      <span className="px-2 py-0.5 rounded-full text-[10px] font-bold capitalize bg-blue-600 text-white shadow-xs">
+                        Pro Batch
+                      </span>
+                    </div>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 font-normal">
+                      {t('nav.bulkDesc', 'Import CSV or Excel, generate 1,000+ codes in memory & export ZIP')}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1.5 text-xs font-semibold text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform">
+                  <span>{t('nav.openBulk', 'Open Batch Tool')}</span>
+                  <ArrowRight className="w-4 h-4" />
+                </div>
+              </RouterLink>
+            </div>
+
           </div>
         </div>
       </div>
 
-      {/* 2. Scanner Dropdown */}
+      {/* 3. Scanner Dropdown */}
       <div 
         className="relative"
         onMouseEnter={handleScannerEnter}
@@ -329,9 +327,9 @@ export default function MegaNav({ currentLangCode }) {
             setIsScannerOpen(!isScannerOpen);
             setIsMegaOpen(false);
           }}
-          className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-semibold whitespace-nowrap transition-all cursor-pointer ${
+          className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${
             isScannerOpen || isScannerActive
-              ? 'bg-blue-50/80 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400'
+              ? 'bg-blue-50/90 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-bold'
               : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#0c1831]'
           }`}
           aria-expanded={isScannerOpen}
@@ -364,7 +362,7 @@ export default function MegaNav({ currentLangCode }) {
                   <QrCode className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-slate-900 dark:text-white">
+                  <div className="text-sm font-semibold text-slate-900 dark:text-white capitalize">
                     {t('nav.scanqr', 'Scan QR Code')}
                   </div>
                   <div className="text-xs text-slate-500 dark:text-slate-400 font-normal">
@@ -387,7 +385,7 @@ export default function MegaNav({ currentLangCode }) {
                   <Scan className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-slate-900 dark:text-white">
+                  <div className="text-sm font-semibold text-slate-900 dark:text-white capitalize">
                     {t('nav.scanbarcode', 'Scan Barcode')}
                   </div>
                   <div className="text-xs text-slate-500 dark:text-slate-400 font-normal">
@@ -401,17 +399,17 @@ export default function MegaNav({ currentLangCode }) {
         )}
       </div>
 
-      {/* 3. Pricing (Direct Link) */}
+      {/* 4. Barcode Create (Direct Link) */}
       <RouterLink
-        to={pricingUrl}
-        className={`py-2 px-3.5 rounded-xl text-sm font-semibold whitespace-nowrap transition-all flex items-center gap-2 cursor-pointer ${
-          isPricingActive
-            ? 'bg-blue-500/10 text-blue-600 dark:text-blue-400'
+        to={barcodeUrl}
+        className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${
+          isBarcodeActive
+            ? 'bg-blue-50/90 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-bold'
             : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#0c1831]'
         }`}
       >
-        <Sparkles className="w-4 h-4 text-blue-500 shrink-0" />
-        <span>{t('nav.pricing', 'Pricing')}</span>
+        <Barcode className="w-4 h-4 text-slate-700 dark:text-slate-300 shrink-0" />
+        <span>{t('nav.barcodeCreate', 'Barcode Create')}</span>
       </RouterLink>
 
     </div>

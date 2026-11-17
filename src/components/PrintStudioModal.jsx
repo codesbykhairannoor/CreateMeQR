@@ -129,7 +129,7 @@ const PRESETS = [
 export default function PrintStudioModal({ isOpen, onClose, items = [], defaultTitle = '' }) {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const { user, isPro, openAuthModal } = useAuth();
+  const { user, isPro, openAuthModal, openProModal } = useAuth();
   const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
 
   // Grid Configuration States
@@ -221,11 +221,7 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
   const handleDownloadPdf = async () => {
     if (!isPro) {
       onClose();
-      if (!user) {
-        openAuthModal();
-      } else {
-        navigate(`${langPrefix}/pricing`);
-      }
+      openProModal(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
       return;
     }
 
@@ -344,11 +340,7 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
   const handleDirectPrint = () => {
     if (!isPro) {
       onClose();
-      if (!user) {
-        openAuthModal();
-      } else {
-        navigate(`${langPrefix}/pricing`);
-      }
+      openProModal(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
       return;
     }
 
@@ -418,12 +410,11 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
                 <button
                   onClick={() => {
                     onClose();
-                    if (!user) openAuthModal();
-                    else navigate(`${langPrefix}/pricing`);
+                    openProModal(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
                   }}
-                  className="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold rounded-xl text-xs whitespace-nowrap shadow-xs cursor-pointer transition-colors shrink-0"
+                  className="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold rounded-xl text-xs whitespace-nowrap shadow-xs cursor-pointer transition-colors shrink-0 capitalize"
                 >
-                  {user ? t('printStudio.upgradeBtn', 'Upgrade') : t('printStudio.signInBtn', 'Sign In')}
+                  {user ? t('printStudio.upgradeBtn', 'Upgrade to PRO') : t('printStudio.signInBtn', 'Sign In')}
                 </button>
               </div>
             )}

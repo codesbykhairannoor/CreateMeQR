@@ -22,6 +22,18 @@ export const AuthProvider = ({ children }) => {
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [isProModalOpen, setIsProModalOpen] = useState(false);
+  const [proModalFeature, setProModalFeature] = useState('');
+
+  const openProModal = useCallback((feature = '') => {
+    setProModalFeature(feature);
+    setIsProModalOpen(true);
+  }, []);
+
+  const closeProModal = useCallback(() => {
+    setIsProModalOpen(false);
+    setProModalFeature('');
+  }, []);
 
   const fetchOrCreateProfile = useCallback(async (firebaseUser) => {
     const fallbackProfile = {
@@ -265,6 +277,10 @@ export const AuthProvider = ({ children }) => {
         isAuthModalOpen,
         openAuthModal,
         closeAuthModal,
+        isProModalOpen,
+        openProModal,
+        closeProModal,
+        proModalFeature,
         refreshProfile,
       }}
     >
@@ -291,6 +307,10 @@ export const useAuth = () => {
       isAuthModalOpen: false,
       openAuthModal: () => {},
       closeAuthModal: () => {},
+      isProModalOpen: false,
+      openProModal: () => {},
+      closeProModal: () => {},
+      proModalFeature: '',
       refreshProfile: async () => {},
     };
   }
