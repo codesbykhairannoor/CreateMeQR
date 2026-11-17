@@ -24,7 +24,7 @@ function LayoutWiFiCafe({ qrType = 'wificafe', pseoUseCase = null }) {
         .hq-layout-wifi {
           background-color: var(--hq-bg);
           color: var(--hq-text);
-          font-family: 'Inter', system-ui, sans-serif;
+          font-family: var(--font-main);
           min-height: 100vh;
           overflow-x: hidden;
         }

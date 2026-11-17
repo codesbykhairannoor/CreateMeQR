@@ -16,7 +16,7 @@ function LayoutEmailSignup({ qrType = 'emailsignup', pseoUseCase = null }) {
   return (
     <div className="hq-layout-email">
       <style>{`
-        .hq-layout-email { background-color: var(--hq-bg); color: var(--hq-text); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; }
+        .hq-layout-email { background-color: var(--hq-bg); color: var(--hq-text); font-family: var(--font-main); min-height: 100vh; }
         .hq-email-hero { padding: 120px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: 1200px; margin: 0 auto; }
         .hq-email-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: #ea4335; color: #fff; border-radius: 100px; font-weight: 700; font-size: 14px; margin-bottom: 24px; }
         .hq-email-app { background: var(--hq-bg); border: 1px solid var(--hq-border); border-radius: 24px; overflow: hidden; box-shadow: 0 32px 64px -16px rgba(0,0,0,0.1); }

@@ -16,7 +16,7 @@ function LayoutURLEventTickets({ qrType = 'urleventtickets', pseoUseCase = null 
   return (
     <div className="hq-layout-event">
       <style>{`
-        .hq-layout-event { background-color: var(--hq-bg); color: var(--hq-text); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; }
+        .hq-layout-event { background-color: var(--hq-bg); color: var(--hq-text); font-family: var(--font-main); min-height: 100vh; }
         .hq-evt-hero { padding: 120px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: 1200px; margin: 0 auto; }
         .hq-evt-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: #e91e63; color: #fff; border-radius: 100px; font-weight: 700; font-size: 14px; margin-bottom: 24px; }
         .hq-ticket { background: var(--hq-accent); color: #fff; border-radius: 24px; padding: 40px; position: relative; box-shadow: 0 32px 64px -16px rgba(233,30,99,0.4); }

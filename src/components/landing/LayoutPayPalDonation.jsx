@@ -16,7 +16,7 @@ function LayoutPayPalDonation({ qrType = 'paypaldonation', pseoUseCase = null })
   return (
     <div className="hq-layout-paypal">
       <style>{`
-        .hq-layout-paypal { background-color: var(--hq-bg); color: var(--hq-text); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; }
+        .hq-layout-paypal { background-color: var(--hq-bg); color: var(--hq-text); font-family: var(--font-main); min-height: 100vh; }
         .hq-pp-hero { padding: 120px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: 1200px; margin: 0 auto; }
         .hq-pp-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: #0079C1; color: #fff; border-radius: 100px; font-weight: 700; font-size: 14px; margin-bottom: 24px; }
         .hq-pp-card { background: var(--hq-bg); border: 1px solid var(--hq-border); border-radius: 24px; padding: 48px; box-shadow: 0 32px 64px -16px rgba(0, 121, 193, 0.15); text-align: center; }

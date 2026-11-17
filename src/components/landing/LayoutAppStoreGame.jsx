@@ -16,7 +16,7 @@ function LayoutAppStoreGame({ qrType = 'appstoregame', pseoUseCase = null }) {
   return (
     <div className="hq-layout-appstore">
       <style>{`
-        .hq-layout-appstore { background-color: var(--hq-bg); color: var(--hq-text); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; }
+        .hq-layout-appstore { background-color: var(--hq-bg); color: var(--hq-text); font-family: var(--font-main); min-height: 100vh; }
         .hq-app-hero { padding: 120px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: 1200px; margin: 0 auto; }
         .hq-app-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: #007AFF; color: #fff; border-radius: 100px; font-weight: 700; font-size: 14px; margin-bottom: 24px; }
         .hq-app-phone { background: #111; border: 8px solid #333; border-radius: 40px; overflow: hidden; width: 300px; height: 600px; margin: 0 auto; position: relative; box-shadow: 0 32px 64px -16px rgba(0, 122, 255, 0.3); }

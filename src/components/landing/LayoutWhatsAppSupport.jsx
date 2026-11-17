@@ -16,7 +16,7 @@ function LayoutWhatsAppSupport({ qrType = 'whatsappsupport', pseoUseCase = null 
   return (
     <div className="hq-layout-wa">
       <style>{`
-        .hq-layout-wa { background-color: var(--hq-bg); color: var(--hq-text); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; }
+        .hq-layout-wa { background-color: var(--hq-bg); color: var(--hq-text); font-family: var(--font-main); min-height: 100vh; }
         .hq-wa-hero { padding: 120px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: 1200px; margin: 0 auto; }
         .hq-wa-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: #25D366; color: #fff; border-radius: 100px; font-weight: 700; font-size: 14px; margin-bottom: 24px; }
         .hq-chat-bubble { background: #25D366; color: #fff; border-radius: 24px 24px 24px 4px; padding: 24px; font-size: 18px; line-height: 1.5; margin-bottom: 16px; width: fit-content; max-width: 80%; }

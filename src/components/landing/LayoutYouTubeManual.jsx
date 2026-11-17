@@ -16,7 +16,7 @@ function LayoutYouTubeManual({ qrType = 'youtubemanual', pseoUseCase = null }) {
   return (
     <div className="hq-layout-yt">
       <style>{`
-        .hq-layout-yt { background-color: var(--hq-bg); color: var(--hq-text); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; }
+        .hq-layout-yt { background-color: var(--hq-bg); color: var(--hq-text); font-family: var(--font-main); min-height: 100vh; }
         .hq-yt-hero { padding: 120px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: 1200px; margin: 0 auto; }
         .hq-yt-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: #FF0000; color: #fff; border-radius: 100px; font-weight: 700; font-size: 14px; margin-bottom: 24px; }
         .hq-yt-player { width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 24px; position: relative; overflow: hidden; display: flex; justify-content: center; align-items: center; box-shadow: 0 32px 64px -16px rgba(255,0,0,0.2); }
