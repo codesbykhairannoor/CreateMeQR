@@ -324,9 +324,9 @@ export default function App() {
       }
     : isPricing
     ? {
-        title: `${t('static.pricing.seoTitle', 'Transparent Pricing')} | CreateMy-QR`,
-        h1Title: t('static.pricing.heroTitle', 'Simple Pricing, Forever Freedom'),
-        description: t('static.pricing.seoDesc', 'Create permanent QR codes and barcodes with client-side privacy. Free core PNG generation with no expiration, plus Pro plans for bulk batches and vector SVG exports.'),
+        title: `${t('static.pricing.seoTitle', 'Pricing & Plans')} | CreateMy-QR`,
+        h1Title: t('static.pricing.heroTitle', 'Transparent Pricing & Plans'),
+        description: t('static.pricing.seoDesc', 'CreateMy-QR: Free $0, Pro $9.99/mo, Annual $79/yr, Founder $129. Connected across 4 web apps in USD.'),
       }
     : isPrivacy
     ? {
