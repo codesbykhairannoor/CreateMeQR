@@ -181,17 +181,18 @@ export default function MegaNav({ currentLangCode }) {
 
   const langPrefix = currentLangCode === 'en' ? '' : `/${currentLangCode}`;
 
-  const linkUrl = currentLangCode === 'en' ? '/' : `/${currentLangCode}`;
+  const linkUrl = `${langPrefix}${localizedRoutes[currentLangCode]?.['url'] || '/url-qr-code-generator'}`;
   const scanQrUrl = `${langPrefix}${localizedRoutes[currentLangCode]?.['scanqr'] || '/scan-qr'}`;
   const scanBarcodeUrl = `${langPrefix}${localizedRoutes[currentLangCode]?.['scanbarcode'] || '/scan-barcode'}`;
   const barcodeUrl = `${langPrefix}${localizedRoutes[currentLangCode]?.['barcode'] || '/barcode-generator'}`;
   const bulkUrl = `${langPrefix}${localizedRoutes[currentLangCode]?.['bulk'] || '/bulk-qr-generator'}`;
 
-  const isLinkActive = location.pathname === '/' || location.pathname === `/${currentLangCode}`;
+  const isHome = location.pathname === '/' || location.pathname === `/${currentLangCode}`;
+  const isLinkActive = location.pathname === linkUrl || (location.pathname.includes('/url-') && !location.pathname.includes('/bulk'));
   const isBarcodeActive = location.pathname.includes('/barcode');
   const isScannerActive = location.pathname.includes('/scan-qr') || location.pathname.includes('/scan-barcode');
   const isBulkActive = location.pathname.includes('/bulk');
-  const isGeneratorActive = !isLinkActive && !isBarcodeActive && !isScannerActive && !location.pathname.includes('/pricing') && !location.pathname.includes('/about') && !location.pathname.includes('/privacy') && !location.pathname.includes('/security') && !location.pathname.includes('/terms');
+  const isGeneratorActive = !isHome && !isLinkActive && !isBarcodeActive && !isScannerActive && !location.pathname.includes('/pricing') && !location.pathname.includes('/about') && !location.pathname.includes('/privacy') && !location.pathname.includes('/security') && !location.pathname.includes('/terms');
 
   return (
     <div className="hidden lg:flex flex-1 justify-center items-center gap-1.5 xl:gap-2.5 min-w-0 px-2">
@@ -252,10 +253,10 @@ export default function MegaNav({ currentLangCode }) {
                       <div className="flex flex-col gap-0.5">
                         {cat.items.map(item => {
                           const Icon = item.icon;
-                          const path = item.id === 'url' ? '/' : `/${item.id}`;
-                          const localizedPath = localizedRoutes[currentLangCode]?.[item.id] || path;
+                          const defaultPath = item.id === 'url' ? '/url-qr-code-generator' : `/${item.id}`;
+                          const localizedPath = localizedRoutes[currentLangCode]?.[item.id] || defaultPath;
                           const finalUrl = `${langPrefix}${localizedPath}`;
-                          const isActive = location.pathname === finalUrl || (location.pathname === '/' && finalUrl === `/${currentLangCode}`);
+                          const isActive = location.pathname === finalUrl;
                           
                           return (
                             <RouterLink 

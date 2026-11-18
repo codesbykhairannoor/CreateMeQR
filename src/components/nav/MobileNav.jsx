@@ -177,8 +177,8 @@ export default function MobileNav({
               <div className="grid grid-cols-2 gap-2.5">
                 {filteredTools.map(item => {
                   const Icon = item.icon;
-                  const path = item.id === 'url' ? '/' : `/${item.id}`;
-                  const localizedPath = localizedRoutes[currentLangCode]?.[item.id] || path;
+                  const defaultPath = item.id === 'url' ? '/url-qr-code-generator' : `/${item.id}`;
+                  const localizedPath = localizedRoutes[currentLangCode]?.[item.id] || defaultPath;
                   const finalUrl = `${langPrefix}${localizedPath}`;
 
                   return (
@@ -210,10 +210,10 @@ export default function MobileNav({
               <div className="grid grid-cols-2 gap-2.5">
                 {popularTools.map(tool => {
                   const Icon = tool.icon;
-                  const path = tool.path || (tool.id === 'url' ? '/' : `/${tool.id}`);
+                  const defaultPath = tool.path || (tool.id === 'url' ? '/url-qr-code-generator' : `/${tool.id}`);
                   const localizedPath = tool.path 
                     ? (localizedRoutes[currentLangCode]?.[tool.id] || tool.path)
-                    : (localizedRoutes[currentLangCode]?.[tool.id] || path);
+                    : (localizedRoutes[currentLangCode]?.[tool.id] || defaultPath);
                   const finalUrl = `${langPrefix}${localizedPath}`;
 
                   return (
@@ -273,8 +273,8 @@ export default function MobileNav({
                         <div className="p-3 pt-0 border-t border-slate-100 dark:border-[#102040] grid grid-cols-2 gap-2 mt-2">
                           {cat.items.map(item => {
                             const Icon = item.icon;
-                            const path = item.id === 'url' ? '/' : `/${item.id}`;
-                            const localizedPath = localizedRoutes[currentLangCode]?.[item.id] || path;
+                            const defaultPath = item.id === 'url' ? '/url-qr-code-generator' : `/${item.id}`;
+                            const localizedPath = localizedRoutes[currentLangCode]?.[item.id] || defaultPath;
                             const finalUrl = `${langPrefix}${localizedPath}`;
 
                             return (
