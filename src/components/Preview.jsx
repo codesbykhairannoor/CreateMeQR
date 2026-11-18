@@ -10,7 +10,7 @@ const PrintStudioModal = React.lazy(() => import('./PrintStudioModal'));
 export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const { user, isPro, openAuthModal, openProModal } = useAuth();
+  const { user, isPro, freeTrialsRemaining, consumeProFeature, openAuthModal, openProModal } = useAuth();
   const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
   const [isSaved, setIsSaved] = useState(false);
   const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
@@ -62,10 +62,10 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
     return () => worker.terminate();
   }, [qrType, qrData, visuals, qrCode]);
 
-  const onDownloadClick = (extension) => {
+  const onDownloadClick = async (extension) => {
     if (extension === 'svg' && !isPro) {
-      openProModal(t('proAlert.svgFeature', 'Vector SVG Export'));
-      return;
+      const allowed = await consumeProFeature(t('proAlert.svgFeature', 'Vector SVG Export'));
+      if (!allowed) return;
     }
 
     qrCode.download({
@@ -135,8 +135,8 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
               <Download className="w-4 h-4 mr-1.5" />
               <span>SVG</span>
               {!isPro && (
-                <span className="ml-1.5 px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 uppercase flex items-center gap-0.5">
-                  <Crown size={9} /> PRO
+                <span className="ml-1.5 px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700 uppercase flex items-center gap-0.5">
+                  <Sparkles size={9} /> {user && freeTrialsRemaining > 0 ? `${freeTrialsRemaining} Free` : 'PRO'}
                 </span>
               )}
             </button>
@@ -145,10 +145,6 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
           <div className="mt-3 w-full">
             <button
               onClick={() => {
-                if (!isPro) {
-                  openProModal(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
-                  return;
-                }
                 if (ref.current) {
                   const canvas = ref.current.querySelector('canvas');
                   if (canvas) {
@@ -162,8 +158,8 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
               <Printer className="w-4 h-4 mr-2 text-blue-600 dark:text-blue-400" />
               <span>{t('preview.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}</span>
               {!isPro && (
-                <span className="ml-2 px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 uppercase flex items-center gap-0.5">
-                  <Crown size={9} /> PRO
+                <span className="ml-2 px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700 uppercase flex items-center gap-0.5">
+                  <Sparkles size={9} /> {user && freeTrialsRemaining > 0 ? `${freeTrialsRemaining} Free` : 'PRO'}
                 </span>
               )}
             </button>

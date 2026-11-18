@@ -13,6 +13,7 @@ import {
   onAuthStateChanged,
 } from 'firebase/auth';
 import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
+import { Sparkles, X } from 'lucide-react';
 import { auth, db, googleProvider, isFirebaseConfigured } from '../config/firebase';
 
 const AuthContext = createContext(undefined);
@@ -48,6 +49,7 @@ export const AuthProvider = ({ children }) => {
       subscriptionType: isVipLifetime ? 'lifetime' : undefined,
       subscriptionStatus: isVipLifetime ? 'active' : 'inactive',
       suiteAccess: isVipLifetime ? 'all_access' : undefined,
+      createmyqr_trials_used: 0,
       createdAt: Date.now(),
       lastLoginAt: Date.now(),
     };
@@ -99,6 +101,7 @@ export const AuthProvider = ({ children }) => {
           subscriptionType: isLifetime ? 'lifetime' : data.subscriptionType,
           subscriptionStatus: currentStatus,
           suiteAccess: isLifetime ? 'all_access' : data.suiteAccess,
+          createmyqr_trials_used: typeof data.createmyqr_trials_used === 'number' ? data.createmyqr_trials_used : 0,
           lastLoginAt: Date.now(),
         };
       } else {
@@ -276,6 +279,55 @@ export const AuthProvider = ({ children }) => {
     )
   );
 
+  const FREE_TRIALS_MAX = 2;
+  const trialsUsed = typeof profile?.createmyqr_trials_used === 'number' ? profile.createmyqr_trials_used : 0;
+  const freeTrialsRemaining = isPro ? Infinity : Math.max(0, FREE_TRIALS_MAX - trialsUsed);
+
+  const [toastMessage, setToastMessage] = useState(null);
+
+  const consumeProFeature = useCallback(async (featureName = '') => {
+    if (isPro) return true;
+
+    if (!user) {
+      openProModal(featureName);
+      return false;
+    }
+
+    if (freeTrialsRemaining <= 0) {
+      openProModal(featureName);
+      return false;
+    }
+
+    const nextUsed = trialsUsed + 1;
+    const remainingAfter = Math.max(0, FREE_TRIALS_MAX - nextUsed);
+
+    try {
+      if (db && user.uid) {
+        const userRef = doc(db, 'users', user.uid);
+        await updateDoc(userRef, {
+          createmyqr_trials_used: nextUsed,
+          lastTrialUsedAt: Date.now(),
+        });
+      }
+    } catch (err) {
+      console.warn('[Firestore] Update trial count error:', err);
+    }
+
+    setProfile(prev => prev ? ({ ...prev, createmyqr_trials_used: nextUsed }) : prev);
+
+    setToastMessage(
+      remainingAfter > 0
+        ? `🎉 Free trial used (1 of ${FREE_TRIALS_MAX}). 1 free export remaining!`
+        : `🎉 Free trial used (2 of ${FREE_TRIALS_MAX}). You've used your free exports. Upgrade for unlimited access!`
+    );
+
+    setTimeout(() => {
+      setToastMessage(null);
+    }, 4500);
+
+    return true;
+  }, [isPro, user, freeTrialsRemaining, trialsUsed, openProModal]);
+
   return (
     <AuthContext.Provider
       value={{
@@ -284,6 +336,10 @@ export const AuthProvider = ({ children }) => {
         loading,
         isPro,
         isLifetime,
+        FREE_TRIALS_MAX,
+        trialsUsed,
+        freeTrialsRemaining,
+        consumeProFeature,
         signInWithGoogle,
         signInWithEmail,
         signUpWithEmail,
@@ -301,6 +357,21 @@ export const AuthProvider = ({ children }) => {
       }}
     >
       {children}
+
+      {/* Freemium Trial Toast Notification */}
+      {toastMessage && (
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-slate-900/95 dark:bg-[#0c1831]/95 text-white px-5 py-3 rounded-2xl shadow-2xl border border-blue-500/40 flex items-center gap-3 backdrop-blur-xl animate-fade-in-down max-w-[90vw]">
+          <Sparkles className="w-4 h-4 text-blue-400 shrink-0" />
+          <span className="text-xs sm:text-sm font-semibold">{toastMessage}</span>
+          <button 
+            onClick={() => setToastMessage(null)} 
+            className="text-slate-400 hover:text-white ml-2 text-xs cursor-pointer p-1"
+            aria-label="Dismiss"
+          >
+            <X className="w-3.5 h-3.5" />
+          </button>
+        </div>
+      )}
     </AuthContext.Provider>
   );
 };
@@ -314,6 +385,10 @@ export const useAuth = () => {
       loading: false,
       isPro: false,
       isLifetime: false,
+      FREE_TRIALS_MAX: 2,
+      trialsUsed: 0,
+      freeTrialsRemaining: 0,
+      consumeProFeature: async () => false,
       signInWithGoogle: async () => { },
       signInWithEmail: async () => { },
       signUpWithEmail: async () => { },

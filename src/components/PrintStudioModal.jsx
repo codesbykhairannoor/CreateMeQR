@@ -129,7 +129,7 @@ const PRESETS = [
 export default function PrintStudioModal({ isOpen, onClose, items = [], defaultTitle = '' }) {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const { user, isPro, openAuthModal, openProModal } = useAuth();
+  const { user, isPro, freeTrialsRemaining, consumeProFeature, openAuthModal, openProModal } = useAuth();
   const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
 
   // Grid Configuration States
@@ -220,9 +220,11 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
   // Generate and Download Vector PDF via jsPDF
   const handleDownloadPdf = async () => {
     if (!isPro) {
-      onClose();
-      openProModal(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
-      return;
+      const allowed = await consumeProFeature(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
+      if (!allowed) {
+        onClose();
+        return;
+      }
     }
 
     setIsExporting(true);
@@ -337,11 +339,13 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
   };
 
   // Direct Browser Print
-  const handleDirectPrint = () => {
+  const handleDirectPrint = async () => {
     if (!isPro) {
-      onClose();
-      openProModal(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
-      return;
+      const allowed = await consumeProFeature(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
+      if (!allowed) {
+        onClose();
+        return;
+      }
     }
 
     window.print();
@@ -389,21 +393,25 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
           {/* Left Column: Settings Panel (5 cols) */}
           <div className="lg:col-span-5 p-6 overflow-y-auto border-r border-slate-200 dark:border-[#1e2d4a] space-y-6">
             
-            {/* PRO Gate Warning if User is Free or Not Logged In */}
+            {/* PRO / Freemium Notice if User is Free or Not Logged In */}
             {!isPro && (
-              <div className="p-3.5 bg-amber-500/10 border border-amber-500/30 rounded-2xl flex items-center justify-between gap-3 text-xs">
+              <div className="p-3.5 bg-blue-50/80 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/60 rounded-2xl flex items-center justify-between gap-3 text-xs">
                 <div className="flex items-center gap-2.5 min-w-0">
-                  <div className="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
-                    <Crown className="w-4 h-4" />
+                  <div className="w-8 h-8 rounded-xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 flex items-center justify-center shrink-0">
+                    <Sparkles className="w-4 h-4" />
                   </div>
                   <div className="min-w-0">
                     <div className="font-semibold text-slate-900 dark:text-white truncate">
-                      {t('printStudio.proNoticeTitle', 'Print Studio is a PRO Feature')}
+                      {user && freeTrialsRemaining > 0 
+                        ? `Freemium Trial: ${freeTrialsRemaining} Free Export${freeTrialsRemaining > 1 ? 's' : ''} Remaining` 
+                        : t('printStudio.proNoticeTitle', 'Print Studio is a PRO Feature')}
                     </div>
                     <div className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
                       {user
-                        ? t('printStudio.proNoticeDescUser', 'Upgrade to PRO to download vector PDF and print sticker sheets.')
-                        : t('printStudio.proNoticeDescGuest', 'Sign in to PRO to export printable sticker sheets.')}
+                        ? (freeTrialsRemaining > 0 
+                            ? 'Your free trial exports are ready. Click Direct Print or Download PDF below.' 
+                            : t('printStudio.proNoticeDescUser', 'Upgrade to PRO to download vector PDF and print sticker sheets.'))
+                        : t('printStudio.proNoticeDescGuest', 'Sign in to claim 2 free printable sticker sheets.')}
                     </div>
                   </div>
                 </div>
@@ -412,9 +420,9 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
                     onClose();
                     openProModal(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
                   }}
-                  className="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold rounded-xl text-xs whitespace-nowrap shadow-xs cursor-pointer transition-colors shrink-0 capitalize"
+                  className="px-3.5 py-1.5 bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white font-semibold rounded-xl text-xs whitespace-nowrap shadow-xs cursor-pointer transition-colors shrink-0 capitalize"
                 >
-                  {user ? t('printStudio.upgradeBtn', 'Upgrade to PRO') : t('printStudio.signInBtn', 'Sign In')}
+                  {user ? (freeTrialsRemaining > 0 ? 'PRO Benefits' : t('printStudio.upgradeBtn', 'Upgrade to PRO')) : t('printStudio.signInBtn', 'Claim 2 Free')}
                 </button>
               </div>
             )}
@@ -758,8 +766,8 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
                   onClick={handleDirectPrint}
                   className="px-4 py-2.5 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-white rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 cursor-pointer"
                 >
-                  {!isPro ? <Crown className="w-4 h-4 text-amber-500" /> : <Printer className="w-4 h-4" />}
-                  <span>{!isPro ? (user ? 'Upgrade to Print' : 'Sign In to Print') : t('printStudio.directPrint', 'Direct Print')}</span>
+                  {!isPro ? (user && freeTrialsRemaining > 0 ? <Sparkles className="w-4 h-4 text-blue-500" /> : <Crown className="w-4 h-4 text-blue-500" />) : <Printer className="w-4 h-4" />}
+                  <span>{!isPro ? (user ? (freeTrialsRemaining > 0 ? `Direct Print (${freeTrialsRemaining} Free Left)` : 'Upgrade to Print') : 'Sign In to Print') : t('printStudio.directPrint', 'Direct Print')}</span>
                 </button>
 
                 <button
@@ -767,12 +775,12 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
                   onClick={handleDownloadPdf}
                   className="px-5 py-2.5 bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white rounded-xl text-xs font-semibold shadow-md shadow-blue-500/20 transition-all flex items-center gap-1.5 disabled:opacity-50 cursor-pointer"
                 >
-                  {!isPro ? <Crown className="w-4 h-4 text-amber-300" /> : <Download className="w-4 h-4" />}
+                  {!isPro ? (user && freeTrialsRemaining > 0 ? <Sparkles className="w-4 h-4 text-blue-200" /> : <Crown className="w-4 h-4 text-blue-200" />) : <Download className="w-4 h-4" />}
                   <span>
                     {isExporting 
                       ? t('printStudio.generatingPdf', 'Generating PDF...') 
                       : !isPro 
-                        ? (user ? 'Upgrade to Download PDF' : 'Sign In to Download PDF') 
+                        ? (user ? (freeTrialsRemaining > 0 ? `Download PDF (${freeTrialsRemaining} Free Left)` : 'Upgrade to Download PDF') : 'Sign In to Download PDF') 
                         : t('printStudio.downloadPdf', 'Download Printable PDF')}
                   </span>
                 </button>

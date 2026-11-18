@@ -137,7 +137,7 @@ export default function MobileNav({
 
   return (
     <div className="flex flex-col min-h-full bg-slate-50/95 dark:bg-[#040a18]/95 backdrop-blur-2xl text-slate-900 dark:text-white">
-      
+
       {/* 1. Search Bar (matching image_3.png) */}
       <div className="p-4 border-b border-slate-200/80 dark:border-[#102040]">
         <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-2xl bg-white dark:bg-[#0c1831] border border-slate-200 dark:border-[#1e2d4a] shadow-xs focus-within:border-blue-500 transition-colors">
@@ -162,7 +162,7 @@ export default function MobileNav({
 
       {/* 2. Main Scrollable Body */}
       <div className="flex-1 overflow-y-auto px-4 py-4 space-y-6">
-        
+
         {/* If user is searching: Show filtered results */}
         {searchQuery.trim() ? (
           <div>
@@ -211,7 +211,7 @@ export default function MobileNav({
                 {popularTools.map(tool => {
                   const Icon = tool.icon;
                   const defaultPath = tool.path || (tool.id === 'url' ? '/url-qr-code-generator' : `/${tool.id}`);
-                  const localizedPath = tool.path 
+                  const localizedPath = tool.path
                     ? (localizedRoutes[currentLangCode]?.[tool.id] || tool.path)
                     : (localizedRoutes[currentLangCode]?.[tool.id] || defaultPath);
                   const finalUrl = `${langPrefix}${localizedPath}`;
@@ -305,7 +305,7 @@ export default function MobileNav({
 
       {/* 3. Bottom Controls Row: Language Picker & Dark Mode (matching image_3.png) */}
       <div className="p-4 border-t border-slate-200/80 dark:border-[#102040] space-y-3 bg-white/70 dark:bg-[#081226]/70">
-        
+
         {/* Language Selection Modal Sheet inside drawer */}
         {showLangPicker ? (
           <div className="p-3.5 rounded-2xl bg-white dark:bg-[#0c1831] border border-slate-200 dark:border-[#1e2d4a] shadow-lg animate-fade-in-up">
@@ -322,7 +322,7 @@ export default function MobileNav({
                 <X className="w-4 h-4" />
               </button>
             </div>
-            
+
             <input
               type="text"
               placeholder="Filter language..."
@@ -332,9 +332,9 @@ export default function MobileNav({
             />
 
             <div className="max-h-48 overflow-y-auto space-y-1">
-              {LANGS.filter(l => 
-                !langSearch || 
-                l.label.toLowerCase().includes(langSearch.toLowerCase()) || 
+              {LANGS.filter(l =>
+                !langSearch ||
+                l.label.toLowerCase().includes(langSearch.toLowerCase()) ||
                 l.code.toLowerCase().includes(langSearch.toLowerCase())
               ).map(lang => {
                 const isActive = currentLangCode === lang.code;
@@ -346,11 +346,10 @@ export default function MobileNav({
                       setShowLangPicker(false);
                       if (onChangeLanguage) onChangeLanguage(lang.code);
                     }}
-                    className={`w-full text-left px-3 py-2 rounded-xl text-xs flex items-center justify-between transition-colors ${
-                      isActive
+                    className={`w-full text-left px-3 py-2 rounded-xl text-xs flex items-center justify-between transition-colors ${isActive
                         ? 'bg-blue-600 text-white font-bold'
                         : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-[#102040]'
-                    }`}
+                      }`}
                   >
                     <span className="flex items-center gap-2">
                       <span className="text-sm">{lang.flag}</span>
@@ -402,16 +401,16 @@ export default function MobileNav({
         <button
           type="button"
           onClick={handleClaimOffer}
-          className="w-full py-3 px-4 rounded-2xl bg-gradient-to-r from-amber-500/15 via-orange-500/15 to-amber-500/15 hover:from-amber-500/25 hover:to-orange-500/25 border border-amber-500/30 text-amber-700 dark:text-amber-300 font-bold text-xs flex items-center justify-between transition-all shadow-xs cursor-pointer group"
+          className="w-full py-3 px-4 rounded-2xl bg-blue-50/90 dark:bg-blue-950/40 hover:bg-blue-100 dark:hover:bg-blue-900/50 border border-blue-200 dark:border-blue-800/60 text-blue-700 dark:text-blue-300 font-semibold text-xs flex items-center justify-between transition-all shadow-xs cursor-pointer group"
         >
           <div className="flex items-center gap-2">
-            <Crown className="w-4 h-4 text-amber-500 shrink-0" />
+            <Crown className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
             <span className="capitalize">{t('eco.claimOffer', 'Claim PRO Offer')}</span>
-            <span className="px-1.5 py-0.2 rounded-full bg-amber-500 text-slate-950 text-[10px] font-extrabold">
+            <span className="px-1.5 py-0.2 rounded-full bg-blue-600 text-white text-[10px] font-bold">
               -34%
             </span>
           </div>
-          <ArrowRight className="w-4 h-4 text-amber-600 dark:text-amber-400 group-hover:translate-x-1 transition-transform" />
+          <ArrowRight className="w-4 h-4 text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform" />
         </button>
 
       </div>

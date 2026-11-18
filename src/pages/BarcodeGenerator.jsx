@@ -3,14 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import Barcode from 'react-barcode';
-import { Download, Share2, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen, Clock, Check, Sliders, Binary, Gauge, Crown } from 'lucide-react';
+import { Download, Share2, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen, Clock, Check, Sliders, Binary, Gauge, Crown, Sparkles } from 'lucide-react';
 import { get, set } from 'idb-keyval';
 const PrintStudioModal = React.lazy(() => import('../components/PrintStudioModal'));
 
 export default function BarcodeGenerator() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const { user, isPro, openAuthModal, openProModal } = useAuth();
+  const { user, isPro, freeTrialsRemaining, consumeProFeature, openAuthModal, openProModal } = useAuth();
   const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
   
   // Barcode states
@@ -195,10 +195,6 @@ export default function BarcodeGenerator() {
 
         <button 
           onClick={() => {
-            if (!isPro) {
-              openProModal(t('proAlert.barcodeSvgFeature', 'Vector Barcode SVG Export'));
-              return;
-            }
             if (barcodeRef.current) {
               const svg = barcodeRef.current.querySelector('svg');
               if (svg) {
@@ -224,8 +220,9 @@ export default function BarcodeGenerator() {
           <Printer className="w-5 h-5" />
           <span>{t('barcode.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}</span>
           {!isPro && (
-            <span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30 uppercase flex items-center gap-1">
-              <Crown size={10} /> PRO
+            <span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-semibold bg-blue-500/20 text-blue-200 border border-blue-400/30 uppercase flex items-center gap-1">
+              <Sparkles size={10} className="text-blue-300" />
+              {user && freeTrialsRemaining > 0 ? `${freeTrialsRemaining} Free` : 'PRO'}
             </span>
           )}
         </button>

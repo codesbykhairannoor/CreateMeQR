@@ -196,22 +196,21 @@ export default function MegaNav({ currentLangCode }) {
 
   return (
     <div className="hidden lg:flex flex-1 justify-center items-center gap-1.5 xl:gap-2.5 min-w-0 px-2">
-      
+
       {/* 1. Link (Direct Link) */}
       <RouterLink
         to={linkUrl}
-        className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${
-          isLinkActive
+        className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${isLinkActive
             ? 'bg-blue-50/90 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-bold'
             : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#0c1831]'
-        }`}
+          }`}
       >
         <Link className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
         <span>{t('nav.link', 'Link')}</span>
       </RouterLink>
 
       {/* 2. Generator Dropdown (Mega Menu) */}
-      <div 
+      <div
         className="relative"
         onMouseEnter={handleMegaEnter}
         onMouseLeave={handleMegaLeave}
@@ -221,11 +220,10 @@ export default function MegaNav({ currentLangCode }) {
             setIsMegaOpen(!isMegaOpen);
             setIsScannerOpen(false);
           }}
-          className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${
-            isMegaOpen || isGeneratorActive || isBulkActive
+          className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${isMegaOpen || isGeneratorActive || isBulkActive
               ? 'bg-blue-50/90 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-bold'
               : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#0c1831]'
-          }`}
+            }`}
           aria-expanded={isMegaOpen}
         >
           <QrCode className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
@@ -234,13 +232,12 @@ export default function MegaNav({ currentLangCode }) {
         </button>
 
         {/* Full-width fixed Dropdown */}
-        <div 
-          className={`fixed top-16 left-0 w-full bg-white dark:bg-[#081226] border-b border-blue-100 dark:border-[#102040] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.25)] transition-all duration-200 z-50 ${
-            isMegaOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
-          }`}
+        <div
+          className={`fixed top-16 left-0 w-full bg-white dark:bg-[#081226] border-b border-blue-100 dark:border-[#102040] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.25)] transition-all duration-200 z-50 ${isMegaOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+            }`}
         >
           <div className="max-w-7xl mx-auto px-6 py-6">
-            
+
             {/* 4 Column QR Matrix */}
             <div className="grid grid-cols-4 gap-x-8">
               {QR_MENU_COLUMNS.map((column, colIdx) => (
@@ -257,17 +254,16 @@ export default function MegaNav({ currentLangCode }) {
                           const localizedPath = localizedRoutes[currentLangCode]?.[item.id] || defaultPath;
                           const finalUrl = `${langPrefix}${localizedPath}`;
                           const isActive = location.pathname === finalUrl;
-                          
+
                           return (
-                            <RouterLink 
-                              key={item.id} 
-                              to={finalUrl} 
-                              onClick={handleLinkClick} 
-                              className={`flex items-center gap-2.5 py-1.5 px-2.5 rounded-xl transition-colors group/item ${
-                                isActive 
-                                  ? 'bg-blue-50 dark:bg-[#102040] text-blue-700 dark:text-blue-400 font-semibold' 
+                            <RouterLink
+                              key={item.id}
+                              to={finalUrl}
+                              onClick={handleLinkClick}
+                              className={`flex items-center gap-2.5 py-1.5 px-2.5 rounded-xl transition-colors group/item ${isActive
+                                  ? 'bg-blue-50 dark:bg-[#102040] text-blue-700 dark:text-blue-400 font-semibold'
                                   : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-[#102040] hover:text-blue-700 dark:hover:text-blue-400'
-                              }`}
+                                }`}
                             >
                               <Icon className={`w-4 h-4 ${isActive ? 'opacity-100 text-blue-600 dark:text-blue-400' : 'opacity-65 group-hover/item:opacity-100'}`} />
                               <span className="text-[13px] font-medium tracking-normal capitalize">{item.label}</span>
@@ -318,7 +314,7 @@ export default function MegaNav({ currentLangCode }) {
       </div>
 
       {/* 3. Scanner Dropdown */}
-      <div 
+      <div
         className="relative"
         onMouseEnter={handleScannerEnter}
         onMouseLeave={handleScannerLeave}
@@ -328,11 +324,10 @@ export default function MegaNav({ currentLangCode }) {
             setIsScannerOpen(!isScannerOpen);
             setIsMegaOpen(false);
           }}
-          className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${
-            isScannerOpen || isScannerActive
+          className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${isScannerOpen || isScannerActive
               ? 'bg-blue-50/90 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-bold'
               : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#0c1831]'
-          }`}
+            }`}
           aria-expanded={isScannerOpen}
         >
           <ScanLine className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
@@ -342,22 +337,21 @@ export default function MegaNav({ currentLangCode }) {
 
         {/* Floating compact card directly under Scanner button */}
         {isScannerOpen && (
-          <div 
+          <div
             className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50 animate-fade-in-up"
             onMouseEnter={handleScannerEnter}
             onMouseLeave={handleScannerLeave}
           >
             <div className="w-76 bg-white dark:bg-[#081226] border border-slate-200 dark:border-[#102040] rounded-2xl shadow-2xl p-2.5 flex flex-col gap-1.5">
-              
+
               {/* Scan QR Code */}
               <RouterLink
                 to={scanQrUrl}
                 onClick={handleLinkClick}
-                className={`flex items-start gap-3 p-2.5 rounded-xl transition-colors group ${
-                  location.pathname.includes('/scan-qr')
+                className={`flex items-start gap-3 p-2.5 rounded-xl transition-colors group ${location.pathname.includes('/scan-qr')
                     ? 'bg-blue-50 dark:bg-[#102040]'
                     : 'hover:bg-slate-50 dark:hover:bg-[#102040]'
-                }`}
+                  }`}
               >
                 <div className="w-9 h-9 rounded-xl bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
                   <QrCode className="w-5 h-5" />
@@ -376,11 +370,10 @@ export default function MegaNav({ currentLangCode }) {
               <RouterLink
                 to={scanBarcodeUrl}
                 onClick={handleLinkClick}
-                className={`flex items-start gap-3 p-2.5 rounded-xl transition-colors group ${
-                  location.pathname.includes('/scan-barcode')
+                className={`flex items-start gap-3 p-2.5 rounded-xl transition-colors group ${location.pathname.includes('/scan-barcode')
                     ? 'bg-emerald-50 dark:bg-emerald-950/40'
                     : 'hover:bg-slate-50 dark:hover:bg-[#102040]'
-                }`}
+                  }`}
               >
                 <div className="w-9 h-9 rounded-xl bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-xs">
                   <Scan className="w-5 h-5" />
@@ -403,11 +396,10 @@ export default function MegaNav({ currentLangCode }) {
       {/* 4. Barcode Create (Direct Link) */}
       <RouterLink
         to={barcodeUrl}
-        className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${
-          isBarcodeActive
+        className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold whitespace-nowrap capitalize transition-all cursor-pointer ${isBarcodeActive
             ? 'bg-blue-50/90 dark:bg-[#0c1831] text-blue-600 dark:text-blue-400 font-bold'
             : 'text-zinc-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#0c1831]'
-        }`}
+          }`}
       >
         <Barcode className="w-4 h-4 text-slate-700 dark:text-slate-300 shrink-0" />
         <span>{t('nav.barcodeCreate', 'Barcode Create')}</span>

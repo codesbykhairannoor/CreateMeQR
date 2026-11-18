@@ -353,14 +353,14 @@ export default function EcosystemMenu({ currentLangCode, darkMode, setDarkMode }
             <button
               type="button"
               onClick={handleClaimOffer}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-amber-500/15 to-orange-500/15 hover:from-amber-500/25 hover:to-orange-500/25 border border-amber-500/30 text-amber-700 dark:text-amber-300 font-bold text-xs transition-all shadow-xs cursor-pointer group"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 hover:bg-blue-100 dark:bg-blue-950/50 dark:hover:bg-blue-900/60 border border-blue-200 dark:border-blue-800/60 text-blue-700 dark:text-blue-300 font-semibold text-xs transition-all shadow-xs cursor-pointer group"
             >
-              <Crown className="w-3.5 h-3.5 text-amber-500" />
+              <Crown className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
               <span>{t('eco.claimOffer', 'Claim PRO Offer')}</span>
-              <span className="px-1.5 py-0.2 rounded-full bg-amber-500 text-slate-950 text-[10px] font-extrabold">
+              <span className="px-1.5 py-0.2 rounded-full bg-blue-600 text-white text-[10px] font-bold">
                 -34%
               </span>
-              <ArrowRight className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400 group-hover:translate-x-0.5 transition-transform" />
+              <ArrowRight className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 group-hover:translate-x-0.5 transition-transform" />
             </button>
 
           </div>

@@ -8,7 +8,7 @@ import { User, LogOut, Sparkles, Crown, ChevronDown, Clock } from 'lucide-react'
 import { useNavigate } from 'react-router-dom';
 
 export default function UserMenu({ currentLangCode, onOpenHistory }) {
-  const { user, isPro, isLifetime, signOut, openAuthModal } = useAuth();
+  const { user, isPro, isLifetime, freeTrialsRemaining, signOut, openAuthModal } = useAuth();
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -76,10 +76,16 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
           </div>
         )}
 
-        {isPro && (
-          <span className="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 text-[10px] font-semibold tracking-wider uppercase shadow-xs">
-            <Crown className="w-3 h-3" /> {isLifetime ? 'Lifetime' : 'PRO'}
+        {isPro ? (
+          <span className="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700 text-[10px] font-semibold tracking-wider uppercase shadow-xs">
+            <Crown className="w-3 h-3 text-blue-600 dark:text-blue-400" /> {isLifetime ? 'Lifetime' : 'PRO'}
           </span>
+        ) : (
+          freeTrialsRemaining > 0 && (
+            <span className="hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-blue-50 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800 text-[10px] font-semibold tracking-wider uppercase shadow-xs">
+              <Sparkles className="w-3 h-3" /> {freeTrialsRemaining} Free
+            </span>
+          )
         )}
 
         <ChevronDown className="w-3.5 h-3.5 text-zinc-400 hidden sm:block" />
@@ -97,12 +103,12 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
             <div className="mt-2.5 flex items-center justify-between">
               <span className="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Plan</span>
               {isPro ? (
-                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
-                  <Crown className="w-3 h-3" /> {isLifetime ? 'PRO Lifetime' : 'PRO Monthly'}
+                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700">
+                  <Crown className="w-3 h-3 text-blue-600 dark:text-blue-400" /> {isLifetime ? 'PRO Lifetime' : 'PRO Monthly'}
                 </span>
               ) : (
                 <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
-                  Free Tier
+                  {freeTrialsRemaining > 0 ? `Free (${freeTrialsRemaining} Free Left)` : 'Free Tier'}
                 </span>
               )}
             </div>

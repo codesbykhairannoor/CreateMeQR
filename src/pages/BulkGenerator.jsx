@@ -75,7 +75,7 @@ Product Sample,https://createmy-qr.com/item/482019,SKU-482019,Retail`;
 export default function BulkGenerator() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const { user, isPro, openAuthModal, openProModal } = useAuth();
+  const { user, isPro, freeTrialsRemaining, consumeProFeature, openAuthModal, openProModal } = useAuth();
   const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
 
   // Tab & Input States
@@ -173,8 +173,8 @@ export default function BulkGenerator() {
     if (!dataCol || parsedData.rows.length === 0) return;
 
     if (!isPro) {
-      openProModal(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'));
-      return;
+      const allowed = await consumeProFeature(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'));
+      if (!allowed) return;
     }
 
     setIsProcessing(true);
@@ -302,8 +302,8 @@ export default function BulkGenerator() {
     if (generatedResults.length === 0) return;
 
     if (!isPro) {
-      openProModal(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'));
-      return;
+      const allowed = await consumeProFeature(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'));
+      if (!allowed) return;
     }
 
     setIsZipping(true);
@@ -764,8 +764,8 @@ export default function BulkGenerator() {
                 </>
               ) : !isPro ? (
                 <>
-                  <Crown className="w-4 h-4 text-amber-400" />
-                  <span>{user ? t('bulk.btnUpgradeToGen', 'Upgrade to PRO to Generate') : t('bulk.btnSignInToGen', 'Sign In to Generate Batch')}</span>
+                  <Crown className="w-4 h-4 text-blue-200" />
+                  <span>{user ? (freeTrialsRemaining > 0 ? `Generate (${freeTrialsRemaining} Free Left)` : t('bulk.btnUpgradeToGen', 'Upgrade to PRO to Generate')) : t('bulk.btnSignInToGen', 'Sign In to Generate Batch')}</span>
                 </>
               ) : (
                 <>
@@ -806,10 +806,6 @@ export default function BulkGenerator() {
                 {/* Print Sheet Trigger */}
                 <button
                   onClick={() => {
-                    if (!isPro) {
-                      openProModal(t('proAlert.printFeature', 'A4 Sticker Sheet Print Studio'));
-                      return;
-                    }
                     setIsPrintModalOpen(true);
                   }}
                   className="px-4 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-xl text-xs font-semibold transition-all flex items-center gap-2 border border-slate-200 dark:border-slate-700 shadow-xs cursor-pointer"
@@ -817,8 +813,8 @@ export default function BulkGenerator() {
                   <Printer className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                   <span>{t('bulk.btnPrintPdf', 'Print A4 Sticker Sheet PDF')}</span>
                   {!isPro && (
-                    <span className="px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 uppercase flex items-center gap-0.5">
-                      <Crown size={9} /> PRO
+                    <span className="px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700 uppercase flex items-center gap-0.5">
+                      <Sparkles size={9} /> {user && freeTrialsRemaining > 0 ? `${freeTrialsRemaining} Free` : 'PRO'}
                     </span>
                   )}
                 </button>
@@ -832,8 +828,8 @@ export default function BulkGenerator() {
                   <FileArchive className="w-4 h-4" />
                   <span>{isZipping ? t('bulk.btnCompressing', 'Compressing ZIP...') : t('bulk.btnDownloadZip', 'Download All ({{count}} items) as ZIP', { count: generatedResults.length })}</span>
                   {!isPro && (
-                    <span className="px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30 uppercase flex items-center gap-0.5">
-                      <Crown size={9} /> PRO
+                    <span className="px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-blue-500/20 text-blue-200 border border-blue-400/30 uppercase flex items-center gap-0.5">
+                      <Sparkles size={9} /> {user && freeTrialsRemaining > 0 ? `${freeTrialsRemaining} Free` : 'PRO'}
                     </span>
                   )}
                 </button>
