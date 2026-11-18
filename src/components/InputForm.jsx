@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, Wifi, Contact, Type, Mail, Phone, MessageSquare, MapPin, Calendar, MessageCircle, Video, Camera, Bitcoin, Smartphone, Users, Hash, Music2, Briefcase, Send, Ghost, Gamepad2, Music, CreditCard, Wallet , FileText, ClipboardList, Star, Image, List, Mic, ShoppingCart, CalendarDays, File } from 'lucide-react';
+import { Link, Wifi, Contact, Type, Mail, Phone, MessageSquare, MapPin, Calendar, MessageCircle, Video, Camera, Bitcoin, Smartphone, Users, Hash, Music2, Briefcase, Send, Ghost, Gamepad2, Music, CreditCard, Wallet, FileText, ClipboardList, Star, Image, List, Mic, ShoppingCart, CalendarDays, File, ShieldCheck, Info } from 'lucide-react';
 
 const TABS = [
   { id: 'url', icon: Link, label: 'types.url' },
@@ -56,7 +56,14 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
 
   const handleDataChange = (e) => {
     const { name, value } = e.target;
-    setQrData(prev => ({ ...prev, [name]: value }));
+    setQrData(prev => {
+      const updated = { ...prev, [name]: value };
+      if (['url', 'pdf', 'gforms', 'greview', 'image', 'linkinbio', 'video', 'audio', 'amazon', 'booking', 'file'].includes(qrType)) {
+        updated.url = value;
+        updated[`${qrType}Input`] = value;
+      }
+      return updated;
+    });
     setHasGenerated(false);
   };
 
@@ -145,63 +152,91 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
       <div className="space-y-4">
         {['url', 'pdf', 'gforms', 'greview', 'image', 'linkinbio', 'video', 'audio', 'amazon', 'booking', 'file'].includes(qrType) && (
           <div>
-            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">
-              {t('types.' + qrType)}
-            </label>
+            <div className="flex items-center justify-between mb-1.5">
+              <label className="block text-sm font-semibold text-slate-800 dark:text-slate-100">
+                {t(`form.${qrType}Input`, t(`types.${qrType}`))}
+              </label>
+              {['pdf', 'file', 'image', 'audio', 'video'].includes(qrType) && (
+                <span className="text-[11px] font-semibold text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-900/40 px-2.5 py-0.5 rounded-full border border-blue-200/80 dark:border-blue-700/50 flex items-center gap-1">
+                  <ShieldCheck className="w-3 h-3 text-blue-600 dark:text-blue-400" />
+                  {t('formHints.zeroServerTitle', '100% Privacy & Lifetime Validity')}
+                </span>
+              )}
+            </div>
             <input
               type="url"
               name="url"
-              value={qrData.url || ''}
+              value={qrData.url || qrData[`${qrType}Input`] || ''}
               onChange={handleDataChange}
-              placeholder={t('form.enterUrl')}
-              className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white"
+              placeholder={t(`form.enter_${qrType}`, t('form.enterUrl', 'https://...'))}
+              className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 focus:bg-white dark:focus:bg-slate-700 outline-none transition-all dark:text-white text-sm"
             />
+            {t(`formHints.${qrType}`) && (
+              <div className={`mt-2.5 p-3 rounded-xl border flex items-start gap-2.5 text-xs ${
+                ['pdf', 'file', 'image', 'audio', 'video'].includes(qrType)
+                  ? 'bg-blue-50/70 dark:bg-blue-950/30 border-blue-200/60 dark:border-blue-800/40 text-slate-600 dark:text-slate-300'
+                  : 'bg-slate-50 dark:bg-slate-800/40 border-slate-200/60 dark:border-slate-700/50 text-slate-500 dark:text-slate-400'
+              }`}>
+                <Info className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
+                <p className="leading-relaxed">
+                  {t(`formHints.${qrType}`)}
+                </p>
+              </div>
+            )}
           </div>
         )}
 
         {qrType === 'wifi' && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.networkName')}</label>
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.networkName')}</label>
               <input
                 type="text"
                 name="ssid"
                 value={qrData.ssid || ''}
                 onChange={handleDataChange}
-                className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white"
+                placeholder="MyHomeWiFi"
+                className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white text-sm"
               />
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.password')}</label>
+                <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.password')}</label>
                 <input
                   type="password"
                   name="password"
                   value={qrData.password || ''}
                   onChange={handleDataChange}
-                  className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white"
+                  placeholder="••••••••"
+                  className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white text-sm"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.encryption')}</label>
+                <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.encryption')}</label>
                 <select
                   name="encryption"
                   value={qrData.encryption || 'WPA'}
                   onChange={handleDataChange}
-                  className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white"
+                  className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white text-sm"
                 >
-                  <option value="WPA">WPA/WPA2</option>
+                  <option value="WPA">WPA/WPA2/WPA3</option>
                   <option value="WEP">WEP</option>
-                  <option value="nopass">None</option>
+                  <option value="nopass">None (Open Network)</option>
                 </select>
               </div>
             </div>
+            {t('formHints.wifi') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.wifi')}</span>
+              </p>
+            )}
           </div>
         )}
 
         {['facebook', 'twitter', 'tiktok', 'linkedin', 'telegram', 'snapchat', 'discord', 'spotify', 'venmo'].includes(qrType) && (
           <div>
-            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">
+            <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">
               {t(`form.${qrType}Input`)}
             </label>
             <input
@@ -210,21 +245,33 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
               value={qrData[`${qrType}Input`] || ''}
               onChange={handleDataChange}
               placeholder={t(`form.enter_${qrType}`)}
-              className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white"
+              className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white text-sm"
             />
+            {t(`formHints.${qrType}`) && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t(`formHints.${qrType}`)}</span>
+              </p>
+            )}
           </div>
         )}
 
         {qrType === 'paypal' && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.paypalUsername')}</label>
-              <input type="text" name="paypalUsername" value={qrData.paypalUsername || ''} onChange={handleDataChange} placeholder="Username" className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.paypalUsername')}</label>
+              <input type="text" name="paypalUsername" value={qrData.paypalUsername || ''} onChange={handleDataChange} placeholder="yourusername" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white text-sm" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.paypalAmount')}</label>
-              <input type="number" name="paypalAmount" value={qrData.paypalAmount || ''} onChange={handleDataChange} placeholder="0.00" className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.paypalAmount')}</label>
+              <input type="number" name="paypalAmount" value={qrData.paypalAmount || ''} onChange={handleDataChange} placeholder="0.00" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white text-sm" />
             </div>
+            {t('formHints.paypal') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.paypal')}</span>
+              </p>
+            )}
           </div>
         )}
 
@@ -232,151 +279,219 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.firstName')}</label>
-                <input type="text" name="firstName" value={qrData.firstName || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+                <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.firstName')}</label>
+                <input type="text" name="firstName" value={qrData.firstName || ''} onChange={handleDataChange} placeholder="John" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.lastName')}</label>
-                <input type="text" name="lastName" value={qrData.lastName || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+                <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.lastName')}</label>
+                <input type="text" name="lastName" value={qrData.lastName || ''} onChange={handleDataChange} placeholder="Doe" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.phone')}</label>
-              <input type="tel" name="phone" value={qrData.phone || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.phone')}</label>
+              <input type="tel" name="phone" value={qrData.phone || ''} onChange={handleDataChange} placeholder="+1 234 567 8900" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.email')}</label>
-              <input type="email" name="email" value={qrData.email || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.email')}</label>
+              <input type="email" name="email" value={qrData.email || ''} onChange={handleDataChange} placeholder="john@example.com" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
+            {t('formHints.vcard') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.vcard')}</span>
+              </p>
+            )}
           </div>
         )}
 
         {qrType === 'text' && (
           <div>
-            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('types.text')}</label>
+            <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('types.text')}</label>
             <textarea
               name="text"
               value={qrData.text || ''}
               onChange={handleDataChange}
               placeholder={t('form.textPlaceholder')}
               rows={4}
-              className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white"
+              className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none transition-all dark:text-white text-sm"
             />
+            {t('formHints.text') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.text')}</span>
+              </p>
+            )}
           </div>
         )}
 
         {qrType === 'email' && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.emailTo')}</label>
-              <input type="email" name="emailTo" value={qrData.emailTo || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.emailTo')}</label>
+              <input type="email" name="emailTo" value={qrData.emailTo || ''} onChange={handleDataChange} placeholder="contact@business.com" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.emailSubject')}</label>
-              <input type="text" name="emailSubject" value={qrData.emailSubject || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.emailSubject')}</label>
+              <input type="text" name="emailSubject" value={qrData.emailSubject || ''} onChange={handleDataChange} placeholder="Inquiry about services" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.emailBody')}</label>
-              <textarea name="emailBody" value={qrData.emailBody || ''} onChange={handleDataChange} rows={3} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.emailBody')}</label>
+              <textarea name="emailBody" value={qrData.emailBody || ''} onChange={handleDataChange} placeholder="Hello, I would like to get in touch..." rows={3} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
+            {t('formHints.email') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.email')}</span>
+              </p>
+            )}
           </div>
         )}
 
         {qrType === 'phone' && (
           <div>
-            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.phone')}</label>
-            <input type="tel" name="phoneNumber" value={qrData.phoneNumber || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+            <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.phone')}</label>
+            <input type="tel" name="phoneNumber" value={qrData.phoneNumber || ''} onChange={handleDataChange} placeholder="+1 234 567 8900" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
+            {t('formHints.phone') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.phone')}</span>
+              </p>
+            )}
           </div>
         )}
 
         {qrType === 'sms' && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.phone')}</label>
-              <input type="tel" name="smsNumber" value={qrData.smsNumber || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.phone')}</label>
+              <input type="tel" name="smsNumber" value={qrData.smsNumber || ''} onChange={handleDataChange} placeholder="+1 234 567 8900" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.smsMessage')}</label>
-              <textarea name="smsMessage" value={qrData.smsMessage || ''} onChange={handleDataChange} rows={3} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.smsMessage')}</label>
+              <textarea name="smsMessage" value={qrData.smsMessage || ''} onChange={handleDataChange} placeholder="Pre-filled SMS text..." rows={3} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
+            {t('formHints.sms') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.sms')}</span>
+              </p>
+            )}
           </div>
         )}
 
         {qrType === 'location' && (
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.lat')}</label>
-              <input type="text" name="lat" placeholder="e.g. -6.2088" value={qrData.lat || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+          <div className="space-y-3">
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.lat')}</label>
+                <input type="text" name="lat" placeholder="e.g. -6.2088" value={qrData.lat || ''} onChange={handleDataChange} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.lng')}</label>
+                <input type="text" name="lng" placeholder="e.g. 106.8456" value={qrData.lng || ''} onChange={handleDataChange} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
+              </div>
             </div>
-            <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.lng')}</label>
-              <input type="text" name="lng" placeholder="e.g. 106.8456" value={qrData.lng || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
-            </div>
+            {t('formHints.location') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.location')}</span>
+              </p>
+            )}
           </div>
         )}
 
         {qrType === 'event' && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.eventTitle')}</label>
-              <input type="text" name="eventTitle" value={qrData.eventTitle || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.eventTitle')}</label>
+              <input type="text" name="eventTitle" value={qrData.eventTitle || ''} onChange={handleDataChange} placeholder="Grand Opening Party" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.eventLocation')}</label>
-              <input type="text" name="eventLocation" value={qrData.eventLocation || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.eventLocation')}</label>
+              <input type="text" name="eventLocation" value={qrData.eventLocation || ''} onChange={handleDataChange} placeholder="123 Main St, New York" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.eventStart')}</label>
-                <input type="datetime-local" name="eventStart" value={qrData.eventStart || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+                <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.eventStart')}</label>
+                <input type="datetime-local" name="eventStart" value={qrData.eventStart || ''} onChange={handleDataChange} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
               </div>
               <div>
-                <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.eventEnd')}</label>
-                <input type="datetime-local" name="eventEnd" value={qrData.eventEnd || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+                <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.eventEnd')}</label>
+                <input type="datetime-local" name="eventEnd" value={qrData.eventEnd || ''} onChange={handleDataChange} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
               </div>
             </div>
+            {t('formHints.event') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.event')}</span>
+              </p>
+            )}
           </div>
         )}
 
         {qrType === 'whatsapp' && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.waNumber')}</label>
-              <input type="tel" name="waNumber" placeholder="e.g. 1234567890" value={qrData.waNumber || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.waNumber')}</label>
+              <input type="tel" name="waNumber" placeholder={t('form.enter_whatsapp', '6281234567890')} value={qrData.waNumber || ''} onChange={handleDataChange} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
+              {t('formHints.whatsapp') && (
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1.5">
+                  <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                  <span>{t('formHints.whatsapp')}</span>
+                </p>
+              )}
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.waMessage')}</label>
-              <textarea name="waMessage" value={qrData.waMessage || ''} onChange={handleDataChange} rows={3} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.waMessage')}</label>
+              <textarea name="waMessage" value={qrData.waMessage || ''} onChange={handleDataChange} placeholder="Hello, I would like to ask about..." rows={3} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
           </div>
         )}
 
         {qrType === 'youtube' && (
           <div>
-            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.youtubeUrl')}</label>
-            <input type="url" name="youtubeUrl" placeholder="https://youtube.com/..." value={qrData.youtubeUrl || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+            <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.youtubeUrl')}</label>
+            <input type="url" name="youtubeUrl" placeholder={t('form.enter_youtube', 'https://youtube.com/watch?v=...')} value={qrData.youtubeUrl || qrData.url || ''} onChange={handleDataChange} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
+            {t('formHints.youtube') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.youtube')}</span>
+              </p>
+            )}
           </div>
         )}
 
         {qrType === 'instagram' && (
           <div>
-            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.igUsername')}</label>
-            <input type="text" name="igUsername" placeholder="@username" value={qrData.igUsername || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+            <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.igUsername')}</label>
+            <input type="text" name="igUsername" placeholder={t('form.enter_instagram', '@username')} value={qrData.igUsername || ''} onChange={handleDataChange} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
+            {t('formHints.instagram') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.instagram')}</span>
+              </p>
+            )}
           </div>
         )}
 
         {qrType === 'appstore' && (
           <div>
-            <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.appStoreUrl')}</label>
-            <input type="url" name="appStoreUrl" placeholder="https://play.google.com/..." value={qrData.appStoreUrl || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+            <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.appStoreUrl')}</label>
+            <input type="url" name="appStoreUrl" placeholder={t('form.enter_appstore', 'https://apps.apple.com/...')} value={qrData.appStoreUrl || qrData.url || ''} onChange={handleDataChange} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
+            {t('formHints.appstore') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.appstore')}</span>
+              </p>
+            )}
           </div>
         )}
 
         {qrType === 'crypto' && (
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.cryptoCoin')}</label>
-              <select name="cryptoCoin" value={qrData.cryptoCoin || 'bitcoin'} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white">
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.cryptoCoin')}</label>
+              <select name="cryptoCoin" value={qrData.cryptoCoin || 'bitcoin'} onChange={handleDataChange} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm">
                 <option value="bitcoin">Bitcoin (BTC)</option>
                 <option value="ethereum">Ethereum (ETH)</option>
                 <option value="bitcoincash">Bitcoin Cash (BCH)</option>
@@ -385,13 +500,19 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.cryptoAddress')}</label>
-              <input type="text" name="cryptoAddress" value={qrData.cryptoAddress || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.cryptoAddress')}</label>
+              <input type="text" name="cryptoAddress" value={qrData.cryptoAddress || ''} onChange={handleDataChange} placeholder="e.g. 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1 text-zinc-800 dark:text-zinc-200">{t('form.cryptoAmount')}</label>
-              <input type="number" step="any" name="cryptoAmount" value={qrData.cryptoAmount || ''} onChange={handleDataChange} className="w-full px-4 py-2 rounded-lg border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white" />
+              <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.cryptoAmount')}</label>
+              <input type="number" step="any" name="cryptoAmount" value={qrData.cryptoAmount || ''} onChange={handleDataChange} placeholder="0.00" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
             </div>
+            {t('formHints.crypto') && (
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1.5">
+                <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                <span>{t('formHints.crypto')}</span>
+              </p>
+            )}
           </div>
         )}
       </div>

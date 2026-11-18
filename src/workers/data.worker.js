@@ -31,12 +31,12 @@ self.onmessage = (e) => {
       const encodedMsg = encodeURIComponent(qrData.waMessage || '');
       dataString = `https://wa.me/${cleanNumber}${encodedMsg ? '?text=' + encodedMsg : ''}`;
     } else if (qrType === 'youtube') {
-      dataString = qrData.youtubeUrl || 'https://youtube.com/';
+      dataString = qrData.youtubeUrl || qrData.url || 'https://youtube.com/';
     } else if (qrType === 'instagram') {
-      const cleanUsername = (qrData.igUsername || '').replace(/^@/, '');
+      const cleanUsername = (qrData.igUsername || qrData.instagramInput || '').replace(/^@/, '');
       dataString = `https://instagram.com/${cleanUsername}`;
     } else if (qrType === 'appstore') {
-      dataString = qrData.appStoreUrl || 'https://play.google.com/store';
+      dataString = qrData.appStoreUrl || qrData.url || 'https://play.google.com/store';
     } else if (qrType === 'crypto') {
       const coinMap = {
         bitcoin: 'bitcoin',
@@ -70,13 +70,13 @@ self.onmessage = (e) => {
     } else if (qrType === 'spotify') {
       dataString = qrData.spotifyInput || 'https://spotify.com/';
     } else if (qrType === 'paypal') {
-      const cleanUser = (qrData.paypalInput || '').replace(/^@/, '');
+      const cleanUser = (qrData.paypalUsername || qrData.paypalInput || '').replace(/^@/, '');
       dataString = `https://paypal.me/${cleanUser}`;
     } else if (qrType === 'venmo') {
       const cleanUser = (qrData.venmoInput || '').replace(/^@/, '');
       dataString = `venmo://paycharge?txn=pay&recipients=${cleanUser}`;
     } else if (['pdf', 'gforms', 'greview', 'image', 'linkinbio', 'video', 'audio', 'amazon', 'booking', 'file'].includes(qrType)) {
-      dataString = qrData[`${qrType}Input`] || 'https://createmy-qr.com';
+      dataString = qrData[`${qrType}Input`] || qrData.url || 'https://createmy-qr.com';
     } else if (qrType === 'github') {
       const u = (qrData.githubInput || '').replace(/.*\//, '');
       dataString = `https://github.com/${u}`;

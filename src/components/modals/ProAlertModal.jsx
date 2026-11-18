@@ -33,15 +33,15 @@ export default function ProAlertModal() {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-md animate-fade-in">
       {/* Backdrop */}
-      <div 
-        className="fixed inset-0" 
-        onClick={closeProModal} 
-        aria-hidden="true" 
+      <div
+        className="fixed inset-0"
+        onClick={closeProModal}
+        aria-hidden="true"
       />
-      
+
       {/* Canva / Figma Style Compact Micro-Modal Card (~380px) */}
       <div className="relative w-full max-w-[380px] bg-white dark:bg-[#081226] border border-slate-200 dark:border-blue-900/40 rounded-3xl shadow-[0_25px_70px_-15px_rgba(0,0,0,0.35)] p-6 z-10 overflow-hidden animate-scale-up text-center">
-        
+
         {/* Subtle Ambient Royal Blue Glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-24 bg-blue-600/10 dark:bg-blue-500/15 blur-2xl pointer-events-none rounded-full" />
 
@@ -66,8 +66,8 @@ export default function ProAlertModal() {
         {/* Small Micro-Badge */}
         <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200/80 dark:border-blue-700/50 text-[10.5px] font-bold uppercase tracking-wider mb-2">
           <span>
-            {isGuest 
-              ? t('proMicro.guestBadge', '✨ 2 Free Exports') 
+            {isGuest
+              ? t('proMicro.guestBadge', '✨ 2 Free Exports')
               : t('proMicro.userBadge', '👑 PRO Feature')}
           </span>
         </div>
