@@ -20,6 +20,7 @@ export default function ProAlertModal() {
 
   const isGuest = !user;
   const isOutOfTrials = Boolean(user && freeTrialsRemaining <= 0);
+  const isBulk = Boolean(proModalFeature && /batch|bulk/i.test(proModalFeature));
 
   const handlePrimaryAction = () => {
     closeProModal();
@@ -67,7 +68,7 @@ export default function ProAlertModal() {
         <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200/80 dark:border-blue-700/50 text-[10.5px] font-bold uppercase tracking-wider mb-2">
           <span>
             {isGuest
-              ? t('proMicro.guestBadge', '✨ 2 Free Exports')
+              ? (isBulk ? t('proMicro.guestBatchBadge', '✨ 1 Free Batch') : t('proMicro.guestBadge', '✨ 2 Free Exports'))
               : t('proMicro.userBadge', '👑 PRO Feature')}
           </span>
         </div>
@@ -75,15 +76,15 @@ export default function ProAlertModal() {
         {/* Punchy Headline (1 line) */}
         <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1.5 leading-snug">
           {isGuest
-            ? (proModalFeature ? `Try ${proModalFeature} Free` : t('proMicro.guestTitle', 'Claim 2 Free PRO Exports'))
-            : t('proMicro.userTitle', 'Unlock Unlimited Exports')}
+            ? (isBulk ? t('proMicro.guestBatchTitle', 'Try 1 Free Batch Compilation') : (proModalFeature ? `Try ${proModalFeature} Free` : t('proMicro.guestTitle', 'Claim 2 Free PRO Exports')))
+            : (isBulk ? t('proMicro.userBatchTitle', 'Unlock Unlimited Batch Compilations') : t('proMicro.userTitle', 'Unlock Unlimited Exports'))}
         </h3>
 
         {/* Clean 1-Line Benefit Description */}
         <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-6 px-1">
           {isGuest
-            ? t('proMicro.guestDesc', 'Sign in with Google or Email to unlock 2 free vector SVG and print-ready PDF downloads.')
-            : t('proMicro.userDesc', "You've used your 2 free exports. Upgrade to PRO for unlimited vector SVG and PDF downloads.")}
+            ? (isBulk ? t('proMicro.guestBatchDesc', 'Sign in with Google or Email to unlock 1 free batch compilation with CSV import and ZIP export.') : t('proMicro.guestDesc', 'Sign in with Google or Email to unlock 2 free vector SVG and print-ready PDF downloads.'))
+            : (isBulk ? t('proMicro.userBatchDesc', "You've used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches and ZIP downloads.") : t('proMicro.userDesc', "You've used your 2 free exports. Upgrade to PRO for unlimited vector SVG and PDF downloads."))}
         </p>
 
         {/* Primary CTA (Full Width) */}
@@ -95,7 +96,7 @@ export default function ProAlertModal() {
           {isGuest ? (
             <>
               <LogIn className="w-4 h-4" />
-              <span>{t('proMicro.guestCta', 'Sign In to Claim 2 Free')}</span>
+              <span>{isBulk ? t('proMicro.guestBatchCta', 'Sign In to Claim 1 Free Batch') : t('proMicro.guestCta', 'Sign In to Claim 2 Free')}</span>
             </>
           ) : (
             <>

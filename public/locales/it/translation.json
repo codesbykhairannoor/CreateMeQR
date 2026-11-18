@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Hai bisogno di codici QR in blocco? Prova il nostro motore Pro Bulk Batch con importazione CSV ed esportazione ZIP istantanea.",
-    "bulkBannerLink": "Vai a Generatore di massa →"
+    "bulkBannerLink": "Vai a Generatore di massa →",
+    "bulkFreeBadge": "1 lotto gratuito"
   },
   "bulk": {
     "badge": "Motore Batch Pro • 100% lato client",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "Compressione ZIP...",
     "galleryTitle": "Galleria di codici generati",
     "btnSave": "Salva",
-    "galleryLimitNotice": "Visualizzazione dei primi 48 articoli. Tutti gli {{count}} elementi verranno inclusi nello ZIP scaricato."
+    "galleryLimitNotice": "Visualizzazione dei primi 48 articoli. Tutti gli {{count}} elementi verranno inclusi nello ZIP scaricato.",
+    "freeTrialTitle": "1 prova batch gratuita pronta",
+    "freeTrialDesc": "Hai 1 generazione batch gratuita disponibile. Compila i codici e scarica ZIP in 1 clic.",
+    "oneFreeBadge": "1 lotto gratuito",
+    "btnSignInToGen": "Accedi per generare (1 batch gratuito)",
+    "btnGenerateFree": "Genera {{count}} codici (1 prova gratuita)",
+    "btnUpgradeToGen": "Passa a PRO per generare",
+    "useTrialBtn": "1 lotto gratuito pronto",
+    "signInBtn": "Accedi (ottieni 1 batch gratuito)",
+    "proGateTitle": "Elaborazione batch PRO",
+    "proGateDescUser": "La compilazione batch CSV in blocco e il download ZIP richiedono un abbonamento PRO attivo.",
+    "proGateDescGuest": "Accedi al tuo account PRO per generare batch di codici QR in blocco.",
+    "upgradeBtn": "Passa a PRO"
   },
   "printStudio": {
     "modalTitle": "Studio di fogli di stampa e adesivi",
@@ -1997,7 +2010,13 @@
     "userTitle": "Sblocca esportazioni illimitate",
     "userDesc": "Hai utilizzato le tue 2 esportazioni gratuite. Passa a PRO per download illimitati.",
     "userCta": "Passa a PRO — Da $9.99",
-    "later": "Più tardi"
+    "later": "Più tardi",
+    "guestBatchBadge": "✨ 1 lotto gratuito",
+    "guestBatchTitle": "Prova 1 compilazione batch gratuita",
+    "guestBatchDesc": "Accedi con Google o e-mail per sbloccare 1 compilazione batch gratuita con importazione CSV ed esportazione ZIP.",
+    "guestBatchCta": "Accedi per richiedere 1 lotto gratuito",
+    "userBatchTitle": "Sblocca compilation batch illimitate",
+    "userBatchDesc": "Hai utilizzato la tua 1 prova batch gratuita. Passa a PRO per batch CSV e download ZIP illimitati."
   },
   "formHints": {
     "zeroServerTitle": "Privacy al 100% e validità a vita",

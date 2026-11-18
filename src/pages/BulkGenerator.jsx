@@ -75,7 +75,14 @@ Product Sample,https://createmy-qr.com/item/482019,SKU-482019,Retail`;
 export default function BulkGenerator() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const { user, isPro, freeTrialsRemaining, consumeProFeature, openAuthModal, openProModal } = useAuth();
+  const {
+    user,
+    isPro,
+    freeBulkTrialsRemaining,
+    consumeBulkFeature,
+    openAuthModal,
+    openProModal
+  } = useAuth();
   const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
 
   // Tab & Input States
@@ -173,7 +180,11 @@ export default function BulkGenerator() {
     if (!dataCol || parsedData.rows.length === 0) return;
 
     if (!isPro) {
-      const allowed = await consumeProFeature(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'));
+      if (!user) {
+        openProModal(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'));
+        return;
+      }
+      const allowed = await consumeBulkFeature(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'));
       if (!allowed) return;
     }
 
@@ -300,11 +311,6 @@ export default function BulkGenerator() {
   // Bundle into a Single ZIP Archive
   const handleDownloadZip = async () => {
     if (generatedResults.length === 0) return;
-
-    if (!isPro) {
-      const allowed = await consumeProFeature(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'));
-      if (!allowed) return;
-    }
 
     setIsZipping(true);
 
@@ -704,34 +710,48 @@ export default function BulkGenerator() {
             </h2>
           </div>
 
-          {/* PRO Guard Banner for Free / Non-logged in Users */}
+          {/* PRO / Free Trial Banner for Free Users */}
           {!isPro && (
-            <div className="mb-6 p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="mb-6 p-4 rounded-2xl bg-blue-500/10 border border-blue-500/20 dark:bg-blue-900/20 dark:border-blue-700/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
-                  <Crown className="w-5 h-5" />
+                <div className="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
+                  <Sparkles className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
                     <span className="text-sm font-semibold text-slate-900 dark:text-white">
-                      {t('bulk.proGateTitle', 'PRO Batch Processing')}
+                      {user && freeBulkTrialsRemaining > 0
+                        ? t('bulk.freeTrialTitle', 'Free Batch Trial Available')
+                        : t('bulk.proGateTitle', 'PRO Batch Processing')}
                     </span>
-                    <span className="px-1.5 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wider bg-amber-500 text-slate-900">
-                      PRO Feature
+                    <span className="px-2 py-0.5 rounded-full text-[10.5px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-700 dark:text-blue-300 border border-blue-400/30">
+                      {user && freeBulkTrialsRemaining > 0 ? t('bulk.oneFreeBadge', '1 Free Batch') : 'PRO Feature'}
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 dark:text-slate-400 mt-0.5 font-normal">
                     {user
-                      ? t('bulk.proGateDescUser', 'Bulk CSV batch compilation and ZIP download require an active PRO membership.')
-                      : t('bulk.proGateDescGuest', 'Please sign in to your PRO account to generate bulk QR code batches.')}
+                      ? (freeBulkTrialsRemaining > 0
+                          ? t('bulk.freeTrialDesc', 'You have 1 free batch compilation available. Generate codes and download ZIP in 1 click.')
+                          : t('bulk.proGateDescUser', 'You have used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches.'))
+                      : t('bulk.proGateDescGuest', 'Sign in to claim 1 free batch QR & Barcode generation, or upgrade to PRO for unlimited batches.')}
                   </p>
                 </div>
               </div>
               <button
-                onClick={() => openProModal(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'))}
+                onClick={() => {
+                  if (!user) openAuthModal();
+                  else if (freeBulkTrialsRemaining > 0) {
+                    const btn = document.getElementById('bulk-generate-btn');
+                    if (btn) btn.scrollIntoView({ behavior: 'smooth' });
+                  } else {
+                    openProModal(t('proAlert.bulkFeature', 'Batch QR & Barcode Compilation'));
+                  }
+                }}
                 className="px-4 py-2 bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-semibold text-xs rounded-xl shadow-md transition-all whitespace-nowrap cursor-pointer hover:opacity-90 capitalize"
               >
-                {user ? t('bulk.upgradeBtn', 'Upgrade to PRO') : t('bulk.signInBtn', 'Sign In to Unlock')}
+                {!user
+                  ? t('bulk.signInBtn', 'Sign In (Get 1 Free Batch)')
+                  : (freeBulkTrialsRemaining > 0 ? t('bulk.useTrialBtn', '1 Free Batch Ready') : t('bulk.upgradeBtn', 'Upgrade to PRO'))}
               </button>
             </div>
           )}
@@ -747,6 +767,7 @@ export default function BulkGenerator() {
             </div>
 
             <button
+              id="bulk-generate-btn"
               disabled={isProcessing || parsedData.rows.length === 0}
               onClick={handleGenerateBatch}
               className="w-full md:w-auto px-7 py-3.5 bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white font-semibold rounded-2xl shadow-lg shadow-blue-500/20 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 disabled:opacity-50 text-sm cursor-pointer"
@@ -758,8 +779,14 @@ export default function BulkGenerator() {
                 </>
               ) : !isPro ? (
                 <>
-                  <Crown className="w-4 h-4 text-blue-200" />
-                  <span>{user ? (freeTrialsRemaining > 0 ? `Generate (${freeTrialsRemaining} Free Left)` : t('bulk.btnUpgradeToGen', 'Upgrade to PRO to Generate')) : t('bulk.btnSignInToGen', 'Sign In to Generate Batch')}</span>
+                  <Sparkles className="w-4 h-4 text-blue-200" />
+                  <span>
+                    {!user
+                      ? t('bulk.btnSignInToGen', 'Sign In to Generate (1 Free Batch)')
+                      : (freeBulkTrialsRemaining > 0
+                          ? t('bulk.btnGenerateFree', 'Generate {{count}} Codes (1 Free Batch)', { count: parsedData.rows.length })
+                          : t('bulk.btnUpgradeToGen', 'Upgrade to PRO to Generate'))}
+                  </span>
                 </>
               ) : (
                 <>
@@ -821,11 +848,6 @@ export default function BulkGenerator() {
                 >
                   <FileArchive className="w-4 h-4" />
                   <span>{isZipping ? t('bulk.btnCompressing', 'Compressing ZIP...') : t('bulk.btnDownloadZip', 'Download All ({{count}} items) as ZIP', { count: generatedResults.length })}</span>
-                  {!isPro && (
-                    <span className="px-1.5 py-0.2 rounded text-[9.5px] font-semibold bg-blue-500/20 text-blue-200 border border-blue-400/30 uppercase flex items-center gap-0.5">
-                      <Sparkles size={9} /> {user && freeTrialsRemaining > 0 ? `${freeTrialsRemaining} Free` : 'PRO'}
-                    </span>
-                  )}
                 </button>
               </div>
             </div>

@@ -1701,7 +1701,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Aveți nevoie de coduri QR în bloc? Încercați motorul nostru Pro Bulk Batch cu import CSV și export ZIP instant.",
-    "bulkBannerLink": "Accesați Generatorul în vrac →"
+    "bulkBannerLink": "Accesați Generatorul în vrac →",
+    "bulkFreeBadge": "1 lot gratuit"
   },
   "bulk": {
     "badge": "Motor Batch Pro • 100% partea client",
@@ -1753,7 +1754,19 @@
     "btnCompressing": "Se comprimă ZIP...",
     "galleryTitle": "Galeria de coduri generate",
     "btnSave": "Salva",
-    "galleryLimitNotice": "Se afișează primele 48 de articole. Toate {{count}} articole vor fi incluse în ZIP descărcat."
+    "galleryLimitNotice": "Se afișează primele 48 de articole. Toate {{count}} articole vor fi incluse în ZIP descărcat.",
+    "freeTrialTitle": "1 lot gratuit de probă gata",
+    "freeTrialDesc": "Aveți disponibilă 1 generație de lot gratuită. Compilați coduri și descărcați ZIP într-un singur clic.",
+    "oneFreeBadge": "1 lot gratuit",
+    "btnSignInToGen": "Conectați-vă pentru a genera (1 lot gratuit)",
+    "btnGenerateFree": "Generați {{count}} coduri (1 probă gratuită)",
+    "btnUpgradeToGen": "Faceți upgrade la PRO pentru a genera",
+    "useTrialBtn": "1 lot gratuit gata",
+    "signInBtn": "Conectați-vă (Obțineți 1 lot gratuit)",
+    "proGateTitle": "Procesare în loturi PRO",
+    "proGateDescUser": "Compilarea în bloc CSV și descărcarea ZIP necesită un abonament PRO activ.",
+    "proGateDescGuest": "Conectați-vă la contul dvs. PRO pentru a genera loturi de coduri QR în bloc.",
+    "upgradeBtn": "Faceți upgrade la PRO"
   },
   "printStudio": {
     "modalTitle": "Print & Sticker Sheet Studio",
@@ -1828,7 +1841,13 @@
     "userTitle": "Deblocați exporturi nelimitate",
     "userDesc": "Ați folosit cele 2 exporturi gratuite. Treceți la PRO pentru descărcări nelimitate.",
     "userCta": "Treceți la PRO — De la $9.99",
-    "later": "Poate mai târziu"
+    "later": "Poate mai târziu",
+    "guestBatchBadge": "✨ 1 lot gratuit",
+    "guestBatchTitle": "Încercați 1 compilație de lot gratuită",
+    "guestBatchDesc": "Conectați-vă cu Google sau e-mail pentru a debloca 1 compilație de lot gratuită cu import CSV și export ZIP.",
+    "guestBatchCta": "Conectați-vă pentru a revendica 1 lot gratuit",
+    "userBatchTitle": "Deblocați compilații de loturi nelimitate",
+    "userBatchDesc": "Ați folosit 1 probă gratuită în lot. Faceți upgrade la PRO pentru loturi CSV nelimitate și descărcări ZIP."
   },
   "formHints": {
     "zeroServerTitle": "100% confidențialitate și valabilitate pe viață",

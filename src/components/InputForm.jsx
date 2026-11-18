@@ -174,8 +174,8 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
             />
             {t(`formHints.${qrType}`) && (
               <div className={`mt-2.5 p-3 rounded-xl border flex items-start gap-2.5 text-xs ${['pdf', 'file', 'image', 'audio', 'video'].includes(qrType)
-                  ? 'bg-blue-50/70 dark:bg-blue-950/30 border-blue-200/60 dark:border-blue-800/40 text-slate-600 dark:text-slate-300'
-                  : 'bg-slate-50 dark:bg-slate-800/40 border-slate-200/60 dark:border-slate-700/50 text-slate-500 dark:text-slate-400'
+                ? 'bg-blue-50/70 dark:bg-blue-950/30 border-blue-200/60 dark:border-blue-800/40 text-slate-600 dark:text-slate-300'
+                : 'bg-slate-50 dark:bg-slate-800/40 border-slate-200/60 dark:border-slate-700/50 text-slate-500 dark:text-slate-400'
                 }`}>
                 <Info className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
                 <p className="leading-relaxed">

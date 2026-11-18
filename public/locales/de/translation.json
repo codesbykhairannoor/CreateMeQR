@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Benötigen Sie Massen-QR-Codes? Testen Sie unsere Pro Bulk Batch Engine mit CSV-Import und sofortigem ZIP-Export.",
-    "bulkBannerLink": "Gehen Sie zu Bulk Generator →"
+    "bulkBannerLink": "Gehen Sie zu Bulk Generator →",
+    "bulkFreeBadge": "1 kostenlose Charge"
   },
   "bulk": {
     "badge": "Pro Batch Engine • 100 % clientseitig",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "ZIP komprimieren...",
     "galleryTitle": "Generierte Code-Galerie",
     "btnSave": "Speichern",
-    "galleryLimitNotice": "Die ersten 48 Artikel werden angezeigt. Alle {{count}} Elemente werden in der heruntergeladenen ZIP-Datei enthalten sein."
+    "galleryLimitNotice": "Die ersten 48 Artikel werden angezeigt. Alle {{count}} Elemente werden in der heruntergeladenen ZIP-Datei enthalten sein.",
+    "freeTrialTitle": "1 kostenlose Batch-Testversion bereit",
+    "freeTrialDesc": "Ihnen steht 1 kostenlose Batch-Generierung zur Verfügung. Kompilieren Sie Codes und laden Sie ZIP mit einem Klick herunter.",
+    "oneFreeBadge": "1 kostenlose Charge",
+    "btnSignInToGen": "Zum Generieren anmelden (1 kostenloser Stapel)",
+    "btnGenerateFree": "Generieren Sie {{count}} Codes (1 kostenlose Testversion)",
+    "btnUpgradeToGen": "Upgrade auf PRO zum Generieren",
+    "useTrialBtn": "1 kostenlose Charge bereit",
+    "signInBtn": "Anmelden (1 kostenlose Charge erhalten)",
+    "proGateTitle": "PRO-Stapelverarbeitung",
+    "proGateDescUser": "Für die Massenkompilierung von CSV-Batches und den ZIP-Download ist eine aktive PRO-Mitgliedschaft erforderlich.",
+    "proGateDescGuest": "Bitte melden Sie sich bei Ihrem PRO-Konto an, um Massen-QR-Code-Stapel zu generieren.",
+    "upgradeBtn": "Upgrade auf PRO"
   },
   "printStudio": {
     "modalTitle": "Druck- und Aufkleberbogenstudio",
@@ -1997,7 +2010,13 @@
     "userTitle": "Unbegrenzte Exporte freischalten",
     "userDesc": "Du hast deine 2 kostenlosen Exporte aufgebraucht. Hol dir PRO für unbegrenzte Downloads.",
     "userCta": "Auf PRO upgraden — Ab $9.99",
-    "later": "Vielleicht später"
+    "later": "Vielleicht später",
+    "guestBatchBadge": "✨ 1 kostenlose Charge",
+    "guestBatchTitle": "Probieren Sie 1 kostenlose Batch-Kompilierung aus",
+    "guestBatchDesc": "Melden Sie sich mit Google oder E-Mail an, um 1 kostenlose Batch-Kompilierung mit CSV-Import und ZIP-Export freizuschalten.",
+    "guestBatchCta": "Melden Sie sich an, um eine kostenlose Charge zu erhalten",
+    "userBatchTitle": "Schalten Sie unbegrenzte Batch-Zusammenstellungen frei",
+    "userBatchDesc": "Sie haben Ihre 1 kostenlose Batch-Testversion verwendet. Upgrade auf PRO für unbegrenzte CSV-Batches und ZIP-Downloads."
   },
   "formHints": {
     "zeroServerTitle": "100 % Datenschutz und lebenslange Gültigkeit",

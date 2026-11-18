@@ -58,6 +58,7 @@ export const AuthProvider = ({ children }) => {
       subscriptionStatus: isVipLifetime ? 'active' : 'inactive',
       suiteAccess: isVipLifetime ? 'all_access' : null,
       createmyqr_trials_used: 0,
+      createmyqr_bulk_trials_used: 0,
       createdAt: Date.now(),
       lastLoginAt: Date.now(),
     };
@@ -110,6 +111,7 @@ export const AuthProvider = ({ children }) => {
           subscriptionStatus: currentStatus,
           suiteAccess: isLifetime ? 'all_access' : (data.suiteAccess || null),
           createmyqr_trials_used: typeof data.createmyqr_trials_used === 'number' ? data.createmyqr_trials_used : 0,
+          createmyqr_bulk_trials_used: typeof data.createmyqr_bulk_trials_used === 'number' ? data.createmyqr_bulk_trials_used : 0,
           lastLoginAt: Date.now(),
         };
       } else {
@@ -291,6 +293,10 @@ export const AuthProvider = ({ children }) => {
   const trialsUsed = typeof profile?.createmyqr_trials_used === 'number' ? profile.createmyqr_trials_used : 0;
   const freeTrialsRemaining = isPro ? Infinity : Math.max(0, FREE_TRIALS_MAX - trialsUsed);
 
+  const FREE_BULK_TRIALS_MAX = 1;
+  const bulkTrialsUsed = typeof profile?.createmyqr_bulk_trials_used === 'number' ? profile.createmyqr_bulk_trials_used : 0;
+  const freeBulkTrialsRemaining = isPro ? Infinity : Math.max(0, FREE_BULK_TRIALS_MAX - bulkTrialsUsed);
+
   const [toastMessage, setToastMessage] = useState(null);
 
   const consumeProFeature = useCallback(async (featureName = '') => {
@@ -312,10 +318,10 @@ export const AuthProvider = ({ children }) => {
     try {
       if (db && user.uid) {
         const userRef = doc(db, 'users', user.uid);
-        await updateDoc(userRef, {
+        await updateDoc(userRef, sanitizeFirestoreData({
           createmyqr_trials_used: nextUsed,
           lastTrialUsedAt: Date.now(),
-        });
+        }));
       }
     } catch (err) {
       console.warn('[Firestore] Update trial count error:', err);
@@ -336,6 +342,44 @@ export const AuthProvider = ({ children }) => {
     return true;
   }, [isPro, user, freeTrialsRemaining, trialsUsed, openProModal]);
 
+  const consumeBulkFeature = useCallback(async (featureName = 'Batch QR & Barcode Compilation') => {
+    if (isPro) return true;
+
+    if (!user) {
+      openProModal(featureName);
+      return false;
+    }
+
+    if (freeBulkTrialsRemaining <= 0) {
+      openProModal(featureName);
+      return false;
+    }
+
+    const nextUsed = bulkTrialsUsed + 1;
+
+    try {
+      if (db && user.uid) {
+        const userRef = doc(db, 'users', user.uid);
+        await updateDoc(userRef, sanitizeFirestoreData({
+          createmyqr_bulk_trials_used: nextUsed,
+          lastBulkTrialUsedAt: Date.now(),
+        }));
+      }
+    } catch (err) {
+      console.warn('[Firestore] Update bulk trial count error:', err);
+    }
+
+    setProfile(prev => prev ? ({ ...prev, createmyqr_bulk_trials_used: nextUsed }) : prev);
+
+    setToastMessage(`🎉 Free batch compilation trial used! Upgrade to PRO for unlimited batch exports.`);
+
+    setTimeout(() => {
+      setToastMessage(null);
+    }, 4500);
+
+    return true;
+  }, [isPro, user, freeBulkTrialsRemaining, bulkTrialsUsed, openProModal]);
+
   return (
     <AuthContext.Provider
       value={{
@@ -348,6 +392,10 @@ export const AuthProvider = ({ children }) => {
         trialsUsed,
         freeTrialsRemaining,
         consumeProFeature,
+        FREE_BULK_TRIALS_MAX,
+        bulkTrialsUsed,
+        freeBulkTrialsRemaining,
+        consumeBulkFeature,
         signInWithGoogle,
         signInWithEmail,
         signUpWithEmail,
@@ -371,8 +419,8 @@ export const AuthProvider = ({ children }) => {
         <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-slate-900/95 dark:bg-[#0c1831]/95 text-white px-5 py-3 rounded-2xl shadow-2xl border border-blue-500/40 flex items-center gap-3 backdrop-blur-xl animate-fade-in-down max-w-[90vw]">
           <Sparkles className="w-4 h-4 text-blue-400 shrink-0" />
           <span className="text-xs sm:text-sm font-semibold">{toastMessage}</span>
-          <button 
-            onClick={() => setToastMessage(null)} 
+          <button
+            onClick={() => setToastMessage(null)}
             className="text-slate-400 hover:text-white ml-2 text-xs cursor-pointer p-1"
             aria-label="Dismiss"
           >
@@ -397,6 +445,10 @@ export const useAuth = () => {
       trialsUsed: 0,
       freeTrialsRemaining: 0,
       consumeProFeature: async () => false,
+      FREE_BULK_TRIALS_MAX: 1,
+      bulkTrialsUsed: 0,
+      freeBulkTrialsRemaining: 0,
+      consumeBulkFeature: async () => false,
       signInWithGoogle: async () => { },
       signInWithEmail: async () => { },
       signUpWithEmail: async () => { },

@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Butuh kode QR massal? Coba Mesin Batch Pro Massal kami dengan impor CSV dan ekspor ZIP instan.",
-    "bulkBannerLink": "Buka Generator Massal →"
+    "bulkBannerLink": "Buka Generator Massal →",
+    "bulkFreeBadge": "1x Gratis Coba"
   },
   "bulk": {
     "badge": "Mesin Batch Pro • 100% Sisi Klien",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "Mengompresi ZIP...",
     "galleryTitle": "Galeri Kode yang Dihasilkan",
     "btnSave": "Menyimpan",
-    "galleryLimitNotice": "Menampilkan 48 item pertama. Semua {{count}} item akan disertakan dalam ZIP yang diunduh."
+    "galleryLimitNotice": "Menampilkan 48 item pertama. Semua {{count}} item akan disertakan dalam ZIP yang diunduh.",
+    "freeTrialTitle": "1x Coba Gratis Generator Massal Siap Digunakan",
+    "freeTrialDesc": "Anda memiliki kuota 1x gratis membuat QR/Barcode massal. Buat kode dan unduh ZIP sekaligus.",
+    "oneFreeBadge": "1x Gratis Coba",
+    "btnSignInToGen": "Login untuk Coba 1x Batch Gratis",
+    "btnGenerateFree": "Generate {{count}} Kode (1x Coba Gratis)",
+    "btnUpgradeToGen": "Upgrade ke PRO untuk Generate Massal",
+    "useTrialBtn": "Gunakan Kuota Gratis",
+    "signInBtn": "Login (Dapatkan 1x Batch Gratis)",
+    "proGateTitle": "Pemrosesan Massal PRO",
+    "proGateDescUser": "Kompilasi batch CSV massal dan unduhan ZIP memerlukan langganan PRO aktif.",
+    "proGateDescGuest": "Silakan login untuk menikmati pembuatan kode QR massal.",
+    "upgradeBtn": "Upgrade ke PRO"
   },
   "printStudio": {
     "modalTitle": "Studio Cetak & Lembar Stiker",
@@ -1997,7 +2010,13 @@
     "userTitle": "Buka Ekspor Tanpa Batas",
     "userDesc": "Kuota 2x gratis Anda telah terpakai. Upgrade ke PRO untuk unduh vektor SVG & PDF tanpa batas.",
     "userCta": "Upgrade ke PRO — Mulai $9.99",
-    "later": "Nanti saja"
+    "later": "Nanti saja",
+    "guestBatchBadge": "✨ 1x Batch Gratis",
+    "guestBatchTitle": "Coba 1x Kompilasi Massal Gratis",
+    "guestBatchDesc": "Login dengan Google atau Email untuk membuka 1x pembuatan batch QR dan Barcode massal dengan impor CSV dan ekspor ZIP.",
+    "guestBatchCta": "Login untuk Klaim 1x Batch Gratis",
+    "userBatchTitle": "Buka Kompilasi Massal Tanpa Batas",
+    "userBatchDesc": "Anda telah menggunakan 1x kuota coba batch gratis. Upgrade ke PRO untuk kompilasi CSV dan unduhan ZIP tanpa batas."
   },
   "formHints": {
     "zeroServerTitle": "100% Privat & Aktif Selamanya",

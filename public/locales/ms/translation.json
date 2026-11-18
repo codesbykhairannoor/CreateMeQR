@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Perlukan kod QR pukal? Cuba Enjin Kumpulan Pukal Pro kami dengan import CSV dan eksport ZIP segera.",
-    "bulkBannerLink": "Pergi ke Penjana Pukal →"
+    "bulkBannerLink": "Pergi ke Penjana Pukal →",
+    "bulkFreeBadge": "1 Kumpulan Percuma"
   },
   "bulk": {
     "badge": "Enjin Kumpulan Pro • 100% Bahagian Pelanggan",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "Memampatkan ZIP...",
     "galleryTitle": "Galeri Kod Dijana",
     "btnSave": "Jimat",
-    "galleryLimitNotice": "Menunjukkan 48 item pertama. Semua {{kira}} item akan dimasukkan ke dalam ZIP yang dimuat turun."
+    "galleryLimitNotice": "Menunjukkan 48 item pertama. Semua {{kira}} item akan dimasukkan ke dalam ZIP yang dimuat turun.",
+    "freeTrialTitle": "1 Percubaan Kelompok Percuma Sedia",
+    "freeTrialDesc": "Anda mempunyai 1 generasi kumpulan percuma yang tersedia. Susun kod dan muat turun ZIP dalam 1 klik.",
+    "oneFreeBadge": "1 Kumpulan Percuma",
+    "btnSignInToGen": "Log Masuk untuk Menjana (1 Kumpulan Percuma)",
+    "btnGenerateFree": "Hasilkan {{count}} Kod (1 Percubaan Percuma)",
+    "btnUpgradeToGen": "Naik taraf kepada PRO untuk Menjana",
+    "useTrialBtn": "1 Kumpulan Percuma Sedia",
+    "signInBtn": "Log Masuk (Dapatkan 1 Kumpulan Percuma)",
+    "proGateTitle": "Pemprosesan Kelompok PRO",
+    "proGateDescUser": "Penyusunan kelompok CSV pukal dan muat turun ZIP memerlukan keahlian PRO yang aktif.",
+    "proGateDescGuest": "Sila log masuk ke akaun PRO anda untuk menjana kumpulan kod QR pukal.",
+    "upgradeBtn": "Naik taraf kepada PRO"
   },
   "printStudio": {
     "modalTitle": "Studio Lembaran Cetak & Pelekat",
@@ -1997,7 +2010,13 @@
     "userTitle": "Buka Eksport Tanpa Had",
     "userDesc": "Anda telah menggunakan 2 eksport percuma. Naik taraf ke PRO untuk muat turun tanpa had.",
     "userCta": "Naik Taraf ke PRO — Dari $9.99",
-    "later": "Mungkin nanti"
+    "later": "Mungkin nanti",
+    "guestBatchBadge": "✨ 1 Kumpulan Percuma",
+    "guestBatchTitle": "Cuba 1 Kompilasi Kelompok Percuma",
+    "guestBatchDesc": "Log masuk dengan Google atau E-mel untuk membuka kunci 1 kompilasi kelompok percuma dengan import CSV dan eksport ZIP.",
+    "guestBatchCta": "Log Masuk untuk Tuntut 1 Kumpulan Percuma",
+    "userBatchTitle": "Buka kunci Kompilasi Kelompok Tanpa Had",
+    "userBatchDesc": "Anda telah menggunakan 1 percubaan kelompok percuma anda. Tingkatkan kepada PRO untuk kumpulan CSV tanpa had dan muat turun ZIP."
   },
   "formHints": {
     "zeroServerTitle": "100% Privasi & Kesahan Sepanjang Hayat",

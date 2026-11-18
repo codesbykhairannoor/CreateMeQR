@@ -1725,7 +1725,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Tömeges QR-kódokra van szüksége? Próbálja ki Pro Bulk Batch Engine-ünket CSV-importálással és azonnali ZIP-exportálással.",
-    "bulkBannerLink": "Nyissa meg a Tömeges generátor → lehetőséget"
+    "bulkBannerLink": "Nyissa meg a Tömeges generátor → lehetőséget",
+    "bulkFreeBadge": "1 ingyenes köteg"
   },
   "bulk": {
     "badge": "Pro Batch Engine • 100% ügyféloldali",
@@ -1777,7 +1778,19 @@
     "btnCompressing": "ZIP tömörítés...",
     "galleryTitle": "Generált kódgaléria",
     "btnSave": "Megtakarítás",
-    "galleryLimitNotice": "Az első 48 elem megjelenítése. Minden {{count}} elem szerepelni fog a letöltött ZIP-ben."
+    "galleryLimitNotice": "Az első 48 elem megjelenítése. Minden {{count}} elem szerepelni fog a letöltött ZIP-ben.",
+    "freeTrialTitle": "1 ingyenes kötegelt próbaverzió készen áll",
+    "freeTrialDesc": "1 ingyenes köteggenerálás áll rendelkezésére. Fordítsa össze a kódokat és töltse le a ZIP-t 1 kattintással.",
+    "oneFreeBadge": "1 ingyenes köteg",
+    "btnSignInToGen": "Jelentkezzen be a generáláshoz (1 ingyenes köteg)",
+    "btnGenerateFree": "{{count}} kód generálása (1 ingyenes próbaidőszak)",
+    "btnUpgradeToGen": "A generáláshoz frissítsen PRO-ra",
+    "useTrialBtn": "1 Ingyenes köteg kész",
+    "signInBtn": "Bejelentkezés (1 ingyenes köteg)",
+    "proGateTitle": "PRO kötegelt feldolgozás",
+    "proGateDescUser": "A tömeges CSV kötegelt összeállításhoz és a ZIP letöltéshez aktív PRO-tagság szükséges.",
+    "proGateDescGuest": "Kérjük, jelentkezzen be PRO-fiókjába tömeges QR-kód-kötegek generálásához.",
+    "upgradeBtn": "Frissítsen PRO-ra"
   },
   "printStudio": {
     "modalTitle": "Print & Sticker Sheet Studio",
@@ -1852,7 +1865,13 @@
     "userTitle": "Korlátlan exportálás feloldása",
     "userDesc": "Felhasználta a 2 ingyenes exportálását. Váltson PRO-ra a korlátlan letöltésért.",
     "userCta": "Váltás PRO-ra — $9.99-tól",
-    "later": "Később"
+    "later": "Később",
+    "guestBatchBadge": "✨ 1 ingyenes tétel",
+    "guestBatchTitle": "Próbáljon ki 1 ingyenes kötegelt összeállítást",
+    "guestBatchDesc": "Jelentkezzen be Google-lal vagy e-mailben, hogy feloldjon 1 ingyenes kötegelt összeállítást CSV-importálással és ZIP-exportálással.",
+    "guestBatchCta": "Jelentkezzen be 1 ingyenes köteg igényléséhez",
+    "userBatchTitle": "Oldja fel a korlátlan kötegelt összeállításokat",
+    "userBatchDesc": "Felhasználta 1 ingyenes kötegelt próbaverzióját. Frissítsen PRO-ra a korlátlan CSV kötegek és ZIP letöltések érdekében."
   },
   "formHints": {
     "zeroServerTitle": "100%-os adatvédelem és élethosszig tartó érvényesség",

@@ -1848,7 +1848,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Kailangan ng maramihang QR code? Subukan ang aming Pro Bulk Batch Engine na may CSV import at instant ZIP export.",
-    "bulkBannerLink": "Pumunta sa Bulk Generator →"
+    "bulkBannerLink": "Pumunta sa Bulk Generator →",
+    "bulkFreeBadge": "1 Libreng Batch"
   },
   "bulk": {
     "badge": "Pro Batch Engine • 100% Client-Side",
@@ -1900,7 +1901,19 @@
     "btnCompressing": "Kino-compress ang ZIP...",
     "galleryTitle": "Binuo na Code Gallery",
     "btnSave": "I-save",
-    "galleryLimitNotice": "Ipinapakita ang unang 48 aytem. Lahat ng {{count}} item ay isasama sa na-download na ZIP."
+    "galleryLimitNotice": "Ipinapakita ang unang 48 aytem. Lahat ng {{count}} item ay isasama sa na-download na ZIP.",
+    "freeTrialTitle": "1 Libreng Batch na Pagsubok Handa\n<",
+    "freeTrialDesc": "Mayroon kang 1 libreng batch na henerasyon na magagamit. Mag-compile ng mga code at mag-download ng ZIP sa 1 click.\n<",
+    "oneFreeBadge": "1 Libreng Batch\n<",
+    "btnSignInToGen": "Mag-sign In para Bumuo (1 Libreng Batch)\n<",
+    "btnGenerateFree": "Bumuo ng {{count}} na Mga Code (1 Libreng Pagsubok)\n<",
+    "btnUpgradeToGen": "Mag-upgrade sa PRO para Bumuo\n<",
+    "useTrialBtn": "1 Libreng Batch Ready\n<",
+    "signInBtn": "Mag-sign In (Kumuha ng 1 Libreng Batch)\n<",
+    "proGateTitle": "PRO Batch Processing\n<",
+    "proGateDescUser": "Ang maramihang CSV batch compilation at ZIP download ay nangangailangan ng aktibong PRO membership.\n<",
+    "proGateDescGuest": "Mangyaring mag-sign in sa iyong PRO account upang bumuo ng maramihang mga batch ng QR code.\n<",
+    "upgradeBtn": "Mag-upgrade sa PRO\n<"
   },
   "printStudio": {
     "modalTitle": "Print & Sticker Sheet Studio",
@@ -1975,7 +1988,13 @@
     "userTitle": "I-unlock ang Walang Limitasyon",
     "userDesc": "Nagamit mo na ang iyong 2 libreng export. Mag-upgrade sa PRO para sa walang limitasyong download.",
     "userCta": "Mag-upgrade sa PRO — Mula $9.99",
-    "later": "Mamaya na lang"
+    "later": "Mamaya na lang",
+    "guestBatchBadge": "✨ 1 Libreng Batch\n<",
+    "guestBatchTitle": "Subukan ang 1 Libreng Batch Compilation\n<",
+    "guestBatchDesc": "Mag-sign in gamit ang Google o Email para i-unlock ang 1 libreng batch compilation na may CSV import at ZIP export.\n<",
+    "guestBatchCta": "Mag-sign In para Mag-claim ng 1 Libreng Batch\n<",
+    "userBatchTitle": "I-unlock ang Walang limitasyong Batch Compilation\n<",
+    "userBatchDesc": "Nagamit mo na ang iyong 1 libreng batch na pagsubok. Mag-upgrade sa PRO para sa walang limitasyong mga CSV batch at ZIP download.\n<"
   },
   "formHints": {
     "zeroServerTitle": "100% Privacy at Lifetime Validity\n<",

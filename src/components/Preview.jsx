@@ -170,8 +170,8 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
               onClick={onSaveHistory}
               disabled={isSaved}
               className={`w-full flex items-center justify-center px-4 py-3 border rounded-xl transition-all font-semibold shadow-sm text-sm ${isSaved
-                  ? 'bg-green-50 text-green-700 border-green-200 dark:bg-green-900/20 dark:text-green-400 dark:border-green-800'
-                  : 'bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-900/50 dark:hover:bg-blue-900/40'
+                ? 'bg-green-50 text-green-700 border-green-200 dark:bg-green-900/20 dark:text-green-400 dark:border-green-800'
+                : 'bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100 dark:bg-blue-900/20 dark:text-blue-400 dark:border-blue-900/50 dark:hover:bg-blue-900/40'
                 }`}
             >
               {isSaved ? <Check className="w-4 h-4 mr-2" /> : <Clock className="w-4 h-4 mr-2" />}

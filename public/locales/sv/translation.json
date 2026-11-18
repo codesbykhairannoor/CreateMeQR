@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Behöver du massa QR-koder? Prova vår Pro Bulk Batch Engine med CSV-import och omedelbar ZIP-export.",
-    "bulkBannerLink": "Gå till Bulk Generator →"
+    "bulkBannerLink": "Gå till Bulk Generator →",
+    "bulkFreeBadge": "1 gratis parti"
   },
   "bulk": {
     "badge": "Pro Batch Engine • 100 % klientsida",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "Komprimerar ZIP...",
     "galleryTitle": "Genererat kodgalleri",
     "btnSave": "Spara",
-    "galleryLimitNotice": "Visar de första 48 objekten. Alla {{count}} objekt kommer att inkluderas i den nedladdade ZIP-filen."
+    "galleryLimitNotice": "Visar de första 48 objekten. Alla {{count}} objekt kommer att inkluderas i den nedladdade ZIP-filen.",
+    "freeTrialTitle": "1 gratis batchprovversion redo",
+    "freeTrialDesc": "Du har 1 gratis batchgenerering tillgänglig. Kompilera koder och ladda ner ZIP med ett klick.",
+    "oneFreeBadge": "1 gratis parti",
+    "btnSignInToGen": "Logga in för att generera (1 gratis batch)",
+    "btnGenerateFree": "Generera {{count}} koder (1 gratis provperiod)",
+    "btnUpgradeToGen": "Uppgradera till PRO för att generera",
+    "useTrialBtn": "1 gratis batch redo",
+    "signInBtn": "Logga in (få 1 gratis batch)",
+    "proGateTitle": "PRO batchbearbetning",
+    "proGateDescUser": "Bulk CSV-batchkompilering och ZIP-nedladdning kräver ett aktivt PRO-medlemskap.",
+    "proGateDescGuest": "Logga in på ditt PRO-konto för att generera masspartier av QR-koder.",
+    "upgradeBtn": "Uppgradera till PRO"
   },
   "printStudio": {
     "modalTitle": "Print & Sticker Sheet Studio",
@@ -1997,7 +2010,13 @@
     "userTitle": "Lås upp obegränsad export",
     "userDesc": "Du har använt dina 2 gratis exporter. Uppgradera till PRO för obegränsade nedladdningar.",
     "userCta": "Uppgradera till PRO — Från $9.99",
-    "later": "Kanske senare"
+    "later": "Kanske senare",
+    "guestBatchBadge": "✨ 1 gratis sats",
+    "guestBatchTitle": "Prova 1 gratis batchkompilering",
+    "guestBatchDesc": "Logga in med Google eller e-post för att låsa upp 1 gratis batchkompilering med CSV-import och ZIP-export.",
+    "guestBatchCta": "Logga in för att göra anspråk på 1 gratis batch",
+    "userBatchTitle": "Lås upp obegränsade batchkompilationer",
+    "userBatchDesc": "Du har använt din 1 gratis provperiod. Uppgradera till PRO för obegränsade CSV-batcher och ZIP-nedladdningar."
   },
   "formHints": {
     "zeroServerTitle": "100 % sekretess och livstidsgiltighet",

@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Toplu QR kodlarına mı ihtiyacınız var? CSV içe aktarma ve anında ZIP dışa aktarma özellikli Pro Toplu Toplu Motorumuzu deneyin.",
-    "bulkBannerLink": "Toplu Oluşturucuya Git →"
+    "bulkBannerLink": "Toplu Oluşturucuya Git →",
+    "bulkFreeBadge": "1 Ücretsiz Toplu"
   },
   "bulk": {
     "badge": "Pro Toplu Motor • %100 İstemci Tarafı",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "ZIP sıkıştırılıyor...",
     "galleryTitle": "Oluşturulan Kod Galerisi",
     "btnSave": "Kaydetmek",
-    "galleryLimitNotice": "İlk 48 öğe gösteriliyor. Tüm {{count}} öğeler indirilen ZIP'e dahil edilecektir."
+    "galleryLimitNotice": "İlk 48 öğe gösteriliyor. Tüm {{count}} öğeler indirilen ZIP'e dahil edilecektir.",
+    "freeTrialTitle": "1 Ücretsiz Toplu Denemeye Hazır",
+    "freeTrialDesc": "1 adet ücretsiz toplu üretim olanağınız var. Kodları derleyin ve tek tıklamayla ZIP'i indirin.",
+    "oneFreeBadge": "1 Ücretsiz Toplu",
+    "btnSignInToGen": "Oluşturmak için Oturum Açın (1 Ücretsiz Grup)",
+    "btnGenerateFree": "{{count}} Kod Oluşturun (1 Ücretsiz Deneme)",
+    "btnUpgradeToGen": "Oluşturmak için PRO'ya yükseltin",
+    "useTrialBtn": "1 Ücretsiz Toplu Hazır",
+    "signInBtn": "Oturum Açın (1 Ücretsiz Grup Alın)",
+    "proGateTitle": "PRO Toplu İşleme",
+    "proGateDescUser": "Toplu CSV toplu derlemesi ve ZIP indirmesi, aktif bir PRO üyeliği gerektirir.",
+    "proGateDescGuest": "Toplu QR kodu grupları oluşturmak için lütfen PRO hesabınızda oturum açın.",
+    "upgradeBtn": "PRO'ya yükseltme"
   },
   "printStudio": {
     "modalTitle": "Baskı ve Çıkartma Sayfası Stüdyosu",
@@ -1997,7 +2010,13 @@
     "userTitle": "Sınırsız Dışa Aktarımı Açın",
     "userDesc": "2 ücretsiz hakkınızı kullandınız. Sınırsız SVG ve PDF indirme için PRO'ya geçin.",
     "userCta": "PRO'ya Yükselt — $9.99'dan başlayan",
-    "later": "Belki daha sonra"
+    "later": "Belki daha sonra",
+    "guestBatchBadge": "✨ 1 Ücretsiz Toplu",
+    "guestBatchTitle": "1 Ücretsiz Toplu Derlemeyi Deneyin",
+    "guestBatchDesc": "CSV içe aktarma ve ZIP dışa aktarma ile 1 ücretsiz toplu derlemenin kilidini açmak için Google veya E-posta ile oturum açın.",
+    "guestBatchCta": "1 Ücretsiz Grup Almak için Oturum Açın",
+    "userBatchTitle": "Sınırsız Toplu Derlemenin Kilidini Açın",
+    "userBatchDesc": "1 ücretsiz toplu deneme sürenizi kullandınız. Sınırsız CSV grupları ve ZIP indirmeleri için PRO'ya yükseltin."
   },
   "formHints": {
     "zeroServerTitle": "%100 Gizlilik ve Ömür Boyu Geçerlilik",

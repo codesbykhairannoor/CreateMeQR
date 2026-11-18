@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Precisa de códigos QR em massa? Experimente nosso Pro Bulk Batch Engine com importação de CSV e exportação instantânea de ZIP.",
-    "bulkBannerLink": "Vá para Gerador em massa →"
+    "bulkBannerLink": "Vá para Gerador em massa →",
+    "bulkFreeBadge": "1 lote grátis"
   },
   "bulk": {
     "badge": "Mecanismo Pro Batch • 100% do lado do cliente",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "Compactando ZIP...",
     "galleryTitle": "Galeria de códigos gerados",
     "btnSave": "Salvar",
-    "galleryLimitNotice": "Mostrando os primeiros 48 itens. Todos os itens {{count}} serão incluídos no ZIP baixado."
+    "galleryLimitNotice": "Mostrando os primeiros 48 itens. Todos os itens {{count}} serão incluídos no ZIP baixado.",
+    "freeTrialTitle": "1 teste gratuito em lote pronto",
+    "freeTrialDesc": "Você tem 1 geração de lote gratuita disponível. Compile códigos e baixe ZIP em 1 clique.",
+    "oneFreeBadge": "1 lote grátis",
+    "btnSignInToGen": "Faça login para gerar (1 lote grátis)",
+    "btnGenerateFree": "Gere {{count}} códigos (1 avaliação gratuita)",
+    "btnUpgradeToGen": "Atualize para PRO para gerar",
+    "useTrialBtn": "1 lote grátis pronto",
+    "signInBtn": "Faça login (ganhe 1 lote grátis)",
+    "proGateTitle": "Processamento em lote PRO",
+    "proGateDescUser": "A compilação em lote de CSV em massa e o download de ZIP exigem uma assinatura PRO ativa.",
+    "proGateDescGuest": "Faça login em sua conta PRO para gerar lotes de códigos QR em massa.",
+    "upgradeBtn": "Atualize para PRO"
   },
   "printStudio": {
     "modalTitle": "Estúdio de impressão e folha de adesivos",
@@ -1997,7 +2010,13 @@
     "userTitle": "Desbloqueie exportações ilimitadas",
     "userDesc": "Você usou suas 2 exportações grátis. Assine o PRO para downloads ilimitados.",
     "userCta": "Assinar PRO — A partir de $9.99",
-    "later": "Mais tarde"
+    "later": "Mais tarde",
+    "guestBatchBadge": "✨ 1 lote grátis",
+    "guestBatchTitle": "Experimente 1 compilação em lote grátis",
+    "guestBatchDesc": "Faça login com Google ou e-mail para desbloquear 1 compilação em lote gratuita com importação CSV e exportação ZIP.",
+    "guestBatchCta": "Faça login para reivindicar 1 lote grátis",
+    "userBatchTitle": "Desbloqueie compilações em lote ilimitadas",
+    "userBatchDesc": "Você usou seu primeiro teste em lote gratuito. Atualize para PRO para lotes CSV ilimitados e downloads ZIP."
   },
   "formHints": {
     "zeroServerTitle": "100% de privacidade e validade vitalícia",

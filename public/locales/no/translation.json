@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Trenger du masse QR-koder? Prøv vår Pro Bulk Batch Engine med CSV-import og umiddelbar ZIP-eksport.",
-    "bulkBannerLink": "Gå til Bulk Generator →"
+    "bulkBannerLink": "Gå til Bulk Generator →",
+    "bulkFreeBadge": "1 gratis batch"
   },
   "bulk": {
     "badge": "Pro Batch Engine • 100 % klientside",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "Komprimerer ZIP...",
     "galleryTitle": "Generert kodegalleri",
     "btnSave": "Spare",
-    "galleryLimitNotice": "Viser de første 48 elementene. Alle {{count}} elementer vil bli inkludert i den nedlastede ZIP-filen."
+    "galleryLimitNotice": "Viser de første 48 elementene. Alle {{count}} elementer vil bli inkludert i den nedlastede ZIP-filen.",
+    "freeTrialTitle": "1 gratis prøveversjon klar",
+    "freeTrialDesc": "Du har 1 gratis batchgenerasjon tilgjengelig. Kompiler koder og last ned ZIP med 1 klikk.",
+    "oneFreeBadge": "1 gratis batch",
+    "btnSignInToGen": "Logg på for å generere (1 gratis batch)",
+    "btnGenerateFree": "Generer {{count}} koder (1 gratis prøveversjon)",
+    "btnUpgradeToGen": "Oppgrader til PRO for å generere",
+    "useTrialBtn": "1 gratis batch klar",
+    "signInBtn": "Logg på (få 1 gratis batch)",
+    "proGateTitle": "PRO batchbehandling",
+    "proGateDescUser": "Bulk CSV-batchkompilering og ZIP-nedlasting krever et aktivt PRO-medlemskap.",
+    "proGateDescGuest": "Logg på PRO-kontoen din for å generere masse QR-kodebatcher.",
+    "upgradeBtn": "Oppgrader til PRO"
   },
   "printStudio": {
     "modalTitle": "Print & Sticker Sheet Studio",
@@ -1997,7 +2010,13 @@
     "userTitle": "Lås opp ubegrenset eksport",
     "userDesc": "Du har brukt dine 2 gratis eksporter. Oppgrader til PRO for ubegrensede nedlastinger.",
     "userCta": "Oppgrader til PRO — Fra $9.99",
-    "later": "Kanskje senere"
+    "later": "Kanskje senere",
+    "guestBatchBadge": "✨ 1 gratis batch",
+    "guestBatchTitle": "Prøv 1 gratis batch-samling",
+    "guestBatchDesc": "Logg på med Google eller e-post for å låse opp 1 gratis batch-kompilering med CSV-import og ZIP-eksport.",
+    "guestBatchCta": "Logg på for å kreve 1 gratis batch",
+    "userBatchTitle": "Lås opp ubegrensede batch-samlinger",
+    "userBatchDesc": "Du har brukt 1 gratis batch-prøveversjon. Oppgrader til PRO for ubegrensede CSV-batcher og ZIP-nedlastinger."
   },
   "formHints": {
     "zeroServerTitle": "100 % personvern og livstidsgyldighet",

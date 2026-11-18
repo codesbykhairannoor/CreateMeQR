@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Potrzebujesz zbiorczych kodów QR? Wypróbuj nasz Pro Bulk Batch Engine z importem CSV i natychmiastowym eksportem ZIP.",
-    "bulkBannerLink": "Przejdź do Generatora masowego →"
+    "bulkBannerLink": "Przejdź do Generatora masowego →",
+    "bulkFreeBadge": "1 bezpłatna partia"
   },
   "bulk": {
     "badge": "Pro Batch Engine • 100% po stronie klienta",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "Kompresja ZIP-a...",
     "galleryTitle": "Wygenerowana galeria kodów",
     "btnSave": "Ratować",
-    "galleryLimitNotice": "Wyświetlanie pierwszych 48 elementów. Wszystkie {{count}} elementy zostaną uwzględnione w pobranym pliku ZIP."
+    "galleryLimitNotice": "Wyświetlanie pierwszych 48 elementów. Wszystkie {{count}} elementy zostaną uwzględnione w pobranym pliku ZIP.",
+    "freeTrialTitle": "1 bezpłatna wersja próbna wsadowa gotowa",
+    "freeTrialDesc": "Dostępna jest 1 bezpłatna generacja wsadowa. Skompiluj kody i pobierz ZIP jednym kliknięciem.",
+    "oneFreeBadge": "1 bezpłatna partia",
+    "btnSignInToGen": "Zaloguj się, aby wygenerować (1 bezpłatna partia)",
+    "btnGenerateFree": "Wygeneruj kody {{count}} (1 bezpłatna wersja próbna)",
+    "btnUpgradeToGen": "Uaktualnij do PRO, aby wygenerować",
+    "useTrialBtn": "1 bezpłatna partia gotowa",
+    "signInBtn": "Zaloguj się (odbierz 1 bezpłatną partię)",
+    "proGateTitle": "PRO Przetwarzanie wsadowe",
+    "proGateDescUser": "Zbiorcza kompilacja wsadowa CSV i pobieranie ZIP wymagają aktywnego członkostwa PRO.",
+    "proGateDescGuest": "Zaloguj się na swoje konto PRO, aby wygenerować zbiorcze partie kodów QR.",
+    "upgradeBtn": "Przejdź na wersję PRO"
   },
   "printStudio": {
     "modalTitle": "Studio drukowania i naklejek",
@@ -1997,7 +2010,13 @@
     "userTitle": "Odblokuj nielimitowane eksporty",
     "userDesc": "Wykorzystano 2 darmowe eksporty. Przejdź na PRO, aby pobierać bez ograniczeń.",
     "userCta": "Przejdź na PRO — od $9.99",
-    "later": "Może później"
+    "later": "Może później",
+    "guestBatchBadge": "✨ 1 bezpłatna partia",
+    "guestBatchTitle": "Wypróbuj 1 bezpłatną kompilację wsadową",
+    "guestBatchDesc": "Zaloguj się za pomocą Google lub poczty e-mail, aby odblokować 1 bezpłatną kompilację wsadową z importem CSV i eksportem ZIP.",
+    "guestBatchCta": "Zaloguj się, aby odebrać 1 bezpłatną partię",
+    "userBatchTitle": "Odblokuj nieograniczone kompilacje wsadowe",
+    "userBatchDesc": "Wykorzystałeś 1 bezpłatną wersję próbną wsadową. Uaktualnij do wersji PRO, aby uzyskać nieograniczone partie CSV i pobieranie plików ZIP."
   },
   "formHints": {
     "zeroServerTitle": "100% prywatności i dożywotnia ważność",

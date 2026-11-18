@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "需要批量二维码吗？ 尝试我们的 Pro Bulk Batch 引擎，支持 CSV 导入和即时 ZIP 导出。",
-    "bulkBannerLink": "前往批量生成器 →"
+    "bulkBannerLink": "前往批量生成器 →",
+    "bulkFreeBadge": "1 免费批次"
   },
   "bulk": {
     "badge": "Pro Batch 引擎 • 100% 客户端",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "正在压缩 ZIP...",
     "galleryTitle": "生成的代码库",
     "btnSave": "节省",
-    "galleryLimitNotice": "显示前 48 项。 所有 {{count}} 项都将包含在下载的 ZIP 中。"
+    "galleryLimitNotice": "显示前 48 项。 所有 {{count}} 项都将包含在下载的 ZIP 中。",
+    "freeTrialTitle": "1 免费批量试用就绪",
+    "freeTrialDesc": "您有 1 个免费批次可用。一键编译代码并下载 ZIP。",
+    "oneFreeBadge": "1 免费批次",
+    "btnSignInToGen": "登录生成（1 个免费批次）",
+    "btnGenerateFree": "生成 {{count}} 个代码（1 个免费试用）",
+    "btnUpgradeToGen": "升级到 PRO 来生成",
+    "useTrialBtn": "1 免费批量就绪",
+    "signInBtn": "登录（免费获得 1 批）",
+    "proGateTitle": "PRO 批处理",
+    "proGateDescUser": "批量 CSV 批量编译和 ZIP 下载需要有效的 PRO 会员资格。",
+    "proGateDescGuest": "请登录您的 PRO 帐户以批量生成批量二维码。",
+    "upgradeBtn": "升级到专业版"
   },
   "printStudio": {
     "modalTitle": "印刷及贴纸工作室",
@@ -1997,7 +2010,13 @@
     "userTitle": "解锁无限次导出",
     "userDesc": "您已用完2次免费额度。升级至 PRO 会员即可享受无限制下载。",
     "userCta": "升级至 PRO — 仅需 $9.99 起",
-    "later": "稍后再说"
+    "later": "稍后再说",
+    "guestBatchBadge": "✨ 1 批免费",
+    "guestBatchTitle": "尝试 1 次免费批量编译",
+    "guestBatchDesc": "使用 Google 或电子邮件登录即可解锁 1 次免费批量编译，支持 CSV 导入和 ZIP 导出。",
+    "guestBatchCta": "登录领取 1 个免费批次",
+    "userBatchTitle": "解锁无限批量编译",
+    "userBatchDesc": "您已使用 1 次免费批量试用。升级到 PRO 即可无限量 CSV 批次和 ZIP 下载。"
   },
   "formHints": {
     "zeroServerTitle": "100% 隐私且终身有效",

@@ -1862,7 +1862,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Need bulk QR codes? Try our Pro Bulk Batch Engine with CSV import and instant ZIP export.",
-    "bulkBannerLink": "Go to Bulk Generator →"
+    "bulkBannerLink": "Go to Bulk Generator →",
+    "bulkFreeBadge": "1 Free Batch"
   },
   "bulk": {
     "badge": "Pro Batch Engine • 100% Client-Side",
@@ -1914,7 +1915,19 @@
     "btnCompressing": "Compressing ZIP...",
     "galleryTitle": "Generated Code Gallery",
     "btnSave": "Save",
-    "galleryLimitNotice": "Showing first 48 items. All {{count}} items will be included in the downloaded ZIP."
+    "galleryLimitNotice": "Showing first 48 items. All {{count}} items will be included in the downloaded ZIP.",
+    "freeTrialTitle": "1 Free Batch Trial Ready",
+    "freeTrialDesc": "You have 1 free batch generation available. Compile codes and download ZIP in 1 click.",
+    "oneFreeBadge": "1 Free Batch",
+    "btnSignInToGen": "Sign In to Generate (1 Free Batch)",
+    "btnGenerateFree": "Generate {{count}} Codes (1 Free Trial)",
+    "btnUpgradeToGen": "Upgrade to PRO to Generate",
+    "useTrialBtn": "1 Free Batch Ready",
+    "signInBtn": "Sign In (Get 1 Free Batch)",
+    "proGateTitle": "PRO Batch Processing",
+    "proGateDescUser": "Bulk CSV batch compilation and ZIP download require an active PRO membership.",
+    "proGateDescGuest": "Please sign in to your PRO account to generate bulk QR code batches.",
+    "upgradeBtn": "Upgrade to PRO"
   },
   "printStudio": {
     "modalTitle": "Print & Sticker Sheet Studio",
@@ -1989,7 +2002,13 @@
     "userTitle": "Unlock Unlimited Exports",
     "userDesc": "You've used your 2 free exports. Upgrade to PRO for unlimited vector SVG and PDF downloads.",
     "userCta": "Upgrade to PRO — From $9.99",
-    "later": "Maybe later"
+    "later": "Maybe later",
+    "guestBatchBadge": "✨ 1 Free Batch",
+    "guestBatchTitle": "Try 1 Free Batch Compilation",
+    "guestBatchDesc": "Sign in with Google or Email to unlock 1 free batch compilation with CSV import and ZIP export.",
+    "guestBatchCta": "Sign In to Claim 1 Free Batch",
+    "userBatchTitle": "Unlock Unlimited Batch Compilations",
+    "userBatchDesc": "You've used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches and ZIP downloads."
   },
   "formHints": {
     "zeroServerTitle": "100% Privacy & Lifetime Validity",

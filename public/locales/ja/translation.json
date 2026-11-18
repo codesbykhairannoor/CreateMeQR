@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "一括 QR コードが必要ですか? CSV インポートとインスタント ZIP エクスポートを備えた Pro Bulk Batch Engine をお試しください。",
-    "bulkBannerLink": "バルクジェネレーターに移動→"
+    "bulkBannerLink": "バルクジェネレーターに移動→",
+    "bulkFreeBadge": "1 つの無料バッチ"
   },
   "bulk": {
     "badge": "Pro Batch Engine • 100% クライアント側",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "ZIPを圧縮中...",
     "galleryTitle": "生成されたコードギャラリー",
     "btnSave": "保存",
-    "galleryLimitNotice": "最初の 48 件を表示しています。 すべての {{count}} アイテムがダウンロードされた ZIP に含まれます。"
+    "galleryLimitNotice": "最初の 48 件を表示しています。 すべての {{count}} アイテムがダウンロードされた ZIP に含まれます。",
+    "freeTrialTitle": "1 つの無料バッチ試用版が用意されています",
+    "freeTrialDesc": "無料のバッチ生成が 1 つあります。 1 クリックでコードをコンパイルし、ZIP をダウンロードします。",
+    "oneFreeBadge": "1 つの無料バッチ",
+    "btnSignInToGen": "サインインして生成 (1 つの無料バッチ)",
+    "btnGenerateFree": "{{count}} コードを生成 (1 回の無料トライアル)",
+    "btnUpgradeToGen": "PRO にアップグレードして生成する",
+    "useTrialBtn": "1 つの無料バッチの準備完了",
+    "signInBtn": "サインイン (無料バッチを 1 つ入手)",
+    "proGateTitle": "PRO バッチ処理",
+    "proGateDescUser": "一括 CSV バッチ コンパイルと ZIP ダウンロードにはアクティブな PRO メンバーシップが必要です。",
+    "proGateDescGuest": "一括 QR コード バッチを生成するには、PRO アカウントにサインインしてください。",
+    "upgradeBtn": "PRO にアップグレード"
   },
   "printStudio": {
     "modalTitle": "プリント＆ステッカーシート工房",
@@ -1997,7 +2010,13 @@
     "userTitle": "無制限エクスポートを解放",
     "userDesc": "無料エクスポート（2回）を使い切りました。PROにアップグレードして無制限に利用しましょう。",
     "userCta": "PROにアップグレード — $9.99から",
-    "later": "後で"
+    "later": "後で",
+    "guestBatchBadge": "✨ 1 つの無料バッチ",
+    "guestBatchTitle": "無料のバッチ コンパイルを 1 つお試しください",
+    "guestBatchDesc": "Google または電子メールでサインインすると、CSV インポートと ZIP エクスポートによる 1 つの無料バッチ コンパイルのロックが解除されます。",
+    "guestBatchCta": "サインインして 1 つの無料バッチを請求する",
+    "userBatchTitle": "無制限のバッチ コンパイルのロックを解除する",
+    "userBatchDesc": "1 つの無料バッチトライアルを使用しました。 PRO にアップグレードすると、CSV バッチと ZIP を無制限にダウンロードできます。"
   },
   "formHints": {
     "zeroServerTitle": "100% プライバシーと生涯有効性",

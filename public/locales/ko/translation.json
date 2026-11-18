@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "대량 QR 코드가 필요합니까? CSV 가져오기 및 즉시 ZIP 내보내기가 가능한 Pro Bulk Batch Engine을 사용해 보세요.",
-    "bulkBannerLink": "벌크 생성기 바로가기 →"
+    "bulkBannerLink": "벌크 생성기 바로가기 →",
+    "bulkFreeBadge": "1개의 무료 배치"
   },
   "bulk": {
     "badge": "Pro 배치 엔진 • 100% 클라이언트측",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "ZIP 압축 중...",
     "galleryTitle": "생성된 코드 갤러리",
     "btnSave": "구하다",
-    "galleryLimitNotice": "처음 48개 항목을 표시합니다. 모든 {{_count}}개 항목이 다운로드된 ZIP에 포함됩니다."
+    "galleryLimitNotice": "처음 48개 항목을 표시합니다. 모든 {{_count}}개 항목이 다운로드된 ZIP에 포함됩니다.",
+    "freeTrialTitle": "1개의 무료 배치 평가판 준비됨",
+    "freeTrialDesc": "1개의 무료 배치 생성을 사용할 수 있습니다. 한 번의 클릭으로 코드를 컴파일하고 ZIP을 다운로드할 수 있습니다.",
+    "oneFreeBadge": "1개의 무료 배치",
+    "btnSignInToGen": "생성하려면 로그인하세요(무료 배치 1개)",
+    "btnGenerateFree": "{{count}}개의 코드 생성(1 무료 평가판)",
+    "btnUpgradeToGen": "생성하려면 PRO로 업그레이드하세요",
+    "useTrialBtn": "1개의 무료 배치 준비",
+    "signInBtn": "로그인(무료 배치 1개 받기)",
+    "proGateTitle": "PRO 일괄 처리",
+    "proGateDescUser": "대량 CSV 일괄 편집 및 ZIP 다운로드에는 활성 PRO 멤버십이 필요합니다.",
+    "proGateDescGuest": "대량 QR 코드 배치를 생성하려면 PRO 계정에 로그인하세요.",
+    "upgradeBtn": "PRO로 업그레이드"
   },
   "printStudio": {
     "modalTitle": "인쇄 및 스티커 시트 스튜디오",
@@ -1997,7 +2010,13 @@
     "userTitle": "무제한 내보내기 잠금 해제",
     "userDesc": "무료 내보내기 2회를 모두 사용했습니다. PRO로 업그레이드하여 무제한으로 다운로드하세요.",
     "userCta": "PRO로 업그레이드 — $9.99부터",
-    "later": "나중에"
+    "later": "나중에",
+    "guestBatchBadge": "✨ 1개의 무료 배치",
+    "guestBatchTitle": "1개의 무료 일괄 편집을 사용해 보세요",
+    "guestBatchDesc": "Google 또는 이메일로 로그인하여 CSV 가져오기 및 ZIP 내보내기가 가능한 무료 일괄 편집 1개를 잠금 해제하세요.",
+    "guestBatchCta": "무료 배치 1개를 받으려면 로그인하세요.",
+    "userBatchTitle": "무제한 일괄 편집 잠금 해제",
+    "userBatchDesc": "1개의 무료 일괄 평가판을 사용했습니다. 무제한 CSV 배치 및 ZIP 다운로드를 위해 PRO로 업그레이드하세요."
   },
   "formHints": {
     "zeroServerTitle": "100% 개인정보 보호 및 평생 유효성",

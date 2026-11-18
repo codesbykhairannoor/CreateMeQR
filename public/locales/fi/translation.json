@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Tarvitsetko joukko QR-koodeja? Kokeile Pro Bulk Batch Engine -ohjelmaamme, jossa on CSV-tuonti ja välitön ZIP-vienti.",
-    "bulkBannerLink": "Siirry kohtaan Bulk Generator →"
+    "bulkBannerLink": "Siirry kohtaan Bulk Generator →",
+    "bulkFreeBadge": "1 ilmainen erä"
   },
   "bulk": {
     "badge": "Pro Batch Engine • 100 % asiakaspuoli",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "Pakkaaminen ZIP...",
     "galleryTitle": "Luotu koodigalleria",
     "btnSave": "Tallentaa",
-    "galleryLimitNotice": "Näytetään 48 ensimmäistä kohdetta. Kaikki {{count}} kohdetta sisällytetään ladattavaan ZIP-pakettiin."
+    "galleryLimitNotice": "Näytetään 48 ensimmäistä kohdetta. Kaikki {{count}} kohdetta sisällytetään ladattavaan ZIP-pakettiin.",
+    "freeTrialTitle": "1 ilmainen eräkokeilu valmis",
+    "freeTrialDesc": "Sinulla on käytettävissä 1 ilmainen eräsukupolvi. Kokoa koodit ja lataa ZIP yhdellä napsautuksella.",
+    "oneFreeBadge": "1 ilmainen erä",
+    "btnSignInToGen": "Kirjaudu sisään luodaksesi (1 ilmainen erä)",
+    "btnGenerateFree": "Luo {{count}} koodia (1 ilmainen kokeilu)",
+    "btnUpgradeToGen": "Päivitä PRO:ksi luodaksesi",
+    "useTrialBtn": "1 ilmainen erä valmis",
+    "signInBtn": "Kirjaudu sisään (saa 1 ilmainen erä)",
+    "proGateTitle": "PRO Eräkäsittely",
+    "proGateDescUser": "CSV-sarjan joukkokokoaminen ja ZIP-lataus edellyttävät aktiivista PRO-jäsenyyttä.",
+    "proGateDescGuest": "Kirjaudu PRO-tilillesi luodaksesi joukko QR-koodieriä.",
+    "upgradeBtn": "Päivitä PRO:ksi"
   },
   "printStudio": {
     "modalTitle": "Print & Sticker Sheet Studio",
@@ -1997,7 +2010,13 @@
     "userTitle": "Avaa rajattomat viennit",
     "userDesc": "Olet käyttänyt 2 ilmaista vientiäsi. Päivitä PRO-versioon rajattomia latauksia varten.",
     "userCta": "Päivitä PRO-versioon — Alk. $9.99",
-    "later": "Ehkä myöhemmin"
+    "later": "Ehkä myöhemmin",
+    "guestBatchBadge": "✨ 1 ilmainen erä",
+    "guestBatchTitle": "Kokeile 1 ilmaista eräkokoelmaa",
+    "guestBatchDesc": "Kirjaudu sisään Googlella tai sähköpostilla avataksesi yhden ilmaisen eräkokoelman CSV-tuonnilla ja ZIP-viennillä.",
+    "guestBatchCta": "Kirjaudu sisään saadaksesi 1 ilmaisen erän",
+    "userBatchTitle": "Avaa rajoittamattomat eräkokoelmat",
+    "userBatchDesc": "Olet käyttänyt yhden ilmaisen eräkokeilun. Päivitä PRO-versioon rajoittamattomia CSV-eriä ja ZIP-latauksia varten."
   },
   "formHints": {
     "zeroServerTitle": "100 % tietosuoja ja elinikäinen voimassaolo",

@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Potřebujete hromadné QR kódy? Vyzkoušejte náš Pro Bulk Batch Engine s importem CSV a okamžitým exportem ZIP.",
-    "bulkBannerLink": "Přejděte na Generátor hromadného →"
+    "bulkBannerLink": "Přejděte na Generátor hromadného →",
+    "bulkFreeBadge": "1 bezplatná dávka"
   },
   "bulk": {
     "badge": "Pro Batch Engine • 100% na straně klienta",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "Komprese ZIP...",
     "galleryTitle": "Galerie generovaných kódů",
     "btnSave": "Uložit",
-    "galleryLimitNotice": "Zobrazeno prvních 48 položek. Všechny {{count}} položky budou zahrnuty do staženého ZIP."
+    "galleryLimitNotice": "Zobrazeno prvních 48 položek. Všechny {{count}} položky budou zahrnuty do staženého ZIP.",
+    "freeTrialTitle": "Připravena 1 bezplatná dávková zkušební verze",
+    "freeTrialDesc": "Máte k dispozici 1 bezplatné vygenerování dávky. Kompilace kódů a stažení ZIP jedním kliknutím.",
+    "oneFreeBadge": "1 bezplatná dávka",
+    "btnSignInToGen": "Přihlaste se a vygenerujte (1 bezplatná dávka)",
+    "btnGenerateFree": "Vygenerovat {{count}} kódů (1 bezplatná zkušební verze)",
+    "btnUpgradeToGen": "Pro generování upgradujte na PRO",
+    "useTrialBtn": "Připravena 1 bezplatná dávka",
+    "signInBtn": "Přihlásit se (získat 1 dávku zdarma)",
+    "proGateTitle": "PRO dávkové zpracování",
+    "proGateDescUser": "Hromadná dávková kompilace CSV a stahování ZIP vyžadují aktivní členství PRO.",
+    "proGateDescGuest": "Chcete-li vygenerovat hromadné dávky QR kódů, přihlaste se prosím ke svému účtu PRO.",
+    "upgradeBtn": "Upgradujte na PRO"
   },
   "printStudio": {
     "modalTitle": "Print & Sticker Sheet Studio",
@@ -1997,7 +2010,13 @@
     "userTitle": "Odemkněte neomezený export",
     "userDesc": "Využili jste své 2 bezplatné exporty. Přejděte na PRO pro neomezené stahování.",
     "userCta": "Přejít na PRO — od $9.99",
-    "later": "Možná později"
+    "later": "Možná později",
+    "guestBatchBadge": "✨ 1 dávka zdarma",
+    "guestBatchTitle": "Vyzkoušejte 1 bezplatnou dávkovou kompilaci",
+    "guestBatchDesc": "Přihlaste se pomocí Google nebo e-mailu a odemkněte 1 bezplatnou dávkovou kompilaci s importem CSV a exportem ZIP.",
+    "guestBatchCta": "Přihlaste se a získejte 1 bezplatnou dávku",
+    "userBatchTitle": "Odemkněte neomezené dávkové kompilace",
+    "userBatchDesc": "Využili jste 1 bezplatnou dávkovou zkušební verzi. Upgradujte na PRO a získejte neomezené dávky CSV a stahování ZIP."
   },
   "formHints": {
     "zeroServerTitle": "100% soukromí a doživotní platnost",

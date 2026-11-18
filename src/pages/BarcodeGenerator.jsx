@@ -14,7 +14,7 @@ export default function BarcodeGenerator() {
   const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
 
   // Barcode states
-  const [value, setValue] = useState('123456789012');
+  const [value, setValue] = useState('');
   const [format, setFormat] = useState('CODE128');
   const [lineColor, setLineColor] = useState('#000000');
   const [background, setBackground] = useState('#ffffff');
@@ -72,7 +72,7 @@ export default function BarcodeGenerator() {
   }, []);
 
   const handleDownload = () => {
-    if (!barcodeRef.current) return;
+    if (!value || !barcodeRef.current) return;
     const svg = barcodeRef.current.querySelector('svg');
     if (!svg) return;
 
@@ -99,6 +99,7 @@ export default function BarcodeGenerator() {
   };
 
   const onSaveHistory = async () => {
+    if (!value) return;
     try {
       const history = await get('qr-history-store') || [];
       let thumbnail = '';
@@ -163,12 +164,14 @@ export default function BarcodeGenerator() {
       <div className="flex-1 flex items-center justify-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 relative z-10 min-h-[300px]">
         <div
           ref={barcodeRef}
-          className="bg-white p-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
-          style={{ backgroundColor: background }}
+          className={`p-6 rounded-xl transition-all duration-300 ${
+            value ? 'bg-white shadow-lg hover:scale-105' : 'bg-transparent'
+          }`}
+          style={{ backgroundColor: value ? background : 'transparent' }}
         >
-          {value ? (
+          {deferredValue ? (
             <Barcode
-              value={deferredValue || '123456789012'}
+              value={deferredValue}
               format={deferredFormat}
               lineColor={deferredLineColor}
               background={deferredBackground}
@@ -178,8 +181,11 @@ export default function BarcodeGenerator() {
               margin={10}
             />
           ) : (
-            <div className="w-64 h-24 border-2 border-dashed border-slate-300 flex items-center justify-center text-slate-400 font-bold">
-              <p className="text-slate-500 dark:text-slate-400 font-medium">{t("barcode.workspace.enterData", "Enter data to generate")}</p>
+            <div className="w-64 h-32 border-2 border-dashed border-white/20 rounded-2xl flex flex-col items-center justify-center p-4 text-center">
+              <ScanLine className="w-8 h-8 text-blue-300/60 mb-2 animate-pulse" />
+              <p className="text-white/80 font-semibold text-sm">
+                {t("barcode.workspace.enterData", "Enter barcode data to preview")}
+              </p>
             </div>
           )}
         </div>
@@ -188,13 +194,19 @@ export default function BarcodeGenerator() {
       <div className="mt-8 flex flex-col gap-3 relative z-10">
         <button
           onClick={handleDownload}
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all flex items-center justify-center gap-2 hover:-translate-y-1"
+          disabled={!value}
+          className={`w-full bg-blue-500 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all flex items-center justify-center gap-2 ${
+            !value
+              ? 'opacity-40 cursor-not-allowed'
+              : 'hover:bg-blue-600 hover:-translate-y-1 cursor-pointer'
+          }`}
         >
           <Download className="w-5 h-5" /> {t("barcode.workspace.download", "Download High-Res PNG")}
         </button>
 
         <button
           onClick={() => {
+            if (!value) return;
             if (barcodeRef.current) {
               const svg = barcodeRef.current.querySelector('svg');
               if (svg) {
@@ -215,7 +227,12 @@ export default function BarcodeGenerator() {
               }
             }
           }}
-          className="w-full bg-gradient-to-r from-slate-900 to-blue-700 hover:from-slate-800 hover:to-blue-600 dark:from-blue-600 dark:to-blue-700 dark:hover:from-blue-500 dark:hover:to-blue-600 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all flex items-center justify-center gap-2 hover:-translate-y-1 cursor-pointer"
+          disabled={!value}
+          className={`w-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all flex items-center justify-center gap-2 ${
+            !value
+              ? 'opacity-40 cursor-not-allowed'
+              : 'hover:from-slate-800 hover:to-blue-600 dark:hover:from-blue-500 dark:hover:to-blue-600 hover:-translate-y-1 cursor-pointer'
+          }`}
         >
           <Printer className="w-5 h-5" />
           <span>{t('barcode.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}</span>
@@ -229,11 +246,14 @@ export default function BarcodeGenerator() {
 
         <button
           onClick={onSaveHistory}
-          disabled={isSaved}
-          className={`w-full flex items-center justify-center px-4 py-4 rounded-xl transition-all font-bold shadow-sm text-sm border hover:-translate-y-1 ${isSaved
+          disabled={!value || isSaved}
+          className={`w-full flex items-center justify-center px-4 py-4 rounded-xl transition-all font-bold shadow-sm text-sm border ${
+            !value
+              ? 'opacity-40 cursor-not-allowed bg-white/5 text-blue-200 border-blue-500/20'
+              : isSaved
               ? 'bg-green-500/20 text-green-400 border-green-500/30'
-              : 'bg-white/5 text-blue-200 border-blue-500/30 hover:bg-white/10 hover:border-blue-400/50'
-            }`}
+              : 'bg-white/5 text-blue-200 border-blue-500/30 hover:bg-white/10 hover:border-blue-400/50 hover:-translate-y-1 cursor-pointer'
+          }`}
         >
           {isSaved ? <Check className="w-5 h-5 mr-2" /> : <Clock className="w-5 h-5 mr-2" />}
           {isSaved ? t('history.saved', 'Saved to history!') : t('history.saveBtn', 'Save to Browser History')}
@@ -548,13 +568,13 @@ export default function BarcodeGenerator() {
             items={[
               {
                 id: 1,
-                value: value || '123456789012',
+                value: value || '',
                 title: `Barcode (${format})`,
                 dataUrl: currentBarcodeDataUrl,
                 type: 'barcode'
               }
             ]}
-            defaultTitle={`Barcode ${value}`}
+            defaultTitle={`Barcode ${value || ''}`}
           />
         </React.Suspense>
       )}

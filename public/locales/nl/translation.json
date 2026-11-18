@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Bulk-QR-codes nodig? Probeer onze Pro Bulk Batch Engine met CSV-import en directe ZIP-export.",
-    "bulkBannerLink": "Ga naar Bulkgenerator →"
+    "bulkBannerLink": "Ga naar Bulkgenerator →",
+    "bulkFreeBadge": "1 gratis batch"
   },
   "bulk": {
     "badge": "Pro Batch-engine • 100% clientzijde",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "ZIP comprimeren...",
     "galleryTitle": "Gegenereerde codegalerij",
     "btnSave": "Redden",
-    "galleryLimitNotice": "Toont de eerste 48 items. Alle {{count}} items worden opgenomen in de gedownloade ZIP."
+    "galleryLimitNotice": "Toont de eerste 48 items. Alle {{count}} items worden opgenomen in de gedownloade ZIP.",
+    "freeTrialTitle": "1 gratis batchproef klaar",
+    "freeTrialDesc": "U heeft 1 gratis batchgeneratie beschikbaar. Codes samenstellen en ZIP downloaden in 1 klik.",
+    "oneFreeBadge": "1 gratis batch",
+    "btnSignInToGen": "Meld u aan om te genereren (1 gratis batch)",
+    "btnGenerateFree": "Genereer {{count}} codes (1 gratis proefversie)",
+    "btnUpgradeToGen": "Upgrade naar PRO om te genereren",
+    "useTrialBtn": "1 gratis batch klaar",
+    "signInBtn": "Aanmelden (ontvang 1 gratis batch)",
+    "proGateTitle": "PRO-batchverwerking",
+    "proGateDescUser": "Bulk-CSV-batchcompilatie en ZIP-download vereisen een actief PRO-lidmaatschap.",
+    "proGateDescGuest": "Meld u aan bij uw PRO-account om bulk-QR-codebatches te genereren.",
+    "upgradeBtn": "Upgrade naar PRO"
   },
   "printStudio": {
     "modalTitle": "Print- en stickervelstudio",
@@ -1997,7 +2010,13 @@
     "userTitle": "Onbeperkte exports ontgrendelen",
     "userDesc": "Je hebt je 2 gratis exports gebruikt. Upgrade naar PRO voor onbeperkte downloads.",
     "userCta": "Upgraden naar PRO — Vanaf $9.99",
-    "later": "Misschien later"
+    "later": "Misschien later",
+    "guestBatchBadge": "✨ 1 gratis batch",
+    "guestBatchTitle": "Probeer 1 gratis batchcompilatie",
+    "guestBatchDesc": "Meld u aan met Google of e-mail om 1 gratis batchcompilatie te ontgrendelen met CSV-import en ZIP-export.",
+    "guestBatchCta": "Meld u aan om 1 gratis batch te claimen",
+    "userBatchTitle": "Ontgrendel onbeperkte batchcompilaties",
+    "userBatchDesc": "U heeft uw gratis proefperiode van 1 batch gebruikt. Upgrade naar PRO voor onbeperkte CSV-batches en ZIP-downloads."
   },
   "formHints": {
     "zeroServerTitle": "100% privacy en levenslange geldigheid",

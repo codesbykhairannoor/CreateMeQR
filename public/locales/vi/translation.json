@@ -1870,7 +1870,8 @@
   },
   "workspace": {
     "bulkBannerTitle": "Cần mã QR số lượng lớn? Hãy dùng thử Công cụ hàng loạt chuyên nghiệp của chúng tôi với tính năng nhập CSV và xuất ZIP ngay lập tức.",
-    "bulkBannerLink": "Đi đến Trình tạo số lượng lớn →"
+    "bulkBannerLink": "Đi đến Trình tạo số lượng lớn →",
+    "bulkFreeBadge": "1 lô miễn phí"
   },
   "bulk": {
     "badge": "Pro Batch Engine • 100% phía khách hàng",
@@ -1922,7 +1923,19 @@
     "btnCompressing": "Đang nén ZIP...",
     "galleryTitle": "Thư viện mã được tạo",
     "btnSave": "Cứu",
-    "galleryLimitNotice": "Hiển thị 48 mục đầu tiên Tất cả {{count}} mục sẽ được bao gồm trong ZIP đã tải xuống."
+    "galleryLimitNotice": "Hiển thị 48 mục đầu tiên Tất cả {{count}} mục sẽ được bao gồm trong ZIP đã tải xuống.",
+    "freeTrialTitle": "1 bản dùng thử miễn phí đã sẵn sàng",
+    "freeTrialDesc": "Bạn có sẵn 1 thế hệ hàng loạt miễn phí. Biên dịch mã và tải xuống ZIP chỉ bằng 1 cú nhấp chuột.",
+    "oneFreeBadge": "1 lô miễn phí",
+    "btnSignInToGen": "Đăng nhập để tạo (1 đợt miễn phí)",
+    "btnGenerateFree": "Tạo {{count}} mã (1 bản dùng thử miễn phí)",
+    "btnUpgradeToGen": "Nâng cấp lên PRO để tạo",
+    "useTrialBtn": "Sẵn sàng 1 lô miễn phí",
+    "signInBtn": "Đăng nhập (Nhận 1 lô miễn phí)",
+    "proGateTitle": "Xử lý hàng loạt PRO",
+    "proGateDescUser": "Việc biên dịch hàng loạt CSV và tải xuống ZIP yêu cầu phải có tư cách thành viên PRO đang hoạt động.",
+    "proGateDescGuest": "Vui lòng đăng nhập vào tài khoản PRO của bạn để tạo hàng loạt mã QR.",
+    "upgradeBtn": "Nâng cấp lên PRO"
   },
   "printStudio": {
     "modalTitle": "Studio in & dán nhãn",
@@ -1997,7 +2010,13 @@
     "userTitle": "Mở khóa xuất không giới hạn",
     "userDesc": "Bạn đã dùng hết 2 lượt miễn phí. Nâng cấp lên PRO để tải không giới hạn.",
     "userCta": "Nâng cấp lên PRO — Từ $9.99",
-    "later": "Để sau"
+    "later": "Để sau",
+    "guestBatchBadge": "✨ Miễn phí 1 đợt",
+    "guestBatchTitle": "Hãy thử 1 bản tổng hợp hàng loạt miễn phí",
+    "guestBatchDesc": "Đăng nhập bằng Google hoặc Email để mở khóa 1 bản biên dịch hàng loạt miễn phí với tính năng nhập CSV và xuất ZIP.",
+    "guestBatchCta": "Đăng nhập để yêu cầu 1 lô miễn phí",
+    "userBatchTitle": "Mở khóa các bộ sưu tập hàng loạt không giới hạn",
+    "userBatchDesc": "Bạn đã sử dụng 1 đợt dùng thử miễn phí. Nâng cấp lên PRO để tải xuống hàng loạt CSV và ZIP không giới hạn."
   },
   "formHints": {
     "zeroServerTitle": "100% quyền riêng tư và hiệu lực trọn đời",
