@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Přihlaste se pomocí Google nebo e-mailu a odemkněte 1 bezplatnou dávkovou kompilaci s importem CSV a exportem ZIP.",
     "guestBatchCta": "Přihlaste se a získejte 1 bezplatnou dávku",
     "userBatchTitle": "Odemkněte neomezené dávkové kompilace",
-    "userBatchDesc": "Využili jste 1 bezplatnou dávkovou zkušební verzi. Upgradujte na PRO a získejte neomezené dávky CSV a stahování ZIP."
+    "userBatchDesc": "Využili jste 1 bezplatnou dávkovou zkušební verzi. Upgradujte na PRO a získejte neomezené dávky CSV a stahování ZIP.",
+    "googleCta": "Pokračujte s Google (1 kliknutím)",
+    "emailCta": "Nebo pokračujte e-mailem / heslem"
   },
   "formHints": {
     "zeroServerTitle": "100% soukromí a doživotní platnost",

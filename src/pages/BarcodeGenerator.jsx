@@ -71,7 +71,7 @@ export default function BarcodeGenerator() {
     return () => window.removeEventListener('restore-qr-history', handleRestore);
   }, []);
 
-  const handleDownload = () => {
+  const handleDownloadPng = () => {
     if (!value || !barcodeRef.current) return;
     const svg = barcodeRef.current.querySelector('svg');
     if (!svg) return;
@@ -90,12 +90,39 @@ export default function BarcodeGenerator() {
 
       const pngFile = canvas.toDataURL("image/png");
       const downloadLink = document.createElement("a");
-      downloadLink.download = `barcode_${format}.png`;
+      downloadLink.download = `barcode_${format}_${value || 'code'}.png`;
       downloadLink.href = pngFile;
       downloadLink.click();
     };
 
     img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgData)));
+  };
+
+  const handleDownloadSvg = async () => {
+    if (!value || !barcodeRef.current) return;
+
+    if (!isPro) {
+      const allowed = await consumeProFeature(t('proAlert.svgFeature', 'Vector SVG Export'));
+      if (!allowed) return;
+    }
+
+    const svg = barcodeRef.current.querySelector('svg');
+    if (!svg) return;
+
+    const serializer = new XMLSerializer();
+    let svgString = serializer.serializeToString(svg);
+
+    if (!svgString.includes('xmlns="http://www.w3.org/2000/svg"')) {
+      svgString = svgString.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ');
+    }
+
+    const blob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const downloadLink = document.createElement('a');
+    downloadLink.download = `barcode_${format}_${value || 'code'}.svg`;
+    downloadLink.href = url;
+    downloadLink.click();
+    URL.revokeObjectURL(url);
   };
 
   const onSaveHistory = async () => {
@@ -164,9 +191,8 @@ export default function BarcodeGenerator() {
       <div className="flex-1 flex items-center justify-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 relative z-10 min-h-[300px]">
         <div
           ref={barcodeRef}
-          className={`p-6 rounded-xl transition-all duration-300 ${
-            value ? 'bg-white shadow-lg hover:scale-105' : 'bg-transparent'
-          }`}
+          className={`p-6 rounded-xl transition-all duration-300 ${value ? 'bg-white shadow-lg hover:scale-105' : 'bg-transparent'
+            }`}
           style={{ backgroundColor: value ? background : 'transparent' }}
         >
           {deferredValue ? (
@@ -192,17 +218,38 @@ export default function BarcodeGenerator() {
       </div>
 
       <div className="mt-8 flex flex-col gap-3 relative z-10">
-        <button
-          onClick={handleDownload}
-          disabled={!value}
-          className={`w-full bg-blue-500 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all flex items-center justify-center gap-2 ${
-            !value
+        {/* Row 1: PNG and SVG Downloads (Matching QR Format) */}
+        <div className="flex w-full gap-3">
+          <button
+            onClick={handleDownloadPng}
+            disabled={!value}
+            className={`flex-1 py-3.5 px-3 rounded-xl bg-blue-500 text-white font-bold text-sm shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all flex items-center justify-center gap-2 ${!value
               ? 'opacity-40 cursor-not-allowed'
-              : 'hover:bg-blue-600 hover:-translate-y-1 cursor-pointer'
-          }`}
-        >
-          <Download className="w-5 h-5" /> {t("barcode.workspace.download", "Download High-Res PNG")}
-        </button>
+              : 'hover:bg-blue-600 hover:-translate-y-0.5 cursor-pointer'
+              }`}
+          >
+            <Download className="w-4 h-4 shrink-0" />
+            <span>PNG</span>
+          </button>
+
+          <button
+            onClick={handleDownloadSvg}
+            disabled={!value}
+            className={`flex-1 py-3.5 px-3 rounded-xl bg-white/10 text-white font-bold text-sm border border-white/20 transition-all flex items-center justify-center gap-1.5 ${!value
+              ? 'opacity-40 cursor-not-allowed'
+              : 'hover:bg-white/20 hover:border-white/30 hover:-translate-y-0.5 cursor-pointer'
+              }`}
+          >
+            <Download className="w-4 h-4 shrink-0" />
+            <span>SVG</span>
+            {!isPro && (
+              <span className="ml-1 px-1.5 py-0.5 rounded text-[9.5px] font-semibold bg-blue-500/30 text-blue-200 border border-blue-400/30 uppercase flex items-center gap-1 shrink-0">
+                <Sparkles size={9} className="text-blue-300" />
+                {user && freeTrialsRemaining > 0 ? `${freeTrialsRemaining} Free` : 'PRO'}
+              </span>
+            )}
+          </button>
+        </div>
 
         <button
           onClick={() => {
@@ -228,11 +275,10 @@ export default function BarcodeGenerator() {
             }
           }}
           disabled={!value}
-          className={`w-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all flex items-center justify-center gap-2 ${
-            !value
-              ? 'opacity-40 cursor-not-allowed'
-              : 'hover:from-slate-800 hover:to-blue-600 dark:hover:from-blue-500 dark:hover:to-blue-600 hover:-translate-y-1 cursor-pointer'
-          }`}
+          className={`w-full bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(37,99,235,0.3)] transition-all flex items-center justify-center gap-2 ${!value
+            ? 'opacity-40 cursor-not-allowed'
+            : 'hover:from-slate-800 hover:to-blue-600 dark:hover:from-blue-500 dark:hover:to-blue-600 hover:-translate-y-1 cursor-pointer'
+            }`}
         >
           <Printer className="w-5 h-5" />
           <span>{t('barcode.printStudioBtn', 'Print / A4 Sticker Sheet PDF')}</span>
@@ -247,13 +293,12 @@ export default function BarcodeGenerator() {
         <button
           onClick={onSaveHistory}
           disabled={!value || isSaved}
-          className={`w-full flex items-center justify-center px-4 py-4 rounded-xl transition-all font-bold shadow-sm text-sm border ${
-            !value
-              ? 'opacity-40 cursor-not-allowed bg-white/5 text-blue-200 border-blue-500/20'
-              : isSaved
+          className={`w-full flex items-center justify-center px-4 py-4 rounded-xl transition-all font-bold shadow-sm text-sm border ${!value
+            ? 'opacity-40 cursor-not-allowed bg-white/5 text-blue-200 border-blue-500/20'
+            : isSaved
               ? 'bg-green-500/20 text-green-400 border-green-500/30'
               : 'bg-white/5 text-blue-200 border-blue-500/30 hover:bg-white/10 hover:border-blue-400/50 hover:-translate-y-1 cursor-pointer'
-          }`}
+            }`}
         >
           {isSaved ? <Check className="w-5 h-5 mr-2" /> : <Clock className="w-5 h-5 mr-2" />}
           {isSaved ? t('history.saved', 'Saved to history!') : t('history.saveBtn', 'Save to Browser History')}

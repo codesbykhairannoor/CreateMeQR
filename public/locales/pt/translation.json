@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Faça login com Google ou e-mail para desbloquear 1 compilação em lote gratuita com importação CSV e exportação ZIP.",
     "guestBatchCta": "Faça login para reivindicar 1 lote grátis",
     "userBatchTitle": "Desbloqueie compilações em lote ilimitadas",
-    "userBatchDesc": "Você usou seu primeiro teste em lote gratuito. Atualize para PRO para lotes CSV ilimitados e downloads ZIP."
+    "userBatchDesc": "Você usou seu primeiro teste em lote gratuito. Atualize para PRO para lotes CSV ilimitados e downloads ZIP.",
+    "googleCta": "Continue com o Google (1 clique)",
+    "emailCta": "Ou continue com E-mail/Senha"
   },
   "formHints": {
     "zeroServerTitle": "100% de privacidade e validade vitalícia",

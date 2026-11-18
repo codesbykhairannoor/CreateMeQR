@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Kirjaudu sisään Googlella tai sähköpostilla avataksesi yhden ilmaisen eräkokoelman CSV-tuonnilla ja ZIP-viennillä.",
     "guestBatchCta": "Kirjaudu sisään saadaksesi 1 ilmaisen erän",
     "userBatchTitle": "Avaa rajoittamattomat eräkokoelmat",
-    "userBatchDesc": "Olet käyttänyt yhden ilmaisen eräkokeilun. Päivitä PRO-versioon rajoittamattomia CSV-eriä ja ZIP-latauksia varten."
+    "userBatchDesc": "Olet käyttänyt yhden ilmaisen eräkokeilun. Päivitä PRO-versioon rajoittamattomia CSV-eriä ja ZIP-latauksia varten.",
+    "googleCta": "Jatka Googlella (1 napsautus)",
+    "emailCta": "Tai jatka kohtaan Sähköposti / Salasana"
   },
   "formHints": {
     "zeroServerTitle": "100 % tietosuoja ja elinikäinen voimassaolo",

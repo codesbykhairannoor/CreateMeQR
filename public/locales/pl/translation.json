@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Zaloguj się za pomocą Google lub poczty e-mail, aby odblokować 1 bezpłatną kompilację wsadową z importem CSV i eksportem ZIP.",
     "guestBatchCta": "Zaloguj się, aby odebrać 1 bezpłatną partię",
     "userBatchTitle": "Odblokuj nieograniczone kompilacje wsadowe",
-    "userBatchDesc": "Wykorzystałeś 1 bezpłatną wersję próbną wsadową. Uaktualnij do wersji PRO, aby uzyskać nieograniczone partie CSV i pobieranie plików ZIP."
+    "userBatchDesc": "Wykorzystałeś 1 bezpłatną wersję próbną wsadową. Uaktualnij do wersji PRO, aby uzyskać nieograniczone partie CSV i pobieranie plików ZIP.",
+    "googleCta": "Kontynuuj z Google (1 kliknięcie)",
+    "emailCta": "Lub kontynuuj za pomocą adresu e-mail/hasła"
   },
   "formHints": {
     "zeroServerTitle": "100% prywatności i dożywotnia ważność",

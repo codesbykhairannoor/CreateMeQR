@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Đăng nhập bằng Google hoặc Email để mở khóa 1 bản biên dịch hàng loạt miễn phí với tính năng nhập CSV và xuất ZIP.",
     "guestBatchCta": "Đăng nhập để yêu cầu 1 lô miễn phí",
     "userBatchTitle": "Mở khóa các bộ sưu tập hàng loạt không giới hạn",
-    "userBatchDesc": "Bạn đã sử dụng 1 đợt dùng thử miễn phí. Nâng cấp lên PRO để tải xuống hàng loạt CSV và ZIP không giới hạn."
+    "userBatchDesc": "Bạn đã sử dụng 1 đợt dùng thử miễn phí. Nâng cấp lên PRO để tải xuống hàng loạt CSV và ZIP không giới hạn.",
+    "googleCta": "Tiếp tục với Google (1 cú nhấp chuột)",
+    "emailCta": "Hoặc tiếp tục với Email/Mật khẩu"
   },
   "formHints": {
     "zeroServerTitle": "100% quyền riêng tư và hiệu lực trọn đời",

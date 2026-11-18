@@ -1871,7 +1871,9 @@
     "guestBatchDesc": "Jelentkezzen be Google-lal vagy e-mailben, hogy feloldjon 1 ingyenes kötegelt összeállítást CSV-importálással és ZIP-exportálással.",
     "guestBatchCta": "Jelentkezzen be 1 ingyenes köteg igényléséhez",
     "userBatchTitle": "Oldja fel a korlátlan kötegelt összeállításokat",
-    "userBatchDesc": "Felhasználta 1 ingyenes kötegelt próbaverzióját. Frissítsen PRO-ra a korlátlan CSV kötegek és ZIP letöltések érdekében."
+    "userBatchDesc": "Felhasználta 1 ingyenes kötegelt próbaverzióját. Frissítsen PRO-ra a korlátlan CSV kötegek és ZIP letöltések érdekében.",
+    "googleCta": "Folytatás a Google-lal (1 kattintás)",
+    "emailCta": "Vagy folytassa az E-mail / Jelszóval"
   },
   "formHints": {
     "zeroServerTitle": "100%-os adatvédelem és élethosszig tartó érvényesség",

@@ -1847,7 +1847,9 @@
     "guestBatchDesc": "Conectați-vă cu Google sau e-mail pentru a debloca 1 compilație de lot gratuită cu import CSV și export ZIP.",
     "guestBatchCta": "Conectați-vă pentru a revendica 1 lot gratuit",
     "userBatchTitle": "Deblocați compilații de loturi nelimitate",
-    "userBatchDesc": "Ați folosit 1 probă gratuită în lot. Faceți upgrade la PRO pentru loturi CSV nelimitate și descărcări ZIP."
+    "userBatchDesc": "Ați folosit 1 probă gratuită în lot. Faceți upgrade la PRO pentru loturi CSV nelimitate și descărcări ZIP.",
+    "googleCta": "Continuați cu Google (1-clic)",
+    "emailCta": "Sau continuați cu E-mail / Parolă"
   },
   "formHints": {
     "zeroServerTitle": "100% confidențialitate și valabilitate pe viață",

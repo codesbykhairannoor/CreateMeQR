@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Melden Sie sich mit Google oder E-Mail an, um 1 kostenlose Batch-Kompilierung mit CSV-Import und ZIP-Export freizuschalten.",
     "guestBatchCta": "Melden Sie sich an, um eine kostenlose Charge zu erhalten",
     "userBatchTitle": "Schalten Sie unbegrenzte Batch-Zusammenstellungen frei",
-    "userBatchDesc": "Sie haben Ihre 1 kostenlose Batch-Testversion verwendet. Upgrade auf PRO für unbegrenzte CSV-Batches und ZIP-Downloads."
+    "userBatchDesc": "Sie haben Ihre 1 kostenlose Batch-Testversion verwendet. Upgrade auf PRO für unbegrenzte CSV-Batches und ZIP-Downloads.",
+    "googleCta": "Weiter mit Google (1-Klick)",
+    "emailCta": "Oder fahren Sie mit E-Mail / Passwort fort"
   },
   "formHints": {
     "zeroServerTitle": "100 % Datenschutz und lebenslange Gültigkeit",

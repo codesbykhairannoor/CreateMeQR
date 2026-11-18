@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Logga in med Google eller e-post för att låsa upp 1 gratis batchkompilering med CSV-import och ZIP-export.",
     "guestBatchCta": "Logga in för att göra anspråk på 1 gratis batch",
     "userBatchTitle": "Lås upp obegränsade batchkompilationer",
-    "userBatchDesc": "Du har använt din 1 gratis provperiod. Uppgradera till PRO för obegränsade CSV-batcher och ZIP-nedladdningar."
+    "userBatchDesc": "Du har använt din 1 gratis provperiod. Uppgradera till PRO för obegränsade CSV-batcher och ZIP-nedladdningar.",
+    "googleCta": "Fortsätt med Google (1-klick)",
+    "emailCta": "Eller fortsätt med e-post/lösenord"
   },
   "formHints": {
     "zeroServerTitle": "100 % sekretess och livstidsgiltighet",

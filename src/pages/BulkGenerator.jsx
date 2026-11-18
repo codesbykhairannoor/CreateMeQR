@@ -446,8 +446,8 @@ export default function BulkGenerator() {
             <button
               onClick={() => setInputTab('upload')}
               className={`flex-1 py-2.5 px-4 rounded-xl font-semibold text-xs transition-all flex items-center justify-center gap-2 ${inputTab === 'upload'
-                  ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
-                  : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium'
+                ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium'
                 }`}
             >
               <Upload className="w-4 h-4" /> {t('bulk.tabUpload', 'Upload CSV / TSV File')}
@@ -455,8 +455,8 @@ export default function BulkGenerator() {
             <button
               onClick={() => setInputTab('paste')}
               className={`flex-1 py-2.5 px-4 rounded-xl font-semibold text-xs transition-all flex items-center justify-center gap-2 ${inputTab === 'paste'
-                  ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
-                  : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium'
+                ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium'
                 }`}
             >
               <FileSpreadsheet className="w-4 h-4" /> {t('bulk.tabPaste', 'Paste From Excel / Google Sheets')}
@@ -598,8 +598,8 @@ export default function BulkGenerator() {
                 <button
                   onClick={() => setCodeType('qr')}
                   className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${codeType === 'qr'
-                      ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
-                      : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
+                    ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                    : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
                     }`}
                 >
                   {t('bulk.typeQr', 'QR Code (2D)')}
@@ -607,8 +607,8 @@ export default function BulkGenerator() {
                 <button
                   onClick={() => setCodeType('barcode')}
                   className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${codeType === 'barcode'
-                      ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
-                      : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
+                    ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                    : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
                     }`}
                 >
                   {t('bulk.typeBarcode', 'Barcode (1D)')}
@@ -677,8 +677,8 @@ export default function BulkGenerator() {
                     <button
                       onClick={() => setExportFormat('png')}
                       className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${exportFormat === 'png'
-                          ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
-                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
+                        ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
                         }`}
                     >
                       {t('bulk.formatPng', 'PNG (High DPI)')}
@@ -686,8 +686,8 @@ export default function BulkGenerator() {
                     <button
                       onClick={() => setExportFormat('svg')}
                       className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${exportFormat === 'svg'
-                          ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
-                          : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
+                        ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
                         }`}
                     >
                       {t('bulk.formatSvg', 'SVG (Vector)')}
@@ -731,8 +731,8 @@ export default function BulkGenerator() {
                   <p className="text-xs text-slate-600 dark:text-slate-400 mt-0.5 font-normal">
                     {user
                       ? (freeBulkTrialsRemaining > 0
-                          ? t('bulk.freeTrialDesc', 'You have 1 free batch compilation available. Generate codes and download ZIP in 1 click.')
-                          : t('bulk.proGateDescUser', 'You have used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches.'))
+                        ? t('bulk.freeTrialDesc', 'You have 1 free batch compilation available. Generate codes and download ZIP in 1 click.')
+                        : t('bulk.proGateDescUser', 'You have used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches.'))
                       : t('bulk.proGateDescGuest', 'Sign in to claim 1 free batch QR & Barcode generation, or upgrade to PRO for unlimited batches.')}
                   </p>
                 </div>
@@ -784,8 +784,8 @@ export default function BulkGenerator() {
                     {!user
                       ? t('bulk.btnSignInToGen', 'Sign In to Generate (1 Free Batch)')
                       : (freeBulkTrialsRemaining > 0
-                          ? t('bulk.btnGenerateFree', 'Generate {{count}} Codes (1 Free Batch)', { count: parsedData.rows.length })
-                          : t('bulk.btnUpgradeToGen', 'Upgrade to PRO to Generate'))}
+                        ? t('bulk.btnGenerateFree', 'Generate {{count}} Codes (1 Free Batch)', { count: parsedData.rows.length })
+                        : t('bulk.btnUpgradeToGen', 'Upgrade to PRO to Generate'))}
                   </span>
                 </>
               ) : (

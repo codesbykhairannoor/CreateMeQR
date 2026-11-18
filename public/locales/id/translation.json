@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Login dengan Google atau Email untuk membuka 1x pembuatan batch QR dan Barcode massal dengan impor CSV dan ekspor ZIP.",
     "guestBatchCta": "Login untuk Klaim 1x Batch Gratis",
     "userBatchTitle": "Buka Kompilasi Massal Tanpa Batas",
-    "userBatchDesc": "Anda telah menggunakan 1x kuota coba batch gratis. Upgrade ke PRO untuk kompilasi CSV dan unduhan ZIP tanpa batas."
+    "userBatchDesc": "Anda telah menggunakan 1x kuota coba batch gratis. Upgrade ke PRO untuk kompilasi CSV dan unduhan ZIP tanpa batas.",
+    "googleCta": "Lanjutkan dengan Google (1-Klik)",
+    "emailCta": "Atau masuk dengan Email / Password"
   },
   "formHints": {
     "zeroServerTitle": "100% Privat & Aktif Selamanya",

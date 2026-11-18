@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Google または電子メールでサインインすると、CSV インポートと ZIP エクスポートによる 1 つの無料バッチ コンパイルのロックが解除されます。",
     "guestBatchCta": "サインインして 1 つの無料バッチを請求する",
     "userBatchTitle": "無制限のバッチ コンパイルのロックを解除する",
-    "userBatchDesc": "1 つの無料バッチトライアルを使用しました。 PRO にアップグレードすると、CSV バッチと ZIP を無制限にダウンロードできます。"
+    "userBatchDesc": "1 つの無料バッチトライアルを使用しました。 PRO にアップグレードすると、CSV バッチと ZIP を無制限にダウンロードできます。",
+    "googleCta": "Google で続行 (1-Click)",
+    "emailCta": "または、電子メール/パスワードで続行します"
   },
   "formHints": {
     "zeroServerTitle": "100% プライバシーと生涯有効性",

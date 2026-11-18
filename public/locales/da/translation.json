@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Log ind med Google eller e-mail for at låse op for 1 gratis batch-kompilering med CSV-import og ZIP-eksport.",
     "guestBatchCta": "Log ind for at kræve 1 gratis batch",
     "userBatchTitle": "Lås op for ubegrænsede batch-kompilationer",
-    "userBatchDesc": "Du har brugt din 1 gratis batchprøveperiode. Opgrader til PRO for ubegrænsede CSV-batches og ZIP-downloads."
+    "userBatchDesc": "Du har brugt din 1 gratis batchprøveperiode. Opgrader til PRO for ubegrænsede CSV-batches og ZIP-downloads.",
+    "googleCta": "Fortsæt med Google (1-klik)",
+    "emailCta": "Eller fortsæt med e-mail/adgangskode"
   },
   "formHints": {
     "zeroServerTitle": "100 % privatliv og livstidsgyldighed",

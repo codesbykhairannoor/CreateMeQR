@@ -2008,7 +2008,9 @@
     "guestBatchDesc": "Sign in with Google or Email to unlock 1 free batch compilation with CSV import and ZIP export.",
     "guestBatchCta": "Sign In to Claim 1 Free Batch",
     "userBatchTitle": "Unlock Unlimited Batch Compilations",
-    "userBatchDesc": "You've used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches and ZIP downloads."
+    "userBatchDesc": "You've used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches and ZIP downloads.",
+    "googleCta": "Continue with Google (1-Click)",
+    "emailCta": "Or continue with Email / Password"
   },
   "formHints": {
     "zeroServerTitle": "100% Privacy & Lifetime Validity",

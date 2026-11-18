@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Meld u aan met Google of e-mail om 1 gratis batchcompilatie te ontgrendelen met CSV-import en ZIP-export.",
     "guestBatchCta": "Meld u aan om 1 gratis batch te claimen",
     "userBatchTitle": "Ontgrendel onbeperkte batchcompilaties",
-    "userBatchDesc": "U heeft uw gratis proefperiode van 1 batch gebruikt. Upgrade naar PRO voor onbeperkte CSV-batches en ZIP-downloads."
+    "userBatchDesc": "U heeft uw gratis proefperiode van 1 batch gebruikt. Upgrade naar PRO voor onbeperkte CSV-batches en ZIP-downloads.",
+    "googleCta": "Doorgaan met Google (1-klik)",
+    "emailCta": "Of ga verder met E-mail / Wachtwoord"
   },
   "formHints": {
     "zeroServerTitle": "100% privacy en levenslange geldigheid",

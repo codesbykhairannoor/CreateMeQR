@@ -1994,7 +1994,9 @@
     "guestBatchDesc": "Mag-sign in gamit ang Google o Email para i-unlock ang 1 libreng batch compilation na may CSV import at ZIP export.\n<",
     "guestBatchCta": "Mag-sign In para Mag-claim ng 1 Libreng Batch\n<",
     "userBatchTitle": "I-unlock ang Walang limitasyong Batch Compilation\n<",
-    "userBatchDesc": "Nagamit mo na ang iyong 1 libreng batch na pagsubok. Mag-upgrade sa PRO para sa walang limitasyong mga CSV batch at ZIP download.\n<"
+    "userBatchDesc": "Nagamit mo na ang iyong 1 libreng batch na pagsubok. Mag-upgrade sa PRO para sa walang limitasyong mga CSV batch at ZIP download.\n<",
+    "googleCta": "Magpatuloy sa Google (1-Click)",
+    "emailCta": "O magpatuloy sa Email / Password"
   },
   "formHints": {
     "zeroServerTitle": "100% Privacy at Lifetime Validity\n<",

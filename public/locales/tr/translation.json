@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "CSV içe aktarma ve ZIP dışa aktarma ile 1 ücretsiz toplu derlemenin kilidini açmak için Google veya E-posta ile oturum açın.",
     "guestBatchCta": "1 Ücretsiz Grup Almak için Oturum Açın",
     "userBatchTitle": "Sınırsız Toplu Derlemenin Kilidini Açın",
-    "userBatchDesc": "1 ücretsiz toplu deneme sürenizi kullandınız. Sınırsız CSV grupları ve ZIP indirmeleri için PRO'ya yükseltin."
+    "userBatchDesc": "1 ücretsiz toplu deneme sürenizi kullandınız. Sınırsız CSV grupları ve ZIP indirmeleri için PRO'ya yükseltin.",
+    "googleCta": "Google ile devam et (Tek Tıklama)",
+    "emailCta": "Veya E-posta / Şifre ile devam edin"
   },
   "formHints": {
     "zeroServerTitle": "%100 Gizlilik ve Ömür Boyu Geçerlilik",

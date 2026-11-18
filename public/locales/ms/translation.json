@@ -2016,7 +2016,9 @@
     "guestBatchDesc": "Log masuk dengan Google atau E-mel untuk membuka kunci 1 kompilasi kelompok percuma dengan import CSV dan eksport ZIP.",
     "guestBatchCta": "Log Masuk untuk Tuntut 1 Kumpulan Percuma",
     "userBatchTitle": "Buka kunci Kompilasi Kelompok Tanpa Had",
-    "userBatchDesc": "Anda telah menggunakan 1 percubaan kelompok percuma anda. Tingkatkan kepada PRO untuk kumpulan CSV tanpa had dan muat turun ZIP."
+    "userBatchDesc": "Anda telah menggunakan 1 percubaan kelompok percuma anda. Tingkatkan kepada PRO untuk kumpulan CSV tanpa had dan muat turun ZIP.",
+    "googleCta": "Teruskan dengan Google (1-Klik)",
+    "emailCta": "Atau teruskan dengan E-mel / Kata Laluan"
   },
   "formHints": {
     "zeroServerTitle": "100% Privasi & Kesahan Sepanjang Hayat",
