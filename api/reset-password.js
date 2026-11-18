@@ -24,7 +24,7 @@ function getServiceAccount() {
     return {
       client_email: process.env.FIREBASE_CLIENT_EMAIL,
       private_key: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-      project_id: process.env.FIREBASE_PROJECT_ID || 'thismyown',
+      project_id: process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID || 'thismyown',
     };
   }
 
@@ -34,7 +34,7 @@ function getServiceAccount() {
     const files = fs.readdirSync(rootDir);
     const candidate = files.find(
       (f) =>
-        (f.includes('thismyown') || f.includes('firebase-adminsdk')) &&
+        (f.includes('thismyown') || f.includes('firebase-adminsdk') || f.includes('createmyqr')) &&
         f.endsWith('.json')
     );
     if (candidate) {
@@ -169,7 +169,7 @@ export default async function handler(req, res) {
     const accessToken = await getGoogleAccessToken(serviceAccount);
 
     // 2. Request password reset code from Firebase Identity Toolkit API
-    const projectId = serviceAccount.project_id || 'thismyown';
+    const projectId = serviceAccount.project_id || process.env.FIREBASE_PROJECT_ID || process.env.VITE_FIREBASE_PROJECT_ID || 'thismyown';
     const oobRes = await fetch(
       `https://identitytoolkit.googleapis.com/v1/projects/${projectId}/accounts:sendOobCode`,
       {

@@ -205,8 +205,8 @@ export const AuthProvider = ({ children }) => {
         ? window.location.origin
         : 'https://createmy-qr.com';
 
-    // Call serverless Resend API endpoint
-    const response = await fetch('/api/reset-password/', {
+    // Call serverless Resend API endpoint (matching trailingSlash: false in vercel.json)
+    const response = await fetch('/api/reset-password', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: email.trim(), origin }),
@@ -298,20 +298,20 @@ export const useAuth = () => {
       loading: false,
       isPro: false,
       isLifetime: false,
-      signInWithGoogle: async () => {},
-      signInWithEmail: async () => {},
-      signUpWithEmail: async () => {},
-      sendPasswordReset: async () => {},
-      confirmNewPassword: async () => {},
-      signOut: async () => {},
+      signInWithGoogle: async () => { },
+      signInWithEmail: async () => { },
+      signUpWithEmail: async () => { },
+      sendPasswordReset: async () => { },
+      confirmNewPassword: async () => { },
+      signOut: async () => { },
       isAuthModalOpen: false,
-      openAuthModal: () => {},
-      closeAuthModal: () => {},
+      openAuthModal: () => { },
+      closeAuthModal: () => { },
       isProModalOpen: false,
-      openProModal: () => {},
-      closeProModal: () => {},
+      openProModal: () => { },
+      closeProModal: () => { },
       proModalFeature: '',
-      refreshProfile: async () => {},
+      refreshProfile: async () => { },
     };
   }
   return context;

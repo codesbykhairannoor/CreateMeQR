@@ -103,9 +103,11 @@ export default function EcosystemMenu({ currentLangCode, darkMode, setDarkMode }
                   
                   {/* 1. CreateMy-QR (Active) */}
                   <div className="p-2.5 rounded-2xl bg-blue-50/70 dark:bg-[#0c1831] border border-blue-200 dark:border-blue-800/60 flex items-start gap-2.5 shadow-xs">
-                    <div className="w-8 h-8 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs">
-                      <QrCode className="w-4 h-4" />
-                    </div>
+                    <img
+                      src="/logoqr.png"
+                      alt="CreateMy-QR"
+                      className="w-8 h-8 rounded-xl object-contain shadow-xs shrink-0 bg-white dark:bg-slate-900 p-0.5 border border-blue-200/60 dark:border-blue-800/60"
+                    />
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-1.5">
                         <span className="text-xs font-bold text-slate-900 dark:text-white truncate">
@@ -128,9 +130,11 @@ export default function EcosystemMenu({ currentLangCode, darkMode, setDarkMode }
                     rel="noopener noreferrer"
                     className="p-2.5 rounded-2xl bg-slate-50 hover:bg-slate-100 dark:bg-[#0c1831]/60 dark:hover:bg-[#102040] border border-slate-200/80 dark:border-[#1e2d4a] flex items-start gap-2.5 transition-colors group shadow-xs"
                   >
-                    <div className="w-8 h-8 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0 shadow-xs">
-                      <Image className="w-4 h-4" />
-                    </div>
+                    <img
+                      src="/ecosystem/helpmyimg.png"
+                      alt="HelpMyIMG"
+                      className="w-8 h-8 rounded-xl object-contain shadow-xs shrink-0 bg-white dark:bg-slate-900 p-0.5 border border-slate-200/80 dark:border-[#1e2d4a]"
+                    />
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-1">
                         <span className="text-xs font-bold text-slate-900 dark:text-white truncate group-hover:text-blue-600 dark:group-hover:text-blue-400">
@@ -151,9 +155,11 @@ export default function EcosystemMenu({ currentLangCode, darkMode, setDarkMode }
                     rel="noopener noreferrer"
                     className="p-2.5 rounded-2xl bg-slate-50 hover:bg-slate-100 dark:bg-[#0c1831]/60 dark:hover:bg-[#102040] border border-slate-200/80 dark:border-[#1e2d4a] flex items-start gap-2.5 transition-colors group shadow-xs"
                   >
-                    <div className="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center shrink-0 shadow-xs">
-                      <Video className="w-4 h-4" />
-                    </div>
+                    <img
+                      src="/ecosystem/solvemymedia.png"
+                      alt="SolveMyMedia"
+                      className="w-8 h-8 rounded-xl object-contain shadow-xs shrink-0 bg-white dark:bg-slate-900 p-0.5 border border-slate-200/80 dark:border-[#1e2d4a]"
+                    />
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-1">
                         <span className="text-xs font-bold text-slate-900 dark:text-white truncate group-hover:text-blue-600 dark:group-hover:text-blue-400">
@@ -174,9 +180,11 @@ export default function EcosystemMenu({ currentLangCode, darkMode, setDarkMode }
                     rel="noopener noreferrer"
                     className="p-2.5 rounded-2xl bg-slate-50 hover:bg-slate-100 dark:bg-[#0c1831]/60 dark:hover:bg-[#102040] border border-slate-200/80 dark:border-[#1e2d4a] flex items-start gap-2.5 transition-colors group shadow-xs"
                   >
-                    <div className="w-8 h-8 rounded-xl bg-rose-500 text-white flex items-center justify-center shrink-0 shadow-xs">
-                      <FileText className="w-4 h-4" />
-                    </div>
+                    <img
+                      src="/ecosystem/handlemyfile.png"
+                      alt="HandleMyFile"
+                      className="w-8 h-8 rounded-xl object-contain shadow-xs shrink-0 bg-white dark:bg-slate-900 p-0.5 border border-slate-200/80 dark:border-[#1e2d4a]"
+                    />
                     <div className="min-w-0 flex-1">
                       <div className="flex items-center gap-1">
                         <span className="text-xs font-bold text-slate-900 dark:text-white truncate group-hover:text-blue-600 dark:group-hover:text-blue-400">
