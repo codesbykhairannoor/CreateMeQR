@@ -26,7 +26,7 @@ const TABS = [
   { id: 'vcard', icon: Contact, label: 'types.vcard' },
   { id: 'location', icon: MapPin, label: 'types.location' },
   { id: 'event', icon: Calendar, label: 'types.event' },
-    { id: 'wifi', icon: Wifi, label: 'types.wifi' },
+  { id: 'wifi', icon: Wifi, label: 'types.wifi' },
   { id: 'pdf', icon: FileText, label: 'types.pdf' },
   { id: 'gforms', icon: ClipboardList, label: 'types.gforms' },
   { id: 'greview', icon: Star, label: 'types.greview' },
@@ -42,7 +42,7 @@ const TABS = [
 export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGenerated, setHasGenerated, setActiveTab }) {
   const { t } = useTranslation();
   const [showAllTools, setShowAllTools] = React.useState(false);
-  
+
   const keywordString = t('seoKeywords', { returnObjects: true });
   const keywordArray = typeof keywordString === 'string' ? keywordString.split(',').map(k => k.trim()) : [];
   const topKeywords = keywordArray.slice(0, 5).join(', ');
@@ -95,8 +95,8 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
                     key={tab.id}
                     onClick={() => { handleTypeChange(tab.id); setShowAllTools(false); }}
                     className={`flex flex-col items-center justify-center p-3 rounded-xl transition-all
-                      ${isActive 
-                        ? 'bg-gradient-to-br from-blue-600 to-indigo-600 text-white shadow-md border border-transparent' 
+                      ${isActive
+                        ? 'bg-gradient-to-br from-blue-600 to-indigo-600 text-white shadow-md border border-transparent'
                         : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 hover:border-blue-200 dark:hover:border-slate-600'
                       }`}
                   >
@@ -112,7 +112,7 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
             {(() => {
               const defaultPopular = ['url', 'pdf', 'wifi', 'image', 'whatsapp', 'vcard', 'instagram'];
               let visibleIds = [...defaultPopular];
-              
+
               if (!visibleIds.includes(qrType)) {
                 visibleIds[6] = qrType; // Replace the last item with the active tool
               }
@@ -127,8 +127,8 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
                     key={tab.id}
                     onClick={() => handleTypeChange(tab.id)}
                     className={`flex items-center px-4 py-2.5 rounded-full text-sm font-semibold transition-all
-                      ${isActive 
-                        ? 'bg-slate-900 text-white dark:bg-blue-600 shadow-md border border-transparent' 
+                      ${isActive
+                        ? 'bg-slate-900 text-white dark:bg-blue-600 shadow-md border border-transparent'
                         : 'bg-white border border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-slate-50 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-700'
                       }`}
                   >
@@ -138,7 +138,7 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
                 );
               });
             })()}
-            
+
             <button
               onClick={() => setShowAllTools(true)}
               className="flex items-center px-4 py-2.5 rounded-full text-sm font-semibold transition-all bg-blue-50 text-blue-700 hover:bg-blue-100 hover:shadow-sm dark:bg-blue-900/30 dark:text-blue-400 dark:hover:bg-blue-900/50 border border-blue-100 dark:border-blue-800/30"
@@ -172,11 +172,10 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
               className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 focus:bg-white dark:focus:bg-slate-700 outline-none transition-all dark:text-white text-sm"
             />
             {t(`formHints.${qrType}`) && (
-              <div className={`mt-2.5 p-3 rounded-xl border flex items-start gap-2.5 text-xs ${
-                ['pdf', 'file', 'image', 'audio', 'video'].includes(qrType)
+              <div className={`mt-2.5 p-3 rounded-xl border flex items-start gap-2.5 text-xs ${['pdf', 'file', 'image', 'audio', 'video'].includes(qrType)
                   ? 'bg-blue-50/70 dark:bg-blue-950/30 border-blue-200/60 dark:border-blue-800/40 text-slate-600 dark:text-slate-300'
                   : 'bg-slate-50 dark:bg-slate-800/40 border-slate-200/60 dark:border-slate-700/50 text-slate-500 dark:text-slate-400'
-              }`}>
+                }`}>
                 <Info className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
                 <p className="leading-relaxed">
                   {t(`formHints.${qrType}`)}
