@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 ilmaista vientiä",
+    "guestTitle": "Lunasta 2 ilmaista PRO-vientiä",
+    "guestDesc": "Kirjaudu sisään Googlella tai sähköpostilla avataksesi 2 ilmaista vektori-SVG- ja PDF-latausta.",
+    "guestCta": "Kirjaudu ja lunasta 2 ilmaiseksi",
+    "userBadge": "👑 PRO-ominaisuus",
+    "userTitle": "Avaa rajattomat viennit",
+    "userDesc": "Olet käyttänyt 2 ilmaista vientiäsi. Päivitä PRO-versioon rajattomia latauksia varten.",
+    "userCta": "Päivitä PRO-versioon — Alk. $9.99",
+    "later": "Ehkä myöhemmin"
   }
 }

@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 gratis eksporter",
+    "guestTitle": "Få 2 gratis PRO-eksporter",
+    "guestDesc": "Log ind med Google eller e-mail for at låse op for 2 gratis vektor-SVG og trykklare PDF-downloads.",
+    "guestCta": "Log ind & få 2 gratis",
+    "userBadge": "👑 PRO-funktion",
+    "userTitle": "Lås op for ubegrænset eksport",
+    "userDesc": "Du har brugt dine 2 gratis eksporter. Opgrader til PRO for ubegrænsede downloads.",
+    "userCta": "Opgrader til PRO — Fra $9.99",
+    "later": "Måske senere"
   }
 }

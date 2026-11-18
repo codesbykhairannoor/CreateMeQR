@@ -1980,5 +1980,16 @@
     "upgradeBtn": "查看 PRO 和 Founder 方案",
     "signInBtn": "登录 / 升级至 PRO",
     "closeBtn": "稍后再说"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 赠送2次免费导出",
+    "guestTitle": "免费领取2次专业版导出",
+    "guestDesc": "使用 Google 或邮箱登录，即享2次免费矢量 SVG 和高清 PDF 打印格式下载。",
+    "guestCta": "登录即领2次免费",
+    "userBadge": "👑 PRO 功能",
+    "userTitle": "解锁无限次导出",
+    "userDesc": "您已用完2次免费额度。升级至 PRO 会员即可享受无限制下载。",
+    "userCta": "升级至 PRO — 仅需 $9.99 起",
+    "later": "稍后再说"
   }
 }

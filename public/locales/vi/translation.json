@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ Tặng 2 lượt xuất miễn phí",
+    "guestTitle": "Nhận 2 lượt xuất PRO miễn phí",
+    "guestDesc": "Đăng nhập bằng Google hoặc Email để nhận 2 lượt tải vector SVG và PDF in ấn miễn phí.",
+    "guestCta": "Đăng nhập nhận 2 lượt miễn phí",
+    "userBadge": "👑 Tính năng PRO",
+    "userTitle": "Mở khóa xuất không giới hạn",
+    "userDesc": "Bạn đã dùng hết 2 lượt miễn phí. Nâng cấp lên PRO để tải không giới hạn.",
+    "userCta": "Nâng cấp lên PRO — Từ $9.99",
+    "later": "Để sau"
   }
 }

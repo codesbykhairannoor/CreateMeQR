@@ -12,7 +12,7 @@ export default function BarcodeGenerator() {
   const navigate = useNavigate();
   const { user, isPro, freeTrialsRemaining, consumeProFeature, openAuthModal, openProModal } = useAuth();
   const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
-  
+
   // Barcode states
   const [value, setValue] = useState('123456789012');
   const [format, setFormat] = useState('CODE128');
@@ -64,10 +64,10 @@ export default function BarcodeGenerator() {
         }
       }
     };
-    
+
     window.addEventListener('restore-qr-history', handleRestore);
     handleRestore();
-    
+
     return () => window.removeEventListener('restore-qr-history', handleRestore);
   }, []);
 
@@ -75,26 +75,26 @@ export default function BarcodeGenerator() {
     if (!barcodeRef.current) return;
     const svg = barcodeRef.current.querySelector('svg');
     if (!svg) return;
-    
+
     const svgData = new XMLSerializer().serializeToString(svg);
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
     const img = new Image();
-    
+
     img.onload = () => {
       canvas.width = img.width + 40; // Add padding
       canvas.height = img.height + 40;
       ctx.fillStyle = background;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.drawImage(img, 20, 20);
-      
+
       const pngFile = canvas.toDataURL("image/png");
       const downloadLink = document.createElement("a");
       downloadLink.download = `barcode_${format}.png`;
       downloadLink.href = pngFile;
       downloadLink.click();
     };
-    
+
     img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgData)));
   };
 
@@ -123,7 +123,7 @@ export default function BarcodeGenerator() {
           });
         }
       }
-      
+
       const newItem = {
         id: Date.now(),
         qrType: 'barcode',
@@ -140,7 +140,7 @@ export default function BarcodeGenerator() {
         timestamp: new Date().toISOString(),
         thumbnail
       };
-      
+
       const newHistory = [newItem, ...history].slice(0, 10);
       await set('qr-history-store', newHistory);
       setIsSaved(true);
@@ -154,22 +154,22 @@ export default function BarcodeGenerator() {
   const LivePreviewCard = () => (
     <div className="bg-gradient-to-br from-blue-900 to-slate-900 rounded-3xl p-8 shadow-2xl border border-blue-700/50 flex flex-col h-full relative overflow-hidden">
       <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/20 blur-[80px] rounded-full pointer-events-none"></div>
-      
+
       <div className="flex items-center gap-3 mb-8 relative z-10">
         <BarChart2 className="w-6 h-6 text-blue-400" />
         <h2 className="text-2xl font-bold text-white tracking-tight">{t("barcode.workspace.liveOutput", "Live Output")}</h2>
       </div>
-      
+
       <div className="flex-1 flex items-center justify-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 relative z-10 min-h-[300px]">
-        <div 
-          ref={barcodeRef} 
+        <div
+          ref={barcodeRef}
           className="bg-white p-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
           style={{ backgroundColor: background }}
         >
           {value ? (
-            <Barcode 
-              value={deferredValue || '123456789012'} 
-              format={deferredFormat} 
+            <Barcode
+              value={deferredValue || '123456789012'}
+              format={deferredFormat}
               lineColor={deferredLineColor}
               background={deferredBackground}
               width={deferredWidth}
@@ -184,16 +184,16 @@ export default function BarcodeGenerator() {
           )}
         </div>
       </div>
-      
+
       <div className="mt-8 flex flex-col gap-3 relative z-10">
-        <button 
+        <button
           onClick={handleDownload}
           className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all flex items-center justify-center gap-2 hover:-translate-y-1"
         >
           <Download className="w-5 h-5" /> {t("barcode.workspace.download", "Download High-Res PNG")}
         </button>
 
-        <button 
+        <button
           onClick={() => {
             if (barcodeRef.current) {
               const svg = barcodeRef.current.querySelector('svg');
@@ -226,15 +226,14 @@ export default function BarcodeGenerator() {
             </span>
           )}
         </button>
-        
+
         <button
           onClick={onSaveHistory}
           disabled={isSaved}
-          className={`w-full flex items-center justify-center px-4 py-4 rounded-xl transition-all font-bold shadow-sm text-sm border hover:-translate-y-1 ${
-            isSaved 
-              ? 'bg-green-500/20 text-green-400 border-green-500/30' 
+          className={`w-full flex items-center justify-center px-4 py-4 rounded-xl transition-all font-bold shadow-sm text-sm border hover:-translate-y-1 ${isSaved
+              ? 'bg-green-500/20 text-green-400 border-green-500/30'
               : 'bg-white/5 text-blue-200 border-blue-500/30 hover:bg-white/10 hover:border-blue-400/50'
-          }`}
+            }`}
         >
           {isSaved ? <Check className="w-5 h-5 mr-2" /> : <Clock className="w-5 h-5 mr-2" />}
           {isSaved ? t('history.saved', 'Saved to history!') : t('history.saveBtn', 'Save to Browser History')}
@@ -245,7 +244,7 @@ export default function BarcodeGenerator() {
 
   return (
     <div className="font-sans overflow-hidden bg-slate-50 dark:bg-[#020617] min-h-screen pb-32 transition-colors duration-300">
-{/* Hero Header */}
+      {/* Hero Header */}
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 dark:from-blue-900/10 via-slate-50 dark:via-[#020617] to-slate-50 dark:to-[#020617] transition-colors duration-300"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
@@ -261,7 +260,7 @@ export default function BarcodeGenerator() {
       {/* Workspace UI (Industrial/Dashboard Layout) */}
       <section className="max-w-7xl mx-auto px-6 mt-12 mb-24">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-          
+
           {/* Left Column: Settings (7 cols) */}
           <div className="lg:col-span-7 flex flex-col gap-6">
             <div className="bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-3xl p-8 shadow-xl">
@@ -269,12 +268,12 @@ export default function BarcodeGenerator() {
                 <Hash className="w-6 h-6 text-blue-600 dark:text-blue-500" />
                 <h2 className="text-2xl font-bold tracking-tight dark:text-white">{t("barcode.workspace.dataTitle", "Barcode Data")}</h2>
               </div>
-              
+
               <div className="space-y-6">
                 <div>
                   <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t("barcode.workspace.contentLabel", "Barcode Content")}</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                     className="w-full bg-slate-50 dark:bg-[#020617] border border-slate-300 dark:border-[#1e2d4a] text-slate-900 dark:text-white rounded-xl px-5 py-4 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-lg font-mono"
@@ -283,7 +282,7 @@ export default function BarcodeGenerator() {
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t("barcode.workspace.formatLabel", "Barcode Standard / Format")}</label>
-                  <select 
+                  <select
                     value={format}
                     onChange={(e) => setFormat(e.target.value)}
                     className="w-full bg-slate-50 dark:bg-[#020617] border border-slate-300 dark:border-[#1e2d4a] text-slate-900 dark:text-white rounded-xl px-5 py-4 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-lg appearance-none cursor-pointer"
@@ -307,7 +306,7 @@ export default function BarcodeGenerator() {
                 <Settings2 className="w-6 h-6 text-blue-600 dark:text-blue-500" />
                 <h2 className="text-2xl font-bold tracking-tight dark:text-white">{t("barcode.workspace.visualTitle", "Visual Tuning")}</h2>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t("barcode.workspace.widthLabel", "Bar Width")} ({width}px)</label>
@@ -317,7 +316,7 @@ export default function BarcodeGenerator() {
                   <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t("barcode.workspace.heightLabel", "Bar Height")} ({height}px)</label>
                   <input type="range" min="40" max="150" step="10" value={height} onChange={e => setHeight(Number(e.target.value))} className="w-full accent-blue-600" />
                 </div>
-                
+
                 <div className="space-y-4">
                   <label className="block text-sm font-bold text-slate-700 dark:text-slate-300">{t("barcode.workspace.lineColor", "Line Color")}</label>
                   <div className="flex items-center gap-4">
@@ -349,7 +348,7 @@ export default function BarcodeGenerator() {
           <div className="lg:col-span-5 flex flex-col gap-6 sticky top-24 h-fit">
             {!isMobile && <LivePreviewCard />}
           </div>
-          
+
         </div>
       </section>
 
@@ -454,13 +453,13 @@ export default function BarcodeGenerator() {
               {t("barcode.features.ecoDesc", "Whether you are listing a new product on Amazon (FBA) or setting up your own Shopify storefront, generating UPC and EAN codes is required for global distribution.")}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button 
+              <button
                 onClick={() => { setFormat('UPC'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                 className="w-full sm:w-auto px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-xl transition-transform hover:-translate-y-1 shadow-xl"
               >
                 Generate UPC Code Now
               </button>
-              <button 
+              <button
                 onClick={() => { setFormat('EAN13'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                 className="w-full sm:w-auto px-8 py-4 bg-white dark:bg-[#1e2d4a] text-slate-900 dark:text-white font-bold border border-slate-200 dark:border-transparent rounded-xl transition-transform hover:-translate-y-1 shadow-sm"
               >
@@ -475,7 +474,7 @@ export default function BarcodeGenerator() {
       <section className="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-[#1e2d4a]">
         <div className="bg-slate-900 text-white rounded-[3rem] p-10 md:p-16 border border-slate-800 relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 blur-[150px] rounded-full pointer-events-none" />
-          
+
           <div className="text-center max-w-3xl mx-auto mb-16 relative z-10">
             <div className="inline-flex items-center gap-2 px-5 py-2 bg-blue-950/80 text-blue-400 rounded-full font-bold text-xs uppercase tracking-widest mb-6 border border-blue-500/30">
               <Gauge size={14} /> {t('research.barcodePhysics.badge', 'Optical Verification & Physical Contrast Standards')}

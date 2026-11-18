@@ -39,11 +39,11 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
 
   const initials = user.displayName
     ? user.displayName
-        .split(' ')
-        .map((n) => n[0])
-        .join('')
-        .toUpperCase()
-        .slice(0, 2)
+      .split(' ')
+      .map((n) => n[0])
+      .join('')
+      .toUpperCase()
+      .slice(0, 2)
     : (user.email?.[0] || 'U').toUpperCase();
 
   const handleUpgrade = () => {
@@ -99,7 +99,7 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
               {user.displayName || 'QR Creator'}
             </p>
             <p className="text-xs text-slate-500 dark:text-slate-400 truncate">{user.email}</p>
-            
+
             <div className="mt-2.5 flex items-center justify-between">
               <span className="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Plan</span>
               {isPro ? (

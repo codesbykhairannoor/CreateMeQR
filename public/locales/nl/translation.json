@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 gratis exports",
+    "guestTitle": "Claim 2 gratis PRO-exports",
+    "guestDesc": "Meld je aan met Google of e-mail voor 2 gratis vector SVG- en printklare PDF-downloads.",
+    "guestCta": "Aanmelden & 2 gratis claimen",
+    "userBadge": "👑 PRO-functie",
+    "userTitle": "Onbeperkte exports ontgrendelen",
+    "userDesc": "Je hebt je 2 gratis exports gebruikt. Upgrade naar PRO voor onbeperkte downloads.",
+    "userCta": "Upgraden naar PRO — Vanaf $9.99",
+    "later": "Misschien later"
   }
 }

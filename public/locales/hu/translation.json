@@ -1835,5 +1835,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 ingyenes exportálás",
+    "guestTitle": "Igényeljen 2 ingyenes PRO exportot",
+    "guestDesc": "Jelentkezzen be Google-fiókkal vagy e-maillel 2 ingyenes vektoros SVG és nyomtatható PDF letöltéshez.",
+    "guestCta": "Bejelentkezés & 2 ingyenes kérése",
+    "userBadge": "👑 PRO funkció",
+    "userTitle": "Korlátlan exportálás feloldása",
+    "userDesc": "Felhasználta a 2 ingyenes exportálását. Váltson PRO-ra a korlátlan letöltésért.",
+    "userCta": "Váltás PRO-ra — $9.99-tól",
+    "later": "Később"
   }
 }

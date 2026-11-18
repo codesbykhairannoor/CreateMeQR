@@ -1980,5 +1980,16 @@
     "upgradeBtn": "PRO & Founder プランを見る",
     "signInBtn": "ログイン / PRO にアップグレード",
     "closeBtn": "後で"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2回無料エクスポート",
+    "guestTitle": "PRO無料エクスポート（2回）を獲得",
+    "guestDesc": "Googleまたはメールでログインして、ベクターSVG＆印刷用PDFの無料ダウンロードを2回利用できます。",
+    "guestCta": "ログインして2回無料で利用",
+    "userBadge": "👑 PRO機能",
+    "userTitle": "無制限エクスポートを解放",
+    "userDesc": "無料エクスポート（2回）を使い切りました。PROにアップグレードして無制限に利用しましょう。",
+    "userCta": "PROにアップグレード — $9.99から",
+    "later": "後で"
   }
 }

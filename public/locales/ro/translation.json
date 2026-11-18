@@ -1811,5 +1811,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 exporturi gratuite",
+    "guestTitle": "Revendicați 2 exporturi PRO gratuite",
+    "guestDesc": "Conectați-vă cu Google sau e-mail pentru a debloca 2 descărcări gratuite SVG vectorial și PDF.",
+    "guestCta": "Conectați-vă și primiți 2 gratuit",
+    "userBadge": "👑 Funcție PRO",
+    "userTitle": "Deblocați exporturi nelimitate",
+    "userDesc": "Ați folosit cele 2 exporturi gratuite. Treceți la PRO pentru descărcări nelimitate.",
+    "userCta": "Treceți la PRO — De la $9.99",
+    "later": "Poate mai târziu"
   }
 }

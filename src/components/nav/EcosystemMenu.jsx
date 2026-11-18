@@ -59,11 +59,10 @@ export default function EcosystemMenu({ currentLangCode, darkMode, setDarkMode }
         aria-label="Open 4-in-1 Ecosystem Menu"
         aria-expanded={isOpen}
         title="4 Web Apps Ecosystem"
-        className={`w-9 h-9 md:w-10 md:h-10 rounded-xl md:rounded-2xl flex items-center justify-center transition-all cursor-pointer ${
-          isOpen
+        className={`w-9 h-9 md:w-10 md:h-10 rounded-xl md:rounded-2xl flex items-center justify-center transition-all cursor-pointer ${isOpen
             ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25'
             : 'text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 bg-slate-100/90 dark:bg-[#0c1831] hover:bg-blue-50 dark:hover:bg-[#102040] border border-slate-200/80 dark:border-slate-800'
-        }`}
+          }`}
       >
         {/* 9-dots SVG (3x3 grid) */}
         <svg
@@ -87,12 +86,12 @@ export default function EcosystemMenu({ currentLangCode, darkMode, setDarkMode }
       {/* 9-Dots Dropdown Flyout Card */}
       {isOpen && (
         <div className="absolute right-0 mt-2.5 w-[620px] max-w-[calc(100vw-2rem)] bg-white dark:bg-[#081226] rounded-3xl shadow-[0_25px_70px_-15px_rgba(0,0,0,0.3)] border border-slate-200 dark:border-[#102040] z-50 overflow-hidden animate-fade-in-up">
-          
+
           <div className="p-6 grid grid-cols-1 md:grid-cols-12 gap-6">
-            
+
             {/* Left Column: 4 Ecosystem Web Apps + Desktop Clients (7 cols) */}
             <div className="md:col-span-7 space-y-5">
-              
+
               {/* Ecosystem Web Apps */}
               <div>
                 <h4 className="text-xs font-semibold capitalize text-rose-500 dark:text-rose-400 tracking-normal mb-3 flex items-center gap-1.5">
@@ -100,7 +99,7 @@ export default function EcosystemMenu({ currentLangCode, darkMode, setDarkMode }
                 </h4>
 
                 <div className="grid grid-cols-2 gap-2.5">
-                  
+
                   {/* 1. CreateMy-QR (Active) */}
                   <div className="p-2.5 rounded-2xl bg-blue-50/70 dark:bg-[#0c1831] border border-blue-200 dark:border-blue-800/60 flex items-start gap-2.5 shadow-xs">
                     <img
@@ -338,7 +337,7 @@ export default function EcosystemMenu({ currentLangCode, darkMode, setDarkMode }
 
           {/* Bottom Bar: Mode Toggle + Claim PRO Offer Banner (image_2.png) */}
           <div className="px-6 py-3.5 bg-slate-50 dark:bg-[#060c1c] border-t border-slate-100 dark:border-[#102040] flex items-center justify-between gap-4">
-            
+
             {/* Light / Dark Mode Toggle */}
             <button
               type="button"

@@ -138,7 +138,7 @@ export default function BulkGenerator() {
   // Heuristic to automatically choose the best payload and label columns
   const autoPickColumns = (headers) => {
     if (!headers || headers.length === 0) return;
-    
+
     // Choose data col
     const dataCandidates = ['payload', 'url', 'link', 'data', 'code', 'value', 'sku', 'id'];
     const foundData = headers.find(h => dataCandidates.includes(h.toLowerCase()));
@@ -371,12 +371,12 @@ export default function BulkGenerator() {
 
   return (
     <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white pb-32 transition-colors duration-300">
-      
+
       {/* 1. Hero Section */}
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 border-b border-slate-200 dark:border-[#1e2d4a] overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-600/10 dark:bg-blue-600/10 blur-[150px] rounded-full pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-sky-500/10 dark:bg-sky-600/10 blur-[150px] rounded-full pointer-events-none" />
-        
+
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-5 py-2 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full font-bold text-xs mb-6 tracking-wider border border-blue-200 dark:border-blue-700/50 backdrop-blur-md uppercase">
             <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400" /> {t('bulk.badge', 'Pro Batch Engine • 100% Client-Side')}
@@ -406,7 +406,7 @@ export default function BulkGenerator() {
 
       {/* 2. Workspace Body */}
       <section className="max-w-6xl mx-auto px-6 mt-12 space-y-10">
-        
+
         {/* Step 1: Data Input Card */}
         <div className="bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-[2.5rem] p-8 md:p-10 shadow-xl">
           <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-200 dark:border-[#1e2d4a]">
@@ -439,21 +439,19 @@ export default function BulkGenerator() {
           <div className="flex gap-2 mb-6">
             <button
               onClick={() => setInputTab('upload')}
-              className={`flex-1 py-2.5 px-4 rounded-xl font-semibold text-xs transition-all flex items-center justify-center gap-2 ${
-                inputTab === 'upload'
+              className={`flex-1 py-2.5 px-4 rounded-xl font-semibold text-xs transition-all flex items-center justify-center gap-2 ${inputTab === 'upload'
                   ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
                   : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium'
-              }`}
+                }`}
             >
               <Upload className="w-4 h-4" /> {t('bulk.tabUpload', 'Upload CSV / TSV File')}
             </button>
             <button
               onClick={() => setInputTab('paste')}
-              className={`flex-1 py-2.5 px-4 rounded-xl font-semibold text-xs transition-all flex items-center justify-center gap-2 ${
-                inputTab === 'paste'
+              className={`flex-1 py-2.5 px-4 rounded-xl font-semibold text-xs transition-all flex items-center justify-center gap-2 ${inputTab === 'paste'
                   ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
                   : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium'
-              }`}
+                }`}
             >
               <FileSpreadsheet className="w-4 h-4" /> {t('bulk.tabPaste', 'Paste From Excel / Google Sheets')}
             </button>
@@ -584,7 +582,7 @@ export default function BulkGenerator() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
+
             {/* Code Type */}
             <div>
               <label className="block text-xs font-semibold text-slate-600 dark:text-slate-400 mb-1.5">
@@ -593,21 +591,19 @@ export default function BulkGenerator() {
               <div className="flex gap-2">
                 <button
                   onClick={() => setCodeType('qr')}
-                  className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${
-                    codeType === 'qr'
+                  className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${codeType === 'qr'
                       ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
                       : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
-                  }`}
+                    }`}
                 >
                   {t('bulk.typeQr', 'QR Code (2D)')}
                 </button>
                 <button
                   onClick={() => setCodeType('barcode')}
-                  className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${
-                    codeType === 'barcode'
+                  className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${codeType === 'barcode'
                       ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
                       : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
-                  }`}
+                    }`}
                 >
                   {t('bulk.typeBarcode', 'Barcode (1D)')}
                 </button>
@@ -674,21 +670,19 @@ export default function BulkGenerator() {
                   <div className="flex gap-2">
                     <button
                       onClick={() => setExportFormat('png')}
-                      className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${
-                        exportFormat === 'png'
+                      className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${exportFormat === 'png'
                           ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
-                      }`}
+                        }`}
                     >
                       {t('bulk.formatPng', 'PNG (High DPI)')}
                     </button>
                     <button
                       onClick={() => setExportFormat('svg')}
-                      className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${
-                        exportFormat === 'svg'
+                      className={`flex-1 py-2.5 rounded-xl text-xs font-semibold transition-all ${exportFormat === 'svg'
                           ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium'
-                      }`}
+                        }`}
                     >
                       {t('bulk.formatSvg', 'SVG (Vector)')}
                     </button>

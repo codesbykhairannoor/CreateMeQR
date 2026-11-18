@@ -1972,5 +1972,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 Free Exports",
+    "guestTitle": "Claim 2 Free PRO Exports",
+    "guestDesc": "Sign in with Google or Email to unlock 2 free vector SVG and print-ready PDF downloads.",
+    "guestCta": "Sign In to Claim 2 Free",
+    "userBadge": "👑 PRO Feature",
+    "userTitle": "Unlock Unlimited Exports",
+    "userDesc": "You've used your 2 free exports. Upgrade to PRO for unlimited vector SVG and PDF downloads.",
+    "userCta": "Upgrade to PRO — From $9.99",
+    "later": "Maybe later"
   }
 }

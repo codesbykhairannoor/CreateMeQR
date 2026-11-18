@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 darmowe eksporty",
+    "guestTitle": "Odbierz 2 darmowe eksporty PRO",
+    "guestDesc": "Zaloguj się przez Google lub e-mail, aby odblokować 2 darmowe pobrania SVG i PDF do druku.",
+    "guestCta": "Zaloguj się i odbierz 2 darmowe",
+    "userBadge": "👑 Funkcja PRO",
+    "userTitle": "Odblokuj nielimitowane eksporty",
+    "userDesc": "Wykorzystano 2 darmowe eksporty. Przejdź na PRO, aby pobierać bez ograniczeń.",
+    "userCta": "Przejdź na PRO — od $9.99",
+    "later": "Może później"
   }
 }

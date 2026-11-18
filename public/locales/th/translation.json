@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ สิทธิ์ส่งออกฟรี 2 ครั้ง",
+    "guestTitle": "รับสิทธิ์ส่งออก PRO ฟรี 2 ครั้ง",
+    "guestDesc": "เข้าสู่ระบบด้วย Google หรืออีเมลเพื่อปลดล็อกดาวน์โหลด SVG และ PDF ฟรี 2 ครั้ง",
+    "guestCta": "เข้าสู่ระบบเพื่อรับฟรี 2 ครั้ง",
+    "userBadge": "👑 ฟีเจอร์ PRO",
+    "userTitle": "ปลดล็อกการส่งออกไม่จำกัด",
+    "userDesc": "คุณใช้สิทธิ์ฟรีครบ 2 ครั้งแล้ว อัปเกรดเป็น PRO เพื่อดาวน์โหลดไม่จำกัด",
+    "userCta": "อัปเกรดเป็น PRO — เริ่มต้น $9.99",
+    "later": "ไว้คราวหลัง"
   }
 }

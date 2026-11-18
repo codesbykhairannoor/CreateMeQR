@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 무료 내보내기 2회 제공",
+    "guestTitle": "무료 PRO 내보내기 2회 받기",
+    "guestDesc": "Google 또는 이메일로 로그인하여 벡터 SVG 및 PDF 무료 다운로드 2회를 이용하세요.",
+    "guestCta": "로그인하고 2회 무료 받기",
+    "userBadge": "👑 PRO 기능",
+    "userTitle": "무제한 내보내기 잠금 해제",
+    "userDesc": "무료 내보내기 2회를 모두 사용했습니다. PRO로 업그레이드하여 무제한으로 다운로드하세요.",
+    "userCta": "PRO로 업그레이드 — $9.99부터",
+    "later": "나중에"
   }
 }

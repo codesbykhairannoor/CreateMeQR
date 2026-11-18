@@ -1958,5 +1958,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 Libreng Export",
+    "guestTitle": "Kumuha ng 2 Libreng PRO Export",
+    "guestDesc": "Mag-sign in gamit ang Google o Email para mag-unlock ng 2 libreng vector SVG at PDF download.",
+    "guestCta": "Mag-sign in para makuha ang 2 libre",
+    "userBadge": "👑 PRO Feature",
+    "userTitle": "I-unlock ang Walang Limitasyon",
+    "userDesc": "Nagamit mo na ang iyong 2 libreng export. Mag-upgrade sa PRO para sa walang limitasyong download.",
+    "userCta": "Mag-upgrade sa PRO — Mula $9.99",
+    "later": "Mamaya na lang"
   }
 }

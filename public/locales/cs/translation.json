@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 bezplatné exporty",
+    "guestTitle": "Získejte 2 bezplatné PRO exporty",
+    "guestDesc": "Přihlaste se přes Google nebo e-mail a odemkněte 2 bezplatná stažení vektorového SVG a PDF.",
+    "guestCta": "Přihlásit se a získat 2 zdarma",
+    "userBadge": "👑 Funkce PRO",
+    "userTitle": "Odemkněte neomezený export",
+    "userDesc": "Využili jste své 2 bezplatné exporty. Přejděte na PRO pro neomezené stahování.",
+    "userCta": "Přejít na PRO — od $9.99",
+    "later": "Možná později"
   }
 }

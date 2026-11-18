@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 मुफ्त निर्यात उपलब्ध",
+    "guestTitle": "2 मुफ्त PRO निर्यात प्राप्त करें",
+    "guestDesc": "2 मुफ्त वेक्टर SVG और प्रिंट-रेडी PDF डाउनलोड अनलॉक करने के लिए Google या ईमेल से लॉगिन करें।",
+    "guestCta": "लॉगिन करें और 2 मुफ्त पाएं",
+    "userBadge": "👑 PRO सुविधा",
+    "userTitle": "असीमित निर्यात अनलॉक करें",
+    "userDesc": "आपने अपने 2 मुफ्त निर्यात उपयोग कर लिए हैं। असीमित डाउनलोड के लिए PRO में अपग्रेड करें।",
+    "userCta": "PRO में अपग्रेड करें — $9.99 से",
+    "later": "बाद में"
   }
 }

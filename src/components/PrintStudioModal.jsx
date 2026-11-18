@@ -302,7 +302,7 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
           const availHeight = labelHeight - (currentY - cellY) - (showValueSubtext ? 5 : 2);
           const availWidth = labelWidth - 4;
           const isBarcode = item.type === 'barcode';
-          
+
           const codeSize = isBarcode
             ? { w: Math.min(availWidth, labelWidth * 0.9), h: Math.min(availHeight, 18) }
             : { w: Math.min(availWidth, availHeight, 35), h: Math.min(availWidth, availHeight, 35) };
@@ -355,7 +355,7 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-950/80 backdrop-blur-md overflow-y-auto animate-fadeIn">
       {/* Container */}
       <div className="relative w-full max-w-6xl bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh]">
-        
+
         {/* Modal Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-slate-200 dark:border-[#1e2d4a] bg-slate-50/50 dark:bg-[#070d1e]/50">
           <div className="flex items-center gap-3">
@@ -389,10 +389,10 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
 
         {/* Modal Body: Split into Settings (Left) & Sheet Preview (Right) */}
         <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 overflow-hidden">
-          
+
           {/* Left Column: Settings Panel (5 cols) */}
           <div className="lg:col-span-5 p-6 overflow-y-auto border-r border-slate-200 dark:border-[#1e2d4a] space-y-6">
-            
+
             {/* PRO / Freemium Notice if User is Free or Not Logged In */}
             {!isPro && (
               <div className="p-3.5 bg-blue-50/80 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/60 rounded-2xl flex items-center justify-between gap-3 text-xs">
@@ -402,15 +402,15 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
                   </div>
                   <div className="min-w-0">
                     <div className="font-semibold text-slate-900 dark:text-white truncate">
-                      {user && freeTrialsRemaining > 0 
-                        ? `Freemium Trial: ${freeTrialsRemaining} Free Export${freeTrialsRemaining > 1 ? 's' : ''} Remaining` 
+                      {user && freeTrialsRemaining > 0
+                        ? `Freemium Trial: ${freeTrialsRemaining} Free Export${freeTrialsRemaining > 1 ? 's' : ''} Remaining`
                         : t('printStudio.proNoticeTitle', 'Print Studio is a PRO Feature')}
                     </div>
                     <div className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
                       {user
-                        ? (freeTrialsRemaining > 0 
-                            ? 'Your free trial exports are ready. Click Direct Print or Download PDF below.' 
-                            : t('printStudio.proNoticeDescUser', 'Upgrade to PRO to download vector PDF and print sticker sheets.'))
+                        ? (freeTrialsRemaining > 0
+                          ? 'Your free trial exports are ready. Click Direct Print or Download PDF below.'
+                          : t('printStudio.proNoticeDescUser', 'Upgrade to PRO to download vector PDF and print sticker sheets.'))
                         : t('printStudio.proNoticeDescGuest', 'Sign in to claim 2 free printable sticker sheets.')}
                     </div>
                   </div>
@@ -452,21 +452,19 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
                 <div className="flex gap-2">
                   <button
                     onClick={() => setPaperFormat('a4')}
-                    className={`flex-1 py-1.5 rounded-lg font-bold transition-all ${
-                      paperFormat === 'a4'
+                    className={`flex-1 py-1.5 rounded-lg font-bold transition-all ${paperFormat === 'a4'
                         ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
                         : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700'
-                    }`}
+                      }`}
                   >
                     A4
                   </button>
                   <button
                     onClick={() => setPaperFormat('letter')}
-                    className={`flex-1 py-1.5 rounded-lg font-bold transition-all ${
-                      paperFormat === 'letter'
+                    className={`flex-1 py-1.5 rounded-lg font-bold transition-all ${paperFormat === 'letter'
                         ? 'bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white shadow-sm'
                         : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700'
-                    }`}
+                      }`}
                   >
                     US Letter
                   </button>
@@ -646,7 +644,7 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
 
           {/* Right Column: Interactive Sheet Preview (7 cols) */}
           <div className="lg:col-span-7 bg-slate-100 dark:bg-[#050914] p-6 flex flex-col justify-between overflow-y-auto">
-            
+
             {/* Top Toolbar */}
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2 text-xs font-bold text-slate-700 dark:text-slate-300">
@@ -713,9 +711,8 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
                     return (
                       <div
                         key={slotIdx}
-                        className={`flex flex-col items-center justify-center p-1 relative text-[7px] overflow-hidden ${
-                          showBorders ? 'border border-dashed border-slate-300' : ''
-                        }`}
+                        className={`flex flex-col items-center justify-center p-1 relative text-[7px] overflow-hidden ${showBorders ? 'border border-dashed border-slate-300' : ''
+                          }`}
                       >
                         {item ? (
                           <>
@@ -729,9 +726,8 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
                               <img
                                 src={item.dataUrl}
                                 alt="Code"
-                                className={`object-contain max-h-[80%] max-w-[85%] ${
-                                  pureBlackInk ? 'contrast-200' : ''
-                                }`}
+                                className={`object-contain max-h-[80%] max-w-[85%] ${pureBlackInk ? 'contrast-200' : ''
+                                  }`}
                               />
                             ) : (
                               <div className="w-5 h-5 bg-slate-900 rounded-xs flex items-center justify-center text-white text-[5px]">
@@ -777,10 +773,10 @@ export default function PrintStudioModal({ isOpen, onClose, items = [], defaultT
                 >
                   {!isPro ? (user && freeTrialsRemaining > 0 ? <Sparkles className="w-4 h-4 text-blue-200" /> : <Crown className="w-4 h-4 text-blue-200" />) : <Download className="w-4 h-4" />}
                   <span>
-                    {isExporting 
-                      ? t('printStudio.generatingPdf', 'Generating PDF...') 
-                      : !isPro 
-                        ? (user ? (freeTrialsRemaining > 0 ? `Download PDF (${freeTrialsRemaining} Free Left)` : 'Upgrade to Download PDF') : 'Sign In to Download PDF') 
+                    {isExporting
+                      ? t('printStudio.generatingPdf', 'Generating PDF...')
+                      : !isPro
+                        ? (user ? (freeTrialsRemaining > 0 ? `Download PDF (${freeTrialsRemaining} Free Left)` : 'Upgrade to Download PDF') : 'Sign In to Download PDF')
                         : t('printStudio.downloadPdf', 'Download Printable PDF')}
                   </span>
                 </button>

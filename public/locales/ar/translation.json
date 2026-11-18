@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ متوفر تصديران مجاناً",
+    "guestTitle": "احصل على تصديرين PRO مجاناً",
+    "guestDesc": "سجل الدخول باستخدام Google أو بريدك الإلكتروني للحصول على تحميلين بصيغة SVG وPDF مجاناً.",
+    "guestCta": "تسجيل الدخول والحصول على 2 مجاناً",
+    "userBadge": "👑 ميزة PRO",
+    "userTitle": "فتح عمليات التصدير غير المحدودة",
+    "userDesc": "لقد استهلكت التصديرين المجانيين. اشترك في PRO للتحميل بلا حدود.",
+    "userCta": "الترقية إلى PRO — تبدأ من 9.99$",
+    "later": "ربما لاحقاً"
   }
 }

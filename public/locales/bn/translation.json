@@ -1958,5 +1958,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ ২টি ফ্রি এক্সপোর্ট",
+    "guestTitle": "২টি ফ্রি PRO এক্সপোর্ট গ্রহণ করুন",
+    "guestDesc": "২টি ফ্রি ভেক্টর SVG ও প্রিন্ট-রেডি PDF ডাউনলোড পেতে Google বা ইমেল দিয়ে সাইন ইন করুন।",
+    "guestCta": "সাইন ইন করুন এবং ২টি ফ্রি নিন",
+    "userBadge": "👑 PRO ফিচার",
+    "userTitle": "আনলিমিটেড এক্সপোর্ট আনলক করুন",
+    "userDesc": "আপনি আপনার ২টি ফ্রি এক্সপোর্ট ব্যবহার করেছেন। আনলিমিটেড ডাউনলোডের জন্য PRO-তে আপগ্রেড করুন।",
+    "userCta": "PRO-তে আপগ্রেড করুন — $9.99 থেকে",
+    "later": "পরে হতে পারে"
   }
 }

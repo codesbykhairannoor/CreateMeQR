@@ -1980,5 +1980,16 @@
     "upgradeBtn": "Lihat Paket PRO & Founder",
     "signInBtn": "Masuk / Upgrade ke PRO",
     "closeBtn": "Nanti Saja"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2x Ekspor Gratis",
+    "guestTitle": "Klaim 2x Ekspor PRO Gratis",
+    "guestDesc": "Masuk dengan Google atau Email untuk dapat 2x unduhan vektor SVG & cetak PDF gratis.",
+    "guestCta": "Masuk & Klaim 2x Gratis",
+    "userBadge": "👑 Fitur PRO",
+    "userTitle": "Buka Ekspor Tanpa Batas",
+    "userDesc": "Kuota 2x gratis Anda telah terpakai. Upgrade ke PRO untuk unduh vektor SVG & PDF tanpa batas.",
+    "userCta": "Upgrade ke PRO — Mulai $9.99",
+    "later": "Nanti saja"
   }
 }

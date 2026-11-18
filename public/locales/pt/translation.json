@@ -1980,5 +1980,16 @@
     "upgradeBtn": "Ver Planos PRO e Founder",
     "signInBtn": "Entrar / Atualizar para PRO",
     "closeBtn": "Talvez mais tarde"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 exportações grátis",
+    "guestTitle": "Resgate 2 exportações PRO grátis",
+    "guestDesc": "Entre com Google ou e-mail para desbloquear 2 downloads gratuitos de SVG e PDF.",
+    "guestCta": "Entrar e resgatar 2 grátis",
+    "userBadge": "👑 Recurso PRO",
+    "userTitle": "Desbloqueie exportações ilimitadas",
+    "userDesc": "Você usou suas 2 exportações grátis. Assine o PRO para downloads ilimitados.",
+    "userCta": "Assinar PRO — A partir de $9.99",
+    "later": "Mais tarde"
   }
 }

@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 Eksport Percuma",
+    "guestTitle": "Tuntut 2 Eksport PRO Percuma",
+    "guestDesc": "Log masuk dengan Google atau E-mel untuk dapat 2 muat turun vektor SVG & PDF percuma.",
+    "guestCta": "Log Masuk & Tuntut 2 Percuma",
+    "userBadge": "👑 Ciri PRO",
+    "userTitle": "Buka Eksport Tanpa Had",
+    "userDesc": "Anda telah menggunakan 2 eksport percuma. Naik taraf ke PRO untuk muat turun tanpa had.",
+    "userCta": "Naik Taraf ke PRO — Dari $9.99",
+    "later": "Mungkin nanti"
   }
 }

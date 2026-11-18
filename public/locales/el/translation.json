@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 δωρεάν εξαγωγές",
+    "guestTitle": "Λάβετε 2 δωρεάν εξαγωγές PRO",
+    "guestDesc": "Συνδεθείτε με Google ή email για να ξεκλειδώσετε 2 δωρεάν λήψεις διανυσματικού SVG και PDF.",
+    "guestCta": "Σύνδεση και λήψη 2 δωρεάν",
+    "userBadge": "👑 Λειτουργία PRO",
+    "userTitle": "Ξεκλειδώστε απεριόριστες εξαγωγές",
+    "userDesc": "Χρησιμοποιήσατε τις 2 δωρεάν εξαγωγές σας. Αναβαθμίστε σε PRO για απεριόριστες λήψεις.",
+    "userCta": "Αναβάθμιση σε PRO — Από $9.99",
+    "later": "Ίσως αργότερα"
   }
 }

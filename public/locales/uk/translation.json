@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 безкоштовні експорти",
+    "guestTitle": "Отримайте 2 безкоштовні PRO-експорти",
+    "guestDesc": "Увійдіть через Google або email, щоб розблокувати 2 безкоштовні завантаження SVG і PDF.",
+    "guestCta": "Увійти й отримати 2 безкоштовно",
+    "userBadge": "👑 Функція PRO",
+    "userTitle": "Розблокуйте безлімітний експорт",
+    "userDesc": "Ви використали 2 безкоштовні експорти. Перейдіть на PRO для безлімітного завантаження.",
+    "userCta": "Оновити до PRO — від $9.99",
+    "later": "Може пізніше"
   }
 }

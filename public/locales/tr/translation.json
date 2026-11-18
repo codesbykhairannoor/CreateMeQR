@@ -1980,5 +1980,16 @@
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
     "closeBtn": "Maybe Later"
+  },
+  "proMicro": {
+    "guestBadge": "✨ 2 Ücretsiz Dışa Aktarım",
+    "guestTitle": "2 Ücretsiz PRO Dışa Aktarım Alın",
+    "guestDesc": "2 adet ücretsiz vektörel SVG ve baskıya hazır PDF indirmek için Google veya e-posta ile giriş yapın.",
+    "guestCta": "Giriş Yap ve 2 Tane Ücretsiz Al",
+    "userBadge": "👑 PRO Özelliği",
+    "userTitle": "Sınırsız Dışa Aktarımı Açın",
+    "userDesc": "2 ücretsiz hakkınızı kullandınız. Sınırsız SVG ve PDF indirme için PRO'ya geçin.",
+    "userCta": "PRO'ya Yükselt — $9.99'dan başlayan",
+    "later": "Belki daha sonra"
   }
 }
