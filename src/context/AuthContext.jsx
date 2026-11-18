@@ -36,13 +36,18 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const fetchOrCreateProfile = useCallback(async (firebaseUser) => {
+    const isVipLifetime = firebaseUser.email?.toLowerCase() === 'erstaunenn@gmail.com';
+
     const fallbackProfile = {
       uid: firebaseUser.uid,
       email: firebaseUser.email,
       displayName: firebaseUser.displayName,
       photoURL: firebaseUser.photoURL,
-      plan: 'free',
-      subscriptionStatus: 'inactive',
+      plan: isVipLifetime ? 'pro' : 'free',
+      planType: isVipLifetime ? 'lifetime' : undefined,
+      subscriptionType: isVipLifetime ? 'lifetime' : undefined,
+      subscriptionStatus: isVipLifetime ? 'active' : 'inactive',
+      suiteAccess: isVipLifetime ? 'all_access' : undefined,
       createdAt: Date.now(),
       lastLoginAt: Date.now(),
     };
@@ -57,10 +62,10 @@ export const AuthProvider = ({ children }) => {
 
       if (userDocSnap.exists()) {
         const data = userDocSnap.data();
-        let currentPlan = data.plan || 'free';
-        let currentStatus = data.subscriptionStatus || 'inactive';
+        let currentPlan = isVipLifetime ? 'pro' : (data.plan || 'free');
+        let currentStatus = isVipLifetime ? 'active' : (data.subscriptionStatus || 'inactive');
 
-        const isLifetime = data.planType === 'lifetime' || data.subscriptionType === 'lifetime';
+        const isLifetime = isVipLifetime || data.planType === 'lifetime' || data.subscriptionType === 'lifetime';
 
         // Check expiration if set (Lifetime plans never expire)
         if (data.plan === 'pro' && !isLifetime && data.expiresAt && Date.now() > data.expiresAt) {
@@ -72,17 +77,28 @@ export const AuthProvider = ({ children }) => {
             lastLoginAt: Date.now(),
           });
         } else {
-          await updateDoc(userDocRef, {
+          const updatePayload = {
             lastLoginAt: Date.now(),
             displayName: firebaseUser.displayName || data.displayName || null,
             photoURL: firebaseUser.photoURL || data.photoURL || null,
-          });
+          };
+          if (isVipLifetime && (data.plan !== 'pro' || data.planType !== 'lifetime')) {
+            updatePayload.plan = 'pro';
+            updatePayload.planType = 'lifetime';
+            updatePayload.subscriptionType = 'lifetime';
+            updatePayload.subscriptionStatus = 'active';
+            updatePayload.suiteAccess = 'all_access';
+          }
+          await updateDoc(userDocRef, updatePayload);
         }
 
         return {
           ...data,
           plan: currentPlan,
+          planType: isLifetime ? 'lifetime' : data.planType,
+          subscriptionType: isLifetime ? 'lifetime' : data.subscriptionType,
           subscriptionStatus: currentStatus,
+          suiteAccess: isLifetime ? 'all_access' : data.suiteAccess,
           lastLoginAt: Date.now(),
         };
       } else {
