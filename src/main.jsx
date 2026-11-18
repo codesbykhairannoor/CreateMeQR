@@ -8,6 +8,17 @@ import './i18n'
 
 // Removed static SEO deletion to support White-Hat React rendering
 
+// Suppress harmless external wasm-bindgen initialization warning in browser console
+if (typeof window !== 'undefined') {
+  const originalWarn = console.warn;
+  console.warn = (...args) => {
+    if (typeof args[0] === 'string' && args[0].includes('using deprecated parameters for the initialization function')) {
+      return;
+    }
+    originalWarn(...args);
+  };
+}
+
 // Optional Global Loading State
 const LoadingScreen = () => (
   <div className="min-h-screen bg-[#f8fafc] dark:bg-[#040a18] flex items-center justify-center">

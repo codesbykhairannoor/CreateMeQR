@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import QRCodeStyling from 'qr-code-styling';
-import { Download, Check, Clock, Printer, Crown } from 'lucide-react';
+import { Download, Check, Clock, Printer, Crown, Sparkles } from 'lucide-react';
 import { get, set } from 'idb-keyval';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';

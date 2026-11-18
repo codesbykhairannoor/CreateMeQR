@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, Wifi, Contact, Type, Mail, Phone, MessageSquare, MapPin, Calendar, MessageCircle, Video, Camera, Bitcoin, Smartphone, Users, Hash, Music2, Briefcase, Send, Ghost, Gamepad2, Music, CreditCard, Wallet, FileText, ClipboardList, Star, Image, List, Mic, ShoppingCart, CalendarDays, File, ShieldCheck, Info } from 'lucide-react';
+import SmartPhoneInput from './common/SmartPhoneInput';
 
 const TABS = [
   { id: 'url', icon: Link, label: 'types.url' },
@@ -288,7 +289,12 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
             </div>
             <div>
               <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.phone')}</label>
-              <input type="tel" name="phone" value={qrData.phone || ''} onChange={handleDataChange} placeholder="+1 234 567 8900" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
+              <SmartPhoneInput
+                name="phone"
+                value={qrData.phone || ''}
+                onChange={handleDataChange}
+                placeholder="0812-3456-7890"
+              />
             </div>
             <div>
               <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.email')}</label>
@@ -349,7 +355,12 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
         {qrType === 'phone' && (
           <div>
             <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.phone')}</label>
-            <input type="tel" name="phoneNumber" value={qrData.phoneNumber || ''} onChange={handleDataChange} placeholder="+1 234 567 8900" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
+            <SmartPhoneInput
+              name="phoneNumber"
+              value={qrData.phoneNumber || ''}
+              onChange={handleDataChange}
+              placeholder="0812-3456-7890"
+            />
             {t('formHints.phone') && (
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5 flex items-center gap-1.5">
                 <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />
@@ -363,7 +374,12 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.phone')}</label>
-              <input type="tel" name="smsNumber" value={qrData.smsNumber || ''} onChange={handleDataChange} placeholder="+1 234 567 8900" className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
+              <SmartPhoneInput
+                name="smsNumber"
+                value={qrData.smsNumber || ''}
+                onChange={handleDataChange}
+                placeholder="0812-3456-7890"
+              />
             </div>
             <div>
               <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.smsMessage')}</label>
@@ -432,7 +448,12 @@ export default function InputForm({ qrType, setQrType, qrData, setQrData, hasGen
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-semibold mb-1 text-slate-800 dark:text-slate-100">{t('form.waNumber')}</label>
-              <input type="tel" name="waNumber" placeholder={t('form.enter_whatsapp', '6281234567890')} value={qrData.waNumber || ''} onChange={handleDataChange} className="w-full px-4 py-2.5 rounded-xl border border-blue-100 dark:border-slate-700 bg-[#f8fafc] dark:bg-slate-700/80 focus:ring-2 focus:ring-blue-500 outline-none dark:text-white text-sm" />
+              <SmartPhoneInput
+                name="waNumber"
+                value={qrData.waNumber || ''}
+                onChange={handleDataChange}
+                placeholder="0812-3456-7890"
+              />
               {t('formHints.whatsapp') && (
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 flex items-center gap-1.5">
                   <Info className="w-3.5 h-3.5 text-blue-500 shrink-0" />

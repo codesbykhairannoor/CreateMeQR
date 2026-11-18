@@ -5,8 +5,8 @@ import InputForm from '../components/InputForm';
 // Helper for dynamic loading with error boundary
 const DynamicPseoLayout = ({ pseoUseCase }) => {
   if (!pseoUseCase) return null;
-  
-  const LayoutComponent = React.lazy(() => 
+
+  const LayoutComponent = React.lazy(() =>
     import(`../components/pseo-layouts/${pseoUseCase.id}.jsx`)
       .catch(() => import('../components/pseo-layouts/DefaultLayout.jsx'))
   );
@@ -52,11 +52,11 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUs
         }
       }
     };
-    
+
     window.addEventListener('restore-qr-history', handleRestore);
     // Trigger on mount in case it was set before component loaded
     handleRestore();
-    
+
     return () => window.removeEventListener('restore-qr-history', handleRestore);
   }, [setQrTypeRoute]);
 
@@ -64,13 +64,13 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUs
     if (!title) return null;
     const match = title.match(/QR(?:[-\s]+[A-Za-z0-9а-яА-Я]+)?/i);
     const highlightClass = "text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]";
-    
+
     if (!match) {
       const words = title.split(' ');
       if (words.length <= 2) return <span className={highlightClass}>{title}</span>;
       return <><span className={highlightClass}>{words.slice(0, 2).join(' ')}</span> {words.slice(2).join(' ')}</>;
     }
-    
+
     const parts = title.split(match[0]);
     return (
       <>
@@ -86,7 +86,7 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUs
       {/* Premium Hero Section */}
       <section className="max-w-[1440px] mx-auto px-6 text-center mb-24 pt-32">
         <div className="animate-fade-in-up">
-          <h1 
+          <h1
             className="text-[clamp(2rem,5vw,4rem)] font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.15] text-balance max-w-[900px] mx-auto"
           >
             {renderHighlightedTitle(currentSeo.h1Title)}

@@ -39,16 +39,24 @@ export const AuthProvider = ({ children }) => {
   const fetchOrCreateProfile = useCallback(async (firebaseUser) => {
     const isVipLifetime = firebaseUser.email?.toLowerCase() === 'erstaunenn@gmail.com';
 
+    const sanitizeFirestoreData = (dataObj) => {
+      const sanitized = {};
+      Object.keys(dataObj).forEach((key) => {
+        sanitized[key] = dataObj[key] !== undefined ? dataObj[key] : null;
+      });
+      return sanitized;
+    };
+
     const fallbackProfile = {
       uid: firebaseUser.uid,
-      email: firebaseUser.email,
-      displayName: firebaseUser.displayName,
-      photoURL: firebaseUser.photoURL,
+      email: firebaseUser.email || null,
+      displayName: firebaseUser.displayName || null,
+      photoURL: firebaseUser.photoURL || null,
       plan: isVipLifetime ? 'pro' : 'free',
-      planType: isVipLifetime ? 'lifetime' : undefined,
-      subscriptionType: isVipLifetime ? 'lifetime' : undefined,
+      planType: isVipLifetime ? 'lifetime' : null,
+      subscriptionType: isVipLifetime ? 'lifetime' : null,
       subscriptionStatus: isVipLifetime ? 'active' : 'inactive',
-      suiteAccess: isVipLifetime ? 'all_access' : undefined,
+      suiteAccess: isVipLifetime ? 'all_access' : null,
       createmyqr_trials_used: 0,
       createdAt: Date.now(),
       lastLoginAt: Date.now(),
@@ -91,21 +99,21 @@ export const AuthProvider = ({ children }) => {
             updatePayload.subscriptionStatus = 'active';
             updatePayload.suiteAccess = 'all_access';
           }
-          await updateDoc(userDocRef, updatePayload);
+          await updateDoc(userDocRef, sanitizeFirestoreData(updatePayload));
         }
 
         return {
           ...data,
           plan: currentPlan,
-          planType: isLifetime ? 'lifetime' : data.planType,
-          subscriptionType: isLifetime ? 'lifetime' : data.subscriptionType,
+          planType: isLifetime ? 'lifetime' : (data.planType || null),
+          subscriptionType: isLifetime ? 'lifetime' : (data.subscriptionType || null),
           subscriptionStatus: currentStatus,
-          suiteAccess: isLifetime ? 'all_access' : data.suiteAccess,
+          suiteAccess: isLifetime ? 'all_access' : (data.suiteAccess || null),
           createmyqr_trials_used: typeof data.createmyqr_trials_used === 'number' ? data.createmyqr_trials_used : 0,
           lastLoginAt: Date.now(),
         };
       } else {
-        await setDoc(userDocRef, fallbackProfile);
+        await setDoc(userDocRef, sanitizeFirestoreData(fallbackProfile));
         return fallbackProfile;
       }
     } catch (firestoreError) {
