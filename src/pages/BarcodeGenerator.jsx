@@ -1,19 +1,44 @@
 import React, { useState, useRef, useEffect, useDeferredValue } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import Barcode from 'react-barcode';
-import { Download, Share2, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen, Clock, Check, Sliders, Binary, Gauge, Crown, Sparkles } from 'lucide-react';
+import { Download, Printer, ScanLine, Settings2, BarChart2, Hash, Layers, CheckCircle2, Factory, PackageOpen, Clock, Check, Gauge, Sparkles, Cpu, AlertCircle } from 'lucide-react';
 import { get, set } from 'idb-keyval';
 const PrintStudioModal = React.lazy(() => import('../components/PrintStudioModal'));
 
-export default function BarcodeGenerator() {
-  const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
-  const { user, isPro, freeTrialsRemaining, consumeProFeature, openAuthModal, openProModal } = useAuth();
-  const langPrefix = i18n.language?.startsWith('en') ? '' : `/${i18n.language?.split('-')[0]}`;
+const RETAIL_1D_FORMATS = [
+  { id: 'CODE128', label: 'CODE128 (Versatile Alphanumeric)', sample: '123456789012', engine: 'jsbarcode', isPro: false },
+  { id: 'UPC', label: 'UPC-A (North American Retail - 12 digits)', sample: '012345678905', engine: 'jsbarcode', isPro: false },
+  { id: 'EAN13', label: 'EAN-13 (Global Retail - 13 digits)', sample: '5901234123457', engine: 'jsbarcode', isPro: false },
+  { id: 'EAN8', label: 'EAN-8 (Small Packages - 8 digits)', sample: '96385074', engine: 'jsbarcode', isPro: false },
+  { id: 'ITF14', label: 'ITF-14 (Shipping Cartons - 14 digits)', sample: '10012345678902', engine: 'jsbarcode', isPro: false },
+  { id: 'CODE39', label: 'CODE39 (Automotive & Defense)', sample: 'AUTO-2026-X1', engine: 'jsbarcode', isPro: false },
+  { id: 'pharmacode', label: 'Pharmacode (Pharmaceutical)', sample: '1234', engine: 'jsbarcode', isPro: false }
+];
 
-  // Barcode states
+const ENTERPRISE_BWIP_FORMATS = [
+  { id: 'datamatrix', label: 'Data Matrix ECC 200 (Pharma / PCB / Aerospace)', sample: 'SN-2026-DM948201', engine: 'bwip', isPro: true },
+  { id: 'pdf417', label: 'PDF417 (National IDs, Passports, Boarding Passes)', sample: 'ID:94820-USA-PASSENGER-FIRST', engine: 'bwip', isPro: true },
+  { id: 'azteccode', label: 'Aztec Code (Airline & High-Speed Rail Tickets)', sample: 'TKT-INTL-88412-GATE-B4', engine: 'bwip', isPro: true },
+  { id: 'gs1-128', label: 'GS1-128 (Global Supply Chain Logistics)', sample: '(01)09501101530003(17)271231(10)BATCH99', engine: 'bwip', isPro: true },
+  { id: 'gs1datamatrix', label: 'GS1 DataMatrix (EU/FDA Medical UDI)', sample: '(01)04012345678901(21)XYZ123456', engine: 'bwip', isPro: true },
+  { id: 'maxicode', label: 'MaxiCode (UPS / Express Courier Parcel)', sample: '[)>RS01GS96152382802GS840GS001', engine: 'bwip', isPro: true },
+  { id: 'isbn', label: 'ISBN-13 (Book Publishing Industry)', sample: '978-0-306-40615-7', engine: 'bwip', isPro: true },
+  { id: 'issn', label: 'ISSN (Periodicals & Magazines)', sample: '0378-5955', engine: 'bwip', isPro: true },
+  { id: 'sscc18', label: 'SSCC-18 (Pallet Container Shipping)', sample: '003700012345678908', engine: 'bwip', isPro: true },
+  { id: 'hibcdatamatrix', label: 'HIBC Data Matrix (Healthcare Devices)', sample: '+A123PROD4567/$$82026', engine: 'bwip', isPro: true },
+  { id: 'code93', label: 'Code 93 (High-Density Logistics)', sample: 'LOGISTICS-93', engine: 'bwip', isPro: true },
+  { id: 'rationalizedCodabar', label: 'Codabar (Blood Banks & Libraries)', sample: 'A40156B', engine: 'bwip', isPro: true },
+  { id: 'micropdf417', label: 'MicroPDF417 (Compact ID & Logistics)', sample: 'MPDF-417-UNIT-88', engine: 'bwip', isPro: true }
+];
+
+const ALL_FORMATS = [...RETAIL_1D_FORMATS, ...ENTERPRISE_BWIP_FORMATS];
+
+export default function BarcodeGenerator() {
+  const { t } = useTranslation();
+  const { user, isPro, freeTrialsRemaining, consumeProFeature } = useAuth();
+
+  // Barcode states (clean empty state by default)
   const [value, setValue] = useState('');
   const [format, setFormat] = useState('CODE128');
   const [lineColor, setLineColor] = useState('#000000');
@@ -23,6 +48,8 @@ export default function BarcodeGenerator() {
   const [displayValue, setDisplayValue] = useState(true);
   const [isPrintModalOpen, setIsPrintModalOpen] = useState(false);
   const [currentBarcodeDataUrl, setCurrentBarcodeDataUrl] = useState('');
+  const [bwipSvg, setBwipSvg] = useState('');
+  const [bwipError, setBwipError] = useState('');
 
   // Defer heavy renders for INP optimization
   const deferredValue = useDeferredValue(value);
@@ -34,8 +61,12 @@ export default function BarcodeGenerator() {
   const deferredDisplayValue = useDeferredValue(displayValue);
 
   const barcodeRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' ? window.innerWidth < 1024 : false);
   const [isSaved, setIsSaved] = useState(false);
+
+  const activeFormatMeta = ALL_FORMATS.find(f => f.id === deferredFormat) || RETAIL_1D_FORMATS[0];
+  const isBwipEngine = activeFormatMeta.engine === 'bwip';
+  const trialBadgeText = user && freeTrialsRemaining > 0 ? `${freeTrialsRemaining} Free` : 'PRO';
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 1024);
@@ -71,50 +102,114 @@ export default function BarcodeGenerator() {
     return () => window.removeEventListener('restore-qr-history', handleRestore);
   }, []);
 
-  const handleDownloadPng = () => {
-    if (!value || !barcodeRef.current) return;
-    const svg = barcodeRef.current.querySelector('svg');
-    if (!svg) return;
+  // Dynamically load & render via bwip-js/browser when an Enterprise 2D/Industrial standard has content
+  useEffect(() => {
+    if (!isBwipEngine || !deferredValue || typeof window === 'undefined') {
+      setBwipSvg('');
+      setBwipError('');
+      return;
+    }
+    let cancelled = false;
+    (async () => {
+      try {
+        const bwipjs = await import('bwip-js/browser');
+        const mod = bwipjs.default || bwipjs;
+        const cleanBarColor = (deferredLineColor || '#000000').replace('#', '');
+        const cleanBgColor = (deferredBackground || '#ffffff').replace('#', '');
 
-    const svgData = new XMLSerializer().serializeToString(svg);
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
+        const svgStr = mod.toSVG({
+          bcid: deferredFormat,
+          text: deferredValue,
+          scale: Math.max(2, deferredWidth + 1),
+          height: Math.max(12, Math.round(deferredHeight / 4)),
+          includetext: deferredDisplayValue,
+          textxalign: 'center',
+          barcolor: cleanBarColor,
+          backgroundcolor: cleanBgColor,
+          paddingwidth: 8,
+          paddingheight: 8
+        });
+
+        if (!cancelled) {
+          setBwipSvg(svgStr);
+          setBwipError('');
+        }
+      } catch (err) {
+        if (!cancelled) {
+          setBwipSvg('');
+          setBwipError(err?.message || 'Input value invalid for this barcode standard.');
+        }
+      }
+    })();
+
+    return () => { cancelled = true; };
+  }, [isBwipEngine, deferredFormat, deferredValue, deferredLineColor, deferredBackground, deferredWidth, deferredHeight, deferredDisplayValue]);
+
+  const handleFormatChange = (newFmt) => {
+    setFormat(newFmt);
+    const target = ALL_FORMATS.find(f => f.id === newFmt);
+    // For strict 2D/Enterprise formats (GS1-128, DataMatrix, SSCC-18, etc.), load a valid sample when changing formats
+    if (target && target.engine === 'bwip') {
+      setValue(target.sample);
+    }
+  };
+
+  const getCurrentSvgString = () => {
+    if (!barcodeRef.current) return '';
+    const svg = barcodeRef.current.querySelector('svg');
+    if (!svg) return '';
+    let svgString = new XMLSerializer().serializeToString(svg);
+    if (!svgString.includes('xmlns="http://www.w3.org/2000/svg"')) {
+      svgString = svgString.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ');
+    }
+    return svgString;
+  };
+
+  const handleDownloadPng = async () => {
+    if (!value || !barcodeRef.current) return;
+    if (isBwipEngine && !isPro) {
+      const allowed = await consumeProFeature(t('proAlert.enterpriseBarcodeFeature', `Enterprise ${activeFormatMeta.label.split(' (')[0]} Export`));
+      if (!allowed) return;
+    }
+
+    const svgData = getCurrentSvgString();
+    if (!svgData) return;
+
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
     const img = new Image();
 
     img.onload = () => {
-      canvas.width = img.width + 40; // Add padding
-      canvas.height = img.height + 40;
+      canvas.width = Math.max(600, img.width * 2 + 40);
+      canvas.height = Math.max(240, img.height * 2 + 40);
       ctx.fillStyle = background;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(img, 20, 20);
+      ctx.drawImage(img, 20, 20, canvas.width - 40, canvas.height - 40);
 
-      const pngFile = canvas.toDataURL("image/png");
-      const downloadLink = document.createElement("a");
+      const pngFile = canvas.toDataURL('image/png');
+      const downloadLink = document.createElement('a');
       downloadLink.download = `barcode_${format}_${value || 'code'}.png`;
       downloadLink.href = pngFile;
       downloadLink.click();
     };
 
-    img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgData)));
+    img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
   };
 
   const handleDownloadSvg = async () => {
     if (!value || !barcodeRef.current) return;
 
     if (!isPro) {
-      const allowed = await consumeProFeature(t('proAlert.svgFeature', 'Vector SVG Export'));
+      const allowed = await consumeProFeature(
+        isBwipEngine
+          ? t('proAlert.enterpriseBarcodeFeature', `Enterprise ${activeFormatMeta.label.split(' (')[0]} SVG Export`)
+          : t('proAlert.svgFeature', 'Vector SVG Export')
+      );
       if (!allowed) return;
     }
 
-    const svg = barcodeRef.current.querySelector('svg');
-    if (!svg) return;
-
-    const serializer = new XMLSerializer();
-    let svgString = serializer.serializeToString(svg);
-
-    if (!svgString.includes('xmlns="http://www.w3.org/2000/svg"')) {
-      svgString = svgString.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ');
-    }
+    const svgString = getCurrentSvgString();
+    if (!svgString) return;
 
     const blob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
     const url = URL.createObjectURL(blob);
@@ -122,34 +217,45 @@ export default function BarcodeGenerator() {
     downloadLink.download = `barcode_${format}_${value || 'code'}.svg`;
     downloadLink.href = url;
     downloadLink.click();
-    URL.revokeObjectURL(url);
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+
+  const handleDownloadDxf = async () => {
+    if (!value || !barcodeRef.current) return;
+    if (!isPro) {
+      const allowed = await consumeProFeature(t('proAlert.dxfFeature', 'AutoCAD DXF Laser Cut Export'));
+      if (!allowed) return;
+    }
+    const svgString = getCurrentSvgString();
+    if (!svgString) return;
+    const { svgToDxfString, triggerTextFileDownload } = await import('../utils/cadDxfExporter');
+    const dxf = svgToDxfString(svgString, 100);
+    triggerTextFileDownload(dxf, `barcode_${format}_100mm.dxf`, 'application/dxf');
   };
 
   const onSaveHistory = async () => {
     if (!value) return;
     try {
-      const history = await get('qr-history-store') || [];
+      const history = (await get('qr-history-store')) || [];
       let thumbnail = '';
-      if (barcodeRef.current) {
-        const svg = barcodeRef.current.querySelector('svg');
-        if (svg) {
-          const svgData = new XMLSerializer().serializeToString(svg);
-          const canvas = document.createElement("canvas");
-          const ctx = canvas.getContext("2d");
-          const img = new Image();
-          await new Promise((resolve) => {
-            img.onload = () => {
-              canvas.width = img.width + 40;
-              canvas.height = img.height + 40;
-              ctx.fillStyle = background;
-              ctx.fillRect(0, 0, canvas.width, canvas.height);
-              ctx.drawImage(img, 20, 20);
-              thumbnail = canvas.toDataURL("image/png", 0.2);
-              resolve();
-            };
-            img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgData)));
-          });
-        }
+      const svgData = getCurrentSvgString();
+      if (svgData) {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+        await new Promise((resolve) => {
+          img.onload = () => {
+            canvas.width = img.width + 40;
+            canvas.height = img.height + 40;
+            ctx.fillStyle = background;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(img, 20, 20);
+            thumbnail = canvas.toDataURL('image/png', 0.2);
+            resolve();
+          };
+          img.onerror = () => resolve();
+          img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+        });
       }
 
       const newItem = {
@@ -178,74 +284,131 @@ export default function BarcodeGenerator() {
     }
   };
 
-
   const LivePreviewCard = () => (
     <div className="bg-gradient-to-br from-blue-900 to-slate-900 rounded-3xl p-8 shadow-2xl border border-blue-700/50 flex flex-col h-full relative overflow-hidden">
       <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/20 blur-[80px] rounded-full pointer-events-none"></div>
 
-      <div className="flex items-center gap-3 mb-8 relative z-10">
-        <BarChart2 className="w-6 h-6 text-blue-400" />
-        <h2 className="text-2xl font-bold text-white tracking-tight">{t("barcode.workspace.liveOutput", "Live Output")}</h2>
+      <div className="flex items-center justify-between gap-3 mb-8 relative z-10">
+        <div className="flex items-center gap-3">
+          <BarChart2 className="w-6 h-6 text-blue-400" />
+          <h2 className="text-2xl font-bold text-white tracking-tight">{t('barcode.workspace.liveOutput', 'Live Output')}</h2>
+        </div>
+        <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border ${
+          isBwipEngine
+            ? 'bg-amber-500/20 text-amber-300 border-amber-400/30'
+            : 'bg-blue-500/20 text-blue-200 border-blue-400/30'
+        }`}>
+          {isBwipEngine ? 'BWIPP Engine' : '1D Retail'}
+        </span>
       </div>
 
       <div className="flex-1 flex items-center justify-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 relative z-10 min-h-[300px]">
-        <div
-          ref={barcodeRef}
-          className={`p-6 rounded-xl transition-all duration-300 ${value ? 'bg-white shadow-lg hover:scale-105' : 'bg-transparent'
+        {bwipError && isBwipEngine ? (
+          <div className="p-4 rounded-xl bg-amber-500/15 border border-amber-400/30 text-amber-200 text-xs max-w-xs text-center space-y-2">
+            <AlertCircle className="w-5 h-5 mx-auto text-amber-400" />
+            <p className="font-semibold">{bwipError}</p>
+            <button
+              type="button"
+              onClick={() => setValue(activeFormatMeta.sample)}
+              className="px-3 py-1 rounded-lg bg-amber-400/20 hover:bg-amber-400/30 text-amber-200 font-bold text-[11px] cursor-pointer"
+            >
+              Load Valid Sample ({activeFormatMeta.sample})
+            </button>
+          </div>
+        ) : (
+          <div
+            ref={barcodeRef}
+            className={`p-6 rounded-xl transition-all duration-300 max-w-full overflow-x-auto flex items-center justify-center ${
+              value ? 'bg-white shadow-lg hover:scale-105' : 'bg-transparent'
             }`}
-          style={{ backgroundColor: value ? background : 'transparent' }}
-        >
-          {deferredValue ? (
-            <Barcode
-              value={deferredValue}
-              format={deferredFormat}
-              lineColor={deferredLineColor}
-              background={deferredBackground}
-              width={deferredWidth}
-              height={deferredHeight}
-              displayValue={deferredDisplayValue}
-              margin={10}
-            />
-          ) : (
-            <div className="w-64 h-32 border-2 border-dashed border-white/20 rounded-2xl flex flex-col items-center justify-center p-4 text-center">
-              <ScanLine className="w-8 h-8 text-blue-300/60 mb-2 animate-pulse" />
-              <p className="text-white/80 font-semibold text-sm">
-                {t("barcode.workspace.enterData", "Enter barcode data to preview")}
-              </p>
-            </div>
-          )}
-        </div>
+            style={{ backgroundColor: value ? background : 'transparent' }}
+          >
+            {deferredValue ? (
+              isBwipEngine ? (
+                bwipSvg ? (
+                  <div
+                    className="[&>svg]:max-w-[260px] [&>svg]:max-h-[200px] [&>svg]:w-auto [&>svg]:h-auto"
+                    dangerouslySetInnerHTML={{ __html: bwipSvg }}
+                  />
+                ) : (
+                  <div className="text-xs text-slate-400 font-medium py-8 px-12">Rendering BWIPP Matrix...</div>
+                )
+              ) : (
+                <Barcode
+                  value={deferredValue}
+                  format={deferredFormat}
+                  lineColor={deferredLineColor}
+                  background={deferredBackground}
+                  width={deferredWidth}
+                  height={deferredHeight}
+                  displayValue={deferredDisplayValue}
+                  margin={10}
+                />
+              )
+            ) : (
+              <div className="w-64 h-32 border-2 border-dashed border-white/20 rounded-2xl flex flex-col items-center justify-center p-4 text-center">
+                <ScanLine className="w-8 h-8 text-blue-300/60 mb-2 animate-pulse" />
+                <p className="text-white/80 font-semibold text-sm">
+                  {t('barcode.workspace.enterData', 'Enter barcode data to preview')}
+                </p>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       <div className="mt-8 flex flex-col gap-3 relative z-10">
-        {/* Row 1: PNG and SVG Downloads (Matching QR Format) */}
-        <div className="flex w-full gap-3">
+        {/* Row 1: PNG, SVG & CAD DXF Downloads */}
+        <div className="grid grid-cols-3 gap-2.5 w-full">
           <button
             onClick={handleDownloadPng}
             disabled={!value}
-            className={`flex-1 py-3.5 px-3 rounded-xl bg-blue-500 text-white font-bold text-sm shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all flex items-center justify-center gap-2 ${!value
+            className={`py-3.5 px-2.5 rounded-xl bg-blue-500 text-white font-bold text-xs sm:text-sm shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all flex items-center justify-center gap-1.5 ${!value
               ? 'opacity-40 cursor-not-allowed'
               : 'hover:bg-blue-600 hover:-translate-y-0.5 cursor-pointer'
               }`}
           >
             <Download className="w-4 h-4 shrink-0" />
             <span>PNG</span>
+            {isBwipEngine && !isPro && (
+              <span className="px-1 py-0.2 rounded text-[8.5px] font-semibold bg-white/20 text-white uppercase hidden sm:inline">
+                {trialBadgeText}
+              </span>
+            )}
           </button>
 
           <button
             onClick={handleDownloadSvg}
             disabled={!value}
-            className={`flex-1 py-3.5 px-3 rounded-xl bg-white/10 text-white font-bold text-sm border border-white/20 transition-all flex items-center justify-center gap-1.5 ${!value
+            className={`py-3.5 px-2.5 rounded-xl bg-white/10 text-white font-bold text-xs sm:text-sm border border-white/20 transition-all flex items-center justify-center gap-1 ${!value
               ? 'opacity-40 cursor-not-allowed'
               : 'hover:bg-white/20 hover:border-white/30 hover:-translate-y-0.5 cursor-pointer'
               }`}
           >
-            <Download className="w-4 h-4 shrink-0" />
+            <Download className="w-3.5 h-3.5 shrink-0" />
             <span>SVG</span>
             {!isPro && (
-              <span className="ml-1 px-1.5 py-0.5 rounded text-[9.5px] font-semibold bg-blue-500/30 text-blue-200 border border-blue-400/30 uppercase flex items-center gap-1 shrink-0">
-                <Sparkles size={9} className="text-blue-300" />
-                {user && freeTrialsRemaining > 0 ? `${freeTrialsRemaining} Free` : 'PRO'}
+              <span className="ml-0.5 px-1 py-0.5 rounded text-[8.5px] font-semibold bg-blue-500/30 text-blue-200 border border-blue-400/30 uppercase flex items-center gap-0.5 shrink-0">
+                <Sparkles size={8} className="text-blue-300" />
+                {trialBadgeText}
+              </span>
+            )}
+          </button>
+
+          <button
+            onClick={handleDownloadDxf}
+            disabled={!value}
+            className={`py-3.5 px-2.5 rounded-xl bg-white/10 text-white font-bold text-xs sm:text-sm border border-white/20 transition-all flex items-center justify-center gap-1 ${!value
+              ? 'opacity-40 cursor-not-allowed'
+              : 'hover:bg-white/20 hover:border-white/30 hover:-translate-y-0.5 cursor-pointer'
+              }`}
+          >
+            <Cpu className="w-3.5 h-3.5 shrink-0 text-blue-300" />
+            <span>DXF</span>
+            {!isPro && (
+              <span className="ml-0.5 px-1 py-0.5 rounded text-[8.5px] font-semibold bg-blue-500/30 text-blue-200 border border-blue-400/30 uppercase flex items-center gap-0.5 shrink-0">
+                <Sparkles size={8} className="text-blue-300" />
+                {trialBadgeText}
               </span>
             )}
           </button>
@@ -254,24 +417,21 @@ export default function BarcodeGenerator() {
         <button
           onClick={() => {
             if (!value) return;
-            if (barcodeRef.current) {
-              const svg = barcodeRef.current.querySelector('svg');
-              if (svg) {
-                const svgData = new XMLSerializer().serializeToString(svg);
-                const canvas = document.createElement("canvas");
-                const ctx = canvas.getContext("2d");
-                const img = new Image();
-                img.onload = () => {
-                  canvas.width = img.width + 40;
-                  canvas.height = img.height + 40;
-                  ctx.fillStyle = background;
-                  ctx.fillRect(0, 0, canvas.width, canvas.height);
-                  ctx.drawImage(img, 20, 20);
-                  setCurrentBarcodeDataUrl(canvas.toDataURL("image/png"));
-                  setIsPrintModalOpen(true);
-                };
-                img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(svgData)));
-              }
+            const svgData = getCurrentSvgString();
+            if (svgData) {
+              const canvas = document.createElement('canvas');
+              const ctx = canvas.getContext('2d');
+              const img = new Image();
+              img.onload = () => {
+                canvas.width = img.width + 40;
+                canvas.height = img.height + 40;
+                ctx.fillStyle = background;
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.drawImage(img, 20, 20);
+                setCurrentBarcodeDataUrl(canvas.toDataURL('image/png'));
+                setIsPrintModalOpen(true);
+              };
+              img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
             }
           }}
           disabled={!value}
@@ -285,7 +445,7 @@ export default function BarcodeGenerator() {
           {!isPro && (
             <span className="ml-1.5 px-1.5 py-0.5 rounded text-[10px] font-semibold bg-blue-500/20 text-blue-200 border border-blue-400/30 uppercase flex items-center gap-1">
               <Sparkles size={10} className="text-blue-300" />
-              {user && freeTrialsRemaining > 0 ? `${freeTrialsRemaining} Free` : 'PRO'}
+              {trialBadgeText}
             </span>
           )}
         </button>
@@ -314,10 +474,10 @@ export default function BarcodeGenerator() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 dark:from-blue-900/10 via-slate-50 dark:via-[#020617] to-slate-50 dark:to-[#020617] transition-colors duration-300"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-bold tracking-tight text-zinc-900 dark:text-white mb-6 leading-[1.1]">
-            {t("barcode.hero.title", "Generate")} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t("barcode.hero.titleHighlight", "Barcodes")}</span> {t("barcode.hero.titleSuffix", "Instantly")}
+            {t('barcode.hero.title', 'Generate')} <span className="text-transparent bg-clip-text bg-gradient-to-br from-slate-900 to-blue-700 dark:from-blue-300 dark:to-blue-600 pr-[4px]">{t('barcode.hero.titleHighlight', 'Barcodes')}</span> {t('barcode.hero.titleSuffix', 'Instantly')}
           </h1>
           <p className="text-lg md:text-xl text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto mb-10 font-medium leading-relaxed">
-            {t("barcode.hero.desc", "Create high-quality inventory tags, shipping labels, and retail codes in seconds.")}
+            {t('barcode.hero.desc', 'Create high-quality inventory tags, shipping labels, and enterprise 2D industrial codes (DataMatrix, PDF417, Aztec, GS1-128) in seconds.')}
           </p>
         </div>
       </section>
@@ -329,36 +489,50 @@ export default function BarcodeGenerator() {
           {/* Left Column: Settings (7 cols) */}
           <div className="lg:col-span-7 flex flex-col gap-6">
             <div className="bg-white dark:bg-[#0a1128] border border-slate-200 dark:border-[#1e2d4a] rounded-3xl p-8 shadow-xl">
-              <div className="flex items-center gap-3 mb-8 pb-4 border-b border-slate-100 dark:border-[#1e2d4a]">
-                <Hash className="w-6 h-6 text-blue-600 dark:text-blue-500" />
-                <h2 className="text-2xl font-bold tracking-tight dark:text-white">{t("barcode.workspace.dataTitle", "Barcode Data")}</h2>
+              <div className="flex items-center justify-between gap-3 mb-8 pb-4 border-b border-slate-100 dark:border-[#1e2d4a]">
+                <div className="flex items-center gap-3">
+                  <Hash className="w-6 h-6 text-blue-600 dark:text-blue-500" />
+                  <h2 className="text-2xl font-bold tracking-tight dark:text-white">{t('barcode.workspace.dataTitle', 'Barcode Data')}</h2>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setValue(activeFormatMeta.sample)}
+                  className="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
+                >
+                  Load Sample Value
+                </button>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t("barcode.workspace.contentLabel", "Barcode Content")}</label>
+                  <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t('barcode.workspace.contentLabel', 'Barcode Content')}</label>
                   <input
                     type="text"
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                     className="w-full bg-slate-50 dark:bg-[#020617] border border-slate-300 dark:border-[#1e2d4a] text-slate-900 dark:text-white rounded-xl px-5 py-4 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-lg font-mono"
-                    placeholder={t("barcode.workspace.contentPlaceholder", "Enter numbers or text...")}
+                    placeholder={t('barcode.workspace.contentPlaceholder', 'Enter numbers or text...')}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">{t("barcode.workspace.formatLabel", "Barcode Standard / Format")}</label>
+                  <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">
+                    {t('barcode.workspace.formatLabel', 'Barcode Standard / Format (20+ Retail & Industrial Standards)')}
+                  </label>
                   <select
                     value={format}
-                    onChange={(e) => setFormat(e.target.value)}
-                    className="w-full bg-slate-50 dark:bg-[#020617] border border-slate-300 dark:border-[#1e2d4a] text-slate-900 dark:text-white rounded-xl px-5 py-4 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-lg appearance-none cursor-pointer"
+                    onChange={(e) => handleFormatChange(e.target.value)}
+                    className="w-full bg-slate-50 dark:bg-[#020617] border border-slate-300 dark:border-[#1e2d4a] text-slate-900 dark:text-white rounded-xl px-5 py-4 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-base font-semibold cursor-pointer"
                   >
-                    <option value="CODE128">CODE128 (Versatile, Alphanumeric)</option>
-                    <option value="UPC">UPC-A (North American Retail)</option>
-                    <option value="EAN13">EAN-13 (Global Retail)</option>
-                    <option value="EAN8">EAN-8 (Small Packages)</option>
-                    <option value="ITF14">ITF-14 (Shipping & Logistics)</option>
-                    <option value="CODE39">CODE39 (Automotive & Defense)</option>
-                    <option value="pharmacode">Pharmacode (Pharmaceutical)</option>
+                    <optgroup label="Retail 1D Barcodes (Free PNG)">
+                      {RETAIL_1D_FORMATS.map(fmt => (
+                        <option key={fmt.id} value={fmt.id}>{fmt.label}</option>
+                      ))}
+                    </optgroup>
+                    <optgroup label="Enterprise 2D & Industrial BWIPP Engine (PRO Export)">
+                      {ENTERPRISE_BWIP_FORMATS.map(fmt => (
+                        <option key={fmt.id} value={fmt.id}>★ {fmt.label}</option>
+                      ))}
+                    </optgroup>
                   </select>
                 </div>
               </div>

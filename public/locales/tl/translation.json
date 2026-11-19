@@ -128,7 +128,15 @@
     "eyeColor": "Kulay ng Mata",
     "gradient": "Gumamit ng Gradient",
     "logoSize": "Laki ng Logo",
-    "logoMargin": "Logo Margin"
+    "logoMargin": "Logo Margin",
+    "studioThemes": "Mga Tema at CTA Frame",
+    "quickPresets": "1-Click Designer Palettes",
+    "ctaFrameLabel": "CTA Showcase Frame",
+    "frameText": "Teksto ng Frame",
+    "frameColor": "Kulay ng Frame",
+    "eyeOuterColor": "Panlabas na Kulay ng Mata",
+    "eyeInnerColor": "Panloob na Kulay ng Mata",
+    "cornerDotStyle": "Hugis ng Gitna ng Mata"
   },
   "preview": {
     "title": "Preview ng QR Code",
@@ -138,7 +146,11 @@
     "readyDesc": "Gumawa ng QR Code na may Logo at Kulay - Walang Signup, Walang Limitasyon",
     "clientSide": "Nabuo sa panig ng kliyente",
     "noServer": "Walang data na ipinadala sa server",
-    "printStudioBtn": "Print / A4 Sticker Sheet PDF"
+    "printStudioBtn": "Print / A4 Sticker Sheet PDF",
+    "printBtnShort": "I-print ang PDF Sheet",
+    "mockupBtnShort": "3D Mockup Studio",
+    "isoGradePass": "ISO Grade {{grade}} • Nai-scan ({{ms}}ms)",
+    "isoGradeWarn": "Mababang contrast o masyadong malaking logo"
   },
   "footer": {
     "privacy": "Patakaran sa Privacy",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Ganap na flexibility para sa mga propesyonal, designer, at aktibong negosyo.",
       "monthlyCta": "Kumuha ng Buwanang Pro",
       "monthlyF1": "Nakakonekta ang buong access sa lahat ng 4 na Web Apps",
-      "monthlyF2": "High-resolution na Vector SVG at Print-Ready na PDF export",
-      "monthlyF3": "Custom na pagba-brand, logo ng kumpanya at color gradient palette",
-      "monthlyF4": "Batch QR at Barcode generation suite",
-      "monthlyF5": "Komersyal at lisensya sa paggamit ng proyekto ng kliyente",
-      "monthlyF6": "Priyoridad na pagproseso at mabilis na suporta sa customer",
+      "monthlyF2": "Vector SVG, AutoCAD DXF (Laser/CNC) at Adobe EPS exports",
+      "monthlyF3": "20+ Industrial Barcodes (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D Mockup Studio, CTA Showcase Frames at Dual-Tone Eyes",
+      "monthlyF5": "A4 Print Studio (Avery + Crop Marks) at Batch CSV ZIP",
+      "monthlyF6": "ISO Grade WASM Scan Audit at Commercial License",
       "annualTitle": "Taunang Plano",
       "annualBadge": "Pinakasikat",
       "annualSavings": "Makatipid ng 34%",
@@ -1481,7 +1493,7 @@
       "annualCta": "Kumuha ng Taunang Pro",
       "annualF1": "Nakakonekta ang buong access sa lahat ng 4 na Web Apps",
       "annualF2": "Lahat ng kasama sa Buwanang Plano",
-      "annualF3": "Makatipid ng 34% kumpara sa regular na buwanang pagsingil",
+      "annualF3": "Makatipid ng 34% + ISO Grade WASM Audit at Commercial License",
       "annualF4": "Mga advanced na custom na tuldok, hugis ng sulok at pattern ng mata",
       "annualF5": "Maramihang high-DPI vector SVG at 4K raster download",
       "annualF6": "Priyoridad 24/7 na nakatuon sa tulong sa customer",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Panghabambuhay na access sa lahat ng 4 na Web Apps",
       "lifetimeF2": "Kasama ang dedikadong Windows Desktop App (Native offline)",
       "lifetimeF3": "Mobile App (Android APK at iOS) kasama",
-      "lifetimeF4": "Kasama sa lahat ng hinaharap na update, tool, at pangunahing feature ang forever",
-      "lifetimeF5": "VIP Founder badge at eksklusibong access sa komunidad",
+      "lifetimeF4": "Lahat ng Pro Engines habambuhay: BWIPP 2D, DXF CAD, 3D Mockups",
+      "lifetimeF5": "Lahat ng future updates at VIP Founder badge",
       "lifetimeF6": "Direktang 1-on-1 VIP developer support channel",
       "faqTitle": "Mga Madalas Itanong",
       "faq1Q": "Ang lahat ba ng mga pakete sa pagpepresyo ay talagang nasa USD?",
@@ -1971,13 +1983,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vector SVG, DXF CAD at 3D Mockups:",
+    "f2Text": "Mag-export ng Print EPS, Laser DXF, 20+ Industrial Barcodes, CTA Frames at 1400px 3D Mockups.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "AutoCAD DXF Laser Cut Export",
+    "epsFeature": "Adobe Illustrator EPS Export",
+    "frameFeature": "Custom CTA Frame Export",
+    "mockupFeature": "3D Real-World Mockup Studio",
+    "enterpriseBarcodeFeature": "Enterprise 2D / Industrial Barcode Export"
   },
   "proMicro": {
     "guestBadge": "✨ 2 Libreng Export",
@@ -2034,5 +2051,13 @@
     "venmo": "Direktang link sa iyong Venmo account para sa mabilis na paglilipat.\n<",
     "location": "Direktang nagbubukas ng latitude at longitude sa Google Maps o Apple Maps.\n<",
     "event": "Nagbibigay-daan sa mga dadalo na idagdag ang kaganapang ito sa kanilang kalendaryo sa pamamagitan ng 1 tap.\n<"
+  },
+  "mockup": {
+    "badge": "3D Mockup Engine",
+    "title": "Real-World Mockup Studio",
+    "subtitle": "Mag-preview at mag-export ng 1400px commercial mockups na 100% lokal sa iyong browser.",
+    "sceneLabel": "Pumili ng Eksena",
+    "captionLabel": "Teksto ng Pamagat",
+    "downloadBtn": "I-download ang 1400px PNG"
   }
 }

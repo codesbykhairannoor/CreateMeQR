@@ -128,7 +128,15 @@
     "eyeColor": "Øjenfarve",
     "gradient": "Brug Gradient",
     "logoSize": "Logostørrelse",
-    "logoMargin": "Logomargin"
+    "logoMargin": "Logomargin",
+    "studioThemes": "Studietemaer & CTA-rammer",
+    "quickPresets": "1-Klik Designerpaletter",
+    "ctaFrameLabel": "CTA Udstillingsramme",
+    "frameText": "Rammetekst",
+    "frameColor": "Ramme-accentfarve",
+    "eyeOuterColor": "Ydre øjefarve",
+    "eyeInnerColor": "Indre pupilfarve",
+    "cornerDotStyle": "Pupilform"
   },
   "preview": {
     "title": "QR Code Preview",
@@ -138,7 +146,11 @@
     "readyDesc": "Lav QR Koder med Logo & Farve - Uden Registrering, Ubegrænset",
     "clientSide": "Klient-side genereret",
     "noServer": "Ingen data sendt til serveren",
-    "printStudioBtn": "Udskriv / A4 klistermærkeark PDF"
+    "printStudioBtn": "Udskriv / A4 klistermærkeark PDF",
+    "printBtnShort": "Udskriv PDF-ark",
+    "mockupBtnShort": "3D Mockup Studie",
+    "isoGradePass": "ISO-grad {{grade}} • Scanbar ({{ms}}ms)",
+    "isoGradeWarn": "Lav kontrast eller tæt logo registreret"
   },
   "footer": {
     "privacy": "Privatlivspolitik",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Fuld fleksibilitet for fagfolk, designere og aktive virksomheder.",
       "monthlyCta": "Få Monthly Pro",
       "monthlyF1": "Forbundet fuld adgang til alle 4 webapps",
-      "monthlyF2": "Højopløselig vektor SVG og printklar PDF-eksport",
-      "monthlyF3": "Brugerdefineret branding, firmalogo og farvegradientpalet",
-      "monthlyF4": "Batch QR & Barcode generation suite",
-      "monthlyF5": "Licens til brug af kommercielt og klientprojekt",
-      "monthlyF6": "Prioritetsbehandling og hurtig kundesupport",
+      "monthlyF2": "Vektor SVG, AutoCAD DXF (Laser/CNC) & Adobe EPS eksport",
+      "monthlyF3": "20+ Industrielle Stregkoder (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D Mockup Studie, CTA-rammer & To-tonede Øjne",
+      "monthlyF5": "A4 Print Studie (Avery + Skæremærker) & Batch CSV ZIP",
+      "monthlyF6": "ISO-grad WASM-audit & Kommerciel Licens",
       "annualTitle": "Årsplan",
       "annualBadge": "Mest populær",
       "annualSavings": "Spar 34 %",
@@ -1481,7 +1493,7 @@
       "annualCta": "Få Annual Pro",
       "annualF1": "Forbundet fuld adgang til alle 4 webapps",
       "annualF2": "Alt inkluderet i månedsplanen",
-      "annualF3": "Spar 34 % sammenlignet med almindelig månedlig fakturering",
+      "annualF3": "Spar 34% + ISO-grad WASM-audit & Kommerciel Licens",
       "annualF4": "Avancerede brugerdefinerede prikker, hjørneformer og øjenmønstre",
       "annualF5": "Bulk high-DPI vektor SVG & 4K raster downloads",
       "annualF6": "Priority 24/7 dedikeret kundeservice",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Livstidsadgang til alle 4 webapps",
       "lifetimeF2": "Dedikeret Windows Desktop App inkluderet (Native offline)",
       "lifetimeF3": "Mobilapp (Android APK og iOS) inkluderet",
-      "lifetimeF4": "Alle fremtidige opdateringer, værktøjer og vigtige funktioner inkluderet for evigt",
-      "lifetimeF5": "VIP Founder-badge og eksklusiv adgang til fællesskabet",
+      "lifetimeF4": "Alle Pro-motorer for altid: BWIPP 2D, DXF CAD, 3D Mockups",
+      "lifetimeF5": "Alle fremtidige opdateringer & VIP Founder-badge",
       "lifetimeF6": "Direkte 1-til-1 VIP-udviklersupportkanal",
       "faqTitle": "Ofte stillede spørgsmål",
       "faq1Q": "Er alle prispakker virkelig i USD?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vektor SVG, DXF CAD & 3D Mockups:",
+    "f2Text": "Eksportér Print EPS, Laser DXF, 20+ industrielle stregkoder, CTA-rammer og 1400px 3D-mockups.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "AutoCAD DXF Laserskæring Eksport",
+    "epsFeature": "Adobe Illustrator EPS Eksport",
+    "frameFeature": "Brugerdefineret CTA-ramme Eksport",
+    "mockupFeature": "3D Real-World Mockup Studie",
+    "enterpriseBarcodeFeature": "Enterprise 2D / Industriel Stregkode Eksport"
   },
   "proMicro": {
     "guestBadge": "✨ 2 gratis eksporter",
@@ -2056,5 +2073,13 @@
     "venmo": "Direkte link til din Venmo-konto for hurtige overførsler.",
     "location": "Åbner bredde- og længdegrad direkte i Google Maps eller Apple Maps.",
     "event": "Tillader deltagere at tilføje denne begivenhed til deres kalender med 1 tryk."
+  },
+  "mockup": {
+    "badge": "3D Mockup Engine",
+    "title": "Realistisk 3D Mockup Studie",
+    "subtitle": "Forhåndsvis og eksportér 1400px kommercielle mockups gengivet 100% lokalt i din browser.",
+    "sceneLabel": "Vælg Mockup-scene",
+    "captionLabel": "Billedtekst",
+    "downloadBtn": "Download 1400px PNG"
   }
 }

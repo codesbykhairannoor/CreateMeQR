@@ -1,18 +1,47 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Html5Qrcode } from 'html5-qrcode';
-import { Scan, ScanLine, Upload, Copy, ExternalLink, RefreshCw, AlertCircle, Camera, Smartphone, Globe, ShieldCheck, Zap, Lock } from 'lucide-react';
+import { Scan, ScanLine, Upload, Copy, ExternalLink, AlertCircle, Camera, Smartphone, Globe, ShieldCheck, Zap, Lock } from 'lucide-react';
 
 export default function ScanQr() {
   const { t } = useTranslation();
   
   const [isScanning, setIsScanning] = useState(false);
   const [scanResult, setScanResult] = useState('');
+  const [decodeMeta, setDecodeMeta] = useState(null); // { format, timeMs, engine }
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
   
   const html5QrCode = useRef(null);
   const fileInputRef = useRef(null);
+
+  const stopScanner = useCallback(() => {
+    if (html5QrCode.current && html5QrCode.current.isScanning) {
+      html5QrCode.current.stop().catch(console.error);
+    }
+  }, []);
+
+  const startScanner = useCallback(async () => {
+    try {
+      if (!html5QrCode.current) {
+        html5QrCode.current = new Html5Qrcode("reader");
+      }
+      await html5QrCode.current.start(
+        { facingMode: "environment" },
+        { fps: 12, qrbox: { width: 250, height: 250 } },
+        (decodedText) => {
+          setScanResult(decodedText);
+          setDecodeMeta({ format: 'QRCode', timeMs: null, engine: 'Camera Stream' });
+          setIsScanning(false);
+          setError('');
+        },
+        () => {}
+      );
+    } catch {
+      setError(t("scanqr.workspace.errCam", "Failed to start camera. Please ensure you have granted camera permissions."));
+      setIsScanning(false);
+    }
+  }, [t]);
 
   useEffect(() => {
     if (isScanning) {
@@ -23,52 +52,39 @@ export default function ScanQr() {
     return () => {
       stopScanner();
     };
-  }, [isScanning]);
-
-  const startScanner = async () => {
-    try {
-      if (!html5QrCode.current) {
-        html5QrCode.current = new Html5Qrcode("reader");
-      }
-      await html5QrCode.current.start(
-        { facingMode: "environment" },
-        { fps: 10, qrbox: { width: 250, height: 250 } },
-        (decodedText) => {
-          setScanResult(decodedText);
-          setIsScanning(false);
-          setError('');
-        },
-        (errorMessage) => {
-          // Ignore frequent scanning errors
-        }
-      );
-    } catch (err) {
-      setError(t("scanqr.workspace.errCam", "Failed to start camera. Please ensure you have granted camera permissions."));
-      setIsScanning(false);
-    }
-  };
-
-  const stopScanner = () => {
-    if (html5QrCode.current && html5QrCode.current.isScanning) {
-      html5QrCode.current.stop().catch(console.error);
-    }
-  };
+  }, [isScanning, startScanner, stopScanner]);
 
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
     if (!file) return;
-    
+
     try {
-      // Create a fresh instance for file uploads to avoid conflicts with camera scanner state
+      // Primary: Ultra-fast ZXing-C++ WebAssembly decoder
+      const { decodeFileWithWasm } = await import('../utils/zxingEngine');
+      const { results, timeMs } = await decodeFileWithWasm(file);
+      if (results.length > 0) {
+        setScanResult(results[0].text);
+        setDecodeMeta({ format: results[0].format, timeMs, engine: 'ZXing-WASM' });
+        setError('');
+        event.target.value = '';
+        return;
+      }
+    } catch (wasmErr) {
+      console.warn('WASM decode fallback to html5-qrcode:', wasmErr);
+    }
+
+    try {
       const fileScanner = new Html5Qrcode("reader-hidden");
       const decodedText = await fileScanner.scanFile(file, true);
       setScanResult(decodedText);
+      setDecodeMeta({ format: 'QRCode', timeMs: null, engine: 'HTML5 Scanner' });
       setError('');
-    } catch (err) {
+    } catch {
       setError(t("scanqr.workspace.errImg", "No QR code found in the image. Please try another image."));
       setScanResult('');
+      setDecodeMeta(null);
     }
-    
+
     event.target.value = '';
   };
 
@@ -199,6 +215,17 @@ export default function ScanQr() {
 
                 {scanResult ? (
                   <div className="flex-1 flex flex-col">
+                    {decodeMeta && (
+                      <div className="flex flex-wrap items-center gap-2 mb-3">
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-700 dark:text-blue-300 border border-blue-500/20 text-xs font-bold">
+                          {decodeMeta.format}
+                        </span>
+                        <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20 text-xs font-semibold">
+                          <Zap className="w-3 h-3" />
+                          {decodeMeta.timeMs ? `${decodeMeta.engine} (${decodeMeta.timeMs}ms)` : decodeMeta.engine}
+                        </span>
+                      </div>
+                    )}
                     <div className="bg-white dark:bg-[#0a1128] border border-blue-200 dark:border-blue-500/30 rounded-2xl p-6 mb-8 flex-1 shadow-sm">
                       <p className="text-slate-800 dark:text-blue-100 font-mono break-all text-lg leading-relaxed">
                         {scanResult}

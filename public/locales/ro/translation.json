@@ -127,7 +127,15 @@
     "eyeColor": "Culoarea ochilor",
     "gradient": "Utilizați gradient",
     "logoSize": "Dimensiune logo",
-    "logoMargin": "Marja logo"
+    "logoMargin": "Marja logo",
+    "studioThemes": "Teme Studio & Rame CTA",
+    "quickPresets": "Palete Design 1-Click",
+    "ctaFrameLabel": "Ramă Prezentare CTA",
+    "frameText": "Text Ramă",
+    "frameColor": "Culoare Accent Ramă",
+    "eyeOuterColor": "Culoare Exterioară Ochi",
+    "eyeInnerColor": "Culoare Interioară Pupilă",
+    "cornerDotStyle": "Formă Pupilă"
   },
   "preview": {
     "title": "Previzualizare cod QR",
@@ -137,7 +145,11 @@
     "readyDesc": "Creează Coduri QR cu Logo și Culoare - Fără Înregistrare, Nelimitat",
     "clientSide": "Client generat",
     "noServer": "Nu au fost trimise date către server",
-    "printStudioBtn": "Imprimare / Foaie de autocolante A4 PDF"
+    "printStudioBtn": "Imprimare / Foaie de autocolante A4 PDF",
+    "printBtnShort": "Printează Foaie PDF",
+    "mockupBtnShort": "Studio Mockup 3D",
+    "isoGradePass": "Grad ISO {{grade}} • Scanabil ({{ms}}ms)",
+    "isoGradeWarn": "Contrast scăzut sau logo prea dens"
   },
   "footer": {
     "privacy": "Politica de confidențialitate",
@@ -1406,11 +1418,11 @@
       "monthlyDesc": "Flexibilitate deplină pentru profesioniști, designeri și companii active.",
       "monthlyCta": "Obțineți Pro lunar",
       "monthlyF1": "Acces complet conectat la toate cele 4 aplicații web",
-      "monthlyF2": "Exporturi SVG vectoriale de înaltă rezoluție și PDF gata de imprimare",
-      "monthlyF3": "Brand personalizat, logo-ul companiei și paleta de gradient de culoare",
-      "monthlyF4": "Suită de generare QR și coduri de bare în loturi",
-      "monthlyF5": "Licență de utilizare a proiectelor comerciale și client",
-      "monthlyF6": "Procesare prioritară și asistență rapidă pentru clienți",
+      "monthlyF2": "Export Vector SVG, AutoCAD DXF (Laser/CNC) și Adobe EPS",
+      "monthlyF3": "20+ Coduri Industriale (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "Studio Mockup 3D, Rame CTA și Ochi Bicolori",
+      "monthlyF5": "Studio Printare A4 (Avery + Semne tăiere) & Batch CSV ZIP",
+      "monthlyF6": "Audit WASM Grad ISO și Licență Comercială",
       "annualTitle": "Plan anual",
       "annualBadge": "Cele mai populare",
       "annualSavings": "Economisiți 34%",
@@ -1420,7 +1432,7 @@
       "annualCta": "Obțineți anual Pro",
       "annualF1": "Acces complet conectat la toate cele 4 aplicații web",
       "annualF2": "Totul este inclus în Planul lunar",
-      "annualF3": "Economisiți 34% în comparație cu facturarea lunară obișnuită",
+      "annualF3": "Economisește 34% + Audit WASM Grad ISO și Licență Comercială",
       "annualF4": "Puncte personalizate avansate, forme de colț și modele de ochi",
       "annualF5": "Descărcări de raster SVG și 4K vectoriale de înaltă DPI",
       "annualF6": "Asistență dedicată clienților cu prioritate 24/7",
@@ -1433,8 +1445,8 @@
       "lifetimeF1": "Acces pe viață la toate cele 4 aplicații web",
       "lifetimeF2": "Aplicație desktop dedicată Windows inclusă (nativă offline)",
       "lifetimeF3": "Aplicație mobilă (Android APK și iOS) inclusă",
-      "lifetimeF4": "Toate actualizările viitoare, instrumentele și caracteristicile majore incluse pentru totdeauna",
-      "lifetimeF5": "Insigna de fondator VIP și acces exclusiv la comunitate",
+      "lifetimeF4": "Toate motoarele Pro pe viață: BWIPP 2D, DXF CAD, Mockup 3D",
+      "lifetimeF5": "Toate actualizările viitoare și insigna VIP Founder",
       "lifetimeF6": "Canal direct de asistență pentru dezvoltatori VIP 1-la-1",
       "faqTitle": "Întrebări frecvente",
       "faq1Q": "Toate pachetele de prețuri sunt într-adevăr în USD?",
@@ -1824,13 +1836,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vector SVG, DXF CAD & Mockup 3D:",
+    "f2Text": "Exportă EPS tipar, DXF laser, 20+ coduri industriale, rame CTA și mockup-uri 3D 1400px.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "Export AutoCAD DXF Tăiere Laser",
+    "epsFeature": "Export Vectorial Adobe EPS",
+    "frameFeature": "Export Ramă CTA Personalizată",
+    "mockupFeature": "Studio Mockup 3D Realist",
+    "enterpriseBarcodeFeature": "Export Coduri 2D / Industriale Pro"
   },
   "proMicro": {
     "guestBadge": "✨ 2 exporturi gratuite",
@@ -1887,5 +1904,13 @@
     "venmo": "Link direct la contul tău Venmo pentru transferuri rapide.",
     "location": "Deschide latitudinea și longitudinea direct în Google Maps sau Apple Maps.",
     "event": "Permite participanților să adauge acest eveniment în calendarul lor cu o singură atingere."
+  },
+  "mockup": {
+    "badge": "Motor Mockup 3D",
+    "title": "Studio Mockup Realist",
+    "subtitle": "Previzualizează și exportă mockup-uri comerciale 1400px randate 100% local în browser.",
+    "sceneLabel": "Selectează Scena",
+    "captionLabel": "Text Subtitlu",
+    "downloadBtn": "Descarcă PNG 1400px"
   }
 }

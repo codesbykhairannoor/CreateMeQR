@@ -33,7 +33,8 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUs
     imageOptions: { hideBackgroundDots: true, imageSize: 0.4, margin: 10 },
     cornersSquareOptions: { type: 'square', color: '#0a1930' },
     cornersDotOptions: { type: 'square', color: '#0a1930' },
-    qrOptions: { errorCorrectionLevel: 'Q' }
+    qrOptions: { errorCorrectionLevel: 'Q' },
+    frameOptions: { style: 'none', text: 'SCAN ME', color: '#1d4ed8', textColor: '#ffffff' }
   });
 
   useEffect(() => {

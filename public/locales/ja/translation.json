@@ -128,7 +128,15 @@
     "eyeColor": "目の色",
     "gradient": "グラデーションを使用",
     "logoSize": "ロゴのサイズ",
-    "logoMargin": "ロゴの余白"
+    "logoMargin": "ロゴの余白",
+    "studioThemes": "スタジオテーマ & CTAフレーム",
+    "quickPresets": "ワンクリックカラーパレット",
+    "ctaFrameLabel": "CTAショーケースフレーム",
+    "frameText": "フレームテキスト",
+    "frameColor": "フレームアクセント色",
+    "eyeOuterColor": "外枠アイカラー",
+    "eyeInnerColor": "内側アイカラー",
+    "cornerDotStyle": "内側アイの形状"
   },
   "preview": {
     "title": "QRコードプレビュー",
@@ -138,7 +146,11 @@
     "readyDesc": "左側の詳細を入力し、「QRコードを作成」をクリックすると、ここにプレビューが表示されます。",
     "clientSide": "ブラウザ内で安全に生成",
     "noServer": "サーバーへのデータ送信なし",
-    "printStudioBtn": "印刷・A4ステッカーシートPDF"
+    "printStudioBtn": "印刷・A4ステッカーシートPDF",
+    "printBtnShort": "PDFシート印刷",
+    "mockupBtnShort": "3Dモックアップ",
+    "isoGradePass": "ISO等級 {{grade}} • 読取可能 ({{ms}}ms)",
+    "isoGradeWarn": "コントラスト不足またはロゴが大きすぎます"
   },
   "footer": {
     "privacy": "プライバシーポリシー",
@@ -1464,11 +1476,11 @@
       "monthlyDesc": "専門家、デザイナー、アクティブなビジネス向けの完全な柔軟性。",
       "monthlyCta": "月刊 Pro を入手",
       "monthlyF1": "4 つの Web アプリすべてにフル アクセスで接続",
-      "monthlyF2": "高解像度ベクター SVG および印刷対応 PDF エクスポート",
-      "monthlyF3": "カスタムブランディング、会社ロゴ、カラーグラデーションパレット",
-      "monthlyF4": "バッチ QR およびバーコード生成スイート",
-      "monthlyF5": "商用およびクライアント プロジェクトの使用ライセンス",
-      "monthlyF6": "優先処理と迅速な顧客サポート",
+      "monthlyF2": "SVGベクター・AutoCAD DXF(レーザー/CNC)・Adobe EPS出力",
+      "monthlyF3": "20+ 産業用バーコード (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3Dモックアップスタジオ・CTAフレーム・2色アイデザイン",
+      "monthlyF5": "A4印刷スタジオ(Avery対応・トンボ) & CSV一括ZIP生成",
+      "monthlyF6": "ISO等級WASMスキャン監査 & 商用ライセンス",
       "annualTitle": "年間計画",
       "annualBadge": "最も人気のある",
       "annualSavings": "34% 割引",
@@ -1478,7 +1490,7 @@
       "annualCta": "年間プロを入手",
       "annualF1": "4 つの Web アプリすべてにフル アクセスで接続",
       "annualF2": "月額プランに含まれるすべて",
-      "annualF3": "通常の月々の請求と比較して 34% 節約",
+      "annualF3": "34%オフ + ISO等級WASMスキャン監査 & 商用ライセンス",
       "annualF4": "高度なカスタム ドット、コーナー形状、アイ パターン",
       "annualF5": "高 DPI ベクター SVG および 4K ラスターの一括ダウンロード",
       "annualF6": "24 時間年中無休の優先カスタマーサポート",
@@ -1491,8 +1503,8 @@
       "lifetimeF1": "4 つの Web アプリすべてに永久にアクセス",
       "lifetimeF2": "専用の Windows デスクトップ アプリが付属 (ネイティブ オフライン)",
       "lifetimeF3": "モバイルアプリ (Android APK および iOS) が含まれています",
-      "lifetimeF4": "今後のアップデート、ツール、主要な機能はすべて永久に含まれます",
-      "lifetimeF5": "VIP 創設者バッジと限定コミュニティ アクセス",
+      "lifetimeF4": "全Proエンジン永久利用: BWIPP 2D・DXF CAD・3Dモックアップ・フレーム",
+      "lifetimeF5": "今後の全アップデート・新エンジン・VIP Founderバッジ",
       "lifetimeF6": "直接 1 対 1 の VIP 開発者サポート チャネル",
       "faqTitle": "よくある質問",
       "faq1Q": "すべての価格設定パッケージは本当に米ドルですか?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "4-in-1 連携エコシステムが含まれます：",
     "f1Bold": "4 つの Web アプリが 1 つに：",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia。",
-    "f2Bold": "高解像度ベクター SVG & PDF：",
-    "f2Text": "商業パッケージや看板印刷に最適な無劣化フォーマット。",
+    "f2Bold": "SVGベクター・DXF CAD・3Dモックアップ:",
+    "f2Text": "印刷用EPS、レーザーDXF、20種類以上の産業用バーコード(DataMatrix/PDF417)、CTAフレーム、1400px 3Dモックアップ出力。",
     "f3Bold": "100% クライアントサイドのプライバシー：",
     "f3Text": "サーバー保管ゼロ、サードパーティ追跡ゼロ、完全な ISO 規格準拠。",
     "upgradeBtn": "PRO & Founder プランを見る",
     "signInBtn": "ログイン / PRO にアップグレード",
-    "closeBtn": "後で"
+    "closeBtn": "後で",
+    "dxfFeature": "AutoCAD DXF レーザー加工出力",
+    "epsFeature": "Adobe Illustrator EPS出力",
+    "frameFeature": "カスタムCTAフレーム出力",
+    "mockupFeature": "リアル3Dモックアップスタジオ",
+    "enterpriseBarcodeFeature": "エンタープライズ2D/産業バーコード出力"
   },
   "proMicro": {
     "guestBadge": "✨ 2回無料エクスポート",
@@ -2056,5 +2073,13 @@
     "venmo": "Venmo アカウントに直接リンクすると、迅速な送金が可能になります。",
     "location": "Google マップまたは Apple マップで緯度と経度を直接開きます。",
     "event": "出席者は 1 タップでこのイベントを自分のカレンダーに追加できます。"
+  },
+  "mockup": {
+    "badge": "3Dモックアップエンジン",
+    "title": "リアル3Dモックアップスタジオ",
+    "subtitle": "ブラウザ内で100%ローカル生成される1400px商用モックアップをプレビュー＆保存。",
+    "sceneLabel": "シーンを選択",
+    "captionLabel": "キャプションテキスト",
+    "downloadBtn": "1400px PNGをダウンロード"
   }
 }

@@ -128,7 +128,15 @@
     "eyeColor": "Colore degli occhi",
     "gradient": "Usa gradiente",
     "logoSize": "Dimensione logo",
-    "logoMargin": "Margine del logo"
+    "logoMargin": "Margine del logo",
+    "studioThemes": "Temi Studio e Cornici CTA",
+    "quickPresets": "Palette Design 1-Clic",
+    "ctaFrameLabel": "Cornice Showcase CTA",
+    "frameText": "Testo della Cornice",
+    "frameColor": "Colore Accento Cornice",
+    "eyeOuterColor": "Colore Esterno Occhio",
+    "eyeInnerColor": "Colore Interno Pupilla",
+    "cornerDotStyle": "Forma della Pupilla"
   },
   "preview": {
     "title": "Anteprima del codice QR",
@@ -138,7 +146,11 @@
     "readyDesc": "Crea Codici QR con Logo e Colore - Senza Registrazione, Illimitato",
     "clientSide": "Generato lato client",
     "noServer": "Nessun dato inviato al server",
-    "printStudioBtn": "Stampa/Foglio di adesivi A4 PDF"
+    "printStudioBtn": "Stampa/Foglio di adesivi A4 PDF",
+    "printBtnShort": "Stampa Foglio PDF",
+    "mockupBtnShort": "Studio Mockup 3D",
+    "isoGradePass": "Grado ISO {{grade}} • Scansionabile ({{ms}}ms)",
+    "isoGradeWarn": "Contrasto basso o logo troppo denso rilevato"
   },
   "footer": {
     "privacy": "Informativa sulla privacy",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Piena flessibilità per professionisti, progettisti e imprese attive.",
       "monthlyCta": "Ottieni Pro mensile",
       "monthlyF1": "Connesso accesso completo a tutte e 4 le app Web",
-      "monthlyF2": "Esportazioni SVG vettoriali ad alta risoluzione e PDF pronti per la stampa",
-      "monthlyF3": "Marchio personalizzato, logo aziendale e tavolozza di sfumature di colore",
-      "monthlyF4": "Suite di generazione batch di codici QR e codici a barre",
-      "monthlyF5": "Licenza di utilizzo di progetti commerciali e clienti",
-      "monthlyF6": "Elaborazione prioritaria e assistenza clienti rapida",
+      "monthlyF2": "Esportazioni Vettore SVG, AutoCAD DXF (Laser/CNC) e Adobe EPS",
+      "monthlyF3": "+20 Codici Industriali (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "Studio Mockup 3D, Cornici CTA e Occhi Bicolore",
+      "monthlyF5": "Studio Stampa A4 (Avery + Crocini) e Batch CSV ZIP",
+      "monthlyF6": "Audit WASM Grado ISO e Licenza Commerciale",
       "annualTitle": "Piano annuale",
       "annualBadge": "I più popolari",
       "annualSavings": "Risparmia il 34%",
@@ -1481,7 +1493,7 @@
       "annualCta": "Ottieni Pro annuale",
       "annualF1": "Connesso accesso completo a tutte e 4 le app Web",
       "annualF2": "Tutto incluso nel Piano Mensile",
-      "annualF3": "Risparmia il 34% rispetto alla normale fatturazione mensile",
+      "annualF3": "Risparmia 34% + Audit WASM Grado ISO e Licenza Commerciale",
       "annualF4": "Punti personalizzati avanzati, forme degli angoli e motivi degli occhi",
       "annualF5": "Download in blocco di SVG vettoriali a DPI elevato e raster 4K",
       "annualF6": "Assistenza clienti dedicata prioritaria 24 ore su 24, 7 giorni su 7",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Accesso a vita a tutte e 4 le app Web",
       "lifetimeF2": "App desktop Windows dedicata inclusa (nativa offline)",
       "lifetimeF3": "App mobile (APK Android e iOS) inclusa",
-      "lifetimeF4": "Tutti gli aggiornamenti futuri, gli strumenti e le principali funzionalità saranno inclusi per sempre",
-      "lifetimeF5": "Badge Fondatore VIP e accesso esclusivo alla community",
+      "lifetimeF4": "Tutti i motori Pro per sempre: BWIPP 2D, DXF CAD, Mockup 3D e Cornici",
+      "lifetimeF5": "Tutti gli aggiornamenti futuri, motori e badge VIP Founder",
       "lifetimeF6": "Canale di supporto diretto per sviluppatori VIP 1 a 1",
       "faqTitle": "Domande frequenti",
       "faq1Q": "Tutti i pacchetti tariffari sono davvero in USD?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vettori SVG, CAD DXF e Mockup 3D:",
+    "f2Text": "Esporta EPS stampa, DXF laser, +20 codici industriali (DataMatrix/PDF417), cornici CTA e mockup 3D 1400px.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "Esportazione Taglio Laser AutoCAD DXF",
+    "epsFeature": "Esportazione Vettoriale Adobe EPS",
+    "frameFeature": "Esportazione Cornice CTA Personalizzata",
+    "mockupFeature": "Studio Mockup 3D Realistico",
+    "enterpriseBarcodeFeature": "Esportazione Codici 2D / Industriali Pro"
   },
   "proMicro": {
     "guestBadge": "✨ 2 esportazioni gratuite",
@@ -2056,5 +2073,13 @@
     "venmo": "Collegamento diretto al tuo account Venmo per trasferimenti rapidi.",
     "location": "Apre latitudine e longitudine direttamente in Google Maps o Apple Maps.",
     "event": "Consente ai partecipanti di aggiungere questo evento al proprio calendario con 1 tocco."
+  },
+  "mockup": {
+    "badge": "Motore Mockup 3D",
+    "title": "Studio Mockup Realistico",
+    "subtitle": "Anteprima ed esportazione di mockup commerciali 1400px renderizzati al 100% localmente nel browser.",
+    "sceneLabel": "Seleziona Scena Mockup",
+    "captionLabel": "Testo Didascalia",
+    "downloadBtn": "Scarica PNG 1400px"
   }
 }

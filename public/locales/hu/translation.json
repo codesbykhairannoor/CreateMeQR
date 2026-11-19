@@ -127,7 +127,15 @@
     "eyeColor": "Szemszín",
     "gradient": "Gradiens használata",
     "logoSize": "Logó mérete",
-    "logoMargin": "Logó margója"
+    "logoMargin": "Logó margója",
+    "studioThemes": "Stúdió témák és CTA keretek",
+    "quickPresets": "1-kattintásos paletták",
+    "ctaFrameLabel": "CTA bemutató keret",
+    "frameText": "Keret szövege",
+    "frameColor": "Keret kiemelő színe",
+    "eyeOuterColor": "Külső szem színe",
+    "eyeInnerColor": "Belső pupilla színe",
+    "cornerDotStyle": "Pupilla alakja"
   },
   "preview": {
     "title": "QR-kód előnézet",
@@ -137,7 +145,11 @@
     "readyDesc": "Készítsen QR-kódokat Logóval és Színnel - Regisztráció Nélkül, Korlátlanul",
     "clientSide": "Ügyféloldali generált",
     "noServer": "Nincs adat küldve a szerverre",
-    "printStudioBtn": "Nyomtatás / A4-es matricalap PDF"
+    "printStudioBtn": "Nyomtatás / A4-es matricalap PDF",
+    "printBtnShort": "PDF lap nyomtatása",
+    "mockupBtnShort": "3D Mockup Stúdió",
+    "isoGradePass": "ISO minősítés {{grade}} • Beolvasható ({{ms}}ms)",
+    "isoGradeWarn": "Alacsony kontraszt vagy túl sűrű logó"
   },
   "footer": {
     "privacy": "Adatvédelmi szabályzat",
@@ -1406,11 +1418,11 @@
       "monthlyDesc": "Teljes rugalmasság szakemberek, tervezők és aktív vállalkozások számára.",
       "monthlyCta": "Get Monthly Pro",
       "monthlyF1": "Teljes hozzáférés csatlakoztatva mind a 4 webalkalmazáshoz",
-      "monthlyF2": "Nagy felbontású Vector SVG és nyomtatásra kész PDF export",
-      "monthlyF3": "Egyedi márkajelzés, céglogó és színátmenet paletta",
-      "monthlyF4": "Batch QR és vonalkód generáló csomag",
-      "monthlyF5": "Kereskedelmi és ügyfélprojekt használati engedély",
-      "monthlyF6": "Elsőbbségi feldolgozás és gyors ügyfélszolgálat",
+      "monthlyF2": "Vektor SVG, AutoCAD DXF (Lézer/CNC) és Adobe EPS export",
+      "monthlyF3": "20+ Ipari Vonalkód (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D Mockup Stúdió, CTA keretek és kétszínű szemek",
+      "monthlyF5": "A4 Nyomtató Stúdió (Avery + vágójelek) és Kötegelt CSV ZIP",
+      "monthlyF6": "ISO WASM minőségellenőrzés és kereskedelmi licenc",
       "annualTitle": "Éves terv",
       "annualBadge": "Legnépszerűbb",
       "annualSavings": "34% megtakarítás",
@@ -1420,7 +1432,7 @@
       "annualCta": "Szerezze be az Annual Pro-t",
       "annualF1": "Teljes hozzáférés csatlakoztatva mind a 4 webalkalmazáshoz",
       "annualF2": "Minden, amit a havi terv tartalmazza",
-      "annualF3": "Takarítson meg 34%-ot a normál havi számlázáshoz képest",
+      "annualF3": "34% megtakarítás + ISO WASM minőségellenőrzés és kereskedelmi licenc",
       "annualF4": "Speciális egyéni pontok, sarokformák és szemminták",
       "annualF5": "Tömeges nagy DPI-s vektoros SVG és 4K raszterletöltések",
       "annualF6": "Kiemelt, napi 24 órában elérhető ügyfélszolgálat",
@@ -1433,8 +1445,8 @@
       "lifetimeF1": "Életre szóló hozzáférés mind a 4 webalkalmazáshoz",
       "lifetimeF2": "Dedikált Windows asztali alkalmazás tartalmazza (natív offline)",
       "lifetimeF3": "Mobilalkalmazás (Android APK és iOS) tartalmazza",
-      "lifetimeF4": "Az összes jövőbeli frissítés, eszköz és főbb funkció örökre tartalmazza",
-      "lifetimeF5": "VIP alapítói jelvény és exkluzív közösségi hozzáférés",
+      "lifetimeF4": "Minden Pro motor örökre: BWIPP 2D, DXF CAD, 3D Mockupok",
+      "lifetimeF5": "Minden jövőbeli frissítés és VIP Founder jelvény",
       "lifetimeF6": "Közvetlen egy az egyben VIP fejlesztői támogatási csatorna",
       "faqTitle": "Gyakran Ismételt Kérdések",
       "faq1Q": "Valóban minden árcsomag USD-ben van megadva?",
@@ -1848,13 +1860,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vektor SVG, DXF CAD és 3D Mockupok:",
+    "f2Text": "Exportáljon nyomdai EPS-t, lézeres DXF-et, 20+ ipari vonalkódot, CTA kereteket és 1400px 3D mockupot.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "AutoCAD DXF lézervágó export",
+    "epsFeature": "Adobe Illustrator EPS export",
+    "frameFeature": "Egyedi CTA keret export",
+    "mockupFeature": "Valósághű 3D Mockup Stúdió",
+    "enterpriseBarcodeFeature": "Vállalati 2D / Ipari vonalkód export"
   },
   "proMicro": {
     "guestBadge": "✨ 2 ingyenes exportálás",
@@ -1911,5 +1928,13 @@
     "venmo": "Közvetlen link a Venmo-fiókjához a gyors átutalások érdekében.",
     "location": "Közvetlenül megnyitja a szélességi és hosszúsági fokokat a Google Térképen vagy az Apple Mapsben.",
     "event": "Lehetővé teszi a résztvevők számára, hogy 1 érintéssel hozzáadják ezt az eseményt a naptárukhoz."
+  },
+  "mockup": {
+    "badge": "3D Mockup Motor",
+    "title": "Valósághű 3D Mockup Stúdió",
+    "subtitle": "Tekintse meg és exportálja a böngészőben 100%-ban helyben renderelt 1400px-es látványterveket.",
+    "sceneLabel": "Jelenet kiválasztása",
+    "captionLabel": "Felirat szövege",
+    "downloadBtn": "1400px PNG letöltése"
   }
 }

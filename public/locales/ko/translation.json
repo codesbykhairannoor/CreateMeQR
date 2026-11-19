@@ -128,7 +128,15 @@
     "eyeColor": "눈 색상",
     "gradient": "그라데이션 사용",
     "logoSize": "로고 크기",
-    "logoMargin": "로고 여백"
+    "logoMargin": "로고 여백",
+    "studioThemes": "스튜디오 테마 & CTA 프레임",
+    "quickPresets": "원클릭 디자이너 팔레트",
+    "ctaFrameLabel": "CTA 쇼케이스 프레임",
+    "frameText": "프레임 문구",
+    "frameColor": "프레임 강조 색상",
+    "eyeOuterColor": "모서리 외부 색상",
+    "eyeInnerColor": "모서리 내부 색상",
+    "cornerDotStyle": "모서리 내부 모양"
   },
   "preview": {
     "title": "QR 코드 미리보기",
@@ -138,7 +146,11 @@
     "readyDesc": "왼쪽에 정보를 입력하고 \"QR 코드 생성\"을 클릭하면 여기에 미리보기가 표시됩니다.",
     "clientSide": "브라우저에서 로컬로 생성됨",
     "noServer": "서버로 전송되는 데이터 없음",
-    "printStudioBtn": "인쇄 / A4 스티커 시트 PDF"
+    "printStudioBtn": "인쇄 / A4 스티커 시트 PDF",
+    "printBtnShort": "라벨 PDF 인쇄",
+    "mockupBtnShort": "3D 목업 스튜디오",
+    "isoGradePass": "ISO 등급 {{grade}} • 스캔 가능 ({{ms}}ms)",
+    "isoGradeWarn": "대비가 낮거나 로고가 너무 큽니다"
   },
   "footer": {
     "privacy": "개인정보 처리방침",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "전문가, 디자이너, 활동적인 비즈니스를 위한 완벽한 유연성.",
       "monthlyCta": "월간 프로 받기",
       "monthlyF1": "4개의 웹 앱 모두에 대한 전체 액세스 연결",
-      "monthlyF2": "고해상도 벡터 SVG 및 인쇄용 PDF 내보내기",
-      "monthlyF3": "맞춤형 브랜딩, 회사 로고 및 색상 그라데이션 팔레트",
-      "monthlyF4": "일괄 QR 및 바코드 생성 제품군",
-      "monthlyF5": "상업 및 클라이언트 프로젝트 사용 라이센스",
-      "monthlyF6": "우선 처리 및 빠른 고객 지원",
+      "monthlyF2": "SVG 벡터, AutoCAD DXF(레이저/CNC) & Adobe EPS 내보내기",
+      "monthlyF3": "20+ 산업용 바코드 (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D 목업 스튜디오, CTA 프레임 & 듀얼톤 코너 디자인",
+      "monthlyF5": "A4 인쇄 스튜디오(Avery + 재단선) & CSV 일괄 ZIP",
+      "monthlyF6": "ISO 등급 WASM 스캔 감사 & 상업용 라이선스",
       "annualTitle": "연간 계획",
       "annualBadge": "가장 인기 있는",
       "annualSavings": "34% 할인",
@@ -1481,7 +1493,7 @@
       "annualCta": "연간 Pro 받기",
       "annualF1": "4개의 웹 앱 모두에 대한 전체 액세스 연결",
       "annualF2": "월간 요금제에 포함된 모든 것",
-      "annualF3": "일반 월별 청구 대비 34% 절감",
+      "annualF3": "34% 할인 + ISO 등급 WASM 스캔 감사 & 상업용 라이선스",
       "annualF4": "고급 맞춤형 도트, 모서리 모양 및 눈 패턴",
       "annualF5": "대량의 높은 DPI 벡터 SVG 및 4K 래스터 다운로드",
       "annualF6": "연중무휴 24시간 전담 고객 지원",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "4개의 웹 앱 모두에 평생 액세스",
       "lifetimeF2": "전용 Windows 데스크톱 앱 포함(기본 오프라인)",
       "lifetimeF3": "모바일 앱(Android APK 및 iOS) 포함",
-      "lifetimeF4": "향후 모든 업데이트, 도구 및 주요 기능이 영원히 포함됩니다",
-      "lifetimeF5": "VIP 창립자 배지 및 독점 커뮤니티 액세스",
+      "lifetimeF4": "모든 Pro 엔진 평생 이용: BWIPP 2D, DXF CAD, 3D 목업 & 프레임",
+      "lifetimeF5": "향후 모든 업데이트, 새 엔진 & VIP Founder 배지",
       "lifetimeF6": "직접 1:1 VIP 개발자 지원 채널",
       "faqTitle": "자주 묻는 질문",
       "faq1Q": "모든 가격 패키지가 실제로 USD로 표시되나요?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "SVG 벡터, DXF CAD 및 3D 목업:",
+    "f2Text": "인쇄용 EPS, 레이저 DXF, 20+ 산업용 바코드(DataMatrix/PDF417), CTA 프레임 및 1400px 3D 목업 내보내기.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "AutoCAD DXF 레이저 커팅 내보내기",
+    "epsFeature": "Adobe Illustrator EPS 내보내기",
+    "frameFeature": "맞춤형 CTA 프레임 내보내기",
+    "mockupFeature": "실사 3D 목업 스튜디오",
+    "enterpriseBarcodeFeature": "엔터프라이즈 2D / 산업용 바코드 내보내기"
   },
   "proMicro": {
     "guestBadge": "✨ 무료 내보내기 2회 제공",
@@ -2056,5 +2073,13 @@
     "venmo": "빠른 이체를 위해 Venmo 계정에 직접 연결하세요.",
     "location": "Google 지도 또는 Apple 지도에서 직접 위도와 경도를 엽니다.",
     "event": "참석자가 탭 한 번으로 이 이벤트를 캘린더에 추가할 수 있습니다."
+  },
+  "mockup": {
+    "badge": "3D 목업 엔진",
+    "title": "실사 3D 목업 스튜디오",
+    "subtitle": "브라우저에서 100% 로컬 렌더링되는 고해상도 1400px 상업용 목업을 미리보고 다운로드하세요.",
+    "sceneLabel": "목업 장면 선택",
+    "captionLabel": "장면 캡션 텍스트",
+    "downloadBtn": "1400px PNG 다운로드"
   }
 }

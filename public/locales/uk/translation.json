@@ -128,7 +128,15 @@
     "eyeColor": "Колір очей",
     "gradient": "Використовуйте градієнт",
     "logoSize": "Розмір логотипу",
-    "logoMargin": "Поле логотипу"
+    "logoMargin": "Поле логотипу",
+    "studioThemes": "Теми Студії та Рамки CTA",
+    "quickPresets": "Палітри в 1 клік",
+    "ctaFrameLabel": "Рамка-вітрина CTA",
+    "frameText": "Текст на рамці",
+    "frameColor": "Колір акценту рамки",
+    "eyeOuterColor": "Зовнішній колір міток",
+    "eyeInnerColor": "Внутрішній колір міток",
+    "cornerDotStyle": "Форма центру міток"
   },
   "preview": {
     "title": "Попередній перегляд QR-коду",
@@ -138,7 +146,11 @@
     "readyDesc": "Створюйте QR-коди з Логотипом і Кольором - Без Реєстрації, Безлімітно",
     "clientSide": "Створено на стороні клієнта",
     "noServer": "Дані не надіслано на сервер",
-    "printStudioBtn": "Друк / аркуш наклейок A4 PDF"
+    "printStudioBtn": "Друк / аркуш наклейок A4 PDF",
+    "printBtnShort": "Друк аркуша PDF",
+    "mockupBtnShort": "3D Мокап Студія",
+    "isoGradePass": "Клас ISO {{grade}} • Сканується ({{ms}}мс)",
+    "isoGradeWarn": "Низький контраст або завеликий логотип"
   },
   "footer": {
     "privacy": "Політика конфіденційності",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Повна гнучкість для професіоналів, дизайнерів і активного бізнесу.",
       "monthlyCta": "Отримайте щомісячний Pro",
       "monthlyF1": "Підключено повний доступ до всіх 4 веб-додатків",
-      "monthlyF2": "Векторний SVG із високою роздільною здатністю та PDF-файли, готові до друку",
-      "monthlyF3": "Індивідуальне брендування, логотип компанії та кольорова градієнтна палітра",
-      "monthlyF4": "Пакетний пакет генерації QR і штрих-кодів",
-      "monthlyF5": "Ліцензія на використання комерційного та клієнтського проекту",
-      "monthlyF6": "Пріоритетна обробка та швидка підтримка клієнтів",
+      "monthlyF2": "Експорт SVG, AutoCAD DXF (Лазер/ЧПК) та Adobe EPS",
+      "monthlyF3": "20+ промислових кодів (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "Студія 3D-мокапів, рамки CTA та двоколірні мітки",
+      "monthlyF5": "Студія друку A4 (Avery + мітки різу) та пакетний CSV ZIP",
+      "monthlyF6": "WASM-аудит ISO та комерційна ліцензія",
       "annualTitle": "Річний план",
       "annualBadge": "Найпопулярніші",
       "annualSavings": "Знижка 34%",
@@ -1481,7 +1493,7 @@
       "annualCta": "Отримайте річний профі",
       "annualF1": "Підключено повний доступ до всіх 4 веб-додатків",
       "annualF2": "Все включено в місячний план",
-      "annualF3": "Зекономте 34% порівняно зі звичайним щомісячним виставленням рахунків",
+      "annualF3": "Знижка 34% + WASM-аудит ISO та комерційна ліцензія",
       "annualF4": "Удосконалені спеціальні точки, форми кутів і візерунки очей",
       "annualF5": "Масове завантаження векторних SVG і растрових 4K із високою роздільною здатністю",
       "annualF6": "Пріоритетна цілодобова підтримка клієнтів",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Довічний доступ до всіх 4 веб-додатків",
       "lifetimeF2": "Включено спеціальну програму Windows для настільних комп’ютерів (власний офлайн)",
       "lifetimeF3": "Мобільний додаток (Android APK і iOS) включено",
-      "lifetimeF4": "Усі майбутні оновлення, інструменти та основні функції включено назавжди",
-      "lifetimeF5": "VIP-значок засновника та ексклюзивний доступ до спільноти",
+      "lifetimeF4": "Усі Pro-рушії назавжди: BWIPP 2D, DXF CAD, 3D-мокапи та рамки",
+      "lifetimeF5": "Усі майбутні оновлення та значок VIP Founder",
       "lifetimeF6": "Прямий канал підтримки VIP-розробників 1-на-1",
       "faqTitle": "Часті запитання",
       "faq1Q": "Чи справді всі пакети цін у доларах США?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Вектор SVG, DXF CAD та 3D Мокапи:",
+    "f2Text": "Експорт EPS для друку, лазерний DXF, 20+ промислових штрихкодів, рамки CTA та 3D мокапи.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "Експорт AutoCAD DXF для лазерної різки",
+    "epsFeature": "Векторний експорт Adobe EPS",
+    "frameFeature": "Експорт з кастомною CTA-рамкою",
+    "mockupFeature": "Студія 3D-мокапів",
+    "enterpriseBarcodeFeature": "Експорт промислових 2D штрихкодів"
   },
   "proMicro": {
     "guestBadge": "✨ 2 безкоштовні експорти",
@@ -2056,5 +2073,13 @@
     "venmo": "Пряме посилання на ваш обліковий запис Venmo для швидких переказів.",
     "location": "Відкриває широту та довготу безпосередньо в Google Maps або Apple Maps.",
     "event": "Дозволяє учасникам додати цю подію до свого календаря одним дотиком."
+  },
+  "mockup": {
+    "badge": "Рушій 3D Мокапів",
+    "title": "Студія Реалістичних Мокапів",
+    "subtitle": "Створюйте та завантажуйте комерційні мокапи 1400px з рендерингом 100% локально у браузері.",
+    "sceneLabel": "Оберіть сцену",
+    "captionLabel": "Текст підпису",
+    "downloadBtn": "Завантажити PNG 1400px"
   }
 }

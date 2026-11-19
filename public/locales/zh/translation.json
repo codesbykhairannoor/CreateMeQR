@@ -128,7 +128,15 @@
     "eyeColor": "眼睛颜色",
     "gradient": "使用渐变",
     "logoSize": "标志尺寸",
-    "logoMargin": "标志边距"
+    "logoMargin": "标志边距",
+    "studioThemes": "工作室主题与 CTA 边框",
+    "quickPresets": "一键设计师配色",
+    "ctaFrameLabel": "CTA 展示边框",
+    "frameText": "边框提示文字",
+    "frameColor": "边框强调色",
+    "eyeOuterColor": "码眼外框颜色",
+    "eyeInnerColor": "码眼内点颜色",
+    "cornerDotStyle": "码眼内点形状"
   },
   "preview": {
     "title": "二维码预览",
@@ -138,7 +146,11 @@
     "readyDesc": "在左侧填写详细信息，然后点击“生成二维码”即可在此处查看预览。",
     "clientSide": "浏览器本地生成",
     "noServer": "无需发送数据到服务器",
-    "printStudioBtn": "打印 / A4 贴纸 PDF"
+    "printStudioBtn": "打印 / A4 贴纸 PDF",
+    "printBtnShort": "打印 PDF 贴纸",
+    "mockupBtnShort": "3D 样机工作室",
+    "isoGradePass": "ISO 等级 {{grade}} • 可扫描 ({{ms}}ms)",
+    "isoGradeWarn": "对比度过低或标志过大"
   },
   "footer": {
     "privacy": "隐私政策",
@@ -1464,11 +1476,11 @@
       "monthlyDesc": "为专业人士、设计师和活跃企业提供充分的灵活性。",
       "monthlyCta": "获取每月专业版",
       "monthlyF1": "已连接对所有 4 个 Web 应用程序的完全访问权限",
-      "monthlyF2": "高分辨率矢量 SVG 和打印就绪 PDF 导出",
-      "monthlyF3": "定制品牌、公司徽标和颜色渐变调色板",
-      "monthlyF4": "批量 QR 和条形码生成套件",
-      "monthlyF5": "商业和客户项目使用许可证",
-      "monthlyF6": "优先处理和快速客户支持",
+      "monthlyF2": "导出 SVG 矢量、AutoCAD DXF (激光/CNC) 与 Adobe EPS",
+      "monthlyF3": "20+ 工业条码 (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D 样机工作室、CTA 展示边框与双色码眼",
+      "monthlyF5": "A4 打印工作室 (Avery 模板 + 裁切线) 与批量 CSV ZIP",
+      "monthlyF6": "ISO 等级 WASM 扫描质检与商业授权",
       "annualTitle": "年度计划",
       "annualBadge": "最受欢迎",
       "annualSavings": "节省 34%",
@@ -1478,7 +1490,7 @@
       "annualCta": "获取年度专业版",
       "annualF1": "已连接对所有 4 个 Web 应用程序的完全访问权限",
       "annualF2": "每月计划中包含的所有内容",
-      "annualF3": "与定期按月计费相比节省 34%",
+      "annualF3": "立省 34% + ISO 等级 WASM 扫描质检与商业授权",
       "annualF4": "高级定制点、角形状和眼睛图案",
       "annualF5": "批量高 DPI 矢量 SVG 和 4K 光栅下载",
       "annualF6": "优先 24/7 专属客户协助",
@@ -1491,8 +1503,8 @@
       "lifetimeF1": "终身访问所有 4 个 Web 应用程序",
       "lifetimeF2": "包含专用 Windows 桌面应用程序（本机离线）",
       "lifetimeF3": "包括移动应用程序（Android APK 和 iOS）",
-      "lifetimeF4": "永远包含所有未来的更新、工具和主要功能",
-      "lifetimeF5": "VIP 创始人徽章和专属社区访问权限",
+      "lifetimeF4": "永久解锁全部专业引擎：BWIPP 2D、DXF CAD、3D 样机与边框",
+      "lifetimeF5": "未来全部更新、新引擎及 VIP Founder 徽章",
       "lifetimeF6": "直接一对一 VIP 开发者支持通道",
       "faqTitle": "常见问题",
       "faq1Q": "所有定价套餐都是美元吗？",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "包含 4 合 1 联动生态系统：",
     "f1Bold": "4 款网络应用合一：",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG 与 SolveMyMedia。",
-    "f2Bold": "高分辨率矢量 SVG 和 PDF：",
-    "f2Text": "无光栅化限制，满足商业包装与户外巨幅广告需求。",
+    "f2Bold": "SVG 矢量、DXF CAD 与 3D 样机:",
+    "f2Text": "导出印刷 EPS、激光 DXF、20+ 工业条码 (DataMatrix/PDF417)、CTA 边框及 1400px 3D 样机。",
     "f3Bold": "100% 客户端隐私保护：",
     "f3Text": "零服务器存储，零第三方追踪，完全符合 ISO 标准。",
     "upgradeBtn": "查看 PRO 和 Founder 方案",
     "signInBtn": "登录 / 升级至 PRO",
-    "closeBtn": "稍后再说"
+    "closeBtn": "稍后再说",
+    "dxfFeature": "AutoCAD DXF 激光切割导出",
+    "epsFeature": "Adobe Illustrator EPS 矢量导出",
+    "frameFeature": "自定义 CTA 边框导出",
+    "mockupFeature": "实景 3D 样机工作室",
+    "enterpriseBarcodeFeature": "企业级 2D / 工业条码导出"
   },
   "proMicro": {
     "guestBadge": "✨ 赠送2次免费导出",
@@ -2056,5 +2073,13 @@
     "venmo": "直接链接到您的 Venmo 帐户以进行快速转账。",
     "location": "直接在 Google 地图或 Apple 地图中打开纬度和经度。",
     "event": "允许与会者轻按 1 次即可将此活动添加到他们的日历中。"
+  },
+  "mockup": {
+    "badge": "3D 样机引擎",
+    "title": "实景 3D 样机工作室",
+    "subtitle": "在浏览器本地 100% 渲染并导出 1400px 高清商业展示样机。",
+    "sceneLabel": "选择样机场景",
+    "captionLabel": "场景标题文字",
+    "downloadBtn": "下载 1400px PNG"
   }
 }

@@ -128,7 +128,15 @@
     "eyeColor": "Ögonfärg",
     "gradient": "Använd Gradient",
     "logoSize": "Logostorlek",
-    "logoMargin": "Logomarginal"
+    "logoMargin": "Logomarginal",
+    "studioThemes": "Studioteman & CTA-ramar",
+    "quickPresets": "1-Klicks Designpaletter",
+    "ctaFrameLabel": "CTA Visningsram",
+    "frameText": "Ramtext",
+    "frameColor": "Ramens accentfärg",
+    "eyeOuterColor": "Yttre ögonfärg",
+    "eyeInnerColor": "Inre pupillfärg",
+    "cornerDotStyle": "Pupillform"
   },
   "preview": {
     "title": "QR Code Preview",
@@ -138,7 +146,11 @@
     "readyDesc": "Skapa QR-koder med Logotyp & Färg - Utan Registrering, Obegränsat",
     "clientSide": "Genererad på klientsidan",
     "noServer": "Ingen data skickas till servern",
-    "printStudioBtn": "Skriv ut / A4 klistermärke PDF"
+    "printStudioBtn": "Skriv ut / A4 klistermärke PDF",
+    "printBtnShort": "Skriv ut PDF-ark",
+    "mockupBtnShort": "3D Mockup Studio",
+    "isoGradePass": "ISO-klass {{grade}} • Skanningsbar ({{ms}}ms)",
+    "isoGradeWarn": "Låg kontrast eller tät logotyp upptäckt"
   },
   "footer": {
     "privacy": "Sekretesspolicy",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Full flexibilitet för proffs, designers och aktiva företag.",
       "monthlyCta": "Skaffa Monthly Pro",
       "monthlyF1": "Ansluten full åtkomst till alla 4 webbappar",
-      "monthlyF2": "Högupplöst vektor SVG & utskriftsklar PDF-export",
-      "monthlyF3": "Anpassat varumärke, företagslogotyp och färggradientpalett",
-      "monthlyF4": "Batch QR & streckkodsgenereringssvit",
-      "monthlyF5": "Användningslicens för kommersiellt och klientprojekt",
-      "monthlyF6": "Prioriterad bearbetning och snabb kundsupport",
+      "monthlyF2": "Vektor SVG, AutoCAD DXF (Laser/CNC) & Adobe EPS export",
+      "monthlyF3": "20+ Industristreckkoder (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D Mockup Studio, CTA-ramar & Tvåfärgade Ögon",
+      "monthlyF5": "A4 Utskriftsstudio (Avery + Skärmärken) & Batch CSV ZIP",
+      "monthlyF6": "ISO-klass WASM-granskning & Kommersiell Licens",
       "annualTitle": "Årsplan",
       "annualBadge": "Mest populära",
       "annualSavings": "Spara 34 %",
@@ -1481,7 +1493,7 @@
       "annualCta": "Skaffa Annual Pro",
       "annualF1": "Ansluten full åtkomst till alla 4 webbappar",
       "annualF2": "Allt ingår i månadsplanen",
-      "annualF3": "Spara 34 % jämfört med vanlig månadsfakturering",
+      "annualF3": "Spara 34% + ISO-klass WASM-granskning & Kommersiell Licens",
       "annualF4": "Avancerade anpassade prickar, hörnformer och ögonmönster",
       "annualF5": "Bulk hög-DPI vektor SVG & 4K raster nedladdningar",
       "annualF6": "Priority 24/7 dedikerad kundhjälp",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Livstidsåtkomst till alla fyra webbappar",
       "lifetimeF2": "Dedikerad Windows-skrivbordsapp ingår (Native offline)",
       "lifetimeF3": "Mobilapp (Android APK & iOS) ingår",
-      "lifetimeF4": "Alla framtida uppdateringar, verktyg och viktiga funktioner ingår för alltid",
-      "lifetimeF5": "VIP Founder-märke och exklusiv tillgång till communityn",
+      "lifetimeF4": "Alla Pro-motorer för alltid: BWIPP 2D, DXF CAD, 3D Mockups",
+      "lifetimeF5": "Alla framtida uppdateringar & VIP Founder-märke",
       "lifetimeF6": "Direkt 1-mot-1 VIP-stödkanal för utvecklare",
       "faqTitle": "Vanliga frågor",
       "faq1Q": "Är alla prispaket verkligen i USD?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vektor SVG, DXF CAD & 3D Mockups:",
+    "f2Text": "Exportera tryck-EPS, laser-DXF, 20+ industristreckkoder, CTA-ramar & 1400px 3D-mockups.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "AutoCAD DXF Laserskärning Export",
+    "epsFeature": "Adobe Illustrator EPS Export",
+    "frameFeature": "Anpassad CTA-ram Export",
+    "mockupFeature": "3D Real-World Mockup Studio",
+    "enterpriseBarcodeFeature": "Företags 2D / Industristreckkod Export"
   },
   "proMicro": {
     "guestBadge": "✨ 2 gratis exporter",
@@ -2056,5 +2073,13 @@
     "venmo": "Direktlänk till ditt Venmo-konto för snabba överföringar.",
     "location": "Öppnar latitud och longitud direkt i Google Maps eller Apple Maps.",
     "event": "Tillåter deltagare att lägga till denna händelse i sin kalender med ett tryck."
+  },
+  "mockup": {
+    "badge": "3D Mockup Motor",
+    "title": "Verklighetstrogen Mockup Studio",
+    "subtitle": "Förhandsgranska och exportera kommersiella 1400px mockups renderade 100% lokalt i webbläsaren.",
+    "sceneLabel": "Välj Mockup-scen",
+    "captionLabel": "Rubriktext",
+    "downloadBtn": "Ladda ner 1400px PNG"
   }
 }

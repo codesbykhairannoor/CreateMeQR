@@ -128,7 +128,15 @@
     "eyeColor": "Màu Mắt",
     "gradient": "Sử dụng Độ dốc",
     "logoSize": "Kích thước biểu tượng",
-    "logoMargin": "Lề Logo"
+    "logoMargin": "Lề Logo",
+    "studioThemes": "Chủ Đề Studio & Khung CTA",
+    "quickPresets": "Bảng Màu Thiết Kế 1-Chạm",
+    "ctaFrameLabel": "Khung Trưng Bày CTA",
+    "frameText": "Chữ Kêu Gọi Trên Khung",
+    "frameColor": "Màu Nhấn Khung",
+    "eyeOuterColor": "Màu Viền Ngoài Mắt",
+    "eyeInnerColor": "Màu Tâm Mắt",
+    "cornerDotStyle": "Hình Dáng Tâm Mắt"
   },
   "preview": {
     "title": "Xem trước mã QR",
@@ -138,7 +146,11 @@
     "readyDesc": "Tạo Mã QR Có Logo & Màu Sắc - Không Cần Đăng Ký, Không Giới Hạn",
     "clientSide": "Phía khách hàng được tạo",
     "noServer": "Không có dữ liệu được gửi đến máy chủ",
-    "printStudioBtn": "In / Tờ nhãn dán A4 PDF"
+    "printStudioBtn": "In / Tờ nhãn dán A4 PDF",
+    "printBtnShort": "In Trang PDF",
+    "mockupBtnShort": "Studio Mockup 3D",
+    "isoGradePass": "Chuẩn ISO {{grade}} • Quét tốt ({{ms}}ms)",
+    "isoGradeWarn": "Độ tương phản thấp hoặc logo quá dày"
   },
   "footer": {
     "privacy": "Chính sách bảo mật",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Hoàn toàn linh hoạt cho các chuyên gia, nhà thiết kế và doanh nghiệp đang hoạt động.",
       "monthlyCta": "Nhận Pro hàng tháng",
       "monthlyF1": "Đã kết nối toàn quyền truy cập vào cả 4 Ứng dụng web",
-      "monthlyF2": "Xuất Vector SVG độ phân giải cao & PDF sẵn sàng để in",
-      "monthlyF3": "Tùy chỉnh nhãn hiệu, logo công ty và bảng màu gradient",
-      "monthlyF4": "Bộ tạo mã QR & mã vạch hàng loạt",
-      "monthlyF5": "Giấy phép sử dụng dự án thương mại và khách hàng",
-      "monthlyF6": "Ưu tiên xử lý & hỗ trợ khách hàng nhanh chóng",
+      "monthlyF2": "Xuất Vector SVG, AutoCAD DXF (Laser/CNC) & Adobe EPS",
+      "monthlyF3": "20+ Mã Vạch Công Nghiệp (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "Studio Mockup 3D, Khung CTA & Mắt Hai Màu",
+      "monthlyF5": "Studio In A4 (Mẫu Avery + Vạch Cắt) & Batch CSV ZIP",
+      "monthlyF6": "Kiểm Tra WASM Chuẩn ISO & Giấy Phép Thương Mại",
       "annualTitle": "Gói hàng năm",
       "annualBadge": "Phổ biến nhất",
       "annualSavings": "Tiết kiệm 34%",
@@ -1481,7 +1493,7 @@
       "annualCta": "Nhận Pro hàng năm",
       "annualF1": "Đã kết nối toàn quyền truy cập vào cả 4 Ứng dụng web",
       "annualF2": "Mọi thứ có trong Gói hàng tháng",
-      "annualF3": "Tiết kiệm 34% so với thanh toán hàng tháng thông thường",
+      "annualF3": "Tiết kiệm 34% + Kiểm Tra WASM Chuẩn ISO & Giấy Phép Thương Mại",
       "annualF4": "Các chấm, hình dạng góc và mẫu mắt tùy chỉnh nâng cao",
       "annualF5": "Tải xuống hàng loạt SVG vector có độ phân giải cao và raster 4K",
       "annualF6": "Ưu tiên hỗ trợ khách hàng tận tình 24/7",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Truy cập trọn đời vào cả 4 Ứng dụng web",
       "lifetimeF2": "Bao gồm ứng dụng Windows Desktop chuyên dụng (Native offline)",
       "lifetimeF3": "Bao gồm ứng dụng di động (Android APK & iOS)",
-      "lifetimeF4": "Tất cả các bản cập nhật, công cụ và tính năng chính trong tương lai sẽ được bao gồm mãi mãi",
-      "lifetimeF5": "Huy hiệu Người sáng lập VIP và quyền truy cập cộng đồng độc quyền",
+      "lifetimeF4": "Trọn đời mọi Engine Pro: BWIPP 2D, DXF CAD, Mockup 3D & Khung",
+      "lifetimeF5": "Mọi cập nhật tương lai & Huy hiệu VIP Founder",
       "lifetimeF6": "Kênh hỗ trợ nhà phát triển VIP trực tiếp 1-1",
       "faqTitle": "Câu hỏi thường gặp",
       "faq1Q": "Có phải tất cả các gói giá đều thực sự bằng USD?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vector SVG, DXF CAD & Mockup 3D:",
+    "f2Text": "Xuất EPS in ấn, Laser DXF, 20+ Mã vạch công nghiệp (DataMatrix/PDF417), Khung CTA & Mockup 3D 1400px.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "Xuất Cắt Laser AutoCAD DXF",
+    "epsFeature": "Xuất Vector Adobe EPS",
+    "frameFeature": "Xuất Khung CTA Tùy Chỉnh",
+    "mockupFeature": "Studio Mockup 3D Thực Tế",
+    "enterpriseBarcodeFeature": "Xuất Mã Vạch 2D / Công Nghiệp"
   },
   "proMicro": {
     "guestBadge": "✨ Tặng 2 lượt xuất miễn phí",
@@ -2056,5 +2073,13 @@
     "venmo": "Liên kết trực tiếp tới tài khoản Venmo của bạn để chuyển khoản nhanh chóng.",
     "location": "Mở vĩ độ và kinh độ trực tiếp trong Google Maps hoặc Apple Maps.",
     "event": "Cho phép người tham dự thêm sự kiện này vào lịch của họ chỉ bằng 1 lần nhấn."
+  },
+  "mockup": {
+    "badge": "Động Cơ Mockup 3D",
+    "title": "Studio Mockup Thực Tế",
+    "subtitle": "Xem trước và xuất mockup thương mại 1400px được xử lý 100% cục bộ ngay trên trình duyệt.",
+    "sceneLabel": "Chọn Bối Cảnh",
+    "captionLabel": "Chữ Tiêu Đề",
+    "downloadBtn": "Tải PNG 1400px"
   }
 }

@@ -128,7 +128,15 @@
     "eyeColor": "Couleur de l'œil",
     "gradient": "Utiliser un dégradé",
     "logoSize": "Taille du logo",
-    "logoMargin": "Marge du logo"
+    "logoMargin": "Marge du logo",
+    "studioThemes": "Thèmes Studio & Cadres CTA",
+    "quickPresets": "Palettes Design 1-Clic",
+    "ctaFrameLabel": "Cadre Vitrine CTA",
+    "frameText": "Texte d'Appel du Cadre",
+    "frameColor": "Couleur d'Accent du Cadre",
+    "eyeOuterColor": "Couleur Externe des Yeux",
+    "eyeInnerColor": "Couleur Interne des Yeux",
+    "cornerDotStyle": "Forme du Centre des Yeux"
   },
   "preview": {
     "title": "Aperçu du code QR",
@@ -138,7 +146,11 @@
     "readyDesc": "Remplissez vos détails à gauche et cliquez sur \"Générer le code QR\" pour voir l'aperçu.",
     "clientSide": "Généré côté navigateur",
     "noServer": "Aucune donnée envoyée au serveur",
-    "printStudioBtn": "Imprimer / Feuille d'autocollants A4 PDF"
+    "printStudioBtn": "Imprimer / Feuille d'autocollants A4 PDF",
+    "printBtnShort": "Imprimer Planche PDF",
+    "mockupBtnShort": "Studio Mockup 3D",
+    "isoGradePass": "Grade ISO {{grade}} • Scannable ({{ms}}ms)",
+    "isoGradeWarn": "Contraste faible ou logo trop dense détecté"
   },
   "footer": {
     "privacy": "Politique de confidentialité",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Flexibilité totale pour les professionnels, les designers et les entreprises actives.",
       "monthlyCta": "Obtenez un Pro mensuel",
       "monthlyF1": "Accès complet connecté aux 4 applications Web",
-      "monthlyF2": "Exportations vectorielles SVG et PDF prêtes à imprimer haute résolution",
-      "monthlyF3": "Image de marque personnalisée, logo de l'entreprise et palette de dégradés de couleurs",
-      "monthlyF4": "Suite de génération de QR et de codes-barres par lots",
-      "monthlyF5": "Licence d'utilisation de projets commerciaux et clients",
-      "monthlyF6": "Traitement prioritaire et support client rapide",
+      "monthlyF2": "Exports Vecteur SVG, AutoCAD DXF (Laser/CNC) & Adobe EPS",
+      "monthlyF3": "+20 Codes Industriels (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "Studio Mockup 3D, Cadres CTA & Yeux Bicolores",
+      "monthlyF5": "Studio Impression A4 (Avery + Traits de coupe) & Batch CSV ZIP",
+      "monthlyF6": "Audit WASM Grade ISO & Licence Commerciale",
       "annualTitle": "Plan annuel",
       "annualBadge": "Les plus populaires",
       "annualSavings": "Économisez 34 %",
@@ -1481,7 +1493,7 @@
       "annualCta": "Obtenez un Pro annuel",
       "annualF1": "Accès complet connecté aux 4 applications Web",
       "annualF2": "Tout inclus dans le forfait mensuel",
-      "annualF3": "Économisez 34 % par rapport à la facturation mensuelle habituelle",
+      "annualF3": "Économisez 34% + Audit WASM Grade ISO & Licence Commerciale",
       "annualF4": "Points personnalisés avancés, formes de coins et motifs d'yeux",
       "annualF5": "Téléchargements en masse de vecteurs SVG et raster 4K haute résolution",
       "annualF6": "Assistance client dédiée prioritaire 24h/24 et 7j/7",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Accès à vie aux 4 applications Web",
       "lifetimeF2": "Application de bureau Windows dédiée incluse (native hors ligne)",
       "lifetimeF3": "Application mobile (Android APK et iOS) incluse",
-      "lifetimeF4": "Toutes les futures mises à jour, outils et fonctionnalités majeures inclus pour toujours",
-      "lifetimeF5": "Badge de fondateur VIP et accès exclusif à la communauté",
+      "lifetimeF4": "Tous les moteurs Pro à vie : BWIPP 2D, DXF CAO, Mockups 3D & Cadres",
+      "lifetimeF5": "Mises à jour à vie, nouveaux moteurs & badge VIP Founder",
       "lifetimeF6": "Canal d'assistance direct aux développeurs VIP 1 contre 1",
       "faqTitle": "Foire aux questions",
       "faq1Q": "Tous les forfaits tarifaires sont-ils vraiment en USD ?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Écosystème 4-en-1 Connecté Inclus :",
     "f1Bold": "4 Applications Web en 1 :",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "Vecteur SVG & PDF Haute Résolution :",
-    "f2Text": "Aucune limite de pixellisation pour l'emballage commercial et l'affichage.",
+    "f2Bold": "Vecteurs SVG, CAO DXF & Mockups 3D :",
+    "f2Text": "Exportez EPS, DXF laser, +20 codes industriels (DataMatrix/PDF417), cadres CTA et mockups 3D 1400px.",
     "f3Bold": "100% Confidentialité Client :",
     "f3Text": "Zéro stockage serveur, zéro suivi tiers et conformité ISO totale.",
     "upgradeBtn": "Voir les Forfaits PRO & Founder",
     "signInBtn": "Se Connecter / Passer à PRO",
-    "closeBtn": "Plus Tard"
+    "closeBtn": "Plus Tard",
+    "dxfFeature": "Export Découpe Laser AutoCAD DXF",
+    "epsFeature": "Export Vectoriel Adobe EPS",
+    "frameFeature": "Export Cadre CTA Personnalisé",
+    "mockupFeature": "Studio Mockup 3D Réaliste",
+    "enterpriseBarcodeFeature": "Export Codes-Barres 2D / Industriels Pro"
   },
   "proMicro": {
     "guestBadge": "✨ 2 exports gratuits",
@@ -2056,5 +2073,13 @@
     "venmo": "Lien direct vers votre compte Venmo pour des transferts rapides.",
     "location": "Ouvre la latitude et la longitude directement dans Google Maps ou Apple Maps.",
     "event": "Permet aux participants d'ajouter cet événement à leur calendrier en un seul clic."
+  },
+  "mockup": {
+    "badge": "Moteur Mockup 3D",
+    "title": "Studio Mockup Réaliste",
+    "subtitle": "Prévisualisez et exportez des mockups commerciaux 1400px rendus 100% localement dans votre navigateur.",
+    "sceneLabel": "Choisir la Scène Mockup",
+    "captionLabel": "Texte de Légende",
+    "downloadBtn": "Télécharger PNG 1400px"
   }
 }

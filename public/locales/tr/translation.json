@@ -128,7 +128,15 @@
     "eyeColor": "Göz Rengi",
     "gradient": "Degrade Kullan",
     "logoSize": "Logo Boyutu",
-    "logoMargin": "Logo Kenar Boşluğu"
+    "logoMargin": "Logo Kenar Boşluğu",
+    "studioThemes": "Stüdyo Temaları ve CTA Çerçeveleri",
+    "quickPresets": "Tek Tık Tasarım Paletleri",
+    "ctaFrameLabel": "CTA Vitrin Çerçevesi",
+    "frameText": "Çerçeve Metni",
+    "frameColor": "Çerçeve Vurgu Rengi",
+    "eyeOuterColor": "Dış Göz Çerçeve Rengi",
+    "eyeInnerColor": "İç Göz Bebeği Rengi",
+    "cornerDotStyle": "Göz Bebeği Şekli"
   },
   "preview": {
     "title": "QR Kod Önizlemesi",
@@ -138,7 +146,11 @@
     "readyDesc": "Logo ve Renkli QR Kodlar Üretin - Kayıt Yok, Sınırsız ve Bedava",
     "clientSide": "İstemci tarafında oluşturuldu",
     "noServer": "Sunucuya veri gönderilmedi",
-    "printStudioBtn": "Yazdır / A4 Çıkartma Sayfası PDF"
+    "printStudioBtn": "Yazdır / A4 Çıkartma Sayfası PDF",
+    "printBtnShort": "PDF Sayfası Yazdır",
+    "mockupBtnShort": "3D Mockup Stüdyosu",
+    "isoGradePass": "ISO Sınıf {{grade}} • Taranabilir ({{ms}}ms)",
+    "isoGradeWarn": "Düşük kontrast veya yoğun logo algılandı"
   },
   "footer": {
     "privacy": "Gizlilik Politikası",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Profesyoneller, tasarımcılar ve aktif işletmeler için tam esneklik.",
       "monthlyCta": "Aylık Pro'yu Alın",
       "monthlyF1": "4 Web Uygulamasının tümüne bağlantılı tam erişim",
-      "monthlyF2": "Yüksek çözünürlüklü Vektör SVG ve Baskıya Hazır PDF dışa aktarmaları",
-      "monthlyF3": "Özel markalama, şirket logosu ve renk gradyan paleti",
-      "monthlyF4": "Toplu QR ve Barkod oluşturma paketi",
-      "monthlyF5": "Ticari ve müşteri projesi kullanım lisansı",
-      "monthlyF6": "Öncelikli işleme ve hızlı müşteri desteği",
+      "monthlyF2": "Vektör SVG, AutoCAD DXF (Lazer/CNC) ve Adobe EPS dışa aktarma",
+      "monthlyF3": "20+ Endüstriyel Barkod (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D Mockup Stüdyosu, CTA Çerçeveleri ve Çift Renkli Gözler",
+      "monthlyF5": "A4 Baskı Stüdyosu (Avery + Kesim İşaretleri) ve Toplu CSV ZIP",
+      "monthlyF6": "ISO Dereceli WASM Tarama Denetimi ve Ticari Lisans",
       "annualTitle": "Yıllık Plan",
       "annualBadge": "En Popüler",
       "annualSavings": "%34 tasarruf edin",
@@ -1481,7 +1493,7 @@
       "annualCta": "Yıllık Pro'yu Alın",
       "annualF1": "4 Web Uygulamasının tümüne bağlantılı tam erişim",
       "annualF2": "Aylık Plana her şey dahil",
-      "annualF3": "Normal aylık faturalandırmaya kıyasla %34 tasarruf edin",
+      "annualF3": "%34 Tasarruf + ISO Dereceli WASM Tarama Denetimi ve Ticari Lisans",
       "annualF4": "Gelişmiş özel noktalar, köşe şekilleri ve göz desenleri",
       "annualF5": "Toplu yüksek DPI vektör SVG ve 4K raster indirmeleri",
       "annualF6": "Öncelikli 7/24 özel müşteri desteği",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "4 Web Uygulamasının tümüne ömür boyu erişim",
       "lifetimeF2": "Özel Windows Masaüstü Uygulaması dahildir (Yerel çevrimdışı)",
       "lifetimeF3": "Mobil Uygulama (Android APK ve iOS) dahil",
-      "lifetimeF4": "Gelecekteki tüm güncellemeler, araçlar ve önemli özellikler sonsuza kadar dahil",
-      "lifetimeF5": "VIP Kurucu rozeti ve özel topluluk erişimi",
+      "lifetimeF4": "Tüm Pro Motorlar ömür boyu: BWIPP 2D, DXF CAD, 3D Mockup ve Çerçeveler",
+      "lifetimeF5": "Gelecekteki tüm güncellemeler ve VIP Kurucu rozeti",
       "lifetimeF6": "Doğrudan bire bir VIP geliştirici destek kanalı",
       "faqTitle": "Sıkça Sorulan Sorular",
       "faq1Q": "Tüm fiyatlandırma paketleri gerçekten USD cinsinden mi?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vektör SVG, DXF CAD ve 3D Mockup:",
+    "f2Text": "Baskı EPS, Lazer DXF, 20+ Endüstriyel Barkod, CTA Çerçeveleri ve 1400px 3D Mockup dışa aktarın.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "AutoCAD DXF Lazer Kesim Dışa Aktarma",
+    "epsFeature": "Adobe Illustrator EPS Dışa Aktarma",
+    "frameFeature": "Özel CTA Çerçeve Dışa Aktarma",
+    "mockupFeature": "3D Gerçekçi Mockup Stüdyosu",
+    "enterpriseBarcodeFeature": "Kurumsal 2D / Endüstriyel Barkod Dışa Aktarma"
   },
   "proMicro": {
     "guestBadge": "✨ 2 Ücretsiz Dışa Aktarım",
@@ -2056,5 +2073,13 @@
     "venmo": "Hızlı transferler için Venmo hesabınıza doğrudan bağlantı.",
     "location": "Enlem ve boylamı doğrudan Google Haritalar veya Apple Haritalar'da açar.",
     "event": "Katılımcıların bu etkinliği 1 dokunuşla takvimlerine eklemelerine olanak tanır."
+  },
+  "mockup": {
+    "badge": "3D Mockup Motoru",
+    "title": "Gerçekçi 3D Mockup Stüdyosu",
+    "subtitle": "Tarayıcınızda %100 yerel olarak oluşturulan 1400px ticari mockup'ları önizleyin ve indirin.",
+    "sceneLabel": "Sahne Seçin",
+    "captionLabel": "Sahne Başlığı",
+    "downloadBtn": "1400px PNG İndir"
   }
 }

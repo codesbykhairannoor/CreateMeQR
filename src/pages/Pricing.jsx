@@ -12,7 +12,6 @@ import {
   ArrowRight, 
   Sparkles, 
   Crown, 
-  Calendar, 
   Layers, 
   Globe, 
   HelpCircle, 
@@ -20,9 +19,6 @@ import {
   Monitor, 
   Smartphone, 
   QrCode, 
-  Barcode, 
-  ScanLine, 
-  FileCheck,
   CheckCircle2,
   FileText,
   Image,
@@ -445,29 +441,29 @@ export default function Pricing() {
                     </li>
                     <li className="flex gap-3 items-start text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200">
                       <Check size={18} className="text-emerald-500 shrink-0 mt-0.5" />
-                      <span>{t('static.pricing.monthlyF2', 'High-resolution Vector SVG & Print-Ready PDF exports')}</span>
+                      <span>{t('static.pricing.monthlyF2', 'Vector SVG, AutoCAD DXF (Laser/CNC) & Adobe EPS exports')}</span>
                     </li>
                     <li className="flex gap-3 items-start text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                       <Check size={18} className="text-emerald-500 shrink-0 mt-0.5" />
-                      <span>{t('static.pricing.monthlyF3', 'Custom branding, company logo & color gradient palette')}</span>
+                      <span>{t('static.pricing.monthlyF3', '20+ Industrial Barcodes (DataMatrix, PDF417, Aztec, GS1-128)')}</span>
                     </li>
                     <li className="flex gap-3 items-start text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                       <Check size={18} className="text-emerald-500 shrink-0 mt-0.5" />
-                      <span>{t('static.pricing.monthlyF4', 'Batch QR & Barcode generation suite')}</span>
+                      <span>{t('static.pricing.monthlyF4', '3D Mockup Studio, CTA Showcase Frames & Dual-Tone Eyes')}</span>
                     </li>
                     <li className="flex gap-3 items-start text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                       <Check size={18} className="text-emerald-500 shrink-0 mt-0.5" />
-                      <span>{t('static.pricing.monthlyF5', 'Commercial & client project usage license')}</span>
+                      <span>{t('static.pricing.monthlyF5', 'A4 Print Studio (Avery presets + Crop Marks) & Batch CSV ZIP')}</span>
                     </li>
                     {billingCycle === 'annual' ? (
                       <li className="flex gap-3 items-start text-xs sm:text-sm font-semibold text-emerald-700 dark:text-emerald-300">
                         <Check size={18} className="text-emerald-500 shrink-0 mt-0.5" />
-                        <span>{t('static.pricing.annualF3', 'Save 34% compared to regular monthly billing')}</span>
+                        <span>{t('static.pricing.annualF3', 'Save 34% + ISO Grade WASM Audit & Commercial License')}</span>
                       </li>
                     ) : (
                       <li className="flex gap-3 items-start text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                         <Check size={18} className="text-emerald-500 shrink-0 mt-0.5" />
-                        <span>{t('static.pricing.monthlyF6', 'Priority processing & fast customer support')}</span>
+                        <span>{t('static.pricing.monthlyF6', 'ISO Grade WASM Scan Audit & Commercial License')}</span>
                       </li>
                     )}
                   </ul>
@@ -550,11 +546,11 @@ export default function Pricing() {
                     </li>
                     <li className="flex gap-3 items-start text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                       <Check size={18} className="text-amber-500 shrink-0 mt-0.5" />
-                      <span>{t('static.pricing.lifetimeF4', 'All future updates, tools & major features included forever')}</span>
+                      <span>{t('static.pricing.lifetimeF4', 'All Pro Engines forever: BWIPP 2D, DXF CAD, 3D Mockups & Frames')}</span>
                     </li>
                     <li className="flex gap-3 items-start text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                       <Check size={18} className="text-amber-500 shrink-0 mt-0.5" />
-                      <span>{t('static.pricing.lifetimeF5', 'VIP Founder badge & exclusive community access')}</span>
+                      <span>{t('static.pricing.lifetimeF5', 'All future updates, engines & VIP Founder badge')}</span>
                     </li>
                     <li className="flex gap-3 items-start text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-normal">
                       <Check size={18} className="text-amber-500 shrink-0 mt-0.5" />

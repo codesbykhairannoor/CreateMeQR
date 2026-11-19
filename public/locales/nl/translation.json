@@ -128,7 +128,15 @@
     "eyeColor": "Oogkleur",
     "gradient": "Gebruik Verloop",
     "logoSize": "Logogrootte",
-    "logoMargin": "Logomarge"
+    "logoMargin": "Logomarge",
+    "studioThemes": "Studio Thema's & CTA Kaders",
+    "quickPresets": "1-Klik Design Paletten",
+    "ctaFrameLabel": "CTA Showcase Kader",
+    "frameText": "Kader Tekst",
+    "frameColor": "Accentkleur Kader",
+    "eyeOuterColor": "Buitenkleur Oog",
+    "eyeInnerColor": "Binnenkleur Pupil",
+    "cornerDotStyle": "Vorm van Pupil"
   },
   "preview": {
     "title": "Voorbeeld van QR-code",
@@ -138,7 +146,11 @@
     "readyDesc": "Maak QR Codes met Logo & Kleur - Zonder Registratie, Onbeperkt",
     "clientSide": "Aan de clientzijde gegenereerd",
     "noServer": "Geen gegevens verzonden naar server",
-    "printStudioBtn": "Afdrukken / A4 stickervel PDF"
+    "printStudioBtn": "Afdrukken / A4 stickervel PDF",
+    "printBtnShort": "Print PDF Vel",
+    "mockupBtnShort": "3D Mockup Studio",
+    "isoGradePass": "ISO-klasse {{grade}} • Scanbaar ({{ms}}ms)",
+    "isoGradeWarn": "Laag contrast of dicht logo gedetecteerd"
   },
   "footer": {
     "privacy": "Privacybeleid",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Volledige flexibiliteit voor professionals, ontwerpers en actieve bedrijven.",
       "monthlyCta": "Ontvang maandelijkse Pro",
       "monthlyF1": "Verbonden volledige toegang tot alle 4 webapps",
-      "monthlyF2": "Vector SVG en afdrukklare PDF-export met hoge resolutie",
-      "monthlyF3": "Aangepaste branding, bedrijfslogo en kleurverlooppalet",
-      "monthlyF4": "Batch QR- en barcodegeneratiesuite",
-      "monthlyF5": "Gebruikslicentie voor commerciële en klantprojecten",
-      "monthlyF6": "Prioritaire verwerking en snelle klantenondersteuning",
+      "monthlyF2": "Vector SVG, AutoCAD DXF (Laser/CNC) & Adobe EPS exports",
+      "monthlyF3": "20+ Industriële Barcodes (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D Mockup Studio, CTA Kaders & Tweekleurige Ogen",
+      "monthlyF5": "A4 Print Studio (Avery + Snijtekens) & Batch CSV ZIP",
+      "monthlyF6": "ISO WASM Scan-audit & Commerciële Licentie",
       "annualTitle": "Jaarabonnement",
       "annualBadge": "Meest populair",
       "annualSavings": "Bespaar 34%",
@@ -1481,7 +1493,7 @@
       "annualCta": "Ontvang een jaarlijkse Pro",
       "annualF1": "Verbonden volledige toegang tot alle 4 webapps",
       "annualF2": "Alles inbegrepen in het maandabonnement",
-      "annualF3": "Bespaar 34% vergeleken met reguliere maandelijkse facturering",
+      "annualF3": "Bespaar 34% + ISO WASM Scan-audit & Commerciële Licentie",
       "annualF4": "Geavanceerde aangepaste stippen, hoekvormen en oogpatronen",
       "annualF5": "Bulk vector-SVG- en 4K-rasterdownloads met hoge DPI",
       "annualF6": "Prioritaire 24/7 toegewijde klantenondersteuning",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Levenslange toegang tot alle 4 webapps",
       "lifetimeF2": "Inclusief speciale Windows Desktop-app (Native offline)",
       "lifetimeF3": "Mobiele app (Android APK en iOS) inbegrepen",
-      "lifetimeF4": "Alle toekomstige updates, tools en belangrijke functies voor altijd inbegrepen",
-      "lifetimeF5": "VIP Founder-badge en exclusieve communitytoegang",
+      "lifetimeF4": "Alle Pro Engines voor altijd: BWIPP 2D, DXF CAD, 3D Mockups & Kaders",
+      "lifetimeF5": "Alle toekomstige updates, engines & VIP Founder badge",
       "lifetimeF6": "Direct 1-op-1 VIP-ondersteuningskanaal voor ontwikkelaars",
       "faqTitle": "Veelgestelde vragen",
       "faq1Q": "Zijn alle prijspakketten echt in USD?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vector SVG, DXF CAD & 3D Mockups:",
+    "f2Text": "Exporteer Print EPS, Laser DXF, 20+ Industriële Barcodes, CTA Kaders & 1400px 3D Mockups.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "AutoCAD DXF Lasersnij-export",
+    "epsFeature": "Adobe Illustrator EPS-export",
+    "frameFeature": "Aangepaste CTA Kader Export",
+    "mockupFeature": "3D Real-World Mockup Studio",
+    "enterpriseBarcodeFeature": "Enterprise 2D / Industriële Barcode Export"
   },
   "proMicro": {
     "guestBadge": "✨ 2 gratis exports",
@@ -2056,5 +2073,13 @@
     "venmo": "Directe link naar uw Venmo-account voor snelle overdrachten.",
     "location": "Opent de lengte- en breedtegraad rechtstreeks in Google Maps of Apple Maps.",
     "event": "Hiermee kunnen deelnemers deze gebeurtenis met één tik aan hun agenda toevoegen."
+  },
+  "mockup": {
+    "badge": "3D Mockup Engine",
+    "title": "Real-World Mockup Studio",
+    "subtitle": "Bekijk en exporteer 1400px commerciële mockups die 100% lokaal in je browser worden gerenderd.",
+    "sceneLabel": "Kies Mockup Scène",
+    "captionLabel": "Bijschrift",
+    "downloadBtn": "Download 1400px PNG"
   }
 }

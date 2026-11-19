@@ -128,7 +128,15 @@
     "eyeColor": "สีตา",
     "gradient": "ใช้การไล่ระดับสี",
     "logoSize": "ขนาดโลโก้",
-    "logoMargin": "ขอบโลโก้"
+    "logoMargin": "ขอบโลโก้",
+    "studioThemes": "ธีมสตูดิโอ & กรอบ CTA",
+    "quickPresets": "ชุดสีดีไซเนอร์คลิกเดียว",
+    "ctaFrameLabel": "กรอบโชว์ CTA",
+    "frameText": "ข้อความบนกรอบ",
+    "frameColor": "สีเน้นของกรอบ",
+    "eyeOuterColor": "สีกรอบตานอก",
+    "eyeInnerColor": "สีจุดตาใน",
+    "cornerDotStyle": "รูปทรงจุดตาใน"
   },
   "preview": {
     "title": "ดูตัวอย่างโค้ด QR",
@@ -138,7 +146,11 @@
     "readyDesc": "สร้างคิวอาร์โค้ดพร้อมโลโก้และสี - ไม่ต้องสมัครสมาชิก ใช้งานได้ไม่จำกัด",
     "clientSide": "ฝั่งไคลเอ็นต์สร้างขึ้น",
     "noServer": "ไม่มีข้อมูลที่ส่งไปยังเซิร์ฟเวอร์",
-    "printStudioBtn": "พิมพ์ / แผ่นสติ๊กเกอร์ A4 PDF"
+    "printStudioBtn": "พิมพ์ / แผ่นสติ๊กเกอร์ A4 PDF",
+    "printBtnShort": "พิมพ์แผ่น PDF",
+    "mockupBtnShort": "สตูดิโอม็อกอัพ 3D",
+    "isoGradePass": "มาตรฐาน ISO {{grade}} • สแกนได้ ({{ms}}ms)",
+    "isoGradeWarn": "ความคมชัดต่ำหรือโลโก้หนาแน่นเกินไป"
   },
   "footer": {
     "privacy": "นโยบายความเป็นส่วนตัว",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "ความยืดหยุ่นอย่างเต็มที่สำหรับมืออาชีพ นักออกแบบ และธุรกิจที่กระตือรือร้น",
       "monthlyCta": "รับโปรรายเดือน",
       "monthlyF1": "เชื่อมต่อการเข้าถึงแบบเต็มไปยัง Web Apps ทั้ง 4 รายการ",
-      "monthlyF2": "การส่งออก Vector SVG ความละเอียดสูงและ PDF พร้อมพิมพ์",
-      "monthlyF3": "การสร้างแบรนด์ที่กำหนดเอง โลโก้บริษัท และชุดสีไล่ระดับสี",
-      "monthlyF4": "ชุดการสร้าง QR และบาร์โค้ดเป็นกลุ่ม",
-      "monthlyF5": "ใบอนุญาตการใช้งานโครงการเชิงพาณิชย์และลูกค้า",
-      "monthlyF6": "การประมวลผลลำดับความสำคัญและการสนับสนุนลูกค้าที่รวดเร็ว",
+      "monthlyF2": "ส่งออกเวกเตอร์ SVG, AutoCAD DXF (Laser/CNC) และ Adobe EPS",
+      "monthlyF3": "บาร์โค้ดอุตสาหกรรม 20+ แบบ (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "สตูดิโอม็อกอัพ 3D, กรอบ CTA และสีตาสองโทน",
+      "monthlyF5": "สตูดิโอพิมพ์ A4 (Avery + เส้นตัด) และ Batch CSV ZIP",
+      "monthlyF6": "ตรวจสแกน WASM ระดับ ISO และไลเซนส์เชิงพาณิชย์",
       "annualTitle": "แผนรายปี",
       "annualBadge": "ยอดนิยม",
       "annualSavings": "ประหยัด 34%",
@@ -1481,7 +1493,7 @@
       "annualCta": "รับโปรรายปี",
       "annualF1": "เชื่อมต่อการเข้าถึงแบบเต็มไปยัง Web Apps ทั้ง 4 รายการ",
       "annualF2": "ทุกอย่างรวมอยู่ในแผนรายเดือน",
-      "annualF3": "ประหยัด 34% เมื่อเทียบกับการเรียกเก็บเงินรายเดือนปกติ",
+      "annualF3": "ประหยัด 34% + ตรวจสแกน WASM ระดับ ISO และไลเซนส์เชิงพาณิชย์",
       "annualF4": "จุดที่กำหนดเองขั้นสูง รูปร่างมุม และรูปแบบดวงตา",
       "annualF5": "ดาวน์โหลดเวกเตอร์ SVG และแรสเตอร์ DPI สูงจำนวนมาก",
       "annualF6": "ให้ความช่วยเหลือลูกค้าโดยเฉพาะตลอด 24 ชั่วโมงทุกวันตามลำดับความสำคัญ",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "เข้าถึง Web Apps ทั้ง 4 รายการได้ตลอดชีพ",
       "lifetimeF2": "รวมแอพ Windows Desktop โดยเฉพาะ (เนทีฟออฟไลน์)",
       "lifetimeF3": "รวมแอพมือถือ (Android APK และ iOS)",
-      "lifetimeF4": "การอัปเดต เครื่องมือ และคุณสมบัติหลักทั้งหมดในอนาคตรวมอยู่ด้วยตลอดไป",
-      "lifetimeF5": "ป้ายผู้ก่อตั้ง VIP และการเข้าถึงชุมชนสุดพิเศษ",
+      "lifetimeF4": "ใช้งานทุกเอนจิน Pro ตลอดชีพ: BWIPP 2D, DXF CAD, ม็อกอัพ 3D และกรอบ",
+      "lifetimeF5": "อัปเดตใหม่ทั้งหมดในอนาคตและป้าย VIP Founder",
       "lifetimeF6": "ช่องทางการสนับสนุนนักพัฒนา VIP แบบ 1 ต่อ 1 โดยตรง",
       "faqTitle": "คำถามที่พบบ่อย",
       "faq1Q": "แพ็คเกจราคาทั้งหมดเป็นสกุลเงิน USD จริงหรือ?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "เวกเตอร์ SVG, DXF CAD และม็อกอัพ 3D:",
+    "f2Text": "ส่งออก EPS งานพิมพ์, Laser DXF, บาร์โค้ดอุตสาหกรรม 20+ แบบ, กรอบ CTA และม็อกอัพ 3D 1400px",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "ส่งออก AutoCAD DXF สำหรับตัดเลเซอร์",
+    "epsFeature": "ส่งออกเวกเตอร์ Adobe EPS",
+    "frameFeature": "ส่งออกกรอบ CTA แบบกำหนดเอง",
+    "mockupFeature": "สตูดิโอม็อกอัพ 3D เสมือนจริง",
+    "enterpriseBarcodeFeature": "ส่งออกบาร์โค้ด 2D / อุตสาหกรรม"
   },
   "proMicro": {
     "guestBadge": "✨ สิทธิ์ส่งออกฟรี 2 ครั้ง",
@@ -2056,5 +2073,13 @@
     "venmo": "เชื่อมโยงโดยตรงกับบัญชี Venmo ของคุณเพื่อการโอนเงินที่รวดเร็ว",
     "location": "เปิดละติจูดและลองจิจูดโดยตรงใน Google Maps หรือ Apple Maps",
     "event": "อนุญาตให้ผู้เข้าร่วมเพิ่มกิจกรรมนี้ลงในปฏิทินได้ด้วยการแตะ 1 ครั้ง"
+  },
+  "mockup": {
+    "badge": "เอนจินม็อกอัพ 3D",
+    "title": "สตูดิโอม็อกอัพเสมือนจริง",
+    "subtitle": "ดูตัวอย่างและส่งออกภาพม็อกอัพเชิงพาณิชย์ 1400px ที่ประมวลผลในเบราว์เซอร์ 100%",
+    "sceneLabel": "เลือกฉากม็อกอัพ",
+    "captionLabel": "ข้อความหัวข้อ",
+    "downloadBtn": "ดาวน์โหลด PNG 1400px"
   }
 }

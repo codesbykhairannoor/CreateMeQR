@@ -128,7 +128,15 @@
     "eyeColor": "চোখের রঙ",
     "gradient": "গ্রেডিয়েন্ট ব্যবহার করুন",
     "logoSize": "লোগো সাইজ",
-    "logoMargin": "লোগো মার্জিন"
+    "logoMargin": "লোগো মার্জিন",
+    "studioThemes": "স্টুডিও থিম ও CTA ফ্রেম",
+    "quickPresets": "১-ক্লিক ডিজাইনার প্যালেট",
+    "ctaFrameLabel": "CTA শোকেস ফ্রেম",
+    "frameText": "ফ্রেম টেক্সট",
+    "frameColor": "ফ্রেম অ্যাক্সেন্ট রঙ",
+    "eyeOuterColor": "বাইরের চোখের রঙ",
+    "eyeInnerColor": "ভেতরের পিউপিল রঙ",
+    "cornerDotStyle": "পিউপিলের আকার"
   },
   "preview": {
     "title": "QR কোড প্রিভিউ",
@@ -138,7 +146,11 @@
     "readyDesc": "লোগো এবং রঙ সহ কিউআর কোড তৈরি করুন - কোনো সাইনআপ নেই, আনলিমিটেড ফ্রি",
     "clientSide": "ক্লায়েন্ট-সাইড তৈরি",
     "noServer": "সার্ভারে কোন ডেটা পাঠানো হয়নি",
-    "printStudioBtn": "প্রিন্ট / A4 স্টিকার শীট PDF"
+    "printStudioBtn": "প্রিন্ট / A4 স্টিকার শীট PDF",
+    "printBtnShort": "PDF শীট প্রিন্ট",
+    "mockupBtnShort": "3D মকআপ স্টুডিও",
+    "isoGradePass": "ISO গ্রেড {{grade}} • স্ক্যানযোগ্য ({{ms}}ms)",
+    "isoGradeWarn": "কম কনট্রাস্ট বা বড় লোগো শনাক্ত হয়েছে"
   },
   "footer": {
     "privacy": "গোপনীয়তা নীতি",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "পেশাদার, ডিজাইনার এবং সক্রিয় ব্যবসার জন্য সম্পূর্ণ নমনীয়তা।",
       "monthlyCta": "মাসিক প্রো পান",
       "monthlyF1": "সমস্ত 4টি ওয়েব অ্যাপে সম্পূর্ণ অ্যাক্সেস সংযুক্ত",
-      "monthlyF2": "উচ্চ-রেজোলিউশন ভেক্টর SVG এবং প্রিন্ট-রেডি পিডিএফ এক্সপোর্ট",
-      "monthlyF3": "কাস্টম ব্র্যান্ডিং, কোম্পানির লোগো এবং কালার গ্রেডিয়েন্ট প্যালেট",
-      "monthlyF4": "ব্যাচ QR এবং বারকোড জেনারেশন স্যুট",
-      "monthlyF5": "বাণিজ্যিক ও ক্লায়েন্ট প্রকল্প ব্যবহারের লাইসেন্স",
-      "monthlyF6": "অগ্রাধিকার প্রক্রিয়াকরণ এবং দ্রুত গ্রাহক সহায়তা",
+      "monthlyF2": "ভেক্টর SVG, AutoCAD DXF (লেজার/CNC) এবং Adobe EPS এক্সপোর্ট",
+      "monthlyF3": "২০+ ইন্ডাস্ট্রিয়াল বারকোড (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D মকআপ স্টুডিও, CTA ফ্রেম এবং ডুয়াল-টোন চোখ",
+      "monthlyF5": "A4 প্রিন্ট স্টুডিও (Avery + ক্রপ মার্ক) এবং ব্যাচ CSV ZIP",
+      "monthlyF6": "ISO গ্রেড WASM অডিট এবং কমার্শিয়াল লাইসেন্স",
       "annualTitle": "বার্ষিক পরিকল্পনা",
       "annualBadge": "সর্বাধিক জনপ্রিয়",
       "annualSavings": "34% সংরক্ষণ করুন",
@@ -1481,7 +1493,7 @@
       "annualCta": "বার্ষিক প্রো পান",
       "annualF1": "সমস্ত 4টি ওয়েব অ্যাপে সম্পূর্ণ অ্যাক্সেস সংযুক্ত",
       "annualF2": "সবকিছুই মাসিক পরিকল্পনায় অন্তর্ভুক্ত",
-      "annualF3": "নিয়মিত মাসিক বিলিংয়ের তুলনায় 34% সাশ্রয় করুন",
+      "annualF3": "৩৪% সাশ্রয় + ISO গ্রেড WASM অডিট এবং কমার্শিয়াল লাইসেন্স",
       "annualF4": "উন্নত কাস্টম বিন্দু, কোণার আকার এবং চোখের নিদর্শন",
       "annualF5": "বাল্ক হাই-ডিপিআই ভেক্টর SVG এবং 4K রাস্টার ডাউনলোড",
       "annualF6": "অগ্রাধিকার 24/7 ডেডিকেটেড গ্রাহক সহায়তা",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "সমস্ত 4টি ওয়েব অ্যাপে আজীবন অ্যাক্সেস",
       "lifetimeF2": "ডেডিকেটেড উইন্ডোজ ডেস্কটপ অ্যাপ অন্তর্ভুক্ত (নেটিভ অফলাইন)",
       "lifetimeF3": "মোবাইল অ্যাপ (Android APK এবং iOS) অন্তর্ভুক্ত",
-      "lifetimeF4": "সব ভবিষ্যতের আপডেট, টুলস এবং প্রধান বৈশিষ্ট্য চিরকালের জন্য অন্তর্ভুক্ত",
-      "lifetimeF5": "ভিআইপি প্রতিষ্ঠাতা ব্যাজ এবং একচেটিয়া সম্প্রদায় অ্যাক্সেস",
+      "lifetimeF4": "সব Pro ইঞ্জিন আজীবন: BWIPP 2D, DXF CAD, 3D মকআপ ও ফ্রেম",
+      "lifetimeF5": "ভবিষ্যতের সব আপডেট এবং VIP Founder ব্যাজ",
       "lifetimeF6": "সরাসরি 1-অন-1 ভিআইপি বিকাশকারী সমর্থন চ্যানেল",
       "faqTitle": "প্রায়শই জিজ্ঞাসিত প্রশ্ন",
       "faq1Q": "সমস্ত মূল্যের প্যাকেজ কি সত্যিই মার্কিন ডলারে আছে?",
@@ -1971,13 +1983,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "ভেক্টর SVG, DXF CAD ও 3D মকআপ:",
+    "f2Text": "প্রিন্ট EPS, লেজার DXF, ২০+ ইন্ডাস্ট্রিয়াল বারকোড, CTA ফ্রেম এবং 1400px 3D মকআপ এক্সপোর্ট করুন।",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "AutoCAD DXF লেজার কাট এক্সপোর্ট",
+    "epsFeature": "Adobe Illustrator EPS এক্সপোর্ট",
+    "frameFeature": "কাস্টম CTA ফ্রেম এক্সপোর্ট",
+    "mockupFeature": "3D রিয়েল-ওয়ার্ল্ড মকআপ স্টুডিও",
+    "enterpriseBarcodeFeature": "এন্টারপ্রাইজ 2D / ইন্ডাস্ট্রিয়াল বারকোড এক্সপোর্ট"
   },
   "proMicro": {
     "guestBadge": "✨ ২টি ফ্রি এক্সপোর্ট",
@@ -2034,5 +2051,13 @@
     "venmo": "দ্রুত স্থানান্তরের জন্য আপনার ভেনমো অ্যাকাউন্টে সরাসরি লিঙ্ক।",
     "location": "Google Maps বা Apple Maps-এ সরাসরি অক্ষাংশ এবং দ্রাঘিমাংশ খোলে।",
     "event": "অংশগ্রহণকারীদের তাদের ক্যালেন্ডারে এই ইভেন্টটি 1 ট্যাপ করার অনুমতি দেয়৷"
+  },
+  "mockup": {
+    "badge": "3D মকআপ ইঞ্জিন",
+    "title": "রিয়েল-ওয়ার্ল্ড মকআপ স্টুডিও",
+    "subtitle": "ব্রাউজারে ১০০% লোকাল রেন্ডার করা 1400px কমার্শিয়াল মকআপ প্রিভিউ ও ডাউনলোড করুন।",
+    "sceneLabel": "দৃশ্য নির্বাচন করুন",
+    "captionLabel": "ক্যাপশন টেক্সট",
+    "downloadBtn": "1400px PNG ডাউনলোড"
   }
 }

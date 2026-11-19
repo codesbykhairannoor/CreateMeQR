@@ -128,7 +128,15 @@
     "eyeColor": "Χρώμα ματιών",
     "gradient": "Χρήση Gradient",
     "logoSize": "Μέγεθος λογότυπου",
-    "logoMargin": "Περιθώριο λογότυπου"
+    "logoMargin": "Περιθώριο λογότυπου",
+    "studioThemes": "Θέματα Στούντιο & Πλαίσια CTA",
+    "quickPresets": "Παλέτες Σχεδιασμού 1-Κλικ",
+    "ctaFrameLabel": "Πλαίσιο Παρουσίασης CTA",
+    "frameText": "Κείμενο Πλαισίου",
+    "frameColor": "Χρώμα Έμφασης Πλαισίου",
+    "eyeOuterColor": "Εξωτερικό Χρώμα Ματιού",
+    "eyeInnerColor": "Εσωτερικό Χρώμα Κόρης",
+    "cornerDotStyle": "Σχήμα Κόρης"
   },
   "preview": {
     "title": "Προεπισκόπηση κωδικού QR",
@@ -138,7 +146,11 @@
     "readyDesc": "Φτιάξτε QR Code με Λογότυπο & Χρώμα - Χωρίς Εγγραφή, Απεριόριστα",
     "clientSide": "Δημιουργήθηκε από την πλευρά του πελάτη",
     "noServer": "Δεν αποστέλλονται δεδομένα στον διακομιστή",
-    "printStudioBtn": "Εκτύπωση / Φύλλο αυτοκόλλητου A4 PDF"
+    "printStudioBtn": "Εκτύπωση / Φύλλο αυτοκόλλητου A4 PDF",
+    "printBtnShort": "Εκτύπωση PDF",
+    "mockupBtnShort": "Στούντιο 3D Mockup",
+    "isoGradePass": "Βαθμός ISO {{grade}} • Σαρώσιμο ({{ms}}ms)",
+    "isoGradeWarn": "Χαμηλή αντίθεση ή πολύ πυκνό λογότυπο"
   },
   "footer": {
     "privacy": "Πολιτική Απορρήτου",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Πλήρης ευελιξία για επαγγελματίες, σχεδιαστές και ενεργές επιχειρήσεις.",
       "monthlyCta": "Λάβετε Monthly Pro",
       "monthlyF1": "Συνδεδεμένη πλήρη πρόσβαση και στις 4 Εφαρμογές Ιστού",
-      "monthlyF2": "Εξαγωγές PDF υψηλής ανάλυσης Vector SVG & Print-Ready",
-      "monthlyF3": "Προσαρμοσμένη επωνυμία, εταιρικό λογότυπο & παλέτα ντεγκραντέ χρώματος",
-      "monthlyF4": "Μαζική σουίτα δημιουργίας QR & Barcode",
-      "monthlyF5": "Άδεια χρήσης εμπορικού έργου & πελάτη",
-      "monthlyF6": "Επεξεργασία κατά προτεραιότητα & γρήγορη υποστήριξη πελατών",
+      "monthlyF2": "Εξαγωγές Vector SVG, AutoCAD DXF (Laser/CNC) & Adobe EPS",
+      "monthlyF3": "20+ Βιομηχανικοί Κώδικες (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "Στούντιο 3D Mockup, Πλαίσια CTA & Δίχρωμα Μάτια",
+      "monthlyF5": "Στούντιο Εκτύπωσης A4 (Avery + Σημάδια κοπής) & Batch CSV ZIP",
+      "monthlyF6": "Έλεγχος WASM ISO & Εμπορική Άδεια",
       "annualTitle": "Ετήσιο σχέδιο",
       "annualBadge": "Δημοφιλέστερα",
       "annualSavings": "Εξοικονομήστε 34%",
@@ -1481,7 +1493,7 @@
       "annualCta": "Αποκτήστε το Annual Pro",
       "annualF1": "Συνδεδεμένη πλήρη πρόσβαση και στις 4 Εφαρμογές Ιστού",
       "annualF2": "Όλα όσα περιλαμβάνονται στο Μηνιαίο Πρόγραμμα",
-      "annualF3": "Εξοικονομήστε 34% σε σύγκριση με την κανονική μηνιαία χρέωση",
+      "annualF3": "Εξοικονόμηση 34% + Έλεγχος WASM ISO & Εμπορική Άδεια",
       "annualF4": "Προηγμένες προσαρμοσμένες κουκκίδες, σχήματα γωνιών & σχέδια ματιών",
       "annualF5": "Μαζικές λήψεις διανυσματικών SVG & 4K ράστερ υψηλού DPI",
       "annualF6": "Προτεραιότητα 24/7 αποκλειστική βοήθεια πελατών",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Δια βίου πρόσβαση και στις 4 εφαρμογές Ιστού",
       "lifetimeF2": "Περιλαμβάνεται αποκλειστική εφαρμογή Windows Desktop (Εγγενής εκτός σύνδεσης)",
       "lifetimeF3": "Περιλαμβάνεται εφαρμογή για κινητά (APK Android & iOS).",
-      "lifetimeF4": "Όλες οι μελλοντικές ενημερώσεις, τα εργαλεία και οι κύριες λειτουργίες περιλαμβάνονται για πάντα",
-      "lifetimeF5": "Σήμα ιδρυτή VIP & αποκλειστική πρόσβαση στην κοινότητα",
+      "lifetimeF4": "Όλες οι Pro μηχανές για πάντα: BWIPP 2D, DXF CAD, 3D Mockups",
+      "lifetimeF5": "Όλες οι μελλοντικές ενημερώσεις & σήμα VIP Founder",
       "lifetimeF6": "Απευθείας 1 προς 1 κανάλι υποστήριξης προγραμματιστών VIP",
       "faqTitle": "Συχνές Ερωτήσεις",
       "faq1Q": "Είναι πραγματικά όλα τα πακέτα τιμολόγησης σε USD;",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Διάνυσμα SVG, DXF CAD & 3D Mockups:",
+    "f2Text": "Εξαγωγή EPS εκτύπωσης, Laser DXF, 20+ βιομηχανικοί κώδικες, πλαίσια CTA & 3D mockups 1400px.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "Εξαγωγή AutoCAD DXF Κοπής Laser",
+    "epsFeature": "Διανυσματική Εξαγωγή Adobe EPS",
+    "frameFeature": "Εξαγωγή Προσαρμοσμένου Πλαισίου CTA",
+    "mockupFeature": "Ρεαλιστικό Στούντιο 3D Mockup",
+    "enterpriseBarcodeFeature": "Εξαγωγή Βιομηχανικών Κωδικών 2D"
   },
   "proMicro": {
     "guestBadge": "✨ 2 δωρεάν εξαγωγές",
@@ -2056,5 +2073,13 @@
     "venmo": "Απευθείας σύνδεση με τον λογαριασμό σας Venmo για γρήγορες μεταφορές.",
     "location": "Ανοίγει απευθείας το γεωγραφικό πλάτος και το γεωγραφικό μήκος στους Χάρτες Google ή τους Χάρτες της Apple.",
     "event": "Επιτρέπει στους συμμετέχοντες να προσθέσουν αυτό το συμβάν στο ημερολόγιό τους με 1 πάτημα."
+  },
+  "mockup": {
+    "badge": "Μηχανή 3D Mockup",
+    "title": "Ρεαλιστικό Στούντιο 3D Mockup",
+    "subtitle": "Προεπισκόπηση και εξαγωγή εμπορικών mockup 1400px που αποδίδονται 100% τοπικά στον browser.",
+    "sceneLabel": "Επιλογή Σκηνής",
+    "captionLabel": "Κείμενο Λεζάντας",
+    "downloadBtn": "Λήψη PNG 1400px"
   }
 }

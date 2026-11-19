@@ -128,7 +128,15 @@
     "eyeColor": "Eye Color",
     "gradient": "Use Gradient",
     "logoSize": "Logo Size",
-    "logoMargin": "Logo Margin"
+    "logoMargin": "Logo Margin",
+    "studioThemes": "Studio Themes & CTA Frames",
+    "quickPresets": "1-Click Designer Palettes",
+    "ctaFrameLabel": "CTA Showcase Frame",
+    "frameText": "Frame Callout Text",
+    "frameColor": "Frame Accent Color",
+    "eyeOuterColor": "Eye Outer Frame Color",
+    "eyeInnerColor": "Eye Inner Pupil Color",
+    "cornerDotStyle": "Eye Pupil Shape"
   },
   "preview": {
     "title": "QR Code Preview",
@@ -138,7 +146,11 @@
     "readyDesc": "Fill in your details on the left and click \"Generate QR Code\" to see your preview here.",
     "clientSide": "Client-side generated",
     "noServer": "No data sent to server",
-    "printStudioBtn": "Print / A4 Sticker Sheet PDF"
+    "printStudioBtn": "Print / A4 Sticker Sheet PDF",
+    "printBtnShort": "Print Sheet PDF",
+    "mockupBtnShort": "3D Mockup Studio",
+    "isoGradePass": "ISO Grade {{grade}} • Scannable ({{ms}}ms)",
+    "isoGradeWarn": "Low contrast or dense logo detected"
   },
   "footer": {
     "privacy": "Privacy Policy",
@@ -1461,11 +1473,11 @@
       "monthlyDesc": "Full flexibility for professionals, designers, and active businesses.",
       "monthlyCta": "Get Monthly Pro",
       "monthlyF1": "Connected full access to all 4 Web Apps",
-      "monthlyF2": "High-resolution Vector SVG & Print-Ready PDF exports",
-      "monthlyF3": "Custom branding, company logo & color gradient palette",
-      "monthlyF4": "Batch QR & Barcode generation suite",
-      "monthlyF5": "Commercial & client project usage license",
-      "monthlyF6": "Priority processing & fast customer support",
+      "monthlyF2": "Vector SVG, AutoCAD DXF (Laser/CNC) & Adobe EPS exports",
+      "monthlyF3": "20+ Industrial Barcodes (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D Mockup Studio, CTA Showcase Frames & Dual-Tone Eyes",
+      "monthlyF5": "A4 Print Studio (Avery presets + Crop Marks) & Batch CSV ZIP",
+      "monthlyF6": "ISO Grade WASM Scan Audit & Commercial License",
       "annualTitle": "Annual Plan",
       "annualBadge": "Most Popular",
       "annualSavings": "Save 34%",
@@ -1477,7 +1489,7 @@
       "annualCta": "Get Annual Pro",
       "annualF1": "Connected full access to all 4 Web Apps",
       "annualF2": "Everything included in Monthly Plan",
-      "annualF3": "Save 34% compared to regular monthly billing",
+      "annualF3": "Save 34% + ISO Grade WASM Audit & Commercial License",
       "annualF4": "Advanced custom dots, corner shapes & eye patterns",
       "annualF5": "Bulk high-DPI vector SVG & 4K raster downloads",
       "annualF6": "Priority 24/7 dedicated customer assistance",
@@ -1492,8 +1504,8 @@
       "lifetimeF1": "Lifetime access to all 4 Web Apps",
       "lifetimeF2": "Dedicated Windows Desktop App included (Native offline)",
       "lifetimeF3": "Mobile App (Android APK & iOS) included",
-      "lifetimeF4": "All future updates, tools & major features included forever",
-      "lifetimeF5": "VIP Founder badge & exclusive community access",
+      "lifetimeF4": "All Pro Engines forever: BWIPP 2D, DXF CAD, 3D Mockups & Frames",
+      "lifetimeF5": "All future updates, engines & VIP Founder badge",
       "lifetimeF6": "Direct 1-on-1 VIP developer support channel",
       "faqTitle": "Frequently Asked Questions",
       "faq1Q": "Are all pricing packages really in USD?",
@@ -1985,13 +1997,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vector SVG, DXF CAD & 3D Mockups:",
+    "f2Text": "Export Print EPS, Laser DXF, 20+ Industrial Barcodes (DataMatrix/PDF417), CTA Frames & 1400px 3D Mockups.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "AutoCAD DXF Laser Cut Export",
+    "epsFeature": "Adobe Illustrator EPS Export",
+    "frameFeature": "Custom CTA Frame Showcase Export",
+    "mockupFeature": "3D Real-World Mockup Studio",
+    "enterpriseBarcodeFeature": "Enterprise 2D / Industrial Barcode Export"
   },
   "proMicro": {
     "guestBadge": "✨ 2 Free Exports",
@@ -2048,5 +2065,13 @@
     "venmo": "Direct link to your Venmo account for quick transfers.",
     "location": "Opens latitude and longitude directly in Google Maps or Apple Maps.",
     "event": "Allows attendees to add this event to their calendar with 1 tap."
+  },
+  "mockup": {
+    "badge": "3D Mockup Engine",
+    "title": "Real-World Mockup Studio",
+    "subtitle": "Preview and export high-resolution 1400px commercial mockups rendered 100% locally in your browser.",
+    "sceneLabel": "Select Mockup Scene",
+    "captionLabel": "Scene Caption Text",
+    "downloadBtn": "Download 1400px PNG"
   }
 }

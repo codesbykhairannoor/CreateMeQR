@@ -128,7 +128,15 @@
     "eyeColor": "لون العين",
     "gradient": "استخدام التدرج",
     "logoSize": "حجم الشعار",
-    "logoMargin": "هامش الشعار"
+    "logoMargin": "هامش الشعار",
+    "studioThemes": "سمات الاستوديو وإطارات CTA",
+    "quickPresets": "ألوان مصممة بنقرة واحدة",
+    "ctaFrameLabel": "إطار عرض CTA",
+    "frameText": "نص الإطار",
+    "frameColor": "لون تمييز الإطار",
+    "eyeOuterColor": "لون الإطار الخارجي للعين",
+    "eyeInnerColor": "لون البؤبؤ الداخلي للعين",
+    "cornerDotStyle": "شكل البؤبؤ الداخلي"
   },
   "preview": {
     "title": "معاينة رمز الاستجابة السريعة",
@@ -138,7 +146,11 @@
     "readyDesc": "أنشئ رموز QR مع شعار وألوان - بدون تسجيل، غير محدود",
     "clientSide": "تم إنشاؤها من جانب العميل",
     "noServer": "لم يتم إرسال أي بيانات إلى الخادم",
-    "printStudioBtn": "طباعة / ورقة لاصقة بحجم A4 PDF"
+    "printStudioBtn": "طباعة / ورقة لاصقة بحجم A4 PDF",
+    "printBtnShort": "طباعة PDF",
+    "mockupBtnShort": "استوديو نماذج 3D",
+    "isoGradePass": "تصنيف ISO {{grade}} • قابل للمسح ({{ms}}ms)",
+    "isoGradeWarn": "تباين منخفض أو شعار كثيف للغاية"
   },
   "footer": {
     "privacy": "سياسة الخصوصية",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "مرونة كاملة للمحترفين والمصممين والشركات النشطة.",
       "monthlyCta": "احصل على شهرية احترافية",
       "monthlyF1": "متصل بالوصول الكامل إلى جميع تطبيقات الويب الأربعة",
-      "monthlyF2": "تصدير SVG عالي الدقة وملف PDF جاهز للطباعة",
-      "monthlyF3": "علامة تجارية مخصصة وشعار الشركة ولوحة ألوان متدرجة",
-      "monthlyF4": "مجموعة إنشاء QR & Barcode دفعة واحدة",
-      "monthlyF5": "رخصة استخدام المشروع التجاري والعميل",
-      "monthlyF6": "معالجة الأولوية ودعم العملاء السريع",
+      "monthlyF2": "تصدير متجهات SVG و AutoCAD DXF (ليزر/CNC) و Adobe EPS",
+      "monthlyF3": "+20 باركود صناعي (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "استوديو نماذج 3D وإطارات CTA وعيون ثنائية اللون",
+      "monthlyF5": "استوديو طباعة A4 وعلامات القص ودفعات CSV ZIP",
+      "monthlyF6": "فحص جودة المسح WASM ISO ورخصة تجارية",
       "annualTitle": "الخطة السنوية",
       "annualBadge": "الأكثر شعبية",
       "annualSavings": "وفر 34%",
@@ -1481,7 +1493,7 @@
       "annualCta": "احصل على Pro السنوي",
       "annualF1": "متصل بالوصول الكامل إلى جميع تطبيقات الويب الأربعة",
       "annualF2": "كل ما هو مدرج في الخطة الشهرية",
-      "annualF3": "وفر 34% مقارنة بالفواتير الشهرية العادية",
+      "annualF3": "وفر 34% + فحص جودة المسح WASM ISO ورخصة تجارية",
       "annualF4": "النقاط المخصصة المتقدمة وأشكال الزوايا وأنماط العين",
       "annualF5": "تنزيلات مجمعة ذات دقة عالية DPI وSVG و4K نقطية",
       "annualF6": "الأولوية لخدمة العملاء المخصصة على مدار 24 ساعة طوال أيام الأسبوع",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "الوصول مدى الحياة إلى جميع تطبيقات الويب الأربعة",
       "lifetimeF2": "تم تضمين تطبيق سطح مكتب Windows مخصص (أصلي دون اتصال بالإنترنت)",
       "lifetimeF3": "تم تضمين تطبيق الهاتف المحمول (Android APK وiOS).",
-      "lifetimeF4": "تم تضمين جميع التحديثات والأدوات والميزات الرئيسية المستقبلية إلى الأبد",
-      "lifetimeF5": "شارة مؤسس VIP وإمكانية الوصول الحصري للمجتمع",
+      "lifetimeF4": "جميع محركات Pro للأبد: BWIPP 2D و DXF CAD ونماذج 3D",
+      "lifetimeF5": "جميع التحديثات المستقبلية وشارة VIP Founder",
       "lifetimeF6": "قناة دعم مباشر للمطورين VIP 1 على 1",
       "faqTitle": "الأسئلة المتداولة",
       "faq1Q": "هل جميع حزم التسعير بالدولار الأمريكي حقًا؟",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "ملفات SVG و DXF CAD ونماذج 3D:",
+    "f2Text": "تصدير EPS للطباعة و DXF للقطع بالليزر و +20 باركود صناعي وإطارات CTA ونماذج 3D.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "تصدير AutoCAD DXF للقطع بالليزر",
+    "epsFeature": "تصدير متجهات Adobe EPS",
+    "frameFeature": "تصدير إطار CTA مخصص",
+    "mockupFeature": "استوديو النماذج الواقعية 3D",
+    "enterpriseBarcodeFeature": "تصدير الباركود الصناعي ثنائي الأبعاد"
   },
   "proMicro": {
     "guestBadge": "✨ متوفر تصديران مجاناً",
@@ -2056,5 +2073,13 @@
     "venmo": "رابط مباشر إلى حساب Venmo الخاص بك لإجراء تحويلات سريعة.",
     "location": "يفتح خطوط الطول والعرض مباشرة في خرائط Google أو خرائط Apple.",
     "event": "يسمح للحاضرين بإضافة هذا الحدث إلى تقويمهم بنقرة واحدة."
+  },
+  "mockup": {
+    "badge": "محرك نماذج 3D",
+    "title": "استوديو النماذج الواقعية",
+    "subtitle": "معاينة وتصدير نماذج تجارية بدقة 1400px تُعالج محليًا 100% في متصفحك.",
+    "sceneLabel": "اختر مشهد النموذج",
+    "captionLabel": "نص التسمية التوضيحية",
+    "downloadBtn": "تنزيل PNG بدقة 1400px"
   }
 }

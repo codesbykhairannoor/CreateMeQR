@@ -128,7 +128,15 @@
     "eyeColor": "आंख का रंग",
     "gradient": "ग्रेडिएंट का उपयोग करें",
     "logoSize": "लोगो का आकार",
-    "logoMargin": "लोगो मार्जिन"
+    "logoMargin": "लोगो मार्जिन",
+    "studioThemes": "स्टूडियो थीम और CTA फ़्रेम",
+    "quickPresets": "1-क्लिक डिज़ाइनर पैलेट",
+    "ctaFrameLabel": "CTA शोकेस फ़्रेम",
+    "frameText": "फ़्रेम टेक्स्ट",
+    "frameColor": "फ़्रेम एक्सेंट रंग",
+    "eyeOuterColor": "बाहरी आई फ़्रेम रंग",
+    "eyeInnerColor": "भीतरी आई प्यूपिल रंग",
+    "cornerDotStyle": "भीतरी प्यूपिल आकार"
   },
   "preview": {
     "title": "क्यूआर कोड पूर्वावलोकन",
@@ -138,7 +146,11 @@
     "readyDesc": "बाईं ओर विवरण भरें और पूर्वावलोकन देखने के लिए \"क्यूआर कोड बनाएं\" पर क्लिक करें।",
     "clientSide": "आपके ब्राउज़र में सुरक्षित रूप से बना",
     "noServer": "सर्वर पर कोई डेटा नहीं भेजा गया",
-    "printStudioBtn": "प्रिंट/ए4 स्टिकर शीट पीडीएफ"
+    "printStudioBtn": "प्रिंट/ए4 स्टिकर शीट पीडीएफ",
+    "printBtnShort": "शीट PDF प्रिंट करें",
+    "mockupBtnShort": "3D मॉकअप स्टूडियो",
+    "isoGradePass": "ISO ग्रेड {{grade}} • स्कैन योग्य ({{ms}}ms)",
+    "isoGradeWarn": "कम कंट्रास्ट या बहुत बड़ा लोगो पाया गया"
   },
   "footer": {
     "privacy": "गोपनीयता नीति",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "पेशेवरों, डिज़ाइनरों और सक्रिय व्यवसायों के लिए पूर्ण लचीलापन।",
       "monthlyCta": "मासिक प्रो प्राप्त करें",
       "monthlyF1": "सभी 4 वेब ऐप्स तक पूर्ण पहुंच कनेक्टेड",
-      "monthlyF2": "उच्च-रिज़ॉल्यूशन वेक्टर एसवीजी और प्रिंट-रेडी पीडीएफ निर्यात",
-      "monthlyF3": "कस्टम ब्रांडिंग, कंपनी का लोगो और रंग ग्रेडिएंट पैलेट",
-      "monthlyF4": "बैच क्यूआर और बारकोड जनरेशन सुइट",
-      "monthlyF5": "वाणिज्यिक एवं ग्राहक परियोजना उपयोग लाइसेंस",
-      "monthlyF6": "प्राथमिकता प्रसंस्करण और तेज़ ग्राहक सहायता",
+      "monthlyF2": "वेक्टर SVG, AutoCAD DXF (लेज़र/CNC) और Adobe EPS एक्सपोर्ट",
+      "monthlyF3": "20+ इंडस्ट्रियल बारकोड (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D मॉकअप स्टूडियो, CTA फ़्रेम और डुअल-टोन आई डिज़ाइन",
+      "monthlyF5": "A4 प्रिंट स्टूडियो (Avery + क्रॉप मार्क्स) और बैच CSV ZIP",
+      "monthlyF6": "ISO ग्रेड WASM स्कैन ऑडिट और कमर्शियल लाइसेंस",
       "annualTitle": "वार्षिक योजना",
       "annualBadge": "सर्वाधिक लोकप्रिय",
       "annualSavings": "34% बचाएं",
@@ -1481,7 +1493,7 @@
       "annualCta": "वार्षिक प्रो प्राप्त करें",
       "annualF1": "सभी 4 वेब ऐप्स तक पूर्ण पहुंच कनेक्टेड",
       "annualF2": "मासिक योजना में सब कुछ शामिल है",
-      "annualF3": "नियमित मासिक बिलिंग की तुलना में 34% बचाएं",
+      "annualF3": "34% बचाएं + ISO ग्रेड WASM स्कैन ऑडिट और कमर्शियल लाइसेंस",
       "annualF4": "उन्नत कस्टम बिंदु, कोने के आकार और आंखों के पैटर्न",
       "annualF5": "थोक उच्च-डीपीआई वेक्टर एसवीजी और 4K रैस्टर डाउनलोड",
       "annualF6": "प्राथमिकता 24/7 समर्पित ग्राहक सहायता",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "सभी 4 वेब ऐप्स तक आजीवन पहुंच",
       "lifetimeF2": "समर्पित विंडोज़ डेस्कटॉप ऐप शामिल (मूल ऑफ़लाइन)",
       "lifetimeF3": "मोबाइल ऐप (एंड्रॉइड एपीके और आईओएस) शामिल है",
-      "lifetimeF4": "भविष्य के सभी अपडेट, टूल और प्रमुख सुविधाएं हमेशा के लिए शामिल हैं",
-      "lifetimeF5": "वीआईपी संस्थापक बैज और विशिष्ट सामुदायिक पहुंच",
+      "lifetimeF4": "सभी Pro इंजन हमेशा के लिए: BWIPP 2D, DXF CAD, 3D मॉकअप और फ़्रेम",
+      "lifetimeF5": "भविष्य के सभी अपडेट और VIP Founder बैज",
       "lifetimeF6": "डायरेक्ट 1-ऑन-1 वीआईपी डेवलपर सहायता चैनल",
       "faqTitle": "अक्सर पूछे जाने वाले प्रश्न",
       "faq1Q": "क्या सभी मूल्य निर्धारण पैकेज वास्तव में USD में हैं?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "वेक्टर SVG, DXF CAD और 3D मॉकअप:",
+    "f2Text": "प्रिंट EPS, लेज़र DXF, 20+ इंडस्ट्रियल बारकोड (DataMatrix/PDF417), CTA फ़्रेम और 1400px 3D मॉकअप एक्सपोर्ट करें।",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "AutoCAD DXF लेज़र कट एक्सपोर्ट",
+    "epsFeature": "Adobe Illustrator EPS एक्सपोर्ट",
+    "frameFeature": "कस्टम CTA फ़्रेम एक्सपोर्ट",
+    "mockupFeature": "3D रियल-वर्ल्ड मॉकअप स्टूडियो",
+    "enterpriseBarcodeFeature": "एंटरप्राइज़ 2D / इंडस्ट्रियल बारकोड एक्सपोर्ट"
   },
   "proMicro": {
     "guestBadge": "✨ 2 मुफ्त निर्यात उपलब्ध",
@@ -2056,5 +2073,13 @@
     "venmo": "त्वरित स्थानांतरण के लिए आपके वेनमो खाते से सीधा लिंक।",
     "location": "अक्षांश और देशांतर को सीधे Google मानचित्र या Apple मानचित्र में खोलता है।",
     "event": "उपस्थित लोगों को 1 टैप से इस ईवेंट को अपने कैलेंडर में जोड़ने की अनुमति देता है।"
+  },
+  "mockup": {
+    "badge": "3D मॉकअप इंजन",
+    "title": "रियल-वर्ल्ड मॉकअप स्टूडियो",
+    "subtitle": "ब्राउज़र में 100% लोकल रेंडर किए गए 1400px कमर्शियल मॉकअप देखें और डाउनलोड करें।",
+    "sceneLabel": "मॉकअप दृश्य चुनें",
+    "captionLabel": "कैप्शन टेक्स्ट",
+    "downloadBtn": "1400px PNG डाउनलोड करें"
   }
 }

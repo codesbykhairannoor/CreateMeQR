@@ -128,7 +128,15 @@
     "eyeColor": "Augenfarbe",
     "gradient": "Farbverlauf verwenden",
     "logoSize": "Logogröße",
-    "logoMargin": "Logorand"
+    "logoMargin": "Logorand",
+    "studioThemes": "Studio-Themes & CTA-Rahmen",
+    "quickPresets": "1-Klick-Designer-Paletten",
+    "ctaFrameLabel": "CTA-Präsentationsrahmen",
+    "frameText": "Rahmen-Callout-Text",
+    "frameColor": "Rahmen-Akzentfarbe",
+    "eyeOuterColor": "Äußere Augenfarbe",
+    "eyeInnerColor": "Innere Pupillenfarbe",
+    "cornerDotStyle": "Form der Augenpupille"
   },
   "preview": {
     "title": "QR-Code Vorschau",
@@ -138,7 +146,11 @@
     "readyDesc": "Füllen Sie Ihre Details links aus und klicken Sie auf \"QR-Code erstellen\".",
     "clientSide": "Im Browser generiert",
     "noServer": "Keine Daten an Server gesendet",
-    "printStudioBtn": "Drucken / A4-Aufkleberblatt PDF"
+    "printStudioBtn": "Drucken / A4-Aufkleberblatt PDF",
+    "printBtnShort": "Etiketten-PDF drucken",
+    "mockupBtnShort": "3D-Mockup-Studio",
+    "isoGradePass": "ISO-Note {{grade}} • Scannbar ({{ms}}ms)",
+    "isoGradeWarn": "Geringer Kontrast oder zu großes Logo erkannt"
   },
   "footer": {
     "privacy": "Datenschutz",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Volle Flexibilität für Profis, Designer und aktive Unternehmen.",
       "monthlyCta": "Holen Sie sich monatliches Pro",
       "monthlyF1": "Verbundener voller Zugriff auf alle 4 Web-Apps",
-      "monthlyF2": "Hochauflösende Vektor-SVG- und druckfertige PDF-Exporte",
-      "monthlyF3": "Individuelles Branding, Firmenlogo und Farbverlaufspalette",
-      "monthlyF4": "Batch-QR- und Barcode-Generierungssuite",
-      "monthlyF5": "Kommerzielle und Kundenprojekt-Nutzungslizenz",
-      "monthlyF6": "Vorrangige Bearbeitung und schneller Kundensupport",
+      "monthlyF2": "Vektor-SVG, AutoCAD DXF (Laser/CNC) & Adobe EPS Exporte",
+      "monthlyF3": "20+ Industrie-Barcodes (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D-Mockup-Studio, CTA-Rahmen & zweifarbige QR-Augen",
+      "monthlyF5": "A4-Druckstudio (Avery-Vorlagen + Schnittmarken) & Batch-CSV-ZIP",
+      "monthlyF6": "ISO-Note WASM-Scan-Audit & Kommerzielle Lizenz",
       "annualTitle": "Jahresplan",
       "annualBadge": "Am beliebtesten",
       "annualSavings": "Sparen Sie 34 %",
@@ -1481,7 +1493,7 @@
       "annualCta": "Holen Sie sich Annual Pro",
       "annualF1": "Verbundener voller Zugriff auf alle 4 Web-Apps",
       "annualF2": "Alles im Monatsplan enthalten",
-      "annualF3": "Sparen Sie 34 % im Vergleich zur regulären monatlichen Abrechnung",
+      "annualF3": "34% sparen + ISO-Note WASM-Scan-Audit & Kommerzielle Lizenz",
       "annualF4": "Erweiterte benutzerdefinierte Punkte, Eckformen und Augenmuster",
       "annualF5": "Massen-High-DPI-Vektor-SVG- und 4K-Raster-Downloads",
       "annualF6": "Vorrangiger engagierter Kundendienst rund um die Uhr",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Lebenslanger Zugriff auf alle 4 Web-Apps",
       "lifetimeF2": "Dedizierte Windows-Desktop-App enthalten (nativ offline)",
       "lifetimeF3": "Mobile App (Android APK & iOS) enthalten",
-      "lifetimeF4": "Alle zukünftigen Updates, Tools und wichtigen Funktionen sind für immer enthalten",
-      "lifetimeF5": "VIP-Gründerabzeichen und exklusiver Community-Zugang",
+      "lifetimeF4": "Alle Pro-Engines für immer: BWIPP 2D, DXF-CAD, 3D-Mockups & Rahmen",
+      "lifetimeF5": "Alle künftigen Updates, Engines & VIP Founder Badge",
       "lifetimeF6": "Direkter 1-zu-1-VIP-Entwickler-Supportkanal",
       "faqTitle": "Häufig gestellte Fragen",
       "faq1Q": "Sind alle Preispakete wirklich in USD?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Enthaltenes 4-in-1 Ökosystem:",
     "f1Bold": "4 Web-Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "Hochauflösendes Vektor-SVG & PDF:",
-    "f2Text": "Keine Rasterbeschränkungen für Verpackungs- und Großformatdruck.",
+    "f2Bold": "Vektor-SVG, DXF-CAD & 3D-Mockups:",
+    "f2Text": "Export von Druck-EPS, Laser-DXF, 20+ Industrie-Barcodes (DataMatrix/PDF417), CTA-Rahmen & 1400px 3D-Mockups.",
     "f3Bold": "100% Client-Datenschutz:",
     "f3Text": "Keine Serverspeicherung, kein Tracking von Drittanbietern und ISO-Standardkonformität.",
     "upgradeBtn": "PRO- & Founder-Pläne Anzeigen",
     "signInBtn": "Anmelden / Auf PRO Upgraden",
-    "closeBtn": "Vielleicht Später"
+    "closeBtn": "Vielleicht Später",
+    "dxfFeature": "AutoCAD DXF Laserschnitt-Export",
+    "epsFeature": "Adobe Illustrator EPS-Export",
+    "frameFeature": "Individueller CTA-Rahmen-Export",
+    "mockupFeature": "Reales 3D-Mockup-Studio",
+    "enterpriseBarcodeFeature": "Enterprise 2D / Industrie-Barcode-Export"
   },
   "proMicro": {
     "guestBadge": "✨ 2 kostenlose Exporte",
@@ -2056,5 +2073,13 @@
     "venmo": "Direkter Link zu Ihrem Venmo-Konto für schnelle Überweisungen.",
     "location": "Öffnet Breiten- und Längengrade direkt in Google Maps oder Apple Maps.",
     "event": "Ermöglicht Teilnehmern, dieses Ereignis mit nur einem Fingertipp zu ihrem Kalender hinzuzufügen."
+  },
+  "mockup": {
+    "badge": "3D-Mockup-Engine",
+    "title": "Reales 3D-Mockup-Studio",
+    "subtitle": "Vorschau und Export von 1400px-Mockups, 100% lokal im Browser gerendert.",
+    "sceneLabel": "Mockup-Szene wählen",
+    "captionLabel": "Szenen-Beschriftung",
+    "downloadBtn": "1400px PNG herunterladen"
   }
 }

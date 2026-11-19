@@ -128,7 +128,15 @@
     "eyeColor": "Silmien väri",
     "gradient": "Käytä gradienttia",
     "logoSize": "Logon koko",
-    "logoMargin": "Logon marginaali"
+    "logoMargin": "Logon marginaali",
+    "studioThemes": "Studioteemat & CTA-kehykset",
+    "quickPresets": "1-klikkauksen väripaletit",
+    "ctaFrameLabel": "CTA-esittelykehys",
+    "frameText": "Kehyksen teksti",
+    "frameColor": "Kehyksen korostusväri",
+    "eyeOuterColor": "Silmän ulkoväri",
+    "eyeInnerColor": "Silmän sisäväri",
+    "cornerDotStyle": "Pupillin muoto"
   },
   "preview": {
     "title": "QR-koodin esikatselu",
@@ -138,7 +146,11 @@
     "readyDesc": "Luo QR-koodeja Logolla ja Värillä - Ei Rekisteröintiä, Rajaton",
     "clientSide": "Asiakaspuolen luotu",
     "noServer": "Palvelimelle ei lähetetty tietoja",
-    "printStudioBtn": "Tulosta / A4-tarra-arkki PDF"
+    "printStudioBtn": "Tulosta / A4-tarra-arkki PDF",
+    "printBtnShort": "Tulosta PDF-arkki",
+    "mockupBtnShort": "3D-malli-studio",
+    "isoGradePass": "ISO-luokka {{grade}} • Skannattava ({{ms}}ms)",
+    "isoGradeWarn": "Matala kontrasti tai liian suuri logo havaittu"
   },
   "footer": {
     "privacy": "Tietosuojakäytäntö",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Täysi joustavuus ammattilaisille, suunnittelijoille ja aktiivisille yrityksille.",
       "monthlyCta": "Hanki Monthly Pro",
       "monthlyF1": "Yhdistetty täysi pääsy kaikkiin 4 verkkosovellukseen",
-      "monthlyF2": "Korkearesoluutioinen Vector SVG ja tulostusvalmiiden PDF-vienti",
-      "monthlyF3": "Mukautettu brändäys, yrityksen logo ja värigradienttipaletti",
-      "monthlyF4": "Erä QR- ja viivakoodin luontipaketti",
-      "monthlyF5": "Kaupallisen ja asiakasprojektin käyttölupa",
-      "monthlyF6": "Ensisijainen käsittely ja nopea asiakastuki",
+      "monthlyF2": "Vektori-SVG, AutoCAD DXF (Laser/CNC) & Adobe EPS -vienti",
+      "monthlyF3": "20+ Teollisuusviivakoodia (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D-mallistudio, CTA-kehykset & Kaksiväriset silmät",
+      "monthlyF5": "A4-tulostusstudio (Avery + leikkausmerkit) & Erä-CSV ZIP",
+      "monthlyF6": "ISO-tason WASM-auditointi & Kaupallinen lisenssi",
       "annualTitle": "Vuosisuunnitelma",
       "annualBadge": "Suosituin",
       "annualSavings": "Säästä 34 %",
@@ -1481,7 +1493,7 @@
       "annualCta": "Hanki Annual Pro",
       "annualF1": "Yhdistetty täysi pääsy kaikkiin 4 verkkosovellukseen",
       "annualF2": "Kaikki kuukausisuunnitelmaan sisältyvät",
-      "annualF3": "Säästä 34 % tavalliseen kuukausilaskutukseen verrattuna",
+      "annualF3": "Säästä 34% + ISO-tason WASM-auditointi & Kaupallinen lisenssi",
       "annualF4": "Edistyneet mukautetut pisteet, kulmamuodot ja silmäkuviot",
       "annualF5": "Joukkolataukset korkean DPI:n vektori-SVG- ja 4K-rasteritiedostoina",
       "annualF6": "Priority 24/7 oma asiakastuki",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Elinikäinen pääsy kaikkiin 4 verkkosovellukseen",
       "lifetimeF2": "Mukana omistettu Windows-työpöytäsovellus (natiivi offline-tilassa)",
       "lifetimeF3": "Mukana mobiilisovellus (Android APK ja iOS).",
-      "lifetimeF4": "Kaikki tulevat päivitykset, työkalut ja tärkeimmät ominaisuudet sisältyvät ikuisesti",
-      "lifetimeF5": "VIP-perustaja -merkki ja eksklusiivinen yhteisön pääsy",
+      "lifetimeF4": "Kaikki Pro-moottorit ikuisesti: BWIPP 2D, DXF CAD, 3D-mallit",
+      "lifetimeF5": "Kaikki tulevat päivitykset & VIP Founder -merkki",
       "lifetimeF6": "Suora 1-on-1 VIP-kehittäjien tukikanava",
       "faqTitle": "Usein kysytyt kysymykset",
       "faq1Q": "Ovatko kaikki hinnoittelupaketit todella Yhdysvaltain dollareissa?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vektori-SVG, DXF CAD & 3D-mallit:",
+    "f2Text": "Vie paino-EPS, laser-DXF, 20+ teollisuuskoodia, CTA-kehyksiä ja 1400px 3D-malleja.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "AutoCAD DXF -laserleikkausvienti",
+    "epsFeature": "Adobe Illustrator EPS -vienti",
+    "frameFeature": "Mukautettu CTA-kehysvienti",
+    "mockupFeature": "3D-mallistudio",
+    "enterpriseBarcodeFeature": "Yritystason 2D / Teollisuusviivakoodivienti"
   },
   "proMicro": {
     "guestBadge": "✨ 2 ilmaista vientiä",
@@ -2056,5 +2073,13 @@
     "venmo": "Suora linkki Venmo-tilillesi nopeita siirtoja varten.",
     "location": "Avaa leveys- ja pituusasteet suoraan Google Mapsissa tai Apple Mapsissa.",
     "event": "Antaa osallistujien lisätä tämän tapahtuman kalenteriinsa yhdellä napautuksella."
+  },
+  "mockup": {
+    "badge": "3D-mallimoottori",
+    "title": "Realistinen 3D-mallistudio",
+    "subtitle": "Esikatsele ja vie 1400px kaupallisia mallikuvia, jotka luodaan 100% paikallisesti selaimessasi.",
+    "sceneLabel": "Valitse mallinäkymä",
+    "captionLabel": "Kuvateksti",
+    "downloadBtn": "Lataa 1400px PNG"
   }
 }

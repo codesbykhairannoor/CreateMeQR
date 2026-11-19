@@ -128,7 +128,15 @@
     "eyeColor": "Warna Mata",
     "gradient": "Gunakan Kecerunan",
     "logoSize": "Saiz Logo",
-    "logoMargin": "Margin Logo"
+    "logoMargin": "Margin Logo",
+    "studioThemes": "Tema Studio & Bingkai CTA",
+    "quickPresets": "Palet Pereka 1-Klik",
+    "ctaFrameLabel": "Bingkai Pameran CTA",
+    "frameText": "Teks Seruan Bingkai",
+    "frameColor": "Warna Aksen Bingkai",
+    "eyeOuterColor": "Warna Bingkai Luar Mata",
+    "eyeInnerColor": "Warna Anak Mata Dalam",
+    "cornerDotStyle": "Bentuk Anak Mata"
   },
   "preview": {
     "title": "Pratonton Kod QR",
@@ -138,7 +146,11 @@
     "readyDesc": "Cipta Kod QR dengan Logo & Warna - Tanpa Pendaftaran, Tanpa Had",
     "clientSide": "Dihasilkan pihak pelanggan",
     "noServer": "Tiada data dihantar ke pelayan",
-    "printStudioBtn": "Cetak / Lembaran Pelekat A4 PDF"
+    "printStudioBtn": "Cetak / Lembaran Pelekat A4 PDF",
+    "printBtnShort": "Cetak Helaian PDF",
+    "mockupBtnShort": "Studio Mockup 3D",
+    "isoGradePass": "Gred ISO {{grade}} • Boleh Imbas ({{ms}}ms)",
+    "isoGradeWarn": "Kontras rendah atau logo terlalu padat dikesan"
   },
   "footer": {
     "privacy": "Dasar Privasi",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Fleksibiliti penuh untuk profesional, pereka bentuk dan perniagaan yang aktif.",
       "monthlyCta": "Dapatkan Pro Bulanan",
       "monthlyF1": "Akses penuh yang disambungkan kepada semua 4 Apl Web",
-      "monthlyF2": "Eksport SVG Vektor & PDF Sedia Cetakan beresolusi tinggi",
-      "monthlyF3": "Penjenamaan tersuai, logo syarikat & palet kecerunan warna",
-      "monthlyF4": "Suite penjanaan QR & Kod Bar kumpulan",
-      "monthlyF5": "Lesen penggunaan projek komersial & pelanggan",
-      "monthlyF6": "Pemprosesan keutamaan & sokongan pelanggan yang pantas",
+      "monthlyF2": "Eksport Vektor SVG, AutoCAD DXF (Laser/CNC) & Adobe EPS",
+      "monthlyF3": "20+ Kod Bar Industri (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "Studio Mockup 3D, Bingkai CTA & Warna Mata Dwi-Tona",
+      "monthlyF5": "Studio Cetak A4 (Pratetap Avery + Crop Marks) & Batch CSV ZIP",
+      "monthlyF6": "Audit Imbasan WASM Gred ISO & Lesen Komersial",
       "annualTitle": "Rancangan Tahunan",
       "annualBadge": "Paling Popular",
       "annualSavings": "Jimat 34%",
@@ -1481,7 +1493,7 @@
       "annualCta": "Dapatkan Pro Tahunan",
       "annualF1": "Akses penuh yang disambungkan kepada semua 4 Apl Web",
       "annualF2": "Semuanya disertakan dalam Rancangan Bulanan",
-      "annualF3": "Jimat 34% berbanding pengebilan bulanan biasa",
+      "annualF3": "Jimat 34% + Audit Imbasan WASM Gred ISO & Lesen Komersial",
       "annualF4": "Titik tersuai lanjutan, bentuk sudut & corak mata",
       "annualF5": "Muat turun pukal vektor DPI tinggi SVG & 4K raster",
       "annualF6": "Bantuan pelanggan berdedikasi 24/7 keutamaan",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Akses seumur hidup kepada semua 4 Apl Web",
       "lifetimeF2": "Apl Desktop Windows khusus disertakan (Asli luar talian)",
       "lifetimeF3": "Apl Mudah Alih (APK Android & iOS) disertakan",
-      "lifetimeF4": "Semua kemas kini masa hadapan, alatan & ciri utama disertakan selamanya",
-      "lifetimeF5": "Lencana Pengasas VIP & akses komuniti eksklusif",
+      "lifetimeF4": "Semua Enjin Pro selamanya: BWIPP 2D, DXF CAD, Mockup 3D & Bingkai",
+      "lifetimeF5": "Semua kemas kini masa depan, enjin baharu & Lencana Pengasas VIP",
       "lifetimeF6": "Saluran sokongan pembangun VIP langsung 1 lawan 1",
       "faqTitle": "Soalan Lazim",
       "faq1Q": "Adakah semua pakej harga benar-benar dalam USD?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vektor SVG, DXF CAD & Mockup 3D:",
+    "f2Text": "Eksport Print EPS, Laser DXF, 20+ Kod Bar Industri (DataMatrix/PDF417), Bingkai CTA & Mockup 3D 1400px.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "Eksport Potong Laser AutoCAD DXF",
+    "epsFeature": "Eksport Vektor Adobe EPS",
+    "frameFeature": "Eksport Bingkai CTA Tersuai",
+    "mockupFeature": "Studio Mockup 3D Dunia Nyata",
+    "enterpriseBarcodeFeature": "Eksport Kod Bar 2D / Industri Enterprise"
   },
   "proMicro": {
     "guestBadge": "✨ 2 Eksport Percuma",
@@ -2056,5 +2073,13 @@
     "venmo": "Pautan terus ke akaun Venmo anda untuk pemindahan pantas.",
     "location": "Membuka latitud dan longitud terus dalam Peta Google atau Peta Apple.",
     "event": "Membenarkan peserta menambah acara ini pada kalendar mereka dengan 1 ketikan."
+  },
+  "mockup": {
+    "badge": "Enjin Mockup 3D",
+    "title": "Studio Mockup Dunia Nyata",
+    "subtitle": "Pratonton dan eksport mockup komersial 1400px yang dijana 100% secara lokal di pelayar anda.",
+    "sceneLabel": "Pilih Adegan Mockup",
+    "captionLabel": "Teks Kapsyen Adegan",
+    "downloadBtn": "Muat Turun PNG 1400px"
   }
 }

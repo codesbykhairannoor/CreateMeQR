@@ -128,7 +128,15 @@
     "eyeColor": "Barva očí",
     "gradient": "Použít přechod",
     "logoSize": "Velikost loga",
-    "logoMargin": "Okraj loga"
+    "logoMargin": "Okraj loga",
+    "studioThemes": "Témata Studia a CTA rámečky",
+    "quickPresets": "Palety na 1 kliknutí",
+    "ctaFrameLabel": "Prezentační CTA rámeček",
+    "frameText": "Text rámečku",
+    "frameColor": "Akcentní barva rámečku",
+    "eyeOuterColor": "Vnější barva oka",
+    "eyeInnerColor": "Vnitřní barva zornice",
+    "cornerDotStyle": "Tvar zornice"
   },
   "preview": {
     "title": "Náhled QR kódu",
@@ -138,7 +146,11 @@
     "readyDesc": "Vytvářejte QR Kódy s Logem a Barvou - Bez Registrace, Neomezeně",
     "clientSide": "Vygenerováno na straně klienta",
     "noServer": "Na server nejsou odeslána žádná data",
-    "printStudioBtn": "Tisk / A4 samolepka PDF"
+    "printStudioBtn": "Tisk / A4 samolepka PDF",
+    "printBtnShort": "Tisk archu PDF",
+    "mockupBtnShort": "3D Mockup Studio",
+    "isoGradePass": "ISO třída {{grade}} • Čitelné ({{ms}}ms)",
+    "isoGradeWarn": "Nízký kontrast nebo příliš husté logo"
   },
   "footer": {
     "privacy": "Zásady ochrany osobních údajů",
@@ -1467,11 +1479,11 @@
       "monthlyDesc": "Plná flexibilita pro profesionály, designéry a aktivní podniky.",
       "monthlyCta": "Získejte měsíční Pro",
       "monthlyF1": "Připojen plný přístup ke všem 4 webovým aplikacím",
-      "monthlyF2": "Vektorový SVG s vysokým rozlišením a exporty PDF připravené pro tisk",
-      "monthlyF3": "Vlastní značka, logo společnosti a paleta barevných přechodů",
-      "monthlyF4": "Dávková sada pro generování QR a čárových kódů",
-      "monthlyF5": "Licence pro komerční a klientské projekty",
-      "monthlyF6": "Prioritní zpracování a rychlá zákaznická podpora",
+      "monthlyF2": "Exporty SVG, AutoCAD DXF (Laser/CNC) a Adobe EPS",
+      "monthlyF3": "20+ průmyslových kódů (DataMatrix, PDF417, Aztec, GS1-128)",
+      "monthlyF4": "3D Mockup Studio, CTA rámečky a dvoubarevné rohy",
+      "monthlyF5": "A4 tiskové studio (Avery + ořezové značky) a Batch CSV ZIP",
+      "monthlyF6": "WASM ISO audit skenování a komerční licence",
       "annualTitle": "Roční plán",
       "annualBadge": "Nejoblíbenější",
       "annualSavings": "Ušetřete 34 %",
@@ -1481,7 +1493,7 @@
       "annualCta": "Získejte roční Pro",
       "annualF1": "Připojen plný přístup ke všem 4 webovým aplikacím",
       "annualF2": "Vše zahrnuto v měsíčním plánu",
-      "annualF3": "Ušetřete 34 % oproti běžné měsíční fakturaci",
+      "annualF3": "Ušetřete 34 % + WASM ISO audit a komerční licence",
       "annualF4": "Pokročilé vlastní tečky, tvary rohů a vzory očí",
       "annualF5": "Hromadné stahování vektorových SVG a 4K rastrů s vysokým DPI",
       "annualF6": "Prioritní 24/7 vyhrazená zákaznická podpora",
@@ -1494,8 +1506,8 @@
       "lifetimeF1": "Doživotní přístup ke všem 4 webovým aplikacím",
       "lifetimeF2": "Zahrnuta vyhrazená aplikace pro Windows Desktop (nativní offline)",
       "lifetimeF3": "Mobilní aplikace (Android APK a iOS) v ceně",
-      "lifetimeF4": "Všechny budoucí aktualizace, nástroje a hlavní funkce jsou navždy zahrnuty",
-      "lifetimeF5": "Odznak VIP zakladatele a exkluzivní přístup do komunity",
+      "lifetimeF4": "Všechny Pro enginy navždy: BWIPP 2D, DXF CAD, 3D mockupy",
+      "lifetimeF5": "Všechny budoucí aktualizace a odznak VIP Founder",
       "lifetimeF6": "Přímý kanál VIP vývojářské podpory 1 na 1",
       "faqTitle": "Často kladené otázky",
       "faq1Q": "Jsou všechny cenové balíčky skutečně v USD?",
@@ -1993,13 +2005,18 @@
     "ecosystemNote": "Connected 4-in-1 Ecosystem Included:",
     "f1Bold": "4 Web Apps in 1:",
     "f1Text": "CreateMy-QR, HandleMyFile, HelpMyIMG & SolveMyMedia.",
-    "f2Bold": "High-Res Vector SVG & PDF:",
-    "f2Text": "Zero rasterization limits for commercial packaging & billboards.",
+    "f2Bold": "Vektorové SVG, DXF CAD a 3D Mockupy:",
+    "f2Text": "Export tiskového EPS, laserového DXF, 20+ průmyslových kódů, CTA rámečků a 3D mockupů.",
     "f3Bold": "100% Client-Side Privacy:",
     "f3Text": "Zero server storage, zero third-party tracking, and full ISO standard compliance.",
     "upgradeBtn": "View PRO & Founder Plans",
     "signInBtn": "Sign In / Upgrade to PRO",
-    "closeBtn": "Maybe Later"
+    "closeBtn": "Maybe Later",
+    "dxfFeature": "Export AutoCAD DXF pro laserové řezání",
+    "epsFeature": "Vektorový export Adobe EPS",
+    "frameFeature": "Export vlastního CTA rámečku",
+    "mockupFeature": "3D Studio Reálných Mockupů",
+    "enterpriseBarcodeFeature": "Export průmyslových 2D čárových kódů"
   },
   "proMicro": {
     "guestBadge": "✨ 2 bezplatné exporty",
@@ -2056,5 +2073,13 @@
     "venmo": "Přímý odkaz na váš účet Venmo pro rychlé převody.",
     "location": "Otevře zeměpisnou šířku a délku přímo v Mapách Google nebo Apple Maps.",
     "event": "Umožňuje účastníkům přidat tuto událost do kalendáře jedním klepnutím."
+  },
+  "mockup": {
+    "badge": "3D Mockup Engine",
+    "title": "Studio Reálných Mockupů",
+    "subtitle": "Náhled a export komerčních mockupů 1400px vykreslených 100% lokálně v prohlížeči.",
+    "sceneLabel": "Vyberte scénu",
+    "captionLabel": "Popisek scény",
+    "downloadBtn": "Stáhnout 1400px PNG"
   }
 }
