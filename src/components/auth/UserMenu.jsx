@@ -104,11 +104,11 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
 
   return (
     <>
-      <div className="relative flex items-center shrink-0" ref={menuRef}>
-        {/* Navbar Profile Icon Only (Guaranteed 1:1 circle, never oval/lonjong) */}
+      <div className="relative shrink-0" ref={menuRef}>
+        {/* Navbar Profile Icon Only (40px matching hamburger button, guaranteed 1:1 round circle) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="relative flex items-center justify-center w-9 h-9 min-w-9 min-h-9 aspect-square rounded-full overflow-hidden shrink-0 p-0 hover:ring-2 hover:ring-blue-500/50 hover:bg-slate-100 dark:hover:bg-[#0c1831] transition-all cursor-pointer active:scale-95 shadow-xs"
+          className="flex items-center justify-center w-10 h-10 min-w-10 min-h-10 aspect-square rounded-full overflow-hidden shrink-0 p-0 hover:ring-2 hover:ring-blue-500/50 hover:bg-slate-100 dark:hover:bg-[#0c1831] transition-all cursor-pointer active:scale-95 shadow-xs"
           aria-label="User Menu"
           title={username}
         >
@@ -119,23 +119,44 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
               className="w-full h-full aspect-square rounded-full object-cover border-2 border-blue-600 dark:border-blue-500 shrink-0 block"
             />
           ) : (
-            <div className="w-full h-full aspect-square rounded-full bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white font-bold text-xs sm:text-sm flex items-center justify-center shrink-0 shadow-xs border-2 border-blue-600/40 dark:border-blue-500/40 select-none leading-none">
+            <div className="w-full h-full aspect-square rounded-full bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white font-bold text-sm md:text-base flex items-center justify-center shrink-0 shadow-xs border-2 border-blue-600/40 dark:border-blue-500/40 select-none leading-none">
               {initial}
             </div>
           )}
         </button>
 
-        {/* Dropdown Menu (Matching Image 1 Reference) */}
+        {/* Dropdown Menu (Positioned cleanly below avatar button with top-full mt-2) */}
         {isOpen && (
-          <div className="absolute right-0 mt-2 w-72 bg-white dark:bg-[#081226] rounded-2xl shadow-2xl border border-slate-200 dark:border-[#102040] p-4 z-50 animate-fade-in-up">
-            {/* Header: Account & Email */}
-            <div className="pb-3 border-b border-slate-100 dark:border-[#102040]">
-              <h4 className="text-sm font-bold text-slate-900 dark:text-white">
-                {t('account.title', 'Account')}
-              </h4>
-              <p className="text-xs text-slate-500 dark:text-slate-400 truncate mt-0.5 font-medium">
-                {user.email}
-              </p>
+          <>
+            <div
+              className="fixed inset-0 z-40"
+              onClick={() => setIsOpen(false)}
+              aria-hidden="true"
+            />
+            <div className="absolute right-0 top-full mt-2 w-72 sm:w-80 bg-white dark:bg-[#081226] rounded-2xl shadow-2xl border border-slate-200 dark:border-[#102040] p-4 z-50 animate-fade-in-up">
+              {/* Header: Avatar Circle, Account & Email */}
+              <div className="pb-3 border-b border-slate-100 dark:border-[#102040]">
+                <div className="flex items-center gap-3">
+                  {user.photoURL ? (
+                    <img
+                      src={user.photoURL}
+                      alt={username}
+                      className="w-10 h-10 rounded-full object-cover border border-blue-500 shrink-0 shadow-2xs"
+                    />
+                  ) : (
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white font-bold text-sm flex items-center justify-center shrink-0 shadow-xs border border-blue-500/30">
+                      {initial}
+                    </div>
+                  )}
+                  <div className="min-w-0 flex-1">
+                    <h4 className="text-sm font-bold text-slate-900 dark:text-white leading-tight">
+                      {t('account.title', 'Account')}
+                    </h4>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 truncate mt-0.5 font-medium">
+                      {user.email}
+                    </p>
+                  </div>
+                </div>
 
               {/* Unverified Pill with Verify Button (Shown if not verified) */}
               {!isVerified && (
@@ -243,8 +264,9 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
               </button>
             </div>
           </div>
-        )}
-      </div>
+        </>
+      )}
+    </div>
 
       {/* Change Password Modal */}
       <ChangePasswordModal
