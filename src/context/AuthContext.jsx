@@ -8,11 +8,17 @@ import {
   getRedirectResult,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
+  sendEmailVerification,
+  EmailAuthProvider,
+  reauthenticateWithCredential,
+  reauthenticateWithPopup,
+  updatePassword,
+  deleteUser,
   confirmPasswordReset,
   signOut as firebaseSignOut,
   onAuthStateChanged,
 } from 'firebase/auth';
-import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, deleteDoc } from 'firebase/firestore';
 import { Sparkles, X } from 'lucide-react';
 import { auth, db, googleProvider, isFirebaseConfigured } from '../config/firebase';
 
@@ -213,15 +219,78 @@ export const AuthProvider = ({ children }) => {
     setIsAuthModalOpen(false);
   };
 
-  const signUpWithEmail = async (email, password) => {
+  const signUpWithEmail = async (email, password, autoClose = false) => {
     if (!isFirebaseConfigured || !auth) {
       throw new Error('Firebase credentials not configured.');
     }
 
     const result = await createUserWithEmailAndPassword(auth, email.trim(), password);
+    try {
+      await sendEmailVerification(result.user);
+    } catch (verifErr) {
+      console.warn('[Auth] Automatic sendEmailVerification warning:', verifErr);
+    }
     const userProfile = await fetchOrCreateProfile(result.user);
     setProfile(userProfile);
-    setIsAuthModalOpen(false);
+    if (autoClose) {
+      setIsAuthModalOpen(false);
+    }
+    return result.user;
+  };
+
+  const sendVerificationEmail = async () => {
+    if (!auth?.currentUser) {
+      throw new Error('No authenticated user found.');
+    }
+    await sendEmailVerification(auth.currentUser);
+  };
+
+  const reloadUser = async () => {
+    if (auth?.currentUser) {
+      await auth.currentUser.reload();
+      setUser(auth.currentUser);
+      await refreshProfile();
+      return auth.currentUser;
+    }
+    return null;
+  };
+
+  const changePassword = async (currentPassword, newPassword) => {
+    if (!auth?.currentUser || !auth.currentUser.email) {
+      throw new Error('No authenticated user found.');
+    }
+    const credential = EmailAuthProvider.credential(auth.currentUser.email, currentPassword);
+    await reauthenticateWithCredential(auth.currentUser, credential);
+    await updatePassword(auth.currentUser, newPassword);
+  };
+
+  const deleteUserAccount = async (currentPassword) => {
+    const currentUser = auth?.currentUser;
+    if (!currentUser) {
+      throw new Error('No authenticated user found.');
+    }
+
+    if (currentPassword && currentUser.email) {
+      const credential = EmailAuthProvider.credential(currentUser.email, currentPassword);
+      await reauthenticateWithCredential(currentUser, credential);
+    } else {
+      const isGoogleUser = currentUser.providerData?.some((p) => p.providerId === 'google.com');
+      if (isGoogleUser && googleProvider) {
+        await reauthenticateWithPopup(currentUser, googleProvider);
+      }
+    }
+
+    if (db && currentUser.uid) {
+      try {
+        await deleteDoc(doc(db, 'users', currentUser.uid));
+      } catch (err) {
+        console.warn('[Firestore] Delete user doc error:', err);
+      }
+    }
+
+    await deleteUser(currentUser);
+    setUser(null);
+    setProfile(null);
   };
 
   const sendPasswordReset = async (email) => {
@@ -399,6 +468,10 @@ export const AuthProvider = ({ children }) => {
         signInWithGoogle,
         signInWithEmail,
         signUpWithEmail,
+        sendVerificationEmail,
+        reloadUser,
+        changePassword,
+        deleteUserAccount,
         sendPasswordReset,
         confirmNewPassword,
         signOut,
@@ -452,6 +525,10 @@ export const useAuth = () => {
       signInWithGoogle: async () => { },
       signInWithEmail: async () => { },
       signUpWithEmail: async () => { },
+      sendVerificationEmail: async () => { },
+      reloadUser: async () => null,
+      changePassword: async () => { },
+      deleteUserAccount: async () => { },
       sendPasswordReset: async () => { },
       confirmNewPassword: async () => { },
       signOut: async () => { },
