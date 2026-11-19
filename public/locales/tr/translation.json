@@ -2233,18 +2233,66 @@
     "p_7": "Mühendislik mimarimiz, yetkili ISO/IEC 18004:2015 QR Code Uluslararası Standardına sıkı sıkıya uygundur ve yüksek güvenlikli web uygulamaları için NIST Veri Gizliliği Çerçevesi ve W3C HTML5 Spesifikasyonu ile kusursuz bir şekilde uyum sağlar."
   },
   "auth": {
+    "account": "Hesap",
+    "status": "Durum:",
+    "freeStarter": "Ücretsiz Başlangıç",
+    "proActive": "PRO Aktif",
+    "proLifetime": "PRO Ömür Boyu",
+    "upgradeToPro": "PRO'ya yükseltme",
+    "changePassword": "Şifreyi Değiştir",
+    "deleteAccount": "Hesabı Sil",
+    "signInBtn": "Oturum aç",
+    "signOut": "Oturumu Kapat",
     "signInTitle": "CreateMy-QR'da Oturum Açın",
     "signUpTitle": "Hesap Oluştur",
+    "emailLabel": "E-posta Adresi",
+    "emailPlaceholder": "sen@alanadi.com",
+    "passwordLabel": "Şifre",
+    "currentPassword": "Mevcut Şifre",
+    "newPassword": "Yeni Şifre",
+    "confirmNewPassword": "Yeni Şifreyi Onayla",
+    "passwordMinChars": "Min. 6 karakter",
+    "signOutModal": {
+      "title": "Hesabınızdan Çıkış mı Yapıyorsunuz?",
+      "desc": "Oturumu kapatmak istediğinizden emin misiniz? PRO özelliklerine ve hesap ayarlarınıza erişmek için tekrar oturum açmanız gerekecektir.",
+      "confirm": "Evet, Oturumu Kapat",
+      "cancel": "İptal"
+    },
+    "changePasswordModal": {
+      "title": "Şifreyi Değiştir",
+      "currentPassword": "Mevcut Şifre",
+      "forgotCurrent": "Mevcut şifrenizi mi unuttunuz? Sıfırlama bağlantısını e-postaya gönder",
+      "newPassword": "Yeni Şifre",
+      "confirmNewPassword": "Yeni Şifreyi Onayla",
+      "placeholderMin": "Min. 6 karakter",
+      "updateBtn": "Şifreyi Güncelle",
+      "cancel": "İptal",
+      "resetDesc": "Yeni bir şifre oluşturmak için e-postanıza güvenli sıfırlama bağlantısı gönderin.",
+      "sendResetBtn": "Şifre Sıfırlama Bağlantısını Gönder",
+      "knowCurrent": "Mevcut şifrenizi biliyor musunuz? Doğrudan güncelle",
+      "successUpdate": "Şifre başarıyla güncellendi!",
+      "successReset": "Şifre sıfırlama bağlantısı e-postanıza gönderildi!",
+      "passwordMismatch": "Yeni şifreler eşleşmiyor.",
+      "weakPassword": "Şifre en az 6 karakter olmalıdır.",
+      "fillAll": "Lütfen tüm alanları doldurun."
+    },
+    "deleteAccountModal": {
+      "title": "Hesap Silinsin mi?",
+      "desc": "Hesabınızı silmek istediğinizden emin misiniz? Bu işlem kalıcıdır ve geri alınamaz. Kaydedilen tüm QR kodlarınız ve ayarlarınız kaldırılacaktır.",
+      "confirm": "Evet, Hesabı Sil",
+      "cancel": "İptal",
+      "requiresRecent": "Güvenlik nedeniyle hesabınızı silmeden önce lütfen oturumu kapatıp tekrar oturum açın.",
+      "success": "Hesabınız silindi.",
+      "error": "Hesap silinemedi."
+    },
+    "signInToAccount": "Hesabınızda Oturum Açın",
     "forgotPasswordTitle": "Şifreyi Sıfırla",
     "resetNewPasswordTitle": "Yeni Şifre Belirle",
     "signInSubtitle": "Hesabınıza erişin, geçmişinizi senkronize edin ve PRO Ömür Boyu özelliklerin kilidini açın.",
     "signUpSubtitle": "QR kodlarını, geçmiş senkronizasyonunu ve PRO dışa aktarma formatlarını yönetmek için kaydolun.",
     "forgotPasswordSubtitle": "Güvenli bir şifre sıfırlama bağlantısı almak için kayıtlı e-posta adresinizi girin.",
     "resetNewPasswordSubtitle": "Hesabınız için güçlü ve yeni bir şifre seçin.",
-    "emailLabel": "E-posta Adresi",
-    "passwordLabel": "Şifre",
     "newPasswordLabel": "Yeni Şifre",
-    "emailPlaceholder": "sen@alanadi.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Şifrenizi mi unuttunuz?",
     "submitSignIn": "Oturum aç",
@@ -2262,8 +2310,6 @@
     "hasAccount": "Zaten bir hesabınız var mı?",
     "switchToSignUp": "Ücretsiz kaydolun",
     "switchToSignIn": "Oturum aç",
-    "signInBtn": "Oturum aç",
-    "signOut": "Oturumu Kapat",
     "notConfigured": "Firebase yapılandırılmamış. Lütfen ortam anahtarlarınızı doğrulayın.",
     "weakPassword": "Şifre en az 6 karakter olmalıdır.",
     "passwordResetSuccess": "Şifre başarıyla güncellendi! Lütfen oturum açın.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "%100 İstemci Tarafı Gizliliği. QR verileriniz ve geçmişiniz tarayıcınızdan asla ayrılmaz.",
     "verificationSentTitle": "E-postanızı Doğrulayın",
     "verificationSentDesc": "{{email}}'e bir doğrulama bağlantısı gönderdik. Lütfen gelen kutunuzu kontrol edin ve hesabınızı doğrulayın.",
+    "checkSpamNote": "E-postayı gelen kutunuzda göremiyorsanız lütfen spam veya önemsiz klasörünüzü kontrol edin.",
     "verificationCheckBtn": "E-postamı Doğruladım",
     "verificationResendBtn": "Doğrulama E-postasını Yeniden Gönder",
     "verificationResentSuccess": "Doğrulama e-postası yeniden gönderildi! Lütfen spam klasörünüzü kontrol edin.",
     "verificationNotYet": "E-posta henüz doğrulanmadı. Lütfen gelen kutunuza gönderilen doğrulama bağlantısını tıklayın.",
     "verificationSuccessToast": "E-posta başarıyla doğrulandı! Gemiye hoş geldiniz.",
-    "continueToApp": "Uygulamaya Devam Et (Daha Sonra Doğrula)",
-    "checkSpamNote": "E-postayı gelen kutunuzda göremiyorsanız lütfen spam veya önemsiz klasörünüzü kontrol edin."
+    "continueToApp": "Uygulamaya Devam Et (Daha Sonra Doğrula)"
   },
   "account": {
     "title": "Hesap",
@@ -2325,6 +2371,13 @@
       "deleting": "4 uygulamadaki hesap siliniyor...",
       "incorrectPassword": "Geçerli şifre yanlış. Lütfen tekrar deneyin.",
       "typeDeleteError": "Onaylamak için lütfen büyük harfle DELETE yazın."
-    }
+    },
+    "signOutModal": {
+      "title": "Hesabınızdan Çıkış mı Yapıyorsunuz?",
+      "desc": "Oturumu kapatmak istediğinizden emin misiniz? PRO özelliklerine ve hesap ayarlarınıza erişmek için tekrar oturum açmanız gerekecektir.",
+      "confirmBtn": "Evet, Oturumu Kapat",
+      "cancelBtn": "İptal"
+    },
+    "signInToAccount": "Hesabınızda Oturum Açın"
   }
 }

@@ -23,11 +23,18 @@ import {
   Scan,
   FileText,
   MessageCircle,
-  X
+  X,
+  Key,
+  Trash2,
+  User,
 } from 'lucide-react';
 import { localizedRoutes } from '../../config/localizedRoutes';
 import { QR_MENU_COLUMNS } from './MegaNav';
 import { LANGS } from '../../config/site';
+import { useAuth } from '../../context/AuthContext';
+import ChangePasswordModal from '../modals/ChangePasswordModal';
+import DeleteAccountModal from '../modals/DeleteAccountModal';
+import SignOutConfirmModal from '../modals/SignOutConfirmModal';
 
 export default function MobileNav({
   currentLangCode,
@@ -38,6 +45,11 @@ export default function MobileNav({
 }) {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
+  const { user, signOut, openAuthModal } = useAuth();
+
+  const [isChangePasswordOpen, setIsChangePasswordOpen] = useState(false);
+  const [isSignOutConfirmOpen, setIsSignOutConfirmOpen] = useState(false);
+  const [isDeleteAccountOpen, setIsDeleteAccountOpen] = useState(false);
 
   const [searchQuery, setSearchQuery] = useState('');
   const [openCategory, setOpenCategory] = useState(null);
@@ -135,8 +147,89 @@ export default function MobileNav({
 
   const currentLang = LANGS.find(l => l.code === (i18n.language?.split('-')[0] || currentLangCode)) || LANGS[0];
 
+  const initials = user?.displayName
+    ? user.displayName
+        .split(' ')
+        .map((n) => n[0])
+        .join('')
+        .toUpperCase()
+        .slice(0, 2)
+    : (user?.email?.[0] || 'U').toUpperCase();
+
   return (
     <div className="flex flex-col min-h-full bg-slate-50/95 dark:bg-[#040a18]/95 backdrop-blur-2xl text-slate-900 dark:text-white">
+
+      {/* 0. Top Account Card (matching Screenshot_20261119_180950_Chrome.jpg) */}
+      <div className="p-4 border-b border-slate-200/80 dark:border-[#102040]">
+        {user ? (
+          <div className="flex items-center justify-between p-3 rounded-2xl bg-white dark:bg-[#0c1831] border border-slate-200/80 dark:border-[#1e2d4a] shadow-xs">
+            <div className="flex items-center gap-2.5 min-w-0 pr-2">
+              {user.photoURL ? (
+                <img
+                  src={user.photoURL}
+                  alt={user.displayName || 'User'}
+                  className="w-9 h-9 rounded-full object-cover border border-blue-500 shrink-0"
+                />
+              ) : (
+                <div className="w-9 h-9 rounded-full bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white font-bold text-xs flex items-center justify-center shrink-0 shadow-xs">
+                  {initials}
+                </div>
+              )}
+              <div className="min-w-0 flex-1">
+                <p className="text-xs font-bold text-slate-900 dark:text-white leading-tight">
+                  {t('auth.account', 'Account')}
+                </p>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 truncate max-w-[130px] sm:max-w-[180px]">
+                  {user.email}
+                </p>
+              </div>
+            </div>
+
+            {/* Quick Actions Row: Key, Sign Out, Trash */}
+            <div className="flex items-center gap-1.5 shrink-0">
+              <button
+                type="button"
+                onClick={() => setIsChangePasswordOpen(true)}
+                className="w-8 h-8 rounded-xl flex items-center justify-center text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-[#102040] border border-slate-200 dark:border-[#1e2d4a] transition-all cursor-pointer"
+                title={t('account.changePassword', t('auth.changePassword', 'Change Password'))}
+                aria-label={t('account.changePassword', t('auth.changePassword', 'Change Password'))}
+              >
+                <Key className="w-3.5 h-3.5" />
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setIsSignOutConfirmOpen(true)}
+                className="px-2.5 py-1.5 rounded-xl text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-[#102040] border border-slate-200 dark:border-[#1e2d4a] transition-all cursor-pointer whitespace-nowrap"
+              >
+                {t('auth.signOut', 'Sign Out')}
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setIsDeleteAccountOpen(true)}
+                className="w-8 h-8 rounded-xl flex items-center justify-center text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/40 border border-rose-200/80 dark:border-rose-900/40 transition-all cursor-pointer"
+                title={t('account.deleteAccount', t('auth.deleteAccount', 'Delete Account'))}
+                aria-label={t('account.deleteAccount', t('auth.deleteAccount', 'Delete Account'))}
+              >
+                <Trash2 className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+        ) : (
+          <button
+            type="button"
+            onClick={() => {
+              onClose();
+              openAuthModal();
+            }}
+            className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-2xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-semibold text-xs sm:text-sm shadow-md shadow-blue-900/20 active:scale-[0.98] transition-all cursor-pointer"
+          >
+            <User className="w-4 h-4" />
+            <span>{t('auth.signInToAccount', 'Sign In to Your Account')}</span>
+          </button>
+        )}
+      </div>
 
       {/* 1. Search Bar (matching image_3.png) */}
       <div className="p-4 border-b border-slate-200/80 dark:border-[#102040]">
@@ -415,6 +508,28 @@ export default function MobileNav({
 
       </div>
 
+      {/* Change Password Modal */}
+      <ChangePasswordModal
+        isOpen={isChangePasswordOpen}
+        onClose={() => setIsChangePasswordOpen(false)}
+      />
+
+      {/* Sign Out Confirmation Modal */}
+      <SignOutConfirmModal
+        isOpen={isSignOutConfirmOpen}
+        onClose={() => setIsSignOutConfirmOpen(false)}
+        onConfirm={async () => {
+          setIsSignOutConfirmOpen(false);
+          onClose();
+          await signOut();
+        }}
+      />
+
+      {/* Delete Account Modal */}
+      <DeleteAccountModal
+        isOpen={isDeleteAccountOpen}
+        onClose={() => setIsDeleteAccountOpen(false)}
+      />
     </div>
   );
 }

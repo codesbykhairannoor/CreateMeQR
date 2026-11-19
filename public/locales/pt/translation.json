@@ -2233,18 +2233,66 @@
     "p_7": "Nossa arquitetura de engenharia está em estrita conformidade com o padrão internacional de código QR ISO/IEC 18004:2015 e se alinha perfeitamente com a estrutura de privacidade de dados do NIST e a especificação W3C HTML5 para aplicações web altamente seguras."
   },
   "auth": {
+    "account": "Conta",
+    "status": "Estado:",
+    "freeStarter": "Iniciante grátis",
+    "proActive": "PRO ativo",
+    "proLifetime": "Vida PRO",
+    "upgradeToPro": "Atualize para PRO",
+    "changePassword": "Alterar senha",
+    "deleteAccount": "Excluir conta",
+    "signInBtn": "Entrar",
+    "signOut": "Sair",
     "signInTitle": "Faça login no CreateMy-QR",
     "signUpTitle": "Crie uma conta",
+    "emailLabel": "Endereço de e-mail",
+    "emailPlaceholder": "você@domínio.com",
+    "passwordLabel": "Senha",
+    "currentPassword": "Senha atual",
+    "newPassword": "Nova senha",
+    "confirmNewPassword": "Confirme a nova senha",
+    "passwordMinChars": "Min. 6 caracteres",
+    "signOutModal": {
+      "title": "Sair da sua conta?",
+      "desc": "Tem certeza de que deseja sair? Você precisará fazer login novamente para acessar os recursos PRO e as configurações da sua conta.",
+      "confirm": "Sim, sair",
+      "cancel": "Cancelar"
+    },
+    "changePasswordModal": {
+      "title": "Alterar senha",
+      "currentPassword": "Senha atual",
+      "forgotCurrent": "Esqueceu a senha atual? Enviar link de redefinição para e-mail",
+      "newPassword": "Nova senha",
+      "confirmNewPassword": "Confirme a nova senha",
+      "placeholderMin": "Min. 6 caracteres",
+      "updateBtn": "Atualizar senha",
+      "cancel": "Cancelar",
+      "resetDesc": "Envie um link de redefinição seguro para seu e-mail para criar uma nova senha.",
+      "sendResetBtn": "Enviar link de redefinição de senha",
+      "knowCurrent": "Sabe sua senha atual? Atualizar diretamente",
+      "successUpdate": "Senha atualizada com sucesso!",
+      "successReset": "Link de redefinição de senha enviado para seu e-mail!",
+      "passwordMismatch": "As novas senhas não coincidem.",
+      "weakPassword": "A senha deve ter pelo menos 6 caracteres.",
+      "fillAll": "Por favor preencha todos os campos."
+    },
+    "deleteAccountModal": {
+      "title": "Excluir conta?",
+      "desc": "Tem certeza de que deseja excluir sua conta? Esta ação é permanente e não pode ser desfeita. Todos os seus códigos QR e configurações salvos serão removidos.",
+      "confirm": "Sim, excluir conta",
+      "cancel": "Cancelar",
+      "requiresRecent": "Saia e faça login novamente antes de excluir sua conta por motivos de segurança.",
+      "success": "Sua conta foi excluída.",
+      "error": "Falha ao excluir conta."
+    },
+    "signInToAccount": "Faça login na sua conta",
     "forgotPasswordTitle": "Redefinir senha",
     "resetNewPasswordTitle": "Definir nova senha",
     "signInSubtitle": "Acesse sua conta, sincronize o histórico e desbloqueie os recursos PRO Lifetime.",
     "signUpSubtitle": "Cadastre-se para gerenciar códigos QR, sincronização de histórico e formatos de exportação PRO.",
     "forgotPasswordSubtitle": "Digite seu e-mail cadastrado para receber um link seguro de redefinição de senha.",
     "resetNewPasswordSubtitle": "Escolha uma nova senha forte para sua conta.",
-    "emailLabel": "Endereço de e-mail",
-    "passwordLabel": "Senha",
     "newPasswordLabel": "Nova senha",
-    "emailPlaceholder": "você@domínio.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Esqueceu a senha?",
     "submitSignIn": "Entrar",
@@ -2262,8 +2310,6 @@
     "hasAccount": "Já tem uma conta?",
     "switchToSignUp": "Cadastre-se gratuitamente",
     "switchToSignIn": "Faça login",
-    "signInBtn": "Entrar",
-    "signOut": "Sair",
     "notConfigured": "O Firebase não está configurado. Verifique as chaves do seu ambiente.",
     "weakPassword": "A senha deve ter pelo menos 6 caracteres.",
     "passwordResetSuccess": "Senha atualizada com sucesso! Faça login.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100% de privacidade do lado do cliente. Seus dados e histórico QR nunca saem do seu navegador.",
     "verificationSentTitle": "Verifique seu e-mail",
     "verificationSentDesc": "Enviamos um link de verificação para {{email}}. Verifique sua caixa de entrada e verifique sua conta.",
+    "checkSpamNote": "Caso não veja o e-mail em sua caixa de entrada, verifique sua pasta de spam ou lixo eletrônico.",
     "verificationCheckBtn": "Eu verifiquei meu e-mail",
     "verificationResendBtn": "Reenviar e-mail de verificação",
     "verificationResentSuccess": "E-mail de verificação reenviado! Por favor, verifique sua pasta de spam.",
     "verificationNotYet": "E-mail ainda não verificado. Clique no link de verificação enviado para sua caixa de entrada.",
     "verificationSuccessToast": "E-mail verificado com sucesso! Bem-vindo a bordo.",
-    "continueToApp": "Continuar para o aplicativo (verificar mais tarde)",
-    "checkSpamNote": "Caso não veja o e-mail em sua caixa de entrada, verifique sua pasta de spam ou lixo eletrônico."
+    "continueToApp": "Continuar para o aplicativo (verificar mais tarde)"
   },
   "account": {
     "title": "Conta",
@@ -2290,7 +2336,7 @@
     "verifyBtn": "Verifique",
     "statusLabel": "Estado:",
     "freeStarter": "Iniciante grátis",
-    "proLifetime": "PRO Vitalício",
+    "proLifetime": "Vida PRO",
     "proMonthly": "PRO ativo",
     "upgradeToPro": "Atualize para PRO",
     "changePassword": "Alterar senha",
@@ -2325,6 +2371,13 @@
       "deleting": "Excluindo conta em quatro aplicativos...",
       "incorrectPassword": "Senha atual incorreta. Por favor, tente novamente.",
       "typeDeleteError": "Digite DELETE em letras maiúsculas para confirmar."
-    }
+    },
+    "signOutModal": {
+      "title": "Sair da sua conta?",
+      "desc": "Tem certeza de que deseja sair? Você precisará fazer login novamente para acessar os recursos PRO e as configurações da sua conta.",
+      "confirmBtn": "Sim, sair",
+      "cancelBtn": "Cancelar"
+    },
+    "signInToAccount": "Faça login na sua conta"
   }
 }

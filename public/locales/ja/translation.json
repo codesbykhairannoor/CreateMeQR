@@ -2233,18 +2233,66 @@
     "p_7": "当社のエンジニアリング アーキテクチャは、権威ある ISO/IEC 18004:2015 QR コード国際標準に厳密に準拠し、NIST データ プライバシー フレームワークおよび安全性の高い Web アプリケーション用の W3C HTML5 仕様とシームレスに連携しています。"
   },
   "auth": {
+    "account": "アカウント",
+    "status": "ステータス:",
+    "freeStarter": "無料スターター",
+    "proActive": "プロアクティブ",
+    "proLifetime": "PRO ライフタイム",
+    "upgradeToPro": "PRO にアップグレード",
+    "changePassword": "パスワードの変更",
+    "deleteAccount": "アカウントの削除",
+    "signInBtn": "サインイン",
+    "signOut": "サインアウト",
     "signInTitle": "CreateMy-QR にサインインする",
     "signUpTitle": "アカウントを作成する",
+    "emailLabel": "メールアドレス",
+    "emailPlaceholder": "you@domain.com",
+    "passwordLabel": "パスワード",
+    "currentPassword": "現在のパスワード",
+    "newPassword": "新しいパスワード",
+    "confirmNewPassword": "新しいパスワードを確認する",
+    "passwordMinChars": "分。 6文字",
+    "signOutModal": {
+      "title": "アカウントからログアウトしますか?",
+      "desc": "ログアウトしてもよろしいですか? PRO 機能やアカウント設定にアクセスするには、再度サインインする必要があります。",
+      "confirm": "はい、ログアウトします",
+      "cancel": "キャンセル"
+    },
+    "changePasswordModal": {
+      "title": "パスワードの変更",
+      "currentPassword": "現在のパスワード",
+      "forgotCurrent": "現在のパスワードをお忘れですか?リセットリンクを電子メールに送信する",
+      "newPassword": "新しいパスワード",
+      "confirmNewPassword": "新しいパスワードを確認する",
+      "placeholderMin": "分。 6文字",
+      "updateBtn": "パスワードを更新する",
+      "cancel": "キャンセル",
+      "resetDesc": "新しいパスワードを作成するには、安全なリセット リンクを電子メールに送信します。",
+      "sendResetBtn": "パスワードリセットリンクを送信する",
+      "knowCurrent": "現在のパスワードを知っていますか?直接更新する",
+      "successUpdate": "パスワードが正常に更新されました。",
+      "successReset": "パスワードリセットリンクがメールに送信されました。",
+      "passwordMismatch": "新しいパスワードが一致しません。",
+      "weakPassword": "パスワードは6文字以上である必要があります。",
+      "fillAll": "すべてのフィールドに入力してください。"
+    },
+    "deleteAccountModal": {
+      "title": "アカウントを削除しますか?",
+      "desc": "アカウントを削除してもよろしいですか?このアクションは永続的であり、元に戻すことはできません。保存した QR コードと設定はすべて削除されます。",
+      "confirm": "はい、アカウントを削除します",
+      "cancel": "キャンセル",
+      "requiresRecent": "セキュリティ上の理由から、アカウントを削除する前に、サインアウトしてから再度サインインしてください。",
+      "success": "あなたのアカウントは削除されました。",
+      "error": "アカウントの削除に失敗しました。"
+    },
+    "signInToAccount": "アカウントにサインインする",
     "forgotPasswordTitle": "パスワードのリセット",
     "resetNewPasswordTitle": "新しいパスワードを設定する",
     "signInSubtitle": "アカウントにアクセスし、履歴を同期し、PRO ライフタイム機能のロックを解除します。",
     "signUpSubtitle": "QR コード、履歴同期、PRO エクスポート形式を管理するにはサインアップしてください。",
     "forgotPasswordSubtitle": "登録したメールアドレスを入力すると、安全なパスワード リセット リンクが届きます。",
     "resetNewPasswordSubtitle": "アカウントに強力な新しいパスワードを選択してください。",
-    "emailLabel": "メールアドレス",
-    "passwordLabel": "パスワード",
     "newPasswordLabel": "新しいパスワード",
-    "emailPlaceholder": "you@domain.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "パスワードをお忘れですか?",
     "submitSignIn": "サインイン",
@@ -2262,8 +2310,6 @@
     "hasAccount": "すでにアカウントをお持ちですか?",
     "switchToSignUp": "無料でサインアップ",
     "switchToSignIn": "サインイン",
-    "signInBtn": "サインイン",
-    "signOut": "サインアウト",
     "notConfigured": "Firebaseが設定されていません。環境キーを確認してください。",
     "weakPassword": "パスワードは6文字以上である必要があります。",
     "passwordResetSuccess": "パスワードが正常に更新されました。サインインしてください。",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100% クライアント側のプライバシー。 QR データと履歴がブラウザから離れることはありません。",
     "verificationSentTitle": "メールアドレスを確認してください",
     "verificationSentDesc": "確認リンクを {{email}} に送信しました。受信箱をチェックしてアカウントを確認してください。",
+    "checkSpamNote": "受信箱にメールが見つからない場合は、スパムまたは迷惑メール フォルダーを確認してください。",
     "verificationCheckBtn": "メールアドレスを確認しました",
     "verificationResendBtn": "確認メールを再送信する",
     "verificationResentSuccess": "確認メールを再送信しました!スパムフォルダを確認してください。",
     "verificationNotYet": "メールはまだ認証されていません。受信箱に送信された確認リンクをクリックしてください。",
     "verificationSuccessToast": "メールアドレスが正常に認証されました。ようこそ。",
-    "continueToApp": "アプリに進む (後で確認)",
-    "checkSpamNote": "受信箱にメールが見つからない場合は、スパムまたは迷惑メール フォルダーを確認してください。"
+    "continueToApp": "アプリに進む (後で確認)"
   },
   "account": {
     "title": "アカウント",
@@ -2325,6 +2371,13 @@
       "deleting": "4 つのアプリにわたってアカウントを削除しています...",
       "incorrectPassword": "現在のパスワードが正しくありません。もう一度試してください。",
       "typeDeleteError": "確認するには大文字で「DELETE」と入力してください。"
-    }
+    },
+    "signOutModal": {
+      "title": "アカウントからログアウトしますか?",
+      "desc": "ログアウトしてもよろしいですか? PRO 機能やアカウント設定にアクセスするには、再度サインインする必要があります。",
+      "confirmBtn": "はい、ログアウトします",
+      "cancelBtn": "キャンセル"
+    },
+    "signInToAccount": "アカウントにサインインする"
   }
 }

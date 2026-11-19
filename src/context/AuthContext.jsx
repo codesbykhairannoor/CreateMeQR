@@ -141,6 +141,28 @@ export const AuthProvider = ({ children }) => {
   }, [user, fetchOrCreateProfile]);
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const mockStr = localStorage.getItem('__mock_auth_user__');
+      if (mockStr) {
+        try {
+          const mockUser = JSON.parse(mockStr);
+          setUser(mockUser);
+          setProfile({
+            uid: mockUser.uid || 'mock-user-123',
+            email: mockUser.email,
+            displayName: mockUser.displayName || 'Mock User',
+            photoURL: mockUser.photoURL || null,
+            plan: mockUser.plan || 'free',
+            subscriptionStatus: mockUser.plan === 'pro' ? 'active' : 'inactive',
+          });
+          setLoading(false);
+          return;
+        } catch {
+          // ignore error
+        }
+      }
+    }
+
     if (typeof window === 'undefined' || !auth || !isFirebaseConfigured) {
       setLoading(false);
       return;
@@ -332,7 +354,14 @@ export const AuthProvider = ({ children }) => {
   };
 
   const signOut = async () => {
-    if (!auth) return;
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('__mock_auth_user__');
+    }
+    if (!auth || !isFirebaseConfigured) {
+      setUser(null);
+      setProfile(null);
+      return;
+    }
     try {
       await firebaseSignOut(auth);
       setUser(null);

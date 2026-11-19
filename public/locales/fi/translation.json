@@ -2233,18 +2233,66 @@
     "p_7": "Suunnitteluarkkitehtuurimme noudattaa tiukasti arvovaltaista ISO/IEC 18004:2015 QR Code International -standardia ja sopii saumattomasti NIST Data Privacy Frameworkin ja W3C HTML5 -määrityksen kanssa erittäin turvallisille verkkosovelluksille."
   },
   "auth": {
+    "account": "Tili",
+    "status": "Tila:",
+    "freeStarter": "Ilmainen aloitus",
+    "proActive": "PRO aktiivinen",
+    "proLifetime": "PRO elinikäinen",
+    "upgradeToPro": "Päivitä PRO:ksi",
+    "changePassword": "Vaihda salasana",
+    "deleteAccount": "Poista tili",
+    "signInBtn": "Kirjaudu sisään",
+    "signOut": "Kirjaudu ulos",
     "signInTitle": "Kirjaudu CreateMy-QR:iin",
     "signUpTitle": "Luo tili",
+    "emailLabel": "Sähköpostiosoite",
+    "emailPlaceholder": "sinä@verkkotunnus.com",
+    "passwordLabel": "Salasana",
+    "currentPassword": "Nykyinen salasana",
+    "newPassword": "Uusi salasana",
+    "confirmNewPassword": "Vahvista uusi salasana",
+    "passwordMinChars": "Min. 6 merkkiä",
+    "signOutModal": {
+      "title": "Kirjaudu ulos tililtäsi?",
+      "desc": "Haluatko varmasti kirjautua ulos? Sinun on kirjauduttava sisään uudelleen käyttääksesi PRO-ominaisuuksia ja tilisi asetuksia.",
+      "confirm": "Kyllä, Kirjaudu ulos",
+      "cancel": "Peruuta"
+    },
+    "changePasswordModal": {
+      "title": "Vaihda salasana",
+      "currentPassword": "Nykyinen salasana",
+      "forgotCurrent": "Unohditko nykyisen salasanan? Lähetä palautuslinkki sähköpostiin",
+      "newPassword": "Uusi salasana",
+      "confirmNewPassword": "Vahvista uusi salasana",
+      "placeholderMin": "Min. 6 merkkiä",
+      "updateBtn": "Päivitä salasana",
+      "cancel": "Peruuta",
+      "resetDesc": "Luo uusi salasana lähettämällä suojattu palautuslinkki sähköpostiisi.",
+      "sendResetBtn": "Lähetä salasanan palautuslinkki",
+      "knowCurrent": "Tiedätkö nykyisen salasanasi? Päivitä suoraan",
+      "successUpdate": "Salasana päivitetty onnistuneesti!",
+      "successReset": "Salasanan palautuslinkki lähetetty sähköpostiisi!",
+      "passwordMismatch": "Uudet salasanat eivät täsmää.",
+      "weakPassword": "Salasanassa on oltava vähintään 6 merkkiä.",
+      "fillAll": "Täytä kaikki kentät."
+    },
+    "deleteAccountModal": {
+      "title": "Poistetaanko tili?",
+      "desc": "Haluatko varmasti poistaa tilisi? Tämä toiminto on pysyvä, eikä sitä voi kumota. Kaikki tallennetut QR-koodit ja asetuksesi poistetaan.",
+      "confirm": "Kyllä, poista tili",
+      "cancel": "Peruuta",
+      "requiresRecent": "Kirjaudu ulos ja kirjaudu sisään uudelleen ennen tilisi poistamista turvallisuussyistä.",
+      "success": "Tilisi on poistettu.",
+      "error": "Tilin poistaminen epäonnistui."
+    },
+    "signInToAccount": "Kirjaudu tilillesi",
     "forgotPasswordTitle": "Palauta salasana",
     "resetNewPasswordTitle": "Aseta uusi salasana",
     "signInSubtitle": "Käytä tiliäsi, synkronointihistoriaa ja avaa PRO Lifetime -ominaisuuksien lukitus.",
     "signUpSubtitle": "Rekisteröidy hallitaksesi QR-koodeja, historian synkronointia ja PRO-vientimuotoja.",
     "forgotPasswordSubtitle": "Kirjoita rekisteröity sähköpostiosoitteesi saadaksesi suojatun salasanan palautuslinkin.",
     "resetNewPasswordSubtitle": "Valitse tilillesi uusi vahva salasana.",
-    "emailLabel": "Sähköpostiosoite",
-    "passwordLabel": "Salasana",
     "newPasswordLabel": "Uusi salasana",
-    "emailPlaceholder": "sinä@verkkotunnus.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Unohditko salasanan?",
     "submitSignIn": "Kirjaudu sisään",
@@ -2262,8 +2310,6 @@
     "hasAccount": "Onko sinulla jo tili?",
     "switchToSignUp": "Rekisteröidy ilmaiseksi",
     "switchToSignIn": "Kirjaudu sisään",
-    "signInBtn": "Kirjaudu sisään",
-    "signOut": "Kirjaudu ulos",
     "notConfigured": "Firebasea ei ole määritetty. Vahvista ympäristöavaimesi.",
     "weakPassword": "Salasanassa on oltava vähintään 6 merkkiä.",
     "passwordResetSuccess": "Salasana päivitetty onnistuneesti! Kirjaudu sisään.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100 % asiakaspuolen tietosuoja. QR-tietosi ja historiasi eivät koskaan poistu selaimeltasi.",
     "verificationSentTitle": "Vahvista sähköpostiosoitteesi",
     "verificationSentDesc": "Olemme lähettäneet vahvistuslinkin osoitteeseen {{email}}. Tarkista postilaatikkosi ja vahvista tilisi.",
+    "checkSpamNote": "Jos et näe sähköpostia postilaatikossasi, tarkista roskaposti- tai roskapostikansiosi.",
     "verificationCheckBtn": "Olen vahvistanut sähköpostiosoitteeni",
     "verificationResendBtn": "Lähetä vahvistussähköposti uudelleen",
     "verificationResentSuccess": "Vahvistussähköposti lähetetty uudelleen! Tarkista roskapostikansiosi.",
-    "verificationNotYet": "Sähköpostia ei ole vielä vahvistettu. Napsauta sähköpostiisi lähetettyä vahvistuslinkkiä.",
+    "verificationNotYet": "Sähköpostiosoitetta ei ole vielä vahvistettu. Napsauta sähköpostiisi lähetettyä vahvistuslinkkiä.",
     "verificationSuccessToast": "Sähköposti vahvistettu onnistuneesti! Tervetuloa kyytiin.",
-    "continueToApp": "Jatka sovellukseen (vahvista myöhemmin)",
-    "checkSpamNote": "Jos et näe sähköpostia postilaatikossasi, tarkista roskaposti- tai roskapostikansiosi."
+    "continueToApp": "Jatka sovellukseen (vahvista myöhemmin)"
   },
   "account": {
     "title": "Tili",
@@ -2325,6 +2371,13 @@
       "deleting": "Poistetaan tiliä neljästä sovelluksesta...",
       "incorrectPassword": "Virheellinen nykyinen salasana. Yritä uudelleen.",
       "typeDeleteError": "Vahvista kirjoittamalla DELETE isoilla kirjaimilla."
-    }
+    },
+    "signOutModal": {
+      "title": "Kirjaudu ulos tililtäsi?",
+      "desc": "Haluatko varmasti kirjautua ulos? Sinun on kirjauduttava sisään uudelleen käyttääksesi PRO-ominaisuuksia ja tilisi asetuksia.",
+      "confirmBtn": "Kyllä, Kirjaudu ulos",
+      "cancelBtn": "Peruuta"
+    },
+    "signInToAccount": "Kirjaudu tilillesi"
   }
 }

@@ -2233,18 +2233,66 @@
     }
   },
   "auth": {
+    "account": "fiók",
+    "status": "Állapot:",
+    "freeStarter": "Ingyenes Starter",
+    "proActive": "PRO aktív",
+    "proLifetime": "PRO élettartam",
+    "upgradeToPro": "Frissítsen PRO-ra",
+    "changePassword": "Jelszó módosítása",
+    "deleteAccount": "Fiók törlése lehetőségre",
+    "signInBtn": "Jelentkezzen be",
+    "signOut": "Jelentkezzen ki",
     "signInTitle": "Jelentkezzen be a CreateMy-QR-be",
     "signUpTitle": "Hozzon létre egy fiókot",
+    "emailLabel": "E-mail cím",
+    "emailPlaceholder": "te@domain.com",
+    "passwordLabel": "Jelszó",
+    "currentPassword": "Jelenlegi jelszó",
+    "newPassword": "Új jelszó",
+    "confirmNewPassword": "Új jelszó megerősítése",
+    "passwordMinChars": "Min. 6 karakter",
+    "signOutModal": {
+      "title": "Kijelentkezik a fiókjából?",
+      "desc": "Biztos, hogy ki akar jelentkezni? Újra be kell jelentkeznie a PRO funkcióinak és fiókbeállításainak eléréséhez.",
+      "confirm": "Igen, Kijelentkezés",
+      "cancel": "Mégse"
+    },
+    "changePasswordModal": {
+      "title": "Jelszó módosítása",
+      "currentPassword": "Jelenlegi jelszó",
+      "forgotCurrent": "Elfelejtette a jelenlegi jelszavát? Reset link küldése e-mailre",
+      "newPassword": "Új jelszó",
+      "confirmNewPassword": "Új jelszó megerősítése",
+      "placeholderMin": "Min. 6 karakter",
+      "updateBtn": "Jelszó frissítése",
+      "cancel": "Mégse",
+      "resetDesc": "Új jelszó létrehozásához küldjön egy biztonságos visszaállítási hivatkozást az e-mail címére.",
+      "sendResetBtn": "Jelszó-visszaállítási hivatkozás küldése",
+      "knowCurrent": "Ismeri jelenlegi jelszavát? Frissítse közvetlenül",
+      "successUpdate": "A jelszó sikeresen frissítve!",
+      "successReset": "Jelszó-visszaállítási linket küldtünk az e-mail címedre!",
+      "passwordMismatch": "Az új jelszavak nem egyeznek.",
+      "weakPassword": "A jelszónak legalább 6 karakterből kell állnia.",
+      "fillAll": "Kérjük, töltse ki az összes mezőt."
+    },
+    "deleteAccountModal": {
+      "title": "Törli a fiókot?",
+      "desc": "Biztos benne, hogy törölni szeretné fiókját? Ez a művelet végleges, és nem vonható vissza. Az összes mentett QR-kód és beállítás törlődik.",
+      "confirm": "Igen, Fiók törlése",
+      "cancel": "Mégse",
+      "requiresRecent": "Kérjük, biztonsági okokból jelentkezzen ki, majd jelentkezzen be újra, mielőtt törölné fiókját.",
+      "success": "Fiókját törölték.",
+      "error": "Nem sikerült törölni a fiókot."
+    },
+    "signInToAccount": "Jelentkezzen be fiókjába",
     "forgotPasswordTitle": "Jelszó visszaállítása",
     "resetNewPasswordTitle": "Új jelszó beállítása",
     "signInSubtitle": "Hozzáférhet fiókjához, szinkronizálási előzményeihez, és feloldhatja a PRO Lifetime funkcióit.",
     "signUpSubtitle": "Regisztráljon a QR-kódok, az előzmények szinkronizálása és a PRO exportformátumok kezeléséhez.",
     "forgotPasswordSubtitle": "Adja meg regisztrált e-mail címét, hogy biztonságos jelszó-visszaállítási linket kapjon.",
     "resetNewPasswordSubtitle": "Válasszon új erős jelszót a fiókjához.",
-    "emailLabel": "E-mail cím",
-    "passwordLabel": "Jelszó",
     "newPasswordLabel": "Új jelszó",
-    "emailPlaceholder": "te@domain.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Elfelejtetted a jelszavad?",
     "submitSignIn": "Jelentkezzen be",
@@ -2262,13 +2310,11 @@
     "hasAccount": "Már van fiókja?",
     "switchToSignUp": "Ingyenes regisztráció",
     "switchToSignIn": "Jelentkezzen be",
-    "signInBtn": "Jelentkezzen be",
-    "signOut": "Jelentkezzen ki",
     "notConfigured": "A Firebase nincs konfigurálva. Kérjük, ellenőrizze környezeti kulcsait.",
     "weakPassword": "A jelszónak legalább 6 karakterből kell állnia.",
     "passwordResetSuccess": "A jelszó sikeresen frissítve! Kérjük, jelentkezzen be.",
     "fillEmail": "Kérjük, adja meg e-mail címét.",
-    "resetEmailSent": "Jelszó-visszaállítási linket elküldtünk az e-mail címére. Kérjük, ellenőrizze beérkező leveleit.",
+    "resetEmailSent": "Jelszó-visszaállítási linket elküldtünk az e-mail címére. Kérjük, ellenőrizze a postaládáját.",
     "userNotFound": "Nem található fiók ezzel az e-mail címmel.",
     "fillAllFields": "Kérjük, töltse ki az összes mezőt.",
     "invalidCredentials": "Érvénytelen e-mail cím vagy jelszó.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100%-os ügyféloldali adatvédelem. QR-adatai és előzményei soha nem hagyják el a böngészőt.",
     "verificationSentTitle": "Igazolja e-mail-címét",
     "verificationSentDesc": "Ellenőrző linket küldtünk az {{email}} címre. Kérjük, ellenőrizze beérkező leveleit, és igazolja fiókját.",
+    "checkSpamNote": "Ha nem látja az e-mailt a beérkező levelek között, kérjük, ellenőrizze a spam vagy a levélszemét mappát.",
     "verificationCheckBtn": "Megerősítettem az e-mail címem",
     "verificationResendBtn": "Ellenőrző e-mail újraküldése",
     "verificationResentSuccess": "Az ellenőrző e-mail újra elküldve! Kérjük, ellenőrizze a spam mappát.",
     "verificationNotYet": "Az e-mail cím még nincs ellenőrizve. Kérjük, kattintson a postaládájába küldött ellenőrző linkre.",
     "verificationSuccessToast": "Az e-mail-cím sikeresen ellenőrizve! Üdvözöljük a fedélzeten.",
-    "continueToApp": "Tovább az alkalmazáshoz (ellenőrzés később)",
-    "checkSpamNote": "Ha nem látja az e-mailt a beérkező levelek között, kérjük, ellenőrizze a spam vagy a levélszemét mappát."
+    "continueToApp": "Tovább az alkalmazáshoz (ellenőrzés később)"
   },
   "account": {
     "title": "fiók",
@@ -2299,7 +2345,7 @@
     "changePasswordModal": {
       "title": "Jelszó módosítása",
       "currentPasswordLabel": "Jelenlegi jelszó",
-      "forgotCurrentLink": "Elfelejtette az aktuális jelszót? Reset link küldése e-mailre",
+      "forgotCurrentLink": "Elfelejtette a jelenlegi jelszavát? Reset link küldése e-mailre",
       "newPasswordLabel": "Új jelszó",
       "newPasswordPlaceholder": "Min. 6 karakter",
       "confirmPasswordLabel": "Új jelszó megerősítése",
@@ -2308,7 +2354,7 @@
       "fillCurrent": "Kérjük, adja meg jelenlegi jelszavát.",
       "passwordMismatch": "Az új jelszavak nem egyeznek.",
       "passwordUpdated": "A jelszó sikeresen frissítve!",
-      "resetSubtitle": "Send a secure reset link to your email to create a new password.",
+      "resetSubtitle": "Új jelszó létrehozásához küldjön egy biztonságos visszaállítási hivatkozást az e-mail címére.",
       "sendResetLinkBtn": "Jelszó-visszaállítási hivatkozás küldése",
       "knowCurrentLink": "Ismeri jelenlegi jelszavát? Frissítse közvetlenül",
       "resetLinkSent": "Jelszó-visszaállítási linket küldtünk az e-mail címedre!"
@@ -2325,6 +2371,13 @@
       "deleting": "Fiók törlése 4 alkalmazásban...",
       "incorrectPassword": "Helytelen jelenlegi jelszó. Kérjük, próbálja újra.",
       "typeDeleteError": "A megerősítéshez írja be a DELETE szót nagybetűvel."
-    }
+    },
+    "signOutModal": {
+      "title": "Kijelentkezik a fiókjából?",
+      "desc": "Biztos, hogy ki akar jelentkezni? Újra be kell jelentkeznie a PRO funkcióinak és fiókbeállításainak eléréséhez.",
+      "confirmBtn": "Igen, Kijelentkezés",
+      "cancelBtn": "Mégse"
+    },
+    "signInToAccount": "Jelentkezzen be fiókjába"
   }
 }

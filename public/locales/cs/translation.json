@@ -2233,18 +2233,66 @@
     "p_7": "Naše inženýrská architektura striktně odpovídá autoritativnímu mezinárodnímu standardu QR Code 18004:2015 ISO/IEC a hladce se shoduje s rámcem NIST Data Privacy Framework a specifikací W3C HTML5 pro vysoce zabezpečené webové aplikace."
   },
   "auth": {
+    "account": "účet",
+    "status": "Stav:",
+    "freeStarter": "Startér zdarma",
+    "proActive": "PRO Active",
+    "proLifetime": "PRO Lifetime",
+    "upgradeToPro": "Upgradujte na PRO",
+    "changePassword": "Změnit heslo",
+    "deleteAccount": "Smazat účet",
+    "signInBtn": "Přihlaste se",
+    "signOut": "Odhlásit se",
     "signInTitle": "Přihlaste se do CreateMy-QR",
     "signUpTitle": "Vytvořte si účet",
+    "emailLabel": "E-mailová adresa",
+    "emailPlaceholder": "ty@domena.com",
+    "passwordLabel": "Heslo",
+    "currentPassword": "Aktuální heslo",
+    "newPassword": "Nové heslo",
+    "confirmNewPassword": "Potvrďte nové heslo",
+    "passwordMinChars": "Min. 6 znaků",
+    "signOutModal": {
+      "title": "Odhlásit se ze svého účtu?",
+      "desc": "Opravdu se chcete odhlásit? Pro přístup k funkcím PRO a nastavení účtu se budete muset znovu přihlásit.",
+      "confirm": "Ano, Odhlásit se",
+      "cancel": "Zrušit"
+    },
+    "changePasswordModal": {
+      "title": "Změnit heslo",
+      "currentPassword": "Aktuální heslo",
+      "forgotCurrent": "Zapomněli jste aktuální heslo? Odeslat odkaz na reset na e-mail",
+      "newPassword": "Nové heslo",
+      "confirmNewPassword": "Potvrďte nové heslo",
+      "placeholderMin": "Min. 6 znaků",
+      "updateBtn": "Aktualizovat heslo",
+      "cancel": "Zrušit",
+      "resetDesc": "Chcete-li vytvořit nové heslo, zašlete na svůj e-mail odkaz pro zabezpečený reset.",
+      "sendResetBtn": "Odeslat odkaz pro resetování hesla",
+      "knowCurrent": "Znáte své aktuální heslo? Aktualizujte přímo",
+      "successUpdate": "Heslo bylo úspěšně aktualizováno!",
+      "successReset": "Odkaz pro obnovení hesla byl odeslán na váš e-mail!",
+      "passwordMismatch": "Nová hesla se neshodují.",
+      "weakPassword": "Heslo musí mít alespoň 6 znaků.",
+      "fillAll": "Vyplňte prosím všechna pole."
+    },
+    "deleteAccountModal": {
+      "title": "Smazat účet?",
+      "desc": "Opravdu chcete smazat svůj účet? Tato akce je trvalá a nelze ji vrátit zpět. Všechny vaše uložené QR kódy a nastavení budou odstraněny.",
+      "confirm": "Ano, smazat účet",
+      "cancel": "Zrušit",
+      "requiresRecent": "Před smazáním účtu z bezpečnostních důvodů se prosím odhlaste a znovu přihlaste.",
+      "success": "Váš účet byl smazán.",
+      "error": "Účet se nepodařilo smazat."
+    },
+    "signInToAccount": "Přihlaste se ke svému účtu",
     "forgotPasswordTitle": "Obnovit heslo",
     "resetNewPasswordTitle": "Nastavit nové heslo",
     "signInSubtitle": "Získejte přístup ke svému účtu, synchronizujte historii a odemkněte funkce PRO Lifetime.",
     "signUpSubtitle": "Přihlaste se ke správě QR kódů, synchronizace historie a exportních formátů PRO.",
     "forgotPasswordSubtitle": "Zadejte svůj registrovaný e-mail a obdržíte bezpečný odkaz pro resetování hesla.",
-    "resetNewPasswordSubtitle": "Zvolte pro svůj účet silné nové heslo.",
-    "emailLabel": "E-mailová adresa",
-    "passwordLabel": "Heslo",
+    "resetNewPasswordSubtitle": "Zvolte silné nové heslo pro svůj účet.",
     "newPasswordLabel": "Nové heslo",
-    "emailPlaceholder": "ty@domena.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Zapomněli jste heslo?",
     "submitSignIn": "Přihlaste se",
@@ -2262,8 +2310,6 @@
     "hasAccount": "Už máte účet?",
     "switchToSignUp": "Zaregistrujte se zdarma",
     "switchToSignIn": "Přihlaste se",
-    "signInBtn": "Přihlaste se",
-    "signOut": "Odhlásit se",
     "notConfigured": "Firebase není nakonfigurována. Ověřte prosím své klíče prostředí.",
     "weakPassword": "Heslo musí mít alespoň 6 znaků.",
     "passwordResetSuccess": "Heslo bylo úspěšně aktualizováno! Přihlaste se prosím.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100% soukromí na straně klienta. Vaše QR data a historie nikdy neopustí váš prohlížeč.",
     "verificationSentTitle": "Ověřte svůj e-mail",
     "verificationSentDesc": "Odeslali jsme ověřovací odkaz na {{email}}. Zkontrolujte prosím svou doručenou poštu a ověřte svůj účet.",
+    "checkSpamNote": "Pokud e-mail ve své doručené poště nevidíte, zkontrolujte složku se spamem nebo nevyžádanou poštou.",
     "verificationCheckBtn": "Ověřil jsem svůj e-mail",
     "verificationResendBtn": "Znovu odeslat ověřovací e-mail",
     "verificationResentSuccess": "Ověřovací e-mail odeslán znovu! Zkontrolujte prosím složku se spamem.",
     "verificationNotYet": "E-mail zatím není ověřen. Klikněte prosím na ověřovací odkaz zaslaný do vaší doručené pošty.",
     "verificationSuccessToast": "E-mail byl úspěšně ověřen! Vítejte na palubě.",
-    "continueToApp": "Pokračovat do aplikace (Ověřit později)",
-    "checkSpamNote": "Pokud e-mail ve své doručené poště nevidíte, zkontrolujte složku se spamem nebo nevyžádanou poštou."
+    "continueToApp": "Pokračovat do aplikace (Ověřit později)"
   },
   "account": {
     "title": "účet",
@@ -2325,6 +2371,13 @@
       "deleting": "Mazání účtu ve 4 aplikacích...",
       "incorrectPassword": "Nesprávné aktuální heslo. Zkuste to prosím znovu.",
       "typeDeleteError": "Pro potvrzení zadejte DELETE velkými písmeny."
-    }
+    },
+    "signOutModal": {
+      "title": "Odhlásit se ze svého účtu?",
+      "desc": "Opravdu se chcete odhlásit? Pro přístup k funkcím PRO a nastavení účtu se budete muset znovu přihlásit.",
+      "confirmBtn": "Ano, Odhlásit se",
+      "cancelBtn": "Zrušit"
+    },
+    "signInToAccount": "Přihlaste se ke svému účtu"
   }
 }

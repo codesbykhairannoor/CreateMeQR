@@ -2233,18 +2233,66 @@
     "p_7": "Kiến trúc kỹ thuật của chúng tôi tuân thủ nghiêm ngặt Tiêu chuẩn quốc tế mã QR ISO/IEC 18004:2015 có thẩm quyền và hoàn toàn phù hợp với Khung bảo mật dữ liệu NIST và Đặc tả HTML5 W3C dành cho các ứng dụng web có độ bảo mật cao."
   },
   "auth": {
+    "account": "Tài khoản",
+    "status": "Tình trạng:",
+    "freeStarter": "Người bắt đầu miễn phí",
+    "proActive": "CHUYÊN NGHIỆP Hoạt động",
+    "proLifetime": "CHUYÊN NGHIỆP trọn đời",
+    "upgradeToPro": "Nâng cấp lên PRO",
+    "changePassword": "Thay đổi mật khẩu",
+    "deleteAccount": "Xóa tài khoản",
+    "signInBtn": "Đăng nhập",
+    "signOut": "Đăng xuất",
     "signInTitle": "Đăng nhập vào CreateMy-QR",
     "signUpTitle": "Tạo một tài khoản",
+    "emailLabel": "Địa chỉ email",
+    "emailPlaceholder": "bạn@domain.com",
+    "passwordLabel": "Mật khẩu",
+    "currentPassword": "Mật khẩu hiện tại",
+    "newPassword": "Mật khẩu mới",
+    "confirmNewPassword": "Xác nhận mật khẩu mới",
+    "passwordMinChars": "Tối thiểu. 6 ký tự",
+    "signOutModal": {
+      "title": "Đăng xuất khỏi tài khoản của bạn?",
+      "desc": "Bạn có chắc chắn muốn đăng xuất không? Bạn sẽ cần phải đăng nhập lại để truy cập các tính năng PRO và cài đặt tài khoản của mình.",
+      "confirm": "Có, Đăng xuất",
+      "cancel": "Hủy bỏ"
+    },
+    "changePasswordModal": {
+      "title": "Thay đổi mật khẩu",
+      "currentPassword": "Mật khẩu hiện tại",
+      "forgotCurrent": "Quên mật khẩu hiện tại? Gửi liên kết đặt lại tới email",
+      "newPassword": "Mật khẩu mới",
+      "confirmNewPassword": "Xác nhận mật khẩu mới",
+      "placeholderMin": "Tối thiểu. 6 ký tự",
+      "updateBtn": "Cập nhật mật khẩu",
+      "cancel": "Hủy bỏ",
+      "resetDesc": "Gửi liên kết đặt lại an toàn tới email của bạn để tạo mật khẩu mới.",
+      "sendResetBtn": "Gửi liên kết đặt lại mật khẩu",
+      "knowCurrent": "Know your current password? Cập nhật trực tiếp",
+      "successUpdate": "Password updated successfully!",
+      "successReset": "Password reset link sent to your email!",
+      "passwordMismatch": "New passwords do not match.",
+      "weakPassword": "Password must be at least 6 characters.",
+      "fillAll": "Please fill in all fields."
+    },
+    "deleteAccountModal": {
+      "title": "Xóa tài khoản?",
+      "desc": "Are you sure you want to delete your account? This action is permanent and cannot be undone. Tất cả các mã QR và cài đặt đã lưu của bạn sẽ bị xóa.",
+      "confirm": "Có, Xóa tài khoản",
+      "cancel": "Hủy bỏ",
+      "requiresRecent": "Vui lòng đăng xuất và đăng nhập lại trước khi xóa tài khoản của bạn vì lý do bảo mật.",
+      "success": "Your account has been deleted.",
+      "error": "Không thể xóa tài khoản."
+    },
+    "signInToAccount": "Đăng nhập vào tài khoản của bạn",
     "forgotPasswordTitle": "Đặt lại mật khẩu",
     "resetNewPasswordTitle": "Đặt mật khẩu mới",
     "signInSubtitle": "Truy cập tài khoản của bạn, lịch sử đồng bộ hóa và mở khóa các tính năng PRO Lifetime.",
     "signUpSubtitle": "Đăng ký để quản lý mã QR, đồng bộ hóa lịch sử và định dạng xuất PRO.",
     "forgotPasswordSubtitle": "Nhập email đã đăng ký của bạn để nhận liên kết đặt lại mật khẩu an toàn.",
     "resetNewPasswordSubtitle": "Chọn một mật khẩu mới mạnh cho tài khoản của bạn.",
-    "emailLabel": "Địa chỉ email",
-    "passwordLabel": "Mật khẩu",
     "newPasswordLabel": "Mật khẩu mới",
-    "emailPlaceholder": "bạn@domain.com",
     "passwordPlaceholder": "•···········",
     "forgotPasswordLink": "Quên mật khẩu?",
     "submitSignIn": "Đăng nhập",
@@ -2262,8 +2310,6 @@
     "hasAccount": "Đã có tài khoản?",
     "switchToSignUp": "Đăng ký miễn phí",
     "switchToSignIn": "Đăng nhập",
-    "signInBtn": "Đăng nhập",
-    "signOut": "Đăng xuất",
     "notConfigured": "Firebase chưa được định cấu hình. Vui lòng xác minh các khóa môi trường của bạn.",
     "weakPassword": "Mật khẩu phải có ít nhất 6 ký tự.",
     "passwordResetSuccess": "Đã cập nhật mật khẩu thành công! Vui lòng đăng nhập.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100% quyền riêng tư phía khách hàng. Dữ liệu và lịch sử QR của bạn không bao giờ rời khỏi trình duyệt của bạn.",
     "verificationSentTitle": "Xác minh email của bạn",
     "verificationSentDesc": "Chúng tôi đã gửi liên kết xác minh tới HzQ0QZX. Vui lòng kiểm tra hộp thư đến và xác minh tài khoản của bạn.",
+    "checkSpamNote": "Nếu bạn không thấy email trong hộp thư đến, vui lòng kiểm tra thư mục thư rác hoặc thư rác.",
     "verificationCheckBtn": "Tôi đã xác minh email của mình",
     "verificationResendBtn": "Gửi lại email xác minh",
     "verificationResentSuccess": "Gửi lại email xác minh! Vui lòng kiểm tra thư mục thư rác của bạn.",
     "verificationNotYet": "Email chưa được xác minh. Vui lòng nhấp vào liên kết xác minh được gửi đến hộp thư đến của bạn.",
     "verificationSuccessToast": "Email đã được xác minh thành công! Chào mừng lên tàu.",
-    "continueToApp": "Tiếp tục đến ứng dụng (Xác minh sau)",
-    "checkSpamNote": "Nếu bạn không thấy email trong hộp thư đến, vui lòng kiểm tra thư mục thư rác hoặc thư rác."
+    "continueToApp": "Tiếp tục đến ứng dụng (Xác minh sau)"
   },
   "account": {
     "title": "Tài khoản",
@@ -2325,6 +2371,13 @@
       "deleting": "Đang xóa tài khoản trên 4 ứng dụng...",
       "incorrectPassword": "Mật khẩu hiện tại không chính xác. Vui lòng thử lại.",
       "typeDeleteError": "Vui lòng gõ DELETE bằng chữ in hoa để xác nhận."
-    }
+    },
+    "signOutModal": {
+      "title": "Đăng xuất khỏi tài khoản của bạn?",
+      "desc": "Bạn có chắc chắn muốn đăng xuất không? Bạn sẽ cần phải đăng nhập lại để truy cập các tính năng PRO và cài đặt tài khoản của mình.",
+      "confirmBtn": "Có, Đăng xuất",
+      "cancelBtn": "Hủy bỏ"
+    },
+    "signInToAccount": "Đăng nhập vào tài khoản của bạn"
   }
 }

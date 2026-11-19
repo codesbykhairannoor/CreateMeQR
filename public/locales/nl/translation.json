@@ -2233,18 +2233,66 @@
     "p_7": "Onze technische architectuur voldoet strikt aan de gezaghebbende ISO/IEC 18004:2015 QR Code International Standard en sluit naadloos aan bij het NIST Data Privacy Framework en de W3C HTML5-specificatie voor zeer veilige webapplicaties."
   },
   "auth": {
+    "account": "Rekening",
+    "status": "Status:",
+    "freeStarter": "Gratis voorgerecht",
+    "proActive": "PRO Actief",
+    "proLifetime": "PRO-levensduur",
+    "upgradeToPro": "Upgrade naar PRO",
+    "changePassword": "Wachtwoord wijzigen",
+    "deleteAccount": "Account verwijderen",
+    "signInBtn": "Inloggen",
+    "signOut": "Uitloggen",
     "signInTitle": "Meld u aan bij CreateMy-QR",
     "signUpTitle": "Maak een account aan",
+    "emailLabel": "E-mailadres",
+    "emailPlaceholder": "jij@domein.com",
+    "passwordLabel": "Wachtwoord",
+    "currentPassword": "Huidig wachtwoord",
+    "newPassword": "Nieuw wachtwoord",
+    "confirmNewPassword": "Bevestig nieuw wachtwoord",
+    "passwordMinChars": "Min. 6 karakters",
+    "signOutModal": {
+      "title": "Uitloggen bij uw account?",
+      "desc": "Weet u zeker dat u wilt uitloggen? U moet zich opnieuw aanmelden om toegang te krijgen tot PRO-functies en uw accountinstellingen.",
+      "confirm": "Ja, uitloggen",
+      "cancel": "Annuleer"
+    },
+    "changePasswordModal": {
+      "title": "Wachtwoord wijzigen",
+      "currentPassword": "Huidig wachtwoord",
+      "forgotCurrent": "Huidig wachtwoord vergeten? Stuur de resetlink naar e-mail",
+      "newPassword": "Nieuw wachtwoord",
+      "confirmNewPassword": "Bevestig nieuw wachtwoord",
+      "placeholderMin": "Min. 6 karakters",
+      "updateBtn": "Wachtwoord bijwerken",
+      "cancel": "Annuleer",
+      "resetDesc": "Stuur een beveiligde resetlink naar uw e-mailadres om een nieuw wachtwoord aan te maken.",
+      "sendResetBtn": "Link voor wachtwoordherstel verzenden",
+      "knowCurrent": "Kent u uw huidige wachtwoord? Direct bijwerken",
+      "successUpdate": "Wachtwoord succesvol bijgewerkt!",
+      "successReset": "Link voor het opnieuw instellen van uw wachtwoord verzonden naar uw e-mail!",
+      "passwordMismatch": "Nieuwe wachtwoorden komen niet overeen.",
+      "weakPassword": "Wachtwoord moet minimaal 6 tekens lang zijn.",
+      "fillAll": "Vul alle velden in."
+    },
+    "deleteAccountModal": {
+      "title": "Account verwijderen?",
+      "desc": "Weet u zeker dat u uw account wilt verwijderen? Deze actie is permanent en kan niet ongedaan worden gemaakt. Al uw opgeslagen QR-codes en instellingen worden verwijderd.",
+      "confirm": "Ja, account verwijderen",
+      "cancel": "Annuleer",
+      "requiresRecent": "Meld u uit en weer aan voordat u om veiligheidsredenen uw account verwijdert.",
+      "success": "Uw account is verwijderd.",
+      "error": "Kan account niet verwijderen."
+    },
+    "signInToAccount": "Meld u aan bij uw account",
     "forgotPasswordTitle": "Wachtwoord opnieuw instellen",
     "resetNewPasswordTitle": "Stel een nieuw wachtwoord in",
     "signInSubtitle": "Krijg toegang tot uw account, synchroniseer de geschiedenis en ontgrendel PRO Lifetime-functies.",
     "signUpSubtitle": "Meld u aan om QR-codes, geschiedenissynchronisatie en PRO-exportformaten te beheren.",
     "forgotPasswordSubtitle": "Voer uw geregistreerde e-mailadres in om een ​​veilige link voor het opnieuw instellen van uw wachtwoord te ontvangen.",
-    "resetNewPasswordSubtitle": "Kies een sterk nieuw wachtwoord voor uw account.",
-    "emailLabel": "E-mailadres",
-    "passwordLabel": "Wachtwoord",
+    "resetNewPasswordSubtitle": "Choose a strong new password for your account.",
     "newPasswordLabel": "Nieuw wachtwoord",
-    "emailPlaceholder": "jij@domein.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Wachtwoord vergeten?",
     "submitSignIn": "Inloggen",
@@ -2262,8 +2310,6 @@
     "hasAccount": "Heeft u al een account?",
     "switchToSignUp": "Meld u gratis aan",
     "switchToSignIn": "Log in",
-    "signInBtn": "Inloggen",
-    "signOut": "Uitloggen",
     "notConfigured": "Firebase is niet geconfigureerd. Controleer uw omgevingssleutels.",
     "weakPassword": "Wachtwoord moet minimaal 6 tekens lang zijn.",
     "passwordResetSuccess": "Wachtwoord succesvol bijgewerkt! Meld u aan.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100% privacy aan de klantzijde. Uw QR-gegevens en geschiedenis verlaten nooit uw browser.",
     "verificationSentTitle": "Controleer uw e-mailadres",
     "verificationSentDesc": "We hebben een verificatielink naar {{email}} gestuurd. Controleer uw inbox en verifieer uw account.",
+    "checkSpamNote": "Als u de e-mail niet in uw inbox ziet, controleer dan uw map met spam of ongewenste e-mail.",
     "verificationCheckBtn": "Ik heb mijn e-mailadres geverifieerd",
     "verificationResendBtn": "Verificatie-e-mail opnieuw verzenden",
     "verificationResentSuccess": "Verificatie-e-mail opnieuw verzonden! Controleer uw spammap.",
     "verificationNotYet": "E-mailadres nog niet geverifieerd. Klik op de verificatielink die naar uw inbox is verzonden.",
     "verificationSuccessToast": "E-mail succesvol geverifieerd! Welkom aan boord.",
-    "continueToApp": "Doorgaan naar app (later verifiëren)",
-    "checkSpamNote": "Als u de e-mail niet in uw inbox ziet, controleer dan uw map met spam of ongewenste e-mail."
+    "continueToApp": "Doorgaan naar app (later verifiëren)"
   },
   "account": {
     "title": "Rekening",
@@ -2325,6 +2371,13 @@
       "deleting": "Account verwijderen voor 4 apps...",
       "incorrectPassword": "Onjuist huidig wachtwoord. Probeer het opnieuw.",
       "typeDeleteError": "Typ DELETE in hoofdletters om te bevestigen."
-    }
+    },
+    "signOutModal": {
+      "title": "Uitloggen bij uw account?",
+      "desc": "Weet u zeker dat u wilt uitloggen? U moet zich opnieuw aanmelden om toegang te krijgen tot PRO-functies en uw accountinstellingen.",
+      "confirmBtn": "Ja, uitloggen",
+      "cancelBtn": "Annuleer"
+    },
+    "signInToAccount": "Meld u aan bij uw account"
   }
 }

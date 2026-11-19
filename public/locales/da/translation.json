@@ -2233,18 +2233,66 @@
     "p_7": "Vores ingeniørarkitektur overholder strengt den autoritative ISO/IEC 18004:2015 QR Code International Standard og tilpasser sig problemfrit med NIST Data Privacy Framework og W3C HTML5-specifikationen for meget sikre webapplikationer."
   },
   "auth": {
+    "account": "Konto",
+    "status": "Status:",
+    "freeStarter": "Gratis starter",
+    "proActive": "PRO aktiv",
+    "proLifetime": "PRO levetid",
+    "upgradeToPro": "Opgrader til PRO",
+    "changePassword": "Skift adgangskode",
+    "deleteAccount": "Slet konto",
+    "signInBtn": "Log ind",
+    "signOut": "Log ud",
     "signInTitle": "Log ind på CreateMy-QR",
     "signUpTitle": "Opret en konto",
+    "emailLabel": "Email adresse",
+    "emailPlaceholder": "dig@domæne.com",
+    "passwordLabel": "Adgangskode",
+    "currentPassword": "Nuværende adgangskode",
+    "newPassword": "Ny adgangskode",
+    "confirmNewPassword": "Bekræft ny adgangskode",
+    "passwordMinChars": "Min. 6 tegn",
+    "signOutModal": {
+      "title": "Log ud af din konto?",
+      "desc": "Er du sikker på, at du vil logge ud? Du skal logge ind igen for at få adgang til PRO-funktioner og dine kontoindstillinger.",
+      "confirm": "Ja, log ud",
+      "cancel": "Annuller"
+    },
+    "changePasswordModal": {
+      "title": "Skift adgangskode",
+      "currentPassword": "Nuværende adgangskode",
+      "forgotCurrent": "Glemt nuværende adgangskode? Send nulstillingslink til e-mail",
+      "newPassword": "Ny adgangskode",
+      "confirmNewPassword": "Bekræft ny adgangskode",
+      "placeholderMin": "Min. 6 tegn",
+      "updateBtn": "Opdater adgangskode",
+      "cancel": "Annuller",
+      "resetDesc": "Send et sikkert nulstillingslink til din e-mail for at oprette en ny adgangskode.",
+      "sendResetBtn": "Send link til nulstilling af adgangskode",
+      "knowCurrent": "Kender du din nuværende adgangskode? Opdater direkte",
+      "successUpdate": "Adgangskoden blev opdateret!",
+      "successReset": "Link til nulstilling af adgangskode sendt til din e-mail!",
+      "passwordMismatch": "Nye adgangskoder stemmer ikke overens.",
+      "weakPassword": "Adgangskoden skal være på mindst 6 tegn.",
+      "fillAll": "Udfyld venligst alle felter."
+    },
+    "deleteAccountModal": {
+      "title": "Vil du slette konto?",
+      "desc": "Er du sikker på, at du vil slette din konto? Denne handling er permanent og kan ikke fortrydes. Alle dine gemte QR-koder og indstillinger vil blive fjernet.",
+      "confirm": "Ja, Slet konto",
+      "cancel": "Annuller",
+      "requiresRecent": "Log venligst ud og log ind igen, før du sletter din konto af sikkerhedsmæssige årsager.",
+      "success": "Din konto er blevet slettet.",
+      "error": "Kontoen kunne ikke slettes."
+    },
+    "signInToAccount": "Log ind på din konto",
     "forgotPasswordTitle": "Nulstil adgangskode",
     "resetNewPasswordTitle": "Indstil ny adgangskode",
-    "signInSubtitle": "Få adgang til din konto, synkroniser historik og lås op for PRO Lifetime-funktioner.",
+    "signInSubtitle": "Få adgang til din konto, synkroniser historik, og lås op for PRO Lifetime-funktioner.",
     "signUpSubtitle": "Tilmeld dig for at administrere QR-koder, historiksynkronisering og PRO-eksportformater.",
     "forgotPasswordSubtitle": "Indtast din registrerede e-mail for at modtage et sikkert link til nulstilling af adgangskode.",
     "resetNewPasswordSubtitle": "Vælg en stærk ny adgangskode til din konto.",
-    "emailLabel": "Email adresse",
-    "passwordLabel": "Adgangskode",
     "newPasswordLabel": "Ny adgangskode",
-    "emailPlaceholder": "dig@domæne.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Glemt adgangskode?",
     "submitSignIn": "Log ind",
@@ -2262,8 +2310,6 @@
     "hasAccount": "Har du allerede en konto?",
     "switchToSignUp": "Tilmeld dig gratis",
     "switchToSignIn": "Log ind",
-    "signInBtn": "Log ind",
-    "signOut": "Log ud",
     "notConfigured": "Firebase er ikke konfigureret. Bekræft venligst dine miljønøgler.",
     "weakPassword": "Adgangskoden skal være på mindst 6 tegn.",
     "passwordResetSuccess": "Adgangskoden blev opdateret! Log venligst ind.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100 % privatliv på klientsiden. Dine QR-data og historik forlader aldrig din browser.",
     "verificationSentTitle": "Bekræft din e-mail",
     "verificationSentDesc": "Vi har sendt et bekræftelseslink til {{email}}. Tjek venligst din indbakke og bekræft din konto.",
+    "checkSpamNote": "Hvis du ikke kan se e-mailen i din indbakke, så tjek venligst din spam- eller junk-mappe.",
     "verificationCheckBtn": "Jeg har bekræftet min e-mail",
     "verificationResendBtn": "Send bekræftelses-e-mail igen",
     "verificationResentSuccess": "Bekræftelses-e-mail sendt igen! Tjek venligst din spam-mappe.",
-    "verificationNotYet": "E-mail er ikke bekræftet endnu. Klik venligst på bekræftelseslinket sendt til din indbakke.",
+    "verificationNotYet": "E-mail er ikke bekræftet endnu. Klik venligst på bekræftelseslinket, der er sendt til din indbakke.",
     "verificationSuccessToast": "E-mail bekræftet! Velkommen ombord.",
-    "continueToApp": "Fortsæt til app (bekræft senere)",
-    "checkSpamNote": "Hvis du ikke kan se e-mailen i din indbakke, så tjek venligst din spam- eller junk-mappe."
+    "continueToApp": "Fortsæt til app (bekræft senere)"
   },
   "account": {
     "title": "Konto",
@@ -2325,6 +2371,13 @@
       "deleting": "Sletter konto på tværs af 4 apps...",
       "incorrectPassword": "Forkert nuværende adgangskode. Prøv venligst igen.",
       "typeDeleteError": "Indtast DELETE med store bogstaver for at bekræfte."
-    }
+    },
+    "signOutModal": {
+      "title": "Log ud af din konto?",
+      "desc": "Er du sikker på, at du vil logge ud? Du skal logge ind igen for at få adgang til PRO-funktioner og dine kontoindstillinger.",
+      "confirmBtn": "Ja, log ud",
+      "cancelBtn": "Annuller"
+    },
+    "signInToAccount": "Log ind på din konto"
   }
 }

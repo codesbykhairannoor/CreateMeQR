@@ -2233,18 +2233,66 @@
     "p_7": "Arsitektur teknik kami secara ketat mematuhi Standar Internasional Kode QR ISO/IEC 18004:2015 yang resmi dan selaras dengan Kerangka Privasi Data NIST dan Spesifikasi HTML5 W3C untuk aplikasi web yang sangat aman."
   },
   "auth": {
+    "account": "Akun",
+    "status": "Status:",
+    "freeStarter": "Starter Gratis",
+    "proActive": "PRO Aktif",
+    "proLifetime": "PRO Seumur Hidup",
+    "upgradeToPro": "Upgrade ke PRO",
+    "changePassword": "Ganti Kata Sandi",
+    "deleteAccount": "Hapus Akun",
+    "signInBtn": "Masuk",
+    "signOut": "Keluar",
     "signInTitle": "Masuk ke CreateMy-QR",
     "signUpTitle": "Buat Akun Baru",
+    "emailLabel": "Alamat Email",
+    "emailPlaceholder": "anda@domain.com",
+    "passwordLabel": "Kata Sandi",
+    "currentPassword": "Kata Sandi Saat Ini",
+    "newPassword": "Kata Sandi Baru",
+    "confirmNewPassword": "Konfirmasi Kata Sandi Baru",
+    "passwordMinChars": "Min. 6 karakter",
+    "signOutModal": {
+      "title": "Keluar dari Akun Anda?",
+      "desc": "Apakah Anda yakin ingin keluar? Anda harus masuk kembali untuk mengakses fitur PRO dan pengaturan akun Anda.",
+      "confirm": "Ya, Keluar",
+      "cancel": "Batal"
+    },
+    "changePasswordModal": {
+      "title": "Ganti Kata Sandi",
+      "currentPassword": "Kata Sandi Saat Ini",
+      "forgotCurrent": "Lupa kata sandi saat ini? Kirim tautan reset ke email",
+      "newPassword": "Kata Sandi Baru",
+      "confirmNewPassword": "Konfirmasi Kata Sandi Baru",
+      "placeholderMin": "Min. 6 karakter",
+      "updateBtn": "Perbarui Kata Sandi",
+      "cancel": "Batal",
+      "resetDesc": "Kirim tautan reset yang aman ke email Anda untuk membuat kata sandi baru.",
+      "sendResetBtn": "Kirim Tautan Reset Kata Sandi",
+      "knowCurrent": "Ingat kata sandi saat ini? Perbarui langsung",
+      "successUpdate": "Kata sandi berhasil diperbarui!",
+      "successReset": "Tautan reset kata sandi telah dikirim ke email Anda!",
+      "passwordMismatch": "Kata sandi baru tidak cocok.",
+      "weakPassword": "Kata sandi minimal harus 6 karakter.",
+      "fillAll": "Harap isi semua kolom."
+    },
+    "deleteAccountModal": {
+      "title": "Hapus Akun?",
+      "desc": "Apakah Anda yakin ingin menghapus akun? Tindakan ini bersifat permanen dan tidak dapat dibatalkan. Semua kode QR tersimpan dan pengaturan Anda akan dihapus.",
+      "confirm": "Ya, Hapus Akun",
+      "cancel": "Batal",
+      "requiresRecent": "Silakan keluar dan masuk kembali sebelum menghapus akun Anda untuk alasan keamanan.",
+      "success": "Akun Anda telah berhasil dihapus.",
+      "error": "Gagal menghapus akun."
+    },
+    "signInToAccount": "Masuk ke Akun Anda",
     "forgotPasswordTitle": "Atur Ulang Kata Sandi",
     "resetNewPasswordTitle": "Buat Kata Sandi Baru",
     "signInSubtitle": "Akses akun Anda, sinkronkan riwayat, dan buka fitur PRO Lifetime.",
     "signUpSubtitle": "Daftar untuk mengelola kode QR, sinkronisasi riwayat, dan format ekspor PRO.",
     "forgotPasswordSubtitle": "Masukkan email terdaftar Anda untuk menerima tautan atur ulang kata sandi.",
     "resetNewPasswordSubtitle": "Pilih kata sandi baru yang kuat untuk akun Anda.",
-    "emailLabel": "Alamat Email",
-    "passwordLabel": "Kata Sandi",
     "newPasswordLabel": "Kata Sandi Baru",
-    "emailPlaceholder": "anda@domain.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Lupa kata sandi?",
     "submitSignIn": "Masuk",
@@ -2262,8 +2310,6 @@
     "hasAccount": "Sudah punya akun?",
     "switchToSignUp": "Daftar gratis",
     "switchToSignIn": "Masuk",
-    "signInBtn": "Masuk",
-    "signOut": "Keluar",
     "notConfigured": "Firebase belum dikonfigurasi. Periksa kunci konfigurasi Anda.",
     "weakPassword": "Kata sandi minimal harus 6 karakter.",
     "passwordResetSuccess": "Kata sandi berhasil diperbarui! Silakan masuk.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "Privasi 100% Sisi Klien. Data dan riwayat QR Anda tidak pernah meninggalkan peramban.",
     "verificationSentTitle": "Verifikasi Email Anda",
     "verificationSentDesc": "Kami telah mengirimkan tautan verifikasi ke {{email}}. Silakan periksa kotak masuk dan verifikasi akun Anda.",
+    "checkSpamNote": "Jika Anda tidak melihat email di kotak masuk, silakan periksa folder spam atau sampah Anda.",
     "verificationCheckBtn": "Saya Sudah Verifikasi Email",
     "verificationResendBtn": "Kirim Ulang Email Verifikasi",
     "verificationResentSuccess": "Email verifikasi telah dikirim ulang! Silakan periksa folder spam jika belum masuk.",
     "verificationNotYet": "Email belum terverifikasi. Silakan klik tautan verifikasi di kotak masuk Anda.",
     "verificationSuccessToast": "Email berhasil diverifikasi! Selamat datang di CreateMy-QR.",
-    "continueToApp": "Lanjutkan ke Aplikasi (Verifikasi Nanti)",
-    "checkSpamNote": "Jika Anda tidak melihat email di kotak masuk, silakan periksa folder spam atau sampah Anda."
+    "continueToApp": "Lanjutkan ke Aplikasi (Verifikasi Nanti)"
   },
   "account": {
     "title": "Akun",
@@ -2325,6 +2371,13 @@
       "deleting": "Menghapus akun di 4 aplikasi...",
       "incorrectPassword": "Kata sandi saat ini salah. Silakan coba lagi.",
       "typeDeleteError": "Silakan ketik DELETE dengan huruf kapital untuk mengonfirmasi."
-    }
+    },
+    "signOutModal": {
+      "title": "Keluar dari Akun Anda?",
+      "desc": "Apakah Anda yakin ingin keluar? Anda harus masuk kembali untuk mengakses fitur PRO dan pengaturan akun Anda.",
+      "confirmBtn": "Ya, Keluar",
+      "cancelBtn": "Batal"
+    },
+    "signInToAccount": "Masuk ke Akun Anda"
   }
 }

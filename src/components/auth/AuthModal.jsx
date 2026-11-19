@@ -435,7 +435,7 @@ export default function AuthModal() {
                   <ShieldCheck className="w-6 h-6" />
                 )}
               </div>
-              <h3 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
+              <h3 id="auth-modal-title" className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white tracking-tight">
                 {mode === 'signin' && t('auth.signInTitle', { defaultValue: 'Sign In to CreateMy-QR' })}
                 {mode === 'signup' && t('auth.signUpTitle', { defaultValue: 'Create an Account' })}
                 {mode === 'forgot' && t('auth.forgotPasswordTitle', { defaultValue: 'Reset Password' })}

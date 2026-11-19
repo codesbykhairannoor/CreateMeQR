@@ -2182,18 +2182,66 @@
     }
   },
   "auth": {
+    "account": "Account",
+    "status": "Status:",
+    "freeStarter": "Free Starter",
+    "proActive": "PRO Active",
+    "proLifetime": "PRO Lifetime",
+    "upgradeToPro": "Upgrade to PRO",
+    "changePassword": "Change Password",
+    "deleteAccount": "Delete Account",
+    "signInBtn": "Sign In",
+    "signOut": "Sign Out",
     "signInTitle": "Sign In to CreateMy-QR",
     "signUpTitle": "Create an Account",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "you@domain.com",
+    "passwordLabel": "Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "passwordMinChars": "Min. 6 characters",
+    "signOutModal": {
+      "title": "Log Out of Your Account?",
+      "desc": "Are you sure you want to log out? You will need to sign in again to access PRO features and your account settings.",
+      "confirm": "Yes, Log Out",
+      "cancel": "Cancel"
+    },
+    "changePasswordModal": {
+      "title": "Change Password",
+      "currentPassword": "Current Password",
+      "forgotCurrent": "Forgot current password? Send reset link to email",
+      "newPassword": "New Password",
+      "confirmNewPassword": "Confirm New Password",
+      "placeholderMin": "Min. 6 characters",
+      "updateBtn": "Update Password",
+      "cancel": "Cancel",
+      "resetDesc": "Send a secure reset link to your email to create a new password.",
+      "sendResetBtn": "Send Password Reset Link",
+      "knowCurrent": "Know your current password? Update directly",
+      "successUpdate": "Password updated successfully!",
+      "successReset": "Password reset link sent to your email!",
+      "passwordMismatch": "New passwords do not match.",
+      "weakPassword": "Password must be at least 6 characters.",
+      "fillAll": "Please fill in all fields."
+    },
+    "deleteAccountModal": {
+      "title": "Delete Account?",
+      "desc": "Are you sure you want to delete your account? This action is permanent and cannot be undone. All your saved QR codes and settings will be removed.",
+      "confirm": "Yes, Delete Account",
+      "cancel": "Cancel",
+      "requiresRecent": "Please sign out and sign in again before deleting your account for security reasons.",
+      "success": "Your account has been deleted.",
+      "error": "Failed to delete account."
+    },
+    "signInToAccount": "Sign In to Your Account",
     "forgotPasswordTitle": "Reset Password",
     "resetNewPasswordTitle": "Set New Password",
     "signInSubtitle": "Access your account, sync history, and unlock PRO Lifetime features.",
     "signUpSubtitle": "Sign up to manage QR codes, history sync, and PRO export formats.",
     "forgotPasswordSubtitle": "Enter your registered email to receive a secure password reset link.",
     "resetNewPasswordSubtitle": "Choose a strong new password for your account.",
-    "emailLabel": "Email Address",
-    "passwordLabel": "Password",
     "newPasswordLabel": "New Password",
-    "emailPlaceholder": "you@domain.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Forgot password?",
     "submitSignIn": "Sign In",
@@ -2211,8 +2259,6 @@
     "hasAccount": "Already have an account?",
     "switchToSignUp": "Sign up free",
     "switchToSignIn": "Sign in",
-    "signInBtn": "Sign In",
-    "signOut": "Sign Out",
     "notConfigured": "Firebase is not configured. Please verify your environment keys.",
     "weakPassword": "Password must be at least 6 characters.",
     "passwordResetSuccess": "Password updated successfully! Please sign in.",
@@ -2225,13 +2271,13 @@
     "privacyNote": "100% Client-Side Privacy. Your QR data and history never leave your browser.",
     "verificationSentTitle": "Verify Your Email",
     "verificationSentDesc": "We've sent a verification link to {{email}}. Please check your inbox and verify your account.",
+    "checkSpamNote": "If you do not see the email in your inbox, please check your spam or junk folder.",
     "verificationCheckBtn": "I've Verified My Email",
     "verificationResendBtn": "Resend Verification Email",
     "verificationResentSuccess": "Verification email resent! Please check your spam folder.",
     "verificationNotYet": "Email not verified yet. Please click the verification link sent to your inbox.",
     "verificationSuccessToast": "Email verified successfully! Welcome aboard.",
-    "continueToApp": "Continue to App (Verify Later)",
-    "checkSpamNote": "If you do not see the email in your inbox, please check your spam or junk folder."
+    "continueToApp": "Continue to App (Verify Later)"
   },
   "account": {
     "title": "Account",
@@ -2274,6 +2320,13 @@
       "deleting": "Deleting account across 4 apps...",
       "incorrectPassword": "Incorrect current password. Please try again.",
       "typeDeleteError": "Please type DELETE in uppercase to confirm."
-    }
+    },
+    "signOutModal": {
+      "title": "Log Out of Your Account?",
+      "desc": "Are you sure you want to log out? You will need to sign in again to access PRO features and your account settings.",
+      "confirmBtn": "Yes, Log Out",
+      "cancelBtn": "Cancel"
+    },
+    "signInToAccount": "Sign In to Your Account"
   }
 }

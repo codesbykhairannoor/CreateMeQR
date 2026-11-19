@@ -2233,18 +2233,66 @@
     "p_7": "Nuestra arquitectura de ingeniería cumple estrictamente con el estándar internacional de código QR ISO/IEC 18004:2015 y se alinea perfectamente con el marco de privacidad de datos del NIST y la especificación HTML5 del W3C para aplicaciones web altamente seguras."
   },
   "auth": {
+    "account": "cuenta",
+    "status": "Estado:",
+    "freeStarter": "Iniciador gratuito",
+    "proActive": "PRO Activo",
+    "proLifetime": "PRO de por vida",
+    "upgradeToPro": "Actualízate a PRO",
+    "changePassword": "Cambiar contraseña",
+    "deleteAccount": "Eliminar cuenta",
+    "signInBtn": "Iniciar sesión",
+    "signOut": "Cerrar sesión",
     "signInTitle": "Iniciar sesión en CreateMy-QR",
     "signUpTitle": "Crear una cuenta",
+    "emailLabel": "Dirección de correo electrónico",
+    "emailPlaceholder": "tu@dominio.com",
+    "passwordLabel": "Contraseña",
+    "currentPassword": "Contraseña actual",
+    "newPassword": "Nueva contraseña",
+    "confirmNewPassword": "Confirmar nueva contraseña",
+    "passwordMinChars": "Mín. 6 personajes",
+    "signOutModal": {
+      "title": "¿Cerrar sesión en su cuenta?",
+      "desc": "¿Está seguro de que desea cerrar sesión? Deberá iniciar sesión nuevamente para acceder a las funciones PRO y a la configuración de su cuenta.",
+      "confirm": "Sí, cerrar sesión",
+      "cancel": "Cancelar"
+    },
+    "changePasswordModal": {
+      "title": "Cambiar contraseña",
+      "currentPassword": "Contraseña actual",
+      "forgotCurrent": "¿Olvidaste tu contraseña actual? Enviar enlace de reinicio al correo electrónico",
+      "newPassword": "Nueva contraseña",
+      "confirmNewPassword": "Confirmar nueva contraseña",
+      "placeholderMin": "Mín. 6 personajes",
+      "updateBtn": "Actualizar contraseña",
+      "cancel": "Cancelar",
+      "resetDesc": "Envíe un enlace de restablecimiento seguro a su correo electrónico para crear una nueva contraseña.",
+      "sendResetBtn": "Enviar enlace para restablecer contraseña",
+      "knowCurrent": "¿Conoce su contraseña actual? Actualizar directamente",
+      "successUpdate": "¡Contraseña actualizada exitosamente!",
+      "successReset": "¡Enlace para restablecer contraseña enviado a su correo electrónico!",
+      "passwordMismatch": "Las nuevas contraseñas no coinciden.",
+      "weakPassword": "La contraseña debe tener al menos 6 caracteres.",
+      "fillAll": "Por favor complete todos los campos."
+    },
+    "deleteAccountModal": {
+      "title": "¿Eliminar cuenta?",
+      "desc": "¿Estás seguro de que quieres eliminar tu cuenta? Esta acción es permanente y no se puede deshacer. Se eliminarán todos los códigos QR y configuraciones guardados.",
+      "confirm": "Sí, eliminar cuenta",
+      "cancel": "Cancelar",
+      "requiresRecent": "Cierra sesión y vuelve a iniciar sesión antes de eliminar tu cuenta por razones de seguridad.",
+      "success": "Tu cuenta ha sido eliminada.",
+      "error": "No se pudo eliminar la cuenta."
+    },
+    "signInToAccount": "Inicia sesión en tu cuenta",
     "forgotPasswordTitle": "Restablecer contraseña",
     "resetNewPasswordTitle": "Establecer nueva contraseña",
     "signInSubtitle": "Acceda a su cuenta, sincronice el historial y desbloquee las funciones PRO Lifetime.",
     "signUpSubtitle": "Regístrese para administrar códigos QR, sincronización del historial y formatos de exportación PRO.",
     "forgotPasswordSubtitle": "Ingrese su correo electrónico registrado para recibir un enlace seguro para restablecer su contraseña.",
     "resetNewPasswordSubtitle": "Elija una nueva contraseña segura para su cuenta.",
-    "emailLabel": "Dirección de correo electrónico",
-    "passwordLabel": "Contraseña",
     "newPasswordLabel": "Nueva contraseña",
-    "emailPlaceholder": "tu@dominio.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "¿Olvidaste tu contraseña?",
     "submitSignIn": "Iniciar sesión",
@@ -2262,8 +2310,6 @@
     "hasAccount": "¿Ya tienes una cuenta?",
     "switchToSignUp": "Regístrate gratis",
     "switchToSignIn": "Iniciar sesión",
-    "signInBtn": "Iniciar sesión",
-    "signOut": "Cerrar sesión",
     "notConfigured": "Firebase no está configurado. Verifique las claves de su entorno.",
     "weakPassword": "La contraseña debe tener al menos 6 caracteres.",
     "passwordResetSuccess": "¡Contraseña actualizada exitosamente! Por favor inicia sesión.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100% privacidad del lado del cliente. Tus datos QR y tu historial nunca abandonan tu navegador.",
     "verificationSentTitle": "Verifique su correo electrónico",
     "verificationSentDesc": "Hemos enviado un enlace de verificación a {{email}}. Por favor revise su bandeja de entrada y verifique su cuenta.",
+    "checkSpamNote": "Si no ve el correo electrónico en su bandeja de entrada, revise su carpeta de correo no deseado o basura.",
     "verificationCheckBtn": "He verificado mi correo electrónico",
     "verificationResendBtn": "Reenviar correo electrónico de verificación",
     "verificationResentSuccess": "¡Correo electrónico de verificación reenviado! Por favor revisa tu carpeta de spam.",
     "verificationNotYet": "Correo electrónico aún no verificado. Haga clic en el enlace de verificación enviado a su bandeja de entrada.",
     "verificationSuccessToast": "¡Correo electrónico verificado exitosamente! Bienvenido a bordo.",
-    "continueToApp": "Continuar a la aplicación (verificar más tarde)",
-    "checkSpamNote": "Si no ve el correo electrónico en su bandeja de entrada, revise su carpeta de correo no deseado o basura."
+    "continueToApp": "Continuar a la aplicación (verificar más tarde)"
   },
   "account": {
     "title": "cuenta",
@@ -2325,6 +2371,13 @@
       "deleting": "Eliminando cuenta en 4 aplicaciones...",
       "incorrectPassword": "Contraseña actual incorrecta. Por favor inténtalo de nuevo.",
       "typeDeleteError": "Por favor escriba BORRAR en mayúsculas para confirmar."
-    }
+    },
+    "signOutModal": {
+      "title": "¿Cerrar sesión en su cuenta?",
+      "desc": "¿Está seguro de que desea cerrar sesión? Deberá iniciar sesión nuevamente para acceder a las funciones PRO y a la configuración de su cuenta.",
+      "confirmBtn": "Sí, cerrar sesión",
+      "cancelBtn": "Cancelar"
+    },
+    "signInToAccount": "Inicia sesión en tu cuenta"
   }
 }

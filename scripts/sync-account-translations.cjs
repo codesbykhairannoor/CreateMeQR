@@ -106,6 +106,13 @@ const newEnKeys = {
       incorrectPassword: 'Incorrect current password. Please try again.',
       typeDeleteError: 'Please type DELETE in uppercase to confirm.',
     },
+    signOutModal: {
+      title: 'Log Out of Your Account?',
+      desc: 'Are you sure you want to log out? You will need to sign in again to access PRO features and your account settings.',
+      confirmBtn: 'Yes, Log Out',
+      cancelBtn: 'Cancel',
+    },
+    signInToAccount: 'Sign In to Your Account',
   },
 };
 
@@ -205,6 +212,13 @@ const idOverrides = {
       incorrectPassword: 'Kata sandi saat ini salah. Silakan coba lagi.',
       typeDeleteError: 'Silakan ketik DELETE dengan huruf kapital untuk mengonfirmasi.',
     },
+    signOutModal: {
+      title: 'Keluar dari Akun Anda?',
+      desc: 'Apakah Anda yakin ingin keluar? Anda harus masuk kembali untuk mengakses fitur PRO dan pengaturan akun Anda.',
+      confirmBtn: 'Ya, Keluar',
+      cancelBtn: 'Batal',
+    },
+    signInToAccount: 'Masuk ke Akun Anda',
   },
 };
 

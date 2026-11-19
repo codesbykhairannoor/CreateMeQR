@@ -138,6 +138,61 @@ const newEnKeys = {
         userDesc: "You've used your 2 free exports. Upgrade to PRO for unlimited vector SVG and print downloads."
       }
     }
+  },
+  auth: {
+    account: "Account",
+    status: "Status:",
+    freeStarter: "Free Starter",
+    proActive: "PRO Active",
+    proLifetime: "PRO Lifetime",
+    upgradeToPro: "Upgrade to PRO",
+    changePassword: "Change Password",
+    deleteAccount: "Delete Account",
+    signInBtn: "Sign In",
+    signInToAccount: "Sign In to Your Account",
+    signOut: "Sign Out",
+    signInTitle: "Sign In to CreateMy-QR",
+    signUpTitle: "Create an Account",
+    emailLabel: "Email Address",
+    emailPlaceholder: "you@domain.com",
+    passwordLabel: "Password",
+    currentPassword: "Current Password",
+    newPassword: "New Password",
+    confirmNewPassword: "Confirm New Password",
+    passwordMinChars: "Min. 6 characters",
+    signOutModal: {
+      title: "Log Out of Your Account?",
+      desc: "Are you sure you want to log out? You will need to sign in again to access PRO features and your account settings.",
+      confirm: "Yes, Log Out",
+      cancel: "Cancel"
+    },
+    changePasswordModal: {
+      title: "Change Password",
+      currentPassword: "Current Password",
+      forgotCurrent: "Forgot current password? Send reset link to email",
+      newPassword: "New Password",
+      confirmNewPassword: "Confirm New Password",
+      placeholderMin: "Min. 6 characters",
+      updateBtn: "Update Password",
+      cancel: "Cancel",
+      resetDesc: "Send a secure reset link to your email to create a new password.",
+      sendResetBtn: "Send Password Reset Link",
+      knowCurrent: "Know your current password? Update directly",
+      successUpdate: "Password updated successfully!",
+      successReset: "Password reset link sent to your email!",
+      passwordMismatch: "New passwords do not match.",
+      weakPassword: "Password must be at least 6 characters.",
+      fillAll: "Please fill in all fields."
+    },
+    deleteAccountModal: {
+      title: "Delete Account?",
+      desc: "Are you sure you want to delete your account? This action is permanent and cannot be undone. All your saved QR codes and settings will be removed.",
+      confirm: "Yes, Delete Account",
+      cancel: "Cancel",
+      requiresRecent: "Please sign out and sign in again before deleting your account for security reasons.",
+      success: "Your account has been deleted.",
+      error: "Failed to delete account."
+    }
   }
 };
 
@@ -269,6 +324,61 @@ const indonesianCurated = {
         userTitle: "Buka Ekspor Vektor SVG Tanpa Batas",
         userDesc: "Anda telah menggunakan 2x ekspor gratis. Upgrade ke PRO untuk unduh vektor SVG dan PDF tanpa batas."
       }
+    }
+  },
+  auth: {
+    account: "Akun",
+    status: "Status:",
+    freeStarter: "Starter Gratis",
+    proActive: "PRO Aktif",
+    proLifetime: "PRO Seumur Hidup",
+    upgradeToPro: "Upgrade ke PRO",
+    changePassword: "Ganti Kata Sandi",
+    deleteAccount: "Hapus Akun",
+    signInBtn: "Masuk",
+    signInToAccount: "Masuk ke Akun Anda",
+    signOut: "Keluar",
+    signInTitle: "Masuk ke CreateMy-QR",
+    signUpTitle: "Buat Akun",
+    emailLabel: "Alamat Email",
+    emailPlaceholder: "kamu@domain.com",
+    passwordLabel: "Kata Sandi",
+    currentPassword: "Kata Sandi Saat Ini",
+    newPassword: "Kata Sandi Baru",
+    confirmNewPassword: "Konfirmasi Kata Sandi Baru",
+    passwordMinChars: "Min. 6 karakter",
+    signOutModal: {
+      title: "Keluar dari Akun Anda?",
+      desc: "Apakah Anda yakin ingin keluar? Anda harus masuk kembali untuk mengakses fitur PRO dan pengaturan akun Anda.",
+      confirm: "Ya, Keluar",
+      cancel: "Batal"
+    },
+    changePasswordModal: {
+      title: "Ganti Kata Sandi",
+      currentPassword: "Kata Sandi Saat Ini",
+      forgotCurrent: "Lupa kata sandi saat ini? Kirim tautan reset ke email",
+      newPassword: "Kata Sandi Baru",
+      confirmNewPassword: "Konfirmasi Kata Sandi Baru",
+      placeholderMin: "Min. 6 karakter",
+      updateBtn: "Perbarui Kata Sandi",
+      cancel: "Batal",
+      resetDesc: "Kirim tautan reset yang aman ke email Anda untuk membuat kata sandi baru.",
+      sendResetBtn: "Kirim Tautan Reset Kata Sandi",
+      knowCurrent: "Ingat kata sandi saat ini? Perbarui langsung",
+      successUpdate: "Kata sandi berhasil diperbarui!",
+      successReset: "Tautan reset kata sandi telah dikirim ke email Anda!",
+      passwordMismatch: "Kata sandi baru tidak cocok.",
+      weakPassword: "Kata sandi minimal harus 6 karakter.",
+      fillAll: "Harap isi semua kolom."
+    },
+    deleteAccountModal: {
+      title: "Hapus Akun?",
+      desc: "Apakah Anda yakin ingin menghapus akun? Tindakan ini bersifat permanen dan tidak dapat dibatalkan. Semua kode QR tersimpan dan pengaturan Anda akan dihapus.",
+      confirm: "Ya, Hapus Akun",
+      cancel: "Batal",
+      requiresRecent: "Silakan keluar dan masuk kembali sebelum menghapus akun Anda untuk alasan keamanan.",
+      success: "Akun Anda telah berhasil dihapus.",
+      error: "Gagal menghapus akun."
     }
   }
 };

@@ -2233,18 +2233,66 @@
     "p_7": "당사의 엔지니어링 아키텍처는 권위 있는 ISO/IEC 18004:2015 QR 코드 국제 표준을 엄격히 준수하며 매우 안전한 웹 애플리케이션을 위해 NIST 데이터 개인 정보 보호 프레임워크 및 W3C HTML5 사양과 완벽하게 일치합니다."
   },
   "auth": {
+    "account": "계정",
+    "status": "상태:",
+    "freeStarter": "무료 스타터",
+    "proActive": "프로 액티브",
+    "proLifetime": "PRO 평생",
+    "upgradeToPro": "PRO로 업그레이드",
+    "changePassword": "비밀번호 변경",
+    "deleteAccount": "계정 삭제",
+    "signInBtn": "로그인",
+    "signOut": "로그아웃",
     "signInTitle": "CreateMy-QR에 로그인하세요",
     "signUpTitle": "계정 만들기",
+    "emailLabel": "이메일 주소",
+    "emailPlaceholder": "you@domain.com",
+    "passwordLabel": "비밀번호",
+    "currentPassword": "현재 비밀번호",
+    "newPassword": "새 비밀번호",
+    "confirmNewPassword": "새 비밀번호 확인",
+    "passwordMinChars": "최소 6자",
+    "signOutModal": {
+      "title": "계정에서 로그아웃하시겠습니까?",
+      "desc": "정말로 로그아웃하시겠습니까? PRO 기능과 계정 설정에 액세스하려면 다시 로그인해야 합니다.",
+      "confirm": "예, 로그아웃합니다",
+      "cancel": "취소"
+    },
+    "changePasswordModal": {
+      "title": "비밀번호 변경",
+      "currentPassword": "현재 비밀번호",
+      "forgotCurrent": "현재 비밀번호를 잊으셨나요? 이메일로 재설정 링크 보내기",
+      "newPassword": "새 비밀번호",
+      "confirmNewPassword": "새 비밀번호 확인",
+      "placeholderMin": "최소 6자",
+      "updateBtn": "비밀번호 업데이트",
+      "cancel": "취소",
+      "resetDesc": "새 비밀번호를 생성하려면 이메일로 보안 재설정 링크를 보내세요.",
+      "sendResetBtn": "비밀번호 재설정 링크 보내기",
+      "knowCurrent": "현재 비밀번호를 알고 계십니까? 직접 업데이트",
+      "successUpdate": "비밀번호가 성공적으로 업데이트되었습니다!",
+      "successReset": "이메일로 비밀번호 재설정 링크가 전송되었습니다!",
+      "passwordMismatch": "새 비밀번호가 일치하지 않습니다.",
+      "weakPassword": "비밀번호는 6자 이상이어야 합니다.",
+      "fillAll": "모든 필드를 작성해 주세요."
+    },
+    "deleteAccountModal": {
+      "title": "계정을 삭제하시겠습니까?",
+      "desc": "정말로 계정을 삭제하시겠습니까? 이 작업은 영구적이며 취소할 수 없습니다. 저장된 QR 코드와 설정이 모두 제거됩니다.",
+      "confirm": "예, 계정을 삭제합니다",
+      "cancel": "취소",
+      "requiresRecent": "보안상의 이유로 계정을 삭제하기 전에 로그아웃했다가 다시 로그인하십시오.",
+      "success": "귀하의 계정이 삭제되었습니다.",
+      "error": "계정을 삭제하지 못했습니다."
+    },
+    "signInToAccount": "계정에 로그인",
     "forgotPasswordTitle": "비밀번호 재설정",
     "resetNewPasswordTitle": "새 비밀번호 설정",
     "signInSubtitle": "계정에 액세스하고 기록을 동기화하고 PRO 평생 기능을 잠금 해제하세요.",
     "signUpSubtitle": "QR 코드, 기록 동기화 및 PRO 내보내기 형식을 관리하려면 가입하세요.",
     "forgotPasswordSubtitle": "안전한 비밀번호 재설정 링크를 받으려면 등록된 이메일을 입력하세요.",
     "resetNewPasswordSubtitle": "귀하의 계정에 대해 강력한 새 비밀번호를 선택하십시오.",
-    "emailLabel": "이메일 주소",
-    "passwordLabel": "비밀번호",
     "newPasswordLabel": "새 비밀번호",
-    "emailPlaceholder": "you@domain.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "비밀번호를 잊으셨나요?",
     "submitSignIn": "로그인",
@@ -2262,8 +2310,6 @@
     "hasAccount": "이미 계정이 있나요?",
     "switchToSignUp": "무료로 가입하세요",
     "switchToSignIn": "로그인",
-    "signInBtn": "로그인",
-    "signOut": "로그아웃",
     "notConfigured": "Firebase가 구성되지 않았습니다. 환경 키를 확인하세요.",
     "weakPassword": "비밀번호는 6자 이상이어야 합니다.",
     "passwordResetSuccess": "비밀번호가 성공적으로 업데이트되었습니다! 로그인하세요.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100% 클라이언트측 개인정보 보호. 귀하의 QR 데이터와 기록은 브라우저를 떠나지 않습니다.",
     "verificationSentTitle": "이메일을 확인하세요",
     "verificationSentDesc": "{{email}}로 확인 링크를 보냈습니다. 받은 편지함을 확인하고 계정을 확인하세요.",
+    "checkSpamNote": "받은 편지함에 이메일이 보이지 않으면 스팸 또는 정크 폴더를 확인해 보세요.",
     "verificationCheckBtn": "내 이메일을 확인했습니다",
     "verificationResendBtn": "확인 이메일 다시 보내기",
     "verificationResentSuccess": "확인 이메일이 다시 전송되었습니다! 스팸 폴더를 확인해 보세요.",
     "verificationNotYet": "이메일이 아직 확인되지 않았습니다. 받은 편지함으로 전송된 확인 링크를 클릭하세요.",
     "verificationSuccessToast": "이메일이 확인되었습니다! 탑승을 환영합니다.",
-    "continueToApp": "앱으로 계속 진행(나중에 확인)",
-    "checkSpamNote": "받은 편지함에 이메일이 보이지 않으면 스팸 또는 정크 폴더를 확인해 보세요."
+    "continueToApp": "앱으로 계속 진행(나중에 확인)"
   },
   "account": {
     "title": "계정",
@@ -2325,6 +2371,13 @@
       "deleting": "4개 앱에서 계정을 삭제하는 중...",
       "incorrectPassword": "현재 비밀번호가 잘못되었습니다. 다시 시도해 주세요.",
       "typeDeleteError": "확인하려면 대문자로 DELETE를 입력하세요."
-    }
+    },
+    "signOutModal": {
+      "title": "계정에서 로그아웃하시겠습니까?",
+      "desc": "정말로 로그아웃하시겠습니까? PRO 기능과 계정 설정에 액세스하려면 다시 로그인해야 합니다.",
+      "confirmBtn": "예, 로그아웃합니다",
+      "cancelBtn": "취소"
+    },
+    "signInToAccount": "계정에 로그인"
   }
 }

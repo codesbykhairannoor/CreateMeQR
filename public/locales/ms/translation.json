@@ -2233,18 +2233,66 @@
     "p_7": "Seni bina kejuruteraan kami dengan tegas mematuhi Standard Antarabangsa Kod QR ISO/IEC 18004:2015 yang berwibawa dan selaras dengan lancar dengan Rangka Kerja Privasi Data NIST dan Spesifikasi W3C HTML5 untuk aplikasi web yang sangat selamat."
   },
   "auth": {
+    "account": "Akaun",
+    "status": "Status:",
+    "freeStarter": "Permulaan Percuma",
+    "proActive": "PRO Aktif",
+    "proLifetime": "PRO Sepanjang Hayat",
+    "upgradeToPro": "Naik taraf kepada PRO",
+    "changePassword": "Tukar Kata Laluan",
+    "deleteAccount": "Padam Akaun",
+    "signInBtn": "Log Masuk",
+    "signOut": "Log Keluar",
     "signInTitle": "Log Masuk ke CreateMy-QR",
     "signUpTitle": "Buat Akaun",
+    "emailLabel": "Alamat E-mel",
+    "emailPlaceholder": "anda@domain.com",
+    "passwordLabel": "Kata laluan",
+    "currentPassword": "Kata Laluan Semasa",
+    "newPassword": "Kata Laluan Baharu",
+    "confirmNewPassword": "Sahkan Kata Laluan Baharu",
+    "passwordMinChars": "Min. 6 aksara",
+    "signOutModal": {
+      "title": "Log Keluar dari Akaun Anda?",
+      "desc": "Adakah anda pasti mahu log keluar? Anda perlu log masuk sekali lagi untuk mengakses ciri PRO dan tetapan akaun anda.",
+      "confirm": "Ya, Log Keluar",
+      "cancel": "Batal"
+    },
+    "changePasswordModal": {
+      "title": "Tukar Kata Laluan",
+      "currentPassword": "Kata Laluan Semasa",
+      "forgotCurrent": "Terlupa kata laluan semasa? Hantar pautan set semula ke e-mel",
+      "newPassword": "Kata Laluan Baharu",
+      "confirmNewPassword": "Sahkan Kata Laluan Baharu",
+      "placeholderMin": "Min. 6 aksara",
+      "updateBtn": "Kemas kini Kata Laluan",
+      "cancel": "Batal",
+      "resetDesc": "Hantar pautan tetapan semula selamat ke e-mel anda untuk membuat kata laluan baharu.",
+      "sendResetBtn": "Hantar Pautan Tetapan Semula Kata Laluan",
+      "knowCurrent": "Tahu kata laluan semasa anda? Kemas kini terus",
+      "successUpdate": "Kata laluan berjaya dikemas kini!",
+      "successReset": "Pautan tetapan semula kata laluan dihantar ke e-mel anda!",
+      "passwordMismatch": "Kata laluan baharu tidak sepadan.",
+      "weakPassword": "Kata laluan mestilah sekurang-kurangnya 6 aksara.",
+      "fillAll": "Sila isi semua ruangan."
+    },
+    "deleteAccountModal": {
+      "title": "Padamkan Akaun?",
+      "desc": "Adakah anda pasti mahu memadamkan akaun anda? Tindakan ini kekal dan tidak boleh dibuat asal. Semua kod dan tetapan QR anda yang disimpan akan dialih keluar.",
+      "confirm": "Ya, Padam Akaun",
+      "cancel": "Batal",
+      "requiresRecent": "Sila log keluar dan log masuk semula sebelum memadamkan akaun anda atas sebab keselamatan.",
+      "success": "Akaun anda telah dipadamkan.",
+      "error": "Gagal memadamkan akaun."
+    },
+    "signInToAccount": "Log Masuk ke Akaun Anda",
     "forgotPasswordTitle": "Tetapkan Semula Kata Laluan",
     "resetNewPasswordTitle": "Tetapkan Kata Laluan Baharu",
     "signInSubtitle": "Akses akaun anda, sejarah penyegerakan dan buka kunci ciri PRO Lifetime.",
     "signUpSubtitle": "Daftar untuk mengurus kod QR, penyegerakan sejarah dan format eksport PRO.",
     "forgotPasswordSubtitle": "Masukkan e-mel berdaftar anda untuk menerima pautan tetapan semula kata laluan yang selamat.",
     "resetNewPasswordSubtitle": "Pilih kata laluan baharu yang kukuh untuk akaun anda.",
-    "emailLabel": "Alamat E-mel",
-    "passwordLabel": "Kata laluan",
     "newPasswordLabel": "Kata Laluan Baharu",
-    "emailPlaceholder": "anda@domain.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Lupa kata laluan?",
     "submitSignIn": "Log Masuk",
@@ -2262,8 +2310,6 @@
     "hasAccount": "Sudah mempunyai akaun?",
     "switchToSignUp": "Daftar percuma",
     "switchToSignIn": "Log masuk",
-    "signInBtn": "Log Masuk",
-    "signOut": "Log Keluar",
     "notConfigured": "Firebase tidak dikonfigurasikan. Sila sahkan kunci persekitaran anda.",
     "weakPassword": "Kata laluan mestilah sekurang-kurangnya 6 aksara.",
     "passwordResetSuccess": "Kata laluan berjaya dikemas kini! Sila log masuk.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100% Privasi Sebelah Pelanggan. Data dan sejarah QR anda tidak pernah meninggalkan pelayar anda.",
     "verificationSentTitle": "Sahkan E-mel Anda",
     "verificationSentDesc": "Kami telah menghantar pautan pengesahan ke {{email}}. Sila semak peti masuk anda dan sahkan akaun anda.",
+    "checkSpamNote": "Jika anda tidak melihat e-mel dalam peti masuk anda, sila semak folder spam atau sampah anda.",
     "verificationCheckBtn": "Saya telah Mengesahkan E-mel Saya",
     "verificationResendBtn": "Hantar semula E-mel Pengesahan",
     "verificationResentSuccess": "E-mel pengesahan dihantar semula! Sila semak folder spam anda.",
     "verificationNotYet": "E-mel belum disahkan lagi. Sila klik pautan pengesahan yang dihantar ke peti masuk anda.",
     "verificationSuccessToast": "E-mel berjaya disahkan! Selamat menaiki kapal.",
-    "continueToApp": "Teruskan ke Apl (Sahkan Kemudian)",
-    "checkSpamNote": "Jika anda tidak melihat e-mel dalam peti masuk anda, sila semak folder spam atau sampah anda."
+    "continueToApp": "Teruskan ke Apl (Sahkan Kemudian)"
   },
   "account": {
     "title": "Akaun",
@@ -2325,6 +2371,13 @@
       "deleting": "Memadamkan akaun merentas 4 apl...",
       "incorrectPassword": "Kata laluan semasa salah. Sila cuba lagi.",
       "typeDeleteError": "Sila taip DELETE dalam huruf besar untuk mengesahkan."
-    }
+    },
+    "signOutModal": {
+      "title": "Log Keluar dari Akaun Anda?",
+      "desc": "Adakah anda pasti mahu log keluar? Anda perlu log masuk sekali lagi untuk mengakses ciri PRO dan tetapan akaun anda.",
+      "confirmBtn": "Ya, Log Keluar",
+      "cancelBtn": "Batal"
+    },
+    "signInToAccount": "Log Masuk ke Akaun Anda"
   }
 }

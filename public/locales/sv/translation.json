@@ -2233,18 +2233,66 @@
     "p_7": "Vår tekniska arkitektur följer strikt den auktoritativa ISO/IEC 18004:2015 QR Code International Standard och passar sömlöst med NIST Data Privacy Framework och W3C HTML5-specifikationen för mycket säkra webbapplikationer."
   },
   "auth": {
+    "account": "konto",
+    "status": "Status:",
+    "freeStarter": "Gratis förrätt",
+    "proActive": "PRO aktiv",
+    "proLifetime": "PRO Lifetime",
+    "upgradeToPro": "Uppgradera till PRO",
+    "changePassword": "Ändra lösenord",
+    "deleteAccount": "Ta bort konto",
+    "signInBtn": "Logga in",
+    "signOut": "Logga ut",
     "signInTitle": "Logga in på CreateMy-QR",
     "signUpTitle": "Skapa ett konto",
+    "emailLabel": "E-postadress",
+    "emailPlaceholder": "du@domän.com",
+    "passwordLabel": "Lösenord",
+    "currentPassword": "Aktuellt lösenord",
+    "newPassword": "Nytt lösenord",
+    "confirmNewPassword": "Bekräfta nytt lösenord",
+    "passwordMinChars": "Min. 6 tecken",
+    "signOutModal": {
+      "title": "Logga ut från ditt konto?",
+      "desc": "Är du säker på att du vill logga ut? Du måste logga in igen för att komma åt PRO-funktioner och dina kontoinställningar.",
+      "confirm": "Ja, logga ut",
+      "cancel": "Avbryt"
+    },
+    "changePasswordModal": {
+      "title": "Ändra lösenord",
+      "currentPassword": "Aktuellt lösenord",
+      "forgotCurrent": "Glömt nuvarande lösenord? Skicka återställningslänk till e-post",
+      "newPassword": "Nytt lösenord",
+      "confirmNewPassword": "Bekräfta nytt lösenord",
+      "placeholderMin": "Min. 6 tecken",
+      "updateBtn": "Uppdatera lösenord",
+      "cancel": "Avbryt",
+      "resetDesc": "Skicka en säker återställningslänk till din e-post för att skapa ett nytt lösenord.",
+      "sendResetBtn": "Skicka länk för återställning av lösenord",
+      "knowCurrent": "Vet du ditt nuvarande lösenord? Uppdatera direkt",
+      "successUpdate": "Lösenordet har uppdaterats!",
+      "successReset": "Länk för återställning av lösenord skickas till din e-post!",
+      "passwordMismatch": "Nya lösenord matchar inte.",
+      "weakPassword": "Lösenordet måste bestå av minst 6 tecken.",
+      "fillAll": "Vänligen fyll i alla fält."
+    },
+    "deleteAccountModal": {
+      "title": "Ta bort konto?",
+      "desc": "Är du säker på att du vill ta bort ditt konto? Denna åtgärd är permanent och kan inte ångras. Alla dina sparade QR-koder och inställningar kommer att tas bort.",
+      "confirm": "Ja, ta bort konto",
+      "cancel": "Avbryt",
+      "requiresRecent": "Logga ut och logga in igen innan du tar bort ditt konto av säkerhetsskäl.",
+      "success": "Ditt konto har raderats.",
+      "error": "Det gick inte att ta bort kontot."
+    },
+    "signInToAccount": "Logga in på ditt konto",
     "forgotPasswordTitle": "Återställ lösenord",
     "resetNewPasswordTitle": "Ange nytt lösenord",
     "signInSubtitle": "Få åtkomst till ditt konto, synkronisera historik och lås upp PRO Lifetime-funktioner.",
     "signUpSubtitle": "Registrera dig för att hantera QR-koder, historiksynkronisering och PRO-exportformat.",
     "forgotPasswordSubtitle": "Ange din registrerade e-postadress för att få en säker länk för återställning av lösenord.",
     "resetNewPasswordSubtitle": "Välj ett starkt nytt lösenord för ditt konto.",
-    "emailLabel": "E-postadress",
-    "passwordLabel": "Lösenord",
     "newPasswordLabel": "Nytt lösenord",
-    "emailPlaceholder": "du@domän.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Glömt lösenordet?",
     "submitSignIn": "Logga in",
@@ -2262,8 +2310,6 @@
     "hasAccount": "Har du redan ett konto?",
     "switchToSignUp": "Registrera dig gratis",
     "switchToSignIn": "Logga in",
-    "signInBtn": "Logga in",
-    "signOut": "Logga ut",
     "notConfigured": "Firebase är inte konfigurerad. Vänligen verifiera dina miljönycklar.",
     "weakPassword": "Lösenordet måste bestå av minst 6 tecken.",
     "passwordResetSuccess": "Lösenordet har uppdaterats! Logga in.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100 % integritet på klientsidan. Din QR-data och historik lämnar aldrig din webbläsare.",
     "verificationSentTitle": "Verifiera din e-post",
     "verificationSentDesc": "Vi har skickat en verifieringslänk till {{email}}. Kontrollera din inkorg och verifiera ditt konto.",
+    "checkSpamNote": "Om du inte ser e-postmeddelandet i din inkorg, kontrollera din skräppost- eller skräppostmapp.",
     "verificationCheckBtn": "Jag har verifierat min e-post",
     "verificationResendBtn": "Skicka verifieringse-post igen",
     "verificationResentSuccess": "Verifieringse-postmeddelandet har skickats igen! Kontrollera din skräppostmapp.",
     "verificationNotYet": "E-postadressen är inte verifierad ännu. Klicka på verifieringslänken som skickas till din inkorg.",
     "verificationSuccessToast": "E-post har verifierats! Välkommen ombord.",
-    "continueToApp": "Fortsätt till appen (verifiera senare)",
-    "checkSpamNote": "Om du inte ser e-postmeddelandet i din inkorg, kontrollera din skräppost- eller skräppostmapp."
+    "continueToApp": "Fortsätt till appen (verifiera senare)"
   },
   "account": {
     "title": "konto",
@@ -2311,7 +2357,7 @@
       "resetSubtitle": "Skicka en säker återställningslänk till din e-post för att skapa ett nytt lösenord.",
       "sendResetLinkBtn": "Skicka länk för återställning av lösenord",
       "knowCurrentLink": "Vet du ditt nuvarande lösenord? Uppdatera direkt",
-      "resetLinkSent": "Lösenordsåterställningslänk skickas till din e-post!"
+      "resetLinkSent": "Länk för återställning av lösenord skickas till din e-post!"
     },
     "deleteAccountModal": {
       "title": "Ta bort konto",
@@ -2325,6 +2371,13 @@
       "deleting": "Tar bort konto i fyra appar...",
       "incorrectPassword": "Felaktigt aktuellt lösenord. Försök igen.",
       "typeDeleteError": "Skriv DELETE med versaler för att bekräfta."
-    }
+    },
+    "signOutModal": {
+      "title": "Logga ut från ditt konto?",
+      "desc": "Är du säker på att du vill logga ut? Du måste logga in igen för att komma åt PRO-funktioner och dina kontoinställningar.",
+      "confirmBtn": "Ja, logga ut",
+      "cancelBtn": "Avbryt"
+    },
+    "signInToAccount": "Logga in på ditt konto"
   }
 }

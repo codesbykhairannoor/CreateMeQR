@@ -2233,21 +2233,69 @@
     "p_7": "Nasza architektura inżynieryjna jest ściśle zgodna z autorytatywną międzynarodową normą ISO/IEC 18004:2015 dotyczącą kodów QR i płynnie dopasowuje się do ram ochrony danych NIST i specyfikacji W3C HTML5 dla wysoce bezpiecznych aplikacji internetowych."
   },
   "auth": {
+    "account": "Konto",
+    "status": "Stan:",
+    "freeStarter": "Bezpłatny starter",
+    "proActive": "PRO Aktywny",
+    "proLifetime": "Dożywotnia PRO",
+    "upgradeToPro": "Przejdź na wersję PRO",
+    "changePassword": "Zmień hasło",
+    "deleteAccount": "Usuń konto",
+    "signInBtn": "Zaloguj się",
+    "signOut": "Wyloguj się",
     "signInTitle": "Zaloguj się do CreateMy-QR",
     "signUpTitle": "Utwórz konto",
+    "emailLabel": "Adres e-mail",
+    "emailPlaceholder": "ty@domena.com",
+    "passwordLabel": "Hasło",
+    "currentPassword": "Aktualne hasło",
+    "newPassword": "Nowe hasło",
+    "confirmNewPassword": "Potwierdź nowe hasło",
+    "passwordMinChars": "Min. 6 znaków",
+    "signOutModal": {
+      "title": "Wylogować się ze swojego konta?",
+      "desc": "Czy na pewno chcesz się wylogować? Aby uzyskać dostęp do funkcji PRO i ustawień konta, konieczne będzie ponowne zalogowanie się.",
+      "confirm": "Tak, wyloguj się",
+      "cancel": "Anuluj"
+    },
+    "changePasswordModal": {
+      "title": "Zmień hasło",
+      "currentPassword": "Aktualne hasło",
+      "forgotCurrent": "Zapomniałeś aktualnego hasła? Wyślij link resetujący na e-mail",
+      "newPassword": "Nowe hasło",
+      "confirmNewPassword": "Potwierdź nowe hasło",
+      "placeholderMin": "Min. 6 znaków",
+      "updateBtn": "Zaktualizuj hasło",
+      "cancel": "Anuluj",
+      "resetDesc": "Wyślij link do bezpiecznego resetowania na swój adres e-mail, aby utworzyć nowe hasło.",
+      "sendResetBtn": "Wyślij link do resetowania hasła",
+      "knowCurrent": "Znasz swoje aktualne hasło? Aktualizuj bezpośrednio",
+      "successUpdate": "Hasło zostało pomyślnie zaktualizowane!",
+      "successReset": "Link do resetowania hasła wysłany na Twój e-mail!",
+      "passwordMismatch": "Nowe hasła nie pasują.",
+      "weakPassword": "Hasło musi mieć co najmniej 6 znaków.",
+      "fillAll": "Proszę wypełnić wszystkie pola."
+    },
+    "deleteAccountModal": {
+      "title": "Usunąć konto?",
+      "desc": "Czy na pewno chcesz usunąć swoje konto? Ta czynność jest trwała i nie można jej cofnąć. Wszystkie zapisane kody QR i ustawienia zostaną usunięte.",
+      "confirm": "Tak, usuń konto",
+      "cancel": "Anuluj",
+      "requiresRecent": "Ze względów bezpieczeństwa wyloguj się i zaloguj ponownie przed usunięciem konta.",
+      "success": "Twoje konto zostało usunięte.",
+      "error": "Nie udało się usunąć konta."
+    },
+    "signInToAccount": "Zaloguj się na swoje konto",
     "forgotPasswordTitle": "Zresetuj hasło",
     "resetNewPasswordTitle": "Ustaw nowe hasło",
     "signInSubtitle": "Uzyskaj dostęp do swojego konta, synchronizuj historię i odblokuj funkcje PRO Lifetime.",
     "signUpSubtitle": "Zarejestruj się, aby zarządzać kodami QR, synchronizacją historii i formatami eksportu PRO.",
     "forgotPasswordSubtitle": "Wpisz swój zarejestrowany adres e-mail, aby otrzymać link do bezpiecznego resetowania hasła.",
     "resetNewPasswordSubtitle": "Wybierz nowe, silne hasło do swojego konta.",
-    "emailLabel": "Adres e-mail",
-    "passwordLabel": "Hasło",
     "newPasswordLabel": "Nowe hasło",
-    "emailPlaceholder": "ty@domena.com",
     "passwordPlaceholder": "••••••••",
     "forgotPasswordLink": "Zapomniałeś hasła?",
-    "submitSignIn": "Zalogować się",
+    "submitSignIn": "Zaloguj się",
     "submitSignUp": "Utwórz darmowe konto",
     "submitReset": "Wyślij link do resetowania hasła",
     "submitNewPassword": "Zapisz nowe hasło",
@@ -2262,8 +2310,6 @@
     "hasAccount": "Masz już konto?",
     "switchToSignUp": "Zarejestruj się bezpłatnie",
     "switchToSignIn": "Zaloguj się",
-    "signInBtn": "Zaloguj się",
-    "signOut": "Wyloguj się",
     "notConfigured": "Firebase nie jest skonfigurowany. Sprawdź klucze środowiska.",
     "weakPassword": "Hasło musi mieć co najmniej 6 znaków.",
     "passwordResetSuccess": "Hasło zostało pomyślnie zaktualizowane! Proszę się zalogować.",
@@ -2276,13 +2322,13 @@
     "privacyNote": "100% prywatności po stronie klienta. Twoje dane QR i historia nigdy nie opuszczają przeglądarki.",
     "verificationSentTitle": "Zweryfikuj swój adres e-mail",
     "verificationSentDesc": "Wysłaliśmy link weryfikacyjny do {{email}}. Sprawdź swoją skrzynkę odbiorczą i zweryfikuj swoje konto.",
+    "checkSpamNote": "Jeśli nie widzisz wiadomości e-mail w swojej skrzynce odbiorczej, sprawdź folder ze spamem lub wiadomościami-śmieciami.",
     "verificationCheckBtn": "Zweryfikowałem swój adres e-mail",
     "verificationResendBtn": "Wyślij ponownie e-mail weryfikacyjny",
     "verificationResentSuccess": "E-mail weryfikacyjny został wysłany ponownie! Proszę sprawdzić folder ze spamem.",
     "verificationNotYet": "Adres e-mail nie został jeszcze zweryfikowany. Kliknij link weryfikacyjny przesłany na Twoją skrzynkę odbiorczą.",
     "verificationSuccessToast": "E-mail zweryfikowany pomyślnie! Witamy na pokładzie.",
-    "continueToApp": "Przejdź do aplikacji (zweryfikuj później)",
-    "checkSpamNote": "Jeśli nie widzisz wiadomości e-mail w swojej skrzynce odbiorczej, sprawdź folder ze spamem lub wiadomościami-śmieciami."
+    "continueToApp": "Przejdź do aplikacji (zweryfikuj później)"
   },
   "account": {
     "title": "Konto",
@@ -2325,6 +2371,13 @@
       "deleting": "Usuwanie konta w 4 aplikacjach...",
       "incorrectPassword": "Nieprawidłowe aktualne hasło. Spróbuj ponownie.",
       "typeDeleteError": "Aby potwierdzić, wpisz DELETE wielkimi literami."
-    }
+    },
+    "signOutModal": {
+      "title": "Wylogować się ze swojego konta?",
+      "desc": "Czy na pewno chcesz się wylogować? Aby uzyskać dostęp do funkcji PRO i ustawień konta, konieczne będzie ponowne zalogowanie się.",
+      "confirmBtn": "Tak, wyloguj się",
+      "cancelBtn": "Anuluj"
+    },
+    "signInToAccount": "Zaloguj się na swoje konto"
   }
 }
