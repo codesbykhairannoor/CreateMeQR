@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "Vahvistussähköposti lähetetty uudelleen! Tarkista roskapostikansiosi.",
     "verificationNotYet": "Sähköpostia ei ole vielä vahvistettu. Napsauta sähköpostiisi lähetettyä vahvistuslinkkiä.",
     "verificationSuccessToast": "Sähköposti vahvistettu onnistuneesti! Tervetuloa kyytiin.",
-    "continueToApp": "Jatka sovellukseen (vahvista myöhemmin)"
+    "continueToApp": "Jatka sovellukseen (vahvista myöhemmin)",
+    "checkSpamNote": "Jos et näe sähköpostia postilaatikossasi, tarkista roskaposti- tai roskapostikansiosi."
   },
   "account": {
     "title": "Tili",

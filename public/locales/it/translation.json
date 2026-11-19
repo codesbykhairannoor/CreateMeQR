@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "Email di verifica rinviata! Per favore controlla la tua cartella spam.",
     "verificationNotYet": "E-mail non ancora verificata. Fai clic sul collegamento di verifica inviato alla tua casella di posta.",
     "verificationSuccessToast": "Email verificata con successo! Benvenuto a bordo.",
-    "continueToApp": "Continua sull'app (verifica più tardi)"
+    "continueToApp": "Continua sull'app (verifica più tardi)",
+    "checkSpamNote": "Se non vedi l'e-mail nella tua casella di posta, controlla la cartella spam o posta indesiderata."
   },
   "account": {
     "title": "Conto",

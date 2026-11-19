@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "確認メールを再送信しました!スパムフォルダを確認してください。",
     "verificationNotYet": "メールはまだ認証されていません。受信箱に送信された確認リンクをクリックしてください。",
     "verificationSuccessToast": "メールアドレスが正常に認証されました。ようこそ。",
-    "continueToApp": "アプリに進む (後で確認)"
+    "continueToApp": "アプリに進む (後で確認)",
+    "checkSpamNote": "受信箱にメールが見つからない場合は、スパムまたは迷惑メール フォルダーを確認してください。"
   },
   "account": {
     "title": "アカウント",

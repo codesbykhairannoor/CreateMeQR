@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "Verifieringse-postmeddelandet har skickats igen! Kontrollera din skräppostmapp.",
     "verificationNotYet": "E-postadressen är inte verifierad ännu. Klicka på verifieringslänken som skickas till din inkorg.",
     "verificationSuccessToast": "E-post har verifierats! Välkommen ombord.",
-    "continueToApp": "Fortsätt till appen (verifiera senare)"
+    "continueToApp": "Fortsätt till appen (verifiera senare)",
+    "checkSpamNote": "Om du inte ser e-postmeddelandet i din inkorg, kontrollera din skräppost- eller skräppostmapp."
   },
   "account": {
     "title": "konto",

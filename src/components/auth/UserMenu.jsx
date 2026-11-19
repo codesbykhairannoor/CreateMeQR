@@ -116,10 +116,10 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
             <img
               src={user.photoURL}
               alt={username}
-              className="w-7 h-7 md:w-7 md:h-7 rounded-full object-cover border border-rose-500"
+              className="w-7 h-7 md:w-7 md:h-7 rounded-full object-cover border border-blue-500"
             />
           ) : (
-            <div className="w-7 h-7 rounded-full bg-rose-600 text-white font-bold text-xs flex items-center justify-center shrink-0 shadow-xs">
+            <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white font-bold text-xs flex items-center justify-center shrink-0 shadow-xs border border-blue-500/30">
               {initial}
             </div>
           )}
@@ -145,15 +145,15 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
 
               {/* Unverified Pill with Verify Button (Shown if not verified) */}
               {!isVerified && (
-                <div className="mt-3 p-2.5 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/50 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-rose-600 dark:text-rose-400">
+                <div className="mt-3 p-2.5 rounded-xl bg-amber-50/90 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-900/50 flex items-center justify-between">
+                  <span className="text-xs font-semibold text-amber-700 dark:text-amber-400">
                     {t('account.unverified', 'Unverified')}
                   </span>
                   <button
                     type="button"
                     onClick={handleSendVerification}
                     disabled={verifying || verifySent}
-                    className="px-3 py-1 rounded-lg bg-rose-600 hover:bg-rose-700 active:scale-95 text-white text-xs font-bold transition-all shadow-xs disabled:opacity-75 cursor-pointer flex items-center gap-1.5"
+                    className="px-3 py-1 rounded-lg bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 active:scale-95 text-white text-xs font-bold transition-all shadow-xs disabled:opacity-75 cursor-pointer flex items-center gap-1.5"
                   >
                     {verifying ? (
                       <Loader2 className="w-3 h-3 animate-spin text-white" />
@@ -183,11 +183,11 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
                 </span>
               </div>
 
-              {/* Upgrade to PRO Button (if not pro) */}
+              {/* Upgrade to PRO Button (if not pro) - CreateMy-QR Brand */}
               {!isPro && (
                 <button
                   onClick={handleUpgrade}
-                  className="mt-3 w-full py-2.5 px-3 rounded-xl bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 dark:hover:bg-rose-900/40 border border-rose-200 dark:border-rose-900/50 text-rose-600 dark:text-rose-400 font-bold text-xs flex items-center justify-center gap-2 transition-all cursor-pointer shadow-xs active:scale-[0.99]"
+                  className="mt-3 w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-xs flex items-center justify-center gap-2 transition-all cursor-pointer shadow-md shadow-blue-900/20 active:scale-[0.99]"
                 >
                   <Crown className="w-3.5 h-3.5" />
                   <span>{t('account.upgradeToPro', 'Upgrade to PRO')}</span>

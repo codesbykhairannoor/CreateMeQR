@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "¡Correo electrónico de verificación reenviado! Por favor revisa tu carpeta de spam.",
     "verificationNotYet": "Correo electrónico aún no verificado. Haga clic en el enlace de verificación enviado a su bandeja de entrada.",
     "verificationSuccessToast": "¡Correo electrónico verificado exitosamente! Bienvenido a bordo.",
-    "continueToApp": "Continuar a la aplicación (verificar más tarde)"
+    "continueToApp": "Continuar a la aplicación (verificar más tarde)",
+    "checkSpamNote": "Si no ve el correo electrónico en su bandeja de entrada, revise su carpeta de correo no deseado o basura."
   },
   "account": {
     "title": "cuenta",

@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "E-mail de vérification renvoyé ! Veuillez vérifier votre dossier spam.",
     "verificationNotYet": "E-mail non encore vérifié. Veuillez cliquer sur le lien de vérification envoyé dans votre boîte de réception.",
     "verificationSuccessToast": "E-mail vérifié avec succès ! Bienvenue à bord.",
-    "continueToApp": "Continuer vers l'application (vérifier plus tard)"
+    "continueToApp": "Continuer vers l'application (vérifier plus tard)",
+    "checkSpamNote": "Si vous ne voyez pas l'e-mail dans votre boîte de réception, veuillez vérifier votre dossier spam ou courrier indésirable."
   },
   "account": {
     "title": "Compte",

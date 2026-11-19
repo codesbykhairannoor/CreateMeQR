@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "E-mel pengesahan dihantar semula! Sila semak folder spam anda.",
     "verificationNotYet": "E-mel belum disahkan lagi. Sila klik pautan pengesahan yang dihantar ke peti masuk anda.",
     "verificationSuccessToast": "E-mel berjaya disahkan! Selamat menaiki kapal.",
-    "continueToApp": "Teruskan ke Apl (Sahkan Kemudian)"
+    "continueToApp": "Teruskan ke Apl (Sahkan Kemudian)",
+    "checkSpamNote": "Jika anda tidak melihat e-mel dalam peti masuk anda, sila semak folder spam atau sampah anda."
   },
   "account": {
     "title": "Akaun",

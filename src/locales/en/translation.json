@@ -2230,7 +2230,8 @@
     "verificationResentSuccess": "Verification email resent! Please check your spam folder.",
     "verificationNotYet": "Email not verified yet. Please click the verification link sent to your inbox.",
     "verificationSuccessToast": "Email verified successfully! Welcome aboard.",
-    "continueToApp": "Continue to App (Verify Later)"
+    "continueToApp": "Continue to App (Verify Later)",
+    "checkSpamNote": "If you do not see the email in your inbox, please check your spam or junk folder."
   },
   "account": {
     "title": "Account",

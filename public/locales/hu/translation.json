@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "Az ellenőrző e-mail újra elküldve! Kérjük, ellenőrizze a spam mappát.",
     "verificationNotYet": "Az e-mail cím még nincs ellenőrizve. Kérjük, kattintson a postaládájába küldött ellenőrző linkre.",
     "verificationSuccessToast": "Az e-mail-cím sikeresen ellenőrizve! Üdvözöljük a fedélzeten.",
-    "continueToApp": "Tovább az alkalmazáshoz (ellenőrzés később)"
+    "continueToApp": "Tovább az alkalmazáshoz (ellenőrzés később)",
+    "checkSpamNote": "Ha nem látja az e-mailt a beérkező levelek között, kérjük, ellenőrizze a spam vagy a levélszemét mappát."
   },
   "account": {
     "title": "fiók",

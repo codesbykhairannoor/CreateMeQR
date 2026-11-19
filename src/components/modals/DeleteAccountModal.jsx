@@ -2,7 +2,8 @@
 // Permanent Account Deletion Modal across 4 connected platforms (CreateMy-QR, PDFEquips, TextEquips, ToolEquips)
 
 import React, { useState } from 'react';
-import { X, Trash2, AlertTriangle, Lock, Loader2, AlertCircle, ShieldAlert } from 'lucide-react';
+import { createPortal } from 'react-dom';
+import { X, Trash2, Lock, Loader2, AlertCircle, ShieldAlert } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
@@ -17,7 +18,7 @@ export default function DeleteAccountModal({ isOpen, onClose }) {
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState(null);
 
-  if (!isOpen || !user) return null;
+  if (!isOpen || !user || typeof document === 'undefined') return null;
 
   // Check if user has a password provider (email/password) or is Google only
   const hasPasswordProvider = user.providerData?.some(
@@ -70,16 +71,16 @@ export default function DeleteAccountModal({ isOpen, onClose }) {
     }
   };
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+  const modalContent = (
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 overflow-y-auto">
       {/* Backdrop */}
       <div
         onClick={handleClose}
         className="fixed inset-0 bg-slate-950/80 backdrop-blur-md animate-fade-in"
       />
 
-      {/* Modal Card */}
-      <div className="relative w-full max-w-lg bg-white dark:bg-[#081226] rounded-3xl shadow-2xl border border-rose-200 dark:border-rose-950/60 p-6 md:p-8 z-10 overflow-hidden animate-fade-in-up">
+      {/* Modal Card - Centered via Portal */}
+      <div className="relative w-full max-w-lg my-auto bg-white dark:bg-[#081226] rounded-3xl shadow-2xl border border-rose-200 dark:border-rose-950/60 p-6 md:p-8 z-10 overflow-hidden animate-fade-in-up">
         {/* Subtle Ambient Red Glow */}
         <div className="absolute top-0 right-0 w-48 h-48 bg-rose-600/10 blur-3xl pointer-events-none rounded-full" />
 
@@ -93,7 +94,7 @@ export default function DeleteAccountModal({ isOpen, onClose }) {
         </button>
 
         {/* Header */}
-        <div className="flex items-center gap-3.5 mb-5">
+        <div className="flex items-center gap-3.5 mb-5 relative z-10">
           <div className="w-12 h-12 rounded-2xl bg-rose-100 dark:bg-rose-950/60 border border-rose-200 dark:border-rose-900 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0 shadow-xs">
             <Trash2 className="w-6 h-6" />
           </div>
@@ -101,14 +102,14 @@ export default function DeleteAccountModal({ isOpen, onClose }) {
             <h3 className="text-xl font-bold text-slate-900 dark:text-white tracking-tight">
               {t('account.deleteAccountModal.title', 'Delete Account')}
             </h3>
-            <p className="text-xs text-slate-500 dark:text-slate-400 truncate mt-0.5">
+            <p className="text-xs text-slate-500 dark:text-slate-400 truncate mt-0.5 font-medium">
               {user.email}
             </p>
           </div>
         </div>
 
         {/* Ecosystem Multi-Site Warning Alert */}
-        <div className="mb-5 p-4 rounded-2xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/50 text-rose-900 dark:text-rose-200">
+        <div className="mb-5 p-4 rounded-2xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/50 text-rose-900 dark:text-rose-200 relative z-10">
           <div className="flex items-start gap-3">
             <ShieldAlert className="w-5 h-5 text-rose-600 dark:text-rose-400 shrink-0 mt-0.5" />
             <div className="text-xs space-y-2 leading-relaxed">
@@ -145,18 +146,18 @@ export default function DeleteAccountModal({ isOpen, onClose }) {
 
         {/* Error Alert */}
         {errorMsg && (
-          <div className="mb-4 p-3 rounded-xl bg-rose-100/80 dark:bg-rose-950/70 border border-rose-300 dark:border-rose-800 flex items-start gap-2.5 text-xs text-rose-700 dark:text-rose-300 animate-shake">
+          <div className="mb-4 p-3 rounded-xl bg-rose-100/80 dark:bg-rose-950/70 border border-rose-300 dark:border-rose-800 flex items-start gap-2.5 text-xs text-rose-700 dark:text-rose-300 animate-shake relative z-10">
             <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
             <span>{errorMsg}</span>
           </div>
         )}
 
         {/* Confirmation Form */}
-        <form onSubmit={handleDelete} className="space-y-4">
+        <form onSubmit={handleDelete} className="space-y-4 relative z-10">
           {/* Current Password (if user has password login) */}
           {hasPasswordProvider && (
             <div>
-              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">
                 {t('account.deleteAccountModal.currentPasswordLabel', 'Current Password')}
               </label>
               <div className="relative">
@@ -178,7 +179,7 @@ export default function DeleteAccountModal({ isOpen, onClose }) {
 
           {/* Typing DELETE confirmation */}
           <div>
-            <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+            <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">
               {t(
                 'account.deleteAccountModal.confirmTypeLabel',
                 'To confirm deletion, type DELETE in all uppercase below:'
@@ -231,4 +232,6 @@ export default function DeleteAccountModal({ isOpen, onClose }) {
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 }

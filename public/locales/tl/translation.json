@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "Ipinadala muli ang email ng pagpapatunay! Pakisuri ang iyong folder ng spam.",
     "verificationNotYet": "Hindi pa na-verify ang email. Paki-click ang link sa pagpapatunay na ipinadala sa iyong inbox.",
     "verificationSuccessToast": "Matagumpay na na-verify ang email! Maligayang pagdating sakay.",
-    "continueToApp": "Magpatuloy sa App (I-verify sa Mamaya)"
+    "continueToApp": "Magpatuloy sa App (I-verify sa Mamaya)",
+    "checkSpamNote": "Kung hindi mo makita ang email sa iyong inbox, pakitingnan ang iyong spam o junk folder."
   },
   "account": {
     "title": "Account",

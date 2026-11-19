@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "Verificatie-e-mail opnieuw verzonden! Controleer uw spammap.",
     "verificationNotYet": "E-mailadres nog niet geverifieerd. Klik op de verificatielink die naar uw inbox is verzonden.",
     "verificationSuccessToast": "E-mail succesvol geverifieerd! Welkom aan boord.",
-    "continueToApp": "Doorgaan naar app (later verifiëren)"
+    "continueToApp": "Doorgaan naar app (later verifiëren)",
+    "checkSpamNote": "Als u de e-mail niet in uw inbox ziet, controleer dan uw map met spam of ongewenste e-mail."
   },
   "account": {
     "title": "Rekening",

@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "Doğrulama e-postası yeniden gönderildi! Lütfen spam klasörünüzü kontrol edin.",
     "verificationNotYet": "E-posta henüz doğrulanmadı. Lütfen gelen kutunuza gönderilen doğrulama bağlantısını tıklayın.",
     "verificationSuccessToast": "E-posta başarıyla doğrulandı! Gemiye hoş geldiniz.",
-    "continueToApp": "Uygulamaya Devam Et (Daha Sonra Doğrula)"
+    "continueToApp": "Uygulamaya Devam Et (Daha Sonra Doğrula)",
+    "checkSpamNote": "E-postayı gelen kutunuzda göremiyorsanız lütfen spam veya önemsiz klasörünüzü kontrol edin."
   },
   "account": {
     "title": "Hesap",

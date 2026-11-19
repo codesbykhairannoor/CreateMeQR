@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "확인 이메일이 다시 전송되었습니다! 스팸 폴더를 확인해 보세요.",
     "verificationNotYet": "이메일이 아직 확인되지 않았습니다. 받은 편지함으로 전송된 확인 링크를 클릭하세요.",
     "verificationSuccessToast": "이메일이 확인되었습니다! 탑승을 환영합니다.",
-    "continueToApp": "앱으로 계속 진행(나중에 확인)"
+    "continueToApp": "앱으로 계속 진행(나중에 확인)",
+    "checkSpamNote": "받은 편지함에 이메일이 보이지 않으면 스팸 또는 정크 폴더를 확인해 보세요."
   },
   "account": {
     "title": "계정",

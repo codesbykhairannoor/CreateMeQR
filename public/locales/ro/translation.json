@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "E-mailul de verificare a fost retransmis! Vă rugăm să verificați folderul de spam.",
     "verificationNotYet": "E-mail neverificat încă. Dați clic pe linkul de verificare trimis în căsuța dvs. de e-mail.",
     "verificationSuccessToast": "E-mail verificat cu succes! Bun venit la bord.",
-    "continueToApp": "Continuați la aplicație (verificați mai târziu)"
+    "continueToApp": "Continuați la aplicație (verificați mai târziu)",
+    "checkSpamNote": "Dacă nu vedeți e-mailul în căsuța dvs. de e-mail, vă rugăm să verificați dosarul spam sau nedorit."
   },
   "account": {
     "title": "Cont",

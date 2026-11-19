@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "Email verifikasi telah dikirim ulang! Silakan periksa folder spam jika belum masuk.",
     "verificationNotYet": "Email belum terverifikasi. Silakan klik tautan verifikasi di kotak masuk Anda.",
     "verificationSuccessToast": "Email berhasil diverifikasi! Selamat datang di CreateMy-QR.",
-    "continueToApp": "Lanjutkan ke Aplikasi (Verifikasi Nanti)"
+    "continueToApp": "Lanjutkan ke Aplikasi (Verifikasi Nanti)",
+    "checkSpamNote": "Jika Anda tidak melihat email di kotak masuk, silakan periksa folder spam atau sampah Anda."
   },
   "account": {
     "title": "Akun",

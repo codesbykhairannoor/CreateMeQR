@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "Ověřovací e-mail odeslán znovu! Zkontrolujte prosím složku se spamem.",
     "verificationNotYet": "E-mail zatím není ověřen. Klikněte prosím na ověřovací odkaz zaslaný do vaší doručené pošty.",
     "verificationSuccessToast": "E-mail byl úspěšně ověřen! Vítejte na palubě.",
-    "continueToApp": "Pokračovat do aplikace (Ověřit později)"
+    "continueToApp": "Pokračovat do aplikace (Ověřit později)",
+    "checkSpamNote": "Pokud e-mail ve své doručené poště nevidíte, zkontrolujte složku se spamem nebo nevyžádanou poštou."
   },
   "account": {
     "title": "účet",

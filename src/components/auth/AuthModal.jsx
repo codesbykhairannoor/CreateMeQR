@@ -2,6 +2,7 @@
 // Clean authentication modal for CreateMy-QR (Login, Register, Email Verification, Forgot Password, Google Auth)
 
 import React, { useState, useEffect, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import {
   X,
   Loader2,
@@ -38,6 +39,7 @@ export default function AuthModal() {
   const [mode, setMode] = useState('signin'); // 'signin' | 'signup' | 'forgot' | 'reset' | 'verification_sent'
   const [resetCode, setResetCode] = useState(null);
   const [email, setEmail] = useState('');
+  const [registeredEmail, setRegisteredEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [checkLoading, setCheckLoading] = useState(false);
@@ -78,16 +80,16 @@ export default function AuthModal() {
     setCheckLoading(false);
   }, []);
 
-  // Close modal when user signs in (except in verification_sent mode)
+  // Close modal ONLY when user explicitly signs in (mode === 'signin')
   useEffect(() => {
-    if (user && isAuthModalOpen && mode !== 'verification_sent') {
+    if (user && isAuthModalOpen && mode === 'signin') {
       resetForm();
       closeAuthModal();
     }
   }, [user, isAuthModalOpen, mode, closeAuthModal, resetForm]);
 
-  if (!isAuthModalOpen) return null;
-  if (user && mode !== 'verification_sent') return null;
+  if (!isAuthModalOpen || typeof document === 'undefined') return null;
+  if (user && mode === 'signin') return null;
 
   const handleSwitchMode = (newMode) => {
     setMode(newMode);
@@ -188,10 +190,19 @@ export default function AuthModal() {
         resetForm();
         closeAuthModal();
       } else {
-        // Manual Sign Up flow: Register, trigger verification email, and transition to verification screen
-        await signUpWithEmail(email, password, false);
+        // Manual Sign Up flow:
+        // Set mode to 'verification_sent' immediately and register user so onAuthStateChanged does NOT close the modal
+        const targetEmail = email.trim();
+        setRegisteredEmail(targetEmail);
         setMode('verification_sent');
         setResendCooldown(30);
+
+        try {
+          await signUpWithEmail(targetEmail, password, false);
+        } catch (signUpErr) {
+          setMode('signup');
+          throw signUpErr;
+        }
       }
     } catch (err) {
       const code = err?.code;
@@ -286,19 +297,21 @@ export default function AuthModal() {
     }
   };
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+  const activeEmail = registeredEmail || email || user?.email || '';
+
+  const modalContent = (
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 overflow-y-auto">
       {/* Backdrop */}
       <div
         onClick={() => {
           resetForm();
           closeAuthModal();
         }}
-        className="fixed inset-0 bg-slate-950/70 backdrop-blur-sm animate-fade-in"
+        className="fixed inset-0 bg-slate-950/75 backdrop-blur-md animate-fade-in"
       />
 
-      {/* Modal Window */}
-      <div className="relative w-full max-w-md bg-white dark:bg-[#081226] rounded-3xl shadow-2xl border border-slate-200 dark:border-[#102040] p-6 md:p-8 z-10 overflow-hidden animate-fade-in-up">
+      {/* Modal Window - Perfectly Centered via Portal */}
+      <div className="relative w-full max-w-md my-auto bg-white dark:bg-[#081226] rounded-3xl shadow-2xl border border-slate-200 dark:border-[#102040] p-6 md:p-8 z-10 overflow-hidden animate-fade-in-up">
         {/* Subtle Brand Ambient Glow */}
         <div className="absolute top-0 right-0 w-48 h-48 bg-blue-600/10 dark:bg-blue-500/15 blur-3xl pointer-events-none rounded-full" />
         <div className="absolute bottom-0 left-0 w-48 h-48 bg-slate-900/10 dark:bg-blue-700/10 blur-3xl pointer-events-none rounded-full" />
@@ -328,20 +341,28 @@ export default function AuthModal() {
               </h3>
               <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
                 {t('auth.verificationSentDesc', {
-                  email,
-                  defaultValue: `We've sent a verification link to ${email}. Please check your inbox and verify your account.`,
+                  email: activeEmail,
+                  defaultValue: `We've sent a verification link to ${activeEmail}. Please check your inbox and verify your account.`,
                 })}
               </p>
             </div>
 
             {/* Email Target Card */}
-            <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-[#040a18] border border-slate-200 dark:border-[#102040] text-xs text-slate-700 dark:text-slate-300 font-semibold break-all">
-              {email}
+            <div className="p-3.5 rounded-2xl bg-blue-50/50 dark:bg-[#0c1831] border border-blue-200/60 dark:border-blue-900/40 text-xs text-blue-900 dark:text-blue-200 font-semibold break-all flex items-center justify-center gap-2">
+              <Mail className="w-4 h-4 text-blue-600 shrink-0" />
+              <span>{activeEmail}</span>
             </div>
+
+            {/* Helpful Spam Note */}
+            <p className="text-[11px] text-slate-400 dark:text-slate-500 leading-relaxed px-2">
+              {t('auth.checkSpamNote', {
+                defaultValue: 'If you do not see the email in your inbox, please check your spam or junk folder.',
+              })}
+            </p>
 
             {/* Error Alert */}
             {errorMsg && (
-              <div className="p-3 rounded-xl bg-rose-50 dark:bg-rose-950/50 border border-rose-200 dark:border-rose-800/60 flex items-start gap-2.5 text-xs text-rose-600 dark:text-rose-400 text-left">
+              <div className="p-3 rounded-xl bg-rose-50 dark:bg-rose-950/50 border border-rose-200 dark:border-rose-800/60 flex items-start gap-2.5 text-xs text-rose-600 dark:text-rose-400 text-left animate-shake">
                 <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
                 <span>{errorMsg}</span>
               </div>
@@ -355,7 +376,7 @@ export default function AuthModal() {
               </div>
             )}
 
-            {/* Verification Actions */}
+            {/* Verification Actions (CreateMy-QR Brand Royal Blue) */}
             <div className="space-y-2.5 pt-2">
               <button
                 type="button"
@@ -396,7 +417,7 @@ export default function AuthModal() {
                   resetForm();
                   closeAuthModal();
                 }}
-                className="w-full py-2 text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-white transition-colors cursor-pointer"
+                className="w-full py-2 text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
               >
                 {t('auth.continueToApp', { defaultValue: 'Continue to App (Verify Later)' })}
               </button>
@@ -631,4 +652,6 @@ export default function AuthModal() {
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 }

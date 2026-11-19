@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "E-mail weryfikacyjny został wysłany ponownie! Proszę sprawdzić folder ze spamem.",
     "verificationNotYet": "Adres e-mail nie został jeszcze zweryfikowany. Kliknij link weryfikacyjny przesłany na Twoją skrzynkę odbiorczą.",
     "verificationSuccessToast": "E-mail zweryfikowany pomyślnie! Witamy na pokładzie.",
-    "continueToApp": "Przejdź do aplikacji (zweryfikuj później)"
+    "continueToApp": "Przejdź do aplikacji (zweryfikuj później)",
+    "checkSpamNote": "Jeśli nie widzisz wiadomości e-mail w swojej skrzynce odbiorczej, sprawdź folder ze spamem lub wiadomościami-śmieciami."
   },
   "account": {
     "title": "Konto",

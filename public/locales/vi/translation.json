@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "Gửi lại email xác minh! Vui lòng kiểm tra thư mục thư rác của bạn.",
     "verificationNotYet": "Email chưa được xác minh. Vui lòng nhấp vào liên kết xác minh được gửi đến hộp thư đến của bạn.",
     "verificationSuccessToast": "Email đã được xác minh thành công! Chào mừng lên tàu.",
-    "continueToApp": "Tiếp tục đến ứng dụng (Xác minh sau)"
+    "continueToApp": "Tiếp tục đến ứng dụng (Xác minh sau)",
+    "checkSpamNote": "Nếu bạn không thấy email trong hộp thư đến, vui lòng kiểm tra thư mục thư rác hoặc thư rác."
   },
   "account": {
     "title": "Tài khoản",

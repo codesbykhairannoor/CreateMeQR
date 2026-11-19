@@ -2281,7 +2281,8 @@
     "verificationResentSuccess": "Bekræftelses-e-mail sendt igen! Tjek venligst din spam-mappe.",
     "verificationNotYet": "E-mail er ikke bekræftet endnu. Klik venligst på bekræftelseslinket sendt til din indbakke.",
     "verificationSuccessToast": "E-mail bekræftet! Velkommen ombord.",
-    "continueToApp": "Fortsæt til app (bekræft senere)"
+    "continueToApp": "Fortsæt til app (bekræft senere)",
+    "checkSpamNote": "Hvis du ikke kan se e-mailen i din indbakke, så tjek venligst din spam- eller junk-mappe."
   },
   "account": {
     "title": "Konto",
