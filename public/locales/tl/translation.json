@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Magpadala ng secure na link sa pag-reset sa iyong email para gumawa ng bagong password.",
       "sendResetLinkBtn": "Magpadala ng Link sa Pag-reset ng Password",
       "knowCurrentLink": "Alam mo ang iyong kasalukuyang password? Direktang i-update",
-      "resetLinkSent": "Ipinadala ang link sa pag-reset ng password sa iyong email!"
+      "resetLinkSent": "Ipinadala ang link sa pag-reset ng password sa iyong email!",
+      "googleAuthDesc": "Naka-sign in ang iyong account sa Google. Ang mga password ay ligtas na pinamamahalaan nang direkta sa pamamagitan ng iyong mga setting ng Google Account.",
+      "manageGoogleSecurity": "Pamahalaan ang Google Security",
+      "closeBtn": "Isara"
     },
     "deleteAccountModal": {
       "title": "Tanggalin ang Account",

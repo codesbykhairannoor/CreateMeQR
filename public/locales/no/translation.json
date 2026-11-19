@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Send en sikker tilbakestillingslenke til e-posten din for å opprette et nytt passord.",
       "sendResetLinkBtn": "Send lenke for tilbakestilling av passord",
       "knowCurrentLink": "Vet du ditt nåværende passord? Oppdater direkte",
-      "resetLinkSent": "Link for tilbakestilling av passord sendt til din e-post!"
+      "resetLinkSent": "Link for tilbakestilling av passord sendt til din e-post!",
+      "googleAuthDesc": "Kontoen din er logget på med Google. Passord administreres sikkert direkte gjennom Google-kontoinnstillingene dine.",
+      "manageGoogleSecurity": "Administrer Google Security",
+      "closeBtn": "Lukk"
     },
     "deleteAccountModal": {
       "title": "Slett konto",

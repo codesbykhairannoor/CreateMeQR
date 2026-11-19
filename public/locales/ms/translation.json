@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Hantar pautan tetapan semula selamat ke e-mel anda untuk membuat kata laluan baharu.",
       "sendResetLinkBtn": "Hantar Pautan Tetapan Semula Kata Laluan",
       "knowCurrentLink": "Tahu kata laluan semasa anda? Kemas kini terus",
-      "resetLinkSent": "Pautan tetapan semula kata laluan dihantar ke e-mel anda!"
+      "resetLinkSent": "Pautan tetapan semula kata laluan dihantar ke e-mel anda!",
+      "googleAuthDesc": "Akaun anda telah dilog masuk dengan Google. Kata laluan diurus secara selamat terus melalui tetapan Akaun Google anda.",
+      "manageGoogleSecurity": "Urus Keselamatan Google",
+      "closeBtn": "tutup"
     },
     "deleteAccountModal": {
       "title": "Padam Akaun",

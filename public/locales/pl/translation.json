@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Wyślij link do bezpiecznego resetowania na swój adres e-mail, aby utworzyć nowe hasło.",
       "sendResetLinkBtn": "Wyślij link do resetowania hasła",
       "knowCurrentLink": "Znasz swoje aktualne hasło? Aktualizuj bezpośrednio",
-      "resetLinkSent": "Link do resetowania hasła wysłany na Twój e-mail!"
+      "resetLinkSent": "Link do resetowania hasła wysłany na Twój e-mail!",
+      "googleAuthDesc": "Twoje konto jest zalogowane w Google. Hasłami można bezpiecznie zarządzać bezpośrednio w ustawieniach konta Google.",
+      "manageGoogleSecurity": "Zarządzaj bezpieczeństwem Google",
+      "closeBtn": "Zamknij"
     },
     "deleteAccountModal": {
       "title": "Usuń konto",

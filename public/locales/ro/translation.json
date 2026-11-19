@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Trimiteți un link de resetare securizat la e-mail pentru a crea o nouă parolă.",
       "sendResetLinkBtn": "Trimiteți linkul de resetare a parolei",
       "knowCurrentLink": "Știți parola dvs. actuală? Actualizați direct",
-      "resetLinkSent": "Linkul de resetare a parolei a fost trimis pe adresa ta de e-mail!"
+      "resetLinkSent": "Linkul de resetare a parolei a fost trimis pe adresa ta de e-mail!",
+      "googleAuthDesc": "Contul dvs. este conectat la Google. Parolele sunt gestionate în siguranță direct prin setările Contului dvs. Google.",
+      "manageGoogleSecurity": "Gestionați securitatea Google",
+      "closeBtn": "Închide"
     },
     "deleteAccountModal": {
       "title": "Șterge contul",

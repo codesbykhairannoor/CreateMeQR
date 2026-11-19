@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Gửi liên kết đặt lại an toàn tới email của bạn để tạo mật khẩu mới.",
       "sendResetLinkBtn": "Gửi liên kết đặt lại mật khẩu",
       "knowCurrentLink": "Biết mật khẩu hiện tại của bạn? Cập nhật trực tiếp",
-      "resetLinkSent": "Liên kết đặt lại mật khẩu đã được gửi tới email của bạn!"
+      "resetLinkSent": "Liên kết đặt lại mật khẩu đã được gửi tới email của bạn!",
+      "googleAuthDesc": "Tài khoản của bạn đã được đăng nhập bằng Google. Mật khẩu được quản lý an toàn trực tiếp thông qua cài đặt Tài khoản Google của bạn.",
+      "manageGoogleSecurity": "Quản lý bảo mật của Google",
+      "closeBtn": "Đóng"
     },
     "deleteAccountModal": {
       "title": "Xóa tài khoản",

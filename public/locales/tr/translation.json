@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Yeni bir şifre oluşturmak için e-postanıza güvenli sıfırlama bağlantısı gönderin.",
       "sendResetLinkBtn": "Şifre Sıfırlama Bağlantısını Gönder",
       "knowCurrentLink": "Mevcut şifrenizi biliyor musunuz? Doğrudan güncelle",
-      "resetLinkSent": "Şifre sıfırlama bağlantısı e-postanıza gönderildi!"
+      "resetLinkSent": "Şifre sıfırlama bağlantısı e-postanıza gönderildi!",
+      "googleAuthDesc": "Hesabınızda Google ile oturum açıldı. Şifreler doğrudan Google Hesabı ayarlarınız aracılığıyla güvenli bir şekilde yönetilir.",
+      "manageGoogleSecurity": "Google Güvenliğini Yönetin",
+      "closeBtn": "Kapat"
     },
     "deleteAccountModal": {
       "title": "Hesabı Sil",

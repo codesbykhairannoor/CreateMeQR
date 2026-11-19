@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Envie um link de redefinição seguro para seu e-mail para criar uma nova senha.",
       "sendResetLinkBtn": "Enviar link de redefinição de senha",
       "knowCurrentLink": "Sabe sua senha atual? Atualizar diretamente",
-      "resetLinkSent": "Link de redefinição de senha enviado para seu e-mail!"
+      "resetLinkSent": "Link de redefinição de senha enviado para seu e-mail!",
+      "googleAuthDesc": "Sua conta está conectada ao Google. As senhas são gerenciadas com segurança diretamente nas configurações da sua Conta do Google.",
+      "manageGoogleSecurity": "Gerenciar a segurança do Google",
+      "closeBtn": "Fechar"
     },
     "deleteAccountModal": {
       "title": "Excluir conta",

@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Kirim tautan atur ulang yang aman ke email Anda untuk membuat kata sandi baru.",
       "sendResetLinkBtn": "Kirim Tautan Atur Ulang Kata Sandi",
       "knowCurrentLink": "Ingat kata sandi sekarang? Perbarui langsung",
-      "resetLinkSent": "Tautan atur ulang kata sandi telah dikirim ke email Anda!"
+      "resetLinkSent": "Tautan atur ulang kata sandi telah dikirim ke email Anda!",
+      "googleAuthDesc": "Akun Anda masuk menggunakan Google. Kata sandi dikelola secara aman langsung melalui pengaturan Akun Google Anda.",
+      "manageGoogleSecurity": "Kelola Keamanan Google",
+      "closeBtn": "Tutup"
     },
     "deleteAccountModal": {
       "title": "Hapus Akun",

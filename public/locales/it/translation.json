@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Invia un collegamento di reimpostazione sicura alla tua email per creare una nuova password.",
       "sendResetLinkBtn": "Invia collegamento per la reimpostazione della password",
       "knowCurrentLink": "Conosci la tua password attuale? Aggiorna direttamente",
-      "resetLinkSent": "Link per la reimpostazione della password inviato alla tua email!"
+      "resetLinkSent": "Link per la reimpostazione della password inviato alla tua email!",
+      "googleAuthDesc": "Hai effettuato l'accesso al tuo account con Google. Le password vengono gestite in modo sicuro direttamente tramite le impostazioni del tuo account Google.",
+      "manageGoogleSecurity": "Gestisci la sicurezza di Google",
+      "closeBtn": "Chiudi"
     },
     "deleteAccountModal": {
       "title": "Elimina account",

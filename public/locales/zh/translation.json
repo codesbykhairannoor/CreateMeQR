@@ -2357,7 +2357,10 @@
       "resetSubtitle": "将安全重置链接发送到您的电子邮件以创建新密码。",
       "sendResetLinkBtn": "发送密码重置链接",
       "knowCurrentLink": "知道您当前的密码吗？直接更新",
-      "resetLinkSent": "密码重置链接已发送至您的电子邮件！"
+      "resetLinkSent": "密码重置链接已发送至您的电子邮件！",
+      "googleAuthDesc": "您的帐户已通过 Google 登录。密码可直接通过您的 Google 帐户设置进行安全管理。",
+      "manageGoogleSecurity": "管理 Google 安全",
+      "closeBtn": "关闭"
     },
     "deleteAccountModal": {
       "title": "删除账户",

@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Stuur een beveiligde resetlink naar uw e-mailadres om een ​​nieuw wachtwoord aan te maken.",
       "sendResetLinkBtn": "Link voor wachtwoordherstel verzenden",
       "knowCurrentLink": "Kent u uw huidige wachtwoord? Direct bijwerken",
-      "resetLinkSent": "Link voor het opnieuw instellen van uw wachtwoord verzonden naar uw e-mail!"
+      "resetLinkSent": "Link voor het opnieuw instellen van uw wachtwoord verzonden naar uw e-mail!",
+      "googleAuthDesc": "Uw account is ingelogd bij Google. Wachtwoorden worden veilig beheerd, rechtstreeks via uw Google-accountinstellingen.",
+      "manageGoogleSecurity": "Beheer Google-beveiliging",
+      "closeBtn": "Sluiten"
     },
     "deleteAccountModal": {
       "title": "Account verwijderen",

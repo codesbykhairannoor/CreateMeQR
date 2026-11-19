@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Chcete-li vytvořit nové heslo, zašlete na svůj e-mail odkaz pro zabezpečený reset.",
       "sendResetLinkBtn": "Odeslat odkaz pro resetování hesla",
       "knowCurrentLink": "Znáte své aktuální heslo? Aktualizujte přímo",
-      "resetLinkSent": "Odkaz pro obnovení hesla byl odeslán na váš e-mail!"
+      "resetLinkSent": "Odkaz pro obnovení hesla byl odeslán na váš e-mail!",
+      "googleAuthDesc": "Váš účet je přihlášen pomocí Google. Hesla jsou bezpečně spravována přímo prostřednictvím nastavení vašeho účtu Google.",
+      "manageGoogleSecurity": "Spravujte zabezpečení Google",
+      "closeBtn": "Zavřít"
     },
     "deleteAccountModal": {
       "title": "Smazat účet",

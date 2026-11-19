@@ -91,6 +91,10 @@ const newEnKeys = {
       sendResetLinkBtn: 'Send Password Reset Link',
       knowCurrentLink: 'Know your current password? Update directly',
       resetLinkSent: 'Password reset link sent to your email!',
+      googleAuthDesc:
+        'Your account is signed in with Google. Passwords are securely managed directly through your Google Account settings.',
+      manageGoogleSecurity: 'Manage Google Security',
+      closeBtn: 'Close',
     },
     deleteAccountModal: {
       title: 'Delete Account',
@@ -197,6 +201,10 @@ const idOverrides = {
       sendResetLinkBtn: 'Kirim Tautan Atur Ulang Kata Sandi',
       knowCurrentLink: 'Ingat kata sandi sekarang? Perbarui langsung',
       resetLinkSent: 'Tautan atur ulang kata sandi telah dikirim ke email Anda!',
+      googleAuthDesc:
+        'Akun Anda masuk menggunakan Google. Kata sandi dikelola secara aman langsung melalui pengaturan Akun Google Anda.',
+      manageGoogleSecurity: 'Kelola Keamanan Google',
+      closeBtn: 'Tutup',
     },
     deleteAccountModal: {
       title: 'Hapus Akun',

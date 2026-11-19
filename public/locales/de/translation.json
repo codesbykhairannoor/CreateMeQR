@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Senden Sie einen sicheren Reset-Link an Ihre E-Mail, um ein neues Passwort zu erstellen.",
       "sendResetLinkBtn": "Link zum Zurücksetzen des Passworts senden",
       "knowCurrentLink": "Kennen Sie Ihr aktuelles Passwort? Direkt aktualisieren",
-      "resetLinkSent": "Link zum Zurücksetzen des Passworts an Ihre E-Mail-Adresse gesendet!"
+      "resetLinkSent": "Link zum Zurücksetzen des Passworts an Ihre E-Mail-Adresse gesendet!",
+      "googleAuthDesc": "Ihr Konto ist bei Google angemeldet. Passwörter werden direkt über Ihre Google-Kontoeinstellungen sicher verwaltet.",
+      "manageGoogleSecurity": "Verwalten Sie die Google-Sicherheit",
+      "closeBtn": "Schließen"
     },
     "deleteAccountModal": {
       "title": "Konto löschen",

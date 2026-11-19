@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Skicka en säker återställningslänk till din e-post för att skapa ett nytt lösenord.",
       "sendResetLinkBtn": "Skicka länk för återställning av lösenord",
       "knowCurrentLink": "Vet du ditt nuvarande lösenord? Uppdatera direkt",
-      "resetLinkSent": "Länk för återställning av lösenord skickas till din e-post!"
+      "resetLinkSent": "Länk för återställning av lösenord skickas till din e-post!",
+      "googleAuthDesc": "Ditt konto är inloggat med Google. Lösenord hanteras säkert direkt via inställningarna för ditt Google-konto.",
+      "manageGoogleSecurity": "Hantera Googles säkerhet",
+      "closeBtn": "Stäng"
     },
     "deleteAccountModal": {
       "title": "Ta bort konto",

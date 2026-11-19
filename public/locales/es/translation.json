@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Envíe un enlace de restablecimiento seguro a su correo electrónico para crear una nueva contraseña.",
       "sendResetLinkBtn": "Enviar enlace para restablecer contraseña",
       "knowCurrentLink": "¿Conoce su contraseña actual? Actualizar directamente",
-      "resetLinkSent": "¡Enlace para restablecer contraseña enviado a su correo electrónico!"
+      "resetLinkSent": "¡Enlace para restablecer contraseña enviado a su correo electrónico!",
+      "googleAuthDesc": "Su cuenta ha iniciado sesión con Google. Las contraseñas se administran de forma segura directamente a través de la configuración de su cuenta de Google.",
+      "manageGoogleSecurity": "Administrar la seguridad de Google",
+      "closeBtn": "Cerrar"
     },
     "deleteAccountModal": {
       "title": "Eliminar cuenta",

@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Envoyez un lien de réinitialisation sécurisé à votre adresse e-mail pour créer un nouveau mot de passe.",
       "sendResetLinkBtn": "Envoyer le lien de réinitialisation du mot de passe",
       "knowCurrentLink": "Connaissez-vous votre mot de passe actuel ? Mettre à jour directement",
-      "resetLinkSent": "Lien de réinitialisation du mot de passe envoyé à votre e-mail !"
+      "resetLinkSent": "Lien de réinitialisation du mot de passe envoyé à votre e-mail !",
+      "googleAuthDesc": "Votre compte est connecté avec Google. Les mots de passe sont gérés de manière sécurisée directement via les paramètres de votre compte Google.",
+      "manageGoogleSecurity": "Gérer la sécurité Google",
+      "closeBtn": "Fermer"
     },
     "deleteAccountModal": {
       "title": "Supprimer le compte",

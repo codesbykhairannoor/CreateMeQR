@@ -51,22 +51,24 @@ test.describe('Mobile Layout & Navigation (CreateMeQR Royal Blue Brand)', () => 
   });
 
   test('authenticated state: avatar dropdown popover, sign out modal, and change password modal', async ({ page }) => {
-    // Inject mock user before page scripts run
+    // Inject mock user with password provider before page scripts run
     await page.addInitScript(() => {
       localStorage.setItem('__mock_auth_user__', JSON.stringify({
         uid: 'user-123',
         email: 'rankhairan0@gmail.com',
         displayName: 'Rankhairan',
         plan: 'free',
+        providerData: [{ providerId: 'password' }],
       }));
     });
 
     await page.goto('/');
 
-    // 1. Avatar circle with initial "R" should appear in mobile header
+    // 1. Avatar circle with initial "R" should appear in mobile header (icon only, NO username text in navbar)
     const avatarBtn = page.locator('button[aria-label="User Menu"]');
     await expect(avatarBtn).toBeVisible();
     await expect(avatarBtn).toContainText('R');
+    await expect(avatarBtn).not.toContainText('Rankhairan');
 
     // 2. Click avatar to open dropdown popover (Screenshot_20261119_180945_Chrome.jpg)
     await avatarBtn.click();
@@ -135,4 +137,47 @@ test.describe('Mobile Layout & Navigation (CreateMeQR Royal Blue Brand)', () => 
     await quickChangePwBtn.click();
     await expect(page.locator('#change-password-modal-title')).toBeVisible();
   });
+
+  test('google authenticated state: navbar icon only, and change password shows Google Security modal', async ({ page }) => {
+    // Inject mock user signed in with Google
+    await page.addInitScript(() => {
+      localStorage.setItem('__mock_auth_user__', JSON.stringify({
+        uid: 'google-user-456',
+        email: 'erstaunenn@gmail.com',
+        displayName: 'Erstaunenn',
+        plan: 'pro',
+        provider: 'google',
+        providerData: [{ providerId: 'google.com' }],
+      }));
+    });
+
+    await page.goto('/');
+
+    // 1. Verify navbar ONLY shows profile icon with initial "E", NOT the username text
+    const avatarBtn = page.locator('button[aria-label="User Menu"]');
+    await expect(avatarBtn).toBeVisible();
+    await expect(avatarBtn).toContainText('E');
+    await expect(avatarBtn).not.toContainText('Erstaunenn');
+
+    // 2. Click avatar to open dropdown popover
+    await avatarBtn.click();
+    await expect(page.locator('text=erstaunenn@gmail.com').first()).toBeVisible();
+
+    // 3. Click Change Password -> Opens Google Security view (Screenshot_20261119_192712_Chrome.jpg)
+    await page.locator('button:has-text("Change Password")').first().click();
+
+    await expect(page.locator('#change-password-modal-title')).toBeVisible();
+    await expect(page.locator('text=Your account is signed in with Google')).toBeVisible();
+    await expect(page.locator('text=Manage Google Security')).toBeVisible();
+
+    // Verify password input fields and "Forgot current password" are STRICTLY NOT visible for Google users
+    await expect(page.locator('label:has-text("Current Password")')).not.toBeVisible();
+    await expect(page.locator('button:has-text("Forgot current password")')).not.toBeVisible();
+    await expect(page.locator('button:has-text("Update Password")')).not.toBeVisible();
+
+    // 4. Click Close button in Google Security modal
+    await page.locator('button:has-text("Close")').click();
+    await expect(page.locator('#change-password-modal-title')).not.toBeVisible();
+  });
 });
+

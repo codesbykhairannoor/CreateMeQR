@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
-import { X, KeyRound, Mail, Lock, Loader2, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { X, KeyRound, Mail, Lock, Loader2, AlertCircle, CheckCircle2, ExternalLink } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useTranslation } from 'react-i18next';
 
@@ -20,6 +20,18 @@ export default function ChangePasswordModal({ isOpen, onClose }) {
   const [successMsg, setSuccessMsg] = useState(null);
 
   if (!isOpen || !user || typeof document === 'undefined') return null;
+
+  // Check if user has a password provider (email/password) or is Google OAuth only
+  const hasPasswordProvider = Boolean(
+    user?.providerData?.some((p) => p.providerId === 'password')
+  );
+  const isGoogleUser = Boolean(
+    user?.providerData?.some(
+      (p) => p.providerId === 'google.com' || p.providerId?.includes('google')
+    ) ||
+    user?.provider === 'google' ||
+    (!hasPasswordProvider && user?.email)
+  );
 
   const handleClose = () => {
     setCurrentPassword('');
@@ -148,161 +160,201 @@ export default function ChangePasswordModal({ isOpen, onClose }) {
           </div>
         )}
 
-        {/* Mode: Direct Update */}
-        {mode === 'direct' && (
-          <form onSubmit={handleDirectUpdate} className="space-y-4 relative z-10">
-            {/* Current Password */}
-            <div>
-              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">
-                {t('account.changePasswordModal.currentPasswordLabel', 'Current Password')}
-              </label>
-              <div className="relative">
-                <input
-                  type="password"
-                  required
-                  value={currentPassword}
-                  onChange={(e) => setCurrentPassword(e.target.value)}
-                  placeholder="••••••••"
-                  className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-[#102040] bg-slate-50 dark:bg-[#040a18] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-600 transition-all font-medium"
-                />
-              </div>
-              <div className="mt-1.5">
-                <button
-                  type="button"
-                  onClick={() => {
-                    setErrorMsg(null);
-                    setSuccessMsg(null);
-                    setMode('reset_link');
-                  }}
-                  className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-700 hover:underline cursor-pointer font-medium"
-                >
-                  {t('account.changePasswordModal.forgotCurrentLink', 'Forgot current password? Send reset link to email')}
-                </button>
-              </div>
-            </div>
+        {/* Google Authenticated State (Matching Screenshot_20261119_192712_Chrome.jpg) */}
+        {isGoogleUser ? (
+          <div className="space-y-6 relative z-10 pt-1">
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              {t(
+                'account.changePasswordModal.googleAuthDesc',
+                'Your account is signed in with Google. Passwords are securely managed directly through your Google Account settings.'
+              )}
+            </p>
 
-            {/* New Password */}
-            <div>
-              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">
-                {t('account.changePasswordModal.newPasswordLabel', 'New Password')}
-              </label>
-              <input
-                type="password"
-                required
-                minLength={6}
-                value={newPassword}
-                onChange={(e) => setNewPassword(e.target.value)}
-                placeholder={t('account.changePasswordModal.newPasswordPlaceholder', 'Min. 6 characters')}
-                className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-[#102040] bg-slate-50 dark:bg-[#040a18] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-600 transition-all font-medium"
-              />
-            </div>
-
-            {/* Confirm New Password */}
-            <div>
-              <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">
-                {t('account.changePasswordModal.confirmPasswordLabel', 'Confirm New Password')}
-              </label>
-              <input
-                type="password"
-                required
-                minLength={6}
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
-                placeholder="••••••••"
-                className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-[#102040] bg-slate-50 dark:bg-[#040a18] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-600 transition-all font-medium"
-              />
-            </div>
-
-            {/* Action Buttons (CreateMy-QR Royal Blue Brand Gradient) */}
-            <div className="pt-2 space-y-2">
-              <button
-                type="submit"
-                disabled={loading}
-                className="w-full py-3 px-4 bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-900/25 active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+            <div className="space-y-3 pt-2">
+              <a
+                href="https://myaccount.google.com/security"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-3 px-4 rounded-xl border border-slate-200 dark:border-[#102040] bg-white dark:bg-[#0c1831] hover:bg-slate-50 dark:hover:bg-[#122244] text-slate-900 dark:text-white font-semibold text-xs sm:text-sm transition-all shadow-xs flex items-center justify-center gap-2 cursor-pointer group"
               >
-                {loading ? (
-                  <>
-                    <Loader2 className="w-4 h-4 animate-spin text-white" />
-                    <span>Updating...</span>
-                  </>
-                ) : (
-                  <>
-                    <Lock className="w-4 h-4" />
-                    <span>{t('account.changePasswordModal.updateBtn', 'Update Password')}</span>
-                  </>
-                )}
-              </button>
+                <span>
+                  {t(
+                    'account.changePasswordModal.manageGoogleSecurity',
+                    'Manage Google Security'
+                  )}
+                </span>
+                <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-blue-500 transition-colors" />
+              </a>
 
               <button
                 type="button"
                 onClick={handleClose}
-                className="w-full py-2.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
+                className="w-full py-2.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer text-center"
               >
-                {t('account.changePasswordModal.cancelBtn', 'Cancel')}
+                {t('account.changePasswordModal.closeBtn', t('common.close', 'Close'))}
               </button>
             </div>
-          </form>
-        )}
+          </div>
+        ) : (
+          /* Normal Email/Password User Modes */
+          <>
+            {/* Mode: Direct Update */}
+            {mode === 'direct' && (
+              <form onSubmit={handleDirectUpdate} className="space-y-4 relative z-10">
+                {/* Current Password */}
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">
+                    {t('account.changePasswordModal.currentPasswordLabel', 'Current Password')}
+                  </label>
+                  <div className="relative">
+                    <input
+                      type="password"
+                      required
+                      value={currentPassword}
+                      onChange={(e) => setCurrentPassword(e.target.value)}
+                      placeholder="••••••••"
+                      className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-[#102040] bg-slate-50 dark:bg-[#040a18] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-600 transition-all font-medium"
+                    />
+                  </div>
+                  <div className="mt-1.5">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setErrorMsg(null);
+                        setSuccessMsg(null);
+                        setMode('reset_link');
+                      }}
+                      className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-700 hover:underline cursor-pointer font-medium"
+                    >
+                      {t('account.changePasswordModal.forgotCurrentLink', 'Forgot current password? Send reset link to email')}
+                    </button>
+                  </div>
+                </div>
 
-        {/* Mode: Send Reset Link */}
-        {mode === 'reset_link' && (
-          <form onSubmit={handleSendResetLink} className="space-y-4 relative z-10">
-            <p className="text-xs md:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-              {t(
-                'account.changePasswordModal.resetSubtitle',
-                'Send a secure reset link to your email to create a new password.'
-              )}
-            </p>
+                {/* New Password */}
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">
+                    {t('account.changePasswordModal.newPasswordLabel', 'New Password')}
+                  </label>
+                  <input
+                    type="password"
+                    required
+                    minLength={6}
+                    value={newPassword}
+                    onChange={(e) => setNewPassword(e.target.value)}
+                    placeholder={t('account.changePasswordModal.newPasswordPlaceholder', 'Min. 6 characters')}
+                    className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-[#102040] bg-slate-50 dark:bg-[#040a18] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-600 transition-all font-medium"
+                  />
+                </div>
 
-            <div className="relative">
-              <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-              <input
-                type="email"
-                disabled
-                value={user.email || ''}
-                className="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-[#102040] bg-slate-100 dark:bg-[#0c1831] text-slate-600 dark:text-slate-300 font-medium cursor-not-allowed"
-              />
-            </div>
+                {/* Confirm New Password */}
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 uppercase tracking-wider">
+                    {t('account.changePasswordModal.confirmPasswordLabel', 'Confirm New Password')}
+                  </label>
+                  <input
+                    type="password"
+                    required
+                    minLength={6}
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    placeholder="••••••••"
+                    className="w-full px-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-[#102040] bg-slate-50 dark:bg-[#040a18] text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-600 transition-all font-medium"
+                  />
+                </div>
 
-            <div className="pt-2 space-y-3">
-              <button
-                type="submit"
-                disabled={loading}
-                className="w-full py-3 px-4 bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-900/25 active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
-              >
-                {loading ? (
-                  <>
-                    <Loader2 className="w-4 h-4 animate-spin text-white" />
-                    <span>Sending...</span>
-                  </>
-                ) : (
-                  <>
-                    <Mail className="w-4 h-4" />
-                    <span>
-                      {t('account.changePasswordModal.sendResetLinkBtn', 'Send Password Reset Link')}
-                    </span>
-                  </>
-                )}
-              </button>
+                {/* Action Buttons (CreateMy-QR Royal Blue Brand Gradient) */}
+                <div className="pt-2 space-y-2">
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="w-full py-3 px-4 bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-900/25 active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+                  >
+                    {loading ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin text-white" />
+                        <span>Updating...</span>
+                      </>
+                    ) : (
+                      <>
+                        <Lock className="w-4 h-4" />
+                        <span>{t('account.changePasswordModal.updateBtn', 'Update Password')}</span>
+                      </>
+                    )}
+                  </button>
 
-              <div className="text-center pt-1">
-                <button
-                  type="button"
-                  onClick={() => {
-                    setErrorMsg(null);
-                    setSuccessMsg(null);
-                    setMode('direct');
-                  }}
-                  className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-700 hover:underline cursor-pointer font-medium"
-                >
+                  <button
+                    type="button"
+                    onClick={handleClose}
+                    className="w-full py-2.5 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
+                  >
+                    {t('account.changePasswordModal.cancelBtn', 'Cancel')}
+                  </button>
+                </div>
+              </form>
+            )}
+
+            {/* Mode: Send Reset Link */}
+            {mode === 'reset_link' && (
+              <form onSubmit={handleSendResetLink} className="space-y-4 relative z-10">
+                <p className="text-xs md:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                   {t(
-                    'account.changePasswordModal.knowCurrentLink',
-                    'Know your current password? Update directly'
+                    'account.changePasswordModal.resetSubtitle',
+                    'Send a secure reset link to your email to create a new password.'
                   )}
-                </button>
-              </div>
-            </div>
-          </form>
+                </p>
+
+                <div className="relative">
+                  <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                  <input
+                    type="email"
+                    disabled
+                    value={user.email || ''}
+                    className="w-full pl-10 pr-3.5 py-2.5 text-sm rounded-xl border border-slate-200 dark:border-[#102040] bg-slate-100 dark:bg-[#0c1831] text-slate-600 dark:text-slate-300 font-medium cursor-not-allowed"
+                  />
+                </div>
+
+                <div className="pt-2 space-y-3">
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="w-full py-3 px-4 bg-gradient-to-r from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 hover:from-slate-800 hover:to-blue-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-900/25 active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+                  >
+                    {loading ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin text-white" />
+                        <span>Sending...</span>
+                      </>
+                    ) : (
+                      <>
+                        <Mail className="w-4 h-4" />
+                        <span>
+                          {t('account.changePasswordModal.sendResetLinkBtn', 'Send Password Reset Link')}
+                        </span>
+                      </>
+                    )}
+                  </button>
+
+                  <div className="text-center pt-1">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setErrorMsg(null);
+                        setSuccessMsg(null);
+                        setMode('direct');
+                      }}
+                      className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-700 hover:underline cursor-pointer font-medium"
+                    >
+                      {t(
+                        'account.changePasswordModal.knowCurrentLink',
+                        'Know your current password? Update directly'
+                      )}
+                    </button>
+                  </div>
+                </div>
+              </form>
+            )}
+          </>
         )}
       </div>
     </div>

@@ -2357,7 +2357,10 @@
       "resetSubtitle": "新しいパスワードを作成するには、安全なリセット リンクを電子メールに送信します。",
       "sendResetLinkBtn": "パスワードリセットリンクを送信する",
       "knowCurrentLink": "現在のパスワードを知っていますか?直接更新する",
-      "resetLinkSent": "パスワードリセットリンクがメールに送信されました。"
+      "resetLinkSent": "パスワードリセットリンクがメールに送信されました。",
+      "googleAuthDesc": "あなたのアカウントは Google にサインインしています。パスワードは、Google アカウント設定を通じて直接安全に管理されます。",
+      "manageGoogleSecurity": "Google セキュリティを管理する",
+      "closeBtn": "閉じる"
     },
     "deleteAccountModal": {
       "title": "アカウントの削除",

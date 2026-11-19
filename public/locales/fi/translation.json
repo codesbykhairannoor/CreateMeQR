@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Luo uusi salasana lähettämällä suojattu palautuslinkki sähköpostiisi.",
       "sendResetLinkBtn": "Lähetä salasanan palautuslinkki",
       "knowCurrentLink": "Tiedätkö nykyisen salasanasi? Päivitä suoraan",
-      "resetLinkSent": "Salasanan palautuslinkki lähetetty sähköpostiisi!"
+      "resetLinkSent": "Salasanan palautuslinkki lähetetty sähköpostiisi!",
+      "googleAuthDesc": "Tilisi on kirjautunut sisään Googlella. Salasanoja hallitaan turvallisesti suoraan Google-tilisi asetusten kautta.",
+      "manageGoogleSecurity": "Hallinnoi Googlen suojausta",
+      "closeBtn": "Sulje"
     },
     "deleteAccountModal": {
       "title": "Poista tili",

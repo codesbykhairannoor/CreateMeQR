@@ -9,7 +9,6 @@ import {
   User,
   LogOut,
   Crown,
-  ChevronDown,
   Clock,
   KeyRound,
   Trash2,
@@ -106,29 +105,24 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
   return (
     <>
       <div className="relative" ref={menuRef}>
-        {/* Navbar Profile Pill (Matching Image 1: [R] rankhairan0 v) */}
+        {/* Navbar Profile Icon Only (Compact & sleek for tight navbar) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-2 py-1 px-1.5 md:pr-3 rounded-full hover:bg-slate-100 dark:hover:bg-[#0c1831] border border-slate-200 dark:border-[#102040] transition-all cursor-pointer shadow-2xs"
+          className="flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full hover:ring-2 hover:ring-blue-500/50 hover:bg-slate-100 dark:hover:bg-[#0c1831] transition-all cursor-pointer shrink-0 active:scale-95"
           aria-label="User Menu"
+          title={username}
         >
           {user.photoURL ? (
             <img
               src={user.photoURL}
               alt={username}
-              className="w-7 h-7 md:w-7 md:h-7 rounded-full object-cover border border-blue-500"
+              className="w-8 h-8 md:w-9 md:h-9 rounded-full object-cover border-2 border-blue-600 dark:border-blue-500 shadow-xs"
             />
           ) : (
-            <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white font-bold text-xs flex items-center justify-center shrink-0 shadow-xs border border-blue-500/30">
+            <div className="w-8 h-8 md:w-9 md:h-9 rounded-full bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white font-bold text-xs md:text-sm flex items-center justify-center shrink-0 shadow-xs border-2 border-blue-600/40 dark:border-blue-500/40">
               {initial}
             </div>
           )}
-
-          <span className="text-xs md:text-sm font-semibold text-slate-800 dark:text-slate-100 max-w-[100px] md:max-w-[120px] truncate">
-            {username}
-          </span>
-
-          <ChevronDown className="w-3.5 h-3.5 text-slate-400 shrink-0" />
         </button>
 
         {/* Dropdown Menu (Matching Image 1 Reference) */}

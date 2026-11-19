@@ -2357,7 +2357,10 @@
       "resetSubtitle": "새 비밀번호를 생성하려면 이메일로 보안 재설정 링크를 보내세요.",
       "sendResetLinkBtn": "비밀번호 재설정 링크 보내기",
       "knowCurrentLink": "현재 비밀번호를 알고 계십니까? 직접 업데이트",
-      "resetLinkSent": "이메일로 비밀번호 재설정 링크가 전송되었습니다!"
+      "resetLinkSent": "이메일로 비밀번호 재설정 링크가 전송되었습니다!",
+      "googleAuthDesc": "귀하의 계정은 Google로 로그인되어 있습니다. 비밀번호는 Google 계정 설정을 통해 직접 안전하게 관리됩니다.",
+      "manageGoogleSecurity": "Google 보안 관리",
+      "closeBtn": "닫기"
     },
     "deleteAccountModal": {
       "title": "계정 삭제",

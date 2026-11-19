@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Új jelszó létrehozásához küldjön egy biztonságos visszaállítási hivatkozást az e-mail címére.",
       "sendResetLinkBtn": "Jelszó-visszaállítási hivatkozás küldése",
       "knowCurrentLink": "Ismeri jelenlegi jelszavát? Frissítse közvetlenül",
-      "resetLinkSent": "Jelszó-visszaállítási linket küldtünk az e-mail címedre!"
+      "resetLinkSent": "Jelszó-visszaállítási linket küldtünk az e-mail címedre!",
+      "googleAuthDesc": "Fiókja be van jelentkezve a Google-lal. A jelszavak biztonságos kezelése közvetlenül a Google Fiók beállításaiban történik.",
+      "manageGoogleSecurity": "A Google Security kezelése",
+      "closeBtn": "Bezárás"
     },
     "deleteAccountModal": {
       "title": "Fiók törlése lehetőségre",

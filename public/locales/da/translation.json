@@ -2357,7 +2357,10 @@
       "resetSubtitle": "Send et sikkert nulstillingslink til din e-mail for at oprette en ny adgangskode.",
       "sendResetLinkBtn": "Send link til nulstilling af adgangskode",
       "knowCurrentLink": "Kender du din nuværende adgangskode? Opdater direkte",
-      "resetLinkSent": "Link til nulstilling af adgangskode sendt til din e-mail!"
+      "resetLinkSent": "Link til nulstilling af adgangskode sendt til din e-mail!",
+      "googleAuthDesc": "Din konto er logget ind med Google. Adgangskoder administreres sikkert direkte gennem dine Google-kontoindstillinger.",
+      "manageGoogleSecurity": "Administrer Google Security",
+      "closeBtn": "Luk"
     },
     "deleteAccountModal": {
       "title": "Slet konto",
