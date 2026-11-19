@@ -104,11 +104,11 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
 
   return (
     <>
-      <div className="relative" ref={menuRef}>
-        {/* Navbar Profile Icon Only (Compact & sleek for tight navbar) */}
+      <div className="relative flex items-center shrink-0" ref={menuRef}>
+        {/* Navbar Profile Icon Only (Guaranteed 1:1 circle, never oval/lonjong) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center justify-center w-8 h-8 md:w-9 md:h-9 rounded-full hover:ring-2 hover:ring-blue-500/50 hover:bg-slate-100 dark:hover:bg-[#0c1831] transition-all cursor-pointer shrink-0 active:scale-95"
+          className="relative flex items-center justify-center w-9 h-9 min-w-9 min-h-9 aspect-square rounded-full overflow-hidden shrink-0 p-0 hover:ring-2 hover:ring-blue-500/50 hover:bg-slate-100 dark:hover:bg-[#0c1831] transition-all cursor-pointer active:scale-95 shadow-xs"
           aria-label="User Menu"
           title={username}
         >
@@ -116,10 +116,10 @@ export default function UserMenu({ currentLangCode, onOpenHistory }) {
             <img
               src={user.photoURL}
               alt={username}
-              className="w-8 h-8 md:w-9 md:h-9 rounded-full object-cover border-2 border-blue-600 dark:border-blue-500 shadow-xs"
+              className="w-full h-full aspect-square rounded-full object-cover border-2 border-blue-600 dark:border-blue-500 shrink-0 block"
             />
           ) : (
-            <div className="w-8 h-8 md:w-9 md:h-9 rounded-full bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white font-bold text-xs md:text-sm flex items-center justify-center shrink-0 shadow-xs border-2 border-blue-600/40 dark:border-blue-500/40">
+            <div className="w-full h-full aspect-square rounded-full bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-800 text-white font-bold text-xs sm:text-sm flex items-center justify-center shrink-0 shadow-xs border-2 border-blue-600/40 dark:border-blue-500/40 select-none leading-none">
               {initial}
             </div>
           )}

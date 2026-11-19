@@ -159,6 +159,11 @@ test.describe('Mobile Layout & Navigation (CreateMeQR Royal Blue Brand)', () => 
     await expect(avatarBtn).toContainText('E');
     await expect(avatarBtn).not.toContainText('Erstaunenn');
 
+    // Verify avatar is a perfect 1:1 circle (not stretched/lonjong)
+    const box = await avatarBtn.boundingBox();
+    expect(box).not.toBeNull();
+    expect(Math.abs(box.width - box.height)).toBeLessThanOrEqual(1);
+
     // 2. Click avatar to open dropdown popover
     await avatarBtn.click();
     await expect(page.locator('text=erstaunenn@gmail.com').first()).toBeVisible();
@@ -178,6 +183,19 @@ test.describe('Mobile Layout & Navigation (CreateMeQR Royal Blue Brand)', () => 
     // 4. Click Close button in Google Security modal
     await page.locator('button:has-text("Close")').click();
     await expect(page.locator('#change-password-modal-title')).not.toBeVisible();
+  });
+
+  test('theme persistence: refresh preserves light mode and does NOT force dark mode', async ({ page }) => {
+    await page.goto('/');
+
+    const html = page.locator('html');
+    await expect(html).not.toHaveClass(/dark/);
+
+    // Refresh page
+    await page.reload();
+
+    // Verify it is STILL light mode (not forced to dark mode on reload)
+    await expect(html).not.toHaveClass(/dark/);
   });
 });
 
