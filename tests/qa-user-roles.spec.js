@@ -79,10 +79,11 @@ test.describe('CreateMy-QR Local QA: User Roles & Feature Gating', () => {
     test('Free User should see user avatar pill and dropdown menu with Unverified badge', async ({ page }) => {
       await page.goto('/url-qr-code-generator');
 
-      // 1. Verify avatar with initial [F] and Free Tester username is visible
+      // 1. Verify avatar with initial [F] and Free Tester title is visible
       const userPill = page.locator('button[aria-label="User Menu"]').first();
       await expect(userPill).toBeVisible();
-      await expect(userPill).toContainText('Free Tester');
+      await expect(userPill).toHaveAttribute('title', 'Free Tester');
+      await expect(userPill).toContainText('F');
 
       // 2. Click user menu pill to open dropdown
       await userPill.click();
@@ -189,10 +190,11 @@ test.describe('CreateMy-QR Local QA: User Roles & Feature Gating', () => {
     test('PRO User should see PRO username, Status: PRO Lifetime, and no Upgrade banner', async ({ page }) => {
       await page.goto('/url-qr-code-generator');
 
-      // 1. Verify user pill in navbar shows Pro VIP username
+      // 1. Verify user pill in navbar shows Pro VIP title and [P] initial
       const userPill = page.locator('button[aria-label="User Menu"]').first();
       await expect(userPill).toBeVisible();
-      await expect(userPill).toContainText('Pro VIP');
+      await expect(userPill).toHaveAttribute('title', 'Pro VIP');
+      await expect(userPill).toContainText('P');
 
       // 2. Open User Menu
       await userPill.click();
