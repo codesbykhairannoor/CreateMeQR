@@ -163,6 +163,73 @@ export const AuthProvider = ({ children }) => {
       }
     }
 
+    // Local Testing & E2E QA Mock Hook (Active ONLY in DEV mode for local Playwright QA)
+    if (import.meta.env.DEV && typeof window !== 'undefined' && window.__MOCK_AUTH_ROLE__) {
+      const role = window.__MOCK_AUTH_ROLE__;
+      if (role === 'guest') {
+        setUser(null);
+        setProfile(null);
+        setLoading(false);
+        return;
+      }
+      if (role === 'free') {
+        setUser({
+          uid: 'mock-free-uid',
+          email: 'tester.free@createmy-qr.com',
+          displayName: 'Free Tester',
+          emailVerified: false,
+          providerData: [{ providerId: 'password' }],
+        });
+        setProfile({
+          plan: 'free',
+          planType: null,
+          subscriptionStatus: 'inactive',
+          createmyqr_trials_used: 0,
+          createmyqr_bulk_trials_used: 0,
+        });
+        setLoading(false);
+        return;
+      }
+      if (role === 'free_exhausted') {
+        setUser({
+          uid: 'mock-free-exhausted-uid',
+          email: 'exhausted.free@createmy-qr.com',
+          displayName: 'Exhausted Tester',
+          emailVerified: false,
+          providerData: [{ providerId: 'password' }],
+        });
+        setProfile({
+          plan: 'free',
+          planType: null,
+          subscriptionStatus: 'inactive',
+          createmyqr_trials_used: 2,
+          createmyqr_bulk_trials_used: 1,
+        });
+        setLoading(false);
+        return;
+      }
+      if (role === 'pro') {
+        setUser({
+          uid: 'mock-pro-uid',
+          email: 'tester.pro@createmy-qr.com',
+          displayName: 'Pro VIP',
+          emailVerified: true,
+          providerData: [{ providerId: 'password' }],
+        });
+        setProfile({
+          plan: 'pro',
+          planType: 'lifetime',
+          subscriptionType: 'lifetime',
+          subscriptionStatus: 'active',
+          suiteAccess: 'all_access',
+          createmyqr_trials_used: 0,
+          createmyqr_bulk_trials_used: 0,
+        });
+        setLoading(false);
+        return;
+      }
+    }
+
     if (typeof window === 'undefined' || !auth || !isFirebaseConfigured) {
       setLoading(false);
       return;
