@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Avaa rajoittamattomat eräkokoelmat",
     "userBatchDesc": "Olet käyttänyt yhden ilmaisen eräkokeilun. Päivitä PRO-versioon rajoittamattomia CSV-eriä ja ZIP-latauksia varten.",
     "googleCta": "Jatka Googlella (1 napsautus)",
-    "emailCta": "Tai jatka kohtaan Sähköposti / Salasana"
+    "emailCta": "Tai jatka kohtaan Sähköposti / Salasana",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser & CNC",
+        "guestTitle": "Kokeile AutoCAD DXF Laser Cut Free",
+        "guestDesc": "Kirjaudu sisään Googlella saadaksesi 2 ilmaista AutoCAD R2000 DXF -vektorilatausta tarkoilla ENGRAVE- ja CUT_BORDER-tasoilla.",
+        "userTitle": "Avaa rajoittamaton AutoCAD DXF -vienti",
+        "userDesc": "Olet käyttänyt ilmaiset kokeilusi. Päivitä PRO:ksi, niin voit ladata rajattomasti laserleikkauksia ja CNC DXF -latauksia."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator Vector",
+        "guestTitle": "Kokeile Adobe Illustrator EPS Free",
+        "guestDesc": "Kirjaudu sisään Googleen ja lunasta kaksi ilmaista Adobe EPS -vektorilatausta kaupallisiin pakkauksiin ja tulosteisiin.",
+        "userTitle": "Avaa rajoittamaton Adobe EPS -vienti",
+        "userDesc": "Olet käyttänyt ilmaiset kokeilusi. Päivitä PRO:ksi, niin voit ladata rajattomasti korkearesoluutioisia EPS-vektorilatauksia."
+      },
+      "mockup": {
+        "badge": "3D Real-World Mockup",
+        "guestTitle": "Kokeile ilmaista 3D Mockup Studiota",
+        "guestDesc": "Kirjaudu sisään Googleen ja lunasta kaksi ilmaista 1400 pikselin valokuvarealistista mainosmallin latausta (akryyli, pussi, vaatteet, kaulanauha).",
+        "userTitle": "Avaa rajoittamaton määrä 3D-malleja",
+        "userDesc": "Olet käyttänyt ilmaiset kokeilusi. Päivitä PRO:ksi, niin voit ladata rajoittamattomia 1400 pikselin kaupallisia malleja."
+      },
+      "barcode": {
+        "badge": "Enterprise 2D -viivakoodi",
+        "guestTitle": "Kokeile Enterprise 2D -viivakoodia ilmaiseksi",
+        "guestDesc": "Kirjaudu sisään Googlella saadaksesi 2 ilmaista teollisuusviivakoodin latausta (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Avaa rajoittamaton määrä 2D-viivakoodeja",
+        "userDesc": "Olet käyttänyt ilmaiset kokeilusi. Päivitä PRO:ksi rajoittamattoman teollisen 2D:n ja logistiikan viivakoodivientiä varten."
+      },
+      "frame": {
+        "badge": "CTA Showcase -kehys",
+        "guestTitle": "Kokeile mukautettuja CTA-kehyksiä ilmaiseksi",
+        "guestDesc": "Kirjaudu sisään Googleen, niin voit lunastaa kaksi ilmaista mukautettua toimintakehotuskehysten vientiä (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "Avaa rajoittamattomat toimintakehotuskehykset",
+        "userDesc": "Olet käyttänyt ilmaiset kokeilusi. Päivitä PRO:ksi, niin voit viedä rajattomasti mukautettuja toimintakehotuksen esittelykehysten vientiä."
+      },
+      "print": {
+        "badge": "A4-tarra-arkki PDF",
+        "guestTitle": "Kokeile A4 Print Studio ilmaiseksi",
+        "guestDesc": "Kirjaudu sisään Googleen, niin voit lunastaa kaksi ilmaista usean tarran A4 PDF-latausta, jossa on Avery-esiasetukset ja rajausmerkit.",
+        "userTitle": "Avaa rajoittamaton määrä A4-tulostus PDF-tiedostoja",
+        "userDesc": "Olet käyttänyt ilmaiset kokeilusi. Päivitä PRO:ksi saadaksesi rajattomasti tulostusvalmiita A4-tarraarkkien PDF-tiedostoja."
+      },
+      "bulk": {
+        "badge": "Erä CSV-kokoelma",
+        "guestTitle": "Kokeile 1 ilmaista eräkokoelmaa",
+        "guestDesc": "Kirjaudu sisään Googlella tai sähköpostilla avataksesi yhden ilmaisen eräkokoelman CSV-tuonnilla ja ZIP-viennillä.",
+        "userTitle": "Avaa rajoittamattomat eräkokoelmat",
+        "userDesc": "Olet käyttänyt yhden ilmaisen eräkokeilujaksosi. Päivitä PRO:ksi, niin saat rajattomat CSV-erät ja ZIP-lataukset."
+      },
+      "svg": {
+        "badge": "High-Res Vector SVG",
+        "guestTitle": "Kokeile Vector SVG Export Free -ohjelmaa",
+        "guestDesc": "Kirjaudu sisään Googleen saadaksesi kaksi ilmaista vektori-SVG-latausta, joissa on loputon skaalaus tulostusta varten.",
+        "userTitle": "Avaa Unlimited Vector SVG",
+        "userDesc": "Olet käyttänyt 2 ilmaista vientiäsi. Päivitä PRO:ksi saadaksesi rajoittamattoman vektori-SVG:n ja tulostuslataukset."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100 % tietosuoja ja elinikäinen voimassaolo",

@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Mở khóa các bộ sưu tập hàng loạt không giới hạn",
     "userBatchDesc": "Bạn đã sử dụng 1 đợt dùng thử miễn phí. Nâng cấp lên PRO để tải xuống hàng loạt CSV và ZIP không giới hạn.",
     "googleCta": "Tiếp tục với Google (1 cú nhấp chuột)",
-    "emailCta": "Hoặc tiếp tục với Email/Mật khẩu"
+    "emailCta": "Hoặc tiếp tục với Email/Mật khẩu",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser & CNC",
+        "guestTitle": "Dùng thử AutoCAD DXF Laser Cut miễn phí",
+        "guestDesc": "Đăng nhập bằng Google để nhận 2 lượt tải xuống vectơ AutoCAD R2000 DXF miễn phí với các lớp ENGRAVE và CUT_BORDER chính xác.",
+        "userTitle": "Mở khóa xuất khẩu AutoCAD DXF không giới hạn",
+        "userDesc": "Bạn đã sử dụng bản dùng thử miễn phí của mình. Nâng cấp lên PRO để tải xuống máy cắt laser & CNC DXF không giới hạn."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator Vector",
+        "guestTitle": "Dùng thử Adobe Illustrator EPS miễn phí",
+        "guestDesc": "Đăng nhập bằng Google để nhận 2 lượt tải xuống vector Adobe EPS miễn phí cho bao bì và in ấn thương mại.",
+        "userTitle": "Mở khóa xuất khẩu Adobe EPS không giới hạn",
+        "userDesc": "Bạn đã sử dụng bản dùng thử miễn phí của mình. Nâng cấp lên PRO để tải xuống vector EPS có độ phân giải cao không giới hạn."
+      },
+      "mockup": {
+        "badge": "Mô hình thế giới thực 3D",
+        "guestTitle": "Dùng thử miễn phí 3D Mockup Studio",
+        "guestDesc": "Đăng nhập bằng Google để nhận 2 lượt tải xuống mô hình thương mại ảnh thực tế 1400px miễn phí (Acrylic, Túi đựng, Trang phục, Dây buộc).",
+        "userTitle": "Mở khóa Mockup 3D không giới hạn",
+        "userDesc": "Bạn đã sử dụng bản dùng thử miễn phí của mình. Nâng cấp lên PRO để tải xuống mô hình thương mại 1400px không giới hạn."
+      },
+      "barcode": {
+        "badge": "Mã vạch 2D doanh nghiệp",
+        "guestTitle": "Dùng thử miễn phí mã vạch Enterprise 2D",
+        "guestDesc": "Đăng nhập bằng Google để nhận 2 lượt tải xuống mã vạch công nghiệp miễn phí (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Mở khóa mã vạch 2D không giới hạn",
+        "userDesc": "Bạn đã sử dụng bản dùng thử miễn phí của mình. Nâng cấp lên PRO để xuất mã vạch 2D công nghiệp và hậu cần không giới hạn."
+      },
+      "frame": {
+        "badge": "Khung trưng bày CTA",
+        "guestTitle": "Dùng thử miễn phí khung CTA tùy chỉnh",
+        "guestDesc": "Đăng nhập bằng Google để nhận 2 lần xuất khung trưng bày CTA tùy chỉnh miễn phí (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "Mở khóa khung CTA không giới hạn",
+        "userDesc": "Bạn đã sử dụng bản dùng thử miễn phí của mình. Nâng cấp lên PRO để xuất khung trưng bày CTA tùy chỉnh không giới hạn."
+      },
+      "print": {
+        "badge": "Tờ nhãn dán A4 PDF",
+        "guestTitle": "Dùng thử miễn phí A4 Print Studio",
+        "guestDesc": "Đăng nhập bằng Google để nhận 2 bản tải xuống bản PDF A4 nhiều nhãn dán miễn phí với các cài đặt trước và dấu cắt của Avery.",
+        "userTitle": "Mở khóa tệp PDF in A4 không giới hạn",
+        "userDesc": "Bạn đã sử dụng bản dùng thử miễn phí của mình. Nâng cấp lên PRO để có bản PDF tờ nhãn dán A4 sẵn sàng in không giới hạn."
+      },
+      "bulk": {
+        "badge": "Biên dịch CSV hàng loạt",
+        "guestTitle": "Hãy thử 1 bản tổng hợp hàng loạt miễn phí",
+        "guestDesc": "Đăng nhập bằng Google hoặc Email để mở khóa 1 bản biên dịch hàng loạt miễn phí với tính năng nhập CSV và xuất ZIP.",
+        "userTitle": "Mở khóa các bộ sưu tập hàng loạt không giới hạn",
+        "userDesc": "Bạn đã sử dụng 1 đợt dùng thử miễn phí. Nâng cấp lên PRO để tải xuống hàng loạt CSV và ZIP không giới hạn."
+      },
+      "svg": {
+        "badge": "SVG Vector độ phân giải cao",
+        "guestTitle": "Dùng thử miễn phí xuất Vector SVG",
+        "guestDesc": "Đăng nhập bằng Google để nhận 2 lượt tải xuống SVG vector miễn phí với tỷ lệ in vô hạn.",
+        "userTitle": "Mở khóa SVG Vector không giới hạn",
+        "userDesc": "Bạn đã sử dụng 2 lần xuất miễn phí của mình. Nâng cấp lên PRO để tải xuống vectơ SVG và bản in không giới hạn."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100% quyền riêng tư và hiệu lực trọn đời",

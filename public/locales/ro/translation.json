@@ -2010,7 +2010,65 @@
     "userBatchTitle": "Deblocați compilații de loturi nelimitate",
     "userBatchDesc": "Ați folosit 1 probă gratuită în lot. Faceți upgrade la PRO pentru loturi CSV nelimitate și descărcări ZIP.",
     "googleCta": "Continuați cu Google (1-clic)",
-    "emailCta": "Sau continuați cu E-mail / Parolă"
+    "emailCta": "Sau continuați cu E-mail / Parolă",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser și CNC",
+        "guestTitle": "Încercați AutoCAD DXF Laser Cut Free",
+        "guestDesc": "Conectați-vă cu Google pentru a revendica 2 descărcări gratuite de vectori AutoCAD R2000 DXF cu straturi ENGRAVE și CUT_BORDER de precizie.",
+        "userTitle": "Deblocați exporturi nelimitate AutoCAD DXF",
+        "userDesc": "Ați folosit testele gratuite. Faceți upgrade la PRO pentru descărcări nelimitate de tăiere cu laser și CNC DXF."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator Vector",
+        "guestTitle": "Încercați Adobe Illustrator EPS gratuit",
+        "guestDesc": "Conectați-vă cu Google pentru a revendica 2 descărcări gratuite de vector Adobe EPS pentru ambalare comercială și imprimare.",
+        "userTitle": "Deblocați exporturi Adobe EPS nelimitate",
+        "userDesc": "Ați folosit testele gratuite. Faceți upgrade la PRO pentru descărcări nelimitate de vector EPS de înaltă rezoluție."
+      },
+      "mockup": {
+        "badge": "Machetă 3D din lumea reală",
+        "guestTitle": "Încercați gratuit 3D Mockup Studio",
+        "guestDesc": "Conectați-vă cu Google pentru a revendica 2 descărcări gratuite de machete comerciale fotorealiste de 1400 px (acril, husă, îmbrăcăminte, șnur).",
+        "userTitle": "Deblocați modele 3D nelimitate",
+        "userDesc": "Ați folosit testele gratuite. Faceți upgrade la PRO pentru descărcări nelimitate de machete comerciale de 1400 px."
+      },
+      "barcode": {
+        "badge": "Cod de bare 2D Enterprise",
+        "guestTitle": "Încercați Enterprise 2D Barcode Free",
+        "guestDesc": "Conectați-vă cu Google pentru a revendica 2 descărcări gratuite de coduri de bare industriale (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Deblocați coduri de bare 2D nelimitate",
+        "userDesc": "Ați folosit testele gratuite. Faceți upgrade la PRO pentru exporturi nelimitate de coduri de bare 2D industriale și logistice."
+      },
+      "frame": {
+        "badge": "Cadru de prezentare CTA",
+        "guestTitle": "Încercați cadre personalizate CTA gratuit",
+        "guestDesc": "Conectați-vă la Google pentru a revendica 2 exporturi gratuite de cadre de prezentare personalizate CTA (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "Deblocați cadre CTA nelimitate",
+        "userDesc": "Ați folosit testele gratuite. Faceți upgrade la PRO pentru exporturi nelimitate de cadre de prezentare personalizate CTA."
+      },
+      "print": {
+        "badge": "Foaie de autocolante A4 PDF",
+        "guestTitle": "Încercați gratuit A4 Print Studio",
+        "guestDesc": "Conectați-vă la Google pentru a revendica 2 descărcări gratuite de PDF A4 cu mai multe autocolante, cu presetări Avery și semne de decupare.",
+        "userTitle": "Deblocați PDF-uri imprimate A4 nelimitate",
+        "userDesc": "Ați folosit testele gratuite. Faceți upgrade la PRO pentru un număr nelimitat de PDF-uri cu autocolante A4 gata de imprimat."
+      },
+      "bulk": {
+        "badge": "Loturi de compilare CSV",
+        "guestTitle": "Încercați 1 compilație de lot gratuită",
+        "guestDesc": "Conectați-vă cu Google sau e-mail pentru a debloca 1 compilație de lot gratuită cu import CSV și export ZIP.",
+        "userTitle": "Deblocați compilații de loturi nelimitate",
+        "userDesc": "Ați folosit 1 probă gratuită în lot. Faceți upgrade la PRO pentru loturi CSV și descărcări ZIP nelimitate."
+      },
+      "svg": {
+        "badge": "SVG vectorial de înaltă rezoluție",
+        "guestTitle": "Încercați Vector SVG Export Free",
+        "guestDesc": "Conectați-vă cu Google pentru a revendica 2 descărcări SVG vectoriale gratuite cu scalare infinită pentru imprimare.",
+        "userTitle": "Deblocați SVG vectorial nelimitat",
+        "userDesc": "Ați folosit cele 2 exporturi gratuite. Faceți upgrade la PRO pentru descărcări nelimitate de tipărire și SVG vectoriale."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100% confidențialitate și valabilitate pe viață",

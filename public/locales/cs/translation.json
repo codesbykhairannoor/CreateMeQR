@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Odemkněte neomezené dávkové kompilace",
     "userBatchDesc": "Využili jste 1 bezplatnou dávkovou zkušební verzi. Upgradujte na PRO a získejte neomezené dávky CSV a stahování ZIP.",
     "googleCta": "Pokračujte s Google (1 kliknutím)",
-    "emailCta": "Nebo pokračujte e-mailem / heslem"
+    "emailCta": "Nebo pokračujte e-mailem / heslem",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser a CNC",
+        "guestTitle": "Vyzkoušejte AutoCAD DXF Laser Cut Free",
+        "guestDesc": "Přihlaste se k účtu Google a získejte 2 bezplatné stažení vektorů AutoCAD R2000 DXF s přesnými vrstvami ENGRAVE a CUT_BORDER.",
+        "userTitle": "Odemkněte neomezený export AutoCAD DXF",
+        "userDesc": "Využili jste bezplatné zkušební verze. Upgradujte na PRO pro neomezené stahování laserem a CNC DXF."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator Vector",
+        "guestTitle": "Vyzkoušejte Adobe Illustrator EPS zdarma",
+        "guestDesc": "Přihlaste se k účtu Google a získejte 2 bezplatné stažení vektorů Adobe EPS pro komerční balení a tisk.",
+        "userTitle": "Odemkněte neomezený export Adobe EPS",
+        "userDesc": "Využili jste bezplatné zkušební verze. Upgradujte na PRO pro neomezené stahování vektorů EPS ve vysokém rozlišení."
+      },
+      "mockup": {
+        "badge": "3D maketa skutečného světa",
+        "guestTitle": "Vyzkoušejte zdarma 3D Mockup Studio",
+        "guestDesc": "Přihlaste se k účtu Google a získejte 2 bezplatné stažení fotorealistických komerčních maket s rozlišením 1400 pixelů (akryl, pouzdro, oblečení, šňůrka).",
+        "userTitle": "Odemkněte neomezené 3D makety",
+        "userDesc": "Využili jste bezplatné zkušební verze. Upgradujte na PRO pro neomezené stahování komerčních maket o velikosti 1400 pixelů."
+      },
+      "barcode": {
+        "badge": "Enterprise 2D čárový kód",
+        "guestTitle": "Vyzkoušejte Enterprise 2D Barcode Free",
+        "guestDesc": "Přihlaste se pomocí Google a získejte 2 bezplatné stažení průmyslových čárových kódů (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Odemkněte neomezené 2D čárové kódy",
+        "userDesc": "Využili jste bezplatné zkušební verze. Upgradujte na PRO pro neomezené exporty průmyslových 2D a logistických čárových kódů."
+      },
+      "frame": {
+        "badge": "Rámeček prezentace CTA",
+        "guestTitle": "Vyzkoušejte zdarma vlastní rámce CTA",
+        "guestDesc": "Přihlaste se k účtu Google a získejte 2 bezplatné vlastní exporty rámečků CTA (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "Odemkněte neomezené rámce CTA",
+        "userDesc": "Využili jste bezplatné zkušební verze. Upgradujte na verzi PRO a získejte neomezený export vlastních snímků CTA."
+      },
+      "print": {
+        "badge": "A4 samolepka PDF",
+        "guestTitle": "Vyzkoušejte A4 Print Studio zdarma",
+        "guestDesc": "Přihlaste se k účtu Google a získejte 2 bezplatné stažení PDF s více nálepkami ve formátu A4 s předvolbami Avery a ořezovými značkami.",
+        "userTitle": "Odemkněte neomezený tisk PDF formátu A4",
+        "userDesc": "Využili jste bezplatné zkušební verze. Upgradujte na verzi PRO a získejte neomezený počet souborů PDF s nálepkami ve formátu A4."
+      },
+      "bulk": {
+        "badge": "Dávková kompilace CSV",
+        "guestTitle": "Vyzkoušejte 1 bezplatnou dávkovou kompilaci",
+        "guestDesc": "Přihlaste se pomocí Google nebo e-mailu a odemkněte 1 bezplatnou dávkovou kompilaci s importem CSV a exportem ZIP.",
+        "userTitle": "Odemkněte neomezené dávkové kompilace",
+        "userDesc": "Využili jste 1 bezplatnou dávkovou zkušební verzi. Upgradujte na PRO a získejte neomezené dávky CSV a stahování ZIP."
+      },
+      "svg": {
+        "badge": "Vektor SVG s vysokým rozlišením",
+        "guestTitle": "Vyzkoušejte vektorový export SVG zdarma",
+        "guestDesc": "Přihlaste se k účtu Google a získejte 2 bezplatné stažení vektorového SVG s nekonečným rozsahem pro tisk.",
+        "userTitle": "Odemkněte neomezené vektorové SVG",
+        "userDesc": "Využili jste své 2 bezplatné exporty. Upgradujte na PRO pro neomezené stahování vektorů SVG a tisku."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100% soukromí a doživotní platnost",

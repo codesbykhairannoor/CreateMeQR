@@ -2010,7 +2010,65 @@
     "userBatchTitle": "Oldja fel a korlátlan kötegelt összeállításokat",
     "userBatchDesc": "Felhasználta 1 ingyenes kötegelt próbaverzióját. Frissítsen PRO-ra a korlátlan CSV kötegek és ZIP letöltések érdekében.",
     "googleCta": "Folytatás a Google-lal (1 kattintás)",
-    "emailCta": "Vagy folytassa az E-mail / Jelszóval"
+    "emailCta": "Vagy folytassa az E-mail / Jelszóval",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser és CNC",
+        "guestTitle": "Próbálja ki az AutoCAD DXF Laser Cut Free-t",
+        "guestDesc": "Jelentkezzen be a Google-lal, és igényeljen 2 ingyenes AutoCAD R2000 DXF vektorletöltést precíziós ENGRAVE és CUT_BORDER rétegekkel.",
+        "userTitle": "Feloldja a korlátlan AutoCAD DXF exportálást",
+        "userDesc": "Felhasználta az ingyenes próbaidőszakot. Frissítsen PRO-ra a korlátlan lézervágás és CNC DXF letöltésekért."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator Vector",
+        "guestTitle": "Próbálja ki az ingyenes Adobe Illustrator EPS-t",
+        "guestDesc": "Jelentkezzen be a Google-lal, és igényeljen 2 ingyenes Adobe EPS vektorletöltést kereskedelmi csomagoláshoz és nyomtatáshoz.",
+        "userTitle": "Nyissa meg a korlátlan Adobe EPS-exportálást",
+        "userDesc": "Felhasználta az ingyenes próbaidőszakot. Frissítsen PRO-ra a korlátlan nagy felbontású EPS vektorletöltésért."
+      },
+      "mockup": {
+        "badge": "3D valós világ makett",
+        "guestTitle": "Próbálja ki az ingyenes 3D Mockup Studio alkalmazást",
+        "guestDesc": "Jelentkezzen be a Google-lal, és igényeljen 2 ingyenes, 1400 képpontos fotórealisztikus reklámmakett letöltést (akril, tasak, ruházat, zsinór).",
+        "userTitle": "Nyisson fel korlátlan számú 3D-s maketteket",
+        "userDesc": "Felhasználta az ingyenes próbaidőszakot. Frissítsen PRO-ra a korlátlan számú, 1400 képpontos kereskedelmi makett letöltéshez."
+      },
+      "barcode": {
+        "badge": "Vállalati 2D vonalkód",
+        "guestTitle": "Próbálja ki az Enterprise 2D vonalkód ingyenes szolgáltatását",
+        "guestDesc": "Jelentkezzen be a Google-lal, és igényeljen 2 ingyenes ipari vonalkód-letöltést (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Korlátlan számú 2D vonalkód feloldása",
+        "userDesc": "Felhasználta az ingyenes próbaidőszakot. Frissítsen PRO-ra a korlátlan ipari 2D és logisztikai vonalkódexporthoz."
+      },
+      "frame": {
+        "badge": "CTA Showcase Frame",
+        "guestTitle": "Próbálja ki az egyéni CTA-kereteket ingyenesen",
+        "guestDesc": "Jelentkezzen be a Google-lal, és igényeljen 2 ingyenes egyéni CTA kirakatkeret exportot (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "Oldja fel a korlátlan CTA-kereteket",
+        "userDesc": "Felhasználta az ingyenes próbaidőszakot. Frissítsen PRO-ra a korlátlan egyéni CTA kirakatkeretek exportálásához."
+      },
+      "print": {
+        "badge": "A4-es matricalap PDF",
+        "guestTitle": "Próbálja ki az ingyenes A4 Print Studiot",
+        "guestDesc": "Jelentkezzen be a Google-lal, és igényeljen 2 ingyenes, több matricát tartalmazó A4-es PDF-letöltést Avery előbeállításokkal és vágási jelekkel.",
+        "userTitle": "Korlátlan számú A4-es nyomtatott PDF-fájl feloldása",
+        "userDesc": "Felhasználta az ingyenes próbaidőszakot. Frissítsen PRO-ra a korlátlan számú nyomtatásra kész A4-es matricalap PDF-fájlokért."
+      },
+      "bulk": {
+        "badge": "Kötegelt CSV-összeállítás",
+        "guestTitle": "Próbáljon ki 1 ingyenes kötegelt összeállítást",
+        "guestDesc": "Jelentkezzen be Google-lal vagy e-mailben, hogy feloldjon 1 ingyenes kötegelt összeállítást CSV-importálással és ZIP-exportálással.",
+        "userTitle": "Oldja fel a korlátlan kötegelt összeállításokat",
+        "userDesc": "Felhasználta 1 ingyenes kötegelt próbaverzióját. Frissítsen PRO-ra a korlátlan CSV kötegek és ZIP letöltések érdekében."
+      },
+      "svg": {
+        "badge": "Nagy felbontású vektoros SVG",
+        "guestTitle": "Próbálja ki a Vector SVG ingyenes exportálást",
+        "guestDesc": "Jelentkezzen be a Google-lal, és igényeljen 2 ingyenes vektoros SVG-letöltést végtelen nyomtatási méretezéssel.",
+        "userTitle": "Oldja fel a korlátlan vektoros SVG-t",
+        "userDesc": "Felhasználta a 2 ingyenes exportálást. Frissítsen PRO-ra a korlátlan vektoros SVG-hez és nyomtatási letöltésekhez."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100%-os adatvédelem és élethosszig tartó érvényesség",

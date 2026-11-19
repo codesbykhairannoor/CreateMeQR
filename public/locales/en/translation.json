@@ -2064,7 +2064,65 @@
     "userBatchTitle": "Unlock Unlimited Batch Compilations",
     "userBatchDesc": "You've used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches and ZIP downloads.",
     "googleCta": "Continue with Google (1-Click)",
-    "emailCta": "Or continue with Email / Password"
+    "emailCta": "Or continue with Email / Password",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser & CNC",
+        "guestTitle": "Try AutoCAD DXF Laser Cut Free",
+        "guestDesc": "Sign in with Google to claim 2 free AutoCAD R2000 DXF vector downloads with precision ENGRAVE and CUT_BORDER layers.",
+        "userTitle": "Unlock Unlimited AutoCAD DXF Exports",
+        "userDesc": "You've used your free trials. Upgrade to PRO for unlimited laser cut & CNC DXF downloads."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator Vector",
+        "guestTitle": "Try Adobe Illustrator EPS Free",
+        "guestDesc": "Sign in with Google to claim 2 free Adobe EPS vector downloads for commercial packaging and print.",
+        "userTitle": "Unlock Unlimited Adobe EPS Exports",
+        "userDesc": "You've used your free trials. Upgrade to PRO for unlimited high-resolution EPS vector downloads."
+      },
+      "mockup": {
+        "badge": "3D Real-World Mockup",
+        "guestTitle": "Try 3D Mockup Studio Free",
+        "guestDesc": "Sign in with Google to claim 2 free 1400px photorealistic commercial mockup downloads (Acrylic, Pouch, Apparel, Lanyard).",
+        "userTitle": "Unlock Unlimited 3D Mockups",
+        "userDesc": "You've used your free trials. Upgrade to PRO for unlimited 1400px commercial mockup downloads."
+      },
+      "barcode": {
+        "badge": "Enterprise 2D Barcode",
+        "guestTitle": "Try Enterprise 2D Barcode Free",
+        "guestDesc": "Sign in with Google to claim 2 free industrial barcode downloads (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Unlock Unlimited 2D Barcodes",
+        "userDesc": "You've used your free trials. Upgrade to PRO for unlimited industrial 2D and logistics barcode exports."
+      },
+      "frame": {
+        "badge": "CTA Showcase Frame",
+        "guestTitle": "Try Custom CTA Frames Free",
+        "guestDesc": "Sign in with Google to claim 2 free custom CTA showcase frame exports (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "Unlock Unlimited CTA Frames",
+        "userDesc": "You've used your free trials. Upgrade to PRO for unlimited custom CTA showcase frame exports."
+      },
+      "print": {
+        "badge": "A4 Sticker Sheet PDF",
+        "guestTitle": "Try A4 Print Studio Free",
+        "guestDesc": "Sign in with Google to claim 2 free multi-sticker A4 PDF downloads with Avery presets and crop marks.",
+        "userTitle": "Unlock Unlimited A4 Print PDFs",
+        "userDesc": "You've used your free trials. Upgrade to PRO for unlimited print-ready A4 sticker sheet PDFs."
+      },
+      "bulk": {
+        "badge": "Batch CSV Compilation",
+        "guestTitle": "Try 1 Free Batch Compilation",
+        "guestDesc": "Sign in with Google or Email to unlock 1 free batch compilation with CSV import and ZIP export.",
+        "userTitle": "Unlock Unlimited Batch Compilations",
+        "userDesc": "You've used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches and ZIP downloads."
+      },
+      "svg": {
+        "badge": "High-Res Vector SVG",
+        "guestTitle": "Try Vector SVG Export Free",
+        "guestDesc": "Sign in with Google to claim 2 free vector SVG downloads with infinite scaling for print.",
+        "userTitle": "Unlock Unlimited Vector SVG",
+        "userDesc": "You've used your 2 free exports. Upgrade to PRO for unlimited vector SVG and print downloads."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100% Privacy & Lifetime Validity",

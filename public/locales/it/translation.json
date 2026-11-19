@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Sblocca compilation batch illimitate",
     "userBatchDesc": "Hai utilizzato la tua 1 prova batch gratuita. Passa a PRO per batch CSV e download ZIP illimitati.",
     "googleCta": "Continua con Google (1 clic)",
-    "emailCta": "Oppure continua con Email/Password"
+    "emailCta": "Oppure continua con Email/Password",
+    "features": {
+      "dxf": {
+        "badge": "Laser e CNC AutoCAD",
+        "guestTitle": "Prova AutoCAD DXF Laser Cut gratuitamente",
+        "guestDesc": "Accedi con Google per richiedere 2 download gratuiti di vettori AutoCAD R2000 DXF con livelli ENGRAVE e CUT_BORDER di precisione.",
+        "userTitle": "Sblocca esportazioni DXF illimitate di AutoCAD",
+        "userDesc": "Hai utilizzato le tue prove gratuite. Passa a PRO per download illimitati di taglio laser e DXF CNC."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator vettoriale",
+        "guestTitle": "Prova Adobe Illustrator EPS gratuitamente",
+        "guestDesc": "Accedi con Google per richiedere 2 download gratuiti di vettori Adobe EPS per imballaggi commerciali e stampe.",
+        "userTitle": "Sblocca esportazioni Adobe EPS illimitate",
+        "userDesc": "Hai utilizzato le tue prove gratuite. Passa a PRO per download illimitati di vettori EPS ad alta risoluzione."
+      },
+      "mockup": {
+        "badge": "Mockup 3D del mondo reale",
+        "guestTitle": "Prova gratuitamente 3D Mockup Studio",
+        "guestDesc": "Accedi con Google per richiedere 2 download gratuiti di mockup commerciali fotorealistici da 1400 px (acrilico, custodia, abbigliamento, cordino).",
+        "userTitle": "Sblocca mockup 3D illimitati",
+        "userDesc": "Hai utilizzato le tue prove gratuite. Passa a PRO per download illimitati di mockup commerciali da 1400 px."
+      },
+      "barcode": {
+        "badge": "Codice a barre 2D aziendale",
+        "guestTitle": "Prova gratuitamente i codici a barre 2D Enterprise",
+        "guestDesc": "Accedi con Google per richiedere 2 download gratuiti di codici a barre industriali (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Sblocca codici a barre 2D illimitati",
+        "userDesc": "Hai utilizzato le tue prove gratuite. Passa a PRO per esportazioni illimitate di codici a barre logistici e 2D industriali."
+      },
+      "frame": {
+        "badge": "Cornice vetrina CTA",
+        "guestTitle": "Prova gratuitamente i frame CTA personalizzati",
+        "guestDesc": "Accedi con Google per richiedere 2 esportazioni gratuite di cornici per vetrine CTA personalizzate (pillola inferiore, Polaroid, supporto per telefono, banner).",
+        "userTitle": "Sblocca frame CTA illimitati",
+        "userDesc": "Hai utilizzato le tue prove gratuite. Passa a PRO per esportazioni illimitate di cornici CTA personalizzate."
+      },
+      "print": {
+        "badge": "Foglio di adesivi A4 PDF",
+        "guestTitle": "Prova A4 Print Studio gratuitamente",
+        "guestDesc": "Accedi con Google per richiedere 2 download gratuiti di PDF A4 multiadesivo con preimpostazioni Avery e indicatori di ritaglio.",
+        "userTitle": "Sblocca PDF stampati A4 illimitati",
+        "userDesc": "Hai utilizzato le tue prove gratuite. Passa a PRO per un numero illimitato di PDF di fogli adesivi A4 pronti per la stampa."
+      },
+      "bulk": {
+        "badge": "Compilazione CSV batch",
+        "guestTitle": "Prova 1 compilazione batch gratuita",
+        "guestDesc": "Accedi con Google o e-mail per sbloccare 1 compilazione batch gratuita con importazione CSV ed esportazione ZIP.",
+        "userTitle": "Sblocca compilazioni batch illimitate",
+        "userDesc": "Hai utilizzato la tua 1 prova batch gratuita. Passa a PRO per batch CSV e download ZIP illimitati."
+      },
+      "svg": {
+        "badge": "SVG vettoriale ad alta risoluzione",
+        "guestTitle": "Prova l'esportazione SVG vettoriale gratuita",
+        "guestDesc": "Accedi con Google per richiedere 2 download gratuiti di SVG vettoriali con ridimensionamento infinito per la stampa.",
+        "userTitle": "Sblocca SVG vettoriali illimitati",
+        "userDesc": "Hai utilizzato le tue 2 esportazioni gratuite. Passa a PRO per download illimitati di SVG vettoriali e stampe."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "Privacy al 100% e validità a vita",

@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Lås op for ubegrænsede batch-kompilationer",
     "userBatchDesc": "Du har brugt din 1 gratis batchprøveperiode. Opgrader til PRO for ubegrænsede CSV-batches og ZIP-downloads.",
     "googleCta": "Fortsæt med Google (1-klik)",
-    "emailCta": "Eller fortsæt med e-mail/adgangskode"
+    "emailCta": "Eller fortsæt med e-mail/adgangskode",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser & CNC",
+        "guestTitle": "Prøv AutoCAD DXF Laser Cut Free",
+        "guestDesc": "Log ind med Google for at gøre krav på 2 gratis AutoCAD R2000 DXF vektordownloads med præcision ENGRAVE og CUT_BORDER lag.",
+        "userTitle": "Lås op for ubegrænset AutoCAD DXF-eksport",
+        "userDesc": "Du har brugt dine gratis prøveperioder. Opgrader til PRO for ubegrænset laserskæring og CNC DXF-downloads."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator vektor",
+        "guestTitle": "Prøv Adobe Illustrator EPS gratis",
+        "guestDesc": "Log ind med Google for at få 2 gratis Adobe EPS-vektordownloads til kommerciel emballage og print.",
+        "userTitle": "Lås op for ubegrænset Adobe EPS-eksport",
+        "userDesc": "Du har brugt dine gratis prøveperioder. Opgrader til PRO for ubegrænsede EPS-vektordownloads i høj opløsning."
+      },
+      "mockup": {
+        "badge": "3D Real-World Mockup",
+        "guestTitle": "Prøv 3D Mockup Studio gratis",
+        "guestDesc": "Log ind med Google for at gøre krav på 2 gratis 1400px fotorealistiske kommercielle mockup-downloads (akryl, pose, tøj, snor).",
+        "userTitle": "Lås op for ubegrænset 3D-mockups",
+        "userDesc": "Du har brugt dine gratis prøveperioder. Opgrader til PRO for ubegrænset 1400px kommercielle mockup-downloads."
+      },
+      "barcode": {
+        "badge": "Enterprise 2D stregkode",
+        "guestTitle": "Prøv Enterprise 2D Barcode Free",
+        "guestDesc": "Log ind med Google for at få 2 gratis industrielle stregkoder-downloads (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Lås op for ubegrænset 2D-stregkoder",
+        "userDesc": "Du har brugt dine gratis prøveperioder. Opgrader til PRO for ubegrænset industriel 2D- og logistikstregkodeeksport."
+      },
+      "frame": {
+        "badge": "CTA udstillingsramme",
+        "guestTitle": "Prøv Custom CTA Frames gratis",
+        "guestDesc": "Log ind med Google for at gøre krav på 2 gratis tilpassede CTA-udstillingsrammeeksporter (Bund Pill, Polaroid, Telefonstativ, Banner).",
+        "userTitle": "Lås op for ubegrænsede CTA-rammer",
+        "userDesc": "Du har brugt dine gratis prøveperioder. Opgrader til PRO for ubegrænset eksport af brugerdefinerede CTA-fremstillingsrammer."
+      },
+      "print": {
+        "badge": "A4 klistermærkeark PDF",
+        "guestTitle": "Prøv A4 Print Studio gratis",
+        "guestDesc": "Log ind med Google for at få 2 gratis A4 PDF-downloads med flere klistermærker med Avery-forudindstillinger og skæremærker.",
+        "userTitle": "Lås op for ubegrænset A4-print PDF'er",
+        "userDesc": "Du har brugt dine gratis prøveperioder. Opgrader til PRO for at få ubegrænset printklare A4-klistermærkeark PDF'er."
+      },
+      "bulk": {
+        "badge": "Batch-CSV-kompilering",
+        "guestTitle": "Prøv 1 gratis batch-kompilering",
+        "guestDesc": "Log ind med Google eller e-mail for at låse op for 1 gratis batch-kompilering med CSV-import og ZIP-eksport.",
+        "userTitle": "Lås op for ubegrænsede batch-kompilationer",
+        "userDesc": "Du har brugt din 1 gratis batchprøveperiode. Opgrader til PRO for ubegrænsede CSV-batches og ZIP-downloads."
+      },
+      "svg": {
+        "badge": "Højopløselig vektor SVG",
+        "guestTitle": "Prøv Vector SVG Export Free",
+        "guestDesc": "Log ind med Google for at gøre krav på 2 gratis vektor SVG-downloads med uendelig skalering til print.",
+        "userTitle": "Lås op for ubegrænset vektor SVG",
+        "userDesc": "Du har brugt dine 2 gratis eksporter. Opgrader til PRO for ubegrænset vektor SVG og print downloads."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100 % privatliv og livstidsgyldighed",

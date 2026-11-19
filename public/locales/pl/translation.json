@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Odblokuj nieograniczone kompilacje wsadowe",
     "userBatchDesc": "Wykorzystałeś 1 bezpłatną wersję próbną wsadową. Uaktualnij do wersji PRO, aby uzyskać nieograniczone partie CSV i pobieranie plików ZIP.",
     "googleCta": "Kontynuuj z Google (1 kliknięcie)",
-    "emailCta": "Lub kontynuuj za pomocą adresu e-mail/hasła"
+    "emailCta": "Lub kontynuuj za pomocą adresu e-mail/hasła",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser i CNC",
+        "guestTitle": "Wypróbuj bezpłatnie wycinanie laserowe AutoCAD DXF",
+        "guestDesc": "Zaloguj się za pomocą Google, aby otrzymać 2 bezpłatne pliki do pobrania wektorów AutoCAD R2000 DXF z precyzyjnymi warstwami ENGRAVE i CUT_BORDER.",
+        "userTitle": "Odblokuj nieograniczone eksporty AutoCAD DXF",
+        "userDesc": "Wykorzystałeś bezpłatne okresy próbne. Uaktualnij do wersji PRO, aby uzyskać nieograniczone pobieranie plików wycinanych laserowo i CNC DXF."
+      },
+      "eps": {
+        "badge": "Wektor programu Adobe Illustrator",
+        "guestTitle": "Wypróbuj darmowy program Adobe Illustrator EPS",
+        "guestDesc": "Zaloguj się za pomocą Google, aby otrzymać 2 bezpłatne pliki wektorowe Adobe EPS do komercyjnego pakowania i drukowania.",
+        "userTitle": "Odblokuj nieograniczone eksporty Adobe EPS",
+        "userDesc": "Wykorzystałeś bezpłatne okresy próbne. Uaktualnij do wersji PRO, aby uzyskać nieograniczone pobieranie wektorów EPS w wysokiej rozdzielczości."
+      },
+      "mockup": {
+        "badge": "Makieta 3D w świecie rzeczywistym",
+        "guestTitle": "Wypróbuj bezpłatnie 3D Mockup Studio",
+        "guestDesc": "Zaloguj się w Google, aby pobrać 2 bezpłatne fotorealistyczne makiety komercyjne w rozdzielczości 1400 pikseli (akryl, etui, odzież, smycz).",
+        "userTitle": "Odblokuj nieograniczone makiety 3D",
+        "userDesc": "Wykorzystałeś bezpłatne okresy próbne. Uaktualnij do wersji PRO, aby uzyskać nieograniczone pobieranie komercyjnych makiet w rozdzielczości 1400 pikseli."
+      },
+      "barcode": {
+        "badge": "Korporacyjny kod kreskowy 2D",
+        "guestTitle": "Wypróbuj bezpłatnie kod kreskowy Enterprise 2D",
+        "guestDesc": "Zaloguj się w Google, aby pobrać 2 bezpłatne przemysłowe kody kreskowe (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Odblokuj nieograniczoną liczbę kodów kreskowych 2D",
+        "userDesc": "Wykorzystałeś bezpłatne okresy próbne. Przejdź na wersję PRO, aby uzyskać nieograniczony eksport przemysłowych kodów kreskowych 2D i logistycznych."
+      },
+      "frame": {
+        "badge": "Ramka prezentacyjna CTA",
+        "guestTitle": "Wypróbuj niestandardowe ramki CTA za darmo",
+        "guestDesc": "Zaloguj się w Google, aby otrzymać 2 bezpłatne eksporty niestandardowych ramek do prezentacji CTA (dolna pigułka, polaroid, stojak na telefon, baner).",
+        "userTitle": "Odblokuj nieograniczoną liczbę ramek CTA",
+        "userDesc": "Wykorzystałeś bezpłatne okresy próbne. Uaktualnij do wersji PRO, aby uzyskać nieograniczony eksport niestandardowych ramek prezentacyjnych CTA."
+      },
+      "print": {
+        "badge": "Arkusz naklejek A4 w formacie PDF",
+        "guestTitle": "Wypróbuj bezpłatnie A4 Print Studio",
+        "guestDesc": "Zaloguj się za pomocą Google, aby otrzymać 2 bezpłatne pliki do pobrania w formacie PDF z wieloma naklejkami A4, zawierające gotowe ustawienia Avery i znaczniki przycięcia.",
+        "userTitle": "Odblokuj nieograniczone możliwości drukowania plików PDF w formacie A4",
+        "userDesc": "Wykorzystałeś bezpłatne okresy próbne. Uaktualnij do wersji PRO, aby uzyskać nieograniczoną liczbę gotowych do druku arkuszy naklejek w formacie PDF."
+      },
+      "bulk": {
+        "badge": "Wsadowa kompilacja CSV",
+        "guestTitle": "Wypróbuj 1 bezpłatną kompilację wsadową",
+        "guestDesc": "Zaloguj się za pomocą Google lub poczty e-mail, aby odblokować 1 bezpłatną kompilację wsadową z importem CSV i eksportem ZIP.",
+        "userTitle": "Odblokuj nieograniczone kompilacje wsadowe",
+        "userDesc": "Wykorzystałeś 1 bezpłatną wersję próbną wsadową. Uaktualnij do wersji PRO, aby uzyskać nieograniczone partie CSV i pobieranie plików ZIP."
+      },
+      "svg": {
+        "badge": "Wektorowe SVG w wysokiej rozdzielczości",
+        "guestTitle": "Wypróbuj darmowy eksport Vector SVG",
+        "guestDesc": "Zaloguj się za pomocą Google, aby otrzymać 2 bezpłatne pliki do pobrania w formacie wektorowym SVG z nieskończonym skalowaniem do druku.",
+        "userTitle": "Odblokuj nieograniczone wektory SVG",
+        "userDesc": "Wykorzystałeś 2 bezpłatne eksporty. Uaktualnij do wersji PRO, aby uzyskać nieograniczone pobieranie plików wektorowych SVG i drukowanych."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100% prywatności i dożywotnia ważność",

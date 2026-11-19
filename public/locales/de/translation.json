@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Schalten Sie unbegrenzte Batch-Zusammenstellungen frei",
     "userBatchDesc": "Sie haben Ihre 1 kostenlose Batch-Testversion verwendet. Upgrade auf PRO für unbegrenzte CSV-Batches und ZIP-Downloads.",
     "googleCta": "Weiter mit Google (1-Klick)",
-    "emailCta": "Oder fahren Sie mit E-Mail / Passwort fort"
+    "emailCta": "Oder fahren Sie mit E-Mail / Passwort fort",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser & CNC",
+        "guestTitle": "Testen Sie AutoCAD DXF Laser Cut Free",
+        "guestDesc": "Melden Sie sich bei Google an, um zwei kostenlose AutoCAD R2000 DXF-Vektor-Downloads mit präzisen ENGRAVE- und CUT_BORDER-Ebenen zu erhalten.",
+        "userTitle": "Schalten Sie unbegrenzte AutoCAD DXF-Exporte frei",
+        "userDesc": "Sie haben Ihre kostenlosen Testversionen genutzt. Upgrade auf PRO für unbegrenzte Laserschnitt- und CNC-DXF-Downloads."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator-Vektor",
+        "guestTitle": "Probieren Sie Adobe Illustrator EPS Free aus",
+        "guestDesc": "Melden Sie sich bei Google an, um zwei kostenlose Adobe EPS-Vektor-Downloads für kommerzielle Verpackungen und Drucke zu erhalten.",
+        "userTitle": "Schalten Sie unbegrenzte Adobe EPS-Exporte frei",
+        "userDesc": "Sie haben Ihre kostenlosen Testversionen genutzt. Upgrade auf PRO für unbegrenzte hochauflösende EPS-Vektor-Downloads."
+      },
+      "mockup": {
+        "badge": "3D-Modell aus der realen Welt",
+        "guestTitle": "Testen Sie 3D Mockup Studio kostenlos",
+        "guestDesc": "Melden Sie sich bei Google an, um zwei kostenlose fotorealistische kommerzielle Modell-Downloads mit 1400 Pixeln zu erhalten (Acryl, Beutel, Bekleidung, Schlüsselband).",
+        "userTitle": "Schalten Sie unbegrenzt 3D-Modelle frei",
+        "userDesc": "Sie haben Ihre kostenlosen Testversionen genutzt. Upgrade auf PRO für unbegrenzte kommerzielle Mockup-Downloads mit 1400 Pixeln."
+      },
+      "barcode": {
+        "badge": "2D-Barcode für Unternehmen",
+        "guestTitle": "Testen Sie Enterprise 2D Barcode kostenlos",
+        "guestDesc": "Melden Sie sich bei Google an, um zwei kostenlose Downloads von industriellen Barcodes zu erhalten (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Schalten Sie unbegrenzt 2D-Barcodes frei",
+        "userDesc": "Sie haben Ihre kostenlosen Testversionen genutzt. Upgrade auf PRO für unbegrenzte industrielle 2D- und Logistik-Barcode-Exporte."
+      },
+      "frame": {
+        "badge": "CTA-Vitrinenrahmen",
+        "guestTitle": "Testen Sie benutzerdefinierte CTA-Frames kostenlos",
+        "guestDesc": "Melden Sie sich bei Google an, um zwei kostenlose benutzerdefinierte CTA-Showcase-Rahmenexporte zu erhalten (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "Schalten Sie unbegrenzte CTA-Frames frei",
+        "userDesc": "Sie haben Ihre kostenlosen Testversionen genutzt. Upgrade auf PRO für unbegrenzte benutzerdefinierte CTA-Showcase-Frame-Exporte."
+      },
+      "print": {
+        "badge": "A4-Aufkleberblatt PDF",
+        "guestTitle": "Testen Sie A4 Print Studio kostenlos",
+        "guestDesc": "Melden Sie sich bei Google an, um zwei kostenlose PDF-Downloads mit mehreren Aufklebern im A4-Format mit Avery-Voreinstellungen und Schnittmarken zu erhalten.",
+        "userTitle": "Schalten Sie unbegrenzte A4-Druck-PDFs frei",
+        "userDesc": "Sie haben Ihre kostenlosen Testversionen genutzt. Upgraden Sie auf PRO, um unbegrenzt druckfertige A4-Stickerbögen im PDF-Format zu erhalten."
+      },
+      "bulk": {
+        "badge": "Batch-CSV-Zusammenstellung",
+        "guestTitle": "Probieren Sie 1 kostenlose Batch-Kompilierung aus",
+        "guestDesc": "Melden Sie sich mit Google oder E-Mail an, um 1 kostenlose Batch-Kompilierung mit CSV-Import und ZIP-Export freizuschalten.",
+        "userTitle": "Schalten Sie unbegrenzte Batch-Zusammenstellungen frei",
+        "userDesc": "Sie haben Ihre 1 kostenlose Batch-Testversion verwendet. Upgrade auf PRO für unbegrenzte CSV-Batches und ZIP-Downloads."
+      },
+      "svg": {
+        "badge": "Hochauflösendes Vektor-SVG",
+        "guestTitle": "Probieren Sie Vector SVG Export Free aus",
+        "guestDesc": "Melden Sie sich bei Google an, um zwei kostenlose Vektor-SVG-Downloads mit unbegrenzter Skalierung zum Drucken zu erhalten.",
+        "userTitle": "Schalten Sie unbegrenzt Vektor-SVG frei",
+        "userDesc": "Sie haben Ihre beiden kostenlosen Exporte verwendet. Upgrade auf PRO für unbegrenzte Vektor-SVG- und Druck-Downloads."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100 % Datenschutz und lebenslange Gültigkeit",

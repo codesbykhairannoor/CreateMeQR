@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Sınırsız Toplu Derlemenin Kilidini Açın",
     "userBatchDesc": "1 ücretsiz toplu deneme sürenizi kullandınız. Sınırsız CSV grupları ve ZIP indirmeleri için PRO'ya yükseltin.",
     "googleCta": "Google ile devam et (Tek Tıklama)",
-    "emailCta": "Veya E-posta / Şifre ile devam edin"
+    "emailCta": "Veya E-posta / Şifre ile devam edin",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Lazer ve CNC",
+        "guestTitle": "AutoCAD DXF Lazer Kesimi Ücretsiz Deneyin",
+        "guestDesc": "Hassas ENGRAVE ve CUT_BORDER katmanlarına sahip 2 ücretsiz AutoCAD R2000 DXF vektör indirmesini talep etmek için Google ile oturum açın.",
+        "userTitle": "Sınırsız AutoCAD DXF Dışa Aktarımının Kilidini Açın",
+        "userDesc": "Ücretsiz denemelerinizi kullandınız. Sınırsız lazer kesim ve CNC DXF indirmeleri için PRO'ya yükseltin."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator Vektör",
+        "guestTitle": "Adobe Illustrator EPS'yi Ücretsiz Deneyin",
+        "guestDesc": "Ticari paketleme ve baskıya yönelik 2 ücretsiz Adobe EPS vektör indirmesini talep etmek için Google ile oturum açın.",
+        "userTitle": "Sınırsız Adobe EPS Dışa Aktarımının Kilidini Açın",
+        "userDesc": "Ücretsiz denemelerinizi kullandınız. Sınırsız yüksek çözünürlüklü EPS vektör indirmeleri için PRO'ya yükseltin."
+      },
+      "mockup": {
+        "badge": "3D Gerçek Dünya Maketi",
+        "guestTitle": "3D Mockup Studio'yu Ücretsiz Deneyin",
+        "guestDesc": "2 adet ücretsiz 1400 piksellik fotogerçekçi ticari maket indirmesi (Akrilik, Kese, Giyim, Kordon) için Google ile oturum açın.",
+        "userTitle": "Sınırsız 3D Modellerin Kilidini Açın",
+        "userDesc": "Ücretsiz denemelerinizi kullandınız. Sınırsız 1400 piksellik ticari maket indirmeleri için PRO'ya yükseltin."
+      },
+      "barcode": {
+        "badge": "Kurumsal 2D Barkod",
+        "guestTitle": "Kurumsal 2D Barkodu Ücretsiz Deneyin",
+        "guestDesc": "2 ücretsiz endüstriyel barkod indirme talebinde bulunmak için Google ile oturum açın (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Sınırsız 2D Barkodların Kilidini Açın",
+        "userDesc": "Ücretsiz denemelerinizi kullandınız. Sınırsız endüstriyel 2D ve lojistik barkod dışa aktarımı için PRO'ya yükseltin."
+      },
+      "frame": {
+        "badge": "CTA Vitrin Çerçevesi",
+        "guestTitle": "Özel CTA Çerçevelerini Ücretsiz Deneyin",
+        "guestDesc": "2 ücretsiz özel CTA vitrin çerçevesi dışa aktarımından (Alt Hap, Polaroid, Telefon Standı, Banner) yararlanmak için Google ile oturum açın.",
+        "userTitle": "Sınırsız CTA Çerçevesinin Kilidini Açın",
+        "userDesc": "Ücretsiz denemelerinizi kullandınız. Sınırsız özel CTA vitrin çerçevesi dışa aktarımı için PRO'ya yükseltin."
+      },
+      "print": {
+        "badge": "A4 Etiket Sayfası PDF",
+        "guestTitle": "A4 Print Studio'yu Ücretsiz Deneyin",
+        "guestDesc": "Avery ön ayarları ve kırpma işaretleri içeren 2 ücretsiz çoklu çıkartmalı A4 PDF indirme talebinde bulunmak için Google ile oturum açın.",
+        "userTitle": "Sınırsız A4 Baskı PDF'sinin Kilidini Açın",
+        "userDesc": "Ücretsiz denemelerinizi kullandınız. Sınırsız sayıda baskıya hazır A4 çıkartma sayfası PDF'si için PRO'ya yükseltin."
+      },
+      "bulk": {
+        "badge": "Toplu CSV Derlemesi",
+        "guestTitle": "1 Ücretsiz Toplu Derlemeyi Deneyin",
+        "guestDesc": "CSV içe aktarma ve ZIP dışa aktarma ile 1 ücretsiz toplu derlemenin kilidini açmak için Google veya E-posta ile oturum açın.",
+        "userTitle": "Sınırsız Toplu Derlemenin Kilidini Açın",
+        "userDesc": "1 ücretsiz toplu deneme sürenizi kullandınız. Sınırsız CSV grupları ve ZIP indirmeleri için PRO'ya yükseltin."
+      },
+      "svg": {
+        "badge": "Yüksek Çözünürlüklü Vektör SVG",
+        "guestTitle": "Vector SVG Export'u Ücretsiz Deneyin",
+        "guestDesc": "Yazdırma için sonsuz ölçeklendirmeye sahip 2 ücretsiz vektör SVG indirmesini talep etmek için Google ile oturum açın.",
+        "userTitle": "Sınırsız Vektör SVG'nin Kilidini Açın",
+        "userDesc": "2 ücretsiz ihracat hakkınızı kullandınız. Sınırsız vektör SVG ve baskı indirmeleri için PRO'ya yükseltin."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "%100 Gizlilik ve Ömür Boyu Geçerlilik",

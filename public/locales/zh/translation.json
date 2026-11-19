@@ -2072,7 +2072,65 @@
     "userBatchTitle": "解锁无限批量编译",
     "userBatchDesc": "您已使用 1 次免费批量试用。升级到 PRO 即可无限量 CSV 批次和 ZIP 下载。",
     "googleCta": "继续使用 Google（一键式）",
-    "emailCta": "或使用电子邮件/密码继续"
+    "emailCta": "或使用电子邮件/密码继续",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD 激光和 CNC",
+        "guestTitle": "免费试用 AutoCAD DXF 激光切割",
+        "guestDesc": "登录 Google 即可获得 2 个免费的 AutoCAD R2000 DXF 矢量下载，其中包含精确的 ENGRAVE 和 CUT_BORDER 图层。",
+        "userTitle": "解锁无限 AutoCAD DXF 导出",
+        "userDesc": "您已经使用了免费试用版。升级到 PRO 可无限下载激光切割和 CNC DXF。"
+      },
+      "eps": {
+        "badge": "Adobe Illustrator 矢量",
+        "guestTitle": "免费试用 Adobe Illustrator EPS",
+        "guestDesc": "登录 Google 即可获取 2 个免费的 Adobe EPS 矢量下载，用于商业包装和印刷。",
+        "userTitle": "解锁无限 Adobe EPS 导出",
+        "userDesc": "您已经使用了免费试用版。升级到 PRO 即可无限量下载高分辨率 EPS。"
+      },
+      "mockup": {
+        "badge": "3D 真实世界模型",
+        "guestTitle": "免费试用 3D Mockup Studio",
+        "guestDesc": "登录 Google 即可获得 2 个免费的 1400 像素逼真商业模型下载（亚克力、小袋、服装、挂绳）。",
+        "userTitle": "解锁无限的 3D 模型",
+        "userDesc": "您已经使用了免费试用版。升级到 PRO 即可无限下载 1400 像素商业模型。"
+      },
+      "barcode": {
+        "badge": "企业二维条码",
+        "guestTitle": "免费试用企业二维条码",
+        "guestDesc": "登录 Google 即可获得 2 个免费工业条码下载（DataMatrix、PDF417、Aztec、GS1-128）。",
+        "userTitle": "解锁无限的二维条形码",
+        "userDesc": "您已经使用了免费试用版。升级到 PRO 可无限工业二维和物流条码导出。"
+      },
+      "frame": {
+        "badge": "CTA 展示架",
+        "guestTitle": "免费尝试自定义 CTA 框架",
+        "guestDesc": "登录 Google 即可获得 2 个免费的自定义 CTA 展示框架导出（底部药丸、宝丽来、手机支架、横幅）。",
+        "userTitle": "解锁无限 CTA 框架",
+        "userDesc": "您已经使用了免费试用版。升级到 PRO 即可无限制导出自定义 CTA 展示框架。"
+      },
+      "print": {
+        "badge": "A4 贴纸 PDF",
+        "guestTitle": "免费试用 A4 Print Studio",
+        "guestDesc": "登录 Google 即可获得 2 个免费的多贴纸 A4 PDF 下载，其中包含 Avery 预设和裁剪标记。",
+        "userTitle": "解锁无限 A4 打印 PDF",
+        "userDesc": "您已经使用了免费试用版。升级到 PRO 可无限打印可打印的 A4 贴纸 PDF。"
+      },
+      "bulk": {
+        "badge": "批量CSV编译",
+        "guestTitle": "尝试 1 次免费批量编译",
+        "guestDesc": "使用 Google 或电子邮件登录即可解锁 1 次免费批量编译，支持 CSV 导入和 ZIP 导出。",
+        "userTitle": "解锁无限批量编译",
+        "userDesc": "您已使用 1 次免费批量试用。升级到 PRO 即可无限量 CSV 批次和 ZIP 下载。"
+      },
+      "svg": {
+        "badge": "高分辨率矢量 SVG",
+        "guestTitle": "免费尝试矢量 SVG 导出",
+        "guestDesc": "登录 Google 即可获得 2 个免费矢量 SVG 下载，可无限缩放打印。",
+        "userTitle": "解锁无限矢量 SVG",
+        "userDesc": "您已使用 2 次免费导出。升级到 PRO 即可无限制地下载矢量 SVG 和打印。"
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100% 隐私且终身有效",

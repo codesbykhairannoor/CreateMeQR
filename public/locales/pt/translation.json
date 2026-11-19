@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Desbloqueie compilações em lote ilimitadas",
     "userBatchDesc": "Você usou seu primeiro teste em lote gratuito. Atualize para PRO para lotes CSV ilimitados e downloads ZIP.",
     "googleCta": "Continue com o Google (1 clique)",
-    "emailCta": "Ou continue com E-mail/Senha"
+    "emailCta": "Ou continue com E-mail/Senha",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser e CNC",
+        "guestTitle": "Experimente o AutoCAD DXF com corte a laser gratuitamente",
+        "guestDesc": "Faça login no Google para reivindicar 2 downloads gratuitos de vetores do AutoCAD R2000 DXF com camadas ENGRAVE e CUT_BORDER de precisão.",
+        "userTitle": "Desbloqueie exportações ilimitadas do AutoCAD DXF",
+        "userDesc": "Você usou suas avaliações gratuitas. Atualize para PRO para corte a laser ilimitado e downloads CNC DXF."
+      },
+      "eps": {
+        "badge": "Vetor do Adobe Illustrator",
+        "guestTitle": "Experimente o Adobe Illustrator EPS gratuitamente",
+        "guestDesc": "Faça login no Google para reivindicar 2 downloads gratuitos de vetores Adobe EPS para embalagens comerciais e impressão.",
+        "userTitle": "Desbloqueie exportações ilimitadas de Adobe EPS",
+        "userDesc": "Você usou suas avaliações gratuitas. Atualize para PRO para downloads ilimitados de vetores EPS de alta resolução."
+      },
+      "mockup": {
+        "badge": "Maquete 3D do mundo real",
+        "guestTitle": "Experimente o 3D Mockup Studio grátis",
+        "guestDesc": "Faça login no Google para reivindicar 2 downloads gratuitos de maquetes comerciais fotorrealistas de 1400 pixels (acrílico, bolsa, vestuário, cordão).",
+        "userTitle": "Desbloqueie modelos 3D ilimitados",
+        "userDesc": "Você usou suas avaliações gratuitas. Atualize para PRO para downloads ilimitados de maquetes comerciais de 1400px."
+      },
+      "barcode": {
+        "badge": "Código de barras 2D empresarial",
+        "guestTitle": "Experimente o código de barras 2D empresarial gratuitamente",
+        "guestDesc": "Faça login no Google para reivindicar 2 downloads gratuitos de códigos de barras industriais (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Desbloqueie códigos de barras 2D ilimitados",
+        "userDesc": "Você usou suas avaliações gratuitas. Atualize para PRO para exportações ilimitadas de códigos de barras industriais 2D e logísticos."
+      },
+      "frame": {
+        "badge": "Quadro de demonstração do CTA",
+        "guestTitle": "Experimente quadros de CTA personalizados gratuitamente",
+        "guestDesc": "Faça login no Google para reivindicar 2 exportações gratuitas de quadros de vitrine de CTA personalizados (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "Desbloqueie quadros de CTA ilimitados",
+        "userDesc": "Você usou suas avaliações gratuitas. Atualize para PRO para exportações ilimitadas de quadros de vitrine de CTA personalizados."
+      },
+      "print": {
+        "badge": "Folha de autocolantes A4 PDF",
+        "guestTitle": "Experimente o A4 Print Studio gratuitamente",
+        "guestDesc": "Faça login no Google para reivindicar 2 downloads gratuitos de PDF A4 com vários adesivos com predefinições Avery e marcas de corte.",
+        "userTitle": "Desbloqueie PDFs de impressão A4 ilimitados",
+        "userDesc": "Você usou suas avaliações gratuitas. Atualize para PRO para obter PDFs ilimitados de folhas de adesivos A4 prontos para impressão."
+      },
+      "bulk": {
+        "badge": "Compilação CSV em lote",
+        "guestTitle": "Experimente 1 compilação em lote grátis",
+        "guestDesc": "Faça login com Google ou e-mail para desbloquear 1 compilação em lote gratuita com importação CSV e exportação ZIP.",
+        "userTitle": "Desbloqueie compilações em lote ilimitadas",
+        "userDesc": "Você usou seu primeiro teste em lote gratuito. Atualize para PRO para lotes CSV ilimitados e downloads ZIP."
+      },
+      "svg": {
+        "badge": "SVG vetorial de alta resolução",
+        "guestTitle": "Experimente a exportação vetorial SVG gratuitamente",
+        "guestDesc": "Faça login no Google para reivindicar 2 downloads SVG gratuitos de vetores com escala infinita para impressão.",
+        "userTitle": "Desbloquear SVG de vetor ilimitado",
+        "userDesc": "Você usou suas duas exportações gratuitas. Atualize para PRO para obter SVG vetorial ilimitado e downloads de impressão."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100% de privacidade e validade vitalícia",

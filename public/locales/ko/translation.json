@@ -2072,7 +2072,65 @@
     "userBatchTitle": "무제한 일괄 편집 잠금 해제",
     "userBatchDesc": "1개의 무료 일괄 평가판을 사용했습니다. 무제한 CSV 배치 및 ZIP 다운로드를 위해 PRO로 업그레이드하세요.",
     "googleCta": "Google로 계속하기(1-클릭)",
-    "emailCta": "또는 이메일/비밀번호로 계속하세요."
+    "emailCta": "또는 이메일/비밀번호로 계속하세요.",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD 레이저 및 CNC",
+        "guestTitle": "AutoCAD DXF 레이저 컷을 무료로 사용해 보세요",
+        "guestDesc": "Google에 로그인하여 정밀 ENGRAVE 및 CUT_BORDER 레이어가 포함된 무료 AutoCAD R2000 DXF 벡터 다운로드 2개를 받으세요.",
+        "userTitle": "무제한 AutoCAD DXF 내보내기 잠금 해제",
+        "userDesc": "무료 평가판을 사용하셨습니다. 무제한 레이저 절단 및 CNC DXF 다운로드를 위해 PRO로 업그레이드하세요."
+      },
+      "eps": {
+        "badge": "어도비 일러스트레이터 벡터",
+        "guestTitle": "Adobe Illustrator EPS를 무료로 사용해 보세요.",
+        "guestDesc": "Google에 로그인하여 상업용 포장 및 인쇄용 무료 Adobe EPS 벡터 다운로드 2개를 받으세요.",
+        "userTitle": "무제한 Adobe EPS 내보내기 잠금 해제",
+        "userDesc": "무료 평가판을 사용하셨습니다. 고해상도 EPS 벡터를 무제한으로 다운로드하려면 PRO로 업그레이드하세요."
+      },
+      "mockup": {
+        "badge": "3D 실제 모형",
+        "guestTitle": "3D Mockup Studio를 무료로 사용해 보세요",
+        "guestDesc": "Google에 로그인하여 1400px의 사실적인 상업용 모형 다운로드(아크릴, 파우치, 의류, 끈) 2개를 무료로 받으세요.",
+        "userTitle": "무제한 3D 모형 잠금 해제",
+        "userDesc": "무료 평가판을 사용하셨습니다. 1400px 상업용 모형을 무제한으로 다운로드하려면 PRO로 업그레이드하세요."
+      },
+      "barcode": {
+        "badge": "엔터프라이즈 2D 바코드",
+        "guestTitle": "Enterprise 2D 바코드를 무료로 사용해 보세요",
+        "guestDesc": "Google에 로그인하여 2개의 무료 산업용 바코드 다운로드(DataMatrix, PDF417, Aztec, GS1-128)를 받으세요.",
+        "userTitle": "무제한 2D 바코드 잠금 해제",
+        "userDesc": "무료 평가판을 사용하셨습니다. 산업용 2D 및 물류 바코드를 무제한으로 내보내려면 PRO로 업그레이드하세요."
+      },
+      "frame": {
+        "badge": "CTA 쇼케이스 프레임",
+        "guestTitle": "맞춤형 CTA 프레임을 무료로 사용해 보세요",
+        "guestDesc": "Google에 로그인하여 무료 맞춤 CTA 쇼케이스 프레임 내보내기 2개(Bottom Pill, Polaroid, Phone Stand, Banner)를 받으세요.",
+        "userTitle": "무제한 CTA 프레임 잠금 해제",
+        "userDesc": "무료 평가판을 사용하셨습니다. 무제한으로 맞춤형 CTA 쇼케이스 프레임을 내보내려면 PRO로 업그레이드하세요."
+      },
+      "print": {
+        "badge": "A4 스티커 시트 PDF",
+        "guestTitle": "A4 Print Studio를 무료로 사용해 보세요",
+        "guestDesc": "Google에 로그인하여 Avery 사전 설정 및 자르기 표시가 포함된 무료 멀티 스티커 A4 PDF 다운로드 2개를 받으세요.",
+        "userTitle": "무제한 A4 인쇄 PDF 잠금 해제",
+        "userDesc": "무료 평가판을 사용하셨습니다. 인쇄 가능한 A4 스티커 시트 PDF를 무제한으로 이용하려면 PRO로 업그레이드하세요."
+      },
+      "bulk": {
+        "badge": "일괄 CSV 컴파일",
+        "guestTitle": "1개의 무료 일괄 편집을 사용해 보세요",
+        "guestDesc": "Google 또는 이메일로 로그인하여 CSV 가져오기 및 ZIP 내보내기 기능이 있는 무료 일괄 편집 1개를 잠금 해제하세요.",
+        "userTitle": "무제한 일괄 편집 잠금 해제",
+        "userDesc": "1개의 무료 일괄 평가판을 사용했습니다. 무제한 CSV 배치 및 ZIP 다운로드를 위해 PRO로 업그레이드하세요."
+      },
+      "svg": {
+        "badge": "고해상도 벡터 SVG",
+        "guestTitle": "벡터 SVG 내보내기를 무료로 사용해 보세요",
+        "guestDesc": "Google에 로그인하여 인쇄용 무한 확장 기능을 갖춘 무료 벡터 SVG 다운로드 2개를 받으세요.",
+        "userTitle": "무제한 벡터 SVG 잠금 해제",
+        "userDesc": "2개의 무료 내보내기를 사용했습니다. 무제한 벡터 SVG 및 인쇄 다운로드를 위해 PRO로 업그레이드하세요."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100% 개인정보 보호 및 평생 유효성",

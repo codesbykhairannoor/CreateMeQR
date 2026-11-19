@@ -2072,7 +2072,65 @@
     "userBatchTitle": "I-unlock ang Walang limitasyong Batch Compilation\n<",
     "userBatchDesc": "Nagamit mo na ang iyong 1 libreng batch na pagsubok. Mag-upgrade sa PRO para sa walang limitasyong mga CSV batch at ZIP download.\n<",
     "googleCta": "Magpatuloy sa Google (1-Click)",
-    "emailCta": "O magpatuloy sa Email / Password"
+    "emailCta": "O magpatuloy sa Email / Password",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser at CNC",
+        "guestTitle": "Subukan ang AutoCAD DXF Laser Cut Free",
+        "guestDesc": "Mag-sign in sa Google para mag-claim ng 2 libreng AutoCAD R2000 DXF vector download na may katumpakan na ENGRAVE at CUT_BORDER layer.",
+        "userTitle": "I-unlock ang Walang limitasyong AutoCAD DXF Exports",
+        "userDesc": "Nagamit mo na ang iyong mga libreng pagsubok. Mag-upgrade sa PRO para sa walang limitasyong laser cut at CNC DXF download."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator Vector",
+        "guestTitle": "Subukan ang Adobe Illustrator EPS na Libre",
+        "guestDesc": "Mag-sign in sa Google para mag-claim ng 2 libreng Adobe EPS vector download para sa komersyal na packaging at print.",
+        "userTitle": "I-unlock ang Walang limitasyong Adobe EPS Exports",
+        "userDesc": "Nagamit mo na ang iyong mga libreng pagsubok. Mag-upgrade sa PRO para sa walang limitasyong high-resolution na pag-download ng EPS vector."
+      },
+      "mockup": {
+        "badge": "3D Real-World Mockup",
+        "guestTitle": "Subukan ang 3D Mockup Studio na Libre",
+        "guestDesc": "Mag-sign in sa Google para mag-claim ng 2 libreng 1400px photorealistic commercial mockup download (Acrylic, Pouch, Apparel, Lanyard).",
+        "userTitle": "I-unlock ang Walang limitasyong 3D Mockups",
+        "userDesc": "Nagamit mo na ang iyong mga libreng pagsubok. Mag-upgrade sa PRO para sa walang limitasyong 1400px na commercial mockup download."
+      },
+      "barcode": {
+        "badge": "Enterprise 2D Barcode",
+        "guestTitle": "Subukan ang Enterprise 2D Barcode Free",
+        "guestDesc": "Mag-sign in sa Google para mag-claim ng 2 libreng pang-industriyang pag-download ng barcode (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "I-unlock ang Walang limitasyong 2D Barcode",
+        "userDesc": "Nagamit mo na ang iyong mga libreng pagsubok. Mag-upgrade sa PRO para sa walang limitasyong pang-industriya na 2D at logistics barcode export."
+      },
+      "frame": {
+        "badge": "CTA Showcase Frame",
+        "guestTitle": "Subukan ang Mga Custom na CTA Frame na Libre",
+        "guestDesc": "Mag-sign in sa Google para mag-claim ng 2 libreng custom na CTA showcase frame export (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "I-unlock ang Walang limitasyong CTA Frame",
+        "userDesc": "Nagamit mo na ang iyong mga libreng pagsubok. Mag-upgrade sa PRO para sa walang limitasyong pag-export ng custom na CTA showcase frame."
+      },
+      "print": {
+        "badge": "A4 Sticker Sheet PDF",
+        "guestTitle": "Subukan ang A4 Print Studio na Libre",
+        "guestDesc": "Mag-sign in sa Google para mag-claim ng 2 libreng multi-sticker A4 na pag-download na PDF na may mga Avery preset at crop mark.",
+        "userTitle": "I-unlock ang Walang limitasyong A4 Print PDFs",
+        "userDesc": "Nagamit mo na ang iyong mga libreng pagsubok. Mag-upgrade sa PRO para sa walang limitasyong print-ready na A4 sticker sheet na PDF."
+      },
+      "bulk": {
+        "badge": "Batch CSV Compilation",
+        "guestTitle": "Subukan ang 1 Libreng Batch Compilation",
+        "guestDesc": "Mag-sign in gamit ang Google o Email para i-unlock ang 1 libreng batch compilation na may CSV import at ZIP export.",
+        "userTitle": "I-unlock ang Walang limitasyong Batch Compilation",
+        "userDesc": "Nagamit mo na ang iyong 1 libreng batch na pagsubok. Mag-upgrade sa PRO para sa walang limitasyong mga CSV batch at ZIP download."
+      },
+      "svg": {
+        "badge": "High-Res Vector SVG",
+        "guestTitle": "Subukan ang Vector SVG Export na Libre",
+        "guestDesc": "Mag-sign in sa Google para mag-claim ng 2 libreng vector SVG download na may walang katapusang scaling para sa pag-print.",
+        "userTitle": "I-unlock ang Walang limitasyong Vector SVG",
+        "userDesc": "Nagamit mo na ang iyong 2 libreng pag-export. Mag-upgrade sa PRO para sa walang limitasyong vector SVG at print download."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100% Privacy at Lifetime Validity\n<",

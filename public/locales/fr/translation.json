@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Débloquez des compilations par lots illimitées",
     "userBatchDesc": "Vous avez utilisé votre 1 essai par lots gratuit. Passez à PRO pour des lots CSV et des téléchargements ZIP illimités.",
     "googleCta": "Continuer avec Google (1 clic)",
-    "emailCta": "Ou continuez avec Email / Mot de passe"
+    "emailCta": "Ou continuez avec Email / Mot de passe",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser et CNC",
+        "guestTitle": "Essayez AutoCAD DXF Laser Cut gratuitement",
+        "guestDesc": "Connectez-vous avec Google pour réclamer 2 téléchargements gratuits de vecteurs AutoCAD R2000 DXF avec des calques ENGRAVE et CUT_BORDER de précision.",
+        "userTitle": "Débloquez des exportations AutoCAD DXF illimitées",
+        "userDesc": "Vous avez utilisé vos essais gratuits. Passez à PRO pour des téléchargements illimités de découpes laser et CNC DXF."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator Vecteur",
+        "guestTitle": "Essayez Adobe Illustrator EPS gratuitement",
+        "guestDesc": "Connectez-vous avec Google pour réclamer 2 téléchargements gratuits de vecteurs Adobe EPS pour les emballages et les impressions commerciales.",
+        "userTitle": "Débloquez des exportations Adobe EPS illimitées",
+        "userDesc": "Vous avez utilisé vos essais gratuits. Passez à PRO pour des téléchargements illimités de vecteurs EPS haute résolution."
+      },
+      "mockup": {
+        "badge": "Maquette 3D du monde réel",
+        "guestTitle": "Essayez 3D Mockup Studio gratuitement",
+        "guestDesc": "Connectez-vous avec Google pour réclamer 2 téléchargements gratuits de maquettes commerciales photoréalistes de 1 400 px (acrylique, pochette, vêtements, cordon).",
+        "userTitle": "Débloquez des maquettes 3D illimitées",
+        "userDesc": "Vous avez utilisé vos essais gratuits. Passez à PRO pour des téléchargements illimités de maquettes commerciales de 1 400 px."
+      },
+      "barcode": {
+        "badge": "Code-barres 2D d'entreprise",
+        "guestTitle": "Essayez gratuitement les codes-barres Enterprise 2D",
+        "guestDesc": "Connectez-vous avec Google pour réclamer 2 téléchargements gratuits de codes-barres industriels (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Débloquez des codes-barres 2D illimités",
+        "userDesc": "Vous avez utilisé vos essais gratuits. Passez à PRO pour des exportations illimitées de codes-barres industriels 2D et logistiques."
+      },
+      "frame": {
+        "badge": "Cadre de vitrine CTA",
+        "guestTitle": "Essayez gratuitement les cadres CTA personnalisés",
+        "guestDesc": "Connectez-vous avec Google pour réclamer 2 exportations gratuites de cadres de vitrine CTA personnalisés (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "Débloquez des cadres CTA illimités",
+        "userDesc": "Vous avez utilisé vos essais gratuits. Passez à PRO pour des exportations illimitées de cadres de vitrine CTA personnalisés."
+      },
+      "print": {
+        "badge": "Feuille d'autocollants A4 PDF",
+        "guestTitle": "Essayez A4 Print Studio gratuitement",
+        "guestDesc": "Connectez-vous avec Google pour réclamer 2 téléchargements gratuits de PDF A4 multi-autocollants avec préréglages et repères de coupe Avery.",
+        "userTitle": "Débloquez des PDF d'impression A4 illimités",
+        "userDesc": "Vous avez utilisé vos essais gratuits. Passez à PRO pour obtenir un nombre illimité de feuilles d'autocollants A4 prêtes à imprimer."
+      },
+      "bulk": {
+        "badge": "Compilation CSV par lots",
+        "guestTitle": "Essayez 1 compilation par lots gratuite",
+        "guestDesc": "Connectez-vous avec Google ou par e-mail pour débloquer 1 compilation par lots gratuite avec importation CSV et exportation ZIP.",
+        "userTitle": "Débloquez des compilations par lots illimitées",
+        "userDesc": "Vous avez utilisé votre 1 essai par lots gratuit. Passez à PRO pour des lots CSV et des téléchargements ZIP illimités."
+      },
+      "svg": {
+        "badge": "SVG vectoriel haute résolution",
+        "guestTitle": "Essayez l'exportation SVG vectorielle gratuitement",
+        "guestDesc": "Connectez-vous avec Google pour réclamer 2 téléchargements SVG vectoriels gratuits avec une mise à l'échelle infinie pour l'impression.",
+        "userTitle": "Déverrouiller le SVG vectoriel illimité",
+        "userDesc": "Vous avez utilisé vos 2 exports gratuits. Passez à PRO pour des téléchargements vectoriels SVG et imprimés illimités."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100 % de confidentialité et validité à vie",

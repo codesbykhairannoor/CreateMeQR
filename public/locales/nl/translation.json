@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Ontgrendel onbeperkte batchcompilaties",
     "userBatchDesc": "U heeft uw gratis proefperiode van 1 batch gebruikt. Upgrade naar PRO voor onbeperkte CSV-batches en ZIP-downloads.",
     "googleCta": "Doorgaan met Google (1-klik)",
-    "emailCta": "Of ga verder met E-mail / Wachtwoord"
+    "emailCta": "Of ga verder met E-mail / Wachtwoord",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD-laser en CNC",
+        "guestTitle": "Probeer AutoCAD DXF Lasergesneden gratis",
+        "guestDesc": "Meld u aan bij Google en claim twee gratis AutoCAD R2000 DXF-vectordownloads met nauwkeurige ENGRAVE- en CUT_BORDER-lagen.",
+        "userTitle": "Ontgrendel onbeperkte AutoCAD DXF-exports",
+        "userDesc": "U heeft uw gratis proefversies gebruikt. Upgrade naar PRO voor onbeperkte lasercut- en CNC DXF-downloads."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator-vector",
+        "guestTitle": "Probeer Adobe Illustrator EPS Gratis",
+        "guestDesc": "Meld u aan bij Google en claim twee gratis Adobe EPS-vectordownloads voor commerciële verpakkingen en drukwerk.",
+        "userTitle": "Ontgrendel onbeperkte Adobe EPS-exports",
+        "userDesc": "U heeft uw gratis proefversies gebruikt. Upgrade naar PRO voor onbeperkte EPS-vectordownloads met hoge resolutie."
+      },
+      "mockup": {
+        "badge": "3D-model uit de echte wereld",
+        "guestTitle": "Probeer 3D Mockup Studio gratis",
+        "guestDesc": "Meld u aan bij Google en claim twee gratis 1400px fotorealistische commerciële mockupdownloads (acryl, etui, kleding, sleutelkoord).",
+        "userTitle": "Ontgrendel onbeperkte 3D-modellen",
+        "userDesc": "U heeft uw gratis proefversies gebruikt. Upgrade naar PRO voor onbeperkte commerciële mockup-downloads van 1400px."
+      },
+      "barcode": {
+        "badge": "Enterprise 2D-streepjescode",
+        "guestTitle": "Probeer Enterprise 2D Barcode gratis",
+        "guestDesc": "Meld u aan bij Google en claim twee gratis industriële barcodedownloads (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Ontgrendel onbeperkte 2D-streepjescodes",
+        "userDesc": "U heeft uw gratis proefversies gebruikt. Upgrade naar PRO voor onbeperkte export van industriële 2D- en logistieke barcodes."
+      },
+      "frame": {
+        "badge": "CTA-vitrineframe",
+        "guestTitle": "Probeer gratis aangepaste CTA-frames",
+        "guestDesc": "Meld u aan bij Google en claim twee gratis aangepaste exports van CTA-showcaseframes (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "Ontgrendel onbeperkte CTA-frames",
+        "userDesc": "U heeft uw gratis proefversies gebruikt. Upgrade naar PRO voor onbeperkte export van aangepaste CTA-showcaseframes."
+      },
+      "print": {
+        "badge": "A4 stickervel PDF",
+        "guestTitle": "Probeer A4 Print Studio gratis",
+        "guestDesc": "Meld u aan bij Google en claim twee gratis A4 PDF-downloads met meerdere stickers met Avery-voorinstellingen en snijtekens.",
+        "userTitle": "Ontgrendel onbeperkte A4-print-PDF's",
+        "userDesc": "U heeft uw gratis proefversies gebruikt. Upgrade naar PRO voor onbeperkte printklare A4-stickervel-PDF's."
+      },
+      "bulk": {
+        "badge": "Batch CSV-compilatie",
+        "guestTitle": "Probeer 1 gratis batchcompilatie",
+        "guestDesc": "Meld u aan met Google of e-mail om 1 gratis batchcompilatie te ontgrendelen met CSV-import en ZIP-export.",
+        "userTitle": "Ontgrendel onbeperkte batchcompilaties",
+        "userDesc": "U heeft uw gratis proefperiode van één batch gebruikt. Upgrade naar PRO voor onbeperkte CSV-batches en ZIP-downloads."
+      },
+      "svg": {
+        "badge": "Vector-SVG met hoge resolutie",
+        "guestTitle": "Probeer Vector SVG-export gratis",
+        "guestDesc": "Meld u aan bij Google en claim twee gratis vector-SVG-downloads met oneindige schaling voor afdrukken.",
+        "userTitle": "Ontgrendel onbeperkte vector-SVG",
+        "userDesc": "U heeft uw twee gratis exports gebruikt. Upgrade naar PRO voor onbeperkte vector-SVG- en printdownloads."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100% privacy en levenslange geldigheid",

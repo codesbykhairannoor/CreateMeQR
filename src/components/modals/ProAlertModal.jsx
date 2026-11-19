@@ -1,11 +1,26 @@
 // src/components/modals/ProAlertModal.jsx
-// Ultra-clean Canva/Figma style Micro-Modal (Silicon Valley Standard)
-// Zero walls of text, 1 icon, 1 headline, 1-line benefit, 1 primary action.
+// Silicon Valley Canva/Figma-Style Feature-Responsive Micro-Modal
+// Dynamically adapts icon, badge, headline, and benefit specifically to whichever feature triggered it
+// 100% localized across all 30 languages with 1-click Google sign-in.
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import { X, Crown, ArrowRight, Sparkles, LogIn } from 'lucide-react';
+import {
+  X,
+  Crown,
+  ArrowRight,
+  Sparkles,
+  LogIn,
+  Cpu,
+  FileCode2,
+  FileCode,
+  Box,
+  Frame,
+  Barcode,
+  Printer,
+  Layers
+} from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 
 export default function ProAlertModal() {
@@ -17,7 +32,6 @@ export default function ProAlertModal() {
     closeProModal,
     proModalFeature,
     openAuthModal,
-    freeTrialsRemaining,
     signInWithGoogle
   } = useAuth();
 
@@ -27,11 +41,92 @@ export default function ProAlertModal() {
   const langPrefix = currentLangCode === 'en' ? '' : `/${currentLangCode}`;
 
   const isGuest = !user;
-  const isOutOfTrials = Boolean(user && freeTrialsRemaining <= 0);
-  const isBulk = Boolean(proModalFeature && /batch|bulk/i.test(proModalFeature));
+
+  // Detect which specific feature triggered the modal
+  const detectFeatureType = (featStr = '') => {
+    const s = String(featStr).toLowerCase();
+    if (s.includes('dxf') || s.includes('autocad') || s.includes('laser') || s.includes('cnc')) return 'dxf';
+    if (s.includes('eps') || s.includes('illustrator') || s.includes('postscript')) return 'eps';
+    if (s.includes('mockup') || s.includes('3d')) return 'mockup';
+    if (s.includes('frame') || s.includes('bingkai') || s.includes('cta')) return 'frame';
+    if (s.includes('barcode') || s.includes('datamatrix') || s.includes('pdf417') || s.includes('aztec') || s.includes('gs1') || s.includes('bwipp') || s.includes('enterprise')) return 'barcode';
+    if (s.includes('print') || s.includes('sticker') || s.includes('a4') || s.includes('cetak')) return 'print';
+    if (s.includes('batch') || s.includes('bulk') || s.includes('csv')) return 'bulk';
+    if (s.includes('svg') || s.includes('vektor') || s.includes('vector')) return 'svg';
+    return 'default';
+  };
+
+  const featType = detectFeatureType(proModalFeature);
+  const isBulk = featType === 'bulk';
+
+  // Responsive Icon
+  const renderFeatureIcon = () => {
+    switch (featType) {
+      case 'dxf':
+        return <Cpu className="w-6 h-6 text-blue-200" />;
+      case 'eps':
+        return <FileCode2 className="w-6 h-6 text-indigo-200" />;
+      case 'mockup':
+        return <Box className="w-6 h-6 text-violet-200" />;
+      case 'frame':
+        return <Frame className="w-6 h-6 text-sky-200" />;
+      case 'barcode':
+        return <Barcode className="w-6 h-6 text-amber-200" />;
+      case 'print':
+        return <Printer className="w-6 h-6 text-blue-200" />;
+      case 'bulk':
+        return <Layers className="w-6 h-6 text-emerald-200" />;
+      case 'svg':
+        return <FileCode className="w-6 h-6 text-blue-200" />;
+      default:
+        return isGuest ? <Sparkles className="w-6 h-6 text-blue-200" /> : <Crown className="w-6 h-6 text-white" />;
+    }
+  };
+
+  // Responsive Gradient Accent
+  const getFeatureGradient = () => {
+    switch (featType) {
+      case 'dxf':
+        return 'from-blue-600 to-cyan-600 shadow-blue-500/25';
+      case 'eps':
+        return 'from-indigo-600 to-purple-600 shadow-indigo-500/25';
+      case 'mockup':
+        return 'from-purple-600 to-indigo-600 shadow-purple-500/25';
+      case 'frame':
+        return 'from-sky-600 to-blue-600 shadow-sky-500/25';
+      case 'barcode':
+        return 'from-amber-600 to-orange-600 shadow-amber-500/25';
+      case 'print':
+        return 'from-blue-600 to-indigo-600 shadow-blue-500/25';
+      case 'bulk':
+        return 'from-emerald-600 to-teal-600 shadow-emerald-500/25';
+      default:
+        return 'from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 shadow-blue-600/20';
+    }
+  };
+
+  // Responsive Feature Badge label
+  const featureTag = t(`proMicro.features.${featType}.badge`, '');
+
+  // Responsive Headlines & Descriptions
+  const headline = isGuest
+    ? (featType !== 'default'
+        ? t(`proMicro.features.${featType}.guestTitle`, proModalFeature ? `Try ${proModalFeature} Free` : t('proMicro.guestTitle', 'Claim 2 Free PRO Exports'))
+        : (isBulk ? t('proMicro.guestBatchTitle', 'Try 1 Free Batch Compilation') : t('proMicro.guestTitle', 'Claim 2 Free PRO Exports')))
+    : (featType !== 'default'
+        ? t(`proMicro.features.${featType}.userTitle`, t('proMicro.userTitle', 'Unlock Unlimited Exports'))
+        : (isBulk ? t('proMicro.userBatchTitle', 'Unlock Unlimited Batch Compilations') : t('proMicro.userTitle', 'Unlock Unlimited Exports')));
+
+  const description = isGuest
+    ? (featType !== 'default'
+        ? t(`proMicro.features.${featType}.guestDesc`, t('proMicro.guestDesc', 'Sign in with Google or Email to unlock 2 free vector SVG and print-ready PDF downloads.'))
+        : (isBulk ? t('proMicro.guestBatchDesc', 'Sign in with Google or Email to unlock 1 free batch compilation with CSV import and ZIP export.') : t('proMicro.guestDesc', 'Sign in with Google or Email to unlock 2 free vector SVG and print-ready PDF downloads.')))
+    : (featType !== 'default'
+        ? t(`proMicro.features.${featType}.userDesc`, t('proMicro.userDesc', "You've used your 2 free exports. Upgrade to PRO for unlimited vector SVG and PDF downloads."))
+        : (isBulk ? t('proMicro.userBatchDesc', "You've used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches and ZIP downloads.") : t('proMicro.userDesc', "You've used your 2 free exports. Upgrade to PRO for unlimited vector SVG and PDF downloads.")));
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-md animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/75 backdrop-blur-md animate-fade-in">
       {/* Backdrop */}
       <div
         className="fixed inset-0"
@@ -39,57 +134,57 @@ export default function ProAlertModal() {
         aria-hidden="true"
       />
 
-      {/* Canva / Figma Style Compact Micro-Modal Card (~380px) */}
-      <div className="relative w-full max-w-[380px] bg-white dark:bg-[#081226] border border-slate-200 dark:border-blue-900/40 rounded-3xl shadow-[0_25px_70px_-15px_rgba(0,0,0,0.35)] p-6 z-10 overflow-hidden animate-scale-up text-center">
+      {/* Feature-Responsive Micro-Modal Card (~390px, fully responsive on mobile) */}
+      <div className="relative w-full max-w-[390px] mx-auto bg-white dark:bg-[#081226] border border-slate-200 dark:border-blue-900/40 rounded-3xl shadow-[0_25px_70px_-15px_rgba(0,0,0,0.4)] p-5 sm:p-6 z-10 overflow-hidden animate-scale-up text-center">
 
-        {/* Subtle Ambient Royal Blue Glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-24 bg-blue-600/10 dark:bg-blue-500/15 blur-2xl pointer-events-none rounded-full" />
+        {/* Subtle Ambient Radial Glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-24 bg-blue-600/15 dark:bg-blue-500/20 blur-2xl pointer-events-none rounded-full" />
 
         {/* Minimal Close Button */}
         <button
           onClick={closeProModal}
-          className="absolute top-4 right-4 w-7 h-7 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-400 hover:text-slate-600 dark:hover:text-white flex items-center justify-center transition-colors cursor-pointer"
+          className="absolute top-3.5 right-3.5 sm:top-4 sm:right-4 w-7 h-7 rounded-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-400 hover:text-slate-600 dark:hover:text-white flex items-center justify-center transition-colors cursor-pointer"
           aria-label="Close"
         >
           <X className="w-3.5 h-3.5" />
         </button>
 
-        {/* Clean Center Icon */}
-        <div className="w-12 h-12 mx-auto rounded-2xl bg-gradient-to-tr from-slate-900 to-blue-700 dark:from-blue-600 dark:to-blue-700 text-white flex items-center justify-center shadow-lg shadow-blue-600/20 mb-3.5">
-          {isGuest ? (
-            <Sparkles className="w-6 h-6 text-blue-200" />
-          ) : (
-            <Crown className="w-6 h-6 text-white" />
-          )}
+        {/* Responsive Center Feature Icon */}
+        <div className={`w-12 h-12 mx-auto rounded-2xl bg-gradient-to-tr ${getFeatureGradient()} text-white flex items-center justify-center shadow-lg mb-3`}>
+          {renderFeatureIcon()}
         </div>
 
-        {/* Small Micro-Badge */}
-        <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200/80 dark:border-blue-700/50 text-[10.5px] font-bold uppercase tracking-wider mb-2">
-          <span>
+        {/* Micro-Badges Row */}
+        <div className="flex items-center justify-center gap-1.5 flex-wrap mb-2">
+          {/* Trial / Tier Badge */}
+          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border border-blue-200/80 dark:border-blue-700/50 text-[10.5px] font-bold uppercase tracking-wider">
             {isGuest
               ? (isBulk ? t('proMicro.guestBatchBadge', '✨ 1 Free Batch') : t('proMicro.guestBadge', '✨ 2 Free Exports'))
               : t('proMicro.userBadge', '👑 PRO Feature')}
           </span>
+
+          {/* Contextual Feature Tag Badge */}
+          {featureTag && (
+            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 text-[10px] font-semibold">
+              {featureTag}
+            </span>
+          )}
         </div>
 
-        {/* Punchy Headline (1 line) */}
-        <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1.5 leading-snug">
-          {isGuest
-            ? (isBulk ? t('proMicro.guestBatchTitle', 'Try 1 Free Batch Compilation') : (proModalFeature ? `Try ${proModalFeature} Free` : t('proMicro.guestTitle', 'Claim 2 Free PRO Exports')))
-            : (isBulk ? t('proMicro.userBatchTitle', 'Unlock Unlimited Batch Compilations') : t('proMicro.userTitle', 'Unlock Unlimited Exports'))}
+        {/* Responsive Headline */}
+        <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white mb-1.5 leading-snug px-1">
+          {headline}
         </h3>
 
-        {/* Clean 1-Line Benefit Description */}
-        <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-6 px-1">
-          {isGuest
-            ? (isBulk ? t('proMicro.guestBatchDesc', 'Sign in with Google or Email to unlock 1 free batch compilation with CSV import and ZIP export.') : t('proMicro.guestDesc', 'Sign in with Google or Email to unlock 2 free vector SVG and print-ready PDF downloads.'))
-            : (isBulk ? t('proMicro.userBatchDesc', "You've used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches and ZIP downloads.") : t('proMicro.userDesc', "You've used your 2 free exports. Upgrade to PRO for unlimited vector SVG and PDF downloads."))}
+        {/* Responsive 1-2 Line Benefit Description */}
+        <p className="text-[11.5px] sm:text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-5 sm:mb-6 px-1">
+          {description}
         </p>
 
         {/* Action Buttons */}
         {isGuest ? (
           <div className="space-y-2 mb-2">
-            {/* 1-Click Google Sign In (Primary) */}
+            {/* 1-Click Google Sign In (Primary Action) */}
             <button
               type="button"
               onClick={async () => {
@@ -123,7 +218,7 @@ export default function ProAlertModal() {
               <span>{t('proMicro.googleCta', 'Continue with Google (1-Click)')}</span>
             </button>
 
-            {/* Email Alternative (Secondary) */}
+            {/* Email Alternative (Secondary Action) */}
             <button
               type="button"
               onClick={() => {
@@ -150,7 +245,7 @@ export default function ProAlertModal() {
           </button>
         )}
 
-        {/* Minimal Secondary Text Link */}
+        {/* Minimal Dismiss Link */}
         <button
           type="button"
           onClick={closeProModal}
@@ -163,3 +258,4 @@ export default function ProAlertModal() {
     </div>
   );
 }
+

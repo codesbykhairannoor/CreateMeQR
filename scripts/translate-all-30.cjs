@@ -78,6 +78,66 @@ const newEnKeys = {
       resultTitle: "Decoded Result",
       copyData: "Copy Data"
     }
+  },
+  proMicro: {
+    features: {
+      dxf: {
+        badge: "AutoCAD Laser & CNC",
+        guestTitle: "Try AutoCAD DXF Laser Cut Free",
+        guestDesc: "Sign in with Google to claim 2 free AutoCAD R2000 DXF vector downloads with precision ENGRAVE and CUT_BORDER layers.",
+        userTitle: "Unlock Unlimited AutoCAD DXF Exports",
+        userDesc: "You've used your free trials. Upgrade to PRO for unlimited laser cut & CNC DXF downloads."
+      },
+      eps: {
+        badge: "Adobe Illustrator Vector",
+        guestTitle: "Try Adobe Illustrator EPS Free",
+        guestDesc: "Sign in with Google to claim 2 free Adobe EPS vector downloads for commercial packaging and print.",
+        userTitle: "Unlock Unlimited Adobe EPS Exports",
+        userDesc: "You've used your free trials. Upgrade to PRO for unlimited high-resolution EPS vector downloads."
+      },
+      mockup: {
+        badge: "3D Real-World Mockup",
+        guestTitle: "Try 3D Mockup Studio Free",
+        guestDesc: "Sign in with Google to claim 2 free 1400px photorealistic commercial mockup downloads (Acrylic, Pouch, Apparel, Lanyard).",
+        userTitle: "Unlock Unlimited 3D Mockups",
+        userDesc: "You've used your free trials. Upgrade to PRO for unlimited 1400px commercial mockup downloads."
+      },
+      barcode: {
+        badge: "Enterprise 2D Barcode",
+        guestTitle: "Try Enterprise 2D Barcode Free",
+        guestDesc: "Sign in with Google to claim 2 free industrial barcode downloads (DataMatrix, PDF417, Aztec, GS1-128).",
+        userTitle: "Unlock Unlimited 2D Barcodes",
+        userDesc: "You've used your free trials. Upgrade to PRO for unlimited industrial 2D and logistics barcode exports."
+      },
+      frame: {
+        badge: "CTA Showcase Frame",
+        guestTitle: "Try Custom CTA Frames Free",
+        guestDesc: "Sign in with Google to claim 2 free custom CTA showcase frame exports (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        userTitle: "Unlock Unlimited CTA Frames",
+        userDesc: "You've used your free trials. Upgrade to PRO for unlimited custom CTA showcase frame exports."
+      },
+      print: {
+        badge: "A4 Sticker Sheet PDF",
+        guestTitle: "Try A4 Print Studio Free",
+        guestDesc: "Sign in with Google to claim 2 free multi-sticker A4 PDF downloads with Avery presets and crop marks.",
+        userTitle: "Unlock Unlimited A4 Print PDFs",
+        userDesc: "You've used your free trials. Upgrade to PRO for unlimited print-ready A4 sticker sheet PDFs."
+      },
+      bulk: {
+        badge: "Batch CSV Compilation",
+        guestTitle: "Try 1 Free Batch Compilation",
+        guestDesc: "Sign in with Google or Email to unlock 1 free batch compilation with CSV import and ZIP export.",
+        userTitle: "Unlock Unlimited Batch Compilations",
+        userDesc: "You've used your 1 free batch trial. Upgrade to PRO for unlimited CSV batches and ZIP downloads."
+      },
+      svg: {
+        badge: "High-Res Vector SVG",
+        guestTitle: "Try Vector SVG Export Free",
+        guestDesc: "Sign in with Google to claim 2 free vector SVG downloads with infinite scaling for print.",
+        userTitle: "Unlock Unlimited Vector SVG",
+        userDesc: "You've used your 2 free exports. Upgrade to PRO for unlimited vector SVG and print downloads."
+      }
+    }
   }
 };
 
@@ -149,6 +209,66 @@ const indonesianCurated = {
     workspace: {
       resultTitle: "Hasil Dekode",
       copyData: "Salin Data"
+    }
+  },
+  proMicro: {
+    features: {
+      dxf: {
+        badge: "Laser & CNC AutoCAD",
+        guestTitle: "Coba Ekspor AutoCAD DXF Gratis",
+        guestDesc: "Masuk dengan Google untuk klaim 2x ekspor vektor AutoCAD R2000 DXF gratis dengan layer presisi ENGRAVE dan CUT_BORDER.",
+        userTitle: "Buka Ekspor AutoCAD DXF Tanpa Batas",
+        userDesc: "Anda telah menggunakan kuota gratis. Upgrade ke PRO untuk unduh vektor DXF laser cut & CNC tanpa batas."
+      },
+      eps: {
+        badge: "Vektor Adobe Illustrator",
+        guestTitle: "Coba Ekspor Adobe EPS Gratis",
+        guestDesc: "Masuk dengan Google untuk klaim 2x ekspor vektor Adobe EPS gratis untuk kemasan dan percetakan komersial.",
+        userTitle: "Buka Ekspor Adobe EPS Tanpa Batas",
+        userDesc: "Anda telah menggunakan kuota gratis. Upgrade ke PRO untuk unduh vektor EPS resolusi tinggi tanpa batas."
+      },
+      mockup: {
+        badge: "Studio Mockup 3D",
+        guestTitle: "Coba Studio Mockup 3D Gratis",
+        guestDesc: "Masuk dengan Google untuk klaim 2x unduh mockup komersial fotorealistik 1400px gratis (Akrilik, Pouch, Kaos, ID Card).",
+        userTitle: "Buka Studio Mockup 3D Tanpa Batas",
+        userDesc: "Anda telah menggunakan kuota gratis. Upgrade ke PRO untuk unduh mockup komersial 1400px tanpa batas."
+      },
+      barcode: {
+        badge: "Barcode 2D Enterprise",
+        guestTitle: "Coba Barcode 2D Enterprise Gratis",
+        guestDesc: "Masuk dengan Google untuk klaim 2x unduh barcode industri gratis (DataMatrix, PDF417, Aztec, GS1-128).",
+        userTitle: "Buka Barcode 2D Enterprise Tanpa Batas",
+        userDesc: "Anda telah menggunakan kuota gratis. Upgrade ke PRO untuk ekspor barcode 2D dan logistik tanpa batas."
+      },
+      frame: {
+        badge: "Bingkai Showcase CTA",
+        guestTitle: "Coba Bingkai CTA Kustom Gratis",
+        guestDesc: "Masuk dengan Google untuk klaim 2x ekspor bingkai CTA kustom gratis (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        userTitle: "Buka Bingkai CTA Tanpa Batas",
+        userDesc: "Anda telah menggunakan kuota gratis. Upgrade ke PRO untuk ekspor bingkai CTA kustom tanpa batas."
+      },
+      print: {
+        badge: "Stiker A4 Cetak PDF",
+        guestTitle: "Coba Studio Cetak A4 Gratis",
+        guestDesc: "Masuk dengan Google untuk klaim 2x unduh lembar stiker A4 PDF gratis dengan preset Avery dan garis potong.",
+        userTitle: "Buka Studio Cetak A4 Tanpa Batas",
+        userDesc: "Anda telah menggunakan kuota gratis. Upgrade ke PRO untuk cetak lembar stiker A4 PDF tanpa batas."
+      },
+      bulk: {
+        badge: "Kompilasi Massal CSV",
+        guestTitle: "Coba 1x Kompilasi Massal Gratis",
+        guestDesc: "Masuk dengan Google atau Email untuk membuka 1x kompilasi massal gratis dengan impor CSV dan ekspor ZIP.",
+        userTitle: "Buka Kompilasi Massal Tanpa Batas",
+        userDesc: "Anda telah menggunakan 1x uji coba batch. Upgrade ke PRO untuk batch CSV dan unduh ZIP tanpa batas."
+      },
+      svg: {
+        badge: "Vektor SVG Resolusi Tinggi",
+        guestTitle: "Coba Ekspor Vektor SVG Gratis",
+        guestDesc: "Masuk dengan Google untuk klaim 2x unduh vektor SVG gratis dengan resolusi tak terbatas untuk cetak.",
+        userTitle: "Buka Ekspor Vektor SVG Tanpa Batas",
+        userDesc: "Anda telah menggunakan 2x ekspor gratis. Upgrade ke PRO untuk unduh vektor SVG dan PDF tanpa batas."
+      }
     }
   }
 };

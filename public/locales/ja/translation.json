@@ -2072,7 +2072,65 @@
     "userBatchTitle": "無制限のバッチ コンパイルのロックを解除する",
     "userBatchDesc": "1 つの無料バッチトライアルを使用しました。 PRO にアップグレードすると、CSV バッチと ZIP を無制限にダウンロードできます。",
     "googleCta": "Google で続行 (1-Click)",
-    "emailCta": "または、電子メール/パスワードで続行します"
+    "emailCta": "または、電子メール/パスワードで続行します",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD レーザーと CNC",
+        "guestTitle": "AutoCAD DXF Laser Cut を無料でお試しください",
+        "guestDesc": "Google でサインインすると、高精度の ENGRAVE レイヤーと CUT_BORDER レイヤーを備えた AutoCAD R2000 DXF ベクターのダウンロードを 2 つ無料で入手できます。",
+        "userTitle": "無制限の AutoCAD DXF エクスポートのロックを解除する",
+        "userDesc": "無料トライアルを利用しました。 PRO にアップグレードすると、レーザー カットと CNC DXF を無制限にダウンロードできます。"
+      },
+      "eps": {
+        "badge": "Adobe Illustrator ベクトル",
+        "guestTitle": "Adobe Illustrator EPSを無料でお試しください",
+        "guestDesc": "Google でサインインすると、商用パッケージおよび印刷用に 2 つの Adobe EPS ベクターを無料でダウンロードできます。",
+        "userTitle": "無制限の Adobe EPS エクスポートのロックを解除する",
+        "userDesc": "無料トライアルを利用しました。 PRO にアップグレードすると、高解像度 EPS ベクターを無制限にダウンロードできます。"
+      },
+      "mockup": {
+        "badge": "3D 現実世界のモックアップ",
+        "guestTitle": "3D モックアップ スタジオを無料でお試しください",
+        "guestDesc": "Google でサインインすると、1400 ピクセルのフォトリアルな商用モックアップを 2 つ無料でダウンロードできます (アクリル、ポーチ、アパレル、ストラップ)。",
+        "userTitle": "無制限の 3D モックアップのロックを解除する",
+        "userDesc": "無料トライアルを利用しました。 PRO にアップグレードすると、1400 ピクセルの商用モックアップを無制限にダウンロードできます。"
+      },
+      "barcode": {
+        "badge": "エンタープライズ 2D バーコード",
+        "guestTitle": "Enterprise 2D バーコードを無料でお試しください",
+        "guestDesc": "Google でサインインすると、2 つの無料の工業用バーコード ダウンロード (DataMatrix、PDF417、Aztec、GS1-128) を請求できます。",
+        "userTitle": "無制限の 2D バーコードのロックを解除する",
+        "userDesc": "無料トライアルを利用しました。 PRO にアップグレードすると、無制限の産業用 2D および物流バーコードをエクスポートできます。"
+      },
+      "frame": {
+        "badge": "CTA ショーケース フレーム",
+        "guestTitle": "カスタム CTA フレームを無料で試す",
+        "guestDesc": "Google でサインインして、2 つの無料のカスタム CTA ショーケース フレーム エクスポート (ボトム ピル、ポラロイド、電話スタンド、バナー) を請求します。",
+        "userTitle": "無制限の CTA フレームのロックを解除する",
+        "userDesc": "無料トライアルを利用しました。 PRO にアップグレードすると、無制限のカスタム CTA ショーケース フレームをエクスポートできます。"
+      },
+      "print": {
+        "badge": "A4ステッカーシートPDF",
+        "guestTitle": "A4 Print Studioを無料でお試しください",
+        "guestDesc": "Google でサインインすると、Avery プリセットとクロップマークを含む 2 つの無料マルチステッカー A4 PDF ダウンロードを請求できます。",
+        "userTitle": "無制限の A4 印刷 PDF のロックを解除する",
+        "userDesc": "無料トライアルを利用しました。 PRO にアップグレードすると、印刷可能な A4 ステッカー シート PDF を無制限に利用できます。"
+      },
+      "bulk": {
+        "badge": "CSV のバッチ コンパイル",
+        "guestTitle": "無料のバッチ コンパイルを 1 つお試しください",
+        "guestDesc": "Google または電子メールでサインインすると、CSV インポートと ZIP エクスポートによる 1 つの無料バッチ コンパイルのロックが解除されます。",
+        "userTitle": "無制限のバッチ コンパイルのロックを解除する",
+        "userDesc": "1 つの無料バッチトライアルを使用しました。 PRO にアップグレードすると、CSV バッチと ZIP を無制限にダウンロードできます。"
+      },
+      "svg": {
+        "badge": "高解像度ベクター SVG",
+        "guestTitle": "Vector SVG エクスポートを無料でお試しください",
+        "guestDesc": "Google でサインインすると、印刷用に無限の拡大縮小が可能なベクター SVG を 2 つ無料でダウンロードできます。",
+        "userTitle": "無制限のベクター SVG のロックを解除する",
+        "userDesc": "2 つの無料エクスポートを使用しました。 PRO にアップグレードすると、ベクター SVG と印刷物を無制限にダウンロードできます。"
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100% プライバシーと生涯有効性",

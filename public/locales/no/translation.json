@@ -2072,7 +2072,65 @@
     "userBatchTitle": "Lås opp ubegrensede batch-samlinger",
     "userBatchDesc": "Du har brukt 1 gratis batch-prøveversjon. Oppgrader til PRO for ubegrensede CSV-batcher og ZIP-nedlastinger.",
     "googleCta": "Fortsett med Google (1-klikk)",
-    "emailCta": "Eller fortsett med e-post/passord"
+    "emailCta": "Eller fortsett med e-post/passord",
+    "features": {
+      "dxf": {
+        "badge": "AutoCAD Laser og CNC",
+        "guestTitle": "Prøv AutoCAD DXF Laser Cut Free",
+        "guestDesc": "Logg på med Google for å kreve 2 gratis AutoCAD R2000 DXF-vektornedlastinger med presisjons ENGRAVE- og CUT_BORDER-lag.",
+        "userTitle": "Lås opp ubegrenset AutoCAD DXF-eksport",
+        "userDesc": "Du har brukt dine gratis prøveversjoner. Oppgrader til PRO for ubegrenset laserskjæring og CNC DXF-nedlastinger."
+      },
+      "eps": {
+        "badge": "Adobe Illustrator Vector",
+        "guestTitle": "Prøv Adobe Illustrator EPS Free",
+        "guestDesc": "Logg på med Google for å kreve 2 gratis Adobe EPS-vektornedlastinger for kommersiell pakking og utskrift.",
+        "userTitle": "Lås opp ubegrenset Adobe EPS-eksport",
+        "userDesc": "Du har brukt dine gratis prøveversjoner. Oppgrader til PRO for ubegrensede EPS-vektornedlastinger med høy oppløsning."
+      },
+      "mockup": {
+        "badge": "3D-mockup fra den virkelige verden",
+        "guestTitle": "Prøv 3D Mockup Studio Free",
+        "guestDesc": "Logg på med Google for å kreve 2 gratis 1400px fotorealistiske kommersielle mockup-nedlastinger (akryl, veske, klær, snor).",
+        "userTitle": "Lås opp ubegrensede 3D-modeller",
+        "userDesc": "Du har brukt dine gratis prøveversjoner. Oppgrader til PRO for ubegrensede 1400px kommersielle mockup-nedlastinger."
+      },
+      "barcode": {
+        "badge": "Enterprise 2D strekkode",
+        "guestTitle": "Prøv Enterprise 2D Barcode Free",
+        "guestDesc": "Logg på med Google for å kreve 2 gratis industrielle strekkodenedlastinger (DataMatrix, PDF417, Aztec, GS1-128).",
+        "userTitle": "Lås opp ubegrenset 2D-strekkoder",
+        "userDesc": "Du har brukt dine gratis prøveversjoner. Oppgrader til PRO for ubegrenset industriell 2D- og logistikkstrekkodeeksport."
+      },
+      "frame": {
+        "badge": "CTA utstillingsramme",
+        "guestTitle": "Prøv egendefinerte CTA-rammer gratis",
+        "guestDesc": "Logg på med Google for å gjøre krav på 2 gratis egendefinerte CTA-utstillingsrammeeksporter (Bottom Pill, Polaroid, Phone Stand, Banner).",
+        "userTitle": "Lås opp ubegrensede CTA-rammer",
+        "userDesc": "Du har brukt dine gratis prøveversjoner. Oppgrader til PRO for ubegrenset eksport av egendefinerte CTA-utstillingsrammer."
+      },
+      "print": {
+        "badge": "A4-klistremerkeark PDF",
+        "guestTitle": "Prøv A4 Print Studio gratis",
+        "guestDesc": "Logg på med Google for å kreve 2 gratis A4 PDF-nedlastinger med flere klistremerker med forhåndsinnstillinger av Avery og skjæremerker.",
+        "userTitle": "Lås opp ubegrensede A4-utskrifts-PDF-er",
+        "userDesc": "Du har brukt dine gratis prøveversjoner. Oppgrader til PRO for ubegrenset utskriftsklare A4-klistremerkeark PDF-er."
+      },
+      "bulk": {
+        "badge": "Batch CSV-kompilering",
+        "guestTitle": "Prøv 1 gratis batch-samling",
+        "guestDesc": "Logg på med Google eller e-post for å låse opp 1 gratis batch-kompilering med CSV-import og ZIP-eksport.",
+        "userTitle": "Lås opp ubegrensede batch-samlinger",
+        "userDesc": "Du har brukt 1 gratis batch-prøveversjon. Oppgrader til PRO for ubegrensede CSV-batcher og ZIP-nedlastinger."
+      },
+      "svg": {
+        "badge": "Høyoppløselig vektor SVG",
+        "guestTitle": "Prøv Vector SVG Export Free",
+        "guestDesc": "Logg på med Google for å kreve 2 gratis vektor SVG-nedlastinger med uendelig skalering for utskrift.",
+        "userTitle": "Lås opp ubegrenset vektor SVG",
+        "userDesc": "Du har brukt de to gratis eksportene dine. Oppgrader til PRO for ubegrenset vektor SVG og utskriftsnedlastinger."
+      }
+    }
   },
   "formHints": {
     "zeroServerTitle": "100 % personvern og livstidsgyldighet",
