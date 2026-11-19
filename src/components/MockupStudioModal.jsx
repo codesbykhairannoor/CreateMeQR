@@ -398,7 +398,7 @@ export default function MockupStudioModal({ isOpen, onClose, qrCanvasUrl, defaul
                     }`}
                   >
                     <Icon className="w-4 h-4 shrink-0" />
-                    <span>{scene.label}</span>
+                    <span>{t(`mockup.scenes.${scene.id}`, scene.label)}</span>
                   </button>
                 );
               })}

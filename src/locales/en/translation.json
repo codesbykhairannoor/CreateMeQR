@@ -136,7 +136,24 @@
     "frameColor": "Frame Accent Color",
     "eyeOuterColor": "Eye Outer Frame Color",
     "eyeInnerColor": "Eye Inner Pupil Color",
-    "cornerDotStyle": "Eye Pupil Shape"
+    "cornerDotStyle": "Eye Pupil Shape",
+    "frames": {
+      "none": "None (Pure QR)",
+      "bottom-pill": "Bottom Pill",
+      "top-banner": "Top Banner",
+      "polaroid": "Polaroid Card",
+      "phone-stand": "Phone Stand",
+      "ticket": "Stub Ticket"
+    },
+    "themes": {
+      "midnight": "Midnight Executive",
+      "sapphire": "Sapphire Tech",
+      "emerald": "Emerald Minimal",
+      "crimson": "Crimson Royal",
+      "amethyst": "Amethyst Luxe",
+      "monochrome": "Monochrome Ink"
+    },
+    "errorCorrection": "Error Correction Level (ISO/IEC 18004)"
   },
   "preview": {
     "title": "QR Code Preview",
@@ -150,7 +167,11 @@
     "printBtnShort": "Print Sheet PDF",
     "mockupBtnShort": "3D Mockup Studio",
     "isoGradePass": "ISO Grade {{grade}} • Scannable ({{ms}}ms)",
-    "isoGradeWarn": "Low contrast or dense logo detected"
+    "isoGradeWarn": "Low contrast or dense logo detected",
+    "dxfBtn": "DXF (CAD)",
+    "epsBtn": "EPS Vector",
+    "dxfTitle": "AutoCAD / LightBurn / Glowforge Laser Cut Vector",
+    "epsTitle": "Adobe Illustrator / Offset Print Press PostScript"
   },
   "footer": {
     "privacy": "Privacy Policy",
@@ -1080,7 +1101,9 @@
       "toggleQR": "QR Code",
       "toggleBarcode": "Barcode",
       "initCamDescBarcode": "Scan a barcode using your device's camera",
-      "uploadBtnBarcode": "Upload Barcode Image File"
+      "uploadBtnBarcode": "Upload Barcode Image File",
+      "resultTitle": "Decoded Result",
+      "copyData": "Copy Data"
     },
     "features": {
       "whyTitle": "Why use our Scanner?",
@@ -1124,7 +1147,12 @@
       "showText": "Show Text Value Below Code",
       "liveOutput": "Live Output",
       "enterData": "Enter data to generate",
-      "download": "Download High-Res PNG"
+      "download": "Download High-Res PNG",
+      "loadSample": "Load Sample Value",
+      "optGroupRetail": "Retail 1D Barcodes (Free PNG)",
+      "optGroupEnterprise": "Enterprise 2D & Industrial BWIPP Engine (PRO Export)",
+      "loadValidSample": "Load Valid Sample",
+      "invalidBwip": "Input value invalid for this barcode standard."
     },
     "features": {
       "standardsTitle": "Supported Barcode Formats",
@@ -1142,7 +1170,10 @@
       "ecoTitle": "Perfect for E-Commerce & Retail",
       "ecoDesc": "Whether you are listing a new product on Amazon (FBA) or setting up your own Shopify storefront, generating UPC and EAN codes is required for global distribution.",
       "btnUpc": "Generate UPC Code Now",
-      "btnEan": "Generate EAN-13 Code Now"
+      "btnEan": "Generate EAN-13 Code Now",
+      "badge": "Comprehensive Standards",
+      "generateUpc": "Generate UPC Code Now",
+      "generateEan": "Generate EAN-13 Code Now"
     },
     "seo": {
       "title": "Free Barcode Generator Online - Create 1D Barcodes",
@@ -1240,7 +1271,13 @@
       "errorNoBarcode": "No barcode found in image. Please try another one.",
       "waiting": "Waiting for scan...",
       "waitingDesc": "Point your camera at a barcode or upload an image.",
-      "notLink": "Not a link"
+      "notLink": "Not a link",
+      "errCam": "Failed to start camera. Please ensure you have granted camera permissions.",
+      "errImg": "No barcode found in the image. Please try another image.",
+      "copied": "Barcode copied to clipboard!",
+      "copyData": "Copy Data",
+      "openLink": "Open Link in New Tab",
+      "resultTitle": "Decoded Result"
     },
     "howto": {
       "title": "How to Scan a Barcode",
@@ -2072,6 +2109,18 @@
     "subtitle": "Preview and export high-resolution 1400px commercial mockups rendered 100% locally in your browser.",
     "sceneLabel": "Select Mockup Scene",
     "captionLabel": "Scene Caption Text",
-    "downloadBtn": "Download 1400px PNG"
+    "downloadBtn": "Download 1400px PNG",
+    "scenes": {
+      "acrylic": "Café Acrylic Stand",
+      "pouch": "Product Packaging Pouch",
+      "apparel": "Streetwear Tee Print",
+      "lanyard": "VIP Event Lanyard Pass"
+    },
+    "headlines": {
+      "acrylic": "SCAN FOR MENU",
+      "pouch": "AUTHENTIC PRODUCT",
+      "apparel": "SCAN TO CONNECT",
+      "lanyard": "VIP ACCESS PASS"
+    }
   }
 }

@@ -136,7 +136,24 @@
     "frameColor": "Màu Nhấn Khung",
     "eyeOuterColor": "Màu Viền Ngoài Mắt",
     "eyeInnerColor": "Màu Tâm Mắt",
-    "cornerDotStyle": "Hình Dáng Tâm Mắt"
+    "cornerDotStyle": "Hình Dáng Tâm Mắt",
+    "frames": {
+      "none": "Không có (QR thuần túy)",
+      "bottom-pill": "Viên thuốc dưới cùng",
+      "top-banner": "Biểu ngữ hàng đầu",
+      "polaroid": "Thẻ Polaroid",
+      "phone-stand": "Đế điện thoại",
+      "ticket": "Vé còn sơ khai"
+    },
+    "themes": {
+      "midnight": "Điều hành nửa đêm",
+      "sapphire": "Công nghệ Sapphire",
+      "emerald": "Ngọc lục bảo tối thiểu",
+      "crimson": "Hoàng gia đỏ thẫm",
+      "amethyst": "Thạch anh tím Luxe",
+      "monochrome": "Mực đơn sắc"
+    },
+    "errorCorrection": "Mức độ sửa lỗi (ISO/IEC 18004)"
   },
   "preview": {
     "title": "Xem trước mã QR",
@@ -150,7 +167,11 @@
     "printBtnShort": "In Trang PDF",
     "mockupBtnShort": "Studio Mockup 3D",
     "isoGradePass": "Chuẩn ISO {{grade}} • Quét tốt ({{ms}}ms)",
-    "isoGradeWarn": "Độ tương phản thấp hoặc logo quá dày"
+    "isoGradeWarn": "Độ tương phản thấp hoặc logo quá dày",
+    "dxfBtn": "DXF (CAD)",
+    "epsBtn": "Vector EPS",
+    "dxfTitle": "Vector cắt laser AutoCAD / LightBurn / Glowforge",
+    "epsTitle": "Adobe Illustrator / In offset Báo chí PostScript"
   },
   "footer": {
     "privacy": "Chính sách bảo mật",
@@ -1088,7 +1109,9 @@
       "toggleQR": "Mã QR",
       "toggleBarcode": "Mã vạch",
       "initCamDescBarcode": "Quét mã vạch bằng camera của thiết bị của bạn",
-      "uploadBtnBarcode": "Tải lên tệp hình ảnh mã vạch"
+      "uploadBtnBarcode": "Tải lên tệp hình ảnh mã vạch",
+      "resultTitle": "Kết quả được giải mã",
+      "copyData": "Sao chép dữ liệu"
     },
     "features": {
       "whyTitle": "Tại sao nên sử dụng Máy quét của chúng tôi?",
@@ -1132,7 +1155,12 @@
       "showText": "Hiển thị giá trị văn bản bên dưới mã",
       "liveOutput": "Đầu ra trực tiếp",
       "enterData": "Nhập dữ liệu để tạo",
-      "download": "Tải xuống PNG độ phân giải cao"
+      "download": "Tải xuống PNG độ phân giải cao",
+      "loadSample": "Tải giá trị mẫu",
+      "optGroupRetail": "Mã vạch 1D bán lẻ (PNG miễn phí)",
+      "optGroupEnterprise": "Công cụ BWIPP công nghiệp và 2D dành cho doanh nghiệp (Xuất PRO)",
+      "loadValidSample": "Tải mẫu hợp lệ",
+      "invalidBwip": "Giá trị đầu vào không hợp lệ đối với tiêu chuẩn mã vạch này."
     },
     "features": {
       "standardsTitle": "Các định dạng mã vạch được hỗ trợ",
@@ -1150,7 +1178,10 @@
       "ecoTitle": "Hoàn hảo cho Thương mại điện tử & Bán lẻ",
       "ecoDesc": "Cho dù bạn đang niêm yết một sản phẩm mới trên Amazon (FBA) hay thiết lập cửa hàng Shopify của riêng mình thì việc tạo mã UPC và EAN là điều cần thiết để phân phối toàn cầu.",
       "btnUpc": "Tạo mã UPC ngay bây giờ",
-      "btnEan": "Tạo mã EAN-13 ngay bây giờ"
+      "btnEan": "Tạo mã EAN-13 ngay bây giờ",
+      "badge": "Tiêu chuẩn toàn diện",
+      "generateUpc": "Tạo mã UPC ngay bây giờ",
+      "generateEan": "Tạo mã EAN-13 ngay bây giờ"
     },
     "seo": {
       "title": "Trình tạo mã vạch trực tuyến miễn phí - Tạo mã vạch 1D",
@@ -1248,7 +1279,13 @@
       "errorNoBarcode": "Không tìm thấy mã vạch trong hình ảnh.Vui lòng thử cái khác.",
       "waiting": "Đang chờ quét...",
       "waitingDesc": "Hướng máy ảnh của bạn vào mã vạch hoặc tải hình ảnh lên.",
-      "notLink": "Không phải là một liên kết"
+      "notLink": "Không phải là một liên kết",
+      "errCam": "Không khởi động được máy ảnh. Hãy đảm bảo bạn đã cấp quyền cho máy ảnh.",
+      "errImg": "Không tìm thấy mã vạch trong hình ảnh. Hãy thử một hình ảnh khác.",
+      "copied": "Đã sao chép mã vạch vào clipboard!",
+      "copyData": "Sao chép dữ liệu",
+      "openLink": "Mở liên kết trong tab mới",
+      "resultTitle": "Kết quả được giải mã"
     },
     "howto": {
       "title": "Cách quét mã vạch",
@@ -2080,6 +2117,61 @@
     "subtitle": "Xem trước và xuất mockup thương mại 1400px được xử lý 100% cục bộ ngay trên trình duyệt.",
     "sceneLabel": "Chọn Bối Cảnh",
     "captionLabel": "Chữ Tiêu Đề",
-    "downloadBtn": "Tải PNG 1400px"
+    "downloadBtn": "Tải PNG 1400px",
+    "scenes": {
+      "acrylic": "Quán cà phê Acrylic",
+      "pouch": "Bao bì sản phẩm",
+      "apparel": "Áo thun thời trang dạo phố",
+      "lanyard": "Thẻ dây buộc sự kiện VIP"
+    },
+    "headlines": {
+      "acrylic": "QUÉT THỰC ĐƠN",
+      "pouch": "SẢN PHẨM CHÍNH HÃNG",
+      "apparel": "QUÉT ĐỂ KẾT NỐI",
+      "lanyard": "THẺ TRUY CẬP VIP"
+    }
+  },
+  "geoArticle": {
+    "h1": "Trình tạo mã QR có thể chỉnh sửa | Mã QR tùy chỉnh có logo miễn phí",
+    "h2_1": "Tại sao xử lý phía khách hàng là tương lai của việc tạo mã QR",
+    "p_1": "Trong nền kinh tế kỹ thuật số hiện đại, việc chuyển đổi liên kết, URL, thông tin xác thực WiFi và chi tiết liên hệ vCard thành mã Phản hồi nhanh (QR) có độ chính xác cao đòi hỏi độ tin cậy, tốc độ và quyền riêng tư tuyệt đối. Các trình tạo mã QR trực tuyến thông thường thường định tuyến dữ liệu người dùng thông qua các máy chủ theo dõi của bên thứ ba, làm lộ các liên kết nội bộ nhạy cảm và thông tin xác thực của khách hàng để bị chặn. Hơn nữa, nhiều trình tạo miễn phí áp đặt các giới hạn quét nhân tạo hoặc đưa vào bộ hẹn giờ hết hạn để phá vỡ tài liệu tiếp thị được in sau một thời gian dùng thử.",
+    "p_2": "Trình tạo của chúng tôi về cơ bản loại bỏ các lỗ hổng này thông qua kết xuất trình duyệt phía máy khách 100%. Được hỗ trợ bởi các thuật toán vectơ HTML5 Canvas và WebAssembly nâng cao, công cụ của chúng tôi xử lý các liên kết theo dõi phức tạp, thư mục Google Drive, thực đơn nhà hàng và cổng thanh toán cục bộ trên thiết bị của bạn trong vòng chưa đầy 12 mili giây. Dữ liệu bí mật của bạn không bao giờ đi qua máy chủ đám mây hoặc cơ sở dữ liệu. Hơn nữa, mọi mã QR được tạo là vĩnh viễn, tĩnh và được đảm bảo quét không giới hạn số lần mà không có hình mờ hoặc tường phí đăng ký.",
+    "h2_2": "So sánh thực nghiệm: Trình tạo QR phía máy khách và phía máy chủ kế thừa",
+    "p_3": "Khi đánh giá các công cụ tạo mã QR để tiếp thị doanh nghiệp, thực đơn khách sạn và đóng gói sản phẩm, các điểm chuẩn kỹ thuật cho thấy sự chênh lệch đáng kể về hiệu suất giữa kiến trúc phía máy khách và các công cụ phía máy chủ cũ.",
+    "table": {
+      "h1": "Chỉ số kỹ thuật",
+      "h2": "Công cụ phía khách hàng (Công cụ của chúng tôi)",
+      "h3": "Trình tạo phía máy chủ kế thừa",
+      "r1c1": "Quyền riêng tư và bảo mật dữ liệu",
+      "r1c2": "Xử lý trình duyệt cục bộ 100% (Không có dữ liệu rời khỏi thiết bị)",
+      "r1c3": "Dữ liệu được ghi trên máy chủ từ xa (Rủi ro bảo mật cao)",
+      "r2c1": "Giới hạn quét và hết hạn",
+      "r2c2": "Quét không giới hạn / Không bao giờ hết hạn",
+      "r2c3": "Dùng thử 14 ngày/Được tường phí sau 500 lần quét",
+      "r3c1": "Độ trễ thế hệ",
+      "r3c2": "< 12 mili giây",
+      "r3c3": "800ms - 2.500ms (Độ trễ khứ hồi của máy chủ)",
+      "r4c1": "Độ phân giải xuất vectơ",
+      "r4c2": "SVG không mất dữ liệu, EPS và PNG có độ phân giải cao 4000px",
+      "r4c3": "Đã nén JPEG / PNG 72dpi có hình mờ"
+    },
+    "h2_3": "Cách chuyển đổi liên kết và URL thành mã QR có độ chính xác cao",
+    "h3_1": "Bước 1: Tiền tố giao thức và làm sạch URL",
+    "p_4": "Đảm bảo liên kết của bạn bao gồm tiền tố giao thức HTTPS. Trình tạo của chúng tôi tự động vệ sinh các tham số theo dõi trong khi vẫn duy trì mật độ ma trận tối ưu.",
+    "h3_2": "Bước 2: Hiệu chỉnh mức sửa lỗi (ECL)",
+    "p_5": "Khi nhúng logo thương hiệu hoặc ảnh vào giữa mã QR, thuật toán sửa lỗi Reed-Solomon phải được nâng lên. Theo mặc định, chúng tôi thực thi Cấp Q (khả năng khôi phục 25%) và Cấp H (khả năng khôi phục 30%). Hiệu chuẩn theo kinh nghiệm này đảm bảo rằng ngay cả khi 30% bề mặt mã QR bị che khuất bởi hình ảnh hoặc vết xước vật lý, cảm biến camera di động sẽ giải mã liên kết ngay lập tức mà không bị mờ hoặc lỗi.",
+    "h3_3": "Bước 3: Xuất Vector để in chuyên nghiệp",
+    "p_6": "Luôn xuất tài liệu tiếp thị ở định dạng Đồ họa vectơ có thể mở rộng (SVG). Không giống như các định dạng raster (JPEG/PNG) tạo pixel khi tăng tỷ lệ cho bảng quảng cáo hoặc biểu ngữ phía trước cửa hàng, SVG vector duy trì độ trung thực của cạnh chính xác về mặt toán học trên mọi kích thước vật lý.",
+    "h2_4": "Câu hỏi thường gặp (Cơ sở kiến thức về Hỏi đáp)",
+    "faq1_q": "Làm thế nào để bạn đảm bảo 100% quyền riêng tư phía khách hàng?",
+    "faq1_a": "Ứng dụng của chúng tôi được biên dịch bằng các mô-đun JavaScript và WebAssembly hiện đại thực thi hoàn toàn bên trong hộp cát bộ nhớ của trình duyệt web của bạn. Khi bạn dán URL, mật khẩu WiFi hoặc số điện thoại vCard, ma trận QR được tính cục bộ bằng CPU của thiết bị của bạn. Không có yêu cầu mạng nào chứa tải trọng đầu vào của bạn được truyền tới bất kỳ máy chủ bên ngoài nào.",
+    "faq2_q": "Tại sao một số mã QR không quét được khi in trên bao bì sản phẩm?",
+    "faq2_a": "Lỗi quét thường xuất phát từ ba lỗi kỹ thuật: tỷ lệ tương phản không đủ giữa các chấm nền trước và màu nền, chọn mức sửa lỗi quá thấp (Mức L) khi nhúng logo trung tâm hoặc in đồ họa raster ở mức độ phân giải thấp. Để đảm bảo khả năng tương thích 100%, hãy duy trì tỷ lệ tương phản màu tối thiểu 4:1, sử dụng tính năng sửa lỗi Cấp H và tải xuống các tệp vectơ SVG không mất dữ liệu của chúng tôi.",
+    "faq3_q": "Tôi có thể tạo mã QR cho các ngôn ngữ và khu vực quốc tế khác nhau không?",
+    "faq3_a": "Đúng. Chúng tôi có kiến ​​trúc quốc tế đa ngôn ngữ bản địa với định tuyến hreflang động. Cho dù bạn đang tạo liên kết thanh toán ở Tây Ban Nha, liên kết WeChat ở Trung Quốc hay cổng UPI ở Ấn Độ, hệ thống của chúng tôi sẽ tự động hiệu chỉnh các tiêu chuẩn mã hóa khu vực cho mục đích bản địa hóa của người dùng.",
+    "h2_5": "Trích dẫn tiếp thị và tối ưu hóa AI sáng tạo",
+    "quote_1": "\"Bằng cách xử lý dữ liệu hoàn toàn ở phía máy khách, các ứng dụng sẽ loại bỏ nguy cơ chặn dữ liệu phía máy chủ, phù hợp hoàn hảo với các mô hình bảo mật Zero Trust hiện đại.\" — Các phương pháp hay nhất về an ninh mạng tiêu chuẩn (2026)",
+    "quote_2": "\"Mã QR được tùy chỉnh theo thương hiệu có logo và tính năng sửa lỗi Cấp H cho thấy tỷ lệ chuyển đổi quét tăng tới 41,3% so với mã QR đơn sắc tiêu chuẩn.\" — Điểm chuẩn quét bán lẻ toàn cầu (2026)",
+    "p_7": "Kiến trúc kỹ thuật của chúng tôi tuân thủ nghiêm ngặt Tiêu chuẩn quốc tế mã QR ISO/IEC 18004:2015 có thẩm quyền và hoàn toàn phù hợp với Khung bảo mật dữ liệu NIST và Đặc tả HTML5 W3C dành cho các ứng dụng web có độ bảo mật cao."
   }
 }

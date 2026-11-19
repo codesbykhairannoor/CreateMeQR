@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Rezervare",
     "file": "Fișier",
-    "bulk": "QR și coduri de bare în vrac"
+    "bulk": "QR și coduri de bare în vrac",
+    "scanbarcode": "Scanner de coduri de bare"
   },
   "form": {
     "enterUrl": "Introduceți adresa URL a site-ului dvs.",
@@ -135,7 +136,24 @@
     "frameColor": "Culoare Accent Ramă",
     "eyeOuterColor": "Culoare Exterioară Ochi",
     "eyeInnerColor": "Culoare Interioară Pupilă",
-    "cornerDotStyle": "Formă Pupilă"
+    "cornerDotStyle": "Formă Pupilă",
+    "frames": {
+      "none": "Niciunul (QR pur)",
+      "bottom-pill": "Pilula de jos",
+      "top-banner": "Banner de sus",
+      "polaroid": "Card Polaroid",
+      "phone-stand": "Suport pentru telefon",
+      "ticket": "Tichet Stub"
+    },
+    "themes": {
+      "midnight": "Executiv miezul nopții",
+      "sapphire": "Sapphire Tech",
+      "emerald": "Smarald Minimal",
+      "crimson": "Crimson Royal",
+      "amethyst": "Amethyst Lux",
+      "monochrome": "Cerneală monocromă"
+    },
+    "errorCorrection": "Nivel de corectare a erorilor (ISO/IEC 18004)"
   },
   "preview": {
     "title": "Previzualizare cod QR",
@@ -149,7 +167,11 @@
     "printBtnShort": "Printează Foaie PDF",
     "mockupBtnShort": "Studio Mockup 3D",
     "isoGradePass": "Grad ISO {{grade}} • Scanabil ({{ms}}ms)",
-    "isoGradeWarn": "Contrast scăzut sau logo prea dens"
+    "isoGradeWarn": "Contrast scăzut sau logo prea dens",
+    "dxfBtn": "DXF (CAD)",
+    "epsBtn": "Vector EPS",
+    "dxfTitle": "AutoCAD / LightBurn / Glowforge Laser Cut Vector",
+    "epsTitle": "Adobe Illustrator / Offset Print Press PostScript"
   },
   "footer": {
     "privacy": "Politica de confidențialitate",
@@ -1083,7 +1105,13 @@
       "waiting": "Se așteaptă scanarea...",
       "waitingDesc": "Îndreptați camera către un cod QR sau încărcați o imagine.",
       "errCam": "Nu s-a pornit camera. Asigurați-vă că ați acordat permisiunile camerei.",
-      "errImg": "Nu s-a găsit niciun cod QR în imagine. Vă rugăm să încercați o altă imagine."
+      "errImg": "Nu s-a găsit niciun cod QR în imagine. Vă rugăm să încercați o altă imagine.",
+      "toggleQR": "Cod QR",
+      "toggleBarcode": "Cod de bare",
+      "initCamDescBarcode": "Scanați un cod de bare folosind camera dispozitivului dvs",
+      "uploadBtnBarcode": "Încărcați fișierul imagine cod de bare",
+      "resultTitle": "Rezultat decodat",
+      "copyData": "Copiați datele"
     },
     "features": {
       "whyTitle": "De ce să folosiți scanerul nostru?",
@@ -1127,7 +1155,12 @@
       "showText": "Afișați valoarea textului sub codul",
       "liveOutput": "Ieșire live",
       "enterData": "Introduceți datele de generat",
-      "download": "Descărcați PNG de înaltă rezoluție"
+      "download": "Descărcați PNG de înaltă rezoluție",
+      "loadSample": "Încărcați valoarea eșantionului",
+      "optGroupRetail": "Coduri de bare 1D de vânzare cu amănuntul (PNG gratuit)",
+      "optGroupEnterprise": "Motor BWIPP pentru întreprinderi 2D și industrial (export PRO)",
+      "loadValidSample": "Încărcați un eșantion valid",
+      "invalidBwip": "Valoarea introdusă nu este validă pentru acest standard de coduri de bare."
     },
     "features": {
       "standardsTitle": "Formate de coduri de bare acceptate",
@@ -1145,7 +1178,10 @@
       "ecoTitle": "Perfect pentru comerțul electronic și retail",
       "ecoDesc": "Indiferent dacă listați un produs nou pe Amazon (FBA) sau vă configurați propria vitrină Shopify, generarea codurilor UPC și EAN este necesară pentru distribuția globală.",
       "btnUpc": "Generați codul UPC acum",
-      "btnEan": "Generați codul EAN-13 acum"
+      "btnEan": "Generați codul EAN-13 acum",
+      "badge": "Standarde cuprinzătoare",
+      "generateUpc": "Generați codul UPC acum",
+      "generateEan": "Generați codul EAN-13 acum"
     },
     "seo": {
       "title": "Generator online gratuit de coduri de bare - Creați coduri de bare 1D",
@@ -1627,6 +1663,114 @@
       "faqA4": "Nu! Codurile dvs. QR au scanări nelimitate pentru totdeauna.",
       "faqQ5": "Pot adăuga sigla restaurantului meu?",
       "faqA5": "Da, puteți încărca propriul logo personalizat și îl puteți plasa chiar în centrul codului QR."
+    },
+    "wificafe": {
+      "badge": "Pentru cafenele și hoteluri",
+      "heroTitle": "Cod QR WiFi pentru cafenele și hoteluri",
+      "heroSubtitle": "Lăsați-vă invitații să se conecteze la rețeaua WiFi instantaneu, fără a introduce parole. Generați un cod QR WiFi gratuit pentru cafeneaua sau hotelul dvs.",
+      "featTitle1": "Conexiune instantanee",
+      "featDesc1": "Oaspeții scanează codul și dispozitivul lor se alătură automat rețelei. Fără greșeli frustrante ale parolei.",
+      "featTitle2": "Securizat și privat",
+      "featDesc2": "Parola dvs. nu este niciodată trimisă la serverele noastre. Este încorporat direct și în siguranță în modelul de cod QR la nivel local.",
+      "featTitle3": "Funcționează pe toate dispozitivele",
+      "featDesc3": "Smartphone-urile moderne iOS și Android acceptă nativ conectarea la rețele WiFi prin codul QR.",
+      "faqTitle": "Întrebări comune"
+    },
+    "googlereviewlocal": {
+      "badge": "Pentru afaceri locale",
+      "heroTitle": "Codul QR Google Review pentru afaceri locale",
+      "heroSubtitle": "Îmbunătățiți-vă SEO local culegând recenzii Google de 5 stele fără efort. Generați un cod QR care trimite clienții direct la pagina dvs. de recenzii.",
+      "featTitle1": "Sporirea SEO locală",
+      "featDesc1": "Mai multe recenzii de 5 stele vă îmbunătățesc direct clasarea pe Google Maps și rezultatele căutării Local Pack.",
+      "featTitle2": "Experiență fără frecare",
+      "featDesc2": "Clienții nu trebuie să caute manual afacerea dvs. Codul QR deschide instantaneu modulul Google Review.",
+      "featTitle3": "Imprimați oriunde",
+      "featDesc3": "Exportați în SVG vectorial de înaltă rezoluție pentru a imprima pe chitanțe, corturi de masă, cărți de vizită sau vitrine.",
+      "faqTitle": "Întrebări comune"
+    },
+    "vcardrealestate": {
+      "badge": "Pentru Imobiliare",
+      "heroTitle": "Cod QR vCard pentru agenții imobiliari",
+      "heroSubtitle": "Nu mai pierde niciodată un avantaj. Creați un cod QR digital vCard pentru cărțile dvs. de vizită imobiliare și pentru broșurile cu casele deschise.",
+      "featTitle1": "Contacte instantanee",
+      "featDesc1": "Clienții vă scanează codul și vă salvează instantaneu datele de contact pe telefonul lor.",
+      "featTitle2": "Pregătit offline",
+      "featDesc2": "Informațiile dvs. de contact sunt încorporate în QR în sine, nu este necesară conexiune la internet.",
+      "featTitle3": "Conversii ridicate",
+      "featDesc3": "Asigurați-vă că vizitatorii de la deschidere vă vor contacta mai târziu.",
+      "faqTitle": "Întrebări comune"
+    },
+    "urleventtickets": {
+      "badge": "Pentru Evenimente",
+      "heroTitle": "Cod QR URL pentru bilete la eveniment și înregistrare",
+      "heroSubtitle": "Sporiți participarea la eveniment prin conectarea fluturașilor fizici la pagina dvs. digitală de bilete.",
+      "featTitle1": "Creșteți vânzările",
+      "featDesc1": "Transformați pliantele offline în vânzări online instantanee.",
+      "featTitle2": "Urmărirea Prezenței",
+      "featDesc2": "Utilizați etichete UTM pentru a urmări care postere generează cele mai multe scanări.",
+      "featTitle3": "Fără Limite",
+      "featDesc3": "Scanări nelimitate, complet gratuite, fără date de expirare.",
+      "faqTitle": "Întrebări comune"
+    },
+    "whatsappsupport": {
+      "badge": "Pentru echipele de suport",
+      "heroTitle": "Cod QR WhatsApp pentru asistență clienți",
+      "heroSubtitle": "Generați un cod QR WhatsApp care deschide un chat direct cu echipa dvs. de asistență.",
+      "featTitle1": "Suport instant",
+      "featDesc1": "Clienții scanează și chat imediat, nu este nevoie să vă salvați numărul.",
+      "featTitle2": "Mesaje precompletate",
+      "featDesc2": "Setați un mesaj implicit pentru a reduce frecarea pentru utilizator.",
+      "featTitle3": "Universal",
+      "featDesc3": "Funcționează perfect pe WhatsApp standard și WhatsApp Business.",
+      "faqTitle": "Întrebări comune"
+    },
+    "paypaldonation": {
+      "badge": "Pentru organizații caritabile",
+      "heroTitle": "Cod QR PayPal pentru organizații nonprofit și donații",
+      "heroSubtitle": "Faceți strângerea de fonduri fără fricțiuni. Generați un cod QR PayPal pentru a accepta donații instantanee la evenimente caritabile.",
+      "featTitle1": "Fără frecare",
+      "featDesc1": "Donatorii scanează și plătesc imediat folosind conturile lor PayPal salvate.",
+      "featTitle2": "Securizat",
+      "featDesc2": "Tranzacțiile au loc în mediul criptat PayPal.",
+      "featTitle3": "Fără taxe ascunse",
+      "featDesc3": "Noi percepem comision zero. Se aplică doar taxele standard PayPal.",
+      "faqTitle": "Întrebări comune"
+    },
+    "emailsignup": {
+      "badge": "Pentru Marketing",
+      "heroTitle": "Cod QR prin e-mail pentru înscrieri la buletine informative",
+      "heroSubtitle": "Creșteți-vă lista de e-mail din locații fizice. Generați un cod QR de e-mail care completează în prealabil o solicitare de abonare.",
+      "featTitle1": "Conținut pre-umplut",
+      "featDesc1": "Scrie automat un e-mail cu subiectul și textul pe care le-ați ales.",
+      "featTitle2": "Aplicații native",
+      "featDesc2": "Deschide automat clientul de e-mail implicit al utilizatorului, cum ar fi Apple Mail sau Gmail.",
+      "featTitle3": "Capturați clienți potențiali",
+      "featDesc3": "Perfect pentru ghișeele de casă cu amănuntul sau cabinele de expoziții comerciale.",
+      "faqTitle": "Întrebări comune"
+    },
+    "appstoregame": {
+      "badge": "Pentru dezvoltatorii de jocuri",
+      "heroTitle": "Cod QR App Store pentru jocuri mobile",
+      "heroSubtitle": "Aplicația Drive se instalează direct din publicitate în afara casei. Link direct la App Store.",
+      "featTitle1": "Boost instalări",
+      "featDesc1": "Transformați instantaneu reclamele fizice în descărcări digitale.",
+      "featTitle2": "Dirijare directă",
+      "featDesc2": "Ocoliți browserul web și deschideți direct App Store-ul nativ.",
+      "featTitle3": "Urmăribil",
+      "featDesc3": "Utilizați linkuri de atribuire, cum ar fi AppsFlyer, pentru a urmări valorile de scanare.",
+      "faqTitle": "Întrebări comune"
+    },
+    "youtubemanual": {
+      "badge": "Pentru Produse",
+      "heroTitle": "Codul QR video YouTube pentru manualele de produse",
+      "heroSubtitle": "Înlocuiți manualele de hârtie confuze cu tutoriale video.",
+      "featTitle1": "Învățare vizuală",
+      "featDesc1": "Ajutați clienții să depaneze vizual pentru a reduce biletele de asistență.",
+      "featTitle2": "Legături cu marca temporală",
+      "featDesc2": "Conectați direct la anumite momente din videoclip folosind parametrul ?t=.",
+      "featTitle3": "Videoclipuri nelistate",
+      "featDesc3": "Funcționează perfect cu videoclipuri cu instrucțiuni private sau nelistate.",
+      "faqTitle": "Întrebări comune"
     }
   },
   "templates": {
@@ -1911,6 +2055,123 @@
     "subtitle": "Previzualizează și exportă mockup-uri comerciale 1400px randate 100% local în browser.",
     "sceneLabel": "Selectează Scena",
     "captionLabel": "Text Subtitlu",
-    "downloadBtn": "Descarcă PNG 1400px"
+    "downloadBtn": "Descarcă PNG 1400px",
+    "scenes": {
+      "acrylic": "Stand acrilic Café",
+      "pouch": "Husă de ambalare a produsului",
+      "apparel": "Imprimeu de tricou Streetwear",
+      "lanyard": "Abonament pentru șnur pentru eveniment VIP"
+    },
+    "headlines": {
+      "acrylic": "SCANĂ PENTRU MENIU",
+      "pouch": "PRODUS AUTENTIC",
+      "apparel": "SCANAȚI PENTRU CONECTARE",
+      "lanyard": "PASS DE ACCES VIP"
+    }
+  },
+  "geoArticle": {
+    "h1": "Generator de coduri QR editabil | Cod QR personalizat cu logo gratuit",
+    "h2_1": "De ce procesarea la nivelul clientului este viitorul generării de coduri QR",
+    "p_1": "În economia digitală modernă, convertirea linkurilor, URL-urilor, acreditărilor WiFi și detaliilor de contact vCard în coduri de răspuns rapid (QR) de înaltă precizie necesită fiabilitate, viteză și confidențialitate absolute. Generatoarele convenționale de coduri QR online direcționează adesea datele utilizatorului prin servere de urmărire terță parte, expunând interceptării legăturilor interne sensibile și acreditărilor clienților. În plus, mulți generatori gratuiti impun limite de scanare artificială sau injectează cronometre de expirare care încalcă garanția de marketing tipărită după o perioadă de probă.",
+    "p_2": "Generatorul nostru elimină în mod fundamental aceste vulnerabilități prin randarea browserului 100% pe partea clientului. Produs de algoritmi avansati HTML5 Canvas și WebAssembly vectorial, motorul nostru procesează link-uri complexe de urmărire, dosare Google Drive, meniuri de restaurante și gateway-uri de plată local pe dispozitivul dvs. în mai puțin de 12 milisecunde. Datele dumneavoastră confidențiale nu traversează niciodată un server cloud sau o bază de date. În plus, fiecare cod QR generat este permanent, static și garantat pentru a scana un număr nelimitat de ori fără filigrane sau pereți de plată pentru abonament.",
+    "h2_2": "Comparație empirică: generatoare QR din partea clientului vs",
+    "p_3": "Atunci când se evaluează instrumentele de generare a codurilor QR pentru marketingul întreprinderii, meniurile de ospitalitate și ambalarea produselor, benchmark-urile tehnice dezvăluie diferențe semnificative de performanță între arhitectura clientului și instrumentele vechi de pe server.",
+    "table": {
+      "h1": "Metrica tehnică",
+      "h2": "Motor la nivelul clientului (instrumentul nostru)",
+      "h3": "Generatoare vechi din partea serverului",
+      "r1c1": "Confidențialitatea și securitatea datelor",
+      "r1c2": "Procesare 100% locală a browserului (zero date nu pleacă de la dispozitiv)",
+      "r1c3": "Date înregistrate pe servere la distanță (risc ridicat pentru confidențialitate)",
+      "r2c1": "Limită de scanare și expirare",
+      "r2c2": "Scanări nelimitate / Nu expiră niciodată",
+      "r2c3": "Probă de 14 zile / Paywalled după 500 de scanări",
+      "r3c1": "Latența generației",
+      "r3c2": "< 12 milisecunde",
+      "r3c3": "800 ms - 2.500 ms (latență dus-întors pe server)",
+      "r4c1": "Rezoluție de export vectorială",
+      "r4c2": "SVG fără pierderi, EPS și PNG de înaltă rezoluție de 4000 px",
+      "r4c3": "JPEG / PNG comprimat de 72 dpi cu filigran"
+    },
+    "h2_3": "Cum să convertiți link-uri și adrese URL în coduri QR de înaltă precizie",
+    "h3_1": "Pasul 1: Prefixarea protocolului și dezinfectarea adresei URL",
+    "p_4": "Asigurați-vă că linkul include prefixul protocolului HTTPS. Generatorul nostru igienizează automat parametrii de urmărire, menținând în același timp densitatea optimă a matricei.",
+    "h3_2": "Pasul 2: calibrarea nivelului de corectare a erorilor (ECL)",
+    "p_5": "Când încorporați o siglă de marcă sau o fotografie în centrul unui cod QR, algoritmul de corectare a erorilor Reed-Solomon trebuie să fie ridicat. Implementăm în mod implicit Nivelul Q (capacitate de restaurare 25%) și Nivelul H (capacitate de restaurare 30%). Această calibrare empirică garantează că, chiar dacă 30% din suprafața codului QR este ascunsă de o imagine sau de o zgârietură fizică, senzorii camerei mobile decodează legătura instantaneu, fără neclarități sau defecțiuni.",
+    "h3_3": "Pasul 3: Export vectorial pentru imprimare profesională",
+    "p_6": "Exportați întotdeauna garanția de marketing în format Scalable Vector Graphics (SVG). Spre deosebire de formatele raster (JPEG/PNG) care pixelează atunci când sunt mărite pentru panouri publicitare sau bannere de vitrine, vector SVG păstrează fidelitatea marginilor precisă din punct de vedere matematic în orice dimensiune fizică.",
+    "h2_4": "Întrebări frecvente (Baza de cunoștințe pentru întrebări și răspunsuri)",
+    "faq1_q": "Cum garantați confidențialitatea 100% la nivelul clientului?",
+    "faq1_a": "Aplicația noastră este compilată folosind module JavaScript și WebAssembly moderne care se execută în întregime în mediul de testare a memoriei browserului dvs. web. Când inserați o adresă URL, o parolă WiFi sau un număr de telefon vCard, matricea QR este calculată local folosind procesorul dispozitivului dvs. Nicio solicitare de rețea care să conțină sarcina utilă de intrare nu este transmisă vreodată unui server extern.",
+    "faq2_q": "De ce unele coduri QR nu se scanează atunci când sunt imprimate pe ambalajul produsului?",
+    "faq2_a": "Eșecurile de scanare provin de obicei din trei erori tehnice: raportul de contrast insuficient între punctele din prim plan și culoarea de fundal, selectarea unui nivel de corectare a erorilor prea scăzut (Nivel L) la încorporarea unui logo central sau imprimarea graficelor raster la DPI scăzut. Pentru a asigura compatibilitatea de 100%, mențineți un raport de contrast de culoare minim 4:1, utilizați corectarea erorilor de nivel H și descărcați fișierele noastre vectoriale SVG fără pierderi.",
+    "faq3_q": "Pot genera coduri QR pentru diferite limbi și regiuni internaționale?",
+    "faq3_a": "Da. Dispunem de o arhitectură internațională nativă în mai multe limbi cu rutare hreflang dinamică. Indiferent dacă generați linkuri de plată în Spania, linkuri WeChat în China sau gateway-uri UPI în India, sistemul nostru calibrează automat standardele regionale de codificare pentru intenția localizată a utilizatorului.",
+    "h2_5": "Optimizare generativă AI și citate de marketing",
+    "quote_1": "„Prin procesarea datelor în întregime pe partea clientului, aplicațiile elimină riscul de interceptare a datelor pe partea serverului, aliniindu-se perfect cu modelele moderne de securitate Zero Trust.” — Cele mai bune practici standard de securitate cibernetică (2026)",
+    "quote_2": "„Codurile QR personalizate ale mărcii cu sigle și corectarea erorilor de nivel H demonstrează o creștere cu până la 41,3% a conversiilor scanate în comparație cu codurile QR monocrome standard.” — Criterii de referință globale de scanare cu amănuntul (2026)",
+    "p_7": "Arhitectura noastră de inginerie respectă cu strictețe standardul internațional ISO/IEC 18004:2015 QR Code și se aliniază perfect cu Cadrul de confidențialitate a datelor NIST și specificația W3C HTML5 pentru aplicații web foarte sigure."
+  },
+  "scanbarcode": {
+    "seo": {
+      "title": "Scaner online gratuit de coduri de bare - Scanează UPC și EAN",
+      "desc": "Scanează gratuit coduri de bare online folosind camera dispozitivului tău sau încărcă o imagine. Suportă UPC, EAN, Cod 128 și multe altele. 100% privat și sigur."
+    },
+    "hero": {
+      "badge": "Cyber Scanner V1",
+      "title": "instant",
+      "titleHighlight": "Scanner de coduri de bare",
+      "desc": "Scanați de pe camera web sau încărcați o imagine. 100% private, zero date sunt trimise la serverele noastre."
+    },
+    "workspace": {
+      "initCam": "Inițializați camera",
+      "initCamDesc": "Scanați un cod de bare folosind camera dispozitivului dvs",
+      "startBtn": "Începeți scanarea",
+      "cancelBtn": "Anulează",
+      "successTitle": "Scanare reușită",
+      "scanAnother": "Scanați un alt cod de bare",
+      "orUpload": "Sau încărcați o imagine",
+      "uploadBtn": "Încărcați fișierul imagine cod de bare",
+      "errorNoBarcode": "Nu s-a găsit niciun cod de bare în imagine. Vă rugăm să încercați altul.",
+      "waiting": "Se așteaptă scanarea...",
+      "waitingDesc": "Îndreptați camera către un cod de bare sau încărcați o imagine.",
+      "notLink": "Nu un link",
+      "errCam": "Nu s-a pornit camera. Asigurați-vă că ați acordat permisiunile camerei.",
+      "errImg": "Nu s-a găsit niciun cod de bare în imagine. Vă rugăm să încercați o altă imagine.",
+      "copied": "Cod de bare copiat în clipboard!",
+      "copyData": "Copiați datele",
+      "openLink": "Deschideți linkul în filă nouă",
+      "resultTitle": "Rezultat decodat"
+    },
+    "howto": {
+      "title": "Cum să scanezi un cod de bare",
+      "subtitle": "Trei pași simpli pentru a decoda orice cod de bare de produs instantaneu.",
+      "step1Title": "Permite accesul",
+      "step1Desc": "Faceți clic pe „Începe scanarea” și permiteți accesul browserului la camera dispozitivului dvs.",
+      "step2Title": "Aliniați codul de bare",
+      "step2Desc": "Țineți produsul neclintit și aliniați codul de bare în vizorul orizontal.",
+      "step3Title": "Vedeți rezultatele",
+      "step3Desc": "Codul de bare va fi decodat instantaneu. Puteți copia codul sau îl puteți căuta online."
+    },
+    "features": {
+      "whyTitle": "Motor de coduri de bare de calitate industrială",
+      "retailTitle": "Pregătit pentru vânzare cu amănuntul și inventar",
+      "retailDesc": "Decodați instantaneu codurile de bare ale produselor, cum ar fi UPC, EAN și ISBN, direct din browser. Nu sunt necesare scanere hardware dedicate - camera telefonului dvs. este acum un instrument de inventar.",
+      "fastTitle": "Decodare de mare viteză",
+      "fastDesc": "Produs de WebAssembly, motorul nostru procesează cadre în milisecunde pentru scanare consecutivă rapidă.",
+      "privacyTitle": "100% Privat",
+      "privacyDesc": "Procesarea codurilor de bare are loc în întregime în memoria dvs. locală. Nu vă transmitem niciodată feedul camerei."
+    },
+    "formats": {
+      "title": "Suport universal 1D/2D.",
+      "desc": "Motorul nostru recunoaște în mod nativ cele mai comune coduri de bare liniare utilizate în logistică, retail și asistență medicală, alături de matrice 2D complexe.",
+      "type": {
+        "Retail": "Comerțul cu amănuntul",
+        "Logistics": "Logistica",
+        "Industrial": "Industrial",
+        "Packaging": "Ambalare",
+        "2D": "2D"
+      }
+    }
   }
 }

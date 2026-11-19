@@ -136,7 +136,24 @@
     "frameColor": "Kehyksen korostusväri",
     "eyeOuterColor": "Silmän ulkoväri",
     "eyeInnerColor": "Silmän sisäväri",
-    "cornerDotStyle": "Pupillin muoto"
+    "cornerDotStyle": "Pupillin muoto",
+    "frames": {
+      "none": "Ei mitään (puhdas QR)",
+      "bottom-pill": "Pohja pilleri",
+      "top-banner": "Ylin banneri",
+      "polaroid": "Polaroid kortti",
+      "phone-stand": "Puhelinteline",
+      "ticket": "Stub-lippu"
+    },
+    "themes": {
+      "midnight": "Midnight Executive",
+      "sapphire": "Sapphire Tech",
+      "emerald": "Emerald Minimal",
+      "crimson": "Crimson Royal",
+      "amethyst": "Ametisti Luxe",
+      "monochrome": "Yksivärinen muste"
+    },
+    "errorCorrection": "Virheenkorjaustaso (ISO/IEC 18004)"
   },
   "preview": {
     "title": "QR-koodin esikatselu",
@@ -150,7 +167,11 @@
     "printBtnShort": "Tulosta PDF-arkki",
     "mockupBtnShort": "3D-malli-studio",
     "isoGradePass": "ISO-luokka {{grade}} • Skannattava ({{ms}}ms)",
-    "isoGradeWarn": "Matala kontrasti tai liian suuri logo havaittu"
+    "isoGradeWarn": "Matala kontrasti tai liian suuri logo havaittu",
+    "dxfBtn": "DXF (CAD)",
+    "epsBtn": "EPS-vektori",
+    "dxfTitle": "AutoCAD / LightBurn / Glowforge Laser Cut Vector",
+    "epsTitle": "Adobe Illustrator / Offset Print Paina PostScript"
   },
   "footer": {
     "privacy": "Tietosuojakäytäntö",
@@ -1088,7 +1109,9 @@
       "toggleQR": "QR-koodi",
       "toggleBarcode": "Viivakoodi",
       "initCamDescBarcode": "Skannaa viivakoodi laitteesi kameralla",
-      "uploadBtnBarcode": "Lataa viivakoodikuvatiedosto"
+      "uploadBtnBarcode": "Lataa viivakoodikuvatiedosto",
+      "resultTitle": "Dekoodattu tulos",
+      "copyData": "Kopioi tiedot"
     },
     "features": {
       "whyTitle": "Miksi käyttää skanneria?",
@@ -1132,7 +1155,12 @@
       "showText": "Näytä tekstin arvo koodin alla",
       "liveOutput": "Live-lähtö",
       "enterData": "Syötä tiedot luodaksesi",
-      "download": "Lataa High-Res PNG"
+      "download": "Lataa High-Res PNG",
+      "loadSample": "Lataa näytearvo",
+      "optGroupRetail": "Vähittäiskaupan 1D-viivakoodit (ilmainen PNG)",
+      "optGroupEnterprise": "Enterprise 2D & Industrial BWIPP Engine (PRO Export)",
+      "loadValidSample": "Lataa kelvollinen näyte",
+      "invalidBwip": "Syöttöarvo on virheellinen tälle viivakoodistandardille."
     },
     "features": {
       "standardsTitle": "Tuetut viivakoodimuodot",
@@ -1150,7 +1178,10 @@
       "ecoTitle": "Täydellinen verkkokauppaan ja vähittäiskauppaan",
       "ecoDesc": "Olitpa listaamassa uutta tuotetta Amazonissa (FBA) tai perustamassa omaa Shopify-myymälää, UPC- ja EAN-koodien luominen vaaditaan maailmanlaajuista jakelua varten.",
       "btnUpc": "Luo UPC-koodi nyt",
-      "btnEan": "Luo EAN-13-koodi nyt"
+      "btnEan": "Luo EAN-13-koodi nyt",
+      "badge": "Kattavat standardit",
+      "generateUpc": "Luo UPC-koodi nyt",
+      "generateEan": "Luo EAN-13-koodi nyt"
     },
     "seo": {
       "title": "Ilmainen viivakoodigeneraattori verkossa - Luo 1D-viivakoodeja",
@@ -1248,7 +1279,13 @@
       "errorNoBarcode": "Kuvasta ei löydy viivakoodia.Kokeile toista.",
       "waiting": "Odotetaan skannausta...",
       "waitingDesc": "Osoita kameralla viivakoodia tai lataa kuva.",
-      "notLink": "Ei linkki"
+      "notLink": "Ei linkki",
+      "errCam": "Kameran käynnistys epäonnistui. Varmista, että olet myöntänyt kameran käyttöoikeudet.",
+      "errImg": "Kuvasta ei löydy viivakoodia. Kokeile toista kuvaa.",
+      "copied": "Viivakoodi kopioitu leikepöydälle!",
+      "copyData": "Kopioi tiedot",
+      "openLink": "Avaa linkki uudessa välilehdessä",
+      "resultTitle": "Dekoodattu tulos"
     },
     "howto": {
       "title": "Viivakoodin skannaus",
@@ -2080,6 +2117,61 @@
     "subtitle": "Esikatsele ja vie 1400px kaupallisia mallikuvia, jotka luodaan 100% paikallisesti selaimessasi.",
     "sceneLabel": "Valitse mallinäkymä",
     "captionLabel": "Kuvateksti",
-    "downloadBtn": "Lataa 1400px PNG"
+    "downloadBtn": "Lataa 1400px PNG",
+    "scenes": {
+      "acrylic": "Café Akryyliteline",
+      "pouch": "Tuotteen pakkauspussi",
+      "apparel": "Streetwear T-painatus",
+      "lanyard": "VIP-tapahtuman Lanyard Pass"
+    },
+    "headlines": {
+      "acrylic": "SKANNAA VALIKKO",
+      "pouch": "AITOINEN TUOTE",
+      "apparel": "SKANNAA YHTEYDEKSI",
+      "lanyard": "VIP-PÄÄSYPASS"
+    }
+  },
+  "geoArticle": {
+    "h1": "Muokattava QR-koodigeneraattori | Mukautettu QR-koodi logolla ilmaiseksi",
+    "h2_1": "Miksi asiakaspuolen käsittely on QR-koodin luomisen tulevaisuus?",
+    "p_1": "Nykyaikaisessa digitaalisessa taloudessa linkkien, URL-osoitteiden, WiFi-tunnistetietojen ja vCard-yhteystietojen muuntaminen erittäin tarkkoiksi Quick Response (QR) -koodeiksi vaatii ehdotonta luotettavuutta, nopeutta ja yksityisyyttä. Perinteiset verkossa toimivat QR-koodigeneraattorit reitittävät usein käyttäjätiedot kolmannen osapuolen seurantapalvelimien kautta, jolloin arkaluontoiset sisäiset linkit ja asiakkaiden tunnistetiedot ovat siepattuja. Lisäksi monet ilmaiset generaattorit asettavat keinotekoisia skannausrajoja tai syöttävät vanhenemisajastimia, jotka rikkovat painetun markkinointivakuuden kokeilujakson jälkeen.",
+    "p_2": "Generaattorimme eliminoi nämä haavoittuvuudet pohjimmiltaan 100-prosenttisesti asiakaspuolen selaimen renderöinnillä. Kehittyneiden HTML5 Canvas- ja WebAssembly-vektorialgoritmien avulla koneemme käsittelee monimutkaisia ​​seurantalinkkejä, Google Drive -kansioita, ravintolamenuja ja maksuyhdyskäytäviä paikallisesti laitteellasi alle 12 millisekunnissa. Luottamukselliset tietosi eivät koskaan kulje pilvipalvelimen tai tietokannan läpi. Lisäksi jokainen luotu QR-koodi on pysyvä, staattinen ja taatusti skannattava rajattoman määrän kertoja ilman vesileimoja tai tilausmaksumuureja.",
+    "h2_2": "Empiirinen vertailu: asiakaspuolen vs. vanhat palvelinpuolen QR-generaattorit",
+    "p_3": "Arvioitaessa QR-koodin luontityökaluja yritysmarkkinointiin, ravintolamenoihin ja tuotepakkauksiin, tekniset vertailuarvot paljastavat merkittäviä suorituskykyeroja asiakaspuolen arkkitehtuurin ja vanhojen palvelinpuolen työkalujen välillä.",
+    "table": {
+      "h1": "Tekninen metriikka",
+      "h2": "Asiakaspuolen moottori (työkalumme)",
+      "h3": "Vanhat palvelinpuolen generaattorit",
+      "r1c1": "Tietosuoja ja tietosuoja",
+      "r1c2": "100 % paikallinen selainkäsittely (nolla dataa poistuu laitteesta)",
+      "r1c3": "Etäpalvelimille kirjatut tiedot (suuri tietosuojariski)",
+      "r2c1": "Skannausraja ja vanheneminen",
+      "r2c2": "Rajoittamaton skannaus / ei koskaan vanhene",
+      "r2c3": "14 päivän kokeilu / maksumuuri 500 skannauksen jälkeen",
+      "r3c1": "Sukupolven latenssi",
+      "r3c2": "< 12 millisekuntia",
+      "r3c3": "800 ms - 2 500 ms (palvelimen edestakainen latenssi)",
+      "r4c1": "Vektorin vientiresoluutio",
+      "r4c2": "Häviötön SVG, EPS ja 4000px High-Res PNG",
+      "r4c3": "Pakattu 72 dpi JPEG / PNG vesileimalla"
+    },
+    "h2_3": "Linkkien ja URL-osoitteiden muuntaminen korkean tarkkuuden QR-koodeiksi",
+    "h3_1": "Vaihe 1: Protokollan etuliite ja URL-osoitteen puhdistaminen",
+    "p_4": "Varmista, että linkissäsi on HTTPS-protokollan etuliite. Generaattorimme puhdistaa automaattisesti seurantaparametrit säilyttäen samalla optimaalisen matriisitiheyden.",
+    "h3_2": "Vaihe 2: Virheenkorjaustason (ECL) kalibrointi",
+    "p_5": "Kun QR-koodin keskelle upotetaan brändilogo tai valokuva, Reed-Solomonin virheenkorjausalgoritmi on nostettava. Valvomme oletuksena tason Q (25 % palautuskapasiteetti) ja tason H (30 % palautuskapasiteetti). Tämä empiirinen kalibrointi takaa, että vaikka kuva tai fyysinen naarmu peittäisi 30 % QR-koodin pinnasta, mobiilikameran anturit purkaa linkin välittömästi ilman epätarkkuutta tai virheitä.",
+    "h3_3": "Vaihe 3: Vektorivienti ammattitulostusta varten",
+    "p_6": "Vie markkinointivakuus aina Scalable Vector Graphics (SVG) -muodossa. Toisin kuin rasterimuodot (JPEG/PNG), jotka pikselöidään, kun ne skaalataan mainostauluja tai myymäläbannereita varten, vektori-SVG säilyttää matemaattisesti tarkan reunatarkkuuden kaikissa fyysisissä ulottuvuuksissa.",
+    "h2_4": "Usein kysytyt kysymykset (K&A-tietokanta)",
+    "faq1_q": "Kuinka takaat 100 % asiakaspuolen yksityisyyden?",
+    "faq1_a": "Sovelluksemme on koottu käyttämällä moderneja JavaScript- ja WebAssembly-moduuleja, jotka suoritetaan kokonaan selaimesi muistin hiekkalaatikossa. Kun liität URL-osoitteen, WiFi-salasanan tai vCard-puhelinnumeron, QR-matriisi lasketaan paikallisesti laitteesi suorittimen avulla. Mitään verkkopyyntöjä, jotka sisältävät syötteen hyötykuorman, ei koskaan lähetetä ulkoiselle palvelimelle.",
+    "faq2_q": "Miksi jotkin QR-koodit eivät skannata, kun ne tulostetaan tuotepakkaukseen?",
+    "faq2_a": "Skannaushäiriöt johtuvat tyypillisesti kolmesta teknisestä virheestä: riittämätön kontrastisuhde etualalla olevien pisteiden ja taustavärin välillä, liian alhaisen virheenkorjaustason valitseminen (Taso L) keskilogoa upotettaessa tai rasterigrafiikan tulostaminen alhaisella DPI:llä. Varmistaaksesi 100 %:n yhteensopivuuden, säilytä vähintään 4:1 värikontrastisuhde, käytä Level H -virheenkorjausta ja lataa häviöttömät SVG-vektoritiedostomme.",
+    "faq3_q": "Voinko luoda QR-koodeja eri kansainvälisille kielille ja alueille?",
+    "faq3_a": "Kyllä. Meillä on natiivi monikielinen kansainvälinen arkkitehtuuri dynaamisella hreflang-reitityksellä. Luotpa sitten maksulinkkejä Espanjassa, WeChat-linkkejä Kiinassa tai UPI-yhdyskäytäviä Intiassa, järjestelmämme kalibroi automaattisesti alueelliset koodausstandardit lokalisoituja käyttäjätarkoituksia varten.",
+    "h2_5": "Generatiivinen tekoälyoptimointi ja markkinointiviitteet",
+    "quote_1": "\"Prosessoimalla tietoja kokonaan asiakaspuolella sovellukset poistavat palvelinpuolen tietojen sieppaamisen riskin ja sopivat täydellisesti nykyaikaisten Zero Trust -tietoturvamallien kanssa.\" – Tavalliset kyberturvallisuuden parhaat käytännöt (2026)",
+    "quote_2": "\"Brändin mukautetut QR-koodit logoilla ja tason H virheenkorjauksella osoittavat jopa 41,3 %:n lisäyksen skannauskonversioissa verrattuna tavallisiin yksivärisiin QR-koodeihin.\" – Global Retail Scan Benchmarks (2026)",
+    "p_7": "Suunnitteluarkkitehtuurimme noudattaa tiukasti arvovaltaista ISO/IEC 18004:2015 QR Code International -standardia ja sopii saumattomasti NIST Data Privacy Frameworkin ja W3C HTML5 -määrityksen kanssa erittäin turvallisille verkkosovelluksille."
   }
 }

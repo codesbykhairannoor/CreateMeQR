@@ -499,7 +499,7 @@ export default function BarcodeGenerator() {
                   onClick={() => setValue(activeFormatMeta.sample)}
                   className="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
                 >
-                  Load Sample Value
+                  {t('barcode.workspace.loadSample', 'Load Sample Value')}
                 </button>
               </div>
 
@@ -523,12 +523,12 @@ export default function BarcodeGenerator() {
                     onChange={(e) => handleFormatChange(e.target.value)}
                     className="w-full bg-slate-50 dark:bg-[#020617] border border-slate-300 dark:border-[#1e2d4a] text-slate-900 dark:text-white rounded-xl px-5 py-4 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all text-base font-semibold cursor-pointer"
                   >
-                    <optgroup label="Retail 1D Barcodes (Free PNG)">
+                    <optgroup label={t('barcode.workspace.optGroupRetail', 'Retail 1D Barcodes (Free PNG)')}>
                       {RETAIL_1D_FORMATS.map(fmt => (
                         <option key={fmt.id} value={fmt.id}>{fmt.label}</option>
                       ))}
                     </optgroup>
-                    <optgroup label="Enterprise 2D & Industrial BWIPP Engine (PRO Export)">
+                    <optgroup label={t('barcode.workspace.optGroupEnterprise', 'Enterprise 2D & Industrial BWIPP Engine (PRO Export)')}>
                       {ENTERPRISE_BWIP_FORMATS.map(fmt => (
                         <option key={fmt.id} value={fmt.id}>★ {fmt.label}</option>
                       ))}
@@ -595,7 +595,7 @@ export default function BarcodeGenerator() {
       <section className="max-w-7xl mx-auto px-6 py-24 border-t border-slate-200 dark:border-[#1e2d4a]">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full mb-4 font-bold text-sm">
-            <Layers className="w-4 h-4" /> Comprehensive Standards
+            <Layers className="w-4 h-4" /> {t("barcode.features.badge", "Comprehensive Standards")}
           </div>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 dark:text-white">{t("barcode.features.standardsTitle", "Supported Barcode Formats")}</h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 mt-4 max-w-2xl mx-auto">
@@ -694,15 +694,15 @@ export default function BarcodeGenerator() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 onClick={() => { setFormat('UPC'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className="w-full sm:w-auto px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-xl transition-transform hover:-translate-y-1 shadow-xl"
+                className="w-full sm:w-auto px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-xl transition-transform hover:-translate-y-1 shadow-xl cursor-pointer"
               >
-                Generate UPC Code Now
+                {t('barcode.features.generateUpc', 'Generate UPC Code Now')}
               </button>
               <button
                 onClick={() => { setFormat('EAN13'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                className="w-full sm:w-auto px-8 py-4 bg-white dark:bg-[#1e2d4a] text-slate-900 dark:text-white font-bold border border-slate-200 dark:border-transparent rounded-xl transition-transform hover:-translate-y-1 shadow-sm"
+                className="w-full sm:w-auto px-8 py-4 bg-white dark:bg-[#1e2d4a] text-slate-900 dark:text-white font-bold border border-slate-200 dark:border-transparent rounded-xl transition-transform hover:-translate-y-1 shadow-sm cursor-pointer"
               >
-                Generate EAN-13 Code Now
+                {t('barcode.features.generateEan', 'Generate EAN-13 Code Now')}
               </button>
             </div>
           </div>

@@ -351,10 +351,10 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
             <button
               onClick={() => onDownloadClick('dxf')}
               className="flex-1 flex items-center justify-center px-3 py-2.5 bg-slate-50 dark:bg-slate-900/60 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/80 hover:border-blue-400 rounded-xl transition-all font-semibold text-xs cursor-pointer"
-              title="AutoCAD / LightBurn / Glowforge Laser Cut Vector"
+              title={t('preview.dxfTitle', 'AutoCAD / LightBurn / Glowforge Laser Cut Vector')}
             >
               <Cpu className="w-3.5 h-3.5 mr-1.5 text-blue-600 dark:text-blue-400" />
-              <span>DXF (CAD)</span>
+              <span>{t('preview.dxfBtn', 'DXF (CAD)')}</span>
               {!isPro && (
                 <span className="ml-1 px-1 py-0.2 rounded text-[8.5px] font-semibold bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700 uppercase flex items-center gap-0.5">
                   <Sparkles size={8} /> {trialBadgeText}
@@ -364,10 +364,10 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
             <button
               onClick={() => onDownloadClick('eps')}
               className="flex-1 flex items-center justify-center px-3 py-2.5 bg-slate-50 dark:bg-slate-900/60 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/80 hover:border-blue-400 rounded-xl transition-all font-semibold text-xs cursor-pointer"
-              title="Adobe Illustrator / Offset Print Press PostScript"
+              title={t('preview.epsTitle', 'Adobe Illustrator / Offset Print Press PostScript')}
             >
               <FileCode2 className="w-3.5 h-3.5 mr-1.5 text-indigo-600 dark:text-indigo-400" />
-              <span>EPS Vector</span>
+              <span>{t('preview.epsBtn', 'EPS Vector')}</span>
               {!isPro && (
                 <span className="ml-1 px-1 py-0.2 rounded text-[8.5px] font-semibold bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-700 uppercase flex items-center gap-0.5">
                   <Sparkles size={8} /> {trialBadgeText}

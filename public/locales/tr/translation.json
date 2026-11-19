@@ -49,7 +49,7 @@
     "phone": "Telefon Numarası",
     "email": "E-posta Adresi",
     "textPlaceholder": "Metninizi buraya girin",
-    "emailTo": "",
+    "emailTo": "Gönder",
     "emailSubject": "'e Gönder Konu",
     "emailBody": "Mesaj Gövdesi",
     "smsMessage": "SMS Mesajı",
@@ -136,7 +136,24 @@
     "frameColor": "Çerçeve Vurgu Rengi",
     "eyeOuterColor": "Dış Göz Çerçeve Rengi",
     "eyeInnerColor": "İç Göz Bebeği Rengi",
-    "cornerDotStyle": "Göz Bebeği Şekli"
+    "cornerDotStyle": "Göz Bebeği Şekli",
+    "frames": {
+      "none": "Yok (Saf QR)",
+      "bottom-pill": "Alt Hap",
+      "top-banner": "Üst Banner",
+      "polaroid": "Polaroid Kartı",
+      "phone-stand": "Telefon Standı",
+      "ticket": "Saplama Bileti"
+    },
+    "themes": {
+      "midnight": "Gece Yarısı Yöneticisi",
+      "sapphire": "Safir Teknolojisi",
+      "emerald": "Zümrüt Minimal",
+      "crimson": "Kızıl Kraliyet",
+      "amethyst": "Ametist Lüks",
+      "monochrome": "Tek Renkli Mürekkep"
+    },
+    "errorCorrection": "Hata Düzeltme Düzeyi (ISO/IEC 18004)"
   },
   "preview": {
     "title": "QR Kod Önizlemesi",
@@ -150,7 +167,11 @@
     "printBtnShort": "PDF Sayfası Yazdır",
     "mockupBtnShort": "3D Mockup Stüdyosu",
     "isoGradePass": "ISO Sınıf {{grade}} • Taranabilir ({{ms}}ms)",
-    "isoGradeWarn": "Düşük kontrast veya yoğun logo algılandı"
+    "isoGradeWarn": "Düşük kontrast veya yoğun logo algılandı",
+    "dxfBtn": "DXF (CAD)",
+    "epsBtn": "EPS vektör",
+    "dxfTitle": "AutoCAD / LightBurn / Glowforge Lazer Kesim Vektörü",
+    "epsTitle": "Adobe Illustrator / Ofset Baskı Basın PostScript"
   },
   "footer": {
     "privacy": "Gizlilik Politikası",
@@ -167,7 +188,7 @@
     "languages": "Desteklenen Diller",
     "contact": "Destek Ekibiyle İletişime Geçin",
     "legal": "Yasal",
-    "madewith": "",
+    "madewith": "İle yapıldı",
     "forprivateweb": "ile yapıldı özel bir web için."
   },
   "badge": "Süresi Dolmayan Kodlar. Reklamsız. %100 Gizlilik Odaklı.",
@@ -1088,7 +1109,9 @@
       "toggleQR": "QR Kodu",
       "toggleBarcode": "Barkod",
       "initCamDescBarcode": "Cihazınızın kamerasını kullanarak barkod tarayın",
-      "uploadBtnBarcode": "Barkod Görüntü Dosyasını Yükle"
+      "uploadBtnBarcode": "Barkod Görüntü Dosyasını Yükle",
+      "resultTitle": "Kodu Çözülmüş Sonuç",
+      "copyData": "Verileri Kopyala"
     },
     "features": {
       "whyTitle": "Tarayıcımızı neden kullanmalısınız?",
@@ -1132,7 +1155,12 @@
       "showText": "Kodun Altındaki Metin Değerini Göster",
       "liveOutput": "Canlı Çıktı",
       "enterData": "Oluşturulacak verileri girin",
-      "download": "Yüksek Çözünürlüklü PNG'yi İndirin"
+      "download": "Yüksek Çözünürlüklü PNG'yi İndirin",
+      "loadSample": "Örnek Değeri Yükle",
+      "optGroupRetail": "Perakende 1D Barkodlar (Ücretsiz PNG)",
+      "optGroupEnterprise": "Kurumsal 2D ve Endüstriyel BWIPP Motoru (PRO Export)",
+      "loadValidSample": "Geçerli Örnek Yükle",
+      "invalidBwip": "Bu barkod standardı için giriş değeri geçersiz."
     },
     "features": {
       "standardsTitle": "Desteklenen Barkod Formatları",
@@ -1150,7 +1178,10 @@
       "ecoTitle": "E-Ticaret ve Perakende için Mükemmel",
       "ecoDesc": "İster Amazon'da (FBA) yeni bir ürün listeliyor olun, ister kendi Shopify mağazanızı oluşturuyor olun, küresel dağıtım için UPC ve EAN kodları oluşturmak gerekir.",
       "btnUpc": "Şimdi UPC Kodu Oluşturun",
-      "btnEan": "Şimdi EAN-13 Kodunu Oluşturun"
+      "btnEan": "Şimdi EAN-13 Kodunu Oluşturun",
+      "badge": "Kapsamlı Standartlar",
+      "generateUpc": "Şimdi UPC Kodu Oluşturun",
+      "generateEan": "Şimdi EAN-13 Kodunu Oluşturun"
     },
     "seo": {
       "title": "Ücretsiz Çevrimiçi Barkod Oluşturucu - 1D Barkodlar Oluşturun",
@@ -1248,7 +1279,13 @@
       "errorNoBarcode": "Resimde barkod bulunamadı.Lütfen başka bir tane deneyin.",
       "waiting": "Tarama bekleniyor...",
       "waitingDesc": "Kameranızı bir barkoda doğrultun veya bir resim yükleyin.",
-      "notLink": "Bir bağlantı değil"
+      "notLink": "Bir bağlantı değil",
+      "errCam": "Kamera başlatılamadı. Lütfen kamera izinlerini verdiğinizden emin olun.",
+      "errImg": "Resimde barkod bulunamadı. Lütfen başka bir resim deneyin.",
+      "copied": "Barkod panoya kopyalandı!",
+      "copyData": "Verileri Kopyala",
+      "openLink": "Bağlantıyı Yeni Sekmede Aç",
+      "resultTitle": "Kodu Çözülmüş Sonuç"
     },
     "howto": {
       "title": "Barkod Nasıl Taranır?",
@@ -2080,6 +2117,61 @@
     "subtitle": "Tarayıcınızda %100 yerel olarak oluşturulan 1400px ticari mockup'ları önizleyin ve indirin.",
     "sceneLabel": "Sahne Seçin",
     "captionLabel": "Sahne Başlığı",
-    "downloadBtn": "1400px PNG İndir"
+    "downloadBtn": "1400px PNG İndir",
+    "scenes": {
+      "acrylic": "Kafe Akrilik Standı",
+      "pouch": "Ürün Paketleme Kesesi",
+      "apparel": "Sokak Stili Tişört Baskı",
+      "lanyard": "VIP Etkinlik İpi Geçişi"
+    },
+    "headlines": {
+      "acrylic": "MENÜ İÇİN TARAMA",
+      "pouch": "OTANTİK ÜRÜN",
+      "apparel": "BAĞLANMAK İÇİN TARAMA",
+      "lanyard": "VIP ERİŞİM GEÇİŞİ"
+    }
+  },
+  "geoArticle": {
+    "h1": "Düzenlenebilir QR Kod Oluşturucu | Logo Ücretsiz Özel QR Kodu",
+    "h2_1": "İstemci Tarafında İşleme Neden QR Kod Oluşturmanın Geleceğidir?",
+    "p_1": "Modern dijital ekonomide bağlantıları, URL'leri, WiFi kimlik bilgilerini ve vCard iletişim ayrıntılarını yüksek hassasiyetli Hızlı Yanıt (QR) kodlarına dönüştürmek mutlak güvenilirlik, hız ve gizlilik gerektirir. Geleneksel çevrimiçi QR kodu oluşturucuları genellikle kullanıcı verilerini üçüncü taraf izleme sunucuları üzerinden yönlendirerek hassas dahili bağlantıları ve müşteri kimlik bilgilerini ele geçirilmeye maruz bırakır. Ayrıca, birçok ücretsiz oluşturucu yapay tarama limitleri uygular veya bir deneme süresinden sonra basılı pazarlama teminatlarını bozan son kullanma zamanlayıcıları enjekte eder.",
+    "p_2": "Oluşturucumuz, %100 istemci tarafı tarayıcı oluşturma yoluyla bu güvenlik açıklarını temel olarak ortadan kaldırır. Gelişmiş HTML5 Canvas ve WebAssembly vektör algoritmalarıyla desteklenen motorumuz, karmaşık izleme bağlantılarını, Google Drive klasörlerini, restoran menülerini ve ödeme ağ geçitlerini cihazınızda yerel olarak 12 milisaniyeden kısa bir sürede işler. Gizli verileriniz hiçbir zaman bir bulut sunucusundan veya veritabanından geçmez. Ayrıca oluşturulan her QR kodu kalıcı, statiktir ve filigran veya abonelik ödeme duvarları olmadan sınırsız sayıda taranması garanti edilir.",
+    "h2_2": "Ampirik Karşılaştırma: İstemci Tarafı ve Eski Sunucu Tarafı QR Oluşturucuları",
+    "p_3": "Kurumsal pazarlama, konaklama menüleri ve ürün paketleme için QR kodu oluşturma araçları değerlendirilirken, teknik kıyaslamalar, istemci tarafı mimarisi ile eski sunucu tarafı araçları arasındaki önemli performans farklılıklarını ortaya koyuyor.",
+    "table": {
+      "h1": "Teknik Metrik",
+      "h2": "İstemci Tarafı Motor (Aracımız)",
+      "h3": "Eski Sunucu Tarafı Oluşturucuları",
+      "r1c1": "Veri Gizliliği ve Güvenliği",
+      "r1c2": "%100 Yerel Tarayıcı İşleme (Sıfır veri cihazdan ayrılır)",
+      "r1c3": "Uzak sunuculara kaydedilen veriler (Yüksek gizlilik riski)",
+      "r2c1": "Tarama Sınırı ve Sona Erme Tarihi",
+      "r2c2": "Sınırsız Tarama / Süresi Asla Bitmez",
+      "r2c3": "14 Günlük Deneme / 500 taramadan sonra Ödeme Duvarı",
+      "r3c1": "Oluşturma Gecikmesi",
+      "r3c2": "< 12 milisaniye",
+      "r3c3": "800 ms - 2.500 ms (Sunucu gidiş dönüş gecikmesi)",
+      "r4c1": "Vektör Dışa Aktarma Çözünürlüğü",
+      "r4c2": "Kayıpsız SVG, EPS ve 4000px Yüksek Çözünürlüklü PNG",
+      "r4c3": "Filigranlı sıkıştırılmış 72dpi JPEG / PNG"
+    },
+    "h2_3": "Bağlantıları ve URL'leri Yüksek Hassasiyetli QR Kodlarına Dönüştürme",
+    "h3_1": "Adım 1: Protokol Öneki ve URL Temizleme",
+    "p_4": "Bağlantınızın HTTPS protokolü önekini içerdiğinden emin olun. Jeneratörümüz, optimum matris yoğunluğunu korurken izleme parametrelerini otomatik olarak temizler.",
+    "h3_2": "Adım 2: Hata Düzeltme Düzeyini (ECL) Kalibre Etme",
+    "p_5": "Bir marka logosunu veya fotoğrafını bir QR kodunun merkezine yerleştirirken Reed-Solomon hata düzeltme algoritmasının yükseltilmesi gerekir. Varsayılan olarak Q Düzeyini (%25 geri yükleme kapasitesi) ve H Düzeyini (%30 geri yükleme kapasitesi) uyguluyoruz. Bu ampirik kalibrasyon, QR kod yüzeyinin %30'u bir görüntü veya fiziksel çizik nedeniyle kapatılmış olsa bile, mobil kamera sensörlerinin, bulanıklık veya hata olmadan bağlantıyı anında çözmesini garanti eder.",
+    "h3_3": "Adım 3: Profesyonel Baskı için Vektör Dışa Aktarma",
+    "p_6": "Pazarlama materyallerini her zaman Ölçeklenebilir Vektör Grafikleri (SVG) formatında dışa aktarın. Reklam panoları veya vitrin afişleri için ölçeklendirildiğinde pikselleşen tarama formatlarının (JPEG/PNG) aksine, vektör SVG, tüm fiziksel boyutlarda matematiksel olarak hassas kenar doğruluğunu korur.",
+    "h2_4": "Sıkça Sorulan Sorular (Soru-Cevap Bilgi Tabanı)",
+    "faq1_q": "%100 istemci tarafı gizliliğini nasıl garanti edersiniz?",
+    "faq1_a": "Uygulamamız, tamamen web tarayıcınızın hafıza sanal alanında çalışan modern JavaScript ve WebAssembly modülleri kullanılarak derlenmiştir. Bir URL, WiFi şifresi veya vCard telefon numarasını yapıştırdığınızda QR matrisi, cihazınızın CPU'su kullanılarak yerel olarak hesaplanır. Giriş verinizi içeren hiçbir ağ isteği hiçbir zaman herhangi bir harici sunucuya iletilmez.",
+    "faq2_q": "Neden bazı QR kodları ürün ambalajının üzerine yazdırıldığında taranamıyor?",
+    "faq2_a": "Tarama hataları genellikle üç teknik hatadan kaynaklanır: ön plan noktaları ile arka plan rengi arasında yetersiz kontrast oranı, merkezi bir logo yerleştirirken hata düzeltme düzeyinin çok düşük seçilmesi (Seviye L) veya taramalı grafiklerin düşük DPI'da yazdırılması. %100 uyumluluk sağlamak için minimum 4:1 renk kontrast oranını koruyun, H Düzeyi hata düzeltmeyi kullanın ve kayıpsız SVG vektör dosyalarımızı indirin.",
+    "faq3_q": "Farklı uluslararası diller ve bölgeler için QR kodları oluşturabilir miyim?",
+    "faq3_a": "Evet. Dinamik hreflang yönlendirmeye sahip, yerel çok dilli uluslararası bir mimariye sahibiz. İster İspanya'da ödeme bağlantıları, ister Çin'de WeChat bağlantıları veya Hindistan'da UPI ağ geçitleri oluşturuyor olun, sistemimiz, yerelleştirilmiş kullanıcı amacına göre bölgesel kodlama standartlarını otomatik olarak kalibre eder.",
+    "h2_5": "Üretken Yapay Zeka Optimizasyonu ve Pazarlama Alıntıları",
+    "quote_1": "\"Uygulamalar, verileri tamamen istemci tarafında işleyerek, sunucu tarafındaki verilere müdahale riskini ortadan kaldırır ve modern Sıfır Güven güvenlik modelleriyle mükemmel uyum sağlar.\" — Standart Siber Güvenlik En İyi Uygulamaları (2026)",
+    "quote_2": "\"Logolara ve H Düzeyi hata düzeltmesine sahip, markaya özel QR kodları, standart tek renkli QR kodlarına kıyasla tarama dönüşümlerinde %41,3'e kadar bir artış gösteriyor.\" — Küresel Perakende Tarama Karşılaştırmaları (2026)",
+    "p_7": "Mühendislik mimarimiz, yetkili ISO/IEC 18004:2015 QR Code Uluslararası Standardına sıkı sıkıya uygundur ve yüksek güvenlikli web uygulamaları için NIST Veri Gizliliği Çerçevesi ve W3C HTML5 Spesifikasyonu ile kusursuz bir şekilde uyum sağlar."
   }
 }

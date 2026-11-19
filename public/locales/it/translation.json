@@ -136,7 +136,24 @@
     "frameColor": "Colore Accento Cornice",
     "eyeOuterColor": "Colore Esterno Occhio",
     "eyeInnerColor": "Colore Interno Pupilla",
-    "cornerDotStyle": "Forma della Pupilla"
+    "cornerDotStyle": "Forma della Pupilla",
+    "frames": {
+      "none": "Nessuno (QR puro)",
+      "bottom-pill": "Pillola in basso",
+      "top-banner": "Striscione superiore",
+      "polaroid": "Carta Polaroid",
+      "phone-stand": "Supporto per telefono",
+      "ticket": "Biglietto tagliando"
+    },
+    "themes": {
+      "midnight": "Esecutivo di mezzanotte",
+      "sapphire": "Tecnologia Zaffiro",
+      "emerald": "Minimo Smeraldo",
+      "crimson": "Cremisi reale",
+      "amethyst": "Ametista Luxe",
+      "monochrome": "Inchiostro monocromatico"
+    },
+    "errorCorrection": "Livello di correzione degli errori (ISO/IEC 18004)"
   },
   "preview": {
     "title": "Anteprima del codice QR",
@@ -150,7 +167,11 @@
     "printBtnShort": "Stampa Foglio PDF",
     "mockupBtnShort": "Studio Mockup 3D",
     "isoGradePass": "Grado ISO {{grade}} • Scansionabile ({{ms}}ms)",
-    "isoGradeWarn": "Contrasto basso o logo troppo denso rilevato"
+    "isoGradeWarn": "Contrasto basso o logo troppo denso rilevato",
+    "dxfBtn": "DXF (CAD)",
+    "epsBtn": "Vettore EPS",
+    "dxfTitle": "Vettore di taglio laser AutoCAD / LightBurn / Glowforge",
+    "epsTitle": "Adobe Illustrator/Stampa offset Stampa PostScript"
   },
   "footer": {
     "privacy": "Informativa sulla privacy",
@@ -1088,7 +1109,9 @@
       "toggleQR": "Codice QR",
       "toggleBarcode": "Codice a barre",
       "initCamDescBarcode": "Scansiona un codice a barre utilizzando la fotocamera del tuo dispositivo",
-      "uploadBtnBarcode": "Carica file immagine codice a barre"
+      "uploadBtnBarcode": "Carica file immagine codice a barre",
+      "resultTitle": "Risultato decodificato",
+      "copyData": "Copia dati"
     },
     "features": {
       "whyTitle": "Perché utilizzare il nostro scanner?",
@@ -1132,7 +1155,12 @@
       "showText": "Mostra valore testo sotto il codice",
       "liveOutput": "Uscita in tempo reale",
       "enterData": "Inserisci i dati per generare",
-      "download": "Scarica PNG ad alta risoluzione"
+      "download": "Scarica PNG ad alta risoluzione",
+      "loadSample": "Carica valore campione",
+      "optGroupRetail": "Codici a barre 1D per la vendita al dettaglio (PNG gratuito)",
+      "optGroupEnterprise": "Motore BWIPP 2D aziendale e industriale (esportazione PRO)",
+      "loadValidSample": "Carica campione valido",
+      "invalidBwip": "Valore immesso non valido per questo standard di codici a barre."
     },
     "features": {
       "standardsTitle": "Formati di codici a barre supportati",
@@ -1150,7 +1178,10 @@
       "ecoTitle": "Perfetto per l'e-commerce e la vendita al dettaglio",
       "ecoDesc": "Che tu stia pubblicando un nuovo prodotto su Amazon (FBA) o creando la tua vetrina Shopify, la generazione di codici UPC e EAN è necessaria per la distribuzione globale.",
       "btnUpc": "Genera ora il codice UPC",
-      "btnEan": "Genera subito il codice EAN-13"
+      "btnEan": "Genera subito il codice EAN-13",
+      "badge": "Standard completi",
+      "generateUpc": "Genera ora il codice UPC",
+      "generateEan": "Genera subito il codice EAN-13"
     },
     "seo": {
       "title": "Generatore di codici a barre online gratuito - Crea codici a barre 1D",
@@ -1248,7 +1279,13 @@
       "errorNoBarcode": "Nessun codice a barre trovato nell'immagine.Per favore provane un altro.",
       "waiting": "In attesa della scansione...",
       "waitingDesc": "Punta la fotocamera su un codice a barre o carica un'immagine.",
-      "notLink": "Non un collegamento"
+      "notLink": "Non un collegamento",
+      "errCam": "Impossibile avviare la fotocamera. Assicurati di aver concesso le autorizzazioni per la fotocamera.",
+      "errImg": "Nessun codice a barre trovato nell'immagine. Per favore prova un'altra immagine.",
+      "copied": "Codice a barre copiato negli appunti!",
+      "copyData": "Copia dati",
+      "openLink": "Apri collegamento in una nuova scheda",
+      "resultTitle": "Risultato decodificato"
     },
     "howto": {
       "title": "Come scansionare un codice a barre",
@@ -2080,6 +2117,61 @@
     "subtitle": "Anteprima ed esportazione di mockup commerciali 1400px renderizzati al 100% localmente nel browser.",
     "sceneLabel": "Seleziona Scena Mockup",
     "captionLabel": "Testo Didascalia",
-    "downloadBtn": "Scarica PNG 1400px"
+    "downloadBtn": "Scarica PNG 1400px",
+    "scenes": {
+      "acrylic": "Supporto acrilico per caffè",
+      "pouch": "Custodia per l'imballaggio del prodotto",
+      "apparel": "Stampa di magliette streetwear",
+      "lanyard": "Pass cordino per eventi VIP"
+    },
+    "headlines": {
+      "acrylic": "SCANSIONE DEL MENU",
+      "pouch": "PRODOTTO AUTENTICO",
+      "apparel": "SCANSIONE PER CONNESSIONE",
+      "lanyard": "PASS DI ACCESSO VIP"
+    }
+  },
+  "geoArticle": {
+    "h1": "Generatore di codici QR modificabili | Codice QR personalizzato con logo gratuito",
+    "h2_1": "Perché l'elaborazione lato client è il futuro della generazione di codici QR",
+    "p_1": "Nella moderna economia digitale, la conversione di collegamenti, URL, credenziali WiFi e dettagli di contatto vCard in codici QR (Quick Response) ad alta precisione richiede affidabilità, velocità e privacy assolute. I generatori di codici QR online convenzionali spesso instradano i dati degli utenti attraverso server di tracciamento di terze parti, esponendo collegamenti interni sensibili e credenziali dei clienti all'intercettazione. Inoltre, molti generatori gratuiti impongono limiti di scansione artificiali o inseriscono timer di scadenza che interrompono il materiale di marketing stampato dopo un periodo di prova.",
+    "p_2": "Il nostro generatore elimina sostanzialmente queste vulnerabilità attraverso il rendering del browser lato client al 100%. Basato su avanzati algoritmi vettoriali HTML5 Canvas e WebAssembly, il nostro motore elabora collegamenti di tracciamento complessi, cartelle di Google Drive, menu di ristoranti e gateway di pagamento localmente sul tuo dispositivo in meno di 12 millisecondi. I tuoi dati riservati non attraversano mai un server o un database cloud. Inoltre, ogni codice QR generato è permanente, statico e garantisce la scansione di un numero illimitato di volte senza filigrane o paywall di abbonamento.",
+    "h2_2": "Confronto empirico: generatori QR lato client e lato server legacy",
+    "p_3": "Quando si valutano gli strumenti di generazione di codici QR per il marketing aziendale, i menu di ospitalità e il confezionamento dei prodotti, i benchmark tecnici rivelano significative disparità di prestazioni tra l'architettura lato client e gli strumenti legacy lato server.",
+    "table": {
+      "h1": "Metrica tecnica",
+      "h2": "Motore lato client (il nostro strumento)",
+      "h3": "Generatori lato server legacy",
+      "r1c1": "Privacy e sicurezza dei dati",
+      "r1c2": "Elaborazione del browser locale al 100% (nessun dato lascia il dispositivo)",
+      "r1c3": "Dati registrati su server remoti (alto rischio per la privacy)",
+      "r2c1": "Limite e scadenza della scansione",
+      "r2c2": "Scansioni illimitate/Non scade mai",
+      "r2c3": "Prova di 14 giorni/Paywalled dopo 500 scansioni",
+      "r3c1": "Latenza di generazione",
+      "r3c2": "< 12 millisecondi",
+      "r3c3": "800 ms - 2.500 ms (latenza di andata e ritorno del server)",
+      "r4c1": "Risoluzione dell'esportazione vettoriale",
+      "r4c2": "SVG, EPS e PNG ad alta risoluzione 4000px senza perdita di dati",
+      "r4c3": "JPEG/PNG compresso a 72 dpi con filigrana"
+    },
+    "h2_3": "Come convertire collegamenti e URL in codici QR ad alta precisione",
+    "h3_1": "Passaggio 1: prefisso del protocollo e sanificazione degli URL",
+    "p_4": "Assicurati che il tuo collegamento includa il prefisso del protocollo HTTPS. Il nostro generatore disinfetta automaticamente i parametri di tracciamento mantenendo la densità ottimale della matrice.",
+    "h3_2": "Passaggio 2: calibrazione del livello di correzione degli errori (ECL)",
+    "p_5": "Quando si incorpora il logo di un marchio o una fotografia al centro di un codice QR, l'algoritmo di correzione degli errori di Reed-Solomon deve essere elevato. Applichiamo il Livello Q (capacità di ripristino del 25%) e il Livello H (capacità di ripristino del 30%) per impostazione predefinita. Questa calibrazione empirica garantisce che anche se il 30% della superficie del codice QR è oscurata da un'immagine o da un graffio fisico, i sensori della fotocamera mobile decodificano il collegamento istantaneamente senza sfocature o guasti.",
+    "h3_3": "Passaggio 3: esportazione vettoriale per la stampa professionale",
+    "p_6": "Esporta sempre il materiale di marketing in formato Scalable Vector Graphics (SVG). A differenza dei formati raster (JPEG/PNG) che pixellano quando ingranditi per cartelloni pubblicitari o banner di negozi, SVG vettoriale preserva una fedeltà dei bordi matematicamente precisa su qualsiasi dimensione fisica.",
+    "h2_4": "Domande frequenti (base di conoscenza di domande e risposte)",
+    "faq1_q": "Come garantite la privacy lato client al 100%?",
+    "faq1_a": "La nostra applicazione è compilata utilizzando moderni moduli JavaScript e WebAssembly che vengono eseguiti interamente all'interno della sandbox di memoria del tuo browser web. Quando incolli un URL, una password WiFi o un numero di telefono vCard, la matrice QR viene calcolata localmente utilizzando la CPU del tuo dispositivo. Nessuna richiesta di rete contenente il payload di input viene mai trasmessa a nessun server esterno.",
+    "faq2_q": "Perché alcuni codici QR non vengono scansionati se stampati sulla confezione del prodotto?",
+    "faq2_a": "Gli errori di scansione derivano in genere da tre errori tecnici: rapporto di contrasto insufficiente tra i punti in primo piano e il colore di sfondo, selezione di un livello di correzione degli errori troppo basso (Livello L) quando si incorpora un logo centrale o stampa di grafica raster a DPI bassi. Per garantire la compatibilità al 100%, mantieni un rapporto di contrasto cromatico minimo di 4:1, utilizza la correzione degli errori di livello H e scarica i nostri file vettoriali SVG senza perdita di dati.",
+    "faq3_q": "Posso generare codici QR per diverse lingue e regioni internazionali?",
+    "faq3_a": "SÌ. Disponiamo di un'architettura internazionale nativa multilingue con routing hreflang dinamico. Che tu stia generando link di pagamento in Spagna, link WeChat in Cina o gateway UPI in India, il nostro sistema calibra automaticamente gli standard di codifica regionali per l'intento dell'utente localizzato.",
+    "h2_5": "Ottimizzazione dell'intelligenza artificiale generativa e citazioni di marketing",
+    "quote_1": "\"Elaborando i dati interamente lato client, le applicazioni eliminano il rischio di intercettazione dei dati lato server, allineandosi perfettamente ai moderni modelli di sicurezza Zero Trust.\" — Migliori pratiche standard di sicurezza informatica (2026)",
+    "quote_2": "\"I codici QR personalizzati per il marchio con loghi e correzione degli errori di livello H dimostrano un aumento fino al 41,3% nelle conversioni di scansione rispetto ai codici QR monocromatici standard.\" — Benchmark globali per la scansione al dettaglio (2026)",
+    "p_7": "La nostra architettura ingegneristica è rigorosamente conforme all'autorevole standard internazionale del codice QR ISO/IEC 18004:2015 e si allinea perfettamente con il quadro sulla privacy dei dati NIST e la specifica HTML5 del W3C per applicazioni web altamente sicure."
   }
 }

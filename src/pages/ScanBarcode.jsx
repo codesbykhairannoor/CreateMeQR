@@ -203,7 +203,7 @@ export default function ScanBarcode() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100 dark:bg-blue-500/10 blur-[50px] rounded-full pointer-events-none"></div>
                 
                 <h3 className="text-2xl font-extrabold mb-6 flex items-center gap-3 border-b border-slate-200 dark:border-[#1e2d4a] pb-4 text-zinc-900 dark:text-white">
-                  <ScanLine className="w-6 h-6 text-blue-600 dark:text-blue-400" /> Decoded Result
+                  <ScanLine className="w-6 h-6 text-blue-600 dark:text-blue-400" /> {t('scanbarcode.workspace.resultTitle', 'Decoded Result')}
                 </h3>
 
                 {error && (
@@ -235,9 +235,9 @@ export default function ScanBarcode() {
                     <div className="grid grid-cols-2 gap-4">
                       <button 
                         onClick={handleCopy}
-                        className="py-4 bg-slate-200 dark:bg-[#1e2d4a] hover:bg-slate-300 dark:hover:bg-[#2a3d60] text-slate-800 dark:text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2"
+                        className="py-4 bg-slate-200 dark:bg-[#1e2d4a] hover:bg-slate-300 dark:hover:bg-[#2a3d60] text-slate-800 dark:text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer"
                       >
-                        {copied ? <span className="text-blue-600 dark:text-blue-400">{t("scanbarcode.workspace.copied", "Copied!")}</span> : <><Copy className="w-5 h-5" /> Copy Data</>}
+                        {copied ? <span className="text-blue-600 dark:text-blue-400">{t("scanbarcode.workspace.copied", "Copied!")}</span> : <><Copy className="w-5 h-5" /> {t("scanbarcode.workspace.copyData", "Copy Data")}</>}
                       </button>
                       
                       {isUrl(scanResult) ? (

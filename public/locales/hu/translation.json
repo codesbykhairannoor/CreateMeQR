@@ -36,7 +36,8 @@
     "amazon": "Amazon",
     "booking": "Foglalás",
     "file": "Fájl",
-    "bulk": "Tömeges QR és vonalkód"
+    "bulk": "Tömeges QR és vonalkód",
+    "scanbarcode": "Vonalkód olvasó"
   },
   "form": {
     "enterUrl": "Adja meg webhelyének URL-jét",
@@ -135,7 +136,24 @@
     "frameColor": "Keret kiemelő színe",
     "eyeOuterColor": "Külső szem színe",
     "eyeInnerColor": "Belső pupilla színe",
-    "cornerDotStyle": "Pupilla alakja"
+    "cornerDotStyle": "Pupilla alakja",
+    "frames": {
+      "none": "Nincs (tiszta QR)",
+      "bottom-pill": "Bottom Pill",
+      "top-banner": "Felső szalaghirdetés",
+      "polaroid": "Polaroid kártya",
+      "phone-stand": "Telefonállvány",
+      "ticket": "Csonkjegy"
+    },
+    "themes": {
+      "midnight": "Midnight Executive",
+      "sapphire": "Sapphire Tech",
+      "emerald": "Emerald Minimal",
+      "crimson": "Crimson Royal",
+      "amethyst": "Amethyst Luxe",
+      "monochrome": "Monokróm tinta"
+    },
+    "errorCorrection": "Hibajavítási szint (ISO/IEC 18004)"
   },
   "preview": {
     "title": "QR-kód előnézet",
@@ -149,7 +167,11 @@
     "printBtnShort": "PDF lap nyomtatása",
     "mockupBtnShort": "3D Mockup Stúdió",
     "isoGradePass": "ISO minősítés {{grade}} • Beolvasható ({{ms}}ms)",
-    "isoGradeWarn": "Alacsony kontraszt vagy túl sűrű logó"
+    "isoGradeWarn": "Alacsony kontraszt vagy túl sűrű logó",
+    "dxfBtn": "DXF (CAD)",
+    "epsBtn": "EPS vektor",
+    "dxfTitle": "AutoCAD / LightBurn / Glowforge Laser Cut Vector",
+    "epsTitle": "Adobe Illustrator / Ofszetnyomtatás Nyomja meg a PostScript gombot"
   },
   "footer": {
     "privacy": "Adatvédelmi szabályzat",
@@ -1083,7 +1105,13 @@
       "waiting": "Várakozás a beolvasásra...",
       "waitingDesc": "Irányítsa kameráját egy QR-kódra, vagy töltsön fel egy képet.",
       "errCam": "Nem sikerült elindítani a kamerát. Kérjük, győződjön meg róla, hogy megadta a kameraengedélyeket.",
-      "errImg": "A képen nem található QR kód. Kérjük, próbálkozzon másik képpel."
+      "errImg": "A képen nem található QR kód. Kérjük, próbálkozzon másik képpel.",
+      "toggleQR": "QR-kód",
+      "toggleBarcode": "Vonalkód",
+      "initCamDescBarcode": "Olvasson be vonalkódot az eszköz kamerájával",
+      "uploadBtnBarcode": "Vonalkód képfájl feltöltése",
+      "resultTitle": "Dekódolt eredmény",
+      "copyData": "Adatok másolása"
     },
     "features": {
       "whyTitle": "Miért használja a szkennerünket?",
@@ -1109,7 +1137,7 @@
   "barcode": {
     "hero": {
       "badge": "Professzionális vonalkód eszközök",
-      "title": "",
+      "title": "Generál",
       "titleHighlight": "Vonalkódok",
       "titleSuffix": "Azonnal",
       "desc": "Hozzon létre kiváló minőségű készletcímkéket, szállítási címkéket és kiskereskedelmi kódokat másodpercek alatt."
@@ -1127,7 +1155,12 @@
       "showText": "Szövegérték megjelenítése a kód alatt",
       "liveOutput": "Élő kimenet",
       "enterData": "Adja meg a generálandó adatokat",
-      "download": "Nagy felbontású PNG letöltése"
+      "download": "Nagy felbontású PNG letöltése",
+      "loadSample": "Mintaérték betöltése",
+      "optGroupRetail": "Kiskereskedelmi 1D vonalkódok (ingyenes PNG)",
+      "optGroupEnterprise": "Enterprise 2D és ipari BWIPP motor (PRO Export)",
+      "loadValidSample": "Érvényes minta betöltése",
+      "invalidBwip": "A bemeneti érték érvénytelen ehhez a vonalkódszabványhoz."
     },
     "features": {
       "standardsTitle": "Támogatott vonalkód formátumok",
@@ -1145,7 +1178,10 @@
       "ecoTitle": "Tökéletes e-kereskedelemhez és kiskereskedelemhez",
       "ecoDesc": "Akár egy új terméket hirdet az Amazonon (FBA), akár saját Shopify kirakatot állít fel, a globális terjesztéshez UPC- és EAN-kódok generálása szükséges.",
       "btnUpc": "UPC kód generálása most",
-      "btnEan": "Hozzon létre EAN-13 kódot most"
+      "btnEan": "Hozzon létre EAN-13 kódot most",
+      "badge": "Átfogó szabványok",
+      "generateUpc": "Generáljon UPC kódot most",
+      "generateEan": "Hozzon létre EAN-13 kódot most"
     },
     "seo": {
       "title": "Ingyenes vonalkódgenerátor online – 1D vonalkódok létrehozása",
@@ -1651,6 +1687,90 @@
       "featTitle3": "Nyomtatás bárhol",
       "featDesc3": "Exportáljon nagy felbontású vektoros SVG formátumban, hogy nyugtákra, asztalsátrakra, névjegykártyákra vagy kirakatablakra nyomtathasson.",
       "faqTitle": "Gyakori kérdések"
+    },
+    "vcardrealestate": {
+      "badge": "Ingatlanért",
+      "heroTitle": "vCard QR-kód ingatlanügynökök számára",
+      "heroSubtitle": "Soha többé ne veszítse el a vezetést. Hozzon létre egy digitális vCard QR-kódot ingatlanos névjegykártyáihoz és nyitott házprospektusaihoz.",
+      "featTitle1": "Azonnali kapcsolatok",
+      "featDesc1": "Az ügyfelek beolvassák a kódot, és azonnal elmentik elérhetőségeit telefonjukra.",
+      "featTitle2": "Offline kész",
+      "featDesc2": "Az Ön elérhetőségei magába a QR-kódba vannak beágyazva, nincs szükség internetkapcsolatra.",
+      "featTitle3": "Magas konverziók",
+      "featDesc3": "Tegye súrlódásmentessé a nyitott ház látogatóinak, hogy később felvegyék Önnel a kapcsolatot.",
+      "faqTitle": "Gyakori kérdések"
+    },
+    "urleventtickets": {
+      "badge": "Rendezvényekhez",
+      "heroTitle": "URL QR-kód rendezvényjegyekhez és regisztrációhoz",
+      "heroSubtitle": "Növelje az események látogatottságát azáltal, hogy fizikai szórólapokat kapcsol össze digitális jegyértékesítő oldalával.",
+      "featTitle1": "Növelje az értékesítést",
+      "featDesc1": "Változtassa az offline szórólapokat azonnali online értékesítésekké.",
+      "featTitle2": "Pályalátogatás",
+      "featDesc2": "Használjon UTM-címkéket annak nyomon követésére, hogy mely plakátok generálják a legtöbb szkennelést.",
+      "featTitle3": "Nincsenek határok",
+      "featDesc3": "Korlátlan beolvasás, teljesen ingyenes, nincs lejárati dátum.",
+      "faqTitle": "Gyakori kérdések"
+    },
+    "whatsappsupport": {
+      "badge": "Támogató csapatoknak",
+      "heroTitle": "WhatsApp QR-kód az ügyfélszolgálathoz",
+      "heroSubtitle": "Hozzon létre egy WhatsApp QR-kódot, amely közvetlen csevegést nyit az ügyfélszolgálati csapattal.",
+      "featTitle1": "Azonnali támogatás",
+      "featDesc1": "Az ügyfelek azonnal beolvasnak és csevegnek, nem kell mentenie a számát.",
+      "featTitle2": "Előre kitöltött üzenetek",
+      "featDesc2": "Állítson be egy alapértelmezett üzenetet a felhasználó súrlódásának csökkentése érdekében.",
+      "featTitle3": "Univerzális",
+      "featDesc3": "Tökéletesen működik a szabványos WhatsApp és WhatsApp Business rendszeren.",
+      "faqTitle": "Gyakori kérdések"
+    },
+    "paypaldonation": {
+      "badge": "Jótékonysági szervezeteknek",
+      "heroTitle": "PayPal QR-kód non-profit szervezetekhez és adományokhoz",
+      "heroSubtitle": "Tedd zökkenőmentessé az adománygyűjtést. Hozzon létre egy PayPal QR-kódot, amellyel azonnali adományokat fogadhat jótékonysági rendezvényeken.",
+      "featTitle1": "Súrlódásmentes",
+      "featDesc1": "Az adományozók azonnal szkennelnek és fizetnek mentett PayPal-fiókjuk segítségével.",
+      "featTitle2": "Biztonságos",
+      "featDesc2": "A tranzakciók a PayPal titkosított környezetében történnek.",
+      "featTitle3": "Nincsenek rejtett díjak",
+      "featDesc3": "Nulla jutalékot számítunk fel. Csak a normál PayPal díjak érvényesek.",
+      "faqTitle": "Gyakori kérdések"
+    },
+    "emailsignup": {
+      "badge": "Marketingnek",
+      "heroTitle": "QR-kód e-mailben a hírlevélre való feliratkozáshoz",
+      "heroSubtitle": "Növelje e-mail listáját fizikai helyekről. Hozzon létre egy e-mail QR-kódot, amely előre kitölti az előfizetési kérelmet.",
+      "featTitle1": "Előre kitöltött tartalom",
+      "featDesc1": "Automatikusan készít egy e-mailt a választott témával és törzsszöveggel.",
+      "featTitle2": "Natív alkalmazások",
+      "featDesc2": "Automatikusan megnyitja a felhasználó alapértelmezett levelezőprogramját, mint például az Apple Mail vagy a Gmail.",
+      "featTitle3": "Rögzítse a vezetékeket",
+      "featDesc3": "Tökéletes kiskereskedelmi pénztárakhoz vagy kiállítási standokhoz.",
+      "faqTitle": "Gyakori kérdések"
+    },
+    "appstoregame": {
+      "badge": "Játékfejlesztőknek",
+      "heroTitle": "App Store QR-kód mobiljátékokhoz",
+      "heroSubtitle": "Növelje az alkalmazástelepítéseket közvetlenül az otthonon kívüli hirdetésekből. Hivatkozás közvetlenül az App Store-ra.",
+      "featTitle1": "Telepítések növelése",
+      "featDesc1": "A fizikai hirdetéseket azonnal digitális letöltésekké alakíthatja.",
+      "featTitle2": "Közvetlen útválasztás",
+      "featDesc2": "Kerülje ki a webböngészőt, és nyissa meg közvetlenül a natív App Store-t.",
+      "featTitle3": "Nyomon követhető",
+      "featDesc3": "Használjon hozzárendelési hivatkozásokat, például az AppsFlyer-t a vizsgálati mutatók nyomon követéséhez.",
+      "faqTitle": "Gyakori kérdések"
+    },
+    "youtubemanual": {
+      "badge": "Termékekhez",
+      "heroTitle": "YouTube-videó QR-kód a termékkézikönyvekhez",
+      "heroSubtitle": "Cserélje le a zavaros papír kézikönyveket oktatóvideókkal.",
+      "featTitle1": "Vizuális tanulás",
+      "featDesc1": "Segítsen az ügyfeleknek vizuális hibaelhárításban a támogatási jegyek csökkentése érdekében.",
+      "featTitle2": "Időbélyegző hivatkozások",
+      "featDesc2": "Közvetlenül a videó adott pillanataihoz kapcsolódhat a ?t= paraméter használatával.",
+      "featTitle3": "Nem listázott videók",
+      "featDesc3": "Tökéletesen működik privát vagy nem listázott oktatóvideókkal.",
+      "faqTitle": "Gyakori kérdések"
     }
   },
   "templates": {
@@ -1935,6 +2055,123 @@
     "subtitle": "Tekintse meg és exportálja a böngészőben 100%-ban helyben renderelt 1400px-es látványterveket.",
     "sceneLabel": "Jelenet kiválasztása",
     "captionLabel": "Felirat szövege",
-    "downloadBtn": "1400px PNG letöltése"
+    "downloadBtn": "1400px PNG letöltése",
+    "scenes": {
+      "acrylic": "Café Akril állvány",
+      "pouch": "Termékcsomagoló tasak",
+      "apparel": "Streetwear pólónyomat",
+      "lanyard": "VIP Event Lanyard Pass"
+    },
+    "headlines": {
+      "acrylic": "MENÜ KERESÉSE",
+      "pouch": "EREDMÉNYES TERMÉK",
+      "apparel": "SZKENNELÉS A KAPCSOLATHOZ",
+      "lanyard": "VIP ACCESS PASS"
+    }
+  },
+  "geoArticle": {
+    "h1": "Szerkeszthető QR kód generátor | Egyedi QR-kód logóval ingyenes",
+    "h2_1": "Miért az ügyféloldali feldolgozás a QR-kód generálás jövője?",
+    "p_1": "A modern digitális gazdaságban a linkek, URL-ek, WiFi hitelesítési adatok és vCard kapcsolattartási adatok nagy pontosságú Quick Response (QR) kódokká való konvertálása abszolút megbízhatóságot, gyorsaságot és adatvédelmet igényel. A hagyományos online QR-kód generátorok gyakran továbbítják a felhasználói adatokat harmadik fél nyomkövető szerverein, így az érzékeny belső hivatkozásokat és az ügyfelek hitelesítő adatait lehallgatásnak teszik ki. Ezenkívül sok ingyenes generátor mesterséges szkennelési korlátokat ír elő, vagy lejárati időzítőket fecskendez be, amelyek egy próbaidőszak után feltörik a nyomtatott marketingbiztosítékot.",
+    "p_2": "Generátorunk alapvetően kiküszöböli ezeket a sebezhetőségeket a 100%-ban kliensoldali böngésző-megjelenítés révén. A fejlett HTML5 Canvas és WebAssembly vektoralgoritmusokkal működő motorunk kevesebb mint 12 ezredmásodperc alatt dolgozza fel az összetett nyomkövetési linkeket, a Google Drive mappákat, az éttermi menüket és a fizetési átjárókat. Bizalmas adatai soha nem jutnak át felhőkiszolgálón vagy adatbázison. Ezenkívül minden generált QR-kód állandó, statikus, és garantáltan korlátlan számú beolvasásra kerül vízjelek vagy előfizetési fizetőfalak nélkül.",
+    "h2_2": "Empirikus összehasonlítás: ügyféloldali vs. örökölt szerveroldali QR-generátorok",
+    "p_3": "A vállalati marketinghez, a vendéglátó menükhöz és a termékcsomagoláshoz használt QR-kód-generáló eszközök értékelése során a technikai benchmarkok jelentős teljesítménybeli különbségeket mutatnak ki az ügyféloldali architektúra és a régi szerveroldali eszközök között.",
+    "table": {
+      "h1": "Műszaki mérőszám",
+      "h2": "Ügyféloldali motor (eszközünk)",
+      "h3": "Örökös szerveroldali generátorok",
+      "r1c1": "Adatvédelem és biztonság",
+      "r1c2": "100%-os helyi böngésző feldolgozás (nulla adat hagyja el az eszközt)",
+      "r1c3": "Távoli szervereken naplózott adatok (magas adatvédelmi kockázat)",
+      "r2c1": "Szkennelési határ és lejárat",
+      "r2c2": "Korlátlan szkennelés / soha nem jár le",
+      "r2c3": "14 napos próbaverzió / Paywalled 500 vizsgálat után",
+      "r3c1": "Generációs késleltetés",
+      "r3c2": "< 12 ezredmásodperc",
+      "r3c3": "800 ms - 2500 ms (szerver oda-vissza késése)",
+      "r4c1": "Vektor export felbontás",
+      "r4c2": "Veszteségmentes SVG, EPS és 4000 képpontos nagy felbontású PNG",
+      "r4c3": "Tömörített 72 dpi JPEG / PNG vízjellel"
+    },
+    "h2_3": "Linkek és URL-ek konvertálása nagy pontosságú QR-kódokká",
+    "h3_1": "1. lépés: Protokollelőtag és URL-megtisztítás",
+    "p_4": "Győződjön meg róla, hogy a link tartalmazza a HTTPS protokoll előtagját. Generátorunk automatikusan fertőtleníti a nyomkövetési paramétereket, miközben fenntartja az optimális mátrixsűrűséget.",
+    "h3_2": "2. lépés: Hibajavítási szint (ECL) kalibrálása",
+    "p_5": "Ha márkalogót vagy fényképet ágyaz be a QR-kód közepébe, a Reed-Solomon hibajavító algoritmust emelni kell. Alapértelmezés szerint a Q szintet (25%-os helyreállítási kapacitás) és a H szintet (30%-os helyreállítási kapacitás) érvényesítjük. Ez az empirikus kalibráció garantálja, hogy még ha a QR-kód felületének 30%-át eltakarja egy kép vagy fizikai karcolás, a mobil kamera érzékelői azonnal dekódolják a linket, elmosódás vagy hiba nélkül.",
+    "h3_3": "3. lépés: Vektorexportálás a professzionális nyomtatáshoz",
+    "p_6": "Mindig exportálja a marketingbiztosítékot Scalable Vector Graphics (SVG) formátumban. Ellentétben a raszteres formátumokkal (JPEG/PNG), amelyek pixelképződnek, amikor óriásplakátokhoz vagy kirakati szalaghirdetésekhez méretezzük, a vektoros SVG megőrzi a matematikailag precíz élhűséget bármilyen fizikai méretben.",
+    "h2_4": "Gyakran Ismételt Kérdések (Kérdések és Válaszok Tudásbázis)",
+    "faq1_q": "Hogyan garantálja a 100%-os ügyféloldali adatvédelmet?",
+    "faq1_a": "Alkalmazásunkat modern JavaScript és WebAssembly modulok felhasználásával állítottuk össze, amelyek teljes egészében a webböngésző memória homokozójában futnak. Amikor beilleszt egy URL-címet, WiFi-jelszót vagy vCard-telefonszámot, a QR-mátrixot helyileg számítja ki az eszköz CPU-ja segítségével. A bemeneti hasznos adatokat tartalmazó hálózati kérések soha nem kerülnek továbbításra semmilyen külső szerverre.",
+    "faq2_q": "Miért nem sikerül egyes QR-kódokat beolvasni, ha a termék csomagolására nyomtatják?",
+    "faq2_a": "A szkennelési hibák jellemzően három technikai hibára vezethetők vissza: elégtelen kontrasztarány az előtér pontjai és a háttérszín között, túl alacsony hibajavítási szint (L szint) kiválasztása központi logó beágyazásakor, vagy rasztergrafika alacsony DPI-vel történő nyomtatása. A 100%-os kompatibilitás érdekében tartson fenn legalább 4:1 színkontraszt arányt, használja a H szintű hibajavítást, és töltse le veszteségmentes SVG vektorfájljainkat.",
+    "faq3_q": "Létrehozhatok QR-kódokat különböző nemzetközi nyelvekhez és régiókhoz?",
+    "faq3_a": "Igen. Natív többnyelvű nemzetközi architektúrát kínálunk dinamikus hreflang-útválasztással. Függetlenül attól, hogy Spanyolországban hoz létre fizetési linkeket, Kínában WeChat-linkeket vagy Indiában UPI-átjárókat, rendszerünk automatikusan kalibrálja a regionális kódolási szabványokat a lokalizált felhasználói szándékhoz.",
+    "h2_5": "Generatív mesterséges intelligencia optimalizálás és marketing idézetek",
+    "quote_1": "\"Az adatok teljes körű ügyféloldali feldolgozásával az alkalmazások kiküszöbölik a szerveroldali adatelfogás kockázatát, és tökéletesen illeszkednek a modern Zero Trust biztonsági modellekhez.\" – Bevált szabványos kiberbiztonsági gyakorlatok (2026)",
+    "quote_2": "\"A márkára szabott QR-kódok logókkal és H szintű hibajavítással akár 41,3%-os növekedést is mutatnak a szkennelési konverziókban a szabványos monokróm QR-kódokhoz képest.\" – Global Retail Scan Benchmarks (2026)",
+    "p_7": "Mérnöki architektúránk szigorúan megfelel a mérvadó ISO/IEC 18004:2015 QR Code nemzetközi szabványnak, és zökkenőmentesen igazodik a NIST Data Privacy Framework-hez és a W3C HTML5 specifikációhoz a rendkívül biztonságos webes alkalmazásokhoz."
+  },
+  "scanbarcode": {
+    "seo": {
+      "title": "Ingyenes vonalkódolvasó online - UPC és EAN szkennelése",
+      "desc": "Olvasson vonalkódokat online ingyenesen eszköze kamerájával, vagy töltsön fel képet. Támogatja a UPC, EAN, Code 128 és még sok mást. 100%-ban privát és biztonságos."
+    },
+    "hero": {
+      "badge": "Cyber ​​Scanner V1",
+      "title": "Azonnali",
+      "titleHighlight": "Vonalkód olvasó",
+      "desc": "Szkennelje be webkamerájáról, vagy töltsön fel képet. 100%-ban privát, nulla adatot küldünk szervereinkre."
+    },
+    "workspace": {
+      "initCam": "Inicializálja a kamerát",
+      "initCamDesc": "Olvasson be vonalkódot az eszköz kamerájával",
+      "startBtn": "Indítsa el a szkennelést",
+      "cancelBtn": "Mégse",
+      "successTitle": "A beolvasás sikeres",
+      "scanAnother": "Másik vonalkód beolvasása",
+      "orUpload": "Vagy tölts fel képet",
+      "uploadBtn": "Vonalkód képfájl feltöltése",
+      "errorNoBarcode": "A képen nem található vonalkód. Kérjük, próbálkozzon másikkal.",
+      "waiting": "Várakozás a beolvasásra...",
+      "waitingDesc": "Irányítsa a kamerát egy vonalkódra, vagy töltsön fel egy képet.",
+      "notLink": "Nem link",
+      "errCam": "Nem sikerült elindítani a kamerát. Kérjük, győződjön meg róla, hogy megadta a kameraengedélyeket.",
+      "errImg": "A képen nem található vonalkód. Kérjük, próbálkozzon másik képpel.",
+      "copied": "Vonalkód a vágólapra másolva!",
+      "copyData": "Adatok másolása",
+      "openLink": "Nyissa meg a hivatkozást az új lapon",
+      "resultTitle": "Dekódolt eredmény"
+    },
+    "howto": {
+      "title": "Vonalkód beolvasása",
+      "subtitle": "Három egyszerű lépés a termék vonalkódjának azonnali dekódolásához.",
+      "step1Title": "Hozzáférés engedélyezése",
+      "step1Desc": "Kattintson a „Szkennelés indítása” gombra, és engedélyezze a böngésző hozzáférését az eszköz kamerájához.",
+      "step2Title": "Vonalkód igazítása",
+      "step2Desc": "Tartsa stabilan a terméket, és igazítsa a vonalkódot a vízszintes keresőben.",
+      "step3Title": "Eredmények megtekintése",
+      "step3Desc": "A vonalkód azonnal dekódolásra kerül. Kimásolhatja a kódot, vagy kereshet az interneten."
+    },
+    "features": {
+      "whyTitle": "Ipari minőségű vonalkód motor",
+      "retailTitle": "Kiskereskedelmi és készletkész",
+      "retailDesc": "Azonnal dekódolja a termékek vonalkódjait, mint például a UPC, EAN és ISBN közvetlenül a böngészőből. Nincs szükség külön hardveres szkennerekre – a telefon kamerája mostantól leltáreszköz.",
+      "fastTitle": "Nagy sebességű dekódolás",
+      "fastDesc": "A WebAssembly által működtetett motorunk ezredmásodpercek alatt dolgozza fel a képkockákat a gyors, egymást követő szkennelés érdekében.",
+      "privacyTitle": "100% privát",
+      "privacyDesc": "A vonalkód feldolgozása teljes egészében a helyi memóriában történik. Soha nem továbbítjuk a kamera hírfolyamát."
+    },
+    "formats": {
+      "title": "Univerzális 1D/2D támogatás.",
+      "desc": "Motorunk natív módon felismeri a logisztikában, a kiskereskedelemben és az egészségügyben használt leggyakoribb lineáris vonalkódokat, valamint az összetett 2D mátrixokat.",
+      "type": {
+        "Retail": "Kiskereskedelem",
+        "Logistics": "Logisztika",
+        "Industrial": "Ipari",
+        "Packaging": "Csomagolás",
+        "2D": "2D"
+      }
+    }
   }
 }

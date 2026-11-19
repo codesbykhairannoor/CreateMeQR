@@ -188,7 +188,9 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
                         : theme.fg
                     }}
                   />
-                  <span className="text-[11px] font-semibold text-zinc-800 dark:text-zinc-200 truncate">{theme.name}</span>
+                  <span className="text-[11px] font-semibold text-zinc-800 dark:text-zinc-200 truncate">
+                    {t(`customization.themes.${theme.id}`, theme.name)}
+                  </span>
                 </button>
               ))}
             </div>
@@ -213,7 +215,7 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
                         : 'border-slate-200 dark:border-slate-700 text-zinc-700 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-slate-800/60'
                     }`}
                   >
-                    <span className="truncate">{frame.label}</span>
+                    <span className="truncate">{t(`customization.frames.${frame.id}`, frame.label)}</span>
                     {frame.isPro && !isPro && (
                       <span className="ml-1 px-1 py-0.2 rounded text-[9px] font-bold bg-blue-500/15 text-blue-700 dark:text-blue-300 border border-blue-500/30 flex items-center gap-0.5 shrink-0">
                         <Sparkles size={8} /> {user && freeTrialsRemaining > 0 ? `${freeTrialsRemaining} Free` : 'PRO'}
@@ -385,7 +387,9 @@ export default function CustomizationPanel({ visuals, setVisuals }) {
           </div>
 
           <div>
-            <label className="block text-xs font-semibold mb-2 text-zinc-800 dark:text-zinc-200">Error Correction Level (ISO/IEC 18004)</label>
+            <label className="block text-xs font-semibold mb-2 text-zinc-800 dark:text-zinc-200">
+              {t('customization.errorCorrection', 'Error Correction Level (ISO/IEC 18004)')}
+            </label>
             <div className="grid grid-cols-4 gap-2">
               {['L', 'M', 'Q', 'H'].map(level => (
                 <button

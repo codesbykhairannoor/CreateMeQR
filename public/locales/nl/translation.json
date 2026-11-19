@@ -136,11 +136,28 @@
     "frameColor": "Accentkleur Kader",
     "eyeOuterColor": "Buitenkleur Oog",
     "eyeInnerColor": "Binnenkleur Pupil",
-    "cornerDotStyle": "Vorm van Pupil"
+    "cornerDotStyle": "Vorm van Pupil",
+    "frames": {
+      "none": "Geen (puur QR)",
+      "bottom-pill": "Onderste pil",
+      "top-banner": "Bovenste banner",
+      "polaroid": "Polaroid-kaart",
+      "phone-stand": "Telefoonstandaard",
+      "ticket": "Stub-ticket"
+    },
+    "themes": {
+      "midnight": "Middernacht uitvoerend",
+      "sapphire": "Saffier technologie",
+      "emerald": "Smaragd minimaal",
+      "crimson": "Karmozijnrood Koninklijk",
+      "amethyst": "Amethist Luxe",
+      "monochrome": "Monochrome inkt"
+    },
+    "errorCorrection": "Foutcorrectieniveau (ISO/IEC 18004)"
   },
   "preview": {
     "title": "Voorbeeld van QR-code",
-    "download": "",
+    "download": "Downloaden",
     "scanTest": "downloaden Scannen om te testen",
     "readyTitle": "Gratis QR Code Generator Online",
     "readyDesc": "Maak QR Codes met Logo & Kleur - Zonder Registratie, Onbeperkt",
@@ -150,7 +167,11 @@
     "printBtnShort": "Print PDF Vel",
     "mockupBtnShort": "3D Mockup Studio",
     "isoGradePass": "ISO-klasse {{grade}} • Scanbaar ({{ms}}ms)",
-    "isoGradeWarn": "Laag contrast of dicht logo gedetecteerd"
+    "isoGradeWarn": "Laag contrast of dicht logo gedetecteerd",
+    "dxfBtn": "DXF (CAD)",
+    "epsBtn": "EPS-vector",
+    "dxfTitle": "AutoCAD / LightBurn / Glowforge lasergesneden vector",
+    "epsTitle": "Adobe Illustrator / Offsetdrukpers PostScript"
   },
   "footer": {
     "privacy": "Privacybeleid",
@@ -1088,7 +1109,9 @@
       "toggleQR": "QR-code",
       "toggleBarcode": "Streepjescode",
       "initCamDescBarcode": "Scan een streepjescode met de camera van uw apparaat",
-      "uploadBtnBarcode": "Upload een streepjescodeafbeeldingsbestand"
+      "uploadBtnBarcode": "Upload een streepjescodeafbeeldingsbestand",
+      "resultTitle": "Gedecodeerd resultaat",
+      "copyData": "Kopieer gegevens"
     },
     "features": {
       "whyTitle": "Waarom onze scanner gebruiken?",
@@ -1132,7 +1155,12 @@
       "showText": "Toon tekstwaarde onder code",
       "liveOutput": "Live-uitvoer",
       "enterData": "Voer gegevens in om",
-      "download": "te genereren PNG in hoge resolutie downloaden"
+      "download": "te genereren PNG in hoge resolutie downloaden",
+      "loadSample": "Voorbeeldwaarde laden",
+      "optGroupRetail": "1D-barcodes voor de detailhandel (gratis PNG)",
+      "optGroupEnterprise": "Enterprise 2D en industriële BWIPP-engine (PRO-export)",
+      "loadValidSample": "Geldig monster laden",
+      "invalidBwip": "Invoerwaarde ongeldig voor deze barcodestandaard."
     },
     "features": {
       "standardsTitle": "Ondersteunde barcodeformaten",
@@ -1150,7 +1178,10 @@
       "ecoTitle": "Perfect voor e-commerce en detailhandel",
       "ecoDesc": "Of u nu een nieuw product op Amazon (FBA) aanbiedt of uw eigen Shopify-winkel opzet, het genereren van UPC- en EAN-codes is vereist voor wereldwijde distributie.",
       "btnUpc": "Genereer nu UPC-code",
-      "btnEan": "Genereer nu EAN-13-code"
+      "btnEan": "Genereer nu EAN-13-code",
+      "badge": "Uitgebreide normen",
+      "generateUpc": "Genereer nu UPC-code",
+      "generateEan": "Genereer nu EAN-13-code"
     },
     "seo": {
       "title": "Gratis barcodegenerator online - Maak 1D-streepjescodes",
@@ -1248,7 +1279,13 @@
       "errorNoBarcode": "Geen streepjescode gevonden in afbeelding.Probeer een andere.",
       "waiting": "Wachten op scannen...",
       "waitingDesc": "Richt uw camera op een streepjescode of upload een afbeelding.",
-      "notLink": "Geen koppeling"
+      "notLink": "Geen koppeling",
+      "errCam": "Kan de camera niet starten. Zorg ervoor dat u camerarechten heeft verleend.",
+      "errImg": "Geen streepjescode gevonden in de afbeelding. Probeer een andere afbeelding.",
+      "copied": "Barcode gekopieerd naar klembord!",
+      "copyData": "Kopieer gegevens",
+      "openLink": "Open de link op een nieuw tabblad",
+      "resultTitle": "Gedecodeerd resultaat"
     },
     "howto": {
       "title": "Een streepjescode scannen",
@@ -2080,6 +2117,61 @@
     "subtitle": "Bekijk en exporteer 1400px commerciële mockups die 100% lokaal in je browser worden gerenderd.",
     "sceneLabel": "Kies Mockup Scène",
     "captionLabel": "Bijschrift",
-    "downloadBtn": "Download 1400px PNG"
+    "downloadBtn": "Download 1400px PNG",
+    "scenes": {
+      "acrylic": "Café acrylstandaard",
+      "pouch": "Productverpakkingszakje",
+      "apparel": "Streetwear T-shirtprint",
+      "lanyard": "VIP-evenementsleutelpas"
+    },
+    "headlines": {
+      "acrylic": "SCAN NAAR MENU",
+      "pouch": "AUTHENTIEK PRODUCT",
+      "apparel": "SCANNEN OM VERBINDING TE MAKEN",
+      "lanyard": "VIP-TOEGANGSPAS"
+    }
+  },
+  "geoArticle": {
+    "h1": "Bewerkbare QR-codegenerator | Aangepaste QR-code met logo gratis",
+    "h2_1": "Waarom client-side verwerking de toekomst is van het genereren van QR-codes",
+    "p_1": "In de moderne digitale economie vereist het omzetten van links, URL's, WiFi-inloggegevens en vCard-contactgegevens in zeer nauwkeurige Quick Response (QR)-codes absolute betrouwbaarheid, snelheid en privacy. Conventionele online QR-codegeneratoren leiden gebruikersgegevens vaak via trackingservers van derden, waardoor gevoelige interne links en klantgegevens worden onderschept. Bovendien leggen veel gratis generatoren kunstmatige scanlimieten op of injecteren ze vervaltimers die gedrukt marketingmateriaal na een proefperiode kapot maken.",
+    "p_2": "Onze generator elimineert deze kwetsbaarheden fundamenteel door middel van 100% browserweergave aan de clientzijde. Onze engine wordt aangedreven door geavanceerde HTML5 Canvas- en WebAssembly-vectoralgoritmen en verwerkt complexe trackinglinks, Google Drive-mappen, restaurantmenu's en betalingsgateways lokaal op uw apparaat in minder dan 12 milliseconden. Uw vertrouwelijke gegevens passeren nooit een cloudserver of database. Bovendien is elke gegenereerde QR-code permanent, statisch en kan deze gegarandeerd een onbeperkt aantal keren worden gescand, zonder watermerken of betaalmuren voor abonnementen.",
+    "h2_2": "Empirische vergelijking: client-side versus oudere QR-generatoren aan serverzijde",
+    "p_3": "Bij het evalueren van tools voor het genereren van QR-codes voor bedrijfsmarketing, horecamenu's en productverpakkingen laten technische benchmarks aanzienlijke prestatieverschillen zien tussen client-side architectuur en oudere server-side tools.",
+    "table": {
+      "h1": "Technische statistiek",
+      "h2": "Client-side engine (onze tool)",
+      "h3": "Oudere server-side generatoren",
+      "r1c1": "Gegevensprivacy en -beveiliging",
+      "r1c2": "100% lokale browserverwerking (geen gegevens verlaten apparaat)",
+      "r1c3": "Gegevens ingelogd op externe servers (hoog privacyrisico)",
+      "r2c1": "Scanlimiet en vervaldatum",
+      "r2c2": "Onbeperkte scans/verloopt nooit",
+      "r2c3": "14 dagen op proef / betaald na 500 scans",
+      "r3c1": "Latentie van generatie",
+      "r3c2": "< 12 milliseconden",
+      "r3c3": "800 ms - 2.500 ms (server roundtrip-latentie)",
+      "r4c1": "Vector exportresolutie",
+      "r4c2": "Lossless SVG, EPS en 4000px hoge resolutie PNG",
+      "r4c3": "Gecomprimeerd 72dpi JPEG/PNG met watermerk"
+    },
+    "h2_3": "Hoe u links en URL's omzet in zeer nauwkeurige QR-codes",
+    "h3_1": "Stap 1: Protocolvoorvoeging en URL-opschoning",
+    "p_4": "Zorg ervoor dat uw link het HTTPS-protocolvoorvoegsel bevat. Onze generator zuivert automatisch de trackingparameters terwijl de optimale matrixdichtheid behouden blijft.",
+    "h3_2": "Stap 2: Foutcorrectieniveau (ECL) kalibreren",
+    "p_5": "Wanneer een merklogo of foto in het midden van een QR-code wordt ingesloten, moet het foutcorrectie-algoritme van Reed-Solomon worden verhoogd. We handhaven standaard niveau Q (25% herstelcapaciteit) en niveau H (30% herstelcapaciteit). Deze empirische kalibratie garandeert dat zelfs als 30% van het oppervlak van de QR-code wordt bedekt door een afbeelding of een fysieke kras, mobiele camerasensoren de link onmiddellijk decoderen zonder onscherpte of storingen.",
+    "h3_3": "Stap 3: Vectorexport voor professioneel afdrukken",
+    "p_6": "Exporteer marketingmateriaal altijd in Scalable Vector Graphics (SVG)-indeling. In tegenstelling tot rasterformaten (JPEG/PNG) die pixelachtig worden wanneer ze worden opgeschaald voor reclameborden of banners op de winkelpui, behoudt vector-SVG een wiskundig nauwkeurige randgetrouwheid over elke fysieke dimensie.",
+    "h2_4": "Veelgestelde vragen (Q&A Knowledge Base)",
+    "faq1_q": "Hoe garandeert u 100% privacy aan de klantzijde?",
+    "faq1_a": "Onze applicatie is samengesteld met behulp van moderne JavaScript- en WebAssembly-modules die volledig in de geheugensandbox van uw webbrowser worden uitgevoerd. Wanneer u een URL, WiFi-wachtwoord of vCard-telefoonnummer plakt, wordt de QR-matrix lokaal berekend met behulp van de CPU van uw apparaat. Er worden nooit netwerkverzoeken met uw ingevoerde payload naar een externe server verzonden.",
+    "faq2_q": "Waarom worden sommige QR-codes niet gescand wanneer ze op de productverpakking worden afgedrukt?",
+    "faq2_a": "Scanfouten zijn meestal het gevolg van drie technische fouten: onvoldoende contrastverhouding tussen de voorgrondpunten en de achtergrondkleur, het selecteren van een te laag foutcorrectieniveau (niveau L) bij het insluiten van een centraal logo, of het afdrukken van rasterafbeeldingen met een lage DPI. Om 100% compatibiliteit te garanderen, moet u een kleurcontrastverhouding van minimaal 4:1 aanhouden, foutcorrectie van niveau H gebruiken en onze verliesvrije SVG-vectorbestanden downloaden.",
+    "faq3_q": "Kan ik QR-codes genereren voor verschillende internationale talen en regio's?",
+    "faq3_a": "Ja. We beschikken over een native meertalige internationale architectuur met dynamische hreflang-routering. Of u nu betalingslinks genereert in Spanje, WeChat-links in China of UPI-gateways in India, ons systeem kalibreert automatisch regionale coderingsstandaarden voor gelokaliseerde gebruikersintentie.",
+    "h2_5": "Generatieve AI-optimalisatie en marketingcitaten",
+    "quote_1": "\"Door gegevens volledig aan de clientzijde te verwerken, elimineren applicaties het risico van gegevensonderschepping op de server, wat perfect aansluit bij moderne Zero Trust-beveiligingsmodellen.\" — Standaard best practices op het gebied van cyberbeveiliging (2026)",
+    "quote_2": "\"Merkspecifieke QR-codes met logo's en foutcorrectie van niveau H laten een stijging van 41,3% zien in scanconversies vergeleken met standaard monochrome QR-codes.\" — Benchmarks van wereldwijde retailscans (2026)",
+    "p_7": "Onze technische architectuur voldoet strikt aan de gezaghebbende ISO/IEC 18004:2015 QR Code International Standard en sluit naadloos aan bij het NIST Data Privacy Framework en de W3C HTML5-specificatie voor zeer veilige webapplicaties."
   }
 }

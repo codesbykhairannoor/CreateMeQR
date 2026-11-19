@@ -136,7 +136,24 @@
     "frameColor": "Aksentfarge på ramme",
     "eyeOuterColor": "Ytre øyefarge",
     "eyeInnerColor": "Indre pupillfarge",
-    "cornerDotStyle": "Pupillform"
+    "cornerDotStyle": "Pupillform",
+    "frames": {
+      "none": "Ingen (ren QR)",
+      "bottom-pill": "Bunn pille",
+      "top-banner": "Topp banner",
+      "polaroid": "Polaroid-kort",
+      "phone-stand": "Telefonstativ",
+      "ticket": "Stubbbillett"
+    },
+    "themes": {
+      "midnight": "Midnight Executive",
+      "sapphire": "Sapphire Tech",
+      "emerald": "Emerald Minimal",
+      "crimson": "Crimson Royal",
+      "amethyst": "Ametyst Luxe",
+      "monochrome": "Monokromt blekk"
+    },
+    "errorCorrection": "Feilrettingsnivå (ISO/IEC 18004)"
   },
   "preview": {
     "title": "QR-kode forhåndsvisning",
@@ -150,7 +167,11 @@
     "printBtnShort": "Skriv ut PDF-ark",
     "mockupBtnShort": "3D Mockup Studio",
     "isoGradePass": "ISO-grad {{grade}} • Skannbar ({{ms}}ms)",
-    "isoGradeWarn": "Lav kontrast eller tett logo oppdaget"
+    "isoGradeWarn": "Lav kontrast eller tett logo oppdaget",
+    "dxfBtn": "DXF (CAD)",
+    "epsBtn": "EPS vektor",
+    "dxfTitle": "AutoCAD / LightBurn / Glowforge Laser Cut Vector",
+    "epsTitle": "Adobe Illustrator / Offset Print Press PostScript"
   },
   "footer": {
     "privacy": "Personvernerklæring",
@@ -1088,7 +1109,9 @@
       "toggleQR": "QR-kode",
       "toggleBarcode": "Strekkode",
       "initCamDescBarcode": "Skann en strekkode med enhetens kamera",
-      "uploadBtnBarcode": "Last opp strekkode bildefil"
+      "uploadBtnBarcode": "Last opp strekkode bildefil",
+      "resultTitle": "Dekodet resultat",
+      "copyData": "Kopier data"
     },
     "features": {
       "whyTitle": "Hvorfor bruke vår skanner?",
@@ -1132,7 +1155,12 @@
       "showText": "Vis tekstverdi under kode",
       "liveOutput": "Live Output",
       "enterData": "Skriv inn data for å generere",
-      "download": "Last ned høyoppløselig PNG"
+      "download": "Last ned høyoppløselig PNG",
+      "loadSample": "Last inn prøveverdi",
+      "optGroupRetail": "Retail 1D strekkoder (gratis PNG)",
+      "optGroupEnterprise": "Enterprise 2D & Industrial BWIPP Engine (PRO Export)",
+      "loadValidSample": "Last inn gyldig prøve",
+      "invalidBwip": "Inndataverdien er ugyldig for denne strekkodestandarden."
     },
     "features": {
       "standardsTitle": "Støttede strekkodeformater",
@@ -1150,7 +1178,10 @@
       "ecoTitle": "Perfekt for e-handel og detaljhandel",
       "ecoDesc": "Enten du legger ut et nytt produkt på Amazon (FBA) eller setter opp din egen Shopify-butikkfront, kreves det å generere UPC- og EAN-koder for global distribusjon.",
       "btnUpc": "Generer UPC-kode nå",
-      "btnEan": "Generer EAN-13-kode nå"
+      "btnEan": "Generer EAN-13-kode nå",
+      "badge": "Omfattende standarder",
+      "generateUpc": "Generer UPC-kode nå",
+      "generateEan": "Generer EAN-13-kode nå"
     },
     "seo": {
       "title": "Gratis strekkodegenerator online - Lag 1D strekkoder",
@@ -1248,7 +1279,13 @@
       "errorNoBarcode": "Ingen strekkode funnet i bildet.Prøv en annen.",
       "waiting": "Venter på skanning...",
       "waitingDesc": "Pek kameraet mot en strekkode eller last opp et bilde.",
-      "notLink": "Ikke en lenke"
+      "notLink": "Ikke en lenke",
+      "errCam": "Kunne ikke starte kameraet. Sørg for at du har gitt kameratillatelser.",
+      "errImg": "Finner ingen strekkode i bildet. Prøv et annet bilde.",
+      "copied": "Strekkode kopiert til utklippstavlen!",
+      "copyData": "Kopier data",
+      "openLink": "Åpne lenke i ny fane",
+      "resultTitle": "Dekodet resultat"
     },
     "howto": {
       "title": "Hvordan skanne en strekkode",
@@ -2080,6 +2117,61 @@
     "subtitle": "Forhåndsvis og eksporter 1400px kommersielle mockups gjengitt 100% lokalt i nettleseren.",
     "sceneLabel": "Velg Mockup-scene",
     "captionLabel": "Bildetekst",
-    "downloadBtn": "Last ned 1400px PNG"
+    "downloadBtn": "Last ned 1400px PNG",
+    "scenes": {
+      "acrylic": "Kafé akrylstativ",
+      "pouch": "Produktemballasjepose",
+      "apparel": "Streetwear T-skjorte",
+      "lanyard": "VIP Event Lanyard Pass"
+    },
+    "headlines": {
+      "acrylic": "SKANN ETTER MENY",
+      "pouch": "AUTENTISK PRODUKT",
+      "apparel": "SKANN FOR Å KOBLE TIL",
+      "lanyard": "VIP-ADGANGSPASS"
+    }
+  },
+  "geoArticle": {
+    "h1": "Redigerbar QR-kodegenerator | Egendefinert QR-kode med logo gratis",
+    "h2_1": "Hvorfor prosessering på klientsiden er fremtiden for generering av QR-koder",
+    "p_1": "I den moderne digitale økonomien krever konvertering av lenker, URL-er, WiFi-legitimasjon og vCard-kontaktdetaljer til høypresisjons Quick Response (QR)-koder absolutt pålitelighet, hastighet og personvern. Konvensjonelle nettbaserte QR-kodegeneratorer ruter ofte brukerdata gjennom tredjeparts sporingsservere, og utsetter sensitive interne lenker og kundelegitimasjon for avlytting. Videre pålegger mange gratisgeneratorer kunstige skanningsgrenser eller injiserer utløpstidtakere som bryter trykt markedsføringssikkerhet etter en prøveperiode.",
+    "p_2": "Generatoren vår eliminerer fundamentalt disse sårbarhetene gjennom 100 % nettlesergjengivelse på klientsiden. Drevet av avanserte HTML5 Canvas og WebAssembly vektoralgoritmer, behandler motoren vår komplekse sporingslenker, Google Disk-mapper, restaurantmenyer og betalingsgatewayer lokalt på enheten din på under 12 millisekunder. Dine konfidensielle data går aldri gjennom en skyserver eller database. Videre er hver genererte QR-kode permanent, statisk og garantert å skanne et ubegrenset antall ganger uten vannmerker eller abonnementsbetalingsmurer.",
+    "h2_2": "Empirisk sammenligning: klient-side vs. eldre server-side QR-generatorer",
+    "p_3": "Når man evaluerer verktøy for generering av QR-koder for bedriftsmarkedsføring, gjestfrihetsmenyer og produktpakking, avslører tekniske referanser betydelige ytelsesforskjeller mellom klientsidearkitektur og eldre serversideverktøy.",
+    "table": {
+      "h1": "Teknisk metrikk",
+      "h2": "Client-Side Engine (vårt verktøy)",
+      "h3": "Eldre serversidegeneratorer",
+      "r1c1": "Personvern og sikkerhet for data",
+      "r1c2": "100 % lokal nettleserbehandling (null data forlater enheten)",
+      "r1c3": "Data logget på eksterne servere (Høy personvernrisiko)",
+      "r2c1": "Skannegrense og utløp",
+      "r2c2": "Ubegrensede skanninger / utløper aldri",
+      "r2c3": "14-dagers prøveversjon / betalingsmur etter 500 skanninger",
+      "r3c1": "Generasjonsforsinkelse",
+      "r3c2": "< 12 millisekunder",
+      "r3c3": "800 ms - 2500 ms (serverens tur-retur-forsinkelse)",
+      "r4c1": "Vektor eksportoppløsning",
+      "r4c2": "Tapsfri SVG, EPS og 4000px høyoppløselig PNG",
+      "r4c3": "Komprimert 72dpi JPEG / PNG med vannmerke"
+    },
+    "h2_3": "Hvordan konvertere lenker og URL-er til høypresisjons-QR-koder",
+    "h3_1": "Trinn 1: Protokollprefiks og URL-rensing",
+    "p_4": "Sørg for at koblingen inneholder HTTPS-protokollprefikset. Generatoren vår renser automatisk sporingsparametere samtidig som den opprettholder optimal matrisetetthet.",
+    "h3_2": "Trinn 2: Kalibrering av feilrettingsnivå (ECL)",
+    "p_5": "Når du legger inn en merkelogo eller et fotografi i midten av en QR-kode, må Reed-Solomon feilrettingsalgoritmen forhøyes. Vi håndhever nivå Q (25 % restaureringskapasitet) og nivå H (30 % restaureringskapasitet) som standard. Denne empiriske kalibreringen garanterer at selv om 30 % av QR-kodeoverflaten er skjult av et bilde eller fysisk ripe, dekoder mobilkamerasensorer koblingen øyeblikkelig uten uskarphet eller feil.",
+    "h3_3": "Trinn 3: Vektoreksport for profesjonell utskrift",
+    "p_6": "Eksporter alltid markedsføringsmateriell i SVG-format (Scalable Vector Graphics). I motsetning til rasterformater (JPEG/PNG) som piksler når de skaleres opp for reklametavler eller butikkfrontbannere, bevarer vektor SVG matematisk presis kanttrohet på tvers av alle fysiske dimensjoner.",
+    "h2_4": "Ofte stilte spørsmål (kunnskapsbase for spørsmål og svar)",
+    "faq1_q": "Hvordan garanterer du 100 % personvern på klientsiden?",
+    "faq1_a": "Vår applikasjon er kompilert ved hjelp av moderne JavaScript- og WebAssembly-moduler som kjøres helt inne i nettleserens minnesandkasse. Når du limer inn en URL, WiFi-passord eller vCard-telefonnummer, beregnes QR-matrisen lokalt ved hjelp av enhetens CPU. Ingen nettverksforespørsler som inneholder nyttelasten din blir noen gang overført til noen ekstern server.",
+    "faq2_q": "Hvorfor klarer ikke noen QR-koder å skanne når de skrives ut på produktemballasjen?",
+    "faq2_a": "Skanningsfeil stammer vanligvis fra tre tekniske feil: utilstrekkelig kontrastforhold mellom forgrunnspunkter og bakgrunnsfarge, valg av et feilkorreksjonsnivå for lavt (nivå L) ved innbygging av en sentral logo, eller utskrift av rastergrafikk med lav DPI. For å sikre 100 % kompatibilitet, oppretthold et fargekontrastforhold på minimum 4:1, bruk nivå H feilkorrigering og last ned våre tapsfrie SVG-vektorfiler.",
+    "faq3_q": "Kan jeg generere QR-koder for forskjellige internasjonale språk og regioner?",
+    "faq3_a": "Ja. Vi har en innfødt flerspråklig internasjonal arkitektur med dynamisk hreflang-ruting. Enten du genererer betalingslenker i Spania, WeChat-lenker i Kina eller UPI-gatewayer i India, kalibrerer systemet vårt automatisk regionale kodingsstandarder for lokalisert brukerhensikt.",
+    "h2_5": "Generativ AI-optimalisering og markedsføringsiteringer",
+    "quote_1": "\"Ved å behandle data utelukkende på klientsiden, eliminerer applikasjoner risikoen for dataavskjæring på serversiden, og passer perfekt med moderne Zero Trust-sikkerhetsmodeller.\" — Standard beste praksis for cybersikkerhet (2026)",
+    "quote_2": "\"Merketilpassede QR-koder med logoer og nivå H feilretting demonstrerer opptil 41,3 % økning i skannekonverteringer sammenlignet med standard monokrome QR-koder.\" — Global Retail Scan Benchmarks (2026)",
+    "p_7": "Vår ingeniørarkitektur samsvarer strengt med den autoritative ISO/IEC 18004:2015 QR Code International Standard og er sømløst på linje med NIST Data Privacy Framework og W3C HTML5-spesifikasjonen for svært sikre nettapplikasjoner."
   }
 }

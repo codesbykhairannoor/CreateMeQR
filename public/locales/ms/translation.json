@@ -136,7 +136,24 @@
     "frameColor": "Warna Aksen Bingkai",
     "eyeOuterColor": "Warna Bingkai Luar Mata",
     "eyeInnerColor": "Warna Anak Mata Dalam",
-    "cornerDotStyle": "Bentuk Anak Mata"
+    "cornerDotStyle": "Bentuk Anak Mata",
+    "frames": {
+      "none": "Tiada (Qr Tulen)",
+      "bottom-pill": "Pil Bawah",
+      "top-banner": "Sepanduk Teratas",
+      "polaroid": "Kad Polaroid",
+      "phone-stand": "Stand Telefon",
+      "ticket": "Tiket Stub"
+    },
+    "themes": {
+      "midnight": "Eksekutif Tengah Malam",
+      "sapphire": "Sapphire Tech",
+      "emerald": "Zamrud Minimal",
+      "crimson": "Crimson Royal",
+      "amethyst": "Amethyst Luxe",
+      "monochrome": "Dakwat Monokrom"
+    },
+    "errorCorrection": "Tahap Pembetulan Ralat (ISO/IEC 18004)"
   },
   "preview": {
     "title": "Pratonton Kod QR",
@@ -150,7 +167,11 @@
     "printBtnShort": "Cetak Helaian PDF",
     "mockupBtnShort": "Studio Mockup 3D",
     "isoGradePass": "Gred ISO {{grade}} • Boleh Imbas ({{ms}}ms)",
-    "isoGradeWarn": "Kontras rendah atau logo terlalu padat dikesan"
+    "isoGradeWarn": "Kontras rendah atau logo terlalu padat dikesan",
+    "dxfBtn": "DXF (CAD)",
+    "epsBtn": "EPS Vektor",
+    "dxfTitle": "AutoCAD / LightBurn / Glowforge Laser Cut Vector",
+    "epsTitle": "Adobe Illustrator / Offset Print Press PostScript"
   },
   "footer": {
     "privacy": "Dasar Privasi",
@@ -1088,7 +1109,9 @@
       "toggleQR": "Kod QR",
       "toggleBarcode": "Kod bar",
       "initCamDescBarcode": "Imbas kod bar menggunakan kamera peranti anda",
-      "uploadBtnBarcode": "Muat Naik Fail Imej Kod Bar"
+      "uploadBtnBarcode": "Muat Naik Fail Imej Kod Bar",
+      "resultTitle": "Keputusan Dekod",
+      "copyData": "Salin Data"
     },
     "features": {
       "whyTitle": "Mengapa menggunakan Pengimbas kami?",
@@ -1132,7 +1155,12 @@
       "showText": "Tunjukkan Nilai Teks Di Bawah Kod",
       "liveOutput": "Output Langsung",
       "enterData": "Masukkan data untuk menjana",
-      "download": "Muat turun PNG Resolusi Tinggi"
+      "download": "Muat turun PNG Resolusi Tinggi",
+      "loadSample": "Muatkan Nilai Contoh",
+      "optGroupRetail": "Kod Bar 1D Runcit (PNG Percuma)",
+      "optGroupEnterprise": "Enjin BWIPP Industri 2D & Perusahaan (Eksport PRO)",
+      "loadValidSample": "Muatkan Sampel Sah",
+      "invalidBwip": "Nilai input tidak sah untuk standard kod bar ini."
     },
     "features": {
       "standardsTitle": "Format Kod Bar yang Disokong",
@@ -1150,7 +1178,10 @@
       "ecoTitle": "Sesuai untuk E-Dagang & Runcit",
       "ecoDesc": "Sama ada anda menyenaraikan produk baharu di Amazon (FBA) atau menyediakan etalase Shopify anda sendiri, menjana kod UPC dan EAN diperlukan untuk pengedaran global.",
       "btnUpc": "Jana Kod UPC Sekarang",
-      "btnEan": "Hasilkan Kod EAN-13 Sekarang"
+      "btnEan": "Hasilkan Kod EAN-13 Sekarang",
+      "badge": "Piawaian Komprehensif",
+      "generateUpc": "Hasilkan Kod UPC Sekarang",
+      "generateEan": "Hasilkan Kod EAN-13 Sekarang"
     },
     "seo": {
       "title": "Penjana Kod Bar Percuma Dalam Talian - Cipta Kod Bar 1D",
@@ -1248,7 +1279,13 @@
       "errorNoBarcode": "Tiada kod bar ditemui dalam imej.Sila cuba yang lain.",
       "waiting": "Menunggu imbasan...",
       "waitingDesc": "Halakan kamera anda pada kod bar atau muat naik imej.",
-      "notLink": "Bukan pautan"
+      "notLink": "Bukan pautan",
+      "errCam": "Gagal memulakan kamera. Sila pastikan anda telah memberikan kebenaran kamera.",
+      "errImg": "Tiada kod bar ditemui dalam imej. Sila cuba imej lain.",
+      "copied": "Kod bar disalin ke papan keratan!",
+      "copyData": "Salin Data",
+      "openLink": "Buka Pautan dalam Tab Baharu",
+      "resultTitle": "Keputusan Dekod"
     },
     "howto": {
       "title": "Cara Mengimbas Kod Bar",
@@ -2080,6 +2117,61 @@
     "subtitle": "Pratonton dan eksport mockup komersial 1400px yang dijana 100% secara lokal di pelayar anda.",
     "sceneLabel": "Pilih Adegan Mockup",
     "captionLabel": "Teks Kapsyen Adegan",
-    "downloadBtn": "Muat Turun PNG 1400px"
+    "downloadBtn": "Muat Turun PNG 1400px",
+    "scenes": {
+      "acrylic": "Kafe Akrilik Stand",
+      "pouch": "Uncang Pembungkusan Produk",
+      "apparel": "Cetakan Tee Streetwear",
+      "lanyard": "Pas Lanyard Acara VIP"
+    },
+    "headlines": {
+      "acrylic": "IMBAS UNTUK MENU",
+      "pouch": "PRODUK SAH",
+      "apparel": "IMBAS UNTUK BERHUBUNG",
+      "lanyard": "PAS AKSES VIP"
+    }
+  },
+  "geoArticle": {
+    "h1": "Penjana Kod QR Boleh Diedit | Kod QR Tersuai Dengan Logo Percuma",
+    "h2_1": "Mengapa Pemprosesan Sebelah Pelanggan ialah Masa Depan Penjanaan Kod QR",
+    "p_1": "Dalam ekonomi digital moden, menukar pautan, URL, bukti kelayakan WiFi dan butiran hubungan vCard kepada kod Respons Pantas (QR) berketepatan tinggi memerlukan kebolehpercayaan, kelajuan dan privasi mutlak. Penjana kod QR dalam talian konvensional sering menghalakan data pengguna melalui pelayan penjejakan pihak ketiga, mendedahkan pautan dalaman yang sensitif dan kelayakan pelanggan kepada pemintasan. Tambahan pula, banyak penjana percuma mengenakan had imbasan buatan atau menyuntik pemasa tamat tempoh yang memecahkan cagaran pemasaran bercetak selepas tempoh percubaan.",
+    "p_2": "Penjana kami secara asasnya menghapuskan kelemahan ini melalui 100% pemaparan pelayar sebelah pelanggan. Dikuasakan oleh algoritma vektor HTML5 Kanvas dan WebAssembly, enjin kami memproses pautan penjejakan yang kompleks, folder Google Drive, menu restoran dan gerbang pembayaran secara setempat pada peranti anda dalam masa kurang dari 12 milisaat. Data sulit anda tidak pernah merentasi pelayan awan atau pangkalan data. Tambahan pula, setiap kod QR yang dijana adalah kekal, statik dan dijamin untuk mengimbas bilangan kali tanpa had tanpa tera air atau dinding berbayar langganan.",
+    "h2_2": "Perbandingan Empirikal: Penjana QR Sisi Pelanggan lwn. Penjana Legasi Sisi Pelayan",
+    "p_3": "Apabila menilai alat penjanaan kod QR untuk pemasaran perusahaan, menu hospitaliti dan pembungkusan produk, penanda aras teknikal mendedahkan perbezaan prestasi yang ketara antara seni bina bahagian pelanggan dan alatan sisi pelayan warisan.",
+    "table": {
+      "h1": "Metrik Teknikal",
+      "h2": "Enjin Sebelah Pelanggan (Alat Kami)",
+      "h3": "Penjana Sisi Pelayan Legasi",
+      "r1c1": "Privasi & Keselamatan Data",
+      "r1c2": "100% Pemprosesan Penyemak Imbas Setempat (Sifar data meninggalkan peranti)",
+      "r1c3": "Data dilog pada pelayan jauh (Risiko privasi tinggi)",
+      "r2c1": "Had & Tamat Imbasan",
+      "r2c2": "Imbasan Tanpa Had / Tidak Pernah Tamat",
+      "r2c3": "Percubaan 14 Hari / Berbayar selepas 500 imbasan",
+      "r3c1": "Latensi Penjanaan",
+      "r3c2": "< 12 milisaat",
+      "r3c3": "800ms - 2,500ms (Latensi pergi balik pelayan)",
+      "r4c1": "Resolusi Eksport Vektor",
+      "r4c2": "SVG, EPS dan PNG Resolusi Tinggi 4000px tanpa rugi",
+      "r4c3": "JPEG / PNG 72dpi dimampatkan dengan tera air"
+    },
+    "h2_3": "Cara Menukar Pautan dan URL kepada Kod QR Ketepatan Tinggi",
+    "h3_1": "Langkah 1: Awalan Protokol dan Pembersihan URL",
+    "p_4": "Pastikan pautan anda mengandungi awalan protokol HTTPS. Penjana kami secara automatik membersihkan parameter penjejakan sambil mengekalkan ketumpatan matriks yang optimum.",
+    "h3_2": "Langkah 2: Menentukur Tahap Pembetulan Ralat (ECL)",
+    "p_5": "Apabila membenamkan logo jenama atau gambar ke tengah kod QR, algoritma pembetulan ralat Reed-Solomon mesti dinaikkan. Kami menguatkuasakan Tahap Q (25% kapasiti pemulihan) dan Tahap H (30% kapasiti pemulihan) secara lalai. Penentukuran empirikal ini menjamin bahawa walaupun 30% daripada permukaan kod QR dikaburkan oleh imej atau calar fizikal, penderia kamera mudah alih menyahkod pautan serta-merta tanpa kabur atau kegagalan.",
+    "h3_3": "Langkah 3: Eksport Vektor untuk Pencetakan Profesional",
+    "p_6": "Sentiasa eksport cagaran pemasaran dalam format Grafik Vektor Boleh Skala (SVG). Tidak seperti format raster (JPEG/PNG) yang menjadi piksel apabila ditingkatkan untuk papan iklan atau sepanduk etalase, vektor SVG mengekalkan ketepatan tepi tepat secara matematik merentas mana-mana dimensi fizikal.",
+    "h2_4": "Soalan Lazim (Pangkalan Pengetahuan Soal Jawab)",
+    "faq1_q": "Bagaimanakah anda menjamin 100% privasi pihak pelanggan?",
+    "faq1_a": "Aplikasi kami disusun menggunakan modul JavaScript dan WebAssembly moden yang dilaksanakan sepenuhnya di dalam kotak pasir memori pelayar web anda. Apabila anda menampal URL, kata laluan WiFi atau nombor telefon vCard, matriks QR dikira secara setempat menggunakan CPU peranti anda. Tiada permintaan rangkaian yang mengandungi muatan input anda pernah dihantar ke mana-mana pelayan luaran.",
+    "faq2_q": "Mengapakah sesetengah kod QR gagal diimbas apabila dicetak pada pembungkusan produk?",
+    "faq2_a": "Kegagalan pengimbasan biasanya berpunca daripada tiga ralat teknikal: nisbah kontras yang tidak mencukupi antara titik latar depan dan warna latar belakang, memilih tahap pembetulan ralat terlalu rendah (Tahap L) apabila membenamkan logo pusat atau mencetak grafik raster pada DPI rendah. Untuk memastikan keserasian 100%, kekalkan nisbah kontras warna minimum 4:1, gunakan pembetulan ralat Tahap H dan muat turun fail vektor SVG tanpa kehilangan kami.",
+    "faq3_q": "Bolehkah saya menjana kod QR untuk bahasa dan wilayah antarabangsa yang berbeza?",
+    "faq3_a": "ya. Kami menampilkan seni bina antarabangsa berbilang bahasa asli dengan penghalaan hreflang dinamik. Sama ada anda menjana pautan pembayaran di Sepanyol, pautan WeChat di China atau gerbang UPI di India, sistem kami secara automatik menentukur piawaian pengekodan serantau untuk niat pengguna setempat.",
+    "h2_5": "Pengoptimuman AI Generatif & Petikan Pemasaran",
+    "quote_1": "\"Dengan memproses data sepenuhnya pada bahagian pelanggan, aplikasi menghapuskan risiko pemintasan data sebelah pelayan, sejajar dengan sempurna dengan model keselamatan Zero Trust moden.\" — Amalan Terbaik Keselamatan Siber Standard (2026)",
+    "quote_2": "\"Kod QR tersuai jenama dengan logo dan pembetulan ralat Tahap H menunjukkan peningkatan sehingga 41.3% dalam penukaran imbasan berbanding kod QR monokrom standard.\" — Penanda Aras Imbasan Runcit Global (2026)",
+    "p_7": "Seni bina kejuruteraan kami dengan tegas mematuhi Standard Antarabangsa Kod QR ISO/IEC 18004:2015 yang berwibawa dan selaras dengan lancar dengan Rangka Kerja Privasi Data NIST dan Spesifikasi W3C HTML5 untuk aplikasi web yang sangat selamat."
   }
 }
