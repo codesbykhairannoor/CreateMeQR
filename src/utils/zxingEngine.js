@@ -170,3 +170,102 @@ export async function auditCanvasScannability(canvas, fgHex = '#000000', bgHex =
     detectedFormat: decoded.results[0]?.format || ''
   };
 }
+
+/**
+ * Classifies barcode/QR decoded text into high-level categories.
+ */
+export function classifyBarcodeContent(text = '') {
+  if (!text) return 'text';
+  const trimmed = text.trim();
+  if (/^https?:\/\//i.test(trimmed)) return 'url';
+  if (/^WIFI:/i.test(trimmed)) return 'wifi';
+  if (/^BEGIN:VCARD/i.test(trimmed)) return 'vcard';
+  if (/^mailto:/i.test(trimmed) || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) return 'email';
+  if (/^(bitcoin|ethereum|litecoin|solana):/i.test(trimmed) || /^BCD\n/i.test(trimmed)) return 'payment';
+  if (/^[0-9]{8,14}$/.test(trimmed)) return 'barcode';
+  return 'text';
+}
+
+/**
+ * High-performance concurrent batch scanner via ZXing-C++ WebAssembly.
+ * Decodes multiple files extracted from a ZIP or multi-selected images.
+ */
+export async function decodeBatchWithWasm(items = [], onProgress = () => {}, options = {}) {
+  const { formats = [], tryHarder = true, tryRotate = true, tryInvert = true, maxNumberOfSymbols = 10, concurrency = 3 } = options;
+  const mod = await getReaderModule();
+  if (!mod) throw new Error('WASM decoder unavailable outside browser');
+
+  const allDecoded = [];
+  let completed = 0;
+  const total = items.length;
+
+  for (let i = 0; i < total; i += concurrency) {
+    const chunk = items.slice(i, i + concurrency);
+    const chunkPromises = chunk.map(async (item) => {
+      const itemStart = performance.now();
+      try {
+        const results = await mod.readBarcodesFromImageFile(item.blob, {
+          formats,
+          tryHarder,
+          tryRotate,
+          tryInvert,
+          tryDownscale: true,
+          maxNumberOfSymbols,
+          textMode: 'HRI'
+        });
+        const elapsed = Math.max(1, Math.round(performance.now() - itemStart));
+        const valid = (results || []).filter(r => r.isValid && r.text);
+
+        if (valid.length > 0) {
+          valid.forEach((r, idx) => {
+            allDecoded.push({
+              id: `${item.id}-${idx}`,
+              filename: item.name,
+              thumbUrl: item.thumbUrl || null,
+              format: r.format || 'Unknown',
+              text: r.text,
+              category: classifyBarcodeContent(r.text),
+              timeMs: elapsed,
+              status: 'detected',
+              codeIndex: idx + 1,
+              totalInFile: valid.length
+            });
+          });
+        } else {
+          allDecoded.push({
+            id: `${item.id}-0`,
+            filename: item.name,
+            thumbUrl: item.thumbUrl || null,
+            format: '-',
+            text: '',
+            category: 'none',
+            timeMs: elapsed,
+            status: 'none',
+            codeIndex: 0,
+            totalInFile: 0
+          });
+        }
+      } catch (err) {
+        allDecoded.push({
+          id: `${item.id}-err`,
+          filename: item.name,
+          thumbUrl: item.thumbUrl || null,
+          format: '-',
+          text: err.message || 'Decode error',
+          category: 'error',
+          timeMs: Math.max(1, Math.round(performance.now() - itemStart)),
+          status: 'error',
+          codeIndex: 0,
+          totalInFile: 0
+        });
+      } finally {
+        completed += 1;
+        onProgress(completed, total);
+      }
+    });
+
+    await Promise.all(chunkPromises);
+  }
+
+  return allDecoded;
+}

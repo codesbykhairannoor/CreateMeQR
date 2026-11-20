@@ -1,11 +1,13 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Html5Qrcode } from 'html5-qrcode';
-import { Scan, ScanLine, Upload, Copy, ExternalLink, AlertCircle, Camera, Smartphone, Globe, ShieldCheck, Zap, Lock } from 'lucide-react';
+import { Scan, ScanLine, Upload, Copy, ExternalLink, AlertCircle, Camera, Smartphone, Globe, ShieldCheck, Zap, Lock, Archive } from 'lucide-react';
+import BatchScanner from '../components/BatchScanner';
 
 export default function ScanQr() {
   const { t } = useTranslation();
   
+  const [scannerMode, setScannerMode] = useState('single'); // 'single' | 'batch'
   const [isScanning, setIsScanning] = useState(false);
   const [scanResult, setScanResult] = useState('');
   const [decodeMeta, setDecodeMeta] = useState(null); // { format, timeMs, engine }
@@ -123,9 +125,41 @@ export default function ScanQr() {
       <section className="max-w-5xl mx-auto px-6 mt-12 mb-24 relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/10 dark:bg-blue-500/5 blur-[120px] rounded-full pointer-events-none"></div>
         
-        <div className="bg-white/80 dark:bg-[#0a1128]/80 backdrop-blur-2xl border border-slate-200 dark:border-[#1e2d4a] rounded-[40px] p-8 md:p-12 shadow-2xl dark:shadow-[0_0_80px_rgba(16,185,129,0.1)] relative z-10 transition-colors duration-300">
+        <div className="bg-white/80 dark:bg-[#0a1128]/80 backdrop-blur-2xl border border-slate-200 dark:border-[#1e2d4a] rounded-[40px] p-6 sm:p-8 md:p-12 shadow-2xl dark:shadow-[0_0_80px_rgba(16,185,129,0.1)] relative z-10 transition-colors duration-300">
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Mode Switcher Tabs */}
+          <div className="flex p-1.5 bg-slate-100 dark:bg-[#060b19] rounded-2xl mb-8 border border-slate-200 dark:border-[#1e2d4a] max-w-md mx-auto">
+            <button
+              onClick={() => setScannerMode('single')}
+              className={`flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
+                scannerMode === 'single'
+                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              <Camera className="w-4 h-4" />
+              <span>{t('batchScanner.tabSingle', 'Camera / Single Image')}</span>
+            </button>
+            <button
+              onClick={() => {
+                if (isScanning) stopScanner();
+                setScannerMode('batch');
+              }}
+              className={`flex-1 py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
+                scannerMode === 'batch'
+                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              <Archive className="w-4 h-4 text-amber-300" />
+              <span>{t('batchScanner.tabBatch', 'Batch ZIP & Multi-Scan')}</span>
+            </button>
+          </div>
+
+          {scannerMode === 'batch' ? (
+            <BatchScanner defaultMode="qr" />
+          ) : (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
             {/* Left: Scanner Action Area */}
             <div className="space-y-8">
@@ -267,6 +301,7 @@ export default function ScanQr() {
             </div>
             
           </div>
+          )}
         </div>
       </section>
 

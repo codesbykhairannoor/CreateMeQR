@@ -65,6 +65,8 @@ export const AuthProvider = ({ children }) => {
       suiteAccess: isVipLifetime ? 'all_access' : null,
       createmyqr_trials_used: 0,
       createmyqr_bulk_trials_used: 0,
+      createmyqr_batch_scan_monthly_trials: 0,
+      createmyqr_batch_scan_month: new Date().toISOString().slice(0, 7),
       createdAt: Date.now(),
       lastLoginAt: Date.now(),
     };
@@ -118,6 +120,8 @@ export const AuthProvider = ({ children }) => {
           suiteAccess: isLifetime ? 'all_access' : (data.suiteAccess || null),
           createmyqr_trials_used: typeof data.createmyqr_trials_used === 'number' ? data.createmyqr_trials_used : 0,
           createmyqr_bulk_trials_used: typeof data.createmyqr_bulk_trials_used === 'number' ? data.createmyqr_bulk_trials_used : 0,
+          createmyqr_batch_scan_monthly_trials: typeof data.createmyqr_batch_scan_monthly_trials === 'number' ? data.createmyqr_batch_scan_monthly_trials : 0,
+          createmyqr_batch_scan_month: data.createmyqr_batch_scan_month || new Date().toISOString().slice(0, 7),
           lastLoginAt: Date.now(),
         };
       } else {
@@ -437,6 +441,15 @@ export const AuthProvider = ({ children }) => {
   const bulkTrialsUsed = typeof profile?.createmyqr_bulk_trials_used === 'number' ? profile.createmyqr_bulk_trials_used : 0;
   const freeBulkTrialsRemaining = isPro ? Infinity : Math.max(0, FREE_BULK_TRIALS_MAX - bulkTrialsUsed);
 
+  // Batch ZIP Scanner: Logged-in free users receive 2 free batch scans every calendar month; PRO is unlimited.
+  const currentMonthKey = new Date().toISOString().slice(0, 7);
+  const FREE_BATCH_SCAN_TRIALS_MAX = 2;
+  const isBatchMonthActive = profile?.createmyqr_batch_scan_month === currentMonthKey;
+  const batchScanTrialsUsed = isBatchMonthActive && typeof profile?.createmyqr_batch_scan_monthly_trials === 'number'
+    ? profile.createmyqr_batch_scan_monthly_trials
+    : 0;
+  const freeBatchScanTrialsRemaining = isPro ? Infinity : Math.max(0, FREE_BATCH_SCAN_TRIALS_MAX - batchScanTrialsUsed);
+
   const [toastMessage, setToastMessage] = useState(null);
 
   const consumeProFeature = useCallback(async (featureName = '') => {
@@ -520,6 +533,54 @@ export const AuthProvider = ({ children }) => {
     return true;
   }, [isPro, user, freeBulkTrialsRemaining, bulkTrialsUsed, openProModal]);
 
+  const consumeBatchScanFeature = useCallback(async (featureName = 'Batch ZIP QR & Barcode Scanner') => {
+    if (isPro) return true;
+
+    if (!user) {
+      openProModal(featureName);
+      return false;
+    }
+
+    if (freeBatchScanTrialsRemaining <= 0) {
+      openProModal(featureName);
+      return false;
+    }
+
+    const nextUsed = batchScanTrialsUsed + 1;
+    const remainingAfter = Math.max(0, FREE_BATCH_SCAN_TRIALS_MAX - nextUsed);
+
+    try {
+      if (db && user.uid) {
+        const userRef = doc(db, 'users', user.uid);
+        await updateDoc(userRef, sanitizeFirestoreData({
+          createmyqr_batch_scan_monthly_trials: nextUsed,
+          createmyqr_batch_scan_month: currentMonthKey,
+          lastBatchScanAt: Date.now(),
+        }));
+      }
+    } catch (err) {
+      console.warn('[Firestore] Update batch scan trial count error:', err);
+    }
+
+    setProfile(prev => prev ? ({
+      ...prev,
+      createmyqr_batch_scan_monthly_trials: nextUsed,
+      createmyqr_batch_scan_month: currentMonthKey,
+    }) : prev);
+
+    setToastMessage(
+      remainingAfter > 0
+        ? `🎉 Free batch scan trial used (1 of ${FREE_BATCH_SCAN_TRIALS_MAX} this month). 1 free batch scan remaining!`
+        : `🎉 Free batch scan trial used (2 of ${FREE_BATCH_SCAN_TRIALS_MAX} this month). Upgrade to PRO for unlimited batch processing!`
+    );
+
+    setTimeout(() => {
+      setToastMessage(null);
+    }, 4500);
+
+    return true;
+  }, [isPro, user, freeBatchScanTrialsRemaining, batchScanTrialsUsed, currentMonthKey, openProModal]);
+
   return (
     <AuthContext.Provider
       value={{
@@ -536,6 +597,10 @@ export const AuthProvider = ({ children }) => {
         bulkTrialsUsed,
         freeBulkTrialsRemaining,
         consumeBulkFeature,
+        FREE_BATCH_SCAN_TRIALS_MAX,
+        batchScanTrialsUsed,
+        freeBatchScanTrialsRemaining,
+        consumeBatchScanFeature,
         signInWithGoogle,
         signInWithEmail,
         signUpWithEmail,
@@ -593,6 +658,10 @@ export const useAuth = () => {
       bulkTrialsUsed: 0,
       freeBulkTrialsRemaining: 0,
       consumeBulkFeature: async () => false,
+      FREE_BATCH_SCAN_TRIALS_MAX: 2,
+      batchScanTrialsUsed: 0,
+      freeBatchScanTrialsRemaining: 0,
+      consumeBatchScanFeature: async () => false,
       signInWithGoogle: async () => { },
       signInWithEmail: async () => { },
       signUpWithEmail: async () => { },
