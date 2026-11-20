@@ -204,8 +204,8 @@
     "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
-        "q": "Trình tạo mã QR này có hoàn toàn miễn phí không?",
-        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
+        "q": "Giá cả và quyền truy cập hoạt động như thế nào?",
+        "a": "Tạo mã vạch và QR tĩnh cốt lõi có sẵn mà không có mã hết hạn, không có quảng cáo và không có bẫy dùng thử ẩn. Các gói PRO tùy chọn ($9/tháng hoặc $39 Trọn đời) mở khóa khả năng xử lý bảng tính số lượng lớn, in tờ nhãn dán và xuất vectơ SVG/DXF."
       },
       {
         "q": "Các tập tin và dữ liệu của tôi có được tải lên máy chủ của bạn không?",
@@ -234,7 +234,7 @@
     "title": "Nhúng Trình tạo vào trang web của bạn",
     "desc": "Bạn muốn cung cấp trình tạo mã QR miễn phí cho khách truy cập? Sao chép và dán đoạn mã HTML bên dưới vào trang web hoặc blog của bạn.",
     "whyTitle": "Tại sao nên sử dụng tiện ích của chúng tôi?",
-    "why1": "Công cụ cơ bản miễn phí cho người dùng của bạn mà không có rào cản thanh toán",
+    "why1": "Trình tạo QR cốt lõi đáng tin cậy cho người dùng của bạn với quyền riêng tư rõ ràng",
     "why2": "Không có quảng cáo, cửa sổ bật lên hoặc theo dõi xâm nhập bên trong tiện ích",
     "why3": "Tăng mức độ tương tác của khách truy cập và thời gian lưu lại trên miền của bạn",
     "anchorLabel": "Chọn văn bản neo SEO:",
@@ -249,8 +249,8 @@
   "landing": {
     "badgeLeadMarket": "Tại Sao Chúng Tôi Dẫn Đầu",
     "heroTitle": "Mã QR Thực Sự Hoạt Động",
-    "heroSubtitle": "Không hết hạn. Không quảng cáo. Không máy chủ. Mã QR tức thì, riêng tư — miễn phí mãi mãi.",
-    "badgeFree": "Miễn Phí Mãi Mãi",
+    "heroSubtitle": "Không giới hạn 14 ngày, không có quảng cáo bắt buộc, không theo dõi. Tạo mã tĩnh chất lượng cao trực tiếp trong trình duyệt của bạn với các bản nâng cấp PRO tùy chọn.",
+    "badgeFree": "Mã tĩnh vĩnh viễn",
     "comp1Title": "Không Có Bẫy Hết Hạn 14 Ngày",
     "comp1Desc": "Đối thủ vô hiệu hóa mã in của bạn sau 14 ngày. Mã QR tĩnh của chúng tôi hoạt động mãi mãi.",
     "badgeZeroAds": "Không Quảng Cáo",
@@ -411,8 +411,8 @@
       "a3": "Về mặt kỹ thuật thì có, nhưng điều đó không được khuyến khích vì quay số thủ công sẽ nhanh hơn và đáng tin cậy hơn trong trường hợp khẩn cấp.",
       "q4": "Nó có thể quay số máy nhánh không?",
       "a4": "Hỗ trợ tiện ích mở rộng (sử dụng dấu phẩy để tạm dừng) phụ thuộc hoàn toàn vào hệ điều hành điện thoại của máy quét.",
-      "q5": "Nó có hoàn toàn miễn phí để tạo ra không?",
-      "a5": "Có, trình tạo mã QR trên điện thoại của chúng tôi miễn phí 100% và không có giới hạn quét."
+      "q5": "Mã QR điện thoại có thể quét vĩnh viễn không?",
+      "a5": "Có, mã QR trên điện thoại của chúng tôi là mã tĩnh, không có giới hạn quét hoặc ngày hết hạn."
     },
     "event": {
       "q1": "Điều này sẽ đồng bộ hóa với Lịch Google hoặc Lịch Apple?",
@@ -626,7 +626,7 @@
       "q3": "Tôi có thể theo dõi có bao nhiêu người đã quét nó không?",
       "a3": "Bạn có thể theo dõi tổng số lần gửi biểu mẫu trực tiếp trong trang tổng quan Google Biểu mẫu của mình.",
       "q4": "Có miễn phí để tạo QR biểu mẫu Google không?",
-      "a4": "Đúng! Trình tạo của chúng tôi hoàn toàn miễn phí và tạo liên kết tĩnh trực tiếp đến biểu mẫu của bạn mà không có bất kỳ khoản phí ẩn nào.",
+      "a4": "Đúng! Trình tạo của chúng tôi tạo các liên kết tĩnh trực tiếp tới Biểu mẫu Google của bạn mà không làm hết hạn các liên kết chuyển hướng.",
       "q5": "Nó có hoạt động với Microsoft Forms không?",
       "a5": "Tuyệt đối! Thay vào đó, chỉ cần dán liên kết Microsoft Forms của bạn vào trình tạo URL của chúng tôi."
     },
@@ -1016,7 +1016,7 @@
         "title": "Giá trị cốt lõi",
         "v1": "Quyền riêng tư đầu tiên",
         "d1": "Tạo phía máy khách có nghĩa là dữ liệu của bạn không bao giờ chạm vào máy chủ của chúng tôi.",
-        "v2": "Miễn phí mãi mãi",
+        "v2": "Mã tĩnh vĩnh viễn",
         "d2": "Các tính năng cốt lõi sẽ luôn miễn phí và không có giới hạn ẩn.",
         "v3": "Phạm vi tiếp cận toàn cầu",
         "d3": "Được bản địa hóa bằng 30 ngôn ngữ để phục vụ khán giả quốc tế thực sự."
@@ -1058,7 +1058,7 @@
       "metrics": {
         "title": "tính năng",
         "m1": "Định giá",
-        "us1": "Miễn phí 100%",
+        "us1": "Tĩnh vĩnh viễn",
         "them1": "$15/tháng",
         "m2": "Quyền riêng tư",
         "us2": "Phía khách hàng (Không theo dõi)",
@@ -1172,7 +1172,7 @@
       "mfgDesc": "Trình tạo của chúng tôi tạo ra các tệp PNG sắc nét, hoàn hảo đến từng pixel và có tỷ lệ đẹp mắt để in. Chúng tôi không sử dụng hình ảnh raster mờ—công cụ của chúng tôi hiển thị phép toán SVG thuần túy trước khi chuyển đổi nó thành các bản tải xuống PNG có độ phân giải cao.",
       "mfgList1": "Độ chính xác tuyệt đối: Không có cạnh mờ.",
       "mfgList2": "Đệm tùy chỉnh: Vùng an toàn cho máy in nhiệt.",
-      "mfgList3": "Miễn phí 100%: Không đăng ký cho thế hệ cơ bản.",
+      "mfgList3": "Bao gồm thế hệ lõi: Không cần đăng ký để tạo mã vạch tiêu chuẩn.",
       "mfgBadge": "Nhà máy đã sẵn sàng",
       "mfgBadgeDesc": "Độ tương phản cao cho máy quét laser",
       "ecoTitle": "Hoàn hảo cho Thương mại điện tử & Bán lẻ",
@@ -1324,7 +1324,7 @@
     "badge": "ISO/IEC 18004 · Ưu Tiên Riêng Tư · Không Theo Dõi · Xử Lý Phía Khách",
     "heroTitle": "Trình Tạo Mã QR",
     "heroTitleHighlight": "Không Bao Giờ Hết Hạn.",
-    "heroSubtitle": "Tạo mã QR và mã vạch vĩnh viễn, sẵn sàng in ấn trực tiếp trong trình duyệt của bạn. Tính năng cơ bản miễn phí, bảo mật trên máy khách và không thu phí mã tĩnh.",
+    "heroSubtitle": "Tạo mã QR và mã vạch vĩnh viễn, sẵn sàng in trực tiếp trong trình duyệt của bạn. Tạo lõi đáng tin cậy với quyền riêng tư phía khách hàng.",
     "citation": "\"Mã QR là tiêu chuẩn quốc tế (ISO/IEC 18004:2015). Mã vạch ma trận yêu cầu lưới mô-đun sạch để quét đáng tin cậy trên tất cả các đầu đọc tuân thủ trên toàn thế giới.\"",
     "searchPlaceholder": "Công cụ tìm kiếm - WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Tất cả công cụ",
@@ -1342,7 +1342,7 @@
     "feat4": "Tuân thủ ISO 18004",
     "feat4Desc": "Đạt tiêu chuẩn QR quốc tế",
     "whatIsTitle": "CreateMy-QR là gì?",
-    "whatIsDesc": "CreateMy-QR là nền tảng mã QR và mã vạch phía trình duyệt hỗ trợ 37 loại dữ liệu. Các mã tĩnh cơ bản được miễn phí mãi mãi với tính năng xuất PNG độ phân giải cao tức thì và không theo dõi. Xuất vector SVG nâng cao và tạo hàng loạt từ bảng tính được mở khóa với gói PRO.",
+    "whatIsDesc": "CreateMy-QR là nền tảng mã vạch và mã QR phía máy khách hỗ trợ 37 loại dữ liệu. Mã tĩnh lõi là vĩnh viễn với khả năng xuất PNG có độ phân giải cao ngay lập tức và không theo dõi. Xuất vectơ nâng cao và hàng loạt bảng tính số lượng lớn được mở khóa bằng PRO.",
     "fact1": "Tạo mã QR cục bộ - không có dữ liệu nào được gửi đến bất kỳ máy chủ nào.",
     "fact2": "Hỗ trợ 37 loại: URL, WhatsApp, vCard, WiFi, Crypto, PDF, v.v.",
     "fact3": "Bản địa hóa hoàn toàn bằng 30 ngôn ngữ bao gồm tiếng Ả Rập, tiếng Nhật và tiếng Hindi.",
@@ -1353,8 +1353,8 @@
     "faqSubtitle": "Mọi thứ bạn cần biết về CreateMy-QR.",
     "faq1q": "CreateMy-QR là gì?",
     "faq1a": "CreateMy-QR là nền tảng trên trình duyệt với 37 công cụ — không tải lên máy chủ, không theo dõi và không bắt buộc tài khoản cho công cụ cơ bản.",
-    "faq2q": "Mã QR có được sử dụng miễn phí mãi mãi không?",
-    "faq2a": "Đúng vậy. Tất cả mã QR tĩnh đều có giá trị vĩnh viễn và miễn phí trọn đời mà không có ngày hết hạn hay watermark. Các gói Pro tùy chọn có sẵn cho những ai cần tạo hàng loạt từ bảng tính và in trang nhãn dán.",
+    "faq2q": "Mã QR tĩnh có hết hạn hoặc có giới hạn không?",
+    "faq2a": "Không. Tất cả các mã QR tĩnh được tạo đều có giá trị vĩnh viễn, không có ngày hết hạn hoặc hình mờ. Đăng ký PRO tùy chọn có sẵn cho những người dùng cần hàng loạt bảng tính, xuất vectơ và các công cụ mô phỏng.",
     "faq3q": "Dữ liệu của tôi có an toàn khi tạo mã QR không?",
     "faq3a": "Tuyệt đối. Tất cả mã hóa xảy ra bên trong trình duyệt của bạn. Dữ liệu của bạn không bao giờ rời khỏi thiết bị của bạn và không bao giờ được truyền đến bất kỳ máy chủ nào. Nền tảng này hoàn toàn tuân thủ GDPR và CCPA."
   },
@@ -1364,7 +1364,7 @@
       "heroTitle": "Về chúng tôi",
       "heroSubtitle": "Dân chủ hóa tài liệu & công cụ QR",
       "mission": "Sứ mệnh của chúng tôi",
-      "missionDesc": "Chúng tôi tin rằng các tiện ích QR cao cấp sẽ hoàn toàn miễn phí, riêng tư và mọi người đều có thể truy cập được.",
+      "missionDesc": "Chúng tôi tin rằng các tiện ích QR thiết yếu phải minh bạch, riêng tư và mọi người đều có thể truy cập được với mức giá hợp lý.",
       "privacy": "Quyền riêng tư tuyệt đối",
       "privacyDesc": "Mọi thứ đều được xử lý cục bộ trong trình duyệt của bạn. Các tập tin của bạn không bao giờ chạm vào máy chủ.",
       "fast": "Nhanh như chớp",
@@ -1376,7 +1376,7 @@
       "architecture": "Kiến trúc",
       "architectureTitle": "Ngăn xếp công nghệ",
       "guarantee": "Đảm bảo của chúng tôi",
-      "guaranteeDesc": "CreateMy-QR được xây dựng để hoàn toàn miễn phí. Sứ mệnh của chúng tôi là dân chủ hóa các tiện ích cho mọi người.",
+      "guaranteeDesc": "CreateMy-QR được xây dựng dựa trên tính minh bạch. Sứ mệnh của chúng tôi là cung cấp các tiện ích đáng tin cậy cho khách hàng với giá trị trung thực.",
       "join": "Tham gia Phong trào",
       "joinDesc": "Trải nghiệm bộ QR nhanh nhất, an toàn nhất và tiên tiến nhất trên web.",
       "seoDesc": "Khám phá sứ mệnh của CreateMy-QR nhằm dân chủ hóa các công cụ mã vạch và mã QR trên toàn thế giới với 100% quyền riêng tư phía khách hàng, không ghi nhật ký dữ liệu và bảo mật ngoại tuyến.",
@@ -1500,7 +1500,7 @@
       "app4Name": "Công cụ truyền thông & tài liệu",
       "app4Desc": "Trình xuất SVG vector có độ phân giải cao, trình tạo PDF và trình quản lý hàng loạt",
       "freeTitle": "Gói miễn phí",
-      "freeBadge": "Miễn phí mãi mãi",
+      "freeBadge": "Kế hoạch khởi đầu",
       "freeCostPeriod": "/ mãi mãi",
       "freeDesc": "Các công cụ QR & Barcode cần thiết cho các dự án cá nhân và quét hàng ngày.",
       "freeCta": "Bắt đầu miễn phí ngay bây giờ",
@@ -1628,7 +1628,7 @@
       "localDataDesc": "Lịch sử của bạn được lưu trữ trong trình duyệt của riêng bạn thông qua IndexedDB. Nếu bạn xóa dữ liệu trình duyệt của mình, lịch sử của bạn sẽ bị xóa vĩnh viễn.",
       "lastUpdated": "Cập nhật lần cuối: Tháng 11 năm 2026",
       "sec1Title": "Thỏa thuận các điều khoản",
-      "sec1Desc": "Bằng cách truy cập và sử dụng CreateMy-QR, bạn đồng ý bị ràng buộc bởi các Điều khoản dịch vụ này. Nếu bạn không đồng ý với bất kỳ phần nào của điều khoản, bạn không có quyền truy cập Dịch vụ. Nền tảng của chúng tôi được cung cấp hoàn toàn miễn phí cho cả mục đích sử dụng cá nhân và thương mại.",
+      "sec1Desc": "Bằng cách truy cập và sử dụng CreateMy-QR, bạn đồng ý bị ràng buộc bởi các Điều khoản dịch vụ này. Nếu bạn không đồng ý với bất kỳ phần nào của điều khoản, bạn không có quyền truy cập Dịch vụ. Nền tảng của chúng tôi cung cấp khả năng tạo mã QR tĩnh vĩnh viễn với các đăng ký PRO tùy chọn cho các công cụ chuyên nghiệp nâng cao.",
       "sec2Title": "Đảm bảo xử lý cục bộ",
       "sec2Desc": "CreateMy-QR cung cấp các công cụ thực thi nghiêm ngặt trong môi trường trình duyệt cục bộ của bạn thông qua WebAssugging. Chúng tôi đảm bảo rằng:",
       "sec2Bul1": "Các tệp của bạn không bao giờ được tải lên máy chủ của chúng tôi hoặc bất kỳ cơ sở hạ tầng của bên thứ ba nào.",
@@ -1771,7 +1771,7 @@
       "featTitle2": "Theo dõi sự tham dự",
       "featDesc2": "Sử dụng thẻ UTM để theo dõi áp phích nào tạo ra nhiều lượt quét nhất.",
       "featTitle3": "Không giới hạn",
-      "featDesc3": "Quét không giới hạn, hoàn toàn miễn phí, không có ngày hết hạn.",
+      "featDesc3": "Quét không giới hạn, mã tĩnh vĩnh viễn, không có ngày hết hạn.",
       "faqTitle": "Câu hỏi thường gặp"
     },
     "whatsappsupport": {

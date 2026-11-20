@@ -204,8 +204,8 @@
     "softwareDescription": "Suíte segura de QR e documentos 100% no cliente via WebAssembly, sem envio para servidores. Privacidade absoluta e códigos permanentes.",
     "faqs": [
       {
-        "q": "Este gerador de código QR é totalmente gratuito?",
-        "a": "A geração de códigos estáticos é gratuita para sempre sem validade nem cobranças ocultas. Planos Pro opcionais atendem processamento em massa e arquivos SVG."
+        "q": "Como funcionam os preços e o acesso?",
+        "a": "A geração estática de QR e código de barras está disponível sem códigos expirados, sem anúncios e sem armadilhas de teste ocultas. Planos PRO opcionais (US$ 9/mês ou US$ 39 vitalícios) desbloqueiam processamento de planilhas em massa, impressão de folhas de adesivos e exportações vetoriais SVG/DXF."
       },
       {
         "q": "Meus arquivos e dados são enviados para seus servidores?",
@@ -234,7 +234,7 @@
     "title": "Incorpore o Gerador QR no Seu Site",
     "desc": "Quer oferecer uma ferramenta gratuita de código QR para seus visitantes? Copie e cole o código HTML abaixo no seu site ou blog.",
     "whyTitle": "Por que usar nosso widget?",
-    "why1": "Ferramentas básicas gratuitas para seus usuários sem barreiras pagas",
+    "why1": "Gerador de QR principal confiável para seus usuários com privacidade limpa",
     "why2": "Sem anúncios, popups ou rastreamento invasivo",
     "why3": "Aumenta o tempo de permanência e engajamento no seu domínio",
     "anchorLabel": "Selecione o texto de ancoragem (SEO Anchor Text):",
@@ -249,8 +249,8 @@
   "landing": {
     "badgeLeadMarket": "Por Que Lideramos",
     "heroTitle": "Códigos QR Que Realmente Funcionam",
-    "heroSubtitle": "Sem expiração. Sem anúncios. Sem servidores. Códigos QR instantâneos e privados — grátis para sempre.",
-    "badgeFree": "Grátis Para Sempre",
+    "heroSubtitle": "Sem limites de 14 dias, sem anúncios forçados, sem rastreamento. Gere códigos estáticos de alta qualidade diretamente em seu navegador com atualizações PRO opcionais.",
+    "badgeFree": "Códigos estáticos permanentes",
     "comp1Title": "Sem Armadilha de Expiração de 14 Dias",
     "comp1Desc": "Concorrentes desativam seus códigos impressos após 14 dias se você não pagar. Os nossos funcionam para sempre.",
     "badgeZeroAds": "Zero Anúncios",
@@ -411,8 +411,8 @@
       "a3": "Tecnicamente sim, mas não é recomendado porque a discagem manual é mais rápida e confiável em caso de emergência.",
       "q4": "Ele pode discar ramais?",
       "a4": "O suporte para extensões (usando vírgulas para pausas) depende inteiramente do sistema operacional do telefone do scanner.",
-      "q5": "A geração é totalmente gratuita?",
-      "a5": "Sim, nosso gerador de código QR para telefone é 100% gratuito e sem limites de digitalização."
+      "q5": "Os códigos QR do telefone são permanentes para leitura?",
+      "a5": "Sim, nossos códigos QR de telefone são estáticos, sem limites de digitalização ou datas de validade."
     },
     "event": {
       "q1": "Isso será sincronizado com o Google Calendar ou o Apple Calendar?",
@@ -626,7 +626,7 @@
       "q3": "Posso rastrear quantas pessoas o digitalizaram?",
       "a3": "Você pode acompanhar o número total de envios de formulários diretamente no painel do Formulários Google.",
       "q4": "É grátis criar um QR do Formulário Google?",
-      "a4": "Sim! Nosso gerador é totalmente gratuito e cria links estáticos diretamente para o seu formulário, sem taxas ocultas.",
+      "a4": "Sim! Nosso gerador cria links estáticos diretos para o seu Formulário Google sem links de redirecionamento expirados.",
       "q5": "Também funciona com o Microsoft Forms?",
       "a5": "Absolutamente! Basta colar o link do Microsoft Forms em nosso gerador de URL."
     },
@@ -1016,7 +1016,7 @@
         "title": "Valores Fundamentais",
         "v1": "Privacidade em primeiro lugar",
         "d1": "A geração no lado do cliente significa que seus dados nunca chegam aos nossos servidores.",
-        "v2": "Grátis para sempre",
+        "v2": "Códigos estáticos permanentes",
         "d2": "Os recursos principais sempre permanecerão gratuitos, sem limites ocultos.",
         "v3": "Alcance global",
         "d3": "Localizado em 30 idiomas para atender um público verdadeiramente internacional."
@@ -1058,7 +1058,7 @@
       "metrics": {
         "title": "Recurso",
         "m1": "Preços",
-        "us1": "100% grátis",
+        "us1": "Estática Permanente",
         "them1": "US$ 15/mês",
         "m2": "Privacidade",
         "us2": "Lado do cliente (sem rastreamento)",
@@ -1172,7 +1172,7 @@
       "mfgDesc": "Nosso gerador cria arquivos PNG nítidos e com pixels perfeitos que são perfeitamente dimensionados para impressão. Não usamos imagens raster difusas – nosso mecanismo renderiza matemática SVG pura antes de convertê-la em downloads PNG de alta resolução.",
       "mfgList1": "Precisão absoluta: sem bordas borradas.",
       "mfgList2": "Preenchimento personalizado: zonas seguras para impressoras térmicas.",
-      "mfgList3": "100% gratuito: sem assinaturas para geração básica.",
+      "mfgList3": "Geração de núcleo incluída: não são necessárias assinaturas para geração de código de barras padrão.",
       "mfgBadge": "Pronto para fábrica",
       "mfgBadgeDesc": "Alto contraste para scanners a laser",
       "ecoTitle": "Perfeito para comércio eletrônico e varejo",
@@ -1324,7 +1324,7 @@
     "badge": "ISO/IEC 18004 · Privacidade em Primeiro Lugar · Zero Rastreamento · No Navegador",
     "heroTitle": "O Gerador de QR Code Que",
     "heroTitleHighlight": "Nunca Expira.",
-    "heroSubtitle": "Crie códigos QR e códigos de barras permanentes e prontos para impressão diretamente no seu navegador. Geração básica gratuita, privacidade no navegador e sem taxas nos seus códigos estáticos.",
+    "heroSubtitle": "Crie códigos QR e códigos de barras permanentes e prontos para impressão diretamente no seu navegador. Geração de núcleo confiável com privacidade do lado do cliente.",
     "citation": "\"O QR Code é um padrão internacional (ISO/IEC 18004:2015). Códigos de barras matriciais exigem grades de módulos limpas para leitura confiável em todos os leitores conformes.\"",
     "searchPlaceholder": "Buscar ferramentas — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Todas as Ferramentas",
@@ -1342,7 +1342,7 @@
     "feat4": "Conforme ISO 18004",
     "feat4Desc": "Atende ao padrão QR internacional",
     "whatIsTitle": "O que é CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR é uma plataforma de códigos QR e códigos de barras no navegador com suporte a 37 tipos de dados. Os códigos estáticos básicos são gratuitos para sempre com exportação PNG em alta resolução e zero rastreamento. Exportações em SVG vetorial e lotes por planilha são liberados no PRO.",
+    "whatIsDesc": "CreateMy-QR é uma plataforma de código QR e código de barras do lado do cliente que suporta 37 tipos de dados. Os códigos estáticos principais são permanentes, com exportação instantânea de PNG de alta resolução e rastreamento zero. Exportações avançadas de vetores e lotes de planilhas em massa são desbloqueados com PRO.",
     "fact1": "Gera QR codes localmente — nenhum dado enviado a qualquer servidor.",
     "fact2": "Suporta 37 tipos: URL, WhatsApp, vCard, WiFi, Crypto, PDF e mais.",
     "fact3": "Totalmente localizado em 30 idiomas incluindo árabe, japonês e hindi.",
@@ -1353,8 +1353,8 @@
     "faqSubtitle": "Tudo o que você precisa saber sobre CreateMy-QR.",
     "faq1q": "O que é CreateMy-QR?",
     "faq1a": "CreateMy-QR é uma plataforma web que oferece 37 ferramentas de códigos QR e de barras com processamento local — sem uploads, sem rastreamento e sem conta obrigatória.",
-    "faq2q": "Os QR codes são gratuitos para sempre?",
-    "faq2a": "Sim. Todos os códigos QR estáticos são permanentes e gratuitos para sempre, sem data de expiração ou marcas d'água. Assinaturas Pro opcionais estão disponíveis para geração em lote por planilhas e impressão de folhas de etiquetas.",
+    "faq2q": "Os códigos QR estáticos expiram ou têm limites?",
+    "faq2a": "Não. Todos os códigos QR estáticos gerados são permanentes, sem datas de validade ou marcas d'água. Assinaturas PRO opcionais estão disponíveis para usuários que precisam de lotes de planilhas em massa, exportações de vetores e ferramentas de maquete.",
     "faq3q": "Meus dados estão seguros ao gerar um QR code?",
     "faq3a": "Com certeza. Toda a codificação ocorre no seu navegador. Seus dados nunca saem do seu dispositivo e nunca são transmitidos a qualquer servidor."
   },
@@ -1364,7 +1364,7 @@
       "heroTitle": "Sobre nós",
       "heroSubtitle": "Democratizando Documentos e Ferramentas QR",
       "mission": "Nossa Missão",
-      "missionDesc": "Acreditamos que os utilitários QR premium devem ser totalmente gratuitos, privados e acessíveis a todos.",
+      "missionDesc": "Acreditamos que os utilitários QR essenciais devem ser transparentes, privados e acessíveis a todos com preços honestos.",
       "privacy": "Privacidade Absoluta",
       "privacyDesc": "Tudo é processado localmente no seu navegador. Seus arquivos nunca tocam em um servidor.",
       "fast": "Rápido como um relâmpago",
@@ -1376,7 +1376,7 @@
       "architecture": "Arquitetura",
       "architectureTitle": "Pilha de tecnologia",
       "guarantee": "Nossa Garantia",
-      "guaranteeDesc": "CreateMy-QR foi desenvolvido para permanecer totalmente gratuito. Nossa missão é democratizar os serviços públicos para todos.",
+      "guaranteeDesc": "CreateMy-QR é baseado na transparência. Nossa missão é fornecer serviços públicos confiáveis ​​do lado do cliente com valor honesto.",
       "join": "Junte-se ao Movimento",
       "joinDesc": "Experimente o pacote QR mais rápido, seguro e avançado da web.",
       "seoDesc": "Descubra a missão do CreateMy-QR de democratizar ferramentas de código de barras e código QR em todo o mundo com 100% de privacidade do lado do cliente, zero registro de dados e segurança offline.",
@@ -1500,7 +1500,7 @@
       "app4Name": "Ferramentas de mídia e documentos",
       "app4Desc": "Exportador SVG vetorial de alto DPI, gerador de PDF e gerenciador de lote",
       "freeTitle": "Plano Gratuito",
-      "freeBadge": "Grátis para sempre",
+      "freeBadge": "Plano inicial",
       "freeCostPeriod": "/ para sempre",
       "freeDesc": "Ferramentas essenciais de QR e código de barras para projetos pessoais e digitalização diária.",
       "freeCta": "Comece gratuitamente agora",
@@ -1628,7 +1628,7 @@
       "localDataDesc": "Seu histórico é armazenado em seu próprio navegador via IndexedDB. Se você limpar os dados do seu navegador, seu histórico será excluído permanentemente.",
       "lastUpdated": "Última atualização: Novembro de 2026",
       "sec1Title": "Acordo com os Termos",
-      "sec1Desc": "Ao acessar e usar o CreateMy-QR, você concorda em obedecer a estes Termos de Serviço. Se discordar de qualquer parte dos termos, você não terá permissão para acessar o Serviço. Nossa plataforma é fornecida totalmente gratuita para uso pessoal e comercial.",
+      "sec1Desc": "Ao acessar e usar o CreateMy-QR, você concorda em obedecer a estes Termos de Serviço. Se discordar de qualquer parte dos termos, você não terá permissão para acessar o Serviço. Nossa plataforma fornece geração permanente de código QR estático com assinaturas PRO opcionais para ferramentas profissionais avançadas.",
       "sec2Title": "Garantia de Processamento Local",
       "sec2Desc": "CreateMy-QR fornece ferramentas que são executadas estritamente no ambiente do navegador local via WebAssembly. Garantimos que:",
       "sec2Bul1": "Seus arquivos nunca são carregados em nossos servidores ou em qualquer infraestrutura de terceiros.",
@@ -1771,7 +1771,7 @@
       "featTitle2": "Acompanhar presença",
       "featDesc2": "Use tags UTM para rastrear quais postadores geram mais digitalizações.",
       "featTitle3": "Sem Limites",
-      "featDesc3": "Varreduras ilimitadas, totalmente gratuitas e sem prazo de validade.",
+      "featDesc3": "Varreduras ilimitadas, códigos estáticos permanentes, sem datas de validade.",
       "faqTitle": "Perguntas comuns"
     },
     "whatsappsupport": {

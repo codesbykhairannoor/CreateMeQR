@@ -204,8 +204,8 @@
     "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
-        "q": "Er denne QR-kodegeneratoren helt gratis?",
-        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
+        "q": "Hvordan fungerer prissetting og tilgang?",
+        "a": "Generering av statisk QR og strekkode er tilgjengelig uten utløpende koder, ingen annonser og ingen skjulte prøvefeller. Valgfrie PRO-planer ($9/mnd eller $39 Lifetime) låser opp bulk-regnearkbehandling, utskrift av klistremerkeark og vektor-SVG/DXF-eksport."
       },
       {
         "q": "Er filene og dataene mine lastet opp til serverne dine?",
@@ -234,7 +234,7 @@
     "title": "Bygg inn generator på nettstedet ditt",
     "desc": "Vil du tilby en gratis QR-kodegenerator til dine besøkende? Kopier og lim inn HTML-kodebiten nedenfor på nettstedet eller bloggen din.",
     "whyTitle": "Hvorfor bruke widgeten vår?",
-    "why1": "Free core tools for your users with zero paywalls",
+    "why1": "Pålitelig kjerne QR-generator for brukerne dine med rent personvern",
     "why2": "Ingen annonser, popup-vinduer eller påtrengende sporing inne i widgeten",
     "why3": "Øker besøkende engasjement og oppholdstid på domenet ditt",
     "anchorLabel": "Velg SEO-ankertekst:",
@@ -249,8 +249,8 @@
   "landing": {
     "badgeLeadMarket": "Hvorfor vi leder",
     "heroTitle": "QR-koder som faktisk fungerer",
-    "heroSubtitle": "Ingen utløp. Ingen annonser. Ingen servere. Bare øyeblikkelige, private QR-koder – for alltid gratis.",
-    "badgeFree": "For alltid gratis",
+    "heroSubtitle": "Ingen 14-dagers grenser, ingen tvungne annonser, ingen sporing. Generer statiske koder av høy kvalitet direkte i nettleseren din med valgfrie PRO-oppgraderinger.",
+    "badgeFree": "Permanente statiske koder",
     "comp1Title": "Ingen 14-dagers utløpsfelle",
     "comp1Desc": "Konkurrenter dreper dine utskrevne koder etter 14 dager med mindre du betaler. Våre statiske QR-koder fungerer for alltid.",
     "badgeZeroAds": "Null annonser",
@@ -411,8 +411,8 @@
       "a3": "Teknisk sett ja, men det anbefales ikke da manuelt oppringing er raskere og mer pålitelig i en nødssituasjon.",
       "q4": "Kan den ringe utvidelser?",
       "a4": "Støtte for utvidelser (bruk av komma for pauser) avhenger helt av skannerens telefonoperativsystem.",
-      "q5": "Er det helt gratis å generere?",
-      "a5": "Ja, vår QR-kodegenerator for telefonen er 100 % gratis uten skannegrenser."
+      "q5": "Er telefonens QR-koder permanente å skanne?",
+      "a5": "Ja, telefonens QR-koder er statiske uten skannegrenser eller utløpsdatoer."
     },
     "event": {
       "q1": "Vil dette synkroniseres med Google Kalender eller Apple Kalender?",
@@ -626,7 +626,7 @@
       "q3": "Kan jeg spore hvor mange personer som skannet den?",
       "a3": "Du kan spore det totale antallet skjemainnsendinger direkte i Google Forms-oversikten.",
       "q4": "Er det gratis å lage en Google Form QR?",
-      "a4": "Ja! Generatoren vår er helt gratis og lager statiske lenker direkte til skjemaet ditt uten noen skjulte avgifter.",
+      "a4": "Ja! Generatoren vår lager direkte statiske lenker til Google-skjemaet ditt uten utløpende viderekoblingskoblinger.",
       "q5": "Fungerer det med Microsoft Forms også?",
       "a5": "Absolutt! Bare lim inn Microsoft Forms-lenken din i URL-generatoren vår i stedet."
     },
@@ -1016,7 +1016,7 @@
         "title": "Kjerneverdier",
         "v1": "Personvern først",
         "d1": "Generering på klientsiden betyr at dataene dine aldri berører serverne våre.",
-        "v2": "Gratis for alltid",
+        "v2": "Permanente statiske koder",
         "d2": "Kjernefunksjoner vil alltid forbli gratis uten skjulte grenser.",
         "v3": "Global rekkevidde",
         "d3": "Lokalisert på 30 språk for å betjene et virkelig internasjonalt publikum."
@@ -1058,7 +1058,7 @@
       "metrics": {
         "title": "Funksjon",
         "m1": "Prissetting",
-        "us1": "100 % gratis",
+        "us1": "Permanent statisk",
         "them1": "$15/måned",
         "m2": "Personvern",
         "us2": "Klientside (ingen sporing)",
@@ -1172,7 +1172,7 @@
       "mfgDesc": "Generatoren vår lager skarpe, pikselperfekte PNG-filer som skaleres vakkert for utskrift. Vi bruker ikke uklare rasterbilder – motoren vår gjengir ren SVG-matematikk før den konverteres til høyoppløselige PNG-nedlastinger.",
       "mfgList1": "Absolutt presisjon: Ingen uklare kanter.",
       "mfgList2": "Tilpasset polstring: Sikre soner for termiske skrivere.",
-      "mfgList3": "100 % gratis: Ingen abonnement for grunnleggende generasjon.",
+      "mfgList3": "Kjernegenerering inkludert: Ingen abonnement kreves for standard strekkodegenerering.",
       "mfgBadge": "Fabrikkklar",
       "mfgBadgeDesc": "Høy kontrast for laserskannere",
       "ecoTitle": "Perfekt for e-handel og detaljhandel",
@@ -1324,7 +1324,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "QR-kodegeneratoren Som",
     "heroTitleHighlight": "Aldri Utløper.",
-    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Free core generation, client-side privacy, and zero paywalls on your static codes.",
+    "heroSubtitle": "Lag permanente, utskriftsklare QR-koder og strekkoder direkte i nettleseren din. Pålitelig kjernegenerering med personvern på klientsiden.",
     "citation": "\"QR-koden er en internasjonal standard (ISO/IEC 18004:2015). Matrisestrekkoder krever rene modulnett for pålitelig skanning på tvers av alle kompatible lesere over hele verden.\"",
     "searchPlaceholder": "Søkeverktøy – WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Alle verktøy",
@@ -1342,7 +1342,7 @@
     "feat4": "ISO 18004-kompatibel",
     "feat4Desc": "Oppfyller internasjonal QR-standard",
     "whatIsTitle": "Hva er CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.",
+    "whatIsDesc": "CreateMy-QR er en QR-kode- og strekkodeplattform på klientsiden som støtter 37 datatyper. Statiske kjernekoder er permanente med umiddelbar høyoppløselig PNG-eksport og nullsporing. Avansert vektoreksport og bulk-regnearkbatcher låses opp med PRO.",
     "fact1": "Genererer QR-koder lokalt – ingen data sendes til noen server.",
     "fact2": "Støtter 37 typer: URL, WhatsApp, vCard, WiFi, Crypto, PDF og mer.",
     "fact3": "Fullt lokalisert på 30 språk, inkludert arabisk, japansk og hindi.",
@@ -1353,8 +1353,8 @@
     "faqSubtitle": "Alt du trenger å vite om CreateMy-QR.",
     "faq1q": "Hva er CreateMy-QR?",
     "faq1a": "CreateMy-QR is a browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant codes with client-side processing — no uploads, zero tracking, and no forced account for core generation.",
-    "faq2q": "Genererer QR-koder lokalt – ingen data sendes til noen server.",
-    "faq2a": "Yes. All static QR codes are permanent and free forever with no expiry dates or watermarks. Optional Pro subscriptions are available for users who need bulk spreadsheet batches and sticker sheet printing.",
+    "faq2q": "Utløper statiske QR-koder eller har begrensninger?",
+    "faq2a": "Nei. Alle statiske QR-koder som genereres er permanente uten utløpsdatoer eller vannmerker. Valgfrie PRO-abonnementer er tilgjengelige for brukere som trenger bulk-regnearkbatcher, vektoreksporter og mockupverktøy.",
     "faq3q": "Fullt lokalisert på 30 språk, inkludert arabisk, japansk og hindi.",
     "faq3a": "Hvorfor er det 100 % sikkert?"
   },
@@ -1364,7 +1364,7 @@
       "heroTitle": "Om oss",
       "heroSubtitle": "Demokratisering av dokument- og QR-verktøy",
       "mission": "Vårt oppdrag",
-      "missionDesc": "Vi mener premium QR-verktøy bør være helt gratis, private og tilgjengelige for alle.",
+      "missionDesc": "Vi mener viktige QR-verktøy bør være gjennomsiktige, private og tilgjengelige for alle med ærlige priser.",
       "privacy": "Absolutt personvern",
       "privacyDesc": "Alt behandles lokalt i nettleseren din. Filene dine berører aldri en server.",
       "fast": "Lynrask",
@@ -1376,7 +1376,7 @@
       "architecture": "Arkitektur",
       "architectureTitle": "Teknologistabel",
       "guarantee": "Vår garanti",
-      "guaranteeDesc": "CreateMy-QR er bygget for å forbli helt gratis. Vårt oppdrag er å demokratisere verktøy for alle.",
+      "guaranteeDesc": "CreateMy-QR er bygget på åpenhet. Vår oppgave er å tilby pålitelige verktøy på klientsiden med ærlig verdi.",
       "join": "Bli med i bevegelsen",
       "joinDesc": "Opplev den raskeste, sikreste og mest avanserte QR-pakken på nettet.",
       "seoDesc": "Oppdag CreateMy-QRs oppdrag om å demokratisere strekkode- og QR-kodeverktøy over hele verden med 100 % personvern på klientsiden, null datalogging og offline sikkerhet.",
@@ -1500,7 +1500,7 @@
       "app4Name": "Medie- og dokumentverktøy",
       "app4Desc": "Høy-DPI vektor SVG eksportør, PDF generator og batch manager",
       "freeTitle": "Gratis plan",
-      "freeBadge": "Gratis for alltid",
+      "freeBadge": "Startplan",
       "freeCostPeriod": "/ for alltid",
       "freeDesc": "Viktige QR- og strekkodeverktøy for personlige prosjekter og daglig skanning.",
       "freeCta": "Start gratis nå",
@@ -1628,7 +1628,7 @@
       "localDataDesc": "Historien din lagres i din egen nettleser via IndexedDB. Hvis du sletter nettleserdataene dine, slettes loggen din permanent.",
       "lastUpdated": "Sist oppdatert: November 2026",
       "sec1Title": "Avtale om vilkår",
-      "sec1Desc": "Ved å få tilgang til og bruke CreateMy-QR godtar du å være bundet av disse vilkårene for bruk. Hvis du er uenig i noen del av vilkårene, har du ikke tillatelse til å få tilgang til tjenesten. Plattformen vår leveres helt gratis for både personlig og kommersiell bruk.",
+      "sec1Desc": "Ved å få tilgang til og bruke CreateMy-QR godtar du å være bundet av disse vilkårene for bruk. Hvis du er uenig i noen del av vilkårene, har du ikke tillatelse til å få tilgang til tjenesten. Plattformen vår gir permanent statisk QR-kodegenerering med valgfrie PRO-abonnementer for avanserte profesjonelle verktøy.",
       "sec2Title": "Lokal behandlingsgaranti",
       "sec2Desc": "CreateMy-QR gir verktøy som kjøres strengt innenfor ditt lokale nettlesermiljø via WebAssembly. Vi garanterer at:",
       "sec2Bul1": "Filene dine blir aldri lastet opp til våre servere eller noen tredjeparts infrastruktur.",
@@ -1771,7 +1771,7 @@
       "featTitle2": "Spor oppmøte",
       "featDesc2": "Bruk UTM-tagger for å spore hvilke plakater som genererer flest skanninger.",
       "featTitle3": "Ingen grenser",
-      "featDesc3": "Ubegrensede skanninger, helt gratis, ingen utløpsdatoer.",
+      "featDesc3": "Ubegrensede skanninger, permanente statiske koder, ingen utløpsdatoer.",
       "faqTitle": "Vanlige spørsmål"
     },
     "whatsappsupport": {

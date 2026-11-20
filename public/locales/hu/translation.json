@@ -204,8 +204,8 @@
     "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
-        "q": "Ez a QR kód generátor teljesen ingyenes?",
-        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
+        "q": "Hogyan működik az árképzés és a hozzáférés?",
+        "a": "Az alapvető statikus QR- és vonalkódgenerálás elérhető lejáró kódok, hirdetések és rejtett próbacsapdák nélkül. Az opcionális PRO tervek (9 USD/hó vagy 39 USD élettartam) feloldják a tömeges táblázatkezelést, a matricalapok nyomtatását és a vektoros SVG/DXF exportálást."
       },
       {
         "q": "Fel vannak töltve a fájlok és az adataim a szervereire?",
@@ -234,7 +234,7 @@
     "title": "Generátor beágyazása webhelyére",
     "desc": "Szeretne ingyenes QR kód generátort kínálni látogatóinak? Másolja ki és illessze be az alábbi HTML-kódrészletet webhelyére vagy blogjába.",
     "whyTitle": "Miért használja a widgetünket?",
-    "why1": "Free core tools for your users with zero paywalls",
+    "why1": "Megbízható központi QR-generátor a felhasználók számára tiszta adatvédelemmel",
     "why2": "Nincsenek hirdetések, felugró ablakok vagy tolakodó követés a widgeten belül",
     "why3": "Növeli a látogatók elköteleződését és a domainben való tartózkodási időt",
     "anchorLabel": "SEO horgonyszöveg kiválasztása:",
@@ -249,8 +249,8 @@
   "landing": {
     "badgeLeadMarket": "Miért Mi Vezessünk",
     "heroTitle": "QR-kódok, amelyek valóban működnek",
-    "heroSubtitle": "Nincs lejárat. Nincsenek hirdetések. Nincsenek szerverek. Csak azonnali, privát QR-kódok – örökké ingyenes.",
-    "badgeFree": "Örökké ingyenes",
+    "heroSubtitle": "Nincsenek 14 napos korlátozások, nincsenek kényszerített hirdetések, nincs nyomon követés. Az opcionális PRO-frissítésekkel kiváló minőségű statikus kódokat állíthat elő közvetlenül a böngészőjében.",
+    "badgeFree": "Állandó statikus kódok",
     "comp1Title": "Nincs 14 napos lejárati csapda",
     "comp1Desc": "A versenytársak 14 nap után megölik a nyomtatott kódokat, hacsak nem fizet. Statikus QR-kódjaink örökké működnek.",
     "badgeZeroAds": "Zero Ads",
@@ -411,8 +411,8 @@
       "a3": "Műszakilag igen, de nem ajánlott, mivel a kézi tárcsázás gyorsabb és megbízhatóbb vészhelyzetben.",
       "q4": "Tárcsázhat mellékeket?",
       "a4": "A kiterjesztések támogatása (a szünetekhez vessző használata) teljes mértékben a lapolvasó telefon operációs rendszerétől függ.",
-      "q5": "Teljesen ingyenes a generálás?",
-      "a5": "Igen, a telefonos QR-kód generátorunk 100%-ban ingyenes, szkennelési korlátozások nélkül."
+      "q5": "A telefonos QR-kódok állandó beolvasása?",
+      "a5": "Igen, telefonos QR-kódjaink statikusak, nincs szkennelési korlát vagy lejárati dátum."
     },
     "event": {
       "q1": "Szinkronizálódik a Google Naptárral vagy az Apple Naptárral?",
@@ -626,7 +626,7 @@
       "q3": "Nyomon követhetem, hogy hányan olvasták be?",
       "a3": "Közvetlenül a Google Űrlapok irányítópultján nyomon követheti a beküldött űrlapok teljes számát.",
       "q4": "Ingyenes a Google űrlap QR-kódja?",
-      "a4": "Igen! Generátorunk teljesen ingyenes, és statikus hivatkozásokat hoz létre közvetlenül az űrlaphoz rejtett díjak nélkül.",
+      "a4": "Igen! Generátorunk közvetlen statikus hivatkozásokat hoz létre az Ön Google-űrlapjára anélkül, hogy az átirányítási linkek lejárnának.",
       "q5": "Működik a Microsoft Forms-szal is?",
       "a5": "Teljesen! Ehelyett illessze be a Microsoft Forms hivatkozását az URL-generátorunkba."
     },
@@ -1016,7 +1016,7 @@
         "title": "Alapvető értékek",
         "v1": "Első az adatvédelem",
         "d1": "Az ügyféloldali generálás azt jelenti, hogy az adatok soha nem érintik a szervereinket.",
-        "v2": "Ingyenes Forever",
+        "v2": "Állandó statikus kódok",
         "d2": "Az alapvető funkciók mindig ingyenesek maradnak, rejtett korlátok nélkül.",
         "v3": "Globális elérés",
         "d3": "30 nyelvre lokalizálva, hogy valóban nemzetközi közönséget szolgáljon ki."
@@ -1058,7 +1058,7 @@
       "metrics": {
         "title": "Funkció",
         "m1": "Árképzés",
-        "us1": "100% ingyenes",
+        "us1": "Állandó statikus",
         "them1": "15 dollár/hó",
         "m2": "Adatvédelem",
         "us2": "Ügyféloldali (nincs követés)",
@@ -1172,7 +1172,7 @@
       "mfgDesc": "Generátorunk éles, pixel-tökéletes PNG-fájlokat hoz létre, amelyek gyönyörűen méretezhetők a nyomtatáshoz. Nem használunk homályos raszteres képeket – motorunk tiszta SVG matematikát jelenít meg, mielőtt nagy felbontású PNG-letöltésekké konvertálja.",
       "mfgList1": "Abszolút pontosság: nincsenek elmosódott élek.",
       "mfgList2": "Egyedi padding: Biztonságos zónák a hőnyomtatókhoz.",
-      "mfgList3": "100% ingyenes: nincs előfizetés az alapgenerációhoz.",
+      "mfgList3": "A maggenerálást tartalmazza: A szabványos vonalkód generáláshoz nincs szükség előfizetésre.",
       "mfgBadge": "Készen áll a gyárra",
       "mfgBadgeDesc": "Nagy kontraszt lézerszkennerekhez",
       "ecoTitle": "Tökéletes e-kereskedelemhez és kiskereskedelemhez",
@@ -1262,7 +1262,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "A QR-kód Generátor, Ami",
     "heroTitleHighlight": "Soha Nem Jár Le.",
-    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Free core generation, client-side privacy, and zero paywalls on your static codes.",
+    "heroSubtitle": "Hozzon létre állandó, nyomtatásra kész QR-kódokat és vonalkódokat közvetlenül a böngészőben. Megbízható maggenerálás ügyféloldali adatvédelemmel.",
     "citation": "\"A QR-kód egy nemzetközi szabvány (ISO/IEC 18004:2015). A mátrix vonalkódok tiszta modulrácsokat igényelnek a megbízható szkennelés érdekében az összes megfelelő olvasón világszerte.\"",
     "searchPlaceholder": "Keresőeszközök – WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Minden eszköz",
@@ -1280,7 +1280,7 @@
     "feat4": "ISO 18004-nek megfelelő",
     "feat4Desc": "Megfelel a nemzetközi QR szabványnak",
     "whatIsTitle": "Mi az a CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.",
+    "whatIsDesc": "A CreateMy-QR egy kliensoldali QR-kód és vonalkód platform, amely 37 adattípust támogat. Az alapvető statikus kódok állandóak az azonnali, nagy felbontású PNG-exporttal és a nulla követéssel. A PRO-val feloldható a fejlett vektorexportálás és a tömeges táblázatkezelési kötegek zárolása.",
     "fact1": "Helyben generál QR-kódokat – nem küldenek adatokat egyetlen szerverre sem.",
     "fact2": "37 típust támogat: URL, WhatsApp, vCard, WiFi, kriptográfia, PDF stb.",
     "fact3": "Teljesen lokalizált 30 nyelven, köztük arabul, japánul és hindi nyelven.",
@@ -1291,8 +1291,8 @@
     "faqSubtitle": "Minden, amit a CreateMy-QR-ről tudnia kell.",
     "faq1q": "Mi az a CreateMy-QR?",
     "faq1a": "CreateMy-QR is a browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant codes with client-side processing — no uploads, zero tracking, and no forced account for core generation.",
-    "faq2q": "Helyben generál QR-kódokat – nem küldenek adatokat egyetlen szerverre sem.",
-    "faq2a": "Yes. All static QR codes are permanent and free forever with no expiry dates or watermarks. Optional Pro subscriptions are available for users who need bulk spreadsheet batches and sticker sheet printing.",
+    "faq2q": "A statikus QR-kódok lejárnak, vagy korlátozottak?",
+    "faq2a": "Nem. Az összes generált statikus QR-kód állandó, lejárati dátum vagy vízjel nélkül. Opcionális PRO-előfizetések állnak rendelkezésre azoknak a felhasználóknak, akiknek tömeges táblázatcsomagokra, vektorexportálásra és maketteszközökre van szükségük.",
     "faq3q": "Teljesen lokalizált 30 nyelven, köztük arabul, japánul és hindi nyelven.",
     "faq3a": "Miért 100%-ban biztonságos?"
   },
@@ -1302,7 +1302,7 @@
       "heroTitle": "Rólunk",
       "heroSubtitle": "A dokumentum- és QR-eszközök demokratizálása",
       "mission": "Küldetésünk",
-      "missionDesc": "Úgy gondoljuk, hogy a prémium QR-segédprogramoknak teljesen ingyenesnek, privátnak és mindenki számára elérhetőnek kell lenniük.",
+      "missionDesc": "Meggyőződésünk, hogy az alapvető QR-szolgáltatásoknak átláthatónak, privátnak és mindenki számára elérhetőnek kell lenniük becsületes árazás mellett.",
       "privacy": "Abszolút adatvédelem",
       "privacyDesc": "Mindent helyileg dolgoz fel a böngészőben. A fájlok soha nem érintik a szervert.",
       "fast": "Villámgyors",
@@ -1314,7 +1314,7 @@
       "architecture": "Építészet",
       "architectureTitle": "Technology Stack",
       "guarantee": "Garanciánk",
-      "guaranteeDesc": "A CreateMy-QR teljesen ingyenes marad. Küldetésünk, hogy mindenki számára demokratizáljuk a közműveket.",
+      "guaranteeDesc": "A CreateMy-QR az átláthatóságra épül. Küldetésünk, hogy megbízható ügyféloldali szolgáltatásokat nyújtsunk becsületes értékkel.",
       "join": "Csatlakozz a mozgalomhoz",
       "joinDesc": "Tapasztalja meg az internet leggyorsabb, legbiztonságosabb és legfejlettebb QR-csomagját.",
       "seoDesc": "Fedezze fel a CreateMy-QR küldetését a vonalkód és QR-kód eszközök demokratizálására világszerte, 100%-os ügyféloldali adatvédelemmel, nulla adatnaplózással és offline biztonsággal.",
@@ -1438,7 +1438,7 @@
       "app4Name": "Media & Doc Tools",
       "app4Desc": "Nagy DPI vektor SVG exportőr, PDF generátor és kötegkezelő",
       "freeTitle": "Ingyenes terv",
-      "freeBadge": "Ingyenes Forever",
+      "freeBadge": "Kezdő terv",
       "freeCostPeriod": "/ örökre",
       "freeDesc": "Alapvető QR- és vonalkódeszközök a személyes projektekhez és a mindennapi szkenneléshez.",
       "freeCta": "Kezdje ingyen most",
@@ -1566,7 +1566,7 @@
       "localDataDesc": "Az előzményeket a saját böngészőjében tárolja az IndexedDB segítségével. Ha törli a böngésző adatait, az előzmények véglegesen törlődnek.",
       "lastUpdated": "Utoljára frissítve: 2026. november",
       "sec1Title": "Feltételek elfogadása",
-      "sec1Desc": "A CreateMy-QR elérésével és használatával Ön elfogadja a jelen Szolgáltatási feltételek betartását. Ha nem ért egyet a feltételek bármely részével, nincs engedélye a Szolgáltatás elérésére. Platformunkat teljesen ingyenesen biztosítjuk személyes és kereskedelmi használatra egyaránt.",
+      "sec1Desc": "A CreateMy-QR elérésével és használatával Ön elfogadja a jelen Szolgáltatási feltételeket. Ha nem ért egyet a feltételek bármely részével, nincs engedélye a Szolgáltatás elérésére. Platformunk állandó statikus QR-kód generálást biztosít opcionális PRO-előfizetéssel a fejlett professzionális eszközökhöz.",
       "sec2Title": "Helyi feldolgozási garancia",
       "sec2Desc": "A CreateMy-QR olyan eszközöket biztosít, amelyek szigorúan a helyi böngészőkörnyezetben futnak a WebAssembly segítségével. Garantáljuk, hogy:",
       "sec2Bul1": "A fájlokat soha nem töltjük fel szervereinkre vagy harmadik fél infrastruktúrájára.",
@@ -1709,7 +1709,7 @@
       "featTitle2": "Pályalátogatás",
       "featDesc2": "Használjon UTM-címkéket annak nyomon követésére, hogy mely plakátok generálják a legtöbb szkennelést.",
       "featTitle3": "Nincsenek határok",
-      "featDesc3": "Korlátlan beolvasás, teljesen ingyenes, nincs lejárati dátum.",
+      "featDesc3": "Korlátlan szkennelés, állandó statikus kódok, lejárati dátumok nélkül.",
       "faqTitle": "Gyakori kérdések"
     },
     "whatsappsupport": {

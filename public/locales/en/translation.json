@@ -204,8 +204,8 @@
     "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
-        "q": "Is this QR code generator completely free?",
-        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
+        "q": "How does pricing and access work?",
+        "a": "Core static QR and barcode generation is available with no expiring codes, no ads, and no hidden trial traps. Optional PRO plans ($9/mo or $39 Lifetime) unlock bulk spreadsheet processing, sticker sheet printing, and vector SVG/DXF exports."
       },
       {
         "q": "Are my files and data uploaded to your servers?",
@@ -234,7 +234,7 @@
     "title": "Embed Generator on Your Website",
     "desc": "Want to offer a free QR code generator to your visitors? Copy and paste the HTML snippet below into your website or blog.",
     "whyTitle": "Why use our widget?",
-    "why1": "Free core tools for your users with zero paywalls",
+    "why1": "Reliable core QR generator for your users with clean privacy",
     "why2": "No ads, popups, or intrusive tracking inside the widget",
     "why3": "Boosts visitor engagement and dwell time on your domain",
     "anchorLabel": "Select SEO Anchor Text:",
@@ -291,8 +291,8 @@
   "seoKeywords": "turn link into qr code, make link into qr code, convert link to qr code, url to qr code generator free, create qr code for link, link to qr code maker no sign up, editable qr code generator, custom qr code with logo free, qr code generator no watermark, qr code generator for wifi password, vcard qr code maker online, qr code for google reviews, free dynamic qr code generator, permanent qr code generator without expiration, vector svg qr code download free, high resolution qr code generator png, client side qr code generator privacy, qr code generator with custom colors and gradient, how to make qr code for google drive link, qr code maker for whatsapp link, qr code for restaurant menu pdf link, qr code generator without login or credit card, best free qr code generator 2026, qr code error correction level q h, generate bulk url qr codes, unlimited scan qr code generator free, qr code maker with picture in middle, qr code generator for event ticketing, google maps location qr code generator, send email mailto qr code maker, send sms message qr code generator, phone call number qr code creator, transparent background qr code generator svg, custom eye pattern qr code design, rounded corner dots qr code style, printable high quality qr code for business card, qr code generator no ads or popups, fastest browser based qr code maker, qr code generator for instagram facebook link, qr code generator for youtube video link, qr code generator for spotify playlist link, qr code generator for linkedin profile, qr code generator for paypal payment link, qr code generator for stripe checkout link, qr code generator for crypto wallet address, qr code generator for app store google play download, qr code generator for zoom meeting link, qr code generator for microsoft teams link, qr code generator for dropbox link free, qr code generator for canva presentation link",
   "landing": {
     "heroTitle": "Premium QR Codes",
-    "heroSubtitle": "No 14-day limits, no forced ads, no tracking. Generate high-quality static codes directly in your browser that work forever.",
-    "badgeFree": "Free Forever",
+    "heroSubtitle": "No 14-day limits, no forced ads, no tracking. Generate high-quality static codes directly in your browser with optional PRO upgrades.",
+    "badgeFree": "Permanent Static Codes",
     "comp1Title": "No 14-Day Expiry Trap",
     "comp1Desc": "Competitors will deactivate your printed QR codes after 14 days unless you pay. Our static QR codes work forever.",
     "badgeZeroAds": "Zero Ads",
@@ -403,8 +403,8 @@
       "a3": "Technically yes, but it is not recommended as dialing manually is faster and more reliable in an emergency.",
       "q4": "Can it dial extensions?",
       "a4": "Support for extensions (using commas for pauses) depends entirely on the scanner's phone operating system.",
-      "q5": "Is it completely free to generate?",
-      "a5": "Yes, our phone QR code generator is 100% free with no scanning limits."
+      "q5": "Are phone QR codes permanent to scan?",
+      "a5": "Yes, our phone QR codes are static with no scanning limits or expiry dates."
     },
     "event": {
       "q1": "Will this sync with Google Calendar or Apple Calendar?",
@@ -618,7 +618,7 @@
       "q3": "Can I track how many people scanned it?",
       "a3": "You can track the total number of form submissions directly within your Google Forms dashboard.",
       "q4": "Is it free to make a Google Form QR?",
-      "a4": "Yes! Our generator is completely free and creates static links directly to your form without any hidden fees.",
+      "a4": "Yes! Our generator creates direct static links to your Google Form without expiring redirect links.",
       "q5": "Does it work with Microsoft Forms too?",
       "a5": "Absolutely! Just paste your Microsoft Forms link into our URL generator instead."
     },
@@ -1008,7 +1008,7 @@
         "title": "Core Values",
         "v1": "Privacy First",
         "d1": "Client-side generation means your data never touches our servers.",
-        "v2": "Free Forever",
+        "v2": "Permanent Static Codes",
         "d2": "Core features will always remain free with no hidden limits.",
         "v3": "Global Reach",
         "d3": "Localized in 30 languages to serve a truly international audience."
@@ -1050,7 +1050,7 @@
       "metrics": {
         "title": "Feature",
         "m1": "Pricing",
-        "us1": "100% Free",
+        "us1": "Permanent Static",
         "them1": "$15/month",
         "m2": "Privacy",
         "us2": "Client-Side (No Tracking)",
@@ -1164,7 +1164,7 @@
       "mfgDesc": "Our generator creates crisp, pixel-perfect PNG files that scale beautifully for print. We don't use fuzzy raster images—our engine renders pure SVG math before converting it to high-res PNG downloads.",
       "mfgList1": "Absolute Precision: No blurry edges.",
       "mfgList2": "Custom Padding: Safe zones for thermal printers.",
-      "mfgList3": "100% Free: No subscriptions for basic generation.",
+      "mfgList3": "Core Generation Included: No subscriptions required for standard barcode generation.",
       "mfgBadge": "Factory Ready",
       "mfgBadgeDesc": "High contrast for laser scanners",
       "ecoTitle": "Perfect for E-Commerce & Retail",
@@ -1316,7 +1316,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "The QR Code Generator That",
     "heroTitleHighlight": "Never Expires.",
-    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Free core generation, client-side privacy, and zero paywalls on your static codes.",
+    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Reliable core generation with client-side privacy.",
     "citation": "\"The QR Code is an international standard (ISO/IEC 18004:2015). Matrix barcodes require clean module grids for reliable scanning across all compliant readers worldwide.\"",
     "searchPlaceholder": "Search tools — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "All Tools",
@@ -1334,7 +1334,7 @@
     "feat4": "ISO 18004 Compliant",
     "feat4Desc": "Meets international QR standard",
     "whatIsTitle": "What is CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.",
+    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are permanent with instant high-resolution PNG export and zero tracking. Advanced vector exports and bulk spreadsheet batches are unlocked with PRO.",
     "fact1": "Generates QR codes locally — no data sent to any server.",
     "fact2": "Supports 37 types: URL, WhatsApp, vCard, WiFi, Crypto, PDF, and more.",
     "fact3": "Fully localized in 30 languages including Arabic, Japanese, and Hindi.",
@@ -1345,8 +1345,8 @@
     "faqSubtitle": "Everything you need to know about CreateMy-QR.",
     "faq1q": "What is CreateMy-QR?",
     "faq1a": "CreateMy-QR is a browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant codes with client-side processing — no uploads, zero tracking, and no forced account for core generation.",
-    "faq2q": "Are the QR codes free to use forever?",
-    "faq2a": "Yes. All static QR codes are permanent and free forever with no expiry dates or watermarks. Optional Pro subscriptions are available for users who need bulk spreadsheet batches and sticker sheet printing.",
+    "faq2q": "Do static QR codes expire or have limits?",
+    "faq2a": "No. All static QR codes generated are permanent with no expiry dates or watermarks. Optional PRO subscriptions are available for users who need bulk spreadsheet batches, vector exports, and mockup tools.",
     "faq3q": "Is my data secure when generating a QR code?",
     "faq3a": "Absolutely. All encoding happens inside your browser. Your data never leaves your device and is never transmitted to any server. The platform is fully GDPR and CCPA compliant."
   },
@@ -1356,7 +1356,7 @@
       "heroTitle": "About Us",
       "heroSubtitle": "Democratizing Document & QR Tools",
       "mission": "Our Mission",
-      "missionDesc": "We believe premium QR utilities should be completely free, private, and accessible to everyone.",
+      "missionDesc": "We believe essential QR utilities should be transparent, private, and accessible to everyone with honest pricing.",
       "privacy": "Absolute Privacy",
       "privacyDesc": "Everything is processed locally in your browser. Your files never touch a server.",
       "fast": "Lightning Fast",
@@ -1368,7 +1368,7 @@
       "architecture": "Architecture",
       "architectureTitle": "Technology Stack",
       "guarantee": "Our Guarantee",
-      "guaranteeDesc": "CreateMy-QR is built to remain completely free. Our mission is to democratize utilities for everyone.",
+      "guaranteeDesc": "CreateMy-QR is built on transparency. Our mission is to provide dependable client-side utilities with honest value.",
       "join": "Join the Movement",
       "joinDesc": "Experience the fastest, safest, and most advanced QR suite on the web.",
       "seoDesc": "Discover CreateMy-QR's mission to democratize barcode and QR code tools worldwide with 100% client-side privacy, zero data logging, and offline security.",
@@ -1492,7 +1492,7 @@
       "app4Name": "Media & Doc Tools",
       "app4Desc": "High-DPI vector SVG exporter, PDF generator & batch manager",
       "freeTitle": "Free Plan",
-      "freeBadge": "Free Forever",
+      "freeBadge": "Starter Plan",
       "freeCost": "$0",
       "freeCostPeriod": "/ forever",
       "freeDesc": "Essential QR & Barcode tools for personal projects and everyday scanning.",
@@ -1620,7 +1620,7 @@
       "localDataDesc": "Your history is stored in your own browser via IndexedDB. If you clear your browser data, your history is permanently deleted.",
       "lastUpdated": "Last Updated: November 2026",
       "sec1Title": "Agreement to Terms",
-      "sec1Desc": "By accessing and using CreateMy-QR, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you do not have permission to access the Service. Our platform is provided completely free of charge for both personal and commercial use.",
+      "sec1Desc": "By accessing and using CreateMy-QR, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you do not have permission to access the Service. Our platform provides permanent static QR code generation with optional PRO subscriptions for advanced professional tools.",
       "sec2Title": "Local Processing Guarantee",
       "sec2Desc": "CreateMy-QR provides tools that execute strictly within your local browser environment via WebAssembly. We guarantee that:",
       "sec2Bul1": "Your files are never uploaded to our servers or any third-party infrastructure.",
@@ -1763,7 +1763,7 @@
       "featTitle2": "Track Attendance",
       "featDesc2": "Use UTM tags to track which posters generate the most scans.",
       "featTitle3": "No Limits",
-      "featDesc3": "Unlimited scans, completely free, no expiration dates.",
+      "featDesc3": "Unlimited scans, permanent static codes, no expiration dates.",
       "faqTitle": "Common Questions"
     },
     "whatsappsupport": {

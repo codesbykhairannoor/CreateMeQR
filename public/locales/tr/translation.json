@@ -204,8 +204,8 @@
     "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
-        "q": "Bu QR kod oluşturucu tamamen ücretsiz mi?",
-        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
+        "q": "Fiyatlandırma ve erişim nasıl çalışır?",
+        "a": "Temel statik QR ve barkod oluşturma, süresi dolan kodlar, reklamlar ve gizli deneme tuzakları olmadan kullanılabilir. İsteğe bağlı PRO planları (aylık 9 ABD doları veya Ömür boyu 39 ABD doları) toplu e-tablo işleme, etiket sayfası yazdırma ve vektör SVG/DXF dışa aktarma işlemlerinin kilidini açar."
       },
       {
         "q": "Dosyalarım ve verilerim sunucularınıza yükleniyor mu?",
@@ -234,7 +234,7 @@
     "title": "Jeneratörü Web Sitenize Yerleştirin",
     "desc": "Ziyaretçilerinize ücretsiz bir QR kod oluşturucu sunmak ister misiniz? Aşağıdaki HTML pasajını kopyalayıp web sitenize veya blogunuza yapıştırın.",
     "whyTitle": "Widget'ımızı neden kullanmalısınız?",
-    "why1": "Kullanıcılarınız için ödeme duvarı olmayan ücretsiz temel araçlar",
+    "why1": "Temiz gizlilikle kullanıcılarınız için güvenilir çekirdek QR oluşturucu",
     "why2": "Widget'ın içinde reklam, pop-up veya izinsiz izleme yok",
     "why3": "Ziyaretçi katılımını ve alanınızda kalma süresini artırır",
     "anchorLabel": "SEO Bağlantı Metnini seçin:",
@@ -249,8 +249,8 @@
   "landing": {
     "badgeLeadMarket": "Neden Öndeyiz",
     "heroTitle": "Gerçekten Çalışan QR Kodlar",
-    "heroSubtitle": "Süre sonu yok. Reklam yok. Sunucu yok. Anında, özel QR kodları — sonsuza kadar ücretsiz.",
-    "badgeFree": "Sonsuza Kadar Ücretsiz",
+    "heroSubtitle": "14 günlük sınırlama yok, zorunlu reklam yok, izleme yok. İsteğe bağlı PRO yükseltmeleriyle doğrudan tarayıcınızda yüksek kaliteli statik kodlar oluşturun.",
+    "badgeFree": "Kalıcı Statik Kodlar",
     "comp1Title": "14 Günlük Süre Sonu Tuzağı Yok",
     "comp1Desc": "Rakipler ödemezseniz 14 gün sonra basılı kodlarınızı devre dışı bırakır. Bizimkiler sonsuza kadar çalışır.",
     "badgeZeroAds": "Sıfır Reklam",
@@ -411,8 +411,8 @@
       "a3": "Teknik olarak evet, ancak acil durumlarda manuel arama daha hızlı ve daha güvenilir olduğundan önerilmez.",
       "q4": "Dahili hatları arayabilir mi?",
       "a4": "Uzantı desteği (duraklatmalar için virgül kullanılması) tamamen tarayıcının telefon işletim sistemine bağlıdır.",
-      "q5": "Oluşturmak tamamen ücretsiz mi?",
-      "a5": "Evet, telefon QR kodu oluşturucumuz %100 ücretsizdir ve tarama sınırı yoktur."
+      "q5": "Telefon QR kodlarının taranması kalıcı mıdır?",
+      "a5": "Evet, telefon QR kodlarımız statiktir ve tarama sınırı veya son kullanma tarihi yoktur."
     },
     "event": {
       "q1": "Bu, Google Takvim veya Apple Takvim ile senkronize edilecek mi?",
@@ -626,7 +626,7 @@
       "q3": "Kaç kişinin taradığını takip edebilir miyim?",
       "a3": "Toplam form gönderim sayısını doğrudan Google Formlar kontrol panelinizden takip edebilirsiniz.",
       "q4": "Google Formu QR oluşturmak ücretsiz mi?",
-      "a4": "Evet! Oluşturucumuz tamamen ücretsizdir ve herhangi bir gizli ücret olmadan doğrudan formunuza statik bağlantılar oluşturur.",
+      "a4": "Evet! Oluşturucumuz, yönlendirme bağlantılarının süresi dolmadan Google Formunuza doğrudan statik bağlantılar oluşturur.",
       "q5": "Microsoft Forms'la da çalışıyor mu?",
       "a5": "Kesinlikle! Bunun yerine Microsoft Forms bağlantınızı URL oluşturucumuza yapıştırmanız yeterli."
     },
@@ -1016,7 +1016,7 @@
         "title": "Temel Değerler",
         "v1": "Önce Gizlilik",
         "d1": "İstemci tarafı oluşturma, verilerinizin hiçbir zaman sunucularımıza dokunmayacağı anlamına gelir.",
-        "v2": "Sonsuza Kadar Ücretsiz",
+        "v2": "Kalıcı Statik Kodlar",
         "d2": "Temel özellikler hiçbir gizli sınırlama olmaksızın her zaman ücretsiz kalacaktır.",
         "v3": "Küresel Erişim",
         "d3": "Gerçek anlamda uluslararası bir kitleye hizmet vermek için 30 dilde yerelleştirilmiştir."
@@ -1058,7 +1058,7 @@
       "metrics": {
         "title": "Özellik",
         "m1": "Fiyatlandırma",
-        "us1": "%100 Ücretsiz",
+        "us1": "Kalıcı Statik",
         "them1": "15$/ay",
         "m2": "Gizlilik",
         "us2": "İstemci Tarafı (İzleme Yok)",
@@ -1172,7 +1172,7 @@
       "mfgDesc": "Oluşturucumuz, baskı için güzel bir şekilde ölçeklenen net, piksel açısından mükemmel PNG dosyaları oluşturur. Bulanık raster görüntüler kullanmıyoruz; motorumuz, yüksek çözünürlüklü PNG indirmelerine dönüştürmeden önce saf SVG matematiğini işler.",
       "mfgList1": "Mutlak Hassasiyet: Bulanık kenarlar yok.",
       "mfgList2": "Özel Dolgu: Termal yazıcılar için güvenli bölgeler.",
-      "mfgList3": "%100 Ücretsiz: Temel nesil için abonelik yoktur.",
+      "mfgList3": "Çekirdek Üretimi Dahil: Standart barkod üretimi için abonelik gerekmez.",
       "mfgBadge": "Fabrika Hazır",
       "mfgBadgeDesc": "Lazer tarayıcılar için yüksek kontrast",
       "ecoTitle": "E-Ticaret ve Perakende için Mükemmel",
@@ -1324,7 +1324,7 @@
     "seoTitle": "CreateMy-QR — Ücretsiz QR Kod & Barkod Oluşturucu | 37 Çevrimiçi Araç",
     "seoDesc": "Ücretsiz olarak 37 türde QR kod ve barkod oluşturun. Anında indirme, süresi dolmayan statik kodlar, 30 dilde ISO/IEC 18004 uyumlu.",
     "badge": "ISO/IEC 18004 · Gizlilik Öncelikli · Sıfır Takip · İstemci Tarafı",
-    "heroSubtitle": "Doğrudan tarayıcınızda kalıcı, baskıya hazır QR kodları ve barkodlar oluşturun. Ücretsiz temel oluşturma, istemci tarafı gizliliği ve statik kodlarınızda ödeme duvarı yok.",
+    "heroSubtitle": "Doğrudan tarayıcınızda kalıcı, yazdırılmaya hazır QR kodları ve barkodlar oluşturun. İstemci tarafı gizliliğiyle güvenilir çekirdek oluşturma.",
     "citation": "\"QR Kodu, uluslararası bir standarttır (ISO/IEC 18004:2015). Matris barkodlar, tüm uyumlu okuyucularda güvenilir tarama için temiz modül ızgaraları gerektirir.\"",
     "searchPlaceholder": "Araç ara — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Tüm Araçlar",
@@ -1342,7 +1342,7 @@
     "feat4": "ISO 18004 Uyumlu",
     "feat4Desc": "Uluslararası QR standardını karşılar",
     "whatIsTitle": "CreateMy-QR nedir?",
-    "whatIsDesc": "CreateMy-QR, 37 veri türünü destekleyen istemci tarafı bir QR kod ve barkod platformudur. Temel statik kodlar, anında yüksek çözünürlüklü PNG dışa aktarma ve sıfır takip ile sonsuza kadar ücretsizdir. Gelişmiş vektörel SVG dışa aktarma ve toplu e-tablo paketleri PRO ile açılır.",
+    "whatIsDesc": "CreateMy-QR, 37 veri türünü destekleyen, istemci tarafı bir QR kodu ve barkod platformudur. Temel statik kodlar, anında yüksek çözünürlüklü PNG dışa aktarma ve sıfır izleme özelliğiyle kalıcıdır. Gelişmiş vektör dışa aktarmaları ve toplu e-tablo gruplarının kilidi PRO ile açılır.",
     "fact1": "QR kodları yerel olarak oluşturur — sunucuya veri gönderilmez.",
     "fact2": "37 türü destekler: URL, WhatsApp, vCard, WiFi, Kripto, PDF ve daha fazlası.",
     "fact3": "Arapça, Japonca ve Hintçe dahil 30 dilde tam yerelleştirilmiş.",
@@ -1353,8 +1353,8 @@
     "faqSubtitle": "CreateMy-QR hakkında bilmeniz gereken her şey.",
     "faq1q": "CreateMy-QR nedir?",
     "faq1a": "CreateMy-QR tarayıcıda çalışan 37 araç sunar — sunucuya dosya yükleme yok, izleme yok ve temel özellikler için hesap zorunluluğu yoktur.",
-    "faq2q": "QR kodları sonsuza kadar ücretsiz mi?",
-    "faq2a": "Evet. Tüm statik QR kodları kalıcıdır ve son kullanma tarihi veya filigran olmadan sonsuza kadar ücretsizdir. E-tablolardan toplu üretim ve çıkartma sayfası baskısı için isteğe bağlı Pro abonelikleri mevcuttur.",
+    "faq2q": "Statik QR kodlarının süresi var mı veya sınırları var mı?",
+    "faq2a": "Hayır. Oluşturulan tüm statik QR kodları, son kullanma tarihi veya filigran olmadan kalıcıdır. Toplu elektronik tablo gruplarına, vektör dışa aktarmalarına ve model araçlarına ihtiyaç duyan kullanıcılar için isteğe bağlı PRO abonelikleri mevcuttur.",
     "faq3q": "Verilerim güvende mi?",
     "faq3a": "Kesinlikle. Tüm kodlama tarayıcınızda gerçekleşir. Verileriniz asla cihazınızı terk etmez."
   },
@@ -1364,7 +1364,7 @@
       "heroTitle": "Hakkımızda",
       "heroSubtitle": "Belgeyi ve QR Araçlarını Demokratikleştirme",
       "mission": "Misyonumuz",
-      "missionDesc": "Premium QR yardımcı programlarının tamamen ücretsiz, özel ve herkes tarafından erişilebilir olması gerektiğine inanıyoruz.",
+      "missionDesc": "Temel QR yardımcı programlarının şeffaf, özel ve dürüst fiyatlandırmayla herkes için erişilebilir olması gerektiğine inanıyoruz.",
       "privacy": "Mutlak Gizlilik",
       "privacyDesc": "Her şey tarayıcınızda yerel olarak işlenir. Dosyalarınız hiçbir zaman bir sunucuya dokunmaz.",
       "fast": "Yıldırım Hızında",
@@ -1376,7 +1376,7 @@
       "architecture": "Mimarlık",
       "architectureTitle": "Teknoloji Yığını",
       "guarantee": "Garantimiz",
-      "guaranteeDesc": "CreateMy-QR tamamen ücretsiz kalacak şekilde tasarlandı. Misyonumuz kamu hizmetlerini herkes için demokratikleştirmektir.",
+      "guaranteeDesc": "CreateMy-QR şeffaflık üzerine kurulmuştur. Misyonumuz, dürüst değere sahip, güvenilir müşteri tarafı hizmetleri sunmaktır.",
       "join": "Harekete Katılın",
       "joinDesc": "Web'deki en hızlı, en güvenli ve en gelişmiş QR paketini deneyimleyin.",
       "seoDesc": "CreateMy-QR'ın %100 istemci tarafı gizliliği, sıfır veri kaydı ve çevrimdışı güvenlik ile dünya çapında barkod ve QR kodu araçlarını demokratikleştirme misyonunu keşfedin.",
@@ -1500,7 +1500,7 @@
       "app4Name": "Medya ve Belge Araçları",
       "app4Desc": "Yüksek DPI vektör SVG dışa aktarıcı, PDF oluşturucu ve toplu yönetici",
       "freeTitle": "Ücretsiz Plan",
-      "freeBadge": "Sonsuza Kadar Ücretsiz",
+      "freeBadge": "Başlangıç ​​Planı",
       "freeCostPeriod": "/ sonsuza kadar",
       "freeDesc": "Kişisel projeler ve günlük tarama için temel QR ve Barkod araçları.",
       "freeCta": "Şimdi Ücretsiz Başlayın",
@@ -1628,7 +1628,7 @@
       "localDataDesc": "Geçmişiniz IndexedDB aracılığıyla kendi tarayıcınızda saklanır. Tarayıcı verilerinizi temizlerseniz geçmişiniz kalıcı olarak silinir.",
       "lastUpdated": "Son Güncelleme: Kasım 2026",
       "sec1Title": "Şartlar Anlaşması",
-      "sec1Desc": "CreateMy-QR'a erişerek ve onu kullanarak bu Hizmet Koşullarına bağlı kalmayı kabul edersiniz. Koşulların herhangi bir bölümünü kabul etmiyorsanız Hizmete erişim izniniz yoktur. Platformumuz hem kişisel hem de ticari kullanım için tamamen ücretsiz olarak sunulmaktadır.",
+      "sec1Desc": "CreateMy-QR'a erişerek ve onu kullanarak bu Hizmet Koşullarına bağlı kalmayı kabul edersiniz. Şartların herhangi bir bölümünü kabul etmiyorsanız Hizmete erişim izniniz yoktur. Platformumuz, gelişmiş profesyonel araçlar için isteğe bağlı PRO abonelikleriyle kalıcı statik QR kodu oluşturma olanağı sağlar.",
       "sec2Title": "Yerel İşleme Garantisi",
       "sec2Desc": "CreateMy-QR, WebAssembly aracılığıyla kesinlikle yerel tarayıcı ortamınızda çalışan araçlar sağlar. Şunu garanti ediyoruz:",
       "sec2Bul1": "Dosyalarınız hiçbir zaman sunucularımıza veya herhangi bir üçüncü taraf altyapısına yüklenmez.",
@@ -1771,7 +1771,7 @@
       "featTitle2": "Katılımı Takip Edin",
       "featDesc2": "Hangi posterlerin en fazla taramayı oluşturduğunu takip etmek için UTM etiketlerini kullanın.",
       "featTitle3": "Sınır Yok",
-      "featDesc3": "Sınırsız tarama, tamamen ücretsiz, son kullanma tarihi yok.",
+      "featDesc3": "Sınırsız tarama, kalıcı statik kodlar, son kullanma tarihi yok.",
       "faqTitle": "Sık Sorulan Sorular"
     },
     "whatsappsupport": {

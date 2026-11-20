@@ -56,7 +56,7 @@ function LayoutURLEventTickets({ qrType = 'urleventtickets', pseoUseCase = null 
         {[
           { icon: <TrendingUp size={32} />, id: 1, fbT: 'Boost Sales', fbD: 'Turn offline flyers into instant online sales.' },
           { icon: <Users size={32} />, id: 2, fbT: 'Track Attendance', fbD: 'Use UTM tags to track which posters generate the most scans.' },
-          { icon: <CheckCircle2 size={32} />, id: 3, fbT: 'No Limits', fbD: 'Unlimited scans, completely free, no expiration dates.' }
+          { icon: <CheckCircle2 size={32} />, id: 3, fbT: 'No Limits', fbD: 'Unlimited scans, permanent static codes, no expiration dates.' }
         ].map(feat => (
           <div key={feat.id} className="hq-evt-feat-card">
             <div style={{ color: '#e91e63', marginBottom: 24 }}>{feat.icon}</div>

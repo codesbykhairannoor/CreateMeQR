@@ -136,7 +136,7 @@ export default function SeoContent() {
             <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed font-medium">{t('geoOptimized.p5_1', 'Business cards and restaurant menus.')}</p>
             <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">{t('geoOptimized.p5_2', 'Event tickets and WiFi access.')}</p>
             <h3 className="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mt-8 mb-3">{t('geoOptimized.h3_5', 'Getting started')}</h3>
-            <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">{t('geoOptimized.p5_3', 'It is completely free to generate your first code.')}</p>
+            <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">{t('geoOptimized.p5_3', 'Start generating static codes directly with client-side privacy.')}</p>
             <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">{t('geoOptimized.p5_4', 'Try out all the customization features today.')}</p>
           </section>
             </div>

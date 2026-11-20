@@ -204,8 +204,8 @@
     "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
-        "q": "Ganap bang libre ang QR code generator na ito?",
-        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
+        "q": "Paano gumagana ang pagpepresyo at pag-access?",
+        "a": "Ang pangunahing static na QR at pagbuo ng barcode ay magagamit nang walang mga nag-e-expire na code, walang mga ad, at walang mga nakatagong trial traps. Ang mga opsyonal na PRO plan ($9/mo o $39 Lifetime) ay nag-a-unlock ng maramihang pagpoproseso ng spreadsheet, pag-print ng sticker sheet, at pag-export ng vector SVG/DXF."
       },
       {
         "q": "Na-upload ba ang aking mga file at data sa iyong mga server?",
@@ -234,7 +234,7 @@
     "title": "I-embed ang Generator sa Iyong Website",
     "desc": "Gustong mag-alok ng libreng QR code generator sa iyong mga bisita? Kopyahin at i-paste ang HTML snippet sa ibaba sa iyong website o blog.",
     "whyTitle": "Bakit gagamitin ang aming widget?",
-    "why1": "Libreng basic tools para sa iyong mga user nang walang paywall",
+    "why1": "Maaasahang core QR generator para sa iyong mga user na may malinis na privacy",
     "why2": "Walang mga ad, popup, o mapanghimasok na pagsubaybay sa loob ng widget",
     "why3": "Pinapalakas ang pakikipag-ugnayan ng bisita at nagtagal sa iyong domain",
     "anchorLabel": "Piliin ang SEO Anchor Text:",
@@ -249,8 +249,8 @@
   "landing": {
     "badgeLeadMarket": "Bakit Tayo Nangunguna",
     "heroTitle": "Mga QR Code na Talagang Gumagana",
-    "heroSubtitle": "Walang expire. Walang mga ad. Walang mga server. Instant lang, pribadong QR code — libre nang walang hanggan.",
-    "badgeFree": "Walang Hanggan",
+    "heroSubtitle": "Walang 14 na araw na limitasyon, walang sapilitang ad, walang pagsubaybay. Bumuo ng mataas na kalidad na mga static na code nang direkta sa iyong browser gamit ang mga opsyonal na pag-upgrade ng PRO.",
+    "badgeFree": "Mga Permanenteng Static Code",
     "comp1Title": "Walang 14 na Araw na Expiry Trap",
     "comp1Desc": "Papatayin ng mga kakumpitensya ang iyong mga naka-print na code pagkatapos ng 14 na araw maliban kung magbabayad ka. Ang aming mga static na QR code ay gumagana magpakailanman.",
     "badgeZeroAds": "Zero Ads",
@@ -411,8 +411,8 @@
       "a3": "Sa teknikal na oo, ngunit hindi ito inirerekomenda dahil ang pag-dial nang manu-mano ay mas mabilis at mas maaasahan sa isang emergency.",
       "q4": "Maaari ba itong mag-dial ng mga extension?",
       "a4": "Ang suporta para sa mga extension (gamit ang mga kuwit para sa mga pag-pause) ay ganap na nakasalalay sa operating system ng telepono ng scanner.",
-      "q5": "Ito ba ay ganap na libre upang makabuo?",
-      "a5": "Oo, ang aming QR code generator ng telepono ay 100% libre nang walang limitasyon sa pag-scan."
+      "q5": "Permanente ba ang mga QR code ng telepono upang i-scan?",
+      "a5": "Oo, ang aming mga QR code ng telepono ay static na walang mga limitasyon sa pag-scan o mga petsa ng pag-expire."
     },
     "event": {
       "q1": "Magsi-sync ba ito sa Google Calendar o Apple Calendar?",
@@ -626,7 +626,7 @@
       "q3": "Maaari ko bang subaybayan kung ilang tao ang nag-scan nito?",
       "a3": "Maaari mong subaybayan ang kabuuang bilang ng mga pagsusumite ng form nang direkta sa loob ng iyong dashboard ng Google Forms.",
       "q4": "Libre ba ang paggawa ng Google Form QR?",
-      "a4": "Oo! Ang aming generator ay ganap na libre at lumilikha ng mga static na link nang direkta sa iyong form nang walang anumang nakatagong bayad.",
+      "a4": "Oo! Gumagawa ang aming generator ng mga direktang static na link sa iyong Google Form nang hindi nag-e-expire ang mga link sa pag-redirect.",
       "q5": "Gumagana rin ba ito sa Microsoft Forms?",
       "a5": "Ganap! I-paste lang ang iyong link sa Microsoft Forms sa aming URL generator sa halip."
     },
@@ -1016,7 +1016,7 @@
         "title": "Mga Pangunahing Halaga",
         "v1": "Privacy Una",
         "d1": "Ang pagbuo ng panig ng kliyente ay nangangahulugan na ang iyong data ay hindi kailanman naaapektuhan ang aming mga server.",
-        "v2": "Libre Magpakailanman",
+        "v2": "Mga Permanenteng Static Code",
         "d2": "Ang mga pangunahing tampok ay palaging mananatiling libre nang walang mga nakatagong limitasyon.",
         "v3": "Global na Abot",
         "d3": "Na-localize sa 30 wika para maghatid ng tunay na internasyonal na madla."
@@ -1058,7 +1058,7 @@
       "metrics": {
         "title": "Tampok",
         "m1": "Pagpepresyo",
-        "us1": "100% Libre",
+        "us1": "Permanenteng Static",
         "them1": "$15/buwan",
         "m2": "Pagkapribado",
         "us2": "Client-Side (Walang Pagsubaybay)",
@@ -1172,7 +1172,7 @@
       "mfgDesc": "Gumagawa ang aming generator ng malulutong, perpektong pixel na PNG file na maganda ang sukat para sa pag-print. Hindi kami gumagamit ng mga malabo na larawan ng raster—nagre-render ang aming engine ng purong SVG math bago ito i-convert sa mga high-res na PNG na pag-download.",
       "mfgList1": "Ganap na Katumpakan: Walang malabong mga gilid.",
       "mfgList2": "Custom Padding: Mga ligtas na zone para sa mga thermal printer.",
-      "mfgList3": "100% Libre: Walang mga subscription para sa pangunahing henerasyon.",
+      "mfgList3": "Kasama ang Core Generation: Walang kinakailangang mga subscription para sa karaniwang pagbuo ng barcode.",
       "mfgBadge": "Handa sa Pabrika",
       "mfgBadgeDesc": "Mataas na contrast para sa mga laser scanner",
       "ecoTitle": "Perpekto para sa E-Commerce at Retail",
@@ -1324,7 +1324,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Walang Pagsubaybay · Client-Side",
     "heroTitle": "Ang QR Code Generator Na",
     "heroTitleHighlight": "Hindi Kailanman Nag-e-expire.",
-    "heroSubtitle": "Gumawa ng permanente, handa-sa-print na mga QR code at barcode sa iyong browser. Libreng basic tools, privacy sa client-side, at walang paywall sa iyong static codes.",
+    "heroSubtitle": "Lumikha ng permanenteng, naka-print na QR code at barcode nang direkta sa iyong browser. Maaasahang pangunahing henerasyon na may privacy sa panig ng kliyente.",
     "citation": "\"Ang QR Code ay isang internasyonal na pamantayan (ISO/IEC 18004:2015). Ang mga matrix barcode ay nangangailangan ng malinis na module grids para sa maaasahang pag-scan sa lahat ng sumusunod na mga mambabasa sa buong mundo.\"",
     "searchPlaceholder": "Mga tool sa paghahanap — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Lahat ng Tools",
@@ -1342,7 +1342,7 @@
     "feat4": "Sumusunod sa ISO 18004",
     "feat4Desc": "Nakakatugon sa internasyonal na pamantayan ng QR",
     "whatIsTitle": "Ano ang CreateMy-QR?",
-    "whatIsDesc": "Ang CreateMy-QR ay isang client-side QR code at barcode platform na sumusuporta sa 37 uri ng data. Ang mga basic static code ay libre magpakailanman na may instant high-res PNG export nang walang pagsubaybay. Ang advanced vector SVG export at bulk batch mula sa spreadsheet ay available sa PRO.",
+    "whatIsDesc": "Ang CreateMy-QR ay isang client-side QR code at platform ng barcode na sumusuporta sa 37 uri ng data. Ang mga pangunahing static na code ay permanente na may instant high-resolution na PNG export at zero tracking. Ang mga advanced na vector export at maramihang spreadsheet batch ay na-unlock gamit ang PRO.",
     "fact1": "Gumagawa ng mga QR code nang lokal — walang data na ipinadala sa anumang server.",
     "fact2": "Sinusuportahan ang 37 uri: URL, WhatsApp, vCard, WiFi, Crypto, PDF, at higit pa.",
     "fact3": "Ganap na naka-localize sa 30 wika kabilang ang Arabic, Japanese, at Hindi.",
@@ -1353,8 +1353,8 @@
     "faqSubtitle": "Lahat ng kailangan mong malaman tungkol sa CreateMy-QR.",
     "faq1q": "Ano ang CreateMy-QR?",
     "faq1a": "Ang CreateMy-QR ay nag-aalok ng 37 tool gamit ang 100% browser processing — walang pag-upload sa server, walang tracking, at hindi kailangang mag-login para sa mga pangunahing feature.",
-    "faq2q": "Gumagawa ng mga QR code nang lokal — walang data na ipinadala sa anumang server.",
-    "faq2a": "Oo. Ang lahat ng static QR code ay permanente at libre magpakailanman na walang petsa ng pag-expire o watermark. May opsyonal na Pro subscription para sa maramihang batch mula sa spreadsheet at pag-print ng sticker sheet.",
+    "faq2q": "Nag-e-expire ba o may mga limitasyon ba ang mga static na QR code?",
+    "faq2a": "Hindi. Ang lahat ng nabuong static na QR code ay permanente na walang mga petsa ng pag-expire o mga watermark. Available ang mga opsyonal na subscription sa PRO para sa mga user na nangangailangan ng maramihang mga batch ng spreadsheet, pag-export ng vector, at mga tool sa mockup.",
     "faq3q": "Ganap na naka-localize sa 30 wika kabilang ang Arabic, Japanese, at Hindi.",
     "faq3a": "Bakit ito 100% Secure?"
   },
@@ -1364,7 +1364,7 @@
       "heroTitle": "Tungkol sa Amin",
       "heroSubtitle": "Pagdemokrata ng Dokumento at QR Tools",
       "mission": "Ang Aming Misyon",
-      "missionDesc": "Naniniwala kami na ang mga premium na QR utilities ay dapat na ganap na libre, pribado, at naa-access sa lahat.",
+      "missionDesc": "Naniniwala kami na ang mahahalagang QR utilities ay dapat na transparent, pribado, at naa-access ng lahat na may tapat na pagpepresyo.",
       "privacy": "Ganap na Pagkapribado",
       "privacyDesc": "Lahat ay lokal na pinoproseso sa iyong browser. Ang iyong mga file ay hindi kailanman humahawak sa isang server.",
       "fast": "Mabilis na Kidlat",
@@ -1376,7 +1376,7 @@
       "architecture": "Arkitektura",
       "architectureTitle": "Technology Stack",
       "guarantee": "Ang Aming Garantiya",
-      "guaranteeDesc": "Ang CreateMy-QR ay binuo upang manatiling ganap na libre. Ang aming misyon ay gawing demokrasya ang mga kagamitan para sa lahat.",
+      "guaranteeDesc": "Ang CreateMy-QR ay binuo sa transparency. Ang aming misyon ay magbigay ng maaasahang mga utility sa panig ng kliyente na may tapat na halaga.",
       "join": "Sumali sa Kilusan",
       "joinDesc": "Damhin ang pinakamabilis, pinakaligtas, at pinaka-advanced na QR suite sa web.",
       "seoDesc": "Tuklasin ang misyon ng CreateMy-QR na gawing demokrasya ang mga tool sa barcode at QR code sa buong mundo na may 100% privacy sa panig ng kliyente, zero data logging, at offline na seguridad.",
@@ -1500,7 +1500,7 @@
       "app4Name": "Mga Tool sa Media at Doc",
       "app4Desc": "High-DPI vector SVG exporter, PDF generator at batch manager",
       "freeTitle": "Libreng Plano",
-      "freeBadge": "Libre Magpakailanman",
+      "freeBadge": "Panimulang Plano",
       "freeCostPeriod": "/ magpakailanman",
       "freeDesc": "Mahahalagang tool sa QR at Barcode para sa mga personal na proyekto at pang-araw-araw na pag-scan.",
       "freeCta": "Magsimulang Libre Ngayon",
@@ -1628,7 +1628,7 @@
       "localDataDesc": "Ang iyong kasaysayan ay naka-imbak sa iyong sariling browser sa pamamagitan ng IndexedDB. Kung iki-clear mo ang data ng iyong browser, permanenteng made-delete ang iyong history.",
       "lastUpdated": "Huling Na-update: Nobyembre 2026",
       "sec1Title": "Kasunduan sa Mga Tuntunin",
-      "sec1Desc": "Sa pamamagitan ng pag-access at paggamit ng CreateMy-QR, sumasang-ayon kang sumailalim sa Mga Tuntunin ng Serbisyong ito. Kung hindi ka sumasang-ayon sa anumang bahagi ng mga tuntunin, wala kang pahintulot na i-access ang Serbisyo. Ang aming platform ay ganap na walang bayad para sa parehong personal at komersyal na paggamit.",
+      "sec1Desc": "Sa pamamagitan ng pag-access at paggamit ng CreateMy-QR, sumasang-ayon kang sumailalim sa Mga Tuntunin ng Serbisyong ito. Kung hindi ka sumasang-ayon sa anumang bahagi ng mga tuntunin, wala kang pahintulot na i-access ang Serbisyo. Ang aming platform ay nagbibigay ng permanenteng static na QR code generation na may mga opsyonal na PRO subscription para sa mga advanced na propesyonal na tool.",
       "sec2Title": "Garantiya sa Lokal na Pagproseso",
       "sec2Desc": "Ang CreateMy-QR ay nagbibigay ng mga tool na mahigpit na gumagana sa loob ng iyong lokal na browser environment sa pamamagitan ng WebAssembly. Ginagarantiya namin na:",
       "sec2Bul1": "Ang iyong mga file ay hindi kailanman ina-upload sa aming mga server o anumang imprastraktura ng third-party.",
@@ -1749,7 +1749,7 @@
       "featTitle2": "Subaybayan ang Attendance",
       "featDesc2": "Gumamit ng mga tag ng UTM upang subaybayan kung aling mga poster ang bumubuo ng pinakamaraming pag-scan.",
       "featTitle3": "Walang Limitasyon",
-      "featDesc3": "Walang limitasyong pag-scan, ganap na libre, walang mga petsa ng pag-expire.",
+      "featDesc3": "Walang limitasyong pag-scan, permanenteng static na code, walang petsa ng pag-expire.",
       "faqTitle": "Mga Karaniwang Tanong"
     },
     "whatsappsupport": {

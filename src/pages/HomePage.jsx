@@ -87,8 +87,8 @@ const FAQS_DEFAULT = [
     a: 'CreateMy-QR is a privacy-first browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant QR codes with client-side processing — no uploads, no tracking, and no forced account for core generation.',
   },
   {
-    q: 'Are the QR codes free to use forever?',
-    a: 'Yes. All QR codes generated are static and free forever. There are no limits, no watermarks, and no expiry dates on static codes. Optional Pro plans are available for bulk generation and sticker sheet printing.',
+    q: 'Do static QR codes expire or have limits?',
+    a: 'No. All static QR codes generated are permanent with no expiry dates or watermarks. Optional PRO plans are available for bulk generation, sticker printing, and vector SVG exports.',
   },
 ];
 // Note: FAQS_DEFAULT no longer needed — keys are in translation.json

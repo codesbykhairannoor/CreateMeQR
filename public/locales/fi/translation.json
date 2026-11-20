@@ -204,8 +204,8 @@
     "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
-        "q": "Onko tämä QR-koodigeneraattori täysin ilmainen?",
-        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
+        "q": "Miten hinnoittelu ja pääsy toimivat?",
+        "a": "Staattinen QR- ja viivakoodiluonti on saatavilla ilman vanhentuvia koodeja, mainoksia tai piilotettuja kokeiluloukkuja. Valinnaiset PRO-suunnitelmat ($ 9/kk tai 39 $ elinikä) mahdollistavat laskentataulukoiden joukkokäsittelyn, tarra-arkkitulostuksen ja vektori-SVG/DXF-viennin."
       },
       {
         "q": "Ladataanko tiedostoni ja tietoni palvelimillesi?",
@@ -234,7 +234,7 @@
     "title": "Upota generaattori verkkosivustollesi",
     "desc": "Haluatko tarjota vierailijoillesi ilmaisen QR-koodigeneraattorin? Kopioi ja liitä alla oleva HTML-koodinpätkä verkkosivustoosi tai blogiisi.",
     "whyTitle": "Miksi käyttää widgettiämme?",
-    "why1": "Free core tools for your users with zero paywalls",
+    "why1": "Luotettava ydin QR-generaattori käyttäjillesi puhtaalla yksityisyydellä",
     "why2": "Ei mainoksia, ponnahdusikkunoita tai häiritsevää seurantaa widgetin sisällä",
     "why3": "Parantaa vierailijoiden sitoutumista ja viipymäaikaa verkkotunnuksessasi",
     "anchorLabel": "Valitse SEO-ankkuriteksti:",
@@ -249,8 +249,8 @@
   "landing": {
     "badgeLeadMarket": "Miksi Johdamme",
     "heroTitle": "QR-koodit, jotka todella toimivat",
-    "heroSubtitle": "Ei voimassaoloaikaa. Ei mainoksia. Ei palvelimia. Vain välittömät, yksityiset QR-koodit – ikuisesti ilmaiseksi.",
-    "badgeFree": "Ikuisesti ilmainen",
+    "heroSubtitle": "Ei 14 päivän rajoituksia, ei pakotettuja mainoksia, ei seurantaa. Luo korkealaatuisia staattisia koodeja suoraan selaimessasi valinnaisten PRO-päivitysten avulla.",
+    "badgeFree": "Pysyvät staattiset koodit",
     "comp1Title": "Ei 14 päivän vanhenemisloukkua",
     "comp1Desc": "Kilpailijat tappavat tulostetut koodisi 14 päivän kuluttua, ellet maksa. Staattiset QR-koodimme toimivat ikuisesti.",
     "badgeZeroAds": "Nolla mainoksia",
@@ -411,8 +411,8 @@
       "a3": "Teknisesti kyllä, mutta sitä ei suositella, koska manuaalinen numeron valinta on nopeampaa ja luotettavampaa hätätilanteessa.",
       "q4": "Voiko se soittaa alanumeroihin?",
       "a4": "Laajennusten tuki (pilkkujen käyttö tauoissa) riippuu täysin skannerin puhelimen käyttöjärjestelmästä.",
-      "q5": "Onko sen luominen täysin ilmaista?",
-      "a5": "Kyllä, puhelimen QR-koodigeneraattorimme on 100% ilmainen ilman skannausrajoituksia."
+      "q5": "Ovatko puhelimen QR-koodit pysyvästi skannattavissa?",
+      "a5": "Kyllä, puhelimemme QR-koodit ovat staattisia, eikä niissä ole skannausrajoja tai vanhenemispäiviä."
     },
     "event": {
       "q1": "Synkronoidaanko tämä Google-kalenterin tai Apple-kalenterin kanssa?",
@@ -626,7 +626,7 @@
       "q3": "Voinko seurata kuinka moni on skannannut sen?",
       "a3": "Voit seurata lähetettyjen lomakkeiden kokonaismäärää suoraan Google Forms -hallintapaneelista.",
       "q4": "Onko Google-lomakkeen QR-koodin tekeminen ilmaista?",
-      "a4": "Kyllä! Generaattorimme on täysin ilmainen ja luo staattisia linkkejä suoraan lomakkeeseen ilman piilokuluja.",
+      "a4": "Kyllä! Generaattorimme luo suoria staattisia linkkejä Google-lomakkeellesi vanhenematta uudelleenohjauslinkkejä.",
       "q5": "Toimiiko se myös Microsoft Formsin kanssa?",
       "a5": "Täysin! Liitä vain Microsoft Forms -linkkisi URL-generaattoriimme."
     },
@@ -1016,7 +1016,7 @@
         "title": "Perusarvot",
         "v1": "Yksityisyys ensin",
         "d1": "Asiakaspuolen luonti tarkoittaa, että tietosi eivät koskaan koske palvelimiimme.",
-        "v2": "Ilmainen ikuisesti",
+        "v2": "Pysyvät staattiset koodit",
         "d2": "Ydinominaisuudet pysyvät aina ilmaisina ilman piilotettuja rajoja.",
         "v3": "Maailmanlaajuinen kattavuus",
         "d3": "Lokalisoitu 30 kielelle palvelemaan aidosti kansainvälistä yleisöä."
@@ -1058,7 +1058,7 @@
       "metrics": {
         "title": "Ominaisuus",
         "m1": "Hinnoittelu",
-        "us1": "100 % ilmainen",
+        "us1": "Pysyvä staattinen",
         "them1": "15 dollaria/kk",
         "m2": "Yksityisyys",
         "us2": "Asiakaspuoli (ei seurantaa)",
@@ -1172,7 +1172,7 @@
       "mfgDesc": "Generaattorimme luo teräviä, pikselin täydellisiä PNG-tiedostoja, jotka skaalautuvat kauniisti tulostettaviksi. Emme käytä sumeita rasterikuvia – koneemme renderöi puhtaan SVG-matematiikan ennen kuin muuntaa sen korkearesoluutioisiksi PNG-latauksiksi.",
       "mfgList1": "Absoluuttinen tarkkuus: Ei epäselviä reunoja.",
       "mfgList2": "Mukautettu pehmuste: Turvalliset vyöhykkeet lämpötulostimille.",
-      "mfgList3": "100 % ilmainen: Ei tilauksia perussukupolvelle.",
+      "mfgList3": "Mukana ydinsukupolvi: Standardiviivakoodin luomiseen ei vaadita tilauksia.",
       "mfgBadge": "Tehdasvalmis",
       "mfgBadgeDesc": "Korkea kontrasti laserskannereille",
       "ecoTitle": "Täydellinen verkkokauppaan ja vähittäiskauppaan",
@@ -1324,7 +1324,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "QR-koodigeneraattori Joka",
     "heroTitleHighlight": "Ei Koskaan Vanhene.",
-    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Free core generation, client-side privacy, and zero paywalls on your static codes.",
+    "heroSubtitle": "Luo pysyviä, tulostusvalmiita QR-koodeja ja viivakoodeja suoraan selaimessasi. Luotettava ydinsukupolvi asiakaspuolen yksityisyydellä.",
     "citation": "\"QR-koodi on kansainvälinen standardi (ISO/IEC 18004:2015). Matriisiviivakoodit vaativat puhtaat moduuliruudukot luotettavaa skannausta varten kaikissa yhteensopivissa lukijoissa ympäri maailmaa.\"",
     "searchPlaceholder": "Hakutyökalut - WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Kaikki työkalut",
@@ -1342,7 +1342,7 @@
     "feat4": "ISO 18004 -yhteensopiva",
     "feat4Desc": "Täyttää kansainvälisen QR-standardin",
     "whatIsTitle": "Mikä on CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.",
+    "whatIsDesc": "CreateMy-QR on asiakaspuolen QR-koodi- ja viivakoodialusta, joka tukee 37 tietotyyppiä. Staattiset ydinkoodit ovat pysyviä välittömän korkearesoluutioisen PNG-viennin ja nollaseurannan ansiosta. Edistynyt vektorivienti ja joukkolaskentataulukkoerät avataan PRO:lla.",
     "fact1": "Luo QR-koodeja paikallisesti – tietoja ei lähetetä millekään palvelimelle.",
     "fact2": "Tukee 37 tyyppiä: URL, WhatsApp, vCard, WiFi, krypto, PDF ja paljon muuta.",
     "fact3": "Täysin lokalisoitu 30 kielelle, mukaan lukien arabia, japani ja hindi.",
@@ -1353,8 +1353,8 @@
     "faqSubtitle": "Kaikki mitä sinun tulee tietää kohteesta CreateMy-QR.",
     "faq1q": "Mikä on CreateMy-QR?",
     "faq1a": "CreateMy-QR is a browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant codes with client-side processing — no uploads, zero tracking, and no forced account for core generation.",
-    "faq2q": "Luo QR-koodeja paikallisesti – tietoja ei lähetetä millekään palvelimelle.",
-    "faq2a": "Yes. All static QR codes are permanent and free forever with no expiry dates or watermarks. Optional Pro subscriptions are available for users who need bulk spreadsheet batches and sticker sheet printing.",
+    "faq2q": "Vanhenevatko staattiset QR-koodit vai onko niillä rajoituksia?",
+    "faq2a": "Ei. Kaikki luodut staattiset QR-koodit ovat pysyviä, eikä niissä ole viimeistä käyttöpäivää tai vesileimoja. Valinnaiset PRO-tilaukset ovat saatavilla käyttäjille, jotka tarvitsevat joukkolaskentataulukkoeriä, vektorivientiä ja mallityökaluja.",
     "faq3q": "Täysin lokalisoitu 30 kielelle, mukaan lukien arabia, japani ja hindi.",
     "faq3a": "Miksi se on 100% turvallinen?"
   },
@@ -1364,7 +1364,7 @@
       "heroTitle": "Meistä",
       "heroSubtitle": "Demokratisoiva asiakirja- ja QR-työkalut",
       "mission": "Missiomme",
-      "missionDesc": "Uskomme, että korkealuokkaisten QR-apuohjelmien tulee olla täysin ilmaisia, yksityisiä ja kaikkien saatavilla.",
+      "missionDesc": "Uskomme, että olennaisten QR-apuohjelmien tulee olla läpinäkyviä, yksityisiä ja kaikkien saatavilla rehellisin hinnoin.",
       "privacy": "Ehdoton yksityisyys",
       "privacyDesc": "Kaikki käsitellään paikallisesti selaimessasi. Tiedostosi eivät koskaan kosketa palvelinta.",
       "fast": "Salamannopeasti",
@@ -1376,7 +1376,7 @@
       "architecture": "Arkkitehtuuri",
       "architectureTitle": "Technology Stack",
       "guarantee": "Takuumme",
-      "guaranteeDesc": "CreateMy-QR on rakennettu pysymään täysin ilmainen. Missiomme on demokratisoida yleishyödylliset palvelut kaikille.",
+      "guaranteeDesc": "CreateMy-QR perustuu läpinäkyvyyteen. Missiomme on tarjota luotettavia asiakaspuolen apuohjelmia, joilla on rehellinen arvo.",
       "join": "Liity liikkeeseen",
       "joinDesc": "Koe verkon nopein, turvallisin ja edistynein QR-paketti.",
       "seoDesc": "Tutustu CreateMy-QR:n tehtävään demokratisoida viivakoodi- ja QR-koodityökalut maailmanlaajuisesti 100 % asiakaspuolen yksityisyydellä, nollalla tiedonkeruulla ja offline-suojauksella.",
@@ -1500,7 +1500,7 @@
       "app4Name": "Media & Doc Tools",
       "app4Desc": "High-DPI-vektori SVG-vienti, PDF-generaattori ja eränhallinta",
       "freeTitle": "Ilmainen suunnitelma",
-      "freeBadge": "Ilmainen Forever",
+      "freeBadge": "Aloitussuunnitelma",
       "freeCostPeriod": "/ ikuisesti",
       "freeDesc": "Tärkeät QR- ja viivakoodityökalut henkilökohtaisiin projekteihin ja päivittäiseen skannaukseen.",
       "freeCta": "Aloita nyt ilmaiseksi",
@@ -1628,7 +1628,7 @@
       "localDataDesc": "Historia tallennetaan omaan selaimeesi IndexedDB:n kautta. Jos tyhjennät selaimesi tiedot, historiasi poistetaan pysyvästi.",
       "lastUpdated": "Viimeksi päivitetty: Marraskuu 2026",
       "sec1Title": "Ehtojen hyväksyminen",
-      "sec1Desc": "Kun käytät CreateMy-QR:ää ja käytät sitä, sitoudut noudattamaan näitä käyttöehtoja. Jos et hyväksy jotakin ehtojen osaa, sinulla ei ole lupaa käyttää Palvelua. Alustamme tarjotaan täysin ilmaiseksi sekä henkilökohtaiseen että kaupalliseen käyttöön.",
+      "sec1Desc": "Kun käytät CreateMy-QR:ää ja käytät sitä, sitoudut noudattamaan näitä käyttöehtoja. Jos et hyväksy jotakin ehtojen osaa, sinulla ei ole lupaa käyttää Palvelua. Alustamme tarjoaa pysyvän staattisen QR-koodin luomisen valinnaisilla PRO-tilauksilla edistyneille ammattityökaluille.",
       "sec2Title": "Paikallinen käsittelytakuu",
       "sec2Desc": "CreateMy-QR tarjoaa työkaluja, jotka suoritetaan tiukasti paikallisessa selainympäristössäsi WebAssemblyn kautta. Takaamme, että:",
       "sec2Bul1": "Tiedostojasi ei koskaan ladata palvelimillemme tai mihinkään kolmannen osapuolen infrastruktuuriin.",
@@ -1771,7 +1771,7 @@
       "featTitle2": "Seuraa läsnäoloa",
       "featDesc2": "Käytä UTM-tageja seurataksesi, mitkä julisteet tuottavat eniten skannauksia.",
       "featTitle3": "Ei rajoja",
-      "featDesc3": "Rajoittamaton skannaus, täysin ilmainen, ei vanhenemispäiviä.",
+      "featDesc3": "Rajoittamaton skannaus, pysyvät staattiset koodit, ei vanhenemispäiviä.",
       "faqTitle": "Yleisiä kysymyksiä"
     },
     "whatsappsupport": {

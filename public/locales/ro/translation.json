@@ -204,8 +204,8 @@
     "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
-        "q": "Este acest generator de coduri QR complet gratuit?",
-        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
+        "q": "Cum funcționează prețurile și accesul?",
+        "a": "Generarea de coduri de bare și QR statice de bază este disponibilă fără coduri care expiră, fără anunțuri și fără capcane de probă ascunse. Planurile PRO opționale (9 USD/lună sau 39 USD pe viață) deblochează procesarea în bloc a foilor de calcul, imprimarea foilor de autocolante și exporturile vectoriale SVG/DXF."
       },
       {
         "q": "Fișierele și datele mele sunt încărcate pe serverele dvs.?",
@@ -234,7 +234,7 @@
     "title": "Încorporați generatorul pe site-ul dvs.",
     "desc": "Doriți să oferiți vizitatorilor dvs. un generator de coduri QR gratuit? Copiați și inserați fragmentul HTML de mai jos pe site-ul sau blogul dvs.",
     "whyTitle": "De ce să folosiți widget-ul nostru?",
-    "why1": "Free core tools for your users with zero paywalls",
+    "why1": "Generator QR de bază de încredere pentru utilizatorii dvs. cu confidențialitate curată",
     "why2": "Fără reclame, ferestre pop-up sau urmărire intruzivă în interiorul widget-ului",
     "why3": "Îmbunătățește implicarea vizitatorilor și timpul de odihnă pe domeniul dvs.",
     "anchorLabel": "Selectați SEO Anchor Text:",
@@ -249,8 +249,8 @@
   "landing": {
     "badgeLeadMarket": "De ce conducem",
     "heroTitle": "Coduri QR care funcționează de fapt",
-    "heroSubtitle": "Fără expirare. Fără reclame. Fără servere. Doar coduri QR private, instantanee, pentru totdeauna.",
-    "badgeFree": "Pentru totdeauna liber",
+    "heroSubtitle": "Fără limite de 14 zile, fără anunțuri forțate, fără urmărire. Generați coduri statice de înaltă calitate direct în browser cu upgrade-uri PRO opționale.",
+    "badgeFree": "Codurile statice permanente",
     "comp1Title": "Fără capcană de expirare de 14 zile",
     "comp1Desc": "Concurenții vă distrug codurile imprimate după 14 zile, dacă nu plătiți. Codurile noastre QR statice funcționează pentru totdeauna.",
     "badgeZeroAds": "Zero reclame",
@@ -411,8 +411,8 @@
       "a3": "Tehnic da, dar nu este recomandat, deoarece apelarea manuală este mai rapidă și mai fiabilă în caz de urgență.",
       "q4": "Poate apela extensiile?",
       "a4": "Suportul pentru extensii (folosind virgule pentru pauze) depinde în întregime de sistemul de operare al telefonului scanerului.",
-      "q5": "Este complet gratuit de generat?",
-      "a5": "Da, generatorul nostru de coduri QR pentru telefon este 100% gratuit, fără limite de scanare."
+      "q5": "Codurile QR ale telefonului sunt permanente de scanat?",
+      "a5": "Da, codurile QR ale telefonului nostru sunt statice, fără limite de scanare sau date de expirare."
     },
     "event": {
       "q1": "Se va sincroniza cu Google Calendar sau Apple Calendar?",
@@ -626,7 +626,7 @@
       "q3": "Pot urmări câți oameni l-au scanat?",
       "a3": "Puteți urmări numărul total de trimiteri de formulare direct în tabloul de bord Google Forms.",
       "q4": "Este gratuit să faci un formular QR Google?",
-      "a4": "Da! Generatorul nostru este complet gratuit și creează legături statice direct către formularul dvs., fără taxe ascunse.",
+      "a4": "Da! Generatorul nostru creează link-uri statice directe către formularul dvs. Google fără a expira link-uri de redirecționare.",
       "q5": "Funcționează și cu Microsoft Forms?",
       "a5": "Absolut! Doar lipiți linkul Microsoft Forms în generatorul nostru de adrese URL."
     },
@@ -1016,7 +1016,7 @@
         "title": "Valorile de bază",
         "v1": "În primul rând, confidențialitatea",
         "d1": "Generarea la nivelul clientului înseamnă că datele dumneavoastră nu ating niciodată serverele noastre.",
-        "v2": "Liber pentru totdeauna",
+        "v2": "Codurile statice permanente",
         "d2": "Funcțiile de bază vor rămâne întotdeauna gratuite, fără limite ascunse.",
         "v3": "Acoperire globală",
         "d3": "Localizat în 30 de limbi pentru a servi un public cu adevărat internațional."
@@ -1058,7 +1058,7 @@
       "metrics": {
         "title": "Caracteristica",
         "m1": "Prețuri",
-        "us1": "100% gratuit",
+        "us1": "Statică permanentă",
         "them1": "15 USD/luna",
         "m2": "Confidențialitate",
         "us2": "Partea client (fără urmărire)",
@@ -1172,7 +1172,7 @@
       "mfgDesc": "Generatorul nostru creează fișiere PNG clare, perfecte pentru pixeli, care se scalează frumos pentru imprimare. Nu folosim imagini raster neclare — motorul nostru redă matematică SVG pură înainte de a le converti în descărcări PNG de înaltă rezoluție.",
       "mfgList1": "Precizie absolută: fără margini neclare.",
       "mfgList2": "Umplutură personalizată: zone sigure pentru imprimante termice.",
-      "mfgList3": "100% gratuit: fără abonamente pentru generația de bază.",
+      "mfgList3": "Generarea de bază inclusă: nu sunt necesare abonamente pentru generarea standard de coduri de bare.",
       "mfgBadge": "Gata din fabrică",
       "mfgBadgeDesc": "Contrast ridicat pentru scanerele laser",
       "ecoTitle": "Perfect pentru comerțul electronic și retail",
@@ -1262,7 +1262,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "Generatorul de Coduri QR Care",
     "heroTitleHighlight": "Nu Expiră Niciodată.",
-    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Free core generation, client-side privacy, and zero paywalls on your static codes.",
+    "heroSubtitle": "Creați coduri QR și coduri de bare permanente, gata de imprimat, direct în browser. Generare de bază de încredere cu confidențialitate la nivelul clientului.",
     "citation": "„Codul QR este un standard internațional (ISO/IEC 18004:2015). Codurile de bare Matrix necesită grile de module curate pentru scanare fiabilă pentru toți cititorii conformi din întreaga lume.”",
     "searchPlaceholder": "Instrumente de căutare — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Toate instrumentele",
@@ -1280,7 +1280,7 @@
     "feat4": "Conform ISO 18004",
     "feat4Desc": "Îndeplinește standardul internațional QR",
     "whatIsTitle": "Ce este CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR is a client-side QR code and barcode platform supporting 37 data types. Core static codes are free forever with instant high-resolution PNG export and zero tracking. Advanced vector SVG exports and bulk spreadsheet batches are unlocked with PRO.",
+    "whatIsDesc": "CreateMy-QR este o platformă de coduri QR și coduri de bare la nivelul clientului care acceptă 37 de tipuri de date. Codurile statice de bază sunt permanente, cu export PNG instantaneu de înaltă rezoluție și urmărire zero. Exporturile avansate de vectori și loturile de foi de calcul în bloc sunt deblocate cu PRO.",
     "fact1": "Generează coduri QR local - nu sunt trimise date către niciun server.",
     "fact2": "Suporta 37 de tipuri: URL, WhatsApp, vCard, WiFi, Crypto, PDF și multe altele.",
     "fact3": "Complet localizat în 30 de limbi, inclusiv arabă, japoneză și hindi.",
@@ -1291,8 +1291,8 @@
     "faqSubtitle": "Tot ce trebuie să știți despre CreateMy-QR.",
     "faq1q": "Ce este CreateMy-QR?",
     "faq1a": "CreateMy-QR is a browser-based platform offering 37 QR code and barcode tools. It generates ISO/IEC 18004:2015-compliant codes with client-side processing — no uploads, zero tracking, and no forced account for core generation.",
-    "faq2q": "Generează coduri QR local - nu sunt trimise date către niciun server.",
-    "faq2a": "Yes. All static QR codes are permanent and free forever with no expiry dates or watermarks. Optional Pro subscriptions are available for users who need bulk spreadsheet batches and sticker sheet printing.",
+    "faq2q": "Codurile QR statice expiră sau au limite?",
+    "faq2a": "Nu. Toate codurile QR statice generate sunt permanente, fără date de expirare sau filigrane. Abonamentele PRO opționale sunt disponibile pentru utilizatorii care au nevoie de loturi de foi de calcul în bloc, exporturi de vectori și instrumente de machetă.",
     "faq3q": "Complet localizat în 30 de limbi, inclusiv arabă, japoneză și hindi.",
     "faq3a": "De ce este 100% sigur?"
   },
@@ -1302,7 +1302,7 @@
       "heroTitle": "Despre noi",
       "heroSubtitle": "Democratizarea documentelor și instrumentelor QR",
       "mission": "Misiunea noastră",
-      "missionDesc": "Credem că utilitățile QR premium ar trebui să fie complet gratuite, private și accesibile tuturor.",
+      "missionDesc": "Credem că utilitățile QR esențiale ar trebui să fie transparente, private și accesibile tuturor, cu prețuri oneste.",
       "privacy": "Confidențialitate absolută",
       "privacyDesc": "Totul este procesat local în browserul dvs. Fișierele tale nu ating niciodată un server.",
       "fast": "Rapid fulger",
@@ -1314,7 +1314,7 @@
       "architecture": "Arhitectura",
       "architectureTitle": "Tehnologia Stiva",
       "guarantee": "Garanția noastră",
-      "guaranteeDesc": "CreateMy-QR este creat pentru a rămâne complet gratuit. Misiunea noastră este de a democratiza utilitățile pentru toată lumea.",
+      "guaranteeDesc": "CreateMy-QR este construit pe transparență. Misiunea noastră este să oferim utilități de încredere pentru client, cu valoare onestă.",
       "join": "Alăturați-vă Mișcării",
       "joinDesc": "Experimentați cea mai rapidă, mai sigură și mai avansată suită QR de pe web.",
       "seoDesc": "Descoperiți misiunea CreateMy-QR de a democratiza codurile de bare și instrumentele de coduri QR la nivel mondial, cu confidențialitate 100% la nivelul clientului, înregistrarea zero a datelor și securitate offline.",
@@ -1438,7 +1438,7 @@
       "app4Name": "Instrumente media și documente",
       "app4Desc": "Exportator SVG vector cu DPI ridicat, generator PDF și manager de loturi",
       "freeTitle": "Plan gratuit",
-      "freeBadge": "Liber pentru totdeauna",
+      "freeBadge": "Plan de pornire",
       "freeCostPeriod": "/ pentru totdeauna",
       "freeDesc": "Instrumente esențiale QR și coduri de bare pentru proiecte personale și scanare de zi cu zi.",
       "freeCta": "Începe gratuit acum",
@@ -1566,7 +1566,7 @@
       "localDataDesc": "Istoricul dumneavoastră este stocat în propriul browser prin IndexedDB. Dacă ștergeți datele din browser, istoricul dvs. este șters definitiv.",
       "lastUpdated": "Ultima actualizare: Noiembrie 2026",
       "sec1Title": "Acordul cu Termenii",
-      "sec1Desc": "Prin accesarea și utilizarea CreateMy-QR, sunteți de acord să respectați acești Termeni și condiții. Dacă nu sunteți de acord cu orice parte a termenilor, nu aveți permisiunea de a accesa Serviciul. Platforma noastră este oferită complet gratuit atât pentru uz personal, cât și pentru uz comercial.",
+      "sec1Desc": "Prin accesarea și utilizarea CreateMy-QR, sunteți de acord să respectați acești Termeni și condiții. Dacă nu sunteți de acord cu orice parte a termenilor, nu aveți permisiunea de a accesa Serviciul. Platforma noastră oferă generare permanentă de cod QR static cu abonamente PRO opționale pentru instrumente profesionale avansate.",
       "sec2Title": "Garanția locală de procesare",
       "sec2Desc": "CreateMy-QR oferă instrumente care se execută strict în mediul dvs. local de browser prin WebAssembly. Vă garantăm că:",
       "sec2Bul1": "Fișierele dumneavoastră nu sunt niciodată încărcate pe serverele noastre sau pe orice infrastructură terță parte.",
@@ -1709,7 +1709,7 @@
       "featTitle2": "Urmărirea Prezenței",
       "featDesc2": "Utilizați etichete UTM pentru a urmări care postere generează cele mai multe scanări.",
       "featTitle3": "Fără Limite",
-      "featDesc3": "Scanări nelimitate, complet gratuite, fără date de expirare.",
+      "featDesc3": "Scanări nelimitate, coduri statice permanente, fără date de expirare.",
       "faqTitle": "Întrebări comune"
     },
     "whatsappsupport": {

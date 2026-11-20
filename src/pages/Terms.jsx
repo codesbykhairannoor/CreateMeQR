@@ -39,7 +39,7 @@ export default function Terms() {
             </div>
             <div className="pl-24">
               <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
-                {t('static.terms.sec1Desc', 'By accessing and using CreateMy-QR, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you do not have permission to access the Service. Our platform is provided completely free of charge for both personal and commercial use.')}
+                {t('static.terms.sec1Desc', 'By accessing and using CreateMy-QR, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you do not have permission to access the Service. Our platform provides permanent static QR code generation with optional PRO subscriptions for advanced professional tools.')}
               </p>
             </div>
           </div>

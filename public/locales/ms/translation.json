@@ -204,8 +204,8 @@
     "softwareDescription": "A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to servers. The safest alternative to cloud tools. Privacy-First, Zero Tracking, Permanent Static Codes.",
     "faqs": [
       {
-        "q": "Adakah penjana kod QR ini percuma sepenuhnya?",
-        "a": "Core QR and barcode generation is free forever with no expiring static codes, no ads, and no hidden trial traps. Optional Pro subscriptions ($9/mo or $39 Lifetime) are available for bulk spreadsheet batches, sticker printing, and vector SVG exports."
+        "q": "Bagaimanakah harga dan akses berfungsi?",
+        "a": "Penjanaan QR statik teras dan kod bar tersedia tanpa kod tamat tempoh, tiada iklan dan tiada perangkap percubaan tersembunyi. Pelan PRO pilihan ($9/bln atau $39 Sepanjang Hayat) membuka kunci pemprosesan hamparan pukal, pencetakan helaian pelekat dan eksport SVG/DXF vektor."
       },
       {
         "q": "Adakah fail dan data saya dimuat naik ke pelayan anda?",
@@ -234,7 +234,7 @@
     "title": "Benamkan Penjana pada Tapak Web Anda",
     "desc": "Ingin menawarkan penjana kod QR percuma kepada pelawat anda? Salin dan tampal coretan HTML di bawah ke dalam tapak web atau blog anda.",
     "whyTitle": "Mengapa menggunakan widget kami?",
-    "why1": "Alatan asas percuma untuk pengguna anda tanpa halangan bayaran",
+    "why1": "Penjana QR teras yang boleh dipercayai untuk pengguna anda dengan privasi yang bersih",
     "why2": "Tiada iklan, pop timbul atau penjejakan mengganggu dalam widget",
     "why3": "Meningkatkan penglibatan pelawat dan masa tinggal di domain anda",
     "anchorLabel": "Pilih Teks Sauh SEO:",
@@ -249,8 +249,8 @@
   "landing": {
     "badgeLeadMarket": "Mengapa Kami Memimpin",
     "heroTitle": "Kod QR Yang Sebenarnya Berfungsi",
-    "heroSubtitle": "Tiada tamat tempoh. Tiada iklan. Tiada pelayan. Hanya segera, kod QR peribadi — percuma selama-lamanya.",
-    "badgeFree": "Percuma Selamanya",
+    "heroSubtitle": "Tiada had 14 hari, tiada iklan paksa, tiada penjejakan. Hasilkan kod statik berkualiti tinggi terus dalam penyemak imbas anda dengan peningkatan PRO pilihan.",
+    "badgeFree": "Kod Statik Kekal",
     "comp1Title": "Tiada Perangkap Tamat Tempoh 14 Hari",
     "comp1Desc": "Pesaing membunuh kod bercetak anda selepas 14 hari melainkan anda membayar. Kod QR statik kami berfungsi selama-lamanya.",
     "badgeZeroAds": "Iklan Sifar",
@@ -411,8 +411,8 @@
       "a3": "Secara teknikalnya ya, tetapi ia tidak disyorkan kerana mendail secara manual lebih pantas dan lebih dipercayai dalam kecemasan.",
       "q4": "Bolehkah ia mendail sambungan?",
       "a4": "Sokongan untuk sambungan (menggunakan koma untuk jeda) bergantung sepenuhnya pada sistem pengendalian telefon pengimbas.",
-      "q5": "Adakah ia benar-benar percuma untuk menjana?",
-      "a5": "Ya, penjana kod QR telefon kami adalah 100% percuma tanpa had pengimbasan."
+      "q5": "Adakah kod QR telefon kekal untuk diimbas?",
+      "a5": "Ya, kod QR telefon kami adalah statik tanpa had pengimbasan atau tarikh luput."
     },
     "event": {
       "q1": "Adakah ini akan disegerakkan dengan Kalendar Google atau Kalendar Apple?",
@@ -626,7 +626,7 @@
       "q3": "Bolehkah saya menjejaki bilangan orang yang mengimbasnya?",
       "a3": "Anda boleh menjejaki jumlah penyerahan borang terus dalam papan pemuka Borang Google anda.",
       "q4": "Adakah percuma untuk membuat QR Borang Google?",
-      "a4": "Ya! Penjana kami adalah percuma dan mencipta pautan statik terus ke borang anda tanpa sebarang bayaran tersembunyi.",
+      "a4": "Ya! Penjana kami mencipta pautan statik terus ke Borang Google anda tanpa tamat tempoh pautan ubah hala.",
       "q5": "Adakah ia berfungsi dengan Microsoft Forms juga?",
       "a5": "Sudah tentu! Cuma tampalkan pautan Microsoft Forms anda ke dalam penjana URL kami."
     },
@@ -1016,7 +1016,7 @@
         "title": "Nilai Teras",
         "v1": "Privasi Diutamakan",
         "d1": "Penjanaan pihak pelanggan bermakna data anda tidak pernah menyentuh pelayan kami.",
-        "v2": "Percuma Selamanya",
+        "v2": "Kod Statik Kekal",
         "d2": "Ciri teras akan sentiasa kekal percuma tanpa had tersembunyi.",
         "v3": "Jangkauan Global",
         "d3": "Dilokalkan dalam 30 bahasa untuk melayani khalayak yang benar-benar antarabangsa."
@@ -1058,7 +1058,7 @@
       "metrics": {
         "title": "Ciri",
         "m1": "penetapan harga",
-        "us1": "100% Percuma",
+        "us1": "Statik Kekal",
         "them1": "$15/bulan",
         "m2": "Privasi",
         "us2": "Bahagian Pelanggan (Tiada Penjejakan)",
@@ -1172,7 +1172,7 @@
       "mfgDesc": "Penjana kami mencipta fail PNG sempurna piksel yang berskala cantik untuk cetakan. Kami tidak menggunakan imej raster kabur—enjin kami memaparkan matematik SVG tulen sebelum menukarnya kepada muat turun PNG resolusi tinggi.",
       "mfgList1": "Ketepatan Mutlak: Tiada tepi kabur.",
       "mfgList2": "Pelapik Tersuai: Zon selamat untuk pencetak terma.",
-      "mfgList3": "100% Percuma: Tiada langganan untuk penjanaan asas.",
+      "mfgList3": "Penjanaan Teras Termasuk: Tiada langganan diperlukan untuk penjanaan kod bar standard.",
       "mfgBadge": "Sedia Kilang",
       "mfgBadgeDesc": "Kontras tinggi untuk pengimbas laser",
       "ecoTitle": "Sesuai untuk E-Dagang & Runcit",
@@ -1324,7 +1324,7 @@
     "badge": "ISO/IEC 18004 · Privasi Diutamakan · Sifar Penjejakan · Sisi Klien",
     "heroTitle": "Penjana Kod QR yang",
     "heroTitleHighlight": "Tidak Pernah Luput.",
-    "heroSubtitle": "Cipta kod QR dan kod bar kekal sedia cetak terus dalam penyemak imbas anda. Penjanaan asas percuma, privasi sisi klien dan tiada sekatan bayaran pada kod statik anda.",
+    "heroSubtitle": "Cipta kod QR dan kod bar sedia cetak yang kekal dalam penyemak imbas anda. Penjanaan teras yang boleh dipercayai dengan privasi pihak pelanggan.",
     "citation": "\"Kod QR ialah piawaian antarabangsa (ISO/IEC 18004:2015). Kod bar matriks memerlukan grid modul yang bersih untuk pengimbasan yang boleh dipercayai merentas semua pembaca yang patuh di seluruh dunia.\"",
     "searchPlaceholder": "Alat carian — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Semua Alat",
@@ -1342,7 +1342,7 @@
     "feat4": "Mematuhi ISO 18004",
     "feat4Desc": "Memenuhi standard QR antarabangsa",
     "whatIsTitle": "Apakah itu CreateMy-QR?",
-    "whatIsDesc": "CreateMy-QR ialah platform kod QR dan kod bar sisi klien yang menyokong 37 jenis data. Kod statik teras adalah percuma selama-lamanya dengan eksport PNG resolusi tinggi segera tanpa penjejakan. Eksport SVG vektor lanjutan dan kelompok hamparan dibuka dengan PRO.",
+    "whatIsDesc": "CreateMy-QR ialah kod QR sisi pelanggan dan platform kod bar yang menyokong 37 jenis data. Kod statik teras kekal dengan eksport PNG resolusi tinggi segera dan penjejakan sifar. Eksport vektor lanjutan dan kelompok hamparan pukal dibuka kuncinya dengan PRO.",
     "fact1": "Menjana kod QR secara setempat — tiada data dihantar ke mana-mana pelayan.",
     "fact2": "Menyokong 37 jenis: URL, WhatsApp, vCard, WiFi, Crypto, PDF dan banyak lagi.",
     "fact3": "Dilokalkan sepenuhnya dalam 30 bahasa termasuk Arab, Jepun dan Hindi.",
@@ -1353,8 +1353,8 @@
     "faqSubtitle": "Semua yang anda perlu tahu tentang CreateMy-QR.",
     "faq1q": "Apakah itu CreateMy-QR?",
     "faq1a": "CreateMy-QR menyediakan 37 alat kod QR dan kod bar berasaskan pelayar — tanpa muat naik ke pelayan, sifar penjejakan dan tiada kewajipan akaun untuk ciri asas.",
-    "faq2q": "Menjana kod QR secara setempat — tiada data dihantar ke mana-mana pelayan.",
-    "faq2a": "Ya. Semua kod QR statik kekal dan percuma selama-lamanya tanpa tarikh luput atau tera air. Langganan Pro pilihan disediakan untuk penjanaan pukal hamparan dan cetakan helaian pelekat.",
+    "faq2q": "Adakah kod QR statik tamat tempoh atau mempunyai had?",
+    "faq2a": "Tidak. Semua kod QR statik yang dijana adalah kekal tanpa tarikh luput atau tera air. Langganan PRO pilihan tersedia untuk pengguna yang memerlukan kumpulan hamparan pukal, eksport vektor dan alat mockup.",
     "faq3q": "Dilokalkan sepenuhnya dalam 30 bahasa termasuk Arab, Jepun dan Hindi.",
     "faq3a": "Mengapa ia 100% Selamat?"
   },
@@ -1364,7 +1364,7 @@
       "heroTitle": "Mengenai Kami",
       "heroSubtitle": "Mendemokrasikan Dokumen & Alat QR",
       "mission": "Misi Kami",
-      "missionDesc": "Kami percaya utiliti QR premium seharusnya percuma, peribadi dan boleh diakses oleh semua orang.",
+      "missionDesc": "Kami percaya utiliti QR yang penting hendaklah telus, peribadi dan boleh diakses oleh semua orang dengan harga yang jujur.",
       "privacy": "Privasi Mutlak",
       "privacyDesc": "Semuanya diproses secara setempat dalam penyemak imbas anda. Fail anda tidak pernah menyentuh pelayan.",
       "fast": "Sepantas Kilat",
@@ -1376,7 +1376,7 @@
       "architecture": "Seni Bina",
       "architectureTitle": "Tindanan Teknologi",
       "guarantee": "Jaminan Kami",
-      "guaranteeDesc": "CreateMy-QR dibina untuk kekal bebas sepenuhnya. Misi kami adalah untuk mendemokrasikan utiliti untuk semua orang.",
+      "guaranteeDesc": "CreateMy-QR dibina atas ketelusan. Misi kami adalah untuk menyediakan utiliti sisi pelanggan yang boleh dipercayai dengan nilai jujur.",
       "join": "Sertai Pergerakan",
       "joinDesc": "Alami suite QR terpantas, paling selamat dan paling maju di web.",
       "seoDesc": "Temui misi CreateMy-QR untuk mendemokrasikan kod bar dan alatan kod QR di seluruh dunia dengan 100% privasi pihak pelanggan, pengelogan data sifar dan keselamatan luar talian.",
@@ -1500,7 +1500,7 @@
       "app4Name": "Alat Media & Dokumen",
       "app4Desc": "Pengeksport SVG vektor DPI tinggi, penjana PDF & pengurus kelompok",
       "freeTitle": "Pelan Percuma",
-      "freeBadge": "Percuma Selamanya",
+      "freeBadge": "Pelan Permulaan",
       "freeCostPeriod": "/ selamanya",
       "freeDesc": "Alat QR & Barcode yang penting untuk projek peribadi dan pengimbasan setiap hari.",
       "freeCta": "Mula Percuma Sekarang",
@@ -1628,7 +1628,7 @@
       "localDataDesc": "Sejarah anda disimpan dalam pelayar anda sendiri melalui IndexedDB. Jika anda mengosongkan data penyemak imbas anda, sejarah anda akan dipadamkan secara kekal.",
       "lastUpdated": "Terakhir Dikemas Kini: November 2026",
       "sec1Title": "Perjanjian kepada Syarat",
-      "sec1Desc": "Dengan mengakses dan menggunakan CreateMy-QR, anda bersetuju untuk terikat dengan Syarat Perkhidmatan ini. Jika anda tidak bersetuju dengan mana-mana bahagian terma, anda tidak mempunyai kebenaran untuk mengakses Perkhidmatan. Platform kami disediakan sepenuhnya secara percuma untuk kegunaan peribadi dan komersial.",
+      "sec1Desc": "Dengan mengakses dan menggunakan CreateMy-QR, anda bersetuju untuk terikat dengan Syarat Perkhidmatan ini. Jika anda tidak bersetuju dengan mana-mana bahagian terma, anda tidak mempunyai kebenaran untuk mengakses Perkhidmatan. Platform kami menyediakan penjanaan kod QR statik kekal dengan langganan PRO pilihan untuk alat profesional lanjutan.",
       "sec2Title": "Jaminan Pemprosesan Tempatan",
       "sec2Desc": "CreateMy-QR menyediakan alatan yang dilaksanakan secara ketat dalam persekitaran penyemak imbas tempatan anda melalui WebAssembly. Kami menjamin bahawa:",
       "sec2Bul1": "Fail anda tidak pernah dimuat naik ke pelayan kami atau mana-mana infrastruktur pihak ketiga.",
@@ -1771,7 +1771,7 @@
       "featTitle2": "Jejaki Kehadiran",
       "featDesc2": "Gunakan tag UTM untuk menjejaki poster yang menghasilkan imbasan paling banyak.",
       "featTitle3": "Tiada Had",
-      "featDesc3": "Imbasan tanpa had, percuma sepenuhnya, tiada tarikh luput.",
+      "featDesc3": "Imbasan tanpa had, kod statik kekal, tiada tarikh luput.",
       "faqTitle": "Soalan Lazim"
     },
     "whatsappsupport": {
