@@ -20,22 +20,33 @@ const DynamicPseoLayout = ({ pseoUseCase }) => {
 const CustomizationPanel = React.lazy(() => import('../components/CustomizationPanel'));
 import Preview from '../components/Preview';
 
+const DEFAULT_VISUALS = {
+  dotsOptions: { color: '#0a1930', type: 'square' },
+  backgroundOptions: { color: '#ffffff' },
+  image: null,
+  imageOptions: { hideBackgroundDots: true, imageSize: 0.4, margin: 10 },
+  cornersSquareOptions: { type: 'square', color: '#0a1930' },
+  cornersDotOptions: { type: 'square', color: '#0a1930' },
+  qrOptions: { errorCorrectionLevel: 'Q' },
+  frameOptions: { style: 'none', text: 'SCAN ME', color: '#1d4ed8', textColor: '#ffffff' }
+};
+
 export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUseCase }) {
   const { t, i18n } = useTranslation();
   const langPrefix = i18n.language && i18n.language !== 'en' ? '/' + i18n.language : '';
   const [qrData, setQrData] = useState({});
   const [hasGenerated, setHasGenerated] = useState(false);
   const [activeTab, setActiveTab] = useState('data');
-  const [visuals, setVisuals] = useState({
-    dotsOptions: { color: '#0a1930', type: 'square' },
-    backgroundOptions: { color: '#ffffff' },
-    image: null,
-    imageOptions: { hideBackgroundDots: true, imageSize: 0.4, margin: 10 },
-    cornersSquareOptions: { type: 'square', color: '#0a1930' },
-    cornersDotOptions: { type: 'square', color: '#0a1930' },
-    qrOptions: { errorCorrectionLevel: 'Q' },
-    frameOptions: { style: 'none', text: 'SCAN ME', color: '#1d4ed8', textColor: '#ffffff' }
-  });
+  const [visuals, setVisuals] = useState(DEFAULT_VISUALS);
+
+  // Reset workspace when switching QR tool type (unless restoring from saved history)
+  useEffect(() => {
+    if (typeof window !== 'undefined' && sessionStorage.getItem('restore_qr_data')) return;
+    setQrData({});
+    setHasGenerated(false);
+    setActiveTab('data');
+    setVisuals(DEFAULT_VISUALS);
+  }, [qrType]);
 
   useEffect(() => {
     const handleRestore = () => {

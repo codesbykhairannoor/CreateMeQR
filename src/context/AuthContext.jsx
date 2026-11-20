@@ -141,28 +141,6 @@ export const AuthProvider = ({ children }) => {
   }, [user, fetchOrCreateProfile]);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const mockStr = localStorage.getItem('__mock_auth_user__');
-      if (mockStr) {
-        try {
-          const mockUser = JSON.parse(mockStr);
-          setUser(mockUser);
-          setProfile({
-            uid: mockUser.uid || 'mock-user-123',
-            email: mockUser.email,
-            displayName: mockUser.displayName || 'Mock User',
-            photoURL: mockUser.photoURL || null,
-            plan: mockUser.plan || 'free',
-            subscriptionStatus: mockUser.plan === 'pro' ? 'active' : 'inactive',
-          });
-          setLoading(false);
-          return;
-        } catch {
-          // ignore error
-        }
-      }
-    }
-
     // Local Testing & E2E QA Mock Hook (Active ONLY in DEV mode for local Playwright QA)
     if (import.meta.env.DEV && typeof window !== 'undefined' && window.__MOCK_AUTH_ROLE__) {
       const role = window.__MOCK_AUTH_ROLE__;
@@ -421,9 +399,6 @@ export const AuthProvider = ({ children }) => {
   };
 
   const signOut = async () => {
-    if (typeof window !== 'undefined') {
-      localStorage.removeItem('__mock_auth_user__');
-    }
     if (!auth || !isFirebaseConfigured) {
       setUser(null);
       setProfile(null);

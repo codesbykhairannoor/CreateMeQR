@@ -9,8 +9,8 @@ export default function Compare() {
 
   return (
     <>
-<main className="w-full flex-1 bg-[#040814] text-white overflow-hidden">
-        
+      <main className="w-full flex-1 bg-[#040814] text-white overflow-hidden">
+
         {/* Section 1: Hero */}
         <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden bg-slate-950 border-b border-[#1e2d4a]">
           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-600/10 blur-[150px] rounded-full pointer-events-none" />
@@ -34,7 +34,7 @@ export default function Compare() {
             <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-extrabold text-center mb-16 leading-[1.1]">
               {t('static.compare.matrixTitle', 'Feature Comparison')}
             </h2>
-            
+
             <div className="bg-[#0a1128]/80 backdrop-blur-2xl rounded-[2.5rem] border border-[#1e2d4a] overflow-hidden shadow-2xl">
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse">

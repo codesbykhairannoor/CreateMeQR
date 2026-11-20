@@ -56,7 +56,7 @@ export default function MainLayout({ children }) {
       const browserLangFull = window.navigator.language || window.navigator.userLanguage || '';
       const browserLangCode = browserLangFull.split('-')[0].toLowerCase();
       const match = LANGS.find(l => l.code === browserLangCode);
-      if (match && match.code !== 'en' && match.code !== currentLangCode && !localStorage.getItem('dismiss_geo_banner_' + match.code)) {
+      if (match && match.code !== 'en' && match.code !== currentLangCode && !sessionStorage.getItem('dismiss_geo_banner_' + match.code)) {
         setSoftBannerLang(match);
       } else {
         setSoftBannerLang(null);
@@ -65,7 +65,7 @@ export default function MainLayout({ children }) {
   }, [currentLangCode, dismissBanner]);
 
   const handleDismissBanner = () => {
-    if (softBannerLang) localStorage.setItem('dismiss_geo_banner_' + softBannerLang.code, 'true');
+    if (softBannerLang) sessionStorage.setItem('dismiss_geo_banner_' + softBannerLang.code, 'true');
     setDismissBanner(true);
     setSoftBannerLang(null);
   };

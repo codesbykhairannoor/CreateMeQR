@@ -293,11 +293,10 @@ export default function BarcodeGenerator() {
           <BarChart2 className="w-6 h-6 text-blue-400" />
           <h2 className="text-2xl font-bold text-white tracking-tight">{t('barcode.workspace.liveOutput', 'Live Output')}</h2>
         </div>
-        <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border ${
-          isBwipEngine
+        <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border ${isBwipEngine
             ? 'bg-amber-500/20 text-amber-300 border-amber-400/30'
             : 'bg-blue-500/20 text-blue-200 border-blue-400/30'
-        }`}>
+          }`}>
           {isBwipEngine ? 'BWIPP Engine' : '1D Retail'}
         </span>
       </div>
@@ -318,9 +317,8 @@ export default function BarcodeGenerator() {
         ) : (
           <div
             ref={barcodeRef}
-            className={`p-6 rounded-xl transition-all duration-300 max-w-full overflow-x-auto flex items-center justify-center ${
-              value ? 'bg-white shadow-lg hover:scale-105' : 'bg-transparent'
-            }`}
+            className={`p-6 rounded-xl transition-all duration-300 max-w-full overflow-x-auto flex items-center justify-center ${value ? 'bg-white shadow-lg hover:scale-105' : 'bg-transparent'
+              }`}
             style={{ backgroundColor: value ? background : 'transparent' }}
           >
             {deferredValue ? (
