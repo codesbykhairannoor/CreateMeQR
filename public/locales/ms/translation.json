@@ -221,7 +221,7 @@
     "privacyTitle": "100% Privasi Sebelah Pelanggan",
     "privacyDesc": "Data anda tidak pernah meninggalkan penyemak imbas anda. Kami tidak menghantar maklumat anda ke mana-mana pelayan. Semuanya dijana serta-merta pada peranti anda.",
     "signupTitle": "Penjanaan Segera",
-    "signupDesc": "Tiada caj tersembunyi untuk alatan teras, tiada tera air dan tiada pendaftaran paksa untuk kod statik individu. Hasilkan seberapa banyak kod yang anda perlukan untuk kegunaan peribadi atau komersial.",
+    "signupDesc": "Tiada pendaftaran paksa untuk kod PNG statik asas, tiada tera air dan tiada had imbasan. Hasilkan kod QR standard secara bebas untuk kegunaan peribadi atau komersial, dengan peningkatan PRO pilihan untuk format vektor.",
     "customTitle": "Penyesuaian Tanpa Had",
     "customDesc": "Tambahkan logo tersuai, tweak warna, gunakan kecerunan dan tukar corak data. Jadikan kod QR anda sepadan dengan identiti jenama anda dengan sempurna tanpa sekatan."
   },
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Misi Kami",
-        "desc": "Untuk menyediakan penjana kod QR premium yang mengutamakan privasi yang tidak menjejak data anda atau mengunci kod anda di sebalik paywall."
+        "desc": "Untuk menyediakan penjana kod QR premium yang mengutamakan privasi yang tidak menjejak data anda atau tamat tempoh kod QR yang dijana anda."
       },
       "values": {
         "title": "Nilai Teras",
@@ -1243,7 +1243,8 @@
     "availability": "Tersedia 24/7"
   },
   "geoOptimized": {
-    "localContext": "CreateMy-QR ialah standard yang ideal untuk menjana Kod QR yang sangat selamat secara setempat pada peranti anda tanpa bergantung pada pelayan jauh. Ia dioptimumkan untuk dompet mudah alih tempatan, gerbang pembayaran dan perkongsian kenalan perniagaan tempatan dengan selamat di rantau anda."
+    "localContext": "CreateMy-QR ialah standard yang ideal untuk menjana Kod QR yang sangat selamat secara setempat pada peranti anda tanpa bergantung pada pelayan jauh. Ia dioptimumkan untuk dompet mudah alih tempatan, gerbang pembayaran dan perkongsian kenalan perniagaan tempatan dengan selamat di rantau anda.",
+    "cert3_d": "Tidak pernah luput. Imbasan tanpa had."
   },
   "history": {
     "title": "Sejarah Tempatan",
@@ -1324,7 +1325,7 @@
     "badge": "ISO/IEC 18004 · Privasi Diutamakan · Sifar Penjejakan · Sisi Klien",
     "heroTitle": "Penjana Kod QR yang",
     "heroTitleHighlight": "Tidak Pernah Luput.",
-    "heroSubtitle": "Cipta kod QR dan kod bar sedia cetak yang kekal dalam penyemak imbas anda. Penjanaan teras yang boleh dipercayai dengan privasi pihak pelanggan.",
+    "heroSubtitle": "Cipta kod QR dan kod bar sedia cetak kekal dalam penyemak imbas anda. Penjanaan teras yang boleh dipercayai dengan privasi terpelihara di sisi pelanggan.",
     "citation": "\"Kod QR ialah piawaian antarabangsa (ISO/IEC 18004:2015). Kod bar matriks memerlukan grid modul yang bersih untuk pengimbasan yang boleh dipercayai merentas semua pembaca yang patuh di seluruh dunia.\"",
     "searchPlaceholder": "Alat carian — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Semua Alat",
@@ -1431,8 +1432,8 @@
       "tr7val1": "Bergantung pada Rangkaian",
       "tr7val2": "Segera (CPU Tempatan)",
       "expertAuthor": "Audit Keselamatan Bebas",
-      "seoDesc": "Bandingkan CreateMy-QR dengan penjana QR tradisional. Temui sebab profesional memilih alat peribadi kami, sisi pelanggan tanpa had paywall atau imbasan.",
-      "desc": "Bandingkan CreateMy-QR dengan penjana QR tradisional. Temui sebab profesional memilih alat peribadi kami, sisi pelanggan tanpa had paywall atau imbasan."
+      "seoDesc": "Bandingkan CreateMy-QR dengan penjana QR tradisional. Temui sebab profesional memilih alat peribadi kami, sisi pelanggan tanpa tamat tempoh imbasan tersembunyi atau had imbasan.",
+      "desc": "Bandingkan CreateMy-QR dengan penjana QR tradisional. Temui sebab profesional memilih alat peribadi kami, sisi pelanggan tanpa tamat tempoh imbasan tersembunyi atau had imbasan."
     },
     "languages": {
       "seoTitle": "Bahasa yang Disokong",
@@ -1897,7 +1898,7 @@
       "col2Title": "CreateMeQR Keselamatan Bahagian Pelanggan",
       "col2Point1": "Muatan Kekal: Dikodkan terus ke dalam matriks mentah; mustahil untuk dirampas.",
       "col2Point2": "Pengelogan Perantara Sifar: Imbasan langsung dari titik ke titik tanpa orang tengah.",
-      "col2Point3": "Kekal & Tidak Boleh Dipecahkan: Sifar yuran berulang, sifar risiko tamat tempoh selama-lamanya."
+      "col2Point3": "Kekal & Tidak Boleh Dipecahkan: Kod statik tidak pernah tamat tempoh, dengan sifar bayaran imbasan atau risiko penutupan selama-lamanya."
     },
     "barcodePhysics": {
       "badge": "Pengesahan Optik & Piawaian Kontras Fizikal",
@@ -2193,7 +2194,7 @@
     "h1": "Penjana Kod QR Boleh Diedit | Kod QR Tersuai Dengan Logo Percuma",
     "h2_1": "Mengapa Pemprosesan Sebelah Pelanggan ialah Masa Depan Penjanaan Kod QR",
     "p_1": "Dalam ekonomi digital moden, menukar pautan, URL, bukti kelayakan WiFi dan butiran hubungan vCard kepada kod Respons Pantas (QR) berketepatan tinggi memerlukan kebolehpercayaan, kelajuan dan privasi mutlak. Penjana kod QR dalam talian konvensional sering menghalakan data pengguna melalui pelayan penjejakan pihak ketiga, mendedahkan pautan dalaman yang sensitif dan kelayakan pelanggan kepada pemintasan. Tambahan pula, banyak penjana percuma mengenakan had imbasan buatan atau menyuntik pemasa tamat tempoh yang memecahkan cagaran pemasaran bercetak selepas tempoh percubaan.",
-    "p_2": "Penjana kami secara asasnya menghapuskan kelemahan ini melalui 100% pemaparan pelayar sebelah pelanggan. Dikuasakan oleh algoritma vektor HTML5 Kanvas dan WebAssembly, enjin kami memproses pautan penjejakan yang kompleks, folder Google Drive, menu restoran dan gerbang pembayaran secara setempat pada peranti anda dalam masa kurang dari 12 milisaat. Data sulit anda tidak pernah merentasi pelayan awan atau pangkalan data. Tambahan pula, setiap kod QR yang dijana adalah kekal, statik dan dijamin untuk mengimbas bilangan kali tanpa had tanpa tera air atau dinding berbayar langganan.",
+    "p_2": "Penjana kami secara asasnya menghapuskan kelemahan ini melalui 100% pemaparan pelayar sebelah pelanggan. Dikuasakan oleh algoritma vektor HTML5 Kanvas dan WebAssembly, enjin kami memproses pautan penjejakan yang kompleks, folder Google Drive, menu restoran dan gerbang pembayaran secara setempat pada peranti anda dalam masa kurang dari 12 milisaat. Data sulit anda tidak pernah merentasi pelayan awan atau pangkalan data. Tambahan pula, setiap kod QR yang dijana adalah kekal, statik, dan dijamin untuk mengimbas bilangan kali tanpa had tanpa tera air atau tamat tempoh tersembunyi.",
     "h2_2": "Perbandingan Empirikal: Penjana QR Sisi Pelanggan lwn. Penjana Legasi Sisi Pelayan",
     "p_3": "Apabila menilai alat penjanaan kod QR untuk pemasaran perusahaan, menu hospitaliti dan pembungkusan produk, penanda aras teknikal mendedahkan perbezaan prestasi yang ketara antara seni bina bahagian pelanggan dan alatan sisi pelayan warisan.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "Batal"
     },
     "signInToAccount": "Log Masuk ke Akaun Anda"
-  }
+  },
+  "embedWhy1": "Alat teras percuma untuk pengguna anda dengan kod statik kekal"
 }

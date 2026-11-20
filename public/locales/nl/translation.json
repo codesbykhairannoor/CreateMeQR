@@ -221,7 +221,7 @@
     "privacyTitle": "100% privacy aan de klantzijde",
     "privacyDesc": "Uw gegevens verlaten uw browser nooit. We sturen uw gegevens naar geen enkele server. Alles wordt direct op uw apparaat gegenereerd.",
     "signupTitle": "Directe Generatie",
-    "signupDesc": "Geen verborgen kosten voor basistools, geen watermerken en geen verplichte registratie voor individuele statische codes. Maak zoveel codes als u nodig heeft voor zakelijk of persoonlijk gebruik.",
+    "signupDesc": "Geen gedwongen registratie voor standaard statische PNG-codes, geen watermerken en geen scanlimieten. Genereer gratis standaard QR-codes voor persoonlijk of commercieel gebruik, met optionele PRO-upgrades voor vectorformaten.",
     "customTitle": "Onbeperkt maatwerk",
     "customDesc": "Voeg aangepaste logo's toe, pas kleuren aan, gebruik verlopen en wijzig de gegevenspatronen. Zorg ervoor dat uw QR-code zonder beperkingen perfect aansluit bij uw merkidentiteit."
   },
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Onze missie",
-        "desc": "Om een ​​premium, op privacy gerichte QR-codegenerator te bieden die uw gegevens niet bijhoudt en uw codes niet achter betaalmuren vergrendelt."
+        "desc": "Om een ​​premium, op privacy gerichte QR-codegenerator te bieden die uw gegevens niet bijhoudt of uw gegenereerde QR-codes laat verlopen."
       },
       "values": {
         "title": "Kernwaarden",
@@ -1243,7 +1243,8 @@
     "availability": "24/7 beschikbaar"
   },
   "geoOptimized": {
-    "localContext": "CreateMy-QR is de ideale standaard voor het lokaal genereren van zeer veilige QR-codes op uw apparaat zonder afhankelijk te zijn van externe servers. Het is geoptimaliseerd voor lokale mobiele portemonnees, betalingsgateways en het veilig delen van lokale zakelijke contacten in uw regio."
+    "localContext": "CreateMy-QR is de ideale standaard voor het lokaal genereren van zeer veilige QR-codes op uw apparaat zonder afhankelijk te zijn van externe servers. Het is geoptimaliseerd voor lokale mobiele portemonnees, betalingsgateways en het veilig delen van lokale zakelijke contacten in uw regio.",
+    "cert3_d": "Verloopt nooit. Onbeperkte scans."
   },
   "history": {
     "title": "Lokale geschiedenis",
@@ -1324,7 +1325,7 @@
     "seoTitle": "CreateMy-QR — Gratis QR-code & Barcode Generator | 37 Online Tools",
     "seoDesc": "Genereer gratis 37 soorten QR-codes en barcodes. Directe download, geen verlopende statische codes, ISO/IEC 18004-conform, in 30 talen.",
     "badge": "ISO/IEC 18004 · Privacy Voorop · Zonder Tracking · Client-Side",
-    "heroSubtitle": "Creëer permanente, printklare QR-codes en barcodes rechtstreeks in uw browser. Betrouwbare kerngeneratie met privacy aan de clientzijde.",
+    "heroSubtitle": "Creëer permanente, printklare QR-codes en barcodes rechtstreeks in uw browser. Betrouwbare kerngeneratie met behoud van privacy aan de clientzijde.",
     "citation": "\"De QR-code is een internationale standaard (ISO/IEC 18004:2015). Matrixbarcodes vereisen schone modulerasters voor betrouwbaar scannen op alle conforme lezers.\"",
     "searchPlaceholder": "Tools zoeken — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Alle Tools",
@@ -1431,8 +1432,8 @@
       "tr7val1": "Afhankelijk van netwerk",
       "tr7val2": "Direct (lokale CPU)",
       "expertAuthor": "Onafhankelijke beveiligingsaudit",
-      "seoDesc": "Vergelijk CreateMy-QR met traditionele QR-generatoren. Ontdek waarom professionals kiezen voor onze privétools aan de clientzijde, zonder betaalmuren of scanlimieten.",
-      "desc": "Vergelijk CreateMy-QR met traditionele QR-generatoren. Ontdek waarom professionals kiezen voor onze privétools aan de clientzijde, zonder betaalmuren of scanlimieten."
+      "seoDesc": "Vergelijk CreateMy-QR met traditionele QR-generatoren. Ontdek waarom professionals kiezen voor onze privétools aan de clientzijde zonder verborgen scanvervaldatum of scanlimieten.",
+      "desc": "Vergelijk CreateMy-QR met traditionele QR-generatoren. Ontdek waarom professionals kiezen voor onze privétools aan de clientzijde zonder verborgen scanvervaldatum of scanlimieten."
     },
     "languages": {
       "seoTitle": "Ondersteunde talen",
@@ -1897,7 +1898,7 @@
       "col2Title": "CreateMeQR Beveiliging aan de clientzijde",
       "col2Point1": "Onveranderlijke payload: rechtstreeks gecodeerd in de onbewerkte matrix; onmogelijk te kapen.",
       "col2Point2": "Zero Intermediary Logging: Directe point-to-point scan zonder tussenpersonen.",
-      "col2Point3": "Permanent en onbreekbaar: Geen terugkerende kosten, voor altijd geen vervalrisico."
+      "col2Point3": "Permanent en onbreekbaar: statische codes verlopen nooit, zonder scankosten of voor altijd zonder afsluitrisico."
     },
     "barcodePhysics": {
       "badge": "Optische verificatie en fysieke contrastnormen",
@@ -2193,7 +2194,7 @@
     "h1": "Bewerkbare QR-codegenerator | Aangepaste QR-code met logo gratis",
     "h2_1": "Waarom client-side verwerking de toekomst is van het genereren van QR-codes",
     "p_1": "In de moderne digitale economie vereist het omzetten van links, URL's, WiFi-inloggegevens en vCard-contactgegevens in zeer nauwkeurige Quick Response (QR)-codes absolute betrouwbaarheid, snelheid en privacy. Conventionele online QR-codegeneratoren leiden gebruikersgegevens vaak via trackingservers van derden, waardoor gevoelige interne links en klantgegevens worden onderschept. Bovendien leggen veel gratis generatoren kunstmatige scanlimieten op of injecteren ze vervaltimers die gedrukt marketingmateriaal na een proefperiode kapot maken.",
-    "p_2": "Onze generator elimineert deze kwetsbaarheden fundamenteel door middel van 100% browserweergave aan de clientzijde. Onze engine wordt aangedreven door geavanceerde HTML5 Canvas- en WebAssembly-vectoralgoritmen en verwerkt complexe trackinglinks, Google Drive-mappen, restaurantmenu's en betalingsgateways lokaal op uw apparaat in minder dan 12 milliseconden. Uw vertrouwelijke gegevens passeren nooit een cloudserver of database. Bovendien is elke gegenereerde QR-code permanent, statisch en kan deze gegarandeerd een onbeperkt aantal keren worden gescand, zonder watermerken of betaalmuren voor abonnementen.",
+    "p_2": "Onze generator elimineert deze kwetsbaarheden fundamenteel door middel van 100% browserweergave aan de clientzijde. Onze engine wordt aangedreven door geavanceerde HTML5 Canvas- en WebAssembly-vectoralgoritmen en verwerkt complexe trackinglinks, Google Drive-mappen, restaurantmenu's en betalingsgateways lokaal op uw apparaat in minder dan 12 milliseconden. Uw vertrouwelijke gegevens passeren nooit een cloudserver of database. Bovendien is elke gegenereerde QR-code permanent, statisch en kan deze gegarandeerd een onbeperkt aantal keren worden gescand, zonder watermerken of verborgen vervaldatum.",
     "h2_2": "Empirische vergelijking: client-side versus oudere QR-generatoren aan serverzijde",
     "p_3": "Bij het evalueren van tools voor het genereren van QR-codes voor bedrijfsmarketing, horecamenu's en productverpakkingen laten technische benchmarks aanzienlijke prestatieverschillen zien tussen client-side architectuur en oudere server-side tools.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "Annuleer"
     },
     "signInToAccount": "Meld u aan bij uw account"
-  }
+  },
+  "embedWhy1": "Gratis kerntools voor uw gebruikers met permanente statische codes"
 }

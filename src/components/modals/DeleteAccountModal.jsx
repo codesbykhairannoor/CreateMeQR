@@ -72,15 +72,18 @@ export default function DeleteAccountModal({ isOpen, onClose }) {
   };
 
   const modalContent = (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 overflow-y-auto">
+    <div className="fixed inset-0 z-[9999] overflow-y-auto">
       {/* Backdrop */}
       <div
         onClick={handleClose}
-        className="fixed inset-0 bg-slate-950/80 backdrop-blur-md animate-fade-in"
+        className="fixed inset-0 bg-slate-950/80 backdrop-blur-md animate-fade-in transition-opacity"
+        aria-hidden="true"
       />
 
-      {/* Modal Card - Centered via Portal */}
-      <div className="relative w-full max-w-lg my-auto bg-white dark:bg-[#081226] rounded-3xl shadow-2xl border border-rose-200 dark:border-rose-950/60 p-6 md:p-8 z-10 overflow-hidden animate-fade-in-up">
+      {/* Centering layout container */}
+      <div className="flex min-h-full items-center justify-center p-4 sm:p-6 text-center">
+        {/* Modal Card - Centered via Portal */}
+        <div className="relative w-full max-w-lg my-8 bg-white dark:bg-[#081226] rounded-3xl shadow-2xl border border-rose-200 dark:border-rose-950/60 p-6 md:p-8 z-10 text-left overflow-hidden animate-fade-in-up">
         {/* Subtle Ambient Red Glow */}
         <div className="absolute top-0 right-0 w-48 h-48 bg-rose-600/10 blur-3xl pointer-events-none rounded-full" />
 
@@ -231,6 +234,7 @@ export default function DeleteAccountModal({ isOpen, onClose }) {
         </form>
       </div>
     </div>
+  </div>
   );
 
   return createPortal(modalContent, document.body);

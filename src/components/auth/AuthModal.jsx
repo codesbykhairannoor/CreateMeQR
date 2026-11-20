@@ -300,18 +300,21 @@ export default function AuthModal() {
   const activeEmail = registeredEmail || email || user?.email || '';
 
   const modalContent = (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 overflow-y-auto">
+    <div className="fixed inset-0 z-[9999] overflow-y-auto">
       {/* Backdrop */}
       <div
         onClick={() => {
           resetForm();
           closeAuthModal();
         }}
-        className="fixed inset-0 bg-slate-950/75 backdrop-blur-md animate-fade-in"
+        className="fixed inset-0 bg-slate-950/75 backdrop-blur-md animate-fade-in transition-opacity"
+        aria-hidden="true"
       />
 
-      {/* Modal Window - Perfectly Centered via Portal */}
-      <div className="relative w-full max-w-md my-auto bg-white dark:bg-[#081226] rounded-3xl shadow-2xl border border-slate-200 dark:border-[#102040] p-6 md:p-8 z-10 overflow-hidden animate-fade-in-up">
+      {/* Centering layout container */}
+      <div className="flex min-h-full items-center justify-center p-4 sm:p-6 text-center">
+        {/* Modal Window - Perfectly Centered via Portal */}
+        <div className="relative w-full max-w-md my-8 bg-white dark:bg-[#081226] rounded-3xl shadow-2xl border border-slate-200 dark:border-[#102040] p-6 md:p-8 z-10 text-left overflow-hidden animate-fade-in-up">
         {/* Subtle Brand Ambient Glow */}
         <div className="absolute top-0 right-0 w-48 h-48 bg-blue-600/10 dark:bg-blue-500/15 blur-3xl pointer-events-none rounded-full" />
         <div className="absolute bottom-0 left-0 w-48 h-48 bg-slate-900/10 dark:bg-blue-700/10 blur-3xl pointer-events-none rounded-full" />
@@ -651,6 +654,7 @@ export default function AuthModal() {
         )}
       </div>
     </div>
+  </div>
   );
 
   return createPortal(modalContent, document.body);

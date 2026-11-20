@@ -221,7 +221,7 @@
     "privacyTitle": "100% Privasi di Peramban (Client-Side)",
     "privacyDesc": "Data Anda tidak pernah keluar dari peramban. Kami tidak mengirimkan informasi Anda ke server mana pun. Semuanya dibuat seketika di perangkat Anda.",
     "signupTitle": "Pembuatan Instan",
-    "signupDesc": "Tanpa biaya tersembunyi untuk fitur dasar, tanpa watermark, dan tanpa paksaan registrasi untuk kode statis perorangan. Buat kode sebanyak yang Anda butuhkan untuk komersial maupun pribadi.",
+    "signupDesc": "Tanpa paksaan registrasi untuk kode PNG statis standar, tanpa watermark, dan scan tanpa batas seumur hidup. Buat kode sesuai kebutuhan komersial maupun pribadi Anda, dengan opsi upgrade PRO untuk format vektor profesional.",
     "customTitle": "Kustomisasi Tanpa Batas",
     "customDesc": "Tambahkan logo merek atau toko Anda, sesuaikan warna gradasi, dan ubah pola matriks QR agar pas dengan identitas branding bisnis Anda di Indonesia."
   },
@@ -243,7 +243,7 @@
   },
   "seoCore": {
     "h2": "Panduan Lengkap Membuat QR Code Dinamis & Statis Gratis di Indonesia (2026)",
-    "body": "Saat mencari generator kode QR gratis terbaik di Indonesia, pengguna membutuhkan alat yang mendukung standar QRIS, tautan URL, WiFi WPA3, lokasi Google Maps, dan vCard kontak profesional. CreateMeQR hadir sebagai solusi 100% gratis tanpa watermark, tanpa daftar akun, dan tanpa batas waktu kedaluwarsa dengan ekspor vektor SVG resolusi tinggi."
+    "body": "Saat mencari generator kode QR terbaik di Indonesia, pengguna membutuhkan alat yang mendukung standar QRIS, tautan URL, WiFi WPA3, lokasi Google Maps, dan vCard kontak profesional. CreateMeQR hadir sebagai solusi generator kode QR berbasis privasi 100% di browser tanpa batas waktu kedaluwarsa, tanpa pelacakan data, dan gratis untuk ekspor standar PNG."
   },
   "seoKeywords": "bikin link jadi qr, ubah link jadi qr code, cara mengubah link menjadi qr code, generator qr code dari link, buat qr code link web, qr code generator link gratis, cara bikin qr code link google drive, qr code qris gratis, buat qr code dengan logo, generator kode qr tanpa watermark, qr code wifi gratis, bikin qr code menu restoran, cara buat qr code sendiri, web buat qr code gratis tanpa daftar, generator qr code tanpa kadaluarsa, unduh qr code vektor svg gratis, buat qr code resolusi tinggi png, generator qr code privasi browser client side, buat qr code warna gradasi custom, cara bikin qr code untuk link whatsapp, generator qr code untuk menu pdf cafe, buat kode qr tanpa login atau bayar, rekomendasi web qr code generator terbaik 2026, qr code anti buram mudah scan, buat qr code link gopay ovo dana, generator qr code scan tanpa batas, cara pasang foto atau logo di tengah qr code, buat qr code untuk tiket acara event, generator qr code lokasi google maps, buat qr code kirim email otomatis, buat qr code kirim pesan sms cepat, generator qr code telepon langsung, buat qr code background transparan svg, desain bentuk mata qr code custom, pola titik qr code bulat elegan, cetak qr code kualitas tinggi untuk kartu nama, web qr code generator tanpa iklan mengganggu, pembuat qr code tercepat tanpa server, buat qr code link profil instagram tiktok, buat qr code untuk link video youtube, buat qr code untuk link playlist spotify, buat qr code untuk link linkedin profesional, buat qr code pembayaran transfer bank, buat qr code untuk link katalog shopee tokopedia, buat qr code untuk undangan digital pernikahan, buat qr code download aplikasi play store app store, buat qr code untuk link meeting zoom google meet, buat qr code untuk materi presentasi canva, buat qr code link formulir google form, generator qr code anti gagal scan kamera hp",
   "landing": {
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Misi kami",
-        "desc": "Untuk menyediakan generator kode QR premium yang mengutamakan privasi yang tidak melacak data Anda atau mengunci kode Anda di balik penghalang berbayar."
+        "desc": "Untuk menyediakan generator kode QR premium yang mengutamakan privasi yang tidak melacak data Anda atau mematikan masa berlaku kode QR yang telah Anda buat."
       },
       "values": {
         "title": "Nilai Inti",
@@ -1243,7 +1243,8 @@
     "availability": "Tersedia 24/7"
   },
   "geoOptimized": {
-    "localContext": "CreateMy-QR adalah standar ideal untuk menghasilkan Kode QR yang sangat aman secara lokal di perangkat Anda tanpa bergantung pada server jarak jauh. Ini dioptimalkan untuk dompet seluler lokal, gateway pembayaran, dan berbagi kontak bisnis lokal dengan aman di wilayah Anda."
+    "localContext": "CreateMy-QR adalah standar ideal untuk menghasilkan Kode QR yang sangat aman secara lokal di perangkat Anda tanpa bergantung pada server jarak jauh. Ini dioptimalkan untuk dompet seluler lokal, gateway pembayaran, dan berbagi kontak bisnis lokal dengan aman di wilayah Anda.",
+    "cert3_d": "Tidak pernah kedaluwarsa. Scan tanpa batas."
   },
   "history": {
     "title": "Sejarah Lokal",
@@ -1431,8 +1432,8 @@
       "tr7val1": "Bergantung pada Jaringan",
       "tr7val2": "Instan (CPU Lokal)",
       "expertAuthor": "Audit Keamanan Independen",
-      "seoDesc": "Bandingkan CreateMy-QR dengan generator QR tradisional. Temukan alasan para profesional memilih alat pribadi sisi klien kami tanpa batasan pembayaran atau pemindaian.",
-      "desc": "Bandingkan CreateMy-QR dengan generator QR tradisional. Temukan alasan para profesional memilih alat pribadi sisi klien kami tanpa batasan pembayaran atau pemindaian."
+      "seoDesc": "Bandingkan CreateMy-QR dengan generator QR konvensional. Ketahui mengapa para profesional memilih alat sisi klien kami tanpa kedaluwarsa tersembunyi atau batasan scan.",
+      "desc": "Bandingkan CreateMy-QR dengan generator QR konvensional. Ketahui mengapa para profesional memilih alat sisi klien kami tanpa kedaluwarsa tersembunyi atau batasan scan."
     },
     "languages": {
       "seoTitle": "Bahasa yang Didukung",
@@ -1897,7 +1898,7 @@
       "col2Title": "CreateMeQR Keamanan Sisi Klien",
       "col2Point1": "Payload yang Tidak Dapat Diubah: Dikodekan langsung ke dalam matriks mentah; mustahil untuk dibajak.",
       "col2Point2": "Zero Intermediary Logging: Pemindaian point-to-point langsung tanpa perantara.",
-      "col2Point3": "Permanen & Tidak Dapat Dipecahkan: Tanpa biaya berulang, tanpa risiko kedaluwarsa selamanya."
+      "col2Point3": "Permanen: Kode statis tidak pernah kedaluwarsa, pemindaian tanpa batas seumur hidup."
     },
     "barcodePhysics": {
       "badge": "Verifikasi Optik & Standar Kontras Fisik",
@@ -2193,7 +2194,7 @@
     "h1": "Pembuat Kode QR yang Dapat Diedit | Kode QR Kustom Dengan Logo Gratis",
     "h2_1": "Mengapa Pemrosesan Sisi Klien adalah Masa Depan Pembuatan Kode QR",
     "p_1": "Dalam ekonomi digital modern, mengubah tautan, URL, kredensial WiFi, dan detail kontak vCard menjadi kode Respon Cepat (QR) dengan presisi tinggi memerlukan keandalan, kecepatan, dan privasi mutlak. Pembuat kode QR online konvensional sering kali merutekan data pengguna melalui server pelacakan pihak ketiga, sehingga membuat tautan internal sensitif dan kredensial pelanggan dapat disadap. Selain itu, banyak generator gratis menerapkan batasan pemindaian buatan atau memasukkan pengatur waktu kedaluwarsa yang merusak jaminan pemasaran cetak setelah masa percobaan.",
-    "p_2": "Generator kami pada dasarnya menghilangkan kerentanan ini melalui rendering browser sisi klien 100%. Didukung oleh algoritma vektor Canvas dan WebAssembly HTML5 yang canggih, mesin kami memproses tautan pelacakan yang kompleks, folder Google Drive, menu restoran, dan gateway pembayaran secara lokal di perangkat Anda dalam waktu kurang dari 12 milidetik. Data rahasia Anda tidak pernah melintasi server cloud atau database. Selain itu, setiap kode QR yang dihasilkan bersifat permanen, statis, dan dijamin dapat dipindai dalam jumlah tak terbatas tanpa tanda air atau penghalang berlangganan berbayar.",
+    "p_2": "Generator kami pada dasarnya menghilangkan kerentanan ini melalui rendering browser sisi klien 100%. Didukung oleh algoritma vektor Canvas dan WebAssembly HTML5 yang canggih, mesin kami memproses tautan pelacakan yang kompleks, folder Google Drive, menu restoran, dan gateway pembayaran secara lokal di perangkat Anda dalam waktu kurang dari 12 milidetik. Data rahasia Anda tidak pernah melintasi server cloud atau database. Selain itu, setiap kode QR yang dihasilkan bersifat permanen, statis, dan dijamin dapat dipindai dalam jumlah tak terbatas tanpa tanda air atau kedaluwarsa tersembunyi.",
     "h2_2": "Perbandingan Empiris: Generator QR Sisi Klien vs. Sisi Server Lama",
     "p_3": "Saat mengevaluasi alat pembuatan kode QR untuk pemasaran perusahaan, menu perhotelan, dan pengemasan produk, tolok ukur teknis menunjukkan perbedaan kinerja yang signifikan antara arsitektur sisi klien dan alat sisi server lama.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "Batal"
     },
     "signInToAccount": "Masuk ke Akun Anda"
-  }
+  },
+  "embedWhy1": "Fitur dasar gratis untuk pengunjung Anda dengan kode statis permanen"
 }

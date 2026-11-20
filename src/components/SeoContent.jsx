@@ -46,7 +46,7 @@ export default function SeoContent() {
               </div>
               <div className="md:col-span-2 mt-2">
                 <h3 className="text-base font-bold tracking-tight text-zinc-900 dark:text-zinc-100 mb-2">{t('geoOptimized.cert3_t', 'Unlimited Scans')}</h3>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 m-0 italic">{t('geoOptimized.cert3_d', 'No paywalls, forever.')}</p>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 m-0 italic">{t('geoOptimized.cert3_d', 'Never expires. Unlimited scans.')}</p>
               </div>
             </div>
           </section>

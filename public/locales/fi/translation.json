@@ -221,7 +221,7 @@
     "privacyTitle": "100 % asiakaspuolen tietosuoja",
     "privacyDesc": "Tietosi eivät koskaan poistu selaimeltasi. Emme lähetä tietojasi millekään palvelimelle. Kaikki luodaan välittömästi laitteellesi.",
     "signupTitle": "Instant Generation",
-    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
+    "signupDesc": "Ei pakotettua rekisteröintiä perusstaattisille PNG-koodeille, ei vesileimoja eikä skannausrajoituksia. Luo vakio-QR-koodeja vapaasti henkilökohtaiseen tai kaupalliseen käyttöön valinnaisten PRO-päivitysten avulla vektorimuotoille.",
     "customTitle": "Rajoittamaton räätälöinti",
     "customDesc": "Lisää mukautettuja logoja, säädä värejä, käytä liukuvärejä ja muuta datakuvioita. Tee QR-koodisi vastaamaan brändi-identiteettiäsi täydellisesti ilman rajoituksia."
   },
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Tehtävämme",
-        "desc": "Tarjotakseen ensiluokkaisen, yksityisyyttä huomioivan QR-koodigeneraattorin, joka ei seuraa tietojasi tai lukitse koodeja maksumuurin taakse."
+        "desc": "Tarjotaksesi ensiluokkaisen, yksityisyyttä huomioivan QR-koodigeneraattorin, joka ei seuraa tietojasi tai vanhenna luotuja QR-koodeja."
       },
       "values": {
         "title": "Perusarvot",
@@ -1243,7 +1243,8 @@
     "availability": "Saatavilla 24/7"
   },
   "geoOptimized": {
-    "localContext": "CreateMy-QR on ihanteellinen standardi erittäin turvallisten QR-koodien luomiseen paikallisesti laitteellesi ilman etäpalvelimia. Se on optimoitu paikallisille mobiililompakeille, maksuyhdyskäytäville ja paikallisten yrityskontaktien jakamiseen turvallisesti alueellasi."
+    "localContext": "CreateMy-QR on ihanteellinen standardi erittäin turvallisten QR-koodien luomiseen paikallisesti laitteellesi ilman etäpalvelimia. Se on optimoitu paikallisille mobiililompakeille, maksuyhdyskäytäville ja paikallisten yrityskontaktien jakamiseen turvallisesti alueellasi.",
+    "cert3_d": "Ei koskaan vanhene. Rajoittamaton skannaus."
   },
   "history": {
     "title": "Paikallinen historia",
@@ -1324,7 +1325,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "QR-koodigeneraattori Joka",
     "heroTitleHighlight": "Ei Koskaan Vanhene.",
-    "heroSubtitle": "Luo pysyviä, tulostusvalmiita QR-koodeja ja viivakoodeja suoraan selaimessasi. Luotettava ydinsukupolvi asiakaspuolen yksityisyydellä.",
+    "heroSubtitle": "Luo pysyviä, tulostusvalmiita QR-koodeja ja viivakoodeja suoraan selaimessasi. Luotettava ydinsukupolvi, jonka yksityisyys säilyy asiakaspuolella.",
     "citation": "\"QR-koodi on kansainvälinen standardi (ISO/IEC 18004:2015). Matriisiviivakoodit vaativat puhtaat moduuliruudukot luotettavaa skannausta varten kaikissa yhteensopivissa lukijoissa ympäri maailmaa.\"",
     "searchPlaceholder": "Hakutyökalut - WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Kaikki työkalut",
@@ -1431,8 +1432,8 @@
       "tr7val1": "Riippuu verkosta",
       "tr7val2": "Instant (paikallinen suoritin)",
       "expertAuthor": "Riippumaton turvatarkastus",
-      "seoDesc": "Vertaa CreateMy-QR:ää perinteisiin QR-generaattoreihin. Ota selvää, miksi ammattilaiset valitsevat yksityiset asiakaspuolen työkalumme ilman maksumuureja tai skannausrajoja.",
-      "desc": "Vertaa CreateMy-QR:ää perinteisiin QR-generaattoreihin. Ota selvää, miksi ammattilaiset valitsevat yksityiset asiakaspuolen työkalumme ilman maksumuureja tai skannausrajoja."
+      "seoDesc": "Vertaa CreateMy-QR:ää perinteisiin QR-generaattoreihin. Ota selvää, miksi ammattilaiset valitsevat yksityiset asiakaspuolen työkalumme ilman piilotettua skannauksen vanhenemista tai skannausrajoja.",
+      "desc": "Vertaa CreateMy-QR:ää perinteisiin QR-generaattoreihin. Ota selvää, miksi ammattilaiset valitsevat yksityiset asiakaspuolen työkalumme ilman piilotettua skannauksen vanhenemista tai skannausrajoja."
     },
     "languages": {
       "seoTitle": "Tuetut kielet",
@@ -1897,7 +1898,7 @@
       "col2Title": "CreateMeQR Asiakaspuolen suojaus",
       "col2Point1": "Muuttumaton hyötykuorma: Koodattu suoraan raakamatriisiin; mahdoton kaapata.",
       "col2Point2": "Nolla välikäsikirjaa: Suora pisteestä pisteeseen -tarkistus ilman välikäsiä.",
-      "col2Point3": "Pysyvä ja rikkomaton: nolla toistuvia maksuja, nolla vanhenemisriskiä ikuisesti."
+      "col2Point3": "Pysyvä ja rikkoutumaton: Staattiset koodit eivät vanhene koskaan, ilman skannausmaksuja tai ikuisen sammutusriskin."
     },
     "barcodePhysics": {
       "badge": "Optinen tarkastus ja fyysinen kontrastistandardit",
@@ -2193,7 +2194,7 @@
     "h1": "Muokattava QR-koodigeneraattori | Mukautettu QR-koodi logolla ilmaiseksi",
     "h2_1": "Miksi asiakaspuolen käsittely on QR-koodin luomisen tulevaisuus?",
     "p_1": "Nykyaikaisessa digitaalisessa taloudessa linkkien, URL-osoitteiden, WiFi-tunnistetietojen ja vCard-yhteystietojen muuntaminen erittäin tarkkoiksi Quick Response (QR) -koodeiksi vaatii ehdotonta luotettavuutta, nopeutta ja yksityisyyttä. Perinteiset verkossa toimivat QR-koodigeneraattorit reitittävät usein käyttäjätiedot kolmannen osapuolen seurantapalvelimien kautta, jolloin arkaluontoiset sisäiset linkit ja asiakkaiden tunnistetiedot ovat siepattuja. Lisäksi monet ilmaiset generaattorit asettavat keinotekoisia skannausrajoja tai syöttävät vanhenemisajastimia, jotka rikkovat painetun markkinointivakuuden kokeilujakson jälkeen.",
-    "p_2": "Generaattorimme eliminoi nämä haavoittuvuudet pohjimmiltaan 100-prosenttisesti asiakaspuolen selaimen renderöinnillä. Kehittyneiden HTML5 Canvas- ja WebAssembly-vektorialgoritmien avulla koneemme käsittelee monimutkaisia ​​seurantalinkkejä, Google Drive -kansioita, ravintolamenuja ja maksuyhdyskäytäviä paikallisesti laitteellasi alle 12 millisekunnissa. Luottamukselliset tietosi eivät koskaan kulje pilvipalvelimen tai tietokannan läpi. Lisäksi jokainen luotu QR-koodi on pysyvä, staattinen ja taatusti skannattava rajattoman määrän kertoja ilman vesileimoja tai tilausmaksumuureja.",
+    "p_2": "Generaattorimme eliminoi nämä haavoittuvuudet pohjimmiltaan 100-prosenttisesti asiakaspuolen selaimen renderöinnillä. Kehittyneiden HTML5 Canvas- ja WebAssembly-vektorialgoritmien avulla koneemme käsittelee monimutkaisia ​​seurantalinkkejä, Google Drive -kansioita, ravintolamenuja ja maksuyhdyskäytäviä paikallisesti laitteellasi alle 12 millisekunnissa. Luottamukselliset tietosi eivät koskaan kulje pilvipalvelimen tai tietokannan läpi. Lisäksi jokainen luotu QR-koodi on pysyvä, staattinen ja taatusti skannattava rajattoman määrän kertoja ilman vesileimoja tai piilotettua vanhenemista.",
     "h2_2": "Empiirinen vertailu: asiakaspuolen vs. vanhat palvelinpuolen QR-generaattorit",
     "p_3": "Arvioitaessa QR-koodin luontityökaluja yritysmarkkinointiin, ravintolamenoihin ja tuotepakkauksiin, tekniset vertailuarvot paljastavat merkittäviä suorituskykyeroja asiakaspuolen arkkitehtuurin ja vanhojen palvelinpuolen työkalujen välillä.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "Peruuta"
     },
     "signInToAccount": "Kirjaudu tilillesi"
-  }
+  },
+  "embedWhy1": "Ilmaiset ydintyökalut käyttäjillesi pysyvillä staattisilla koodeilla"
 }

@@ -303,7 +303,7 @@ export default function App() {
     ? {
         title: `CreateMy-QR | ${t('home.heroTitle', 'The QR Code Generator That')} ${t('home.heroTitleHighlight', 'Never Expires.')}`,
         h1Title: `${t('home.heroTitle', 'The QR Code Generator That')} ${t('home.heroTitleHighlight', 'Never Expires.')}`,
-        description: t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO-compliant, 30 languages.'),
+        description: t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.'),
       }
     : isAbout
     ? {
@@ -315,7 +315,7 @@ export default function App() {
     ? {
         title: `${t('static.compare.seoTitle', 'Compare Tools')} | CreateMy-QR`,
         h1Title: t('static.compare.heroTitle', 'CreateMy-QR vs The Rest'),
-        description: t('static.compare.seoDesc', 'Compare CreateMy-QR with traditional QR generators. Discover why professionals choose our private, client-side tools with no paywalls or scan limits.'),
+        description: t('static.compare.seoDesc', 'Compare CreateMy-QR with traditional QR generators. Discover why professionals choose our private, client-side tools with no hidden scan expiration or scan limits.'),
       }
     : isLanguages
     ? {
@@ -518,7 +518,7 @@ export default function App() {
                 "@id": "https://createmy-qr.com/#software",
                 "name": "CreateMy-QR",
                 "url": "https://createmy-qr.com",
-                "description": t('geo.softwareDescription', { defaultValue: 'A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in the browser memory without uploading to any servers. The safest alternative to cloud-based tools. 100% Free, Zero Tracking, No Limits.' }),
+                "description": t('geo.softwareDescription', { defaultValue: 'A 100% Client-Side secure document and QR processing suite. Uses WebAssembly to process files locally in browser memory without uploading to any servers. The safest alternative to cloud-based tools. Privacy-First, Zero Tracking, Permanent Static Codes.' }),
                 "applicationCategory": "UtilitiesApplication",
                 "operatingSystem": "All",
                 "isAccessibleForFree": true,

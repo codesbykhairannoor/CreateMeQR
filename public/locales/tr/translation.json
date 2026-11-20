@@ -221,7 +221,7 @@
     "privacyTitle": "%100 İstemci Tarafı Gizliliği",
     "privacyDesc": "Verileriniz tarayıcınızdan asla ayrılmaz. Bilgilerinizi hiçbir sunucuya göndermiyoruz. Her şey cihazınızda anında oluşturulur.",
     "signupTitle": "Anında Oluşturma",
-    "signupDesc": "Temel araçlarda gizli ücret yok, filigran yok ve bireysel statik kodlar için zorunlu kayıt gerekmez. Ticari veya kişisel kullanımınız için dilediğiniz kadar kod oluşturun.",
+    "signupDesc": "Temel statik PNG kodları için zorunlu kayıt yok, filigran yok ve tarama sınırı yok. Vektör formatları için isteğe bağlı PRO yükseltmeleriyle kişisel veya ticari kullanım için standart QR kodlarını özgürce oluşturun.",
     "customTitle": "Sınırsız Özelleştirme",
     "customDesc": "Özel logolar ekleyin, renkleri değiştirin, degradeler kullanın ve veri modellerini değiştirin. QR kodunuzun kısıtlama olmaksızın marka kimliğinizle mükemmel şekilde eşleşmesini sağlayın."
   },
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Misyonumuz",
-        "desc": "Verilerinizi izlemeyen veya kodlarınızı ödeme duvarlarının arkasına kilitlemeyen birinci sınıf, gizliliğe öncelik veren bir QR kodu oluşturucu sağlamak."
+        "desc": "Verilerinizi takip etmeyen veya oluşturulan QR kodlarınızın geçerliliğini kaybetmeyen birinci sınıf, gizlilik öncelikli bir QR kodu oluşturucu sağlamak."
       },
       "values": {
         "title": "Temel Değerler",
@@ -1243,7 +1243,8 @@
     "availability": "7/24 ulaşılabilir"
   },
   "geoOptimized": {
-    "localContext": "CreateMy-QR, uzak sunuculara bağlı kalmadan cihazınızda yerel olarak yüksek düzeyde güvenli QR Kodları oluşturmak için ideal standarttır. Yerel mobil cüzdanlar, ödeme ağ geçitleri ve bölgenizdeki yerel iş bağlantılarını güvenli bir şekilde paylaşmak için optimize edilmiştir."
+    "localContext": "CreateMy-QR, uzak sunuculara bağlı kalmadan cihazınızda yerel olarak yüksek düzeyde güvenli QR Kodları oluşturmak için ideal standarttır. Yerel mobil cüzdanlar, ödeme ağ geçitleri ve bölgenizdeki yerel iş bağlantılarını güvenli bir şekilde paylaşmak için optimize edilmiştir.",
+    "cert3_d": "Hiçbir zaman süresi dolmaz. Sınırsız tarama."
   },
   "history": {
     "title": "Yerel Tarih",
@@ -1324,7 +1325,7 @@
     "seoTitle": "CreateMy-QR — Ücretsiz QR Kod & Barkod Oluşturucu | 37 Çevrimiçi Araç",
     "seoDesc": "Ücretsiz olarak 37 türde QR kod ve barkod oluşturun. Anında indirme, süresi dolmayan statik kodlar, 30 dilde ISO/IEC 18004 uyumlu.",
     "badge": "ISO/IEC 18004 · Gizlilik Öncelikli · Sıfır Takip · İstemci Tarafı",
-    "heroSubtitle": "Doğrudan tarayıcınızda kalıcı, yazdırılmaya hazır QR kodları ve barkodlar oluşturun. İstemci tarafı gizliliğiyle güvenilir çekirdek oluşturma.",
+    "heroSubtitle": "Doğrudan tarayıcınızda kalıcı, yazdırılmaya hazır QR kodları ve barkodlar oluşturun. İstemci tarafında gizliliğin korunduğu güvenilir çekirdek oluşturma.",
     "citation": "\"QR Kodu, uluslararası bir standarttır (ISO/IEC 18004:2015). Matris barkodlar, tüm uyumlu okuyucularda güvenilir tarama için temiz modül ızgaraları gerektirir.\"",
     "searchPlaceholder": "Araç ara — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Tüm Araçlar",
@@ -1431,8 +1432,8 @@
       "tr7val1": "Ağa Bağlı",
       "tr7val2": "Anında (Yerel CPU)",
       "expertAuthor": "Bağımsız Güvenlik Denetimi",
-      "seoDesc": "CreateMy-QR'ı geleneksel QR oluşturucularla karşılaştırın. Profesyonellerin neden ödeme duvarı veya tarama sınırı olmayan özel, istemci tarafı araçlarımızı seçtiğini keşfedin.",
-      "desc": "CreateMy-QR'ı geleneksel QR oluşturucularla karşılaştırın. Profesyonellerin neden ödeme duvarı veya tarama sınırı olmayan özel, istemci tarafı araçlarımızı seçtiğini keşfedin."
+      "seoDesc": "CreateMy-QR'ı geleneksel QR oluşturucularla karşılaştırın. Profesyonellerin neden gizli tarama geçerlilik süresi veya tarama sınırı olmayan özel, istemci tarafı araçlarımızı tercih ettiğini keşfedin.",
+      "desc": "CreateMy-QR'ı geleneksel QR oluşturucularla karşılaştırın. Profesyonellerin neden gizli tarama geçerlilik süresi veya tarama sınırı olmayan özel, istemci tarafı araçlarımızı tercih ettiğini keşfedin."
     },
     "languages": {
       "seoTitle": "Desteklenen Diller",
@@ -1897,7 +1898,7 @@
       "col2Title": "CreateMeQR İstemci Tarafı Güvenliği",
       "col2Point1": "Değişmez Yük: Doğrudan ham matrise kodlanır; kaçırmak imkansızdır.",
       "col2Point2": "Sıfır Aracı Günlük Kaydı: Aracı olmadan doğrudan noktadan noktaya tarama.",
-      "col2Point3": "Kalıcı ve Kırılmaz: Tekrarlanan sıfır ücret, sonsuza kadar sıfır vade sonu riski."
+      "col2Point3": "Kalıcı ve Kırılmaz: Sıfır tarama ücreti veya sonsuza kadar kapanma riskiyle statik kodların süresi asla dolmaz."
     },
     "barcodePhysics": {
       "badge": "Optik Doğrulama ve Fiziksel Kontrast Standartları",
@@ -2193,7 +2194,7 @@
     "h1": "Düzenlenebilir QR Kod Oluşturucu | Logo Ücretsiz Özel QR Kodu",
     "h2_1": "İstemci Tarafında İşleme Neden QR Kod Oluşturmanın Geleceğidir?",
     "p_1": "Modern dijital ekonomide bağlantıları, URL'leri, WiFi kimlik bilgilerini ve vCard iletişim ayrıntılarını yüksek hassasiyetli Hızlı Yanıt (QR) kodlarına dönüştürmek mutlak güvenilirlik, hız ve gizlilik gerektirir. Geleneksel çevrimiçi QR kodu oluşturucuları genellikle kullanıcı verilerini üçüncü taraf izleme sunucuları üzerinden yönlendirerek hassas dahili bağlantıları ve müşteri kimlik bilgilerini ele geçirilmeye maruz bırakır. Ayrıca, birçok ücretsiz oluşturucu yapay tarama limitleri uygular veya bir deneme süresinden sonra basılı pazarlama teminatlarını bozan son kullanma zamanlayıcıları enjekte eder.",
-    "p_2": "Oluşturucumuz, %100 istemci tarafı tarayıcı oluşturma yoluyla bu güvenlik açıklarını temel olarak ortadan kaldırır. Gelişmiş HTML5 Canvas ve WebAssembly vektör algoritmalarıyla desteklenen motorumuz, karmaşık izleme bağlantılarını, Google Drive klasörlerini, restoran menülerini ve ödeme ağ geçitlerini cihazınızda yerel olarak 12 milisaniyeden kısa bir sürede işler. Gizli verileriniz hiçbir zaman bir bulut sunucusundan veya veritabanından geçmez. Ayrıca oluşturulan her QR kodu kalıcı, statiktir ve filigran veya abonelik ödeme duvarları olmadan sınırsız sayıda taranması garanti edilir.",
+    "p_2": "Oluşturucumuz, %100 istemci tarafı tarayıcı oluşturma yoluyla bu güvenlik açıklarını temel olarak ortadan kaldırır. Gelişmiş HTML5 Canvas ve WebAssembly vektör algoritmalarıyla desteklenen motorumuz, karmaşık izleme bağlantılarını, Google Drive klasörlerini, restoran menülerini ve ödeme ağ geçitlerini cihazınızda yerel olarak 12 milisaniyeden kısa bir sürede işler. Gizli verileriniz hiçbir zaman bir bulut sunucusundan veya veritabanından geçmez. Ayrıca oluşturulan her QR kodu kalıcıdır, statiktir ve filigran veya gizli son kullanma tarihi olmadan sınırsız sayıda taranması garanti edilir.",
     "h2_2": "Ampirik Karşılaştırma: İstemci Tarafı ve Eski Sunucu Tarafı QR Oluşturucuları",
     "p_3": "Kurumsal pazarlama, konaklama menüleri ve ürün paketleme için QR kodu oluşturma araçları değerlendirilirken, teknik kıyaslamalar, istemci tarafı mimarisi ile eski sunucu tarafı araçları arasındaki önemli performans farklılıklarını ortaya koyuyor.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "İptal"
     },
     "signInToAccount": "Hesabınızda Oturum Açın"
-  }
+  },
+  "embedWhy1": "Kullanıcılarınız için kalıcı statik kodlara sahip ücretsiz temel araçlar"
 }

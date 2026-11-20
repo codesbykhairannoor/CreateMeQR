@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist/server && node generate-ssg.cjs && node generate-sitemap.cjs && node generate-feed.cjs && node fast-super-test.cjs",
     "test:seo": "node fast-super-test.cjs && node audit-30-csvs.cjs",
-    "test:qa": "playwright test tests/qa-user-roles.spec.js",
+    "test:qa": "playwright test tests/qa-user-roles.spec.js --workers=1",
     "indexnow": "node submit-indexnow.cjs",
     "index:google": "node scripts/submit-google-indexing.cjs",
     "lint": "oxlint",

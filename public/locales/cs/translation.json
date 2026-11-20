@@ -221,7 +221,7 @@
     "privacyTitle": "100% soukromí na straně klienta",
     "privacyDesc": "Vaše data nikdy neopustí váš prohlížeč. Vaše informace neposíláme na žádný server. Vše se generuje okamžitě na vašem zařízení.",
     "signupTitle": "Instant Generation",
-    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
+    "signupDesc": "Žádná vynucená registrace pro základní statické kódy PNG, žádné vodoznaky a žádné limity skenování. Vytvářejte volně standardní QR kódy pro osobní nebo komerční použití s ​​volitelnými PRO upgrady pro vektorové formáty.",
     "customTitle": "Neomezené přizpůsobení",
     "customDesc": "Přidejte vlastní loga, upravte barvy, použijte přechody a změňte vzory dat. Zajistěte, aby váš QR kód dokonale odpovídal identitě vaší značky bez omezení."
   },
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Naše poslání",
-        "desc": "Poskytnout prémiový generátor QR kódů s důrazem na soukromí, který nesleduje vaše data ani nezamyká vaše kódy za paywally."
+        "desc": "Poskytnout prémiový generátor QR kódů s důrazem na ochranu soukromí, který nesleduje vaše data ani nevyprší platnost vašich vygenerovaných QR kódů."
       },
       "values": {
         "title": "Základní hodnoty",
@@ -1243,7 +1243,8 @@
     "availability": "K dispozici 24/7"
   },
   "geoOptimized": {
-    "localContext": "CreateMy-QR je ideální standard pro generování vysoce bezpečných QR kódů lokálně na vašem zařízení bez spoléhání se na vzdálené servery. Je optimalizován pro místní mobilní peněženky, platební brány a bezpečné sdílení místních obchodních kontaktů ve vašem regionu."
+    "localContext": "CreateMy-QR je ideální standard pro generování vysoce bezpečných QR kódů lokálně na vašem zařízení bez spoléhání se na vzdálené servery. Je optimalizován pro místní mobilní peněženky, platební brány a bezpečné sdílení místních obchodních kontaktů ve vašem regionu.",
+    "cert3_d": "Nikdy nevyprší. Neomezené skenování."
   },
   "history": {
     "title": "Místní historie",
@@ -1324,7 +1325,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "Generátor QR Kódů, Který",
     "heroTitleHighlight": "Nikdy Nevyprší.",
-    "heroSubtitle": "Vytvářejte trvalé QR kódy a čárové kódy připravené k tisku přímo ve vašem prohlížeči. Spolehlivé generování jádra se soukromím na straně klienta.",
+    "heroSubtitle": "Vytvářejte trvalé QR kódy a čárové kódy připravené k tisku přímo ve vašem prohlížeči. Spolehlivé generování jádra se zachováním soukromí na straně klienta.",
     "citation": "\"QR kód je mezinárodní standard (ISO/IEC 18004:2015). Maticové čárové kódy vyžadují čisté modulové mřížky pro spolehlivé skenování napříč všemi kompatibilními čtečkami po celém světě.\"",
     "searchPlaceholder": "Vyhledávací nástroje — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Všechny nástroje",
@@ -1431,8 +1432,8 @@
       "tr7val1": "Závisí na síti",
       "tr7val2": "Okamžité (místní CPU)",
       "expertAuthor": "Nezávislý bezpečnostní audit",
-      "seoDesc": "Porovnejte CreateMy-QR s tradičními generátory QR. Zjistěte, proč si profesionálové vybírají naše soukromé nástroje na straně klienta bez plateb nebo limitů skenování.",
-      "desc": "Porovnejte CreateMy-QR s tradičními generátory QR. Zjistěte, proč si profesionálové vybírají naše soukromé nástroje na straně klienta bez plateb nebo limitů skenování."
+      "seoDesc": "Porovnejte CreateMy-QR s tradičními generátory QR. Zjistěte, proč si profesionálové vybírají naše soukromé nástroje na straně klienta bez skrytého vypršení platnosti skenování nebo limitů skenování.",
+      "desc": "Porovnejte CreateMy-QR s tradičními generátory QR. Zjistěte, proč si profesionálové vybírají naše soukromé nástroje na straně klienta bez skrytého vypršení platnosti skenování nebo limitů skenování."
     },
     "languages": {
       "seoTitle": "Podporované jazyky",
@@ -1897,7 +1898,7 @@
       "col2Title": "CreateMeQR Zabezpečení na straně klienta",
       "col2Point1": "Neměnné užitečné zatížení: Zakódováno přímo do surové matice; nemožné unést.",
       "col2Point2": "Zero Intermediary Logging: Přímé skenování z bodu do bodu bez prostředníků.",
-      "col2Point3": "Trvalé a nerozbitné: Nulové opakované poplatky, nulové riziko expirace navždy."
+      "col2Point3": "Trvalé a nerozbitné: Platnost statických kódů nikdy nevyprší, s nulovými poplatky za skenování nebo s rizikem trvalého vypnutí."
     },
     "barcodePhysics": {
       "badge": "Optické ověření a standardy fyzického kontrastu",
@@ -2193,7 +2194,7 @@
     "h1": "Upravitelný generátor QR kódů | Vlastní QR kód s logem zdarma",
     "h2_1": "Proč je zpracování na straně klienta budoucností generování QR kódu",
     "p_1": "V moderní digitální ekonomice vyžaduje převod odkazů, adres URL, přihlašovacích údajů WiFi a kontaktních údajů vCard na vysoce přesné kódy Quick Response (QR) absolutní spolehlivost, rychlost a soukromí. Konvenční online generátory QR kódů často směrují uživatelská data přes sledovací servery třetích stran, čímž vystavují citlivé interní odkazy a přihlašovací údaje zákazníků zachycení. Kromě toho mnoho bezplatných generátorů ukládá umělé limity skenování nebo vstřikuje časovače vypršení platnosti, které po zkušební době poruší tištěný marketingový materiál.",
-    "p_2": "Náš generátor tyto zranitelnosti zásadně odstraňuje prostřednictvím 100% vykreslování prohlížeče na straně klienta. Náš engine, využívající pokročilé vektorové algoritmy HTML5 Canvas a WebAssembly, zpracovává složité sledovací odkazy, složky na Disku Google, jídelní lístky restaurací a platební brány lokálně ve vašem zařízení za méně než 12 milisekund. Vaše důvěrná data nikdy neprojdou cloudovým serverem nebo databází. Kromě toho je každý vygenerovaný QR kód trvalý, statický a je zaručeno, že jej bude možné skenovat neomezeně mnohokrát bez vodoznaků nebo předplatného.",
+    "p_2": "Náš generátor tyto zranitelnosti zásadně odstraňuje prostřednictvím 100% vykreslování prohlížeče na straně klienta. Náš engine, využívající pokročilé vektorové algoritmy HTML5 Canvas a WebAssembly, zpracovává složité sledovací odkazy, složky na Disku Google, jídelní lístky restaurací a platební brány lokálně ve vašem zařízení za méně než 12 milisekund. Vaše důvěrná data nikdy neprojdou cloudovým serverem nebo databází. Kromě toho je každý vygenerovaný QR kód trvalý, statický a je zaručeno, že jej bude možné skenovat neomezeně mnohokrát bez vodoznaků nebo skrytého vypršení platnosti.",
     "h2_2": "Empirické srovnání: Generátory QR na straně klienta vs. starší generátory QR na straně serveru",
     "p_3": "Při hodnocení nástrojů pro generování QR kódu pro podnikový marketing, pohostinské nabídky a balení produktů odhalují technické benchmarky značné rozdíly ve výkonu mezi architekturou na straně klienta a staršími nástroji na straně serveru.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "Zrušit"
     },
     "signInToAccount": "Přihlaste se ke svému účtu"
-  }
+  },
+  "embedWhy1": "Bezplatné základní nástroje pro vaše uživatele s trvalými statickými kódy"
 }

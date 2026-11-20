@@ -221,7 +221,7 @@
     "privacyTitle": "100% Client-Side Privacy",
     "privacyDesc": "Your data never leaves your browser. We don't send your information to any server. Everything is generated instantly on your device.",
     "signupTitle": "Instant Generation",
-    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
+    "signupDesc": "No forced registration for basic static PNG codes, no watermarks, and no scan limits. Generate standard QR codes freely for personal or commercial use, with optional PRO upgrades for vector formats.",
     "customTitle": "Unlimited Customization",
     "customDesc": "Add custom logos, tweak colors, use gradients, and change the data patterns. Make your QR code match your brand identity perfectly without restrictions."
   },
@@ -249,7 +249,7 @@
     "h1": "Editable QR Code Generator | Custom QR Code With Logo Free",
     "h2_1": "Why Client-Side Processing is the Future of QR Code Generation",
     "p_1": "In the modern digital economy, converting links, URLs, WiFi credentials, and vCard contact details into high-precision Quick Response (QR) codes requires absolute reliability, speed, and privacy. Conventional online QR code generators often route user data through third-party tracking servers, exposing sensitive internal links and customer credentials to interception. Furthermore, many free generators impose artificial scan limits or inject expiration timers that break printed marketing collateral after a trial period.",
-    "p_2": "Our generator fundamentally eliminates these vulnerabilities through 100% client-side browser rendering. Powered by advanced HTML5 Canvas and WebAssembly vector algorithms, our engine processes complex tracking links, Google Drive folders, restaurant menus, and payment gateways locally on your device in under 12 milliseconds. Your confidential data never traverses a cloud server or database. Furthermore, every generated QR code is permanent, static, and guaranteed to scan an unlimited number of times without watermarks or subscription paywalls.",
+    "p_2": "Our generator fundamentally eliminates these vulnerabilities through 100% client-side browser rendering. Powered by advanced HTML5 Canvas and WebAssembly vector algorithms, our engine processes complex tracking links, Google Drive folders, restaurant menus, and payment gateways locally on your device in under 12 milliseconds. Your confidential data never traverses a cloud server or database. Furthermore, every generated QR code is permanent, static, and guaranteed to scan an unlimited number of times without watermarks or hidden expiration.",
     "h2_2": "Empirical Comparison: Client-Side vs. Legacy Server-Side QR Generators",
     "p_3": "When evaluating QR code generation tools for enterprise marketing, hospitality menus, and product packaging, technical benchmarks reveal significant performance disparities between client-side architecture and legacy server-side tools.",
     "table": {
@@ -1002,7 +1002,7 @@
       },
       "mission": {
         "title": "Our Mission",
-        "desc": "To provide a premium, privacy-first QR code generator that doesn't track your data or lock your codes behind paywalls."
+        "desc": "To provide a premium, privacy-first QR code generator that doesn't track your data or expire your generated QR codes."
       },
       "values": {
         "title": "Core Values",
@@ -1235,7 +1235,8 @@
     "availability": "Available 24/7"
   },
   "geoOptimized": {
-    "localContext": "CreateMy-QR is the ideal standard for generating highly secure QR Codes locally on your device without relying on remote servers. It is optimized for local mobile wallets, payment gateways, and sharing local business contacts securely in your region."
+    "localContext": "CreateMy-QR is the ideal standard for generating highly secure QR Codes locally on your device without relying on remote servers. It is optimized for local mobile wallets, payment gateways, and sharing local business contacts securely in your region.",
+    "cert3_d": "Never expires. Unlimited scans."
   },
   "history": {
     "title": "Local History",
@@ -1316,7 +1317,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "The QR Code Generator That",
     "heroTitleHighlight": "Never Expires.",
-    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Reliable core generation with client-side privacy.",
+    "heroSubtitle": "Create permanent, print-ready QR codes and barcodes directly in your browser. Reliable core generation with privacy preserved on the client side.",
     "citation": "\"The QR Code is an international standard (ISO/IEC 18004:2015). Matrix barcodes require clean module grids for reliable scanning across all compliant readers worldwide.\"",
     "searchPlaceholder": "Search tools — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "All Tools",
@@ -1423,8 +1424,8 @@
       "tr7val1": "Dependent on Network",
       "tr7val2": "Instant (Local CPU)",
       "expertAuthor": "Independent Security Audit",
-      "seoDesc": "Compare CreateMy-QR with traditional QR generators. Discover why professionals choose our private, client-side tools with no paywalls or scan limits.",
-      "desc": "Compare CreateMy-QR with traditional QR generators. Discover why professionals choose our private, client-side tools with no paywalls or scan limits."
+      "seoDesc": "Compare CreateMy-QR with traditional QR generators. Discover why professionals choose our private, client-side tools with no hidden scan expiration or scan limits.",
+      "desc": "Compare CreateMy-QR with traditional QR generators. Discover why professionals choose our private, client-side tools with no hidden scan expiration or scan limits."
     },
     "languages": {
       "seoTitle": "Supported Languages",
@@ -1889,7 +1890,7 @@
       "col2Title": "CreateMeQR Client-Side Security",
       "col2Point1": "Immutable Payload: Encoded directly into raw matrix; impossible to hijack.",
       "col2Point2": "Zero Intermediary Logging: Direct point-to-point scan with no middlemen.",
-      "col2Point3": "Permanent & Unbreakable: Zero recurring fees, zero expiration risk forever."
+      "col2Point3": "Permanent & Unbreakable: Static codes never expire, with zero scan fees or shutdown risk forever."
     },
     "barcodePhysics": {
       "badge": "Optical Verification & Physical Contrast Standards",
@@ -2331,5 +2332,6 @@
       "cancelBtn": "Cancel"
     },
     "signInToAccount": "Sign In to Your Account"
-  }
+  },
+  "embedWhy1": "Free core tools for your users with permanent static codes"
 }

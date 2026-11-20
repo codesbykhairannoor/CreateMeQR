@@ -62,8 +62,8 @@ export default function EcosystemMenu({ currentLangCode, darkMode, setDarkMode }
         aria-expanded={isOpen}
         title="4 Web Apps Ecosystem"
         className={`w-9 h-9 md:w-10 md:h-10 rounded-xl md:rounded-2xl flex items-center justify-center transition-all cursor-pointer ${isOpen
-            ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25'
-            : 'text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 bg-slate-100/90 dark:bg-[#0c1831] hover:bg-blue-50 dark:hover:bg-[#102040] border border-slate-200/80 dark:border-slate-800'
+          ? 'bg-blue-600 text-white shadow-md shadow-blue-500/25'
+          : 'text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 bg-slate-100/90 dark:bg-[#0c1831] hover:bg-blue-50 dark:hover:bg-[#102040] border border-slate-200/80 dark:border-slate-800'
           }`}
       >
         {/* 9-dots SVG (3x3 grid) */}

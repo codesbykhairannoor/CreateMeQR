@@ -221,7 +221,7 @@
     "privacyTitle": "100% quyền riêng tư phía khách hàng",
     "privacyDesc": "Dữ liệu của bạn không bao giờ rời khỏi trình duyệt của bạn. Chúng tôi không gửi thông tin của bạn đến bất kỳ máy chủ nào. Mọi thứ được tạo ngay lập tức trên thiết bị của bạn.",
     "signupTitle": "Tạo Mã Tức Thì",
-    "signupDesc": "Không có phí ẩn cho công cụ cốt lõi, không gắn watermark và không bắt buộc đăng ký cho mã tĩnh đơn lẻ. Tạo bao nhiêu mã tùy thích cho mục đích cá nhân hoặc thương mại.",
+    "signupDesc": "Không bắt buộc phải đăng ký mã PNG tĩnh cơ bản, không có hình mờ và không có giới hạn quét. Tạo mã QR tiêu chuẩn miễn phí cho mục đích sử dụng cá nhân hoặc thương mại, với các bản nâng cấp PRO tùy chọn cho các định dạng vectơ.",
     "customTitle": "Tùy chỉnh không giới hạn",
     "customDesc": "Thêm logo tùy chỉnh, điều chỉnh màu sắc, sử dụng độ dốc và thay đổi mẫu dữ liệu. Làm cho mã QR của bạn khớp hoàn toàn với nhận diện thương hiệu của bạn mà không bị hạn chế."
   },
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Sứ mệnh của chúng tôi",
-        "desc": "Để cung cấp trình tạo mã QR cao cấp, ưu tiên quyền riêng tư, không theo dõi dữ liệu của bạn hoặc khóa mã của bạn sau tường phí."
+        "desc": "Để cung cấp trình tạo mã QR cao cấp, ưu tiên quyền riêng tư, không theo dõi dữ liệu của bạn hoặc hết hạn mã QR do bạn tạo."
       },
       "values": {
         "title": "Giá trị cốt lõi",
@@ -1243,7 +1243,8 @@
     "availability": "Có sẵn 24/7"
   },
   "geoOptimized": {
-    "localContext": "CreateMy-QR là tiêu chuẩn lý tưởng để tạo Mã QR có độ bảo mật cao cục bộ trên thiết bị của bạn mà không cần dựa vào máy chủ từ xa. Nó được tối ưu hóa cho ví di động địa phương, cổng thanh toán và chia sẻ liên hệ kinh doanh địa phương một cách an toàn trong khu vực của bạn."
+    "localContext": "CreateMy-QR là tiêu chuẩn lý tưởng để tạo Mã QR có độ bảo mật cao cục bộ trên thiết bị của bạn mà không cần dựa vào máy chủ từ xa. Nó được tối ưu hóa cho ví di động địa phương, cổng thanh toán và chia sẻ liên hệ kinh doanh địa phương một cách an toàn trong khu vực của bạn.",
+    "cert3_d": "Không bao giờ hết hạn. Quét không giới hạn."
   },
   "history": {
     "title": "Lịch sử địa phương",
@@ -1324,7 +1325,7 @@
     "badge": "ISO/IEC 18004 · Ưu Tiên Riêng Tư · Không Theo Dõi · Xử Lý Phía Khách",
     "heroTitle": "Trình Tạo Mã QR",
     "heroTitleHighlight": "Không Bao Giờ Hết Hạn.",
-    "heroSubtitle": "Tạo mã QR và mã vạch vĩnh viễn, sẵn sàng in trực tiếp trong trình duyệt của bạn. Tạo lõi đáng tin cậy với quyền riêng tư phía khách hàng.",
+    "heroSubtitle": "Tạo mã QR và mã vạch vĩnh viễn, sẵn sàng in trực tiếp trong trình duyệt của bạn. Tạo lõi đáng tin cậy với quyền riêng tư được bảo vệ ở phía khách hàng.",
     "citation": "\"Mã QR là tiêu chuẩn quốc tế (ISO/IEC 18004:2015). Mã vạch ma trận yêu cầu lưới mô-đun sạch để quét đáng tin cậy trên tất cả các đầu đọc tuân thủ trên toàn thế giới.\"",
     "searchPlaceholder": "Công cụ tìm kiếm - WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Tất cả công cụ",
@@ -1431,8 +1432,8 @@
       "tr7val1": "Phụ thuộc vào Mạng",
       "tr7val2": "Tức thì (CPU cục bộ)",
       "expertAuthor": "Kiểm toán an ninh độc lập",
-      "seoDesc": "So sánh CreateMy-QR với các trình tạo QR truyền thống. Khám phá lý do tại sao các chuyên gia chọn các công cụ riêng tư, phía khách hàng của chúng tôi mà không có tường phí hoặc giới hạn quét.",
-      "desc": "So sánh CreateMy-QR với các trình tạo QR truyền thống. Khám phá lý do tại sao các chuyên gia chọn các công cụ riêng tư, phía khách hàng của chúng tôi mà không có tường phí hoặc giới hạn quét."
+      "seoDesc": "So sánh CreateMy-QR với các trình tạo QR truyền thống. Khám phá lý do tại sao các chuyên gia chọn các công cụ riêng tư, phía khách hàng của chúng tôi mà không có giới hạn quét hoặc hết hạn quét ẩn.",
+      "desc": "So sánh CreateMy-QR với các trình tạo QR truyền thống. Khám phá lý do tại sao các chuyên gia chọn các công cụ riêng tư, phía khách hàng của chúng tôi mà không có giới hạn quét hoặc hết hạn quét ẩn."
     },
     "languages": {
       "seoTitle": "Ngôn ngữ được hỗ trợ",
@@ -1897,7 +1898,7 @@
       "col2Title": "CreateMeQR Bảo mật phía máy khách",
       "col2Point1": "Tải trọng bất biến: Được mã hóa trực tiếp vào ma trận thô; không thể cướp được.",
       "col2Point2": "Ghi nhật ký không qua trung gian: Quét điểm-điểm trực tiếp không qua trung gian.",
-      "col2Point3": "Vĩnh viễn & Không thể phá vỡ: Không phí định kỳ, không có rủi ro hết hạn mãi mãi."
+      "col2Point3": "Vĩnh viễn & Không thể phá vỡ: Mã tĩnh không bao giờ hết hạn, không mất phí quét hoặc rủi ro tắt máy vĩnh viễn."
     },
     "barcodePhysics": {
       "badge": "Tiêu chuẩn xác minh quang học và độ tương phản vật lý",
@@ -2193,7 +2194,7 @@
     "h1": "Trình tạo mã QR có thể chỉnh sửa | Mã QR tùy chỉnh có logo miễn phí",
     "h2_1": "Tại sao xử lý phía khách hàng là tương lai của việc tạo mã QR",
     "p_1": "Trong nền kinh tế kỹ thuật số hiện đại, việc chuyển đổi liên kết, URL, thông tin xác thực WiFi và chi tiết liên hệ vCard thành mã Phản hồi nhanh (QR) có độ chính xác cao đòi hỏi độ tin cậy, tốc độ và quyền riêng tư tuyệt đối. Các trình tạo mã QR trực tuyến thông thường thường định tuyến dữ liệu người dùng thông qua các máy chủ theo dõi của bên thứ ba, làm lộ các liên kết nội bộ nhạy cảm và thông tin xác thực của khách hàng để bị chặn. Hơn nữa, nhiều trình tạo miễn phí áp đặt các giới hạn quét nhân tạo hoặc đưa vào bộ hẹn giờ hết hạn để phá vỡ tài liệu tiếp thị được in sau một thời gian dùng thử.",
-    "p_2": "Trình tạo của chúng tôi về cơ bản loại bỏ các lỗ hổng này thông qua kết xuất trình duyệt phía máy khách 100%. Được hỗ trợ bởi các thuật toán vectơ HTML5 Canvas và WebAssembly nâng cao, công cụ của chúng tôi xử lý các liên kết theo dõi phức tạp, thư mục Google Drive, thực đơn nhà hàng và cổng thanh toán cục bộ trên thiết bị của bạn trong vòng chưa đầy 12 mili giây. Dữ liệu bí mật của bạn không bao giờ đi qua máy chủ đám mây hoặc cơ sở dữ liệu. Hơn nữa, mọi mã QR được tạo là vĩnh viễn, tĩnh và được đảm bảo quét không giới hạn số lần mà không có hình mờ hoặc tường phí đăng ký.",
+    "p_2": "Trình tạo của chúng tôi về cơ bản loại bỏ các lỗ hổng này thông qua kết xuất trình duyệt phía máy khách 100%. Được hỗ trợ bởi các thuật toán vectơ HTML5 Canvas và WebAssembly nâng cao, công cụ của chúng tôi xử lý các liên kết theo dõi phức tạp, thư mục Google Drive, thực đơn nhà hàng và cổng thanh toán cục bộ trên thiết bị của bạn trong vòng chưa đầy 12 mili giây. Dữ liệu bí mật của bạn không bao giờ đi qua máy chủ đám mây hoặc cơ sở dữ liệu. Hơn nữa, mọi mã QR được tạo là vĩnh viễn, tĩnh và được đảm bảo quét không giới hạn số lần mà không có hình mờ hoặc hết hạn ẩn.",
     "h2_2": "So sánh thực nghiệm: Trình tạo QR phía máy khách và phía máy chủ kế thừa",
     "p_3": "Khi đánh giá các công cụ tạo mã QR để tiếp thị doanh nghiệp, thực đơn khách sạn và đóng gói sản phẩm, các điểm chuẩn kỹ thuật cho thấy sự chênh lệch đáng kể về hiệu suất giữa kiến trúc phía máy khách và các công cụ phía máy chủ cũ.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "Hủy bỏ"
     },
     "signInToAccount": "Đăng nhập vào tài khoản của bạn"
-  }
+  },
+  "embedWhy1": "Các công cụ cốt lõi miễn phí cho người dùng của bạn với mã tĩnh vĩnh viễn"
 }

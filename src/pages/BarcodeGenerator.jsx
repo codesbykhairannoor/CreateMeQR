@@ -673,7 +673,7 @@ export default function BarcodeGenerator() {
               </li>
               <li className="flex items-start gap-4">
                 <CheckCircle2 className="w-6 h-6 text-blue-500 shrink-0" />
-                <span className="font-bold text-slate-700 dark:text-slate-300">{t("barcode.features.mfgList3", "100% Free: No subscriptions for basic generation.")}</span>
+                <span className="font-bold text-slate-700 dark:text-slate-300">{t("barcode.features.mfgList3", "Free Standard PNG: No subscription required for basic 1D barcodes.")}</span>
               </li>
             </ul>
           </div>

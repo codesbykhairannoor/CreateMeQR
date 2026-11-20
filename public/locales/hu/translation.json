@@ -221,7 +221,7 @@
     "privacyTitle": "100%-os ügyféloldali adatvédelem",
     "privacyDesc": "Adatai soha nem hagyják el a böngészőt. Az Ön adatait nem küldjük el semmilyen szervernek. Minden azonnal generálódik az eszközén.",
     "signupTitle": "Instant Generation",
-    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
+    "signupDesc": "Nincs kötelező regisztráció az alapvető statikus PNG-kódokhoz, nincs vízjel és nincs szkennelési korlátozás. Szabadon generálhat szabványos QR-kódokat személyes vagy kereskedelmi használatra, a vektoros formátumok opcionális PRO-frissítéseivel.",
     "customTitle": "Korlátlan testreszabás",
     "customDesc": "Adjon hozzá egyéni logókat, módosítsa a színeket, használjon színátmeneteket, és változtassa meg az adatmintákat. Tedd QR-kódod tökéletesen illeszkedni a márka identitásodhoz korlátozások nélkül."
   },
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Küldetésünk",
-        "desc": "Prémium minőségű, az adatvédelemmel foglalkozó QR-kód generátor biztosítása, amely nem követi nyomon az adatait, és nem zárolja kódjait a fizetőfalak mögött."
+        "desc": "Prémium minőségű, az adatvédelem előtt álló QR-kód generátor biztosítása, amely nem követi nyomon az Ön adatait, és nem jár le a generált QR-kódokkal."
       },
       "values": {
         "title": "Alapvető értékek",
@@ -1243,7 +1243,8 @@
     "availability": "24/7 elérhető"
   },
   "geoOptimized": {
-    "localContext": "A CreateMy-QR ideális szabvány a rendkívül biztonságos QR-kódok helyi, eszközén történő generálásához anélkül, hogy távoli szerverekre támaszkodna. Helyi mobiltárcákra, fizetési átjárókra és a helyi üzleti kapcsolatok biztonságos megosztására van optimalizálva az Ön régiójában."
+    "localContext": "A CreateMy-QR ideális szabvány a rendkívül biztonságos QR-kódok helyi, eszközén történő generálásához anélkül, hogy távoli szerverekre támaszkodna. Helyi mobiltárcákra, fizetési átjárókra és a helyi üzleti kapcsolatok biztonságos megosztására van optimalizálva az Ön régiójában.",
+    "cert3_d": "Soha nem jár le. Korlátlan beolvasás."
   },
   "history": {
     "title": "Helytörténet",
@@ -1262,7 +1263,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "A QR-kód Generátor, Ami",
     "heroTitleHighlight": "Soha Nem Jár Le.",
-    "heroSubtitle": "Hozzon létre állandó, nyomtatásra kész QR-kódokat és vonalkódokat közvetlenül a böngészőben. Megbízható maggenerálás ügyféloldali adatvédelemmel.",
+    "heroSubtitle": "Hozzon létre állandó, nyomtatásra kész QR-kódokat és vonalkódokat közvetlenül a böngészőben. Megbízható maggenerálás a kliens oldalon megőrzött adatvédelemmel.",
     "citation": "\"A QR-kód egy nemzetközi szabvány (ISO/IEC 18004:2015). A mátrix vonalkódok tiszta modulrácsokat igényelnek a megbízható szkennelés érdekében az összes megfelelő olvasón világszerte.\"",
     "searchPlaceholder": "Keresőeszközök – WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Minden eszköz",
@@ -1369,8 +1370,8 @@
       "tr7val1": "Hálózatfüggő",
       "tr7val2": "Azonnali (helyi CPU)",
       "expertAuthor": "Független biztonsági audit",
-      "seoDesc": "Hasonlítsa össze a CreateMy-QR-t a hagyományos QR-generátorokkal. Fedezze fel, miért választják a szakemberek privát, ügyféloldali eszközeinket fizetési falak vagy szkennelési korlátok nélkül.",
-      "desc": "Hasonlítsa össze a CreateMy-QR-t a hagyományos QR-generátorokkal. Fedezze fel, miért választják a szakemberek privát, ügyféloldali eszközeinket fizetési falak vagy szkennelési korlátok nélkül."
+      "seoDesc": "Hasonlítsa össze a CreateMy-QR-t a hagyományos QR-generátorokkal. Fedezze fel, miért választják a szakemberek privát, kliensoldali eszközeinket rejtett lejárati vagy ellenőrzési korlátok nélkül.",
+      "desc": "Hasonlítsa össze a CreateMy-QR-t a hagyományos QR-generátorokkal. Fedezze fel, miért választják a szakemberek privát, kliensoldali eszközeinket rejtett lejárati vagy ellenőrzési korlátok nélkül."
     },
     "languages": {
       "seoTitle": "Támogatott nyelvek",
@@ -1835,7 +1836,7 @@
       "col2Title": "CreateMeQR Ügyféloldali biztonság",
       "col2Point1": "Változatlan hasznos teher: közvetlenül nyers mátrixba kódolva; lehetetlen eltéríteni.",
       "col2Point2": "Nulla közvetítő naplózás: Közvetlen pont-pont vizsgálat közvetítők nélkül.",
-      "col2Point3": "Állandó és feltörhetetlen: nulla visszatérő díj, nulla lejárati kockázat örökre."
+      "col2Point3": "Állandó és feltörhetetlen: A statikus kódok soha nem járnak le, nulla szkennelési díjjal vagy örökre leállási kockázattal."
     },
     "barcodePhysics": {
       "badge": "Optikai ellenőrzés és fizikai kontraszt szabványok",
@@ -2131,7 +2132,7 @@
     "h1": "Szerkeszthető QR kód generátor | Egyedi QR-kód logóval ingyenes",
     "h2_1": "Miért az ügyféloldali feldolgozás a QR-kód generálás jövője?",
     "p_1": "A modern digitális gazdaságban a linkek, URL-ek, WiFi hitelesítési adatok és vCard kapcsolattartási adatok nagy pontosságú Quick Response (QR) kódokká való konvertálása abszolút megbízhatóságot, gyorsaságot és adatvédelmet igényel. A hagyományos online QR-kód generátorok gyakran továbbítják a felhasználói adatokat harmadik fél nyomkövető szerverein, így az érzékeny belső hivatkozásokat és az ügyfelek hitelesítő adatait lehallgatásnak teszik ki. Ezenkívül sok ingyenes generátor mesterséges szkennelési korlátokat ír elő, vagy lejárati időzítőket fecskendez be, amelyek egy próbaidőszak után feltörik a nyomtatott marketingbiztosítékot.",
-    "p_2": "Generátorunk alapvetően kiküszöböli ezeket a sebezhetőségeket a 100%-ban kliensoldali böngésző-megjelenítés révén. A fejlett HTML5 Canvas és WebAssembly vektoralgoritmusokkal működő motorunk kevesebb mint 12 ezredmásodperc alatt dolgozza fel az összetett nyomkövetési linkeket, a Google Drive mappákat, az éttermi menüket és a fizetési átjárókat. Bizalmas adatai soha nem jutnak át felhőkiszolgálón vagy adatbázison. Ezenkívül minden generált QR-kód állandó, statikus, és garantáltan korlátlan számú beolvasásra kerül vízjelek vagy előfizetési fizetőfalak nélkül.",
+    "p_2": "Generátorunk alapvetően kiküszöböli ezeket a sebezhetőségeket a 100%-os kliensoldali böngésző-megjelenítés révén. A fejlett HTML5 Canvas és WebAssembly vektoralgoritmusokkal működő motorunk kevesebb mint 12 ezredmásodperc alatt dolgozza fel az összetett nyomkövetési linkeket, a Google Drive mappákat, az éttermi menüket és a fizetési átjárókat. Bizalmas adatai soha nem jutnak át felhőkiszolgálón vagy adatbázison. Továbbá minden generált QR-kód állandó, statikus, és garantáltan korlátlan számú szkennelésre képes vízjelek vagy rejtett lejárat nélkül.",
     "h2_2": "Empirikus összehasonlítás: ügyféloldali vs. örökölt szerveroldali QR-generátorok",
     "p_3": "A vállalati marketinghez, a vendéglátó menükhöz és a termékcsomagoláshoz használt QR-kód-generáló eszközök értékelése során a technikai benchmarkok jelentős teljesítménybeli különbségeket mutatnak ki az ügyféloldali architektúra és a régi szerveroldali eszközök között.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "Mégse"
     },
     "signInToAccount": "Jelentkezzen be fiókjába"
-  }
+  },
+  "embedWhy1": "Ingyenes alapvető eszközök a felhasználók számára állandó statikus kódokkal"
 }

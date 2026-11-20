@@ -37,16 +37,21 @@ export default function SignOutConfirmModal({ isOpen, onClose, onConfirm }) {
 
   const modalContent = (
     <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in"
-      onClick={activeClose}
+      className="fixed inset-0 z-[9999] overflow-y-auto"
       role="dialog"
       aria-modal="true"
       aria-labelledby="sign-out-modal-title"
     >
       <div
-        className="w-full max-w-sm sm:max-w-md bg-white dark:bg-[#081226] rounded-3xl shadow-2xl border border-slate-200 dark:border-[#102040] p-6 relative overflow-hidden text-slate-900 dark:text-white animate-scale-up"
-        onClick={(e) => e.stopPropagation()}
-      >
+        onClick={activeClose}
+        className="fixed inset-0 bg-slate-950/75 backdrop-blur-md animate-fade-in transition-opacity"
+        aria-hidden="true"
+      />
+      <div className="flex min-h-full items-center justify-center p-4 sm:p-6 text-center">
+        <div
+          className="relative w-full max-w-sm sm:max-w-md my-8 bg-white dark:bg-[#081226] rounded-3xl shadow-2xl border border-slate-200 dark:border-[#102040] p-6 text-left overflow-hidden text-slate-900 dark:text-white animate-fade-in-up"
+          onClick={(e) => e.stopPropagation()}
+        >
         {/* Header with Icon and Title */}
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-3">
@@ -120,6 +125,7 @@ export default function SignOutConfirmModal({ isOpen, onClose, onConfirm }) {
         </div>
       </div>
     </div>
+  </div>
   );
 
   return createPortal(modalContent, document.body);

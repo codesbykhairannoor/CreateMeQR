@@ -221,7 +221,7 @@
     "privacyTitle": "100% Confidentialité Côté Client",
     "privacyDesc": "Vos données ne quittent jamais votre navigateur. Nous n'envoyons aucune information à un serveur. Tout est généré instantanément sur votre appareil.",
     "signupTitle": "Génération Instantanée",
-    "signupDesc": "Aucun frais caché sur les outils de base, aucun filigrane et aucune inscription obligatoire pour les codes statiques individuels. Créez autant de codes que nécessaire pour vos projets personnels ou professionnels.",
+    "signupDesc": "Aucun enregistrement forcé pour les codes PNG statiques de base, aucun filigrane et aucune limite de numérisation. Générez librement des codes QR standards pour un usage personnel ou commercial, avec des mises à niveau PRO facultatives pour les formats vectoriels.",
     "customTitle": "Personnalisation Illimitée",
     "customDesc": "Ajoutez votre logo, ajustez les couleurs avec des dégradés subtils et modifiez les motifs pour correspondre parfaitement à votre identité visuelle."
   },
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Notre Mission",
-        "desc": "Fournir un générateur de codes QR haut de gamme axé sur la confidentialité, qui ne suit pas vos données et ne verrouille pas vos codes derrière des paywalls."
+        "desc": "Pour fournir un générateur de codes QR haut de gamme axé sur la confidentialité, qui ne suit pas vos données et n'expire pas vos codes QR générés."
       },
       "values": {
         "title": "Valeurs fondamentales",
@@ -1243,7 +1243,8 @@
     "availability": "Disponible 24h/24 et 7j/7"
   },
   "geoOptimized": {
-    "localContext": "CreateMy-QR est la norme idéale pour générer localement des codes QR hautement sécurisés sur votre appareil sans recourir à des serveurs distants. Il est optimisé pour les portefeuilles mobiles locaux, les passerelles de paiement et le partage sécurisé de contacts professionnels locaux dans votre région."
+    "localContext": "CreateMy-QR est la norme idéale pour générer localement des codes QR hautement sécurisés sur votre appareil sans recourir à des serveurs distants. Il est optimisé pour les portefeuilles mobiles locaux, les passerelles de paiement et le partage sécurisé de contacts professionnels locaux dans votre région.",
+    "cert3_d": "N'expire jamais. Analyses illimitées."
   },
   "history": {
     "title": "Histoire locale",
@@ -1324,7 +1325,7 @@
     "badge": "ISO/IEC 18004 · Confidentialité Totale · Zéro Pistage · Côté Client",
     "heroTitle": "Le Générateur de QR Codes Qui",
     "heroTitleHighlight": "N'Expire Jamais.",
-    "heroSubtitle": "Créez des codes QR et des codes-barres permanents et prêts à imprimer directement dans votre navigateur. Génération de base fiable avec confidentialité côté client.",
+    "heroSubtitle": "Créez des codes QR et des codes-barres permanents et prêts à imprimer directement dans votre navigateur. Génération de base fiable avec confidentialité préservée côté client.",
     "citation": "\"Le QR Code est une norme internationale (ISO/IEC 18004:2015). Les codes-barres matriciels nécessitent des grilles de modules propres pour une lecture fiable sur tous les lecteurs conformes.\"",
     "searchPlaceholder": "Rechercher des outils — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Tous les Outils",
@@ -1431,8 +1432,8 @@
       "tr7val1": "Dépend du réseau",
       "tr7val2": "Instantané (CPU local)",
       "expertAuthor": "Audit de sécurité indépendant",
-      "seoDesc": "Comparez CreateMy-QR avec les générateurs QR traditionnels. Découvrez pourquoi les professionnels choisissent nos outils privés côté client, sans paywall ni limite d'analyse.",
-      "desc": "Comparez CreateMy-QR avec les générateurs QR traditionnels. Découvrez pourquoi les professionnels choisissent nos outils privés côté client, sans paywall ni limite d'analyse."
+      "seoDesc": "Comparez CreateMy-QR avec les générateurs QR traditionnels. Découvrez pourquoi les professionnels choisissent nos outils privés côté client, sans expiration ni limite d'analyse cachée.",
+      "desc": "Comparez CreateMy-QR avec les générateurs QR traditionnels. Découvrez pourquoi les professionnels choisissent nos outils privés côté client, sans expiration ni limite d'analyse cachée."
     },
     "languages": {
       "seoTitle": "Langues prises en charge",
@@ -1897,7 +1898,7 @@
       "col2Title": "CreateMeQR Sécurité côté client",
       "col2Point1": "Charge utile immuable : codée directement dans la matrice brute ; impossible à détourner.",
       "col2Point2": "Zéro journalisation intermédiaire : analyse directe point à point sans intermédiaire.",
-      "col2Point3": "Permanent et incassable : zéro frais récurrents, zéro risque d'expiration pour toujours."
+      "col2Point3": "Permanent et incassable : les codes statiques n'expirent jamais, sans frais d'analyse ni risque d'arrêt pour toujours."
     },
     "barcodePhysics": {
       "badge": "Normes de vérification optique et de contraste physique",
@@ -2193,7 +2194,7 @@
     "h1": "Générateur de code QR modifiable | Code QR personnalisé avec logo gratuit",
     "h2_1": "Pourquoi le traitement côté client est l'avenir de la génération de codes QR",
     "p_1": "Dans l'économie numérique moderne, la conversion de liens, d'URL, d'identifiants WiFi et de coordonnées vCard en codes QR (Quick Response) de haute précision nécessite une fiabilité, une vitesse et une confidentialité absolues. Les générateurs de codes QR en ligne conventionnels acheminent souvent les données des utilisateurs via des serveurs de suivi tiers, exposant ainsi les liens internes sensibles et les informations d'identification des clients à l'interception. En outre, de nombreux générateurs gratuits imposent des limites de numérisation artificielles ou injectent des délais d'expiration qui brisent les supports marketing imprimés après une période d'essai.",
-    "p_2": "Notre générateur élimine fondamentalement ces vulnérabilités grâce à un rendu 100 % navigateur côté client. Alimenté par des algorithmes vectoriels avancés HTML5 Canvas et WebAssembly, notre moteur traite les liens de suivi complexes, les dossiers Google Drive, les menus de restaurant et les passerelles de paiement localement sur votre appareil en moins de 12 millisecondes. Vos données confidentielles ne transitent jamais par un serveur cloud ou une base de données. De plus, chaque code QR généré est permanent, statique et garanti pour être scanné un nombre illimité de fois sans filigrane ni paywall d'abonnement.",
+    "p_2": "Notre générateur élimine fondamentalement ces vulnérabilités grâce à un rendu 100 % navigateur côté client. Alimenté par des algorithmes vectoriels avancés HTML5 Canvas et WebAssembly, notre moteur traite les liens de suivi complexes, les dossiers Google Drive, les menus de restaurant et les passerelles de paiement localement sur votre appareil en moins de 12 millisecondes. Vos données confidentielles ne transitent jamais par un serveur cloud ou une base de données. De plus, chaque code QR généré est permanent, statique et garanti pour être scanné un nombre illimité de fois sans filigrane ni expiration cachée.",
     "h2_2": "Comparaison empirique : générateurs QR côté client et anciens générateurs QR côté serveur",
     "p_3": "Lors de l'évaluation des outils de génération de codes QR pour le marketing d'entreprise, les menus d'accueil et l'emballage des produits, les références techniques révèlent des disparités de performances significatives entre l'architecture côté client et les outils côté serveur existants.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "Annuler"
     },
     "signInToAccount": "Connectez-vous à votre compte"
-  }
+  },
+  "embedWhy1": "Outils de base gratuits pour vos utilisateurs avec des codes statiques permanents"
 }

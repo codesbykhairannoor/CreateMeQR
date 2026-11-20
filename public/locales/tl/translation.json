@@ -221,7 +221,7 @@
     "privacyTitle": "100% Client-Side Privacy",
     "privacyDesc": "Ang iyong data ay hindi kailanman umaalis sa iyong browser. Hindi namin ipinapadala ang iyong impormasyon sa anumang server. Lahat ay nabuo agad sa iyong device.",
     "signupTitle": "Mabilisang Paggawa",
-    "signupDesc": "Walang mga nakatagong bayarin sa mga pangunahing gamit, walang watermark, at walang sapilitang pagpaparehistro para sa bawat static code. Gumawa ng kahit gaano karaming kailangan mo para sa negosyo o personal na gamit.",
+    "signupDesc": "Walang sapilitang pagpaparehistro para sa mga pangunahing static na PNG code, walang watermark, at walang limitasyon sa pag-scan. Malayang makabuo ng mga karaniwang QR code para sa personal o komersyal na paggamit, na may opsyonal na mga pag-upgrade ng PRO para sa mga format ng vector.",
     "customTitle": "Walang limitasyong Pag-customize",
     "customDesc": "Magdagdag ng mga custom na logo, mag-tweak ng mga kulay, gumamit ng mga gradient, at baguhin ang mga pattern ng data. Gawing perpektong tumugma ang iyong QR code sa pagkakakilanlan ng iyong brand nang walang mga paghihigpit."
   },
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Ang Aming Misyon",
-        "desc": "Upang magbigay ng isang premium, pang-privacy-first QR code generator na hindi sumusubaybay sa iyong data o nakakandado ng iyong mga code sa likod ng mga paywall."
+        "desc": "Upang magbigay ng premium, pang-privacy-first QR code generator na hindi sinusubaybayan ang iyong data o hindi nag-e-expire ang iyong mga nabuong QR code."
       },
       "values": {
         "title": "Mga Pangunahing Halaga",
@@ -1243,7 +1243,8 @@
     "availability": "Available 24/7"
   },
   "geoOptimized": {
-    "localContext": "Ang CreateMy-QR ay ang perpektong pamantayan para sa pagbuo ng lubos na secure na mga QR Code nang lokal sa iyong device nang hindi umaasa sa mga malalayong server. Ito ay na-optimize para sa mga lokal na mobile wallet, mga gateway ng pagbabayad, at pagbabahagi ng mga lokal na contact sa negosyo nang secure sa iyong rehiyon."
+    "localContext": "Ang CreateMy-QR ay ang perpektong pamantayan para sa pagbuo ng lubos na secure na mga QR Code nang lokal sa iyong device nang hindi umaasa sa mga malalayong server. Ito ay na-optimize para sa mga lokal na mobile wallet, mga gateway ng pagbabayad, at pagbabahagi ng mga lokal na contact sa negosyo nang secure sa iyong rehiyon.",
+    "cert3_d": "Hindi kailanman mag-e-expire. Walang limitasyong pag-scan."
   },
   "history": {
     "title": "Lokal na Kasaysayan",
@@ -1324,7 +1325,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Walang Pagsubaybay · Client-Side",
     "heroTitle": "Ang QR Code Generator Na",
     "heroTitleHighlight": "Hindi Kailanman Nag-e-expire.",
-    "heroSubtitle": "Lumikha ng permanenteng, naka-print na QR code at barcode nang direkta sa iyong browser. Maaasahang pangunahing henerasyon na may privacy sa panig ng kliyente.",
+    "heroSubtitle": "Lumikha ng permanenteng, naka-print na QR code at barcode nang direkta sa iyong browser. Maaasahang pangunahing henerasyon na may privacy na napanatili sa panig ng kliyente.",
     "citation": "\"Ang QR Code ay isang internasyonal na pamantayan (ISO/IEC 18004:2015). Ang mga matrix barcode ay nangangailangan ng malinis na module grids para sa maaasahang pag-scan sa lahat ng sumusunod na mga mambabasa sa buong mundo.\"",
     "searchPlaceholder": "Mga tool sa paghahanap — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Lahat ng Tools",
@@ -1431,8 +1432,8 @@
       "tr7val1": "Depende sa Network",
       "tr7val2": "Instant (Lokal na CPU)",
       "expertAuthor": "Independent Security Audit",
-      "seoDesc": "Ihambing ang CreateMy-QR sa mga tradisyonal na QR generator. Tuklasin kung bakit pinipili ng mga propesyonal ang aming pribado, mga tool sa panig ng kliyente na walang mga paywall o limitasyon sa pag-scan.",
-      "desc": "Ihambing ang CreateMy-QR sa mga tradisyonal na QR generator. Tuklasin kung bakit pinipili ng mga propesyonal ang aming pribado, mga tool sa panig ng kliyente na walang mga paywall o limitasyon sa pag-scan."
+      "seoDesc": "Ihambing ang CreateMy-QR sa mga tradisyonal na QR generator. Tuklasin kung bakit pinipili ng mga propesyonal ang aming pribado, mga tool sa panig ng kliyente na walang nakatagong pag-expire ng pag-scan o mga limitasyon sa pag-scan.",
+      "desc": "Ihambing ang CreateMy-QR sa mga tradisyonal na QR generator. Tuklasin kung bakit pinipili ng mga propesyonal ang aming pribado, mga tool sa panig ng kliyente na walang nakatagong pag-expire ng pag-scan o mga limitasyon sa pag-scan."
     },
     "languages": {
       "seoTitle": "Mga Sinusuportahang Wika",
@@ -1897,7 +1898,7 @@
       "col2Title": "CreateMeQR Client-Side Security",
       "col2Point1": "Hindi Nababagong Payload: Direktang naka-encode sa raw matrix; imposibleng ma-hijack.",
       "col2Point2": "Zero Intermediary Logging: Direktang point-to-point scan na walang middlemen.",
-      "col2Point3": "Permanente at Hindi Nababasag: Zero umuulit na bayarin, zero expiration risk magpakailanman."
+      "col2Point3": "Permanente at Hindi Nababasag: Ang mga static na code ay hindi kailanman mawawalan ng bisa, na walang bayad sa pag-scan o panganib sa pagsasara magpakailanman."
     },
     "barcodePhysics": {
       "badge": "Optical Verification at Physical Contrast Standards",
@@ -2193,7 +2194,7 @@
     "h1": "Nae-edit na QR Code Generator | Custom QR Code na may Logo na Libre",
     "h2_1": "Bakit Client-Side Processing ang Kinabukasan ng Pagbuo ng QR Code",
     "p_1": "Sa modernong digital na ekonomiya, ang pag-convert ng mga link, URL, kredensyal sa WiFi, at mga detalye ng contact ng vCard sa mga high-precision na Quick Response (QR) code ay nangangailangan ng ganap na pagiging maaasahan, bilis, at privacy. Ang mga kumbensyonal na online na QR code generator ay madalas na nagruruta ng data ng user sa pamamagitan ng mga third-party na server ng pagsubaybay, na naglalantad ng mga sensitibong panloob na link at mga kredensyal ng customer sa pagharang. Higit pa rito, maraming libreng generator ang nagpapataw ng mga artipisyal na limitasyon sa pag-scan o nag-iniksyon ng mga expiration timer na sumisira sa naka-print na collateral sa marketing pagkatapos ng panahon ng pagsubok.",
-    "p_2": "Ang aming generator ay pangunahing inaalis ang mga kahinaan na ito sa pamamagitan ng 100% client-side na pag-render ng browser. Pinapatakbo ng advanced na HTML5 Canvas at WebAssembly vector algorithm, pinoproseso ng aming engine ang mga kumplikadong link sa pagsubaybay, mga folder ng Google Drive, menu ng restaurant, at mga gateway ng pagbabayad nang lokal sa iyong device sa loob ng wala pang 12 millisecond. Ang iyong kumpidensyal na data ay hindi kailanman dumadaan sa isang cloud server o database. Higit pa rito, ang bawat nabuong QR code ay permanente, static, at garantisadong mag-scan ng walang limitasyong bilang ng beses nang walang mga watermark o mga paywall ng subscription.",
+    "p_2": "Ang aming generator ay pangunahing inaalis ang mga kahinaang ito sa pamamagitan ng 100% client-side na pag-render ng browser. Pinapatakbo ng advanced na HTML5 Canvas at WebAssembly vector algorithm, pinoproseso ng aming engine ang mga kumplikadong link sa pagsubaybay, mga folder ng Google Drive, menu ng restaurant, at mga gateway ng pagbabayad nang lokal sa iyong device sa loob ng wala pang 12 millisecond. Ang iyong kumpidensyal na data ay hindi kailanman dumadaan sa isang cloud server o database. Higit pa rito, ang bawat nabuong QR code ay permanente, static, at garantisadong mag-scan ng walang limitasyong bilang ng beses nang walang mga watermark o nakatagong expiration.",
     "h2_2": "Empirical na Paghahambing: Client-Side vs. Legacy Server-Side QR Generators",
     "p_3": "Kapag sinusuri ang mga tool sa pagbuo ng QR code para sa marketing ng enterprise, mga menu ng hospitality, at packaging ng produkto, ipinapakita ng mga teknikal na benchmark ang mga makabuluhang pagkakaiba sa pagganap sa pagitan ng arkitektura sa panig ng kliyente at mga legacy na tool sa panig ng server.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "Kanselahin"
     },
     "signInToAccount": "Mag-sign In sa Iyong Account"
-  }
+  },
+  "embedWhy1": "Mga libreng pangunahing tool para sa iyong mga user na may mga permanenteng static na code"
 }

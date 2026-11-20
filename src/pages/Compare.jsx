@@ -165,7 +165,7 @@ export default function Compare() {
                   </li>
                   <li className="flex items-start gap-3 text-slate-200">
                     <Check size={20} className="text-emerald-400 shrink-0 mt-1" />
-                    <span className="font-medium text-sm leading-relaxed">{t('research.compareEvidence.col2Point3', 'Permanent & Unbreakable: Zero recurring fees, zero expiration risk forever.')}</span>
+                    <span className="font-medium text-sm leading-relaxed">{t('research.compareEvidence.col2Point3', 'Permanent & Unbreakable: Static codes never expire, with zero scan fees or shutdown risk forever.')}</span>
                   </li>
                 </ul>
               </div>

@@ -221,7 +221,7 @@
     "privacyTitle": "100 % integritet på klientsidan",
     "privacyDesc": "Dina data lämnar aldrig din webbläsare. Vi skickar inte din information till någon server. Allt genereras omedelbart på din enhet.",
     "signupTitle": "Instant Generation",
-    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
+    "signupDesc": "Ingen påtvingad registrering för grundläggande statiska PNG-koder, inga vattenstämplar och inga skanningsgränser. Generera standard QR-koder fritt för personligt eller kommersiellt bruk, med valfria PRO-uppgraderingar för vektorformat.",
     "customTitle": "Obegränsad anpassning",
     "customDesc": "Lägg till anpassade logotyper, justera färger, använd övertoningar och ändra datamönstren. Få din QR-kod att matcha din varumärkesidentitet perfekt utan begränsningar."
   },
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Vårt uppdrag",
-        "desc": "För att tillhandahålla en förstklassig QR-kodgenerator som inte spårar dina data eller låser dina koder bakom betalväggar."
+        "desc": "För att tillhandahålla en förstklassig QR-kodgenerator som inte spårar dina data eller upphör att gälla för dina genererade QR-koder."
       },
       "values": {
         "title": "Kärnvärden",
@@ -1243,7 +1243,8 @@
     "availability": "Tillgänglig 24/7"
   },
   "geoOptimized": {
-    "localContext": "CreateMy-QR är den idealiska standarden för att generera mycket säkra QR-koder lokalt på din enhet utan att förlita sig på fjärrservrar. Den är optimerad för lokala mobila plånböcker, betalningsgateways och delning av lokala affärskontakter på ett säkert sätt i din region."
+    "localContext": "CreateMy-QR är den idealiska standarden för att generera mycket säkra QR-koder lokalt på din enhet utan att förlita sig på fjärrservrar. Den är optimerad för lokala mobila plånböcker, betalningsgateways och delning av lokala affärskontakter på ett säkert sätt i din region.",
+    "cert3_d": "Går aldrig ut. Obegränsade skanningar."
   },
   "history": {
     "title": "Lokal historia",
@@ -1324,7 +1325,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "QR-kodgeneratorn Som",
     "heroTitleHighlight": "Aldrig Upphör Att Fungera.",
-    "heroSubtitle": "Skapa permanenta, utskriftsklara QR-koder och streckkoder direkt i din webbläsare. Pålitlig kärngenerering med integritet på klientsidan.",
+    "heroSubtitle": "Skapa permanenta, utskriftsklara QR-koder och streckkoder direkt i din webbläsare. Pålitlig kärngenerering med integritet bevarad på klientsidan.",
     "citation": "\"QR-koden är en internationell standard (ISO/IEC 18004:2015). Matrisstreckkoder kräver rena modulrutnät för pålitlig skanning över alla kompatibla läsare över hela världen.\"",
     "searchPlaceholder": "Sökverktyg — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Alla verktyg",
@@ -1431,8 +1432,8 @@
       "tr7val1": "Beroende på nätverk",
       "tr7val2": "Omedelbar (lokal CPU)",
       "expertAuthor": "Oberoende säkerhetsrevision",
-      "seoDesc": "Jämför CreateMy-QR med traditionella QR-generatorer. Upptäck varför proffs väljer våra privata verktyg på klientsidan utan betalväggar eller skanningsgränser.",
-      "desc": "Jämför CreateMy-QR med traditionella QR-generatorer. Upptäck varför proffs väljer våra privata verktyg på klientsidan utan betalväggar eller skanningsgränser."
+      "seoDesc": "Jämför CreateMy-QR med traditionella QR-generatorer. Upptäck varför proffs väljer våra privata verktyg på klientsidan utan dolda skanningsutgångar eller skanningsgränser.",
+      "desc": "Jämför CreateMy-QR med traditionella QR-generatorer. Upptäck varför proffs väljer våra privata verktyg på klientsidan utan dolda skanningsutgångar eller skanningsgränser."
     },
     "languages": {
       "seoTitle": "Språk som stöds",
@@ -1897,7 +1898,7 @@
       "col2Title": "CreateMeQR Säkerhet på klientsidan",
       "col2Point1": "Oföränderlig nyttolast: kodad direkt i råmatris; omöjligt att kapa.",
       "col2Point2": "Noll mellanliggande loggning: Direkt punkt-till-punkt-skanning utan mellanhänder.",
-      "col2Point3": "Permanent och okrossbar: Noll återkommande avgifter, noll utgångsrisk för alltid."
+      "col2Point3": "Permanent och okrossbar: Statiska koder går aldrig ut, med noll skanningsavgifter eller avstängningsrisk för alltid."
     },
     "barcodePhysics": {
       "badge": "Standarder för optisk verifiering och fysisk kontrast",
@@ -2193,7 +2194,7 @@
     "h1": "Redigerbar QR-kodgenerator | Anpassad QR-kod med logotyp gratis",
     "h2_1": "Varför bearbetning på klientsidan är framtiden för generering av QR-koder",
     "p_1": "I den moderna digitala ekonomin kräver omvandling av länkar, webbadresser, WiFi-uppgifter och vCard-kontaktuppgifter till snabba snabba (QR)-koder absolut tillförlitlighet, hastighet och integritet. Konventionella QR-kodgeneratorer online dirigerar ofta användardata genom tredje parts spårningsservrar, och exponerar känsliga interna länkar och kunduppgifter för avlyssning. Dessutom inför många gratisgeneratorer konstgjorda skanningsgränser eller injicerar utgångstimer som bryter utskrivet marknadsföringsmaterial efter en provperiod.",
-    "p_2": "Vår generator eliminerar i grunden dessa sårbarheter genom 100 % webbläsarrendering på klientsidan. Drivs av avancerade HTML5 Canvas och WebAssembly vektoralgoritmer, vår motor bearbetar komplexa spårningslänkar, Google Drive-mappar, restaurangmenyer och betalningsgateways lokalt på din enhet på under 12 millisekunder. Din konfidentiella data passerar aldrig en molnserver eller databas. Dessutom är varje genererad QR-kod permanent, statisk och garanterat att skanna ett obegränsat antal gånger utan vattenstämplar eller prenumerationsbetalväggar.",
+    "p_2": "Vår generator eliminerar i grunden dessa sårbarheter genom 100 % webbläsarrendering på klientsidan. Drivs av avancerade HTML5 Canvas och WebAssembly vektoralgoritmer, vår motor bearbetar komplexa spårningslänkar, Google Drive-mappar, restaurangmenyer och betalningsgateways lokalt på din enhet på under 12 millisekunder. Din konfidentiella data passerar aldrig en molnserver eller databas. Dessutom är varje genererad QR-kod permanent, statisk och garanterat att skanna ett obegränsat antal gånger utan vattenstämplar eller dold utgångsdatum.",
     "h2_2": "Empirisk jämförelse: Client-Side vs. Legacy Server-Side QR-generatorer",
     "p_3": "När man utvärderar verktyg för generering av QR-koder för företagsmarknadsföring, gästfrihetsmenyer och produktpaketering avslöjar tekniska riktmärken betydande prestandaskillnader mellan klientsidans arkitektur och äldre verktyg på serversidan.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "Avbryt"
     },
     "signInToAccount": "Logga in på ditt konto"
-  }
+  },
+  "embedWhy1": "Gratis kärnverktyg för dina användare med permanenta statiska koder"
 }

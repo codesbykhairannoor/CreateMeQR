@@ -221,7 +221,7 @@
     "privacyTitle": "100% confidențialitate la nivelul clientului",
     "privacyDesc": "Datele tale nu ies niciodată din browser. Nu trimitem informațiile dumneavoastră către niciun server. Totul este generat instantaneu pe dispozitivul dvs.",
     "signupTitle": "Instant Generation",
-    "signupDesc": "No hidden paywalls on core tools, no watermarks, and no forced registration for individual static codes. Generate as many codes as you need for commercial or personal use.",
+    "signupDesc": "Fără înregistrare forțată pentru codurile PNG statice de bază, fără filigrane și fără limite de scanare. Generați coduri QR standard în mod liber pentru uz personal sau comercial, cu upgrade-uri opționale PRO pentru formate vectoriale.",
     "customTitle": "Personalizare nelimitată",
     "customDesc": "Adăugați sigle personalizate, modificați culorile, utilizați degrade și modificați modelele de date. Faceți codul dvs. QR să se potrivească perfect cu identitatea mărcii dvs., fără restricții."
   },
@@ -1010,7 +1010,7 @@
       },
       "mission": {
         "title": "Misiunea noastră",
-        "desc": "Pentru a oferi un generator de coduri QR premium, pe primul loc pentru confidențialitate, care nu vă urmărește datele și nu vă blochează codurile în spatele pereților de plată."
+        "desc": "Pentru a oferi un generator de coduri QR premium, pe primul loc pentru confidențialitate, care nu vă urmărește datele sau nu expiră codurile QR generate."
       },
       "values": {
         "title": "Valorile de bază",
@@ -1243,7 +1243,8 @@
     "availability": "Disponibil 24/7"
   },
   "geoOptimized": {
-    "localContext": "CreateMy-QR este standardul ideal pentru generarea locală de coduri QR foarte sigure pe dispozitivul dvs., fără a vă baza pe servere la distanță. Este optimizat pentru portofelele mobile locale, gateway-uri de plată și partajarea în siguranță a contactelor de afaceri locale din regiunea dvs."
+    "localContext": "CreateMy-QR este standardul ideal pentru generarea locală de coduri QR foarte sigure pe dispozitivul dvs., fără a vă baza pe servere la distanță. Este optimizat pentru portofelele mobile locale, gateway-uri de plată și partajarea în siguranță a contactelor de afaceri locale din regiunea dvs.",
+    "cert3_d": "Nu expiră niciodată. Scanări nelimitate."
   },
   "history": {
     "title": "Istoria locală",
@@ -1262,7 +1263,7 @@
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "Generatorul de Coduri QR Care",
     "heroTitleHighlight": "Nu Expiră Niciodată.",
-    "heroSubtitle": "Creați coduri QR și coduri de bare permanente, gata de imprimat, direct în browser. Generare de bază de încredere cu confidențialitate la nivelul clientului.",
+    "heroSubtitle": "Creați coduri QR și coduri de bare permanente, gata de imprimat direct în browser. Generare de bază de încredere cu confidențialitate păstrată pe partea clientului.",
     "citation": "„Codul QR este un standard internațional (ISO/IEC 18004:2015). Codurile de bare Matrix necesită grile de module curate pentru scanare fiabilă pentru toți cititorii conformi din întreaga lume.”",
     "searchPlaceholder": "Instrumente de căutare — WhatsApp, WiFi, vCard, PDF...",
     "allToolsHeading": "Toate instrumentele",
@@ -1369,8 +1370,8 @@
       "tr7val1": "Depinde de Rețea",
       "tr7val2": "Instantaneu (procesor local)",
       "expertAuthor": "Audit independent de securitate",
-      "seoDesc": "Comparați CreateMy-QR cu generatoarele tradiționale de QR. Descoperiți de ce profesioniștii aleg instrumentele noastre private, pe partea clientului, fără pereți de plată sau limite de scanare.",
-      "desc": "Comparați CreateMy-QR cu generatoarele tradiționale de QR. Descoperiți de ce profesioniștii aleg instrumentele noastre private, pe partea clientului, fără pereți de plată sau limite de scanare."
+      "seoDesc": "Comparați CreateMy-QR cu generatoarele tradiționale de QR. Descoperiți de ce profesioniștii aleg instrumentele noastre private, pe partea clientului, fără expirare ascunsă a scanării sau limite de scanare.",
+      "desc": "Comparați CreateMy-QR cu generatoarele tradiționale de QR. Descoperiți de ce profesioniștii aleg instrumentele noastre private, pe partea clientului, fără expirare sau limite de scanare ascunse."
     },
     "languages": {
       "seoTitle": "Limbi acceptate",
@@ -1835,7 +1836,7 @@
       "col2Title": "CreateMeQR Securitate pe partea clientului",
       "col2Point1": "Sarcină utilă imuabilă: codificat direct în matrice brută; imposibil de deturnat.",
       "col2Point2": "Înregistrare intermediară zero: scanare directă punct la punct, fără intermediari.",
-      "col2Point3": "Permanentă și de neîntrerupt: zero taxe recurente, zero risc de expirare pentru totdeauna."
+      "col2Point3": "Permanent și de neîntrerupt: codurile statice nu expiră niciodată, cu taxe de scanare zero sau risc de oprire pentru totdeauna."
     },
     "barcodePhysics": {
       "badge": "Verificare optică și standarde de contrast fizic",
@@ -2131,7 +2132,7 @@
     "h1": "Generator de coduri QR editabil | Cod QR personalizat cu logo gratuit",
     "h2_1": "De ce procesarea la nivelul clientului este viitorul generării de coduri QR",
     "p_1": "În economia digitală modernă, convertirea linkurilor, URL-urilor, acreditărilor WiFi și detaliilor de contact vCard în coduri de răspuns rapid (QR) de înaltă precizie necesită fiabilitate, viteză și confidențialitate absolute. Generatoarele convenționale de coduri QR online direcționează adesea datele utilizatorului prin servere de urmărire terță parte, expunând interceptării legăturilor interne sensibile și acreditărilor clienților. În plus, mulți generatori gratuiti impun limite de scanare artificială sau injectează cronometre de expirare care încalcă garanția de marketing tipărită după o perioadă de probă.",
-    "p_2": "Generatorul nostru elimină în mod fundamental aceste vulnerabilități prin randarea browserului 100% pe partea clientului. Produs de algoritmi avansati HTML5 Canvas și WebAssembly vectorial, motorul nostru procesează link-uri complexe de urmărire, dosare Google Drive, meniuri de restaurante și gateway-uri de plată local pe dispozitivul dvs. în mai puțin de 12 milisecunde. Datele dumneavoastră confidențiale nu traversează niciodată un server cloud sau o bază de date. În plus, fiecare cod QR generat este permanent, static și garantat pentru a scana un număr nelimitat de ori fără filigrane sau pereți de plată pentru abonament.",
+    "p_2": "Generatorul nostru elimină în mod fundamental aceste vulnerabilități prin randarea browserului 100% pe partea clientului. Produs de algoritmi avansati HTML5 Canvas și WebAssembly vectorial, motorul nostru procesează link-uri complexe de urmărire, dosare Google Drive, meniuri de restaurante și gateway-uri de plată local pe dispozitivul dvs. în mai puțin de 12 milisecunde. Datele dumneavoastră confidențiale nu traversează niciodată un server cloud sau o bază de date. În plus, fiecare cod QR generat este permanent, static și garantat pentru a scana un număr nelimitat de ori fără filigrane sau expirare ascunsă.",
     "h2_2": "Comparație empirică: generatoare QR din partea clientului vs",
     "p_3": "Atunci când se evaluează instrumentele de generare a codurilor QR pentru marketingul întreprinderii, meniurile de ospitalitate și ambalarea produselor, benchmark-urile tehnice dezvăluie diferențe semnificative de performanță între arhitectura clientului și instrumentele vechi de pe server.",
     "table": {
@@ -2382,5 +2383,6 @@
       "cancelBtn": "Anulează"
     },
     "signInToAccount": "Conectați-vă la contul dvs"
-  }
+  },
+  "embedWhy1": "Instrumente de bază gratuite pentru utilizatorii dvs. cu coduri statice permanente"
 }
