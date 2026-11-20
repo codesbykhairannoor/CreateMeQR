@@ -296,22 +296,14 @@ export default function BatchScanner({ defaultMode = 'all' }) {
 
   return (
     <div className="space-y-8 animate-fade-in text-slate-800 dark:text-slate-100">
-      {/* Header & Value Proposition */}
+      {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-200 dark:border-blue-900/30">
         <div>
-          <div className="flex items-center gap-2 mb-1">
-            <span className="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
-              WebAssembly High-Speed
-            </span>
-            <span className="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-              100% In-Browser Private
-            </span>
-          </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
             {t('batchScanner.title', 'Batch ZIP & Multi-Image Scanner')}
           </h2>
           <p className="text-sm text-slate-500 dark:text-slate-400 mt-1 max-w-2xl">
-            {t('batchScanner.subtitle', 'Upload a ZIP archive or multiple image files. Extract and decode all QR codes and barcodes at once via client-side WebAssembly, then export to CSV or Excel (.xlsx).')}
+            {t('batchScanner.subtitle', 'Upload a ZIP archive or multiple image files. Extract and decode all QR codes and barcodes at once, then export to CSV or Excel (.xlsx).')}
           </p>
         </div>
 
@@ -328,7 +320,7 @@ export default function BatchScanner({ defaultMode = 'all' }) {
               </p>
               <button
                 onClick={openAuthModal}
-                className="mt-2 w-full py-1.5 px-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs rounded-xl shadow transition-colors flex items-center justify-center gap-1.5"
+                className="mt-2 w-full py-1.5 px-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs rounded-xl shadow transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
               >
                 <Sparkles className="w-3.5 h-3.5" />
                 {t('batchScanner.guestSignInBtn', 'Sign In (Claim 2/Mo)')}
@@ -340,15 +332,21 @@ export default function BatchScanner({ defaultMode = 'all' }) {
                 <Crown className="w-5 h-5 text-amber-300" />
               </div>
               <div>
-                <div className="text-xs font-black uppercase tracking-wider text-blue-600 dark:text-blue-300">PRO Unlimited Active</div>
-                <div className="text-[11px] text-slate-500 dark:text-slate-400">Zero limits on batch ZIP images & exports</div>
+                <div className="text-xs font-black uppercase tracking-wider text-blue-600 dark:text-blue-300">
+                  {t('batchScanner.proUnlimitedActive', 'PRO Unlimited Active')}
+                </div>
+                <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                  {t('batchScanner.proUnlimitedDesc', 'Zero limits on batch ZIP images & exports')}
+                </div>
               </div>
             </div>
           ) : (
             <div className="bg-blue-50 dark:bg-[#0c1831] border border-blue-200 dark:border-blue-900/40 rounded-2xl p-3 text-left max-w-xs">
               <div className="flex items-center justify-between text-xs font-bold text-slate-900 dark:text-white mb-1">
-                <span>Free Monthly Quota</span>
-                <span className="text-blue-600 dark:text-blue-400">{freeBatchScanTrialsRemaining} of {FREE_BATCH_SCAN_TRIALS_MAX} Left</span>
+                <span>{t('batchScanner.freeMonthlyQuota', 'Free Monthly Quota')}</span>
+                <span className="text-blue-600 dark:text-blue-400">
+                  {freeBatchScanTrialsRemaining} / {FREE_BATCH_SCAN_TRIALS_MAX} {t('batchScanner.quotaLeft', 'Left')}
+                </span>
               </div>
               <div className="w-full bg-slate-200 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden mb-2">
                 <div
@@ -358,7 +356,7 @@ export default function BatchScanner({ defaultMode = 'all' }) {
               </div>
               <button
                 onClick={() => openProModal(t('batchScanner.featureName', 'Batch ZIP Scanner'))}
-                className="text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1"
+                className="text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 cursor-pointer"
               >
                 <Crown className="w-3 h-3 text-amber-500" />
                 {t('batchScanner.userUpgradeBtn', 'Upgrade to PRO for Unlimited')}
@@ -395,7 +393,7 @@ export default function BatchScanner({ defaultMode = 'all' }) {
             {t('batchScanner.dropzoneTitle', 'Upload a ZIP Archive or Multiple Images')}
           </h3>
           <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md mx-auto mb-8">
-            {t('batchScanner.dropzoneSubtitle', 'Upload a .zip file containing tickets, inventory labels, or receipts, or directly select dozens of image files.')}
+            {t('batchScanner.dropzoneSubtitle', 'Upload a .zip file containing tickets, inventory labels, or receipts, or directly select multiple image files.')}
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
@@ -408,7 +406,7 @@ export default function BatchScanner({ defaultMode = 'all' }) {
               className="py-3.5 px-6 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-sm rounded-2xl shadow-xl shadow-blue-600/20 transition-all flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
             >
               <Archive className="w-4 h-4" />
-              <span>{isExtractingZip ? 'Unpacking ZIP...' : t('batchScanner.btnSelectZip', 'Choose ZIP Archive')}</span>
+              <span>{isExtractingZip ? t('batchScanner.unpackingZip', 'Unpacking ZIP...') : t('batchScanner.btnSelectZip', 'Choose ZIP Archive')}</span>
             </button>
 
             <button
@@ -422,12 +420,6 @@ export default function BatchScanner({ defaultMode = 'all' }) {
               <Upload className="w-4 h-4 text-blue-500" />
               <span>{t('batchScanner.btnSelectImages', 'Select Multiple Images')}</span>
             </button>
-          </div>
-
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
-            <span className="flex items-center gap-1.5"><ShieldCheck className="w-4 h-4 text-emerald-500" /> Zero cloud uploads</span>
-            <span className="flex items-center gap-1.5"><Zap className="w-4 h-4 text-blue-500" /> Multi-core WebAssembly</span>
-            <span className="flex items-center gap-1.5"><FileSpreadsheet className="w-4 h-4 text-indigo-500" /> Instant CSV & XLSX</span>
           </div>
         </div>
       ) : (
@@ -469,21 +461,21 @@ export default function BatchScanner({ defaultMode = 'all' }) {
                 <div className="grid grid-cols-3 gap-2">
                   <button
                     onClick={() => setFormatScope('all')}
-                    className={`py-2 px-3 rounded-xl text-xs font-bold transition-all border ${formatScope === 'all' ? 'bg-blue-600 text-white border-blue-600 shadow' : 'bg-white dark:bg-[#0c1831] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-blue-900/40 hover:border-blue-500'}`}
+                    className={`py-2 px-3 rounded-xl text-xs font-bold transition-all border cursor-pointer ${formatScope === 'all' ? 'bg-blue-600 text-white border-blue-600 shadow' : 'bg-white dark:bg-[#0c1831] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-blue-900/40 hover:border-blue-500'}`}
                   >
-                    All Barcodes
+                    {t('batchScanner.scopeAll', 'All Barcodes')}
                   </button>
                   <button
                     onClick={() => setFormatScope('qr')}
-                    className={`py-2 px-3 rounded-xl text-xs font-bold transition-all border ${formatScope === 'qr' ? 'bg-blue-600 text-white border-blue-600 shadow' : 'bg-white dark:bg-[#0c1831] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-blue-900/40 hover:border-blue-500'}`}
+                    className={`py-2 px-3 rounded-xl text-xs font-bold transition-all border cursor-pointer ${formatScope === 'qr' ? 'bg-blue-600 text-white border-blue-600 shadow' : 'bg-white dark:bg-[#0c1831] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-blue-900/40 hover:border-blue-500'}`}
                   >
-                    QR Codes Only
+                    {t('batchScanner.scopeQr', 'QR Codes Only')}
                   </button>
                   <button
                     onClick={() => setFormatScope('barcode')}
-                    className={`py-2 px-3 rounded-xl text-xs font-bold transition-all border ${formatScope === 'barcode' ? 'bg-blue-600 text-white border-blue-600 shadow' : 'bg-white dark:bg-[#0c1831] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-blue-900/40 hover:border-blue-500'}`}
+                    className={`py-2 px-3 rounded-xl text-xs font-bold transition-all border cursor-pointer ${formatScope === 'barcode' ? 'bg-blue-600 text-white border-blue-600 shadow' : 'bg-white dark:bg-[#0c1831] text-slate-600 dark:text-slate-300 border-slate-200 dark:border-blue-900/40 hover:border-blue-500'}`}
                   >
-                    1D Retail Only
+                    {t('batchScanner.scope1D', '1D Retail Only')}
                   </button>
                 </div>
               </div>
@@ -568,21 +560,21 @@ export default function BatchScanner({ defaultMode = 'all' }) {
             <div className="flex items-center gap-1.5 overflow-x-auto pb-1 lg:pb-0">
               <button
                 onClick={() => setActiveFilter('all')}
-                className={`py-1.5 px-3 rounded-xl text-xs font-bold transition-colors shrink-0 ${activeFilter === 'all' ? 'bg-slate-900 dark:bg-blue-600 text-white' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
+                className={`py-1.5 px-3 rounded-xl text-xs font-bold transition-colors shrink-0 cursor-pointer ${activeFilter === 'all' ? 'bg-slate-900 dark:bg-blue-600 text-white' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
               >
-                All Rows ({results.length})
+                {t('batchScanner.filterAllRows', 'All Rows')} ({results.length})
               </button>
               <button
                 onClick={() => setActiveFilter('detected')}
-                className={`py-1.5 px-3 rounded-xl text-xs font-bold transition-colors shrink-0 ${activeFilter === 'detected' ? 'bg-emerald-600 text-white' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
+                className={`py-1.5 px-3 rounded-xl text-xs font-bold transition-colors shrink-0 cursor-pointer ${activeFilter === 'detected' ? 'bg-emerald-600 text-white' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
               >
-                Detected ({stats.totalCodes})
+                {t('batchScanner.filterDetected', 'Detected')} ({stats.totalCodes})
               </button>
               <button
                 onClick={() => setActiveFilter('none')}
-                className={`py-1.5 px-3 rounded-xl text-xs font-bold transition-colors shrink-0 ${activeFilter === 'none' ? 'bg-amber-600 text-white' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
+                className={`py-1.5 px-3 rounded-xl text-xs font-bold transition-colors shrink-0 cursor-pointer ${activeFilter === 'none' ? 'bg-amber-600 text-white' : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'}`}
               >
-                No Barcode ({results.filter(r => r.status !== 'detected').length})
+                {t('batchScanner.filterNoBarcode', 'No Barcode')} ({results.filter(r => r.status !== 'detected').length})
               </button>
             </div>
 
@@ -702,7 +694,7 @@ export default function BatchScanner({ defaultMode = 'all' }) {
                               )}
                             </div>
                           ) : (
-                            <span className="text-slate-400 italic">No readable barcode detected</span>
+                            <span className="text-slate-400 italic">{t('batchScanner.noCodeDetected', 'No readable barcode detected')}</span>
                           )}
                         </td>
                         <td className="py-3 px-4">
@@ -718,12 +710,12 @@ export default function BatchScanner({ defaultMode = 'all' }) {
                           {row.status === 'detected' ? (
                             <span className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
                               <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
-                              <span>Detected</span>
+                              <span>{t('batchScanner.statusDetected', 'Detected')}</span>
                             </span>
                           ) : (
                             <span className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-400">
                               <XCircle className="w-3.5 h-3.5 shrink-0 text-amber-500" />
-                              <span>Unreadable</span>
+                              <span>{t('batchScanner.statusUnreadable', 'Unreadable')}</span>
                             </span>
                           )}
                         </td>
