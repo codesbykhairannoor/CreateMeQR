@@ -9,7 +9,7 @@ export default function AboutUs() {
 
   return (
     <>
-<main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
+<div className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero */}
         <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">
@@ -164,7 +164,7 @@ export default function AboutUs() {
                     {t('research.aboutHeritage.card3Title', 'Client-Side Implementation')}
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400 font-medium leading-relaxed">
-                    {t('research.aboutHeritage.card3Desc', 'CreateMeQR implements standard ISO/IEC 18004 matrix generation algorithms directly in local browser memory without intermediary servers.')}
+                    {t('research.aboutHeritage.card3Desc', 'CreateMy-QR implements standard ISO/IEC 18004 matrix generation algorithms directly in local browser memory without intermediary servers.')}
                   </p>
                 </div>
                 <div className="mt-8 pt-4 border-t border-slate-100 dark:border-[#1e2d4a] text-xs font-mono text-slate-500 dark:text-slate-400">
@@ -192,7 +192,7 @@ export default function AboutUs() {
           </div>
         </section>
 
-      </main>
+      </div>
     </>
   );
 }

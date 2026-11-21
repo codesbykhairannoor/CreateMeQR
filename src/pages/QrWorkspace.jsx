@@ -1,22 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import InputForm from '../components/InputForm';
-
-// Helper for dynamic loading with error boundary
-const DynamicPseoLayout = ({ pseoUseCase }) => {
-  if (!pseoUseCase) return null;
-
-  const LayoutComponent = React.lazy(() =>
-    import(`../components/pseo-layouts/${pseoUseCase.id}.jsx`)
-      .catch(() => import('../components/pseo-layouts/DefaultLayout.jsx'))
-  );
-
-  return (
-    <React.Suspense fallback={<div className="h-40 flex items-center justify-center text-zinc-400">Loading insights...</div>}>
-      <LayoutComponent pseoUseCase={pseoUseCase} />
-    </React.Suspense>
-  );
-};
 const CustomizationPanel = React.lazy(() => import('../components/CustomizationPanel'));
 import Preview from '../components/Preview';
 
@@ -31,7 +15,7 @@ const DEFAULT_VISUALS = {
   frameOptions: { style: 'none', text: 'SCAN ME', color: '#1d4ed8', textColor: '#ffffff' }
 };
 
-export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUseCase }) {
+export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo }) {
   const { t, i18n } = useTranslation();
   const langPrefix = i18n.language && i18n.language !== 'en' ? '/' + i18n.language : '';
   const [qrData, setQrData] = useState({});
@@ -136,19 +120,6 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUs
                 )}
               </div>
             </div>
-            {pseoUseCase && pseoUseCase.infoGain && (
-              <div className="mt-8 bg-blue-50/50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-900/30 rounded-2xl p-6 shadow-sm animate-fade-in-up">
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-100 dark:bg-blue-900/50 p-2 rounded-xl shrink-0 mt-1">
-                    <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-slate-800 dark:text-slate-200 mb-1">Use Case Insight</h3>
-                    <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-[0.95rem]">{pseoUseCase.infoGain}</p>
-                  </div>
-                </div>
-              </div>
-            )}
           </div>
           <div className="lg:col-span-5 flex justify-center sticky top-24">
             <Preview qrType={qrType} qrData={qrData} visuals={visuals} hasGenerated={hasGenerated} />
@@ -171,9 +142,6 @@ export default function QrWorkspace({ qrType, setQrTypeRoute, currentSeo, pseoUs
           </a>
         </div>
       </section>
-
-      {/* pSEO Unique Layout Component (Dynamically Loaded) */}
-      <DynamicPseoLayout pseoUseCase={pseoUseCase} />
     </>
   );
 }

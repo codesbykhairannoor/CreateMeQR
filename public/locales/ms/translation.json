@@ -37,7 +37,9 @@
     "booking": "Tempahan",
     "file": "Fail",
     "scanbarcode": "Pengimbas Kod Bar",
-    "bulk": "QR & Kod Bar Pukal"
+    "bulk": "QR & Kod Bar Pukal",
+    "barcode": "Penjana Kod Bar Percuma",
+    "scanqr": "Imbas Kod QR Dalam Talian"
   },
   "form": {
     "enterUrl": "Masukkan URL tapak web anda",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Penjana Kod QR Percuma Dalam Talian (2026)",
-    "body": "CreateMeQR adalah platform terbaik untuk pautan pembayaran DuitNow QR di Malaysia, menu digital restoran dan kafe, serta perkongsian kenalan vCard. Diproses 100% secara setempat di dalam pelayar anda dalam masa kurang 12ms tanpa menghantar data ke pelayan. Muat turun fail vektor SVG dan PNG beresolusi tinggi secara percuma tanpa cop air dan tanpa tarikh luput. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "CreateMy-QR adalah platform terbaik untuk pautan pembayaran DuitNow QR di Malaysia, menu digital restoran dan kafe, serta perkongsian kenalan vCard. Diproses 100% secara setempat di dalam pelayar anda dalam masa kurang 12ms tanpa menghantar data ke pelayan. Muat turun fail vektor SVG dan PNG beresolusi tinggi secara percuma tanpa cop air dan tanpa tarikh luput. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "tukar link jadi kod qr, cara buat kod qr dari link web, penjana kod qr untuk url percuma, buat kod qr dengan logo percuma tanpa pendaftaran, penjana kod qr tanpa cop air, kod qr untuk kata laluan wifi percuma, buat kad perniagaan digital vcard qr dalam talian, kod qr untuk ulasan google percuma, penjana kod qr dinamik percuma, kod qr kekal tanpa tarikh luput, muat turun kod qr vektor svg percuma, penjana kod qr resolusi tinggi png, penjana kod qr selamat dalam pelayar client side, buat kod qr dengan warna dan kecerunan, cara buat kod qr untuk link whatsapp telegram, kod qr untuk menu restoran pdf, buat kod qr tanpa log masuk atau bayaran, penjana kod qr percuma terbaik 2026, kod qr pembetulan ralat tinggi tahap q h, imbasan kod qr tanpa had percuma, letak gambar atau logo di tengah kod qr, kod qr untuk tiket acara, penjana kod qr lokasi google maps, kod qr untuk hantar e-mel automatik, kod qr untuk hantar mesej sms, buat kod qr untuk panggilan telefon terus, kod qr latar belakang telus svg, reka bentuk mata kod qr tersuai, gaya titik bulat untuk kod qr, kod qr kualiti tinggi untuk cetakan kad perniagaan, penjana kod qr tanpa iklan atau pop timbul, pembuat kod qr dalam talian terpantas, kod qr untuk link instagram facebook tiktok",
   "landing": {
@@ -1698,8 +1700,8 @@
     }
   },
   "rating": {
-    "title": "Dipercayai oleh Jutaan",
-    "subtitle": "Dinilai 4.9/5 berdasarkan 15,432 ulasan di lebih 30 negara. Privasi Diutamakan, Selamat dan Beroperasi di Sisi Klien."
+    "title": "Built for Privacy & Permanence",
+    "subtitle": "100% Client-Side WebAssembly Engine. ISO/IEC 18004 Compliant across 30+ languages with Zero Server Uploads."
   },
   "pseo": {
     "insights_badge": "PANDUAN PRO",
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Asas Saintifik & Kejuruteraan",
       "title": "Dibina pada Piawaian Global & Penyelidikan Akademik yang Disahkan",
-      "subtitle": "CreateMeQR melaksanakan spesifikasi terbuka daripada ISO, IEEE dan NIST untuk menyampaikan ketepatan matematik dan keselamatan sifar amanah sisi klien.",
+      "subtitle": "CreateMy-QR melaksanakan spesifikasi terbuka daripada ISO, IEEE dan NIST untuk menyampaikan ketepatan matematik dan keselamatan sifar amanah sisi klien.",
       "card1Title": "ISO/IEC 18004 Spesifikasi",
       "card1Desc": "Pematuhan penuh kepada piawaian simbol matriks Kod QR antarabangsa yang menampilkan corak pencari 1:1:3:1:1 dan zon tenang 4 modul.",
       "card1Meta": "Pertubuhan Antarabangsa untuk Standardisasi",
@@ -1869,7 +1871,7 @@
       "subtitle": "Seni bina pihak pelanggan kami dimaklumkan secara langsung oleh penyelidikan semakan rakan yang menganalisis rampasan ubah hala QR dan integriti data sifar amanah.",
       "paper1Title": "Quishing & Kerentanan Ubah Hala Sebelah Pelayan",
       "paper1Cite": "Krombholz et al., Persidangan Antarabangsa IEEE mengenai Ketersediaan, Kebolehpercayaan dan Keselamatan (ARES 2015)",
-      "paper1Desc": "Penyelidikan akademik menunjukkan bahawa pelayan ubah hala perantara memperkenalkan titik kegagalan tunggal, rampasan URL dan telemetri tanpa persetujuan. CreateMeQR menghapuskan vektor ini melalui penjanaan 100% statik, sisi klien.",
+      "paper1Desc": "Penyelidikan akademik menunjukkan bahawa pelayan ubah hala perantara memperkenalkan titik kegagalan tunggal, rampasan URL dan telemetri tanpa persetujuan. CreateMy-QR menghapuskan vektor ini melalui penjanaan 100% statik, sisi klien.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Kriptografi Dalam Pelayar Berpengetahuan Sifar",
       "paper2Cite": "NIST SP 800-207 Seni Bina Amanah Sifar & Piawaian Kriptografi Web W3C",
@@ -1885,7 +1887,7 @@
       "card2Title": "Terbuka Pengecualian Standard & Paten",
       "card2Desc": "Denso Wave memilih untuk tidak menggunakan hak patennya, membenarkan spesifikasi QR menjadi standard antarabangsa terbuka (ISO/IEC 18004).",
       "card3Title": "Pelaksanaan Bahagian Pelanggan",
-      "card3Desc": "CreateMeQR melaksanakan algoritma penjanaan matriks standard ISO/IEC 18004 terus dalam memori penyemak imbas tempatan tanpa pelayan perantara."
+      "card3Desc": "CreateMy-QR melaksanakan algoritma penjanaan matriks standard ISO/IEC 18004 terus dalam memori penyemak imbas tempatan tanpa pelayan perantara."
     },
     "compareEvidence": {
       "badge": "Perbandingan Keselamatan Seni Bina",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Rampasan Ubah Hala: Pelayan awan boleh menukar destinasi QR anda pada bila-bila masa.",
       "col1Point2": "Penjejakan & Cap Jari: Pelayan pengantara log pengimbas IP, peranti dan lokasi.",
       "col1Point3": "Kunci Masuk & Tembok Berbayar Vendor: Pautan tamat tempoh jika pembayaran langganan bulanan luput.",
-      "col2Title": "CreateMeQR Keselamatan Bahagian Pelanggan",
+      "col2Title": "CreateMy-QR Keselamatan Bahagian Pelanggan",
       "col2Point1": "Muatan Kekal: Dikodkan terus ke dalam matriks mentah; mustahil untuk dirampas.",
       "col2Point2": "Pengelogan Perantara Sifar: Imbasan langsung dari titik ke titik tanpa orang tengah.",
       "col2Point3": "Kekal & Tidak Boleh Dipecahkan: Kod statik tidak pernah tamat tempoh, dengan sifar bayaran imbasan atau risiko penutupan selama-lamanya."

@@ -7,7 +7,7 @@ export default function Security() {
 
   return (
     <>
-<main className="w-full flex-1 bg-[#040814] text-white overflow-hidden">
+<div className="w-full flex-1 bg-[#040814] text-white overflow-hidden">
         
         {/* Section 1: Hero */}
         <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden bg-slate-950 border-b border-[#1e2d4a]">
@@ -143,7 +143,7 @@ export default function Security() {
                     {t('research.securityResearch.paper1Title', 'Mitigating QR Code Phishing (Quishing)')}
                   </h3>
                   <p className="text-slate-300 leading-relaxed font-medium mb-6">
-                    {t('research.securityResearch.paper1Desc', 'Academic analysis detailing how intermediary redirect servers expose end users to phishing. CreateMeQR eliminates the man-in-the-middle vector by encoding static destination payloads locally.')}
+                    {t('research.securityResearch.paper1Desc', 'Academic analysis detailing how intermediary redirect servers expose end users to phishing. CreateMy-QR eliminates the man-in-the-middle vector by encoding static destination payloads locally.')}
                   </p>
                 </div>
                 <div className="pt-4 border-t border-[#1e2d4a] flex items-center justify-between text-xs text-slate-400 font-mono">
@@ -216,7 +216,7 @@ export default function Security() {
           </div>
         </section>
 
-      </main>
+      </div>
     </>
   );
 }

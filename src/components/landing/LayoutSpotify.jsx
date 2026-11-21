@@ -117,7 +117,7 @@ function LayoutSpotify({ qrType = 'spotify' }) {
           <div className="hq-sp-hero-title">{t.heroTitle}</div>
           <div className="hq-sp-hero-desc">
             <span style={{ width: 24, height: 24, borderRadius: '50%', background: 'var(--hq-accent)', display: 'inline-block' }}></span>
-            CreateMeQR <span style={{ color: 'var(--hq-text-muted)', fontWeight: 400 }}>• {t.heroSubtitle}</span>
+            CreateMy-QR <span style={{ color: 'var(--hq-text-muted)', fontWeight: 400 }}>• {t.heroSubtitle}</span>
           </div>
         </div>
       </div>

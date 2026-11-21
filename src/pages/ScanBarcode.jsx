@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Html5Qrcode } from 'html5-qrcode';
 import { Scan, ScanLine, Upload, Copy, ExternalLink, AlertCircle, Camera, ShieldCheck, Zap, Archive } from 'lucide-react';
-import BatchScanner from '../components/BatchScanner';
+const BatchScanner = React.lazy(() => import('../components/BatchScanner'));
 
 export default function ScanBarcode() {
   const { t } = useTranslation();
@@ -26,6 +25,7 @@ export default function ScanBarcode() {
   const startScanner = useCallback(async () => {
     try {
       if (!html5QrCode.current) {
+        const { Html5Qrcode } = await import('html5-qrcode');
         html5QrCode.current = new Html5Qrcode("reader");
       }
       await html5QrCode.current.start(
@@ -76,6 +76,7 @@ export default function ScanBarcode() {
     }
 
     try {
+      const { Html5Qrcode } = await import('html5-qrcode');
       const fileScanner = new Html5Qrcode("reader-hidden");
       const decodedText = await fileScanner.scanFile(file, true);
       setScanResult(decodedText);
@@ -157,7 +158,9 @@ export default function ScanBarcode() {
           </div>
 
           {scannerMode === 'batch' ? (
-            <BatchScanner defaultMode="barcode" />
+            <React.Suspense fallback={<div className="p-12 text-center text-zinc-500">Loading Batch Scanner...</div>}>
+              <BatchScanner defaultMode="barcode" />
+            </React.Suspense>
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             

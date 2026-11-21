@@ -37,7 +37,9 @@
     "booking": "Pemesanan",
     "file": "Berkas",
     "scanbarcode": "Pemindai Kode Batang",
-    "bulk": "QR & Kode Batang Massal"
+    "bulk": "QR & Kode Batang Massal",
+    "barcode": "Generator Kode Batang Gratis",
+    "scanqr": "Pindai Kode QR Secara Online"
   },
   "form": {
     "enterUrl": "Masukkan URL website",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Panduan Lengkap Membuat QR Code Dinamis & Statis Gratis di Indonesia (2026)",
-    "body": "Saat mencari generator kode QR terbaik di Indonesia, pengguna membutuhkan alat yang mendukung standar QRIS, tautan URL, WiFi WPA3, lokasi Google Maps, dan vCard kontak profesional. CreateMeQR hadir sebagai solusi generator kode QR berbasis privasi 100% di browser tanpa batas waktu kedaluwarsa, tanpa pelacakan data, dan gratis untuk ekspor standar PNG."
+    "body": "Saat mencari generator kode QR terbaik di Indonesia, pengguna membutuhkan alat yang mendukung standar QRIS, tautan URL, WiFi WPA3, lokasi Google Maps, dan vCard kontak profesional. CreateMy-QR hadir sebagai solusi generator kode QR berbasis privasi 100% di browser tanpa batas waktu kedaluwarsa, tanpa pelacakan data, dan gratis untuk ekspor standar PNG."
   },
   "seoKeywords": "bikin link jadi qr, ubah link jadi qr code, cara mengubah link menjadi qr code, generator qr code dari link, buat qr code link web, qr code generator link gratis, cara bikin qr code link google drive, qr code qris gratis, buat qr code dengan logo, generator kode qr tanpa watermark, qr code wifi gratis, bikin qr code menu restoran, cara buat qr code sendiri, web buat qr code gratis tanpa daftar, generator qr code tanpa kadaluarsa, unduh qr code vektor svg gratis, buat qr code resolusi tinggi png, generator qr code privasi browser client side, buat qr code warna gradasi custom, cara bikin qr code untuk link whatsapp, generator qr code untuk menu pdf cafe, buat kode qr tanpa login atau bayar, rekomendasi web qr code generator terbaik 2026, qr code anti buram mudah scan, buat qr code link gopay ovo dana, generator qr code scan tanpa batas, cara pasang foto atau logo di tengah qr code, buat qr code untuk tiket acara event, generator qr code lokasi google maps, buat qr code kirim email otomatis, buat qr code kirim pesan sms cepat, generator qr code telepon langsung, buat qr code background transparan svg, desain bentuk mata qr code custom, pola titik qr code bulat elegan, cetak qr code kualitas tinggi untuk kartu nama, web qr code generator tanpa iklan mengganggu, pembuat qr code tercepat tanpa server, buat qr code link profil instagram tiktok, buat qr code untuk link video youtube, buat qr code untuk link playlist spotify, buat qr code untuk link linkedin profesional, buat qr code pembayaran transfer bank, buat qr code untuk link katalog shopee tokopedia, buat qr code untuk undangan digital pernikahan, buat qr code download aplikasi play store app store, buat qr code untuk link meeting zoom google meet, buat qr code untuk materi presentasi canva, buat qr code link formulir google form, generator qr code anti gagal scan kamera hp",
   "landing": {
@@ -1320,7 +1322,7 @@
     }
   },
   "home": {
-    "seoTitle": "CreateMy-QR — Generator QR Code & Barcode Gratis | 37 Alat Online",
+    "seoTitle": "Generator QR Code Gratis & Permanen",
     "seoDesc": "Buat 37 jenis QR code dan barcode gratis. Unduh instan sisi klien, kode statis tanpa kedaluwarsa, standar ISO/IEC 18004, tersedia dalam 30 bahasa.",
     "badge": "ISO/IEC 18004 · Privasi Terjaga · Tanpa Pelacakan · Sisi Klien",
     "heroTitle": "Generator QR Code yang",
@@ -1698,8 +1700,8 @@
     }
   },
   "rating": {
-    "title": "Dipercaya oleh Jutaan Orang",
-    "subtitle": "Dinilai 4.9/5 berdasarkan 15.432 ulasan di lebih dari 30 negara. Mengutamakan Privasi, Aman, dan Berjalan di Sisi Klien."
+    "title": "Dirancang untuk Privasi & Permanensi",
+    "subtitle": "Mesin WebAssembly 100% Sisi Klien. Mematuhi standar ISO/IEC 18004 di 30+ bahasa tanpa unggahan server."
   },
   "pseo": {
     "insights_badge": "PANDUAN PRO",
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Yayasan Ilmiah & Teknik",
       "title": "Dibangun berdasarkan Standar Global & Riset Akademis yang Terverifikasi",
-      "subtitle": "CreateMeQR mengimplementasikan spesifikasi terbuka dari ISO, IEEE, dan NIST untuk memberikan presisi matematis dan keamanan tanpa kepercayaan di sisi klien.",
+      "subtitle": "CreateMy-QR mengimplementasikan spesifikasi terbuka dari ISO, IEEE, dan NIST untuk memberikan presisi matematis dan keamanan tanpa kepercayaan di sisi klien.",
       "card1Title": "ISO/IEC 18004 Spesifikasi",
       "card1Desc": "Kepatuhan penuh terhadap standar simbologi matriks Kode QR internasional yang menampilkan pola pencari 1:1:3:1:1 dan zona tenang 4 modul.",
       "card1Meta": "Organisasi Internasional untuk Standardisasi",
@@ -1869,7 +1871,7 @@
       "subtitle": "Arsitektur sisi klien kami mendapat informasi langsung dari penelitian peer-review yang menganalisis pembajakan pengalihan QR dan integritas data tanpa kepercayaan.",
       "paper1Title": "Kerentanan Quishing & Pengalihan Sisi Server",
       "paper1Cite": "Krombholz dkk., Konferensi Internasional IEEE tentang Ketersediaan, Keandalan, dan Keamanan (ARES 2015)",
-      "paper1Desc": "Penelitian akademis menunjukkan bahwa server pengalihan perantara menimbulkan titik kegagalan tunggal, pembajakan URL, dan telemetri tanpa izin. CreateMeQR menghilangkan vektor-vektor ini melalui pembuatan sisi klien yang 100% statis.",
+      "paper1Desc": "Penelitian akademis menunjukkan bahwa server pengalihan perantara menimbulkan titik kegagalan tunggal, pembajakan URL, dan telemetri tanpa izin. CreateMy-QR menghilangkan vektor-vektor ini melalui pembuatan sisi klien yang 100% statis.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Kriptografi Dalam Peramban Tanpa Pengetahuan",
       "paper2Cite": "NIST SP 800-207 Arsitektur Zero Trust & Standar Kriptografi Web W3C",
@@ -1885,7 +1887,7 @@
       "card2Title": "Standar Terbuka & Pengabaian Paten",
       "card2Desc": "Denso Wave memilih untuk tidak menggunakan hak patennya, sehingga spesifikasi QR menjadi standar internasional terbuka (ISO/IEC 18004).",
       "card3Title": "Implementasi Sisi Klien",
-      "card3Desc": "CreateMeQR mengimplementasikan algoritma pembuatan matriks standar ISO/IEC 18004 langsung di memori browser lokal tanpa server perantara."
+      "card3Desc": "CreateMy-QR mengimplementasikan algoritma pembuatan matriks standar ISO/IEC 18004 langsung di memori browser lokal tanpa server perantara."
     },
     "compareEvidence": {
       "badge": "Perbandingan Keamanan Arsitektur",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Pembajakan Pengalihan: Server cloud dapat mengubah tujuan QR Anda kapan saja.",
       "col1Point2": "Pelacakan & Sidik Jari: Server perantara mencatat IP pemindai, perangkat, dan lokasi.",
       "col1Point3": "Penguncian Vendor & Paywall: Tautan kedaluwarsa jika pembayaran langganan bulanan telah berakhir.",
-      "col2Title": "CreateMeQR Keamanan Sisi Klien",
+      "col2Title": "CreateMy-QR Keamanan Sisi Klien",
       "col2Point1": "Payload yang Tidak Dapat Diubah: Dikodekan langsung ke dalam matriks mentah; mustahil untuk dibajak.",
       "col2Point2": "Zero Intermediary Logging: Pemindaian point-to-point langsung tanpa perantara.",
       "col2Point3": "Permanen: Kode statis tidak pernah kedaluwarsa, pemindaian tanpa batas seumur hidup."

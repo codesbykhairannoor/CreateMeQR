@@ -7,7 +7,7 @@ export default function Privacy() {
 
   return (
     <>
-<main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
+<div className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white overflow-hidden">
         
         {/* Section 1: Hero Vault */}
         <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden">
@@ -89,7 +89,7 @@ export default function Privacy() {
           </div>
         </section>
 
-      </main>
+      </div>
     </>
   );
 }

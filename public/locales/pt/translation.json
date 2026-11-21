@@ -37,7 +37,9 @@
     "booking": "Reserva",
     "file": "Arquivo",
     "scanbarcode": "Leitor de código de barras",
-    "bulk": "QR e código de barras em massa"
+    "bulk": "QR e código de barras em massa",
+    "barcode": "Gerador de código de barras grátis",
+    "scanqr": "Digitalize o código QR on-line"
   },
   "form": {
     "enterUrl": "Insira o URL do seu site",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Guia Completo para Gerar Códigos QR Grátis e Sem Marca D'água (2026)",
-    "body": "Para empresas e profissionais no Brasil e em Portugal, CreateMeQR oferece a melhor plataforma gratuita e sem validade para criar códigos QR dinâmicos de URL, Wi-Fi WPA3, vCard e PIX com exportação vetorial SVG."
+    "body": "Para empresas e profissionais no Brasil e em Portugal, CreateMy-QR oferece a melhor plataforma gratuita e sem validade para criar códigos QR dinâmicos de URL, Wi-Fi WPA3, vCard e PIX com exportação vetorial SVG."
   },
   "seoKeywords": "transformar link em qr code, como fazer qr code de um link, gerador de qr code para link grátis, criar qr code com logo grátis e sem cadastro, gerador de qr code sem marca d'água, qr code para senha de wifi grátis, criar cartão de visita vcard qr online, qr code para avaliações do google, gerador de qr code dinâmico grátis, qr code permanente sem data de expiração, baixar qr code em vetor svg grátis, gerador de qr code em alta resolução png, gerador de qr code com privacidade no navegador, criar qr code com cores e gradiente, como fazer qr code para link do whatsapp, qr code para cardápio de restaurante pdf, criar qr code sem login ou cartão de crédito, melhor gerador de qr code grátis 2026, qr code com alta correção de erros nível q, gerador de qr code com scans ilimitados, colocar foto ou logo no meio do qr code, qr code para ingressos de eventos, gerador de qr code para localização no google maps, qr code para enviar e-mail mailto, qr code para enviar mensagem sms, criar qr code para ligação telefônica, qr code com fundo transparente svg, design personalizado dos olhos do qr code, estilo de pontos arredondados para qr code, qr code para impressão em cartão de visita, gerador de qr code sem anúncios ou popups, gerador de qr code mais rápido online, qr code para link do instagram facebook, qr code para vídeo do youtube tiktok, qr code para pagamento pix e paypal, qr code para download de aplicativo celuar",
   "landing": {
@@ -1321,7 +1323,7 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Gerador de QR Code & Código de Barras Grátis | 37 Ferramentas Online",
-    "seoDesc": "Gere 37 tipos de códigos QR e códigos de barras grátis. Download instantâneo no navegador, códigos estáticos sem expiração, padrão ISO/IEC 18004 em 30 idiomas.",
+    "seoDesc": "Crie 37 tipos de QR codes e códigos de barras grátis. Download instantâneo no navegador, códigos estáticos permanentes, ISO/IEC 18004 em 30 idiomas.",
     "badge": "ISO/IEC 18004 · Privacidade em Primeiro Lugar · Zero Rastreamento · No Navegador",
     "heroTitle": "O Gerador de QR Code Que",
     "heroTitleHighlight": "Nunca Expira.",
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Fundações Científicas e de Engenharia",
       "title": "Construído com base em padrões globais verificados e pesquisas acadêmicas",
-      "subtitle": "CreateMeQR implementa especificações abertas da ISO, IEEE e NIST para fornecer precisão matemática e segurança de confiança zero do lado do cliente.",
+      "subtitle": "CreateMy-QR implementa especificações abertas da ISO, IEEE e NIST para fornecer precisão matemática e segurança de confiança zero do lado do cliente.",
       "card1Title": "Especificação ISO/IEC 18004",
       "card1Desc": "Aderência total aos padrões internacionais de simbologia de matriz de QR Code, apresentando padrões de localização 1:1:3:1:1 e zonas silenciosas de 4 módulos.",
       "card1Meta": "Organização Internacional de Padronização",
@@ -1869,7 +1871,7 @@
       "subtitle": "Nossa arquitetura do lado do cliente é diretamente informada por pesquisas revisadas por pares que analisam o sequestro de redirecionamento QR e a integridade de dados de confiança zero.",
       "paper1Title": "Vulnerabilidades de encerramento e redirecionamento do lado do servidor",
       "paper1Cite": "Krombholz et al., Conferência Internacional IEEE sobre Disponibilidade, Confiabilidade e Segurança (ARES 2015)",
-      "paper1Desc": "Pesquisas acadêmicas demonstram que servidores intermediários de redirecionamento introduzem pontos únicos de falha, sequestro de URL e telemetria não consentida. CreateMeQR elimina esses vetores por meio de geração 100% estática do lado do cliente.",
+      "paper1Desc": "Pesquisas acadêmicas demonstram que servidores intermediários de redirecionamento introduzem pontos únicos de falha, sequestro de URL e telemetria não consentida. CreateMy-QR elimina esses vetores por meio de geração 100% estática do lado do cliente.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Criptografia no navegador com conhecimento zero",
       "paper2Cite": "NIST SP 800-207 Arquitetura Zero Trust e padrões de criptografia da Web W3C",
@@ -1885,7 +1887,7 @@
       "card2Title": "Padrão Aberto e Isenção de Patente",
       "card2Desc": "Denso Wave optou por não exercer seus direitos de patente, permitindo que a especificação QR se tornasse um padrão internacional aberto (ISO/IEC 18004).",
       "card3Title": "Implementação do lado do cliente",
-      "card3Desc": "CreateMeQR implementa algoritmos de geração de matriz padrão ISO/IEC 18004 diretamente na memória local do navegador, sem servidores intermediários."
+      "card3Desc": "CreateMy-QR implementa algoritmos de geração de matriz padrão ISO/IEC 18004 diretamente na memória local do navegador, sem servidores intermediários."
     },
     "compareEvidence": {
       "badge": "Comparação de segurança arquitetônica",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Sequestro de redirecionamento: os servidores em nuvem podem alterar seu destino QR a qualquer momento.",
       "col1Point2": "Rastreamento e impressão digital: Servidores intermediários registram IP, dispositivo e localização do scanner.",
       "col1Point3": "Vendor Lock-in e Paywalls: Os links expiram se o pagamento da assinatura mensal expirar.",
-      "col2Title": "CreateMeQR Segurança do lado do cliente",
+      "col2Title": "CreateMy-QR Segurança do lado do cliente",
       "col2Point1": "Carga útil imutável: codificada diretamente na matriz bruta; impossível de sequestrar.",
       "col2Point2": "Registro intermediário zero: varredura direta ponto a ponto sem intermediários.",
       "col2Point3": "Permanente e inquebrável: os códigos estáticos nunca expiram, sem taxas de digitalização ou risco de desligamento para sempre."

@@ -103,25 +103,10 @@ async function run() {
 
     const allPages = { ...toolMap };
 
-    // Inject pSEO routes for this language
-    const langPseo = pseoDataByLang[lang] || [];
-    langPseo.forEach(uc => {
-      const urlSlug = uc.translatedSlug || uc.slug;
-      const safeSlug = urlSlug.startsWith('/') ? urlSlug : '/' + urlSlug;
-      allPages[safeSlug] = 'pseo_' + uc.id;
-    });
-
     for (const [localizedSlug, toolId] of Object.entries(allPages)) {
       let title, description;
 
-      const useCase = toolId.startsWith('pseo_')
-        ? langPseo.find(uc => uc.id === toolId.replace('pseo_', ''))
-        : null;
-
-      if (useCase) {
-        title = `${useCase.h1Title} | CreateMy-QR`;
-        description = useCase.seoDesc;
-      } else if (['about', 'compare', 'languages', 'pricing', 'privacy', 'security', 'terms', 'usecases', 'barcode', 'bulk', 'scanqr', 'scanbarcode'].includes(toolId)) {
+      if (['about', 'compare', 'languages', 'pricing', 'privacy', 'security', 'terms', 'usecases', 'barcode', 'bulk', 'scanqr', 'scanbarcode'].includes(toolId)) {
         const staticMeta = translations.static?.[toolId] || {};
         const fallbackTitle = translations.types?.[toolId] || toolId;
         const pageTitle = staticMeta.seoTitle || staticMeta.title || fallbackTitle;
@@ -132,7 +117,10 @@ async function run() {
       } else if (toolId === 'url' || toolId === 'home' || toolId === '/' || localizedSlug === '/') {
         const heroTitle = translations.home?.heroTitle || langTemplates.homeHeroTitle || 'All QR & Barcode';
         const heroHighlight = translations.home?.heroTitleHighlight || langTemplates.homeHeroTitleHighlight || 'Tools in One Place';
-        title = `CreateMy-QR | ${heroTitle} ${heroHighlight}`;
+        const combinedHero = `${heroTitle} ${heroHighlight}`.replace(/\s+/g, ' ').trim();
+        title = combinedHero.length <= 46
+          ? `${combinedHero} | CreateMy-QR`
+          : (translations.home?.seoTitle ? `${translations.home.seoTitle} | CreateMy-QR` : `${combinedHero} | CreateMy-QR`);
         description = translations.home?.seoDesc || langTemplates.homeSeoDesc || 'Generate 37 types of QR codes and barcodes for free. No signup. Instant download. 100% client-side, ISO-compliant, 30 languages.';
       } else {
         const toolName = translations.types?.[toolId] || toolId;
@@ -143,34 +131,48 @@ async function run() {
       }
 
       function formatSeoTitle(rawTitle, brandSuffix = ' | CreateMy-QR') {
-        if (!rawTitle) return 'CreateMy-QR | Free Custom QR Code Generator';
+        if (!rawTitle) return 'Free Custom QR Code Generator | CreateMy-QR';
         let t = rawTitle.replace(/\s+/g, ' ').trim();
-        if (t.includes('CreateMy-QR')) {
-          if (t.length <= 60) return t;
-          const parts = t.split('|');
-          const mainPart = parts[0].trim();
-          if (mainPart.length + brandSuffix.length <= 60) {
-            return `${mainPart}${brandSuffix}`;
-          }
-          return mainPart.substring(0, 57).trim() + '...';
+        const maxLen = 60;
+
+        // Strip existing brand prefix or suffix (any separator: |, —, –, -, :) so brand never appears twice
+        let core = t
+          .replace(/^CreateMy-QR\s*[|—–\-:]\s*/i, '')
+          .replace(/\s*[|—–\-:]\s*CreateMy-QR$/i, '')
+          .trim();
+
+        if (!core || /^CreateMy-QR$/i.test(core)) {
+          core = 'Free Custom QR Code Generator';
         }
-        if (t.length + brandSuffix.length <= 60) {
-          return `${t}${brandSuffix}`;
+
+        const maxCoreLen = maxLen - brandSuffix.length;
+        if (core.length <= maxCoreLen) {
+          return `${core}${brandSuffix}`;
         }
-        if (t.length <= 60) {
-          return t;
+
+        // Truncate cleanly at a word boundary
+        let cut = core.substring(0, maxCoreLen);
+        const lastSpace = cut.lastIndexOf(' ');
+        if (lastSpace > Math.floor(maxCoreLen * 0.5)) {
+          cut = cut.substring(0, lastSpace);
         }
-        return t.substring(0, 57).trim() + '...';
+        cut = cut.replace(/[\s,.;:\-|–—]+$/, '').trim();
+        return `${cut}${brandSuffix}`;
       }
 
-      function formatMetaDescription(rawDesc, fallback = 'Create custom QR codes with logo for free. 100% client-side security with vector SVG and PNG downloads.') {
-        let desc = (rawDesc || fallback).replace(/\s+/g, ' ').trim();
-        desc = desc.replace(/\{\{[^}]+\}\}/g, '').replace(/types\.[a-z0-9_]+/gi, 'QR Code');
-        if (desc.length > 158) {
-          return desc.substring(0, 155).trim() + '...';
+      function formatMetaDescription(rawDesc, fallback = 'Create custom QR codes with logo free. 100% client-side privacy with instant PNG and vector exports.') {
+        let desc = (rawDesc || '').replace(/\s+/g, ' ').trim();
+        desc = desc.replace(/\{\{[^}]+\}\}/g, '').replace(/types\.[a-z0-9_]+/gi, 'QR Code').trim();
+        if (!desc || desc.length < 20) {
+          desc = fallback;
         }
-        if (desc.length < 70) {
-          return `${desc} 100% free with no sign-up, unlimited scans, and client-side privacy.`;
+        if (desc.length > 158) {
+          let cut = desc.substring(0, 155);
+          const lastSpace = cut.lastIndexOf(' ');
+          if (lastSpace > 90) {
+            cut = cut.substring(0, lastSpace);
+          }
+          desc = cut.replace(/[\s,.;:\-|–—]+$/, '').trim() + '...';
         }
         return desc;
       }
@@ -179,7 +181,7 @@ async function run() {
       description = formatMetaDescription(description);
 
       // Determine the self-referencing canonical URL
-      const canonicalSlug = toolId.startsWith('pseo_') ? localizedSlug : (localizedRoutes[lang]?.[toolId] || '/');
+      const canonicalSlug = localizedRoutes[lang]?.[toolId] || '/';
       const canonicalPrefix = lang === 'en' ? '' : '/' + lang;
       const canonicalUrl = `https://createmy-qr.com${canonicalPrefix}${canonicalSlug === '/' ? '' : canonicalSlug}`;
 
@@ -203,43 +205,28 @@ async function run() {
 
       // Construct and inject static hreflang matrix
       let hreflangMatrix = '\n    <!-- Static Hreflang Matrix -->';
-
-      if (toolId.startsWith('pseo_')) {
-        const pId = toolId.replace('pseo_', '');
-        for (const altLang of langCodes) {
-          const altPseoList = pseoDataByLang[altLang] || [];
-          const altUseCase = altPseoList.find(uc => uc.id === pId);
-          if (altUseCase) {
-            const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
-            const altUrlSlug = altUseCase.translatedSlug || altUseCase.slug;
-            const safeAltSlug = altUrlSlug.startsWith('/') ? altUrlSlug : '/' + altUrlSlug;
-            const altUrl = `https://createmy-qr.com${altLangPrefix}${safeAltSlug}`;
-            hreflangMatrix += `\n    <link rel="alternate" hreflang="${altLang}" href="${altUrl}" />`;
-          }
-        }
-        const defaultUseCase = (pseoDataByLang['en'] || []).find(uc => uc.id === pId);
-        if (defaultUseCase) {
-          const defaultUrlSlug = defaultUseCase.translatedSlug || defaultUseCase.slug;
-          const safeDefaultSlug = defaultUrlSlug.startsWith('/') ? defaultUrlSlug : '/' + defaultUrlSlug;
-          const defaultUrl = `https://createmy-qr.com${safeDefaultSlug}`;
-          hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />`;
-        }
-      } else {
-        for (const altLang of langCodes) {
-          const actualAltSlug = localizedRoutes[altLang]?.[toolId] || '/';
-          const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
-          const altUrl = `https://createmy-qr.com${altLangPrefix}${actualAltSlug === '/' ? '' : actualAltSlug}`;
-          hreflangMatrix += `\n    <link rel="alternate" hreflang="${altLang}" href="${altUrl}" />`;
-        }
-
-        const defaultSlug = localizedRoutes['en']?.[toolId] || '/';
-        const defaultUrl = `https://createmy-qr.com${defaultSlug === '/' ? '' : defaultSlug}`;
-        hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />`;
+      for (const altLang of langCodes) {
+        const actualAltSlug = localizedRoutes[altLang]?.[toolId] || '/';
+        const altLangPrefix = altLang === 'en' ? '' : '/' + altLang;
+        const altUrl = `https://createmy-qr.com${altLangPrefix}${actualAltSlug === '/' ? '' : actualAltSlug}`;
+        hreflangMatrix += `\n    <link rel="alternate" hreflang="${altLang}" href="${altUrl}" />`;
       }
+
+      const defaultSlug = localizedRoutes['en']?.[toolId] || '/';
+      const defaultUrl = `https://createmy-qr.com${defaultSlug === '/' ? '' : defaultSlug}`;
+      hreflangMatrix += `\n    <link rel="alternate" hreflang="x-default" href="${defaultUrl}" />`;
 
       let newHtml = baseHtml;
       newHtml = newHtml.replace(/<html(\s+[^>]*)?>/i, `<html lang="${lang}"${lang === 'ar' ? ' dir="rtl"' : ''}>`);
-      newHtml = newHtml.replace('</head>', headTags + hreflangMatrix + '\n  </head>');
+
+      // Inject initial i18n payload synchronously for non-English pages so React never flashes a loading spinner over SSR HTML
+      let i18nPayloadScript = '';
+      if (lang !== 'en') {
+        const safeJson = JSON.stringify({ lang, data: translations }).replace(/</g, '\\u003c');
+        i18nPayloadScript = `\n    <script>window.__INITIAL_I18N__=${safeJson};</script>`;
+      }
+
+      newHtml = newHtml.replace('</head>', headTags + hreflangMatrix + i18nPayloadScript + '\n  </head>');
 
       const urlPath = lang === 'en' ? localizedSlug : `/${lang}${localizedSlug === '/' ? '' : localizedSlug}`;
       let ssrHtml = '';
@@ -366,6 +353,41 @@ async function run() {
           const targetUrl = `https://createmy-qr.com/${lang}${locSlug === '/' ? '' : locSlug}`;
           fs.writeFileSync(
             path.join(shortDir, 'index.html'),
+            `<!DOCTYPE html><html lang="${lang}"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><script>window.location.replace("${targetUrl}");</script></head><body><p>Redirecting to <a href="${targetUrl}">${targetUrl}</a>...</p></body></html>`
+          );
+          aliasCount++;
+        }
+      }
+    }
+  }
+
+  // Consolidated pSEO URLs -> canonical core tool redirects across all 30 languages
+  const pseoToCoreTool = {
+    restaurantmenu: 'pdf',
+    wificafe: 'wifi',
+    googlereviewlocal: 'greview',
+    vcardrealestate: 'vcard',
+    urleventtickets: 'url',
+    whatsappsupport: 'whatsapp',
+    paypaldonation: 'paypal',
+    emailsignup: 'email',
+    appstoregame: 'appstore',
+    youtubemanual: 'youtube',
+  };
+  for (const lang of langCodes) {
+    const langPseo = pseoDataByLang[lang] || [];
+    const prefix = lang === 'en' ? '' : '/' + lang;
+    for (const uc of langPseo) {
+      const targetTool = pseoToCoreTool[uc.baseTool];
+      const targetSlug = localizedRoutes[lang]?.[targetTool] || '/';
+      const targetUrl = `https://createmy-qr.com${prefix}${targetSlug === '/' ? '' : targetSlug}`;
+      for (const rawSlug of new Set([uc.translatedSlug, uc.slug].filter(Boolean))) {
+        const cleanSlug = rawSlug.replace(/^\/+/, '');
+        const pDir = lang === 'en' ? path.join(distDir, cleanSlug) : path.join(distDir, lang, cleanSlug);
+        if (!fs.existsSync(pDir)) {
+          fs.mkdirSync(pDir, { recursive: true });
+          fs.writeFileSync(
+            path.join(pDir, 'index.html'),
             `<!DOCTYPE html><html lang="${lang}"><head><meta charset="UTF-8" /><title>CreateMy-QR | Redirecting</title><meta http-equiv="refresh" content="0; url=${targetUrl}" /><link rel="canonical" href="${targetUrl}" /><script>window.location.replace("${targetUrl}");</script></head><body><p>Redirecting to <a href="${targetUrl}">${targetUrl}</a>...</p></body></html>`
           );
           aliasCount++;

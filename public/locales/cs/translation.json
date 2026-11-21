@@ -37,7 +37,9 @@
     "booking": "Online rezervace",
     "file": "Soubor / Berkas",
     "scanbarcode": "Skener čárových kódů",
-    "bulk": "Hromadné QR a čárové kódy"
+    "bulk": "Hromadné QR a čárové kódy",
+    "barcode": "Bezplatný generátor čárových kódů",
+    "scanqr": "Naskenujte QR kód online"
   },
   "form": {
     "enterUrl": "Zadejte URL svého webu",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Zdarma Online Generátor QR Kódů (2026)",
-    "body": "CreateMeQR je ideální pro platební standardy QR Platba v České republice, digitální menu pro restaurace a sdílení kontaktů vCard. Stoprocentní ochrana soukromí: vše probíhá přímo ve vašem prohlížeči za méně než 12ms bez odesílání dat na server. Stahujte vektorové soubory SVG a PNG ve vysokém rozlišení bez vodoznaku a bez vypršení platnosti. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "CreateMy-QR je ideální pro platební standardy QR Platba v České republice, digitální menu pro restaurace a sdílení kontaktů vCard. Stoprocentní ochrana soukromí: vše probíhá přímo ve vašem prohlížeči za méně než 12ms bez odesílání dat na server. Stahujte vektorové soubory SVG a PNG ve vysokém rozlišení bez vodoznaku a bez vypršení platnosti. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "převést odkaz na qr kód, jak vytvořit qr kód z odkazu, zdarma generátor qr kódů pro url, vytvořit qr kód s logem zdarma bez registrace, generátor qr kódů bez vodoznaku, qr kód pro heslo na wifi zdarma, vytvořit digitální vizitku vcard qr online, qr kód pro recenze na google zdarma, zdarma generátor dynamických qr kódů, trvalý qr kód bez data vypršení platnosti, stáhnout vektorový svg qr kód zdarma, generátor qr kódů s vysokým rozlišením png, bezpečný generátor qr kódů v prohlížeči, vytvořit qr kód s barvami a přechodem, jak vytvořit qr kód pro odkaz na whatsapp, qr kód pro menu restaurace v pdf, vytvořit qr kód bez přihlášení nebo placení, nejlepší bezplatný generátor qr kódů 2026, qr kód s vysokou korekcí chyb úroveň q h, neomezené skenování qr kódu zdarma, vložit fotku nebo logo do středu qr kódu, qr kód pro vstupenky na akce, generátor qr kódu pro polohu na google maps, qr kód pro odeslání e-mailu mailto, qr kód pro odeslání sms zprávy, vytvořit qr kód pro přímý telefonní hovor, qr kód s průhledným pozadím svg, vlastní design očí qr kódu, styl zaoblených bodů pro qr kód, vysoce kvalitní qr kód pro tisk na vizitky, generátor qr kódů bez reklam a vyskakovacích oken, nejrychlejší online tvůrce qr kódů, qr kód pro odkaz na instagram facebook youtube",
   "landing": {
@@ -1321,7 +1323,7 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Bezplatný generátor QR kódů a čárových kódů |37 Nástroje online",
-    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "seoDesc": "Vytvořte zdarma 37 typů QR a čárových kódů. Okamžité stažení v prohlížeči, trvalé statické kódy, standard ISO/IEC 18004 ve 30 jazycích.",
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "Generátor QR Kódů, Který",
     "heroTitleHighlight": "Nikdy Nevyprší.",
@@ -1698,8 +1700,8 @@
     }
   },
   "rating": {
-    "title": "Důvěryhodné miliony",
-    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
+    "title": "Built for Privacy & Permanence",
+    "subtitle": "100% Client-Side WebAssembly Engine. ISO/IEC 18004 Compliant across 30+ languages with Zero Server Uploads."
   },
   "pseo": {
     "insights_badge": "PRO PRŮVODCE",
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Vědecké a inženýrské základy",
       "title": "Postaveno na ověřených globálních standardech a akademickém výzkumu",
-      "subtitle": "CreateMeQR implementuje otevřené specifikace ISO, IEEE a NIST pro zajištění matematické přesnosti a zabezpečení nulové důvěryhodnosti na straně klienta.",
+      "subtitle": "CreateMy-QR implementuje otevřené specifikace ISO, IEEE a NIST pro zajištění matematické přesnosti a zabezpečení nulové důvěryhodnosti na straně klienta.",
       "card1Title": "Specifikace ISO/IEC 18004",
       "card1Desc": "Plná shoda s mezinárodními standardy symboliky matice QR kódů se vzorem hledáčku 1:1:3:1:1 a 4modulovými tichými zónami.",
       "card1Meta": "Mezinárodní organizace pro normalizaci",
@@ -1869,7 +1871,7 @@
       "subtitle": "Naše architektura na straně klienta vychází přímo z recenzovaného výzkumu analyzujícího únosy QR přesměrování a integritu dat s nulovou důvěrou.",
       "paper1Title": "Chyby zabezpečení Quishing a přesměrování na straně serveru",
       "paper1Cite": "Krombholz et al., IEEE International Conference on Availability, Reliability and Security (ARES 2015)",
-      "paper1Desc": "Akademický výzkum ukazuje, že zprostředkující přesměrovací servery zavádějí jednotlivé body selhání, únosy URL a nesouhlasnou telemetrii. CreateMeQR eliminuje tyto vektory prostřednictvím 100% statického generování na straně klienta.",
+      "paper1Desc": "Akademický výzkum ukazuje, že zprostředkující přesměrovací servery zavádějí jednotlivé body selhání, únosy URL a nesouhlasnou telemetrii. CreateMy-QR eliminuje tyto vektory prostřednictvím 100% statického generování na straně klienta.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Zero-Knowledge In-Browser Cryptography",
       "paper2Cite": "NIST SP 800-207 Zero Trust Architecture & W3C Web Cryptography Standards",
@@ -1885,7 +1887,7 @@
       "card2Title": "Otevřená standardní a patentová výjimka",
       "card2Desc": "Denso Wave se rozhodlo neuplatňovat svá patentová práva, což umožnilo, aby se specifikace QR stala otevřeným mezinárodním standardem (ISO/IEC 18004).",
       "card3Title": "Implementace na straně klienta",
-      "card3Desc": "CreateMeQR implementuje standardní algoritmy generování matice ISO/IEC 18004 přímo v paměti místního prohlížeče bez zprostředkujících serverů."
+      "card3Desc": "CreateMy-QR implementuje standardní algoritmy generování matice ISO/IEC 18004 přímo v paměti místního prohlížeče bez zprostředkujících serverů."
     },
     "compareEvidence": {
       "badge": "Srovnání architektonické bezpečnosti",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Únos přesměrování: Cloudové servery mohou váš cíl QR kdykoli změnit.",
       "col1Point2": "Sledování a otisky prstů: Zprostředkující servery zaznamenávají IP adresu skeneru, zařízení a umístění.",
       "col1Point3": "Vendor Lock-in & Paywalls: Platnost odkazů vyprší, pokud uplynou měsíční platby za předplatné.",
-      "col2Title": "CreateMeQR Zabezpečení na straně klienta",
+      "col2Title": "CreateMy-QR Zabezpečení na straně klienta",
       "col2Point1": "Neměnné užitečné zatížení: Zakódováno přímo do surové matice; nemožné unést.",
       "col2Point2": "Zero Intermediary Logging: Přímé skenování z bodu do bodu bez prostředníků.",
       "col2Point3": "Trvalé a nerozbitné: Platnost statických kódů nikdy nevyprší, s nulovými poplatky za skenování nebo s rizikem trvalého vypnutí."

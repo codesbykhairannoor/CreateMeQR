@@ -134,7 +134,7 @@ export default function Pricing() {
   ];
 
   return (
-    <main className="w-full flex-1 bg-[#f8fafc] dark:bg-[#040a18] text-slate-900 dark:text-white overflow-hidden transition-colors duration-300">
+    <div className="w-full flex-1 bg-[#f8fafc] dark:bg-[#040a18] text-slate-900 dark:text-white overflow-hidden transition-colors duration-300">
       
       {/* Section 1: Hero */}
       <section className="relative w-full pt-28 pb-16 px-4 sm:px-6 overflow-hidden">
@@ -687,6 +687,6 @@ export default function Pricing() {
         </div>
       </section>
 
-    </main>
+    </div>
   );
 }

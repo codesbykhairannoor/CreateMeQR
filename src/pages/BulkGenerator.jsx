@@ -376,7 +376,7 @@ export default function BulkGenerator() {
   };
 
   return (
-    <main className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white pb-32 transition-colors duration-300">
+    <div className="w-full flex-1 bg-slate-50 dark:bg-[#040814] text-slate-900 dark:text-white pb-32 transition-colors duration-300">
 
       {/* 1. Hero Section */}
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 border-b border-slate-200 dark:border-[#1e2d4a] overflow-hidden">
@@ -915,6 +915,6 @@ export default function BulkGenerator() {
         </React.Suspense>
       )}
 
-    </main>
+    </div>
   );
 }

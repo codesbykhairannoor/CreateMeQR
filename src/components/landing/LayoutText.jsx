@@ -152,7 +152,7 @@ function LayoutText({ qrType = 'text' }) {
 
         <div className="hq-code-block">
           <h2 className="font-bold tracking-tighter " style={{ fontSize: 24, marginBottom: 40, borderBottom: '1px dashed var(--hq-border)', paddingBottom: 20 }}>
-            <span style={{ color: 'var(--hq-accent)' }}>$</span> {t.stepsTitle} {typeName}
+            <span style={{ color: 'var(--hq-accent)' }}>$</span> {t.stepsTitle} {typeName} QR
           </h2>
           {[
             { n: '01', t: t.step1Title, d: `${t.step1Desc} (${typeName})` },
@@ -173,7 +173,7 @@ function LayoutText({ qrType = 'text' }) {
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '60px 0' }}>
         <div className="hq-container" style={{ maxWidth: 800 }}>
           <h2 className="font-bold tracking-tighter " style={{ paddingTop: 0, fontSize: 'clamp(28px, 4vw, 40px)',  textAlign: 'center', marginBottom: 40 }}>
-            {t.faqTitle} {typeName}
+            {typeName} — {t.faqTitle}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {

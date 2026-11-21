@@ -101,7 +101,7 @@ function LayoutFacebook({ qrType = 'facebook' }) {
             <div className="hq-fb-post-header">
               <div className="hq-fb-avatar"><Users size={24} /></div>
               <div>
-                <div style={{ fontWeight: 600 }}>CreateMeQR Official</div>
+                <div style={{ fontWeight: 600 }}>CreateMy-QR Official</div>
                 <div style={{ fontSize: 13, color: 'var(--hq-text-muted)' }}>Sponsored • 🌎</div>
               </div>
             </div>

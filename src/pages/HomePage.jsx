@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link as RouterLink } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import {
   QrCode, ScanLine, Scan, Search, X, ArrowRight, ShieldCheck, Zap,
   Globe, Check, ChevronDown, ChevronUp, Star,
@@ -15,7 +14,6 @@ import {
   FileText, File, Type, Wifi,
 } from 'lucide-react';
 import { localizedRoutes } from '../config/localizedRoutes';
-import { LANGS } from '../config/site';
 import RatingWidget from '../components/landing/RatingWidget';
 
 // All 37 QR & Barcode tools (id, icon, label, category, color)
@@ -144,9 +142,8 @@ export default function HomePage({ currentLangCode = 'en' }) {
     return matchCat && matchSearch;
   });
 
-  const seoTitle = `CreateMy-QR | ${t('home.heroTitle', 'The QR Code Generator That')} ${t('home.heroTitleHighlight', 'Never Expires.')}`;
-  const seoDesc = t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.');
-  const canonicalBase = currentLangCode === 'en' ? 'https://createmy-qr.com' : `https://createmy-qr.com/${currentLangCode}`;
+  const langPrefix = currentLangCode === 'en' ? '' : `/${currentLangCode}`;
+  const langRoutes = localizedRoutes[currentLangCode] || localizedRoutes.en;
 
   // Translated FAQ — now from translation JSON
   const FAQS = [
@@ -156,21 +153,7 @@ export default function HomePage({ currentLangCode = 'en' }) {
   ];
 
   return (
-    <main style={{ width: '100%', position: 'relative', overflowX: 'hidden' }}>
-      <Helmet>
-        <title>{seoTitle}</title>
-        <meta name="description" content={seoDesc} />
-        <meta property="og:title" content={seoTitle} />
-        <meta property="og:description" content={seoDesc} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={canonicalBase} />
-        <link rel="canonical" href={canonicalBase} />
-        {LANGS.map(lang => {
-          const href = lang.code === 'en' ? 'https://createmy-qr.com' : `https://createmy-qr.com/${lang.code}`;
-          return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
-        })}
-        <link rel="alternate" hrefLang="x-default" href="https://createmy-qr.com" />
-      </Helmet>
+    <div style={{ width: '100%', position: 'relative', overflowX: 'hidden' }}>
 
       {/* ═══════ SECTION 1: HERO ═══════ */}
       <section style={{ position: 'relative', paddingTop: 'clamp(115px, 12vw, 135px)', paddingBottom: '56px', textAlign: 'center' }}>
@@ -680,6 +663,68 @@ export default function HomePage({ currentLangCode = 'en' }) {
         </div>
       </section>
 
+      {/* ═══════ SECTION 5.5: INDUSTRY SOLUTIONS (CANONICAL WORKFLOWS) ═══════ */}
+      <section style={{ padding: '72px 0', borderTop: '1px solid rgba(37,99,235,0.08)' }}>
+        <div className="max-w-7xl mx-auto px-6">
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-end', gap: 16, marginBottom: 32 }}>
+            <div>
+              <h2 className="homepage-section-title" style={{ marginBottom: 8 }}>
+                {t('static.usecases.solutionsHeading', 'Industry QR Code Solutions')}
+              </h2>
+              <p style={{ fontSize: '1rem', opacity: 0.65, margin: 0 }}>
+                {t('static.usecases.heroSubtitle', 'Tailored client-side QR workflows built for restaurants, hospitality, real estate, events, and retail.')}
+              </p>
+            </div>
+            <RouterLink
+              to={`${langPrefix}${langRoutes.usecases || '/use-cases'}`}
+              style={{ fontSize: '0.9rem', fontWeight: 700, color: '#2563EB', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 6 }}
+            >
+              <span>{t('footer.useCases', 'All Use Cases')}</span>
+              <ArrowRight size={15} />
+            </RouterLink>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 14 }}>
+            {[
+              { id: 'pdf', label: t('types.pdf', 'PDF QR Code') },
+              { id: 'wifi', label: t('types.wifi', 'Wi-Fi QR Code') },
+              { id: 'greview', label: t('types.greview', 'Google Review QR') },
+              { id: 'vcard', label: t('types.vcard', 'vCard QR Code') },
+              { id: 'whatsapp', label: t('types.whatsapp', 'WhatsApp QR Code') },
+              { id: 'paypal', label: t('types.paypal', 'PayPal QR Code') },
+              { id: 'appstore', label: t('types.appstore', 'App Store QR Code') },
+              { id: 'bulk', label: t('bulk.title', 'Bulk QR Generator') },
+            ].map((item) => {
+              const targetRoute = langRoutes[item.id] || localizedRoutes.en[item.id] || '/';
+              return (
+                <RouterLink
+                  key={item.id}
+                  to={`${langPrefix}${targetRoute}`}
+                  style={{
+                    padding: '18px 20px',
+                    borderRadius: 18,
+                    border: '1px solid rgba(37,99,235,0.12)',
+                    background: 'rgba(255,255,255,0.03)',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    gap: 10,
+                  }}
+                >
+                  <h3 style={{ fontSize: '0.98rem', fontWeight: 700, margin: 0, lineHeight: 1.35 }}>
+                    {item.label}
+                  </h3>
+                  <span style={{ fontSize: '0.78rem', fontWeight: 700, color: '#2563EB', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                    {t('home.generate', 'Generate Free')} <ArrowRight size={13} />
+                  </span>
+                </RouterLink>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* ═══════ SECTION 6: GEO INFORMATION GAIN ═══════ */}
       <section style={{ padding: '60px 0', borderTop: '1px solid rgba(37,99,235,0.08)', background: 'rgba(37,99,235,0.02)' }}>
         <div className="max-w-[800px] mx-auto px-6 text-center">
@@ -689,6 +734,6 @@ export default function HomePage({ currentLangCode = 'en' }) {
         </div>
       </section>
 
-    </main>
+    </div>
   );
 }

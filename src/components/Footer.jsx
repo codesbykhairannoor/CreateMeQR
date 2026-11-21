@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { LANGS } from '../config/site';
+import { localizedRoutes } from '../config/localizedRoutes';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -15,6 +16,7 @@ export default function Footer() {
     currentLangCode = pathParts[0];
   }
   const prefix = currentLangCode === 'en' ? '' : `/${currentLangCode}`;
+  const routes = localizedRoutes[currentLangCode] || localizedRoutes.en;
 
   return (
     <footer className="bg-white dark:bg-[#081226] border-t border-slate-200 dark:border-[#102040] py-12 mt-24">
@@ -28,21 +30,21 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-slate-500 dark:text-slate-400 text-sm">
-            &copy; {new Date().getFullYear()} CreateMyQR. {t('tagline') || 'Free QR Code Generator'}
+            &copy; {new Date().getFullYear()} CreateMy-QR. {t('tagline') || 'Free QR Code Generator'}
           </p>
         </div>
 
         <div className="flex flex-wrap justify-center items-center gap-6 text-sm font-medium">
-          <Link to={`${prefix}/about`} className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          <Link to={`${prefix}${routes.about || '/about'}`} className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             {t('info.nav.about', 'About Us')}
           </Link>
-          <Link to={`${prefix}/privacy`} className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          <Link to={`${prefix}${routes.privacy || '/privacy'}`} className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             {t('info.nav.privacy', 'Privacy Policy')}
           </Link>
-          <Link to={`${prefix}/terms`} className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          <Link to={`${prefix}${routes.terms || '/terms'}`} className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             {t('info.nav.terms', 'Terms of Service')}
           </Link>
-          <Link to={`${prefix}/compare`} className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          <Link to={`${prefix}${routes.compare || '/compare'}`} className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             {t('info.nav.compare', 'Compare')}
           </Link>
           <a

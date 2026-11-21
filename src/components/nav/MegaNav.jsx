@@ -266,7 +266,7 @@ export default function MegaNav({ currentLangCode }) {
                                 }`}
                             >
                               <Icon className={`w-4 h-4 ${isActive ? 'opacity-100 text-blue-600 dark:text-blue-400' : 'opacity-65 group-hover/item:opacity-100'}`} />
-                              <span className="text-[13px] font-medium tracking-normal capitalize">{item.label}</span>
+                              <span className="text-[13px] font-medium tracking-normal capitalize">{t(`types.${item.id}`, item.label)}</span>
                             </RouterLink>
                           );
                         })}

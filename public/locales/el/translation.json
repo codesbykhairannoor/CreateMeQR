@@ -37,7 +37,9 @@
     "booking": "Κράτηση",
     "file": "Αρχείο",
     "scanbarcode": "Barcode Scanner",
-    "bulk": "Μαζικό QR & Barcode"
+    "bulk": "Μαζικό QR & Barcode",
+    "barcode": "Δωρεάν Γεννήτρια Barcode",
+    "scanqr": "Σάρωση κωδικού QR Online"
   },
   "form": {
     "enterUrl": "Εισαγάγετε τη διεύθυνση URL του ιστότοπού σας",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Δωρεάν Δημιουργία QR Code Online (2026)",
-    "body": "Το CreateMeQR είναι το ιδανικό εργαλείο για ψηφιακούς καταλόγους εστιατορίων και ξενοδοχείων στην Ελλάδα, κοινοποίηση Wi-Fi και κάρτες vCard. 100% συμμόρφωση με το GDPR: η επεξεργασία γίνεται τοπικά στον browser σας σε λιγότερο από 12ms. Κατεβάστε αρχεία διανυσματικών γραφικών SVG και PNG υψηλής ανάλυσης δωρεάν, χωρίς υδατογράφημα και χωρίς ημερομηνία λήξης. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "Το CreateMy-QR είναι το ιδανικό εργαλείο για ψηφιακούς καταλόγους εστιατορίων και ξενοδοχείων στην Ελλάδα, κοινοποίηση Wi-Fi και κάρτες vCard. 100% συμμόρφωση με το GDPR: η επεξεργασία γίνεται τοπικά στον browser σας σε λιγότερο από 12ms. Κατεβάστε αρχεία διανυσματικών γραφικών SVG και PNG υψηλής ανάλυσης δωρεάν, χωρίς υδατογράφημα και χωρίς ημερομηνία λήξης. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "μετατροπή συνδέσμου σε qr code, πώς να φτιάξετε qr code από link, δωρεάν δημιουργία qr code για url, δημιουργία qr code με λογότυπο δωρεάν χωρίς εγγραφή, δημιουργία qr code χωρίς υδατογράφημα, qr code για κωδικό wifi δωρεάν, δημιουργία ψηφιακής κάρτας vcard qr online, qr code για κριτικές google, δωρεάν δημιουργία δυναμικού qr code, μόνιμο qr code χωρίς ημερομηνία λήξης, κατέβασμα διανυσματικού svg qr code δωρεάν, δημιουργία qr code υψηλής ανάλυσης png, ασφαλής τοπική δημιουργία qr code στον browser, δημιουργία qr code με χρώματα και διαβάθμιση, πώς να φτιάξετε qr code για link viber whatsapp, qr code για μενού εστιατορίου pdf, δημιουργία qr code χωρίς σύνδεση ή πληρωμή, καλύτερη δωρεάν δημιουργία qr code 2026, qr code υψηλής διόρθωσης σφαλμάτων επίπεδο q h, απεριόριστες σαρώσεις qr code δωρεάν, τοποθέτηση φωτογραφίας ή λογότυπου στη μέση του qr, qr code για εισιτήρια εκδηλώσεων, δημιουργία qr code τοποθεσίας google maps, qr code για αποστολή email mailto, qr code για αποστολή μηνύματος sms, δημιουργία qr code για άμεση τηλεφωνική κλήση, qr code με διαφανές φόντο svg, προσαρμοσμένος σχεδιασμός ματιών qr code, στυλ στρογγυλεμένων τελειών για qr code, υψηλής ποιότητας qr code για εκτύπωση επαγγελματικών καρτών, δημιουργία qr code χωρίς διαφημίσεις και αναδυόμενα παράθυρα, η πιο γρήγορη online δημιουργία qr code, qr code για link instagram facebook youtube",
   "landing": {
@@ -1321,7 +1323,7 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Δωρεάν δημιουργία κωδικών QR & Barcode |37 Εργαλεία Online",
-    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "seoDesc": "Δημιουργήστε 37 τύπους QR και barcode δωρεάν. Άμεση λήψη στον browser, μόνιμοι στατικοί κωδικοί, πρότυπο ISO/IEC 18004 σε 30 γλώσσες.",
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "Η Γεννήτρια QR Code Που",
     "heroTitleHighlight": "Δεν Λήγει Ποτέ.",
@@ -1698,8 +1700,8 @@
     }
   },
   "rating": {
-    "title": "Εμπιστευμένο από εκατομμύρια",
-    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
+    "title": "Built for Privacy & Permanence",
+    "subtitle": "100% Client-Side WebAssembly Engine. ISO/IEC 18004 Compliant across 30+ languages with Zero Server Uploads."
   },
   "pseo": {
     "insights_badge": "ΟΔΗΓΟΣ PRO",
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Επιστημονικά & Μηχανικά Ιδρύματα",
       "title": "Βασισμένο σε Επαληθευμένα Παγκόσμια Πρότυπα & Ακαδημαϊκή Έρευνα",
-      "subtitle": "Το CreateMeQR εφαρμόζει ανοιχτές προδιαγραφές από ISO, IEEE και NIST για να προσφέρει μαθηματική ακρίβεια και ασφάλεια μηδενικής εμπιστοσύνης από την πλευρά του πελάτη.",
+      "subtitle": "Το CreateMy-QR εφαρμόζει ανοιχτές προδιαγραφές από ISO, IEEE και NIST για να προσφέρει μαθηματική ακρίβεια και ασφάλεια μηδενικής εμπιστοσύνης από την πλευρά του πελάτη.",
       "card1Title": "ISO/IEC 18004 Προδιαγραφή",
       "card1Desc": "Πλήρης συμμόρφωση με τα διεθνή πρότυπα συμβόλων μήτρας QR Code με μοτίβα εύρεσης 1:1:3:1:1 και ήσυχες ζώνες 4 μονάδων.",
       "card1Meta": "Διεθνής Οργανισμός Τυποποίησης",
@@ -1869,7 +1871,7 @@
       "subtitle": "Η αρχιτεκτονική μας από την πλευρά του πελάτη ενημερώνεται άμεσα από έρευνα που έχει αξιολογηθεί από ομοτίμους που αναλύει την αεροπειρατεία ανακατεύθυνσης QR και την ακεραιότητα δεδομένων μηδενικής εμπιστοσύνης.",
       "paper1Title": "Ευπάθειες Quishing & Ανακατεύθυνσης από την πλευρά του διακομιστή",
       "paper1Cite": "Krombholz et al., IEEE International Conference on Availability, Reliability and Security (ARES 2015)",
-      "paper1Desc": "Η ακαδημαϊκή έρευνα δείχνει ότι οι ενδιάμεσοι διακομιστές ανακατεύθυνσης εισάγουν μεμονωμένα σημεία αποτυχίας, παραβίαση διευθύνσεων URL και τηλεμετρία χωρίς συναίνεση. Το CreateMeQR εξαλείφει αυτά τα διανύσματα μέσω 100% στατικής δημιουργίας από την πλευρά του πελάτη.",
+      "paper1Desc": "Η ακαδημαϊκή έρευνα δείχνει ότι οι ενδιάμεσοι διακομιστές ανακατεύθυνσης εισάγουν μεμονωμένα σημεία αποτυχίας, παραβίαση διευθύνσεων URL και τηλεμετρία χωρίς συναίνεση. Το CreateMy-QR εξαλείφει αυτά τα διανύσματα μέσω 100% στατικής δημιουργίας από την πλευρά του πελάτη.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Κρυπτογραφία Zero-Knowledge In-Browser",
       "paper2Cite": "NIST SP 800-207 Αρχιτεκτονική Zero Trust & Πρότυπα κρυπτογραφίας Ιστού W3C",
@@ -1885,7 +1887,7 @@
       "card2Title": "Ανοίξτε την Τυπική και Απαλλαγή Ευρεσιτεχνίας",
       "card2Desc": "Ο Denso Wave επέλεξε να μην ασκήσει τα δικαιώματα ευρεσιτεχνίας του, επιτρέποντας στην προδιαγραφή QR να γίνει ανοιχτό διεθνές πρότυπο (ISO/IEC 18004).",
       "card3Title": "Εφαρμογή από την πλευρά του πελάτη",
-      "card3Desc": "Το CreateMeQR εφαρμόζει τυπικούς αλγόριθμους δημιουργίας μητρών ISO/IEC 18004 απευθείας στην τοπική μνήμη του προγράμματος περιήγησης χωρίς ενδιάμεσους διακομιστές."
+      "card3Desc": "Το CreateMy-QR εφαρμόζει τυπικούς αλγόριθμους δημιουργίας μητρών ISO/IEC 18004 απευθείας στην τοπική μνήμη του προγράμματος περιήγησης χωρίς ενδιάμεσους διακομιστές."
     },
     "compareEvidence": {
       "badge": "Σύγκριση Αρχιτεκτονικής Ασφάλειας",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Redirect Hijacking: Οι διακομιστές Cloud μπορούν να αλλάξουν τον προορισμό σας QR ανά πάσα στιγμή.",
       "col1Point2": "Παρακολούθηση και δακτυλικά αποτυπώματα: IP, συσκευή και τοποθεσία του σαρωτή καταγραφής διακομιστών διαμεσολαβητών.",
       "col1Point3": "Κλείδωμα προμηθευτή και Paywalls: Οι σύνδεσμοι λήγουν εάν λήξουν οι πληρωμές μηνιαίας συνδρομής.",
-      "col2Title": "CreateMeQR Ασφάλεια από την πλευρά του πελάτη",
+      "col2Title": "CreateMy-QR Ασφάλεια από την πλευρά του πελάτη",
       "col2Point1": "Αμετάβλητο ωφέλιμο φορτίο: Κωδικοποιείται απευθείας σε ακατέργαστη μήτρα. αδύνατο να γίνει αεροπειρατεία.",
       "col2Point2": "Μηδενική καταγραφή ενδιάμεσων: Απευθείας σάρωση από σημείο σε σημείο χωρίς μεσάζοντες.",
       "col2Point3": "Μόνιμοι & Άθραυστοι: Οι στατικοί κωδικοί δεν λήγουν ποτέ, με μηδενικά τέλη σάρωσης ή κίνδυνο τερματισμού λειτουργίας για πάντα."

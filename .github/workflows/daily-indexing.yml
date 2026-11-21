@@ -1,31 +1,15 @@
-name: Daily Search Engine & Google Indexing Automation
+name: Search Engine IndexNow (Manual Trigger Only)
 
 on:
-  schedule:
-    # Runs twice daily at 02:00 UTC (09:00 AM WIB) and 14:00 UTC (21:00 WIB)
-    - cron: '0 2,14 * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub Actions UI
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/**'
-      - 'scripts/submit-google-indexing.cjs'
-      - 'submit-indexnow.cjs'
+  # Daily Google Indexing cron disabled to avoid Indexing API misuse on non-JobPosting/BroadcastEvent pages.
+  workflow_dispatch: # Manual trigger only from GitHub Actions UI
 
 jobs:
   index-pages:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    env:
-      GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
-      GCP_SA_KEYS: ${{ secrets.GCP_SA_KEYS }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -38,17 +22,3 @@ jobs:
 
       - name: Ping IndexNow (Bing, Yandex, Seznam, Naver)
         run: npm run indexnow
-
-      - name: Submit Daily Batch to Google Indexing API
-        if: env.GCP_SA_KEY != '' || env.GCP_SA_KEYS != ''
-        run: npm run index:google
-
-      - name: Commit and Push Queue State
-        if: always()
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add google-indexing-state.json
-          git diff --staged --quiet || git commit -m "chore(seo): update automated daily google indexing queue state [skip ci]"
-          git push origin main || true
-

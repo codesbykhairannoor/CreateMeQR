@@ -131,7 +131,7 @@ function LayoutSMS({ qrType = 'sms' }) {
         </div>
 
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
-          <h2 className="font-bold tracking-tighter " style={{ fontSize: 'clamp(28px, 4vw, 40px)' }}>{t.stepsTitle} {typeName}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ fontSize: 'clamp(28px, 4vw, 40px)' }}>{t.stepsTitle} {typeName} QR</h2>
         </div>
 
         <div style={{ marginBottom: 60 }}>
@@ -154,7 +154,7 @@ function LayoutSMS({ qrType = 'sms' }) {
       <div style={{ background: 'var(--hq-card)', borderTop: '1px solid var(--hq-border)', padding: '60px 0' }}>
         <div className="hq-container">
           <h2 className="font-bold tracking-tighter " style={{ paddingTop: 0, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 40 }}>
-            {t.faqTitle} {typeName}
+            {typeName} — {t.faqTitle}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {

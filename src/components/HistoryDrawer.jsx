@@ -98,9 +98,9 @@ export default function HistoryDrawer({ isOpen, onClose, currentLangCode }) {
         <div className="flex items-center justify-between p-6 border-b border-zinc-100 dark:border-zinc-800">
           <div className="flex items-center gap-2">
             <Clock className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-            <h2 className="text-lg font-bold text-zinc-900 dark:text-white">
+            <p className="text-lg font-bold text-zinc-900 dark:text-white">
               {t('history.title', 'Local History')}
-            </h2>
+            </p>
           </div>
           <button onClick={onClose} className="p-2 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 transition-colors">
             <X className="w-5 h-5" />

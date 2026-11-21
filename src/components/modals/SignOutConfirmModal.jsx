@@ -1,5 +1,5 @@
 // src/components/modals/SignOutConfirmModal.jsx
-// Dedicated Sign Out Confirmation Modal (CreateMeQR Royal Blue brand styling)
+// Dedicated Sign Out Confirmation Modal (CreateMy-QR Royal Blue brand styling)
 // Matches visual reference Screenshot_20261119_180940_Chrome.jpg
 
 import React from 'react';

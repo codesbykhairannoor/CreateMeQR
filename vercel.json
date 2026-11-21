@@ -1195,7 +1195,7 @@
     },
     {
       "source": "/id/privacy",
-      "destination": "/id",
+      "destination": "/id/kebijakan-privasi",
       "statusCode": 301
     },
     {
@@ -1675,7 +1675,7 @@
     },
     {
       "source": "/zh/terms",
-      "destination": "/zh",
+      "destination": "/zh/fu-wu-tiao-kuan",
       "statusCode": 301
     },
     {
@@ -1797,24 +1797,2434 @@
       "source": "/预订-免费在线二维码生成器",
       "destination": "/zh/yu-ding-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
       "statusCode": 301
+    },
+    {
+      "source": "/vcard-qr-code-generator",
+      "destination": "/vcard-qr-code-maker",
+      "statusCode": 301
+    },
+    {
+      "source": "/google-review-qr-code",
+      "destination": "/google-review-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/pdf-qr-code-for-restaurant-menu",
+      "destination": "/pdf-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/wifi-qr-code-for-cafe-hotel",
+      "destination": "/wifi-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/google-review-qr-code-for-local-business",
+      "destination": "/google-review-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/vcard-qr-code-for-real-estate-agents",
+      "destination": "/vcard-qr-code-maker",
+      "statusCode": 301
+    },
+    {
+      "source": "/url-qr-code-for-event-tickets-registration",
+      "destination": "/url-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/whatsapp-qr-code-for-customer-support",
+      "destination": "/whatsapp-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/paypal-qr-code-for-donations",
+      "destination": "/paypal-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/email-qr-code-for-newsletter-signup",
+      "destination": "/email-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/app-store-qr-code-for-game-downloads",
+      "destination": "/app-store-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/youtube-qr-code-for-product-manuals",
+      "destination": "/youtube-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/kode-qr-pdf-untuk-menu-restoran",
+      "destination": "/id/pdf-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/pdf-qr-code-for-restaurant-menu",
+      "destination": "/id/pdf-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/kode-qr-wifi-untuk-kafe-hotel",
+      "destination": "/id/wi-fi-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/wifi-qr-code-for-cafe-hotel",
+      "destination": "/id/wi-fi-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/google-meninjau-kode-qr-untuk-bisnis-lokal",
+      "destination": "/id/google-review-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/google-review-qr-code-for-local-business",
+      "destination": "/id/google-review-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/kode-qr-vcard-untuk-agen-real-estat",
+      "destination": "/id/vcard-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/vcard-qr-code-for-real-estate-agents",
+      "destination": "/id/vcard-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/url-kode-qr-untuk-pendaftaran-tiket-acara",
+      "destination": "/id/url-link-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/url-qr-code-for-event-tickets-registration",
+      "destination": "/id/url-link-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/kode-qr-whatsapp-untuk-dukungan-pelanggan",
+      "destination": "/id/whatsapp-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/whatsapp-qr-code-for-customer-support",
+      "destination": "/id/whatsapp-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/kode-qr-paypal-untuk-donasi",
+      "destination": "/id/paypal-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/paypal-qr-code-for-donations",
+      "destination": "/id/paypal-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/email-qr-code-for-newsletter-signup",
+      "destination": "/id/email-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/kode-qr-email-untuk-pendaftaran-buletin",
+      "destination": "/id/email-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/app-store-qr-code-for-game-downloads",
+      "destination": "/id/app-store-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/kode-qr-toko-aplikasi-untuk-unduhan-game",
+      "destination": "/id/app-store-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/kode-qr-youtube-untuk-manual-produk",
+      "destination": "/id/youtube-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/id/youtube-qr-code-for-product-manuals",
+      "destination": "/id/youtube-generator-qr-code-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/codigo-qr-pdf-para-menu-de-restaurante",
+      "destination": "/es/pdf-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/pdf-qr-code-for-restaurant-menu",
+      "destination": "/es/pdf-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/codigo-qr-wifi-para-cafeteria-hotel",
+      "destination": "/es/wi-fi-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/wifi-qr-code-for-cafe-hotel",
+      "destination": "/es/wi-fi-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/google-review-qr-code-for-local-business",
+      "destination": "/es/google-review-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/google-revisa-el-codigo-qr-para-empresas-locales",
+      "destination": "/es/google-review-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/codigo-qr-vcard-para-agentes-inmobiliarios",
+      "destination": "/es/vcard-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/vcard-qr-code-for-real-estate-agents",
+      "destination": "/es/vcard-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/codigo-qr-url-para-registro-de-entradas-para-eventos",
+      "destination": "/es/url-link-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/url-qr-code-for-event-tickets-registration",
+      "destination": "/es/url-link-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/codigo-qr-de-whatsapp-para-atencion-al-cliente",
+      "destination": "/es/whatsapp-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/whatsapp-qr-code-for-customer-support",
+      "destination": "/es/whatsapp-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/codigo-qr-de-paypal-para-donaciones",
+      "destination": "/es/paypal-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/paypal-qr-code-for-donations",
+      "destination": "/es/paypal-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/email-qr-code-for-newsletter-signup",
+      "destination": "/es/email-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/envie-un-codigo-qr-por-correo-electronico-para-suscribirse-al-boletin",
+      "destination": "/es/email-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/app-store-qr-code-for-game-downloads",
+      "destination": "/es/app-store-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/codigo-qr-de-la-tienda-de-aplicaciones-para-descargas-de-juegos",
+      "destination": "/es/app-store-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/codigo-qr-de-youtube-para-manuales-de-productos",
+      "destination": "/es/youtube-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/es/youtube-qr-code-for-product-manuals",
+      "destination": "/es/youtube-generador-de-codigos-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/code-qr-pdf-pour-le-menu-du-restaurant",
+      "destination": "/fr/pdf-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/pdf-qr-code-for-restaurant-menu",
+      "destination": "/fr/pdf-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/code-qr-wifi-pour-cafe-hotel",
+      "destination": "/fr/wi-fi-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/wifi-qr-code-for-cafe-hotel",
+      "destination": "/fr/wi-fi-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/google-examine-le-code-qr-pour-une-entreprise-locale",
+      "destination": "/fr/google-review-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/google-review-qr-code-for-local-business",
+      "destination": "/fr/google-review-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/code-qr-vcard-pour-les-agents-immobiliers",
+      "destination": "/fr/vcard-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/vcard-qr-code-for-real-estate-agents",
+      "destination": "/fr/vcard-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/url-code-qr-pour-linscription-des-billets-devenement",
+      "destination": "/fr/url-link-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/url-qr-code-for-event-tickets-registration",
+      "destination": "/fr/url-link-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/code-qr-whatsapp-pour-le-support-client",
+      "destination": "/fr/whatsapp-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/whatsapp-qr-code-for-customer-support",
+      "destination": "/fr/whatsapp-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/code-qr-paypal-pour-les-dons",
+      "destination": "/fr/paypal-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/paypal-qr-code-for-donations",
+      "destination": "/fr/paypal-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/email-qr-code-for-newsletter-signup",
+      "destination": "/fr/email-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/envoyer-le-code-qr-par-e-mail-pour-linscription-a-la-newsletter",
+      "destination": "/fr/email-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/app-store-qr-code-for-game-downloads",
+      "destination": "/fr/app-store-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/code-qr-de-lapp-store-pour-les-telechargements-de-jeux",
+      "destination": "/fr/app-store-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/code-qr-youtube-pour-les-manuels-des-produits",
+      "destination": "/fr/youtube-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/fr/youtube-qr-code-for-product-manuals",
+      "destination": "/fr/youtube-generateur-de-code-qr-gratuit-en-ligne",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pdf-qr-code-for-restaurant-menu",
+      "destination": "/de/pdf-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/pdf-qr-code-fur-die-speisekarte-des-restaurants",
+      "destination": "/de/pdf-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/wifi-qr-code-for-cafe-hotel",
+      "destination": "/de/wi-fi-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/wlan-qr-code-fur-cafe-hotel",
+      "destination": "/de/wi-fi-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/google-review-qr-code-for-local-business",
+      "destination": "/de/google-review-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/google-rezensions-qr-code-fur-lokale-unternehmen",
+      "destination": "/de/google-review-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/vcard-qr-code-for-real-estate-agents",
+      "destination": "/de/vcard-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/vcard-qr-code-fur-immobilienmakler",
+      "destination": "/de/vcard-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/url-qr-code-for-event-tickets-registration",
+      "destination": "/de/url-link-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/url-qr-code-fur-die-registrierung-von-veranstaltungstickets",
+      "destination": "/de/url-link-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/whatsapp-qr-code-for-customer-support",
+      "destination": "/de/whatsapp-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/whatsapp-qr-code-fur-den-kundensupport",
+      "destination": "/de/whatsapp-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/paypal-qr-code-for-donations",
+      "destination": "/de/paypal-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/paypal-qr-code-fur-spenden",
+      "destination": "/de/paypal-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/e-mail-qr-code-fur-die-newsletter-anmeldung",
+      "destination": "/de/email-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/email-qr-code-for-newsletter-signup",
+      "destination": "/de/email-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/app-store-qr-code-for-game-downloads",
+      "destination": "/de/app-store-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/app-store-qr-code-fur-spiele-downloads",
+      "destination": "/de/app-store-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/youtube-qr-code-for-product-manuals",
+      "destination": "/de/youtube-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/de/youtube-qr-code-fur-produkthandbucher",
+      "destination": "/de/youtube-kostenloser-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/codigo-qr-pdf-para-menu-do-restaurante",
+      "destination": "/pt/pdf-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/pdf-qr-code-for-restaurant-menu",
+      "destination": "/pt/pdf-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/codigo-qr-wifi-para-cafe-hotel",
+      "destination": "/pt/wi-fi-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/wifi-qr-code-for-cafe-hotel",
+      "destination": "/pt/wi-fi-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/google-review-qr-code-for-local-business",
+      "destination": "/pt/google-review-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/google-revisa-o-codigo-qr-para-empresas-locais",
+      "destination": "/pt/google-review-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/codigo-qr-vcard-para-agentes-imobiliarios",
+      "destination": "/pt/vcard-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/vcard-qr-code-for-real-estate-agents",
+      "destination": "/pt/vcard-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/codigo-qr-url-para-registro-de-ingressos-para-eventos",
+      "destination": "/pt/url-link-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/url-qr-code-for-event-tickets-registration",
+      "destination": "/pt/url-link-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/codigo-qr-do-whatsapp-para-suporte-ao-cliente",
+      "destination": "/pt/whatsapp-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/whatsapp-qr-code-for-customer-support",
+      "destination": "/pt/whatsapp-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/codigo-qr-do-paypal-para-doacoes",
+      "destination": "/pt/paypal-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/paypal-qr-code-for-donations",
+      "destination": "/pt/paypal-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/e-mail-com-codigo-qr-para-inscricao-no-boletim-informativo",
+      "destination": "/pt/email-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/email-qr-code-for-newsletter-signup",
+      "destination": "/pt/email-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/app-store-qr-code-for-game-downloads",
+      "destination": "/pt/app-store-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/codigo-qr-da-loja-de-aplicativos-para-downloads-de-jogos",
+      "destination": "/pt/app-store-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/codigo-qr-do-youtube-para-manuais-de-produtos",
+      "destination": "/pt/youtube-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pt/youtube-qr-code-for-product-manuals",
+      "destination": "/pt/youtube-gerador-de-codigo-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/pdf-qr-code-for-restaurant-menu",
+      "destination": "/zh/pdf-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/wifi-qr-code-for-cafe-hotel",
+      "destination": "/zh/wi-fi-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/google-review-qr-code-for-local-business",
+      "destination": "/zh/google-review-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/vcard-qr-code-for-real-estate-agents",
+      "destination": "/zh/vcard-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/url-qr-code-for-event-tickets-registration",
+      "destination": "/zh/url-link-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/whatsapp-qr-code-for-customer-support",
+      "destination": "/zh/whatsapp-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/paypal-qr-code-for-donations",
+      "destination": "/zh/paypal-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/email-qr-code-for-newsletter-signup",
+      "destination": "/zh/email-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/app-store-qr-code-for-game-downloads",
+      "destination": "/zh/app-store-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/youtube-qr-code-for-product-manuals",
+      "destination": "/zh/youtube-mian-fei-zai-xian-er-wei-ma-sheng-cheng-qi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/pdf-qr-code-for-restaurant-menu",
+      "destination": "/ja/pdf-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/wifi-qr-code-for-cafe-hotel",
+      "destination": "/ja/wi-fi-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/google-review-qr-code-for-local-business",
+      "destination": "/ja/google-review-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/vcard-qr-code-for-real-estate-agents",
+      "destination": "/ja/vcard-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/url-qr-code-for-event-tickets-registration",
+      "destination": "/ja/url-link-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/whatsapp-qr-code-for-customer-support",
+      "destination": "/ja/whatsapp-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/paypal-qr-code-for-donations",
+      "destination": "/ja/paypal-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/email-qr-code-for-newsletter-signup",
+      "destination": "/ja/email-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/app-store-qr-code-for-game-downloads",
+      "destination": "/ja/app-store-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/ja/youtube-qr-code-for-product-manuals",
+      "destination": "/ja/youtube-wu-liao-qrkodozuo-cheng-zienereta",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/pdf-qr-code-for-restaurant-menu",
+      "destination": "/hi/piiddiieph-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/wifi-qr-code-for-cafe-hotel",
+      "destination": "/hi/wi-fi-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/google-review-qr-code-for-local-business",
+      "destination": "/hi/google-review-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/vcard-qr-code-for-real-estate-agents",
+      "destination": "/hi/vcard-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/url-qr-code-for-event-tickets-registration",
+      "destination": "/hi/url-link-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/whatsapp-qr-code-for-customer-support",
+      "destination": "/hi/whatsapp-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/paypal-qr-code-for-donations",
+      "destination": "/hi/paypal-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/email-qr-code-for-newsletter-signup",
+      "destination": "/hi/email-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/app-store-qr-code-for-game-downloads",
+      "destination": "/hi/app-store-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/hi/youtube-qr-code-for-product-manuals",
+      "destination": "/hi/youtube-muph-t-onnlaain-kyuuaar-kodd-jnrettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/ko/pdf-qr-code-for-restaurant-menu",
+      "destination": "/ko/pdf-muryo-onrain-qr-kodeu-saengseonggi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ko/wifi-qr-code-for-cafe-hotel",
+      "destination": "/ko/wi-fi-muryo-onrain-qr-kodeu-saengseonggi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ko/google-review-qr-code-for-local-business",
+      "destination": "/ko/google-review-muryo-onrain-qr-kodeu-saengseonggi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ko/vcard-qr-code-for-real-estate-agents",
+      "destination": "/ko/vcard-muryo-onrain-qr-kodeu-saengseonggi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ko/url-qr-code-for-event-tickets-registration",
+      "destination": "/ko/url-link-muryo-onrain-qr-kodeu-saengseonggi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ko/whatsapp-qr-code-for-customer-support",
+      "destination": "/ko/whatsapp-muryo-onrain-qr-kodeu-saengseonggi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ko/paypal-qr-code-for-donations",
+      "destination": "/ko/paypal-muryo-onrain-qr-kodeu-saengseonggi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ko/email-qr-code-for-newsletter-signup",
+      "destination": "/ko/email-muryo-onrain-qr-kodeu-saengseonggi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ko/app-store-qr-code-for-game-downloads",
+      "destination": "/ko/app-store-muryo-onrain-qr-kodeu-saengseonggi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ko/youtube-qr-code-for-product-manuals",
+      "destination": "/ko/youtube-muryo-onrain-qr-kodeu-saengseonggi",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/pdf-qr-code-for-restaurant-menu",
+      "destination": "/ar/pdf-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/wifi-qr-code-for-cafe-hotel",
+      "destination": "/ar/wi-fi-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/google-review-qr-code-for-local-business",
+      "destination": "/ar/google-review-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/vcard-qr-code-for-real-estate-agents",
+      "destination": "/ar/vcard-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/url-qr-code-for-event-tickets-registration",
+      "destination": "/ar/url-link-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/whatsapp-qr-code-for-customer-support",
+      "destination": "/ar/whatsapp-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/paypal-qr-code-for-donations",
+      "destination": "/ar/paypal-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/email-qr-code-for-newsletter-signup",
+      "destination": "/ar/email-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/app-store-qr-code-for-game-downloads",
+      "destination": "/ar/app-store-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ar/youtube-qr-code-for-product-manuals",
+      "destination": "/ar/youtube-mwld-rmz-lstjb-lsryaa-mjny",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/pdf-qr-code-for-restaurant-menu",
+      "destination": "/ru/pdf-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/wifi-qr-code-for-cafe-hotel",
+      "destination": "/ru/wi-fi-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/google-review-qr-code-for-local-business",
+      "destination": "/ru/google-review-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/vcard-qr-code-for-real-estate-agents",
+      "destination": "/ru/vcard-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/url-qr-code-for-event-tickets-registration",
+      "destination": "/ru/url-link-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/whatsapp-qr-code-for-customer-support",
+      "destination": "/ru/whatsapp-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/paypal-qr-code-for-donations",
+      "destination": "/ru/paypal-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/email-qr-code-for-newsletter-signup",
+      "destination": "/ru/email-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/app-store-qr-code-for-game-downloads",
+      "destination": "/ru/app-store-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ru/youtube-qr-code-for-product-manuals",
+      "destination": "/ru/youtube-besplatnyy-generator-qr-kodov-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/codice-qr-pdf-per-il-menu-del-ristorante",
+      "destination": "/it/pdf-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/pdf-qr-code-for-restaurant-menu",
+      "destination": "/it/pdf-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/codice-qr-wifi-per-lhotel-bar",
+      "destination": "/it/wi-fi-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/wifi-qr-code-for-cafe-hotel",
+      "destination": "/it/wi-fi-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/codice-qr-per-la-revisione-di-google-per-attivita-commerciali-locali",
+      "destination": "/it/google-review-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/google-review-qr-code-for-local-business",
+      "destination": "/it/google-review-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/codice-qr-vcard-per-agenti-immobiliari",
+      "destination": "/it/vcard-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/vcard-qr-code-for-real-estate-agents",
+      "destination": "/it/vcard-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/codice-qr-url-per-la-registrazione-dei-biglietti-per-gli-eventi",
+      "destination": "/it/url-link-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/url-qr-code-for-event-tickets-registration",
+      "destination": "/it/url-link-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/codice-qr-whatsapp-per-lassistenza-clienti",
+      "destination": "/it/whatsapp-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/whatsapp-qr-code-for-customer-support",
+      "destination": "/it/whatsapp-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/codice-qr-paypal-per-le-donazioni",
+      "destination": "/it/paypal-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/paypal-qr-code-for-donations",
+      "destination": "/it/paypal-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/email-qr-code-for-newsletter-signup",
+      "destination": "/it/email-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/inviare-via-email-il-codice-qr-per-liscrizione-alla-newsletter",
+      "destination": "/it/email-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/app-store-qr-code-for-game-downloads",
+      "destination": "/it/app-store-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/codice-qr-dellapp-store-per-il-download-dei-giochi",
+      "destination": "/it/app-store-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/codice-qr-di-youtube-per-i-manuali-dei-prodotti",
+      "destination": "/it/youtube-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/it/youtube-qr-code-for-product-manuals",
+      "destination": "/it/youtube-generatore-di-codici-qr-gratis-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/pdf-qr-code-for-restaurant-menu",
+      "destination": "/tr/pdf-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/restoran-menusu-icin-pdf-qr-kodu",
+      "destination": "/tr/pdf-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/kafe-otel-icin-wifi-qr-kodu",
+      "destination": "/tr/wi-fi-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/wifi-qr-code-for-cafe-hotel",
+      "destination": "/tr/wi-fi-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/google-review-qr-code-for-local-business",
+      "destination": "/tr/google-review-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/google-yerel-isletmeler-icin-qr-kodunu-gozden-geciriyor",
+      "destination": "/tr/google-review-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/emlakclar-icin-vcard-qr-kodu",
+      "destination": "/tr/vcard-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/vcard-qr-code-for-real-estate-agents",
+      "destination": "/tr/vcard-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/etkinlik-biletleri-kayd-icin-url-qr-kodu",
+      "destination": "/tr/url-link-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/url-qr-code-for-event-tickets-registration",
+      "destination": "/tr/url-link-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/musteri-destegi-icin-whatsapp-qr-kodu",
+      "destination": "/tr/whatsapp-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/whatsapp-qr-code-for-customer-support",
+      "destination": "/tr/whatsapp-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/bagslar-icin-paypal-qr-kodu",
+      "destination": "/tr/paypal-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/paypal-qr-code-for-donations",
+      "destination": "/tr/paypal-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/bulten-kayd-icin-qr-kodunu-e-postayla-gonderin",
+      "destination": "/tr/email-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/email-qr-code-for-newsletter-signup",
+      "destination": "/tr/email-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/app-store-qr-code-for-game-downloads",
+      "destination": "/tr/app-store-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/oyun-indirmeleri-icin-uygulama-magazas-qr-kodu",
+      "destination": "/tr/app-store-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/urun-klavuzlar-icin-youtube-qr-kodu",
+      "destination": "/tr/youtube-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/tr/youtube-qr-code-for-product-manuals",
+      "destination": "/tr/youtube-ucretsiz-cevrimici-qr-kod-olusturucu",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/pdf-qr-code-for-restaurant-menu",
+      "destination": "/nl/pdf-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/pdf-qr-code-voor-restaurantmenu",
+      "destination": "/nl/pdf-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/wifi-qr-code-for-cafe-hotel",
+      "destination": "/nl/wi-fi-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/wifi-qr-code-voor-cafehotel",
+      "destination": "/nl/wi-fi-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/google-review-qr-code-for-local-business",
+      "destination": "/nl/google-review-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/google-review-qr-code-voor-lokaal-bedrijf",
+      "destination": "/nl/google-review-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/vcard-qr-code-for-real-estate-agents",
+      "destination": "/nl/vcard-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/vcard-qr-code-voor-makelaars-in-onroerend-goed",
+      "destination": "/nl/vcard-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/url-qr-code-for-event-tickets-registration",
+      "destination": "/nl/url-link-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/url-qr-code-voor-registratie-van-evenemententickets",
+      "destination": "/nl/url-link-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/whatsapp-qr-code-for-customer-support",
+      "destination": "/nl/whatsapp-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/whatsapp-qr-code-voor-klantenondersteuning",
+      "destination": "/nl/whatsapp-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/paypal-qr-code-for-donations",
+      "destination": "/nl/paypal-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/paypal-qr-code-voor-donaties",
+      "destination": "/nl/paypal-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/e-mail-qr-code-voor-aanmelding-op-de-nieuwsbrief",
+      "destination": "/nl/email-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/email-qr-code-for-newsletter-signup",
+      "destination": "/nl/email-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/app-store-qr-code-for-game-downloads",
+      "destination": "/nl/app-store-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/app-store-qr-code-voor-gamedownloads",
+      "destination": "/nl/app-store-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/youtube-qr-code-for-product-manuals",
+      "destination": "/nl/youtube-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/nl/youtube-qr-code-voor-producthandleidingen",
+      "destination": "/nl/youtube-gratis-qr-code-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/kod-qr-w-formacie-pdf-do-menu-restauracji",
+      "destination": "/pl/pdf-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/pdf-qr-code-for-restaurant-menu",
+      "destination": "/pl/pdf-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/kod-qr-wi-fi-dla-kawiarni-hotelowej",
+      "destination": "/pl/wi-fi-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/wifi-qr-code-for-cafe-hotel",
+      "destination": "/pl/wi-fi-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/google-review-qr-code-for-local-business",
+      "destination": "/pl/google-review-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/google-sprawdz-kod-qr-dla-lokalnej-firmy",
+      "destination": "/pl/google-review-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/kod-qr-vcard-dla-agentow-nieruchomosci",
+      "destination": "/pl/vcard-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/vcard-qr-code-for-real-estate-agents",
+      "destination": "/pl/vcard-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/url-kod-qr-do-rejestracji-biletow-na-wydarzenie",
+      "destination": "/pl/url-link-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/url-qr-code-for-event-tickets-registration",
+      "destination": "/pl/url-link-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/kod-qr-whatsapp-do-obsugi-klienta",
+      "destination": "/pl/whatsapp-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/whatsapp-qr-code-for-customer-support",
+      "destination": "/pl/whatsapp-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/kod-qr-paypal-dla-darowizn",
+      "destination": "/pl/paypal-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/paypal-qr-code-for-donations",
+      "destination": "/pl/paypal-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/email-qr-code-for-newsletter-signup",
+      "destination": "/pl/email-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/wyslij-e-mail-z-kodem-qr-umozliwiajacym-zapisanie-sie-do-newslettera",
+      "destination": "/pl/email-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/app-store-qr-code-for-game-downloads",
+      "destination": "/pl/app-store-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/kod-qr-sklepu-z-aplikacjami-do-pobierania-gier",
+      "destination": "/pl/app-store-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/kod-qr-youtube-dla-instrukcji-produktow",
+      "destination": "/pl/youtube-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/pl/youtube-qr-code-for-product-manuals",
+      "destination": "/pl/youtube-darmowy-generator-kodow-qr-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/pdf-qr-code-for-restaurant-menu",
+      "destination": "/sv/pdf-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/pdf-qr-kod-for-restaurangmeny",
+      "destination": "/sv/pdf-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/wifi-qr-code-for-cafe-hotel",
+      "destination": "/sv/wi-fi-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/wifi-qr-kod-for-cafehotell",
+      "destination": "/sv/wi-fi-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/google-recension-qr-kod-for-lokala-foretag",
+      "destination": "/sv/google-review-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/google-review-qr-code-for-local-business",
+      "destination": "/sv/google-review-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/vcard-qr-code-for-real-estate-agents",
+      "destination": "/sv/vcard-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/vcard-qr-kod-for-fastighetsmaklare",
+      "destination": "/sv/vcard-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/url-qr-code-for-event-tickets-registration",
+      "destination": "/sv/url-link-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/url-qr-kod-for-registrering-av-evenemangsbiljetter",
+      "destination": "/sv/url-link-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/whatsapp-qr-code-for-customer-support",
+      "destination": "/sv/whatsapp-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/whatsapp-qr-kod-for-kundsupport",
+      "destination": "/sv/whatsapp-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/paypal-qr-code-for-donations",
+      "destination": "/sv/paypal-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/paypal-qr-kod-for-donationer",
+      "destination": "/sv/paypal-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/email-qr-code-for-newsletter-signup",
+      "destination": "/sv/email-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/mejla-qr-kod-for-nyhetsbrevsregistrering",
+      "destination": "/sv/email-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/app-store-qr-code-for-game-downloads",
+      "destination": "/sv/app-store-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/app-store-qr-kod-for-nedladdning-av-spel",
+      "destination": "/sv/app-store-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/youtube-qr-code-for-product-manuals",
+      "destination": "/sv/youtube-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/sv/youtube-qr-kod-for-produktmanualer",
+      "destination": "/sv/youtube-gratis-qr-kod-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/ma-qr-pdf-cho-thuc-on-nha-hang",
+      "destination": "/vi/pdf-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/pdf-qr-code-for-restaurant-menu",
+      "destination": "/vi/pdf-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/ma-qr-wifi-cho-quan-ca-phe-khach-san",
+      "destination": "/vi/wi-fi-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/wifi-qr-code-for-cafe-hotel",
+      "destination": "/vi/wi-fi-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/google-anh-gia-ma-qr-cho-doanh-nghiep-ia-phuong",
+      "destination": "/vi/google-review-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/google-review-qr-code-for-local-business",
+      "destination": "/vi/google-review-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/ma-qr-vcard-danh-cho-ai-ly-bat-ong-san",
+      "destination": "/vi/vcard-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/vcard-qr-code-for-real-estate-agents",
+      "destination": "/vi/vcard-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/url-qr-code-e-ang-ky-ve-su-kien",
+      "destination": "/vi/url-link-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/url-qr-code-for-event-tickets-registration",
+      "destination": "/vi/url-link-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/ma-qr-whatsapp-e-ho-tro-khach-hang",
+      "destination": "/vi/whatsapp-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/whatsapp-qr-code-for-customer-support",
+      "destination": "/vi/whatsapp-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/ma-qr-paypal-e-quyen-gop",
+      "destination": "/vi/paypal-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/paypal-qr-code-for-donations",
+      "destination": "/vi/paypal-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/email-ma-qr-e-ang-ky-ban-tin",
+      "destination": "/vi/email-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/email-qr-code-for-newsletter-signup",
+      "destination": "/vi/email-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/app-store-qr-code-for-game-downloads",
+      "destination": "/vi/app-store-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/ma-qr-cua-hang-ung-dung-e-tai-xuong-tro-choi",
+      "destination": "/vi/app-store-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/ma-qr-youtube-cho-huong-dan-su-dung-san-pham",
+      "destination": "/vi/youtube-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/vi/youtube-qr-code-for-product-manuals",
+      "destination": "/vi/youtube-tao-ma-qr-mien-phi-truc-tuyen",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/pdf-qr-code-for-restaurant-menu",
+      "destination": "/th/pdf-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/wifi-qr-code-for-cafe-hotel",
+      "destination": "/th/wi-fi-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/google-review-qr-code-for-local-business",
+      "destination": "/th/google-review-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/vcard-qr-code-for-real-estate-agents",
+      "destination": "/th/vcard-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/url-qr-code-for-event-tickets-registration",
+      "destination": "/th/url-link-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/whatsapp-qr-code-for-customer-support",
+      "destination": "/th/whatsapp-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/paypal-qr-code-for-donations",
+      "destination": "/th/paypal-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/email-qr-code-for-newsletter-signup",
+      "destination": "/th/email-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/app-store-qr-code-for-game-downloads",
+      "destination": "/th/app-store-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/th/youtube-qr-code-for-product-manuals",
+      "destination": "/th/youtube-ekhruue-ngmuue-sraangkhiw-aarokhd-nailnfrii",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/pdf-qr-code-for-restaurant-menu",
+      "destination": "/el/pdf-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/wifi-qr-code-for-cafe-hotel",
+      "destination": "/el/wi-fi-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/google-review-qr-code-for-local-business",
+      "destination": "/el/google-review-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/vcard-qr-code-for-real-estate-agents",
+      "destination": "/el/vcard-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/url-qr-code-for-event-tickets-registration",
+      "destination": "/el/url-link-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/whatsapp-qr-code-for-customer-support",
+      "destination": "/el/whatsapp-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/paypal-qr-code-for-donations",
+      "destination": "/el/paypal-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/email-qr-code-for-newsletter-signup",
+      "destination": "/el/email-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/app-store-qr-code-for-game-downloads",
+      "destination": "/el/app-store-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/el/youtube-qr-code-for-product-manuals",
+      "destination": "/el/youtube-dorean-dimioyrgia-qr-code-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/pdf-qr-code-for-restaurant-menu",
+      "destination": "/cs/pdf-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/pdf-qr-kod-pro-menu-restaurace",
+      "destination": "/cs/pdf-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/wifi-qr-code-for-cafe-hotel",
+      "destination": "/cs/wi-fi-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/wifi-qr-kod-pro-kavarnu-hotelu",
+      "destination": "/cs/wi-fi-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/google-recenze-qr-kod-pro-mistni-firmu",
+      "destination": "/cs/google-review-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/google-review-qr-code-for-local-business",
+      "destination": "/cs/google-review-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/vcard-qr-code-for-real-estate-agents",
+      "destination": "/cs/vcard-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/vcard-qr-kod-pro-realitni-maklere",
+      "destination": "/cs/vcard-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/url-qr-code-for-event-tickets-registration",
+      "destination": "/cs/url-link-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/url-qr-kod-pro-registraci-vstupenek-na-akci",
+      "destination": "/cs/url-link-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/whatsapp-qr-code-for-customer-support",
+      "destination": "/cs/whatsapp-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/whatsapp-qr-kod-pro-zakaznickou-podporu",
+      "destination": "/cs/whatsapp-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/paypal-qr-code-for-donations",
+      "destination": "/cs/paypal-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/paypal-qr-kod-pro-dary",
+      "destination": "/cs/paypal-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/e-mailem-qr-kod-pro-prihlaseni-k-odberu-newsletteru",
+      "destination": "/cs/email-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/email-qr-code-for-newsletter-signup",
+      "destination": "/cs/email-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/app-store-qr-code-for-game-downloads",
+      "destination": "/cs/app-store-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/qr-kod-obchodu-s-aplikacemi-pro-stahovani-her",
+      "destination": "/cs/app-store-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/youtube-qr-code-for-product-manuals",
+      "destination": "/cs/youtube-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/cs/youtube-qr-kod-pro-produktove-manualy",
+      "destination": "/cs/youtube-zdarma-online-generator-qr-kodu",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/pdf-qr-code-for-restaurant-menu",
+      "destination": "/da/pdf-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/pdf-qr-kode-til-restaurantmenu",
+      "destination": "/da/pdf-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/wifi-qr-code-for-cafe-hotel",
+      "destination": "/da/wi-fi-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/wifi-qr-kode-til-cafehotel",
+      "destination": "/da/wi-fi-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/google-review-qr-code-for-local-business",
+      "destination": "/da/google-review-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/google-review-qr-kode-til-lokal-virksomhed",
+      "destination": "/da/google-review-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/vcard-qr-code-for-real-estate-agents",
+      "destination": "/da/vcard-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/vcard-qr-kode-til-ejendomsmglere",
+      "destination": "/da/vcard-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/url-qr-code-for-event-tickets-registration",
+      "destination": "/da/url-link-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/url-qr-kode-til-registrering-af-arrangementsbilletter",
+      "destination": "/da/url-link-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/whatsapp-qr-code-for-customer-support",
+      "destination": "/da/whatsapp-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/whatsapp-qr-kode-til-kundesupport",
+      "destination": "/da/whatsapp-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/paypal-qr-code-for-donations",
+      "destination": "/da/paypal-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/paypal-qr-kode-til-donationer",
+      "destination": "/da/paypal-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/e-mail-qr-kode-for-tilmelding-til-nyhedsbrev",
+      "destination": "/da/email-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/email-qr-code-for-newsletter-signup",
+      "destination": "/da/email-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/app-store-qr-code-for-game-downloads",
+      "destination": "/da/app-store-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/app-store-qr-kode-til-spildownloads",
+      "destination": "/da/app-store-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/youtube-qr-code-for-product-manuals",
+      "destination": "/da/youtube-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/da/youtube-qr-kode-til-produktmanualer",
+      "destination": "/da/youtube-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/pdf-qr-code-for-restaurant-menu",
+      "destination": "/fi/pdf-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/pdf-qr-koodi-ravintolamenulle",
+      "destination": "/fi/pdf-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/wifi-qr-code-for-cafe-hotel",
+      "destination": "/fi/wi-fi-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/wifi-qr-koodi-kahvilahotellille",
+      "destination": "/fi/wi-fi-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/google-arvostelun-qr-koodi-paikallisille-yrityksille",
+      "destination": "/fi/google-review-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/google-review-qr-code-for-local-business",
+      "destination": "/fi/google-review-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/vcard-qr-code-for-real-estate-agents",
+      "destination": "/fi/vcard-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/vcard-qr-koodi-kiinteistonvalittajille",
+      "destination": "/fi/vcard-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/url-qr-code-for-event-tickets-registration",
+      "destination": "/fi/url-link-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/url-qr-koodi-tapahtumalippujen-rekisterointia-varten",
+      "destination": "/fi/url-link-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/whatsapp-qr-code-for-customer-support",
+      "destination": "/fi/whatsapp-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/whatsapp-qr-koodi-asiakastukea-varten",
+      "destination": "/fi/whatsapp-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/paypal-qr-code-for-donations",
+      "destination": "/fi/paypal-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/paypal-qr-koodi-lahjoituksia-varten",
+      "destination": "/fi/paypal-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/email-qr-code-for-newsletter-signup",
+      "destination": "/fi/email-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/sahkoposti-qr-koodi-uutiskirjeen-tilaamista-varten",
+      "destination": "/fi/email-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/app-store-qr-code-for-game-downloads",
+      "destination": "/fi/app-store-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/app-storen-qr-koodi-pelien-lataamista-varten",
+      "destination": "/fi/app-store-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/youtube-qr-code-for-product-manuals",
+      "destination": "/fi/youtube-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/fi/youtube-qr-koodi-tuoteoppaita-varten",
+      "destination": "/fi/youtube-ilmainen-qr-koodigeneraattori-netissa",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/pdf-qr-code-for-restaurant-menu",
+      "destination": "/no/pdf-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/pdf-qr-kode-for-restaurantmeny",
+      "destination": "/no/pdf-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/wifi-qr-code-for-cafe-hotel",
+      "destination": "/no/wi-fi-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/wifi-qr-kode-for-kafehotell",
+      "destination": "/no/wi-fi-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/google-anmeldelse-qr-kode-for-lokal-virksomhet",
+      "destination": "/no/google-review-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/google-review-qr-code-for-local-business",
+      "destination": "/no/google-review-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/vcard-qr-code-for-real-estate-agents",
+      "destination": "/no/vcard-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/vcard-qr-kode-for-eiendomsmeglere",
+      "destination": "/no/vcard-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/url-qr-code-for-event-tickets-registration",
+      "destination": "/no/url-link-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/url-qr-kode-for-registrering-av-arrangementsbilletter",
+      "destination": "/no/url-link-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/whatsapp-qr-code-for-customer-support",
+      "destination": "/no/whatsapp-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/whatsapp-qr-kode-for-kundesttte",
+      "destination": "/no/whatsapp-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/paypal-qr-code-for-donations",
+      "destination": "/no/paypal-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/paypal-qr-kode-for-donasjoner",
+      "destination": "/no/paypal-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/e-post-qr-kode-for-pamelding-til-nyhetsbrev",
+      "destination": "/no/email-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/email-qr-code-for-newsletter-signup",
+      "destination": "/no/email-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/app-store-qr-code-for-game-downloads",
+      "destination": "/no/app-store-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/app-store-qr-kode-for-nedlasting-av-spill",
+      "destination": "/no/app-store-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/youtube-qr-code-for-product-manuals",
+      "destination": "/no/youtube-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/no/youtube-qr-kode-for-produktmanualer",
+      "destination": "/no/youtube-gratis-qr-kode-generator-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/pdf-qr-code-for-restaurant-menu",
+      "destination": "/hu/pdf-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/pdf-qr-kod-az-etterem-menujehez",
+      "destination": "/hu/pdf-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/wifi-qr-code-for-cafe-hotel",
+      "destination": "/hu/wifi-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/wifi-qr-kod-a-kavezo-szallodahoz",
+      "destination": "/hu/wifi-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/google-ertekeles-qr-kod-a-helyi-vallalkozasok-szamara",
+      "destination": "/hu/google-review-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/google-review-qr-code-for-local-business",
+      "destination": "/hu/google-review-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/vcard-qr-code-for-real-estate-agents",
+      "destination": "/hu/vcard-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/vcard-qr-kod-ingatlanugynokok-szamara",
+      "destination": "/hu/vcard-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/url-qr-code-for-event-tickets-registration",
+      "destination": "/hu/url-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/url-qr-kod-az-esemenyjegyek-regisztraciojahoz",
+      "destination": "/hu/url-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/whatsapp-qr-code-for-customer-support",
+      "destination": "/hu/whatsapp-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/whatsapp-qr-kod-az-ugyfelszolgalathoz",
+      "destination": "/hu/whatsapp-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/paypal-qr-code-for-donations",
+      "destination": "/hu/paypal-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/paypal-qr-kod-adomanyokhoz",
+      "destination": "/hu/paypal-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/e-mailben-qr-kodot-a-hirlevelre-valo-feliratkozashoz",
+      "destination": "/hu/e-mail-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/email-qr-code-for-newsletter-signup",
+      "destination": "/hu/e-mail-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/app-store-qr-code-for-game-downloads",
+      "destination": "/hu/app-store-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/app-store-qr-kod-a-jatekok-letoltesehez",
+      "destination": "/hu/app-store-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/youtube-qr-code-for-product-manuals",
+      "destination": "/hu/youtube-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/hu/youtube-qr-kod-a-termek-kezikonyvehez",
+      "destination": "/hu/youtube-ingyenes-online-qr-kod-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/cod-qr-pdf-pentru-meniul-restaurantului",
+      "destination": "/ro/pdf-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/pdf-qr-code-for-restaurant-menu",
+      "destination": "/ro/pdf-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/cod-qr-wifi-pentru-cafenea-hotel",
+      "destination": "/ro/wi-fi-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/wifi-qr-code-for-cafe-hotel",
+      "destination": "/ro/wi-fi-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/google-review-qr-code-for-local-business",
+      "destination": "/ro/google-review-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/google-review-qr-code-pentru-afaceri-locale",
+      "destination": "/ro/google-review-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/cod-qr-vcard-pentru-agentii-imobiliari",
+      "destination": "/ro/vcard-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/vcard-qr-code-for-real-estate-agents",
+      "destination": "/ro/vcard-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/cod-qr-url-pentru-inregistrarea-biletelor-la-eveniment",
+      "destination": "/ro/url-link-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/url-qr-code-for-event-tickets-registration",
+      "destination": "/ro/url-link-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/cod-qr-whatsapp-pentru-asistenta-clienti",
+      "destination": "/ro/whatsapp-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/whatsapp-qr-code-for-customer-support",
+      "destination": "/ro/whatsapp-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/cod-qr-paypal-pentru-donatii",
+      "destination": "/ro/paypal-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/paypal-qr-code-for-donations",
+      "destination": "/ro/paypal-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/e-mail-cod-qr-pentru-inscrierea-la-newsletter",
+      "destination": "/ro/email-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/email-qr-code-for-newsletter-signup",
+      "destination": "/ro/email-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/app-store-qr-code-for-game-downloads",
+      "destination": "/ro/app-store-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/cod-qr-din-magazinul-de-aplicatii-pentru-descarcari-de-jocuri",
+      "destination": "/ro/app-store-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/cod-qr-youtube-pentru-manualele-produselor",
+      "destination": "/ro/youtube-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro/youtube-qr-code-for-product-manuals",
+      "destination": "/ro/youtube-generator-de-coduri-qr-gratuit-online",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/pdf-qr-code-for-restaurant-menu",
+      "destination": "/uk/pdf-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/wifi-qr-code-for-cafe-hotel",
+      "destination": "/uk/wi-fi-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/google-review-qr-code-for-local-business",
+      "destination": "/uk/google-review-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/vcard-qr-code-for-real-estate-agents",
+      "destination": "/uk/vcard-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/url-qr-code-for-event-tickets-registration",
+      "destination": "/uk/url-link-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/whatsapp-qr-code-for-customer-support",
+      "destination": "/uk/whatsapp-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/paypal-qr-code-for-donations",
+      "destination": "/uk/paypal-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/email-qr-code-for-newsletter-signup",
+      "destination": "/uk/email-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/app-store-qr-code-for-game-downloads",
+      "destination": "/uk/app-store-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/uk/youtube-qr-code-for-product-manuals",
+      "destination": "/uk/youtube-bezkoshtovniy-generator-qr-kodiv-onlayn",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/kod-qr-pdf-untuk-menu-restoran",
+      "destination": "/ms/pdf-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/pdf-qr-code-for-restaurant-menu",
+      "destination": "/ms/pdf-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/kod-qr-wifi-untuk-hotel-kafe",
+      "destination": "/ms/wi-fi-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/wifi-qr-code-for-cafe-hotel",
+      "destination": "/ms/wi-fi-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/google-review-qr-code-for-local-business",
+      "destination": "/ms/google-review-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/ulasan-google-kod-qr-untuk-perniagaan-tempatan",
+      "destination": "/ms/google-review-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/kod-qr-vcard-untuk-ejen-hartanah",
+      "destination": "/ms/vcard-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/vcard-qr-code-for-real-estate-agents",
+      "destination": "/ms/vcard-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/kod-qr-url-untuk-pendaftaran-tiket-acara",
+      "destination": "/ms/url-link-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/url-qr-code-for-event-tickets-registration",
+      "destination": "/ms/url-link-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/whatsapp-kod-qr-untuk-sokongan-pelanggan",
+      "destination": "/ms/whatsapp-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/whatsapp-qr-code-for-customer-support",
+      "destination": "/ms/whatsapp-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/kod-qr-paypal-untuk-derma",
+      "destination": "/ms/paypal-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/paypal-qr-code-for-donations",
+      "destination": "/ms/paypal-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/e-mel-kod-qr-untuk-pendaftaran-surat-berita",
+      "destination": "/ms/email-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/email-qr-code-for-newsletter-signup",
+      "destination": "/ms/email-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/app-store-qr-code-for-game-downloads",
+      "destination": "/ms/app-store-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/kedai-aplikasi-kod-qr-untuk-muat-turun-permainan",
+      "destination": "/ms/app-store-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/kod-qr-youtube-untuk-manual-produk",
+      "destination": "/ms/youtube-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/ms/youtube-qr-code-for-product-manuals",
+      "destination": "/ms/youtube-penjana-kod-qr-percuma-dalam-talian",
+      "statusCode": 301
+    },
+    {
+      "source": "/tl/tl-pdf-qr-code-for-restaurant-menu",
+      "destination": "/tl/pdf-libreng-online-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tl/tl-wifi-qr-code-for-cafe-hotel",
+      "destination": "/tl/wi-fi-libreng-online-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tl/tl-google-review-qr-code-for-local-business",
+      "destination": "/tl/google-review-libreng-online-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tl/tl-vcard-qr-code-for-real-estate-agents",
+      "destination": "/tl/vcard-libreng-online-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tl/tl-url-qr-code-for-event-tickets-registration",
+      "destination": "/tl/url-link-libreng-online-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tl/tl-whatsapp-qr-code-for-customer-support",
+      "destination": "/tl/whatsapp-libreng-online-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tl/tl-paypal-qr-code-for-donations",
+      "destination": "/tl/paypal-libreng-online-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tl/tl-email-qr-code-for-newsletter-signup",
+      "destination": "/tl/email-libreng-online-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tl/tl-app-store-qr-code-for-game-downloads",
+      "destination": "/tl/app-store-libreng-online-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/tl/tl-youtube-qr-code-for-product-manuals",
+      "destination": "/tl/youtube-libreng-online-qr-code-generator",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/pdf-qr-code-for-restaurant-menu",
+      "destination": "/bn/pdf-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/wifi-qr-code-for-cafe-hotel",
+      "destination": "/bn/wi-fi-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/google-review-qr-code-for-local-business",
+      "destination": "/bn/google-review-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/vcard-qr-code-for-real-estate-agents",
+      "destination": "/bn/vcard-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/url-qr-code-for-event-tickets-registration",
+      "destination": "/bn/url-link-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/whatsapp-qr-code-for-customer-support",
+      "destination": "/bn/whatsapp-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/paypal-qr-code-for-donations",
+      "destination": "/bn/paypal-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/email-qr-code-for-newsletter-signup",
+      "destination": "/bn/email-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/app-store-qr-code-for-game-downloads",
+      "destination": "/bn/app-store-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
+    },
+    {
+      "source": "/bn/youtube-qr-code-for-product-manuals",
+      "destination": "/bn/youtube-phri-anlaain-kiuaar-kodd-jenaarettr",
+      "statusCode": 301
     }
   ],
   "headers": [
-    {
-      "source": "/:lang(id|es|fr|de|pt|zh|ja|hi|ko|ar|ru|it|tr|nl|pl|sv|vi|th|el|cs|da|fi|no|hu|ro|uk|ms|tl|bn)(/.*)?",
-      "headers": [
-        {
-          "key": "Link",
-          "value": "<https://createmy-qr.com/llms-:lang.txt>; rel=\"llms-txt\""
-        }
-      ]
-    },
     {
       "source": "/(.*)",
       "headers": [
         {
           "key": "Link",
           "value": "<https://createmy-qr.com/llms.txt>; rel=\"llms-txt\""
+        }
+      ]
+    },
+    {
+      "source": "/:lang(id|es|fr|de|pt|zh|ja|hi|ko|ar|ru|it|tr|nl|pl|sv|vi|th|el|cs|da|fi|no|hu|ro|uk|ms|tl|bn)(/.*)?",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "<https://createmy-qr.com/llms-:lang.txt>; rel=\"llms-txt\""
         }
       ]
     },

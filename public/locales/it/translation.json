@@ -37,7 +37,9 @@
     "booking": "Prenotazione",
     "file": "File",
     "scanbarcode": "Lettore di codici a barre",
-    "bulk": "QR e codici a barre in blocco"
+    "bulk": "QR e codici a barre in blocco",
+    "barcode": "Generatore di codici a barre gratuito",
+    "scanqr": "Scansiona il codice QR online"
   },
   "form": {
     "enterUrl": "Inserisci l'URL del tuo sito web",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Generatore di Codici QR Gratis Online (2026)",
-    "body": "CreateMeQR è la soluzione ideale per menu digitali di ristoranti e pizzerie in Italia, condivisione Wi-Fi in hotel e biglietti da visita digitali (vCard). Conforme al 100% al GDPR europeo: l'elaborazione avviene localmente nel tuo browser in meno di 12ms. Scarica file vettoriali SVG e PNG ad alta risoluzione gratis per sempre, senza filigrana né scadenza. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "CreateMy-QR è la soluzione ideale per menu digitali di ristoranti e pizzerie in Italia, condivisione Wi-Fi in hotel e biglietti da visita digitali (vCard). Conforme al 100% al GDPR europeo: l'elaborazione avviene localmente nel tuo browser in meno di 12ms. Scarica file vettoriali SVG e PNG ad alta risoluzione gratis per sempre, senza filigrana né scadenza. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "trasformare link in qr code, come creare un qr code da un link, generatore qr code gratis per url, creare qr code con logo gratis senza registrazione, generatore qr code senza filigrana, qr code per password wifi gratis, creare biglietto da visita vcard qr online, qr code per recensioni google, generatore qr code dinamico gratis, qr code permanente senza data di scadenza, scaricare qr code in formato vettoriale svg gratis, generatore qr code alta risoluzione png, generatore qr code privato nel browser, creare qr code con colori e sfumature, come fare qr code per link whatsapp, qr code per menu ristorante pdf, creare qr code senza login o carta di credito, miglior generatore qr code gratis 2026, qr code con alta correzione di errore livello q h, generatore qr code con scansioni illimitate, inserire foto o logo al centro del qr code, qr code per biglietti di eventi, generatore qr code posizione google maps, qr code per inviare email mailto, qr code per inviare messaggio sms, creare qr code per telefonata diretta, qr code con sfondo trasparente svg, design personalizzato degli occhi del qr code, stile punti arrotondati per qr code, qr code alta qualità per stampa biglietti da visita, generatore qr code senza pubblicità o popup, il generatore qr code online più veloce, qr code per link instagram facebook youtube",
   "landing": {
@@ -1323,7 +1325,7 @@
     "heroTitle": "Il Generatore di QR Code Che",
     "heroTitleHighlight": "Non Scade Mai.",
     "seoTitle": "CreateMy-QR — Generatore QR Code & Barcode Gratuito | 37 Strumenti Online",
-    "seoDesc": "Genera 37 tipi di codici QR e codici a barre gratuitamente. Download istantaneo lato client, codici statici senza scadenza, conformi a ISO/IEC 18004, in 30 lingue.",
+    "seoDesc": "Crea 37 tipi di codici QR e codici a barre gratis. Download istantaneo nel browser, codici statici senza scadenza, norma ISO/IEC 18004 in 30 lingue.",
     "badge": "ISO/IEC 18004 · Privacy Garantita · Zero Tracciamento · Lato Client",
     "heroSubtitle": "Crea codici QR e codici a barre permanenti e pronti per la stampa direttamente nel tuo browser. Generazione di core affidabile con privacy preservata sul lato client.",
     "citation": "\"Il QR Code è uno standard internazionale (ISO/IEC 18004:2015). I codici a barre matriciali richiedono griglie di moduli pulite per una scansione affidabile su tutti i lettori conformi.\"",
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Fondamenti scientifici e ingegneristici",
       "title": "Basato su standard globali verificati e ricerca accademica",
-      "subtitle": "CreateMeQR implementa specifiche aperte di ISO, IEEE e NIST per fornire precisione matematica e sicurezza Zero Trust lato client.",
+      "subtitle": "CreateMy-QR implementa specifiche aperte di ISO, IEEE e NIST per fornire precisione matematica e sicurezza Zero Trust lato client.",
       "card1Title": "ISO/IEC 18004 Specifica",
       "card1Desc": "Piena aderenza agli standard internazionali di simbologia della matrice dei codici QR con schemi di ricerca 1:1:3:1:1 e zone silenziose a 4 moduli.",
       "card1Meta": "Organizzazione internazionale per la standardizzazione",
@@ -1869,7 +1871,7 @@
       "subtitle": "La nostra architettura lato client è direttamente informata da una ricerca peer-reviewed che analizza il dirottamento del reindirizzamento QR e l'integrità dei dati Zero Trust.",
       "paper1Title": "Quishing e vulnerabilità di reindirizzamento lato server",
       "paper1Cite": "Krombholz et al., Conferenza internazionale IEEE su disponibilità, affidabilità e sicurezza (ARES 2015)",
-      "paper1Desc": "La ricerca accademica dimostra che i server di reindirizzamento intermediari introducono singoli punti di errore, dirottamento degli URL e telemetria senza consenso. CreateMeQR elimina questi vettori attraverso la generazione statica al 100% lato client.",
+      "paper1Desc": "La ricerca accademica dimostra che i server di reindirizzamento intermediari introducono singoli punti di errore, dirottamento degli URL e telemetria senza consenso. CreateMy-QR elimina questi vettori attraverso la generazione statica al 100% lato client.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Crittografia nel browser a conoscenza zero",
       "paper2Cite": "NIST SP 800-207 Architettura Zero Trust e standard di crittografia Web W3C",
@@ -1885,7 +1887,7 @@
       "card2Title": "Standard aperti e rinuncia al brevetto",
       "card2Desc": "Denso Wave ha scelto di non esercitare i propri diritti di brevetto, consentendo alla specifica QR di diventare uno standard internazionale aperto (ISO/IEC 18004).",
       "card3Title": "Implementazione lato client",
-      "card3Desc": "CreateMeQR implementa algoritmi standard di generazione di matrici ISO/IEC 18004 direttamente nella memoria del browser locale senza server intermedi."
+      "card3Desc": "CreateMy-QR implementa algoritmi standard di generazione di matrici ISO/IEC 18004 direttamente nella memoria del browser locale senza server intermedi."
     },
     "compareEvidence": {
       "badge": "Confronto della sicurezza architettonica",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Dirottamento del reindirizzamento: i server cloud possono modificare la destinazione QR in qualsiasi momento.",
       "col1Point2": "Tracciamento e rilevamento delle impronte digitali: i server intermediari registrano l'IP, il dispositivo e la posizione dello scanner.",
       "col1Point3": "Blocco del fornitore e paywall: i collegamenti scadono se scadono i pagamenti dell'abbonamento mensile.",
-      "col2Title": "CreateMeQR Sicurezza lato client",
+      "col2Title": "CreateMy-QR Sicurezza lato client",
       "col2Point1": "Carico utile immutabile: codificato direttamente nella matrice grezza; impossibile da dirottare.",
       "col2Point2": "Zero Intermediary Logging: scansione diretta punto a punto senza intermediari.",
       "col2Point3": "Permanente e indistruttibile: i codici statici non scadono mai, con zero costi di scansione o rischio di arresto per sempre."

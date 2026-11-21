@@ -120,7 +120,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
               <div className="hq-tg-chat-item active">
                 <div className="hq-tg-chat-avatar"><Bot size={24} /></div>
                 <div style={{ overflow: 'hidden' }}>
-                  <div style={{ fontWeight: 600, fontSize: 15 }}>CreateMeQR Bot</div>
+                  <div style={{ fontWeight: 600, fontSize: 15 }}>CreateMy-QR Bot</div>
                   <div style={{ fontSize: 14, whiteSpace: 'nowrap', textOverflow: 'ellipsis', overflow: 'hidden' }}>Your QR is ready!</div>
                 </div>
               </div>
@@ -130,7 +130,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
           <div className="hq-tg-main">
             <div className="hq-tg-header">
               <div>
-                <div style={{ fontWeight: 600, fontSize: 16 }}>CreateMeQR Bot</div>
+                <div style={{ fontWeight: 600, fontSize: 16 }}>CreateMy-QR Bot</div>
                 <div style={{ fontSize: 13, color: 'var(--hq-accent)' }}>bot</div>
               </div>
             </div>
@@ -140,7 +140,7 @@ function LayoutTelegram({ qrType = 'telegram' }) {
                 /start
               </div>
               <div className="hq-tg-msg hq-tg-msg-in">
-                Welcome to CreateMeQR! Generating your secure, client-side QR codes natively in the browser. 🚀
+                Welcome to CreateMy-QR! Generating your secure, client-side QR codes natively in the browser. 🚀
               </div>
               <div className="hq-tg-msg hq-tg-msg-in">
                 <strong>Fast & Secure</strong><br/>

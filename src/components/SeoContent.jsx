@@ -5,7 +5,7 @@ export default function SeoContent() {
   const { t } = useTranslation();
 
   return (
-    <main id="static-seo" role="main" className="w-full bg-white dark:bg-zinc-950 py-16 px-6 border-t border-zinc-200 dark:border-zinc-800">
+    <div id="static-seo" role="main" className="w-full bg-white dark:bg-zinc-950 py-16 px-6 border-t border-zinc-200 dark:border-zinc-800">
       <div className="max-w-4xl mx-auto prose prose-zinc dark:prose-invert">
         <article itemScope itemType="https://schema.org/Article">
 
@@ -143,6 +143,6 @@ export default function SeoContent() {
           </details>
         </article>
       </div>
-    </main>
+    </div>
   );
 }

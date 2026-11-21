@@ -37,7 +37,9 @@
     "booking": "Reserva",
     "file": "Archivo",
     "scanbarcode": "Escáner de código de barras",
-    "bulk": "QR y código de barras masivos"
+    "bulk": "QR y código de barras masivos",
+    "barcode": "Generador de códigos de barras gratuito",
+    "scanqr": "Escanear código QR en línea"
   },
   "form": {
     "enterUrl": "Introduce la URL de tu sitio web",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Guía Definitiva para la Creación de Códigos QR Gratis y Sin Marca de Agua (2026)",
-    "body": "Al buscar el mejor generador de códigos QR gratis en español, las empresas necesitan una herramienta confiable para enlaces URL, redes WiFi WPA3, ubicaciones GPS y tarjetas vCard. CreateMeQR ofrece exportación en formatos vectoriales SVG y EPS sin suscripciones ni cuotas ocultas."
+    "body": "Al buscar el mejor generador de códigos QR gratis en español, las empresas necesitan una herramienta confiable para enlaces URL, redes WiFi WPA3, ubicaciones GPS y tarjetas vCard. CreateMy-QR ofrece exportación en formatos vectoriales SVG y EPS sin suscripciones ni cuotas ocultas."
   },
   "seoKeywords": "convertir enlace a codigo qr, hacer qr de un link, crear codigo qr para web, generador de codigo qr de enlace gratis, codigo qr con logo gratis, crear codigo qr sin fecha de caducidad, generador de codigos qr sin marca de agua, codigo qr para contraseña de wifi, crear tarjeta de visita vcard qr online, codigo qr para reseñas de google gratis, generador de codigo qr dinamic gratis, descargar codigo qr en vector svg gratis, codigo qr alta resolucion png, generador de qr privado en navegador, crear codigo qr con colores y degradado, como hacer codigo qr para enlace de whatsapp, codigo qr para menu de restaurante pdf, crear codigo qr sin registro ni suscripcion, mejor generador de codigos qr 2026, codigo qr con alta correccion de errores, generador de codigos qr ilimitados gratis, poner foto o logo en el centro del qr, codigo qr para entradas de eventos, generador de qr para ubicacion en google maps, codigo qr para enviar correo mailto, codigo qr para enviar mensaje sms, crear codigo qr para llamar por telefono, codigo qr con fondo transparente svg, diseño personalizado de ojos qr, estilo de puntos con bordes redondeados, codigo qr para imprimir en tarjetas de presentacion, generador de qr sin publicidad ni anuncios, el generador de qr mas rapido online, codigo qr para enlace de instagram facebook, codigo qr para video de youtube, codigo qr para playlist de spotify, codigo qr para perfil de linkedin, codigo qr para pago con bizum o paypal, codigo qr para tienda online e-commerce, codigo qr para descargar app movil, codigo qr para reunion de zoom o teams, codigo qr para archivos en la nube google drive, codigo qr para catalogo digital de productos",
   "landing": {
@@ -1321,7 +1323,7 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Generador de Códigos QR y Barras Gratis | 37 Herramientas Online",
-    "seoDesc": "Genera 37 tipos de códigos QR y códigos de barras gratis. Descarga instantánea en el navegador, sin códigos estáticos que venzan, estándar ISO/IEC 18004 en 30 idiomas.",
+    "seoDesc": "Crea 37 tipos de códigos QR y barras gratis. Descarga instantánea en tu navegador, códigos estáticos sin caducidad, estándar ISO/IEC 18004 en 30 idiomas.",
     "badge": "ISO/IEC 18004 · Privacidad Primero · Sin Rastreo · En Navegador",
     "heroTitle": "El Generador de Códigos QR Que",
     "heroTitleHighlight": "Nunca Caduca.",
@@ -1698,8 +1700,8 @@
     }
   },
   "rating": {
-    "title": "Con la confianza de millones",
-    "subtitle": "Calificado 4.9/5 basado en 15,432 reseñas en más de 30 países. Privacidad Primero, Seguro y en Navegador."
+    "title": "Built for Privacy & Permanence",
+    "subtitle": "100% Client-Side WebAssembly Engine. ISO/IEC 18004 Compliant across 30+ languages with Zero Server Uploads."
   },
   "pseo": {
     "insights_badge": "GUÍA PRO",
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Fundamentos científicos y de ingeniería",
       "title": "Basado en estándares globales verificados e investigaciones académicas",
-      "subtitle": "CreateMeQR implementa especificaciones abiertas de ISO, IEEE y NIST para ofrecer precisión matemática y seguridad de confianza cero del lado del cliente.",
+      "subtitle": "CreateMy-QR implementa especificaciones abiertas de ISO, IEEE y NIST para ofrecer precisión matemática y seguridad de confianza cero del lado del cliente.",
       "card1Title": "ISO/IEC 18004 Especificación",
       "card1Desc": "Cumplimiento total de los estándares internacionales de simbología de matriz de códigos QR con patrones de buscador 1:1:3:1:1 y zonas silenciosas de 4 módulos.",
       "card1Meta": "Organización Internacional de Normalización",
@@ -1869,7 +1871,7 @@
       "subtitle": "Nuestra arquitectura del lado del cliente se basa directamente en investigaciones revisadas por pares que analizan el secuestro de redireccionamiento de QR y la integridad de los datos de confianza cero.",
       "paper1Title": "Vulnerabilidades de quishing y redireccionamiento del lado del servidor",
       "paper1Cite": "Krombholz et al., Conferencia internacional IEEE sobre disponibilidad, confiabilidad y seguridad (ARES 2015)",
-      "paper1Desc": "La investigación académica demuestra que los servidores de redireccionamiento intermediarios introducen puntos únicos de falla, secuestro de URL y telemetría no consentida. CreateMeQR elimina estos vectores mediante una generación 100% estática del lado del cliente.",
+      "paper1Desc": "La investigación académica demuestra que los servidores de redireccionamiento intermediarios introducen puntos únicos de falla, secuestro de URL y telemetría no consentida. CreateMy-QR elimina estos vectores mediante una generación 100% estática del lado del cliente.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Criptografía en el navegador con conocimiento cero",
       "paper2Cite": "NIST SP 800-207 Arquitectura Zero Trust y estándares de criptografía web W3C",
@@ -1885,7 +1887,7 @@
       "card2Title": "Estándar abierto y exención de patente",
       "card2Desc": "Denso Wave decidió no ejercer sus derechos de patente, lo que permitió que la especificación QR se convirtiera en un estándar internacional abierto (ISO/IEC 18004).",
       "card3Title": "Implementación del lado del cliente",
-      "card3Desc": "CreateMeQR implementa algoritmos de generación de matrices estándar ISO/IEC 18004 directamente en la memoria del navegador local sin servidores intermediarios."
+      "card3Desc": "CreateMy-QR implementa algoritmos de generación de matrices estándar ISO/IEC 18004 directamente en la memoria del navegador local sin servidores intermediarios."
     },
     "compareEvidence": {
       "badge": "Comparación de seguridad arquitectónica",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Secuestro de redireccionamiento: los servidores en la nube pueden cambiar su destino QR en cualquier momento.",
       "col1Point2": "Seguimiento y toma de huellas dactilares: los servidores intermediarios registran la IP, el dispositivo y la ubicación del escáner.",
       "col1Point3": "Bloqueo de proveedores y muros de pago: los enlaces caducan si caducan los pagos de suscripción mensual.",
-      "col2Title": "CreateMeQR Seguridad del lado del cliente",
+      "col2Title": "CreateMy-QR Seguridad del lado del cliente",
       "col2Point1": "Carga útil inmutable: codificada directamente en una matriz sin formato; imposible de secuestrar.",
       "col2Point2": "Registro sin intermediarios: escaneo directo punto a punto sin intermediarios.",
       "col2Point3": "Permanente e irrompible: los códigos estáticos nunca caducan, sin tarifas de escaneo ni riesgo de apagado para siempre."

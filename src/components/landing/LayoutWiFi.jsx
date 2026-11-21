@@ -190,7 +190,7 @@ function LayoutWiFi({ qrType = 'wifi' }) {
         </div>
 
         <div style={{ textAlign: 'center', marginBottom: 40 }}>
-          <h2 className="font-bold tracking-tighter " style={{ fontSize: 'clamp(32px, 4vw, 48px)' }}>{t.stepsTitle} {typeName}</h2>
+          <h2 className="font-bold tracking-tighter " style={{ fontSize: 'clamp(32px, 4vw, 48px)' }}>{t.stepsTitle} {typeName} QR</h2>
         </div>
 
         <div className="hq-step-cards">
@@ -211,7 +211,7 @@ function LayoutWiFi({ qrType = 'wifi' }) {
       <div className="hq-faq-section">
         <div className="hq-container" style={{ maxWidth: 800 }}>
           <h2 className="font-bold tracking-tighter " style={{ paddingTop: 0, fontSize: 'clamp(32px, 5vw, 48px)',  textAlign: 'center', marginBottom: 40 }}>
-            {t.faqTitle} {typeName}
+            {typeName} — {t.faqTitle}
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {[1, 2, 3, 4, 5].map((num, i) => {

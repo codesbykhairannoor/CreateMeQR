@@ -37,7 +37,9 @@
     "booking": "Foglalás",
     "file": "Fájl",
     "bulk": "Tömeges QR és vonalkód",
-    "scanbarcode": "Vonalkód olvasó"
+    "scanbarcode": "Vonalkód olvasó",
+    "barcode": "Ingyenes vonalkód generátor",
+    "scanqr": "QR-kód beolvasása online"
   },
   "form": {
     "enterUrl": "Adja meg webhelyének URL-jét",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Ingyenes Online QR-kód Generátor (2026)",
-    "body": "A CreateMeQR a legjobb eszköz azonnali fizetési linkekhez, magyarországi éttermi digitális étlapokhoz és vCard névjegykártyákhoz. A teljes adatfeldolgozás helyben, az Ön böngészőjében történik kevesebb mint 12 ezredmásodperc alatt, felhőalapú megfigyelés nélkül. Töltsön le nagy felbontású SVG és PNG vektorfájlokat vízjel és lejárati idő nélkül. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "A CreateMy-QR a legjobb eszköz azonnali fizetési linkekhez, magyarországi éttermi digitális étlapokhoz és vCard névjegykártyákhoz. A teljes adatfeldolgozás helyben, az Ön böngészőjében történik kevesebb mint 12 ezredmásodperc alatt, felhőalapú megfigyelés nélkül. Töltsön le nagy felbontású SVG és PNG vektorfájlokat vízjel és lejárati idő nélkül. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "link alakítása qr kóddá, hogyan készítsünk qr kódot linkből, ingyenes qr kód generátor url hez, qr kód készítés logóval ingyen regisztráció nélkül, qr kód generátor vízjel nélkül, qr kód wifi jelszóhoz ingyen, digitális névjegykártya vcard qr készítés online, qr kód google értékelésekhez ingyen, ingyenes dinamikus qr kód generátor, permanens qr kód lejárati idő nélkül, vektoros svg qr kód letöltés ingyen, nagy felbontású png qr kód generátor, biztonságos böngésző alapú qr kód generátor, qr kód készítés színekkel és színátmenettel, hogyan készítsünk qr kódot whatsapp linkhez, qr kód éttermi menühöz pdf, qr kód készítés bejelentkezés vagy fizetés nélkül, legjobb ingyenes qr kód generátor 2026, magas hibajavítási szintű q h qr kód, korlátlan szkennelésű ingyenes qr kód, kép vagy logó elhelyezése a qr kód közepén, qr kód rendezvények jegyeihez, google maps helyszín qr kód generátor, qr kód e-mail küldéséhez mailto, qr kód sms üzenet küldéséhez, qr kód készítés közvetlen telefonhíváshoz, qr kód átlátszó háttérrel svg, egyedi qr kód szem dizájn, kerekített pont stílusú qr kód, kiváló minőségű qr kód névjegykártya nyomtatáshoz, qr kód generátor reklámok és felugró ablakok nélkül, leggyorsabb online qr kód készítő, qr kód instagram facebook youtube linkhez",
   "landing": {
@@ -1259,7 +1261,7 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Ingyenes QR-kód- és vonalkódgenerátor |37 Online eszközök",
-    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "seoDesc": "Készítsen ingyen 37-féle QR- és vonalkódot. Azonnali letöltés a böngészőben, lejárat nélküli statikus kódok, ISO/IEC 18004 30 nyelven.",
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "A QR-kód Generátor, Ami",
     "heroTitleHighlight": "Soha Nem Jár Le.",
@@ -1636,8 +1638,8 @@
     }
   },
   "rating": {
-    "title": "Milliók megbíznak benne",
-    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
+    "title": "Built for Privacy & Permanence",
+    "subtitle": "100% Client-Side WebAssembly Engine. ISO/IEC 18004 Compliant across 30+ languages with Zero Server Uploads."
   },
   "pseo": {
     "insights_badge": "PRO ÚTMUTATÓ",
@@ -1787,7 +1789,7 @@
     "homeStandards": {
       "badge": "Tudományos és mérnöki alapok",
       "title": "Ellenőrzött globális szabványokra és akadémiai kutatásra épül",
-      "subtitle": "A CreateMeQR az ISO, az IEEE és a NIST nyílt specifikációit valósítja meg a matematikai pontosság és a kliensoldali zéró megbízhatóság biztosítása érdekében.",
+      "subtitle": "A CreateMy-QR az ISO, az IEEE és a NIST nyílt specifikációit valósítja meg a matematikai pontosság és a kliensoldali zéró megbízhatóság biztosítása érdekében.",
       "card1Title": "ISO/IEC 18004 Specifikáció",
       "card1Desc": "Teljes mértékben megfelel a nemzetközi QR Code mátrix szimbólumok szabványainak, amelyek 1:1:3:1:1 keresőmintákat és 4 modulos csendes zónákat tartalmaznak.",
       "card1Meta": "Nemzetközi Szabványügyi Szervezet",
@@ -1807,7 +1809,7 @@
       "subtitle": "Kliensoldali architektúránkat közvetlenül a lektorált kutatások tájékoztatják, amelyek a QR-átirányítás eltérítését és a zéró bizalmi adatok integritását elemzik.",
       "paper1Title": "Kitörő és szerveroldali átirányítási sebezhetőségek",
       "paper1Cite": "Krombholz et al., IEEE Nemzetközi Konferencia a rendelkezésre állásról, megbízhatóságról és biztonságról (ARES 2015)",
-      "paper1Desc": "Tudományos kutatások azt mutatják, hogy a közvetítő átirányító szerverek egyetlen hibapontot, URL-eltérítést és beleegyezés nélküli telemetriát vezetnek be. A CreateMeQR 100%-ban statikus, kliensoldali generálással kiküszöböli ezeket a vektorokat.",
+      "paper1Desc": "Tudományos kutatások azt mutatják, hogy a közvetítő átirányító szerverek egyetlen hibapontot, URL-eltérítést és beleegyezés nélküli telemetriát vezetnek be. A CreateMy-QR 100%-ban statikus, kliensoldali generálással kiküszöböli ezeket a vektorokat.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Nulla tudású böngészőn belüli kriptográfia",
       "paper2Cite": "NIST SP 800-207 Zero Trust Architecture és W3C webes kriptográfiai szabványok",
@@ -1823,7 +1825,7 @@
       "card2Title": "Open Standard & Patent Waiver",
       "card2Desc": "Denso Wave úgy döntött, hogy nem gyakorolja szabadalmi jogait, így a QR-specifikáció nyílt nemzetközi szabvánnyá válhat (ISO/IEC 18004).",
       "card3Title": "Ügyféloldali megvalósítás",
-      "card3Desc": "A CreateMeQR szabványos ISO/IEC 18004 mátrixgeneráló algoritmusokat valósít meg közvetlenül a helyi böngészőmemóriában közvetítő szerverek nélkül."
+      "card3Desc": "A CreateMy-QR szabványos ISO/IEC 18004 mátrixgeneráló algoritmusokat valósít meg közvetlenül a helyi böngészőmemóriában közvetítő szerverek nélkül."
     },
     "compareEvidence": {
       "badge": "Építészeti biztonsági összehasonlítás",
@@ -1833,7 +1835,7 @@
       "col1Point1": "Átirányítási eltérítés: A felhőszerverek bármikor megváltoztathatják a QR-célt.",
       "col1Point2": "Nyomon követés és ujjlenyomat: A közvetítő szerverek naplózzák a szkenner IP-címét, eszközét és helyét.",
       "col1Point3": "Szállítói bezárás és fizetési falak: A linkek lejárnak, ha a havi előfizetési díjak lejárnak.",
-      "col2Title": "CreateMeQR Ügyféloldali biztonság",
+      "col2Title": "CreateMy-QR Ügyféloldali biztonság",
       "col2Point1": "Változatlan hasznos teher: közvetlenül nyers mátrixba kódolva; lehetetlen eltéríteni.",
       "col2Point2": "Nulla közvetítő naplózás: Közvetlen pont-pont vizsgálat közvetítők nélkül.",
       "col2Point3": "Állandó és feltörhetetlen: A statikus kódok soha nem járnak le, nulla szkennelési díjjal vagy örökre leállási kockázattal."

@@ -37,7 +37,9 @@
     "booking": "Pag-book",
     "file": "File",
     "scanbarcode": "Barcode Scanner",
-    "bulk": "Maramihang QR at Barcode"
+    "bulk": "Maramihang QR at Barcode",
+    "barcode": "Libreng Barcode Generator",
+    "scanqr": "I-scan ang QR Code Online"
   },
   "form": {
     "enterUrl": "Ilagay ang URL ng iyong website",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Libreng Online QR Code Generator (2026)",
-    "body": "Ang CreateMeQR ay ang pinakamagandang tool sa Pilipinas para sa GCash at Maya payment links, digital restaurant menus, at vCard business cards. 100% ligtas na pinoproseso sa loob ng iyong browser sa ilalim ng 12ms nang hindi nagpapadala ng impormasyon sa server. I-download ang mataas na resolusyong SVG at PNG files nang libre, walang watermark at walang expiration. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "Ang CreateMy-QR ay ang pinakamagandang tool sa Pilipinas para sa GCash at Maya payment links, digital restaurant menus, at vCard business cards. 100% ligtas na pinoproseso sa loob ng iyong browser sa ilalim ng 12ms nang hindi nagpapadala ng impormasyon sa server. I-download ang mataas na resolusyong SVG at PNG files nang libre, walang watermark at walang expiration. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "gawing qr code ang link, paano gumawa ng qr code mula sa link, libreng qr code generator para sa url, gumawa ng qr code na may logo libre walang signup, qr code generator na walang watermark, qr code para sa wifi password libre, gumawa ng digital business card vcard qr online, qr code para sa google reviews libre, libreng dynamic qr code generator, permanenteng qr code na walang expiration, i-download ang vector svg qr code ng libre, high resolution png qr code generator, ligtas na browser based qr code generator, gumawa ng qr code na may kulay at gradient, paano gumawa ng qr code para sa whatsapp viber link, qr code para sa restaurant menu pdf, gumawa ng qr code nang walang login o bayad, pinakamagandang libreng qr code generator 2026, high error correction level q h qr code, unlimited scan qr code ng libre, maglagay ng litrato o logo sa gitna ng qr code, qr code para sa event tickets, google maps location qr code generator, qr code para sa pagpapadala ng email, qr code para sa pagpapadala ng sms message, gumawa ng qr code para sa direktang tawag sa telepono, transparent background svg qr code, custom eye design para sa qr code, rounded dots style para sa qr code, high quality qr code para sa printing ng business card, qr code generator na walang ads o popups, pinakamabilis na online qr code maker, qr code para sa instagram facebook tiktok link",
   "landing": {
@@ -1320,7 +1322,7 @@
     }
   },
   "home": {
-    "seoTitle": "CreateMy-QR — Libreng QR Code at Barcode Generator |37 Mga Tool Online",
+    "seoTitle": "Libreng QR Code Generator na Walang Expiry",
     "seoDesc": "Gumawa ng 37 uri ng mga QR code at barcode nang libre. Mabilisang pag-download, walang nag-e-expire na static codes, ISO/IEC 18004 sa 30 wika.",
     "badge": "ISO/IEC 18004 · Privacy-First · Walang Pagsubaybay · Client-Side",
     "heroTitle": "Ang QR Code Generator Na",
@@ -1698,8 +1700,8 @@
     }
   },
   "rating": {
-    "title": "Pinagkakatiwalaan ng Milyun-milyon",
-    "subtitle": "Na-rate ng 4.9/5 batay sa 15,432 review sa higit 30 bansa. Privacy-First, Secure, at Client-Side."
+    "title": "Built for Privacy & Permanence",
+    "subtitle": "100% Client-Side WebAssembly Engine. ISO/IEC 18004 Compliant across 30+ languages with Zero Server Uploads."
   },
   "pseo": {
     "insights_badge": "PRO GABAY",
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Mga Pundasyon sa Siyentipiko at Inhinyero",
       "title": "Itinayo sa Na-verify na Pandaigdigang Pamantayan at Pananaliksik sa Akademikong",
-      "subtitle": "Ang CreateMeQR ay nagpapatupad ng mga bukas na detalye mula sa ISO, IEEE, at NIST upang maihatid ang katumpakan ng matematika at seguridad ng zero-trust sa panig ng kliyente.",
+      "subtitle": "Ang CreateMy-QR ay nagpapatupad ng mga bukas na detalye mula sa ISO, IEEE, at NIST upang maihatid ang katumpakan ng matematika at seguridad ng zero-trust sa panig ng kliyente.",
       "card1Title": "ISO/IEC 18004 Detalye",
       "card1Desc": "Ganap na pagsunod sa internasyonal na QR Code matrix symbology na mga pamantayan na nagtatampok ng 1:1:3:1:1 na mga pattern ng finder at 4-module na quiet zone.",
       "card1Meta": "International Organization for Standardization",
@@ -1869,7 +1871,7 @@
       "subtitle": "Ang aming arkitektura sa panig ng kliyente ay direktang ipinapaalam sa pamamagitan ng peer-reviewed na pananaliksik na nagsusuri ng QR redirect hijacking at zero-trust na integridad ng data.",
       "paper1Title": "Quishing at Server-Side Redirect Vulnerabilities",
       "paper1Cite": "Krombholz et al., IEEE International Conference on Availability, Reliability and Security (ARES 2015)",
-      "paper1Desc": "Ipinakikita ng akademikong pananaliksik na ang mga intermediary redirect server ay nagpapakilala ng mga solong punto ng pagkabigo, pag-hijack ng URL, at hindi sinasang-ayunan na telemetry. Tinatanggal ng CreateMeQR ang mga vector na ito sa pamamagitan ng 100% static, client-side generation.",
+      "paper1Desc": "Ipinakikita ng akademikong pananaliksik na ang mga intermediary redirect server ay nagpapakilala ng mga solong punto ng pagkabigo, pag-hijack ng URL, at hindi sinasang-ayunan na telemetry. Tinatanggal ng CreateMy-QR ang mga vector na ito sa pamamagitan ng 100% static, client-side generation.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Zero-Knowledge In-Browser Cryptography",
       "paper2Cite": "NIST SP 800-207 Zero Trust Architecture at W3C Web Cryptography Standards",
@@ -1885,7 +1887,7 @@
       "card2Title": "Buksan ang Standard at Patent Waiver",
       "card2Desc": "Pinili ni Denso Wave na huwag gamitin ang mga karapatan nito sa patent, na nagpapahintulot sa detalye ng QR na maging isang bukas na internasyonal na pamantayan (ISO/IEC 18004).",
       "card3Title": "Pagpapatupad sa Side ng Kliyente",
-      "card3Desc": "Ang CreateMeQR ay nagpapatupad ng karaniwang ISO/IEC 18004 matrix generation algorithm nang direkta sa lokal na memorya ng browser nang walang mga intermediary server."
+      "card3Desc": "Ang CreateMy-QR ay nagpapatupad ng karaniwang ISO/IEC 18004 matrix generation algorithm nang direkta sa lokal na memorya ng browser nang walang mga intermediary server."
     },
     "compareEvidence": {
       "badge": "Paghahambing ng Seguridad ng Arkitektura",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Pag-redirect ng Pag-hijack: Maaaring baguhin ng mga cloud server ang iyong patutunguhan ng QR anumang oras.",
       "col1Point2": "Pagsubaybay at Fingerprinting: Ang mga intermediary server ay nag-log scanner ng IP, device, at lokasyon.",
       "col1Point3": "Vendor Lock-in at Paywalls: Mag-e-expire ang mga link kung ang buwanang pagbabayad ng subscription ay mawawala.",
-      "col2Title": "CreateMeQR Client-Side Security",
+      "col2Title": "CreateMy-QR Client-Side Security",
       "col2Point1": "Hindi Nababagong Payload: Direktang naka-encode sa raw matrix; imposibleng ma-hijack.",
       "col2Point2": "Zero Intermediary Logging: Direktang point-to-point scan na walang middlemen.",
       "col2Point3": "Permanente at Hindi Nababasag: Ang mga static na code ay hindi kailanman mawawalan ng bisa, na walang bayad sa pag-scan o panganib sa pagsasara magpakailanman."

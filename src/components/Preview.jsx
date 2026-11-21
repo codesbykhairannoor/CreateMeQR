@@ -282,7 +282,7 @@ export default function Preview({ qrType, qrData, visuals, hasGenerated }) {
           <div className="w-48 h-48 border-2 border-dashed border-zinc-300 dark:border-zinc-700 rounded-2xl flex items-center justify-center mb-6 bg-[#f8fafc] dark:bg-blue-900/50">
             <QRCodeStylingPlaceholder />
           </div>
-          <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">{t('preview.readyTitle')}</h2>
+          <p className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-2">{t('preview.readyTitle')}</p>
           <p className="text-zinc-600 dark:text-zinc-300 text-sm max-w-[200px]">
             {t('preview.readyDesc')}
           </p>

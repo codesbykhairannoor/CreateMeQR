@@ -37,7 +37,9 @@
     "booking": "Bestilling",
     "file": "Fil",
     "scanbarcode": "Strekkodeskanner",
-    "bulk": "Bulk QR og strekkode"
+    "bulk": "Bulk QR og strekkode",
+    "barcode": "Gratis strekkodegenerator",
+    "scanqr": "Skann QR-kode online"
   },
   "form": {
     "enterUrl": "Skriv inn nettadressen din",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Gratis QR-kode Generator Online (2026)",
-    "body": "CreateMeQR er det optimale verktøyet for Vipps betalingslenker, digitale restaurantmenyer i Norge og vCard kontaktavtale. 100% lokal generering i nettleseren din på under 12 millisekunder uten serverlagring. Last ned høyoppløselige vektorfiler (SVG/PNG) helt gratis uten vannmerke og uten utløpsdato. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "CreateMy-QR er det optimale verktøyet for Vipps betalingslenker, digitale restaurantmenyer i Norge og vCard kontaktavtale. 100% lokal generering i nettleseren din på under 12 millisekunder uten serverlagring. Last ned høyoppløselige vektorfiler (SVG/PNG) helt gratis uten vannmerke og uten utløpsdato. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "gjør link om til qr kode, hvordan lage qr kode av link, gratis qr kode generator for url, lag qr kode med logo gratis uten registrering, qr kode generator uten vannmerke, qr kode for wifi passord gratis, lag digitalt visittkort vcard qr online, qr kode for google anmeldelser gratis, gratis dynamisk qr kode generator, permanent qr kode uten utløpsdato, last ned vektor svg qr kode gratis, høyoppløselig png qr kode generator, sikker lokal qr kode generator i nettleseren, lag qr kode med farger og gradient, hvordan lage qr kode for whatsapp link, qr kode for restaurantmeny pdf, lag qr kode uten innlogging eller betaling, beste gratis qr kode generator 2026, qr kode med høy feilkorreksjon nivå q h, ubegrenset antall skanninger gratis qr kode, sett bilde eller logo i midten av qr koden, qr kode for eventbilletter, google maps lokasjon qr kode generator, qr kode for å sende e-post mailto, qr kode for å sende sms melding, lag qr kode for direkte oppringning, qr kode med gjennomsiktig bakgrunn svg, tilpasset design av qr kodens øyne, stil med avrundede punkter for qr kode, høykvalitets qr kode for trykk på visittkort, qr kode generator uten reklame og popups, raskeste online qr kode skaper, qr kode for instagram facebook youtube link",
   "landing": {
@@ -1321,7 +1323,7 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Gratis QR-kode- og strekkodegenerator |37 Verktøy online",
-    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "seoDesc": "Lag 37 typer QR-koder og strekkoder gratis. Umiddelbar nedlasting i nettleseren, varige statiske koder, ISO/IEC 18004 på 30 språk.",
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "QR-kodegeneratoren Som",
     "heroTitleHighlight": "Aldri Utløper.",
@@ -1698,8 +1700,8 @@
     }
   },
   "rating": {
-    "title": "Stolt på av millioner",
-    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
+    "title": "Built for Privacy & Permanence",
+    "subtitle": "100% Client-Side WebAssembly Engine. ISO/IEC 18004 Compliant across 30+ languages with Zero Server Uploads."
   },
   "pseo": {
     "insights_badge": "PRO-GUIDE",
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Vitenskapelige og tekniske stiftelser",
       "title": "Bygget på verifiserte globale standarder og akademisk forskning",
-      "subtitle": "CreateMeQR implementerer åpne spesifikasjoner fra ISO, IEEE og NIST for å levere matematisk presisjon og null-tillit-sikkerhet på klientsiden.",
+      "subtitle": "CreateMy-QR implementerer åpne spesifikasjoner fra ISO, IEEE og NIST for å levere matematisk presisjon og null-tillit-sikkerhet på klientsiden.",
       "card1Title": "ISO/IEC 18004 Spesifikasjon",
       "card1Desc": "Full overholdelse av internasjonale QR-kodematrisesymbologiske standarder med 1:1:3:1:1 finnermønstre og 4-moduls stillesoner.",
       "card1Meta": "International Organization for Standardization",
@@ -1869,7 +1871,7 @@
       "subtitle": "Vår klientsidearkitektur er direkte informert av fagfellevurdert forskning som analyserer QR-omdirigeringskapring og null-tillit dataintegritet.",
       "paper1Title": "Quishing og omdirigeringssårbarheter på serversiden",
       "paper1Cite": "Krombholz et al., IEEE International Conference on Availability, Reliability and Security (ARES 2015)",
-      "paper1Desc": "Akademisk forskning viser at mellomliggende omdirigeringsservere introduserer enkeltpunkter for feil, URL-kapring og telemetri uten samtykke. CreateMeQR eliminerer disse vektorene gjennom 100 % statisk generering på klientsiden.",
+      "paper1Desc": "Akademisk forskning viser at mellomliggende omdirigeringsservere introduserer enkeltpunkter for feil, URL-kapring og telemetri uten samtykke. CreateMy-QR eliminerer disse vektorene gjennom 100 % statisk generering på klientsiden.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Null-kunnskap i nettleserkryptering",
       "paper2Cite": "NIST SP 800-207 Zero Trust Architecture & W3C Web Cryptography Standards",
@@ -1885,7 +1887,7 @@
       "card2Title": "Åpen standard og patentfrafall",
       "card2Desc": "Denso Wave valgte å ikke utøve sine patentrettigheter, noe som gjorde at QR-spesifikasjonen ble en åpen internasjonal standard (ISO/IEC 18004).",
       "card3Title": "Implementering på klientsiden",
-      "card3Desc": "CreateMeQR implementerer standard ISO/IEC 18004 matrisegenereringsalgoritmer direkte i lokal nettleserminne uten mellomliggende servere."
+      "card3Desc": "CreateMy-QR implementerer standard ISO/IEC 18004 matrisegenereringsalgoritmer direkte i lokal nettleserminne uten mellomliggende servere."
     },
     "compareEvidence": {
       "badge": "Sammenligning av arkitektonisk sikkerhet",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Omdirigere kapring: Skyservere kan endre QR-destinasjonen din når som helst.",
       "col1Point2": "Sporing og fingeravtrykk: Mellomliggende servere logger skanner-IP, enhet og plassering.",
       "col1Point3": "Leverandørlåsing og betalingsmurer: Lenker utløper hvis månedlige abonnementsbetalinger bortfaller.",
-      "col2Title": "CreateMeQR sikkerhet på klientsiden",
+      "col2Title": "CreateMy-QR sikkerhet på klientsiden",
       "col2Point1": "Uforanderlig nyttelast: Kodet direkte inn i råmatrise; umulig å kapre.",
       "col2Point2": "Null mellomliggende logging: Direkte punkt-til-punkt-skanning uten mellomledd.",
       "col2Point3": "Permanent og uknuselig: Statiske koder utløper aldri, med null skanningsgebyrer eller avslutningsrisiko for alltid."

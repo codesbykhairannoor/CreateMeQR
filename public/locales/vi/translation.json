@@ -37,7 +37,9 @@
     "booking": "Đặt chỗ",
     "file": "Tập tin",
     "scanbarcode": "Máy quét mã vạch",
-    "bulk": "Mã QR & mã vạch số lượng lớn"
+    "bulk": "Mã QR & mã vạch số lượng lớn",
+    "barcode": "Trình tạo mã vạch miễn phí",
+    "scanqr": "Quét mã QR trực tuyến"
   },
   "form": {
     "enterUrl": "Nhập URL trang web của bạn",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Tạo Mã QR Miễn Phí Trực Tuyến (2026)",
-    "body": "CreateMeQR là công cụ hàng đầu tại Việt Nam cho các liên kết thanh toán VietQR, MoMo, ZaloPay, menu nhà hàng và quán cà phê, cũng như danh thiếp vCard. Xử lý 100% ngay trên trình duyệt của bạn dưới 12ms, bảo mật tuyệt đối không gửi dữ liệu lên máy chủ. Tải xuống tệp vectơ SVG và PNG chất lượng cao miễn phí vĩnh viễn không có hình mờ. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "CreateMy-QR là công cụ hàng đầu tại Việt Nam cho các liên kết thanh toán VietQR, MoMo, ZaloPay, menu nhà hàng và quán cà phê, cũng như danh thiếp vCard. Xử lý 100% ngay trên trình duyệt của bạn dưới 12ms, bảo mật tuyệt đối không gửi dữ liệu lên máy chủ. Tải xuống tệp vectơ SVG và PNG chất lượng cao miễn phí vĩnh viễn không có hình mờ. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "chuyển link thành mã qr, cách tạo mã qr từ đường link, trình tạo mã qr cho url miễn phí, tạo mã qr có logo miễn phí không cần đăng ký, trình tạo mã qr không có hình mờ, mã qr kết nối wifi miễn phí, tạo danh thiếp kỹ thuật số vcard qr trực tuyến, mã qr cho đánh giá trên google, trình tạo mã qr động miễn phí, mã qr vĩnh viễn không có ngày hết hạn, tải xuống mã qr dạng vectơ svg miễn phí, trình tạo mã qr độ phân giải cao png, trình tạo mã qr an toàn riêng tư ngay trên trình duyệt, tạo mã qr với màu sắc và chuyển màu gradient, cách tạo mã qr cho liên kết zalo whatsapp, mã qr cho menu pdf quán ăn nhà hàng, tạo mã qr không cần đăng nhập hay thanh toán, trình tạo mã qr miễn phí tốt nhất 2026, mã qr có mức độ sửa lỗi cao cấp độ q h, tạo mã qr quét không giới hạn miễn phí, đặt hình ảnh hoặc logo ở giữa mã qr, mã qr cho vé sự kiện hội thảo, trình tạo mã qr vị trí bản đồ google maps, mã qr để tự động gửi email, mã qr để gửi tin nhắn sms, tạo mã qr để gọi điện thoại trực tiếp, mã qr nền trong suốt định dạng svg, thiết kế hình dạng mắt mã qr tùy chỉnh, kiểu chấm bo tròn cho mã qr, mã qr chất lượng cao để in danh thiếp, trình tạo mã qr hoàn toàn không có quảng cáo, công cụ tạo mã qr trên web nhanh nhất, mã qr cho liên kết facebook tiktok youtube instagram",
   "landing": {
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Cơ sở Khoa học & Kỹ thuật",
       "title": "Được xây dựng dựa trên các tiêu chuẩn toàn cầu và nghiên cứu học thuật đã được xác minh",
-      "subtitle": "CreateMeQR triển khai các thông số kỹ thuật mở từ ISO, IEEE và NIST để mang lại độ chính xác về mặt toán học và bảo mật không tin cậy phía máy khách.",
+      "subtitle": "CreateMy-QR triển khai các thông số kỹ thuật mở từ ISO, IEEE và NIST để mang lại độ chính xác về mặt toán học và bảo mật không tin cậy phía máy khách.",
       "card1Title": "ISO/IEC 18004 Đặc điểm kỹ thuật",
       "card1Desc": "Tuân thủ đầy đủ các tiêu chuẩn mã vạch ma trận Mã QR quốc tế bao gồm các mẫu công cụ tìm 1:1:3:1:1 và vùng yên tĩnh 4 mô-đun.",
       "card1Meta": "Tổ chức Tiêu chuẩn hóa Quốc tế",
@@ -1869,7 +1871,7 @@
       "subtitle": "Kiến trúc phía khách hàng của chúng tôi được cung cấp thông tin trực tiếp từ nghiên cứu được đánh giá ngang hàng phân tích việc chiếm quyền điều khiển chuyển hướng QR và tính toàn vẹn của dữ liệu không tin cậy.",
       "paper1Title": "Lỗ hổng Quishing & Chuyển hướng phía máy chủ",
       "paper1Cite": "Krombholz và cộng sự, Hội nghị quốc tế của IEEE về tính sẵn sàng, độ tin cậy và bảo mật (ARES 2015)",
-      "paper1Desc": "Nghiên cứu học thuật chứng minh rằng các máy chủ chuyển hướng trung gian đưa ra các điểm lỗi duy nhất, chiếm quyền điều khiển URL và đo từ xa trái phép. CreateMeQR loại bỏ các vectơ này thông qua việc tạo phía máy khách tĩnh 100%.",
+      "paper1Desc": "Nghiên cứu học thuật chứng minh rằng các máy chủ chuyển hướng trung gian đưa ra các điểm lỗi duy nhất, chiếm quyền điều khiển URL và đo từ xa trái phép. CreateMy-QR loại bỏ các vectơ này thông qua việc tạo phía máy khách tĩnh 100%.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Mật mã không có kiến ​​thức trong trình duyệt",
       "paper2Cite": "NIST SP 800-207 Kiến trúc Zero Trust & Tiêu chuẩn mã hóa web W3C",
@@ -1885,7 +1887,7 @@
       "card2Title": "Tiêu chuẩn mở & Miễn trừ bằng sáng chế",
       "card2Desc": "Denso Wave đã quyết định không thực hiện các quyền bằng sáng chế của mình, cho phép đặc tả QR trở thành tiêu chuẩn quốc tế mở (ISO/IEC 18004).",
       "card3Title": "Triển khai phía khách hàng",
-      "card3Desc": "CreateMeQR triển khai thuật toán tạo ma trận ISO/IEC 18004 tiêu chuẩn trực tiếp trong bộ nhớ trình duyệt cục bộ mà không cần máy chủ trung gian."
+      "card3Desc": "CreateMy-QR triển khai thuật toán tạo ma trận ISO/IEC 18004 tiêu chuẩn trực tiếp trong bộ nhớ trình duyệt cục bộ mà không cần máy chủ trung gian."
     },
     "compareEvidence": {
       "badge": "So sánh an ninh kiến ​​trúc",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Chiếm quyền chuyển hướng: Máy chủ đám mây có thể thay đổi đích QR của bạn bất cứ lúc nào.",
       "col1Point2": "Theo dõi & Lấy dấu vân tay: Máy chủ trung gian ghi nhật ký IP, thiết bị và vị trí.",
       "col1Point3": "Khóa nhà cung cấp & tường phí: Liên kết hết hạn nếu thanh toán đăng ký hàng tháng hết hiệu lực.",
-      "col2Title": "CreateMeQR Bảo mật phía máy khách",
+      "col2Title": "CreateMy-QR Bảo mật phía máy khách",
       "col2Point1": "Tải trọng bất biến: Được mã hóa trực tiếp vào ma trận thô; không thể cướp được.",
       "col2Point2": "Ghi nhật ký không qua trung gian: Quét điểm-điểm trực tiếp không qua trung gian.",
       "col2Point3": "Vĩnh viễn & Không thể phá vỡ: Mã tĩnh không bao giờ hết hạn, không mất phí quét hoặc rủi ro tắt máy vĩnh viễn."

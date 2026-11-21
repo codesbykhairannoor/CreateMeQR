@@ -97,7 +97,7 @@ function LayoutTwitter({ qrType = 'twitter' }) {
         <div className="hq-tw-tweet">
           <div className="hq-tw-avatar"><Hash size={24} /></div>
           <div className="hq-tw-content">
-            <div className="hq-tw-name">CreateMeQR <span className="hq-tw-handle">@createmyqr · 1h</span></div>
+            <div className="hq-tw-name">CreateMy-QR <span className="hq-tw-handle">@createmyqr · 1h</span></div>
             <div className="hq-tw-body">
               <h2 className="font-bold tracking-tighter ">{t.heroTitle} for {typeName}</h2>
               <p>{t.heroSubtitle} 🚀✨</p>

@@ -9,7 +9,7 @@ export default function Compare() {
 
   return (
     <>
-      <main className="w-full flex-1 bg-[#040814] text-white overflow-hidden">
+      <div className="w-full flex-1 bg-[#040814] text-white overflow-hidden">
 
         {/* Section 1: Hero */}
         <section className="relative w-full pt-32 pb-24 px-6 overflow-hidden bg-slate-950 border-b border-[#1e2d4a]">
@@ -144,14 +144,14 @@ export default function Compare() {
                 </ul>
               </div>
 
-              {/* CreateMeQR Client-Side Security */}
+              {/* CreateMy-QR Client-Side Security */}
               <div className="bg-[#0a1128]/90 backdrop-blur-xl p-8 md:p-10 rounded-[2.5rem] border-2 border-emerald-500/40 shadow-[0_0_40px_rgba(16,185,129,0.12)] relative">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="w-10 h-10 rounded-xl bg-emerald-950/60 text-emerald-400 border border-emerald-500/30 flex items-center justify-center">
                     <FileCheck2 size={20} />
                   </div>
                   <h3 className="text-xl font-extrabold text-emerald-400">
-                    {t('research.compareEvidence.col2Title', 'CreateMeQR Client-Side Security')}
+                    {t('research.compareEvidence.col2Title', 'CreateMy-QR Client-Side Security')}
                   </h3>
                 </div>
                 <ul className="space-y-4">
@@ -204,7 +204,7 @@ export default function Compare() {
           </div>
         </section>
 
-      </main>
+      </div>
     </>
   );
 }

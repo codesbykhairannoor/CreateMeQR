@@ -37,7 +37,9 @@
     "booking": "Boeking",
     "file": "Bestand",
     "scanbarcode": "Barcodescanner",
-    "bulk": "Bulk-QR en streepjescode"
+    "bulk": "Bulk-QR en streepjescode",
+    "barcode": "Gratis barcodegenerator",
+    "scanqr": "QR-code online scannen"
   },
   "form": {
     "enterUrl": "Voer uw website-URL",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Gratis QR Code Generator Online (2026)",
-    "body": "CreateMeQR is ideaal voor iDEAL betaallinks, digitale menukaarten in de horeca in Nederland en België, en zakelijke vCard contacten. 100% AVG-proof: alle gegevens worden lokaal in uw browser verwerkt in minder dan 12 milliseconden. Download gratis vecto bestanden (SVG/PNG) in hoge resolutie zonder watermerk of vervaldatum. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "CreateMy-QR is ideaal voor iDEAL betaallinks, digitale menukaarten in de horeca in Nederland en België, en zakelijke vCard contacten. 100% AVG-proof: alle gegevens worden lokaal in uw browser verwerkt in minder dan 12 milliseconden. Download gratis vecto bestanden (SVG/PNG) in hoge resolutie zonder watermerk of vervaldatum. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "link omzetten naar qr code, hoe maak je een qr code van een link, gratis qr code generator voor url, qr code maken met logo gratis zonder registratie, qr code generator zonder watermerk, qr code voor wifi wachtwoord gratis, digitaal visitekaartje vcard qr maken online, qr code voor google reviews maken, gratis dynamische qr code generator, permanente qr code zonder verloopdatum, gratis vector svg qr code downloaden, hoge resolutie png qr code generator, privacyvriendelijke qr code generator in browser, qr code maken met kleuren en verloop, qr code maken voor whatsapp link, qr code voor restaurant menu pdf, qr code maken zonder inloggen of creditcard, beste gratis qr code generator 2026, qr code hoge foutcorrectie niveau q h, onbeperkt scannen qr code gratis, foto of logo in het midden van qr code plaatsen, qr code voor evenemententickets, google maps locatie qr code generator, qr code voor mailto e-mail verzenden, qr code voor sms bericht verzenden, qr code maken voor direct bellen, qr code met transparante achtergrond svg, aangepast ontwerp voor qr code ogen, stijl met afgeronde punten voor qr code, hoge kwaliteit qr code voor visitekaartje, qr code generator zonder reclame of pop-ups, snelste online qr code maker, qr code voor instagram facebook youtube link",
   "landing": {
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Wetenschappelijke en technische grondslagen",
       "title": "Gebouwd op geverifieerde mondiale standaarden en academisch onderzoek",
-      "subtitle": "CreateMeQR implementeert open specificaties van ISO, IEEE en NIST om wiskundige precisie en zero-trust-beveiliging aan de clientzijde te leveren.",
+      "subtitle": "CreateMy-QR implementeert open specificaties van ISO, IEEE en NIST om wiskundige precisie en zero-trust-beveiliging aan de clientzijde te leveren.",
       "card1Title": "ISO/IEC 18004 Specificatie",
       "card1Desc": "Volledige naleving van de internationale QR-codematrixsymboliekstandaarden met 1:1:3:1:1 zoekpatronen en stille zones met 4 modules.",
       "card1Meta": "Internationale Organisatie voor Standaardisatie",
@@ -1869,7 +1871,7 @@
       "subtitle": "Onze client-side architectuur is rechtstreeks gebaseerd op peer-reviewed onderzoek waarin QR-redirect-kaping en zero-trust data-integriteit worden geanalyseerd.",
       "paper1Title": "Quishing- en server-side redirect-kwetsbaarheden",
       "paper1Cite": "Krombholz et al., IEEE Internationale Conferentie over Beschikbaarheid, Betrouwbaarheid en Beveiliging (ARES 2015)",
-      "paper1Desc": "Academisch onderzoek toont aan dat tussenliggende omleidingsservers single points of Failure, URL-kaping en ongeoorloofde telemetrie introduceren. CreateMeQR elimineert deze vectoren door middel van 100% statische generatie aan de clientzijde.",
+      "paper1Desc": "Academisch onderzoek toont aan dat tussenliggende omleidingsservers single points of Failure, URL-kaping en ongeoorloofde telemetrie introduceren. CreateMy-QR elimineert deze vectoren door middel van 100% statische generatie aan de clientzijde.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Zero-Knowledge in-browser-cryptografie",
       "paper2Cite": "NIST SP 800-207 Zero Trust-architectuur en W3C-standaarden voor webcryptografie",
@@ -1885,7 +1887,7 @@
       "card2Title": "Open standaard en afstand van patenten",
       "card2Desc": "Denso Wave heeft ervoor gekozen zijn octrooirechten niet uit te oefenen, waardoor de QR-specificatie een open internationale standaard kan worden (ISO/IEC 18004).",
       "card3Title": "Implementatie aan de klantzijde",
-      "card3Desc": "CreateMeQR implementeert standaard ISO/IEC 18004 algoritmen voor het genereren van matrixen rechtstreeks in het lokale browsergeheugen, zonder tussenliggende servers."
+      "card3Desc": "CreateMy-QR implementeert standaard ISO/IEC 18004 algoritmen voor het genereren van matrixen rechtstreeks in het lokale browsergeheugen, zonder tussenliggende servers."
     },
     "compareEvidence": {
       "badge": "Vergelijking van architecturale beveiliging",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Omleidingskaping: Cloudservers kunnen uw QR-bestemming op elk gewenst moment wijzigen.",
       "col1Point2": "Tracking en vingerafdrukken: tussenliggende servers registreren het IP-adres, het apparaat en de locatie van de scanner.",
       "col1Point3": "Vendor Lock-in & Paywalls: Links verlopen als de maandelijkse abonnementsbetalingen vervallen.",
-      "col2Title": "CreateMeQR Beveiliging aan de clientzijde",
+      "col2Title": "CreateMy-QR Beveiliging aan de clientzijde",
       "col2Point1": "Onveranderlijke payload: rechtstreeks gecodeerd in de onbewerkte matrix; onmogelijk te kapen.",
       "col2Point2": "Zero Intermediary Logging: Directe point-to-point scan zonder tussenpersonen.",
       "col2Point3": "Permanent en onbreekbaar: statische codes verlopen nooit, zonder scankosten of voor altijd zonder afsluitrisico."

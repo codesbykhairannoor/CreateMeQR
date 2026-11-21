@@ -37,7 +37,9 @@
     "booking": "Varaus",
     "file": "Tiedosto",
     "scanbarcode": "Viivakoodinlukija",
-    "bulk": "Joukko QR ja viivakoodi"
+    "bulk": "Joukko QR ja viivakoodi",
+    "barcode": "Ilmainen viivakoodigeneraattori",
+    "scanqr": "Skannaa QR-koodi verkossa"
   },
   "form": {
     "enterUrl": "Anna verkkosivustosi URL-osoite",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Ilmainen QR-koodigeneraattori Netissä (2026)",
-    "body": "CreateMeQR on Suomen paras työkalu MobilePay- ja Siirto-maksulinkeille, ravintoloiden digitaalisille ruokalistoille ja vCard-yhdistämiin. 100% tietosuojattu käsittely suoraan selaimessasi alle 12 millisekunnissa ilman pilviseurantaa. Lataa korkearesoluutioiset SVG- ja PNG-vektoritiedostot ilmaiseksi ilman vesileimaa ja voimassaolorajoitusta. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "CreateMy-QR on Suomen paras työkalu MobilePay- ja Siirto-maksulinkeille, ravintoloiden digitaalisille ruokalistoille ja vCard-yhdistämiin. 100% tietosuojattu käsittely suoraan selaimessasi alle 12 millisekunnissa ilman pilviseurantaa. Lataa korkearesoluutioiset SVG- ja PNG-vektoritiedostot ilmaiseksi ilman vesileimaa ja voimassaolorajoitusta. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "muuta linkki qr koodiksi, miten tehdä qr koodi linkistä, ilmainen qr koodigeneraattori url osoitteelle, luo qr koodi logolla ilmaiseksi ilman rekisteröintiä, qr koodigeneraattori ilman vesileimaa, qr koodi wifi salasanalle ilmaiseksi, luo digitaalinen käyntikortti vcard qr netissä, qr koodi google arvosteluille, ilmainen dynaaminen qr koodigeneraattori, pysyvä qr koodi ilman vanhentumispäivää, lataa vektori svg qr koodi ilmaiseksi, korkearesoluutioinen png qr koodigeneraattori, turvallinen paikallinen qr koodigeneraattori selaimessa, luo qr koodi väreillä ja liukuvärillä, miten tehdä qr koodi whatsapp linkille, qr koodi ravintolan ruokalistalle pdf, luo qr koodi ilman kirjautumista tai maksua, paras ilmainen qr koodigeneraattori 2026, qr koodi korkealla virheenkorjauksella taso q h, rajaton määrä skannauksia ilmainen qr koodi, lisää kuva tai logo qr koodin keskelle, qr koodi tapahtumalipuille, google maps sijainti qr koodigeneraattori, qr koodi sähköpostin lähettämiseen, qr koodi tekstiviestin lähettämiseen, luo qr koodi suoraan puheluun, qr koodi läpinäkyvällä taustalla svg, räätälöity qr koodin silmien suunnittelu, pyöristettyjen pisteiden tyyli qr koodille, korkealaatuinen qr koodi käyntikorttiin tulostettavaksi, qr koodigeneraattori ilman mainoksia ja ponnahdusikkunoita, nopein nettiselaimen qr koodin tekijä, qr koodi instagram facebook youtube linkille",
   "landing": {
@@ -1321,7 +1323,7 @@
   },
   "home": {
     "seoTitle": "CreateMy-QR — Ilmainen QR-koodi- ja viivakoodigeneraattori |37 Työkalut verkossa",
-    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "seoDesc": "Luo 37 QR- ja viivakoodityyppiä ilmaiseksi. Välitön lataus selaimessa, pysyvät staattiset koodit, ISO/IEC 18004 -standardi 30 kielellä.",
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "QR-koodigeneraattori Joka",
     "heroTitleHighlight": "Ei Koskaan Vanhene.",
@@ -1698,8 +1700,8 @@
     }
   },
   "rating": {
-    "title": "Miljoonien luottama",
-    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
+    "title": "Built for Privacy & Permanence",
+    "subtitle": "100% Client-Side WebAssembly Engine. ISO/IEC 18004 Compliant across 30+ languages with Zero Server Uploads."
   },
   "pseo": {
     "insights_badge": "PRO-OPAS",
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Tieteelliset ja tekniset säätiöt",
       "title": "Rakennettu vahvistettuihin globaaleihin standardeihin ja akateemiseen tutkimukseen",
-      "subtitle": "CreateMeQR toteuttaa avoimia ISO-, IEEE- ja NIST-määrittelyjä matemaattisen tarkkuuden ja asiakaspuolen nollaluottamuksen turvaamiseksi.",
+      "subtitle": "CreateMy-QR toteuttaa avoimia ISO-, IEEE- ja NIST-määrittelyjä matemaattisen tarkkuuden ja asiakaspuolen nollaluottamuksen turvaamiseksi.",
       "card1Title": "ISO/IEC 18004 Tekniset tiedot",
       "card1Desc": "Täysin kansainvälisten QR-koodimatriisitunnusten standardien noudattaminen, joka sisältää 1:1:3:1:1 etsinkuviot ja 4-moduulin hiljaiset alueet.",
       "card1Meta": "Kansainvälinen standardointijärjestö",
@@ -1869,7 +1871,7 @@
       "subtitle": "Asiakaspuolen arkkitehtuurimme perustuu suoraan vertaisarvioituihin tutkimuksiin, jotka analysoivat QR-uudelleenohjauksen kaappausta ja nollaluottamusta.",
       "paper1Title": "Quishing ja palvelinpuolen uudelleenohjaushaavoittuvuudet",
       "paper1Cite": "Krombholz et al., IEEE International Conference on Availability, Reliability and Security (ARES 2015)",
-      "paper1Desc": "Akateeminen tutkimus osoittaa, että välittävät uudelleenohjauspalvelimet tuovat esiin yksittäisiä vikakohtia, URL-osoitteiden kaappauksen ja suostumatonta telemetriaa. CreateMeQR eliminoi nämä vektorit 100-prosenttisesti staattisen, asiakaspuolen sukupolven avulla.",
+      "paper1Desc": "Akateeminen tutkimus osoittaa, että välittävät uudelleenohjauspalvelimet tuovat esiin yksittäisiä vikakohtia, URL-osoitteiden kaappauksen ja suostumatonta telemetriaa. CreateMy-QR eliminoi nämä vektorit 100-prosenttisesti staattisen, asiakaspuolen sukupolven avulla.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Nollatietoinen selaimen salaus",
       "paper2Cite": "NIST SP 800-207 Zero Trust Architecture & W3C Web Cryptography Standards",
@@ -1885,7 +1887,7 @@
       "card2Title": "Open Standard & Patent Waiver",
       "card2Desc": "Denso Wave päätti olla käyttämättä patenttioikeuksiaan, minkä ansiosta QR-spesifikaatiosta tuli avoin kansainvälinen standardi (ISO/IEC 18004).",
       "card3Title": "Asiakaspuolen toteutus",
-      "card3Desc": "CreateMeQR toteuttaa standardinmukaiset ISO/IEC 18004 matriisin luontialgoritmit suoraan paikalliseen selaimen muistiin ilman välipalvelimia."
+      "card3Desc": "CreateMy-QR toteuttaa standardinmukaiset ISO/IEC 18004 matriisin luontialgoritmit suoraan paikalliseen selaimen muistiin ilman välipalvelimia."
     },
     "compareEvidence": {
       "badge": "Arkkitehtoninen turvavertailu",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Uudelleenohjauskaappaus: Pilvipalvelimet voivat muuttaa QR-kohdettasi milloin tahansa.",
       "col1Point2": "Seuranta ja sormenjäljet: Välittävät palvelimet kirjaavat skannerin IP-osoitteen, laitteen ja sijainnin.",
       "col1Point3": "Toimittajan lukitus ja maksumuurit: Linkit vanhenevat, jos kuukausittaiset tilausmaksut raukeavat.",
-      "col2Title": "CreateMeQR Asiakaspuolen suojaus",
+      "col2Title": "CreateMy-QR Asiakaspuolen suojaus",
       "col2Point1": "Muuttumaton hyötykuorma: Koodattu suoraan raakamatriisiin; mahdoton kaapata.",
       "col2Point2": "Nolla välikäsikirjaa: Suora pisteestä pisteeseen -tarkistus ilman välikäsiä.",
       "col2Point3": "Pysyvä ja rikkoutumaton: Staattiset koodit eivät vanhene koskaan, ilman skannausmaksuja tai ikuisen sammutusriskin."

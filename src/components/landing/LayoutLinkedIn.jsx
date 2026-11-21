@@ -163,14 +163,14 @@ function LayoutLinkedIn({ qrType = 'linkedin' }) {
                 <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'var(--hq-border)' }}></div>
                 <div>
                   <div style={{ fontSize: 14, fontWeight: 600 }}>URL Generator</div>
-                  <div style={{ fontSize: 12, color: 'var(--hq-text-muted)' }}>CreateMeQR</div>
+                  <div style={{ fontSize: 12, color: 'var(--hq-text-muted)' }}>CreateMy-QR</div>
                 </div>
               </div>
               <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
                 <div style={{ width: 40, height: 40, borderRadius: '50%', background: 'var(--hq-border)' }}></div>
                 <div>
                   <div style={{ fontSize: 14, fontWeight: 600 }}>vCard Generator</div>
-                  <div style={{ fontSize: 12, color: 'var(--hq-text-muted)' }}>CreateMeQR</div>
+                  <div style={{ fontSize: 12, color: 'var(--hq-text-muted)' }}>CreateMy-QR</div>
                 </div>
               </div>
             </div>

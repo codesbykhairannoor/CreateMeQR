@@ -37,7 +37,9 @@
     "booking": "Rezerwacja",
     "file": "Plik",
     "scanbarcode": "Skaner kodów kreskowych",
-    "bulk": "Zbiorczy kod QR i kod kreskowy"
+    "bulk": "Zbiorczy kod QR i kod kreskowy",
+    "barcode": "Darmowy generator kodów kreskowych",
+    "scanqr": "Zeskanuj kod QR online"
   },
   "form": {
     "enterUrl": "Wpisz adres URL swojej witryny",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Darmowy Generator Kodów QR Online (2026)",
-    "body": "CreateMeQR to doskonałe narzędzie do płatności mobilnych BLIK, cyfrowych menu w restauracjach w Polsce oraz udostępniania kontaktów biznesowych vCard. Pełna zgodność z RODO: przetwarzanie danych odbywa się w Twojej przeglądarce w czasie poniżej 12ms. Pobieraj wysokiej rozdzielczości pliki wektorowe SVG i PNG bez znaku wodnego i bez limitu czasu. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "CreateMy-QR to doskonałe narzędzie do płatności mobilnych BLIK, cyfrowych menu w restauracjach w Polsce oraz udostępniania kontaktów biznesowych vCard. Pełna zgodność z RODO: przetwarzanie danych odbywa się w Twojej przeglądarce w czasie poniżej 12ms. Pobieraj wysokiej rozdzielczości pliki wektorowe SVG i PNG bez znaku wodnego i bez limitu czasu. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "zamień link na kod qr, jak zrobić kod qr z linku, darmowy generator kodów qr dla url, twórz kod qr z logo za darmo bez rejestracji, generator kodów qr bez znaku wodnego, kod qr do hasła wifi za darmo, twórz wirtualną wizytówkę vcard qr online, kod qr do opinii google za darmo, darmowy generator dynamicznych kodów qr, stały kod qr bez daty ważności, pobierz kod qr w formacie wektorowym svg za darmo, generator kodów qr wysokiej rozdzielczości png, bezpieczny lokalny generator kodów qr w przeglądarce, twórz kod qr z kolorami i gradientem, jak zrobić kod qr do linku whatsapp, kod qr do menu restauracji w pdf, twórz kod qr bez logowania i płacenia, najlepszy darmowy generator kodów qr 2026, kod qr z wysoką korekcją błędów poziom q h, nielimitowane skanowanie kodu qr za darmo, umieść zdjęcie lub logo w środku kodu qr, kod qr do biletów na wydarzenia, generator kodu qr lokalizacji google maps, kod qr do wysyłania wiadomości e-mail, kod qr do wysyłania wiadomości sms, twórz kod qr do bezpośredniego połączenia telefonicznego, kod qr z przezroczystym tłem svg, niestandardowy projekt oczu kodu qr, styl zaokrąglonych punktów dla kodu qr, wysokiej jakości kod qr do druku na wizytówkach, generator kodów qr bez reklam i wyskakujących okienek, najszybszy internetowy kreator kodów qr, kod qr do linku instagram facebook youtube",
   "landing": {
@@ -1849,7 +1851,7 @@
     "homeStandards": {
       "badge": "Podstawy naukowe i inżynieryjne",
       "title": "Zbudowany w oparciu o zweryfikowane światowe standardy i badania akademickie",
-      "subtitle": "CreateMeQR implementuje otwarte specyfikacje ISO, IEEE i NIST, aby zapewnić matematyczną precyzję i bezpieczeństwo zerowego zaufania po stronie klienta.",
+      "subtitle": "CreateMy-QR implementuje otwarte specyfikacje ISO, IEEE i NIST, aby zapewnić matematyczną precyzję i bezpieczeństwo zerowego zaufania po stronie klienta.",
       "card1Title": "ISO/IEC 18004 Specyfikacja",
       "card1Desc": "Pełna zgodność z międzynarodowymi standardami symboliki matrycy QR Code, obejmującymi wzory szukacza 1:1:3:1:1 i 4-modułowe ciche strefy.",
       "card1Meta": "Międzynarodowa Organizacja Normalizacyjna",
@@ -1869,7 +1871,7 @@
       "subtitle": "Nasza architektura po stronie klienta jest bezpośrednio oparta na recenzowanych badaniach analizujących przejmowanie przekierowań QR i integralność danych przy zerowym zaufaniu.",
       "paper1Title": "Luki w zabezpieczeniach Quishing i przekierowań po stronie serwera",
       "paper1Cite": "Krombholz i in., Międzynarodowa konferencja IEEE na temat dostępności, niezawodności i bezpieczeństwa (ARES 2015)",
-      "paper1Desc": "Badania akademickie pokazują, że pośredniczące serwery przekierowań wprowadzają pojedyncze punkty awarii, przejmowanie adresów URL i telemetrię bez zgody. CreateMeQR eliminuje te wektory poprzez 100% statyczne generowanie po stronie klienta.",
+      "paper1Desc": "Badania akademickie pokazują, że pośredniczące serwery przekierowań wprowadzają pojedyncze punkty awarii, przejmowanie adresów URL i telemetrię bez zgody. CreateMy-QR eliminuje te wektory poprzez 100% statyczne generowanie po stronie klienta.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Kryptografia w przeglądarce oparta na wiedzy zerowej",
       "paper2Cite": "NIST SP 800-207 Architektura Zero Trust i standardy kryptografii internetowej W3C",
@@ -1885,7 +1887,7 @@
       "card2Title": "Otwarty standard i zrzeczenie się patentu",
       "card2Desc": "Firma Denso Wave zdecydowała się nie korzystać ze swoich praw patentowych, dzięki czemu specyfikacja QR stała się otwartym międzynarodowym standardem (ISO/IEC 18004).",
       "card3Title": "Implementacja po stronie klienta",
-      "card3Desc": "CreateMeQR implementuje standardowe algorytmy generowania macierzy ISO/IEC 18004 bezpośrednio w lokalnej pamięci przeglądarki bez serwerów pośredniczących."
+      "card3Desc": "CreateMy-QR implementuje standardowe algorytmy generowania macierzy ISO/IEC 18004 bezpośrednio w lokalnej pamięci przeglądarki bez serwerów pośredniczących."
     },
     "compareEvidence": {
       "badge": "Porównanie bezpieczeństwa architektonicznego",
@@ -1895,7 +1897,7 @@
       "col1Point1": "Przekierowanie przejęcia: serwery w chmurze mogą w każdej chwili zmienić miejsce docelowe QR.",
       "col1Point2": "Śledzenie i pobieranie odcisków palców: serwery pośrednie rejestrują adres IP, urządzenie i lokalizację skanera dziennika.",
       "col1Point3": "Blokada dostawcy i zapory: linki wygasają po wygaśnięciu miesięcznych opłat subskrypcyjnych.",
-      "col2Title": "CreateMeQR Bezpieczeństwo po stronie klienta",
+      "col2Title": "CreateMy-QR Bezpieczeństwo po stronie klienta",
       "col2Point1": "Niezmienny ładunek: zakodowany bezpośrednio w surowej matrycy; niemożliwe do porwania.",
       "col2Point2": "Zerowe rejestrowanie pośrednie: bezpośrednie skanowanie od punktu do punktu bez pośredników.",
       "col2Point3": "Trwałe i niezniszczalne: kody statyczne nigdy nie wygasają, bez opłat za skanowanie i ryzyka przestoju na zawsze."

@@ -19,13 +19,11 @@ import ScanQr from './pages/ScanQr';
 import ScanBarcode from './pages/ScanBarcode';
 import BulkGenerator from './pages/BulkGenerator';
 import LandingContent from './components/LandingContent';
-import SeoArticle from './components/SeoArticle';
 import { AuthProvider } from './context/AuthContext';
-import AuthModal from './components/auth/AuthModal';
-import ProAlertModal from './components/modals/ProAlertModal';
-import { PSEO_ROUTES, LANGS } from './config/site';
+const AuthModal = React.lazy(() => import('./components/auth/AuthModal'));
+const ProAlertModal = React.lazy(() => import('./components/modals/ProAlertModal'));
+import { LANGS } from './config/site';
 import { localizedRoutes, routeToToolMap } from './config/localizedRoutes';
-import { getPseoUseCase, getAllPseoData } from './config/pseo-usecases';
 
 // Universal Slug to Tool Resolver (Module-level singleton: Handles cross-language URLs, legacy URLs, unicode/accents, and aliases)
 const resolveToolFromAnySlug = (rawSlug, lang) => {
@@ -133,6 +131,7 @@ const resolveToolFromAnySlug = (rawSlug, lang) => {
     ['google-forms', 'gforms'],
     ['gforms', 'gforms'],
     ['google-review', 'greview'],
+    ['ulasan-google', 'greview'],
     ['greview', 'greview'],
     ['link-in-bio', 'linkinbio'],
     ['linkinbio', 'linkinbio'],
@@ -141,6 +140,7 @@ const resolveToolFromAnySlug = (rawSlug, lang) => {
     ['wifi', 'wifi'],
     ['wi-fi', 'wifi'],
     ['vcard', 'vcard'],
+    ['digital-business-card', 'vcard'],
     ['scan-barcode', 'scanbarcode'],
     ['scanbarcode', 'scanbarcode'],
     ['scan-qr', 'scanqr'],
@@ -161,6 +161,7 @@ const resolveToolFromAnySlug = (rawSlug, lang) => {
     ['ibento', 'event'],
     ['подія', 'event'],
     ['podia', 'event'],
+    ['pdf', 'pdf'],
     ['resim', 'image'],
     ['image', 'image'],
     ['gambar', 'image'],
@@ -219,8 +220,7 @@ export default function App() {
   if (slug === '') slug = '/';
 
   const foundTool = useMemo(() => resolveToolFromAnySlug(slug, currentLangCode), [slug, currentLangCode]);
-  const pseoUseCase = getPseoUseCase(slug, currentLangCode);
-  const resolvedToolType = pseoUseCase ? pseoUseCase.baseTool : (foundTool || 'url');
+  const resolvedToolType = foundTool || 'url';
 
   const [qrType, setQrType] = useState(resolvedToolType);
 
@@ -239,11 +239,11 @@ export default function App() {
 
   // Sync route with qrType state
   useEffect(() => {
-    const rType = pseoUseCase ? pseoUseCase.baseTool : (foundTool || routeToToolMap[currentLangCode]?.[slug]);
+    const rType = foundTool || routeToToolMap[currentLangCode]?.[slug];
     if (rType && rType !== qrType) {
       setQrType(rType);
     }
-  }, [slug, qrType, pseoUseCase, foundTool, currentLangCode]);
+  }, [slug, qrType, foundTool, currentLangCode]);
 
   const handleTypeChangeRoute = (newType) => {
     setQrType(newType);
@@ -293,18 +293,17 @@ export default function App() {
   } : null;
 
   // Super Partial Lang: Fully localized SEO texts!
-  const currentSeo = pseoUseCase
-    ? {
-      title: `${pseoUseCase.h1Title} | CreateMy-QR`,
-      h1Title: pseoUseCase.h1Title,
-      description: pseoUseCase.seoDesc,
-    }
-    : isHome
-      ? {
-        title: `CreateMy-QR | ${t('home.heroTitle', 'The QR Code Generator That')} ${t('home.heroTitleHighlight', 'Never Expires.')}`,
-        h1Title: `${t('home.heroTitle', 'The QR Code Generator That')} ${t('home.heroTitleHighlight', 'Never Expires.')}`,
-        description: t('home.seoDesc', 'Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.'),
-      }
+  const currentSeo = isHome
+        ? (() => {
+          const heroCombined = `${t('home.heroTitle', 'The QR Code Generator That')} ${t('home.heroTitleHighlight', 'Never Expires.')}`.replace(/\s+/g, ' ').trim();
+          const rawSeoTitle = t('home.seoTitle', '').replace(/^CreateMy-QR\s*[|—–\-:]\s*/i, '').trim();
+          const chosenTitle = heroCombined.length <= 46 ? heroCombined : (rawSeoTitle || heroCombined);
+          return {
+            title: `${chosenTitle} | CreateMy-QR`,
+            h1Title: heroCombined,
+            description: t('home.seoDesc', 'Create 37 types of custom QR codes & barcodes free. Instant client-side download, permanent static codes, ISO/IEC 18004 compliant, 30 languages.'),
+          };
+        })()
       : isAbout
         ? {
           title: `${t('static.about.seoTitle', 'About Us')} | CreateMy-QR`,
@@ -390,15 +389,6 @@ export default function App() {
                                 };
 
   const canonicalPath = (() => {
-    if (pseoUseCase) {
-      const allPseo = getAllPseoData();
-      const langCases = allPseo[currentLangCode] || [];
-      const matchingUc = langCases.find(uc => uc.id === pseoUseCase.id);
-      if (matchingUc) {
-        const uSlug = matchingUc.translatedSlug || matchingUc.slug;
-        return uSlug.startsWith('/') ? uSlug : '/' + uSlug;
-      }
-    }
     if (foundTool) {
       const expected = localizedRoutes[currentLangCode]?.[foundTool];
       if (expected) return expected === '/' ? '' : expected;
@@ -435,50 +425,15 @@ export default function App() {
 
           <link rel="canonical" href={canonicalUrl} />
           {/* Generative Engine Optimization (GEO) & LLM Chatbot Ground Truth Links */}
-          <link rel="alternate" type="text/markdown" href={`https://createmy-qr.com/llms${currentLangCode === 'en' ? '' : '-' + currentLangCode}.txt`} hrefLang={currentLangCode} title={`CreateMe-QR LLM Specification (${currentLangCode.toUpperCase()})`} />
-          <link rel="alternate" type="text/markdown" href="https://createmy-qr.com/llms.txt" hrefLang="x-default" title="CreateMe-QR LLM Specification (Global)" />
-          {/* Standard Tool Hreflang Tags for all 30 languages (only if NOT a pSEO page) */}
-          {!pseoUseCase && (
-            <>
-              <link rel="alternate" hrefLang="x-default" href={`https://createmy-qr.com${localizedRoutes['en']?.[currentType] === '/' ? '' : localizedRoutes['en']?.[currentType]}`} />
-              {LANGS.map(lang => {
-                const lSlug = localizedRoutes[lang.code]?.[currentType] || '/';
-                const href = `https://createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${lSlug === '/' ? '' : lSlug}`;
-                return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
-              })}
-            </>
-          )}
-          <meta name="keywords" content={t('seoKeywords')} />
-
-          {/* pSEO Bidirectional Hreflang Matrix for 30 Languages (only if IS a pSEO page) */}
-          {pseoUseCase && LANGS.map(lang => {
-            let targetSlug = slug;
-            // If this is a pSEO page, lookup the translated slug for this specific language
-            if (pseoUseCase) {
-              const allPseo = getAllPseoData();
-              const langCases = allPseo[lang.code] || [];
-              const matchingUc = langCases.find(uc => uc.id === pseoUseCase.id);
-              if (matchingUc) {
-                const uSlug = matchingUc.translatedSlug || matchingUc.slug;
-                targetSlug = uSlug.startsWith('/') ? uSlug : '/' + uSlug;
-              }
-            }
-            const href = `https://createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${targetSlug === '/' ? '' : targetSlug}`;
+          <link rel="alternate" type="text/markdown" href={`https://createmy-qr.com/llms${currentLangCode === 'en' ? '' : '-' + currentLangCode}.txt`} hrefLang={currentLangCode} title={`CreateMy-QR LLM Specification (${currentLangCode.toUpperCase()})`} />
+          <link rel="alternate" type="text/markdown" href="https://createmy-qr.com/llms.txt" hrefLang="x-default" title="CreateMy-QR LLM Specification (Global)" />
+          {/* Standard Tool Hreflang Tags for all 30 languages */}
+          <link rel="alternate" hrefLang="x-default" href={`https://createmy-qr.com${localizedRoutes['en']?.[currentType] === '/' ? '' : localizedRoutes['en']?.[currentType]}`} />
+          {LANGS.map(lang => {
+            const lSlug = localizedRoutes[lang.code]?.[currentType] || '/';
+            const href = `https://createmy-qr.com${lang.code === 'en' ? '' : '/' + lang.code}${lSlug === '/' ? '' : lSlug}`;
             return <link key={lang.code} rel="alternate" hrefLang={lang.code} href={href} />;
           })}
-          {pseoUseCase && (() => {
-            let defaultSlug = slug;
-            if (pseoUseCase) {
-              const allPseo = getAllPseoData();
-              const enCases = allPseo['en'] || [];
-              const matchingUc = enCases.find(uc => uc.id === pseoUseCase.id);
-              if (matchingUc) {
-                const uSlug = matchingUc.translatedSlug || matchingUc.slug;
-                defaultSlug = uSlug.startsWith('/') ? uSlug : '/' + uSlug;
-              }
-            }
-            return <link rel="alternate" hrefLang="x-default" href={`https://createmy-qr.com${defaultSlug === '/' ? '' : defaultSlug}`} />;
-          })()}
 
           {/* Unified Schema.org @graph (2026-2027 SEO/GEO/AEO Gold Standard) */}
           <script type="application/ld+json">
@@ -523,7 +478,7 @@ export default function App() {
                   "operatingSystem": "All",
                   "isAccessibleForFree": true,
                   "codeRepository": "https://github.com/codesbykhairannoor/CreateMeQR",
-                  "programmingLanguage": ["WebAssembly", "JavaScript", "Rust"],
+                  "programmingLanguage": ["WebAssembly", "JavaScript"],
                   "author": { "@id": "https://createmy-qr.com/#organization" },
                   "publisher": { "@id": "https://createmy-qr.com/#organization" },
                   "offers": {
@@ -531,12 +486,6 @@ export default function App() {
                     "price": "0",
                     "priceCurrency": "USD",
                     "availability": "https://schema.org/InStock"
-                  },
-                  "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "4.9",
-                    "ratingCount": "18200",
-                    "bestRating": "5"
                   },
                   "featureList": [
                     "100% Client-Side WebAssembly Processing",
@@ -593,7 +542,7 @@ export default function App() {
                       { "@type": "HowToStep", "position": 1, "text": `Select the ${currentType} data type.` },
                       { "@type": "HowToStep", "position": 2, "text": "Enter your information into the input fields." },
                       { "@type": "HowToStep", "position": 3, "text": "Customize the colors, logo, and design." },
-                      { "@type": "HowToStep", "position": 4, "text": "Download the high-resolution vector SVG or PNG." }
+                      { "@type": "HowToStep", "position": 4, "text": "Download the high-resolution PNG or vector SVG." }
                     ]
                   }
                 ] : []),
@@ -611,9 +560,8 @@ export default function App() {
           <HomePage currentLangCode={currentLangCode} />
         ) : !isStaticPage ? (
           <>
-            <QrWorkspace key={`${currentLangCode}-${slug}`} qrType={qrType} setQrTypeRoute={handleTypeChangeRoute} currentSeo={currentSeo} pseoUseCase={pseoUseCase} />
-            <LandingContent qrType={qrType} pseoUseCase={pseoUseCase} />
-            {['url', 'vcard', 'text', 'email', 'sms', 'wifi', 'bitcoin', 'twitter', 'epc', 'pdf', 'appstore', 'image', 'video', 'audio', 'paypal', 'whatsapp', 'instagram', 'facebook', 'viber', 'telegram', 'skype', 'line', 'spotify', 'snapchat', 'tiktok', 'github', 'discord', 'twitch', 'linkedin', 'pinterest', 'reddit', 'zoom', 'teams'].includes(qrType) && <SeoArticle currentLangCode={currentLangCode} />}
+            <QrWorkspace key={`${currentLangCode}-${slug}`} qrType={qrType} setQrTypeRoute={handleTypeChangeRoute} currentSeo={currentSeo} />
+            <LandingContent qrType={qrType} />
           </>
         ) : (
           <>
@@ -646,8 +594,10 @@ export default function App() {
           </>
         )}
       </MainLayout>
-      <AuthModal />
-      <ProAlertModal />
+      <React.Suspense fallback={null}>
+        <AuthModal />
+        <ProAlertModal />
+      </React.Suspense>
     </AuthProvider>
   );
 }

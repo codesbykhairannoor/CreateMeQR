@@ -156,7 +156,7 @@ function LayoutURL({ qrType = 'url' }) {
               <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--hq-accent-glow)', borderRadius: 100, color: 'var(--hq-accent)', fontWeight: 700, fontSize: '14px', marginBottom: 16 }}>
                 Fast & Easy
               </div>
-              <h3 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(32px, 4vw, 40px)', color: 'var(--hq-text)' }}>{t.stepsTitle} <span style={{ color: 'var(--hq-accent)' }}>{typeName}</span></h3>
+              <h3 className="font-bold tracking-tighter" style={{ fontSize: 'clamp(32px, 4vw, 40px)', color: 'var(--hq-text)' }}>{t.stepsTitle} <span style={{ color: 'var(--hq-accent)' }}>{typeName} QR</span></h3>
             </div>
             
             {/* The hq-steps-bento class will automatically stack on mobile due to Phase 5 CSS */}
@@ -194,7 +194,7 @@ function LayoutURL({ qrType = 'url' }) {
             <div style={{ display: 'inline-flex', padding: '8px 16px', background: 'var(--hq-accent-glow)', borderRadius: 100, color: 'var(--hq-accent)', fontWeight: 700, fontSize: '14px', marginBottom: 24, alignItems: 'center', gap: 8 }}>
               <Globe size={16} /> {t.badgeFaq || 'Knowledge Base'}
             </div>
-            <h2 className="font-bold tracking-tighter " style={{ paddingTop: 0, fontSize: 'clamp(32px, 5vw, 48px)' }}>{t.faqTitle} {typeName}</h2>
+            <h2 className="font-bold tracking-tighter " style={{ paddingTop: 0, fontSize: 'clamp(32px, 5vw, 48px)' }}>{typeName} — {t.faqTitle}</h2>
           </div>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

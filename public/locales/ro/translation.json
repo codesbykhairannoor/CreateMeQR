@@ -37,7 +37,9 @@
     "booking": "Rezervare",
     "file": "Fișier",
     "bulk": "QR și coduri de bare în vrac",
-    "scanbarcode": "Scanner de coduri de bare"
+    "scanbarcode": "Scanner de coduri de bare",
+    "barcode": "Generator gratuit de coduri de bare",
+    "scanqr": "Scanați codul QR online"
   },
   "form": {
     "enterUrl": "Introduceți adresa URL a site-ului dvs.",
@@ -243,7 +245,7 @@
   },
   "seoCore": {
     "h2": "Generator de Coduri QR Gratuit Online (2026)",
-    "body": "CreateMeQR este soluția ideală pentru meniuri digitale în restaurantele din România, partajare rapidă Wi-Fi și cărți de vizită vCard. Conform 100% cu GDPR: procesarea se face local în browserul tău în mai puțin de 12ms. Descarcă fișiere vectoriale SVG și PNG de înaltă rezoluție gratuit pentru totdeauna, fără marcaj de apă și fără expirare. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMeQR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
+    "body": "CreateMy-QR este soluția ideală pentru meniuri digitale în restaurantele din România, partajare rapidă Wi-Fi și cărți de vizită vCard. Conform 100% cu GDPR: procesarea se face local în browserul tău în mai puțin de 12ms. Descarcă fișiere vectoriale SVG și PNG de înaltă rezoluție gratuit pentru totdeauna, fără marcaj de apă și fără expirare. When searching for the best free QR code generator, users need a tool that handles dynamic URL redirects, vCard Plus, WiFi WPA3/WEP configurations, Google Maps geolocation, and custom vector SVG exports. CreateMy-QR provides a completely client-side, privacy-first QR code maker without watermarks, signup requirements, or expiration dates."
   },
   "seoKeywords": "transformare link in cod qr, cum sa faci cod qr dintr-un link, generator coduri qr gratuit pentru url, creare cod qr cu logo gratuit fara inregistrare, generator coduri qr fara marcaj de apa, cod qr pentru parola wifi gratuit, creare carte de vizita digitala vcard qr online, cod qr pentru recenzii google gratuit, generator coduri qr dinamice gratuit, cod qr permanent fara data de expirare, descarcare cod qr vectorial svg gratuit, generator coduri qr rezolutie inalta png, generator coduri qr sigur in browser privat, creare cod qr cu culori si gradient, cum sa faci cod qr pentru link whatsapp, cod qr pentru meniu restaurant pdf, creare cod qr fara login sau plata, cel mai bun generator de coduri qr gratuit 2026, cod qr cu nivel ridicat de corectie a erorilor q h, scanari nelimitate cod qr gratuit, punere poza sau logo in mijlocul codului qr, cod qr pentru bilete la evenimente, generator cod qr locatie google maps, cod qr pentru trimitere email mailto, cod qr pentru trimitere mesaj sms, creare cod qr pentru apel telefonic direct, cod qr cu fundal transparent svg, design personalizat pentru ochii codului qr, stil cu puncte rotunjite pentru cod qr, cod qr calitate inalta pentru imprimare carti de vizita, generator coduri qr fara reclame sau popup-uri, cel mai rapid creator de coduri qr online, cod qr pentru link instagram facebook youtube",
   "landing": {
@@ -1258,8 +1260,8 @@
     "cleared": "Eliberat!"
   },
   "home": {
-    "seoTitle": "CreateMy-QR — Generator gratuit de coduri QR și coduri de bare |37 Instrumente online",
-    "seoDesc": "Generate 37 types of QR codes and barcodes for free. Instant client-side download, no expiring static codes, ISO/IEC 18004-compliant, available in 30 languages.",
+    "seoTitle": "Generator gratuit de coduri QR permanente",
+    "seoDesc": "Creează gratuit 37 de tipuri de coduri QR și de bare. Descărcare instantanee în browser, coduri statice permanente, ISO/IEC 18004 în 30 de limbi.",
     "badge": "ISO/IEC 18004 · Privacy-First · Zero Tracking · Client-Side",
     "heroTitle": "Generatorul de Coduri QR Care",
     "heroTitleHighlight": "Nu Expiră Niciodată.",
@@ -1636,8 +1638,8 @@
     }
   },
   "rating": {
-    "title": "De încredere de milioane",
-    "subtitle": "Rated 4.9/5 based on 15,432 reviews across 30+ countries. Privacy-First, Secure, and Client-Side."
+    "title": "Built for Privacy & Permanence",
+    "subtitle": "100% Client-Side WebAssembly Engine. ISO/IEC 18004 Compliant across 30+ languages with Zero Server Uploads."
   },
   "pseo": {
     "insights_badge": "GHID PRO",
@@ -1787,7 +1789,7 @@
     "homeStandards": {
       "badge": "Fundații științifice și de inginerie",
       "title": "Construit pe standarde globale verificate și cercetare academică",
-      "subtitle": "CreateMeQR implementează specificații deschise de la ISO, IEEE și NIST pentru a oferi precizie matematică și securitate zero-trust la nivel de client.",
+      "subtitle": "CreateMy-QR implementează specificații deschise de la ISO, IEEE și NIST pentru a oferi precizie matematică și securitate zero-trust la nivel de client.",
       "card1Title": "ISO/IEC 18004 Specificație",
       "card1Desc": "Respectarea deplină la standardele internaționale de simbolizare a matricei de coduri QR, cu modele de căutare 1:1:3:1:1 și zone de liniște cu 4 module.",
       "card1Meta": "Organizația Internațională pentru Standardizare",
@@ -1807,7 +1809,7 @@
       "subtitle": "Arhitectura noastră la nivelul clientului este informată direct de cercetările evaluate de colegi care analizează deturnarea redirecționării QR și integritatea datelor fără încredere.",
       "paper1Title": "Vulnerabilități de redirecționare pe partea de server și quishing",
       "paper1Cite": "Krombholz et al., IEEE International Conference on Availability, Reliability and Security (ARES 2015)",
-      "paper1Desc": "Cercetările academice demonstrează că serverele de redirecționare intermediare introduc puncte unice de eșec, deturnarea adreselor URL și telemetrie fără consimțământ. CreateMeQR elimină acești vectori prin generare 100% statică, pe partea clientului.",
+      "paper1Desc": "Cercetările academice demonstrează că serverele de redirecționare intermediare introduc puncte unice de eșec, deturnarea adreselor URL și telemetrie fără consimțământ. CreateMy-QR elimină acești vectori prin generare 100% statică, pe partea clientului.",
       "paper1Doi": "DOI: 10.1109/ARES.2015.39",
       "paper2Title": "Criptografie în browser fără cunoștințe",
       "paper2Cite": "NIST SP 800-207 Arhitectură Zero Trust și Standarde W3C de criptare web",
@@ -1823,7 +1825,7 @@
       "card2Title": "Deschideți standardul și scutirea de brevet",
       "card2Desc": "Denso Wave a ales să nu-și exercite drepturile de brevet, permițând ca specificația QR să devină un standard internațional deschis (ISO/IEC 18004).",
       "card3Title": "Implementare pe partea clientului",
-      "card3Desc": "CreateMeQR implementează algoritmi standard de generare a matricei ISO/IEC 18004 direct în memoria locală a browserului fără servere intermediare."
+      "card3Desc": "CreateMy-QR implementează algoritmi standard de generare a matricei ISO/IEC 18004 direct în memoria locală a browserului fără servere intermediare."
     },
     "compareEvidence": {
       "badge": "Comparație de securitate arhitecturală",
@@ -1833,7 +1835,7 @@
       "col1Point1": "Deturnarea redirecționării: serverele cloud vă pot schimba destinația QR oricând.",
       "col1Point2": "Urmărire și amprentă: serverele intermediare înregistrează IP-ul scanerului, dispozitivul și locația.",
       "col1Point3": "Blocarea furnizorilor și Wallwalls: Linkurile expiră dacă plățile lunare ale abonamentului expiră.",
-      "col2Title": "CreateMeQR Securitate pe partea clientului",
+      "col2Title": "CreateMy-QR Securitate pe partea clientului",
       "col2Point1": "Sarcină utilă imuabilă: codificat direct în matrice brută; imposibil de deturnat.",
       "col2Point2": "Înregistrare intermediară zero: scanare directă punct la punct, fără intermediari.",
       "col2Point3": "Permanent și de neîntrerupt: codurile statice nu expiră niciodată, cu taxe de scanare zero sau risc de oprire pentru totdeauna."

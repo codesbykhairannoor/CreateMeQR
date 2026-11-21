@@ -112,7 +112,7 @@ function LayoutDiscord({ qrType = 'discord' }) {
         </div>
         
         <div className="hq-dc-sidebar">
-          <div className="hq-dc-header">CreateMeQR Server <ChevronDown size={18} /></div>
+          <div className="hq-dc-header">CreateMy-QR Server <ChevronDown size={18} /></div>
           <div className="hq-dc-channels">
             <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--hq-text-muted)', marginBottom: 8, paddingLeft: 8 }}>GENERATOR</div>
             <div className="hq-dc-channel active"><Hash size={18} /> welcome</div>

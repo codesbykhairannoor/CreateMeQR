@@ -7,9 +7,8 @@ import { localizedRoutes, routeToToolMap } from '../config/localizedRoutes';
 import MegaNav from '../components/nav/MegaNav';
 import MobileNav from '../components/nav/MobileNav';
 import EcosystemMenu from '../components/nav/EcosystemMenu';
-import HistoryDrawer from '../components/HistoryDrawer';
+const HistoryDrawer = React.lazy(() => import('../components/HistoryDrawer'));
 import UserMenu from '../components/auth/UserMenu';
-import { getPseoUseCase, getAllPseoData } from '../config/pseo-usecases';
 
 export default function MainLayout({ children }) {
   const { t, i18n } = useTranslation();
@@ -93,23 +92,8 @@ export default function MainLayout({ children }) {
     // Look up the current tool based on current lang and slug
     const currentTool = routeToToolMap[currentLangCode]?.[slug];
     
-    // Check if it's a pSEO page
-    const pseoUseCase = getPseoUseCase(slug, currentLangCode);
-    
     let newSlug;
-    if (pseoUseCase) {
-      // Look up the pSEO use case in the target language
-      const allPseo = getAllPseoData();
-      const targetLangCases = allPseo[lang] || [];
-      const targetUc = targetLangCases.find(uc => uc.id === pseoUseCase.id);
-      
-      if (targetUc) {
-        newSlug = targetUc.translatedSlug || targetUc.slug;
-        newSlug = newSlug.startsWith('/') ? newSlug : '/' + newSlug;
-      } else {
-        newSlug = slug; // Fallback
-      }
-    } else if (currentTool) {
+    if (currentTool) {
       // It's a localized tool route
       newSlug = localizedRoutes[lang]?.[currentTool] || '/';
     } else {
@@ -230,11 +214,15 @@ export default function MainLayout({ children }) {
       )}
 
       {/* History Drawer Overlay */}
-      <HistoryDrawer 
-        isOpen={showHistory} 
-        onClose={() => setShowHistory(false)} 
-        currentLangCode={currentLangCode} 
-      />
+      {showHistory && (
+        <React.Suspense fallback={null}>
+          <HistoryDrawer 
+            isOpen={showHistory} 
+            onClose={() => setShowHistory(false)} 
+            currentLangCode={currentLangCode} 
+          />
+        </React.Suspense>
+      )}
 
       <main className="flex-1 pb-20">
         {children}

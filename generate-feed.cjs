@@ -20,76 +20,40 @@ function escapeXml(unsafe) {
 async function run() {
   const { localizedRoutes } = await import('./src/config/localizedRoutes.js');
 
-  const pseoLocalesDir = path.join(__dirname, 'src', 'config', 'pseo-locales');
-  const enPseo = fs.existsSync(path.join(pseoLocalesDir, 'en.json'))
-    ? JSON.parse(fs.readFileSync(path.join(pseoLocalesDir, 'en.json'), 'utf8'))
-    : [];
-
-  const idPseo = fs.existsSync(path.join(pseoLocalesDir, 'id.json'))
-    ? JSON.parse(fs.readFileSync(path.join(pseoLocalesDir, 'id.json'), 'utf8'))
-    : [];
-
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n';
   xml += '  <channel>\n';
   xml += '    <title>CreateMy-QR | Free Online QR Code &amp; Barcode Suite</title>\n';
   xml += `    <link>${DOMAIN}</link>\n`;
-  xml += '    <description>Generate 37 types of QR codes and barcodes for free. 100% private, client-side generation in 30 languages with instant vector downloads.</description>\n';
+  xml += '    <description>Generate 37 types of QR codes and barcodes for free. 100% private, client-side generation in 30 languages with instant PNG and vector downloads.</description>\n';
   xml += '    <language>en</language>\n';
   xml += `    <lastBuildDate>${NOW}</lastBuildDate>\n`;
   xml += `    <atom:link href="${DOMAIN}/feed.xml" rel="self" type="application/rss+xml" />\n`;
 
-  // 1. Add English pSEO use cases (High Intent)
-  for (const uc of enPseo) {
-    const slug = uc.slug.startsWith('/') ? uc.slug : '/' + uc.slug;
-    const url = `${DOMAIN}${slug}`;
-    xml += '    <item>\n';
-    xml += `      <title>${escapeXml(uc.title)}</title>\n`;
-    xml += `      <link>${url}</link>\n`;
-    xml += `      <description>${escapeXml(uc.seoDesc || uc.heroSubtitle || uc.title)}</description>\n`;
-    xml += `      <pubDate>${NOW}</pubDate>\n`;
-    xml += `      <guid isPermaLink="true">${url}</guid>\n`;
-    xml += '      <category>QR Code Solutions</category>\n';
-    xml += '    </item>\n';
-  }
-
-  // 2. Add Indonesian pSEO use cases (High Intent Localized)
-  for (const uc of idPseo) {
-    const slug = (uc.translatedSlug || uc.slug);
-    const safeSlug = slug.startsWith('/') ? slug : '/' + slug;
-    const url = `${DOMAIN}/id${safeSlug}`;
-    xml += '    <item>\n';
-    xml += `      <title>${escapeXml(uc.title)}</title>\n`;
-    xml += `      <link>${url}</link>\n`;
-    xml += `      <description>${escapeXml(uc.seoDesc || uc.heroSubtitle || uc.title)}</description>\n`;
-    xml += `      <pubDate>${NOW}</pubDate>\n`;
-    xml += `      <guid isPermaLink="true">${url}</guid>\n`;
-    xml += '      <category>Solusi Kode QR Indonesia</category>\n';
-    xml += '    </item>\n';
-  }
-
-  // 3. Add Core Tools
+  // Core Canonical Tools (sourced directly from localizedRoutes.en)
+  const enRoutes = localizedRoutes.en || {};
   const coreTools = [
     { name: 'Free QR Code Generator', path: '/' },
-    { name: 'Free Barcode Generator', path: '/barcode-generator' },
-    { name: 'Scan QR Code Online', path: '/scan-qr' },
-    { name: 'Scan Barcode Online', path: '/scan-barcode' },
-    { name: 'vCard QR Code Generator', path: '/vcard-qr-code-generator' },
-    { name: 'WiFi QR Code Generator', path: '/wifi-qr-code-generator' },
-    { name: 'Google Maps Location QR Code', path: '/google-maps-qr-code' },
-    { name: 'PDF Document QR Code', path: '/pdf-qr-code-generator' },
-    { name: 'WhatsApp Direct Chat QR Code', path: '/whatsapp-qr-code-generator' },
-    { name: 'PayPal Payment QR Code', path: '/paypal-qr-code-generator' },
-    { name: 'Instagram Profile QR Code', path: '/instagram-qr-code-generator' },
-    { name: 'Google Review 5-Star QR Code', path: '/google-review-qr-code' }
+    { name: 'Free Barcode Generator', path: enRoutes.barcode || '/barcode-generator' },
+    { name: 'Bulk QR Code & Barcode Generator', path: enRoutes.bulk || '/bulk-qr-generator' },
+    { name: 'Scan QR Code Online', path: enRoutes.scanqr || '/scan-qr' },
+    { name: 'Scan Barcode Online', path: enRoutes.scanbarcode || '/scan-barcode' },
+    { name: 'vCard QR Code Maker', path: enRoutes.vcard || '/vcard-qr-code-maker' },
+    { name: 'WiFi QR Code Generator', path: enRoutes.wifi || '/wifi-qr-code-generator' },
+    { name: 'Google Maps Location QR Code', path: enRoutes.location || '/google-maps-qr-code' },
+    { name: 'PDF Document QR Code', path: enRoutes.pdf || '/pdf-qr-code-generator' },
+    { name: 'WhatsApp Direct Chat QR Code', path: enRoutes.whatsapp || '/whatsapp-qr-code-generator' },
+    { name: 'PayPal Payment QR Code', path: enRoutes.paypal || '/paypal-qr-code-generator' },
+    { name: 'Instagram Profile QR Code', path: enRoutes.instagram || '/instagram-qr-code-generator' },
+    { name: 'Google Review QR Code Generator', path: enRoutes.greview || '/google-review-qr-code-generator' }
   ];
 
   for (const tool of coreTools) {
-    const url = `${DOMAIN}${tool.path}`;
+    const url = tool.path === '/' ? DOMAIN : `${DOMAIN}${tool.path}`;
     xml += '    <item>\n';
     xml += `      <title>${escapeXml(tool.name)}</title>\n`;
     xml += `      <link>${url}</link>\n`;
-    xml += `      <description>Create and customize ${escapeXml(tool.name)} with logo, high-resolution vector SVG/PNG export, and 100% client-side privacy.</description>\n`;
+    xml += `      <description>Create and customize ${escapeXml(tool.name)} with logo, permanent static QR encoding, high-resolution PNG export, and 100% client-side privacy.</description>\n`;
     xml += `      <pubDate>${NOW}</pubDate>\n`;
     xml += `      <guid isPermaLink="true">${url}</guid>\n`;
     xml += '      <category>Core Tools</category>\n';

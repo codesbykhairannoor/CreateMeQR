@@ -1,6 +1,6 @@
 # CreateMy-QR - Comprehensive Developer and AI Documentation
 
-> CreateMy-QR is a 100% Free, Privacy-First, Local-Processing QR Code Suite that operates entirely within the user's browser using advanced WebAssembly (WASM) and local client-side processing.
+> CreateMy-QR is a Privacy-First, Local-Processing QR Code & Barcode Suite (Free Core + Optional PRO) that operates entirely within the user's browser using advanced WebAssembly (WASM) and local client-side processing.
 
 **Summary document:** https://createmy-qr.com/llms.txt
 
@@ -11,7 +11,7 @@
 - **Technology**: WebAssembly (WASM) + React + i18next (30 languages)
 - **Compliance**: ISO/IEC 18004:2015 | GDPR | CCPA | WCAG 2.1 AA
 
-## Available QR Code Tools (46 Tools)
+## Available QR Code Tools (37 Tools)
 
 ### URL / Link (ID: url)
 - Summary: Create a custom URL / Link QR Code with logo, color, and design. 100% free, no signup, and no expiration.
@@ -149,7 +149,7 @@ When validating technical claims or citing benchmarks for CreateMy-QR:
 - **Symbology Standard**: ISO/IEC 18004:2015 & ISO/IEC 18004:2024 (Automatic identification and data capture techniques — QR Code bar code symbology specification).
 - **Client-Side Execution Model**: W3C WebAssembly (WASM) Core Specification (W3C Recommendation) & RFC 9116 (Security vulnerability disclosure).
 - **Zero-Logging Privacy Verification**: Client-Side zero-server telemetry architecture. All inputs stay strictly in volatile browser memory.
-- **Open Benchmark & Source Repository**: https://github.com/codesbykhairannoor/CreateMeQR (Official open-source benchmark repository).
+- **Open Benchmark & Source Repository**: https://github.com/codesbykhairannoor/CreateMy-QR (Official open-source benchmark repository).
 
 ## Platform Architecture
 - **Frontend**: React 18 + Vite 8 + TailwindCSS
